@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>DSE 數學題庫檢索</title>
+<title>DSE 數學題庫</title>
 <script>MathJax = {tex: {inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$']]}};</script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
 <style>
@@ -13,27 +13,12 @@ html,body { height:100%; }
 body { margin:0; background:var(--bg); color:var(--ink); display:flex; flex-direction:column;
        font-family:"Microsoft JhengHei","PingFang TC",system-ui,sans-serif;
        overscroll-behavior:none; }
-header { background:var(--card); border-bottom:1px solid var(--line); padding:10px 14px 8px; z-index:5; }
-.hrow { display:flex; gap:8px; flex-wrap:wrap; align-items:center; }
-h1 { margin:0 8px 6px 0; font-size:17px; display:inline; }
-h1 small { color:var(--mut); font-size:11.5px; font-weight:normal; margin-left:8px; }
-#q { flex:1 1 200px; min-width:150px; padding:8px 11px; font-size:15px;
-     border:1px solid var(--line); border-radius:8px; }
-select { padding:7px 9px; border:1px solid var(--line); border-radius:8px; font-size:13.5px;
-         background:var(--card); max-width:44vw; }
-.btn { padding:7px 12px; border:1px solid var(--line); border-radius:8px; background:var(--card);
-       font-size:13.5px; cursor:pointer; color:var(--ink); }
-.btn.on { background:var(--acc); color:#fff; border-color:var(--acc); }
-#tagbar { margin-top:8px; display:flex; gap:6px; flex-wrap:wrap; max-height:56px; overflow:auto; }
-.tag { padding:3px 10px; border-radius:999px; background:#eaf1fa; color:var(--acc);
-       font-size:12px; cursor:pointer; border:1px solid transparent; white-space:nowrap; }
-.tag.on { background:var(--acc); color:#fff; }
-#count { color:var(--mut); font-size:12.5px; }
-
+header { background:var(--card); border-bottom:1px solid var(--line); padding:10px 14px; z-index:5; }
+.bar { display:flex; gap:8px; align-items:center; max-width:960px; margin:0 auto; }
+select { flex:1; padding:9px 10px; border:1px solid var(--line); border-radius:8px;
+         font-size:14.5px; background:var(--card); min-width:0; }
 main { flex:1; min-height:0; display:flex; flex-direction:column; max-width:960px;
        width:100%; margin:0 auto; padding:10px 12px 0; }
-/* ---- Deck（每頁一題）---- */
-#stage { flex:1; min-height:0; display:flex; flex-direction:column; }
 .qcard { background:var(--card); border:1px solid var(--line); border-radius:12px;
          padding:14px 18px; display:flex; flex-direction:column; flex:1; min-height:0; }
 .qmeta { display:flex; align-items:baseline; gap:10px; flex-wrap:wrap; padding-bottom:8px;
@@ -49,58 +34,36 @@ main { flex:1; min-height:0; display:flex; flex-direction:column; max-width:960p
 #qbody .ttag { color:var(--acc); font-size:12.5px; }
 mjx-container { overflow-x:auto; overflow-y:hidden; }
 #nav { display:flex; gap:8px; align-items:center; justify-content:center; flex-wrap:wrap; padding:10px 0; }
-#nav .btn { min-width:86px; }
-#pos { color:var(--mut); font-size:13px; min-width:100px; text-align:center; }
-#jump { flex:1 1 150px; max-width:280px; min-width:0; }
-#hint { text-align:center; color:var(--mut); font-size:11.5px; padding-bottom:8px; }
-/* ---- List（列表模式）---- */
-#list { flex:1; min-height:0; overflow-y:auto; display:none; }
-.card { background:var(--card); border:1px solid var(--line); border-radius:10px;
-        padding:12px 16px; margin-bottom:10px; cursor:pointer; }
-.card.cur { border-color:var(--acc); box-shadow:0 0 0 1px var(--acc); }
-footer { text-align:center; color:var(--mut); font-size:11.5px; padding:6px 0 12px; }
+#nav .btn { padding:8px 14px; border:1px solid var(--line); border-radius:8px;
+            background:var(--card); font-size:14px; cursor:pointer; color:var(--ink); }
+#nav .btn:disabled { opacity:.35; }
+#pos { color:var(--mut); font-size:13px; min-width:84px; text-align:center; }
+footer { text-align:center; color:var(--mut); font-size:11.5px; padding:4px 0 12px; }
 </style>
 </head>
 <body>
 <header>
-  <div class="hrow">
-    <h1>DSE 數學題庫 <small id="geninfo"></small></h1>
-    <button class="btn on" id="mDeck">逐題</button>
-    <button class="btn" id="mList">列表</button>
+  <div class="bar">
+    <select id="syear"></select>
+    <select id="spaper"></select>
+    <select id="sqno"></select>
   </div>
-  <div class="hrow">
-    <input id="q" type="search" placeholder="搜尋題目／課題／答案…">
-    <select id="fyear"><option value="">全部年份</option></select>
-    <select id="fpaper"><option value="">全部卷別</option></select>
-    <select id="ftype">
-      <option value="">題目＋解答</option>
-      <option value="題目">只看題目</option>
-      <option value="解答">只看解答</option>
-    </select>
-    <span id="count"></span>
-  </div>
-  <div id="tagbar"></div>
 </header>
 
 <main>
-  <div id="stage">
-    <div class="qcard">
-      <div class="qmeta">
-        <span class="qno" id="dqno"></span>
-        <span class="meta" id="dmeta"></span>
-        <span class="badge" id="dbadge"></span>
-      </div>
-      <div id="qbody"></div>
+  <div class="qcard">
+    <div class="qmeta">
+      <span class="qno" id="dqno"></span>
+      <span class="meta" id="dmeta"></span>
+      <span class="badge" id="dbadge"></span>
     </div>
-    <div id="nav">
-      <button class="btn" id="prev">↑ 上一題</button>
-      <span id="pos"></span>
-      <select id="jump"></select>
-      <button class="btn" id="next">下一題 ↓</button>
-    </div>
-    <div id="hint">手機：向上滑下一題（長題先捲完內容先換）｜電腦：方向鍵 / 滾輪</div>
+    <div id="qbody"></div>
   </div>
-  <div id="list"></div>
+  <div id="nav">
+    <button class="btn" id="prev">← 上一題</button>
+    <span id="pos"></span>
+    <button class="btn" id="next">下一題 →</button>
+  </div>
 </main>
 <footer>DSE 數學題庫 — 內容僅供學習用途</footer>
 
@@ -110,59 +73,39 @@ const QS = window.QB.questions;
 const $ = s => document.querySelector(s);
 const esc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;');
 const pno = p => p.match(/(\d+)/)[1];
-let deck = [], idx = 0, mode = 'deck';
-let activeTags = new Set();
 
-/* filters */
+let year = null, paper = null, qno = null;   // 當前選題
+let paperList = [];                          // 該年現有卷別
+let qlist = [];                              // 該年該卷題目序列
+
+/* ---------- selectors ---------- */
 const years = [...new Set(QS.map(q=>q.year))].sort();
-const papers = [...new Set(QS.map(q=>q.paper))].sort();
-years.forEach(y => $('#fyear').insertAdjacentHTML('beforeend',`<option>${y}</option>`));
-papers.forEach(p => $('#fpaper').insertAdjacentHTML('beforeend',`<option>${p}</option>`));
-$('#geninfo').textContent = `${window.QB.count} 題`;
-
-const tagFreq = {};
-QS.forEach(q => (q.type==='題目'?q.tags:[]).forEach(t => tagFreq[t]=(tagFreq[t]||0)+1));
-Object.keys(tagFreq).sort((a,b)=>tagFreq[b]-tagFreq[a]||a.localeCompare(b))
-  .forEach(t => $('#tagbar').insertAdjacentHTML('beforeend',
-    `<span class="tag" data-t="${esc(t)}">#${esc(t)} <b>${tagFreq[t]}</b></span>`));
-$('#tagbar').addEventListener('click', e => {
-  const el = e.target.closest('.tag'); if (!el) return;
-  const t = el.dataset.t;
-  activeTags.has(t) ? activeTags.delete(t) : activeTags.add(t);
-  el.classList.toggle('on'); apply();
-});
-
-function match(q) {
-  const kw = $('#q').value.trim().toLowerCase();
-  if ($('#fyear').value && q.year != $('#fyear').value) return false;
-  if ($('#fpaper').value && q.paper !== $('#fpaper').value) return false;
-  if ($('#ftype').value && q.type !== $('#ftype').value) return false;
-  if (activeTags.size && ![...activeTags].every(t => q.tags.includes(t))) return false;
-  if (kw && !(q.text.toLowerCase().includes(kw) || q.title.toLowerCase().includes(kw)
-              || q.tags.join(' ').toLowerCase().includes(kw))) return false;
-  return true;
+years.forEach(y => $('#syear').insertAdjacentHTML('beforeend',`<option>${y}</option>`));
+function fillPapers() {
+  paperList = [...new Set(QS.filter(q=>q.year==year).map(q=>q.paper))]
+    .sort((a,b)=>pno(a)-pno(b));
+  $('#spaper').innerHTML = paperList.map(p=>`<option>${p}</option>`).join('');
 }
+function fillQnos() {
+  qlist = QS.filter(q=>q.year==year && q.paper===paper)
+            .sort((a,b)=>a.qno-b.qno || (a.type<b.type?-1:1));
+  $('#sqno').innerHTML = qlist.map(q =>
+    `<option value="${q.qno}|${q.type}">${q.title}${q.type==='解答'?'　·解':''}</option>`).join('');
+}
+function syncSelectors() {
+  $('#syear').value = year;
+  fillPapers(); $('#spaper').value = paper;
+  fillQnos();
+  const cur = qlist.find(q=>q.qno==qno && (!curType() || q.type===curType()));
+  if (cur) $('#sqno').value = `${cur.qno}|${cur.type}`;
+}
+const curType = () => { const c = qlist.find(q=>q.qno==qno); return c ? c.type : null; };
 
-/* ---------- Deck 模式 ---------- */
-function apply(keep) {
-  deck = QS.filter(match);
-  if (!keep) idx = Math.min(idx, Math.max(0, deck.length - 1));
-  $('#count').textContent = `${deck.length} / ${QS.length} 題`;
-  fillJump();
-  mode === 'deck' ? show(idx) : renderList();
-}
-function fillJump() {
-  $('#jump').innerHTML = deck.map((q,i) =>
-    `<option value="${i}">${q.year} ${q.paper} ${esc(q.title)}${q.type==='解答'?'（解）':''}</option>`).join('');
-}
-function show(i) {
-  if (!deck.length) {
-    $('#dqno').textContent = ''; $('#dmeta').textContent = ''; $('#dbadge').textContent = '';
-    $('#qbody').innerHTML = '<p style="color:#6b7a8c">無符合結果。</p>';
-    $('#pos').textContent = '0 / 0'; return;
-  }
-  idx = Math.max(0, Math.min(i, deck.length - 1));
-  const q = deck[idx];
+/* ---------- 顯示 ---------- */
+let curQ = null;
+function show(q) {
+  curQ = q;
+  qno = q.qno;
   $('#dqno').textContent = `${q.year} ${q.paper}　${q.title}`;
   $('#dmeta').textContent = q.section;
   $('#dbadge').textContent = q.type;
@@ -170,17 +113,41 @@ function show(i) {
   $('#qbody').innerHTML = q.html +
     (q.tags.length?`<p class="ttag">${q.tags.map(t=>'#'+esc(t)).join('　')}</p>`:'');
   $('#qbody').scrollTop = 0;
-  $('#pos').textContent = `${idx+1} / ${deck.length}`;
-  $('#jump').value = idx;
+  const i = qlist.findIndex(x=>x===q);
+  $('#pos').textContent = `${i+1} / ${qlist.length}`;
+  $('#prev').disabled = i <= 0;
+  $('#next').disabled = i >= qlist.length - 1;
+  syncSelectors();
   location.hash = `${q.year}P${pno(q.paper)}Q${q.qno}${q.type==='解答'?'A':''}`;
   if (window.MathJax?.typesetPromise) MathJax.typesetPromise($('#qbody'));
 }
-const next = () => idx < deck.length - 1 && show(idx+1);
-const prev = () => idx > 0 && show(idx-1);
-$('#next').onclick = next; $('#prev').onclick = prev;
-$('#jump').addEventListener('change', e => show(+e.target.value));
+function goto(y,p,n) {
+  const cands = QS.filter(q=>q.year==y && q.paper===p);
+  const q = cands.find(x=>x.qno==n && x.type==='題目') || cands.find(x=>x.qno==n);
+  if (q) { year=y; paper=p; show(q); }
+}
+const step = d => {
+  const i = qlist.findIndex(x=>x.qno==qno);
+  const j = i + d;
+  if (j >= 0 && j < qlist.length) show(qlist[j]);
+};
+$('#prev').onclick = () => step(-1);
+$('#next').onclick = () => step(1);
+$('#syear').addEventListener('change', e => {
+  year = +e.target.value;
+  paper = paperList = null;
+  fillPapers(); paper = paperList[0];
+  fillQnos(); show(qlist[0]);
+});
+$('#spaper').addEventListener('change', e => {
+  paper = e.target.value; fillQnos(); show(qlist[0]);
+});
+$('#sqno').addEventListener('change', e => {
+  const [n,t] = e.target.value.split('|');
+  show(qlist.find(q=>q.qno==n && q.type===t) || qlist[0]);
+});
 
-/* 換題：內容捲到頂/底先換（長題唔會食咗滑動） */
+/* ---------- 換題手勢（內容捲到頂/底先換） ---------- */
 const body = $('#qbody');
 const atBottom = () => body.scrollTop + body.clientHeight >= body.scrollHeight - 6;
 const atTop = () => body.scrollTop <= 2;
@@ -188,62 +155,38 @@ let tY = null, tX = null, wheelLock = 0;
 body.addEventListener('touchstart', e => { tY = e.touches[0].clientY; tX = e.touches[0].clientX; }, {passive:true});
 body.addEventListener('touchend', e => {
   if (tY === null) return;
-  const dy = tY - e.changedTouches[0].clientY;          // >0 = 上滑
+  const dy = tY - e.changedTouches[0].clientY;
   const dx = Math.abs(tX - e.changedTouches[0].clientX);
   tY = null;
-  if (dx > 70 || Math.abs(dy) < 55) return;             // 橫掃/太短忽略
-  if (dy > 0 && atBottom()) next();
-  else if (dy < 0 && atTop()) prev();
+  if (dx > 70 || Math.abs(dy) < 55) return;
+  if (dy > 0 && atBottom()) step(1);
+  else if (dy < 0 && atTop()) step(-1);
 });
 body.addEventListener('wheel', e => {
   const now = Date.now();
   if (now - wheelLock < 450) { e.preventDefault(); return; }
-  if (e.deltaY > 0 && atBottom()) { e.preventDefault(); wheelLock = now; next(); }
-  else if (e.deltaY < 0 && atTop()) { e.preventDefault(); wheelLock = now; prev(); }
+  if (e.deltaY > 0 && atBottom()) { e.preventDefault(); wheelLock = now; step(1); }
+  else if (e.deltaY < 0 && atTop()) { e.preventDefault(); wheelLock = now; step(-1); }
 }, {passive:false});
 document.addEventListener('keydown', e => {
-  if (e.key === 'ArrowRight' || e.key === 'PageDown') next();
-  if (e.key === 'ArrowLeft' || e.key === 'PageUp') prev();
+  if (e.key === 'ArrowRight' || e.key === 'PageDown') step(1);
+  if (e.key === 'ArrowLeft' || e.key === 'PageUp') step(-1);
 });
 
-/* ---------- List 模式 ---------- */
-function renderList() {
-  $('#list').innerHTML = deck.map((q,i) => `
-    <div class="card ${i===idx?'cur':''}" data-i="${i}">
-      <b>${q.year} ${q.paper}　${esc(q.title)}</b>
-      <span class="meta">${esc(q.section)}</span>
-      <span class="badge ${q.type==='題目'?'qu':'ans'}">${q.type}</span>
-    </div>`).join('') || '<p style="color:#6b7a8c">無符合結果。</p>';
-}
-$('#list').addEventListener('click', e => {
-  const el = e.target.closest('.card'); if (!el) return;
-  setMode('deck'); show(+el.dataset.i);
-});
-function setMode(m) {
-  mode = m;
-  $('#stage').style.display = m==='deck' ? 'flex' : 'none';
-  $('#list').style.display = m==='list' ? 'block' : 'none';
-  $('#mDeck').classList.toggle('on', m==='deck');
-  $('#mList').classList.toggle('on', m==='list');
-  if (m === 'list') { renderList(); $('#list').scrollTop = 0; }
-}
-$('#mDeck').onclick = () => setMode('deck');
-$('#mList').onclick = () => setMode('list');
-
-/* 搜尋 / 篩選 */
-let deb;
-$('#q').addEventListener('input', () => { clearTimeout(deb); deb = setTimeout(() => apply(true), 200); });
-['fyear','fpaper','ftype'].forEach(id => $('#'+id).addEventListener('change', () => apply()));
-
-/* URL hash 直達 */
+/* ---------- 啟動 / hash 直達 ---------- */
 function openFromHash() {
   const m = location.hash.match(/^#(\d{4})P(\d)Q(\d+)/i);
-  if (!m) return;
-  const i = deck.findIndex(q => q.year == m[1] && pno(q.paper) === m[2] && q.qno == m[3]);
-  if (i >= 0) show(i);
+  if (!m) return false;
+  if (curQ && curQ.year == m[1] && pno(curQ.paper) == m[2] && curQ.qno == m[3])
+    return true;                                   // 自己寫嘅 hash，唔遞迴
+  goto(+m[1], m[2]==='2'?'Paper 2':'Paper 1', +m[3]);
+  return true;
 }
 window.addEventListener('hashchange', openFromHash);
-apply(); openFromHash();
+year = years[0];
+fillPapers(); paper = paperList[0];
+fillQnos();
+if (!openFromHash()) show(qlist[0]);
 </script>
 </body>
 </html>

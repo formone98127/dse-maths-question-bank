@@ -1,6 +1,6 @@
 window.QB = {
- "generated": "2026-11-03 03:10",
- "count": 83,
+ "generated": "2026-11-03 07:43",
+ "count": 128,
  "questions": [
   {
    "year": 2012,
@@ -1262,6 +1262,636 @@ window.QB = {
    "text": "現對某城市公共房屋的發展進行研究。已知第 1 年年終時所有公屋單位的總樓面面積為 $9\\times10^6\\text{ m}^2$，並且在隨後各年裏，每年所落成的公屋單位的總樓面面積均為前一年年終時全部公屋單位的總樓面面積之 $r\\%$，其中 $r$ 為一常數，而每年所拆除的公屋單位的總樓面面積均為 $3\\times10^5\\text{ m}^2$。現知第 3 年年終時所有公屋單位的總樓面面積為 $1.026\\times10^7\\text{ m}^2$。\n\n(a) (i) 以 $r$ 表第 2 年年終時所有公屋單位的總樓面面積。\n\n　　(ii) 求 $r$。（4 分）\n\n(b) (i) 以 $n$ 表第 $n$ 年年終時所有公屋單位的總樓面面積。\n\n　　(ii) 哪一年年終時所有公屋單位的總樓面面積會首次超過 $4\\times10^7\\text{ m}^2$？（5 分）\n\n(c) 現假設第 $n$ 年年終時所需公屋單位的總樓面面積為 $(a(1.21)^n+b)\\text{ m}^2$，其中 $a$ 及 $b$ 均為常數。某些研究結果顯示下列資料：\n\n| $n$ | 第 $n$ 年年終時所需公屋單位的總樓面面積（m²） |\n|---|---|\n| 1 | $1\\times10^7$ |\n| 2 | $1.063\\times10^7$ |\n\n一研究助理宣稱基於上述假設，某年年終時所有公屋單位的總樓面面積會大於所需公屋單位的總樓面面積。該宣稱是否正確？試解釋你的答案。（4 分）\n\n---\n\n*試卷完 —*\n\n> 本題目庫由 PDF 原卷清洗制作（SOP §2），插圖按 SOP §3 以 matplotlib 1:1 向量重繪，幾何座標經數學反算。\n> 備份原卷裁圖在 `2013P1_figs\\`（對照用，非交付品）；頁面影像在 `2013P1_pages\\`。",
    "html": "<p>現對某城市公共房屋的發展進行研究。已知第 1 年年終時所有公屋單位的總樓面面積為 $9\\times10^6\\text{ m}^2$，並且在隨後各年裏，每年所落成的公屋單位的總樓面面積均為前一年年終時全部公屋單位的總樓面面積之 $r\\%$，其中 $r$ 為一常數，而每年所拆除的公屋單位的總樓面面積均為 $3\\times10^5\\text{ m}^2$。現知第 3 年年終時所有公屋單位的總樓面面積為 $1.026\\times10^7\\text{ m}^2$。</p>\n<p>(a) (i) 以 $r$ 表第 2 年年終時所有公屋單位的總樓面面積。</p>\n<p>(ii) 求 $r$。（4 分）</p>\n<p>(b) (i) 以 $n$ 表第 $n$ 年年終時所有公屋單位的總樓面面積。</p>\n<p>(ii) 哪一年年終時所有公屋單位的總樓面面積會首次超過 $4\\times10^7\\text{ m}^2$？（5 分）</p>\n<p>(c) 現假設第 $n$ 年年終時所需公屋單位的總樓面面積為 $(a(1.21)^n+b)\\text{ m}^2$，其中 $a$ 及 $b$ 均為常數。某些研究結果顯示下列資料：</p>\n<table>\n<thead>\n<tr>\n<th>$n$</th>\n<th>第 $n$ 年年終時所需公屋單位的總樓面面積（m²）</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>$1\\times10^7$</td>\n</tr>\n<tr>\n<td>2</td>\n<td>$1.063\\times10^7$</td>\n</tr>\n</tbody>\n</table>\n<p>一研究助理宣稱基於上述假設，某年年終時所有公屋單位的總樓面面積會大於所需公屋單位的總樓面面積。該宣稱是否正確？試解釋你的答案。（4 分）</p>\n<hr />\n<p><em>試卷完 —</em></p>\n<blockquote>\n<p>本題目庫由 PDF 原卷清洗制作（SOP §2），插圖按 SOP §3 以 matplotlib 1:1 向量重繪，幾何座標經數學反算。\n備份原卷裁圖在 <code>2013P1_figs\\</code>（對照用，非交付品）；頁面影像在 <code>2013P1_pages\\</code>。</p>\n</blockquote>",
    "file": "2013_P1_QU(CHI).md"
+  },
+  {
+   "year": 2013,
+   "paper": "Paper 2",
+   "type": "解答",
+   "qno": 1,
+   "title": "Q1　指數定律",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "指數定律"
+   ],
+   "text": "化簡 $(27\\cdot 9^{\\,n+1})^3$。\n\n$$27\\cdot 9^{\\,n+1} = 3^3\\cdot 3^{2(n+1)} = 3^{2n+5}$$\n\n$$(3^{2n+5})^3 = 3^{6n+15}$$\n\n**答案：B　$3^{6n+15}$**",
+   "html": "<p>化簡 $(27\\cdot 9^{\\,n+1})^3$。</p>\n<p>$$27\\cdot 9^{\\,n+1} = 3^3\\cdot 3^{2(n+1)} = 3^{2n+5}$$</p>\n<p>$$(3^{2n+5})^3 = 3^{6n+15}$$</p>\n<p><strong>答案：B　$3^{6n+15}$</strong></p>",
+   "file": "2013_II_解答.md"
+  },
+  {
+   "year": 2013,
+   "paper": "Paper 2",
+   "type": "解答",
+   "qno": 2,
+   "title": "Q2　分式方程",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "分式方程"
+   ],
+   "text": "若 $\\dfrac{y-1}{c}=\\dfrac{y+1}{d}$，求 $y$。\n\n$$d(y-1)=c(y+1) \\;\\Rightarrow\\; dy-d=cy+c \\;\\Rightarrow\\; y(d-c)=c+d$$\n\n$$y=\\frac{c+d}{d-c}$$\n\n**答案：D　$\\dfrac{c+d}{d-c}$**",
+   "html": "<p>若 $\\dfrac{y-1}{c}=\\dfrac{y+1}{d}$，求 $y$。</p>\n<p>$$d(y-1)=c(y+1) \\;\\Rightarrow\\; dy-d=cy+c \\;\\Rightarrow\\; y(d-c)=c+d$$</p>\n<p>$$y=\\frac{c+d}{d-c}$$</p>\n<p><strong>答案：D　$\\dfrac{c+d}{d-c}$</strong></p>",
+   "file": "2013_II_解答.md"
+  },
+  {
+   "year": 2013,
+   "paper": "Paper 2",
+   "type": "解答",
+   "qno": 3,
+   "title": "Q3　因式分解",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "因式分解"
+   ],
+   "text": "化簡 $h\\ell-k\\ell+hm-km-hn+kn$。\n\n$$=(h-k)\\ell+(h-k)m-(h-k)n=(h-k)(\\ell+m-n)$$\n\n**答案：D　$(h-k)(\\ell+m-n)$**",
+   "html": "<p>化簡 $h\\ell-k\\ell+hm-km-hn+kn$。</p>\n<p>$$=(h-k)\\ell+(h-k)m-(h-k)n=(h-k)(\\ell+m-n)$$</p>\n<p><strong>答案：D　$(h-k)(\\ell+m-n)$</strong></p>",
+   "file": "2013_II_解答.md"
+  },
+  {
+   "year": 2013,
+   "paper": "Paper 2",
+   "type": "解答",
+   "qno": 4,
+   "title": "Q4　近似值",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "近似值"
+   ],
+   "text": "下列哪一項正確表示 $0.0504545$？\n\n- A：準確至二位有效數字為 $0.050$（非 $0.051$）✗\n- B：準確至三位小數為 $0.050$（非 $0.0505$）✗\n- C：準確至四位有效數字 → 第五位有效數字為 $4$（<5），得 $0.05045$ ✓\n- D：準確至五位小數 → 第六位小數為 $4$（<5），得 $0.05045$（非 $0.05046$）✗\n\n**答案：C　$0.05045$（準確至四位有效數字）**",
+   "html": "<p>下列哪一項正確表示 $0.0504545$？</p>\n<ul>\n<li>A：準確至二位有效數字為 $0.050$（非 $0.051$）✗</li>\n<li>B：準確至三位小數為 $0.050$（非 $0.0505$）✗</li>\n<li>C：準確至四位有效數字 → 第五位有效數字為 $4$（&lt;5），得 $0.05045$ ✓</li>\n<li>D：準確至五位小數 → 第六位小數為 $4$（&lt;5），得 $0.05045$（非 $0.05046$）✗</li>\n</ul>\n<p><strong>答案：C　$0.05045$（準確至四位有效數字）</strong></p>",
+   "file": "2013_II_解答.md"
+  },
+  {
+   "year": 2013,
+   "paper": "Paper 2",
+   "type": "解答",
+   "qno": 5,
+   "title": "Q5　不等式",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "不等式"
+   ],
+   "text": "解 $x-\\dfrac{x-1}{2}>5$ 或 $1<x-11$。\n\n第一式：$2x-(x-1)>10 \\Rightarrow x+1>10 \\Rightarrow x>9$\n\n第二式：$x>12$\n\n取聯集（「或」）：$x>9\\;\\cup\\;x>12 = x>9$\n\n**答案：A　$x>9$**",
+   "html": "<p>解 $x-\\dfrac{x-1}{2}&gt;5$ 或 $1&lt;x-11$。</p>\n<p>第一式：$2x-(x-1)&gt;10 \\Rightarrow x+1&gt;10 \\Rightarrow x&gt;9$</p>\n<p>第二式：$x&gt;12$</p>\n<p>取聯集（「或」）：$x&gt;9\\;\\cup\\;x&gt;12 = x&gt;9$</p>\n<p><strong>答案：A　$x&gt;9$</strong></p>",
+   "file": "2013_II_解答.md"
+  },
+  {
+   "year": 2013,
+   "paper": "Paper 2",
+   "type": "解答",
+   "qno": 6,
+   "title": "Q6　解方程",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "解方程"
+   ],
+   "text": "設 $k$ 為常數，解 $(x-k)^2=4k^2$。\n\n$$x-k=\\pm 2k \\;\\Rightarrow\\; x=3k \\text{ 或 } x=-k$$\n\n**答案：C　$x=-k$ 或 $x=3k$**",
+   "html": "<p>設 $k$ 為常數，解 $(x-k)^2=4k^2$。</p>\n<p>$$x-k=\\pm 2k \\;\\Rightarrow\\; x=3k \\text{ 或 } x=-k$$</p>\n<p><strong>答案：C　$x=-k$ 或 $x=3k$</strong></p>",
+   "file": "2013_II_解答.md"
+  },
+  {
+   "year": 2013,
+   "paper": "Paper 2",
+   "type": "解答",
+   "qno": 7,
+   "title": "Q7　二次函數圖像",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "二次函數圖像"
+   ],
+   "text": "> 圖中為 $y=-2x^2+ax+b$ 的拋物線（向下開口），與 $x$ 軸交於 $(1,0)$，與 $y$ 軸交於 $(0,-10)$。\n\n由 $y$ 截距：$b=-10$。代入 $(1,0)$：\n\n$$-2+a-10=0 \\;\\Rightarrow\\; a=12$$\n\n對稱軸：$x=-\\dfrac{a}{2(-2)}=\\dfrac{a}{4}=\\dfrac{12}{4}=3$\n\n**答案：B　$x=3$**",
+   "html": "<blockquote>\n<p>圖中為 $y=-2x^2+ax+b$ 的拋物線（向下開口），與 $x$ 軸交於 $(1,0)$，與 $y$ 軸交於 $(0,-10)$。</p>\n</blockquote>\n<p>由 $y$ 截距：$b=-10$。代入 $(1,0)$：</p>\n<p>$$-2+a-10=0 \\;\\Rightarrow\\; a=12$$</p>\n<p>對稱軸：$x=-\\dfrac{a}{2(-2)}=\\dfrac{a}{4}=\\dfrac{12}{4}=3$</p>\n<p><strong>答案：B　$x=3$</strong></p>",
+   "file": "2013_II_解答.md"
+  },
+  {
+   "year": 2013,
+   "paper": "Paper 2",
+   "type": "解答",
+   "qno": 8,
+   "title": "Q8　恆等式與比例",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "恆等式與比例"
+   ],
+   "text": "若 $x(x+3a)+a \\equiv x^2+2(bx+c)$，求 $a:b:c$。\n\n$$x^2+3ax+a \\equiv x^2+2bx+2c$$\n\n比較係數：$3a=2b$，$a=2c$。\n\n取 $c=1$ → $a=2$，$b=3$。\n\n**答案：A　$2:3:1$**",
+   "html": "<p>若 $x(x+3a)+a \\equiv x^2+2(bx+c)$，求 $a:b:c$。</p>\n<p>$$x^2+3ax+a \\equiv x^2+2bx+2c$$</p>\n<p>比較係數：$3a=2b$，$a=2c$。</p>\n<p>取 $c=1$ → $a=2$，$b=3$。</p>\n<p><strong>答案：A　$2:3:1$</strong></p>",
+   "file": "2013_II_解答.md"
+  },
+  {
+   "year": 2013,
+   "paper": "Paper 2",
+   "type": "解答",
+   "qno": 9,
+   "title": "Q9　多項式因式",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "多項式因式"
+   ],
+   "text": "設 $f(x)=x^{13}-2x+k$。若 $f(x)$ 可被 $x+1$ 整除，求 $f(x)$ 除以 $x-1$ 的餘數。\n\n$$f(-1)=(-1)^{13}-2(-1)+k=-1+2+k=0 \\;\\Rightarrow\\; k=-1$$\n\n餘數 $=f(1)=1-2-1=-2$\n\n**答案：D　$-2$**",
+   "html": "<p>設 $f(x)=x^{13}-2x+k$。若 $f(x)$ 可被 $x+1$ 整除，求 $f(x)$ 除以 $x-1$ 的餘數。</p>\n<p>$$f(-1)=(-1)^{13}-2(-1)+k=-1+2+k=0 \\;\\Rightarrow\\; k=-1$$</p>\n<p>餘數 $=f(1)=1-2-1=-2$</p>\n<p><strong>答案：D　$-2$</strong></p>",
+   "file": "2013_II_解答.md"
+  },
+  {
+   "year": 2013,
+   "paper": "Paper 2",
+   "type": "解答",
+   "qno": 10,
+   "title": "Q10　百分虧損",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "百分虧損"
+   ],
+   "text": "素珊以每輛 $\\$80\\,080$ 售出兩輛汽車，一輛獲利 $30\\%$，另一輛虧蝕 $30\\%$。\n\n$$\\text{成本}_1=\\frac{80080}{1.3}=61600,\\qquad \\text{成本}_2=\\frac{80080}{0.7}=114400$$\n\n$$\\text{總成本}=176000,\\qquad \\text{總收入}=160160 \\;\\Rightarrow\\; \\text{虧蝕}=15840$$\n\n**答案：A　虧蝕 $\\$15\\,840$**",
+   "html": "<p>素珊以每輛 $\\$80\\,080$ 售出兩輛汽車，一輛獲利 $30\\%$，另一輛虧蝕 $30\\%$。</p>\n<p>$$\\text{成本}_1=\\frac{80080}{1.3}=61600,\\qquad \\text{成本}_2=\\frac{80080}{0.7}=114400$$</p>\n<p>$$\\text{總成本}=176000,\\qquad \\text{總收入}=160160 \\;\\Rightarrow\\; \\text{虧蝕}=15840$$</p>\n<p><strong>答案：A　虧蝕 $\\$15\\,840$</strong></p>",
+   "file": "2013_II_解答.md"
+  },
+  {
+   "year": 2013,
+   "paper": "Paper 2",
+   "type": "解答",
+   "qno": 11,
+   "title": "Q11　複利",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "複利"
+   ],
+   "text": "存款 $\\$50\\,000$，年利率 $8\\%$，年期 $1$ 年，每月複利結算。求利息（準確至最接近的元）。\n\n$$A=50000\\left(1+\\frac{0.08}{12}\\right)^{12}=50000(1.0066667)^{12}\\approx 54149.98$$\n\n$$\\text{利息}\\approx 4149.98 \\approx \\$4150$$\n\n**答案：D　$\\$4150$**",
+   "html": "<p>存款 $\\$50\\,000$，年利率 $8\\%$，年期 $1$ 年，每月複利結算。求利息（準確至最接近的元）。</p>\n<p>$$A=50000\\left(1+\\frac{0.08}{12}\\right)^{12}=50000(1.0066667)^{12}\\approx 54149.98$$</p>\n<p>$$\\text{利息}\\approx 4149.98 \\approx \\$4150$$</p>\n<p><strong>答案：D　$\\$4150$</strong></p>",
+   "file": "2013_II_解答.md"
+  },
+  {
+   "year": 2013,
+   "paper": "Paper 2",
+   "type": "解答",
+   "qno": 12,
+   "title": "Q12　比例尺",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "比例尺"
+   ],
+   "text": "某遊樂場實際面積 $900\\ \\mathrm{m}^2$，地圖上面積 $36\\ \\mathrm{cm}^2$。\n\n$$900\\ \\mathrm{m}^2 = 9\\times10^{6}\\ \\mathrm{cm}^2,\\qquad \\text{面積比}=\\frac{36}{9\\times10^{6}}=4\\times10^{-6}$$\n\n$$\\text{長度比}=\\sqrt{4\\times10^{-6}}=2\\times10^{-3}=\\frac{1}{500}$$\n\n**答案：C　$1:500$**",
+   "html": "<p>某遊樂場實際面積 $900\\ \\mathrm{m}^2$，地圖上面積 $36\\ \\mathrm{cm}^2$。</p>\n<p>$$900\\ \\mathrm{m}^2 = 9\\times10^{6}\\ \\mathrm{cm}^2,\\qquad \\text{面積比}=\\frac{36}{9\\times10^{6}}=4\\times10^{-6}$$</p>\n<p>$$\\text{長度比}=\\sqrt{4\\times10^{-6}}=2\\times10^{-3}=\\frac{1}{500}$$</p>\n<p><strong>答案：C　$1:500$</strong></p>",
+   "file": "2013_II_解答.md"
+  },
+  {
+   "year": 2013,
+   "paper": "Paper 2",
+   "type": "解答",
+   "qno": 13,
+   "title": "Q13　正變反變",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "正變反變"
+   ],
+   "text": "$z$ 隨 $x$ 正變且隨 $\\sqrt{y}$ 反變，即 $z=\\dfrac{kx}{\\sqrt{y}}$。若 $y$ 減少 $64\\%$、$z$ 增加 $25\\%$，求 $x$ 的變化。\n\n$$y \\to 0.36y \\;\\Rightarrow\\; \\sqrt{y}\\to 0.6\\sqrt{y};\\qquad z\\to 1.25z$$\n\n$$1.25z=\\frac{k\\,x_{\\text{new}}}{0.6\\sqrt{y}}=\\frac{x_{\\text{new}}}{x}\\cdot\\frac{1}{0.6}\\,z \\;\\Rightarrow\\; \\frac{x_{\\text{new}}}{x}=1.25\\times0.6=0.75$$\n\n**答案：C　減少 $25\\%$**",
+   "html": "<p>$z$ 隨 $x$ 正變且隨 $\\sqrt{y}$ 反變，即 $z=\\dfrac{kx}{\\sqrt{y}}$。若 $y$ 減少 $64\\%$、$z$ 增加 $25\\%$，求 $x$ 的變化。</p>\n<p>$$y \\to 0.36y \\;\\Rightarrow\\; \\sqrt{y}\\to 0.6\\sqrt{y};\\qquad z\\to 1.25z$$</p>\n<p>$$1.25z=\\frac{k\\,x_{\\text{new}}}{0.6\\sqrt{y}}=\\frac{x_{\\text{new}}}{x}\\cdot\\frac{1}{0.6}\\,z \\;\\Rightarrow\\; \\frac{x_{\\text{new}}}{x}=1.25\\times0.6=0.75$$</p>\n<p><strong>答案：C　減少 $25\\%$</strong></p>",
+   "file": "2013_II_解答.md"
+  },
+  {
+   "year": 2013,
+   "paper": "Paper 2",
+   "type": "解答",
+   "qno": 14,
+   "title": "Q14　直線圖像",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "直線圖像"
+   ],
+   "text": "> 圖中為直線 $x+ay+b=0$，斜率為正，與 $x$ 軸交於正方向，與 $y$ 軸交於標有 $-1$ 的刻度（即 $y$ 截距 $=-1$）。\n\n- 斜率 $=-\\dfrac{1}{a}>0 \\Rightarrow a<0$ ✅ **I 正確**\n- $y$ 截距 $=-\\dfrac{b}{a}=-1 \\Rightarrow b=a$；因 $a<0$，故 $b<0$ ✅ **II 正確**\n- $b=a$，故 $a<b$ 不成立 ❌ **III 錯誤**\n\n**答案：A　只有 I 及 II**",
+   "html": "<blockquote>\n<p>圖中為直線 $x+ay+b=0$，斜率為正，與 $x$ 軸交於正方向，與 $y$ 軸交於標有 $-1$ 的刻度（即 $y$ 截距 $=-1$）。</p>\n</blockquote>\n<ul>\n<li>斜率 $=-\\dfrac{1}{a}&gt;0 \\Rightarrow a&lt;0$ ✅ <strong>I 正確</strong></li>\n<li>$y$ 截距 $=-\\dfrac{b}{a}=-1 \\Rightarrow b=a$；因 $a&lt;0$，故 $b&lt;0$ ✅ <strong>II 正確</strong></li>\n<li>$b=a$，故 $a&lt;b$ 不成立 ❌ <strong>III 錯誤</strong></li>\n</ul>\n<p><strong>答案：A　只有 I 及 II</strong></p>",
+   "file": "2013_II_解答.md"
+  },
+  {
+   "year": 2013,
+   "paper": "Paper 2",
+   "type": "解答",
+   "qno": 15,
+   "title": "Q15　反射對稱",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "反射對稱"
+   ],
+   "text": "> 圖中正八邊形由中心連向各頂點分成八個全等等腰三角形，其中四個相間塗上陰影（上下左右四個為陰影，四個對角位為白色）。\n\n- 經「對邊中點」的 4 條軸：映射把第 $i$ 個三角形送到第 $(2k-i)$ 個，奇偶性不變，陰影仍對應陰影 → **是**對稱軸\n- 經「相對頂點」的 4 條軸：映射把第 $i$ 個送到第 $(2k+1-i)$ 個，奇偶性互換，陰影變白色 → **不是**對稱軸\n\n共 $4$ 條反射對稱軸。\n\n**答案：B　$4$**",
+   "html": "<blockquote>\n<p>圖中正八邊形由中心連向各頂點分成八個全等等腰三角形，其中四個相間塗上陰影（上下左右四個為陰影，四個對角位為白色）。</p>\n</blockquote>\n<ul>\n<li>經「對邊中點」的 4 條軸：映射把第 $i$ 個三角形送到第 $(2k-i)$ 個，奇偶性不變，陰影仍對應陰影 → <strong>是</strong>對稱軸</li>\n<li>經「相對頂點」的 4 條軸：映射把第 $i$ 個送到第 $(2k+1-i)$ 個，奇偶性互換，陰影變白色 → <strong>不是</strong>對稱軸</li>\n</ul>\n<p>共 $4$ 條反射對稱軸。</p>\n<p><strong>答案：B　$4$</strong></p>",
+   "file": "2013_II_解答.md"
+  },
+  {
+   "year": 2013,
+   "paper": "Paper 2",
+   "type": "解答",
+   "qno": 16,
+   "title": "Q16　圓弓形面積",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "圓弓形面積"
+   ],
+   "text": "> 圖中半圓 $ABC$ 直徑 $AB=3\\ \\mathrm{cm}$，$C$ 在圓弧上，$AC=2\\ \\mathrm{cm}$；陰影為弦 $AC$ 與其所對圓弧之間的弓形。\n\n半徑 $r=1.5$。設圓心為 $O$，圓心角 $\\theta$：\n\n$$2=2r\\sin\\frac{\\theta}{2}=3\\sin\\frac{\\theta}{2}\\;\\Rightarrow\\;\\sin\\frac{\\theta}{2}=\\frac{2}{3}\\;\\Rightarrow\\;\\theta=83.62^\\circ=1.4595\\ \\mathrm{rad}$$\n\n$$\\text{扇形}=\\tfrac12 r^2\\theta=1.6419,\\qquad \\triangle OAC=\\tfrac12 r^2\\sin\\theta=1.1183$$\n\n$$\\text{弓形}=1.6419-1.1183=0.5236\\approx0.52\\ \\mathrm{cm}^2$$\n\n**答案：B　$0.52\\ \\mathrm{cm}^2$**",
+   "html": "<blockquote>\n<p>圖中半圓 $ABC$ 直徑 $AB=3\\ \\mathrm{cm}$，$C$ 在圓弧上，$AC=2\\ \\mathrm{cm}$；陰影為弦 $AC$ 與其所對圓弧之間的弓形。</p>\n</blockquote>\n<p>半徑 $r=1.5$。設圓心為 $O$，圓心角 $\\theta$：</p>\n<p>$$2=2r\\sin\\frac{\\theta}{2}=3\\sin\\frac{\\theta}{2}\\;\\Rightarrow\\;\\sin\\frac{\\theta}{2}=\\frac{2}{3}\\;\\Rightarrow\\;\\theta=83.62^\\circ=1.4595\\ \\mathrm{rad}$$</p>\n<p>$$\\text{扇形}=\\tfrac12 r^2\\theta=1.6419,\\qquad \\triangle OAC=\\tfrac12 r^2\\sin\\theta=1.1183$$</p>\n<p>$$\\text{弓形}=1.6419-1.1183=0.5236\\approx0.52\\ \\mathrm{cm}^2$$</p>\n<p><strong>答案：B　$0.52\\ \\mathrm{cm}^2$</strong></p>",
+   "file": "2013_II_解答.md"
+  },
+  {
+   "year": 2013,
+   "paper": "Paper 2",
+   "type": "解答",
+   "qno": 17,
+   "title": "Q17　錐體與半球",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "錐體與半球"
+   ],
+   "text": "> 圖中固體由直立圓錐與半球組成，兩者底相同；圓錐底半徑 $3\\ \\mathrm{cm}$、高 $4\\ \\mathrm{cm}$（連接底心與錐頂）。\n\n斜高 $l=\\sqrt{3^2+4^2}=5\\ \\mathrm{cm}$。\n\n$$\\text{錐側面}=\\pi r l=15\\pi,\\qquad \\text{半球曲面}=2\\pi r^2=18\\pi$$\n\n（底圓為內部接合面，不計入表面面積）\n\n$$\\text{總表面面積}=15\\pi+18\\pi=33\\pi\\ \\mathrm{cm}^2$$\n\n**答案：B　$33\\pi\\ \\mathrm{cm}^2$**",
+   "html": "<blockquote>\n<p>圖中固體由直立圓錐與半球組成，兩者底相同；圓錐底半徑 $3\\ \\mathrm{cm}$、高 $4\\ \\mathrm{cm}$（連接底心與錐頂）。</p>\n</blockquote>\n<p>斜高 $l=\\sqrt{3^2+4^2}=5\\ \\mathrm{cm}$。</p>\n<p>$$\\text{錐側面}=\\pi r l=15\\pi,\\qquad \\text{半球曲面}=2\\pi r^2=18\\pi$$</p>\n<p>（底圓為內部接合面，不計入表面面積）</p>\n<p>$$\\text{總表面面積}=15\\pi+18\\pi=33\\pi\\ \\mathrm{cm}^2$$</p>\n<p><strong>答案：B　$33\\pi\\ \\mathrm{cm}^2$</strong></p>",
+   "file": "2013_II_解答.md"
+  },
+  {
+   "year": 2013,
+   "paper": "Paper 2",
+   "type": "解答",
+   "qno": 18,
+   "title": "Q18　梯形面積",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "梯形面積"
+   ],
+   "text": "> 圖中 $ABCD$ 為梯形，$AD\\parallel BC$，$AD:BC=2:3$，$E$ 為 $BC$ 中點，$AC$ 與 $DE$ 相交於 $F$。已知 $\\triangle CEF$ 面積 $=36\\ \\mathrm{cm}^2$。\n\n設 $AD=2a$，則 $BC=3a$，$EC=\\dfrac{3a}{2}=1.5a$。\n\n由 $AD\\parallel EC$：$\\triangle ADF\\sim\\triangle CEF$，相似比 $=2a:1.5a=4:3$，故高 $h_1=\\dfrac43 h_2$。\n\n$$\\text{面積}_{CEF}=\\tfrac12(1.5a)h_2=36 \\;\\Rightarrow\\; ah_2=48$$\n\n$$\\text{面積}_{ADF}=\\tfrac12(2a)\\left(\\tfrac43 h_2\\right)=\\tfrac43(48)=64$$\n\n全高 $h=h_1+h_2=\\dfrac73 h_2$：\n\n$$\\text{面積}_{ABCD}=\\tfrac12(2a+3a)\\cdot\\tfrac73 h_2=\\frac{35}{6}ah_2=\\frac{35}{6}\\times48=280$$\n\n**答案：C　$280\\ \\mathrm{cm}^2$**",
+   "html": "<blockquote>\n<p>圖中 $ABCD$ 為梯形，$AD\\parallel BC$，$AD:BC=2:3$，$E$ 為 $BC$ 中點，$AC$ 與 $DE$ 相交於 $F$。已知 $\\triangle CEF$ 面積 $=36\\ \\mathrm{cm}^2$。</p>\n</blockquote>\n<p>設 $AD=2a$，則 $BC=3a$，$EC=\\dfrac{3a}{2}=1.5a$。</p>\n<p>由 $AD\\parallel EC$：$\\triangle ADF\\sim\\triangle CEF$，相似比 $=2a:1.5a=4:3$，故高 $h_1=\\dfrac43 h_2$。</p>\n<p>$$\\text{面積}_{CEF}=\\tfrac12(1.5a)h_2=36 \\;\\Rightarrow\\; ah_2=48$$</p>\n<p>$$\\text{面積}_{ADF}=\\tfrac12(2a)\\left(\\tfrac43 h_2\\right)=\\tfrac43(48)=64$$</p>\n<p>全高 $h=h_1+h_2=\\dfrac73 h_2$：</p>\n<p>$$\\text{面積}_{ABCD}=\\tfrac12(2a+3a)\\cdot\\tfrac73 h_2=\\frac{35}{6}ah_2=\\frac{35}{6}\\times48=280$$</p>\n<p><strong>答案：C　$280\\ \\mathrm{cm}^2$</strong></p>",
+   "file": "2013_II_解答.md"
+  },
+  {
+   "year": 2013,
+   "paper": "Paper 2",
+   "type": "解答",
+   "qno": 19,
+   "title": "Q19　圓內角",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "圓內角"
+   ],
+   "text": "> 圖中 $ABCD$ 內接於圓，$AC$ 與 $BD$ 相交於 $E$，圖中 $E$ 右側（$\\angle DEC$ 位置）標示 $74^\\circ$。已知 $AB=AD$ 及 $AD\\parallel BC$。\n\n設弧 $AB=$ 弧 $AD=$ 弧 $DC=x$（$AB=AD$ 得弧相等；$AD\\parallel BC$ 得所夾弧 $AB=DC$），弧 $BC=y$，則 $3x+y=360^\\circ$。\n\n兩弦交角：$\\angle DEC=\\dfrac{\\text{弧 }DC+\\text{弧 }AB}{2}=\\dfrac{x+x}{2}=x=74^\\circ$\n\n$$y=360^\\circ-3(74^\\circ)=138^\\circ$$\n\n$$\\angle BAE=\\angle BAC=\\frac{1}{2}\\text{弧 }BC=\\frac{138^\\circ}{2}=69^\\circ$$\n\n**答案：C　$69^\\circ$**",
+   "html": "<blockquote>\n<p>圖中 $ABCD$ 內接於圓，$AC$ 與 $BD$ 相交於 $E$，圖中 $E$ 右側（$\\angle DEC$ 位置）標示 $74^\\circ$。已知 $AB=AD$ 及 $AD\\parallel BC$。</p>\n</blockquote>\n<p>設弧 $AB=$ 弧 $AD=$ 弧 $DC=x$（$AB=AD$ 得弧相等；$AD\\parallel BC$ 得所夾弧 $AB=DC$），弧 $BC=y$，則 $3x+y=360^\\circ$。</p>\n<p>兩弦交角：$\\angle DEC=\\dfrac{\\text{弧 }DC+\\text{弧 }AB}{2}=\\dfrac{x+x}{2}=x=74^\\circ$</p>\n<p>$$y=360^\\circ-3(74^\\circ)=138^\\circ$$</p>\n<p>$$\\angle BAE=\\angle BAC=\\frac{1}{2}\\text{弧 }BC=\\frac{138^\\circ}{2}=69^\\circ$$</p>\n<p><strong>答案：C　$69^\\circ$</strong></p>",
+   "file": "2013_II_解答.md"
+  },
+  {
+   "year": 2013,
+   "paper": "Paper 2",
+   "type": "解答",
+   "qno": 20,
+   "title": "Q20　方位",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "方位"
+   ],
+   "text": "> 圖中由 $O$ 測 $P$ 為 $\\mathrm{S}86^\\circ\\mathrm{E}$，由 $O$ 測 $Q$ 為 $\\mathrm{N}32^\\circ\\mathrm{E}$，$OP=OQ$。\n\n以正北為 $90^\\circ$（數學角），取 $OP=OQ=1$：\n\n$$P=(\\sin 86^\\circ,\\,-\\cos 86^\\circ)=(0.9976,\\,-0.0698)$$\n$$Q=(\\sin 32^\\circ,\\,\\cos 32^\\circ)=(0.5299,\\,0.8480)$$\n\n$$\\overrightarrow{QP}=P-Q=(0.4677,\\,-0.9178)$$\n\n向南偏東角度 $=\\tan^{-1}\\dfrac{0.4677}{0.9178}=27.0^\\circ$\n\n**答案：D　$\\mathrm{S}27^\\circ\\mathrm{E}$**",
+   "html": "<blockquote>\n<p>圖中由 $O$ 測 $P$ 為 $\\mathrm{S}86^\\circ\\mathrm{E}$，由 $O$ 測 $Q$ 為 $\\mathrm{N}32^\\circ\\mathrm{E}$，$OP=OQ$。</p>\n</blockquote>\n<p>以正北為 $90^\\circ$（數學角），取 $OP=OQ=1$：</p>\n<p>$$P=(\\sin 86^\\circ,\\,-\\cos 86^\\circ)=(0.9976,\\,-0.0698)$$\n$$Q=(\\sin 32^\\circ,\\,\\cos 32^\\circ)=(0.5299,\\,0.8480)$$</p>\n<p>$$\\overrightarrow{QP}=P-Q=(0.4677,\\,-0.9178)$$</p>\n<p>向南偏東角度 $=\\tan^{-1}\\dfrac{0.4677}{0.9178}=27.0^\\circ$</p>\n<p><strong>答案：D　$\\mathrm{S}27^\\circ\\mathrm{E}$</strong></p>",
+   "file": "2013_II_解答.md"
+  },
+  {
+   "year": 2013,
+   "paper": "Paper 2",
+   "type": "解答",
+   "qno": 21,
+   "title": "Q21　正多邊形",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "正多邊形"
+   ],
+   "text": "正 $n$ 邊形一內角為一外角的 $4$ 倍：\n\n$$\\frac{(n-2)180}{n}=4\\times\\frac{360}{n}\\;\\Rightarrow\\;(n-2)180=1440\\;\\Rightarrow\\;n=10$$\n\n- I：$n=10$ ✅\n- II：對角線數 $=\\dfrac{n(n-3)}{2}=\\dfrac{10\\times7}{2}=35\\neq10$ ❌\n- III：旋轉對稱的階（折式數目）$=10$ ✅\n\n**答案：C　只有 I 及 III**",
+   "html": "<p>正 $n$ 邊形一內角為一外角的 $4$ 倍：</p>\n<p>$$\\frac{(n-2)180}{n}=4\\times\\frac{360}{n}\\;\\Rightarrow\\;(n-2)180=1440\\;\\Rightarrow\\;n=10$$</p>\n<ul>\n<li>I：$n=10$ ✅</li>\n<li>II：對角線數 $=\\dfrac{n(n-3)}{2}=\\dfrac{10\\times7}{2}=35\\neq10$ ❌</li>\n<li>III：旋轉對稱的階（折式數目）$=10$ ✅</li>\n</ul>\n<p><strong>答案：C　只有 I 及 III</strong></p>",
+   "file": "2013_II_解答.md"
+  },
+  {
+   "year": 2013,
+   "paper": "Paper 2",
+   "type": "解答",
+   "qno": 22,
+   "title": "Q22　餘弦比",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "餘弦比"
+   ],
+   "text": "$\\triangle ABC$ 中 $AB:BC:AC=8:15:17$。因 $8^2+15^2=64+225=289=17^2$，故 $\\angle B=90^\\circ$（直角三角形）。\n\n$$\\cos A=\\frac{AB}{AC}=\\frac{8}{17},\\qquad \\cos C=\\frac{BC}{AC}=\\frac{15}{17}$$\n\n$$\\cos A:\\cos C=8:15$$\n\n**答案：A　$8:15$**",
+   "html": "<p>$\\triangle ABC$ 中 $AB:BC:AC=8:15:17$。因 $8^2+15^2=64+225=289=17^2$，故 $\\angle B=90^\\circ$（直角三角形）。</p>\n<p>$$\\cos A=\\frac{AB}{AC}=\\frac{8}{17},\\qquad \\cos C=\\frac{BC}{AC}=\\frac{15}{17}$$</p>\n<p>$$\\cos A:\\cos C=8:15$$</p>\n<p><strong>答案：A　$8:15$</strong></p>",
+   "file": "2013_II_解答.md"
+  },
+  {
+   "year": 2013,
+   "paper": "Paper 2",
+   "type": "解答",
+   "qno": 23,
+   "title": "Q23　三角恆等式",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "三角恆等式"
+   ],
+   "text": "設 $0^\\circ<x<90^\\circ$。\n\n- I：$\\tan x\\tan(90^\\circ-x)=\\tan x\\cot x=1$ ✅\n- II：$\\sin x-\\sin(90^\\circ-x)=\\sin x-\\cos x$；當 $x=60^\\circ$ 時 $=0.866-0.5>0$，不恒 $<0$ ❌\n- III：$\\cos x+\\cos(90^\\circ-x)=\\cos x+\\sin x>0$（兩者在第一象限皆正）✅\n\n**答案：B　只有 I 及 III**",
+   "html": "<p>設 $0^\\circ&lt;x&lt;90^\\circ$。</p>\n<ul>\n<li>I：$\\tan x\\tan(90^\\circ-x)=\\tan x\\cot x=1$ ✅</li>\n<li>II：$\\sin x-\\sin(90^\\circ-x)=\\sin x-\\cos x$；當 $x=60^\\circ$ 時 $=0.866-0.5&gt;0$，不恒 $&lt;0$ ❌</li>\n<li>III：$\\cos x+\\cos(90^\\circ-x)=\\cos x+\\sin x&gt;0$（兩者在第一象限皆正）✅</li>\n</ul>\n<p><strong>答案：B　只有 I 及 III</strong></p>",
+   "file": "2013_II_解答.md"
+  },
+  {
+   "year": 2013,
+   "paper": "Paper 2",
+   "type": "解答",
+   "qno": 24,
+   "title": "Q24　垂直平分線",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "垂直平分線"
+   ],
+   "text": "$A(2,5)$，$B(4,-1)$，$P$ 滿足 $AP=BP$ → $P$ 的軌跡為 $AB$ 的垂直平分線。\n\n中點 $=\\left(\\dfrac{2+4}{2},\\dfrac{5-1}{2}\\right)=(3,2)$；$AB$ 斜率 $=\\dfrac{-1-5}{4-2}=-3$，垂線斜率 $=\\dfrac13$。\n\n$$y-2=\\frac13(x-3)\\;\\Rightarrow\\;3y-6=x-3\\;\\Rightarrow\\;x-3y+3=0$$\n\n**答案：A　$x-3y+3=0$**",
+   "html": "<p>$A(2,5)$，$B(4,-1)$，$P$ 滿足 $AP=BP$ → $P$ 的軌跡為 $AB$ 的垂直平分線。</p>\n<p>中點 $=\\left(\\dfrac{2+4}{2},\\dfrac{5-1}{2}\\right)=(3,2)$；$AB$ 斜率 $=\\dfrac{-1-5}{4-2}=-3$，垂線斜率 $=\\dfrac13$。</p>\n<p>$$y-2=\\frac13(x-3)\\;\\Rightarrow\\;3y-6=x-3\\;\\Rightarrow\\;x-3y+3=0$$</p>\n<p><strong>答案：A　$x-3y+3=0$</strong></p>",
+   "file": "2013_II_解答.md"
+  },
+  {
+   "year": 2013,
+   "paper": "Paper 2",
+   "type": "解答",
+   "qno": 25,
+   "title": "Q25　圓的性質",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "圓的性質"
+   ],
+   "text": "圓 $C$：$2x^2+2y^2-4x+8y-5=0$，即 $x^2+y^2-2x+4y-\\dfrac52=0$：\n\n$$(x-1)^2+(y+2)^2=1+4+\\frac52=\\frac{13}{2}=6.5$$\n\n圓心 $G(1,-2)$，半徑 $=\\sqrt{6.5}\\approx2.55$。\n\n- I：半徑為 $5$ ❌（實為 $\\sqrt{6.5}$）\n- II：$PQ$ 中點 $=\\left(\\dfrac{-1+4}{2},\\dfrac{2+0}{2}\\right)=(1.5,1)$；與圓心距離 $=\\sqrt{0.5^2+3^2}=\\sqrt{9.25}\\approx3.04>2.55$ → 在圓外 ✅\n- III：$\\overrightarrow{GP}=(-2,4)$，$\\overrightarrow{GQ}=(3,2)$；$\\overrightarrow{GP}\\cdot\\overrightarrow{GQ}=-6+8=2>0$ → 夾角銳角 ✅\n\n**答案：D　只有 II 及 III**",
+   "html": "<p>圓 $C$：$2x^2+2y^2-4x+8y-5=0$，即 $x^2+y^2-2x+4y-\\dfrac52=0$：</p>\n<p>$$(x-1)^2+(y+2)^2=1+4+\\frac52=\\frac{13}{2}=6.5$$</p>\n<p>圓心 $G(1,-2)$，半徑 $=\\sqrt{6.5}\\approx2.55$。</p>\n<ul>\n<li>I：半徑為 $5$ ❌（實為 $\\sqrt{6.5}$）</li>\n<li>II：$PQ$ 中點 $=\\left(\\dfrac{-1+4}{2},\\dfrac{2+0}{2}\\right)=(1.5,1)$；與圓心距離 $=\\sqrt{0.5^2+3^2}=\\sqrt{9.25}\\approx3.04&gt;2.55$ → 在圓外 ✅</li>\n<li>III：$\\overrightarrow{GP}=(-2,4)$，$\\overrightarrow{GQ}=(3,2)$；$\\overrightarrow{GP}\\cdot\\overrightarrow{GQ}=-6+8=2&gt;0$ → 夾角銳角 ✅</li>\n</ul>\n<p><strong>答案：D　只有 II 及 III</strong></p>",
+   "file": "2013_II_解答.md"
+  },
+  {
+   "year": 2013,
+   "paper": "Paper 2",
+   "type": "解答",
+   "qno": 26,
+   "title": "Q26　概率",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "概率"
+   ],
+   "text": "七張卡記有 $1,2,3,4,5,6,7$，隨機同時抽出兩個。積為奇數 ⟺ 兩數皆奇數。\n\n$$P=\\frac{\\binom{4}{2}}{\\binom{7}{2}}=\\frac{6}{21}=\\frac{2}{7}$$\n\n**答案：A　$\\dfrac{2}{7}$**",
+   "html": "<p>七張卡記有 $1,2,3,4,5,6,7$，隨機同時抽出兩個。積為奇數 ⟺ 兩數皆奇數。</p>\n<p>$$P=\\frac{\\binom{4}{2}}{\\binom{7}{2}}=\\frac{6}{21}=\\frac{2}{7}$$</p>\n<p><strong>答案：A　$\\dfrac{2}{7}$</strong></p>",
+   "file": "2013_II_解答.md"
+  },
+  {
+   "year": 2013,
+   "paper": "Paper 2",
+   "type": "解答",
+   "qno": 27,
+   "title": "Q27　平均數、眾數與中位數",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "平均數、眾數與中位數"
+   ],
+   "text": "九個數 $14,6,4,5,7,5,x,y,z$ 的平均值為 $8$、眾數為 $14$。\n\n$$\\text{總和}=9\\times8=72,\\qquad 14+6+4+5+7+5=41 \\;\\Rightarrow\\; x+y+z=31$$\n\n眾數為 $14$ 表 $14$ 出現次數須多於 $5$（已出現 2 次），故 $14$ 至少出現 3 次，即 $x,y,z$ 中至少兩個為 $14$。\n\n若三個皆為 $14$：總和 $42>31$ ✗。故恰兩個為 $14$，第三個 $=31-28=3$。\n\n九數為 $3,4,5,5,6,7,14,14,14$（總和 $72$ ✓，眾數 $14$ ✓）。\n\n中位數（第 5 項）$=6$\n\n**答案：B　$6$**",
+   "html": "<p>九個數 $14,6,4,5,7,5,x,y,z$ 的平均值為 $8$、眾數為 $14$。</p>\n<p>$$\\text{總和}=9\\times8=72,\\qquad 14+6+4+5+7+5=41 \\;\\Rightarrow\\; x+y+z=31$$</p>\n<p>眾數為 $14$ 表 $14$ 出現次數須多於 $5$（已出現 2 次），故 $14$ 至少出現 3 次，即 $x,y,z$ 中至少兩個為 $14$。</p>\n<p>若三個皆為 $14$：總和 $42&gt;31$ ✗。故恰兩個為 $14$，第三個 $=31-28=3$。</p>\n<p>九數為 $3,4,5,5,6,7,14,14,14$（總和 $72$ ✓，眾數 $14$ ✓）。</p>\n<p>中位數（第 5 項）$=6$</p>\n<p><strong>答案：B　$6$</strong></p>",
+   "file": "2013_II_解答.md"
+  },
+  {
+   "year": 2013,
+   "paper": "Paper 2",
+   "type": "解答",
+   "qno": 28,
+   "title": "Q28　散點圖",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "散點圖"
+   ],
+   "text": "> 圖中散點由左下向右上升，呈近似直線的正相關分布。\n\n**答案：A　當 $x$ 增加時，$y$ 增加**",
+   "html": "<blockquote>\n<p>圖中散點由左下向右上升，呈近似直線的正相關分布。</p>\n</blockquote>\n<p><strong>答案：A　當 $x$ 增加時，$y$ 增加</strong></p>",
+   "file": "2013_II_解答.md"
+  },
+  {
+   "year": 2013,
+   "paper": "Paper 2",
+   "type": "解答",
+   "qno": 29,
+   "title": "Q29　幹葉圖與框線圖",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "幹葉圖與框線圖"
+   ],
+   "text": "> 幹葉圖（時薪／元）：\n> 乾 4 ｜ 葉 0 2 2 2 4 4 4 7\n> 乾 5 ｜ 葉 0 0 1 2 2 6 8 9\n> 乾 6 ｜ 葉 3 5 5 7\n> 乾 7 ｜ 葉 0\n> 乾 8 ｜ 葉 2 6\n> 乾 9 ｜ 葉 5\n\n排序後（共 24 個）：$40,42,42,42,44,44,44,47,50,50,51,52,52,56,58,59,63,65,65,67,70,82,86,95$\n\n- 最小 $=40$，最大 $=95$\n- 中位數 $=$ 第 12、13 項平均 $=\\dfrac{52+52}{2}=52$\n- $Q_1=$ 前半 12 項的中位數 $=\\dfrac{44+44}{2}=44$\n- $Q_3=$ 後半 12 項的中位數 $=\\dfrac{65+65}{2}=65$\n\n> 五數概括 $40,\\,44,\\,52,\\,65,\\,95$：左須極短（$40\\to44$）、右須極長（$65\\to95$），箱體內中線略偏左。選項 A 的框線圖正是「左端緊貼起點、中線偏左、右須長」者。\n\n**答案：A**",
+   "html": "<blockquote>\n<p>幹葉圖（時薪／元）：\n乾 4 ｜ 葉 0 2 2 2 4 4 4 7\n乾 5 ｜ 葉 0 0 1 2 2 6 8 9\n乾 6 ｜ 葉 3 5 5 7\n乾 7 ｜ 葉 0\n乾 8 ｜ 葉 2 6\n乾 9 ｜ 葉 5</p>\n</blockquote>\n<p>排序後（共 24 個）：$40,42,42,42,44,44,44,47,50,50,51,52,52,56,58,59,63,65,65,67,70,82,86,95$</p>\n<ul>\n<li>最小 $=40$，最大 $=95$</li>\n<li>中位數 $=$ 第 12、13 項平均 $=\\dfrac{52+52}{2}=52$</li>\n<li>$Q_1=$ 前半 12 項的中位數 $=\\dfrac{44+44}{2}=44$</li>\n<li>$Q_3=$ 後半 12 項的中位數 $=\\dfrac{65+65}{2}=65$</li>\n</ul>\n<blockquote>\n<p>五數概括 $40,\\,44,\\,52,\\,65,\\,95$：左須極短（$40\\to44$）、右須極長（$65\\to95$），箱體內中線略偏左。選項 A 的框線圖正是「左端緊貼起點、中線偏左、右須長」者。</p>\n</blockquote>\n<p><strong>答案：A</strong></p>",
+   "file": "2013_II_解答.md"
+  },
+  {
+   "year": 2013,
+   "paper": "Paper 2",
+   "type": "解答",
+   "qno": 30,
+   "title": "Q30　圓形圖",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "圓形圖"
+   ],
+   "text": "> $X$ 文具店圓形圖（以圓心角標示）：原子筆 $60^\\circ$、筆記簿 $\\theta$、間尺 $68^\\circ$、鉛筆 $36^\\circ$、其他 $162^\\circ$。\n> $Y$ 文具店圓形圖（以百分比標示）：原子筆 $16\\%$、筆記簿 $k\\%$、間尺 $12\\%$、鉛筆 $10\\%$、其他 $46\\%$。\n\n$$\\theta=360^\\circ-(60+68+36+162)^\\circ=34^\\circ,\\qquad k=100-(16+12+10+46)=16$$\n\n- A：兩店總盈利未知，無法比較鉛筆盈利 ❌\n- B：$X$ 店原子筆＋筆記簿 $=60^\\circ+34^\\circ=94^\\circ$；間尺＋鉛筆 $=68^\\circ+36^\\circ=104^\\circ$；$94<104$ ✅\n- C：$k=16\\neq14$ ❌\n- D：$\\theta=34^\\circ\\neq36^\\circ$ ❌\n\n**答案：B**\n\n---\n\n# Section B（第 31–45 題）",
+   "html": "<blockquote>\n<p>$X$ 文具店圓形圖（以圓心角標示）：原子筆 $60^\\circ$、筆記簿 $\\theta$、間尺 $68^\\circ$、鉛筆 $36^\\circ$、其他 $162^\\circ$。\n$Y$ 文具店圓形圖（以百分比標示）：原子筆 $16\\%$、筆記簿 $k\\%$、間尺 $12\\%$、鉛筆 $10\\%$、其他 $46\\%$。</p>\n</blockquote>\n<p>$$\\theta=360^\\circ-(60+68+36+162)^\\circ=34^\\circ,\\qquad k=100-(16+12+10+46)=16$$</p>\n<ul>\n<li>A：兩店總盈利未知，無法比較鉛筆盈利 ❌</li>\n<li>B：$X$ 店原子筆＋筆記簿 $=60^\\circ+34^\\circ=94^\\circ$；間尺＋鉛筆 $=68^\\circ+36^\\circ=104^\\circ$；$94&lt;104$ ✅</li>\n<li>C：$k=16\\neq14$ ❌</li>\n<li>D：$\\theta=34^\\circ\\neq36^\\circ$ ❌</li>\n</ul>\n<p><strong>答案：B</strong></p>\n<hr />\n<h1>Section B（第 31–45 題）</h1>",
+   "file": "2013_II_解答.md"
+  },
+  {
+   "year": 2013,
+   "paper": "Paper 2",
+   "type": "解答",
+   "qno": 31,
+   "title": "Q31　L.C.M.",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "L.C.M."
+   ],
+   "text": "求 $a^2+4a+4$、$a^2-4$、$a^3+8$ 的 L.C.M.\n\n$$(a+2)^2,\\qquad (a-2)(a+2),\\qquad (a+2)(a^2-2a+4)$$\n\n$$\\text{L.C.M.}=(a+2)^2(a-2)(a^2-2a+4)$$\n\n**答案：C　$(a-2)(a+2)^2(a^2-2a+4)$**",
+   "html": "<p>求 $a^2+4a+4$、$a^2-4$、$a^3+8$ 的 L.C.M.</p>\n<p>$$(a+2)^2,\\qquad (a-2)(a+2),\\qquad (a+2)(a^2-2a+4)$$</p>\n<p>$$\\text{L.C.M.}=(a+2)^2(a-2)(a^2-2a+4)$$</p>\n<p><strong>答案：C　$(a-2)(a+2)^2(a^2-2a+4)$</strong></p>",
+   "file": "2013_II_解答.md"
+  },
+  {
+   "year": 2013,
+   "paper": "Paper 2",
+   "type": "解答",
+   "qno": 32,
+   "title": "Q32　指數與對數圖像",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "指數與對數圖像"
+   ],
+   "text": "> 圖中 $y=ab^x$ 為遞減指數曲線，$y$ 截距為 $3$（故 $a=3$，$0<b<1$）。\n\n$$\\log_7 y=\\log_7 a+x\\log_7 b=\\log_7 3+x\\log_7 b$$\n\n$\\log_7 b<0$（因 $0<b<1$）→ 斜率為負；截距 $\\log_7 3>0$（因 $3>1$）→ 與縱軸交於原點之上。\n\n即「負斜率、縱截距為正」的直線。\n\n**答案：B**",
+   "html": "<blockquote>\n<p>圖中 $y=ab^x$ 為遞減指數曲線，$y$ 截距為 $3$（故 $a=3$，$0&lt;b&lt;1$）。</p>\n</blockquote>\n<p>$$\\log_7 y=\\log_7 a+x\\log_7 b=\\log_7 3+x\\log_7 b$$</p>\n<p>$\\log_7 b&lt;0$（因 $0&lt;b&lt;1$）→ 斜率為負；截距 $\\log_7 3&gt;0$（因 $3&gt;1$）→ 與縱軸交於原點之上。</p>\n<p>即「負斜率、縱截距為正」的直線。</p>\n<p><strong>答案：B</strong></p>",
+   "file": "2013_II_解答.md"
+  },
+  {
+   "year": 2013,
+   "paper": "Paper 2",
+   "type": "解答",
+   "qno": 33,
+   "title": "Q33　十六進制",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "十六進制"
+   ],
+   "text": "$A00000E00011_{16}$，由左至右位值為 $16^{11},16^{10},\\dots,16^0$：\n\n- 最左 $A=10$ → $10\\times16^{11}$\n- 第 6 位（$16^5$）為 $E=14$ → $14\\times16^5$\n- 最末兩位 $1,1$ → $1\\times16+1=17$\n\n**答案：A　$10\\times16^{11}+14\\times16^5+17$**",
+   "html": "<p>$A00000E00011_{16}$，由左至右位值為 $16^{11},16^{10},\\dots,16^0$：</p>\n<ul>\n<li>最左 $A=10$ → $10\\times16^{11}$</li>\n<li>第 6 位（$16^5$）為 $E=14$ → $14\\times16^5$</li>\n<li>最末兩位 $1,1$ → $1\\times16+1=17$</li>\n</ul>\n<p><strong>答案：A　$10\\times16^{11}+14\\times16^5+17$</strong></p>",
+   "file": "2013_II_解答.md"
+  },
+  {
+   "year": 2013,
+   "paper": "Paper 2",
+   "type": "解答",
+   "qno": 34,
+   "title": "Q34　對數方程",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "對數方程"
+   ],
+   "text": "若 $x-\\log y=2$ 且 $x^2-\\log y^2-10=2$，求 $y$。\n\n由第一式：$x=2+\\log y$。代入第二式（$\\log y^2=2\\log y$）：\n\n$$(2+\\log y)^2-2\\log y=12$$\n\n$$(\\log y)^2+2\\log y+4-2\\log y=12\\;\\Rightarrow\\;(\\log y)^2+2\\log y-8=0$$\n\n$$\\log y=\\frac{-2\\pm\\sqrt{4+32}}{2}=\\frac{-2\\pm6}{2}=2 \\text{ 或 } -4$$\n\n$$y=10^2=100 \\quad\\text{或}\\quad y=10^{-4}=\\frac{1}{10000}$$\n\n**答案：D　$\\dfrac{1}{10000}$ 或 $100$**",
+   "html": "<p>若 $x-\\log y=2$ 且 $x^2-\\log y^2-10=2$，求 $y$。</p>\n<p>由第一式：$x=2+\\log y$。代入第二式（$\\log y^2=2\\log y$）：</p>\n<p>$$(2+\\log y)^2-2\\log y=12$$</p>\n<p>$$(\\log y)^2+2\\log y+4-2\\log y=12\\;\\Rightarrow\\;(\\log y)^2+2\\log y-8=0$$</p>\n<p>$$\\log y=\\frac{-2\\pm\\sqrt{4+32}}{2}=\\frac{-2\\pm6}{2}=2 \\text{ 或 } -4$$</p>\n<p>$$y=10^2=100 \\quad\\text{或}\\quad y=10^{-4}=\\frac{1}{10000}$$</p>\n<p><strong>答案：D　$\\dfrac{1}{10000}$ 或 $100$</strong></p>",
+   "file": "2013_II_解答.md"
+  },
+  {
+   "year": 2013,
+   "paper": "Paper 2",
+   "type": "解答",
+   "qno": 35,
+   "title": "Q35　方程的根",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "方程的根"
+   ],
+   "text": "$\\alpha\\neq\\beta$ 且 $\\begin{cases}3\\alpha=\\alpha^2-5\\\\3\\beta=\\beta^2-5\\end{cases}$\n\n故 $\\alpha,\\beta$ 皆為 $t^2-3t-5=0$ 的根。由韋達定理：\n\n$$\\alpha\\beta=\\frac{c}{a}=\\frac{-5}{1}=-5$$\n\n**答案：D　$-5$**",
+   "html": "<p>$\\alpha\\neq\\beta$ 且 $\\begin{cases}3\\alpha=\\alpha^2-5\\3\\beta=\\beta^2-5\\end{cases}$</p>\n<p>故 $\\alpha,\\beta$ 皆為 $t^2-3t-5=0$ 的根。由韋達定理：</p>\n<p>$$\\alpha\\beta=\\frac{c}{a}=\\frac{-5}{1}=-5$$</p>\n<p><strong>答案：D　$-5$</strong></p>",
+   "file": "2013_II_解答.md"
+  },
+  {
+   "year": 2013,
+   "paper": "Paper 2",
+   "type": "解答",
+   "qno": 36,
+   "title": "Q36　虛數",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "虛數"
+   ],
+   "text": "求 $i+2i^2+3i^3+4i^4$ 的實部。\n\n$$=i+2(-1)+3(-i)+4(1)=i-2-3i+4=2-2i$$\n\n實部 $=2$\n\n**答案：A　$2$**",
+   "html": "<p>求 $i+2i^2+3i^3+4i^4$ 的實部。</p>\n<p>$$=i+2(-1)+3(-i)+4(1)=i-2-3i+4=2-2i$$</p>\n<p>實部 $=2$</p>\n<p><strong>答案：A　$2$</strong></p>",
+   "file": "2013_II_解答.md"
+  },
+  {
+   "year": 2013,
+   "paper": "Paper 2",
+   "type": "解答",
+   "qno": 37,
+   "title": "Q37　線性規畫",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "線性規畫"
+   ],
+   "text": "$$\\begin{cases}x\\ge2\\\\y\\ge0\\\\x+4y\\le22\\\\4x-y\\le20\\end{cases}$$\n\n求 $3y-4x+15$ 的最大值。可行域頂點：\n\n| 頂點 | $3y-4x+15$ |\n|---|---|\n| $(2,0)$（$x=2,y=0$） | $0-8+15=7$ |\n| $(2,5)$（$x=2$ 與 $x+4y=22$） | $15-8+15=22$ |\n| $(6,4)$（$x+4y=22$ 與 $4x-y=20$） | $12-24+15=3$ |\n| $(5,0)$（$4x-y=20$ 與 $y=0$） | $0-20+15=-5$ |\n\n最大值 $=22$（於 $(2,5)$）。\n\n**答案：C　$22$**",
+   "html": "<p>$$\\begin{cases}x\\ge2\\y\\ge0\\x+4y\\le22\\4x-y\\le20\\end{cases}$$</p>\n<p>求 $3y-4x+15$ 的最大值。可行域頂點：</p>\n<table>\n<thead>\n<tr>\n<th>頂點</th>\n<th>$3y-4x+15$</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>$(2,0)$（$x=2,y=0$）</td>\n<td>$0-8+15=7$</td>\n</tr>\n<tr>\n<td>$(2,5)$（$x=2$ 與 $x+4y=22$）</td>\n<td>$15-8+15=22$</td>\n</tr>\n<tr>\n<td>$(6,4)$（$x+4y=22$ 與 $4x-y=20$）</td>\n<td>$12-24+15=3$</td>\n</tr>\n<tr>\n<td>$(5,0)$（$4x-y=20$ 與 $y=0$）</td>\n<td>$0-20+15=-5$</td>\n</tr>\n</tbody>\n</table>\n<p>最大值 $=22$（於 $(2,5)$）。</p>\n<p><strong>答案：C　$22$</strong></p>",
+   "file": "2013_II_解答.md"
+  },
+  {
+   "year": 2013,
+   "paper": "Paper 2",
+   "type": "解答",
+   "qno": 38,
+   "title": "Q38　數列",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "數列"
+   ],
+   "text": "某數列第 $n$ 項為 $2n-19$。\n\n- I：$2n-19=25\\Rightarrow n=22$（正整數）→ $25$ 是其中一項 ✅\n- II：$2n-19<0\\Rightarrow n<9.5$，即 $n=1,2,\\dots,9$，共 **9** 個負值項（非 10）❌\n- III：$S_n=\\dfrac{n}{2}(a_1+a_n)=\\dfrac{n}{2}(-17+2n-19)=\\dfrac{n(n-18)}{2}\\cdot 2$ 需小心：\n\n$$S_n=\\frac{n}{2}\\big[(-17)+(2n-19)\\big]=\\frac{n}{2}(2n-36)=n(n-18)=n^2-18n \\;\\checkmark$$\n\n**答案：C　只有 I 及 III**",
+   "html": "<p>某數列第 $n$ 項為 $2n-19$。</p>\n<ul>\n<li>I：$2n-19=25\\Rightarrow n=22$（正整數）→ $25$ 是其中一項 ✅</li>\n<li>II：$2n-19&lt;0\\Rightarrow n&lt;9.5$，即 $n=1,2,\\dots,9$，共 <strong>9</strong> 個負值項（非 10）❌</li>\n<li>III：$S_n=\\dfrac{n}{2}(a_1+a_n)=\\dfrac{n}{2}(-17+2n-19)=\\dfrac{n(n-18)}{2}\\cdot 2$ 需小心：</li>\n</ul>\n<p>$$S_n=\\frac{n}{2}\\big[(-17)+(2n-19)\\big]=\\frac{n}{2}(2n-36)=n(n-18)=n^2-18n \\;\\checkmark$$</p>\n<p><strong>答案：C　只有 I 及 III</strong></p>",
+   "file": "2013_II_解答.md"
+  },
+  {
+   "year": 2013,
+   "paper": "Paper 2",
+   "type": "解答",
+   "qno": 39,
+   "title": "Q39　三角函數圖像",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "三角函數圖像"
+   ],
+   "text": "> 圖中 $y=h+k\\tan 2x^\\circ$（$0\\le x\\le\\alpha$），曲線自縱軸上的刻度 $2$ 下降，至橫軸 $x=\\alpha$ 處穿過 $x$ 軸。\n\n- $x=0$ 時 $y=h+0=h=2$ → $h=2>0$ ✅ **I 正確**\n- $\\tan 2x^\\circ$ 隨 $x$ 增加而增加，而曲線下降 → $k<0$ ✅ **II 正確**\n- $x=\\alpha$ 時 $0=2+k\\tan2\\alpha^\\circ \\Rightarrow \\tan2\\alpha^\\circ=-\\dfrac{2}{k}>0$。但 III 稱 $\\tan\\alpha^\\circ=\\dfrac1k$：因 $k<0$，右端為負數，而 $0<\\alpha<45^\\circ$ 使 $\\tan\\alpha^\\circ>0$，正數不可能等於負數 ❌ **III 錯誤**\n\n**答案：A　只有 I 及 II**",
+   "html": "<blockquote>\n<p>圖中 $y=h+k\\tan 2x^\\circ$（$0\\le x\\le\\alpha$），曲線自縱軸上的刻度 $2$ 下降，至橫軸 $x=\\alpha$ 處穿過 $x$ 軸。</p>\n</blockquote>\n<ul>\n<li>$x=0$ 時 $y=h+0=h=2$ → $h=2&gt;0$ ✅ <strong>I 正確</strong></li>\n<li>$\\tan 2x^\\circ$ 隨 $x$ 增加而增加，而曲線下降 → $k&lt;0$ ✅ <strong>II 正確</strong></li>\n<li>$x=\\alpha$ 時 $0=2+k\\tan2\\alpha^\\circ \\Rightarrow \\tan2\\alpha^\\circ=-\\dfrac{2}{k}&gt;0$。但 III 稱 $\\tan\\alpha^\\circ=\\dfrac1k$：因 $k&lt;0$，右端為負數，而 $0&lt;\\alpha&lt;45^\\circ$ 使 $\\tan\\alpha^\\circ&gt;0$，正數不可能等於負數 ❌ <strong>III 錯誤</strong></li>\n</ul>\n<p><strong>答案：A　只有 I 及 II</strong></p>",
+   "file": "2013_II_解答.md"
+  },
+  {
+   "year": 2013,
+   "paper": "Paper 2",
+   "type": "解答",
+   "qno": 40,
+   "title": "Q40　正四面體",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "正四面體"
+   ],
+   "text": "正四面體高 $h=2\\ \\mathrm{cm}$，求體積。\n\n$$h=a\\sqrt{\\frac{2}{3}}\\;\\Rightarrow\\;a=2\\sqrt{\\frac{3}{2}}=\\sqrt{6}$$\n\n$$V=\\frac{a^3}{6\\sqrt{2}}=\\frac{(\\sqrt6)^3}{6\\sqrt2}=\\frac{6\\sqrt6}{6\\sqrt2}=\\frac{\\sqrt6}{\\sqrt2}=\\sqrt3\\ \\mathrm{cm}^3$$\n\n**答案：B　$\\sqrt3\\ \\mathrm{cm}^3$**",
+   "html": "<p>正四面體高 $h=2\\ \\mathrm{cm}$，求體積。</p>\n<p>$$h=a\\sqrt{\\frac{2}{3}}\\;\\Rightarrow\\;a=2\\sqrt{\\frac{3}{2}}=\\sqrt{6}$$</p>\n<p>$$V=\\frac{a^3}{6\\sqrt{2}}=\\frac{(\\sqrt6)^3}{6\\sqrt2}=\\frac{6\\sqrt6}{6\\sqrt2}=\\frac{\\sqrt6}{\\sqrt2}=\\sqrt3\\ \\mathrm{cm}^3$$</p>\n<p><strong>答案：B　$\\sqrt3\\ \\mathrm{cm}^3$</strong></p>",
+   "file": "2013_II_解答.md"
+  },
+  {
+   "year": 2013,
+   "paper": "Paper 2",
+   "type": "解答",
+   "qno": 41,
+   "title": "Q41　圓心角與切線",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "圓心角與切線"
+   ],
+   "text": "> 圖中 $O$ 為圓 $ABC$ 的圓心，$DE$ 為圓在 $A$ 的切線，$AB$ 平分 $\\angle CAE$；圓心 $O$ 處標示 $124^\\circ$（$\\angle COB$）。\n\n設 $\\angle CAB=\\angle BAE=\\theta$。由弦切角定理，切線 $AE$ 與弦 $AB$ 的夾角 $=$ 所對圓周角 $\\angle ACB$：\n\n$$\\angle ACB=\\theta$$\n\n故 $\\triangle ABC$ 中 $\\angle A=\\angle C=\\theta$，為等腰三角形（$AB=BC$）。\n\n圓心角 $\\angle COB=2\\angle CAB=2\\theta=124^\\circ\\Rightarrow\\theta=62^\\circ$。\n\n$$\\angle ABC=180^\\circ-2\\theta=56^\\circ\\;\\Rightarrow\\;\\text{弧 }AC=2\\times56^\\circ=112^\\circ$$\n\n在 $\\triangle AOC$（$OA=OC$）中，頂角 $\\angle AOC=112^\\circ$：\n\n$$\\angle ACO=\\frac{180^\\circ-112^\\circ}{2}=34^\\circ$$\n\n**答案：D　$34^\\circ$**",
+   "html": "<blockquote>\n<p>圖中 $O$ 為圓 $ABC$ 的圓心，$DE$ 為圓在 $A$ 的切線，$AB$ 平分 $\\angle CAE$；圓心 $O$ 處標示 $124^\\circ$（$\\angle COB$）。</p>\n</blockquote>\n<p>設 $\\angle CAB=\\angle BAE=\\theta$。由弦切角定理，切線 $AE$ 與弦 $AB$ 的夾角 $=$ 所對圓周角 $\\angle ACB$：</p>\n<p>$$\\angle ACB=\\theta$$</p>\n<p>故 $\\triangle ABC$ 中 $\\angle A=\\angle C=\\theta$，為等腰三角形（$AB=BC$）。</p>\n<p>圓心角 $\\angle COB=2\\angle CAB=2\\theta=124^\\circ\\Rightarrow\\theta=62^\\circ$。</p>\n<p>$$\\angle ABC=180^\\circ-2\\theta=56^\\circ\\;\\Rightarrow\\;\\text{弧 }AC=2\\times56^\\circ=112^\\circ$$</p>\n<p>在 $\\triangle AOC$（$OA=OC$）中，頂角 $\\angle AOC=112^\\circ$：</p>\n<p>$$\\angle ACO=\\frac{180^\\circ-112^\\circ}{2}=34^\\circ$$</p>\n<p><strong>答案：D　$34^\\circ$</strong></p>",
+   "file": "2013_II_解答.md"
+  },
+  {
+   "year": 2013,
+   "paper": "Paper 2",
+   "type": "解答",
+   "qno": 42,
+   "title": "Q42　直線與圓相交",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "直線與圓相交"
+   ],
+   "text": "圓 $x^2+y^2+2x-2y-7=0$：\n\n$$(x+1)^2+(y-1)^2=1+1+7=9$$\n\n圓心 $(-1,1)$，半徑 $3$。直線 $3x-4y+k=0$ 與圓相交 ⟺ 圓心到直線距離 $<r$：\n\n$$\\frac{|3(-1)-4(1)+k|}{\\sqrt{3^2+4^2}}=\\frac{|k-7|}{5}<3$$\n\n$$|k-7|<15\\;\\Rightarrow\\;-15<k-7<15\\;\\Rightarrow\\;-8<k<22$$\n\n（「相交」指兩個交點，故取開區間。）\n\n**答案：A　$-8<k<22$**",
+   "html": "<p>圓 $x^2+y^2+2x-2y-7=0$：</p>\n<p>$$(x+1)^2+(y-1)^2=1+1+7=9$$</p>\n<p>圓心 $(-1,1)$，半徑 $3$。直線 $3x-4y+k=0$ 與圓相交 ⟺ 圓心到直線距離 $&lt;r$：</p>\n<p>$$\\frac{|3(-1)-4(1)+k|}{\\sqrt{3^2+4^2}}=\\frac{|k-7|}{5}&lt;3$$</p>\n<p>$$|k-7|&lt;15\\;\\Rightarrow\\;-15&lt;k-7&lt;15\\;\\Rightarrow\\;-8&lt;k&lt;22$$</p>\n<p>（「相交」指兩個交點，故取開區間。）</p>\n<p><strong>答案：A　$-8&lt;k&lt;22$</strong></p>",
+   "file": "2013_II_解答.md"
+  },
+  {
+   "year": 2013,
+   "paper": "Paper 2",
+   "type": "解答",
+   "qno": 43,
+   "title": "Q43　外心",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "外心"
+   ],
+   "text": "$O(0,0)$，$A(0,12)$，$B(30,12)$。設外心 $(u,v)$，與 $O$、$A$ 等距：\n\n$$u^2+v^2=u^2+(v-12)^2\\;\\Rightarrow\\;v^2=v^2-24v+144\\;\\Rightarrow\\;v=6$$\n\n（與 $O$、$B$ 等距可得 $u=15$，外心為 $(15,6)$。）\n\n**答案：A　$6$**",
+   "html": "<p>$O(0,0)$，$A(0,12)$，$B(30,12)$。設外心 $(u,v)$，與 $O$、$A$ 等距：</p>\n<p>$$u^2+v^2=u^2+(v-12)^2\\;\\Rightarrow\\;v^2=v^2-24v+144\\;\\Rightarrow\\;v=6$$</p>\n<p>（與 $O$、$B$ 等距可得 $u=15$，外心為 $(15,6)$。）</p>\n<p><strong>答案：A　$6$</strong></p>",
+   "file": "2013_II_解答.md"
+  },
+  {
+   "year": 2013,
+   "paper": "Paper 2",
+   "type": "解答",
+   "qno": 44,
+   "title": "Q44　排列",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "排列"
+   ],
+   "text": "八位電話號碼：首三位由 $5,6,9$ 的排列組成，尾五位由 $2,3,4,7,8$ 的排列組成。\n\n$$3!\\times5!=6\\times120=720$$\n\n**答案：C　$720$**",
+   "html": "<p>八位電話號碼：首三位由 $5,6,9$ 的排列組成，尾五位由 $2,3,4,7,8$ 的排列組成。</p>\n<p>$$3!\\times5!=6\\times120=720$$</p>\n<p><strong>答案：C　$720$</strong></p>",
+   "file": "2013_II_解答.md"
+  },
+  {
+   "year": 2013,
+   "paper": "Paper 2",
+   "type": "解答",
+   "qno": 45,
+   "title": "Q45　方差",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "方差"
+   ],
+   "text": "五個數 $x_1,\\dots,x_5$ 的方差為 $13$。對 $3x_i+4$：\n\n- 變異數乘以 $3^2=9$（平移 $+4$ 不影響方差）\n\n$$\\text{新方差}=9\\times13=117$$\n\n**答案：C　$117$**\n\n---\n\n*（本卷完）*",
+   "html": "<p>五個數 $x_1,\\dots,x_5$ 的方差為 $13$。對 $3x_i+4$：</p>\n<ul>\n<li>變異數乘以 $3^2=9$（平移 $+4$ 不影響方差）</li>\n</ul>\n<p>$$\\text{新方差}=9\\times13=117$$</p>\n<p><strong>答案：C　$117$</strong></p>\n<hr />\n<p><em>（本卷完）</em></p>",
+   "file": "2013_II_解答.md"
   }
  ]
 };

@@ -24,3 +24,4 @@ q8_slides.html
 # 工作檔
 docs/_verify*.png
 __pycache__/
+docs/_*.png

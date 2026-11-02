@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DSE 數學題庫檢索</title>
+<script>MathJax = {tex: {inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$']]}};</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+<style>
+:root { --bg:#f6f7f9; --card:#fff; --ink:#1c2733; --mut:#6b7a8c; --acc:#0b62c4; --line:#dde3ea; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--ink);
+       font-family:"Microsoft JhengHei","PingFang TC",system-ui,sans-serif; }
+header { background:var(--card); border-bottom:1px solid var(--line); padding:18px 22px 14px;
+         position:sticky; top:0; z-index:5; }
+h1 { margin:0 0 10px; font-size:20px; }
+h1 small { color:var(--mut); font-size:12px; font-weight:normal; margin-left:10px; }
+.bar { display:flex; gap:8px; flex-wrap:wrap; align-items:center; }
+#q { flex:1 1 260px; min-width:200px; padding:9px 12px; font-size:15px;
+     border:1px solid var(--line); border-radius:8px; }
+select { padding:8px 10px; border:1px solid var(--line); border-radius:8px; font-size:14px;
+         background:var(--card); }
+#count { color:var(--mut); font-size:13px; }
+#tagbar { margin-top:10px; display:flex; gap:6px; flex-wrap:wrap; max-height:64px; overflow:auto; }
+.tag { padding:3px 10px; border-radius:999px; background:#eaf1fa; color:var(--acc);
+       font-size:12.5px; cursor:pointer; border:1px solid transparent; white-space:nowrap; }
+.tag.on { background:var(--acc); color:#fff; }
+main { max-width:920px; margin:0 auto; padding:16px 14px 60px; }
+.card { background:var(--card); border:1px solid var(--line); border-radius:10px;
+        padding:14px 18px; margin-bottom:12px; }
+.qhead { display:flex; align-items:baseline; gap:10px; cursor:pointer; flex-wrap:wrap; }
+.qno { font-weight:700; font-size:16px; }
+.meta { color:var(--mut); font-size:12.5px; }
+.badge { font-size:11.5px; padding:2px 8px; border-radius:6px; }
+.badge.qu { background:#e8f5ec; color:#177245; }
+.badge.ans { background:#fdf0e3; color:#a05a00; }
+.qbody { display:none; border-top:1px dashed var(--line); margin-top:10px; padding-top:10px;
+         font-size:15px; line-height:1.75; overflow-x:auto; }
+.card.open .qbody { display:block; }
+.qbody img { max-width:100%; height:auto; background:#fff; }
+.qbody .ttag { color:var(--acc); font-size:12.5px; }
+mjx-container { overflow-x:auto; overflow-y:hidden; }
+footer { text-align:center; color:var(--mut); font-size:12px; padding-bottom:30px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>DSE 數學題庫檢索 <small id="geninfo"></small></h1>
+  <div class="bar">
+    <input id="q" type="search" placeholder="搜尋題目文字／課題／答案…（LaTeX 關鍵字也可）">
+    <select id="fyear"><option value="">全部年份</option></select>
+    <select id="fpaper"><option value="">全部卷別</option></select>
+    <select id="ftype">
+      <option value="">題目＋解答</option>
+      <option value="題目">只看題目</option>
+      <option value="解答">只看解答</option>
+    </select>
+    <span id="count"></span>
+  </div>
+  <div id="tagbar"></div>
+</header>
+<main id="list"></main>
+<footer>DSE 數學題庫 — 內容僅供學習用途　｜　原始檔案：<span id="files"></span></footer>
+
+<script src="data.js"></script>
+<script>
+const QS = window.QB.questions;
+const $ = s => document.querySelector(s);
+const esc = s => s.replace(/&/g,'&amp;').replace(/</g,'&lt;');
+
+// ---- filters 狀態
+let activeTags = new Set();
+
+// ---- 填 dropdown
+const years = [...new Set(QS.map(q=>q.year))].sort();
+const papers = [...new Set(QS.map(q=>q.paper))].sort();
+years.forEach(y => $('#fyear').insertAdjacentHTML('beforeend',`<option>${y}</option>`));
+papers.forEach(p => $('#fpaper').insertAdjacentHTML('beforeend',`<option>${p}</option>`));
+$('#geninfo').textContent = `${window.QB.count} 題　·　建於 ${window.QB.generated}`;
+$('#files').textContent = [...new Set(QS.map(q=>q.file))].join('、');
+
+// ---- 課題標籤列
+const tagFreq = {};
+QS.forEach(q => (q.type==='題目'?q.tags:[]).forEach(t => tagFreq[t]=(tagFreq[t]||0)+1));
+Object.keys(tagFreq).sort((a,b)=>tagFreq[b]-tagFreq[a]||a.localeCompare(b))
+  .forEach(t => $('#tagbar').insertAdjacentHTML('beforeend',
+    `<span class="tag" data-t="${esc(t)}">#${esc(t)} <b>${tagFreq[t]}</b></span>`));
+$('#tagbar').addEventListener('click', e => {
+  const el = e.target.closest('.tag'); if (!el) return;
+  const t = el.dataset.t;
+  activeTags.has(t) ? activeTags.delete(t) : activeTags.add(t);
+  el.classList.toggle('on');
+  render();
+});
+
+// ---- 渲染
+function match(q) {
+  const kw = $('#q').value.trim().toLowerCase();
+  if ($('#fyear').value && q.year != $('#fyear').value) return false;
+  if ($('#fpaper').value && q.paper !== $('#fpaper').value) return false;
+  if ($('#ftype').value && q.type !== $('#ftype').value) return false;
+  if (activeTags.size && ![...activeTags].every(t => q.tags.includes(t))) return false;
+  if (kw && !(q.text.toLowerCase().includes(kw) || q.title.toLowerCase().includes(kw)
+              || q.tags.join(' ').toLowerCase().includes(kw))) return false;
+  return true;
+}
+function render() {
+  const hits = QS.filter(match);
+  $('#count').textContent = `${hits.length} / ${QS.length} 題`;
+  const pid = p => p.match(/(\d+)/)[1];
+  $('#list').innerHTML = hits.map(q => `
+    <div class="card" id="c${q.year}P${pid(q.paper)}Q${q.qno}${q.type}">
+      <div class="qhead" onclick="this.parentElement.classList.toggle('open')">
+        <span class="qno">${q.year} ${q.paper}　${esc(q.title)}</span>
+        <span class="meta">${esc(q.section)}</span>
+        <span class="badge ${q.type==='題目'?'qu':'ans'}">${q.type}</span>
+      </div>
+      <div class="qbody">${q.html}
+        ${q.tags.length?`<p class="ttag">${q.tags.map(t=>'#'+esc(t)).join('　')}</p>`:''}</div>
+    </div>`).join('') || '<p style="color:#6b7a8c">無符合結果。</p>';
+  if (window.MathJax?.typesetPromise) MathJax.typesetPromise();
+}
+
+// ---- 互動
+let deb;
+$('#q').addEventListener('input', () => { clearTimeout(deb); deb = setTimeout(render, 200); });
+['fyear','fpaper','ftype'].forEach(id => $('#'+id).addEventListener('change', render));
+// URL hash #2013P1Q7 直接開該題
+function openFromHash() {
+  const m = location.hash.match(/^#(\d{4})P([12])[QA]?Q?(\d+)?/i);
+  if (!m) return;
+  render();
+  const el = [...document.querySelectorAll('.card')].find(c =>
+    c.id.startsWith(`c${m[1]}P${m[2]}`) && (!m[3] || c.id.includes(`Q${m[3]}`)));
+  if (el) { el.classList.add('open'); el.scrollIntoView({behavior:'smooth'}); }
+}
+window.addEventListener('hashchange', openFromHash);
+render(); openFromHash();
+</script>
+</body>
+</html>

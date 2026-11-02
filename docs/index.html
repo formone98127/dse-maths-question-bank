@@ -106,6 +106,8 @@ let curQ = null;
 function show(q) {
   curQ = q;
   qno = q.qno;
+  year = q.year; paper = q.paper;      // 確保 qlist 對應該題（hash 直達用）
+  syncSelectors();                     // 重建 year/paper/題號 selectors + qlist
   $('#dqno').textContent = `${q.year} ${q.paper}　${q.title}`;
   $('#dmeta').textContent = q.section;
   $('#dbadge').textContent = q.type;
@@ -117,7 +119,6 @@ function show(q) {
   $('#pos').textContent = `${i+1} / ${qlist.length}`;
   $('#prev').disabled = i <= 0;
   $('#next').disabled = i >= qlist.length - 1;
-  syncSelectors();
   location.hash = `${q.year}P${pno(q.paper)}Q${q.qno}${q.type==='解答'?'A':''}`;
   if (window.MathJax?.typesetPromise) MathJax.typesetPromise($('#qbody'));
 }

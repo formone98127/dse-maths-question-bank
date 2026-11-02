@@ -6,6 +6,7 @@ parse 三份成品 MD → docs/data.js（內嵌 JSON），供 docs/index.html �
 import io
 import json
 import re
+import shutil
 import sys
 import time
 from pathlib import Path
@@ -33,8 +34,8 @@ SOURCES = [
 
 
 def fix_img_paths(text: str) -> str:
-    """MD 入面嘅相對圖徑改為由 docs/ 出發（../xxx_svg/...），Pages 同本地 file:// 都啱"""
-    return re.sub(r"\]\((\d{4}[A-Za-z0-9]*_figs_svg/)", r"](../\1", text)
+    """圖徑保持 docs 內相對（build 時 figs_svg 會複製入 docs/）"""
+    return text
 
 
 def parse_question_file(path: Path, year: int, paper: str) -> list:
@@ -99,6 +100,11 @@ def main():
     js = "window.QB = " + json.dumps(payload, ensure_ascii=False, indent=1) + ";\n"
     (DOCS / "data.js").write_text(js, encoding="utf-8")
     print(f"total {len(qs)} 題 -> docs/data.js ({len(js)//1024} KB)")
+
+    # figs_svg 複製入 docs/（Pages /docs 模式只發布 docs 資料夾）
+    for figs in sorted(ROOT.glob("*_figs_svg")):
+        shutil.copytree(figs, DOCS / figs.name, dirs_exist_ok=True)
+        print(f"copied {figs.name} -> docs/{figs.name}")
 
 
 if __name__ == "__main__":

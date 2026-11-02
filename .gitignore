@@ -25,3 +25,5 @@ q8_slides.html
 docs/_verify*.png
 __pycache__/
 docs/_*.png
+2014*
+_z_*.png

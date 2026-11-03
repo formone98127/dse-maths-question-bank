@@ -53,6 +53,7 @@ def parse_question_file(path: Path, year: int, paper: str) -> list:
         content = body.split("【題目內容】", 1)
         text = content[1].strip() if len(content) > 1 else ""
         text = re.sub(r"\n---\s*$", "", text).strip()
+        text = re.sub(r"\n?## (甲部|乙部)[^\n]*$", "", text).strip()  # 移除混入嘅部分標題
         out.append({
             "year": year, "paper": paper, "type": "題目", "qno": qno,
             "title": f"第 {qno} 題",

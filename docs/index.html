@@ -110,8 +110,7 @@ function show(q) {
   year = q.year; paper = q.paper;      // 確保 qlist 對應該題（hash 直達用）
   syncSelectors();                     // 重建 year/paper/題號 selectors + qlist
   $('#dqno').textContent = `${q.year} ${q.paper}　${q.title}`;
-  $('#dmeta').textContent = q.section;
-  $('#dbadge').textContent = q.type;
+  $('#dmeta').textContent = '';
   $('#dbadge').className = 'badge ' + (q.type==='題目'?'qu':'ans');
   $('#qbody').innerHTML = q.html +
     (q.tags.length?`<p class="ttag">${q.tags.map(t=>'#'+esc(t)).join('　')}</p>`:'');

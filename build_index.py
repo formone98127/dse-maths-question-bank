@@ -50,13 +50,17 @@ def parse_question_file(path: Path, year: int, paper: str) -> list:
         sec = re.search(r"卷別/部分：(.+)", body)
         tags_line = re.search(r"課題：(.+)", body)
         tags = re.findall(r"#([\w\-]+)", tags_line.group(1)) if tags_line else []
+        sec_text = sec.group(1).strip() if sec else ""
+        # 標題含部分：「甲部(1) 第 5 題」「乙部 第 15 題」（Paper 2 不分部）
+        part_m = re.search(r"(甲部\(\d\)|乙部)", sec_text)
+        title = f"{part_m.group(1)} 第 {qno} 題" if part_m else f"第 {qno} 題"
         content = body.split("【題目內容】", 1)
         text = content[1].strip() if len(content) > 1 else ""
         text = re.sub(r"\n---\s*$", "", text).strip()
         text = re.sub(r"\n?## (甲部|乙部)[^\n]*$", "", text).strip()  # 移除混入嘅部分標題
         out.append({
             "year": year, "paper": paper, "type": "題目", "qno": qno,
-            "title": f"第 {qno} 題",
+            "title": title,
             "section": sec.group(1).strip() if sec else "",
             "tags": tags,
             "text": text,

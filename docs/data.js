@@ -1,5 +1,5 @@
 window.QB = {
- "generated": "2026-11-03 08:29",
+ "generated": "2026-11-03 08:41",
  "count": 147,
  "questions": [
   {
@@ -7,7 +7,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 1,
-   "title": "第 1 題",
+   "title": "甲部(1) 第 1 題",
    "section": "Paper 1　甲部(1)",
    "tags": [
     "指數定律",
@@ -22,7 +22,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 2,
-   "title": "第 2 題",
+   "title": "甲部(1) 第 2 題",
    "section": "Paper 1　甲部(1)",
    "tags": [
     "公式變換",
@@ -37,7 +37,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 3,
-   "title": "第 3 題",
+   "title": "甲部(1) 第 3 題",
    "section": "Paper 1　甲部(1)",
    "tags": [
     "因式分解",
@@ -52,7 +52,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 4,
-   "title": "第 4 題",
+   "title": "甲部(1) 第 4 題",
    "section": "Paper 1　甲部(1)",
    "tags": [
     "百分比",
@@ -67,7 +67,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 5,
-   "title": "第 5 題",
+   "title": "甲部(1) 第 5 題",
    "section": "Paper 1　甲部(1)",
    "tags": [
     "一元方程",
@@ -82,7 +82,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 6,
-   "title": "第 6 題",
+   "title": "甲部(1) 第 6 題",
    "section": "Paper 1　甲部(1)",
    "tags": [
     "一元一次不等式",
@@ -97,7 +97,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 7,
-   "title": "第 7 題",
+   "title": "甲部(1) 第 7 題",
    "section": "Paper 1　甲部(1)",
    "tags": [
     "統計",
@@ -114,7 +114,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 8,
-   "title": "第 8 題",
+   "title": "甲部(1) 第 8 題",
    "section": "Paper 1　甲部(1)",
    "tags": [
     "圓的幾何",
@@ -130,7 +130,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 9,
-   "title": "第 9 題",
+   "title": "甲部(1) 第 9 題",
    "section": "Paper 1　甲部(1)",
    "tags": [
     "求積法",
@@ -147,7 +147,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 10,
-   "title": "第 10 題",
+   "title": "甲部(2) 第 10 題",
    "section": "Paper 1　甲部(2)",
    "tags": [
     "統計",
@@ -164,7 +164,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 11,
-   "title": "第 11 題",
+   "title": "甲部(2) 第 11 題",
    "section": "Paper 1　甲部(2)",
    "tags": [
     "變分",
@@ -181,7 +181,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 12,
-   "title": "第 12 題",
+   "title": "甲部(2) 第 12 題",
    "section": "Paper 1　甲部(2)",
    "tags": [
     "求積法",
@@ -197,7 +197,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 13,
-   "title": "第 13 題",
+   "title": "甲部(2) 第 13 題",
    "section": "Paper 1　甲部(2)",
    "tags": [
     "因式定理",
@@ -215,7 +215,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 14,
-   "title": "第 14 題",
+   "title": "甲部(2) 第 14 題",
    "section": "Paper 1　甲部(2)",
    "tags": [
     "軌跡",
@@ -234,7 +234,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 15,
-   "title": "第 15 題",
+   "title": "乙部 第 15 題",
    "section": "Paper 1　乙部",
    "tags": [
     "統計",
@@ -251,7 +251,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 16,
-   "title": "第 16 題",
+   "title": "乙部 第 16 題",
    "section": "Paper 1　乙部",
    "tags": [
     "排列與組合",
@@ -266,7 +266,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 17,
-   "title": "第 17 題",
+   "title": "乙部 第 17 題",
    "section": "Paper 1　乙部",
    "tags": [
     "圓的方程",
@@ -284,7 +284,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 18,
-   "title": "第 18 題",
+   "title": "乙部 第 18 題",
    "section": "Paper 1　乙部",
    "tags": [
     "立體幾何",
@@ -302,7 +302,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 19,
-   "title": "第 19 題",
+   "title": "乙部 第 19 題",
    "section": "Paper 1　乙部",
    "tags": [
     "指數函數",
@@ -950,7 +950,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 1,
-   "title": "第 1 題",
+   "title": "甲部(1) 第 1 題",
    "section": "Paper 1　甲部(1)",
    "tags": [
     "指數定律",
@@ -965,7 +965,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 2,
-   "title": "第 2 題",
+   "title": "甲部(1) 第 2 題",
    "section": "Paper 1　甲部(1)",
    "tags": [
     "主項變換",
@@ -980,7 +980,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 3,
-   "title": "第 3 題",
+   "title": "甲部(1) 第 3 題",
    "section": "Paper 1　甲部(1)",
    "tags": [
     "因式分解",
@@ -995,7 +995,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 4,
-   "title": "第 4 題",
+   "title": "甲部(1) 第 4 題",
    "section": "Paper 1　甲部(1)",
    "tags": [
     "一元方程",
@@ -1010,7 +1010,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 5,
-   "title": "第 5 題",
+   "title": "甲部(1) 第 5 題",
    "section": "Paper 1　甲部(1)",
    "tags": [
     "一元一次不等式",
@@ -1025,7 +1025,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 6,
-   "title": "第 6 題",
+   "title": "甲部(1) 第 6 題",
    "section": "Paper 1　甲部(1)",
    "tags": [
     "極坐標",
@@ -1041,7 +1041,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 7,
-   "title": "第 7 題",
+   "title": "甲部(1) 第 7 題",
    "section": "Paper 1　甲部(1)",
    "tags": [
     "全等三角形",
@@ -1058,7 +1058,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 8,
-   "title": "第 8 題",
+   "title": "甲部(1) 第 8 題",
    "section": "Paper 1　甲部(1)",
    "tags": [
     "百分之一",
@@ -1074,7 +1074,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 9,
-   "title": "第 9 題",
+   "title": "甲部(1) 第 9 題",
    "section": "Paper 1　甲部(1)",
    "tags": [
     "統計",
@@ -1092,7 +1092,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 10,
-   "title": "第 10 題",
+   "title": "甲部(2) 第 10 題",
    "section": "Paper 1　甲部(2)",
    "tags": [
     "統計",
@@ -1112,7 +1112,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 11,
-   "title": "第 11 題",
+   "title": "甲部(2) 第 11 題",
    "section": "Paper 1　甲部(2)",
    "tags": [
     "變分",
@@ -1128,7 +1128,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 12,
-   "title": "第 12 題",
+   "title": "甲部(2) 第 12 題",
    "section": "Paper 1　甲部(2)",
    "tags": [
     "因式定理",
@@ -1145,7 +1145,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 13,
-   "title": "第 13 題",
+   "title": "甲部(2) 第 13 題",
    "section": "Paper 1　甲部(2)",
    "tags": [
     "求積法",
@@ -1163,7 +1163,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 14,
-   "title": "第 14 題",
+   "title": "甲部(2) 第 14 題",
    "section": "Paper 1　甲部(2)",
    "tags": [
     "圓的方程",
@@ -1181,7 +1181,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 15,
-   "title": "第 15 題",
+   "title": "乙部 第 15 題",
    "section": "Paper 1　乙部",
    "tags": [
     "標準分",
@@ -1198,7 +1198,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 16,
-   "title": "第 16 題",
+   "title": "乙部 第 16 題",
    "section": "Paper 1　乙部",
    "tags": [
     "概率",
@@ -1213,7 +1213,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 17,
-   "title": "第 17 題",
+   "title": "乙部 第 17 題",
    "section": "Paper 1　乙部",
    "tags": [
     "二次函數",
@@ -1231,7 +1231,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 18,
-   "title": "第 18 題",
+   "title": "乙部 第 18 題",
    "section": "Paper 1　乙部",
    "tags": [
     "三角學",
@@ -1250,7 +1250,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 19,
-   "title": "第 19 題",
+   "title": "乙部 第 19 題",
    "section": "Paper 1　乙部",
    "tags": [
     "等比數列",
@@ -1898,7 +1898,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 1,
-   "title": "第 1 題",
+   "title": "甲部(1) 第 1 題",
    "section": "Paper 1　甲部(1)",
    "tags": [
     "指數定律",
@@ -1913,7 +1913,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 2,
-   "title": "第 2 題",
+   "title": "甲部(1) 第 2 題",
    "section": "Paper 1　甲部(1)",
    "tags": [
     "因式分解",
@@ -1928,7 +1928,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 3,
-   "title": "第 3 題",
+   "title": "甲部(1) 第 3 題",
    "section": "Paper 1　甲部(1)",
    "tags": [
     "近似值",
@@ -1943,7 +1943,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 4,
-   "title": "第 4 題",
+   "title": "甲部(1) 第 4 題",
    "section": "Paper 1　甲部(1)",
    "tags": [
     "中位數",
@@ -1959,7 +1959,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 5,
-   "title": "第 5 題",
+   "title": "甲部(1) 第 5 題",
    "section": "Paper 1　甲部(1)",
    "tags": [
     "主項變換",
@@ -1974,7 +1974,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 6,
-   "title": "第 6 題",
+   "title": "甲部(1) 第 6 題",
    "section": "Paper 1　甲部(1)",
    "tags": [
     "百分比",
@@ -1989,7 +1989,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 7,
-   "title": "第 7 題",
+   "title": "甲部(1) 第 7 題",
    "section": "Paper 1　甲部(1)",
    "tags": [
     "因式定理",
@@ -2005,7 +2005,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 8,
-   "title": "第 8 題",
+   "title": "甲部(1) 第 8 題",
    "section": "Paper 1　甲部(1)",
    "tags": [
     "平面坐標",
@@ -2022,7 +2022,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 9,
-   "title": "第 9 題",
+   "title": "甲部(1) 第 9 題",
    "section": "Paper 1　甲部(1)",
    "tags": [
     "相似三角形",
@@ -2037,7 +2037,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 10,
-   "title": "第 10 題",
+   "title": "甲部(2) 第 10 題",
    "section": "Paper 1　甲部(2)",
    "tags": [
     "時間速度距離圖",
@@ -2052,7 +2052,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 11,
-   "title": "第 11 題",
+   "title": "甲部(2) 第 11 題",
    "section": "Paper 1　甲部(2)",
    "tags": [
     "框線圖",
@@ -2069,7 +2069,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 12,
-   "title": "第 12 題",
+   "title": "甲部(2) 第 12 題",
    "section": "Paper 1　甲部(2)",
    "tags": [
     "圓的方程",
@@ -2085,7 +2085,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 13,
-   "title": "第 13 題",
+   "title": "甲部(2) 第 13 題",
    "section": "Paper 1　甲部(2)",
    "tags": [
     "正變",
@@ -2101,7 +2101,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 14,
-   "title": "第 14 題",
+   "title": "甲部(2) 第 14 題",
    "section": "Paper 1　甲部(2)",
    "tags": [
     "圓錐",
@@ -2118,7 +2118,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 15,
-   "title": "第 15 題",
+   "title": "乙部 第 15 題",
    "section": "Paper 1　乙部",
    "tags": [
     "對數",
@@ -2134,7 +2134,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 16,
-   "title": "第 16 題",
+   "title": "乙部 第 16 題",
    "section": "Paper 1　乙部",
    "tags": [
     "數列",
@@ -2150,7 +2150,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 17,
-   "title": "第 17 題",
+   "title": "乙部 第 17 題",
    "section": "Paper 1　乙部",
    "tags": [
     "立體圖形",
@@ -2166,7 +2166,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 18,
-   "title": "第 18 題",
+   "title": "乙部 第 18 題",
    "section": "Paper 1　乙部",
    "tags": [
     "線性規劃",
@@ -2182,7 +2182,7 @@ window.QB = {
    "paper": "Paper 1",
    "type": "題目",
    "qno": 19,
-   "title": "第 19 題",
+   "title": "乙部 第 19 題",
    "section": "Paper 1　乙部",
    "tags": [
     "概率",

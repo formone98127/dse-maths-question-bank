@@ -29,6 +29,7 @@ DOCS.mkdir(exist_ok=True)
 SOURCES = [
     ("2012_P1_題目中文卷.md", 2012, "Paper 1", "題目"),
     ("2013_P1_QU(CHI).md",   2013, "Paper 1", "題目"),
+    ("2014_P1_QU(CHI).md",   2014, "Paper 1", "題目"),
     ("2012_II_解答.md",      2012, "Paper 2", "解答"),
     ("2013_II_解答.md",      2013, "Paper 2", "解答"),
 ]

@@ -2,7 +2,6 @@
 dse真题数学/
 2012/
 2013/
-2014/
 2015/
 2016/
 2017/
@@ -16,7 +15,7 @@ dse真题数学/
 *.pdf
 2012_P1_figs/
 2013P1_figs/
-2013P1_pages/
+*_pages/
 pages/
 shots/
 q8_slides.html
@@ -25,6 +24,4 @@ q8_slides.html
 docs/_verify*.png
 __pycache__/
 docs/_*.png
-2014*
 _z_*.png
-make_2014P1_figs.py

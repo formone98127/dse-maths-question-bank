@@ -10,9 +10,11 @@ DSE 數學必修部分電子題庫 — 題目清洗（Markdown + LaTeX）＋ 插
 |---|---|
 | `2012_P1_題目中文卷.md` | 2012 卷一 19 題（題目庫，零答案） |
 | `2013_P1_QU(CHI).md` | 2013 卷一 19 題（題目庫，零答案） |
+| `2014_P1_QU(CHI).md` | 2014 卷一 19 題（題目庫，零答案） |
 | `2012_II_解答.md` | 2012 卷二 45 題詳解 + 答案速查表 |
-| `2012_P1_figs_svg/` `2013P1_figs_svg/` | 重繪插圖（SVG + 200dpi PNG） |
-| `make_2012P1_figs.py` `make_2013P1_figs.py` | 插圖重繪腳本（matplotlib，座標數學反算 / 量度原卷 crop） |
+| `2013_II_解答.md` | 2013 卷二 45 題詳解 + 答案速查表 |
+| `2012_P1_figs_svg/` `2013P1_figs_svg/` `2014P1_figs_svg/` | 重繪插圖（SVG + 200dpi PNG） |
+| `make_2012P1_figs.py` `make_2013P1_figs.py` `make_2014P1_figs.py` | 插圖重繪腳本（matplotlib，座標數學反算 / 量度原卷 crop） |
 | `build_index.py` | 檢索 index 產生器（MD → `docs/data.js`） |
 | `docs/index.html` | 檢索網頁（GitHub Pages root） |
 

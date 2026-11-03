@@ -1,6 +1,6 @@
 window.QB = {
- "generated": "2026-11-03 08:48",
- "count": 147,
+ "generated": "2026-11-04 00:09",
+ "count": 192,
  "questions": [
   {
    "year": 2012,
@@ -2192,6 +2192,693 @@ window.QB = {
    "text": "佩玲及志偉參與一含兩回合的遊戲。在第一回合，佩玲及志偉輪流投擲一枚勻稱骰子。首位擲得點數「3」的參與者勝出第一回合。佩玲及志偉參與第一回合，直至其中一人勝出為止。佩玲首先投擲骰子。\n\n(a)　求佩玲勝出該遊戲第一回合的概率。（3 分）\n\n(b)　在該遊戲的第二回合，球被逐一投入某部由八個管子並列所組成的裝置內（見圖 8）。當球被投入該裝置時，它會隨機跌進其中一管子內。每個管子最多可容納三個球。\n\n![2014 P1 Q19 圖8 八管裝置](2014P1_figs_svg/2014P1_Q19.svg)\n\n這回合的參與者採納下列兩個選項中的一個。\n\n選項 1：將兩個球逐一投入該裝置內。若該兩個球跌進同一管子內，則該參與者獲 10 個代幣；若該兩個球跌進兩個相鄰的管子內，則該參與者獲 5 個代幣；否則，該參與者不獲代幣。\n\n選項 2：將三個球逐一投入該裝置內。若該三個球跌進同一管子內，則該參與者獲 50 個代幣；若該三個球跌進三個相鄰的管子內，則該參與者獲 10 個代幣；若該三個球跌進兩個相鄰的管子內，則該參與者獲 5 個代幣；否則，該參與者不獲代幣。\n\n　　(i)　若第二回合的參與者採納選項 1，求所獲得幣的數目的期望值。\n\n　　(ii)　第二回合的參與者應採納哪一選項才使所獲代幣的數目的期望值達至最大？試解釋你的答案。\n\n　　(iii)　只有第一回合的勝方參與第二回合。已知第二回合的參與者採納能使所獲代幣的數目的期望值達至最大的選項。志偉宣稱佩玲在該遊戲中不獲代幣的概率超過 $0.9$。該宣稱是否正確？試解釋你的答案。（10 分）",
    "html": "<p>佩玲及志偉參與一含兩回合的遊戲。在第一回合，佩玲及志偉輪流投擲一枚勻稱骰子。首位擲得點數「3」的參與者勝出第一回合。佩玲及志偉參與第一回合，直至其中一人勝出為止。佩玲首先投擲骰子。</p>\n<p>(a)　求佩玲勝出該遊戲第一回合的概率。（3 分）</p>\n<p>(b)　在該遊戲的第二回合，球被逐一投入某部由八個管子並列所組成的裝置內（見圖 8）。當球被投入該裝置時，它會隨機跌進其中一管子內。每個管子最多可容納三個球。</p>\n<p><img alt=\"2014 P1 Q19 圖8 八管裝置\" src=\"2014P1_figs_svg/2014P1_Q19.svg\" /></p>\n<p>這回合的參與者採納下列兩個選項中的一個。</p>\n<p>選項 1：將兩個球逐一投入該裝置內。若該兩個球跌進同一管子內，則該參與者獲 10 個代幣；若該兩個球跌進兩個相鄰的管子內，則該參與者獲 5 個代幣；否則，該參與者不獲代幣。</p>\n<p>選項 2：將三個球逐一投入該裝置內。若該三個球跌進同一管子內，則該參與者獲 50 個代幣；若該三個球跌進三個相鄰的管子內，則該參與者獲 10 個代幣；若該三個球跌進兩個相鄰的管子內，則該參與者獲 5 個代幣；否則，該參與者不獲代幣。</p>\n<p>(i)　若第二回合的參與者採納選項 1，求所獲得幣的數目的期望值。</p>\n<p>(ii)　第二回合的參與者應採納哪一選項才使所獲代幣的數目的期望值達至最大？試解釋你的答案。</p>\n<p>(iii)　只有第一回合的勝方參與第二回合。已知第二回合的參與者採納能使所獲代幣的數目的期望值達至最大的選項。志偉宣稱佩玲在該遊戲中不獲代幣的概率超過 $0.9$。該宣稱是否正確？試解釋你的答案。（10 分）</p>",
    "file": "2014_P1_QU(CHI).md"
+  },
+  {
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 1,
+   "title": "第 1 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "多項式展開",
+    "恆等式"
+   ],
+   "text": "$\\left(x+1\\right)\\left(x^2+x+1\\right)=$\n\n- A. $x^3+1$\n- B. $\\left(x+1\\right)^3$\n- C. $x^3+x^2+x+1$\n- D. $x^3+2x^2+2x+1$",
+   "html": "<p>$\\left(x+1\\right)\\left(x^2+x+1\\right)=$</p>\n<ul>\n<li>A. $x^3+1$</li>\n<li>B. $\\left(x+1\\right)^3$</li>\n<li>C. $x^3+x^2+x+1$</li>\n<li>D. $x^3+2x^2+2x+1$</li>\n</ul>",
+   "file": "2015_P2_QU(CHI).md"
+  },
+  {
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 2,
+   "title": "第 2 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "指數定律",
+    "代數化簡"
+   ],
+   "text": "$\\dfrac{\\left(3y^6\\right)^4}{3y^2}=$\n\n- A. $4y^5$\n- B. $4y^8$\n- C. $27y^{12}$\n- D. $27y^{22}$",
+   "html": "<p>$\\dfrac{\\left(3y^6\\right)^4}{3y^2}=$</p>\n<ul>\n<li>A. $4y^5$</li>\n<li>B. $4y^8$</li>\n<li>C. $27y^{12}$</li>\n<li>D. $27y^{22}$</li>\n</ul>",
+   "file": "2015_P2_QU(CHI).md"
+  },
+  {
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 3,
+   "title": "第 3 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "聯立方程",
+    "一元方程"
+   ],
+   "text": "若 $p+3q=4$ 及 $5p+9q=2$，則 $p=$\n\n- A. $-5$\n- B. $-3$\n- C. $3$\n- D. $5$",
+   "html": "<p>若 $p+3q=4$ 及 $5p+9q=2$，則 $p=$</p>\n<ul>\n<li>A. $-5$</li>\n<li>B. $-3$</li>\n<li>C. $3$</li>\n<li>D. $5$</li>\n</ul>",
+   "file": "2015_P2_QU(CHI).md"
+  },
+  {
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 4,
+   "title": "第 4 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "近似值",
+    "有效數字",
+    "小數位"
+   ],
+   "text": "$0.0023456789=$\n\n- A. $0.00235$（準確至六位小數）\n- B. $0.002345$（準確至六位小數）\n- C. $0.002346$（準確至六位有效數字）\n- D. $0.00234568$（準確至六位有效數字）",
+   "html": "<p>$0.0023456789=$</p>\n<ul>\n<li>A. $0.00235$（準確至六位小數）</li>\n<li>B. $0.002345$（準確至六位小數）</li>\n<li>C. $0.002346$（準確至六位有效數字）</li>\n<li>D. $0.00234568$（準確至六位有效數字）</li>\n</ul>",
+   "file": "2015_P2_QU(CHI).md"
+  },
+  {
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 5,
+   "title": "第 5 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "恆等式",
+    "係數比較"
+   ],
+   "text": "若 $m$ 及 $n$ 均為常數使得 $x^2+mx+n\\equiv\\left(x+4\\right)\\left(x-m\\right)+6$，則 $n=$\n\n- A. $-8$\n- B. $-2$\n- C. $2$\n- D. $6$",
+   "html": "<p>若 $m$ 及 $n$ 均為常數使得 $x^2+mx+n\\equiv\\left(x+4\\right)\\left(x-m\\right)+6$，則 $n=$</p>\n<ul>\n<li>A. $-8$</li>\n<li>B. $-2$</li>\n<li>C. $2$</li>\n<li>D. $6$</li>\n</ul>",
+   "file": "2015_P2_QU(CHI).md"
+  },
+  {
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 6,
+   "title": "第 6 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "一元一次不等式",
+    "複合不等式"
+   ],
+   "text": "$18+7x>4$ 或 $5-2x<3$ 的解為\n\n- A. $x>-2$\n- B. $x>-1$\n- C. $x>1$\n- D. $-2<x<1$",
+   "html": "<p>$18+7x&gt;4$ 或 $5-2x&lt;3$ 的解為</p>\n<ul>\n<li>A. $x&gt;-2$</li>\n<li>B. $x&gt;-1$</li>\n<li>C. $x&gt;1$</li>\n<li>D. $-2&lt;x&lt;1$</li>\n</ul>",
+   "file": "2015_P2_QU(CHI).md"
+  },
+  {
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 7,
+   "title": "第 7 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "二次方程",
+    "根的代換"
+   ],
+   "text": "若 $\\beta$ 為方程 $4x^2-5x-1=0$ 的根，則 $7+10\\beta-8\\beta^2=$\n\n- A. $5$\n- B. $7$\n- C. $9$\n- D. $11$",
+   "html": "<p>若 $\\beta$ 為方程 $4x^2-5x-1=0$ 的根，則 $7+10\\beta-8\\beta^2=$</p>\n<ul>\n<li>A. $5$</li>\n<li>B. $7$</li>\n<li>C. $9$</li>\n<li>D. $11$</li>\n</ul>",
+   "file": "2015_P2_QU(CHI).md"
+  },
+  {
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 8,
+   "title": "第 8 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "二次函數圖像",
+    "參數符號"
+   ],
+   "text": "圖中所示為 $y=a\\left(x+b\\right)^2$ 的圖像，其中 $a$ 及 $b$ 均為常數。下列何者正確？\n\n> 圖形要點：開口向上的拋物線，頂點在 $x$ 軸上（與 $x$ 軸相切）且位於 $y$ 軸左側；曲線與 $y$ 軸交於正值。\n\n- A. $a<0$ 及 $b<0$\n- B. $a<0$ 及 $b>0$\n- C. $a>0$ 及 $b<0$\n- D. $a>0$ 及 $b>0$",
+   "html": "<p>圖中所示為 $y=a\\left(x+b\\right)^2$ 的圖像，其中 $a$ 及 $b$ 均為常數。下列何者正確？</p>\n<blockquote>\n<p>圖形要點：開口向上的拋物線，頂點在 $x$ 軸上（與 $x$ 軸相切）且位於 $y$ 軸左側；曲線與 $y$ 軸交於正值。</p>\n</blockquote>\n<ul>\n<li>A. $a&lt;0$ 及 $b&lt;0$</li>\n<li>B. $a&lt;0$ 及 $b&gt;0$</li>\n<li>C. $a&gt;0$ 及 $b&lt;0$</li>\n<li>D. $a&gt;0$ 及 $b&gt;0$</li>\n</ul>",
+   "file": "2015_P2_QU(CHI).md"
+  },
+  {
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 9,
+   "title": "第 9 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "百分法",
+    "百分變化"
+   ],
+   "text": "若某紀念品的價錢增加 $70\\%$，且隨後減少 $60\\%$，求該紀念品的價錢改變的百分數。\n\n- A. $-58\\%$\n- B. $-32\\%$\n- C. $2\\%$\n- D. $10\\%$",
+   "html": "<p>若某紀念品的價錢增加 $70\\%$，且隨後減少 $60\\%$，求該紀念品的價錢改變的百分數。</p>\n<ul>\n<li>A. $-58\\%$</li>\n<li>B. $-32\\%$</li>\n<li>C. $2\\%$</li>\n<li>D. $10\\%$</li>\n</ul>",
+   "file": "2015_P2_QU(CHI).md"
+  },
+  {
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 10,
+   "title": "第 10 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "複利",
+    "本利和"
+   ],
+   "text": "某人在銀行存入 \\$50 000，年利率為 $6\\%$，每季一結複利計算，為期 3 年。求本利和，準確至最接近的元。\n\n- A. \\$59 000\n- B. \\$59 551\n- C. \\$59 755\n- D. \\$59 781",
+   "html": "<p>某人在銀行存入 \\$50 000，年利率為 $6\\%$，每季一結複利計算，為期 3 年。求本利和，準確至最接近的元。</p>\n<ul>\n<li>A. \\$59 000</li>\n<li>B. \\$59 551</li>\n<li>C. \\$59 755</li>\n<li>D. \\$59 781</li>\n</ul>",
+   "file": "2015_P2_QU(CHI).md"
+  },
+  {
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 11,
+   "title": "第 11 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "比例",
+    "比"
+   ],
+   "text": "設 $a$、$b$ 及 $c$ 均為非零的數。若 $a:c=5:3$ 及 $b:c=3:2$，則 $\\left(a+c\\right):\\left(b+c\\right)=$\n\n- A. $7:5$\n- B. $8:5$\n- C. $16:15$\n- D. $19:15$",
+   "html": "<p>設 $a$、$b$ 及 $c$ 均為非零的數。若 $a:c=5:3$ 及 $b:c=3:2$，則 $\\left(a+c\\right):\\left(b+c\\right)=$</p>\n<ul>\n<li>A. $7:5$</li>\n<li>B. $8:5$</li>\n<li>C. $16:15$</li>\n<li>D. $19:15$</li>\n</ul>",
+   "file": "2015_P2_QU(CHI).md"
+  },
+  {
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 12,
+   "title": "第 12 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "變分",
+    "正變"
+   ],
+   "text": "已知 $z$ 隨 $x^3$ 及 $y^2$ 而正變。當 $x=2$ 及 $y=1$ 時，$z=14$。當 $x=3$ 及 $y=-2$ 時，$z=$\n\n- A. $-189$\n- B. $-126$\n- C. $126$\n- D. $189$",
+   "html": "<p>已知 $z$ 隨 $x^3$ 及 $y^2$ 而正變。當 $x=2$ 及 $y=1$ 時，$z=14$。當 $x=3$ 及 $y=-2$ 時，$z=$</p>\n<ul>\n<li>A. $-189$</li>\n<li>B. $-126$</li>\n<li>C. $126$</li>\n<li>D. $189$</li>\n</ul>",
+   "file": "2015_P2_QU(CHI).md"
+  },
+  {
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 13,
+   "title": "第 13 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "數列",
+    "規律"
+   ],
+   "text": "圖中，第 1 個圖案包含 5 粒點子。對任意正整數 $n$，第 $\\left(n+1\\right)$ 個圖案是由第 $n$ 個圖案加上 4 粒點子所組成。求第 6 個圖案的點子數目。\n\n> 圖形要點：三個十字形點陣圖案依次排開——第 1 個 5 粒、第 2 個 9 粒、第 3 個 13 粒，其後為「⋯」。\n\n- A. 21\n- B. 25\n- C. 29\n- D. 33",
+   "html": "<p>圖中，第 1 個圖案包含 5 粒點子。對任意正整數 $n$，第 $\\left(n+1\\right)$ 個圖案是由第 $n$ 個圖案加上 4 粒點子所組成。求第 6 個圖案的點子數目。</p>\n<blockquote>\n<p>圖形要點：三個十字形點陣圖案依次排開——第 1 個 5 粒、第 2 個 9 粒、第 3 個 13 粒，其後為「⋯」。</p>\n</blockquote>\n<ul>\n<li>A. 21</li>\n<li>B. 25</li>\n<li>C. 29</li>\n<li>D. 33</li>\n</ul>",
+   "file": "2015_P2_QU(CHI).md"
+  },
+  {
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 14,
+   "title": "第 14 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "誤差上下限",
+    "最大絕對誤差"
+   ],
+   "text": "現有砂糖一袋。該袋內砂糖的重量量得 5 kg 準確至最接近的 kg。若將該袋砂糖包裝成 $n$ 包使每包內砂糖的重量均量得 10 g 準確至最接近的 g，求 $n$ 的最大可取值。\n\n- A. 429\n- B. 500\n- C. 578\n- D. 579",
+   "html": "<p>現有砂糖一袋。該袋內砂糖的重量量得 5 kg 準確至最接近的 kg。若將該袋砂糖包裝成 $n$ 包使每包內砂糖的重量均量得 10 g 準確至最接近的 g，求 $n$ 的最大可取值。</p>\n<ul>\n<li>A. 429</li>\n<li>B. 500</li>\n<li>C. 578</li>\n<li>D. 579</li>\n</ul>",
+   "file": "2015_P2_QU(CHI).md"
+  },
+  {
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 15,
+   "title": "第 15 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "三角形面積",
+    "畢氏定理",
+    "圖形面積"
+   ],
+   "text": "圖中，$N$ 為 $AC$ 上的一點且 $E$ 為 $DN$ 上的一點。若 $DN=6$ cm 及 $EN=5$ cm，則 $\\triangle ABC$ 的面積為\n\n> 圖形要點：$C$ 在左下、$B$ 在右下（$CB=16$ cm，$B$ 處有直角標記），$A$ 在 $B$ 正上方；$D$ 在上左，$DC=10$ cm；$EA=13$ cm（$E$ 在 $D$ 的下方）；$N$ 在 $AC$ 上且 $DN\\perp AC$（$N$ 處有直角標記），$D$—$E$—$N$ 成一直線。\n\n- A. $24\\text{ cm}^2$\n- B. $30\\text{ cm}^2$\n- C. $96\\text{ cm}^2$\n- D. $192\\text{ cm}^2$",
+   "html": "<p>圖中，$N$ 為 $AC$ 上的一點且 $E$ 為 $DN$ 上的一點。若 $DN=6$ cm 及 $EN=5$ cm，則 $\\triangle ABC$ 的面積為</p>\n<blockquote>\n<p>圖形要點：$C$ 在左下、$B$ 在右下（$CB=16$ cm，$B$ 處有直角標記），$A$ 在 $B$ 正上方；$D$ 在上左，$DC=10$ cm；$EA=13$ cm（$E$ 在 $D$ 的下方）；$N$ 在 $AC$ 上且 $DN\\perp AC$（$N$ 處有直角標記），$D$—$E$—$N$ 成一直線。</p>\n</blockquote>\n<ul>\n<li>A. $24\\text{ cm}^2$</li>\n<li>B. $30\\text{ cm}^2$</li>\n<li>C. $96\\text{ cm}^2$</li>\n<li>D. $192\\text{ cm}^2$</li>\n</ul>",
+   "file": "2015_P2_QU(CHI).md"
+  },
+  {
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 16,
+   "title": "第 16 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "圓錐",
+    "平截頭體",
+    "體積"
+   ],
+   "text": "一直立圓錐體的高及底半徑分別為 12 cm 及 9 cm。該圓錐體切去上部後形成的高為 8 cm 的平截頭體。求該平截頭體的體積。\n\n> 圖形要點：直立圓錐體切去頂部後餘下的平截頭體示意圖。\n\n- A. $210\\pi\\text{ cm}^3$\n- B. $312\\pi\\text{ cm}^3$\n- C. $324\\pi\\text{ cm}^3$\n- D. $936\\pi\\text{ cm}^3$",
+   "html": "<p>一直立圓錐體的高及底半徑分別為 12 cm 及 9 cm。該圓錐體切去上部後形成的高為 8 cm 的平截頭體。求該平截頭體的體積。</p>\n<blockquote>\n<p>圖形要點：直立圓錐體切去頂部後餘下的平截頭體示意圖。</p>\n</blockquote>\n<ul>\n<li>A. $210\\pi\\text{ cm}^3$</li>\n<li>B. $312\\pi\\text{ cm}^3$</li>\n<li>C. $324\\pi\\text{ cm}^3$</li>\n<li>D. $936\\pi\\text{ cm}^3$</li>\n</ul>",
+   "file": "2015_P2_QU(CHI).md"
+  },
+  {
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 17,
+   "title": "第 17 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "相似三角形",
+    "面積比",
+    "平行四邊形"
+   ],
+   "text": "圖中，$ABCD$ 為一平行四邊形。$E$ 為 $CD$ 上的一點使 $DE:EC=2:3$。$AD$ 的延線與 $BE$ 的延線相交於 $F$，而 $AE$ 的延線與 $BC$ 的延線相交於 $G$。若 $\\triangle DEF$ 的面積為 8 cm²，則 $\\triangle CEG$ 的面積為\n\n> 圖形要點：平行四邊形 $ABCD$，$E$ 在右側邊 $CD$ 上；$AD$ 及 $BC$ 向右延長，$F$ 在 $AD$ 的延線上、$G$ 在 $BC$ 的延線上；$B$—$E$—$F$ 共線，$A$—$E$—$G$ 共線。\n\n- A. $12\\text{ cm}^2$\n- B. $18\\text{ cm}^2$\n- C. $20\\text{ cm}^2$\n- D. $27\\text{ cm}^2$",
+   "html": "<p>圖中，$ABCD$ 為一平行四邊形。$E$ 為 $CD$ 上的一點使 $DE:EC=2:3$。$AD$ 的延線與 $BE$ 的延線相交於 $F$，而 $AE$ 的延線與 $BC$ 的延線相交於 $G$。若 $\\triangle DEF$ 的面積為 8 cm²，則 $\\triangle CEG$ 的面積為</p>\n<blockquote>\n<p>圖形要點：平行四邊形 $ABCD$，$E$ 在右側邊 $CD$ 上；$AD$ 及 $BC$ 向右延長，$F$ 在 $AD$ 的延線上、$G$ 在 $BC$ 的延線上；$B$—$E$—$F$ 共線，$A$—$E$—$G$ 共線。</p>\n</blockquote>\n<ul>\n<li>A. $12\\text{ cm}^2$</li>\n<li>B. $18\\text{ cm}^2$</li>\n<li>C. $20\\text{ cm}^2$</li>\n<li>D. $27\\text{ cm}^2$</li>\n</ul>",
+   "file": "2015_P2_QU(CHI).md"
+  },
+  {
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 18,
+   "title": "第 18 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "三角比",
+    "直角三角形"
+   ],
+   "text": "圖中，$\\dfrac{AD}{AB}=$\n\n> 圖形要點：$A$、$B$ 在底（$BA$ 水平），$\\angle BAC=90°$（$A$ 處有直角標記），$C$ 在 $A$ 的上方；$D$ 在 $C$ 的右方且 $\\angle ADC=90°$（$D$ 處有直角標記）；$\\alpha=\\angle CAD$、$\\beta=\\angle ABC$。\n\n- A. $\\cos\\alpha\\tan\\beta$\n- B. $\\sin\\alpha\\tan\\beta$\n- C. $\\dfrac{\\cos\\alpha}{\\tan\\beta}$\n- D. $\\dfrac{\\sin\\alpha}{\\tan\\beta}$",
+   "html": "<p>圖中，$\\dfrac{AD}{AB}=$</p>\n<blockquote>\n<p>圖形要點：$A$、$B$ 在底（$BA$ 水平），$\\angle BAC=90°$（$A$ 處有直角標記），$C$ 在 $A$ 的上方；$D$ 在 $C$ 的右方且 $\\angle ADC=90°$（$D$ 處有直角標記）；$\\alpha=\\angle CAD$、$\\beta=\\angle ABC$。</p>\n</blockquote>\n<ul>\n<li>A. $\\cos\\alpha\\tan\\beta$</li>\n<li>B. $\\sin\\alpha\\tan\\beta$</li>\n<li>C. $\\dfrac{\\cos\\alpha}{\\tan\\beta}$</li>\n<li>D. $\\dfrac{\\sin\\alpha}{\\tan\\beta}$</li>\n</ul>",
+   "file": "2015_P2_QU(CHI).md"
+  },
+  {
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 19,
+   "title": "第 19 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "三角恆等式",
+    "誘導公式"
+   ],
+   "text": "$\\dfrac{\\cos 180°}{1+\\sin\\left(90°+\\theta\\right)}+\\dfrac{\\cos 360°}{1+\\sin\\left(270°+\\theta\\right)}=$\n\n- A. $0$\n- B. $\\dfrac{2}{\\cos\\theta}$\n- C. $\\dfrac{2\\cos\\theta}{\\sin^2\\theta}$\n- D. $\\dfrac{2\\sin\\theta}{\\cos^2\\theta}$",
+   "html": "<p>$\\dfrac{\\cos 180°}{1+\\sin\\left(90°+\\theta\\right)}+\\dfrac{\\cos 360°}{1+\\sin\\left(270°+\\theta\\right)}=$</p>\n<ul>\n<li>A. $0$</li>\n<li>B. $\\dfrac{2}{\\cos\\theta}$</li>\n<li>C. $\\dfrac{2\\cos\\theta}{\\sin^2\\theta}$</li>\n<li>D. $\\dfrac{2\\sin\\theta}{\\cos^2\\theta}$</li>\n</ul>",
+   "file": "2015_P2_QU(CHI).md"
+  },
+  {
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 20,
+   "title": "第 20 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "圓的幾何",
+    "圓周角",
+    "弧"
+   ],
+   "text": "圖中，$AD$ 為圓 $ABCDE$ 的一直徑。若 $\\angle BAD=58°$ 及 $BC=CD$，則 $\\angle AEC=$\n\n> 圖形要點：圓上五點——$A$ 在左、$B$ 在上、$C$ 在右上、$D$ 在右、$E$ 在右下；$AD$ 為水平直徑，$\\angle BAD=58°$ 標於 $A$，所求 $\\angle AEC$ 標於 $E$。\n\n- A. $32°$\n- B. $58°$\n- C. $61°$\n- D. $64°$",
+   "html": "<p>圖中，$AD$ 為圓 $ABCDE$ 的一直徑。若 $\\angle BAD=58°$ 及 $BC=CD$，則 $\\angle AEC=$</p>\n<blockquote>\n<p>圖形要點：圓上五點——$A$ 在左、$B$ 在上、$C$ 在右上、$D$ 在右、$E$ 在右下；$AD$ 為水平直徑，$\\angle BAD=58°$ 標於 $A$，所求 $\\angle AEC$ 標於 $E$。</p>\n</blockquote>\n<ul>\n<li>A. $32°$</li>\n<li>B. $58°$</li>\n<li>C. $61°$</li>\n<li>D. $64°$</li>\n</ul>",
+   "file": "2015_P2_QU(CHI).md"
+  },
+  {
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 21,
+   "title": "第 21 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "圓的幾何",
+    "直徑",
+    "三角形面積"
+   ],
+   "text": "圓 $ABCD$ 的直徑 $AC$ 與直徑 $BD$ 相交於點 $E$。若 $\\angle AEB=90°$ 及 $AC=24$ cm，則 $\\triangle AEB$ 的面積為\n\n- A. $41\\text{ cm}^2$\n- B. $72\\text{ cm}^2$\n- C. $144\\text{ cm}^2$\n- D. $288\\text{ cm}^2$",
+   "html": "<p>圓 $ABCD$ 的直徑 $AC$ 與直徑 $BD$ 相交於點 $E$。若 $\\angle AEB=90°$ 及 $AC=24$ cm，則 $\\triangle AEB$ 的面積為</p>\n<ul>\n<li>A. $41\\text{ cm}^2$</li>\n<li>B. $72\\text{ cm}^2$</li>\n<li>C. $144\\text{ cm}^2$</li>\n<li>D. $288\\text{ cm}^2$</li>\n</ul>",
+   "file": "2015_P2_QU(CHI).md"
+  },
+  {
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 22,
+   "title": "第 22 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "正多邊形",
+    "內角外角",
+    "旋轉對稱"
+   ],
+   "text": "若某正多邊形的一內角為一外角的 5 倍，則下列何者必為正確？\n\n　I. 該多邊形的每一內角均為 $150°$\n\n　II. 該多邊形的對角線數目為 6\n\n　III. 該多邊形的旋轉對稱的折式數目為 6\n\n- A. 只有 I\n- B. 只有 II\n- C. 只有 I 及 III\n- D. 只有 II 及 III",
+   "html": "<p>若某正多邊形的一內角為一外角的 5 倍，則下列何者必為正確？</p>\n<p>I. 該多邊形的每一內角均為 $150°$</p>\n<p>II. 該多邊形的對角線數目為 6</p>\n<p>III. 該多邊形的旋轉對稱的折式數目為 6</p>\n<ul>\n<li>A. 只有 I</li>\n<li>B. 只有 II</li>\n<li>C. 只有 I 及 III</li>\n<li>D. 只有 II 及 III</li>\n</ul>",
+   "file": "2015_P2_QU(CHI).md"
+  },
+  {
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 23,
+   "title": "第 23 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "極坐標",
+    "直角坐標",
+    "反射變換"
+   ],
+   "text": "點 $A$ 的直角坐標為 $\\left(\\sqrt{3},-1\\right)$。若 $A$ 對 $y$ 軸作反射，則它的像的極坐標為\n\n- A. $\\left(1,210°\\right)$\n- B. $\\left(1,240°\\right)$\n- C. $\\left(2,210°\\right)$\n- D. $\\left(2,240°\\right)$",
+   "html": "<p>點 $A$ 的直角坐標為 $\\left(\\sqrt{3},-1\\right)$。若 $A$ 對 $y$ 軸作反射，則它的像的極坐標為</p>\n<ul>\n<li>A. $\\left(1,210°\\right)$</li>\n<li>B. $\\left(1,240°\\right)$</li>\n<li>C. $\\left(2,210°\\right)$</li>\n<li>D. $\\left(2,240°\\right)$</li>\n</ul>",
+   "file": "2015_P2_QU(CHI).md"
+  },
+  {
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 24,
+   "title": "第 24 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "軌跡",
+    "垂直平分線"
+   ],
+   "text": "已知兩點 $A\\left(2,0\\right)$ 及 $B\\left(1,5\\right)$。若 $P$ 為一動點且 $P$ 與 $A$ 及 $B$ 等距，則 $P$ 的軌跡是\n\n- A. $AB$ 的垂直平分線\n- B. 以 $AB$ 為直徑的圓\n- C. 通過 $A$ 及 $B$ 的直線\n- D. $\\angle AOB$ 的角平分線，其中 $O$ 為原點",
+   "html": "<p>已知兩點 $A\\left(2,0\\right)$ 及 $B\\left(1,5\\right)$。若 $P$ 為一動點且 $P$ 與 $A$ 及 $B$ 等距，則 $P$ 的軌跡是</p>\n<ul>\n<li>A. $AB$ 的垂直平分線</li>\n<li>B. 以 $AB$ 為直徑的圓</li>\n<li>C. 通過 $A$ 及 $B$ 的直線</li>\n<li>D. $\\angle AOB$ 的角平分線，其中 $O$ 為原點</li>\n</ul>",
+   "file": "2015_P2_QU(CHI).md"
+  },
+  {
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 25,
+   "title": "第 25 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "直線方程",
+    "斜率",
+    "截距"
+   ],
+   "text": "圖中，直線 $L_1$ 及 $L_2$ 的方程分別為 $ax=1$ 及 $bx+cy=1$。下列何者正確？\n\n> 圖形要點：$L_1$ 為鉛垂直線，位於 $y$ 軸左側（$x$ 截距為負）；$L_2$ 為向右上斜的直線，$x$ 截距為負、$y$ 截距為正；兩線相交於 $x$ 軸下方。\n\n　I. $a<0$\n\n　II. $a<b$\n\n　III. $c>0$\n\n- A. 只有 I 及 II\n- B. 只有 I 及 III\n- C. 只有 II 及 III\n- D. I、II 及 III",
+   "html": "<p>圖中，直線 $L_1$ 及 $L_2$ 的方程分別為 $ax=1$ 及 $bx+cy=1$。下列何者正確？</p>\n<blockquote>\n<p>圖形要點：$L_1$ 為鉛垂直線，位於 $y$ 軸左側（$x$ 截距為負）；$L_2$ 為向右上斜的直線，$x$ 截距為負、$y$ 截距為正；兩線相交於 $x$ 軸下方。</p>\n</blockquote>\n<p>I. $a&lt;0$</p>\n<p>II. $a&lt;b$</p>\n<p>III. $c&gt;0$</p>\n<ul>\n<li>A. 只有 I 及 II</li>\n<li>B. 只有 I 及 III</li>\n<li>C. 只有 II 及 III</li>\n<li>D. I、II 及 III</li>\n</ul>",
+   "file": "2015_P2_QU(CHI).md"
+  },
+  {
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 26,
+   "title": "第 26 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "圓方程",
+    "圓心與半徑"
+   ],
+   "text": "圓 $C$ 通過點 $\\left(0,3\\right)$，其圓心的坐標為 $\\left(-4,3\\right)$。則 $C$ 的方程為\n\n- A. $x^2+y^2-8x+6y+9=0$\n- B. $x^2+y^2-8x+6y+16=0$\n- C. $x^2+y^2+8x-6y+9=0$\n- D. $x^2+y^2+8x-6y+16=0$",
+   "html": "<p>圓 $C$ 通過點 $\\left(0,3\\right)$，其圓心的坐標為 $\\left(-4,3\\right)$。則 $C$ 的方程為</p>\n<ul>\n<li>A. $x^2+y^2-8x+6y+9=0$</li>\n<li>B. $x^2+y^2-8x+6y+16=0$</li>\n<li>C. $x^2+y^2+8x-6y+9=0$</li>\n<li>D. $x^2+y^2+8x-6y+16=0$</li>\n</ul>",
+   "file": "2015_P2_QU(CHI).md"
+  },
+  {
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 27,
+   "title": "第 27 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "概率",
+    "期望值"
+   ],
+   "text": "投擲兩枚勻稱的骰子。若兩枚骰子所擲得的點數之和為 7，則贏得 \\$36；否則贏得 \\$6。求贏得金額的期望值。\n\n- A. \\$11\n- B. \\$12\n- C. \\$30\n- D. \\$31",
+   "html": "<p>投擲兩枚勻稱的骰子。若兩枚骰子所擲得的點數之和為 7，則贏得 \\$36；否則贏得 \\$6。求贏得金額的期望值。</p>\n<ul>\n<li>A. \\$11</li>\n<li>B. \\$12</li>\n<li>C. \\$30</li>\n<li>D. \\$31</li>\n</ul>",
+   "file": "2015_P2_QU(CHI).md"
+  },
+  {
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 28,
+   "title": "第 28 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "棒形圖",
+    "概率"
+   ],
+   "text": "下面的棒形圖顯示某班學生擁有鑰匙的數目的分佈。求從該班中隨機選出一名學生擁有 3 條鑰匙的概率。\n\n> 圖形要點：棒形圖，橫軸「鑰匙的數目」由 1 至 5，縱軸「學生人數」；對應人數依次為 12、16、8、4、4。\n\n- A. $\\dfrac{1}{5}$\n- B. $\\dfrac{2}{11}$\n- C. $\\dfrac{4}{11}$\n- D. $\\dfrac{9}{11}$",
+   "html": "<p>下面的棒形圖顯示某班學生擁有鑰匙的數目的分佈。求從該班中隨機選出一名學生擁有 3 條鑰匙的概率。</p>\n<blockquote>\n<p>圖形要點：棒形圖，橫軸「鑰匙的數目」由 1 至 5，縱軸「學生人數」；對應人數依次為 12、16、8、4、4。</p>\n</blockquote>\n<ul>\n<li>A. $\\dfrac{1}{5}$</li>\n<li>B. $\\dfrac{2}{11}$</li>\n<li>C. $\\dfrac{4}{11}$</li>\n<li>D. $\\dfrac{9}{11}$</li>\n</ul>",
+   "file": "2015_P2_QU(CHI).md"
+  },
+  {
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 29,
+   "title": "第 29 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "框線圖",
+    "四分位數間距"
+   ],
+   "text": "下面的框線圖顯示在某學期一些教師的閱書數目的分佈。求該分佈的四分位數間距。\n\n> 圖形要點：框線圖，橫軸「閱書數目」由 10 至 70（每 5 刻一度線）；左鬚端為 15，盒由 $Q_1=25$ 至 $Q_3=45$，中位數線為 40，右鬚端為 60。\n\n- A. 20\n- B. 35\n- C. 40\n- D. 45",
+   "html": "<p>下面的框線圖顯示在某學期一些教師的閱書數目的分佈。求該分佈的四分位數間距。</p>\n<blockquote>\n<p>圖形要點：框線圖，橫軸「閱書數目」由 10 至 70（每 5 刻一度線）；左鬚端為 15，盒由 $Q_1=25$ 至 $Q_3=45$，中位數線為 40，右鬚端為 60。</p>\n</blockquote>\n<ul>\n<li>A. 20</li>\n<li>B. 35</li>\n<li>C. 40</li>\n<li>D. 45</li>\n</ul>",
+   "file": "2015_P2_QU(CHI).md"
+  },
+  {
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 30,
+   "title": "第 30 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "平均值",
+    "中位數",
+    "眾數"
+   ],
+   "text": "考慮以下整數：\n\n$$2\\quad 2\\quad 3\\quad 3\\quad 3\\quad 3\\quad 3\\quad 5\\quad 5\\quad 6\\quad 8\\quad 8\\quad 9\\quad 10\\quad m$$\n\n設 $p$、$q$ 及 $r$ 分別為以上整數的平均值、中位數及眾數。若 $3\\le m\\le 5$，則下列何者必為正確？\n\n　I. $p>q$\n\n　II. $p>r$\n\n　III. $q>r$\n\n- A. 只有 I\n- B. 只有 II\n- C. 只有 I 及 III\n- D. 只有 II 及 III",
+   "html": "<p>考慮以下整數：</p>\n<p>$$2\\quad 2\\quad 3\\quad 3\\quad 3\\quad 3\\quad 3\\quad 5\\quad 5\\quad 6\\quad 8\\quad 8\\quad 9\\quad 10\\quad m$$</p>\n<p>設 $p$、$q$ 及 $r$ 分別為以上整數的平均值、中位數及眾數。若 $3\\le m\\le 5$，則下列何者必為正確？</p>\n<p>I. $p&gt;q$</p>\n<p>II. $p&gt;r$</p>\n<p>III. $q&gt;r$</p>\n<ul>\n<li>A. 只有 I</li>\n<li>B. 只有 II</li>\n<li>C. 只有 I 及 III</li>\n<li>D. 只有 II 及 III</li>\n</ul>",
+   "file": "2015_P2_QU(CHI).md"
+  },
+  {
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 31,
+   "title": "乙部 第 31 題",
+   "section": "Paper 2　乙部",
+   "tags": [
+    "代數分式",
+    "因式分解"
+   ],
+   "text": "$\\dfrac{1}{x^2-2x+1}-\\dfrac{1}{x^2+x-2}=$\n\n- A. $\\dfrac{1}{\\left(x-1\\right)\\left(x+2\\right)}$\n- B. $\\dfrac{1}{\\left(x-1\\right)^2\\left(x+2\\right)}$\n- C. $\\dfrac{3}{\\left(x-1\\right)^2\\left(x+2\\right)}$\n- D. $\\dfrac{2x+1}{\\left(x-1\\right)^2\\left(x+2\\right)}$",
+   "html": "<p>$\\dfrac{1}{x^2-2x+1}-\\dfrac{1}{x^2+x-2}=$</p>\n<ul>\n<li>A. $\\dfrac{1}{\\left(x-1\\right)\\left(x+2\\right)}$</li>\n<li>B. $\\dfrac{1}{\\left(x-1\\right)^2\\left(x+2\\right)}$</li>\n<li>C. $\\dfrac{3}{\\left(x-1\\right)^2\\left(x+2\\right)}$</li>\n<li>D. $\\dfrac{2x+1}{\\left(x-1\\right)^2\\left(x+2\\right)}$</li>\n</ul>",
+   "file": "2015_P2_QU(CHI).md"
+  },
+  {
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 32,
+   "title": "乙部 第 32 題",
+   "section": "Paper 2　乙部",
+   "tags": [
+    "對數",
+    "線性關係"
+   ],
+   "text": "圖像顯示 $\\log_3 x$ 與 $\\log_3 y$ 之間的線性關係。下列何者必為正確？\n\n> 圖形要點：直角坐標平面上一直線（橫軸為 $\\log_3 x$、縱軸為 $\\log_3 y$），斜率為負；縱軸截距為 2，橫軸截距為 3。\n\n- A. $x^2y^3=729$\n- B. $x^3y^2=729$\n- C. $x^2+y^3=729$\n- D. $x^3+y^2=729$",
+   "html": "<p>圖像顯示 $\\log_3 x$ 與 $\\log_3 y$ 之間的線性關係。下列何者必為正確？</p>\n<blockquote>\n<p>圖形要點：直角坐標平面上一直線（橫軸為 $\\log_3 x$、縱軸為 $\\log_3 y$），斜率為負；縱軸截距為 2，橫軸截距為 3。</p>\n</blockquote>\n<ul>\n<li>A. $x^2y^3=729$</li>\n<li>B. $x^3y^2=729$</li>\n<li>C. $x^2+y^3=729$</li>\n<li>D. $x^3+y^2=729$</li>\n</ul>",
+   "file": "2015_P2_QU(CHI).md"
+  },
+  {
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 33,
+   "title": "乙部 第 33 題",
+   "section": "Paper 2　乙部",
+   "tags": [
+    "二進制",
+    "進制轉換"
+   ],
+   "text": "$11+2^6+2^{10}+2^{11}=$\n\n- A. $110001001011_2$\n- B. $110100100011_2$\n- C. $1100001001011_2$\n- D. $1101001000011_2$",
+   "html": "<p>$11+2^6+2^{10}+2^{11}=$</p>\n<ul>\n<li>A. $110001001011_2$</li>\n<li>B. $110100100011_2$</li>\n<li>C. $1100001001011_2$</li>\n<li>D. $1101001000011_2$</li>\n</ul>",
+   "file": "2015_P2_QU(CHI).md"
+  },
+  {
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 34,
+   "title": "乙部 第 34 題",
+   "section": "Paper 2　乙部",
+   "tags": [
+    "二次方程",
+    "根與係數"
+   ],
+   "text": "設 $k$ 為常數，且 $\\alpha$ 及 $\\beta$ 為方程 $x^2+kx-2=0$ 的根。則 $\\alpha^2+\\beta^2=$\n\n- A. $k^2$\n- B. $k^2+4$\n- C. $k^2-4$\n- D. $k^2-8$",
+   "html": "<p>設 $k$ 為常數，且 $\\alpha$ 及 $\\beta$ 為方程 $x^2+kx-2=0$ 的根。則 $\\alpha^2+\\beta^2=$</p>\n<ul>\n<li>A. $k^2$</li>\n<li>B. $k^2+4$</li>\n<li>C. $k^2-4$</li>\n<li>D. $k^2-8$</li>\n</ul>",
+   "file": "2015_P2_QU(CHI).md"
+  },
+  {
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 35,
+   "title": "乙部 第 35 題",
+   "section": "Paper 2　乙部",
+   "tags": [
+    "複數",
+    "虛數"
+   ],
+   "text": "設 $z=\\left(a+5\\right)i^6+\\left(a-3\\right)i^7$，其中 $a$ 為實數。若 $z$ 為實數，則 $a=$\n\n- A. $-5$\n- B. $-3$\n- C. $3$\n- D. $5$",
+   "html": "<p>設 $z=\\left(a+5\\right)i^6+\\left(a-3\\right)i^7$，其中 $a$ 為實數。若 $z$ 為實數，則 $a=$</p>\n<ul>\n<li>A. $-5$</li>\n<li>B. $-3$</li>\n<li>C. $3$</li>\n<li>D. $5$</li>\n</ul>",
+   "file": "2015_P2_QU(CHI).md"
+  },
+  {
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 36,
+   "title": "乙部 第 36 題",
+   "section": "Paper 2　乙部",
+   "tags": [
+    "線性不等式",
+    "可行區域"
+   ],
+   "text": "圖中陰影區域（包括邊界）由三條直線圍成。若 $\\left(a,b\\right)$ 為該區域中的一點，則下列何者正確？\n\n> 圖形要點：陰影三角形位於第一象限上部——左上邊為直線 $y=x+5$ 的一段，右下邊為直線 $x+2y=10$ 的一段，右側邊為鉛垂直線 $x=4$。\n\n　I. $a\\le 4$\n\n　II. $a\\ge b-5$\n\n　III. $a\\ge 10-2b$\n\n- A. 只有 I 及 II\n- B. 只有 I 及 III\n- C. 只有 II 及 III\n- D. I、II 及 III",
+   "html": "<p>圖中陰影區域（包括邊界）由三條直線圍成。若 $\\left(a,b\\right)$ 為該區域中的一點，則下列何者正確？</p>\n<blockquote>\n<p>圖形要點：陰影三角形位於第一象限上部——左上邊為直線 $y=x+5$ 的一段，右下邊為直線 $x+2y=10$ 的一段，右側邊為鉛垂直線 $x=4$。</p>\n</blockquote>\n<p>I. $a\\le 4$</p>\n<p>II. $a\\ge b-5$</p>\n<p>III. $a\\ge 10-2b$</p>\n<ul>\n<li>A. 只有 I 及 II</li>\n<li>B. 只有 I 及 III</li>\n<li>C. 只有 II 及 III</li>\n<li>D. I、II 及 III</li>\n</ul>",
+   "file": "2015_P2_QU(CHI).md"
+  },
+  {
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 37,
+   "title": "乙部 第 37 題",
+   "section": "Paper 2　乙部",
+   "tags": [
+    "等比數列",
+    "公比"
+   ],
+   "text": "設 $x_n$ 為某等比數列的第 $n$ 項。已知 $x_6=216$ 及 $x_8=96$。下列何者必為正確？\n\n　I. $x_3=729$\n\n　II. $\\dfrac{x_5}{x_7}>1$\n\n　III. $x_2+x_4+x_6+\\cdots+x_{2n}<2\\,015$\n\n- A. 只有 I\n- B. 只有 II\n- C. 只有 I 及 III\n- D. 只有 II 及 III",
+   "html": "<p>設 $x_n$ 為某等比數列的第 $n$ 項。已知 $x_6=216$ 及 $x_8=96$。下列何者必為正確？</p>\n<p>I. $x_3=729$</p>\n<p>II. $\\dfrac{x_5}{x_7}&gt;1$</p>\n<p>III. $x_2+x_4+x_6+\\cdots+x_{2n}&lt;2\\,015$</p>\n<ul>\n<li>A. 只有 I</li>\n<li>B. 只有 II</li>\n<li>C. 只有 I 及 III</li>\n<li>D. 只有 II 及 III</li>\n</ul>",
+   "file": "2015_P2_QU(CHI).md"
+  },
+  {
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 38,
+   "title": "乙部 第 38 題",
+   "section": "Paper 2　乙部",
+   "tags": [
+    "三角方程"
+   ],
+   "text": "當 $0°\\le x<360°$，方程 $\\cos^2 x-\\sin x=1$ 有多少個根？\n\n- A. 2\n- B. 3\n- C. 4\n- D. 5",
+   "html": "<p>當 $0°\\le x&lt;360°$，方程 $\\cos^2 x-\\sin x=1$ 有多少個根？</p>\n<ul>\n<li>A. 2</li>\n<li>B. 3</li>\n<li>C. 4</li>\n<li>D. 5</li>\n</ul>",
+   "file": "2015_P2_QU(CHI).md"
+  },
+  {
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 39,
+   "title": "乙部 第 39 題",
+   "section": "Paper 2　乙部",
+   "tags": [
+    "正弦函數",
+    "週期",
+    "圖像變換"
+   ],
+   "text": "設 $k$ 為正常數且 $-180°<\\theta<180°$。圖中所示為 $y=\\sin\\left(kx°+\\theta\\right)$ 的圖像，則\n\n> 圖形要點：正弦波形，曲線與 $x$ 軸的兩個相鄰交點標明為 $75$ 及 $165$；$75$ 左方為波峰、$75$ 至 $165$ 之間為波谷；曲線在 $y$ 軸上的截距為正值。\n\n- A. $k=\\dfrac{1}{2}$ 及 $\\theta=-30°$\n- B. $k=\\dfrac{1}{2}$ 及 $\\theta=30°$\n- C. $k=2$ 及 $\\theta=-30°$\n- D. $k=2$ 及 $\\theta=30°$",
+   "html": "<p>設 $k$ 為正常數且 $-180°&lt;\\theta&lt;180°$。圖中所示為 $y=\\sin\\left(kx°+\\theta\\right)$ 的圖像，則</p>\n<blockquote>\n<p>圖形要點：正弦波形，曲線與 $x$ 軸的兩個相鄰交點標明為 $75$ 及 $165$；$75$ 左方為波峰、$75$ 至 $165$ 之間為波谷；曲線在 $y$ 軸上的截距為正值。</p>\n</blockquote>\n<ul>\n<li>A. $k=\\dfrac{1}{2}$ 及 $\\theta=-30°$</li>\n<li>B. $k=\\dfrac{1}{2}$ 及 $\\theta=30°$</li>\n<li>C. $k=2$ 及 $\\theta=-30°$</li>\n<li>D. $k=2$ 及 $\\theta=30°$</li>\n</ul>",
+   "file": "2015_P2_QU(CHI).md"
+  },
+  {
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 40,
+   "title": "乙部 第 40 題",
+   "section": "Paper 2　乙部",
+   "tags": [
+    "圓的幾何",
+    "切線性質"
+   ],
+   "text": "圖中，$AB$ 及 $AC$ 分別為圓在點 $B$ 及點 $C$ 的切線，而 $BD$ 為該圓的直徑。$AC$ 的延線與 $BD$ 的延線相交於 $E$。若 $AB=6$ cm 及 $AE=10$ cm，則 $BD=$\n\n> 圖形要點：圓位於圖中央偏左，直徑 $BD$ 大致水平；$A$ 在圓外右上方，$AB$、$AC$ 分別切圓於 $B$（右）及 $C$（上左）；$E$ 在圓外左方，$A$—$C$—$E$ 共線且 $E$ 在直徑 $BD$ 的延線上。\n\n- A. $3\\text{ cm}$\n- B. $5\\text{ cm}$\n- C. $6\\text{ cm}$\n- D. $8\\text{ cm}$",
+   "html": "<p>圖中，$AB$ 及 $AC$ 分別為圓在點 $B$ 及點 $C$ 的切線，而 $BD$ 為該圓的直徑。$AC$ 的延線與 $BD$ 的延線相交於 $E$。若 $AB=6$ cm 及 $AE=10$ cm，則 $BD=$</p>\n<blockquote>\n<p>圖形要點：圓位於圖中央偏左，直徑 $BD$ 大致水平；$A$ 在圓外右上方，$AB$、$AC$ 分別切圓於 $B$（右）及 $C$（上左）；$E$ 在圓外左方，$A$—$C$—$E$ 共線且 $E$ 在直徑 $BD$ 的延線上。</p>\n</blockquote>\n<ul>\n<li>A. $3\\text{ cm}$</li>\n<li>B. $5\\text{ cm}$</li>\n<li>C. $6\\text{ cm}$</li>\n<li>D. $8\\text{ cm}$</li>\n</ul>",
+   "file": "2015_P2_QU(CHI).md"
+  },
+  {
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 41,
+   "title": "乙部 第 41 題",
+   "section": "Paper 2　乙部",
+   "tags": [
+    "圓方程",
+    "直線與圓",
+    "判別式"
+   ],
+   "text": "求常數 $k$ 使圓 $x^2+y^2+2x-6y+k=0$ 與直線 $x+y+4=0$ 只相交於一點。\n\n- A. $-16$\n- B. $-8$\n- C. $8$\n- D. $16$",
+   "html": "<p>求常數 $k$ 使圓 $x^2+y^2+2x-6y+k=0$ 與直線 $x+y+4=0$ 只相交於一點。</p>\n<ul>\n<li>A. $-16$</li>\n<li>B. $-8$</li>\n<li>C. $8$</li>\n<li>D. $16$</li>\n</ul>",
+   "file": "2015_P2_QU(CHI).md"
+  },
+  {
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 42,
+   "title": "乙部 第 42 題",
+   "section": "Paper 2　乙部",
+   "tags": [
+    "坐標幾何",
+    "重心"
+   ],
+   "text": "$O$ 為原點，$P$ 及 $Q$ 的坐標分別為 $\\left(0,60\\right)$ 及 $\\left(96,48\\right)$。求 $\\triangle OPQ$ 的重心的 $x$ 坐標。\n\n- A. 6\n- B. 32\n- C. 45\n- D. 48",
+   "html": "<p>$O$ 為原點，$P$ 及 $Q$ 的坐標分別為 $\\left(0,60\\right)$ 及 $\\left(96,48\\right)$。求 $\\triangle OPQ$ 的重心的 $x$ 坐標。</p>\n<ul>\n<li>A. 6</li>\n<li>B. 32</li>\n<li>C. 45</li>\n<li>D. 48</li>\n</ul>",
+   "file": "2015_P2_QU(CHI).md"
+  },
+  {
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 43,
+   "title": "乙部 第 43 題",
+   "section": "Paper 2　乙部",
+   "tags": [
+    "排列與組合",
+    "計數原理"
+   ],
+   "text": "6 名男生及 2 名女生排成一隊。若沒有女生相鄰而排，則可排成多少個不同的隊？\n\n- A. 1 440\n- B. 10 080\n- C. 30 240\n- D. 35 280",
+   "html": "<p>6 名男生及 2 名女生排成一隊。若沒有女生相鄰而排，則可排成多少個不同的隊？</p>\n<ul>\n<li>A. 1 440</li>\n<li>B. 10 080</li>\n<li>C. 30 240</li>\n<li>D. 35 280</li>\n</ul>",
+   "file": "2015_P2_QU(CHI).md"
+  },
+  {
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 44,
+   "title": "乙部 第 44 題",
+   "section": "Paper 2　乙部",
+   "tags": [
+    "概率",
+    "樹狀圖"
+   ],
+   "text": "袋 $P$ 有 2 粒紅色球及 4 粒綠色球，而袋 $Q$ 有 1 粒紅色球及 3 粒綠色球。現隨機選出一袋，再從該袋中隨機抽出一球。求所抽出的球為綠色的概率。\n\n- A. $\\dfrac{3}{10}$\n- B. $\\dfrac{7}{10}$\n- C. $\\dfrac{7}{24}$\n- D. $\\dfrac{17}{24}$",
+   "html": "<p>袋 $P$ 有 2 粒紅色球及 4 粒綠色球，而袋 $Q$ 有 1 粒紅色球及 3 粒綠色球。現隨機選出一袋，再從該袋中隨機抽出一球。求所抽出的球為綠色的概率。</p>\n<ul>\n<li>A. $\\dfrac{3}{10}$</li>\n<li>B. $\\dfrac{7}{10}$</li>\n<li>C. $\\dfrac{7}{24}$</li>\n<li>D. $\\dfrac{17}{24}$</li>\n</ul>",
+   "file": "2015_P2_QU(CHI).md"
+  },
+  {
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 45,
+   "title": "乙部 第 45 題",
+   "section": "Paper 2　乙部",
+   "tags": [
+    "平均值",
+    "中位數",
+    "方差"
+   ],
+   "text": "設 $x_1$、$y_1$ 及 $z_1$ 分別為 $\\left\\{a_1,a_2,\\ldots,a_{50}\\right\\}$ 的平均值、中位數及方差；而 $x_2$、$y_2$ 及 $z_2$ 分別為 $\\left\\{a_1,a_2,\\ldots,a_{49}\\right\\}$ 的平均值、中位數及方差。若 $x_1=a_{50}$，則下列何者必為正確？\n\n　I. $x_1=x_2$\n\n　II. $y_1\\ge y_2$\n\n　III. $z_1\\le z_2$\n\n- A. 只有 I 及 II\n- B. 只有 I 及 III\n- C. 只有 II 及 III\n- D. I、II 及 III",
+   "html": "<p>設 $x_1$、$y_1$ 及 $z_1$ 分別為 $\\left{a_1,a_2,\\ldots,a_{50}\\right}$ 的平均值、中位數及方差；而 $x_2$、$y_2$ 及 $z_2$ 分別為 $\\left{a_1,a_2,\\ldots,a_{49}\\right}$ 的平均值、中位數及方差。若 $x_1=a_{50}$，則下列何者必為正確？</p>\n<p>I. $x_1=x_2$</p>\n<p>II. $y_1\\ge y_2$</p>\n<p>III. $z_1\\le z_2$</p>\n<ul>\n<li>A. 只有 I 及 II</li>\n<li>B. 只有 I 及 III</li>\n<li>C. 只有 II 及 III</li>\n<li>D. I、II 及 III</li>\n</ul>",
+   "file": "2015_P2_QU(CHI).md"
   }
  ]
 };

@@ -4,7 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <title>DSE 數學題庫</title>
-<script>MathJax = {tex: {inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$']]}};</script>
+<script>MathJax = {tex: {inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$']]},
+  startup: {ready() { MathJax.startup.defaultReady(); if (window.typesetQ) typesetQ(); }}};</script>
 <script src="mathjax/tex-chtml.js" async></script>
 <style>
 :root { --bg:#f6f7f9; --card:#fff; --ink:#1c2733; --mut:#6b7a8c; --acc:#0b62c4; --line:#dde3ea; }
@@ -120,7 +121,12 @@ function show(q) {
   $('#prev').disabled = i <= 0;
   $('#next').disabled = i >= qlist.length - 1;
   location.hash = `${q.year}P${pno(q.paper)}Q${q.qno}${q.type==='解答'?'A':''}`;
-  if (window.MathJax?.typesetPromise) MathJax.typesetPromise($('#qbody'));
+  typesetQ();
+}
+/* MathJax：typeset 要傳 array；手機慢網 MathJax 未就緒時由 startup.ready 補渲染 */
+function typesetQ() {
+  const MJ = window.MathJax;
+  if (MJ?.typesetPromise) MJ.typesetPromise([$('#qbody')]).catch(()=>{});
 }
 function goto(y,p,n) {
   const cands = QS.filter(q=>q.year==y && q.paper===p);

@@ -21,6 +21,19 @@ MD_EXT = ["tables"]
 def md2html(text: str) -> str:
     return markdown.markdown(text, extensions=MD_EXT)
 
+
+def strip_tail_matter(raw: str) -> str:
+    """移除檔尾製作說明：--- 後嘅 > blockquote、「全卷完／試卷完」行（新年份 MD 都照跟呢個格式）"""
+    for _ in range(3):
+        new = re.sub(r"\n---\s*\n+(> .*\n?)+\s*$", "\n", raw)
+        new = re.sub(r"\n+> (本題目庫|備份|製作|制作).*$", "\n", new, flags=re.S)
+        new = re.sub(r"\n+\*?[—\s]*(全卷完|試卷完)[^\n]*\*?\s*$", "\n", new)
+        new = re.sub(r"\n---\s*$", "\n", new)
+        if new == raw:
+            break
+        raw = new
+    return raw
+
 ROOT = Path(__file__).parent
 DOCS = ROOT / "docs"
 DOCS.mkdir(exist_ok=True)
@@ -42,7 +55,7 @@ def fix_img_paths(text: str) -> str:
 
 def parse_question_file(path: Path, year: int, paper: str) -> list:
     """題目庫格式：## 第 N 題 →【建議標籤】→ - 卷別/部分 / - 課題 →【題目內容】"""
-    raw = path.read_text(encoding="utf-8")
+    raw = strip_tail_matter(path.read_text(encoding="utf-8"))
     blocks = re.split(r"\n## 第 (\d+) 題\n", raw)
     out = []
     for i in range(1, len(blocks) - 1, 2):
@@ -72,7 +85,7 @@ def parse_question_file(path: Path, year: int, paper: str) -> list:
 
 def parse_solution_file(path: Path, year: int, paper: str) -> list:
     """解答庫格式：## QN　課題名 → 內容至下一個 ## 或檔尾"""
-    raw = path.read_text(encoding="utf-8")
+    raw = strip_tail_matter(path.read_text(encoding="utf-8"))
     blocks = re.split(r"\n## Q(\d+)　(.+)\n", raw)
     out = []
     for i in range(1, len(blocks) - 2, 3):

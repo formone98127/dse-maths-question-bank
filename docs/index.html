@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>DSE 數學題庫</title>
+<title>DSE 題庫 · 數學與經濟</title>
 <script>MathJax = {tex: {inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$']]},
   startup: {ready() { MathJax.startup.defaultReady(); if (window.typesetQ) typesetQ(); }}};</script>
 <script src="mathjax/tex-chtml.js" async></script>
@@ -45,6 +45,7 @@ footer { text-align:center; color:var(--mut); font-size:11.5px; padding:4px 0 12
 <body>
 <header>
   <div class="bar">
+    <select id="ssubj"></select>
     <select id="syear"></select>
     <select id="spaper"></select>
     <select id="sqno"></select>
@@ -66,7 +67,7 @@ footer { text-align:center; color:var(--mut); font-size:11.5px; padding:4px 0 12
     <button class="btn" id="next">下一題 →</button>
   </div>
 </main>
-<footer>DSE 數學題庫 — 內容僅供學習用途</footer>
+<footer>DSE 題庫（數學 · 經濟）— 內容僅供學習用途</footer>
 
 <script src="data.js"></script>
 <script>
@@ -75,26 +76,31 @@ const $ = s => document.querySelector(s);
 const esc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;');
 const pno = p => p.match(/(\d+)/)[1];
 
-let year = null, paper = null, qno = null;   // 當前選題
-let paperList = [];                          // 該年現有卷別
-let qlist = [];                              // 該年該卷題目序列
+let subj = null, year = null, paper = null, qno = null;   // 當前選題
+let paperList = [];                          // 該科該年現有卷別
+let qlist = [];                              // 該科該年該卷題目序列
 
 /* ---------- selectors ---------- */
-const years = [...new Set(QS.map(q=>q.year))].sort();
-years.forEach(y => $('#syear').insertAdjacentHTML('beforeend',`<option>${y}</option>`));
+const subjs = [...new Set(QS.map(q=>q.subject))];
+subjs.forEach(s => $('#ssubj').insertAdjacentHTML('beforeend',`<option>${s}</option>`));
+function fillYears() {
+  const ys = [...new Set(QS.filter(q=>q.subject===subj).map(q=>q.year))].sort();
+  $('#syear').innerHTML = ys.map(y=>`<option>${y}</option>`).join('');
+}
 function fillPapers() {
-  paperList = [...new Set(QS.filter(q=>q.year==year).map(q=>q.paper))]
+  paperList = [...new Set(QS.filter(q=>q.subject===subj && q.year==year).map(q=>q.paper))]
     .sort((a,b)=>pno(a)-pno(b));
   $('#spaper').innerHTML = paperList.map(p=>`<option>${p}</option>`).join('');
 }
 function fillQnos() {
-  qlist = QS.filter(q=>q.year==year && q.paper===paper)
+  qlist = QS.filter(q=>q.subject===subj && q.year==year && q.paper===paper)
             .sort((a,b)=>a.qno-b.qno || (a.type<b.type?-1:1));
   $('#sqno').innerHTML = qlist.map(q =>
     `<option value="${q.qno}|${q.type}">${q.title}${q.type==='解答'?'　·解':''}</option>`).join('');
 }
 function syncSelectors() {
-  $('#syear').value = year;
+  $('#ssubj').value = subj;
+  fillYears(); $('#syear').value = year;
   fillPapers(); $('#spaper').value = paper;
   fillQnos();
   const cur = qlist.find(q=>q.qno==qno && (!curType() || q.type===curType()));
@@ -107,9 +113,9 @@ let curQ = null;
 function show(q) {
   curQ = q;
   qno = q.qno;
-  year = q.year; paper = q.paper;      // 確保 qlist 對應該題（hash 直達用）
-  syncSelectors();                     // 重建 year/paper/題號 selectors + qlist
-  $('#dqno').textContent = `${q.year} ${q.paper}　${q.title}`;
+  subj = q.subject; year = q.year; paper = q.paper;      // 確保 qlist 對應該題（hash 直達用）
+  syncSelectors();                     // 重建 subject/year/paper/題號 selectors + qlist
+  $('#dqno').textContent = `${q.subject}　${q.year} ${q.paper}　${q.title}`;
   $('#dmeta').textContent = '';
   $('#dbadge').className = 'badge ' + (q.type==='題目'?'qu':'ans');
   $('#qbody').innerHTML = q.html +
@@ -119,7 +125,7 @@ function show(q) {
   $('#pos').textContent = `${i+1} / ${qlist.length}`;
   $('#prev').disabled = i <= 0;
   $('#next').disabled = i >= qlist.length - 1;
-  location.hash = `${q.year}P${pno(q.paper)}Q${q.qno}${q.type==='解答'?'A':''}`;
+  location.hash = `${q.subject==='經濟'?'econ':''}${q.year}P${pno(q.paper)}Q${q.qno}${q.type==='解答'?'A':''}`;
   typesetQ();
 }
 /* MathJax：typeset 要傳 array；手機慢網 MathJax 未就緒時由 startup.ready 補渲染 */
@@ -128,7 +134,7 @@ function typesetQ() {
   if (MJ?.typesetPromise) MJ.typesetPromise([$('#qbody')]).catch(()=>{});
 }
 function goto(y,p,n) {
-  const cands = QS.filter(q=>q.year==y && q.paper===p);
+  const cands = QS.filter(q=>q.subject===subj && q.year==y && q.paper===p);
   const q = cands.find(x=>x.qno==n && x.type==='題目') || cands.find(x=>x.qno==n);
   if (q) { year=y; paper=p; show(q); }
 }
@@ -139,6 +145,12 @@ const step = d => {
 };
 $('#prev').onclick = () => step(-1);
 $('#next').onclick = () => step(1);
+$('#ssubj').addEventListener('change', e => {
+  subj = e.target.value; year = paper = paperList = null;
+  fillYears(); year = +$('#syear').value;
+  fillPapers(); paper = paperList[0];
+  fillQnos(); show(qlist[0]);
+});
 $('#syear').addEventListener('change', e => {
   year = +e.target.value;
   paper = paperList = null;
@@ -181,15 +193,18 @@ document.addEventListener('keydown', e => {
 
 /* ---------- 啟動 / hash 直達 ---------- */
 function openFromHash() {
-  const m = location.hash.match(/^#(\d{4})P(\d)Q(\d+)/i);
+  const m = location.hash.match(/^#(econ)?(\d{4})P(\d)Q(\d+)/i);
   if (!m) return false;
-  if (curQ && curQ.year == m[1] && pno(curQ.paper) == m[2] && curQ.qno == m[3])
+  const hSubj = m[1] ? '經濟' : '數學';             // 無前綴 = 數學（舊連結照用）
+  if (curQ && curQ.subject === hSubj && curQ.year == m[2] && pno(curQ.paper) == m[3] && curQ.qno == m[4])
     return true;                                   // 自己寫嘅 hash，唔遞迴
-  goto(+m[1], m[2]==='2'?'Paper 2':'Paper 1', +m[3]);
+  subj = hSubj;
+  goto(+m[2], m[3]==='2'?'Paper 2':'Paper 1', +m[4]);
   return true;
 }
 window.addEventListener('hashchange', openFromHash);
-year = years[0];
+subj = subjs[0];
+fillYears(); year = +$('#syear').value;
 fillPapers(); paper = paperList[0];
 fillQnos();
 if (!openFromHash()) show(qlist[0]);

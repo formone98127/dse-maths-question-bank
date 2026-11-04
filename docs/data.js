@@ -1,8 +1,9 @@
 window.QB = {
- "generated": "2026-11-04 00:09",
- "count": 192,
+ "generated": "2026-11-05 01:07",
+ "count": 237,
  "questions": [
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 1",
    "type": "題目",
@@ -18,6 +19,7 @@ window.QB = {
    "file": "2012_P1_題目中文卷.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 1",
    "type": "題目",
@@ -33,6 +35,7 @@ window.QB = {
    "file": "2012_P1_題目中文卷.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 1",
    "type": "題目",
@@ -48,6 +51,7 @@ window.QB = {
    "file": "2012_P1_題目中文卷.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 1",
    "type": "題目",
@@ -63,6 +67,7 @@ window.QB = {
    "file": "2012_P1_題目中文卷.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 1",
    "type": "題目",
@@ -78,6 +83,7 @@ window.QB = {
    "file": "2012_P1_題目中文卷.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 1",
    "type": "題目",
@@ -93,6 +99,7 @@ window.QB = {
    "file": "2012_P1_題目中文卷.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 1",
    "type": "題目",
@@ -110,6 +117,7 @@ window.QB = {
    "file": "2012_P1_題目中文卷.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 1",
    "type": "題目",
@@ -126,6 +134,7 @@ window.QB = {
    "file": "2012_P1_題目中文卷.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 1",
    "type": "題目",
@@ -138,11 +147,12 @@ window.QB = {
     "梯形面積",
     "總表面積"
    ],
-   "text": "圖 2 中，實心直立角柱體 $ABCDEFGH$ 的體積為 1020 cm³。該角柱體的底 $ABCD$ 為一梯形，其中 $AD$ 平行於 $BC$。已知 $\\angle BAD = 90^\\circ$、$AB=12$ cm、$BC=6$ cm 及 $DE=10$ cm。\n\n![Q9 圖 2](2012_P1_figs_svg/2012P1_Q9.svg)\n\n求\n\n(a)　$AD$ 的長度，\n\n(b)　角柱體 $ABCDEFGH$ 的總表面積。（5 分）\n\n---",
-   "html": "<p>圖 2 中，實心直立角柱體 $ABCDEFGH$ 的體積為 1020 cm³。該角柱體的底 $ABCD$ 為一梯形，其中 $AD$ 平行於 $BC$。已知 $\\angle BAD = 90^\\circ$、$AB=12$ cm、$BC=6$ cm 及 $DE=10$ cm。</p>\n<p><img alt=\"Q9 圖 2\" src=\"2012_P1_figs_svg/2012P1_Q9.svg\" /></p>\n<p>求</p>\n<p>(a)　$AD$ 的長度，</p>\n<p>(b)　角柱體 $ABCDEFGH$ 的總表面積。（5 分）</p>\n<hr />",
+   "text": "圖 2 中，實心直立角柱體 $ABCDEFGH$ 的體積為 1020 cm³。該角柱體的底 $ABCD$ 為一梯形，其中 $AD$ 平行於 $BC$。已知 $\\angle BAD = 90^\\circ$、$AB=12$ cm、$BC=6$ cm 及 $DE=10$ cm。\n\n![Q9 圖 2](2012_P1_figs_svg/2012P1_Q9.svg)\n\n求\n\n(a)　$AD$ 的長度，\n\n(b)　角柱體 $ABCDEFGH$ 的總表面積。（5 分）",
+   "html": "<p>圖 2 中，實心直立角柱體 $ABCDEFGH$ 的體積為 1020 cm³。該角柱體的底 $ABCD$ 為一梯形，其中 $AD$ 平行於 $BC$。已知 $\\angle BAD = 90^\\circ$、$AB=12$ cm、$BC=6$ cm 及 $DE=10$ cm。</p>\n<p><img alt=\"Q9 圖 2\" src=\"2012_P1_figs_svg/2012P1_Q9.svg\" /></p>\n<p>求</p>\n<p>(a)　$AD$ 的長度，</p>\n<p>(b)　角柱體 $ABCDEFGH$ 的總表面積。（5 分）</p>",
    "file": "2012_P1_題目中文卷.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 1",
    "type": "題目",
@@ -160,6 +170,7 @@ window.QB = {
    "file": "2012_P1_題目中文卷.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 1",
    "type": "題目",
@@ -177,6 +188,7 @@ window.QB = {
    "file": "2012_P1_題目中文卷.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 1",
    "type": "題目",
@@ -193,6 +205,7 @@ window.QB = {
    "file": "2012_P1_題目中文卷.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 1",
    "type": "題目",
@@ -211,6 +224,7 @@ window.QB = {
    "file": "2012_P1_題目中文卷.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 1",
    "type": "題目",
@@ -225,11 +239,12 @@ window.QB = {
     "直線與圓相交",
     "三角形面積"
    ],
-   "text": "兩平行線 $L$ 及 $\\ell$ 的 $y$ 截距分別為 $-1$ 及 $-3$，且 $L$ 的 $x$ 截距為 3。$P$ 為直角坐標平面上的一動點使得由 $P$ 至 $L$ 的垂直距離等於由 $P$ 至 $\\ell$ 的垂直距離。將 $P$ 的軌跡記為 $\\Gamma$。\n\n(a)\n\n　　(i)　描述 $\\Gamma$ 與 $L$ 之間的幾何關係。\n\n　　(ii)　求 $\\Gamma$ 的方程。（5 分）\n\n(b)　圓 $C$ 的方程為 $(x-6)^2+y^2=4$。將 $C$ 的圓心記為 $Q$。\n\n　　(i)　$\\Gamma$ 是否通過 $Q$？試解釋你的答案。\n\n　　(ii)　若 $L$ 與 $C$ 相交於 $A$ 及 $B$ 而 $\\Gamma$ 與 $C$ 相交於 $H$ 及 $K$，求 $\\triangle AQH$ 的面積與 $\\triangle BQK$ 的面積之比。（4 分）\n\n---",
-   "html": "<p>兩平行線 $L$ 及 $\\ell$ 的 $y$ 截距分別為 $-1$ 及 $-3$，且 $L$ 的 $x$ 截距為 3。$P$ 為直角坐標平面上的一動點使得由 $P$ 至 $L$ 的垂直距離等於由 $P$ 至 $\\ell$ 的垂直距離。將 $P$ 的軌跡記為 $\\Gamma$。</p>\n<p>(a)</p>\n<p>(i)　描述 $\\Gamma$ 與 $L$ 之間的幾何關係。</p>\n<p>(ii)　求 $\\Gamma$ 的方程。（5 分）</p>\n<p>(b)　圓 $C$ 的方程為 $(x-6)^2+y^2=4$。將 $C$ 的圓心記為 $Q$。</p>\n<p>(i)　$\\Gamma$ 是否通過 $Q$？試解釋你的答案。</p>\n<p>(ii)　若 $L$ 與 $C$ 相交於 $A$ 及 $B$ 而 $\\Gamma$ 與 $C$ 相交於 $H$ 及 $K$，求 $\\triangle AQH$ 的面積與 $\\triangle BQK$ 的面積之比。（4 分）</p>\n<hr />",
+   "text": "兩平行線 $L$ 及 $\\ell$ 的 $y$ 截距分別為 $-1$ 及 $-3$，且 $L$ 的 $x$ 截距為 3。$P$ 為直角坐標平面上的一動點使得由 $P$ 至 $L$ 的垂直距離等於由 $P$ 至 $\\ell$ 的垂直距離。將 $P$ 的軌跡記為 $\\Gamma$。\n\n(a)\n\n　　(i)　描述 $\\Gamma$ 與 $L$ 之間的幾何關係。\n\n　　(ii)　求 $\\Gamma$ 的方程。（5 分）\n\n(b)　圓 $C$ 的方程為 $(x-6)^2+y^2=4$。將 $C$ 的圓心記為 $Q$。\n\n　　(i)　$\\Gamma$ 是否通過 $Q$？試解釋你的答案。\n\n　　(ii)　若 $L$ 與 $C$ 相交於 $A$ 及 $B$ 而 $\\Gamma$ 與 $C$ 相交於 $H$ 及 $K$，求 $\\triangle AQH$ 的面積與 $\\triangle BQK$ 的面積之比。（4 分）",
+   "html": "<p>兩平行線 $L$ 及 $\\ell$ 的 $y$ 截距分別為 $-1$ 及 $-3$，且 $L$ 的 $x$ 截距為 3。$P$ 為直角坐標平面上的一動點使得由 $P$ 至 $L$ 的垂直距離等於由 $P$ 至 $\\ell$ 的垂直距離。將 $P$ 的軌跡記為 $\\Gamma$。</p>\n<p>(a)</p>\n<p>(i)　描述 $\\Gamma$ 與 $L$ 之間的幾何關係。</p>\n<p>(ii)　求 $\\Gamma$ 的方程。（5 分）</p>\n<p>(b)　圓 $C$ 的方程為 $(x-6)^2+y^2=4$。將 $C$ 的圓心記為 $Q$。</p>\n<p>(i)　$\\Gamma$ 是否通過 $Q$？試解釋你的答案。</p>\n<p>(ii)　若 $L$ 與 $C$ 相交於 $A$ 及 $B$ 而 $\\Gamma$ 與 $C$ 相交於 $H$ 及 $K$，求 $\\triangle AQH$ 的面積與 $\\triangle BQK$ 的面積之比。（4 分）</p>",
    "file": "2012_P1_題目中文卷.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 1",
    "type": "題目",
@@ -247,6 +262,7 @@ window.QB = {
    "file": "2012_P1_題目中文卷.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 1",
    "type": "題目",
@@ -262,6 +278,7 @@ window.QB = {
    "file": "2012_P1_題目中文卷.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 1",
    "type": "題目",
@@ -280,6 +297,7 @@ window.QB = {
    "file": "2012_P1_題目中文卷.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 1",
    "type": "題目",
@@ -298,6 +316,7 @@ window.QB = {
    "file": "2012_P1_題目中文卷.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 1",
    "type": "題目",
@@ -316,6 +335,7 @@ window.QB = {
    "file": "2012_P1_題目中文卷.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
    "type": "解答",
@@ -330,6 +350,7 @@ window.QB = {
    "file": "2012_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
    "type": "解答",
@@ -344,6 +365,7 @@ window.QB = {
    "file": "2012_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
    "type": "解答",
@@ -358,6 +380,7 @@ window.QB = {
    "file": "2012_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
    "type": "解答",
@@ -372,6 +395,7 @@ window.QB = {
    "file": "2012_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
    "type": "解答",
@@ -386,6 +410,7 @@ window.QB = {
    "file": "2012_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
    "type": "解答",
@@ -400,6 +425,7 @@ window.QB = {
    "file": "2012_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
    "type": "解答",
@@ -414,6 +440,7 @@ window.QB = {
    "file": "2012_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
    "type": "解答",
@@ -428,6 +455,7 @@ window.QB = {
    "file": "2012_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
    "type": "解答",
@@ -442,6 +470,7 @@ window.QB = {
    "file": "2012_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
    "type": "解答",
@@ -456,6 +485,7 @@ window.QB = {
    "file": "2012_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
    "type": "解答",
@@ -470,6 +500,7 @@ window.QB = {
    "file": "2012_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
    "type": "解答",
@@ -484,6 +515,7 @@ window.QB = {
    "file": "2012_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
    "type": "解答",
@@ -498,6 +530,7 @@ window.QB = {
    "file": "2012_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
    "type": "解答",
@@ -512,6 +545,7 @@ window.QB = {
    "file": "2012_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
    "type": "解答",
@@ -526,6 +560,7 @@ window.QB = {
    "file": "2012_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
    "type": "解答",
@@ -540,6 +575,7 @@ window.QB = {
    "file": "2012_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
    "type": "解答",
@@ -554,6 +590,7 @@ window.QB = {
    "file": "2012_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
    "type": "解答",
@@ -568,6 +605,7 @@ window.QB = {
    "file": "2012_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
    "type": "解答",
@@ -582,6 +620,7 @@ window.QB = {
    "file": "2012_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
    "type": "解答",
@@ -596,6 +635,7 @@ window.QB = {
    "file": "2012_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
    "type": "解答",
@@ -610,6 +650,7 @@ window.QB = {
    "file": "2012_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
    "type": "解答",
@@ -624,6 +665,7 @@ window.QB = {
    "file": "2012_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
    "type": "解答",
@@ -638,6 +680,7 @@ window.QB = {
    "file": "2012_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
    "type": "解答",
@@ -652,6 +695,7 @@ window.QB = {
    "file": "2012_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
    "type": "解答",
@@ -666,6 +710,7 @@ window.QB = {
    "file": "2012_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
    "type": "解答",
@@ -680,6 +725,7 @@ window.QB = {
    "file": "2012_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
    "type": "解答",
@@ -694,6 +740,7 @@ window.QB = {
    "file": "2012_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
    "type": "解答",
@@ -708,6 +755,7 @@ window.QB = {
    "file": "2012_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
    "type": "解答",
@@ -722,6 +770,7 @@ window.QB = {
    "file": "2012_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
    "type": "解答",
@@ -736,6 +785,7 @@ window.QB = {
    "file": "2012_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
    "type": "解答",
@@ -750,6 +800,7 @@ window.QB = {
    "file": "2012_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
    "type": "解答",
@@ -764,6 +815,7 @@ window.QB = {
    "file": "2012_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
    "type": "解答",
@@ -778,6 +830,7 @@ window.QB = {
    "file": "2012_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
    "type": "解答",
@@ -792,6 +845,7 @@ window.QB = {
    "file": "2012_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
    "type": "解答",
@@ -806,6 +860,7 @@ window.QB = {
    "file": "2012_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
    "type": "解答",
@@ -820,6 +875,7 @@ window.QB = {
    "file": "2012_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
    "type": "解答",
@@ -834,6 +890,7 @@ window.QB = {
    "file": "2012_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
    "type": "解答",
@@ -848,6 +905,7 @@ window.QB = {
    "file": "2012_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
    "type": "解答",
@@ -862,6 +920,7 @@ window.QB = {
    "file": "2012_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
    "type": "解答",
@@ -876,6 +935,7 @@ window.QB = {
    "file": "2012_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
    "type": "解答",
@@ -890,6 +950,7 @@ window.QB = {
    "file": "2012_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
    "type": "解答",
@@ -904,6 +965,7 @@ window.QB = {
    "file": "2012_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
    "type": "解答",
@@ -918,6 +980,7 @@ window.QB = {
    "file": "2012_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
    "type": "解答",
@@ -932,6 +995,7 @@ window.QB = {
    "file": "2012_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
    "type": "解答",
@@ -946,6 +1010,7 @@ window.QB = {
    "file": "2012_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 1",
    "type": "題目",
@@ -961,6 +1026,7 @@ window.QB = {
    "file": "2013_P1_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 1",
    "type": "題目",
@@ -976,6 +1042,7 @@ window.QB = {
    "file": "2013_P1_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 1",
    "type": "題目",
@@ -991,6 +1058,7 @@ window.QB = {
    "file": "2013_P1_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 1",
    "type": "題目",
@@ -1006,6 +1074,7 @@ window.QB = {
    "file": "2013_P1_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 1",
    "type": "題目",
@@ -1021,6 +1090,7 @@ window.QB = {
    "file": "2013_P1_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 1",
    "type": "題目",
@@ -1037,6 +1107,7 @@ window.QB = {
    "file": "2013_P1_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 1",
    "type": "題目",
@@ -1054,6 +1125,7 @@ window.QB = {
    "file": "2013_P1_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 1",
    "type": "題目",
@@ -1070,6 +1142,7 @@ window.QB = {
    "file": "2013_P1_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 1",
    "type": "題目",
@@ -1088,6 +1161,7 @@ window.QB = {
    "file": "2013_P1_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 1",
    "type": "題目",
@@ -1108,6 +1182,7 @@ window.QB = {
    "file": "2013_P1_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 1",
    "type": "題目",
@@ -1124,6 +1199,7 @@ window.QB = {
    "file": "2013_P1_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 1",
    "type": "題目",
@@ -1141,6 +1217,7 @@ window.QB = {
    "file": "2013_P1_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 1",
    "type": "題目",
@@ -1159,6 +1236,7 @@ window.QB = {
    "file": "2013_P1_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 1",
    "type": "題目",
@@ -1177,6 +1255,7 @@ window.QB = {
    "file": "2013_P1_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 1",
    "type": "題目",
@@ -1194,6 +1273,7 @@ window.QB = {
    "file": "2013_P1_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 1",
    "type": "題目",
@@ -1209,6 +1289,7 @@ window.QB = {
    "file": "2013_P1_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 1",
    "type": "題目",
@@ -1227,6 +1308,7 @@ window.QB = {
    "file": "2013_P1_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 1",
    "type": "題目",
@@ -1246,6 +1328,7 @@ window.QB = {
    "file": "2013_P1_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 1",
    "type": "題目",
@@ -1264,6 +1347,7 @@ window.QB = {
    "file": "2013_P1_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 2",
    "type": "解答",
@@ -1278,6 +1362,7 @@ window.QB = {
    "file": "2013_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 2",
    "type": "解答",
@@ -1292,6 +1377,7 @@ window.QB = {
    "file": "2013_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 2",
    "type": "解答",
@@ -1306,6 +1392,7 @@ window.QB = {
    "file": "2013_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 2",
    "type": "解答",
@@ -1320,6 +1407,7 @@ window.QB = {
    "file": "2013_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 2",
    "type": "解答",
@@ -1334,6 +1422,7 @@ window.QB = {
    "file": "2013_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 2",
    "type": "解答",
@@ -1348,6 +1437,7 @@ window.QB = {
    "file": "2013_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 2",
    "type": "解答",
@@ -1362,6 +1452,7 @@ window.QB = {
    "file": "2013_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 2",
    "type": "解答",
@@ -1376,6 +1467,7 @@ window.QB = {
    "file": "2013_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 2",
    "type": "解答",
@@ -1390,6 +1482,7 @@ window.QB = {
    "file": "2013_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 2",
    "type": "解答",
@@ -1404,6 +1497,7 @@ window.QB = {
    "file": "2013_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 2",
    "type": "解答",
@@ -1418,6 +1512,7 @@ window.QB = {
    "file": "2013_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 2",
    "type": "解答",
@@ -1432,6 +1527,7 @@ window.QB = {
    "file": "2013_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 2",
    "type": "解答",
@@ -1446,6 +1542,7 @@ window.QB = {
    "file": "2013_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 2",
    "type": "解答",
@@ -1460,6 +1557,7 @@ window.QB = {
    "file": "2013_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 2",
    "type": "解答",
@@ -1474,6 +1572,7 @@ window.QB = {
    "file": "2013_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 2",
    "type": "解答",
@@ -1488,6 +1587,7 @@ window.QB = {
    "file": "2013_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 2",
    "type": "解答",
@@ -1502,6 +1602,7 @@ window.QB = {
    "file": "2013_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 2",
    "type": "解答",
@@ -1516,6 +1617,7 @@ window.QB = {
    "file": "2013_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 2",
    "type": "解答",
@@ -1530,6 +1632,7 @@ window.QB = {
    "file": "2013_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 2",
    "type": "解答",
@@ -1544,6 +1647,7 @@ window.QB = {
    "file": "2013_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 2",
    "type": "解答",
@@ -1558,6 +1662,7 @@ window.QB = {
    "file": "2013_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 2",
    "type": "解答",
@@ -1572,6 +1677,7 @@ window.QB = {
    "file": "2013_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 2",
    "type": "解答",
@@ -1586,6 +1692,7 @@ window.QB = {
    "file": "2013_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 2",
    "type": "解答",
@@ -1600,6 +1707,7 @@ window.QB = {
    "file": "2013_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 2",
    "type": "解答",
@@ -1614,6 +1722,7 @@ window.QB = {
    "file": "2013_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 2",
    "type": "解答",
@@ -1628,6 +1737,7 @@ window.QB = {
    "file": "2013_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 2",
    "type": "解答",
@@ -1642,6 +1752,7 @@ window.QB = {
    "file": "2013_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 2",
    "type": "解答",
@@ -1656,6 +1767,7 @@ window.QB = {
    "file": "2013_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 2",
    "type": "解答",
@@ -1670,6 +1782,7 @@ window.QB = {
    "file": "2013_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 2",
    "type": "解答",
@@ -1684,6 +1797,7 @@ window.QB = {
    "file": "2013_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 2",
    "type": "解答",
@@ -1698,6 +1812,7 @@ window.QB = {
    "file": "2013_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 2",
    "type": "解答",
@@ -1712,6 +1827,7 @@ window.QB = {
    "file": "2013_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 2",
    "type": "解答",
@@ -1726,6 +1842,7 @@ window.QB = {
    "file": "2013_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 2",
    "type": "解答",
@@ -1740,6 +1857,7 @@ window.QB = {
    "file": "2013_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 2",
    "type": "解答",
@@ -1754,6 +1872,7 @@ window.QB = {
    "file": "2013_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 2",
    "type": "解答",
@@ -1768,6 +1887,7 @@ window.QB = {
    "file": "2013_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 2",
    "type": "解答",
@@ -1782,6 +1902,7 @@ window.QB = {
    "file": "2013_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 2",
    "type": "解答",
@@ -1796,6 +1917,7 @@ window.QB = {
    "file": "2013_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 2",
    "type": "解答",
@@ -1810,6 +1932,7 @@ window.QB = {
    "file": "2013_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 2",
    "type": "解答",
@@ -1824,6 +1947,7 @@ window.QB = {
    "file": "2013_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 2",
    "type": "解答",
@@ -1838,6 +1962,7 @@ window.QB = {
    "file": "2013_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 2",
    "type": "解答",
@@ -1852,6 +1977,7 @@ window.QB = {
    "file": "2013_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 2",
    "type": "解答",
@@ -1866,6 +1992,7 @@ window.QB = {
    "file": "2013_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 2",
    "type": "解答",
@@ -1880,6 +2007,7 @@ window.QB = {
    "file": "2013_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2013,
    "paper": "Paper 2",
    "type": "解答",
@@ -1894,6 +2022,7 @@ window.QB = {
    "file": "2013_II_解答.md"
   },
   {
+   "subject": "數學",
    "year": 2014,
    "paper": "Paper 1",
    "type": "題目",
@@ -1909,6 +2038,7 @@ window.QB = {
    "file": "2014_P1_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2014,
    "paper": "Paper 1",
    "type": "題目",
@@ -1924,6 +2054,7 @@ window.QB = {
    "file": "2014_P1_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2014,
    "paper": "Paper 1",
    "type": "題目",
@@ -1939,6 +2070,7 @@ window.QB = {
    "file": "2014_P1_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2014,
    "paper": "Paper 1",
    "type": "題目",
@@ -1955,6 +2087,7 @@ window.QB = {
    "file": "2014_P1_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2014,
    "paper": "Paper 1",
    "type": "題目",
@@ -1970,6 +2103,7 @@ window.QB = {
    "file": "2014_P1_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2014,
    "paper": "Paper 1",
    "type": "題目",
@@ -1985,6 +2119,7 @@ window.QB = {
    "file": "2014_P1_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2014,
    "paper": "Paper 1",
    "type": "題目",
@@ -2001,6 +2136,7 @@ window.QB = {
    "file": "2014_P1_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2014,
    "paper": "Paper 1",
    "type": "題目",
@@ -2018,6 +2154,7 @@ window.QB = {
    "file": "2014_P1_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2014,
    "paper": "Paper 1",
    "type": "題目",
@@ -2028,11 +2165,12 @@ window.QB = {
     "相似三角形",
     "角度證明"
    ],
-   "text": "圖 1 中，$D$ 為 $AC$ 上的一點使得 $\\angle BAC=\\angle CBD$。\n\n![2014 P1 Q9 圖1 相似三角形](2014P1_figs_svg/2014P1_Q9.svg)\n\n(a)　證明 $\\triangle ABC\\sim\\triangle BDC$。\n\n(b)　假定 $AC=25\\ \\mathrm{cm}$、$BC=20\\ \\mathrm{cm}$ 及 $BD=12\\ \\mathrm{cm}$。$\\triangle BCD$ 是否一直角三角形？試解釋你的答案。（5 分）\n\n---",
-   "html": "<p>圖 1 中，$D$ 為 $AC$ 上的一點使得 $\\angle BAC=\\angle CBD$。</p>\n<p><img alt=\"2014 P1 Q9 圖1 相似三角形\" src=\"2014P1_figs_svg/2014P1_Q9.svg\" /></p>\n<p>(a)　證明 $\\triangle ABC\\sim\\triangle BDC$。</p>\n<p>(b)　假定 $AC=25\\ \\mathrm{cm}$、$BC=20\\ \\mathrm{cm}$ 及 $BD=12\\ \\mathrm{cm}$。$\\triangle BCD$ 是否一直角三角形？試解釋你的答案。（5 分）</p>\n<hr />",
+   "text": "圖 1 中，$D$ 為 $AC$ 上的一點使得 $\\angle BAC=\\angle CBD$。\n\n![2014 P1 Q9 圖1 相似三角形](2014P1_figs_svg/2014P1_Q9.svg)\n\n(a)　證明 $\\triangle ABC\\sim\\triangle BDC$。\n\n(b)　假定 $AC=25\\ \\mathrm{cm}$、$BC=20\\ \\mathrm{cm}$ 及 $BD=12\\ \\mathrm{cm}$。$\\triangle BCD$ 是否一直角三角形？試解釋你的答案。（5 分）",
+   "html": "<p>圖 1 中，$D$ 為 $AC$ 上的一點使得 $\\angle BAC=\\angle CBD$。</p>\n<p><img alt=\"2014 P1 Q9 圖1 相似三角形\" src=\"2014P1_figs_svg/2014P1_Q9.svg\" /></p>\n<p>(a)　證明 $\\triangle ABC\\sim\\triangle BDC$。</p>\n<p>(b)　假定 $AC=25\\ \\mathrm{cm}$、$BC=20\\ \\mathrm{cm}$ 及 $BD=12\\ \\mathrm{cm}$。$\\triangle BCD$ 是否一直角三角形？試解釋你的答案。（5 分）</p>",
    "file": "2014_P1_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2014,
    "paper": "Paper 1",
    "type": "題目",
@@ -2048,6 +2186,7 @@ window.QB = {
    "file": "2014_P1_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2014,
    "paper": "Paper 1",
    "type": "題目",
@@ -2065,6 +2204,7 @@ window.QB = {
    "file": "2014_P1_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2014,
    "paper": "Paper 1",
    "type": "題目",
@@ -2081,6 +2221,7 @@ window.QB = {
    "file": "2014_P1_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2014,
    "paper": "Paper 1",
    "type": "題目",
@@ -2097,6 +2238,7 @@ window.QB = {
    "file": "2014_P1_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2014,
    "paper": "Paper 1",
    "type": "題目",
@@ -2109,11 +2251,12 @@ window.QB = {
     "曲面面積",
     "體積"
    ],
-   "text": "圖 3 顯示一容器，其形狀為一平截頭體。該平截頭體是從一底半徑為 $72\\ \\mathrm{cm}$ 及高為 $96\\ \\mathrm{cm}$ 的倒置直立圓錐體切去其下部分造成。該容器的高度為 $60\\ \\mathrm{cm}$。將該容器放在一水平桌上。現將一些水注入該容器內。偉明得知該容器內的水深為 $28\\ \\mathrm{cm}$。\n\n![2014 P1 Q14 圖3 平截頭體容器](2014P1_figs_svg/2014P1_Q14.svg)\n\n(a)　求該容器被浸濕的曲面面積，答案以 $\\pi$ 表示。（4 分）\n\n(b)　偉明宣稱該容器內的水的體積大於 $0.1\\ \\mathrm{m}^3$。你是否同意？試解釋你的答案。（4 分）\n\n---",
-   "html": "<p>圖 3 顯示一容器，其形狀為一平截頭體。該平截頭體是從一底半徑為 $72\\ \\mathrm{cm}$ 及高為 $96\\ \\mathrm{cm}$ 的倒置直立圓錐體切去其下部分造成。該容器的高度為 $60\\ \\mathrm{cm}$。將該容器放在一水平桌上。現將一些水注入該容器內。偉明得知該容器內的水深為 $28\\ \\mathrm{cm}$。</p>\n<p><img alt=\"2014 P1 Q14 圖3 平截頭體容器\" src=\"2014P1_figs_svg/2014P1_Q14.svg\" /></p>\n<p>(a)　求該容器被浸濕的曲面面積，答案以 $\\pi$ 表示。（4 分）</p>\n<p>(b)　偉明宣稱該容器內的水的體積大於 $0.1\\ \\mathrm{m}^3$。你是否同意？試解釋你的答案。（4 分）</p>\n<hr />",
+   "text": "圖 3 顯示一容器，其形狀為一平截頭體。該平截頭體是從一底半徑為 $72\\ \\mathrm{cm}$ 及高為 $96\\ \\mathrm{cm}$ 的倒置直立圓錐體切去其下部分造成。該容器的高度為 $60\\ \\mathrm{cm}$。將該容器放在一水平桌上。現將一些水注入該容器內。偉明得知該容器內的水深為 $28\\ \\mathrm{cm}$。\n\n![2014 P1 Q14 圖3 平截頭體容器](2014P1_figs_svg/2014P1_Q14.svg)\n\n(a)　求該容器被浸濕的曲面面積，答案以 $\\pi$ 表示。（4 分）\n\n(b)　偉明宣稱該容器內的水的體積大於 $0.1\\ \\mathrm{m}^3$。你是否同意？試解釋你的答案。（4 分）",
+   "html": "<p>圖 3 顯示一容器，其形狀為一平截頭體。該平截頭體是從一底半徑為 $72\\ \\mathrm{cm}$ 及高為 $96\\ \\mathrm{cm}$ 的倒置直立圓錐體切去其下部分造成。該容器的高度為 $60\\ \\mathrm{cm}$。將該容器放在一水平桌上。現將一些水注入該容器內。偉明得知該容器內的水深為 $28\\ \\mathrm{cm}$。</p>\n<p><img alt=\"2014 P1 Q14 圖3 平截頭體容器\" src=\"2014P1_figs_svg/2014P1_Q14.svg\" /></p>\n<p>(a)　求該容器被浸濕的曲面面積，答案以 $\\pi$ 表示。（4 分）</p>\n<p>(b)　偉明宣稱該容器內的水的體積大於 $0.1\\ \\mathrm{m}^3$。你是否同意？試解釋你的答案。（4 分）</p>",
    "file": "2014_P1_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2014,
    "paper": "Paper 1",
    "type": "題目",
@@ -2130,6 +2273,7 @@ window.QB = {
    "file": "2014_P1_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2014,
    "paper": "Paper 1",
    "type": "題目",
@@ -2146,6 +2290,7 @@ window.QB = {
    "file": "2014_P1_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2014,
    "paper": "Paper 1",
    "type": "題目",
@@ -2162,6 +2307,7 @@ window.QB = {
    "file": "2014_P1_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2014,
    "paper": "Paper 1",
    "type": "題目",
@@ -2178,6 +2324,7 @@ window.QB = {
    "file": "2014_P1_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2014,
    "paper": "Paper 1",
    "type": "題目",
@@ -2194,6 +2341,7 @@ window.QB = {
    "file": "2014_P1_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2015,
    "paper": "Paper 2",
    "type": "題目",
@@ -2209,6 +2357,7 @@ window.QB = {
    "file": "2015_P2_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2015,
    "paper": "Paper 2",
    "type": "題目",
@@ -2224,6 +2373,7 @@ window.QB = {
    "file": "2015_P2_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2015,
    "paper": "Paper 2",
    "type": "題目",
@@ -2239,6 +2389,7 @@ window.QB = {
    "file": "2015_P2_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2015,
    "paper": "Paper 2",
    "type": "題目",
@@ -2255,6 +2406,7 @@ window.QB = {
    "file": "2015_P2_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2015,
    "paper": "Paper 2",
    "type": "題目",
@@ -2270,6 +2422,7 @@ window.QB = {
    "file": "2015_P2_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2015,
    "paper": "Paper 2",
    "type": "題目",
@@ -2285,6 +2438,7 @@ window.QB = {
    "file": "2015_P2_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2015,
    "paper": "Paper 2",
    "type": "題目",
@@ -2300,6 +2454,7 @@ window.QB = {
    "file": "2015_P2_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2015,
    "paper": "Paper 2",
    "type": "題目",
@@ -2315,6 +2470,7 @@ window.QB = {
    "file": "2015_P2_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2015,
    "paper": "Paper 2",
    "type": "題目",
@@ -2330,6 +2486,7 @@ window.QB = {
    "file": "2015_P2_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2015,
    "paper": "Paper 2",
    "type": "題目",
@@ -2345,6 +2502,7 @@ window.QB = {
    "file": "2015_P2_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2015,
    "paper": "Paper 2",
    "type": "題目",
@@ -2360,6 +2518,7 @@ window.QB = {
    "file": "2015_P2_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2015,
    "paper": "Paper 2",
    "type": "題目",
@@ -2375,6 +2534,7 @@ window.QB = {
    "file": "2015_P2_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2015,
    "paper": "Paper 2",
    "type": "題目",
@@ -2390,6 +2550,7 @@ window.QB = {
    "file": "2015_P2_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2015,
    "paper": "Paper 2",
    "type": "題目",
@@ -2405,6 +2566,7 @@ window.QB = {
    "file": "2015_P2_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2015,
    "paper": "Paper 2",
    "type": "題目",
@@ -2421,6 +2583,7 @@ window.QB = {
    "file": "2015_P2_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2015,
    "paper": "Paper 2",
    "type": "題目",
@@ -2437,6 +2600,7 @@ window.QB = {
    "file": "2015_P2_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2015,
    "paper": "Paper 2",
    "type": "題目",
@@ -2453,6 +2617,7 @@ window.QB = {
    "file": "2015_P2_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2015,
    "paper": "Paper 2",
    "type": "題目",
@@ -2468,6 +2633,7 @@ window.QB = {
    "file": "2015_P2_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2015,
    "paper": "Paper 2",
    "type": "題目",
@@ -2483,6 +2649,7 @@ window.QB = {
    "file": "2015_P2_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2015,
    "paper": "Paper 2",
    "type": "題目",
@@ -2499,6 +2666,7 @@ window.QB = {
    "file": "2015_P2_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2015,
    "paper": "Paper 2",
    "type": "題目",
@@ -2515,6 +2683,7 @@ window.QB = {
    "file": "2015_P2_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2015,
    "paper": "Paper 2",
    "type": "題目",
@@ -2531,6 +2700,7 @@ window.QB = {
    "file": "2015_P2_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2015,
    "paper": "Paper 2",
    "type": "題目",
@@ -2547,6 +2717,7 @@ window.QB = {
    "file": "2015_P2_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2015,
    "paper": "Paper 2",
    "type": "題目",
@@ -2562,6 +2733,7 @@ window.QB = {
    "file": "2015_P2_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2015,
    "paper": "Paper 2",
    "type": "題目",
@@ -2578,6 +2750,7 @@ window.QB = {
    "file": "2015_P2_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2015,
    "paper": "Paper 2",
    "type": "題目",
@@ -2593,6 +2766,7 @@ window.QB = {
    "file": "2015_P2_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2015,
    "paper": "Paper 2",
    "type": "題目",
@@ -2608,6 +2782,7 @@ window.QB = {
    "file": "2015_P2_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2015,
    "paper": "Paper 2",
    "type": "題目",
@@ -2623,6 +2798,7 @@ window.QB = {
    "file": "2015_P2_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2015,
    "paper": "Paper 2",
    "type": "題目",
@@ -2638,6 +2814,7 @@ window.QB = {
    "file": "2015_P2_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2015,
    "paper": "Paper 2",
    "type": "題目",
@@ -2654,6 +2831,7 @@ window.QB = {
    "file": "2015_P2_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2015,
    "paper": "Paper 2",
    "type": "題目",
@@ -2669,6 +2847,7 @@ window.QB = {
    "file": "2015_P2_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2015,
    "paper": "Paper 2",
    "type": "題目",
@@ -2684,6 +2863,7 @@ window.QB = {
    "file": "2015_P2_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2015,
    "paper": "Paper 2",
    "type": "題目",
@@ -2699,6 +2879,7 @@ window.QB = {
    "file": "2015_P2_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2015,
    "paper": "Paper 2",
    "type": "題目",
@@ -2714,6 +2895,7 @@ window.QB = {
    "file": "2015_P2_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2015,
    "paper": "Paper 2",
    "type": "題目",
@@ -2729,6 +2911,7 @@ window.QB = {
    "file": "2015_P2_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2015,
    "paper": "Paper 2",
    "type": "題目",
@@ -2744,6 +2927,7 @@ window.QB = {
    "file": "2015_P2_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2015,
    "paper": "Paper 2",
    "type": "題目",
@@ -2759,6 +2943,7 @@ window.QB = {
    "file": "2015_P2_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2015,
    "paper": "Paper 2",
    "type": "題目",
@@ -2773,6 +2958,7 @@ window.QB = {
    "file": "2015_P2_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2015,
    "paper": "Paper 2",
    "type": "題目",
@@ -2789,6 +2975,7 @@ window.QB = {
    "file": "2015_P2_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2015,
    "paper": "Paper 2",
    "type": "題目",
@@ -2804,6 +2991,7 @@ window.QB = {
    "file": "2015_P2_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2015,
    "paper": "Paper 2",
    "type": "題目",
@@ -2820,6 +3008,7 @@ window.QB = {
    "file": "2015_P2_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2015,
    "paper": "Paper 2",
    "type": "題目",
@@ -2835,6 +3024,7 @@ window.QB = {
    "file": "2015_P2_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2015,
    "paper": "Paper 2",
    "type": "題目",
@@ -2850,6 +3040,7 @@ window.QB = {
    "file": "2015_P2_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2015,
    "paper": "Paper 2",
    "type": "題目",
@@ -2865,6 +3056,7 @@ window.QB = {
    "file": "2015_P2_QU(CHI).md"
   },
   {
+   "subject": "數學",
    "year": 2015,
    "paper": "Paper 2",
    "type": "題目",
@@ -2879,6 +3071,737 @@ window.QB = {
    "text": "設 $x_1$、$y_1$ 及 $z_1$ 分別為 $\\left\\{a_1,a_2,\\ldots,a_{50}\\right\\}$ 的平均值、中位數及方差；而 $x_2$、$y_2$ 及 $z_2$ 分別為 $\\left\\{a_1,a_2,\\ldots,a_{49}\\right\\}$ 的平均值、中位數及方差。若 $x_1=a_{50}$，則下列何者必為正確？\n\n　I. $x_1=x_2$\n\n　II. $y_1\\ge y_2$\n\n　III. $z_1\\le z_2$\n\n- A. 只有 I 及 II\n- B. 只有 I 及 III\n- C. 只有 II 及 III\n- D. I、II 及 III",
    "html": "<p>設 $x_1$、$y_1$ 及 $z_1$ 分別為 $\\left{a_1,a_2,\\ldots,a_{50}\\right}$ 的平均值、中位數及方差；而 $x_2$、$y_2$ 及 $z_2$ 分別為 $\\left{a_1,a_2,\\ldots,a_{49}\\right}$ 的平均值、中位數及方差。若 $x_1=a_{50}$，則下列何者必為正確？</p>\n<p>I. $x_1=x_2$</p>\n<p>II. $y_1\\ge y_2$</p>\n<p>III. $z_1\\le z_2$</p>\n<ul>\n<li>A. 只有 I 及 II</li>\n<li>B. 只有 I 及 III</li>\n<li>C. 只有 II 及 III</li>\n<li>D. I、II 及 III</li>\n</ul>",
    "file": "2015_P2_QU(CHI).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2015,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 1,
+   "title": "第 1 題",
+   "section": "Paper 1",
+   "tags": [
+    "實證陳述",
+    "規範陳述"
+   ],
+   "text": "Which of the following are positive statements?\n\n(1) Importation of labour from the mainland would result in a rise in job vacancies in Hong Kong.\n\n(2) It would be better to import labour from the Guangdong province because they can speak Cantonese.\n\n(3) Productivity of labour from China is higher than that from other Southeast Asian countries.\n\n(4) Unemployment rate in Hong Kong would rise by 1% as a result of labour importation of 30 000 from the mainland.\n\n- A. (1) and (2) only\n- B. (3) and (4) only\n- C. (1), (3) and (4) only\n- D. (2), (3) and (4) only",
+   "html": "<p>Which of the following are positive statements?</p>\n<p>(1) Importation of labour from the mainland would result in a rise in job vacancies in Hong Kong.</p>\n<p>(2) It would be better to import labour from the Guangdong province because they can speak Cantonese.</p>\n<p>(3) Productivity of labour from China is higher than that from other Southeast Asian countries.</p>\n<p>(4) Unemployment rate in Hong Kong would rise by 1% as a result of labour importation of 30 000 from the mainland.</p>\n<ul>\n<li>A. (1) and (2) only</li>\n<li>B. (3) and (4) only</li>\n<li>C. (1), (3) and (4) only</li>\n<li>D. (2), (3) and (4) only</li>\n</ul>",
+   "file": "2015_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2015,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 2,
+   "title": "第 2 題",
+   "section": "Paper 1",
+   "tags": [
+    "機會成本"
+   ],
+   "text": "David can choose to take the MTR or a bus to Yuen Long. Suppose the required travel time and the fares of both options are the same in a normal situation. Which of the following will result in an increase in the opportunity cost of travelling to Yuen Long by MTR?\n\n- A. The air-conditioner on the bus is out of order.\n- B. The traffic jam makes the bus trip 15 minutes longer.\n- C. A signalling problem causes the travel time of the MTR to increase by 15 minutes.\n- D. David feels annoyed about the news broadcast in the MTR train.",
+   "html": "<p>David can choose to take the MTR or a bus to Yuen Long. Suppose the required travel time and the fares of both options are the same in a normal situation. Which of the following will result in an increase in the opportunity cost of travelling to Yuen Long by MTR?</p>\n<ul>\n<li>A. The air-conditioner on the bus is out of order.</li>\n<li>B. The traffic jam makes the bus trip 15 minutes longer.</li>\n<li>C. A signalling problem causes the travel time of the MTR to increase by 15 minutes.</li>\n<li>D. David feels annoyed about the news broadcast in the MTR train.</li>\n</ul>",
+   "file": "2015_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2015,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 3,
+   "title": "第 3 題",
+   "section": "Paper 1",
+   "tags": [
+    "經濟制度",
+    "市場經濟"
+   ],
+   "text": "Which of the following is a characteristic of a market economy?\n\n- A. Income distribution is uneven in the economy.\n- B. The government has no role in regulating business activities in the economy.\n- C. Most factors of production in the economy are privately owned.\n- D. There is only price competition in the economy.",
+   "html": "<p>Which of the following is a characteristic of a market economy?</p>\n<ul>\n<li>A. Income distribution is uneven in the economy.</li>\n<li>B. The government has no role in regulating business activities in the economy.</li>\n<li>C. Most factors of production in the economy are privately owned.</li>\n<li>D. There is only price competition in the economy.</li>\n</ul>",
+   "file": "2015_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2015,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 4,
+   "title": "第 4 題",
+   "section": "Paper 1",
+   "tags": [
+    "勞工流動性"
+   ],
+   "text": "The __________ mobility of labour will decrease if __________.\n\n- A. geographical ...... the government introduces \"city-bike rental scheme\" in all train stations\n- B. geographical ...... several big companies set up child care centres in their offices\n- C. occupational ...... the travelling subsidy provided by the government is reduced due to a budget deficit\n- D. occupational ...... licences are required by the government for more professions",
+   "html": "<p>The <strong><em>_</em></strong><strong><em> mobility of labour will decrease if </em></strong><strong><em>_</em></strong>.</p>\n<ul>\n<li>A. geographical ...... the government introduces \"city-bike rental scheme\" in all train stations</li>\n<li>B. geographical ...... several big companies set up child care centres in their offices</li>\n<li>C. occupational ...... the travelling subsidy provided by the government is reduced due to a budget deficit</li>\n<li>D. occupational ...... licences are required by the government for more professions</li>\n</ul>",
+   "file": "2015_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2015,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 5,
+   "title": "第 5 題",
+   "section": "Paper 1",
+   "tags": [
+    "邊際成本",
+    "利潤極大化",
+    "完全競爭"
+   ],
+   "text": "The schedule below shows the marginal cost of a firm in a perfectly competitive market.\n\n| Output (units) | 3 | 4 | 5 | 6 | 7 | 8 | 9 |\n|---|---|---|---|---|---|---|---|\n| Marginal cost ($) | 5 | 5.5 | 6 | 6.5 | 7 | 8 | 9.5 |\n\nSuppose the rental of the machine hired, a fixed cost, increases by \\$2 while the marginal cost for each unit of the output is reduced by \\$0.5. As a result, the profit-maximising output of the firm __________ while the profit of the firm __________.\n\n- A. increases ...... decreases\n- B. increases ...... may increase or decrease\n- C. decreases ...... decreases\n- D. decreases ...... may increase or decrease",
+   "html": "<p>The schedule below shows the marginal cost of a firm in a perfectly competitive market.</p>\n<table>\n<thead>\n<tr>\n<th>Output (units)</th>\n<th>3</th>\n<th>4</th>\n<th>5</th>\n<th>6</th>\n<th>7</th>\n<th>8</th>\n<th>9</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Marginal cost ($)</td>\n<td>5</td>\n<td>5.5</td>\n<td>6</td>\n<td>6.5</td>\n<td>7</td>\n<td>8</td>\n<td>9.5</td>\n</tr>\n</tbody>\n</table>\n<p>Suppose the rental of the machine hired, a fixed cost, increases by \\$2 while the marginal cost for each unit of the output is reduced by \\$0.5. As a result, the profit-maximising output of the firm <strong><em>_</em></strong><strong><em> while the profit of the firm </em></strong><strong><em>_</em></strong>.</p>\n<ul>\n<li>A. increases ...... decreases</li>\n<li>B. increases ...... may increase or decrease</li>\n<li>C. decreases ...... decreases</li>\n<li>D. decreases ...... may increase or decrease</li>\n</ul>",
+   "file": "2015_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2015,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 6,
+   "title": "第 6 題",
+   "section": "Paper 1",
+   "tags": [
+    "勞動生產力"
+   ],
+   "text": "Refer to the following table.\n\n| | Factory A | Factory B |\n|---|---|---|\n| Number of full-time workers | 25 | 0 |\n| Number of part-time workers | 0 | 50 |\n| Average working hours of full-time workers | 8 | 0 |\n| Average working hours of part-time workers | 0 | 6 |\n| Total output (units) | 12 000 | 15 000 |\n\nWhich of the following is a possible reason for the difference between the labour productivity of Factory A and Factory B?\n\n- A. Factory A uses time rate while Factory B uses piece rate to pay its workers.\n- B. Factory A provides more training for its workers.\n- C. The part-time workers employed by Factory B are more skilled.\n- D. Factory B uses more capital goods.",
+   "html": "<p>Refer to the following table.</p>\n<table>\n<thead>\n<tr>\n<th></th>\n<th>Factory A</th>\n<th>Factory B</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Number of full-time workers</td>\n<td>25</td>\n<td>0</td>\n</tr>\n<tr>\n<td>Number of part-time workers</td>\n<td>0</td>\n<td>50</td>\n</tr>\n<tr>\n<td>Average working hours of full-time workers</td>\n<td>8</td>\n<td>0</td>\n</tr>\n<tr>\n<td>Average working hours of part-time workers</td>\n<td>0</td>\n<td>6</td>\n</tr>\n<tr>\n<td>Total output (units)</td>\n<td>12 000</td>\n<td>15 000</td>\n</tr>\n</tbody>\n</table>\n<p>Which of the following is a possible reason for the difference between the labour productivity of Factory A and Factory B?</p>\n<ul>\n<li>A. Factory A uses time rate while Factory B uses piece rate to pay its workers.</li>\n<li>B. Factory A provides more training for its workers.</li>\n<li>C. The part-time workers employed by Factory B are more skilled.</li>\n<li>D. Factory B uses more capital goods.</li>\n</ul>",
+   "file": "2015_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2015,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 7,
+   "title": "第 7 題",
+   "section": "Paper 1",
+   "tags": [
+    "公司種類",
+    "私人有限公司"
+   ],
+   "text": "A firm has an independent legal entity but the owners cannot transfer their ownership without the consent of the other owners. When the owners want to expand the firm's business, they can __________.\n\n(1) use the retained profit of the firm\n\n(2) issue shares to the public to raise capital\n\n(3) borrow from friends to raise capital\n\n- A. (1) and (2) only\n- B. (1) and (3) only\n- C. (2) and (3) only\n- D. (1), (2) and (3)",
+   "html": "<p>A firm has an independent legal entity but the owners cannot transfer their ownership without the consent of the other owners. When the owners want to expand the firm's business, they can <strong><em>_</em></strong>___.</p>\n<p>(1) use the retained profit of the firm</p>\n<p>(2) issue shares to the public to raise capital</p>\n<p>(3) borrow from friends to raise capital</p>\n<ul>\n<li>A. (1) and (2) only</li>\n<li>B. (1) and (3) only</li>\n<li>C. (2) and (3) only</li>\n<li>D. (1), (2) and (3)</li>\n</ul>",
+   "file": "2015_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2015,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 8,
+   "title": "第 8 題",
+   "section": "Paper 1",
+   "tags": [
+    "規模經濟",
+    "業務擴展",
+    "分散風險"
+   ],
+   "text": "759Store, a local retailer of imported snacks, expands its business to sell cosmetics and skincare products. Which of the following is the LEAST likely motive behind the expansion?\n\n- A. to reduce competition\n- B. to enjoy economies of scale\n- C. to extend its brand name to other products\n- D. to spread risk by business diversification",
+   "html": "<p>759Store, a local retailer of imported snacks, expands its business to sell cosmetics and skincare products. Which of the following is the LEAST likely motive behind the expansion?</p>\n<ul>\n<li>A. to reduce competition</li>\n<li>B. to enjoy economies of scale</li>\n<li>C. to extend its brand name to other products</li>\n<li>D. to spread risk by business diversification</li>\n</ul>",
+   "file": "2015_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2015,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 9,
+   "title": "第 9 題",
+   "section": "Paper 1",
+   "tags": [
+    "邊際回報遞減",
+    "總產量"
+   ],
+   "text": "The table below shows the total product of Firm A, which employs only capital and labour in production.\n\n| Labour (units) | Capital (units) | Total Product (units) |\n|---|---|---|\n| 12 | 2 | 110 |\n| 12 | 3 | 130 |\n| 12 | 4 | 160 |\n| 12 | 5 | X |\n\nWhich of the following statements about Firm A is correct?\n\n- A. If the above data illustrate the law of diminishing marginal returns, the value of X can be equal to 180.\n- B. If the above data illustrate the law of diminishing marginal returns, the value of X can be equal to 190.\n- C. If the above data illustrate the law of diminishing marginal returns, the value of X can be larger than 200.\n- D. The law of diminishing marginal returns does not apply to Firm A because capital is not a fixed factor.",
+   "html": "<p>The table below shows the total product of Firm A, which employs only capital and labour in production.</p>\n<table>\n<thead>\n<tr>\n<th>Labour (units)</th>\n<th>Capital (units)</th>\n<th>Total Product (units)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>12</td>\n<td>2</td>\n<td>110</td>\n</tr>\n<tr>\n<td>12</td>\n<td>3</td>\n<td>130</td>\n</tr>\n<tr>\n<td>12</td>\n<td>4</td>\n<td>160</td>\n</tr>\n<tr>\n<td>12</td>\n<td>5</td>\n<td>X</td>\n</tr>\n</tbody>\n</table>\n<p>Which of the following statements about Firm A is correct?</p>\n<ul>\n<li>A. If the above data illustrate the law of diminishing marginal returns, the value of X can be equal to 180.</li>\n<li>B. If the above data illustrate the law of diminishing marginal returns, the value of X can be equal to 190.</li>\n<li>C. If the above data illustrate the law of diminishing marginal returns, the value of X can be larger than 200.</li>\n<li>D. The law of diminishing marginal returns does not apply to Firm A because capital is not a fixed factor.</li>\n</ul>",
+   "file": "2015_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2015,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 10,
+   "title": "第 10 題",
+   "section": "Paper 1",
+   "tags": [
+    "總收入",
+    "限額",
+    "補貼"
+   ],
+   "text": "Which of the following will result in a rise in the total revenue of chicken farms?\n\n- A. The price of chicken feed falls.\n- B. The government reduces the profits tax rate on chicken farms.\n- C. The effective quota on the sale of chickens is increased.\n- D. The government reduces the subsidy for the producers of pork.",
+   "html": "<p>Which of the following will result in a rise in the total revenue of chicken farms?</p>\n<ul>\n<li>A. The price of chicken feed falls.</li>\n<li>B. The government reduces the profits tax rate on chicken farms.</li>\n<li>C. The effective quota on the sale of chickens is increased.</li>\n<li>D. The government reduces the subsidy for the producers of pork.</li>\n</ul>",
+   "file": "2015_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2015,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 11,
+   "title": "第 11 題",
+   "section": "Paper 1",
+   "tags": [
+    "需求彈性",
+    "總開支"
+   ],
+   "text": "The table below shows the relationship between the price of and the total expenditure on ice-cream.\n\n| Unit price (\\$) | 5 | 6 | 7 | 8 |\n|---|---|---|---|---|\n| Total expenditure (\\$) | 25 | 30 | 35 | 40 |\n\nFrom the above table, we can conclude that the elasticity of demand for ice-cream is __________ (without regard to its negative sign).\n\n- A. between zero and one\n- B. equal to zero\n- C. larger than one\n- D. equal to one",
+   "html": "<p>The table below shows the relationship between the price of and the total expenditure on ice-cream.</p>\n<table>\n<thead>\n<tr>\n<th>Unit price (\\$)</th>\n<th>5</th>\n<th>6</th>\n<th>7</th>\n<th>8</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Total expenditure (\\$)</td>\n<td>25</td>\n<td>30</td>\n<td>35</td>\n<td>40</td>\n</tr>\n</tbody>\n</table>\n<p>From the above table, we can conclude that the elasticity of demand for ice-cream is <strong><em>_</em></strong>___ (without regard to its negative sign).</p>\n<ul>\n<li>A. between zero and one</li>\n<li>B. equal to zero</li>\n<li>C. larger than one</li>\n<li>D. equal to one</li>\n</ul>",
+   "file": "2015_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2015,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 12,
+   "title": "第 12 題",
+   "section": "Paper 1",
+   "tags": [
+    "單位補貼",
+    "彈性",
+    "補貼得益"
+   ],
+   "text": "The government provides a per-unit subsidy of \\$10 on producing green products. The market price drops by \\$6 as a result. Which of the following statements about the green product market is/are correct?\n\n(1) The supply of green products is more elastic than their demand.\n\n(2) Consumers enjoy more subsidy benefit than producers.\n\n(3) The demand for green products increases.\n\n- A. (2) only\n- B. (1) and (2) only\n- C. (1) and (3) only\n- D. (1), (2) and (3)",
+   "html": "<p>The government provides a per-unit subsidy of \\$10 on producing green products. The market price drops by \\$6 as a result. Which of the following statements about the green product market is/are correct?</p>\n<p>(1) The supply of green products is more elastic than their demand.</p>\n<p>(2) Consumers enjoy more subsidy benefit than producers.</p>\n<p>(3) The demand for green products increases.</p>\n<ul>\n<li>A. (2) only</li>\n<li>B. (1) and (2) only</li>\n<li>C. (1) and (3) only</li>\n<li>D. (1), (2) and (3)</li>\n</ul>",
+   "file": "2015_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2015,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 13,
+   "title": "第 13 題",
+   "section": "Paper 1",
+   "tags": [
+    "短缺",
+    "價格上限",
+    "黑市"
+   ],
+   "text": "Many people queued up for days for the tickets to watch the show of Tsz-Wah, a famous artist performing stand-up comedy. Some people complained that they were unable to buy tickets even though they were willing to pay the ticket price set by the organiser. The above situation implies that\n\n- A. price was the only criterion for allocating the tickets.\n- B. the producer was not maximising its profit.\n- C. a black market for the tickets might emerge.\n- D. there was an effective price ceiling in the ticket market.",
+   "html": "<p>Many people queued up for days for the tickets to watch the show of Tsz-Wah, a famous artist performing stand-up comedy. Some people complained that they were unable to buy tickets even though they were willing to pay the ticket price set by the organiser. The above situation implies that</p>\n<ul>\n<li>A. price was the only criterion for allocating the tickets.</li>\n<li>B. the producer was not maximising its profit.</li>\n<li>C. a black market for the tickets might emerge.</li>\n<li>D. there was an effective price ceiling in the ticket market.</li>\n</ul>",
+   "file": "2015_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2015,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 14,
+   "title": "第 14 題",
+   "section": "Paper 1",
+   "tags": [
+    "互補品",
+    "替代品",
+    "聯合供給",
+    "競爭供給"
+   ],
+   "text": "Holding other factors constant, a rise in the price of Good X will lead to a fall in the total revenue of Good Y if\n\n- A. Good X and Good Y are complements.\n- B. Good X and Good Y are substitutes.\n- C. Good X and Good Y are in joint supply.\n- D. Good X and Good Y are in competitive supply.",
+   "html": "<p>Holding other factors constant, a rise in the price of Good X will lead to a fall in the total revenue of Good Y if</p>\n<ul>\n<li>A. Good X and Good Y are complements.</li>\n<li>B. Good X and Good Y are substitutes.</li>\n<li>C. Good X and Good Y are in joint supply.</li>\n<li>D. Good X and Good Y are in competitive supply.</li>\n</ul>",
+   "file": "2015_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2015,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 15,
+   "title": "第 15 題",
+   "section": "Paper 1",
+   "tags": [
+    "供求均衡",
+    "沿曲線移動"
+   ],
+   "text": "![fig_2015P1_q15](2015_P1_images/fig_2015P1_q15.png)\n\nSS is the supply curve for smartphones. Which of the following reasons can best explain the change of the equilibrium position in the smartphone market from A to B?\n\n\n- A. The retailers offer more free gifts for buying smartphones.\n- B. The size of a tablet computer with a phone function is reduced.\n- C. There are more smartphone producers in the market.\n- D. The major network service providers increase the service charge at the same time.",
+   "html": "<p><img alt=\"fig_2015P1_q15\" src=\"2015_P1_images/fig_2015P1_q15.png\" /></p>\n<p>SS is the supply curve for smartphones. Which of the following reasons can best explain the change of the equilibrium position in the smartphone market from A to B?</p>\n<ul>\n<li>A. The retailers offer more free gifts for buying smartphones.</li>\n<li>B. The size of a tablet computer with a phone function is reduced.</li>\n<li>C. There are more smartphone producers in the market.</li>\n<li>D. The major network service providers increase the service charge at the same time.</li>\n</ul>",
+   "file": "2015_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2015,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 16,
+   "title": "第 16 題",
+   "section": "Paper 1",
+   "tags": [
+    "從量稅",
+    "稅負",
+    "稅收"
+   ],
+   "text": "Refer to the following table for the supply and demand schedules for a good.\n\n| Unit Price (\\$) | 4 | 5 | 6 | 7 | 8 |\n|---|---|---|---|---|---|\n| Quantity demanded (units) | 16 | 14 | 12 | 10 | 8 |\n| Quantity supplied (units) | 14 | 14 | 14 | 14 | 14 |\n\nThe government imposes a \\$2 per unit tax on the good. Which of the following statements about the good is correct?\n\n- A. Sellers' revenue net of tax is \\$70.\n- B. The new market price is \\$6.\n- C. The total tax revenue is \\$28.\n- D. The above information is insufficient to determine the tax burden on sellers.",
+   "html": "<p>Refer to the following table for the supply and demand schedules for a good.</p>\n<table>\n<thead>\n<tr>\n<th>Unit Price (\\$)</th>\n<th>4</th>\n<th>5</th>\n<th>6</th>\n<th>7</th>\n<th>8</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Quantity demanded (units)</td>\n<td>16</td>\n<td>14</td>\n<td>12</td>\n<td>10</td>\n<td>8</td>\n</tr>\n<tr>\n<td>Quantity supplied (units)</td>\n<td>14</td>\n<td>14</td>\n<td>14</td>\n<td>14</td>\n<td>14</td>\n</tr>\n</tbody>\n</table>\n<p>The government imposes a \\$2 per unit tax on the good. Which of the following statements about the good is correct?</p>\n<ul>\n<li>A. Sellers' revenue net of tax is \\$70.</li>\n<li>B. The new market price is \\$6.</li>\n<li>C. The total tax revenue is \\$28.</li>\n<li>D. The above information is insufficient to determine the tax burden on sellers.</li>\n</ul>",
+   "file": "2015_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2015,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 17,
+   "title": "第 17 題",
+   "section": "Paper 1",
+   "tags": [
+    "私人利益",
+    "社會利益",
+    "外部性"
+   ],
+   "text": "Which of the following is an example of the divergence between private and social benefits?\n\n- A. A security guard watches live concerts when he is working in a concert hall.\n- B. A tourist enjoys the music performed by a singer on the street and he does not pay for that.\n- C. A resident living next to a karaoke lounge cannot fall asleep because of the noise.\n- D. After the removal of the airport, the market value of the residential flats in that region increases.",
+   "html": "<p>Which of the following is an example of the divergence between private and social benefits?</p>\n<ul>\n<li>A. A security guard watches live concerts when he is working in a concert hall.</li>\n<li>B. A tourist enjoys the music performed by a singer on the street and he does not pay for that.</li>\n<li>C. A resident living next to a karaoke lounge cannot fall asleep because of the noise.</li>\n<li>D. After the removal of the airport, the market value of the residential flats in that region increases.</li>\n</ul>",
+   "file": "2015_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2015,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 18,
+   "title": "第 18 題",
+   "section": "Paper 1",
+   "tags": [
+    "需求定律"
+   ],
+   "text": "Which of the following is INCONSISTENT with the law of demand?\n\n- A. More high-quality Japanese grapes are imported to Hong Kong during Mid-Autumn Festival.\n- B. An increase of the per unit tax on beer results in a fall in the quantity of small-bottle beer sold in the market.\n- C. After the introduction of the airport departure tax which is a fixed amount for any traveller, the average length of airplane journeys decreases.\n- D. The birth rate increases when the income tax allowance for children increases.",
+   "html": "<p>Which of the following is INCONSISTENT with the law of demand?</p>\n<ul>\n<li>A. More high-quality Japanese grapes are imported to Hong Kong during Mid-Autumn Festival.</li>\n<li>B. An increase of the per unit tax on beer results in a fall in the quantity of small-bottle beer sold in the market.</li>\n<li>C. After the introduction of the airport departure tax which is a fixed amount for any traveller, the average length of airplane journeys decreases.</li>\n<li>D. The birth rate increases when the income tax allowance for children increases.</li>\n</ul>",
+   "file": "2015_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2015,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 19,
+   "title": "第 19 題",
+   "section": "Paper 1",
+   "tags": [
+    "價格上限",
+    "剩餘",
+    "無謂損失"
+   ],
+   "text": "![fig_2015P1_q19](2015_P1_images/fig_2015P1_q19.png)\n\nRefer to the following diagram.\n\n\nIf the government lowers the price ceiling from $P_a$ to $P_b$,\n\n- A. the quantity transacted will increase.\n- B. the deadweight loss will decrease.\n- C. the producer surplus will decrease.\n- D. the consumer surplus will increase.",
+   "html": "<p><img alt=\"fig_2015P1_q19\" src=\"2015_P1_images/fig_2015P1_q19.png\" /></p>\n<p>Refer to the following diagram.</p>\n<p>If the government lowers the price ceiling from $P_a$ to $P_b$,</p>\n<ul>\n<li>A. the quantity transacted will increase.</li>\n<li>B. the deadweight loss will decrease.</li>\n<li>C. the producer surplus will decrease.</li>\n<li>D. the consumer surplus will increase.</li>\n</ul>",
+   "file": "2015_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2015,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 20,
+   "title": "第 20 題",
+   "section": "Paper 1",
+   "tags": [
+    "市場結構",
+    "寡頭壟斷",
+    "相互依存"
+   ],
+   "text": "Which of the following statements about the theme park industry in Hong Kong is correct?\n\n- A. Hong Kong Disneyland is a monopolist because its average cost of production drops when there are more tourists.\n- B. Hong Kong Disneyland guarantees a profit because it is protected by the government.\n- C. Hong Kong Disneyland and Ocean Park Hong Kong have no competition with each other as tourists may go to both theme parks.\n- D. Hong Kong Disneyland and Ocean Park Hong Kong are interdependent in their marketing strategies.",
+   "html": "<p>Which of the following statements about the theme park industry in Hong Kong is correct?</p>\n<ul>\n<li>A. Hong Kong Disneyland is a monopolist because its average cost of production drops when there are more tourists.</li>\n<li>B. Hong Kong Disneyland guarantees a profit because it is protected by the government.</li>\n<li>C. Hong Kong Disneyland and Ocean Park Hong Kong have no competition with each other as tourists may go to both theme parks.</li>\n<li>D. Hong Kong Disneyland and Ocean Park Hong Kong are interdependent in their marketing strategies.</li>\n</ul>",
+   "file": "2015_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2015,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 21,
+   "title": "第 21 題",
+   "section": "Paper 1",
+   "tags": [
+    "堅尼系數",
+    "稅制",
+    "收入不均"
+   ],
+   "text": "Suppose the post-tax Gini coefficient of an economy is larger than its pre-tax Gini coefficient. This implies that\n\n- A. the government has increased the amount of transfer payment to the poor.\n- B. the tax system of the economy is likely to be regressive.\n- C. the problem of income inequality is worse than that in the previous year.\n- D. the government should reform the tax system.",
+   "html": "<p>Suppose the post-tax Gini coefficient of an economy is larger than its pre-tax Gini coefficient. This implies that</p>\n<ul>\n<li>A. the government has increased the amount of transfer payment to the poor.</li>\n<li>B. the tax system of the economy is likely to be regressive.</li>\n<li>C. the problem of income inequality is worse than that in the previous year.</li>\n<li>D. the government should reform the tax system.</li>\n</ul>",
+   "file": "2015_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2015,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 22,
+   "title": "第 22 題",
+   "section": "Paper 1",
+   "tags": [
+    "社會剩餘",
+    "完全無彈性供給"
+   ],
+   "text": "![fig_2015P1_q22](2015_P1_images/fig_2015P1_q22.png)\n\nRefer to the following diagram.\n\n\nThe maximum total social surplus is equal to __________.\n\n- A. area Z\n- B. area $(Y+Z)$\n- C. area $(W+X+Y)$\n- D. area $(X+Y+Z)$",
+   "html": "<p><img alt=\"fig_2015P1_q22\" src=\"2015_P1_images/fig_2015P1_q22.png\" /></p>\n<p>Refer to the following diagram.</p>\n<p>The maximum total social surplus is equal to <strong><em>_</em></strong>___.</p>\n<ul>\n<li>A. area Z</li>\n<li>B. area $(Y+Z)$</li>\n<li>C. area $(W+X+Y)$</li>\n<li>D. area $(X+Y+Z)$</li>\n</ul>",
+   "file": "2015_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2015,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 23,
+   "title": "第 23 題",
+   "section": "Paper 1",
+   "tags": [
+    "就業結構",
+    "產業結構"
+   ],
+   "text": "The following table shows the employment distribution in an economy.\n\n| Sector \\ Year | 2010 | 2014 |\n|---|---|---|\n| Primary | 0.4% | 0.4% |\n| Secondary | 23.6% | 18.5% |\n| Tertiary | 76.0% | 81.1% |\n| Total | 100% | 100% |\n\nFrom the above table, we can conclude that from 2010 to 2014,\n\n- A. the number of workers engaged in the primary sector remained constant.\n- B. the overall employment rate was the same.\n- C. the contribution of the tertiary sector to gross domestic product (GDP) increased.\n- D. the relative importance of the secondary sector in terms of employment decreased.",
+   "html": "<p>The following table shows the employment distribution in an economy.</p>\n<table>\n<thead>\n<tr>\n<th>Sector \\ Year</th>\n<th>2010</th>\n<th>2014</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Primary</td>\n<td>0.4%</td>\n<td>0.4%</td>\n</tr>\n<tr>\n<td>Secondary</td>\n<td>23.6%</td>\n<td>18.5%</td>\n</tr>\n<tr>\n<td>Tertiary</td>\n<td>76.0%</td>\n<td>81.1%</td>\n</tr>\n<tr>\n<td>Total</td>\n<td>100%</td>\n<td>100%</td>\n</tr>\n</tbody>\n</table>\n<p>From the above table, we can conclude that from 2010 to 2014,</p>\n<ul>\n<li>A. the number of workers engaged in the primary sector remained constant.</li>\n<li>B. the overall employment rate was the same.</li>\n<li>C. the contribution of the tertiary sector to gross domestic product (GDP) increased.</li>\n<li>D. the relative importance of the secondary sector in terms of employment decreased.</li>\n</ul>",
+   "file": "2015_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2015,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 24,
+   "title": "第 24 題",
+   "section": "Paper 1",
+   "tags": [
+    "本地生產總值"
+   ],
+   "text": "Which of the following would be included in the calculation of Hong Kong's GDP for 2014?\n\n- A. the old age allowance paid by the government in 2014\n- B. the market value of a flat built in 2013 but sold in 2014\n- C. the salary of a salesperson working in a shop selling second-hand handbags in 2014\n- D. the rental income from a property in Canada owned by a Hong Kong resident producing unit in 2014",
+   "html": "<p>Which of the following would be included in the calculation of Hong Kong's GDP for 2014?</p>\n<ul>\n<li>A. the old age allowance paid by the government in 2014</li>\n<li>B. the market value of a flat built in 2013 but sold in 2014</li>\n<li>C. the salary of a salesperson working in a shop selling second-hand handbags in 2014</li>\n<li>D. the rental income from a property in Canada owned by a Hong Kong resident producing unit in 2014</li>\n</ul>",
+   "file": "2015_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2015,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 25,
+   "title": "第 25 題",
+   "section": "Paper 1",
+   "tags": [
+    "名義GDP",
+    "實質產出",
+    "人均GDP"
+   ],
+   "text": "Refer to the following table about an economy.\n\n| | Growth rate (relative to previous year) (%) | |\n|---|---|---|\n| | Year 1 | Year 2 |\n| Nominal GDP | 4 | 0 |\n| General price level | 3 | 1 |\n| Population | −1 | 2 |\n\nWhich of the following statements about the economy is correct?\n\n- A. The per capita nominal GDP in year 2 is the same as that in year 1.\n- B. The real output increased in year 2.\n- C. The general price level decreased in year 2.\n- D. The per capita real GDP decreased in year 2.",
+   "html": "<p>Refer to the following table about an economy.</p>\n<table>\n<thead>\n<tr>\n<th></th>\n<th>Growth rate (relative to previous year) (%)</th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td></td>\n<td>Year 1</td>\n<td>Year 2</td>\n</tr>\n<tr>\n<td>Nominal GDP</td>\n<td>4</td>\n<td>0</td>\n</tr>\n<tr>\n<td>General price level</td>\n<td>3</td>\n<td>1</td>\n</tr>\n<tr>\n<td>Population</td>\n<td>−1</td>\n<td>2</td>\n</tr>\n</tbody>\n</table>\n<p>Which of the following statements about the economy is correct?</p>\n<ul>\n<li>A. The per capita nominal GDP in year 2 is the same as that in year 1.</li>\n<li>B. The real output increased in year 2.</li>\n<li>C. The general price level decreased in year 2.</li>\n<li>D. The per capita real GDP decreased in year 2.</li>\n</ul>",
+   "file": "2015_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2015,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 26,
+   "title": "第 26 題",
+   "section": "Paper 1",
+   "tags": [
+    "總需求",
+    "AD曲線移動"
+   ],
+   "text": "Which of the following will result in a rightward shift of the aggregate demand curve of a country?\n\n- A. The central bank reduces the discount rate.\n- B. The minimum wage rate is increased.\n- C. The general price level decreases.\n- D. Its trading partners suffer from an economic recession.",
+   "html": "<p>Which of the following will result in a rightward shift of the aggregate demand curve of a country?</p>\n<ul>\n<li>A. The central bank reduces the discount rate.</li>\n<li>B. The minimum wage rate is increased.</li>\n<li>C. The general price level decreases.</li>\n<li>D. Its trading partners suffer from an economic recession.</li>\n</ul>",
+   "file": "2015_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2015,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 27,
+   "title": "第 27 題",
+   "section": "Paper 1",
+   "tags": [
+    "總供需",
+    "長期總供給",
+    "人力資本"
+   ],
+   "text": "![fig_2015P1_q27](2015_P1_images/fig_2015P1_q27.png)\n\nThe government provides cash subsidies for new-born children from their birth to age 10. Which of the following diagrams best illustrates the effect of the subsidies on the economy after twenty years?\n\n\n- A. $SRAS$ shifts rightward ($SRAS_1 \\to SRAS_2$); AD unchanged\n- B. $AD$ shifts rightward ($AD_1 \\to AD_2$); SRAS unchanged\n- C. both $SRAS$ and $AD$ shift leftward\n- D. $LRAS$ shifts rightward ($LRAS_1 \\to LRAS_2$) and $AD$ shifts rightward ($AD_1 \\to AD_2$)",
+   "html": "<p><img alt=\"fig_2015P1_q27\" src=\"2015_P1_images/fig_2015P1_q27.png\" /></p>\n<p>The government provides cash subsidies for new-born children from their birth to age 10. Which of the following diagrams best illustrates the effect of the subsidies on the economy after twenty years?</p>\n<ul>\n<li>A. $SRAS$ shifts rightward ($SRAS_1 \\to SRAS_2$); AD unchanged</li>\n<li>B. $AD$ shifts rightward ($AD_1 \\to AD_2$); SRAS unchanged</li>\n<li>C. both $SRAS$ and $AD$ shift leftward</li>\n<li>D. $LRAS$ shifts rightward ($LRAS_1 \\to LRAS_2$) and $AD$ shifts rightward ($AD_1 \\to AD_2$)</li>\n</ul>",
+   "file": "2015_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2015,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 28,
+   "title": "第 28 題",
+   "section": "Paper 1",
+   "tags": [
+    "貨幣資產需求"
+   ],
+   "text": "![fig_2015P1_q28](2015_P1_images/fig_2015P1_q28.png)\n\nRefer to the following diagram.\n\n\nThe curve of asset demand for money will shift from $M_{a1}$ to $M_{a2}$ when\n\n- A. the risk of investing in the stock market increases.\n- B. the interest rate decreases.\n- C. the general price level rises.\n- D. the government reduces the income tax rate.",
+   "html": "<p><img alt=\"fig_2015P1_q28\" src=\"2015_P1_images/fig_2015P1_q28.png\" /></p>\n<p>Refer to the following diagram.</p>\n<p>The curve of asset demand for money will shift from $M_{a1}$ to $M_{a2}$ when</p>\n<ul>\n<li>A. the risk of investing in the stock market increases.</li>\n<li>B. the interest rate decreases.</li>\n<li>C. the general price level rises.</li>\n<li>D. the government reduces the income tax rate.</li>\n</ul>",
+   "file": "2015_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2015,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 29,
+   "title": "第 29 題",
+   "section": "Paper 1",
+   "tags": [
+    "銀行體系",
+    "超額儲備",
+    "貨幣供應"
+   ],
+   "text": "Study the following balance sheet of a banking system. The required reserve ratio is 20%.\n\n| Assets (\\$million) | | Liabilities (\\$million) | |\n|---|---|---|---|\n| Reserves | 300 | Deposits | 1 000 |\n| Loans | 700 | | |\n\nIf the central bank issues newly printed banknotes worth \\$200 million, the cash held by the non-bank public will increase by \\$100 million and the money supply will increase by \\$500 million. The total amount of excess reserves in the banking system will then be __________.\n\n- A. \\$100 million\n- B. \\$120 million\n- C. \\$280 million\n- D. \\$400 million",
+   "html": "<p>Study the following balance sheet of a banking system. The required reserve ratio is 20%.</p>\n<table>\n<thead>\n<tr>\n<th>Assets (\\$million)</th>\n<th></th>\n<th>Liabilities (\\$million)</th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Reserves</td>\n<td>300</td>\n<td>Deposits</td>\n<td>1 000</td>\n</tr>\n<tr>\n<td>Loans</td>\n<td>700</td>\n<td></td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<p>If the central bank issues newly printed banknotes worth \\$200 million, the cash held by the non-bank public will increase by \\$100 million and the money supply will increase by \\$500 million. The total amount of excess reserves in the banking system will then be <strong><em>_</em></strong>___.</p>\n<ul>\n<li>A. \\$100 million</li>\n<li>B. \\$120 million</li>\n<li>C. \\$280 million</li>\n<li>D. \\$400 million</li>\n</ul>",
+   "file": "2015_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2015,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 30,
+   "title": "第 30 題",
+   "section": "Paper 1",
+   "tags": [
+    "貨幣供應"
+   ],
+   "text": "Which of the following transactions would increase the money supply (M2) of Hong Kong?\n\n- A. Ms Chan transfers \\$500 000 from her time deposit account in a restricted licence bank to her time deposit account in a licensed bank.\n- B. Mr Lee transfers \\$200 000 from his current account to his savings account in a licensed bank.\n- C. Mr Man deposits \\$100 000 cash into his savings account in a licensed bank.\n- D. Ms Chung deposits \\$600 000 cash into her time deposit account in a deposit-taking company.",
+   "html": "<p>Which of the following transactions would increase the money supply (M2) of Hong Kong?</p>\n<ul>\n<li>A. Ms Chan transfers \\$500 000 from her time deposit account in a restricted licence bank to her time deposit account in a licensed bank.</li>\n<li>B. Mr Lee transfers \\$200 000 from his current account to his savings account in a licensed bank.</li>\n<li>C. Mr Man deposits \\$100 000 cash into his savings account in a licensed bank.</li>\n<li>D. Ms Chung deposits \\$600 000 cash into her time deposit account in a deposit-taking company.</li>\n</ul>",
+   "file": "2015_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2015,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 31,
+   "title": "第 31 題",
+   "section": "Paper 1",
+   "tags": [
+    "名義利率",
+    "實質利率",
+    "持有貨幣成本"
+   ],
+   "text": "If the nominal interest rate is 5% and the expected inflation rate is 3%, the cost of holding money is __________, the nominal return of holding money is __________ and the expected real interest rate is __________.\n\n- A. 5% ...... −3% ...... 2%\n- B. 5% ...... 0% ...... 2%\n- C. 8% ...... −3% ...... 3%\n- D. 8% ...... 0% ...... 3%",
+   "html": "<p>If the nominal interest rate is 5% and the expected inflation rate is 3%, the cost of holding money is <strong><em>_</em></strong><strong><em>, the nominal return of holding money is </em></strong><strong><em>_</em></strong> and the expected real interest rate is <strong><em>_</em></strong>___.</p>\n<ul>\n<li>A. 5% ...... −3% ...... 2%</li>\n<li>B. 5% ...... 0% ...... 2%</li>\n<li>C. 8% ...... −3% ...... 3%</li>\n<li>D. 8% ...... 0% ...... 3%</li>\n</ul>",
+   "file": "2015_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2015,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 32,
+   "title": "第 32 題",
+   "section": "Paper 1",
+   "tags": [
+    "貨幣基礎"
+   ],
+   "text": "The monetary base increases when\n\n- A. the commercial banks hold less excess reserves.\n- B. the commercial banks buy government bonds from the public.\n- C. the central bank buys government bonds from the public.\n- D. the central bank increases the discount rate.",
+   "html": "<p>The monetary base increases when</p>\n<ul>\n<li>A. the commercial banks hold less excess reserves.</li>\n<li>B. the commercial banks buy government bonds from the public.</li>\n<li>C. the central bank buys government bonds from the public.</li>\n<li>D. the central bank increases the discount rate.</li>\n</ul>",
+   "file": "2015_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2015,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 33,
+   "title": "第 33 題",
+   "section": "Paper 1",
+   "tags": [
+    "貨幣數量理論"
+   ],
+   "text": "The quantity theory of money implies that\n\n- A. an increase in money supply will lead to a rise in price level when real output is falling.\n- B. the economy is always at the full employment output level.\n- C. an increase in money supply will lead to a decrease in the velocity of circulation of money when real output is kept constant.\n- D. an increase in money supply will lead to a same-proportional increase in real output.",
+   "html": "<p>The quantity theory of money implies that</p>\n<ul>\n<li>A. an increase in money supply will lead to a rise in price level when real output is falling.</li>\n<li>B. the economy is always at the full employment output level.</li>\n<li>C. an increase in money supply will lead to a decrease in the velocity of circulation of money when real output is kept constant.</li>\n<li>D. an increase in money supply will lead to a same-proportional increase in real output.</li>\n</ul>",
+   "file": "2015_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2015,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 34,
+   "title": "第 34 題",
+   "section": "Paper 1",
+   "tags": [
+    "間接稅",
+    "香港稅制"
+   ],
+   "text": "Which of the following are indirect taxes in Hong Kong?\n\n(1) property tax\n\n(2) rates on property\n\n(3) stamp duty on transfer of stock\n\n(4) general sales tax\n\n- A. (1) and (2) only\n- B. (2) and (3) only\n- C. (1), (3) and (4) only\n- D. (2), (3) and (4) only",
+   "html": "<p>Which of the following are indirect taxes in Hong Kong?</p>\n<p>(1) property tax</p>\n<p>(2) rates on property</p>\n<p>(3) stamp duty on transfer of stock</p>\n<p>(4) general sales tax</p>\n<ul>\n<li>A. (1) and (2) only</li>\n<li>B. (2) and (3) only</li>\n<li>C. (1), (3) and (4) only</li>\n<li>D. (2), (3) and (4) only</li>\n</ul>",
+   "file": "2015_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2015,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 35,
+   "title": "第 35 題",
+   "section": "Paper 1",
+   "tags": [
+    "貨幣功能",
+    "價值儲藏"
+   ],
+   "text": "Refer to the following news extract.\n\n> Yu'e Bao（餘額寶）is a new online investment fund introduced by Alibaba. Much of the popularity of Yu'e Bao has come from its ability to give customers the convenience of a demand deposit—meaning they can withdraw their funds whenever they like—but with returns well above what a bank could offer. It recently advertised an annualised return of 5.25%, but that level has on occasion risen to above 7% since the fund was set up. By contrast, banks offer 3.3% as interest for a one-year fixed deposit and close to nothing on savings deposits.\n\nYu'e Bao is a better __________ as compared with bank deposits because __________.\n\n- A. unit of account ...... it provides a homogeneous means of payment\n- B. unit of account ...... it can facilitate people's buying and selling of goods and services\n- C. store of value ...... it allows customers to have higher purchasing power in the future\n- D. store of value ...... the customers can keep their unused funds in Yu'e Bao",
+   "html": "<p>Refer to the following news extract.</p>\n<blockquote>\n<p>Yu'e Bao（餘額寶）is a new online investment fund introduced by Alibaba. Much of the popularity of Yu'e Bao has come from its ability to give customers the convenience of a demand deposit—meaning they can withdraw their funds whenever they like—but with returns well above what a bank could offer. It recently advertised an annualised return of 5.25%, but that level has on occasion risen to above 7% since the fund was set up. By contrast, banks offer 3.3% as interest for a one-year fixed deposit and close to nothing on savings deposits.</p>\n</blockquote>\n<p>Yu'e Bao is a better <strong><em>_</em></strong><strong><em> as compared with bank deposits because </em></strong><strong><em>_</em></strong>.</p>\n<ul>\n<li>A. unit of account ...... it provides a homogeneous means of payment</li>\n<li>B. unit of account ...... it can facilitate people's buying and selling of goods and services</li>\n<li>C. store of value ...... it allows customers to have higher purchasing power in the future</li>\n<li>D. store of value ...... the customers can keep their unused funds in Yu'e Bao</li>\n</ul>",
+   "file": "2015_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2015,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 36,
+   "title": "第 36 題",
+   "section": "Paper 1",
+   "tags": [
+    "未預期通縮",
+    "財富再分配"
+   ],
+   "text": "When unanticipated deflation occurs, which of the following people will lose?\n\n- A. people paying a fixed amount of rental payment\n- B. people receiving interest from their savings deposits\n- C. people repaying a mortgage loan at a floating interest rate\n- D. people working under a fixed nominal wage contract",
+   "html": "<p>When unanticipated deflation occurs, which of the following people will lose?</p>\n<ul>\n<li>A. people paying a fixed amount of rental payment</li>\n<li>B. people receiving interest from their savings deposits</li>\n<li>C. people repaying a mortgage loan at a floating interest rate</li>\n<li>D. people working under a fixed nominal wage contract</li>\n</ul>",
+   "file": "2015_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2015,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 37,
+   "title": "第 37 題",
+   "section": "Paper 1",
+   "tags": [
+    "長期總供給",
+    "潛在產出"
+   ],
+   "text": "![fig_2015P1_q37](2015_P1_images/fig_2015P1_q37.png)\n\nRefer to the following aggregate supply diagram.\n\n\nWhen the economy moves from point A to point B, which of the following will NOT change?\n\n(1) real output\n\n(2) nominal output\n\n(3) potential output\n\n- A. (1) only\n- B. (2) only\n- C. (1) and (3) only\n- D. (1), (2) and (3)",
+   "html": "<p><img alt=\"fig_2015P1_q37\" src=\"2015_P1_images/fig_2015P1_q37.png\" /></p>\n<p>Refer to the following aggregate supply diagram.</p>\n<p>When the economy moves from point A to point B, which of the following will NOT change?</p>\n<p>(1) real output</p>\n<p>(2) nominal output</p>\n<p>(3) potential output</p>\n<ul>\n<li>A. (1) only</li>\n<li>B. (2) only</li>\n<li>C. (1) and (3) only</li>\n<li>D. (1), (2) and (3)</li>\n</ul>",
+   "file": "2015_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2015,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 38,
+   "title": "第 38 題",
+   "section": "Paper 1",
+   "tags": [
+    "通縮缺口",
+    "產出缺口",
+    "財政政策"
+   ],
+   "text": "Initially an economy operates at the long-run equilibrium. Which of the following will lead to a deflationary (output) gap in the economy?\n\n- A. The government increases the salaries tax rate.\n- B. The government reduces the profits tax rate.\n- C. The government invests in the construction of a cross-border express rail link.\n- D. The central bank reduces the required reserve ratio.",
+   "html": "<p>Initially an economy operates at the long-run equilibrium. Which of the following will lead to a deflationary (output) gap in the economy?</p>\n<ul>\n<li>A. The government increases the salaries tax rate.</li>\n<li>B. The government reduces the profits tax rate.</li>\n<li>C. The government invests in the construction of a cross-border express rail link.</li>\n<li>D. The central bank reduces the required reserve ratio.</li>\n</ul>",
+   "file": "2015_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2015,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 39,
+   "title": "第 39 題",
+   "section": "Paper 1",
+   "tags": [
+    "通脹",
+    "收入不均",
+    "累進稅"
+   ],
+   "text": "In an economy with severe inflation and income inequality, the government can lower the price level and reduce the income gap by\n\n- A. increasing the environmental tax on handling household sewage.\n- B. increasing the salaries tax and its progressivity.\n- C. reducing its spending on social welfare.\n- D. reducing the personal allowance of the salaries tax.",
+   "html": "<p>In an economy with severe inflation and income inequality, the government can lower the price level and reduce the income gap by</p>\n<ul>\n<li>A. increasing the environmental tax on handling household sewage.</li>\n<li>B. increasing the salaries tax and its progressivity.</li>\n<li>C. reducing its spending on social welfare.</li>\n<li>D. reducing the personal allowance of the salaries tax.</li>\n</ul>",
+   "file": "2015_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2015,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 40,
+   "title": "第 40 題",
+   "section": "Paper 1",
+   "tags": [
+    "比較優勢",
+    "貿易條件"
+   ],
+   "text": "Assume the labour input requirements for the production of computers and toys in Japan and Hong Kong are as follows:\n\n| | 1 unit of computers | 1 unit of toys |\n|---|---|---|\n| Japan | 2 man-hours | 6 man-hours |\n| Hong Kong | 4 man-hours | 8 man-hours |\n\nSuppose there is no transportation cost. Which of the following can be the terms of trade so that trade is mutually beneficial to Japan and Hong Kong?\n\n- A. 1 unit of computers exchanges for 0.4 units of toys\n- B. 1 unit of computers exchanges for 0.5 units of toys\n- C. 1 unit of computers exchanges for 1 unit of toys\n- D. 1 unit of computers exchanges for 2.5 units of toys",
+   "html": "<p>Assume the labour input requirements for the production of computers and toys in Japan and Hong Kong are as follows:</p>\n<table>\n<thead>\n<tr>\n<th></th>\n<th>1 unit of computers</th>\n<th>1 unit of toys</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Japan</td>\n<td>2 man-hours</td>\n<td>6 man-hours</td>\n</tr>\n<tr>\n<td>Hong Kong</td>\n<td>4 man-hours</td>\n<td>8 man-hours</td>\n</tr>\n</tbody>\n</table>\n<p>Suppose there is no transportation cost. Which of the following can be the terms of trade so that trade is mutually beneficial to Japan and Hong Kong?</p>\n<ul>\n<li>A. 1 unit of computers exchanges for 0.4 units of toys</li>\n<li>B. 1 unit of computers exchanges for 0.5 units of toys</li>\n<li>C. 1 unit of computers exchanges for 1 unit of toys</li>\n<li>D. 1 unit of computers exchanges for 2.5 units of toys</li>\n</ul>",
+   "file": "2015_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2015,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 41,
+   "title": "第 41 題",
+   "section": "Paper 1",
+   "tags": [
+    "絕對優勢",
+    "比較優勢"
+   ],
+   "text": "A country has an absolute advantage in producing good X. Which of the following statements about the country is correct?\n\n- A. The country can produce a greater amount of good X than another good with the same amount of resources.\n- B. The country has a comparative advantage in producing good X.\n- C. The country has an absolute disadvantage in producing another good.\n- D. The country may import good X from the international market.",
+   "html": "<p>A country has an absolute advantage in producing good X. Which of the following statements about the country is correct?</p>\n<ul>\n<li>A. The country can produce a greater amount of good X than another good with the same amount of resources.</li>\n<li>B. The country has a comparative advantage in producing good X.</li>\n<li>C. The country has an absolute disadvantage in producing another good.</li>\n<li>D. The country may import good X from the international market.</li>\n</ul>",
+   "file": "2015_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2015,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 42,
+   "title": "第 42 題",
+   "section": "Paper 1",
+   "tags": [
+    "聯繫匯率",
+    "香港貨幣制度"
+   ],
+   "text": "Under the linked exchange rate system of Hong Kong, which of the following statements is correct?\n\n- A. The money supply (M1) of Hong Kong has to be fully backed up by the US dollar.\n- B. The market exchange rate of the HK dollar to the US dollar is fixed at 1 USD to 7.8 HKD by the Hong Kong Monetary Authority.\n- C. Hong Kong's import volume will increase when the US dollar appreciates against other currencies.\n- D. A current account deficit in the US will lead to a current account deficit in Hong Kong.",
+   "html": "<p>Under the linked exchange rate system of Hong Kong, which of the following statements is correct?</p>\n<ul>\n<li>A. The money supply (M1) of Hong Kong has to be fully backed up by the US dollar.</li>\n<li>B. The market exchange rate of the HK dollar to the US dollar is fixed at 1 USD to 7.8 HKD by the Hong Kong Monetary Authority.</li>\n<li>C. Hong Kong's import volume will increase when the US dollar appreciates against other currencies.</li>\n<li>D. A current account deficit in the US will lead to a current account deficit in Hong Kong.</li>\n</ul>",
+   "file": "2015_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2015,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 43,
+   "title": "第 43 題",
+   "section": "Paper 1",
+   "tags": [
+    "經常帳",
+    "國際收支"
+   ],
+   "text": "A lecturer from the US has been working in Hong Kong for 10 years. Which of the following would be included in the calculation of Hong Kong's current account balance?\n\n(1) the money he gives to his wife in Hong Kong\n\n(2) the money he uses to buy shares listed in the US stock market\n\n(3) the money he donates to a charity organization in Africa\n\n(4) the money he spends on visiting his parents in the US\n\n- A. (1) and (2) only\n- B. (1) and (4) only\n- C. (2) and (3) only\n- D. (3) and (4) only",
+   "html": "<p>A lecturer from the US has been working in Hong Kong for 10 years. Which of the following would be included in the calculation of Hong Kong's current account balance?</p>\n<p>(1) the money he gives to his wife in Hong Kong</p>\n<p>(2) the money he uses to buy shares listed in the US stock market</p>\n<p>(3) the money he donates to a charity organization in Africa</p>\n<p>(4) the money he spends on visiting his parents in the US</p>\n<ul>\n<li>A. (1) and (2) only</li>\n<li>B. (1) and (4) only</li>\n<li>C. (2) and (3) only</li>\n<li>D. (3) and (4) only</li>\n</ul>",
+   "file": "2015_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2015,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 44,
+   "title": "第 44 題",
+   "section": "Paper 1",
+   "tags": [
+    "國際收支平衡",
+    "經常帳",
+    "GDP與GNP"
+   ],
+   "text": "The following table shows some information about the balance of payments of Country A.\n\n| Items | \\$ million |\n|---|---|\n| Balance on goods | −1 200 |\n| Balance on services | 700 |\n| Net factor income from abroad | 200 |\n| Net current transfer | −100 |\n| Increase in reserve assets | 180 |\n\nAccording to the above data, which of the following statements are correct?\n\n(1) The current account deficit is \\$400 million.\n\n(2) Country A's GDP is smaller than its gross national product.\n\n(3) The balance of payments surplus is \\$180 million.\n\n- A. (1) and (2) only\n- B. (1) and (3) only\n- C. (2) and (3) only\n- D. (1), (2) and (3)",
+   "html": "<p>The following table shows some information about the balance of payments of Country A.</p>\n<table>\n<thead>\n<tr>\n<th>Items</th>\n<th>\\$ million</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Balance on goods</td>\n<td>−1 200</td>\n</tr>\n<tr>\n<td>Balance on services</td>\n<td>700</td>\n</tr>\n<tr>\n<td>Net factor income from abroad</td>\n<td>200</td>\n</tr>\n<tr>\n<td>Net current transfer</td>\n<td>−100</td>\n</tr>\n<tr>\n<td>Increase in reserve assets</td>\n<td>180</td>\n</tr>\n</tbody>\n</table>\n<p>According to the above data, which of the following statements are correct?</p>\n<p>(1) The current account deficit is \\$400 million.</p>\n<p>(2) Country A's GDP is smaller than its gross national product.</p>\n<p>(3) The balance of payments surplus is \\$180 million.</p>\n<ul>\n<li>A. (1) and (2) only</li>\n<li>B. (1) and (3) only</li>\n<li>C. (2) and (3) only</li>\n<li>D. (1), (2) and (3)</li>\n</ul>",
+   "file": "2015_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2015,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 45,
+   "title": "第 45 題",
+   "section": "Paper 1",
+   "tags": [
+    "進口配額",
+    "關稅",
+    "小國開放經濟"
+   ],
+   "text": "The supply curve of a certain good is upward-sloping in a small open economy. What is the main difference between imposing an effective import quota and a tariff on the good?\n\n- A. Imposing an effective import quota will lower the volume of import while imposing a tariff will not.\n- B. Imposing an effective import quota will result in a rise in consumer surplus of the good while imposing a tariff may not.\n- C. Imposing a tariff will raise the world price of the good while imposing an effective import quota will not.\n- D. Imposing a tariff will result in an increase in the government revenue while imposing an effective import quota may not.\n\n---\n\n## 圖進度（真實狀態）\n\n- 2026-11-05：6 張圖（Q15/Q19/Q22/Q27/Q28/Q37）已 100% 語義量度重繪並過 §9.4 驗收；引用已在正文還原。\n- Q45 原卷無圖（純文字 MC），不放圖引用；舊 RLE 檔已刪。\n- 明細見 2015_P1_fig_audit.md。",
+   "html": "<p>The supply curve of a certain good is upward-sloping in a small open economy. What is the main difference between imposing an effective import quota and a tariff on the good?</p>\n<ul>\n<li>A. Imposing an effective import quota will lower the volume of import while imposing a tariff will not.</li>\n<li>B. Imposing an effective import quota will result in a rise in consumer surplus of the good while imposing a tariff may not.</li>\n<li>C. Imposing a tariff will raise the world price of the good while imposing an effective import quota will not.</li>\n<li>D. Imposing a tariff will result in an increase in the government revenue while imposing an effective import quota may not.</li>\n</ul>\n<hr />\n<h2>圖進度（真實狀態）</h2>\n<ul>\n<li>2026-11-05：6 張圖（Q15/Q19/Q22/Q27/Q28/Q37）已 100% 語義量度重繪並過 §9.4 驗收；引用已在正文還原。</li>\n<li>Q45 原卷無圖（純文字 MC），不放圖引用；舊 RLE 檔已刪。</li>\n<li>明細見 2015_P1_fig_audit.md。</li>\n</ul>",
+   "file": "2015_P1_QU(ENG).md"
   }
  ]
 };

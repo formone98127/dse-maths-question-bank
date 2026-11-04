@@ -38,15 +38,18 @@ ROOT = Path(__file__).parent
 DOCS = ROOT / "docs"
 DOCS.mkdir(exist_ok=True)
 
-# (檔名, 年份, 卷別, 類型)
+# (檔名, 年份, 卷別, 類型, 科目)
 SOURCES = [
-    ("2012_P1_題目中文卷.md", 2012, "Paper 1", "題目"),
-    ("2013_P1_QU(CHI).md",   2013, "Paper 1", "題目"),
-    ("2014_P1_QU(CHI).md",   2014, "Paper 1", "題目"),
-    ("2015_P2_QU(CHI).md",   2015, "Paper 2", "題目"),
-    ("2012_II_解答.md",      2012, "Paper 2", "解答"),
-    ("2013_II_解答.md",      2013, "Paper 2", "解答"),
+    ("2012_P1_題目中文卷.md", 2012, "Paper 1", "題目", "數學"),
+    ("2013_P1_QU(CHI).md",   2013, "Paper 1", "題目", "數學"),
+    ("2014_P1_QU(CHI).md",   2014, "Paper 1", "題目", "數學"),
+    ("2015_P2_QU(CHI).md",   2015, "Paper 2", "題目", "數學"),
+    ("2012_II_解答.md",      2012, "Paper 2", "解答", "數學"),
+    ("2013_II_解答.md",      2013, "Paper 2", "解答", "數學"),
+    ("題庫/經濟/2015_P1_QU(ENG).md", 2015, "Paper 1", "題目", "經濟"),
 ]
+
+SUBJ_ORDER = ["數學", "經濟"]
 
 
 def fix_img_paths(text: str) -> str:
@@ -54,7 +57,7 @@ def fix_img_paths(text: str) -> str:
     return text
 
 
-def parse_question_file(path: Path, year: int, paper: str) -> list:
+def parse_question_file(path: Path, year: int, paper: str, subject: str = "數學") -> list:
     """題目庫格式：## 第 N 題 →【建議標籤】→ - 卷別/部分 / - 課題 →【題目內容】"""
     raw = strip_tail_matter(path.read_text(encoding="utf-8"))
     blocks = re.split(r"\n## 第 (\d+) 題\n", raw)
@@ -70,9 +73,14 @@ def parse_question_file(path: Path, year: int, paper: str) -> list:
         title = f"{part_m.group(1)} 第 {qno} 題" if part_m else f"第 {qno} 題"
         content = body.split("【題目內容】", 1)
         text = content[1].strip() if len(content) > 1 else ""
-        text = re.sub(r"\n---\s*$", "", text).strip()
-        text = re.sub(r"\n?## (甲部|乙部)[^\n]*$", "", text).strip()  # 移除混入嘅部分標題
+        for _ in range(4):  # 卷尾：--- 分隔線同甲/乙部標題可能相間出現，循環剝清
+            new = re.sub(r"\n---\s*$", "", text).rstrip()
+            new = re.sub(r"\n?## (甲部|乙部)[^\n]*$", "", new).rstrip()
+            if new == text:
+                break
+            text = new
         out.append({
+            "subject": subject,
             "year": year, "paper": paper, "type": "題目", "qno": qno,
             "title": title,
             "section": sec.group(1).strip() if sec else "",
@@ -84,7 +92,7 @@ def parse_question_file(path: Path, year: int, paper: str) -> list:
     return out
 
 
-def parse_solution_file(path: Path, year: int, paper: str) -> list:
+def parse_solution_file(path: Path, year: int, paper: str, subject: str = "數學") -> list:
     """解答庫格式：## QN　課題名 → 內容至下一個 ## 或檔尾"""
     raw = strip_tail_matter(path.read_text(encoding="utf-8"))
     blocks = re.split(r"\n## Q(\d+)　(.+)\n", raw)
@@ -93,6 +101,7 @@ def parse_solution_file(path: Path, year: int, paper: str) -> list:
         qno, title, body = int(blocks[i]), blocks[i + 1].strip(), blocks[i + 2]
         text = re.sub(r"\n---\s*$", "", body).strip()
         out.append({
+            "subject": subject,
             "year": year, "paper": paper, "type": "解答", "qno": qno,
             "title": f"Q{qno}　{title}",
             "section": f"Paper 2　{'Section A' if qno <= 30 else 'Section B'}",
@@ -106,17 +115,18 @@ def parse_solution_file(path: Path, year: int, paper: str) -> list:
 
 def main():
     qs = []
-    for fname, year, paper, typ in SOURCES:
+    for fname, year, paper, typ, subject in SOURCES:
         p = ROOT / fname
         if not p.exists():
             print("skip (missing):", fname)
             continue
-        got = (parse_question_file(p, year, paper) if typ == "題目"
-               else parse_solution_file(p, year, paper))
+        got = (parse_question_file(p, year, paper, subject) if typ == "題目"
+               else parse_solution_file(p, year, paper, subject))
         qs.extend(got)
         print(f"{fname}: {len(got)} 題")
 
-    qs.sort(key=lambda q: (q["year"], q["paper"], q["type"] != "題目", q["qno"]))
+    qs.sort(key=lambda q: (SUBJ_ORDER.index(q["subject"]) if q["subject"] in SUBJ_ORDER else 99,
+                           q["year"], q["paper"], q["type"] != "題目", q["qno"]))
     payload = {"generated": time.strftime("%Y-%m-%d %H:%M"), "count": len(qs), "questions": qs}
     js = "window.QB = " + json.dumps(payload, ensure_ascii=False, indent=1) + ";\n"
     (DOCS / "data.js").write_text(js, encoding="utf-8")
@@ -126,6 +136,14 @@ def main():
     for figs in sorted(ROOT.glob("*_figs_svg")):
         shutil.copytree(figs, DOCS / figs.name, dirs_exist_ok=True)
         print(f"copied {figs.name} -> docs/{figs.name}")
+
+    # 經濟圖檔：只複製已列入 SOURCES 嘅年份（未收貨年份唔上公開 repo）
+    econ_years = sorted({y for _, y, _, t, s in SOURCES if s == "經濟" and t == "題目"})
+    for y in econ_years:
+        src = ROOT / "題庫" / "經濟" / f"{y}_P1_images"
+        if src.is_dir():
+            shutil.copytree(src, DOCS / src.name, dirs_exist_ok=True)
+            print(f"copied {src.name} -> docs/{src.name}")
 
 
 if __name__ == "__main__":

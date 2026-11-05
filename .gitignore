@@ -25,3 +25,9 @@ docs/_verify*.png
 __pycache__/
 docs/_*.png
 _z_*.png
+
+# 原卷庫／OCR 工作檔（唔上公開 repo）
+dsepaper_hk/
+_work_econ_ocr/
+題庫/經濟/_src/
+題庫/經濟/_rejected_unmeasured_figs_2020/

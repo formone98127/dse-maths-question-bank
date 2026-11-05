@@ -1,6 +1,6 @@
 window.QB = {
- "generated": "2026-11-05 01:07",
- "count": 237,
+ "generated": "2026-11-05 14:31",
+ "count": 327,
  "questions": [
   {
    "subject": "數學",
@@ -3312,8 +3312,8 @@ window.QB = {
     "供求均衡",
     "沿曲線移動"
    ],
-   "text": "![fig_2015P1_q15](2015_P1_images/fig_2015P1_q15.png)\n\nSS is the supply curve for smartphones. Which of the following reasons can best explain the change of the equilibrium position in the smartphone market from A to B?\n\n\n- A. The retailers offer more free gifts for buying smartphones.\n- B. The size of a tablet computer with a phone function is reduced.\n- C. There are more smartphone producers in the market.\n- D. The major network service providers increase the service charge at the same time.",
-   "html": "<p><img alt=\"fig_2015P1_q15\" src=\"2015_P1_images/fig_2015P1_q15.png\" /></p>\n<p>SS is the supply curve for smartphones. Which of the following reasons can best explain the change of the equilibrium position in the smartphone market from A to B?</p>\n<ul>\n<li>A. The retailers offer more free gifts for buying smartphones.</li>\n<li>B. The size of a tablet computer with a phone function is reduced.</li>\n<li>C. There are more smartphone producers in the market.</li>\n<li>D. The major network service providers increase the service charge at the same time.</li>\n</ul>",
+   "text": "SS is the supply curve for smartphones. Which of the following reasons can best explain the change of the equilibrium position in the smartphone market from A to B?\n\n\n- A. The retailers offer more free gifts for buying smartphones.\n- B. The size of a tablet computer with a phone function is reduced.\n- C. There are more smartphone producers in the market.\n- D. The major network service providers increase the service charge at the same time.",
+   "html": "<p>SS is the supply curve for smartphones. Which of the following reasons can best explain the change of the equilibrium position in the smartphone market from A to B?</p>\n<ul>\n<li>A. The retailers offer more free gifts for buying smartphones.</li>\n<li>B. The size of a tablet computer with a phone function is reduced.</li>\n<li>C. There are more smartphone producers in the market.</li>\n<li>D. The major network service providers increase the service charge at the same time.</li>\n</ul>",
    "file": "2015_P1_QU(ENG).md"
   },
   {
@@ -3378,8 +3378,8 @@ window.QB = {
     "剩餘",
     "無謂損失"
    ],
-   "text": "![fig_2015P1_q19](2015_P1_images/fig_2015P1_q19.png)\n\nRefer to the following diagram.\n\n\nIf the government lowers the price ceiling from $P_a$ to $P_b$,\n\n- A. the quantity transacted will increase.\n- B. the deadweight loss will decrease.\n- C. the producer surplus will decrease.\n- D. the consumer surplus will increase.",
-   "html": "<p><img alt=\"fig_2015P1_q19\" src=\"2015_P1_images/fig_2015P1_q19.png\" /></p>\n<p>Refer to the following diagram.</p>\n<p>If the government lowers the price ceiling from $P_a$ to $P_b$,</p>\n<ul>\n<li>A. the quantity transacted will increase.</li>\n<li>B. the deadweight loss will decrease.</li>\n<li>C. the producer surplus will decrease.</li>\n<li>D. the consumer surplus will increase.</li>\n</ul>",
+   "text": "Refer to the following diagram.\n\n\nIf the government lowers the price ceiling from $P_a$ to $P_b$,\n\n- A. the quantity transacted will increase.\n- B. the deadweight loss will decrease.\n- C. the producer surplus will decrease.\n- D. the consumer surplus will increase.",
+   "html": "<p>Refer to the following diagram.</p>\n<p>If the government lowers the price ceiling from $P_a$ to $P_b$,</p>\n<ul>\n<li>A. the quantity transacted will increase.</li>\n<li>B. the deadweight loss will decrease.</li>\n<li>C. the producer surplus will decrease.</li>\n<li>D. the consumer surplus will increase.</li>\n</ul>",
    "file": "2015_P1_QU(ENG).md"
   },
   {
@@ -3509,8 +3509,8 @@ window.QB = {
     "長期總供給",
     "人力資本"
    ],
-   "text": "![fig_2015P1_q27](2015_P1_images/fig_2015P1_q27.png)\n\nThe government provides cash subsidies for new-born children from their birth to age 10. Which of the following diagrams best illustrates the effect of the subsidies on the economy after twenty years?\n\n\n- A. $SRAS$ shifts rightward ($SRAS_1 \\to SRAS_2$); AD unchanged\n- B. $AD$ shifts rightward ($AD_1 \\to AD_2$); SRAS unchanged\n- C. both $SRAS$ and $AD$ shift leftward\n- D. $LRAS$ shifts rightward ($LRAS_1 \\to LRAS_2$) and $AD$ shifts rightward ($AD_1 \\to AD_2$)",
-   "html": "<p><img alt=\"fig_2015P1_q27\" src=\"2015_P1_images/fig_2015P1_q27.png\" /></p>\n<p>The government provides cash subsidies for new-born children from their birth to age 10. Which of the following diagrams best illustrates the effect of the subsidies on the economy after twenty years?</p>\n<ul>\n<li>A. $SRAS$ shifts rightward ($SRAS_1 \\to SRAS_2$); AD unchanged</li>\n<li>B. $AD$ shifts rightward ($AD_1 \\to AD_2$); SRAS unchanged</li>\n<li>C. both $SRAS$ and $AD$ shift leftward</li>\n<li>D. $LRAS$ shifts rightward ($LRAS_1 \\to LRAS_2$) and $AD$ shifts rightward ($AD_1 \\to AD_2$)</li>\n</ul>",
+   "text": "The government provides cash subsidies for new-born children from their birth to age 10. Which of the following diagrams best illustrates the effect of the subsidies on the economy after twenty years?\n\n![fig_2015P1_q27](2015_P1_images/fig_2015P1_q27.png)\n\n- A.\n- B.\n- C.\n- D.",
+   "html": "<p>The government provides cash subsidies for new-born children from their birth to age 10. Which of the following diagrams best illustrates the effect of the subsidies on the economy after twenty years?</p>\n<p><img alt=\"fig_2015P1_q27\" src=\"2015_P1_images/fig_2015P1_q27.png\" /></p>\n<ul>\n<li>A.</li>\n<li>B.</li>\n<li>C.</li>\n<li>D.</li>\n</ul>",
    "file": "2015_P1_QU(ENG).md"
   },
   {
@@ -3799,9 +3799,1432 @@ window.QB = {
     "關稅",
     "小國開放經濟"
    ],
-   "text": "The supply curve of a certain good is upward-sloping in a small open economy. What is the main difference between imposing an effective import quota and a tariff on the good?\n\n- A. Imposing an effective import quota will lower the volume of import while imposing a tariff will not.\n- B. Imposing an effective import quota will result in a rise in consumer surplus of the good while imposing a tariff may not.\n- C. Imposing a tariff will raise the world price of the good while imposing an effective import quota will not.\n- D. Imposing a tariff will result in an increase in the government revenue while imposing an effective import quota may not.\n\n---\n\n## 圖進度（真實狀態）\n\n- 2026-11-05：6 張圖（Q15/Q19/Q22/Q27/Q28/Q37）已 100% 語義量度重繪並過 §9.4 驗收；引用已在正文還原。\n- Q45 原卷無圖（純文字 MC），不放圖引用；舊 RLE 檔已刪。\n- 明細見 2015_P1_fig_audit.md。",
-   "html": "<p>The supply curve of a certain good is upward-sloping in a small open economy. What is the main difference between imposing an effective import quota and a tariff on the good?</p>\n<ul>\n<li>A. Imposing an effective import quota will lower the volume of import while imposing a tariff will not.</li>\n<li>B. Imposing an effective import quota will result in a rise in consumer surplus of the good while imposing a tariff may not.</li>\n<li>C. Imposing a tariff will raise the world price of the good while imposing an effective import quota will not.</li>\n<li>D. Imposing a tariff will result in an increase in the government revenue while imposing an effective import quota may not.</li>\n</ul>\n<hr />\n<h2>圖進度（真實狀態）</h2>\n<ul>\n<li>2026-11-05：6 張圖（Q15/Q19/Q22/Q27/Q28/Q37）已 100% 語義量度重繪並過 §9.4 驗收；引用已在正文還原。</li>\n<li>Q45 原卷無圖（純文字 MC），不放圖引用；舊 RLE 檔已刪。</li>\n<li>明細見 2015_P1_fig_audit.md。</li>\n</ul>",
+   "text": "The supply curve of a certain good is upward-sloping in a small open economy. What is the main difference between imposing an effective import quota and a tariff on the good?\n\n- A. Imposing an effective import quota will lower the volume of import while imposing a tariff will not.\n- B. Imposing an effective import quota will result in a rise in consumer surplus of the good while imposing a tariff may not.\n- C. Imposing a tariff will raise the world price of the good while imposing an effective import quota will not.\n- D. Imposing a tariff will result in an increase in the government revenue while imposing an effective import quota may not.\n\n---\n\n## 圖進度（真實狀態）\n\n- 2026-11-05：**4/6** 已重繪並過 §9.4＋抗鋸齒容差（Q22／Q27／Q28／Q37）；正文有 embed。\n- **Q15／Q19 待重繪**（maxdev／p99.9 超 AA；已撤 embed）。Q45 原卷無圖。\n- 明細見 2015_P1_fig_audit.md。",
+   "html": "<p>The supply curve of a certain good is upward-sloping in a small open economy. What is the main difference between imposing an effective import quota and a tariff on the good?</p>\n<ul>\n<li>A. Imposing an effective import quota will lower the volume of import while imposing a tariff will not.</li>\n<li>B. Imposing an effective import quota will result in a rise in consumer surplus of the good while imposing a tariff may not.</li>\n<li>C. Imposing a tariff will raise the world price of the good while imposing an effective import quota will not.</li>\n<li>D. Imposing a tariff will result in an increase in the government revenue while imposing an effective import quota may not.</li>\n</ul>\n<hr />\n<h2>圖進度（真實狀態）</h2>\n<ul>\n<li>2026-11-05：<strong>4/6</strong> 已重繪並過 §9.4＋抗鋸齒容差（Q22／Q27／Q28／Q37）；正文有 embed。</li>\n<li><strong>Q15／Q19 待重繪</strong>（maxdev／p99.9 超 AA；已撤 embed）。Q45 原卷無圖。</li>\n<li>明細見 2015_P1_fig_audit.md。</li>\n</ul>",
    "file": "2015_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2017,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 1,
+   "title": "第 1 題",
+   "section": "Paper 1",
+   "tags": [
+    "基本經濟問題",
+    "市場機制"
+   ],
+   "text": "The operator of a canteen in the government headquarters decides to sell sushi and not burgers anymore because the former can earn a higher profit. This is an example of using ______ to solve the problem of ______.\n\n- A. government command ...... ‘what to produce’\n- B. government command ...... ‘for whom to produce’\n- C. market mechanism ...... ‘what to produce’\n- D. market mechanism ...... ‘for whom to produce’",
+   "html": "<p>The operator of a canteen in the government headquarters decides to sell sushi and not burgers anymore because the former can earn a higher profit. This is an example of using <strong><em>_</em>_ to solve the problem of </strong>____.</p>\n<ul>\n<li>A. government command ...... ‘what to produce’</li>\n<li>B. government command ...... ‘for whom to produce’</li>\n<li>C. market mechanism ...... ‘what to produce’</li>\n<li>D. market mechanism ...... ‘for whom to produce’</li>\n</ul>",
+   "file": "2017_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2017,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 2,
+   "title": "第 2 題",
+   "section": "Paper 1",
+   "tags": [
+    "利息",
+    "稀少性"
+   ],
+   "text": "Which of the following statements about interest is correct?\n\n- A. Without money, interest does not exist.\n- B. Without inflation, interest does not exist.\n- C. Without scarcity, interest does not exist.\n- D. Interest is the compensation paid to the borrower for delayed consumption.",
+   "html": "<p>Which of the following statements about interest is correct?</p>\n<ul>\n<li>A. Without money, interest does not exist.</li>\n<li>B. Without inflation, interest does not exist.</li>\n<li>C. Without scarcity, interest does not exist.</li>\n<li>D. Interest is the compensation paid to the borrower for delayed consumption.</li>\n</ul>",
+   "file": "2017_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2017,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 3,
+   "title": "第 3 題",
+   "section": "Paper 1",
+   "tags": [
+    "公營物品"
+   ],
+   "text": "A public good\n\n- A. is a good with zero marginal cost of production.\n- B. can only be provided by the government.\n- C. cannot be protected by private property rights.\n- D. allows concurrent consumption by many individuals.",
+   "html": "<p>A public good</p>\n<ul>\n<li>A. is a good with zero marginal cost of production.</li>\n<li>B. can only be provided by the government.</li>\n<li>C. cannot be protected by private property rights.</li>\n<li>D. allows concurrent consumption by many individuals.</li>\n</ul>",
+   "file": "2017_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2017,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 4,
+   "title": "第 4 題",
+   "section": "Paper 1",
+   "tags": [
+    "機會成本",
+    "成本"
+   ],
+   "text": "Which of the following would be the loss(es) of delaying the completion of a new railway to an economy?\n(1) the travel time of passengers that would have been saved by the new railway during the period of delay\n(2) the damage to the corporate image of the railway constructor for the delay\n(3) the nuisance to the shops and residents nearby during the period of delay\n\n- A. (1) only\n- B. (2) only\n- C. (3) only\n- D. (1), (2) and (3)",
+   "html": "<p>Which of the following would be the loss(es) of delaying the completion of a new railway to an economy?\n(1) the travel time of passengers that would have been saved by the new railway during the period of delay\n(2) the damage to the corporate image of the railway constructor for the delay\n(3) the nuisance to the shops and residents nearby during the period of delay</p>\n<ul>\n<li>A. (1) only</li>\n<li>B. (2) only</li>\n<li>C. (3) only</li>\n<li>D. (1), (2) and (3)</li>\n</ul>",
+   "file": "2017_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2017,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 5,
+   "title": "第 5 題",
+   "section": "Paper 1",
+   "tags": [
+    "公司種類"
+   ],
+   "text": "Alan and his partners turned their partnership into a private limited company. After the change, the firm will\n\n- A. have more capital for development.\n- B. have a lower average production cost.\n- C. enjoy a lower profits tax rate.\n- D. have a separate legal entity.",
+   "html": "<p>Alan and his partners turned their partnership into a private limited company. After the change, the firm will</p>\n<ul>\n<li>A. have more capital for development.</li>\n<li>B. have a lower average production cost.</li>\n<li>C. enjoy a lower profits tax rate.</li>\n<li>D. have a separate legal entity.</li>\n</ul>",
+   "file": "2017_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2017,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 6,
+   "title": "第 6 題",
+   "section": "Paper 1",
+   "tags": [
+    "債券",
+    "股份"
+   ],
+   "text": "The government launched the Silver Bond for Hong Kong residents aged 65 or above. Bondholders will be paid interest at a rate linked to inflation in Hong Kong, subject to a minimum rate of 2% per year. Bondholders may sell their bonds at original price to the government before maturity.\n\nWhich of the following statements about the Silver Bond is/are correct?\n(1) The risk of holding the Silver Bond is lower than that of the shares of a listed company.\n(2) The return of the Silver Bond would increase during inflation while the return of the shares of a listed company would not.\n(3) The interest received by Silver Bond holders is higher than the dividend received by the shareholders of a listed company.\n\n- A. (1) only\n- B. (2) only\n- C. (3) only\n- D. (1), (2) and (3)",
+   "html": "<p>The government launched the Silver Bond for Hong Kong residents aged 65 or above. Bondholders will be paid interest at a rate linked to inflation in Hong Kong, subject to a minimum rate of 2% per year. Bondholders may sell their bonds at original price to the government before maturity.</p>\n<p>Which of the following statements about the Silver Bond is/are correct?\n(1) The risk of holding the Silver Bond is lower than that of the shares of a listed company.\n(2) The return of the Silver Bond would increase during inflation while the return of the shares of a listed company would not.\n(3) The interest received by Silver Bond holders is higher than the dividend received by the shareholders of a listed company.</p>\n<ul>\n<li>A. (1) only</li>\n<li>B. (2) only</li>\n<li>C. (3) only</li>\n<li>D. (1), (2) and (3)</li>\n</ul>",
+   "file": "2017_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2017,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 7,
+   "title": "第 7 題",
+   "section": "Paper 1",
+   "tags": [
+    "勞動生產力"
+   ],
+   "text": "Certain restaurants in China found that they can introduce robots to replace some workers in serving customers without reducing their output. This will\n\n- A. increase the quantity supplied of restaurant workers.\n- B. increase the labour productivity of those restaurants.\n- C. decrease the geographical mobility of restaurant workers.\n- D. decrease the occupational mobility of restaurant workers.",
+   "html": "<p>Certain restaurants in China found that they can introduce robots to replace some workers in serving customers without reducing their output. This will</p>\n<ul>\n<li>A. increase the quantity supplied of restaurant workers.</li>\n<li>B. increase the labour productivity of those restaurants.</li>\n<li>C. decrease the geographical mobility of restaurant workers.</li>\n<li>D. decrease the occupational mobility of restaurant workers.</li>\n</ul>",
+   "file": "2017_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2017,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 8,
+   "title": "第 8 題",
+   "section": "Paper 1",
+   "tags": [
+    "利潤",
+    "成本",
+    "完全競爭"
+   ],
+   "text": "The following table shows the cost-output relationship of a price-taker.\n\n| Output (units) | Average cost ($) |\n|---|---|\n| 5 | 10 |\n| 6 | 11 |\n| 7 | 12 |\n| 8 | 13 |\n| 9 | 14 |\n\nThe market price is \\$20. Suppose the average cost has increased by \\$2 for every unit of output. The profit of the firm will ______.\n\n- A. increase by \\$16\n- B. increase by \\$14\n- C. decrease by \\$16\n- D. decrease by \\$14",
+   "html": "<p>The following table shows the cost-output relationship of a price-taker.</p>\n<table>\n<thead>\n<tr>\n<th>Output (units)</th>\n<th>Average cost ($)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>5</td>\n<td>10</td>\n</tr>\n<tr>\n<td>6</td>\n<td>11</td>\n</tr>\n<tr>\n<td>7</td>\n<td>12</td>\n</tr>\n<tr>\n<td>8</td>\n<td>13</td>\n</tr>\n<tr>\n<td>9</td>\n<td>14</td>\n</tr>\n</tbody>\n</table>\n<p>The market price is \\$20. Suppose the average cost has increased by \\$2 for every unit of output. The profit of the firm will ______.</p>\n<ul>\n<li>A. increase by \\$16</li>\n<li>B. increase by \\$14</li>\n<li>C. decrease by \\$16</li>\n<li>D. decrease by \\$14</li>\n</ul>",
+   "file": "2017_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2017,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 9,
+   "title": "第 9 題",
+   "section": "Paper 1",
+   "tags": [
+    "業務擴展"
+   ],
+   "text": "Giordano International Limited is a retailer of casual wear. It has launched the Giordano Ladies, which provides luxury clothes and suits for ladies. It is an example of ______ expansion.\n\n- A. horizontal\n- B. vertical\n- C. lateral\n- D. conglomerate",
+   "html": "<p>Giordano International Limited is a retailer of casual wear. It has launched the Giordano Ladies, which provides luxury clothes and suits for ladies. It is an example of ______ expansion.</p>\n<ul>\n<li>A. horizontal</li>\n<li>B. vertical</li>\n<li>C. lateral</li>\n<li>D. conglomerate</li>\n</ul>",
+   "file": "2017_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2017,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 10,
+   "title": "第 10 題",
+   "section": "Paper 1",
+   "tags": [
+    "固定成本",
+    "可變成本"
+   ],
+   "text": "An art centre extends its business hours for one hour in order to offer more painting classes. Which of the following are variable costs involved in the extra hour of operation?\n(1) salary of the accountant\n(2) electricity fee\n(3) expense on paints\n(4) rental payment\n\n- A. (1) and (4) only\n- B. (2) and (3) only\n- C. (1), (2) and (4) only\n- D. (1), (2), (3) and (4)",
+   "html": "<p>An art centre extends its business hours for one hour in order to offer more painting classes. Which of the following are variable costs involved in the extra hour of operation?\n(1) salary of the accountant\n(2) electricity fee\n(3) expense on paints\n(4) rental payment</p>\n<ul>\n<li>A. (1) and (4) only</li>\n<li>B. (2) and (3) only</li>\n<li>C. (1), (2) and (4) only</li>\n<li>D. (1), (2), (3) and (4)</li>\n</ul>",
+   "file": "2017_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2017,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 11,
+   "title": "第 11 題",
+   "section": "Paper 1",
+   "tags": [
+    "勞動供給",
+    "勞動生產力"
+   ],
+   "text": "The input-output relationship of a firm is as follows:\n\n| | Year 1 | Year 2 |\n|---|---|---|\n| Number of workers | 30 | 35 |\n| Number of working hours per worker per day | 10 | 8 |\n| Quantity of output (units) | 3 000 | 2 900 |\n\nBased on the above information, labour supply ______ and average labour productivity ______.\n\n- A. rises ...... rises\n- B. rises ...... falls\n- C. falls ...... rises\n- D. falls ...... falls",
+   "html": "<p>The input-output relationship of a firm is as follows:</p>\n<table>\n<thead>\n<tr>\n<th></th>\n<th>Year 1</th>\n<th>Year 2</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Number of workers</td>\n<td>30</td>\n<td>35</td>\n</tr>\n<tr>\n<td>Number of working hours per worker per day</td>\n<td>10</td>\n<td>8</td>\n</tr>\n<tr>\n<td>Quantity of output (units)</td>\n<td>3 000</td>\n<td>2 900</td>\n</tr>\n</tbody>\n</table>\n<p>Based on the above information, labour supply <strong><em>_</em>_ and average labour productivity </strong>____.</p>\n<ul>\n<li>A. rises ...... rises</li>\n<li>B. rises ...... falls</li>\n<li>C. falls ...... rises</li>\n<li>D. falls ...... falls</li>\n</ul>",
+   "file": "2017_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2017,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 12,
+   "title": "第 12 題",
+   "section": "Paper 1",
+   "tags": [
+    "價格機能"
+   ],
+   "text": "A famous artist, Tsz-Wah, held a show. Many people complained that they could not buy a ticket. Ticket touts resold the tickets on the Internet and some buyers paid a price higher than HK\\$10 000 for a ticket.\n\nThe above case illustrates the ______ function of price because ______.\n\n- A. rationing ...... the tickets are rationed to the highest-valued buyers\n- B. rationing ...... demand will be reduced by a higher price\n- C. allocative ...... more profits can be earned with a higher price\n- D. allocative ...... more resources should be allocated to the producer to raise the supply",
+   "html": "<p>A famous artist, Tsz-Wah, held a show. Many people complained that they could not buy a ticket. Ticket touts resold the tickets on the Internet and some buyers paid a price higher than HK\\$10 000 for a ticket.</p>\n<p>The above case illustrates the <strong><em>_</em>_ function of price because </strong>____.</p>\n<ul>\n<li>A. rationing ...... the tickets are rationed to the highest-valued buyers</li>\n<li>B. rationing ...... demand will be reduced by a higher price</li>\n<li>C. allocative ...... more profits can be earned with a higher price</li>\n<li>D. allocative ...... more resources should be allocated to the producer to raise the supply</li>\n</ul>",
+   "file": "2017_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2017,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 13,
+   "title": "第 13 題",
+   "section": "Paper 1",
+   "tags": [
+    "需求定律"
+   ],
+   "text": "Which of the following is INCONSISTENT with the law of demand?\n\n- A. The abolishment of per unit import tariff on garment results in a rise in the quality of imported garments.\n- B. Live fishes sold in a market near the fish farm have a higher price than frozen fishes sold in a faraway market.\n- C. The ratio of high-quality white wine sold to total white wine sold remains unchanged when the government imposes an ad valorem tax on white wine.\n- D. Developers tend to build higher-quality housing units on a piece of land with a good view.",
+   "html": "<p>Which of the following is INCONSISTENT with the law of demand?</p>\n<ul>\n<li>A. The abolishment of per unit import tariff on garment results in a rise in the quality of imported garments.</li>\n<li>B. Live fishes sold in a market near the fish farm have a higher price than frozen fishes sold in a faraway market.</li>\n<li>C. The ratio of high-quality white wine sold to total white wine sold remains unchanged when the government imposes an ad valorem tax on white wine.</li>\n<li>D. Developers tend to build higher-quality housing units on a piece of land with a good view.</li>\n</ul>",
+   "file": "2017_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2017,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 14,
+   "title": "第 14 題",
+   "section": "Paper 1",
+   "tags": [
+    "需求"
+   ],
+   "text": "Which of the following situations would most likely lead to an increase in the demand for iPhone produced by Apple Inc.?\n\n- A. A technological breakthrough in the battery industry reduces its production cost.\n- B. People expect the next model of iPhone will have more innovative features.\n- C. A model of Samsung smartphone is banned by many airlines.\n- D. Apple Inc. reduces the selling price of iPhone.",
+   "html": "<p>Which of the following situations would most likely lead to an increase in the demand for iPhone produced by Apple Inc.?</p>\n<ul>\n<li>A. A technological breakthrough in the battery industry reduces its production cost.</li>\n<li>B. People expect the next model of iPhone will have more innovative features.</li>\n<li>C. A model of Samsung smartphone is banned by many airlines.</li>\n<li>D. Apple Inc. reduces the selling price of iPhone.</li>\n</ul>",
+   "file": "2017_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2017,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 15,
+   "title": "第 15 題",
+   "section": "Paper 1",
+   "tags": [
+    "彈性"
+   ],
+   "text": "Refer to the following conversation between Mandy and Shirley.\n\nMandy: I like coffee very much! No matter how its price changes, I always buy the same amount of coffee every week!\n\nShirley: I like coffee very much too! No matter how its price changes, I always spend the same amount of money on coffee every week!\n\nBased on their conversation, Mandy’s demand for coffee is ______ and Shirley’s demand for coffee is ______.\n\n- A. perfectly inelastic ...... perfectly inelastic\n- B. perfectly inelastic ...... unitarily elastic\n- C. unitarily elastic ...... perfectly inelastic\n- D. unitarily elastic ...... unitarily elastic",
+   "html": "<p>Refer to the following conversation between Mandy and Shirley.</p>\n<p>Mandy: I like coffee very much! No matter how its price changes, I always buy the same amount of coffee every week!</p>\n<p>Shirley: I like coffee very much too! No matter how its price changes, I always spend the same amount of money on coffee every week!</p>\n<p>Based on their conversation, Mandy’s demand for coffee is <strong><em>_</em>_ and Shirley’s demand for coffee is </strong>____.</p>\n<ul>\n<li>A. perfectly inelastic ...... perfectly inelastic</li>\n<li>B. perfectly inelastic ...... unitarily elastic</li>\n<li>C. unitarily elastic ...... perfectly inelastic</li>\n<li>D. unitarily elastic ...... unitarily elastic</li>\n</ul>",
+   "file": "2017_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2017,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 16,
+   "title": "第 16 題",
+   "section": "Paper 1",
+   "tags": [
+    "從量稅",
+    "供求"
+   ],
+   "text": "Refer to the following supply and demand schedules for Good X.\n\n| Unit price ($) | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 |\n|---|---|---|---|---|---|---|---|---|\n| Quantity demanded | 140 | 130 | 120 | 110 | 100 | 90 | 80 | 70 |\n| Quantity supplied | 60 | 70 | 80 | 90 | 100 | 110 | 120 | 130 |\n\nIf the government imposed a \\$2 per unit tax on Good X,\n\n- A. sellers’ revenue net of tax would become \\$990.\n- B. tax burden borne by the sellers would be \\$90.\n- C. the total tax revenue would be \\$200.\n- D. buyers’ total expenditure on Good X would decrease by \\$40.",
+   "html": "<p>Refer to the following supply and demand schedules for Good X.</p>\n<table>\n<thead>\n<tr>\n<th>Unit price ($)</th>\n<th>6</th>\n<th>7</th>\n<th>8</th>\n<th>9</th>\n<th>10</th>\n<th>11</th>\n<th>12</th>\n<th>13</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Quantity demanded</td>\n<td>140</td>\n<td>130</td>\n<td>120</td>\n<td>110</td>\n<td>100</td>\n<td>90</td>\n<td>80</td>\n<td>70</td>\n</tr>\n<tr>\n<td>Quantity supplied</td>\n<td>60</td>\n<td>70</td>\n<td>80</td>\n<td>90</td>\n<td>100</td>\n<td>110</td>\n<td>120</td>\n<td>130</td>\n</tr>\n</tbody>\n</table>\n<p>If the government imposed a \\$2 per unit tax on Good X,</p>\n<ul>\n<li>A. sellers’ revenue net of tax would become \\$990.</li>\n<li>B. tax burden borne by the sellers would be \\$90.</li>\n<li>C. the total tax revenue would be \\$200.</li>\n<li>D. buyers’ total expenditure on Good X would decrease by \\$40.</li>\n</ul>",
+   "file": "2017_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2017,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 17,
+   "title": "第 17 題",
+   "section": "Paper 1",
+   "tags": [
+    "劣等物品",
+    "供求"
+   ],
+   "text": "Suppose Good Y is an inferior good. When people’s income rises and the production cost of Good Y increases, the equilibrium price of Good Y ______.\n\n- A. will increase\n- B. will decrease\n- C. will remain unchanged\n- D. may increase or decrease",
+   "html": "<p>Suppose Good Y is an inferior good. When people’s income rises and the production cost of Good Y increases, the equilibrium price of Good Y ______.</p>\n<ul>\n<li>A. will increase</li>\n<li>B. will decrease</li>\n<li>C. will remain unchanged</li>\n<li>D. may increase or decrease</li>\n</ul>",
+   "file": "2017_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2017,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 18,
+   "title": "第 18 題",
+   "section": "Paper 1",
+   "tags": [
+    "價格上限",
+    "市場干預"
+   ],
+   "text": "Suppose the government imposed an effective rent control on living units. Which of the following would LEAST likely occur?\n\n- A. There would be a shortage of living units.\n- B. Black market would emerge.\n- C. Poor people would be able to rent a living unit more easily.\n- D. Landlords would have a lower incentive to renovate their living units for rent.",
+   "html": "<p>Suppose the government imposed an effective rent control on living units. Which of the following would LEAST likely occur?</p>\n<ul>\n<li>A. There would be a shortage of living units.</li>\n<li>B. Black market would emerge.</li>\n<li>C. Poor people would be able to rent a living unit more easily.</li>\n<li>D. Landlords would have a lower incentive to renovate their living units for rent.</li>\n</ul>",
+   "file": "2017_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2017,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 19,
+   "title": "第 19 題",
+   "section": "Paper 1",
+   "tags": [
+    "壟斷性競爭",
+    "市場結構"
+   ],
+   "text": "Which of the following statements about monopolistic competition are correct?\n(1) There can be a few or many buyers and sellers in the market.\n(2) The sellers are price searchers.\n(3) The goods and services provided by the sellers are homogeneous.\n(4) There are free entry and exit in the market.\n\n- A. (1) and (3) only\n- B. (1) and (4) only\n- C. (2) and (3) only\n- D. (2) and (4) only",
+   "html": "<p>Which of the following statements about monopolistic competition are correct?\n(1) There can be a few or many buyers and sellers in the market.\n(2) The sellers are price searchers.\n(3) The goods and services provided by the sellers are homogeneous.\n(4) There are free entry and exit in the market.</p>\n<ul>\n<li>A. (1) and (3) only</li>\n<li>B. (1) and (4) only</li>\n<li>C. (2) and (3) only</li>\n<li>D. (2) and (4) only</li>\n</ul>",
+   "file": "2017_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2017,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 20,
+   "title": "第 20 題",
+   "section": "Paper 1",
+   "tags": [
+    "收入不均"
+   ],
+   "text": "Li Ka Shing Foundation gave HK\\$5 000 to each 2017 HKDSE candidate living in those remote districts with lower average household income. Which of the following statements about this unconditional gift is correct?\n\n- A. It reduces the income inequality as a larger portion of the receivers of the gift are from lower income group.\n- B. It increases the income inequality as it is unfair to the candidates living in the non-remote districts.\n- C. As the money is given to all candidates living in those remote districts, income distribution remains unchanged.\n- D. It helps equalising opportunities as those candidates will study harder to improve their exam results.",
+   "html": "<p>Li Ka Shing Foundation gave HK\\$5 000 to each 2017 HKDSE candidate living in those remote districts with lower average household income. Which of the following statements about this unconditional gift is correct?</p>\n<ul>\n<li>A. It reduces the income inequality as a larger portion of the receivers of the gift are from lower income group.</li>\n<li>B. It increases the income inequality as it is unfair to the candidates living in the non-remote districts.</li>\n<li>C. As the money is given to all candidates living in those remote districts, income distribution remains unchanged.</li>\n<li>D. It helps equalising opportunities as those candidates will study harder to improve their exam results.</li>\n</ul>",
+   "file": "2017_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2017,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 21,
+   "title": "第 21 題",
+   "section": "Paper 1",
+   "tags": [
+    "堅尼系數",
+    "收入不均"
+   ],
+   "text": "![fig_2017P1_q21](2017_P1_images/fig_2017P1_q21.png)\n\nThe following diagram shows the Gini coefficient of Hong Kong based on original household income.\n\n\nBased on the above diagram, we can conclude that\n\n- A. the income level of Hong Kong people increased.\n- B. income for high income household increased while income for low income household decreased.\n- C. the welfare policy failed to reduce the income inequality.\n- D. income gap had been widening.",
+   "html": "<p><img alt=\"fig_2017P1_q21\" src=\"2017_P1_images/fig_2017P1_q21.png\" /></p>\n<p>The following diagram shows the Gini coefficient of Hong Kong based on original household income.</p>\n<p>Based on the above diagram, we can conclude that</p>\n<ul>\n<li>A. the income level of Hong Kong people increased.</li>\n<li>B. income for high income household increased while income for low income household decreased.</li>\n<li>C. the welfare policy failed to reduce the income inequality.</li>\n<li>D. income gap had been widening.</li>\n</ul>",
+   "file": "2017_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2017,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 22,
+   "title": "第 22 題",
+   "section": "Paper 1",
+   "tags": [
+    "勞工流動性",
+    "勞動供給"
+   ],
+   "text": "The Work Incentive Transport Subsidy Scheme helps low-income earners reduce their cost of travelling to and from work and encourages them to get a job. Workers meeting certain criteria, such as monthly income and asset limits, are eligible to get the subsidy.\n\nWhich of the following would likely occur after the implementation of this scheme?\n(1) Labour supply would increase.\n(2) Labour productivity would increase.\n(3) Geographical mobility of labour would increase.\n(4) Income inequality would decrease.\n\n- A. (1) and (2) only\n- B. (3) and (4) only\n- C. (1), (3) and (4) only\n- D. (2), (3) and (4) only",
+   "html": "<p>The Work Incentive Transport Subsidy Scheme helps low-income earners reduce their cost of travelling to and from work and encourages them to get a job. Workers meeting certain criteria, such as monthly income and asset limits, are eligible to get the subsidy.</p>\n<p>Which of the following would likely occur after the implementation of this scheme?\n(1) Labour supply would increase.\n(2) Labour productivity would increase.\n(3) Geographical mobility of labour would increase.\n(4) Income inequality would decrease.</p>\n<ul>\n<li>A. (1) and (2) only</li>\n<li>B. (3) and (4) only</li>\n<li>C. (1), (3) and (4) only</li>\n<li>D. (2), (3) and (4) only</li>\n</ul>",
+   "file": "2017_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2017,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 23,
+   "title": "第 23 題",
+   "section": "Paper 1",
+   "tags": [
+    "價格下限",
+    "消費者剩餘"
+   ],
+   "text": "If the government raises the effective price floor on Good X and at the same time the price of its substitute increases, the consumer surplus in the market of Good X ______.\n\n- A. will increase\n- B. will decrease\n- C. will remain unchanged\n- D. may increase or decrease",
+   "html": "<p>If the government raises the effective price floor on Good X and at the same time the price of its substitute increases, the consumer surplus in the market of Good X ______.</p>\n<ul>\n<li>A. will increase</li>\n<li>B. will decrease</li>\n<li>C. will remain unchanged</li>\n<li>D. may increase or decrease</li>\n</ul>",
+   "file": "2017_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2017,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 24,
+   "title": "第 24 題",
+   "section": "Paper 1",
+   "tags": [
+    "限額",
+    "市場干預"
+   ],
+   "text": "Refer to the following supply-demand diagram of a good with a quota set at $Q_1$ by the government.\n\n\nWhich of the following will be the results of a reduction in quota on the good?\n(1) The total expenditure on the good may increase.\n(2) The consumer surplus will decrease.\n(3) The total social surplus may increase.\n\n- A. (1) and (2) only\n- B. (1) and (3) only\n- C. (2) and (3) only\n- D. (1), (2) and (3)",
+   "html": "<p>Refer to the following supply-demand diagram of a good with a quota set at $Q_1$ by the government.</p>\n<p>Which of the following will be the results of a reduction in quota on the good?\n(1) The total expenditure on the good may increase.\n(2) The consumer surplus will decrease.\n(3) The total social surplus may increase.</p>\n<ul>\n<li>A. (1) and (2) only</li>\n<li>B. (1) and (3) only</li>\n<li>C. (2) and (3) only</li>\n<li>D. (1), (2) and (3)</li>\n</ul>",
+   "file": "2017_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2017,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 25,
+   "title": "第 25 題",
+   "section": "Paper 1",
+   "tags": [
+    "國民收入",
+    "GDP"
+   ],
+   "text": "The following diagram shows a production chain of watches in an economy:\n\n\nThe contribution of the local watch manufacturers to the economy’s GDP at market prices is ______.\n\n- A. \\$220\n- B. \\$240\n- C. \\$350\n- D. \\$400",
+   "html": "<p>The following diagram shows a production chain of watches in an economy:</p>\n<p>The contribution of the local watch manufacturers to the economy’s GDP at market prices is ______.</p>\n<ul>\n<li>A. \\$220</li>\n<li>B. \\$240</li>\n<li>C. \\$350</li>\n<li>D. \\$400</li>\n</ul>",
+   "file": "2017_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2017,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 26,
+   "title": "第 26 題",
+   "section": "Paper 1",
+   "tags": [
+    "宏觀指標",
+    "GDP"
+   ],
+   "text": "The following table shows some data of an economy.\n\n| Growth rate | 2015 | 2016 |\n|---|---|---|\n| GDP | −3% | −2% |\n| Price level | 1% | 0% |\n| Population | 4% | 2% |\n\nWhich of the following statements about the economy is correct?\n\n- A. Real GDP in 2016 decreases.\n- B. Per capita GDP in 2016 increases.\n- C. The price level in 2016 decreases.\n- D. The growth rate of real GDP in 2016 is lower than that in 2015.",
+   "html": "<p>The following table shows some data of an economy.</p>\n<table>\n<thead>\n<tr>\n<th>Growth rate</th>\n<th>2015</th>\n<th>2016</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>GDP</td>\n<td>−3%</td>\n<td>−2%</td>\n</tr>\n<tr>\n<td>Price level</td>\n<td>1%</td>\n<td>0%</td>\n</tr>\n<tr>\n<td>Population</td>\n<td>4%</td>\n<td>2%</td>\n</tr>\n</tbody>\n</table>\n<p>Which of the following statements about the economy is correct?</p>\n<ul>\n<li>A. Real GDP in 2016 decreases.</li>\n<li>B. Per capita GDP in 2016 increases.</li>\n<li>C. The price level in 2016 decreases.</li>\n<li>D. The growth rate of real GDP in 2016 is lower than that in 2015.</li>\n</ul>",
+   "file": "2017_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2017,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 27,
+   "title": "第 27 題",
+   "section": "Paper 1",
+   "tags": [
+    "勞動力",
+    "失業率"
+   ],
+   "text": "The government launches ‘Admission Scheme for the Second Generation of Chinese Hong Kong Permanent Residents’（輸入中國籍香港永久性居民第二代計劃）in order to meet the challenge of ageing population and declining workforce.\n\nIf some second-generation of Hong Kong permanent residents returned to Hong Kong to fill up the posts which have been vacant for a long time, Hong Kong’s labour force would ______ and the unemployment rate would ______.\n\n- A. rise ...... remain unchanged\n- B. rise ...... fall\n- C. fall ...... remain unchanged\n- D. fall ...... fall",
+   "html": "<p>The government launches ‘Admission Scheme for the Second Generation of Chinese Hong Kong Permanent Residents’（輸入中國籍香港永久性居民第二代計劃）in order to meet the challenge of ageing population and declining workforce.</p>\n<p>If some second-generation of Hong Kong permanent residents returned to Hong Kong to fill up the posts which have been vacant for a long time, Hong Kong’s labour force would <strong><em>_</em>_ and the unemployment rate would </strong>____.</p>\n<ul>\n<li>A. rise ...... remain unchanged</li>\n<li>B. rise ...... fall</li>\n<li>C. fall ...... remain unchanged</li>\n<li>D. fall ...... fall</li>\n</ul>",
+   "file": "2017_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2017,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 28,
+   "title": "第 28 題",
+   "section": "Paper 1",
+   "tags": [
+    "總需求"
+   ],
+   "text": "The aggregate demand curve of Hong Kong will shift to the left if\n\n- A. the implicit GDP deflator rises continuously.\n- B. the government raises the retirement age of all civil servants.\n- C. the number of tourists from the Mainland decreases.\n- D. the Mainland stock market booms.",
+   "html": "<p>The aggregate demand curve of Hong Kong will shift to the left if</p>\n<ul>\n<li>A. the implicit GDP deflator rises continuously.</li>\n<li>B. the government raises the retirement age of all civil servants.</li>\n<li>C. the number of tourists from the Mainland decreases.</li>\n<li>D. the Mainland stock market booms.</li>\n</ul>",
+   "file": "2017_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2017,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 29,
+   "title": "第 29 題",
+   "section": "Paper 1",
+   "tags": [
+    "AD-AS"
+   ],
+   "text": "![fig_2017P1_q29](2017_P1_images/fig_2017P1_q29.png)\n\n\nThe diagram above shows the aggregate demand curves and long run aggregate supply curves of an economy. Which of the following best explains the above changes?\n\n- A. a decrease in people’s desire to save\n- B. an enhancement in production technology\n- C. an increase in national income of the economy’s trading partners\n- D. an increase in government subsidy on private research and development",
+   "html": "<p><img alt=\"fig_2017P1_q29\" src=\"2017_P1_images/fig_2017P1_q29.png\" /></p>\n<p>The diagram above shows the aggregate demand curves and long run aggregate supply curves of an economy. Which of the following best explains the above changes?</p>\n<ul>\n<li>A. a decrease in people’s desire to save</li>\n<li>B. an enhancement in production technology</li>\n<li>C. an increase in national income of the economy’s trading partners</li>\n<li>D. an increase in government subsidy on private research and development</li>\n</ul>",
+   "file": "2017_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2017,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 30,
+   "title": "第 30 題",
+   "section": "Paper 1",
+   "tags": [
+    "貨幣",
+    "銀行乘數"
+   ],
+   "text": "Electronic payment systems allow customers to pay without cash. ApplePay, Visa payWave and MasterCard paypass are some of the examples.\n\n\nWhen more shops accept these electronic payment systems as a method of payment,\n(1) their cost of handling coins and notes will fall.\n(2) the actual banking multiplier may increase.\n(3) transactions demand for money will increase.\n\n- A. (1) and (2) only\n- B. (1) and (3) only\n- C. (2) and (3) only\n- D. (1), (2) and (3)",
+   "html": "<p>Electronic payment systems allow customers to pay without cash. ApplePay, Visa payWave and MasterCard paypass are some of the examples.</p>\n<p>When more shops accept these electronic payment systems as a method of payment,\n(1) their cost of handling coins and notes will fall.\n(2) the actual banking multiplier may increase.\n(3) transactions demand for money will increase.</p>\n<ul>\n<li>A. (1) and (2) only</li>\n<li>B. (1) and (3) only</li>\n<li>C. (2) and (3) only</li>\n<li>D. (1), (2) and (3)</li>\n</ul>",
+   "file": "2017_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2017,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 31,
+   "title": "第 31 題",
+   "section": "Paper 1",
+   "tags": [
+    "銀行",
+    "存款創造"
+   ],
+   "text": "The following table shows the balance sheet of a banking system.\n\n| Assets (\\$) | | Liabilities (\\$) | |\n|---|---|---|---|\n| Reserves | 300 | Deposits | 900 |\n| Loans | 600 | | |\n\nSuppose the public does not hold cash and the required reserve ratio is reduced to 25%. After deposit creation, the amount of loans in the banking system is \\$750. Which of the following statements about the banking system is correct?\n\n- A. The money supply increases by \\$300.\n- B. The actual banking multiplier is 3.5.\n- C. The deposits increase by \\$600.\n- D. Bank reserves are \\$450.",
+   "html": "<p>The following table shows the balance sheet of a banking system.</p>\n<table>\n<thead>\n<tr>\n<th>Assets (\\$)</th>\n<th></th>\n<th>Liabilities (\\$)</th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Reserves</td>\n<td>300</td>\n<td>Deposits</td>\n<td>900</td>\n</tr>\n<tr>\n<td>Loans</td>\n<td>600</td>\n<td></td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<p>Suppose the public does not hold cash and the required reserve ratio is reduced to 25%. After deposit creation, the amount of loans in the banking system is \\$750. Which of the following statements about the banking system is correct?</p>\n<ul>\n<li>A. The money supply increases by \\$300.</li>\n<li>B. The actual banking multiplier is 3.5.</li>\n<li>C. The deposits increase by \\$600.</li>\n<li>D. Bank reserves are \\$450.</li>\n</ul>",
+   "file": "2017_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2017,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 32,
+   "title": "第 32 題",
+   "section": "Paper 1",
+   "tags": [
+    "貨幣市場"
+   ],
+   "text": "The diagram below shows the money demand and supply curves of an economy. The original equilibrium point is at E.\n\n\nSuppose the risk of holding interest bearing assets (such as bonds) increases and the central bank reduces the discount rate. The new equilibrium point will be at ______.\n\n- A. A\n- B. B\n- C. C\n- D. D",
+   "html": "<p>The diagram below shows the money demand and supply curves of an economy. The original equilibrium point is at E.</p>\n<p>Suppose the risk of holding interest bearing assets (such as bonds) increases and the central bank reduces the discount rate. The new equilibrium point will be at ______.</p>\n<ul>\n<li>A. A</li>\n<li>B. B</li>\n<li>C. C</li>\n<li>D. D</li>\n</ul>",
+   "file": "2017_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2017,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 33,
+   "title": "第 33 題",
+   "section": "Paper 1",
+   "tags": [
+    "貨幣供應"
+   ],
+   "text": "Refer to the following data about Hong Kong’s money supply.\n\n| Components | \\$ billion |\n|---|---|\n| Total issue of legal tender | 300 |\n| Legal tender held by all authorised institutions | 80 |\n| Demand deposits | 100 |\n| All types of deposits with licensed banks and negotiable certificates of deposit issued by licensed banks (other than those held by authorised institutions) | 3 000 |\n\nThe money supply M2 is ______.\n\n- A. \\$320 billion\n- B. \\$3 180 billion\n- C. \\$3 220 billion\n- D. \\$3 300 billion",
+   "html": "<p>Refer to the following data about Hong Kong’s money supply.</p>\n<table>\n<thead>\n<tr>\n<th>Components</th>\n<th>\\$ billion</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Total issue of legal tender</td>\n<td>300</td>\n</tr>\n<tr>\n<td>Legal tender held by all authorised institutions</td>\n<td>80</td>\n</tr>\n<tr>\n<td>Demand deposits</td>\n<td>100</td>\n</tr>\n<tr>\n<td>All types of deposits with licensed banks and negotiable certificates of deposit issued by licensed banks (other than those held by authorised institutions)</td>\n<td>3 000</td>\n</tr>\n</tbody>\n</table>\n<p>The money supply M2 is ______.</p>\n<ul>\n<li>A. \\$320 billion</li>\n<li>B. \\$3 180 billion</li>\n<li>C. \\$3 220 billion</li>\n<li>D. \\$3 300 billion</li>\n</ul>",
+   "file": "2017_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2017,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 34,
+   "title": "第 34 題",
+   "section": "Paper 1",
+   "tags": [
+    "通脹"
+   ],
+   "text": "When there is unexpected inflation, which of the following individual(s) will lose?\n\n- A. A firm owner paying his workers a fixed wage\n- B. A flat owner charging a rental with adjustment according to the change in price level\n- C. A retired civil servant receiving a fixed monthly pension\n- D. All of the above individuals will lose because the purchasing power of money will be lower.",
+   "html": "<p>When there is unexpected inflation, which of the following individual(s) will lose?</p>\n<ul>\n<li>A. A firm owner paying his workers a fixed wage</li>\n<li>B. A flat owner charging a rental with adjustment according to the change in price level</li>\n<li>C. A retired civil servant receiving a fixed monthly pension</li>\n<li>D. All of the above individuals will lose because the purchasing power of money will be lower.</li>\n</ul>",
+   "file": "2017_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2017,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 35,
+   "title": "第 35 題",
+   "section": "Paper 1",
+   "tags": [
+    "稅收",
+    "累退稅"
+   ],
+   "text": "Which of the following diagrams describe a regressive tax?\n\n\n- A. (1) and (2) only\n- B. (1) and (3) only\n- C. (2) and (4) only\n- D. (3) and (4) only",
+   "html": "<p>Which of the following diagrams describe a regressive tax?</p>\n<ul>\n<li>A. (1) and (2) only</li>\n<li>B. (1) and (3) only</li>\n<li>C. (2) and (4) only</li>\n<li>D. (3) and (4) only</li>\n</ul>",
+   "file": "2017_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2017,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 36,
+   "title": "第 36 題",
+   "section": "Paper 1",
+   "tags": [
+    "貨幣數量理論"
+   ],
+   "text": "According to the quantity theory of money, if a central bank increases money supply,\n\n- A. the price level will increase.\n- B. real output will remain constant.\n- C. nominal output will increase.\n- D. the unemployment rate will decrease.",
+   "html": "<p>According to the quantity theory of money, if a central bank increases money supply,</p>\n<ul>\n<li>A. the price level will increase.</li>\n<li>B. real output will remain constant.</li>\n<li>C. nominal output will increase.</li>\n<li>D. the unemployment rate will decrease.</li>\n</ul>",
+   "file": "2017_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2017,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 37,
+   "title": "第 37 題",
+   "section": "Paper 1",
+   "tags": [
+    "財政政策",
+    "貨幣政策"
+   ],
+   "text": "Which of the following policies would most likely lead to a drop in aggregate output?\n\n- A. The government bought bonds from the public and raised the tax allowance at the same time.\n- B. The government sold bonds to the public and reduced transfer payment to the poor at the same time.\n- C. The government reduced required reserve ratio and raised the progressivity of income tax at the same time.\n- D. The government increased the discount rate and lowered profits tax rate at the same time.",
+   "html": "<p>Which of the following policies would most likely lead to a drop in aggregate output?</p>\n<ul>\n<li>A. The government bought bonds from the public and raised the tax allowance at the same time.</li>\n<li>B. The government sold bonds to the public and reduced transfer payment to the poor at the same time.</li>\n<li>C. The government reduced required reserve ratio and raised the progressivity of income tax at the same time.</li>\n<li>D. The government increased the discount rate and lowered profits tax rate at the same time.</li>\n</ul>",
+   "file": "2017_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2017,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 38,
+   "title": "第 38 題",
+   "section": "Paper 1",
+   "tags": [
+    "財政政策",
+    "貨幣政策"
+   ],
+   "text": "To reduce fiscal deficits, the government may adopt either contractionary fiscal policy (e.g. increase taxes and/or decrease fiscal spending) or expansionary monetary policy (e.g. finance the deficits by printing money).\n\nRefer to a situation of an upward-sloping short run aggregate supply curve. Which of the following are the advantages of using expansionary monetary policy over contractionary fiscal policy to reduce fiscal deficits?\n(1) The employment level will be higher.\n(2) The purchasing power of money will be higher.\n(3) The real output level will be higher.\n\n- A. (1) and (2) only\n- B. (1) and (3) only\n- C. (2) and (3) only\n- D. (1), (2) and (3)",
+   "html": "<p>To reduce fiscal deficits, the government may adopt either contractionary fiscal policy (e.g. increase taxes and/or decrease fiscal spending) or expansionary monetary policy (e.g. finance the deficits by printing money).</p>\n<p>Refer to a situation of an upward-sloping short run aggregate supply curve. Which of the following are the advantages of using expansionary monetary policy over contractionary fiscal policy to reduce fiscal deficits?\n(1) The employment level will be higher.\n(2) The purchasing power of money will be higher.\n(3) The real output level will be higher.</p>\n<ul>\n<li>A. (1) and (2) only</li>\n<li>B. (1) and (3) only</li>\n<li>C. (2) and (3) only</li>\n<li>D. (1), (2) and (3)</li>\n</ul>",
+   "file": "2017_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2017,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 39,
+   "title": "第 39 題",
+   "section": "Paper 1",
+   "tags": [
+    "AD-AS",
+    "緊縮缺口"
+   ],
+   "text": "The diagram below shows the aggregate demand curve, the short run aggregate supply curve and the long run aggregate supply curve of an economy.\n\n\nSuppose the economy initially operates at $E_1$ and the total import value equals total export value. If the government decreases the social security assistance to the elderly, in short run, the deflationary (output) gap will be ______ and there will be a ______.\n\n- A. narrower ...... trade surplus\n- B. wider ...... trade deficit\n- C. narrower ...... trade deficit\n- D. wider ...... trade surplus",
+   "html": "<p>The diagram below shows the aggregate demand curve, the short run aggregate supply curve and the long run aggregate supply curve of an economy.</p>\n<p>Suppose the economy initially operates at $E_1$ and the total import value equals total export value. If the government decreases the social security assistance to the elderly, in short run, the deflationary (output) gap will be <strong><em>_</em>_ and there will be a </strong>____.</p>\n<ul>\n<li>A. narrower ...... trade surplus</li>\n<li>B. wider ...... trade deficit</li>\n<li>C. narrower ...... trade deficit</li>\n<li>D. wider ...... trade surplus</li>\n</ul>",
+   "file": "2017_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2017,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 40,
+   "title": "第 40 題",
+   "section": "Paper 1",
+   "tags": [
+    "AD-AS",
+    "財政政策"
+   ],
+   "text": "In his 2016-17 Budget, the Financial Secretary proposed to waive business registration fees for 2016-17. At the same time, the personal basic tax allowance was raised from \\$120 000 to \\$132 000. Which of the following best illustrates the effect of the above changes on the price and output levels?\n\n\n- A. $LRAS_1 \\rightarrow LRAS_2$（右移）；$AD_1 \\leftarrow AD_2$（左移）\n- B. 單一向上傾斜 $SRAS$；$AD_1 \\rightarrow AD_2$（右移）\n- C. $SRAS_1 \\leftarrow SRAS_2$（左移／上移）；$AD_1 \\rightarrow AD_2$（右移）\n- D. $LRAS_1 \\rightarrow LRAS_2$（右移）；$SRAS_1 \\rightarrow SRAS_2$（右移）；單一 $AD$",
+   "html": "<p>In his 2016-17 Budget, the Financial Secretary proposed to waive business registration fees for 2016-17. At the same time, the personal basic tax allowance was raised from \\$120 000 to \\$132 000. Which of the following best illustrates the effect of the above changes on the price and output levels?</p>\n<ul>\n<li>A. $LRAS_1 \\rightarrow LRAS_2$（右移）；$AD_1 \\leftarrow AD_2$（左移）</li>\n<li>B. 單一向上傾斜 $SRAS$；$AD_1 \\rightarrow AD_2$（右移）</li>\n<li>C. $SRAS_1 \\leftarrow SRAS_2$（左移／上移）；$AD_1 \\rightarrow AD_2$（右移）</li>\n<li>D. $LRAS_1 \\rightarrow LRAS_2$（右移）；$SRAS_1 \\rightarrow SRAS_2$（右移）；單一 $AD$</li>\n</ul>",
+   "file": "2017_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2017,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 41,
+   "title": "第 41 題",
+   "section": "Paper 1",
+   "tags": [
+    "國際收支"
+   ],
+   "text": "Which of the following transactions will be included in the calculation of the balance of payments of Hong Kong?\n(1) A Mainland resident who owns an apartment in Hong Kong receives rental payment from his tenant.\n(2) A Japanese resident sells the shares of a Hong Kong firm to a Korean resident.\n(3) A Hong Kong resident buys an air ticket to London from a Hong Kong based airline.\n(4) An Indonesian who works in Hong Kong as a domestic helper remits money to her husband who lives in Indonesia.\n\n- A. (1) and (3) only\n- B. (1) and (4) only\n- C. (2) and (3) only\n- D. (2) and (4) only",
+   "html": "<p>Which of the following transactions will be included in the calculation of the balance of payments of Hong Kong?\n(1) A Mainland resident who owns an apartment in Hong Kong receives rental payment from his tenant.\n(2) A Japanese resident sells the shares of a Hong Kong firm to a Korean resident.\n(3) A Hong Kong resident buys an air ticket to London from a Hong Kong based airline.\n(4) An Indonesian who works in Hong Kong as a domestic helper remits money to her husband who lives in Indonesia.</p>\n<ul>\n<li>A. (1) and (3) only</li>\n<li>B. (1) and (4) only</li>\n<li>C. (2) and (3) only</li>\n<li>D. (2) and (4) only</li>\n</ul>",
+   "file": "2017_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2017,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 42,
+   "title": "第 42 題",
+   "section": "Paper 1",
+   "tags": [
+    "限額",
+    "開放經濟"
+   ],
+   "text": "A small open economy increases the import quota for Good X. Which of the following diagrams best illustrates the effect of this change?\n\n\n- A. 限額型垂直段 $S_1 \\rightarrow S_2$ 右移\n- B. 限額型垂直段 $S_1 \\rightarrow S_2$ 左移\n- C. 含水平段之供給 $S_1 \\rightarrow S_2$ 右下移\n- D. 含水平段之供給 $S_1 \\rightarrow S_2$ 左上移",
+   "html": "<p>A small open economy increases the import quota for Good X. Which of the following diagrams best illustrates the effect of this change?</p>\n<ul>\n<li>A. 限額型垂直段 $S_1 \\rightarrow S_2$ 右移</li>\n<li>B. 限額型垂直段 $S_1 \\rightarrow S_2$ 左移</li>\n<li>C. 含水平段之供給 $S_1 \\rightarrow S_2$ 右下移</li>\n<li>D. 含水平段之供給 $S_1 \\rightarrow S_2$ 左上移</li>\n</ul>",
+   "file": "2017_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2017,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 43,
+   "title": "第 43 題",
+   "section": "Paper 1",
+   "tags": [
+    "比較優勢",
+    "貿易條件"
+   ],
+   "text": "The following table shows the number of man-hours required by Country A and Country B in the production of toys and watches.\n\n| | 1 unit of toys | 1 unit of watches |\n|---|---|---|\n| Country A | 4 | 8 |\n| Country B | 5 | 20 |\n\nSuppose the transportation cost for 1 unit of toys is 0.1 units of watches and it is borne by the exporting country. Which of the following would be a mutually beneficial terms of trade between Country A and Country B?\n\n- A. 1 unit of toys = 0.3 units of watches\n- B. 1 unit of toys = 0.4 units of watches\n- C. 1 unit of toys = 2.5 units of watches\n- D. 1 unit of toys = 6 units of watches",
+   "html": "<p>The following table shows the number of man-hours required by Country A and Country B in the production of toys and watches.</p>\n<table>\n<thead>\n<tr>\n<th></th>\n<th>1 unit of toys</th>\n<th>1 unit of watches</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Country A</td>\n<td>4</td>\n<td>8</td>\n</tr>\n<tr>\n<td>Country B</td>\n<td>5</td>\n<td>20</td>\n</tr>\n</tbody>\n</table>\n<p>Suppose the transportation cost for 1 unit of toys is 0.1 units of watches and it is borne by the exporting country. Which of the following would be a mutually beneficial terms of trade between Country A and Country B?</p>\n<ul>\n<li>A. 1 unit of toys = 0.3 units of watches</li>\n<li>B. 1 unit of toys = 0.4 units of watches</li>\n<li>C. 1 unit of toys = 2.5 units of watches</li>\n<li>D. 1 unit of toys = 6 units of watches</li>\n</ul>",
+   "file": "2017_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2017,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 44,
+   "title": "第 44 題",
+   "section": "Paper 1",
+   "tags": [
+    "匯率"
+   ],
+   "text": "| Date | Exchange rates |\n|---|---|\n| 22 November 2015 | US\\$1 = RMB¥6.39 |\n| 22 November 2016 | US\\$1 = RMB¥6.89 |\n\nThe above change in the exchange rate between the US Dollar and the Renminbi would lead to\n(1) a decrease in the number of Chinese tourists to the US.\n(2) a decrease in the competitiveness of US exports to China.\n(3) an increase in the total value of US exports to China (in terms of the US Dollar).\n\n- A. (1) and (2) only\n- B. (1) and (3) only\n- C. (2) and (3) only\n- D. (1), (2) and (3)",
+   "html": "<table>\n<thead>\n<tr>\n<th>Date</th>\n<th>Exchange rates</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>22 November 2015</td>\n<td>US\\$1 = RMB¥6.39</td>\n</tr>\n<tr>\n<td>22 November 2016</td>\n<td>US\\$1 = RMB¥6.89</td>\n</tr>\n</tbody>\n</table>\n<p>The above change in the exchange rate between the US Dollar and the Renminbi would lead to\n(1) a decrease in the number of Chinese tourists to the US.\n(2) a decrease in the competitiveness of US exports to China.\n(3) an increase in the total value of US exports to China (in terms of the US Dollar).</p>\n<ul>\n<li>A. (1) and (2) only</li>\n<li>B. (1) and (3) only</li>\n<li>C. (2) and (3) only</li>\n<li>D. (1), (2) and (3)</li>\n</ul>",
+   "file": "2017_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2017,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 45,
+   "title": "第 45 題",
+   "section": "Paper 1",
+   "tags": [
+    "聯繫匯率"
+   ],
+   "text": "Under the linked exchange rate system of Hong Kong, which of the following statements is correct?\n\n- A. The non-bank public can sell their Hong Kong dollars to the Hong Kong Monetary Authority in exchange for US dollars at any time.\n- B. It enables the Hong Kong Monetary Authority to carry out an expansionary monetary policy to stimulate private investment.\n- C. The market exchange rate of the US Dollar against the HK Dollar is fixed at US\\$1 = HK\\$7.8.\n- D. There would be a downward pressure on the consumer price indices of Hong Kong when the Renminbi continuously depreciates against the US Dollar.\n\n---\n\n## 圖進度（真實狀態）\n\n- **已過核（embed 保留）**：Q21（Nightmare 已收貨）；Q29（dir1=99.959／dir2=100／maxdev=2.24／p99.9=1.92）。\n- **待重繪（已撤 embed；覆蓋率曾 ≥99.5% 但超 AA 容差）**：\n  - Q24：maxdev=7.21／p99.9=4.47\n  - Q25：maxdev=3.16／p99.9=2.24（左箭下臂；收窄後仍超／或 dir2 跌穿）\n  - Q32：maxdev=3.61／p99.9=2.24\n  - Q35：maxdev=3.61／p99.9=2.00\n  - Q39：maxdev=4.00／p99.9=3.00\n  - Q40：maxdev=11.00／p99.9=5.76\n  - Q42：maxdev=5.00／p99.9=3.61\n- **Q30 未完成**：商標真向量未達容差；無圖；正文無「待重繪」註釋。\n- 檔頭寫 **2/10**，唔寫「已 100% 重繪」。詳見 `2017_P1_fig_audit.md`。",
+   "html": "<p>Under the linked exchange rate system of Hong Kong, which of the following statements is correct?</p>\n<ul>\n<li>A. The non-bank public can sell their Hong Kong dollars to the Hong Kong Monetary Authority in exchange for US dollars at any time.</li>\n<li>B. It enables the Hong Kong Monetary Authority to carry out an expansionary monetary policy to stimulate private investment.</li>\n<li>C. The market exchange rate of the US Dollar against the HK Dollar is fixed at US\\$1 = HK\\$7.8.</li>\n<li>D. There would be a downward pressure on the consumer price indices of Hong Kong when the Renminbi continuously depreciates against the US Dollar.</li>\n</ul>\n<hr />\n<h2>圖進度（真實狀態）</h2>\n<ul>\n<li><strong>已過核（embed 保留）</strong>：Q21（Nightmare 已收貨）；Q29（dir1=99.959／dir2=100／maxdev=2.24／p99.9=1.92）。</li>\n<li><strong>待重繪（已撤 embed；覆蓋率曾 ≥99.5% 但超 AA 容差）</strong>：</li>\n<li>Q24：maxdev=7.21／p99.9=4.47</li>\n<li>Q25：maxdev=3.16／p99.9=2.24（左箭下臂；收窄後仍超／或 dir2 跌穿）</li>\n<li>Q32：maxdev=3.61／p99.9=2.24</li>\n<li>Q35：maxdev=3.61／p99.9=2.00</li>\n<li>Q39：maxdev=4.00／p99.9=3.00</li>\n<li>Q40：maxdev=11.00／p99.9=5.76</li>\n<li>Q42：maxdev=5.00／p99.9=3.61</li>\n<li><strong>Q30 未完成</strong>：商標真向量未達容差；無圖；正文無「待重繪」註釋。</li>\n<li>檔頭寫 <strong>2/10</strong>，唔寫「已 100% 重繪」。詳見 <code>2017_P1_fig_audit.md</code>。</li>\n</ul>",
+   "file": "2017_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2020,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 1,
+   "title": "第 1 題",
+   "section": "Paper 1",
+   "tags": [
+    "經濟制度",
+    "價格機制"
+   ],
+   "text": "If a command economy turns into a market-oriented economy,\n(1) the income distribution of the economy will be more uneven.\n(2) more resources will be allocated by price mechanism.\n(3) people will have private property rights over all resources.\n\n- A. (1) only\n- B. (2) only\n- C. (3) only\n- D. (1), (2) and (3)",
+   "html": "<p>If a command economy turns into a market-oriented economy,\n(1) the income distribution of the economy will be more uneven.\n(2) more resources will be allocated by price mechanism.\n(3) people will have private property rights over all resources.</p>\n<ul>\n<li>A. (1) only</li>\n<li>B. (2) only</li>\n<li>C. (3) only</li>\n<li>D. (1), (2) and (3)</li>\n</ul>",
+   "file": "2020_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2020,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 2,
+   "title": "第 2 題",
+   "section": "Paper 1",
+   "tags": [
+    "公營物品",
+    "私營物品"
+   ],
+   "text": "In Lunar New Year, tourists reserve tables in waterfront restaurants to enjoy firework display. The firework display is a ______ because ______.\n\n- A. public good ...... the government pays for the firework display\n- B. public good ...... one individual's consumption will not reduce its availability to others\n- C. private good ...... private firms have to use resources to produce the firework display\n- D. private good ...... the seats in waterfront restaurants are excludable in consumption",
+   "html": "<p>In Lunar New Year, tourists reserve tables in waterfront restaurants to enjoy firework display. The firework display is a <strong><em>_</em>_ because </strong>____.</p>\n<ul>\n<li>A. public good ...... the government pays for the firework display</li>\n<li>B. public good ...... one individual's consumption will not reduce its availability to others</li>\n<li>C. private good ...... private firms have to use resources to produce the firework display</li>\n<li>D. private good ...... the seats in waterfront restaurants are excludable in consumption</li>\n</ul>",
+   "file": "2020_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2020,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 3,
+   "title": "第 3 題",
+   "section": "Paper 1",
+   "tags": [
+    "物物交換",
+    "利息"
+   ],
+   "text": "Which of the following may exist in a barter economy?\n(1) specialisation\n(2) inflation\n(3) interest\n\n- A. (1) and (2) only\n- B. (1) and (3) only\n- C. (2) and (3) only\n- D. (1), (2) and (3)",
+   "html": "<p>Which of the following may exist in a barter economy?\n(1) specialisation\n(2) inflation\n(3) interest</p>\n<ul>\n<li>A. (1) and (2) only</li>\n<li>B. (1) and (3) only</li>\n<li>C. (2) and (3) only</li>\n<li>D. (1), (2) and (3)</li>\n</ul>",
+   "file": "2020_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2020,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 4,
+   "title": "第 4 題",
+   "section": "Paper 1",
+   "tags": [
+    "債券",
+    "股份"
+   ],
+   "text": "Some small investors prefer debentures to shares. Which of the following is a possible reason for that?\n\n- A. The return of debentures is generally higher than that of shares.\n- B. The price of shares may rise while that of debentures is fixed.\n- C. Shareholders need to spend time managing the company but debenture holders do not.\n- D. Companies have obligation to redeem debentures but they have no such obligation for shares.",
+   "html": "<p>Some small investors prefer debentures to shares. Which of the following is a possible reason for that?</p>\n<ul>\n<li>A. The return of debentures is generally higher than that of shares.</li>\n<li>B. The price of shares may rise while that of debentures is fixed.</li>\n<li>C. Shareholders need to spend time managing the company but debenture holders do not.</li>\n<li>D. Companies have obligation to redeem debentures but they have no such obligation for shares.</li>\n</ul>",
+   "file": "2020_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2020,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 5,
+   "title": "第 5 題",
+   "section": "Paper 1",
+   "tags": [
+    "公司種類",
+    "流動性"
+   ],
+   "text": "If a public limited company in Hong Kong gets listed on the stock exchange,\n\n- A. it will face a higher profits tax rate.\n- B. it can no longer keep its accounting information confidential.\n- C. its shareholders will enjoy higher liquidity of their assets.\n- D. it will enjoy economies of scale.",
+   "html": "<p>If a public limited company in Hong Kong gets listed on the stock exchange,</p>\n<ul>\n<li>A. it will face a higher profits tax rate.</li>\n<li>B. it can no longer keep its accounting information confidential.</li>\n<li>C. its shareholders will enjoy higher liquidity of their assets.</li>\n<li>D. it will enjoy economies of scale.</li>\n</ul>",
+   "file": "2020_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2020,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 6,
+   "title": "第 6 題",
+   "section": "Paper 1",
+   "tags": [
+    "生產要素回報",
+    "企業家"
+   ],
+   "text": "Refer to the following dialogue.\n\n![fig_2020P1_q6](2020_P1_images/fig_2020P1_q6.png)\n\nGiven the return of land is rent, the return of labour is wage, the return of capital is interest while the return of entrepreneur is profit. The income earned by Captain Cook consists of ______ while the remaining income earned by Landlord Li consists of ______.\n\n- A. wage ...... profit\n- B. interest ...... rent and profit\n- C. wage and interest ...... rent\n- D. wage and interest ...... rent and profit",
+   "html": "<p>Refer to the following dialogue.</p>\n<p><img alt=\"fig_2020P1_q6\" src=\"2020_P1_images/fig_2020P1_q6.png\" /></p>\n<p>Given the return of land is rent, the return of labour is wage, the return of capital is interest while the return of entrepreneur is profit. The income earned by Captain Cook consists of <strong><em>_</em>_ while the remaining income earned by Landlord Li consists of </strong>____.</p>\n<ul>\n<li>A. wage ...... profit</li>\n<li>B. interest ...... rent and profit</li>\n<li>C. wage and interest ...... rent</li>\n<li>D. wage and interest ...... rent and profit</li>\n</ul>",
+   "file": "2020_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2020,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 7,
+   "title": "第 7 題",
+   "section": "Paper 1",
+   "tags": [
+    "規模經濟",
+    "外部經濟"
+   ],
+   "text": "Tai On Building（太安樓）in eastern Hong Kong Island is well-known as a 'foodie paradise'. A variety of street snacks such as cart noodles, egg waffles, dumplings and mango mochi are sold by numerous small vendors. Customers from different districts fill their stomachs at Tai On Building.\n\nBased on the above information, street snack vendors at Tai On Building can ______.\n\n- A. enjoy internal economies of scale\n- B. enjoy external economies of scale\n- C. suffer internal diseconomies of scale\n- D. suffer external diseconomies of scale",
+   "html": "<p>Tai On Building（太安樓）in eastern Hong Kong Island is well-known as a 'foodie paradise'. A variety of street snacks such as cart noodles, egg waffles, dumplings and mango mochi are sold by numerous small vendors. Customers from different districts fill their stomachs at Tai On Building.</p>\n<p>Based on the above information, street snack vendors at Tai On Building can ______.</p>\n<ul>\n<li>A. enjoy internal economies of scale</li>\n<li>B. enjoy external economies of scale</li>\n<li>C. suffer internal diseconomies of scale</li>\n<li>D. suffer external diseconomies of scale</li>\n</ul>",
+   "file": "2020_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2020,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 8,
+   "title": "第 8 題",
+   "section": "Paper 1",
+   "tags": [
+    "邊際回報遞減",
+    "平均產量"
+   ],
+   "text": "The following table shows the production plan of a firm which employs two factors only, namely labour and machinery.\n\n| Machinery (units) | Labour (units) | Average product of labour (units) |\n|---|---|---|\n| 4 | 1 | 20 |\n| 4 | 2 | 21 |\n| 4 | 3 | 22 |\n| 4 | 4 | X |\n\nIf the above data illustrate the law of diminishing marginal returns, the value of X ______.\n\n- A. can be 23\n- B. can be smaller than 22\n- C. must be larger than 22\n- D. must be smaller than 22",
+   "html": "<p>The following table shows the production plan of a firm which employs two factors only, namely labour and machinery.</p>\n<table>\n<thead>\n<tr>\n<th>Machinery (units)</th>\n<th>Labour (units)</th>\n<th>Average product of labour (units)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>4</td>\n<td>1</td>\n<td>20</td>\n</tr>\n<tr>\n<td>4</td>\n<td>2</td>\n<td>21</td>\n</tr>\n<tr>\n<td>4</td>\n<td>3</td>\n<td>22</td>\n</tr>\n<tr>\n<td>4</td>\n<td>4</td>\n<td>X</td>\n</tr>\n</tbody>\n</table>\n<p>If the above data illustrate the law of diminishing marginal returns, the value of X ______.</p>\n<ul>\n<li>A. can be 23</li>\n<li>B. can be smaller than 22</li>\n<li>C. must be larger than 22</li>\n<li>D. must be smaller than 22</li>\n</ul>",
+   "file": "2020_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2020,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 9,
+   "title": "第 9 題",
+   "section": "Paper 1",
+   "tags": [
+    "成本",
+    "利潤極大化"
+   ],
+   "text": "Refer to the following table about the cost-output relationship of a profit-maximising firm.\n\n| Quantity (units) | 1 | 2 | 3 | 4 | 5 |\n|---|---|---|---|---|---|\n| Average cost ($) | 5 | 6 | 7 | 8 | 9 |\n\nIf the average cost of every unit of output decreases by $1$ and the market price is $8$,\n\n- A. the minimum cost of production is $18$.\n- B. the profit maximising output is 3 units.\n- C. the maximum profit is $10$.\n- D. the marginal cost of every unit of output will remain unchanged.",
+   "html": "<p>Refer to the following table about the cost-output relationship of a profit-maximising firm.</p>\n<table>\n<thead>\n<tr>\n<th>Quantity (units)</th>\n<th>1</th>\n<th>2</th>\n<th>3</th>\n<th>4</th>\n<th>5</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Average cost ($)</td>\n<td>5</td>\n<td>6</td>\n<td>7</td>\n<td>8</td>\n<td>9</td>\n</tr>\n</tbody>\n</table>\n<p>If the average cost of every unit of output decreases by $1$ and the market price is $8$,</p>\n<ul>\n<li>A. the minimum cost of production is $18$.</li>\n<li>B. the profit maximising output is 3 units.</li>\n<li>C. the maximum profit is $10$.</li>\n<li>D. the marginal cost of every unit of output will remain unchanged.</li>\n</ul>",
+   "file": "2020_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2020,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 10,
+   "title": "第 10 題",
+   "section": "Paper 1",
+   "tags": [
+    "差別取價",
+    "價格歧視"
+   ],
+   "text": "Alfred booked a room in a resort hotel. Later he found that Betty had booked a room in the same hotel at a lower price. Which of the following are possible reasons for such a price difference?\n(1) Alfred's booking was non-refundable while Betty's booking was with free cancellation.\n(2) Alfred booked the room in a weekend while Betty booked the room in a weekday.\n(3) Alfred booked the room with sea view while Betty booked the room with street view.\n\n- A. (1) and (2) only\n- B. (1) and (3) only\n- C. (2) and (3) only\n- D. (1), (2) and (3)",
+   "html": "<p>Alfred booked a room in a resort hotel. Later he found that Betty had booked a room in the same hotel at a lower price. Which of the following are possible reasons for such a price difference?\n(1) Alfred's booking was non-refundable while Betty's booking was with free cancellation.\n(2) Alfred booked the room in a weekend while Betty booked the room in a weekday.\n(3) Alfred booked the room with sea view while Betty booked the room with street view.</p>\n<ul>\n<li>A. (1) and (2) only</li>\n<li>B. (1) and (3) only</li>\n<li>C. (2) and (3) only</li>\n<li>D. (1), (2) and (3)</li>\n</ul>",
+   "file": "2020_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2020,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 11,
+   "title": "第 11 題",
+   "section": "Paper 1",
+   "tags": [
+    "彈性",
+    "弧彈性"
+   ],
+   "text": "When the price of Australia's red wine decreases from $70$ to $50$, the quantity demanded increases from 100 units to 122 units. What is the arc elasticity of demand for Australia's red wine within the above price range?\n\n- A. 0.59\n- B. 0.77\n- C. 1.30\n- D. 1.68",
+   "html": "<p>When the price of Australia's red wine decreases from $70$ to $50$, the quantity demanded increases from 100 units to 122 units. What is the arc elasticity of demand for Australia's red wine within the above price range?</p>\n<ul>\n<li>A. 0.59</li>\n<li>B. 0.77</li>\n<li>C. 1.30</li>\n<li>D. 1.68</li>\n</ul>",
+   "file": "2020_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2020,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 12,
+   "title": "第 12 題",
+   "section": "Paper 1",
+   "tags": [
+    "供給",
+    "其他因素不變"
+   ],
+   "text": "When the market supply curve of a good is derived, which of the following is/are assumed to be constant?\n(1) the market price of the good\n(2) the prices of factors of production of the good\n(3) the expected future price of the good\n\n- A. (1) only\n- B. (2) only\n- C. (3) only\n- D. (2) and (3) only",
+   "html": "<p>When the market supply curve of a good is derived, which of the following is/are assumed to be constant?\n(1) the market price of the good\n(2) the prices of factors of production of the good\n(3) the expected future price of the good</p>\n<ul>\n<li>A. (1) only</li>\n<li>B. (2) only</li>\n<li>C. (3) only</li>\n<li>D. (2) and (3) only</li>\n</ul>",
+   "file": "2020_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2020,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 13,
+   "title": "第 13 題",
+   "section": "Paper 1",
+   "tags": [
+    "價格功能",
+    "資源配置"
+   ],
+   "text": "In recent years, the rise in demand for private cars in China has attracted Volkswagen, a German car manufacturer, to set up car manufacturing factories in China.\n\nThe above case illustrates the ______ function of price because ______.\n\n- A. rationing ...... private cars are sold to the highest-valued users in China\n- B. rationing ...... fewer buyers are willing to buy private cars in Germany\n- C. allocative ...... the supply of private cars falls in Germany\n- D. allocative ...... more resources are allocated to the production of private cars in China",
+   "html": "<p>In recent years, the rise in demand for private cars in China has attracted Volkswagen, a German car manufacturer, to set up car manufacturing factories in China.</p>\n<p>The above case illustrates the <strong><em>_</em>_ function of price because </strong>____.</p>\n<ul>\n<li>A. rationing ...... private cars are sold to the highest-valued users in China</li>\n<li>B. rationing ...... fewer buyers are willing to buy private cars in Germany</li>\n<li>C. allocative ...... the supply of private cars falls in Germany</li>\n<li>D. allocative ...... more resources are allocated to the production of private cars in China</li>\n</ul>",
+   "file": "2020_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2020,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 14,
+   "title": "第 14 題",
+   "section": "Paper 1",
+   "tags": [
+    "供求",
+    "劣等物品"
+   ],
+   "text": "Refer to the following supply-demand diagram for Good Y.\n\n![fig_2020P1_q14](2020_P1_images/fig_2020P1_q14.png)\n\nSuppose Good Y is an inferior good and the initial market equilibrium point is E. If there is a fall in the average income level of consumers, the new market equilibrium point will be ______.\n\n- A. A\n- B. B\n- C. C\n- D. D",
+   "html": "<p>Refer to the following supply-demand diagram for Good Y.</p>\n<p><img alt=\"fig_2020P1_q14\" src=\"2020_P1_images/fig_2020P1_q14.png\" /></p>\n<p>Suppose Good Y is an inferior good and the initial market equilibrium point is E. If there is a fall in the average income level of consumers, the new market equilibrium point will be ______.</p>\n<ul>\n<li>A. A</li>\n<li>B. B</li>\n<li>C. C</li>\n<li>D. D</li>\n</ul>",
+   "file": "2020_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2020,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 15,
+   "title": "第 15 題",
+   "section": "Paper 1",
+   "tags": [
+    "補貼",
+    "稅負歸宿"
+   ],
+   "text": "The following table shows the demand and supply schedules of a good.\n\n| Price ($) | Quantity demanded (units) | Quantity supplied (units) |\n|---|---|---|\n| 20 | 70 | 40 |\n| 22 | 60 | 45 |\n| 24 | 50 | 50 |\n| 26 | 40 | 55 |\n| 28 | 30 | 60 |\n\nIf the government provides a $6$ per-unit subsidy for the producers of the good, the total subsidy provided by the government will be ______ and the ratio of consumers' share to producers' share of the subsidy will be ______.\n\n- A. $300$ ...... $1:1$\n- B. $300$ ...... $1:2$\n- C. $360$ ...... $1:1$\n- D. $360$ ...... $1:2$",
+   "html": "<p>The following table shows the demand and supply schedules of a good.</p>\n<table>\n<thead>\n<tr>\n<th>Price ($)</th>\n<th>Quantity demanded (units)</th>\n<th>Quantity supplied (units)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>20</td>\n<td>70</td>\n<td>40</td>\n</tr>\n<tr>\n<td>22</td>\n<td>60</td>\n<td>45</td>\n</tr>\n<tr>\n<td>24</td>\n<td>50</td>\n<td>50</td>\n</tr>\n<tr>\n<td>26</td>\n<td>40</td>\n<td>55</td>\n</tr>\n<tr>\n<td>28</td>\n<td>30</td>\n<td>60</td>\n</tr>\n</tbody>\n</table>\n<p>If the government provides a $6$ per-unit subsidy for the producers of the good, the total subsidy provided by the government will be <strong><em>_</em>_ and the ratio of consumers' share to producers' share of the subsidy will be </strong>____.</p>\n<ul>\n<li>A. $300$ ...... $1:1$</li>\n<li>B. $300$ ...... $1:2$</li>\n<li>C. $360$ ...... $1:1$</li>\n<li>D. $360$ ...... $1:2$</li>\n</ul>",
+   "file": "2020_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2020,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 16,
+   "title": "第 16 題",
+   "section": "Paper 1",
+   "tags": [
+    "限額",
+    "供求"
+   ],
+   "text": "![fig_2020P1_q16](2020_P1_images/fig_2020P1_q16.png)\n\nRefer to the following supply-demand diagram for the exported Chinese rare earth minerals.\n\nIf China abolished the quota on the export of rare earth minerals,\n(1) the export price of the rare earth minerals would drop.\n(2) the export quantity of the rare earth minerals would rise.\n(3) the total exchange value of the exported rare earth minerals would drop.\n\n- A. (1) and (2) only\n- B. (1) and (3) only\n- C. (2) and (3) only\n- D. (1), (2) and (3)",
+   "html": "<p><img alt=\"fig_2020P1_q16\" src=\"2020_P1_images/fig_2020P1_q16.png\" /></p>\n<p>Refer to the following supply-demand diagram for the exported Chinese rare earth minerals.</p>\n<p>If China abolished the quota on the export of rare earth minerals,\n(1) the export price of the rare earth minerals would drop.\n(2) the export quantity of the rare earth minerals would rise.\n(3) the total exchange value of the exported rare earth minerals would drop.</p>\n<ul>\n<li>A. (1) and (2) only</li>\n<li>B. (1) and (3) only</li>\n<li>C. (2) and (3) only</li>\n<li>D. (1), (2) and (3)</li>\n</ul>",
+   "file": "2020_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2020,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 17,
+   "title": "第 17 題",
+   "section": "Paper 1",
+   "tags": [
+    "彈性",
+    "煙草稅"
+   ],
+   "text": "A non-profit organisation supports the increase in cigarette tax. The organisation reveals that every 10% increase in cigarette prices reduces the total cigarette quantity transacted by 4%. Which of the following statements about cigarette tax is INCORRECT?\n\n- A. Law of demand is illustrated in the above case.\n- B. The total expenditure on cigarette will increase after the increase of the cigarette tax.\n- C. The increase in cigarette tax may lead to a greater income inequality.\n- D. The cigarette tax could help reduce the problem of under-production of cigarette.",
+   "html": "<p>A non-profit organisation supports the increase in cigarette tax. The organisation reveals that every 10% increase in cigarette prices reduces the total cigarette quantity transacted by 4%. Which of the following statements about cigarette tax is INCORRECT?</p>\n<ul>\n<li>A. Law of demand is illustrated in the above case.</li>\n<li>B. The total expenditure on cigarette will increase after the increase of the cigarette tax.</li>\n<li>C. The increase in cigarette tax may lead to a greater income inequality.</li>\n<li>D. The cigarette tax could help reduce the problem of under-production of cigarette.</li>\n</ul>",
+   "file": "2020_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2020,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 18,
+   "title": "第 18 題",
+   "section": "Paper 1",
+   "tags": [
+    "業務擴展",
+    "垂直合併"
+   ],
+   "text": "![fig_2020P1_q18](2020_P1_images/fig_2020P1_q18.png)\n\nABC Diamond Cutting Factories expand its business as follows:\n\nTo ABC Diamond Cutting Factories, the types of expansion shown by X and Y are ______ expansion and ______ expansion respectively.\n\n- A. backward ...... conglomerate\n- B. backward ...... lateral\n- C. forward ...... conglomerate\n- D. forward ...... lateral",
+   "html": "<p><img alt=\"fig_2020P1_q18\" src=\"2020_P1_images/fig_2020P1_q18.png\" /></p>\n<p>ABC Diamond Cutting Factories expand its business as follows:</p>\n<p>To ABC Diamond Cutting Factories, the types of expansion shown by X and Y are <strong><em>_</em>_ expansion and </strong>____ expansion respectively.</p>\n<ul>\n<li>A. backward ...... conglomerate</li>\n<li>B. backward ...... lateral</li>\n<li>C. forward ...... conglomerate</li>\n<li>D. forward ...... lateral</li>\n</ul>",
+   "file": "2020_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2020,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 19,
+   "title": "第 19 題",
+   "section": "Paper 1",
+   "tags": [
+    "價格上限",
+    "無謂損失"
+   ],
+   "text": "Study the following news extract.\n\n> In the last decade, the rent of residential units in Berlin was doubled due to continuous increase in demand. To deal with the problem, the Berlin government imposed a 'Rent Frozen Bill' under which the rent of residential units was not allowed to increase for at least 5 years.\n\nSuppose a similar bill is implemented in Hong Kong. Which of the following statements is correct?\n\n- A. The Gini coefficient will increase.\n- B. The property tax revenue of the government will increase.\n- C. There will be a deadweight loss if the demand for residential units keeps on increasing.\n- D. The property owners will have higher incentives to renovate their flats.",
+   "html": "<p>Study the following news extract.</p>\n<blockquote>\n<p>In the last decade, the rent of residential units in Berlin was doubled due to continuous increase in demand. To deal with the problem, the Berlin government imposed a 'Rent Frozen Bill' under which the rent of residential units was not allowed to increase for at least 5 years.</p>\n</blockquote>\n<p>Suppose a similar bill is implemented in Hong Kong. Which of the following statements is correct?</p>\n<ul>\n<li>A. The Gini coefficient will increase.</li>\n<li>B. The property tax revenue of the government will increase.</li>\n<li>C. There will be a deadweight loss if the demand for residential units keeps on increasing.</li>\n<li>D. The property owners will have higher incentives to renovate their flats.</li>\n</ul>",
+   "file": "2020_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2020,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 20,
+   "title": "第 20 題",
+   "section": "Paper 1",
+   "tags": [
+    "價格下限",
+    "無謂損失"
+   ],
+   "text": "![fig_2020P1_q20](2020_P1_images/fig_2020P1_q20.png)\n\nRefer to the following supply-demand diagram for Good X.\n\nIf the price floor of Good X changes from $P_1$ to $P_2$,\n\n- A. producer surplus will increase.\n- B. quantity transacted of Good X will remain at $Q_1$.\n- C. deadweight loss will increase.\n- D. excess demand of Good X will change to excess supply.",
+   "html": "<p><img alt=\"fig_2020P1_q20\" src=\"2020_P1_images/fig_2020P1_q20.png\" /></p>\n<p>Refer to the following supply-demand diagram for Good X.</p>\n<p>If the price floor of Good X changes from $P_1$ to $P_2$,</p>\n<ul>\n<li>A. producer surplus will increase.</li>\n<li>B. quantity transacted of Good X will remain at $Q_1$.</li>\n<li>C. deadweight loss will increase.</li>\n<li>D. excess demand of Good X will change to excess supply.</li>\n</ul>",
+   "file": "2020_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2020,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 21,
+   "title": "第 21 題",
+   "section": "Paper 1",
+   "tags": [
+    "界外效應",
+    "私人解決"
+   ],
+   "text": "![fig_2020P1_q21](2020_P1_images/fig_2020P1_q21.png)\n\nWith reference to the above information, which of the following statements is correct?\n\n- A. Children screaming in the cafe results in negative externality and all cafes should introduce similar policy to restore efficiency.\n- B. The extra charge on screaming children increases the marginal private cost of the groups with screaming children.\n- C. The 'screaming child tax' is a government solution to the divergence between private and social costs.\n- D. The 'screaming child tax' is a kind of discrimination and should not be imposed.",
+   "html": "<p><img alt=\"fig_2020P1_q21\" src=\"2020_P1_images/fig_2020P1_q21.png\" /></p>\n<p>With reference to the above information, which of the following statements is correct?</p>\n<ul>\n<li>A. Children screaming in the cafe results in negative externality and all cafes should introduce similar policy to restore efficiency.</li>\n<li>B. The extra charge on screaming children increases the marginal private cost of the groups with screaming children.</li>\n<li>C. The 'screaming child tax' is a government solution to the divergence between private and social costs.</li>\n<li>D. The 'screaming child tax' is a kind of discrimination and should not be imposed.</li>\n</ul>",
+   "file": "2020_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2020,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 22,
+   "title": "第 22 題",
+   "section": "Paper 1",
+   "tags": [
+    "羅倫茲曲線",
+    "堅尼系數"
+   ],
+   "text": "![fig_2020P1_q22](2020_P1_images/fig_2020P1_q22.png)\n\nStudy the following two Lorenz curves.\n\nCompared with Country B,\n\n- A. the Gini coefficient of Country A is larger.\n- B. Country A has a higher standard of living.\n- C. the top 20% of households in Country A have less total income.\n- D. Country A has a more even income distribution.",
+   "html": "<p><img alt=\"fig_2020P1_q22\" src=\"2020_P1_images/fig_2020P1_q22.png\" /></p>\n<p>Study the following two Lorenz curves.</p>\n<p>Compared with Country B,</p>\n<ul>\n<li>A. the Gini coefficient of Country A is larger.</li>\n<li>B. Country A has a higher standard of living.</li>\n<li>C. the top 20% of households in Country A have less total income.</li>\n<li>D. Country A has a more even income distribution.</li>\n</ul>",
+   "file": "2020_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2020,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 23,
+   "title": "第 23 題",
+   "section": "Paper 1",
+   "tags": [
+    "收入差距",
+    "人力資本"
+   ],
+   "text": "The following table shows the data of average annual income earned by women and men according to their age in 2018.\n\n| Age | Average annual income of women (HK$) | Average annual income of men (HK$) |\n|---|---|---|\n| 20 – 29 | 122000 | 121000 |\n| 50 – 59 | 482000 | 645000 |\n\nWhich of the following may explain the phenomena shown by the above data?\n(1) Women tend to leave the job market earlier than men for taking care of the family, leading to fewer women to take up senior positions in companies.\n(2) Sex discrimination in labour market exists in the older generations.\n(3) Accumulation of human capital contributes to the difference in income between different age groups.\n\n- A. (1) only\n- B. (2) only\n- C. (3) only\n- D. (1), (2) and (3)",
+   "html": "<p>The following table shows the data of average annual income earned by women and men according to their age in 2018.</p>\n<table>\n<thead>\n<tr>\n<th>Age</th>\n<th>Average annual income of women (HK$)</th>\n<th>Average annual income of men (HK$)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>20 – 29</td>\n<td>122000</td>\n<td>121000</td>\n</tr>\n<tr>\n<td>50 – 59</td>\n<td>482000</td>\n<td>645000</td>\n</tr>\n</tbody>\n</table>\n<p>Which of the following may explain the phenomena shown by the above data?\n(1) Women tend to leave the job market earlier than men for taking care of the family, leading to fewer women to take up senior positions in companies.\n(2) Sex discrimination in labour market exists in the older generations.\n(3) Accumulation of human capital contributes to the difference in income between different age groups.</p>\n<ul>\n<li>A. (1) only</li>\n<li>B. (2) only</li>\n<li>C. (3) only</li>\n<li>D. (1), (2) and (3)</li>\n</ul>",
+   "file": "2020_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2020,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 24,
+   "title": "第 24 題",
+   "section": "Paper 1",
+   "tags": [
+    "失業",
+    "就業不足"
+   ],
+   "text": "The following table shows the employment data of Hong Kong from April to June in 2019.\n\n| | Number of persons ('000) |\n|---|---|\n| Population | 7524 |\n| Aged 15 or above | 6590 |\n| Employed persons | 3871 |\n| Unemployed persons | 114 |\n| Underemployed persons | 41 |\n\nAccording to the above data, the underemployment rate is ______.\n\n- A. 0.55%\n- B. 0.62%\n- C. 1.03%\n- D. 1.06%",
+   "html": "<p>The following table shows the employment data of Hong Kong from April to June in 2019.</p>\n<table>\n<thead>\n<tr>\n<th></th>\n<th>Number of persons ('000)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Population</td>\n<td>7524</td>\n</tr>\n<tr>\n<td>Aged 15 or above</td>\n<td>6590</td>\n</tr>\n<tr>\n<td>Employed persons</td>\n<td>3871</td>\n</tr>\n<tr>\n<td>Unemployed persons</td>\n<td>114</td>\n</tr>\n<tr>\n<td>Underemployed persons</td>\n<td>41</td>\n</tr>\n</tbody>\n</table>\n<p>According to the above data, the underemployment rate is ______.</p>\n<ul>\n<li>A. 0.55%</li>\n<li>B. 0.62%</li>\n<li>C. 1.03%</li>\n<li>D. 1.06%</li>\n</ul>",
+   "file": "2020_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2020,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 25,
+   "title": "第 25 題",
+   "section": "Paper 1",
+   "tags": [
+    "國民收入",
+    "GDP"
+   ],
+   "text": "Which of the following should be deducted from the gross domestic product of Hong Kong to calculate the gross national income of Hong Kong?\n\n- A. the fee paid by a Hong Kong football club to a Japanese football team for an exhibition match in Hong Kong\n- B. the rent earned by a Hong Kong property developer from its residential property in Japan\n- C. the capital gain earned by a Japanese insurance corporation from its financial investment in Hong Kong\n- D. the dividend paid by a listed company in Japan to a Hong Kong resident",
+   "html": "<p>Which of the following should be deducted from the gross domestic product of Hong Kong to calculate the gross national income of Hong Kong?</p>\n<ul>\n<li>A. the fee paid by a Hong Kong football club to a Japanese football team for an exhibition match in Hong Kong</li>\n<li>B. the rent earned by a Hong Kong property developer from its residential property in Japan</li>\n<li>C. the capital gain earned by a Japanese insurance corporation from its financial investment in Hong Kong</li>\n<li>D. the dividend paid by a listed company in Japan to a Hong Kong resident</li>\n</ul>",
+   "file": "2020_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2020,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 26,
+   "title": "第 26 題",
+   "section": "Paper 1",
+   "tags": [
+    "實質GDP",
+    "名義GDP"
+   ],
+   "text": "The following diagram shows the gross domestic product (GDP) of Country A.\n\n![fig_2020P1_q26](2020_P1_images/fig_2020P1_q26.png)\n\nWhich of the following statements about Country A is correct?\n\n- A. The price level increased between 2016 and 2018.\n- B. Deflation occurred before 2017.\n- C. The actual inflation rate was equal to the expected inflation rate in 2017.\n- D. The nominal GDP has been increasing since 2016.",
+   "html": "<p>The following diagram shows the gross domestic product (GDP) of Country A.</p>\n<p><img alt=\"fig_2020P1_q26\" src=\"2020_P1_images/fig_2020P1_q26.png\" /></p>\n<p>Which of the following statements about Country A is correct?</p>\n<ul>\n<li>A. The price level increased between 2016 and 2018.</li>\n<li>B. Deflation occurred before 2017.</li>\n<li>C. The actual inflation rate was equal to the expected inflation rate in 2017.</li>\n<li>D. The nominal GDP has been increasing since 2016.</li>\n</ul>",
+   "file": "2020_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2020,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 27,
+   "title": "第 27 題",
+   "section": "Paper 1",
+   "tags": [
+    "總供給",
+    "SRAS"
+   ],
+   "text": "Which of the following is a reason for a leftward shift of the short run aggregate supply curve in a country?\n\n- A. There is a continuous increase in price level.\n- B. The largest market of the country's exports suffers from an economic recession.\n- C. More citizens emigrate to foreign countries.\n- D. The wages of labour slowly adjust downward due to institutional factors.",
+   "html": "<p>Which of the following is a reason for a leftward shift of the short run aggregate supply curve in a country?</p>\n<ul>\n<li>A. There is a continuous increase in price level.</li>\n<li>B. The largest market of the country's exports suffers from an economic recession.</li>\n<li>C. More citizens emigrate to foreign countries.</li>\n<li>D. The wages of labour slowly adjust downward due to institutional factors.</li>\n</ul>",
+   "file": "2020_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2020,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 28,
+   "title": "第 28 題",
+   "section": "Paper 1",
+   "tags": [
+    "貨幣需求",
+    "資產需求"
+   ],
+   "text": "![fig_2020P1_q28](2020_P1_images/fig_2020P1_q28.png)\n\nThe following diagram shows the asset demand for money of an economy.\n\nWhich of the following will cause the above change in asset demand for money?\n\n- A. The nominal interest rate increases.\n- B. There is a contraction of monetary base.\n- C. The use of electronic wallets such as Alipay（支付寶）becomes more popular.\n- D. The expected rate of return of holding bonds increases.",
+   "html": "<p><img alt=\"fig_2020P1_q28\" src=\"2020_P1_images/fig_2020P1_q28.png\" /></p>\n<p>The following diagram shows the asset demand for money of an economy.</p>\n<p>Which of the following will cause the above change in asset demand for money?</p>\n<ul>\n<li>A. The nominal interest rate increases.</li>\n<li>B. There is a contraction of monetary base.</li>\n<li>C. The use of electronic wallets such as Alipay（支付寶）becomes more popular.</li>\n<li>D. The expected rate of return of holding bonds increases.</li>\n</ul>",
+   "file": "2020_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2020,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 29,
+   "title": "第 29 題",
+   "section": "Paper 1",
+   "tags": [
+    "貨幣基礎",
+    "貨幣供應"
+   ],
+   "text": "The legal tender in Hong Kong held by licensed banks is included in ______.\n(1) monetary base\n(2) money supply M2\n(3) money supply M3\n\n- A. (1) only\n- B. (2) only\n- C. (2) and (3) only\n- D. (1), (2) and (3)",
+   "html": "<p>The legal tender in Hong Kong held by licensed banks is included in ______.\n(1) monetary base\n(2) money supply M2\n(3) money supply M3</p>\n<ul>\n<li>A. (1) only</li>\n<li>B. (2) only</li>\n<li>C. (2) and (3) only</li>\n<li>D. (1), (2) and (3)</li>\n</ul>",
+   "file": "2020_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2020,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 30,
+   "title": "第 30 題",
+   "section": "Paper 1",
+   "tags": [
+    "銀行乘數",
+    "貨幣創造"
+   ],
+   "text": "Refer to the following information about an economy. Suppose all banks do not hold any excess reserves.\n\n| | $ million |\n|---|---|\n| Currency in public circulation | 10 |\n| Monetary base | 30 |\n| Money supply | 110 |\n\nIf the public deposits all the cash into the banking system,\n\n- A. the actual banking multiplier will be 4.\n- B. the maximum amount of loans will be $120$ million.\n- C. the maximum amount of deposits will be $140$ million.\n- D. the new money supply will be $160$ million.",
+   "html": "<p>Refer to the following information about an economy. Suppose all banks do not hold any excess reserves.</p>\n<table>\n<thead>\n<tr>\n<th></th>\n<th>$ million</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Currency in public circulation</td>\n<td>10</td>\n</tr>\n<tr>\n<td>Monetary base</td>\n<td>30</td>\n</tr>\n<tr>\n<td>Money supply</td>\n<td>110</td>\n</tr>\n</tbody>\n</table>\n<p>If the public deposits all the cash into the banking system,</p>\n<ul>\n<li>A. the actual banking multiplier will be 4.</li>\n<li>B. the maximum amount of loans will be $120$ million.</li>\n<li>C. the maximum amount of deposits will be $140$ million.</li>\n<li>D. the new money supply will be $160$ million.</li>\n</ul>",
+   "file": "2020_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2020,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 31,
+   "title": "乙部 第 31 題",
+   "section": "Paper 1　乙部",
+   "tags": [
+    "貨幣市場",
+    "利率"
+   ],
+   "text": "![fig_2020P1_q31](2020_P1_images/fig_2020P1_q31.png)\n\nThe following diagram indicates the money supply curve ($M_s$) and money demand curve ($M_d$) of a certain economy. Suppose the initial equilibrium point is at E.\n\nIf the income of the public increases and the central bank sells government bonds to the public, the interest rate ______ and the quantity of money ______.\n\n- A. will decrease ...... will increase\n- B. will increase ...... may increase or decrease\n- C. may increase or decrease ...... will decrease\n- D. will increase ...... will decrease",
+   "html": "<p><img alt=\"fig_2020P1_q31\" src=\"2020_P1_images/fig_2020P1_q31.png\" /></p>\n<p>The following diagram indicates the money supply curve ($M_s$) and money demand curve ($M_d$) of a certain economy. Suppose the initial equilibrium point is at E.</p>\n<p>If the income of the public increases and the central bank sells government bonds to the public, the interest rate <strong><em>_</em>_ and the quantity of money </strong>____.</p>\n<ul>\n<li>A. will decrease ...... will increase</li>\n<li>B. will increase ...... may increase or decrease</li>\n<li>C. may increase or decrease ...... will decrease</li>\n<li>D. will increase ...... will decrease</li>\n</ul>",
+   "file": "2020_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2020,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 32,
+   "title": "第 32 題",
+   "section": "Paper 1",
+   "tags": [
+    "貨幣政策",
+    "緊縮政策"
+   ],
+   "text": "Which of the following is a contractionary monetary policy?\n\n- A. an increase in the discount rate\n- B. an increase in the salaries tax rate\n- C. a decrease in the required reserve ratio\n- D. a decrease in the quota for migration",
+   "html": "<p>Which of the following is a contractionary monetary policy?</p>\n<ul>\n<li>A. an increase in the discount rate</li>\n<li>B. an increase in the salaries tax rate</li>\n<li>C. a decrease in the required reserve ratio</li>\n<li>D. a decrease in the quota for migration</li>\n</ul>",
+   "file": "2020_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2020,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 33,
+   "title": "第 33 題",
+   "section": "Paper 1",
+   "tags": [
+    "銀行乘數",
+    "現金流失"
+   ],
+   "text": "Which of the following will increase the actual banking multiplier?\n\n- A. The public tends to hold more cash.\n- B. The use of credit card becomes more popular.\n- C. The central bank increases the required reserve ratio.\n- D. The interest rate of bank deposit decreases.",
+   "html": "<p>Which of the following will increase the actual banking multiplier?</p>\n<ul>\n<li>A. The public tends to hold more cash.</li>\n<li>B. The use of credit card becomes more popular.</li>\n<li>C. The central bank increases the required reserve ratio.</li>\n<li>D. The interest rate of bank deposit decreases.</li>\n</ul>",
+   "file": "2020_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2020,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 34,
+   "title": "第 34 題",
+   "section": "Paper 1",
+   "tags": [
+    "通脹",
+    "財富再分配"
+   ],
+   "text": "When there is unexpected inflation, which of the following persons will gain?\n\n- A. a landlord who adjusts his rental according to the price index\n- B. a creditor who has loaned out a sum of money at a floating interest rate\n- C. an employer who signs a fixed nominal wage contract with his employees\n- D. a retired civil servant who receives a fixed monthly pension",
+   "html": "<p>When there is unexpected inflation, which of the following persons will gain?</p>\n<ul>\n<li>A. a landlord who adjusts his rental according to the price index</li>\n<li>B. a creditor who has loaned out a sum of money at a floating interest rate</li>\n<li>C. an employer who signs a fixed nominal wage contract with his employees</li>\n<li>D. a retired civil servant who receives a fixed monthly pension</li>\n</ul>",
+   "file": "2020_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2020,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 35,
+   "title": "第 35 題",
+   "section": "Paper 1",
+   "tags": [
+    "財政政策",
+    "總需求"
+   ],
+   "text": "Which of the following policies would offset the effect of an increase in the willingness to invest on the price level?\n(1) an increase in profits tax rate\n(2) an increase in transfer payment\n(3) a decrease in tax allowance\n\n- A. (1) and (2) only\n- B. (1) and (3) only\n- C. (2) and (3) only\n- D. (1), (2) and (3)",
+   "html": "<p>Which of the following policies would offset the effect of an increase in the willingness to invest on the price level?\n(1) an increase in profits tax rate\n(2) an increase in transfer payment\n(3) a decrease in tax allowance</p>\n<ul>\n<li>A. (1) and (2) only</li>\n<li>B. (1) and (3) only</li>\n<li>C. (2) and (3) only</li>\n<li>D. (1), (2) and (3)</li>\n</ul>",
+   "file": "2020_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2020,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 36,
+   "title": "第 36 題",
+   "section": "Paper 1",
+   "tags": [
+    "AD-AS",
+    "通縮缺口"
+   ],
+   "text": "![fig_2020P1_q36](2020_P1_images/fig_2020P1_q36.png)\n\nThe diagram below shows the aggregate demand curve, the short run aggregate supply curve and the long run aggregate supply curve of an economy.\n\nSuppose the economy initially operates at $E_0$ and the total import value equals to the total export value. If the government decreases the amount of social security assistance for the elderly, in the short run, the deflationary (output) gap will become ______ and there will be a ______.\n\n- A. narrower ...... trade surplus\n- B. narrower ...... trade deficit\n- C. wider ...... trade surplus\n- D. wider ...... trade deficit",
+   "html": "<p><img alt=\"fig_2020P1_q36\" src=\"2020_P1_images/fig_2020P1_q36.png\" /></p>\n<p>The diagram below shows the aggregate demand curve, the short run aggregate supply curve and the long run aggregate supply curve of an economy.</p>\n<p>Suppose the economy initially operates at $E_0$ and the total import value equals to the total export value. If the government decreases the amount of social security assistance for the elderly, in the short run, the deflationary (output) gap will become <strong><em>_</em>_ and there will be a </strong>____.</p>\n<ul>\n<li>A. narrower ...... trade surplus</li>\n<li>B. narrower ...... trade deficit</li>\n<li>C. wider ...... trade surplus</li>\n<li>D. wider ...... trade deficit</li>\n</ul>",
+   "file": "2020_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2020,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 37,
+   "title": "第 37 題",
+   "section": "Paper 1",
+   "tags": [
+    "穩定政策",
+    "貨幣政策"
+   ],
+   "text": "An economist said, 'The continuous fall in stock prices in our country has already affected the consumption expenditure as well as the money demand. We should implement a policy to relieve the effects on the output level and the interest rate.' Which of the following policies can stabilise the output level and the interest rate in the country at the same time in the short run?\n(Assume the interest rate is mainly affected by the asset demand for money in this case.)\n\n- A. The government increases cash subsidy to the poor.\n- B. The government gives tariff exemption to the imports of goods.\n- C. The central bank instructs the commercial banks to tighten the requirement of personal loans.\n- D. The central bank buys government bonds from the public.",
+   "html": "<p>An economist said, 'The continuous fall in stock prices in our country has already affected the consumption expenditure as well as the money demand. We should implement a policy to relieve the effects on the output level and the interest rate.' Which of the following policies can stabilise the output level and the interest rate in the country at the same time in the short run?\n(Assume the interest rate is mainly affected by the asset demand for money in this case.)</p>\n<ul>\n<li>A. The government increases cash subsidy to the poor.</li>\n<li>B. The government gives tariff exemption to the imports of goods.</li>\n<li>C. The central bank instructs the commercial banks to tighten the requirement of personal loans.</li>\n<li>D. The central bank buys government bonds from the public.</li>\n</ul>",
+   "file": "2020_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2020,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 38,
+   "title": "第 38 題",
+   "section": "Paper 1",
+   "tags": [
+    "銷售稅",
+    "收入分配"
+   ],
+   "text": "In 2019, the Japanese government increases the general sales tax rate on most of the goods and services from 8% to 10%. As a result,\n(1) income inequality will be higher.\n(2) the fiscal deficit will be eliminated.\n(3) the invisible trade deficit will decrease.\n\n- A. (1) only\n- B. (2) only\n- C. (3) only\n- D. (1), (2) and (3)",
+   "html": "<p>In 2019, the Japanese government increases the general sales tax rate on most of the goods and services from 8% to 10%. As a result,\n(1) income inequality will be higher.\n(2) the fiscal deficit will be eliminated.\n(3) the invisible trade deficit will decrease.</p>\n<ul>\n<li>A. (1) only</li>\n<li>B. (2) only</li>\n<li>C. (3) only</li>\n<li>D. (1), (2) and (3)</li>\n</ul>",
+   "file": "2020_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2020,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 39,
+   "title": "第 39 題",
+   "section": "Paper 1",
+   "tags": [
+    "稅務原則",
+    "亞當斯密"
+   ],
+   "text": "The following is an extract of the mission of the Inland Revenue Department.\n\n> Our Mission\n>\n> We are committed to\n>\n> - collecting revenue efficiently and cost-effectively\n> - enabling staff to acquire the necessary knowledge, skills and attitude so that they can contribute their best to the achievement of our vision\n\nThe above mission is in line with the ______ principle of taxation put forward by Adam Smith.\n\n- A. equality\n- B. certainty\n- C. convenience\n- D. economy",
+   "html": "<p>The following is an extract of the mission of the Inland Revenue Department.</p>\n<blockquote>\n<p>Our Mission</p>\n<p>We are committed to</p>\n<ul>\n<li>collecting revenue efficiently and cost-effectively</li>\n<li>enabling staff to acquire the necessary knowledge, skills and attitude so that they can contribute their best to the achievement of our vision</li>\n</ul>\n</blockquote>\n<p>The above mission is in line with the ______ principle of taxation put forward by Adam Smith.</p>\n<ul>\n<li>A. equality</li>\n<li>B. certainty</li>\n<li>C. convenience</li>\n<li>D. economy</li>\n</ul>",
+   "file": "2020_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2020,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 40,
+   "title": "第 40 題",
+   "section": "Paper 1",
+   "tags": [
+    "香港稅制",
+    "稅種"
+   ],
+   "text": "Mr. Chan runs a factory in mainland China and earns a huge profit. Recently he has bought a flat and a second hand electric car in Hong Kong, and received dividends from his shares of HSBC.\n\nAccording to the above information, which type(s) of tax does he need to pay to the Hong Kong government?\n(1) Property tax\n(2) Stamp duty\n(3) Profits tax\n(4) First registration tax\n\n- A. (2) only\n- B. (1) and (4) only\n- C. (2) and (3) only\n- D. (1), (3) and (4) only",
+   "html": "<p>Mr. Chan runs a factory in mainland China and earns a huge profit. Recently he has bought a flat and a second hand electric car in Hong Kong, and received dividends from his shares of HSBC.</p>\n<p>According to the above information, which type(s) of tax does he need to pay to the Hong Kong government?\n(1) Property tax\n(2) Stamp duty\n(3) Profits tax\n(4) First registration tax</p>\n<ul>\n<li>A. (2) only</li>\n<li>B. (1) and (4) only</li>\n<li>C. (2) and (3) only</li>\n<li>D. (1), (3) and (4) only</li>\n</ul>",
+   "file": "2020_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2020,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 41,
+   "title": "第 41 題",
+   "section": "Paper 1",
+   "tags": [
+    "稅務寬免",
+    "所得稅"
+   ],
+   "text": "In the case WITHOUT tax exemption, John needs to pay $15\\,000$ and Mary needs to pay $35\\,000$ as income tax.\n\nSuppose the government proposes the following income tax exemption measures:\n\n| | Amount of tax exemption |\n|---|---|\n| Measure I | 75% of income tax, maximum $30\\,000$ |\n| Measure II | 100% of income tax, maximum $20\\,000$ |\n\nJohn will prefer ______ while Mary will prefer ______.\n\n- A. measure I ...... measure I\n- B. measure I ...... measure II\n- C. measure II ...... measure I\n- D. measure II ...... measure II",
+   "html": "<p>In the case WITHOUT tax exemption, John needs to pay $15\\,000$ and Mary needs to pay $35\\,000$ as income tax.</p>\n<p>Suppose the government proposes the following income tax exemption measures:</p>\n<table>\n<thead>\n<tr>\n<th></th>\n<th>Amount of tax exemption</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Measure I</td>\n<td>75% of income tax, maximum $30\\,000$</td>\n</tr>\n<tr>\n<td>Measure II</td>\n<td>100% of income tax, maximum $20\\,000$</td>\n</tr>\n</tbody>\n</table>\n<p>John will prefer <strong><em>_</em>_ while Mary will prefer </strong>____.</p>\n<ul>\n<li>A. measure I ...... measure I</li>\n<li>B. measure I ...... measure II</li>\n<li>C. measure II ...... measure I</li>\n<li>D. measure II ...... measure II</li>\n</ul>",
+   "file": "2020_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2020,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 42,
+   "title": "第 42 題",
+   "section": "Paper 1",
+   "tags": [
+    "比較優勢",
+    "貿易得益"
+   ],
+   "text": "The following table shows the amounts of consumption on two goods in Country A and Country B before international trade. Assume both countries use one unit of resources on producing Good X and one unit of resources on producing Good Y.\n\n| | Consumption before trade (units) | |\n|---|---|---|\n| | Good X | Good Y |\n| Country A | 100 | and 25 |\n| Country B | 80 | and 40 |\n\nIf Country A and Country B completely specialise their production and trade with each other, the total output of both countries will increase by ______ units of Good X and ______ units of Good Y.\n\n- A. 15 ...... 15\n- B. 15 ...... 20\n- C. 20 ...... 15\n- D. 20 ...... 20",
+   "html": "<p>The following table shows the amounts of consumption on two goods in Country A and Country B before international trade. Assume both countries use one unit of resources on producing Good X and one unit of resources on producing Good Y.</p>\n<table>\n<thead>\n<tr>\n<th></th>\n<th>Consumption before trade (units)</th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td></td>\n<td>Good X</td>\n<td>Good Y</td>\n</tr>\n<tr>\n<td>Country A</td>\n<td>100</td>\n<td>and 25</td>\n</tr>\n<tr>\n<td>Country B</td>\n<td>80</td>\n<td>and 40</td>\n</tr>\n</tbody>\n</table>\n<p>If Country A and Country B completely specialise their production and trade with each other, the total output of both countries will increase by <strong><em>_</em>_ units of Good X and </strong>____ units of Good Y.</p>\n<ul>\n<li>A. 15 ...... 15</li>\n<li>B. 15 ...... 20</li>\n<li>C. 20 ...... 15</li>\n<li>D. 20 ...... 20</li>\n</ul>",
+   "file": "2020_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2020,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 43,
+   "title": "第 43 題",
+   "section": "Paper 1",
+   "tags": [
+    "開放經濟",
+    "進口"
+   ],
+   "text": "![fig_2020P1_q43](2020_P1_images/fig_2020P1_q43.png)\n\nThe diagram below shows the market situation of Good X in a small open economy.\n\n$P_0$ is the price before trade and $P_1$ is the price after trade. Which of the following statements about Good X are correct after the economy opens up for international trade?\n(1) The total expenditure on Good X of domestic consumers would be $P_1\\times Q_d$.\n(2) The value of domestically produced Good X would be $P_1\\times Q_s$.\n(3) The shortage of Good X would be $Q_d-Q_s$.\n\n- A. (1) and (2) only\n- B. (1) and (3) only\n- C. (2) and (3) only\n- D. (1), (2) and (3)",
+   "html": "<p><img alt=\"fig_2020P1_q43\" src=\"2020_P1_images/fig_2020P1_q43.png\" /></p>\n<p>The diagram below shows the market situation of Good X in a small open economy.</p>\n<p>$P_0$ is the price before trade and $P_1$ is the price after trade. Which of the following statements about Good X are correct after the economy opens up for international trade?\n(1) The total expenditure on Good X of domestic consumers would be $P_1\\times Q_d$.\n(2) The value of domestically produced Good X would be $P_1\\times Q_s$.\n(3) The shortage of Good X would be $Q_d-Q_s$.</p>\n<ul>\n<li>A. (1) and (2) only</li>\n<li>B. (1) and (3) only</li>\n<li>C. (2) and (3) only</li>\n<li>D. (1), (2) and (3)</li>\n</ul>",
+   "file": "2020_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2020,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 44,
+   "title": "第 44 題",
+   "section": "Paper 1",
+   "tags": [
+    "匯率",
+    "國際貿易"
+   ],
+   "text": "The following table shows the change in the exchange rate of Euro against the US dollar.\n\n| Date | Exchange rate |\n|---|---|\n| 22 September 2018 | 1 EUR = US$ 1.176 |\n| 22 August 2019 | 1 EUR = US$ 1.109 |\n\nThe above change in the exchange rate will lead to a decrease in\n\n- A. the number of European tourists visiting the US.\n- B. the volume of goods exported from Europe to the US.\n- C. the total value of US exports to Europe (in terms of Euro).\n- D. the total value of European exports to the US (in term of the US dollar).",
+   "html": "<p>The following table shows the change in the exchange rate of Euro against the US dollar.</p>\n<table>\n<thead>\n<tr>\n<th>Date</th>\n<th>Exchange rate</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>22 September 2018</td>\n<td>1 EUR = US$ 1.176</td>\n</tr>\n<tr>\n<td>22 August 2019</td>\n<td>1 EUR = US$ 1.109</td>\n</tr>\n</tbody>\n</table>\n<p>The above change in the exchange rate will lead to a decrease in</p>\n<ul>\n<li>A. the number of European tourists visiting the US.</li>\n<li>B. the volume of goods exported from Europe to the US.</li>\n<li>C. the total value of US exports to Europe (in terms of Euro).</li>\n<li>D. the total value of European exports to the US (in term of the US dollar).</li>\n</ul>",
+   "file": "2020_P1_QU(ENG).md"
+  },
+  {
+   "subject": "經濟",
+   "year": 2020,
+   "paper": "Paper 1",
+   "type": "題目",
+   "qno": 45,
+   "title": "第 45 題",
+   "section": "Paper 1",
+   "tags": [
+    "聯繫匯率",
+    "香港貨幣"
+   ],
+   "text": "Under the linked exchange rate system of Hong Kong, which of the following statements is correct?\n\n- A. The money supply M1 of Hong Kong has to be fully backed up by the US dollar.\n- B. Hong Kong's export volume will increase when the US dollar depreciates against other currencies.\n- C. The market exchange rate of the HK dollar relative to the US dollar is fixed.\n- D. Hong Kong citizens can sell 1 USD to the three note-issuing banks for 7.8 HKD.\n\n---\n\n## 圖進度（真實狀態）\n\n- **已收／已過核**：Q6、Q14、Q21、Q22（A+B）、Q26。\n- **§9.4 dir1/dir2≥99.5%**：Q16、Q18、Q20、Q28、Q31、Q36、Q43。\n- **maxdev**：Q28=**2.00**；Q16/Q20/Q31/Q36=2.24；Q18/Q43=2.83（AA 雜點面積≤7，見 audit）。\n- 檔頭**未**因 maxdev 略超而寫「已 100% 重繪」。",
+   "html": "<p>Under the linked exchange rate system of Hong Kong, which of the following statements is correct?</p>\n<ul>\n<li>A. The money supply M1 of Hong Kong has to be fully backed up by the US dollar.</li>\n<li>B. Hong Kong's export volume will increase when the US dollar depreciates against other currencies.</li>\n<li>C. The market exchange rate of the HK dollar relative to the US dollar is fixed.</li>\n<li>D. Hong Kong citizens can sell 1 USD to the three note-issuing banks for 7.8 HKD.</li>\n</ul>\n<hr />\n<h2>圖進度（真實狀態）</h2>\n<ul>\n<li><strong>已收／已過核</strong>：Q6、Q14、Q21、Q22（A+B）、Q26。</li>\n<li><strong>§9.4 dir1/dir2≥99.5%</strong>：Q16、Q18、Q20、Q28、Q31、Q36、Q43。</li>\n<li><strong>maxdev</strong>：Q28=<strong>2.00</strong>；Q16/Q20/Q31/Q36=2.24；Q18/Q43=2.83（AA 雜點面積≤7，見 audit）。</li>\n<li>檔頭<strong>未</strong>因 maxdev 略超而寫「已 100% 重繪」。</li>\n</ul>",
+   "file": "2020_P1_QU(ENG).md"
   }
  ]
 };

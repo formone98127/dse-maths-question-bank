@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-11-05T00:00:18.244627</dc:date>
+    <dc:date>2026-11-05T14:28:59.864464</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -1468,7 +1468,7 @@ L 1044.72 867.6
 " clip-path="url(#pea0db4b953)" style="fill: none; stroke: #000000; stroke-width: 2.16"/>
    </g>
    <g id="text_1">
-    <text style="font-size: 30.434783px; font-family: 'Times New Roman'; text-anchor: start" x="15.84" y="39.96" transform="rotate(-0 15.84 39.96)">A.</text>
+    <text style="font-weight: 700; font-size: 30.434783px; font-family: 'Times New Roman'; text-anchor: start" x="15.84" y="39.96" transform="rotate(-0 15.84 39.96)">A.</text>
    </g>
    <g id="text_2">
     <text style="font-size: 30.434783px; font-family: 'Times New Roman'; text-anchor: start" x="61.56" y="119.52" transform="rotate(-0 61.56 119.52)">Price level</text>
@@ -1495,7 +1495,7 @@ L 1044.72 867.6
     <text style="font-size: 32.608696px; font-family: 'Times New Roman'; text-anchor: start" x="469.8" y="437.4" transform="rotate(-0 469.8 437.4)">Output level</text>
    </g>
    <g id="text_10">
-    <text style="font-size: 30.434783px; font-family: 'Times New Roman'; text-anchor: start" x="686.88" y="36.72" transform="rotate(-0 686.88 36.72)">B.</text>
+    <text style="font-weight: 700; font-size: 30.434783px; font-family: 'Times New Roman'; text-anchor: start" x="686.88" y="36.72" transform="rotate(-0 686.88 36.72)">B.</text>
    </g>
    <g id="text_11">
     <text style="font-size: 30.434783px; font-family: 'Times New Roman'; text-anchor: start" x="714.24" y="114.48" transform="rotate(-0 714.24 114.48)">Price level</text>
@@ -1522,7 +1522,7 @@ L 1044.72 867.6
     <text style="font-size: 31.521739px; font-family: 'Times New Roman'; text-anchor: start" x="1124.64" y="433.44" transform="rotate(-0 1124.64 433.44)">Output level</text>
    </g>
    <g id="text_19">
-    <text style="font-size: 31.521739px; font-family: 'Times New Roman'; text-anchor: start" x="15.12" y="522" transform="rotate(-0 15.12 522)">C.</text>
+    <text style="font-weight: 700; font-size: 31.521739px; font-family: 'Times New Roman'; text-anchor: start" x="15.12" y="522" transform="rotate(-0 15.12 522)">C.</text>
    </g>
    <g id="text_20">
     <text style="font-size: 31.521739px; font-family: 'Times New Roman'; text-anchor: start" x="59.76" y="611.28" transform="rotate(-0 59.76 611.28)">Price level</text>
@@ -1558,7 +1558,7 @@ L 1044.72 867.6
     <text style="font-size: 31.521739px; font-family: 'Times New Roman'; text-anchor: start" x="473.04" y="929.52" transform="rotate(-0 473.04 929.52)">Output level</text>
    </g>
    <g id="text_31">
-    <text style="font-size: 30.434783px; font-family: 'Times New Roman'; text-anchor: start" x="687.6" y="517.68" transform="rotate(-0 687.6 517.68)">D.</text>
+    <text style="font-weight: 700; font-size: 30.434783px; font-family: 'Times New Roman'; text-anchor: start" x="687.6" y="517.68" transform="rotate(-0 687.6 517.68)">D.</text>
    </g>
    <g id="text_32">
     <text style="font-size: 31.521739px; font-family: 'Times New Roman'; text-anchor: start" x="712.8" y="608.76" transform="rotate(-0 712.8 608.76)">Price level</text>

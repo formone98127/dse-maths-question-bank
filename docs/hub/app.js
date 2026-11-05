@@ -6,9 +6,9 @@ const ALL = "__ALL__";  // 所有
 
 const state = {
   mode: "year",
-  subject: PLACE,
-  year: PLACE,
-  paper: ALL, // 預設「所有」
+  subject: ALL, // 預設「所有」
+  year: ALL,
+  paper: ALL,
   topic: PLACE,
 };
 
@@ -147,11 +147,8 @@ function emptyHtml(msg) {
 }
 
 function anyFilterSet() {
-  // 卷別預設「所有」唔算已揀；要科目／年份，或者主動揀咗具體卷別
-  if (state.subject !== PLACE) return true;
-  if (state.year !== PLACE) return true;
-  if (state.paper !== PLACE && state.paper !== ALL) return true;
-  return false;
+  // 「所有」會列出範圍；全部退返「請選擇」先空白
+  return state.subject !== PLACE || state.year !== PLACE || state.paper !== PLACE;
 }
 
 function sortRows(rows) {
@@ -284,7 +281,7 @@ function commitReel() {
   } else {
     state[reelKey] = v;
     if (reelKey === "subject") {
-      state.year = PLACE;
+      state.year = ALL;
       state.paper = ALL;
       state.topic = PLACE;
     } else if (reelKey === "year") {

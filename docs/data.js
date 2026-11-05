@@ -1,5 +1,5 @@
 window.QB = {
- "generated": "2026-11-05 15:31",
+ "generated": "2026-11-05 18:25",
  "count": 327,
  "questions": [
   {
@@ -2465,8 +2465,8 @@ window.QB = {
     "二次函數圖像",
     "參數符號"
    ],
-   "text": "圖中所示為 $y=a\\left(x+b\\right)^2$ 的圖像，其中 $a$ 及 $b$ 均為常數。下列何者正確？\n\n> 圖形要點：開口向上的拋物線，頂點在 $x$ 軸上（與 $x$ 軸相切）且位於 $y$ 軸左側；曲線與 $y$ 軸交於正值。\n\n- A. $a<0$ 及 $b<0$\n- B. $a<0$ 及 $b>0$\n- C. $a>0$ 及 $b<0$\n- D. $a>0$ 及 $b>0$",
-   "html": "<p>圖中所示為 $y=a\\left(x+b\\right)^2$ 的圖像，其中 $a$ 及 $b$ 均為常數。下列何者正確？</p>\n<blockquote>\n<p>圖形要點：開口向上的拋物線，頂點在 $x$ 軸上（與 $x$ 軸相切）且位於 $y$ 軸左側；曲線與 $y$ 軸交於正值。</p>\n</blockquote>\n<ul>\n<li>A. $a&lt;0$ 及 $b&lt;0$</li>\n<li>B. $a&lt;0$ 及 $b&gt;0$</li>\n<li>C. $a&gt;0$ 及 $b&lt;0$</li>\n<li>D. $a&gt;0$ 及 $b&gt;0$</li>\n</ul>",
+   "text": "圖中所示為 $y=a\\left(x+b\\right)^2$ 的圖像，其中 $a$ 及 $b$ 均為常數。下列何者正確？\n\n![2015 P2 Q8 拋物線](2015P2_figs_svg/2015P2_Q8.svg)\n\n- A. $a<0$ 及 $b<0$\n- B. $a<0$ 及 $b>0$\n- C. $a>0$ 及 $b<0$\n- D. $a>0$ 及 $b>0$",
+   "html": "<p>圖中所示為 $y=a\\left(x+b\\right)^2$ 的圖像，其中 $a$ 及 $b$ 均為常數。下列何者正確？</p>\n<p><img alt=\"2015 P2 Q8 拋物線\" src=\"2015P2_figs_svg/2015P2_Q8.svg\" /></p>\n<ul>\n<li>A. $a&lt;0$ 及 $b&lt;0$</li>\n<li>B. $a&lt;0$ 及 $b&gt;0$</li>\n<li>C. $a&gt;0$ 及 $b&lt;0$</li>\n<li>D. $a&gt;0$ 及 $b&gt;0$</li>\n</ul>",
    "file": "2015_P2_QU(CHI).md"
   },
   {
@@ -2545,8 +2545,8 @@ window.QB = {
     "數列",
     "規律"
    ],
-   "text": "圖中，第 1 個圖案包含 5 粒點子。對任意正整數 $n$，第 $\\left(n+1\\right)$ 個圖案是由第 $n$ 個圖案加上 4 粒點子所組成。求第 6 個圖案的點子數目。\n\n> 圖形要點：三個十字形點陣圖案依次排開——第 1 個 5 粒、第 2 個 9 粒、第 3 個 13 粒，其後為「⋯」。\n\n- A. 21\n- B. 25\n- C. 29\n- D. 33",
-   "html": "<p>圖中，第 1 個圖案包含 5 粒點子。對任意正整數 $n$，第 $\\left(n+1\\right)$ 個圖案是由第 $n$ 個圖案加上 4 粒點子所組成。求第 6 個圖案的點子數目。</p>\n<blockquote>\n<p>圖形要點：三個十字形點陣圖案依次排開——第 1 個 5 粒、第 2 個 9 粒、第 3 個 13 粒，其後為「⋯」。</p>\n</blockquote>\n<ul>\n<li>A. 21</li>\n<li>B. 25</li>\n<li>C. 29</li>\n<li>D. 33</li>\n</ul>",
+   "text": "圖中，第 1 個圖案包含 5 粒點子。對任意正整數 $n$，第 $\\left(n+1\\right)$ 個圖案是由第 $n$ 個圖案加上 4 粒點子所組成。求第 6 個圖案的點子數目。\n\n![2015 P2 Q13 點子圖案](2015P2_figs_svg/2015P2_Q13.svg)\n\n- A. 21\n- B. 25\n- C. 29\n- D. 33",
+   "html": "<p>圖中，第 1 個圖案包含 5 粒點子。對任意正整數 $n$，第 $\\left(n+1\\right)$ 個圖案是由第 $n$ 個圖案加上 4 粒點子所組成。求第 6 個圖案的點子數目。</p>\n<p><img alt=\"2015 P2 Q13 點子圖案\" src=\"2015P2_figs_svg/2015P2_Q13.svg\" /></p>\n<ul>\n<li>A. 21</li>\n<li>B. 25</li>\n<li>C. 29</li>\n<li>D. 33</li>\n</ul>",
    "file": "2015_P2_QU(CHI).md"
   },
   {
@@ -2578,8 +2578,8 @@ window.QB = {
     "畢氏定理",
     "圖形面積"
    ],
-   "text": "圖中，$N$ 為 $AC$ 上的一點且 $E$ 為 $DN$ 上的一點。若 $DN=6$ cm 及 $EN=5$ cm，則 $\\triangle ABC$ 的面積為\n\n> 圖形要點：$C$ 在左下、$B$ 在右下（$CB=16$ cm，$B$ 處有直角標記），$A$ 在 $B$ 正上方；$D$ 在上左，$DC=10$ cm；$EA=13$ cm（$E$ 在 $D$ 的下方）；$N$ 在 $AC$ 上且 $DN\\perp AC$（$N$ 處有直角標記），$D$—$E$—$N$ 成一直線。\n\n- A. $24\\text{ cm}^2$\n- B. $30\\text{ cm}^2$\n- C. $96\\text{ cm}^2$\n- D. $192\\text{ cm}^2$",
-   "html": "<p>圖中，$N$ 為 $AC$ 上的一點且 $E$ 為 $DN$ 上的一點。若 $DN=6$ cm 及 $EN=5$ cm，則 $\\triangle ABC$ 的面積為</p>\n<blockquote>\n<p>圖形要點：$C$ 在左下、$B$ 在右下（$CB=16$ cm，$B$ 處有直角標記），$A$ 在 $B$ 正上方；$D$ 在上左，$DC=10$ cm；$EA=13$ cm（$E$ 在 $D$ 的下方）；$N$ 在 $AC$ 上且 $DN\\perp AC$（$N$ 處有直角標記），$D$—$E$—$N$ 成一直線。</p>\n</blockquote>\n<ul>\n<li>A. $24\\text{ cm}^2$</li>\n<li>B. $30\\text{ cm}^2$</li>\n<li>C. $96\\text{ cm}^2$</li>\n<li>D. $192\\text{ cm}^2$</li>\n</ul>",
+   "text": "圖中，$N$ 為 $AC$ 上的一點且 $E$ 為 $DN$ 上的一點。若 $DN=6$ cm 及 $EN=5$ cm，則 $\\triangle ABC$ 的面積為\n\n![2015 P2 Q15 三角形](2015P2_figs_svg/2015P2_Q15.svg)\n\n- A. $24\\text{ cm}^2$\n- B. $30\\text{ cm}^2$\n- C. $96\\text{ cm}^2$\n- D. $192\\text{ cm}^2$",
+   "html": "<p>圖中，$N$ 為 $AC$ 上的一點且 $E$ 為 $DN$ 上的一點。若 $DN=6$ cm 及 $EN=5$ cm，則 $\\triangle ABC$ 的面積為</p>\n<p><img alt=\"2015 P2 Q15 三角形\" src=\"2015P2_figs_svg/2015P2_Q15.svg\" /></p>\n<ul>\n<li>A. $24\\text{ cm}^2$</li>\n<li>B. $30\\text{ cm}^2$</li>\n<li>C. $96\\text{ cm}^2$</li>\n<li>D. $192\\text{ cm}^2$</li>\n</ul>",
    "file": "2015_P2_QU(CHI).md"
   },
   {
@@ -2595,8 +2595,8 @@ window.QB = {
     "平截頭體",
     "體積"
    ],
-   "text": "一直立圓錐體的高及底半徑分別為 12 cm 及 9 cm。該圓錐體切去上部後形成的高為 8 cm 的平截頭體。求該平截頭體的體積。\n\n> 圖形要點：直立圓錐體切去頂部後餘下的平截頭體示意圖。\n\n- A. $210\\pi\\text{ cm}^3$\n- B. $312\\pi\\text{ cm}^3$\n- C. $324\\pi\\text{ cm}^3$\n- D. $936\\pi\\text{ cm}^3$",
-   "html": "<p>一直立圓錐體的高及底半徑分別為 12 cm 及 9 cm。該圓錐體切去上部後形成的高為 8 cm 的平截頭體。求該平截頭體的體積。</p>\n<blockquote>\n<p>圖形要點：直立圓錐體切去頂部後餘下的平截頭體示意圖。</p>\n</blockquote>\n<ul>\n<li>A. $210\\pi\\text{ cm}^3$</li>\n<li>B. $312\\pi\\text{ cm}^3$</li>\n<li>C. $324\\pi\\text{ cm}^3$</li>\n<li>D. $936\\pi\\text{ cm}^3$</li>\n</ul>",
+   "text": "一直立圓錐體的高及底半徑分別為 12 cm 及 9 cm。該圓錐體切去上部後形成的高為 8 cm 的平截頭體。求該平截頭體的體積。\n\n![2015 P2 Q16 平截頭體](2015P2_figs_svg/2015P2_Q16.svg)\n\n- A. $210\\pi\\text{ cm}^3$\n- B. $312\\pi\\text{ cm}^3$\n- C. $324\\pi\\text{ cm}^3$\n- D. $936\\pi\\text{ cm}^3$",
+   "html": "<p>一直立圓錐體的高及底半徑分別為 12 cm 及 9 cm。該圓錐體切去上部後形成的高為 8 cm 的平截頭體。求該平截頭體的體積。</p>\n<p><img alt=\"2015 P2 Q16 平截頭體\" src=\"2015P2_figs_svg/2015P2_Q16.svg\" /></p>\n<ul>\n<li>A. $210\\pi\\text{ cm}^3$</li>\n<li>B. $312\\pi\\text{ cm}^3$</li>\n<li>C. $324\\pi\\text{ cm}^3$</li>\n<li>D. $936\\pi\\text{ cm}^3$</li>\n</ul>",
    "file": "2015_P2_QU(CHI).md"
   },
   {
@@ -2612,8 +2612,8 @@ window.QB = {
     "面積比",
     "平行四邊形"
    ],
-   "text": "圖中，$ABCD$ 為一平行四邊形。$E$ 為 $CD$ 上的一點使 $DE:EC=2:3$。$AD$ 的延線與 $BE$ 的延線相交於 $F$，而 $AE$ 的延線與 $BC$ 的延線相交於 $G$。若 $\\triangle DEF$ 的面積為 8 cm²，則 $\\triangle CEG$ 的面積為\n\n> 圖形要點：平行四邊形 $ABCD$，$E$ 在右側邊 $CD$ 上；$AD$ 及 $BC$ 向右延長，$F$ 在 $AD$ 的延線上、$G$ 在 $BC$ 的延線上；$B$—$E$—$F$ 共線，$A$—$E$—$G$ 共線。\n\n- A. $12\\text{ cm}^2$\n- B. $18\\text{ cm}^2$\n- C. $20\\text{ cm}^2$\n- D. $27\\text{ cm}^2$",
-   "html": "<p>圖中，$ABCD$ 為一平行四邊形。$E$ 為 $CD$ 上的一點使 $DE:EC=2:3$。$AD$ 的延線與 $BE$ 的延線相交於 $F$，而 $AE$ 的延線與 $BC$ 的延線相交於 $G$。若 $\\triangle DEF$ 的面積為 8 cm²，則 $\\triangle CEG$ 的面積為</p>\n<blockquote>\n<p>圖形要點：平行四邊形 $ABCD$，$E$ 在右側邊 $CD$ 上；$AD$ 及 $BC$ 向右延長，$F$ 在 $AD$ 的延線上、$G$ 在 $BC$ 的延線上；$B$—$E$—$F$ 共線，$A$—$E$—$G$ 共線。</p>\n</blockquote>\n<ul>\n<li>A. $12\\text{ cm}^2$</li>\n<li>B. $18\\text{ cm}^2$</li>\n<li>C. $20\\text{ cm}^2$</li>\n<li>D. $27\\text{ cm}^2$</li>\n</ul>",
+   "text": "圖中，$ABCD$ 為一平行四邊形。$E$ 為 $CD$ 上的一點使 $DE:EC=2:3$。$AD$ 的延線與 $BE$ 的延線相交於 $F$，而 $AE$ 的延線與 $BC$ 的延線相交於 $G$。若 $\\triangle DEF$ 的面積為 8 cm²，則 $\\triangle CEG$ 的面積為\n\n![2015 P2 Q17 平行四邊形](2015P2_figs_svg/2015P2_Q17.svg)\n\n- A. $12\\text{ cm}^2$\n- B. $18\\text{ cm}^2$\n- C. $20\\text{ cm}^2$\n- D. $27\\text{ cm}^2$",
+   "html": "<p>圖中，$ABCD$ 為一平行四邊形。$E$ 為 $CD$ 上的一點使 $DE:EC=2:3$。$AD$ 的延線與 $BE$ 的延線相交於 $F$，而 $AE$ 的延線與 $BC$ 的延線相交於 $G$。若 $\\triangle DEF$ 的面積為 8 cm²，則 $\\triangle CEG$ 的面積為</p>\n<p><img alt=\"2015 P2 Q17 平行四邊形\" src=\"2015P2_figs_svg/2015P2_Q17.svg\" /></p>\n<ul>\n<li>A. $12\\text{ cm}^2$</li>\n<li>B. $18\\text{ cm}^2$</li>\n<li>C. $20\\text{ cm}^2$</li>\n<li>D. $27\\text{ cm}^2$</li>\n</ul>",
    "file": "2015_P2_QU(CHI).md"
   },
   {
@@ -2628,8 +2628,8 @@ window.QB = {
     "三角比",
     "直角三角形"
    ],
-   "text": "圖中，$\\dfrac{AD}{AB}=$\n\n> 圖形要點：$A$、$B$ 在底（$BA$ 水平），$\\angle BAC=90°$（$A$ 處有直角標記），$C$ 在 $A$ 的上方；$D$ 在 $C$ 的右方且 $\\angle ADC=90°$（$D$ 處有直角標記）；$\\alpha=\\angle CAD$、$\\beta=\\angle ABC$。\n\n- A. $\\cos\\alpha\\tan\\beta$\n- B. $\\sin\\alpha\\tan\\beta$\n- C. $\\dfrac{\\cos\\alpha}{\\tan\\beta}$\n- D. $\\dfrac{\\sin\\alpha}{\\tan\\beta}$",
-   "html": "<p>圖中，$\\dfrac{AD}{AB}=$</p>\n<blockquote>\n<p>圖形要點：$A$、$B$ 在底（$BA$ 水平），$\\angle BAC=90°$（$A$ 處有直角標記），$C$ 在 $A$ 的上方；$D$ 在 $C$ 的右方且 $\\angle ADC=90°$（$D$ 處有直角標記）；$\\alpha=\\angle CAD$、$\\beta=\\angle ABC$。</p>\n</blockquote>\n<ul>\n<li>A. $\\cos\\alpha\\tan\\beta$</li>\n<li>B. $\\sin\\alpha\\tan\\beta$</li>\n<li>C. $\\dfrac{\\cos\\alpha}{\\tan\\beta}$</li>\n<li>D. $\\dfrac{\\sin\\alpha}{\\tan\\beta}$</li>\n</ul>",
+   "text": "圖中，$\\dfrac{AD}{AB}=$\n\n![2015 P2 Q18 直角三角形](2015P2_figs_svg/2015P2_Q18.svg)\n\n- A. $\\cos\\alpha\\tan\\beta$\n- B. $\\sin\\alpha\\tan\\beta$\n- C. $\\dfrac{\\cos\\alpha}{\\tan\\beta}$\n- D. $\\dfrac{\\sin\\alpha}{\\tan\\beta}$",
+   "html": "<p>圖中，$\\dfrac{AD}{AB}=$</p>\n<p><img alt=\"2015 P2 Q18 直角三角形\" src=\"2015P2_figs_svg/2015P2_Q18.svg\" /></p>\n<ul>\n<li>A. $\\cos\\alpha\\tan\\beta$</li>\n<li>B. $\\sin\\alpha\\tan\\beta$</li>\n<li>C. $\\dfrac{\\cos\\alpha}{\\tan\\beta}$</li>\n<li>D. $\\dfrac{\\sin\\alpha}{\\tan\\beta}$</li>\n</ul>",
    "file": "2015_P2_QU(CHI).md"
   },
   {
@@ -2661,8 +2661,8 @@ window.QB = {
     "圓周角",
     "弧"
    ],
-   "text": "圖中，$AD$ 為圓 $ABCDE$ 的一直徑。若 $\\angle BAD=58°$ 及 $BC=CD$，則 $\\angle AEC=$\n\n> 圖形要點：圓上五點——$A$ 在左、$B$ 在上、$C$ 在右上、$D$ 在右、$E$ 在右下；$AD$ 為水平直徑，$\\angle BAD=58°$ 標於 $A$，所求 $\\angle AEC$ 標於 $E$。\n\n- A. $32°$\n- B. $58°$\n- C. $61°$\n- D. $64°$",
-   "html": "<p>圖中，$AD$ 為圓 $ABCDE$ 的一直徑。若 $\\angle BAD=58°$ 及 $BC=CD$，則 $\\angle AEC=$</p>\n<blockquote>\n<p>圖形要點：圓上五點——$A$ 在左、$B$ 在上、$C$ 在右上、$D$ 在右、$E$ 在右下；$AD$ 為水平直徑，$\\angle BAD=58°$ 標於 $A$，所求 $\\angle AEC$ 標於 $E$。</p>\n</blockquote>\n<ul>\n<li>A. $32°$</li>\n<li>B. $58°$</li>\n<li>C. $61°$</li>\n<li>D. $64°$</li>\n</ul>",
+   "text": "圖中，$AD$ 為圓 $ABCDE$ 的一直徑。若 $\\angle BAD=58°$ 及 $BC=CD$，則 $\\angle AEC=$\n\n![2015 P2 Q20 圓](2015P2_figs_svg/2015P2_Q20.svg)\n\n- A. $32°$\n- B. $58°$\n- C. $61°$\n- D. $64°$",
+   "html": "<p>圖中，$AD$ 為圓 $ABCDE$ 的一直徑。若 $\\angle BAD=58°$ 及 $BC=CD$，則 $\\angle AEC=$</p>\n<p><img alt=\"2015 P2 Q20 圓\" src=\"2015P2_figs_svg/2015P2_Q20.svg\" /></p>\n<ul>\n<li>A. $32°$</li>\n<li>B. $58°$</li>\n<li>C. $61°$</li>\n<li>D. $64°$</li>\n</ul>",
    "file": "2015_P2_QU(CHI).md"
   },
   {
@@ -2745,8 +2745,8 @@ window.QB = {
     "斜率",
     "截距"
    ],
-   "text": "圖中，直線 $L_1$ 及 $L_2$ 的方程分別為 $ax=1$ 及 $bx+cy=1$。下列何者正確？\n\n> 圖形要點：$L_1$ 為鉛垂直線，位於 $y$ 軸左側（$x$ 截距為負）；$L_2$ 為向右上斜的直線，$x$ 截距為負、$y$ 截距為正；兩線相交於 $x$ 軸下方。\n\n　I. $a<0$\n\n　II. $a<b$\n\n　III. $c>0$\n\n- A. 只有 I 及 II\n- B. 只有 I 及 III\n- C. 只有 II 及 III\n- D. I、II 及 III",
-   "html": "<p>圖中，直線 $L_1$ 及 $L_2$ 的方程分別為 $ax=1$ 及 $bx+cy=1$。下列何者正確？</p>\n<blockquote>\n<p>圖形要點：$L_1$ 為鉛垂直線，位於 $y$ 軸左側（$x$ 截距為負）；$L_2$ 為向右上斜的直線，$x$ 截距為負、$y$ 截距為正；兩線相交於 $x$ 軸下方。</p>\n</blockquote>\n<p>I. $a&lt;0$</p>\n<p>II. $a&lt;b$</p>\n<p>III. $c&gt;0$</p>\n<ul>\n<li>A. 只有 I 及 II</li>\n<li>B. 只有 I 及 III</li>\n<li>C. 只有 II 及 III</li>\n<li>D. I、II 及 III</li>\n</ul>",
+   "text": "圖中，直線 $L_1$ 及 $L_2$ 的方程分別為 $ax=1$ 及 $bx+cy=1$。下列何者正確？\n\n![2015 P2 Q25 兩直線](2015P2_figs_svg/2015P2_Q25.svg)\n\n　I. $a<0$\n\n　II. $a<b$\n\n　III. $c>0$\n\n- A. 只有 I 及 II\n- B. 只有 I 及 III\n- C. 只有 II 及 III\n- D. I、II 及 III",
+   "html": "<p>圖中，直線 $L_1$ 及 $L_2$ 的方程分別為 $ax=1$ 及 $bx+cy=1$。下列何者正確？</p>\n<p><img alt=\"2015 P2 Q25 兩直線\" src=\"2015P2_figs_svg/2015P2_Q25.svg\" /></p>\n<p>I. $a&lt;0$</p>\n<p>II. $a&lt;b$</p>\n<p>III. $c&gt;0$</p>\n<ul>\n<li>A. 只有 I 及 II</li>\n<li>B. 只有 I 及 III</li>\n<li>C. 只有 II 及 III</li>\n<li>D. I、II 及 III</li>\n</ul>",
    "file": "2015_P2_QU(CHI).md"
   },
   {
@@ -2793,8 +2793,8 @@ window.QB = {
     "棒形圖",
     "概率"
    ],
-   "text": "下面的棒形圖顯示某班學生擁有鑰匙的數目的分佈。求從該班中隨機選出一名學生擁有 3 條鑰匙的概率。\n\n> 圖形要點：棒形圖，橫軸「鑰匙的數目」由 1 至 5，縱軸「學生人數」；對應人數依次為 12、16、8、4、4。\n\n- A. $\\dfrac{1}{5}$\n- B. $\\dfrac{2}{11}$\n- C. $\\dfrac{4}{11}$\n- D. $\\dfrac{9}{11}$",
-   "html": "<p>下面的棒形圖顯示某班學生擁有鑰匙的數目的分佈。求從該班中隨機選出一名學生擁有 3 條鑰匙的概率。</p>\n<blockquote>\n<p>圖形要點：棒形圖，橫軸「鑰匙的數目」由 1 至 5，縱軸「學生人數」；對應人數依次為 12、16、8、4、4。</p>\n</blockquote>\n<ul>\n<li>A. $\\dfrac{1}{5}$</li>\n<li>B. $\\dfrac{2}{11}$</li>\n<li>C. $\\dfrac{4}{11}$</li>\n<li>D. $\\dfrac{9}{11}$</li>\n</ul>",
+   "text": "下面的棒形圖顯示某班學生擁有鑰匙的數目的分佈。求從該班中隨機選出一名學生擁有 3 條鑰匙的概率。\n\n![2015 P2 Q28 棒形圖](2015P2_figs_svg/2015P2_Q28.svg)\n\n- A. $\\dfrac{1}{5}$\n- B. $\\dfrac{2}{11}$\n- C. $\\dfrac{4}{11}$\n- D. $\\dfrac{9}{11}$",
+   "html": "<p>下面的棒形圖顯示某班學生擁有鑰匙的數目的分佈。求從該班中隨機選出一名學生擁有 3 條鑰匙的概率。</p>\n<p><img alt=\"2015 P2 Q28 棒形圖\" src=\"2015P2_figs_svg/2015P2_Q28.svg\" /></p>\n<ul>\n<li>A. $\\dfrac{1}{5}$</li>\n<li>B. $\\dfrac{2}{11}$</li>\n<li>C. $\\dfrac{4}{11}$</li>\n<li>D. $\\dfrac{9}{11}$</li>\n</ul>",
    "file": "2015_P2_QU(CHI).md"
   },
   {
@@ -2809,8 +2809,8 @@ window.QB = {
     "框線圖",
     "四分位數間距"
    ],
-   "text": "下面的框線圖顯示在某學期一些教師的閱書數目的分佈。求該分佈的四分位數間距。\n\n> 圖形要點：框線圖，橫軸「閱書數目」由 10 至 70（每 5 刻一度線）；左鬚端為 15，盒由 $Q_1=25$ 至 $Q_3=45$，中位數線為 40，右鬚端為 60。\n\n- A. 20\n- B. 35\n- C. 40\n- D. 45",
-   "html": "<p>下面的框線圖顯示在某學期一些教師的閱書數目的分佈。求該分佈的四分位數間距。</p>\n<blockquote>\n<p>圖形要點：框線圖，橫軸「閱書數目」由 10 至 70（每 5 刻一度線）；左鬚端為 15，盒由 $Q_1=25$ 至 $Q_3=45$，中位數線為 40，右鬚端為 60。</p>\n</blockquote>\n<ul>\n<li>A. 20</li>\n<li>B. 35</li>\n<li>C. 40</li>\n<li>D. 45</li>\n</ul>",
+   "text": "下面的框線圖顯示在某學期一些教師的閱書數目的分佈。求該分佈的四分位數間距。\n\n![2015 P2 Q29 框線圖](2015P2_figs_svg/2015P2_Q29.svg)\n\n- A. 20\n- B. 35\n- C. 40\n- D. 45",
+   "html": "<p>下面的框線圖顯示在某學期一些教師的閱書數目的分佈。求該分佈的四分位數間距。</p>\n<p><img alt=\"2015 P2 Q29 框線圖\" src=\"2015P2_figs_svg/2015P2_Q29.svg\" /></p>\n<ul>\n<li>A. 20</li>\n<li>B. 35</li>\n<li>C. 40</li>\n<li>D. 45</li>\n</ul>",
    "file": "2015_P2_QU(CHI).md"
   },
   {
@@ -2858,8 +2858,8 @@ window.QB = {
     "對數",
     "線性關係"
    ],
-   "text": "圖像顯示 $\\log_3 x$ 與 $\\log_3 y$ 之間的線性關係。下列何者必為正確？\n\n> 圖形要點：直角坐標平面上一直線（橫軸為 $\\log_3 x$、縱軸為 $\\log_3 y$），斜率為負；縱軸截距為 2，橫軸截距為 3。\n\n- A. $x^2y^3=729$\n- B. $x^3y^2=729$\n- C. $x^2+y^3=729$\n- D. $x^3+y^2=729$",
-   "html": "<p>圖像顯示 $\\log_3 x$ 與 $\\log_3 y$ 之間的線性關係。下列何者必為正確？</p>\n<blockquote>\n<p>圖形要點：直角坐標平面上一直線（橫軸為 $\\log_3 x$、縱軸為 $\\log_3 y$），斜率為負；縱軸截距為 2，橫軸截距為 3。</p>\n</blockquote>\n<ul>\n<li>A. $x^2y^3=729$</li>\n<li>B. $x^3y^2=729$</li>\n<li>C. $x^2+y^3=729$</li>\n<li>D. $x^3+y^2=729$</li>\n</ul>",
+   "text": "圖像顯示 $\\log_3 x$ 與 $\\log_3 y$ 之間的線性關係。下列何者必為正確？\n\n![2015 P2 Q32 對數直線](2015P2_figs_svg/2015P2_Q32.svg)\n\n- A. $x^2y^3=729$\n- B. $x^3y^2=729$\n- C. $x^2+y^3=729$\n- D. $x^3+y^2=729$",
+   "html": "<p>圖像顯示 $\\log_3 x$ 與 $\\log_3 y$ 之間的線性關係。下列何者必為正確？</p>\n<p><img alt=\"2015 P2 Q32 對數直線\" src=\"2015P2_figs_svg/2015P2_Q32.svg\" /></p>\n<ul>\n<li>A. $x^2y^3=729$</li>\n<li>B. $x^3y^2=729$</li>\n<li>C. $x^2+y^3=729$</li>\n<li>D. $x^3+y^2=729$</li>\n</ul>",
    "file": "2015_P2_QU(CHI).md"
   },
   {
@@ -2922,8 +2922,8 @@ window.QB = {
     "線性不等式",
     "可行區域"
    ],
-   "text": "圖中陰影區域（包括邊界）由三條直線圍成。若 $\\left(a,b\\right)$ 為該區域中的一點，則下列何者正確？\n\n> 圖形要點：陰影三角形位於第一象限上部——左上邊為直線 $y=x+5$ 的一段，右下邊為直線 $x+2y=10$ 的一段，右側邊為鉛垂直線 $x=4$。\n\n　I. $a\\le 4$\n\n　II. $a\\ge b-5$\n\n　III. $a\\ge 10-2b$\n\n- A. 只有 I 及 II\n- B. 只有 I 及 III\n- C. 只有 II 及 III\n- D. I、II 及 III",
-   "html": "<p>圖中陰影區域（包括邊界）由三條直線圍成。若 $\\left(a,b\\right)$ 為該區域中的一點，則下列何者正確？</p>\n<blockquote>\n<p>圖形要點：陰影三角形位於第一象限上部——左上邊為直線 $y=x+5$ 的一段，右下邊為直線 $x+2y=10$ 的一段，右側邊為鉛垂直線 $x=4$。</p>\n</blockquote>\n<p>I. $a\\le 4$</p>\n<p>II. $a\\ge b-5$</p>\n<p>III. $a\\ge 10-2b$</p>\n<ul>\n<li>A. 只有 I 及 II</li>\n<li>B. 只有 I 及 III</li>\n<li>C. 只有 II 及 III</li>\n<li>D. I、II 及 III</li>\n</ul>",
+   "text": "圖中陰影區域（包括邊界）由三條直線圍成。若 $\\left(a,b\\right)$ 為該區域中的一點，則下列何者正確？\n\n![2015 P2 Q36 陰影區域](2015P2_figs_svg/2015P2_Q36.svg)\n\n　I. $a\\le 4$\n\n　II. $a\\ge b-5$\n\n　III. $a\\ge 10-2b$\n\n- A. 只有 I 及 II\n- B. 只有 I 及 III\n- C. 只有 II 及 III\n- D. I、II 及 III",
+   "html": "<p>圖中陰影區域（包括邊界）由三條直線圍成。若 $\\left(a,b\\right)$ 為該區域中的一點，則下列何者正確？</p>\n<p><img alt=\"2015 P2 Q36 陰影區域\" src=\"2015P2_figs_svg/2015P2_Q36.svg\" /></p>\n<p>I. $a\\le 4$</p>\n<p>II. $a\\ge b-5$</p>\n<p>III. $a\\ge 10-2b$</p>\n<ul>\n<li>A. 只有 I 及 II</li>\n<li>B. 只有 I 及 III</li>\n<li>C. 只有 II 及 III</li>\n<li>D. I、II 及 III</li>\n</ul>",
    "file": "2015_P2_QU(CHI).md"
   },
   {
@@ -2970,8 +2970,8 @@ window.QB = {
     "週期",
     "圖像變換"
    ],
-   "text": "設 $k$ 為正常數且 $-180°<\\theta<180°$。圖中所示為 $y=\\sin\\left(kx°+\\theta\\right)$ 的圖像，則\n\n> 圖形要點：正弦波形，曲線與 $x$ 軸的兩個相鄰交點標明為 $75$ 及 $165$；$75$ 左方為波峰、$75$ 至 $165$ 之間為波谷；曲線在 $y$ 軸上的截距為正值。\n\n- A. $k=\\dfrac{1}{2}$ 及 $\\theta=-30°$\n- B. $k=\\dfrac{1}{2}$ 及 $\\theta=30°$\n- C. $k=2$ 及 $\\theta=-30°$\n- D. $k=2$ 及 $\\theta=30°$",
-   "html": "<p>設 $k$ 為正常數且 $-180°&lt;\\theta&lt;180°$。圖中所示為 $y=\\sin\\left(kx°+\\theta\\right)$ 的圖像，則</p>\n<blockquote>\n<p>圖形要點：正弦波形，曲線與 $x$ 軸的兩個相鄰交點標明為 $75$ 及 $165$；$75$ 左方為波峰、$75$ 至 $165$ 之間為波谷；曲線在 $y$ 軸上的截距為正值。</p>\n</blockquote>\n<ul>\n<li>A. $k=\\dfrac{1}{2}$ 及 $\\theta=-30°$</li>\n<li>B. $k=\\dfrac{1}{2}$ 及 $\\theta=30°$</li>\n<li>C. $k=2$ 及 $\\theta=-30°$</li>\n<li>D. $k=2$ 及 $\\theta=30°$</li>\n</ul>",
+   "text": "設 $k$ 為正常數且 $-180°<\\theta<180°$。圖中所示為 $y=\\sin\\left(kx°+\\theta\\right)$ 的圖像，則\n\n![2015 P2 Q39 正弦波](2015P2_figs_svg/2015P2_Q39.svg)\n\n- A. $k=\\dfrac{1}{2}$ 及 $\\theta=-30°$\n- B. $k=\\dfrac{1}{2}$ 及 $\\theta=30°$\n- C. $k=2$ 及 $\\theta=-30°$\n- D. $k=2$ 及 $\\theta=30°$",
+   "html": "<p>設 $k$ 為正常數且 $-180°&lt;\\theta&lt;180°$。圖中所示為 $y=\\sin\\left(kx°+\\theta\\right)$ 的圖像，則</p>\n<p><img alt=\"2015 P2 Q39 正弦波\" src=\"2015P2_figs_svg/2015P2_Q39.svg\" /></p>\n<ul>\n<li>A. $k=\\dfrac{1}{2}$ 及 $\\theta=-30°$</li>\n<li>B. $k=\\dfrac{1}{2}$ 及 $\\theta=30°$</li>\n<li>C. $k=2$ 及 $\\theta=-30°$</li>\n<li>D. $k=2$ 及 $\\theta=30°$</li>\n</ul>",
    "file": "2015_P2_QU(CHI).md"
   },
   {
@@ -2986,8 +2986,8 @@ window.QB = {
     "圓的幾何",
     "切線性質"
    ],
-   "text": "圖中，$AB$ 及 $AC$ 分別為圓在點 $B$ 及點 $C$ 的切線，而 $BD$ 為該圓的直徑。$AC$ 的延線與 $BD$ 的延線相交於 $E$。若 $AB=6$ cm 及 $AE=10$ cm，則 $BD=$\n\n> 圖形要點：圓位於圖中央偏左，直徑 $BD$ 大致水平；$A$ 在圓外右上方，$AB$、$AC$ 分別切圓於 $B$（右）及 $C$（上左）；$E$ 在圓外左方，$A$—$C$—$E$ 共線且 $E$ 在直徑 $BD$ 的延線上。\n\n- A. $3\\text{ cm}$\n- B. $5\\text{ cm}$\n- C. $6\\text{ cm}$\n- D. $8\\text{ cm}$",
-   "html": "<p>圖中，$AB$ 及 $AC$ 分別為圓在點 $B$ 及點 $C$ 的切線，而 $BD$ 為該圓的直徑。$AC$ 的延線與 $BD$ 的延線相交於 $E$。若 $AB=6$ cm 及 $AE=10$ cm，則 $BD=$</p>\n<blockquote>\n<p>圖形要點：圓位於圖中央偏左，直徑 $BD$ 大致水平；$A$ 在圓外右上方，$AB$、$AC$ 分別切圓於 $B$（右）及 $C$（上左）；$E$ 在圓外左方，$A$—$C$—$E$ 共線且 $E$ 在直徑 $BD$ 的延線上。</p>\n</blockquote>\n<ul>\n<li>A. $3\\text{ cm}$</li>\n<li>B. $5\\text{ cm}$</li>\n<li>C. $6\\text{ cm}$</li>\n<li>D. $8\\text{ cm}$</li>\n</ul>",
+   "text": "圖中，$AB$ 及 $AC$ 分別為圓在點 $B$ 及點 $C$ 的切線，而 $BD$ 為該圓的直徑。$AC$ 的延線與 $BD$ 的延線相交於 $E$。若 $AB=6$ cm 及 $AE=10$ cm，則 $BD=$\n\n![2015 P2 Q40 圓切線](2015P2_figs_svg/2015P2_Q40.svg)\n\n- A. $3\\text{ cm}$\n- B. $5\\text{ cm}$\n- C. $6\\text{ cm}$\n- D. $8\\text{ cm}$",
+   "html": "<p>圖中，$AB$ 及 $AC$ 分別為圓在點 $B$ 及點 $C$ 的切線，而 $BD$ 為該圓的直徑。$AC$ 的延線與 $BD$ 的延線相交於 $E$。若 $AB=6$ cm 及 $AE=10$ cm，則 $BD=$</p>\n<p><img alt=\"2015 P2 Q40 圓切線\" src=\"2015P2_figs_svg/2015P2_Q40.svg\" /></p>\n<ul>\n<li>A. $3\\text{ cm}$</li>\n<li>B. $5\\text{ cm}$</li>\n<li>C. $6\\text{ cm}$</li>\n<li>D. $8\\text{ cm}$</li>\n</ul>",
    "file": "2015_P2_QU(CHI).md"
   },
   {

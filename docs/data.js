@@ -1,6 +1,6 @@
 window.QB = {
- "generated": "2026-11-06 03:06",
- "count": 637,
+ "generated": "2026-11-06 03:28",
+ "count": 689,
  "questions": [
   {
    "subject": "數學",
@@ -5510,6 +5510,868 @@ window.QB = {
    "text": "Under the linked exchange rate system of Hong Kong, which of the following statements is correct?\n\n- A. The money supply M1 of Hong Kong has to be fully backed up by the US dollar.\n- B. Hong Kong's export volume will increase when the US dollar depreciates against other currencies.\n- C. The market exchange rate of the HK dollar relative to the US dollar is fixed.\n- D. Hong Kong citizens can sell 1 USD to the three note-issuing banks for 7.8 HKD.",
    "html": "<p>Under the linked exchange rate system of Hong Kong, which of the following statements is correct?</p>\n<ul>\n<li>A. The money supply M1 of Hong Kong has to be fully backed up by the US dollar.</li>\n<li>B. Hong Kong's export volume will increase when the US dollar depreciates against other currencies.</li>\n<li>C. The market exchange rate of the HK dollar relative to the US dollar is fixed.</li>\n<li>D. Hong Kong citizens can sell 1 USD to the three note-issuing banks for 7.8 HKD.</li>\n</ul>",
    "file": "2020_P1_QU(ENG).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 1A",
+   "type": "題目",
+   "qno": 1,
+   "title": "第 1 題",
+   "section": "卷一甲　第一部分",
+   "tags": [
+    "物質結構",
+    "熔點",
+    "導電性"
+   ],
+   "text": "某化學物種的熔點為 146°C。牠溶於水而所生成的溶液並不導電。該化學物種具有下列哪種結構？\n\n- A. 巨型離子結構\n- B. 巨型金屬結構\n- C. 巨型共價結構\n- D. 簡單分子結構",
+   "html": "<p>某化學物種的熔點為 146°C。牠溶於水而所生成的溶液並不導電。該化學物種具有下列哪種結構？</p>\n<ul>\n<li>A. 巨型離子結構</li>\n<li>B. 巨型金屬結構</li>\n<li>C. 巨型共價結構</li>\n<li>D. 簡單分子結構</li>\n</ul>",
+   "file": "2021_P1A_QU(CHI).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 1A",
+   "type": "題目",
+   "qno": 2,
+   "title": "第 2 題",
+   "section": "卷一甲　第一部分",
+   "tags": [
+    "電解",
+    "離子遷移"
+   ],
+   "text": "考慮以下實驗裝置：\n\n![圖](2021_P1A_crops/q02.png)\n\n當電流通過電路時，下列哪陳述正確？\n\n- A. 在X周圍的稀 H₂SO₄(aq) 觀察到藍色。\n- B. 在Y周圍的稀 H₂SO₄(aq) 觀察到氣泡。\n- C. 在X周圍的稀 H₂SO₄(aq) 觀察到橙色。\n- D. 電子由X經外電路流向Y。",
+   "html": "<p>考慮以下實驗裝置：</p>\n<p><img alt=\"圖\" src=\"chem_2021_P1A_crops/q02.png\" /></p>\n<p>當電流通過電路時，下列哪陳述正確？</p>\n<ul>\n<li>A. 在X周圍的稀 H₂SO₄(aq) 觀察到藍色。</li>\n<li>B. 在Y周圍的稀 H₂SO₄(aq) 觀察到氣泡。</li>\n<li>C. 在X周圍的稀 H₂SO₄(aq) 觀察到橙色。</li>\n<li>D. 電子由X經外電路流向Y。</li>\n</ul>",
+   "file": "2021_P1A_QU(CHI).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 1A",
+   "type": "題目",
+   "qno": 3,
+   "title": "第 3 題",
+   "section": "卷一甲　第一部分",
+   "tags": [
+    "分餾",
+    "電解",
+    "石灰石"
+   ],
+   "text": "下列哪陳述不正確？\n\n- A. 裂解重油可得出乙烯。\n- B. 電解海水可得出 [?]。\n- C. 強熱石灰石可得出氧。\n- D. 分餾液態空氣可得出 [?]。",
+   "html": "<p>下列哪陳述不正確？</p>\n<ul>\n<li>A. 裂解重油可得出乙烯。</li>\n<li>B. 電解海水可得出 [?]。</li>\n<li>C. 強熱石灰石可得出氧。</li>\n<li>D. 分餾液態空氣可得出 [?]。</li>\n</ul>",
+   "file": "2021_P1A_QU(CHI).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 1A",
+   "type": "題目",
+   "qno": 4,
+   "title": "第 4 題",
+   "section": "卷一甲　第一部分",
+   "tags": [
+    "金屬活性序"
+   ],
+   "text": "M、Q和R是三個不同金屬。當分別把它們的氧化物加熱時，只有M的氧化物給出金屬光澤。當用本生燈分別把它們的碳酸鹽加熱時，只有R的碳酸鹽沒有給出可觀察變化。下列何者顯示這些金屬活性的遞增次序？\n\n- A. R < Q < M\n- B. R < M < Q\n- C. M < R < Q\n- D. M < Q < R",
+   "html": "<p>M、Q和R是三個不同金屬。當分別把它們的氧化物加熱時，只有M的氧化物給出金屬光澤。當用本生燈分別把它們的碳酸鹽加熱時，只有R的碳酸鹽沒有給出可觀察變化。下列何者顯示這些金屬活性的遞增次序？</p>\n<ul>\n<li>A. R &lt; Q &lt; M</li>\n<li>B. R &lt; M &lt; Q</li>\n<li>C. M &lt; R &lt; Q</li>\n<li>D. M &lt; Q &lt; R</li>\n</ul>",
+   "file": "2021_P1A_QU(CHI).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 1A",
+   "type": "題目",
+   "qno": 5,
+   "title": "第 5 題",
+   "section": "卷一甲　第一部分",
+   "tags": [
+    "沉澱反應",
+    "離子濃度"
+   ],
+   "text": "把 15.0 cm³ 的 0.20 M Ba(NO₃)₂(aq) 加到 25.0 cm³ 的 0.10 M Na₂SO₄(aq) 中。反應完成後，在該混合物中，下列哪離子具有最高的濃度？\n\n- A. SO₄²⁻(aq)\n- B. NO₃⁻(aq)\n- C. Ba²⁺(aq)\n- D. Na⁺(aq)",
+   "html": "<p>把 15.0 cm³ 的 0.20 M Ba(NO₃)₂(aq) 加到 25.0 cm³ 的 0.10 M Na₂SO₄(aq) 中。反應完成後，在該混合物中，下列哪離子具有最高的濃度？</p>\n<ul>\n<li>A. SO₄²⁻(aq)</li>\n<li>B. NO₃⁻(aq)</li>\n<li>C. Ba²⁺(aq)</li>\n<li>D. Na⁺(aq)</li>\n</ul>",
+   "file": "2021_P1A_QU(CHI).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 1A",
+   "type": "題目",
+   "qno": 6,
+   "title": "第 6 題",
+   "section": "卷一甲　第一部分",
+   "tags": [
+    "酸鹼",
+    "pH"
+   ],
+   "text": "參照下表的資料：\n\n| 溶液 | 內含物 | pH |\n|---|---|---|\n| X | 50 cm³ 的 0.001 M HCl(aq) | 3.0 |\n| Y | 25 cm³ 的 0.001 M H₂SO₄(aq) | 2.7 |\n| Z | 50 cm³ 的 0.1 M CH₃COOH(aq) | 2.9 |\n\n下列哪陳述正確？\n\n- A. X比Z具較高 pH 是因為 HCl 是較 CH₃COOH 強的酸。\n- B. Y比X具較低 pH 是因為 H₂SO₄(aq) 的體積較 HCl(aq) 的小。\n- C. Y比X具較低 pH 是因為 H₂SO₄ 是強二元酸但 HCl 是強一元酸。\n- D. Y比Z具較低 pH 是因為 H₂SO₄(aq) 的濃度較 CH₃COOH(aq) 的低。",
+   "html": "<p>參照下表的資料：</p>\n<table>\n<thead>\n<tr>\n<th>溶液</th>\n<th>內含物</th>\n<th>pH</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>X</td>\n<td>50 cm³ 的 0.001 M HCl(aq)</td>\n<td>3.0</td>\n</tr>\n<tr>\n<td>Y</td>\n<td>25 cm³ 的 0.001 M H₂SO₄(aq)</td>\n<td>2.7</td>\n</tr>\n<tr>\n<td>Z</td>\n<td>50 cm³ 的 0.1 M CH₃COOH(aq)</td>\n<td>2.9</td>\n</tr>\n</tbody>\n</table>\n<p>下列哪陳述正確？</p>\n<ul>\n<li>A. X比Z具較高 pH 是因為 HCl 是較 CH₃COOH 強的酸。</li>\n<li>B. Y比X具較低 pH 是因為 H₂SO₄(aq) 的體積較 HCl(aq) 的小。</li>\n<li>C. Y比X具較低 pH 是因為 H₂SO₄ 是強二元酸但 HCl 是強一元酸。</li>\n<li>D. Y比Z具較低 pH 是因為 H₂SO₄(aq) 的濃度較 CH₃COOH(aq) 的低。</li>\n</ul>",
+   "file": "2021_P1A_QU(CHI).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 1A",
+   "type": "題目",
+   "qno": 7,
+   "title": "第 7 題",
+   "section": "卷一甲　第一部分",
+   "tags": [
+    "氧化數"
+   ],
+   "text": "在 Pb₃(VO₄)₂ 中，Pb 的氧化數是 +2。V 的氧化數是什麼？\n\n- A. [?]\n- B. [?]\n- C. [?]\n- D. [?]",
+   "html": "<p>在 Pb₃(VO₄)₂ 中，Pb 的氧化數是 +2。V 的氧化數是什麼？</p>\n<ul>\n<li>A. [?]</li>\n<li>B. [?]</li>\n<li>C. [?]</li>\n<li>D. [?]</li>\n</ul>",
+   "file": "2021_P1A_QU(CHI).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 1A",
+   "type": "題目",
+   "qno": 8,
+   "title": "第 8 題",
+   "section": "卷一甲　第一部分",
+   "tags": [
+    "有機化合物",
+    "結構"
+   ],
+   "text": "考慮兩個化合物，牠們的結構如下所示：\n\n![圖](2021_P1A_crops/q08.png)\n\n下列哪陳述正確？\n\n- A. 它們均是易燃的。\n- B. 它們具有不同的實驗式。\n- C. 它們屬於相同的同系列。\n- D. 它們均可在黑暗中令溴溶液變成無色。",
+   "html": "<p>考慮兩個化合物，牠們的結構如下所示：</p>\n<p><img alt=\"圖\" src=\"chem_2021_P1A_crops/q08.png\" /></p>\n<p>下列哪陳述正確？</p>\n<ul>\n<li>A. 它們均是易燃的。</li>\n<li>B. 它們具有不同的實驗式。</li>\n<li>C. 它們屬於相同的同系列。</li>\n<li>D. 它們均可在黑暗中令溴溶液變成無色。</li>\n</ul>",
+   "file": "2021_P1A_QU(CHI).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 1A",
+   "type": "題目",
+   "qno": 9,
+   "title": "第 9 題",
+   "section": "卷一甲　第一部分",
+   "tags": [
+    "空氣污染",
+    "二氧化硫"
+   ],
+   "text": "燃煤發電廠所排放的氣體含有 SO₂。SO₂ 也被視為空氣污染物。在把這些氣體排放到大氣之前，清除 SO₂ 的最適當方法是什麼？\n\n- A. 把這些氣體通過氧化鈣。\n- B. 把這些氣體通過濃硫酸。\n- C. 冷卻這些氣體以把 SO₂ 液化，繼而把牠移除。\n- D. 把這些氣體通過例如己烷的有機溶劑。",
+   "html": "<p>燃煤發電廠所排放的氣體含有 SO₂。SO₂ 也被視為空氣污染物。在把這些氣體排放到大氣之前，清除 SO₂ 的最適當方法是什麼？</p>\n<ul>\n<li>A. 把這些氣體通過氧化鈣。</li>\n<li>B. 把這些氣體通過濃硫酸。</li>\n<li>C. 冷卻這些氣體以把 SO₂ 液化，繼而把牠移除。</li>\n<li>D. 把這些氣體通過例如己烷的有機溶劑。</li>\n</ul>",
+   "file": "2021_P1A_QU(CHI).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 1A",
+   "type": "題目",
+   "qno": 10,
+   "title": "第 10 題",
+   "section": "卷一甲　第一部分",
+   "tags": [
+    "氫鍵",
+    "物態變化"
+   ],
+   "text": "下列哪過程涉及氫鍵的斷裂？\n\n- A. H₂(l) → H₂(g)\n- B. HBr(l) → HBr(g)\n- C. CH₃OH(l) → CH₃OH(g)\n- D. CH₃CHO(l) → CH₃CHO(g)",
+   "html": "<p>下列哪過程涉及氫鍵的斷裂？</p>\n<ul>\n<li>A. H₂(l) → H₂(g)</li>\n<li>B. HBr(l) → HBr(g)</li>\n<li>C. CH₃OH(l) → CH₃OH(g)</li>\n<li>D. CH₃CHO(l) → CH₃CHO(g)</li>\n</ul>",
+   "file": "2021_P1A_QU(CHI).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 1A",
+   "type": "題目",
+   "qno": 11,
+   "title": "第 11 題",
+   "section": "卷一甲　第一部分",
+   "tags": [
+    "自由基",
+    "取代反應"
+   ],
+   "text": "甲烷與氯在漫射的陽光下的單取代反應涉及數個步驟。下列哪步驟引發該反應？\n\n- A. Cl₂ → 2Cl•\n- B. CH₄ → CH₃• + H•\n- C. CH₄ + Cl• → [?] + HCl\n- D. CH₄ + Cl₂ → CH₃Cl + [?]",
+   "html": "<p>甲烷與氯在漫射的陽光下的單取代反應涉及數個步驟。下列哪步驟引發該反應？</p>\n<ul>\n<li>A. Cl₂ → 2Cl•</li>\n<li>B. CH₄ → CH₃• + H•</li>\n<li>C. CH₄ + Cl• → [?] + HCl</li>\n<li>D. CH₄ + Cl₂ → CH₃Cl + [?]</li>\n</ul>",
+   "file": "2021_P1A_QU(CHI).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 1A",
+   "type": "題目",
+   "qno": 12,
+   "title": "第 12 題",
+   "section": "卷一甲　第一部分",
+   "tags": [
+    "赫斯定律",
+    "焓變"
+   ],
+   "text": "已知：\n\n2Mg(s) + O₂(g) → 2MgO(s)　ΔH₁\n\nMg(s) + ½O₂(g) + CO₂(g) → MgCO₃(s)　ΔH₂\n\nMgCO₃(s) → MgO(s) + CO₂(g)　ΔH₃\n\nΔH₃ 是什麼？\n\n- A. [?]\n- B. [?]\n- C. [?]\n- D. [?]",
+   "html": "<p>已知：</p>\n<p>2Mg(s) + O₂(g) → 2MgO(s)　ΔH₁</p>\n<p>Mg(s) + ½O₂(g) + CO₂(g) → MgCO₃(s)　ΔH₂</p>\n<p>MgCO₃(s) → MgO(s) + CO₂(g)　ΔH₃</p>\n<p>ΔH₃ 是什麼？</p>\n<ul>\n<li>A. [?]</li>\n<li>B. [?]</li>\n<li>C. [?]</li>\n<li>D. [?]</li>\n</ul>",
+   "file": "2021_P1A_QU(CHI).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 1A",
+   "type": "題目",
+   "qno": 13,
+   "title": "第 13 題",
+   "section": "卷一甲　第一部分",
+   "tags": [
+    "沉澱反應",
+    "離子鑑別"
+   ],
+   "text": "W、X、Y與Z，各自代表以下其中的一個溶液：HCl(aq)、NaOH(aq)、MgCl₂(aq)、Na₂CO₃(aq)。已知：\n\n把W與X混合得出一白色沉澱。\n\n把W與Y混合得出一白色沉澱。\n\n把W與Z混合得出一澄清無色溶液。\n\nZ是什麼？\n\n- A. HCl(aq)\n- B. NaOH(aq)\n- C. MgCl₂(aq)\n- D. Na₂CO₃(aq)",
+   "html": "<p>W、X、Y與Z，各自代表以下其中的一個溶液：HCl(aq)、NaOH(aq)、MgCl₂(aq)、Na₂CO₃(aq)。已知：</p>\n<p>把W與X混合得出一白色沉澱。</p>\n<p>把W與Y混合得出一白色沉澱。</p>\n<p>把W與Z混合得出一澄清無色溶液。</p>\n<p>Z是什麼？</p>\n<ul>\n<li>A. HCl(aq)</li>\n<li>B. NaOH(aq)</li>\n<li>C. MgCl₂(aq)</li>\n<li>D. Na₂CO₃(aq)</li>\n</ul>",
+   "file": "2021_P1A_QU(CHI).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 1A",
+   "type": "題目",
+   "qno": 14,
+   "title": "第 14 題",
+   "section": "卷一甲　第一部分",
+   "tags": [
+    "溶解",
+    "吸熱",
+    "量熱"
+   ],
+   "text": "基於以下的實驗裝置，在 8.0 g 的硝酸鈉固體完全溶於 50 cm³ 的水後，溫度下降了 6°C。\n\n![圖](2021_P1A_crops/q14.png)\n\n在相同的實驗條件下，下列何者的溫度會下降 3°C？\n\n- A. 在 2.0 g 的硝酸鈉固體完全溶於 25 cm³ 的水後。\n- B. 在 4.0 g 的硝酸鈉固體完全溶於 100 cm³ 的水後。\n- C. 在 16.0 g 的硝酸鈉固體完全溶於 100 cm³ 的水後。\n- D. 在 24.0 g 的硝酸鈉固體完全溶於 75 cm³ 的水後。",
+   "html": "<p>基於以下的實驗裝置，在 8.0 g 的硝酸鈉固體完全溶於 50 cm³ 的水後，溫度下降了 6°C。</p>\n<p><img alt=\"圖\" src=\"chem_2021_P1A_crops/q14.png\" /></p>\n<p>在相同的實驗條件下，下列何者的溫度會下降 3°C？</p>\n<ul>\n<li>A. 在 2.0 g 的硝酸鈉固體完全溶於 25 cm³ 的水後。</li>\n<li>B. 在 4.0 g 的硝酸鈉固體完全溶於 100 cm³ 的水後。</li>\n<li>C. 在 16.0 g 的硝酸鈉固體完全溶於 100 cm³ 的水後。</li>\n<li>D. 在 24.0 g 的硝酸鈉固體完全溶於 75 cm³ 的水後。</li>\n</ul>",
+   "file": "2021_P1A_QU(CHI).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 1A",
+   "type": "題目",
+   "qno": 15,
+   "title": "第 15 題",
+   "section": "卷一甲　第一部分",
+   "tags": [
+    "生成焓變",
+    "燃燒"
+   ],
+   "text": "當 7.89 g 的一氧化碳氣體完全燃燒，釋出 80 kJ 的熱。在該些實驗條件下，二氧化碳氣體的生成焓變是 −394 kJ mol⁻¹。在相同的實驗條件下，一氧化碳氣體的生成焓變是多少？\n\n（相對原子質量：C = 12.0, O = 16.0）\n\n- A. −678 kJ mol⁻¹\n- B. −474 kJ mol⁻¹\n- C. −314 kJ mol⁻¹\n- D. −110 kJ mol⁻¹",
+   "html": "<p>當 7.89 g 的一氧化碳氣體完全燃燒，釋出 80 kJ 的熱。在該些實驗條件下，二氧化碳氣體的生成焓變是 −394 kJ mol⁻¹。在相同的實驗條件下，一氧化碳氣體的生成焓變是多少？</p>\n<p>（相對原子質量：C = 12.0, O = 16.0）</p>\n<ul>\n<li>A. −678 kJ mol⁻¹</li>\n<li>B. −474 kJ mol⁻¹</li>\n<li>C. −314 kJ mol⁻¹</li>\n<li>D. −110 kJ mol⁻¹</li>\n</ul>",
+   "file": "2021_P1A_QU(CHI).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 1A",
+   "type": "題目",
+   "qno": 16,
+   "title": "第 16 題",
+   "section": "卷一甲　第一部分",
+   "tags": [
+    "中和",
+    "摩爾",
+    "濃度"
+   ],
+   "text": "用 25.0 cm³ 的 0.200 M 氫氧化鉀溶液完全中和了一個硫酸樣本，繼而把所得的鹽溶液以去離子水校準至 100.0 cm³。最終鹽溶液的濃度是多少？\n\n- A. 0.0125 M\n- B. 0.0250 M\n- C. 0.0375 M\n- D. 0.0500 M",
+   "html": "<p>用 25.0 cm³ 的 0.200 M 氫氧化鉀溶液完全中和了一個硫酸樣本，繼而把所得的鹽溶液以去離子水校準至 100.0 cm³。最終鹽溶液的濃度是多少？</p>\n<ul>\n<li>A. 0.0125 M</li>\n<li>B. 0.0250 M</li>\n<li>C. 0.0375 M</li>\n<li>D. 0.0500 M</li>\n</ul>",
+   "file": "2021_P1A_QU(CHI).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 1A",
+   "type": "題目",
+   "qno": 17,
+   "title": "第 17 題",
+   "section": "卷一甲　第一部分",
+   "tags": [
+    "有機化合物",
+    "系統命名"
+   ],
+   "text": "CH₂BrCHBrCH₂CH₂I 的系統名稱是什麼？\n\n- A. 1-碘-3,4-二溴丁烷\n- B. 4-碘-1,2-二溴丁烷\n- C. 1,2-二溴-4-碘丁烷\n- D. 3,4-二溴-1-碘丁烷",
+   "html": "<p>CH₂BrCHBrCH₂CH₂I 的系統名稱是什麼？</p>\n<ul>\n<li>A. 1-碘-3,4-二溴丁烷</li>\n<li>B. 4-碘-1,2-二溴丁烷</li>\n<li>C. 1,2-二溴-4-碘丁烷</li>\n<li>D. 3,4-二溴-1-碘丁烷</li>\n</ul>",
+   "file": "2021_P1A_QU(CHI).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 1A",
+   "type": "題目",
+   "qno": 18,
+   "title": "第 18 題",
+   "section": "卷一甲　第一部分",
+   "tags": [
+    "腐蝕",
+    "鋁",
+    "氧化物"
+   ],
+   "text": "鋁暴露在空氣中，其表面所生成的氧化物可防止鋁進一步腐蝕，這是什麼原因？鐵的氧化物卻未能防止鐵進一步腐蝕。\n\n(1) 鋁的氧化物 [?] 黏附在鋁的表面，但鐵的氧化物卻鬆散地黏附在鐵的表面。\n\n(2) 鋁的氧化物 [?]，但鐵的氧化物則否。\n\n(3) [?]\n\n- A. 只有(1)\n- B. 只有(2)\n- C. 只有(1)和(3)\n- D. 只有(2)和(3)",
+   "html": "<p>鋁暴露在空氣中，其表面所生成的氧化物可防止鋁進一步腐蝕，這是什麼原因？鐵的氧化物卻未能防止鐵進一步腐蝕。</p>\n<p>(1) 鋁的氧化物 [?] 黏附在鋁的表面，但鐵的氧化物卻鬆散地黏附在鐵的表面。</p>\n<p>(2) 鋁的氧化物 [?]，但鐵的氧化物則否。</p>\n<p>(3) [?]</p>\n<ul>\n<li>A. 只有(1)</li>\n<li>B. 只有(2)</li>\n<li>C. 只有(1)和(3)</li>\n<li>D. 只有(2)和(3)</li>\n</ul>",
+   "file": "2021_P1A_QU(CHI).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 1A",
+   "type": "題目",
+   "qno": 19,
+   "title": "第 19 題",
+   "section": "卷一甲　第一部分",
+   "tags": [
+    "元素",
+    "質量組成"
+   ],
+   "text": "元素 X 在化合物 K₂XO₄ 中的質量組成是 26.8%。下列有關 X 的陳述，何者正確？\n\n（相對原子質量：O = 16.0, K = 39.1）\n\n(1) X是過渡性金屬。\n\n(2) X是周期表中第VI族的元素。\n\n(3) X是周期表中第四周期的元素。\n\n- A. 只有(1)\n- B. 只有(2)\n- C. 只有(1)和(3)\n- D. 只有(2)和(3)",
+   "html": "<p>元素 X 在化合物 K₂XO₄ 中的質量組成是 26.8%。下列有關 X 的陳述，何者正確？</p>\n<p>（相對原子質量：O = 16.0, K = 39.1）</p>\n<p>(1) X是過渡性金屬。</p>\n<p>(2) X是周期表中第VI族的元素。</p>\n<p>(3) X是周期表中第四周期的元素。</p>\n<ul>\n<li>A. 只有(1)</li>\n<li>B. 只有(2)</li>\n<li>C. 只有(1)和(3)</li>\n<li>D. 只有(2)和(3)</li>\n</ul>",
+   "file": "2021_P1A_QU(CHI).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 1A",
+   "type": "題目",
+   "qno": 20,
+   "title": "第 20 題",
+   "section": "卷一甲　第一部分",
+   "tags": [
+    "聚合物",
+    "縮合聚合"
+   ],
+   "text": "一聚合物的部分結構如下所示：\n\n![圖](2021_P1A_crops/q20.png)\n\n下列有關這聚合物的陳述，何者正確？\n\n(1) [圖] 是牠的重複單位。\n\n(2) [圖] OH 是它的一個單體。\n\n(3) HOCH₂COOH 是它的一個單體。\n\n- A. 只有(1)\n- B. 只有(2)\n- C. 只有(1)和(3)\n- D. 只有(2)和(3)",
+   "html": "<p>一聚合物的部分結構如下所示：</p>\n<p><img alt=\"圖\" src=\"chem_2021_P1A_crops/q20.png\" /></p>\n<p>下列有關這聚合物的陳述，何者正確？</p>\n<p>(1) [圖] 是牠的重複單位。</p>\n<p>(2) [圖] OH 是它的一個單體。</p>\n<p>(3) HOCH₂COOH 是它的一個單體。</p>\n<ul>\n<li>A. 只有(1)</li>\n<li>B. 只有(2)</li>\n<li>C. 只有(1)和(3)</li>\n<li>D. 只有(2)和(3)</li>\n</ul>",
+   "file": "2021_P1A_QU(CHI).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 1A",
+   "type": "題目",
+   "qno": 21,
+   "title": "第 21 題",
+   "section": "卷一甲　第一部分",
+   "tags": [
+    "固體結構",
+    "離域電子"
+   ],
+   "text": "下列各固體，何者在牠的結構中具有離域電子？\n\n![圖](2021_P1A_crops/q21.png)\n\n- A. 只有(1)\n- B. 只有(2)\n- C. 只有(1)和(3)\n- D. 只有(2)和(3)",
+   "html": "<p>下列各固體，何者在牠的結構中具有離域電子？</p>\n<p><img alt=\"圖\" src=\"chem_2021_P1A_crops/q21.png\" /></p>\n<ul>\n<li>A. 只有(1)</li>\n<li>B. 只有(2)</li>\n<li>C. 只有(1)和(3)</li>\n<li>D. 只有(2)和(3)</li>\n</ul>",
+   "file": "2021_P1A_QU(CHI).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 1A",
+   "type": "題目",
+   "qno": 22,
+   "title": "第 22 題",
+   "section": "卷一甲　第一部分",
+   "tags": [
+    "燃料電池"
+   ],
+   "text": "下列哪些有關氫-氧燃料電池的陳述正確？\n\n(1) 當用來驅動汽車時，它們比使用汽油引擎更加環境友善。\n\n(2) 當在太空站使用時，它們除提供能量外也可產生飲用水。\n\n(3) 當用作醫院後備電源時，它們沒有製造噪音污染。\n\n- A. 只有(1)和(2)\n- B. 只有(1)和(3)\n- C. 只有(2)和(3)\n- D. (1)、(2)和(3)",
+   "html": "<p>下列哪些有關氫-氧燃料電池的陳述正確？</p>\n<p>(1) 當用來驅動汽車時，它們比使用汽油引擎更加環境友善。</p>\n<p>(2) 當在太空站使用時，它們除提供能量外也可產生飲用水。</p>\n<p>(3) 當用作醫院後備電源時，它們沒有製造噪音污染。</p>\n<ul>\n<li>A. 只有(1)和(2)</li>\n<li>B. 只有(1)和(3)</li>\n<li>C. 只有(2)和(3)</li>\n<li>D. (1)、(2)和(3)</li>\n</ul>",
+   "file": "2021_P1A_QU(CHI).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 1A",
+   "type": "題目",
+   "qno": 23,
+   "title": "第 23 題",
+   "section": "卷一甲　第一部分",
+   "tags": [
+    "電解",
+    "銅"
+   ],
+   "text": "考慮以下兩個電解池：\n\n![圖](2021_P1A_crops/q23.png)\n\n在電解時，下列何者會發生在電解池 1 而不在電解池 2？\n\n(1) 釋出氣泡\n\n(2) 藍色溶液變淺\n\n(3) 澱積出紅棕色固體\n\n- A. 只有(1)和(2)\n- B. 只有(1)和(3)\n- C. 只有(2)和(3)\n- D. (1)、(2)和(3)",
+   "html": "<p>考慮以下兩個電解池：</p>\n<p><img alt=\"圖\" src=\"chem_2021_P1A_crops/q23.png\" /></p>\n<p>在電解時，下列何者會發生在電解池 1 而不在電解池 2？</p>\n<p>(1) 釋出氣泡</p>\n<p>(2) 藍色溶液變淺</p>\n<p>(3) 澱積出紅棕色固體</p>\n<ul>\n<li>A. 只有(1)和(2)</li>\n<li>B. 只有(1)和(3)</li>\n<li>C. 只有(2)和(3)</li>\n<li>D. (1)、(2)和(3)</li>\n</ul>",
+   "file": "2021_P1A_QU(CHI).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 1A",
+   "type": "題目",
+   "qno": 24,
+   "title": "第 24 題",
+   "section": "卷一甲　第一部分",
+   "tags": [
+    "鹽基",
+    "溶解度"
+   ],
+   "text": "考慮下列各述句並選出最佳的答案：\n\n| 第一述句 | 第二述句 |\n|---|---|\n| 氫氧化鈣(s) 是一個鹽基。 | 氫氧化鈣(s) 不溶於水。 |\n\n- A. 兩述句均正確，而第二述句為第一述句的合理解釋。\n- B. 兩述句均正確，但第二述句並非第一述句的合理解釋。\n- C. 第一述句錯誤，但第二述句正確。\n- D. 兩述句均錯誤。",
+   "html": "<p>考慮下列各述句並選出最佳的答案：</p>\n<table>\n<thead>\n<tr>\n<th>第一述句</th>\n<th>第二述句</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>氫氧化鈣(s) 是一個鹽基。</td>\n<td>氫氧化鈣(s) 不溶於水。</td>\n</tr>\n</tbody>\n</table>\n<ul>\n<li>A. 兩述句均正確，而第二述句為第一述句的合理解釋。</li>\n<li>B. 兩述句均正確，但第二述句並非第一述句的合理解釋。</li>\n<li>C. 第一述句錯誤，但第二述句正確。</li>\n<li>D. 兩述句均錯誤。</li>\n</ul>",
+   "file": "2021_P1A_QU(CHI).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 1A",
+   "type": "題目",
+   "qno": 25,
+   "title": "第 25 題",
+   "section": "卷一甲　第二部分",
+   "tags": [
+    "反應速率",
+    "初速"
+   ],
+   "text": "已知 HCO₂H(aq) 與 Br₂(aq) 的反應速率均取決於 HCO₂H(aq) 和 Br₂(aq)：\n\nHCO₂H(aq) + Br₂(aq) → 2HBr(aq) + CO₂(g)\n\n如下表所示的四個錐形瓶，各盛有把不同體積的 0.05 M Br₂(aq) 和水混合而得的 Br₂(aq)。對它們分別加入 5.0 cm³ 的 0.05 M HCO₂H(aq)。\n\n| 錐形瓶 | 0.05 M Br₂(aq) 的體積 / cm³ | 水的體積 / cm³ |\n|---|---|---|\n| A | 1.0 | 4.0 |\n| B | 2.0 | 3.0 |\n| C | 3.0 | 2.0 |\n| D | 4.0 | 1.0 |\n\n在上列哪錐形瓶內的反應的初速最快？\n\n- A. 錐形瓶 A\n- B. 錐形瓶 B\n- C. 錐形瓶 C\n- D. 錐形瓶 D",
+   "html": "<p>已知 HCO₂H(aq) 與 Br₂(aq) 的反應速率均取決於 HCO₂H(aq) 和 Br₂(aq)：</p>\n<p>HCO₂H(aq) + Br₂(aq) → 2HBr(aq) + CO₂(g)</p>\n<p>如下表所示的四個錐形瓶，各盛有把不同體積的 0.05 M Br₂(aq) 和水混合而得的 Br₂(aq)。對它們分別加入 5.0 cm³ 的 0.05 M HCO₂H(aq)。</p>\n<table>\n<thead>\n<tr>\n<th>錐形瓶</th>\n<th>0.05 M Br₂(aq) 的體積 / cm³</th>\n<th>水的體積 / cm³</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>A</td>\n<td>1.0</td>\n<td>4.0</td>\n</tr>\n<tr>\n<td>B</td>\n<td>2.0</td>\n<td>3.0</td>\n</tr>\n<tr>\n<td>C</td>\n<td>3.0</td>\n<td>2.0</td>\n</tr>\n<tr>\n<td>D</td>\n<td>4.0</td>\n<td>1.0</td>\n</tr>\n</tbody>\n</table>\n<p>在上列哪錐形瓶內的反應的初速最快？</p>\n<ul>\n<li>A. 錐形瓶 A</li>\n<li>B. 錐形瓶 B</li>\n<li>C. 錐形瓶 C</li>\n<li>D. 錐形瓶 D</li>\n</ul>",
+   "file": "2021_P1A_QU(CHI).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 1A",
+   "type": "題目",
+   "qno": 26,
+   "title": "第 26 題",
+   "section": "卷一甲　第二部分",
+   "tags": [
+    "反應速率",
+    "濃度變化"
+   ],
+   "text": "下列哪坐標圖最能代表在錐形瓶 B 內，反應混合物中 [Br₂(aq)] 隨時間的變化？\n\n![圖](2021_P1A_crops/q26.png)\n\n- A. （圖 A）\n- B. （圖 B）\n- C. （圖 C）\n- D. （圖 D）",
+   "html": "<p>下列哪坐標圖最能代表在錐形瓶 B 內，反應混合物中 [Br₂(aq)] 隨時間的變化？</p>\n<p><img alt=\"圖\" src=\"chem_2021_P1A_crops/q26.png\" /></p>\n<ul>\n<li>A. （圖 A）</li>\n<li>B. （圖 B）</li>\n<li>C. （圖 C）</li>\n<li>D. （圖 D）</li>\n</ul>",
+   "file": "2021_P1A_QU(CHI).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 1A",
+   "type": "題目",
+   "qno": 27,
+   "title": "第 27 題",
+   "section": "卷一甲　第二部分",
+   "tags": [
+    "催化",
+    "過氧化氫",
+    "氧化錳"
+   ],
+   "text": "氧化錳(IV) 可催化過氧化氫的分解生成氧和水。在某實驗中，把過氧化氫溶液與氧化錳(IV) 在一試管中 [?]。當反應完成後，試管內會觀察到什麼？\n\n- A. 一淺藍色液體\n- B. 一藍色固體和一 [?] 色液體\n- C. 一黑色固體和一無色液體\n- D. 一紅棕色固體和一無色液體",
+   "html": "<p>氧化錳(IV) 可催化過氧化氫的分解生成氧和水。在某實驗中，把過氧化氫溶液與氧化錳(IV) 在一試管中 [?]。當反應完成後，試管內會觀察到什麼？</p>\n<ul>\n<li>A. 一淺藍色液體</li>\n<li>B. 一藍色固體和一 [?] 色液體</li>\n<li>C. 一黑色固體和一無色液體</li>\n<li>D. 一紅棕色固體和一無色液體</li>\n</ul>",
+   "file": "2021_P1A_QU(CHI).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 1A",
+   "type": "題目",
+   "qno": 28,
+   "title": "第 28 題",
+   "section": "卷一甲　第二部分",
+   "tags": [
+    "兩性氧化物"
+   ],
+   "text": "下列哪陳述正確描述兩性氧化物的性質？\n\n- A. 它可作為酸或作為鹽基起反應。\n- B. 它可與水反應生成一個酸和一個鹼。\n- C. 它在反應中可同時被氧化和被還原。\n- D. 它可與水反應生成一個氧化劑和一個還原劑。",
+   "html": "<p>下列哪陳述正確描述兩性氧化物的性質？</p>\n<ul>\n<li>A. 它可作為酸或作為鹽基起反應。</li>\n<li>B. 它可與水反應生成一個酸和一個鹼。</li>\n<li>C. 它在反應中可同時被氧化和被還原。</li>\n<li>D. 它可與水反應生成一個氧化劑和一個還原劑。</li>\n</ul>",
+   "file": "2021_P1A_QU(CHI).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 1A",
+   "type": "題目",
+   "qno": 29,
+   "title": "第 29 題",
+   "section": "卷一甲　第二部分",
+   "tags": [
+    "還原",
+    "有機化合物"
+   ],
+   "text": "考慮以下反應：\n\nHOOCCH₂COCH₂CH₃　──NaBH₄(aq)──→　Y\n\nY 是什麼？\n\n- A. HOOCCH₂COCH₂CH₂OH\n- B. HOOCCH₂CHOHCH₂CH₃\n- C. HOOCCH₂CH(OH)CH₂CH₂OH\n- D. HOCH₂CH₂CH(OH)CH₂CH₂OH",
+   "html": "<p>考慮以下反應：</p>\n<p>HOOCCH₂COCH₂CH₃　──NaBH₄(aq)──→　Y</p>\n<p>Y 是什麼？</p>\n<ul>\n<li>A. HOOCCH₂COCH₂CH₂OH</li>\n<li>B. HOOCCH₂CHOHCH₂CH₃</li>\n<li>C. HOOCCH₂CH(OH)CH₂CH₂OH</li>\n<li>D. HOCH₂CH₂CH(OH)CH₂CH₂OH</li>\n</ul>",
+   "file": "2021_P1A_QU(CHI).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 1A",
+   "type": "題目",
+   "qno": 30,
+   "title": "第 30 題",
+   "section": "卷一甲　第二部分",
+   "tags": [
+    "分子結構",
+    "沸點",
+    "異構"
+   ],
+   "text": "考慮下表所示的資料：\n\n| 瓶 | 瓶內液體的分子結構 |\n|---|---|\n| A | （見下圖） |\n| B | （見下圖） |\n| C | （見下圖） |\n\n![圖](2021_P1A_crops/q30.png)\n\n下列哪些液體具有相同的沸點？\n\n- A. 只有瓶 A 和瓶 B 內的液體\n- B. 只有瓶 A 和瓶 C 內的液體\n- C. 只有瓶 B 和瓶 C 內的液體\n- D. 瓶 A、瓶 B 和瓶 C 內的液體",
+   "html": "<p>考慮下表所示的資料：</p>\n<table>\n<thead>\n<tr>\n<th>瓶</th>\n<th>瓶內液體的分子結構</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>A</td>\n<td>（見下圖）</td>\n</tr>\n<tr>\n<td>B</td>\n<td>（見下圖）</td>\n</tr>\n<tr>\n<td>C</td>\n<td>（見下圖）</td>\n</tr>\n</tbody>\n</table>\n<p><img alt=\"圖\" src=\"chem_2021_P1A_crops/q30.png\" /></p>\n<p>下列哪些液體具有相同的沸點？</p>\n<ul>\n<li>A. 只有瓶 A 和瓶 B 內的液體</li>\n<li>B. 只有瓶 A 和瓶 C 內的液體</li>\n<li>C. 只有瓶 B 和瓶 C 內的液體</li>\n<li>D. 瓶 A、瓶 B 和瓶 C 內的液體</li>\n</ul>",
+   "file": "2021_P1A_QU(CHI).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 1A",
+   "type": "題目",
+   "qno": 31,
+   "title": "第 31 題",
+   "section": "卷一甲　第二部分",
+   "tags": [
+    "化學平衡",
+    "反應商"
+   ],
+   "text": "考慮在某些條件下以下的反應：\n\n2X(g) ⇌ 3Y(g)　K = 4.0 mol dm⁻³\n\n在某一時刻的反應商是 2.0 mol dm⁻³。下列的陳述，何者正確？\n\n(1) 在一段時間後，反應商大於 2.0 mol dm⁻³。\n\n(2) 在該時刻逆向反應較正向反應快。\n\n(3) 在該時刻 X(g) 的濃度必定等於 Y(g) 的濃度。\n\n- A. 只有(1)\n- B. 只有(2)\n- C. 只有(1)和(3)\n- D. 只有(2)和(3)",
+   "html": "<p>考慮在某些條件下以下的反應：</p>\n<p>2X(g) ⇌ 3Y(g)　K = 4.0 mol dm⁻³</p>\n<p>在某一時刻的反應商是 2.0 mol dm⁻³。下列的陳述，何者正確？</p>\n<p>(1) 在一段時間後，反應商大於 2.0 mol dm⁻³。</p>\n<p>(2) 在該時刻逆向反應較正向反應快。</p>\n<p>(3) 在該時刻 X(g) 的濃度必定等於 Y(g) 的濃度。</p>\n<ul>\n<li>A. 只有(1)</li>\n<li>B. 只有(2)</li>\n<li>C. 只有(1)和(3)</li>\n<li>D. 只有(2)和(3)</li>\n</ul>",
+   "file": "2021_P1A_QU(CHI).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 1A",
+   "type": "題目",
+   "qno": 32,
+   "title": "第 32 題",
+   "section": "卷一甲　第二部分",
+   "tags": [
+    "化學平衡",
+    "指示劑"
+   ],
+   "text": "考慮以下的平衡體系：\n\nHA(aq) ⇌ H⁺(aq) + A⁻(aq)　ΔH > 0\n\n無色　　　粉紅色\n\n下列的陳述，何者正確？\n\n(1) 加入 Na₂CO₃(s) 會使它的顏色變得較淺。\n\n(2) [?] 會使它的 [?] 濃度增加。\n\n(3) [?]\n\n- A. 只有(1)\n- B. 只有(2)\n- C. 只有(1)和(3)\n- D. 只有(2)和(3)",
+   "html": "<p>考慮以下的平衡體系：</p>\n<p>HA(aq) ⇌ H⁺(aq) + A⁻(aq)　ΔH &gt; 0</p>\n<p>無色　　　粉紅色</p>\n<p>下列的陳述，何者正確？</p>\n<p>(1) 加入 Na₂CO₃(s) 會使它的顏色變得較淺。</p>\n<p>(2) [?] 會使它的 [?] 濃度增加。</p>\n<p>(3) [?]</p>\n<ul>\n<li>A. 只有(1)</li>\n<li>B. 只有(2)</li>\n<li>C. 只有(1)和(3)</li>\n<li>D. 只有(2)和(3)</li>\n</ul>",
+   "file": "2021_P1A_QU(CHI).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 1A",
+   "type": "題目",
+   "qno": 33,
+   "title": "第 33 題",
+   "section": "卷一甲　第二部分",
+   "tags": [
+    "周期表",
+    "第三周期"
+   ],
+   "text": "下列有關在周期表中第三周期由 Na 至 Cl 各元素的陳述，何者正確？\n\n(1) 這些元素的鍵合類別由金屬鍵變為共價鍵。\n\n(2) 這些元素的氧化物由酸性變為鹼性。\n\n(3) 這些元素的電導性持續減少。\n\n- A. 只有(1)\n- B. 只有(2)\n- C. 只有(1)和(3)\n- D. 只有(2)和(3)",
+   "html": "<p>下列有關在周期表中第三周期由 Na 至 Cl 各元素的陳述，何者正確？</p>\n<p>(1) 這些元素的鍵合類別由金屬鍵變為共價鍵。</p>\n<p>(2) 這些元素的氧化物由酸性變為鹼性。</p>\n<p>(3) 這些元素的電導性持續減少。</p>\n<ul>\n<li>A. 只有(1)</li>\n<li>B. 只有(2)</li>\n<li>C. 只有(1)和(3)</li>\n<li>D. 只有(2)和(3)</li>\n</ul>",
+   "file": "2021_P1A_QU(CHI).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 1A",
+   "type": "題目",
+   "qno": 34,
+   "title": "第 34 題",
+   "section": "卷一甲　第二部分",
+   "tags": [
+    "有機化合物",
+    "回流",
+    "溶解度"
+   ],
+   "text": "下列哪些混合物經回流加熱一段時間後不會分離成兩液層？\n\n(1) HCOOCH₂CH₃ 與過量的 NaOH(aq)\n\n(2) CH₃CH₂CH₂Cl 與過量的濃 NaOH(aq)\n\n(3) CH₃CH₂CH₂OH 與過量的酸化 K₂Cr₂O₇(aq)\n\n- A. 只有(1)和(2)\n- B. 只有(1)和(3)\n- C. 只有(2)和(3)\n- D. (1)、(2)和(3)",
+   "html": "<p>下列哪些混合物經回流加熱一段時間後不會分離成兩液層？</p>\n<p>(1) HCOOCH₂CH₃ 與過量的 NaOH(aq)</p>\n<p>(2) CH₃CH₂CH₂Cl 與過量的濃 NaOH(aq)</p>\n<p>(3) CH₃CH₂CH₂OH 與過量的酸化 K₂Cr₂O₇(aq)</p>\n<ul>\n<li>A. 只有(1)和(2)</li>\n<li>B. 只有(1)和(3)</li>\n<li>C. 只有(2)和(3)</li>\n<li>D. (1)、(2)和(3)</li>\n</ul>",
+   "file": "2021_P1A_QU(CHI).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 1A",
+   "type": "題目",
+   "qno": 35,
+   "title": "第 35 題",
+   "section": "卷一甲　第二部分",
+   "tags": [
+    "有機化合物",
+    "結構",
+    "手性"
+   ],
+   "text": "下圖顯示一化合物的結構。\n\n![圖](2021_P1A_crops/q35.png)\n\n下列哪些有關這化合物的陳述正確？\n\n(1) 它具有一個醯胺基團。\n\n(2) 它的結構只有一個手性碳。\n\n(3) 藉使用一適當的還原劑，可把牠轉化為醇。\n\n- A. 只有(1)和(2)\n- B. 只有(1)和(3)\n- C. 只有(2)和(3)\n- D. (1)、(2)和(3)",
+   "html": "<p>下圖顯示一化合物的結構。</p>\n<p><img alt=\"圖\" src=\"chem_2021_P1A_crops/q35.png\" /></p>\n<p>下列哪些有關這化合物的陳述正確？</p>\n<p>(1) 它具有一個醯胺基團。</p>\n<p>(2) 它的結構只有一個手性碳。</p>\n<p>(3) 藉使用一適當的還原劑，可把牠轉化為醇。</p>\n<ul>\n<li>A. 只有(1)和(2)</li>\n<li>B. 只有(1)和(3)</li>\n<li>C. 只有(2)和(3)</li>\n<li>D. (1)、(2)和(3)</li>\n</ul>",
+   "file": "2021_P1A_QU(CHI).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 1A",
+   "type": "題目",
+   "qno": 36,
+   "title": "第 36 題",
+   "section": "卷一甲　第二部分",
+   "tags": [
+    "酯",
+    "異構"
+   ],
+   "text": "考慮下列各述句並選出最佳的答案：\n\n| 第一述句 | 第二述句 |\n|---|---|\n| 乙酸甲酯與甲酸乙酯具有相似的化學性質。 | 乙酸甲酯與甲酸乙酯是異構體。 |\n\n- A. 兩述句均正確，而第二述句為第一述句的合理解釋。\n- B. 兩述句均正確，但第二述句並非第一述句的合理解釋。\n- C. 第一述句錯誤，但第二述句正確。\n- D. 兩述句均錯誤。\n\n---\n\n## 待人工核對\n\n以下題目的 OCR 原文殘缺或模糊，需以原卷覆核：\n\n| 題號 | 頁（原卷） | 問題 |\n|---|---|---|\n| 第 2 題 | 甲部 p.1 | 裝置圖 crop 已截但未肉眼對頁；「在X／在Y」由 OCR「在1」重建 |\n| 第 3 題 | 甲部 p.1 | B、D 選項末字 OCR 讀作「l」（疑為產物名），以 [?] 標示 |\n| 第 7 題 | 甲部 p.2 | 氧化數選項 OCR 不全（僅見 C=3），需核對 |\n| 第 8 題 | 甲部 p.2 | 兩化合物結構 crop 已截但未肉眼對頁 |\n| 第 11 題 | 甲部 p.3 | C、D 選項自由基步驟方程式 OCR 凌亂，以 [?] 標示 |\n| 第 12 題 | 甲部 p.3 | ΔH 選項（ΔH₁/ΔH₂/ΔH₃ 組合式）OCR 全亂，以 [?] 標示 |\n| 第 18 題 | 甲部 p.5 | 陳述(1)(2)(3) 高度亂碼，僅「鬆散黏附」可辨，需對頁核對 |\n| 第 19 題 | 甲部 p.5 | 化合物下標及選項由 OCR 重建，需核對 |\n| 第 20 題 | 甲部 p.5 | 聚合物結構及(1)(2)子結構 crop 已截但未對頁 |\n| 第 21 題 | 甲部 p.6 | 三固體結構 crop 已截但未肉眼對頁 |\n| 第 23 題 | 甲部 p.6 | 兩電解池圖 crop 已截但未肉眼對頁 |\n| 第 26 題 | 甲部 p.7 | 四坐標圖 crop 已截但未肉眼對頁 |\n| 第 27 題 | 甲部 p.7 | 題幹「氧化錳(IV)」由亂碼「缸上錒()」重建；B 選項末字以 [?] 標示 |\n| 第 29 題 | 甲部 p.8 | 反應物／選項結構式 OCR 亂，經化學常識重建，需核對 |\n| 第 30 題 | 甲部 p.8 | 瓶 A/B/C 結構 crop 已截但未肉眼對頁 |\n| 第 31 題 | 甲部 p.8 | 反應「2X(g) ⇌ 3Y(g)」由亂碼「2N;(8) - 3X18)」重建，需核對 |\n| 第 32 題 | 甲部 p.9 | 陳述(2)(3) 高度亂碼，以 [?] 標示，需核對 |\n| 第 35 題 | 甲部 p.10 | 化合物結構 crop 已截但未肉眼對頁；(1)(2)(3) 由 OCR 重建 |",
+   "html": "<p>考慮下列各述句並選出最佳的答案：</p>\n<table>\n<thead>\n<tr>\n<th>第一述句</th>\n<th>第二述句</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>乙酸甲酯與甲酸乙酯具有相似的化學性質。</td>\n<td>乙酸甲酯與甲酸乙酯是異構體。</td>\n</tr>\n</tbody>\n</table>\n<ul>\n<li>A. 兩述句均正確，而第二述句為第一述句的合理解釋。</li>\n<li>B. 兩述句均正確，但第二述句並非第一述句的合理解釋。</li>\n<li>C. 第一述句錯誤，但第二述句正確。</li>\n<li>D. 兩述句均錯誤。</li>\n</ul>\n<hr />\n<h2>待人工核對</h2>\n<p>以下題目的 OCR 原文殘缺或模糊，需以原卷覆核：</p>\n<table>\n<thead>\n<tr>\n<th>題號</th>\n<th>頁（原卷）</th>\n<th>問題</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>第 2 題</td>\n<td>甲部 p.1</td>\n<td>裝置圖 crop 已截但未肉眼對頁；「在X／在Y」由 OCR「在1」重建</td>\n</tr>\n<tr>\n<td>第 3 題</td>\n<td>甲部 p.1</td>\n<td>B、D 選項末字 OCR 讀作「l」（疑為產物名），以 [?] 標示</td>\n</tr>\n<tr>\n<td>第 7 題</td>\n<td>甲部 p.2</td>\n<td>氧化數選項 OCR 不全（僅見 C=3），需核對</td>\n</tr>\n<tr>\n<td>第 8 題</td>\n<td>甲部 p.2</td>\n<td>兩化合物結構 crop 已截但未肉眼對頁</td>\n</tr>\n<tr>\n<td>第 11 題</td>\n<td>甲部 p.3</td>\n<td>C、D 選項自由基步驟方程式 OCR 凌亂，以 [?] 標示</td>\n</tr>\n<tr>\n<td>第 12 題</td>\n<td>甲部 p.3</td>\n<td>ΔH 選項（ΔH₁/ΔH₂/ΔH₃ 組合式）OCR 全亂，以 [?] 標示</td>\n</tr>\n<tr>\n<td>第 18 題</td>\n<td>甲部 p.5</td>\n<td>陳述(1)(2)(3) 高度亂碼，僅「鬆散黏附」可辨，需對頁核對</td>\n</tr>\n<tr>\n<td>第 19 題</td>\n<td>甲部 p.5</td>\n<td>化合物下標及選項由 OCR 重建，需核對</td>\n</tr>\n<tr>\n<td>第 20 題</td>\n<td>甲部 p.5</td>\n<td>聚合物結構及(1)(2)子結構 crop 已截但未對頁</td>\n</tr>\n<tr>\n<td>第 21 題</td>\n<td>甲部 p.6</td>\n<td>三固體結構 crop 已截但未肉眼對頁</td>\n</tr>\n<tr>\n<td>第 23 題</td>\n<td>甲部 p.6</td>\n<td>兩電解池圖 crop 已截但未肉眼對頁</td>\n</tr>\n<tr>\n<td>第 26 題</td>\n<td>甲部 p.7</td>\n<td>四坐標圖 crop 已截但未肉眼對頁</td>\n</tr>\n<tr>\n<td>第 27 題</td>\n<td>甲部 p.7</td>\n<td>題幹「氧化錳(IV)」由亂碼「缸上錒()」重建；B 選項末字以 [?] 標示</td>\n</tr>\n<tr>\n<td>第 29 題</td>\n<td>甲部 p.8</td>\n<td>反應物／選項結構式 OCR 亂，經化學常識重建，需核對</td>\n</tr>\n<tr>\n<td>第 30 題</td>\n<td>甲部 p.8</td>\n<td>瓶 A/B/C 結構 crop 已截但未肉眼對頁</td>\n</tr>\n<tr>\n<td>第 31 題</td>\n<td>甲部 p.8</td>\n<td>反應「2X(g) ⇌ 3Y(g)」由亂碼「2N;(8) - 3X18)」重建，需核對</td>\n</tr>\n<tr>\n<td>第 32 題</td>\n<td>甲部 p.9</td>\n<td>陳述(2)(3) 高度亂碼，以 [?] 標示，需核對</td>\n</tr>\n<tr>\n<td>第 35 題</td>\n<td>甲部 p.10</td>\n<td>化合物結構 crop 已截但未肉眼對頁；(1)(2)(3) 由 OCR 重建</td>\n</tr>\n</tbody>\n</table>",
+   "file": "2021_P1A_QU(CHI).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 1B",
+   "type": "題目",
+   "qno": 1,
+   "title": "第 1 題",
+   "section": "卷一乙　第一部分",
+   "tags": [
+    "乙炔",
+    "碳化鈣",
+    "自由基",
+    "燃燒"
+   ],
+   "text": "乙炔(C₂H₂)是一種燃料，它可由碳化鈣(CaC₂)經如下所示方程式所代表的兩個不同反應而獲得：\n\n反應(I)：CaC₂ + A → C₂H₂ + CaH₂\n\n反應(II)：CaC₂ + 2H₂O → C₂H₂ + Ca(OH)₂\n\n(a)　繪一個 C₂H₂ 分子的電子圖（只顯示最外層的電子）。（1 分）\n\n(b)　寫出乙炔完全燃燒的化學方程式。（[?] 分）\n\n(c)　參照反應(I)：\n\n　(i)　在室內條件下，A 是氣體。提出 A 是什麼。\n\n　(ii)　據此，解釋為什麼這反應是危險的。（2 分）\n\n(d)　在反應(II)中，生成了 Ca(OH)₂。寫出 Ca(OH)₂ 在日常生活中的一項用途。（1 分）",
+   "html": "<p>乙炔(C₂H₂)是一種燃料，它可由碳化鈣(CaC₂)經如下所示方程式所代表的兩個不同反應而獲得：</p>\n<p>反應(I)：CaC₂ + A → C₂H₂ + CaH₂</p>\n<p>反應(II)：CaC₂ + 2H₂O → C₂H₂ + Ca(OH)₂</p>\n<p>(a)　繪一個 C₂H₂ 分子的電子圖（只顯示最外層的電子）。（1 分）</p>\n<p>(b)　寫出乙炔完全燃燒的化學方程式。（[?] 分）</p>\n<p>(c)　參照反應(I)：</p>\n<p>(i)　在室內條件下，A 是氣體。提出 A 是什麼。</p>\n<p>(ii)　據此，解釋為什麼這反應是危險的。（2 分）</p>\n<p>(d)　在反應(II)中，生成了 Ca(OH)₂。寫出 Ca(OH)₂ 在日常生活中的一項用途。（1 分）</p>",
+   "file": "2021_P1B_QU(CHI).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 1B",
+   "type": "題目",
+   "qno": 2,
+   "title": "第 2 題",
+   "section": "卷一乙　第一部分",
+   "tags": [
+    "電解",
+    "半反應式",
+    "產物"
+   ],
+   "text": "在下表的方格內，填寫與每一電解質在電解時的相關資料：\n\n<table>\n<tr><th>電極</th><th>電解質</th><th>在電極的產物／觀察</th><th>半反應式或理據</th></tr>\n<tr><td>石墨（陽極）</td><td rowspan=\"2\">熔融 PbBr₂</td><td>(a) 觀察：</td><td>(b) 半反應式：</td></tr>\n<tr><td>石墨（陰極）</td><td></td><td></td></tr>\n<tr><td>鉑（陽極）</td><td rowspan=\"2\">ZnBr₂ 稀溶液</td><td>(d) 產物：</td><td>(c) 半反應式：</td></tr>\n<tr><td>鉑（陰極）</td><td>(e) 產物：</td><td></td></tr>\n<tr><td>銅（陽極）</td><td rowspan=\"2\">CuSO₄ 溶液</td><td>(f) 觀察：</td><td>(g) 理據：</td></tr>\n<tr><td>銅（陰極）</td><td></td><td></td></tr>\n</table>\n\n（7 分）",
+   "html": "<p>在下表的方格內，填寫與每一電解質在電解時的相關資料：</p>\n<table>\n<tr><th>電極</th><th>電解質</th><th>在電極的產物／觀察</th><th>半反應式或理據</th></tr>\n<tr><td>石墨（陽極）</td><td rowspan=\"2\">熔融 PbBr₂</td><td>(a) 觀察：</td><td>(b) 半反應式：</td></tr>\n<tr><td>石墨（陰極）</td><td></td><td></td></tr>\n<tr><td>鉑（陽極）</td><td rowspan=\"2\">ZnBr₂ 稀溶液</td><td>(d) 產物：</td><td>(c) 半反應式：</td></tr>\n<tr><td>鉑（陰極）</td><td>(e) 產物：</td><td></td></tr>\n<tr><td>銅（陽極）</td><td rowspan=\"2\">CuSO₄ 溶液</td><td>(f) 觀察：</td><td>(g) 理據：</td></tr>\n<tr><td>銅（陰極）</td><td></td><td></td></tr>\n</table>\n\n<p>（7 分）</p>",
+   "file": "2021_P1B_QU(CHI).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 1B",
+   "type": "題目",
+   "qno": 3,
+   "title": "第 3 題",
+   "section": "卷一乙　第一部分",
+   "tags": [
+    "同位素",
+    "二氧化硅",
+    "矽"
+   ],
+   "text": "硅在自然界中以三個同位素存在，每個同位素的豐度如下表所示：\n\n| 同位素 | 豐度 / % |\n|---|---|\n| ²⁸Si | 92.20 |\n| ²⁹Si | x |\n| ³⁰Si | [?] |\n\n(a)　「同位素」一詞是什麼意思？（1 分）\n\n(b)　計算 x%。（相對原子質量：Si = 28.1）（2 分）\n\n(c)　二氧化硅是硅的一個氧化物。\n\n　(i)　解釋為什麼二氧化硅具高熔點。（1 分）\n\n　(ii)　在某些條件下，把 1.0 g 的 SiO₂ 與 1.0 g 的 Mg 一起反應，反應的方程式如下：\n\nSiO₂ + 2Mg → 2MgO + Si\n\n計算所生成 Si 的理論質量。（相對原子質量：O = 16.0, Mg = 24.3, Si = 28.1）（4 分）\n\n(d)　只含硅和氧的一種礦物的部分結構如下圖所示：\n\n![圖](2021_P1B_crops/q03.png)\n\n這礦物是什麼？（1 分）",
+   "html": "<p>硅在自然界中以三個同位素存在，每個同位素的豐度如下表所示：</p>\n<table>\n<thead>\n<tr>\n<th>同位素</th>\n<th>豐度 / %</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>²⁸Si</td>\n<td>92.20</td>\n</tr>\n<tr>\n<td>²⁹Si</td>\n<td>x</td>\n</tr>\n<tr>\n<td>³⁰Si</td>\n<td>[?]</td>\n</tr>\n</tbody>\n</table>\n<p>(a)　「同位素」一詞是什麼意思？（1 分）</p>\n<p>(b)　計算 x%。（相對原子質量：Si = 28.1）（2 分）</p>\n<p>(c)　二氧化硅是硅的一個氧化物。</p>\n<p>(i)　解釋為什麼二氧化硅具高熔點。（1 分）</p>\n<p>(ii)　在某些條件下，把 1.0 g 的 SiO₂ 與 1.0 g 的 Mg 一起反應，反應的方程式如下：</p>\n<p>SiO₂ + 2Mg → 2MgO + Si</p>\n<p>計算所生成 Si 的理論質量。（相對原子質量：O = 16.0, Mg = 24.3, Si = 28.1）（4 分）</p>\n<p>(d)　只含硅和氧的一種礦物的部分結構如下圖所示：</p>\n<p><img alt=\"圖\" src=\"chem_2021_P1B_crops/q03.png\" /></p>\n<p>這礦物是什麼？（1 分）</p>",
+   "file": "2021_P1B_QU(CHI).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 1B",
+   "type": "題目",
+   "qno": 4,
+   "title": "第 4 題",
+   "section": "卷一乙　第一部分",
+   "tags": [
+    "裂解",
+    "烯烴",
+    "聚合物",
+    "沸點"
+   ],
+   "text": "癸烷(C₁₀H₂₂)的一個可能裂解反應的化學方程式如下所示：\n\nC₁₀H₂₂ → C₈H₁₈ + 2X\n\n(a)　寫出 X 的系統名稱。\n\n(b)　建議一個化學測試以顯示怎樣可辨別 X 和丁烷。（2 分）\n\n(c)　X 可生成一聚合物 Z。\n\n　(i)　提出為什麼 X 可生成一聚合物。\n\n　(ii)　繪出 Z 的重複單位。（2 分）\n\n(d)　化合物 Y 是丁烷的結構異構體。\n\n　(i)　繪出 Y 的一個可能結構。\n\n　(ii)　癸烷、丁烷和 Y，何者具最高沸點？解釋你的答案。（1 分）",
+   "html": "<p>癸烷(C₁₀H₂₂)的一個可能裂解反應的化學方程式如下所示：</p>\n<p>C₁₀H₂₂ → C₈H₁₈ + 2X</p>\n<p>(a)　寫出 X 的系統名稱。</p>\n<p>(b)　建議一個化學測試以顯示怎樣可辨別 X 和丁烷。（2 分）</p>\n<p>(c)　X 可生成一聚合物 Z。</p>\n<p>(i)　提出為什麼 X 可生成一聚合物。</p>\n<p>(ii)　繪出 Z 的重複單位。（2 分）</p>\n<p>(d)　化合物 Y 是丁烷的結構異構體。</p>\n<p>(i)　繪出 Y 的一個可能結構。</p>\n<p>(ii)　癸烷、丁烷和 Y，何者具最高沸點？解釋你的答案。（1 分）</p>",
+   "file": "2021_P1B_QU(CHI).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 1B",
+   "type": "題目",
+   "qno": 5,
+   "title": "第 5 題",
+   "section": "卷一乙　第一部分",
+   "tags": [
+    "六胺",
+    "焓變",
+    "量熱"
+   ],
+   "text": "六胺(CH₂)₆N₄ 是一種可攜式固體燃料的主要成分。在室內條件下它是固體，其結構如下所示：\n\n![圖](2021_P1B_crops/q05.png)\n\n(a)　根據共價鍵的斷裂和形成，提出為什麼六胺的燃燒是放熱的。（2 分）\n\n(b)　已知：\n\n| 化合物 | 標準生成焓變 / kJ mol⁻¹ |\n|---|---|\n| C₆H₁₂N₄(s) | +123 |\n| CO₂(g) | −394 |\n| H₂O(l) | −286 |\n| NO₂(g) | +33 |\n\n　(i)　寫出六胺的標準生成焓變的熱化學方程式。\n\n　(ii)　六胺燃燒如下方程式所示：\n\nC₆H₁₂N₄(s) + 13O₂(g) → 6CO₂(g) + 6H₂O(l) + 4NO₂(g)\n\n計算六胺的標準燃燒焓變。（4 分）\n\n(c)　下圖顯示在某些實驗條件下，一個測定六胺的燃燒焓變的實驗裝置：\n\n![圖](2021_P1B_crops/q05c.png)\n\n所得數據如下所示：\n\n燃燒了的六胺的質量：[?] g\n\n水的初始溫度：23.5 °C\n\n水的最終溫度：47.5 °C\n\n六胺的摩爾質量：140.0 g\n\n水的比熱容：4.20 J g⁻¹ K⁻¹\n\n假設玻璃燒杯的熱容可忽略，計算在這些實驗條件下六胺的燃燒焓變。（[?] 分）",
+   "html": "<p>六胺(CH₂)₆N₄ 是一種可攜式固體燃料的主要成分。在室內條件下它是固體，其結構如下所示：</p>\n<p><img alt=\"圖\" src=\"chem_2021_P1B_crops/q05.png\" /></p>\n<p>(a)　根據共價鍵的斷裂和形成，提出為什麼六胺的燃燒是放熱的。（2 分）</p>\n<p>(b)　已知：</p>\n<table>\n<thead>\n<tr>\n<th>化合物</th>\n<th>標準生成焓變 / kJ mol⁻¹</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>C₆H₁₂N₄(s)</td>\n<td>+123</td>\n</tr>\n<tr>\n<td>CO₂(g)</td>\n<td>−394</td>\n</tr>\n<tr>\n<td>H₂O(l)</td>\n<td>−286</td>\n</tr>\n<tr>\n<td>NO₂(g)</td>\n<td>+33</td>\n</tr>\n</tbody>\n</table>\n<p>(i)　寫出六胺的標準生成焓變的熱化學方程式。</p>\n<p>(ii)　六胺燃燒如下方程式所示：</p>\n<p>C₆H₁₂N₄(s) + 13O₂(g) → 6CO₂(g) + 6H₂O(l) + 4NO₂(g)</p>\n<p>計算六胺的標準燃燒焓變。（4 分）</p>\n<p>(c)　下圖顯示在某些實驗條件下，一個測定六胺的燃燒焓變的實驗裝置：</p>\n<p><img alt=\"圖\" src=\"chem_2021_P1B_crops/q05c.png\" /></p>\n<p>所得數據如下所示：</p>\n<p>燃燒了的六胺的質量：[?] g</p>\n<p>水的初始溫度：23.5 °C</p>\n<p>水的最終溫度：47.5 °C</p>\n<p>六胺的摩爾質量：140.0 g</p>\n<p>水的比熱容：4.20 J g⁻¹ K⁻¹</p>\n<p>假設玻璃燒杯的熱容可忽略，計算在這些實驗條件下六胺的燃燒焓變。（[?] 分）</p>",
+   "file": "2021_P1B_QU(CHI).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 1B",
+   "type": "題目",
+   "qno": 6,
+   "title": "第 6 題",
+   "section": "卷一乙　第一部分",
+   "tags": [
+    "氧化鉛",
+    "還原",
+    "裝置"
+   ],
+   "text": "利用如下所示的實驗裝置可由氧化鉛(II)得到鉛。除了鉛外，也生成氨氣和蒸汽。\n\n![圖](2021_P1B_crops/q06.png)\n\n(a)　以下各項提出一個原因：\n\n　(i)　把反應管以向下傾斜的方式擺放。\n\n　(ii)　這實驗是在煙櫥中進行的。（2 分）\n\n(b)　寫出這反應的化學方程式。（1 分）\n\n(c)　解釋在這反應中哪個試劑是還原劑。（1 分）\n\n(d)　使用碳也可從氧化鉛(II)獲取鉛。\n\n　(i)　寫出這反應的化學方程式。（1 分）\n\n　(ii)　下圖顯示進行這反應的一個不完整裝置：\n\n![圖](2021_P1B_crops/q06d.png)\n\n　(1)　在圖中加上適當的儀器（附標示）以完成這裝置。\n\n　(2)　寫出儀器 W 的名稱。（3 分）",
+   "html": "<p>利用如下所示的實驗裝置可由氧化鉛(II)得到鉛。除了鉛外，也生成氨氣和蒸汽。</p>\n<p><img alt=\"圖\" src=\"chem_2021_P1B_crops/q06.png\" /></p>\n<p>(a)　以下各項提出一個原因：</p>\n<p>(i)　把反應管以向下傾斜的方式擺放。</p>\n<p>(ii)　這實驗是在煙櫥中進行的。（2 分）</p>\n<p>(b)　寫出這反應的化學方程式。（1 分）</p>\n<p>(c)　解釋在這反應中哪個試劑是還原劑。（1 分）</p>\n<p>(d)　使用碳也可從氧化鉛(II)獲取鉛。</p>\n<p>(i)　寫出這反應的化學方程式。（1 分）</p>\n<p>(ii)　下圖顯示進行這反應的一個不完整裝置：</p>\n<p><img alt=\"圖\" src=\"chem_2021_P1B_crops/q06d.png\" /></p>\n<p>(1)　在圖中加上適當的儀器（附標示）以完成這裝置。</p>\n<p>(2)　寫出儀器 W 的名稱。（3 分）</p>",
+   "file": "2021_P1B_QU(CHI).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 1B",
+   "type": "題目",
+   "qno": 7,
+   "title": "第 7 題",
+   "section": "卷一乙　第一部分",
+   "tags": [
+    "滴定",
+    "標準溶液",
+    "濃度"
+   ],
+   "text": "以下列出測定一個氫氯酸樣本的濃度的步驟：\n\n步驟(1)：把 2.750 g 的無水碳酸鈉固體溶於去離子水，並調校至 250.0 cm³，製備成一個 0.1038 M 標準碳酸鈉溶液。\n\n步驟(2)：將步驟(1)所得的 25.0 cm³ 的標準溶液轉移至一個潔淨的錐形瓶，然後加入數滴甲基橙。\n\n步驟(3)：把氫氯酸樣本置於滴定管，用這氫氯酸滴定錐形瓶中的標準溶液。\n\n重複步驟(2)和步驟(3)幾次，下表列出各次滴定的結果：\n\n| 實驗 | 1 | 2 | 3 | 4 | 5 |\n|---|---|---|---|---|---|\n| 滴定管最終讀數 / cm³ | 30.85 | 28.75 | 28.30 | 31.35 | 21.25 |\n| 滴定管初始讀數 / cm³ | 2.00 | 1.50 | 1.00 | 3.00 | 0.00 |\n\n(a)　描述在步驟(1)中，製備該標準碳酸鈉溶液的步驟。（2 分）\n\n(b)　寫出在滴定終點的顏色變化。（1 分）\n\n(c)　計算在滴定中所用氫氯酸的體積的合理平均值。（1 分）\n\n(d)　計算在該樣本中氫氯酸的濃度（以 g dm⁻³ 表示）。（相對原子質量：H = 1.0, Cl = 35.5）（[?] 分）",
+   "html": "<p>以下列出測定一個氫氯酸樣本的濃度的步驟：</p>\n<p>步驟(1)：把 2.750 g 的無水碳酸鈉固體溶於去離子水，並調校至 250.0 cm³，製備成一個 0.1038 M 標準碳酸鈉溶液。</p>\n<p>步驟(2)：將步驟(1)所得的 25.0 cm³ 的標準溶液轉移至一個潔淨的錐形瓶，然後加入數滴甲基橙。</p>\n<p>步驟(3)：把氫氯酸樣本置於滴定管，用這氫氯酸滴定錐形瓶中的標準溶液。</p>\n<p>重複步驟(2)和步驟(3)幾次，下表列出各次滴定的結果：</p>\n<table>\n<thead>\n<tr>\n<th>實驗</th>\n<th>1</th>\n<th>2</th>\n<th>3</th>\n<th>4</th>\n<th>5</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>滴定管最終讀數 / cm³</td>\n<td>30.85</td>\n<td>28.75</td>\n<td>28.30</td>\n<td>31.35</td>\n<td>21.25</td>\n</tr>\n<tr>\n<td>滴定管初始讀數 / cm³</td>\n<td>2.00</td>\n<td>1.50</td>\n<td>1.00</td>\n<td>3.00</td>\n<td>0.00</td>\n</tr>\n</tbody>\n</table>\n<p>(a)　描述在步驟(1)中，製備該標準碳酸鈉溶液的步驟。（2 分）</p>\n<p>(b)　寫出在滴定終點的顏色變化。（1 分）</p>\n<p>(c)　計算在滴定中所用氫氯酸的體積的合理平均值。（1 分）</p>\n<p>(d)　計算在該樣本中氫氯酸的濃度（以 g dm⁻³ 表示）。（相對原子質量：H = 1.0, Cl = 35.5）（[?] 分）</p>",
+   "file": "2021_P1B_QU(CHI).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 1B",
+   "type": "題目",
+   "qno": 8,
+   "title": "第 8 題",
+   "section": "卷一乙　第一部分",
+   "tags": [
+    "還原能力",
+    "原電池",
+    "金屬活性"
+   ],
+   "text": "你獲提供下列各項：燒杯、通用電錶、數條連接線、Zn 片、Cu 片、Ag 片。\n\n輔以一個標示圖，提出你怎樣可進行一個實驗以確定（附以解釋）金屬的還原能力的次序為 Zn > Cu > Ag。（6 分）",
+   "html": "<p>你獲提供下列各項：燒杯、通用電錶、數條連接線、Zn 片、Cu 片、Ag 片。</p>\n<p>輔以一個標示圖，提出你怎樣可進行一個實驗以確定（附以解釋）金屬的還原能力的次序為 Zn &gt; Cu &gt; Ag。（6 分）</p>",
+   "file": "2021_P1B_QU(CHI).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 1B",
+   "type": "題目",
+   "qno": 9,
+   "title": "第 9 題",
+   "section": "卷一乙　第二部分",
+   "tags": [
+    "平衡常數",
+    "可逆反應"
+   ],
+   "text": "於恆溫下，在一個體積固定為 2.0 dm³ 的密閉容器內進行涉及 CS₂(g) 的可逆反應的實驗。該反應的方程式如下所示：\n\nCH₄(g) + 2H₂S(g) ⇌ 4H₂(g) + CS₂(g)\n\n(a)　寫出這反應的平衡常數 Kc 的表示式。（1 分）\n\n(b)　於該溫度下，在不同時間各物種的摩爾數如下表所示：\n\n| | CH₄(g) | H₂S(g) | H₂(g) | CS₂(g) |\n|---|---|---|---|---|\n| 初始摩爾數 | 0.04 | 0.08 | 0.08 | 0.04 |\n| 在平衡時的摩爾數 | [?] | 0.11 | 0.02 | 0.025 |\n\n　(i)　把 CH₄(g) 在平衡時的摩爾數填入上表內。\n\n　(ii)　計算在該溫度下這反應的平衡常數 Kc。\n\n　(iii)　如果密閉容器的體積變為 3.0 dm³ 而所有其他實驗條件維持不變，解釋 Kc 會否增加、減少，抑或維持不變。（[?] 分）",
+   "html": "<p>於恆溫下，在一個體積固定為 2.0 dm³ 的密閉容器內進行涉及 CS₂(g) 的可逆反應的實驗。該反應的方程式如下所示：</p>\n<p>CH₄(g) + 2H₂S(g) ⇌ 4H₂(g) + CS₂(g)</p>\n<p>(a)　寫出這反應的平衡常數 Kc 的表示式。（1 分）</p>\n<p>(b)　於該溫度下，在不同時間各物種的摩爾數如下表所示：</p>\n<table>\n<thead>\n<tr>\n<th></th>\n<th>CH₄(g)</th>\n<th>H₂S(g)</th>\n<th>H₂(g)</th>\n<th>CS₂(g)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>初始摩爾數</td>\n<td>0.04</td>\n<td>0.08</td>\n<td>0.08</td>\n<td>0.04</td>\n</tr>\n<tr>\n<td>在平衡時的摩爾數</td>\n<td>[?]</td>\n<td>0.11</td>\n<td>0.02</td>\n<td>0.025</td>\n</tr>\n</tbody>\n</table>\n<p>(i)　把 CH₄(g) 在平衡時的摩爾數填入上表內。</p>\n<p>(ii)　計算在該溫度下這反應的平衡常數 Kc。</p>\n<p>(iii)　如果密閉容器的體積變為 3.0 dm³ 而所有其他實驗條件維持不變，解釋 Kc 會否增加、減少，抑或維持不變。（[?] 分）</p>",
+   "file": "2021_P1B_QU(CHI).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 1B",
+   "type": "題目",
+   "qno": 10,
+   "title": "第 10 題",
+   "section": "卷一乙　第二部分",
+   "tags": [
+    "反應速率",
+    "氣體體積",
+    "催化"
+   ],
+   "text": "一藥片含有碳酸氫鈉固體及檸檬酸固體（可溶於水）。在室內條件下進行實驗，研習當把這藥片放進於去離子水時生成 CO₂ 氣體的速率。\n\n(a)　下圖顯示該實驗的一個不完整裝置：\n\n![圖](2021_P1B_crops/q10a.png)\n\n　(i)　解釋為什麼在實驗開始前，所用的去離子水應先被 CO₂ 氣體飽和。\n\n　(ii)　在上圖中加上適當的儀器（附標示），以顯示怎樣量度所生成的 CO₂ 氣體。（2 分）\n\n(b)　以下坐標圖顯示在該實驗中所生成 CO₂ 氣體的體積隨時間的變化：\n\n![圖](2021_P1B_crops/q10b.png)\n\n　(i)　假設檸檬酸是過量，且沒有其他物質與碳酸氫鈉反應，計算在這藥片中碳酸氫鈉的 [?]。\n\n　(ii)　若把這藥片研成粉末而所有其他實驗條件維持不變，在上面的坐標圖草繪另一曲線（用虛線）來顯示預期的實驗結果。（[?] 分）",
+   "html": "<p>一藥片含有碳酸氫鈉固體及檸檬酸固體（可溶於水）。在室內條件下進行實驗，研習當把這藥片放進於去離子水時生成 CO₂ 氣體的速率。</p>\n<p>(a)　下圖顯示該實驗的一個不完整裝置：</p>\n<p><img alt=\"圖\" src=\"chem_2021_P1B_crops/q10a.png\" /></p>\n<p>(i)　解釋為什麼在實驗開始前，所用的去離子水應先被 CO₂ 氣體飽和。</p>\n<p>(ii)　在上圖中加上適當的儀器（附標示），以顯示怎樣量度所生成的 CO₂ 氣體。（2 分）</p>\n<p>(b)　以下坐標圖顯示在該實驗中所生成 CO₂ 氣體的體積隨時間的變化：</p>\n<p><img alt=\"圖\" src=\"chem_2021_P1B_crops/q10b.png\" /></p>\n<p>(i)　假設檸檬酸是過量，且沒有其他物質與碳酸氫鈉反應，計算在這藥片中碳酸氫鈉的 [?]。</p>\n<p>(ii)　若把這藥片研成粉末而所有其他實驗條件維持不變，在上面的坐標圖草繪另一曲線（用虛線）來顯示預期的實驗結果。（[?] 分）</p>",
+   "file": "2021_P1B_QU(CHI).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 1B",
+   "type": "題目",
+   "qno": 11,
+   "title": "第 11 題",
+   "section": "卷一乙　第二部分",
+   "tags": [
+    "馬科尼科夫規則",
+    "親電加成",
+    "旋光性"
+   ],
+   "text": "甲基丁-2-烯與 HCl(g) 反應，得到按馬科尼科夫規則預測的主要產物 X。當反應時，亦可生成另一個產物 Y（次要產物）。參照以下各有機轉化：\n\n![圖](2021_P1B_crops/q11.png)\n\n(a)　寫出馬科尼科夫規則。（1 分）\n\n(b)　繪出 X 的結構。（1 分）\n\n(c)　X 與 U 反應生成 2-甲基丁-2-醇。U 是什麼？（1 分）\n\n(d)　(i)　Y 具有一個手性中心。繪出 Y 的一個對映異構體的三維結構圖。\n\n　(ii)　Y 具旋光性。「具旋光性」一詞是什麼意思？（2 分）\n\n(e)　Y 與 U 反應得到醇乙。建議一化學測試以顯示怎樣可辨別醇乙和 2-甲基丁-2-醇。（2 分）",
+   "html": "<p>甲基丁-2-烯與 HCl(g) 反應，得到按馬科尼科夫規則預測的主要產物 X。當反應時，亦可生成另一個產物 Y（次要產物）。參照以下各有機轉化：</p>\n<p><img alt=\"圖\" src=\"chem_2021_P1B_crops/q11.png\" /></p>\n<p>(a)　寫出馬科尼科夫規則。（1 分）</p>\n<p>(b)　繪出 X 的結構。（1 分）</p>\n<p>(c)　X 與 U 反應生成 2-甲基丁-2-醇。U 是什麼？（1 分）</p>\n<p>(d)　(i)　Y 具有一個手性中心。繪出 Y 的一個對映異構體的三維結構圖。</p>\n<p>(ii)　Y 具旋光性。「具旋光性」一詞是什麼意思？（2 分）</p>\n<p>(e)　Y 與 U 反應得到醇乙。建議一化學測試以顯示怎樣可辨別醇乙和 2-甲基丁-2-醇。（2 分）</p>",
+   "file": "2021_P1B_QU(CHI).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 1B",
+   "type": "題目",
+   "qno": 12,
+   "title": "第 12 題",
+   "section": "卷一乙　第二部分",
+   "tags": [
+    "氧化物",
+    "酸鹼性質",
+    "過渡金屬"
+   ],
+   "text": "二氧化硅是一酸性氧化物。然而，二氧化硅和蒸餾水的混合物的 pH 是 7。\n\n(a)　(i)　提出為什麼二氧化硅被分類為酸性氧化物。\n\n　(ii)　解釋為什麼該混合物的 pH 是 7。（2 分）\n\n(b)　氧化磷(V)是一酸性氧化物。輔以一化學方程式，解釋為什麼氧化磷(V)和蒸餾水的混合物的 pH 小於 7。（2 分）\n\n(c)　參照以下反應：\n\nCu₂O(s) + H₂SO₄(aq) → Cu(s) + CuSO₄(aq) + H₂O(l)\n\n寫出這反應可怎樣表明銅展示兩個過渡性金屬的特性。（2 分）",
+   "html": "<p>二氧化硅是一酸性氧化物。然而，二氧化硅和蒸餾水的混合物的 pH 是 7。</p>\n<p>(a)　(i)　提出為什麼二氧化硅被分類為酸性氧化物。</p>\n<p>(ii)　解釋為什麼該混合物的 pH 是 7。（2 分）</p>\n<p>(b)　氧化磷(V)是一酸性氧化物。輔以一化學方程式，解釋為什麼氧化磷(V)和蒸餾水的混合物的 pH 小於 7。（2 分）</p>\n<p>(c)　參照以下反應：</p>\n<p>Cu₂O(s) + H₂SO₄(aq) → Cu(s) + CuSO₄(aq) + H₂O(l)</p>\n<p>寫出這反應可怎樣表明銅展示兩個過渡性金屬的特性。（2 分）</p>",
+   "file": "2021_P1B_QU(CHI).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 1B",
+   "type": "題目",
+   "qno": 13,
+   "title": "第 13 題",
+   "section": "卷一乙　第二部分",
+   "tags": [
+    "縮合聚合",
+    "尼龍"
+   ],
+   "text": "以尼龍66為例，闡述縮合聚合的意思。你的答案也必須包括各單體的結構特徵。（5 分）\n\n---\n\n## 待人工核對\n\n以下題目的 OCR 原文殘缺或模糊，需以原卷覆核：\n\n| 題號 | 頁（原卷） | 問題 |\n|---|---|---|\n| 第 1 題 | 乙部 p.11–12 | 反應(I)產物「CaH₂」及溫度條件由亂碼重建；(a)「C₂H₂分子」由「Cl.」重建；(b) 題分以 [?] 標示 |\n| 第 2 題 | 乙部 p.13 | 電解質表格結構（跨欄 rowspan、觀察／產物／半反應式欄位）由 OCR 重建，需對頁核對 |\n| 第 3 題 | 乙部 p.14–15 | ³⁰Si 豐度 OCR 讀作「}」，以 [?] 標示；礦物結構 crop 已截但未肉眼對頁 |\n| 第 4 題 | 乙部 p.15–16 | 裂解方程式「C₁₀H₂₂ → C₈H₁₈ + 2X」由亂碼重建，需核對 |\n| 第 5 題 | 乙部 p.17–18 | 六胺結構 crop 已截但未肉眼對頁；(c) 六胺質量及題分 OCR 亂，以 [?] 標示 |\n| 第 6 題 | 乙部 p.19 | 兩裝置圖 crop 已截但未肉眼對頁 |\n| 第 7 題 | 乙部 p.20 | 滴定結果表及(d)題分由 OCR 重建，需核對 |\n| 第 9 題 | 乙部 p.22 | 平衡摩爾數表數值由 OCR 重建，需核對 |\n| 第 10 題 | 乙部 p.23–24 | (b)(i) 碳酸氫鈉後文字 OCR 亂，以 [?] 標示；坐標圖 crop 已截但未肉眼對頁 |\n| 第 11 題 | 乙部 p.25–26 | 有機轉化 scheme crop 已截但未肉眼對頁 |",
+   "html": "<p>以尼龍66為例，闡述縮合聚合的意思。你的答案也必須包括各單體的結構特徵。（5 分）</p>\n<hr />\n<h2>待人工核對</h2>\n<p>以下題目的 OCR 原文殘缺或模糊，需以原卷覆核：</p>\n<table>\n<thead>\n<tr>\n<th>題號</th>\n<th>頁（原卷）</th>\n<th>問題</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>第 1 題</td>\n<td>乙部 p.11–12</td>\n<td>反應(I)產物「CaH₂」及溫度條件由亂碼重建；(a)「C₂H₂分子」由「Cl.」重建；(b) 題分以 [?] 標示</td>\n</tr>\n<tr>\n<td>第 2 題</td>\n<td>乙部 p.13</td>\n<td>電解質表格結構（跨欄 rowspan、觀察／產物／半反應式欄位）由 OCR 重建，需對頁核對</td>\n</tr>\n<tr>\n<td>第 3 題</td>\n<td>乙部 p.14–15</td>\n<td>³⁰Si 豐度 OCR 讀作「}」，以 [?] 標示；礦物結構 crop 已截但未肉眼對頁</td>\n</tr>\n<tr>\n<td>第 4 題</td>\n<td>乙部 p.15–16</td>\n<td>裂解方程式「C₁₀H₂₂ → C₈H₁₈ + 2X」由亂碼重建，需核對</td>\n</tr>\n<tr>\n<td>第 5 題</td>\n<td>乙部 p.17–18</td>\n<td>六胺結構 crop 已截但未肉眼對頁；(c) 六胺質量及題分 OCR 亂，以 [?] 標示</td>\n</tr>\n<tr>\n<td>第 6 題</td>\n<td>乙部 p.19</td>\n<td>兩裝置圖 crop 已截但未肉眼對頁</td>\n</tr>\n<tr>\n<td>第 7 題</td>\n<td>乙部 p.20</td>\n<td>滴定結果表及(d)題分由 OCR 重建，需核對</td>\n</tr>\n<tr>\n<td>第 9 題</td>\n<td>乙部 p.22</td>\n<td>平衡摩爾數表數值由 OCR 重建，需核對</td>\n</tr>\n<tr>\n<td>第 10 題</td>\n<td>乙部 p.23–24</td>\n<td>(b)(i) 碳酸氫鈉後文字 OCR 亂，以 [?] 標示；坐標圖 crop 已截但未肉眼對頁</td>\n</tr>\n<tr>\n<td>第 11 題</td>\n<td>乙部 p.25–26</td>\n<td>有機轉化 scheme crop 已截但未肉眼對頁</td>\n</tr>\n</tbody>\n</table>",
+   "file": "2021_P1B_QU(CHI).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 1,
+   "title": "第 1 題",
+   "section": "卷二　甲部",
+   "tags": [
+    "工業化學",
+    "活化能",
+    "哈柏法",
+    "甲醇",
+    "反應動力學"
+   ],
+   "text": "回答試題的所有部分。\n\n(a)　回答以下短問題：\n\nHCOOH(l) 在某些條件下可分解成 CO(g) 和 H₂O(l)。\n\n　(i)　在相同條件下，由 CO(g) 和 H₂O(l) 生成 HCOOH(l) 的活化能是多少（以 kJ mol⁻¹ 為單位）？\n\n（HCOOH(l) → CO(g) + H₂O(l)　ΔH = +28.5 kJ mol⁻¹；正向反應的活化能 = +71.1 kJ mol⁻¹）\n\n　(ii)　某反應的活化能是 +65.0 kJ mol⁻¹。該反應在 40 °C 時的速率常數為 k₀，計算反應在 37 °C 時的速率常數（以 k₀ 表示）。\n\n（阿列紐斯方程：log k = 常數 − Ea/(2.3RT)；氣體常數 R = 8.31 J K⁻¹ mol⁻¹）（2 分）\n\n　(iii)　以下給出在某些條件下，反應 A(g) + B(g) → C(g) 的速率方程，其中 k₃ 是速率常數：\n\n速率 = k₃ [A(g)] [B(g)][?]\n\n　　(1)　對應 B(g) 的反應級數是多少？\n\n　　(2)　這速率的單位是 mol dm⁻³ s⁻¹。寫出 k₃ 的單位。（2 分）\n\n(b)　下圖顯示怎樣利用哈柏法生產液態氨：\n\n![圖](2021_P2_crops/q1b.png)\n\n　(i)　解釋為什麼 N₂(g) 和 H₂(g) 在進入反應室前需要淨化。（1 分）\n\n　(ii)　解釋為什麼把未起反應的 N₂(g) 和 H₂(g) 再次通回反應室。\n\n　(iii)　為什麼在冷凝器內的氨變為液體，但其他氣體則否？\n\n　(iv)　在哈柏法的反應中使用了催化劑。\n\n　　(1)　提出一個可使用的催化劑。\n\n　　(2)　輔以麥克斯韋-玻爾茲曼分佈曲線，解釋為什麼當使用了催化劑後該反應應變得較快。（5 分）\n\n(c)　甲醇是工業中一個重要化學品，可由甲烷生產。這生產可被視為分成兩個階段。\n\n　(i)　寫出甲醇的一項潛在危害。（1 分）\n\n　(ii)　除了天然氣之外，提出甲烷的一項來源。\n\n　(iii)　在第一個階段中，CH₄(g) 與 H₂O(g) 反應生成 CO(g) 和 H₂(g)，並會達致平衡。下面各圖顯示在不同條件下，CH₄(g) 在平衡時的轉化百分率：\n\n![圖](2021_P2_crops/q1c.png)\n\n　　(1)　參照圖1，解釋該正向反應是吸熱的還是放熱的。\n\n　　(2)　參照圖2，輔以一化學方程式，解釋壓強對 CH₄(g) 的轉化百分率的影響。（4 分）\n\n　(iv)　在第二個階段中，CO(g) 與 H₂(g) 反應生成甲醇。寫出這反應的化學方程式。（1 分）",
+   "html": "<p>回答試題的所有部分。</p>\n<p>(a)　回答以下短問題：</p>\n<p>HCOOH(l) 在某些條件下可分解成 CO(g) 和 H₂O(l)。</p>\n<p>(i)　在相同條件下，由 CO(g) 和 H₂O(l) 生成 HCOOH(l) 的活化能是多少（以 kJ mol⁻¹ 為單位）？</p>\n<p>（HCOOH(l) → CO(g) + H₂O(l)　ΔH = +28.5 kJ mol⁻¹；正向反應的活化能 = +71.1 kJ mol⁻¹）</p>\n<p>(ii)　某反應的活化能是 +65.0 kJ mol⁻¹。該反應在 40 °C 時的速率常數為 k₀，計算反應在 37 °C 時的速率常數（以 k₀ 表示）。</p>\n<p>（阿列紐斯方程：log k = 常數 − Ea/(2.3RT)；氣體常數 R = 8.31 J K⁻¹ mol⁻¹）（2 分）</p>\n<p>(iii)　以下給出在某些條件下，反應 A(g) + B(g) → C(g) 的速率方程，其中 k₃ 是速率常數：</p>\n<p>速率 = k₃ [A(g)] [B(g)][?]</p>\n<p>(1)　對應 B(g) 的反應級數是多少？</p>\n<p>(2)　這速率的單位是 mol dm⁻³ s⁻¹。寫出 k₃ 的單位。（2 分）</p>\n<p>(b)　下圖顯示怎樣利用哈柏法生產液態氨：</p>\n<p><img alt=\"圖\" src=\"chem_2021_P2_crops/q1b.png\" /></p>\n<p>(i)　解釋為什麼 N₂(g) 和 H₂(g) 在進入反應室前需要淨化。（1 分）</p>\n<p>(ii)　解釋為什麼把未起反應的 N₂(g) 和 H₂(g) 再次通回反應室。</p>\n<p>(iii)　為什麼在冷凝器內的氨變為液體，但其他氣體則否？</p>\n<p>(iv)　在哈柏法的反應中使用了催化劑。</p>\n<p>(1)　提出一個可使用的催化劑。</p>\n<p>(2)　輔以麥克斯韋-玻爾茲曼分佈曲線，解釋為什麼當使用了催化劑後該反應應變得較快。（5 分）</p>\n<p>(c)　甲醇是工業中一個重要化學品，可由甲烷生產。這生產可被視為分成兩個階段。</p>\n<p>(i)　寫出甲醇的一項潛在危害。（1 分）</p>\n<p>(ii)　除了天然氣之外，提出甲烷的一項來源。</p>\n<p>(iii)　在第一個階段中，CH₄(g) 與 H₂O(g) 反應生成 CO(g) 和 H₂(g)，並會達致平衡。下面各圖顯示在不同條件下，CH₄(g) 在平衡時的轉化百分率：</p>\n<p><img alt=\"圖\" src=\"chem_2021_P2_crops/q1c.png\" /></p>\n<p>(1)　參照圖1，解釋該正向反應是吸熱的還是放熱的。</p>\n<p>(2)　參照圖2，輔以一化學方程式，解釋壓強對 CH₄(g) 的轉化百分率的影響。（4 分）</p>\n<p>(iv)　在第二個階段中，CO(g) 與 H₂(g) 反應生成甲醇。寫出這反應的化學方程式。（1 分）</p>",
+   "file": "2021_P2_QU(CHI).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 2,
+   "title": "乙部 第 2 題",
+   "section": "卷二　乙部",
+   "tags": [
+    "物料化學",
+    "纖維素",
+    "液晶",
+    "橡膠",
+    "PMMA",
+    "PLA",
+    "不鏽鋼"
+   ],
+   "text": "回答試題的所有部分。\n\n(a)　回答以下短問題：\n\n　(i)　解釋為什麼纖維素能吸水但甲殼素卻不能。（2 分）\n\n　(ii)　提出液晶在日常生活中的一項用途。\n\n　(iii)　天然橡膠的部分結構顯示如下：\n\n![圖](2021_P2_crops/q2a.png)\n\n　　(1)　繪出天然橡膠的重複單位。\n\n　　(2)　提出在橡膠工業上，透過「硫化」會改善天然橡膠的一項物理性質。（2 分）\n\n(b)　CH₂=C(CH₃)COOCH₃ 是聚甲基丙烯酸甲酯(PMMA)的單體。下列各步驟顯示可怎樣合成這單體：\n\n步驟 I：CH₃COCH₃ + HCN → CH₃C(CN)(OH)CH₃\n\n步驟 II：CH₃C(CN)(OH)CH₃ + H₂SO₄ + CH₃OH → CH₂=C(CH₃)COOCH₃ + NH₄HSO₄\n\n　(i)　這合成可用如下所示的總反應式表示：\n\nCH₃COCH₃ + HCN + H₂SO₄ + CH₃OH → CH₂=C(CH₃)COOCH₃ + NH₄HSO₄\n\n根據這總反應式，計算該合成的原子經濟。\n\n（式量：HCN = 27.0, CH₃OH = 32.0, CH₃COCH₃ = 58.0, H₂SO₄ = 98.1, CH₂=C(CH₃)COOCH₃ = 100.0, NH₄HSO₄ = 115.1）（1 分）\n\n　(ii)　根據所給資料，提出該合成能否被視為綠色，並加以解釋。\n\n　(iii)　寫出由 CH₂=C(CH₃)COOCH₃ 生成 PMMA 的化學方程式。（1 分）\n\n　(iv)　(1)　「熱固性塑膠」一詞是什麼意思？\n\n　　(2)　從分子層面，解釋 PMMA 是否熱固性塑膠。（1 分）\n\n　　(3)　除了其熱性質之外，寫出 PMMA 的一項性質，並提出 PMMA 基於該性質的一項用途。（2 分）\n\n(c)　聚乳酸(PLA)和不鏽鋼均可用來製造餐盒。PLA 是可生物降解的，並可由原材料玉米澱粉製成。\n\n　(i)　(1)　根據原材料，提出使用 PLA 來製造即棄餐盒的一項優點及一項缺點。\n\n　　(2)　根據分子結構，解釋為什麼 PLA 是可生物降解的。（4 分）\n\n　(ii)　不鏽鋼能用來製造可重用餐盒。下圖顯示在不鏽鋼某一原子層的其中一部分：\n\n![圖](2021_P2_crops/q2b.png)\n\n　　(1)　在不鏽鋼中 X 的存在令不鏽鋼較純鐵更抗腐蝕。提出 X 會是什麼。\n\n　　(2)　在不鏽鋼中 Y 的存在令不鏽鋼較純鐵更堅硬。提出 Y 會是什麼，並解釋牠怎樣可使硬度增加。\n\n　　(3)　鐵是不鏽鋼的主要成分，並在某些條件下具立方緊密裝填晶體結構。在這晶體結構中，鐵原子的配位數是多少？（4 分）",
+   "html": "<p>回答試題的所有部分。</p>\n<p>(a)　回答以下短問題：</p>\n<p>(i)　解釋為什麼纖維素能吸水但甲殼素卻不能。（2 分）</p>\n<p>(ii)　提出液晶在日常生活中的一項用途。</p>\n<p>(iii)　天然橡膠的部分結構顯示如下：</p>\n<p><img alt=\"圖\" src=\"chem_2021_P2_crops/q2a.png\" /></p>\n<p>(1)　繪出天然橡膠的重複單位。</p>\n<p>(2)　提出在橡膠工業上，透過「硫化」會改善天然橡膠的一項物理性質。（2 分）</p>\n<p>(b)　CH₂=C(CH₃)COOCH₃ 是聚甲基丙烯酸甲酯(PMMA)的單體。下列各步驟顯示可怎樣合成這單體：</p>\n<p>步驟 I：CH₃COCH₃ + HCN → CH₃C(CN)(OH)CH₃</p>\n<p>步驟 II：CH₃C(CN)(OH)CH₃ + H₂SO₄ + CH₃OH → CH₂=C(CH₃)COOCH₃ + NH₄HSO₄</p>\n<p>(i)　這合成可用如下所示的總反應式表示：</p>\n<p>CH₃COCH₃ + HCN + H₂SO₄ + CH₃OH → CH₂=C(CH₃)COOCH₃ + NH₄HSO₄</p>\n<p>根據這總反應式，計算該合成的原子經濟。</p>\n<p>（式量：HCN = 27.0, CH₃OH = 32.0, CH₃COCH₃ = 58.0, H₂SO₄ = 98.1, CH₂=C(CH₃)COOCH₃ = 100.0, NH₄HSO₄ = 115.1）（1 分）</p>\n<p>(ii)　根據所給資料，提出該合成能否被視為綠色，並加以解釋。</p>\n<p>(iii)　寫出由 CH₂=C(CH₃)COOCH₃ 生成 PMMA 的化學方程式。（1 分）</p>\n<p>(iv)　(1)　「熱固性塑膠」一詞是什麼意思？</p>\n<p>(2)　從分子層面，解釋 PMMA 是否熱固性塑膠。（1 分）</p>\n<p>(3)　除了其熱性質之外，寫出 PMMA 的一項性質，並提出 PMMA 基於該性質的一項用途。（2 分）</p>\n<p>(c)　聚乳酸(PLA)和不鏽鋼均可用來製造餐盒。PLA 是可生物降解的，並可由原材料玉米澱粉製成。</p>\n<p>(i)　(1)　根據原材料，提出使用 PLA 來製造即棄餐盒的一項優點及一項缺點。</p>\n<p>(2)　根據分子結構，解釋為什麼 PLA 是可生物降解的。（4 分）</p>\n<p>(ii)　不鏽鋼能用來製造可重用餐盒。下圖顯示在不鏽鋼某一原子層的其中一部分：</p>\n<p><img alt=\"圖\" src=\"chem_2021_P2_crops/q2b.png\" /></p>\n<p>(1)　在不鏽鋼中 X 的存在令不鏽鋼較純鐵更抗腐蝕。提出 X 會是什麼。</p>\n<p>(2)　在不鏽鋼中 Y 的存在令不鏽鋼較純鐵更堅硬。提出 Y 會是什麼，並解釋牠怎樣可使硬度增加。</p>\n<p>(3)　鐵是不鏽鋼的主要成分，並在某些條件下具立方緊密裝填晶體結構。在這晶體結構中，鐵原子的配位數是多少？（4 分）</p>",
+   "file": "2021_P2_QU(CHI).md"
+  },
+  {
+   "subject": "化學",
+   "year": 2021,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 3,
+   "title": "第 3 題",
+   "section": "卷二　丙部",
+   "tags": [
+    "分析化學",
+    "離子鑑別",
+    "分餾",
+    "紅外光譜",
+    "質譜",
+    "酯"
+   ],
+   "text": "回答試題的所有部分。\n\n(a)　回答以下短問題：\n\n　(i)　提出一化學測試以顯示可怎樣辨別 Al₂(SO₄)₃(aq) 和 ZnSO₄(aq)。（2 分）\n\n　(ii)　提出一化學測試，以顯示可怎樣辨別 (CH₃)₂COH(l) 和 CH₃COOH(l)。（2 分）\n\n　(iii)　寫出把 2,4-二硝基苯肼加進丙酮的預期觀察。\n\n(b)　在一個使用濃磷酸作為脫水劑，從環己醇製備環己烯的實驗中，得到一個環己烯。磷酸和環己醇的液體混合物（沸點：環己烯 = 83 °C，環己醇 = 162 °C）。\n\n　(i)　描述怎樣可使用一個水溶液，藉液-液萃取把該混合物中的磷酸除掉的各步驟。（3 分）\n\n　(ii)　把磷酸除掉後，所餘混合物經分餾得到沸點為 83 °C 的一個餾液。\n\n　　(1)　繪出該分餾裝置的標示圖。\n\n　　(2)　利用沸點及紅外光譜，提出你可怎樣支持以下的述句：\n\n「該餾液是環己烯，並且沒有任何環己醇的存在。」\n\n特定紅外吸收波數域（伸展式）：\n\n| 鍵合 | 化合物類別 | 波數域 / cm⁻¹ |\n|---|---|---|\n| C=C | 烯 | 1610 至 1680 |\n| C=O | 羰基化合物 | 1680 至 1800 |\n| C≡N | 腈 | 2200 至 2280 |\n| O–H | 氫鍵的酸 | 2500 至 3300 |\n| C–H | 烷、烯及芳烴 | 2840 至 3095 |\n| O–H | 帶氫鍵的醇 | 3230 至 3670 |\n| N–H | 胺 | 3350 至 3500 |\n\n（4 分）\n\n(c)　酯 A 的質譜如下所示：\n\n![圖](2021_P2_crops/q3a.png)\n\n　(i)　推定 A 的分子式。\n\n（質量組成：C = 70.6%, H = 5.9%, O = 23.5%；相對原子質量：H = 1.0, C = 12.0, O = 16.0）（2 分）\n\n　(ii)　已知在 m/z = 77 的訊號對應為 C₆H₅⁺，推定酯 A 的結構式。（2 分）\n\n　(iii)　把 2.75 g 的 A 的粗樣本與 50.0 cm³ 的 0.060 M NaOH(aq) 共熱直至沒有進一步反應。在所得混合物內過剩的 NaOH(aq) 需用 20.40 cm³ 的 0.050 M HCl(aq) 完全中和。\n\n　　(1)　寫出 A 與 NaOH(aq) 反應的化學方程式。\n\n　　(2)　假設在該樣本中，只有 A 可與 NaOH(aq) 反應，計算在該樣本中 A 的質量百分率。（4 分）\n\n---\n\n## 待人工核對\n\n以下題目的 OCR 原文殘缺或模糊，需以原卷覆核：\n\n| 題號 | 頁（原卷） | 問題 |\n|---|---|---|\n| 第 1 題 (a)(iii) | 卷二 p.36–37 | 速率方程中 B 的指數 OCR 讀作「-」，以 [?] 標示，需核對 |\n| 第 1 題 (b) | 卷二 p.37 | 哈柏法流程圖 crop 已截但未肉眼對頁 |\n| 第 1 題 (c)(iii) | 卷二 p.38 | 兩坐標圖 crop 已截但未肉眼對頁 |\n| 第 2 題 (a)(iii) | 卷二 p.39 | 天然橡膠結構 crop 已截但未肉眼對頁 |\n| 第 2 題 (b) | 卷二 p.39 | PMMA 合成步驟及式量由 OCR 重建，需核對 |\n| 第 2 題 (c)(ii) | 卷二 p.40 | 不鏽鋼原子層圖 crop 已截但未肉眼對頁 |\n| 第 3 題 (a)(ii) | 卷二 p.41 | 醇的結構式 OCR 亂，以「(CH₃)₂COH」重建，需核對 |\n| 第 3 題 (b)(ii) | 卷二 p.41–42 | 紅外吸收波數域表由 OCR 重建（數值經校正），需核對 |\n| 第 3 題 (c) | 卷二 p.42 | 質譜圖 crop 已截但未肉眼對頁 |",
+   "html": "<p>回答試題的所有部分。</p>\n<p>(a)　回答以下短問題：</p>\n<p>(i)　提出一化學測試以顯示可怎樣辨別 Al₂(SO₄)₃(aq) 和 ZnSO₄(aq)。（2 分）</p>\n<p>(ii)　提出一化學測試，以顯示可怎樣辨別 (CH₃)₂COH(l) 和 CH₃COOH(l)。（2 分）</p>\n<p>(iii)　寫出把 2,4-二硝基苯肼加進丙酮的預期觀察。</p>\n<p>(b)　在一個使用濃磷酸作為脫水劑，從環己醇製備環己烯的實驗中，得到一個環己烯。磷酸和環己醇的液體混合物（沸點：環己烯 = 83 °C，環己醇 = 162 °C）。</p>\n<p>(i)　描述怎樣可使用一個水溶液，藉液-液萃取把該混合物中的磷酸除掉的各步驟。（3 分）</p>\n<p>(ii)　把磷酸除掉後，所餘混合物經分餾得到沸點為 83 °C 的一個餾液。</p>\n<p>(1)　繪出該分餾裝置的標示圖。</p>\n<p>(2)　利用沸點及紅外光譜，提出你可怎樣支持以下的述句：</p>\n<p>「該餾液是環己烯，並且沒有任何環己醇的存在。」</p>\n<p>特定紅外吸收波數域（伸展式）：</p>\n<table>\n<thead>\n<tr>\n<th>鍵合</th>\n<th>化合物類別</th>\n<th>波數域 / cm⁻¹</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>C=C</td>\n<td>烯</td>\n<td>1610 至 1680</td>\n</tr>\n<tr>\n<td>C=O</td>\n<td>羰基化合物</td>\n<td>1680 至 1800</td>\n</tr>\n<tr>\n<td>C≡N</td>\n<td>腈</td>\n<td>2200 至 2280</td>\n</tr>\n<tr>\n<td>O–H</td>\n<td>氫鍵的酸</td>\n<td>2500 至 3300</td>\n</tr>\n<tr>\n<td>C–H</td>\n<td>烷、烯及芳烴</td>\n<td>2840 至 3095</td>\n</tr>\n<tr>\n<td>O–H</td>\n<td>帶氫鍵的醇</td>\n<td>3230 至 3670</td>\n</tr>\n<tr>\n<td>N–H</td>\n<td>胺</td>\n<td>3350 至 3500</td>\n</tr>\n</tbody>\n</table>\n<p>（4 分）</p>\n<p>(c)　酯 A 的質譜如下所示：</p>\n<p><img alt=\"圖\" src=\"chem_2021_P2_crops/q3a.png\" /></p>\n<p>(i)　推定 A 的分子式。</p>\n<p>（質量組成：C = 70.6%, H = 5.9%, O = 23.5%；相對原子質量：H = 1.0, C = 12.0, O = 16.0）（2 分）</p>\n<p>(ii)　已知在 m/z = 77 的訊號對應為 C₆H₅⁺，推定酯 A 的結構式。（2 分）</p>\n<p>(iii)　把 2.75 g 的 A 的粗樣本與 50.0 cm³ 的 0.060 M NaOH(aq) 共熱直至沒有進一步反應。在所得混合物內過剩的 NaOH(aq) 需用 20.40 cm³ 的 0.050 M HCl(aq) 完全中和。</p>\n<p>(1)　寫出 A 與 NaOH(aq) 反應的化學方程式。</p>\n<p>(2)　假設在該樣本中，只有 A 可與 NaOH(aq) 反應，計算在該樣本中 A 的質量百分率。（4 分）</p>\n<hr />\n<h2>待人工核對</h2>\n<p>以下題目的 OCR 原文殘缺或模糊，需以原卷覆核：</p>\n<table>\n<thead>\n<tr>\n<th>題號</th>\n<th>頁（原卷）</th>\n<th>問題</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>第 1 題 (a)(iii)</td>\n<td>卷二 p.36–37</td>\n<td>速率方程中 B 的指數 OCR 讀作「-」，以 [?] 標示，需核對</td>\n</tr>\n<tr>\n<td>第 1 題 (b)</td>\n<td>卷二 p.37</td>\n<td>哈柏法流程圖 crop 已截但未肉眼對頁</td>\n</tr>\n<tr>\n<td>第 1 題 (c)(iii)</td>\n<td>卷二 p.38</td>\n<td>兩坐標圖 crop 已截但未肉眼對頁</td>\n</tr>\n<tr>\n<td>第 2 題 (a)(iii)</td>\n<td>卷二 p.39</td>\n<td>天然橡膠結構 crop 已截但未肉眼對頁</td>\n</tr>\n<tr>\n<td>第 2 題 (b)</td>\n<td>卷二 p.39</td>\n<td>PMMA 合成步驟及式量由 OCR 重建，需核對</td>\n</tr>\n<tr>\n<td>第 2 題 (c)(ii)</td>\n<td>卷二 p.40</td>\n<td>不鏽鋼原子層圖 crop 已截但未肉眼對頁</td>\n</tr>\n<tr>\n<td>第 3 題 (a)(ii)</td>\n<td>卷二 p.41</td>\n<td>醇的結構式 OCR 亂，以「(CH₃)₂COH」重建，需核對</td>\n</tr>\n<tr>\n<td>第 3 題 (b)(ii)</td>\n<td>卷二 p.41–42</td>\n<td>紅外吸收波數域表由 OCR 重建（數值經校正），需核對</td>\n</tr>\n<tr>\n<td>第 3 題 (c)</td>\n<td>卷二 p.42</td>\n<td>質譜圖 crop 已截但未肉眼對頁</td>\n</tr>\n</tbody>\n</table>",
+   "file": "2021_P2_QU(CHI).md"
   },
   {
    "subject": "化學",

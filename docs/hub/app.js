@@ -1,28 +1,121 @@
-/* ===== DSE 試題資料庫 — 主邏輯（下拉篩選；結果列跟 dsepaper.hk 列表感） ===== */
+/* ===== DSE Hub — 滾輪篩選；只顯示資料庫有嘅卷 ===== */
 "use strict";
 
-const state = { mode: "year", subject: SUBJECTS[0], year: null, paper: null, topic: null };
+const PLACE = "";       // 請選擇
+const ALL = "__ALL__";  // 所有
+
+const state = {
+  mode: "year",
+  subject: PLACE,
+  year: PLACE,
+  paper: PLACE,
+  lang: PLACE,
+  topic: PLACE,
+};
 
 const $ = (id) => document.getElementById(id);
-const s1 = $("s1"), s2 = $("s2"), s3 = $("s3");
-const l2 = $("l2"), f3 = $("f3");
-const resultEl = $("result"), modeSeg = $("modeSeg");
+const resultEl = $("result");
+const modeSeg = $("modeSeg");
+const fPaper = $("fPaper");
+const fLang = $("fLang");
+const l2 = $("l2");
 
-const opt = (v, t) => `<option value="${v}">${t}</option>`;
-function fill(sel, html, val) { sel.innerHTML = html; if (val != null) sel.value = val; }
-
-const papersOf = (s, y) => (typeof s.papers === "function" ? s.papers(y) : s.papers);
-const yearsOf = (s) => {
-  const [a, b] = s.years || [2012, 2026];
-  return YEARS.filter((y) => y >= a && y <= b);
+const btns = {
+  subject: $("bSubj"),
+  year: $("bYear"),
+  paper: $("bPaper"),
+  lang: $("bLang"),
 };
-const allTopics = (s) => (s.topics ? Object.values(s.topics).flat() : []);
+
+const LABEL = { subject: "科目", year: "年份", paper: "卷別", lang: "語言", topic: "課題" };
 
 const ICON_VIEW = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5c-7 0-10 7-10 7s3 7 10 7 10-7 10-7-3-7-10-7zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0-6.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z"/></svg>`;
 const ICON_DL = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a1 1 0 0 1 1 1v9.6l2.8-2.8a1 1 0 1 1 1.4 1.4l-4.5 4.5a1 1 0 0 1-1.4 0L6.8 12.2a1 1 0 1 1 1.4-1.4L11 13.6V4a1 1 0 0 1 1-1zM5 19a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1z"/></svg>`;
 
 function shortName(name) {
-  return name.replace(/（.*?）/g, "").replace(/\s*\/.*/, "").trim();
+  return String(name).replace(/（.*?）/g, "").replace(/\s*\/.*/, "").trim();
+}
+
+function uniq(arr) {
+  return [...new Set(arr)];
+}
+
+function matchDim(val, rowVal) {
+  if (val === PLACE || val === ALL) return true;
+  return String(val) === String(rowVal);
+}
+
+function filteredCatalog() {
+  return CATALOG.filter((r) =>
+    matchDim(state.subject, r.id) &&
+    matchDim(state.year, r.year) &&
+    matchDim(state.paper, r.paper) &&
+    matchDim(state.lang, r.lang)
+  );
+}
+
+function subjectsInDb() {
+  const map = new Map();
+  CATALOG.forEach((r) => map.set(r.id, r.name));
+  return [...map.entries()].map(([id, name]) => ({ id, name }));
+}
+
+function optionsFor(key) {
+  const rows = CATALOG.filter((r) => {
+    if (key !== "subject" && state.subject !== PLACE && state.subject !== ALL && r.id !== state.subject) return false;
+    if (key !== "year" && state.year !== PLACE && state.year !== ALL && String(r.year) !== String(state.year)) return false;
+    if (key !== "paper" && state.paper !== PLACE && state.paper !== ALL && r.paper !== state.paper) return false;
+    if (key !== "lang" && state.lang !== PLACE && state.lang !== ALL && r.lang !== state.lang) return false;
+    return true;
+  });
+
+  const head = [
+    { value: PLACE, label: "請選擇" },
+    { value: ALL, label: "所有" },
+  ];
+
+  if (key === "subject") {
+    return head.concat(subjectsInDb().map((s) => ({ value: s.id, label: s.name })));
+  }
+  if (key === "year") {
+    return head.concat(uniq(rows.map((r) => r.year)).sort((a, b) => b - a).map((y) => ({ value: String(y), label: String(y) })));
+  }
+  if (key === "paper") {
+    return head.concat(uniq(rows.map((r) => r.paper)).map((p) => ({ value: p, label: p })));
+  }
+  if (key === "lang") {
+    return head.concat(uniq(rows.map((r) => r.lang)).map((l) => ({ value: l, label: l })));
+  }
+  if (key === "topic") {
+    const sid = state.subject === PLACE || state.subject === ALL ? "math" : state.subject;
+    const topics = TOPICS[sid];
+    if (!topics) return [{ value: PLACE, label: "請選擇" }];
+    const flat = Object.entries(topics).flatMap(([g, ts]) => ts.map((t) => ({ value: t, label: t, group: g })));
+    return head.concat(flat);
+  }
+  return head;
+}
+
+function displayLabel(key, value) {
+  if (value === PLACE || value == null) return "請選擇";
+  if (value === ALL) return "所有";
+  if (key === "subject") {
+    const s = subjectsInDb().find((x) => x.id === value);
+    return s ? s.name : value;
+  }
+  return String(value);
+}
+
+function syncButtons() {
+  btns.subject.textContent = displayLabel("subject", state.subject);
+  btns.year.textContent = displayLabel(state.mode === "topic" ? "topic" : "year", state.mode === "topic" ? state.topic : state.year);
+  btns.paper.textContent = displayLabel("paper", state.paper);
+  btns.lang.textContent = displayLabel("lang", state.lang);
+  ["subject", "year", "paper", "lang"].forEach((k) => {
+    const b = btns[k === "year" ? "year" : k];
+    const v = k === "year" && state.mode === "topic" ? state.topic : state[k];
+    b.classList.toggle("placeholder", v === PLACE || v == null);
+  });
 }
 
 function actionsHtml({ viewHref, pdfUrl }) {
@@ -35,131 +128,205 @@ function actionsHtml({ viewHref, pdfUrl }) {
   return `<div class="paper-actions">${view}${pdf}</div>`;
 }
 
-/* ---------- 按年份模式：科目 → 年份 → 卷別 ---------- */
-function renderYear() {
-  s3.style.display = "";
-  f3.style.display = "";
-  l2.textContent = "年份";
-
-  const ys = yearsOf(state.subject);
-  if (!state.year || !ys.includes(state.year)) {
-    const liveYs = state.subject.bank
-      ? ys.filter((y) => state.subject.bank[y] && state.subject.bank[y].length)
-      : [];
-    state.year = liveYs[0] || ys[0];
-  }
-  const papers = papersOf(state.subject, state.year);
-  if (!papers.includes(state.paper)) {
-    const livePs = state.subject.bank && state.subject.bank[state.year];
-    state.paper = (livePs && livePs[0]) || papers[0];
-  }
-
-  fill(s1, SUBJECTS.map((s) => opt(s.id, s.name)).join(""), state.subject.id);
-  fill(s2, yearsOf(state.subject).map((y) => opt(y, y)).join(""), state.year);
-  fill(s3, papers.map((p) => opt(p, p)).join(""), state.paper);
-
-  const bankDone = state.subject.bank && state.subject.bank[state.year] && state.subject.bank[state.year].includes(state.paper);
-  const bankHref = bankDone
-    ? BANK_URL + (state.subject.bankTpl
-      ? "#" + state.subject.bankTpl.replace("{Y}", state.year)
-      : (state.year ? `#${state.year}P${state.paper.includes("二") || /Paper\s*2/i.test(state.paper) ? "2" : "1"}Q1` : ""))
-    : null;
-  const pdfUrl = PDF_LINKS[`${state.subject.id}|${state.year}|${state.paper}`] || null;
-  const sn = shortName(state.subject.name);
-
-  resultEl.innerHTML = `
+function rowHtml(r) {
+  const sn = shortName(r.name);
+  const pdfUrl = PDF_LINKS[`${r.id}|${r.year}|${r.paper}`] || null;
+  return `
     <article class="paper-row">
-      <div class="paper-year">${state.year}</div>
+      <div class="paper-year">${r.year}</div>
       <div class="paper-body">
         <div class="paper-tags">
           <span class="tag subj">${sn}</span>
-          <span class="tag cat">歷屆試題 Past Paper</span>
-          <span class="tag ${bankDone ? "live" : "todo"}">${bankDone ? "電子題庫已上線" : "待補"}</span>
+          <span class="tag cat">${r.paper}</span>
+          <span class="tag lang">${r.lang}</span>
+          <span class="tag live">電子題庫已上線</span>
         </div>
-        <div class="paper-title">文憑試 DSE ${sn} ${state.year} · ${state.paper}</div>
-        <div class="paper-sub">${state.subject.name}${state.subject.note ? ` · ※ ${state.subject.note}` : ""}</div>
+        <div class="paper-title">文憑試 DSE ${sn} ${r.year} · ${r.paper}（${r.lang}）</div>
+        <div class="paper-sub">${r.name}</div>
       </div>
-      ${actionsHtml({ viewHref: bankHref, pdfUrl })}
+      ${actionsHtml({ viewHref: BANK_URL + r.hash, pdfUrl })}
     </article>`;
 }
 
-/* ---------- 按課題模式：科目 → 課題 ---------- */
-function renderTopic() {
-  s3.style.display = "none";
-  f3.style.display = "none";
-  l2.textContent = "課題";
+function emptyHtml(msg) {
+  return `
+    <div class="empty">
+      <p>${msg}</p>
+    </div>`;
+}
 
-  fill(s1, SUBJECTS.map((s) => opt(s.id, s.name)).join(""), state.subject.id);
-  const s = state.subject;
-  const sn = shortName(s.name);
+function anyFilterSet() {
+  return [state.subject, state.year, state.paper, state.lang].some((v) => v !== PLACE);
+}
 
-  if (!s.topics) {
-    fill(s2, opt("", "課題表編製中"), "");
-    resultEl.innerHTML = `
-      <article class="paper-row">
-        <div class="paper-year">—</div>
-        <div class="paper-body">
-          <div class="paper-tags">
-            <span class="tag subj">${sn}</span>
-            <span class="tag todo">課題表編製中</span>
-          </div>
-          <div class="paper-title">${s.name}</div>
-          <div class="paper-sub">呢科嘅課題表編製緊，稍後加入</div>
-        </div>
-        ${actionsHtml({ viewHref: null, pdfUrl: null })}
-      </article>`;
+function renderYear() {
+  fPaper.style.display = "";
+  fLang.style.display = "";
+  l2.textContent = "年份";
+  btns.year.dataset.key = "year";
+
+  if (!anyFilterSet()) {
+    resultEl.innerHTML = emptyHtml("請用滾輪揀科目、年份、卷別或語言；亦可揀「所有」睇晒資料庫已有嘅卷。");
     return;
   }
 
-  if (!state.topic || !allTopics(s).includes(state.topic))
-    state.topic = allTopics(s)[0];
-  const groups = Object.entries(s.topics)
-    .map(([g, ts]) => `<optgroup label="${g}">${ts.map((t) => opt(t, t)).join("")}</optgroup>`)
-    .join("");
-  fill(s2, groups, state.topic);
+  const rows = filteredCatalog().sort((a, b) => b.year - a.year || a.name.localeCompare(b.name, "zh-Hant") || a.paper.localeCompare(b.paper, "zh-Hant"));
+  if (!rows.length) {
+    resultEl.innerHTML = emptyHtml("呢組條件喺資料庫搵唔到卷。試下改「所有」或者放寬條件。");
+    return;
+  }
+  resultEl.innerHTML = rows.map(rowHtml).join("");
+}
 
-  const anyBank = !!s.bank;
+function renderTopic() {
+  fPaper.style.display = "none";
+  fLang.style.display = "none";
+  l2.textContent = "課題";
+  btns.year.dataset.key = "topic";
+
+  const sid = state.subject === PLACE || state.subject === ALL ? null : state.subject;
+  const topicMap = sid ? TOPICS[sid] : null;
+
+  if (!sid) {
+    resultEl.innerHTML = emptyHtml("按課題：請先用滾輪揀一個資料庫已有嘅科目。");
+    return;
+  }
+  if (!topicMap) {
+    resultEl.innerHTML = emptyHtml("呢科暫時未有課題表（資料庫有卷，但課題索引未編）。");
+    return;
+  }
+  if (state.topic === PLACE) {
+    resultEl.innerHTML = emptyHtml("請揀課題，或揀「所有」睇呢科概覽。");
+    return;
+  }
+
+  const sn = shortName(subjectsInDb().find((s) => s.id === sid)?.name || sid);
+  const topicLabel = state.topic === ALL ? "全部課題" : state.topic;
   resultEl.innerHTML = `
     <article class="paper-row">
       <div class="paper-year">#</div>
       <div class="paper-body">
         <div class="paper-tags">
           <span class="tag subj">${sn}</span>
-          <span class="tag cat">${state.topic}</span>
-          <span class="tag ${anyBank ? "live" : "todo"}">${anyBank ? "有電子題可睇" : "待補"}</span>
+          <span class="tag cat">${topicLabel}</span>
+          <span class="tag live">有電子題可睇</span>
         </div>
-        <div class="paper-title">${s.name} · ${state.topic}</div>
-        <div class="paper-sub">呢個課題嘅題目索引會陸續加入；有電子題庫嘅科目可以而家入去睇</div>
-        <div class="topic-hint">提示：切返「按年份」可以揀指定年份同卷別。</div>
+        <div class="paper-title">${sn} · ${topicLabel}</div>
+        <div class="paper-sub">課題索引會陸續加細項；而家可以入電子題庫睇已上線嘅卷。</div>
       </div>
-      ${actionsHtml({ viewHref: anyBank ? BANK_URL : null, pdfUrl: null })}
+      ${actionsHtml({ viewHref: BANK_URL, pdfUrl: null })}
     </article>`;
 }
-
-/* ---------- 事件 ---------- */
-s1.addEventListener("change", (e) => {
-  state.subject = SUBJECTS.find((x) => x.id === e.target.value);
-  state.year = state.paper = state.topic = null;
-  render();
-});
-s2.addEventListener("change", (e) => {
-  if (state.mode === "year") { state.year = +e.target.value; state.paper = null; }
-  else state.topic = e.target.value;
-  render();
-});
-s3.addEventListener("change", (e) => { state.paper = e.target.value; render(); });
-modeSeg.addEventListener("click", (e) => {
-  const btn = e.target.closest("button[data-mode]");
-  if (!btn || btn.dataset.mode === state.mode) return;
-  state.mode = btn.dataset.mode;
-  state.year = state.paper = state.topic = null;
-  render();
-});
 
 function render() {
   modeSeg.querySelectorAll("button").forEach((b) =>
     b.classList.toggle("on", b.dataset.mode === state.mode)
   );
+  syncButtons();
   state.mode === "year" ? renderYear() : renderTopic();
 }
+
+/* ---------- Reel（滾輪） ---------- */
+const reel = $("reel");
+const reelWheel = $("reelWheel");
+const reelTitle = $("reelTitle");
+const ITEM_H = 40;
+let reelKey = null;
+let reelOpts = [];
+let reelIndex = 0;
+let reelSnapTimer = null;
+
+function openReel(key) {
+  reelKey = key;
+  reelOpts = optionsFor(key);
+  const cur = key === "topic" ? state.topic : state[key];
+  let idx = reelOpts.findIndex((o) => String(o.value) === String(cur));
+  if (idx < 0) idx = 0;
+  reelIndex = idx;
+  reelTitle.textContent = LABEL[key] || key;
+
+  reelWheel.innerHTML =
+    `<div class="reel-pad"></div>` +
+    reelOpts.map((o, i) => `<div class="reel-item${i === idx ? " on" : ""}" data-i="${i}">${o.label}</div>`).join("") +
+    `<div class="reel-pad"></div>`;
+
+  reel.hidden = false;
+  document.body.classList.add("reel-open");
+  requestAnimationFrame(() => {
+    reelWheel.scrollTop = idx * ITEM_H;
+    highlightReel();
+  });
+}
+
+function closeReel() {
+  reel.hidden = true;
+  document.body.classList.remove("reel-open");
+  reelKey = null;
+}
+
+function highlightReel() {
+  const i = Math.round(reelWheel.scrollTop / ITEM_H);
+  reelIndex = Math.max(0, Math.min(reelOpts.length - 1, i));
+  reelWheel.querySelectorAll(".reel-item").forEach((el, n) => el.classList.toggle("on", n === reelIndex));
+}
+
+function commitReel() {
+  if (reelKey == null) return;
+  const opt = reelOpts[reelIndex];
+  if (!opt) return closeReel();
+  const v = opt.value;
+
+  if (reelKey === "topic") {
+    state.topic = v;
+  } else {
+    state[reelKey] = v;
+    // cascade reset dependent dims when parent changes
+    if (reelKey === "subject") {
+      state.year = PLACE;
+      state.paper = PLACE;
+      state.lang = PLACE;
+      state.topic = PLACE;
+    } else if (reelKey === "year") {
+      state.paper = PLACE;
+    }
+  }
+  closeReel();
+  render();
+}
+
+reelWheel.addEventListener("scroll", () => {
+  highlightReel();
+  clearTimeout(reelSnapTimer);
+  reelSnapTimer = setTimeout(() => {
+    const i = Math.round(reelWheel.scrollTop / ITEM_H);
+    reelWheel.scrollTo({ top: i * ITEM_H, behavior: "smooth" });
+    highlightReel();
+  }, 80);
+});
+
+reelWheel.addEventListener("click", (e) => {
+  const item = e.target.closest(".reel-item");
+  if (!item) return;
+  const i = +item.dataset.i;
+  reelWheel.scrollTo({ top: i * ITEM_H, behavior: "smooth" });
+  reelIndex = i;
+  highlightReel();
+});
+
+$("reelDone").addEventListener("click", commitReel);
+$("reelCancel").addEventListener("click", closeReel);
+$("reelBackdrop").addEventListener("click", closeReel);
+
+Object.values(btns).forEach((btn) => {
+  btn.addEventListener("click", () => openReel(btn.dataset.key));
+});
+
+modeSeg.addEventListener("click", (e) => {
+  const btn = e.target.closest("button[data-mode]");
+  if (!btn || btn.dataset.mode === state.mode) return;
+  state.mode = btn.dataset.mode;
+  state.topic = PLACE;
+  render();
+});
+
 render();

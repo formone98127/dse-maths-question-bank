@@ -1,4 +1,4 @@
-/* ===== DSE Hub 試題資料庫 — 入口（深色列表感，跟 dsepaper.hk 感覺；操作仍用下拉） ===== */
+/* ===== DSE Hub 試題資料庫 — 入口（深色列表；滾輪 Reel 揀選） ===== */
 * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
 
 :root {
@@ -133,35 +133,143 @@ body {
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06);
 }
 
-.bar { display: flex; gap: 8px; }
-.field { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.bar { display: flex; gap: 8px; flex-wrap: wrap; }
+.field { flex: 1 1 140px; min-width: 0; display: flex; flex-direction: column; }
 .field label {
   font-size: 12px;
   color: var(--mut);
   margin: 0 0 4px 2px;
 }
-select {
+
+/* 滾輪入口掣（取代下拉） */
+.reel-btn {
   width: 100%;
-  padding: 10px 12px;
+  padding: 10px 28px 10px 12px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   font-size: 14.5px;
   background: var(--bg-elev);
   color: var(--ink);
   font-family: inherit;
-  appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%238b9bb3' d='M1.1 1.2 6 6.1l4.9-4.9 1.1 1.1L6 8.2.0 2.3z'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 12px center;
-  padding-right: 32px;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
   transition: border-color 0.15s ease, box-shadow 0.15s ease;
 }
-select:focus {
+.reel-btn::after {
+  content: "";
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #8b9bb3;
+  border-bottom: 2px solid #8b9bb3;
+  transform: translateY(-60%) rotate(45deg);
+}
+.reel-btn.placeholder { color: var(--mut); }
+.reel-btn:focus {
   outline: none;
   border-color: rgba(61, 139, 253, 0.55);
   box-shadow: 0 0 0 3px rgba(61, 139, 253, 0.18);
 }
-select option { background: #121a2b; color: #eef3fb; }
+
+body.reel-open { overflow: hidden; }
+.reel-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.reel-overlay[hidden] { display: none !important; }
+.reel-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+.reel-sheet {
+  position: relative;
+  width: min(520px, 100%);
+  background: #151d2e;
+  border-radius: 16px 16px 0 0;
+  border: 1px solid var(--line);
+  border-bottom: none;
+  padding-bottom: env(safe-area-inset-bottom, 8px);
+  animation: sheetUp 0.28s ease both;
+}
+@keyframes sheetUp {
+  from { transform: translateY(24px); opacity: 0.6; }
+  to { transform: none; opacity: 1; }
+}
+.reel-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--line);
+  font-weight: 700;
+}
+.reel-link {
+  border: none;
+  background: transparent;
+  color: var(--mut);
+  font-size: 15px;
+  font-family: inherit;
+  cursor: pointer;
+  padding: 4px 6px;
+}
+.reel-link.ok { color: #93c5fd; font-weight: 700; }
+.reel-window {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+.reel-highlight {
+  pointer-events: none;
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  top: 80px;
+  height: 40px;
+  border-radius: 8px;
+  background: rgba(61, 139, 253, 0.12);
+  border: 1px solid rgba(61, 139, 253, 0.22);
+  z-index: 1;
+}
+.reel-wheel {
+  height: 200px;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+  z-index: 2;
+  scrollbar-width: none;
+}
+.reel-wheel::-webkit-scrollbar { display: none; }
+.reel-pad { height: 80px; }
+.reel-item {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 16px;
+  color: var(--mut);
+  scroll-snap-align: center;
+  transition: color 0.12s ease, font-weight 0.12s ease;
+}
+.reel-item.on { color: #fff; font-weight: 700; }
+
+.empty {
+  margin: 28px 8px;
+  padding: 22px 16px;
+  border: 1px dashed var(--line);
+  border-radius: var(--radius);
+  color: var(--mut);
+  text-align: center;
+  line-height: 1.6;
+  font-size: 14.5px;
+}
 
 /* —— 結果列表（跟參考站嘅列） —— */
 main {
@@ -215,6 +323,7 @@ main {
 }
 .tag.subj { background: var(--tag-subj); }
 .tag.cat { background: var(--tag-cat); }
+.tag.lang { background: #b45309; }
 .tag.live { background: var(--tag-lang); }
 .tag.todo { background: var(--tag-todo); color: #cbd5e1; }
 
@@ -296,4 +405,5 @@ footer {
   .paper-body { grid-area: body; }
   .paper-actions { grid-area: actions; }
   .bar { flex-direction: column; }
+  .field { flex: 1 1 auto; }
 }

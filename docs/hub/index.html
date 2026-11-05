@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DSEmaths · DSE 試題資料庫</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <p class="brand">DSEmaths</p>
+    <h1>DSE 試題資料庫</h1>
+    <p class="tagline">視覺解題，唔使死背 · 揀科目、年份、卷別即睇</p>
+  </div>
+</header>
+
+<nav class="filters" aria-label="篩選">
+  <div class="filters-inner">
+    <div class="titlebar">
+      <span class="filters-label">搵卷</span>
+      <div class="seg" id="modeSeg">
+        <button type="button" data-mode="year" class="on">按年份</button>
+        <button type="button" data-mode="topic">按課題</button>
+      </div>
+    </div>
+    <div class="bar">
+      <div class="field">
+        <label for="s1">科目</label>
+        <select id="s1"></select>
+      </div>
+      <div class="field">
+        <label for="s2" id="l2">年份</label>
+        <select id="s2"></select>
+      </div>
+      <div class="field" id="f3">
+        <label for="s3">卷別</label>
+        <select id="s3"></select>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <section id="result" class="paper-list" aria-live="polite"></section>
+</main>
+
+<footer>站內只放索引、連結同課題標籤，唔存放試卷原卷 · 資料陸續加入</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

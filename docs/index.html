@@ -38,14 +38,16 @@ main { flex:1; min-height:0; display:flex; flex-direction:column; max-width:960p
 .badge.ans { background:#fdf0e3; color:#a05a00; }
 .pdf-top {
   flex:0 0 auto; margin-left:auto;
-  font-size:12.5px; font-weight:700; color:var(--acc);
-  text-decoration:none; white-space:nowrap; padding:4px 0;
-  border-bottom:1px solid rgba(11,98,196,.28);
+  width:36px; height:36px; border-radius:10px;
+  display:inline-flex; align-items:center; justify-content:center;
+  color:var(--acc); background:#eef5fc; border:1px solid rgba(11,98,196,.22);
+  text-decoration:none;
 }
-.pdf-top:hover { filter:brightness(0.92); }
+.pdf-top svg { width:18px; height:18px; fill:currentColor; }
+.pdf-top:hover { filter:brightness(0.96); }
 .pdf-top.disabled, .pdf-top[aria-disabled="true"] {
-  color:#94a3b8; border-bottom-color:transparent;
-  pointer-events:none; cursor:not-allowed; font-weight:600;
+  color:#94a3b8; background:#f1f4f8; border-color:var(--line);
+  pointer-events:none; cursor:not-allowed;
 }
 #qbody { flex:1; min-height:0; overflow-y:auto; -webkit-overflow-scrolling:touch;
          font-size:15.5px; line-height:1.8; padding-top:10px; display:flex; flex-direction:column; }
@@ -120,7 +122,7 @@ footer { text-align:center; color:var(--mut); font-size:11.5px; padding:4px 0 12
         <span class="meta" id="dmeta"></span>
         <span class="badge" id="dbadge"></span>
       </div>
-      <a class="pdf-top disabled" id="pdfBtn" href="#" aria-disabled="true" title="下載全卷 PDF · 待補">下載全卷 PDF</a>
+      <a class="pdf-top disabled" id="pdfBtn" href="#" aria-disabled="true" title="下載全卷 PDF · 待補" aria-label="下載全卷 PDF"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a1 1 0 0 1 1 1v9.6l2.8-2.8a1 1 0 1 1 1.4 1.4l-4.5 4.5a1 1 0 0 1-1.4 0L6.8 12.2a1 1 0 1 1 1.4-1.4L11 13.6V4a1 1 0 0 1 1-1zM5 19a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1z"/></svg></a>
     </div>
     <div id="qbody"></div>
   </div>

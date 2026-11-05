@@ -41,6 +41,7 @@ DOCS.mkdir(exist_ok=True)
 # (檔名, 年份, 卷別, 類型, 科目)
 SOURCES = [
     ("2012_P1_題目中文卷.md", 2012, "Paper 1", "題目", "數學"),
+    ("2012_P1_解答.md",      2012, "Paper 1", "解答", "數學"),
     ("2013_P1_QU(CHI).md",   2013, "Paper 1", "題目", "數學"),
     ("2014_P1_QU(CHI).md",   2014, "Paper 1", "題目", "數學"),
     ("2015_P2_QU(CHI).md",   2015, "Paper 2", "題目", "數學"),
@@ -106,7 +107,9 @@ def parse_solution_file(path: Path, year: int, paper: str, subject: str = "數�
             "subject": subject,
             "year": year, "paper": paper, "type": "解答", "qno": qno,
             "title": f"Q{qno}　{title}",
-            "section": f"Paper 2　{'Section A' if qno <= 30 else 'Section B'}",
+            "section": (f"Paper 2　{'Section A' if qno <= 30 else 'Section B'}"
+                        if paper == "Paper 2"
+                        else f"Paper 1　{'甲部(1)' if qno <= 9 else '甲部(2)' if qno <= 14 else '乙部'}"),
             "tags": [title],
             "text": text,
             "html": md2html(fix_img_paths(text)),

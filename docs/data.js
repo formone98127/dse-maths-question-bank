@@ -1,6 +1,6 @@
 window.QB = {
- "generated": "2026-11-05 18:25",
- "count": 327,
+ "generated": "2026-11-05 18:37",
+ "count": 346,
  "questions": [
   {
    "subject": "數學",
@@ -333,6 +333,291 @@ window.QB = {
    "text": "在某城市，一機場的空運貨站 $X$ 自它開始運作起計的第 $n$ 年所處理的貨物的重量為 $A(n)$ 公噸，其中 $n$ 為一正整數。已知 $A(n)=ab^{2n}$，其中 $a$ 及 $b$ 均為正常數。現知 $X$ 自它開始運作起計的第 1 年及第 2 年所處理的貨物的重量分別為 254100 公噸及 307461 公噸。\n\n(a)\n\n　　(i)　求 $a$ 及 $b$。由此求 $X$ 自它開始運作起計的第 4 年所處理的貨物的重量。\n\n　　(ii)　以 $n$ 表 $X$ 自它開始運作起計的首 $n$ 年所處理的貨物的總重量。（6 分）\n\n(b)　自 $X$ 運作了 4 年，空運貨站 $Y$ 開始運作。設 B$(m)$ 公噸為 $Y$ 自它開始運作起計的第 $m$ 年所處理的貨物的重量，其中 $m$ 為一正整數。已知 B$(m) = 2ab^m$。\n\n　　(i)　該機場的經理宣稱 $Y$ 運作後，每一年 $Y$ 所處理的貨物的重量均較 $X$ 所處理的少。你是否同意？試解釋你的答案。\n\n　　(ii)　該機場的監督認為當 $X$ 和 $Y$ 所處理的貨物自 $X$ 開始運作起計的總重量超出 20 000 000 公噸時，應安裝新設施以維持空運貨站的工作效能。根據該監督的想法，自 $X$ 開始運作起計的哪一年應安裝新設施？（7 分）",
    "html": "<p>在某城市，一機場的空運貨站 $X$ 自它開始運作起計的第 $n$ 年所處理的貨物的重量為 $A(n)$ 公噸，其中 $n$ 為一正整數。已知 $A(n)=ab^{2n}$，其中 $a$ 及 $b$ 均為正常數。現知 $X$ 自它開始運作起計的第 1 年及第 2 年所處理的貨物的重量分別為 254100 公噸及 307461 公噸。</p>\n<p>(a)</p>\n<p>(i)　求 $a$ 及 $b$。由此求 $X$ 自它開始運作起計的第 4 年所處理的貨物的重量。</p>\n<p>(ii)　以 $n$ 表 $X$ 自它開始運作起計的首 $n$ 年所處理的貨物的總重量。（6 分）</p>\n<p>(b)　自 $X$ 運作了 4 年，空運貨站 $Y$ 開始運作。設 B$(m)$ 公噸為 $Y$ 自它開始運作起計的第 $m$ 年所處理的貨物的重量，其中 $m$ 為一正整數。已知 B$(m) = 2ab^m$。</p>\n<p>(i)　該機場的經理宣稱 $Y$ 運作後，每一年 $Y$ 所處理的貨物的重量均較 $X$ 所處理的少。你是否同意？試解釋你的答案。</p>\n<p>(ii)　該機場的監督認為當 $X$ 和 $Y$ 所處理的貨物自 $X$ 開始運作起計的總重量超出 20 000 000 公噸時，應安裝新設施以維持空運貨站的工作效能。根據該監督的想法，自 $X$ 開始運作起計的哪一年應安裝新設施？（7 分）</p>",
    "file": "2012_P1_題目中文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2012,
+   "paper": "Paper 1",
+   "type": "解答",
+   "qno": 1,
+   "title": "Q1　指數定律化簡",
+   "section": "Paper 1　甲部(1)",
+   "tags": [
+    "指數定律化簡"
+   ],
+   "text": "$$\\frac{m^{-12}n^8}{n^3}=m^{-12}n^{8-3}$$　**【1M】**（for $\\dfrac{a^p}{a^q}=a^{p-q}$）\n\n$$=\\frac{n^5}{m^{12}}$$　**【1M+1A】**（1M for $a^{-p}=\\dfrac{1}{a^p}$）\n\n**（3 分）**",
+   "html": "<p>$$\\frac{m^{-12}n^8}{n^3}=m^{-12}n^{8-3}$$　<strong>【1M】</strong>（for $\\dfrac{a^p}{a^q}=a^{p-q}$）</p>\n<p>$$=\\frac{n^5}{m^{12}}$$　<strong>【1M+1A】</strong>（1M for $a^{-p}=\\dfrac{1}{a^p}$）</p>\n<p><strong>（3 分）</strong></p>",
+   "file": "2012_P1_解答.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2012,
+   "paper": "Paper 1",
+   "type": "解答",
+   "qno": 2,
+   "title": "Q2　主項變換",
+   "section": "Paper 1　甲部(1)",
+   "tags": [
+    "主項變換"
+   ],
+   "text": "$$\\frac{3a+b}{8}=b-1$$\n\n$$3a+b=8(b-1)$$　**【1M】**（for $8(b-1)$）\n\n$$3a+b=8b-8$$\n\n$$3a=8b-8-b$$　**【1M】**（for putting $a$ on one side）\n\n$$a=\\frac{7b-8}{3}$$　**【1A】**（or equivalent）\n\n**（3 分）**",
+   "html": "<p>$$\\frac{3a+b}{8}=b-1$$</p>\n<p>$$3a+b=8(b-1)$$　<strong>【1M】</strong>（for $8(b-1)$）</p>\n<p>$$3a+b=8b-8$$</p>\n<p>$$3a=8b-8-b$$　<strong>【1M】</strong>（for putting $a$ on one side）</p>\n<p>$$a=\\frac{7b-8}{3}$$　<strong>【1A】</strong>（or equivalent）</p>\n<p><strong>（3 分）</strong></p>",
+   "file": "2012_P1_解答.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2012,
+   "paper": "Paper 1",
+   "type": "解答",
+   "qno": 3,
+   "title": "Q3　因式分解",
+   "section": "Paper 1　甲部(1)",
+   "tags": [
+    "因式分解"
+   ],
+   "text": "(a)　$$x^2-6xy+9y^2=(x-3y)^2$$　**【1A】**（or equivalent）\n\n(b)　$$x^2-6xy+9y^2+7x-21y=(x-3y)^2+7x-21y$$　**【1M】**（for using (a)）\n\n$$=(x-3y)^2+7(x-3y)$$\n\n$$=(x-3y)(x-3y+7)$$　**【1A】**（or equivalent）\n\n**（3 分）**",
+   "html": "<p>(a)　$$x^2-6xy+9y^2=(x-3y)^2$$　<strong>【1A】</strong>（or equivalent）</p>\n<p>(b)　$$x^2-6xy+9y^2+7x-21y=(x-3y)^2+7x-21y$$　<strong>【1M】</strong>（for using (a)）</p>\n<p>$$=(x-3y)^2+7(x-3y)$$</p>\n<p>$$=(x-3y)(x-3y+7)$$　<strong>【1A】</strong>（or equivalent）</p>\n<p><strong>（3 分）</strong></p>",
+   "file": "2012_P1_解答.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2012,
+   "paper": "Paper 1",
+   "type": "解答",
+   "qno": 4,
+   "title": "Q4　百分變化",
+   "section": "Paper 1　甲部(1)",
+   "tags": [
+    "百分變化"
+   ],
+   "text": "(a)　The daily wage of Ada\n\n$$=480(1+20\\%)$$　**【1M】**\n\n$$=\\$576$$　**【1A】**（u−1 for missing unit）\n\n(b)　The daily wage of Christine\n\n$$=\\frac{480}{1-20\\%}$$　**【1M】**\n\n$$=\\$600$$\n\nThus, Christine has the highest daily wage.　**【1A】**（f.t.）\n\n**（4 分）**",
+   "html": "<p>(a)　The daily wage of Ada</p>\n<p>$$=480(1+20\\%)$$　<strong>【1M】</strong></p>\n<p>$$=\\$576$$　<strong>【1A】</strong>（u−1 for missing unit）</p>\n<p>(b)　The daily wage of Christine</p>\n<p>$$=\\frac{480}{1-20\\%}$$　<strong>【1M】</strong></p>\n<p>$$=\\$600$$</p>\n<p>Thus, Christine has the highest daily wage.　<strong>【1A】</strong>（f.t.）</p>\n<p><strong>（4 分）</strong></p>",
+   "file": "2012_P1_解答.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2012,
+   "paper": "Paper 1",
+   "type": "解答",
+   "qno": 5,
+   "title": "Q5　一元方程應用",
+   "section": "Paper 1　甲部(1)",
+   "tags": [
+    "一元方程應用"
+   ],
+   "text": "Let $x$ and $y$ be the number of male and female security guards in each zone respectively.（pp−1 for undefined symbols）\n\n$$\\begin{cases} 6(x+y)=132 \\\\ y-x=4 \\end{cases}$$　**【1A+1A】**\n\nSo, we have $6(2x+4)=132$.　**【1M】**（for getting a linear equation in $x$ or $y$ only）\n\nSolving, we have $x=4$.\n\nThus, the total number of male security guards is 24.　**【1A】**\n\n**另法：** Let $x$ be the number of male security guards in each zone.（pp−1 for undefined symbols）\n\n$$6(x+x+4)=132$$　**【1A+1M+1A】**（1A for $y=x+4$，1M for $6(x+y)=132$）\n\nSolving, we have $x=4$.\n\nThus, the total number of male security guards is 24.　**【1A】**\n\n**（4 分）**",
+   "html": "<p>Let $x$ and $y$ be the number of male and female security guards in each zone respectively.（pp−1 for undefined symbols）</p>\n<p>$$\\begin{cases} 6(x+y)=132 \\ y-x=4 \\end{cases}$$　<strong>【1A+1A】</strong></p>\n<p>So, we have $6(2x+4)=132$.　<strong>【1M】</strong>（for getting a linear equation in $x$ or $y$ only）</p>\n<p>Solving, we have $x=4$.</p>\n<p>Thus, the total number of male security guards is 24.　<strong>【1A】</strong></p>\n<p><strong>另法：</strong> Let $x$ be the number of male security guards in each zone.（pp−1 for undefined symbols）</p>\n<p>$$6(x+x+4)=132$$　<strong>【1A+1M+1A】</strong>（1A for $y=x+4$，1M for $6(x+y)=132$）</p>\n<p>Solving, we have $x=4$.</p>\n<p>Thus, the total number of male security guards is 24.　<strong>【1A】</strong></p>\n<p><strong>（4 分）</strong></p>",
+   "file": "2012_P1_解答.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2012,
+   "paper": "Paper 1",
+   "type": "解答",
+   "qno": 6,
+   "title": "Q6　一元一次不等式",
+   "section": "Paper 1　甲部(1)",
+   "tags": [
+    "一元一次不等式"
+   ],
+   "text": "(a)　$$\\frac{4x+6}{7}>2(x-3)$$\n\n$$4x+6>14x-42$$\n\n$$-10x>-48$$　**【1M】**（for putting $x$ on one side）\n\n$$10x<48$$\n\n$$x<4.8$$　**【1A】**\n\nFor $2x-10\\le 0$, we have $x\\le 5$.\n\nTherefore, the solution of $\\dfrac{4x+6}{7}>2(x-3)$ and $2x-10\\le 0$ is $x<4.8$.　**【1A】**\n\n(b)　The positive integers satisfying both inequalities in (a) are 1, 2, 3 and 4.\n\nThus, the number of possible positive integers is 4.　**【1A】**（f.t.）\n\n**（4 分）**",
+   "html": "<p>(a)　$$\\frac{4x+6}{7}&gt;2(x-3)$$</p>\n<p>$$4x+6&gt;14x-42$$</p>\n<p>$$-10x&gt;-48$$　<strong>【1M】</strong>（for putting $x$ on one side）</p>\n<p>$$10x&lt;48$$</p>\n<p>$$x&lt;4.8$$　<strong>【1A】</strong></p>\n<p>For $2x-10\\le 0$, we have $x\\le 5$.</p>\n<p>Therefore, the solution of $\\dfrac{4x+6}{7}&gt;2(x-3)$ and $2x-10\\le 0$ is $x&lt;4.8$.　<strong>【1A】</strong></p>\n<p>(b)　The positive integers satisfying both inequalities in (a) are 1, 2, 3 and 4.</p>\n<p>Thus, the number of possible positive integers is 4.　<strong>【1A】</strong>（f.t.）</p>\n<p><strong>（4 分）</strong></p>",
+   "file": "2012_P1_解答.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2012,
+   "paper": "Paper 1",
+   "type": "解答",
+   "qno": 7,
+   "title": "Q7　框線圖",
+   "section": "Paper 1　甲部(1)",
+   "tags": [
+    "框線圖"
+   ],
+   "text": "(a)　$$18.1-a=6.8$$\n\n$$a=11.3$$　**【1A】**\n\n$$b-12.1=3.2$$\n\n$$b=15.3$$　**【1A】**\n\n(b)　Let $c$ s be the longest running time after training.\n\n$$c=18.1-2.9$$\n\n$$=15.2$$　**【1M】**\n\nSince $c<b=15.3$, all the students whose running time fall between 15.3 and 18.1 must have shorter running time after training.\n\nThus, at least 25% students have improved in their running time.　**【1A】**（f.t.）\n\n**（4 分）**",
+   "html": "<p>(a)　$$18.1-a=6.8$$</p>\n<p>$$a=11.3$$　<strong>【1A】</strong></p>\n<p>$$b-12.1=3.2$$</p>\n<p>$$b=15.3$$　<strong>【1A】</strong></p>\n<p>(b)　Let $c$ s be the longest running time after training.</p>\n<p>$$c=18.1-2.9$$</p>\n<p>$$=15.2$$　<strong>【1M】</strong></p>\n<p>Since $c&lt;b=15.3$, all the students whose running time fall between 15.3 and 18.1 must have shorter running time after training.</p>\n<p>Thus, at least 25% students have improved in their running time.　<strong>【1A】</strong>（f.t.）</p>\n<p><strong>（4 分）</strong></p>",
+   "file": "2012_P1_解答.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2012,
+   "paper": "Paper 1",
+   "type": "解答",
+   "qno": 8,
+   "title": "Q8　相似三角形",
+   "section": "Paper 1　甲部(1)",
+   "tags": [
+    "相似三角形"
+   ],
+   "text": "(a)　$$\\triangle AED\\sim\\triangle BEC$$　**【1A】**\n\n$$\\frac{AE}{BE}=\\frac{DE}{CE}$$　**【1M】**（for using side ratio）\n\n$$AE=\\frac{8\\cdot 15}{20}$$\n\n$$=6$$　**【1A】**\n\n(b)　$$AE^2+BE^2=6^2+8^2$$\n\n$$=100$$\n\n$$=AB^2$$　**【1M】**\n\nThus, $\\triangle AEB$ is a right-angled triangle.\n\n$$AC\\perp BD.$$　**【1A】**（f.t.）\n\n**（5 分）**",
+   "html": "<p>(a)　$$\\triangle AED\\sim\\triangle BEC$$　<strong>【1A】</strong></p>\n<p>$$\\frac{AE}{BE}=\\frac{DE}{CE}$$　<strong>【1M】</strong>（for using side ratio）</p>\n<p>$$AE=\\frac{8\\cdot 15}{20}$$</p>\n<p>$$=6$$　<strong>【1A】</strong></p>\n<p>(b)　$$AE^2+BE^2=6^2+8^2$$</p>\n<p>$$=100$$</p>\n<p>$$=AB^2$$　<strong>【1M】</strong></p>\n<p>Thus, $\\triangle AEB$ is a right-angled triangle.</p>\n<p>$$AC\\perp BD.$$　<strong>【1A】</strong>（f.t.）</p>\n<p><strong>（5 分）</strong></p>",
+   "file": "2012_P1_解答.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2012,
+   "paper": "Paper 1",
+   "type": "解答",
+   "qno": 9,
+   "title": "Q9　直立角柱體求積",
+   "section": "Paper 1　甲部(1)",
+   "tags": [
+    "直立角柱體求積"
+   ],
+   "text": "(a)　$$\\frac{(BC+AD)\\cdot AB}{2}\\cdot DE=1020$$　**【1M】**\n\n$$\\frac{(6+AD)\\cdot 12}{2}\\cdot 10=1020$$\n\n$$AD=11\\text{ cm}$$　**【1A】**（u−1 for missing unit）\n\n(b)　$$CD=\\sqrt{AB^2+(AD-BC)^2}$$　**【1M】**（for using Pythagoras' theorem）\n\n$$=\\sqrt{12^2+(11-6)^2}$$\n\n$$=\\sqrt{169}$$\n\n$$=13\\text{ cm}$$　**【1A】**\n\nThe total surface area of prism $ABCDEFGH$\n\n$$=2\\times\\text{Area of }ABCD+DE\\times(AB+BC+CD+AD)$$\n\n$$=2\\cdot\\frac{(6+11)\\cdot 12}{2}+10\\cdot(12+6+13+11)$$\n\n$$=624\\text{ cm}^2$$　**【1A】**（u−1 for missing unit）\n\n**（5 分）**",
+   "html": "<p>(a)　$$\\frac{(BC+AD)\\cdot AB}{2}\\cdot DE=1020$$　<strong>【1M】</strong></p>\n<p>$$\\frac{(6+AD)\\cdot 12}{2}\\cdot 10=1020$$</p>\n<p>$$AD=11\\text{ cm}$$　<strong>【1A】</strong>（u−1 for missing unit）</p>\n<p>(b)　$$CD=\\sqrt{AB^2+(AD-BC)^2}$$　<strong>【1M】</strong>（for using Pythagoras' theorem）</p>\n<p>$$=\\sqrt{12^2+(11-6)^2}$$</p>\n<p>$$=\\sqrt{169}$$</p>\n<p>$$=13\\text{ cm}$$　<strong>【1A】</strong></p>\n<p>The total surface area of prism $ABCDEFGH$</p>\n<p>$$=2\\times\\text{Area of }ABCD+DE\\times(AB+BC+CD+AD)$$</p>\n<p>$$=2\\cdot\\frac{(6+11)\\cdot 12}{2}+10\\cdot(12+6+13+11)$$</p>\n<p>$$=624\\text{ cm}^2$$　<strong>【1A】</strong>（u−1 for missing unit）</p>\n<p><strong>（5 分）</strong></p>",
+   "file": "2012_P1_解答.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2012,
+   "paper": "Paper 1",
+   "type": "解答",
+   "qno": 10,
+   "title": "Q10　幹葉圖",
+   "section": "Paper 1　甲部(2)",
+   "tags": [
+    "幹葉圖"
+   ],
+   "text": "(a)　$$\\text{mean}=18$$　**【1A】**\n\n$$\\text{median}=16$$　**【1A】**\n\n(b)(i)　The mean number of hours of the 24 questionnaires\n\n$$=\\frac{18\\times 20+18\\times 4}{24}$$\n\n$$=18$$　**【1A】**\n\n(b)(ii)　Let $a$ and $b$ be the number of hours of the other 2 questionnaires of the last 4 questionnaires.（pp−1 for undefined symbol）\n\n$$\\frac{a+b+19+20}{4}=18$$\n\n$$a+b=33$$　**【1M】**\n\nIf the median number of hours of the 24 questionnaires is the same as the median in (a), both $a$ and $b$ must be less than or equal to 16, i.e. $a+b\\le 32$.　**【1M】**\n\nThus, it is impossible the new median to be the same as the median in (a).　**【1A】**（f.t.）\n\n**（4 分）**",
+   "html": "<p>(a)　$$\\text{mean}=18$$　<strong>【1A】</strong></p>\n<p>$$\\text{median}=16$$　<strong>【1A】</strong></p>\n<p>(b)(i)　The mean number of hours of the 24 questionnaires</p>\n<p>$$=\\frac{18\\times 20+18\\times 4}{24}$$</p>\n<p>$$=18$$　<strong>【1A】</strong></p>\n<p>(b)(ii)　Let $a$ and $b$ be the number of hours of the other 2 questionnaires of the last 4 questionnaires.（pp−1 for undefined symbol）</p>\n<p>$$\\frac{a+b+19+20}{4}=18$$</p>\n<p>$$a+b=33$$　<strong>【1M】</strong></p>\n<p>If the median number of hours of the 24 questionnaires is the same as the median in (a), both $a$ and $b$ must be less than or equal to 16, i.e. $a+b\\le 32$.　<strong>【1M】</strong></p>\n<p>Thus, it is impossible the new median to be the same as the median in (a).　<strong>【1A】</strong>（f.t.）</p>\n<p><strong>（4 分）</strong></p>",
+   "file": "2012_P1_解答.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2012,
+   "paper": "Paper 1",
+   "type": "解答",
+   "qno": 11,
+   "title": "Q11　部分正變",
+   "section": "Paper 1　甲部(2)",
+   "tags": [
+    "部分正變"
+   ],
+   "text": "(a)　Let $C=a+bA$, where $a$ and $b$ are non-zero constants.　**【1A】**\n\nSo, we have $a+2b=62$ and $a+6b=74$.　**【1M】**（for either substitution）\n\nSolving, we have $a=56$ and $b=3$.　**【1A】**（for both correct）\n\nThe required cost\n\n$$=56+3(13)$$\n\n$$=\\$95$$　**【1A】**（u−1 for missing unit）\n\n(b)　The surface area of the larger can\n\n$$=13\\times(\\sqrt[3]{8})^2$$　**【1M】**（for using similarity）\n\n$$=52\\text{ m}^2$$\n\nThe required cost\n\n$$=56+3(52)$$\n\n$$=\\$212$$　**【1A】**（u−1 for missing unit）\n\n**（6 分）**",
+   "html": "<p>(a)　Let $C=a+bA$, where $a$ and $b$ are non-zero constants.　<strong>【1A】</strong></p>\n<p>So, we have $a+2b=62$ and $a+6b=74$.　<strong>【1M】</strong>（for either substitution）</p>\n<p>Solving, we have $a=56$ and $b=3$.　<strong>【1A】</strong>（for both correct）</p>\n<p>The required cost</p>\n<p>$$=56+3(13)$$</p>\n<p>$$=\\$95$$　<strong>【1A】</strong>（u−1 for missing unit）</p>\n<p>(b)　The surface area of the larger can</p>\n<p>$$=13\\times(\\sqrt[3]{8})^2$$　<strong>【1M】</strong>（for using similarity）</p>\n<p>$$=52\\text{ m}^2$$</p>\n<p>The required cost</p>\n<p>$$=56+3(52)$$</p>\n<p>$$=\\$212$$　<strong>【1A】</strong>（u−1 for missing unit）</p>\n<p><strong>（6 分）</strong></p>",
+   "file": "2012_P1_解答.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2012,
+   "paper": "Paper 1",
+   "type": "解答",
+   "qno": 12,
+   "title": "Q12　圓錐體與半球體",
+   "section": "Paper 1　甲部(2)",
+   "tags": [
+    "圓錐體與半球體"
+   ],
+   "text": "(a)　The volume of the cone\n\n$$=\\frac{1}{3}\\pi r^2h$$　**【1M】**（for $V=\\dfrac{1}{3}\\pi r^2h$）\n\n$$=\\frac{1}{3}\\pi\\cdot 0.48^2\\cdot 0.96$$\n\n$$=0.073728\\pi\\text{ m}^3$$　**【1A】**（u−1 for missing unit）\n\n> **圖（待重繪）**：原卷此處附示意圖，顯示底半徑 48 cm、高 96 cm 的直立圓錐體及半徑 60 cm 的半球形容器（牛奶液面），圖上標示 48 cm／96 cm／36 cm／60 cm。\n\n(b)(i)　The volume of the milk\n\n$$=\\frac{1}{2}\\cdot\\frac{4}{3}\\pi r^3$$　**【1M】**（for $V=\\dfrac{4}{3}\\pi r^3$）\n\n$$=\\frac{2}{3}\\pi\\cdot 0.6^3$$\n\n$$=0.144\\pi\\text{ m}^3$$　**【1A】**（u−1 for missing unit）\n\n(b)(ii)　The height of the portion of the cone in the milk\n\n$$=\\sqrt{0.6^2-0.48^2}$$　**【1M】**（for using Pythagoras' theorem）\n\n$$=0.36\\text{ m}$$\n\nThe volume of the portion of the cone in the milk\n\n$$=(0.073728\\pi)\\left(1-\\left(\\frac{0.96-0.36}{0.96}\\right)^2\\right)$$　**【1M】**（for using similarity）\n\n$$=0.044928\\pi\\text{ m}^3$$\n\nThe volume of the remaining milk in the container\n\n$$=0.144\\pi-0.044928\\pi$$\n\n$$=0.311\\text{ m}^3$$\n\nThus, the volume of the remaining milk in the container is larger than $0.3\\text{ m}^3$.　**【1A】**（f.t.）\n\n**（7 分）**",
+   "html": "<p>(a)　The volume of the cone</p>\n<p>$$=\\frac{1}{3}\\pi r^2h$$　<strong>【1M】</strong>（for $V=\\dfrac{1}{3}\\pi r^2h$）</p>\n<p>$$=\\frac{1}{3}\\pi\\cdot 0.48^2\\cdot 0.96$$</p>\n<p>$$=0.073728\\pi\\text{ m}^3$$　<strong>【1A】</strong>（u−1 for missing unit）</p>\n<blockquote>\n<p><strong>圖（待重繪）</strong>：原卷此處附示意圖，顯示底半徑 48 cm、高 96 cm 的直立圓錐體及半徑 60 cm 的半球形容器（牛奶液面），圖上標示 48 cm／96 cm／36 cm／60 cm。</p>\n</blockquote>\n<p>(b)(i)　The volume of the milk</p>\n<p>$$=\\frac{1}{2}\\cdot\\frac{4}{3}\\pi r^3$$　<strong>【1M】</strong>（for $V=\\dfrac{4}{3}\\pi r^3$）</p>\n<p>$$=\\frac{2}{3}\\pi\\cdot 0.6^3$$</p>\n<p>$$=0.144\\pi\\text{ m}^3$$　<strong>【1A】</strong>（u−1 for missing unit）</p>\n<p>(b)(ii)　The height of the portion of the cone in the milk</p>\n<p>$$=\\sqrt{0.6^2-0.48^2}$$　<strong>【1M】</strong>（for using Pythagoras' theorem）</p>\n<p>$$=0.36\\text{ m}$$</p>\n<p>The volume of the portion of the cone in the milk</p>\n<p>$$=(0.073728\\pi)\\left(1-\\left(\\frac{0.96-0.36}{0.96}\\right)^2\\right)$$　<strong>【1M】</strong>（for using similarity）</p>\n<p>$$=0.044928\\pi\\text{ m}^3$$</p>\n<p>The volume of the remaining milk in the container</p>\n<p>$$=0.144\\pi-0.044928\\pi$$</p>\n<p>$$=0.311\\text{ m}^3$$</p>\n<p>Thus, the volume of the remaining milk in the container is larger than $0.3\\text{ m}^3$.　<strong>【1A】</strong>（f.t.）</p>\n<p><strong>（7 分）</strong></p>",
+   "file": "2012_P1_解答.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2012,
+   "paper": "Paper 1",
+   "type": "解答",
+   "qno": 13,
+   "title": "Q13　因式定理與二次函數",
+   "section": "Paper 1　甲部(2)",
+   "tags": [
+    "因式定理與二次函數"
+   ],
+   "text": "(a)　Since $x-2$ is a factor of $kx^3-21x^2+24x-4$, we have\n\n$$k(2^3)-21(2^2)+24(2)-4=0$$　**【1M】**\n\n$$8k=40$$\n\n$$k=5$$　**【1A】**\n\n(b)(i)　The coordinates of $R$\n\n$$=(0,\\ 15m^2-63m+72)$$　**【1M】**\n\nThe area of rectangle $OPQR$\n\n$$=(m)(15m^2-63m+72)$$\n\n$$=15m^3-63m^2+72m$$　**【1A】**\n\n(b)(ii)　If the area of rectangle $OPQR$ is 12, $m$ satisfy\n\n$$15m^3-63m^2+72m=12$$\n\n$$5m^3-21m^2+24m-4=0$$\n\n$$(m-2)(5m^2-11m+2)=0$$　**【1M+1A】**（1M for $(m-2)(am^2+bm+c)$）\n\n$$(m-2)(5m-1)(m-2)=0$$\n\n$$m=\\frac{1}{5}\\text{ or } m=2\\text{ (repeated)}$$\n\nThus, there are only 2 possible locations of $Q$ such that the area of rectangle $OPQR$ is 12.　**【1A】**（f.t.）\n\n**（7 分）**",
+   "html": "<p>(a)　Since $x-2$ is a factor of $kx^3-21x^2+24x-4$, we have</p>\n<p>$$k(2^3)-21(2^2)+24(2)-4=0$$　<strong>【1M】</strong></p>\n<p>$$8k=40$$</p>\n<p>$$k=5$$　<strong>【1A】</strong></p>\n<p>(b)(i)　The coordinates of $R$</p>\n<p>$$=(0,\\ 15m^2-63m+72)$$　<strong>【1M】</strong></p>\n<p>The area of rectangle $OPQR$</p>\n<p>$$=(m)(15m^2-63m+72)$$</p>\n<p>$$=15m^3-63m^2+72m$$　<strong>【1A】</strong></p>\n<p>(b)(ii)　If the area of rectangle $OPQR$ is 12, $m$ satisfy</p>\n<p>$$15m^3-63m^2+72m=12$$</p>\n<p>$$5m^3-21m^2+24m-4=0$$</p>\n<p>$$(m-2)(5m^2-11m+2)=0$$　<strong>【1M+1A】</strong>（1M for $(m-2)(am^2+bm+c)$）</p>\n<p>$$(m-2)(5m-1)(m-2)=0$$</p>\n<p>$$m=\\frac{1}{5}\\text{ or } m=2\\text{ (repeated)}$$</p>\n<p>Thus, there are only 2 possible locations of $Q$ such that the area of rectangle $OPQR$ is 12.　<strong>【1A】</strong>（f.t.）</p>\n<p><strong>（7 分）</strong></p>",
+   "file": "2012_P1_解答.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2012,
+   "paper": "Paper 1",
+   "type": "解答",
+   "qno": 14,
+   "title": "Q14　軌跡與圓",
+   "section": "Paper 1　甲部(2)",
+   "tags": [
+    "軌跡與圓"
+   ],
+   "text": "(a)(i)　$\\Gamma$ and $L$ are parallel with $\\Gamma$ lies below $L$ by a vertical distance of 1.　**【1A+1A】**（1A for parallel；1A for vertical distance）\n\n(a)(ii)　The equation of $L$ is\n\n$$\\frac{x}{3}+\\frac{y}{-1}=1$$　**【1M】**（for intercept form）\n\n$$y=\\frac{x}{3}-1$$\n\nThus, the equation of $\\Gamma$ is\n\n$$y=\\frac{x}{3}-1-1$$　**【1M】**\n\n$$x-3y-6=0$$　**【1A】**\n\n(b)(i)　The coordinates of $Q$\n\n$$=(6,0)$$\n\nSubstituting the coordinates of $Q$ into the equation of $\\Gamma$, we have\n\n$$\\text{L.S.}=6-3(0)-6$$\n\n$$=0$$\n\n$$=\\text{R.S.}$$\n\nThus, $Q$ passes through $\\Gamma$.　**【1A】**\n\n(b)(ii)　Since $Q$ passes through $\\Gamma$, $HQ=KQ=$ radius of $C$.　**【1M】**\n\nLet $F$ and $G$ be the feet of the perpendiculars from $A$ and $B$ to $\\Gamma$ respectively.\n\n$$AF=BG=\\text{perpendicular distance from }L\\text{ to }\\Gamma.$$　**【1M】**\n\nHence, we have\n\n$$\\text{Area of }\\triangle AQH:\\text{Area of }\\triangle BQK$$\n\n$$=\\frac{1}{2}HQ\\cdot AF:\\frac{1}{2}KQ\\cdot BG$$\n\n$$=1:1$$　**【1A】**\n\n**（9 分）**",
+   "html": "<p>(a)(i)　$\\Gamma$ and $L$ are parallel with $\\Gamma$ lies below $L$ by a vertical distance of 1.　<strong>【1A+1A】</strong>（1A for parallel；1A for vertical distance）</p>\n<p>(a)(ii)　The equation of $L$ is</p>\n<p>$$\\frac{x}{3}+\\frac{y}{-1}=1$$　<strong>【1M】</strong>（for intercept form）</p>\n<p>$$y=\\frac{x}{3}-1$$</p>\n<p>Thus, the equation of $\\Gamma$ is</p>\n<p>$$y=\\frac{x}{3}-1-1$$　<strong>【1M】</strong></p>\n<p>$$x-3y-6=0$$　<strong>【1A】</strong></p>\n<p>(b)(i)　The coordinates of $Q$</p>\n<p>$$=(6,0)$$</p>\n<p>Substituting the coordinates of $Q$ into the equation of $\\Gamma$, we have</p>\n<p>$$\\text{L.S.}=6-3(0)-6$$</p>\n<p>$$=0$$</p>\n<p>$$=\\text{R.S.}$$</p>\n<p>Thus, $Q$ passes through $\\Gamma$.　<strong>【1A】</strong></p>\n<p>(b)(ii)　Since $Q$ passes through $\\Gamma$, $HQ=KQ=$ radius of $C$.　<strong>【1M】</strong></p>\n<p>Let $F$ and $G$ be the feet of the perpendiculars from $A$ and $B$ to $\\Gamma$ respectively.</p>\n<p>$$AF=BG=\\text{perpendicular distance from }L\\text{ to }\\Gamma.$$　<strong>【1M】</strong></p>\n<p>Hence, we have</p>\n<p>$$\\text{Area of }\\triangle AQH:\\text{Area of }\\triangle BQK$$</p>\n<p>$$=\\frac{1}{2}HQ\\cdot AF:\\frac{1}{2}KQ\\cdot BG$$</p>\n<p>$$=1:1$$　<strong>【1A】</strong></p>\n<p><strong>（9 分）</strong></p>",
+   "file": "2012_P1_解答.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2012,
+   "paper": "Paper 1",
+   "type": "解答",
+   "qno": 15,
+   "title": "Q15　標準差與標準分",
+   "section": "Paper 1　乙部",
+   "tags": [
+    "標準差與標準分"
+   ],
+   "text": "(a)　The standard deviation after the adjustment\n\n$$=10\\times(1+20\\%)$$\n\n$$=12$$　**【1A】**\n\n(b)　Let $\\mu$ be the mean score before the adjustment.\n\nLet $x_i$ be the test score of a student before the adjustment.\n\nThe standard score of that student after the adjustment\n\n$$=\\frac{(1.2x_i+5)-(1.2\\mu+5)}{12}$$　**【1A】**（for mean score after adjustment）\n\n$$=\\frac{1.2(x_i-\\mu)}{12}$$\n\n$$=\\frac{x_i-\\mu}{10}$$\n\nThus, the standard score of each student remains unchanged.　**【1A】**（f.t.）\n\n**（3 分）**",
+   "html": "<p>(a)　The standard deviation after the adjustment</p>\n<p>$$=10\\times(1+20\\%)$$</p>\n<p>$$=12$$　<strong>【1A】</strong></p>\n<p>(b)　Let $\\mu$ be the mean score before the adjustment.</p>\n<p>Let $x_i$ be the test score of a student before the adjustment.</p>\n<p>The standard score of that student after the adjustment</p>\n<p>$$=\\frac{(1.2x_i+5)-(1.2\\mu+5)}{12}$$　<strong>【1A】</strong>（for mean score after adjustment）</p>\n<p>$$=\\frac{1.2(x_i-\\mu)}{12}$$</p>\n<p>$$=\\frac{x_i-\\mu}{10}$$</p>\n<p>Thus, the standard score of each student remains unchanged.　<strong>【1A】</strong>（f.t.）</p>\n<p><strong>（3 分）</strong></p>",
+   "file": "2012_P1_解答.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2012,
+   "paper": "Paper 1",
+   "type": "解答",
+   "qno": 16,
+   "title": "Q16　概率",
+   "section": "Paper 1　乙部",
+   "tags": [
+    "概率"
+   ],
+   "text": "(a)　The required probability\n\n$$=\\frac{C^{8}_{4}(C^{2}_{1})^4}{C^{16}_{4}}$$　**【1M】**（for numerator or denominator）\n\n$$=\\frac{8}{13}$$　**【1A】**（r.t. 0.615）\n\n**另法：**\n\n$$=\\left(\\frac{14}{15}\\right)\\left(\\frac{12}{14}\\right)\\left(\\frac{10}{13}\\right)$$　**【1M】**（for $\\left(\\dfrac{n-2}{n-1}\\right)\\left(\\dfrac{n-4}{n-2}\\right)\\left(\\dfrac{n-6}{n-3}\\right)$）\n\n$$=\\frac{8}{13}$$　**【1A】**（r.t. 0.615）\n\n(b)　The required probability\n\n$$=1-\\frac{8}{13}$$　**【1M】**（for $1-$ (a)）\n\n$$=\\frac{5}{13}$$　**【1A】**（r.t. 0.385）\n\n**另法：**\n\n$$=\\frac{C^{8}_{2}+C^{8}_{3}(C^{2}_{1})^2}{C^{16}_{4}}$$　**【1M】**（for considering 2 cases）\n\n$$=\\frac{5}{13}$$　**【1A】**（r.t. 0.385）\n\n**另法：**\n\n$$=\\frac{1}{15}+\\left(\\frac{14}{15}\\right)\\left(\\frac{2}{14}\\right)+\\left(\\frac{14}{15}\\right)\\left(\\frac{12}{14}\\right)\\left(\\frac{3}{13}\\right)$$　**【1M】**（for considering 3 cases）\n\n$$=\\frac{5}{13}$$　**【1A】**（r.t. 0.385）\n\n**（4 分）**",
+   "html": "<p>(a)　The required probability</p>\n<p>$$=\\frac{C^{8}<em>{4}(C^{2}</em>{1})^4}{C^{16}_{4}}$$　<strong>【1M】</strong>（for numerator or denominator）</p>\n<p>$$=\\frac{8}{13}$$　<strong>【1A】</strong>（r.t. 0.615）</p>\n<p><strong>另法：</strong></p>\n<p>$$=\\left(\\frac{14}{15}\\right)\\left(\\frac{12}{14}\\right)\\left(\\frac{10}{13}\\right)$$　<strong>【1M】</strong>（for $\\left(\\dfrac{n-2}{n-1}\\right)\\left(\\dfrac{n-4}{n-2}\\right)\\left(\\dfrac{n-6}{n-3}\\right)$）</p>\n<p>$$=\\frac{8}{13}$$　<strong>【1A】</strong>（r.t. 0.615）</p>\n<p>(b)　The required probability</p>\n<p>$$=1-\\frac{8}{13}$$　<strong>【1M】</strong>（for $1-$ (a)）</p>\n<p>$$=\\frac{5}{13}$$　<strong>【1A】</strong>（r.t. 0.385）</p>\n<p><strong>另法：</strong></p>\n<p>$$=\\frac{C^{8}<em>{2}+C^{8}</em>{3}(C^{2}<em>{1})^2}{C^{16}</em>{4}}$$　<strong>【1M】</strong>（for considering 2 cases）</p>\n<p>$$=\\frac{5}{13}$$　<strong>【1A】</strong>（r.t. 0.385）</p>\n<p><strong>另法：</strong></p>\n<p>$$=\\frac{1}{15}+\\left(\\frac{14}{15}\\right)\\left(\\frac{2}{14}\\right)+\\left(\\frac{14}{15}\\right)\\left(\\frac{12}{14}\\right)\\left(\\frac{3}{13}\\right)$$　<strong>【1M】</strong>（for considering 3 cases）</p>\n<p>$$=\\frac{5}{13}$$　<strong>【1A】</strong>（r.t. 0.385）</p>\n<p><strong>（4 分）</strong></p>",
+   "file": "2012_P1_解答.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2012,
+   "paper": "Paper 1",
+   "type": "解答",
+   "qno": 17,
+   "title": "Q17　圓的方程",
+   "section": "Paper 1　乙部",
+   "tags": [
+    "圓的方程"
+   ],
+   "text": "(a)　Since $C$ touches the $x$-axis, the radius of $C$ is 10.　**【1A】**（can be absorbed）\n\nThe equation of $C$ is\n\n$$(x-6)^2+(y-10)^2=10^2$$　**【1A】**\n\n(b)　The equation of $L$ is $y=-x+k$.　**【1M】**\n\nSubstituting $y=-x+k$ into the equation of $C$, we have\n\n$$(x-6)^2+(-x+k-10)^2=10^2$$\n\n$$2x^2-2(k-4)x+(k-10)^2-64=0$$\n\nLet $(x_0,y_0)$ be the mid-point of $AB$.\n\n$$x_0=\\frac{k-4}{2}$$\n\n$$=\\frac{k}{2}-2$$　**【1M+1A】**（1M for using sum of roots）\n\n$$y_0=-\\left(\\frac{k}{2}-2\\right)+k=\\frac{k}{2}+2$$　**【1A】**\n\nThus, the mid-point of $AB=\\left(\\dfrac{k}{2}-2,\\ \\dfrac{k}{2}+2\\right)$.\n\n**另法：**\n\nThe equation of $L$ is $y=-x+k$.　**【1M】**\n\nThe line passing through $(6,10)$ and perpendicular to $L$ has equation\n\n$$\\frac{y-10}{x-6}=1$$　**【1A】**\n\n$$y=x+4$$\n\nSubstituting $y=-x+k$ into the equation, we have\n\n$$-x+k=x+4$$　**【1M】**\n\n$$x=\\frac{k}{2}-2,\\quad y=\\frac{k}{2}+2$$　**【1A+1A】**\n\n**（7 分）**",
+   "html": "<p>(a)　Since $C$ touches the $x$-axis, the radius of $C$ is 10.　<strong>【1A】</strong>（can be absorbed）</p>\n<p>The equation of $C$ is</p>\n<p>$$(x-6)^2+(y-10)^2=10^2$$　<strong>【1A】</strong></p>\n<p>(b)　The equation of $L$ is $y=-x+k$.　<strong>【1M】</strong></p>\n<p>Substituting $y=-x+k$ into the equation of $C$, we have</p>\n<p>$$(x-6)^2+(-x+k-10)^2=10^2$$</p>\n<p>$$2x^2-2(k-4)x+(k-10)^2-64=0$$</p>\n<p>Let $(x_0,y_0)$ be the mid-point of $AB$.</p>\n<p>$$x_0=\\frac{k-4}{2}$$</p>\n<p>$$=\\frac{k}{2}-2$$　<strong>【1M+1A】</strong>（1M for using sum of roots）</p>\n<p>$$y_0=-\\left(\\frac{k}{2}-2\\right)+k=\\frac{k}{2}+2$$　<strong>【1A】</strong></p>\n<p>Thus, the mid-point of $AB=\\left(\\dfrac{k}{2}-2,\\ \\dfrac{k}{2}+2\\right)$.</p>\n<p><strong>另法：</strong></p>\n<p>The equation of $L$ is $y=-x+k$.　<strong>【1M】</strong></p>\n<p>The line passing through $(6,10)$ and perpendicular to $L$ has equation</p>\n<p>$$\\frac{y-10}{x-6}=1$$　<strong>【1A】</strong></p>\n<p>$$y=x+4$$</p>\n<p>Substituting $y=-x+k$ into the equation, we have</p>\n<p>$$-x+k=x+4$$　<strong>【1M】</strong></p>\n<p>$$x=\\frac{k}{2}-2,\\quad y=\\frac{k}{2}+2$$　<strong>【1A+1A】</strong></p>\n<p><strong>（7 分）</strong></p>",
+   "file": "2012_P1_解答.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2012,
+   "paper": "Paper 1",
+   "type": "解答",
+   "qno": 18,
+   "title": "Q18　立體幾何",
+   "section": "Paper 1　乙部",
+   "tags": [
+    "立體幾何"
+   ],
+   "text": "(a)　By sine formula,\n\n$$\\frac{PA}{\\sin\\angle PBA}=\\frac{AB}{\\sin\\angle APB}$$　**【1M】**\n\n$$\\frac{PA}{\\sin 60^\\circ}=\\frac{20}{\\sin(180^\\circ-72^\\circ-60^\\circ)}$$\n\n$$PA\\approx 23.30704256$$\n\n$$PA\\approx 23.3$$　**【1A】**（r.t.）\n\n> **圖（待重繪）**：原卷此處附示意圖，顯示以正方形為底的直立角錐體 $VABCD$（$\\angle VAB=72^\\circ$，底邊 20 cm），$P$、$Q$ 分別為 $VA$、$VD$ 上的點使得 $PQ\\parallel BC$，並切去角錐體 $VPBCQ$；圖上標示點 $A$–$G$、$P$、$Q$、$V$。\n\n(b)(i)　Let $E,F,G$ be the feet of the perpendicular of $P$ to the plane $ABCD$, the line $AB$ and the line $BC$ respectively.\n\n$$\\frac{AF}{PA}=\\cos\\angle PAB$$\n\n$$AF\\approx 7.20227224$$\n\n$$\\frac{AF}{AE}=\\cos\\angle EAF$$\n\n$$AE\\approx\\frac{7.20227224}{\\cos 45^\\circ}$$\n\n$$\\approx 10.18555108$$\n\n$$PE=\\sqrt{PA^2-AE^2}$$　**【1M】**\n\n$$\\approx\\sqrt{23.30704256^2-10.18555108^2}$$\n\n$$\\approx 20.96360613$$\n\n$$EG=FB$$　**【1M】**\n\n$$=AB-AF$$\n\n$$\\approx 12.79772776$$\n\n$$\\tan\\alpha=\\tan\\angle PGE$$　**【1M】**（for identifying the angle）\n\n$$=\\frac{PE}{EG}$$\n\n$$\\approx 1.638072518$$\n\n$$\\alpha\\approx 58.59703733^\\circ$$\n\n$$\\alpha\\approx 58.6^\\circ$$　**【1A】**\n\n(b)(ii)　$$\\tan\\beta=\\tan\\angle PBE=\\frac{PE}{EB}$$　**【1M】**（for identifying the angle）\n\n$$EB>EG$$\n\n$$\\frac{PE}{EB}<\\frac{PE}{EG}$$\n\n$$\\tan\\beta<\\tan\\alpha$$\n\n$$\\beta<\\alpha$$　**【1A】**（f.t.）\n\n**（8 分）**",
+   "html": "<p>(a)　By sine formula,</p>\n<p>$$\\frac{PA}{\\sin\\angle PBA}=\\frac{AB}{\\sin\\angle APB}$$　<strong>【1M】</strong></p>\n<p>$$\\frac{PA}{\\sin 60^\\circ}=\\frac{20}{\\sin(180^\\circ-72^\\circ-60^\\circ)}$$</p>\n<p>$$PA\\approx 23.30704256$$</p>\n<p>$$PA\\approx 23.3$$　<strong>【1A】</strong>（r.t.）</p>\n<blockquote>\n<p><strong>圖（待重繪）</strong>：原卷此處附示意圖，顯示以正方形為底的直立角錐體 $VABCD$（$\\angle VAB=72^\\circ$，底邊 20 cm），$P$、$Q$ 分別為 $VA$、$VD$ 上的點使得 $PQ\\parallel BC$，並切去角錐體 $VPBCQ$；圖上標示點 $A$–$G$、$P$、$Q$、$V$。</p>\n</blockquote>\n<p>(b)(i)　Let $E,F,G$ be the feet of the perpendicular of $P$ to the plane $ABCD$, the line $AB$ and the line $BC$ respectively.</p>\n<p>$$\\frac{AF}{PA}=\\cos\\angle PAB$$</p>\n<p>$$AF\\approx 7.20227224$$</p>\n<p>$$\\frac{AF}{AE}=\\cos\\angle EAF$$</p>\n<p>$$AE\\approx\\frac{7.20227224}{\\cos 45^\\circ}$$</p>\n<p>$$\\approx 10.18555108$$</p>\n<p>$$PE=\\sqrt{PA^2-AE^2}$$　<strong>【1M】</strong></p>\n<p>$$\\approx\\sqrt{23.30704256^2-10.18555108^2}$$</p>\n<p>$$\\approx 20.96360613$$</p>\n<p>$$EG=FB$$　<strong>【1M】</strong></p>\n<p>$$=AB-AF$$</p>\n<p>$$\\approx 12.79772776$$</p>\n<p>$$\\tan\\alpha=\\tan\\angle PGE$$　<strong>【1M】</strong>（for identifying the angle）</p>\n<p>$$=\\frac{PE}{EG}$$</p>\n<p>$$\\approx 1.638072518$$</p>\n<p>$$\\alpha\\approx 58.59703733^\\circ$$</p>\n<p>$$\\alpha\\approx 58.6^\\circ$$　<strong>【1A】</strong></p>\n<p>(b)(ii)　$$\\tan\\beta=\\tan\\angle PBE=\\frac{PE}{EB}$$　<strong>【1M】</strong>（for identifying the angle）</p>\n<p>$$EB&gt;EG$$</p>\n<p>$$\\frac{PE}{EB}&lt;\\frac{PE}{EG}$$</p>\n<p>$$\\tan\\beta&lt;\\tan\\alpha$$</p>\n<p>$$\\beta&lt;\\alpha$$　<strong>【1A】</strong>（f.t.）</p>\n<p><strong>（8 分）</strong></p>",
+   "file": "2012_P1_解答.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2012,
+   "paper": "Paper 1",
+   "type": "解答",
+   "qno": 19,
+   "title": "Q19　等比數列",
+   "section": "Paper 1　乙部",
+   "tags": [
+    "等比數列"
+   ],
+   "text": "(a)(i)　$$\\begin{cases} A(1)=ab^2=254100 \\\\ A(2)=ab^{2(2)}=307461 \\end{cases}$$\n\nSolving, we have $b=1.1$ and $a=210000$.　**【1A+1A】**\n\n$$A(4)=ab^{2(4)}$$\n\n$$=(210000)(1.21^4)$$\n\n$$=450,153.6501$$\n\nThus, the weight of the cargos handled in the 4-th year is 450,153.6501 tonnes.　**【1A】**（r.t. 450,000）\n\n(a)(ii)　The total weight of the cargos handled in $n$ years\n\n$$=\\sum_{i=1}^{n}A(i)$$　**【1M】**（for summing up $A(i)$）\n\n$$=ab^2\\frac{b^{2n}-1}{b^2-1}$$　**【1M】**（for $\\displaystyle\\sum_{i=1}^{n}kr^i=\\frac{kr(r^n-1)}{r-1}$）\n\n$$=\\frac{(210,000)(1.21)(1.21^n-1)}{1.21-1}$$\n\n$$=1,210,000(1.21^n-1)\\text{ tonnes}$$　**【1A】**\n\n(b)(i)　$$\\frac{A(n)}{B(m)}=\\frac{ab^{2n}}{2ab^m}$$　**【1M】**（for considering the ratio $\\dfrac{A(n)}{B(m)}$）\n\n$$=\\frac{b^{2n}}{2b^{n-4}}$$　**【1A】**（for changing $m$ to $n-4$）\n\n$$=\\frac{1}{2}\\,1.1^{n+4}$$\n\n$$\\le 1$$\n\nfor $n\\le\\log_{1.1}2-4\\approx 3.27$\n\nThus, for the first 3 years, the weight of the cargos handled by $Y$ is larger than that by $X$.　**【1A】**（f.t.）\n\n(b)(ii)　The total weight of the cargos handled in $n$ years by $X$ and $Y$\n\n$$=\\sum_{i=1}^{n}ab^{2i}+\\sum_{i=1}^{n-4}2ab^i$$　**【1A】**（for correct upper limits）\n\n$$=1,210,000(1.21^n-1)+\\frac{2(210,000)(1.1)(1.1^{n-4}-1)}{1.1-1}$$\n\n$$=1,210,000(1.1^{2n})+\\frac{4,200,000}{1.331}(1.1^n)-5,830,000$$\n\nLet $x=1.1^n$, we have\n\n$$1,210,000x^2+\\frac{4,200,000}{1.331}x-5,830,000>20,000,000$$　**【1M】**（for setting up a quadratic equation）\n\n$$1,610,510x^2+4,200,000x-34,379,730>0$$\n\n$$x<-6.104700691\\ (\\text{rejected since }1.1^n>0)\\ \\text{ or }\\ x>3.496831134.$$　**【1A】**\n\nThus, we have\n\n$$1.1^n>3.496831134$$\n\n$$n>13.13455888$$\n\nThe new facility should be installed in the 13-th year.　**【1A】**\n\n**（13 分）**",
+   "html": "<p>(a)(i)　$$\\begin{cases} A(1)=ab^2=254100 \\ A(2)=ab^{2(2)}=307461 \\end{cases}$$</p>\n<p>Solving, we have $b=1.1$ and $a=210000$.　<strong>【1A+1A】</strong></p>\n<p>$$A(4)=ab^{2(4)}$$</p>\n<p>$$=(210000)(1.21^4)$$</p>\n<p>$$=450,153.6501$$</p>\n<p>Thus, the weight of the cargos handled in the 4-th year is 450,153.6501 tonnes.　<strong>【1A】</strong>（r.t. 450,000）</p>\n<p>(a)(ii)　The total weight of the cargos handled in $n$ years</p>\n<p>$$=\\sum_{i=1}^{n}A(i)$$　<strong>【1M】</strong>（for summing up $A(i)$）</p>\n<p>$$=ab^2\\frac{b^{2n}-1}{b^2-1}$$　<strong>【1M】</strong>（for $\\displaystyle\\sum_{i=1}^{n}kr^i=\\frac{kr(r^n-1)}{r-1}$）</p>\n<p>$$=\\frac{(210,000)(1.21)(1.21^n-1)}{1.21-1}$$</p>\n<p>$$=1,210,000(1.21^n-1)\\text{ tonnes}$$　<strong>【1A】</strong></p>\n<p>(b)(i)　$$\\frac{A(n)}{B(m)}=\\frac{ab^{2n}}{2ab^m}$$　<strong>【1M】</strong>（for considering the ratio $\\dfrac{A(n)}{B(m)}$）</p>\n<p>$$=\\frac{b^{2n}}{2b^{n-4}}$$　<strong>【1A】</strong>（for changing $m$ to $n-4$）</p>\n<p>$$=\\frac{1}{2}\\,1.1^{n+4}$$</p>\n<p>$$\\le 1$$</p>\n<p>for $n\\le\\log_{1.1}2-4\\approx 3.27$</p>\n<p>Thus, for the first 3 years, the weight of the cargos handled by $Y$ is larger than that by $X$.　<strong>【1A】</strong>（f.t.）</p>\n<p>(b)(ii)　The total weight of the cargos handled in $n$ years by $X$ and $Y$</p>\n<p>$$=\\sum_{i=1}^{n}ab^{2i}+\\sum_{i=1}^{n-4}2ab^i$$　<strong>【1A】</strong>（for correct upper limits）</p>\n<p>$$=1,210,000(1.21^n-1)+\\frac{2(210,000)(1.1)(1.1^{n-4}-1)}{1.1-1}$$</p>\n<p>$$=1,210,000(1.1^{2n})+\\frac{4,200,000}{1.331}(1.1^n)-5,830,000$$</p>\n<p>Let $x=1.1^n$, we have</p>\n<p>$$1,210,000x^2+\\frac{4,200,000}{1.331}x-5,830,000&gt;20,000,000$$　<strong>【1M】</strong>（for setting up a quadratic equation）</p>\n<p>$$1,610,510x^2+4,200,000x-34,379,730&gt;0$$</p>\n<p>$$x&lt;-6.104700691\\ (\\text{rejected since }1.1^n&gt;0)\\ \\text{ or }\\ x&gt;3.496831134.$$　<strong>【1A】</strong></p>\n<p>Thus, we have</p>\n<p>$$1.1^n&gt;3.496831134$$</p>\n<p>$$n&gt;13.13455888$$</p>\n<p>The new facility should be installed in the 13-th year.　<strong>【1A】</strong></p>\n<p><strong>（13 分）</strong></p>",
+   "file": "2012_P1_解答.md"
   },
   {
    "subject": "數學",

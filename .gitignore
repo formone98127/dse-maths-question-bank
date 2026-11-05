@@ -13,6 +13,9 @@ dse真题数学/
 2023/
 2024/
 *.pdf
+# 例外：題庫／Hub「下載全卷」用嘅直連檔（已精簡命名，非原卷目錄）
+!docs/papers/
+!docs/papers/*.pdf
 2012_P1_figs/
 2013P1_figs/
 *_pages/

@@ -459,7 +459,7 @@ footer {
   align-items: center;
   gap: 8px;
   height: 38px;
-  padding: 0 15px 0 8px;
+  padding: 0 16px;
   border-radius: 999px;
   border: 1px solid rgba(147, 197, 253, 0.38);
   background: linear-gradient(135deg, rgba(61, 139, 253, 0.24), rgba(52, 211, 153, 0.16));
@@ -481,14 +481,6 @@ footer {
 .install-btn:active { transform: translateY(0); }
 .install-btn:focus-visible { outline: 2px solid #93c5fd; outline-offset: 2px; }
 .install-btn[data-state="installed"] { opacity: 0.72; }
-.install-ico {
-  width: 22px;
-  height: 22px;
-  border-radius: 6px;
-  display: block;
-  flex: 0 0 auto;
-}
-
 .install-tip {
   display: flex;
   align-items: flex-start;
@@ -528,5 +520,4 @@ footer {
 }
 @media (max-width: 420px) {
   .install-btn { height: 34px; padding: 0 12px 0 7px; font-size: 12.5px; }
-  .install-ico { width: 20px; height: 20px; }
 }

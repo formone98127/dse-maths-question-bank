@@ -59,9 +59,11 @@ body {
   letter-spacing: 0.01em;
   line-height: 1.15;
   font-stretch: normal;
+  /* 鎖定上次漸變：白 → 天藍 #93c5fd → 綠 #34d399；hero 藍／紫光暈唔改 */
   background: linear-gradient(105deg, #fff 10%, #93c5fd 55%, #34d399 100%);
   -webkit-background-clip: text;
   background-clip: text;
+  -webkit-text-fill-color: transparent;
   color: transparent;
   margin-bottom: 10px;
 }

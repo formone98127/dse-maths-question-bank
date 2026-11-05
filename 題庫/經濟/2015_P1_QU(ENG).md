@@ -3,7 +3,7 @@
 > 來源：2015-DSE-ECON PAPER 1（dsepaper_hk\經濟\2015\…Past Paper Paper 1.pdf；英文卷，唔用卷一.pdf）　｜　多項選擇題 45 題，每題等分　｜　一小時完卷（8:30 am – 9:30 am）
 > 說明：已移除頁碼、試卷標頭、網站水印等雜訊；公式重排為 LaTeX。**本檔為題目庫（零答案）**，只含題目清洗 + 建議標籤。
 > 含圖題目已嵌入**電子重繪向量圖**（存於 `2015_P1_images/`，由重繪腳本生成，可改參數重出）。原卷頁面影像在 `_work_econ_ocr\2015_P1_ENG_pages_300\`（對照用，不上網）。
-> **圖進度（誠實）**：6 張之中 **4/6 已過 §9.4＋抗鋸齒容差並嵌圖**（Q22／Q27／Q28／Q37）。**Q15／Q19 待重繪**（maxdev／p99.9 超 AA：Q15 5.83／4.48，Q19 4.12／2.86；已撤 embed）。Q45 原卷無圖。明細見 `2015_P1_fig_audit.md`。
+> **圖進度（誠實）**：6 張之中 **5/6 已過 §9.4＋抗鋸齒容差並嵌圖**（Q15／Q22／Q27／Q28／Q37）。**Q19 待重繪**（maxdev／p99.9 超 AA：4.12／2.86；已撤 embed）。Q45 原卷無圖。明細見 `2015_P1_fig_audit.md`。
 
 ---
 
@@ -323,6 +323,7 @@ Holding other factors constant, a rise in the price of Good X will lead to a fal
 
 SS is the supply curve for smartphones. Which of the following reasons can best explain the change of the equilibrium position in the smartphone market from A to B?
 
+![fig_2015P1_q15](2015_P1_images/fig_2015P1_q15.png)
 
 - A. The retailers offer more free gifts for buying smartphones.
 - B. The size of a tablet computer with a phone function is reduced.

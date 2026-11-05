@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-11-04T23:35:01.613011</dc:date>
+    <dc:date>2026-11-05T14:56:45.733714</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -257,13 +257,17 @@ L 432.098666 115.527515
 L 437.089154 112.651298 
 L 442.079642 109.77508 
 L 447.070131 106.898862 
-L 452.10556 104.100621 
-L 457.096048 101.224403 
-L 462.131477 98.426162 
-L 467.032083 95.393992 
-L 478.0467 91.435013 
-L 481.174582 90.359433 
-L 480.096 88.488 
+L 447.12 106.92 
+L 449.28 105.48 
+L 451.44 104.4 
+L 453.6 102.96 
+L 455.76 101.88 
+L 457.92 100.44 
+L 460.08 100.08 
+L 462.24 98.28 
+L 464.4 97.2 
+L 466.56 95.76 
+L 468 94.896 
 " clip-path="url(#p2b051910e4)" style="fill: none; stroke: #000000; stroke-width: 2.16"/>
    </g>
    <g id="line2d_4">
@@ -294,25 +298,25 @@ z
     </g>
    </g>
    <g id="text_1">
-    <text style="font-size: 31.521739px; font-family: 'Times New Roman'; text-anchor: start" x="11.16" y="36" transform="rotate(-0 11.16 36)">Price ($)</text>
+    <text style="font-size: 31.521739px; font-family: 'Times New Roman'; text-anchor: start" x="14.4" y="36.72" transform="rotate(-0 14.4 36.72)">Price ($)</text>
    </g>
    <g id="text_2">
-    <text style="font-size: 31.521739px; font-family: 'Times New Roman'; text-anchor: start" x="472.32" y="111.6" transform="rotate(-0 472.32 111.6)">S</text>
+    <text style="font-size: 31.521739px; font-family: 'Times New Roman'; text-anchor: start" x="475.92" y="110.88" transform="rotate(-0 475.92 110.88)">S</text>
    </g>
    <g id="text_3">
-    <text style="font-size: 31.521739px; font-family: 'Times New Roman'; text-anchor: start" x="330.84" y="156.24" transform="rotate(-0 330.84 156.24)">B</text>
+    <text style="font-size: 31.521739px; font-family: 'Times New Roman'; text-anchor: start" x="332.64" y="156.24" transform="rotate(-0 332.64 156.24)">B</text>
    </g>
    <g id="text_4">
-    <text style="font-size: 31.521739px; font-family: 'Times New Roman'; text-anchor: start" x="227.88" y="207.72" transform="rotate(-0 227.88 207.72)">A</text>
+    <text style="font-size: 31.521739px; font-family: 'Times New Roman'; text-anchor: start" x="229.68" y="207.36" transform="rotate(-0 229.68 207.36)">A</text>
    </g>
    <g id="text_5">
-    <text style="font-size: 31.521739px; font-family: 'Times New Roman'; text-anchor: start" x="133.92" y="274.32" transform="rotate(-0 133.92 274.32)">S</text>
+    <text style="font-size: 31.521739px; font-family: 'Times New Roman'; text-anchor: start" x="136.8" y="274.32" transform="rotate(-0 136.8 274.32)">S</text>
    </g>
    <g id="text_6">
-    <text style="font-size: 31.521739px; font-family: 'Times New Roman'; text-anchor: start" x="648.36" y="321.84" transform="rotate(-0 648.36 321.84)">Quantity</text>
+    <text style="font-size: 31.521739px; font-family: 'Times New Roman'; text-anchor: start" x="651.6" y="321.84" transform="rotate(-0 651.6 321.84)">Quantity</text>
    </g>
    <g id="text_7">
-    <text style="font-size: 31.521739px; font-family: 'Times New Roman'; text-anchor: start" x="46.44" y="333.36" transform="rotate(-0 46.44 333.36)">0</text>
+    <text style="font-size: 31.521739px; font-family: 'Times New Roman'; text-anchor: start" x="48.24" y="333.36" transform="rotate(-0 48.24 333.36)">0</text>
    </g>
   </g>
  </g>

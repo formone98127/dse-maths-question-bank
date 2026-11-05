@@ -1,5 +1,5 @@
 window.QB = {
- "generated": "2026-11-05 14:47",
+ "generated": "2026-11-05 14:57",
  "count": 327,
  "questions": [
   {
@@ -3312,8 +3312,8 @@ window.QB = {
     "供求均衡",
     "沿曲線移動"
    ],
-   "text": "SS is the supply curve for smartphones. Which of the following reasons can best explain the change of the equilibrium position in the smartphone market from A to B?\n\n\n- A. The retailers offer more free gifts for buying smartphones.\n- B. The size of a tablet computer with a phone function is reduced.\n- C. There are more smartphone producers in the market.\n- D. The major network service providers increase the service charge at the same time.",
-   "html": "<p>SS is the supply curve for smartphones. Which of the following reasons can best explain the change of the equilibrium position in the smartphone market from A to B?</p>\n<ul>\n<li>A. The retailers offer more free gifts for buying smartphones.</li>\n<li>B. The size of a tablet computer with a phone function is reduced.</li>\n<li>C. There are more smartphone producers in the market.</li>\n<li>D. The major network service providers increase the service charge at the same time.</li>\n</ul>",
+   "text": "SS is the supply curve for smartphones. Which of the following reasons can best explain the change of the equilibrium position in the smartphone market from A to B?\n\n![fig_2015P1_q15](2015_P1_images/fig_2015P1_q15.png)\n\n- A. The retailers offer more free gifts for buying smartphones.\n- B. The size of a tablet computer with a phone function is reduced.\n- C. There are more smartphone producers in the market.\n- D. The major network service providers increase the service charge at the same time.",
+   "html": "<p>SS is the supply curve for smartphones. Which of the following reasons can best explain the change of the equilibrium position in the smartphone market from A to B?</p>\n<p><img alt=\"fig_2015P1_q15\" src=\"2015_P1_images/fig_2015P1_q15.png\" /></p>\n<ul>\n<li>A. The retailers offer more free gifts for buying smartphones.</li>\n<li>B. The size of a tablet computer with a phone function is reduced.</li>\n<li>C. There are more smartphone producers in the market.</li>\n<li>D. The major network service providers increase the service charge at the same time.</li>\n</ul>",
    "file": "2015_P1_QU(ENG).md"
   },
   {

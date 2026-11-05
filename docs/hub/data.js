@@ -19,6 +19,14 @@ const CATALOG = [
   { id: "econ", name: "經濟", year: 2015, paper: "卷一", lang: "英文", hash: "#econ2015P1Q1" },
   { id: "econ", name: "經濟", year: 2017, paper: "卷一", lang: "英文", hash: "#econ2017P1Q1" },
   { id: "econ", name: "經濟", year: 2020, paper: "卷一", lang: "英文", hash: "#econ2020P1Q1" },
+  /* 化學／生物／物理（第 2 層中文；先上線後校對） */
+  { id: "chem", name: "化學", year: 2024, paper: "卷一甲", lang: "中文", hash: "#chem2024P1AQ1" },
+  { id: "chem", name: "化學", year: 2024, paper: "卷一乙", lang: "中文", hash: "#chem2024P1BQ1" },
+  { id: "chem", name: "化學", year: 2024, paper: "卷二", lang: "中文", hash: "#chem2024P2Q1" },
+  { id: "bio", name: "生物", year: 2023, paper: "卷一", lang: "中文", hash: "#bio2023P1Q1" },
+  { id: "bio", name: "生物", year: 2023, paper: "卷二", lang: "中文", hash: "#bio2023P2Q1" },
+  { id: "phys", name: "物理", year: 2024, paper: "卷一", lang: "中文", hash: "#phys2024P1Q1" },
+  { id: "phys", name: "物理", year: 2024, paper: "卷二", lang: "中文", hash: "#phys2024P2Q11" },
 ];
 
 /* 按課題：只為資料庫有嘅科目提供（葉節點對齊電子題庫 tags） */

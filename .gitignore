@@ -31,10 +31,11 @@ _z_*.png
 
 # 原卷庫／OCR 工作檔（唔上公開 repo）
 dsepaper_hk/
-_work_econ_ocr/
-_work_2012_p1_ans/
+_work_*/
+**/_work_*/
 題庫/經濟/_src/
 題庫/經濟/_rejected_unmeasured_figs_2020/
+# 第 2 層題目 MD＋crops 可上線；README 工作說明可上，勿 commit 掃描頁
 
 # 水印 idempotency 標記（非交付品）
 *.dsehubwm

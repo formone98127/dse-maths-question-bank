@@ -183,7 +183,12 @@ footer { text-align:center; color:var(--mut); font-size:11.5px; padding:4px 0 12
 const QS = window.QB.questions;
 const $ = s => document.querySelector(s);
 const esc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;');
-const pno = p => p.match(/(\d+)/)[1];
+const pno = p => {
+  const m = String(p || '').match(/(\d+[A-Za-z]?)/);
+  return m ? m[1].toUpperCase() : '1';
+};
+const SUBJECT_PREFIX = { '數學': '', '經濟': 'econ', '化學': 'chem', '生物': 'bio', '物理': 'phys' };
+const PREFIX_SUBJECT = { econ: '經濟', chem: '化學', bio: '生物', phys: '物理' };
 
 /* 全卷 PDF → 本站直連檔（撳掣即下載，唔跳 dsepaper.hk 頁） */
 const PDF_LINKS = {
@@ -198,9 +203,14 @@ const PDF_LINKS = {
   "econ|2020|卷一": "papers/econ-2020-p1.pdf",
 };
 function paperKey(subject, year, paper) {
-  const id = subject === '經濟' ? 'econ' : 'math';
-  const zh = String(paper).includes('2') ? '卷二' : '卷一';
-  return `${id}|${year}|${zh}`;
+  const id = SUBJECT_PREFIX[subject] || (subject === '經濟' ? 'econ' : 'math');
+  const sid = id || 'math';
+  const p = String(paper || '');
+  let zh = '卷一';
+  if (/1A|甲/i.test(p)) zh = '卷一甲';
+  else if (/1B|乙/i.test(p) && !/2/.test(p)) zh = '卷一乙';
+  else if (/2/.test(p)) zh = '卷二';
+  return `${sid}|${year}|${zh}`;
 }
 function syncPdfTop(q) {
   const url = q ? (PDF_LINKS[paperKey(q.subject, q.year, q.paper)] || null) : null;
@@ -245,7 +255,8 @@ function findQuestion(q) {
 }
 function hashFor(q, withSol) {
   if (!q) return '';
-  const base = `${q.subject==='經濟'?'econ':''}${q.year}P${pno(q.paper)}Q${q.qno}`;
+  const pref = SUBJECT_PREFIX[q.subject] ?? (q.subject === '經濟' ? 'econ' : '');
+  const base = `${pref}${q.year}P${pno(q.paper)}Q${q.qno}`;
   return withSol ? `${base}A` : base;
 }
 /* 題目底下嵌入對應題解；撳掣展開／收起（唔跳去另一頁） */
@@ -520,18 +531,22 @@ document.addEventListener('keydown', e => {
 });
 
 function openFromHash() {
-  const m = location.hash.match(/^#(econ)?(\d{4})P(\d)Q(\d+)(A)?/i);
+  const m = location.hash.match(/^#(econ|chem|bio|phys)?(\d{4})P(\d+[A-Za-z]?)Q(\d+)(A)?/i);
   if (!m) return false;
-  const hSubj = m[1] ? '經濟' : '數學';
+  const hSubj = m[1] ? (PREFIX_SUBJECT[m[1].toLowerCase()] || '數學') : '數學';
   const wantSol = !!m[5];
   const panel = $('#solPanel');
-  if (curQ && curQ.subject === hSubj && curQ.year == m[2] && pno(curQ.paper) == m[3] && curQ.qno == m[4]) {
+  const pToken = String(m[3]).toUpperCase();
+  if (curQ && curQ.subject === hSubj && curQ.year == m[2] && pno(curQ.paper) == pToken && curQ.qno == m[4]) {
     const expanded = panel && panel.dataset.expanded === 'true';
     if (wantSol === expanded || (wantSol && curQ.type === '解答')) return true;
   }
   subj = hSubj;
   const y = +m[2];
-  const p = m[3] === '2' ? 'Paper 2' : 'Paper 1';
+  const p = pToken === '2' ? 'Paper 2'
+    : pToken === '1A' ? 'Paper 1A'
+    : pToken === '1B' ? 'Paper 1B'
+    : 'Paper 1';
   const n = +m[4];
   /* 課題深連結：保留 tag，上一題下一題喺同課題集中溫習 */
   if (wantTag) {

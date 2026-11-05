@@ -50,35 +50,79 @@ SOURCES = [
     ("題庫/經濟/2015_P1_QU(ENG).md", 2015, "Paper 1", "題目", "經濟"),
     ("題庫/經濟/2017_P1_QU(ENG).md", 2017, "Paper 1", "題目", "經濟"),
     ("題庫/經濟/2020_P1_QU(ENG).md", 2020, "Paper 1", "題目", "經濟"),
+    # 理科第 2 層（原卷截圖；先 push 後校對）
+    ("化學/2024_P1A_QU(CHI).md", 2024, "Paper 1A", "題目", "化學"),
+    ("化學/2024_P1B_QU(CHI).md", 2024, "Paper 1B", "題目", "化學"),
+    ("化學/2024_P2_QU(CHI).md",  2024, "Paper 2",  "題目", "化學"),
+    ("生物/2023_P1_QU(CHI).md",  2023, "Paper 1",  "題目", "生物"),
+    ("生物/2023_P2_QU(CHI).md",  2023, "Paper 2",  "題目", "生物"),
+    ("物理/2024_P1_QU(CHI).md",  2024, "Paper 1",  "題目", "物理"),
+    ("物理/2024_P2_QU(CHI).md",  2024, "Paper 2",  "題目", "物理"),
 ]
 
-SUBJ_ORDER = ["數學", "經濟"]
+SUBJ_ORDER = ["數學", "經濟", "化學", "生物", "物理"]
+
+# 第 2 層截圖：src 相對 repo → docs 內唯一名（避免化學／物理同名 2024_P2_crops 互蓋）
+SCIENCE_CROP_MAP = [
+    ("化學/2024_P1A_crops", "chem_2024_P1A_crops"),
+    ("化學/2024_P1B_crops", "chem_2024_P1B_crops"),
+    ("化學/2024_P2_crops", "chem_2024_P2_crops"),
+    ("生物/2023_P1_crops", "bio_2023_P1_crops"),
+    ("生物/2023_P2_crops", "bio_2023_P2_crops"),
+    ("物理/2024_P1_crops", "phys_2024_P1_crops"),
+    ("物理/2024_P2_crops", "phys_2024_P2_crops"),
+]
 
 
-def fix_img_paths(text: str) -> str:
-    """圖徑保持 docs 內相對（build 時 figs_svg 會複製入 docs/）"""
+def fix_img_paths(text: str, subject: str = "數學") -> str:
+    """圖徑改成 docs 內唯一資料夾名（Pages 只發布 docs/）"""
+    if subject == "化學":
+        text = text.replace("2024_P1A_crops/", "chem_2024_P1A_crops/")
+        text = text.replace("2024_P1B_crops/", "chem_2024_P1B_crops/")
+        text = text.replace("2024_P2_crops/", "chem_2024_P2_crops/")
+    elif subject == "生物":
+        text = text.replace("2023_P1_crops/", "bio_2023_P1_crops/")
+        text = text.replace("2023_P2_crops/", "bio_2023_P2_crops/")
+    elif subject == "物理":
+        text = text.replace("2024_P1_crops/", "phys_2024_P1_crops/")
+        text = text.replace("2024_P2_crops/", "phys_2024_P2_crops/")
     return text
 
 
+def encode_qno(token: str) -> int:
+    """支援「1.1」同「1」（結構式）→ 唯一整數（11／19）"""
+    if "." in token:
+        a, b = token.split(".", 1)
+        return int(a) * 10 + int(b)
+    return int(token) * 10 + 9
+
+
 def parse_question_file(path: Path, year: int, paper: str, subject: str = "數學") -> list:
-    """題目庫格式：## 第 N 題 →【建議標籤】→ - 卷別/部分 / - 課題 →【題目內容】"""
+    """題目庫格式：## 第 N 題 →【建議標籤】→ - 卷別/部分 / - 課題 →【題目內容】
+    亦支援物理卷二「## 第 1.1 題」「## 第 1 題（結構式）」"""
     raw = strip_tail_matter(path.read_text(encoding="utf-8"))
-    blocks = re.split(r"\n## 第 (\d+) 題\n", raw)
+    blocks = re.split(r"\n## 第 (\d+(?:\.\d+)?) 題(?:（[^）\n]*）)?\n", raw)
     out = []
+    phys_p2 = subject == "物理" and paper == "Paper 2"
     for i in range(1, len(blocks) - 1, 2):
-        qno, body = int(blocks[i]), blocks[i + 1]
+        token, body = blocks[i], blocks[i + 1]
+        if phys_p2 or "." in token:
+            qno = encode_qno(token)
+            label = f"第 {token} 題" if "." in token else f"第 {token} 題（結構式）"
+        else:
+            qno = int(token)
+            label = f"第 {qno} 題"
         sec = re.search(r"卷別/部分：(.+)", body)
         tags_line = re.search(r"課題：(.+)", body)
         tags = re.findall(r"#([\w\-]+)", tags_line.group(1)) if tags_line else []
         sec_text = sec.group(1).strip() if sec else ""
-        # 標題含部分：「甲部(1) 第 5 題」「乙部 第 15 題」（Paper 2 不分部）
         part_m = re.search(r"(甲部\(\d\)|乙部)", sec_text)
-        title = f"{part_m.group(1)} 第 {qno} 題" if part_m else f"第 {qno} 題"
+        title = f"{part_m.group(1)} {label}" if part_m else label
         content = body.split("【題目內容】", 1)
         text = content[1].strip() if len(content) > 1 else ""
-        for _ in range(4):  # 卷尾：--- 分隔線同甲/乙部標題可能相間出現，循環剝清
+        for _ in range(4):
             new = re.sub(r"\n---\s*$", "", text).rstrip()
-            new = re.sub(r"\n?## (甲部|乙部)[^\n]*$", "", new).rstrip()
+            new = re.sub(r"\n?## (甲部|乙部|丙部|丁部|第一部分|第二部分)[^\n]*$", "", new).rstrip()
             if new == text:
                 break
             text = new
@@ -89,7 +133,7 @@ def parse_question_file(path: Path, year: int, paper: str, subject: str = "數�
             "section": sec.group(1).strip() if sec else "",
             "tags": tags,
             "text": text,
-            "html": md2html(fix_img_paths(text)),
+            "html": md2html(fix_img_paths(text, subject)),
             "file": path.name,
         })
     return out
@@ -112,7 +156,7 @@ def parse_solution_file(path: Path, year: int, paper: str, subject: str = "數�
                         else f"Paper 1　{'甲部(1)' if qno <= 9 else '甲部(2)' if qno <= 14 else '乙部'}"),
             "tags": [title],
             "text": text,
-            "html": md2html(fix_img_paths(text)),
+            "html": md2html(fix_img_paths(text, subject)),
             "file": path.name,
         })
     return out
@@ -149,6 +193,14 @@ def main():
         if src.is_dir():
             shutil.copytree(src, DOCS / src.name, dirs_exist_ok=True)
             print(f"copied {src.name} -> docs/{src.name}")
+
+    # 理科第 2 層 crops → docs 唯一名（MD 路徑喺 fix_img_paths 改寫）
+    for rel, dest_name in SCIENCE_CROP_MAP:
+        src = ROOT / rel
+        if src.is_dir():
+            shutil.copytree(src, DOCS / dest_name, dirs_exist_ok=True)
+            n = len(list(src.glob("*.png")))
+            print(f"copied {rel} ({n} png) -> docs/{dest_name}")
 
 
 if __name__ == "__main__":

@@ -55,13 +55,28 @@ function subjectsInDb() {
   return [...map.entries()].map(([id, name]) => ({ id, name }));
 }
 
+const SID_SUBJECT = {
+  math: "數學",
+  econ: "經濟",
+  chem: "化學",
+  bio: "生物",
+  phys: "物理",
+};
+const SUBJECT_PREFIX = {
+  數學: "",
+  經濟: "econ",
+  化學: "chem",
+  生物: "bio",
+  物理: "phys",
+};
+
 function sidToSubject(sid) {
-  return sid === "econ" ? "經濟" : "數學";
+  return SID_SUBJECT[sid] || "數學";
 }
 
 function paperNo(paper) {
-  const m = String(paper || "").match(/(\d)/);
-  return m ? m[1] : "1";
+  const m = String(paper || "").match(/(\d+[A-Za-z]?)/);
+  return m ? m[1].toUpperCase() : "1";
 }
 
 function bankQuestions(sid) {
@@ -93,7 +108,7 @@ function topicGroupOf(sid, tag) {
 }
 
 function hashForQuestion(q) {
-  const pref = q.subject === "經濟" ? "econ" : "";
+  const pref = SUBJECT_PREFIX[q.subject] ?? (q.subject === "經濟" ? "econ" : "");
   return `#${pref}${q.year}P${paperNo(q.paper)}Q${q.qno}`;
 }
 

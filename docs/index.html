@@ -284,7 +284,7 @@ function wireSolToggle(q) {
     toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
     const label = toggle.querySelector('.sol-toggle-label');
     if (label) label.textContent = open ? '收起題解' : '題解';
-    history.replaceState(null, '', '#' + hashFor(q, open));
+    history.replaceState(null, '', location.pathname + location.search + '#' + hashFor(q, open));
     if (!open) return;
     const go = () => scrollSolIntoView(panel);
     const MJ = window.MathJax;
@@ -305,6 +305,13 @@ const wantTag = params.get('tag') || '';
 const subjs = [...new Set(QS.map(q => q.subject))];
 
 /* 題目頁唔再揀科目／年份／題號；由 Hub／網址決定，用上一題下一題翻 */
+function qKey(q) {
+  /* 課題模式跨年卷：唔可以淨用 qno（唔同年都會撞） */
+  if (year == null || paper == null || tag) {
+    return `${q.year}|${q.paper}|${q.qno}`;
+  }
+  return String(q.qno);
+}
 function rebuildQlist() {
   const pool = QS.filter(q =>
     q.subject === subj &&
@@ -314,11 +321,16 @@ function rebuildQlist() {
   );
   const byQ = new Map();
   for (const q of pool) {
-    const prev = byQ.get(q.qno);
-    if (!prev) byQ.set(q.qno, q);
-    else if (prev.type === '解答' && q.type === '題目') byQ.set(q.qno, q);
+    const k = qKey(q);
+    const prev = byQ.get(k);
+    if (!prev) byQ.set(k, q);
+    else if (prev.type === '解答' && q.type === '題目') byQ.set(k, q);
   }
-  qlist = [...byQ.values()].sort((a, b) => a.qno - b.qno);
+  qlist = [...byQ.values()].sort((a, b) =>
+    (tag || year == null)
+      ? (a.year - b.year || String(a.paper).localeCompare(String(b.paper)) || a.qno - b.qno)
+      : (a.qno - b.qno)
+  );
 }
 /* 甲部(1) 第 7 題 → 甲(1)；乙部 第 15 題 → 乙；無分部就唔加 */
 function shortSection(title) {
@@ -401,7 +413,15 @@ function show(q, opts) {
   }
   curQ = q;
   qno = q.qno;
-  subj = q.subject; year = q.year; paper = q.paper;
+  subj = q.subject;
+  /* 課題模式：唔鎖死年份／卷別，上一題下一題喺同標籤題入面翻 */
+  if (tag) {
+    year = null;
+    paper = null;
+  } else {
+    year = q.year;
+    paper = q.paper;
+  }
   rebuildQlist();
   syncBarTitle(q);
   const tagsHtml = (q.tags && q.tags.length)
@@ -417,11 +437,11 @@ function show(q, opts) {
   if (solContent) enhanceMc(solContent);
   wireSolToggle(q);
   $('#qbody').scrollTop = 0;
-  const i = qlist.findIndex(x => x.qno === q.qno && x.type === q.type);
+  const i = qlist.findIndex(x => x.year === q.year && x.paper === q.paper && x.qno === q.qno && x.type === q.type);
   fillPosSelect(i);
   $('#prev').disabled = i <= 0;
   $('#next').disabled = i >= qlist.length - 1;
-  history.replaceState(null, '', '#' + hashFor(q, expandSol || q.type === '解答'));
+  history.replaceState(null, '', location.pathname + location.search + '#' + hashFor(q, expandSol || q.type === '解答'));
   syncPdfTop(q);
   const MJ = window.MathJax;
   const done = () => { if (expandSol) scrollSolIntoView($('#solPanel')); };
@@ -440,7 +460,9 @@ function fillPosSelect(idx) {
   const cur = (idx >= 0 && idx < n) ? idx : 0;
   sel.disabled = false;
   sel.innerHTML = qlist.map((q, i) => {
-    const label = `${i + 1} / ${n}　第 ${q.qno} 題`;
+    const label = tag
+      ? `${i + 1} / ${n}　${q.year} P${pno(q.paper)} Q${q.qno}`
+      : `${i + 1} / ${n}　第 ${q.qno} 題`;
     return `<option value="${i}"${i === cur ? ' selected' : ''}>${esc(label)}</option>`;
   }).join('');
 }
@@ -450,7 +472,7 @@ function typesetQ() {
 }
 const step = d => {
   if (!curQ) return;
-  const i = qlist.findIndex(x => x.qno === curQ.qno && x.type === curQ.type);
+  const i = qlist.findIndex(x => x.year === curQ.year && x.paper === curQ.paper && x.qno === curQ.qno && x.type === curQ.type);
   const j = i + d;
   if (j >= 0 && j < qlist.length) show(qlist[j]);
 };
@@ -497,16 +519,24 @@ function openFromHash() {
     if (wantSol === expanded || (wantSol && curQ.type === '解答')) return true;
   }
   subj = hSubj;
-  year = +m[2];
-  paper = m[3] === '2' ? 'Paper 2' : 'Paper 1';
-  /* 有明確題號時唔用課題篩，避免上一題下一題被卡住 */
-  if (!wantTag) tag = '';
-  rebuildQlist();
+  const y = +m[2];
+  const p = m[3] === '2' ? 'Paper 2' : 'Paper 1';
   const n = +m[4];
-  const qu = QS.find(x => x.subject===subj && x.year==year && x.paper===paper && x.qno==n && x.type==='題目');
-  const sol = QS.find(x => x.subject===subj && x.year==year && x.paper===paper && x.qno==n && x.type==='解答');
-  const q = qu || sol || qlist.find(x => x.qno==n) ||
-            QS.find(x => x.subject===subj && x.year==year && x.paper===paper && x.qno==n);
+  /* 課題深連結：保留 tag，上一題下一題喺同課題集中溫習 */
+  if (wantTag) {
+    tag = wantTag;
+    year = null;
+    paper = null;
+  } else {
+    tag = '';
+    year = y;
+    paper = p;
+  }
+  rebuildQlist();
+  const qu = QS.find(x => x.subject===subj && x.year==y && x.paper===p && x.qno==n && x.type==='題目');
+  const sol = QS.find(x => x.subject===subj && x.year==y && x.paper===p && x.qno==n && x.type==='解答');
+  const q = qu || sol || qlist.find(x => x.year==y && x.paper===p && x.qno==n) ||
+            QS.find(x => x.subject===subj && x.year==y && x.paper===p && x.qno==n);
   if (q) show(q, { expandSol: wantSol });
   return !!q;
 }
@@ -523,11 +553,8 @@ if (!location.hash) {
     if (tag) {
       const hit = QS.find(q => q.subject===subj && (q.tags||[]).includes(tag) && q.type==='題目')
                || QS.find(q => q.subject===subj && (q.tags||[]).includes(tag));
-      if (hit) {
-        year = hit.year; paper = hit.paper;
-        rebuildQlist();
-        show(hit);
-      } else show(qlist[0] || null);
+      if (hit) show(hit);
+      else show(qlist[0] || null);
     } else {
       const first = QS.find(q => q.subject===subj && q.type==='題目') || QS.find(q => q.subject===subj);
       if (first) {

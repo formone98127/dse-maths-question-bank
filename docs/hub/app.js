@@ -1,8 +1,10 @@
-/* ===== DSE Hub — 滾輪篩選；只顯示資料庫有嘅卷 ===== */
+/* ===== DSE Hub — 滾輪篩選；按年份列卷／按課題列同標籤題目 ===== */
 "use strict";
 
 const PLACE = "";       // 請選擇
 const ALL = "__ALL__";  // 所有
+
+const ICON_VIEW = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5c-7 0-10 7-10 7s3 7 10 7 10-7 10-7-3-7-10-7zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0-6.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z"/></svg>`;
 
 const state = {
   mode: "year",
@@ -53,6 +55,61 @@ function subjectsInDb() {
   return [...map.entries()].map(([id, name]) => ({ id, name }));
 }
 
+function sidToSubject(sid) {
+  return sid === "econ" ? "經濟" : "數學";
+}
+
+function paperNo(paper) {
+  const m = String(paper || "").match(/(\d)/);
+  return m ? m[1] : "1";
+}
+
+function bankQuestions(sid) {
+  const subj = sidToSubject(sid);
+  const qs = (window.QB && Array.isArray(window.QB.questions)) ? window.QB.questions : [];
+  return qs.filter((q) => q.subject === subj && q.type === "題目");
+}
+
+/* 課題選項：用題庫真實 tags（有題先出現），按題數多至少 */
+function realTagsFor(sid) {
+  const counts = new Map();
+  for (const q of bankQuestions(sid)) {
+    for (const t of q.tags || []) {
+      counts.set(t, (counts.get(t) || 0) + 1);
+    }
+  }
+  return [...counts.entries()]
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "zh-Hant"))
+    .map(([tag, n]) => ({ tag, n }));
+}
+
+function topicGroupOf(sid, tag) {
+  const map = TOPICS[sid];
+  if (!map) return "其他";
+  for (const [g, ts] of Object.entries(map)) {
+    if (ts.includes(tag)) return g;
+  }
+  return "其他";
+}
+
+function hashForQuestion(q) {
+  const pref = q.subject === "經濟" ? "econ" : "";
+  return `#${pref}${q.year}P${paperNo(q.paper)}Q${q.qno}`;
+}
+
+function questionHref(q, topic) {
+  const params = new URLSearchParams();
+  params.set("subject", q.subject);
+  if (topic && topic !== ALL && topic !== PLACE) params.set("tag", topic);
+  return `${BANK_URL}?${params.toString()}${hashForQuestion(q)}`;
+}
+
+function questionsForTopic(sid, topic) {
+  const rows = bankQuestions(sid);
+  if (topic === ALL) return rows;
+  return rows.filter((q) => (q.tags || []).includes(topic));
+}
+
 function optionsFor(key) {
   const rows = CATALOG.filter((r) => {
     if (key !== "subject" && state.subject !== PLACE && state.subject !== ALL && r.id !== state.subject) return false;
@@ -76,11 +133,15 @@ function optionsFor(key) {
     return head.concat(uniq(rows.map((r) => r.paper)).map((p) => ({ value: p, label: p })));
   }
   if (key === "topic") {
-    const sid = state.subject === PLACE || state.subject === ALL ? "math" : state.subject;
-    const topics = TOPICS[sid];
-    if (!topics) return [{ value: PLACE, label: "請選擇" }];
-    const flat = Object.entries(topics).flatMap(([g, ts]) => ts.map((t) => ({ value: t, label: t, group: g })));
-    return head.concat(flat);
+    const sid = state.subject === PLACE || state.subject === ALL ? null : state.subject;
+    if (!sid) return [{ value: PLACE, label: "請選擇" }];
+    const tags = realTagsFor(sid);
+    if (!tags.length) return [{ value: PLACE, label: "請選擇" }];
+    return head.concat(tags.map(({ tag, n }) => ({
+      value: tag,
+      label: `${tag}（${n}）`,
+      group: topicGroupOf(sid, tag),
+    })));
   }
   return head;
 }
@@ -91,6 +152,10 @@ function displayLabel(key, value) {
   if (key === "subject") {
     const s = subjectsInDb().find((x) => x.id === value);
     return s ? s.name : value;
+  }
+  if (key === "topic" && state.subject !== PLACE && state.subject !== ALL) {
+    const hit = realTagsFor(state.subject).find((x) => x.tag === value);
+    return hit ? `${hit.tag}（${hit.n}）` : String(value);
   }
   return String(value);
 }
@@ -106,16 +171,12 @@ function syncButtons() {
   });
 }
 
-/* 主頁結果列：整列連去檢視頁；下載圖示只留題目頁頂欄 */
 function viewHrefFor(r) {
   return BANK_URL + r.hash;
 }
 
-function topicBankHref(sid, topic) {
-  const q = new URLSearchParams();
-  q.set("subject", sid === "econ" ? "經濟" : "數學");
-  if (topic && topic !== ALL && topic !== PLACE) q.set("tag", topic);
-  return `${BANK_URL}?${q.toString()}`;
+function viewIconHtml(href) {
+  return `<a class="icon-btn view" href="${href}" target="_blank" rel="noopener" title="檢視" aria-label="檢視">${ICON_VIEW}</a>`;
 }
 
 function rowHtml(r) {
@@ -135,7 +196,39 @@ function rowHtml(r) {
           <div class="paper-sub">${r.name}</div>
         </div>
       </a>
+      <div class="paper-actions">${viewIconHtml(href)}</div>
     </article>`;
+}
+
+function questionRowHtml(q, topic) {
+  const href = questionHref(q, topic);
+  const pLabel = `Paper ${paperNo(q.paper)}`;
+  const tags = (q.tags || []).slice(0, 3).map((t) => `<span class="tag cat">${esc(t)}</span>`).join("");
+  return `
+    <article class="paper-row">
+      <a class="paper-main" href="${href}" target="_blank" rel="noopener" title="直接檢視題目">
+        <div class="paper-year">${q.year}</div>
+        <div class="paper-body">
+          <div class="paper-tags">
+            <span class="tag subj">${esc(q.subject)}</span>
+            <span class="tag lang">${esc(pLabel)}</span>
+            <span class="tag live">Q${q.qno}</span>
+            ${tags}
+          </div>
+          <div class="paper-title">${esc(q.subject)} ${q.year} ${esc(pLabel)} Q${q.qno}</div>
+          <div class="paper-sub">${esc(q.title || "")}</div>
+        </div>
+      </a>
+      <div class="paper-actions">${viewIconHtml(href)}</div>
+    </article>`;
+}
+
+function esc(s) {
+  return String(s)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
 }
 
 function emptyHtml(msg) {
@@ -155,12 +248,20 @@ function sortRows(rows) {
   );
 }
 
+function sortQuestions(rows) {
+  return rows.sort(
+    (a, b) =>
+      b.year - a.year ||
+      paperNo(a.paper).localeCompare(paperNo(b.paper)) ||
+      a.qno - b.qno
+  );
+}
+
 function renderYear() {
   fPaper.style.display = "";
   l2.textContent = "年份";
   btns.year.dataset.key = "year";
 
-  // 請選擇／所有 都當「唔篩」→ 一打開即列出資料庫已有卷
   const rows = sortRows(filteredCatalog());
   if (!rows.length) {
     resultEl.innerHTML = emptyHtml("呢組條件喺資料庫搵唔到卷。試下改「所有」或者放寬條件。");
@@ -176,38 +277,29 @@ function renderTopic() {
   btns.year.dataset.key = "topic";
 
   const sid = state.subject === PLACE || state.subject === ALL ? null : state.subject;
-  const topicMap = sid ? TOPICS[sid] : null;
 
   if (!sid) {
     resultEl.innerHTML = emptyHtml("按課題：請先用滾輪揀一個資料庫已有嘅科目。");
     return;
   }
-  if (!topicMap) {
-    resultEl.innerHTML = emptyHtml("呢科暫時未有課題表（資料庫有卷，但課題索引未編）。");
+  if (!bankQuestions(sid).length) {
+    resultEl.innerHTML = emptyHtml("呢科暫時未載入題目資料。");
     return;
   }
   if (state.topic === PLACE) {
-    resultEl.innerHTML = emptyHtml("請揀課題，或揀「所有」睇呢科概覽。");
+    resultEl.innerHTML = emptyHtml("請揀課題，或揀「所有」列出呢科全部題目。");
     return;
   }
 
-  const sn = shortName(subjectsInDb().find((s) => s.id === sid)?.name || sid);
+  const rows = sortQuestions(questionsForTopic(sid, state.topic));
+  if (!rows.length) {
+    resultEl.innerHTML = emptyHtml("呢個課題暫時冇對應題目。");
+    return;
+  }
+
   const topicLabel = state.topic === ALL ? "全部課題" : state.topic;
-  const href = topicBankHref(sid, state.topic);
-  resultEl.innerHTML = `
-    <article class="paper-row">
-      <a class="paper-main" href="${href}" target="_blank" rel="noopener" title="直接檢視題目">
-        <div class="paper-year">#</div>
-        <div class="paper-body">
-          <div class="paper-tags">
-            <span class="tag subj">${sn}</span>
-            <span class="tag cat">${topicLabel}</span>
-          </div>
-          <div class="paper-title">${sn} · ${topicLabel}</div>
-          <div class="paper-sub">${state.topic !== ALL && state.topic !== PLACE ? `篩「${topicLabel}」` : "課題概覽"}</div>
-        </div>
-      </a>
-    </article>`;
+  const count = `<p class="list-count">共 ${rows.length} 題 · ${topicLabel}（撳列或眼仔檢視；入去後可上一題／下一題集中溫習）</p>`;
+  resultEl.innerHTML = count + rows.map((q) => questionRowHtml(q, state.topic)).join("");
 }
 
 function render() {

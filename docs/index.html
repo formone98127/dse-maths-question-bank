@@ -138,8 +138,18 @@ const $ = s => document.querySelector(s);
 const esc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;');
 const pno = p => p.match(/(\d+)/)[1];
 
-/* 全卷 PDF：同 hub PDF_LINKS 對齊；未核實前空 */
-const PDF_LINKS = {};
+/* 全卷 PDF → dsepaper.hk 對應檔案頁（同 hub PDF_LINKS） */
+const PDF_LINKS = {
+  "math|2012|卷一": "https://dsepaper.hk/dse-mathematics-pastpaper-2012-paper-1-1",
+  "math|2012|卷二": "https://dsepaper.hk/dse-mathematics-pastpaper-2012-paper-2-1",
+  "math|2013|卷一": "https://dsepaper.hk/dse-mathematics-pastpaper-2013-paper-1-1",
+  "math|2013|卷二": "https://dsepaper.hk/dse-mathematics-pastpaper-2013-paper-2-1",
+  "math|2014|卷一": "https://dsepaper.hk/dse-mathematics-pastpaper-2014-paper-1-1",
+  "math|2015|卷二": "https://dsepaper.hk/dse-mathematics-pastpaper-2015-paper-2-1",
+  "econ|2015|卷一": "https://dsepaper.hk/dse-economics-pastpaper-2015-paper-1",
+  "econ|2017|卷一": "https://dsepaper.hk/dse-economics-pastpaper-2017-paper-1",
+  "econ|2020|卷一": "https://dsepaper.hk/dse-economics-pastpaper-2020-paper-1",
+};
 function paperKey(subject, year, paper) {
   const id = subject === '經濟' ? 'econ' : 'math';
   const zh = String(paper).includes('2') ? '卷二' : '卷一';
@@ -151,18 +161,21 @@ function syncPdfSide(q) {
   const note = $('#pdfNote');
   if (url) {
     btn.href = url;
+    btn.target = '_blank';
+    btn.rel = 'noopener';
     btn.classList.remove('disabled');
     btn.setAttribute('aria-disabled', 'false');
     btn.removeAttribute('title');
     btn.textContent = '下載全卷 PDF';
-    note.textContent = `${q.subject} ${q.year} ${q.paper} · 全卷 PDF`;
+    note.textContent = `${q.subject} ${q.year} ${q.paper} · 開 dsepaper.hk 下載原卷`;
   } else {
     btn.href = '#';
+    btn.removeAttribute('target');
     btn.classList.add('disabled');
     btn.setAttribute('aria-disabled', 'true');
     btn.title = '下載全卷 PDF · 待補';
     btn.textContent = '下載全卷 PDF';
-    note.textContent = '全卷 PDF 連結核實後會喺呢度出現；而家可逐題睇電子題。';
+    note.textContent = '呢卷暫時未對到 dsepaper.hk 檔案；而家可逐題睇電子題。';
   }
 }
 

@@ -4,6 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <title>DSE 題庫 · 數學與經濟</title>
+<script>
+/* 冇指定題目 hash 時唔好自動開第一題（唔寫 #2012P1Q1）；入口去 DSE Hub */
+if (!location.hash) {
+  location.replace('hub/' + (location.search || ''));
+}
+</script>
 <script>MathJax = {tex: {inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$']]},
   startup: {ready() { MathJax.startup.defaultReady(); if (window.typesetQ) typesetQ(); }}};</script>
 <script src="mathjax/tex-chtml.js" async></script>
@@ -444,20 +450,25 @@ function openFromHash() {
 }
 window.addEventListener('hashchange', openFromHash);
 
-if (wantSubj && subjs.includes(wantSubj)) subj = wantSubj;
-else subj = subjs[0];
-fillYears();
-year = +$('#syear').value;
-fillPapers();
-paper = paperList[0];
-tag = wantTag || '';
-fillTags();
-if (wantTag && $('#stag').querySelector(`option[value="${CSS.escape(wantTag)}"]`)) {
-  tag = wantTag;
-  $('#stag').value = wantTag;
-}
-fillQnos();
-if (!openFromHash()) {
+/* 冇 hash：head 已轉去 hub/，唔好再 show 第一題寫入 #2012P1Q1 */
+if (!location.hash) {
+  /* redirect already issued in <head> */
+} else if (openFromHash()) {
+  /* deep link opened */
+} else {
+  if (wantSubj && subjs.includes(wantSubj)) subj = wantSubj;
+  else subj = subjs[0];
+  fillYears();
+  year = +$('#syear').value;
+  fillPapers();
+  paper = paperList[0];
+  tag = wantTag || '';
+  fillTags();
+  if (wantTag && $('#stag').querySelector(`option[value="${CSS.escape(wantTag)}"]`)) {
+    tag = wantTag;
+    $('#stag').value = wantTag;
+  }
+  fillQnos();
   if (tag) {
     const hit = QS.find(q => q.subject===subj && (q.tags||[]).includes(tag) && q.type==='題目')
              || QS.find(q => q.subject===subj && (q.tags||[]).includes(tag));

@@ -43,6 +43,23 @@ main { flex:1; min-height:0; display:flex; flex-direction:column; max-width:960p
 #qbody th, #qbody td { border:1px solid #8a96a5; padding:5px 10px; text-align:left; vertical-align:middle; }
 #qbody th { background:#eef2f6; font-weight:700; }
 #qbody .ttag { color:var(--acc); font-size:12.5px; }
+/* MC 選項：跟 tw-gsat-question-bank 卡片掣形式（未有答案都可撳揀） */
+#qbody .options { display:grid; gap:10px; margin:12px 0 4px; }
+#qbody .option {
+  display:flex; gap:10px; align-items:flex-start; width:100%;
+  text-align:left; padding:12px 14px; min-height:44px;
+  border:1px solid var(--line); border-radius:10px;
+  background:var(--card); color:var(--ink); font:inherit; font-size:15.5px;
+  line-height:1.45; cursor:pointer; touch-action:manipulation;
+}
+#qbody .option:hover { border-color:#9eb6d4; }
+#qbody .option.selected {
+  border-color:var(--acc); background:#eef5fc;
+  box-shadow:0 0 0 2px rgba(11,98,196,.18);
+}
+#qbody .option .letter { flex:0 0 1.2em; font-weight:700; color:var(--acc); }
+#qbody .option .opt-body { flex:1; min-width:0; }
+#qbody .mc-hint { color:var(--mut); font-size:12.5px; margin:0 0 8px; }
 mjx-container { overflow-x:auto; overflow-y:hidden; }
 #nav { display:flex; gap:8px; align-items:center; justify-content:center; flex-wrap:wrap; padding:10px 0; }
 #nav .btn { padding:8px 14px; border:1px solid var(--line); border-radius:8px;
@@ -118,6 +135,41 @@ function syncSelectors() {
 }
 const curType = () => { const c = qlist.find(q=>q.qno==qno); return c ? c.type : null; };
 
+/* ---------- MC 選項 → 可撳卡片（參考 tw-gsat-question-bank；未有答案只標「已揀」） ---------- */
+function enhanceMc(root) {
+  root.querySelectorAll('ul').forEach(ul => {
+    const items = [...ul.children].filter(el => el.tagName === 'LI');
+    if (items.length < 2) return;
+    const parsed = items.map(li => {
+      const raw = li.innerHTML.trim();
+      const m = raw.match(/^([A-D])[.．、]\s*([\s\S]*)$/i);
+      return m ? { letter: m[1].toUpperCase(), html: m[2] } : null;
+    });
+    if (parsed.some(p => !p)) return;
+    const wrap = document.createElement('div');
+    wrap.className = 'options';
+    wrap.setAttribute('role', 'group');
+    wrap.setAttribute('aria-label', '選項');
+    const hint = document.createElement('p');
+    hint.className = 'mc-hint';
+    hint.textContent = '撳選項練習（答案稍後加入）';
+    wrap.appendChild(hint);
+    parsed.forEach(p => {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'option';
+      btn.dataset.choice = p.letter;
+      btn.innerHTML = `<span class="letter">${p.letter}</span><span class="opt-body">${p.html}</span>`;
+      btn.addEventListener('click', () => {
+        wrap.querySelectorAll('.option').forEach(b => b.classList.remove('selected'));
+        btn.classList.add('selected');
+      });
+      wrap.appendChild(btn);
+    });
+    ul.replaceWith(wrap);
+  });
+}
+
 /* ---------- 顯示 ---------- */
 let curQ = null;
 function show(q) {
@@ -130,6 +182,7 @@ function show(q) {
   $('#dbadge').className = 'badge ' + (q.type==='題目'?'qu':'ans');
   $('#qbody').innerHTML = q.html +
     (q.tags.length?`<p class="ttag">${q.tags.map(t=>'#'+esc(t)).join('　')}</p>`:'');
+  enhanceMc($('#qbody'));
   $('#qbody').scrollTop = 0;
   const i = qlist.findIndex(x=>x===q);
   $('#pos').textContent = `${i+1} / ${qlist.length}`;

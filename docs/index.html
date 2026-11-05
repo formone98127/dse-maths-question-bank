@@ -328,12 +328,14 @@ function shortSection(title) {
   if (m) return m[1];
   return '';
 }
+/* 頂欄：數學 2012 Paper 1 甲(1) 第 7 題 */
 function paperBarLabel(q) {
   if (!q) return 'DSE 題庫';
   const sec = shortSection(q.title);
-  return sec
+  const base = sec
     ? `${q.subject} ${q.year} ${q.paper} ${sec}`
     : `${q.subject} ${q.year} ${q.paper}`;
+  return q.qno != null ? `${base} 第 ${q.qno} 題` : base;
 }
 function syncBarTitle(q) {
   const el = $('#barTitle');

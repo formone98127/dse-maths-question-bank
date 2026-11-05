@@ -1,8 +1,9 @@
 # 2017 DSE 經濟 試卷一（英文卷）— 題目庫
 
-> 來源：2017-DSE-ECON PAPER 1（dsepaper_hk\經濟\2017\…Paper 1.pdf）　｜　多項選擇題 45 題，每題等分　｜　一小時完卷（8:30 am – 9:30 am）
+> 來源：2017-DSE-ECON PAPER 1（dsepaper_hk\經濟\2017\…Past Paper Paper 1.pdf；英文卷，唔用卷一.pdf）　｜　多項選擇題 45 題，每題等分　｜　一小時完卷（8:30 am – 9:30 am）
 > 說明：已移除頁碼、試卷標頭、網站水印等雜訊。**本檔為題目庫（零答案）**，只含題目清洗 + 建議標籤。
-> 含圖題目：10 張之中 **2/10 已重繪並過抗鋸齒容差**（Q21 已收貨；Q29 dir1=99.959／dir2=100／maxdev=2.24／p99.9=1.92）。**其餘 8 張待重繪／未完成**（Q24／Q25／Q32／Q35／Q39／Q40／Q42 覆蓋率雖 ≥99.5% 但 maxdev／p99.9 超 §9.4 AA 容差，已撤 embed；Q30 商標未達容差，無圖；題目正文零註釋）。**唔用 crop**。清洗跟鐵律：原文照錄、零評論。詳見 `2017_P1_fig_audit.md`。
+> 含圖題目嵌入**電子重繪向量圖**（存於 `2017_P1_images/`）。原卷頁面影像只作對照、不上網。
+> **圖進度（誠實）**：10 張之中 **2/10 已過 §9.4＋抗鋸齒容差並嵌圖**（Q21 已收貨；Q29 dir1=99.959／dir2=100／maxdev=2.24／p99.9=1.92）。其餘 **Q24／Q25／Q32／Q35／Q39／Q40／Q42 待重繪**（已撤 embed）；**Q30 商標無法重繪**（無圖）。**唔用 crop、唔用中文改寫圖選項**。詳見 `2017_P1_fig_audit.md`。
 
 ---
 
@@ -426,10 +427,9 @@ Li Ka Shing Foundation gave HK\$5 000 to each 2017 HKDSE candidate living in tho
 
 【題目內容】
 
-![fig_2017P1_q21](2017_P1_images/fig_2017P1_q21.png)
-
 The following diagram shows the Gini coefficient of Hong Kong based on original household income.
 
+![fig_2017P1_q21](2017_P1_images/fig_2017P1_q21.png)
 
 Based on the above diagram, we can conclude that
 
@@ -840,10 +840,10 @@ Suppose the economy initially operates at $E_1$ and the total import value equal
 In his 2016-17 Budget, the Financial Secretary proposed to waive business registration fees for 2016-17. At the same time, the personal basic tax allowance was raised from \$120 000 to \$132 000. Which of the following best illustrates the effect of the above changes on the price and output levels?
 
 
-- A. $LRAS_1 \rightarrow LRAS_2$（右移）；$AD_1 \leftarrow AD_2$（左移）
-- B. 單一向上傾斜 $SRAS$；$AD_1 \rightarrow AD_2$（右移）
-- C. $SRAS_1 \leftarrow SRAS_2$（左移／上移）；$AD_1 \rightarrow AD_2$（右移）
-- D. $LRAS_1 \rightarrow LRAS_2$（右移）；$SRAS_1 \rightarrow SRAS_2$（右移）；單一 $AD$
+- A.
+- B.
+- C.
+- D.
 
 ---
 
@@ -881,10 +881,10 @@ Which of the following transactions will be included in the calculation of the b
 A small open economy increases the import quota for Good X. Which of the following diagrams best illustrates the effect of this change?
 
 
-- A. 限額型垂直段 $S_1 \rightarrow S_2$ 右移
-- B. 限額型垂直段 $S_1 \rightarrow S_2$ 左移
-- C. 含水平段之供給 $S_1 \rightarrow S_2$ 右下移
-- D. 含水平段之供給 $S_1 \rightarrow S_2$ 左上移
+- A.
+- B.
+- C.
+- D.
 
 ---
 
@@ -960,13 +960,7 @@ Under the linked exchange rate system of Hong Kong, which of the following state
 ## 圖進度（真實狀態）
 
 - **已過核（embed 保留）**：Q21（Nightmare 已收貨）；Q29（dir1=99.959／dir2=100／maxdev=2.24／p99.9=1.92）。
-- **待重繪（已撤 embed；覆蓋率曾 ≥99.5% 但超 AA 容差）**：
-  - Q24：maxdev=7.21／p99.9=4.47
-  - Q25：maxdev=3.16／p99.9=2.24（左箭下臂；收窄後仍超／或 dir2 跌穿）
-  - Q32：maxdev=3.61／p99.9=2.24
-  - Q35：maxdev=3.61／p99.9=2.00
-  - Q39：maxdev=4.00／p99.9=3.00
-  - Q40：maxdev=11.00／p99.9=5.76
-  - Q42：maxdev=5.00／p99.9=3.61
-- **Q30 未完成**：商標真向量未達容差；無圖；正文無「待重繪」註釋。
-- 檔頭寫 **2/10**，唔寫「已 100% 重繪」。詳見 `2017_P1_fig_audit.md`。
+- **待重繪（已撤 embed；覆蓋率曾 ≥99.5% 但超 AA 容差）**：Q24、Q25、Q32、Q35、Q39、Q40、Q42。
+- **無法重繪**：Q30（商標／品牌標誌；無圖；正文零註釋）。
+- **圖選項題**：Q40／Q42 選項為原卷圖，未過 §9.4 前只留 A–D 空位，**唔用中文改寫圖意**。
+- 檔頭寫 **2/10**，唔寫「已 100% 重繪」。明細見 `2017_P1_fig_audit.md`。

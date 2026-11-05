@@ -1,18 +1,18 @@
 # 2015 經濟 P1 ENG — 含圖題頁碼定位表
 
-來源 PDF：`dsepaper_hk/經濟/2015/…Past Paper 卷一.pdf`（15 頁）  
-300dpi 頁影像：`_work_econ_ocr/2015_pages_300/p01.png` … `p15.png`  
-定位方法：左欄 easyocr 題號（文字層多頁損壞，唔靠 PDF text）。
+來源 PDF：`dsepaper_hk\經濟\2015\…Past Paper Paper 1.pdf`（**英文卷**；唔用 `卷一.pdf`）  
+300dpi 頁影像：`_work_econ_ocr\2015_P1_ENG_pages_300\p01.png` … `p15.png`  
+（舊路徑 `_work_econ_ocr\2015_pages_300\` 係中文卷一，勿用。）  
+定位方法：英文 PDF 頁序＋300dpi 對頁；文字層多頁損壞／有圖頁近空白 → 以頁影像＋easyocr（en）覆核。
 
-| 題號 | PDF 頁（1-based） | 頁影像 | 題號約 y（300dpi） | 備註 |
-|---|---|---|---|---|
-| Q15 | 5 | `p05.png` | ~1418 | 待 crop／trace |
-| Q19 | 7 | `p07.png` | ~264 | 待 crop／trace |
-| Q22 | 8 | `p08.png` | ~276 | 待 crop／trace |
-| Q27 | 10 | `p10.png` | ~336 | 四格選項圖候選；同頁有 Q28 |
-| Q28 | 10 | `p10.png` | ~2065 | 待 crop／trace |
-| Q37 | 13 | `p13.png` | ~261 | 待 crop／trace |
-| Q45 | 15 | `p15.png` | ~1411 | 若為表→Markdown；若為圖→重繪 |
+| 題號 | PDF 頁（1-based） | 頁影像 | 備註 |
+|---|---|---|---|
+| Q15 | 5 | `p05.png` | 待重繪（§9.4 AA 未過；MD 無 embed） |
+| Q19 | 7 | `p07.png` | 待重繪（§9.4 AA 未過；MD 無 embed） |
+| Q22 | 8 | `p08.png` | 已嵌；過 §9.4 |
+| Q27 | 10 | `p10.png` | 已嵌；四格選項圖 A–D |
+| Q28 | 10 | `p10.png` | 已嵌；同頁 Q27 之下 |
+| Q37 | 13 | `p13.png` | 已嵌；過 §9.4 |
+| Q45 | 15 | `p15.png` | 原卷純文字 MC，無圖 |
 
-**狀態**：頁碼已定位；**圖未重繪**（等 2020 Q14／Q26 樣板過核後按同流程逐張 trace）。  
-**不准**批量標「無法重繪」。
+**狀態（2026-11-05 重洗）**：頁碼對齊英文卷；嵌圖只限 Q22／Q27／Q28／Q37。

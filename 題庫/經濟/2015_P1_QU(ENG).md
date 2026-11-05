@@ -1,9 +1,9 @@
 # 2015 DSE 經濟 試卷一（英文卷）— 題目庫
 
-> 來源：2015-DSE-ECON PAPER 1（dsepaper_hk\經濟\2015\…Paper 1.pdf）　｜　多項選擇題 45 題，每題等分　｜　一小時完卷（8:30 am – 9:30 am）
-> 說明：已移除頁碼、試卷標頭、網站水印等雜訊。**本檔為題目庫（零答案）**，只含題目清洗 + 建議標籤。
-> 含圖題目必須 **100% 重繪**（量度頁影像／PDF 向量）；未能量度者列「無法重繪」，**唔用 crop、唔用示意估數**。清洗跟鐵律：原文照錄、零評論。
-> **2026-11-05：4/6 已重繪並過 §9.4＋抗鋸齒容差**（Q22／Q27／Q28／Q37；SVG 純 path＋文字）。**Q15／Q19 待重繪**（maxdev／p99.9 超 AA：Q15 5.83／4.48，Q19 4.12／2.86；已撤 embed）。Q45 原卷無圖。明細見 `2015_P1_fig_audit.md`。
+> 來源：2015-DSE-ECON PAPER 1（dsepaper_hk\經濟\2015\…Past Paper Paper 1.pdf；英文卷，唔用卷一.pdf）　｜　多項選擇題 45 題，每題等分　｜　一小時完卷（8:30 am – 9:30 am）
+> 說明：已移除頁碼、試卷標頭、網站水印等雜訊；公式重排為 LaTeX。**本檔為題目庫（零答案）**，只含題目清洗 + 建議標籤。
+> 含圖題目已嵌入**電子重繪向量圖**（存於 `2015_P1_images/`，由重繪腳本生成，可改參數重出）。原卷頁面影像在 `_work_econ_ocr\2015_P1_ENG_pages_300\`（對照用，不上網）。
+> **圖進度（誠實）**：6 張之中 **4/6 已過 §9.4＋抗鋸齒容差並嵌圖**（Q22／Q27／Q28／Q37）。**Q15／Q19 待重繪**（maxdev／p99.9 超 AA：Q15 5.83／4.48，Q19 4.12／2.86；已撤 embed）。Q45 原卷無圖。明細見 `2015_P1_fig_audit.md`。
 
 ---
 
@@ -174,7 +174,7 @@ A firm has an independent legal entity but the owners cannot transfer their owne
 
 【題目內容】
 
-759Store, a local retailer of imported snacks, expands its business to sell cosmetics and skincare products. Which of the following is the LEAST likely motive behind the expansion?
+759Store, a local retailer of imported snacks, expands its business to sell cosmetics and skincare products. Which of the following is the **LEAST** likely motive behind the expansion?
 
 - A. to reduce competition
 - B. to enjoy economies of scale
@@ -458,10 +458,9 @@ Suppose the post-tax Gini coefficient of an economy is larger than its pre-tax G
 
 【題目內容】
 
-![fig_2015P1_q22](2015_P1_images/fig_2015P1_q22.png)
-
 Refer to the following diagram.
 
+![fig_2015P1_q22](2015_P1_images/fig_2015P1_q22.png)
 
 The maximum total social surplus is equal to __________.
 
@@ -591,10 +590,9 @@ The government provides cash subsidies for new-born children from their birth to
 
 【題目內容】
 
-![fig_2015P1_q28](2015_P1_images/fig_2015P1_q28.png)
-
 Refer to the following diagram.
 
+![fig_2015P1_q28](2015_P1_images/fig_2015P1_q28.png)
 
 The curve of asset demand for money will shift from $M_{a1}$ to $M_{a2}$ when
 
@@ -779,10 +777,9 @@ When unanticipated deflation occurs, which of the following people will lose?
 
 【題目內容】
 
-![fig_2015P1_q37](2015_P1_images/fig_2015P1_q37.png)
-
 Refer to the following aggregate supply diagram.
 
+![fig_2015P1_q37](2015_P1_images/fig_2015P1_q37.png)
 
 When the economy moves from point A to point B, which of the following will NOT change?
 
@@ -971,11 +968,3 @@ The supply curve of a certain good is upward-sloping in a small open economy. Wh
 - B. Imposing an effective import quota will result in a rise in consumer surplus of the good while imposing a tariff may not.
 - C. Imposing a tariff will raise the world price of the good while imposing an effective import quota will not.
 - D. Imposing a tariff will result in an increase in the government revenue while imposing an effective import quota may not.
-
----
-
-## 圖進度（真實狀態）
-
-- 2026-11-05：**4/6** 已重繪並過 §9.4＋抗鋸齒容差（Q22／Q27／Q28／Q37）；正文有 embed。
-- **Q15／Q19 待重繪**（maxdev／p99.9 超 AA；已撤 embed）。Q45 原卷無圖。
-- 明細見 2015_P1_fig_audit.md。

@@ -1,8 +1,8 @@
 # 2020 DSE 經濟 試卷一（英文卷）— 題目庫
 
 > 來源：2020-DSE-ECON PAPER 1（dsepaper_hk\經濟\2020\…Paper 1.pdf）　｜　多項選擇題 45 題，每題等分　｜　一小時完卷（8:30 am – 9:30 am）
-> 說明：已移除頁碼、試卷標頭、網站水印等雜訊。**本檔為題目庫（零答案）**，只含題目清洗 + 建議標籤。
-> 含圖題目：12 張語義重繪在庫（PNG＋真 SVG，圖檔唔改）。**7 張有 §9.4 雙向數字**（Q16／18／20／28／31／36／43，dir1/dir2≥99.5%，maxdev 2.00–2.83 屬 AA 容差）＋**5 張語義核／樣板核**（Q6／14／21／22／26，逐張依據見 `2020_P1_fig_audit.md`）。清洗：原文照錄、零答案、零評論。
+> 說明：已移除頁碼、試卷標頭、網站水印等雜訊；公式重排為 LaTeX。**本檔為題目庫（零答案）**，只含題目清洗 + 建議標籤。
+> 含圖題目已嵌入**電子重繪向量圖**（存於 `2020_P1_images/`，PNG＋真 SVG）。12 張在庫：其中 **7 張有 §9.4 雙向數字**（Q16／18／20／28／31／36／43，dir1/dir2≥99.5%，maxdev 2.00–2.83 屬 AA 容差）＋**5 張語義核／樣板核**（Q6／14／21／22／26）。逐張依據見 `2020_P1_fig_audit.md`。原卷頁面只作對照、不上網。唔用 crop。
 
 ---
 
@@ -336,9 +336,9 @@ If the government provides a $6$ per-unit subsidy for the producers of the good,
 
 【題目內容】
 
-![fig_2020P1_q16](2020_P1_images/fig_2020P1_q16.png)
-
 Refer to the following supply-demand diagram for the exported Chinese rare earth minerals.
+
+![fig_2020P1_q16](2020_P1_images/fig_2020P1_q16.png)
 
 If China abolished the quota on the export of rare earth minerals,
 (1) the export price of the rare earth minerals would drop.
@@ -379,9 +379,9 @@ A non-profit organisation supports the increase in cigarette tax. The organisati
 
 【題目內容】
 
-![fig_2020P1_q18](2020_P1_images/fig_2020P1_q18.png)
-
 ABC Diamond Cutting Factories expand its business as follows:
+
+![fig_2020P1_q18](2020_P1_images/fig_2020P1_q18.png)
 
 To ABC Diamond Cutting Factories, the types of expansion shown by X and Y are ______ expansion and ______ expansion respectively.
 
@@ -423,9 +423,9 @@ Suppose a similar bill is implemented in Hong Kong. Which of the following state
 
 【題目內容】
 
-![fig_2020P1_q20](2020_P1_images/fig_2020P1_q20.png)
-
 Refer to the following supply-demand diagram for Good X.
+
+![fig_2020P1_q20](2020_P1_images/fig_2020P1_q20.png)
 
 If the price floor of Good X changes from $P_1$ to $P_2$,
 
@@ -465,9 +465,9 @@ With reference to the above information, which of the following statements is co
 
 【題目內容】
 
-![fig_2020P1_q22](2020_P1_images/fig_2020P1_q22.png)
-
 Study the following two Lorenz curves.
+
+![fig_2020P1_q22](2020_P1_images/fig_2020P1_q22.png)
 
 Compared with Country B,
 
@@ -601,9 +601,9 @@ Which of the following is a reason for a leftward shift of the short run aggrega
 
 【題目內容】
 
-![fig_2020P1_q28](2020_P1_images/fig_2020P1_q28.png)
-
 The following diagram shows the asset demand for money of an economy.
+
+![fig_2020P1_q28](2020_P1_images/fig_2020P1_q28.png)
 
 Which of the following will cause the above change in asset demand for money?
 
@@ -672,9 +672,9 @@ If the public deposits all the cash into the banking system,
 
 【題目內容】
 
-![fig_2020P1_q31](2020_P1_images/fig_2020P1_q31.png)
-
 The following diagram indicates the money supply curve ($M_s$) and money demand curve ($M_d$) of a certain economy. Suppose the initial equilibrium point is at E.
+
+![fig_2020P1_q31](2020_P1_images/fig_2020P1_q31.png)
 
 If the income of the public increases and the central bank sells government bonds to the public, the interest rate ______ and the quantity of money ______.
 
@@ -769,9 +769,9 @@ Which of the following policies would offset the effect of an increase in the wi
 
 【題目內容】
 
-![fig_2020P1_q36](2020_P1_images/fig_2020P1_q36.png)
-
 The diagram below shows the aggregate demand curve, the short run aggregate supply curve and the long run aggregate supply curve of an economy.
+
+![fig_2020P1_q36](2020_P1_images/fig_2020P1_q36.png)
 
 Suppose the economy initially operates at $E_0$ and the total import value equals to the total export value. If the government decreases the amount of social security assistance for the elderly, in the short run, the deflationary (output) gap will become ______ and there will be a ______.
 
@@ -882,7 +882,7 @@ According to the above information, which type(s) of tax does he need to pay to 
 
 【題目內容】
 
-In the case WITHOUT tax exemption, John needs to pay $15\,000$ and Mary needs to pay $35\,000$ as income tax.
+In the case **WITHOUT** tax exemption, John needs to pay $15\,000$ and Mary needs to pay $35\,000$ as income tax.
 
 Suppose the government proposes the following income tax exemption measures:
 
@@ -911,11 +911,11 @@ John will prefer ______ while Mary will prefer ______.
 
 The following table shows the amounts of consumption on two goods in Country A and Country B before international trade. Assume both countries use one unit of resources on producing Good X and one unit of resources on producing Good Y.
 
-| | Consumption before trade (units) | |
-|---|---|---|
-| | Good X | Good Y |
-| Country A | 100 | and 25 |
-| Country B | 80 | and 40 |
+| | Consumption before trade (units) | | |
+|---|---|---|---|
+| | Good X | | Good Y |
+| Country A | 100 | and | 25 |
+| Country B | 80 | and | 40 |
 
 If Country A and Country B completely specialise their production and trade with each other, the total output of both countries will increase by ______ units of Good X and ______ units of Good Y.
 
@@ -935,9 +935,9 @@ If Country A and Country B completely specialise their production and trade with
 
 【題目內容】
 
-![fig_2020P1_q43](2020_P1_images/fig_2020P1_q43.png)
-
 The diagram below shows the market situation of Good X in a small open economy.
+
+![fig_2020P1_q43](2020_P1_images/fig_2020P1_q43.png)
 
 $P_0$ is the price before trade and $P_1$ is the price after trade. Which of the following statements about Good X are correct after the economy opens up for international trade?
 (1) The total expenditure on Good X of domestic consumers would be $P_1\times Q_d$.
@@ -993,10 +993,3 @@ Under the linked exchange rate system of Hong Kong, which of the following state
 - D. Hong Kong citizens can sell 1 USD to the three note-issuing banks for 7.8 HKD.
 
 ---
-
-## 圖進度（真實狀態）
-
-- **已收／已過核**：Q6、Q14、Q21、Q22（A+B）、Q26。
-- **§9.4 dir1/dir2≥99.5%**：Q16、Q18、Q20、Q28、Q31、Q36、Q43。
-- **maxdev**：Q28=**2.00**；Q16/Q20/Q31/Q36=2.24；Q18/Q43=2.83（AA 雜點面積≤7，見 audit）。
-- 檔頭**未**因 maxdev 略超而寫「已 100% 重繪」。

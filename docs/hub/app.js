@@ -26,8 +26,6 @@ const btns = {
 
 const LABEL = { subject: "科目", year: "年份", paper: "卷別", topic: "課題" };
 
-const ICON_DL = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a1 1 0 0 1 1 1v9.6l2.8-2.8a1 1 0 1 1 1.4 1.4l-4.5 4.5a1 1 0 0 1-1.4 0L6.8 12.2a1 1 0 1 1 1.4-1.4L11 13.6V4a1 1 0 0 1 1-1zM5 19a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1z"/></svg>`;
-
 function shortName(name) {
   return String(name).replace(/（.*?）/g, "").replace(/\s*\/.*/, "").trim();
 }
@@ -108,15 +106,7 @@ function syncButtons() {
   });
 }
 
-/* 側邊只放下載圖示；列身（ICON 以外）整塊連去檢視頁 */
-function pdfSideHtml(pdfUrl) {
-  if (!pdfUrl) {
-    return `<span class="icon-btn pdf disabled" title="下載全卷 PDF · 待補" aria-label="下載全卷 PDF 待補">${ICON_DL}</span>`;
-  }
-  const name = String(pdfUrl).split('/').pop();
-  return `<a class="icon-btn pdf" href="${pdfUrl}" download="${name}" title="下載全卷 PDF" aria-label="下載全卷 PDF">${ICON_DL}</a>`;
-}
-
+/* 主頁結果列：整列連去檢視頁；下載圖示只留題目頁頂欄 */
 function viewHrefFor(r) {
   return BANK_URL + r.hash;
 }
@@ -130,7 +120,6 @@ function topicBankHref(sid, topic) {
 
 function rowHtml(r) {
   const sn = shortName(r.name);
-  const pdfUrl = PDF_LINKS[`${r.id}|${r.year}|${r.paper}`] || null;
   const href = viewHrefFor(r);
   return `
     <article class="paper-row">
@@ -146,7 +135,6 @@ function rowHtml(r) {
           <div class="paper-sub">${r.name}</div>
         </div>
       </a>
-      <div class="paper-actions" aria-label="全卷 PDF">${pdfSideHtml(pdfUrl)}</div>
     </article>`;
 }
 
@@ -219,7 +207,6 @@ function renderTopic() {
           <div class="paper-sub">${state.topic !== ALL && state.topic !== PLACE ? `篩「${topicLabel}」` : "課題概覽"}</div>
         </div>
       </a>
-      <div class="paper-actions" aria-label="全卷 PDF">${pdfSideHtml(null)}</div>
     </article>`;
 }
 

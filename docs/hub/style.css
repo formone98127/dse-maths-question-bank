@@ -53,14 +53,15 @@ body {
   animation: rise 0.7s ease both;
 }
 .brand {
+  display: inline-block; /* 漸變跟字寬，唔跟成行；否則左邊全白 */
   font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
   font-weight: 900;
   font-size: clamp(26px, 4.2vw, 36px);
   letter-spacing: 0.01em;
   line-height: 1.15;
   font-stretch: normal;
-  /* 鎖定上次漸變：白 → 天藍 #93c5fd → 綠 #34d399；hero 藍／紫光暈唔改 */
-  background: linear-gradient(105deg, #fff 10%, #93c5fd 55%, #34d399 100%);
+  /* 鎖定色：白 → 天藍 #93c5fd → 綠 #34d399（停位提早，字面睇得見藍綠） */
+  background-image: linear-gradient(105deg, #ffffff 0%, #93c5fd 40%, #34d399 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""交貨前格式閘門：粗體強調詞、合併格表格。
+"""交貨前格式閘門：粗體強調詞、合併格表格、填空底線轉義。
 
 用法：
   python qa_md_format.py 題庫/經濟/2015_P1_QU(ENG).md
@@ -25,6 +25,8 @@ EMP_RE = re.compile(
 )
 # 已包喺 **…** 入面嘅唔計
 BOLD_CHUNK = re.compile(r"\*\*[^*]+\*\*")
+# 未轉義底線：Markdown 會當粗斜體食咗，網頁只剩好短嘅 _
+RAW_BLANK = re.compile(r"(?<!\\)_{3,}")
 
 Q_SPLIT = re.compile(r"\n## 第 (\d+) 題\n")
 TABLE_BLOCK = re.compile(r"(?:^\|.+\|\s*\n)+", re.M)
@@ -45,6 +47,11 @@ def check_emphasis(qno: int, body: str, hits: list) -> None:
         # NOT／ALL／ONLY 好境多；仍標嫌疑，人工對頁
         hits.append((qno, "粗體嫌疑", w,
                      "題幹有全大楷強調詞但 MD 無 **…**；請對頁確認是否粗體"))
+    for m in RAW_BLANK.finditer(text):
+        hits.append((
+            qno, "底線轉義", m.group(0)[:20],
+            "未轉義 ___ 會被 Markdown 食成短 _；改用 \\_\\_\\_… 照原卷長度",
+        ))
 
 
 def check_tables(qno: int, body: str, hits: list) -> None:

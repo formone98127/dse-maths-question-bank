@@ -38,7 +38,7 @@ If a command economy turns into a market-oriented economy,
 
 【題目內容】
 
-In Lunar New Year, tourists reserve tables in waterfront restaurants to enjoy firework display. The firework display is a ______ because ______.
+In Lunar New Year, tourists reserve tables in waterfront restaurants to enjoy firework display. The firework display is a \_\_\_\_\_\_ because \_\_\_\_\_\_.
 
 - A. public good ...... the government pays for the firework display
 - B. public good ...... one individual's consumption will not reduce its availability to others
@@ -117,7 +117,7 @@ Refer to the following dialogue.
 
 ![fig_2020P1_q6](2020_P1_images/fig_2020P1_q6.png)
 
-Given the return of land is rent, the return of labour is wage, the return of capital is interest while the return of entrepreneur is profit. The income earned by Captain Cook consists of ______ while the remaining income earned by Landlord Li consists of ______.
+Given the return of land is rent, the return of labour is wage, the return of capital is interest while the return of entrepreneur is profit. The income earned by Captain Cook consists of \_\_\_\_\_\_ while the remaining income earned by Landlord Li consists of \_\_\_\_\_\_.
 
 - A. wage ...... profit
 - B. interest ...... rent and profit
@@ -137,7 +137,7 @@ Given the return of land is rent, the return of labour is wage, the return of ca
 
 Tai On Building（太安樓）in eastern Hong Kong Island is well-known as a 'foodie paradise'. A variety of street snacks such as cart noodles, egg waffles, dumplings and mango mochi are sold by numerous small vendors. Customers from different districts fill their stomachs at Tai On Building.
 
-Based on the above information, street snack vendors at Tai On Building can ______.
+Based on the above information, street snack vendors at Tai On Building can \_\_\_\_\_\_.
 
 - A. enjoy internal economies of scale
 - B. enjoy external economies of scale
@@ -164,7 +164,7 @@ The following table shows the production plan of a firm which employs two factor
 | 4 | 3 | 22 |
 | 4 | 4 | X |
 
-If the above data illustrate the law of diminishing marginal returns, the value of X ______.
+If the above data illustrate the law of diminishing marginal returns, the value of X \_\_\_\_\_\_.
 
 - A. can be 23
 - B. can be smaller than 22
@@ -268,7 +268,7 @@ When the market supply curve of a good is derived, which of the following is/are
 
 In recent years, the rise in demand for private cars in China has attracted Volkswagen, a German car manufacturer, to set up car manufacturing factories in China.
 
-The above case illustrates the ______ function of price because ______.
+The above case illustrates the \_\_\_\_\_\_ function of price because \_\_\_\_\_\_.
 
 - A. rationing ...... private cars are sold to the highest-valued users in China
 - B. rationing ...... fewer buyers are willing to buy private cars in Germany
@@ -290,7 +290,7 @@ Refer to the following supply-demand diagram for Good Y.
 
 ![fig_2020P1_q14](2020_P1_images/fig_2020P1_q14.png)
 
-Suppose Good Y is an inferior good and the initial market equilibrium point is E. If there is a fall in the average income level of consumers, the new market equilibrium point will be ______.
+Suppose Good Y is an inferior good and the initial market equilibrium point is E. If there is a fall in the average income level of consumers, the new market equilibrium point will be \_\_\_\_\_\_.
 
 - A. A
 - B. B
@@ -318,7 +318,7 @@ The following table shows the demand and supply schedules of a good.
 | 26 | 40 | 55 |
 | 28 | 30 | 60 |
 
-If the government provides a $6$ per-unit subsidy for the producers of the good, the total subsidy provided by the government will be ______ and the ratio of consumers' share to producers' share of the subsidy will be ______.
+If the government provides a $6$ per-unit subsidy for the producers of the good, the total subsidy provided by the government will be \_\_\_\_\_\_ and the ratio of consumers' share to producers' share of the subsidy will be \_\_\_\_\_\_.
 
 - A. $300$ ...... $1:1$
 - B. $300$ ...... $1:2$
@@ -383,7 +383,7 @@ ABC Diamond Cutting Factories expand its business as follows:
 
 ![fig_2020P1_q18](2020_P1_images/fig_2020P1_q18.png)
 
-To ABC Diamond Cutting Factories, the types of expansion shown by X and Y are ______ expansion and ______ expansion respectively.
+To ABC Diamond Cutting Factories, the types of expansion shown by X and Y are \_\_\_\_\_\_ expansion and \_\_\_\_\_\_ expansion respectively.
 
 - A. backward ...... conglomerate
 - B. backward ...... lateral
@@ -525,7 +525,7 @@ The following table shows the employment data of Hong Kong from April to June in
 | Unemployed persons | 114 |
 | Underemployed persons | 41 |
 
-According to the above data, the underemployment rate is ______.
+According to the above data, the underemployment rate is \_\_\_\_\_\_.
 
 - A. 0.55%
 - B. 0.62%
@@ -623,7 +623,7 @@ Which of the following will cause the above change in asset demand for money?
 
 【題目內容】
 
-The legal tender in Hong Kong held by licensed banks is included in ______.
+The legal tender in Hong Kong held by licensed banks is included in \_\_\_\_\_\_.
 (1) monetary base
 (2) money supply M2
 (3) money supply M3
@@ -676,7 +676,7 @@ The following diagram indicates the money supply curve ($M_s$) and money demand 
 
 ![fig_2020P1_q31](2020_P1_images/fig_2020P1_q31.png)
 
-If the income of the public increases and the central bank sells government bonds to the public, the interest rate ______ and the quantity of money ______.
+If the income of the public increases and the central bank sells government bonds to the public, the interest rate \_\_\_\_\_\_ and the quantity of money \_\_\_\_\_\_.
 
 - A. will decrease ...... will increase
 - B. will increase ...... may increase or decrease
@@ -773,7 +773,7 @@ The diagram below shows the aggregate demand curve, the short run aggregate supp
 
 ![fig_2020P1_q36](2020_P1_images/fig_2020P1_q36.png)
 
-Suppose the economy initially operates at $E_0$ and the total import value equals to the total export value. If the government decreases the amount of social security assistance for the elderly, in the short run, the deflationary (output) gap will become ______ and there will be a ______.
+Suppose the economy initially operates at $E_0$ and the total import value equals to the total export value. If the government decreases the amount of social security assistance for the elderly, in the short run, the deflationary (output) gap will become \_\_\_\_\_\_ and there will be a \_\_\_\_\_\_.
 
 - A. narrower ...... trade surplus
 - B. narrower ...... trade deficit
@@ -840,7 +840,7 @@ The following is an extract of the mission of the Inland Revenue Department.
 > - collecting revenue efficiently and cost-effectively
 > - enabling staff to acquire the necessary knowledge, skills and attitude so that they can contribute their best to the achievement of our vision
 
-The above mission is in line with the ______ principle of taxation put forward by Adam Smith.
+The above mission is in line with the \_\_\_\_\_\_ principle of taxation put forward by Adam Smith.
 
 - A. equality
 - B. certainty
@@ -891,7 +891,7 @@ Suppose the government proposes the following income tax exemption measures:
 | Measure I | 75% of income tax, maximum $30\,000$ |
 | Measure II | 100% of income tax, maximum $20\,000$ |
 
-John will prefer ______ while Mary will prefer ______.
+John will prefer \_\_\_\_\_\_ while Mary will prefer \_\_\_\_\_\_.
 
 - A. measure I ...... measure I
 - B. measure I ...... measure II
@@ -918,7 +918,7 @@ The following table shows the amounts of consumption on two goods in Country A a
 <tr><td>Country B</td><td>80</td><td>and</td><td>40</td></tr>
 </table>
 
-If Country A and Country B completely specialise their production and trade with each other, the total output of both countries will increase by ______ units of Good X and ______ units of Good Y.
+If Country A and Country B completely specialise their production and trade with each other, the total output of both countries will increase by \_\_\_\_\_\_ units of Good X and \_\_\_\_\_\_ units of Good Y.
 
 - A. 15 ...... 15
 - B. 15 ...... 20

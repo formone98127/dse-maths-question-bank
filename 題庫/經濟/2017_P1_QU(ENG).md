@@ -18,7 +18,7 @@
 
 【題目內容】
 
-The operator of a canteen in the government headquarters decides to sell sushi and not burgers anymore because the former can earn a higher profit. This is an example of using ______ to solve the problem of ______.
+The operator of a canteen in the government headquarters decides to sell sushi and not burgers anymore because the former can earn a higher profit. This is an example of using \_\_\_\_\_\_ to solve the problem of \_\_\_\_\_\_.
 
 - A. government command ...... ‘what to produce’
 - B. government command ...... ‘for whom to produce’
@@ -162,7 +162,7 @@ The following table shows the cost-output relationship of a price-taker.
 | 8 | 13 |
 | 9 | 14 |
 
-The market price is \$20. Suppose the average cost has increased by \$2 for every unit of output. The profit of the firm will ______.
+The market price is \$20. Suppose the average cost has increased by \$2 for every unit of output. The profit of the firm will \_\_\_\_\_\_.
 
 - A. increase by \$16
 - B. increase by \$14
@@ -180,7 +180,7 @@ The market price is \$20. Suppose the average cost has increased by \$2 for ever
 
 【題目內容】
 
-Giordano International Limited is a retailer of casual wear. It has launched the Giordano Ladies, which provides luxury clothes and suits for ladies. It is an example of ______ expansion.
+Giordano International Limited is a retailer of casual wear. It has launched the Giordano Ladies, which provides luxury clothes and suits for ladies. It is an example of \_\_\_\_\_\_ expansion.
 
 - A. horizontal
 - B. vertical
@@ -228,7 +228,7 @@ The input-output relationship of a firm is as follows:
 | Number of working hours per worker per day | 10 | 8 |
 | Quantity of output (units) | 3 000 | 2 900 |
 
-Based on the above information, labour supply ______ and average labour productivity ______.
+Based on the above information, labour supply \_\_\_\_\_\_ and average labour productivity \_\_\_\_\_\_.
 
 - A. rises ...... rises
 - B. rises ...... falls
@@ -248,7 +248,7 @@ Based on the above information, labour supply ______ and average labour producti
 
 A famous artist, Tsz-Wah, held a show. Many people complained that they could not buy a ticket. Ticket touts resold the tickets on the Internet and some buyers paid a price higher than HK\$10 000 for a ticket.
 
-The above case illustrates the ______ function of price because ______.
+The above case illustrates the \_\_\_\_\_\_ function of price because \_\_\_\_\_\_.
 
 - A. rationing ...... the tickets are rationed to the highest-valued buyers
 - B. rationing ...... demand will be reduced by a higher price
@@ -308,7 +308,7 @@ Mandy: I like coffee very much! No matter how its price changes, I always buy th
 
 Shirley: I like coffee very much too! No matter how its price changes, I always spend the same amount of money on coffee every week!
 
-Based on their conversation, Mandy’s demand for coffee is ______ and Shirley’s demand for coffee is ______.
+Based on their conversation, Mandy’s demand for coffee is \_\_\_\_\_\_ and Shirley’s demand for coffee is \_\_\_\_\_\_.
 
 - A. perfectly inelastic ...... perfectly inelastic
 - B. perfectly inelastic ...... unitarily elastic
@@ -351,7 +351,7 @@ If the government imposed a \$2 per unit tax on Good X,
 
 【題目內容】
 
-Suppose Good Y is an inferior good. When people’s income rises and the production cost of Good Y increases, the equilibrium price of Good Y ______.
+Suppose Good Y is an inferior good. When people’s income rises and the production cost of Good Y increases, the equilibrium price of Good Y \_\_\_\_\_\_.
 
 - A. will increase
 - B. will decrease
@@ -473,7 +473,7 @@ Which of the following would likely occur after the implementation of this schem
 
 【題目內容】
 
-If the government raises the effective price floor on Good X and at the same time the price of its substitute increases, the consumer surplus in the market of Good X ______.
+If the government raises the effective price floor on Good X and at the same time the price of its substitute increases, the consumer surplus in the market of Good X \_\_\_\_\_\_.
 
 - A. will increase
 - B. will decrease
@@ -518,7 +518,7 @@ Which of the following will be the results of a reduction in quota on the good?
 The following diagram shows a production chain of watches in an economy:
 
 
-The contribution of the local watch manufacturers to the economy’s GDP at market prices is ______.
+The contribution of the local watch manufacturers to the economy’s GDP at market prices is \_\_\_\_\_\_.
 
 - A. \$220
 - B. \$240
@@ -564,7 +564,7 @@ Which of the following statements about the economy is correct?
 
 The government launches ‘Admission Scheme for the Second Generation of Chinese Hong Kong Permanent Residents’（輸入中國籍香港永久性居民第二代計劃）in order to meet the challenge of ageing population and declining workforce.
 
-If some second-generation of Hong Kong permanent residents returned to Hong Kong to fill up the posts which have been vacant for a long time, Hong Kong’s labour force would ______ and the unemployment rate would ______.
+If some second-generation of Hong Kong permanent residents returned to Hong Kong to fill up the posts which have been vacant for a long time, Hong Kong’s labour force would \_\_\_\_\_\_ and the unemployment rate would \_\_\_\_\_\_.
 
 - A. rise ...... remain unchanged
 - B. rise ...... fall
@@ -675,7 +675,7 @@ Suppose the public does not hold cash and the required reserve ratio is reduced 
 The diagram below shows the money demand and supply curves of an economy. The original equilibrium point is at E.
 
 
-Suppose the risk of holding interest bearing assets (such as bonds) increases and the central bank reduces the discount rate. The new equilibrium point will be at ______.
+Suppose the risk of holding interest bearing assets (such as bonds) increases and the central bank reduces the discount rate. The new equilibrium point will be at \_\_\_\_\_\_.
 
 - A. A
 - B. B
@@ -702,7 +702,7 @@ Refer to the following data about Hong Kong’s money supply.
 | Demand deposits | 100 |
 | All types of deposits with licensed banks and negotiable certificates of deposit issued by licensed banks (other than those held by authorised institutions) | 3 000 |
 
-The money supply M2 is ______.
+The money supply M2 is \_\_\_\_\_\_.
 
 - A. \$320 billion
 - B. \$3 180 billion
@@ -819,7 +819,7 @@ Refer to a situation of an upward-sloping short run aggregate supply curve. Whic
 The diagram below shows the aggregate demand curve, the short run aggregate supply curve and the long run aggregate supply curve of an economy.
 
 
-Suppose the economy initially operates at $E_1$ and the total import value equals total export value. If the government decreases the social security assistance to the elderly, in short run, the deflationary (output) gap will be ______ and there will be a ______.
+Suppose the economy initially operates at $E_1$ and the total import value equals total export value. If the government decreases the social security assistance to the elderly, in short run, the deflationary (output) gap will be \_\_\_\_\_\_ and there will be a \_\_\_\_\_\_.
 
 - A. narrower ...... trade surplus
 - B. wider ...... trade deficit

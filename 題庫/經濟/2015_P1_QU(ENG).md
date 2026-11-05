@@ -80,7 +80,7 @@ Which of the following is a characteristic of a market economy?
 
 【題目內容】
 
-The __________ mobility of labour will decrease if __________.
+The \_\_\_\_\_\_\_\_\_\_ mobility of labour will decrease if \_\_\_\_\_\_\_\_\_\_.
 
 - A. geographical ...... the government introduces "city-bike rental scheme" in all train stations
 - B. geographical ...... several big companies set up child care centres in their offices
@@ -104,7 +104,7 @@ The schedule below shows the marginal cost of a firm in a perfectly competitive 
 |---|---|---|---|---|---|---|---|
 | Marginal cost ($) | 5 | 5.5 | 6 | 6.5 | 7 | 8 | 9.5 |
 
-Suppose the rental of the machine hired, a fixed cost, increases by \$2 while the marginal cost for each unit of the output is reduced by \$0.5. As a result, the profit-maximising output of the firm __________ while the profit of the firm __________.
+Suppose the rental of the machine hired, a fixed cost, increases by \$2 while the marginal cost for each unit of the output is reduced by \$0.5. As a result, the profit-maximising output of the firm \_\_\_\_\_\_\_\_\_\_ while the profit of the firm \_\_\_\_\_\_\_\_\_\_.
 
 - A. increases ...... decreases
 - B. increases ...... may increase or decrease
@@ -150,7 +150,7 @@ Which of the following is a possible reason for the difference between the labou
 
 【題目內容】
 
-A firm has an independent legal entity but the owners cannot transfer their ownership without the consent of the other owners. When the owners want to expand the firm's business, they can __________.
+A firm has an independent legal entity but the owners cannot transfer their ownership without the consent of the other owners. When the owners want to expand the firm's business, they can \_\_\_\_\_\_\_\_\_\_.
 
 (1) use the retained profit of the firm
 
@@ -243,7 +243,7 @@ The table below shows the relationship between the price of and the total expend
 |---|---|---|---|---|
 | Total expenditure (\$) | 25 | 30 | 35 | 40 |
 
-From the above table, we can conclude that the elasticity of demand for ice-cream is __________ (without regard to its negative sign).
+From the above table, we can conclude that the elasticity of demand for ice-cream is \_\_\_\_\_\_\_\_\_\_ (without regard to its negative sign).
 
 - A. between zero and one
 - B. equal to zero
@@ -464,7 +464,7 @@ Refer to the following diagram.
 
 ![fig_2015P1_q22](2015_P1_images/fig_2015P1_q22.png)
 
-The maximum total social surplus is equal to __________.
+The maximum total social surplus is equal to \_\_\_\_\_\_\_\_\_\_.
 
 - A. area Z
 - B. area $(Y+Z)$
@@ -622,7 +622,7 @@ Study the following balance sheet of a banking system. The required reserve rati
 | Reserves | 300 | Deposits | 1 000 |
 | Loans | 700 | | |
 
-If the central bank issues newly printed banknotes worth \$200 million, the cash held by the non-bank public will increase by \$100 million and the money supply will increase by \$500 million. The total amount of excess reserves in the banking system will then be __________.
+If the central bank issues newly printed banknotes worth \$200 million, the cash held by the non-bank public will increase by \$100 million and the money supply will increase by \$500 million. The total amount of excess reserves in the banking system will then be \_\_\_\_\_\_\_\_\_\_.
 
 - A. \$100 million
 - B. \$120 million
@@ -660,7 +660,7 @@ Which of the following transactions would increase the money supply (M2) of Hong
 
 【題目內容】
 
-If the nominal interest rate is 5% and the expected inflation rate is 3%, the cost of holding money is __________, the nominal return of holding money is __________ and the expected real interest rate is __________.
+If the nominal interest rate is 5% and the expected inflation rate is 3%, the cost of holding money is \_\_\_\_\_\_\_\_\_\_, the nominal return of holding money is \_\_\_\_\_\_\_\_\_\_ and the expected real interest rate is \_\_\_\_\_\_\_\_\_\_.
 
 - A. 5% ...... −3% ...... 2%
 - B. 5% ...... 0% ...... 2%
@@ -744,7 +744,7 @@ Refer to the following news extract.
 
 > Yu'e Bao（餘額寶）is a new online investment fund introduced by Alibaba. Much of the popularity of Yu'e Bao has come from its ability to give customers the convenience of a demand deposit—meaning they can withdraw their funds whenever they like—but with returns well above what a bank could offer. It recently advertised an annualised return of 5.25%, but that level has on occasion risen to above 7% since the fund was set up. By contrast, banks offer 3.3% as interest for a one-year fixed deposit and close to nothing on savings deposits.
 
-Yu'e Bao is a better __________ as compared with bank deposits because __________.
+Yu'e Bao is a better \_\_\_\_\_\_\_\_\_\_ as compared with bank deposits because \_\_\_\_\_\_\_\_\_\_.
 
 - A. unit of account ...... it provides a homogeneous means of payment
 - B. unit of account ...... it can facilitate people's buying and selling of goods and services

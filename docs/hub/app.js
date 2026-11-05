@@ -110,9 +110,11 @@ function syncButtons() {
 
 /* 側邊只放下載圖示；列身（ICON 以外）整塊連去檢視頁 */
 function pdfSideHtml(pdfUrl) {
-  return pdfUrl
-    ? `<a class="icon-btn pdf" href="${pdfUrl}" target="_blank" rel="noopener" title="下載全卷 PDF" aria-label="下載全卷 PDF">${ICON_DL}</a>`
-    : `<span class="icon-btn pdf disabled" title="下載全卷 PDF · 待補" aria-label="下載全卷 PDF 待補">${ICON_DL}</span>`;
+  if (!pdfUrl) {
+    return `<span class="icon-btn pdf disabled" title="下載全卷 PDF · 待補" aria-label="下載全卷 PDF 待補">${ICON_DL}</span>`;
+  }
+  const name = String(pdfUrl).split('/').pop();
+  return `<a class="icon-btn pdf" href="${pdfUrl}" download="${name}" title="下載全卷 PDF" aria-label="下載全卷 PDF">${ICON_DL}</a>`;
 }
 
 function viewHrefFor(r) {

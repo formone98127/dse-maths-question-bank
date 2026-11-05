@@ -84,15 +84,15 @@ const TOPICS = {
   },
 };
 
-/* 全卷 PDF → dsepaper.hk 對應檔案頁（站內「下載 PDF」；/uploads 直連要登入） */
+/* 全卷 PDF → 本站直連檔（撳掣即下載，唔跳 dsepaper.hk 頁） */
 const PDF_LINKS = {
-  "math|2012|卷一": "https://dsepaper.hk/dse-mathematics-pastpaper-2012-paper-1-1",
-  "math|2012|卷二": "https://dsepaper.hk/dse-mathematics-pastpaper-2012-paper-2-1",
-  "math|2013|卷一": "https://dsepaper.hk/dse-mathematics-pastpaper-2013-paper-1-1",
-  "math|2013|卷二": "https://dsepaper.hk/dse-mathematics-pastpaper-2013-paper-2-1",
-  "math|2014|卷一": "https://dsepaper.hk/dse-mathematics-pastpaper-2014-paper-1-1",
-  "math|2015|卷二": "https://dsepaper.hk/dse-mathematics-pastpaper-2015-paper-2-1",
-  "econ|2015|卷一": "https://dsepaper.hk/dse-economics-pastpaper-2015-paper-1",
-  "econ|2017|卷一": "https://dsepaper.hk/dse-economics-pastpaper-2017-paper-1",
-  "econ|2020|卷一": "https://dsepaper.hk/dse-economics-pastpaper-2020-paper-1",
+  "math|2012|卷一": "../papers/math-2012-p1.pdf",
+  "math|2012|卷二": "../papers/math-2012-p2.pdf",
+  "math|2013|卷一": "../papers/math-2013-p1.pdf",
+  "math|2013|卷二": "../papers/math-2013-p2.pdf",
+  "math|2014|卷一": "../papers/math-2014-p1.pdf",
+  "math|2015|卷二": "../papers/math-2015-p2.pdf",
+  "econ|2015|卷一": "../papers/econ-2015-p1.pdf",
+  "econ|2017|卷一": "../papers/econ-2017-p1.pdf",
+  "econ|2020|卷一": "../papers/econ-2020-p1.pdf",
 };

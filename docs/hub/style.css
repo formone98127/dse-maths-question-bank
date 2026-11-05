@@ -519,5 +519,5 @@ footer {
   .install-btn { display: none !important; }
 }
 @media (max-width: 420px) {
-  .install-btn { height: 34px; padding: 0 12px 0 7px; font-size: 12.5px; }
+  .install-btn { height: 34px; padding: 0 12px; font-size: 12.5px; }
 }

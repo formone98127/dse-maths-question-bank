@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Add locked 'DSE Hub' watermark to delivery SVG/PNG after §9.4 pass.
+"""Add locked 'Dsepaper.hk' watermark to delivery SVG/PNG after §9.4 pass.
 
 Usage:
   python add_dse_hub_watermark.py fig.svg
   python add_dse_hub_watermark.py fig.png
   python add_dse_hub_watermark.py folder_of_figs --recursive
 
-Idempotent: skips files that already contain the watermark marker.
+Idempotent for current text. Replaces older 'DSE Hub' watermark if present.
 """
 from __future__ import annotations
 
@@ -16,10 +16,14 @@ import re
 import sys
 from pathlib import Path
 
-WM_TEXT = "DSE Hub"
-WM_MARKER = 'id="dse-hub-wm"'
+WM_TEXT = "Dsepaper.hk"
+WM_MARKER = 'id="dsepaper-hk-wm"'
 WM_FILL = "#3d8bfd"
 WM_OPACITY = 0.28
+OLD_G_RE = re.compile(
+    r'\s*<g\s+id="(?:dse-hub-wm|dsepaper-hk-wm)"[^>]*>.*?</g>\s*',
+    re.I | re.S,
+)
 
 
 def _svg_viewbox(svg: str) -> tuple[float, float]:
@@ -35,15 +39,11 @@ def _svg_viewbox(svg: str) -> tuple[float, float]:
     return 400.0, 300.0
 
 
-def watermark_svg(path: Path) -> bool:
-    raw = path.read_text(encoding="utf-8")
-    if WM_MARKER in raw or f">{WM_TEXT}</text>" in raw and "dse-hub-wm" in raw:
-        return False
-    w, h = _svg_viewbox(raw)
+def _wm_block(w: float, h: float) -> str:
     fs = max(10.0, min(w, h) * 0.045)
     x = w - max(6.0, w * 0.02)
     y = h - max(6.0, h * 0.02)
-    block = (
+    return (
         f'\n <g {WM_MARKER} pointer-events="none" aria-hidden="true">\n'
         f'  <text x="{x:.3f}" y="{y:.3f}" text-anchor="end" '
         f'font-family="Noto Sans TC, PingFang TC, Microsoft JhengHei, sans-serif" '
@@ -51,20 +51,39 @@ def watermark_svg(path: Path) -> bool:
         f'fill-opacity="{WM_OPACITY}">{WM_TEXT}</text>\n'
         f" </g>\n"
     )
-    if "</svg>" not in raw:
+
+
+def watermark_svg(path: Path) -> bool:
+    raw = path.read_text(encoding="utf-8")
+    if WM_MARKER in raw and WM_TEXT in raw:
+        return False
+    cleaned = OLD_G_RE.sub("\n", raw)
+    # also strip bare old text watermark without expected id
+    cleaned = re.sub(
+        r'\s*<text[^>]*>\s*DSE Hub\s*</text>\s*',
+        "\n",
+        cleaned,
+        flags=re.I,
+    )
+    if "</svg>" not in cleaned:
         raise ValueError(f"no </svg> in {path}")
-    path.write_text(raw.rsplit("</svg>", 1)[0] + block + "</svg>\n", encoding="utf-8")
+    w, h = _svg_viewbox(cleaned)
+    path.write_text(
+        cleaned.rsplit("</svg>", 1)[0] + _wm_block(w, h) + "</svg>\n",
+        encoding="utf-8",
+    )
     return True
 
 
 def watermark_png(path: Path) -> bool:
     from PIL import Image, ImageDraw, ImageFont
 
-    im = Image.open(path).convert("RGBA")
-    # skip if bottom-right already looks watermarked (simple marker file sidecar)
     marker = path.with_suffix(path.suffix + ".dsehubwm")
-    if marker.exists():
+    if marker.exists() and marker.read_text(encoding="utf-8").strip() == WM_TEXT:
         return False
+    # Always re-stamp from current pixels if old marker said DSE Hub —
+    # cannot cleanly remove old ink; operator should re-export from clean §9.4 asset.
+    im = Image.open(path).convert("RGBA")
     overlay = Image.new("RGBA", im.size, (0, 0, 0, 0))
     draw = ImageDraw.Draw(overlay)
     target = max(14, int(min(im.size) * 0.045))
@@ -86,13 +105,12 @@ def watermark_png(path: Path) -> bool:
     tw, th = bbox[2] - bbox[0], bbox[3] - bbox[1]
     x = im.width - tw - max(8, im.width // 50)
     y = im.height - th - max(8, im.height // 50)
-    # #3d8bfd at ~28% alpha
     draw.text((x, y), WM_TEXT, font=font, fill=(61, 139, 253, int(255 * WM_OPACITY)))
     out = Image.alpha_composite(im, overlay)
     if path.suffix.lower() in {".jpg", ".jpeg"}:
         out = out.convert("RGB")
     out.save(path)
-    marker.write_text("DSE Hub\n", encoding="utf-8")
+    marker.write_text(WM_TEXT + "\n", encoding="utf-8")
     return True
 
 
@@ -106,7 +124,7 @@ def process(path: Path) -> str:
 
 
 def main() -> int:
-    ap = argparse.ArgumentParser(description="Add DSE Hub watermark to delivery figures")
+    ap = argparse.ArgumentParser(description="Add Dsepaper.hk watermark to delivery figures")
     ap.add_argument("paths", nargs="+", type=Path)
     ap.add_argument("-r", "--recursive", action="store_true")
     args = ap.parse_args()

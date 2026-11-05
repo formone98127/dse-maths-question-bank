@@ -40,12 +40,13 @@ header { background:var(--card); border-bottom:1px solid var(--line); padding:8p
 }
 .pdf-top {
   flex:0 0 auto; margin-left:4px;
-  width:36px; height:36px; border-radius:10px;
-  display:inline-flex; align-items:center; justify-content:center;
+  height:36px; padding:0 10px 0 8px; border-radius:10px;
+  display:inline-flex; align-items:center; justify-content:center; gap:5px;
   color:var(--acc); background:#eef5fc; border:1px solid rgba(11,98,196,.22);
-  text-decoration:none;
+  text-decoration:none; white-space:nowrap;
+  font-size:12.5px; font-weight:700;
 }
-.pdf-top svg { width:18px; height:18px; fill:currentColor; }
+.pdf-top svg { width:18px; height:18px; fill:currentColor; flex:0 0 auto; }
 .pdf-top:hover { filter:brightness(0.96); }
 .pdf-top.disabled, .pdf-top[aria-disabled="true"] {
   color:#94a3b8; background:#f1f4f8; border-color:var(--line);
@@ -150,7 +151,7 @@ footer { text-align:center; color:var(--mut); font-size:11.5px; padding:4px 0 12
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.4 2.8 11.2a1 1 0 0 0 1.3 1.5L5 12.1V20a1 1 0 0 0 1 1h4.2a1 1 0 0 0 1-1v-4.2h1.6V20a1 1 0 0 0 1 1H18a1 1 0 0 0 1-1v-7.9l.9.6a1 1 0 0 0 1.3-1.5L12 3.4z"/></svg>
     </a>
     <div class="bar-title" id="barTitle">DSE 題庫</div>
-    <a class="pdf-top disabled" id="pdfBtn" href="#" aria-disabled="true" title="下載全卷 PDF · 待補" aria-label="下載全卷 PDF"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a1 1 0 0 1 1 1v9.6l2.8-2.8a1 1 0 1 1 1.4 1.4l-4.5 4.5a1 1 0 0 1-1.4 0L6.8 12.2a1 1 0 1 1 1.4-1.4L11 13.6V4a1 1 0 0 1 1-1zM5 19a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1z"/></svg></a>
+    <a class="pdf-top disabled" id="pdfBtn" href="#" aria-disabled="true" title="全卷下載 · 待補" aria-label="全卷下載"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a1 1 0 0 1 1 1v9.6l2.8-2.8a1 1 0 1 1 1.4 1.4l-4.5 4.5a1 1 0 0 1-1.4 0L6.8 12.2a1 1 0 1 1 1.4-1.4L11 13.6V4a1 1 0 0 1 1-1zM5 19a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1z"/></svg><span>全卷下載</span></a>
   </div>
 </header>
 
@@ -200,14 +201,14 @@ function syncPdfTop(q) {
     btn.removeAttribute('rel');
     btn.classList.remove('disabled');
     btn.setAttribute('aria-disabled', 'false');
-    btn.title = '下載全卷 PDF';
+    btn.title = '全卷下載';
   } else {
     btn.href = '#';
     btn.removeAttribute('download');
     btn.removeAttribute('target');
     btn.classList.add('disabled');
     btn.setAttribute('aria-disabled', 'true');
-    btn.title = '下載全卷 PDF · 待補';
+    btn.title = '全卷下載 · 待補';
   }
 }
 

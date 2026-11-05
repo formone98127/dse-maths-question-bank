@@ -137,7 +137,16 @@ mjx-container { overflow-x:auto; overflow-y:hidden; }
 #nav .btn { padding:8px 14px; border:1px solid var(--line); border-radius:8px;
             background:var(--card); font-size:14px; cursor:pointer; color:var(--ink); }
 #nav .btn:disabled { opacity:.35; }
-#pos { color:var(--mut); font-size:13px; min-width:84px; text-align:center; }
+#pos {
+  appearance:none; -webkit-appearance:none;
+  font-family:inherit; font-size:13px; font-weight:700; color:var(--acc);
+  min-width:92px; max-width:42vw; text-align:center; text-align-last:center;
+  padding:8px 28px 8px 12px; border:1px solid rgba(11,98,196,.28); border-radius:8px;
+  background:var(--card) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%230b62c4' d='M1 1.5 6 6.5 11 1.5'/%3E%3C/svg%3E") no-repeat right 10px center;
+  cursor:pointer;
+}
+#pos:disabled { opacity:.35; cursor:default; color:var(--mut); border-color:var(--line); background-image:none; }
+#pos:focus { outline:2px solid rgba(11,98,196,.28); outline-offset:1px; }
 footer { text-align:center; color:var(--mut); font-size:11.5px; padding:4px 0 12px; }
 </style>
 </head>
@@ -165,7 +174,7 @@ footer { text-align:center; color:var(--mut); font-size:11.5px; padding:4px 0 12
   </div>
   <div id="nav">
     <button class="btn" id="prev">← 上一題</button>
-    <span id="pos"></span>
+    <select id="pos" aria-label="按頁數揀題" title="撳呢度揀題"></select>
     <button class="btn" id="next">下一題 →</button>
   </div>
 </main>
@@ -362,7 +371,7 @@ function show(q, opts) {
     $('#dbadge').className = 'badge';
     $('#dbadge').textContent = '';
     $('#qbody').innerHTML = '<p style="color:var(--mut)">呢組條件暫時冇題。返主頁再揀一卷。</p>';
-    $('#pos').textContent = '0 / 0';
+    fillPosSelect(-1);
     $('#prev').disabled = true;
     $('#next').disabled = true;
     syncPdfTop(null);
@@ -396,12 +405,29 @@ function show(q, opts) {
   wireSolToggle(q);
   $('#qbody').scrollTop = 0;
   const i = qlist.findIndex(x => x.qno === q.qno && x.type === q.type);
-  $('#pos').textContent = `${i+1} / ${qlist.length}`;
+  fillPosSelect(i);
   $('#prev').disabled = i <= 0;
   $('#next').disabled = i >= qlist.length - 1;
   history.replaceState(null, '', '#' + hashFor(q, expandSol || q.type === '解答'));
   syncPdfTop(q);
   typesetQ();
+}
+/* 中間 xx / yy 可撳：開下拉直接跳去嗰題 */
+function fillPosSelect(idx) {
+  const sel = $('#pos');
+  const n = qlist.length;
+  if (!n) {
+    sel.innerHTML = '<option value="">0 / 0</option>';
+    sel.disabled = true;
+    return;
+  }
+  const cur = (idx >= 0 && idx < n) ? idx : 0;
+  sel.disabled = false;
+  sel.innerHTML = qlist.map((q, i) => {
+    const hasSol = !!findSolution(q);
+    const label = `${i + 1} / ${n}　第 ${q.qno} 題${hasSol ? ' ·有題解' : ''}`;
+    return `<option value="${i}"${i === cur ? ' selected' : ''}>${esc(label)}</option>`;
+  }).join('');
 }
 function typesetQ() {
   const MJ = window.MathJax;
@@ -415,6 +441,10 @@ const step = d => {
 };
 $('#prev').onclick = () => step(-1);
 $('#next').onclick = () => step(1);
+$('#pos').onchange = () => {
+  const i = +$('#pos').value;
+  if (Number.isFinite(i) && i >= 0 && i < qlist.length) show(qlist[i]);
+};
 
 const body = $('#qbody');
 const atBottom = () => body.scrollTop + body.clientHeight >= body.scrollHeight - 6;

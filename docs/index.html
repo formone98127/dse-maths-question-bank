@@ -38,21 +38,8 @@ header { background:var(--card); border-bottom:1px solid var(--line); padding:8p
   flex:1; min-width:0; font-size:14px; font-weight:700; color:var(--ink);
   white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
 }
-.bar-title span { color:var(--mut); font-weight:600; }
-main { flex:1; min-height:0; display:flex; flex-direction:column; max-width:960px;
-       width:100%; margin:0 auto; padding:10px 12px 0; }
-.qcard { background:var(--card); border:1px solid var(--line); border-radius:12px;
-         padding:14px 18px; display:flex; flex-direction:column; flex:1; min-height:0; }
-.qmeta { display:flex; align-items:flex-start; gap:10px; flex-wrap:wrap; padding-bottom:8px;
-         border-bottom:1px dashed var(--line); }
-.qmeta-main { flex:1; min-width:0; display:flex; align-items:baseline; gap:10px; flex-wrap:wrap; }
-.qno { font-weight:700; font-size:17px; }
-.meta { color:var(--mut); font-size:12.5px; }
-.badge { font-size:11.5px; padding:2px 8px; border-radius:6px; }
-.badge.qu { background:#e8f5ec; color:#177245; }
-.badge.ans { background:#fdf0e3; color:#a05a00; }
 .pdf-top {
-  flex:0 0 auto; margin-left:auto;
+  flex:0 0 auto; margin-left:4px;
   width:36px; height:36px; border-radius:10px;
   display:inline-flex; align-items:center; justify-content:center;
   color:var(--acc); background:#eef5fc; border:1px solid rgba(11,98,196,.22);
@@ -64,8 +51,12 @@ main { flex:1; min-height:0; display:flex; flex-direction:column; max-width:960p
   color:#94a3b8; background:#f1f4f8; border-color:var(--line);
   pointer-events:none; cursor:not-allowed;
 }
+main { flex:1; min-height:0; display:flex; flex-direction:column; max-width:960px;
+       width:100%; margin:0 auto; padding:10px 12px 0; }
+.qcard { background:var(--card); border:1px solid var(--line); border-radius:12px;
+         padding:14px 18px; display:flex; flex-direction:column; flex:1; min-height:0; }
 #qbody { flex:1; min-height:0; overflow-y:auto; -webkit-overflow-scrolling:touch;
-         font-size:15.5px; line-height:1.8; padding-top:10px; display:flex; flex-direction:column; }
+         font-size:15.5px; line-height:1.8; padding-top:2px; display:flex; flex-direction:column; }
 #qbody .qcontent { flex:1 1 auto; }
 #qbody img {
   max-width: min(100%, 640px);
@@ -159,19 +150,12 @@ footer { text-align:center; color:var(--mut); font-size:11.5px; padding:4px 0 12
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.4 2.8 11.2a1 1 0 0 0 1.3 1.5L5 12.1V20a1 1 0 0 0 1 1h4.2a1 1 0 0 0 1-1v-4.2h1.6V20a1 1 0 0 0 1 1H18a1 1 0 0 0 1-1v-7.9l.9.6a1 1 0 0 0 1.3-1.5L12 3.4z"/></svg>
     </a>
     <div class="bar-title" id="barTitle">DSE 題庫</div>
+    <a class="pdf-top disabled" id="pdfBtn" href="#" aria-disabled="true" title="下載全卷 PDF · 待補" aria-label="下載全卷 PDF"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a1 1 0 0 1 1 1v9.6l2.8-2.8a1 1 0 1 1 1.4 1.4l-4.5 4.5a1 1 0 0 1-1.4 0L6.8 12.2a1 1 0 1 1 1.4-1.4L11 13.6V4a1 1 0 0 1 1-1zM5 19a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1z"/></svg></a>
   </div>
 </header>
 
 <main>
   <div class="qcard">
-    <div class="qmeta">
-      <div class="qmeta-main">
-        <span class="qno" id="dqno"></span>
-        <span class="meta" id="dmeta"></span>
-        <span class="badge" id="dbadge"></span>
-      </div>
-      <a class="pdf-top disabled" id="pdfBtn" href="#" aria-disabled="true" title="下載全卷 PDF · 待補" aria-label="下載全卷 PDF"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a1 1 0 0 1 1 1v9.6l2.8-2.8a1 1 0 1 1 1.4 1.4l-4.5 4.5a1 1 0 0 1-1.4 0L6.8 12.2a1 1 0 1 1 1.4-1.4L11 13.6V4a1 1 0 0 1 1-1zM5 19a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1z"/></svg></a>
-    </div>
     <div id="qbody"></div>
   </div>
   <div id="nav">
@@ -333,6 +317,22 @@ function rebuildQlist() {
   }
   qlist = [...byQ.values()].sort((a, b) => a.qno - b.qno);
 }
+/* 甲部(1) 第 7 題 → 甲(1)；乙部 第 15 題 → 乙；無分部就唔加 */
+function shortSection(title) {
+  if (!title) return '';
+  let m = String(title).match(/^([甲乙丙])部(\([^)]+\))/);
+  if (m) return m[1] + m[2];
+  m = String(title).match(/^([甲乙丙])部(?=\s|$|第)/);
+  if (m) return m[1];
+  return '';
+}
+function paperBarLabel(q) {
+  if (!q) return 'DSE 題庫';
+  const sec = shortSection(q.title);
+  return sec
+    ? `${q.subject} ${q.year} ${q.paper} ${sec}`
+    : `${q.subject} ${q.year} ${q.paper}`;
+}
 function syncBarTitle(q) {
   const el = $('#barTitle');
   if (!el) return;
@@ -340,7 +340,7 @@ function syncBarTitle(q) {
     el.textContent = tag ? `課題：${tag}` : 'DSE 題庫';
     return;
   }
-  el.innerHTML = `${esc(q.subject)} <span>·</span> ${q.year} ${esc(q.paper)}`;
+  el.textContent = paperBarLabel(q);
 }
 
 function enhanceMc(root) {
@@ -382,10 +382,6 @@ function show(q, opts) {
   opts = opts || {};
   if (!q) {
     syncBarTitle(null);
-    $('#dqno').textContent = `${subj||''}　${year||''} ${paper||''}`;
-    $('#dmeta').textContent = tag ? `課題：${tag}` : '';
-    $('#dbadge').className = 'badge';
-    $('#dbadge').textContent = '';
     $('#qbody').innerHTML = '<p style="color:var(--mut)">呢組條件暫時冇題。返主頁再揀一卷。</p>';
     fillPosSelect(-1);
     $('#prev').disabled = true;
@@ -403,10 +399,6 @@ function show(q, opts) {
   subj = q.subject; year = q.year; paper = q.paper;
   rebuildQlist();
   syncBarTitle(q);
-  $('#dqno').textContent = `${q.subject}　${q.year} ${q.paper}　${q.title}`;
-  $('#dmeta').textContent = (q.tags && q.tags.length) ? `課題：${q.tags.join(' · ')}` : '';
-  $('#dbadge').className = 'badge ' + (q.type==='題目'?'qu':'ans');
-  $('#dbadge').textContent = q.type === '題目' ? '題目' : '解答';
   const tagsHtml = (q.tags && q.tags.length)
     ? `<p class="ttag"><span class="ttag-label">課題</span>${q.tags.map(t=>'#'+esc(t)).join('　')}</p>`
     : '';

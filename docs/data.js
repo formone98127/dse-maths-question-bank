@@ -1,5 +1,5 @@
 window.QB = {
- "generated": "2026-11-05 15:04",
+ "generated": "2026-11-05 15:08",
  "count": 327,
  "questions": [
   {
@@ -3361,8 +3361,8 @@ window.QB = {
    "tags": [
     "需求定律"
    ],
-   "text": "Which of the following is INCONSISTENT with the law of demand?\n\n- A. More high-quality Japanese grapes are imported to Hong Kong during Mid-Autumn Festival.\n- B. An increase of the per unit tax on beer results in a fall in the quantity of small-bottle beer sold in the market.\n- C. After the introduction of the airport departure tax which is a fixed amount for any traveller, the average length of airplane journeys decreases.\n- D. The birth rate increases when the income tax allowance for children increases.",
-   "html": "<p>Which of the following is INCONSISTENT with the law of demand?</p>\n<ul>\n<li>A. More high-quality Japanese grapes are imported to Hong Kong during Mid-Autumn Festival.</li>\n<li>B. An increase of the per unit tax on beer results in a fall in the quantity of small-bottle beer sold in the market.</li>\n<li>C. After the introduction of the airport departure tax which is a fixed amount for any traveller, the average length of airplane journeys decreases.</li>\n<li>D. The birth rate increases when the income tax allowance for children increases.</li>\n</ul>",
+   "text": "Which of the following is **INCONSISTENT** with the law of demand?\n\n- A. More high-quality Japanese grapes are imported to Hong Kong during Mid-Autumn Festival.\n- B. An increase of the per unit tax on beer results in a fall in the quantity of small-bottle beer sold in the market.\n- C. After the introduction of the airport departure tax which is a fixed amount for any traveller, the average length of airplane journeys decreases.\n- D. The birth rate increases when the income tax allowance for children increases.",
+   "html": "<p>Which of the following is <strong>INCONSISTENT</strong> with the law of demand?</p>\n<ul>\n<li>A. More high-quality Japanese grapes are imported to Hong Kong during Mid-Autumn Festival.</li>\n<li>B. An increase of the per unit tax on beer results in a fall in the quantity of small-bottle beer sold in the market.</li>\n<li>C. After the introduction of the airport departure tax which is a fixed amount for any traveller, the average length of airplane journeys decreases.</li>\n<li>D. The birth rate increases when the income tax allowance for children increases.</li>\n</ul>",
    "file": "2015_P1_QU(ENG).md"
   },
   {
@@ -3476,8 +3476,8 @@ window.QB = {
     "實質產出",
     "人均GDP"
    ],
-   "text": "Refer to the following table about an economy.\n\n| | Growth rate (relative to previous year) (%) | |\n|---|---|---|\n| | Year 1 | Year 2 |\n| Nominal GDP | 4 | 0 |\n| General price level | 3 | 1 |\n| Population | −1 | 2 |\n\nWhich of the following statements about the economy is correct?\n\n- A. The per capita nominal GDP in year 2 is the same as that in year 1.\n- B. The real output increased in year 2.\n- C. The general price level decreased in year 2.\n- D. The per capita real GDP decreased in year 2.",
-   "html": "<p>Refer to the following table about an economy.</p>\n<table>\n<thead>\n<tr>\n<th></th>\n<th>Growth rate (relative to previous year) (%)</th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td></td>\n<td>Year 1</td>\n<td>Year 2</td>\n</tr>\n<tr>\n<td>Nominal GDP</td>\n<td>4</td>\n<td>0</td>\n</tr>\n<tr>\n<td>General price level</td>\n<td>3</td>\n<td>1</td>\n</tr>\n<tr>\n<td>Population</td>\n<td>−1</td>\n<td>2</td>\n</tr>\n</tbody>\n</table>\n<p>Which of the following statements about the economy is correct?</p>\n<ul>\n<li>A. The per capita nominal GDP in year 2 is the same as that in year 1.</li>\n<li>B. The real output increased in year 2.</li>\n<li>C. The general price level decreased in year 2.</li>\n<li>D. The per capita real GDP decreased in year 2.</li>\n</ul>",
+   "text": "Refer to the following table about an economy.\n\n<table>\n<tr><th></th><th colspan=\"2\">Growth rate (relative to previous year) (%)</th></tr>\n<tr><th></th><th>Year 1</th><th>Year 2</th></tr>\n<tr><td>Nominal GDP</td><td>4</td><td>0</td></tr>\n<tr><td>General price level</td><td>3</td><td>1</td></tr>\n<tr><td>Population</td><td>−1</td><td>2</td></tr>\n</table>\n\nWhich of the following statements about the economy is correct?\n\n- A. The per capita nominal GDP in year 2 is the same as that in year 1.\n- B. The real output increased in year 2.\n- C. The general price level decreased in year 2.\n- D. The per capita real GDP decreased in year 2.",
+   "html": "<p>Refer to the following table about an economy.</p>\n<table>\n<tr><th></th><th colspan=\"2\">Growth rate (relative to previous year) (%)</th></tr>\n<tr><th></th><th>Year 1</th><th>Year 2</th></tr>\n<tr><td>Nominal GDP</td><td>4</td><td>0</td></tr>\n<tr><td>General price level</td><td>3</td><td>1</td></tr>\n<tr><td>Population</td><td>−1</td><td>2</td></tr>\n</table>\n\n<p>Which of the following statements about the economy is correct?</p>\n<ul>\n<li>A. The per capita nominal GDP in year 2 is the same as that in year 1.</li>\n<li>B. The real output increased in year 2.</li>\n<li>C. The general price level decreased in year 2.</li>\n<li>D. The per capita real GDP decreased in year 2.</li>\n</ul>",
    "file": "2015_P1_QU(ENG).md"
   },
   {

@@ -384,7 +384,7 @@ Which of the following is an example of the divergence between private and socia
 
 【題目內容】
 
-Which of the following is INCONSISTENT with the law of demand?
+Which of the following is **INCONSISTENT** with the law of demand?
 
 - A. More high-quality Japanese grapes are imported to Hong Kong during Mid-Autumn Festival.
 - B. An increase of the per unit tax on beer results in a fall in the quantity of small-bottle beer sold in the market.
@@ -529,12 +529,13 @@ Which of the following would be included in the calculation of Hong Kong's GDP f
 
 Refer to the following table about an economy.
 
-| | Growth rate (relative to previous year) (%) | |
-|---|---|---|
-| | Year 1 | Year 2 |
-| Nominal GDP | 4 | 0 |
-| General price level | 3 | 1 |
-| Population | −1 | 2 |
+<table>
+<tr><th></th><th colspan="2">Growth rate (relative to previous year) (%)</th></tr>
+<tr><th></th><th>Year 1</th><th>Year 2</th></tr>
+<tr><td>Nominal GDP</td><td>4</td><td>0</td></tr>
+<tr><td>General price level</td><td>3</td><td>1</td></tr>
+<tr><td>Population</td><td>−1</td><td>2</td></tr>
+</table>
 
 Which of the following statements about the economy is correct?
 

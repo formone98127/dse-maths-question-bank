@@ -65,15 +65,38 @@ main { flex:1; min-height:0; display:flex; flex-direction:column; max-width:960p
 #qbody th { background:#eef2f6; font-weight:700; }
 #qbody .ttag { color:var(--acc); font-size:12.5px; }
 #qbody .ttag-label { color:var(--mut); font-size:12.5px; margin-right:4px; }
-.sol-row {
+.sol-panel {
+  margin-top:16px; padding-top:10px; border-top:1px dashed var(--line);
+}
+.sol-toggle {
+  display:inline-flex; align-items:center; gap:8px;
+  margin-left:auto; margin-right:0;
+  padding:8px 12px; min-height:40px;
+  border:1px solid rgba(198,40,40,.28); border-radius:10px;
+  background:#fff5f5; color:var(--sol);
+  font:inherit; font-size:14px; font-weight:700;
+  cursor:pointer; touch-action:manipulation;
+}
+.sol-panel > .sol-toggle { display:flex; width:fit-content; margin-left:auto; }
+.sol-toggle:hover { filter:brightness(0.98); }
+.sol-chevron {
+  width:0; height:0;
+  border-left:5px solid transparent; border-right:5px solid transparent;
+  border-top:6px solid currentColor;
+  transition: transform .18s ease;
+}
+.sol-panel.open .sol-chevron { transform: rotate(180deg); }
+.sol-body {
+  margin-top:12px; padding:12px 14px;
+  border:1px solid rgba(198,40,40,.18); border-radius:12px;
+  background:#fffafa;
+}
+.sol-body[hidden] { display:none !important; }
+.sol-content { font-size:15.5px; line-height:1.8; }
+.sol-pending-row {
   display:flex; justify-content:flex-end; align-items:center;
   margin-top:16px; padding-top:10px; border-top:1px dashed var(--line);
 }
-.sol-link {
-  color:var(--sol); font-weight:700; font-size:14px;
-  text-decoration:none; border-bottom:1px solid rgba(198,40,40,.35);
-}
-.sol-link:hover { border-bottom-color:var(--sol); }
 .sol-pending {
   color:var(--sol); font-weight:700; font-size:14px; opacity:.72;
 }
@@ -197,21 +220,54 @@ function findQuestion(q) {
     x.qno === q.qno
   ) || null;
 }
-function solFooterHtml(q) {
+function hashFor(q, withSol) {
+  if (!q) return '';
+  const base = `${q.subject==='經濟'?'econ':''}${q.year}P${pno(q.paper)}Q${q.qno}`;
+  return withSol ? `${base}A` : base;
+}
+/* 題目底下嵌入對應題解；撳掣展開／收起（唔跳去另一頁） */
+function solExpandHtml(q, expanded) {
   if (!q) return '';
   if (q.type === '解答') {
     const qu = findQuestion(q);
     if (qu) {
-      return `<div class="sol-row"><a class="sol-link" href="#${q.subject==='經濟'?'econ':''}${q.year}P${pno(q.paper)}Q${q.qno}" id="solLink">返回題目</a></div>`;
+      /* 舊 #…A 深連結：轉去題目＋展開 */
+      return '';
     }
-    return `<div class="sol-row"><span class="sol-link">題解</span></div>`;
+    return '';
   }
   const sol = findSolution(q);
-  if (sol) {
-    const hash = `${q.subject==='經濟'?'econ':''}${q.year}P${pno(q.paper)}Q${q.qno}A`;
-    return `<div class="sol-row"><a class="sol-link" href="#${hash}" id="solLink">題解</a></div>`;
+  if (!sol) {
+    return `<div class="sol-pending-row"><span class="sol-pending">待建立題解</span></div>`;
   }
-  return `<div class="sol-row"><span class="sol-pending">待建立題解</span></div>`;
+  const open = !!expanded;
+  return `
+    <div class="sol-panel${open ? ' open' : ''}" id="solPanel" data-expanded="${open ? 'true' : 'false'}">
+      <button type="button" class="sol-toggle" id="solToggle" aria-expanded="${open ? 'true' : 'false'}">
+        <span class="sol-toggle-label">${open ? '收起題解' : '題解'}</span>
+        <span class="sol-chevron" aria-hidden="true"></span>
+      </button>
+      <div class="sol-body" id="solBody"${open ? '' : ' hidden'}>
+        <div class="sol-content">${sol.html}</div>
+      </div>
+    </div>`;
+}
+function wireSolToggle(q) {
+  const toggle = $('#solToggle');
+  const panel = $('#solPanel');
+  const body = $('#solBody');
+  if (!toggle || !panel || !body) return;
+  toggle.addEventListener('click', () => {
+    const open = panel.dataset.expanded !== 'true';
+    panel.dataset.expanded = open ? 'true' : 'false';
+    panel.classList.toggle('open', open);
+    body.hidden = !open;
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    const label = toggle.querySelector('.sol-toggle-label');
+    if (label) label.textContent = open ? '收起題解' : '題解';
+    history.replaceState(null, '', '#' + hashFor(q, open));
+    if (open) typesetQ();
+  });
 }
 
 let subj = null, year = null, paper = null, qno = null, tag = '';
@@ -249,16 +305,27 @@ function fillTags() {
   $('#stag').value = keep;
 }
 function filteredQlist() {
-  return QS.filter(q =>
+  const pool = QS.filter(q =>
     q.subject===subj && q.year==year && q.paper===paper &&
     (!tag || (q.tags || []).includes(tag))
-  ).sort((a,b)=>a.qno-b.qno || (a.type<b.type?-1:1));
+  );
+  /* 每題一格：有題目用題目（題解撳展開）；淨答案卷先顯示解答 */
+  const byQ = new Map();
+  for (const q of pool) {
+    const prev = byQ.get(q.qno);
+    if (!prev) byQ.set(q.qno, q);
+    else if (prev.type === '解答' && q.type === '題目') byQ.set(q.qno, q);
+  }
+  return [...byQ.values()].sort((a, b) => a.qno - b.qno);
 }
 function fillQnos() {
   qlist = filteredQlist();
   $('#sqno').innerHTML = qlist.length
-    ? qlist.map(q =>
-        `<option value="${q.qno}|${q.type}">${q.title}${q.type==='解答'?'　·解':''}</option>`).join('')
+    ? qlist.map(q => {
+        const hasSol = q.type === '題目' && !!findSolution(q);
+        const mark = q.type === '解答' ? '　·解' : (hasSol ? '　·有題解' : '');
+        return `<option value="${q.qno}|${q.type}">${q.title}${mark}</option>`;
+      }).join('')
     : `<option value="">（呢個課題呢卷暫時冇題）</option>`;
 }
 function syncSelectors() {
@@ -307,7 +374,8 @@ function enhanceMc(root) {
 }
 
 let curQ = null;
-function show(q) {
+function show(q, opts) {
+  opts = opts || {};
   if (!q) {
     $('#dqno').textContent = `${subj||''}　${year||''} ${paper||''}`;
     $('#dmeta').textContent = tag ? `課題：${tag}` : '';
@@ -320,6 +388,11 @@ function show(q) {
     syncPdfTop(null);
     return;
   }
+  /* 若深連結落喺解答、但已有對應題目 → 改顯示題目＋展開題解 */
+  if (q.type === '解答') {
+    const qu = findQuestion(q);
+    if (qu) return show(qu, { expandSol: true });
+  }
   curQ = q;
   qno = q.qno;
   subj = q.subject; year = q.year; paper = q.paper;
@@ -328,36 +401,24 @@ function show(q) {
   $('#dmeta').textContent = (q.tags && q.tags.length) ? `課題：${q.tags.join(' · ')}` : '';
   $('#dbadge').className = 'badge ' + (q.type==='題目'?'qu':'ans');
   $('#dbadge').textContent = q.type === '題目' ? '題目' : '解答';
-  const tagsHtml = q.tags.length
+  const tagsHtml = (q.tags && q.tags.length)
     ? `<p class="ttag"><span class="ttag-label">課題</span>${q.tags.map(t=>'#'+esc(t)).join('　')}</p>`
     : '';
+  const expandSol = !!opts.expandSol && !!findSolution(q);
   $('#qbody').innerHTML =
     `<div class="qcontent">${q.html}${tagsHtml}</div>` +
-    solFooterHtml(q);
-  enhanceMc($('#qbody'));
-  const solA = $('#solLink');
-  if (solA) {
-    solA.addEventListener('click', e => {
-      e.preventDefault();
-      const m = solA.getAttribute('href').match(/^#(econ)?(\d{4})P(\d)Q(\d+)(A)?/i);
-      if (!m) return;
-      const wantSol = !!m[5];
-      const target = QS.find(x =>
-        x.subject === (m[1] ? '經濟' : '數學') &&
-        x.year == +m[2] &&
-        pno(x.paper) == m[3] &&
-        x.qno == +m[4] &&
-        x.type === (wantSol ? '解答' : '題目')
-      );
-      if (target) show(target);
-    });
-  }
+    solExpandHtml(q, expandSol);
+  const qcontent = $('#qbody .qcontent');
+  if (qcontent) enhanceMc(qcontent);
+  const solContent = $('#qbody .sol-content');
+  if (solContent) enhanceMc(solContent);
+  wireSolToggle(q);
   $('#qbody').scrollTop = 0;
-  const i = qlist.findIndex(x=>x===q);
+  const i = qlist.findIndex(x => x.qno === q.qno && x.type === q.type);
   $('#pos').textContent = `${i+1} / ${qlist.length}`;
   $('#prev').disabled = i <= 0;
   $('#next').disabled = i >= qlist.length - 1;
-  location.hash = `${q.subject==='經濟'?'econ':''}${q.year}P${pno(q.paper)}Q${q.qno}${q.type==='解答'?'A':''}`;
+  history.replaceState(null, '', '#' + hashFor(q, expandSol || q.type === '解答'));
   syncPdfTop(q);
   typesetQ();
 }
@@ -433,20 +494,23 @@ function openFromHash() {
   if (!m) return false;
   const hSubj = m[1] ? '經濟' : '數學';
   const wantSol = !!m[5];
-  if (curQ && curQ.subject === hSubj && curQ.year == m[2] && pno(curQ.paper) == m[3] && curQ.qno == m[4] &&
-      ((wantSol && curQ.type==='解答') || (!wantSol && curQ.type==='題目')))
-    return true;
+  const panel = $('#solPanel');
+  if (curQ && curQ.subject === hSubj && curQ.year == m[2] && pno(curQ.paper) == m[3] && curQ.qno == m[4]) {
+    const expanded = panel && panel.dataset.expanded === 'true';
+    if (wantSol === expanded || (wantSol && curQ.type === '解答')) return true;
+  }
   subj = hSubj;
   year = +m[2];
   paper = m[3]==='2'?'Paper 2':'Paper 1';
   fillYears(); fillPapers(); fillTags(); fillQnos();
   const n = +m[4];
-  const q = QS.find(x=>x.subject===subj && x.year==year && x.paper===paper && x.qno==n && x.type===(wantSol?'解答':'題目'))
-         || qlist.find(x=>x.qno==n && x.type==='題目')
-         || QS.find(x=>x.subject===subj && x.year==year && x.paper===paper && x.qno==n);
+  const qu = QS.find(x=>x.subject===subj && x.year==year && x.paper===paper && x.qno==n && x.type==='題目');
+  const sol = QS.find(x=>x.subject===subj && x.year==year && x.paper===paper && x.qno==n && x.type==='解答');
+  const q = qu || sol || qlist.find(x=>x.qno==n) ||
+            QS.find(x=>x.subject===subj && x.year==year && x.paper===paper && x.qno==n);
   if (q) {
     if (tag && !(q.tags||[]).includes(tag)) tag = '';
-    show(q);
+    show(q, { expandSol: wantSol });
   }
   return !!q;
 }

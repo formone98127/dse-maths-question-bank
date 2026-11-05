@@ -1,5 +1,5 @@
 window.QB = {
- "generated": "2026-11-05 14:57",
+ "generated": "2026-11-05 15:04",
  "count": 327,
  "questions": [
   {
@@ -3378,8 +3378,8 @@ window.QB = {
     "剩餘",
     "無謂損失"
    ],
-   "text": "Refer to the following diagram.\n\n\nIf the government lowers the price ceiling from $P_a$ to $P_b$,\n\n- A. the quantity transacted will increase.\n- B. the deadweight loss will decrease.\n- C. the producer surplus will decrease.\n- D. the consumer surplus will increase.",
-   "html": "<p>Refer to the following diagram.</p>\n<p>If the government lowers the price ceiling from $P_a$ to $P_b$,</p>\n<ul>\n<li>A. the quantity transacted will increase.</li>\n<li>B. the deadweight loss will decrease.</li>\n<li>C. the producer surplus will decrease.</li>\n<li>D. the consumer surplus will increase.</li>\n</ul>",
+   "text": "Refer to the following diagram.\n\n![fig_2015P1_q19](2015_P1_images/fig_2015P1_q19.png)\n\nIf the government lowers the price ceiling from $P_a$ to $P_b$,\n\n- A. the quantity transacted will increase.\n- B. the deadweight loss will decrease.\n- C. the producer surplus will decrease.\n- D. the consumer surplus will increase.",
+   "html": "<p>Refer to the following diagram.</p>\n<p><img alt=\"fig_2015P1_q19\" src=\"2015_P1_images/fig_2015P1_q19.png\" /></p>\n<p>If the government lowers the price ceiling from $P_a$ to $P_b$,</p>\n<ul>\n<li>A. the quantity transacted will increase.</li>\n<li>B. the deadweight loss will decrease.</li>\n<li>C. the producer surplus will decrease.</li>\n<li>D. the consumer surplus will increase.</li>\n</ul>",
    "file": "2015_P1_QU(ENG).md"
   },
   {

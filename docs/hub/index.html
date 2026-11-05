@@ -7,13 +7,37 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20261105m">
+<meta name="theme-color" content="#0b1220">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../icons/icon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="DSE Hub">
+<meta name="application-name" content="DSE Hub">
+<meta name="description" content="DSE 數學與經濟歷屆試題、課題標籤同題解，按課題集中溫習。">
+<link rel="stylesheet" href="style.css?v=20261105n">
 </head>
 <body>
 <header class="hero">
   <div class="hero-glow" aria-hidden="true"></div>
   <div class="hero-inner">
-    <p class="brand">DSE Hub</p>
+    <div class="hero-head">
+      <p class="brand">DSE Hub</p>
+      <button type="button" class="install-btn" data-install-app title="安裝 DSE Hub 到主畫面">
+        <img class="install-ico" src="../icons/icon-192.png" alt="" width="22" height="22">
+        <span>安裝 App</span>
+      </button>
+    </div>
+    <div class="install-tip" id="installTip" hidden>
+      <div class="install-tip-body">
+        <strong>一鍵加到主畫面</strong>
+        <span>iPhone／iPad：用 Safari「分享」→「加到主畫面」。Android／電腦 Chrome、Edge：瀏覽器選單 →「安裝應用程式」。</span>
+      </div>
+      <button type="button" class="install-tip-x" data-install-close aria-label="閂">×</button>
+    </div>
     <h1>香港中學文憑歷屆試題資料庫</h1>
   </div>
 </header>
@@ -66,8 +90,9 @@
   </div>
 </div>
 
-<script src="../data.js?v=20261105m"></script>
-<script src="data.js?v=20261105m"></script>
-<script src="app.js?v=20261105m"></script>
+<script src="../data.js?v=20261105n"></script>
+<script src="data.js?v=20261105n"></script>
+<script src="app.js?v=20261105n"></script>
+<script src="../pwa.js?v=20261105n"></script>
 </body>
 </html>

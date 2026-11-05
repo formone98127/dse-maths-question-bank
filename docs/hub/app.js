@@ -144,7 +144,6 @@ function rowHtml(r) {
           <span class="tag subj">${sn}</span>
           <span class="tag cat">${r.paper}</span>
           <span class="tag lang">${r.lang}</span>
-          <span class="tag live">電子題庫已上線</span>
         </div>
         <div class="paper-title-row">
           <div class="paper-title">文憑試 DSE ${sn} ${r.year} · ${r.paper}（${r.lang}）</div>
@@ -219,7 +218,6 @@ function renderTopic() {
         <div class="paper-tags">
           <span class="tag subj">${sn}</span>
           <span class="tag cat">${topicLabel}</span>
-          <span class="tag live">有電子題可睇</span>
         </div>
         <div class="paper-title-row">
           <div class="paper-title">${sn} · ${topicLabel}</div>

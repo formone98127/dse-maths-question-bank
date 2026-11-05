@@ -275,6 +275,13 @@ function solExpandHtml(q, expanded) {
       </div>
     </div>`;
 }
+function scrollSolIntoView(panel) {
+  const qb = $('#qbody');
+  if (!qb || !panel) return;
+  const gap = 8;
+  const top = qb.scrollTop + (panel.getBoundingClientRect().top - qb.getBoundingClientRect().top) - gap;
+  qb.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+}
 function wireSolToggle(q) {
   const toggle = $('#solToggle');
   const panel = $('#solPanel');
@@ -289,7 +296,14 @@ function wireSolToggle(q) {
     const label = toggle.querySelector('.sol-toggle-label');
     if (label) label.textContent = open ? '收起題解' : '題解';
     history.replaceState(null, '', '#' + hashFor(q, open));
-    if (open) typesetQ();
+    if (!open) return;
+    const go = () => scrollSolIntoView(panel);
+    const MJ = window.MathJax;
+    if (MJ?.typesetPromise) {
+      MJ.typesetPromise([$('#qbody')]).then(go).catch(go);
+    } else {
+      requestAnimationFrame(go);
+    }
   });
 }
 
@@ -410,7 +424,10 @@ function show(q, opts) {
   $('#next').disabled = i >= qlist.length - 1;
   history.replaceState(null, '', '#' + hashFor(q, expandSol || q.type === '解答'));
   syncPdfTop(q);
-  typesetQ();
+  const MJ = window.MathJax;
+  const done = () => { if (expandSol) scrollSolIntoView($('#solPanel')); };
+  if (MJ?.typesetPromise) MJ.typesetPromise([$('#qbody')]).then(done).catch(done);
+  else { typesetQ(); if (expandSol) requestAnimationFrame(done); }
 }
 /* 中間 xx / yy 可撳：開下拉直接跳去嗰題 */
 function fillPosSelect(idx) {

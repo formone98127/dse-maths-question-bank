@@ -5,10 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <title>DSE 題庫 · 數學與經濟</title>
 <script>
-/* 冇指定題目 hash 時唔好自動開第一題（唔寫 #2012P1Q1）；入口去 DSE Hub */
-if (!location.hash) {
-  location.replace('hub/' + (location.search || ''));
-}
+/* 冇題號、又唔係課題深連結 → 去 DSE Hub；有 #題號 或 ?subject/?tag 就留喺題目頁 */
+(function () {
+  if (location.hash) return;
+  var p = new URLSearchParams(location.search);
+  if (!p.get('subject') && !p.get('tag')) {
+    location.replace('hub/' + (location.search || ''));
+  }
+})();
 </script>
 <script>MathJax = {tex: {inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$']]},
   startup: {ready() { MathJax.startup.defaultReady(); if (window.typesetQ) typesetQ(); }}};</script>
@@ -20,10 +24,21 @@ html,body { height:100%; }
 body { margin:0; background:var(--bg); color:var(--ink); display:flex; flex-direction:column;
        font-family:"Microsoft JhengHei","PingFang TC",system-ui,sans-serif;
        overscroll-behavior:none; }
-header { background:var(--card); border-bottom:1px solid var(--line); padding:10px 14px; z-index:5; }
-.bar { display:flex; gap:8px; align-items:center; max-width:960px; margin:0 auto; flex-wrap:wrap; }
-select { flex:1; padding:9px 10px; border:1px solid var(--line); border-radius:8px;
-         font-size:14.5px; background:var(--card); min-width:0; }
+header { background:var(--card); border-bottom:1px solid var(--line); padding:8px 14px; z-index:5; }
+.bar { display:flex; gap:10px; align-items:center; max-width:960px; margin:0 auto; }
+.home-btn {
+  flex:0 0 auto; width:40px; height:40px; border-radius:10px;
+  display:inline-flex; align-items:center; justify-content:center;
+  color:var(--acc); background:#eef5fc; border:1px solid rgba(11,98,196,.22);
+  text-decoration:none;
+}
+.home-btn svg { width:20px; height:20px; fill:currentColor; }
+.home-btn:hover { filter:brightness(0.96); }
+.bar-title {
+  flex:1; min-width:0; font-size:14px; font-weight:700; color:var(--ink);
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+.bar-title span { color:var(--mut); font-weight:600; }
 main { flex:1; min-height:0; display:flex; flex-direction:column; max-width:960px;
        width:100%; margin:0 auto; padding:10px 12px 0; }
 .qcard { background:var(--card); border:1px solid var(--line); border-radius:12px;
@@ -129,11 +144,10 @@ footer { text-align:center; color:var(--mut); font-size:11.5px; padding:4px 0 12
 <body>
 <header>
   <div class="bar">
-    <select id="ssubj"></select>
-    <select id="syear"></select>
-    <select id="spaper"></select>
-    <select id="stag"><option value="">全部課題</option></select>
-    <select id="sqno"></select>
+    <a class="home-btn" href="hub/" title="返 DSE Hub 主頁" aria-label="返 DSE Hub 主頁">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.4 2.8 11.2a1 1 0 0 0 1.3 1.5L5 12.1V20a1 1 0 0 0 1 1h4.2a1 1 0 0 0 1-1v-4.2h1.6V20a1 1 0 0 0 1 1H18a1 1 0 0 0 1-1v-7.9l.9.6a1 1 0 0 0 1.3-1.5L12 3.4z"/></svg>
+    </a>
+    <div class="bar-title" id="barTitle">DSE 題庫</div>
   </div>
 </header>
 
@@ -271,73 +285,38 @@ function wireSolToggle(q) {
 }
 
 let subj = null, year = null, paper = null, qno = null, tag = '';
-let paperList = [];
 let qlist = [];
 
 const params = new URLSearchParams(location.search);
 const wantSubj = params.get('subject') || '';
 const wantTag = params.get('tag') || '';
+const subjs = [...new Set(QS.map(q => q.subject))];
 
-const subjs = [...new Set(QS.map(q=>q.subject))];
-subjs.forEach(s => $('#ssubj').insertAdjacentHTML('beforeend',`<option>${s}</option>`));
-
-function fillYears() {
-  const ys = [...new Set(QS.filter(q=>q.subject===subj).map(q=>q.year))].sort();
-  $('#syear').innerHTML = ys.map(y=>`<option>${y}</option>`).join('');
-}
-function fillPapers() {
-  paperList = [...new Set(QS.filter(q=>q.subject===subj && q.year==year).map(q=>q.paper))]
-    .sort((a,b)=>pno(a)-pno(b));
-  $('#spaper').innerHTML = paperList.map(p=>`<option>${p}</option>`).join('');
-}
-function fillTags() {
+/* 題目頁唔再揀科目／年份／題號；由 Hub／網址決定，用上一題下一題翻 */
+function rebuildQlist() {
   const pool = QS.filter(q =>
-    q.subject===subj &&
-    (year == null || q.year==year) &&
-    (paper == null || q.paper===paper)
-  );
-  const tags = [...new Set(pool.flatMap(q => q.tags || []))].sort((a,b)=>a.localeCompare(b,'zh-Hant'));
-  const keep = tag && tags.includes(tag) ? tag : '';
-  tag = keep;
-  $('#stag').innerHTML =
-    `<option value="">全部課題</option>` +
-    tags.map(t => `<option value="${esc(t)}">${esc(t)}</option>`).join('');
-  $('#stag').value = keep;
-}
-function filteredQlist() {
-  const pool = QS.filter(q =>
-    q.subject===subj && q.year==year && q.paper===paper &&
+    q.subject === subj &&
+    (year == null || q.year == year) &&
+    (paper == null || q.paper === paper) &&
     (!tag || (q.tags || []).includes(tag))
   );
-  /* 每題一格：有題目用題目（題解撳展開）；淨答案卷先顯示解答 */
   const byQ = new Map();
   for (const q of pool) {
     const prev = byQ.get(q.qno);
     if (!prev) byQ.set(q.qno, q);
     else if (prev.type === '解答' && q.type === '題目') byQ.set(q.qno, q);
   }
-  return [...byQ.values()].sort((a, b) => a.qno - b.qno);
+  qlist = [...byQ.values()].sort((a, b) => a.qno - b.qno);
 }
-function fillQnos() {
-  qlist = filteredQlist();
-  $('#sqno').innerHTML = qlist.length
-    ? qlist.map(q => {
-        const hasSol = q.type === '題目' && !!findSolution(q);
-        const mark = q.type === '解答' ? '　·解' : (hasSol ? '　·有題解' : '');
-        return `<option value="${q.qno}|${q.type}">${q.title}${mark}</option>`;
-      }).join('')
-    : `<option value="">（呢個課題呢卷暫時冇題）</option>`;
+function syncBarTitle(q) {
+  const el = $('#barTitle');
+  if (!el) return;
+  if (!q) {
+    el.textContent = tag ? `課題：${tag}` : 'DSE 題庫';
+    return;
+  }
+  el.innerHTML = `${esc(q.subject)} <span>·</span> ${q.year} ${esc(q.paper)}`;
 }
-function syncSelectors() {
-  $('#ssubj').value = subj;
-  fillYears(); $('#syear').value = year;
-  fillPapers(); $('#spaper').value = paper;
-  fillTags();
-  fillQnos();
-  const cur = qlist.find(q=>q.qno==qno && (!curType() || q.type===curType()));
-  if (cur) $('#sqno').value = `${cur.qno}|${cur.type}`;
-}
-const curType = () => { const c = qlist.find(q=>q.qno==qno); return c ? c.type : null; };
 
 function enhanceMc(root) {
   root.querySelectorAll('ul').forEach(ul => {
@@ -377,11 +356,12 @@ let curQ = null;
 function show(q, opts) {
   opts = opts || {};
   if (!q) {
+    syncBarTitle(null);
     $('#dqno').textContent = `${subj||''}　${year||''} ${paper||''}`;
     $('#dmeta').textContent = tag ? `課題：${tag}` : '';
     $('#dbadge').className = 'badge';
     $('#dbadge').textContent = '';
-    $('#qbody').innerHTML = '<p style="color:var(--mut)">呢組條件暫時冇題。試下改「全部課題」或者換一卷。</p>';
+    $('#qbody').innerHTML = '<p style="color:var(--mut)">呢組條件暫時冇題。返主頁再揀一卷。</p>';
     $('#pos').textContent = '0 / 0';
     $('#prev').disabled = true;
     $('#next').disabled = true;
@@ -396,7 +376,8 @@ function show(q, opts) {
   curQ = q;
   qno = q.qno;
   subj = q.subject; year = q.year; paper = q.paper;
-  syncSelectors();
+  rebuildQlist();
+  syncBarTitle(q);
   $('#dqno').textContent = `${q.subject}　${q.year} ${q.paper}　${q.title}`;
   $('#dmeta').textContent = (q.tags && q.tags.length) ? `課題：${q.tags.join(' · ')}` : '';
   $('#dbadge').className = 'badge ' + (q.type==='題目'?'qu':'ans');
@@ -426,43 +407,14 @@ function typesetQ() {
   const MJ = window.MathJax;
   if (MJ?.typesetPromise) MJ.typesetPromise([$('#qbody')]).catch(()=>{});
 }
-function goto(y,p,n) {
-  const cands = QS.filter(q=>q.subject===subj && q.year==y && q.paper===p);
-  const q = cands.find(x=>x.qno==n && x.type==='題目') || cands.find(x=>x.qno==n);
-  if (q) { year=y; paper=p; show(q); }
-}
 const step = d => {
-  const i = qlist.findIndex(x=>x===curQ);
+  if (!curQ) return;
+  const i = qlist.findIndex(x => x.qno === curQ.qno && x.type === curQ.type);
   const j = i + d;
   if (j >= 0 && j < qlist.length) show(qlist[j]);
 };
 $('#prev').onclick = () => step(-1);
 $('#next').onclick = () => step(1);
-$('#ssubj').addEventListener('change', e => {
-  subj = e.target.value; year = paper = paperList = null; tag = '';
-  fillYears(); year = +$('#syear').value;
-  fillPapers(); paper = paperList[0];
-  fillTags(); fillQnos(); show(qlist[0]);
-});
-$('#syear').addEventListener('change', e => {
-  year = +e.target.value;
-  paper = paperList = null; tag = '';
-  fillPapers(); paper = paperList[0];
-  fillTags(); fillQnos(); show(qlist[0]);
-});
-$('#spaper').addEventListener('change', e => {
-  paper = e.target.value; tag = '';
-  fillTags(); fillQnos(); show(qlist[0]);
-});
-$('#stag').addEventListener('change', e => {
-  tag = e.target.value || '';
-  fillQnos();
-  show(qlist[0] || null);
-});
-$('#sqno').addEventListener('change', e => {
-  const [n,t] = e.target.value.split('|');
-  show(qlist.find(q=>q.qno==n && q.type===t) || qlist[0] || null);
-});
 
 const body = $('#qbody');
 const atBottom = () => body.scrollTop + body.clientHeight >= body.scrollHeight - 6;
@@ -501,49 +453,47 @@ function openFromHash() {
   }
   subj = hSubj;
   year = +m[2];
-  paper = m[3]==='2'?'Paper 2':'Paper 1';
-  fillYears(); fillPapers(); fillTags(); fillQnos();
+  paper = m[3] === '2' ? 'Paper 2' : 'Paper 1';
+  /* 有明確題號時唔用課題篩，避免上一題下一題被卡住 */
+  if (!wantTag) tag = '';
+  rebuildQlist();
   const n = +m[4];
-  const qu = QS.find(x=>x.subject===subj && x.year==year && x.paper===paper && x.qno==n && x.type==='題目');
-  const sol = QS.find(x=>x.subject===subj && x.year==year && x.paper===paper && x.qno==n && x.type==='解答');
-  const q = qu || sol || qlist.find(x=>x.qno==n) ||
-            QS.find(x=>x.subject===subj && x.year==year && x.paper===paper && x.qno==n);
-  if (q) {
-    if (tag && !(q.tags||[]).includes(tag)) tag = '';
-    show(q, { expandSol: wantSol });
-  }
+  const qu = QS.find(x => x.subject===subj && x.year==year && x.paper===paper && x.qno==n && x.type==='題目');
+  const sol = QS.find(x => x.subject===subj && x.year==year && x.paper===paper && x.qno==n && x.type==='解答');
+  const q = qu || sol || qlist.find(x => x.qno==n) ||
+            QS.find(x => x.subject===subj && x.year==year && x.paper===paper && x.qno==n);
+  if (q) show(q, { expandSol: wantSol });
   return !!q;
 }
 window.addEventListener('hashchange', openFromHash);
 
-/* 冇 hash：head 已轉去 hub/，唔好再 show 第一題寫入 #2012P1Q1 */
+/* 冇 hash：head 已轉去 hub/（除非 ?subject / ?tag 課題深連結） */
 if (!location.hash) {
-  /* redirect already issued in <head> */
-} else if (openFromHash()) {
-  /* deep link opened */
-} else {
-  if (wantSubj && subjs.includes(wantSubj)) subj = wantSubj;
-  else subj = subjs[0];
-  fillYears();
-  year = +$('#syear').value;
-  fillPapers();
-  paper = paperList[0];
-  tag = wantTag || '';
-  fillTags();
-  if (wantTag && $('#stag').querySelector(`option[value="${CSS.escape(wantTag)}"]`)) {
-    tag = wantTag;
-    $('#stag').value = wantTag;
+  if (wantSubj || wantTag) {
+    if (wantSubj && subjs.includes(wantSubj)) subj = wantSubj;
+    else subj = subjs[0];
+    tag = wantTag || '';
+    year = paper = null;
+    rebuildQlist();
+    if (tag) {
+      const hit = QS.find(q => q.subject===subj && (q.tags||[]).includes(tag) && q.type==='題目')
+               || QS.find(q => q.subject===subj && (q.tags||[]).includes(tag));
+      if (hit) {
+        year = hit.year; paper = hit.paper;
+        rebuildQlist();
+        show(hit);
+      } else show(qlist[0] || null);
+    } else {
+      const first = QS.find(q => q.subject===subj && q.type==='題目') || QS.find(q => q.subject===subj);
+      if (first) {
+        year = first.year; paper = first.paper;
+        rebuildQlist();
+        show(first);
+      } else show(null);
+    }
   }
-  fillQnos();
-  if (tag) {
-    const hit = QS.find(q => q.subject===subj && (q.tags||[]).includes(tag) && q.type==='題目')
-             || QS.find(q => q.subject===subj && (q.tags||[]).includes(tag));
-    if (hit) {
-      year = hit.year; paper = hit.paper;
-      fillYears(); fillPapers(); fillTags(); fillQnos();
-      show(hit);
-    } else show(qlist[0] || null);
-  } else show(qlist[0] || null);
+} else {
+  openFromHash();
 }
 </script>
 </body>

@@ -294,7 +294,7 @@ main {
 
 .paper-row {
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: auto 1fr auto;
   gap: 14px 18px;
   align-items: center;
   padding: 18px 8px;
@@ -302,21 +302,6 @@ main {
   transition: background 0.18s ease;
 }
 .paper-row:hover { background: rgba(255, 255, 255, 0.025); }
-.paper-main {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 14px 18px;
-  align-items: center;
-  min-width: 0;
-  text-decoration: none;
-  color: inherit;
-  border-radius: 10px;
-}
-.paper-main:hover .paper-title { color: #93c5fd; }
-.paper-main:focus-visible {
-  outline: 2px solid rgba(61, 139, 253, 0.55);
-  outline-offset: 2px;
-}
 
 .paper-year {
   font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
@@ -353,11 +338,35 @@ main {
 .tag.live { background: var(--tag-lang); }
 .tag.todo { background: var(--tag-todo); color: #cbd5e1; }
 
+.paper-title-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px 14px;
+}
 .paper-title {
   font-weight: 700;
   font-size: 15px;
   line-height: 1.45;
   color: #f8fafc;
+  min-width: 0;
+}
+.pdf-title-link {
+  flex: 0 0 auto;
+  margin-top: 1px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #93c5fd;
+  text-decoration: none;
+  white-space: nowrap;
+  border-bottom: 1px solid rgba(147, 197, 253, 0.35);
+}
+.pdf-title-link:hover { color: #bfdbfe; border-bottom-color: #bfdbfe; }
+.pdf-title-link.disabled {
+  color: #64748b;
+  border-bottom-color: transparent;
+  cursor: not-allowed;
+  pointer-events: none;
 }
 .paper-sub {
   color: var(--mut);
@@ -416,20 +425,22 @@ footer {
   opacity: 0.85;
 }
 
-/* 窄屏：主列佔滿、PDF 側邊 */
+/* 窄屏：年份同行、眼掣靠右 */
 @media (max-width: 640px) {
   .hero { padding: 18px 16px 14px; }
   .paper-row {
     grid-template-columns: 1fr auto;
+    grid-template-areas:
+      "year actions"
+      "body body";
     gap: 8px 10px;
     padding: 16px 4px;
   }
-  .paper-main {
-    grid-template-columns: auto 1fr;
-    gap: 8px 10px;
-  }
-  .paper-year { font-size: 20px; }
-  .paper-actions { align-self: start; }
+  .paper-year { grid-area: year; font-size: 20px; }
+  .paper-body { grid-area: body; }
+  .paper-actions { grid-area: actions; align-self: start; }
+  .paper-title-row { flex-wrap: wrap; }
+}
   .bar { flex-direction: column; }
   .field { flex: 1 1 auto; }
 }

@@ -26,6 +26,7 @@ const btns = {
 
 const LABEL = { subject: "科目", year: "年份", paper: "卷別", topic: "課題" };
 
+const ICON_VIEW = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5c-7 0-10 7-10 7s3 7 10 7 10-7 10-7-3-7-10-7zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0-6.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z"/></svg>`;
 const ICON_DL = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a1 1 0 0 1 1 1v9.6l2.8-2.8a1 1 0 1 1 1.4 1.4l-4.5 4.5a1 1 0 0 1-1.4 0L6.8 12.2a1 1 0 1 1 1.4-1.4L11 13.6V4a1 1 0 0 1 1-1zM5 19a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1z"/></svg>`;
 
 function shortName(name) {
@@ -108,11 +109,16 @@ function syncButtons() {
   });
 }
 
-/* 側邊只放「下載全卷 PDF」；直接檢視題目改由標題／列身連結 */
-function pdfSideHtml(pdfUrl) {
+function pdfTitleHtml(pdfUrl) {
   return pdfUrl
-    ? `<a class="icon-btn pdf" href="${pdfUrl}" target="_blank" rel="noopener" title="下載全卷 PDF" aria-label="下載全卷 PDF">${ICON_DL}</a>`
-    : `<span class="icon-btn pdf disabled" title="下載全卷 PDF · 待補" aria-label="下載全卷 PDF 待補">${ICON_DL}</span>`;
+    ? `<a class="pdf-title-link" href="${pdfUrl}" target="_blank" rel="noopener">下載全卷 PDF</a>`
+    : `<span class="pdf-title-link disabled" title="待補">下載全卷 PDF</span>`;
+}
+
+function viewIconHtml(href) {
+  return href
+    ? `<a class="icon-btn view" href="${href}" target="_blank" rel="noopener" title="逐題睇" aria-label="逐題睇">${ICON_VIEW}</a>`
+    : `<span class="icon-btn view disabled" title="逐題睇 · 待補" aria-label="逐題睇待補">${ICON_VIEW}</span>`;
 }
 
 function viewHrefFor(r) {
@@ -132,20 +138,21 @@ function rowHtml(r) {
   const href = viewHrefFor(r);
   return `
     <article class="paper-row">
-      <a class="paper-main" href="${href}" target="_blank" rel="noopener" title="直接檢視題目">
-        <div class="paper-year">${r.year}</div>
-        <div class="paper-body">
-          <div class="paper-tags">
-            <span class="tag subj">${sn}</span>
-            <span class="tag cat">${r.paper}</span>
-            <span class="tag lang">${r.lang}</span>
-            <span class="tag live">電子題庫已上線</span>
-          </div>
-          <div class="paper-title">文憑試 DSE ${sn} ${r.year} · ${r.paper}（${r.lang}）</div>
-          <div class="paper-sub">直接檢視題目 · ${r.name}</div>
+      <div class="paper-year">${r.year}</div>
+      <div class="paper-body">
+        <div class="paper-tags">
+          <span class="tag subj">${sn}</span>
+          <span class="tag cat">${r.paper}</span>
+          <span class="tag lang">${r.lang}</span>
+          <span class="tag live">電子題庫已上線</span>
         </div>
-      </a>
-      <div class="paper-actions" aria-label="全卷 PDF">${pdfSideHtml(pdfUrl)}</div>
+        <div class="paper-title-row">
+          <div class="paper-title">文憑試 DSE ${sn} ${r.year} · ${r.paper}（${r.lang}）</div>
+          ${pdfTitleHtml(pdfUrl)}
+        </div>
+        <div class="paper-sub">${r.name}</div>
+      </div>
+      <div class="paper-actions">${viewIconHtml(href)}</div>
     </article>`;
 }
 
@@ -207,19 +214,20 @@ function renderTopic() {
   const href = topicBankHref(sid, state.topic);
   resultEl.innerHTML = `
     <article class="paper-row">
-      <a class="paper-main" href="${href}" target="_blank" rel="noopener" title="直接檢視題目">
-        <div class="paper-year">#</div>
-        <div class="paper-body">
-          <div class="paper-tags">
-            <span class="tag subj">${sn}</span>
-            <span class="tag cat">${topicLabel}</span>
-            <span class="tag live">有電子題可睇</span>
-          </div>
-          <div class="paper-title">${sn} · ${topicLabel}</div>
-          <div class="paper-sub">直接檢視題目${state.topic !== ALL && state.topic !== PLACE ? `（篩「${topicLabel}」）` : ""}</div>
+      <div class="paper-year">#</div>
+      <div class="paper-body">
+        <div class="paper-tags">
+          <span class="tag subj">${sn}</span>
+          <span class="tag cat">${topicLabel}</span>
+          <span class="tag live">有電子題可睇</span>
         </div>
-      </a>
-      <div class="paper-actions" aria-label="全卷 PDF">${pdfSideHtml(null)}</div>
+        <div class="paper-title-row">
+          <div class="paper-title">${sn} · ${topicLabel}</div>
+          ${pdfTitleHtml(null)}
+        </div>
+        <div class="paper-sub">${state.topic !== ALL && state.topic !== PLACE ? `篩「${topicLabel}」` : "課題概覽"}</div>
+      </div>
+      <div class="paper-actions">${viewIconHtml(href)}</div>
     </article>`;
 }
 

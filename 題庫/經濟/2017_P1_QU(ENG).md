@@ -266,7 +266,7 @@ The above case illustrates the ______ function of price because ______.
 
 【題目內容】
 
-Which of the following is INCONSISTENT with the law of demand?
+Which of the following is **INCONSISTENT** with the law of demand?
 
 - A. The abolishment of per unit import tariff on garment results in a rise in the quality of imported garments.
 - B. Live fishes sold in a market near the fish farm have a higher price than frozen fishes sold in a faraway market.
@@ -369,7 +369,7 @@ Suppose Good Y is an inferior good. When people’s income rises and the product
 
 【題目內容】
 
-Suppose the government imposed an effective rent control on living units. Which of the following would LEAST likely occur?
+Suppose the government imposed an effective rent control on living units. Which of the following would **LEAST** likely occur?
 
 - A. There would be a shortage of living units.
 - B. Black market would emerge.

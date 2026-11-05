@@ -1,5 +1,5 @@
 window.QB = {
- "generated": "2026-11-05 15:08",
+ "generated": "2026-11-05 15:12",
  "count": 327,
  "questions": [
   {
@@ -3667,8 +3667,8 @@ window.QB = {
     "長期總供給",
     "潛在產出"
    ],
-   "text": "Refer to the following aggregate supply diagram.\n\n![fig_2015P1_q37](2015_P1_images/fig_2015P1_q37.png)\n\nWhen the economy moves from point A to point B, which of the following will NOT change?\n\n(1) real output\n\n(2) nominal output\n\n(3) potential output\n\n- A. (1) only\n- B. (2) only\n- C. (1) and (3) only\n- D. (1), (2) and (3)",
-   "html": "<p>Refer to the following aggregate supply diagram.</p>\n<p><img alt=\"fig_2015P1_q37\" src=\"2015_P1_images/fig_2015P1_q37.png\" /></p>\n<p>When the economy moves from point A to point B, which of the following will NOT change?</p>\n<p>(1) real output</p>\n<p>(2) nominal output</p>\n<p>(3) potential output</p>\n<ul>\n<li>A. (1) only</li>\n<li>B. (2) only</li>\n<li>C. (1) and (3) only</li>\n<li>D. (1), (2) and (3)</li>\n</ul>",
+   "text": "Refer to the following aggregate supply diagram.\n\n![fig_2015P1_q37](2015_P1_images/fig_2015P1_q37.png)\n\nWhen the economy moves from point A to point B, which of the following will **NOT** change?\n\n(1) real output\n\n(2) nominal output\n\n(3) potential output\n\n- A. (1) only\n- B. (2) only\n- C. (1) and (3) only\n- D. (1), (2) and (3)",
+   "html": "<p>Refer to the following aggregate supply diagram.</p>\n<p><img alt=\"fig_2015P1_q37\" src=\"2015_P1_images/fig_2015P1_q37.png\" /></p>\n<p>When the economy moves from point A to point B, which of the following will <strong>NOT</strong> change?</p>\n<p>(1) real output</p>\n<p>(2) nominal output</p>\n<p>(3) potential output</p>\n<ul>\n<li>A. (1) only</li>\n<li>B. (2) only</li>\n<li>C. (1) and (3) only</li>\n<li>D. (1), (2) and (3)</li>\n</ul>",
    "file": "2015_P1_QU(ENG).md"
   },
   {
@@ -4002,8 +4002,8 @@ window.QB = {
    "tags": [
     "需求定律"
    ],
-   "text": "Which of the following is INCONSISTENT with the law of demand?\n\n- A. The abolishment of per unit import tariff on garment results in a rise in the quality of imported garments.\n- B. Live fishes sold in a market near the fish farm have a higher price than frozen fishes sold in a faraway market.\n- C. The ratio of high-quality white wine sold to total white wine sold remains unchanged when the government imposes an ad valorem tax on white wine.\n- D. Developers tend to build higher-quality housing units on a piece of land with a good view.",
-   "html": "<p>Which of the following is INCONSISTENT with the law of demand?</p>\n<ul>\n<li>A. The abolishment of per unit import tariff on garment results in a rise in the quality of imported garments.</li>\n<li>B. Live fishes sold in a market near the fish farm have a higher price than frozen fishes sold in a faraway market.</li>\n<li>C. The ratio of high-quality white wine sold to total white wine sold remains unchanged when the government imposes an ad valorem tax on white wine.</li>\n<li>D. Developers tend to build higher-quality housing units on a piece of land with a good view.</li>\n</ul>",
+   "text": "Which of the following is **INCONSISTENT** with the law of demand?\n\n- A. The abolishment of per unit import tariff on garment results in a rise in the quality of imported garments.\n- B. Live fishes sold in a market near the fish farm have a higher price than frozen fishes sold in a faraway market.\n- C. The ratio of high-quality white wine sold to total white wine sold remains unchanged when the government imposes an ad valorem tax on white wine.\n- D. Developers tend to build higher-quality housing units on a piece of land with a good view.",
+   "html": "<p>Which of the following is <strong>INCONSISTENT</strong> with the law of demand?</p>\n<ul>\n<li>A. The abolishment of per unit import tariff on garment results in a rise in the quality of imported garments.</li>\n<li>B. Live fishes sold in a market near the fish farm have a higher price than frozen fishes sold in a faraway market.</li>\n<li>C. The ratio of high-quality white wine sold to total white wine sold remains unchanged when the government imposes an ad valorem tax on white wine.</li>\n<li>D. Developers tend to build higher-quality housing units on a piece of land with a good view.</li>\n</ul>",
    "file": "2017_P1_QU(ENG).md"
   },
   {
@@ -4080,8 +4080,8 @@ window.QB = {
     "價格上限",
     "市場干預"
    ],
-   "text": "Suppose the government imposed an effective rent control on living units. Which of the following would LEAST likely occur?\n\n- A. There would be a shortage of living units.\n- B. Black market would emerge.\n- C. Poor people would be able to rent a living unit more easily.\n- D. Landlords would have a lower incentive to renovate their living units for rent.",
-   "html": "<p>Suppose the government imposed an effective rent control on living units. Which of the following would LEAST likely occur?</p>\n<ul>\n<li>A. There would be a shortage of living units.</li>\n<li>B. Black market would emerge.</li>\n<li>C. Poor people would be able to rent a living unit more easily.</li>\n<li>D. Landlords would have a lower incentive to renovate their living units for rent.</li>\n</ul>",
+   "text": "Suppose the government imposed an effective rent control on living units. Which of the following would **LEAST** likely occur?\n\n- A. There would be a shortage of living units.\n- B. Black market would emerge.\n- C. Poor people would be able to rent a living unit more easily.\n- D. Landlords would have a lower incentive to renovate their living units for rent.",
+   "html": "<p>Suppose the government imposed an effective rent control on living units. Which of the following would <strong>LEAST</strong> likely occur?</p>\n<ul>\n<li>A. There would be a shortage of living units.</li>\n<li>B. Black market would emerge.</li>\n<li>C. Poor people would be able to rent a living unit more easily.</li>\n<li>D. Landlords would have a lower incentive to renovate their living units for rent.</li>\n</ul>",
    "file": "2017_P1_QU(ENG).md"
   },
   {
@@ -4774,8 +4774,8 @@ window.QB = {
     "彈性",
     "煙草稅"
    ],
-   "text": "A non-profit organisation supports the increase in cigarette tax. The organisation reveals that every 10% increase in cigarette prices reduces the total cigarette quantity transacted by 4%. Which of the following statements about cigarette tax is INCORRECT?\n\n- A. Law of demand is illustrated in the above case.\n- B. The total expenditure on cigarette will increase after the increase of the cigarette tax.\n- C. The increase in cigarette tax may lead to a greater income inequality.\n- D. The cigarette tax could help reduce the problem of under-production of cigarette.",
-   "html": "<p>A non-profit organisation supports the increase in cigarette tax. The organisation reveals that every 10% increase in cigarette prices reduces the total cigarette quantity transacted by 4%. Which of the following statements about cigarette tax is INCORRECT?</p>\n<ul>\n<li>A. Law of demand is illustrated in the above case.</li>\n<li>B. The total expenditure on cigarette will increase after the increase of the cigarette tax.</li>\n<li>C. The increase in cigarette tax may lead to a greater income inequality.</li>\n<li>D. The cigarette tax could help reduce the problem of under-production of cigarette.</li>\n</ul>",
+   "text": "A non-profit organisation supports the increase in cigarette tax. The organisation reveals that every 10% increase in cigarette prices reduces the total cigarette quantity transacted by 4%. Which of the following statements about cigarette tax is **INCORRECT**?\n\n- A. Law of demand is illustrated in the above case.\n- B. The total expenditure on cigarette will increase after the increase of the cigarette tax.\n- C. The increase in cigarette tax may lead to a greater income inequality.\n- D. The cigarette tax could help reduce the problem of under-production of cigarette.",
+   "html": "<p>A non-profit organisation supports the increase in cigarette tax. The organisation reveals that every 10% increase in cigarette prices reduces the total cigarette quantity transacted by 4%. Which of the following statements about cigarette tax is <strong>INCORRECT</strong>?</p>\n<ul>\n<li>A. Law of demand is illustrated in the above case.</li>\n<li>B. The total expenditure on cigarette will increase after the increase of the cigarette tax.</li>\n<li>C. The increase in cigarette tax may lead to a greater income inequality.</li>\n<li>D. The cigarette tax could help reduce the problem of under-production of cigarette.</li>\n</ul>",
    "file": "2020_P1_QU(ENG).md"
   },
   {
@@ -5174,8 +5174,8 @@ window.QB = {
     "比較優勢",
     "貿易得益"
    ],
-   "text": "The following table shows the amounts of consumption on two goods in Country A and Country B before international trade. Assume both countries use one unit of resources on producing Good X and one unit of resources on producing Good Y.\n\n| | Consumption before trade (units) | | |\n|---|---|---|---|\n| | Good X | | Good Y |\n| Country A | 100 | and | 25 |\n| Country B | 80 | and | 40 |\n\nIf Country A and Country B completely specialise their production and trade with each other, the total output of both countries will increase by ______ units of Good X and ______ units of Good Y.\n\n- A. 15 ...... 15\n- B. 15 ...... 20\n- C. 20 ...... 15\n- D. 20 ...... 20",
-   "html": "<p>The following table shows the amounts of consumption on two goods in Country A and Country B before international trade. Assume both countries use one unit of resources on producing Good X and one unit of resources on producing Good Y.</p>\n<table>\n<thead>\n<tr>\n<th></th>\n<th>Consumption before trade (units)</th>\n<th></th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td></td>\n<td>Good X</td>\n<td></td>\n<td>Good Y</td>\n</tr>\n<tr>\n<td>Country A</td>\n<td>100</td>\n<td>and</td>\n<td>25</td>\n</tr>\n<tr>\n<td>Country B</td>\n<td>80</td>\n<td>and</td>\n<td>40</td>\n</tr>\n</tbody>\n</table>\n<p>If Country A and Country B completely specialise their production and trade with each other, the total output of both countries will increase by <strong><em>_</em>_ units of Good X and </strong>____ units of Good Y.</p>\n<ul>\n<li>A. 15 ...... 15</li>\n<li>B. 15 ...... 20</li>\n<li>C. 20 ...... 15</li>\n<li>D. 20 ...... 20</li>\n</ul>",
+   "text": "The following table shows the amounts of consumption on two goods in Country A and Country B before international trade. Assume both countries use one unit of resources on producing Good X and one unit of resources on producing Good Y.\n\n<table>\n<tr><th></th><th colspan=\"3\">Consumption before trade (units)</th></tr>\n<tr><th></th><th>Good X</th><th></th><th>Good Y</th></tr>\n<tr><td>Country A</td><td>100</td><td>and</td><td>25</td></tr>\n<tr><td>Country B</td><td>80</td><td>and</td><td>40</td></tr>\n</table>\n\nIf Country A and Country B completely specialise their production and trade with each other, the total output of both countries will increase by ______ units of Good X and ______ units of Good Y.\n\n- A. 15 ...... 15\n- B. 15 ...... 20\n- C. 20 ...... 15\n- D. 20 ...... 20",
+   "html": "<p>The following table shows the amounts of consumption on two goods in Country A and Country B before international trade. Assume both countries use one unit of resources on producing Good X and one unit of resources on producing Good Y.</p>\n<table>\n<tr><th></th><th colspan=\"3\">Consumption before trade (units)</th></tr>\n<tr><th></th><th>Good X</th><th></th><th>Good Y</th></tr>\n<tr><td>Country A</td><td>100</td><td>and</td><td>25</td></tr>\n<tr><td>Country B</td><td>80</td><td>and</td><td>40</td></tr>\n</table>\n\n<p>If Country A and Country B completely specialise their production and trade with each other, the total output of both countries will increase by <strong><em>_</em>_ units of Good X and </strong>____ units of Good Y.</p>\n<ul>\n<li>A. 15 ...... 15</li>\n<li>B. 15 ...... 20</li>\n<li>C. 20 ...... 15</li>\n<li>D. 20 ...... 20</li>\n</ul>",
    "file": "2020_P1_QU(ENG).md"
   },
   {

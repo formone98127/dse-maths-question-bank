@@ -784,7 +784,7 @@ Refer to the following aggregate supply diagram.
 
 ![fig_2015P1_q37](2015_P1_images/fig_2015P1_q37.png)
 
-When the economy moves from point A to point B, which of the following will NOT change?
+When the economy moves from point A to point B, which of the following will **NOT** change?
 
 (1) real output
 

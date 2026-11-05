@@ -361,7 +361,7 @@ If China abolished the quota on the export of rare earth minerals,
 
 【題目內容】
 
-A non-profit organisation supports the increase in cigarette tax. The organisation reveals that every 10% increase in cigarette prices reduces the total cigarette quantity transacted by 4%. Which of the following statements about cigarette tax is INCORRECT?
+A non-profit organisation supports the increase in cigarette tax. The organisation reveals that every 10% increase in cigarette prices reduces the total cigarette quantity transacted by 4%. Which of the following statements about cigarette tax is **INCORRECT**?
 
 - A. Law of demand is illustrated in the above case.
 - B. The total expenditure on cigarette will increase after the increase of the cigarette tax.
@@ -911,11 +911,12 @@ John will prefer ______ while Mary will prefer ______.
 
 The following table shows the amounts of consumption on two goods in Country A and Country B before international trade. Assume both countries use one unit of resources on producing Good X and one unit of resources on producing Good Y.
 
-| | Consumption before trade (units) | | |
-|---|---|---|---|
-| | Good X | | Good Y |
-| Country A | 100 | and | 25 |
-| Country B | 80 | and | 40 |
+<table>
+<tr><th></th><th colspan="3">Consumption before trade (units)</th></tr>
+<tr><th></th><th>Good X</th><th></th><th>Good Y</th></tr>
+<tr><td>Country A</td><td>100</td><td>and</td><td>25</td></tr>
+<tr><td>Country B</td><td>80</td><td>and</td><td>40</td></tr>
+</table>
 
 If Country A and Country B completely specialise their production and trade with each other, the total output of both countries will increase by ______ units of Good X and ______ units of Good Y.
 

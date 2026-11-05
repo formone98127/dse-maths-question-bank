@@ -1,4 +1,4 @@
-/* ===== DSEmaths 試題資料庫 — 入口（深色列表感，跟 dsepaper.hk 感覺；操作仍用下拉） ===== */
+/* ===== DSE Hub 試題資料庫 — 入口（深色列表感，跟 dsepaper.hk 感覺；操作仍用下拉） ===== */
 * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
 
 :root {
@@ -32,7 +32,7 @@ body {
 .hero {
   position: relative;
   overflow: hidden;
-  padding: 36px 18px 28px;
+  padding: 22px 18px 18px;
   border-bottom: 1px solid var(--line);
   background:
     radial-gradient(1200px 420px at 18% -10%, rgba(61, 139, 253, 0.28), transparent 55%),
@@ -53,11 +53,12 @@ body {
   animation: rise 0.7s ease both;
 }
 .brand {
-  font-family: Syne, "Noto Sans TC", sans-serif;
-  font-weight: 800;
-  font-size: clamp(28px, 5vw, 42px);
-  letter-spacing: -0.03em;
-  line-height: 1;
+  font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  font-weight: 900;
+  font-size: clamp(26px, 4.2vw, 36px);
+  letter-spacing: 0.01em;
+  line-height: 1.15;
+  font-stretch: normal;
   background: linear-gradient(105deg, #fff 10%, #93c5fd 55%, #34d399 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -184,10 +185,12 @@ main {
 .paper-row:hover { background: rgba(255, 255, 255, 0.025); }
 
 .paper-year {
-  font-family: Syne, "Noto Sans TC", sans-serif;
+  font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
   font-weight: 800;
-  font-size: 22px;
-  letter-spacing: -0.02em;
+  font-size: 20px;
+  letter-spacing: 0;
+  font-stretch: normal;
+  font-variant-numeric: tabular-nums;
   min-width: 4.2ch;
   color: #fff;
 }
@@ -280,7 +283,7 @@ footer {
 
 /* 窄屏：年份上移、操作靠右下 */
 @media (max-width: 640px) {
-  .hero { padding: 28px 16px 22px; }
+  .hero { padding: 18px 16px 14px; }
   .paper-row {
     grid-template-columns: 1fr auto;
     grid-template-areas:

@@ -31,7 +31,14 @@ main { flex:1; min-height:0; display:flex; flex-direction:column; max-width:960p
 .badge.ans { background:#fdf0e3; color:#a05a00; }
 #qbody { flex:1; min-height:0; overflow-y:auto; -webkit-overflow-scrolling:touch;
          font-size:15.5px; line-height:1.8; padding-top:10px; }
-#qbody img { max-width:100%; height:auto; background:#fff; }
+#qbody img {
+  max-width: min(100%, 640px);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  background:#fff;
+}
 #qbody table { border-collapse:collapse; width:auto; max-width:100%; margin:0.7em 0; font-size:14.5px; }
 #qbody th, #qbody td { border:1px solid #8a96a5; padding:5px 10px; text-align:left; vertical-align:middle; }
 #qbody th { background:#eef2f6; font-weight:700; }

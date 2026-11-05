@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Add locked 'Dsepaper.hk' watermark to delivery SVG/PNG after §9.4 pass.
+"""Add locked 'dsepaper.hk' watermark to delivery SVG/PNG after §9.4 pass.
 
 Usage:
   python add_dse_hub_watermark.py fig.svg
   python add_dse_hub_watermark.py fig.png
   python add_dse_hub_watermark.py folder_of_figs --recursive
 
-Idempotent for current text. Replaces older 'DSE Hub' watermark if present.
+Idempotent for current text. Replaces older 'DSE Hub' / 'Dsepaper.hk' watermarks.
 """
 from __future__ import annotations
 
@@ -16,7 +16,7 @@ import re
 import sys
 from pathlib import Path
 
-WM_TEXT = "Dsepaper.hk"
+WM_TEXT = "dsepaper.hk"
 WM_MARKER = 'id="dsepaper-hk-wm"'
 WM_FILL = "#3d8bfd"
 WM_OPACITY = 0.28
@@ -55,12 +55,12 @@ def _wm_block(w: float, h: float) -> str:
 
 def watermark_svg(path: Path) -> bool:
     raw = path.read_text(encoding="utf-8")
-    if WM_MARKER in raw and WM_TEXT in raw:
+    if WM_MARKER in raw and f">{WM_TEXT}</text>" in raw:
         return False
     cleaned = OLD_G_RE.sub("\n", raw)
     # also strip bare old text watermark without expected id
     cleaned = re.sub(
-        r'\s*<text[^>]*>\s*DSE Hub\s*</text>\s*',
+        r'\s*<text[^>]*>\s*(?:DSE Hub|Dsepaper\.hk|dsepaper\.hk)\s*</text>\s*',
         "\n",
         cleaned,
         flags=re.I,
@@ -124,7 +124,7 @@ def process(path: Path) -> str:
 
 
 def main() -> int:
-    ap = argparse.ArgumentParser(description="Add Dsepaper.hk watermark to delivery figures")
+    ap = argparse.ArgumentParser(description="Add dsepaper.hk watermark to delivery figures")
     ap.add_argument("paths", nargs="+", type=Path)
     ap.add_argument("-r", "--recursive", action="store_true")
     args = ap.parse_args()

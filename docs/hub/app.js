@@ -9,7 +9,6 @@ const state = {
   subject: PLACE,
   year: PLACE,
   paper: PLACE,
-  lang: PLACE,
   topic: PLACE,
 };
 
@@ -17,17 +16,15 @@ const $ = (id) => document.getElementById(id);
 const resultEl = $("result");
 const modeSeg = $("modeSeg");
 const fPaper = $("fPaper");
-const fLang = $("fLang");
 const l2 = $("l2");
 
 const btns = {
   subject: $("bSubj"),
   year: $("bYear"),
   paper: $("bPaper"),
-  lang: $("bLang"),
 };
 
-const LABEL = { subject: "科目", year: "年份", paper: "卷別", lang: "語言", topic: "課題" };
+const LABEL = { subject: "科目", year: "年份", paper: "卷別", topic: "課題" };
 
 const ICON_VIEW = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5c-7 0-10 7-10 7s3 7 10 7 10-7 10-7-3-7-10-7zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0-6.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z"/></svg>`;
 const ICON_DL = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a1 1 0 0 1 1 1v9.6l2.8-2.8a1 1 0 1 1 1.4 1.4l-4.5 4.5a1 1 0 0 1-1.4 0L6.8 12.2a1 1 0 1 1 1.4-1.4L11 13.6V4a1 1 0 0 1 1-1zM5 19a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1z"/></svg>`;
@@ -49,8 +46,7 @@ function filteredCatalog() {
   return CATALOG.filter((r) =>
     matchDim(state.subject, r.id) &&
     matchDim(state.year, r.year) &&
-    matchDim(state.paper, r.paper) &&
-    matchDim(state.lang, r.lang)
+    matchDim(state.paper, r.paper)
   );
 }
 
@@ -65,7 +61,6 @@ function optionsFor(key) {
     if (key !== "subject" && state.subject !== PLACE && state.subject !== ALL && r.id !== state.subject) return false;
     if (key !== "year" && state.year !== PLACE && state.year !== ALL && String(r.year) !== String(state.year)) return false;
     if (key !== "paper" && state.paper !== PLACE && state.paper !== ALL && r.paper !== state.paper) return false;
-    if (key !== "lang" && state.lang !== PLACE && state.lang !== ALL && r.lang !== state.lang) return false;
     return true;
   });
 
@@ -82,9 +77,6 @@ function optionsFor(key) {
   }
   if (key === "paper") {
     return head.concat(uniq(rows.map((r) => r.paper)).map((p) => ({ value: p, label: p })));
-  }
-  if (key === "lang") {
-    return head.concat(uniq(rows.map((r) => r.lang)).map((l) => ({ value: l, label: l })));
   }
   if (key === "topic") {
     const sid = state.subject === PLACE || state.subject === ALL ? "math" : state.subject;
@@ -110,9 +102,8 @@ function syncButtons() {
   btns.subject.textContent = displayLabel("subject", state.subject);
   btns.year.textContent = displayLabel(state.mode === "topic" ? "topic" : "year", state.mode === "topic" ? state.topic : state.year);
   btns.paper.textContent = displayLabel("paper", state.paper);
-  btns.lang.textContent = displayLabel("lang", state.lang);
-  ["subject", "year", "paper", "lang"].forEach((k) => {
-    const b = btns[k === "year" ? "year" : k];
+  ["subject", "year", "paper"].forEach((k) => {
+    const b = btns[k];
     const v = k === "year" && state.mode === "topic" ? state.topic : state[k];
     b.classList.toggle("placeholder", v === PLACE || v == null);
   });
@@ -156,21 +147,30 @@ function emptyHtml(msg) {
 }
 
 function anyFilterSet() {
-  return [state.subject, state.year, state.paper, state.lang].some((v) => v !== PLACE);
+  return [state.subject, state.year, state.paper].some((v) => v !== PLACE);
+}
+
+function sortRows(rows) {
+  return rows.sort(
+    (a, b) =>
+      b.year - a.year ||
+      String(a.lang).localeCompare(String(b.lang), "zh-Hant") ||
+      a.name.localeCompare(b.name, "zh-Hant") ||
+      a.paper.localeCompare(b.paper, "zh-Hant")
+  );
 }
 
 function renderYear() {
   fPaper.style.display = "";
-  fLang.style.display = "";
   l2.textContent = "年份";
   btns.year.dataset.key = "year";
 
   if (!anyFilterSet()) {
-    resultEl.innerHTML = emptyHtml("請用滾輪揀科目、年份、卷別或語言；亦可揀「所有」睇晒資料庫已有嘅卷。");
+    resultEl.innerHTML = emptyHtml("請用滾輪揀科目、年份或卷別；亦可揀「所有」睇晒資料庫已有嘅卷。");
     return;
   }
 
-  const rows = filteredCatalog().sort((a, b) => b.year - a.year || a.name.localeCompare(b.name, "zh-Hant") || a.paper.localeCompare(b.paper, "zh-Hant"));
+  const rows = sortRows(filteredCatalog());
   if (!rows.length) {
     resultEl.innerHTML = emptyHtml("呢組條件喺資料庫搵唔到卷。試下改「所有」或者放寬條件。");
     return;
@@ -180,7 +180,6 @@ function renderYear() {
 
 function renderTopic() {
   fPaper.style.display = "none";
-  fLang.style.display = "none";
   l2.textContent = "課題";
   btns.year.dataset.key = "topic";
 
@@ -280,11 +279,9 @@ function commitReel() {
     state.topic = v;
   } else {
     state[reelKey] = v;
-    // cascade reset dependent dims when parent changes
     if (reelKey === "subject") {
       state.year = PLACE;
       state.paper = PLACE;
-      state.lang = PLACE;
       state.topic = PLACE;
     } else if (reelKey === "year") {
       state.paper = PLACE;

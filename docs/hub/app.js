@@ -26,7 +26,6 @@ const btns = {
 
 const LABEL = { subject: "科目", year: "年份", paper: "卷別", topic: "課題" };
 
-const ICON_VIEW = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5c-7 0-10 7-10 7s3 7 10 7 10-7 10-7-3-7-10-7zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0-6.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z"/></svg>`;
 const ICON_DL = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a1 1 0 0 1 1 1v9.6l2.8-2.8a1 1 0 1 1 1.4 1.4l-4.5 4.5a1 1 0 0 1-1.4 0L6.8 12.2a1 1 0 1 1 1.4-1.4L11 13.6V4a1 1 0 0 1 1-1zM5 19a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1z"/></svg>`;
 
 function shortName(name) {
@@ -109,33 +108,44 @@ function syncButtons() {
   });
 }
 
-function actionsHtml({ viewHref, pdfUrl }) {
-  const view = viewHref
-    ? `<a class="icon-btn view" href="${viewHref}" target="_blank" rel="noopener" title="逐題睇" aria-label="逐題睇">${ICON_VIEW}</a>`
-    : `<span class="icon-btn view disabled" title="逐題睇 · 待補" aria-label="逐題睇待補">${ICON_VIEW}</span>`;
-  const pdf = pdfUrl
-    ? `<a class="icon-btn pdf" href="${pdfUrl}" target="_blank" rel="noopener" title="下載 PDF" aria-label="下載 PDF">${ICON_DL}</a>`
-    : `<span class="icon-btn pdf disabled" title="下載 PDF · 待補" aria-label="下載 PDF 待補">${ICON_DL}</span>`;
-  return `<div class="paper-actions">${view}${pdf}</div>`;
+/* 側邊只放「下載全卷 PDF」；直接檢視題目改由標題／列身連結 */
+function pdfSideHtml(pdfUrl) {
+  return pdfUrl
+    ? `<a class="icon-btn pdf" href="${pdfUrl}" target="_blank" rel="noopener" title="下載全卷 PDF" aria-label="下載全卷 PDF">${ICON_DL}</a>`
+    : `<span class="icon-btn pdf disabled" title="下載全卷 PDF · 待補" aria-label="下載全卷 PDF 待補">${ICON_DL}</span>`;
+}
+
+function viewHrefFor(r) {
+  return BANK_URL + r.hash;
+}
+
+function topicBankHref(sid, topic) {
+  const q = new URLSearchParams();
+  q.set("subject", sid === "econ" ? "經濟" : "數學");
+  if (topic && topic !== ALL && topic !== PLACE) q.set("tag", topic);
+  return `${BANK_URL}?${q.toString()}`;
 }
 
 function rowHtml(r) {
   const sn = shortName(r.name);
   const pdfUrl = PDF_LINKS[`${r.id}|${r.year}|${r.paper}`] || null;
+  const href = viewHrefFor(r);
   return `
     <article class="paper-row">
-      <div class="paper-year">${r.year}</div>
-      <div class="paper-body">
-        <div class="paper-tags">
-          <span class="tag subj">${sn}</span>
-          <span class="tag cat">${r.paper}</span>
-          <span class="tag lang">${r.lang}</span>
-          <span class="tag live">電子題庫已上線</span>
+      <a class="paper-main" href="${href}" target="_blank" rel="noopener" title="直接檢視題目">
+        <div class="paper-year">${r.year}</div>
+        <div class="paper-body">
+          <div class="paper-tags">
+            <span class="tag subj">${sn}</span>
+            <span class="tag cat">${r.paper}</span>
+            <span class="tag lang">${r.lang}</span>
+            <span class="tag live">電子題庫已上線</span>
+          </div>
+          <div class="paper-title">文憑試 DSE ${sn} ${r.year} · ${r.paper}（${r.lang}）</div>
+          <div class="paper-sub">直接檢視題目 · ${r.name}</div>
         </div>
-        <div class="paper-title">文憑試 DSE ${sn} ${r.year} · ${r.paper}（${r.lang}）</div>
-        <div class="paper-sub">${r.name}</div>
-      </div>
-      ${actionsHtml({ viewHref: BANK_URL + r.hash, pdfUrl })}
+      </a>
+      <div class="paper-actions" aria-label="全卷 PDF">${pdfSideHtml(pdfUrl)}</div>
     </article>`;
 }
 
@@ -194,19 +204,22 @@ function renderTopic() {
 
   const sn = shortName(subjectsInDb().find((s) => s.id === sid)?.name || sid);
   const topicLabel = state.topic === ALL ? "全部課題" : state.topic;
+  const href = topicBankHref(sid, state.topic);
   resultEl.innerHTML = `
     <article class="paper-row">
-      <div class="paper-year">#</div>
-      <div class="paper-body">
-        <div class="paper-tags">
-          <span class="tag subj">${sn}</span>
-          <span class="tag cat">${topicLabel}</span>
-          <span class="tag live">有電子題可睇</span>
+      <a class="paper-main" href="${href}" target="_blank" rel="noopener" title="直接檢視題目">
+        <div class="paper-year">#</div>
+        <div class="paper-body">
+          <div class="paper-tags">
+            <span class="tag subj">${sn}</span>
+            <span class="tag cat">${topicLabel}</span>
+            <span class="tag live">有電子題可睇</span>
+          </div>
+          <div class="paper-title">${sn} · ${topicLabel}</div>
+          <div class="paper-sub">直接檢視題目${state.topic !== ALL && state.topic !== PLACE ? `（篩「${topicLabel}」）` : ""}</div>
         </div>
-        <div class="paper-title">${sn} · ${topicLabel}</div>
-        <div class="paper-sub">課題索引會陸續加細項；而家可以入電子題庫睇已上線嘅卷。</div>
-      </div>
-      ${actionsHtml({ viewHref: BANK_URL, pdfUrl: null })}
+      </a>
+      <div class="paper-actions" aria-label="全卷 PDF">${pdfSideHtml(null)}</div>
     </article>`;
 }
 

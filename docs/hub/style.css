@@ -294,7 +294,7 @@ main {
 
 .paper-row {
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: 1fr auto;
   gap: 14px 18px;
   align-items: center;
   padding: 18px 8px;
@@ -302,6 +302,21 @@ main {
   transition: background 0.18s ease;
 }
 .paper-row:hover { background: rgba(255, 255, 255, 0.025); }
+.paper-main {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 14px 18px;
+  align-items: center;
+  min-width: 0;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 10px;
+}
+.paper-main:hover .paper-title { color: #93c5fd; }
+.paper-main:focus-visible {
+  outline: 2px solid rgba(61, 139, 253, 0.55);
+  outline-offset: 2px;
+}
 
 .paper-year {
   font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
@@ -401,20 +416,20 @@ footer {
   opacity: 0.85;
 }
 
-/* 窄屏：年份上移、操作靠右下 */
+/* 窄屏：主列佔滿、PDF 側邊 */
 @media (max-width: 640px) {
   .hero { padding: 18px 16px 14px; }
   .paper-row {
     grid-template-columns: 1fr auto;
-    grid-template-areas:
-      "year actions"
-      "body body";
     gap: 8px 10px;
     padding: 16px 4px;
   }
-  .paper-year { grid-area: year; font-size: 20px; }
-  .paper-body { grid-area: body; }
-  .paper-actions { grid-area: actions; }
+  .paper-main {
+    grid-template-columns: auto 1fr;
+    gap: 8px 10px;
+  }
+  .paper-year { font-size: 20px; }
+  .paper-actions { align-self: start; }
   .bar { flex-direction: column; }
   .field { flex: 1 1 auto; }
 }

@@ -146,11 +146,6 @@ function emptyHtml(msg) {
     </div>`;
 }
 
-function anyFilterSet() {
-  // 「所有」會列出範圍；全部退返「請選擇」先空白
-  return state.subject !== PLACE || state.year !== PLACE || state.paper !== PLACE;
-}
-
 function sortRows(rows) {
   return rows.sort(
     (a, b) =>
@@ -166,17 +161,14 @@ function renderYear() {
   l2.textContent = "年份";
   btns.year.dataset.key = "year";
 
-  if (!anyFilterSet()) {
-    resultEl.innerHTML = emptyHtml("請用滾輪揀科目、年份或卷別；亦可揀「所有」睇晒資料庫已有嘅卷。");
-    return;
-  }
-
+  // 請選擇／所有 都當「唔篩」→ 一打開即列出資料庫已有卷
   const rows = sortRows(filteredCatalog());
   if (!rows.length) {
     resultEl.innerHTML = emptyHtml("呢組條件喺資料庫搵唔到卷。試下改「所有」或者放寬條件。");
     return;
   }
-  resultEl.innerHTML = rows.map(rowHtml).join("");
+  const count = `<p class="list-count">共 ${rows.length} 卷</p>`;
+  resultEl.innerHTML = count + rows.map(rowHtml).join("");
 }
 
 function renderTopic() {

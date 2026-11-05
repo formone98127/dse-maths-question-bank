@@ -280,6 +280,12 @@ main {
   padding: 8px 12px 0;
 }
 .paper-list { animation: rise 0.45s ease both; }
+.list-count {
+  color: var(--mut);
+  font-size: 13px;
+  padding: 6px 8px 4px;
+  letter-spacing: 0.02em;
+}
 
 .paper-row {
   display: grid;

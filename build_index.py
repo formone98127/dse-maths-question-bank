@@ -66,6 +66,9 @@ SOURCES = [
     ("化學/2020_P1A_QU(CHI).md", 2020, "Paper 1A", "題目", "化學"),
     ("化學/2020_P1B_QU(CHI).md", 2020, "Paper 1B", "題目", "化學"),
     ("化學/2020_P2_QU(CHI).md",  2020, "Paper 2",  "題目", "化學"),
+    ("化學/2019_P1A_QU(CHI).md", 2019, "Paper 1A", "題目", "化學"),
+    ("化學/2019_P1B_QU(CHI).md", 2019, "Paper 1B", "題目", "化學"),
+    ("化學/2019_P2_QU(CHI).md",  2019, "Paper 2",  "題目", "化學"),
     ("生物/2023_P1_QU(CHI).md",  2023, "Paper 1",  "題目", "生物"),
     ("生物/2023_P2_QU(CHI).md",  2023, "Paper 2",  "題目", "生物"),
     ("物理/2024_P1_QU(CHI).md",  2024, "Paper 1",  "題目", "物理"),
@@ -91,6 +94,9 @@ SCIENCE_CROP_MAP = [
     ("化學/2020_P1A_crops", "chem_2020_P1A_crops"),
     ("化學/2020_P1B_crops", "chem_2020_P1B_crops"),
     ("化學/2020_P2_crops", "chem_2020_P2_crops"),
+    ("化學/2019_P1A_crops", "chem_2019_P1A_crops"),
+    ("化學/2019_P1B_crops", "chem_2019_P1B_crops"),
+    ("化學/2019_P2_crops", "chem_2019_P2_crops"),
     ("生物/2023_P1_crops", "bio_2023_P1_crops"),
     ("生物/2023_P2_crops", "bio_2023_P2_crops"),
     ("物理/2024_P1_crops", "phys_2024_P1_crops"),
@@ -116,6 +122,9 @@ def fix_img_paths(text: str, subject: str = "數學") -> str:
         text = text.replace("2020_P1A_crops/", "chem_2020_P1A_crops/")
         text = text.replace("2020_P1B_crops/", "chem_2020_P1B_crops/")
         text = text.replace("2020_P2_crops/", "chem_2020_P2_crops/")
+        text = text.replace("2019_P1A_crops/", "chem_2019_P1A_crops/")
+        text = text.replace("2019_P1B_crops/", "chem_2019_P1B_crops/")
+        text = text.replace("2019_P2_crops/", "chem_2019_P2_crops/")
     elif subject == "生物":
         text = text.replace("2023_P1_crops/", "bio_2023_P1_crops/")
         text = text.replace("2023_P2_crops/", "bio_2023_P2_crops/")

@@ -28,6 +28,8 @@
 
 目標：慳 token、先鋪覆蓋面。做 **OCR＋清洗逐題 MD**；圖用**原卷截圖／crop**頂住，**暫緩**向量重繪同 §9 驗收。
 
+> **執行者（2026-11-06）**：第 2 層掃卷優先用本機 **freebuff**（`%USERPROFILE%\.config\manicode\freebuff.exe`，`--cwd` 指住 `Documents\DSE_Maths`，任務見 `freebuff_task.md`）。本機已有 easyocr／PyMuPDF／GPU。DSE Scanner 改做重工／影像對頁／第 3 層精修，或 freebuff 卡住時先頂住。舊機 ss3 離線時一律用本機 ss3-1。
+
 1. 跟 §0–§3／§3.1（揀源、文字層／OCR、清洗、格式閘門）；**唔做** §4／§9 向量重繪。
 2. **有圖題（2026-11-06 用戶拍板）**：由 300dpi 頁影像 **crop 截圖**嵌入 MD（可用），路徑例：  
    `![圖](<年>_P<n>_crops/qN.png)`  

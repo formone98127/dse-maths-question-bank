@@ -51,6 +51,9 @@ SOURCES = [
     ("題庫/經濟/2017_P1_QU(ENG).md", 2017, "Paper 1", "題目", "經濟"),
     ("題庫/經濟/2020_P1_QU(ENG).md", 2020, "Paper 1", "題目", "經濟"),
     # 理科第 2 層（原卷截圖；先 push 後校對）
+    ("化學/2025_P1A_QU(CHI).md", 2025, "Paper 1A", "題目", "化學"),
+    ("化學/2025_P1B_QU(CHI).md", 2025, "Paper 1B", "題目", "化學"),
+    ("化學/2025_P2_QU(CHI).md",  2025, "Paper 2",  "題目", "化學"),
     ("化學/2024_P1A_QU(CHI).md", 2024, "Paper 1A", "題目", "化學"),
     ("化學/2024_P1B_QU(CHI).md", 2024, "Paper 1B", "題目", "化學"),
     ("化學/2024_P2_QU(CHI).md",  2024, "Paper 2",  "題目", "化學"),
@@ -100,6 +103,9 @@ SUBJ_ORDER = ["數學", "經濟", "化學", "生物", "物理"]
 
 # 第 2 層截圖：src 相對 repo → docs 內唯一名（避免化學／物理同名 2024_P2_crops 互蓋）
 SCIENCE_CROP_MAP = [
+    ("化學/2025_P1A_crops", "chem_2025_P1A_crops"),
+    ("化學/2025_P1B_crops", "chem_2025_P1B_crops"),
+    ("化學/2025_P2_crops", "chem_2025_P2_crops"),
     ("化學/2024_P1A_crops", "chem_2024_P1A_crops"),
     ("化學/2024_P1B_crops", "chem_2024_P1B_crops"),
     ("化學/2024_P2_crops", "chem_2024_P2_crops"),
@@ -149,6 +155,9 @@ SCIENCE_CROP_MAP = [
 def fix_img_paths(text: str, subject: str = "數學") -> str:
     """圖徑改成 docs 內唯一資料夾名（Pages 只發布 docs/）"""
     if subject == "化學":
+        text = text.replace("2025_P1A_crops/", "chem_2025_P1A_crops/")
+        text = text.replace("2025_P1B_crops/", "chem_2025_P1B_crops/")
+        text = text.replace("2025_P2_crops/", "chem_2025_P2_crops/")
         text = text.replace("2024_P1A_crops/", "chem_2024_P1A_crops/")
         text = text.replace("2024_P1B_crops/", "chem_2024_P1B_crops/")
         text = text.replace("2024_P2_crops/", "chem_2024_P2_crops/")

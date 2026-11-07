@@ -1,28 +1,28 @@
-﻿# freebuff 本輪任務：第 2 層掃卷（化學 2025 中文）— OCR＋清洗＋crop
+﻿# freebuff 本輪任務：第 2 層掃卷（生物 2024）— OCR＋清洗＋crop
 
 你係本機 Free AI coding assistant。跟 `OCR_WORKFLOW.md` §0.1 做 **第 2 層文字交貨**。只跑一輪就停。
 
 ## 已完成（唔使重做）
-- 化學 2012～2024 中文三卷已上線（`化學\2012_*` … `2024_*`）。
-- 化學 2025 尚未開工。
+- 化學 2012～2025 中文三卷已上線（`化學\2012_*` … `2025_*`）。
+- 生物 2023、物理 2024 已上線。
+- 生物 2024 尚未開工。
 
 ## 你要做
-1. 用 PyMuPDF 由源 PDF 渲染 300dpi 頁圖到 `_work_chem2025\pages_300\`（卷一甲／乙／卷二分開前綴）。
-2. 用 easyocr（ch_tra+en，GPU）做 OCR → `_work_chem2025\ocr_raw\`／`ocr_json\`。
-3. 清洗成三份題庫 MD（零答案；化學式 Unicode 下標；去頁眉頁碼雜訊）：
-   - `化學\2025_P1A_QU(CHI).md`（甲部 MC，通常 36 題）
-   - `化學\2025_P1B_QU(CHI).md`（乙部結構題）
-   - `化學\2025_P2_QU(CHI).md`（卷二）
-4. 有圖：由 `pages_300` 做 300dpi crop，放入對應 `化學\2025_*_crops\`，並嵌入 MD。**唔做**向量重繪／§9。截唔到標圖待補。
+1. 用 PyMuPDF 由源 PDF 渲染 300dpi 頁圖到 `_work_bio2024\pages_300\`（卷一／卷二分開前綴）。
+2. 用 easyocr（ch_tra+en，GPU）做 OCR → `_work_bio2024\ocr_raw\`／`ocr_json\`。
+3. 清洗成題庫 MD（零答案；去頁眉頁碼雜訊），格式對照 `生物\2023_P1_QU(CHI).md`／`2023_P2_QU(CHI).md`：
+   - `生物\2024_P1_QU(CHI).md`
+   - `生物\2024_P2_QU(CHI).md`
+4. 有圖：由 `pages_300` 做 300dpi crop，放入對應 `生物\2024_*_crops\`，並嵌入 MD。**唔做**向量重繪／§9。截唔到標圖待補。
 5. 檔頭寫「本檔為第 2 層文字交貨（圖用原卷截圖；精修重繪另開第 3 層）。」
-6. 格式對照 `化學\2024_*_QU(CHI).md`／`2012_*`。
-7. `python qa_md_format.py` 要 exit 0。
-8. **唔** build_index／commit／push。
-9. 完成後寫 `_work_chem2025\FREEBUFF_DONE.txt`：一行 `chem2025 layer2 done` + 題數／截圖數摘要，然後停。
+6. `python qa_md_format.py` 要 exit 0。
+7. **唔** build_index／commit／push。
+8. 完成後寫 `_work_bio2024\FREEBUFF_DONE.txt`：一行 `bio2024 layer2 done` + 題數／截圖數摘要，然後停。
 
-## 源 PDF（只用中文卷）
-- `dsepaper_hk\化學\2025\文憑試 DSE 化學 Chemistry 2025 歷屆試題 Past Paper 卷一甲.pdf`
-- `dsepaper_hk\化學\2025\文憑試 DSE 化學 Chemistry 2025 歷屆試題 Past Paper 卷一乙.pdf`
-- `dsepaper_hk\化學\2025\文憑試 DSE 化學 Chemistry 2025 歷屆試題 Past Paper 卷二.pdf`
+## 源 PDF
+- `dsepaper_hk\生物\2024\文憑試 DSE 生物 Biology 2024 歷屆試題 Past Paper Paper 1.pdf`
+- `dsepaper_hk\生物\2024\文憑試 DSE 生物 Biology 2024 歷屆試題 Past Paper Paper 2.pdf`
 
-**唔用：** Model Answers／參考答案／考生表現／英文 Paper 1／Paper 2。
+**唔用：** Model Answers／參考答案／考生表現／考評報告。
+
+若 PDF 主要係英文卷而唔係中文，寫明喺 FREEBUFF_DONE 後停，唔硬做。

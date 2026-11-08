@@ -1,5 +1,5 @@
 window.QB = {
- "generated": "2026-11-08 14:34",
+ "generated": "2026-11-08 14:50",
  "count": 1414,
  "questions": [
   {
@@ -17173,8 +17173,8 @@ window.QB = {
    "tags": [
     "一元方程"
    ],
-   "text": "Let $c$ be a constant. Solve the equation $(x-c)(x-4c) = (3c-x)(x-4c)$.\n\n- A. $x =2c$.\n- B. $x =3c$.\n- C. $x = c$ or $x =3c$.\n- D. $x =2c$ or $x =4c$.",
-   "html": "<p>Let $c$ be a constant. Solve the equation $(x-c)(x-4c) = (3c-x)(x-4c)$.</p>\n<ul><li>A. $x =2c$.</li><li>B. $x =3c$.</li><li>C. $x = c$ or $x =3c$.</li><li>D. $x =2c$ or $x =4c$.</li></ul>",
+   "text": "Let $c$ be a constant. Solve the equation $(x-c)(x-4c) = (3c-x)(x-4c)$.\n\n- A. $x = 2c$.\n- B. $x = 3c$.\n- C. $x = c$ or $x = 3c$.\n- D. $x = 2c$ or $x = 4c$.",
+   "html": "<p>Let $c$ be a constant. Solve the equation $(x-c)(x-4c) = (3c-x)(x-4c)$.</p>\n<ul><li>A. $x = 2c$.</li><li>B. $x = 3c$.</li><li>C. $x = c$ or $x = 3c$.</li><li>D. $x = 2c$ or $x = 4c$.</li></ul>",
    "file": "2022_P2_題目英文卷.md"
   },
   {
@@ -17188,8 +17188,8 @@ window.QB = {
    "tags": [
     "一元方程"
    ],
-   "text": "If $\\dfrac{2}{u}+\\dfrac{3}{v}=4$, then $u=$\n\n- A. $\\dfrac{2v}{4v-3}$\n- B. $\\dfrac{2v}{3-4v}$\n- C. $\\dfrac{3v}{4v-2}$\n- D. $\\dfrac{3v}{2-4v}$",
-   "html": "<p>If $\\dfrac{2}{u}+\\dfrac{3}{v}=4$, then $u=$</p>\n<ul><li>A. $\\dfrac{2v}{4v-3}$</li><li>B. $\\dfrac{2v}{3-4v}$</li><li>C. $\\dfrac{3v}{4v-2}$</li><li>D. $\\dfrac{3v}{2-4v}$</li></ul>",
+   "text": "If $\\dfrac{2}{u}+\\dfrac{3}{v} = 4$, then $u =$\n\n- A. $\\dfrac{2v}{4v-3}$\n- B. $\\dfrac{2v}{3-4v}$\n- C. $\\dfrac{3v}{4v-2}$\n- D. $\\dfrac{3v}{2-4v}$",
+   "html": "<p>If $\\dfrac{2}{u}+\\dfrac{3}{v} = 4$, then $u =$</p>\n<ul><li>A. $\\dfrac{2v}{4v-3}$</li><li>B. $\\dfrac{2v}{3-4v}$</li><li>C. $\\dfrac{3v}{4v-2}$</li><li>D. $\\dfrac{3v}{2-4v}$</li></ul>",
    "file": "2022_P2_題目英文卷.md"
   },
   {
@@ -17279,8 +17279,8 @@ window.QB = {
    "tags": [
     "百分比"
    ],
-   "text": "A sum of $88000$ is deposited at an interest rate of $6\\%$ per annum for $4$ years, compounded monthly. Find the interest correct to the nearest dollar.\n\n- A. $21120$\n- B. $23098$\n- C. $23803$\n- D. $23825$",
-   "html": "<p>A sum of $88000$ is deposited at an interest rate of $6\\%$ per annum for $4$ years, compounded monthly. Find the interest correct to the nearest dollar.</p>\n<ul><li>A. $21120$</li><li>B. $23098$</li><li>C. $23803$</li><li>D. $23825$</li></ul>",
+   "text": "A sum of $\\$88\\,000$ is deposited at an interest rate of $6\\%$ per annum for $4$ years, compounded monthly. Find the interest correct to the nearest dollar.\n\n- A. $\\$21\\,120$\n- B. $\\$23\\,098$\n- C. $\\$23\\,803$\n- D. $\\$23\\,825$",
+   "html": "<p>A sum of $\\$88\\,000$ is deposited at an interest rate of $6\\%$ per annum for $4$ years, compounded monthly. Find the interest correct to the nearest dollar.</p>\n<ul><li>A. $\\$21\\,120$</li><li>B. $\\$23\\,098$</li><li>C. $\\$23\\,803$</li><li>D. $\\$23\\,825$</li></ul>",
    "file": "2022_P2_題目英文卷.md"
   },
   {
@@ -17294,8 +17294,8 @@ window.QB = {
    "tags": [
     "比與比例"
    ],
-   "text": "Let $x$, $y$ and $z$ be non-zero numbers. If $x:y =8:5$ and $2x =4z - 3y$, then $y:z =$\n\n- A. $16:17$\n- B. $17:16$\n- C. $20:31$\n- D. $31:20$",
-   "html": "<p>Let $x$, $y$ and $z$ be non-zero numbers. If $x:y =8:5$ and $2x =4z - 3y$, then $y:z =$</p>\n<ul><li>A. $16:17$</li><li>B. $17:16$</li><li>C. $20:31$</li><li>D. $31:20$</li></ul>",
+   "text": "Let $x$, $y$ and $z$ be non-zero numbers. If $x : y = 8 : 5$ and $2x = 4z - 3y$, then $y : z =$\n\n- A. $16 : 17$\n- B. $17 : 16$\n- C. $20 : 31$\n- D. $31 : 20$",
+   "html": "<p>Let $x$, $y$ and $z$ be non-zero numbers. If $x : y = 8 : 5$ and $2x = 4z - 3y$, then $y : z =$</p>\n<ul><li>A. $16 : 17$</li><li>B. $17 : 16$</li><li>C. $20 : 31$</li><li>D. $31 : 20$</li></ul>",
    "file": "2022_P2_題目英文卷.md"
   },
   {
@@ -17370,8 +17370,8 @@ window.QB = {
    "tags": [
     "求積法"
    ],
-   "text": "In the figure, $M$ and $N$ are points lying on $PQ$ and $QR$ respectively such that $PM:MQ=5:6$ and $QN:NR=3:4$. If the area of the quadrilateral $MNRP$ is $59 \\text{ cm}^{2}$, then the area of $\\Delta MNQ$ is\n\n![Figure Q17 (as printed)](2022P2_figs/Q17.png)\n\n- A. $17 \\text{ cm}^{2}$\n- B. $18 \\text{ cm}^{2}$\n- C. $19 \\text{ cm}^{2}$\n- D. $20 \\text{ cm}^{2}$",
-   "html": "<p>In the figure, $M$ and $N$ are points lying on $PQ$ and $QR$ respectively such that $PM:MQ=5:6$ and $QN:NR=3:4$. If the area of the quadrilateral $MNRP$ is $59 \\text{ cm}^{2}$, then the area of $\\Delta MNQ$ is</p>\n<p><img alt=\"Figure Q17 (as printed)\" src=\"2022P2_figs/Q17.png\" /></p>\n<ul><li>A. $17 \\text{ cm}^{2}$</li><li>B. $18 \\text{ cm}^{2}$</li><li>C. $19 \\text{ cm}^{2}$</li><li>D. $20 \\text{ cm}^{2}$</li></ul>",
+   "text": "In the figure, $M$ and $N$ are points lying on $PQ$ and $QR$ respectively such that $PM : MQ = 5 : 6$ and $QN : NR = 3 : 4$. If the area of the quadrilateral $MNRP$ is $59 \\text{ cm}^{2}$, then the area of $\\Delta MNQ$ is\n\n![Figure Q17 (as printed)](2022P2_figs/Q17.png)\n\n- A. $17 \\text{ cm}^{2}$\n- B. $18 \\text{ cm}^{2}$\n- C. $19 \\text{ cm}^{2}$\n- D. $20 \\text{ cm}^{2}$",
+   "html": "<p>In the figure, $M$ and $N$ are points lying on $PQ$ and $QR$ respectively such that $PM : MQ = 5 : 6$ and $QN : NR = 3 : 4$. If the area of the quadrilateral $MNRP$ is $59 \\text{ cm}^{2}$, then the area of $\\Delta MNQ$ is</p>\n<p><img alt=\"Figure Q17 (as printed)\" src=\"2022P2_figs/Q17.png\" /></p>\n<ul><li>A. $17 \\text{ cm}^{2}$</li><li>B. $18 \\text{ cm}^{2}$</li><li>C. $19 \\text{ cm}^{2}$</li><li>D. $20 \\text{ cm}^{2}$</li></ul>",
    "file": "2022_P2_題目英文卷.md"
   },
   {
@@ -17385,8 +17385,8 @@ window.QB = {
    "tags": [
     "直線方程"
    ],
-   "text": "In the figure, the perimeter of the rectangle $ABCD$ is $170 \\text{ cm}$. It is given that $EBF$ is a straight line and $\\angle AEB=\\angle BFC=90^{\\circ}$. If $AE=24 \\text{ cm}$ and $BC=34 \\text{ cm}$, then $EF=$\n\n![Figure Q18 (as printed)](2022P2_figs/Q18.png)\n\n- A. $45 \\text{ cm}$\n- B. $51 \\text{ cm}$\n- C. $61 \\text{ cm}$\n- D. $75 \\text{ cm}$",
-   "html": "<p>In the figure, the perimeter of the rectangle $ABCD$ is $170 \\text{ cm}$. It is given that $EBF$ is a straight line and $\\angle AEB=\\angle BFC=90^{\\circ}$. If $AE=24 \\text{ cm}$ and $BC=34 \\text{ cm}$, then $EF=$</p>\n<p><img alt=\"Figure Q18 (as printed)\" src=\"2022P2_figs/Q18.png\" /></p>\n<ul><li>A. $45 \\text{ cm}$</li><li>B. $51 \\text{ cm}$</li><li>C. $61 \\text{ cm}$</li><li>D. $75 \\text{ cm}$</li></ul>",
+   "text": "In the figure, the perimeter of the rectangle $ABCD$ is $170 \\text{ cm}$. It is given that $EBF$ is a straight line and $\\angle AEB = \\angle BFC = 90^{\\circ}$. If $AE = 24 \\text{ cm}$ and $BC = 34 \\text{ cm}$, then $EF =$\n\n![Figure Q18 (as printed)](2022P2_figs/Q18.png)\n\n- A. $45 \\text{ cm}$\n- B. $51 \\text{ cm}$\n- C. $61 \\text{ cm}$\n- D. $75 \\text{ cm}$",
+   "html": "<p>In the figure, the perimeter of the rectangle $ABCD$ is $170 \\text{ cm}$. It is given that $EBF$ is a straight line and $\\angle AEB = \\angle BFC = 90^{\\circ}$. If $AE = 24 \\text{ cm}$ and $BC = 34 \\text{ cm}$, then $EF =$</p>\n<p><img alt=\"Figure Q18 (as printed)\" src=\"2022P2_figs/Q18.png\" /></p>\n<ul><li>A. $45 \\text{ cm}$</li><li>B. $51 \\text{ cm}$</li><li>C. $61 \\text{ cm}$</li><li>D. $75 \\text{ cm}$</li></ul>",
    "file": "2022_P2_題目英文卷.md"
   },
   {
@@ -17400,8 +17400,8 @@ window.QB = {
    "tags": [
     "相似三角形"
    ],
-   "text": "In the figure, $ABC$ is an equilateral triangle. Let $D$ and $E$ be points lying on $AC$ and $BC$ respectively such that $AD = CE$. If $\\angle CBD =38^\\circ$, then $\\angle AEB =$\n\n![Figure Q19 (as printed)](2022P2_figs/Q19.png)\n\n- A. $73^\\circ$.\n- B. $75^\\circ$.\n- C. $78^\\circ$.\n- D. $82^\\circ$.",
-   "html": "<p>In the figure, $ABC$ is an equilateral triangle. Let $D$ and $E$ be points lying on $AC$ and $BC$ respectively such that $AD = CE$. If $\\angle CBD =38^\\circ$, then $\\angle AEB =$</p>\n<p><img alt=\"Figure Q19 (as printed)\" src=\"2022P2_figs/Q19.png\" /></p>\n<ul><li>A. $73^\\circ$.</li><li>B. $75^\\circ$.</li><li>C. $78^\\circ$.</li><li>D. $82^\\circ$.</li></ul>",
+   "text": "In the figure, $ABC$ is an equilateral triangle. Let $D$ and $E$ be points lying on $AC$ and $BC$ respectively such that $AD = CE$. If $\\angle CBD = 38^\\circ$, then $\\angle AEB =$\n\n![Figure Q19 (as printed)](2022P2_figs/Q19.png)\n\n- A. $73^\\circ$.\n- B. $75^\\circ$.\n- C. $78^\\circ$.\n- D. $82^\\circ$.",
+   "html": "<p>In the figure, $ABC$ is an equilateral triangle. Let $D$ and $E$ be points lying on $AC$ and $BC$ respectively such that $AD = CE$. If $\\angle CBD = 38^\\circ$, then $\\angle AEB =$</p>\n<p><img alt=\"Figure Q19 (as printed)\" src=\"2022P2_figs/Q19.png\" /></p>\n<ul><li>A. $73^\\circ$.</li><li>B. $75^\\circ$.</li><li>C. $78^\\circ$.</li><li>D. $82^\\circ$.</li></ul>",
    "file": "2022_P2_題目英文卷.md"
   },
   {
@@ -17415,8 +17415,8 @@ window.QB = {
    "tags": [
     "平面幾何"
    ],
-   "text": "The figure shows a parallelogram. Which of the following must be true?\nI. $a + b =180^\\circ$\nII. $b + c =360^\\circ$\nIII. $c + d =540^\\circ$\n\n![Figure Q20 (as printed)](2022P2_figs/Q20.png)\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
-   "html": "<p>The figure shows a parallelogram. Which of the following must be true? I. $a + b =180^\\circ$ II. $b + c =360^\\circ$ III. $c + d =540^\\circ$</p>\n<p><img alt=\"Figure Q20 (as printed)\" src=\"2022P2_figs/Q20.png\" /></p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
+   "text": "The figure shows a parallelogram. Which of the following must be true?\nI. $a + b = 180^\\circ$\nII. $b + c = 360^\\circ$\nIII. $c + d = 540^\\circ$\n\n![Figure Q20 (as printed)](2022P2_figs/Q20.png)\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
+   "html": "<p>The figure shows a parallelogram. Which of the following must be true? I. $a + b = 180^\\circ$ II. $b + c = 360^\\circ$ III. $c + d = 540^\\circ$</p>\n<p><img alt=\"Figure Q20 (as printed)\" src=\"2022P2_figs/Q20.png\" /></p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
    "file": "2022_P2_題目英文卷.md"
   },
   {
@@ -17430,8 +17430,8 @@ window.QB = {
    "tags": [
     "圓的幾何"
    ],
-   "text": "In the figure, $O$ is the centre of the circle $ABC$. If $\\angle ABO =36^\\circ$ and $\\angle BOC =164^\\circ$, then $\\angle ACO =$\n\n![Figure Q21 (as printed)](2022P2_figs/Q21.png)\n\n- A. $41^\\circ$.\n- B. $46^\\circ$.\n- C. $52^\\circ$.\n- D. $64^\\circ$. Go on to the next page",
-   "html": "<p>In the figure, $O$ is the centre of the circle $ABC$. If $\\angle ABO =36^\\circ$ and $\\angle BOC =164^\\circ$, then $\\angle ACO =$</p>\n<p><img alt=\"Figure Q21 (as printed)\" src=\"2022P2_figs/Q21.png\" /></p>\n<ul><li>A. $41^\\circ$.</li><li>B. $46^\\circ$.</li><li>C. $52^\\circ$.</li><li>D. $64^\\circ$. Go on to the next page</li></ul>",
+   "text": "In the figure, $O$ is the centre of the circle $ABC$. If $\\angle ABO = 36^\\circ$ and $\\angle BOC = 164^\\circ$, then $\\angle ACO =$\n\n![Figure Q21 (as printed)](2022P2_figs/Q21.png)\n\n- A. $41^\\circ$.\n- B. $46^\\circ$.\n- C. $52^\\circ$.\n- D. $64^\\circ$. Go on to the next page",
+   "html": "<p>In the figure, $O$ is the centre of the circle $ABC$. If $\\angle ABO = 36^\\circ$ and $\\angle BOC = 164^\\circ$, then $\\angle ACO =$</p>\n<p><img alt=\"Figure Q21 (as printed)\" src=\"2022P2_figs/Q21.png\" /></p>\n<ul><li>A. $41^\\circ$.</li><li>B. $46^\\circ$.</li><li>C. $52^\\circ$.</li><li>D. $64^\\circ$. Go on to the next page</li></ul>",
    "file": "2022_P2_題目英文卷.md"
   },
   {
@@ -17445,8 +17445,8 @@ window.QB = {
    "tags": [
     "相似三角形"
    ],
-   "text": "In the figure, $ABC$ is a right-angled triangle with $\\angle ABC =90^\\circ$. Let $D$ and $E$ be points lying on $AC$ and $BC$ respectively such that $ABED$ is a cyclic quadrilateral. If $AB =660 \\text{ cm}$, $AD =572 \\text{ cm}$ and $BE =275 \\text{ cm}$, then $CD =$\n\n![Figure Q22 (as printed)](2022P2_figs/Q22.png)\n\n- A. $429 \\text{ cm}$.\n- B. $715 \\text{ cm}$.\n- C. $728 \\text{ cm}$.\n- D. $845 \\text{ cm}$.",
-   "html": "<p>In the figure, $ABC$ is a right-angled triangle with $\\angle ABC =90^\\circ$. Let $D$ and $E$ be points lying on $AC$ and $BC$ respectively such that $ABED$ is a cyclic quadrilateral. If $AB =660 \\text{ cm}$, $AD =572 \\text{ cm}$ and $BE =275 \\text{ cm}$, then $CD =$</p>\n<p><img alt=\"Figure Q22 (as printed)\" src=\"2022P2_figs/Q22.png\" /></p>\n<ul><li>A. $429 \\text{ cm}$.</li><li>B. $715 \\text{ cm}$.</li><li>C. $728 \\text{ cm}$.</li><li>D. $845 \\text{ cm}$.</li></ul>",
+   "text": "In the figure, $ABC$ is a right-angled triangle with $\\angle ABC = 90^\\circ$. Let $D$ and $E$ be points lying on $AC$ and $BC$ respectively such that $ABED$ is a cyclic quadrilateral. If $AB = 660 \\text{ cm}$, $AD = 572 \\text{ cm}$ and $BE = 275 \\text{ cm}$, then $CD =$\n\n![Figure Q22 (as printed)](2022P2_figs/Q22.png)\n\n- A. $429 \\text{ cm}$.\n- B. $715 \\text{ cm}$.\n- C. $728 \\text{ cm}$.\n- D. $845 \\text{ cm}$.",
+   "html": "<p>In the figure, $ABC$ is a right-angled triangle with $\\angle ABC = 90^\\circ$. Let $D$ and $E$ be points lying on $AC$ and $BC$ respectively such that $ABED$ is a cyclic quadrilateral. If $AB = 660 \\text{ cm}$, $AD = 572 \\text{ cm}$ and $BE = 275 \\text{ cm}$, then $CD =$</p>\n<p><img alt=\"Figure Q22 (as printed)\" src=\"2022P2_figs/Q22.png\" /></p>\n<ul><li>A. $429 \\text{ cm}$.</li><li>B. $715 \\text{ cm}$.</li><li>C. $728 \\text{ cm}$.</li><li>D. $845 \\text{ cm}$.</li></ul>",
    "file": "2022_P2_題目英文卷.md"
   },
   {
@@ -17476,8 +17476,8 @@ window.QB = {
    "tags": [
     "直線方程"
    ],
-   "text": "The figure shows the graph of the straight line $mx + ny =3$. Which of the following are true?\nI. $m <0$\nII. $n >3$\nIII. $m + n =0$\n\n![Figure Q24 (as printed)](2022P2_figs/Q24.png)\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
-   "html": "<p>The figure shows the graph of the straight line $mx + ny =3$. Which of the following are true? I. $m &lt;0$ II. $n &gt;3$ III. $m + n =0$</p>\n<p><img alt=\"Figure Q24 (as printed)\" src=\"2022P2_figs/Q24.png\" /></p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
+   "text": "The figure shows the graph of the straight line $mx + ny = 3$. Which of the following are true?\nI. $m <0$\nII. $n >3$\nIII. $m + n = 0$\n\n![Figure Q24 (as printed)](2022P2_figs/Q24.png)\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
+   "html": "<p>The figure shows the graph of the straight line $mx + ny = 3$. Which of the following are true? I. $m &lt;0$ II. $n &gt;3$ III. $m + n = 0$</p>\n<p><img alt=\"Figure Q24 (as printed)\" src=\"2022P2_figs/Q24.png\" /></p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
    "file": "2022_P2_題目英文卷.md"
   },
   {
@@ -17508,8 +17508,8 @@ window.QB = {
     "坐標幾何",
     "軌跡"
    ],
-   "text": "The straight line $12x - 5y =60$ cuts the $x$-axis and the $y$-axis at the points $A$ and $B$ respectively. Let $P$ be a moving point in the rectangular coordinate plane such that $AP = BP$. Find the equation of the locus of $P$.\n\n- A. $10x + 24y + 119 =0$\n- B. $15x + 36y + 179 =0$\n- C. $x^2 + y^2 - 5x + 12y =0$\n- D. $x^2 + y^2 + 12x - 133 =0$",
-   "html": "<p>The straight line $12x - 5y =60$ cuts the $x$-axis and the $y$-axis at the points $A$ and $B$ respectively. Let $P$ be a moving point in the rectangular coordinate plane such that $AP = BP$. Find the equation of the locus of $P$.</p>\n<ul><li>A. $10x + 24y + 119 =0$</li><li>B. $15x + 36y + 179 =0$</li><li>C. $x^2 + y^2 - 5x + 12y =0$</li><li>D. $x^2 + y^2 + 12x - 133 =0$</li></ul>",
+   "text": "The straight line $12x - 5y = 60$ cuts the $x$-axis and the $y$-axis at the points $A$ and $B$ respectively. Let $P$ be a moving point in the rectangular coordinate plane such that $AP = BP$. Find the equation of the locus of $P$.\n\n- A. $10x + 24y + 119 = 0$\n- B. $15x + 36y + 179 = 0$\n- C. $x^2 + y^2 - 5x + 12y = 0$\n- D. $x^2 + y^2 + 12x - 133 = 0$",
+   "html": "<p>The straight line $12x - 5y = 60$ cuts the $x$-axis and the $y$-axis at the points $A$ and $B$ respectively. Let $P$ be a moving point in the rectangular coordinate plane such that $AP = BP$. Find the equation of the locus of $P$.</p>\n<ul><li>A. $10x + 24y + 119 = 0$</li><li>B. $15x + 36y + 179 = 0$</li><li>C. $x^2 + y^2 - 5x + 12y = 0$</li><li>D. $x^2 + y^2 + 12x - 133 = 0$</li></ul>",
    "file": "2022_P2_題目英文卷.md"
   },
   {
@@ -17524,8 +17524,8 @@ window.QB = {
     "坐標幾何",
     "圓的幾何"
    ],
-   "text": "The coordinates of the points $P$ and $Q$ are $(10, -24)$ and $(17, -7)$ respectively. Let $C$ be the circle which passes through the origin, $P$ and $Q$. Which of the following is true?\n\n- A. $PQ$ is a diameter of $C$.\n- B. The area of $C$ is $196\\pi$.\n- C. The point $(16, -9)$ lies inside $C$.\n- D. The centre of $C$ lies on the straight line $5x + 12y =0$.",
-   "html": "<p>The coordinates of the points $P$ and $Q$ are $(10, -24)$ and $(17, -7)$ respectively. Let $C$ be the circle which passes through the origin, $P$ and $Q$. Which of the following is true?</p>\n<ul><li>A. $PQ$ is a diameter of $C$.</li><li>B. The area of $C$ is $196\\pi$.</li><li>C. The point $(16, -9)$ lies inside $C$.</li><li>D. The centre of $C$ lies on the straight line $5x + 12y =0$.</li></ul>",
+   "text": "The coordinates of the points $P$ and $Q$ are $(10, -24)$ and $(17, -7)$ respectively. Let $C$ be the circle which passes through the origin, $P$ and $Q$. Which of the following is true?\n\n- A. $PQ$ is a diameter of $C$.\n- B. The area of $C$ is $196\\pi$.\n- C. The point $(16, -9)$ lies inside $C$.\n- D. The centre of $C$ lies on the straight line $5x + 12y = 0$.",
+   "html": "<p>The coordinates of the points $P$ and $Q$ are $(10, -24)$ and $(17, -7)$ respectively. Let $C$ be the circle which passes through the origin, $P$ and $Q$. Which of the following is true?</p>\n<ul><li>A. $PQ$ is a diameter of $C$.</li><li>B. The area of $C$ is $196\\pi$.</li><li>C. The point $(16, -9)$ lies inside $C$.</li><li>D. The centre of $C$ lies on the straight line $5x + 12y = 0$.</li></ul>",
    "file": "2022_P2_題目英文卷.md"
   },
   {
@@ -17600,8 +17600,8 @@ window.QB = {
     "對數",
     "數列"
    ],
-   "text": "It is given that $\\log_a y$ is a linear function of $x$, where $0 < a <1$. The intercepts on the vertical axis and on the horizontal axis of the graph of the linear function are 6 and 3 respectively. If $y = mn^x$, which of the following is/are true?\nI. $m <1$\nII. $n <1$\nIII. $mn^3 =1$\n\n- A. I only\n- B. II only\n- C. I and III only\n- D. II and III only",
-   "html": "<p>It is given that $\\log_a y$ is a linear function of $x$, where $0 &lt; a &lt;1$. The intercepts on the vertical axis and on the horizontal axis of the graph of the linear function are 6 and 3 respectively. If $y = mn^x$, which of the following is/are true? I. $m &lt;1$ II. $n &lt;1$ III. $mn^3 =1$</p>\n<ul><li>A. I only</li><li>B. II only</li><li>C. I and III only</li><li>D. II and III only</li></ul>",
+   "text": "It is given that $\\log_a y$ is a linear function of $x$, where $0 < a <1$. The intercepts on the vertical axis and on the horizontal axis of the graph of the linear function are 6 and 3 respectively. If $y = mn^x$, which of the following is/are true?\nI. $m <1$\nII. $n <1$\nIII. $mn^3 = 1$\n\n- A. I only\n- B. II only\n- C. I and III only\n- D. II and III only",
+   "html": "<p>It is given that $\\log_a y$ is a linear function of $x$, where $0 &lt; a &lt;1$. The intercepts on the vertical axis and on the horizontal axis of the graph of the linear function are 6 and 3 respectively. If $y = mn^x$, which of the following is/are true? I. $m &lt;1$ II. $n &lt;1$ III. $mn^3 = 1$</p>\n<ul><li>A. I only</li><li>B. II only</li><li>C. I and III only</li><li>D. II and III only</li></ul>",
    "file": "2022_P2_題目英文卷.md"
   },
   {
@@ -17615,8 +17615,8 @@ window.QB = {
    "tags": [
     "對數"
    ],
-   "text": "If $\\log_4 y =2x - 1$ and $(\\log_4 y)^2 =20x - 31$, then $\\log_2 y =$\n\n- A. 1 or 2.\n- B. 2 or 4.\n- C. 3 or 7.\n- D. 6 or 14.",
-   "html": "<p>If $\\log_4 y =2x - 1$ and $(\\log_4 y)^2 =20x - 31$, then $\\log_2 y =$</p>\n<ul><li>A. 1 or 2.</li><li>B. 2 or 4.</li><li>C. 3 or 7.</li><li>D. 6 or 14.</li></ul>",
+   "text": "If $\\log_4 y = 2x - 1$ and $(\\log_4 y)^2 = 20x - 31$, then $\\log_2 y =$\n\n- A. 1 or 2.\n- B. 2 or 4.\n- C. 3 or 7.\n- D. 6 or 14.",
+   "html": "<p>If $\\log_4 y = 2x - 1$ and $(\\log_4 y)^2 = 20x - 31$, then $\\log_2 y =$</p>\n<ul><li>A. 1 or 2.</li><li>B. 2 or 4.</li><li>C. 3 or 7.</li><li>D. 6 or 14.</li></ul>",
    "file": "2022_P2_題目英文卷.md"
   },
   {
@@ -17675,8 +17675,8 @@ window.QB = {
    "tags": [
     "等比數列"
    ],
-   "text": "Let $a_{n}$ be the $n$th term of a geometric sequence. It is given that $a_{1}=8p^{2}$, $a_{2}=1$ and $a_{3}=27p$, where $p$ is a real number. Find $a_{4}$.\n\n- A. $\\dfrac{1}{6}$\n- B. $\\dfrac{2}{9}$\n- C. $\\dfrac{9}{2}$\n- D. $\\dfrac{81}{4}$",
-   "html": "<p>Let $a_{n}$ be the $n$th term of a geometric sequence. It is given that $a_{1}=8p^{2}$, $a_{2}=1$ and $a_{3}=27p$, where $p$ is a real number. Find $a_{4}$.</p>\n<ul><li>A. $\\dfrac{1}{6}$</li><li>B. $\\dfrac{2}{9}$</li><li>C. $\\dfrac{9}{2}$</li><li>D. $\\dfrac{81}{4}$</li></ul>",
+   "text": "Let $a_{n}$ be the $n$th term of a geometric sequence. It is given that $a_{1} = 8p^{2}$, $a_{2} = 1$ and $a_{3} = 27p$, where $p$ is a real number. Find $a_{4}$.\n\n- A. $\\dfrac{1}{6}$\n- B. $\\dfrac{2}{9}$\n- C. $\\dfrac{9}{2}$\n- D. $\\dfrac{81}{4}$",
+   "html": "<p>Let $a_{n}$ be the $n$th term of a geometric sequence. It is given that $a_{1} = 8p^{2}$, $a_{2} = 1$ and $a_{3} = 27p$, where $p$ is a real number. Find $a_{4}$.</p>\n<ul><li>A. $\\dfrac{1}{6}$</li><li>B. $\\dfrac{2}{9}$</li><li>C. $\\dfrac{9}{2}$</li><li>D. $\\dfrac{81}{4}$</li></ul>",
    "file": "2022_P2_題目英文卷.md"
   },
   {
@@ -17690,8 +17690,8 @@ window.QB = {
    "tags": [
     "圓的幾何"
    ],
-   "text": "In the figure, $ABCD$ is a circle. $PA$ and $QB$ are the tangents to the circle at $A$ and $B$ respectively. If $\\angle ADC=79^{\\circ}$, $\\angle CBQ=39^{\\circ}$ and $\\angle DAP=42^{\\circ}$, then $\\angle BCD=$\n\n![Figure Q38 (as printed)](2022P2_figs/Q38.png)\n\n- A. $76^{\\circ}$\n- B. $79^{\\circ}$\n- C. $81^{\\circ}$\n- D. $82^{\\circ}$",
-   "html": "<p>In the figure, $ABCD$ is a circle. $PA$ and $QB$ are the tangents to the circle at $A$ and $B$ respectively. If $\\angle ADC=79^{\\circ}$, $\\angle CBQ=39^{\\circ}$ and $\\angle DAP=42^{\\circ}$, then $\\angle BCD=$</p>\n<p><img alt=\"Figure Q38 (as printed)\" src=\"2022P2_figs/Q38.png\" /></p>\n<ul><li>A. $76^{\\circ}$</li><li>B. $79^{\\circ}$</li><li>C. $81^{\\circ}$</li><li>D. $82^{\\circ}$</li></ul>",
+   "text": "In the figure, $ABCD$ is a circle. $PA$ and $QB$ are the tangents to the circle at $A$ and $B$ respectively. If $\\angle ADC = 79^{\\circ}$, $\\angle CBQ = 39^{\\circ}$ and $\\angle DAP = 42^{\\circ}$, then $\\angle BCD =$\n\n![Figure Q38 (as printed)](2022P2_figs/Q38.png)\n\n- A. $76^{\\circ}$\n- B. $79^{\\circ}$\n- C. $81^{\\circ}$\n- D. $82^{\\circ}$",
+   "html": "<p>In the figure, $ABCD$ is a circle. $PA$ and $QB$ are the tangents to the circle at $A$ and $B$ respectively. If $\\angle ADC = 79^{\\circ}$, $\\angle CBQ = 39^{\\circ}$ and $\\angle DAP = 42^{\\circ}$, then $\\angle BCD =$</p>\n<p><img alt=\"Figure Q38 (as printed)\" src=\"2022P2_figs/Q38.png\" /></p>\n<ul><li>A. $76^{\\circ}$</li><li>B. $79^{\\circ}$</li><li>C. $81^{\\circ}$</li><li>D. $82^{\\circ}$</li></ul>",
    "file": "2022_P2_題目英文卷.md"
   },
   {
@@ -17705,8 +17705,8 @@ window.QB = {
    "tags": [
     "三角學"
    ],
-   "text": "For $0^{\\circ} \\leq x <360^{\\circ}$, how many roots does the equation $\\sin^{2}x=6\\cos^{2}x$ have?\n\n- A. 2\n- B. 3\n- C. 4\n- D. 5 Go on to the next page",
-   "html": "<p>For $0^{\\circ} \\leq x &lt;360^{\\circ}$, how many roots does the equation $\\sin^{2}x=6\\cos^{2}x$ have?</p>\n<ul><li>A. 2</li><li>B. 3</li><li>C. 4</li><li>D. 5 Go on to the next page</li></ul>",
+   "text": "For $0^{\\circ} \\leq x <360^{\\circ}$, how many roots does the equation $\\sin^{2}x = 6\\cos^{2}x$ have?\n\n- A. 2\n- B. 3\n- C. 4\n- D. 5 Go on to the next page",
+   "html": "<p>For $0^{\\circ} \\leq x &lt;360^{\\circ}$, how many roots does the equation $\\sin^{2}x = 6\\cos^{2}x$ have?</p>\n<ul><li>A. 2</li><li>B. 3</li><li>C. 4</li><li>D. 5 Go on to the next page</li></ul>",
    "file": "2022_P2_題目英文卷.md"
   },
   {
@@ -17737,8 +17737,8 @@ window.QB = {
     "圓的幾何",
     "相似三角形"
    ],
-   "text": "Let $O$ be the origin. The coordinates of the points $A$ and $B$ are $(a,0)$ and $(0,b)$ respectively, where $a$ and $b$ are positive numbers. If the circumcentre of $\\triangle OAB$ lies on the straight line $4x + 16y =17a$, then $a:b =$\n\n- A. $8:15$\n- B. $15:8$\n- C. $16:47$\n- D. $47:16$",
-   "html": "<p>Let $O$ be the origin. The coordinates of the points $A$ and $B$ are $(a,0)$ and $(0,b)$ respectively, where $a$ and $b$ are positive numbers. If the circumcentre of $\\triangle OAB$ lies on the straight line $4x + 16y =17a$, then $a:b =$</p>\n<ul><li>A. $8:15$</li><li>B. $15:8$</li><li>C. $16:47$</li><li>D. $47:16$</li></ul>",
+   "text": "Let $O$ be the origin. The coordinates of the points $A$ and $B$ are $(a,0)$ and $(0,b)$ respectively, where $a$ and $b$ are positive numbers. If the circumcentre of $\\triangle OAB$ lies on the straight line $4x + 16y = 17a$, then $a : b =$\n\n- A. $8 : 15$\n- B. $15 : 8$\n- C. $16 : 47$\n- D. $47 : 16$",
+   "html": "<p>Let $O$ be the origin. The coordinates of the points $A$ and $B$ are $(a,0)$ and $(0,b)$ respectively, where $a$ and $b$ are positive numbers. If the circumcentre of $\\triangle OAB$ lies on the straight line $4x + 16y = 17a$, then $a : b =$</p>\n<ul><li>A. $8 : 15$</li><li>B. $15 : 8$</li><li>C. $16 : 47$</li><li>D. $47 : 16$</li></ul>",
    "file": "2022_P2_題目英文卷.md"
   },
   {
@@ -17752,8 +17752,8 @@ window.QB = {
    "tags": [
     "排列與組合"
    ],
-   "text": "If the first five digits and the last two digits of a seven-digit password are formed by a permutation of $1,3,5,7,9$ and a permutation of $2,8$ respectively, how many different seven-digit passwords can be formed?\n\n- A. 10\n- B. 240\n- C. 480\n- D. 5040",
-   "html": "<p>If the first five digits and the last two digits of a seven-digit password are formed by a permutation of $1,3,5,7,9$ and a permutation of $2,8$ respectively, how many different seven-digit passwords can be formed?</p>\n<ul><li>A. 10</li><li>B. 240</li><li>C. 480</li><li>D. 5040</li></ul>",
+   "text": "If the first five digits and the last two digits of a seven-digit password are formed by a permutation of $1,3,5,7,9$ and a permutation of $2,8$ respectively, how many different seven-digit passwords can be formed?\n\n- A. 10\n- B. 240\n- C. 480\n- D. 5 040",
+   "html": "<p>If the first five digits and the last two digits of a seven-digit password are formed by a permutation of $1,3,5,7,9$ and a permutation of $2,8$ respectively, how many different seven-digit passwords can be formed?</p>\n<ul><li>A. 10</li><li>B. 240</li><li>C. 480</li><li>D. 5 040</li></ul>",
    "file": "2022_P2_題目英文卷.md"
   },
   {
@@ -17783,8 +17783,8 @@ window.QB = {
     "統計",
     "百分比"
    ],
-   "text": "In a test, the median of the test scores of a class of students is 30 marks. All the students fail in the test, so the test score of each student is adjusted such that each score is increased by 50% and then extra 8 marks are added. Let $x$ marks be the median of the test scores of the class of students after the score adjustment. In the test, the standard score of a student before the score adjustment is $-2$. Denote the standard score of this student after the score adjustment by $z$. Find $x$ and $z$.\n\n- A. $x=45$ and $z=-2$\n- B. $x=45$ and $z=-1$\n- C. $x=53$ and $z=-2$\n- D. $x=53$ and $z=-1$",
-   "html": "<p>In a test, the median of the test scores of a class of students is 30 marks. All the students fail in the test, so the test score of each student is adjusted such that each score is increased by 50% and then extra 8 marks are added. Let $x$ marks be the median of the test scores of the class of students after the score adjustment. In the test, the standard score of a student before the score adjustment is $-2$. Denote the standard score of this student after the score adjustment by $z$. Find $x$ and $z$.</p>\n<ul><li>A. $x=45$ and $z=-2$</li><li>B. $x=45$ and $z=-1$</li><li>C. $x=53$ and $z=-2$</li><li>D. $x=53$ and $z=-1$</li></ul>",
+   "text": "In a test, the median of the test scores of a class of students is 30 marks. All the students fail in the test, so the test score of each student is adjusted such that each score is increased by 50% and then extra 8 marks are added. Let $x$ marks be the median of the test scores of the class of students after the score adjustment. In the test, the standard score of a student before the score adjustment is $-2$. Denote the standard score of this student after the score adjustment by $z$. Find $x$ and $z$.\n\n- A. $x = 45$ and $z = -2$\n- B. $x = 45$ and $z = -1$\n- C. $x = 53$ and $z = -2$\n- D. $x = 53$ and $z = -1$",
+   "html": "<p>In a test, the median of the test scores of a class of students is 30 marks. All the students fail in the test, so the test score of each student is adjusted such that each score is increased by 50% and then extra 8 marks are added. Let $x$ marks be the median of the test scores of the class of students after the score adjustment. In the test, the standard score of a student before the score adjustment is $-2$. Denote the standard score of this student after the score adjustment by $z$. Find $x$ and $z$.</p>\n<ul><li>A. $x = 45$ and $z = -2$</li><li>B. $x = 45$ and $z = -1$</li><li>C. $x = 53$ and $z = -2$</li><li>D. $x = 53$ and $z = -1$</li></ul>",
    "file": "2022_P2_題目英文卷.md"
   },
   {

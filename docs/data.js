@@ -1,5 +1,5 @@
 window.QB = {
- "generated": "2026-11-08 13:51",
+ "generated": "2026-11-08 13:56",
  "count": 1369,
  "questions": [
   {
@@ -19362,8 +19362,8 @@ window.QB = {
    "tags": [
     "複數"
    ],
-   "text": "If $k$ is a real number, then the real part of $\\dfrac{i}{k-i}+\\dfrac{2}{k+i}$ is\n\n- A. $\\dfrac{2k+1}{k^2-1}$\n- B. $\\dfrac{2k-1}{k^2+1}$\n- C. $\\dfrac{k+2}{k^2-1}$\n- D. $\\dfrac{k-2}{k^2+1}$",
-   "html": "<p>If $k$ is a real number, then the real part of $\\dfrac{i}{k-i}+\\dfrac{2}{k+i}$ is</p>\n<ul><li>A. $\\dfrac{2k+1}{k^2-1}$</li><li>B. $\\dfrac{2k-1}{k^2+1}$</li><li>C. $\\dfrac{k+2}{k^2-1}$</li><li>D. $\\dfrac{k-2}{k^2+1}$</li></ul>",
+   "text": "If $k$ is a real number, then the real part of $\\dfrac{i}{k-i}+\\dfrac{2}{k+i}$ is\n\n- A. $\\dfrac{2k+1}{k^2-1}$\n- B. $\\dfrac{2k-1}{k^2+1}$\n- C. $\\dfrac{k+2}{k^2-1}$\n- D. $\\dfrac{k-2}{k^2+1}$",
+   "html": "<p>If $k$ is a real number, then the real part of $\\dfrac{i}{k-i}+\\dfrac{2}{k+i}$ is</p>\n<ul><li>A. $\\dfrac{2k+1}{k^2-1}$</li><li>B. $\\dfrac{2k-1}{k^2+1}$</li><li>C. $\\dfrac{k+2}{k^2-1}$</li><li>D. $\\dfrac{k-2}{k^2+1}$</li></ul>",
    "file": "2023_P2_題目英文卷.md"
   },
   {

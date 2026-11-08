@@ -8,6 +8,9 @@ const BANK_URL = "https://formone98127.github.io/dse-maths-question-bank/";
  * hash: 逐題睇深連結
  */
 const CATALOG = [
+  { id: "math", name: "數學（必修部分）", year: 2018, paper: "卷二", lang: "英文", hash: "#2018P2Q1" },
+  { id: "math", name: "數學（必修部分）", year: 2019, paper: "卷二", lang: "英文", hash: "#2019P2Q1" },
+  { id: "math", name: "數學（必修部分）", year: 2018, paper: "卷一", lang: "英文", hash: "#2018P1Q1" },
   /* 數學（中文卷） */
   { id: "math", name: "數學（必修部分）", year: 2012, paper: "卷一", lang: "中文", hash: "#2012P1Q1" },
   { id: "math", name: "數學（必修部分）", year: 2012, paper: "卷二", lang: "中文", hash: "#2012P2Q1" },

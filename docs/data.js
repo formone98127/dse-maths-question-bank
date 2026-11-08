@@ -11563,8 +11563,8 @@ window.QB = {
     "百分數／利息",
     "不等式"
    ],
-   "text": "In the figure, the equations of the straight lines $L_{1}$ and $L_{2}$ are $3x+ay=b$ and $cx+y=d$ respectively. Which of the following is/are true?\nI. $ac<3$\nII. $ad<b$\nIII. $bc<3d$\n\n*[FIGURE Q6: 兩條相交直線 L1（較陡）與 L2（較平），第一象限交點，L1 交 x 軸於負值、L2 交 y 軸正值；標 x, y, O]*\n\n- A. II only\n- B. III only\n- C. I and II only\n- D. I and III only",
-   "html": "<p>In the figure, the equations of the straight lines $L_{1}$ and $L_{2}$ are $3x+ay=b$ and $cx+y=d$ respectively. Which of the following is/are true?\nI. $ac&lt;3$\nII. $ad&lt;b$\nIII. $bc&lt;3d$</p>\n<p><em>[FIGURE Q6: 兩條相交直線 L1（較陡）與 L2（較平），第一象限交點，L1 交 x 軸於負值、L2 交 y 軸正值；標 x, y, O]</em></p>\n<ul><li>A. II only</li><li>B. III only</li><li>C. I and II only</li><li>D. I and III only</li></ul>",
+   "text": "In the figure, the equations of the straight lines $L_{1}$ and $L_{2}$ are $3x+ay=b$ and $cx+y=d$ respectively. Which of the following is/are true?\nI. $ac<3$\nII. $ad<b$\nIII. $bc<3d$\n\n![Q6 figure](2018P2_figs/Q06.png)\n\n*[FIGURE Q6: 兩條相交直線 L1（較陡）與 L2（較平），第一象限交點，L1 交 x 軸於負值、L2 交 y 軸正值；標 x, y, O]*\n\n- A. II only\n- B. III only\n- C. I and II only\n- D. I and III only",
+   "html": "<p>In the figure, the equations of the straight lines $L_{1}$ and $L_{2}$ are $3x+ay=b$ and $cx+y=d$ respectively. Which of the following is/are true?\nI. $ac&lt;3$\nII. $ad&lt;b$\nIII. $bc&lt;3d$</p>\n<p><img alt=\"Q6 figure\" src=\"2018P2_figs/Q06.png\" /></p>\n<p><em>[FIGURE Q6: 兩條相交直線 L1（較陡）與 L2（較平），第一象限交點，L1 交 x 軸於負值、L2 交 y 軸正值；標 x, y, O]</em></p>\n<ul><li>A. II only</li><li>B. III only</li><li>C. I and II only</li><li>D. I and III only</li></ul>",
    "file": "2018_P2_題目英文卷.md"
   },
   {
@@ -11692,8 +11692,8 @@ window.QB = {
     "平面幾何",
     "百分數／利息"
    ],
-   "text": "In the figure, $ABCDEFGH$ is an octagon, where all the measurements are correct to the nearest cm. Let $x\\ \\mathrm{cm}^{2}$ be the actual area of the octagon. Find the range of values of $x$.\n\n*[FIGURE Q14: 八邊形 A(左上)-H(上)-E(右上)-D(右)-C(右下)-B(左下)，中間底部有 2cm 寬缺口 G-F（上方標 2 cm），左邊 AB 與右邊 CD 各標 4 cm，底邊 B-C 標 6 cm，A、H、E、D、B、C 各處有直角記號]*\n\n- A. $13<x<23$\n- B. $13<x<27$\n- C. $17<x<23$\n- D. $17<x<27$",
-   "html": "<p>In the figure, $ABCDEFGH$ is an octagon, where all the measurements are correct to the nearest cm. Let $x\\ \\mathrm{cm}^{2}$ be the actual area of the octagon. Find the range of values of $x$.</p>\n<p><em>[FIGURE Q14: 八邊形 A(左上)-H(上)-E(右上)-D(右)-C(右下)-B(左下)，中間底部有 2cm 寬缺口 G-F（上方標 2 cm），左邊 AB 與右邊 CD 各標 4 cm，底邊 B-C 標 6 cm，A、H、E、D、B、C 各處有直角記號]</em></p>\n<ul><li>A. $13&lt;x&lt;23$</li><li>B. $13&lt;x&lt;27$</li><li>C. $17&lt;x&lt;23$</li><li>D. $17&lt;x&lt;27$</li></ul>",
+   "text": "In the figure, $ABCDEFGH$ is an octagon, where all the measurements are correct to the nearest cm. Let $x\\ \\mathrm{cm}^{2}$ be the actual area of the octagon. Find the range of values of $x$.\n\n![Q14 figure](2018P2_figs/Q14.png)\n\n*[FIGURE Q14: 八邊形 A(左上)-H(上)-E(右上)-D(右)-C(右下)-B(左下)，中間底部有 2cm 寬缺口 G-F（上方標 2 cm），左邊 AB 與右邊 CD 各標 4 cm，底邊 B-C 標 6 cm，A、H、E、D、B、C 各處有直角記號]*\n\n- A. $13<x<23$\n- B. $13<x<27$\n- C. $17<x<23$\n- D. $17<x<27$",
+   "html": "<p>In the figure, $ABCDEFGH$ is an octagon, where all the measurements are correct to the nearest cm. Let $x\\ \\mathrm{cm}^{2}$ be the actual area of the octagon. Find the range of values of $x$.</p>\n<p><img alt=\"Q14 figure\" src=\"2018P2_figs/Q14.png\" /></p>\n<p><em>[FIGURE Q14: 八邊形 A(左上)-H(上)-E(右上)-D(右)-C(右下)-B(左下)，中間底部有 2cm 寬缺口 G-F（上方標 2 cm），左邊 AB 與右邊 CD 各標 4 cm，底邊 B-C 標 6 cm，A、H、E、D、B、C 各處有直角記號]</em></p>\n<ul><li>A. $13&lt;x&lt;23$</li><li>B. $13&lt;x&lt;27$</li><li>C. $17&lt;x&lt;23$</li><li>D. $17&lt;x&lt;27$</li></ul>",
    "file": "2018_P2_題目英文卷.md"
   },
   {
@@ -11707,8 +11707,8 @@ window.QB = {
    "tags": [
     "立體圖形"
    ],
-   "text": "In the figure, the volume of the solid right triangular prism is\n\n*[FIGURE Q15: 直立三稜柱，頂邊標 17 cm，前下斜邊標 12 cm，右側豎邊標 8 cm（直角記號）]*\n\n- A. $544\\ \\mathrm{cm}^{3}$\n- B. $600\\ \\mathrm{cm}^{3}$\n- C. $660\\ \\mathrm{cm}^{3}$\n- D. $720\\ \\mathrm{cm}^{3}$",
-   "html": "<p>In the figure, the volume of the solid right triangular prism is</p>\n<p><em>[FIGURE Q15: 直立三稜柱，頂邊標 17 cm，前下斜邊標 12 cm，右側豎邊標 8 cm（直角記號）]</em></p>\n<ul><li>A. $544\\ \\mathrm{cm}^{3}$</li><li>B. $600\\ \\mathrm{cm}^{3}$</li><li>C. $660\\ \\mathrm{cm}^{3}$</li><li>D. $720\\ \\mathrm{cm}^{3}$</li></ul>",
+   "text": "In the figure, the volume of the solid right triangular prism is\n\n![Q15 figure](2018P2_figs/Q15.png)\n\n*[FIGURE Q15: 直立三稜柱，頂邊標 17 cm，前下斜邊標 12 cm，右側豎邊標 8 cm（直角記號）]*\n\n- A. $544\\ \\mathrm{cm}^{3}$\n- B. $600\\ \\mathrm{cm}^{3}$\n- C. $660\\ \\mathrm{cm}^{3}$\n- D. $720\\ \\mathrm{cm}^{3}$",
+   "html": "<p>In the figure, the volume of the solid right triangular prism is</p>\n<p><img alt=\"Q15 figure\" src=\"2018P2_figs/Q15.png\" /></p>\n<p><em>[FIGURE Q15: 直立三稜柱，頂邊標 17 cm，前下斜邊標 12 cm，右側豎邊標 8 cm（直角記號）]</em></p>\n<ul><li>A. $544\\ \\mathrm{cm}^{3}$</li><li>B. $600\\ \\mathrm{cm}^{3}$</li><li>C. $660\\ \\mathrm{cm}^{3}$</li><li>D. $720\\ \\mathrm{cm}^{3}$</li></ul>",
    "file": "2018_P2_題目英文卷.md"
   },
   {
@@ -11723,8 +11723,8 @@ window.QB = {
     "平面幾何",
     "百分數／利息"
    ],
-   "text": "In the figure, $ABCD$ is a parallelogram. $E$ is a point lying on $BC$ such that $BE:EC=5:3$. $AE$ and $BD$ intersect at the point $F$. If the area of $\\triangle ABF$ is $120\\ \\mathrm{cm}^{2}$, then the area of the quadrilateral $CDFE$ is\n\n*[FIGURE Q16: 平行四邊形 A(上中)-D(右上)-C(右下)-B(左下)，E 在 BC 上，對角線 BD 與 AE 交於 F]*\n\n- A. $237\\ \\mathrm{cm}^{2}$\n- B. $307\\ \\mathrm{cm}^{2}$\n- C. $312\\ \\mathrm{cm}^{2}$\n- D. $429\\ \\mathrm{cm}^{2}$",
-   "html": "<p>In the figure, $ABCD$ is a parallelogram. $E$ is a point lying on $BC$ such that $BE:EC=5:3$. $AE$ and $BD$ intersect at the point $F$. If the area of $\\triangle ABF$ is $120\\ \\mathrm{cm}^{2}$, then the area of the quadrilateral $CDFE$ is</p>\n<p><em>[FIGURE Q16: 平行四邊形 A(上中)-D(右上)-C(右下)-B(左下)，E 在 BC 上，對角線 BD 與 AE 交於 F]</em></p>\n<ul><li>A. $237\\ \\mathrm{cm}^{2}$</li><li>B. $307\\ \\mathrm{cm}^{2}$</li><li>C. $312\\ \\mathrm{cm}^{2}$</li><li>D. $429\\ \\mathrm{cm}^{2}$</li></ul>",
+   "text": "In the figure, $ABCD$ is a parallelogram. $E$ is a point lying on $BC$ such that $BE:EC=5:3$. $AE$ and $BD$ intersect at the point $F$. If the area of $\\triangle ABF$ is $120\\ \\mathrm{cm}^{2}$, then the area of the quadrilateral $CDFE$ is\n\n![Q16 figure](2018P2_figs/Q16.png)\n\n*[FIGURE Q16: 平行四邊形 A(上中)-D(右上)-C(右下)-B(左下)，E 在 BC 上，對角線 BD 與 AE 交於 F]*\n\n- A. $237\\ \\mathrm{cm}^{2}$\n- B. $307\\ \\mathrm{cm}^{2}$\n- C. $312\\ \\mathrm{cm}^{2}$\n- D. $429\\ \\mathrm{cm}^{2}$",
+   "html": "<p>In the figure, $ABCD$ is a parallelogram. $E$ is a point lying on $BC$ such that $BE:EC=5:3$. $AE$ and $BD$ intersect at the point $F$. If the area of $\\triangle ABF$ is $120\\ \\mathrm{cm}^{2}$, then the area of the quadrilateral $CDFE$ is</p>\n<p><img alt=\"Q16 figure\" src=\"2018P2_figs/Q16.png\" /></p>\n<p><em>[FIGURE Q16: 平行四邊形 A(上中)-D(右上)-C(右下)-B(左下)，E 在 BC 上，對角線 BD 與 AE 交於 F]</em></p>\n<ul><li>A. $237\\ \\mathrm{cm}^{2}$</li><li>B. $307\\ \\mathrm{cm}^{2}$</li><li>C. $312\\ \\mathrm{cm}^{2}$</li><li>D. $429\\ \\mathrm{cm}^{2}$</li></ul>",
    "file": "2018_P2_題目英文卷.md"
   },
   {
@@ -11739,8 +11739,8 @@ window.QB = {
     "立體圖形",
     "百分數／利息"
    ],
-   "text": "In the figure, $O$ is the centre of the sector $OABCD$. $AD$ and $OC$ are perpendicular to each other and intersect at the point $E$. $F$ is a point lying on $AD$ such that $BF$ is perpendicular to $AD$. If $AF=9\\ \\mathrm{cm}$, $DF=39\\ \\mathrm{cm}$ and $OE=18\\ \\mathrm{cm}$, then the area of the sector $OBC$ is\n\n*[FIGURE Q17: 扇形 OABCD，O 在下方，水平弦 AD（左 D、右 A），OC 垂直 AD 交於 E（虛線），B 在弧上偏右，BF 垂直 AD 交於 F（虛線）]*\n\n- A. $48\\pi\\ \\mathrm{cm}^{2}$\n- B. $75\\pi\\ \\mathrm{cm}^{2}$\n- C. $96\\pi\\ \\mathrm{cm}^{2}$\n- D. $150\\pi\\ \\mathrm{cm}^{2}$",
-   "html": "<p>In the figure, $O$ is the centre of the sector $OABCD$. $AD$ and $OC$ are perpendicular to each other and intersect at the point $E$. $F$ is a point lying on $AD$ such that $BF$ is perpendicular to $AD$. If $AF=9\\ \\mathrm{cm}$, $DF=39\\ \\mathrm{cm}$ and $OE=18\\ \\mathrm{cm}$, then the area of the sector $OBC$ is</p>\n<p><em>[FIGURE Q17: 扇形 OABCD，O 在下方，水平弦 AD（左 D、右 A），OC 垂直 AD 交於 E（虛線），B 在弧上偏右，BF 垂直 AD 交於 F（虛線）]</em></p>\n<ul><li>A. $48\\pi\\ \\mathrm{cm}^{2}$</li><li>B. $75\\pi\\ \\mathrm{cm}^{2}$</li><li>C. $96\\pi\\ \\mathrm{cm}^{2}$</li><li>D. $150\\pi\\ \\mathrm{cm}^{2}$</li></ul>",
+   "text": "In the figure, $O$ is the centre of the sector $OABCD$. $AD$ and $OC$ are perpendicular to each other and intersect at the point $E$. $F$ is a point lying on $AD$ such that $BF$ is perpendicular to $AD$. If $AF=9\\ \\mathrm{cm}$, $DF=39\\ \\mathrm{cm}$ and $OE=18\\ \\mathrm{cm}$, then the area of the sector $OBC$ is\n\n![Q17 figure](2018P2_figs/Q17.png)\n\n*[FIGURE Q17: 扇形 OABCD，O 在下方，水平弦 AD（左 D、右 A），OC 垂直 AD 交於 E（虛線），B 在弧上偏右，BF 垂直 AD 交於 F（虛線）]*\n\n- A. $48\\pi\\ \\mathrm{cm}^{2}$\n- B. $75\\pi\\ \\mathrm{cm}^{2}$\n- C. $96\\pi\\ \\mathrm{cm}^{2}$\n- D. $150\\pi\\ \\mathrm{cm}^{2}$",
+   "html": "<p>In the figure, $O$ is the centre of the sector $OABCD$. $AD$ and $OC$ are perpendicular to each other and intersect at the point $E$. $F$ is a point lying on $AD$ such that $BF$ is perpendicular to $AD$. If $AF=9\\ \\mathrm{cm}$, $DF=39\\ \\mathrm{cm}$ and $OE=18\\ \\mathrm{cm}$, then the area of the sector $OBC$ is</p>\n<p><img alt=\"Q17 figure\" src=\"2018P2_figs/Q17.png\" /></p>\n<p><em>[FIGURE Q17: 扇形 OABCD，O 在下方，水平弦 AD（左 D、右 A），OC 垂直 AD 交於 E（虛線），B 在弧上偏右，BF 垂直 AD 交於 F（虛線）]</em></p>\n<ul><li>A. $48\\pi\\ \\mathrm{cm}^{2}$</li><li>B. $75\\pi\\ \\mathrm{cm}^{2}$</li><li>C. $96\\pi\\ \\mathrm{cm}^{2}$</li><li>D. $150\\pi\\ \\mathrm{cm}^{2}$</li></ul>",
    "file": "2018_P2_題目英文卷.md"
   },
   {
@@ -11756,8 +11756,8 @@ window.QB = {
     "三角比／角",
     "百分數／利息"
    ],
-   "text": "In the figure, $ABCD$ is a rhombus. $E$ and $F$ are points lying on $AB$ and $AD$ respectively such that $AE=AF$ and $\\angle ECF=42^{\\circ}$. If $\\angle BAD=110^{\\circ}$, then $\\angle BEC=$\n\n*[FIGURE Q18: 菱形 A(右下)-B(左下)-C(左上)-D(右上)，E 在 BA 延線上（近 A），F 在 AD 上，連 CE、CF；∠BEC 有弧標]*\n\n- A. $70^{\\circ}$\n- B. $76^{\\circ}$\n- C. $80^{\\circ}$\n- D. $84^{\\circ}$",
-   "html": "<p>In the figure, $ABCD$ is a rhombus. $E$ and $F$ are points lying on $AB$ and $AD$ respectively such that $AE=AF$ and $\\angle ECF=42^{\\circ}$. If $\\angle BAD=110^{\\circ}$, then $\\angle BEC=$</p>\n<p><em>[FIGURE Q18: 菱形 A(右下)-B(左下)-C(左上)-D(右上)，E 在 BA 延線上（近 A），F 在 AD 上，連 CE、CF；∠BEC 有弧標]</em></p>\n<ul><li>A. $70^{\\circ}$</li><li>B. $76^{\\circ}$</li><li>C. $80^{\\circ}$</li><li>D. $84^{\\circ}$</li></ul>",
+   "text": "In the figure, $ABCD$ is a rhombus. $E$ and $F$ are points lying on $AB$ and $AD$ respectively such that $AE=AF$ and $\\angle ECF=42^{\\circ}$. If $\\angle BAD=110^{\\circ}$, then $\\angle BEC=$\n\n![Q18 figure](2018P2_figs/Q18.png)\n\n*[FIGURE Q18: 菱形 A(右下)-B(左下)-C(左上)-D(右上)，E 在 BA 延線上（近 A），F 在 AD 上，連 CE、CF；∠BEC 有弧標]*\n\n- A. $70^{\\circ}$\n- B. $76^{\\circ}$\n- C. $80^{\\circ}$\n- D. $84^{\\circ}$",
+   "html": "<p>In the figure, $ABCD$ is a rhombus. $E$ and $F$ are points lying on $AB$ and $AD$ respectively such that $AE=AF$ and $\\angle ECF=42^{\\circ}$. If $\\angle BAD=110^{\\circ}$, then $\\angle BEC=$</p>\n<p><img alt=\"Q18 figure\" src=\"2018P2_figs/Q18.png\" /></p>\n<p><em>[FIGURE Q18: 菱形 A(右下)-B(左下)-C(左上)-D(右上)，E 在 BA 延線上（近 A），F 在 AD 上，連 CE、CF；∠BEC 有弧標]</em></p>\n<ul><li>A. $70^{\\circ}$</li><li>B. $76^{\\circ}$</li><li>C. $80^{\\circ}$</li><li>D. $84^{\\circ}$</li></ul>",
    "file": "2018_P2_題目英文卷.md"
   },
   {
@@ -11773,8 +11773,8 @@ window.QB = {
     "三角比／角",
     "百分數／利息"
    ],
-   "text": "In the figure, $ABCDE$ is a regular pentagon. $AD$ and $CE$ intersect at the point $F$. Which of the following are true?\nI. $CD=CF$\nII. $\\triangle ABF\\cong\\triangle CBF$\nIII. $\\angle AFB+\\angle AEF=90^{\\circ}$\n\n*[FIGURE Q19: 正五邊形 A(右下)-B(左下)-C(左)-D(上)-E(右)，對角線 AD 與 CE 交於 F]*\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
-   "html": "<p>In the figure, $ABCDE$ is a regular pentagon. $AD$ and $CE$ intersect at the point $F$. Which of the following are true?\nI. $CD=CF$\nII. $\\triangle ABF\\cong\\triangle CBF$\nIII. $\\angle AFB+\\angle AEF=90^{\\circ}$</p>\n<p><em>[FIGURE Q19: 正五邊形 A(右下)-B(左下)-C(左)-D(上)-E(右)，對角線 AD 與 CE 交於 F]</em></p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
+   "text": "In the figure, $ABCDE$ is a regular pentagon. $AD$ and $CE$ intersect at the point $F$. Which of the following are true?\nI. $CD=CF$\nII. $\\triangle ABF\\cong\\triangle CBF$\nIII. $\\angle AFB+\\angle AEF=90^{\\circ}$\n\n![Q19 figure](2018P2_figs/Q19.png)\n\n*[FIGURE Q19: 正五邊形 A(右下)-B(左下)-C(左)-D(上)-E(右)，對角線 AD 與 CE 交於 F]*\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
+   "html": "<p>In the figure, $ABCDE$ is a regular pentagon. $AD$ and $CE$ intersect at the point $F$. Which of the following are true?\nI. $CD=CF$\nII. $\\triangle ABF\\cong\\triangle CBF$\nIII. $\\angle AFB+\\angle AEF=90^{\\circ}$</p>\n<p><img alt=\"Q19 figure\" src=\"2018P2_figs/Q19.png\" /></p>\n<p><em>[FIGURE Q19: 正五邊形 A(右下)-B(左下)-C(左)-D(上)-E(右)，對角線 AD 與 CE 交於 F]</em></p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
    "file": "2018_P2_題目英文卷.md"
   },
   {
@@ -11789,8 +11789,8 @@ window.QB = {
     "平面幾何",
     "百分數／利息"
    ],
-   "text": "In the figure, $ABCD$ is a square. $E$ is a point lying on $AB$ produced such that $BE=4\\ \\mathrm{cm}$. $BC$ and $DE$ intersect at the point $F$. If $EF=5\\ \\mathrm{cm}$, then $DF=$\n\n*[FIGURE Q20: 正方形 C(左上)-D(右上)-A(右下)-B(左下)，E 在 BA 向左延長線上，連 DE 與 BC 交於 F]*\n\n- A. $12\\ \\mathrm{cm}$\n- B. $15\\ \\mathrm{cm}$\n- C. $16\\ \\mathrm{cm}$\n- D. $20\\ \\mathrm{cm}$",
-   "html": "<p>In the figure, $ABCD$ is a square. $E$ is a point lying on $AB$ produced such that $BE=4\\ \\mathrm{cm}$. $BC$ and $DE$ intersect at the point $F$. If $EF=5\\ \\mathrm{cm}$, then $DF=$</p>\n<p><em>[FIGURE Q20: 正方形 C(左上)-D(右上)-A(右下)-B(左下)，E 在 BA 向左延長線上，連 DE 與 BC 交於 F]</em></p>\n<ul><li>A. $12\\ \\mathrm{cm}$</li><li>B. $15\\ \\mathrm{cm}$</li><li>C. $16\\ \\mathrm{cm}$</li><li>D. $20\\ \\mathrm{cm}$</li></ul>",
+   "text": "In the figure, $ABCD$ is a square. $E$ is a point lying on $AB$ produced such that $BE=4\\ \\mathrm{cm}$. $BC$ and $DE$ intersect at the point $F$. If $EF=5\\ \\mathrm{cm}$, then $DF=$\n\n![Q20 figure](2018P2_figs/Q20.png)\n\n*[FIGURE Q20: 正方形 C(左上)-D(右上)-A(右下)-B(左下)，E 在 BA 向左延長線上，連 DE 與 BC 交於 F]*\n\n- A. $12\\ \\mathrm{cm}$\n- B. $15\\ \\mathrm{cm}$\n- C. $16\\ \\mathrm{cm}$\n- D. $20\\ \\mathrm{cm}$",
+   "html": "<p>In the figure, $ABCD$ is a square. $E$ is a point lying on $AB$ produced such that $BE=4\\ \\mathrm{cm}$. $BC$ and $DE$ intersect at the point $F$. If $EF=5\\ \\mathrm{cm}$, then $DF=$</p>\n<p><img alt=\"Q20 figure\" src=\"2018P2_figs/Q20.png\" /></p>\n<p><em>[FIGURE Q20: 正方形 C(左上)-D(右上)-A(右下)-B(左下)，E 在 BA 向左延長線上，連 DE 與 BC 交於 F]</em></p>\n<ul><li>A. $12\\ \\mathrm{cm}$</li><li>B. $15\\ \\mathrm{cm}$</li><li>C. $16\\ \\mathrm{cm}$</li><li>D. $20\\ \\mathrm{cm}$</li></ul>",
    "file": "2018_P2_題目英文卷.md"
   },
   {
@@ -11806,8 +11806,8 @@ window.QB = {
     "三角比／角",
     "百分數／利息"
    ],
-   "text": "In the figure, $ABCD$ is a trapezium with $\\angle ABC=\\angle BAD=90^{\\circ}$. $E$ and $F$ are points lying on $AB$ such that $E$ and $F$ divide $AB$ into three equal parts. Which of the following must be true?\nI. $AF\\sin\\alpha=BE\\sin\\beta$\nII. $CE\\cos\\alpha=DF\\cos\\beta$\nIII. $AD\\tan\\alpha=BC\\tan\\beta$\n\n*[FIGURE Q21: 梯形 A(左下)-D(左上)-C(右上)-B(右下)，∠A、∠B 為直角；AB 上由左至右為 A、E、F、B，α 在 E、β 在 F；連 DE、CE]*\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
-   "html": "<p>In the figure, $ABCD$ is a trapezium with $\\angle ABC=\\angle BAD=90^{\\circ}$. $E$ and $F$ are points lying on $AB$ such that $E$ and $F$ divide $AB$ into three equal parts. Which of the following must be true?\nI. $AF\\sin\\alpha=BE\\sin\\beta$\nII. $CE\\cos\\alpha=DF\\cos\\beta$\nIII. $AD\\tan\\alpha=BC\\tan\\beta$</p>\n<p><em>[FIGURE Q21: 梯形 A(左下)-D(左上)-C(右上)-B(右下)，∠A、∠B 為直角；AB 上由左至右為 A、E、F、B，α 在 E、β 在 F；連 DE、CE]</em></p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
+   "text": "In the figure, $ABCD$ is a trapezium with $\\angle ABC=\\angle BAD=90^{\\circ}$. $E$ and $F$ are points lying on $AB$ such that $E$ and $F$ divide $AB$ into three equal parts. Which of the following must be true?\nI. $AF\\sin\\alpha=BE\\sin\\beta$\nII. $CE\\cos\\alpha=DF\\cos\\beta$\nIII. $AD\\tan\\alpha=BC\\tan\\beta$\n\n![Q21 figure](2018P2_figs/Q21.png)\n\n*[FIGURE Q21: 梯形 A(左下)-D(左上)-C(右上)-B(右下)，∠A、∠B 為直角；AB 上由左至右為 A、E、F、B，α 在 E、β 在 F；連 DE、CE]*\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
+   "html": "<p>In the figure, $ABCD$ is a trapezium with $\\angle ABC=\\angle BAD=90^{\\circ}$. $E$ and $F$ are points lying on $AB$ such that $E$ and $F$ divide $AB$ into three equal parts. Which of the following must be true?\nI. $AF\\sin\\alpha=BE\\sin\\beta$\nII. $CE\\cos\\alpha=DF\\cos\\beta$\nIII. $AD\\tan\\alpha=BC\\tan\\beta$</p>\n<p><img alt=\"Q21 figure\" src=\"2018P2_figs/Q21.png\" /></p>\n<p><em>[FIGURE Q21: 梯形 A(左下)-D(左上)-C(右上)-B(右下)，∠A、∠B 為直角；AB 上由左至右為 A、E、F、B，α 在 E、β 在 F；連 DE、CE]</em></p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
    "file": "2018_P2_題目英文卷.md"
   },
   {
@@ -11823,8 +11823,8 @@ window.QB = {
     "三角比／角",
     "百分數／利息"
    ],
-   "text": "In the figure, $ABCD$ is a circle. $AD$ produced and $BC$ produced meet at the point $E$. It is given that $BD=DE$, $\\angle BAC=60^{\\circ}$ and $\\angle ABD=30^{\\circ}$. Find $\\angle CED$.\n\n*[FIGURE Q22: 圓上一點 A（左上方）與 B（左）在圓周，D 在圓上偏右，C 在圓上右下方；AD 延長與 BC 延長交於圓外 E（右）；連 AB、BC、CA、AD、BD、CD]*\n\n- A. $20^{\\circ}$\n- B. $28^{\\circ}$\n- C. $36^{\\circ}$\n- D. $42^{\\circ}$",
-   "html": "<p>In the figure, $ABCD$ is a circle. $AD$ produced and $BC$ produced meet at the point $E$. It is given that $BD=DE$, $\\angle BAC=60^{\\circ}$ and $\\angle ABD=30^{\\circ}$. Find $\\angle CED$.</p>\n<p><em>[FIGURE Q22: 圓上一點 A（左上方）與 B（左）在圓周，D 在圓上偏右，C 在圓上右下方；AD 延長與 BC 延長交於圓外 E（右）；連 AB、BC、CA、AD、BD、CD]</em></p>\n<ul><li>A. $20^{\\circ}$</li><li>B. $28^{\\circ}$</li><li>C. $36^{\\circ}$</li><li>D. $42^{\\circ}$</li></ul>",
+   "text": "In the figure, $ABCD$ is a circle. $AD$ produced and $BC$ produced meet at the point $E$. It is given that $BD=DE$, $\\angle BAC=60^{\\circ}$ and $\\angle ABD=30^{\\circ}$. Find $\\angle CED$.\n\n![Q22 figure](2018P2_figs/Q22.png)\n\n*[FIGURE Q22: 圓上一點 A（左上方）與 B（左）在圓周，D 在圓上偏右，C 在圓上右下方；AD 延長與 BC 延長交於圓外 E（右）；連 AB、BC、CA、AD、BD、CD]*\n\n- A. $20^{\\circ}$\n- B. $28^{\\circ}$\n- C. $36^{\\circ}$\n- D. $42^{\\circ}$",
+   "html": "<p>In the figure, $ABCD$ is a circle. $AD$ produced and $BC$ produced meet at the point $E$. It is given that $BD=DE$, $\\angle BAC=60^{\\circ}$ and $\\angle ABD=30^{\\circ}$. Find $\\angle CED$.</p>\n<p><img alt=\"Q22 figure\" src=\"2018P2_figs/Q22.png\" /></p>\n<p><em>[FIGURE Q22: 圓上一點 A（左上方）與 B（左）在圓周，D 在圓上偏右，C 在圓上右下方；AD 延長與 BC 延長交於圓外 E（右）；連 AB、BC、CA、AD、BD、CD]</em></p>\n<ul><li>A. $20^{\\circ}$</li><li>B. $28^{\\circ}$</li><li>C. $36^{\\circ}$</li><li>D. $42^{\\circ}$</li></ul>",
    "file": "2018_P2_題目英文卷.md"
   },
   {
@@ -11839,8 +11839,8 @@ window.QB = {
     "平面幾何",
     "變換／對稱"
    ],
-   "text": "The figure below consists of eight identical squares. The number of folds of rotational symmetry of the figure is\n\n*[FIGURE Q23: 由八個相同正方形斜向排列成的圖形（2×4 方格旋轉 45°）]*\n\n- A. $2$\n- B. $4$\n- C. $6$\n- D. $8$",
-   "html": "<p>The figure below consists of eight identical squares. The number of folds of rotational symmetry of the figure is</p>\n<p><em>[FIGURE Q23: 由八個相同正方形斜向排列成的圖形（2×4 方格旋轉 45°）]</em></p>\n<ul><li>A. $2$</li><li>B. $4$</li><li>C. $6$</li><li>D. $8$</li></ul>",
+   "text": "The figure below consists of eight identical squares. The number of folds of rotational symmetry of the figure is\n\n![Q23 figure](2018P2_figs/Q23.png)\n\n*[FIGURE Q23: 由八個相同正方形斜向排列成的圖形（2×4 方格旋轉 45°）]*\n\n- A. $2$\n- B. $4$\n- C. $6$\n- D. $8$",
+   "html": "<p>The figure below consists of eight identical squares. The number of folds of rotational symmetry of the figure is</p>\n<p><img alt=\"Q23 figure\" src=\"2018P2_figs/Q23.png\" /></p>\n<p><em>[FIGURE Q23: 由八個相同正方形斜向排列成的圖形（2×4 方格旋轉 45°）]</em></p>\n<ul><li>A. $2$</li><li>B. $4$</li><li>C. $6$</li><li>D. $8$</li></ul>",
    "file": "2018_P2_題目英文卷.md"
   },
   {
@@ -11971,8 +11971,8 @@ window.QB = {
     "百分數／利息",
     "函數"
    ],
-   "text": "Let $f(x)$ be a quadratic function. The figure below may represent the graph of $y=f(x)$ and\n\n*[FIGURE Q31: 同一坐標系畫出兩條拋物線——一條開口向下（x 軸截距 2 與 6，頂點在 x=4 上方）；另一條開口向上（x 軸截距約 5 與 9，最低點在 7 附近）；標 x、y、O]*\n\n- A. the graph of $y=-3f(x)$.\n- B. the graph of $y=f(-3x)$.\n- C. the graph of $y=-f(x+4)$.\n- D. the graph of $y=f(-x+11)$.",
-   "html": "<p>Let $f(x)$ be a quadratic function. The figure below may represent the graph of $y=f(x)$ and</p>\n<p><em>[FIGURE Q31: 同一坐標系畫出兩條拋物線——一條開口向下（x 軸截距 2 與 6，頂點在 x=4 上方）；另一條開口向上（x 軸截距約 5 與 9，最低點在 7 附近）；標 x、y、O]</em></p>\n<ul><li>A. the graph of $y=-3f(x)$.</li><li>B. the graph of $y=f(-3x)$.</li><li>C. the graph of $y=-f(x+4)$.</li><li>D. the graph of $y=f(-x+11)$.</li></ul>",
+   "text": "Let $f(x)$ be a quadratic function. The figure below may represent the graph of $y=f(x)$ and\n\n![Q31 figure](2018P2_figs/Q31.png)\n\n*[FIGURE Q31: 同一坐標系畫出兩條拋物線——一條開口向下（x 軸截距 2 與 6，頂點在 x=4 上方）；另一條開口向上（x 軸截距約 5 與 9，最低點在 7 附近）；標 x、y、O]*\n\n- A. the graph of $y=-3f(x)$.\n- B. the graph of $y=f(-3x)$.\n- C. the graph of $y=-f(x+4)$.\n- D. the graph of $y=f(-x+11)$.",
+   "html": "<p>Let $f(x)$ be a quadratic function. The figure below may represent the graph of $y=f(x)$ and</p>\n<p><img alt=\"Q31 figure\" src=\"2018P2_figs/Q31.png\" /></p>\n<p><em>[FIGURE Q31: 同一坐標系畫出兩條拋物線——一條開口向下（x 軸截距 2 與 6，頂點在 x=4 上方）；另一條開口向上（x 軸截距約 5 與 9，最低點在 7 附近）；標 x、y、O]</em></p>\n<ul><li>A. the graph of $y=-3f(x)$.</li><li>B. the graph of $y=f(-3x)$.</li><li>C. the graph of $y=-f(x+4)$.</li><li>D. the graph of $y=f(-x+11)$.</li></ul>",
    "file": "2018_P2_題目英文卷.md"
   },
   {
@@ -11988,8 +11988,8 @@ window.QB = {
     "三角比／角",
     "坐標幾何"
    ],
-   "text": "The figure shows the graph of $y=\\log_{a}x$ and the graph of $y=\\log_{b}x$ on the same rectangular coordinate system, where $a$ and $b$ are positive constants. If a vertical line cuts the graph of $y=\\log_{a}x$, the graph of $y=\\log_{b}x$ and the $x$-axis at the points $A$, $B$ and $C$ respectively, which of the following is/are true?\nI. $a>1$\nII. $a>b$\nIII. $\\dfrac{AB}{BC}=\\log_{a}\\dfrac{b}{a}$\n\n*[FIGURE Q32: 兩條對數曲線 $y=\\log_{a}x$（上）與 $y=\\log_{b}x$（下），由原點右側上升；一條豎直線在 C 處與 x 軸相交，依次與下曲線交於 B、上曲線交於 A；標 x、y、O]*\n\n- A. I only\n- B. II only\n- C. I and III only\n- D. II and III only",
-   "html": "<p>The figure shows the graph of $y=\\log_{a}x$ and the graph of $y=\\log_{b}x$ on the same rectangular coordinate system, where $a$ and $b$ are positive constants. If a vertical line cuts the graph of $y=\\log_{a}x$, the graph of $y=\\log_{b}x$ and the $x$-axis at the points $A$, $B$ and $C$ respectively, which of the following is/are true?\nI. $a&gt;1$\nII. $a&gt;b$\nIII. $\\dfrac{AB}{BC}=\\log_{a}\\dfrac{b}{a}$</p>\n<p><em>[FIGURE Q32: 兩條對數曲線 $y=\\log_{a}x$（上）與 $y=\\log_{b}x$（下），由原點右側上升；一條豎直線在 C 處與 x 軸相交，依次與下曲線交於 B、上曲線交於 A；標 x、y、O]</em></p>\n<ul><li>A. I only</li><li>B. II only</li><li>C. I and III only</li><li>D. II and III only</li></ul>",
+   "text": "The figure shows the graph of $y=\\log_{a}x$ and the graph of $y=\\log_{b}x$ on the same rectangular coordinate system, where $a$ and $b$ are positive constants. If a vertical line cuts the graph of $y=\\log_{a}x$, the graph of $y=\\log_{b}x$ and the $x$-axis at the points $A$, $B$ and $C$ respectively, which of the following is/are true?\nI. $a>1$\nII. $a>b$\nIII. $\\dfrac{AB}{BC}=\\log_{a}\\dfrac{b}{a}$\n\n![Q32 figure](2018P2_figs/Q32.png)\n\n*[FIGURE Q32: 兩條對數曲線 $y=\\log_{a}x$（上）與 $y=\\log_{b}x$（下），由原點右側上升；一條豎直線在 C 處與 x 軸相交，依次與下曲線交於 B、上曲線交於 A；標 x、y、O]*\n\n- A. I only\n- B. II only\n- C. I and III only\n- D. II and III only",
+   "html": "<p>The figure shows the graph of $y=\\log_{a}x$ and the graph of $y=\\log_{b}x$ on the same rectangular coordinate system, where $a$ and $b$ are positive constants. If a vertical line cuts the graph of $y=\\log_{a}x$, the graph of $y=\\log_{b}x$ and the $x$-axis at the points $A$, $B$ and $C$ respectively, which of the following is/are true?\nI. $a&gt;1$\nII. $a&gt;b$\nIII. $\\dfrac{AB}{BC}=\\log_{a}\\dfrac{b}{a}$</p>\n<p><img alt=\"Q32 figure\" src=\"2018P2_figs/Q32.png\" /></p>\n<p><em>[FIGURE Q32: 兩條對數曲線 $y=\\log_{a}x$（上）與 $y=\\log_{b}x$（下），由原點右側上升；一條豎直線在 C 處與 x 軸相交，依次與下曲線交於 B、上曲線交於 A；標 x、y、O]</em></p>\n<ul><li>A. I only</li><li>B. II only</li><li>C. I and III only</li><li>D. II and III only</li></ul>",
    "file": "2018_P2_題目英文卷.md"
   },
   {
@@ -12005,8 +12005,8 @@ window.QB = {
     "坐標幾何",
     "百分數／利息"
    ],
-   "text": "In the figure, the straight line $L$ shows the relation between $\\log_{4}x$ and $\\log_{4}y$. It is given that $L$ passes through the points $(1,2)$ and $(9,6)$. If $y=kx^{a}$, then $k=$\n\n*[FIGURE Q33: 直角坐標系，橫軸標 $\\log_{4}x$、縱軸標 $\\log_{4}y$，直線 L 由左下向右上，通過 (1,2)、(9,6)；標 O]*\n\n- A. $\\dfrac{1}{2}$\n- B. $\\dfrac{3}{2}$\n- C. $2$\n- D. $8$",
-   "html": "<p>In the figure, the straight line $L$ shows the relation between $\\log_{4}x$ and $\\log_{4}y$. It is given that $L$ passes through the points $(1,2)$ and $(9,6)$. If $y=kx^{a}$, then $k=$</p>\n<p><em>[FIGURE Q33: 直角坐標系，橫軸標 $\\log_{4}x$、縱軸標 $\\log_{4}y$，直線 L 由左下向右上，通過 (1,2)、(9,6)；標 O]</em></p>\n<ul><li>A. $\\dfrac{1}{2}$</li><li>B. $\\dfrac{3}{2}$</li><li>C. $2$</li><li>D. $8$</li></ul>",
+   "text": "In the figure, the straight line $L$ shows the relation between $\\log_{4}x$ and $\\log_{4}y$. It is given that $L$ passes through the points $(1,2)$ and $(9,6)$. If $y=kx^{a}$, then $k=$\n\n![Q33 figure](2018P2_figs/Q33.png)\n\n*[FIGURE Q33: 直角坐標系，橫軸標 $\\log_{4}x$、縱軸標 $\\log_{4}y$，直線 L 由左下向右上，通過 (1,2)、(9,6)；標 O]*\n\n- A. $\\dfrac{1}{2}$\n- B. $\\dfrac{3}{2}$\n- C. $2$\n- D. $8$",
+   "html": "<p>In the figure, the straight line $L$ shows the relation between $\\log_{4}x$ and $\\log_{4}y$. It is given that $L$ passes through the points $(1,2)$ and $(9,6)$. If $y=kx^{a}$, then $k=$</p>\n<p><img alt=\"Q33 figure\" src=\"2018P2_figs/Q33.png\" /></p>\n<p><em>[FIGURE Q33: 直角坐標系，橫軸標 $\\log_{4}x$、縱軸標 $\\log_{4}y$，直線 L 由左下向右上，通過 (1,2)、(9,6)；標 O]</em></p>\n<ul><li>A. $\\dfrac{1}{2}$</li><li>B. $\\dfrac{3}{2}$</li><li>C. $2$</li><li>D. $8$</li></ul>",
    "file": "2018_P2_題目英文卷.md"
   },
   {
@@ -12102,8 +12102,8 @@ window.QB = {
     "三角比／角",
     "百分數／利息"
    ],
-   "text": "In the figure, $TA$ is the tangent to the circle $ABCD$ at the point $A$. $CD$ produced and $TA$ produced meet at the point $E$. It is given that $AB=CD$, $\\angle BAT=24^{\\circ}$ and $\\angle AED=72^{\\circ}$. Find $\\angle ABC$.\n\n*[FIGURE Q39: 圓 ABCD，A 在圓底，切線 AT 向右延伸；C 在上方，D 在左，B 在右；CD 向左延長與 TA 延長交於 E；連 AB、BC、CD、DA、AC；∠BAT 標 24°（弧），∠AED 標 72°（弧）]*\n\n- A. $60^{\\circ}$\n- B. $66^{\\circ}$\n- C. $72^{\\circ}$\n- D. $78^{\\circ}$",
-   "html": "<p>In the figure, $TA$ is the tangent to the circle $ABCD$ at the point $A$. $CD$ produced and $TA$ produced meet at the point $E$. It is given that $AB=CD$, $\\angle BAT=24^{\\circ}$ and $\\angle AED=72^{\\circ}$. Find $\\angle ABC$.</p>\n<p><em>[FIGURE Q39: 圓 ABCD，A 在圓底，切線 AT 向右延伸；C 在上方，D 在左，B 在右；CD 向左延長與 TA 延長交於 E；連 AB、BC、CD、DA、AC；∠BAT 標 24°（弧），∠AED 標 72°（弧）]</em></p>\n<ul><li>A. $60^{\\circ}$</li><li>B. $66^{\\circ}$</li><li>C. $72^{\\circ}$</li><li>D. $78^{\\circ}$</li></ul>",
+   "text": "In the figure, $TA$ is the tangent to the circle $ABCD$ at the point $A$. $CD$ produced and $TA$ produced meet at the point $E$. It is given that $AB=CD$, $\\angle BAT=24^{\\circ}$ and $\\angle AED=72^{\\circ}$. Find $\\angle ABC$.\n\n![Q39 figure](2018P2_figs/Q39.png)\n\n*[FIGURE Q39: 圓 ABCD，A 在圓底，切線 AT 向右延伸；C 在上方，D 在左，B 在右；CD 向左延長與 TA 延長交於 E；連 AB、BC、CD、DA、AC；∠BAT 標 24°（弧），∠AED 標 72°（弧）]*\n\n- A. $60^{\\circ}$\n- B. $66^{\\circ}$\n- C. $72^{\\circ}$\n- D. $78^{\\circ}$",
+   "html": "<p>In the figure, $TA$ is the tangent to the circle $ABCD$ at the point $A$. $CD$ produced and $TA$ produced meet at the point $E$. It is given that $AB=CD$, $\\angle BAT=24^{\\circ}$ and $\\angle AED=72^{\\circ}$. Find $\\angle ABC$.</p>\n<p><img alt=\"Q39 figure\" src=\"2018P2_figs/Q39.png\" /></p>\n<p><em>[FIGURE Q39: 圓 ABCD，A 在圓底，切線 AT 向右延伸；C 在上方，D 在左，B 在右；CD 向左延長與 TA 延長交於 E；連 AB、BC、CD、DA、AC；∠BAT 標 24°（弧），∠AED 標 72°（弧）]</em></p>\n<ul><li>A. $60^{\\circ}$</li><li>B. $66^{\\circ}$</li><li>C. $72^{\\circ}$</li><li>D. $78^{\\circ}$</li></ul>",
    "file": "2018_P2_題目英文卷.md"
   },
   {
@@ -12136,8 +12136,8 @@ window.QB = {
     "立體圖形",
     "百分數／利息"
    ],
-   "text": "In the figure, $ABCDEFGH$ is a rectangular block. Let $X$ be a point lying on $DE$ such that $DX=9\\ \\mathrm{cm}$ and $EX=4\\ \\mathrm{cm}$. Denote the angle between $BX$ and the plane $ABGF$ by $\\theta$. Find $\\cos\\theta$.\n\n*[FIGURE Q41: 長方體 ABCDEFGH（前左下 A、前右下 B，底邊 AB 標 12 cm；右側深度標 8 cm；D 在 A 後方，E 在 D 上方，F 左前上，G 右後上，H 後右上）；虛線 DE、DC、DX；X 在 DE 上；實線 BX]*\n\n- A. $\\dfrac{3}{5}$\n- B. $\\dfrac{4}{5}$\n- C. $\\dfrac{8}{17}$\n- D. $\\dfrac{15}{17}$",
-   "html": "<p>In the figure, $ABCDEFGH$ is a rectangular block. Let $X$ be a point lying on $DE$ such that $DX=9\\ \\mathrm{cm}$ and $EX=4\\ \\mathrm{cm}$. Denote the angle between $BX$ and the plane $ABGF$ by $\\theta$. Find $\\cos\\theta$.</p>\n<p><em>[FIGURE Q41: 長方體 ABCDEFGH（前左下 A、前右下 B，底邊 AB 標 12 cm；右側深度標 8 cm；D 在 A 後方，E 在 D 上方，F 左前上，G 右後上，H 後右上）；虛線 DE、DC、DX；X 在 DE 上；實線 BX]</em></p>\n<ul><li>A. $\\dfrac{3}{5}$</li><li>B. $\\dfrac{4}{5}$</li><li>C. $\\dfrac{8}{17}$</li><li>D. $\\dfrac{15}{17}$</li></ul>",
+   "text": "In the figure, $ABCDEFGH$ is a rectangular block. Let $X$ be a point lying on $DE$ such that $DX=9\\ \\mathrm{cm}$ and $EX=4\\ \\mathrm{cm}$. Denote the angle between $BX$ and the plane $ABGF$ by $\\theta$. Find $\\cos\\theta$.\n\n![Q41 figure](2018P2_figs/Q41.png)\n\n*[FIGURE Q41: 長方體 ABCDEFGH（前左下 A、前右下 B，底邊 AB 標 12 cm；右側深度標 8 cm；D 在 A 後方，E 在 D 上方，F 左前上，G 右後上，H 後右上）；虛線 DE、DC、DX；X 在 DE 上；實線 BX]*\n\n- A. $\\dfrac{3}{5}$\n- B. $\\dfrac{4}{5}$\n- C. $\\dfrac{8}{17}$\n- D. $\\dfrac{15}{17}$",
+   "html": "<p>In the figure, $ABCDEFGH$ is a rectangular block. Let $X$ be a point lying on $DE$ such that $DX=9\\ \\mathrm{cm}$ and $EX=4\\ \\mathrm{cm}$. Denote the angle between $BX$ and the plane $ABGF$ by $\\theta$. Find $\\cos\\theta$.</p>\n<p><img alt=\"Q41 figure\" src=\"2018P2_figs/Q41.png\" /></p>\n<p><em>[FIGURE Q41: 長方體 ABCDEFGH（前左下 A、前右下 B，底邊 AB 標 12 cm；右側深度標 8 cm；D 在 A 後方，E 在 D 上方，F 左前上，G 右後上，H 後右上）；虛線 DE、DC、DX；X 在 DE 上；實線 BX]</em></p>\n<ul><li>A. $\\dfrac{3}{5}$</li><li>B. $\\dfrac{4}{5}$</li><li>C. $\\dfrac{8}{17}$</li><li>D. $\\dfrac{15}{17}$</li></ul>",
    "file": "2018_P2_題目英文卷.md"
   },
   {

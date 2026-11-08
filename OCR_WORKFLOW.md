@@ -228,10 +228,42 @@ python add_dse_hub_watermark.py <圖檔或資料夾> [-r]
 
 §7 回報加一欄：`水印`（已加 dsepaper.hk／豁免原因）。
 
+## §10 模型調度（2026-11-08 拍板：本地 LLM 最佳配置，bench 實證）
+
+**角色分配 — 唯一改動點：`~/dse_scan/tools/ollama_common.py`**（環境變數 `OLLAMA_VISION_MODEL`／`OLLAMA_TEXT_MODEL` 可一鍵換主力，唔使改工具）
+
+| 階段 | 模型 | num_ctx | 備註 |
+|---|---|---|---|
+| 轉寫 pass 1（`ollama_ocr.py`，v2 嚴格格式合約） | qwen2.5vl:7b | 8192 | bench 實測 8.6 s/頁（`ocr/bench_ab_2026-11-08.json`）|
+| 轉寫 pass 2（`ollama_ocr2.py`，**遮圖** + 同一合約） | qwen2.5vl:7b | 8192 | 圖框優先 `--boxes-json`（figspec／fig_boxes.json／CROPS 表）；冇框先用保守自動探測（`auto_boxes`：寧漏勿錯——遮錯文字係災難，漏遮最多退回舊行為，由 diff＋校對把關） |
+| 校對 NUMS/OPTS/FIGS（`proof_pages3.py`） | qwen2.5vl:7b | 8192 | 閘門模型必須 ≥ 轉寫模型（2B 唔夠強） |
+| 圖 crop 描述／檢查／text-leak（`fig_crop_desc`／`fig_crop_check`／`check_text_leak`） | qwen2.5vl:7b | 8192 | |
+| 標籤／metadata／跨年重複判斷（`tag_2019`／`meta_2019`／`dup_check`） | qwen2.5-coder:7b | 8192 | 實測 45 題 12 秒 |
+| qwen3vl-8b-uncensored | 保留 | 6144 | figdesc v7 血統；bench 10/10、雙 pass 一致度最高（0.895）但慢 38% → 副手，唔做主力 |
+| granite3.2-vision:2b、qwen3-vl:8b 原版 | 已刪 | | bench 輸（qwen3-vl 得 4/10 兼 4× 慢）；需要可 re-pull |
+
+**Session 形狀（每 2–3 份卷一個 session，全個 session ≤2 次模型載入）**
+
+```text
+[vision block] qwen2.5vl 載入一次 → 各卷 pass 1（全部頁）→ 遮圖 pass 2 → proofread → 圖 crop 描述
+[一次切換]
+[text block]   qwen2.5-coder → 成批 tag＋meta＋dup_check（成個 batch 先至切換）
+[無 LLM]       組裝 MD → make_html → delivery_gate → git push → hub_merge
+```
+
+**基建（2026-11-08 已生效）**：ollama 以 user systemd unit 長駐（`KEEP_ALIVE=4h`、`MAX_LOADED_MODELS=1`、`KV=f16`、linger 開機自啟）；所有生產工具經 `ollama_common.generate()`（統一 num_ctx／temp 0／自動計時落 `ocr/timing.csv`）——ctx 唔一致會迫 ollama reload 模型，舊版五種 ctx 值就係每日 reload 嘅原因。
+
+**主力升降級規則（預先登記，防事後偏袒）**：`tools/bench_vision_ab.py`——挑戰者要 option-match **嚴格更高** 兼 s/page ≤ 主力×1.10 先可以換；平手／超時都留 qwen2.5vl。
+
+**每份新卷第 0 步**：`PYTHONPATH=~/dse_scan/lib python3 tools/pdftext_probe.py <pdf>`——有文字層（median ≥500 字/頁）就用嵌入文字做底稿，VLM 只做版面／選項核對＋圖。
+
+**交貨閘門新檢查**（`delivery_gate.py`）：每個交付圖 crop 都要有 figdesc；timing.csv 要有該卷每頁一行（E2 回報規則）；`--with-leak-check` 跑 text-leak（要 GPU，預設 off 會 WARN）。
+
 ### 修訂記錄
 
 | 日期 | 改動 |
 |---|---|
+| 2026-11-08 | 加 §10 模型調度：qwen2.5vl:7b 主力（bench_ab 實證 8.6s/頁、10/10）、qwen2.5-coder 做文字段、session ≤2 次載入；新增 tools/ollama_common.py 統一 ctx／計時；pass 2 改「遮圖＋同一嚴格合約」，圖框以 --boxes-json 為準 |
 | 2026-11-04 20:32 | 初版整理（§0–§7） |
 | 2026-11-04 21:0x | 加 §9 重繪操作定義：有刻度＝量度、無刻度＝trace 線形；引用圖嘅題目唔可以冇圖；300dpi；偏差 ≤2px |
 | 2026-11-04 20:4x | 加 §8 歷史標準，檔頭寫明以歷史標準為準 |

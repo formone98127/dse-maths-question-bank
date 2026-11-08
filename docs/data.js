@@ -1,6 +1,6 @@
 window.QB = {
- "generated": "2026-11-08 14:12",
- "count": 1369,
+ "generated": "2026-11-08 14:33",
+ "count": 1414,
  "questions": [
   {
    "subject": "數學",
@@ -17079,6 +17079,21 @@ window.QB = {
    "file": "2022_P2_QU(CHI).md"
   },
   {
+   "subject": "數學",
+   "year": 2022,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 1,
+   "title": "第 1 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "因式分解"
+   ],
+   "text": "$\\alpha^2 - \\alpha - \\beta^2 + \\beta =$\n\n- A. $(\\alpha + \\beta)(\\alpha - \\beta + 1)$.\n- B. $(\\alpha + \\beta)(\\alpha - \\beta - 1)$.\n- C. $(\\alpha - \\beta)(\\alpha + \\beta + 1)$.\n- D. $(\\alpha - \\beta)(\\alpha + \\beta - 1)$.",
+   "html": "<p>$\\alpha^2 - \\alpha - \\beta^2 + \\beta =$</p>\n<ul><li>A. $(\\alpha + \\beta)(\\alpha - \\beta + 1)$.</li><li>B. $(\\alpha + \\beta)(\\alpha - \\beta - 1)$.</li><li>C. $(\\alpha - \\beta)(\\alpha + \\beta + 1)$.</li><li>D. $(\\alpha - \\beta)(\\alpha + \\beta - 1)$.</li></ul>",
+   "file": "2022_P2_題目英文卷.md"
+  },
+  {
    "subject": "化學",
    "year": 2022,
    "paper": "Paper 2",
@@ -17099,6 +17114,21 @@ window.QB = {
    "file": "2022_P2_QU(CHI).md"
   },
   {
+   "subject": "數學",
+   "year": 2022,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 2,
+   "title": "第 2 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "指數定律"
+   ],
+   "text": "$\\dfrac{81^{2n+3}}{(27^{n+1})^2} =$\n\n- A. 3.\n- B. $3^{2n+6}$.\n- C. $3^{4n+8}$.\n- D. $3^{10n+14}$.",
+   "html": "<p>$\\dfrac{81^{2n+3}}{(27^{n+1})^2} =$</p>\n<ul><li>A. 3.</li><li>B. $3^{2n+6}$.</li><li>C. $3^{4n+8}$.</li><li>D. $3^{10n+14}$.</li></ul>",
+   "file": "2022_P2_題目英文卷.md"
+  },
+  {
    "subject": "化學",
    "year": 2022,
    "paper": "Paper 2",
@@ -17116,6 +17146,661 @@ window.QB = {
    "text": "回答試題的所有部分。\n\n(a)　回答以下短問題：\n\n　(i)　提出一化學測試以顯示可怎樣辨別 SO₂(g) 和 CO₂(g)。（2 分）\n\n　(ii)　說明怎樣可從各自的質譜來辨別 CH₃CH₂CHO(l) 和 CH₃COCH₃(l)。（2 分）\n\n　(iii)　下列哪一化學品最適宜用來乾燥丁酸二酯？\n\n濃硫酸　固體氫氧化鈉　無水硫酸鈉（1 分）\n\n(b)　某品牌補鐵藥片的主要成分是 FeSO₄。把數片這些補鐵藥片溶於去離子水中以得到水溶液 S。利用下列兩個方法來測定在溶液 S 中 Fe²⁺(aq) 離子的濃度：\n\n方法 I　使用容量分析\n\n這滴定所涉及反應的化學方程式如下：\n\nMnO₄⁻(aq) + 5Fe²⁺(aq) + 8H⁺(aq) → Mn²⁺(aq) + 5Fe³⁺(aq) + 4H₂O(l)\n\n把 25.00 cm³ 的溶液 S 酸化，然後用 0.0041 M KMnO₄(aq) 滴定。達到終點所需用的該 KMnO₄(aq) 的平均體積是 32.35 cm³。\n\n　(1)　在滴定終點該反應混合物的顏色由淡黃變成淡粉紅。解釋該顏色變化。（1 分）\n\n　(2)　計算在溶液 S 中 Fe²⁺(aq) 離子的濃度。（4 分）\n\n方法 II　使用比色法\n\nFe²⁺(aq) 可與一個無色有機試劑完全反應，生成一橙紅色物種 W(aq)。\n（已知：反應了的 Fe²⁺(aq) 摩爾數 : 所生成的 W(aq) 摩爾數 = 1 : 1）\n\n步驟(1)：把數個濃度不同的標準 FeSO₄(aq) 溶液分別經該無色有機試劑處理，生成對應的橙紅色 W(aq) 溶液。\n\n步驟(2)：用比色計量度這些 W(aq) 溶液的吸光度，並繪出一條校準曲線。\n\n步驟(3)：將溶液 S 稀釋 100 倍，把這稀釋溶液的樣本經步驟(1)所描述的相同方法處理，得出一含有 W(aq) 的溶液 T。\n\n步驟(4)：量度溶液 T 的吸光度。\n\n　(1)　草繪在步驟(2)的校準曲線及標示各坐標軸。在這草繪上，顯示怎樣可找出在溶液 T 中 W(aq) 的濃度。（4 分）\n\n　(2)　從而提出怎樣可測定在溶液 S 中 Fe²⁺(aq) 離子的濃度。（2 分）\n\n(c)　固體樣本含有化合物 Y 和小量雜質 Z。在一實驗中進行了下列各步驟，從這固體樣本獲得純 Y(s)。\n\n已知：Y 在 80 °C 時比在 25 °C 時較溶於去離子水。\n\n步驟(1)：把 1.40 g 的這固體樣本加入 50 cm³ 的去離子水中，並加熱至 80 °C。\n\n步驟(2)：然後加入不溶於水的活性炭來除去 Z，趁熱把所得混合物過濾。\n\n步驟(3)：把所得的熱濾液緩慢冷卻至 25 °C，有 Y(s) 生成。\n\n步驟(4)：把冷卻後的混合物過濾以收集 Y(s)。在清洗及乾燥後，收集得 0.75 g 的 Y(s)。\n\n已知在 80 °C 時，不多於 3.04 g 的 Y(s) 可溶於 100 cm³ 的去離子水。\n\n　(i)　通過計算，顯示在步驟(1)這固體樣本中的所有 Y 應已溶解。（1 分）\n\n　(ii)　解釋為什麼在步驟(2)要把混合物過濾。（1 分）\n\n　(iii)　寫出在步驟(3)生成 Y(s) 的過程名稱。（1 分）\n\n　(iv)　提出一個原因為什麼在步驟(4)所收集得 Y(s) 的質量較在這固體樣本中 Y 的質量為小。（1 分）\n\n(d)　Y 和 Z 可藉色層法分開。以相同的固定相及流動相，把這固體樣本分別進行了薄層色層法 (TLC) 和柱色層法。\n\n（已知：Y 的 Rf 值較 Z 的為大。）\n\n　(i)　草繪一幅附有標示的 TLC 色譜來顯示預期的結果。（1 分）\n\n　(ii)　解釋在柱色層法中首先收集得的部分是 Y 還是 Z。（3 分）\n\n---\n\n## 待人工核對\n\n以下題目的 OCR 原文殘缺或模糊，需以原卷覆核：\n\n| 題號 | 頁（原卷） | 問題 |\n|---|---|---|\n| 第 1 題 (c) | 卷二 p.37–38 | 反應式末段（「H₂O(l)」）OCR 有疑；速率方程指數 a、b 由 OCR 重建 |\n| 第 2 題 | 卷二 p.39–40 | 分題標號 (a)–(e) 順序由 OCR 重建，需核對 |\n| 第 2 題 (a)(ii) | 卷二 p.39–40 | 液晶三相 crop 已截但未肉眼對頁 |\n| 第 2 題 (c) | 卷二 p.39–40 | 聚合物 X 結構 crop 已截，需對圖 |\n| 第 3 題 (c) | 卷二 p.41–42 | 化合物／雜質標號（Y/Z）由 OCR「I/2」重建，需核對 |",
    "html": "<p>回答試題的所有部分。</p>\n<p>(a)　回答以下短問題：</p>\n<p>(i)　提出一化學測試以顯示可怎樣辨別 SO₂(g) 和 CO₂(g)。（2 分）</p>\n<p>(ii)　說明怎樣可從各自的質譜來辨別 CH₃CH₂CHO(l) 和 CH₃COCH₃(l)。（2 分）</p>\n<p>(iii)　下列哪一化學品最適宜用來乾燥丁酸二酯？</p>\n<p>濃硫酸　固體氫氧化鈉　無水硫酸鈉（1 分）</p>\n<p>(b)　某品牌補鐵藥片的主要成分是 FeSO₄。把數片這些補鐵藥片溶於去離子水中以得到水溶液 S。利用下列兩個方法來測定在溶液 S 中 Fe²⁺(aq) 離子的濃度：</p>\n<p>方法 I　使用容量分析</p>\n<p>這滴定所涉及反應的化學方程式如下：</p>\n<p>MnO₄⁻(aq) + 5Fe²⁺(aq) + 8H⁺(aq) → Mn²⁺(aq) + 5Fe³⁺(aq) + 4H₂O(l)</p>\n<p>把 25.00 cm³ 的溶液 S 酸化，然後用 0.0041 M KMnO₄(aq) 滴定。達到終點所需用的該 KMnO₄(aq) 的平均體積是 32.35 cm³。</p>\n<p>(1)　在滴定終點該反應混合物的顏色由淡黃變成淡粉紅。解釋該顏色變化。（1 分）</p>\n<p>(2)　計算在溶液 S 中 Fe²⁺(aq) 離子的濃度。（4 分）</p>\n<p>方法 II　使用比色法</p>\n<p>Fe²⁺(aq) 可與一個無色有機試劑完全反應，生成一橙紅色物種 W(aq)。\n（已知：反應了的 Fe²⁺(aq) 摩爾數 : 所生成的 W(aq) 摩爾數 = 1 : 1）</p>\n<p>步驟(1)：把數個濃度不同的標準 FeSO₄(aq) 溶液分別經該無色有機試劑處理，生成對應的橙紅色 W(aq) 溶液。</p>\n<p>步驟(2)：用比色計量度這些 W(aq) 溶液的吸光度，並繪出一條校準曲線。</p>\n<p>步驟(3)：將溶液 S 稀釋 100 倍，把這稀釋溶液的樣本經步驟(1)所描述的相同方法處理，得出一含有 W(aq) 的溶液 T。</p>\n<p>步驟(4)：量度溶液 T 的吸光度。</p>\n<p>(1)　草繪在步驟(2)的校準曲線及標示各坐標軸。在這草繪上，顯示怎樣可找出在溶液 T 中 W(aq) 的濃度。（4 分）</p>\n<p>(2)　從而提出怎樣可測定在溶液 S 中 Fe²⁺(aq) 離子的濃度。（2 分）</p>\n<p>(c)　固體樣本含有化合物 Y 和小量雜質 Z。在一實驗中進行了下列各步驟，從這固體樣本獲得純 Y(s)。</p>\n<p>已知：Y 在 80 °C 時比在 25 °C 時較溶於去離子水。</p>\n<p>步驟(1)：把 1.40 g 的這固體樣本加入 50 cm³ 的去離子水中，並加熱至 80 °C。</p>\n<p>步驟(2)：然後加入不溶於水的活性炭來除去 Z，趁熱把所得混合物過濾。</p>\n<p>步驟(3)：把所得的熱濾液緩慢冷卻至 25 °C，有 Y(s) 生成。</p>\n<p>步驟(4)：把冷卻後的混合物過濾以收集 Y(s)。在清洗及乾燥後，收集得 0.75 g 的 Y(s)。</p>\n<p>已知在 80 °C 時，不多於 3.04 g 的 Y(s) 可溶於 100 cm³ 的去離子水。</p>\n<p>(i)　通過計算，顯示在步驟(1)這固體樣本中的所有 Y 應已溶解。（1 分）</p>\n<p>(ii)　解釋為什麼在步驟(2)要把混合物過濾。（1 分）</p>\n<p>(iii)　寫出在步驟(3)生成 Y(s) 的過程名稱。（1 分）</p>\n<p>(iv)　提出一個原因為什麼在步驟(4)所收集得 Y(s) 的質量較在這固體樣本中 Y 的質量為小。（1 分）</p>\n<p>(d)　Y 和 Z 可藉色層法分開。以相同的固定相及流動相，把這固體樣本分別進行了薄層色層法 (TLC) 和柱色層法。</p>\n<p>（已知：Y 的 Rf 值較 Z 的為大。）</p>\n<p>(i)　草繪一幅附有標示的 TLC 色譜來顯示預期的結果。（1 分）</p>\n<p>(ii)　解釋在柱色層法中首先收集得的部分是 Y 還是 Z。（3 分）</p>\n<hr />\n<h2>待人工核對</h2>\n<p>以下題目的 OCR 原文殘缺或模糊，需以原卷覆核：</p>\n<table>\n<thead>\n<tr>\n<th>題號</th>\n<th>頁（原卷）</th>\n<th>問題</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>第 1 題 (c)</td>\n<td>卷二 p.37–38</td>\n<td>反應式末段（「H₂O(l)」）OCR 有疑；速率方程指數 a、b 由 OCR 重建</td>\n</tr>\n<tr>\n<td>第 2 題</td>\n<td>卷二 p.39–40</td>\n<td>分題標號 (a)–(e) 順序由 OCR 重建，需核對</td>\n</tr>\n<tr>\n<td>第 2 題 (a)(ii)</td>\n<td>卷二 p.39–40</td>\n<td>液晶三相 crop 已截但未肉眼對頁</td>\n</tr>\n<tr>\n<td>第 2 題 (c)</td>\n<td>卷二 p.39–40</td>\n<td>聚合物 X 結構 crop 已截，需對圖</td>\n</tr>\n<tr>\n<td>第 3 題 (c)</td>\n<td>卷二 p.41–42</td>\n<td>化合物／雜質標號（Y/Z）由 OCR「I/2」重建，需核對</td>\n</tr>\n</tbody>\n</table>",
    "file": "2022_P2_QU(CHI).md"
+  },
+  {
+   "subject": "數學",
+   "year": 2022,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 3,
+   "title": "第 3 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "二次函數"
+   ],
+   "text": "If $m$ and $n$ are constants such that $(x+3)^2 + mx \\equiv (x-n)(x+1) + 2n$, then $m =$\n\n- A. -14.\n- B. -8.\n- C. 4.\n- D. 9.",
+   "html": "<p>If $m$ and $n$ are constants such that $(x+3)^2 + mx \\equiv (x-n)(x+1) + 2n$, then $m =$</p>\n<ul><li>A. -14.</li><li>B. -8.</li><li>C. 4.</li><li>D. 9.</li></ul>",
+   "file": "2022_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2022,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 4,
+   "title": "第 4 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "一元方程"
+   ],
+   "text": "Let $c$ be a constant. Solve the equation $(x-c)(x-4c) = (3c-x)(x-4c)$.\n\n- A. $x =2c$.\n- B. $x =3c$.\n- C. $x = c$ or $x =3c$.\n- D. $x =2c$ or $x =4c$.",
+   "html": "<p>Let $c$ be a constant. Solve the equation $(x-c)(x-4c) = (3c-x)(x-4c)$.</p>\n<ul><li>A. $x =2c$.</li><li>B. $x =3c$.</li><li>C. $x = c$ or $x =3c$.</li><li>D. $x =2c$ or $x =4c$.</li></ul>",
+   "file": "2022_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2022,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 5,
+   "title": "第 5 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "一元方程"
+   ],
+   "text": "If $\\dfrac{2}{u}+\\dfrac{3}{v}=4$, then $u=$\n\n- A. $\\dfrac{2v}{4v-3}$\n- B. $\\dfrac{2v}{3-4v}$\n- C. $\\dfrac{3v}{4v-2}$\n- D. $\\dfrac{3v}{2-4v}$",
+   "html": "<p>If $\\dfrac{2}{u}+\\dfrac{3}{v}=4$, then $u=$</p>\n<ul><li>A. $\\dfrac{2v}{4v-3}$</li><li>B. $\\dfrac{2v}{3-4v}$</li><li>C. $\\dfrac{3v}{4v-2}$</li><li>D. $\\dfrac{3v}{2-4v}$</li></ul>",
+   "file": "2022_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2022,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 6,
+   "title": "第 6 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "百分比"
+   ],
+   "text": "It is given that $x$ is a real number. If $x$ is rounded down to 3 significant figures, then the result is 345. Find the range of values of $x$.\n\n- A. $344 < x \\leq 345$\n- B. $345 \\leq x <346$\n- C. $345 < x \\leq 345.5$\n- D. $344.5 \\leq x <345.5$",
+   "html": "<p>It is given that $x$ is a real number. If $x$ is rounded down to 3 significant figures, then the result is 345. Find the range of values of $x$.</p>\n<ul><li>A. $344 &lt; x \\leq 345$</li><li>B. $345 \\leq x &lt;346$</li><li>C. $345 &lt; x \\leq 345.5$</li><li>D. $344.5 \\leq x &lt;345.5$</li></ul>",
+   "file": "2022_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2022,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 7,
+   "title": "第 7 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "一元一次不等式"
+   ],
+   "text": "The solution of $3y-5 <5y+1 \\leq 11$ is\n\n- A. $-3 < y \\leq 2$\n- B. $-3 \\leq y <2$\n- C. $-2 < y \\leq 3$\n- D. $-2 \\leq y <3$",
+   "html": "<p>The solution of $3y-5 &lt;5y+1 \\leq 11$ is</p>\n<ul><li>A. $-3 &lt; y \\leq 2$</li><li>B. $-3 \\leq y &lt;2$</li><li>C. $-2 &lt; y \\leq 3$</li><li>D. $-2 \\leq y &lt;3$</li></ul>",
+   "file": "2022_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2022,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 8,
+   "title": "第 8 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "二次函數"
+   ],
+   "text": "Let $f(x) = x^2 - x + 1$. If $k$ is a constant, which of the following must be true?\n\n- A. $f(k) = f(-k)$\n- B. $f(k) = f(1-k)$\n- C. $f(k+1) = f(k) + f(1)$\n- D. $f(k-1) = f(k) - f(1)$",
+   "html": "<p>Let $f(x) = x^2 - x + 1$. If $k$ is a constant, which of the following must be true?</p>\n<ul><li>A. $f(k) = f(-k)$</li><li>B. $f(k) = f(1-k)$</li><li>C. $f(k+1) = f(k) + f(1)$</li><li>D. $f(k-1) = f(k) - f(1)$</li></ul>",
+   "file": "2022_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2022,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 9,
+   "title": "第 9 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "二次函數",
+    "因式分解"
+   ],
+   "text": "Let $g(x) = x^2 + ax + b$, where $a$ and $b$ are constants. If $g(x)$ is divisible by $x + 2a$, find the remainder when $g(x)$ is divided by $x - 2a$.\n\n- A. $-2a^2$\n- B. 0\n- C. $2a^2$\n- D. $4a^2$",
+   "html": "<p>Let $g(x) = x^2 + ax + b$, where $a$ and $b$ are constants. If $g(x)$ is divisible by $x + 2a$, find the remainder when $g(x)$ is divided by $x - 2a$.</p>\n<ul><li>A. $-2a^2$</li><li>B. 0</li><li>C. $2a^2$</li><li>D. $4a^2$</li></ul>",
+   "file": "2022_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2022,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 10,
+   "title": "第 10 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "二次函數"
+   ],
+   "text": "Let $h$ and $k$ be real constants such that $hk <0$. Which of the following statements about the graph of $y = (h - x)(k - x)$ are true?\nI. The graph opens upwards.\nII. The graph has two $x$-intercepts.\nIII. The $y$-intercept of the graph is positive.\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
+   "html": "<p>Let $h$ and $k$ be real constants such that $hk &lt;0$. Which of the following statements about the graph of $y = (h - x)(k - x)$ are true? I. The graph opens upwards. II. The graph has two $x$-intercepts. III. The $y$-intercept of the graph is positive.</p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
+   "file": "2022_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2022,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 11,
+   "title": "第 11 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "百分比"
+   ],
+   "text": "A sum of $88000$ is deposited at an interest rate of $6\\%$ per annum for $4$ years, compounded monthly. Find the interest correct to the nearest dollar.\n\n- A. $21120$\n- B. $23098$\n- C. $23803$\n- D. $23825$",
+   "html": "<p>A sum of $88000$ is deposited at an interest rate of $6\\%$ per annum for $4$ years, compounded monthly. Find the interest correct to the nearest dollar.</p>\n<ul><li>A. $21120$</li><li>B. $23098$</li><li>C. $23803$</li><li>D. $23825$</li></ul>",
+   "file": "2022_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2022,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 12,
+   "title": "第 12 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "比與比例"
+   ],
+   "text": "Let $x$, $y$ and $z$ be non-zero numbers. If $x:y =8:5$ and $2x =4z - 3y$, then $y:z =$\n\n- A. $16:17$\n- B. $17:16$\n- C. $20:31$\n- D. $31:20$",
+   "html": "<p>Let $x$, $y$ and $z$ be non-zero numbers. If $x:y =8:5$ and $2x =4z - 3y$, then $y:z =$</p>\n<ul><li>A. $16:17$</li><li>B. $17:16$</li><li>C. $20:31$</li><li>D. $31:20$</li></ul>",
+   "file": "2022_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2022,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 13,
+   "title": "第 13 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "變分"
+   ],
+   "text": "If $u$ varies directly as the square root of $v$ and inversely as $w$, which of the following are true?\nI. $u^2$ varies directly as $v$ and inversely as the square of $w$.\nII. $v$ varies directly as $w$ and inversely as the square root of $u$.\nIII. $w$ varies directly as the square root of $v$ and inversely as $u$.\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
+   "html": "<p>If $u$ varies directly as the square root of $v$ and inversely as $w$, which of the following are true? I. $u^2$ varies directly as $v$ and inversely as the square of $w$. II. $v$ varies directly as $w$ and inversely as the square root of $u$. III. $w$ varies directly as the square root of $v$ and inversely as $u$.</p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
+   "file": "2022_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2022,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 14,
+   "title": "第 14 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "數列"
+   ],
+   "text": "In the figure, the 1st pattern consists of 8 dots. For any positive integer $n$, the $(n+1)$th pattern is formed by adding $(2n+6)$ dots to the $n$th pattern. Find the number of dots in the 7th pattern.\n\n![Figure Q14 (as printed)](2022P2_figs/Q14.png)\n\n- A. 52\n- B. 68\n- C. 86\n- D. 106",
+   "html": "<p>In the figure, the 1st pattern consists of 8 dots. For any positive integer $n$, the $(n+1)$th pattern is formed by adding $(2n+6)$ dots to the $n$th pattern. Find the number of dots in the 7th pattern.</p>\n<p><img alt=\"Figure Q14 (as printed)\" src=\"2022P2_figs/Q14.png\" /></p>\n<ul><li>A. 52</li><li>B. 68</li><li>C. 86</li><li>D. 106</li></ul>",
+   "file": "2022_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2022,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 15,
+   "title": "第 15 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "立體幾何"
+   ],
+   "text": "The radius of a solid hemisphere and the base radius of a solid right circular cylinder are equal. If the height of the circular cylinder is equal to its base diameter, then the ratio of the total surface area of the hemisphere to the total surface area of the circular cylinder is\n\n- A. 1:2.\n- B. 1:3.\n- C. 2:3.\n- D. 2:5. Go on to the next page",
+   "html": "<p>The radius of a solid hemisphere and the base radius of a solid right circular cylinder are equal. If the height of the circular cylinder is equal to its base diameter, then the ratio of the total surface area of the hemisphere to the total surface area of the circular cylinder is</p>\n<ul><li>A. 1:2.</li><li>B. 1:3.</li><li>C. 2:3.</li><li>D. 2:5. Go on to the next page</li></ul>",
+   "file": "2022_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2022,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 16,
+   "title": "第 16 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "圓的幾何",
+    "求積法"
+   ],
+   "text": "The diameter of a circle is $10 \\text{ cm}$. The circle is divided into a major segment and a minor segment by a chord of length $8 \\text{ cm}$. Find the area of the major segment correct to the nearest $\\mathrm{cm}^{2}$.\n\n- A. $11 \\text{ cm}^{2}$\n- B. $23 \\text{ cm}^{2}$\n- C. $55 \\text{ cm}^{2}$\n- D. $67 \\text{ cm}^{2}$",
+   "html": "<p>The diameter of a circle is $10 \\text{ cm}$. The circle is divided into a major segment and a minor segment by a chord of length $8 \\text{ cm}$. Find the area of the major segment correct to the nearest $\\mathrm{cm}^{2}$.</p>\n<ul><li>A. $11 \\text{ cm}^{2}$</li><li>B. $23 \\text{ cm}^{2}$</li><li>C. $55 \\text{ cm}^{2}$</li><li>D. $67 \\text{ cm}^{2}$</li></ul>",
+   "file": "2022_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2022,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 17,
+   "title": "第 17 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "求積法"
+   ],
+   "text": "In the figure, $M$ and $N$ are points lying on $PQ$ and $QR$ respectively such that $PM:MQ=5:6$ and $QN:NR=3:4$. If the area of the quadrilateral $MNRP$ is $59 \\text{ cm}^{2}$, then the area of $\\Delta MNQ$ is\n\n![Figure Q17 (as printed)](2022P2_figs/Q17.png)\n\n- A. $17 \\text{ cm}^{2}$\n- B. $18 \\text{ cm}^{2}$\n- C. $19 \\text{ cm}^{2}$\n- D. $20 \\text{ cm}^{2}$",
+   "html": "<p>In the figure, $M$ and $N$ are points lying on $PQ$ and $QR$ respectively such that $PM:MQ=5:6$ and $QN:NR=3:4$. If the area of the quadrilateral $MNRP$ is $59 \\text{ cm}^{2}$, then the area of $\\Delta MNQ$ is</p>\n<p><img alt=\"Figure Q17 (as printed)\" src=\"2022P2_figs/Q17.png\" /></p>\n<ul><li>A. $17 \\text{ cm}^{2}$</li><li>B. $18 \\text{ cm}^{2}$</li><li>C. $19 \\text{ cm}^{2}$</li><li>D. $20 \\text{ cm}^{2}$</li></ul>",
+   "file": "2022_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2022,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 18,
+   "title": "第 18 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "直線方程"
+   ],
+   "text": "In the figure, the perimeter of the rectangle $ABCD$ is $170 \\text{ cm}$. It is given that $EBF$ is a straight line and $\\angle AEB=\\angle BFC=90^{\\circ}$. If $AE=24 \\text{ cm}$ and $BC=34 \\text{ cm}$, then $EF=$\n\n![Figure Q18 (as printed)](2022P2_figs/Q18.png)\n\n- A. $45 \\text{ cm}$\n- B. $51 \\text{ cm}$\n- C. $61 \\text{ cm}$\n- D. $75 \\text{ cm}$",
+   "html": "<p>In the figure, the perimeter of the rectangle $ABCD$ is $170 \\text{ cm}$. It is given that $EBF$ is a straight line and $\\angle AEB=\\angle BFC=90^{\\circ}$. If $AE=24 \\text{ cm}$ and $BC=34 \\text{ cm}$, then $EF=$</p>\n<p><img alt=\"Figure Q18 (as printed)\" src=\"2022P2_figs/Q18.png\" /></p>\n<ul><li>A. $45 \\text{ cm}$</li><li>B. $51 \\text{ cm}$</li><li>C. $61 \\text{ cm}$</li><li>D. $75 \\text{ cm}$</li></ul>",
+   "file": "2022_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2022,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 19,
+   "title": "第 19 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "相似三角形"
+   ],
+   "text": "In the figure, $ABC$ is an equilateral triangle. Let $D$ and $E$ be points lying on $AC$ and $BC$ respectively such that $AD = CE$. If $\\angle CBD =38^\\circ$, then $\\angle AEB =$\n\n![Figure Q19 (as printed)](2022P2_figs/Q19.png)\n\n- A. $73^\\circ$.\n- B. $75^\\circ$.\n- C. $78^\\circ$.\n- D. $82^\\circ$.",
+   "html": "<p>In the figure, $ABC$ is an equilateral triangle. Let $D$ and $E$ be points lying on $AC$ and $BC$ respectively such that $AD = CE$. If $\\angle CBD =38^\\circ$, then $\\angle AEB =$</p>\n<p><img alt=\"Figure Q19 (as printed)\" src=\"2022P2_figs/Q19.png\" /></p>\n<ul><li>A. $73^\\circ$.</li><li>B. $75^\\circ$.</li><li>C. $78^\\circ$.</li><li>D. $82^\\circ$.</li></ul>",
+   "file": "2022_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2022,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 20,
+   "title": "第 20 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "平面幾何"
+   ],
+   "text": "The figure shows a parallelogram. Which of the following must be true?\nI. $a + b =180^\\circ$\nII. $b + c =360^\\circ$\nIII. $c + d =540^\\circ$\n\n![Figure Q20 (as printed)](2022P2_figs/Q20.png)\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
+   "html": "<p>The figure shows a parallelogram. Which of the following must be true? I. $a + b =180^\\circ$ II. $b + c =360^\\circ$ III. $c + d =540^\\circ$</p>\n<p><img alt=\"Figure Q20 (as printed)\" src=\"2022P2_figs/Q20.png\" /></p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
+   "file": "2022_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2022,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 21,
+   "title": "第 21 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "圓的幾何"
+   ],
+   "text": "In the figure, $O$ is the centre of the circle $ABC$. If $\\angle ABO =36^\\circ$ and $\\angle BOC =164^\\circ$, then $\\angle ACO =$\n\n![Figure Q21 (as printed)](2022P2_figs/Q21.png)\n\n- A. $41^\\circ$.\n- B. $46^\\circ$.\n- C. $52^\\circ$.\n- D. $64^\\circ$. Go on to the next page",
+   "html": "<p>In the figure, $O$ is the centre of the circle $ABC$. If $\\angle ABO =36^\\circ$ and $\\angle BOC =164^\\circ$, then $\\angle ACO =$</p>\n<p><img alt=\"Figure Q21 (as printed)\" src=\"2022P2_figs/Q21.png\" /></p>\n<ul><li>A. $41^\\circ$.</li><li>B. $46^\\circ$.</li><li>C. $52^\\circ$.</li><li>D. $64^\\circ$. Go on to the next page</li></ul>",
+   "file": "2022_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2022,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 22,
+   "title": "第 22 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "相似三角形"
+   ],
+   "text": "In the figure, $ABC$ is a right-angled triangle with $\\angle ABC =90^\\circ$. Let $D$ and $E$ be points lying on $AC$ and $BC$ respectively such that $ABED$ is a cyclic quadrilateral. If $AB =660 \\text{ cm}$, $AD =572 \\text{ cm}$ and $BE =275 \\text{ cm}$, then $CD =$\n\n![Figure Q22 (as printed)](2022P2_figs/Q22.png)\n\n- A. $429 \\text{ cm}$.\n- B. $715 \\text{ cm}$.\n- C. $728 \\text{ cm}$.\n- D. $845 \\text{ cm}$.",
+   "html": "<p>In the figure, $ABC$ is a right-angled triangle with $\\angle ABC =90^\\circ$. Let $D$ and $E$ be points lying on $AC$ and $BC$ respectively such that $ABED$ is a cyclic quadrilateral. If $AB =660 \\text{ cm}$, $AD =572 \\text{ cm}$ and $BE =275 \\text{ cm}$, then $CD =$</p>\n<p><img alt=\"Figure Q22 (as printed)\" src=\"2022P2_figs/Q22.png\" /></p>\n<ul><li>A. $429 \\text{ cm}$.</li><li>B. $715 \\text{ cm}$.</li><li>C. $728 \\text{ cm}$.</li><li>D. $845 \\text{ cm}$.</li></ul>",
+   "file": "2022_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2022,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 23,
+   "title": "第 23 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "相似三角形",
+    "三角學"
+   ],
+   "text": "It is given that $PQRS$ is a rhombus. Let $T$ be the point of intersection of $PR$ and $QS$. If $\\angle QRT = \\theta$, then $\\dfrac{PQ}{ST} =$\n\n- A. $\\sin \\theta$.\n- B. $\\cos \\theta$.\n- C. $\\dfrac{1}{\\sin \\theta}$.\n- D. $\\dfrac{1}{\\cos \\theta}$.",
+   "html": "<p>It is given that $PQRS$ is a rhombus. Let $T$ be the point of intersection of $PR$ and $QS$. If $\\angle QRT = \\theta$, then $\\dfrac{PQ}{ST} =$</p>\n<ul><li>A. $\\sin \\theta$.</li><li>B. $\\cos \\theta$.</li><li>C. $\\dfrac{1}{\\sin \\theta}$.</li><li>D. $\\dfrac{1}{\\cos \\theta}$.</li></ul>",
+   "file": "2022_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2022,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 24,
+   "title": "第 24 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "直線方程"
+   ],
+   "text": "The figure shows the graph of the straight line $mx + ny =3$. Which of the following are true?\nI. $m <0$\nII. $n >3$\nIII. $m + n =0$\n\n![Figure Q24 (as printed)](2022P2_figs/Q24.png)\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
+   "html": "<p>The figure shows the graph of the straight line $mx + ny =3$. Which of the following are true? I. $m &lt;0$ II. $n &gt;3$ III. $m + n =0$</p>\n<p><img alt=\"Figure Q24 (as printed)\" src=\"2022P2_figs/Q24.png\" /></p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
+   "file": "2022_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2022,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 25,
+   "title": "第 25 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "坐標幾何"
+   ],
+   "text": "The rectangular coordinates of the point $Q$ are $(4\\sqrt{3}, -4)$. If $Q$ is rotated clockwise about the origin through $90^\\circ$, then the polar coordinates of its image are\n\n- A. $(8, 60^\\circ)$.\n- B. $(8, 120^\\circ)$.\n- C. $(8, 210^\\circ)$.\n- D. $(8, 240^\\circ)$.",
+   "html": "<p>The rectangular coordinates of the point $Q$ are $(4\\sqrt{3}, -4)$. If $Q$ is rotated clockwise about the origin through $90^\\circ$, then the polar coordinates of its image are</p>\n<ul><li>A. $(8, 60^\\circ)$.</li><li>B. $(8, 120^\\circ)$.</li><li>C. $(8, 210^\\circ)$.</li><li>D. $(8, 240^\\circ)$.</li></ul>",
+   "file": "2022_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2022,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 26,
+   "title": "第 26 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "直線方程",
+    "坐標幾何",
+    "軌跡"
+   ],
+   "text": "The straight line $12x - 5y =60$ cuts the $x$-axis and the $y$-axis at the points $A$ and $B$ respectively. Let $P$ be a moving point in the rectangular coordinate plane such that $AP = BP$. Find the equation of the locus of $P$.\n\n- A. $10x + 24y + 119 =0$\n- B. $15x + 36y + 179 =0$\n- C. $x^2 + y^2 - 5x + 12y =0$\n- D. $x^2 + y^2 + 12x - 133 =0$",
+   "html": "<p>The straight line $12x - 5y =60$ cuts the $x$-axis and the $y$-axis at the points $A$ and $B$ respectively. Let $P$ be a moving point in the rectangular coordinate plane such that $AP = BP$. Find the equation of the locus of $P$.</p>\n<ul><li>A. $10x + 24y + 119 =0$</li><li>B. $15x + 36y + 179 =0$</li><li>C. $x^2 + y^2 - 5x + 12y =0$</li><li>D. $x^2 + y^2 + 12x - 133 =0$</li></ul>",
+   "file": "2022_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2022,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 27,
+   "title": "第 27 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "坐標幾何",
+    "圓的幾何"
+   ],
+   "text": "The coordinates of the points $P$ and $Q$ are $(10, -24)$ and $(17, -7)$ respectively. Let $C$ be the circle which passes through the origin, $P$ and $Q$. Which of the following is true?\n\n- A. $PQ$ is a diameter of $C$.\n- B. The area of $C$ is $196\\pi$.\n- C. The point $(16, -9)$ lies inside $C$.\n- D. The centre of $C$ lies on the straight line $5x + 12y =0$.",
+   "html": "<p>The coordinates of the points $P$ and $Q$ are $(10, -24)$ and $(17, -7)$ respectively. Let $C$ be the circle which passes through the origin, $P$ and $Q$. Which of the following is true?</p>\n<ul><li>A. $PQ$ is a diameter of $C$.</li><li>B. The area of $C$ is $196\\pi$.</li><li>C. The point $(16, -9)$ lies inside $C$.</li><li>D. The centre of $C$ lies on the straight line $5x + 12y =0$.</li></ul>",
+   "file": "2022_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2022,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 28,
+   "title": "第 28 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "概率"
+   ],
+   "text": "$5\\blacklozenge2$ is a 3-digit number, where $\\blacklozenge$ is an integer from 0 to 9 inclusive. Find the probability that the 3-digit number is divisible by 7.\n\n- A. $\\dfrac{1}{5}$\n- B. $\\dfrac{1}{7}$\n- C. $\\dfrac{1}{9}$\n- D. $\\dfrac{1}{10}$",
+   "html": "<p>$5\\blacklozenge2$ is a 3-digit number, where $\\blacklozenge$ is an integer from 0 to 9 inclusive. Find the probability that the 3-digit number is divisible by 7.</p>\n<ul><li>A. $\\dfrac{1}{5}$</li><li>B. $\\dfrac{1}{7}$</li><li>C. $\\dfrac{1}{9}$</li><li>D. $\\dfrac{1}{10}$</li></ul>",
+   "file": "2022_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2022,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 29,
+   "title": "第 29 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "統計"
+   ],
+   "text": "The mean weight of 60 actors and 40 actresses is 57 kg. If the mean weight of the actors is 63 kg, then the mean weight of the actresses is\n\n- A. 48 kg.\n- B. 50 kg.\n- C. 53 kg.\n- D. 60 kg.",
+   "html": "<p>The mean weight of 60 actors and 40 actresses is 57 kg. If the mean weight of the actors is 63 kg, then the mean weight of the actresses is</p>\n<ul><li>A. 48 kg.</li><li>B. 50 kg.</li><li>C. 53 kg.</li><li>D. 60 kg.</li></ul>",
+   "file": "2022_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2022,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 30,
+   "title": "第 30 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "數論"
+   ],
+   "text": "Consider the following positive integers:\n2 5 6 6 x x x y\nIf both the mean and the median of the above positive integers are 6, which of the following must be true?\nI. The mode of the above positive integers is 6.\nII. The least possible range of the above positive integers is 6.\nIII. The greatest possible variance of the above positive integers is 6.\n\n- A. I only\n- B. II only\n- C. I and III only\n- D. II and III only",
+   "html": "<p>Consider the following positive integers: 2 5 6 6 x x x y If both the mean and the median of the above positive integers are 6, which of the following must be true? I. The mode of the above positive integers is 6. II. The least possible range of the above positive integers is 6. III. The greatest possible variance of the above positive integers is 6.</p>\n<ul><li>A. I only</li><li>B. II only</li><li>C. I and III only</li><li>D. II and III only</li></ul>",
+   "file": "2022_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2022,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 31,
+   "title": "第 31 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "指數定律"
+   ],
+   "text": "Which of the following is the least?\n\n- A. $(-345)^{768}$\n- B. $453^{-786}$\n- C. $\\left(\\dfrac{1}{435}\\right)^{867}$\n- D. $\\left(\\dfrac{2}{543}\\right)^{876}$",
+   "html": "<p>Which of the following is the least?</p>\n<ul><li>A. $(-345)^{768}$</li><li>B. $453^{-786}$</li><li>C. $\\left(\\dfrac{1}{435}\\right)^{867}$</li><li>D. $\\left(\\dfrac{2}{543}\\right)^{876}$</li></ul>",
+   "file": "2022_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2022,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 32,
+   "title": "第 32 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "對數",
+    "數列"
+   ],
+   "text": "It is given that $\\log_a y$ is a linear function of $x$, where $0 < a <1$. The intercepts on the vertical axis and on the horizontal axis of the graph of the linear function are 6 and 3 respectively. If $y = mn^x$, which of the following is/are true?\nI. $m <1$\nII. $n <1$\nIII. $mn^3 =1$\n\n- A. I only\n- B. II only\n- C. I and III only\n- D. II and III only",
+   "html": "<p>It is given that $\\log_a y$ is a linear function of $x$, where $0 &lt; a &lt;1$. The intercepts on the vertical axis and on the horizontal axis of the graph of the linear function are 6 and 3 respectively. If $y = mn^x$, which of the following is/are true? I. $m &lt;1$ II. $n &lt;1$ III. $mn^3 =1$</p>\n<ul><li>A. I only</li><li>B. II only</li><li>C. I and III only</li><li>D. II and III only</li></ul>",
+   "file": "2022_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2022,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 33,
+   "title": "第 33 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "對數"
+   ],
+   "text": "If $\\log_4 y =2x - 1$ and $(\\log_4 y)^2 =20x - 31$, then $\\log_2 y =$\n\n- A. 1 or 2.\n- B. 2 or 4.\n- C. 3 or 7.\n- D. 6 or 14.",
+   "html": "<p>If $\\log_4 y =2x - 1$ and $(\\log_4 y)^2 =20x - 31$, then $\\log_2 y =$</p>\n<ul><li>A. 1 or 2.</li><li>B. 2 or 4.</li><li>C. 3 or 7.</li><li>D. 6 or 14.</li></ul>",
+   "file": "2022_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2022,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 34,
+   "title": "第 34 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "數制"
+   ],
+   "text": "12B00CD000000E<sub>16</sub> =\n\n- A. 299×4<sup>22</sup>+205×4<sup>14</sup>+14 .\n- B. 300×4<sup>22</sup>+222×4<sup>14</sup>+15 .\n- C. 299×4<sup>24</sup>+205×4<sup>16</sup>+14 .\n- D. 300×4<sup>24</sup>+222×4<sup>16</sup>+15 .",
+   "html": "<p>12B00CD000000E&lt;sub&gt;16&lt;/sub&gt; =</p>\n<ul><li>A. 299×4&lt;sup&gt;22&lt;/sup&gt;+205×4&lt;sup&gt;14&lt;/sup&gt;+14 .</li><li>B. 300×4&lt;sup&gt;22&lt;/sup&gt;+222×4&lt;sup&gt;14&lt;/sup&gt;+15 .</li><li>C. 299×4&lt;sup&gt;24&lt;/sup&gt;+205×4&lt;sup&gt;16&lt;/sup&gt;+14 .</li><li>D. 300×4&lt;sup&gt;24&lt;/sup&gt;+222×4&lt;sup&gt;16&lt;/sup&gt;+15 .</li></ul>",
+   "file": "2022_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2022,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 35,
+   "title": "第 35 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "複數"
+   ],
+   "text": "Let z=4+5i<sup>10</sup>−ki<sup>15</sup>+6i<sup>21</sup>+2ki<sup>28</sup>, where k is a real number. If the real part and the imaginary part of z are equal, then the real part of z is\n\n- A. 7 .\n- B. 13 .\n- C. 17 .\n- D. 25 .",
+   "html": "<p>Let z=4+5i&lt;sup&gt;10&lt;/sup&gt;−ki&lt;sup&gt;15&lt;/sup&gt;+6i&lt;sup&gt;21&lt;/sup&gt;+2ki&lt;sup&gt;28&lt;/sup&gt;, where k is a real number. If the real part and the imaginary part of z are equal, then the real part of z is</p>\n<ul><li>A. 7 .</li><li>B. 13 .</li><li>C. 17 .</li><li>D. 25 .</li></ul>",
+   "file": "2022_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2022,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 36,
+   "title": "第 36 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "線性規劃"
+   ],
+   "text": "Consider the following system of inequalities:\n$$\n\\begin{cases}\n2x+y\\geq8 \\\\\n2x+3y\\geq16 \\\\\n4x+3y\\leq22\n\\end{cases}\n$$\nLet R be the region which represents the solution of the above system of inequalities. If (x,y) is a point lying in R, then the least value of 7x+6y is\n\n- A. 32 .\n- B. 38 .\n- C. 41 .\n- D. 43 .",
+   "html": "<p>Consider the following system of inequalities: $$ \\begin{cases} 2x+y\\geq8 \\\\ 2x+3y\\geq16 \\\\ 4x+3y\\leq22 \\end{cases} $$ Let R be the region which represents the solution of the above system of inequalities. If (x,y) is a point lying in R, then the least value of 7x+6y is</p>\n<ul><li>A. 32 .</li><li>B. 38 .</li><li>C. 41 .</li><li>D. 43 .</li></ul>",
+   "file": "2022_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2022,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 37,
+   "title": "第 37 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "等比數列"
+   ],
+   "text": "Let $a_{n}$ be the $n$th term of a geometric sequence. It is given that $a_{1}=8p^{2}$, $a_{2}=1$ and $a_{3}=27p$, where $p$ is a real number. Find $a_{4}$.\n\n- A. $\\dfrac{1}{6}$\n- B. $\\dfrac{2}{9}$\n- C. $\\dfrac{9}{2}$\n- D. $\\dfrac{81}{4}$",
+   "html": "<p>Let $a_{n}$ be the $n$th term of a geometric sequence. It is given that $a_{1}=8p^{2}$, $a_{2}=1$ and $a_{3}=27p$, where $p$ is a real number. Find $a_{4}$.</p>\n<ul><li>A. $\\dfrac{1}{6}$</li><li>B. $\\dfrac{2}{9}$</li><li>C. $\\dfrac{9}{2}$</li><li>D. $\\dfrac{81}{4}$</li></ul>",
+   "file": "2022_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2022,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 38,
+   "title": "第 38 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "圓的幾何"
+   ],
+   "text": "In the figure, $ABCD$ is a circle. $PA$ and $QB$ are the tangents to the circle at $A$ and $B$ respectively. If $\\angle ADC=79^{\\circ}$, $\\angle CBQ=39^{\\circ}$ and $\\angle DAP=42^{\\circ}$, then $\\angle BCD=$\n\n![Figure Q38 (as printed)](2022P2_figs/Q38.png)\n\n- A. $76^{\\circ}$\n- B. $79^{\\circ}$\n- C. $81^{\\circ}$\n- D. $82^{\\circ}$",
+   "html": "<p>In the figure, $ABCD$ is a circle. $PA$ and $QB$ are the tangents to the circle at $A$ and $B$ respectively. If $\\angle ADC=79^{\\circ}$, $\\angle CBQ=39^{\\circ}$ and $\\angle DAP=42^{\\circ}$, then $\\angle BCD=$</p>\n<p><img alt=\"Figure Q38 (as printed)\" src=\"2022P2_figs/Q38.png\" /></p>\n<ul><li>A. $76^{\\circ}$</li><li>B. $79^{\\circ}$</li><li>C. $81^{\\circ}$</li><li>D. $82^{\\circ}$</li></ul>",
+   "file": "2022_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2022,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 39,
+   "title": "第 39 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "三角學"
+   ],
+   "text": "For $0^{\\circ} \\leq x <360^{\\circ}$, how many roots does the equation $\\sin^{2}x=6\\cos^{2}x$ have?\n\n- A. 2\n- B. 3\n- C. 4\n- D. 5 Go on to the next page",
+   "html": "<p>For $0^{\\circ} \\leq x &lt;360^{\\circ}$, how many roots does the equation $\\sin^{2}x=6\\cos^{2}x$ have?</p>\n<ul><li>A. 2</li><li>B. 3</li><li>C. 4</li><li>D. 5 Go on to the next page</li></ul>",
+   "file": "2022_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2022,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 40,
+   "title": "第 40 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "立體幾何"
+   ],
+   "text": "In the figure, $ABCDEFGH$ is a cube. Let $\\alpha$ be the angle between $\\triangle AFG$ and $\\triangle AFH$ while $\\beta$ be the angle between $\\triangle AFH$ and $\\triangle FGH$. Which of the following is true?\n\n![Figure Q40 (as printed)](2022P2_figs/Q40.png)\n\n- A. $\\alpha <60^\\circ < \\beta$\n- B. $\\alpha < \\beta <60^\\circ$\n- C. $60^\\circ < \\alpha < \\beta$\n- D. $60^\\circ < \\beta < \\alpha$",
+   "html": "<p>In the figure, $ABCDEFGH$ is a cube. Let $\\alpha$ be the angle between $\\triangle AFG$ and $\\triangle AFH$ while $\\beta$ be the angle between $\\triangle AFH$ and $\\triangle FGH$. Which of the following is true?</p>\n<p><img alt=\"Figure Q40 (as printed)\" src=\"2022P2_figs/Q40.png\" /></p>\n<ul><li>A. $\\alpha &lt;60^\\circ &lt; \\beta$</li><li>B. $\\alpha &lt; \\beta &lt;60^\\circ$</li><li>C. $60^\\circ &lt; \\alpha &lt; \\beta$</li><li>D. $60^\\circ &lt; \\beta &lt; \\alpha$</li></ul>",
+   "file": "2022_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2022,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 41,
+   "title": "第 41 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "直線方程",
+    "圓的幾何",
+    "相似三角形"
+   ],
+   "text": "Let $O$ be the origin. The coordinates of the points $A$ and $B$ are $(a,0)$ and $(0,b)$ respectively, where $a$ and $b$ are positive numbers. If the circumcentre of $\\triangle OAB$ lies on the straight line $4x + 16y =17a$, then $a:b =$\n\n- A. $8:15$\n- B. $15:8$\n- C. $16:47$\n- D. $47:16$",
+   "html": "<p>Let $O$ be the origin. The coordinates of the points $A$ and $B$ are $(a,0)$ and $(0,b)$ respectively, where $a$ and $b$ are positive numbers. If the circumcentre of $\\triangle OAB$ lies on the straight line $4x + 16y =17a$, then $a:b =$</p>\n<ul><li>A. $8:15$</li><li>B. $15:8$</li><li>C. $16:47$</li><li>D. $47:16$</li></ul>",
+   "file": "2022_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2022,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 42,
+   "title": "第 42 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "排列與組合"
+   ],
+   "text": "If the first five digits and the last two digits of a seven-digit password are formed by a permutation of $1,3,5,7,9$ and a permutation of $2,8$ respectively, how many different seven-digit passwords can be formed?\n\n- A. 10\n- B. 240\n- C. 480\n- D. 5040",
+   "html": "<p>If the first five digits and the last two digits of a seven-digit password are formed by a permutation of $1,3,5,7,9$ and a permutation of $2,8$ respectively, how many different seven-digit passwords can be formed?</p>\n<ul><li>A. 10</li><li>B. 240</li><li>C. 480</li><li>D. 5040</li></ul>",
+   "file": "2022_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2022,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 43,
+   "title": "第 43 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "概率"
+   ],
+   "text": "A box contains 2 white balls, 2 yellow balls and 3 red balls. A boy and a girl take turns to draw one ball randomly from the box with replacement until one of them draws a white ball or a yellow ball. The boy draws a ball first. Find the probability that the girl draws a white ball.\n\n- A. $\\dfrac{3}{10}$\n- B. $\\dfrac{3}{20}$\n- C. $\\dfrac{7}{20}$\n- D. $\\dfrac{17}{20}$",
+   "html": "<p>A box contains 2 white balls, 2 yellow balls and 3 red balls. A boy and a girl take turns to draw one ball randomly from the box with replacement until one of them draws a white ball or a yellow ball. The boy draws a ball first. Find the probability that the girl draws a white ball.</p>\n<ul><li>A. $\\dfrac{3}{10}$</li><li>B. $\\dfrac{3}{20}$</li><li>C. $\\dfrac{7}{20}$</li><li>D. $\\dfrac{17}{20}$</li></ul>",
+   "file": "2022_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2022,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 44,
+   "title": "第 44 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "統計",
+    "百分比"
+   ],
+   "text": "In a test, the median of the test scores of a class of students is 30 marks. All the students fail in the test, so the test score of each student is adjusted such that each score is increased by 50% and then extra 8 marks are added. Let $x$ marks be the median of the test scores of the class of students after the score adjustment. In the test, the standard score of a student before the score adjustment is $-2$. Denote the standard score of this student after the score adjustment by $z$. Find $x$ and $z$.\n\n- A. $x=45$ and $z=-2$\n- B. $x=45$ and $z=-1$\n- C. $x=53$ and $z=-2$\n- D. $x=53$ and $z=-1$",
+   "html": "<p>In a test, the median of the test scores of a class of students is 30 marks. All the students fail in the test, so the test score of each student is adjusted such that each score is increased by 50% and then extra 8 marks are added. Let $x$ marks be the median of the test scores of the class of students after the score adjustment. In the test, the standard score of a student before the score adjustment is $-2$. Denote the standard score of this student after the score adjustment by $z$. Find $x$ and $z$.</p>\n<ul><li>A. $x=45$ and $z=-2$</li><li>B. $x=45$ and $z=-1$</li><li>C. $x=53$ and $z=-2$</li><li>D. $x=53$ and $z=-1$</li></ul>",
+   "file": "2022_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2022,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 45,
+   "title": "第 45 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "統計"
+   ],
+   "text": "It is given that $d$ is a real number. Let $S_1$ be a group of numbers $\\{d-6, d-2, d-1, d+3, d+5, d+7\\}$ and $S_2$ be another group of numbers $\\{d-7, d-5, d-3, d+1, d+2, d+6\\}$. Which of the following is/are true?\nI. The means of $S_1$ and $S_2$ are equal.\nII. The standard deviations of $S_1$ and $S_2$ are equal.\nIII. The inter-quartile ranges of $S_1$ and $S_2$ are equal.\n\n- A. I only\n- B. II only\n- C. I and III only\n- D. II and III only",
+   "html": "<p>It is given that $d$ is a real number. Let $S_1$ be a group of numbers $\\{d-6, d-2, d-1, d+3, d+5, d+7\\}$ and $S_2$ be another group of numbers $\\{d-7, d-5, d-3, d+1, d+2, d+6\\}$. Which of the following is/are true? I. The means of $S_1$ and $S_2$ are equal. II. The standard deviations of $S_1$ and $S_2$ are equal. III. The inter-quartile ranges of $S_1$ and $S_2$ are equal.</p>\n<ul><li>A. I only</li><li>B. II only</li><li>C. I and III only</li><li>D. II and III only</li></ul>",
+   "file": "2022_P2_題目英文卷.md"
   },
   {
    "subject": "生物",

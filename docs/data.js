@@ -1,5 +1,5 @@
 window.QB = {
- "generated": "2026-11-08 14:57",
+ "generated": "2026-11-08 14:58",
  "count": 1414,
  "questions": [
   {
@@ -17630,8 +17630,8 @@ window.QB = {
    "tags": [
     "數制"
    ],
-   "text": "12B00CD000000E<sub>16</sub> =\n\n- A. 299×4<sup>22</sup>+205×4<sup>14</sup>+14 .\n- B. 300×4<sup>22</sup>+222×4<sup>14</sup>+15 .\n- C. 299×4<sup>24</sup>+205×4<sup>16</sup>+14 .\n- D. 300×4<sup>24</sup>+222×4<sup>16</sup>+15 .",
-   "html": "<p>12B00CD000000E&lt;sub&gt;16&lt;/sub&gt; =</p>\n<ul><li>A. 299×4&lt;sup&gt;22&lt;/sup&gt;+205×4&lt;sup&gt;14&lt;/sup&gt;+14 .</li><li>B. 300×4&lt;sup&gt;22&lt;/sup&gt;+222×4&lt;sup&gt;14&lt;/sup&gt;+15 .</li><li>C. 299×4&lt;sup&gt;24&lt;/sup&gt;+205×4&lt;sup&gt;16&lt;/sup&gt;+14 .</li><li>D. 300×4&lt;sup&gt;24&lt;/sup&gt;+222×4&lt;sup&gt;16&lt;/sup&gt;+15 .</li></ul>",
+   "text": "$\\text{12B00CD000000E}_{16} =$\n\n- A. $299 \\times 4^{22} + 205 \\times 4^{14} + 14$ .\n- B. $300 \\times 4^{22} + 222 \\times 4^{14} + 15$ .\n- C. $299 \\times 4^{24} + 205 \\times 4^{16} + 14$ .\n- D. $300 \\times 4^{24} + 222 \\times 4^{16} + 15$ .",
+   "html": "<p>$\\text{12B00CD000000E}_{16} =$</p>\n<ul><li>A. $299 \\times 4^{22} + 205 \\times 4^{14} + 14$ .</li><li>B. $300 \\times 4^{22} + 222 \\times 4^{14} + 15$ .</li><li>C. $299 \\times 4^{24} + 205 \\times 4^{16} + 14$ .</li><li>D. $300 \\times 4^{24} + 222 \\times 4^{16} + 15$ .</li></ul>",
    "file": "2022_P2_題目英文卷.md"
   },
   {
@@ -17645,8 +17645,8 @@ window.QB = {
    "tags": [
     "複數"
    ],
-   "text": "Let z=4+5i<sup>10</sup>−ki<sup>15</sup>+6i<sup>21</sup>+2ki<sup>28</sup>, where k is a real number. If the real part and the imaginary part of z are equal, then the real part of z is\n\n- A. 7 .\n- B. 13 .\n- C. 17 .\n- D. 25 .",
-   "html": "<p>Let z=4+5i&lt;sup&gt;10&lt;/sup&gt;−ki&lt;sup&gt;15&lt;/sup&gt;+6i&lt;sup&gt;21&lt;/sup&gt;+2ki&lt;sup&gt;28&lt;/sup&gt;, where k is a real number. If the real part and the imaginary part of z are equal, then the real part of z is</p>\n<ul><li>A. 7 .</li><li>B. 13 .</li><li>C. 17 .</li><li>D. 25 .</li></ul>",
+   "text": "Let $z = 4 + 5i^{10} - k i^{15} + 6i^{21} + 2k i^{28}$, where $k$ is a real number. If the real part and the imaginary part of $z$ are equal, then the real part of $z$ is\n\n- A. 7 .\n- B. 13 .\n- C. 17 .\n- D. 25 .",
+   "html": "<p>Let $z = 4 + 5i^{10} - k i^{15} + 6i^{21} + 2k i^{28}$, where $k$ is a real number. If the real part and the imaginary part of $z$ are equal, then the real part of $z$ is</p>\n<ul><li>A. 7 .</li><li>B. 13 .</li><li>C. 17 .</li><li>D. 25 .</li></ul>",
    "file": "2022_P2_題目英文卷.md"
   },
   {

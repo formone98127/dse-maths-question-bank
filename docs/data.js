@@ -1,5 +1,5 @@
 window.QB = {
- "generated": "2026-11-08 13:42",
+ "generated": "2026-11-08 13:46",
  "count": 1369,
  "questions": [
   {
@@ -19022,8 +19022,8 @@ window.QB = {
    "tags": [
     "求積法"
    ],
-   "text": "The scale of a map is $1: 50000$. If the actual area of an airport is $10 \\text{ km}^2$, then the area of this airport on the map is\n\n- A. $2 \\text{ cm}^2$.\n- B. $4 \\text{ cm}^2$.\n- C. $20 \\text{ cm}^2$.\n- D. $40 \\text{ cm}^2$.",
-   "html": "<p>The scale of a map is $1: 50000$. If the actual area of an airport is $10 \\text{ km}^2$, then the area of this airport on the map is</p>\n<ul><li>A. $2 \\text{ cm}^2$.</li><li>B. $4 \\text{ cm}^2$.</li><li>C. $20 \\text{ cm}^2$.</li><li>D. $40 \\text{ cm}^2$.</li></ul>",
+   "text": "The scale of a map is $1: 50\\,000$. If the actual area of an airport is $10 \\text{ km}^2$, then the area of this airport on the map is\n\n- A. $2 \\text{ cm}^2$.\n- B. $4 \\text{ cm}^2$.\n- C. $20 \\text{ cm}^2$.\n- D. $40 \\text{ cm}^2$.",
+   "html": "<p>The scale of a map is $1: 50\\,000$. If the actual area of an airport is $10 \\text{ km}^2$, then the area of this airport on the map is</p>\n<ul><li>A. $2 \\text{ cm}^2$.</li><li>B. $4 \\text{ cm}^2$.</li><li>C. $20 \\text{ cm}^2$.</li><li>D. $40 \\text{ cm}^2$.</li></ul>",
    "file": "2023_P2_題目英文卷.md"
   },
   {
@@ -19301,8 +19301,8 @@ window.QB = {
    "tags": [
     "統計"
    ],
-   "text": "There are 14 full-time employees and 56 part-time employees in a company. The mean salary of the full-time employees is $31530 while the mean salary of the part-time employees is $21525. Find the mean salary of these employees of the company.\n\n- A. $23526$\n- B. $25527$\n- C. $27528$\n- D. $29529$",
-   "html": "<p>There are 14 full-time employees and 56 part-time employees in a company. The mean salary of the full-time employees is $31530 while the mean salary of the part-time employees is $21525. Find the mean salary of these employees of the company.</p>\n<ul><li>A. $23526$</li><li>B. $25527$</li><li>C. $27528$</li><li>D. $29529$</li></ul>",
+   "text": "There are 14 full-time employees and 56 part-time employees in a company. The mean salary of the full-time employees is $31530 while the mean salary of the part-time employees is $21525. Find the mean salary of these employees of the company.\n\n- A. $23\\,526$\n- B. $25\\,527$\n- C. $27\\,528$\n- D. $29\\,529$",
+   "html": "<p>There are 14 full-time employees and 56 part-time employees in a company. The mean salary of the full-time employees is $31530 while the mean salary of the part-time employees is $21525. Find the mean salary of these employees of the company.</p>\n<ul><li>A. $23\\,526$</li><li>B. $25\\,527$</li><li>C. $27\\,528$</li><li>D. $29\\,529$</li></ul>",
    "file": "2023_P2_題目英文卷.md"
   },
   {
@@ -19488,8 +19488,8 @@ window.QB = {
    "tags": [
     "排列與組合"
    ],
-   "text": "There are 15 teachers in a group. If 5 teachers are selected from the group to form a committee consisting of 1 chairperson and 4 members, how many different committees can be formed?\n\n- A. 3003\n- B. 15015\n- C. 20475\n- D. 360360",
-   "html": "<p>There are 15 teachers in a group. If 5 teachers are selected from the group to form a committee consisting of 1 chairperson and 4 members, how many different committees can be formed?</p>\n<ul><li>A. 3003</li><li>B. 15015</li><li>C. 20475</li><li>D. 360360</li></ul>",
+   "text": "There are 15 teachers in a group. If 5 teachers are selected from the group to form a committee consisting of 1 chairperson and 4 members, how many different committees can be formed?\n\n- A. 3 003\n- B. 15\\,015\n- C. 20\\,475\n- D. 360360",
+   "html": "<p>There are 15 teachers in a group. If 5 teachers are selected from the group to form a committee consisting of 1 chairperson and 4 members, how many different committees can be formed?</p>\n<ul><li>A. 3 003</li><li>B. 15\\,015</li><li>C. 20\\,475</li><li>D. 360360</li></ul>",
    "file": "2023_P2_題目英文卷.md"
   },
   {

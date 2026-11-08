@@ -1,5 +1,5 @@
 window.QB = {
- "generated": "2026-11-08 14:52",
+ "generated": "2026-11-08 14:55",
  "count": 1414,
  "questions": [
   {
@@ -13304,7 +13304,7 @@ window.QB = {
    "tags": [
     "數列"
    ],
-   "text": "In the figure, the 1st pattern consists of 6 dots. For any positive integer $n$, the $(n+1)$th pattern is formed by adding 4 dots to the $n$th pattern. Find the number of dots in the 9th pattern.\n\n![Figure Q14 (as printed)](2019P2_figs/Q14.png)\n\n- A. 30\n- B. 34\n- C. 38\n- D. 42",
+   "text": "In the figure, the 1st pattern consists of 6 dots. For any positive integer $n$, the $(n+1)$th pattern is formed by adding 4 dots to the $n$th pattern. Find the number of dots in the 9th pattern.\n\u0001IMG0\u0001\n\n- A. 30\n- B. 34\n- C. 38\n- D. 42",
    "html": "<p>In the figure, the 1st pattern consists of 6 dots. For any positive integer $n$, the $(n+1)$th pattern is formed by adding 4 dots to the $n$th pattern. Find the number of dots in the 9th pattern.</p>\n<p><img alt=\"Figure Q14 (as printed)\" src=\"2019P2_figs/Q14.png\" /></p>\n<ul><li>A. 30</li><li>B. 34</li><li>C. 38</li><li>D. 42</li></ul>",
    "file": "2019_P2_題目英文卷.md"
   },
@@ -13336,7 +13336,7 @@ window.QB = {
     "求積法",
     "相似三角形"
    ],
-   "text": "In the figure, $ABCD$ is a parallelogram and $AEFG$ is a square. It is given that $BE:EF:FC=2:7:3$. $BD$ cuts $AE$ and $FG$ at the points $X$ and $Y$ respectively. If the area of $\\triangle ABX$ is $24\\text{ cm}^2$, then the area of the quadrilateral $CDYF$ is\n\n![Figure Q16 (as printed)](2019P2_figs/Q16.png)\n\n- A. $54\\text{ cm}^2$.\n- B. $77\\text{ cm}^2$.\n- C. $81\\text{ cm}^2$.\n- D. $87\\text{ cm}^2$.",
+   "text": "In the figure, $ABCD$ is a parallelogram and $AEFG$ is a square. It is given that $BE:EF:FC=2:7:3$. $BD$ cuts $AE$ and $FG$ at the points $X$ and $Y$ respectively. If the area of $\\triangle ABX$ is $24\\text{ cm}^2$, then the area of the quadrilateral $CDYF$ is\n\u0001IMG0\u0001\n\n- A. $54\\text{ cm}^2$.\n- B. $77\\text{ cm}^2$.\n- C. $81\\text{ cm}^2$.\n- D. $87\\text{ cm}^2$.",
    "html": "<p>In the figure, $ABCD$ is a parallelogram and $AEFG$ is a square. It is given that $BE:EF:FC=2:7:3$. $BD$ cuts $AE$ and $FG$ at the points $X$ and $Y$ respectively. If the area of $\\triangle ABX$ is $24\\text{ cm}^2$, then the area of the quadrilateral $CDYF$ is</p>\n<p><img alt=\"Figure Q16 (as printed)\" src=\"2019P2_figs/Q16.png\" /></p>\n<ul><li>A. $54\\text{ cm}^2$.</li><li>B. $77\\text{ cm}^2$.</li><li>C. $81\\text{ cm}^2$.</li><li>D. $87\\text{ cm}^2$.</li></ul>",
    "file": "2019_P2_題目英文卷.md"
   },
@@ -13352,7 +13352,7 @@ window.QB = {
     "平面幾何",
     "相似三角形"
    ],
-   "text": "In the figure, $ABC$ and $ADE$ are straight lines. It is given that $AB=BD$ and $BC=CD$. If $\\angle CDE=66^\\circ$, then $\\angle ACD=$\n\n![Figure Q17 (as printed)](2019P2_figs/Q17.png)\n\n- A. $28^\\circ$.\n- B. $33^\\circ$.\n- C. $36^\\circ$.\n- D. $38^\\circ$.",
+   "text": "In the figure, $ABC$ and $ADE$ are straight lines. It is given that $AB=BD$ and $BC=CD$. If $\\angle CDE=66^\\circ$, then $\\angle ACD=$\n\u0001IMG0\u0001\n\n- A. $28^\\circ$.\n- B. $33^\\circ$.\n- C. $36^\\circ$.\n- D. $38^\\circ$.",
    "html": "<p>In the figure, $ABC$ and $ADE$ are straight lines. It is given that $AB=BD$ and $BC=CD$. If $\\angle CDE=66^\\circ$, then $\\angle ACD=$</p>\n<p><img alt=\"Figure Q17 (as printed)\" src=\"2019P2_figs/Q17.png\" /></p>\n<ul><li>A. $28^\\circ$.</li><li>B. $33^\\circ$.</li><li>C. $36^\\circ$.</li><li>D. $38^\\circ$.</li></ul>",
    "file": "2019_P2_題目英文卷.md"
   },
@@ -13367,7 +13367,7 @@ window.QB = {
    "tags": [
     "相似三角形"
    ],
-   "text": "In the figure, $ABC$ is an isosceles triangle with $AB=AC$. $D$ and $E$ are points lying on $AB$ such that $AD=DE=2EB$ while $F$ is a point lying on $AC$ such that $DF\\parallel EC$. If $\\angle ADF=90^\\circ$ and $CE=60\\text{ cm}$, then $EF=$\n\n![Figure Q18 (as printed)](2019P2_figs/Q18.png)\n\n- A. $40\\text{ cm}$.\n- B. $45\\text{ cm}$.\n- C. $48\\text{ cm}$.\n- D. $50\\text{ cm}$.",
+   "text": "In the figure, $ABC$ is an isosceles triangle with $AB=AC$. $D$ and $E$ are points lying on $AB$ such that $AD=DE=2EB$ while $F$ is a point lying on $AC$ such that $DF\\parallel EC$. If $\\angle ADF=90^\\circ$ and $CE=60\\text{ cm}$, then $EF=$\n\u0001IMG0\u0001\n\n- A. $40\\text{ cm}$.\n- B. $45\\text{ cm}$.\n- C. $48\\text{ cm}$.\n- D. $50\\text{ cm}$.",
    "html": "<p>In the figure, $ABC$ is an isosceles triangle with $AB=AC$. $D$ and $E$ are points lying on $AB$ such that $AD=DE=2EB$ while $F$ is a point lying on $AC$ such that $DF\\parallel EC$. If $\\angle ADF=90^\\circ$ and $CE=60\\text{ cm}$, then $EF=$</p>\n<p><img alt=\"Figure Q18 (as printed)\" src=\"2019P2_figs/Q18.png\" /></p>\n<ul><li>A. $40\\text{ cm}$.</li><li>B. $45\\text{ cm}$.</li><li>C. $48\\text{ cm}$.</li><li>D. $50\\text{ cm}$.</li></ul>",
    "file": "2019_P2_題目英文卷.md"
   },
@@ -13382,7 +13382,7 @@ window.QB = {
    "tags": [
     "求積法"
    ],
-   "text": "In the figure, $ABCD$ is a trapezium with $AB \\parallel DC$ and $\\angle ABD = 90^\\circ$. If $AB = 18 \\text{ cm}$, $BC = 26 \\text{ cm}$ and $AD = 30 \\text{ cm}$, find the area of the trapezium $ABCD$.\n\n![Figure Q19 (as printed)](2019P2_figs/Q19.png)\n\n- A. $336 \\text{ cm}^2$\n- B. $400 \\text{ cm}^2$\n- C. $504 \\text{ cm}^2$\n- D. $552 \\text{ cm}^2$",
+   "text": "In the figure, $ABCD$ is a trapezium with $AB \\parallel DC$ and $\\angle ABD = 90^\\circ$. If $AB = 18 \\text{ cm}$, $BC = 26 \\text{ cm}$ and $AD = 30 \\text{ cm}$, find the area of the trapezium $ABCD$.\n\u0001IMG0\u0001\n\n- A. $336 \\text{ cm}^2$\n- B. $400 \\text{ cm}^2$\n- C. $504 \\text{ cm}^2$\n- D. $552 \\text{ cm}^2$",
    "html": "<p>In the figure, $ABCD$ is a trapezium with $AB \\parallel DC$ and $\\angle ABD = 90^\\circ$. If $AB = 18 \\text{ cm}$, $BC = 26 \\text{ cm}$ and $AD = 30 \\text{ cm}$, find the area of the trapezium $ABCD$.</p>\n<p><img alt=\"Figure Q19 (as printed)\" src=\"2019P2_figs/Q19.png\" /></p>\n<ul><li>A. $336 \\text{ cm}^2$</li><li>B. $400 \\text{ cm}^2$</li><li>C. $504 \\text{ cm}^2$</li><li>D. $552 \\text{ cm}^2$</li></ul>",
    "file": "2019_P2_題目英文卷.md"
   },
@@ -13398,7 +13398,7 @@ window.QB = {
     "平面幾何",
     "相似三角形"
    ],
-   "text": "In the figure, $ABCD$ is a rhombus. $ABE$ and $BCF$ are straight lines such that $BE = EF$. If $\\angle BEF = 56^\\circ$, then $\\angle BDC =$\n\n![Figure Q20 (as printed)](2019P2_figs/Q20.png)\n\n- A. $48^\\circ$\n- B. $56^\\circ$\n- C. $59^\\circ$\n- D. $62^\\circ$",
+   "text": "In the figure, $ABCD$ is a rhombus. $ABE$ and $BCF$ are straight lines such that $BE = EF$. If $\\angle BEF = 56^\\circ$, then $\\angle BDC =$\n\u0001IMG0\u0001\n\n- A. $48^\\circ$\n- B. $56^\\circ$\n- C. $59^\\circ$\n- D. $62^\\circ$",
    "html": "<p>In the figure, $ABCD$ is a rhombus. $ABE$ and $BCF$ are straight lines such that $BE = EF$. If $\\angle BEF = 56^\\circ$, then $\\angle BDC =$</p>\n<p><img alt=\"Figure Q20 (as printed)\" src=\"2019P2_figs/Q20.png\" /></p>\n<ul><li>A. $48^\\circ$</li><li>B. $56^\\circ$</li><li>C. $59^\\circ$</li><li>D. $62^\\circ$</li></ul>",
    "file": "2019_P2_題目英文卷.md"
   },
@@ -13414,7 +13414,7 @@ window.QB = {
     "圓的幾何",
     "相似三角形"
    ],
-   "text": "In the figure, $O$ is the centre of the semi-circle $ABCD$. If $AC = BD$ and $\\angle COD = 48^\\circ$, then $\\angle ABD =$\n\n![Figure Q21 (as printed)](2019P2_figs/Q21.png)\n\n- A. $31^\\circ$\n- B. $33^\\circ$\n- C. $42^\\circ$\n- D. $48^\\circ$",
+   "text": "In the figure, $O$ is the centre of the semi-circle $ABCD$. If $AC = BD$ and $\\angle COD = 48^\\circ$, then $\\angle ABD =$\n\u0001IMG0\u0001\n\n- A. $31^\\circ$\n- B. $33^\\circ$\n- C. $42^\\circ$\n- D. $48^\\circ$",
    "html": "<p>In the figure, $O$ is the centre of the semi-circle $ABCD$. If $AC = BD$ and $\\angle COD = 48^\\circ$, then $\\angle ABD =$</p>\n<p><img alt=\"Figure Q21 (as printed)\" src=\"2019P2_figs/Q21.png\" /></p>\n<ul><li>A. $31^\\circ$</li><li>B. $33^\\circ$</li><li>C. $42^\\circ$</li><li>D. $48^\\circ$</li></ul>",
    "file": "2019_P2_題目英文卷.md"
   },
@@ -13429,7 +13429,7 @@ window.QB = {
    "tags": [
     "三角學"
    ],
-   "text": "In the figure, $ABCD$ is a rectangle. $E$ is a point lying on $AD$. Find $\\dfrac{CE}{AC}$.\n\n![Figure Q22 (as printed)](2019P2_figs/Q22.png)\n\n- A. $\\dfrac{\\sin \\alpha}{\\sin \\beta}$\n- B. $\\dfrac{\\cos \\alpha}{\\cos \\beta}$\n- C. $\\sin \\alpha \\sin \\beta$\n- D. $\\cos \\alpha \\cos \\beta$",
+   "text": "In the figure, $ABCD$ is a rectangle. $E$ is a point lying on $AD$. Find $\\dfrac{CE}{AC}$.\n\u0001IMG0\u0001\n\n- A. $\\dfrac{\\sin \\alpha}{\\sin \\beta}$\n- B. $\\dfrac{\\cos \\alpha}{\\cos \\beta}$\n- C. $\\sin \\alpha \\sin \\beta$\n- D. $\\cos \\alpha \\cos \\beta$",
    "html": "<p>In the figure, $ABCD$ is a rectangle. $E$ is a point lying on $AD$. Find $\\dfrac{CE}{AC}$.</p>\n<p><img alt=\"Figure Q22 (as printed)\" src=\"2019P2_figs/Q22.png\" /></p>\n<ul><li>A. $\\dfrac{\\sin \\alpha}{\\sin \\beta}$</li><li>B. $\\dfrac{\\cos \\alpha}{\\cos \\beta}$</li><li>C. $\\sin \\alpha \\sin \\beta$</li><li>D. $\\cos \\alpha \\cos \\beta$</li></ul>",
    "file": "2019_P2_題目英文卷.md"
   },
@@ -13444,8 +13444,8 @@ window.QB = {
    "tags": [
     "直線方程"
    ],
-   "text": "In the figure, the equation of the straight line $L$ is $ax + by + 15 = 0$. Which of the following are true?\nI. $a > b$\nII. $a > -3$\nIII. $b > -5$\n\n![Figure Q23 (as printed)](2019P2_figs/Q23.png)\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
-   "html": "<p>In the figure, the equation of the straight line $L$ is $ax + by + 15 = 0$. Which of the following are true?</p>\n<p>I. $a &gt; b$</p>\n<p>II. $a &gt; -3$</p>\n<p>III. $b &gt; -5$</p>\n<p><img alt=\"Figure Q23 (as printed)\" src=\"2019P2_figs/Q23.png\" /></p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
+   "text": "In the figure, the equation of the straight line $L$ is $ax + by + 15 = 0$. Which of the following are true?\n\u0001IMG0\u0001\nI. $a > b$\nII. $a > -3$\nIII. $b > -5$\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
+   "html": "<p>In the figure, the equation of the straight line $L$ is $ax + by + 15 = 0$. Which of the following are true?</p>\n<p><img alt=\"Figure Q23 (as printed)\" src=\"2019P2_figs/Q23.png\" /></p>\n<p>I. $a &gt; b$</p>\n<p>II. $a &gt; -3$</p>\n<p>III. $b &gt; -5$</p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
    "file": "2019_P2_題目英文卷.md"
   },
   {
@@ -13675,7 +13675,7 @@ window.QB = {
    "tags": [
     "求積法"
    ],
-   "text": "In the figure, $O$ is the centre of the sector $OABC$. It is given that $\\triangle OAB$ is an equilateral triangle. $AC$ and $OB$ intersect at the point $D$. If $OA = 12 \\text{ cm}$ and $\\angle AOC = 90^\\circ$, find the area of the shaded region $BCD$ correct to the nearest $\\text{cm}^2$.\n\n![Figure Q38 (as printed)](2019P2_figs/Q38.png)\n\n- A. $11 \\text{ cm}^2$\n- B. $16 \\text{ cm}^2$\n- C. $26 \\text{ cm}^2$\n- D. $38 \\text{ cm}^2$",
+   "text": "In the figure, $O$ is the centre of the sector $OABC$. It is given that $\\triangle OAB$ is an equilateral triangle. $AC$ and $OB$ intersect at the point $D$. If $OA = 12 \\text{ cm}$ and $\\angle AOC = 90^\\circ$, find the area of the shaded region $BCD$ correct to the nearest $\\text{cm}^2$.\n\u0001IMG0\u0001\n\n- A. $11 \\text{ cm}^2$\n- B. $16 \\text{ cm}^2$\n- C. $26 \\text{ cm}^2$\n- D. $38 \\text{ cm}^2$",
    "html": "<p>In the figure, $O$ is the centre of the sector $OABC$. It is given that $\\triangle OAB$ is an equilateral triangle. $AC$ and $OB$ intersect at the point $D$. If $OA = 12 \\text{ cm}$ and $\\angle AOC = 90^\\circ$, find the area of the shaded region $BCD$ correct to the nearest $\\text{cm}^2$.</p>\n<p><img alt=\"Figure Q38 (as printed)\" src=\"2019P2_figs/Q38.png\" /></p>\n<ul><li>A. $11 \\text{ cm}^2$</li><li>B. $16 \\text{ cm}^2$</li><li>C. $26 \\text{ cm}^2$</li><li>D. $38 \\text{ cm}^2$</li></ul>",
    "file": "2019_P2_題目英文卷.md"
   },
@@ -13691,7 +13691,7 @@ window.QB = {
     "圓的幾何",
     "相似三角形"
    ],
-   "text": "In the figure, $TA$ is the tangent to the circle $ABCDE$ at the point $A$. If $\\angle BAD = 64^\\circ$, $\\angle EAT = 38^\\circ$ and $\\angle DCE = 22^\\circ$, then $\\angle ADB =$\n\n![Figure Q39 (as printed)](2019P2_figs/Q39.png)\n\n- A. $52^\\circ$\n- B. $56^\\circ$\n- C. $60^\\circ$\n- D. $68^\\circ$",
+   "text": "In the figure, $TA$ is the tangent to the circle $ABCDE$ at the point $A$. If $\\angle BAD = 64^\\circ$, $\\angle EAT = 38^\\circ$ and $\\angle DCE = 22^\\circ$, then $\\angle ADB =$\n\u0001IMG0\u0001\n\n- A. $52^\\circ$\n- B. $56^\\circ$\n- C. $60^\\circ$\n- D. $68^\\circ$",
    "html": "<p>In the figure, $TA$ is the tangent to the circle $ABCDE$ at the point $A$. If $\\angle BAD = 64^\\circ$, $\\angle EAT = 38^\\circ$ and $\\angle DCE = 22^\\circ$, then $\\angle ADB =$</p>\n<p><img alt=\"Figure Q39 (as printed)\" src=\"2019P2_figs/Q39.png\" /></p>\n<ul><li>A. $52^\\circ$</li><li>B. $56^\\circ$</li><li>C. $60^\\circ$</li><li>D. $68^\\circ$</li></ul>",
    "file": "2019_P2_題目英文卷.md"
   },
@@ -13706,7 +13706,7 @@ window.QB = {
    "tags": [
     "立體幾何"
    ],
-   "text": "The figure shows a tetrahedron $PQRS$ with the base $QRS$ lying on the horizontal ground. It is given that $Q$ is vertically below $P$. If $\\angle PRQ = 47^\\circ$, $\\angle PSQ = 53^\\circ$ and $\\angle RQS = 120^\\circ$, find $\\angle RPS$ correct to the nearest degree.\n\n![Figure Q40 (as printed)](2019P2_figs/Q40.png)\n\n- A. $52^\\circ$\n- B. $60^\\circ$\n- C. $68^\\circ$\n- D. $76^\\circ$",
+   "text": "The figure shows a tetrahedron $PQRS$ with the base $QRS$ lying on the horizontal ground. It is given that $Q$ is vertically below $P$. If $\\angle PRQ = 47^\\circ$, $\\angle PSQ = 53^\\circ$ and $\\angle RQS = 120^\\circ$, find $\\angle RPS$ correct to the nearest degree.\n\u0001IMG0\u0001\n\n- A. $52^\\circ$\n- B. $60^\\circ$\n- C. $68^\\circ$\n- D. $76^\\circ$",
    "html": "<p>The figure shows a tetrahedron $PQRS$ with the base $QRS$ lying on the horizontal ground. It is given that $Q$ is vertically below $P$. If $\\angle PRQ = 47^\\circ$, $\\angle PSQ = 53^\\circ$ and $\\angle RQS = 120^\\circ$, find $\\angle RPS$ correct to the nearest degree.</p>\n<p><img alt=\"Figure Q40 (as printed)\" src=\"2019P2_figs/Q40.png\" /></p>\n<ul><li>A. $52^\\circ$</li><li>B. $60^\\circ$</li><li>C. $68^\\circ$</li><li>D. $76^\\circ$</li></ul>",
    "file": "2019_P2_題目英文卷.md"
   },
@@ -17324,7 +17324,7 @@ window.QB = {
    "tags": [
     "數列"
    ],
-   "text": "In the figure, the 1st pattern consists of 8 dots. For any positive integer $n$, the $(n+1)$th pattern is formed by adding $(2n+6)$ dots to the $n$th pattern. Find the number of dots in the 7th pattern.\n\n![Figure Q14 (as printed)](2022P2_figs/Q14.png)\n\n- A. 52\n- B. 68\n- C. 86\n- D. 106",
+   "text": "In the figure, the 1st pattern consists of 8 dots. For any positive integer $n$, the $(n+1)$th pattern is formed by adding $(2n+6)$ dots to the $n$th pattern. Find the number of dots in the 7th pattern.\n\u0001IMG0\u0001\n\n- A. 52\n- B. 68\n- C. 86\n- D. 106",
    "html": "<p>In the figure, the 1st pattern consists of 8 dots. For any positive integer $n$, the $(n+1)$th pattern is formed by adding $(2n+6)$ dots to the $n$th pattern. Find the number of dots in the 7th pattern.</p>\n<p><img alt=\"Figure Q14 (as printed)\" src=\"2022P2_figs/Q14.png\" /></p>\n<ul><li>A. 52</li><li>B. 68</li><li>C. 86</li><li>D. 106</li></ul>",
    "file": "2022_P2_題目英文卷.md"
   },
@@ -17370,7 +17370,7 @@ window.QB = {
    "tags": [
     "求積法"
    ],
-   "text": "In the figure, $M$ and $N$ are points lying on $PQ$ and $QR$ respectively such that $PM : MQ = 5 : 6$ and $QN : NR = 3 : 4$. If the area of the quadrilateral $MNRP$ is $59 \\text{ cm}^{2}$, then the area of $\\Delta MNQ$ is\n\n![Figure Q17 (as printed)](2022P2_figs/Q17.png)\n\n- A. $17 \\text{ cm}^{2}$\n- B. $18 \\text{ cm}^{2}$\n- C. $19 \\text{ cm}^{2}$\n- D. $20 \\text{ cm}^{2}$",
+   "text": "In the figure, $M$ and $N$ are points lying on $PQ$ and $QR$ respectively such that $PM : MQ = 5 : 6$ and $QN : NR = 3 : 4$. If the area of the quadrilateral $MNRP$ is $59 \\text{ cm}^{2}$, then the area of $\\Delta MNQ$ is\n\u0001IMG0\u0001\n\n- A. $17 \\text{ cm}^{2}$\n- B. $18 \\text{ cm}^{2}$\n- C. $19 \\text{ cm}^{2}$\n- D. $20 \\text{ cm}^{2}$",
    "html": "<p>In the figure, $M$ and $N$ are points lying on $PQ$ and $QR$ respectively such that $PM : MQ = 5 : 6$ and $QN : NR = 3 : 4$. If the area of the quadrilateral $MNRP$ is $59 \\text{ cm}^{2}$, then the area of $\\Delta MNQ$ is</p>\n<p><img alt=\"Figure Q17 (as printed)\" src=\"2022P2_figs/Q17.png\" /></p>\n<ul><li>A. $17 \\text{ cm}^{2}$</li><li>B. $18 \\text{ cm}^{2}$</li><li>C. $19 \\text{ cm}^{2}$</li><li>D. $20 \\text{ cm}^{2}$</li></ul>",
    "file": "2022_P2_題目英文卷.md"
   },
@@ -17385,7 +17385,7 @@ window.QB = {
    "tags": [
     "直線方程"
    ],
-   "text": "In the figure, the perimeter of the rectangle $ABCD$ is $170 \\text{ cm}$. It is given that $EBF$ is a straight line and $\\angle AEB = \\angle BFC = 90^{\\circ}$. If $AE = 24 \\text{ cm}$ and $BC = 34 \\text{ cm}$, then $EF =$\n\n![Figure Q18 (as printed)](2022P2_figs/Q18.png)\n\n- A. $45 \\text{ cm}$\n- B. $51 \\text{ cm}$\n- C. $61 \\text{ cm}$\n- D. $75 \\text{ cm}$",
+   "text": "In the figure, the perimeter of the rectangle $ABCD$ is $170 \\text{ cm}$. It is given that $EBF$ is a straight line and $\\angle AEB = \\angle BFC = 90^{\\circ}$. If $AE = 24 \\text{ cm}$ and $BC = 34 \\text{ cm}$, then $EF =$\n\u0001IMG0\u0001\n\n- A. $45 \\text{ cm}$\n- B. $51 \\text{ cm}$\n- C. $61 \\text{ cm}$\n- D. $75 \\text{ cm}$",
    "html": "<p>In the figure, the perimeter of the rectangle $ABCD$ is $170 \\text{ cm}$. It is given that $EBF$ is a straight line and $\\angle AEB = \\angle BFC = 90^{\\circ}$. If $AE = 24 \\text{ cm}$ and $BC = 34 \\text{ cm}$, then $EF =$</p>\n<p><img alt=\"Figure Q18 (as printed)\" src=\"2022P2_figs/Q18.png\" /></p>\n<ul><li>A. $45 \\text{ cm}$</li><li>B. $51 \\text{ cm}$</li><li>C. $61 \\text{ cm}$</li><li>D. $75 \\text{ cm}$</li></ul>",
    "file": "2022_P2_題目英文卷.md"
   },
@@ -17400,7 +17400,7 @@ window.QB = {
    "tags": [
     "相似三角形"
    ],
-   "text": "In the figure, $ABC$ is an equilateral triangle. Let $D$ and $E$ be points lying on $AC$ and $BC$ respectively such that $AD = CE$. If $\\angle CBD = 38^\\circ$, then $\\angle AEB =$\n\n![Figure Q19 (as printed)](2022P2_figs/Q19.png)\n\n- A. $73^\\circ$.\n- B. $75^\\circ$.\n- C. $78^\\circ$.\n- D. $82^\\circ$.",
+   "text": "In the figure, $ABC$ is an equilateral triangle. Let $D$ and $E$ be points lying on $AC$ and $BC$ respectively such that $AD = CE$. If $\\angle CBD = 38^\\circ$, then $\\angle AEB =$\n\u0001IMG0\u0001\n\n- A. $73^\\circ$.\n- B. $75^\\circ$.\n- C. $78^\\circ$.\n- D. $82^\\circ$.",
    "html": "<p>In the figure, $ABC$ is an equilateral triangle. Let $D$ and $E$ be points lying on $AC$ and $BC$ respectively such that $AD = CE$. If $\\angle CBD = 38^\\circ$, then $\\angle AEB =$</p>\n<p><img alt=\"Figure Q19 (as printed)\" src=\"2022P2_figs/Q19.png\" /></p>\n<ul><li>A. $73^\\circ$.</li><li>B. $75^\\circ$.</li><li>C. $78^\\circ$.</li><li>D. $82^\\circ$.</li></ul>",
    "file": "2022_P2_題目英文卷.md"
   },
@@ -17415,8 +17415,8 @@ window.QB = {
    "tags": [
     "平面幾何"
    ],
-   "text": "The figure shows a parallelogram. Which of the following must be true?\nI. $a + b = 180^\\circ$\nII. $b + c = 360^\\circ$\nIII. $c + d = 540^\\circ$\n\n![Figure Q20 (as printed)](2022P2_figs/Q20.png)\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
-   "html": "<p>The figure shows a parallelogram. Which of the following must be true?</p>\n<p>I. $a + b = 180^\\circ$</p>\n<p>II. $b + c = 360^\\circ$</p>\n<p>III. $c + d = 540^\\circ$</p>\n<p><img alt=\"Figure Q20 (as printed)\" src=\"2022P2_figs/Q20.png\" /></p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
+   "text": "The figure shows a parallelogram. Which of the following must be true?\n\u0001IMG0\u0001\nI. $a + b = 180^\\circ$\nII. $b + c = 360^\\circ$\nIII. $c + d = 540^\\circ$\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
+   "html": "<p>The figure shows a parallelogram. Which of the following must be true?</p>\n<p><img alt=\"Figure Q20 (as printed)\" src=\"2022P2_figs/Q20.png\" /></p>\n<p>I. $a + b = 180^\\circ$</p>\n<p>II. $b + c = 360^\\circ$</p>\n<p>III. $c + d = 540^\\circ$</p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
    "file": "2022_P2_題目英文卷.md"
   },
   {
@@ -17430,7 +17430,7 @@ window.QB = {
    "tags": [
     "圓的幾何"
    ],
-   "text": "In the figure, $O$ is the centre of the circle $ABC$. If $\\angle ABO = 36^\\circ$ and $\\angle BOC = 164^\\circ$, then $\\angle ACO =$\n\n![Figure Q21 (as printed)](2022P2_figs/Q21.png)\n\n- A. $41^\\circ$.\n- B. $46^\\circ$.\n- C. $52^\\circ$.\n- D. $64^\\circ$. Go on to the next page",
+   "text": "In the figure, $O$ is the centre of the circle $ABC$. If $\\angle ABO = 36^\\circ$ and $\\angle BOC = 164^\\circ$, then $\\angle ACO =$\n\u0001IMG0\u0001\n\n- A. $41^\\circ$.\n- B. $46^\\circ$.\n- C. $52^\\circ$.\n- D. $64^\\circ$. Go on to the next page",
    "html": "<p>In the figure, $O$ is the centre of the circle $ABC$. If $\\angle ABO = 36^\\circ$ and $\\angle BOC = 164^\\circ$, then $\\angle ACO =$</p>\n<p><img alt=\"Figure Q21 (as printed)\" src=\"2022P2_figs/Q21.png\" /></p>\n<ul><li>A. $41^\\circ$.</li><li>B. $46^\\circ$.</li><li>C. $52^\\circ$.</li><li>D. $64^\\circ$. Go on to the next page</li></ul>",
    "file": "2022_P2_題目英文卷.md"
   },
@@ -17445,7 +17445,7 @@ window.QB = {
    "tags": [
     "相似三角形"
    ],
-   "text": "In the figure, $ABC$ is a right-angled triangle with $\\angle ABC = 90^\\circ$. Let $D$ and $E$ be points lying on $AC$ and $BC$ respectively such that $ABED$ is a cyclic quadrilateral. If $AB = 660 \\text{ cm}$, $AD = 572 \\text{ cm}$ and $BE = 275 \\text{ cm}$, then $CD =$\n\n![Figure Q22 (as printed)](2022P2_figs/Q22.png)\n\n- A. $429 \\text{ cm}$.\n- B. $715 \\text{ cm}$.\n- C. $728 \\text{ cm}$.\n- D. $845 \\text{ cm}$.",
+   "text": "In the figure, $ABC$ is a right-angled triangle with $\\angle ABC = 90^\\circ$. Let $D$ and $E$ be points lying on $AC$ and $BC$ respectively such that $ABED$ is a cyclic quadrilateral. If $AB = 660 \\text{ cm}$, $AD = 572 \\text{ cm}$ and $BE = 275 \\text{ cm}$, then $CD =$\n\u0001IMG0\u0001\n\n- A. $429 \\text{ cm}$.\n- B. $715 \\text{ cm}$.\n- C. $728 \\text{ cm}$.\n- D. $845 \\text{ cm}$.",
    "html": "<p>In the figure, $ABC$ is a right-angled triangle with $\\angle ABC = 90^\\circ$. Let $D$ and $E$ be points lying on $AC$ and $BC$ respectively such that $ABED$ is a cyclic quadrilateral. If $AB = 660 \\text{ cm}$, $AD = 572 \\text{ cm}$ and $BE = 275 \\text{ cm}$, then $CD =$</p>\n<p><img alt=\"Figure Q22 (as printed)\" src=\"2022P2_figs/Q22.png\" /></p>\n<ul><li>A. $429 \\text{ cm}$.</li><li>B. $715 \\text{ cm}$.</li><li>C. $728 \\text{ cm}$.</li><li>D. $845 \\text{ cm}$.</li></ul>",
    "file": "2022_P2_題目英文卷.md"
   },
@@ -17476,8 +17476,8 @@ window.QB = {
    "tags": [
     "直線方程"
    ],
-   "text": "The figure shows the graph of the straight line $mx + ny = 3$. Which of the following are true?\nI. $m <0$\nII. $n >3$\nIII. $m + n = 0$\n\n![Figure Q24 (as printed)](2022P2_figs/Q24.png)\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
-   "html": "<p>The figure shows the graph of the straight line $mx + ny = 3$. Which of the following are true?</p>\n<p>I. $m &lt;0$</p>\n<p>II. $n &gt;3$</p>\n<p>III. $m + n = 0$</p>\n<p><img alt=\"Figure Q24 (as printed)\" src=\"2022P2_figs/Q24.png\" /></p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
+   "text": "The figure shows the graph of the straight line $mx + ny = 3$. Which of the following are true?\n\u0001IMG0\u0001\nI. $m <0$\nII. $n >3$\nIII. $m + n = 0$\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
+   "html": "<p>The figure shows the graph of the straight line $mx + ny = 3$. Which of the following are true?</p>\n<p><img alt=\"Figure Q24 (as printed)\" src=\"2022P2_figs/Q24.png\" /></p>\n<p>I. $m &lt;0$</p>\n<p>II. $n &gt;3$</p>\n<p>III. $m + n = 0$</p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
    "file": "2022_P2_題目英文卷.md"
   },
   {
@@ -17690,7 +17690,7 @@ window.QB = {
    "tags": [
     "圓的幾何"
    ],
-   "text": "In the figure, $ABCD$ is a circle. $PA$ and $QB$ are the tangents to the circle at $A$ and $B$ respectively. If $\\angle ADC = 79^{\\circ}$, $\\angle CBQ = 39^{\\circ}$ and $\\angle DAP = 42^{\\circ}$, then $\\angle BCD =$\n\n![Figure Q38 (as printed)](2022P2_figs/Q38.png)\n\n- A. $76^{\\circ}$\n- B. $79^{\\circ}$\n- C. $81^{\\circ}$\n- D. $82^{\\circ}$",
+   "text": "In the figure, $ABCD$ is a circle. $PA$ and $QB$ are the tangents to the circle at $A$ and $B$ respectively. If $\\angle ADC = 79^{\\circ}$, $\\angle CBQ = 39^{\\circ}$ and $\\angle DAP = 42^{\\circ}$, then $\\angle BCD =$\n\u0001IMG0\u0001\n\n- A. $76^{\\circ}$\n- B. $79^{\\circ}$\n- C. $81^{\\circ}$\n- D. $82^{\\circ}$",
    "html": "<p>In the figure, $ABCD$ is a circle. $PA$ and $QB$ are the tangents to the circle at $A$ and $B$ respectively. If $\\angle ADC = 79^{\\circ}$, $\\angle CBQ = 39^{\\circ}$ and $\\angle DAP = 42^{\\circ}$, then $\\angle BCD =$</p>\n<p><img alt=\"Figure Q38 (as printed)\" src=\"2022P2_figs/Q38.png\" /></p>\n<ul><li>A. $76^{\\circ}$</li><li>B. $79^{\\circ}$</li><li>C. $81^{\\circ}$</li><li>D. $82^{\\circ}$</li></ul>",
    "file": "2022_P2_題目英文卷.md"
   },
@@ -17720,7 +17720,7 @@ window.QB = {
    "tags": [
     "立體幾何"
    ],
-   "text": "In the figure, $ABCDEFGH$ is a cube. Let $\\alpha$ be the angle between $\\triangle AFG$ and $\\triangle AFH$ while $\\beta$ be the angle between $\\triangle AFH$ and $\\triangle FGH$. Which of the following is true?\n\n![Figure Q40 (as printed)](2022P2_figs/Q40.png)\n\n- A. $\\alpha <60^\\circ < \\beta$\n- B. $\\alpha < \\beta <60^\\circ$\n- C. $60^\\circ < \\alpha < \\beta$\n- D. $60^\\circ < \\beta < \\alpha$",
+   "text": "In the figure, $ABCDEFGH$ is a cube. Let $\\alpha$ be the angle between $\\triangle AFG$ and $\\triangle AFH$ while $\\beta$ be the angle between $\\triangle AFH$ and $\\triangle FGH$. Which of the following is true?\n\u0001IMG0\u0001\n\n- A. $\\alpha <60^\\circ < \\beta$\n- B. $\\alpha < \\beta <60^\\circ$\n- C. $60^\\circ < \\alpha < \\beta$\n- D. $60^\\circ < \\beta < \\alpha$",
    "html": "<p>In the figure, $ABCDEFGH$ is a cube. Let $\\alpha$ be the angle between $\\triangle AFG$ and $\\triangle AFH$ while $\\beta$ be the angle between $\\triangle AFH$ and $\\triangle FGH$. Which of the following is true?</p>\n<p><img alt=\"Figure Q40 (as printed)\" src=\"2022P2_figs/Q40.png\" /></p>\n<ul><li>A. $\\alpha &lt;60^\\circ &lt; \\beta$</li><li>B. $\\alpha &lt; \\beta &lt;60^\\circ$</li><li>C. $60^\\circ &lt; \\alpha &lt; \\beta$</li><li>D. $60^\\circ &lt; \\beta &lt; \\alpha$</li></ul>",
    "file": "2022_P2_題目英文卷.md"
   },
@@ -19770,7 +19770,7 @@ window.QB = {
     "相似三角形",
     "求積法"
    ],
-   "text": "In the figure, $AC$ is a diameter of the circle $ABCD$ while $BD$ and $EF$ are diameters of the circle $BEDF$. It is given that $C$ and $E$ lie on $AF$. Let $G$ be the point of intersection of $AF$ and $BD$. If $AG=30\\text{ cm}$ and $CG=10\\text{ cm}$, find the area of the shaded region correct to the nearest $\\text{ cm}^2$.\n\n![Figure Q16 (as printed)](2023P2_figs/Q16.png)\n\n- A. $209\\text{ cm}^2$\n- B. $367\\text{ cm}^2$\n- C. $383\\text{ cm}^2$\n- D. $540\\text{ cm}^2$",
+   "text": "In the figure, $AC$ is a diameter of the circle $ABCD$ while $BD$ and $EF$ are diameters of the circle $BEDF$. It is given that $C$ and $E$ lie on $AF$. Let $G$ be the point of intersection of $AF$ and $BD$. If $AG=30\\text{ cm}$ and $CG=10\\text{ cm}$, find the area of the shaded region correct to the nearest $\\text{ cm}^2$.\n\u0001IMG0\u0001\n\n- A. $209\\text{ cm}^2$\n- B. $367\\text{ cm}^2$\n- C. $383\\text{ cm}^2$\n- D. $540\\text{ cm}^2$",
    "html": "<p>In the figure, $AC$ is a diameter of the circle $ABCD$ while $BD$ and $EF$ are diameters of the circle $BEDF$. It is given that $C$ and $E$ lie on $AF$. Let $G$ be the point of intersection of $AF$ and $BD$. If $AG=30\\text{ cm}$ and $CG=10\\text{ cm}$, find the area of the shaded region correct to the nearest $\\text{ cm}^2$.</p>\n<p><img alt=\"Figure Q16 (as printed)\" src=\"2023P2_figs/Q16.png\" /></p>\n<ul><li>A. $209\\text{ cm}^2$</li><li>B. $367\\text{ cm}^2$</li><li>C. $383\\text{ cm}^2$</li><li>D. $540\\text{ cm}^2$</li></ul>",
    "file": "2023_P2_題目英文卷.md"
   },
@@ -19785,7 +19785,7 @@ window.QB = {
    "tags": [
     "求積法"
    ],
-   "text": "In the figure, $PQRS$ is a parallelogram. Let $X$ be a point lying on $PQ$. Denote the point of intersection of $PR$ and $SX$ by $Y$. If the area of $\\triangle PXY$ and the area of the quadrilateral $QRYX$ are $32\\text{ cm}^2$ and $58\\text{ cm}^2$ respectively, then the area of $\\triangle RSY$ is\n\n![Figure Q17 (as printed)](2023P2_figs/Q17.png)\n\n- A. $40\\text{ cm}^2$\n- B. $50\\text{ cm}^2$\n- C. $58\\text{ cm}^2$\n- D. $72\\text{ cm}^2$",
+   "text": "In the figure, $PQRS$ is a parallelogram. Let $X$ be a point lying on $PQ$. Denote the point of intersection of $PR$ and $SX$ by $Y$. If the area of $\\triangle PXY$ and the area of the quadrilateral $QRYX$ are $32\\text{ cm}^2$ and $58\\text{ cm}^2$ respectively, then the area of $\\triangle RSY$ is\n\u0001IMG0\u0001\n\n- A. $40\\text{ cm}^2$\n- B. $50\\text{ cm}^2$\n- C. $58\\text{ cm}^2$\n- D. $72\\text{ cm}^2$",
    "html": "<p>In the figure, $PQRS$ is a parallelogram. Let $X$ be a point lying on $PQ$. Denote the point of intersection of $PR$ and $SX$ by $Y$. If the area of $\\triangle PXY$ and the area of the quadrilateral $QRYX$ are $32\\text{ cm}^2$ and $58\\text{ cm}^2$ respectively, then the area of $\\triangle RSY$ is</p>\n<p><img alt=\"Figure Q17 (as printed)\" src=\"2023P2_figs/Q17.png\" /></p>\n<ul><li>A. $40\\text{ cm}^2$</li><li>B. $50\\text{ cm}^2$</li><li>C. $58\\text{ cm}^2$</li><li>D. $72\\text{ cm}^2$</li></ul>",
    "file": "2023_P2_題目英文卷.md"
   },
@@ -19800,8 +19800,8 @@ window.QB = {
    "tags": [
     "相似三角形"
    ],
-   "text": "According to the figure, which of the following must be true\nI. $a+b=90^\\circ$\nII. $c+d=180^\\circ$\nIII. $a+b+c=d$\n\n![Figure Q18 (as printed)](2023P2_figs/Q18.png)\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
-   "html": "<p>According to the figure, which of the following must be true</p>\n<p>I. $a+b=90^\\circ$</p>\n<p>II. $c+d=180^\\circ$</p>\n<p>III. $a+b+c=d$</p>\n<p><img alt=\"Figure Q18 (as printed)\" src=\"2023P2_figs/Q18.png\" /></p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
+   "text": "According to the figure, which of the following must be true\n\u0001IMG0\u0001\nI. $a+b=90^\\circ$\nII. $c+d=180^\\circ$\nIII. $a+b+c=d$\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
+   "html": "<p>According to the figure, which of the following must be true</p>\n<p><img alt=\"Figure Q18 (as printed)\" src=\"2023P2_figs/Q18.png\" /></p>\n<p>I. $a+b=90^\\circ$</p>\n<p>II. $c+d=180^\\circ$</p>\n<p>III. $a+b+c=d$</p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
    "file": "2023_P2_題目英文卷.md"
   },
   {
@@ -19831,7 +19831,7 @@ window.QB = {
    "tags": [
     "平面幾何"
    ],
-   "text": "The figure shows the square $ABCD$, the regular pentagon $ADEFG$ and the regular hexagon $AGHIJK$. Find $\\angle ABK$.\n\n![Figure Q20 (as printed)](2023P2_figs/Q20.png)\n\n- A. $69^\\circ$\n- B. $72^\\circ$\n- C. $74^\\circ$\n- D. $75^\\circ$",
+   "text": "The figure shows the square $ABCD$, the regular pentagon $ADEFG$ and the regular hexagon $AGHIJK$. Find $\\angle ABK$.\n\u0001IMG0\u0001\n\n- A. $69^\\circ$\n- B. $72^\\circ$\n- C. $74^\\circ$\n- D. $75^\\circ$",
    "html": "<p>The figure shows the square $ABCD$, the regular pentagon $ADEFG$ and the regular hexagon $AGHIJK$. Find $\\angle ABK$.</p>\n<p><img alt=\"Figure Q20 (as printed)\" src=\"2023P2_figs/Q20.png\" /></p>\n<ul><li>A. $69^\\circ$</li><li>B. $72^\\circ$</li><li>C. $74^\\circ$</li><li>D. $75^\\circ$</li></ul>",
    "file": "2023_P2_題目英文卷.md"
   },
@@ -19846,7 +19846,7 @@ window.QB = {
    "tags": [
     "相似三角形"
    ],
-   "text": "In the figure, $PQRS$ is a rectangle. Let $T$ be a point lying on $QR$ such that $\\angle PTS = 90^\\circ$. $PQ$ produced and $ST$ produced meet at the point $U$. $PT$ is produced to the point $V$ such that $RT = RV$. Which of the following must be true?\n\n![Figure Q21 (as printed)](2023P2_figs/Q21.png)\n\n- A. $RV \\parallel ST$\n- B. $\\angle PTQ = \\angle RTS$\n- C. $\\triangle PST \\sim \\triangle UTQ$\n- D. $\\triangle PQT \\cong \\triangle TRS$",
+   "text": "In the figure, $PQRS$ is a rectangle. Let $T$ be a point lying on $QR$ such that $\\angle PTS = 90^\\circ$. $PQ$ produced and $ST$ produced meet at the point $U$. $PT$ is produced to the point $V$ such that $RT = RV$. Which of the following must be true?\n\u0001IMG0\u0001\n\n- A. $RV \\parallel ST$\n- B. $\\angle PTQ = \\angle RTS$\n- C. $\\triangle PST \\sim \\triangle UTQ$\n- D. $\\triangle PQT \\cong \\triangle TRS$",
    "html": "<p>In the figure, $PQRS$ is a rectangle. Let $T$ be a point lying on $QR$ such that $\\angle PTS = 90^\\circ$. $PQ$ produced and $ST$ produced meet at the point $U$. $PT$ is produced to the point $V$ such that $RT = RV$. Which of the following must be true?</p>\n<p><img alt=\"Figure Q21 (as printed)\" src=\"2023P2_figs/Q21.png\" /></p>\n<ul><li>A. $RV \\parallel ST$</li><li>B. $\\angle PTQ = \\angle RTS$</li><li>C. $\\triangle PST \\sim \\triangle UTQ$</li><li>D. $\\triangle PQT \\cong \\triangle TRS$</li></ul>",
    "file": "2023_P2_題目英文卷.md"
   },
@@ -19862,7 +19862,7 @@ window.QB = {
     "相似三角形",
     "圓的幾何"
    ],
-   "text": "The figure shows the cyclic quadrilateral $RSTU$, where $ST= TU$. $RS$ produced and $UT$ produced meet at the point $V$ while $RU$ produced and $ST$ produced meet at the point $W$. If $\\angle RWS=32^\\circ$ and $\\angle RVU=48^\\circ$, then $\\angle RSU=$\n\n![Figure Q22 (as printed)](2023P2_figs/Q22.png)\n\n- A. $65^\\circ$.\n- B. $73^\\circ$.\n- C. $80^\\circ$.\n- D. $82^\\circ$.",
+   "text": "The figure shows the cyclic quadrilateral $RSTU$, where $ST= TU$. $RS$ produced and $UT$ produced meet at the point $V$ while $RU$ produced and $ST$ produced meet at the point $W$. If $\\angle RWS=32^\\circ$ and $\\angle RVU=48^\\circ$, then $\\angle RSU=$\n\u0001IMG0\u0001\n\n- A. $65^\\circ$.\n- B. $73^\\circ$.\n- C. $80^\\circ$.\n- D. $82^\\circ$.",
    "html": "<p>The figure shows the cyclic quadrilateral $RSTU$, where $ST= TU$. $RS$ produced and $UT$ produced meet at the point $V$ while $RU$ produced and $ST$ produced meet at the point $W$. If $\\angle RWS=32^\\circ$ and $\\angle RVU=48^\\circ$, then $\\angle RSU=$</p>\n<p><img alt=\"Figure Q22 (as printed)\" src=\"2023P2_figs/Q22.png\" /></p>\n<ul><li>A. $65^\\circ$.</li><li>B. $73^\\circ$.</li><li>C. $80^\\circ$.</li><li>D. $82^\\circ$.</li></ul>",
    "file": "2023_P2_題目英文卷.md"
   },
@@ -19877,7 +19877,7 @@ window.QB = {
    "tags": [
     "相似三角形"
    ],
-   "text": "In the figure, $ABCD$ is a trapezium with $AD//BC$. Let $E$ be the mid-point of $AD$. It is given that $\\angle ABE=\\angle BCE=90^\\circ$. Find $\\dfrac{CE}{DE}$.\n\n![Figure Q23 (as printed)](2023P2_figs/Q23.png)\n\n- A. $\\dfrac{1}{2}$\n- B. 1\n- C. $\\tan\\alpha$\n- D. $\\sin\\alpha\\cos\\alpha$",
+   "text": "In the figure, $ABCD$ is a trapezium with $AD//BC$. Let $E$ be the mid-point of $AD$. It is given that $\\angle ABE=\\angle BCE=90^\\circ$. Find $\\dfrac{CE}{DE}$.\n\u0001IMG0\u0001\n\n- A. $\\dfrac{1}{2}$\n- B. 1\n- C. $\\tan\\alpha$\n- D. $\\sin\\alpha\\cos\\alpha$",
    "html": "<p>In the figure, $ABCD$ is a trapezium with $AD//BC$. Let $E$ be the mid-point of $AD$. It is given that $\\angle ABE=\\angle BCE=90^\\circ$. Find $\\dfrac{CE}{DE}$.</p>\n<p><img alt=\"Figure Q23 (as printed)\" src=\"2023P2_figs/Q23.png\" /></p>\n<ul><li>A. $\\dfrac{1}{2}$</li><li>B. 1</li><li>C. $\\tan\\alpha$</li><li>D. $\\sin\\alpha\\cos\\alpha$</li></ul>",
    "file": "2023_P2_題目英文卷.md"
   },
@@ -19971,7 +19971,7 @@ window.QB = {
     "框線圖",
     "統計"
    ],
-   "text": "The box-and-whisker diagram below shows the distribution of the numbers of training hours of some engineers in a year. Find the upper quartile of the distribution.\n\n![Figure Q29 (as printed)](2023P2_figs/Q29.png)\n\n- A. 20\n- B. 40\n- C. 60\n- D. 70",
+   "text": "The box-and-whisker diagram below shows the distribution of the numbers of training hours of some engineers in a year. Find the upper quartile of the distribution.\n\u0001IMG0\u0001\n\n- A. 20\n- B. 40\n- C. 60\n- D. 70",
    "html": "<p>The box-and-whisker diagram below shows the distribution of the numbers of training hours of some engineers in a year. Find the upper quartile of the distribution.</p>\n<p><img alt=\"Figure Q29 (as printed)\" src=\"2023P2_figs/Q29.png\" /></p>\n<ul><li>A. 20</li><li>B. 40</li><li>C. 60</li><li>D. 70</li></ul>",
    "file": "2023_P2_題目英文卷.md"
   },
@@ -20110,7 +20110,7 @@ window.QB = {
     "相似三角形",
     "圓的幾何"
    ],
-   "text": "In the figure, $P$, $Q$ and $R$ are points lying on a circle. $ST$, $TU$ and $SU$ are the tangents to the circle at $P$, $Q$ and $R$ respectively. $RQ$ produced and $ST$ produced meet at the point $V$. If $\\angle PSR = 34^\\circ$ and $\\angle QPT = 46^\\circ$, then $\\angle PVQ =$\n\n![Figure Q38 (as printed)](2023P2_figs/Q38.png)\n\n- A. $17^\\circ$\n- B. $22^\\circ$\n- C. $27^\\circ$\n- D. $28^\\circ$",
+   "text": "In the figure, $P$, $Q$ and $R$ are points lying on a circle. $ST$, $TU$ and $SU$ are the tangents to the circle at $P$, $Q$ and $R$ respectively. $RQ$ produced and $ST$ produced meet at the point $V$. If $\\angle PSR = 34^\\circ$ and $\\angle QPT = 46^\\circ$, then $\\angle PVQ =$\n\u0001IMG0\u0001\n\n- A. $17^\\circ$\n- B. $22^\\circ$\n- C. $27^\\circ$\n- D. $28^\\circ$",
    "html": "<p>In the figure, $P$, $Q$ and $R$ are points lying on a circle. $ST$, $TU$ and $SU$ are the tangents to the circle at $P$, $Q$ and $R$ respectively. $RQ$ produced and $ST$ produced meet at the point $V$. If $\\angle PSR = 34^\\circ$ and $\\angle QPT = 46^\\circ$, then $\\angle PVQ =$</p>\n<p><img alt=\"Figure Q38 (as printed)\" src=\"2023P2_figs/Q38.png\" /></p>\n<ul><li>A. $17^\\circ$</li><li>B. $22^\\circ$</li><li>C. $27^\\circ$</li><li>D. $28^\\circ$</li></ul>",
    "file": "2023_P2_題目英文卷.md"
   },

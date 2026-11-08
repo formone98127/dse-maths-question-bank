@@ -1,5 +1,5 @@
 window.QB = {
- "generated": "2026-11-08 13:49",
+ "generated": "2026-11-08 13:51",
  "count": 1369,
  "questions": [
   {
@@ -19085,8 +19085,8 @@ window.QB = {
     "相似三角形",
     "求積法"
    ],
-   "text": "In the figure, $AC$ is a diameter of the circle $ABCD$ while $BD$ and $EF$ are diameters of the circle $BEDF$. It is given that $C$ and $E$ lie on $AF$. Let $G$ be the point of intersection of $AF$ and $BD$. If $AG=30\\text{ cm}$ and $CG=10\\text{ cm}$, find the area of the shaded region correct to the nearest $\\text{ cm}^2$.\n\n![Figure Q16 (as printed)](2023_P2_figs/Q16.png)\n\n- A. $209\\text{ cm}^2$\n- B. $367\\text{ cm}^2$\n- C. $383\\text{ cm}^2$\n- D. $540\\text{ cm}^2$",
-   "html": "<p>In the figure, $AC$ is a diameter of the circle $ABCD$ while $BD$ and $EF$ are diameters of the circle $BEDF$. It is given that $C$ and $E$ lie on $AF$. Let $G$ be the point of intersection of $AF$ and $BD$. If $AG=30\\text{ cm}$ and $CG=10\\text{ cm}$, find the area of the shaded region correct to the nearest $\\text{ cm}^2$.</p>\n<p><img alt=\"Figure Q16 (as printed)\" src=\"2023_P2_figs/Q16.png\" /></p>\n<ul><li>A. $209\\text{ cm}^2$</li><li>B. $367\\text{ cm}^2$</li><li>C. $383\\text{ cm}^2$</li><li>D. $540\\text{ cm}^2$</li></ul>",
+   "text": "In the figure, $AC$ is a diameter of the circle $ABCD$ while $BD$ and $EF$ are diameters of the circle $BEDF$. It is given that $C$ and $E$ lie on $AF$. Let $G$ be the point of intersection of $AF$ and $BD$. If $AG=30\\text{ cm}$ and $CG=10\\text{ cm}$, find the area of the shaded region correct to the nearest $\\text{ cm}^2$.\n\n![Figure Q16 (as printed)](2023P2_figs/Q16.png)\n\n- A. $209\\text{ cm}^2$\n- B. $367\\text{ cm}^2$\n- C. $383\\text{ cm}^2$\n- D. $540\\text{ cm}^2$",
+   "html": "<p>In the figure, $AC$ is a diameter of the circle $ABCD$ while $BD$ and $EF$ are diameters of the circle $BEDF$. It is given that $C$ and $E$ lie on $AF$. Let $G$ be the point of intersection of $AF$ and $BD$. If $AG=30\\text{ cm}$ and $CG=10\\text{ cm}$, find the area of the shaded region correct to the nearest $\\text{ cm}^2$.</p>\n<p><img alt=\"Figure Q16 (as printed)\" src=\"2023P2_figs/Q16.png\" /></p>\n<ul><li>A. $209\\text{ cm}^2$</li><li>B. $367\\text{ cm}^2$</li><li>C. $383\\text{ cm}^2$</li><li>D. $540\\text{ cm}^2$</li></ul>",
    "file": "2023_P2_題目英文卷.md"
   },
   {
@@ -19100,8 +19100,8 @@ window.QB = {
    "tags": [
     "求積法"
    ],
-   "text": "In the figure, $PQRS$ is a parallelogram. Let $X$ be a point lying on $PQ$. Denote the point of intersection of $PR$ and $SX$ by $Y$. If the area of $\\triangle PXY$ and the area of the quadrilateral $QRYX$ are $32\\text{ cm}^2$ and $58\\text{ cm}^2$ respectively, then the area of $\\triangle RSY$ is\n\n![Figure Q17 (as printed)](2023_P2_figs/Q17.png)\n\n- A. $40\\text{ cm}^2$\n- B. $50\\text{ cm}^2$\n- C. $58\\text{ cm}^2$\n- D. $72\\text{ cm}^2$",
-   "html": "<p>In the figure, $PQRS$ is a parallelogram. Let $X$ be a point lying on $PQ$. Denote the point of intersection of $PR$ and $SX$ by $Y$. If the area of $\\triangle PXY$ and the area of the quadrilateral $QRYX$ are $32\\text{ cm}^2$ and $58\\text{ cm}^2$ respectively, then the area of $\\triangle RSY$ is</p>\n<p><img alt=\"Figure Q17 (as printed)\" src=\"2023_P2_figs/Q17.png\" /></p>\n<ul><li>A. $40\\text{ cm}^2$</li><li>B. $50\\text{ cm}^2$</li><li>C. $58\\text{ cm}^2$</li><li>D. $72\\text{ cm}^2$</li></ul>",
+   "text": "In the figure, $PQRS$ is a parallelogram. Let $X$ be a point lying on $PQ$. Denote the point of intersection of $PR$ and $SX$ by $Y$. If the area of $\\triangle PXY$ and the area of the quadrilateral $QRYX$ are $32\\text{ cm}^2$ and $58\\text{ cm}^2$ respectively, then the area of $\\triangle RSY$ is\n\n![Figure Q17 (as printed)](2023P2_figs/Q17.png)\n\n- A. $40\\text{ cm}^2$\n- B. $50\\text{ cm}^2$\n- C. $58\\text{ cm}^2$\n- D. $72\\text{ cm}^2$",
+   "html": "<p>In the figure, $PQRS$ is a parallelogram. Let $X$ be a point lying on $PQ$. Denote the point of intersection of $PR$ and $SX$ by $Y$. If the area of $\\triangle PXY$ and the area of the quadrilateral $QRYX$ are $32\\text{ cm}^2$ and $58\\text{ cm}^2$ respectively, then the area of $\\triangle RSY$ is</p>\n<p><img alt=\"Figure Q17 (as printed)\" src=\"2023P2_figs/Q17.png\" /></p>\n<ul><li>A. $40\\text{ cm}^2$</li><li>B. $50\\text{ cm}^2$</li><li>C. $58\\text{ cm}^2$</li><li>D. $72\\text{ cm}^2$</li></ul>",
    "file": "2023_P2_題目英文卷.md"
   },
   {
@@ -19115,8 +19115,8 @@ window.QB = {
    "tags": [
     "相似三角形"
    ],
-   "text": "According to the figure, which of the following must be true\nI. $a+b=90^\\circ$\nII. $c+d=180^\\circ$\nIII. $a+b+c=d$\n\n![Figure Q18 (as printed)](2023_P2_figs/Q18.png)\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
-   "html": "<p>According to the figure, which of the following must be true I. $a+b=90^\\circ$ II. $c+d=180^\\circ$ III. $a+b+c=d$</p>\n<p><img alt=\"Figure Q18 (as printed)\" src=\"2023_P2_figs/Q18.png\" /></p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
+   "text": "According to the figure, which of the following must be true\nI. $a+b=90^\\circ$\nII. $c+d=180^\\circ$\nIII. $a+b+c=d$\n\n![Figure Q18 (as printed)](2023P2_figs/Q18.png)\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
+   "html": "<p>According to the figure, which of the following must be true I. $a+b=90^\\circ$ II. $c+d=180^\\circ$ III. $a+b+c=d$</p>\n<p><img alt=\"Figure Q18 (as printed)\" src=\"2023P2_figs/Q18.png\" /></p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
    "file": "2023_P2_題目英文卷.md"
   },
   {
@@ -19146,8 +19146,8 @@ window.QB = {
    "tags": [
     "平面幾何"
    ],
-   "text": "The figure shows the square $ABCD$, the regular pentagon $ADEFG$ and the regular hexagon $AGHIJK$. Find $\\angle ABK$.\n\n![Figure Q20 (as printed)](2023_P2_figs/Q20.png)\n\n- A. $69^\\circ$\n- B. $72^\\circ$\n- C. $74^\\circ$\n- D. $75^\\circ$",
-   "html": "<p>The figure shows the square $ABCD$, the regular pentagon $ADEFG$ and the regular hexagon $AGHIJK$. Find $\\angle ABK$.</p>\n<p><img alt=\"Figure Q20 (as printed)\" src=\"2023_P2_figs/Q20.png\" /></p>\n<ul><li>A. $69^\\circ$</li><li>B. $72^\\circ$</li><li>C. $74^\\circ$</li><li>D. $75^\\circ$</li></ul>",
+   "text": "The figure shows the square $ABCD$, the regular pentagon $ADEFG$ and the regular hexagon $AGHIJK$. Find $\\angle ABK$.\n\n![Figure Q20 (as printed)](2023P2_figs/Q20.png)\n\n- A. $69^\\circ$\n- B. $72^\\circ$\n- C. $74^\\circ$\n- D. $75^\\circ$",
+   "html": "<p>The figure shows the square $ABCD$, the regular pentagon $ADEFG$ and the regular hexagon $AGHIJK$. Find $\\angle ABK$.</p>\n<p><img alt=\"Figure Q20 (as printed)\" src=\"2023P2_figs/Q20.png\" /></p>\n<ul><li>A. $69^\\circ$</li><li>B. $72^\\circ$</li><li>C. $74^\\circ$</li><li>D. $75^\\circ$</li></ul>",
    "file": "2023_P2_題目英文卷.md"
   },
   {
@@ -19161,8 +19161,8 @@ window.QB = {
    "tags": [
     "相似三角形"
    ],
-   "text": "In the figure, $PQRS$ is a rectangle. Let $T$ be a point lying on $QR$ such that $\\angle PTS = 90^\\circ$. $PQ$ produced and $ST$ produced meet at the point $U$. $PT$ is produced to the point $V$ such that $RT = RV$. Which of the following must be true?\n\n![Figure Q21 (as printed)](2023_P2_figs/Q21.png)\n\n- A. $RV \\parallel ST$\n- B. $\\angle PTQ = \\angle RTS$\n- C. $\\triangle PST \\sim \\triangle UTQ$\n- D. $\\triangle PQT \\cong \\triangle TRS$",
-   "html": "<p>In the figure, $PQRS$ is a rectangle. Let $T$ be a point lying on $QR$ such that $\\angle PTS = 90^\\circ$. $PQ$ produced and $ST$ produced meet at the point $U$. $PT$ is produced to the point $V$ such that $RT = RV$. Which of the following must be true?</p>\n<p><img alt=\"Figure Q21 (as printed)\" src=\"2023_P2_figs/Q21.png\" /></p>\n<ul><li>A. $RV \\parallel ST$</li><li>B. $\\angle PTQ = \\angle RTS$</li><li>C. $\\triangle PST \\sim \\triangle UTQ$</li><li>D. $\\triangle PQT \\cong \\triangle TRS$</li></ul>",
+   "text": "In the figure, $PQRS$ is a rectangle. Let $T$ be a point lying on $QR$ such that $\\angle PTS = 90^\\circ$. $PQ$ produced and $ST$ produced meet at the point $U$. $PT$ is produced to the point $V$ such that $RT = RV$. Which of the following must be true?\n\n![Figure Q21 (as printed)](2023P2_figs/Q21.png)\n\n- A. $RV \\parallel ST$\n- B. $\\angle PTQ = \\angle RTS$\n- C. $\\triangle PST \\sim \\triangle UTQ$\n- D. $\\triangle PQT \\cong \\triangle TRS$",
+   "html": "<p>In the figure, $PQRS$ is a rectangle. Let $T$ be a point lying on $QR$ such that $\\angle PTS = 90^\\circ$. $PQ$ produced and $ST$ produced meet at the point $U$. $PT$ is produced to the point $V$ such that $RT = RV$. Which of the following must be true?</p>\n<p><img alt=\"Figure Q21 (as printed)\" src=\"2023P2_figs/Q21.png\" /></p>\n<ul><li>A. $RV \\parallel ST$</li><li>B. $\\angle PTQ = \\angle RTS$</li><li>C. $\\triangle PST \\sim \\triangle UTQ$</li><li>D. $\\triangle PQT \\cong \\triangle TRS$</li></ul>",
    "file": "2023_P2_題目英文卷.md"
   },
   {
@@ -19177,8 +19177,8 @@ window.QB = {
     "相似三角形",
     "圓的幾何"
    ],
-   "text": "The figure shows the cyclic quadrilateral $RSTU$, where $ST= TU$. $RS$ produced and $UT$ produced meet at the point $V$ while $RU$ produced and $ST$ produced meet at the point $W$. If $\\angle RWS=32^\\circ$ and $\\angle RVU=48^\\circ$, then $\\angle RSU=$\n\n![Figure Q22 (as printed)](2023_P2_figs/Q22.png)\n\n- A. $65^\\circ$.\n- B. $73^\\circ$.\n- C. $80^\\circ$.\n- D. $82^\\circ$.",
-   "html": "<p>The figure shows the cyclic quadrilateral $RSTU$, where $ST= TU$. $RS$ produced and $UT$ produced meet at the point $V$ while $RU$ produced and $ST$ produced meet at the point $W$. If $\\angle RWS=32^\\circ$ and $\\angle RVU=48^\\circ$, then $\\angle RSU=$</p>\n<p><img alt=\"Figure Q22 (as printed)\" src=\"2023_P2_figs/Q22.png\" /></p>\n<ul><li>A. $65^\\circ$.</li><li>B. $73^\\circ$.</li><li>C. $80^\\circ$.</li><li>D. $82^\\circ$.</li></ul>",
+   "text": "The figure shows the cyclic quadrilateral $RSTU$, where $ST= TU$. $RS$ produced and $UT$ produced meet at the point $V$ while $RU$ produced and $ST$ produced meet at the point $W$. If $\\angle RWS=32^\\circ$ and $\\angle RVU=48^\\circ$, then $\\angle RSU=$\n\n![Figure Q22 (as printed)](2023P2_figs/Q22.png)\n\n- A. $65^\\circ$.\n- B. $73^\\circ$.\n- C. $80^\\circ$.\n- D. $82^\\circ$.",
+   "html": "<p>The figure shows the cyclic quadrilateral $RSTU$, where $ST= TU$. $RS$ produced and $UT$ produced meet at the point $V$ while $RU$ produced and $ST$ produced meet at the point $W$. If $\\angle RWS=32^\\circ$ and $\\angle RVU=48^\\circ$, then $\\angle RSU=$</p>\n<p><img alt=\"Figure Q22 (as printed)\" src=\"2023P2_figs/Q22.png\" /></p>\n<ul><li>A. $65^\\circ$.</li><li>B. $73^\\circ$.</li><li>C. $80^\\circ$.</li><li>D. $82^\\circ$.</li></ul>",
    "file": "2023_P2_題目英文卷.md"
   },
   {
@@ -19192,8 +19192,8 @@ window.QB = {
    "tags": [
     "相似三角形"
    ],
-   "text": "In the figure, $ABCD$ is a trapezium with $AD//BC$. Let $E$ be the mid-point of $AD$. It is given that $\\angle ABE=\\angle BCE=90^\\circ$. Find $\\dfrac{CE}{DE}$.\n\n![Figure Q23 (as printed)](2023_P2_figs/Q23.png)\n\n- A. $\\dfrac{1}{2}$\n- B. 1\n- C. $\\tan\\alpha$\n- D. $\\sin\\alpha\\cos\\alpha$",
-   "html": "<p>In the figure, $ABCD$ is a trapezium with $AD//BC$. Let $E$ be the mid-point of $AD$. It is given that $\\angle ABE=\\angle BCE=90^\\circ$. Find $\\dfrac{CE}{DE}$.</p>\n<p><img alt=\"Figure Q23 (as printed)\" src=\"2023_P2_figs/Q23.png\" /></p>\n<ul><li>A. $\\dfrac{1}{2}$</li><li>B. 1</li><li>C. $\\tan\\alpha$</li><li>D. $\\sin\\alpha\\cos\\alpha$</li></ul>",
+   "text": "In the figure, $ABCD$ is a trapezium with $AD//BC$. Let $E$ be the mid-point of $AD$. It is given that $\\angle ABE=\\angle BCE=90^\\circ$. Find $\\dfrac{CE}{DE}$.\n\n![Figure Q23 (as printed)](2023P2_figs/Q23.png)\n\n- A. $\\dfrac{1}{2}$\n- B. 1\n- C. $\\tan\\alpha$\n- D. $\\sin\\alpha\\cos\\alpha$",
+   "html": "<p>In the figure, $ABCD$ is a trapezium with $AD//BC$. Let $E$ be the mid-point of $AD$. It is given that $\\angle ABE=\\angle BCE=90^\\circ$. Find $\\dfrac{CE}{DE}$.</p>\n<p><img alt=\"Figure Q23 (as printed)\" src=\"2023P2_figs/Q23.png\" /></p>\n<ul><li>A. $\\dfrac{1}{2}$</li><li>B. 1</li><li>C. $\\tan\\alpha$</li><li>D. $\\sin\\alpha\\cos\\alpha$</li></ul>",
    "file": "2023_P2_題目英文卷.md"
   },
   {
@@ -19286,8 +19286,8 @@ window.QB = {
     "框線圖",
     "統計"
    ],
-   "text": "The box-and-whisker diagram below shows the distribution of the numbers of training hours of some engineers in a year. Find the upper quartile of the distribution.\n\n![Figure Q29 (as printed)](2023_P2_figs/Q29.png)\n\n- A. 20\n- B. 40\n- C. 60\n- D. 70",
-   "html": "<p>The box-and-whisker diagram below shows the distribution of the numbers of training hours of some engineers in a year. Find the upper quartile of the distribution.</p>\n<p><img alt=\"Figure Q29 (as printed)\" src=\"2023_P2_figs/Q29.png\" /></p>\n<ul><li>A. 20</li><li>B. 40</li><li>C. 60</li><li>D. 70</li></ul>",
+   "text": "The box-and-whisker diagram below shows the distribution of the numbers of training hours of some engineers in a year. Find the upper quartile of the distribution.\n\n![Figure Q29 (as printed)](2023P2_figs/Q29.png)\n\n- A. 20\n- B. 40\n- C. 60\n- D. 70",
+   "html": "<p>The box-and-whisker diagram below shows the distribution of the numbers of training hours of some engineers in a year. Find the upper quartile of the distribution.</p>\n<p><img alt=\"Figure Q29 (as printed)\" src=\"2023P2_figs/Q29.png\" /></p>\n<ul><li>A. 20</li><li>B. 40</li><li>C. 60</li><li>D. 70</li></ul>",
    "file": "2023_P2_題目英文卷.md"
   },
   {
@@ -19425,8 +19425,8 @@ window.QB = {
     "相似三角形",
     "圓的幾何"
    ],
-   "text": "In the figure, $P$, $Q$ and $R$ are points lying on a circle. $ST$, $TU$ and $SU$ are the tangents to the circle at $P$, $Q$ and $R$ respectively. $RQ$ produced and $ST$ produced meet at the point $V$. If $\\angle PSR = 34^\\circ$ and $\\angle QPT = 46^\\circ$, then $\\angle PVQ =$\n\n![Figure Q38 (as printed)](2023_P2_figs/Q38.png)\n\n- A. $17^\\circ$\n- B. $22^\\circ$\n- C. $27^\\circ$\n- D. $28^\\circ$",
-   "html": "<p>In the figure, $P$, $Q$ and $R$ are points lying on a circle. $ST$, $TU$ and $SU$ are the tangents to the circle at $P$, $Q$ and $R$ respectively. $RQ$ produced and $ST$ produced meet at the point $V$. If $\\angle PSR = 34^\\circ$ and $\\angle QPT = 46^\\circ$, then $\\angle PVQ =$</p>\n<p><img alt=\"Figure Q38 (as printed)\" src=\"2023_P2_figs/Q38.png\" /></p>\n<ul><li>A. $17^\\circ$</li><li>B. $22^\\circ$</li><li>C. $27^\\circ$</li><li>D. $28^\\circ$</li></ul>",
+   "text": "In the figure, $P$, $Q$ and $R$ are points lying on a circle. $ST$, $TU$ and $SU$ are the tangents to the circle at $P$, $Q$ and $R$ respectively. $RQ$ produced and $ST$ produced meet at the point $V$. If $\\angle PSR = 34^\\circ$ and $\\angle QPT = 46^\\circ$, then $\\angle PVQ =$\n\n![Figure Q38 (as printed)](2023P2_figs/Q38.png)\n\n- A. $17^\\circ$\n- B. $22^\\circ$\n- C. $27^\\circ$\n- D. $28^\\circ$",
+   "html": "<p>In the figure, $P$, $Q$ and $R$ are points lying on a circle. $ST$, $TU$ and $SU$ are the tangents to the circle at $P$, $Q$ and $R$ respectively. $RQ$ produced and $ST$ produced meet at the point $V$. If $\\angle PSR = 34^\\circ$ and $\\angle QPT = 46^\\circ$, then $\\angle PVQ =$</p>\n<p><img alt=\"Figure Q38 (as printed)\" src=\"2023P2_figs/Q38.png\" /></p>\n<ul><li>A. $17^\\circ$</li><li>B. $22^\\circ$</li><li>C. $27^\\circ$</li><li>D. $28^\\circ$</li></ul>",
    "file": "2023_P2_題目英文卷.md"
   },
   {

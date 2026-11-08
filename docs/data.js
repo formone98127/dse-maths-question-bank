@@ -1,5 +1,5 @@
 window.QB = {
- "generated": "2026-11-08 14:06",
+ "generated": "2026-11-08 14:09",
  "count": 1369,
  "questions": [
   {
@@ -19301,8 +19301,8 @@ window.QB = {
    "tags": [
     "統計"
    ],
-   "text": "There are 14 full-time employees and 56 part-time employees in a company. The mean salary of the full-time employees is $\\$31530$ while the mean salary of the part-time employees is $\\$21525$. Find the mean salary of these employees of the company.\n\n- A. $\\$23 526$\n- B. $\\$25 527$\n- C. $\\$27 528$\n- D. $\\$29 529$",
-   "html": "<p>There are 14 full-time employees and 56 part-time employees in a company. The mean salary of the full-time employees is $\\$31530$ while the mean salary of the part-time employees is $\\$21525$. Find the mean salary of these employees of the company.</p>\n<ul><li>A. $\\$23 526$</li><li>B. $\\$25 527$</li><li>C. $\\$27 528$</li><li>D. $\\$29 529$</li></ul>",
+   "text": "There are 14 full-time employees and 56 part-time employees in a company. The mean salary of the full-time employees is $\\$31530$ while the mean salary of the part-time employees is $\\$21525$. Find the mean salary of these employees of the company.\n\n- A. $\\$23\\,526$\n- B. $\\$25\\,527$\n- C. $\\$27\\,528$\n- D. $\\$29\\,529$",
+   "html": "<p>There are 14 full-time employees and 56 part-time employees in a company. The mean salary of the full-time employees is $\\$31530$ while the mean salary of the part-time employees is $\\$21525$. Find the mean salary of these employees of the company.</p>\n<ul><li>A. $\\$23\\,526$</li><li>B. $\\$25\\,527$</li><li>C. $\\$27\\,528$</li><li>D. $\\$29\\,529$</li></ul>",
    "file": "2023_P2_題目英文卷.md"
   },
   {

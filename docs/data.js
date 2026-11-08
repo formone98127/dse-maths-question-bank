@@ -1,5 +1,5 @@
 window.QB = {
- "generated": "2026-11-08 14:50",
+ "generated": "2026-11-08 14:52",
  "count": 1414,
  "questions": [
   {
@@ -13245,7 +13245,7 @@ window.QB = {
     "二次函數"
    ],
    "text": "Which of the following statements about the graph of $y=(3-x)(x+2)+6$ is/are true?\nI. The graph opens downwards.\nII. The graph passes through the point $(1,10)$.\nIII. The $x$-intercepts of the graph are $-2$ and $3$.\n\n- A. I only\n- B. II only\n- C. I and III only\n- D. II and III only",
-   "html": "<p>Which of the following statements about the graph of $y=(3-x)(x+2)+6$ is/are true? I. The graph opens downwards. II. The graph passes through the point $(1,10)$. III. The $x$-intercepts of the graph are $-2$ and $3$.</p>\n<ul><li>A. I only</li><li>B. II only</li><li>C. I and III only</li><li>D. II and III only</li></ul>",
+   "html": "<p>Which of the following statements about the graph of $y=(3-x)(x+2)+6$ is/are true?</p>\n<p>I. The graph opens downwards.</p>\n<p>II. The graph passes through the point $(1,10)$.</p>\n<p>III. The $x$-intercepts of the graph are $-2$ and $3$.</p>\n<ul><li>A. I only</li><li>B. II only</li><li>C. I and III only</li><li>D. II and III only</li></ul>",
    "file": "2019_P2_題目英文卷.md"
   },
   {
@@ -13445,7 +13445,7 @@ window.QB = {
     "直線方程"
    ],
    "text": "In the figure, the equation of the straight line $L$ is $ax + by + 15 = 0$. Which of the following are true?\nI. $a > b$\nII. $a > -3$\nIII. $b > -5$\n\n![Figure Q23 (as printed)](2019P2_figs/Q23.png)\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
-   "html": "<p>In the figure, the equation of the straight line $L$ is $ax + by + 15 = 0$. Which of the following are true? I. $a &gt; b$ II. $a &gt; -3$ III. $b &gt; -5$</p>\n<p><img alt=\"Figure Q23 (as printed)\" src=\"2019P2_figs/Q23.png\" /></p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
+   "html": "<p>In the figure, the equation of the straight line $L$ is $ax + by + 15 = 0$. Which of the following are true?</p>\n<p>I. $a &gt; b$</p>\n<p>II. $a &gt; -3$</p>\n<p>III. $b &gt; -5$</p>\n<p><img alt=\"Figure Q23 (as printed)\" src=\"2019P2_figs/Q23.png\" /></p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
    "file": "2019_P2_題目英文卷.md"
   },
   {
@@ -13507,7 +13507,7 @@ window.QB = {
     "求積法"
    ],
    "text": "Denote the circle $2x^2+2y^2+4x-12y+15=0$ by $C$. Which of the following is/are true?\nI. The area of $C$ is $25\\pi$.\nII. The point $(-3,3)$ lies outside $C$.\nIII. The centre of $C$ lies in the fourth quadrant.\n\n- A. I only\n- B. II only\n- C. I and III only\n- D. II and III only",
-   "html": "<p>Denote the circle $2x^2+2y^2+4x-12y+15=0$ by $C$. Which of the following is/are true? I. The area of $C$ is $25\\pi$. II. The point $(-3,3)$ lies outside $C$. III. The centre of $C$ lies in the fourth quadrant.</p>\n<ul><li>A. I only</li><li>B. II only</li><li>C. I and III only</li><li>D. II and III only</li></ul>",
+   "html": "<p>Denote the circle $2x^2+2y^2+4x-12y+15=0$ by $C$. Which of the following is/are true?</p>\n<p>I. The area of $C$ is $25\\pi$.</p>\n<p>II. The point $(-3,3)$ lies outside $C$.</p>\n<p>III. The centre of $C$ lies in the fourth quadrant.</p>\n<ul><li>A. I only</li><li>B. II only</li><li>C. I and III only</li><li>D. II and III only</li></ul>",
    "file": "2019_P2_題目英文卷.md"
   },
   {
@@ -13538,7 +13538,7 @@ window.QB = {
     "框線圖"
    ],
    "text": "Which of the following can be obtained from any box-and-whisker diagram?\nI. Range\nII. Standard deviation\nIII. Inter-quartile range\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
-   "html": "<p>Which of the following can be obtained from any box-and-whisker diagram? I. Range II. Standard deviation III. Inter-quartile range</p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
+   "html": "<p>Which of the following can be obtained from any box-and-whisker diagram?</p>\n<p>I. Range</p>\n<p>II. Standard deviation</p>\n<p>III. Inter-quartile range</p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
    "file": "2019_P2_題目英文卷.md"
   },
   {
@@ -13722,7 +13722,7 @@ window.QB = {
     "平面幾何"
    ],
    "text": "If $\\triangle ABC$ is a right-angled triangle with $\\angle ABC = 90^\\circ$, which of the following is/are true?\nI. The orthocentre of $\\triangle ABC$ lies on $AC$.\nII. The centroid of $\\triangle ABC$ lies inside $\\triangle ABC$.\nIII. The in-centre of $\\triangle ABC$ lies outside $\\triangle ABC$.\n\n- A. I only\n- B. II only\n- C. I and III only\n- D. II and III only",
-   "html": "<p>If $\\triangle ABC$ is a right-angled triangle with $\\angle ABC = 90^\\circ$, which of the following is/are true? I. The orthocentre of $\\triangle ABC$ lies on $AC$. II. The centroid of $\\triangle ABC$ lies inside $\\triangle ABC$. III. The in-centre of $\\triangle ABC$ lies outside $\\triangle ABC$.</p>\n<ul><li>A. I only</li><li>B. II only</li><li>C. I and III only</li><li>D. II and III only</li></ul>",
+   "html": "<p>If $\\triangle ABC$ is a right-angled triangle with $\\angle ABC = 90^\\circ$, which of the following is/are true?</p>\n<p>I. The orthocentre of $\\triangle ABC$ lies on $AC$.</p>\n<p>II. The centroid of $\\triangle ABC$ lies inside $\\triangle ABC$.</p>\n<p>III. The in-centre of $\\triangle ABC$ lies outside $\\triangle ABC$.</p>\n<ul><li>A. I only</li><li>B. II only</li><li>C. I and III only</li><li>D. II and III only</li></ul>",
    "file": "2019_P2_題目英文卷.md"
   },
   {
@@ -13785,7 +13785,7 @@ window.QB = {
     "標準差"
    ],
    "text": "The mean, the range and the variance of a set of numbers are $m$, $r$ and $v$ respectively. Each number of the set is multiplied by 6 and then 5 is added to each resulting number to form a new set of numbers. Which of the following is/are true?\nI. The mean of the new set of numbers is $6m+5$.\nII. The range of the new set of numbers is $6r+5$.\nIII. The variance of the new set of numbers is $6v+5$.\n\n- A. I only.\n- B. II only.\n- C. I and III only.\n- D. II and III only.",
-   "html": "<p>The mean, the range and the variance of a set of numbers are $m$, $r$ and $v$ respectively. Each number of the set is multiplied by 6 and then 5 is added to each resulting number to form a new set of numbers. Which of the following is/are true? I. The mean of the new set of numbers is $6m+5$. II. The range of the new set of numbers is $6r+5$. III. The variance of the new set of numbers is $6v+5$.</p>\n<ul><li>A. I only.</li><li>B. II only.</li><li>C. I and III only.</li><li>D. II and III only.</li></ul>",
+   "html": "<p>The mean, the range and the variance of a set of numbers are $m$, $r$ and $v$ respectively. Each number of the set is multiplied by 6 and then 5 is added to each resulting number to form a new set of numbers. Which of the following is/are true?</p>\n<p>I. The mean of the new set of numbers is $6m+5$.</p>\n<p>II. The range of the new set of numbers is $6r+5$.</p>\n<p>III. The variance of the new set of numbers is $6v+5$.</p>\n<ul><li>A. I only.</li><li>B. II only.</li><li>C. I and III only.</li><li>D. II and III only.</li></ul>",
    "file": "2019_P2_題目英文卷.md"
   },
   {
@@ -17265,7 +17265,7 @@ window.QB = {
     "二次函數"
    ],
    "text": "Let $h$ and $k$ be real constants such that $hk <0$. Which of the following statements about the graph of $y = (h - x)(k - x)$ are true?\nI. The graph opens upwards.\nII. The graph has two $x$-intercepts.\nIII. The $y$-intercept of the graph is positive.\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
-   "html": "<p>Let $h$ and $k$ be real constants such that $hk &lt;0$. Which of the following statements about the graph of $y = (h - x)(k - x)$ are true? I. The graph opens upwards. II. The graph has two $x$-intercepts. III. The $y$-intercept of the graph is positive.</p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
+   "html": "<p>Let $h$ and $k$ be real constants such that $hk &lt;0$. Which of the following statements about the graph of $y = (h - x)(k - x)$ are true?</p>\n<p>I. The graph opens upwards.</p>\n<p>II. The graph has two $x$-intercepts.</p>\n<p>III. The $y$-intercept of the graph is positive.</p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
    "file": "2022_P2_題目英文卷.md"
   },
   {
@@ -17310,7 +17310,7 @@ window.QB = {
     "變分"
    ],
    "text": "If $u$ varies directly as the square root of $v$ and inversely as $w$, which of the following are true?\nI. $u^2$ varies directly as $v$ and inversely as the square of $w$.\nII. $v$ varies directly as $w$ and inversely as the square root of $u$.\nIII. $w$ varies directly as the square root of $v$ and inversely as $u$.\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
-   "html": "<p>If $u$ varies directly as the square root of $v$ and inversely as $w$, which of the following are true? I. $u^2$ varies directly as $v$ and inversely as the square of $w$. II. $v$ varies directly as $w$ and inversely as the square root of $u$. III. $w$ varies directly as the square root of $v$ and inversely as $u$.</p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
+   "html": "<p>If $u$ varies directly as the square root of $v$ and inversely as $w$, which of the following are true?</p>\n<p>I. $u^2$ varies directly as $v$ and inversely as the square of $w$.</p>\n<p>II. $v$ varies directly as $w$ and inversely as the square root of $u$.</p>\n<p>III. $w$ varies directly as the square root of $v$ and inversely as $u$.</p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
    "file": "2022_P2_題目英文卷.md"
   },
   {
@@ -17416,7 +17416,7 @@ window.QB = {
     "平面幾何"
    ],
    "text": "The figure shows a parallelogram. Which of the following must be true?\nI. $a + b = 180^\\circ$\nII. $b + c = 360^\\circ$\nIII. $c + d = 540^\\circ$\n\n![Figure Q20 (as printed)](2022P2_figs/Q20.png)\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
-   "html": "<p>The figure shows a parallelogram. Which of the following must be true? I. $a + b = 180^\\circ$ II. $b + c = 360^\\circ$ III. $c + d = 540^\\circ$</p>\n<p><img alt=\"Figure Q20 (as printed)\" src=\"2022P2_figs/Q20.png\" /></p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
+   "html": "<p>The figure shows a parallelogram. Which of the following must be true?</p>\n<p>I. $a + b = 180^\\circ$</p>\n<p>II. $b + c = 360^\\circ$</p>\n<p>III. $c + d = 540^\\circ$</p>\n<p><img alt=\"Figure Q20 (as printed)\" src=\"2022P2_figs/Q20.png\" /></p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
    "file": "2022_P2_題目英文卷.md"
   },
   {
@@ -17477,7 +17477,7 @@ window.QB = {
     "直線方程"
    ],
    "text": "The figure shows the graph of the straight line $mx + ny = 3$. Which of the following are true?\nI. $m <0$\nII. $n >3$\nIII. $m + n = 0$\n\n![Figure Q24 (as printed)](2022P2_figs/Q24.png)\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
-   "html": "<p>The figure shows the graph of the straight line $mx + ny = 3$. Which of the following are true? I. $m &lt;0$ II. $n &gt;3$ III. $m + n = 0$</p>\n<p><img alt=\"Figure Q24 (as printed)\" src=\"2022P2_figs/Q24.png\" /></p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
+   "html": "<p>The figure shows the graph of the straight line $mx + ny = 3$. Which of the following are true?</p>\n<p>I. $m &lt;0$</p>\n<p>II. $n &gt;3$</p>\n<p>III. $m + n = 0$</p>\n<p><img alt=\"Figure Q24 (as printed)\" src=\"2022P2_figs/Q24.png\" /></p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
    "file": "2022_P2_題目英文卷.md"
   },
   {
@@ -17570,7 +17570,7 @@ window.QB = {
     "數論"
    ],
    "text": "Consider the following positive integers:\n2 5 6 6 x x x y\nIf both the mean and the median of the above positive integers are 6, which of the following must be true?\nI. The mode of the above positive integers is 6.\nII. The least possible range of the above positive integers is 6.\nIII. The greatest possible variance of the above positive integers is 6.\n\n- A. I only\n- B. II only\n- C. I and III only\n- D. II and III only",
-   "html": "<p>Consider the following positive integers: 2 5 6 6 x x x y If both the mean and the median of the above positive integers are 6, which of the following must be true? I. The mode of the above positive integers is 6. II. The least possible range of the above positive integers is 6. III. The greatest possible variance of the above positive integers is 6.</p>\n<ul><li>A. I only</li><li>B. II only</li><li>C. I and III only</li><li>D. II and III only</li></ul>",
+   "html": "<p>Consider the following positive integers: 2 5 6 6 x x x y If both the mean and the median of the above positive integers are 6, which of the following must be true?</p>\n<p>I. The mode of the above positive integers is 6.</p>\n<p>II. The least possible range of the above positive integers is 6.</p>\n<p>III. The greatest possible variance of the above positive integers is 6.</p>\n<ul><li>A. I only</li><li>B. II only</li><li>C. I and III only</li><li>D. II and III only</li></ul>",
    "file": "2022_P2_題目英文卷.md"
   },
   {
@@ -17601,7 +17601,7 @@ window.QB = {
     "數列"
    ],
    "text": "It is given that $\\log_a y$ is a linear function of $x$, where $0 < a <1$. The intercepts on the vertical axis and on the horizontal axis of the graph of the linear function are 6 and 3 respectively. If $y = mn^x$, which of the following is/are true?\nI. $m <1$\nII. $n <1$\nIII. $mn^3 = 1$\n\n- A. I only\n- B. II only\n- C. I and III only\n- D. II and III only",
-   "html": "<p>It is given that $\\log_a y$ is a linear function of $x$, where $0 &lt; a &lt;1$. The intercepts on the vertical axis and on the horizontal axis of the graph of the linear function are 6 and 3 respectively. If $y = mn^x$, which of the following is/are true? I. $m &lt;1$ II. $n &lt;1$ III. $mn^3 = 1$</p>\n<ul><li>A. I only</li><li>B. II only</li><li>C. I and III only</li><li>D. II and III only</li></ul>",
+   "html": "<p>It is given that $\\log_a y$ is a linear function of $x$, where $0 &lt; a &lt;1$. The intercepts on the vertical axis and on the horizontal axis of the graph of the linear function are 6 and 3 respectively. If $y = mn^x$, which of the following is/are true?</p>\n<p>I. $m &lt;1$</p>\n<p>II. $n &lt;1$</p>\n<p>III. $mn^3 = 1$</p>\n<ul><li>A. I only</li><li>B. II only</li><li>C. I and III only</li><li>D. II and III only</li></ul>",
    "file": "2022_P2_題目英文卷.md"
   },
   {
@@ -17799,7 +17799,7 @@ window.QB = {
     "統計"
    ],
    "text": "It is given that $d$ is a real number. Let $S_1$ be a group of numbers $\\{d-6, d-2, d-1, d+3, d+5, d+7\\}$ and $S_2$ be another group of numbers $\\{d-7, d-5, d-3, d+1, d+2, d+6\\}$. Which of the following is/are true?\nI. The means of $S_1$ and $S_2$ are equal.\nII. The standard deviations of $S_1$ and $S_2$ are equal.\nIII. The inter-quartile ranges of $S_1$ and $S_2$ are equal.\n\n- A. I only\n- B. II only\n- C. I and III only\n- D. II and III only",
-   "html": "<p>It is given that $d$ is a real number. Let $S_1$ be a group of numbers $\\{d-6, d-2, d-1, d+3, d+5, d+7\\}$ and $S_2$ be another group of numbers $\\{d-7, d-5, d-3, d+1, d+2, d+6\\}$. Which of the following is/are true? I. The means of $S_1$ and $S_2$ are equal. II. The standard deviations of $S_1$ and $S_2$ are equal. III. The inter-quartile ranges of $S_1$ and $S_2$ are equal.</p>\n<ul><li>A. I only</li><li>B. II only</li><li>C. I and III only</li><li>D. II and III only</li></ul>",
+   "html": "<p>It is given that $d$ is a real number. Let $S_1$ be a group of numbers $\\{d-6, d-2, d-1, d+3, d+5, d+7\\}$ and $S_2$ be another group of numbers $\\{d-7, d-5, d-3, d+1, d+2, d+6\\}$. Which of the following is/are true?</p>\n<p>I. The means of $S_1$ and $S_2$ are equal.</p>\n<p>II. The standard deviations of $S_1$ and $S_2$ are equal.</p>\n<p>III. The inter-quartile ranges of $S_1$ and $S_2$ are equal.</p>\n<ul><li>A. I only</li><li>B. II only</li><li>C. I and III only</li><li>D. II and III only</li></ul>",
    "file": "2022_P2_題目英文卷.md"
   },
   {
@@ -19801,7 +19801,7 @@ window.QB = {
     "相似三角形"
    ],
    "text": "According to the figure, which of the following must be true\nI. $a+b=90^\\circ$\nII. $c+d=180^\\circ$\nIII. $a+b+c=d$\n\n![Figure Q18 (as printed)](2023P2_figs/Q18.png)\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
-   "html": "<p>According to the figure, which of the following must be true I. $a+b=90^\\circ$ II. $c+d=180^\\circ$ III. $a+b+c=d$</p>\n<p><img alt=\"Figure Q18 (as printed)\" src=\"2023P2_figs/Q18.png\" /></p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
+   "html": "<p>According to the figure, which of the following must be true</p>\n<p>I. $a+b=90^\\circ$</p>\n<p>II. $c+d=180^\\circ$</p>\n<p>III. $a+b+c=d$</p>\n<p><img alt=\"Figure Q18 (as printed)\" src=\"2023P2_figs/Q18.png\" /></p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
    "file": "2023_P2_題目英文卷.md"
   },
   {
@@ -19817,7 +19817,7 @@ window.QB = {
     "直線方程"
    ],
    "text": "It is given that $ABCD$ is a rhombus. Denote the point of intersection of $AC$ and $BD$ by $E$. Which of the following must be true?\nI. $AE = BE$\nII. $\\dfrac{AE}{AC} = \\dfrac{BE}{BD}$\nIII. $AE^2 + BE^2 = CD^2$\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
-   "html": "<p>It is given that $ABCD$ is a rhombus. Denote the point of intersection of $AC$ and $BD$ by $E$. Which of the following must be true? I. $AE = BE$ II. $\\dfrac{AE}{AC} = \\dfrac{BE}{BD}$ III. $AE^2 + BE^2 = CD^2$</p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
+   "html": "<p>It is given that $ABCD$ is a rhombus. Denote the point of intersection of $AC$ and $BD$ by $E$. Which of the following must be true?</p>\n<p>I. $AE = BE$</p>\n<p>II. $\\dfrac{AE}{AC} = \\dfrac{BE}{BD}$</p>\n<p>III. $AE^2 + BE^2 = CD^2$</p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
    "file": "2023_P2_題目英文卷.md"
   },
   {
@@ -19924,7 +19924,7 @@ window.QB = {
     "軌跡"
    ],
    "text": "The equations of the straight lines $\\ell$ and $L$ are $9x + 12y - 37 = 0$ and $12x + 16y + 85 = 0$ respectively. $\\ell$ cuts the $x$-axis at the point $A$ while $L$ cuts the $y$-axis at the point $B$. Let $P$ be a moving point in the rectangular coordinate plane such that the perpendicular distance from $P$ to $\\ell$ is equal to the perpendicular distance from $P$ to $L$. Denote the locus of $P$ by $\\Gamma$. Which of the following are true?\nI. $\\Gamma$ is parallel to $L$.\nII. $\\Gamma$ is perpendicular to $AB$.\nIII. $\\Gamma$ passes through the mid-point of $AB$.\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
-   "html": "<p>The equations of the straight lines $\\ell$ and $L$ are $9x + 12y - 37 = 0$ and $12x + 16y + 85 = 0$ respectively. $\\ell$ cuts the $x$-axis at the point $A$ while $L$ cuts the $y$-axis at the point $B$. Let $P$ be a moving point in the rectangular coordinate plane such that the perpendicular distance from $P$ to $\\ell$ is equal to the perpendicular distance from $P$ to $L$. Denote the locus of $P$ by $\\Gamma$. Which of the following are true? I. $\\Gamma$ is parallel to $L$. II. $\\Gamma$ is perpendicular to $AB$. III. $\\Gamma$ passes through the mid-point of $AB$.</p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
+   "html": "<p>The equations of the straight lines $\\ell$ and $L$ are $9x + 12y - 37 = 0$ and $12x + 16y + 85 = 0$ respectively. $\\ell$ cuts the $x$-axis at the point $A$ while $L$ cuts the $y$-axis at the point $B$. Let $P$ be a moving point in the rectangular coordinate plane such that the perpendicular distance from $P$ to $\\ell$ is equal to the perpendicular distance from $P$ to $L$. Denote the locus of $P$ by $\\Gamma$. Which of the following are true?</p>\n<p>I. $\\Gamma$ is parallel to $L$.</p>\n<p>II. $\\Gamma$ is perpendicular to $AB$.</p>\n<p>III. $\\Gamma$ passes through the mid-point of $AB$.</p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
    "file": "2023_P2_題目英文卷.md"
   },
   {
@@ -19941,7 +19941,7 @@ window.QB = {
     "直線方程"
    ],
    "text": "The equations of the circles $C_1$ and $C_2$ are $x^2 + y^2 + 7x - 4y + 15 = 0$ and $2x^2 + 2y^2 - 2x - 16y - 17 = 0$ respectively. Let $G_1$ and $G_2$ be the centres of $C_1$ and $C_2$ respectively. Denote the origin by $O$. Which of the following are true?\nI. $\\Delta OG_1G_2$ is an equilateral triangle.\nII. The line segment $OG_1$ lies inside $C_2$.\nIII. $C_1$ and $C_2$ intersect at two distinct points.\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
-   "html": "<p>The equations of the circles $C_1$ and $C_2$ are $x^2 + y^2 + 7x - 4y + 15 = 0$ and $2x^2 + 2y^2 - 2x - 16y - 17 = 0$ respectively. Let $G_1$ and $G_2$ be the centres of $C_1$ and $C_2$ respectively. Denote the origin by $O$. Which of the following are true? I. $\\Delta OG_1G_2$ is an equilateral triangle. II. The line segment $OG_1$ lies inside $C_2$. III. $C_1$ and $C_2$ intersect at two distinct points.</p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
+   "html": "<p>The equations of the circles $C_1$ and $C_2$ are $x^2 + y^2 + 7x - 4y + 15 = 0$ and $2x^2 + 2y^2 - 2x - 16y - 17 = 0$ respectively. Let $G_1$ and $G_2$ be the centres of $C_1$ and $C_2$ respectively. Denote the origin by $O$. Which of the following are true?</p>\n<p>I. $\\Delta OG_1G_2$ is an equilateral triangle.</p>\n<p>II. The line segment $OG_1$ lies inside $C_2$.</p>\n<p>III. $C_1$ and $C_2$ intersect at two distinct points.</p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
    "file": "2023_P2_題目英文卷.md"
   },
   {
@@ -20064,7 +20064,7 @@ window.QB = {
     "軌跡"
    ],
    "text": "Let $f(x)=3x^2+18mx+22m^2$, where $m$ is a real constant. Which of the following statements about the graph of $y=-f(3x)$ must be true?\nI. The $x$-coordinate of the vertex of the graph is $m$.\nII. The $y$-coordinate of the vertex of the graph is $5m^2$.\nIII. The equation of the axis of symmetry of the graph is $x+m=0$.\n\n- A. I only\n- B. II only\n- C. I and III only\n- D. II and III only",
-   "html": "<p>Let $f(x)=3x^2+18mx+22m^2$, where $m$ is a real constant. Which of the following statements about the graph of $y=-f(3x)$ must be true? I. The $x$-coordinate of the vertex of the graph is $m$. II. The $y$-coordinate of the vertex of the graph is $5m^2$. III. The equation of the axis of symmetry of the graph is $x+m=0$.</p>\n<ul><li>A. I only</li><li>B. II only</li><li>C. I and III only</li><li>D. II and III only</li></ul>",
+   "html": "<p>Let $f(x)=3x^2+18mx+22m^2$, where $m$ is a real constant. Which of the following statements about the graph of $y=-f(3x)$ must be true?</p>\n<p>I. The $x$-coordinate of the vertex of the graph is $m$.</p>\n<p>II. The $y$-coordinate of the vertex of the graph is $5m^2$.</p>\n<p>III. The equation of the axis of symmetry of the graph is $x+m=0$.</p>\n<ul><li>A. I only</li><li>B. II only</li><li>C. I and III only</li><li>D. II and III only</li></ul>",
    "file": "2023_P2_題目英文卷.md"
   },
   {
@@ -20219,7 +20219,7 @@ window.QB = {
     "標準差"
    ],
    "text": "It is given that $n$ is an integer. Let $u$, $v$ and $w$ be the standard deviation, the median and the range of the group of numbers $\\{1-9n, 3-9n, 4-9n, 5-9n, 7-9n\\}$ respectively. Which of the following must be true?\nI. $u=2$\nII. $v<4$\nIII. $w>6$\n\n- A. I only\n- B. II only\n- C. I and III only\n- D. II and III only",
-   "html": "<p>It is given that $n$ is an integer. Let $u$, $v$ and $w$ be the standard deviation, the median and the range of the group of numbers $\\{1-9n, 3-9n, 4-9n, 5-9n, 7-9n\\}$ respectively. Which of the following must be true? I. $u=2$ II. $v&lt;4$ III. $w&gt;6$</p>\n<ul><li>A. I only</li><li>B. II only</li><li>C. I and III only</li><li>D. II and III only</li></ul>",
+   "html": "<p>It is given that $n$ is an integer. Let $u$, $v$ and $w$ be the standard deviation, the median and the range of the group of numbers $\\{1-9n, 3-9n, 4-9n, 5-9n, 7-9n\\}$ respectively. Which of the following must be true?</p>\n<p>I. $u=2$</p>\n<p>II. $v&lt;4$</p>\n<p>III. $w&gt;6$</p>\n<ul><li>A. I only</li><li>B. II only</li><li>C. I and III only</li><li>D. II and III only</li></ul>",
    "file": "2023_P2_題目英文卷.md"
   },
   {

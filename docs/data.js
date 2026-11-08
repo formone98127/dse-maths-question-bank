@@ -1,5 +1,5 @@
 window.QB = {
- "generated": "2026-11-08 13:46",
+ "generated": "2026-11-08 13:49",
  "count": 1369,
  "questions": [
   {
@@ -19488,8 +19488,8 @@ window.QB = {
    "tags": [
     "排列與組合"
    ],
-   "text": "There are 15 teachers in a group. If 5 teachers are selected from the group to form a committee consisting of 1 chairperson and 4 members, how many different committees can be formed?\n\n- A. 3 003\n- B. 15\\,015\n- C. 20\\,475\n- D. 360360",
-   "html": "<p>There are 15 teachers in a group. If 5 teachers are selected from the group to form a committee consisting of 1 chairperson and 4 members, how many different committees can be formed?</p>\n<ul><li>A. 3 003</li><li>B. 15\\,015</li><li>C. 20\\,475</li><li>D. 360360</li></ul>",
+   "text": "There are 15 teachers in a group. If 5 teachers are selected from the group to form a committee consisting of 1 chairperson and 4 members, how many different committees can be formed?\n\n- A. 3 003\n- B. 15 015\n- C. 20 475\n- D. 360 360",
+   "html": "<p>There are 15 teachers in a group. If 5 teachers are selected from the group to form a committee consisting of 1 chairperson and 4 members, how many different committees can be formed?</p>\n<ul><li>A. 3 003</li><li>B. 15 015</li><li>C. 20 475</li><li>D. 360 360</li></ul>",
    "file": "2023_P2_題目英文卷.md"
   },
   {

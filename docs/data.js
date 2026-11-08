@@ -1,5 +1,5 @@
 window.QB = {
- "generated": "2026-11-08 14:58",
+ "generated": "2026-11-08 15:01",
  "count": 1414,
  "questions": [
   {
@@ -17645,8 +17645,8 @@ window.QB = {
    "tags": [
     "複數"
    ],
-   "text": "Let $z = 4 + 5i^{10} - k i^{15} + 6i^{21} + 2k i^{28}$, where $k$ is a real number. If the real part and the imaginary part of $z$ are equal, then the real part of $z$ is\n\n- A. 7 .\n- B. 13 .\n- C. 17 .\n- D. 25 .",
-   "html": "<p>Let $z = 4 + 5i^{10} - k i^{15} + 6i^{21} + 2k i^{28}$, where $k$ is a real number. If the real part and the imaginary part of $z$ are equal, then the real part of $z$ is</p>\n<ul><li>A. 7 .</li><li>B. 13 .</li><li>C. 17 .</li><li>D. 25 .</li></ul>",
+   "text": "Let $z = 4 + 5i^{10} - ki^{15} + 6i^{21} + 2ki^{28}$, where $k$ is a real number. If the real part and the imaginary part of $z$ are equal, then the real part of $z$ is\n\n- A. 7 .\n- B. 13 .\n- C. 17 .\n- D. 25 .",
+   "html": "<p>Let $z = 4 + 5i^{10} - ki^{15} + 6i^{21} + 2ki^{28}$, where $k$ is a real number. If the real part and the imaginary part of $z$ are equal, then the real part of $z$ is</p>\n<ul><li>A. 7 .</li><li>B. 13 .</li><li>C. 17 .</li><li>D. 25 .</li></ul>",
    "file": "2022_P2_題目英文卷.md"
   },
   {
@@ -17660,8 +17660,8 @@ window.QB = {
    "tags": [
     "線性規劃"
    ],
-   "text": "Consider the following system of inequalities:\n$$\n\\begin{cases}\n2x+y\\geq8 \\\\\n2x+3y\\geq16 \\\\\n4x+3y\\leq22\n\\end{cases}\n$$\nLet R be the region which represents the solution of the above system of inequalities. If (x,y) is a point lying in R, then the least value of 7x+6y is\n\n- A. 32 .\n- B. 38 .\n- C. 41 .\n- D. 43 .",
-   "html": "<p>Consider the following system of inequalities: $$ \\begin{cases} 2x+y\\geq8 \\\\ 2x+3y\\geq16 \\\\ 4x+3y\\leq22 \\end{cases} $$ Let R be the region which represents the solution of the above system of inequalities. If (x,y) is a point lying in R, then the least value of 7x+6y is</p>\n<ul><li>A. 32 .</li><li>B. 38 .</li><li>C. 41 .</li><li>D. 43 .</li></ul>",
+   "text": "Consider the following system of inequalities:\n$$\n\\begin{cases}\n2x+y\\geq8 \\\\\n2x+3y\\geq16 \\\\\n4x+3y\\leq22\n\\end{cases}\n$$\nLet $R$ be the region which represents the solution of the above system of inequalities. If $(x, y)$ is a point lying in $R$, then the least value of 7x+6y is\n\n- A. 32 .\n- B. 38 .\n- C. 41 .\n- D. 43 .",
+   "html": "<p>Consider the following system of inequalities:</p>\n<p>$$ \\begin{cases} 2x+y\\geq8 \\\\ 2x+3y\\geq16 \\\\ 4x+3y\\leq22 \\end{cases} $$</p>\n<p>Let $R$ be the region which represents the solution of the above system of inequalities. If $(x, y)$ is a point lying in $R$, then the least value of 7x+6y is</p>\n<ul><li>A. 32 .</li><li>B. 38 .</li><li>C. 41 .</li><li>D. 43 .</li></ul>",
    "file": "2022_P2_題目英文卷.md"
   },
   {

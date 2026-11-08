@@ -1,5 +1,5 @@
 window.QB = {
- "generated": "2026-11-08 14:55",
+ "generated": "2026-11-08 14:57",
  "count": 1414,
  "questions": [
   {
@@ -17570,7 +17570,7 @@ window.QB = {
     "數論"
    ],
    "text": "Consider the following positive integers:\n2 5 6 6 x x x y\nIf both the mean and the median of the above positive integers are 6, which of the following must be true?\nI. The mode of the above positive integers is 6.\nII. The least possible range of the above positive integers is 6.\nIII. The greatest possible variance of the above positive integers is 6.\n\n- A. I only\n- B. II only\n- C. I and III only\n- D. II and III only",
-   "html": "<p>Consider the following positive integers: 2 5 6 6 x x x y If both the mean and the median of the above positive integers are 6, which of the following must be true?</p>\n<p>I. The mode of the above positive integers is 6.</p>\n<p>II. The least possible range of the above positive integers is 6.</p>\n<p>III. The greatest possible variance of the above positive integers is 6.</p>\n<ul><li>A. I only</li><li>B. II only</li><li>C. I and III only</li><li>D. II and III only</li></ul>",
+   "html": "<p>Consider the following positive integers:</p>\n<p>2 5 6 6 x x x y</p>\n<p>If both the mean and the median of the above positive integers are 6, which of the following must be true?</p>\n<p>I. The mode of the above positive integers is 6.</p>\n<p>II. The least possible range of the above positive integers is 6.</p>\n<p>III. The greatest possible variance of the above positive integers is 6.</p>\n<ul><li>A. I only</li><li>B. II only</li><li>C. I and III only</li><li>D. II and III only</li></ul>",
    "file": "2022_P2_題目英文卷.md"
   },
   {

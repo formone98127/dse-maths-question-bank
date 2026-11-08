@@ -1,7 +1,7 @@
 ﻿/* ===== DSE Hub service worker â€” ç¶²çµ¡å„ªå…ˆï¼Œæ–·ç·šç”¨å¿«å– ===== */
 "use strict";
 
-const CACHE = "dsehub-v202611081501";
+const CACHE = "dsehub-v202611081502";
 const SHELL = [
   "./",
   "./hub/",

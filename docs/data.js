@@ -1,5 +1,5 @@
 window.QB = {
- "generated": "2026-11-08 15:01",
+ "generated": "2026-11-08 15:02",
  "count": 1414,
  "questions": [
   {
@@ -20094,8 +20094,8 @@ window.QB = {
     "一元一次不等式",
     "線性規劃"
    ],
-   "text": "Consider the following system of inequalities:\n$$\\left\\{ \\begin{array}{l} x+3 \\geq 0 \\\\ 2x+3y-12 \\leq 0 \\\\ 5x-3y+12 \\leq 0 \\end{array} \\right.$$\nLet $D$ be the region which represents the solution of the above system of inequalities. Find the range of values of $\\beta$ such that the greatest value of $\\beta x+6y$ is 24, where $(x, y)$ is a point lying in $D$.\n\n- A. $\\beta \\leq -10$\n- B. $\\beta \\geq -10$\n- C. $\\beta \\leq 4$\n- D. $\\beta \\geq 4$",
-   "html": "<p>Consider the following system of inequalities: $$\\left\\{ \\begin{array}{l} x+3 \\geq 0 \\\\ 2x+3y-12 \\leq 0 \\\\ 5x-3y+12 \\leq 0 \\end{array} \\right.$$ Let $D$ be the region which represents the solution of the above system of inequalities. Find the range of values of $\\beta$ such that the greatest value of $\\beta x+6y$ is 24, where $(x, y)$ is a point lying in $D$.</p>\n<ul><li>A. $\\beta \\leq -10$</li><li>B. $\\beta \\geq -10$</li><li>C. $\\beta \\leq 4$</li><li>D. $\\beta \\geq 4$</li></ul>",
+   "text": "Consider the following system of inequalities:\n$$\n\\left\\{ \\begin{array}{l} x+3 \\geq 0 \\\\ 2x+3y-12 \\leq 0 \\\\ 5x-3y+12 \\leq 0 \\end{array} \\right.\n$$\nLet $D$ be the region which represents the solution of the above system of inequalities. Find the range of values of $\\beta$ such that the greatest value of $\\beta x+6y$ is 24, where $(x, y)$ is a point lying in $D$.\n\n- A. $\\beta \\leq -10$\n- B. $\\beta \\geq -10$\n- C. $\\beta \\leq 4$\n- D. $\\beta \\geq 4$",
+   "html": "<p>Consider the following system of inequalities:</p>\n<p>$$ \\left\\{ \\begin{array}{l} x+3 \\geq 0 \\\\ 2x+3y-12 \\leq 0 \\\\ 5x-3y+12 \\leq 0 \\end{array} \\right. $$</p>\n<p>Let $D$ be the region which represents the solution of the above system of inequalities. Find the range of values of $\\beta$ such that the greatest value of $\\beta x+6y$ is 24, where $(x, y)$ is a point lying in $D$.</p>\n<ul><li>A. $\\beta \\leq -10$</li><li>B. $\\beta \\geq -10$</li><li>C. $\\beta \\leq 4$</li><li>D. $\\beta \\geq 4$</li></ul>",
    "file": "2023_P2_題目英文卷.md"
   },
   {

@@ -1,6 +1,6 @@
 window.QB = {
- "generated": "2026-11-09 05:59",
- "count": 1459,
+ "generated": "2026-11-09 06:22",
+ "count": 1504,
  "questions": [
   {
    "subject": "數學",
@@ -8633,6 +8633,21 @@ window.QB = {
    "file": "2016_P2_QU(CHI).md"
   },
   {
+   "subject": "數學",
+   "year": 2016,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 1,
+   "title": "第 1 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "指數定律"
+   ],
+   "text": "$8^{222} \\cdot 5^{666} =$\n\n- A. $10^{666}$\n- B. $10^{888}$\n- C. $40^{666}$\n- D. $40^{888}$",
+   "html": "<p>1.&nbsp;&nbsp;&nbsp;$8^{222} \\cdot 5^{666} =$</p>\n<ul><li>A. $10^{666}$</li><li>B. $10^{888}$</li><li>C. $40^{666}$</li><li>D. $40^{888}$</li></ul>",
+   "file": "2016_P2_題目英文卷.md"
+  },
+  {
    "subject": "化學",
    "year": 2016,
    "paper": "Paper 2",
@@ -8656,6 +8671,21 @@ window.QB = {
    "file": "2016_P2_QU(CHI).md"
   },
   {
+   "subject": "數學",
+   "year": 2016,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 2,
+   "title": "第 2 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "一元方程"
+   ],
+   "text": "If $\\dfrac{a}{x} + \\dfrac{b}{y} =3$, then $x =$\n\n- A. $\\dfrac{ay}{3y - b}$\n- B. $\\dfrac{ay}{b - 3y}$\n- C. $\\dfrac{by}{3y - a}$\n- D. $\\dfrac{by}{a - 3y}$",
+   "html": "<p>2.&nbsp;&nbsp;&nbsp;If $\\dfrac{a}{x} + \\dfrac{b}{y} =3$, then $x =$</p>\n<ul><li>A. $\\dfrac{ay}{3y - b}$</li><li>B. $\\dfrac{ay}{b - 3y}$</li><li>C. $\\dfrac{by}{3y - a}$</li><li>D. $\\dfrac{by}{a - 3y}$</li></ul>",
+   "file": "2016_P2_題目英文卷.md"
+  },
+  {
    "subject": "化學",
    "year": 2016,
    "paper": "Paper 2",
@@ -8674,6 +8704,664 @@ window.QB = {
    "text": "回答試題的所有部分。\n\n(a)　回答以下短問題：\n\n　　(i)　寫出氫氧化鈉固體的一項性質，使牠不適合藉稱重來配製標準溶液。（1 分）\n\n　　(ii)　建議一個化學測試以顯示次氯酸根離子存在於一個水溶液中。（2 分）\n\n　　(iii)　纖維素及甲殼素均是天然聚合物。它們的結構顯示如下：\n\n![Q3(a) 纖維素＋甲殼素結構](2016_P2_crops/q3a_cell_chitin.png)\n\n參照下表所給的數據，提出在纖維素及甲殼素的紅外光譜中一項相似之處及一項相異之處：\n\n| 鍵合 | 化合物類別 | 波數域 cm⁻¹（伸展式） |\n|---|---|---|\n| C=C | 烯 | 1610 至 1680 |\n| C=O | 醛、酮、羧酸及其衍生物 | 1680 至 1800 |\n| C≡C | 炔 | 2070 至 2250 |\n| C≡N | 腈 | 2200 至 2280 |\n| O–H | 帶「氫鍵」的酸 | 2500 至 3300 |\n| O–H | 帶「氫鍵」的醇及酚 | 3230 至 3670 |\n\n（2 分）\n\n(b)　利用容量分析測定一個 Na₂Cr₂O₇(aq) 樣本 A 的濃度；並利用比色法測定另一個 Na₂Cr₂O₇(aq) 樣本 B 的濃度。\n\n把 25.00 cm³ 的樣本 A 轉移到一錐形瓶，並用稀 H₂SO₄(aq) 酸化。然後在適當的指示劑下以 0.0642 mol dm⁻³ Fe²⁺(aq) 溶液滴定該混合物，需用 26.88 cm³ 的該 Fe²⁺(aq) 溶液來達到終點。\n\n　　(i)　寫出所涉及反應的平衡方程式。\n\n　　(ii)　計算在 A 中 Na₂Cr₂O₇(aq) 的濃度。（3 分）\n\n　　(iii)　在比色法中，先配製不同的標準 Cr₂O₇²⁻(aq) 溶液，然後用裝了藍色濾片的比色計來量度這些溶液的吸光度。以下的校準曲線顯示吸光度隨 Cr₂O₇²⁻(aq) 離子濃度的變化：\n\n![Q3(b)(ii) 校準曲線](2016_P2_crops/q3b_calib.png)\n\n　　　(1)　提出為什麼要用藍色濾片。\n\n　　　(2)　參考以上的校準曲線，寫出吸光度與 [Cr₂O₇²⁻(aq)] 的關係。\n\n　　　(3)　把樣本 B 稀釋 100 倍。用該比色計量度得這稀釋溶液的吸光度為 0.26。根據上述校準曲線所給的資料，計算在 B 中 Na₂Cr₂O₇(aq) 的濃度。（4 分）\n\n　　(iv)　解釋在測定一個非常稀（如大概 10⁻⁷ mol dm⁻³ 的 Na₂Cr₂O₇(aq)）的濃度時，使用容量分析抑或比色法較為恰當。（1 分）\n\n(c)　X 和 Y 是同分異構化合物。它們的結構顯示如下：\n\n![Q3(c) X／Y 結構](2016_P2_crops/q3c_xy.png)\n\n　　(i)　提出並解釋如何利用 X 和 Y 各自的質譜來分辨它們。（2 分）\n\n　　(ii)　X 的熔點是 50°C 而 Y 的是 77°C。它們均不溶於水但溶於二氯甲烷。當以稀 Na₂CO₃(aq) 處理時，Y 不發生反應但 X 發生反應以生成一可溶的鹽。\n\n　　　(1)　你獲提供稀 Na₂CO₃(aq) 和稀 H₂SO₄(aq)。根據溶劑提取，概述把固體 Y 從 X 和 Y 在二氯甲烷的溶液中分離出來的實驗步驟。\n\n　　　(2)　提出如何能鑑定在 (1) 中所得的固體是純化合物 Y。（5 分）\n\n---\n\n*試卷完 —*\n\n## 待人工核對\n\n本卷為第 2 層文字交貨，由 easyocr（ch_tra+en，GPU）掃描底稿清洗而成；現模型無影像輸入，未能對頁影像覆核。以下題號建議第 3 層精修時對頁覆核：\n\n- 第 1 題：乙醇生產方程式（CH₂=CH₂ + H₂O → CH₃CH₂OH）依 OCR 校正；蔗糖水解動力學數據表（初速 6.0×10⁻⁷／2.4×10⁻⁶／1.8×10⁻⁶）依 OCR 校正，待核實。\n- 第 2 題：纖維素／凱庫勒／金晶胞／PBT／PPV 結構均為 300dpi crop，位置／範圍待 spot-check；「凱庫勒剛性」及金納米粒子文字待對頁核實。\n- 第 3 題：纖維素＋甲殼素結構、校準曲線、X／Y 結構均為 crop；紅外吸收數據表（C≡C／C≡N 行 OCR 讀作 C=C／C=l）依標準 IR 數據校正，待核實。\n- 第 3 題 (c)(ii)：X／Y（OCR 讀作「X 和工／1」）及熔點（50°C／77°C）、稀 Na₂CO₃ 處理文字待對頁核實。\n- 卷二源 PDF 第 3–4 頁與第 1–2 頁內容重複（掃描版別差異），本檔只採甲／乙／丙各一題一次，未重複。\n- 各題圖為 300dpi 原卷截圖（程式定位＋墨跡覆蓋率校驗；位置／範圍待 spot-check）；第 3 層再換成向量重繪。",
    "html": "<p>3.&nbsp;&nbsp;&nbsp;回答試題的所有部分。</p>\n<p>(a)　回答以下短問題：</p>\n<p>(i)　寫出氫氧化鈉固體的一項性質，使牠不適合藉稱重來配製標準溶液。（1 分）</p>\n<p>(ii)　建議一個化學測試以顯示次氯酸根離子存在於一個水溶液中。（2 分）</p>\n<p>(iii)　纖維素及甲殼素均是天然聚合物。它們的結構顯示如下：</p>\n<p><img alt=\"Q3(a) 纖維素＋甲殼素結構\" src=\"chem_2016_P2_crops/q3a_cell_chitin.png\" /></p>\n<p>參照下表所給的數據，提出在纖維素及甲殼素的紅外光譜中一項相似之處及一項相異之處：</p>\n<table>\n<thead>\n<tr>\n<th>鍵合</th>\n<th>化合物類別</th>\n<th>波數域 cm⁻¹（伸展式）</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>C=C</td>\n<td>烯</td>\n<td>1610 至 1680</td>\n</tr>\n<tr>\n<td>C=O</td>\n<td>醛、酮、羧酸及其衍生物</td>\n<td>1680 至 1800</td>\n</tr>\n<tr>\n<td>C≡C</td>\n<td>炔</td>\n<td>2070 至 2250</td>\n</tr>\n<tr>\n<td>C≡N</td>\n<td>腈</td>\n<td>2200 至 2280</td>\n</tr>\n<tr>\n<td>O–H</td>\n<td>帶「氫鍵」的酸</td>\n<td>2500 至 3300</td>\n</tr>\n<tr>\n<td>O–H</td>\n<td>帶「氫鍵」的醇及酚</td>\n<td>3230 至 3670</td>\n</tr>\n</tbody>\n</table>\n<p>（2 分）</p>\n<p>(b)　利用容量分析測定一個 Na₂Cr₂O₇(aq) 樣本 A 的濃度；並利用比色法測定另一個 Na₂Cr₂O₇(aq) 樣本 B 的濃度。</p>\n<p>把 25.00 cm³ 的樣本 A 轉移到一錐形瓶，並用稀 H₂SO₄(aq) 酸化。然後在適當的指示劑下以 0.0642 mol dm⁻³ Fe²⁺(aq) 溶液滴定該混合物，需用 26.88 cm³ 的該 Fe²⁺(aq) 溶液來達到終點。</p>\n<p>(i)　寫出所涉及反應的平衡方程式。</p>\n<p>(ii)　計算在 A 中 Na₂Cr₂O₇(aq) 的濃度。（3 分）</p>\n<p>(iii)　在比色法中，先配製不同的標準 Cr₂O₇²⁻(aq) 溶液，然後用裝了藍色濾片的比色計來量度這些溶液的吸光度。以下的校準曲線顯示吸光度隨 Cr₂O₇²⁻(aq) 離子濃度的變化：</p>\n<p><img alt=\"Q3(b)(ii) 校準曲線\" src=\"chem_2016_P2_crops/q3b_calib.png\" /></p>\n<p>(1)　提出為什麼要用藍色濾片。</p>\n<p>(2)　參考以上的校準曲線，寫出吸光度與 [Cr₂O₇²⁻(aq)] 的關係。</p>\n<p>(3)　把樣本 B 稀釋 100 倍。用該比色計量度得這稀釋溶液的吸光度為 0.26。根據上述校準曲線所給的資料，計算在 B 中 Na₂Cr₂O₇(aq) 的濃度。（4 分）</p>\n<p>(iv)　解釋在測定一個非常稀（如大概 10⁻⁷ mol dm⁻³ 的 Na₂Cr₂O₇(aq)）的濃度時，使用容量分析抑或比色法較為恰當。（1 分）</p>\n<p>(c)　X 和 Y 是同分異構化合物。它們的結構顯示如下：</p>\n<p><img alt=\"Q3(c) X／Y 結構\" src=\"chem_2016_P2_crops/q3c_xy.png\" /></p>\n<p>(i)　提出並解釋如何利用 X 和 Y 各自的質譜來分辨它們。（2 分）</p>\n<p>(ii)　X 的熔點是 50°C 而 Y 的是 77°C。它們均不溶於水但溶於二氯甲烷。當以稀 Na₂CO₃(aq) 處理時，Y 不發生反應但 X 發生反應以生成一可溶的鹽。</p>\n<p>(1)　你獲提供稀 Na₂CO₃(aq) 和稀 H₂SO₄(aq)。根據溶劑提取，概述把固體 Y 從 X 和 Y 在二氯甲烷的溶液中分離出來的實驗步驟。</p>\n<p>(2)　提出如何能鑑定在 (1) 中所得的固體是純化合物 Y。（5 分）</p>\n<hr />\n<p><em>試卷完 —</em></p>\n<h2>待人工核對</h2>\n<p>本卷為第 2 層文字交貨，由 easyocr（ch_tra+en，GPU）掃描底稿清洗而成；現模型無影像輸入，未能對頁影像覆核。以下題號建議第 3 層精修時對頁覆核：</p>\n<ul>\n<li>第 1 題：乙醇生產方程式（CH₂=CH₂ + H₂O → CH₃CH₂OH）依 OCR 校正；蔗糖水解動力學數據表（初速 6.0×10⁻⁷／2.4×10⁻⁶／1.8×10⁻⁶）依 OCR 校正，待核實。</li>\n<li>第 2 題：纖維素／凱庫勒／金晶胞／PBT／PPV 結構均為 300dpi crop，位置／範圍待 spot-check；「凱庫勒剛性」及金納米粒子文字待對頁核實。</li>\n<li>第 3 題：纖維素＋甲殼素結構、校準曲線、X／Y 結構均為 crop；紅外吸收數據表（C≡C／C≡N 行 OCR 讀作 C=C／C=l）依標準 IR 數據校正，待核實。</li>\n<li>第 3 題 (c)(ii)：X／Y（OCR 讀作「X 和工／1」）及熔點（50°C／77°C）、稀 Na₂CO₃ 處理文字待對頁核實。</li>\n<li>卷二源 PDF 第 3–4 頁與第 1–2 頁內容重複（掃描版別差異），本檔只採甲／乙／丙各一題一次，未重複。</li>\n<li>各題圖為 300dpi 原卷截圖（程式定位＋墨跡覆蓋率校驗；位置／範圍待 spot-check）；第 3 層再換成向量重繪。</li>\n</ul>",
    "file": "2016_P2_QU(CHI).md"
+  },
+  {
+   "subject": "數學",
+   "year": 2016,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 3,
+   "title": "第 3 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "因式分解"
+   ],
+   "text": "$16 - (2x - 3y)^2 =$\n\n- A. $(4 - 2x - 3y)(4 + 2x + 3y)$\n- B. $(4 - 2x - 3y)(4 + 2x - 3y)$\n- C. $(4 - 2x + 3y)(4 + 2x + 3y)$\n- D. $(4 - 2x + 3y)(4 + 2x - 3y)$",
+   "html": "<p>3.&nbsp;&nbsp;&nbsp;$16 - (2x - 3y)^2 =$</p>\n<ul><li>A. $(4 - 2x - 3y)(4 + 2x + 3y)$</li><li>B. $(4 - 2x - 3y)(4 + 2x - 3y)$</li><li>C. $(4 - 2x + 3y)(4 + 2x + 3y)$</li><li>D. $(4 - 2x + 3y)(4 + 2x - 3y)$</li></ul>",
+   "file": "2016_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2016,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 4,
+   "title": "第 4 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "百分比"
+   ],
+   "text": "$0.0765403=$\n\n- A. $0.076$ (correct to 2 significant figures).\n- B. $0.0765$ (correct to 3 decimal places).\n- C. $0.07654$ (correct to 4 significant figures).\n- D. $0.076540$ (correct to 5 decimal places).",
+   "html": "<p>4.&nbsp;&nbsp;&nbsp;$0.0765403=$</p>\n<ul><li>A. $0.076$ (correct to 2 significant figures).</li><li>B. $0.0765$ (correct to 3 decimal places).</li><li>C. $0.07654$ (correct to 4 significant figures).</li><li>D. $0.076540$ (correct to 5 decimal places).</li></ul>",
+   "file": "2016_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2016,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 5,
+   "title": "第 5 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "一元方程"
+   ],
+   "text": "If $4\\alpha+\\beta=7\\alpha+3\\beta=5$, then $\\beta=$\n\n- A. $-3$.\n- B. $-2$.\n- C. $2$.\n- D. $3$.",
+   "html": "<p>5.&nbsp;&nbsp;&nbsp;If $4\\alpha+\\beta=7\\alpha+3\\beta=5$, then $\\beta=$</p>\n<ul><li>A. $-3$.</li><li>B. $-2$.</li><li>C. $2$.</li><li>D. $3$.</li></ul>",
+   "file": "2016_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2016,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 6,
+   "title": "第 6 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "因式分解",
+    "代數化簡"
+   ],
+   "text": "Let $f(x)=4x^3+kx+3$, where $k$ is a constant. If $f(x)$ is divisible by $2x+1$, find the remainder when $f(x)$ is divided by $x+1$.\n\n- A. $-7$\n- B. $-6$\n- C. $0$\n- D. $5$",
+   "html": "<p>6.&nbsp;&nbsp;&nbsp;Let $f(x)=4x^3+kx+3$, where $k$ is a constant. If $f(x)$ is divisible by $2x+1$, find the remainder when $f(x)$ is divided by $x+1$.</p>\n<ul><li>A. $-7$</li><li>B. $-6$</li><li>C. $0$</li><li>D. $5$</li></ul>",
+   "file": "2016_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2016,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 7,
+   "title": "第 7 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "一元一次不等式"
+   ],
+   "text": "The solution of $-5x>21-2x$ and $6x-18<0$ is\n\n- A. $x<-7$.\n- B. $x<3$.\n- C. $-7<x<3$.\n- D. $x<-7$ or $x>3$.",
+   "html": "<p>7.&nbsp;&nbsp;&nbsp;The solution of $-5x&gt;21-2x$ and $6x-18&lt;0$ is</p>\n<ul><li>A. $x&lt;-7$.</li><li>B. $x&lt;3$.</li><li>C. $-7&lt;x&lt;3$.</li><li>D. $x&lt;-7$ or $x&gt;3$.</li></ul>",
+   "file": "2016_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2016,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 8,
+   "title": "第 8 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "二次函數"
+   ],
+   "text": "If $k$ is a constant such that the quadratic equation $x^2 + kx + 8k + 36 =0$ has equal roots, then $k=$\n\n- A. $-6$\n- B. $12$\n- C. $-4$ or $36$\n- D. $-18$ or $2$",
+   "html": "<p>8.&nbsp;&nbsp;&nbsp;If $k$ is a constant such that the quadratic equation $x^2 + kx + 8k + 36 =0$ has equal roots, then $k=$</p>\n<ul><li>A. $-6$</li><li>B. $12$</li><li>C. $-4$ or $36$</li><li>D. $-18$ or $2$</li></ul>",
+   "file": "2016_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2016,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 9,
+   "title": "第 9 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "二次函數"
+   ],
+   "text": "If $-1 < a <0$, which of the following may represent the graph of $y = (ax + 1)^2 + a$?\n\n- A. ![](2016_P2_figs/Q09A.png)\n- B. ![](2016_P2_figs/Q09B.png)\n- C. ![](2016_P2_figs/Q09C.png)\n- D. ![](2016_P2_figs/Q09D.png)",
+   "html": "<p>9.&nbsp;&nbsp;&nbsp;If $-1 &lt; a &lt;0$, which of the following may represent the graph of $y = (ax + 1)^2 + a$?</p>\n<ul><li>A. <img alt=\"option A\" src=\"2016P2_figs/Q09A.png\" /></li><li>B. <img alt=\"option B\" src=\"2016P2_figs/Q09B.png\" /></li><li>C. <img alt=\"option C\" src=\"2016P2_figs/Q09C.png\" /></li><li>D. <img alt=\"option D\" src=\"2016P2_figs/Q09D.png\" /></li></ul>",
+   "file": "2016_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2016,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 10,
+   "title": "第 10 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "百分比"
+   ],
+   "text": "The monthly salary of Donald is $25\\%$ higher than that of Peter while the monthly salary of Peter is $25\\%$ lower than that of Teresa. It is given that the monthly salary of Donald is $\\$33\\,360$. The monthly salary of Teresa is\n\n- A. $\\$31\\,275$\n- B. $\\$33\\,360$\n- C. $\\$35\\,584$\n- D. $\\$52\\,125$",
+   "html": "<p>10.&nbsp;&nbsp;&nbsp;The monthly salary of Donald is $25\\%$ higher than that of Peter while the monthly salary of Peter is $25\\%$ lower than that of Teresa. It is given that the monthly salary of Donald is $\\$33\\,360$. The monthly salary of Teresa is</p>\n<ul><li>A. $\\$31\\,275$</li><li>B. $\\$33\\,360$</li><li>C. $\\$35\\,584$</li><li>D. $\\$52\\,125$</li></ul>",
+   "file": "2016_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2016,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 11,
+   "title": "第 11 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "比與比例"
+   ],
+   "text": "If $x$ and $y$ are non-zero numbers such that $(3y-4x):(2x+y)=5:6$, then $x:y=$\n\n- A. $7:8$\n- B. $8:29$\n- C. $9:32$\n- D. $13:34$",
+   "html": "<p>11.&nbsp;&nbsp;&nbsp;If $x$ and $y$ are non-zero numbers such that $(3y-4x):(2x+y)=5:6$, then $x:y=$</p>\n<ul><li>A. $7:8$</li><li>B. $8:29$</li><li>C. $9:32$</li><li>D. $13:34$</li></ul>",
+   "file": "2016_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2016,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 12,
+   "title": "第 12 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "變分"
+   ],
+   "text": "It is given that $z$ varies directly as $\\sqrt{x}$ and inversely as $y$. If $x$ is decreased by $36\\%$ and $y$ is increased by $60\\%$, then $z$\n\n- A. is increased by $24\\%$\n- B. is increased by $28\\%$\n- C. is decreased by $40\\%$\n- D. is decreased by $50\\%$",
+   "html": "<p>12.&nbsp;&nbsp;&nbsp;It is given that $z$ varies directly as $\\sqrt{x}$ and inversely as $y$. If $x$ is decreased by $36\\%$ and $y$ is increased by $60\\%$, then $z$</p>\n<ul><li>A. is increased by $24\\%$</li><li>B. is increased by $28\\%$</li><li>C. is decreased by $40\\%$</li><li>D. is decreased by $50\\%$</li></ul>",
+   "file": "2016_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2016,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 13,
+   "title": "第 13 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "代數化簡",
+    "一元方程"
+   ],
+   "text": "The cost of flour of brand $X$ is $\\$42/kg$. If $3kg$ of flour of brand $X$ and $2kg$ of flour of brand $Y$ are mixed so that the cost of the mixture is $\\$36/kg$, find the cost of flour of brand $Y$.\n\n- A. $\\$27/kg$\n- B. $\\$30/kg$\n- C. $\\$32/kg$\n- D. $\\$39/kg$",
+   "html": "<p>13.&nbsp;&nbsp;&nbsp;The cost of flour of brand $X$ is $\\$42/kg$. If $3kg$ of flour of brand $X$ and $2kg$ of flour of brand $Y$ are mixed so that the cost of the mixture is $\\$36/kg$, find the cost of flour of brand $Y$.</p>\n<ul><li>A. $\\$27/kg$</li><li>B. $\\$30/kg$</li><li>C. $\\$32/kg$</li><li>D. $\\$39/kg$</li></ul>",
+   "file": "2016_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2016,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 14,
+   "title": "第 14 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "數列"
+   ],
+   "text": "In the figure, the 1st pattern consists of $9$ dots. For any positive integer $n$, the $(n+1)$th pattern is formed by adding $5$ dots to the $n$th pattern. Find the number of dots in the 7th pattern.\n\u0001IMG0\u0001\n\n- A. $29$\n- B. $34$\n- C. $39$\n- D. $44$",
+   "html": "<p>14.&nbsp;&nbsp;&nbsp;In the figure, the 1st pattern consists of $9$ dots. For any positive integer $n$, the $(n+1)$th pattern is formed by adding $5$ dots to the $n$th pattern. Find the number of dots in the 7th pattern.</p>\n<p><img alt=\"Figure Q14 (as printed)\" src=\"2016P2_figs/Q14.png\" /></p>\n<ul><li>A. $29$</li><li>B. $34$</li><li>C. $39$</li><li>D. $44$</li></ul>",
+   "file": "2016_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2016,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 15,
+   "title": "第 15 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "相似三角形"
+   ],
+   "text": "According to the figure, which of the following must be true?\n\u0001IMG0\u0001\nI. $a+c=180^\\circ$\nII. $a+b-c=180^\\circ$\nIII. $b+c=360^\\circ$\n\n- A. I only\n- B. II only\n- C. I and III only\n- D. II and III only",
+   "html": "<p>15.&nbsp;&nbsp;&nbsp;According to the figure, which of the following must be true?</p>\n<p><img alt=\"Figure Q15 (as printed)\" src=\"2016P2_figs/Q15.png\" /></p>\n<p>I. $a+c=180^\\circ$</p>\n<p>II. $a+b-c=180^\\circ$</p>\n<p>III. $b+c=360^\\circ$</p>\n<ul><li>A. I only</li><li>B. II only</li><li>C. I and III only</li><li>D. II and III only</li></ul>",
+   "file": "2016_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2016,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 16,
+   "title": "第 16 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "直線方程"
+   ],
+   "text": "In the figure, $ABC$ is a straight line. If $AB=24\\text{ cm}$, $AD=40\\text{ cm}$, $BD=32\\text{ cm}$ and $CD=68\\text{ cm}$, then $BC=$\n\u0001IMG0\u0001\n\n- A. $43\\text{ cm}$.\n- B. $54\\text{ cm}$.\n- C. $55\\text{ cm}$.\n- D. $60\\text{ cm}$.",
+   "html": "<p>16.&nbsp;&nbsp;&nbsp;In the figure, $ABC$ is a straight line. If $AB=24\\text{ cm}$, $AD=40\\text{ cm}$, $BD=32\\text{ cm}$ and $CD=68\\text{ cm}$, then $BC=$</p>\n<p><img alt=\"Figure Q16 (as printed)\" src=\"2016P2_figs/Q16.png\" /></p>\n<ul><li>A. $43\\text{ cm}$.</li><li>B. $54\\text{ cm}$.</li><li>C. $55\\text{ cm}$.</li><li>D. $60\\text{ cm}$.</li></ul>",
+   "file": "2016_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2016,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 17,
+   "title": "第 17 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "相似三角形"
+   ],
+   "text": "In the figure, $ABCD$ is a parallelogram. $E$ is a point lying on $CD$ such that $BE=CE$. If $\\angle ADC=114^\\circ$, then $\\angle ABE=$\n\u0001IMG0\u0001\n\n- A. $48^\\circ$.\n- B. $57^\\circ$.\n- C. $62^\\circ$.\n- D. $66^\\circ$.",
+   "html": "<p>17.&nbsp;&nbsp;&nbsp;In the figure, $ABCD$ is a parallelogram. $E$ is a point lying on $CD$ such that $BE=CE$. If $\\angle ADC=114^\\circ$, then $\\angle ABE=$</p>\n<p><img alt=\"Figure Q17 (as printed)\" src=\"2016P2_figs/Q17.png\" /></p>\n<ul><li>A. $48^\\circ$.</li><li>B. $57^\\circ$.</li><li>C. $62^\\circ$.</li><li>D. $66^\\circ$.</li></ul>",
+   "file": "2016_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2016,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 18,
+   "title": "第 18 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "求積法"
+   ],
+   "text": "The figure shows a right prism. Find the volume of the prism.\n\u0001IMG0\u0001\n\n- A. $216 \\text{ cm}^{3}$\n- B. $240 \\text{ cm}^{3}$\n- C. $300 \\text{ cm}^{3}$\n- D. $328 \\text{ cm}^{3}$",
+   "html": "<p>18.&nbsp;&nbsp;&nbsp;The figure shows a right prism. Find the volume of the prism.</p>\n<p><img alt=\"Figure Q18 (as printed)\" src=\"2016P2_figs/Q18.png\" /></p>\n<ul><li>A. $216 \\text{ cm}^{3}$</li><li>B. $240 \\text{ cm}^{3}$</li><li>C. $300 \\text{ cm}^{3}$</li><li>D. $328 \\text{ cm}^{3}$</li></ul>",
+   "file": "2016_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2016,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 19,
+   "title": "第 19 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "求積法"
+   ],
+   "text": "In the figure, $OAB$ and $OCD$ are sectors with centre $O$, where $OA=33 \\text{ cm}$ and $OC=39 \\text{ cm}$. The area of the shaded region $ABDC$ is $72 \\pi \\mathrm{cm}^{2}$. Which of the following is/are true?\n\u0001IMG0\u0001\nI. The angle of the sector $OAB$ is $60^{\\circ}$.\nII. The area of the sector $OAB$ is $11 \\pi \\mathrm{cm}^{2}$.\nIII. The perimeter of the sector $OCD$ is $13 \\pi \\mathrm{cm}$.\n\n- A. I only\n- B. II only\n- C. I and III only\n- D. II and III only",
+   "html": "<p>19.&nbsp;&nbsp;&nbsp;In the figure, $OAB$ and $OCD$ are sectors with centre $O$, where $OA=33 \\text{ cm}$ and $OC=39 \\text{ cm}$. The area of the shaded region $ABDC$ is $72 \\pi \\mathrm{cm}^{2}$. Which of the following is/are true?</p>\n<p><img alt=\"Figure Q19 (as printed)\" src=\"2016P2_figs/Q19.png\" /></p>\n<p>I. The angle of the sector $OAB$ is $60^{\\circ}$.</p>\n<p>II. The area of the sector $OAB$ is $11 \\pi \\mathrm{cm}^{2}$.</p>\n<p>III. The perimeter of the sector $OCD$ is $13 \\pi \\mathrm{cm}$.</p>\n<ul><li>A. I only</li><li>B. II only</li><li>C. I and III only</li><li>D. II and III only</li></ul>",
+   "file": "2016_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2016,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 20,
+   "title": "第 20 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "平面幾何"
+   ],
+   "text": "In the figure, $ABCD$, $CDEF$ and $EFGH$ are squares. $AG$ cuts $CD$ and $EF$ at $P$ and $Q$ respectively. Find the ratio of the area of quadrilateral $DEQP$ to the area of quadrilateral $ABCP$.\n\u0001IMG0\u0001\n\n- A. $1:2$\n- B. $2:3$\n- C. $3:5$\n- D. $4:9$",
+   "html": "<p>20.&nbsp;&nbsp;&nbsp;In the figure, $ABCD$, $CDEF$ and $EFGH$ are squares. $AG$ cuts $CD$ and $EF$ at $P$ and $Q$ respectively. Find the ratio of the area of quadrilateral $DEQP$ to the area of quadrilateral $ABCP$.</p>\n<p><img alt=\"Figure Q20 (as printed)\" src=\"2016P2_figs/Q20.png\" /></p>\n<ul><li>A. $1:2$</li><li>B. $2:3$</li><li>C. $3:5$</li><li>D. $4:9$</li></ul>",
+   "file": "2016_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2016,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 21,
+   "title": "第 21 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "三角學"
+   ],
+   "text": "In the figure, $AD=$\n\u0001IMG0\u0001\n\n- A. $AB\\cos a + BC\\cos c$\n- B. $AB\\cos a + BC\\sin c$\n- C. $AB\\sin a + BC\\cos c$\n- D. $AB\\sin a + BC\\sin c$",
+   "html": "<p>21.&nbsp;&nbsp;&nbsp;In the figure, $AD=$</p>\n<p><img alt=\"Figure Q21 (as printed)\" src=\"2016P2_figs/Q21.png\" /></p>\n<ul><li>A. $AB\\cos a + BC\\cos c$</li><li>B. $AB\\cos a + BC\\sin c$</li><li>C. $AB\\sin a + BC\\cos c$</li><li>D. $AB\\sin a + BC\\sin c$</li></ul>",
+   "file": "2016_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2016,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 22,
+   "title": "第 22 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "相似三角形",
+    "圓的幾何"
+   ],
+   "text": "In the figure, $ABCD$ is a rhombus. $C$ is the centre of the circle $BDE$ and $ADE$ is a straight line. $BE$ and $CD$ intersect at $F$. If $\\angle ADC =118^\\circ$, then $\\angle DFE=$\n\u0001IMG0\u0001\n\n- A. $59^\\circ$\n- B. $62^\\circ$\n- C. $78^\\circ$\n- D. $87^\\circ$",
+   "html": "<p>22.&nbsp;&nbsp;&nbsp;In the figure, $ABCD$ is a rhombus. $C$ is the centre of the circle $BDE$ and $ADE$ is a straight line. $BE$ and $CD$ intersect at $F$. If $\\angle ADC =118^\\circ$, then $\\angle DFE=$</p>\n<p><img alt=\"Figure Q22 (as printed)\" src=\"2016P2_figs/Q22.png\" /></p>\n<ul><li>A. $59^\\circ$</li><li>B. $62^\\circ$</li><li>C. $78^\\circ$</li><li>D. $87^\\circ$</li></ul>",
+   "file": "2016_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2016,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 23,
+   "title": "第 23 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "對稱與變換"
+   ],
+   "text": "The figure below consists of eight identical regular hexagons. The number of axes of reflectional symmetry of the figure is\n\u0001IMG0\u0001\n\n- A. 2\n- B. 4\n- C. 6\n- D. ",
+   "html": "<p>23.&nbsp;&nbsp;&nbsp;The figure below consists of eight identical regular hexagons. The number of axes of reflectional symmetry of the figure is</p>\n<p><img alt=\"Figure Q23 (as printed)\" src=\"2016P2_figs/Q23.png\" /></p>\n<ul><li>A. 2</li><li>B. 4</li><li>C. 6</li><li>D. </li></ul>",
+   "file": "2016_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2016,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 24,
+   "title": "第 24 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "立體幾何"
+   ],
+   "text": "If the sum of the interior angles of a regular $n$-sided polygon is $3240^\\circ$, which of the following is true?\n\n- A. The value of $n$ is 16.\n- B. Each exterior angle of the polygon is $18^\\circ$.\n- C. The number of diagonals of the polygon is 20.\n- D. Each interior angle of the polygon is $160^\\circ$.",
+   "html": "<p>24.&nbsp;&nbsp;&nbsp;If the sum of the interior angles of a regular $n$-sided polygon is $3240^\\circ$, which of the following is true?</p>\n<ul><li>A. The value of $n$ is 16.</li><li>B. Each exterior angle of the polygon is $18^\\circ$.</li><li>C. The number of diagonals of the polygon is 20.</li><li>D. Each interior angle of the polygon is $160^\\circ$.</li></ul>",
+   "file": "2016_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2016,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 25,
+   "title": "第 25 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "直線方程"
+   ],
+   "text": "If the straight lines $hx + ky + 15 =0$ and $4x + 3y - 5 =0$ are perpendicular to each other and intersect at a point on the $x$-axis, then $k =$\n\n- A. $-12$.\n- B. $-4$.\n- C. $3$.\n- D. $16$.",
+   "html": "<p>25.&nbsp;&nbsp;&nbsp;If the straight lines $hx + ky + 15 =0$ and $4x + 3y - 5 =0$ are perpendicular to each other and intersect at a point on the $x$-axis, then $k =$</p>\n<ul><li>A. $-12$.</li><li>B. $-4$.</li><li>C. $3$.</li><li>D. $16$.</li></ul>",
+   "file": "2016_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2016,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 26,
+   "title": "第 26 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "坐標幾何",
+    "直線方程"
+   ],
+   "text": "The coordinates of the points $A$ and $B$ are $(9, -2)$ and $(-1, 8)$ respectively. If $C$ is a point lying on the straight line $x - 2y =0$ such that $AC = BC$, then the $x$-coordinate of $C$ is\n\n- A. $1$.\n- B. $2$.\n- C. $3$.\n- D. $4$.",
+   "html": "<p>26.&nbsp;&nbsp;&nbsp;The coordinates of the points $A$ and $B$ are $(9, -2)$ and $(-1, 8)$ respectively. If $C$ is a point lying on the straight line $x - 2y =0$ such that $AC = BC$, then the $x$-coordinate of $C$ is</p>\n<ul><li>A. $1$.</li><li>B. $2$.</li><li>C. $3$.</li><li>D. $4$.</li></ul>",
+   "file": "2016_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2016,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 27,
+   "title": "第 27 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "圓的幾何",
+    "圓的方程"
+   ],
+   "text": "The equation of the circle $C$ is $3x^2 + 3y^2 - 12x + 30y + 65 =0$. Which of the following are true?\nI. The radius of $C$ is $14$.\nII. The origin lies outside $C$.\nIII. The coordinates of the centre of $C$ are $(2, -5)$.\n\n- A. I and II only.\n- B. I and III only.\n- C. II and III only.\n- D. I, II and III.",
+   "html": "<p>27.&nbsp;&nbsp;&nbsp;The equation of the circle $C$ is $3x^2 + 3y^2 - 12x + 30y + 65 =0$. Which of the following are true?</p>\n<p>I. The radius of $C$ is $14$.</p>\n<p>II. The origin lies outside $C$.</p>\n<p>III. The coordinates of the centre of $C$ are $(2, -5)$.</p>\n<ul><li>A. I and II only.</li><li>B. I and III only.</li><li>C. II and III only.</li><li>D. I, II and III.</li></ul>",
+   "file": "2016_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2016,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 28,
+   "title": "第 28 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "概率"
+   ],
+   "text": "Christine has one \\$1 coin, one \\$2 coin, one \\$5 coin and one \\$10 coin in her pocket. If Christine takes out three coins randomly from her pocket, find the probability that the total value of the three coins taken out is $\\$11$.\n\n- A. $\\dfrac{1}{2}$\n- B. $\\dfrac{1}{4}$\n- C. $\\dfrac{3}{4}$\n- D. $\\dfrac{23}{24}$",
+   "html": "<p>28.&nbsp;&nbsp;&nbsp;Christine has one \\$1 coin, one \\$2 coin, one \\$5 coin and one \\$10 coin in her pocket. If Christine takes out three coins randomly from her pocket, find the probability that the total value of the three coins taken out is $\\$11$.</p>\n<ul><li>A. $\\dfrac{1}{2}$</li><li>B. $\\dfrac{1}{4}$</li><li>C. $\\dfrac{3}{4}$</li><li>D. $\\dfrac{23}{24}$</li></ul>",
+   "file": "2016_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2016,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 29,
+   "title": "第 29 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "概率"
+   ],
+   "text": "A bag contains 1 red ball, 3 yellow balls and 6 white balls. In a lucky draw, a ball is randomly drawn from the bag and a certain number of tokens will be got according to the following table:\n| Colour of the ball drawn | Red | Yellow | White |\n|--------------------------|-----|--------|-------|\n| Number of tokens got     | 90  | 20     | 10    |\nFind the expected number of tokens got in the lucky draw.\n\n- A. \n- B. 21\n- C. 40\n- D. 61",
+   "html": "<p>29.&nbsp;&nbsp;&nbsp;A bag contains 1 red ball, 3 yellow balls and 6 white balls. In a lucky draw, a ball is randomly drawn from the bag and a certain number of tokens will be got according to the following table:</p>\n<table><thead><tr><th>Colour of the ball drawn</th><th>Red</th><th>Yellow</th><th>White</th></tr></thead><tbody><tr><td>Number of tokens got</td><td>90</td><td>20</td><td>10</td></tr></tbody></table>\n<p>Find the expected number of tokens got in the lucky draw.</p>\n<ul><li>A. </li><li>B. 21</li><li>C. 40</li><li>D. 61</li></ul>",
+   "file": "2016_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2016,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 30,
+   "title": "第 30 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "統計"
+   ],
+   "text": "Consider the following data:\n32 68 79 86 88 98 98 a b c\nIf the mean and the mode of the above data are 77 and 68 respectively, then the median of the above data is\n\n- A. 76\n- B. 82\n- C. 85\n- D. 93",
+   "html": "<p>30.&nbsp;&nbsp;&nbsp;Consider the following data:</p>\n<p>32&nbsp;&nbsp;&nbsp;68&nbsp;&nbsp;&nbsp;79&nbsp;&nbsp;&nbsp;86&nbsp;&nbsp;&nbsp;88&nbsp;&nbsp;&nbsp;98&nbsp;&nbsp;&nbsp;98&nbsp;&nbsp;&nbsp;a&nbsp;&nbsp;&nbsp;b&nbsp;&nbsp;&nbsp;c</p>\n<p>If the mean and the mode of the above data are 77 and 68 respectively, then the median of the above data is</p>\n<ul><li>A. 76</li><li>B. 82</li><li>C. 85</li><li>D. 93</li></ul>",
+   "file": "2016_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2016,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 31,
+   "title": "第 31 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "因式分解"
+   ],
+   "text": "The L.C.M. of $9a^2b$, $12a^4b^3$ and $15a^6$ is\n\n- A. $3a^2$.\n- B. $3a^2b$.\n- C. $180a^6b^3$.\n- D. $180a^{12}b^4$.",
+   "html": "<p>31.&nbsp;&nbsp;&nbsp;The L.C.M. of $9a^2b$, $12a^4b^3$ and $15a^6$ is</p>\n<ul><li>A. $3a^2$.</li><li>B. $3a^2b$.</li><li>C. $180a^6b^3$.</li><li>D. $180a^{12}b^4$.</li></ul>",
+   "file": "2016_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2016,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 32,
+   "title": "第 32 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "對數",
+    "函數"
+   ],
+   "text": "The graph in the figure shows the linear relation between $x$ and $\\log_9y$. If $y=ab^x$, then $b=$\n\u0001IMG0\u0001\n\n- A. $-2$.\n- B. $\\dfrac{1}{81}$.\n- C. $\\dfrac{1}{2}$.\n- D. $3$.",
+   "html": "<p>32.&nbsp;&nbsp;&nbsp;The graph in the figure shows the linear relation between $x$ and $\\log_9y$. If $y=ab^x$, then $b=$</p>\n<p><img alt=\"Figure Q32 (as printed)\" src=\"2016P2_figs/Q32.png\" /></p>\n<ul><li>A. $-2$.</li><li>B. $\\dfrac{1}{81}$.</li><li>C. $\\dfrac{1}{2}$.</li><li>D. $3$.</li></ul>",
+   "file": "2016_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2016,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 33,
+   "title": "第 33 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "數制"
+   ],
+   "text": "BC000DE000000$_{16}=$\n\n- A. $188 \\times 16^{11} + 222 \\times 16^6$.\n- B. $205 \\times 16^{11} + 239 \\times 16^6$.\n- C. $188 \\times 16^{12} + 222 \\times 16^7$.\n- D. $205 \\times 16^{12} + 239 \\times 16^7$. Go on to the next page",
+   "html": "<p>33.&nbsp;&nbsp;&nbsp;BC000DE000000$_{16}=$</p>\n<ul><li>A. $188 \\times 16^{11} + 222 \\times 16^6$.</li><li>B. $205 \\times 16^{11} + 239 \\times 16^6$.</li><li>C. $188 \\times 16^{12} + 222 \\times 16^7$.</li><li>D. $205 \\times 16^{12} + 239 \\times 16^7$. Go on to the next page</li></ul>",
+   "file": "2016_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2016,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 34,
+   "title": "第 34 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "複數",
+    "代數化簡"
+   ],
+   "text": "Let $u=\\dfrac{7}{a+i}$ and $v=\\dfrac{7}{a-i}$, where $a$ is a real number. Which of the following must be true?\nI. $uv$ is a rational number.\nII. The real part of $u$ is equal to the real part of $v$.\nIII. The imaginary part of $\\dfrac{1}{u}$ is equal to the imaginary part of $\\dfrac{1}{v}$.\n\n- A. I only\n- B. II only\n- C. I and III only\n- D. II and III only",
+   "html": "<p>34.&nbsp;&nbsp;&nbsp;Let $u=\\dfrac{7}{a+i}$ and $v=\\dfrac{7}{a-i}$, where $a$ is a real number. Which of the following must be true?</p>\n<p>I. $uv$ is a rational number.</p>\n<p>II. The real part of $u$ is equal to the real part of $v$.</p>\n<p>III. The imaginary part of $\\dfrac{1}{u}$ is equal to the imaginary part of $\\dfrac{1}{v}$.</p>\n<ul><li>A. I only</li><li>B. II only</li><li>C. I and III only</li><li>D. II and III only</li></ul>",
+   "file": "2016_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2016,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 35,
+   "title": "第 35 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "函數",
+    "直線方程"
+   ],
+   "text": "In the figure, $PQ$ and $SR$ are parallel to the $x$-axis. If $(x, y)$ is a point lying in the shaded region $PQRS$ (including the boundary), at which point does $7y-5x+3$ attain its greatest value?\n\u0001IMG0\u0001\n\n- A. $P$\n- B. $Q$\n- C. $R$\n- D. $S$",
+   "html": "<p>35.&nbsp;&nbsp;&nbsp;In the figure, $PQ$ and $SR$ are parallel to the $x$-axis. If $(x, y)$ is a point lying in the shaded region $PQRS$ (including the boundary), at which point does $7y-5x+3$ attain its greatest value?</p>\n<p><img alt=\"Figure Q35 (as printed)\" src=\"2016P2_figs/Q35.png\" /></p>\n<ul><li>A. $P$</li><li>B. $Q$</li><li>C. $R$</li><li>D. $S$</li></ul>",
+   "file": "2016_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2016,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 36,
+   "title": "第 36 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "等比數列",
+    "數列"
+   ],
+   "text": "Let $a_n$ be the $n$th term of a geometric sequence. If $a_3=21$ and $a_7=189$, which of the following must be true?\nI. The common ratio of the sequence is less than 1.\nII. Some of the terms of the sequence are irrational numbers.\nIII. The sum of the first 99 terms of the sequence is greater than $3\\times 10^{24}$.\n\n- A. I only\n- B. II only\n- C. I and III only\n- D. II and III only",
+   "html": "<p>36.&nbsp;&nbsp;&nbsp;Let $a_n$ be the $n$th term of a geometric sequence. If $a_3=21$ and $a_7=189$, which of the following must be true?</p>\n<p>I. The common ratio of the sequence is less than 1.</p>\n<p>II. Some of the terms of the sequence are irrational numbers.</p>\n<p>III. The sum of the first 99 terms of the sequence is greater than $3\\times 10^{24}$.</p>\n<ul><li>A. I only</li><li>B. II only</li><li>C. I and III only</li><li>D. II and III only</li></ul>",
+   "file": "2016_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2016,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 37,
+   "title": "第 37 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "三角學"
+   ],
+   "text": "Let $a$ and $b$ be constants. If the figure shows the graph of $y = a \\cos 2x^\\circ$, then\n\u0001IMG0\u0001\n\n- A. $a = -2$ and $b = 90$.\n- B. $a = -2$ and $b = 360$.\n- C. $a = 2$ and $b = 90$.\n- D. $a = 2$ and $b = 360$.",
+   "html": "<p>37.&nbsp;&nbsp;&nbsp;Let $a$ and $b$ be constants. If the figure shows the graph of $y = a \\cos 2x^\\circ$, then</p>\n<p><img alt=\"Figure Q37 (as printed)\" src=\"2016P2_figs/Q37.png\" /></p>\n<ul><li>A. $a = -2$ and $b = 90$.</li><li>B. $a = -2$ and $b = 360$.</li><li>C. $a = 2$ and $b = 90$.</li><li>D. $a = 2$ and $b = 360$.</li></ul>",
+   "file": "2016_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2016,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 38,
+   "title": "第 38 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "三角學"
+   ],
+   "text": "For $0^\\circ \\leq \\theta \\leq 360^\\circ$, how many roots does the equation $5 \\sin^2 \\theta + \\sin \\theta - 4 = 0$ have?\n\n- A. 2\n- B. 3\n- C. 4\n- D. 5",
+   "html": "<p>38.&nbsp;&nbsp;&nbsp;For $0^\\circ \\leq \\theta \\leq 360^\\circ$, how many roots does the equation $5 \\sin^2 \\theta + \\sin \\theta - 4 = 0$ have?</p>\n<ul><li>A. 2</li><li>B. 3</li><li>C. 4</li><li>D. 5</li></ul>",
+   "file": "2016_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2016,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 39,
+   "title": "第 39 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "三角學"
+   ],
+   "text": "In the figure, $ABCDEFGH$ is a rectangular block. $AC$ and $BD$ intersect at $P$. $Q$ is a point lying on $CH$ such that $CQ = 9 \\text{ cm}$ and $QH = 15 \\text{ cm}$. Find $\\sin \\angle PFQ$.\n\u0001IMG0\u0001\n\n- A. $\\dfrac{33}{65}$\n- B. $\\dfrac{56}{65}$\n- C. $\\dfrac{13}{5\\sqrt{181}}$\n- D. $\\dfrac{58}{13\\sqrt{181}}$",
+   "html": "<p>39.&nbsp;&nbsp;&nbsp;In the figure, $ABCDEFGH$ is a rectangular block. $AC$ and $BD$ intersect at $P$. $Q$ is a point lying on $CH$ such that $CQ = 9 \\text{ cm}$ and $QH = 15 \\text{ cm}$. Find $\\sin \\angle PFQ$.</p>\n<p><img alt=\"Figure Q39 (as printed)\" src=\"2016P2_figs/Q39.png\" /></p>\n<ul><li>A. $\\dfrac{33}{65}$</li><li>B. $\\dfrac{56}{65}$</li><li>C. $\\dfrac{13}{5\\sqrt{181}}$</li><li>D. $\\dfrac{58}{13\\sqrt{181}}$</li></ul>",
+   "file": "2016_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2016,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 40,
+   "title": "第 40 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "圓的幾何",
+    "相似三角形"
+   ],
+   "text": "In the figure, $AC$ is a diameter of the circle $ABCD$. $PB$ and $PD$ are tangents to the circle. $AD$ produced and $BC$ produced meet at $Q$. If $\\angle BPD =68^\\circ$, then $\\angle AQB =$\n\u0001IMG0\u0001\n\n- A. $22^\\circ$.\n- B. $28^\\circ$.\n- C. $32^\\circ$.\n- D. $34^\\circ$.",
+   "html": "<p>40.&nbsp;&nbsp;&nbsp;In the figure, $AC$ is a diameter of the circle $ABCD$. $PB$ and $PD$ are tangents to the circle. $AD$ produced and $BC$ produced meet at $Q$. If $\\angle BPD =68^\\circ$, then $\\angle AQB =$</p>\n<p><img alt=\"Figure Q40 (as printed)\" src=\"2016P2_figs/Q40.png\" /></p>\n<ul><li>A. $22^\\circ$.</li><li>B. $28^\\circ$.</li><li>C. $32^\\circ$.</li><li>D. $34^\\circ$.</li></ul>",
+   "file": "2016_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2016,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 41,
+   "title": "第 41 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "直線方程",
+    "圓的幾何"
+   ],
+   "text": "The straight line $2x - y - 6 =0$ and the circle $x^2 + y^2 - 8y - 14 =0$ intersect at $P$ and $Q$. Find the $y$-coordinate of the mid-point of $PQ$.\n\n- A. $-4$\n- B. $-2$\n- C. $2$\n- D. $4$",
+   "html": "<p>41.&nbsp;&nbsp;&nbsp;The straight line $2x - y - 6 =0$ and the circle $x^2 + y^2 - 8y - 14 =0$ intersect at $P$ and $Q$. Find the $y$-coordinate of the mid-point of $PQ$.</p>\n<ul><li>A. $-4$</li><li>B. $-2$</li><li>C. $2$</li><li>D. $4$</li></ul>",
+   "file": "2016_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2016,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 42,
+   "title": "第 42 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "排列與組合",
+    "概率"
+   ],
+   "text": "There are 9 cans of coffee and 3 cans of tea in a box. If 4 cans are randomly chosen from the box, find the probability that at least 2 cans of tea are chosen.\n\n- A. $\\dfrac{13}{55}$\n- B. $\\dfrac{21}{55}$\n- C. $\\dfrac{34}{55}$\n- D. $\\dfrac{42}{55}$",
+   "html": "<p>42.&nbsp;&nbsp;&nbsp;There are 9 cans of coffee and 3 cans of tea in a box. If 4 cans are randomly chosen from the box, find the probability that at least 2 cans of tea are chosen.</p>\n<ul><li>A. $\\dfrac{13}{55}$</li><li>B. $\\dfrac{21}{55}$</li><li>C. $\\dfrac{34}{55}$</li><li>D. $\\dfrac{42}{55}$</li></ul>",
+   "file": "2016_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2016,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 43,
+   "title": "第 43 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "排列與組合"
+   ],
+   "text": "There are 20 boys and 15 girls in a class. If 6 students are selected from the class to form a committee consisting of at most 2 girls, how many different committees can be formed?\n\n- A. 271 320\n- B. 324 415\n- C. 508 725\n- D. 780 045",
+   "html": "<p>43.&nbsp;&nbsp;&nbsp;There are 20 boys and 15 girls in a class. If 6 students are selected from the class to form a committee consisting of at most 2 girls, how many different committees can be formed?</p>\n<ul><li>A. 271 320</li><li>B. 324 415</li><li>C. 508 725</li><li>D. 780 045</li></ul>",
+   "file": "2016_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2016,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 44,
+   "title": "第 44 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "幹葉圖",
+    "標準分"
+   ],
+   "text": "The stem-and-leaf diagram below shows the distribution of the scores (in marks) of a group of students in a test. Ada gets the highest score in the test.\n| Stem (tens) | Leaf (units) |\n| --- | --- |\n| 4 | 5 6 7 8 |\n| 5 | 5 5 6 8 |\n| 6 | 3 5 5 6 9 9 |\n| 7 | 0 0 1 |\n| 8 | 0 2 5 |\nWhich of the following is/are true?\nI. The upper quartile of the distribution is 55 marks.\nII. The standard score of Ada in the test is lower than 2.\nIII. The standard deviation of the distribution is greater than 12 marks.\n\n- A. I only\n- B. II only\n- C. I and III only\n- D. II and III only",
+   "html": "<p>44.&nbsp;&nbsp;&nbsp;The stem-and-leaf diagram below shows the distribution of the scores (in marks) of a group of students in a test. Ada gets the highest score in the test.</p>\n<table><thead><tr><th>Stem (tens)</th><th>Leaf (units)</th></tr></thead><tbody><tr><td>4</td><td>5 6 7 8</td></tr><tr><td>5</td><td>5 5 6 8</td></tr><tr><td>6</td><td>3 5 5 6 9 9</td></tr><tr><td>7</td><td>0 0 1</td></tr><tr><td>8</td><td>0 2 5</td></tr></tbody></table>\n<p>Which of the following is/are true?</p>\n<p>I. The upper quartile of the distribution is 55 marks.</p>\n<p>II. The standard score of Ada in the test is lower than 2.</p>\n<p>III. The standard deviation of the distribution is greater than 12 marks.</p>\n<ul><li>A. I only</li><li>B. II only</li><li>C. I and III only</li><li>D. II and III only</li></ul>",
+   "file": "2016_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2016,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 45,
+   "title": "第 45 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "標準差"
+   ],
+   "text": "The variance of a set of numbers is 49. Each number of the set is multiplied by 4 and then 9 is added to each resulting number to form a new set of numbers. Find the variance of the new set of numbers.\n\n- A. 196\n- B. 205\n- C. 784\n- D. 793",
+   "html": "<p>45.&nbsp;&nbsp;&nbsp;The variance of a set of numbers is 49. Each number of the set is multiplied by 4 and then 9 is added to each resulting number to form a new set of numbers. Find the variance of the new set of numbers.</p>\n<ul><li>A. 196</li><li>B. 205</li><li>C. 784</li><li>D. 793</li></ul>",
+   "file": "2016_P2_題目英文卷.md"
   },
   {
    "subject": "經濟",

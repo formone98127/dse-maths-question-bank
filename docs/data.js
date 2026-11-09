@@ -2149,7 +2149,7 @@ window.QB = {
     "三角比"
    ],
    "text": "The figure shows a regular tetrahedron $ABCD$. Find the angle between the plane $ABC$ and the plane $BCD$ correct to the nearest degree.\n\u0001IMG0\u0001\n\n- A. $48^\\circ$\n- B. $53^\\circ$\n- C. $60^\\circ$\n- D. $71^\\circ$",
-   "html": "<p>40.&nbsp;&nbsp;&nbsp;The figure shows a regular tetrahedron $ABCD$. Find the angle between the plane $ABC$ and the plane $BCD$ correct to the nearest degree.</p>\n<p><img alt=\"Figure Q40 (as printed)\" src=\"2012P2_figs/Q40.png\" /></p>\n<ul><li>A. $48^\\circ$</li><li>B. $53^\\circ$</li><li>C. $60^\\circ$</li><li>D. $71^\\circ$</li></ul>",
+   "html": "<p>40.&nbsp;&nbsp;&nbsp;The figure shows a regular tetrahedron $ABCD$. Find the angle between the plane $ABC$ and the plane $BCD$ correct to the nearest degree.</p>\n<p><img alt=\"Figure Q40 (as printed)\" src=\"2012P2_figs/Q40.png?v=3\" /></p>\n<ul><li>A. $48^\\circ$</li><li>B. $53^\\circ$</li><li>C. $60^\\circ$</li><li>D. $71^\\circ$</li></ul>",
    "file": "2012_P2_題目英文卷.md"
   },
   {
@@ -2166,7 +2166,7 @@ window.QB = {
     "平面幾何"
    ],
    "text": "In the figure, $PQ$ is the tangent to the circle $ABC$ at $O$, where $O$ is the centre of the semicircle $PBQ$. It is given that $BCP$ is a straight line. If $\\angle BPQ = 12^\\circ$, then $\\angle BAC =$\n\u0001IMG0\u0001\n\n- A. $18^\\circ$\n- B. $24^\\circ$\n- C. $36^\\circ$\n- D. $54^\\circ$",
-   "html": "<p>41.&nbsp;&nbsp;&nbsp;In the figure, $PQ$ is the tangent to the circle $ABC$ at $O$, where $O$ is the centre of the semicircle $PBQ$. It is given that $BCP$ is a straight line. If $\\angle BPQ = 12^\\circ$, then $\\angle BAC =$</p>\n<p><img alt=\"Figure Q41 (as printed)\" src=\"2012P2_figs/Q41.png\" /></p>\n<ul><li>A. $18^\\circ$</li><li>B. $24^\\circ$</li><li>C. $36^\\circ$</li><li>D. $54^\\circ$</li></ul>",
+   "html": "<p>41.&nbsp;&nbsp;&nbsp;In the figure, $PQ$ is the tangent to the circle $ABC$ at $O$, where $O$ is the centre of the semicircle $PBQ$. It is given that $BCP$ is a straight line. If $\\angle BPQ = 12^\\circ$, then $\\angle BAC =$</p>\n<p><img alt=\"Figure Q41 (as printed)\" src=\"2012P2_figs/Q41.png?v=3\" /></p>\n<ul><li>A. $18^\\circ$</li><li>B. $24^\\circ$</li><li>C. $36^\\circ$</li><li>D. $54^\\circ$</li></ul>",
    "file": "2012_P2_題目英文卷.md"
   },
   {

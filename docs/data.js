@@ -1,5 +1,5 @@
 window.QB = {
- "generated": "2026-11-09 06:22",
+ "generated": "2026-11-09 06:34",
  "count": 1504,
  "questions": [
   {
@@ -10945,7 +10945,9 @@ window.QB = {
    "qno": 1,
    "title": "第 1 題",
    "section": "Paper 2　Section A",
-   "tags": [],
+   "tags": [
+    "因式分解"
+   ],
    "text": "$3m^2 - 5mn + 2n^2 + m - n =$\n\n- A. $(m - n)(3m - 2n + 1)$\n- B. $(m - n)(3m + 2n + 1)$\n- C. $(m + n)(3m - 2n - 1)$\n- D. $(m + n)(3m + 2n - 1)$",
    "html": "<p>1.&nbsp;&nbsp;&nbsp;$3m^2 - 5mn + 2n^2 + m - n =$</p>\n<ul><li>A. $(m - n)(3m - 2n + 1)$</li><li>B. $(m - n)(3m + 2n + 1)$</li><li>C. $(m + n)(3m - 2n - 1)$</li><li>D. $(m + n)(3m + 2n - 1)$</li></ul>",
    "file": "2017_P2_題目英文卷.md"
@@ -10980,7 +10982,7 @@ window.QB = {
    "title": "第 2 題",
    "section": "Paper 2　Section A",
    "tags": [
-    "不等式"
+    "指數定律"
    ],
    "text": "$\\left(\\dfrac{1}{9^{555}}\\right)^{3^{444}} =$\n\n- A. 0\n- B. $\\dfrac{1}{3^{111}}$\n- C. $\\dfrac{1}{3^{222}}$\n- D. $\\dfrac{1}{3^{666}}$",
    "html": "<p>2.&nbsp;&nbsp;&nbsp;$\\left(\\dfrac{1}{9^{555}}\\right)^{3^{444}} =$</p>\n<ul><li>A. 0</li><li>B. $\\dfrac{1}{3^{111}}$</li><li>C. $\\dfrac{1}{3^{222}}$</li><li>D. $\\dfrac{1}{3^{666}}$</li></ul>",
@@ -11016,7 +11018,9 @@ window.QB = {
    "qno": 3,
    "title": "第 3 題",
    "section": "Paper 2　Section A",
-   "tags": [],
+   "tags": [
+    "一元方程"
+   ],
    "text": "If $\\dfrac{a + 4b}{2a} =2 + \\dfrac{b}{a}$, then $a =$\n\n- A. $\\dfrac{2b}{3}$\n- B. $\\dfrac{3b}{2}$\n- C. $\\dfrac{5b}{6}$\n- D. $\\dfrac{6b}{5}$",
    "html": "<p>3.&nbsp;&nbsp;&nbsp;If $\\dfrac{a + 4b}{2a} =2 + \\dfrac{b}{a}$, then $a =$</p>\n<ul><li>A. $\\dfrac{2b}{3}$</li><li>B. $\\dfrac{3b}{2}$</li><li>C. $\\dfrac{5b}{6}$</li><li>D. $\\dfrac{6b}{5}$</li></ul>",
    "file": "2017_P2_題目英文卷.md"
@@ -11029,7 +11033,9 @@ window.QB = {
    "qno": 4,
    "title": "第 4 題",
    "section": "Paper 2　Section A",
-   "tags": [],
+   "tags": [
+    "百分比"
+   ],
    "text": "$\\dfrac{1}{\\pi^4}=$\n\n- A. 0.0102 (correct to 3 significant figures).\n- B. 0.01025 (correct to 4 significant figures).\n- C. 0.01026 (correct to 5 decimal places).\n- D. 0.010266 (correct to 6 decimal places).",
    "html": "<p>4.&nbsp;&nbsp;&nbsp;$\\dfrac{1}{\\pi^4}=$</p>\n<ul><li>A. 0.0102 (correct to 3 significant figures).</li><li>B. 0.01025 (correct to 4 significant figures).</li><li>C. 0.01026 (correct to 5 decimal places).</li><li>D. 0.010266 (correct to 6 decimal places).</li></ul>",
    "file": "2017_P2_題目英文卷.md"
@@ -11042,7 +11048,9 @@ window.QB = {
    "qno": 5,
    "title": "第 5 題",
    "section": "Paper 2　Section A",
-   "tags": [],
+   "tags": [
+    "一元一次不等式"
+   ],
    "text": "The solution of $6-x<2x-3$ or $7-3x>1$ is\n\n- A. $x<2$.\n- B. $x>3$.\n- C. $2<x<3$.\n- D. $x<2$ or $x>3$.",
    "html": "<p>5.&nbsp;&nbsp;&nbsp;The solution of $6-x&lt;2x-3$ or $7-3x&gt;1$ is</p>\n<ul><li>A. $x&lt;2$.</li><li>B. $x&gt;3$.</li><li>C. $2&lt;x&lt;3$.</li><li>D. $x&lt;2$ or $x&gt;3$.</li></ul>",
    "file": "2017_P2_題目英文卷.md"
@@ -11056,7 +11064,7 @@ window.QB = {
    "title": "第 6 題",
    "section": "Paper 2　Section A",
    "tags": [
-    "函數"
+    "二次函數"
    ],
    "text": "Let $k$ be a constant. If $f(x)=2x^2-5x+k$, then $f(2)-f(-2)=$\n\n- A. -20.\n- B. 0.\n- C. 16.\n- D. 2k.",
    "html": "<p>6.&nbsp;&nbsp;&nbsp;Let $k$ be a constant. If $f(x)=2x^2-5x+k$, then $f(2)-f(-2)=$</p>\n<ul><li>A. -20.</li><li>B. 0.</li><li>C. 16.</li><li>D. 2k.</li></ul>",
@@ -11070,7 +11078,10 @@ window.QB = {
    "qno": 7,
    "title": "第 7 題",
    "section": "Paper 2　Section A",
-   "tags": [],
+   "tags": [
+    "因式分解",
+    "二次函數"
+   ],
    "text": "Let $p(x)=2x^2-11x+c$, where $c$ is a constant. If $p(x)$ is divisible by $x-7$, find the remainder when $p(x)$ is divided by $2x+1$.\n\n- A. -26\n- B. -15\n- C. 15\n- D. 26",
    "html": "<p>7.&nbsp;&nbsp;&nbsp;Let $p(x)=2x^2-11x+c$, where $c$ is a constant. If $p(x)$ is divisible by $x-7$, find the remainder when $p(x)$ is divided by $2x+1$.</p>\n<ul><li>A. -26</li><li>B. -15</li><li>C. 15</li><li>D. 26</li></ul>",
    "file": "2017_P2_題目英文卷.md"
@@ -11083,7 +11094,9 @@ window.QB = {
    "qno": 8,
    "title": "第 8 題",
    "section": "Paper 2　Section A",
-   "tags": [],
+   "tags": [
+    "二次函數"
+   ],
    "text": "If $m$ and $n$ are constants such that $4x^2 + m(x+1) + 28 = mx(x+3) + n(x-4)$, then $n =$\n\n- A. $-8$.\n- B. $-7$.\n- C. $4$.\n- D. $16$.",
    "html": "<p>8.&nbsp;&nbsp;&nbsp;If $m$ and $n$ are constants such that $4x^2 + m(x+1) + 28 = mx(x+3) + n(x-4)$, then $n =$</p>\n<ul><li>A. $-8$.</li><li>B. $-7$.</li><li>C. $4$.</li><li>D. $16$.</li></ul>",
    "file": "2017_P2_題目英文卷.md"
@@ -11096,7 +11109,9 @@ window.QB = {
    "qno": 9,
    "title": "第 9 題",
    "section": "Paper 2　Section A",
-   "tags": [],
+   "tags": [
+    "二次函數"
+   ],
    "text": "The figure shows the graph of $y = (px + 5)^2 + q$, where $p$ and $q$ are constants. Which of the following is true?\n\u0001IMG0\u0001\n\n- A. $p < 0$ and $q < 0$\n- B. $p < 0$ and $q > 0$\n- C. $p > 0$ and $q < 0$\n- D. $p > 0$ and $q > 0$",
    "html": "<p>9.&nbsp;&nbsp;&nbsp;The figure shows the graph of $y = (px + 5)^2 + q$, where $p$ and $q$ are constants. Which of the following is true?</p>\n<p><img alt=\"Figure Q9 (as printed)\" src=\"2017P2_figs/Q09.png\" /></p>\n<ul><li>A. $p &lt; 0$ and $q &lt; 0$</li><li>B. $p &lt; 0$ and $q &gt; 0$</li><li>C. $p &gt; 0$ and $q &lt; 0$</li><li>D. $p &gt; 0$ and $q &gt; 0$</li></ul>",
    "file": "2017_P2_題目英文卷.md"
@@ -11110,7 +11125,7 @@ window.QB = {
    "title": "第 10 題",
    "section": "Paper 2　Section A",
    "tags": [
-    "百分數／利息"
+    "百分比"
    ],
    "text": "A sum of \\$2 000 is deposited at an interest rate of 5% per annum for 4 years, compounded half-yearly. Find the interest correct to the nearest dollar.\n\n- A. \\$400\n- B. \\$431\n- C. \\$437\n- D. \\$440",
    "html": "<p>10.&nbsp;&nbsp;&nbsp;A sum of \\$2 000 is deposited at an interest rate of 5% per annum for 4 years, compounded half-yearly. Find the interest correct to the nearest dollar.</p>\n<ul><li>A. \\$400</li><li>B. \\$431</li><li>C. \\$437</li><li>D. \\$440</li></ul>",
@@ -11124,7 +11139,9 @@ window.QB = {
    "qno": 11,
    "title": "第 11 題",
    "section": "Paper 2　Section A",
-   "tags": [],
+   "tags": [
+    "求積法"
+   ],
    "text": "The scale of a map is 1:20 000. If the area of a zoo on the map is $4 \\text{ cm}^2$, then the actual area of the zoo is\n\n- A. $8 \\times 10^4 \\text{ m}^2$\n- B. $1.6 \\times 10^5 \\text{ m}^2$\n- C. $3.2 \\times 10^5 \\text{ m}^2$\n- D. $1 \\times 10^6 \\text{ m}^2$",
    "html": "<p>11.&nbsp;&nbsp;&nbsp;The scale of a map is 1:20 000. If the area of a zoo on the map is $4 \\text{ cm}^2$, then the actual area of the zoo is</p>\n<ul><li>A. $8 \\times 10^4 \\text{ m}^2$</li><li>B. $1.6 \\times 10^5 \\text{ m}^2$</li><li>C. $3.2 \\times 10^5 \\text{ m}^2$</li><li>D. $1 \\times 10^6 \\text{ m}^2$</li></ul>",
    "file": "2017_P2_題目英文卷.md"
@@ -11137,7 +11154,9 @@ window.QB = {
    "qno": 12,
    "title": "第 12 題",
    "section": "Paper 2　Section A",
-   "tags": [],
+   "tags": [
+    "二次函數"
+   ],
    "text": "It is given that $y$ is the sum of two parts, one part is a constant and the other part varies as $x^2$. When $x=1$, $y=7$ and when $x=2$, $y=13$. If $x=3$, then $y=$\n\n- A. 19.\n- B. 20.\n- C. 23.\n- D. 47.",
    "html": "<p>12.&nbsp;&nbsp;&nbsp;It is given that $y$ is the sum of two parts, one part is a constant and the other part varies as $x^2$. When $x=1$, $y=7$ and when $x=2$, $y=13$. If $x=3$, then $y=$</p>\n<ul><li>A. 19.</li><li>B. 20.</li><li>C. 23.</li><li>D. 47.</li></ul>",
    "file": "2017_P2_題目英文卷.md"
@@ -11150,7 +11169,9 @@ window.QB = {
    "qno": 13,
    "title": "第 13 題",
    "section": "Paper 2　Section A",
-   "tags": [],
+   "tags": [
+    "數列"
+   ],
    "text": "In the figure, the 1st pattern consists of 1 dot. For any positive integer $n$, the $(n+1)$th pattern is formed by adding $(2n+2)$ dots to the $n$th pattern. Find the number of dots in the 7th pattern.\n\u0001IMG0\u0001\n\n- A. 41\n- B. 55\n- C. 71\n- D. 161",
    "html": "<p>13.&nbsp;&nbsp;&nbsp;In the figure, the 1st pattern consists of 1 dot. For any positive integer $n$, the $(n+1)$th pattern is formed by adding $(2n+2)$ dots to the $n$th pattern. Find the number of dots in the 7th pattern.</p>\n<p><img alt=\"Figure Q13 (as printed)\" src=\"2017P2_figs/Q13.png\" /></p>\n<ul><li>A. 41</li><li>B. 55</li><li>C. 71</li><li>D. 161</li></ul>",
    "file": "2017_P2_題目英文卷.md"
@@ -11164,7 +11185,8 @@ window.QB = {
    "title": "第 14 題",
    "section": "Paper 2　Section A",
    "tags": [
-    "平面幾何"
+    "直線方程",
+    "求積法"
    ],
    "text": "In the figure, $D$ is a point lying on $AC$ such that $BD$ is perpendicular to $AC$. It is given that $AC=14$ cm and $BD=12$ cm. If the area of $\\triangle ABD$ is greater than the area of $\\triangle BCD$ by $24$ cm$^2$, then the perimeter of $\\triangle ABC$ is\n\u0001IMG0\u0001\n\n- A. 30 cm.\n- B. 42 cm.\n- C. 54 cm.\n- D. 84 cm. A B C D",
    "html": "<p>14.&nbsp;&nbsp;&nbsp;In the figure, $D$ is a point lying on $AC$ such that $BD$ is perpendicular to $AC$. It is given that $AC=14$ cm and $BD=12$ cm. If the area of $\\triangle ABD$ is greater than the area of $\\triangle BCD$ by $24$ cm$^2$, then the perimeter of $\\triangle ABC$ is</p>\n<p><img alt=\"Figure Q14 (as printed)\" src=\"2017P2_figs/Q14.png\" /></p>\n<ul><li>A. 30 cm.</li><li>B. 42 cm.</li><li>C. 54 cm.</li><li>D. 84 cm. A B C D</li></ul>",
@@ -11179,7 +11201,8 @@ window.QB = {
    "title": "第 15 題",
    "section": "Paper 2　Section A",
    "tags": [
-    "立體圖形"
+    "立體幾何",
+    "求積法"
    ],
    "text": "The base radius of a right circular cone is 2 times the base radius of a right circular cylinder while the height of the circular cylinder is 3 times the height of the circular cone. If the volume of the circular cone is $36\\pi\\, \\text{cm}^3$, then the volume of the circular cylinder is\n\n- A. $27\\pi\\, \\text{cm}^3$.\n- B. $48\\pi\\, \\text{cm}^3$.\n- C. $81\\pi\\, \\text{cm}^3$.\n- D. $144\\pi\\, \\text{cm}^3$.",
    "html": "<p>15.&nbsp;&nbsp;&nbsp;The base radius of a right circular cone is 2 times the base radius of a right circular cylinder while the height of the circular cylinder is 3 times the height of the circular cone. If the volume of the circular cone is $36\\pi\\, \\text{cm}^3$, then the volume of the circular cylinder is</p>\n<ul><li>A. $27\\pi\\, \\text{cm}^3$.</li><li>B. $48\\pi\\, \\text{cm}^3$.</li><li>C. $81\\pi\\, \\text{cm}^3$.</li><li>D. $144\\pi\\, \\text{cm}^3$.</li></ul>",
@@ -11194,7 +11217,8 @@ window.QB = {
    "title": "第 16 題",
    "section": "Paper 2　Section A",
    "tags": [
-    "平面幾何"
+    "相似三角形",
+    "求積法"
    ],
    "text": "In the figure, $ABCD$ and $BEDF$ are parallelograms. $E$ is a point lying on $BC$ such that $BE:EC=2:3$. $AC$ cuts $BF$ and $DE$ at $G$ and $H$ respectively. If the area of $\\triangle ABG$ is $135\\, \\text{cm}^2$, then the area of the quadrilateral $DFGH$ is\n\u0001IMG0\u0001\n\n- A. $60\\, \\text{cm}^2$.\n- B. $81\\, \\text{cm}^2$.\n- C. $90\\, \\text{cm}^2$.\n- D. $144\\, \\text{cm}^2$.",
    "html": "<p>16.&nbsp;&nbsp;&nbsp;In the figure, $ABCD$ and $BEDF$ are parallelograms. $E$ is a point lying on $BC$ such that $BE:EC=2:3$. $AC$ cuts $BF$ and $DE$ at $G$ and $H$ respectively. If the area of $\\triangle ABG$ is $135\\, \\text{cm}^2$, then the area of the quadrilateral $DFGH$ is</p>\n<p><img alt=\"Figure Q16 (as printed)\" src=\"2017P2_figs/Q16.png\" /></p>\n<ul><li>A. $60\\, \\text{cm}^2$.</li><li>B. $81\\, \\text{cm}^2$.</li><li>C. $90\\, \\text{cm}^2$.</li><li>D. $144\\, \\text{cm}^2$.</li></ul>",
@@ -11209,7 +11233,7 @@ window.QB = {
    "title": "第 17 題",
    "section": "Paper 2　Section A",
    "tags": [
-    "三角比／角"
+    "相似三角形"
    ],
    "text": "In the figure, $ABC$ is an equilateral triangle of side $16\\, \\text{cm}$. $D$ and $E$ are points lying on $AB$ and $BC$ respectively such that $AD=4\\, \\text{cm}$ and $\\angle CDE=60^\\circ$. Find $CE$.\n\u0001IMG0\u0001\n\n- A. $9\\, \\text{cm}$.\n- B. $10\\, \\text{cm}$.\n- C. $12\\, \\text{cm}$.\n- D. $13\\, \\text{cm}$.",
    "html": "<p>17.&nbsp;&nbsp;&nbsp;In the figure, $ABC$ is an equilateral triangle of side $16\\, \\text{cm}$. $D$ and $E$ are points lying on $AB$ and $BC$ respectively such that $AD=4\\, \\text{cm}$ and $\\angle CDE=60^\\circ$. Find $CE$.</p>\n<p><img alt=\"Figure Q17 (as printed)\" src=\"2017P2_figs/Q17.png\" /></p>\n<ul><li>A. $9\\, \\text{cm}$.</li><li>B. $10\\, \\text{cm}$.</li><li>C. $12\\, \\text{cm}$.</li><li>D. $13\\, \\text{cm}$.</li></ul>",
@@ -11224,7 +11248,7 @@ window.QB = {
    "title": "第 18 題",
    "section": "Paper 2　Section A",
    "tags": [
-    "三角比／角"
+    "相似三角形"
    ],
    "text": "In the figure, $AB = BC$ and $D$ is a point lying on $AE$ such that $AC = AD$. If $AE \\parallel BC$, then $\\angle ABC=$\n\u0001IMG0\u0001\n\n- A. $44^\\circ$.\n- B. $56^\\circ$.\n- C. $62^\\circ$.\n- D. $68^\\circ$.",
    "html": "<p>18.&nbsp;&nbsp;&nbsp;In the figure, $AB = BC$ and $D$ is a point lying on $AE$ such that $AC = AD$. If $AE \\parallel BC$, then $\\angle ABC=$</p>\n<p><img alt=\"Figure Q18 (as printed)\" src=\"2017P2_figs/Q18.png\" /></p>\n<ul><li>A. $44^\\circ$.</li><li>B. $56^\\circ$.</li><li>C. $62^\\circ$.</li><li>D. $68^\\circ$.</li></ul>",
@@ -11238,7 +11262,9 @@ window.QB = {
    "qno": 19,
    "title": "第 19 題",
    "section": "Paper 2　Section A",
-   "tags": [],
+   "tags": [
+    "直線方程"
+   ],
    "text": "In the figure, the length of the line segment joining $A$ and $H$ is\n\u0001IMG0\u0001\n\n- A. 6.\n- B. 8.\n- C. 9.\n- D. 10.",
    "html": "<p>19.&nbsp;&nbsp;&nbsp;In the figure, the length of the line segment joining $A$ and $H$ is</p>\n<p><img alt=\"Figure Q19 (as printed)\" src=\"2017P2_figs/Q19.png\" /></p>\n<ul><li>A. 6.</li><li>B. 8.</li><li>C. 9.</li><li>D. 10.</li></ul>",
    "file": "2017_P2_題目英文卷.md"
@@ -11252,8 +11278,8 @@ window.QB = {
    "title": "第 20 題",
    "section": "Paper 2　Section A",
    "tags": [
-    "平面幾何",
-    "三角比／角"
+    "相似三角形",
+    "直線方程"
    ],
    "text": "$ABCD$ is a parallelogram. Let $E$ be the mid-point of $AD$. If $\\angle ABE = \\angle CBD = \\angle DBE$, which of the following are true?\nI. $AB = BD$\nII. $\\angle ABC =135^\\circ$\nIII. $\\triangle ABE \\cong \\triangle DBE$\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
    "html": "<p>20.&nbsp;&nbsp;&nbsp;$ABCD$ is a parallelogram. Let $E$ be the mid-point of $AD$. If $\\angle ABE = \\angle CBD = \\angle DBE$, which of the following are true?</p>\n<p>I. $AB = BD$</p>\n<p>II. $\\angle ABC =135^\\circ$</p>\n<p>III. $\\triangle ABE \\cong \\triangle DBE$</p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
@@ -11268,8 +11294,8 @@ window.QB = {
    "title": "第 21 題",
    "section": "Paper 2　Section A",
    "tags": [
-    "圓的性質",
-    "三角比／角"
+    "圓的幾何",
+    "相似三角形"
    ],
    "text": "In the figure, $AD$ is a diameter of the circle $ABCDE$. If $BC=CD$ and $\\angle ABC=110^\\circ$, then $\\angle BED=$\n\u0001IMG0\u0001\n\n- A. $20^\\circ$.\n- B. $35^\\circ$.\n- C. $40^\\circ$.\n- D. $55^\\circ$.",
    "html": "<p>21.&nbsp;&nbsp;&nbsp;In the figure, $AD$ is a diameter of the circle $ABCDE$. If $BC=CD$ and $\\angle ABC=110^\\circ$, then $\\angle BED=$</p>\n<p><img alt=\"Figure Q21 (as printed)\" src=\"2017P2_figs/Q21.png\" /></p>\n<ul><li>A. $20^\\circ$.</li><li>B. $35^\\circ$.</li><li>C. $40^\\circ$.</li><li>D. $55^\\circ$.</li></ul>",
@@ -11284,8 +11310,7 @@ window.QB = {
    "title": "第 22 題",
    "section": "Paper 2　Section A",
    "tags": [
-    "平面幾何",
-    "三角比／角"
+    "相似三角形"
    ],
    "text": "In the figure, $ABCD$ is a rectangle. If $E$ is a point lying on $CD$ such that $\\angle CBE=40^\\circ$, find $\\angle AED$ correct to the nearest degree.\n\u0001IMG0\u0001\n\n- A. $33^\\circ$.\n- B. $43^\\circ$.\n- C. $47^\\circ$.\n- D. $57^\\circ$.",
    "html": "<p>22.&nbsp;&nbsp;&nbsp;In the figure, $ABCD$ is a rectangle. If $E$ is a point lying on $CD$ such that $\\angle CBE=40^\\circ$, find $\\angle AED$ correct to the nearest degree.</p>\n<p><img alt=\"Figure Q22 (as printed)\" src=\"2017P2_figs/Q22.png\" /></p>\n<ul><li>A. $33^\\circ$.</li><li>B. $43^\\circ$.</li><li>C. $47^\\circ$.</li><li>D. $57^\\circ$.</li></ul>",
@@ -11300,7 +11325,7 @@ window.QB = {
    "title": "第 23 題",
    "section": "Paper 2　Section A",
    "tags": [
-    "坐標幾何"
+    "直線方程"
    ],
    "text": "In the figure, the equations of the straight lines $L_1$ and $L_2$ are $x+my=n$ and $x+py=q$ respectively. Which of the following are true?\n\u0001IMG0\u0001\nI. $m<p$\nII. $n>q$\nIII. $n+m<p+q$\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
    "html": "<p>23.&nbsp;&nbsp;&nbsp;In the figure, the equations of the straight lines $L_1$ and $L_2$ are $x+my=n$ and $x+py=q$ respectively. Which of the following are true?</p>\n<p><img alt=\"Figure Q23 (as printed)\" src=\"2017P2_figs/Q23.png\" /></p>\n<p>I. $m&lt;p$</p>\n<p>II. $n&gt;q$</p>\n<p>III. $n+m&lt;p+q$</p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
@@ -11315,7 +11340,7 @@ window.QB = {
    "title": "第 24 題",
    "section": "Paper 2　Section A",
    "tags": [
-    "坐標幾何"
+    "直線方程"
    ],
    "text": "The straight line $L$ is perpendicular to the straight line $9x-5y+45=0$. If the $x$-intercept of $L$ is $-3$, then the equation of $L$ is\n\n- A. $5x+9y+15=0$.\n- B. $5x+9y+27=0$.\n- C. $9x-5y+15=0$.\n- D. $9x-5y+27=0$.",
    "html": "<p>24.&nbsp;&nbsp;&nbsp;The straight line $L$ is perpendicular to the straight line $9x-5y+45=0$. If the $x$-intercept of $L$ is $-3$, then the equation of $L$ is</p>\n<ul><li>A. $5x+9y+15=0$.</li><li>B. $5x+9y+27=0$.</li><li>C. $9x-5y+15=0$.</li><li>D. $9x-5y+27=0$.</li></ul>",
@@ -11330,7 +11355,7 @@ window.QB = {
    "title": "第 25 題",
    "section": "Paper 2　Section A",
    "tags": [
-    "坐標幾何"
+    "三角學"
    ],
    "text": "The polar coordinates of the points $P$, $Q$ and $R$ are $(3,160^\\circ)$, $(4,280^\\circ)$ and $(6,340^\\circ)$ respectively. The perpendicular distance from $Q$ to $PR$ is\n\n- A. 2.\n- B. 3.\n- C. $2\\sqrt{3}$.\n- D. $3\\sqrt{3}$.",
    "html": "<p>25.&nbsp;&nbsp;&nbsp;The polar coordinates of the points $P$, $Q$ and $R$ are $(3,160^\\circ)$, $(4,280^\\circ)$ and $(6,340^\\circ)$ respectively. The perpendicular distance from $Q$ to $PR$ is</p>\n<ul><li>A. 2.</li><li>B. 3.</li><li>C. $2\\sqrt{3}$.</li><li>D. $3\\sqrt{3}$.</li></ul>",
@@ -11345,7 +11370,8 @@ window.QB = {
    "title": "第 26 題",
    "section": "Paper 2　Section A",
    "tags": [
-    "圓的性質"
+    "圓的幾何",
+    "直線方程"
    ],
    "text": "The equations of the circles $C_1$ and $C_2$ are $x^2+y^2+8x-4y-5=0$ and $2x^2+2y^2+8x-4y-5=0$ respectively. Let $G_1$ and $G_2$ be the centres of $C_1$ and $C_2$ respectively. Denote the origin by $O$. Which of the following is/are true?\nI. $G_1$, $G_2$ and $O$ are collinear.\nII. The radii of $C_1$ and $C_2$ are equal.\nIII. $O$ is equidistant from $G_1$ and $G_2$.\n\n- A. I only\n- B. II only\n- C. I and III only\n- D. II and III only",
    "html": "<p>26.&nbsp;&nbsp;&nbsp;The equations of the circles $C_1$ and $C_2$ are $x^2+y^2+8x-4y-5=0$ and $2x^2+2y^2+8x-4y-5=0$ respectively. Let $G_1$ and $G_2$ be the centres of $C_1$ and $C_2$ respectively. Denote the origin by $O$. Which of the following is/are true?</p>\n<p>I. $G_1$, $G_2$ and $O$ are collinear.</p>\n<p>II. The radii of $C_1$ and $C_2$ are equal.</p>\n<p>III. $O$ is equidistant from $G_1$ and $G_2$.</p>\n<ul><li>A. I only</li><li>B. II only</li><li>C. I and III only</li><li>D. II and III only</li></ul>",
@@ -11360,9 +11386,8 @@ window.QB = {
    "title": "第 27 題",
    "section": "Paper 2　Section A",
    "tags": [
-    "圓的性質",
-    "坐標幾何",
-    "立體圖形"
+    "軌跡",
+    "直線方程"
    ],
    "text": "It is given that $A$ and $B$ are two distinct points lying on the circle $x^2+y^2-6x-4y-87=0$. Let $P$ be a moving point in the rectangular coordinate plane such that $AP=BP$. The equation of the locus of $P$ is $x+2y+k=0$, where $k$ is a constant. Find $k$.\n\n- A. -8\n- B. -7\n- C. 7\n- D. 8",
    "html": "<p>27.&nbsp;&nbsp;&nbsp;It is given that $A$ and $B$ are two distinct points lying on the circle $x^2+y^2-6x-4y-87=0$. Let $P$ be a moving point in the rectangular coordinate plane such that $AP=BP$. The equation of the locus of $P$ is $x+2y+k=0$, where $k$ is a constant. Find $k$.</p>\n<ul><li>A. -8</li><li>B. -7</li><li>C. 7</li><li>D. 8</li></ul>",
@@ -11377,11 +11402,10 @@ window.QB = {
    "title": "第 28 題",
    "section": "Paper 2　Section A",
    "tags": [
-    "概率",
-    "統計"
+    "概率"
    ],
-   "text": "The bar chart below shows the distribution of the numbers of tokens got by a group of children in a game. If a child is randomly selected from the group, find the probability that the selected child gets fewer than 5 tokens in the game.\n\n- A. $\\dfrac{2}{3}$\n- B. $\\dfrac{2}{5}$\n- C. $\\dfrac{5}{12}$\n- D. $\\dfrac{7}{25}$",
-   "html": "<p>28.&nbsp;&nbsp;&nbsp;The bar chart below shows the distribution of the numbers of tokens got by a group of children in a game. If a child is randomly selected from the group, find the probability that the selected child gets fewer than 5 tokens in the game.</p>\n<ul><li>A. $\\dfrac{2}{3}$</li><li>B. $\\dfrac{2}{5}$</li><li>C. $\\dfrac{5}{12}$</li><li>D. $\\dfrac{7}{25}$</li></ul>",
+   "text": "The bar chart below shows the distribution of the numbers of tokens got by a group of children in a game. If a child is randomly selected from the group, find the probability that the selected child gets fewer than 5 tokens in the game.\n\u0001IMG0\u0001\n\n- A. $\\dfrac{2}{3}$\n- B. $\\dfrac{2}{5}$\n- C. $\\dfrac{5}{12}$\n- D. $\\dfrac{7}{25}$",
+   "html": "<p>28.&nbsp;&nbsp;&nbsp;The bar chart below shows the distribution of the numbers of tokens got by a group of children in a game. If a child is randomly selected from the group, find the probability that the selected child gets fewer than 5 tokens in the game.</p>\n<p><img alt=\"Figure Q28 (as printed)\" src=\"2017P2_figs/Q28.png\" /></p>\n<ul><li>A. $\\dfrac{2}{3}$</li><li>B. $\\dfrac{2}{5}$</li><li>C. $\\dfrac{5}{12}$</li><li>D. $\\dfrac{7}{25}$</li></ul>",
    "file": "2017_P2_題目英文卷.md"
   },
   {
@@ -11393,6 +11417,7 @@ window.QB = {
    "title": "第 29 題",
    "section": "Paper 2　Section A",
    "tags": [
+    "框線圖",
     "統計"
    ],
    "text": "The box-and-whisker diagram below shows the distribution of the numbers of online hours spent by a class of students in a certain week. Find the lower quartile of the distribution.\n\u0001IMG0\u0001\n\n- A. 5\n- B. 15\n- C. 25\n- D. 40",
@@ -11423,7 +11448,6 @@ window.QB = {
    "title": "第 31 題",
    "section": "Paper 2　Section B",
    "tags": [
-    "不等式",
     "函數"
    ],
    "text": "\u0001IMG0\u0001\nThe figure above shows the graph of $y=f(x)$. If $g(x)=f\\left(\\frac{x}{2}\\right)$, which of the following may represent the graph of $y=g(x)$?\n\n- A. ![](2017_P2_figs/Q31A.png)\n- B. ![](2017_P2_figs/Q31B.png)\n- C. ![](2017_P2_figs/Q31C.png)\n- D. ![](2017_P2_figs/Q31D.png)",
@@ -11438,7 +11462,9 @@ window.QB = {
    "qno": 32,
    "title": "第 32 題",
    "section": "Paper 2　Section B",
-   "tags": [],
+   "tags": [
+    "數制"
+   ],
    "text": "$8^3+8^{19}=$\n\n- A. $10000000000010_{16}$.\n- B. $20000000000020_{16}$.\n- C. $100000000000100_{16}$.\n- D. $200000000000200_{16}$.",
    "html": "<p>32.&nbsp;&nbsp;&nbsp;$8^3+8^{19}=$</p>\n<ul><li>A. $10000000000010_{16}$.</li><li>B. $20000000000020_{16}$.</li><li>C. $100000000000100_{16}$.</li><li>D. $200000000000200_{16}$.</li></ul>",
    "file": "2017_P2_題目英文卷.md"
@@ -11451,7 +11477,10 @@ window.QB = {
    "qno": 33,
    "title": "第 33 題",
    "section": "Paper 2　Section B",
-   "tags": [],
+   "tags": [
+    "直線方程",
+    "二次函數"
+   ],
    "text": "The graph in the figure shows the linear relation between $x$ and $\\sqrt{y}$. Which of the following must be true?\n\u0001IMG0\u0001\n\n- A. $y = x^2 - 4x + 8$\n- B. $y = x^2 + 4x + 8$\n- C. $y =4x^2 - 32x + 64$\n- D. $y =4x^2 + 32x + 64$",
    "html": "<p>33.&nbsp;&nbsp;&nbsp;The graph in the figure shows the linear relation between $x$ and $\\sqrt{y}$. Which of the following must be true?</p>\n<p><img alt=\"Figure Q33 (as printed)\" src=\"2017P2_figs/Q33.png\" /></p>\n<ul><li>A. $y = x^2 - 4x + 8$</li><li>B. $y = x^2 + 4x + 8$</li><li>C. $y =4x^2 - 32x + 64$</li><li>D. $y =4x^2 + 32x + 64$</li></ul>",
    "file": "2017_P2_題目英文卷.md"
@@ -11479,7 +11508,9 @@ window.QB = {
    "qno": 35,
    "title": "第 35 題",
    "section": "Paper 2　Section B",
-   "tags": [],
+   "tags": [
+    "複數"
+   ],
    "text": "If $k$ and $\\frac{5}{2-i} + ki$ are real numbers, then $k=$\n\n- A. $-2$\n- B. $-1$\n- C. $1$\n- D. $2$",
    "html": "<p>35.&nbsp;&nbsp;&nbsp;If $k$ and $\\frac{5}{2-i} + ki$ are real numbers, then $k=$</p>\n<ul><li>A. $-2$</li><li>B. $-1$</li><li>C. $1$</li><li>D. $2$</li></ul>",
    "file": "2017_P2_題目英文卷.md"
@@ -11493,8 +11524,7 @@ window.QB = {
    "title": "第 36 題",
    "section": "Paper 2　Section B",
    "tags": [
-    "數列",
-    "複數"
+    "等比數列"
    ],
    "text": "Which of the following are arithmetic sequences?\nI. $\\pi^{30}, \\pi^{45}, \\pi^{60}$\nII. $30\\pi, 45\\pi, 60\\pi$\nIII. $\\pi - 30, \\pi - 45, \\pi - 60$\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
    "html": "<p>36.&nbsp;&nbsp;&nbsp;Which of the following are arithmetic sequences?</p>\n<p>I. $\\pi^{30}, \\pi^{45}, \\pi^{60}$</p>\n<p>II. $30\\pi, 45\\pi, 60\\pi$</p>\n<p>III. $\\pi - 30, \\pi - 45, \\pi - 60$</p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
@@ -11509,7 +11539,8 @@ window.QB = {
    "title": "第 37 題",
    "section": "Paper 2　Section B",
    "tags": [
-    "不等式"
+    "一元一次不等式",
+    "線性規劃"
    ],
    "text": "Consider the following system of inequalities:\n$$\n\\begin{cases}\ny \\leq 9 \\\\\nx - y - 9 \\leq 0 \\\\\nx + y - 9 \\geq 0\n\\end{cases}\n$$\nLet $R$ be the region which represents the solution of the above system of inequalities. If $(x, y)$ is a point lying in $R$, then the greatest value of $x - 2y + 43$ is\n\n- A. 25.\n- B. 43.\n- C. 52.\n- D. 61.",
    "html": "<p>37.&nbsp;&nbsp;&nbsp;Consider the following system of inequalities:</p>\n<p>$$ \\begin{cases} y \\leq 9 \\\\ x - y - 9 \\leq 0 \\\\ x + y - 9 \\geq 0 \\end{cases} $$</p>\n<p>Let $R$ be the region which represents the solution of the above system of inequalities. If $(x, y)$ is a point lying in $R$, then the greatest value of $x - 2y + 43$ is</p>\n<ul><li>A. 25.</li><li>B. 43.</li><li>C. 52.</li><li>D. 61.</li></ul>",
@@ -11524,7 +11555,8 @@ window.QB = {
    "title": "第 38 題",
    "section": "Paper 2　Section B",
    "tags": [
-    "平面幾何"
+    "直線方程",
+    "相似三角形"
    ],
    "text": "In the figure, $ABCD$ is a rectangle. If $E$ is a point lying on $AC$ such that $AE = 30 \\, \\text{cm}$, then $DE =$\n\u0001IMG0\u0001\n\n- A. $3\\sqrt{65} \\, \\text{cm}$.\n- B. $5\\sqrt{29} \\, \\text{cm}$.\n- C. $\\sqrt{641} \\, \\text{cm}$.\n- D. $\\sqrt{697} \\, \\text{cm}$.",
    "html": "<p>38.&nbsp;&nbsp;&nbsp;In the figure, $ABCD$ is a rectangle. If $E$ is a point lying on $AC$ such that $AE = 30 \\, \\text{cm}$, then $DE =$</p>\n<p><img alt=\"Figure Q38 (as printed)\" src=\"2017P2_figs/Q38.png\" /></p>\n<ul><li>A. $3\\sqrt{65} \\, \\text{cm}$.</li><li>B. $5\\sqrt{29} \\, \\text{cm}$.</li><li>C. $\\sqrt{641} \\, \\text{cm}$.</li><li>D. $\\sqrt{697} \\, \\text{cm}$.</li></ul>",
@@ -11539,7 +11571,7 @@ window.QB = {
    "title": "第 39 題",
    "section": "Paper 2　Section B",
    "tags": [
-    "立體圖形"
+    "三角學"
    ],
    "text": "In the figure, $AD$ is a vertical pole standing on the horizontal ground $BCD$. If $AB = 25 \\, \\text{m}$, $AD = 15 \\, \\text{m}$, $BC = 29 \\, \\text{m}$ and $CD = 21 \\, \\text{m}$, find the angle between $AB$ and the plane $ACD$ correct to the nearest degree.\n\u0001IMG0\u0001\n\n- A. 53°\n- B. 54°\n- C. 69°\n- D. 70°",
    "html": "<p>39.&nbsp;&nbsp;&nbsp;In the figure, $AD$ is a vertical pole standing on the horizontal ground $BCD$. If $AB = 25 \\, \\text{m}$, $AD = 15 \\, \\text{m}$, $BC = 29 \\, \\text{m}$ and $CD = 21 \\, \\text{m}$, find the angle between $AB$ and the plane $ACD$ correct to the nearest degree.</p>\n<p><img alt=\"Figure Q39 (as printed)\" src=\"2017P2_figs/Q39.png\" /></p>\n<ul><li>A. 53°</li><li>B. 54°</li><li>C. 69°</li><li>D. 70°</li></ul>",
@@ -11554,8 +11586,8 @@ window.QB = {
    "title": "第 40 題",
    "section": "Paper 2　Section B",
    "tags": [
-    "圓的性質",
-    "三角比／角"
+    "圓的幾何",
+    "相似三角形"
    ],
    "text": "In the figure, $O$ is the centre of the circle $ABC$. $DE$ is the tangent to the circle at $A$. If $\\angle BAD =68^\\circ$ and $\\angle BCO =26^\\circ$, then $\\angle ABC =$\n\u0001IMG0\u0001\n\n- A. $42^\\circ$.\n- B. $48^\\circ$.\n- C. $54^\\circ$.\n- D. $64^\\circ$.",
    "html": "<p>40.&nbsp;&nbsp;&nbsp;In the figure, $O$ is the centre of the circle $ABC$. $DE$ is the tangent to the circle at $A$. If $\\angle BAD =68^\\circ$ and $\\angle BCO =26^\\circ$, then $\\angle ABC =$</p>\n<p><img alt=\"Figure Q40 (as printed)\" src=\"2017P2_figs/Q40.png\" /></p>\n<ul><li>A. $42^\\circ$.</li><li>B. $48^\\circ$.</li><li>C. $54^\\circ$.</li><li>D. $64^\\circ$.</li></ul>",
@@ -11570,8 +11602,8 @@ window.QB = {
    "title": "第 41 題",
    "section": "Paper 2　Section B",
    "tags": [
-    "平面幾何",
-    "坐標幾何"
+    "直線方程",
+    "三角學"
    ],
    "text": "Let $O$ be the origin. The coordinates of the points $P$ and $Q$ are $(p, 0)$ and $(0, q)$ respectively, where $p$ and $q$ are positive numbers. If the in-centre of $\\triangle OPQ$ lies on the straight line $3x + 4y =3p$, then $p:q =$\n\n- A. $2:3$.\n- B. $4:3$.\n- C. $4:9$.\n- D. $7:24$.",
    "html": "<p>41.&nbsp;&nbsp;&nbsp;Let $O$ be the origin. The coordinates of the points $P$ and $Q$ are $(p, 0)$ and $(0, q)$ respectively, where $p$ and $q$ are positive numbers. If the in-centre of $\\triangle OPQ$ lies on the straight line $3x + 4y =3p$, then $p:q =$</p>\n<ul><li>A. $2:3$.</li><li>B. $4:3$.</li><li>C. $4:9$.</li><li>D. $7:24$.</li></ul>",
@@ -11585,7 +11617,9 @@ window.QB = {
    "qno": 42,
    "title": "第 42 題",
    "section": "Paper 2　Section B",
-   "tags": [],
+   "tags": [
+    "排列與組合"
+   ],
    "text": "There are 13 students and 6 teachers in a committee. If 5 students and 4 teachers are selected from the committee to form a team, how many different teams can be formed?\n\n- A. 4290\n- B. 19 305\n- C. 92 378\n- D. 55 598 400",
    "html": "<p>42.&nbsp;&nbsp;&nbsp;There are 13 students and 6 teachers in a committee. If 5 students and 4 teachers are selected from the committee to form a team, how many different teams can be formed?</p>\n<ul><li>A. 4290</li><li>B. 19 305</li><li>C. 92 378</li><li>D. 55 598 400</li></ul>",
    "file": "2017_P2_題目英文卷.md"
@@ -11614,7 +11648,8 @@ window.QB = {
    "title": "第 44 題",
    "section": "Paper 2　Section B",
    "tags": [
-    "統計"
+    "標準分",
+    "標準差"
    ],
    "text": "The standard score of Tom in a Mathematics examination is -2. If the score of Tom in the Mathematics examination is 33 marks and the mean of the scores of the Mathematics examination is 45 marks, then the standard deviation of the scores of the Mathematics examination is\n\n- A. 3 marks.\n- B. 6 marks.\n- C. 12 marks.\n- D. 36 marks.",
    "html": "<p>44.&nbsp;&nbsp;&nbsp;The standard score of Tom in a Mathematics examination is -2. If the score of Tom in the Mathematics examination is 33 marks and the mean of the scores of the Mathematics examination is 45 marks, then the standard deviation of the scores of the Mathematics examination is</p>\n<ul><li>A. 3 marks.</li><li>B. 6 marks.</li><li>C. 12 marks.</li><li>D. 36 marks.</li></ul>",
@@ -11629,7 +11664,7 @@ window.QB = {
    "title": "第 45 題",
    "section": "Paper 2　Section B",
    "tags": [
-    "統計"
+    "標準差"
    ],
    "text": "Let $m_{1}$, $r_{1}$ and $v_{1}$ be the mode, the inter-quartile range and the variance of a group of numbers $\\{x_{1}, x_{2}, x_{3}, x_{4}, x_{5}, x_{6}, x_{7}\\}$ respectively while $m_{2}$, $r_{2}$ and $v_{2}$ be the mode, the inter-quartile range and the variance of the group of numbers $\\{8x_{1}, 8x_{2}, 8x_{3}, 8x_{4}, 8x_{5}, 8x_{6}, 8x_{7}\\}$ respectively. Which of the following must be true?\nI. $m_{2} =8m_{1}$\nII. $r_{2} =8r_{1}$\nIII. $v_{2} =8v_{1}$\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
    "html": "<p>45.&nbsp;&nbsp;&nbsp;Let $m_{1}$, $r_{1}$ and $v_{1}$ be the mode, the inter-quartile range and the variance of a group of numbers $\\{x_{1}, x_{2}, x_{3}, x_{4}, x_{5}, x_{6}, x_{7}\\}$ respectively while $m_{2}$, $r_{2}$ and $v_{2}$ be the mode, the inter-quartile range and the variance of the group of numbers $\\{8x_{1}, 8x_{2}, 8x_{3}, 8x_{4}, 8x_{5}, 8x_{6}, 8x_{7}\\}$ respectively. Which of the following must be true?</p>\n<p>I. $m_{2} =8m_{1}$</p>\n<p>II. $r_{2} =8r_{1}$</p>\n<p>III. $v_{2} =8v_{1}$</p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",

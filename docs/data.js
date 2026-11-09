@@ -1,5 +1,5 @@
 window.QB = {
- "generated": "2026-11-09 05:58",
+ "generated": "2026-11-09 05:59",
  "count": 1459,
  "questions": [
   {
@@ -10723,7 +10723,7 @@ window.QB = {
     "統計"
    ],
    "text": "Consider the following positive integers:\n2 3 4 6 7 9 10 m n\nLet $a$, $b$ and $c$ be the mode, the median and the range of the above positive integers respectively. If the mean of the above positive integers is 5, which of the following must be true?\nI. $a=2$\nII. $b=4$\nIII. $c=8$\n\n- A. I only\n- B. II only\n- C. I and III only\n- D. II and III only",
-   "html": "<p>30.&nbsp;&nbsp;&nbsp;Consider the following positive integers:</p>\n<p>2 3 4 6 7 9 10 m n</p>\n<p>Let $a$, $b$ and $c$ be the mode, the median and the range of the above positive integers respectively. If the mean of the above positive integers is 5, which of the following must be true?</p>\n<p>I. $a=2$</p>\n<p>II. $b=4$</p>\n<p>III. $c=8$</p>\n<ul><li>A. I only</li><li>B. II only</li><li>C. I and III only</li><li>D. II and III only</li></ul>",
+   "html": "<p>30.&nbsp;&nbsp;&nbsp;Consider the following positive integers:</p>\n<p>2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;7&nbsp;&nbsp;&nbsp;9&nbsp;&nbsp;&nbsp;10&nbsp;&nbsp;&nbsp;m&nbsp;&nbsp;&nbsp;n</p>\n<p>Let $a$, $b$ and $c$ be the mode, the median and the range of the above positive integers respectively. If the mean of the above positive integers is 5, which of the following must be true?</p>\n<p>I. $a=2$</p>\n<p>II. $b=4$</p>\n<p>III. $c=8$</p>\n<ul><li>A. I only</li><li>B. II only</li><li>C. I and III only</li><li>D. II and III only</li></ul>",
    "file": "2017_P2_題目英文卷.md"
   },
   {
@@ -18225,7 +18225,7 @@ window.QB = {
     "數論"
    ],
    "text": "Consider the following positive integers:\n2 5 6 6 x x x y\nIf both the mean and the median of the above positive integers are 6, which of the following must be true?\nI. The mode of the above positive integers is 6.\nII. The least possible range of the above positive integers is 6.\nIII. The greatest possible variance of the above positive integers is 6.\n\n- A. I only\n- B. II only\n- C. I and III only\n- D. II and III only",
-   "html": "<p>30.&nbsp;&nbsp;&nbsp;Consider the following positive integers:</p>\n<p>2 5 6 6 x x x y</p>\n<p>If both the mean and the median of the above positive integers are 6, which of the following must be true?</p>\n<p>I. The mode of the above positive integers is 6.</p>\n<p>II. The least possible range of the above positive integers is 6.</p>\n<p>III. The greatest possible variance of the above positive integers is 6.</p>\n<ul><li>A. I only</li><li>B. II only</li><li>C. I and III only</li><li>D. II and III only</li></ul>",
+   "html": "<p>30.&nbsp;&nbsp;&nbsp;Consider the following positive integers:</p>\n<p>2&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;x&nbsp;&nbsp;&nbsp;x&nbsp;&nbsp;&nbsp;x&nbsp;&nbsp;&nbsp;y</p>\n<p>If both the mean and the median of the above positive integers are 6, which of the following must be true?</p>\n<p>I. The mode of the above positive integers is 6.</p>\n<p>II. The least possible range of the above positive integers is 6.</p>\n<p>III. The greatest possible variance of the above positive integers is 6.</p>\n<ul><li>A. I only</li><li>B. II only</li><li>C. I and III only</li><li>D. II and III only</li></ul>",
    "file": "2022_P2_題目英文卷.md"
   },
   {

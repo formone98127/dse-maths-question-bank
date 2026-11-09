@@ -1,6 +1,6 @@
 window.QB = {
- "generated": "2026-11-09 06:34",
- "count": 1504,
+ "generated": "2026-11-09 16:49",
+ "count": 1501,
  "questions": [
   {
    "subject": "數學",
@@ -1500,738 +1500,739 @@ window.QB = {
    "file": "2012_P1B_QU(CHI).md"
   },
   {
-   "subject": "化學",
+   "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
    "type": "題目",
    "qno": 1,
    "title": "第 1 題",
-   "section": "卷二　甲部",
+   "section": "Paper 2　Section A",
    "tags": [
-    "哈柏法",
-    "催化劑",
-    "平衡",
-    "甲醇",
-    "反應動力學",
-    "速率方程式"
+    "指數定律",
+    "代數化簡",
+    "多項式"
    ],
-   "text": "回答試題的所有部分。\n\n(a)　以哈柏法於大約 500 °C 和 200 atm，並在一催化劑存在下，經氮和氫的反應可生產氨。該反應的化學方程式如下所示：\n\n　　N₂(g) + 3H₂(g) ⇌ 2NH₃(g)　ΔH < 0\n\n　　(i)　在哈柏法中所用的催化劑是什麼？\n\n　　(ii)　解釋催化劑對一個化學反應的影響。（3 分）\n\n　　(iii)　提出如何獲取氫以進行哈柏法，並寫出所涉及的一條化學方程式。（2 分）\n\n　　(iv)　已知於 300 °C 和 1000 atm 下從 N₂(g) 和 H₂(g) 生成 NH₃(g)，在平衡時 NH₃(g) 的產率約為 98%。然而，在工業上哈柏法的操作條件卻定於約 500 °C 和 200 atm，在平衡時 NH₃ 的產率約為 20%。參照所給資料，解釋為什麼在工業上選擇了這樣的操作條件。（2 分）\n\n　　(v)　在哈柏法中，於產率達到約 20% 前便從反應室移除產物混合物。解釋為何如此。（2 分）\n\n(b)　甲醇是化學工業中的一個重要化合物。從甲烷製成的合成氣可生產甲醇。\n\n　　(i)　為什麼甲醇是化學工業中的一個重要化合物？（? 分）\n\n　　(ii)　寫出從合成氣生產甲醇的反應的化學方程式，並寫出所需的各條件。（3 分）\n\n　　(iii)　寫出在生產甲醇科技上的一個改進，解釋為什麼它被視為一個改進。（2 分）\n\n(c)　為研究以下反應的動力學，在相同的溫度下進行了三次實驗：\n\n　　2NO(g) + 2H₂(g) → N₂(g) + 2H₂O(g)\n\n下表顯示所得的數據：\n\n| 實驗次數 | NO(g) 的初始濃度 / mol dm⁻³ | H₂(g) 的初始濃度 / mol dm⁻³ | 對應 N₂(g) 的初速 / mol dm⁻³ s⁻¹ |\n|---|---|---|---|\n| 1 | 2.50 × 10⁻³ | 5.00 × 10⁻³ | 1.20 × 10⁻⁶ |\n| 2 | 2.50 × 10⁻³ | 1.00 × 10⁻² | 2.40 × 10⁻⁶ |\n| 3 | 1.25 × 10⁻³ | 1.00 × 10⁻² | 6.00 × 10⁻⁷ |\n\n　　(i)　解釋為什麼通常使用「初速」來研習一個反應的動力學。（? 分）\n\n　　(ii)　推定分別對應 NO(g) 和 H₂(g) 的反應級數。（2 分）\n\n　　(iii)　寫出這反應的速率方程式，並計算它在實驗溫度下的速率常數。（2 分）",
-   "html": "<p>1.&nbsp;&nbsp;&nbsp;回答試題的所有部分。</p>\n<p>(a)　以哈柏法於大約 500 °C 和 200 atm，並在一催化劑存在下，經氮和氫的反應可生產氨。該反應的化學方程式如下所示：</p>\n<p>N₂(g) + 3H₂(g) ⇌ 2NH₃(g)　ΔH &lt; 0</p>\n<p>(i)　在哈柏法中所用的催化劑是什麼？</p>\n<p>(ii)　解釋催化劑對一個化學反應的影響。（3 分）</p>\n<p>(iii)　提出如何獲取氫以進行哈柏法，並寫出所涉及的一條化學方程式。（2 分）</p>\n<p>(iv)　已知於 300 °C 和 1000 atm 下從 N₂(g) 和 H₂(g) 生成 NH₃(g)，在平衡時 NH₃(g) 的產率約為 98%。然而，在工業上哈柏法的操作條件卻定於約 500 °C 和 200 atm，在平衡時 NH₃ 的產率約為 20%。參照所給資料，解釋為什麼在工業上選擇了這樣的操作條件。（2 分）</p>\n<p>(v)　在哈柏法中，於產率達到約 20% 前便從反應室移除產物混合物。解釋為何如此。（2 分）</p>\n<p>(b)　甲醇是化學工業中的一個重要化合物。從甲烷製成的合成氣可生產甲醇。</p>\n<p>(i)　為什麼甲醇是化學工業中的一個重要化合物？（? 分）</p>\n<p>(ii)　寫出從合成氣生產甲醇的反應的化學方程式，並寫出所需的各條件。（3 分）</p>\n<p>(iii)　寫出在生產甲醇科技上的一個改進，解釋為什麼它被視為一個改進。（2 分）</p>\n<p>(c)　為研究以下反應的動力學，在相同的溫度下進行了三次實驗：</p>\n<p>2NO(g) + 2H₂(g) → N₂(g) + 2H₂O(g)</p>\n<p>下表顯示所得的數據：</p>\n<table>\n<thead>\n<tr>\n<th>實驗次數</th>\n<th>NO(g) 的初始濃度 / mol dm⁻³</th>\n<th>H₂(g) 的初始濃度 / mol dm⁻³</th>\n<th>對應 N₂(g) 的初速 / mol dm⁻³ s⁻¹</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>2.50 × 10⁻³</td>\n<td>5.00 × 10⁻³</td>\n<td>1.20 × 10⁻⁶</td>\n</tr>\n<tr>\n<td>2</td>\n<td>2.50 × 10⁻³</td>\n<td>1.00 × 10⁻²</td>\n<td>2.40 × 10⁻⁶</td>\n</tr>\n<tr>\n<td>3</td>\n<td>1.25 × 10⁻³</td>\n<td>1.00 × 10⁻²</td>\n<td>6.00 × 10⁻⁷</td>\n</tr>\n</tbody>\n</table>\n<p>(i)　解釋為什麼通常使用「初速」來研習一個反應的動力學。（? 分）</p>\n<p>(ii)　推定分別對應 NO(g) 和 H₂(g) 的反應級數。（2 分）</p>\n<p>(iii)　寫出這反應的速率方程式，並計算它在實驗溫度下的速率常數。（2 分）</p>",
-   "file": "2012_P2_QU(CHI).md"
+   "text": "$\\dfrac{(2x^4)^3}{2x^5} =$\n\n- A. $3x^2$.\n- B. $3x^7$.\n- C. $4x^7$.\n- D. $4x^{59}$.",
+   "html": "<p>1.&nbsp;&nbsp;&nbsp;$\\dfrac{(2x^4)^3}{2x^5} =$</p>\n<ul><li>A. $3x^2$.</li><li>B. $3x^7$.</li><li>C. $4x^7$.</li><li>D. $4x^{59}$.</li></ul>",
+   "file": "2012_P2_題目英文卷.md"
   },
   {
    "subject": "數學",
-   "year": 2012,
-   "paper": "Paper 2",
-   "type": "解答",
-   "qno": 1,
-   "title": "Q1　指數化簡",
-   "section": "Paper 2　Section A",
-   "tags": [
-    "指數化簡"
-   ],
-   "text": "化簡 $\\dfrac{(2x^4)^3}{2x^5}$。\n\n$$(2x^4)^3 = 2^3 \\cdot x^{12} = 8x^{12}$$\n\n$$\\frac{8x^{12}}{2x^5} = 4x^{12-5} = 4x^7$$\n\n**答案：C　$4x^7$**",
-   "html": "<p>1.&nbsp;&nbsp;&nbsp;化簡 $\\dfrac{(2x^4)^3}{2x^5}$。</p>\n<p>$$(2x^4)^3 = 2^3 \\cdot x^{12} = 8x^{12}$$</p>\n<p>$$\\frac{8x^{12}}{2x^5} = 4x^{12-5} = 4x^7$$</p>\n<p><strong>答案：C　$4x^7$</strong></p>",
-   "file": "2012_II_解答.md"
-  },
-  {
-   "subject": "化學",
    "year": 2012,
    "paper": "Paper 2",
    "type": "題目",
    "qno": 2,
-   "title": "乙部 第 2 題",
-   "section": "卷二　乙部",
+   "title": "第 2 題",
+   "section": "Paper 2　Section A",
    "tags": [
-    "凱夫拉",
-    "尼龍-6",
-    "縮合聚合",
-    "天然橡膠",
-    "硫化",
-    "不鏽鋼"
+    "代數化簡"
    ],
-   "text": "回答試題的所有部分。\n\n(a)　凱夫拉和尼龍-6,6的結構顯示如下：\n\n![Q2a 凱夫拉和尼龍-6,6結構](2012_P2_crops/q02.png)\n\n　　(i)　繪畫製造凱夫拉的各單體的結構。\n\n　　(ii)　寫出由各單體生成凱夫拉的反應類別的名稱。（3 分）\n\n　　(iii)　化合物 A 是在工業上製造尼龍-6,6 的其中一個單體。以下方程式顯示可生產 A 的兩個反應：\n\n![Q2a 化合物A生產反應式](2012_P2_crops/q02b.png)\n\n　　(1)　繪畫 A 的結構。\n\n　　(2)　反應(1)被視為比反應(2)較綠色。提出三個原因。\n\n　　(3)　兩個反應在哪一方面均被視為不綠色？（5 分）\n\n　　(iv)　參照凱夫拉和尼龍-6,6的結構，解釋它們於機械強度的差異。（2 分）\n\n(b)　天然橡膠的部分結構顯示如下：\n\n【圖待補：原卷乙部第 2(b) 題／第 4 頁（天然橡膠部分結構）】\n\n　　(i)　天然橡膠須先以硫處理，才可用來製造輪胎。寫出這處理過程的名稱，註明其目的，以及解釋其背後的原理。（3 分）\n\n　　(ii)　某技術員穿上一對天然橡膠製的手套並進行一個涉及溴的實驗。溴濺在手套上，然後手套變脆。解釋這現象。（2 分）\n\n(c)　(i)　考慮固體鐵的體心立方結構。\n\n　　(1)　繪畫鐵的一個晶胞。\n\n　　(2)　推定在該晶胞的鐵原子數目。（2 分）\n\n　　(ii)　參照加入鐵內以生成不鏽鋼的各元素，解釋為什麼不鏽鋼適合於製造刀。（3 分）",
-   "html": "<p>2.&nbsp;&nbsp;&nbsp;回答試題的所有部分。</p>\n<p>(a)　凱夫拉和尼龍-6,6的結構顯示如下：</p>\n<p><img alt=\"Q2a 凱夫拉和尼龍-6,6結構\" src=\"chem_2012_P2_crops/q02.png\" /></p>\n<p>(i)　繪畫製造凱夫拉的各單體的結構。</p>\n<p>(ii)　寫出由各單體生成凱夫拉的反應類別的名稱。（3 分）</p>\n<p>(iii)　化合物 A 是在工業上製造尼龍-6,6 的其中一個單體。以下方程式顯示可生產 A 的兩個反應：</p>\n<p><img alt=\"Q2a 化合物A生產反應式\" src=\"chem_2012_P2_crops/q02b.png\" /></p>\n<p>(1)　繪畫 A 的結構。</p>\n<p>(2)　反應(1)被視為比反應(2)較綠色。提出三個原因。</p>\n<p>(3)　兩個反應在哪一方面均被視為不綠色？（5 分）</p>\n<p>(iv)　參照凱夫拉和尼龍-6,6的結構，解釋它們於機械強度的差異。（2 分）</p>\n<p>(b)　天然橡膠的部分結構顯示如下：</p>\n<p>【圖待補：原卷乙部第 2(b) 題／第 4 頁（天然橡膠部分結構）】</p>\n<p>(i)　天然橡膠須先以硫處理，才可用來製造輪胎。寫出這處理過程的名稱，註明其目的，以及解釋其背後的原理。（3 分）</p>\n<p>(ii)　某技術員穿上一對天然橡膠製的手套並進行一個涉及溴的實驗。溴濺在手套上，然後手套變脆。解釋這現象。（2 分）</p>\n<p>(c)　(i)　考慮固體鐵的體心立方結構。</p>\n<p>(1)　繪畫鐵的一個晶胞。</p>\n<p>(2)　推定在該晶胞的鐵原子數目。（2 分）</p>\n<p>(ii)　參照加入鐵內以生成不鏽鋼的各元素，解釋為什麼不鏽鋼適合於製造刀。（3 分）</p>",
-   "file": "2012_P2_QU(CHI).md"
+   "text": "$(4x+y)^2-(4x-y)^2 =$\n\n- A. $0$.\n- B. $2y^2$.\n- C. $8xy$.\n- D. $16xy$.",
+   "html": "<p>2.&nbsp;&nbsp;&nbsp;$(4x+y)^2-(4x-y)^2 =$</p>\n<ul><li>A. $0$.</li><li>B. $2y^2$.</li><li>C. $8xy$.</li><li>D. $16xy$.</li></ul>",
+   "file": "2012_P2_題目英文卷.md"
   },
   {
    "subject": "數學",
-   "year": 2012,
-   "paper": "Paper 2",
-   "type": "解答",
-   "qno": 2,
-   "title": "Q2　恆等式應用",
-   "section": "Paper 2　Section A",
-   "tags": [
-    "恆等式應用"
-   ],
-   "text": "計算 $(4x+y)^2-(4x-y)^2$。\n\n用 $a^2-b^2=(a+b)(a-b)$，免展開：\n\n$$\\left[(4x+y)-(4x-y)\\right]\\left[(4x+y)+(4x-y)\\right] = (2y)(8x) = 16xy$$\n\n**答案：D　$16xy$**",
-   "html": "<p>2.&nbsp;&nbsp;&nbsp;計算 $(4x+y)^2-(4x-y)^2$。</p>\n<p>用 $a^2-b^2=(a+b)(a-b)$，免展開：</p>\n<p>$$\\left[(4x+y)-(4x-y)\\right]\\left[(4x+y)+(4x-y)\\right] = (2y)(8x) = 16xy$$</p>\n<p><strong>答案：D　$16xy$</strong></p>",
-   "file": "2012_II_解答.md"
-  },
-  {
-   "subject": "化學",
    "year": 2012,
    "paper": "Paper 2",
    "type": "題目",
    "qno": 3,
    "title": "第 3 題",
-   "section": "卷二　丙部",
-   "tags": [
-    "官能基",
-    "質譜",
-    "2",
-    "二噁英",
-    "重量分析"
-   ],
-   "text": "回答試題的所有部分。\n\n(a)　化合物 X（摩爾質量 < 118 g）含有一個 [?] 基團。對 X 進行了兩個化學測試，其結果如下：\n\n　　測試(1)：X 使酸化重鉻酸鉀溶液變成綠色。\n\n　　測試(2)：以 2,4-二硝基苯肼測試，X 得出陰性結果。\n\n　　(i)　只參照測試(1)的結果，提出 X 可能有的兩個官能基。（2 分）\n\n　　(ii)　(1)　在測試(2)使用 2,4-二硝基苯肼的目的是什麼？\n\n　　(2)　寫出在測試(2)中，如果 X 得出陽性結果的預期觀察。（2 分）\n\n　　(iii)　參照測試(1)和測試(2)兩者的結果，提出一個可能存在於 X 的官能基。（1 分）\n\n　　(iv)　X 的質譜如下所示：\n\n![Q3a X的質譜](2012_P2_crops/q03.png)\n\n　　為在 m/z = 91 和 108 的每個訊號，提出一個對應的化學物種。（2 分）\n\n　　(v)　繪畫 X 的一個可能結構。（1 分）\n\n(b)　空氣中的二噁英水平一般是以儀器分析量度所得，而非使用重量分析或容量分析。\n\n　　(i)　提出空氣中的二噁英的一個來源。（? 分）\n\n　　(ii)　解釋為什麼需要量度空氣中的二噁英水平。（? 分）\n\n　　(iii)　建議一個量度空氣中的二噁英水平的儀器分析方法，並寫出為什麼使用這方法而不使用基於重量分析或容量分析的方法。（2 分）\n\n(c)　某水溶液只含 HCl(aq) 和 HI(aq)。基於 AgCl(s) 可溶於過量的 NH₃(aq) 而 AgI(s) 卻不然的事實，計劃一重量分析以測定在該溶液中 Cl⁻(aq) 對 I⁻(aq) 的摩爾比率。\n\n　　(i)　建議在這分析中應使用的兩個試劑（去離子水除外）。（2 分）\n\n　　(ii)　概述在這分析中所涉及的實驗步驟。（4 分）\n\n　　(iii)　利用上面從 (ii) 所得的數據，概述計算該溶液中 Cl⁻(aq) 對 I⁻(aq) 的摩爾比率的各步驟。（2 分）\n\n---\n\n## 待人工核對\n\n- 第 1 題：哈柏法方程式（N₂ + 3H₂ ⇌ 2NH₃）及「ΔH < 0」待對頁核實；資料表各濃度／初速指數（10⁻³／10⁻²／10⁻⁶／10⁻⁷）待對頁核實。\n- 第 1 題 (b)(i)／(c)(i)：分數 OCR 缺（讀作「(分」），標 (? 分)。\n- 第 2 題：「凱夫拉」用字 OCR 讀作「凱庫勒」；凱夫拉+尼龍結構 crop（q02）及化合物 A 生產反應式 crop（q02b）內結構／試劑標註待對頁核實。\n- 第 2 題 (b)：天然橡膠部分結構未能可靠截圖，標圖待補。\n- 第 3 題 (a)：化合物 X 的基團描述 OCR 唔清（讀作「CCH₃」），標 [?]，待對頁核實。\n- 第 3 題 (a)(iv)：質譜圖 crop（q03）軸刻度及 m/z 訊號待對頁核實。\n- 第 3 題 (b)(i)／(b)(ii)：分數 OCR 缺，標 (? 分)。",
-   "html": "<p>3.&nbsp;&nbsp;&nbsp;回答試題的所有部分。</p>\n<p>(a)　化合物 X（摩爾質量 &lt; 118 g）含有一個 [?] 基團。對 X 進行了兩個化學測試，其結果如下：</p>\n<p>測試(1)：X 使酸化重鉻酸鉀溶液變成綠色。</p>\n<p>測試(2)：以 2,4-二硝基苯肼測試，X 得出陰性結果。</p>\n<p>(i)　只參照測試(1)的結果，提出 X 可能有的兩個官能基。（2 分）</p>\n<p>(ii)　(1)　在測試(2)使用 2,4-二硝基苯肼的目的是什麼？</p>\n<p>(2)　寫出在測試(2)中，如果 X 得出陽性結果的預期觀察。（2 分）</p>\n<p>(iii)　參照測試(1)和測試(2)兩者的結果，提出一個可能存在於 X 的官能基。（1 分）</p>\n<p>(iv)　X 的質譜如下所示：</p>\n<p><img alt=\"Q3a X的質譜\" src=\"chem_2012_P2_crops/q03.png\" /></p>\n<p>為在 m/z = 91 和 108 的每個訊號，提出一個對應的化學物種。（2 分）</p>\n<p>(v)　繪畫 X 的一個可能結構。（1 分）</p>\n<p>(b)　空氣中的二噁英水平一般是以儀器分析量度所得，而非使用重量分析或容量分析。</p>\n<p>(i)　提出空氣中的二噁英的一個來源。（? 分）</p>\n<p>(ii)　解釋為什麼需要量度空氣中的二噁英水平。（? 分）</p>\n<p>(iii)　建議一個量度空氣中的二噁英水平的儀器分析方法，並寫出為什麼使用這方法而不使用基於重量分析或容量分析的方法。（2 分）</p>\n<p>(c)　某水溶液只含 HCl(aq) 和 HI(aq)。基於 AgCl(s) 可溶於過量的 NH₃(aq) 而 AgI(s) 卻不然的事實，計劃一重量分析以測定在該溶液中 Cl⁻(aq) 對 I⁻(aq) 的摩爾比率。</p>\n<p>(i)　建議在這分析中應使用的兩個試劑（去離子水除外）。（2 分）</p>\n<p>(ii)　概述在這分析中所涉及的實驗步驟。（4 分）</p>\n<p>(iii)　利用上面從 (ii) 所得的數據，概述計算該溶液中 Cl⁻(aq) 對 I⁻(aq) 的摩爾比率的各步驟。（2 分）</p>\n<hr />\n<h2>待人工核對</h2>\n<ul>\n<li>第 1 題：哈柏法方程式（N₂ + 3H₂ ⇌ 2NH₃）及「ΔH &lt; 0」待對頁核實；資料表各濃度／初速指數（10⁻³／10⁻²／10⁻⁶／10⁻⁷）待對頁核實。</li>\n<li>第 1 題 (b)(i)／(c)(i)：分數 OCR 缺（讀作「(分」），標 (? 分)。</li>\n<li>第 2 題：「凱夫拉」用字 OCR 讀作「凱庫勒」；凱夫拉+尼龍結構 crop（q02）及化合物 A 生產反應式 crop（q02b）內結構／試劑標註待對頁核實。</li>\n<li>第 2 題 (b)：天然橡膠部分結構未能可靠截圖，標圖待補。</li>\n<li>第 3 題 (a)：化合物 X 的基團描述 OCR 唔清（讀作「CCH₃」），標 [?]，待對頁核實。</li>\n<li>第 3 題 (a)(iv)：質譜圖 crop（q03）軸刻度及 m/z 訊號待對頁核實。</li>\n<li>第 3 題 (b)(i)／(b)(ii)：分數 OCR 缺，標 (? 分)。</li>\n</ul>",
-   "file": "2012_P2_QU(CHI).md"
-  },
-  {
-   "subject": "數學",
-   "year": 2012,
-   "paper": "Paper 2",
-   "type": "解答",
-   "qno": 3,
-   "title": "Q3　恆等式比較係數",
    "section": "Paper 2　Section A",
    "tags": [
-    "恆等式比較係數"
+    "因式分解",
+    "一元二次方程",
+    "代數化簡"
    ],
-   "text": "已知 $x^2+p \\equiv (x+2)(x+q)+10$，求 $p$。\n\n$$(x+2)(x+q)+10 = x^2+(q+2)x+2q+10$$\n\n比較 $x$ 項係數（左方無 $x$ 項）：\n\n$$q+2 = 0 \\;\\Rightarrow\\; q=-2$$\n\n比較常數項：\n\n$$p = 2q+10 = 2(-2)+10 = 6$$\n\n**答案：C　$p=6$**",
-   "html": "<p>3.&nbsp;&nbsp;&nbsp;已知 $x^2+p \\equiv (x+2)(x+q)+10$，求 $p$。</p>\n<p>$$(x+2)(x+q)+10 = x^2+(q+2)x+2q+10$$</p>\n<p>比較 $x$ 項係數（左方無 $x$ 項）：</p>\n<p>$$q+2 = 0 \\;\\Rightarrow\\; q=-2$$</p>\n<p>比較常數項：</p>\n<p>$$p = 2q+10 = 2(-2)+10 = 6$$</p>\n<p><strong>答案：C　$p=6$</strong></p>",
-   "file": "2012_II_解答.md"
+   "text": "If $p$ and $q$ are constants such that $x^2+p=(x+2)(x+q)+10$, then $p=$\n\n- A. $-4$.\n- B. $-2$.\n- C. $6$.\n- D. $10$.",
+   "html": "<p>3.&nbsp;&nbsp;&nbsp;If $p$ and $q$ are constants such that $x^2+p=(x+2)(x+q)+10$, then $p=$</p>\n<ul><li>A. $-4$.</li><li>B. $-2$.</li><li>C. $6$.</li><li>D. $10$.</li></ul>",
+   "file": "2012_P2_題目英文卷.md"
   },
   {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
-   "type": "解答",
+   "type": "題目",
    "qno": 4,
-   "title": "Q4　因式定理",
+   "title": "第 4 題",
    "section": "Paper 2　Section A",
    "tags": [
-    "因式定理"
+    "多項式",
+    "因式分解",
+    "代數化簡"
    ],
-   "text": "$x^3+4x^2+kx-12$ 可被 $x+3$ 整除，求 $k$。\n\n因式定理：$f(-3)=0$\n\n$$(-3)^3+4(-3)^2-3k-12 = 0$$\n\n$$-27+36-3k-12 = 0 \\;\\Rightarrow\\; -3-3k = 0 \\;\\Rightarrow\\; k=-1$$\n\n**答案：B　$k=-1$**",
-   "html": "<p>4.&nbsp;&nbsp;&nbsp;$x^3+4x^2+kx-12$ 可被 $x+3$ 整除，求 $k$。</p>\n<p>因式定理：$f(-3)=0$</p>\n<p>$$(-3)^3+4(-3)^2-3k-12 = 0$$</p>\n<p>$$-27+36-3k-12 = 0 \\;\\Rightarrow\\; -3-3k = 0 \\;\\Rightarrow\\; k=-1$$</p>\n<p><strong>答案：B　$k=-1$</strong></p>",
-   "file": "2012_II_解答.md"
+   "text": "If $ k $ is a constant such that $ x^3 + 4x^2 + kx - 12 $ is divisible by $ x + 3 $, then $ k = $\n\n- A. $-25$.\n- B. $-1$.\n- C. $1$.\n- D. $17$.",
+   "html": "<p>4.&nbsp;&nbsp;&nbsp;If $ k $ is a constant such that $ x^3 + 4x^2 + kx - 12 $ is divisible by $ x + 3 $, then $ k = $</p>\n<ul><li>A. $-25$.</li><li>B. $-1$.</li><li>C. $1$.</li><li>D. $17$.</li></ul>",
+   "file": "2012_P2_題目英文卷.md"
   },
   {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
-   "type": "解答",
+   "type": "題目",
    "qno": 5,
-   "title": "Q5　聯立方程",
+   "title": "第 5 題",
    "section": "Paper 2　Section A",
    "tags": [
-    "聯立方程"
+    "一元二次方程",
+    "代數化簡"
    ],
-   "text": "設 $m+2n+6 = 2m-n = 7$，求 $n$。\n\n拆成兩式：\n\n$$m+2n = 1 \\quad (1)$$\n$$2m-n = 7 \\quad (2)$$\n\n$(1)\\times 2 - (2)$：\n\n$$5n = -5 \\;\\Rightarrow\\; n=-1$$\n\n**答案：B　$n=-1$**",
-   "html": "<p>5.&nbsp;&nbsp;&nbsp;設 $m+2n+6 = 2m-n = 7$，求 $n$。</p>\n<p>拆成兩式：</p>\n<p>$$m+2n = 1 \\quad (1)$$\n$$2m-n = 7 \\quad (2)$$</p>\n<p>$(1)\\times 2 - (2)$：</p>\n<p>$$5n = -5 \\;\\Rightarrow\\; n=-1$$</p>\n<p><strong>答案：B　$n=-1$</strong></p>",
-   "file": "2012_II_解答.md"
+   "text": "If $ m + 2n + 6 = 2m - n = 7 $, then $ n = $\n\n- A. $-4$.\n- B. $-1$.\n- C. $3$.\n- D. $11$.",
+   "html": "<p>5.&nbsp;&nbsp;&nbsp;If $ m + 2n + 6 = 2m - n = 7 $, then $ n = $</p>\n<ul><li>A. $-4$.</li><li>B. $-1$.</li><li>C. $3$.</li><li>D. $11$.</li></ul>",
+   "file": "2012_P2_題目英文卷.md"
   },
   {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
-   "type": "解答",
+   "type": "題目",
    "qno": 6,
-   "title": "Q6　二次圖像參數",
+   "title": "第 6 題",
    "section": "Paper 2　Section A",
    "tags": [
-    "二次圖像參數"
+    "函數與圖像"
    ],
-   "text": "> 圖：$y=a(x+b)^2$ 開口向下，頂點位於 $x$ 軸上、原點右側。\n\n開口向下 → $a<0$。\n\n頂點位於 $x=-b$，在正 $x$ 軸上 → $-b>0 \\Rightarrow b<0$。\n\n**答案：D　$a<0$ 且 $b<0$**",
-   "html": "<p>6.&nbsp;&nbsp;&nbsp;6</p>\n<blockquote>\n<p>圖：$y=a(x+b)^2$ 開口向下，頂點位於 $x$ 軸上、原點右側。</p>\n</blockquote>\n<p>開口向下 → $a&lt;0$。</p>\n<p>頂點位於 $x=-b$，在正 $x$ 軸上 → $-b&gt;0 \\Rightarrow b&lt;0$。</p>\n<p><strong>答案：D　$a&lt;0$ 且 $b&lt;0$</strong></p>",
-   "file": "2012_II_解答.md"
+   "text": "The figure shows the graph of $ y = a(x + b)^2 $, where $ a $ and $ b $ are constants. Which of the following is true?\n\u0001IMG0\u0001\n\n- A. $ a > 0 $ and $ b > 0 $\n- B. $ a > 0 $ and $ b < 0 $\n- C. $ a < 0 $ and $ b > 0 $\n- D. $ a < 0 $ and $ b < 0 $",
+   "html": "<p>6.&nbsp;&nbsp;&nbsp;The figure shows the graph of $ y = a(x + b)^2 $, where $ a $ and $ b $ are constants. Which of the following is true?</p>\n<p><img alt=\"Figure Q6 (as printed)\" src=\"2012P2_figs/Q06.png\" /></p>\n<ul><li>A. $ a &gt; 0 $ and $ b &gt; 0 $</li><li>B. $ a &gt; 0 $ and $ b &lt; 0 $</li><li>C. $ a &lt; 0 $ and $ b &gt; 0 $</li><li>D. $ a &lt; 0 $ and $ b &lt; 0 $</li></ul>",
+   "file": "2012_P2_題目英文卷.md"
   },
   {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
-   "type": "解答",
+   "type": "題目",
    "qno": 7,
-   "title": "Q7　複不等式（「或」）",
+   "title": "第 7 題",
    "section": "Paper 2　Section A",
    "tags": [
-    "複不等式（「或」）"
+    "不等式"
    ],
-   "text": "解 $15+4x<3$ 或 $9-2x>1$。\n\n$$15+4x<3 \\;\\Rightarrow\\; 4x<-12 \\;\\Rightarrow\\; x<-3$$\n\n$$9-2x>1 \\;\\Rightarrow\\; -2x>-8 \\;\\Rightarrow\\; x<4$$\n\n「或」= 取併集，包住兩者：\n\n$$x<4$$\n\n**答案：C　$x<4$**",
-   "html": "<p>7.&nbsp;&nbsp;&nbsp;解 $15+4x&lt;3$ 或 $9-2x&gt;1$。</p>\n<p>$$15+4x&lt;3 \\;\\Rightarrow\\; 4x&lt;-12 \\;\\Rightarrow\\; x&lt;-3$$</p>\n<p>$$9-2x&gt;1 \\;\\Rightarrow\\; -2x&gt;-8 \\;\\Rightarrow\\; x&lt;4$$</p>\n<p>「或」= 取併集，包住兩者：</p>\n<p>$$x&lt;4$$</p>\n<p><strong>答案：C　$x&lt;4$</strong></p>",
-   "file": "2012_II_解答.md"
+   "text": "The solution of $ 15 + 4x < 3 $ or $ 9 - 2x > 1 $ is\n\n- A. $ x < -3 $.\n- B. $ x > -3 $.\n- C. $ x < 4 $.\n- D. $ x > 4 $.",
+   "html": "<p>7.&nbsp;&nbsp;&nbsp;The solution of $ 15 + 4x &lt; 3 $ or $ 9 - 2x &gt; 1 $ is</p>\n<ul><li>A. $ x &lt; -3 $.</li><li>B. $ x &gt; -3 $.</li><li>C. $ x &lt; 4 $.</li><li>D. $ x &gt; 4 $.</li></ul>",
+   "file": "2012_P2_題目英文卷.md"
   },
   {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
-   "type": "解答",
+   "type": "題目",
    "qno": 8,
-   "title": "Q8　百分比",
+   "title": "第 8 題",
    "section": "Paper 2　Section A",
    "tags": [
-    "百分比"
+    "百分數",
+    "比率與比例",
+    "統計"
    ],
-   "text": "公司中 37.5% 員工為女性（即 3/8，男性 5/8）；60% 男性及 80% 女性已婚，求已婚員工百分比。\n\n$$\\frac{5}{8}\\times 60\\% + \\frac{3}{8}\\times 80\\% = 37.5\\% + 30\\% = 67.5\\%$$\n\n**答案：D　67.5%**",
-   "html": "<p>8.&nbsp;&nbsp;&nbsp;公司中 37.5% 員工為女性（即 3/8，男性 5/8）；60% 男性及 80% 女性已婚，求已婚員工百分比。</p>\n<p>$$\\frac{5}{8}\\times 60\\% + \\frac{3}{8}\\times 80\\% = 37.5\\% + 30\\% = 67.5\\%$$</p>\n<p><strong>答案：D　67.5%</strong></p>",
-   "file": "2012_II_解答.md"
+   "text": "In a company, 37.5% of the employees are female. If 60% of the male employees and 80% of the female employees are married, then the percentage of married employees in the company is\n\n- A. 32.5%.\n- B. 45%.\n- C. 55%.\n- D. 67.5%.",
+   "html": "<p>8.&nbsp;&nbsp;&nbsp;In a company, 37.5% of the employees are female. If 60% of the male employees and 80% of the female employees are married, then the percentage of married employees in the company is</p>\n<ul><li>A. 32.5%.</li><li>B. 45%.</li><li>C. 55%.</li><li>D. 67.5%.</li></ul>",
+   "file": "2012_P2_題目英文卷.md"
   },
   {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
-   "type": "解答",
+   "type": "題目",
    "qno": 9,
-   "title": "Q9　比",
+   "title": "第 9 題",
    "section": "Paper 2　Section A",
    "tags": [
-    "比"
+    "比率與比例"
    ],
-   "text": "$x,y$ 為非零數且 $\\dfrac{6x+5y}{3y-2x}=7$，求 $x:y$。\n\n$$6x+5y = 7(3y-2x)$$\n\n$$6x+5y = 21y-14x \\;\\Rightarrow\\; 20x = 16y \\;\\Rightarrow\\; x:y = 4:5$$\n\n**答案：A　$4:5$**",
-   "html": "<p>9.&nbsp;&nbsp;&nbsp;$x,y$ 為非零數且 $\\dfrac{6x+5y}{3y-2x}=7$，求 $x:y$。</p>\n<p>$$6x+5y = 7(3y-2x)$$</p>\n<p>$$6x+5y = 21y-14x \\;\\Rightarrow\\; 20x = 16y \\;\\Rightarrow\\; x:y = 4:5$$</p>\n<p><strong>答案：A　$4:5$</strong></p>",
-   "file": "2012_II_解答.md"
+   "text": "If $x$ and $y$ are non-zero numbers such that $\\dfrac{6x+5y}{3y-2x}=7$, then $x:y=$\n\n- A. 4:5.\n- B. 4:13.\n- C. 5:4.\n- D. 13:4.",
+   "html": "<p>9.&nbsp;&nbsp;&nbsp;If $x$ and $y$ are non-zero numbers such that $\\dfrac{6x+5y}{3y-2x}=7$, then $x:y=$</p>\n<ul><li>A. 4:5.</li><li>B. 4:13.</li><li>C. 5:4.</li><li>D. 13:4.</li></ul>",
+   "file": "2012_P2_題目英文卷.md"
   },
   {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
-   "type": "解答",
+   "type": "題目",
    "qno": 10,
-   "title": "Q10　變分",
+   "title": "第 10 題",
    "section": "Paper 2　Section A",
    "tags": [
-    "變分"
+    "函數與圖像",
+    "一元二次方程"
    ],
-   "text": "$y$ 隨 $x^2$ 正變、亦隨 $x$ 反變（部分變分）。$x=1$ 時 $y=-4$；$x=2$ 時 $y=5$。求 $x=-2$ 時的 $y$。\n\n設 $y = k_1 x^2 + \\dfrac{k_2}{x}$：\n\n$$k_1+k_2 = -4 \\quad (1)$$\n$$4k_1+\\frac{k_2}{2} = 5 \\;\\Rightarrow\\; 8k_1+k_2 = 10 \\quad (2)$$\n\n$(2)-(1)$：$7k_1 = 14 \\Rightarrow k_1=2,\\ k_2=-6$\n\n$$x=-2:\\quad y = 2(-2)^2+\\frac{-6}{-2} = 8+3 = 11$$\n\n**答案：D　$y=11$**",
-   "html": "<p>10.&nbsp;&nbsp;&nbsp;$y$ 隨 $x^2$ 正變、亦隨 $x$ 反變（部分變分）。$x=1$ 時 $y=-4$；$x=2$ 時 $y=5$。求 $x=-2$ 時的 $y$。</p>\n<p>設 $y = k_1 x^2 + \\dfrac{k_2}{x}$：</p>\n<p>$$k_1+k_2 = -4 \\quad (1)$$\n$$4k_1+\\frac{k_2}{2} = 5 \\;\\Rightarrow\\; 8k_1+k_2 = 10 \\quad (2)$$</p>\n<p>$(2)-(1)$：$7k_1 = 14 \\Rightarrow k_1=2,\\ k_2=-6$</p>\n<p>$$x=-2:\\quad y = 2(-2)^2+\\frac{-6}{-2} = 8+3 = 11$$</p>\n<p><strong>答案：D　$y=11$</strong></p>",
-   "file": "2012_II_解答.md"
+   "text": "It is given that $y$ partly varies directly as $x^2$ and partly varies inversely as $x$. When $x=1$, $y=-4$ and when $x=2$, $y=5$. When $x=-2$, $y=$\n\n- A. -11.\n- B. -5.\n- C. 5.\n- D. 11.",
+   "html": "<p>10.&nbsp;&nbsp;&nbsp;It is given that $y$ partly varies directly as $x^2$ and partly varies inversely as $x$. When $x=1$, $y=-4$ and when $x=2$, $y=5$. When $x=-2$, $y=$</p>\n<ul><li>A. -11.</li><li>B. -5.</li><li>C. 5.</li><li>D. 11.</li></ul>",
+   "file": "2012_P2_題目英文卷.md"
   },
   {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
-   "type": "解答",
+   "type": "題目",
    "qno": 11,
-   "title": "Q11　平均速率陷阱題",
+   "title": "第 11 題",
    "section": "Paper 2　Section A",
    "tags": [
-    "平均速率陷阱題"
+    "集中趨勢",
+    "統計"
    ],
-   "text": "Mary 打字 7 小時：首 3 小時平均 63 字/分鐘，後 4 小時平均 56 字/分鐘。求全程平均速度。\n\n> 陷阱：不可直接 $(63+56)/2$，必須用「總字數 ÷ 總時間」。\n\n$$\\text{平均} = \\frac{3\\times 63\\times 60 + 4\\times 56\\times 60}{7\\times 60} = \\frac{189+224}{7} = \\frac{413}{7} = 59 \\text{ 字/分鐘}$$\n\n**答案：C　59 words per minute**",
-   "html": "<p>11.&nbsp;&nbsp;&nbsp;Mary 打字 7 小時：首 3 小時平均 63 字/分鐘，後 4 小時平均 56 字/分鐘。求全程平均速度。</p>\n<blockquote>\n<p>陷阱：不可直接 $(63+56)/2$，必須用「總字數 ÷ 總時間」。</p>\n</blockquote>\n<p>$$\\text{平均} = \\frac{3\\times 63\\times 60 + 4\\times 56\\times 60}{7\\times 60} = \\frac{189+224}{7} = \\frac{413}{7} = 59 \\text{ 字/分鐘}$$</p>\n<p><strong>答案：C　59 words per minute</strong></p>",
-   "file": "2012_II_解答.md"
+   "text": "Mary performs a typing task for 7 hours. Her average typing speeds for the first 3 hours and the last 4 hours are 63 words per minute and 56 words per minute respectively. Find her average typing speed for the 7 hours.\n\n- A. 17 words per minute\n- B. 35 words per minute\n- C. 59 words per minute\n- D. 60 words per minute",
+   "html": "<p>11.&nbsp;&nbsp;&nbsp;Mary performs a typing task for 7 hours. Her average typing speeds for the first 3 hours and the last 4 hours are 63 words per minute and 56 words per minute respectively. Find her average typing speed for the 7 hours.</p>\n<ul><li>A. 17 words per minute</li><li>B. 35 words per minute</li><li>C. 59 words per minute</li><li>D. 60 words per minute</li></ul>",
+   "file": "2012_P2_題目英文卷.md"
   },
   {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
-   "type": "解答",
+   "type": "題目",
    "qno": 12,
-   "title": "Q12　數列規律",
+   "title": "第 12 題",
    "section": "Paper 2　Section A",
    "tags": [
-    "數列規律"
+    "數列"
    ],
-   "text": "第 1 個圖案有 1 點；第 $(n+1)$ 個圖案比第 $n$ 個多 $n$ 點。求第 8 個圖案的點數。\n\n逐個累加：$1,\\ 2,\\ 4,\\ 7,\\ 11,\\ 16,\\ 22,\\ 29$\n\n（通項：$\\dfrac{n(n-1)}{2}+1$；$n=8$ 時 $28+1=29$。）\n\n**答案：B　29**",
-   "html": "<p>12.&nbsp;&nbsp;&nbsp;第 1 個圖案有 1 點；第 $(n+1)$ 個圖案比第 $n$ 個多 $n$ 點。求第 8 個圖案的點數。</p>\n<p>逐個累加：$1,\\ 2,\\ 4,\\ 7,\\ 11,\\ 16,\\ 22,\\ 29$</p>\n<p>（通項：$\\dfrac{n(n-1)}{2}+1$；$n=8$ 時 $28+1=29$。）</p>\n<p><strong>答案：B　29</strong></p>",
-   "file": "2012_II_解答.md"
+   "text": "In the figure, the 1st pattern consists of 1 dot. For any positive integer $ n $, the $(n+1)$th pattern is formed by adding $ n $ dots to the $ n $th pattern. Find the number of dots in the 8th pattern.\n\u0001IMG0\u0001\n\n- A. 22\n- B. 29\n- C. 36\n- D. 37",
+   "html": "<p>12.&nbsp;&nbsp;&nbsp;In the figure, the 1st pattern consists of 1 dot. For any positive integer $ n $, the $(n+1)$th pattern is formed by adding $ n $ dots to the $ n $th pattern. Find the number of dots in the 8th pattern.</p>\n<p><img alt=\"Figure Q12 (as printed)\" src=\"2012P2_figs/Q12.png\" /></p>\n<ul><li>A. 22</li><li>B. 29</li><li>C. 36</li><li>D. 37</li></ul>",
+   "file": "2012_P2_題目英文卷.md"
   },
   {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
-   "type": "解答",
+   "type": "題目",
    "qno": 13,
-   "title": "Q13　有效數字 / 小數位",
+   "title": "第 13 題",
    "section": "Paper 2　Section A",
    "tags": [
-    "有效數字 / 小數位"
+    "百分數",
+    "利息與增長",
+    "比率與比例"
    ],
-   "text": "判斷 $0.0322515$ 的四個舍入陳述哪個正確。\n\n- 3 位有效數字：$0.0322515 \\to 0.0323$（A 錯）\n- 4 位小數：$0.0322|515 \\to 0.0323$（B 錯）\n- 5 位有效數字：$0.03225|15 \\to 0.032252$（C 錯：$0.03225$ 只有 4 個有效數字）\n- 6 位小數：$0.032251|5 \\to 0.032252$（**D 正確**）\n\n**答案：D**",
-   "html": "<p>13.&nbsp;&nbsp;&nbsp;判斷 $0.0322515$ 的四個舍入陳述哪個正確。</p>\n<ul>\n<li>3 位有效數字：$0.0322515 \\to 0.0323$（A 錯）</li>\n<li>4 位小數：$0.0322|515 \\to 0.0323$（B 錯）</li>\n<li>5 位有效數字：$0.03225|15 \\to 0.032252$（C 錯：$0.03225$ 只有 4 個有效數字）</li>\n<li>6 位小數：$0.032251|5 \\to 0.032252$（<strong>D 正確</strong>）</li>\n</ul>\n<p><strong>答案：D</strong></p>",
-   "file": "2012_II_解答.md"
+   "text": "$ 0.0322515 = $\n\n- A. 0.032 (correct to 3 significant figures).\n- B. 0.0322 (correct to 4 decimal places).\n- C. 0.03225 (correct to 5 significant figures).\n- D. 0.032252 (correct to 6 decimal places).",
+   "html": "<p>13.&nbsp;&nbsp;&nbsp;$ 0.0322515 = $</p>\n<ul><li>A. 0.032 (correct to 3 significant figures).</li><li>B. 0.0322 (correct to 4 decimal places).</li><li>C. 0.03225 (correct to 5 significant figures).</li><li>D. 0.032252 (correct to 6 decimal places).</li></ul>",
+   "file": "2012_P2_題目英文卷.md"
   },
   {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
-   "type": "解答",
+   "type": "題目",
    "qno": 14,
-   "title": "Q14　誤差上限下限",
+   "title": "第 14 題",
    "section": "Paper 2　Section A",
    "tags": [
-    "誤差上限下限"
+    "平面幾何",
+    "數列",
+    "排列與組合"
    ],
-   "text": "繩長量得 25 m（準確至最接近的 m），剪成 $n$ 段，每段量得 5 cm（準確至最接近的 cm）。求 $n$ 的最大可能值。\n\n統一單位（cm）：\n\n$$2450 \\le L < 2550, \\qquad 4.5 \\le \\ell < 5.5$$\n\n$n$ 最大 = 用總長上限 ÷ 每段下限：\n\n$$n < \\frac{2550}{4.5} = 566.\\dot{6} \\;\\Rightarrow\\; n_{\\max} = 566$$\n\n（驗證：$567\\times 4.5 = 2551.5 > 2550$，不可能。）\n\n**答案：B　566**",
-   "html": "<p>14.&nbsp;&nbsp;&nbsp;繩長量得 25 m（準確至最接近的 m），剪成 $n$ 段，每段量得 5 cm（準確至最接近的 cm）。求 $n$ 的最大可能值。</p>\n<p>統一單位（cm）：</p>\n<p>$$2450 \\le L &lt; 2550, \\qquad 4.5 \\le \\ell &lt; 5.5$$</p>\n<p>$n$ 最大 = 用總長上限 ÷ 每段下限：</p>\n<p>$$n &lt; \\frac{2550}{4.5} = 566.\\dot{6} \\;\\Rightarrow\\; n_{\\max} = 566$$</p>\n<p>（驗證：$567\\times 4.5 = 2551.5 &gt; 2550$，不可能。）</p>\n<p><strong>答案：B　566</strong></p>",
-   "file": "2012_II_解答.md"
+   "text": "The length of a piece of thin string is measured as $ 25 \\text{ m} $ correct to the nearest $ \\text{m} $. If the string is cut into $ n $ pieces such that the length of each piece is measured as $ 5 \\text{ cm} $ correct to the nearest $ \\text{cm} $, find the greatest possible value of $ n $.\n\n- A. 445\n- B. 566\n- C. 567\n- D. 650",
+   "html": "<p>14.&nbsp;&nbsp;&nbsp;The length of a piece of thin string is measured as $ 25 \\text{ m} $ correct to the nearest $ \\text{m} $. If the string is cut into $ n $ pieces such that the length of each piece is measured as $ 5 \\text{ cm} $ correct to the nearest $ \\text{cm} $, find the greatest possible value of $ n $.</p>\n<ul><li>A. 445</li><li>B. 566</li><li>C. 567</li><li>D. 650</li></ul>",
+   "file": "2012_P2_題目英文卷.md"
   },
   {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
-   "type": "解答",
+   "type": "題目",
    "qno": 15,
-   "title": "Q15　畢氏定理求面積",
+   "title": "第 15 題",
    "section": "Paper 2　Section A",
    "tags": [
-    "畢氏定理求面積"
+    "平面幾何",
+    "直線方程"
    ],
-   "text": "> 圖：四邊形 $ABCD$，$\\angle A = 90^\\circ$；$BC=26$ cm；$\\angle ADC=90^\\circ$，$CD=6$ cm，$AD=8$ cm。\n\n$\\triangle ACD$（直角於 $D$）：\n\n$$AC = \\sqrt{6^2+8^2} = \\sqrt{100} = 10$$\n\n$\\triangle ABC$（直角於 $A$，斜邊 $BC=26$）：\n\n$$AB = \\sqrt{26^2-10^2} = \\sqrt{576} = 24$$\n\n$$\\text{面積} = \\frac12(24)(10) + \\frac12(6)(8) = 120+24 = 144\\text{ cm}^2$$\n\n**答案：A　144 cm²**",
-   "html": "<p>15.&nbsp;&nbsp;&nbsp;15</p>\n<blockquote>\n<p>圖：四邊形 $ABCD$，$\\angle A = 90^\\circ$；$BC=26$ cm；$\\angle ADC=90^\\circ$，$CD=6$ cm，$AD=8$ cm。</p>\n</blockquote>\n<p>$\\triangle ACD$（直角於 $D$）：</p>\n<p>$$AC = \\sqrt{6^2+8^2} = \\sqrt{100} = 10$$</p>\n<p>$\\triangle ABC$（直角於 $A$，斜邊 $BC=26$）：</p>\n<p>$$AB = \\sqrt{26^2-10^2} = \\sqrt{576} = 24$$</p>\n<p>$$\\text{面積} = \\frac12(24)(10) + \\frac12(6)(8) = 120+24 = 144\\text{ cm}^2$$</p>\n<p><strong>答案：A　144 cm²</strong></p>",
-   "file": "2012_II_解答.md"
+   "text": "In the figure, the area of quadrilateral $ ABCD $ is\n\u0001IMG0\u0001\n\n- A. $ 144 \\text{ cm}^2 $.\n- B. $ 160 \\text{ cm}^2 $.\n- C. $ 178 \\text{ cm}^2 $.\n- D. $ 288 \\text{ cm}^2 $.",
+   "html": "<p>15.&nbsp;&nbsp;&nbsp;In the figure, the area of quadrilateral $ ABCD $ is</p>\n<p><img alt=\"Figure Q15 (as printed)\" src=\"2012P2_figs/Q15.png\" /></p>\n<ul><li>A. $ 144 \\text{ cm}^2 $.</li><li>B. $ 160 \\text{ cm}^2 $.</li><li>C. $ 178 \\text{ cm}^2 $.</li><li>D. $ 288 \\text{ cm}^2 $.</li></ul>",
+   "file": "2012_P2_題目英文卷.md"
   },
   {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
-   "type": "解答",
+   "type": "題目",
    "qno": 16,
-   "title": "Q16　扇形弧長",
+   "title": "第 16 題",
    "section": "Paper 2　Section A",
    "tags": [
-    "扇形弧長"
+    "平面幾何",
+    "圓的性質",
+    "三角比"
    ],
-   "text": "> 圖：$OAB$、$OCD$ 為同圓心、同圓心角的兩扇形。$\\overset{\\frown}{AB}=12\\pi$ cm、$\\overset{\\frown}{CD}=16\\pi$ cm、$OA=30$ cm。\n\n弧長與半徑成正比：\n\n$$\\frac{OC}{OA} = \\frac{16\\pi}{12\\pi} \\;\\Rightarrow\\; OC = 30\\times\\frac{16}{12} = 40$$\n\n$$AC = OC-OA = 10\\text{ cm}$$\n\n**答案：B　10 cm**",
-   "html": "<p>16.&nbsp;&nbsp;&nbsp;16</p>\n<blockquote>\n<p>圖：$OAB$、$OCD$ 為同圓心、同圓心角的兩扇形。$\\overset{\\frown}{AB}=12\\pi$ cm、$\\overset{\\frown}{CD}=16\\pi$ cm、$OA=30$ cm。</p>\n</blockquote>\n<p>弧長與半徑成正比：</p>\n<p>$$\\frac{OC}{OA} = \\frac{16\\pi}{12\\pi} \\;\\Rightarrow\\; OC = 30\\times\\frac{16}{12} = 40$$</p>\n<p>$$AC = OC-OA = 10\\text{ cm}$$</p>\n<p><strong>答案：B　10 cm</strong></p>",
-   "file": "2012_II_解答.md"
+   "text": "In the figure, $OAB$ and $OCD$ are sectors with centre $O$. If $\\widehat{AB} = 12\\pi \\text{ cm}$, $\\widehat{CD} = 16\\pi \\text{ cm}$ and $OA = 30 \\text{ cm}$, then $AC =$\n\u0001IMG0\u0001\n\n- A. $5 \\text{ cm}$.\n- B. $10 \\text{ cm}$.\n- C. $20 \\text{ cm}$.\n- D. $40 \\text{ cm}$.",
+   "html": "<p>16.&nbsp;&nbsp;&nbsp;In the figure, $OAB$ and $OCD$ are sectors with centre $O$. If $\\widehat{AB} = 12\\pi \\text{ cm}$, $\\widehat{CD} = 16\\pi \\text{ cm}$ and $OA = 30 \\text{ cm}$, then $AC =$</p>\n<p><img alt=\"Figure Q16 (as printed)\" src=\"2012P2_figs/Q16.png\" /></p>\n<ul><li>A. $5 \\text{ cm}$.</li><li>B. $10 \\text{ cm}$.</li><li>C. $20 \\text{ cm}$.</li><li>D. $40 \\text{ cm}$.</li></ul>",
+   "file": "2012_P2_題目英文卷.md"
   },
   {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
-   "type": "解答",
+   "type": "題目",
    "qno": 17,
-   "title": "Q17　平行四邊形面積（同高比例）",
+   "title": "第 17 題",
    "section": "Paper 2　Section A",
    "tags": [
-    "平行四邊形面積（同高比例）"
+    "平面幾何",
+    "比率與比例",
+    "三角比"
    ],
-   "text": "> 圖：$ABCD$ 平行四邊形，$E$ 在 $AB$、$F$ 在 $CD$ 上，$AD$ 延線與 $EF$ 延線交於 $G$。$DF:FC=3:4$、$AD:DG=1:1$，$\\triangle DFG$ 面積 $=3$ cm²。\n\n> 關鍵：$\\triangle DFG$ 以 $DF$ 為底，與平行四邊形以 $DC$ 為底，兩者**等高**（同一對平行線之間）。設此高為 $h$。\n\n由 $DF:FC = 3:4$，得 $DF = \\dfrac{3}{7}DC$。\n\n$$[\\triangle DFG] = \\frac12 \\times \\frac{3}{7}DC \\times h = 3 \\;\\Rightarrow\\; DC\\cdot h = 14$$\n\n$$[ABCD] = DC \\times h = 14 \\text{ cm}^2$$\n\n**答案：B　14 cm²**",
-   "html": "<p>17.&nbsp;&nbsp;&nbsp;17</p>\n<blockquote>\n<p>圖：$ABCD$ 平行四邊形，$E$ 在 $AB$、$F$ 在 $CD$ 上，$AD$ 延線與 $EF$ 延線交於 $G$。$DF:FC=3:4$、$AD:DG=1:1$，$\\triangle DFG$ 面積 $=3$ cm²。</p>\n<p>關鍵：$\\triangle DFG$ 以 $DF$ 為底，與平行四邊形以 $DC$ 為底，兩者<strong>等高</strong>（同一對平行線之間）。設此高為 $h$。</p>\n</blockquote>\n<p>由 $DF:FC = 3:4$，得 $DF = \\dfrac{3}{7}DC$。</p>\n<p>$$[\\triangle DFG] = \\frac12 \\times \\frac{3}{7}DC \\times h = 3 \\;\\Rightarrow\\; DC\\cdot h = 14$$</p>\n<p>$$[ABCD] = DC \\times h = 14 \\text{ cm}^2$$</p>\n<p><strong>答案：B　14 cm²</strong></p>",
-   "file": "2012_II_解答.md"
+   "text": "In the figure, $ABCD$ is a parallelogram. $E$ and $F$ are points lying on $AB$ and $CD$ respectively. $AD$ produced and $EF$ produced meet at $G$. It is given that $DF:FC = 3:4$ and $AD:DG = 1:1$. If the area of $\\triangle DFG$ is $3 \\text{ cm}^2$, then the area of the parallelogram $ABCD$ is\n\u0001IMG0\u0001\n\n- A. $12 \\text{ cm}^2$.\n- B. $14 \\text{ cm}^2$.\n- C. $18 \\text{ cm}^2$.\n- D. $21 \\text{ cm}^2$.",
+   "html": "<p>17.&nbsp;&nbsp;&nbsp;In the figure, $ABCD$ is a parallelogram. $E$ and $F$ are points lying on $AB$ and $CD$ respectively. $AD$ produced and $EF$ produced meet at $G$. It is given that $DF:FC = 3:4$ and $AD:DG = 1:1$. If the area of $\\triangle DFG$ is $3 \\text{ cm}^2$, then the area of the parallelogram $ABCD$ is</p>\n<p><img alt=\"Figure Q17 (as printed)\" src=\"2012P2_figs/Q17.png\" /></p>\n<ul><li>A. $12 \\text{ cm}^2$.</li><li>B. $14 \\text{ cm}^2$.</li><li>C. $18 \\text{ cm}^2$.</li><li>D. $21 \\text{ cm}^2$.</li></ul>",
+   "file": "2012_P2_題目英文卷.md"
   },
   {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
-   "type": "解答",
+   "type": "題目",
    "qno": 18,
-   "title": "Q18　三角學：兩個直角三角形",
+   "title": "第 18 題",
    "section": "Paper 2　Section A",
    "tags": [
-    "三角學：兩個直角三角形"
+    "平面幾何",
+    "三角比",
+    "直線方程"
    ],
-   "text": "> 圖：$D$ 在 $AC$ 上，$BD\\perp AC$；$\\angle BCD=\\alpha$、$\\angle DBA=\\beta$；$BC=\\ell$。\n\n$\\triangle BDC$（直角於 $D$）：\n\n$$BD = \\ell\\sin\\alpha$$\n\n$\\triangle BDA$（直角於 $D$，$\\beta$ 為 $BD$ 與 $AB$ 的夾角）：\n\n$$\\cos\\beta = \\frac{BD}{AB}$$\n\n$$\\therefore\\ AB = \\frac{BD}{\\cos\\beta} = \\frac{\\ell\\sin\\alpha}{\\cos\\beta}$$\n\n**答案：A　$\\dfrac{\\ell\\sin\\alpha}{\\cos\\beta}$**",
-   "html": "<p>18.&nbsp;&nbsp;&nbsp;18</p>\n<blockquote>\n<p>圖：$D$ 在 $AC$ 上，$BD\\perp AC$；$\\angle BCD=\\alpha$、$\\angle DBA=\\beta$；$BC=\\ell$。</p>\n</blockquote>\n<p>$\\triangle BDC$（直角於 $D$）：</p>\n<p>$$BD = \\ell\\sin\\alpha$$</p>\n<p>$\\triangle BDA$（直角於 $D$，$\\beta$ 為 $BD$ 與 $AB$ 的夾角）：</p>\n<p>$$\\cos\\beta = \\frac{BD}{AB}$$</p>\n<p>$$\\therefore\\ AB = \\frac{BD}{\\cos\\beta} = \\frac{\\ell\\sin\\alpha}{\\cos\\beta}$$</p>\n<p><strong>答案：A　$\\dfrac{\\ell\\sin\\alpha}{\\cos\\beta}$</strong></p>",
-   "file": "2012_II_解答.md"
+   "text": "In the figure, $D$ is a point lying on $AC$ such that $BD$ is perpendicular to $AC$. If $BC = \\ell$, then $AB =$\n\u0001IMG0\u0001\n\n- A. $\\dfrac{\\ell \\sin \\alpha}{\\cos \\beta}$.\n- B. $\\dfrac{\\ell \\sin \\beta}{\\cos \\alpha}$.\n- C. $\\dfrac{\\ell \\cos \\alpha}{\\sin \\beta}$.\n- D. $\\dfrac{\\ell \\cos \\beta}{\\sin \\alpha}$.",
+   "html": "<p>18.&nbsp;&nbsp;&nbsp;In the figure, $D$ is a point lying on $AC$ such that $BD$ is perpendicular to $AC$. If $BC = \\ell$, then $AB =$</p>\n<p><img alt=\"Figure Q18 (as printed)\" src=\"2012P2_figs/Q18.png\" /></p>\n<ul><li>A. $\\dfrac{\\ell \\sin \\alpha}{\\cos \\beta}$.</li><li>B. $\\dfrac{\\ell \\sin \\beta}{\\cos \\alpha}$.</li><li>C. $\\dfrac{\\ell \\cos \\alpha}{\\sin \\beta}$.</li><li>D. $\\dfrac{\\ell \\cos \\beta}{\\sin \\alpha}$.</li></ul>",
+   "file": "2012_P2_題目英文卷.md"
   },
   {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
-   "type": "解答",
+   "type": "題目",
    "qno": 19,
-   "title": "Q19　三角恆等式化簡",
+   "title": "第 19 題",
    "section": "Paper 2　Section A",
    "tags": [
-    "三角恆等式化簡"
+    "三角比",
+    "三角恆等式",
+    "函數與圖像"
    ],
-   "text": "$$\\frac{\\cos 60^\\circ}{1-\\cos(90^\\circ-\\theta)}+\\frac{\\cos 240^\\circ}{1-\\cos(270^\\circ-\\theta)}$$\n\n先用特殊角與誘導公式：\n\n$$\\cos 60^\\circ = \\frac12,\\quad \\cos 240^\\circ = -\\frac12,\\quad \\cos(90^\\circ-\\theta) = \\sin\\theta,\\quad \\cos(270^\\circ-\\theta) = -\\sin\\theta$$\n\n代入：\n\n$$\\frac{\\tfrac12}{1-\\sin\\theta} - \\frac{\\tfrac12}{1+\\sin\\theta} = \\frac12\\cdot\\frac{(1+\\sin\\theta)-(1-\\sin\\theta)}{1-\\sin^2\\theta} = \\frac{\\sin\\theta}{\\cos^2\\theta}$$\n\n$$= \\frac{\\sin\\theta}{\\cos\\theta}\\cdot\\frac{1}{\\cos\\theta} = \\frac{\\tan\\theta}{\\cos\\theta}$$\n\n**答案：C　$\\dfrac{\\tan\\theta}{\\cos\\theta}$**",
-   "html": "<p>19.&nbsp;&nbsp;&nbsp;$$\\frac{\\cos 60^\\circ}{1-\\cos(90^\\circ-\\theta)}+\\frac{\\cos 240^\\circ}{1-\\cos(270^\\circ-\\theta)}$$</p>\n<p>先用特殊角與誘導公式：</p>\n<p>$$\\cos 60^\\circ = \\frac12,\\quad \\cos 240^\\circ = -\\frac12,\\quad \\cos(90^\\circ-\\theta) = \\sin\\theta,\\quad \\cos(270^\\circ-\\theta) = -\\sin\\theta$$</p>\n<p>代入：</p>\n<p>$$\\frac{\\tfrac12}{1-\\sin\\theta} - \\frac{\\tfrac12}{1+\\sin\\theta} = \\frac12\\cdot\\frac{(1+\\sin\\theta)-(1-\\sin\\theta)}{1-\\sin^2\\theta} = \\frac{\\sin\\theta}{\\cos^2\\theta}$$</p>\n<p>$$= \\frac{\\sin\\theta}{\\cos\\theta}\\cdot\\frac{1}{\\cos\\theta} = \\frac{\\tan\\theta}{\\cos\\theta}$$</p>\n<p><strong>答案：C　$\\dfrac{\\tan\\theta}{\\cos\\theta}$</strong></p>",
-   "file": "2012_II_解答.md"
+   "text": "$\\dfrac{\\cos 60^\\circ}{1-\\cos(90^\\circ-\\theta)} + \\dfrac{\\cos 240^\\circ}{1-\\cos(270^\\circ-\\theta)} =$\n\n- A. $\\dfrac{1}{\\cos^2\\theta}$\n- B. $\\dfrac{\\cos\\theta}{\\tan\\theta}$\n- C. $\\dfrac{\\tan\\theta}{\\cos\\theta}$\n- D. $\\dfrac{1}{\\cos\\theta\\tan\\theta}$",
+   "html": "<p>19.&nbsp;&nbsp;&nbsp;$\\dfrac{\\cos 60^\\circ}{1-\\cos(90^\\circ-\\theta)} + \\dfrac{\\cos 240^\\circ}{1-\\cos(270^\\circ-\\theta)} =$</p>\n<ul><li>A. $\\dfrac{1}{\\cos^2\\theta}$</li><li>B. $\\dfrac{\\cos\\theta}{\\tan\\theta}$</li><li>C. $\\dfrac{\\tan\\theta}{\\cos\\theta}$</li><li>D. $\\dfrac{1}{\\cos\\theta\\tan\\theta}$</li></ul>",
+   "file": "2012_P2_題目英文卷.md"
   },
   {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
-   "type": "解答",
+   "type": "題目",
    "qno": 20,
-   "title": "Q20　圓幾何（內接四邊形 + 等腰三角形）",
+   "title": "第 20 題",
    "section": "Paper 2　Section A",
    "tags": [
-    "圓幾何（內接四邊形 + 等腰三角形）"
+    "圓的性質",
+    "三角比",
+    "平面幾何"
    ],
-   "text": "> 圖：$O$ 為圓 $ABCD$ 圓心。$\\angle BAO=28^\\circ$、$\\angle BCD=114^\\circ$、$\\angle CDO=42^\\circ$。\n\n1. $OA=OB$（半徑）→ $\\angle ABO = \\angle BAO = 28^\\circ$（等腰 $\\triangle$ 底角）\n2. $OD=OC$ → $\\angle OCD = \\angle CDO = 42^\\circ$\n3. $\\angle BAD = 180^\\circ - \\angle BCD = 66^\\circ$（圓內接四邊形對角互補）\n4. $\\angle DAO = 66^\\circ - 28^\\circ = 38^\\circ$，且 $\\angle ADO = \\angle DAO = 38^\\circ$（等腰 $\\triangle OAD$）\n5. $\\angle ADC = 38^\\circ + 42^\\circ = 80^\\circ$\n6. $\\angle ABC = 180^\\circ - \\angle ADC = 100^\\circ$（對角互補）\n\n**答案：C　$100^\\circ$**",
-   "html": "<p>20.&nbsp;&nbsp;&nbsp;20</p>\n<blockquote>\n<p>圖：$O$ 為圓 $ABCD$ 圓心。$\\angle BAO=28^\\circ$、$\\angle BCD=114^\\circ$、$\\angle CDO=42^\\circ$。</p>\n</blockquote>\n<ol>\n<li>$OA=OB$（半徑）→ $\\angle ABO = \\angle BAO = 28^\\circ$（等腰 $\\triangle$ 底角）</li>\n<li>$OD=OC$ → $\\angle OCD = \\angle CDO = 42^\\circ$</li>\n<li>$\\angle BAD = 180^\\circ - \\angle BCD = 66^\\circ$（圓內接四邊形對角互補）</li>\n<li>$\\angle DAO = 66^\\circ - 28^\\circ = 38^\\circ$，且 $\\angle ADO = \\angle DAO = 38^\\circ$（等腰 $\\triangle OAD$）</li>\n<li>$\\angle ADC = 38^\\circ + 42^\\circ = 80^\\circ$</li>\n<li>$\\angle ABC = 180^\\circ - \\angle ADC = 100^\\circ$（對角互補）</li>\n</ol>\n<p><strong>答案：C　$100^\\circ$</strong></p>",
-   "file": "2012_II_解答.md"
+   "text": "In the figure, $O$ is the centre of the circle $ABCD$. If $\\angle BAO = 28^\\circ$, $\\angle BCD = 114^\\circ$ and $\\angle CDO = 42^\\circ$, then $\\angle ABC =$\n\u0001IMG0\u0001\n\n- A. $90^\\circ$\n- B. $96^\\circ$\n- C. $100^\\circ$\n- D. $138^\\circ$",
+   "html": "<p>20.&nbsp;&nbsp;&nbsp;In the figure, $O$ is the centre of the circle $ABCD$. If $\\angle BAO = 28^\\circ$, $\\angle BCD = 114^\\circ$ and $\\angle CDO = 42^\\circ$, then $\\angle ABC =$</p>\n<p><img alt=\"Figure Q20 (as printed)\" src=\"2012P2_figs/Q20.png\" /></p>\n<ul><li>A. $90^\\circ$</li><li>B. $96^\\circ$</li><li>C. $100^\\circ$</li><li>D. $138^\\circ$</li></ul>",
+   "file": "2012_P2_題目英文卷.md"
   },
   {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
-   "type": "解答",
+   "type": "題目",
    "qno": 21,
-   "title": "Q21　弓形面積",
+   "title": "第 21 題",
    "section": "Paper 2　Section A",
    "tags": [
-    "弓形面積"
+    "圓的性質",
+    "平面幾何",
+    "三角比"
    ],
-   "text": "> 圖：$AB$ 為直徑（$AB=12$ cm，$r=6$），$CD\\parallel AB$（$CD=6$ cm）。陰影為弦 $AB$ 與弦 $CD$ 之間、以弧 $AD$ 及 $CB$ 為左右邊界的區域。\n\n$CD = r = 6$ → $\\triangle OCD$ 等邊 → 圓心角 $\\angle COD = 60^\\circ$。\n\n$CD$ 以下的弓形面積：\n\n$$\\frac{60}{360}\\pi(6)^2 - \\frac12(6)(6)\\sin 60^\\circ = 6\\pi - 9\\sqrt{3}$$\n\n陰影 = 半圓 − 弓形：\n\n$$18\\pi - (6\\pi - 9\\sqrt{3}) = 12\\pi + 9\\sqrt{3}\\ \\text{cm}^2$$\n\n**答案：D　$(12\\pi+9\\sqrt3)$ cm²**",
-   "html": "<p>21.&nbsp;&nbsp;&nbsp;21</p>\n<blockquote>\n<p>圖：$AB$ 為直徑（$AB=12$ cm，$r=6$），$CD\\parallel AB$（$CD=6$ cm）。陰影為弦 $AB$ 與弦 $CD$ 之間、以弧 $AD$ 及 $CB$ 為左右邊界的區域。</p>\n</blockquote>\n<p>$CD = r = 6$ → $\\triangle OCD$ 等邊 → 圓心角 $\\angle COD = 60^\\circ$。</p>\n<p>$CD$ 以下的弓形面積：</p>\n<p>$$\\frac{60}{360}\\pi(6)^2 - \\frac12(6)(6)\\sin 60^\\circ = 6\\pi - 9\\sqrt{3}$$</p>\n<p>陰影 = 半圓 − 弓形：</p>\n<p>$$18\\pi - (6\\pi - 9\\sqrt{3}) = 12\\pi + 9\\sqrt{3}\\ \\text{cm}^2$$</p>\n<p><strong>答案：D　$(12\\pi+9\\sqrt3)$ cm²</strong></p>",
-   "file": "2012_II_解答.md"
+   "text": "In the figure, $AB$ is a diameter of the circle $ABCD$. If $AB = 12 \\text{ cm}$ and $CD = 6 \\text{ cm}$, then the area of the shaded region is\n\u0001IMG0\u0001\n\n- A. $(12\\pi - 9) \\text{ cm}^2$\n- B. $(12\\pi + 9) \\text{ cm}^2$\n- C. $(12\\pi - 9\\sqrt{3}) \\text{ cm}^2$\n- D. $(12\\pi + 9\\sqrt{3}) \\text{ cm}^2$",
+   "html": "<p>21.&nbsp;&nbsp;&nbsp;In the figure, $AB$ is a diameter of the circle $ABCD$. If $AB = 12 \\text{ cm}$ and $CD = 6 \\text{ cm}$, then the area of the shaded region is</p>\n<p><img alt=\"Figure Q21 (as printed)\" src=\"2012P2_figs/Q21.png\" /></p>\n<ul><li>A. $(12\\pi - 9) \\text{ cm}^2$</li><li>B. $(12\\pi + 9) \\text{ cm}^2$</li><li>C. $(12\\pi - 9\\sqrt{3}) \\text{ cm}^2$</li><li>D. $(12\\pi + 9\\sqrt{3}) \\text{ cm}^2$</li></ul>",
+   "file": "2012_P2_題目英文卷.md"
   },
   {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
-   "type": "解答",
+   "type": "題目",
    "qno": 22,
-   "title": "Q22　正多邊形性質",
+   "title": "第 22 題",
    "section": "Paper 2　Section A",
    "tags": [
-    "正多邊形性質"
+    "變換與對稱"
    ],
-   "text": "正 12 邊形：\n\n- 外角 $= 360^\\circ/12 = 30^\\circ$ ✔（I 對）\n- 內角 $= 180^\\circ - 30^\\circ = 150^\\circ$ ✔（II 對）\n- 反射對稱軸數目 $=$ 邊數 $= 12$ 條，不是 6 ✘（III 錯）\n\n**答案：A　I and II only**",
-   "html": "<p>22.&nbsp;&nbsp;&nbsp;正 12 邊形：</p>\n<ul>\n<li>外角 $= 360^\\circ/12 = 30^\\circ$ ✔（I 對）</li>\n<li>內角 $= 180^\\circ - 30^\\circ = 150^\\circ$ ✔（II 對）</li>\n<li>反射對稱軸數目 $=$ 邊數 $= 12$ 條，不是 6 ✘（III 錯）</li>\n</ul>\n<p><strong>答案：A　I and II only</strong></p>",
-   "file": "2012_II_解答.md"
+   "text": "Which of the following statements about a regular 12-sided polygon are true? I. Each exterior angle is $30^\\circ$. II. Each interior angle is $150^\\circ$. III. The number of axes of reflectional symmetry is 6.\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
+   "html": "<p>22.&nbsp;&nbsp;&nbsp;Which of the following statements about a regular 12-sided polygon are true? I. Each exterior angle is $30^\\circ$. II. Each interior angle is $150^\\circ$. III. The number of axes of reflectional symmetry is 6.</p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
+   "file": "2012_P2_題目英文卷.md"
   },
   {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
-   "type": "解答",
+   "type": "題目",
    "qno": 23,
-   "title": "Q23　極坐標 + 旋轉",
+   "title": "第 23 題",
    "section": "Paper 2　Section A",
    "tags": [
-    "極坐標 + 旋轉"
+    "坐標幾何",
+    "變換與對稱",
+    "三角比"
    ],
-   "text": "$P(-3, -3\\sqrt3)$ 繞原點逆時針轉 $90^\\circ$，求像的極坐標。\n\n$$OP = \\sqrt{(-3)^2+(-3\\sqrt3)^2} = \\sqrt{9+27} = 6$$\n\n$P$ 在第三象限：$\\tan^{-1}\\left(\\dfrac{-3\\sqrt3}{-3}\\right) = 60^\\circ$（參考角）→ 極角 $= 180^\\circ+60^\\circ = 240^\\circ$\n\n逆時針轉 $90^\\circ$：$240^\\circ + 90^\\circ = 330^\\circ$，長度不變。\n\n$$\\text{像} = (6,\\ 330^\\circ)$$\n\n**答案：D　$(6, 330^\\circ)$**",
-   "html": "<p>23.&nbsp;&nbsp;&nbsp;$P(-3, -3\\sqrt3)$ 繞原點逆時針轉 $90^\\circ$，求像的極坐標。</p>\n<p>$$OP = \\sqrt{(-3)^2+(-3\\sqrt3)^2} = \\sqrt{9+27} = 6$$</p>\n<p>$P$ 在第三象限：$\\tan^{-1}\\left(\\dfrac{-3\\sqrt3}{-3}\\right) = 60^\\circ$（參考角）→ 極角 $= 180^\\circ+60^\\circ = 240^\\circ$</p>\n<p>逆時針轉 $90^\\circ$：$240^\\circ + 90^\\circ = 330^\\circ$，長度不變。</p>\n<p>$$\\text{像} = (6,\\ 330^\\circ)$$</p>\n<p><strong>答案：D　$(6, 330^\\circ)$</strong></p>",
-   "file": "2012_II_解答.md"
+   "text": "The rectangular coordinates of the point $P$ are $(-3, -3\\sqrt{3})$. If $P$ is rotated anticlockwise about the origin through $90^\\circ$, then the polar coordinates of its image are\n\n- A. $(3, 150^\\circ)$.\n- B. $(3, 330^\\circ)$.\n- C. $(6, 150^\\circ)$.\n- D. $(6, 330^\\circ)$.",
+   "html": "<p>23.&nbsp;&nbsp;&nbsp;The rectangular coordinates of the point $P$ are $(-3, -3\\sqrt{3})$. If $P$ is rotated anticlockwise about the origin through $90^\\circ$, then the polar coordinates of its image are</p>\n<ul><li>A. $(3, 150^\\circ)$.</li><li>B. $(3, 330^\\circ)$.</li><li>C. $(6, 150^\\circ)$.</li><li>D. $(6, 330^\\circ)$.</li></ul>",
+   "file": "2012_P2_題目英文卷.md"
   },
   {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
-   "type": "解答",
+   "type": "題目",
    "qno": 24,
-   "title": "Q24　軌跡概念",
+   "title": "第 24 題",
    "section": "Paper 2　Section A",
    "tags": [
-    "軌跡概念"
+    "坐標幾何",
+    "圓的性質",
+    "圓的方程"
    ],
-   "text": "動點 $P$ 與定點 $(20,12)$ 的距離恆等於 $5$。\n\n與定點等距離的軌跡 = 圓。\n\n**答案：A　circle**",
-   "html": "<p>24.&nbsp;&nbsp;&nbsp;動點 $P$ 與定點 $(20,12)$ 的距離恆等於 $5$。</p>\n<p>與定點等距離的軌跡 = 圓。</p>\n<p><strong>答案：A　circle</strong></p>",
-   "file": "2012_II_解答.md"
+   "text": "If $P$ is a moving point in the rectangular coordinate plane such that the distance between $P$ and the point $(20, 12)$ is equal to 5, then the locus of $P$ is a\n\n- A. circle.\n- B. square.\n- C. parabola.\n- D. triangle.",
+   "html": "<p>24.&nbsp;&nbsp;&nbsp;If $P$ is a moving point in the rectangular coordinate plane such that the distance between $P$ and the point $(20, 12)$ is equal to 5, then the locus of $P$ is a</p>\n<ul><li>A. circle.</li><li>B. square.</li><li>C. parabola.</li><li>D. triangle.</li></ul>",
+   "file": "2012_P2_題目英文卷.md"
   },
   {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
-   "type": "解答",
+   "type": "題目",
    "qno": 25,
-   "title": "Q25　直線圖像判斷",
+   "title": "第 25 題",
    "section": "Paper 2　Section A",
    "tags": [
-    "直線圖像判斷"
+    "直線方程"
    ],
-   "text": "> 圖：$L_1: ax+y=b$ 由左下向右上、$y$ 軸截距為正；$L_2: cx+y=d$ 更陡、$x$ 軸截距在正 $x$ 軸上（即 $y$ 軸截距 $d<0$）。\n\n化成斜截式：$L_1: y=-ax+b$、$L_2: y=-cx+d$。\n\n- I：$L_1$ 上斜 → $-a>0 \\Rightarrow a<0$ ✔\n- II：$L_2$ 較陡 → $-c>-a \\Rightarrow c<a$，故 $a<c$ 錯 ✘\n- III：$b>0>d$ ✔\n- IV：$a<0,\\ d<0 \\Rightarrow ad>0$；$b>0,\\ c<0 \\Rightarrow bc<0$ → $ad>bc$ ✔\n\n**答案：C　I, III and IV only**",
-   "html": "<p>25.&nbsp;&nbsp;&nbsp;25</p>\n<blockquote>\n<p>圖：$L_1: ax+y=b$ 由左下向右上、$y$ 軸截距為正；$L_2: cx+y=d$ 更陡、$x$ 軸截距在正 $x$ 軸上（即 $y$ 軸截距 $d&lt;0$）。</p>\n</blockquote>\n<p>化成斜截式：$L_1: y=-ax+b$、$L_2: y=-cx+d$。</p>\n<ul>\n<li>I：$L_1$ 上斜 → $-a&gt;0 \\Rightarrow a&lt;0$ ✔</li>\n<li>II：$L_2$ 較陡 → $-c&gt;-a \\Rightarrow c&lt;a$，故 $a&lt;c$ 錯 ✘</li>\n<li>III：$b&gt;0&gt;d$ ✔</li>\n<li>IV：$a&lt;0,\\ d&lt;0 \\Rightarrow ad&gt;0$；$b&gt;0,\\ c&lt;0 \\Rightarrow bc&lt;0$ → $ad&gt;bc$ ✔</li>\n</ul>\n<p><strong>答案：C　I, III and IV only</strong></p>",
-   "file": "2012_II_解答.md"
+   "text": "In the figure, the equations of the straight lines $ L_1 $ and $ L_2 $ are $ ax + y = b $ and $ cx + y = d $ respectively. Which of the following are true? I. $ a < 0 $ II. $ a < c $ III. $ b > d $ IV. $ ad > bc $\n\u0001IMG0\u0001\n\n- A. I, II and III only\n- B. I, II and IV only\n- C. I, III and IV only\n- D. II, III and IV only",
+   "html": "<p>25.&nbsp;&nbsp;&nbsp;In the figure, the equations of the straight lines $ L_1 $ and $ L_2 $ are $ ax + y = b $ and $ cx + y = d $ respectively. Which of the following are true? I. $ a &lt; 0 $ II. $ a &lt; c $ III. $ b &gt; d $ IV. $ ad &gt; bc $</p>\n<p><img alt=\"Figure Q25 (as printed)\" src=\"2012P2_figs/Q25.png\" /></p>\n<ul><li>A. I, II and III only</li><li>B. I, II and IV only</li><li>C. I, III and IV only</li><li>D. II, III and IV only</li></ul>",
+   "file": "2012_P2_題目英文卷.md"
   },
   {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
-   "type": "解答",
+   "type": "題目",
    "qno": 26,
-   "title": "Q26　圓與坐標軸位置",
+   "title": "第 26 題",
    "section": "Paper 2　Section A",
    "tags": [
-    "圓與坐標軸位置"
+    "坐標幾何",
+    "圓的性質",
+    "圓的方程"
    ],
-   "text": "> 圖：圓心 $(h,k)$ 在第二象限，圓穿過 $y$ 軸，但不接觸 $x$ 軸（整圓在 $x$ 軸上方）。\n\n圓過 $y$ 軸 → $r > -h$；圓不觸 $x$ 軸 → $k-r>0$，即 $r<k$。\n\n合併：$-h < r < k$\n\n- I：$-h<k \\Rightarrow h+k>0$ ✔\n- II：$r>h$（$r>0>h$ 亦然）→ $r-h>0$ ✔\n- III：$r<k$ → $r-k>0$ 錯 ✘\n\n**答案：A　I and II only**",
-   "html": "<p>26.&nbsp;&nbsp;&nbsp;26</p>\n<blockquote>\n<p>圖：圓心 $(h,k)$ 在第二象限，圓穿過 $y$ 軸，但不接觸 $x$ 軸（整圓在 $x$ 軸上方）。</p>\n</blockquote>\n<p>圓過 $y$ 軸 → $r &gt; -h$；圓不觸 $x$ 軸 → $k-r&gt;0$，即 $r&lt;k$。</p>\n<p>合併：$-h &lt; r &lt; k$</p>\n<ul>\n<li>I：$-h<k \\Rightarrow h+k>0$ ✔</li>\n<li>II：$r&gt;h$（$r&gt;0&gt;h$ 亦然）→ $r-h&gt;0$ ✔</li>\n<li>III：$r<k$ → $r-k>0$ 錯 ✘</li>\n</ul>\n<p><strong>答案：A　I and II only</strong></p>",
-   "file": "2012_II_解答.md"
+   "text": "In the figure, the radius of the circle and the coordinates of the centre are $ r $ and $ (h, k) $ respectively. Which of the following are true? I. $ h + k > 0 $ II. $ r - h > 0 $ III. $ r - k > 0 $\n\u0001IMG0\u0001\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
+   "html": "<p>26.&nbsp;&nbsp;&nbsp;In the figure, the radius of the circle and the coordinates of the centre are $ r $ and $ (h, k) $ respectively. Which of the following are true? I. $ h + k &gt; 0 $ II. $ r - h &gt; 0 $ III. $ r - k &gt; 0 $</p>\n<p><img alt=\"Figure Q26 (as printed)\" src=\"2012P2_figs/Q26.png\" /></p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
+   "file": "2012_P2_題目英文卷.md"
   },
   {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
-   "type": "解答",
+   "type": "題目",
    "qno": 27,
-   "title": "Q27　概率：整除",
+   "title": "第 27 題",
    "section": "Paper 2　Section A",
    "tags": [
-    "概率：整除"
+    "概率"
    ],
-   "text": "$9\\star\\blacklozenge$ 為三位數，$\\star,\\blacklozenge$ 各取 $0$–$9$。求該數被 $5$ 整除的概率。\n\n總數：$10\\times10 = 100$ 個。\n\n被 5 整除 ⇔ 個位 $\\blacklozenge \\in \\{0,5\\}$ → $10\\times2 = 20$ 個。\n\n$$P = \\frac{20}{100} = \\frac15$$\n\n**答案：A　$\\dfrac15$**",
-   "html": "<p>27.&nbsp;&nbsp;&nbsp;$9\\star\\blacklozenge$ 為三位數，$\\star,\\blacklozenge$ 各取 $0$–$9$。求該數被 $5$ 整除的概率。</p>\n<p>總數：$10\\times10 = 100$ 個。</p>\n<p>被 5 整除 ⇔ 個位 $\\blacklozenge \\in {0,5}$ → $10\\times2 = 20$ 個。</p>\n<p>$$P = \\frac{20}{100} = \\frac15$$</p>\n<p><strong>答案：A　$\\dfrac15$</strong></p>",
-   "file": "2012_II_解答.md"
+   "text": "$ 9 \\star \\diamondsuit $ is a 3-digit number, where $ \\star $ and $ \\diamondsuit $ are integers from 0 to 9 inclusive. Find the probability that the 3-digit number is divisible by 5.\n\n- A. $\\dfrac{1}{5}$\n- B. $\\dfrac{7}{33}$\n- C. $\\dfrac{20}{99}$\n- D. $\\dfrac{19}{100}$ 9",
+   "html": "<p>27.&nbsp;&nbsp;&nbsp;$ 9 \\star \\diamondsuit $ is a 3-digit number, where $ \\star $ and $ \\diamondsuit $ are integers from 0 to 9 inclusive. Find the probability that the 3-digit number is divisible by 5.</p>\n<ul><li>A. $\\dfrac{1}{5}$</li><li>B. $\\dfrac{7}{33}$</li><li>C. $\\dfrac{20}{99}$</li><li>D. $\\dfrac{19}{100}$ 9</li></ul>",
+   "file": "2012_P2_題目英文卷.md"
   },
   {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
-   "type": "解答",
+   "type": "題目",
    "qno": 28,
-   "title": "Q28　幹葉圖概率",
+   "title": "第 28 題",
    "section": "Paper 2　Section A",
    "tags": [
-    "幹葉圖概率"
+    "統計",
+    "集中趨勢",
+    "概率"
    ],
-   "text": "年齡分佈（共 $5+8+6+0+1 = 20$ 人）。求隨機抽出一人年齡**不小於 74** 的概率。\n\n$\\ge 74$ 歲：$74, 74, 76, 77, 79, 91$ → 6 人。\n\n$$P = \\frac{6}{20} = 0.3$$\n\n**答案：B　0.3**",
-   "html": "<p>28.&nbsp;&nbsp;&nbsp;年齡分佈（共 $5+8+6+0+1 = 20$ 人）。求隨機抽出一人年齡<strong>不小於 74</strong> 的概率。</p>\n<p>$\\ge 74$ 歲：$74, 74, 76, 77, 79, 91$ → 6 人。</p>\n<p>$$P = \\frac{6}{20} = 0.3$$</p>\n<p><strong>答案：B　0.3</strong></p>",
-   "file": "2012_II_解答.md"
+   "text": "The stem-and-leaf diagram below shows the distribution of the ages of a group of members in a recreational centre.\n:::stemleaf\nStem (tens) | Leaf (units)\n5 | 0 5 6 6 8\n6 | 1 4 5 5 7 8 8 9\n7 | 3 4 4 6 7 9\n8 |\n9 | 1\n:::\n\n- A. 0.2\n- B. 0.3\n- C. 0.7\n- D. 0.8",
+   "html": "<p>28.&nbsp;&nbsp;&nbsp;The stem-and-leaf diagram below shows the distribution of the ages of a group of members in a recreational centre.</p>\n<div class=\"stemleaf\"><div class=\"slcol slL\"><div class=\"slr slh\">Stem (tens)</div><div class=\"slr\">5</div><div class=\"slr\">6</div><div class=\"slr\">7</div><div class=\"slr\">8</div><div class=\"slr\">9</div></div><div class=\"slrule\"></div><div class=\"slcol slR\"><div class=\"slr slh\">Leaf (units)</div><div class=\"slr\"><span>0</span><span>5</span><span>6</span><span>6</span><span>8</span></div><div class=\"slr\"><span>1</span><span>4</span><span>5</span><span>5</span><span>7</span><span>8</span><span>8</span><span>9</span></div><div class=\"slr\"><span>3</span><span>4</span><span>4</span><span>6</span><span>7</span><span>9</span></div><div class=\"slr\"></div><div class=\"slr\"><span>1</span></div></div></div>\n<ul><li>A. 0.2</li><li>B. 0.3</li><li>C. 0.7</li><li>D. 0.8</li></ul>",
+   "file": "2012_P2_題目英文卷.md"
   },
   {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
-   "type": "解答",
+   "type": "題目",
    "qno": 29,
-   "title": "Q29　標準差（分組數據）",
+   "title": "第 29 題",
    "section": "Paper 2　Section A",
    "tags": [
-    "標準差（分組數據）"
+    "統計",
+    "集中趨勢",
+    "離差"
    ],
-   "text": "戒指分佈：$0$ 枚 2 人、$1$ 枚 8 人、$2$ 枚 4 人、$3$ 枚 6 人、$4$ 枚 2 人（$n=22$）。\n\n$$\\sum fx = 0(2)+1(8)+2(4)+3(6)+4(2) = 42,\\qquad \\sum fx^2 = 0+8+16+54+32 = 110$$\n\n$$\\bar x = \\frac{42}{22},\\qquad \\sigma = \\sqrt{\\frac{110}{22}-\\left(\\frac{42}{22}\\right)^2} = \\sqrt{5-\\left(\\frac{21}{11}\\right)^2} = \\sqrt{1.3554\\ldots}$$\n\n$$\\sigma \\approx 1.16$$\n\n**答案：B　1.16**",
-   "html": "<p>29.&nbsp;&nbsp;&nbsp;戒指分佈：$0$ 枚 2 人、$1$ 枚 8 人、$2$ 枚 4 人、$3$ 枚 6 人、$4$ 枚 2 人（$n=22$）。</p>\n<p>$$\\sum fx = 0(2)+1(8)+2(4)+3(6)+4(2) = 42,\\qquad \\sum fx^2 = 0+8+16+54+32 = 110$$</p>\n<p>$$\\bar x = \\frac{42}{22},\\qquad \\sigma = \\sqrt{\\frac{110}{22}-\\left(\\frac{42}{22}\\right)^2} = \\sqrt{5-\\left(\\frac{21}{11}\\right)^2} = \\sqrt{1.3554\\ldots}$$</p>\n<p>$$\\sigma \\approx 1.16$$</p>\n<p><strong>答案：B　1.16</strong></p>",
-   "file": "2012_II_解答.md"
+   "text": "The bar chart below shows the distribution of the numbers of rings owned by the girls in a group. Find the standard deviation of the distribution correct to 2 decimal places.\n\u0001IMG0\u0001\n\n- A. 1.04\n- B. 1.16\n- C. 1.19\n- D. 2.09",
+   "html": "<p>29.&nbsp;&nbsp;&nbsp;The bar chart below shows the distribution of the numbers of rings owned by the girls in a group. Find the standard deviation of the distribution correct to 2 decimal places.</p>\n<p><img alt=\"Figure Q29 (as printed)\" src=\"2012P2_figs/Q29.png\" /></p>\n<ul><li>A. 1.04</li><li>B. 1.16</li><li>C. 1.19</li><li>D. 2.09</li></ul>",
+   "file": "2012_P2_題目英文卷.md"
   },
   {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
-   "type": "解答",
+   "type": "題目",
    "qno": 30,
-   "title": "Q30　平均數 + 中位數約束",
+   "title": "第 30 題",
    "section": "Paper 2　Section A",
    "tags": [
-    "平均數 + 中位數約束"
+    "統計",
+    "集中趨勢",
+    "離差"
    ],
-   "text": "數據：$19,10,12,12,13,13,14,15,16,m,n$（11 個數）。平均數與中位數皆為 $14$。\n\n**平均數**：總和 $= 11\\times14 = 154$；已知九數之和 $=124$\n\n$$m+n = 30 \\quad (\\text{III ✔})$$\n\n**中位數**（第 6 個數）$=14$：已知有 5 個數小於 14（$10,12,12,13,13$），故 $m,n$ 皆不可小於 14：\n\n$$m\\ge 14 \\quad (\\text{I ✔}) \\;\\Rightarrow\\; n = 30-m \\le 16 \\quad (\\text{II ✔})$$\n\n**答案：D　I, II and III**\n\n---\n\n# Section B（第 31–45 題）",
-   "html": "<p>30.&nbsp;&nbsp;&nbsp;數據：$19,10,12,12,13,13,14,15,16,m,n$（11 個數）。平均數與中位數皆為 $14$。</p>\n<p><strong>平均數</strong>：總和 $= 11\\times14 = 154$；已知九數之和 $=124$</p>\n<p>$$m+n = 30 \\quad (\\text{III ✔})$$</p>\n<p><strong>中位數</strong>（第 6 個數）$=14$：已知有 5 個數小於 14（$10,12,12,13,13$），故 $m,n$ 皆不可小於 14：</p>\n<p>$$m\\ge 14 \\quad (\\text{I ✔}) \\;\\Rightarrow\\; n = 30-m \\le 16 \\quad (\\text{II ✔})$$</p>\n<p><strong>答案：D　I, II and III</strong></p>\n<hr />\n<h1>Section B（第 31–45 題）</h1>",
-   "file": "2012_II_解答.md"
+   "text": "Consider the following data: 19 10 12 12 13 13 14 15 16 m n If both the mean and the median of the above data are 14, which of the following are true? I. m ≥ 14 II. n ≤ 16 III. m + n = 30\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
+   "html": "<p>30.&nbsp;&nbsp;&nbsp;Consider the following data: 19 10 12 12 13 13 14 15 16 m n If both the mean and the median of the above data are 14, which of the following are true? I. m ≥ 14 II. n ≤ 16 III. m + n = 30</p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
+   "file": "2012_P2_題目英文卷.md"
   },
   {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
-   "type": "解答",
+   "type": "題目",
    "qno": 31,
-   "title": "Q31　H.C.F. 與 L.C.M.",
+   "title": "第 31 題",
    "section": "Paper 2　Section B",
    "tags": [
-    "H.C.F. 與 L.C.M."
+    "指數定律",
+    "因式分解",
+    "多項式"
    ],
-   "text": "三式之 H.C.F. $= ab^2$、L.C.M. $= 4a^4b^5c^6$。首兩式為 $2a^2b^4c$、$4a^4b^2c^6$，求第三式。\n\n法則：H.C.F. 取各字母指數的**最小值**；L.C.M. 取**最大值**。\n\n- $a$：$\\min(2,4,a_3)=1 \\Rightarrow a_3=1$（且 $\\max(2,4,1)=4$ ✔）\n- $b$：$\\max(4,2,b_3)=5 \\Rightarrow b_3=5$（且 $\\min(4,2,5)=2$ ✔）\n- $c$：$\\min(1,6,c_3)=0 \\Rightarrow c_3=0$（且 $\\max(1,6,0)=6$ ✔）\n\n$$\\text{第三式} = ab^5$$\n\n**答案：B　$ab^5$**",
-   "html": "<p>31.&nbsp;&nbsp;&nbsp;三式之 H.C.F. $= ab^2$、L.C.M. $= 4a^4b^5c^6$。首兩式為 $2a^2b^4c$、$4a^4b^2c^6$，求第三式。</p>\n<p>法則：H.C.F. 取各字母指數的<strong>最小值</strong>；L.C.M. 取<strong>最大值</strong>。</p>\n<ul>\n<li>$a$：$\\min(2,4,a_3)=1 \\Rightarrow a_3=1$（且 $\\max(2,4,1)=4$ ✔）</li>\n<li>$b$：$\\max(4,2,b_3)=5 \\Rightarrow b_3=5$（且 $\\min(4,2,5)=2$ ✔）</li>\n<li>$c$：$\\min(1,6,c_3)=0 \\Rightarrow c_3=0$（且 $\\max(1,6,0)=6$ ✔）</li>\n</ul>\n<p>$$\\text{第三式} = ab^5$$</p>\n<p><strong>答案：B　$ab^5$</strong></p>",
-   "file": "2012_II_解答.md"
+   "text": "The H.C.F. and the L.C.M. of three expressions are $ ab^2 $ and $ 4a^4b^5c^6 $ respectively. If the first expression and the second expression are $ 2a^2b^4c $ and $ 4a^4b^2c^6 $ respectively, then the third expression is\n\n- A. $ ab^2 $\n- B. $ ab^5 $\n- C. $ 2ab^2c $\n- D. $ 2ab^5c $",
+   "html": "<p>31.&nbsp;&nbsp;&nbsp;The H.C.F. and the L.C.M. of three expressions are $ ab^2 $ and $ 4a^4b^5c^6 $ respectively. If the first expression and the second expression are $ 2a^2b^4c $ and $ 4a^4b^2c^6 $ respectively, then the third expression is</p>\n<ul><li>A. $ ab^2 $</li><li>B. $ ab^5 $</li><li>C. $ 2ab^2c $</li><li>D. $ 2ab^5c $</li></ul>",
+   "file": "2012_P2_題目英文卷.md"
   },
   {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
-   "type": "解答",
+   "type": "題目",
    "qno": 32,
-   "title": "Q32　對數圖像",
+   "title": "第 32 題",
    "section": "Paper 2　Section B",
    "tags": [
-    "對數圖像"
+    "對數",
+    "函數與圖像",
+    "指數函數"
    ],
-   "text": "$\\log_3 y$ 對 $x$ 的圖像為直線，過 $(-2,0)$ 與 $(0,4)$。若 $y=mn^x$，求 $n$。\n\n兩邊取 $\\log_3$：\n\n$$\\log_3 y = \\log_3 m + x\\log_3 n$$\n\n斜率 $= \\log_3 n$：\n\n$$\\log_3 n = \\frac{4-0}{0-(-2)} = 2 \\;\\Rightarrow\\; n = 3^2 = 9$$\n\n**答案：C　$n=9$**",
-   "html": "<p>32.&nbsp;&nbsp;&nbsp;$\\log_3 y$ 對 $x$ 的圖像為直線，過 $(-2,0)$ 與 $(0,4)$。若 $y=mn^x$，求 $n$。</p>\n<p>兩邊取 $\\log_3$：</p>\n<p>$$\\log_3 y = \\log_3 m + x\\log_3 n$$</p>\n<p>斜率 $= \\log_3 n$：</p>\n<p>$$\\log_3 n = \\frac{4-0}{0-(-2)} = 2 \\;\\Rightarrow\\; n = 3^2 = 9$$</p>\n<p><strong>答案：C　$n=9$</strong></p>",
-   "file": "2012_II_解答.md"
+   "text": "The graph in the figure shows the linear relation between $ x $ and $ \\log_3 y $. If $ y = mn^x $, then $ n = $\n\u0001IMG0\u0001\n\n- A. $ \\dfrac{1}{81} $\n- B. $ \\dfrac{1}{9} $\n- C. 9\n- D. 81",
+   "html": "<p>32.&nbsp;&nbsp;&nbsp;The graph in the figure shows the linear relation between $ x $ and $ \\log_3 y $. If $ y = mn^x $, then $ n = $</p>\n<p><img alt=\"Figure Q32 (as printed)\" src=\"2012P2_figs/Q32.png\" /></p>\n<ul><li>A. $ \\dfrac{1}{81} $</li><li>B. $ \\dfrac{1}{9} $</li><li>C. 9</li><li>D. 81</li></ul>",
+   "file": "2012_P2_題目英文卷.md"
   },
   {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
-   "type": "解答",
+   "type": "題目",
    "qno": 33,
-   "title": "Q33　十六進制",
+   "title": "第 33 題",
    "section": "Paper 2　Section B",
    "tags": [
-    "十六進制"
+    "指數定律",
+    "代數化簡",
+    "因式分解"
    ],
-   "text": "展開 $\\text{AD0000002012}_{16}$。\n\n從右數：$2(16^0)+1(16^1)+0+2(16^3)$，前面 $\\text{A}$（$=10$）在第 12 位、$\\text{D}$（$=13$）在第 11 位：\n\n$$10\\times16^{11}+13\\times16^{10}+2\\times16^3+1\\times16+2 = 10(16^{11})+13(16^{10})+8192+16+2$$\n\n$$= 10(16^{11})+13(16^{10})+8210$$\n\n**答案：A**",
-   "html": "<p>33.&nbsp;&nbsp;&nbsp;展開 $\\text{AD0000002012}_{16}$。</p>\n<p>從右數：$2(16^0)+1(16^1)+0+2(16^3)$，前面 $\\text{A}$（$=10$）在第 12 位、$\\text{D}$（$=13$）在第 11 位：</p>\n<p>$$10\\times16^{11}+13\\times16^{10}+2\\times16^3+1\\times16+2 = 10(16^{11})+13(16^{10})+8192+16+2$$</p>\n<p>$$= 10(16^{11})+13(16^{10})+8210$$</p>\n<p><strong>答案：A</strong></p>",
-   "file": "2012_II_解答.md"
+   "text": "AD0000002012$_{16}$ =\n\n- A. $ (10)16^{11} + (13)16^{10} + 8210 $\n- B. $ (10)16^{12} + (13)16^{11} + 131360 $\n- C. $ (11)16^{11} + (14)16^{10} + 8210 $\n- D. $ (11)16^{12} + (14)16^{11} + 131360 $",
+   "html": "<p>33.&nbsp;&nbsp;&nbsp;AD0000002012$_{16}$ =</p>\n<ul><li>A. $ (10)16^{11} + (13)16^{10} + 8210 $</li><li>B. $ (10)16^{12} + (13)16^{11} + 131360 $</li><li>C. $ (11)16^{11} + (14)16^{10} + 8210 $</li><li>D. $ (11)16^{12} + (14)16^{11} + 131360 $</li></ul>",
+   "file": "2012_P2_題目英文卷.md"
   },
   {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
-   "type": "解答",
+   "type": "題目",
    "qno": 34,
-   "title": "Q34　二次函數頂點性質",
+   "title": "第 34 題",
    "section": "Paper 2　Section B",
    "tags": [
-    "二次函數頂點性質"
+    "函數與圖像",
+    "一元二次方程"
    ],
-   "text": "$f(x)$ 為二次函數，頂點 $(3,-4)$，即 $f(x)=a(x-3)^2-4$。何者**必然**成立？\n\n- A：$f(x)=0$ 的根是否整數，視乎 $a$ ✘\n- B：$f(x)-3=0 \\Rightarrow a(x-3)^2=7$，根 $=3\\pm\\sqrt{7/a}$，未必有理 ✘\n- **C：$f(x)+4=0 \\Rightarrow a(x-3)^2=0 \\Rightarrow x=3$（實數重根）必然 ✔**\n- D：$f(x)+5=0 \\Rightarrow a(x-3)^2=1$，$a<0$ 時根為非實數、$a>0$ 時為實數，不必然 ✘\n\n**答案：C**",
-   "html": "<p>34.&nbsp;&nbsp;&nbsp;$f(x)$ 為二次函數，頂點 $(3,-4)$，即 $f(x)=a(x-3)^2-4$。何者<strong>必然</strong>成立？</p>\n<ul>\n<li>A：$f(x)=0$ 的根是否整數，視乎 $a$ ✘</li>\n<li>B：$f(x)-3=0 \\Rightarrow a(x-3)^2=7$，根 $=3\\pm\\sqrt{7/a}$，未必有理 ✘</li>\n<li><strong>C：$f(x)+4=0 \\Rightarrow a(x-3)^2=0 \\Rightarrow x=3$（實數重根）必然 ✔</strong></li>\n<li>D：$f(x)+5=0 \\Rightarrow a(x-3)^2=1$，$a&lt;0$ 時根為非實數、$a&gt;0$ 時為實數，不必然 ✘</li>\n</ul>\n<p><strong>答案：C</strong></p>",
-   "file": "2012_II_解答.md"
+   "text": "Let $ f(x) $ be a quadratic function. If the coordinates of the vertex of the graph of $ y = f(x) $ are $ (3, -4) $, which of the following must be true?\n\n- A. The roots of the equation $ f(x) = 0 $ are integers.\n- B. The roots of the equation $ f(x) - 3 = 0 $ are rational numbers.\n- C. The roots of the equation $ f(x) + 4 = 0 $ are real numbers.\n- D. The roots of the equation $ f(x) + 5 = 0 $ are nonreal numbers. 11",
+   "html": "<p>34.&nbsp;&nbsp;&nbsp;Let $ f(x) $ be a quadratic function. If the coordinates of the vertex of the graph of $ y = f(x) $ are $ (3, -4) $, which of the following must be true?</p>\n<ul><li>A. The roots of the equation $ f(x) = 0 $ are integers.</li><li>B. The roots of the equation $ f(x) - 3 = 0 $ are rational numbers.</li><li>C. The roots of the equation $ f(x) + 4 = 0 $ are real numbers.</li><li>D. The roots of the equation $ f(x) + 5 = 0 $ are nonreal numbers. 11</li></ul>",
+   "file": "2012_P2_題目英文卷.md"
   },
   {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
-   "type": "解答",
+   "type": "題目",
    "qno": 35,
-   "title": "Q35　複數運算",
+   "title": "第 35 題",
    "section": "Paper 2　Section B",
    "tags": [
-    "複數運算"
+    "複數"
    ],
-   "text": "$$i^3(\\beta i-3) = i^2\\cdot i(\\beta i-3) = -i(\\beta i-3) = -\\beta i^2+3i = \\beta+3i$$\n\n**答案：A　$\\beta+3i$**",
-   "html": "<p>35.&nbsp;&nbsp;&nbsp;$$i^3(\\beta i-3) = i^2\\cdot i(\\beta i-3) = -i(\\beta i-3) = -\\beta i^2+3i = \\beta+3i$$</p>\n<p><strong>答案：A　$\\beta+3i$</strong></p>",
-   "file": "2012_II_解答.md"
+   "text": "$i^{3}(\\beta i-3)=$\n\n- A. $\\beta+3i$\n- B. $\\beta-3i$\n- C. $-\\beta+3i$\n- D. $-\\beta-3i$",
+   "html": "<p>35.&nbsp;&nbsp;&nbsp;$i^{3}(\\beta i-3)=$</p>\n<ul><li>A. $\\beta+3i$</li><li>B. $\\beta-3i$</li><li>C. $-\\beta+3i$</li><li>D. $-\\beta-3i$</li></ul>",
+   "file": "2012_P2_題目英文卷.md"
   },
   {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
-   "type": "解答",
+   "type": "題目",
    "qno": 36,
-   "title": "Q36　線性規劃區域",
+   "title": "第 36 題",
    "section": "Paper 2　Section B",
    "tags": [
-    "線性規劃區域"
+    "坐標幾何",
+    "不等式",
+    "直線方程"
    ],
-   "text": "> 圖：陰影（含邊界）由 $y=x+3$、$y=3$、$y=6-2x$ 圍成的三角形（頂點 $(0,3),(1,4),(1.5,3)$）。$(h,k)$ 在區域內。\n\n三個約束逐條翻譯：\n\n- 在 $y=3$ 之上：$k\\ge3$ ✔（I）\n- 在 $y=x+3$ 之下：$k\\le h+3 \\Leftrightarrow h-k\\ge-3$ ✔（II）\n- 在 $y=6-2x$ 之下：$k\\le 6-2h \\Leftrightarrow 2h+k\\le6$ ✔（III）\n\n**答案：D　I, II and III**",
-   "html": "<p>36.&nbsp;&nbsp;&nbsp;36</p>\n<blockquote>\n<p>圖：陰影（含邊界）由 $y=x+3$、$y=3$、$y=6-2x$ 圍成的三角形（頂點 $(0,3),(1,4),(1.5,3)$）。$(h,k)$ 在區域內。</p>\n</blockquote>\n<p>三個約束逐條翻譯：</p>\n<ul>\n<li>在 $y=3$ 之上：$k\\ge3$ ✔（I）</li>\n<li>在 $y=x+3$ 之下：$k\\le h+3 \\Leftrightarrow h-k\\ge-3$ ✔（II）</li>\n<li>在 $y=6-2x$ 之下：$k\\le 6-2h \\Leftrightarrow 2h+k\\le6$ ✔（III）</li>\n</ul>\n<p><strong>答案：D　I, II and III</strong></p>",
-   "file": "2012_II_解答.md"
+   "text": "The figure shows a shaded region (including the boundary). If $(h,k)$ is a point lying in the shaded region, which of the following are true? I. $k \\geq 3$ II. $h-k \\geq -3$ III. $2h+k \\leq 6$\n\u0001IMG0\u0001\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
+   "html": "<p>36.&nbsp;&nbsp;&nbsp;The figure shows a shaded region (including the boundary). If $(h,k)$ is a point lying in the shaded region, which of the following are true? I. $k \\geq 3$ II. $h-k \\geq -3$ III. $2h+k \\leq 6$</p>\n<p><img alt=\"Figure Q36 (as printed)\" src=\"2012P2_figs/Q36.png\" /></p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
+   "file": "2012_P2_題目英文卷.md"
   },
   {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
-   "type": "解答",
+   "type": "題目",
    "qno": 37,
-   "title": "Q37　等差數列三陳述",
+   "title": "第 37 題",
    "section": "Paper 2　Section B",
    "tags": [
-    "等差數列三陳述"
+    "數列"
    ],
-   "text": "$a_{18}=26$、$a_{23}=61$。\n\n公差：\n\n$$d = \\frac{61-26}{23-18} = 7,\\qquad a_1 = 26-17(7) = -93$$\n\n- I：$a_{14} = a_{18}-4d = 26-28 = -2 < 0$ ✔\n- II：$a_1-a_2 = -d = -7 < 0$ ✔\n- III：$S_{27} = \\dfrac{27}{2}(a_1+a_{27}) = \\dfrac{27}{2}(-93+89) = -54 < 0$，不是 $>0$ ✘\n\n**答案：A　I and II only**",
-   "html": "<p>37.&nbsp;&nbsp;&nbsp;$a_{18}=26$、$a_{23}=61$。</p>\n<p>公差：</p>\n<p>$$d = \\frac{61-26}{23-18} = 7,\\qquad a_1 = 26-17(7) = -93$$</p>\n<ul>\n<li>I：$a_{14} = a_{18}-4d = 26-28 = -2 &lt; 0$ ✔</li>\n<li>II：$a_1-a_2 = -d = -7 &lt; 0$ ✔</li>\n<li>III：$S_{27} = \\dfrac{27}{2}(a_1+a_{27}) = \\dfrac{27}{2}(-93+89) = -54 &lt; 0$，不是 $&gt;0$ ✘</li>\n</ul>\n<p><strong>答案：A　I and II only</strong></p>",
-   "file": "2012_II_解答.md"
+   "text": "Let $a_{n}$ be the $n$th term of an arithmetic sequence. If $a_{18}=26$ and $a_{23}=61$, which of the following are true? I. $a_{14}<0$ II. $a_{1}-a_{2}<0$ III. $a_{1}+a_{2}+a_{3}+\\cdots+a_{27}>0$\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
+   "html": "<p>37.&nbsp;&nbsp;&nbsp;Let $a_{n}$ be the $n$th term of an arithmetic sequence. If $a_{18}=26$ and $a_{23}=61$, which of the following are true? I. $a_{14}&lt;0$ II. $a_{1}-a_{2}&lt;0$ III. $a_{1}+a_{2}+a_{3}+\\cdots+a_{27}&gt;0$</p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
+   "file": "2012_P2_題目英文卷.md"
   },
   {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
-   "type": "解答",
+   "type": "題目",
    "qno": 38,
-   "title": "Q38　函數圖像平移",
+   "title": "第 38 題",
    "section": "Paper 2　Section B",
    "tags": [
-    "函數圖像平移"
+    "函數與圖像"
    ],
-   "text": "$y=f(x-2)+1$：$f(x)$ **右移 2、上移 1**。\n\n- A：標示的 $f(x-2)+1$ 在左邊（左移）✘\n- B：右移但下沉 ✘\n- **C：右邊曲線頂點在右上方，右移 2 上移 1 ✔**\n- D：左移 ✘\n\n**答案：C**",
-   "html": "<p>38.&nbsp;&nbsp;&nbsp;$y=f(x-2)+1$：$f(x)$ <strong>右移 2、上移 1</strong>。</p>\n<ul>\n<li>A：標示的 $f(x-2)+1$ 在左邊（左移）✘</li>\n<li>B：右移但下沉 ✘</li>\n<li><strong>C：右邊曲線頂點在右上方，右移 2 上移 1 ✔</strong></li>\n<li>D：左移 ✘</li>\n</ul>\n<p><strong>答案：C</strong></p>",
-   "file": "2012_II_解答.md"
+   "text": "Which of the following may represent the graph of $ y = f(x) $ and the graph of $ y = f(x-2) + 1 $ on the same rectangular coordinate system?\n\n- A. ![Figure Q38A](2012_P2_figs/Q38A.png)\n- B. ![Figure Q38B](2012_P2_figs/Q38B.png)\n- C. ![Figure Q38C](2012_P2_figs/Q38C.png)\n- D. ![Figure Q38D](2012_P2_figs/Q38D.png)",
+   "html": "<p>38.&nbsp;&nbsp;&nbsp;Which of the following may represent the graph of $ y = f(x) $ and the graph of $ y = f(x-2) + 1 $ on the same rectangular coordinate system?</p>\n<ul><li>A. <img alt=\"option A\" src=\"2012P2_figs/Q38A.png\" /></li><li>B. <img alt=\"option B\" src=\"2012P2_figs/Q38B.png\" /></li><li>C. <img alt=\"option C\" src=\"2012P2_figs/Q38C.png\" /></li><li>D. <img alt=\"option D\" src=\"2012P2_figs/Q38D.png\" /></li></ul>",
+   "file": "2012_P2_題目英文卷.md"
   },
   {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
-   "type": "解答",
+   "type": "題目",
    "qno": 39,
-   "title": "Q39　正弦/餘弦圖像",
+   "title": "第 39 題",
    "section": "Paper 2　Section B",
    "tags": [
-    "正弦/餘弦圖像"
+    "函數與圖像",
+    "三角比",
+    "三角恆等式"
    ],
-   "text": "> 圖：曲線在 $x=0$ 取最大值 $7$，$x=90$ 取最小值 $1$，$x=180$ 回到 $7$。\n\n最大 − 最小 $=6$ → 幅度 $3$；中線 $= (7+1)/2 = 4$。\n\n最大值在 $x=0$ 與 $x=180$ → 週期 $=180^\\circ$ → $\\cos 2x^\\circ$。\n\n$$y = 4+3\\cos 2x^\\circ$$\n\n（驗證：$x=90$：$4+3\\cos 180^\\circ = 1$ ✔）\n\n**答案：D　$y=4+3\\cos 2x^\\circ$**",
-   "html": "<p>39.&nbsp;&nbsp;&nbsp;39</p>\n<blockquote>\n<p>圖：曲線在 $x=0$ 取最大值 $7$，$x=90$ 取最小值 $1$，$x=180$ 回到 $7$。</p>\n</blockquote>\n<p>最大 − 最小 $=6$ → 幅度 $3$；中線 $= (7+1)/2 = 4$。</p>\n<p>最大值在 $x=0$ 與 $x=180$ → 週期 $=180^\\circ$ → $\\cos 2x^\\circ$。</p>\n<p>$$y = 4+3\\cos 2x^\\circ$$</p>\n<p>（驗證：$x=90$：$4+3\\cos 180^\\circ = 1$ ✔）</p>\n<p><strong>答案：D　$y=4+3\\cos 2x^\\circ$</strong></p>",
-   "file": "2012_II_解答.md"
+   "text": "The figure shows\n\u0001IMG0\u0001\n\n- A. the graph of $ y = 1 + 3 \\cos \\dfrac{x^\\circ}{2} $.\n- B. the graph of $ y = 1 + 3 \\cos 2x^\\circ $.\n- C. the graph of $ y = 4 + 3 \\cos \\dfrac{x^\\circ}{2} $.\n- D. the graph of $ y = 4 + 3 \\cos 2x^\\circ $.",
+   "html": "<p>39.&nbsp;&nbsp;&nbsp;The figure shows</p>\n<p><img alt=\"Figure Q39 (as printed)\" src=\"2012P2_figs/Q39.png\" /></p>\n<ul><li>A. the graph of $ y = 1 + 3 \\cos \\dfrac{x^\\circ}{2} $.</li><li>B. the graph of $ y = 1 + 3 \\cos 2x^\\circ $.</li><li>C. the graph of $ y = 4 + 3 \\cos \\dfrac{x^\\circ}{2} $.</li><li>D. the graph of $ y = 4 + 3 \\cos 2x^\\circ $.</li></ul>",
+   "file": "2012_P2_題目英文卷.md"
   },
   {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
-   "type": "解答",
+   "type": "題目",
    "qno": 40,
-   "title": "Q40　正四面體兩面夾角",
+   "title": "第 40 題",
    "section": "Paper 2　Section B",
    "tags": [
-    "正四面體兩面夾角"
+    "立體圖形",
+    "平面幾何",
+    "三角比"
    ],
-   "text": "正四面體 $ABCD$（棱長設為 $a$），求平面 $ABC$ 與平面 $BCD$ 的夾角。\n\n取 $BC$ 中點 $M$：$AM\\perp BC$、$DM\\perp BC$，故兩面夾角 $=\\angle AMD$。\n\n$$AM = DM = \\frac{\\sqrt3}{2}a,\\qquad AD = a$$\n\n$$\\cos\\angle AMD = \\frac{AM^2+DM^2-AD^2}{2(AM)(DM)} = \\frac{\\tfrac34a^2+\\tfrac34a^2-a^2}{2\\cdot\\tfrac34a^2} = \\frac{\\tfrac12a^2}{\\tfrac32a^2} = \\frac13$$\n\n$$\\angle AMD \\approx 70.5^\\circ \\approx 71^\\circ$$\n\n**答案：D　$71^\\circ$**",
-   "html": "<p>40.&nbsp;&nbsp;&nbsp;正四面體 $ABCD$（棱長設為 $a$），求平面 $ABC$ 與平面 $BCD$ 的夾角。</p>\n<p>取 $BC$ 中點 $M$：$AM\\perp BC$、$DM\\perp BC$，故兩面夾角 $=\\angle AMD$。</p>\n<p>$$AM = DM = \\frac{\\sqrt3}{2}a,\\qquad AD = a$$</p>\n<p>$$\\cos\\angle AMD = \\frac{AM^2+DM^2-AD^2}{2(AM)(DM)} = \\frac{\\tfrac34a^2+\\tfrac34a^2-a^2}{2\\cdot\\tfrac34a^2} = \\frac{\\tfrac12a^2}{\\tfrac32a^2} = \\frac13$$</p>\n<p>$$\\angle AMD \\approx 70.5^\\circ \\approx 71^\\circ$$</p>\n<p><strong>答案：D　$71^\\circ$</strong></p>",
-   "file": "2012_II_解答.md"
+   "text": "The figure shows a regular tetrahedron $ABCD$. Find the angle between the plane $ABC$ and the plane $BCD$ correct to the nearest degree.\n\u0001IMG0\u0001\n\n- A. $48^\\circ$\n- B. $53^\\circ$\n- C. $60^\\circ$\n- D. $71^\\circ$",
+   "html": "<p>40.&nbsp;&nbsp;&nbsp;The figure shows a regular tetrahedron $ABCD$. Find the angle between the plane $ABC$ and the plane $BCD$ correct to the nearest degree.</p>\n<p><img alt=\"Figure Q40 (as printed)\" src=\"2012P2_figs/Q40.png\" /></p>\n<ul><li>A. $48^\\circ$</li><li>B. $53^\\circ$</li><li>C. $60^\\circ$</li><li>D. $71^\\circ$</li></ul>",
+   "file": "2012_P2_題目英文卷.md"
   },
   {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
-   "type": "解答",
+   "type": "題目",
    "qno": 41,
-   "title": "Q41　切線 + 半圓綜合題（難題）",
+   "title": "第 41 題",
    "section": "Paper 2　Section B",
    "tags": [
-    "切線 + 半圓綜合題（難題）"
+    "圓的性質",
+    "三角比",
+    "平面幾何"
    ],
-   "text": "> 圖：$PQ$ 切圓 $ABCO$ 於 $O$；$O$ 為半圓 $PBQ$ 的圓心（$PQ$ 為其直徑）；$BCP$ 為直線；$\\angle BPQ=12^\\circ$。\n\n1. $\\angle PBQ = 90^\\circ$（半圓上的圓周角）→ $\\triangle PBQ$ 中 $\\angle BQP = 78^\\circ$\n2. $OB=OQ$（半圓半徑）→ $\\angle QBO = 78^\\circ$、$\\angle BOQ = 24^\\circ$\n3. $\\angle OBC = \\angle QBC - \\angle QBO = 90^\\circ - 78^\\circ = 12^\\circ$\n4. 弦切角（alternating segment）：$\\angle POC = \\angle OBC = 12^\\circ$\n5. $\\triangle OPC$：$\\angle OPC = 12^\\circ$（$BCP$ 為直線）$= \\angle POC$ → $\\angle PCO = 156^\\circ$ → $\\angle BCO = 180^\\circ-156^\\circ = 24^\\circ$\n6. $\\triangle OBC$：$\\angle BOC = 180^\\circ - 12^\\circ - 24^\\circ = 144^\\circ$\n7. $A,B,O,C$ 共圓（圓內接四邊形）→ $\\angle BAC + \\angle BOC = 180^\\circ$（對角互補）\n\n$$\\angle BAC = 180^\\circ - 144^\\circ = 36^\\circ$$\n\n**答案：C　$36^\\circ$**",
-   "html": "<p>41.&nbsp;&nbsp;&nbsp;41</p>\n<blockquote>\n<p>圖：$PQ$ 切圓 $ABCO$ 於 $O$；$O$ 為半圓 $PBQ$ 的圓心（$PQ$ 為其直徑）；$BCP$ 為直線；$\\angle BPQ=12^\\circ$。</p>\n</blockquote>\n<ol>\n<li>$\\angle PBQ = 90^\\circ$（半圓上的圓周角）→ $\\triangle PBQ$ 中 $\\angle BQP = 78^\\circ$</li>\n<li>$OB=OQ$（半圓半徑）→ $\\angle QBO = 78^\\circ$、$\\angle BOQ = 24^\\circ$</li>\n<li>$\\angle OBC = \\angle QBC - \\angle QBO = 90^\\circ - 78^\\circ = 12^\\circ$</li>\n<li>弦切角（alternating segment）：$\\angle POC = \\angle OBC = 12^\\circ$</li>\n<li>$\\triangle OPC$：$\\angle OPC = 12^\\circ$（$BCP$ 為直線）$= \\angle POC$ → $\\angle PCO = 156^\\circ$ → $\\angle BCO = 180^\\circ-156^\\circ = 24^\\circ$</li>\n<li>$\\triangle OBC$：$\\angle BOC = 180^\\circ - 12^\\circ - 24^\\circ = 144^\\circ$</li>\n<li>$A,B,O,C$ 共圓（圓內接四邊形）→ $\\angle BAC + \\angle BOC = 180^\\circ$（對角互補）</li>\n</ol>\n<p>$$\\angle BAC = 180^\\circ - 144^\\circ = 36^\\circ$$</p>\n<p><strong>答案：C　$36^\\circ$</strong></p>",
-   "file": "2012_II_解答.md"
+   "text": "In the figure, $PQ$ is the tangent to the circle $ABC$ at $O$, where $O$ is the centre of the semicircle $PBQ$. It is given that $BCP$ is a straight line. If $\\angle BPQ = 12^\\circ$, then $\\angle BAC =$\n\u0001IMG0\u0001\n\n- A. $18^\\circ$\n- B. $24^\\circ$\n- C. $36^\\circ$\n- D. $54^\\circ$",
+   "html": "<p>41.&nbsp;&nbsp;&nbsp;In the figure, $PQ$ is the tangent to the circle $ABC$ at $O$, where $O$ is the centre of the semicircle $PBQ$. It is given that $BCP$ is a straight line. If $\\angle BPQ = 12^\\circ$, then $\\angle BAC =$</p>\n<p><img alt=\"Figure Q41 (as printed)\" src=\"2012P2_figs/Q41.png\" /></p>\n<ul><li>A. $18^\\circ$</li><li>B. $24^\\circ$</li><li>C. $36^\\circ$</li><li>D. $54^\\circ$</li></ul>",
+   "file": "2012_P2_題目英文卷.md"
   },
   {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
-   "type": "解答",
+   "type": "題目",
    "qno": 42,
-   "title": "Q42　直線與圓相交",
+   "title": "第 42 題",
    "section": "Paper 2　Section B",
    "tags": [
-    "直線與圓相交"
+    "直線方程",
+    "圓的性質"
    ],
-   "text": "求 $k$ 值範圍使圓 $x^2+y^2+2x-4y-13=0$ 與直線 $x-y+k=0$ 有兩個不同交點。\n\n圓心 $(-1,2)$、半徑：\n\n$$r = \\sqrt{(-1)^2+2^2-(-13)} = \\sqrt{18} = 3\\sqrt2$$\n\n圓心到直線距離：\n\n$$d = \\frac{|-1-2+k|}{\\sqrt{1^2+(-1)^2}} = \\frac{|k-3|}{\\sqrt2}$$\n\n兩交點 ⇔ $d < r$：\n\n$$\\frac{|k-3|}{\\sqrt2} < 3\\sqrt2 \\;\\Rightarrow\\; |k-3| < 6 \\;\\Rightarrow\\; -3 < k < 9$$\n\n**答案：B　$-3<k<9$**",
-   "html": "<p>42.&nbsp;&nbsp;&nbsp;求 $k$ 值範圍使圓 $x^2+y^2+2x-4y-13=0$ 與直線 $x-y+k=0$ 有兩個不同交點。</p>\n<p>圓心 $(-1,2)$、半徑：</p>\n<p>$$r = \\sqrt{(-1)^2+2^2-(-13)} = \\sqrt{18} = 3\\sqrt2$$</p>\n<p>圓心到直線距離：</p>\n<p>$$d = \\frac{|-1-2+k|}{\\sqrt{1^2+(-1)^2}} = \\frac{|k-3|}{\\sqrt2}$$</p>\n<p>兩交點 ⇔ $d &lt; r$：</p>\n<p>$$\\frac{|k-3|}{\\sqrt2} &lt; 3\\sqrt2 \\;\\Rightarrow\\; |k-3| &lt; 6 \\;\\Rightarrow\\; -3 &lt; k &lt; 9$$</p>\n<p><strong>答案：B　$-3&lt;k&lt;9$</strong></p>",
-   "file": "2012_II_解答.md"
+   "text": "Find the range of values of $k$ such that the circle $x^2 + y^2 + 2x - 4y - 13 = 0$ and the straight line $x - y + k = 0$ intersect at two distinct points.\n\n- A. $-9 < k < 3$\n- B. $-3 < k < 9$\n- C. $k < -9$ or $k > 3$\n- D. $k < -3$ or $k > 9$",
+   "html": "<p>42.&nbsp;&nbsp;&nbsp;Find the range of values of $k$ such that the circle $x^2 + y^2 + 2x - 4y - 13 = 0$ and the straight line $x - y + k = 0$ intersect at two distinct points.</p>\n<ul><li>A. $-9 &lt; k &lt; 3$</li><li>B. $-3 &lt; k &lt; 9$</li><li>C. $k &lt; -9$ or $k &gt; 3$</li><li>D. $k &lt; -3$ or $k &gt; 9$</li></ul>",
+   "file": "2012_P2_題目英文卷.md"
   },
   {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
-   "type": "解答",
+   "type": "題目",
    "qno": 43,
-   "title": "Q43　組合：至少一個女生",
+   "title": "第 43 題",
    "section": "Paper 2　Section B",
    "tags": [
-    "組合：至少一個女生"
+    "排列與組合"
    ],
-   "text": "12 男 8 女，選 5 人隊伍且**至少一名女生**，求組合數。\n\n用補集法（全部 − 全男）：\n\n$$^{20}C_5 - {}^{12}C_5 = 15504 - 792 = 14712$$\n\n**答案：B　14712**",
-   "html": "<p>43.&nbsp;&nbsp;&nbsp;12 男 8 女，選 5 人隊伍且<strong>至少一名女生</strong>，求組合數。</p>\n<p>用補集法（全部 − 全男）：</p>\n<p>$$^{20}C_5 - {}^{12}C_5 = 15504 - 792 = 14712$$</p>\n<p><strong>答案：B　14712</strong></p>",
-   "file": "2012_II_解答.md"
+   "text": "A drama club is formed by 12 boys and 8 girls. If a team of 5 students is selected from the club to participate in a competition and the team consists of at least one girl, how many different teams can be formed?\n\n- A. 3960\n- B. 14712\n- C. 15448\n- D. 15504",
+   "html": "<p>43.&nbsp;&nbsp;&nbsp;A drama club is formed by 12 boys and 8 girls. If a team of 5 students is selected from the club to participate in a competition and the team consists of at least one girl, how many different teams can be formed?</p>\n<ul><li>A. 3960</li><li>B. 14712</li><li>C. 15448</li><li>D. 15504</li></ul>",
+   "file": "2012_P2_題目英文卷.md"
   },
   {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
-   "type": "解答",
+   "type": "題目",
    "qno": 44,
-   "title": "Q44　概率：抽球（不還原）",
+   "title": "第 44 題",
    "section": "Paper 2　Section B",
    "tags": [
-    "概率：抽球（不還原）"
+    "排列與組合",
+    "概率",
+    "統計"
    ],
-   "text": "袋中有 $7,8,8,9,9,9$ 六球，不放回地抽，直到抽到 $9$ 為止。求**恰好抽三次**的概率。\n\n恰好三次 ⇔ 首兩次非 9、第三次是 9：\n\n$$P = \\frac{3}{6}\\times\\frac{2}{5}\\times\\frac{3}{4} = \\frac{3}{20}$$\n\n**答案：D　$\\dfrac{3}{20}$**",
-   "html": "<p>44.&nbsp;&nbsp;&nbsp;袋中有 $7,8,8,9,9,9$ 六球，不放回地抽，直到抽到 $9$ 為止。求<strong>恰好抽三次</strong>的概率。</p>\n<p>恰好三次 ⇔ 首兩次非 9、第三次是 9：</p>\n<p>$$P = \\frac{3}{6}\\times\\frac{2}{5}\\times\\frac{3}{4} = \\frac{3}{20}$$</p>\n<p><strong>答案：D　$\\dfrac{3}{20}$</strong></p>",
-   "file": "2012_II_解答.md"
+   "text": "A box contains six balls numbered 7, 8, 8, 9, 9 and 9 respectively. John repeats drawing one ball at a time randomly from the box without replacement until the number drawn is 9. Find the probability that he needs exactly three draws.\n\n- A. $\\dfrac{1}{2}$\n- B. $\\dfrac{1}{6}$\n- C. $\\dfrac{1}{8}$\n- D. $\\dfrac{3}{20}$",
+   "html": "<p>44.&nbsp;&nbsp;&nbsp;A box contains six balls numbered 7, 8, 8, 9, 9 and 9 respectively. John repeats drawing one ball at a time randomly from the box without replacement until the number drawn is 9. Find the probability that he needs exactly three draws.</p>\n<ul><li>A. $\\dfrac{1}{2}$</li><li>B. $\\dfrac{1}{6}$</li><li>C. $\\dfrac{1}{8}$</li><li>D. $\\dfrac{3}{20}$</li></ul>",
+   "file": "2012_P2_題目英文卷.md"
   },
   {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 2",
-   "type": "解答",
+   "type": "題目",
    "qno": 45,
-   "title": "Q45　統計量不變性",
+   "title": "第 45 題",
    "section": "Paper 2　Section B",
    "tags": [
-    "統計量不變性"
+    "統計",
+    "集中趨勢",
+    "離差"
    ],
-   "text": "$\\{x_1,\\dots,x_{100}\\}$ 的平均、極差、方差為 $m_1,r_1,v_1$；加入 $m_1$ 後的新統計量為 $m_2,r_2,v_2$。何者必然成立？\n\n- **I：$m_2 = \\dfrac{100m_1+m_1}{101} = m_1$ ✔**\n- **II：$m_1$ 位於 $\\min$ 與 $\\max$ 之間 → 極差不變 $r_1=r_2$ ✔**\n- III：$v_2 = \\dfrac{100v_1 + (m_1-m_1)^2}{101} = \\dfrac{100}{101}v_1 < v_1$（除非 $v_1=0$）✘\n\n**答案：A　I and II only**",
-   "html": "<p>45.&nbsp;&nbsp;&nbsp;${x_1,\\dots,x_{100}}$ 的平均、極差、方差為 $m_1,r_1,v_1$；加入 $m_1$ 後的新統計量為 $m_2,r_2,v_2$。何者必然成立？</p>\n<ul>\n<li><strong>I：$m_2 = \\dfrac{100m_1+m_1}{101} = m_1$ ✔</strong></li>\n<li><strong>II：$m_1$ 位於 $\\min$ 與 $\\max$ 之間 → 極差不變 $r_1=r_2$ ✔</strong></li>\n<li>III：$v_2 = \\dfrac{100v_1 + (m_1-m_1)^2}{101} = \\dfrac{100}{101}v_1 &lt; v_1$（除非 $v_1=0$）✘</li>\n</ul>\n<p><strong>答案：A　I and II only</strong></p>",
-   "file": "2012_II_解答.md"
+   "text": "Let $m_1$, $r_1$ and $v_1$ be the mean, the range and the variance of a group of numbers $\\{x_1, x_2, x_3, \\ldots, x_{100}\\}$ respectively. If $m_2$, $r_2$ and $v_2$ are the mean, the range and the variance of the group of numbers $\\{x_1, x_2, x_3, \\ldots, x_{100}, m_1\\}$ respectively, which of the following must be true? I. $m_1 = m_2$ II. $r_1 = r_2$ III. $v_1 = v_2$\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
+   "html": "<p>45.&nbsp;&nbsp;&nbsp;Let $m_1$, $r_1$ and $v_1$ be the mean, the range and the variance of a group of numbers $\\{x_1, x_2, x_3, \\ldots, x_{100}\\}$ respectively. If $m_2$, $r_2$ and $v_2$ are the mean, the range and the variance of the group of numbers $\\{x_1, x_2, x_3, \\ldots, x_{100}, m_1\\}$ respectively, which of the following must be true? I. $m_1 = m_2$ II. $r_1 = r_2$ III. $v_1 = v_2$</p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
+   "file": "2012_P2_題目英文卷.md"
   },
   {
    "subject": "數學",

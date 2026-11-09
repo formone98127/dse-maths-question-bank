@@ -8,6 +8,7 @@ const BANK_URL = "https://formone98127.github.io/dse-maths-question-bank/";
  * hash: 逐題睇深連結
  */
 const CATALOG = [
+  { id: "math", name: "數學（必修部分）", year: 2017, paper: "卷二", lang: "英文", hash: "#2017P2Q1" },
   { id: "math", name: "數學（必修部分）", year: 2022, paper: "卷二", lang: "英文", hash: "#2022P2Q1" },
   { id: "math", name: "數學（必修部分）", year: 2023, paper: "卷二", lang: "英文", hash: "#2023P2Q1" },
   { id: "math", name: "數學（必修部分）", year: 2018, paper: "卷二", lang: "英文", hash: "#2018P2Q1" },

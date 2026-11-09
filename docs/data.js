@@ -11439,7 +11439,7 @@ window.QB = {
     "函數"
    ],
    "text": "\u0001IMG0\u0001\nThe figure above shows the graph of $y=f(x)$. If $g(x)=f\\left(\\frac{x}{2}\\right)$, which of the following may represent the graph of $y=g(x)$?\n\n- A. ![](2017_P2_figs/Q31A.png)\n- B. ![](2017_P2_figs/Q31B.png)\n- C. ![](2017_P2_figs/Q31C.png)\n- D. ![](2017_P2_figs/Q31D.png)",
-   "html": "<p>31.&nbsp;&nbsp;&nbsp;<img alt=\"Figure Q31 (as printed)\" src=\"2017P2_figs/Q31.png\" /></p>\n<p>The figure above shows the graph of $y=f(x)$. If $g(x)=f\\left(\\frac{x}{2}\\right)$, which of the following may represent the graph of $y=g(x)$?</p>\n<ul><li>A. <img alt=\"option A\" src=\"2017P2_figs/Q31A.png\" /></li><li>B. <img alt=\"option B\" src=\"2017P2_figs/Q31B.png\" /></li><li>C. <img alt=\"option C\" src=\"2017P2_figs/Q31C.png\" /></li><li>D. <img alt=\"option D\" src=\"2017P2_figs/Q31D.png\" /></li></ul>",
+   "html": "<p>31.&nbsp;&nbsp;&nbsp;<img alt=\"Figure Q31 (as printed)\" src=\"2017P2_figs/Q31.png?v=2\" /></p>\n<p>The figure above shows the graph of $y=f(x)$. If $g(x)=f\\left(\\frac{x}{2}\\right)$, which of the following may represent the graph of $y=g(x)$?</p>\n<ul><li>A. <img alt=\"option A\" src=\"2017P2_figs/Q31A.png?v=2\" /></li><li>B. <img alt=\"option B\" src=\"2017P2_figs/Q31B.png?v=2\" /></li><li>C. <img alt=\"option C\" src=\"2017P2_figs/Q31C.png?v=2\" /></li><li>D. <img alt=\"option D\" src=\"2017P2_figs/Q31D.png?v=2\" /></li></ul>",
    "file": "2017_P2_題目英文卷.md"
   },
   {
@@ -11562,7 +11562,7 @@ window.QB = {
     "三角學"
    ],
    "text": "In the figure, $AD$ is a vertical pole standing on the horizontal ground $BCD$. If $AB = 25 \\, \\text{m}$, $AD = 15 \\, \\text{m}$, $BC = 29 \\, \\text{m}$ and $CD = 21 \\, \\text{m}$, find the angle between $AB$ and the plane $ACD$ correct to the nearest degree.\n\u0001IMG0\u0001\n\n- A. 53°\n- B. 54°\n- C. 69°\n- D. 70°",
-   "html": "<p>39.&nbsp;&nbsp;&nbsp;In the figure, $AD$ is a vertical pole standing on the horizontal ground $BCD$. If $AB = 25 \\, \\text{m}$, $AD = 15 \\, \\text{m}$, $BC = 29 \\, \\text{m}$ and $CD = 21 \\, \\text{m}$, find the angle between $AB$ and the plane $ACD$ correct to the nearest degree.</p>\n<p><img alt=\"Figure Q39 (as printed)\" src=\"2017P2_figs/Q39.png\" /></p>\n<ul><li>A. 53°</li><li>B. 54°</li><li>C. 69°</li><li>D. 70°</li></ul>",
+   "html": "<p>39.&nbsp;&nbsp;&nbsp;In the figure, $AD$ is a vertical pole standing on the horizontal ground $BCD$. If $AB = 25 \\, \\text{m}$, $AD = 15 \\, \\text{m}$, $BC = 29 \\, \\text{m}$ and $CD = 21 \\, \\text{m}$, find the angle between $AB$ and the plane $ACD$ correct to the nearest degree.</p>\n<p><img alt=\"Figure Q39 (as printed)\" src=\"2017P2_figs/Q39.png?v=2\" /></p>\n<ul><li>A. 53°</li><li>B. 54°</li><li>C. 69°</li><li>D. 70°</li></ul>",
    "file": "2017_P2_題目英文卷.md"
   },
   {
@@ -11578,7 +11578,7 @@ window.QB = {
     "相似三角形"
    ],
    "text": "In the figure, $O$ is the centre of the circle $ABC$. $DE$ is the tangent to the circle at $A$. If $\\angle BAD =68^\\circ$ and $\\angle BCO =26^\\circ$, then $\\angle ABC =$\n\u0001IMG0\u0001\n\n- A. $42^\\circ$.\n- B. $48^\\circ$.\n- C. $54^\\circ$.\n- D. $64^\\circ$.",
-   "html": "<p>40.&nbsp;&nbsp;&nbsp;In the figure, $O$ is the centre of the circle $ABC$. $DE$ is the tangent to the circle at $A$. If $\\angle BAD =68^\\circ$ and $\\angle BCO =26^\\circ$, then $\\angle ABC =$</p>\n<p><img alt=\"Figure Q40 (as printed)\" src=\"2017P2_figs/Q40.png\" /></p>\n<ul><li>A. $42^\\circ$.</li><li>B. $48^\\circ$.</li><li>C. $54^\\circ$.</li><li>D. $64^\\circ$.</li></ul>",
+   "html": "<p>40.&nbsp;&nbsp;&nbsp;In the figure, $O$ is the centre of the circle $ABC$. $DE$ is the tangent to the circle at $A$. If $\\angle BAD =68^\\circ$ and $\\angle BCO =26^\\circ$, then $\\angle ABC =$</p>\n<p><img alt=\"Figure Q40 (as printed)\" src=\"2017P2_figs/Q40.png?v=2\" /></p>\n<ul><li>A. $42^\\circ$.</li><li>B. $48^\\circ$.</li><li>C. $54^\\circ$.</li><li>D. $64^\\circ$.</li></ul>",
    "file": "2017_P2_題目英文卷.md"
   },
   {

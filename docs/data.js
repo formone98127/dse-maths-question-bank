@@ -1,6 +1,6 @@
 window.QB = {
- "generated": "2026-11-10 12:44",
- "count": 1579,
+ "generated": "2026-11-10 14:15",
+ "count": 1621,
  "questions": [
   {
    "subject": "數學",
@@ -17822,63 +17822,717 @@ window.QB = {
    "file": "2020_P1B_QU(CHI).md"
   },
   {
-   "subject": "化學",
+   "subject": "數學",
    "year": 2020,
    "paper": "Paper 2",
    "type": "題目",
    "qno": 1,
    "title": "第 1 題",
-   "section": "卷二　甲部",
+   "section": "Paper 2　甲部",
    "tags": [
-    "氯鹼工業",
-    "哈柏法",
-    "麥克斯韋-玻爾茲曼分佈",
-    "綠色化學",
-    "反應速率"
+    "指數定律",
+    "代數化簡"
    ],
-   "text": "回答試題的所有部分。\n\n(a)　回答以下短問題。\n\n　　(i)　寫出氯鹼工業中膜電解池比較流汞電解池的兩個優勝之處。（2 分）\n\n　　(ii)　寫出在哈柏法中所用的催化劑。（1 分）\n\n　　(iii)　在同一坐標軸上繪兩條麥克斯韋-玻爾茲曼分佈曲線，一條在溫度 T 而另一條在較高溫度。（標示 X-軸：動能）（2 分）\n\n(b)　下列兩反應可生產 N-己基苯醯胺。\n\n![Q1(b) 反應(I)及(II)](2020_P2_crops/q1b.png)\n\n　　(i)　基於上面的資料，為以下各項提出一個理由：\n\n　　　(1)　反應(I)比反應(II)可被視為較綠色\n\n　　　(2)　反應(II)比反應(I)可被視為較綠色（2 分）\n\n　　(ii)　在反應(II)，3.00 g 的苯酸甲酯與 2.23 g 的己-1-胺反應得出 3.89 g 的 N-己基苯醯胺。計算這產物的產率。（相對分子質量：苯酸甲酯 = 136，己-1-胺 = 101，N-己基苯醯胺 = 205）（2 分）\n\n　　(iii)　反應(II)所生產的甲醇，在工業上藉以下反應可用來製造乙酸：\n\nCH₃OH(l) + CO(g) → CH₃COOH(l)　　ΔH < 0　（180°C，30 atm，催化劑）\n\n　　　(1)　根據化學平衡，解釋為什麼這反應在工業上的操作壓強設定於 30 atm 而不是常壓。\n\n　　　(2)　解釋為什麼最佳的操作條件設定於 180°C 和 30 atm。（3 分）\n\n(c)　考慮以下反應（H₂SO₄(aq) 作為催化劑）及其速率方程：\n\nCH₃COCH₃(aq) + I₂(aq) → CH₃COCH₂I(aq) + HI(aq)\n\n（無色）\n\n速率 = k[I₂(aq)]ˣ[CH₃COCH₃(aq)]ʸ[H⁺(aq)]ᶻ　（其中 x、y 和 z 是整數）\n\n為研習它的化學動力學，在相同實驗條件下進行了兩次實驗。下表顯示在反應混合物中各所用試劑的初始濃度；而坐標圖則顯示反應混合物的吸光度隨時間的變化。\n\n| 次數 | CH₃COCH₃(aq) 的初始濃度 / mol dm⁻³ | H₂SO₄(aq) 的初始濃度 / mol dm⁻³ | I₂(aq) 的初始濃度 / mol dm⁻³ |\n|---|---|---|---|\n| 1 | 1.0 | 0.10 | 0.0050 |\n| 2 | 2.0 | 0.10 | 0.0050 [?] |\n\n![Q1(c) 吸光度-時間圖](2020_P2_crops/q1c.png)\n\n　　(i)　解釋為什麼吸光度變化的速率可代表反應的速率。（1 分）\n\n　　(ii)　在這些實驗條件下，該速率方程可簡化為速率 = k′[I₂(aq)]ˣ。參照線 1 推定 x。（2 分）\n\n　　(iii)　參照線 1 及線 2，推定該速率方程的 y。（2 分）\n\n　　(iv)　已知 y = 1 以及該反應速率的單位是 mol dm⁻³ s⁻¹，那速率常數 k′ 的單位是什麼？（1 分）\n\n　　(v)　有提出指這反應依兩個連續步驟進行並且是放熱的：\n\nCH₃COCH₃(aq) → CH₃C(OH)=CH₂(aq)　（慢）\n\nCH₃C(OH)=CH₂(aq) + I₂(aq) → CH₃COCH₂I(aq) + HI(aq)\n\n為這反應繪畫一個能線圖，標示各坐標軸。（2 分）",
-   "html": "<p>1.&nbsp;&nbsp;&nbsp;回答試題的所有部分。</p>\n<p>(a)　回答以下短問題。</p>\n<p>(i)　寫出氯鹼工業中膜電解池比較流汞電解池的兩個優勝之處。（2 分）</p>\n<p>(ii)　寫出在哈柏法中所用的催化劑。（1 分）</p>\n<p>(iii)　在同一坐標軸上繪兩條麥克斯韋-玻爾茲曼分佈曲線，一條在溫度 T 而另一條在較高溫度。（標示 X-軸：動能）（2 分）</p>\n<p>(b)　下列兩反應可生產 N-己基苯醯胺。</p>\n<p><img alt=\"Q1(b) 反應(I)及(II)\" src=\"chem_2020_P2_crops/q1b.png\" /></p>\n<p>(i)　基於上面的資料，為以下各項提出一個理由：</p>\n<p>(1)　反應(I)比反應(II)可被視為較綠色</p>\n<p>(2)　反應(II)比反應(I)可被視為較綠色（2 分）</p>\n<p>(ii)　在反應(II)，3.00 g 的苯酸甲酯與 2.23 g 的己-1-胺反應得出 3.89 g 的 N-己基苯醯胺。計算這產物的產率。（相對分子質量：苯酸甲酯 = 136，己-1-胺 = 101，N-己基苯醯胺 = 205）（2 分）</p>\n<p>(iii)　反應(II)所生產的甲醇，在工業上藉以下反應可用來製造乙酸：</p>\n<p>CH₃OH(l) + CO(g) → CH₃COOH(l)　　ΔH &lt; 0　（180°C，30 atm，催化劑）</p>\n<p>(1)　根據化學平衡，解釋為什麼這反應在工業上的操作壓強設定於 30 atm 而不是常壓。</p>\n<p>(2)　解釋為什麼最佳的操作條件設定於 180°C 和 30 atm。（3 分）</p>\n<p>(c)　考慮以下反應（H₂SO₄(aq) 作為催化劑）及其速率方程：</p>\n<p>CH₃COCH₃(aq) + I₂(aq) → CH₃COCH₂I(aq) + HI(aq)</p>\n<p>（無色）</p>\n<p>速率 = k[I₂(aq)]ˣ[CH₃COCH₃(aq)]ʸ[H⁺(aq)]ᶻ　（其中 x、y 和 z 是整數）</p>\n<p>為研習它的化學動力學，在相同實驗條件下進行了兩次實驗。下表顯示在反應混合物中各所用試劑的初始濃度；而坐標圖則顯示反應混合物的吸光度隨時間的變化。</p>\n<table>\n<thead>\n<tr>\n<th>次數</th>\n<th>CH₃COCH₃(aq) 的初始濃度 / mol dm⁻³</th>\n<th>H₂SO₄(aq) 的初始濃度 / mol dm⁻³</th>\n<th>I₂(aq) 的初始濃度 / mol dm⁻³</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>1.0</td>\n<td>0.10</td>\n<td>0.0050</td>\n</tr>\n<tr>\n<td>2</td>\n<td>2.0</td>\n<td>0.10</td>\n<td>0.0050 [?]</td>\n</tr>\n</tbody>\n</table>\n<p><img alt=\"Q1(c) 吸光度-時間圖\" src=\"chem_2020_P2_crops/q1c.png\" /></p>\n<p>(i)　解釋為什麼吸光度變化的速率可代表反應的速率。（1 分）</p>\n<p>(ii)　在這些實驗條件下，該速率方程可簡化為速率 = k′[I₂(aq)]ˣ。參照線 1 推定 x。（2 分）</p>\n<p>(iii)　參照線 1 及線 2，推定該速率方程的 y。（2 分）</p>\n<p>(iv)　已知 y = 1 以及該反應速率的單位是 mol dm⁻³ s⁻¹，那速率常數 k′ 的單位是什麼？（1 分）</p>\n<p>(v)　有提出指這反應依兩個連續步驟進行並且是放熱的：</p>\n<p>CH₃COCH₃(aq) → CH₃C(OH)=CH₂(aq)　（慢）</p>\n<p>CH₃C(OH)=CH₂(aq) + I₂(aq) → CH₃COCH₂I(aq) + HI(aq)</p>\n<p>為這反應繪畫一個能線圖，標示各坐標軸。（2 分）</p>",
-   "file": "2020_P2_QU(CHI).md"
+   "text": "$\\dfrac{6x}{(3x^{-5})^{-2}}=$\n\n- A. $54x^8$。\n- B. $\\dfrac{2x^8}{3}$。\n- C. $\\dfrac{54}{x^9}$。\n- D. $\\dfrac{2}{3x^9}$。",
+   "html": "<p>1.&nbsp;&nbsp;&nbsp;$\\dfrac{6x}{(3x^{-5})^{-2}}=$</p>\n<ul><li>A. $54x^8$。</li><li>B. $\\dfrac{2x^8}{3}$。</li><li>C. $\\dfrac{54}{x^9}$。</li><li>D. $\\dfrac{2}{3x^9}$。</li></ul>",
+   "file": "2020_P2_題目中文卷.md"
   },
   {
-   "subject": "化學",
+   "subject": "數學",
    "year": 2020,
    "paper": "Paper 2",
    "type": "題目",
    "qno": 2,
-   "title": "乙部 第 2 題",
-   "section": "卷二　乙部",
+   "title": "第 2 題",
+   "section": "Paper 2　甲部",
    "tags": [
-    "晶體結構",
-    "納米物料",
-    "鐵合金",
-    "凱夫拉",
-    "液晶",
-    "聚合物"
+    "代數化簡",
+    "因式分解"
    ],
-   "text": "回答試題的所有部分。\n\n(a)　回答以下短問題。\n\n　　(i)　考慮下圖所顯示的兩個晶胞：\n\n![Q2(a)(i) 晶胞圖](2020_P2_crops/q2ai.png)\n\n　　　(1)　寫出 Pt 晶體結構類別的名稱。\n\n　　　(2)　推定在這合金的晶胞中，Pt 原子和 Mn 原子各自的數目。（3 分）\n\n　　(ii)　銀納米物料有不同的用途。\n\n　　　(1)　「納米物料」一詞是什麼意思？\n\n　　　(2)　提出銀納米物料在生活上的一種用途。（2 分）\n\n(b)　盾牌可用鐵、合金和凱夫拉 [?] 等不同物料製成。\n\n　　(i)　根據鍵合和結構，解釋為什麼鐵是可展及可延。（2 分）\n\n　　(ii)　把碳加入鐵可製成合金。以這方法得出的合金所製成的盾牌，其性能比鐵盾牌的較佳。\n\n　　　(1)　提出上述方法可改良盾牌的一項物理性質。\n\n　　　(2)　從原子層面，解釋為什麼可把這物理性質改良。（2 分）\n\n　　(iii)　防彈盾牌可由凱夫拉 [?] 製成。下圖顯示凱夫拉 [?] 的部分結構：\n\n![Q2(b)(iii) 凱夫拉部分結構](2020_P2_crops/q2biii.png)\n\n　　　(1)　參照這結構，提出兩個理由為什麼凱夫拉 [?] 是剛性。\n\n　　　(2)　解釋當以酸處理凱夫拉 [?] 時是否有任何化學反應。（3 分）\n\n(c)　液晶 A、聚合物 B 和 C 的部分結構如下所示：\n\n![Q2(c) 液晶 A、聚合物 B、C 結構](2020_P2_crops/q2c.png)\n\n　　(i)　寫出液晶 A 分子的兩個結構特徵。（2 分）\n\n　　(ii)　B 是加成聚合物。\n\n　　　(1)　繪出 B 的單體的結構。\n\n　　　(2)　提出由 B 製造薄膜的成型方法。（2 分）\n\n　　(iii)　C 是由下面兩個單體製成的縮合聚合物：\n\n![Q2(c)(iii) 單體結構](2020_P2_crops/q2ciii.png)\n\n　　　(1)　繪出 C 的重複單位的結構。\n\n　　　(2)　提出為什麼 C 被分類為縮合聚合物。\n\n　　　(3)　提出兩個理由為什麼這聚合可被視為綠色。（4 分）",
-   "html": "<p>2.&nbsp;&nbsp;&nbsp;回答試題的所有部分。</p>\n<p>(a)　回答以下短問題。</p>\n<p>(i)　考慮下圖所顯示的兩個晶胞：</p>\n<p><img alt=\"Q2(a)(i) 晶胞圖\" src=\"chem_2020_P2_crops/q2ai.png\" /></p>\n<p>(1)　寫出 Pt 晶體結構類別的名稱。</p>\n<p>(2)　推定在這合金的晶胞中，Pt 原子和 Mn 原子各自的數目。（3 分）</p>\n<p>(ii)　銀納米物料有不同的用途。</p>\n<p>(1)　「納米物料」一詞是什麼意思？</p>\n<p>(2)　提出銀納米物料在生活上的一種用途。（2 分）</p>\n<p>(b)　盾牌可用鐵、合金和凱夫拉 [?] 等不同物料製成。</p>\n<p>(i)　根據鍵合和結構，解釋為什麼鐵是可展及可延。（2 分）</p>\n<p>(ii)　把碳加入鐵可製成合金。以這方法得出的合金所製成的盾牌，其性能比鐵盾牌的較佳。</p>\n<p>(1)　提出上述方法可改良盾牌的一項物理性質。</p>\n<p>(2)　從原子層面，解釋為什麼可把這物理性質改良。（2 分）</p>\n<p>(iii)　防彈盾牌可由凱夫拉 [?] 製成。下圖顯示凱夫拉 [?] 的部分結構：</p>\n<p><img alt=\"Q2(b)(iii) 凱夫拉部分結構\" src=\"chem_2020_P2_crops/q2biii.png\" /></p>\n<p>(1)　參照這結構，提出兩個理由為什麼凱夫拉 [?] 是剛性。</p>\n<p>(2)　解釋當以酸處理凱夫拉 [?] 時是否有任何化學反應。（3 分）</p>\n<p>(c)　液晶 A、聚合物 B 和 C 的部分結構如下所示：</p>\n<p><img alt=\"Q2(c) 液晶 A、聚合物 B、C 結構\" src=\"chem_2020_P2_crops/q2c.png\" /></p>\n<p>(i)　寫出液晶 A 分子的兩個結構特徵。（2 分）</p>\n<p>(ii)　B 是加成聚合物。</p>\n<p>(1)　繪出 B 的單體的結構。</p>\n<p>(2)　提出由 B 製造薄膜的成型方法。（2 分）</p>\n<p>(iii)　C 是由下面兩個單體製成的縮合聚合物：</p>\n<p><img alt=\"Q2(c)(iii) 單體結構\" src=\"chem_2020_P2_crops/q2ciii.png\" /></p>\n<p>(1)　繪出 C 的重複單位的結構。</p>\n<p>(2)　提出為什麼 C 被分類為縮合聚合物。</p>\n<p>(3)　提出兩個理由為什麼這聚合可被視為綠色。（4 分）</p>",
-   "file": "2020_P2_QU(CHI).md"
+   "text": "若 $a(a+b)=2(b-a)$，則 $b=$\n\n- A. $\\dfrac{a^2+a}{2+a}$。\n- B. $\\dfrac{a^2-2a}{2+a}$。\n- C. $\\dfrac{a^2+2a}{2-a}$。\n- D. $\\dfrac{a^2-a}{2-a}$。",
+   "html": "<p>2.&nbsp;&nbsp;&nbsp;若 $a(a+b)=2(b-a)$，則 $b=$</p>\n<ul><li>A. $\\dfrac{a^2+a}{2+a}$。</li><li>B. $\\dfrac{a^2-2a}{2+a}$。</li><li>C. $\\dfrac{a^2+2a}{2-a}$。</li><li>D. $\\dfrac{a^2-a}{2-a}$。</li></ul>",
+   "file": "2020_P2_題目中文卷.md"
   },
   {
-   "subject": "化學",
+   "subject": "數學",
    "year": 2020,
    "paper": "Paper 2",
    "type": "題目",
    "qno": 3,
    "title": "第 3 題",
-   "section": "卷二　丙部",
+   "section": "Paper 2　甲部",
    "tags": [
-    "碳酸鈉",
-    "滴定",
-    "薄層色層法",
-    "紅外光譜",
-    "質譜",
-    "乙醇檢測"
+    "代數化簡"
    ],
-   "text": "回答試題的所有部分。\n\n(a)　回答以下短問題。\n\n　　(i)　提出怎樣辨別 Na₂CO₃(s) 和 Na₂CO₃·10H₂O(s)。（2 分）\n\n　　(ii)　在酸化介質以 Na₂S₂O₃(aq) 滴定於錐形瓶內的 I₂(aq)，並用澱粉溶液作指示劑。寫出於滴定終點的顏色變化。（1 分）\n\n　　(iii)　提出一化學測試以顯示怎樣辨別己-1-烯和己醛。（2 分）\n\n(b)　阿士匹靈、咖啡因、醋氨酚和藥物 Y 從薄層色層法（TLC）的色譜如下所示：\n\n![Q3(b) TLC 色譜](2020_P2_crops/q3b.png)\n\n　　(i)　繪畫進行 TLC 實驗的裝置的標示圖。（2 分）\n\n　　(ii)　計算阿士匹靈的 Rf 值。（1 分）\n\n　　(iii)　基於所提供的色譜，提出藥物 Y 會否含有阿士匹靈、咖啡因或醋氨酚。（1 分）\n\n　　(iv)　考慮以下結構：\n\n![Q3(b)(iv) 阿士匹靈、咖啡因、醋氨酚結構](2020_P2_crops/q3biv.png)\n\n　　　(1)　根據下表，提出阿士匹靈和咖啡因可怎樣透過其紅外光譜分辨出來。\n\n| 特徵紅外吸收波數域（伸展式） |\n|---|\n\n| 鍵合 | 化合物類別 | 波數域 / cm⁻¹ |\n|---|---|---|\n| C=C | 烯 | 1610 至 1680 |\n| C=O | 醛、酮、羧酸及其衍生物 | 1680 至 1800 |\n| C≡N | 腈 | 2070 至 2250 |\n| C=N | [?] | 2200 至 2280 |\n| O-H | 帶「氫鍵」的酸 | 2500 至 3300 |\n| C-H | 烷、烯及芳烴 | 2840 至 3095 |\n| O-H | 帶「氫鍵」的醇 | 3230 至 3670 |\n| N-H | 胺 | 3350 至 3500 |\n\n　　　(2)　某純樣本可能是阿士匹靈、咖啡因或醋氨酚。該樣本的質譜在 m/z = 43 有一主要峰。解釋這項資料可否確定該樣本是阿士匹靈、咖啡因或醋氨酚。（3 分）\n\n(c)　在公路上可藉駕駛者向如下所示的管呼氣以檢測駕駛者的乙醇攝取量：\n\n![Q3(c) 呼氣檢測管](2020_P2_crops/q3c.png)\n\n　　(i)　(1)　假若含有足夠乙醇的呼氣呼進到管內，提出用酸化 K₂Cr₂O₇(aq) 浸透的硅膠的顏色變化。\n\n　　　(2)　寫出所涉及顏色變化的半反應式。\n\n　　　(3)　駕駛者 A 的呼氣只令位置 a 及 b 變色；而駕駛者 B 的呼氣令位置 a、b 及 c 變色。假設這測試是公平地進行，解釋哪駕駛者具較高乙醇攝取量。\n\n　　　(4)　提出這測試可怎樣公平地進行。（4 分）\n\n　　(ii)　在某國家，若駕駛者血液的乙醇含量超出「每 100 cm³ 的血清含 55 mg 的乙醇」便屬違法。從一名駕駛者血液所得的 10.0 cm³ 經處理的血清樣本，需用在酸化介質中 4.38 cm³ 的 0.025 mol dm⁻³ K₂Cr₂O₇(aq) 完全反應。已知在該反應中，C₂H₅OH(aq) 對 K₂Cr₂O₇(aq) 的摩爾比是 3:1，計算在該血清樣本中 C₂H₅OH 的質量（以 mg 為單位）。確定該名駕駛者有否違法。（相對原子質量：H = 1.0，C = 12.0，O = 16.0）（4 分）\n\n---\n\n*試卷完 —*\n\n## 待人工核對\n\n本卷為第 2 層文字交貨，由 easyocr（ch_tra+en，GPU）掃描底稿清洗而成；現模型無影像輸入，未能對頁影像覆核。以下題號建議第 3 層精修時對頁覆核：\n\n- 第 1(b) 題：「N-己基苯醯胺」及反應(I)/(II) 的條件（溫度、時間、溶劑）待對頁核實。\n- 第 1(c) 題：速率方程指數（x、y、z）、動力學表（尤其第 2 次 I₂ 初始濃度）待對頁核實。\n- 第 2(b) 題：「凱夫拉」譯名（OCR 讀作「凱庫勒」）待對頁核實。\n- 第 3(b)(iv) 題：紅外吸收表（C=N 行的化合物類別）待對頁核實。\n- 第 1(b)、1(c)、2(a)(i)、2(b)(iii)、2(c)、2(c)(iii)、3(b)、3(b)(iv)、3(c) 題：圖為 300dpi 原卷截圖（程式定位＋墨跡覆蓋率校驗；無視覺覆核，位置／範圍待 spot-check）；第 3 層再換成向量重繪。",
-   "html": "<p>3.&nbsp;&nbsp;&nbsp;回答試題的所有部分。</p>\n<p>(a)　回答以下短問題。</p>\n<p>(i)　提出怎樣辨別 Na₂CO₃(s) 和 Na₂CO₃·10H₂O(s)。（2 分）</p>\n<p>(ii)　在酸化介質以 Na₂S₂O₃(aq) 滴定於錐形瓶內的 I₂(aq)，並用澱粉溶液作指示劑。寫出於滴定終點的顏色變化。（1 分）</p>\n<p>(iii)　提出一化學測試以顯示怎樣辨別己-1-烯和己醛。（2 分）</p>\n<p>(b)　阿士匹靈、咖啡因、醋氨酚和藥物 Y 從薄層色層法（TLC）的色譜如下所示：</p>\n<p><img alt=\"Q3(b) TLC 色譜\" src=\"chem_2020_P2_crops/q3b.png\" /></p>\n<p>(i)　繪畫進行 TLC 實驗的裝置的標示圖。（2 分）</p>\n<p>(ii)　計算阿士匹靈的 Rf 值。（1 分）</p>\n<p>(iii)　基於所提供的色譜，提出藥物 Y 會否含有阿士匹靈、咖啡因或醋氨酚。（1 分）</p>\n<p>(iv)　考慮以下結構：</p>\n<p><img alt=\"Q3(b)(iv) 阿士匹靈、咖啡因、醋氨酚結構\" src=\"chem_2020_P2_crops/q3biv.png\" /></p>\n<p>(1)　根據下表，提出阿士匹靈和咖啡因可怎樣透過其紅外光譜分辨出來。</p>\n<table>\n<thead>\n<tr>\n<th>特徵紅外吸收波數域（伸展式）</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td></td>\n</tr>\n</tbody>\n</table>\n<table>\n<thead>\n<tr>\n<th>鍵合</th>\n<th>化合物類別</th>\n<th>波數域 / cm⁻¹</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>C=C</td>\n<td>烯</td>\n<td>1610 至 1680</td>\n</tr>\n<tr>\n<td>C=O</td>\n<td>醛、酮、羧酸及其衍生物</td>\n<td>1680 至 1800</td>\n</tr>\n<tr>\n<td>C≡N</td>\n<td>腈</td>\n<td>2070 至 2250</td>\n</tr>\n<tr>\n<td>C=N</td>\n<td>[?]</td>\n<td>2200 至 2280</td>\n</tr>\n<tr>\n<td>O-H</td>\n<td>帶「氫鍵」的酸</td>\n<td>2500 至 3300</td>\n</tr>\n<tr>\n<td>C-H</td>\n<td>烷、烯及芳烴</td>\n<td>2840 至 3095</td>\n</tr>\n<tr>\n<td>O-H</td>\n<td>帶「氫鍵」的醇</td>\n<td>3230 至 3670</td>\n</tr>\n<tr>\n<td>N-H</td>\n<td>胺</td>\n<td>3350 至 3500</td>\n</tr>\n</tbody>\n</table>\n<p>(2)　某純樣本可能是阿士匹靈、咖啡因或醋氨酚。該樣本的質譜在 m/z = 43 有一主要峰。解釋這項資料可否確定該樣本是阿士匹靈、咖啡因或醋氨酚。（3 分）</p>\n<p>(c)　在公路上可藉駕駛者向如下所示的管呼氣以檢測駕駛者的乙醇攝取量：</p>\n<p><img alt=\"Q3(c) 呼氣檢測管\" src=\"chem_2020_P2_crops/q3c.png\" /></p>\n<p>(i)　(1)　假若含有足夠乙醇的呼氣呼進到管內，提出用酸化 K₂Cr₂O₇(aq) 浸透的硅膠的顏色變化。</p>\n<p>(2)　寫出所涉及顏色變化的半反應式。</p>\n<p>(3)　駕駛者 A 的呼氣只令位置 a 及 b 變色；而駕駛者 B 的呼氣令位置 a、b 及 c 變色。假設這測試是公平地進行，解釋哪駕駛者具較高乙醇攝取量。</p>\n<p>(4)　提出這測試可怎樣公平地進行。（4 分）</p>\n<p>(ii)　在某國家，若駕駛者血液的乙醇含量超出「每 100 cm³ 的血清含 55 mg 的乙醇」便屬違法。從一名駕駛者血液所得的 10.0 cm³ 經處理的血清樣本，需用在酸化介質中 4.38 cm³ 的 0.025 mol dm⁻³ K₂Cr₂O₇(aq) 完全反應。已知在該反應中，C₂H₅OH(aq) 對 K₂Cr₂O₇(aq) 的摩爾比是 3:1，計算在該血清樣本中 C₂H₅OH 的質量（以 mg 為單位）。確定該名駕駛者有否違法。（相對原子質量：H = 1.0，C = 12.0，O = 16.0）（4 分）</p>\n<hr />\n<p><em>試卷完 —</em></p>\n<h2>待人工核對</h2>\n<p>本卷為第 2 層文字交貨，由 easyocr（ch_tra+en，GPU）掃描底稿清洗而成；現模型無影像輸入，未能對頁影像覆核。以下題號建議第 3 層精修時對頁覆核：</p>\n<ul>\n<li>第 1(b) 題：「N-己基苯醯胺」及反應(I)/(II) 的條件（溫度、時間、溶劑）待對頁核實。</li>\n<li>第 1(c) 題：速率方程指數（x、y、z）、動力學表（尤其第 2 次 I₂ 初始濃度）待對頁核實。</li>\n<li>第 2(b) 題：「凱夫拉」譯名（OCR 讀作「凱庫勒」）待對頁核實。</li>\n<li>第 3(b)(iv) 題：紅外吸收表（C=N 行的化合物類別）待對頁核實。</li>\n<li>第 1(b)、1(c)、2(a)(i)、2(b)(iii)、2(c)、2(c)(iii)、3(b)、3(b)(iv)、3(c) 題：圖為 300dpi 原卷截圖（程式定位＋墨跡覆蓋率校驗；無視覺覆核，位置／範圍待 spot-check）；第 3 層再換成向量重繪。</li>\n</ul>",
-   "file": "2020_P2_QU(CHI).md"
+   "text": "$\\dfrac{5}{4k+3}-\\dfrac{2}{4k-3}=$\n\n- A. $\\dfrac{12k-21}{16k^2-9}$。\n- B. $\\dfrac{12k+9}{16k^2-9}$。\n- C. $\\dfrac{14k-21}{16k^2-9}$。\n- D. $\\dfrac{14k+9}{16k^2-9}$。",
+   "html": "<p>3.&nbsp;&nbsp;&nbsp;$\\dfrac{5}{4k+3}-\\dfrac{2}{4k-3}=$</p>\n<ul><li>A. $\\dfrac{12k-21}{16k^2-9}$。</li><li>B. $\\dfrac{12k+9}{16k^2-9}$。</li><li>C. $\\dfrac{14k-21}{16k^2-9}$。</li><li>D. $\\dfrac{14k+9}{16k^2-9}$。</li></ul>",
+   "file": "2020_P2_題目中文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2020,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 4,
+   "title": "第 4 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "代數化簡"
+   ],
+   "text": "$(3a+2b)(4a-5b)-a(6a+4b)=$\n\n- A. $(3a+2b)(2a-5b)$\n- B. $(3a+2b)(6a-5b)$\n- C. $(3a-2b)(2a+5b)$\n- D. $(3a-2b)(6a+5b)$",
+   "html": "<p>4.&nbsp;&nbsp;&nbsp;$(3a+2b)(4a-5b)-a(6a+4b)=$</p>\n<ul><li>A. $(3a+2b)(2a-5b)$</li><li>B. $(3a+2b)(6a-5b)$</li><li>C. $(3a-2b)(2a+5b)$</li><li>D. $(3a-2b)(6a+5b)$</li></ul>",
+   "file": "2020_P2_題目中文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2020,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 5,
+   "title": "第 5 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "代數化簡",
+    "多項式"
+   ],
+   "text": "設 $f(x)=3x^2-x-2$。若 $\\beta$ 為一常數，則 $f(1+\\beta)-f(1-\\beta)=$\n\n- A. $2\\beta$\n- B. $10\\beta$\n- C. $6\\beta^2-2$\n- D. $6\\beta^2-2\\beta$",
+   "html": "<p>5.&nbsp;&nbsp;&nbsp;設 $f(x)=3x^2-x-2$。若 $\\beta$ 為一常數，則 $f(1+\\beta)-f(1-\\beta)=$</p>\n<ul><li>A. $2\\beta$</li><li>B. $10\\beta$</li><li>C. $6\\beta^2-2$</li><li>D. $6\\beta^2-2\\beta$</li></ul>",
+   "file": "2020_P2_題目中文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2020,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 6,
+   "title": "第 6 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "因式分解",
+    "多項式"
+   ],
+   "text": "設 $g(x)=ax^3+4ax^2-24$，其中 $a$ 為一常數。若 $x+2$ 為 $g(x)$ 的因式，則 $g(2)=$\n\n- A. $-96$\n- B. $0$\n- C. $3$\n- D. $48$",
+   "html": "<p>6.&nbsp;&nbsp;&nbsp;設 $g(x)=ax^3+4ax^2-24$，其中 $a$ 為一常數。若 $x+2$ 為 $g(x)$ 的因式，則 $g(2)=$</p>\n<ul><li>A. $-96$</li><li>B. $0$</li><li>C. $3$</li><li>D. $48$</li></ul>",
+   "file": "2020_P2_題目中文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2020,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 7,
+   "title": "第 7 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "多項式"
+   ],
+   "text": "若 $h$ 及 $k$ 均為常數使得 $(x+h)(x+6)\\equiv(x+4)^2+k$，則 $k=$\n\n- A. $-28$\n- B. $-16$\n- C. $-4$\n- D. $2$",
+   "html": "<p>7.&nbsp;&nbsp;&nbsp;若 $h$ 及 $k$ 均為常數使得 $(x+h)(x+6)\\equiv(x+4)^2+k$，則 $k=$</p>\n<ul><li>A. $-28$</li><li>B. $-16$</li><li>C. $-4$</li><li>D. $2$</li></ul>",
+   "file": "2020_P2_題目中文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2020,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 8,
+   "title": "第 8 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "坐標幾何",
+    "直線方程"
+   ],
+   "text": "圖中, 直線 $ L_1 $ 及直線 $ L_2 $ 的方程分別為 $ x + ay + b = 0 $ 及 $ bx + y + c = 0 $ 。下列何者正確?\nI. $ c < 0 $\nII. $ ab < 1 $\nIII. $ ac < b $\n\u0001IMG0\u0001\n\n- A. 只有 I 及 II\n- B. 只有 I 及 III\n- C. 只有 II 及 III\n- D. I 、II 及 III",
+   "html": "<p>8.&nbsp;&nbsp;&nbsp;圖中, 直線 $ L_1 $ 及直線 $ L_2 $ 的方程分別為 $ x + ay + b = 0 $ 及 $ bx + y + c = 0 $ 。下列何者正確?</p>\n<p>I. $ c &lt; 0 $</p>\n<p>II. $ ab &lt; 1 $</p>\n<p>III. $ ac &lt; b $</p>\n<p><img alt=\"Figure Q8 (as printed)\" src=\"2020P2_figs/Q08.png\" /></p>\n<ul><li>A. 只有 I 及 II</li><li>B. 只有 I 及 III</li><li>C. 只有 II 及 III</li><li>D. I 、II 及 III</li></ul>",
+   "file": "2020_P2_題目中文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2020,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 9,
+   "title": "第 9 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "百分數"
+   ],
+   "text": "某玩具的成本較其售價低 $ x\\% $ 。售出該玩具後, 盈利百分率為 $ 25\\% $ 。求 $ x $ 。\n\n- A. 20\n- B. 25\n- C. 75\n- D. 80",
+   "html": "<p>9.&nbsp;&nbsp;&nbsp;某玩具的成本較其售價低 $ x\\% $ 。售出該玩具後, 盈利百分率為 $ 25\\% $ 。求 $ x $ 。</p>\n<ul><li>A. 20</li><li>B. 25</li><li>C. 75</li><li>D. 80</li></ul>",
+   "file": "2020_P2_題目中文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2020,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 10,
+   "title": "第 10 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "比率與比例"
+   ],
+   "text": "某高爾夫球場的實際面積為 $ 0.75 \\text{ km}^2 $ 。若該球場在某地圖上的面積為 $ 300 \\text{ cm}^2 $ ，則該地圖的比例尺為\n\n- A. $ 1:250 $\n- B. $ 1:5\\,000 $\n- C. $ 1:62\\,500 $\n- D. $ 1:25\\,000\\,000 $",
+   "html": "<p>10.&nbsp;&nbsp;&nbsp;某高爾夫球場的實際面積為 $ 0.75 \\text{ km}^2 $ 。若該球場在某地圖上的面積為 $ 300 \\text{ cm}^2 $ ，則該地圖的比例尺為</p>\n<ul><li>A. $ 1:250 $</li><li>B. $ 1:5\\,000 $</li><li>C. $ 1:62\\,500 $</li><li>D. $ 1:25\\,000\\,000 $</li></ul>",
+   "file": "2020_P2_題目中文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2020,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 11,
+   "title": "第 11 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "變分"
+   ],
+   "text": "已知 $ w $ 隨 $ u $ 的立方及 $ v $ 的平方根正變。當 $ u = 2 $ 及 $ v = 4 $ 時，$ w = 8 $ 。當 $ u = 4 $ 及 $ v = 9 $ 時，$ w = $\n\n- A. 96\n- B. 324\n- C. 384\n- D. 729",
+   "html": "<p>11.&nbsp;&nbsp;&nbsp;已知 $ w $ 隨 $ u $ 的立方及 $ v $ 的平方根正變。當 $ u = 2 $ 及 $ v = 4 $ 時，$ w = 8 $ 。當 $ u = 4 $ 及 $ v = 9 $ 時，$ w = $</p>\n<ul><li>A. 96</li><li>B. 324</li><li>C. 384</li><li>D. 729</li></ul>",
+   "file": "2020_P2_題目中文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2020,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 12,
+   "title": "第 12 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "數列"
+   ],
+   "text": "圖中, 第 1 個圖案包含 3 粒點子。對任意正整數 $ n $, 第 $ (n+1) $ 個圖案是由第 $ n $ 個圖案加上 $ (2n+1) $ 粒點子所組成。求第 7 個圖案的點子數目。\n\u0001IMG0\u0001\n\n- A. 15\n- B. 27\n- C. 38\n- D. 51",
+   "html": "<p>12.&nbsp;&nbsp;&nbsp;圖中, 第 1 個圖案包含 3 粒點子。對任意正整數 $ n $, 第 $ (n+1) $ 個圖案是由第 $ n $ 個圖案加上 $ (2n+1) $ 粒點子所組成。求第 7 個圖案的點子數目。</p>\n<p><img alt=\"Figure Q12 (as printed)\" src=\"2020P2_figs/Q12.png\" /></p>\n<ul><li>A. 15</li><li>B. 27</li><li>C. 38</li><li>D. 51</li></ul>",
+   "file": "2020_P2_題目中文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2020,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 13,
+   "title": "第 13 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "不等式"
+   ],
+   "text": "$ 5-4x<9 $ 及 $ \\dfrac{2x-3}{7}>1 $ 的解為\n\n- A. $ x<-1 $\n- B. $ x>-1 $\n- C. $ x<5 $\n- D. $ x>5 $",
+   "html": "<p>13.&nbsp;&nbsp;&nbsp;$ 5-4x&lt;9 $ 及 $ \\dfrac{2x-3}{7}&gt;1 $ 的解為</p>\n<ul><li>A. $ x&lt;-1 $</li><li>B. $ x&gt;-1 $</li><li>C. $ x&lt;5 $</li><li>D. $ x&gt;5 $</li></ul>",
+   "file": "2020_P2_題目中文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2020,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 14,
+   "title": "第 14 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "平面幾何",
+    "不等式"
+   ],
+   "text": "圖中, $ PQRST $ 為五邊形, 其中所有的量度均準確至最接近的 cm。設 $ A \\, \\text{cm}^2 $ 為該五邊形的實際面積。求 $ A $ 值的範圍。\n\u0001IMG0\u0001\n\n- A. $ 27.83 \\leq A < 31.83 $\n- B. $ 44.75 \\leq A < 60.75 $\n- C. $ 46.75 \\leq A < 63.25 $\n- D. $ 48.25 \\leq A < 64.75 $",
+   "html": "<p>14.&nbsp;&nbsp;&nbsp;圖中, $ PQRST $ 為五邊形, 其中所有的量度均準確至最接近的 cm。設 $ A \\, \\text{cm}^2 $ 為該五邊形的實際面積。求 $ A $ 值的範圍。</p>\n<p><img alt=\"Figure Q14 (as printed)\" src=\"2020P2_figs/Q14.png\" /></p>\n<ul><li>A. $ 27.83 \\leq A &lt; 31.83 $</li><li>B. $ 44.75 \\leq A &lt; 60.75 $</li><li>C. $ 46.75 \\leq A &lt; 63.25 $</li><li>D. $ 48.25 \\leq A &lt; 64.75 $</li></ul>",
+   "file": "2020_P2_題目中文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2020,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 15,
+   "title": "第 15 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "百分數",
+    "變分",
+    "比率與比例"
+   ],
+   "text": "某扇形的角減少 60%, 而它的半徑卻增加 $ k \\% $ 。若該扇形的弧長維持不變, 求 $ k $ 的值。\n\n- A. 40\n- B. 60\n- C. 67\n- D. 150",
+   "html": "<p>15.&nbsp;&nbsp;&nbsp;某扇形的角減少 60%, 而它的半徑卻增加 $ k \\% $ 。若該扇形的弧長維持不變, 求 $ k $ 的值。</p>\n<ul><li>A. 40</li><li>B. 60</li><li>C. 67</li><li>D. 150</li></ul>",
+   "file": "2020_P2_題目中文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2020,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 16,
+   "title": "第 16 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "立體圖形"
+   ],
+   "text": "若一底半徑為 $5a$ cm 及高為 $7b$ cm 的直立圓柱體的體積為 $525$ cm$^3$ ，則一底半徑為 $7a$ cm 及高為 $5b$ cm 的直立圓錐體的體積為\n\n- A. $175$ cm$^3$\n- B. $245$ cm$^3$\n- C. $490$ cm$^3$\n- D. $735$ cm$^3$",
+   "html": "<p>16.&nbsp;&nbsp;&nbsp;若一底半徑為 $5a$ cm 及高為 $7b$ cm 的直立圓柱體的體積為 $525$ cm$^3$ ，則一底半徑為 $7a$ cm 及高為 $5b$ cm 的直立圓錐體的體積為</p>\n<ul><li>A. $175$ cm$^3$</li><li>B. $245$ cm$^3$</li><li>C. $490$ cm$^3$</li><li>D. $735$ cm$^3$</li></ul>",
+   "file": "2020_P2_題目中文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2020,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 17,
+   "title": "第 17 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "比率與比例",
+    "平面幾何"
+   ],
+   "text": "圖中，$P$ 及 $Q$ 均為 $OR$ 上的點而 $U$ 及 $T$ 均為 $OS$ 上的點使得 $OP=PQ=QR$ 且 $PU\\parallel QT\\parallel RS$ 。梯形 $PQTU$ 的面積與梯形 $QRST$ 的面積之比為\n\u0001IMG0\u0001\n\n- A. $1:2$\n- B. $2:3$\n- C. $3:5$\n- D. $4:9$",
+   "html": "<p>17.&nbsp;&nbsp;&nbsp;圖中，$P$ 及 $Q$ 均為 $OR$ 上的點而 $U$ 及 $T$ 均為 $OS$ 上的點使得 $OP=PQ=QR$ 且 $PU\\parallel QT\\parallel RS$ 。梯形 $PQTU$ 的面積與梯形 $QRST$ 的面積之比為</p>\n<p><img alt=\"Figure Q17 (as printed)\" src=\"2020P2_figs/Q17.png\" /></p>\n<ul><li>A. $1:2$</li><li>B. $2:3$</li><li>C. $3:5$</li><li>D. $4:9$</li></ul>",
+   "file": "2020_P2_題目中文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2020,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 18,
+   "title": "第 18 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "比率與比例",
+    "坐標幾何",
+    "平面幾何"
+   ],
+   "text": "圖中，$ABCD$ 為一平行四邊形。設 $E$ 為 $AD$ 上的一點使得 $AE:ED=2:5$ 。延長 $CB$ 至點 $F$ 使得 $BF=DE$ 。將 $AB$ 與 $EF$ 的交點記為 $G$ 。已知 $BD$ 與 $CG$ 相交於點 $H$ 。若 $\\triangle AEG$ 的面積為 $48$ cm$^2$ ，則 $\\triangle CDH$ 的面積為\n\u0001IMG0\u0001\n\n- A. $98$ cm$^2$\n- B. $343$ cm$^2$\n- C. $420$ cm$^2$\n- D. $588$ cm$^2$",
+   "html": "<p>18.&nbsp;&nbsp;&nbsp;圖中，$ABCD$ 為一平行四邊形。設 $E$ 為 $AD$ 上的一點使得 $AE:ED=2:5$ 。延長 $CB$ 至點 $F$ 使得 $BF=DE$ 。將 $AB$ 與 $EF$ 的交點記為 $G$ 。已知 $BD$ 與 $CG$ 相交於點 $H$ 。若 $\\triangle AEG$ 的面積為 $48$ cm$^2$ ，則 $\\triangle CDH$ 的面積為</p>\n<p><img alt=\"Figure Q18 (as printed)\" src=\"2020P2_figs/Q18.png\" /></p>\n<ul><li>A. $98$ cm$^2$</li><li>B. $343$ cm$^2$</li><li>C. $420$ cm$^2$</li><li>D. $588$ cm$^2$</li></ul>",
+   "file": "2020_P2_題目中文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2020,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 19,
+   "title": "第 19 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "平面幾何",
+    "三角比"
+   ],
+   "text": "根據圖中所示，下列何者必為正確？\nI. $ u - v + w = 0^\\circ $\nII. $ u + v - w = 180^\\circ $\nIII. $ u + v + w = 450^\\circ $\n\u0001IMG0\u0001\n\n- A. 只有 I\n- B. 只有 II\n- C. 只有 I 及 III\n- D. 只有 II 及 III",
+   "html": "<p>19.&nbsp;&nbsp;&nbsp;根據圖中所示，下列何者必為正確？</p>\n<p>I. $ u - v + w = 0^\\circ $</p>\n<p>II. $ u + v - w = 180^\\circ $</p>\n<p>III. $ u + v + w = 450^\\circ $</p>\n<p><img alt=\"Figure Q19 (as printed)\" src=\"2020P2_figs/Q19.png\" /></p>\n<ul><li>A. 只有 I</li><li>B. 只有 II</li><li>C. 只有 I 及 III</li><li>D. 只有 II 及 III</li></ul>",
+   "file": "2020_P2_題目中文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2020,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 20,
+   "title": "第 20 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "平面幾何",
+    "三角比"
+   ],
+   "text": "圖中，$ ABC $ 為一等邊三角形及 $ CDE $ 為一等腰三角形且 $ CD = CE $ 。若 $ \\angle DCE = 78^\\circ $ 及 $ \\angle ADC = \\angle CAD = 40^\\circ $，則 $ \\angle CBE = $\n\u0001IMG0\u0001\n\n- A. $ 14^\\circ $\n- B. $ 19^\\circ $\n- C. $ 24^\\circ $\n- D. $ 29^\\circ $",
+   "html": "<p>20.&nbsp;&nbsp;&nbsp;圖中，$ ABC $ 為一等邊三角形及 $ CDE $ 為一等腰三角形且 $ CD = CE $ 。若 $ \\angle DCE = 78^\\circ $ 及 $ \\angle ADC = \\angle CAD = 40^\\circ $，則 $ \\angle CBE = $</p>\n<p><img alt=\"Figure Q20 (as printed)\" src=\"2020P2_figs/Q20.png\" /></p>\n<ul><li>A. $ 14^\\circ $</li><li>B. $ 19^\\circ $</li><li>C. $ 24^\\circ $</li><li>D. $ 29^\\circ $</li></ul>",
+   "file": "2020_P2_題目中文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2020,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 21,
+   "title": "第 21 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "坐標幾何",
+    "平面幾何"
+   ],
+   "text": "圖中，$ ABCD $ 為一長方形。設 $ E $ 為 $ AD $ 上的一點使得 $ BE = 8 \\text{ cm} $ 及 $ CE = 15 \\text{ cm} $ 。若 $ BC = 17 \\text{ cm} $，求長方形 $ ABCD $ 的面積。\n\u0001IMG0\u0001\n\n- A. $ 60 \\text{ cm}^2 $\n- B. $ 68 \\text{ cm}^2 $\n- C. $ 120 \\text{ cm}^2 $\n- D. $ 136 \\text{ cm}^2 $",
+   "html": "<p>21.&nbsp;&nbsp;&nbsp;圖中，$ ABCD $ 為一長方形。設 $ E $ 為 $ AD $ 上的一點使得 $ BE = 8 \\text{ cm} $ 及 $ CE = 15 \\text{ cm} $ 。若 $ BC = 17 \\text{ cm} $，求長方形 $ ABCD $ 的面積。</p>\n<p><img alt=\"Figure Q21 (as printed)\" src=\"2020P2_figs/Q21.png\" /></p>\n<ul><li>A. $ 60 \\text{ cm}^2 $</li><li>B. $ 68 \\text{ cm}^2 $</li><li>C. $ 120 \\text{ cm}^2 $</li><li>D. $ 136 \\text{ cm}^2 $</li></ul>",
+   "file": "2020_P2_題目中文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2020,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 22,
+   "title": "第 22 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "圓的性質",
+    "三角比",
+    "平面幾何"
+   ],
+   "text": "圖中, $ABCDE$ 為一圓。若 $AB=10\\, \\text{cm}$ 、$BC=5\\, \\text{cm}$ 、$\\angle ABC=90^\\circ$ 及 $\\angle CED=40^\\circ$ ，求 $CD$ 準確至最接近的 $\\text{cm}$ 。\n\u0001IMG0\u0001\n\n- A. $5\\, \\text{cm}$\n- B. $6\\, \\text{cm}$\n- C. $7\\, \\text{cm}$\n- D. $8\\, \\text{cm}$",
+   "html": "<p>22.&nbsp;&nbsp;&nbsp;圖中, $ABCDE$ 為一圓。若 $AB=10\\, \\text{cm}$ 、$BC=5\\, \\text{cm}$ 、$\\angle ABC=90^\\circ$ 及 $\\angle CED=40^\\circ$ ，求 $CD$ 準確至最接近的 $\\text{cm}$ 。</p>\n<p><img alt=\"Figure Q22 (as printed)\" src=\"2020P2_figs/Q22.png\" /></p>\n<ul><li>A. $5\\, \\text{cm}$</li><li>B. $6\\, \\text{cm}$</li><li>C. $7\\, \\text{cm}$</li><li>D. $8\\, \\text{cm}$</li></ul>",
+   "file": "2020_P2_題目中文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2020,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 23,
+   "title": "第 23 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "三角比",
+    "坐標幾何"
+   ],
+   "text": "某船位於燈塔以西 $50\\, \\text{km}$ 。若該船沿 $S60^\\circ E$ 方向移動，求該船與燈塔間的最短距離。\n\n- A. $20\\, \\text{km}$\n- B. $25\\, \\text{km}$\n- C. $43\\, \\text{km}$\n- D. $87\\, \\text{km}$",
+   "html": "<p>23.&nbsp;&nbsp;&nbsp;某船位於燈塔以西 $50\\, \\text{km}$ 。若該船沿 $S60^\\circ E$ 方向移動，求該船與燈塔間的最短距離。</p>\n<ul><li>A. $20\\, \\text{km}$</li><li>B. $25\\, \\text{km}$</li><li>C. $43\\, \\text{km}$</li><li>D. $87\\, \\text{km}$</li></ul>",
+   "file": "2020_P2_題目中文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2020,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 24,
+   "title": "第 24 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "坐標幾何",
+    "變換與對稱"
+   ],
+   "text": "點 $P$ 向左平移 4 單位至點 $Q$ 。若 $Q$ 對 $y$ 軸的反射影像的坐標為 $(5,-1)$，則 $P$ 的極坐標為\n\n- A. $(1,45^\\circ)$\n- B. $(1,225^\\circ)$\n- C. $(\\sqrt{2},45^\\circ)$\n- D. $(\\sqrt{2},225^\\circ)$",
+   "html": "<p>24.&nbsp;&nbsp;&nbsp;點 $P$ 向左平移 4 單位至點 $Q$ 。若 $Q$ 對 $y$ 軸的反射影像的坐標為 $(5,-1)$，則 $P$ 的極坐標為</p>\n<ul><li>A. $(1,45^\\circ)$</li><li>B. $(1,225^\\circ)$</li><li>C. $(\\sqrt{2},45^\\circ)$</li><li>D. $(\\sqrt{2},225^\\circ)$</li></ul>",
+   "file": "2020_P2_題目中文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2020,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 25,
+   "title": "第 25 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "坐標幾何",
+    "圓的性質",
+    "圓的方程"
+   ],
+   "text": "設 $ A $ 為直線 $ 9x + 4y - 7 = 0 $ 與直線 $ 9x - 4y + 7 = 0 $ 的交點。若 $ P $ 為直角坐標平面上的一動點使得 $ P $ 與 $ A $ 間的距離為 8 ，則 $ P $ 的軌跡為一\n\n- A. 圓。\n- B. 三角形。\n- C. 四邊形。\n- D. 正六邊形。",
+   "html": "<p>25.&nbsp;&nbsp;&nbsp;設 $ A $ 為直線 $ 9x + 4y - 7 = 0 $ 與直線 $ 9x - 4y + 7 = 0 $ 的交點。若 $ P $ 為直角坐標平面上的一動點使得 $ P $ 與 $ A $ 間的距離為 8 ，則 $ P $ 的軌跡為一</p>\n<ul><li>A. 圓。</li><li>B. 三角形。</li><li>C. 四邊形。</li><li>D. 正六邊形。</li></ul>",
+   "file": "2020_P2_題目中文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2020,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 26,
+   "title": "第 26 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "坐標幾何",
+    "直線方程"
+   ],
+   "text": "直線 $ L $ 的方程為 $ kx + 4y - 2k = 0 $，其中 $ k $ 為一常數。若 $ L $ 垂直於直線 $ 6x - 9y + 4 = 0 $，求 $ L $ 的 $ y $ 截距。\n\n- A. $-3$\n- B. $-2$\n- C. 2\n- D. 3",
+   "html": "<p>26.&nbsp;&nbsp;&nbsp;直線 $ L $ 的方程為 $ kx + 4y - 2k = 0 $，其中 $ k $ 為一常數。若 $ L $ 垂直於直線 $ 6x - 9y + 4 = 0 $，求 $ L $ 的 $ y $ 截距。</p>\n<ul><li>A. $-3$</li><li>B. $-2$</li><li>C. 2</li><li>D. 3</li></ul>",
+   "file": "2020_P2_題目中文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2020,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 27,
+   "title": "第 27 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "圓的方程",
+    "圓的性質"
+   ],
+   "text": "圓 $ C_1 $ 及圓 $ C_2 $ 的方程分別為 $ 2x^2 + 2y^2 + 4x + 8y - 149 = 0 $ 及 $ x^2 + y^2 - 8x - 20y - 53 = 0 $。下列何者正確？\nI. $ C_1 $ 的圓心在 $ C_2 $ 上。\nII. $ C_1 $ 與 $ C_2 $ 的半徑相等。\nIII. $ C_1 $ 與 $ C_2 $ 相交於兩相異點。\n\n- A. 只有 I\n- B. 只有 II\n- C. 只有 I 及 III\n- D. 只有 II 及 III",
+   "html": "<p>27.&nbsp;&nbsp;&nbsp;圓 $ C_1 $ 及圓 $ C_2 $ 的方程分別為 $ 2x^2 + 2y^2 + 4x + 8y - 149 = 0 $ 及 $ x^2 + y^2 - 8x - 20y - 53 = 0 $。下列何者正確？</p>\n<p>I. $ C_1 $ 的圓心在 $ C_2 $ 上。</p>\n<p>II. $ C_1 $ 與 $ C_2 $ 的半徑相等。</p>\n<p>III. $ C_1 $ 與 $ C_2 $ 相交於兩相異點。</p>\n<ul><li>A. 只有 I</li><li>B. 只有 II</li><li>C. 只有 I 及 III</li><li>D. 只有 II 及 III</li></ul>",
+   "file": "2020_P2_題目中文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2020,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 28,
+   "title": "第 28 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "概率"
+   ],
+   "text": "從四張分別記有數字 3、5、7 及 9 的紙卡中，隨機同時抽出兩個數字。求抽出數字之積大於 35 的概率。\n\n- A. $\\dfrac{1}{2}$\n- B. $\\dfrac{1}{3}$\n- C. $\\dfrac{2}{3}$\n- D. $\\dfrac{3}{8}$",
+   "html": "<p>28.&nbsp;&nbsp;&nbsp;從四張分別記有數字 3、5、7 及 9 的紙卡中，隨機同時抽出兩個數字。求抽出數字之積大於 35 的概率。</p>\n<ul><li>A. $\\dfrac{1}{2}$</li><li>B. $\\dfrac{1}{3}$</li><li>C. $\\dfrac{2}{3}$</li><li>D. $\\dfrac{3}{8}$</li></ul>",
+   "file": "2020_P2_題目中文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2020,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 29,
+   "title": "第 29 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "統計",
+    "集中趨勢"
+   ],
+   "text": "下面的棒形圖顯示某些學生擁有原子筆的數目的分佈。求該分佈的四分位數間距。\n\u0001IMG0\u0001\n\n- A. 1\n- B. 2\n- C. 4\n- D. 6",
+   "html": "<p>29.&nbsp;&nbsp;&nbsp;下面的棒形圖顯示某些學生擁有原子筆的數目的分佈。求該分佈的四分位數間距。</p>\n<p><img alt=\"Figure Q29 (as printed)\" src=\"2020P2_figs/Q29.png\" /></p>\n<ul><li>A. 1</li><li>B. 2</li><li>C. 4</li><li>D. 6</li></ul>",
+   "file": "2020_P2_題目中文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2020,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 30,
+   "title": "第 30 題",
+   "section": "Paper 2　甲部",
+   "tags": [
+    "統計",
+    "集中趨勢"
+   ],
+   "text": "考慮以下整數：\n3   3   8   8   10   12   m\nn 設 $x$、$y$ 及 $z$ 分別為以上整數的中位數、平均值及眾數。若以上整數的分佈域為 9，則下列何者必為正確？\nI. $x=8$\nII. $y=8$\nIII. $z=8$\n\n- A. 只有 I\n- B. 只有 II\n- C. 只有 I 及 III\n- D. 只有 II 及 III 乙部",
+   "html": "<p>30.&nbsp;&nbsp;&nbsp;考慮以下整數： 3   3   8   8   10   12   m n 設 $x$、$y$ 及 $z$ 分別為以上整數的中位數、平均值及眾數。若以上整數的分佈域為 9，則下列何者必為正確？</p>\n<p>I. $x=8$</p>\n<p>II. $y=8$</p>\n<p>III. $z=8$</p>\n<ul><li>A. 只有 I</li><li>B. 只有 II</li><li>C. 只有 I 及 III</li><li>D. 只有 II 及 III 乙部</li></ul>",
+   "file": "2020_P2_題目中文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2020,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 31,
+   "title": "第 31 題",
+   "section": "Paper 2　乙部",
+   "tags": [
+    "指數函數"
+   ],
+   "text": "B000000000000030\\_{16} =\n\n- A. 10×2^{60}+48\n- B. 11×2^{60}+48\n- C. 10×2^{64}+768\n- D. 11×2^{64}+768",
+   "html": "<p>31.&nbsp;&nbsp;&nbsp;B000000000000030\\_{16} =</p>\n<ul><li>A. 10×2^{60}+48</li><li>B. 11×2^{60}+48</li><li>C. 10×2^{64}+768</li><li>D. 11×2^{64}+768</li></ul>",
+   "file": "2020_P2_題目中文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2020,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 32,
+   "title": "第 32 題",
+   "section": "Paper 2　乙部",
+   "tags": [
+    "對數",
+    "一元二次方程",
+    "代數化簡"
+   ],
+   "text": "若方程 (log\\_{π}x)^{2}−10log\\_{π}x+24=log\\_{π}x 的根為 α 及 β ，則 αβ =\n\n- A. π^{10}\n- B. π^{11}\n- C. log\\_{π}10\n- D. log\\_{π}11",
+   "html": "<p>32.&nbsp;&nbsp;&nbsp;若方程 (log\\_{π}x)^{2}−10log\\_{π}x+24=log\\_{π}x 的根為 α 及 β ，則 αβ =</p>\n<ul><li>A. π^{10}</li><li>B. π^{11}</li><li>C. log\\_{π}10</li><li>D. log\\_{π}11</li></ul>",
+   "file": "2020_P2_題目中文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2020,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 33,
+   "title": "第 33 題",
+   "section": "Paper 2　乙部",
+   "tags": [
+    "函數與圖像",
+    "變換與對稱"
+   ],
+   "text": "圖中所示為在同一直角坐標系上 y=a^{x} 的圖像及 y=b^{x} 的圖像 ，其中 a 及 b 均為正常數。若 y=a^{x} 的圖像為 y=b^{x} 的圖像對 y 軸的反射影像 ，則下列何者正確？ -\nI. a<1 -\nII. b>1 -\nIII. ab=1\n\u0001IMG0\u0001\n\n- A. 只有 I 及 II\n- B. 只有 I 及 III\n- C. 只有 II 及 III\n- D. I 、 II 及 III",
+   "html": "<p>33.&nbsp;&nbsp;&nbsp;圖中所示為在同一直角坐標系上 y=a^{x} 的圖像及 y=b^{x} 的圖像 ，其中 a 及 b 均為正常數。若 y=a^{x} 的圖像為 y=b^{x} 的圖像對 y 軸的反射影像 ，則下列何者正確？ -</p>\n<p>I. a&lt;1 -</p>\n<p>II. b&gt;1 -</p>\n<p>III. ab=1</p>\n<p><img alt=\"Figure Q33 (as printed)\" src=\"2020P2_figs/Q33.png\" /></p>\n<ul><li>A. 只有 I 及 II</li><li>B. 只有 I 及 III</li><li>C. 只有 II 及 III</li><li>D. I 、 II 及 III</li></ul>",
+   "file": "2020_P2_題目中文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2020,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 34,
+   "title": "第 34 題",
+   "section": "Paper 2　乙部",
+   "tags": [
+    "函數與圖像"
+   ],
+   "text": "圖中的圖像顯示 $ x^3 $ 與 $ \\sqrt{y} $ 之間的線性關係。若 $ x=2 $，則 $ y=$\n\u0001IMG0\u0001\n\n- A. 3。\n- B. 8。\n- C. 9。\n- D. 33。",
+   "html": "<p>34.&nbsp;&nbsp;&nbsp;圖中的圖像顯示 $ x^3 $ 與 $ \\sqrt{y} $ 之間的線性關係。若 $ x=2 $，則 $ y=$</p>\n<p><img alt=\"Figure Q34 (as printed)\" src=\"2020P2_figs/Q34.png\" /></p>\n<ul><li>A. 3。</li><li>B. 8。</li><li>C. 9。</li><li>D. 33。</li></ul>",
+   "file": "2020_P2_題目中文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2020,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 35,
+   "title": "第 35 題",
+   "section": "Paper 2　乙部",
+   "tags": [
+    "數列",
+    "對數",
+    "三角比"
+   ],
+   "text": "若 $ a>0 $，則下列何者為等差數列？\nI. $\\log a^{-3}, \\log a, \\log a^5$\nII. $8-4a, 9-5a, 10-6a$\nIII. $\\cos(90-a)^\\circ, \\cos 90^\\circ, \\cos(90+a)^\\circ$\n\n- A. 只有 I 及 II\n- B. 只有 I 及 III\n- C. 只有 II 及 III\n- D. I 、II 及 III",
+   "html": "<p>35.&nbsp;&nbsp;&nbsp;若 $ a&gt;0 $，則下列何者為等差數列？</p>\n<p>I. $\\log a^{-3}, \\log a, \\log a^5$</p>\n<p>II. $8-4a, 9-5a, 10-6a$</p>\n<p>III. $\\cos(90-a)^\\circ, \\cos 90^\\circ, \\cos(90+a)^\\circ$</p>\n<ul><li>A. 只有 I 及 II</li><li>B. 只有 I 及 III</li><li>C. 只有 II 及 III</li><li>D. I 、II 及 III</li></ul>",
+   "file": "2020_P2_題目中文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2020,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 36,
+   "title": "第 36 題",
+   "section": "Paper 2　乙部",
+   "tags": [
+    "不等式",
+    "坐標幾何",
+    "變分"
+   ],
+   "text": "考慮以下的不等式組：\n$$\n\\begin{cases}\n0 \\leq x \\leq 2 \\\\\n2x + y + 3 \\geq 0 \\\\\nx + y + 1 \\leq 0\n\\end{cases}\n$$\n設 $ D $ 為表示以上的不等式組的解之區域。求常數 $ k $ 使得 $ 4x + 3y + k $ 的最小值為 24 ，其中 $ (x, y) $ 為 $ D $ 中的一點。\n\n- A. 25\n- B. 27\n- C. 37\n- D. 53",
+   "html": "<p>36.&nbsp;&nbsp;&nbsp;考慮以下的不等式組：</p>\n<p>$$ \\begin{cases} 0 \\leq x \\leq 2 \\\\ 2x + y + 3 \\geq 0 \\\\ x + y + 1 \\leq 0 \\end{cases} $$</p>\n<p>設 $ D $ 為表示以上的不等式組的解之區域。求常數 $ k $ 使得 $ 4x + 3y + k $ 的最小值為 24 ，其中 $ (x, y) $ 為 $ D $ 中的一點。</p>\n<ul><li>A. 25</li><li>B. 27</li><li>C. 37</li><li>D. 53</li></ul>",
+   "file": "2020_P2_題目中文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2020,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 37,
+   "title": "第 37 題",
+   "section": "Paper 2　乙部",
+   "tags": [
+    "複數"
+   ],
+   "text": "定義 $ z_1 = \\dfrac{2 + ki}{1 + i} $ 及 $ z_2 = \\dfrac{k + 5i}{2 - i} $，其中 $ k $ 為一實數。若 $ z_1 $ 的虛部等於 $ z_2 $ 的虛部，則 $ z_1 - z_2 = $\n\n- A. $-20$。\n- B. $0$。\n- C. $3$。\n- D. $10$。",
+   "html": "<p>37.&nbsp;&nbsp;&nbsp;定義 $ z_1 = \\dfrac{2 + ki}{1 + i} $ 及 $ z_2 = \\dfrac{k + 5i}{2 - i} $，其中 $ k $ 為一實數。若 $ z_1 $ 的虛部等於 $ z_2 $ 的虛部，則 $ z_1 - z_2 = $</p>\n<ul><li>A. $-20$。</li><li>B. $0$。</li><li>C. $3$。</li><li>D. $10$。</li></ul>",
+   "file": "2020_P2_題目中文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2020,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 38,
+   "title": "第 38 題",
+   "section": "Paper 2　乙部",
+   "tags": [
+    "立體圖形",
+    "坐標幾何",
+    "三角比"
+   ],
+   "text": "圖中，$ ABCDEF $ 為一直立三角柱體。$ P $ 為 $ AE $ 上的一點。若 $ AB = AC = 12 \\, \\text{cm} $ 、$ AP = 9 \\, \\text{cm} $ 、$ EP = 5 \\, \\text{cm} $ 及 $ BD = 2k \\, \\text{cm} $，求 $ \\Delta BDP $ 的面積。\n\u0001IMG0\u0001\n\n- A. $\\sqrt{(k^2 - 1)(196 - k^2)} \\, \\text{cm}^2$\n- B. $\\sqrt{(k^2 - 1)(196 + k^2)} \\, \\text{cm}^2$\n- C. $\\sqrt{(k^2 + 1)(196 - k^2)} \\, \\text{cm}^2$\n- D. $\\sqrt{(k^2 + 1)(196 + k^2)} \\, \\text{cm}^2$",
+   "html": "<p>38.&nbsp;&nbsp;&nbsp;圖中，$ ABCDEF $ 為一直立三角柱體。$ P $ 為 $ AE $ 上的一點。若 $ AB = AC = 12 \\, \\text{cm} $ 、$ AP = 9 \\, \\text{cm} $ 、$ EP = 5 \\, \\text{cm} $ 及 $ BD = 2k \\, \\text{cm} $，求 $ \\Delta BDP $ 的面積。</p>\n<p><img alt=\"Figure Q38 (as printed)\" src=\"2020P2_figs/Q38.png\" /></p>\n<ul><li>A. $\\sqrt{(k^2 - 1)(196 - k^2)} \\, \\text{cm}^2$</li><li>B. $\\sqrt{(k^2 - 1)(196 + k^2)} \\, \\text{cm}^2$</li><li>C. $\\sqrt{(k^2 + 1)(196 - k^2)} \\, \\text{cm}^2$</li><li>D. $\\sqrt{(k^2 + 1)(196 + k^2)} \\, \\text{cm}^2$</li></ul>",
+   "file": "2020_P2_題目中文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2020,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 39,
+   "title": "第 39 題",
+   "section": "Paper 2　乙部",
+   "tags": [
+    "圓的性質",
+    "平面幾何"
+   ],
+   "text": "圖中，$ ABC $ 及 $ CDE $ 均為圓使得 $ ADC $ 為一直線。$ PQ $ 為該兩圓在 $ C $ 的公切線。$ AB $ 為圓 $ CDE $ 在 $ E $ 的切線。若 $ \\angle ADE = 100^\\circ $ 及 $ \\angle BCQ = 35^\\circ $，則 $ \\angle ABC = $\n\u0001IMG0\u0001\n\n- A. $55^\\circ$。\n- B. $65^\\circ$。\n- C. $70^\\circ$。\n- D. $80^\\circ$。",
+   "html": "<p>39.&nbsp;&nbsp;&nbsp;圖中，$ ABC $ 及 $ CDE $ 均為圓使得 $ ADC $ 為一直線。$ PQ $ 為該兩圓在 $ C $ 的公切線。$ AB $ 為圓 $ CDE $ 在 $ E $ 的切線。若 $ \\angle ADE = 100^\\circ $ 及 $ \\angle BCQ = 35^\\circ $，則 $ \\angle ABC = $</p>\n<p><img alt=\"Figure Q39 (as printed)\" src=\"2020P2_figs/Q39.png\" /></p>\n<ul><li>A. $55^\\circ$。</li><li>B. $65^\\circ$。</li><li>C. $70^\\circ$。</li><li>D. $80^\\circ$。</li></ul>",
+   "file": "2020_P2_題目中文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2020,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 40,
+   "title": "第 40 題",
+   "section": "Paper 2　乙部",
+   "tags": [
+    "坐標幾何",
+    "直線方程"
+   ],
+   "text": "某三角形的三邊的方程為 $4x+3y=24$ 、 $4x-3y=24$ 及 $x=a$ ，其中 $a$ 為一常數。若該三角形的內心的 $x$ 坐標為 31 ，則 $a=$\n\n- A. 15。\n- B. 31。\n- C. 45。\n- D. 51。",
+   "html": "<p>40.&nbsp;&nbsp;&nbsp;某三角形的三邊的方程為 $4x+3y=24$ 、 $4x-3y=24$ 及 $x=a$ ，其中 $a$ 為一常數。若該三角形的內心的 $x$ 坐標為 31 ，則 $a=$</p>\n<ul><li>A. 15。</li><li>B. 31。</li><li>C. 45。</li><li>D. 51。</li></ul>",
+   "file": "2020_P2_題目中文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2020,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 41,
+   "title": "第 41 題",
+   "section": "Paper 2　乙部",
+   "tags": [
+    "坐標幾何",
+    "圓的方程",
+    "不等式"
+   ],
+   "text": "求 $c$ 值的範圍使得圓 $x^2+y^2-6x+cy-7=0$ 與直線 $x-y+9=0$ 相交。\n\n- A. $-56 \\leq c \\leq 8$\n- B. $-8 \\leq c \\leq 56$\n- C. $c \\leq -56$ 或 $c \\geq 8$\n- D. $c \\leq -8$ 或 $c \\geq 56$",
+   "html": "<p>41.&nbsp;&nbsp;&nbsp;求 $c$ 值的範圍使得圓 $x^2+y^2-6x+cy-7=0$ 與直線 $x-y+9=0$ 相交。</p>\n<ul><li>A. $-56 \\leq c \\leq 8$</li><li>B. $-8 \\leq c \\leq 56$</li><li>C. $c \\leq -56$ 或 $c \\geq 8$</li><li>D. $c \\leq -8$ 或 $c \\geq 56$</li></ul>",
+   "file": "2020_P2_題目中文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2020,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 42,
+   "title": "第 42 題",
+   "section": "Paper 2　乙部",
+   "tags": [
+    "排列與組合"
+   ],
+   "text": "6 名男生與 5 名女生排成一隊。若沒有男生相鄰而排，則可排成多少不同的隊？\n\n- A. 86 400\n- B. 172 800\n- C. 213 444\n- D. 39 916 800",
+   "html": "<p>42.&nbsp;&nbsp;&nbsp;6 名男生與 5 名女生排成一隊。若沒有男生相鄰而排，則可排成多少不同的隊？</p>\n<ul><li>A. 86 400</li><li>B. 172 800</li><li>C. 213 444</li><li>D. 39 916 800</li></ul>",
+   "file": "2020_P2_題目中文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2020,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 43,
+   "title": "第 43 題",
+   "section": "Paper 2　乙部",
+   "tags": [
+    "概率"
+   ],
+   "text": "某箱子內有 8 本中文書及 7 本英文書。若從該箱子中隨機同時抽出 5 本書，求抽出至多 3 本中文書的概率。\n\n- A. $\\dfrac{2}{11}$\n- B. $\\dfrac{9}{11}$\n- C. $\\dfrac{61}{143}$\n- D. $\\dfrac{82}{143}$",
+   "html": "<p>43.&nbsp;&nbsp;&nbsp;某箱子內有 8 本中文書及 7 本英文書。若從該箱子中隨機同時抽出 5 本書，求抽出至多 3 本中文書的概率。</p>\n<ul><li>A. $\\dfrac{2}{11}$</li><li>B. $\\dfrac{9}{11}$</li><li>C. $\\dfrac{61}{143}$</li><li>D. $\\dfrac{82}{143}$</li></ul>",
+   "file": "2020_P2_題目中文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2020,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 44,
+   "title": "第 44 題",
+   "section": "Paper 2　乙部",
+   "tags": [
+    "標準分"
+   ],
+   "text": "在一測驗，某兩學生的測驗得分之差及標準分之差分別為 30 分及 6。在該測驗，測驗得分的標準差為\n\n- A. 5 分。\n- B. 24 分。\n- C. 25 分。\n- D. 36 分。",
+   "html": "<p>44.&nbsp;&nbsp;&nbsp;在一測驗，某兩學生的測驗得分之差及標準分之差分別為 30 分及 6。在該測驗，測驗得分的標準差為</p>\n<ul><li>A. 5 分。</li><li>B. 24 分。</li><li>C. 25 分。</li><li>D. 36 分。</li></ul>",
+   "file": "2020_P2_題目中文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2020,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 45,
+   "title": "第 45 題",
+   "section": "Paper 2　乙部",
+   "tags": [
+    "統計",
+    "離差"
+   ],
+   "text": "六個數 $20a+3$、$20a+5$、$20a+9$、$20a+11$、$20a+15$ 及 $20a+17$ 的方差為\n\n- A. 5。\n- B. 10。\n- C. 25。\n- D. $20a+25$。",
+   "html": "<p>45.&nbsp;&nbsp;&nbsp;六個數 $20a+3$、$20a+5$、$20a+9$、$20a+11$、$20a+15$ 及 $20a+17$ 的方差為</p>\n<ul><li>A. 5。</li><li>B. 10。</li><li>C. 25。</li><li>D. $20a+25$。</li></ul>",
+   "file": "2020_P2_題目中文卷.md"
   },
   {
    "subject": "化學",

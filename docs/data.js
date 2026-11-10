@@ -1,7 +1,292 @@
 window.QB = {
- "generated": "2026-11-09 23:31",
- "count": 1540,
+ "generated": "2026-11-10 12:12",
+ "count": 1582,
  "questions": [
+  {
+   "subject": "數學",
+   "year": 2012,
+   "paper": "Paper 1",
+   "type": "解答",
+   "qno": 1,
+   "title": "Q1　指數定律化簡",
+   "section": "Paper 1　甲部(1)",
+   "tags": [
+    "指數定律化簡"
+   ],
+   "text": "$$\\frac{m^{-12}n^8}{n^3}=m^{-12}n^{8-3}$$　**【1M】**（for $\\dfrac{a^p}{a^q}=a^{p-q}$）\n\n$$=\\frac{n^5}{m^{12}}$$　**【1M+1A】**（1M for $a^{-p}=\\dfrac{1}{a^p}$）\n\n**（3 分）**",
+   "html": "<p>1.&nbsp;&nbsp;&nbsp;$$\\frac{m^{-12}n^8}{n^3}=m^{-12}n^{8-3}$$　<strong>【1M】</strong>（for $\\dfrac{a^p}{a^q}=a^{p-q}$）</p>\n<p>$$=\\frac{n^5}{m^{12}}$$　<strong>【1M+1A】</strong>（1M for $a^{-p}=\\dfrac{1}{a^p}$）</p>\n<p><strong>（3 分）</strong></p>",
+   "file": "2012_P1_解答.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2012,
+   "paper": "Paper 1",
+   "type": "解答",
+   "qno": 2,
+   "title": "Q2　主項變換",
+   "section": "Paper 1　甲部(1)",
+   "tags": [
+    "主項變換"
+   ],
+   "text": "$$\\frac{3a+b}{8}=b-1$$\n\n$$3a+b=8(b-1)$$　**【1M】**（for $8(b-1)$）\n\n$$3a+b=8b-8$$\n\n$$3a=8b-8-b$$　**【1M】**（for putting $a$ on one side）\n\n$$a=\\frac{7b-8}{3}$$　**【1A】**（or equivalent）\n\n**（3 分）**",
+   "html": "<p>2.&nbsp;&nbsp;&nbsp;$$\\frac{3a+b}{8}=b-1$$</p>\n<p>$$3a+b=8(b-1)$$　<strong>【1M】</strong>（for $8(b-1)$）</p>\n<p>$$3a+b=8b-8$$</p>\n<p>$$3a=8b-8-b$$　<strong>【1M】</strong>（for putting $a$ on one side）</p>\n<p>$$a=\\frac{7b-8}{3}$$　<strong>【1A】</strong>（or equivalent）</p>\n<p><strong>（3 分）</strong></p>",
+   "file": "2012_P1_解答.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2012,
+   "paper": "Paper 1",
+   "type": "解答",
+   "qno": 3,
+   "title": "Q3　因式分解",
+   "section": "Paper 1　甲部(1)",
+   "tags": [
+    "因式分解"
+   ],
+   "text": "(a)　$$x^2-6xy+9y^2=(x-3y)^2$$　**【1A】**（or equivalent）\n\n(b)　$$x^2-6xy+9y^2+7x-21y=(x-3y)^2+7x-21y$$　**【1M】**（for using (a)）\n\n$$=(x-3y)^2+7(x-3y)$$\n\n$$=(x-3y)(x-3y+7)$$　**【1A】**（or equivalent）\n\n**（3 分）**",
+   "html": "<p>3.&nbsp;&nbsp;&nbsp;(a)　$$x^2-6xy+9y^2=(x-3y)^2$$　<strong>【1A】</strong>（or equivalent）</p>\n<p>(b)　$$x^2-6xy+9y^2+7x-21y=(x-3y)^2+7x-21y$$　<strong>【1M】</strong>（for using (a)）</p>\n<p>$$=(x-3y)^2+7(x-3y)$$</p>\n<p>$$=(x-3y)(x-3y+7)$$　<strong>【1A】</strong>（or equivalent）</p>\n<p><strong>（3 分）</strong></p>",
+   "file": "2012_P1_解答.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2012,
+   "paper": "Paper 1",
+   "type": "解答",
+   "qno": 4,
+   "title": "Q4　百分變化",
+   "section": "Paper 1　甲部(1)",
+   "tags": [
+    "百分變化"
+   ],
+   "text": "(a)　The daily wage of Ada\n\n$$=480(1+20\\%)$$　**【1M】**\n\n$$=\\$576$$　**【1A】**（u−1 for missing unit）\n\n(b)　The daily wage of Christine\n\n$$=\\frac{480}{1-20\\%}$$　**【1M】**\n\n$$=\\$600$$\n\nThus, Christine has the highest daily wage.　**【1A】**（f.t.）\n\n**（4 分）**",
+   "html": "<p>4.&nbsp;&nbsp;&nbsp;(a)　The daily wage of Ada</p>\n<p>$$=480(1+20\\%)$$　<strong>【1M】</strong></p>\n<p>$$=\\$576$$　<strong>【1A】</strong>（u−1 for missing unit）</p>\n<p>(b)　The daily wage of Christine</p>\n<p>$$=\\frac{480}{1-20\\%}$$　<strong>【1M】</strong></p>\n<p>$$=\\$600$$</p>\n<p>Thus, Christine has the highest daily wage.　<strong>【1A】</strong>（f.t.）</p>\n<p><strong>（4 分）</strong></p>",
+   "file": "2012_P1_解答.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2012,
+   "paper": "Paper 1",
+   "type": "解答",
+   "qno": 5,
+   "title": "Q5　一元方程應用",
+   "section": "Paper 1　甲部(1)",
+   "tags": [
+    "一元方程應用"
+   ],
+   "text": "Let $x$ and $y$ be the number of male and female security guards in each zone respectively.（pp−1 for undefined symbols）\n\n$$\\begin{cases} 6(x+y)=132 \\\\ y-x=4 \\end{cases}$$　**【1A+1A】**\n\nSo, we have $6(2x+4)=132$.　**【1M】**（for getting a linear equation in $x$ or $y$ only）\n\nSolving, we have $x=4$.\n\nThus, the total number of male security guards is 24.　**【1A】**\n\n**另法：** Let $x$ be the number of male security guards in each zone.（pp−1 for undefined symbols）\n\n$$6(x+x+4)=132$$　**【1A+1M+1A】**（1A for $y=x+4$，1M for $6(x+y)=132$）\n\nSolving, we have $x=4$.\n\nThus, the total number of male security guards is 24.　**【1A】**\n\n**（4 分）**",
+   "html": "<p>5.&nbsp;&nbsp;&nbsp;Let $x$ and $y$ be the number of male and female security guards in each zone respectively.（pp−1 for undefined symbols）</p>\n<p>$$\\begin{cases} 6(x+y)=132 \\ y-x=4 \\end{cases}$$　<strong>【1A+1A】</strong></p>\n<p>So, we have $6(2x+4)=132$.　<strong>【1M】</strong>（for getting a linear equation in $x$ or $y$ only）</p>\n<p>Solving, we have $x=4$.</p>\n<p>Thus, the total number of male security guards is 24.　<strong>【1A】</strong></p>\n<p><strong>另法：</strong> Let $x$ be the number of male security guards in each zone.（pp−1 for undefined symbols）</p>\n<p>$$6(x+x+4)=132$$　<strong>【1A+1M+1A】</strong>（1A for $y=x+4$，1M for $6(x+y)=132$）</p>\n<p>Solving, we have $x=4$.</p>\n<p>Thus, the total number of male security guards is 24.　<strong>【1A】</strong></p>\n<p><strong>（4 分）</strong></p>",
+   "file": "2012_P1_解答.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2012,
+   "paper": "Paper 1",
+   "type": "解答",
+   "qno": 6,
+   "title": "Q6　一元一次不等式",
+   "section": "Paper 1　甲部(1)",
+   "tags": [
+    "一元一次不等式"
+   ],
+   "text": "(a)　$$\\frac{4x+6}{7}>2(x-3)$$\n\n$$4x+6>14x-42$$\n\n$$-10x>-48$$　**【1M】**（for putting $x$ on one side）\n\n$$10x<48$$\n\n$$x<4.8$$　**【1A】**\n\nFor $2x-10\\le 0$, we have $x\\le 5$.\n\nTherefore, the solution of $\\dfrac{4x+6}{7}>2(x-3)$ and $2x-10\\le 0$ is $x<4.8$.　**【1A】**\n\n(b)　The positive integers satisfying both inequalities in (a) are 1, 2, 3 and 4.\n\nThus, the number of possible positive integers is 4.　**【1A】**（f.t.）\n\n**（4 分）**",
+   "html": "<p>6.&nbsp;&nbsp;&nbsp;(a)　$$\\frac{4x+6}{7}&gt;2(x-3)$$</p>\n<p>$$4x+6&gt;14x-42$$</p>\n<p>$$-10x&gt;-48$$　<strong>【1M】</strong>（for putting $x$ on one side）</p>\n<p>$$10x&lt;48$$</p>\n<p>$$x&lt;4.8$$　<strong>【1A】</strong></p>\n<p>For $2x-10\\le 0$, we have $x\\le 5$.</p>\n<p>Therefore, the solution of $\\dfrac{4x+6}{7}&gt;2(x-3)$ and $2x-10\\le 0$ is $x&lt;4.8$.　<strong>【1A】</strong></p>\n<p>(b)　The positive integers satisfying both inequalities in (a) are 1, 2, 3 and 4.</p>\n<p>Thus, the number of possible positive integers is 4.　<strong>【1A】</strong>（f.t.）</p>\n<p><strong>（4 分）</strong></p>",
+   "file": "2012_P1_解答.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2012,
+   "paper": "Paper 1",
+   "type": "解答",
+   "qno": 7,
+   "title": "Q7　框線圖",
+   "section": "Paper 1　甲部(1)",
+   "tags": [
+    "框線圖"
+   ],
+   "text": "(a)　$$18.1-a=6.8$$\n\n$$a=11.3$$　**【1A】**\n\n$$b-12.1=3.2$$\n\n$$b=15.3$$　**【1A】**\n\n(b)　Let $c$ s be the longest running time after training.\n\n$$c=18.1-2.9$$\n\n$$=15.2$$　**【1M】**\n\nSince $c<b=15.3$, all the students whose running time fall between 15.3 and 18.1 must have shorter running time after training.\n\nThus, at least 25% students have improved in their running time.　**【1A】**（f.t.）\n\n**（4 分）**",
+   "html": "<p>7.&nbsp;&nbsp;&nbsp;(a)　$$18.1-a=6.8$$</p>\n<p>$$a=11.3$$　<strong>【1A】</strong></p>\n<p>$$b-12.1=3.2$$</p>\n<p>$$b=15.3$$　<strong>【1A】</strong></p>\n<p>(b)　Let $c$ s be the longest running time after training.</p>\n<p>$$c=18.1-2.9$$</p>\n<p>$$=15.2$$　<strong>【1M】</strong></p>\n<p>Since $c&lt;b=15.3$, all the students whose running time fall between 15.3 and 18.1 must have shorter running time after training.</p>\n<p>Thus, at least 25% students have improved in their running time.　<strong>【1A】</strong>（f.t.）</p>\n<p><strong>（4 分）</strong></p>",
+   "file": "2012_P1_解答.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2012,
+   "paper": "Paper 1",
+   "type": "解答",
+   "qno": 8,
+   "title": "Q8　相似三角形",
+   "section": "Paper 1　甲部(1)",
+   "tags": [
+    "相似三角形"
+   ],
+   "text": "(a)　$$\\triangle AED\\sim\\triangle BEC$$　**【1A】**\n\n$$\\frac{AE}{BE}=\\frac{DE}{CE}$$　**【1M】**（for using side ratio）\n\n$$AE=\\frac{8\\cdot 15}{20}$$\n\n$$=6$$　**【1A】**\n\n(b)　$$AE^2+BE^2=6^2+8^2$$\n\n$$=100$$\n\n$$=AB^2$$　**【1M】**\n\nThus, $\\triangle AEB$ is a right-angled triangle.\n\n$$AC\\perp BD.$$　**【1A】**（f.t.）\n\n**（5 分）**",
+   "html": "<p>8.&nbsp;&nbsp;&nbsp;(a)　$$\\triangle AED\\sim\\triangle BEC$$　<strong>【1A】</strong></p>\n<p>$$\\frac{AE}{BE}=\\frac{DE}{CE}$$　<strong>【1M】</strong>（for using side ratio）</p>\n<p>$$AE=\\frac{8\\cdot 15}{20}$$</p>\n<p>$$=6$$　<strong>【1A】</strong></p>\n<p>(b)　$$AE^2+BE^2=6^2+8^2$$</p>\n<p>$$=100$$</p>\n<p>$$=AB^2$$　<strong>【1M】</strong></p>\n<p>Thus, $\\triangle AEB$ is a right-angled triangle.</p>\n<p>$$AC\\perp BD.$$　<strong>【1A】</strong>（f.t.）</p>\n<p><strong>（5 分）</strong></p>",
+   "file": "2012_P1_解答.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2012,
+   "paper": "Paper 1",
+   "type": "解答",
+   "qno": 9,
+   "title": "Q9　直立角柱體求積",
+   "section": "Paper 1　甲部(1)",
+   "tags": [
+    "直立角柱體求積"
+   ],
+   "text": "(a)　$$\\frac{(BC+AD)\\cdot AB}{2}\\cdot DE=1020$$　**【1M】**\n\n$$\\frac{(6+AD)\\cdot 12}{2}\\cdot 10=1020$$\n\n$$AD=11\\text{ cm}$$　**【1A】**（u−1 for missing unit）\n\n(b)　$$CD=\\sqrt{AB^2+(AD-BC)^2}$$　**【1M】**（for using Pythagoras' theorem）\n\n$$=\\sqrt{12^2+(11-6)^2}$$\n\n$$=\\sqrt{169}$$\n\n$$=13\\text{ cm}$$　**【1A】**\n\nThe total surface area of prism $ABCDEFGH$\n\n$$=2\\times\\text{Area of }ABCD+DE\\times(AB+BC+CD+AD)$$\n\n$$=2\\cdot\\frac{(6+11)\\cdot 12}{2}+10\\cdot(12+6+13+11)$$\n\n$$=624\\text{ cm}^2$$　**【1A】**（u−1 for missing unit）\n\n**（5 分）**",
+   "html": "<p>9.&nbsp;&nbsp;&nbsp;(a)　$$\\frac{(BC+AD)\\cdot AB}{2}\\cdot DE=1020$$　<strong>【1M】</strong></p>\n<p>$$\\frac{(6+AD)\\cdot 12}{2}\\cdot 10=1020$$</p>\n<p>$$AD=11\\text{ cm}$$　<strong>【1A】</strong>（u−1 for missing unit）</p>\n<p>(b)　$$CD=\\sqrt{AB^2+(AD-BC)^2}$$　<strong>【1M】</strong>（for using Pythagoras' theorem）</p>\n<p>$$=\\sqrt{12^2+(11-6)^2}$$</p>\n<p>$$=\\sqrt{169}$$</p>\n<p>$$=13\\text{ cm}$$　<strong>【1A】</strong></p>\n<p>The total surface area of prism $ABCDEFGH$</p>\n<p>$$=2\\times\\text{Area of }ABCD+DE\\times(AB+BC+CD+AD)$$</p>\n<p>$$=2\\cdot\\frac{(6+11)\\cdot 12}{2}+10\\cdot(12+6+13+11)$$</p>\n<p>$$=624\\text{ cm}^2$$　<strong>【1A】</strong>（u−1 for missing unit）</p>\n<p><strong>（5 分）</strong></p>",
+   "file": "2012_P1_解答.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2012,
+   "paper": "Paper 1",
+   "type": "解答",
+   "qno": 10,
+   "title": "Q10　幹葉圖",
+   "section": "Paper 1　甲部(2)",
+   "tags": [
+    "幹葉圖"
+   ],
+   "text": "(a)　$$\\text{mean}=18$$　**【1A】**\n\n$$\\text{median}=16$$　**【1A】**\n\n(b)(i)　The mean number of hours of the 24 questionnaires\n\n$$=\\frac{18\\times 20+18\\times 4}{24}$$\n\n$$=18$$　**【1A】**\n\n(b)(ii)　Let $a$ and $b$ be the number of hours of the other 2 questionnaires of the last 4 questionnaires.（pp−1 for undefined symbol）\n\n$$\\frac{a+b+19+20}{4}=18$$\n\n$$a+b=33$$　**【1M】**\n\nIf the median number of hours of the 24 questionnaires is the same as the median in (a), both $a$ and $b$ must be less than or equal to 16, i.e. $a+b\\le 32$.　**【1M】**\n\nThus, it is impossible the new median to be the same as the median in (a).　**【1A】**（f.t.）\n\n**（4 分）**",
+   "html": "<p>10.&nbsp;&nbsp;&nbsp;(a)　$$\\text{mean}=18$$　<strong>【1A】</strong></p>\n<p>$$\\text{median}=16$$　<strong>【1A】</strong></p>\n<p>(b)(i)　The mean number of hours of the 24 questionnaires</p>\n<p>$$=\\frac{18\\times 20+18\\times 4}{24}$$</p>\n<p>$$=18$$　<strong>【1A】</strong></p>\n<p>(b)(ii)　Let $a$ and $b$ be the number of hours of the other 2 questionnaires of the last 4 questionnaires.（pp−1 for undefined symbol）</p>\n<p>$$\\frac{a+b+19+20}{4}=18$$</p>\n<p>$$a+b=33$$　<strong>【1M】</strong></p>\n<p>If the median number of hours of the 24 questionnaires is the same as the median in (a), both $a$ and $b$ must be less than or equal to 16, i.e. $a+b\\le 32$.　<strong>【1M】</strong></p>\n<p>Thus, it is impossible the new median to be the same as the median in (a).　<strong>【1A】</strong>（f.t.）</p>\n<p><strong>（4 分）</strong></p>",
+   "file": "2012_P1_解答.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2012,
+   "paper": "Paper 1",
+   "type": "解答",
+   "qno": 11,
+   "title": "Q11　部分正變",
+   "section": "Paper 1　甲部(2)",
+   "tags": [
+    "部分正變"
+   ],
+   "text": "(a)　Let $C=a+bA$, where $a$ and $b$ are non-zero constants.　**【1A】**\n\nSo, we have $a+2b=62$ and $a+6b=74$.　**【1M】**（for either substitution）\n\nSolving, we have $a=56$ and $b=3$.　**【1A】**（for both correct）\n\nThe required cost\n\n$$=56+3(13)$$\n\n$$=\\$95$$　**【1A】**（u−1 for missing unit）\n\n(b)　The surface area of the larger can\n\n$$=13\\times(\\sqrt[3]{8})^2$$　**【1M】**（for using similarity）\n\n$$=52\\text{ m}^2$$\n\nThe required cost\n\n$$=56+3(52)$$\n\n$$=\\$212$$　**【1A】**（u−1 for missing unit）\n\n**（6 分）**",
+   "html": "<p>11.&nbsp;&nbsp;&nbsp;(a)　Let $C=a+bA$, where $a$ and $b$ are non-zero constants.　<strong>【1A】</strong></p>\n<p>So, we have $a+2b=62$ and $a+6b=74$.　<strong>【1M】</strong>（for either substitution）</p>\n<p>Solving, we have $a=56$ and $b=3$.　<strong>【1A】</strong>（for both correct）</p>\n<p>The required cost</p>\n<p>$$=56+3(13)$$</p>\n<p>$$=\\$95$$　<strong>【1A】</strong>（u−1 for missing unit）</p>\n<p>(b)　The surface area of the larger can</p>\n<p>$$=13\\times(\\sqrt[3]{8})^2$$　<strong>【1M】</strong>（for using similarity）</p>\n<p>$$=52\\text{ m}^2$$</p>\n<p>The required cost</p>\n<p>$$=56+3(52)$$</p>\n<p>$$=\\$212$$　<strong>【1A】</strong>（u−1 for missing unit）</p>\n<p><strong>（6 分）</strong></p>",
+   "file": "2012_P1_解答.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2012,
+   "paper": "Paper 1",
+   "type": "解答",
+   "qno": 12,
+   "title": "Q12　圓錐體與半球體",
+   "section": "Paper 1　甲部(2)",
+   "tags": [
+    "圓錐體與半球體"
+   ],
+   "text": "(a)　The volume of the cone\n\n$$=\\frac{1}{3}\\pi r^2h$$　**【1M】**（for $V=\\dfrac{1}{3}\\pi r^2h$）\n\n$$=\\frac{1}{3}\\pi\\cdot 0.48^2\\cdot 0.96$$\n\n$$=0.073728\\pi\\text{ m}^3$$　**【1A】**（u−1 for missing unit）\n\n> **圖（待重繪）**：原卷此處附示意圖，顯示底半徑 48 cm、高 96 cm 的直立圓錐體及半徑 60 cm 的半球形容器（牛奶液面），圖上標示 48 cm／96 cm／36 cm／60 cm。\n\n(b)(i)　The volume of the milk\n\n$$=\\frac{1}{2}\\cdot\\frac{4}{3}\\pi r^3$$　**【1M】**（for $V=\\dfrac{4}{3}\\pi r^3$）\n\n$$=\\frac{2}{3}\\pi\\cdot 0.6^3$$\n\n$$=0.144\\pi\\text{ m}^3$$　**【1A】**（u−1 for missing unit）\n\n(b)(ii)　The height of the portion of the cone in the milk\n\n$$=\\sqrt{0.6^2-0.48^2}$$　**【1M】**（for using Pythagoras' theorem）\n\n$$=0.36\\text{ m}$$\n\nThe volume of the portion of the cone in the milk\n\n$$=(0.073728\\pi)\\left(1-\\left(\\frac{0.96-0.36}{0.96}\\right)^2\\right)$$　**【1M】**（for using similarity）\n\n$$=0.044928\\pi\\text{ m}^3$$\n\nThe volume of the remaining milk in the container\n\n$$=0.144\\pi-0.044928\\pi$$\n\n$$=0.311\\text{ m}^3$$\n\nThus, the volume of the remaining milk in the container is larger than $0.3\\text{ m}^3$.　**【1A】**（f.t.）\n\n**（7 分）**",
+   "html": "<p>12.&nbsp;&nbsp;&nbsp;(a)　The volume of the cone</p>\n<p>$$=\\frac{1}{3}\\pi r^2h$$　<strong>【1M】</strong>（for $V=\\dfrac{1}{3}\\pi r^2h$）</p>\n<p>$$=\\frac{1}{3}\\pi\\cdot 0.48^2\\cdot 0.96$$</p>\n<p>$$=0.073728\\pi\\text{ m}^3$$　<strong>【1A】</strong>（u−1 for missing unit）</p>\n<blockquote>\n<p><strong>圖（待重繪）</strong>：原卷此處附示意圖，顯示底半徑 48 cm、高 96 cm 的直立圓錐體及半徑 60 cm 的半球形容器（牛奶液面），圖上標示 48 cm／96 cm／36 cm／60 cm。</p>\n</blockquote>\n<p>(b)(i)　The volume of the milk</p>\n<p>$$=\\frac{1}{2}\\cdot\\frac{4}{3}\\pi r^3$$　<strong>【1M】</strong>（for $V=\\dfrac{4}{3}\\pi r^3$）</p>\n<p>$$=\\frac{2}{3}\\pi\\cdot 0.6^3$$</p>\n<p>$$=0.144\\pi\\text{ m}^3$$　<strong>【1A】</strong>（u−1 for missing unit）</p>\n<p>(b)(ii)　The height of the portion of the cone in the milk</p>\n<p>$$=\\sqrt{0.6^2-0.48^2}$$　<strong>【1M】</strong>（for using Pythagoras' theorem）</p>\n<p>$$=0.36\\text{ m}$$</p>\n<p>The volume of the portion of the cone in the milk</p>\n<p>$$=(0.073728\\pi)\\left(1-\\left(\\frac{0.96-0.36}{0.96}\\right)^2\\right)$$　<strong>【1M】</strong>（for using similarity）</p>\n<p>$$=0.044928\\pi\\text{ m}^3$$</p>\n<p>The volume of the remaining milk in the container</p>\n<p>$$=0.144\\pi-0.044928\\pi$$</p>\n<p>$$=0.311\\text{ m}^3$$</p>\n<p>Thus, the volume of the remaining milk in the container is larger than $0.3\\text{ m}^3$.　<strong>【1A】</strong>（f.t.）</p>\n<p><strong>（7 分）</strong></p>",
+   "file": "2012_P1_解答.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2012,
+   "paper": "Paper 1",
+   "type": "解答",
+   "qno": 13,
+   "title": "Q13　因式定理與二次函數",
+   "section": "Paper 1　甲部(2)",
+   "tags": [
+    "因式定理與二次函數"
+   ],
+   "text": "(a)　Since $x-2$ is a factor of $kx^3-21x^2+24x-4$, we have\n\n$$k(2^3)-21(2^2)+24(2)-4=0$$　**【1M】**\n\n$$8k=40$$\n\n$$k=5$$　**【1A】**\n\n(b)(i)　The coordinates of $R$\n\n$$=(0,\\ 15m^2-63m+72)$$　**【1M】**\n\nThe area of rectangle $OPQR$\n\n$$=(m)(15m^2-63m+72)$$\n\n$$=15m^3-63m^2+72m$$　**【1A】**\n\n(b)(ii)　If the area of rectangle $OPQR$ is 12, $m$ satisfy\n\n$$15m^3-63m^2+72m=12$$\n\n$$5m^3-21m^2+24m-4=0$$\n\n$$(m-2)(5m^2-11m+2)=0$$　**【1M+1A】**（1M for $(m-2)(am^2+bm+c)$）\n\n$$(m-2)(5m-1)(m-2)=0$$\n\n$$m=\\frac{1}{5}\\text{ or } m=2\\text{ (repeated)}$$\n\nThus, there are only 2 possible locations of $Q$ such that the area of rectangle $OPQR$ is 12.　**【1A】**（f.t.）\n\n**（7 分）**",
+   "html": "<p>13.&nbsp;&nbsp;&nbsp;(a)　Since $x-2$ is a factor of $kx^3-21x^2+24x-4$, we have</p>\n<p>$$k(2^3)-21(2^2)+24(2)-4=0$$　<strong>【1M】</strong></p>\n<p>$$8k=40$$</p>\n<p>$$k=5$$　<strong>【1A】</strong></p>\n<p>(b)(i)　The coordinates of $R$</p>\n<p>$$=(0,\\ 15m^2-63m+72)$$　<strong>【1M】</strong></p>\n<p>The area of rectangle $OPQR$</p>\n<p>$$=(m)(15m^2-63m+72)$$</p>\n<p>$$=15m^3-63m^2+72m$$　<strong>【1A】</strong></p>\n<p>(b)(ii)　If the area of rectangle $OPQR$ is 12, $m$ satisfy</p>\n<p>$$15m^3-63m^2+72m=12$$</p>\n<p>$$5m^3-21m^2+24m-4=0$$</p>\n<p>$$(m-2)(5m^2-11m+2)=0$$　<strong>【1M+1A】</strong>（1M for $(m-2)(am^2+bm+c)$）</p>\n<p>$$(m-2)(5m-1)(m-2)=0$$</p>\n<p>$$m=\\frac{1}{5}\\text{ or } m=2\\text{ (repeated)}$$</p>\n<p>Thus, there are only 2 possible locations of $Q$ such that the area of rectangle $OPQR$ is 12.　<strong>【1A】</strong>（f.t.）</p>\n<p><strong>（7 分）</strong></p>",
+   "file": "2012_P1_解答.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2012,
+   "paper": "Paper 1",
+   "type": "解答",
+   "qno": 14,
+   "title": "Q14　軌跡與圓",
+   "section": "Paper 1　甲部(2)",
+   "tags": [
+    "軌跡與圓"
+   ],
+   "text": "(a)(i)　$\\Gamma$ and $L$ are parallel with $\\Gamma$ lies below $L$ by a vertical distance of 1.　**【1A+1A】**（1A for parallel；1A for vertical distance）\n\n(a)(ii)　The equation of $L$ is\n\n$$\\frac{x}{3}+\\frac{y}{-1}=1$$　**【1M】**（for intercept form）\n\n$$y=\\frac{x}{3}-1$$\n\nThus, the equation of $\\Gamma$ is\n\n$$y=\\frac{x}{3}-1-1$$　**【1M】**\n\n$$x-3y-6=0$$　**【1A】**\n\n(b)(i)　The coordinates of $Q$\n\n$$=(6,0)$$\n\nSubstituting the coordinates of $Q$ into the equation of $\\Gamma$, we have\n\n$$\\text{L.S.}=6-3(0)-6$$\n\n$$=0$$\n\n$$=\\text{R.S.}$$\n\nThus, $Q$ passes through $\\Gamma$.　**【1A】**\n\n(b)(ii)　Since $Q$ passes through $\\Gamma$, $HQ=KQ=$ radius of $C$.　**【1M】**\n\nLet $F$ and $G$ be the feet of the perpendiculars from $A$ and $B$ to $\\Gamma$ respectively.\n\n$$AF=BG=\\text{perpendicular distance from }L\\text{ to }\\Gamma.$$　**【1M】**\n\nHence, we have\n\n$$\\text{Area of }\\triangle AQH:\\text{Area of }\\triangle BQK$$\n\n$$=\\frac{1}{2}HQ\\cdot AF:\\frac{1}{2}KQ\\cdot BG$$\n\n$$=1:1$$　**【1A】**\n\n**（9 分）**",
+   "html": "<p>14.&nbsp;&nbsp;&nbsp;(a)(i)　$\\Gamma$ and $L$ are parallel with $\\Gamma$ lies below $L$ by a vertical distance of 1.　<strong>【1A+1A】</strong>（1A for parallel；1A for vertical distance）</p>\n<p>(a)(ii)　The equation of $L$ is</p>\n<p>$$\\frac{x}{3}+\\frac{y}{-1}=1$$　<strong>【1M】</strong>（for intercept form）</p>\n<p>$$y=\\frac{x}{3}-1$$</p>\n<p>Thus, the equation of $\\Gamma$ is</p>\n<p>$$y=\\frac{x}{3}-1-1$$　<strong>【1M】</strong></p>\n<p>$$x-3y-6=0$$　<strong>【1A】</strong></p>\n<p>(b)(i)　The coordinates of $Q$</p>\n<p>$$=(6,0)$$</p>\n<p>Substituting the coordinates of $Q$ into the equation of $\\Gamma$, we have</p>\n<p>$$\\text{L.S.}=6-3(0)-6$$</p>\n<p>$$=0$$</p>\n<p>$$=\\text{R.S.}$$</p>\n<p>Thus, $Q$ passes through $\\Gamma$.　<strong>【1A】</strong></p>\n<p>(b)(ii)　Since $Q$ passes through $\\Gamma$, $HQ=KQ=$ radius of $C$.　<strong>【1M】</strong></p>\n<p>Let $F$ and $G$ be the feet of the perpendiculars from $A$ and $B$ to $\\Gamma$ respectively.</p>\n<p>$$AF=BG=\\text{perpendicular distance from }L\\text{ to }\\Gamma.$$　<strong>【1M】</strong></p>\n<p>Hence, we have</p>\n<p>$$\\text{Area of }\\triangle AQH:\\text{Area of }\\triangle BQK$$</p>\n<p>$$=\\frac{1}{2}HQ\\cdot AF:\\frac{1}{2}KQ\\cdot BG$$</p>\n<p>$$=1:1$$　<strong>【1A】</strong></p>\n<p><strong>（9 分）</strong></p>",
+   "file": "2012_P1_解答.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2012,
+   "paper": "Paper 1",
+   "type": "解答",
+   "qno": 15,
+   "title": "Q15　標準差與標準分",
+   "section": "Paper 1　乙部",
+   "tags": [
+    "標準差與標準分"
+   ],
+   "text": "(a)　The standard deviation after the adjustment\n\n$$=10\\times(1+20\\%)$$\n\n$$=12$$　**【1A】**\n\n(b)　Let $\\mu$ be the mean score before the adjustment.\n\nLet $x_i$ be the test score of a student before the adjustment.\n\nThe standard score of that student after the adjustment\n\n$$=\\frac{(1.2x_i+5)-(1.2\\mu+5)}{12}$$　**【1A】**（for mean score after adjustment）\n\n$$=\\frac{1.2(x_i-\\mu)}{12}$$\n\n$$=\\frac{x_i-\\mu}{10}$$\n\nThus, the standard score of each student remains unchanged.　**【1A】**（f.t.）\n\n**（3 分）**",
+   "html": "<p>15.&nbsp;&nbsp;&nbsp;(a)　The standard deviation after the adjustment</p>\n<p>$$=10\\times(1+20\\%)$$</p>\n<p>$$=12$$　<strong>【1A】</strong></p>\n<p>(b)　Let $\\mu$ be the mean score before the adjustment.</p>\n<p>Let $x_i$ be the test score of a student before the adjustment.</p>\n<p>The standard score of that student after the adjustment</p>\n<p>$$=\\frac{(1.2x_i+5)-(1.2\\mu+5)}{12}$$　<strong>【1A】</strong>（for mean score after adjustment）</p>\n<p>$$=\\frac{1.2(x_i-\\mu)}{12}$$</p>\n<p>$$=\\frac{x_i-\\mu}{10}$$</p>\n<p>Thus, the standard score of each student remains unchanged.　<strong>【1A】</strong>（f.t.）</p>\n<p><strong>（3 分）</strong></p>",
+   "file": "2012_P1_解答.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2012,
+   "paper": "Paper 1",
+   "type": "解答",
+   "qno": 16,
+   "title": "Q16　概率",
+   "section": "Paper 1　乙部",
+   "tags": [
+    "概率"
+   ],
+   "text": "(a)　The required probability\n\n$$=\\frac{C^{8}_{4}(C^{2}_{1})^4}{C^{16}_{4}}$$　**【1M】**（for numerator or denominator）\n\n$$=\\frac{8}{13}$$　**【1A】**（r.t. 0.615）\n\n**另法：**\n\n$$=\\left(\\frac{14}{15}\\right)\\left(\\frac{12}{14}\\right)\\left(\\frac{10}{13}\\right)$$　**【1M】**（for $\\left(\\dfrac{n-2}{n-1}\\right)\\left(\\dfrac{n-4}{n-2}\\right)\\left(\\dfrac{n-6}{n-3}\\right)$）\n\n$$=\\frac{8}{13}$$　**【1A】**（r.t. 0.615）\n\n(b)　The required probability\n\n$$=1-\\frac{8}{13}$$　**【1M】**（for $1-$ (a)）\n\n$$=\\frac{5}{13}$$　**【1A】**（r.t. 0.385）\n\n**另法：**\n\n$$=\\frac{C^{8}_{2}+C^{8}_{3}(C^{2}_{1})^2}{C^{16}_{4}}$$　**【1M】**（for considering 2 cases）\n\n$$=\\frac{5}{13}$$　**【1A】**（r.t. 0.385）\n\n**另法：**\n\n$$=\\frac{1}{15}+\\left(\\frac{14}{15}\\right)\\left(\\frac{2}{14}\\right)+\\left(\\frac{14}{15}\\right)\\left(\\frac{12}{14}\\right)\\left(\\frac{3}{13}\\right)$$　**【1M】**（for considering 3 cases）\n\n$$=\\frac{5}{13}$$　**【1A】**（r.t. 0.385）\n\n**（4 分）**",
+   "html": "<p>16.&nbsp;&nbsp;&nbsp;(a)　The required probability</p>\n<p>$$=\\frac{C^{8}<em>{4}(C^{2}</em>{1})^4}{C^{16}_{4}}$$　<strong>【1M】</strong>（for numerator or denominator）</p>\n<p>$$=\\frac{8}{13}$$　<strong>【1A】</strong>（r.t. 0.615）</p>\n<p><strong>另法：</strong></p>\n<p>$$=\\left(\\frac{14}{15}\\right)\\left(\\frac{12}{14}\\right)\\left(\\frac{10}{13}\\right)$$　<strong>【1M】</strong>（for $\\left(\\dfrac{n-2}{n-1}\\right)\\left(\\dfrac{n-4}{n-2}\\right)\\left(\\dfrac{n-6}{n-3}\\right)$）</p>\n<p>$$=\\frac{8}{13}$$　<strong>【1A】</strong>（r.t. 0.615）</p>\n<p>(b)　The required probability</p>\n<p>$$=1-\\frac{8}{13}$$　<strong>【1M】</strong>（for $1-$ (a)）</p>\n<p>$$=\\frac{5}{13}$$　<strong>【1A】</strong>（r.t. 0.385）</p>\n<p><strong>另法：</strong></p>\n<p>$$=\\frac{C^{8}<em>{2}+C^{8}</em>{3}(C^{2}<em>{1})^2}{C^{16}</em>{4}}$$　<strong>【1M】</strong>（for considering 2 cases）</p>\n<p>$$=\\frac{5}{13}$$　<strong>【1A】</strong>（r.t. 0.385）</p>\n<p><strong>另法：</strong></p>\n<p>$$=\\frac{1}{15}+\\left(\\frac{14}{15}\\right)\\left(\\frac{2}{14}\\right)+\\left(\\frac{14}{15}\\right)\\left(\\frac{12}{14}\\right)\\left(\\frac{3}{13}\\right)$$　<strong>【1M】</strong>（for considering 3 cases）</p>\n<p>$$=\\frac{5}{13}$$　<strong>【1A】</strong>（r.t. 0.385）</p>\n<p><strong>（4 分）</strong></p>",
+   "file": "2012_P1_解答.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2012,
+   "paper": "Paper 1",
+   "type": "解答",
+   "qno": 17,
+   "title": "Q17　圓的方程",
+   "section": "Paper 1　乙部",
+   "tags": [
+    "圓的方程"
+   ],
+   "text": "(a)　Since $C$ touches the $x$-axis, the radius of $C$ is 10.　**【1A】**（can be absorbed）\n\nThe equation of $C$ is\n\n$$(x-6)^2+(y-10)^2=10^2$$　**【1A】**\n\n(b)　The equation of $L$ is $y=-x+k$.　**【1M】**\n\nSubstituting $y=-x+k$ into the equation of $C$, we have\n\n$$(x-6)^2+(-x+k-10)^2=10^2$$\n\n$$2x^2-2(k-4)x+(k-10)^2-64=0$$\n\nLet $(x_0,y_0)$ be the mid-point of $AB$.\n\n$$x_0=\\frac{k-4}{2}$$\n\n$$=\\frac{k}{2}-2$$　**【1M+1A】**（1M for using sum of roots）\n\n$$y_0=-\\left(\\frac{k}{2}-2\\right)+k=\\frac{k}{2}+2$$　**【1A】**\n\nThus, the mid-point of $AB=\\left(\\dfrac{k}{2}-2,\\ \\dfrac{k}{2}+2\\right)$.\n\n**另法：**\n\nThe equation of $L$ is $y=-x+k$.　**【1M】**\n\nThe line passing through $(6,10)$ and perpendicular to $L$ has equation\n\n$$\\frac{y-10}{x-6}=1$$　**【1A】**\n\n$$y=x+4$$\n\nSubstituting $y=-x+k$ into the equation, we have\n\n$$-x+k=x+4$$　**【1M】**\n\n$$x=\\frac{k}{2}-2,\\quad y=\\frac{k}{2}+2$$　**【1A+1A】**\n\n**（7 分）**",
+   "html": "<p>17.&nbsp;&nbsp;&nbsp;(a)　Since $C$ touches the $x$-axis, the radius of $C$ is 10.　<strong>【1A】</strong>（can be absorbed）</p>\n<p>The equation of $C$ is</p>\n<p>$$(x-6)^2+(y-10)^2=10^2$$　<strong>【1A】</strong></p>\n<p>(b)　The equation of $L$ is $y=-x+k$.　<strong>【1M】</strong></p>\n<p>Substituting $y=-x+k$ into the equation of $C$, we have</p>\n<p>$$(x-6)^2+(-x+k-10)^2=10^2$$</p>\n<p>$$2x^2-2(k-4)x+(k-10)^2-64=0$$</p>\n<p>Let $(x_0,y_0)$ be the mid-point of $AB$.</p>\n<p>$$x_0=\\frac{k-4}{2}$$</p>\n<p>$$=\\frac{k}{2}-2$$　<strong>【1M+1A】</strong>（1M for using sum of roots）</p>\n<p>$$y_0=-\\left(\\frac{k}{2}-2\\right)+k=\\frac{k}{2}+2$$　<strong>【1A】</strong></p>\n<p>Thus, the mid-point of $AB=\\left(\\dfrac{k}{2}-2,\\ \\dfrac{k}{2}+2\\right)$.</p>\n<p><strong>另法：</strong></p>\n<p>The equation of $L$ is $y=-x+k$.　<strong>【1M】</strong></p>\n<p>The line passing through $(6,10)$ and perpendicular to $L$ has equation</p>\n<p>$$\\frac{y-10}{x-6}=1$$　<strong>【1A】</strong></p>\n<p>$$y=x+4$$</p>\n<p>Substituting $y=-x+k$ into the equation, we have</p>\n<p>$$-x+k=x+4$$　<strong>【1M】</strong></p>\n<p>$$x=\\frac{k}{2}-2,\\quad y=\\frac{k}{2}+2$$　<strong>【1A+1A】</strong></p>\n<p><strong>（7 分）</strong></p>",
+   "file": "2012_P1_解答.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2012,
+   "paper": "Paper 1",
+   "type": "解答",
+   "qno": 18,
+   "title": "Q18　立體幾何",
+   "section": "Paper 1　乙部",
+   "tags": [
+    "立體幾何"
+   ],
+   "text": "(a)　By sine formula,\n\n$$\\frac{PA}{\\sin\\angle PBA}=\\frac{AB}{\\sin\\angle APB}$$　**【1M】**\n\n$$\\frac{PA}{\\sin 60^\\circ}=\\frac{20}{\\sin(180^\\circ-72^\\circ-60^\\circ)}$$\n\n$$PA\\approx 23.30704256$$\n\n$$PA\\approx 23.3$$　**【1A】**（r.t.）\n\n> **圖（待重繪）**：原卷此處附示意圖，顯示以正方形為底的直立角錐體 $VABCD$（$\\angle VAB=72^\\circ$，底邊 20 cm），$P$、$Q$ 分別為 $VA$、$VD$ 上的點使得 $PQ\\parallel BC$，並切去角錐體 $VPBCQ$；圖上標示點 $A$–$G$、$P$、$Q$、$V$。\n\n(b)(i)　Let $E,F,G$ be the feet of the perpendicular of $P$ to the plane $ABCD$, the line $AB$ and the line $BC$ respectively.\n\n$$\\frac{AF}{PA}=\\cos\\angle PAB$$\n\n$$AF\\approx 7.20227224$$\n\n$$\\frac{AF}{AE}=\\cos\\angle EAF$$\n\n$$AE\\approx\\frac{7.20227224}{\\cos 45^\\circ}$$\n\n$$\\approx 10.18555108$$\n\n$$PE=\\sqrt{PA^2-AE^2}$$　**【1M】**\n\n$$\\approx\\sqrt{23.30704256^2-10.18555108^2}$$\n\n$$\\approx 20.96360613$$\n\n$$EG=FB$$　**【1M】**\n\n$$=AB-AF$$\n\n$$\\approx 12.79772776$$\n\n$$\\tan\\alpha=\\tan\\angle PGE$$　**【1M】**（for identifying the angle）\n\n$$=\\frac{PE}{EG}$$\n\n$$\\approx 1.638072518$$\n\n$$\\alpha\\approx 58.59703733^\\circ$$\n\n$$\\alpha\\approx 58.6^\\circ$$　**【1A】**\n\n(b)(ii)　$$\\tan\\beta=\\tan\\angle PBE=\\frac{PE}{EB}$$　**【1M】**（for identifying the angle）\n\n$$EB>EG$$\n\n$$\\frac{PE}{EB}<\\frac{PE}{EG}$$\n\n$$\\tan\\beta<\\tan\\alpha$$\n\n$$\\beta<\\alpha$$　**【1A】**（f.t.）\n\n**（8 分）**",
+   "html": "<p>18.&nbsp;&nbsp;&nbsp;(a)　By sine formula,</p>\n<p>$$\\frac{PA}{\\sin\\angle PBA}=\\frac{AB}{\\sin\\angle APB}$$　<strong>【1M】</strong></p>\n<p>$$\\frac{PA}{\\sin 60^\\circ}=\\frac{20}{\\sin(180^\\circ-72^\\circ-60^\\circ)}$$</p>\n<p>$$PA\\approx 23.30704256$$</p>\n<p>$$PA\\approx 23.3$$　<strong>【1A】</strong>（r.t.）</p>\n<blockquote>\n<p><strong>圖（待重繪）</strong>：原卷此處附示意圖，顯示以正方形為底的直立角錐體 $VABCD$（$\\angle VAB=72^\\circ$，底邊 20 cm），$P$、$Q$ 分別為 $VA$、$VD$ 上的點使得 $PQ\\parallel BC$，並切去角錐體 $VPBCQ$；圖上標示點 $A$–$G$、$P$、$Q$、$V$。</p>\n</blockquote>\n<p>(b)(i)　Let $E,F,G$ be the feet of the perpendicular of $P$ to the plane $ABCD$, the line $AB$ and the line $BC$ respectively.</p>\n<p>$$\\frac{AF}{PA}=\\cos\\angle PAB$$</p>\n<p>$$AF\\approx 7.20227224$$</p>\n<p>$$\\frac{AF}{AE}=\\cos\\angle EAF$$</p>\n<p>$$AE\\approx\\frac{7.20227224}{\\cos 45^\\circ}$$</p>\n<p>$$\\approx 10.18555108$$</p>\n<p>$$PE=\\sqrt{PA^2-AE^2}$$　<strong>【1M】</strong></p>\n<p>$$\\approx\\sqrt{23.30704256^2-10.18555108^2}$$</p>\n<p>$$\\approx 20.96360613$$</p>\n<p>$$EG=FB$$　<strong>【1M】</strong></p>\n<p>$$=AB-AF$$</p>\n<p>$$\\approx 12.79772776$$</p>\n<p>$$\\tan\\alpha=\\tan\\angle PGE$$　<strong>【1M】</strong>（for identifying the angle）</p>\n<p>$$=\\frac{PE}{EG}$$</p>\n<p>$$\\approx 1.638072518$$</p>\n<p>$$\\alpha\\approx 58.59703733^\\circ$$</p>\n<p>$$\\alpha\\approx 58.6^\\circ$$　<strong>【1A】</strong></p>\n<p>(b)(ii)　$$\\tan\\beta=\\tan\\angle PBE=\\frac{PE}{EB}$$　<strong>【1M】</strong>（for identifying the angle）</p>\n<p>$$EB&gt;EG$$</p>\n<p>$$\\frac{PE}{EB}&lt;\\frac{PE}{EG}$$</p>\n<p>$$\\tan\\beta&lt;\\tan\\alpha$$</p>\n<p>$$\\beta&lt;\\alpha$$　<strong>【1A】</strong>（f.t.）</p>\n<p><strong>（8 分）</strong></p>",
+   "file": "2012_P1_解答.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2012,
+   "paper": "Paper 1",
+   "type": "解答",
+   "qno": 19,
+   "title": "Q19　等比數列",
+   "section": "Paper 1　乙部",
+   "tags": [
+    "等比數列"
+   ],
+   "text": "(a)(i)　$$\\begin{cases} A(1)=ab^2=254100 \\\\ A(2)=ab^{2(2)}=307461 \\end{cases}$$\n\nSolving, we have $b=1.1$ and $a=210000$.　**【1A+1A】**\n\n$$A(4)=ab^{2(4)}$$\n\n$$=(210000)(1.21^4)$$\n\n$$=450,153.6501$$\n\nThus, the weight of the cargos handled in the 4-th year is 450,153.6501 tonnes.　**【1A】**（r.t. 450,000）\n\n(a)(ii)　The total weight of the cargos handled in $n$ years\n\n$$=\\sum_{i=1}^{n}A(i)$$　**【1M】**（for summing up $A(i)$）\n\n$$=ab^2\\frac{b^{2n}-1}{b^2-1}$$　**【1M】**（for $\\displaystyle\\sum_{i=1}^{n}kr^i=\\frac{kr(r^n-1)}{r-1}$）\n\n$$=\\frac{(210,000)(1.21)(1.21^n-1)}{1.21-1}$$\n\n$$=1,210,000(1.21^n-1)\\text{ tonnes}$$　**【1A】**\n\n(b)(i)　$$\\frac{A(n)}{B(m)}=\\frac{ab^{2n}}{2ab^m}$$　**【1M】**（for considering the ratio $\\dfrac{A(n)}{B(m)}$）\n\n$$=\\frac{b^{2n}}{2b^{n-4}}$$　**【1A】**（for changing $m$ to $n-4$）\n\n$$=\\frac{1}{2}\\,1.1^{n+4}$$\n\n$$\\le 1$$\n\nfor $n\\le\\log_{1.1}2-4\\approx 3.27$\n\nThus, for the first 3 years, the weight of the cargos handled by $Y$ is larger than that by $X$.　**【1A】**（f.t.）\n\n(b)(ii)　The total weight of the cargos handled in $n$ years by $X$ and $Y$\n\n$$=\\sum_{i=1}^{n}ab^{2i}+\\sum_{i=1}^{n-4}2ab^i$$　**【1A】**（for correct upper limits）\n\n$$=1,210,000(1.21^n-1)+\\frac{2(210,000)(1.1)(1.1^{n-4}-1)}{1.1-1}$$\n\n$$=1,210,000(1.1^{2n})+\\frac{4,200,000}{1.331}(1.1^n)-5,830,000$$\n\nLet $x=1.1^n$, we have\n\n$$1,210,000x^2+\\frac{4,200,000}{1.331}x-5,830,000>20,000,000$$　**【1M】**（for setting up a quadratic equation）\n\n$$1,610,510x^2+4,200,000x-34,379,730>0$$\n\n$$x<-6.104700691\\ (\\text{rejected since }1.1^n>0)\\ \\text{ or }\\ x>3.496831134.$$　**【1A】**\n\nThus, we have\n\n$$1.1^n>3.496831134$$\n\n$$n>13.13455888$$\n\nThe new facility should be installed in the 13-th year.　**【1A】**\n\n**（13 分）**",
+   "html": "<p>19.&nbsp;&nbsp;&nbsp;(a)(i)　$$\\begin{cases} A(1)=ab^2=254100 \\ A(2)=ab^{2(2)}=307461 \\end{cases}$$</p>\n<p>Solving, we have $b=1.1$ and $a=210000$.　<strong>【1A+1A】</strong></p>\n<p>$$A(4)=ab^{2(4)}$$</p>\n<p>$$=(210000)(1.21^4)$$</p>\n<p>$$=450,153.6501$$</p>\n<p>Thus, the weight of the cargos handled in the 4-th year is 450,153.6501 tonnes.　<strong>【1A】</strong>（r.t. 450,000）</p>\n<p>(a)(ii)　The total weight of the cargos handled in $n$ years</p>\n<p>$$=\\sum_{i=1}^{n}A(i)$$　<strong>【1M】</strong>（for summing up $A(i)$）</p>\n<p>$$=ab^2\\frac{b^{2n}-1}{b^2-1}$$　<strong>【1M】</strong>（for $\\displaystyle\\sum_{i=1}^{n}kr^i=\\frac{kr(r^n-1)}{r-1}$）</p>\n<p>$$=\\frac{(210,000)(1.21)(1.21^n-1)}{1.21-1}$$</p>\n<p>$$=1,210,000(1.21^n-1)\\text{ tonnes}$$　<strong>【1A】</strong></p>\n<p>(b)(i)　$$\\frac{A(n)}{B(m)}=\\frac{ab^{2n}}{2ab^m}$$　<strong>【1M】</strong>（for considering the ratio $\\dfrac{A(n)}{B(m)}$）</p>\n<p>$$=\\frac{b^{2n}}{2b^{n-4}}$$　<strong>【1A】</strong>（for changing $m$ to $n-4$）</p>\n<p>$$=\\frac{1}{2}\\,1.1^{n+4}$$</p>\n<p>$$\\le 1$$</p>\n<p>for $n\\le\\log_{1.1}2-4\\approx 3.27$</p>\n<p>Thus, for the first 3 years, the weight of the cargos handled by $Y$ is larger than that by $X$.　<strong>【1A】</strong>（f.t.）</p>\n<p>(b)(ii)　The total weight of the cargos handled in $n$ years by $X$ and $Y$</p>\n<p>$$=\\sum_{i=1}^{n}ab^{2i}+\\sum_{i=1}^{n-4}2ab^i$$　<strong>【1A】</strong>（for correct upper limits）</p>\n<p>$$=1,210,000(1.21^n-1)+\\frac{2(210,000)(1.1)(1.1^{n-4}-1)}{1.1-1}$$</p>\n<p>$$=1,210,000(1.1^{2n})+\\frac{4,200,000}{1.331}(1.1^n)-5,830,000$$</p>\n<p>Let $x=1.1^n$, we have</p>\n<p>$$1,210,000x^2+\\frac{4,200,000}{1.331}x-5,830,000&gt;20,000,000$$　<strong>【1M】</strong>（for setting up a quadratic equation）</p>\n<p>$$1,610,510x^2+4,200,000x-34,379,730&gt;0$$</p>\n<p>$$x&lt;-6.104700691\\ (\\text{rejected since }1.1^n&gt;0)\\ \\text{ or }\\ x&gt;3.496831134.$$　<strong>【1A】</strong></p>\n<p>Thus, we have</p>\n<p>$$1.1^n&gt;3.496831134$$</p>\n<p>$$n&gt;13.13455888$$</p>\n<p>The new facility should be installed in the 13-th year.　<strong>【1A】</strong></p>\n<p><strong>（13 分）</strong></p>",
+   "file": "2012_P1_解答.md"
+  },
   {
    "subject": "數學",
    "year": 2012,
@@ -17,21 +302,6 @@ window.QB = {
    "text": "化簡\n\n$$\\frac{m^{-12}n^8}{n^3}$$\n\n並以正指數表示答案。（3 分）",
    "html": "<p>1.&nbsp;&nbsp;&nbsp;化簡</p>\n<p>$$\\frac{m^{-12}n^8}{n^3}$$</p>\n<p>並以正指數表示答案。（3 分）</p>",
    "file": "2012_P1_題目中文卷.md"
-  },
-  {
-   "subject": "數學",
-   "year": 2012,
-   "paper": "Paper 1",
-   "type": "解答",
-   "qno": 1,
-   "title": "Q1　指數定律化簡",
-   "section": "Paper 1　甲部(1)",
-   "tags": [
-    "指數定律化簡"
-   ],
-   "text": "$$\\frac{m^{-12}n^8}{n^3}=m^{-12}n^{8-3}$$　**【1M】**（for $\\dfrac{a^p}{a^q}=a^{p-q}$）\n\n$$=\\frac{n^5}{m^{12}}$$　**【1M+1A】**（1M for $a^{-p}=\\dfrac{1}{a^p}$）\n\n**（3 分）**",
-   "html": "<p>1.&nbsp;&nbsp;&nbsp;$$\\frac{m^{-12}n^8}{n^3}=m^{-12}n^{8-3}$$　<strong>【1M】</strong>（for $\\dfrac{a^p}{a^q}=a^{p-q}$）</p>\n<p>$$=\\frac{n^5}{m^{12}}$$　<strong>【1M+1A】</strong>（1M for $a^{-p}=\\dfrac{1}{a^p}$）</p>\n<p><strong>（3 分）</strong></p>",
-   "file": "2012_P1_解答.md"
   },
   {
    "subject": "數學",
@@ -53,21 +323,6 @@ window.QB = {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 1",
-   "type": "解答",
-   "qno": 2,
-   "title": "Q2　主項變換",
-   "section": "Paper 1　甲部(1)",
-   "tags": [
-    "主項變換"
-   ],
-   "text": "$$\\frac{3a+b}{8}=b-1$$\n\n$$3a+b=8(b-1)$$　**【1M】**（for $8(b-1)$）\n\n$$3a+b=8b-8$$\n\n$$3a=8b-8-b$$　**【1M】**（for putting $a$ on one side）\n\n$$a=\\frac{7b-8}{3}$$　**【1A】**（or equivalent）\n\n**（3 分）**",
-   "html": "<p>2.&nbsp;&nbsp;&nbsp;$$\\frac{3a+b}{8}=b-1$$</p>\n<p>$$3a+b=8(b-1)$$　<strong>【1M】</strong>（for $8(b-1)$）</p>\n<p>$$3a+b=8b-8$$</p>\n<p>$$3a=8b-8-b$$　<strong>【1M】</strong>（for putting $a$ on one side）</p>\n<p>$$a=\\frac{7b-8}{3}$$　<strong>【1A】</strong>（or equivalent）</p>\n<p><strong>（3 分）</strong></p>",
-   "file": "2012_P1_解答.md"
-  },
-  {
-   "subject": "數學",
-   "year": 2012,
-   "paper": "Paper 1",
    "type": "題目",
    "qno": 3,
    "title": "甲部(1) 第 3 題",
@@ -79,21 +334,6 @@ window.QB = {
    "text": "因式分解\n\n(a)　$x^2-6xy+9y^2$，\n\n(b)　$x^2-6xy+9y^2+7x-21y$。（3 分）",
    "html": "<p>3.&nbsp;&nbsp;&nbsp;因式分解</p>\n<p>(a)　$x^2-6xy+9y^2$，</p>\n<p>(b)　$x^2-6xy+9y^2+7x-21y$。（3 分）</p>",
    "file": "2012_P1_題目中文卷.md"
-  },
-  {
-   "subject": "數學",
-   "year": 2012,
-   "paper": "Paper 1",
-   "type": "解答",
-   "qno": 3,
-   "title": "Q3　因式分解",
-   "section": "Paper 1　甲部(1)",
-   "tags": [
-    "因式分解"
-   ],
-   "text": "(a)　$$x^2-6xy+9y^2=(x-3y)^2$$　**【1A】**（or equivalent）\n\n(b)　$$x^2-6xy+9y^2+7x-21y=(x-3y)^2+7x-21y$$　**【1M】**（for using (a)）\n\n$$=(x-3y)^2+7(x-3y)$$\n\n$$=(x-3y)(x-3y+7)$$　**【1A】**（or equivalent）\n\n**（3 分）**",
-   "html": "<p>3.&nbsp;&nbsp;&nbsp;(a)　$$x^2-6xy+9y^2=(x-3y)^2$$　<strong>【1A】</strong>（or equivalent）</p>\n<p>(b)　$$x^2-6xy+9y^2+7x-21y=(x-3y)^2+7x-21y$$　<strong>【1M】</strong>（for using (a)）</p>\n<p>$$=(x-3y)^2+7(x-3y)$$</p>\n<p>$$=(x-3y)(x-3y+7)$$　<strong>【1A】</strong>（or equivalent）</p>\n<p><strong>（3 分）</strong></p>",
-   "file": "2012_P1_解答.md"
   },
   {
    "subject": "數學",
@@ -115,21 +355,6 @@ window.QB = {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 1",
-   "type": "解答",
-   "qno": 4,
-   "title": "Q4　百分變化",
-   "section": "Paper 1　甲部(1)",
-   "tags": [
-    "百分變化"
-   ],
-   "text": "(a)　The daily wage of Ada\n\n$$=480(1+20\\%)$$　**【1M】**\n\n$$=\\$576$$　**【1A】**（u−1 for missing unit）\n\n(b)　The daily wage of Christine\n\n$$=\\frac{480}{1-20\\%}$$　**【1M】**\n\n$$=\\$600$$\n\nThus, Christine has the highest daily wage.　**【1A】**（f.t.）\n\n**（4 分）**",
-   "html": "<p>4.&nbsp;&nbsp;&nbsp;(a)　The daily wage of Ada</p>\n<p>$$=480(1+20\\%)$$　<strong>【1M】</strong></p>\n<p>$$=\\$576$$　<strong>【1A】</strong>（u−1 for missing unit）</p>\n<p>(b)　The daily wage of Christine</p>\n<p>$$=\\frac{480}{1-20\\%}$$　<strong>【1M】</strong></p>\n<p>$$=\\$600$$</p>\n<p>Thus, Christine has the highest daily wage.　<strong>【1A】</strong>（f.t.）</p>\n<p><strong>（4 分）</strong></p>",
-   "file": "2012_P1_解答.md"
-  },
-  {
-   "subject": "數學",
-   "year": 2012,
-   "paper": "Paper 1",
    "type": "題目",
    "qno": 5,
    "title": "甲部(1) 第 5 題",
@@ -146,21 +371,6 @@ window.QB = {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 1",
-   "type": "解答",
-   "qno": 5,
-   "title": "Q5　一元方程應用",
-   "section": "Paper 1　甲部(1)",
-   "tags": [
-    "一元方程應用"
-   ],
-   "text": "Let $x$ and $y$ be the number of male and female security guards in each zone respectively.（pp−1 for undefined symbols）\n\n$$\\begin{cases} 6(x+y)=132 \\\\ y-x=4 \\end{cases}$$　**【1A+1A】**\n\nSo, we have $6(2x+4)=132$.　**【1M】**（for getting a linear equation in $x$ or $y$ only）\n\nSolving, we have $x=4$.\n\nThus, the total number of male security guards is 24.　**【1A】**\n\n**另法：** Let $x$ be the number of male security guards in each zone.（pp−1 for undefined symbols）\n\n$$6(x+x+4)=132$$　**【1A+1M+1A】**（1A for $y=x+4$，1M for $6(x+y)=132$）\n\nSolving, we have $x=4$.\n\nThus, the total number of male security guards is 24.　**【1A】**\n\n**（4 分）**",
-   "html": "<p>5.&nbsp;&nbsp;&nbsp;Let $x$ and $y$ be the number of male and female security guards in each zone respectively.（pp−1 for undefined symbols）</p>\n<p>$$\\begin{cases} 6(x+y)=132 \\ y-x=4 \\end{cases}$$　<strong>【1A+1A】</strong></p>\n<p>So, we have $6(2x+4)=132$.　<strong>【1M】</strong>（for getting a linear equation in $x$ or $y$ only）</p>\n<p>Solving, we have $x=4$.</p>\n<p>Thus, the total number of male security guards is 24.　<strong>【1A】</strong></p>\n<p><strong>另法：</strong> Let $x$ be the number of male security guards in each zone.（pp−1 for undefined symbols）</p>\n<p>$$6(x+x+4)=132$$　<strong>【1A+1M+1A】</strong>（1A for $y=x+4$，1M for $6(x+y)=132$）</p>\n<p>Solving, we have $x=4$.</p>\n<p>Thus, the total number of male security guards is 24.　<strong>【1A】</strong></p>\n<p><strong>（4 分）</strong></p>",
-   "file": "2012_P1_解答.md"
-  },
-  {
-   "subject": "數學",
-   "year": 2012,
-   "paper": "Paper 1",
    "type": "題目",
    "qno": 6,
    "title": "甲部(1) 第 6 題",
@@ -172,21 +382,6 @@ window.QB = {
    "text": "(a)　求同時滿足\n\n$$\\frac{4x+6}{7} > 2(x-3) \\quad\\text{及}\\quad 2x-10 \\le 0$$\n\n的 $x$ 值的範圍。\n\n(b)　有多少個正整數同時滿足 (a) 的不等式？（4 分）",
    "html": "<p>6.&nbsp;&nbsp;&nbsp;(a)　求同時滿足</p>\n<p>$$\\frac{4x+6}{7} &gt; 2(x-3) \\quad\\text{及}\\quad 2x-10 \\le 0$$</p>\n<p>的 $x$ 值的範圍。</p>\n<p>(b)　有多少個正整數同時滿足 (a) 的不等式？（4 分）</p>",
    "file": "2012_P1_題目中文卷.md"
-  },
-  {
-   "subject": "數學",
-   "year": 2012,
-   "paper": "Paper 1",
-   "type": "解答",
-   "qno": 6,
-   "title": "Q6　一元一次不等式",
-   "section": "Paper 1　甲部(1)",
-   "tags": [
-    "一元一次不等式"
-   ],
-   "text": "(a)　$$\\frac{4x+6}{7}>2(x-3)$$\n\n$$4x+6>14x-42$$\n\n$$-10x>-48$$　**【1M】**（for putting $x$ on one side）\n\n$$10x<48$$\n\n$$x<4.8$$　**【1A】**\n\nFor $2x-10\\le 0$, we have $x\\le 5$.\n\nTherefore, the solution of $\\dfrac{4x+6}{7}>2(x-3)$ and $2x-10\\le 0$ is $x<4.8$.　**【1A】**\n\n(b)　The positive integers satisfying both inequalities in (a) are 1, 2, 3 and 4.\n\nThus, the number of possible positive integers is 4.　**【1A】**（f.t.）\n\n**（4 分）**",
-   "html": "<p>6.&nbsp;&nbsp;&nbsp;(a)　$$\\frac{4x+6}{7}&gt;2(x-3)$$</p>\n<p>$$4x+6&gt;14x-42$$</p>\n<p>$$-10x&gt;-48$$　<strong>【1M】</strong>（for putting $x$ on one side）</p>\n<p>$$10x&lt;48$$</p>\n<p>$$x&lt;4.8$$　<strong>【1A】</strong></p>\n<p>For $2x-10\\le 0$, we have $x\\le 5$.</p>\n<p>Therefore, the solution of $\\dfrac{4x+6}{7}&gt;2(x-3)$ and $2x-10\\le 0$ is $x&lt;4.8$.　<strong>【1A】</strong></p>\n<p>(b)　The positive integers satisfying both inequalities in (a) are 1, 2, 3 and 4.</p>\n<p>Thus, the number of possible positive integers is 4.　<strong>【1A】</strong>（f.t.）</p>\n<p><strong>（4 分）</strong></p>",
-   "file": "2012_P1_解答.md"
   },
   {
    "subject": "數學",
@@ -210,21 +405,6 @@ window.QB = {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 1",
-   "type": "解答",
-   "qno": 7,
-   "title": "Q7　框線圖",
-   "section": "Paper 1　甲部(1)",
-   "tags": [
-    "框線圖"
-   ],
-   "text": "(a)　$$18.1-a=6.8$$\n\n$$a=11.3$$　**【1A】**\n\n$$b-12.1=3.2$$\n\n$$b=15.3$$　**【1A】**\n\n(b)　Let $c$ s be the longest running time after training.\n\n$$c=18.1-2.9$$\n\n$$=15.2$$　**【1M】**\n\nSince $c<b=15.3$, all the students whose running time fall between 15.3 and 18.1 must have shorter running time after training.\n\nThus, at least 25% students have improved in their running time.　**【1A】**（f.t.）\n\n**（4 分）**",
-   "html": "<p>7.&nbsp;&nbsp;&nbsp;(a)　$$18.1-a=6.8$$</p>\n<p>$$a=11.3$$　<strong>【1A】</strong></p>\n<p>$$b-12.1=3.2$$</p>\n<p>$$b=15.3$$　<strong>【1A】</strong></p>\n<p>(b)　Let $c$ s be the longest running time after training.</p>\n<p>$$c=18.1-2.9$$</p>\n<p>$$=15.2$$　<strong>【1M】</strong></p>\n<p>Since $c&lt;b=15.3$, all the students whose running time fall between 15.3 and 18.1 must have shorter running time after training.</p>\n<p>Thus, at least 25% students have improved in their running time.　<strong>【1A】</strong>（f.t.）</p>\n<p><strong>（4 分）</strong></p>",
-   "file": "2012_P1_解答.md"
-  },
-  {
-   "subject": "數學",
-   "year": 2012,
-   "paper": "Paper 1",
    "type": "題目",
    "qno": 8,
    "title": "甲部(1) 第 8 題",
@@ -237,21 +417,6 @@ window.QB = {
    "text": "圖 1 中，$AB$、$BC$、$CD$ 及 $AD$ 均為圓的弦。$AC$ 與 $BD$ 相交於 $E$。已知 $BE=8$ cm、$CE=20$ cm 及 $DE=15$ cm。\n\n![Q8 圖 1](2012_P1_figs_svg/2012P1_Q8.svg)\n\n(a)　寫出在圖 1 中的一對相似三角形，並求 $AE$。\n\n(b)　假定 $AB=10$ cm。$AC$ 與 $BD$ 是否互相垂直？試解釋你的答案。（5 分）",
    "html": "<p>8.&nbsp;&nbsp;&nbsp;圖 1 中，$AB$、$BC$、$CD$ 及 $AD$ 均為圓的弦。$AC$ 與 $BD$ 相交於 $E$。已知 $BE=8$ cm、$CE=20$ cm 及 $DE=15$ cm。</p>\n<p><img alt=\"Q8 圖 1\" src=\"2012_P1_figs_svg/2012P1_Q8.svg\" /></p>\n<p>(a)　寫出在圖 1 中的一對相似三角形，並求 $AE$。</p>\n<p>(b)　假定 $AB=10$ cm。$AC$ 與 $BD$ 是否互相垂直？試解釋你的答案。（5 分）</p>",
    "file": "2012_P1_題目中文卷.md"
-  },
-  {
-   "subject": "數學",
-   "year": 2012,
-   "paper": "Paper 1",
-   "type": "解答",
-   "qno": 8,
-   "title": "Q8　相似三角形",
-   "section": "Paper 1　甲部(1)",
-   "tags": [
-    "相似三角形"
-   ],
-   "text": "(a)　$$\\triangle AED\\sim\\triangle BEC$$　**【1A】**\n\n$$\\frac{AE}{BE}=\\frac{DE}{CE}$$　**【1M】**（for using side ratio）\n\n$$AE=\\frac{8\\cdot 15}{20}$$\n\n$$=6$$　**【1A】**\n\n(b)　$$AE^2+BE^2=6^2+8^2$$\n\n$$=100$$\n\n$$=AB^2$$　**【1M】**\n\nThus, $\\triangle AEB$ is a right-angled triangle.\n\n$$AC\\perp BD.$$　**【1A】**（f.t.）\n\n**（5 分）**",
-   "html": "<p>8.&nbsp;&nbsp;&nbsp;(a)　$$\\triangle AED\\sim\\triangle BEC$$　<strong>【1A】</strong></p>\n<p>$$\\frac{AE}{BE}=\\frac{DE}{CE}$$　<strong>【1M】</strong>（for using side ratio）</p>\n<p>$$AE=\\frac{8\\cdot 15}{20}$$</p>\n<p>$$=6$$　<strong>【1A】</strong></p>\n<p>(b)　$$AE^2+BE^2=6^2+8^2$$</p>\n<p>$$=100$$</p>\n<p>$$=AB^2$$　<strong>【1M】</strong></p>\n<p>Thus, $\\triangle AEB$ is a right-angled triangle.</p>\n<p>$$AC\\perp BD.$$　<strong>【1A】</strong>（f.t.）</p>\n<p><strong>（5 分）</strong></p>",
-   "file": "2012_P1_解答.md"
   },
   {
    "subject": "數學",
@@ -275,21 +440,6 @@ window.QB = {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 1",
-   "type": "解答",
-   "qno": 9,
-   "title": "Q9　直立角柱體求積",
-   "section": "Paper 1　甲部(1)",
-   "tags": [
-    "直立角柱體求積"
-   ],
-   "text": "(a)　$$\\frac{(BC+AD)\\cdot AB}{2}\\cdot DE=1020$$　**【1M】**\n\n$$\\frac{(6+AD)\\cdot 12}{2}\\cdot 10=1020$$\n\n$$AD=11\\text{ cm}$$　**【1A】**（u−1 for missing unit）\n\n(b)　$$CD=\\sqrt{AB^2+(AD-BC)^2}$$　**【1M】**（for using Pythagoras' theorem）\n\n$$=\\sqrt{12^2+(11-6)^2}$$\n\n$$=\\sqrt{169}$$\n\n$$=13\\text{ cm}$$　**【1A】**\n\nThe total surface area of prism $ABCDEFGH$\n\n$$=2\\times\\text{Area of }ABCD+DE\\times(AB+BC+CD+AD)$$\n\n$$=2\\cdot\\frac{(6+11)\\cdot 12}{2}+10\\cdot(12+6+13+11)$$\n\n$$=624\\text{ cm}^2$$　**【1A】**（u−1 for missing unit）\n\n**（5 分）**",
-   "html": "<p>9.&nbsp;&nbsp;&nbsp;(a)　$$\\frac{(BC+AD)\\cdot AB}{2}\\cdot DE=1020$$　<strong>【1M】</strong></p>\n<p>$$\\frac{(6+AD)\\cdot 12}{2}\\cdot 10=1020$$</p>\n<p>$$AD=11\\text{ cm}$$　<strong>【1A】</strong>（u−1 for missing unit）</p>\n<p>(b)　$$CD=\\sqrt{AB^2+(AD-BC)^2}$$　<strong>【1M】</strong>（for using Pythagoras' theorem）</p>\n<p>$$=\\sqrt{12^2+(11-6)^2}$$</p>\n<p>$$=\\sqrt{169}$$</p>\n<p>$$=13\\text{ cm}$$　<strong>【1A】</strong></p>\n<p>The total surface area of prism $ABCDEFGH$</p>\n<p>$$=2\\times\\text{Area of }ABCD+DE\\times(AB+BC+CD+AD)$$</p>\n<p>$$=2\\cdot\\frac{(6+11)\\cdot 12}{2}+10\\cdot(12+6+13+11)$$</p>\n<p>$$=624\\text{ cm}^2$$　<strong>【1A】</strong>（u−1 for missing unit）</p>\n<p><strong>（5 分）</strong></p>",
-   "file": "2012_P1_解答.md"
-  },
-  {
-   "subject": "數學",
-   "year": 2012,
-   "paper": "Paper 1",
    "type": "題目",
    "qno": 10,
    "title": "甲部(2) 第 10 題",
@@ -303,21 +453,6 @@ window.QB = {
    "text": "志誠進行一項中學生在某星期內用於做家課的時數的調查。在發出的問卷中，有二十份回覆。下面的幹葉圖顯示該二十份問卷記錄得的時數：\n\n| 幹（十位） | 葉（個位） |\n|:---:|:---|\n| 1 | 0　0　1　1　2　3　4　5　5　6　6　7　7 |\n| 2 | 0　0　0　5　8 |\n| 3 | 4　6 |\n\n(a)　求該二十份問卷記錄得的時數的平均值及中位數。（2 分）\n\n(b)　志誠再收到四份問卷。他知道這四份問卷記錄得的時數的平均值為 18。現知道四份問卷其中兩份記錄得的時數為 19 及 20。\n\n　　(i)　寫出該二十四份問卷記錄得的時數的平均值。\n\n　　(ii)　該二十四份問卷記錄得的時數的中位數與 (a) 所求得的中位數有沒有可能相同？試解釋你的答案。（4 分）",
    "html": "<p>10.&nbsp;&nbsp;&nbsp;志誠進行一項中學生在某星期內用於做家課的時數的調查。在發出的問卷中，有二十份回覆。下面的幹葉圖顯示該二十份問卷記錄得的時數：</p>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: center;\">幹（十位）</th>\n<th style=\"text-align: left;\">葉（個位）</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: center;\">1</td>\n<td style=\"text-align: left;\">0　0　1　1　2　3　4　5　5　6　6　7　7</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">2</td>\n<td style=\"text-align: left;\">0　0　0　5　8</td>\n</tr>\n<tr>\n<td style=\"text-align: center;\">3</td>\n<td style=\"text-align: left;\">4　6</td>\n</tr>\n</tbody>\n</table>\n<p>(a)　求該二十份問卷記錄得的時數的平均值及中位數。（2 分）</p>\n<p>(b)　志誠再收到四份問卷。他知道這四份問卷記錄得的時數的平均值為 18。現知道四份問卷其中兩份記錄得的時數為 19 及 20。</p>\n<p>(i)　寫出該二十四份問卷記錄得的時數的平均值。</p>\n<p>(ii)　該二十四份問卷記錄得的時數的中位數與 (a) 所求得的中位數有沒有可能相同？試解釋你的答案。（4 分）</p>",
    "file": "2012_P1_題目中文卷.md"
-  },
-  {
-   "subject": "數學",
-   "year": 2012,
-   "paper": "Paper 1",
-   "type": "解答",
-   "qno": 10,
-   "title": "Q10　幹葉圖",
-   "section": "Paper 1　甲部(2)",
-   "tags": [
-    "幹葉圖"
-   ],
-   "text": "(a)　$$\\text{mean}=18$$　**【1A】**\n\n$$\\text{median}=16$$　**【1A】**\n\n(b)(i)　The mean number of hours of the 24 questionnaires\n\n$$=\\frac{18\\times 20+18\\times 4}{24}$$\n\n$$=18$$　**【1A】**\n\n(b)(ii)　Let $a$ and $b$ be the number of hours of the other 2 questionnaires of the last 4 questionnaires.（pp−1 for undefined symbol）\n\n$$\\frac{a+b+19+20}{4}=18$$\n\n$$a+b=33$$　**【1M】**\n\nIf the median number of hours of the 24 questionnaires is the same as the median in (a), both $a$ and $b$ must be less than or equal to 16, i.e. $a+b\\le 32$.　**【1M】**\n\nThus, it is impossible the new median to be the same as the median in (a).　**【1A】**（f.t.）\n\n**（4 分）**",
-   "html": "<p>10.&nbsp;&nbsp;&nbsp;(a)　$$\\text{mean}=18$$　<strong>【1A】</strong></p>\n<p>$$\\text{median}=16$$　<strong>【1A】</strong></p>\n<p>(b)(i)　The mean number of hours of the 24 questionnaires</p>\n<p>$$=\\frac{18\\times 20+18\\times 4}{24}$$</p>\n<p>$$=18$$　<strong>【1A】</strong></p>\n<p>(b)(ii)　Let $a$ and $b$ be the number of hours of the other 2 questionnaires of the last 4 questionnaires.（pp−1 for undefined symbol）</p>\n<p>$$\\frac{a+b+19+20}{4}=18$$</p>\n<p>$$a+b=33$$　<strong>【1M】</strong></p>\n<p>If the median number of hours of the 24 questionnaires is the same as the median in (a), both $a$ and $b$ must be less than or equal to 16, i.e. $a+b\\le 32$.　<strong>【1M】</strong></p>\n<p>Thus, it is impossible the new median to be the same as the median in (a).　<strong>【1A】</strong>（f.t.）</p>\n<p><strong>（4 分）</strong></p>",
-   "file": "2012_P1_解答.md"
   },
   {
    "subject": "數學",
@@ -341,21 +476,6 @@ window.QB = {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 1",
-   "type": "解答",
-   "qno": 11,
-   "title": "Q11　部分正變",
-   "section": "Paper 1　甲部(2)",
-   "tags": [
-    "部分正變"
-   ],
-   "text": "(a)　Let $C=a+bA$, where $a$ and $b$ are non-zero constants.　**【1A】**\n\nSo, we have $a+2b=62$ and $a+6b=74$.　**【1M】**（for either substitution）\n\nSolving, we have $a=56$ and $b=3$.　**【1A】**（for both correct）\n\nThe required cost\n\n$$=56+3(13)$$\n\n$$=\\$95$$　**【1A】**（u−1 for missing unit）\n\n(b)　The surface area of the larger can\n\n$$=13\\times(\\sqrt[3]{8})^2$$　**【1M】**（for using similarity）\n\n$$=52\\text{ m}^2$$\n\nThe required cost\n\n$$=56+3(52)$$\n\n$$=\\$212$$　**【1A】**（u−1 for missing unit）\n\n**（6 分）**",
-   "html": "<p>11.&nbsp;&nbsp;&nbsp;(a)　Let $C=a+bA$, where $a$ and $b$ are non-zero constants.　<strong>【1A】</strong></p>\n<p>So, we have $a+2b=62$ and $a+6b=74$.　<strong>【1M】</strong>（for either substitution）</p>\n<p>Solving, we have $a=56$ and $b=3$.　<strong>【1A】</strong>（for both correct）</p>\n<p>The required cost</p>\n<p>$$=56+3(13)$$</p>\n<p>$$=\\$95$$　<strong>【1A】</strong>（u−1 for missing unit）</p>\n<p>(b)　The surface area of the larger can</p>\n<p>$$=13\\times(\\sqrt[3]{8})^2$$　<strong>【1M】</strong>（for using similarity）</p>\n<p>$$=52\\text{ m}^2$$</p>\n<p>The required cost</p>\n<p>$$=56+3(52)$$</p>\n<p>$$=\\$212$$　<strong>【1A】</strong>（u−1 for missing unit）</p>\n<p><strong>（6 分）</strong></p>",
-   "file": "2012_P1_解答.md"
-  },
-  {
-   "subject": "數學",
-   "year": 2012,
-   "paper": "Paper 1",
    "type": "題目",
    "qno": 12,
    "title": "甲部(2) 第 12 題",
@@ -368,21 +488,6 @@ window.QB = {
    "text": "圖 3(a) 顯示底半徑為 48 cm 及高為 96 cm 的實心金屬直立圓錐體。\n\n![Q12 圖 3(a)(b)](2012_P1_figs_svg/2012P1_Q12.svg)\n\n(a)　求該圓錐體的體積，答案以 $\\pi$ 表示。（2 分）\n\n(b)　把半徑為 60 cm 的半球形容器鉛垂置於一水平面上。該容器載滿牛奶。\n\n　　(i)　求該容器內牛奶的體積，答案以 $\\pi$ 表示。\n\n　　(ii)　現把該圓錐體鉛垂置於該容器內，如圖 3(b) 所示。某工匠宣稱剩下在該容器內的牛奶的體積大於 0.3 m³。你是否同意？試解釋你的答案。（5 分）",
    "html": "<p>12.&nbsp;&nbsp;&nbsp;圖 3(a) 顯示底半徑為 48 cm 及高為 96 cm 的實心金屬直立圓錐體。</p>\n<p><img alt=\"Q12 圖 3(a)(b)\" src=\"2012_P1_figs_svg/2012P1_Q12.svg\" /></p>\n<p>(a)　求該圓錐體的體積，答案以 $\\pi$ 表示。（2 分）</p>\n<p>(b)　把半徑為 60 cm 的半球形容器鉛垂置於一水平面上。該容器載滿牛奶。</p>\n<p>(i)　求該容器內牛奶的體積，答案以 $\\pi$ 表示。</p>\n<p>(ii)　現把該圓錐體鉛垂置於該容器內，如圖 3(b) 所示。某工匠宣稱剩下在該容器內的牛奶的體積大於 0.3 m³。你是否同意？試解釋你的答案。（5 分）</p>",
    "file": "2012_P1_題目中文卷.md"
-  },
-  {
-   "subject": "數學",
-   "year": 2012,
-   "paper": "Paper 1",
-   "type": "解答",
-   "qno": 12,
-   "title": "Q12　圓錐體與半球體",
-   "section": "Paper 1　甲部(2)",
-   "tags": [
-    "圓錐體與半球體"
-   ],
-   "text": "(a)　The volume of the cone\n\n$$=\\frac{1}{3}\\pi r^2h$$　**【1M】**（for $V=\\dfrac{1}{3}\\pi r^2h$）\n\n$$=\\frac{1}{3}\\pi\\cdot 0.48^2\\cdot 0.96$$\n\n$$=0.073728\\pi\\text{ m}^3$$　**【1A】**（u−1 for missing unit）\n\n> **圖（待重繪）**：原卷此處附示意圖，顯示底半徑 48 cm、高 96 cm 的直立圓錐體及半徑 60 cm 的半球形容器（牛奶液面），圖上標示 48 cm／96 cm／36 cm／60 cm。\n\n(b)(i)　The volume of the milk\n\n$$=\\frac{1}{2}\\cdot\\frac{4}{3}\\pi r^3$$　**【1M】**（for $V=\\dfrac{4}{3}\\pi r^3$）\n\n$$=\\frac{2}{3}\\pi\\cdot 0.6^3$$\n\n$$=0.144\\pi\\text{ m}^3$$　**【1A】**（u−1 for missing unit）\n\n(b)(ii)　The height of the portion of the cone in the milk\n\n$$=\\sqrt{0.6^2-0.48^2}$$　**【1M】**（for using Pythagoras' theorem）\n\n$$=0.36\\text{ m}$$\n\nThe volume of the portion of the cone in the milk\n\n$$=(0.073728\\pi)\\left(1-\\left(\\frac{0.96-0.36}{0.96}\\right)^2\\right)$$　**【1M】**（for using similarity）\n\n$$=0.044928\\pi\\text{ m}^3$$\n\nThe volume of the remaining milk in the container\n\n$$=0.144\\pi-0.044928\\pi$$\n\n$$=0.311\\text{ m}^3$$\n\nThus, the volume of the remaining milk in the container is larger than $0.3\\text{ m}^3$.　**【1A】**（f.t.）\n\n**（7 分）**",
-   "html": "<p>12.&nbsp;&nbsp;&nbsp;(a)　The volume of the cone</p>\n<p>$$=\\frac{1}{3}\\pi r^2h$$　<strong>【1M】</strong>（for $V=\\dfrac{1}{3}\\pi r^2h$）</p>\n<p>$$=\\frac{1}{3}\\pi\\cdot 0.48^2\\cdot 0.96$$</p>\n<p>$$=0.073728\\pi\\text{ m}^3$$　<strong>【1A】</strong>（u−1 for missing unit）</p>\n<blockquote>\n<p><strong>圖（待重繪）</strong>：原卷此處附示意圖，顯示底半徑 48 cm、高 96 cm 的直立圓錐體及半徑 60 cm 的半球形容器（牛奶液面），圖上標示 48 cm／96 cm／36 cm／60 cm。</p>\n</blockquote>\n<p>(b)(i)　The volume of the milk</p>\n<p>$$=\\frac{1}{2}\\cdot\\frac{4}{3}\\pi r^3$$　<strong>【1M】</strong>（for $V=\\dfrac{4}{3}\\pi r^3$）</p>\n<p>$$=\\frac{2}{3}\\pi\\cdot 0.6^3$$</p>\n<p>$$=0.144\\pi\\text{ m}^3$$　<strong>【1A】</strong>（u−1 for missing unit）</p>\n<p>(b)(ii)　The height of the portion of the cone in the milk</p>\n<p>$$=\\sqrt{0.6^2-0.48^2}$$　<strong>【1M】</strong>（for using Pythagoras' theorem）</p>\n<p>$$=0.36\\text{ m}$$</p>\n<p>The volume of the portion of the cone in the milk</p>\n<p>$$=(0.073728\\pi)\\left(1-\\left(\\frac{0.96-0.36}{0.96}\\right)^2\\right)$$　<strong>【1M】</strong>（for using similarity）</p>\n<p>$$=0.044928\\pi\\text{ m}^3$$</p>\n<p>The volume of the remaining milk in the container</p>\n<p>$$=0.144\\pi-0.044928\\pi$$</p>\n<p>$$=0.311\\text{ m}^3$$</p>\n<p>Thus, the volume of the remaining milk in the container is larger than $0.3\\text{ m}^3$.　<strong>【1A】</strong>（f.t.）</p>\n<p><strong>（7 分）</strong></p>",
-   "file": "2012_P1_解答.md"
   },
   {
    "subject": "數學",
@@ -402,21 +507,6 @@ window.QB = {
    "text": "(a)　求 $k$ 的值使得 $x-2$ 為 $kx^3-21x^2+24x-4$ 的因式。（2 分）\n\n(b)　圖 4 顯示 $y=15x^2-63x+72$ 的圖像。$Q$ 為第一象限內圖像上的可變點。$P$ 及 $R$ 分別為由 $Q$ 至 $x$ 軸及 $y$ 軸的垂足。\n\n![Q13 圖 4](2012_P1_figs_svg/2012P1_Q13.svg)\n\n　　(i)　設 $(m,0)$ 為 $P$ 的坐標。以 $m$ 表長方形 $OPQR$ 的面積。\n\n　　(ii)　$Q$ 是否有三個不同的位置使長方形 $OPQR$ 的面積為 12？試解釋你的答案。（5 分）",
    "html": "<p>13.&nbsp;&nbsp;&nbsp;(a)　求 $k$ 的值使得 $x-2$ 為 $kx^3-21x^2+24x-4$ 的因式。（2 分）</p>\n<p>(b)　圖 4 顯示 $y=15x^2-63x+72$ 的圖像。$Q$ 為第一象限內圖像上的可變點。$P$ 及 $R$ 分別為由 $Q$ 至 $x$ 軸及 $y$ 軸的垂足。</p>\n<p><img alt=\"Q13 圖 4\" src=\"2012_P1_figs_svg/2012P1_Q13.svg\" /></p>\n<p>(i)　設 $(m,0)$ 為 $P$ 的坐標。以 $m$ 表長方形 $OPQR$ 的面積。</p>\n<p>(ii)　$Q$ 是否有三個不同的位置使長方形 $OPQR$ 的面積為 12？試解釋你的答案。（5 分）</p>",
    "file": "2012_P1_題目中文卷.md"
-  },
-  {
-   "subject": "數學",
-   "year": 2012,
-   "paper": "Paper 1",
-   "type": "解答",
-   "qno": 13,
-   "title": "Q13　因式定理與二次函數",
-   "section": "Paper 1　甲部(2)",
-   "tags": [
-    "因式定理與二次函數"
-   ],
-   "text": "(a)　Since $x-2$ is a factor of $kx^3-21x^2+24x-4$, we have\n\n$$k(2^3)-21(2^2)+24(2)-4=0$$　**【1M】**\n\n$$8k=40$$\n\n$$k=5$$　**【1A】**\n\n(b)(i)　The coordinates of $R$\n\n$$=(0,\\ 15m^2-63m+72)$$　**【1M】**\n\nThe area of rectangle $OPQR$\n\n$$=(m)(15m^2-63m+72)$$\n\n$$=15m^3-63m^2+72m$$　**【1A】**\n\n(b)(ii)　If the area of rectangle $OPQR$ is 12, $m$ satisfy\n\n$$15m^3-63m^2+72m=12$$\n\n$$5m^3-21m^2+24m-4=0$$\n\n$$(m-2)(5m^2-11m+2)=0$$　**【1M+1A】**（1M for $(m-2)(am^2+bm+c)$）\n\n$$(m-2)(5m-1)(m-2)=0$$\n\n$$m=\\frac{1}{5}\\text{ or } m=2\\text{ (repeated)}$$\n\nThus, there are only 2 possible locations of $Q$ such that the area of rectangle $OPQR$ is 12.　**【1A】**（f.t.）\n\n**（7 分）**",
-   "html": "<p>13.&nbsp;&nbsp;&nbsp;(a)　Since $x-2$ is a factor of $kx^3-21x^2+24x-4$, we have</p>\n<p>$$k(2^3)-21(2^2)+24(2)-4=0$$　<strong>【1M】</strong></p>\n<p>$$8k=40$$</p>\n<p>$$k=5$$　<strong>【1A】</strong></p>\n<p>(b)(i)　The coordinates of $R$</p>\n<p>$$=(0,\\ 15m^2-63m+72)$$　<strong>【1M】</strong></p>\n<p>The area of rectangle $OPQR$</p>\n<p>$$=(m)(15m^2-63m+72)$$</p>\n<p>$$=15m^3-63m^2+72m$$　<strong>【1A】</strong></p>\n<p>(b)(ii)　If the area of rectangle $OPQR$ is 12, $m$ satisfy</p>\n<p>$$15m^3-63m^2+72m=12$$</p>\n<p>$$5m^3-21m^2+24m-4=0$$</p>\n<p>$$(m-2)(5m^2-11m+2)=0$$　<strong>【1M+1A】</strong>（1M for $(m-2)(am^2+bm+c)$）</p>\n<p>$$(m-2)(5m-1)(m-2)=0$$</p>\n<p>$$m=\\frac{1}{5}\\text{ or } m=2\\text{ (repeated)}$$</p>\n<p>Thus, there are only 2 possible locations of $Q$ such that the area of rectangle $OPQR$ is 12.　<strong>【1A】</strong>（f.t.）</p>\n<p><strong>（7 分）</strong></p>",
-   "file": "2012_P1_解答.md"
   },
   {
    "subject": "數學",
@@ -442,21 +532,6 @@ window.QB = {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 1",
-   "type": "解答",
-   "qno": 14,
-   "title": "Q14　軌跡與圓",
-   "section": "Paper 1　甲部(2)",
-   "tags": [
-    "軌跡與圓"
-   ],
-   "text": "(a)(i)　$\\Gamma$ and $L$ are parallel with $\\Gamma$ lies below $L$ by a vertical distance of 1.　**【1A+1A】**（1A for parallel；1A for vertical distance）\n\n(a)(ii)　The equation of $L$ is\n\n$$\\frac{x}{3}+\\frac{y}{-1}=1$$　**【1M】**（for intercept form）\n\n$$y=\\frac{x}{3}-1$$\n\nThus, the equation of $\\Gamma$ is\n\n$$y=\\frac{x}{3}-1-1$$　**【1M】**\n\n$$x-3y-6=0$$　**【1A】**\n\n(b)(i)　The coordinates of $Q$\n\n$$=(6,0)$$\n\nSubstituting the coordinates of $Q$ into the equation of $\\Gamma$, we have\n\n$$\\text{L.S.}=6-3(0)-6$$\n\n$$=0$$\n\n$$=\\text{R.S.}$$\n\nThus, $Q$ passes through $\\Gamma$.　**【1A】**\n\n(b)(ii)　Since $Q$ passes through $\\Gamma$, $HQ=KQ=$ radius of $C$.　**【1M】**\n\nLet $F$ and $G$ be the feet of the perpendiculars from $A$ and $B$ to $\\Gamma$ respectively.\n\n$$AF=BG=\\text{perpendicular distance from }L\\text{ to }\\Gamma.$$　**【1M】**\n\nHence, we have\n\n$$\\text{Area of }\\triangle AQH:\\text{Area of }\\triangle BQK$$\n\n$$=\\frac{1}{2}HQ\\cdot AF:\\frac{1}{2}KQ\\cdot BG$$\n\n$$=1:1$$　**【1A】**\n\n**（9 分）**",
-   "html": "<p>14.&nbsp;&nbsp;&nbsp;(a)(i)　$\\Gamma$ and $L$ are parallel with $\\Gamma$ lies below $L$ by a vertical distance of 1.　<strong>【1A+1A】</strong>（1A for parallel；1A for vertical distance）</p>\n<p>(a)(ii)　The equation of $L$ is</p>\n<p>$$\\frac{x}{3}+\\frac{y}{-1}=1$$　<strong>【1M】</strong>（for intercept form）</p>\n<p>$$y=\\frac{x}{3}-1$$</p>\n<p>Thus, the equation of $\\Gamma$ is</p>\n<p>$$y=\\frac{x}{3}-1-1$$　<strong>【1M】</strong></p>\n<p>$$x-3y-6=0$$　<strong>【1A】</strong></p>\n<p>(b)(i)　The coordinates of $Q$</p>\n<p>$$=(6,0)$$</p>\n<p>Substituting the coordinates of $Q$ into the equation of $\\Gamma$, we have</p>\n<p>$$\\text{L.S.}=6-3(0)-6$$</p>\n<p>$$=0$$</p>\n<p>$$=\\text{R.S.}$$</p>\n<p>Thus, $Q$ passes through $\\Gamma$.　<strong>【1A】</strong></p>\n<p>(b)(ii)　Since $Q$ passes through $\\Gamma$, $HQ=KQ=$ radius of $C$.　<strong>【1M】</strong></p>\n<p>Let $F$ and $G$ be the feet of the perpendiculars from $A$ and $B$ to $\\Gamma$ respectively.</p>\n<p>$$AF=BG=\\text{perpendicular distance from }L\\text{ to }\\Gamma.$$　<strong>【1M】</strong></p>\n<p>Hence, we have</p>\n<p>$$\\text{Area of }\\triangle AQH:\\text{Area of }\\triangle BQK$$</p>\n<p>$$=\\frac{1}{2}HQ\\cdot AF:\\frac{1}{2}KQ\\cdot BG$$</p>\n<p>$$=1:1$$　<strong>【1A】</strong></p>\n<p><strong>（9 分）</strong></p>",
-   "file": "2012_P1_解答.md"
-  },
-  {
-   "subject": "數學",
-   "year": 2012,
-   "paper": "Paper 1",
    "type": "題目",
    "qno": 15,
    "title": "乙部 第 15 題",
@@ -475,21 +550,6 @@ window.QB = {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 1",
-   "type": "解答",
-   "qno": 15,
-   "title": "Q15　標準差與標準分",
-   "section": "Paper 1　乙部",
-   "tags": [
-    "標準差與標準分"
-   ],
-   "text": "(a)　The standard deviation after the adjustment\n\n$$=10\\times(1+20\\%)$$\n\n$$=12$$　**【1A】**\n\n(b)　Let $\\mu$ be the mean score before the adjustment.\n\nLet $x_i$ be the test score of a student before the adjustment.\n\nThe standard score of that student after the adjustment\n\n$$=\\frac{(1.2x_i+5)-(1.2\\mu+5)}{12}$$　**【1A】**（for mean score after adjustment）\n\n$$=\\frac{1.2(x_i-\\mu)}{12}$$\n\n$$=\\frac{x_i-\\mu}{10}$$\n\nThus, the standard score of each student remains unchanged.　**【1A】**（f.t.）\n\n**（3 分）**",
-   "html": "<p>15.&nbsp;&nbsp;&nbsp;(a)　The standard deviation after the adjustment</p>\n<p>$$=10\\times(1+20\\%)$$</p>\n<p>$$=12$$　<strong>【1A】</strong></p>\n<p>(b)　Let $\\mu$ be the mean score before the adjustment.</p>\n<p>Let $x_i$ be the test score of a student before the adjustment.</p>\n<p>The standard score of that student after the adjustment</p>\n<p>$$=\\frac{(1.2x_i+5)-(1.2\\mu+5)}{12}$$　<strong>【1A】</strong>（for mean score after adjustment）</p>\n<p>$$=\\frac{1.2(x_i-\\mu)}{12}$$</p>\n<p>$$=\\frac{x_i-\\mu}{10}$$</p>\n<p>Thus, the standard score of each student remains unchanged.　<strong>【1A】</strong>（f.t.）</p>\n<p><strong>（3 分）</strong></p>",
-   "file": "2012_P1_解答.md"
-  },
-  {
-   "subject": "數學",
-   "year": 2012,
-   "paper": "Paper 1",
    "type": "題目",
    "qno": 16,
    "title": "乙部 第 16 題",
@@ -501,21 +561,6 @@ window.QB = {
    "text": "某公司有 8 個部門。每個部門各提名 2 位代表以成立一個有 16 位成員的工作小組。從該工作小組中隨機選出 4 位成員。\n\n(a)　求所選出的 4 位成員由 4 個不同部門提名的概率。（2 分）\n\n(b)　求所選出的 4 位成員至多由 3 個不同部門提名的概率。（2 分）",
    "html": "<p>16.&nbsp;&nbsp;&nbsp;某公司有 8 個部門。每個部門各提名 2 位代表以成立一個有 16 位成員的工作小組。從該工作小組中隨機選出 4 位成員。</p>\n<p>(a)　求所選出的 4 位成員由 4 個不同部門提名的概率。（2 分）</p>\n<p>(b)　求所選出的 4 位成員至多由 3 個不同部門提名的概率。（2 分）</p>",
    "file": "2012_P1_題目中文卷.md"
-  },
-  {
-   "subject": "數學",
-   "year": 2012,
-   "paper": "Paper 1",
-   "type": "解答",
-   "qno": 16,
-   "title": "Q16　概率",
-   "section": "Paper 1　乙部",
-   "tags": [
-    "概率"
-   ],
-   "text": "(a)　The required probability\n\n$$=\\frac{C^{8}_{4}(C^{2}_{1})^4}{C^{16}_{4}}$$　**【1M】**（for numerator or denominator）\n\n$$=\\frac{8}{13}$$　**【1A】**（r.t. 0.615）\n\n**另法：**\n\n$$=\\left(\\frac{14}{15}\\right)\\left(\\frac{12}{14}\\right)\\left(\\frac{10}{13}\\right)$$　**【1M】**（for $\\left(\\dfrac{n-2}{n-1}\\right)\\left(\\dfrac{n-4}{n-2}\\right)\\left(\\dfrac{n-6}{n-3}\\right)$）\n\n$$=\\frac{8}{13}$$　**【1A】**（r.t. 0.615）\n\n(b)　The required probability\n\n$$=1-\\frac{8}{13}$$　**【1M】**（for $1-$ (a)）\n\n$$=\\frac{5}{13}$$　**【1A】**（r.t. 0.385）\n\n**另法：**\n\n$$=\\frac{C^{8}_{2}+C^{8}_{3}(C^{2}_{1})^2}{C^{16}_{4}}$$　**【1M】**（for considering 2 cases）\n\n$$=\\frac{5}{13}$$　**【1A】**（r.t. 0.385）\n\n**另法：**\n\n$$=\\frac{1}{15}+\\left(\\frac{14}{15}\\right)\\left(\\frac{2}{14}\\right)+\\left(\\frac{14}{15}\\right)\\left(\\frac{12}{14}\\right)\\left(\\frac{3}{13}\\right)$$　**【1M】**（for considering 3 cases）\n\n$$=\\frac{5}{13}$$　**【1A】**（r.t. 0.385）\n\n**（4 分）**",
-   "html": "<p>16.&nbsp;&nbsp;&nbsp;(a)　The required probability</p>\n<p>$$=\\frac{C^{8}<em>{4}(C^{2}</em>{1})^4}{C^{16}_{4}}$$　<strong>【1M】</strong>（for numerator or denominator）</p>\n<p>$$=\\frac{8}{13}$$　<strong>【1A】</strong>（r.t. 0.615）</p>\n<p><strong>另法：</strong></p>\n<p>$$=\\left(\\frac{14}{15}\\right)\\left(\\frac{12}{14}\\right)\\left(\\frac{10}{13}\\right)$$　<strong>【1M】</strong>（for $\\left(\\dfrac{n-2}{n-1}\\right)\\left(\\dfrac{n-4}{n-2}\\right)\\left(\\dfrac{n-6}{n-3}\\right)$）</p>\n<p>$$=\\frac{8}{13}$$　<strong>【1A】</strong>（r.t. 0.615）</p>\n<p>(b)　The required probability</p>\n<p>$$=1-\\frac{8}{13}$$　<strong>【1M】</strong>（for $1-$ (a)）</p>\n<p>$$=\\frac{5}{13}$$　<strong>【1A】</strong>（r.t. 0.385）</p>\n<p><strong>另法：</strong></p>\n<p>$$=\\frac{C^{8}<em>{2}+C^{8}</em>{3}(C^{2}<em>{1})^2}{C^{16}</em>{4}}$$　<strong>【1M】</strong>（for considering 2 cases）</p>\n<p>$$=\\frac{5}{13}$$　<strong>【1A】</strong>（r.t. 0.385）</p>\n<p><strong>另法：</strong></p>\n<p>$$=\\frac{1}{15}+\\left(\\frac{14}{15}\\right)\\left(\\frac{2}{14}\\right)+\\left(\\frac{14}{15}\\right)\\left(\\frac{12}{14}\\right)\\left(\\frac{3}{13}\\right)$$　<strong>【1M】</strong>（for considering 3 cases）</p>\n<p>$$=\\frac{5}{13}$$　<strong>【1A】</strong>（r.t. 0.385）</p>\n<p><strong>（4 分）</strong></p>",
-   "file": "2012_P1_解答.md"
   },
   {
    "subject": "數學",
@@ -540,21 +585,6 @@ window.QB = {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 1",
-   "type": "解答",
-   "qno": 17,
-   "title": "Q17　圓的方程",
-   "section": "Paper 1　乙部",
-   "tags": [
-    "圓的方程"
-   ],
-   "text": "(a)　Since $C$ touches the $x$-axis, the radius of $C$ is 10.　**【1A】**（can be absorbed）\n\nThe equation of $C$ is\n\n$$(x-6)^2+(y-10)^2=10^2$$　**【1A】**\n\n(b)　The equation of $L$ is $y=-x+k$.　**【1M】**\n\nSubstituting $y=-x+k$ into the equation of $C$, we have\n\n$$(x-6)^2+(-x+k-10)^2=10^2$$\n\n$$2x^2-2(k-4)x+(k-10)^2-64=0$$\n\nLet $(x_0,y_0)$ be the mid-point of $AB$.\n\n$$x_0=\\frac{k-4}{2}$$\n\n$$=\\frac{k}{2}-2$$　**【1M+1A】**（1M for using sum of roots）\n\n$$y_0=-\\left(\\frac{k}{2}-2\\right)+k=\\frac{k}{2}+2$$　**【1A】**\n\nThus, the mid-point of $AB=\\left(\\dfrac{k}{2}-2,\\ \\dfrac{k}{2}+2\\right)$.\n\n**另法：**\n\nThe equation of $L$ is $y=-x+k$.　**【1M】**\n\nThe line passing through $(6,10)$ and perpendicular to $L$ has equation\n\n$$\\frac{y-10}{x-6}=1$$　**【1A】**\n\n$$y=x+4$$\n\nSubstituting $y=-x+k$ into the equation, we have\n\n$$-x+k=x+4$$　**【1M】**\n\n$$x=\\frac{k}{2}-2,\\quad y=\\frac{k}{2}+2$$　**【1A+1A】**\n\n**（7 分）**",
-   "html": "<p>17.&nbsp;&nbsp;&nbsp;(a)　Since $C$ touches the $x$-axis, the radius of $C$ is 10.　<strong>【1A】</strong>（can be absorbed）</p>\n<p>The equation of $C$ is</p>\n<p>$$(x-6)^2+(y-10)^2=10^2$$　<strong>【1A】</strong></p>\n<p>(b)　The equation of $L$ is $y=-x+k$.　<strong>【1M】</strong></p>\n<p>Substituting $y=-x+k$ into the equation of $C$, we have</p>\n<p>$$(x-6)^2+(-x+k-10)^2=10^2$$</p>\n<p>$$2x^2-2(k-4)x+(k-10)^2-64=0$$</p>\n<p>Let $(x_0,y_0)$ be the mid-point of $AB$.</p>\n<p>$$x_0=\\frac{k-4}{2}$$</p>\n<p>$$=\\frac{k}{2}-2$$　<strong>【1M+1A】</strong>（1M for using sum of roots）</p>\n<p>$$y_0=-\\left(\\frac{k}{2}-2\\right)+k=\\frac{k}{2}+2$$　<strong>【1A】</strong></p>\n<p>Thus, the mid-point of $AB=\\left(\\dfrac{k}{2}-2,\\ \\dfrac{k}{2}+2\\right)$.</p>\n<p><strong>另法：</strong></p>\n<p>The equation of $L$ is $y=-x+k$.　<strong>【1M】</strong></p>\n<p>The line passing through $(6,10)$ and perpendicular to $L$ has equation</p>\n<p>$$\\frac{y-10}{x-6}=1$$　<strong>【1A】</strong></p>\n<p>$$y=x+4$$</p>\n<p>Substituting $y=-x+k$ into the equation, we have</p>\n<p>$$-x+k=x+4$$　<strong>【1M】</strong></p>\n<p>$$x=\\frac{k}{2}-2,\\quad y=\\frac{k}{2}+2$$　<strong>【1A+1A】</strong></p>\n<p><strong>（7 分）</strong></p>",
-   "file": "2012_P1_解答.md"
-  },
-  {
-   "subject": "數學",
-   "year": 2012,
-   "paper": "Paper 1",
    "type": "題目",
    "qno": 18,
    "title": "乙部 第 18 題",
@@ -574,21 +604,6 @@ window.QB = {
    "subject": "數學",
    "year": 2012,
    "paper": "Paper 1",
-   "type": "解答",
-   "qno": 18,
-   "title": "Q18　立體幾何",
-   "section": "Paper 1　乙部",
-   "tags": [
-    "立體幾何"
-   ],
-   "text": "(a)　By sine formula,\n\n$$\\frac{PA}{\\sin\\angle PBA}=\\frac{AB}{\\sin\\angle APB}$$　**【1M】**\n\n$$\\frac{PA}{\\sin 60^\\circ}=\\frac{20}{\\sin(180^\\circ-72^\\circ-60^\\circ)}$$\n\n$$PA\\approx 23.30704256$$\n\n$$PA\\approx 23.3$$　**【1A】**（r.t.）\n\n> **圖（待重繪）**：原卷此處附示意圖，顯示以正方形為底的直立角錐體 $VABCD$（$\\angle VAB=72^\\circ$，底邊 20 cm），$P$、$Q$ 分別為 $VA$、$VD$ 上的點使得 $PQ\\parallel BC$，並切去角錐體 $VPBCQ$；圖上標示點 $A$–$G$、$P$、$Q$、$V$。\n\n(b)(i)　Let $E,F,G$ be the feet of the perpendicular of $P$ to the plane $ABCD$, the line $AB$ and the line $BC$ respectively.\n\n$$\\frac{AF}{PA}=\\cos\\angle PAB$$\n\n$$AF\\approx 7.20227224$$\n\n$$\\frac{AF}{AE}=\\cos\\angle EAF$$\n\n$$AE\\approx\\frac{7.20227224}{\\cos 45^\\circ}$$\n\n$$\\approx 10.18555108$$\n\n$$PE=\\sqrt{PA^2-AE^2}$$　**【1M】**\n\n$$\\approx\\sqrt{23.30704256^2-10.18555108^2}$$\n\n$$\\approx 20.96360613$$\n\n$$EG=FB$$　**【1M】**\n\n$$=AB-AF$$\n\n$$\\approx 12.79772776$$\n\n$$\\tan\\alpha=\\tan\\angle PGE$$　**【1M】**（for identifying the angle）\n\n$$=\\frac{PE}{EG}$$\n\n$$\\approx 1.638072518$$\n\n$$\\alpha\\approx 58.59703733^\\circ$$\n\n$$\\alpha\\approx 58.6^\\circ$$　**【1A】**\n\n(b)(ii)　$$\\tan\\beta=\\tan\\angle PBE=\\frac{PE}{EB}$$　**【1M】**（for identifying the angle）\n\n$$EB>EG$$\n\n$$\\frac{PE}{EB}<\\frac{PE}{EG}$$\n\n$$\\tan\\beta<\\tan\\alpha$$\n\n$$\\beta<\\alpha$$　**【1A】**（f.t.）\n\n**（8 分）**",
-   "html": "<p>18.&nbsp;&nbsp;&nbsp;(a)　By sine formula,</p>\n<p>$$\\frac{PA}{\\sin\\angle PBA}=\\frac{AB}{\\sin\\angle APB}$$　<strong>【1M】</strong></p>\n<p>$$\\frac{PA}{\\sin 60^\\circ}=\\frac{20}{\\sin(180^\\circ-72^\\circ-60^\\circ)}$$</p>\n<p>$$PA\\approx 23.30704256$$</p>\n<p>$$PA\\approx 23.3$$　<strong>【1A】</strong>（r.t.）</p>\n<blockquote>\n<p><strong>圖（待重繪）</strong>：原卷此處附示意圖，顯示以正方形為底的直立角錐體 $VABCD$（$\\angle VAB=72^\\circ$，底邊 20 cm），$P$、$Q$ 分別為 $VA$、$VD$ 上的點使得 $PQ\\parallel BC$，並切去角錐體 $VPBCQ$；圖上標示點 $A$–$G$、$P$、$Q$、$V$。</p>\n</blockquote>\n<p>(b)(i)　Let $E,F,G$ be the feet of the perpendicular of $P$ to the plane $ABCD$, the line $AB$ and the line $BC$ respectively.</p>\n<p>$$\\frac{AF}{PA}=\\cos\\angle PAB$$</p>\n<p>$$AF\\approx 7.20227224$$</p>\n<p>$$\\frac{AF}{AE}=\\cos\\angle EAF$$</p>\n<p>$$AE\\approx\\frac{7.20227224}{\\cos 45^\\circ}$$</p>\n<p>$$\\approx 10.18555108$$</p>\n<p>$$PE=\\sqrt{PA^2-AE^2}$$　<strong>【1M】</strong></p>\n<p>$$\\approx\\sqrt{23.30704256^2-10.18555108^2}$$</p>\n<p>$$\\approx 20.96360613$$</p>\n<p>$$EG=FB$$　<strong>【1M】</strong></p>\n<p>$$=AB-AF$$</p>\n<p>$$\\approx 12.79772776$$</p>\n<p>$$\\tan\\alpha=\\tan\\angle PGE$$　<strong>【1M】</strong>（for identifying the angle）</p>\n<p>$$=\\frac{PE}{EG}$$</p>\n<p>$$\\approx 1.638072518$$</p>\n<p>$$\\alpha\\approx 58.59703733^\\circ$$</p>\n<p>$$\\alpha\\approx 58.6^\\circ$$　<strong>【1A】</strong></p>\n<p>(b)(ii)　$$\\tan\\beta=\\tan\\angle PBE=\\frac{PE}{EB}$$　<strong>【1M】</strong>（for identifying the angle）</p>\n<p>$$EB&gt;EG$$</p>\n<p>$$\\frac{PE}{EB}&lt;\\frac{PE}{EG}$$</p>\n<p>$$\\tan\\beta&lt;\\tan\\alpha$$</p>\n<p>$$\\beta&lt;\\alpha$$　<strong>【1A】</strong>（f.t.）</p>\n<p><strong>（8 分）</strong></p>",
-   "file": "2012_P1_解答.md"
-  },
-  {
-   "subject": "數學",
-   "year": 2012,
-   "paper": "Paper 1",
    "type": "題目",
    "qno": 19,
    "title": "乙部 第 19 題",
@@ -603,21 +618,6 @@ window.QB = {
    "text": "在某城市，一機場的空運貨站 $X$ 自它開始運作起計的第 $n$ 年所處理的貨物的重量為 $A(n)$ 公噸，其中 $n$ 為一正整數。已知 $A(n)=ab^{2n}$，其中 $a$ 及 $b$ 均為正常數。現知 $X$ 自它開始運作起計的第 1 年及第 2 年所處理的貨物的重量分別為 254100 公噸及 307461 公噸。\n\n(a)\n\n　　(i)　求 $a$ 及 $b$。由此求 $X$ 自它開始運作起計的第 4 年所處理的貨物的重量。\n\n　　(ii)　以 $n$ 表 $X$ 自它開始運作起計的首 $n$ 年所處理的貨物的總重量。（6 分）\n\n(b)　自 $X$ 運作了 4 年，空運貨站 $Y$ 開始運作。設 B$(m)$ 公噸為 $Y$ 自它開始運作起計的第 $m$ 年所處理的貨物的重量，其中 $m$ 為一正整數。已知 B$(m) = 2ab^m$。\n\n　　(i)　該機場的經理宣稱 $Y$ 運作後，每一年 $Y$ 所處理的貨物的重量均較 $X$ 所處理的少。你是否同意？試解釋你的答案。\n\n　　(ii)　該機場的監督認為當 $X$ 和 $Y$ 所處理的貨物自 $X$ 開始運作起計的總重量超出 20 000 000 公噸時，應安裝新設施以維持空運貨站的工作效能。根據該監督的想法，自 $X$ 開始運作起計的哪一年應安裝新設施？（7 分）",
    "html": "<p>19.&nbsp;&nbsp;&nbsp;在某城市，一機場的空運貨站 $X$ 自它開始運作起計的第 $n$ 年所處理的貨物的重量為 $A(n)$ 公噸，其中 $n$ 為一正整數。已知 $A(n)=ab^{2n}$，其中 $a$ 及 $b$ 均為正常數。現知 $X$ 自它開始運作起計的第 1 年及第 2 年所處理的貨物的重量分別為 254100 公噸及 307461 公噸。</p>\n<p>(a)</p>\n<p>(i)　求 $a$ 及 $b$。由此求 $X$ 自它開始運作起計的第 4 年所處理的貨物的重量。</p>\n<p>(ii)　以 $n$ 表 $X$ 自它開始運作起計的首 $n$ 年所處理的貨物的總重量。（6 分）</p>\n<p>(b)　自 $X$ 運作了 4 年，空運貨站 $Y$ 開始運作。設 B$(m)$ 公噸為 $Y$ 自它開始運作起計的第 $m$ 年所處理的貨物的重量，其中 $m$ 為一正整數。已知 B$(m) = 2ab^m$。</p>\n<p>(i)　該機場的經理宣稱 $Y$ 運作後，每一年 $Y$ 所處理的貨物的重量均較 $X$ 所處理的少。你是否同意？試解釋你的答案。</p>\n<p>(ii)　該機場的監督認為當 $X$ 和 $Y$ 所處理的貨物自 $X$ 開始運作起計的總重量超出 20 000 000 公噸時，應安裝新設施以維持空運貨站的工作效能。根據該監督的想法，自 $X$ 開始運作起計的哪一年應安裝新設施？（7 分）</p>",
    "file": "2012_P1_題目中文卷.md"
-  },
-  {
-   "subject": "數學",
-   "year": 2012,
-   "paper": "Paper 1",
-   "type": "解答",
-   "qno": 19,
-   "title": "Q19　等比數列",
-   "section": "Paper 1　乙部",
-   "tags": [
-    "等比數列"
-   ],
-   "text": "(a)(i)　$$\\begin{cases} A(1)=ab^2=254100 \\\\ A(2)=ab^{2(2)}=307461 \\end{cases}$$\n\nSolving, we have $b=1.1$ and $a=210000$.　**【1A+1A】**\n\n$$A(4)=ab^{2(4)}$$\n\n$$=(210000)(1.21^4)$$\n\n$$=450,153.6501$$\n\nThus, the weight of the cargos handled in the 4-th year is 450,153.6501 tonnes.　**【1A】**（r.t. 450,000）\n\n(a)(ii)　The total weight of the cargos handled in $n$ years\n\n$$=\\sum_{i=1}^{n}A(i)$$　**【1M】**（for summing up $A(i)$）\n\n$$=ab^2\\frac{b^{2n}-1}{b^2-1}$$　**【1M】**（for $\\displaystyle\\sum_{i=1}^{n}kr^i=\\frac{kr(r^n-1)}{r-1}$）\n\n$$=\\frac{(210,000)(1.21)(1.21^n-1)}{1.21-1}$$\n\n$$=1,210,000(1.21^n-1)\\text{ tonnes}$$　**【1A】**\n\n(b)(i)　$$\\frac{A(n)}{B(m)}=\\frac{ab^{2n}}{2ab^m}$$　**【1M】**（for considering the ratio $\\dfrac{A(n)}{B(m)}$）\n\n$$=\\frac{b^{2n}}{2b^{n-4}}$$　**【1A】**（for changing $m$ to $n-4$）\n\n$$=\\frac{1}{2}\\,1.1^{n+4}$$\n\n$$\\le 1$$\n\nfor $n\\le\\log_{1.1}2-4\\approx 3.27$\n\nThus, for the first 3 years, the weight of the cargos handled by $Y$ is larger than that by $X$.　**【1A】**（f.t.）\n\n(b)(ii)　The total weight of the cargos handled in $n$ years by $X$ and $Y$\n\n$$=\\sum_{i=1}^{n}ab^{2i}+\\sum_{i=1}^{n-4}2ab^i$$　**【1A】**（for correct upper limits）\n\n$$=1,210,000(1.21^n-1)+\\frac{2(210,000)(1.1)(1.1^{n-4}-1)}{1.1-1}$$\n\n$$=1,210,000(1.1^{2n})+\\frac{4,200,000}{1.331}(1.1^n)-5,830,000$$\n\nLet $x=1.1^n$, we have\n\n$$1,210,000x^2+\\frac{4,200,000}{1.331}x-5,830,000>20,000,000$$　**【1M】**（for setting up a quadratic equation）\n\n$$1,610,510x^2+4,200,000x-34,379,730>0$$\n\n$$x<-6.104700691\\ (\\text{rejected since }1.1^n>0)\\ \\text{ or }\\ x>3.496831134.$$　**【1A】**\n\nThus, we have\n\n$$1.1^n>3.496831134$$\n\n$$n>13.13455888$$\n\nThe new facility should be installed in the 13-th year.　**【1A】**\n\n**（13 分）**",
-   "html": "<p>19.&nbsp;&nbsp;&nbsp;(a)(i)　$$\\begin{cases} A(1)=ab^2=254100 \\ A(2)=ab^{2(2)}=307461 \\end{cases}$$</p>\n<p>Solving, we have $b=1.1$ and $a=210000$.　<strong>【1A+1A】</strong></p>\n<p>$$A(4)=ab^{2(4)}$$</p>\n<p>$$=(210000)(1.21^4)$$</p>\n<p>$$=450,153.6501$$</p>\n<p>Thus, the weight of the cargos handled in the 4-th year is 450,153.6501 tonnes.　<strong>【1A】</strong>（r.t. 450,000）</p>\n<p>(a)(ii)　The total weight of the cargos handled in $n$ years</p>\n<p>$$=\\sum_{i=1}^{n}A(i)$$　<strong>【1M】</strong>（for summing up $A(i)$）</p>\n<p>$$=ab^2\\frac{b^{2n}-1}{b^2-1}$$　<strong>【1M】</strong>（for $\\displaystyle\\sum_{i=1}^{n}kr^i=\\frac{kr(r^n-1)}{r-1}$）</p>\n<p>$$=\\frac{(210,000)(1.21)(1.21^n-1)}{1.21-1}$$</p>\n<p>$$=1,210,000(1.21^n-1)\\text{ tonnes}$$　<strong>【1A】</strong></p>\n<p>(b)(i)　$$\\frac{A(n)}{B(m)}=\\frac{ab^{2n}}{2ab^m}$$　<strong>【1M】</strong>（for considering the ratio $\\dfrac{A(n)}{B(m)}$）</p>\n<p>$$=\\frac{b^{2n}}{2b^{n-4}}$$　<strong>【1A】</strong>（for changing $m$ to $n-4$）</p>\n<p>$$=\\frac{1}{2}\\,1.1^{n+4}$$</p>\n<p>$$\\le 1$$</p>\n<p>for $n\\le\\log_{1.1}2-4\\approx 3.27$</p>\n<p>Thus, for the first 3 years, the weight of the cargos handled by $Y$ is larger than that by $X$.　<strong>【1A】</strong>（f.t.）</p>\n<p>(b)(ii)　The total weight of the cargos handled in $n$ years by $X$ and $Y$</p>\n<p>$$=\\sum_{i=1}^{n}ab^{2i}+\\sum_{i=1}^{n-4}2ab^i$$　<strong>【1A】</strong>（for correct upper limits）</p>\n<p>$$=1,210,000(1.21^n-1)+\\frac{2(210,000)(1.1)(1.1^{n-4}-1)}{1.1-1}$$</p>\n<p>$$=1,210,000(1.1^{2n})+\\frac{4,200,000}{1.331}(1.1^n)-5,830,000$$</p>\n<p>Let $x=1.1^n$, we have</p>\n<p>$$1,210,000x^2+\\frac{4,200,000}{1.331}x-5,830,000&gt;20,000,000$$　<strong>【1M】</strong>（for setting up a quadratic equation）</p>\n<p>$$1,610,510x^2+4,200,000x-34,379,730&gt;0$$</p>\n<p>$$x&lt;-6.104700691\\ (\\text{rejected since }1.1^n&gt;0)\\ \\text{ or }\\ x&gt;3.496831134.$$　<strong>【1A】</strong></p>\n<p>Thus, we have</p>\n<p>$$1.1^n&gt;3.496831134$$</p>\n<p>$$n&gt;13.13455888$$</p>\n<p>The new facility should be installed in the 13-th year.　<strong>【1A】</strong></p>\n<p><strong>（13 分）</strong></p>",
-   "file": "2012_P1_解答.md"
   },
   {
    "subject": "化學",
@@ -7484,25 +7484,6 @@ window.QB = {
    "file": "2015_P1B_QU(CHI).md"
   },
   {
-   "subject": "化學",
-   "year": 2015,
-   "paper": "Paper 2",
-   "type": "題目",
-   "qno": 1,
-   "title": "第 1 題",
-   "section": "卷二　甲部",
-   "tags": [
-    "反應級數",
-    "哈柏法",
-    "活化能",
-    "乙酸",
-    "氯鹼工業"
-   ],
-   "text": "回答試題的所有部分。\n\n(a)　回答以下短問題：\n\n　　(i)　某反應對 I⁻(aq) 的級數為零，而對 CH₃COCH₃(aq) 和 H⁺(aq) 的級數都是一。\n\n　　　(1)　寫出在反應混合物中，I⁻(aq) 濃度的改變對這反應速率的影響（如有）。\n\n　　　(2)　寫出這反應的速率方程。（2 分）\n\n　　(ii)　寫出在哈柏法中生成氨的反應的化學方程式。（1 分）\n\n　　(iii)　當溫度由 298 K 上升至 308 K 時，某反應的速率常數增加一倍。計算這反應的活化能。（氣體常數 R = 8.31 J K⁻¹ mol⁻¹；阿列紐斯方程：log k = 常數 − Eₐ/2.3RT）（2 分）\n\n(b)　乙酸可從下列兩個途徑生產而得：\n\n【圖待補：原卷第 1(b) 乙酸兩途徑生產流程（第 37 頁）】\n\n　　途徑 (1)：糖溶液 → 酵母 → CH₃CH₂OH(aq) → O₂ → CH₃COOH(aq)\n\n　　途徑 (2)：CH₃OH(l) + CO(g) → 催化劑 → CH₃COOH(l)（180°C；30 atm）\n\n　　途徑 (1) 和 (2) 的反應均需要使用催化劑。\n\n　　(i)　(1)　在同一草圖上，繪畫一反應的兩個附標示的能線圖（一個有催化劑而另一個沒有催化劑）。\n\n　　　(2)　理論上，催化劑在反應中沒有被消耗。提出為什麼在工業過程中仍需要不時把使用過的催化劑更新。（4 分）\n\n　　(ii)　舉出兩個原因，說明為什麼途徑 (1) 被視為一個綠色的過程。（2 分）\n\n　　(iii)　舉出兩個原因，說明為什麼在塑膠工業用的乙酸是經途徑 (2)，而非經途徑 (1) 生產而得。（2 分）\n\n(c)　氯是氯鹼工業所製造的其中一個產物。在氯鹼工業所涉及的電解可以在汞電解池、隔膜電解池或膜電解池中進行。\n\n　　(i)　寫出氯鹼工業中所用的原料。（1 分）\n\n　　(ii)　建議一個為氯鹼工業興建化學工廠的選址準則。（1 分）\n\n　　(iii)　寫出在氯鹼工業中所涉及的電解的總反應式。（1 分）\n\n　　(iv)　解釋為什麼汞電解池不被視為對環境友好。（1 分）\n\n　　(v)　膜電解池比較隔膜電解池有什麼優勝之處？（1 分）\n\n　　(vi)　氯鹼工業也可製造氯漂白劑和氫氯酸。輔以一化學方程式，解釋為什麼不應把氯漂白劑和氫氯酸儲存在一起。（2 分）",
-   "html": "<p>1.&nbsp;&nbsp;&nbsp;回答試題的所有部分。</p>\n<p>(a)　回答以下短問題：</p>\n<p>(i)　某反應對 I⁻(aq) 的級數為零，而對 CH₃COCH₃(aq) 和 H⁺(aq) 的級數都是一。</p>\n<p>(1)　寫出在反應混合物中，I⁻(aq) 濃度的改變對這反應速率的影響（如有）。</p>\n<p>(2)　寫出這反應的速率方程。（2 分）</p>\n<p>(ii)　寫出在哈柏法中生成氨的反應的化學方程式。（1 分）</p>\n<p>(iii)　當溫度由 298 K 上升至 308 K 時，某反應的速率常數增加一倍。計算這反應的活化能。（氣體常數 R = 8.31 J K⁻¹ mol⁻¹；阿列紐斯方程：log k = 常數 − Eₐ/2.3RT）（2 分）</p>\n<p>(b)　乙酸可從下列兩個途徑生產而得：</p>\n<p>【圖待補：原卷第 1(b) 乙酸兩途徑生產流程（第 37 頁）】</p>\n<p>途徑 (1)：糖溶液 → 酵母 → CH₃CH₂OH(aq) → O₂ → CH₃COOH(aq)</p>\n<p>途徑 (2)：CH₃OH(l) + CO(g) → 催化劑 → CH₃COOH(l)（180°C；30 atm）</p>\n<p>途徑 (1) 和 (2) 的反應均需要使用催化劑。</p>\n<p>(i)　(1)　在同一草圖上，繪畫一反應的兩個附標示的能線圖（一個有催化劑而另一個沒有催化劑）。</p>\n<p>(2)　理論上，催化劑在反應中沒有被消耗。提出為什麼在工業過程中仍需要不時把使用過的催化劑更新。（4 分）</p>\n<p>(ii)　舉出兩個原因，說明為什麼途徑 (1) 被視為一個綠色的過程。（2 分）</p>\n<p>(iii)　舉出兩個原因，說明為什麼在塑膠工業用的乙酸是經途徑 (2)，而非經途徑 (1) 生產而得。（2 分）</p>\n<p>(c)　氯是氯鹼工業所製造的其中一個產物。在氯鹼工業所涉及的電解可以在汞電解池、隔膜電解池或膜電解池中進行。</p>\n<p>(i)　寫出氯鹼工業中所用的原料。（1 分）</p>\n<p>(ii)　建議一個為氯鹼工業興建化學工廠的選址準則。（1 分）</p>\n<p>(iii)　寫出在氯鹼工業中所涉及的電解的總反應式。（1 分）</p>\n<p>(iv)　解釋為什麼汞電解池不被視為對環境友好。（1 分）</p>\n<p>(v)　膜電解池比較隔膜電解池有什麼優勝之處？（1 分）</p>\n<p>(vi)　氯鹼工業也可製造氯漂白劑和氫氯酸。輔以一化學方程式，解釋為什麼不應把氯漂白劑和氫氯酸儲存在一起。（2 分）</p>",
-   "file": "2015_P2_QU(CHI).md"
-  },
-  {
    "subject": "數學",
    "year": 2015,
    "paper": "Paper 2",
@@ -7519,26 +7500,6 @@ window.QB = {
    "file": "2015_P2_QU(CHI).md"
   },
   {
-   "subject": "化學",
-   "year": 2015,
-   "paper": "Paper 2",
-   "type": "題目",
-   "qno": 2,
-   "title": "乙部 第 2 題",
-   "section": "卷二　乙部",
-   "tags": [
-    "晶胞",
-    "甲醛",
-    "尼龍",
-    "聚苯乙烯",
-    "液晶",
-    "納米物料"
-   ],
-   "text": "回答試題的所有部分。\n\n(a)　回答以下短問題。\n\n　　(i)　下圖顯示銅金屬的晶胞。\n\n![Q2 銅金屬晶胞](2015_P2_crops/q2a.png)\n\n　　　(1)　寫出「晶胞」一詞的意思。\n\n　　　(2)　推定在這晶胞的銅原子數目。（2 分）\n\n　　(ii)　以下哪一項可由甲醛製成？氣球、電插座、釣魚絲、塑膠水管。（1 分）\n\n　　(iii)　製造尼龍-6,6 的其中一個單體是 HOOC(CH₂)₄COOH。傳統上，牠可從以下反應路徑製備而得：\n\n【圖待補：原卷第 2(a)(iii) 反應路徑結構式（第 39 頁）】\n\n　　舉出兩個原因，解釋為什麼以上反應路徑不被視為綠色。（2 分）\n\n(b)　以下方程式顯示從苯乙烯生成聚苯乙烯 (PS)：\n\n　　苯乙烯 → 有機過氧化物 → PS\n\n　　(i)　繪畫苯乙烯的結構。（1 分）\n\n　　(ii)　寫出生成 PS 所涉及聚合作用的類別名稱。（1 分）\n\n　　(iii)　發泡 PS 常用來製造盛載熱飲品的即棄杯子。\n\n　　　(1)　解釋為什麼發泡 PS 具有良好的隔熱性質。\n\n　　　(2)　建議一個製造發泡 PS 杯子的成型方法。\n\n　　　(3)　寫出兩個把由發泡 PS 製成的物品再循環的困難。（4 分）\n\n　　(iv)　苯乙烯可與丁-1,3-二烯聚合以得出耐衝擊聚苯乙烯 (HIPS)，而其中的單體隨機地連接在一起。某 HIPS 的部分結構顯示如下：\n\n![Q2 HIPS 部分結構](2015_P2_crops/q2b.png)\n\n　　提出為什麼 HIPS 的硬度比 PS 的較低。（2 分）\n\n(c)　液晶可用來製造流動電話的顯示屏。\n\n　　(i)　液晶的近晶相中的分子如何排列？（1 分）\n\n　　(ii)　下圖說明液晶顯示屏中一像素的基本運作原理。\n\n![Q2 液晶顯示屏像素運作](2015_P2_crops/q2c.png)\n\n　　解釋為什麼於液晶層施加電壓時該像素呈黑色。（4 分）\n\n　　(iii)　有些科學家提出使用納米物料可增加顯示屏的解像度。\n\n　　　(1)　寫出「納米物料」一詞的意思。\n\n　　　(2)　提出為什麼使用納米物料可增加顯示屏的解像度。（2 分）",
-   "html": "<p>2.&nbsp;&nbsp;&nbsp;回答試題的所有部分。</p>\n<p>(a)　回答以下短問題。</p>\n<p>(i)　下圖顯示銅金屬的晶胞。</p>\n<p><img alt=\"Q2 銅金屬晶胞\" src=\"chem_2015_P2_crops/q2a.png\" /></p>\n<p>(1)　寫出「晶胞」一詞的意思。</p>\n<p>(2)　推定在這晶胞的銅原子數目。（2 分）</p>\n<p>(ii)　以下哪一項可由甲醛製成？氣球、電插座、釣魚絲、塑膠水管。（1 分）</p>\n<p>(iii)　製造尼龍-6,6 的其中一個單體是 HOOC(CH₂)₄COOH。傳統上，牠可從以下反應路徑製備而得：</p>\n<p>【圖待補：原卷第 2(a)(iii) 反應路徑結構式（第 39 頁）】</p>\n<p>舉出兩個原因，解釋為什麼以上反應路徑不被視為綠色。（2 分）</p>\n<p>(b)　以下方程式顯示從苯乙烯生成聚苯乙烯 (PS)：</p>\n<p>苯乙烯 → 有機過氧化物 → PS</p>\n<p>(i)　繪畫苯乙烯的結構。（1 分）</p>\n<p>(ii)　寫出生成 PS 所涉及聚合作用的類別名稱。（1 分）</p>\n<p>(iii)　發泡 PS 常用來製造盛載熱飲品的即棄杯子。</p>\n<p>(1)　解釋為什麼發泡 PS 具有良好的隔熱性質。</p>\n<p>(2)　建議一個製造發泡 PS 杯子的成型方法。</p>\n<p>(3)　寫出兩個把由發泡 PS 製成的物品再循環的困難。（4 分）</p>\n<p>(iv)　苯乙烯可與丁-1,3-二烯聚合以得出耐衝擊聚苯乙烯 (HIPS)，而其中的單體隨機地連接在一起。某 HIPS 的部分結構顯示如下：</p>\n<p><img alt=\"Q2 HIPS 部分結構\" src=\"chem_2015_P2_crops/q2b.png\" /></p>\n<p>提出為什麼 HIPS 的硬度比 PS 的較低。（2 分）</p>\n<p>(c)　液晶可用來製造流動電話的顯示屏。</p>\n<p>(i)　液晶的近晶相中的分子如何排列？（1 分）</p>\n<p>(ii)　下圖說明液晶顯示屏中一像素的基本運作原理。</p>\n<p><img alt=\"Q2 液晶顯示屏像素運作\" src=\"chem_2015_P2_crops/q2c.png\" /></p>\n<p>解釋為什麼於液晶層施加電壓時該像素呈黑色。（4 分）</p>\n<p>(iii)　有些科學家提出使用納米物料可增加顯示屏的解像度。</p>\n<p>(1)　寫出「納米物料」一詞的意思。</p>\n<p>(2)　提出為什麼使用納米物料可增加顯示屏的解像度。（2 分）</p>",
-   "file": "2015_P2_QU(CHI).md"
-  },
-  {
    "subject": "數學",
    "year": 2015,
    "paper": "Paper 2",
@@ -7552,25 +7513,6 @@ window.QB = {
    ],
    "text": "$\\dfrac{\\left(3y^6\\right)^4}{3y^2}=$\n\n- A. $4y^5$\n- B. $4y^8$\n- C. $27y^{12}$\n- D. $27y^{22}$",
    "html": "<p>2.&nbsp;&nbsp;&nbsp;$\\dfrac{\\left(3y^6\\right)^4}{3y^2}=$</p>\n<ul>\n<li>A. $4y^5$</li>\n<li>B. $4y^8$</li>\n<li>C. $27y^{12}$</li>\n<li>D. $27y^{22}$</li>\n</ul>",
-   "file": "2015_P2_QU(CHI).md"
-  },
-  {
-   "subject": "化學",
-   "year": 2015,
-   "paper": "Paper 2",
-   "type": "題目",
-   "qno": 3,
-   "title": "第 3 題",
-   "section": "卷二　丙部",
-   "tags": [
-    "定性分析",
-    "儀器分析",
-    "同分異構",
-    "紅外光譜",
-    "凱氏定氮"
-   ],
-   "text": "回答試題的所有部分。\n\n(a)　回答以下短問題。\n\n　　(i)　建議一化學測試以顯示 Br⁻(aq) 的存在。（2 分）\n\n　　(ii)　提出一個儀器方法以測定一汽油樣本中辛烷的含量。（1 分）\n\n　　(iii)　提出怎樣可用化學方法從銅粉和氧化鐵(III) 的混合物中獲取銅粉。（2 分）\n\n(b)　下面所示的化合物 X 和 Y 是同分異構體，其相對分子質量為 120。\n\n![Q3 化合物 X 和 Y 結構](2015_P2_crops/q3b.png)\n\n　　(i)　X 和 Y 各自可與 2,4-二硝基苯肼溶液反應得出一個相似的觀察。寫出該觀察。（1 分）\n\n　　(ii)　建議一個化學測試來辨別 X 和 Y。（2 分）\n\n　　(iii)　說明怎樣可從各自的質譜來辨別 X 和 Y。（2 分）\n\n　　(iv)　參考下表所提供的資料，提出是否可以用紅外光譜法來辨別 X 和 Y。\n\n特徵紅外吸收波數域（伸展式）\n\n| 鍵合 | 化合物類別 | 波數域 cm⁻¹ |\n|---|---|---|\n| C=C | 烯 | 1610 至 1680 |\n| C=O | 醛、酮、羧酸及其衍生物 | 1680 至 1800 |\n| C≡C | 炔 [?] | 2070 至 2250 |\n| C≡N | 腈 | 2200 至 2280 |\n| O-H | 帶「氫鍵」的酸 | 2500 至 3300 |\n| C-H | 烷、烯及芳烴 | 2840 至 3095 |\n| O-H | 帶「氫鍵」的醇及酚 | 3230 至 3670 |\n| N-H | 胺 | 3350 至 3500 |\n\n（2 分）\n\n(c)　進行了一個包含以下四個步驟的實驗以測定一奶粉樣本中氮的含量：\n\n　　步驟 (1)：把 3.00 g 的該奶粉樣本與過量濃硫酸共熱，讓其中所有的氮變成 (NH₄)₂SO₄(aq)。\n\n　　步驟 (2)：把所得反應混合物與過量 NaOH(aq) 共熱以釋出 NH₃(g)，然後用 50.00 cm³ 的 1.00 M HCl(aq) 吸收所有釋出的 NH₃(g)。\n\n　　步驟 (3)：把所生成的溶液用去離子水稀釋至 250.0 cm³。\n\n　　步驟 (4)：把 25.00 cm³ 等分的該已稀釋溶液與 0.100 M KOH(aq) 進行滴定，用甲基橙為指示劑。平均需用 13.55 cm³ 的該 KOH(aq) 來達到終點。\n\n　　(i)　寫出步驟 (2) 中以下各反應的化學方程式：\n\n　　　(1)　(NH₄)₂SO₄(aq) 與 NaOH(aq) 的反應\n\n　　　(2)　NH₃(g) 與 HCl(aq) 的反應（2 分）\n\n　　(ii)　寫出步驟 (4) 中於滴定終點的顏色變化。（1 分）\n\n　　(iii)　計算在這奶粉樣本中氮的質量百分率。（相對原子質量：N = 14.0）（4 分）\n\n　　(iv)　在找出奶粉樣本中的蛋白質含量時，一常用方法是測定該樣本中的氮含量，而非直接測定蛋白質含量。提出這常用方法的一個限制。（1 分）\n\n---\n\n*卷二完 —*\n\n## 待人工核對\n\n本卷為第 2 層文字交貨，由 easyocr（ch_tra+en，GPU）掃描底稿清洗而成；現模型無影像輸入，未能對頁影像覆核。以下題號建議第 3 層精修時對頁覆核：\n\n- 第 1(a)(iii) 題：阿列紐斯方程「log k = 常數 − Eₐ/2.3RT」由 OCR 重建（OCR 讀作「logk=常數-2.3RT」），Eₐ 項待對頁核實。\n- 第 1(b) 題：乙酸兩途徑流程圖截唔到，標【圖待補】；「180°C；30 atm」依 OCR 校正（「30 am」）。\n- 第 2(a)(iii) 題：反應路徑結構式截唔到，標【圖待補】；單體「HOOC(CH₂)₄COOH」由 OCR 重建（「HOOC(CHaACOOH」）。\n- 第 2(b) 題：「有機過氧化物」依 OCR 校正；HIPS 部分結構為 300dpi 截圖。\n- 第 2(c)(ii) 題：液晶像素圖為 300dpi 截圖（兩幅：施加電壓／沒有施加電壓）。\n- 第 3(b) 題：化合物 X 和 Y（OCR 讀作「1」）結構為 300dpi 截圖；「2,4-二硝基苯肼」依 OCR 校正（「2,4-二硝基苯腓」）。\n- 第 3(b)(iv) 題：紅外吸收表「C≡C」行化合物類別 OCR 未讀出，標 [?]（推斷為「炔」）；各波數域依 OCR 校正，待對頁核實。\n- 第 3(c) 題：步驟 (2)「(NH₄)₂SO₄(aq)」「NaOH(aq)」、50.00 cm³／1.00 M HCl、0.100 M KOH、13.55 cm³ 等依 OCR 校正，待對頁核實。\n- 第 2(a)(i)、2(b)(iv)、2(c)(ii)、3(b) 題：圖為 300dpi 原卷截圖（程式定位＋墨跡覆蓋率校驗；位置／範圍待 spot-check）；第 3 層再換成向量重繪。",
-   "html": "<p>3.&nbsp;&nbsp;&nbsp;回答試題的所有部分。</p>\n<p>(a)　回答以下短問題。</p>\n<p>(i)　建議一化學測試以顯示 Br⁻(aq) 的存在。（2 分）</p>\n<p>(ii)　提出一個儀器方法以測定一汽油樣本中辛烷的含量。（1 分）</p>\n<p>(iii)　提出怎樣可用化學方法從銅粉和氧化鐵(III) 的混合物中獲取銅粉。（2 分）</p>\n<p>(b)　下面所示的化合物 X 和 Y 是同分異構體，其相對分子質量為 120。</p>\n<p><img alt=\"Q3 化合物 X 和 Y 結構\" src=\"chem_2015_P2_crops/q3b.png\" /></p>\n<p>(i)　X 和 Y 各自可與 2,4-二硝基苯肼溶液反應得出一個相似的觀察。寫出該觀察。（1 分）</p>\n<p>(ii)　建議一個化學測試來辨別 X 和 Y。（2 分）</p>\n<p>(iii)　說明怎樣可從各自的質譜來辨別 X 和 Y。（2 分）</p>\n<p>(iv)　參考下表所提供的資料，提出是否可以用紅外光譜法來辨別 X 和 Y。</p>\n<p>特徵紅外吸收波數域（伸展式）</p>\n<table>\n<thead>\n<tr>\n<th>鍵合</th>\n<th>化合物類別</th>\n<th>波數域 cm⁻¹</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>C=C</td>\n<td>烯</td>\n<td>1610 至 1680</td>\n</tr>\n<tr>\n<td>C=O</td>\n<td>醛、酮、羧酸及其衍生物</td>\n<td>1680 至 1800</td>\n</tr>\n<tr>\n<td>C≡C</td>\n<td>炔 [?]</td>\n<td>2070 至 2250</td>\n</tr>\n<tr>\n<td>C≡N</td>\n<td>腈</td>\n<td>2200 至 2280</td>\n</tr>\n<tr>\n<td>O-H</td>\n<td>帶「氫鍵」的酸</td>\n<td>2500 至 3300</td>\n</tr>\n<tr>\n<td>C-H</td>\n<td>烷、烯及芳烴</td>\n<td>2840 至 3095</td>\n</tr>\n<tr>\n<td>O-H</td>\n<td>帶「氫鍵」的醇及酚</td>\n<td>3230 至 3670</td>\n</tr>\n<tr>\n<td>N-H</td>\n<td>胺</td>\n<td>3350 至 3500</td>\n</tr>\n</tbody>\n</table>\n<p>（2 分）</p>\n<p>(c)　進行了一個包含以下四個步驟的實驗以測定一奶粉樣本中氮的含量：</p>\n<p>步驟 (1)：把 3.00 g 的該奶粉樣本與過量濃硫酸共熱，讓其中所有的氮變成 (NH₄)₂SO₄(aq)。</p>\n<p>步驟 (2)：把所得反應混合物與過量 NaOH(aq) 共熱以釋出 NH₃(g)，然後用 50.00 cm³ 的 1.00 M HCl(aq) 吸收所有釋出的 NH₃(g)。</p>\n<p>步驟 (3)：把所生成的溶液用去離子水稀釋至 250.0 cm³。</p>\n<p>步驟 (4)：把 25.00 cm³ 等分的該已稀釋溶液與 0.100 M KOH(aq) 進行滴定，用甲基橙為指示劑。平均需用 13.55 cm³ 的該 KOH(aq) 來達到終點。</p>\n<p>(i)　寫出步驟 (2) 中以下各反應的化學方程式：</p>\n<p>(1)　(NH₄)₂SO₄(aq) 與 NaOH(aq) 的反應</p>\n<p>(2)　NH₃(g) 與 HCl(aq) 的反應（2 分）</p>\n<p>(ii)　寫出步驟 (4) 中於滴定終點的顏色變化。（1 分）</p>\n<p>(iii)　計算在這奶粉樣本中氮的質量百分率。（相對原子質量：N = 14.0）（4 分）</p>\n<p>(iv)　在找出奶粉樣本中的蛋白質含量時，一常用方法是測定該樣本中的氮含量，而非直接測定蛋白質含量。提出這常用方法的一個限制。（1 分）</p>\n<hr />\n<p><em>卷二完 —</em></p>\n<h2>待人工核對</h2>\n<p>本卷為第 2 層文字交貨，由 easyocr（ch_tra+en，GPU）掃描底稿清洗而成；現模型無影像輸入，未能對頁影像覆核。以下題號建議第 3 層精修時對頁覆核：</p>\n<ul>\n<li>第 1(a)(iii) 題：阿列紐斯方程「log k = 常數 − Eₐ/2.3RT」由 OCR 重建（OCR 讀作「logk=常數-2.3RT」），Eₐ 項待對頁核實。</li>\n<li>第 1(b) 題：乙酸兩途徑流程圖截唔到，標【圖待補】；「180°C；30 atm」依 OCR 校正（「30 am」）。</li>\n<li>第 2(a)(iii) 題：反應路徑結構式截唔到，標【圖待補】；單體「HOOC(CH₂)₄COOH」由 OCR 重建（「HOOC(CHaACOOH」）。</li>\n<li>第 2(b) 題：「有機過氧化物」依 OCR 校正；HIPS 部分結構為 300dpi 截圖。</li>\n<li>第 2(c)(ii) 題：液晶像素圖為 300dpi 截圖（兩幅：施加電壓／沒有施加電壓）。</li>\n<li>第 3(b) 題：化合物 X 和 Y（OCR 讀作「1」）結構為 300dpi 截圖；「2,4-二硝基苯肼」依 OCR 校正（「2,4-二硝基苯腓」）。</li>\n<li>第 3(b)(iv) 題：紅外吸收表「C≡C」行化合物類別 OCR 未讀出，標 [?]（推斷為「炔」）；各波數域依 OCR 校正，待對頁核實。</li>\n<li>第 3(c) 題：步驟 (2)「(NH₄)₂SO₄(aq)」「NaOH(aq)」、50.00 cm³／1.00 M HCl、0.100 M KOH、13.55 cm³ 等依 OCR 校正，待對頁核實。</li>\n<li>第 2(a)(i)、2(b)(iv)、2(c)(ii)、3(b) 題：圖為 300dpi 原卷截圖（程式定位＋墨跡覆蓋率校驗；位置／範圍待 spot-check）；第 3 層再換成向量重繪。</li>\n</ul>",
    "file": "2015_P2_QU(CHI).md"
   },
   {
@@ -8272,6 +8214,707 @@ window.QB = {
    "text": "設 $x_1$、$y_1$ 及 $z_1$ 分別為 $\\left\\{a_1,a_2,\\ldots,a_{50}\\right\\}$ 的平均值、中位數及方差；而 $x_2$、$y_2$ 及 $z_2$ 分別為 $\\left\\{a_1,a_2,\\ldots,a_{49}\\right\\}$ 的平均值、中位數及方差。若 $x_1=a_{50}$，則下列何者必為正確？\n\n　I. $x_1=x_2$\n\n　II. $y_1\\ge y_2$\n\n　III. $z_1\\le z_2$\n\n- A. 只有 I 及 II\n- B. 只有 I 及 III\n- C. 只有 II 及 III\n- D. I、II 及 III",
    "html": "<p>45.&nbsp;&nbsp;&nbsp;設 $x_1$、$y_1$ 及 $z_1$ 分別為 $\\left{a_1,a_2,\\ldots,a_{50}\\right}$ 的平均值、中位數及方差；而 $x_2$、$y_2$ 及 $z_2$ 分別為 $\\left{a_1,a_2,\\ldots,a_{49}\\right}$ 的平均值、中位數及方差。若 $x_1=a_{50}$，則下列何者必為正確？</p>\n<p>I. $x_1=x_2$</p>\n<p>II. $y_1\\ge y_2$</p>\n<p>III. $z_1\\le z_2$</p>\n<ul>\n<li>A. 只有 I 及 II</li>\n<li>B. 只有 I 及 III</li>\n<li>C. 只有 II 及 III</li>\n<li>D. I、II 及 III</li>\n</ul>",
    "file": "2015_P2_QU(CHI).md"
+  },
+  {
+   "subject": "數學",
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 1,
+   "title": "第 1 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "代數化簡",
+    "多項式"
+   ],
+   "text": "$(x+1)(x^2+x+1)=$\n\n- A. $x^3+1$.\n- B. $(x+1)^3$.\n- C. $x^3+x^2+x+1$.\n- D. $x^3+2x^2+2x+1$.",
+   "html": "<p>1.&nbsp;&nbsp;&nbsp;$(x+1)(x^2+x+1)=$</p>\n<ul><li>A. $x^3+1$.</li><li>B. $(x+1)^3$.</li><li>C. $x^3+x^2+x+1$.</li><li>D. $x^3+2x^2+2x+1$.</li></ul>",
+   "file": "2015_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 2,
+   "title": "第 2 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "代數化簡",
+    "指數定律"
+   ],
+   "text": "$\\dfrac{(3y^6)^4}{3y^2}=$\n\n- A. $4y^5$.\n- B. $4y^8$.\n- C. $27y^{12}$.\n- D. $27y^{22}$.",
+   "html": "<p>2.&nbsp;&nbsp;&nbsp;$\\dfrac{(3y^6)^4}{3y^2}=$</p>\n<ul><li>A. $4y^5$.</li><li>B. $4y^8$.</li><li>C. $27y^{12}$.</li><li>D. $27y^{22}$.</li></ul>",
+   "file": "2015_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 3,
+   "title": "第 3 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "比率與比例"
+   ],
+   "text": "If $p+3q=4$ and $5p+9q=2$, then $p=$\n\n- A. $-5$.\n- B. $-3$.\n- C. $3$.\n- D. $5$.",
+   "html": "<p>3.&nbsp;&nbsp;&nbsp;If $p+3q=4$ and $5p+9q=2$, then $p=$</p>\n<ul><li>A. $-5$.</li><li>B. $-3$.</li><li>C. $3$.</li><li>D. $5$.</li></ul>",
+   "file": "2015_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 4,
+   "title": "第 4 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "有效數字"
+   ],
+   "text": "$0.0023456789=$\n\n- A. $0.00235$ (correct to 6 decimal places).\n- B. $0.002345$ (correct to 6 decimal places).\n- C. $0.002346$ (correct to 6 significant figures).\n- D. $0.00234568$ (correct to 6 significant figures).",
+   "html": "<p>4.&nbsp;&nbsp;&nbsp;$0.0023456789=$</p>\n<ul><li>A. $0.00235$ (correct to 6 decimal places).</li><li>B. $0.002345$ (correct to 6 decimal places).</li><li>C. $0.002346$ (correct to 6 significant figures).</li><li>D. $0.00234568$ (correct to 6 significant figures).</li></ul>",
+   "file": "2015_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 5,
+   "title": "第 5 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "代數化簡",
+    "多項式"
+   ],
+   "text": "If $m$ and $n$ are constants such that $x^2 + mx + n \\equiv (x+4)(x-m) + 6$, then $n=$\n\n- A. $-8$.\n- B. $-2$.\n- C. $2$.\n- D. $6$.",
+   "html": "<p>5.&nbsp;&nbsp;&nbsp;If $m$ and $n$ are constants such that $x^2 + mx + n \\equiv (x+4)(x-m) + 6$, then $n=$</p>\n<ul><li>A. $-8$.</li><li>B. $-2$.</li><li>C. $2$.</li><li>D. $6$.</li></ul>",
+   "file": "2015_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 6,
+   "title": "第 6 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "不等式"
+   ],
+   "text": "The solution of $18 + 7x > 4$ or $5 - 2x < 3$ is\n\n- A. $x > -2$.\n- B. $x > -1$.\n- C. $x > 1$.\n- D. $-2 < x < 1$.",
+   "html": "<p>6.&nbsp;&nbsp;&nbsp;The solution of $18 + 7x &gt; 4$ or $5 - 2x &lt; 3$ is</p>\n<ul><li>A. $x &gt; -2$.</li><li>B. $x &gt; -1$.</li><li>C. $x &gt; 1$.</li><li>D. $-2 &lt; x &lt; 1$.</li></ul>",
+   "file": "2015_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 7,
+   "title": "第 7 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "一元二次方程",
+    "代數化簡"
+   ],
+   "text": "If $\\beta$ is a root of the equation $4x^2 - 5x - 1 = 0$, then $7 + 10\\beta - 8\\beta^2 =$\n\n- A. $5$.\n- B. $7$.\n- C. $9$.\n- D. $11$.",
+   "html": "<p>7.&nbsp;&nbsp;&nbsp;If $\\beta$ is a root of the equation $4x^2 - 5x - 1 = 0$, then $7 + 10\\beta - 8\\beta^2 =$</p>\n<ul><li>A. $5$.</li><li>B. $7$.</li><li>C. $9$.</li><li>D. $11$.</li></ul>",
+   "file": "2015_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 8,
+   "title": "第 8 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "函數與圖像"
+   ],
+   "text": "The figure shows the graph of $ y = a(x+b)^2 $, where $ a $ and $ b $ are constants. Which of the following is true?\n\u0001IMG0\u0001\n\n- A. $ a < 0 $ and $ b < 0 $\n- B. $ a < 0 $ and $ b > 0 $\n- C. $ a > 0 $ and $ b < 0 $\n- D. $ a > 0 $ and $ b > 0 $",
+   "html": "<p>8.&nbsp;&nbsp;&nbsp;The figure shows the graph of $ y = a(x+b)^2 $, where $ a $ and $ b $ are constants. Which of the following is true?</p>\n<p><img alt=\"Figure Q8 (as printed)\" src=\"2015P2_figs/Q08.png\" /></p>\n<ul><li>A. $ a &lt; 0 $ and $ b &lt; 0 $</li><li>B. $ a &lt; 0 $ and $ b &gt; 0 $</li><li>C. $ a &gt; 0 $ and $ b &lt; 0 $</li><li>D. $ a &gt; 0 $ and $ b &gt; 0 $</li></ul>",
+   "file": "2015_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 9,
+   "title": "第 9 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "百分數"
+   ],
+   "text": "If the price of a souvenir is increased by $ 70\\% $ and then decreased by $ 60\\% $, find the percentage change in the price of the souvenir.\n\n- A. $-58\\%$\n- B. $-32\\%$\n- C. $2\\%$\n- D. $10\\%$",
+   "html": "<p>9.&nbsp;&nbsp;&nbsp;If the price of a souvenir is increased by $ 70\\% $ and then decreased by $ 60\\% $, find the percentage change in the price of the souvenir.</p>\n<ul><li>A. $-58\\%$</li><li>B. $-32\\%$</li><li>C. $2\\%$</li><li>D. $10\\%$</li></ul>",
+   "file": "2015_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 10,
+   "title": "第 10 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "利息與增長"
+   ],
+   "text": "A sum of \\$50 000 is deposited at an interest rate of $ 6\\% $ per annum for 3 years, compounded quarterly. Find the amount correct to the nearest dollar.\n\n- A. \\$59 000\n- B. \\$59 551\n- C. \\$59 755\n- D. \\$59 781",
+   "html": "<p>10.&nbsp;&nbsp;&nbsp;A sum of \\$50 000 is deposited at an interest rate of $ 6\\% $ per annum for 3 years, compounded quarterly. Find the amount correct to the nearest dollar.</p>\n<ul><li>A. \\$59 000</li><li>B. \\$59 551</li><li>C. \\$59 755</li><li>D. \\$59 781</li></ul>",
+   "file": "2015_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 11,
+   "title": "第 11 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "比率與比例"
+   ],
+   "text": "Let $ a $, $ b $ and $ c $ be non-zero numbers. If $ a : c = 5 : 3 $ and $ b : c = 3 : 2 $, then $ (a+c) : (b+c) = $\n\n- A. $ 7 : 5 $\n- B. $ 8 : 5 $\n- C. $ 16 : 15 $\n- D. $ 19 : 15 $",
+   "html": "<p>11.&nbsp;&nbsp;&nbsp;Let $ a $, $ b $ and $ c $ be non-zero numbers. If $ a : c = 5 : 3 $ and $ b : c = 3 : 2 $, then $ (a+c) : (b+c) = $</p>\n<ul><li>A. $ 7 : 5 $</li><li>B. $ 8 : 5 $</li><li>C. $ 16 : 15 $</li><li>D. $ 19 : 15 $</li></ul>",
+   "file": "2015_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 12,
+   "title": "第 12 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "變分"
+   ],
+   "text": "It is given that $ z $ varies as $ x^3 $ and $ y^2 $. When $ x=2 $ and $ y=1 $, $ z=14 $. When $ x=3 $ and $ y=-2 $, $ z=$\n\n- A. $-189$.\n- B. $-126$.\n- C. $126$.\n- D. $189$.",
+   "html": "<p>12.&nbsp;&nbsp;&nbsp;It is given that $ z $ varies as $ x^3 $ and $ y^2 $. When $ x=2 $ and $ y=1 $, $ z=14 $. When $ x=3 $ and $ y=-2 $, $ z=$</p>\n<ul><li>A. $-189$.</li><li>B. $-126$.</li><li>C. $126$.</li><li>D. $189$.</li></ul>",
+   "file": "2015_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 13,
+   "title": "第 13 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "數列"
+   ],
+   "text": "In the figure, the 1st pattern consists of 5 dots. For any positive integer $ n $, the $(n+1)$th pattern is formed by adding 4 dots to the $ n $th pattern. Find the number of dots in the 6th pattern.\n\u0001IMG0\u0001\n\n- A. 21\n- B. 25\n- C. 29\n- D. 33",
+   "html": "<p>13.&nbsp;&nbsp;&nbsp;In the figure, the 1st pattern consists of 5 dots. For any positive integer $ n $, the $(n+1)$th pattern is formed by adding 4 dots to the $ n $th pattern. Find the number of dots in the 6th pattern.</p>\n<p><img alt=\"Figure Q13 (as printed)\" src=\"2015P2_figs/Q13.png\" /></p>\n<ul><li>A. 21</li><li>B. 25</li><li>C. 29</li><li>D. 33</li></ul>",
+   "file": "2015_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 14,
+   "title": "第 14 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "統計"
+   ],
+   "text": "There is a bag of white sugar. The weight of white sugar in the bag is measured as $ 5 \\text{ kg} $ correct to the nearest kg. If the bag of white sugar is packed into $ n $ packets such that the weight of white sugar in each packet is measured as $ 10 \\text{ g} $ correct to the nearest g, find the greatest possible value of $ n $.\n\n- A. 429\n- B. 500\n- C. 578\n- D. 579",
+   "html": "<p>14.&nbsp;&nbsp;&nbsp;There is a bag of white sugar. The weight of white sugar in the bag is measured as $ 5 \\text{ kg} $ correct to the nearest kg. If the bag of white sugar is packed into $ n $ packets such that the weight of white sugar in each packet is measured as $ 10 \\text{ g} $ correct to the nearest g, find the greatest possible value of $ n $.</p>\n<ul><li>A. 429</li><li>B. 500</li><li>C. 578</li><li>D. 579</li></ul>",
+   "file": "2015_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 15,
+   "title": "第 15 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "平面幾何"
+   ],
+   "text": "In the figure, $ N $ is a point lying on $ AC $ and $ E $ is a point lying on $ DN $. If $ DN=6 \\text{ cm} $ and $ EN=5 \\text{ cm} $, then the area of $ \\triangle ABC $ is\n\u0001IMG0\u0001\n\n- A. $ 24 \\text{ cm}^2 $.\n- B. $ 30 \\text{ cm}^2 $.\n- C. $ 96 \\text{ cm}^2 $.\n- D. $ 192 \\text{ cm}^2 $.",
+   "html": "<p>15.&nbsp;&nbsp;&nbsp;In the figure, $ N $ is a point lying on $ AC $ and $ E $ is a point lying on $ DN $. If $ DN=6 \\text{ cm} $ and $ EN=5 \\text{ cm} $, then the area of $ \\triangle ABC $ is</p>\n<p><img alt=\"Figure Q15 (as printed)\" src=\"2015P2_figs/Q15.png\" /></p>\n<ul><li>A. $ 24 \\text{ cm}^2 $.</li><li>B. $ 30 \\text{ cm}^2 $.</li><li>C. $ 96 \\text{ cm}^2 $.</li><li>D. $ 192 \\text{ cm}^2 $.</li></ul>",
+   "file": "2015_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 16,
+   "title": "第 16 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "立體圖形"
+   ],
+   "text": "The height and the base radius of a right circular cone are 12 cm and 9 cm respectively. The figure shows a frustum which is made by cutting off the upper part of the circular cone. The height of the frustum is 8 cm. Find the volume of the frustum.\n\u0001IMG0\u0001\n\n- A. $210\\pi\\ \\text{cm}^3$\n- B. $312\\pi\\ \\text{cm}^3$\n- C. $324\\pi\\ \\text{cm}^3$\n- D. $936\\pi\\ \\text{cm}^3$",
+   "html": "<p>16.&nbsp;&nbsp;&nbsp;The height and the base radius of a right circular cone are 12 cm and 9 cm respectively. The figure shows a frustum which is made by cutting off the upper part of the circular cone. The height of the frustum is 8 cm. Find the volume of the frustum.</p>\n<p><img alt=\"Figure Q16 (as printed)\" src=\"2015P2_figs/Q16.png\" /></p>\n<ul><li>A. $210\\pi\\ \\text{cm}^3$</li><li>B. $312\\pi\\ \\text{cm}^3$</li><li>C. $324\\pi\\ \\text{cm}^3$</li><li>D. $936\\pi\\ \\text{cm}^3$</li></ul>",
+   "file": "2015_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 17,
+   "title": "第 17 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "比率與比例",
+    "平面幾何"
+   ],
+   "text": "In the figure, $ABCD$ is a parallelogram. $E$ is a point lying on $CD$ such that $DE:EC=2:3$. $AD$ produced and $BE$ produced meet at $F$ while $AE$ produced and $BC$ produced meet at $G$. If the area of $\\triangle DEF$ is $8\\ \\text{cm}^2$, then the area of $\\triangle CEG$ is\n\u0001IMG0\u0001\n\n- A. $12\\ \\text{cm}^2$\n- B. $18\\ \\text{cm}^2$\n- C. $20\\ \\text{cm}^2$\n- D. $27\\ \\text{cm}^2$",
+   "html": "<p>17.&nbsp;&nbsp;&nbsp;In the figure, $ABCD$ is a parallelogram. $E$ is a point lying on $CD$ such that $DE:EC=2:3$. $AD$ produced and $BE$ produced meet at $F$ while $AE$ produced and $BC$ produced meet at $G$. If the area of $\\triangle DEF$ is $8\\ \\text{cm}^2$, then the area of $\\triangle CEG$ is</p>\n<p><img alt=\"Figure Q17 (as printed)\" src=\"2015P2_figs/Q17.png\" /></p>\n<ul><li>A. $12\\ \\text{cm}^2$</li><li>B. $18\\ \\text{cm}^2$</li><li>C. $20\\ \\text{cm}^2$</li><li>D. $27\\ \\text{cm}^2$</li></ul>",
+   "file": "2015_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 18,
+   "title": "第 18 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "三角比"
+   ],
+   "text": "In the figure, $\\dfrac{AD}{AB}=$\n\u0001IMG0\u0001\n\n- A. $\\cos\\alpha\\tan\\beta$\n- B. $\\sin\\alpha\\tan\\beta$\n- C. $\\dfrac{\\cos\\alpha}{\\tan\\beta}$\n- D. $\\dfrac{\\sin\\alpha}{\\tan\\beta}$",
+   "html": "<p>18.&nbsp;&nbsp;&nbsp;In the figure, $\\dfrac{AD}{AB}=$</p>\n<p><img alt=\"Figure Q18 (as printed)\" src=\"2015P2_figs/Q18.png\" /></p>\n<ul><li>A. $\\cos\\alpha\\tan\\beta$</li><li>B. $\\sin\\alpha\\tan\\beta$</li><li>C. $\\dfrac{\\cos\\alpha}{\\tan\\beta}$</li><li>D. $\\dfrac{\\sin\\alpha}{\\tan\\beta}$</li></ul>",
+   "file": "2015_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 19,
+   "title": "第 19 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "三角比",
+    "三角恆等式"
+   ],
+   "text": "$\\dfrac{\\cos 180^\\circ}{1 + \\sin (90^\\circ + \\theta)} + \\dfrac{\\cos 360^\\circ}{1 + \\sin (270^\\circ + \\theta)} =$\n\n- A. 0.\n- B. $\\dfrac{2}{\\cos \\theta}$.\n- C. $\\dfrac{2 \\cos \\theta}{\\sin^2 \\theta}$.\n- D. $\\dfrac{2 \\sin \\theta}{\\cos^2 \\theta}$.",
+   "html": "<p>19.&nbsp;&nbsp;&nbsp;$\\dfrac{\\cos 180^\\circ}{1 + \\sin (90^\\circ + \\theta)} + \\dfrac{\\cos 360^\\circ}{1 + \\sin (270^\\circ + \\theta)} =$</p>\n<ul><li>A. 0.</li><li>B. $\\dfrac{2}{\\cos \\theta}$.</li><li>C. $\\dfrac{2 \\cos \\theta}{\\sin^2 \\theta}$.</li><li>D. $\\dfrac{2 \\sin \\theta}{\\cos^2 \\theta}$.</li></ul>",
+   "file": "2015_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 20,
+   "title": "第 20 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "圓的性質",
+    "三角比"
+   ],
+   "text": "In the figure, $AD$ is a diameter of the circle $ABCDE$. If $\\angle BAD = 58^\\circ$ and $BC = CD$, then $\\angle AEC =$\n\u0001IMG0\u0001\n\n- A. $32^\\circ$.\n- B. $58^\\circ$.\n- C. $61^\\circ$.\n- D. $64^\\circ$.",
+   "html": "<p>20.&nbsp;&nbsp;&nbsp;In the figure, $AD$ is a diameter of the circle $ABCDE$. If $\\angle BAD = 58^\\circ$ and $BC = CD$, then $\\angle AEC =$</p>\n<p><img alt=\"Figure Q20 (as printed)\" src=\"2015P2_figs/Q20.png\" /></p>\n<ul><li>A. $32^\\circ$.</li><li>B. $58^\\circ$.</li><li>C. $61^\\circ$.</li><li>D. $64^\\circ$.</li></ul>",
+   "file": "2015_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 21,
+   "title": "第 21 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "圓的性質",
+    "平面幾何"
+   ],
+   "text": "The diameters $AC$ and $BD$ of the circle $ABCD$ intersect at the point $E$. If $\\angle AEB = 90^\\circ$ and $AC = 24 \\text{ cm}$, then the area of $\\triangle AEB$ is\n\n- A. $41 \\text{ cm}^2$.\n- B. $72 \\text{ cm}^2$.\n- C. $144 \\text{ cm}^2$.\n- D. $288 \\text{ cm}^2$.",
+   "html": "<p>21.&nbsp;&nbsp;&nbsp;The diameters $AC$ and $BD$ of the circle $ABCD$ intersect at the point $E$. If $\\angle AEB = 90^\\circ$ and $AC = 24 \\text{ cm}$, then the area of $\\triangle AEB$ is</p>\n<ul><li>A. $41 \\text{ cm}^2$.</li><li>B. $72 \\text{ cm}^2$.</li><li>C. $144 \\text{ cm}^2$.</li><li>D. $288 \\text{ cm}^2$.</li></ul>",
+   "file": "2015_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 22,
+   "title": "第 22 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "平面幾何",
+    "變換與對稱"
+   ],
+   "text": "If an interior angle of a regular polygon is 5 times an exterior angle of the polygon, which of the following is/are true?\nI. Each interior angle of the polygon is $150^\\circ$.\nII. The number of diagonals of the polygon is 6.\nIII. The number of folds of rotational symmetry of the polygon is 6.\n\n- A. I only\n- B. II only\n- C. I and III only\n- D. II and III only",
+   "html": "<p>22.&nbsp;&nbsp;&nbsp;If an interior angle of a regular polygon is 5 times an exterior angle of the polygon, which of the following is/are true?</p>\n<p>I. Each interior angle of the polygon is $150^\\circ$.</p>\n<p>II. The number of diagonals of the polygon is 6.</p>\n<p>III. The number of folds of rotational symmetry of the polygon is 6.</p>\n<ul><li>A. I only</li><li>B. II only</li><li>C. I and III only</li><li>D. II and III only</li></ul>",
+   "file": "2015_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 23,
+   "title": "第 23 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "坐標幾何",
+    "變換與對稱",
+    "三角比"
+   ],
+   "text": "The rectangular coordinates of the point $A$ are $(\\sqrt{3}, -1)$. If $A$ is reflected with respect to the $y$-axis, then the polar coordinates of its image are\n\n- A. $(1, 210^\\circ)$\n- B. $(1, 240^\\circ)$\n- C. $(2, 210^\\circ)$\n- D. $(2, 240^\\circ)$",
+   "html": "<p>23.&nbsp;&nbsp;&nbsp;The rectangular coordinates of the point $A$ are $(\\sqrt{3}, -1)$. If $A$ is reflected with respect to the $y$-axis, then the polar coordinates of its image are</p>\n<ul><li>A. $(1, 210^\\circ)$</li><li>B. $(1, 240^\\circ)$</li><li>C. $(2, 210^\\circ)$</li><li>D. $(2, 240^\\circ)$</li></ul>",
+   "file": "2015_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 24,
+   "title": "第 24 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "坐標幾何",
+    "直線方程"
+   ],
+   "text": "The coordinates of the points $A$ and $B$ are $(2, 0)$ and $(1, 5)$ respectively. If $P$ is a moving point in the rectangular coordinate plane such that $P$ is equidistant from $A$ and $B$, then the locus of $P$ is\n\n- A. the perpendicular bisector of $AB$\n- B. the circle with $AB$ as a diameter\n- C. the straight line which passes through $A$ and $B$\n- D. the angle bisector of $\\angle AOB$, where $O$ is the origin",
+   "html": "<p>24.&nbsp;&nbsp;&nbsp;The coordinates of the points $A$ and $B$ are $(2, 0)$ and $(1, 5)$ respectively. If $P$ is a moving point in the rectangular coordinate plane such that $P$ is equidistant from $A$ and $B$, then the locus of $P$ is</p>\n<ul><li>A. the perpendicular bisector of $AB$</li><li>B. the circle with $AB$ as a diameter</li><li>C. the straight line which passes through $A$ and $B$</li><li>D. the angle bisector of $\\angle AOB$, where $O$ is the origin</li></ul>",
+   "file": "2015_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 25,
+   "title": "第 25 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "直線方程",
+    "坐標幾何"
+   ],
+   "text": "In the figure, the equations of the straight lines $ L_1 $ and $ L_2 $ are $ ax = 1 $ and $ bx + cy = 1 $ respectively. Which of the following are true?\nI. $ a < 0 $\nII. $ a < b $\nIII. $ c > 0 $\n\u0001IMG0\u0001\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
+   "html": "<p>25.&nbsp;&nbsp;&nbsp;In the figure, the equations of the straight lines $ L_1 $ and $ L_2 $ are $ ax = 1 $ and $ bx + cy = 1 $ respectively. Which of the following are true?</p>\n<p>I. $ a &lt; 0 $</p>\n<p>II. $ a &lt; b $</p>\n<p>III. $ c &gt; 0 $</p>\n<p><img alt=\"Figure Q25 (as printed)\" src=\"2015P2_figs/Q25.png\" /></p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
+   "file": "2015_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 26,
+   "title": "第 26 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "圓的方程",
+    "坐標幾何"
+   ],
+   "text": "A circle $ C $ passes through the point $ (0,3) $. If the coordinates of the centre of $ C $ are $ (-4,3) $, then the equation of $ C $ is\n\n- A. $ x^2 + y^2 - 8x + 6y + 9 = 0 $\n- B. $ x^2 + y^2 - 8x + 6y + 16 = 0 $\n- C. $ x^2 + y^2 + 8x - 6y + 9 = 0 $\n- D. $ x^2 + y^2 + 8x - 6y + 16 = 0 $",
+   "html": "<p>26.&nbsp;&nbsp;&nbsp;A circle $ C $ passes through the point $ (0,3) $. If the coordinates of the centre of $ C $ are $ (-4,3) $, then the equation of $ C $ is</p>\n<ul><li>A. $ x^2 + y^2 - 8x + 6y + 9 = 0 $</li><li>B. $ x^2 + y^2 - 8x + 6y + 16 = 0 $</li><li>C. $ x^2 + y^2 + 8x - 6y + 9 = 0 $</li><li>D. $ x^2 + y^2 + 8x - 6y + 16 = 0 $</li></ul>",
+   "file": "2015_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 27,
+   "title": "第 27 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "概率"
+   ],
+   "text": "Two fair dice are thrown in a game. If the sum of the two numbers thrown is 7, $36 will be gained; otherwise, $6 will be gained. Find the expected gain of the game.\n\n- A. $11\n- B. $12\n- C. $30\n- D. $31",
+   "html": "<p>27.&nbsp;&nbsp;&nbsp;Two fair dice are thrown in a game. If the sum of the two numbers thrown is 7, $36 will be gained; otherwise, $6 will be gained. Find the expected gain of the game.</p>\n<ul><li>A. $11</li><li>B. $12</li><li>C. $30</li><li>D. $31</li></ul>",
+   "file": "2015_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 28,
+   "title": "第 28 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "概率",
+    "統計"
+   ],
+   "text": "The bar chart below shows the distribution of the numbers of keys owned by the students in a class. Find the probability that a randomly selected student from the class owns 3 keys.\n\u0001IMG0\u0001\n\n- A. $\\dfrac{1}{5}$\n- B. $\\dfrac{2}{11}$\n- C. $\\dfrac{4}{11}$\n- D. $\\dfrac{9}{11}$",
+   "html": "<p>28.&nbsp;&nbsp;&nbsp;The bar chart below shows the distribution of the numbers of keys owned by the students in a class. Find the probability that a randomly selected student from the class owns 3 keys.</p>\n<p><img alt=\"Figure Q28 (as printed)\" src=\"2015P2_figs/Q28.png\" /></p>\n<ul><li>A. $\\dfrac{1}{5}$</li><li>B. $\\dfrac{2}{11}$</li><li>C. $\\dfrac{4}{11}$</li><li>D. $\\dfrac{9}{11}$</li></ul>",
+   "file": "2015_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 29,
+   "title": "第 29 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "統計",
+    "集中趨勢"
+   ],
+   "text": "The box-and-whisker diagram below shows the distribution of the numbers of books read by some teachers in a term. Find the inter-quartile range of the distribution.\n\u0001IMG0\u0001\n\n- A. 20\n- B. 35\n- C. 40\n- D. 45",
+   "html": "<p>29.&nbsp;&nbsp;&nbsp;The box-and-whisker diagram below shows the distribution of the numbers of books read by some teachers in a term. Find the inter-quartile range of the distribution.</p>\n<p><img alt=\"Figure Q29 (as printed)\" src=\"2015P2_figs/Q29.png\" /></p>\n<ul><li>A. 20</li><li>B. 35</li><li>C. 40</li><li>D. 45</li></ul>",
+   "file": "2015_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 30,
+   "title": "第 30 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "統計",
+    "集中趨勢"
+   ],
+   "text": "Consider the following integers:\n2   2   3   3   3   3   3   5   5   6   8   8   9   10   m\nLet $ p $, $ q $ and $ r $ be the mean, the median and the mode of the above integers respectively. If $ 3 \\leq m \\leq 5 $, which of the following must be true?\nI. $ p > q $\nII. $ p > r $\nIII. $ q > r $\n\n- A. I only\n- B. II only\n- C. I and III only\n- D. II and III only",
+   "html": "<p>30.&nbsp;&nbsp;&nbsp;Consider the following integers: 2   2   3   3   3   3   3   5   5   6   8   8   9   10   m Let $ p $, $ q $ and $ r $ be the mean, the median and the mode of the above integers respectively. If $ 3 \\leq m \\leq 5 $, which of the following must be true?</p>\n<p>I. $ p &gt; q $</p>\n<p>II. $ p &gt; r $</p>\n<p>III. $ q &gt; r $</p>\n<ul><li>A. I only</li><li>B. II only</li><li>C. I and III only</li><li>D. II and III only</li></ul>",
+   "file": "2015_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 31,
+   "title": "第 31 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "代數化簡",
+    "因式分解"
+   ],
+   "text": "$\\dfrac{1}{x^2-2x+1} - \\dfrac{1}{x^2+x-2} =$\n\n- A. $\\dfrac{1}{(x-1)(x+2)}$\n- B. $\\dfrac{1}{(x-1)^2(x+2)}$\n- C. $\\dfrac{3}{(x-1)^2(x+2)}$\n- D. $\\dfrac{2x+1}{(x-1)^2(x+2)}$",
+   "html": "<p>31.&nbsp;&nbsp;&nbsp;$\\dfrac{1}{x^2-2x+1} - \\dfrac{1}{x^2+x-2} =$</p>\n<ul><li>A. $\\dfrac{1}{(x-1)(x+2)}$</li><li>B. $\\dfrac{1}{(x-1)^2(x+2)}$</li><li>C. $\\dfrac{3}{(x-1)^2(x+2)}$</li><li>D. $\\dfrac{2x+1}{(x-1)^2(x+2)}$</li></ul>",
+   "file": "2015_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 32,
+   "title": "第 32 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "對數",
+    "指數定律"
+   ],
+   "text": "The graph in the figure shows the linear relation between $\\log_3 x$ and $\\log_3 y$. Which of the following must be true?\n\u0001IMG0\u0001\n\n- A. $x^2 y^3 = 729$\n- B. $x^3 y^2 = 729$\n- C. $x^2 + y^3 = 729$\n- D. $x^3 + y^2 = 729$",
+   "html": "<p>32.&nbsp;&nbsp;&nbsp;The graph in the figure shows the linear relation between $\\log_3 x$ and $\\log_3 y$. Which of the following must be true?</p>\n<p><img alt=\"Figure Q32 (as printed)\" src=\"2015P2_figs/Q32.png\" /></p>\n<ul><li>A. $x^2 y^3 = 729$</li><li>B. $x^3 y^2 = 729$</li><li>C. $x^2 + y^3 = 729$</li><li>D. $x^3 + y^2 = 729$</li></ul>",
+   "file": "2015_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 33,
+   "title": "第 33 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "代數化簡"
+   ],
+   "text": "$11 + 2^6 + 2^{10} + 2^{11} =$\n\n- A. $110001001011_2$.\n- B. $110100100011_2$.\n- C. $1100001001011_2$.\n- D. $1101001000011_2$.",
+   "html": "<p>33.&nbsp;&nbsp;&nbsp;$11 + 2^6 + 2^{10} + 2^{11} =$</p>\n<ul><li>A. $110001001011_2$.</li><li>B. $110100100011_2$.</li><li>C. $1100001001011_2$.</li><li>D. $1101001000011_2$.</li></ul>",
+   "file": "2015_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 34,
+   "title": "第 34 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "一元二次方程"
+   ],
+   "text": "Let $ k $ be a constant. If the roots of the quadratic equation $ x^2 + kx - 2 = 0 $ are $ \\alpha $ and $ \\beta $, then $ \\alpha^2 + \\beta^2 = $\n\n- A. $ k^2 $\n- B. $ k^2 + 4 $\n- C. $ k^2 - 4 $\n- D. $ k^2 - 8 $",
+   "html": "<p>34.&nbsp;&nbsp;&nbsp;Let $ k $ be a constant. If the roots of the quadratic equation $ x^2 + kx - 2 = 0 $ are $ \\alpha $ and $ \\beta $, then $ \\alpha^2 + \\beta^2 = $</p>\n<ul><li>A. $ k^2 $</li><li>B. $ k^2 + 4 $</li><li>C. $ k^2 - 4 $</li><li>D. $ k^2 - 8 $</li></ul>",
+   "file": "2015_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 35,
+   "title": "第 35 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "複數"
+   ],
+   "text": "Let $ z = (a + 5)i^6 + (a - 3)i^7 $, where $ a $ is a real number. If $ z $ is a real number, then $ a = $\n\n- A. $-5$\n- B. $3$\n- C. $3$\n- D. $5$",
+   "html": "<p>35.&nbsp;&nbsp;&nbsp;Let $ z = (a + 5)i^6 + (a - 3)i^7 $, where $ a $ is a real number. If $ z $ is a real number, then $ a = $</p>\n<ul><li>A. $-5$</li><li>B. $3$</li><li>C. $3$</li><li>D. $5$</li></ul>",
+   "file": "2015_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 36,
+   "title": "第 36 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "不等式",
+    "坐標幾何"
+   ],
+   "text": "The figure shows a shaded region (including the boundary). If $ (a, b) $ is a point lying in the shaded region, which of the following are true?\nI. $ a \\leq 4 $\nII. $ a \\geq b - 5 $\nIII. $ a \\geq 10 - 2b $\n\u0001IMG0\u0001\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
+   "html": "<p>36.&nbsp;&nbsp;&nbsp;The figure shows a shaded region (including the boundary). If $ (a, b) $ is a point lying in the shaded region, which of the following are true?</p>\n<p>I. $ a \\leq 4 $</p>\n<p>II. $ a \\geq b - 5 $</p>\n<p>III. $ a \\geq 10 - 2b $</p>\n<p><img alt=\"Figure Q36 (as printed)\" src=\"2015P2_figs/Q36.png\" /></p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
+   "file": "2015_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 37,
+   "title": "第 37 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "數列"
+   ],
+   "text": "Let $ x_n $ be the $ n $th term of a geometric sequence. If $ x_6 = 216 $ and $ x_8 = 96 $, which of the following must be true?\nI. $ x_3 = 729 $\nII. $ \\dfrac{x_5}{x_7} > 1 $\nIII. $ x_2 + x_4 + x_6 + \\cdots + x_{2n} < 2015 $\n\n- A. I only\n- B. II only\n- C. I and III only\n- D. II and III only",
+   "html": "<p>37.&nbsp;&nbsp;&nbsp;Let $ x_n $ be the $ n $th term of a geometric sequence. If $ x_6 = 216 $ and $ x_8 = 96 $, which of the following must be true?</p>\n<p>I. $ x_3 = 729 $</p>\n<p>II. $ \\dfrac{x_5}{x_7} &gt; 1 $</p>\n<p>III. $ x_2 + x_4 + x_6 + \\cdots + x_{2n} &lt; 2015 $</p>\n<ul><li>A. I only</li><li>B. II only</li><li>C. I and III only</li><li>D. II and III only</li></ul>",
+   "file": "2015_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 38,
+   "title": "第 38 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "三角恆等式"
+   ],
+   "text": "For $ 0^\\circ \\leq x < 360^\\circ $, how many roots does the equation $ \\cos^2 x - \\sin x = 1 $ have?\n\n- A. 2\n- B. 3\n- C. 4\n- D. 5",
+   "html": "<p>38.&nbsp;&nbsp;&nbsp;For $ 0^\\circ \\leq x &lt; 360^\\circ $, how many roots does the equation $ \\cos^2 x - \\sin x = 1 $ have?</p>\n<ul><li>A. 2</li><li>B. 3</li><li>C. 4</li><li>D. 5</li></ul>",
+   "file": "2015_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 39,
+   "title": "第 39 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "函數與圖像",
+    "三角比"
+   ],
+   "text": "Let $ k $ be a positive constant and $ -180^\\circ < \\theta < 180^\\circ $. If the figure shows the graph of $ y = \\sin(kx^\\circ + \\theta) $, then\n\u0001IMG0\u0001\n\n- A. $ k = \\dfrac{1}{2} $ and $ \\theta = -30^\\circ $\n- B. $ k = \\dfrac{1}{2} $ and $ \\theta = 30^\\circ $\n- C. $ k = 2 $ and $ \\theta = -30^\\circ $\n- D. $ k = 2 $ and $ \\theta = 30^\\circ $",
+   "html": "<p>39.&nbsp;&nbsp;&nbsp;Let $ k $ be a positive constant and $ -180^\\circ &lt; \\theta &lt; 180^\\circ $. If the figure shows the graph of $ y = \\sin(kx^\\circ + \\theta) $, then</p>\n<p><img alt=\"Figure Q39 (as printed)\" src=\"2015P2_figs/Q39.png\" /></p>\n<ul><li>A. $ k = \\dfrac{1}{2} $ and $ \\theta = -30^\\circ $</li><li>B. $ k = \\dfrac{1}{2} $ and $ \\theta = 30^\\circ $</li><li>C. $ k = 2 $ and $ \\theta = -30^\\circ $</li><li>D. $ k = 2 $ and $ \\theta = 30^\\circ $</li></ul>",
+   "file": "2015_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 40,
+   "title": "第 40 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "圓的性質",
+    "平面幾何"
+   ],
+   "text": "In the figure, $ AB $ and $ AC $ are the tangents to the circle at $ B $ and $ C $ respectively. $ BD $ is a diameter of the circle. $ AC $ produced and $ BD $ produced meet at $ E $. If $ AB = 6 \\text{ cm} $ and $ AE = 10 \\text{ cm} $, then $ BD = $\n\u0001IMG0\u0001\n\n- A. $ 3 \\text{ cm} $.\n- B. $ 5 \\text{ cm} $.\n- C. $ 6 \\text{ cm} $.\n- D. $ 8 \\text{ cm} $.",
+   "html": "<p>40.&nbsp;&nbsp;&nbsp;In the figure, $ AB $ and $ AC $ are the tangents to the circle at $ B $ and $ C $ respectively. $ BD $ is a diameter of the circle. $ AC $ produced and $ BD $ produced meet at $ E $. If $ AB = 6 \\text{ cm} $ and $ AE = 10 \\text{ cm} $, then $ BD = $</p>\n<p><img alt=\"Figure Q40 (as printed)\" src=\"2015P2_figs/Q40.png\" /></p>\n<ul><li>A. $ 3 \\text{ cm} $.</li><li>B. $ 5 \\text{ cm} $.</li><li>C. $ 6 \\text{ cm} $.</li><li>D. $ 8 \\text{ cm} $.</li></ul>",
+   "file": "2015_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 41,
+   "title": "第 41 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "圓的方程",
+    "坐標幾何"
+   ],
+   "text": "Find the constant $ k $ such that the circle $ x^2 + y^2 + 2x - 6y + k = 0 $ and the straight line $ x + y + 4 = 0 $ intersect at only one point.\n\n- A. $ -16 $\n- B. $ -8 $\n- C. $ 8 $\n- D. $ 16 $",
+   "html": "<p>41.&nbsp;&nbsp;&nbsp;Find the constant $ k $ such that the circle $ x^2 + y^2 + 2x - 6y + k = 0 $ and the straight line $ x + y + 4 = 0 $ intersect at only one point.</p>\n<ul><li>A. $ -16 $</li><li>B. $ -8 $</li><li>C. $ 8 $</li><li>D. $ 16 $</li></ul>",
+   "file": "2015_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 42,
+   "title": "第 42 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "坐標幾何",
+    "三角比"
+   ],
+   "text": "Let $ O $ be the origin. The coordinates of the points $ P $ and $ Q $ are $ (0, 60) $ and $ (96, 48) $ respectively. The $ x $-coordinate of the orthocentre of $ \\triangle OPQ $ is\n\n- A. $ 6 $.\n- B. $ 32 $.\n- C. $ 45 $.\n- D. $ 48 $.",
+   "html": "<p>42.&nbsp;&nbsp;&nbsp;Let $ O $ be the origin. The coordinates of the points $ P $ and $ Q $ are $ (0, 60) $ and $ (96, 48) $ respectively. The $ x $-coordinate of the orthocentre of $ \\triangle OPQ $ is</p>\n<ul><li>A. $ 6 $.</li><li>B. $ 32 $.</li><li>C. $ 45 $.</li><li>D. $ 48 $.</li></ul>",
+   "file": "2015_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 43,
+   "title": "第 43 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "排列與組合"
+   ],
+   "text": "A queue is formed by 6 boys and 2 girls. If no girls are next to each other, how many different queues can be formed?\n\n- A. 1 440\n- B. 10 080\n- C. 30 240\n- D. 35 280",
+   "html": "<p>43.&nbsp;&nbsp;&nbsp;A queue is formed by 6 boys and 2 girls. If no girls are next to each other, how many different queues can be formed?</p>\n<ul><li>A. 1 440</li><li>B. 10 080</li><li>C. 30 240</li><li>D. 35 280</li></ul>",
+   "file": "2015_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 44,
+   "title": "第 44 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "概率"
+   ],
+   "text": "Bag $ P $ contains 2 red balls and 4 green balls while bag $ Q $ contains 1 red ball and 3 green balls. If a bag is randomly chosen and then a ball is randomly drawn from the bag, find the probability that a green ball is drawn.\n\n- A. $\\dfrac{3}{10}$\n- B. $\\dfrac{7}{10}$\n- C. $\\dfrac{7}{24}$\n- D. $\\dfrac{17}{24}$",
+   "html": "<p>44.&nbsp;&nbsp;&nbsp;Bag $ P $ contains 2 red balls and 4 green balls while bag $ Q $ contains 1 red ball and 3 green balls. If a bag is randomly chosen and then a ball is randomly drawn from the bag, find the probability that a green ball is drawn.</p>\n<ul><li>A. $\\dfrac{3}{10}$</li><li>B. $\\dfrac{7}{10}$</li><li>C. $\\dfrac{7}{24}$</li><li>D. $\\dfrac{17}{24}$</li></ul>",
+   "file": "2015_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2015,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 45,
+   "title": "第 45 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "統計",
+    "集中趨勢",
+    "離差"
+   ],
+   "text": "Let $ x_1 $, $ y_1 $ and $ z_1 $ be the mean, the median and the variance of a group of numbers $\\{a_1, a_2, a_3, \\ldots, a_{50}\\}$ respectively while $ x_2 $, $ y_2 $ and $ z_2 $ be the mean, the median and the variance of the group of numbers $\\{a_1, a_2, a_3, \\ldots, a_{49}\\}$ respectively. If $ x_1 = a_{50} $, which of the following must be true?\nI. $ x_1 = x_2 $\nII. $ y_1 \\geq y_2 $\nIII. $ z_1 \\leq z_2 $\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
+   "html": "<p>45.&nbsp;&nbsp;&nbsp;Let $ x_1 $, $ y_1 $ and $ z_1 $ be the mean, the median and the variance of a group of numbers $\\{a_1, a_2, a_3, \\ldots, a_{50}\\}$ respectively while $ x_2 $, $ y_2 $ and $ z_2 $ be the mean, the median and the variance of the group of numbers $\\{a_1, a_2, a_3, \\ldots, a_{49}\\}$ respectively. If $ x_1 = a_{50} $, which of the following must be true?</p>\n<p>I. $ x_1 = x_2 $</p>\n<p>II. $ y_1 \\geq y_2 $</p>\n<p>III. $ z_1 \\leq z_2 $</p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
+   "file": "2015_P2_題目英文卷.md"
   },
   {
    "subject": "化學",
@@ -9147,21 +9790,6 @@ window.QB = {
    "file": "2016_P2_QU(CHI).md"
   },
   {
-   "subject": "數學",
-   "year": 2016,
-   "paper": "Paper 2",
-   "type": "題目",
-   "qno": 1,
-   "title": "第 1 題",
-   "section": "Paper 2　Section A",
-   "tags": [
-    "指數定律"
-   ],
-   "text": "$8^{222} \\cdot 5^{666} =$\n\n- A. $10^{666}$\n- B. $10^{888}$\n- C. $40^{666}$\n- D. $40^{888}$",
-   "html": "<p>1.&nbsp;&nbsp;&nbsp;$8^{222} \\cdot 5^{666} =$</p>\n<ul><li>A. $10^{666}$</li><li>B. $10^{888}$</li><li>C. $40^{666}$</li><li>D. $40^{888}$</li></ul>",
-   "file": "2016_P2_題目英文卷.md"
-  },
-  {
    "subject": "化學",
    "year": 2016,
    "paper": "Paper 2",
@@ -9185,21 +9813,6 @@ window.QB = {
    "file": "2016_P2_QU(CHI).md"
   },
   {
-   "subject": "數學",
-   "year": 2016,
-   "paper": "Paper 2",
-   "type": "題目",
-   "qno": 2,
-   "title": "第 2 題",
-   "section": "Paper 2　Section A",
-   "tags": [
-    "一元方程"
-   ],
-   "text": "If $\\dfrac{a}{x} + \\dfrac{b}{y} =3$, then $x =$\n\n- A. $\\dfrac{ay}{3y - b}$\n- B. $\\dfrac{ay}{b - 3y}$\n- C. $\\dfrac{by}{3y - a}$\n- D. $\\dfrac{by}{a - 3y}$",
-   "html": "<p>2.&nbsp;&nbsp;&nbsp;If $\\dfrac{a}{x} + \\dfrac{b}{y} =3$, then $x =$</p>\n<ul><li>A. $\\dfrac{ay}{3y - b}$</li><li>B. $\\dfrac{ay}{b - 3y}$</li><li>C. $\\dfrac{by}{3y - a}$</li><li>D. $\\dfrac{by}{a - 3y}$</li></ul>",
-   "file": "2016_P2_題目英文卷.md"
-  },
-  {
    "subject": "化學",
    "year": 2016,
    "paper": "Paper 2",
@@ -9218,6 +9831,36 @@ window.QB = {
    "text": "回答試題的所有部分。\n\n(a)　回答以下短問題：\n\n　　(i)　寫出氫氧化鈉固體的一項性質，使牠不適合藉稱重來配製標準溶液。（1 分）\n\n　　(ii)　建議一個化學測試以顯示次氯酸根離子存在於一個水溶液中。（2 分）\n\n　　(iii)　纖維素及甲殼素均是天然聚合物。它們的結構顯示如下：\n\n![Q3(a) 纖維素＋甲殼素結構](2016_P2_crops/q3a_cell_chitin.png)\n\n參照下表所給的數據，提出在纖維素及甲殼素的紅外光譜中一項相似之處及一項相異之處：\n\n| 鍵合 | 化合物類別 | 波數域 cm⁻¹（伸展式） |\n|---|---|---|\n| C=C | 烯 | 1610 至 1680 |\n| C=O | 醛、酮、羧酸及其衍生物 | 1680 至 1800 |\n| C≡C | 炔 | 2070 至 2250 |\n| C≡N | 腈 | 2200 至 2280 |\n| O–H | 帶「氫鍵」的酸 | 2500 至 3300 |\n| O–H | 帶「氫鍵」的醇及酚 | 3230 至 3670 |\n\n（2 分）\n\n(b)　利用容量分析測定一個 Na₂Cr₂O₇(aq) 樣本 A 的濃度；並利用比色法測定另一個 Na₂Cr₂O₇(aq) 樣本 B 的濃度。\n\n把 25.00 cm³ 的樣本 A 轉移到一錐形瓶，並用稀 H₂SO₄(aq) 酸化。然後在適當的指示劑下以 0.0642 mol dm⁻³ Fe²⁺(aq) 溶液滴定該混合物，需用 26.88 cm³ 的該 Fe²⁺(aq) 溶液來達到終點。\n\n　　(i)　寫出所涉及反應的平衡方程式。\n\n　　(ii)　計算在 A 中 Na₂Cr₂O₇(aq) 的濃度。（3 分）\n\n　　(iii)　在比色法中，先配製不同的標準 Cr₂O₇²⁻(aq) 溶液，然後用裝了藍色濾片的比色計來量度這些溶液的吸光度。以下的校準曲線顯示吸光度隨 Cr₂O₇²⁻(aq) 離子濃度的變化：\n\n![Q3(b)(ii) 校準曲線](2016_P2_crops/q3b_calib.png)\n\n　　　(1)　提出為什麼要用藍色濾片。\n\n　　　(2)　參考以上的校準曲線，寫出吸光度與 [Cr₂O₇²⁻(aq)] 的關係。\n\n　　　(3)　把樣本 B 稀釋 100 倍。用該比色計量度得這稀釋溶液的吸光度為 0.26。根據上述校準曲線所給的資料，計算在 B 中 Na₂Cr₂O₇(aq) 的濃度。（4 分）\n\n　　(iv)　解釋在測定一個非常稀（如大概 10⁻⁷ mol dm⁻³ 的 Na₂Cr₂O₇(aq)）的濃度時，使用容量分析抑或比色法較為恰當。（1 分）\n\n(c)　X 和 Y 是同分異構化合物。它們的結構顯示如下：\n\n![Q3(c) X／Y 結構](2016_P2_crops/q3c_xy.png)\n\n　　(i)　提出並解釋如何利用 X 和 Y 各自的質譜來分辨它們。（2 分）\n\n　　(ii)　X 的熔點是 50°C 而 Y 的是 77°C。它們均不溶於水但溶於二氯甲烷。當以稀 Na₂CO₃(aq) 處理時，Y 不發生反應但 X 發生反應以生成一可溶的鹽。\n\n　　　(1)　你獲提供稀 Na₂CO₃(aq) 和稀 H₂SO₄(aq)。根據溶劑提取，概述把固體 Y 從 X 和 Y 在二氯甲烷的溶液中分離出來的實驗步驟。\n\n　　　(2)　提出如何能鑑定在 (1) 中所得的固體是純化合物 Y。（5 分）\n\n---\n\n*試卷完 —*\n\n## 待人工核對\n\n本卷為第 2 層文字交貨，由 easyocr（ch_tra+en，GPU）掃描底稿清洗而成；現模型無影像輸入，未能對頁影像覆核。以下題號建議第 3 層精修時對頁覆核：\n\n- 第 1 題：乙醇生產方程式（CH₂=CH₂ + H₂O → CH₃CH₂OH）依 OCR 校正；蔗糖水解動力學數據表（初速 6.0×10⁻⁷／2.4×10⁻⁶／1.8×10⁻⁶）依 OCR 校正，待核實。\n- 第 2 題：纖維素／凱庫勒／金晶胞／PBT／PPV 結構均為 300dpi crop，位置／範圍待 spot-check；「凱庫勒剛性」及金納米粒子文字待對頁核實。\n- 第 3 題：纖維素＋甲殼素結構、校準曲線、X／Y 結構均為 crop；紅外吸收數據表（C≡C／C≡N 行 OCR 讀作 C=C／C=l）依標準 IR 數據校正，待核實。\n- 第 3 題 (c)(ii)：X／Y（OCR 讀作「X 和工／1」）及熔點（50°C／77°C）、稀 Na₂CO₃ 處理文字待對頁核實。\n- 卷二源 PDF 第 3–4 頁與第 1–2 頁內容重複（掃描版別差異），本檔只採甲／乙／丙各一題一次，未重複。\n- 各題圖為 300dpi 原卷截圖（程式定位＋墨跡覆蓋率校驗；位置／範圍待 spot-check）；第 3 層再換成向量重繪。",
    "html": "<p>3.&nbsp;&nbsp;&nbsp;回答試題的所有部分。</p>\n<p>(a)　回答以下短問題：</p>\n<p>(i)　寫出氫氧化鈉固體的一項性質，使牠不適合藉稱重來配製標準溶液。（1 分）</p>\n<p>(ii)　建議一個化學測試以顯示次氯酸根離子存在於一個水溶液中。（2 分）</p>\n<p>(iii)　纖維素及甲殼素均是天然聚合物。它們的結構顯示如下：</p>\n<p><img alt=\"Q3(a) 纖維素＋甲殼素結構\" src=\"chem_2016_P2_crops/q3a_cell_chitin.png\" /></p>\n<p>參照下表所給的數據，提出在纖維素及甲殼素的紅外光譜中一項相似之處及一項相異之處：</p>\n<table>\n<thead>\n<tr>\n<th>鍵合</th>\n<th>化合物類別</th>\n<th>波數域 cm⁻¹（伸展式）</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>C=C</td>\n<td>烯</td>\n<td>1610 至 1680</td>\n</tr>\n<tr>\n<td>C=O</td>\n<td>醛、酮、羧酸及其衍生物</td>\n<td>1680 至 1800</td>\n</tr>\n<tr>\n<td>C≡C</td>\n<td>炔</td>\n<td>2070 至 2250</td>\n</tr>\n<tr>\n<td>C≡N</td>\n<td>腈</td>\n<td>2200 至 2280</td>\n</tr>\n<tr>\n<td>O–H</td>\n<td>帶「氫鍵」的酸</td>\n<td>2500 至 3300</td>\n</tr>\n<tr>\n<td>O–H</td>\n<td>帶「氫鍵」的醇及酚</td>\n<td>3230 至 3670</td>\n</tr>\n</tbody>\n</table>\n<p>（2 分）</p>\n<p>(b)　利用容量分析測定一個 Na₂Cr₂O₇(aq) 樣本 A 的濃度；並利用比色法測定另一個 Na₂Cr₂O₇(aq) 樣本 B 的濃度。</p>\n<p>把 25.00 cm³ 的樣本 A 轉移到一錐形瓶，並用稀 H₂SO₄(aq) 酸化。然後在適當的指示劑下以 0.0642 mol dm⁻³ Fe²⁺(aq) 溶液滴定該混合物，需用 26.88 cm³ 的該 Fe²⁺(aq) 溶液來達到終點。</p>\n<p>(i)　寫出所涉及反應的平衡方程式。</p>\n<p>(ii)　計算在 A 中 Na₂Cr₂O₇(aq) 的濃度。（3 分）</p>\n<p>(iii)　在比色法中，先配製不同的標準 Cr₂O₇²⁻(aq) 溶液，然後用裝了藍色濾片的比色計來量度這些溶液的吸光度。以下的校準曲線顯示吸光度隨 Cr₂O₇²⁻(aq) 離子濃度的變化：</p>\n<p><img alt=\"Q3(b)(ii) 校準曲線\" src=\"chem_2016_P2_crops/q3b_calib.png\" /></p>\n<p>(1)　提出為什麼要用藍色濾片。</p>\n<p>(2)　參考以上的校準曲線，寫出吸光度與 [Cr₂O₇²⁻(aq)] 的關係。</p>\n<p>(3)　把樣本 B 稀釋 100 倍。用該比色計量度得這稀釋溶液的吸光度為 0.26。根據上述校準曲線所給的資料，計算在 B 中 Na₂Cr₂O₇(aq) 的濃度。（4 分）</p>\n<p>(iv)　解釋在測定一個非常稀（如大概 10⁻⁷ mol dm⁻³ 的 Na₂Cr₂O₇(aq)）的濃度時，使用容量分析抑或比色法較為恰當。（1 分）</p>\n<p>(c)　X 和 Y 是同分異構化合物。它們的結構顯示如下：</p>\n<p><img alt=\"Q3(c) X／Y 結構\" src=\"chem_2016_P2_crops/q3c_xy.png\" /></p>\n<p>(i)　提出並解釋如何利用 X 和 Y 各自的質譜來分辨它們。（2 分）</p>\n<p>(ii)　X 的熔點是 50°C 而 Y 的是 77°C。它們均不溶於水但溶於二氯甲烷。當以稀 Na₂CO₃(aq) 處理時，Y 不發生反應但 X 發生反應以生成一可溶的鹽。</p>\n<p>(1)　你獲提供稀 Na₂CO₃(aq) 和稀 H₂SO₄(aq)。根據溶劑提取，概述把固體 Y 從 X 和 Y 在二氯甲烷的溶液中分離出來的實驗步驟。</p>\n<p>(2)　提出如何能鑑定在 (1) 中所得的固體是純化合物 Y。（5 分）</p>\n<hr />\n<p><em>試卷完 —</em></p>\n<h2>待人工核對</h2>\n<p>本卷為第 2 層文字交貨，由 easyocr（ch_tra+en，GPU）掃描底稿清洗而成；現模型無影像輸入，未能對頁影像覆核。以下題號建議第 3 層精修時對頁覆核：</p>\n<ul>\n<li>第 1 題：乙醇生產方程式（CH₂=CH₂ + H₂O → CH₃CH₂OH）依 OCR 校正；蔗糖水解動力學數據表（初速 6.0×10⁻⁷／2.4×10⁻⁶／1.8×10⁻⁶）依 OCR 校正，待核實。</li>\n<li>第 2 題：纖維素／凱庫勒／金晶胞／PBT／PPV 結構均為 300dpi crop，位置／範圍待 spot-check；「凱庫勒剛性」及金納米粒子文字待對頁核實。</li>\n<li>第 3 題：纖維素＋甲殼素結構、校準曲線、X／Y 結構均為 crop；紅外吸收數據表（C≡C／C≡N 行 OCR 讀作 C=C／C=l）依標準 IR 數據校正，待核實。</li>\n<li>第 3 題 (c)(ii)：X／Y（OCR 讀作「X 和工／1」）及熔點（50°C／77°C）、稀 Na₂CO₃ 處理文字待對頁核實。</li>\n<li>卷二源 PDF 第 3–4 頁與第 1–2 頁內容重複（掃描版別差異），本檔只採甲／乙／丙各一題一次，未重複。</li>\n<li>各題圖為 300dpi 原卷截圖（程式定位＋墨跡覆蓋率校驗；位置／範圍待 spot-check）；第 3 層再換成向量重繪。</li>\n</ul>",
    "file": "2016_P2_QU(CHI).md"
+  },
+  {
+   "subject": "數學",
+   "year": 2016,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 1,
+   "title": "第 1 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "指數定律"
+   ],
+   "text": "$8^{222} \\cdot 5^{666} =$\n\n- A. $10^{666}$\n- B. $10^{888}$\n- C. $40^{666}$\n- D. $40^{888}$",
+   "html": "<p>1.&nbsp;&nbsp;&nbsp;$8^{222} \\cdot 5^{666} =$</p>\n<ul><li>A. $10^{666}$</li><li>B. $10^{888}$</li><li>C. $40^{666}$</li><li>D. $40^{888}$</li></ul>",
+   "file": "2016_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2016,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 2,
+   "title": "第 2 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "一元方程"
+   ],
+   "text": "If $\\dfrac{a}{x} + \\dfrac{b}{y} =3$, then $x =$\n\n- A. $\\dfrac{ay}{3y - b}$\n- B. $\\dfrac{ay}{b - 3y}$\n- C. $\\dfrac{by}{3y - a}$\n- D. $\\dfrac{by}{a - 3y}$",
+   "html": "<p>2.&nbsp;&nbsp;&nbsp;If $\\dfrac{a}{x} + \\dfrac{b}{y} =3$, then $x =$</p>\n<ul><li>A. $\\dfrac{ay}{3y - b}$</li><li>B. $\\dfrac{ay}{b - 3y}$</li><li>C. $\\dfrac{by}{3y - a}$</li><li>D. $\\dfrac{by}{a - 3y}$</li></ul>",
+   "file": "2016_P2_題目英文卷.md"
   },
   {
    "subject": "數學",
@@ -11452,21 +12095,6 @@ window.QB = {
    "file": "2017_P2_QU(CHI).md"
   },
   {
-   "subject": "數學",
-   "year": 2017,
-   "paper": "Paper 2",
-   "type": "題目",
-   "qno": 1,
-   "title": "第 1 題",
-   "section": "Paper 2　Section A",
-   "tags": [
-    "因式分解"
-   ],
-   "text": "$3m^2 - 5mn + 2n^2 + m - n =$\n\n- A. $(m - n)(3m - 2n + 1)$\n- B. $(m - n)(3m + 2n + 1)$\n- C. $(m + n)(3m - 2n - 1)$\n- D. $(m + n)(3m + 2n - 1)$",
-   "html": "<p>1.&nbsp;&nbsp;&nbsp;$3m^2 - 5mn + 2n^2 + m - n =$</p>\n<ul><li>A. $(m - n)(3m - 2n + 1)$</li><li>B. $(m - n)(3m + 2n + 1)$</li><li>C. $(m + n)(3m - 2n - 1)$</li><li>D. $(m + n)(3m + 2n - 1)$</li></ul>",
-   "file": "2017_P2_題目英文卷.md"
-  },
-  {
    "subject": "化學",
    "year": 2017,
    "paper": "Paper 2",
@@ -11486,21 +12114,6 @@ window.QB = {
    "text": "回答試題的所有部分。\n\n(a)　回答以下短問題。\n\n　　(i)　天然橡膠的部分結構如下所示：\n\n![Q2(a)(i) 天然橡膠結構](2017_P2_crops/q2ai.png)\n\n提出為什麼當天然橡膠與硫共熱時變硬。（2 分）\n\n　　(ii)　根據分子結構，解釋為什麼高密度聚乙烯（HDPE）分子較低密度聚乙烯（LDPE）分子裝填得更緊密。（1 分）\n\n　　(iii)　化合物 A 的結構如下所示：\n\n![Q2(a)(iii) 化合物 A 結構](2017_P2_crops/q2aiii.png)\n\n解釋 A 會否呈液晶特性。（2 分）\n\n(b)　下圖顯示銅晶體的晶胞和鋅晶體的一部分結構：\n\n![Q2(b) 銅晶胞 + 鋅晶體](2017_P2_crops/q2b.png)\n\n　　(i)　參考銅晶體的晶胞：\n\n　　　(1)　寫出銅原子的配位數。\n\n　　　(2)　推定在晶胞中銅原子的數目。（2 分）\n\n　　(ii)　參考鋅晶體的該部分結構：\n\n　　　(1)　寫出這類裝填的名稱。\n\n　　　(2)　寫出銅晶體和鋅晶體的裝填的一項相似之處。\n\n　　　(3)　討論銅晶體和鋅晶體的裝填的相異之處。（4 分）\n\n　　(iii)　寫出能用來製造水龍頭的一種含有銅和鋅的合金的名稱。（1 分）\n\n(c)　下圖顯示有機玻璃和聚羥基丁酸酯（PHB）的結構：\n\n![Q2(c) 有機玻璃 + PHB 結構](2017_P2_crops/q2c.png)\n\n　　(i)　繪出有機玻璃的單體的結構，並寫出這單體的天然原料。（2 分）\n\n　　(ii)　以下哪一項可由有機玻璃製成？雨衣、隱形眼鏡、釣魚絲、食物保鮮紙（1 分）\n\n　　(iii)　PHB 是一種熱塑性生物聚合物料。\n\n　　　(1)　「熱塑性」一詞是什麼意思？\n\n　　　(2)　基於 PHB 是生物聚合物料的事實，分別解釋為什麼它的生產和棄置可被視為對環境友善。（3 分）\n\n　　(iv)　PHB 可歸類為聚酯。\n\n　　　(1)　聚酯的生成常涉及縮合作用。寫出縮合作用的一個特徵。\n\n　　　(2)　基於 PHB 含有酯鍵合的事實，解釋為什麼它的棄置可被視為對環境友善。（2 分）",
    "html": "<p>2.&nbsp;&nbsp;&nbsp;回答試題的所有部分。</p>\n<p>(a)　回答以下短問題。</p>\n<p>(i)　天然橡膠的部分結構如下所示：</p>\n<p><img alt=\"Q2(a)(i) 天然橡膠結構\" src=\"chem_2017_P2_crops/q2ai.png\" /></p>\n<p>提出為什麼當天然橡膠與硫共熱時變硬。（2 分）</p>\n<p>(ii)　根據分子結構，解釋為什麼高密度聚乙烯（HDPE）分子較低密度聚乙烯（LDPE）分子裝填得更緊密。（1 分）</p>\n<p>(iii)　化合物 A 的結構如下所示：</p>\n<p><img alt=\"Q2(a)(iii) 化合物 A 結構\" src=\"chem_2017_P2_crops/q2aiii.png\" /></p>\n<p>解釋 A 會否呈液晶特性。（2 分）</p>\n<p>(b)　下圖顯示銅晶體的晶胞和鋅晶體的一部分結構：</p>\n<p><img alt=\"Q2(b) 銅晶胞 + 鋅晶體\" src=\"chem_2017_P2_crops/q2b.png\" /></p>\n<p>(i)　參考銅晶體的晶胞：</p>\n<p>(1)　寫出銅原子的配位數。</p>\n<p>(2)　推定在晶胞中銅原子的數目。（2 分）</p>\n<p>(ii)　參考鋅晶體的該部分結構：</p>\n<p>(1)　寫出這類裝填的名稱。</p>\n<p>(2)　寫出銅晶體和鋅晶體的裝填的一項相似之處。</p>\n<p>(3)　討論銅晶體和鋅晶體的裝填的相異之處。（4 分）</p>\n<p>(iii)　寫出能用來製造水龍頭的一種含有銅和鋅的合金的名稱。（1 分）</p>\n<p>(c)　下圖顯示有機玻璃和聚羥基丁酸酯（PHB）的結構：</p>\n<p><img alt=\"Q2(c) 有機玻璃 + PHB 結構\" src=\"chem_2017_P2_crops/q2c.png\" /></p>\n<p>(i)　繪出有機玻璃的單體的結構，並寫出這單體的天然原料。（2 分）</p>\n<p>(ii)　以下哪一項可由有機玻璃製成？雨衣、隱形眼鏡、釣魚絲、食物保鮮紙（1 分）</p>\n<p>(iii)　PHB 是一種熱塑性生物聚合物料。</p>\n<p>(1)　「熱塑性」一詞是什麼意思？</p>\n<p>(2)　基於 PHB 是生物聚合物料的事實，分別解釋為什麼它的生產和棄置可被視為對環境友善。（3 分）</p>\n<p>(iv)　PHB 可歸類為聚酯。</p>\n<p>(1)　聚酯的生成常涉及縮合作用。寫出縮合作用的一個特徵。</p>\n<p>(2)　基於 PHB 含有酯鍵合的事實，解釋為什麼它的棄置可被視為對環境友善。（2 分）</p>",
    "file": "2017_P2_QU(CHI).md"
-  },
-  {
-   "subject": "數學",
-   "year": 2017,
-   "paper": "Paper 2",
-   "type": "題目",
-   "qno": 2,
-   "title": "第 2 題",
-   "section": "Paper 2　Section A",
-   "tags": [
-    "指數定律"
-   ],
-   "text": "$\\left(\\dfrac{1}{9^{555}}\\right)^{3^{444}} =$\n\n- A. 0\n- B. $\\dfrac{1}{3^{111}}$\n- C. $\\dfrac{1}{3^{222}}$\n- D. $\\dfrac{1}{3^{666}}$",
-   "html": "<p>2.&nbsp;&nbsp;&nbsp;$\\left(\\dfrac{1}{9^{555}}\\right)^{3^{444}} =$</p>\n<ul><li>A. 0</li><li>B. $\\dfrac{1}{3^{111}}$</li><li>C. $\\dfrac{1}{3^{222}}$</li><li>D. $\\dfrac{1}{3^{666}}$</li></ul>",
-   "file": "2017_P2_題目英文卷.md"
   },
   {
    "subject": "化學",
@@ -11523,6 +12136,36 @@ window.QB = {
    "text": "回答試題的所有部分。\n\n(a)　回答以下短問題：\n\n　　(i)　建議一項測試以分辨鈉離子和鉀離子。（2 分）\n\n　　(ii)　建議一項化學測試以檢測二氧化硫氣體。（2 分）\n\n　　(iii)　某有機化合物 X 與 2,4-二硝基苯肼反應生成一黃色固體 Z。Z 的結構如下所示：\n\n![Q3(a)(iii) Z 結構](2017_P2_crops/q3aiii.png)\n\n已知 X 的分子式為 C₇H₈O。繪畫 X 的結構。（1 分）\n\n(b)　在酸性條件下，羥基胺 HONH₂ 與 Fe³⁺(aq) 離子反應的生成物包含 Fe²⁺(aq) 離子和一個氮的氧化物。進行了包括以下兩個步驟的實驗，以推定該氧化物中 N 的氧化數。\n\n步驟 (1)：把一個含 0.875 g 的 HONH₂ 和過量 Fe₂(SO₄)₃ 的水溶液在酸性條件下加熱直至反應完成，繼而把所得溶液稀釋至 250.0 cm³。\n\n步驟 (2)：以過量 H₂SO₄(aq) 把 25.00 cm³ 的該經稀釋溶液酸化，接著與 0.0282 mol dm⁻³ KMnO₄(aq) 進行滴定直至達到終點。所涉及反應的化學方程如下：\n\nMnO₄⁻(aq) + 5Fe²⁺(aq) + 8H⁺(aq) → Mn²⁺(aq) + 5Fe³⁺(aq) + 4H₂O(l)\n\n　　(i)　寫出在滴定終點的顏色變化。（1 分）\n\n　　(ii)　進行了四次滴定，其結果如下所列：\n\n| 次數 | 1 | 2 | 3 | 4 |\n|---|---|---|---|---|\n| 所用 KMnO₄(aq) 的體積 / cm³ | 38.34 | 37.62 | 31.58 | 37.60 |\n\n　　　(1)　計算在滴定中所用 KMnO₄(aq) 的合理平均體積。\n\n　　　(2)　基於該實驗結果，計算在步驟 (1) 中為使反應完成所需的 HONH₂(aq) 與 Fe³⁺(aq) 的摩爾比。\n\n　　　(3)　已知在 HONH₂ 中 N 的氧化數是 −1，並且 H 和 O 的氧化數保持不變，推定該氧化物中 N 的氧化數。（6 分）\n\n　　(iii)　根據 (ii)(3)，提出該氧化物的合理實驗式。（1 分）\n\n(c)　很多植物均含有用的有機化合物，藉適當的溶劑可把這些化合物萃取。某植物的葉子含一有用的有機化合物 S，S 可緩緩地溶於某一暖和的有機溶劑，並可藉這溶劑從該葉子萃取出來。\n\n　　(i)　「回流加熱」是進行這類萃取的一個常用的方法。寫出這方法的優點。（2 分）\n\n　　(ii)　經萃取後，可藉簡單蒸餾把萃取液中的溶劑除掉。繪畫一標示圖以顯示這簡單蒸餾所需的裝置。（3 分）\n\n　　(iii)　從萃取所得的 S 可能含其他有機雜質。建議一個把 S 從這些雜質分離出來的方法。（4 分）\n\n(d)　青蒿素是一個從某種植物獲得的有機化合物。青蒿素不能與 NaHCO₃(aq) 起反應。它的紅外光譜約在 1700 cm⁻¹ 處顯示一強吸收峰。提出下面 W、X、Y 和 Z 中哪一個會是青蒿素的可能結構，解釋你的答案。\n\n![Q3(d) 青蒿素可能結構 W/X/Y/Z](2017_P2_crops/q3cii.png)\n\n| 鍵合 | 化合物類別 | 波數域 / cm⁻¹ |\n|---|---|---|\n| C=C | 烯 | 1610 至 1680 |\n| C=O | 醛、酮、羧酸及其衍生物 | 1680 至 1800 |\n| C≡C | 炔 | 2070 至 2250 |\n| C≡N | 腈 | 2200 至 2280 |\n| O–H | 帶「氫鍵」的酸 | 2500 至 3300 |\n| C–H | 烷、烯及芳烴 | 2840 至 3095 |\n| O–H | 帶「氫鍵」的醇 | 3230 至 3670 |\n| N–H | 胺 | 3350 至 3500 |\n\n（3 分）\n\n---\n\n*試卷完 —*\n\n## 待人工核對\n\n本卷為第 2 層文字交貨，由 easyocr（ch_tra+en，GPU）掃描底稿清洗而成；現模型無影像輸入，未能對頁影像覆核。以下題號建議第 3 層精修時對頁覆核：\n\n- 第 1(b) 題：反應步驟「SO₂(g) + NO₂(g) → SO₃(g) + NO(g)」及「2NO(g) + O₂(g) → 2NO₂(g)」待對頁核實。\n- 第 1(b)(ii) 題：「氧化釩(V)」（OCR「氧化釦」）、操作條件 450°C 待對頁核實。\n- 第 1(c) 題：「光氣 COCl₂」及流汞電解池步驟待對頁核實。\n- 第 3(a)(iii) 題：X 分子式 C₇H₈O（OCR「CoH0」）待對頁核實。\n- 第 3(b) 題：HONH₂ 分子式、0.875 g、滴定方程式及 KMnO₄ 體積表待對頁核實。\n- 第 3(c)/(d) 題：小題編號（青蒿素一節 OCR 讀作「(ii)」，暫列為 (d)）待對頁核實；青蒿素結構 W/X/Y/Z 為截圖。\n- 第 1(a)(ii)、2(a)(i)、2(a)(iii)、2(b)、2(c)、3(a)(iii)、3(d) 題：圖為 300dpi 原卷截圖（程式定位＋墨跡覆蓋率校驗；位置／範圍待 spot-check）；第 3 層再換成向量重繪。\n\n(End of file - total 260 lines)",
    "html": "<p>3.&nbsp;&nbsp;&nbsp;回答試題的所有部分。</p>\n<p>(a)　回答以下短問題：</p>\n<p>(i)　建議一項測試以分辨鈉離子和鉀離子。（2 分）</p>\n<p>(ii)　建議一項化學測試以檢測二氧化硫氣體。（2 分）</p>\n<p>(iii)　某有機化合物 X 與 2,4-二硝基苯肼反應生成一黃色固體 Z。Z 的結構如下所示：</p>\n<p><img alt=\"Q3(a)(iii) Z 結構\" src=\"chem_2017_P2_crops/q3aiii.png\" /></p>\n<p>已知 X 的分子式為 C₇H₈O。繪畫 X 的結構。（1 分）</p>\n<p>(b)　在酸性條件下，羥基胺 HONH₂ 與 Fe³⁺(aq) 離子反應的生成物包含 Fe²⁺(aq) 離子和一個氮的氧化物。進行了包括以下兩個步驟的實驗，以推定該氧化物中 N 的氧化數。</p>\n<p>步驟 (1)：把一個含 0.875 g 的 HONH₂ 和過量 Fe₂(SO₄)₃ 的水溶液在酸性條件下加熱直至反應完成，繼而把所得溶液稀釋至 250.0 cm³。</p>\n<p>步驟 (2)：以過量 H₂SO₄(aq) 把 25.00 cm³ 的該經稀釋溶液酸化，接著與 0.0282 mol dm⁻³ KMnO₄(aq) 進行滴定直至達到終點。所涉及反應的化學方程如下：</p>\n<p>MnO₄⁻(aq) + 5Fe²⁺(aq) + 8H⁺(aq) → Mn²⁺(aq) + 5Fe³⁺(aq) + 4H₂O(l)</p>\n<p>(i)　寫出在滴定終點的顏色變化。（1 分）</p>\n<p>(ii)　進行了四次滴定，其結果如下所列：</p>\n<table>\n<thead>\n<tr>\n<th>次數</th>\n<th>1</th>\n<th>2</th>\n<th>3</th>\n<th>4</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>所用 KMnO₄(aq) 的體積 / cm³</td>\n<td>38.34</td>\n<td>37.62</td>\n<td>31.58</td>\n<td>37.60</td>\n</tr>\n</tbody>\n</table>\n<p>(1)　計算在滴定中所用 KMnO₄(aq) 的合理平均體積。</p>\n<p>(2)　基於該實驗結果，計算在步驟 (1) 中為使反應完成所需的 HONH₂(aq) 與 Fe³⁺(aq) 的摩爾比。</p>\n<p>(3)　已知在 HONH₂ 中 N 的氧化數是 −1，並且 H 和 O 的氧化數保持不變，推定該氧化物中 N 的氧化數。（6 分）</p>\n<p>(iii)　根據 (ii)(3)，提出該氧化物的合理實驗式。（1 分）</p>\n<p>(c)　很多植物均含有用的有機化合物，藉適當的溶劑可把這些化合物萃取。某植物的葉子含一有用的有機化合物 S，S 可緩緩地溶於某一暖和的有機溶劑，並可藉這溶劑從該葉子萃取出來。</p>\n<p>(i)　「回流加熱」是進行這類萃取的一個常用的方法。寫出這方法的優點。（2 分）</p>\n<p>(ii)　經萃取後，可藉簡單蒸餾把萃取液中的溶劑除掉。繪畫一標示圖以顯示這簡單蒸餾所需的裝置。（3 分）</p>\n<p>(iii)　從萃取所得的 S 可能含其他有機雜質。建議一個把 S 從這些雜質分離出來的方法。（4 分）</p>\n<p>(d)　青蒿素是一個從某種植物獲得的有機化合物。青蒿素不能與 NaHCO₃(aq) 起反應。它的紅外光譜約在 1700 cm⁻¹ 處顯示一強吸收峰。提出下面 W、X、Y 和 Z 中哪一個會是青蒿素的可能結構，解釋你的答案。</p>\n<p><img alt=\"Q3(d) 青蒿素可能結構 W/X/Y/Z\" src=\"chem_2017_P2_crops/q3cii.png\" /></p>\n<table>\n<thead>\n<tr>\n<th>鍵合</th>\n<th>化合物類別</th>\n<th>波數域 / cm⁻¹</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>C=C</td>\n<td>烯</td>\n<td>1610 至 1680</td>\n</tr>\n<tr>\n<td>C=O</td>\n<td>醛、酮、羧酸及其衍生物</td>\n<td>1680 至 1800</td>\n</tr>\n<tr>\n<td>C≡C</td>\n<td>炔</td>\n<td>2070 至 2250</td>\n</tr>\n<tr>\n<td>C≡N</td>\n<td>腈</td>\n<td>2200 至 2280</td>\n</tr>\n<tr>\n<td>O–H</td>\n<td>帶「氫鍵」的酸</td>\n<td>2500 至 3300</td>\n</tr>\n<tr>\n<td>C–H</td>\n<td>烷、烯及芳烴</td>\n<td>2840 至 3095</td>\n</tr>\n<tr>\n<td>O–H</td>\n<td>帶「氫鍵」的醇</td>\n<td>3230 至 3670</td>\n</tr>\n<tr>\n<td>N–H</td>\n<td>胺</td>\n<td>3350 至 3500</td>\n</tr>\n</tbody>\n</table>\n<p>（3 分）</p>\n<hr />\n<p><em>試卷完 —</em></p>\n<h2>待人工核對</h2>\n<p>本卷為第 2 層文字交貨，由 easyocr（ch_tra+en，GPU）掃描底稿清洗而成；現模型無影像輸入，未能對頁影像覆核。以下題號建議第 3 層精修時對頁覆核：</p>\n<ul>\n<li>第 1(b) 題：反應步驟「SO₂(g) + NO₂(g) → SO₃(g) + NO(g)」及「2NO(g) + O₂(g) → 2NO₂(g)」待對頁核實。</li>\n<li>第 1(b)(ii) 題：「氧化釩(V)」（OCR「氧化釦」）、操作條件 450°C 待對頁核實。</li>\n<li>第 1(c) 題：「光氣 COCl₂」及流汞電解池步驟待對頁核實。</li>\n<li>第 3(a)(iii) 題：X 分子式 C₇H₈O（OCR「CoH0」）待對頁核實。</li>\n<li>第 3(b) 題：HONH₂ 分子式、0.875 g、滴定方程式及 KMnO₄ 體積表待對頁核實。</li>\n<li>第 3(c)/(d) 題：小題編號（青蒿素一節 OCR 讀作「(ii)」，暫列為 (d)）待對頁核實；青蒿素結構 W/X/Y/Z 為截圖。</li>\n<li>第 1(a)(ii)、2(a)(i)、2(a)(iii)、2(b)、2(c)、3(a)(iii)、3(d) 題：圖為 300dpi 原卷截圖（程式定位＋墨跡覆蓋率校驗；位置／範圍待 spot-check）；第 3 層再換成向量重繪。</li>\n</ul>\n<p>(End of file - total 260 lines)</p>",
    "file": "2017_P2_QU(CHI).md"
+  },
+  {
+   "subject": "數學",
+   "year": 2017,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 1,
+   "title": "第 1 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "因式分解"
+   ],
+   "text": "$3m^2 - 5mn + 2n^2 + m - n =$\n\n- A. $(m - n)(3m - 2n + 1)$\n- B. $(m - n)(3m + 2n + 1)$\n- C. $(m + n)(3m - 2n - 1)$\n- D. $(m + n)(3m + 2n - 1)$",
+   "html": "<p>1.&nbsp;&nbsp;&nbsp;$3m^2 - 5mn + 2n^2 + m - n =$</p>\n<ul><li>A. $(m - n)(3m - 2n + 1)$</li><li>B. $(m - n)(3m + 2n + 1)$</li><li>C. $(m + n)(3m - 2n - 1)$</li><li>D. $(m + n)(3m + 2n - 1)$</li></ul>",
+   "file": "2017_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2017,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 2,
+   "title": "第 2 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "指數定律"
+   ],
+   "text": "$\\left(\\dfrac{1}{9^{555}}\\right)^{3^{444}} =$\n\n- A. 0\n- B. $\\dfrac{1}{3^{111}}$\n- C. $\\dfrac{1}{3^{222}}$\n- D. $\\dfrac{1}{3^{666}}$",
+   "html": "<p>2.&nbsp;&nbsp;&nbsp;$\\left(\\dfrac{1}{9^{555}}\\right)^{3^{444}} =$</p>\n<ul><li>A. 0</li><li>B. $\\dfrac{1}{3^{111}}$</li><li>C. $\\dfrac{1}{3^{222}}$</li><li>D. $\\dfrac{1}{3^{666}}$</li></ul>",
+   "file": "2017_P2_題目英文卷.md"
   },
   {
    "subject": "數學",
@@ -18971,21 +19614,6 @@ window.QB = {
    "file": "2022_P2_QU(CHI).md"
   },
   {
-   "subject": "數學",
-   "year": 2022,
-   "paper": "Paper 2",
-   "type": "題目",
-   "qno": 1,
-   "title": "第 1 題",
-   "section": "Paper 2　Section A",
-   "tags": [
-    "因式分解"
-   ],
-   "text": "$\\alpha^2 - \\alpha - \\beta^2 + \\beta =$\n\n- A. $(\\alpha + \\beta)(\\alpha - \\beta + 1)$.\n- B. $(\\alpha + \\beta)(\\alpha - \\beta - 1)$.\n- C. $(\\alpha - \\beta)(\\alpha + \\beta + 1)$.\n- D. $(\\alpha - \\beta)(\\alpha + \\beta - 1)$.",
-   "html": "<p>1.&nbsp;&nbsp;&nbsp;$\\alpha^2 - \\alpha - \\beta^2 + \\beta =$</p>\n<ul><li>A. $(\\alpha + \\beta)(\\alpha - \\beta + 1)$.</li><li>B. $(\\alpha + \\beta)(\\alpha - \\beta - 1)$.</li><li>C. $(\\alpha - \\beta)(\\alpha + \\beta + 1)$.</li><li>D. $(\\alpha - \\beta)(\\alpha + \\beta - 1)$.</li></ul>",
-   "file": "2022_P2_題目英文卷.md"
-  },
-  {
    "subject": "化學",
    "year": 2022,
    "paper": "Paper 2",
@@ -19006,21 +19634,6 @@ window.QB = {
    "file": "2022_P2_QU(CHI).md"
   },
   {
-   "subject": "數學",
-   "year": 2022,
-   "paper": "Paper 2",
-   "type": "題目",
-   "qno": 2,
-   "title": "第 2 題",
-   "section": "Paper 2　Section A",
-   "tags": [
-    "指數定律"
-   ],
-   "text": "$\\dfrac{81^{2n+3}}{(27^{n+1})^2} =$\n\n- A. 3.\n- B. $3^{2n+6}$.\n- C. $3^{4n+8}$.\n- D. $3^{10n+14}$.",
-   "html": "<p>2.&nbsp;&nbsp;&nbsp;$\\dfrac{81^{2n+3}}{(27^{n+1})^2} =$</p>\n<ul><li>A. 3.</li><li>B. $3^{2n+6}$.</li><li>C. $3^{4n+8}$.</li><li>D. $3^{10n+14}$.</li></ul>",
-   "file": "2022_P2_題目英文卷.md"
-  },
-  {
    "subject": "化學",
    "year": 2022,
    "paper": "Paper 2",
@@ -19038,6 +19651,36 @@ window.QB = {
    "text": "回答試題的所有部分。\n\n(a)　回答以下短問題：\n\n　(i)　提出一化學測試以顯示可怎樣辨別 SO₂(g) 和 CO₂(g)。（2 分）\n\n　(ii)　說明怎樣可從各自的質譜來辨別 CH₃CH₂CHO(l) 和 CH₃COCH₃(l)。（2 分）\n\n　(iii)　下列哪一化學品最適宜用來乾燥丁酸二酯？\n\n濃硫酸　固體氫氧化鈉　無水硫酸鈉（1 分）\n\n(b)　某品牌補鐵藥片的主要成分是 FeSO₄。把數片這些補鐵藥片溶於去離子水中以得到水溶液 S。利用下列兩個方法來測定在溶液 S 中 Fe²⁺(aq) 離子的濃度：\n\n方法 I　使用容量分析\n\n這滴定所涉及反應的化學方程式如下：\n\nMnO₄⁻(aq) + 5Fe²⁺(aq) + 8H⁺(aq) → Mn²⁺(aq) + 5Fe³⁺(aq) + 4H₂O(l)\n\n把 25.00 cm³ 的溶液 S 酸化，然後用 0.0041 M KMnO₄(aq) 滴定。達到終點所需用的該 KMnO₄(aq) 的平均體積是 32.35 cm³。\n\n　(1)　在滴定終點該反應混合物的顏色由淡黃變成淡粉紅。解釋該顏色變化。（1 分）\n\n　(2)　計算在溶液 S 中 Fe²⁺(aq) 離子的濃度。（4 分）\n\n方法 II　使用比色法\n\nFe²⁺(aq) 可與一個無色有機試劑完全反應，生成一橙紅色物種 W(aq)。\n（已知：反應了的 Fe²⁺(aq) 摩爾數 : 所生成的 W(aq) 摩爾數 = 1 : 1）\n\n步驟(1)：把數個濃度不同的標準 FeSO₄(aq) 溶液分別經該無色有機試劑處理，生成對應的橙紅色 W(aq) 溶液。\n\n步驟(2)：用比色計量度這些 W(aq) 溶液的吸光度，並繪出一條校準曲線。\n\n步驟(3)：將溶液 S 稀釋 100 倍，把這稀釋溶液的樣本經步驟(1)所描述的相同方法處理，得出一含有 W(aq) 的溶液 T。\n\n步驟(4)：量度溶液 T 的吸光度。\n\n　(1)　草繪在步驟(2)的校準曲線及標示各坐標軸。在這草繪上，顯示怎樣可找出在溶液 T 中 W(aq) 的濃度。（4 分）\n\n　(2)　從而提出怎樣可測定在溶液 S 中 Fe²⁺(aq) 離子的濃度。（2 分）\n\n(c)　固體樣本含有化合物 Y 和小量雜質 Z。在一實驗中進行了下列各步驟，從這固體樣本獲得純 Y(s)。\n\n已知：Y 在 80 °C 時比在 25 °C 時較溶於去離子水。\n\n步驟(1)：把 1.40 g 的這固體樣本加入 50 cm³ 的去離子水中，並加熱至 80 °C。\n\n步驟(2)：然後加入不溶於水的活性炭來除去 Z，趁熱把所得混合物過濾。\n\n步驟(3)：把所得的熱濾液緩慢冷卻至 25 °C，有 Y(s) 生成。\n\n步驟(4)：把冷卻後的混合物過濾以收集 Y(s)。在清洗及乾燥後，收集得 0.75 g 的 Y(s)。\n\n已知在 80 °C 時，不多於 3.04 g 的 Y(s) 可溶於 100 cm³ 的去離子水。\n\n　(i)　通過計算，顯示在步驟(1)這固體樣本中的所有 Y 應已溶解。（1 分）\n\n　(ii)　解釋為什麼在步驟(2)要把混合物過濾。（1 分）\n\n　(iii)　寫出在步驟(3)生成 Y(s) 的過程名稱。（1 分）\n\n　(iv)　提出一個原因為什麼在步驟(4)所收集得 Y(s) 的質量較在這固體樣本中 Y 的質量為小。（1 分）\n\n(d)　Y 和 Z 可藉色層法分開。以相同的固定相及流動相，把這固體樣本分別進行了薄層色層法 (TLC) 和柱色層法。\n\n（已知：Y 的 Rf 值較 Z 的為大。）\n\n　(i)　草繪一幅附有標示的 TLC 色譜來顯示預期的結果。（1 分）\n\n　(ii)　解釋在柱色層法中首先收集得的部分是 Y 還是 Z。（3 分）\n\n---\n\n## 待人工核對\n\n以下題目的 OCR 原文殘缺或模糊，需以原卷覆核：\n\n| 題號 | 頁（原卷） | 問題 |\n|---|---|---|\n| 第 1 題 (c) | 卷二 p.37–38 | 反應式末段（「H₂O(l)」）OCR 有疑；速率方程指數 a、b 由 OCR 重建 |\n| 第 2 題 | 卷二 p.39–40 | 分題標號 (a)–(e) 順序由 OCR 重建，需核對 |\n| 第 2 題 (a)(ii) | 卷二 p.39–40 | 液晶三相 crop 已截但未肉眼對頁 |\n| 第 2 題 (c) | 卷二 p.39–40 | 聚合物 X 結構 crop 已截，需對圖 |\n| 第 3 題 (c) | 卷二 p.41–42 | 化合物／雜質標號（Y/Z）由 OCR「I/2」重建，需核對 |",
    "html": "<p>3.&nbsp;&nbsp;&nbsp;回答試題的所有部分。</p>\n<p>(a)　回答以下短問題：</p>\n<p>(i)　提出一化學測試以顯示可怎樣辨別 SO₂(g) 和 CO₂(g)。（2 分）</p>\n<p>(ii)　說明怎樣可從各自的質譜來辨別 CH₃CH₂CHO(l) 和 CH₃COCH₃(l)。（2 分）</p>\n<p>(iii)　下列哪一化學品最適宜用來乾燥丁酸二酯？</p>\n<p>濃硫酸　固體氫氧化鈉　無水硫酸鈉（1 分）</p>\n<p>(b)　某品牌補鐵藥片的主要成分是 FeSO₄。把數片這些補鐵藥片溶於去離子水中以得到水溶液 S。利用下列兩個方法來測定在溶液 S 中 Fe²⁺(aq) 離子的濃度：</p>\n<p>方法 I　使用容量分析</p>\n<p>這滴定所涉及反應的化學方程式如下：</p>\n<p>MnO₄⁻(aq) + 5Fe²⁺(aq) + 8H⁺(aq) → Mn²⁺(aq) + 5Fe³⁺(aq) + 4H₂O(l)</p>\n<p>把 25.00 cm³ 的溶液 S 酸化，然後用 0.0041 M KMnO₄(aq) 滴定。達到終點所需用的該 KMnO₄(aq) 的平均體積是 32.35 cm³。</p>\n<p>(1)　在滴定終點該反應混合物的顏色由淡黃變成淡粉紅。解釋該顏色變化。（1 分）</p>\n<p>(2)　計算在溶液 S 中 Fe²⁺(aq) 離子的濃度。（4 分）</p>\n<p>方法 II　使用比色法</p>\n<p>Fe²⁺(aq) 可與一個無色有機試劑完全反應，生成一橙紅色物種 W(aq)。\n（已知：反應了的 Fe²⁺(aq) 摩爾數 : 所生成的 W(aq) 摩爾數 = 1 : 1）</p>\n<p>步驟(1)：把數個濃度不同的標準 FeSO₄(aq) 溶液分別經該無色有機試劑處理，生成對應的橙紅色 W(aq) 溶液。</p>\n<p>步驟(2)：用比色計量度這些 W(aq) 溶液的吸光度，並繪出一條校準曲線。</p>\n<p>步驟(3)：將溶液 S 稀釋 100 倍，把這稀釋溶液的樣本經步驟(1)所描述的相同方法處理，得出一含有 W(aq) 的溶液 T。</p>\n<p>步驟(4)：量度溶液 T 的吸光度。</p>\n<p>(1)　草繪在步驟(2)的校準曲線及標示各坐標軸。在這草繪上，顯示怎樣可找出在溶液 T 中 W(aq) 的濃度。（4 分）</p>\n<p>(2)　從而提出怎樣可測定在溶液 S 中 Fe²⁺(aq) 離子的濃度。（2 分）</p>\n<p>(c)　固體樣本含有化合物 Y 和小量雜質 Z。在一實驗中進行了下列各步驟，從這固體樣本獲得純 Y(s)。</p>\n<p>已知：Y 在 80 °C 時比在 25 °C 時較溶於去離子水。</p>\n<p>步驟(1)：把 1.40 g 的這固體樣本加入 50 cm³ 的去離子水中，並加熱至 80 °C。</p>\n<p>步驟(2)：然後加入不溶於水的活性炭來除去 Z，趁熱把所得混合物過濾。</p>\n<p>步驟(3)：把所得的熱濾液緩慢冷卻至 25 °C，有 Y(s) 生成。</p>\n<p>步驟(4)：把冷卻後的混合物過濾以收集 Y(s)。在清洗及乾燥後，收集得 0.75 g 的 Y(s)。</p>\n<p>已知在 80 °C 時，不多於 3.04 g 的 Y(s) 可溶於 100 cm³ 的去離子水。</p>\n<p>(i)　通過計算，顯示在步驟(1)這固體樣本中的所有 Y 應已溶解。（1 分）</p>\n<p>(ii)　解釋為什麼在步驟(2)要把混合物過濾。（1 分）</p>\n<p>(iii)　寫出在步驟(3)生成 Y(s) 的過程名稱。（1 分）</p>\n<p>(iv)　提出一個原因為什麼在步驟(4)所收集得 Y(s) 的質量較在這固體樣本中 Y 的質量為小。（1 分）</p>\n<p>(d)　Y 和 Z 可藉色層法分開。以相同的固定相及流動相，把這固體樣本分別進行了薄層色層法 (TLC) 和柱色層法。</p>\n<p>（已知：Y 的 Rf 值較 Z 的為大。）</p>\n<p>(i)　草繪一幅附有標示的 TLC 色譜來顯示預期的結果。（1 分）</p>\n<p>(ii)　解釋在柱色層法中首先收集得的部分是 Y 還是 Z。（3 分）</p>\n<hr />\n<h2>待人工核對</h2>\n<p>以下題目的 OCR 原文殘缺或模糊，需以原卷覆核：</p>\n<table>\n<thead>\n<tr>\n<th>題號</th>\n<th>頁（原卷）</th>\n<th>問題</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>第 1 題 (c)</td>\n<td>卷二 p.37–38</td>\n<td>反應式末段（「H₂O(l)」）OCR 有疑；速率方程指數 a、b 由 OCR 重建</td>\n</tr>\n<tr>\n<td>第 2 題</td>\n<td>卷二 p.39–40</td>\n<td>分題標號 (a)–(e) 順序由 OCR 重建，需核對</td>\n</tr>\n<tr>\n<td>第 2 題 (a)(ii)</td>\n<td>卷二 p.39–40</td>\n<td>液晶三相 crop 已截但未肉眼對頁</td>\n</tr>\n<tr>\n<td>第 2 題 (c)</td>\n<td>卷二 p.39–40</td>\n<td>聚合物 X 結構 crop 已截，需對圖</td>\n</tr>\n<tr>\n<td>第 3 題 (c)</td>\n<td>卷二 p.41–42</td>\n<td>化合物／雜質標號（Y/Z）由 OCR「I/2」重建，需核對</td>\n</tr>\n</tbody>\n</table>",
    "file": "2022_P2_QU(CHI).md"
+  },
+  {
+   "subject": "數學",
+   "year": 2022,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 1,
+   "title": "第 1 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "因式分解"
+   ],
+   "text": "$\\alpha^2 - \\alpha - \\beta^2 + \\beta =$\n\n- A. $(\\alpha + \\beta)(\\alpha - \\beta + 1)$.\n- B. $(\\alpha + \\beta)(\\alpha - \\beta - 1)$.\n- C. $(\\alpha - \\beta)(\\alpha + \\beta + 1)$.\n- D. $(\\alpha - \\beta)(\\alpha + \\beta - 1)$.",
+   "html": "<p>1.&nbsp;&nbsp;&nbsp;$\\alpha^2 - \\alpha - \\beta^2 + \\beta =$</p>\n<ul><li>A. $(\\alpha + \\beta)(\\alpha - \\beta + 1)$.</li><li>B. $(\\alpha + \\beta)(\\alpha - \\beta - 1)$.</li><li>C. $(\\alpha - \\beta)(\\alpha + \\beta + 1)$.</li><li>D. $(\\alpha - \\beta)(\\alpha + \\beta - 1)$.</li></ul>",
+   "file": "2022_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2022,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 2,
+   "title": "第 2 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "指數定律"
+   ],
+   "text": "$\\dfrac{81^{2n+3}}{(27^{n+1})^2} =$\n\n- A. 3.\n- B. $3^{2n+6}$.\n- C. $3^{4n+8}$.\n- D. $3^{10n+14}$.",
+   "html": "<p>2.&nbsp;&nbsp;&nbsp;$\\dfrac{81^{2n+3}}{(27^{n+1})^2} =$</p>\n<ul><li>A. 3.</li><li>B. $3^{2n+6}$.</li><li>C. $3^{4n+8}$.</li><li>D. $3^{10n+14}$.</li></ul>",
+   "file": "2022_P2_題目英文卷.md"
   },
   {
    "subject": "數學",
@@ -21329,21 +21972,6 @@ window.QB = {
    "file": "2023_P2_QU(CHI).md"
   },
   {
-   "subject": "數學",
-   "year": 2023,
-   "paper": "Paper 2",
-   "type": "題目",
-   "qno": 1,
-   "title": "第 1 題",
-   "section": "Paper 2　Section A",
-   "tags": [
-    "主項變換"
-   ],
-   "text": "If $\\dfrac{a+5b}{7a+2b}=\\dfrac{1}{b+3}$, then $a=$\n\n- A. $\\dfrac{4-b}{5b^2+13b}$\n- B. $\\dfrac{4+b}{5b^2+13b}$\n- C. $\\dfrac{5b^2+13b}{4-b}$\n- D. $\\dfrac{5b^2+13b}{4+b}$",
-   "html": "<p>1.&nbsp;&nbsp;&nbsp;If $\\dfrac{a+5b}{7a+2b}=\\dfrac{1}{b+3}$, then $a=$</p>\n<ul><li>A. $\\dfrac{4-b}{5b^2+13b}$</li><li>B. $\\dfrac{4+b}{5b^2+13b}$</li><li>C. $\\dfrac{5b^2+13b}{4-b}$</li><li>D. $\\dfrac{5b^2+13b}{4+b}$</li></ul>",
-   "file": "2023_P2_題目英文卷.md"
-  },
-  {
    "subject": "化學",
    "year": 2023,
    "paper": "Paper 2",
@@ -21380,21 +22008,6 @@ window.QB = {
    "text": "**(a)** 在 2000 年，香港進行了一項調查，評估污染物 X 於人體內的生物積聚情況。該項調查收集了人類母乳樣本作分析，並以問卷收集參與者的年齡、膳食和健康狀況等各項資料。以下兩圖顯示母乳內污染物 X 濃度與年齡組別（圖 I）和每週進食海鮮次數（圖 II）的關係：\n\n![圖](2023_P2_crops/q2a.png)\n\n(i) 參考以上兩圖，指出兩項證據以支持污染物 X 是可於人體內積聚。解釋你的答案。（4 分）\n\n(ii) (1) 列出引致生物積聚的污染物的三種常見特徵。（3 分）\n\n(2) 提出為什麼母乳可作生物積聚的其中一個指標。（2 分）\n\n(iii) 參考上述個案，提出會引致釋放可生物積聚的污染物到環境的兩項人類活動。（2 分）\n\n---\n\n**(b)** 為了增加海岸線的生物多樣性，故在本地海堤裝置人工生態磚塊組件。以下照片顯示海堤上裝置了人工生態磚塊組件的區域：\n\n![圖](2023_P2_crops/q2b.png)\n\n在本港某海堤裝置不同的人工生態磚塊組件，以進行一項實驗。下表顯示四個不同的處理方法，以及 12 個月之後在各表面上生長的無脊椎動物物種數目：\n\n![圖](2023_P2_crops/q2b_table.png)\n\n| 處理方法 | 無脊椎動物物種數目 |\n|---|---|\n| (1) 原有的海堤表面 | [?] |\n| (2) 裝置平坦表面的磚塊 | 8 |\n| (3) 裝置具 2.5 cm 深度罅隙的磚塊 | 13 |\n| (4) 裝置具 5 cm 深度罅隙的磚塊 | 17 |\n\n（處理方法的側面圖及表面圖見上圖。）\n\n(i) 比較相關的處理方法，推論裝置人工生態磚塊組件的兩種效應。按照以下格式在答題簿內以表列形式回答。（4 分）\n\n| 比較哪些處理方法的結果 | 推論 |\n|---|---|\n| ＿＿＿ | ＿＿＿ |\n| ＿＿＿ | ＿＿＿ |\n\n(ii) 提出人工生態磚塊組件的罅隙如何幫助區域 A 內的生物應付以下環境情況所帶來的威脅：\n\n(1) 潮退時暴露的海堤表面（1 分）\n\n(2) 海浪的作用（1 分）\n\n(iii) (1) 提出在評估裝置人工生態磚塊組件對區域 A 內生物多樣性的效應時，應要收集的另一組數據。（1 分）\n\n(2) 要確認裝置人工生態磚塊組件能否增加區域 A 的生物多樣性，收集到的數據需要符合某些特定條件。列出這些條件。（2 分）",
    "html": "<p>2.&nbsp;&nbsp;&nbsp;<strong>(a)</strong> 在 2000 年，香港進行了一項調查，評估污染物 X 於人體內的生物積聚情況。該項調查收集了人類母乳樣本作分析，並以問卷收集參與者的年齡、膳食和健康狀況等各項資料。以下兩圖顯示母乳內污染物 X 濃度與年齡組別（圖 I）和每週進食海鮮次數（圖 II）的關係：</p>\n<p><img alt=\"圖\" src=\"bio_2023_P2_crops/q2a.png\" /></p>\n<p>(i) 參考以上兩圖，指出兩項證據以支持污染物 X 是可於人體內積聚。解釋你的答案。（4 分）</p>\n<p>(ii) (1) 列出引致生物積聚的污染物的三種常見特徵。（3 分）</p>\n<p>(2) 提出為什麼母乳可作生物積聚的其中一個指標。（2 分）</p>\n<p>(iii) 參考上述個案，提出會引致釋放可生物積聚的污染物到環境的兩項人類活動。（2 分）</p>\n<hr />\n<p><strong>(b)</strong> 為了增加海岸線的生物多樣性，故在本地海堤裝置人工生態磚塊組件。以下照片顯示海堤上裝置了人工生態磚塊組件的區域：</p>\n<p><img alt=\"圖\" src=\"bio_2023_P2_crops/q2b.png\" /></p>\n<p>在本港某海堤裝置不同的人工生態磚塊組件，以進行一項實驗。下表顯示四個不同的處理方法，以及 12 個月之後在各表面上生長的無脊椎動物物種數目：</p>\n<p><img alt=\"圖\" src=\"bio_2023_P2_crops/q2b_table.png\" /></p>\n<table>\n<thead>\n<tr>\n<th>處理方法</th>\n<th>無脊椎動物物種數目</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>(1) 原有的海堤表面</td>\n<td>[?]</td>\n</tr>\n<tr>\n<td>(2) 裝置平坦表面的磚塊</td>\n<td>8</td>\n</tr>\n<tr>\n<td>(3) 裝置具 2.5 cm 深度罅隙的磚塊</td>\n<td>13</td>\n</tr>\n<tr>\n<td>(4) 裝置具 5 cm 深度罅隙的磚塊</td>\n<td>17</td>\n</tr>\n</tbody>\n</table>\n<p>（處理方法的側面圖及表面圖見上圖。）</p>\n<p>(i) 比較相關的處理方法，推論裝置人工生態磚塊組件的兩種效應。按照以下格式在答題簿內以表列形式回答。（4 分）</p>\n<table>\n<thead>\n<tr>\n<th>比較哪些處理方法的結果</th>\n<th>推論</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>＿＿＿</td>\n<td>＿＿＿</td>\n</tr>\n<tr>\n<td>＿＿＿</td>\n<td>＿＿＿</td>\n</tr>\n</tbody>\n</table>\n<p>(ii) 提出人工生態磚塊組件的罅隙如何幫助區域 A 內的生物應付以下環境情況所帶來的威脅：</p>\n<p>(1) 潮退時暴露的海堤表面（1 分）</p>\n<p>(2) 海浪的作用（1 分）</p>\n<p>(iii) (1) 提出在評估裝置人工生態磚塊組件對區域 A 內生物多樣性的效應時，應要收集的另一組數據。（1 分）</p>\n<p>(2) 要確認裝置人工生態磚塊組件能否增加區域 A 的生物多樣性，收集到的數據需要符合某些特定條件。列出這些條件。（2 分）</p>",
    "file": "2023_P2_QU(CHI).md"
-  },
-  {
-   "subject": "數學",
-   "year": 2023,
-   "paper": "Paper 2",
-   "type": "題目",
-   "qno": 2,
-   "title": "第 2 題",
-   "section": "Paper 2　Section A",
-   "tags": [
-    "代數化簡"
-   ],
-   "text": "$\\dfrac{2}{5-4x}-\\dfrac{1}{5+4x}=$\n\n- A. $\\dfrac{5+4x}{25-16x^2}$\n- B. $\\dfrac{5-4x}{25-16x^2}$\n- C. $\\dfrac{5+12x}{25-16x^2}$\n- D. $\\dfrac{5-12x}{25-16x^2}$",
-   "html": "<p>2.&nbsp;&nbsp;&nbsp;$\\dfrac{2}{5-4x}-\\dfrac{1}{5+4x}=$</p>\n<ul><li>A. $\\dfrac{5+4x}{25-16x^2}$</li><li>B. $\\dfrac{5-4x}{25-16x^2}$</li><li>C. $\\dfrac{5+12x}{25-16x^2}$</li><li>D. $\\dfrac{5-12x}{25-16x^2}$</li></ul>",
-   "file": "2023_P2_題目英文卷.md"
   },
   {
    "subject": "化學",
@@ -21435,21 +22048,6 @@ window.QB = {
    "file": "2023_P2_QU(CHI).md"
   },
   {
-   "subject": "數學",
-   "year": 2023,
-   "paper": "Paper 2",
-   "type": "題目",
-   "qno": 3,
-   "title": "第 3 題",
-   "section": "Paper 2　Section A",
-   "tags": [
-    "指數定律"
-   ],
-   "text": "$4^{n+2}3^{2n+4}=$\n\n- A. $6^{2n+4}$\n- B. $6^{4n+8}$\n- C. $12^{2n+4}$\n- D. $12^{3n+6}$",
-   "html": "<p>3.&nbsp;&nbsp;&nbsp;$4^{n+2}3^{2n+4}=$</p>\n<ul><li>A. $6^{2n+4}$</li><li>B. $6^{4n+8}$</li><li>C. $12^{2n+4}$</li><li>D. $12^{3n+6}$</li></ul>",
-   "file": "2023_P2_題目英文卷.md"
-  },
-  {
    "subject": "生物",
    "year": 2023,
    "paper": "Paper 2",
@@ -21466,6 +22064,51 @@ window.QB = {
    "text": "**(a)** GFP 基因編碼一種蛋白，名為綠色螢光蛋白（GFP），可於一些水母中找到。下圖顯示將 GFP 基因插入質粒 A，並把細菌細胞轉化的過程：\n\n![圖](2023_P2_crops/q4a.png)\n\n（圖中顯示限制酶 R 和限制酶 P 的切割位置、氨苄青霉素抗性基因、GFP 基因，以及步驟 I 至 IV。）\n\n(i) 寫出將 GFP 基因插入質粒 A 所使用的限制酶。解釋你的答案。（3 分）\n\n(ii) 步驟 IV 的目的是什麼？這步驟如何達至其目的？（2 分）\n\n(iii) 下圖顯示在普通光和 UV 光下，瓊脂平板上的細菌菌落的外觀：\n\n![圖](2023_P2_crops/q4a_colony.png)\n\n(1) 解釋為什麼只有部分細菌菌落在 UV 光下發光。（3 分）\n\n(2) 提出 GFP 基因的一種應用。（1 分）\n\n---\n\n**(b)** 某公司研發具除草劑抗性基因（HR）的轉基因（GM）稻米植物，其採用的方法如下所示：\n\n![圖](2023_P2_crops/q4b.png)\n\n（圖中顯示基因槍、將 HR 基因轉移至稻米胼胝體（步驟 A）、發育為 4 種稻米系、提取 DNA 樣本進行 PCR 檢測，以及用除草劑噴灑檢測葉子有否受損。）\n\n(i) 指出步驟 A 所使用的技術。（1 分）\n\n(ii) 將稻米系 W、X、Y 和 Z 的 DNA 樣本進行 PCR，檢測是否含有 ACTI 基因（該基因可見於所有稻米植物）和加插的 HR 基因。完成後，將 PCR 產物進行凝膠電泳。用相等體積的水代替 PCR 產物作為對照。凝膠電泳的結果如下所示：\n\n![圖](2023_P2_crops/q4b_gel.png)\n\n（凝膠 I：使用 PCR 檢測 ACTI 基因；凝膠 II：使用 PCR 檢測 HR 基因。）\n\n(1) 判斷哪些稻米系樣本具有 HR 基因。（1 分）\n\n(2) 如果凝膠 I 內樣本 Y 的 DNA 帶不存在，你曾如何演繹凝膠 II 內樣本 Y 的結果？（2 分）\n\n(iii) 使用大量除草劑噴灑 4 組（組 1 至組 4）稻米植物，然後在固定的環境條件下種植植物。兩週後，記錄每組在 100 片葉子中，具可見不同程度損傷的葉子數目。GM 稻米系中因除草劑誘發的損害，總結如下：\n\n![圖](2023_P2_crops/q4b_leaf.png)\n\n(1) 哪組稻米植物具最高的除草劑抗性？解釋你的答案。（2 分）\n\n(2) 組 1 所代表的，最可能是哪個稻米系樣本（W、X、Y 或 Z）？解釋你的答案。（3 分）\n\n(3) 雖然有多於一種稻米系成功插入 HR 基因，但是除草劑所誘發的損傷結果，差異甚大。提出為什麼會這樣。（2 分）\n\n---\n\n## 待人工核對\n\n- 第 2 題 (a)：污染物字母（X／Y）在引言與小題間不一致，待對頁核對（原卷 p.3）。\n- 第 2 題 (b)：處理方法 (1) 原有海堤表面的無脊椎動物物種數目 OCR 未能辨識（原卷 p.4）。\n- 第 3 題 (a)(ii)：細菌 X／Y 於不同溫度下「菌落數目增加 10 倍所需時間」之數據表數值 OCR 亂碼，以原卷截圖嵌入，待對頁核對（原卷 p.5）。\n- 第 3 題 (b)(ii)：抗生素 P/Q/R/S 的濃度及藥敏測試圖（圖 II／III）細節以截圖嵌入，待對頁核對（原卷 p.6）。\n- 第 4 題 (b)(iii)：除草劑誘發葉損傷之數據表數值 OCR 亂碼，以原卷截圖嵌入，待對頁核對（原卷 p.10）。\n- 各小題分數以 OCR 辨識為準，部分標示待對頁核對。",
    "html": "<p>4.&nbsp;&nbsp;&nbsp;<strong>(a)</strong> GFP 基因編碼一種蛋白，名為綠色螢光蛋白（GFP），可於一些水母中找到。下圖顯示將 GFP 基因插入質粒 A，並把細菌細胞轉化的過程：</p>\n<p><img alt=\"圖\" src=\"bio_2023_P2_crops/q4a.png\" /></p>\n<p>（圖中顯示限制酶 R 和限制酶 P 的切割位置、氨苄青霉素抗性基因、GFP 基因，以及步驟 I 至 IV。）</p>\n<p>(i) 寫出將 GFP 基因插入質粒 A 所使用的限制酶。解釋你的答案。（3 分）</p>\n<p>(ii) 步驟 IV 的目的是什麼？這步驟如何達至其目的？（2 分）</p>\n<p>(iii) 下圖顯示在普通光和 UV 光下，瓊脂平板上的細菌菌落的外觀：</p>\n<p><img alt=\"圖\" src=\"bio_2023_P2_crops/q4a_colony.png\" /></p>\n<p>(1) 解釋為什麼只有部分細菌菌落在 UV 光下發光。（3 分）</p>\n<p>(2) 提出 GFP 基因的一種應用。（1 分）</p>\n<hr />\n<p><strong>(b)</strong> 某公司研發具除草劑抗性基因（HR）的轉基因（GM）稻米植物，其採用的方法如下所示：</p>\n<p><img alt=\"圖\" src=\"bio_2023_P2_crops/q4b.png\" /></p>\n<p>（圖中顯示基因槍、將 HR 基因轉移至稻米胼胝體（步驟 A）、發育為 4 種稻米系、提取 DNA 樣本進行 PCR 檢測，以及用除草劑噴灑檢測葉子有否受損。）</p>\n<p>(i) 指出步驟 A 所使用的技術。（1 分）</p>\n<p>(ii) 將稻米系 W、X、Y 和 Z 的 DNA 樣本進行 PCR，檢測是否含有 ACTI 基因（該基因可見於所有稻米植物）和加插的 HR 基因。完成後，將 PCR 產物進行凝膠電泳。用相等體積的水代替 PCR 產物作為對照。凝膠電泳的結果如下所示：</p>\n<p><img alt=\"圖\" src=\"bio_2023_P2_crops/q4b_gel.png\" /></p>\n<p>（凝膠 I：使用 PCR 檢測 ACTI 基因；凝膠 II：使用 PCR 檢測 HR 基因。）</p>\n<p>(1) 判斷哪些稻米系樣本具有 HR 基因。（1 分）</p>\n<p>(2) 如果凝膠 I 內樣本 Y 的 DNA 帶不存在，你曾如何演繹凝膠 II 內樣本 Y 的結果？（2 分）</p>\n<p>(iii) 使用大量除草劑噴灑 4 組（組 1 至組 4）稻米植物，然後在固定的環境條件下種植植物。兩週後，記錄每組在 100 片葉子中，具可見不同程度損傷的葉子數目。GM 稻米系中因除草劑誘發的損害，總結如下：</p>\n<p><img alt=\"圖\" src=\"bio_2023_P2_crops/q4b_leaf.png\" /></p>\n<p>(1) 哪組稻米植物具最高的除草劑抗性？解釋你的答案。（2 分）</p>\n<p>(2) 組 1 所代表的，最可能是哪個稻米系樣本（W、X、Y 或 Z）？解釋你的答案。（3 分）</p>\n<p>(3) 雖然有多於一種稻米系成功插入 HR 基因，但是除草劑所誘發的損傷結果，差異甚大。提出為什麼會這樣。（2 分）</p>\n<hr />\n<h2>待人工核對</h2>\n<ul>\n<li>第 2 題 (a)：污染物字母（X／Y）在引言與小題間不一致，待對頁核對（原卷 p.3）。</li>\n<li>第 2 題 (b)：處理方法 (1) 原有海堤表面的無脊椎動物物種數目 OCR 未能辨識（原卷 p.4）。</li>\n<li>第 3 題 (a)(ii)：細菌 X／Y 於不同溫度下「菌落數目增加 10 倍所需時間」之數據表數值 OCR 亂碼，以原卷截圖嵌入，待對頁核對（原卷 p.5）。</li>\n<li>第 3 題 (b)(ii)：抗生素 P/Q/R/S 的濃度及藥敏測試圖（圖 II／III）細節以截圖嵌入，待對頁核對（原卷 p.6）。</li>\n<li>第 4 題 (b)(iii)：除草劑誘發葉損傷之數據表數值 OCR 亂碼，以原卷截圖嵌入，待對頁核對（原卷 p.10）。</li>\n<li>各小題分數以 OCR 辨識為準，部分標示待對頁核對。</li>\n</ul>",
    "file": "2023_P2_QU(CHI).md"
+  },
+  {
+   "subject": "數學",
+   "year": 2023,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 1,
+   "title": "第 1 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "主項變換"
+   ],
+   "text": "If $\\dfrac{a+5b}{7a+2b}=\\dfrac{1}{b+3}$, then $a=$\n\n- A. $\\dfrac{4-b}{5b^2+13b}$\n- B. $\\dfrac{4+b}{5b^2+13b}$\n- C. $\\dfrac{5b^2+13b}{4-b}$\n- D. $\\dfrac{5b^2+13b}{4+b}$",
+   "html": "<p>1.&nbsp;&nbsp;&nbsp;If $\\dfrac{a+5b}{7a+2b}=\\dfrac{1}{b+3}$, then $a=$</p>\n<ul><li>A. $\\dfrac{4-b}{5b^2+13b}$</li><li>B. $\\dfrac{4+b}{5b^2+13b}$</li><li>C. $\\dfrac{5b^2+13b}{4-b}$</li><li>D. $\\dfrac{5b^2+13b}{4+b}$</li></ul>",
+   "file": "2023_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2023,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 2,
+   "title": "第 2 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "代數化簡"
+   ],
+   "text": "$\\dfrac{2}{5-4x}-\\dfrac{1}{5+4x}=$\n\n- A. $\\dfrac{5+4x}{25-16x^2}$\n- B. $\\dfrac{5-4x}{25-16x^2}$\n- C. $\\dfrac{5+12x}{25-16x^2}$\n- D. $\\dfrac{5-12x}{25-16x^2}$",
+   "html": "<p>2.&nbsp;&nbsp;&nbsp;$\\dfrac{2}{5-4x}-\\dfrac{1}{5+4x}=$</p>\n<ul><li>A. $\\dfrac{5+4x}{25-16x^2}$</li><li>B. $\\dfrac{5-4x}{25-16x^2}$</li><li>C. $\\dfrac{5+12x}{25-16x^2}$</li><li>D. $\\dfrac{5-12x}{25-16x^2}$</li></ul>",
+   "file": "2023_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2023,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 3,
+   "title": "第 3 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "指數定律"
+   ],
+   "text": "$4^{n+2}3^{2n+4}=$\n\n- A. $6^{2n+4}$\n- B. $6^{4n+8}$\n- C. $12^{2n+4}$\n- D. $12^{3n+6}$",
+   "html": "<p>3.&nbsp;&nbsp;&nbsp;$4^{n+2}3^{2n+4}=$</p>\n<ul><li>A. $6^{2n+4}$</li><li>B. $6^{4n+8}$</li><li>C. $12^{2n+4}$</li><li>D. $12^{3n+6}$</li></ul>",
+   "file": "2023_P2_題目英文卷.md"
   },
   {
    "subject": "數學",

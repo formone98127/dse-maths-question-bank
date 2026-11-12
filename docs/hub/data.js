@@ -1,6 +1,7 @@
 /* ===== DSE Hub — 只放電子題庫已有的試卷 ===== */
 
-const BANK_URL = "https://formone98127.github.io/dse-maths-question-bank/";
+/* Hub 喺 /hub/；題庫喺上一層。用相對路徑，GitHub Pages 同自訂網域都得。 */
+const BANK_URL = new URL("../", window.location.href).href;
 
 /**
  * 每條 = 資料庫真實有的一卷

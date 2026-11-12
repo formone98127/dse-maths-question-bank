@@ -157,9 +157,22 @@ main { flex:1; min-height:0; display:flex; flex-direction:column; max-width:960p
   border-color:var(--acc); background:#eef5fc;
   box-shadow:0 0 0 2px rgba(11,98,196,.18);
 }
+#qbody .option.correct {
+  border-color:#1b7a3d; background:#eaf7ee;
+  box-shadow:0 0 0 2px rgba(27,122,61,.18);
+}
+#qbody .option.correct .letter { color:#1b7a3d; }
+#qbody .option.wrong {
+  border-color:#b42318; background:#fef3f2;
+  box-shadow:0 0 0 2px rgba(180,35,24,.16);
+}
+#qbody .option.wrong .letter { color:#b42318; }
 #qbody .option .letter { flex:0 0 1.2em; font-weight:700; color:var(--acc); }
 #qbody .option .opt-body { flex:1; min-width:0; }
 #qbody .mc-hint { color:var(--mut); font-size:12.5px; margin:0 0 8px; }
+#qbody .mc-feedback { color:var(--ink); font-size:13.5px; font-weight:700; margin:8px 0 0; }
+#qbody .mc-feedback.ok { color:#1b7a3d; }
+#qbody .mc-feedback.bad { color:#b42318; }
 mjx-container { overflow-x:auto; overflow-y:hidden; }
 #nav { display:flex; gap:6px; align-items:center; justify-content:center; flex-wrap:nowrap; padding:10px 0; }
 #nav .btn { flex:0 0 auto; padding:8px 10px; border:1px solid var(--line); border-radius:8px;
@@ -422,6 +435,8 @@ function syncBarTitle(q) {
 }
 
 function enhanceMc(root) {
+  const ans = curQ && curQ.answer ? String(curQ.answer).toUpperCase() : '';
+  const pct = (curQ && curQ.answer_pct != null) ? curQ.answer_pct : null;
   root.querySelectorAll('ul').forEach(ul => {
     const items = [...ul.children].filter(el => el.tagName === 'LI');
     if (items.length < 2) return;
@@ -437,8 +452,11 @@ function enhanceMc(root) {
     wrap.setAttribute('aria-label', '選項');
     const hint = document.createElement('p');
     hint.className = 'mc-hint';
-    hint.textContent = '撳選項練習（答案稍後加入）';
+    hint.textContent = ans ? '撳選項練習' : '撳選項練習（答案稍後加入）';
     wrap.appendChild(hint);
+    const feedback = document.createElement('p');
+    feedback.className = 'mc-feedback';
+    feedback.hidden = true;
     parsed.forEach(p => {
       const btn = document.createElement('button');
       btn.type = 'button';
@@ -446,11 +464,26 @@ function enhanceMc(root) {
       btn.dataset.choice = p.letter;
       btn.innerHTML = `<span class="letter">${p.letter}</span><span class="opt-body">${p.html}</span>`;
       btn.addEventListener('click', () => {
-        wrap.querySelectorAll('.option').forEach(b => b.classList.remove('selected'));
+        wrap.querySelectorAll('.option').forEach(b => {
+          b.classList.remove('selected', 'correct', 'wrong');
+        });
         btn.classList.add('selected');
+        if (!ans) return;
+        const ok = p.letter === ans;
+        wrap.querySelectorAll('.option').forEach(b => {
+          if (b.dataset.choice === ans) b.classList.add('correct');
+        });
+        if (!ok) btn.classList.add('wrong');
+        const rate = (pct != null) ? `（答對率 ${pct}%）` : '';
+        feedback.hidden = false;
+        feedback.className = 'mc-feedback ' + (ok ? 'ok' : 'bad');
+        feedback.textContent = ok
+          ? `正確！答案是 ${ans}${rate}`
+          : `唔啱。正確答案是 ${ans}${rate}`;
       });
       wrap.appendChild(btn);
     });
+    wrap.appendChild(feedback);
     ul.replaceWith(wrap);
   });
 }
@@ -633,6 +666,6 @@ if (!location.hash) {
   openFromHash();
 }
 </script>
-<script src="pwa.js?v=202611111610"></script>
+<script src="pwa.js?v=20261112095627"></script>
 </body>
 </html>

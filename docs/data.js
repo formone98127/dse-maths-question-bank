@@ -1514,7 +1514,9 @@ window.QB = {
    ],
    "text": "$\\dfrac{(2x^4)^3}{2x^5} =$\n\n- A. $3x^2$.\n- B. $3x^7$.\n- C. $4x^7$.\n- D. $4x^{59}$.",
    "html": "<p>1.&nbsp;&nbsp;&nbsp;$\\dfrac{(2x^4)^3}{2x^5} =$</p>\n<ul><li>A. $3x^2$.</li><li>B. $3x^7$.</li><li>C. $4x^7$.</li><li>D. $4x^{59}$.</li></ul>",
-   "file": "2012_P2_題目英文卷.md"
+   "file": "2012_P2_題目英文卷.md",
+   "answer": "C",
+   "answer_pct": 94
   },
   {
    "subject": "數學",
@@ -1529,7 +1531,9 @@ window.QB = {
    ],
    "text": "$(4x+y)^2-(4x-y)^2 =$\n\n- A. $0$.\n- B. $2y^2$.\n- C. $8xy$.\n- D. $16xy$.",
    "html": "<p>2.&nbsp;&nbsp;&nbsp;$(4x+y)^2-(4x-y)^2 =$</p>\n<ul><li>A. $0$.</li><li>B. $2y^2$.</li><li>C. $8xy$.</li><li>D. $16xy$.</li></ul>",
-   "file": "2012_P2_題目英文卷.md"
+   "file": "2012_P2_題目英文卷.md",
+   "answer": "D",
+   "answer_pct": 74
   },
   {
    "subject": "數學",
@@ -1546,7 +1550,9 @@ window.QB = {
    ],
    "text": "If $p$ and $q$ are constants such that $x^2+p=(x+2)(x+q)+10$, then $p=$\n\n- A. $-4$.\n- B. $-2$.\n- C. $6$.\n- D. $10$.",
    "html": "<p>3.&nbsp;&nbsp;&nbsp;If $p$ and $q$ are constants such that $x^2+p=(x+2)(x+q)+10$, then $p=$</p>\n<ul><li>A. $-4$.</li><li>B. $-2$.</li><li>C. $6$.</li><li>D. $10$.</li></ul>",
-   "file": "2012_P2_題目英文卷.md"
+   "file": "2012_P2_題目英文卷.md",
+   "answer": "C",
+   "answer_pct": 59
   },
   {
    "subject": "數學",
@@ -1563,7 +1569,9 @@ window.QB = {
    ],
    "text": "If $ k $ is a constant such that $ x^3 + 4x^2 + kx - 12 $ is divisible by $ x + 3 $, then $ k = $\n\n- A. $-25$.\n- B. $-1$.\n- C. $1$.\n- D. $17$.",
    "html": "<p>4.&nbsp;&nbsp;&nbsp;If $ k $ is a constant such that $ x^3 + 4x^2 + kx - 12 $ is divisible by $ x + 3 $, then $ k = $</p>\n<ul><li>A. $-25$.</li><li>B. $-1$.</li><li>C. $1$.</li><li>D. $17$.</li></ul>",
-   "file": "2012_P2_題目英文卷.md"
+   "file": "2012_P2_題目英文卷.md",
+   "answer": "B",
+   "answer_pct": 75
   },
   {
    "subject": "數學",
@@ -1579,7 +1587,9 @@ window.QB = {
    ],
    "text": "If $ m + 2n + 6 = 2m - n = 7 $, then $ n = $\n\n- A. $-4$.\n- B. $-1$.\n- C. $3$.\n- D. $11$.",
    "html": "<p>5.&nbsp;&nbsp;&nbsp;If $ m + 2n + 6 = 2m - n = 7 $, then $ n = $</p>\n<ul><li>A. $-4$.</li><li>B. $-1$.</li><li>C. $3$.</li><li>D. $11$.</li></ul>",
-   "file": "2012_P2_題目英文卷.md"
+   "file": "2012_P2_題目英文卷.md",
+   "answer": "B",
+   "answer_pct": 78
   },
   {
    "subject": "數學",
@@ -1594,7 +1604,9 @@ window.QB = {
    ],
    "text": "The figure shows the graph of $ y = a(x + b)^2 $, where $ a $ and $ b $ are constants. Which of the following is true?\n\u0001IMG0\u0001\n\n- A. $ a > 0 $ and $ b > 0 $\n- B. $ a > 0 $ and $ b < 0 $\n- C. $ a < 0 $ and $ b > 0 $\n- D. $ a < 0 $ and $ b < 0 $",
    "html": "<p>6.&nbsp;&nbsp;&nbsp;The figure shows the graph of $ y = a(x + b)^2 $, where $ a $ and $ b $ are constants. Which of the following is true?</p>\n<p><img alt=\"Figure Q6 (as printed)\" src=\"2012P2_figs/Q06.png\" /></p>\n<ul><li>A. $ a &gt; 0 $ and $ b &gt; 0 $</li><li>B. $ a &gt; 0 $ and $ b &lt; 0 $</li><li>C. $ a &lt; 0 $ and $ b &gt; 0 $</li><li>D. $ a &lt; 0 $ and $ b &lt; 0 $</li></ul>",
-   "file": "2012_P2_題目英文卷.md"
+   "file": "2012_P2_題目英文卷.md",
+   "answer": "D",
+   "answer_pct": 53
   },
   {
    "subject": "數學",
@@ -1609,7 +1621,9 @@ window.QB = {
    ],
    "text": "The solution of $ 15 + 4x < 3 $ or $ 9 - 2x > 1 $ is\n\n- A. $ x < -3 $.\n- B. $ x > -3 $.\n- C. $ x < 4 $.\n- D. $ x > 4 $.",
    "html": "<p>7.&nbsp;&nbsp;&nbsp;The solution of $ 15 + 4x &lt; 3 $ or $ 9 - 2x &gt; 1 $ is</p>\n<ul><li>A. $ x &lt; -3 $.</li><li>B. $ x &gt; -3 $.</li><li>C. $ x &lt; 4 $.</li><li>D. $ x &gt; 4 $.</li></ul>",
-   "file": "2012_P2_題目英文卷.md"
+   "file": "2012_P2_題目英文卷.md",
+   "answer": "C",
+   "answer_pct": 59
   },
   {
    "subject": "數學",
@@ -1626,7 +1640,9 @@ window.QB = {
    ],
    "text": "In a company, 37.5% of the employees are female. If 60% of the male employees and 80% of the female employees are married, then the percentage of married employees in the company is\n\n- A. 32.5%.\n- B. 45%.\n- C. 55%.\n- D. 67.5%.",
    "html": "<p>8.&nbsp;&nbsp;&nbsp;In a company, 37.5% of the employees are female. If 60% of the male employees and 80% of the female employees are married, then the percentage of married employees in the company is</p>\n<ul><li>A. 32.5%.</li><li>B. 45%.</li><li>C. 55%.</li><li>D. 67.5%.</li></ul>",
-   "file": "2012_P2_題目英文卷.md"
+   "file": "2012_P2_題目英文卷.md",
+   "answer": "D",
+   "answer_pct": 84
   },
   {
    "subject": "數學",
@@ -1641,7 +1657,9 @@ window.QB = {
    ],
    "text": "If $x$ and $y$ are non-zero numbers such that $\\dfrac{6x+5y}{3y-2x}=7$, then $x:y=$\n\n- A. 4:5.\n- B. 4:13.\n- C. 5:4.\n- D. 13:4.",
    "html": "<p>9.&nbsp;&nbsp;&nbsp;If $x$ and $y$ are non-zero numbers such that $\\dfrac{6x+5y}{3y-2x}=7$, then $x:y=$</p>\n<ul><li>A. 4:5.</li><li>B. 4:13.</li><li>C. 5:4.</li><li>D. 13:4.</li></ul>",
-   "file": "2012_P2_題目英文卷.md"
+   "file": "2012_P2_題目英文卷.md",
+   "answer": "A",
+   "answer_pct": 75
   },
   {
    "subject": "數學",
@@ -1657,7 +1675,9 @@ window.QB = {
    ],
    "text": "It is given that $y$ partly varies directly as $x^2$ and partly varies inversely as $x$. When $x=1$, $y=-4$ and when $x=2$, $y=5$. When $x=-2$, $y=$\n\n- A. -11.\n- B. -5.\n- C. 5.\n- D. 11.",
    "html": "<p>10.&nbsp;&nbsp;&nbsp;It is given that $y$ partly varies directly as $x^2$ and partly varies inversely as $x$. When $x=1$, $y=-4$ and when $x=2$, $y=5$. When $x=-2$, $y=$</p>\n<ul><li>A. -11.</li><li>B. -5.</li><li>C. 5.</li><li>D. 11.</li></ul>",
-   "file": "2012_P2_題目英文卷.md"
+   "file": "2012_P2_題目英文卷.md",
+   "answer": "D",
+   "answer_pct": 63
   },
   {
    "subject": "數學",
@@ -1673,7 +1693,9 @@ window.QB = {
    ],
    "text": "Mary performs a typing task for 7 hours. Her average typing speeds for the first 3 hours and the last 4 hours are 63 words per minute and 56 words per minute respectively. Find her average typing speed for the 7 hours.\n\n- A. 17 words per minute\n- B. 35 words per minute\n- C. 59 words per minute\n- D. 60 words per minute",
    "html": "<p>11.&nbsp;&nbsp;&nbsp;Mary performs a typing task for 7 hours. Her average typing speeds for the first 3 hours and the last 4 hours are 63 words per minute and 56 words per minute respectively. Find her average typing speed for the 7 hours.</p>\n<ul><li>A. 17 words per minute</li><li>B. 35 words per minute</li><li>C. 59 words per minute</li><li>D. 60 words per minute</li></ul>",
-   "file": "2012_P2_題目英文卷.md"
+   "file": "2012_P2_題目英文卷.md",
+   "answer": "C",
+   "answer_pct": 79
   },
   {
    "subject": "數學",
@@ -1688,7 +1710,9 @@ window.QB = {
    ],
    "text": "In the figure, the 1st pattern consists of 1 dot. For any positive integer $ n $, the $(n+1)$th pattern is formed by adding $ n $ dots to the $ n $th pattern. Find the number of dots in the 8th pattern.\n\u0001IMG0\u0001\n\n- A. 22\n- B. 29\n- C. 36\n- D. 37",
    "html": "<p>12.&nbsp;&nbsp;&nbsp;In the figure, the 1st pattern consists of 1 dot. For any positive integer $ n $, the $(n+1)$th pattern is formed by adding $ n $ dots to the $ n $th pattern. Find the number of dots in the 8th pattern.</p>\n<p><img alt=\"Figure Q12 (as printed)\" src=\"2012P2_figs/Q12.png\" /></p>\n<ul><li>A. 22</li><li>B. 29</li><li>C. 36</li><li>D. 37</li></ul>",
-   "file": "2012_P2_題目英文卷.md"
+   "file": "2012_P2_題目英文卷.md",
+   "answer": "B",
+   "answer_pct": 74
   },
   {
    "subject": "數學",
@@ -1705,7 +1729,9 @@ window.QB = {
    ],
    "text": "$ 0.0322515 = $\n\n- A. 0.032 (correct to 3 significant figures).\n- B. 0.0322 (correct to 4 decimal places).\n- C. 0.03225 (correct to 5 significant figures).\n- D. 0.032252 (correct to 6 decimal places).",
    "html": "<p>13.&nbsp;&nbsp;&nbsp;$ 0.0322515 = $</p>\n<ul><li>A. 0.032 (correct to 3 significant figures).</li><li>B. 0.0322 (correct to 4 decimal places).</li><li>C. 0.03225 (correct to 5 significant figures).</li><li>D. 0.032252 (correct to 6 decimal places).</li></ul>",
-   "file": "2012_P2_題目英文卷.md"
+   "file": "2012_P2_題目英文卷.md",
+   "answer": "D",
+   "answer_pct": 79
   },
   {
    "subject": "數學",
@@ -1722,7 +1748,9 @@ window.QB = {
    ],
    "text": "The length of a piece of thin string is measured as $ 25 \\text{ m} $ correct to the nearest $ \\text{m} $. If the string is cut into $ n $ pieces such that the length of each piece is measured as $ 5 \\text{ cm} $ correct to the nearest $ \\text{cm} $, find the greatest possible value of $ n $.\n\n- A. 445\n- B. 566\n- C. 567\n- D. 650",
    "html": "<p>14.&nbsp;&nbsp;&nbsp;The length of a piece of thin string is measured as $ 25 \\text{ m} $ correct to the nearest $ \\text{m} $. If the string is cut into $ n $ pieces such that the length of each piece is measured as $ 5 \\text{ cm} $ correct to the nearest $ \\text{cm} $, find the greatest possible value of $ n $.</p>\n<ul><li>A. 445</li><li>B. 566</li><li>C. 567</li><li>D. 650</li></ul>",
-   "file": "2012_P2_題目英文卷.md"
+   "file": "2012_P2_題目英文卷.md",
+   "answer": "B",
+   "answer_pct": 49
   },
   {
    "subject": "數學",
@@ -1738,7 +1766,9 @@ window.QB = {
    ],
    "text": "In the figure, the area of quadrilateral $ ABCD $ is\n\u0001IMG0\u0001\n\n- A. $ 144 \\text{ cm}^2 $.\n- B. $ 160 \\text{ cm}^2 $.\n- C. $ 178 \\text{ cm}^2 $.\n- D. $ 288 \\text{ cm}^2 $.",
    "html": "<p>15.&nbsp;&nbsp;&nbsp;In the figure, the area of quadrilateral $ ABCD $ is</p>\n<p><img alt=\"Figure Q15 (as printed)\" src=\"2012P2_figs/Q15.png\" /></p>\n<ul><li>A. $ 144 \\text{ cm}^2 $.</li><li>B. $ 160 \\text{ cm}^2 $.</li><li>C. $ 178 \\text{ cm}^2 $.</li><li>D. $ 288 \\text{ cm}^2 $.</li></ul>",
-   "file": "2012_P2_題目英文卷.md"
+   "file": "2012_P2_題目英文卷.md",
+   "answer": "A",
+   "answer_pct": 89
   },
   {
    "subject": "數學",
@@ -1755,7 +1785,9 @@ window.QB = {
    ],
    "text": "In the figure, $OAB$ and $OCD$ are sectors with centre $O$. If $\\widehat{AB} = 12\\pi \\text{ cm}$, $\\widehat{CD} = 16\\pi \\text{ cm}$ and $OA = 30 \\text{ cm}$, then $AC =$\n\u0001IMG0\u0001\n\n- A. $5 \\text{ cm}$.\n- B. $10 \\text{ cm}$.\n- C. $20 \\text{ cm}$.\n- D. $40 \\text{ cm}$.",
    "html": "<p>16.&nbsp;&nbsp;&nbsp;In the figure, $OAB$ and $OCD$ are sectors with centre $O$. If $\\widehat{AB} = 12\\pi \\text{ cm}$, $\\widehat{CD} = 16\\pi \\text{ cm}$ and $OA = 30 \\text{ cm}$, then $AC =$</p>\n<p><img alt=\"Figure Q16 (as printed)\" src=\"2012P2_figs/Q16.png\" /></p>\n<ul><li>A. $5 \\text{ cm}$.</li><li>B. $10 \\text{ cm}$.</li><li>C. $20 \\text{ cm}$.</li><li>D. $40 \\text{ cm}$.</li></ul>",
-   "file": "2012_P2_題目英文卷.md"
+   "file": "2012_P2_題目英文卷.md",
+   "answer": "B",
+   "answer_pct": 82
   },
   {
    "subject": "數學",
@@ -1772,7 +1804,9 @@ window.QB = {
    ],
    "text": "In the figure, $ABCD$ is a parallelogram. $E$ and $F$ are points lying on $AB$ and $CD$ respectively. $AD$ produced and $EF$ produced meet at $G$. It is given that $DF:FC = 3:4$ and $AD:DG = 1:1$. If the area of $\\triangle DFG$ is $3 \\text{ cm}^2$, then the area of the parallelogram $ABCD$ is\n\u0001IMG0\u0001\n\n- A. $12 \\text{ cm}^2$.\n- B. $14 \\text{ cm}^2$.\n- C. $18 \\text{ cm}^2$.\n- D. $21 \\text{ cm}^2$.",
    "html": "<p>17.&nbsp;&nbsp;&nbsp;In the figure, $ABCD$ is a parallelogram. $E$ and $F$ are points lying on $AB$ and $CD$ respectively. $AD$ produced and $EF$ produced meet at $G$. It is given that $DF:FC = 3:4$ and $AD:DG = 1:1$. If the area of $\\triangle DFG$ is $3 \\text{ cm}^2$, then the area of the parallelogram $ABCD$ is</p>\n<p><img alt=\"Figure Q17 (as printed)\" src=\"2012P2_figs/Q17.png\" /></p>\n<ul><li>A. $12 \\text{ cm}^2$.</li><li>B. $14 \\text{ cm}^2$.</li><li>C. $18 \\text{ cm}^2$.</li><li>D. $21 \\text{ cm}^2$.</li></ul>",
-   "file": "2012_P2_題目英文卷.md"
+   "file": "2012_P2_題目英文卷.md",
+   "answer": "B",
+   "answer_pct": 43
   },
   {
    "subject": "數學",
@@ -1789,7 +1823,9 @@ window.QB = {
    ],
    "text": "In the figure, $D$ is a point lying on $AC$ such that $BD$ is perpendicular to $AC$. If $BC = \\ell$, then $AB =$\n\u0001IMG0\u0001\n\n- A. $\\dfrac{\\ell \\sin \\alpha}{\\cos \\beta}$.\n- B. $\\dfrac{\\ell \\sin \\beta}{\\cos \\alpha}$.\n- C. $\\dfrac{\\ell \\cos \\alpha}{\\sin \\beta}$.\n- D. $\\dfrac{\\ell \\cos \\beta}{\\sin \\alpha}$.",
    "html": "<p>18.&nbsp;&nbsp;&nbsp;In the figure, $D$ is a point lying on $AC$ such that $BD$ is perpendicular to $AC$. If $BC = \\ell$, then $AB =$</p>\n<p><img alt=\"Figure Q18 (as printed)\" src=\"2012P2_figs/Q18.png\" /></p>\n<ul><li>A. $\\dfrac{\\ell \\sin \\alpha}{\\cos \\beta}$.</li><li>B. $\\dfrac{\\ell \\sin \\beta}{\\cos \\alpha}$.</li><li>C. $\\dfrac{\\ell \\cos \\alpha}{\\sin \\beta}$.</li><li>D. $\\dfrac{\\ell \\cos \\beta}{\\sin \\alpha}$.</li></ul>",
-   "file": "2012_P2_題目英文卷.md"
+   "file": "2012_P2_題目英文卷.md",
+   "answer": "A",
+   "answer_pct": 70
   },
   {
    "subject": "數學",
@@ -1806,7 +1842,9 @@ window.QB = {
    ],
    "text": "$\\dfrac{\\cos 60^\\circ}{1-\\cos(90^\\circ-\\theta)} + \\dfrac{\\cos 240^\\circ}{1-\\cos(270^\\circ-\\theta)} =$\n\n- A. $\\dfrac{1}{\\cos^2\\theta}$\n- B. $\\dfrac{\\cos\\theta}{\\tan\\theta}$\n- C. $\\dfrac{\\tan\\theta}{\\cos\\theta}$\n- D. $\\dfrac{1}{\\cos\\theta\\tan\\theta}$",
    "html": "<p>19.&nbsp;&nbsp;&nbsp;$\\dfrac{\\cos 60^\\circ}{1-\\cos(90^\\circ-\\theta)} + \\dfrac{\\cos 240^\\circ}{1-\\cos(270^\\circ-\\theta)} =$</p>\n<ul><li>A. $\\dfrac{1}{\\cos^2\\theta}$</li><li>B. $\\dfrac{\\cos\\theta}{\\tan\\theta}$</li><li>C. $\\dfrac{\\tan\\theta}{\\cos\\theta}$</li><li>D. $\\dfrac{1}{\\cos\\theta\\tan\\theta}$</li></ul>",
-   "file": "2012_P2_題目英文卷.md"
+   "file": "2012_P2_題目英文卷.md",
+   "answer": "C",
+   "answer_pct": 51
   },
   {
    "subject": "數學",
@@ -1823,7 +1861,9 @@ window.QB = {
    ],
    "text": "In the figure, $O$ is the centre of the circle $ABCD$. If $\\angle BAO = 28^\\circ$, $\\angle BCD = 114^\\circ$ and $\\angle CDO = 42^\\circ$, then $\\angle ABC =$\n\u0001IMG0\u0001\n\n- A. $90^\\circ$\n- B. $96^\\circ$\n- C. $100^\\circ$\n- D. $138^\\circ$",
    "html": "<p>20.&nbsp;&nbsp;&nbsp;In the figure, $O$ is the centre of the circle $ABCD$. If $\\angle BAO = 28^\\circ$, $\\angle BCD = 114^\\circ$ and $\\angle CDO = 42^\\circ$, then $\\angle ABC =$</p>\n<p><img alt=\"Figure Q20 (as printed)\" src=\"2012P2_figs/Q20.png\" /></p>\n<ul><li>A. $90^\\circ$</li><li>B. $96^\\circ$</li><li>C. $100^\\circ$</li><li>D. $138^\\circ$</li></ul>",
-   "file": "2012_P2_題目英文卷.md"
+   "file": "2012_P2_題目英文卷.md",
+   "answer": "C",
+   "answer_pct": 71
   },
   {
    "subject": "數學",
@@ -1840,7 +1880,9 @@ window.QB = {
    ],
    "text": "In the figure, $AB$ is a diameter of the circle $ABCD$. If $AB = 12 \\text{ cm}$ and $CD = 6 \\text{ cm}$, then the area of the shaded region is\n\u0001IMG0\u0001\n\n- A. $(12\\pi - 9) \\text{ cm}^2$\n- B. $(12\\pi + 9) \\text{ cm}^2$\n- C. $(12\\pi - 9\\sqrt{3}) \\text{ cm}^2$\n- D. $(12\\pi + 9\\sqrt{3}) \\text{ cm}^2$",
    "html": "<p>21.&nbsp;&nbsp;&nbsp;In the figure, $AB$ is a diameter of the circle $ABCD$. If $AB = 12 \\text{ cm}$ and $CD = 6 \\text{ cm}$, then the area of the shaded region is</p>\n<p><img alt=\"Figure Q21 (as printed)\" src=\"2012P2_figs/Q21.png\" /></p>\n<ul><li>A. $(12\\pi - 9) \\text{ cm}^2$</li><li>B. $(12\\pi + 9) \\text{ cm}^2$</li><li>C. $(12\\pi - 9\\sqrt{3}) \\text{ cm}^2$</li><li>D. $(12\\pi + 9\\sqrt{3}) \\text{ cm}^2$</li></ul>",
-   "file": "2012_P2_題目英文卷.md"
+   "file": "2012_P2_題目英文卷.md",
+   "answer": "D",
+   "answer_pct": 45
   },
   {
    "subject": "數學",
@@ -1855,7 +1897,9 @@ window.QB = {
    ],
    "text": "Which of the following statements about a regular 12-sided polygon are true? I. Each exterior angle is $30^\\circ$. II. Each interior angle is $150^\\circ$. III. The number of axes of reflectional symmetry is 6.\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
    "html": "<p>22.&nbsp;&nbsp;&nbsp;Which of the following statements about a regular 12-sided polygon are true? I. Each exterior angle is $30^\\circ$. II. Each interior angle is $150^\\circ$. III. The number of axes of reflectional symmetry is 6.</p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
-   "file": "2012_P2_題目英文卷.md"
+   "file": "2012_P2_題目英文卷.md",
+   "answer": "A",
+   "answer_pct": 43
   },
   {
    "subject": "數學",
@@ -1872,7 +1916,9 @@ window.QB = {
    ],
    "text": "The rectangular coordinates of the point $P$ are $(-3, -3\\sqrt{3})$. If $P$ is rotated anticlockwise about the origin through $90^\\circ$, then the polar coordinates of its image are\n\n- A. $(3, 150^\\circ)$.\n- B. $(3, 330^\\circ)$.\n- C. $(6, 150^\\circ)$.\n- D. $(6, 330^\\circ)$.",
    "html": "<p>23.&nbsp;&nbsp;&nbsp;The rectangular coordinates of the point $P$ are $(-3, -3\\sqrt{3})$. If $P$ is rotated anticlockwise about the origin through $90^\\circ$, then the polar coordinates of its image are</p>\n<ul><li>A. $(3, 150^\\circ)$.</li><li>B. $(3, 330^\\circ)$.</li><li>C. $(6, 150^\\circ)$.</li><li>D. $(6, 330^\\circ)$.</li></ul>",
-   "file": "2012_P2_題目英文卷.md"
+   "file": "2012_P2_題目英文卷.md",
+   "answer": "D",
+   "answer_pct": 42
   },
   {
    "subject": "數學",
@@ -1889,7 +1935,9 @@ window.QB = {
    ],
    "text": "If $P$ is a moving point in the rectangular coordinate plane such that the distance between $P$ and the point $(20, 12)$ is equal to 5, then the locus of $P$ is a\n\n- A. circle.\n- B. square.\n- C. parabola.\n- D. triangle.",
    "html": "<p>24.&nbsp;&nbsp;&nbsp;If $P$ is a moving point in the rectangular coordinate plane such that the distance between $P$ and the point $(20, 12)$ is equal to 5, then the locus of $P$ is a</p>\n<ul><li>A. circle.</li><li>B. square.</li><li>C. parabola.</li><li>D. triangle.</li></ul>",
-   "file": "2012_P2_題目英文卷.md"
+   "file": "2012_P2_題目英文卷.md",
+   "answer": "A",
+   "answer_pct": 72
   },
   {
    "subject": "數學",
@@ -1904,7 +1952,9 @@ window.QB = {
    ],
    "text": "In the figure, the equations of the straight lines $ L_1 $ and $ L_2 $ are $ ax + y = b $ and $ cx + y = d $ respectively. Which of the following are true? I. $ a < 0 $ II. $ a < c $ III. $ b > d $ IV. $ ad > bc $\n\u0001IMG0\u0001\n\n- A. I, II and III only\n- B. I, II and IV only\n- C. I, III and IV only\n- D. II, III and IV only",
    "html": "<p>25.&nbsp;&nbsp;&nbsp;In the figure, the equations of the straight lines $ L_1 $ and $ L_2 $ are $ ax + y = b $ and $ cx + y = d $ respectively. Which of the following are true? I. $ a &lt; 0 $ II. $ a &lt; c $ III. $ b &gt; d $ IV. $ ad &gt; bc $</p>\n<p><img alt=\"Figure Q25 (as printed)\" src=\"2012P2_figs/Q25.png\" /></p>\n<ul><li>A. I, II and III only</li><li>B. I, II and IV only</li><li>C. I, III and IV only</li><li>D. II, III and IV only</li></ul>",
-   "file": "2012_P2_題目英文卷.md"
+   "file": "2012_P2_題目英文卷.md",
+   "answer": "C",
+   "answer_pct": 40
   },
   {
    "subject": "數學",
@@ -1921,7 +1971,9 @@ window.QB = {
    ],
    "text": "In the figure, the radius of the circle and the coordinates of the centre are $ r $ and $ (h, k) $ respectively. Which of the following are true? I. $ h + k > 0 $ II. $ r - h > 0 $ III. $ r - k > 0 $\n\u0001IMG0\u0001\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
    "html": "<p>26.&nbsp;&nbsp;&nbsp;In the figure, the radius of the circle and the coordinates of the centre are $ r $ and $ (h, k) $ respectively. Which of the following are true? I. $ h + k &gt; 0 $ II. $ r - h &gt; 0 $ III. $ r - k &gt; 0 $</p>\n<p><img alt=\"Figure Q26 (as printed)\" src=\"2012P2_figs/Q26.png\" /></p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
-   "file": "2012_P2_題目英文卷.md"
+   "file": "2012_P2_題目英文卷.md",
+   "answer": "A",
+   "answer_pct": 56
   },
   {
    "subject": "數學",
@@ -1936,7 +1988,9 @@ window.QB = {
    ],
    "text": "$ 9 \\star \\diamondsuit $ is a 3-digit number, where $ \\star $ and $ \\diamondsuit $ are integers from 0 to 9 inclusive. Find the probability that the 3-digit number is divisible by 5.\n\n- A. $\\dfrac{1}{5}$\n- B. $\\dfrac{7}{33}$\n- C. $\\dfrac{20}{99}$\n- D. $\\dfrac{19}{100}$ 9",
    "html": "<p>27.&nbsp;&nbsp;&nbsp;$ 9 \\star \\diamondsuit $ is a 3-digit number, where $ \\star $ and $ \\diamondsuit $ are integers from 0 to 9 inclusive. Find the probability that the 3-digit number is divisible by 5.</p>\n<ul><li>A. $\\dfrac{1}{5}$</li><li>B. $\\dfrac{7}{33}$</li><li>C. $\\dfrac{20}{99}$</li><li>D. $\\dfrac{19}{100}$ 9</li></ul>",
-   "file": "2012_P2_題目英文卷.md"
+   "file": "2012_P2_題目英文卷.md",
+   "answer": "A",
+   "answer_pct": 50
   },
   {
    "subject": "數學",
@@ -1953,7 +2007,9 @@ window.QB = {
    ],
    "text": "The stem-and-leaf diagram below shows the distribution of the ages of a group of members in a recreational centre.\n:::stemleaf\nStem (tens) | Leaf (units)\n5 | 0 5 6 6 8\n6 | 1 4 5 5 7 8 8 9\n7 | 3 4 4 6 7 9\n8 |\n9 | 1\n:::\n\n- A. 0.2\n- B. 0.3\n- C. 0.7\n- D. 0.8",
    "html": "<p>28.&nbsp;&nbsp;&nbsp;The stem-and-leaf diagram below shows the distribution of the ages of a group of members in a recreational centre.</p>\n<div class=\"stemleaf\"><div class=\"slcol slL\"><div class=\"slr slh\">Stem (tens)</div><div class=\"slr\">5</div><div class=\"slr\">6</div><div class=\"slr\">7</div><div class=\"slr\">8</div><div class=\"slr\">9</div></div><div class=\"slrule\"></div><div class=\"slcol slR\"><div class=\"slr slh\">Leaf (units)</div><div class=\"slr\"><span>0</span><span>5</span><span>6</span><span>6</span><span>8</span></div><div class=\"slr\"><span>1</span><span>4</span><span>5</span><span>5</span><span>7</span><span>8</span><span>8</span><span>9</span></div><div class=\"slr\"><span>3</span><span>4</span><span>4</span><span>6</span><span>7</span><span>9</span></div><div class=\"slr\"></div><div class=\"slr\"><span>1</span></div></div></div>\n<ul><li>A. 0.2</li><li>B. 0.3</li><li>C. 0.7</li><li>D. 0.8</li></ul>",
-   "file": "2012_P2_題目英文卷.md"
+   "file": "2012_P2_題目英文卷.md",
+   "answer": "B",
+   "answer_pct": 59
   },
   {
    "subject": "數學",
@@ -1970,7 +2026,9 @@ window.QB = {
    ],
    "text": "The bar chart below shows the distribution of the numbers of rings owned by the girls in a group. Find the standard deviation of the distribution correct to 2 decimal places.\n\u0001IMG0\u0001\n\n- A. 1.04\n- B. 1.16\n- C. 1.19\n- D. 2.09",
    "html": "<p>29.&nbsp;&nbsp;&nbsp;The bar chart below shows the distribution of the numbers of rings owned by the girls in a group. Find the standard deviation of the distribution correct to 2 decimal places.</p>\n<p><img alt=\"Figure Q29 (as printed)\" src=\"2012P2_figs/Q29.png\" /></p>\n<ul><li>A. 1.04</li><li>B. 1.16</li><li>C. 1.19</li><li>D. 2.09</li></ul>",
-   "file": "2012_P2_題目英文卷.md"
+   "file": "2012_P2_題目英文卷.md",
+   "answer": "B",
+   "answer_pct": 71
   },
   {
    "subject": "數學",
@@ -1987,7 +2045,9 @@ window.QB = {
    ],
    "text": "Consider the following data: 19 10 12 12 13 13 14 15 16 m n If both the mean and the median of the above data are 14, which of the following are true? I. m ≥ 14 II. n ≤ 16 III. m + n = 30\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
    "html": "<p>30.&nbsp;&nbsp;&nbsp;Consider the following data: 19 10 12 12 13 13 14 15 16 m n If both the mean and the median of the above data are 14, which of the following are true? I. m ≥ 14 II. n ≤ 16 III. m + n = 30</p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
-   "file": "2012_P2_題目英文卷.md"
+   "file": "2012_P2_題目英文卷.md",
+   "answer": "D",
+   "answer_pct": 47
   },
   {
    "subject": "數學",
@@ -2004,7 +2064,9 @@ window.QB = {
    ],
    "text": "The H.C.F. and the L.C.M. of three expressions are $ ab^2 $ and $ 4a^4b^5c^6 $ respectively. If the first expression and the second expression are $ 2a^2b^4c $ and $ 4a^4b^2c^6 $ respectively, then the third expression is\n\n- A. $ ab^2 $\n- B. $ ab^5 $\n- C. $ 2ab^2c $\n- D. $ 2ab^5c $",
    "html": "<p>31.&nbsp;&nbsp;&nbsp;The H.C.F. and the L.C.M. of three expressions are $ ab^2 $ and $ 4a^4b^5c^6 $ respectively. If the first expression and the second expression are $ 2a^2b^4c $ and $ 4a^4b^2c^6 $ respectively, then the third expression is</p>\n<ul><li>A. $ ab^2 $</li><li>B. $ ab^5 $</li><li>C. $ 2ab^2c $</li><li>D. $ 2ab^5c $</li></ul>",
-   "file": "2012_P2_題目英文卷.md"
+   "file": "2012_P2_題目英文卷.md",
+   "answer": "B",
+   "answer_pct": 55
   },
   {
    "subject": "數學",
@@ -2021,7 +2083,9 @@ window.QB = {
    ],
    "text": "The graph in the figure shows the linear relation between $ x $ and $ \\log_3 y $. If $ y = mn^x $, then $ n = $\n\u0001IMG0\u0001\n\n- A. $ \\dfrac{1}{81} $\n- B. $ \\dfrac{1}{9} $\n- C. 9\n- D. 81",
    "html": "<p>32.&nbsp;&nbsp;&nbsp;The graph in the figure shows the linear relation between $ x $ and $ \\log_3 y $. If $ y = mn^x $, then $ n = $</p>\n<p><img alt=\"Figure Q32 (as printed)\" src=\"2012P2_figs/Q32.png\" /></p>\n<ul><li>A. $ \\dfrac{1}{81} $</li><li>B. $ \\dfrac{1}{9} $</li><li>C. 9</li><li>D. 81</li></ul>",
-   "file": "2012_P2_題目英文卷.md"
+   "file": "2012_P2_題目英文卷.md",
+   "answer": "C",
+   "answer_pct": 43
   },
   {
    "subject": "數學",
@@ -2038,7 +2102,9 @@ window.QB = {
    ],
    "text": "AD0000002012$_{16}$ =\n\n- A. $ (10)16^{11} + (13)16^{10} + 8210 $\n- B. $ (10)16^{12} + (13)16^{11} + 131360 $\n- C. $ (11)16^{11} + (14)16^{10} + 8210 $\n- D. $ (11)16^{12} + (14)16^{11} + 131360 $",
    "html": "<p>33.&nbsp;&nbsp;&nbsp;AD0000002012$_{16}$ =</p>\n<ul><li>A. $ (10)16^{11} + (13)16^{10} + 8210 $</li><li>B. $ (10)16^{12} + (13)16^{11} + 131360 $</li><li>C. $ (11)16^{11} + (14)16^{10} + 8210 $</li><li>D. $ (11)16^{12} + (14)16^{11} + 131360 $</li></ul>",
-   "file": "2012_P2_題目英文卷.md"
+   "file": "2012_P2_題目英文卷.md",
+   "answer": "A",
+   "answer_pct": 64
   },
   {
    "subject": "數學",
@@ -2054,7 +2120,9 @@ window.QB = {
    ],
    "text": "Let $ f(x) $ be a quadratic function. If the coordinates of the vertex of the graph of $ y = f(x) $ are $ (3, -4) $, which of the following must be true?\n\n- A. The roots of the equation $ f(x) = 0 $ are integers.\n- B. The roots of the equation $ f(x) - 3 = 0 $ are rational numbers.\n- C. The roots of the equation $ f(x) + 4 = 0 $ are real numbers.\n- D. The roots of the equation $ f(x) + 5 = 0 $ are nonreal numbers. 11",
    "html": "<p>34.&nbsp;&nbsp;&nbsp;Let $ f(x) $ be a quadratic function. If the coordinates of the vertex of the graph of $ y = f(x) $ are $ (3, -4) $, which of the following must be true?</p>\n<ul><li>A. The roots of the equation $ f(x) = 0 $ are integers.</li><li>B. The roots of the equation $ f(x) - 3 = 0 $ are rational numbers.</li><li>C. The roots of the equation $ f(x) + 4 = 0 $ are real numbers.</li><li>D. The roots of the equation $ f(x) + 5 = 0 $ are nonreal numbers. 11</li></ul>",
-   "file": "2012_P2_題目英文卷.md"
+   "file": "2012_P2_題目英文卷.md",
+   "answer": "C",
+   "answer_pct": 49
   },
   {
    "subject": "數學",
@@ -2069,7 +2137,9 @@ window.QB = {
    ],
    "text": "$i^{3}(\\beta i-3)=$\n\n- A. $\\beta+3i$\n- B. $\\beta-3i$\n- C. $-\\beta+3i$\n- D. $-\\beta-3i$",
    "html": "<p>35.&nbsp;&nbsp;&nbsp;$i^{3}(\\beta i-3)=$</p>\n<ul><li>A. $\\beta+3i$</li><li>B. $\\beta-3i$</li><li>C. $-\\beta+3i$</li><li>D. $-\\beta-3i$</li></ul>",
-   "file": "2012_P2_題目英文卷.md"
+   "file": "2012_P2_題目英文卷.md",
+   "answer": "A",
+   "answer_pct": 55
   },
   {
    "subject": "數學",
@@ -2086,7 +2156,9 @@ window.QB = {
    ],
    "text": "The figure shows a shaded region (including the boundary). If $(h,k)$ is a point lying in the shaded region, which of the following are true? I. $k \\geq 3$ II. $h-k \\geq -3$ III. $2h+k \\leq 6$\n\u0001IMG0\u0001\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
    "html": "<p>36.&nbsp;&nbsp;&nbsp;The figure shows a shaded region (including the boundary). If $(h,k)$ is a point lying in the shaded region, which of the following are true? I. $k \\geq 3$ II. $h-k \\geq -3$ III. $2h+k \\leq 6$</p>\n<p><img alt=\"Figure Q36 (as printed)\" src=\"2012P2_figs/Q36.png\" /></p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
-   "file": "2012_P2_題目英文卷.md"
+   "file": "2012_P2_題目英文卷.md",
+   "answer": "D",
+   "answer_pct": 37
   },
   {
    "subject": "數學",
@@ -2101,7 +2173,9 @@ window.QB = {
    ],
    "text": "Let $a_{n}$ be the $n$th term of an arithmetic sequence. If $a_{18}=26$ and $a_{23}=61$, which of the following are true? I. $a_{14}<0$ II. $a_{1}-a_{2}<0$ III. $a_{1}+a_{2}+a_{3}+\\cdots+a_{27}>0$\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
    "html": "<p>37.&nbsp;&nbsp;&nbsp;Let $a_{n}$ be the $n$th term of an arithmetic sequence. If $a_{18}=26$ and $a_{23}=61$, which of the following are true? I. $a_{14}&lt;0$ II. $a_{1}-a_{2}&lt;0$ III. $a_{1}+a_{2}+a_{3}+\\cdots+a_{27}&gt;0$</p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
-   "file": "2012_P2_題目英文卷.md"
+   "file": "2012_P2_題目英文卷.md",
+   "answer": "A",
+   "answer_pct": 43
   },
   {
    "subject": "數學",
@@ -2116,7 +2190,9 @@ window.QB = {
    ],
    "text": "Which of the following may represent the graph of $ y = f(x) $ and the graph of $ y = f(x-2) + 1 $ on the same rectangular coordinate system?\n\n- A. ![Figure Q38A](2012_P2_figs/Q38A.png)\n- B. ![Figure Q38B](2012_P2_figs/Q38B.png)\n- C. ![Figure Q38C](2012_P2_figs/Q38C.png)\n- D. ![Figure Q38D](2012_P2_figs/Q38D.png)",
    "html": "<p>38.&nbsp;&nbsp;&nbsp;Which of the following may represent the graph of $ y = f(x) $ and the graph of $ y = f(x-2) + 1 $ on the same rectangular coordinate system?</p>\n<ul><li>A. <img alt=\"option A\" src=\"2012P2_figs/Q38A.png\" /></li><li>B. <img alt=\"option B\" src=\"2012P2_figs/Q38B.png\" /></li><li>C. <img alt=\"option C\" src=\"2012P2_figs/Q38C.png\" /></li><li>D. <img alt=\"option D\" src=\"2012P2_figs/Q38D.png\" /></li></ul>",
-   "file": "2012_P2_題目英文卷.md"
+   "file": "2012_P2_題目英文卷.md",
+   "answer": "C",
+   "answer_pct": 63
   },
   {
    "subject": "數學",
@@ -2133,7 +2209,9 @@ window.QB = {
    ],
    "text": "The figure shows\n\u0001IMG0\u0001\n\n- A. the graph of $ y = 1 + 3 \\cos \\dfrac{x^\\circ}{2} $.\n- B. the graph of $ y = 1 + 3 \\cos 2x^\\circ $.\n- C. the graph of $ y = 4 + 3 \\cos \\dfrac{x^\\circ}{2} $.\n- D. the graph of $ y = 4 + 3 \\cos 2x^\\circ $.",
    "html": "<p>39.&nbsp;&nbsp;&nbsp;The figure shows</p>\n<p><img alt=\"Figure Q39 (as printed)\" src=\"2012P2_figs/Q39.png\" /></p>\n<ul><li>A. the graph of $ y = 1 + 3 \\cos \\dfrac{x^\\circ}{2} $.</li><li>B. the graph of $ y = 1 + 3 \\cos 2x^\\circ $.</li><li>C. the graph of $ y = 4 + 3 \\cos \\dfrac{x^\\circ}{2} $.</li><li>D. the graph of $ y = 4 + 3 \\cos 2x^\\circ $.</li></ul>",
-   "file": "2012_P2_題目英文卷.md"
+   "file": "2012_P2_題目英文卷.md",
+   "answer": "D",
+   "answer_pct": 53
   },
   {
    "subject": "數學",
@@ -2150,7 +2228,9 @@ window.QB = {
    ],
    "text": "The figure shows a regular tetrahedron $ABCD$. Find the angle between the plane $ABC$ and the plane $BCD$ correct to the nearest degree.\n\u0001IMG0\u0001\n\n- A. $48^\\circ$\n- B. $53^\\circ$\n- C. $60^\\circ$\n- D. $71^\\circ$",
    "html": "<p>40.&nbsp;&nbsp;&nbsp;The figure shows a regular tetrahedron $ABCD$. Find the angle between the plane $ABC$ and the plane $BCD$ correct to the nearest degree.</p>\n<p><img alt=\"Figure Q40 (as printed)\" src=\"2012P2_figs/Q40.png?v=3\" /></p>\n<ul><li>A. $48^\\circ$</li><li>B. $53^\\circ$</li><li>C. $60^\\circ$</li><li>D. $71^\\circ$</li></ul>",
-   "file": "2012_P2_題目英文卷.md"
+   "file": "2012_P2_題目英文卷.md",
+   "answer": "D",
+   "answer_pct": 30
   },
   {
    "subject": "數學",
@@ -2167,7 +2247,9 @@ window.QB = {
    ],
    "text": "In the figure, $PQ$ is the tangent to the circle $ABC$ at $O$, where $O$ is the centre of the semicircle $PBQ$. It is given that $BCP$ is a straight line. If $\\angle BPQ = 12^\\circ$, then $\\angle BAC =$\n\u0001IMG0\u0001\n\n- A. $18^\\circ$\n- B. $24^\\circ$\n- C. $36^\\circ$\n- D. $54^\\circ$",
    "html": "<p>41.&nbsp;&nbsp;&nbsp;In the figure, $PQ$ is the tangent to the circle $ABC$ at $O$, where $O$ is the centre of the semicircle $PBQ$. It is given that $BCP$ is a straight line. If $\\angle BPQ = 12^\\circ$, then $\\angle BAC =$</p>\n<p><img alt=\"Figure Q41 (as printed)\" src=\"2012P2_figs/Q41.png?v=3\" /></p>\n<ul><li>A. $18^\\circ$</li><li>B. $24^\\circ$</li><li>C. $36^\\circ$</li><li>D. $54^\\circ$</li></ul>",
-   "file": "2012_P2_題目英文卷.md"
+   "file": "2012_P2_題目英文卷.md",
+   "answer": "C",
+   "answer_pct": 47
   },
   {
    "subject": "數學",
@@ -2183,7 +2265,9 @@ window.QB = {
    ],
    "text": "Find the range of values of $k$ such that the circle $x^2 + y^2 + 2x - 4y - 13 = 0$ and the straight line $x - y + k = 0$ intersect at two distinct points.\n\n- A. $-9 < k < 3$\n- B. $-3 < k < 9$\n- C. $k < -9$ or $k > 3$\n- D. $k < -3$ or $k > 9$",
    "html": "<p>42.&nbsp;&nbsp;&nbsp;Find the range of values of $k$ such that the circle $x^2 + y^2 + 2x - 4y - 13 = 0$ and the straight line $x - y + k = 0$ intersect at two distinct points.</p>\n<ul><li>A. $-9 &lt; k &lt; 3$</li><li>B. $-3 &lt; k &lt; 9$</li><li>C. $k &lt; -9$ or $k &gt; 3$</li><li>D. $k &lt; -3$ or $k &gt; 9$</li></ul>",
-   "file": "2012_P2_題目英文卷.md"
+   "file": "2012_P2_題目英文卷.md",
+   "answer": "B",
+   "answer_pct": 36
   },
   {
    "subject": "數學",
@@ -2198,7 +2282,9 @@ window.QB = {
    ],
    "text": "A drama club is formed by 12 boys and 8 girls. If a team of 5 students is selected from the club to participate in a competition and the team consists of at least one girl, how many different teams can be formed?\n\n- A. 3960\n- B. 14712\n- C. 15448\n- D. 15504",
    "html": "<p>43.&nbsp;&nbsp;&nbsp;A drama club is formed by 12 boys and 8 girls. If a team of 5 students is selected from the club to participate in a competition and the team consists of at least one girl, how many different teams can be formed?</p>\n<ul><li>A. 3960</li><li>B. 14712</li><li>C. 15448</li><li>D. 15504</li></ul>",
-   "file": "2012_P2_題目英文卷.md"
+   "file": "2012_P2_題目英文卷.md",
+   "answer": "B",
+   "answer_pct": 52
   },
   {
    "subject": "數學",
@@ -2215,7 +2301,9 @@ window.QB = {
    ],
    "text": "A box contains six balls numbered 7, 8, 8, 9, 9 and 9 respectively. John repeats drawing one ball at a time randomly from the box without replacement until the number drawn is 9. Find the probability that he needs exactly three draws.\n\n- A. $\\dfrac{1}{2}$\n- B. $\\dfrac{1}{6}$\n- C. $\\dfrac{1}{8}$\n- D. $\\dfrac{3}{20}$",
    "html": "<p>44.&nbsp;&nbsp;&nbsp;A box contains six balls numbered 7, 8, 8, 9, 9 and 9 respectively. John repeats drawing one ball at a time randomly from the box without replacement until the number drawn is 9. Find the probability that he needs exactly three draws.</p>\n<ul><li>A. $\\dfrac{1}{2}$</li><li>B. $\\dfrac{1}{6}$</li><li>C. $\\dfrac{1}{8}$</li><li>D. $\\dfrac{3}{20}$</li></ul>",
-   "file": "2012_P2_題目英文卷.md"
+   "file": "2012_P2_題目英文卷.md",
+   "answer": "D",
+   "answer_pct": 56
   },
   {
    "subject": "數學",
@@ -2232,7 +2320,9 @@ window.QB = {
    ],
    "text": "Let $m_1$, $r_1$ and $v_1$ be the mean, the range and the variance of a group of numbers $\\{x_1, x_2, x_3, \\ldots, x_{100}\\}$ respectively. If $m_2$, $r_2$ and $v_2$ are the mean, the range and the variance of the group of numbers $\\{x_1, x_2, x_3, \\ldots, x_{100}, m_1\\}$ respectively, which of the following must be true? I. $m_1 = m_2$ II. $r_1 = r_2$ III. $v_1 = v_2$\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
    "html": "<p>45.&nbsp;&nbsp;&nbsp;Let $m_1$, $r_1$ and $v_1$ be the mean, the range and the variance of a group of numbers $\\{x_1, x_2, x_3, \\ldots, x_{100}\\}$ respectively. If $m_2$, $r_2$ and $v_2$ are the mean, the range and the variance of the group of numbers $\\{x_1, x_2, x_3, \\ldots, x_{100}, m_1\\}$ respectively, which of the following must be true? I. $m_1 = m_2$ II. $r_1 = r_2$ III. $v_1 = v_2$</p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
-   "file": "2012_P2_題目英文卷.md"
+   "file": "2012_P2_題目英文卷.md",
+   "answer": "A",
+   "answer_pct": 36
   },
   {
    "subject": "數學",

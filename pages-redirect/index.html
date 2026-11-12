@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<title>DSE Hub</title>
+<link rel="canonical" href="https://hkdse.exampaper.cloud/">
+<meta name="robots" content="noindex">
+</head>
+<body>
+<p><a id="dest" href="https://hkdse.exampaper.cloud/">前往 DSE Hub</a></p>
+<script>
+(function () {
+  var prefix = "/dse-maths-question-bank";
+  var path = location.pathname || "/";
+  if (path.indexOf(prefix) === 0) path = path.slice(prefix.length) || "/";
+  var dest = "https://hkdse.exampaper.cloud" + path + location.search + location.hash;
+  document.getElementById("dest").href = dest;
+  location.replace(dest);
+})();
+</script>
+</body>
+</html>

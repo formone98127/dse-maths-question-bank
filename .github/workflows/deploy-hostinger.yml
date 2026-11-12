@@ -1,0 +1,38 @@
+name: Deploy docs to Hostinger
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "docs/**"
+      - ".github/workflows/deploy-hostinger.yml"
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Upload docs/ to hkdse.exampaper.cloud
+        env:
+          FTP_HOST: 147.93.109.152
+          FTP_USER: u187459660.hkdseupload
+          FTP_PASS: ${{ secrets.HKDSE_FTP_PASSWORD }}
+        run: |
+          set -euo pipefail
+          if [ -z "${FTP_PASS:-}" ]; then
+            echo "Missing secret HKDSE_FTP_PASSWORD" >&2
+            exit 1
+          fi
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq lftp
+          lftp -c "
+            set ssl:verify-certificate no
+            set ftp:ssl-force true
+            set ftp:ssl-protect-data true
+            set net:max-retries 5
+            set net:reconnect-interval-base 5
+            open -u ${FTP_USER},${FTP_PASS} ftp://${FTP_HOST}
+            mirror -R --verbose --delete --exclude-glob .git/ docs/ /
+            bye
+          "

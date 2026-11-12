@@ -432,4 +432,22 @@ modeSeg.addEventListener("click", (e) => {
   render();
 });
 
+
+(function applyQuery() {
+  const p = new URLSearchParams(location.search);
+  const sid = p.get("subject");
+  if (sid && SID_SUBJECT[sid]) state.subject = sid;
+  const mode = p.get("mode");
+  if (mode === "topic" || mode === "year") state.mode = mode;
+  const year = p.get("year");
+  if (year) state.year = year;
+  const paper = p.get("paper");
+  if (paper) state.paper = paper;
+  const topic = p.get("topic") || p.get("tag");
+  if (topic) {
+    state.topic = topic;
+    if (mode !== "year") state.mode = "topic";
+  }
+})();
+
 render();

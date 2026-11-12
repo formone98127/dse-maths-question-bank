@@ -82,23 +82,6 @@ header.top { padding: 18px 16px 6px; max-width: var(--max); width: 100%; margin:
   border-radius: 4px;
   line-height: 1;
 }
-.top-actions {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 8px;
-  flex: 0 1 auto;
-  min-width: 0;
-}
-.top-actions .seg {
-  flex: 0 1 auto;
-  min-width: 0;
-  width: auto;
-}
-.top-actions .seg button {
-  padding: 6px 12px;
-  white-space: nowrap;
-}
 .install-btn {
   flex: 0 0 auto;
   display: inline-flex;
@@ -179,6 +162,9 @@ nav.filters {
   max-width: var(--max);
   margin: 0 auto;
   padding: 10px 16px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .seg {
@@ -476,8 +462,6 @@ body.reel-open { overflow: hidden; }
 .reel-item.on { color: var(--ink); font-weight: 600; }
 
 @media (max-width: 480px) {
-  .top-actions { gap: 6px; }
-  .top-actions .seg button { padding: 6px 10px; font-size: 12.5px; }
   .bar { gap: 5px; }
   .field > label { font-size: 10.5px; }
   .reel-btn { height: 34px; padding: 0 8px; font-size: 12.5px; border-radius: 9px; }

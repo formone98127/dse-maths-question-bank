@@ -62,7 +62,6 @@ const SID_SUBJECT = {
   bio: "生物",
   phys: "物理",
 };
-const NAME_TO_SID = Object.fromEntries(Object.entries(SID_SUBJECT).map(([sid, name]) => [name, sid]));
 const SUBJECT_PREFIX = {
   數學: "",
   經濟: "econ",
@@ -199,8 +198,13 @@ function rowHtml(r) {
     <a class="paper-row" href="${href}" target="_blank" rel="noopener" title="檢視 ${sn} ${r.year} ${r.paper}">
       <span class="paper-year">${r.year}</span>
       <span class="paper-body">
+        <span class="paper-tags">
+          <span class="tag subj">${esc(sn)}</span>
+          <span class="tag paper">${esc(r.paper)}</span>
+          <span class="tag lang">${esc(r.lang)}</span>
+        </span>
         <span class="paper-title">文憑試 DSE ${sn} · ${r.paper}（${r.lang}）</span>
-        <span class="paper-sub"><span class="dot ${r.id}"></span><span class="txt">${esc(r.name)} · ${esc(r.lang)}</span></span>
+        <span class="paper-sub">${esc(r.name)}</span>
       </span>
       <span class="paper-chev" aria-hidden="true"></span>
     </a>`;
@@ -209,15 +213,21 @@ function rowHtml(r) {
 function questionRowHtml(q, topic) {
   const href = questionHref(q, topic);
   const pLabel = `Paper ${paperNo(q.paper)}`;
-  const sid = NAME_TO_SID[q.subject] || "math";
-  const tags = (q.tags || []).slice(0, 3).map(esc).join("、");
-  const sub = tags || esc(q.title || "");
+  const topicTags = (q.tags || []).slice(0, 3)
+    .map((t) => `<span class="tag topic">${esc(t)}</span>`)
+    .join("");
   return `
     <a class="paper-row" href="${href}" target="_blank" rel="noopener" title="檢視 ${esc(q.subject)} ${q.year} ${pLabel} Q${q.qno}">
       <span class="paper-year">${q.year}</span>
       <span class="paper-body">
+        <span class="paper-tags">
+          <span class="tag subj">${esc(q.subject)}</span>
+          <span class="tag paper">${esc(pLabel)}</span>
+          <span class="tag q">Q${q.qno}</span>
+          ${topicTags}
+        </span>
         <span class="paper-title">${esc(q.subject)} ${pLabel} Q${q.qno}</span>
-        <span class="paper-sub"><span class="dot ${sid}"></span><span class="txt">${sub}</span></span>
+        <span class="paper-sub">${esc(q.title || "")}</span>
       </span>
       <span class="paper-chev" aria-hidden="true"></span>
     </a>`;

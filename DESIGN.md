@@ -15,11 +15,16 @@ colors:
   seg-track: "rgba(118, 118, 128, 0.24)"
   seg-thumb: "#636366"
   scrollbar: "#3a3a3c"
-  dot-math: "#ff453a"
-  dot-econ: "#32d74b"
-  dot-chem: "#64d2ff"
-  dot-bio: "#ff9f0a"
-  dot-phys: "#bf5af2"
+  tag-subj-bg: "rgba(110, 160, 235, 0.24)"
+  tag-subj-ink: "#b8d0f0"
+  tag-paper-bg: "rgba(160, 140, 220, 0.24)"
+  tag-paper-ink: "#d0c4ea"
+  tag-lang-bg: "rgba(210, 165, 100, 0.22)"
+  tag-lang-ink: "#e0c49a"
+  tag-q-bg: "rgba(100, 185, 150, 0.22)"
+  tag-q-ink: "#a8dcc8"
+  tag-topic-bg: "rgba(140, 150, 165, 0.20)"
+  tag-topic-ink: "#c0c8d4"
 typography:
   display:
     fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif'
@@ -106,8 +111,11 @@ components:
     height: "44px"
   picker-item-selected:
     textColor: "{colors.ink}"
-  subject-dot:
-    size: "7px"
+  tag-pill:
+    fontSize: "11px"
+    fontWeight: 600
+    padding: "2px 8px"
+    rounded: "999px"
   empty-state:
     backgroundColor: "{colors.surface-card}"
     textColor: "{colors.ink-secondary}"
@@ -123,21 +131,21 @@ components:
 
 The hub disguises itself as a native part of the student's phone. True-black ground, the operating system's own type stack, and Apple's platform component vocabulary — segmented control, inset grouped list, wheel-picker sheet, tinted capsule — so a DSE candidate opening it at night understands it in one second because it behaves like every other app on their device. The world explicitly refuses the gradient-and-glow dark that reads as generated: no glows, no shadows, no decorative color, no loaded fonts.
 
-Structure comes from three quiet devices: a two-step tonal elevation (ground → card → pressed), hairline separators at half a pixel, and a single system-blue accent reserved almost entirely for action — active state, links, and the install capsule's tint. Subject identity never interrupts this calm: each subject rides a 7px colored dot before its name, and nowhere else. Years and counts always render in tabular numerals so figures align down the list.
+Structure comes from three quiet devices: a two-step tonal elevation (ground → card → pressed), hairline separators at half a pixel, and a single system-blue accent reserved almost entirely for action — active state, links, and the install capsule's tint. List rows carry small colored pills that tag what each row is: blue for subject, purple for paper, amber for language (plus green for question number and slate for topic tags in topic mode). Years and counts always render in tabular numerals so figures align down the list.
 
 The system is built for one surface (the hub index at `docs/hub/`), shipped as a static GitHub Pages site and installed as a PWA; UI copy is standard written Chinese (書面語), a durable brand commitment. Body text is fixed at 15px with no Dynamic-Type-style scaling — a deliberate choice at this scope. The surface's one authored motion is the wheel-picker sheet's ride-up; everything else only transitions on tap state.
 
 **Key Characteristics:**
 - True-black ground (#000000) with exactly two elevated tones above it (#1c1c1e cards, #2c2c2e pressed)
-- One accent (system blue) plus five subject dot colors that appear only as 7px dots
+- One accent (system blue) plus fixed tag-type colors (subject / paper / language / question / topic)
 - System type stack, never a loaded webfont; tabular numerals for years and counts
-- iOS component vocabulary: segmented control, inset grouped list (12px radius, 56px rows), wheel-picker bottom sheet, tinted capsule
+- iOS component vocabulary: segmented control, inset grouped list (12px radius), wheel-picker bottom sheet, tinted capsule
 - Half-pixel hairlines and a functional nav-bar blur; zero shadows, zero gradients as decoration
 - 書面語 UI copy; standalone PWA display hides the install button; reduced-motion kills the sheet animation
 
 ## Colors
 
-A near-monochrome dark field in iOS system values, structured entirely by luminance steps and alpha, with one blue for action and five dot hues for subject identity.
+A near-monochrome dark field in iOS system values, structured entirely by luminance steps and alpha, with one blue for action and a small set of tag-type hues for list metadata.
 
 ### Primary
 - **System Blue** (#0a84ff): the only accent. Appears as the segmented control's active tint context, the focus ring (2px, rgba(10,132,255,0.65)), text selection (rgba(10,132,255,0.4)), and as tint fill beneath it. Rare by design.
@@ -156,11 +164,11 @@ A near-monochrome dark field in iOS system values, structured entirely by lumina
 - **Scrollbar Graphite** (#3a3a3c): thin scrollbar thumb on the black track — the browser surface themed, not hidden.
 
 ### Tertiary
-- **Subject dots** — Math Red (#ff453a 數學), Econ Green (#32d74b 經濟), Chem Ice Blue (#64d2ff 化學), Bio Amber (#ff9f0a 生物), Phys Violet (#bf5af2 物理): identity colors, each appearing exclusively as a 7px circle before the subject name in list rows.
+- **Tag pills** — soft tint fills with readable muted ink: Subject Blue (rgba(110,160,235,0.24) / #b8d0f0), Paper Lilac (rgba(160,140,220,0.24) / #d0c4ea), Language Warm (rgba(210,165,100,0.22) / #e0c49a), Question Sage (rgba(100,185,150,0.22) / #a8dcc8), Topic Slate (rgba(140,150,165,0.20) / #c0c8d4). Each hue means a tag *type*, not a subject name. Soft and transparent, but bright enough to scan — never solid saturated fills.
 
 ### Named Rules
-**The One Blue Rule.** System Blue is the only accent on any screen. It marks active state, links, and the install capsule — nothing decorative, never a second hue, and blue text is always #409cff on dark.
-**The Dots Stay Dots Rule.** Subject colors exist only as 7px dots. They never fill tag backgrounds, never color text, never gradient, never scale up.
+**The One Blue Rule.** System Blue (#0a84ff / #409cff) is the only *action* accent — active state, links, install capsule. Tag blues stay muted metadata tints and never replace it.
+**The Quiet Tag Rule.** Tag colors encode the kind of label (科目／卷別／語言／題號／課題) with soft tint + muted ink only. No bright solid pills, no white-on-vivid fills.
 
 ## Typography
 
@@ -187,7 +195,7 @@ A near-monochrome dark field in iOS system values, structured entirely by lumina
 
 One column, centered, maximum width 680px, with 16px side gutters (14px on narrow phones). Content is a single vertical flow: compact header (brand row + page title) → sticky filter bar → results list → one-line footer.
 
-The filter bar is sticky at the top with the iOS nav-bar material — rgba(10,10,10,0.78) under saturate(180%) blur(20px), closed by a 0.5px white-alpha edge (rgba(255,255,255,0.08)). Inside: the segmented control above a row of three inset filter fields (8px gaps; labels 4px above controls). At 480px and below the fields stack vertically. Rows are whole-row links on a three-column grid (year / body / chevron), min-height 56px, 10px vertical and 16px horizontal padding, 14px column gap (10px narrow). Safe-area insets are honored at the footer and sheet bottom. Spacing rhythm is tight and iOS-native: 4 / 6 / 8 / 10 / 12 / 16px.
+The filter bar is sticky at the top with the iOS nav-bar material — rgba(10,10,10,0.78) under saturate(180%) blur(20px), closed by a 0.5px white-alpha edge (rgba(255,255,255,0.08)). Inside: the segmented control above a row of three inset filter fields (8px gaps; labels 4px above controls). At 480px and below the fields stack vertically. Rows are whole-row links on a three-column grid (year / body / chevron), min-height 64px, 12px vertical and 16px horizontal padding, 14px column gap (10px narrow). Safe-area insets are honored at the footer and sheet bottom. Spacing rhythm is tight and iOS-native: 4 / 6 / 8 / 10 / 12 / 16px.
 
 ## Elevation & Depth
 
@@ -213,8 +221,8 @@ Each component is an iOS platform piece translated to CSS; behavior matches the 
 - **Sheet links (取消/完成):** borderless accessible-blue 15px text on 8px rounded hotspots; hover adds a 0.06 white wash; 完成 is 600 weight.
 - **Focus:** global focus-visible ring — 2px solid rgba(10,132,255,0.65), 2px offset.
 
-### Chips
-Not used. Filtering is expressed through field buttons and the wheel sheet, never chips.
+### Chips / Tags
+Filter chips are not used — filtering stays on field buttons and the wheel sheet. List metadata uses small full-capsule tag pills (11px/500, 2×8px padding, soft tint fill + muted ink) above each row title: quiet blue subject, lilac paper, warm language; topic-mode rows also show sage Q-number and slate topic tags.
 
 ### Cards / Containers
 - **Inset grouped list:** one Elevated Graphite card (12px radius) whose rows separate by 0.5px hairlines inset by the row padding; the card clips its children (no outer border, no shadow).
@@ -230,8 +238,8 @@ The sticky blurred filter bar (above) plus the segmented control for mode: rgba(
 ### Wheel-Picker Sheet (signature)
 The surface's signature component and only authored motion. Bottom sheet, min(440px, 100%) wide, graphite, 16px top corners, 38×5px grabber at 22% white, header row (取消 / title / 完成) over a hairline. The wheel: 220px window, 44px items at 17px, scroll-snapped, with an 8px-radius highlight band (0.08 white wash) at 88–132px and mask fades to transparent over 0–44px and 176–220px; unselected items at rgba(235,235,245,0.75), selected pure white 600. Opens with the ride-up — `translateY(60%) → none` over 0.42s cubic-bezier(0.32,0.72,0,1) — over a 0.25s fading rgba(0,0,0,0.55) scrim. Scroll settles by snapping (80ms debounce), items are tap-to-select, focus moves to 完成 on open and returns to the invoking field on close. `prefers-reduced-motion` removes the animation entirely.
 
-### Subject Dot
-A 7px circle, inline before the subject name in row meta lines — five fixed hues (數學 red, 經濟 green, 化學 ice, 生物 amber, 物理 violet) and tertiary-ink as the fallback for unknown subjects.
+### Row Tags
+Colored pills sit above the row title and spell out subject, paper, and language at a glance — matching the live hub’s tag types. Topic-mode rows add Q-number (green) and up to three topic tags (slate).
 
 *(One data-derived asymmetry: topic-mode rows label papers in English — 「Paper 1A」 — because the paper number is parsed from question metadata, while year-mode rows show the catalog's Chinese paper names — 「卷一甲」. Both are acceptable HK usage; consistent within each mode.)*
 
@@ -239,17 +247,17 @@ A 7px circle, inline before the subject name in row meta lines — five fixed hu
 
 ### Do:
 - **Do** keep elevation to the two shipped steps — #1c1c1e for raised surfaces on the #000000 ground, #2c2c2e only for pressed state.
-- **Do** keep every subject color a 7px dot; the dot precedes the subject name and nothing else.
+- **Do** keep tag colors quiet (soft tint + muted ink) and tied to tag type (科目／卷別／語言／題號／課題), not to subject identity.
 - **Do** render all years and counts in tabular numerals (`font-variant-numeric: tabular-nums`).
-- **Do** use #409cff (not #0a84ff) whenever blue appears as text on the dark ground.
-- **Do** keep list rows 56px tall whole-row links with the drawn chevron at trailing edge.
+- **Do** use #409cff (not #0a84ff) whenever action blue appears as text on the dark ground.
+- **Do** keep list rows whole-row links with the drawn chevron at trailing edge.
 - **Do** theme the browser surface: blue text selection, blue focus-visible ring, thin #3a3a3c scrollbar.
 - **Do** hide the install button under `display-mode: standalone` and kill the sheet animation under `prefers-reduced-motion: reduce`.
 - **Do** write UI copy in 書面語 (standard written Chinese).
 
 ### Don't:
 - **Don't** add shadows, glows, or gradients — the world refuses the gradient-and-glow dark; the only gradient in the code is the wheel's functional alpha mask.
-- **Don't** introduce a second accent hue or use subject colors as fills, text, or tag backgrounds.
+- **Don't** invent extra tag hues or use tag colors for buttons, filters, or decorative fills.
 - **Don't** load a webfont or replace the system type stack.
 - **Don't** draw separators heavier than a 0.5px hairline or in opaque white.
 - **Don't** animate beyond the sheet ride-up and tap-state transitions (0.12–0.15s ease).

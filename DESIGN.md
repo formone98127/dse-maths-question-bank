@@ -23,7 +23,7 @@ colors:
 typography:
   display:
     fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif'
-    fontSize: "clamp(24px, 5vw, 30px)"
+    fontSize: "clamp(15px, 3.4vw, 18px)"
     fontWeight: 700
     lineHeight: 1.25
     letterSpacing: "-0.015em"
@@ -167,11 +167,12 @@ A near-monochrome dark field in iOS system values, structured entirely by lumina
 **Display Font:** the system stack — -apple-system, BlinkMacSystemFont, SF Pro Text, PingFang TC, Noto Sans TC, Microsoft JhengHei, Helvetica Neue, Arial (sans-serif fallback)
 **Body Font:** the same stack; one family serves every role
 
-**Character:** The type is deliberately the phone's own voice — no loaded fonts, no display faces, no personality beyond weight and size. Latin glyphs take SF Pro on Apple devices; Chinese falls to PingFang TC / Noto Sans TC / JhengHei. Hierarchy is built from a compact 12–17px ramp plus one clamp-sized page title.
+**Character:** The type is deliberately the phone's own voice — no loaded fonts, no display faces, no personality beyond weight and size. Latin glyphs take SF Pro on Apple devices; Chinese falls to PingFang TC / Noto Sans TC / JhengHei. Hierarchy is built from a compact 12–17px ramp, the white brand plate, and one clamp-sized subtitle beneath it.
 
 ### Hierarchy
-- **Display** (700, clamp(24px, 5vw, 30px), line-height 1.25, letter-spacing −0.015em): the page title 「香港中學文憑歷屆試題資料庫」 — the only scaled text on the page.
-- **Title** (600, 15px, line-height 1.4): row titles, the leading year figure, sheet header title, brand wordmark (the brand at secondary ink).
+- **Display-title** (600, clamp(15px, 3.4vw, 18px), line-height 1.4): the page subtitle 「香港中學文憑（DSE）歷屆試題資料庫」, sitting under the brand plate.
+- **Brand plate** (800, 19px, black on white, 9px radius chip): the 「DSE Hub」 wordmark leads the header as a white plate.
+- **Title** (600, 15px, line-height 1.4): row titles, the leading year figure, sheet header title.
 - **Body** (400, 15px, line-height 1.5): the base; all body and control text derives from it (14.5px row titles and field values sit just under it).
 - **Picker Item** (400→600 selected, 17px, 44px leading): wheel-sheet options — the largest UI text after the title, per iOS picker convention.
 - **Label** (400, 12–12.5px, letter-spacing 0.02em): field labels, count line, meta lines, footer — secondary ink, often tabular.

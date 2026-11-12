@@ -24,8 +24,8 @@
       "dot-phys": { "role": "tertiary", "displayName": "Phys Violet", "canonical": "#bf5af2", "tonalRamp": ["#22092f", "#3f1355", "#5f2080", "#8232ad", "#a244d4", "#bf5af2", "#d48cf7", "#e6c3fb"] }
     },
     "typographyMeta": {
-      "display": { "displayName": "Display", "purpose": "Page title only — the one clamp-sized text (700, clamp(24px,5vw,30px), -0.015em)." },
-      "title": { "displayName": "Title", "purpose": "Row titles, leading year figure, sheet header, brand wordmark — 15px/600." },
+      "display": { "displayName": "Display-title", "purpose": "Page subtitle 「香港中學文憑（DSE）歷屆試題資料庫」 under the brand plate (600, clamp(15px,3.4vw,18px))." },
+      "title": { "displayName": "Title", "purpose": "Row titles, leading year figure, sheet header — 15px/600. Brand wordmark is its own plate: 800/19px black-on-white chip." },
       "body": { "displayName": "Body", "purpose": "Base for everything readable; fixed 15px/1.5, no dynamic scaling." },
       "picker-item": { "displayName": "Picker Item", "purpose": "Wheel-sheet options — 17px, largest UI text after the title; 600 white when selected." },
       "label": { "displayName": "Label", "purpose": "Field labels, count line, meta, footer — 12–12.5px, secondary ink, tabular numerals for figures." }

@@ -559,11 +559,17 @@ def paper_row_html(r):
     href = landing or paper_href(r)
     nq = r.get("n_questions")
     title = f"文憑試 DSE {sn} {r['year']} · {r['paper']}（{r['lang']}）"
-    sub = esc(r["name"])
+    # 唔再重覆科目名（tag／title 已有）；只保留額外資訊
+    extra = []
     if nq:
-        sub += f" · {nq} 題索引"
+        extra.append(f"{nq} 題索引")
     elif landing:
-        sub += " · 目錄已收錄"
+        extra.append("目錄已收錄")
+    sub_html = (
+        f'\n          <div class="paper-sub">{esc(" · ".join(extra))}</div>'
+        if extra
+        else ""
+    )
     return f"""    <article class="paper-row">
       <a class="paper-main" href="{esc(href)}" title="開啟卷頁">
         <div class="paper-year">{r['year']}</div>
@@ -573,8 +579,7 @@ def paper_row_html(r):
             <span class="tag cat">{esc(r['paper'])}</span>
             <span class="tag lang">{esc(r['lang'])}</span>
           </div>
-          <div class="paper-title">{esc(title)}</div>
-          <div class="paper-sub">{sub}</div>
+          <div class="paper-title">{esc(title)}</div>{sub_html}
         </div>
       </a>
     </article>"""

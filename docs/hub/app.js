@@ -204,7 +204,6 @@ function rowHtml(r) {
           <span class="tag lang">${esc(r.lang)}</span>
         </span>
         <span class="paper-title">文憑試 DSE ${sn} · ${r.paper}（${r.lang}）</span>
-        <span class="paper-sub">${esc(r.name)}</span>
       </span>
       <span class="paper-chev" aria-hidden="true"></span>
     </a>`;
@@ -227,7 +226,7 @@ function questionRowHtml(q, topic) {
           ${topicTags}
         </span>
         <span class="paper-title">${esc(q.subject)} ${pLabel} Q${q.qno}</span>
-        <span class="paper-sub">${esc(q.title || "")}</span>
+        ${q.title ? `<span class="paper-sub">${esc(q.title)}</span>` : ""}
       </span>
       <span class="paper-chev" aria-hidden="true"></span>
     </a>`;

@@ -56,27 +56,30 @@ header.top { padding: 18px 16px 6px; max-width: var(--max); width: 100%; margin:
 .brand-lockup {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 5px;
   margin: 0;
   min-width: 0;
+  font-family: Arial, Helvetica, "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
 }
 .brand-dse {
-  color: var(--ink);
-  font-size: 19px;
-  font-weight: 800;
-  letter-spacing: 0.01em;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
   line-height: 1;
+  text-transform: none;
 }
 .brand {
   display: inline-flex;
   align-items: center;
-  background: #ffffff;
+  justify-content: center;
+  background: #ff9900;
   color: #000000;
-  font-size: 19px;
-  font-weight: 800;
-  letter-spacing: 0.01em;
-  padding: 5px 12px;
-  border-radius: 9px;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  padding: 3px 8px 4px;
+  border-radius: 4px;
   line-height: 1;
 }
 .top-actions {

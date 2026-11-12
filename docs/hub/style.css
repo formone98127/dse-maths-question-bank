@@ -64,6 +64,23 @@ header.top { padding: 18px 16px 6px; max-width: var(--max); width: 100%; margin:
   padding: 5px 12px;
   border-radius: 9px;
 }
+.top-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  flex: 0 1 auto;
+  min-width: 0;
+}
+.top-actions .seg {
+  flex: 0 1 auto;
+  min-width: 0;
+  width: auto;
+}
+.top-actions .seg button {
+  padding: 6px 12px;
+  white-space: nowrap;
+}
 .install-btn {
   flex: 0 0 auto;
   display: inline-flex;
@@ -144,9 +161,6 @@ nav.filters {
   max-width: var(--max);
   margin: 0 auto;
   padding: 10px 16px 12px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
 }
 
 .seg {
@@ -425,6 +439,8 @@ body.reel-open { overflow: hidden; }
 
 /* —— narrow phones: fields stack —— */
 @media (max-width: 480px) {
+  .top-actions { gap: 6px; }
+  .top-actions .seg button { padding: 6px 10px; font-size: 12.5px; }
   .bar { flex-direction: column; gap: 8px; }
   .field { flex: 1 1 auto; }
   .paper-row { padding: 10px 14px; gap: 4px 10px; }

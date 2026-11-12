@@ -36,7 +36,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="apple-mobile-web-app-title" content="DSE Hub">
 <meta name="application-name" content="DSE Hub">
-<link rel="stylesheet" href="/hub/style.css?v=20261112seo3">
+<link rel="stylesheet" href="/hub/style.css?v=20261112h">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LTB27V0RGW"></script>
 <script>
@@ -191,9 +191,15 @@
 <header class="top">
   <div class="top-row">
     <p class="brand">DSE Hub</p>
-    <button type="button" class="install-btn" data-install-app title="安裝 DSE Hub 至主畫面">
-      <span>安裝</span>
-    </button>
+    <div class="top-actions">
+      <div class="seg" id="modeSeg" role="tablist" aria-label="瀏覽方式">
+        <button type="button" data-mode="year" class="on" role="tab" aria-selected="true">按年份</button>
+        <button type="button" data-mode="topic" role="tab" aria-selected="false">按課題</button>
+      </div>
+      <button type="button" class="install-btn" data-install-app title="安裝 DSE Hub 至主畫面">
+        <span>安裝</span>
+      </button>
+    </div>
   </div>
   <h1>香港中學文憑（DSE）歷屆試題資料庫</h1>
   <p class="tagline">即時睇題目／題解，自選按課題操卷——完全免費，真正方便用家既 Past Paper 收集平台。</p>
@@ -208,10 +214,6 @@
 
 <nav class="filters" aria-label="篩選">
   <div class="filters-inner">
-    <div class="seg" id="modeSeg" role="tablist">
-      <button type="button" data-mode="year" class="on" role="tab" aria-selected="true">按年份</button>
-      <button type="button" data-mode="topic" role="tab" aria-selected="false">按課題</button>
-    </div>
     <div class="bar" id="yearBar">
       <div class="field">
         <label for="bSubj">科目</label>
@@ -1128,9 +1130,9 @@
   </div>
 </div>
 
-<script src="/data.js?v=20261112seo3"></script>
-<script src="/hub/data.js?v=20261112seo3"></script>
-<script src="/hub/app.js?v=20261112seo3"></script>
-<script src="/pwa.js?v=20261112seo3"></script>
+<script src="/data.js?v=20261112h"></script>
+<script src="/hub/data.js?v=20261112h"></script>
+<script src="/hub/app.js?v=20261112h"></script>
+<script src="/pwa.js?v=20261112h"></script>
 </body>
 </html>

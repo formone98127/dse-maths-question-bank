@@ -1514,7 +1514,7 @@ window.QB = {
       ],
       "text": "$\\dfrac{(2x^4)^3}{2x^5} =$\n\n- A. $3x^2$.\n- B. $3x^7$.\n- C. $4x^7$.\n- D. $4x^{59}$.",
       "html": "<p>1.&nbsp;&nbsp;&nbsp;$\\dfrac{(2x^4)^3}{2x^5} =$</p>\n<ul><li>A. $3x^2$.</li><li>B. $3x^7$.</li><li>C. $4x^7$.</li><li>D. $4x^{59}$.</li></ul>",
-      "file": "2012_P2_題目英文卷.md",
+      "file": "2012_P2_questions_EN.md",
       "answer": "C",
       "answer_pct": 94
     },
@@ -1531,7 +1531,7 @@ window.QB = {
       ],
       "text": "$(4x+y)^2-(4x-y)^2 =$\n\n- A. $0$.\n- B. $2y^2$.\n- C. $8xy$.\n- D. $16xy$.",
       "html": "<p>2.&nbsp;&nbsp;&nbsp;$(4x+y)^2-(4x-y)^2 =$</p>\n<ul><li>A. $0$.</li><li>B. $2y^2$.</li><li>C. $8xy$.</li><li>D. $16xy$.</li></ul>",
-      "file": "2012_P2_題目英文卷.md",
+      "file": "2012_P2_questions_EN.md",
       "answer": "D",
       "answer_pct": 74
     },
@@ -1550,7 +1550,7 @@ window.QB = {
       ],
       "text": "If $p$ and $q$ are constants such that $x^2+p=(x+2)(x+q)+10$, then $p=$\n\n- A. $-4$.\n- B. $-2$.\n- C. $6$.\n- D. $10$.",
       "html": "<p>3.&nbsp;&nbsp;&nbsp;If $p$ and $q$ are constants such that $x^2+p=(x+2)(x+q)+10$, then $p=$</p>\n<ul><li>A. $-4$.</li><li>B. $-2$.</li><li>C. $6$.</li><li>D. $10$.</li></ul>",
-      "file": "2012_P2_題目英文卷.md",
+      "file": "2012_P2_questions_EN.md",
       "answer": "C",
       "answer_pct": 59
     },
@@ -1569,7 +1569,7 @@ window.QB = {
       ],
       "text": "If $ k $ is a constant such that $ x^3 + 4x^2 + kx - 12 $ is divisible by $ x + 3 $, then $ k = $\n\n- A. $-25$.\n- B. $-1$.\n- C. $1$.\n- D. $17$.",
       "html": "<p>4.&nbsp;&nbsp;&nbsp;If $ k $ is a constant such that $ x^3 + 4x^2 + kx - 12 $ is divisible by $ x + 3 $, then $ k = $</p>\n<ul><li>A. $-25$.</li><li>B. $-1$.</li><li>C. $1$.</li><li>D. $17$.</li></ul>",
-      "file": "2012_P2_題目英文卷.md",
+      "file": "2012_P2_questions_EN.md",
       "answer": "B",
       "answer_pct": 75
     },
@@ -1587,7 +1587,7 @@ window.QB = {
       ],
       "text": "If $ m + 2n + 6 = 2m - n = 7 $, then $ n = $\n\n- A. $-4$.\n- B. $-1$.\n- C. $3$.\n- D. $11$.",
       "html": "<p>5.&nbsp;&nbsp;&nbsp;If $ m + 2n + 6 = 2m - n = 7 $, then $ n = $</p>\n<ul><li>A. $-4$.</li><li>B. $-1$.</li><li>C. $3$.</li><li>D. $11$.</li></ul>",
-      "file": "2012_P2_題目英文卷.md",
+      "file": "2012_P2_questions_EN.md",
       "answer": "B",
       "answer_pct": 78
     },
@@ -1604,7 +1604,7 @@ window.QB = {
       ],
       "text": "The figure shows the graph of $ y = a(x + b)^2 $, where $ a $ and $ b $ are constants. Which of the following is true?\n\u0001IMG0\u0001\n\n- A. $ a > 0 $ and $ b > 0 $\n- B. $ a > 0 $ and $ b < 0 $\n- C. $ a < 0 $ and $ b > 0 $\n- D. $ a < 0 $ and $ b < 0 $",
       "html": "<p>6.&nbsp;&nbsp;&nbsp;The figure shows the graph of $ y = a(x + b)^2 $, where $ a $ and $ b $ are constants. Which of the following is true?</p>\n<p><img alt=\"Figure Q6 (as printed)\" src=\"2012P2_figs/Q06.png\" /></p>\n<ul><li>A. $ a &gt; 0 $ and $ b &gt; 0 $</li><li>B. $ a &gt; 0 $ and $ b &lt; 0 $</li><li>C. $ a &lt; 0 $ and $ b &gt; 0 $</li><li>D. $ a &lt; 0 $ and $ b &lt; 0 $</li></ul>",
-      "file": "2012_P2_題目英文卷.md",
+      "file": "2012_P2_questions_EN.md",
       "answer": "D",
       "answer_pct": 53
     },
@@ -1621,7 +1621,7 @@ window.QB = {
       ],
       "text": "The solution of $ 15 + 4x < 3 $ or $ 9 - 2x > 1 $ is\n\n- A. $ x < -3 $.\n- B. $ x > -3 $.\n- C. $ x < 4 $.\n- D. $ x > 4 $.",
       "html": "<p>7.&nbsp;&nbsp;&nbsp;The solution of $ 15 + 4x &lt; 3 $ or $ 9 - 2x &gt; 1 $ is</p>\n<ul><li>A. $ x &lt; -3 $.</li><li>B. $ x &gt; -3 $.</li><li>C. $ x &lt; 4 $.</li><li>D. $ x &gt; 4 $.</li></ul>",
-      "file": "2012_P2_題目英文卷.md",
+      "file": "2012_P2_questions_EN.md",
       "answer": "C",
       "answer_pct": 59
     },
@@ -1640,7 +1640,7 @@ window.QB = {
       ],
       "text": "In a company, 37.5% of the employees are female. If 60% of the male employees and 80% of the female employees are married, then the percentage of married employees in the company is\n\n- A. 32.5%.\n- B. 45%.\n- C. 55%.\n- D. 67.5%.",
       "html": "<p>8.&nbsp;&nbsp;&nbsp;In a company, 37.5% of the employees are female. If 60% of the male employees and 80% of the female employees are married, then the percentage of married employees in the company is</p>\n<ul><li>A. 32.5%.</li><li>B. 45%.</li><li>C. 55%.</li><li>D. 67.5%.</li></ul>",
-      "file": "2012_P2_題目英文卷.md",
+      "file": "2012_P2_questions_EN.md",
       "answer": "D",
       "answer_pct": 84
     },
@@ -1657,7 +1657,7 @@ window.QB = {
       ],
       "text": "If $x$ and $y$ are non-zero numbers such that $\\dfrac{6x+5y}{3y-2x}=7$, then $x:y=$\n\n- A. 4:5.\n- B. 4:13.\n- C. 5:4.\n- D. 13:4.",
       "html": "<p>9.&nbsp;&nbsp;&nbsp;If $x$ and $y$ are non-zero numbers such that $\\dfrac{6x+5y}{3y-2x}=7$, then $x:y=$</p>\n<ul><li>A. 4:5.</li><li>B. 4:13.</li><li>C. 5:4.</li><li>D. 13:4.</li></ul>",
-      "file": "2012_P2_題目英文卷.md",
+      "file": "2012_P2_questions_EN.md",
       "answer": "A",
       "answer_pct": 75
     },
@@ -1675,7 +1675,7 @@ window.QB = {
       ],
       "text": "It is given that $y$ partly varies directly as $x^2$ and partly varies inversely as $x$. When $x=1$, $y=-4$ and when $x=2$, $y=5$. When $x=-2$, $y=$\n\n- A. -11.\n- B. -5.\n- C. 5.\n- D. 11.",
       "html": "<p>10.&nbsp;&nbsp;&nbsp;It is given that $y$ partly varies directly as $x^2$ and partly varies inversely as $x$. When $x=1$, $y=-4$ and when $x=2$, $y=5$. When $x=-2$, $y=$</p>\n<ul><li>A. -11.</li><li>B. -5.</li><li>C. 5.</li><li>D. 11.</li></ul>",
-      "file": "2012_P2_題目英文卷.md",
+      "file": "2012_P2_questions_EN.md",
       "answer": "D",
       "answer_pct": 63
     },
@@ -1693,7 +1693,7 @@ window.QB = {
       ],
       "text": "Mary performs a typing task for 7 hours. Her average typing speeds for the first 3 hours and the last 4 hours are 63 words per minute and 56 words per minute respectively. Find her average typing speed for the 7 hours.\n\n- A. 17 words per minute\n- B. 35 words per minute\n- C. 59 words per minute\n- D. 60 words per minute",
       "html": "<p>11.&nbsp;&nbsp;&nbsp;Mary performs a typing task for 7 hours. Her average typing speeds for the first 3 hours and the last 4 hours are 63 words per minute and 56 words per minute respectively. Find her average typing speed for the 7 hours.</p>\n<ul><li>A. 17 words per minute</li><li>B. 35 words per minute</li><li>C. 59 words per minute</li><li>D. 60 words per minute</li></ul>",
-      "file": "2012_P2_題目英文卷.md",
+      "file": "2012_P2_questions_EN.md",
       "answer": "C",
       "answer_pct": 79
     },
@@ -1710,7 +1710,7 @@ window.QB = {
       ],
       "text": "In the figure, the 1st pattern consists of 1 dot. For any positive integer $ n $, the $(n+1)$th pattern is formed by adding $ n $ dots to the $ n $th pattern. Find the number of dots in the 8th pattern.\n\u0001IMG0\u0001\n\n- A. 22\n- B. 29\n- C. 36\n- D. 37",
       "html": "<p>12.&nbsp;&nbsp;&nbsp;In the figure, the 1st pattern consists of 1 dot. For any positive integer $ n $, the $(n+1)$th pattern is formed by adding $ n $ dots to the $ n $th pattern. Find the number of dots in the 8th pattern.</p>\n<p><img alt=\"Figure Q12 (as printed)\" src=\"2012P2_figs/Q12.png\" /></p>\n<ul><li>A. 22</li><li>B. 29</li><li>C. 36</li><li>D. 37</li></ul>",
-      "file": "2012_P2_題目英文卷.md",
+      "file": "2012_P2_questions_EN.md",
       "answer": "B",
       "answer_pct": 74
     },
@@ -1729,7 +1729,7 @@ window.QB = {
       ],
       "text": "$ 0.0322515 = $\n\n- A. 0.032 (correct to 3 significant figures).\n- B. 0.0322 (correct to 4 decimal places).\n- C. 0.03225 (correct to 5 significant figures).\n- D. 0.032252 (correct to 6 decimal places).",
       "html": "<p>13.&nbsp;&nbsp;&nbsp;$ 0.0322515 = $</p>\n<ul><li>A. 0.032 (correct to 3 significant figures).</li><li>B. 0.0322 (correct to 4 decimal places).</li><li>C. 0.03225 (correct to 5 significant figures).</li><li>D. 0.032252 (correct to 6 decimal places).</li></ul>",
-      "file": "2012_P2_題目英文卷.md",
+      "file": "2012_P2_questions_EN.md",
       "answer": "D",
       "answer_pct": 79
     },
@@ -1748,7 +1748,7 @@ window.QB = {
       ],
       "text": "The length of a piece of thin string is measured as $ 25 \\text{ m} $ correct to the nearest $ \\text{m} $. If the string is cut into $ n $ pieces such that the length of each piece is measured as $ 5 \\text{ cm} $ correct to the nearest $ \\text{cm} $, find the greatest possible value of $ n $.\n\n- A. 445\n- B. 566\n- C. 567\n- D. 650",
       "html": "<p>14.&nbsp;&nbsp;&nbsp;The length of a piece of thin string is measured as $ 25 \\text{ m} $ correct to the nearest $ \\text{m} $. If the string is cut into $ n $ pieces such that the length of each piece is measured as $ 5 \\text{ cm} $ correct to the nearest $ \\text{cm} $, find the greatest possible value of $ n $.</p>\n<ul><li>A. 445</li><li>B. 566</li><li>C. 567</li><li>D. 650</li></ul>",
-      "file": "2012_P2_題目英文卷.md",
+      "file": "2012_P2_questions_EN.md",
       "answer": "B",
       "answer_pct": 49
     },
@@ -1766,7 +1766,7 @@ window.QB = {
       ],
       "text": "In the figure, the area of quadrilateral $ ABCD $ is\n\u0001IMG0\u0001\n\n- A. $ 144 \\text{ cm}^2 $.\n- B. $ 160 \\text{ cm}^2 $.\n- C. $ 178 \\text{ cm}^2 $.\n- D. $ 288 \\text{ cm}^2 $.",
       "html": "<p>15.&nbsp;&nbsp;&nbsp;In the figure, the area of quadrilateral $ ABCD $ is</p>\n<p><img alt=\"Figure Q15 (as printed)\" src=\"2012P2_figs/Q15.png\" /></p>\n<ul><li>A. $ 144 \\text{ cm}^2 $.</li><li>B. $ 160 \\text{ cm}^2 $.</li><li>C. $ 178 \\text{ cm}^2 $.</li><li>D. $ 288 \\text{ cm}^2 $.</li></ul>",
-      "file": "2012_P2_題目英文卷.md",
+      "file": "2012_P2_questions_EN.md",
       "answer": "A",
       "answer_pct": 89
     },
@@ -1785,7 +1785,7 @@ window.QB = {
       ],
       "text": "In the figure, $OAB$ and $OCD$ are sectors with centre $O$. If $\\widehat{AB} = 12\\pi \\text{ cm}$, $\\widehat{CD} = 16\\pi \\text{ cm}$ and $OA = 30 \\text{ cm}$, then $AC =$\n\u0001IMG0\u0001\n\n- A. $5 \\text{ cm}$.\n- B. $10 \\text{ cm}$.\n- C. $20 \\text{ cm}$.\n- D. $40 \\text{ cm}$.",
       "html": "<p>16.&nbsp;&nbsp;&nbsp;In the figure, $OAB$ and $OCD$ are sectors with centre $O$. If $\\widehat{AB} = 12\\pi \\text{ cm}$, $\\widehat{CD} = 16\\pi \\text{ cm}$ and $OA = 30 \\text{ cm}$, then $AC =$</p>\n<p><img alt=\"Figure Q16 (as printed)\" src=\"2012P2_figs/Q16.png\" /></p>\n<ul><li>A. $5 \\text{ cm}$.</li><li>B. $10 \\text{ cm}$.</li><li>C. $20 \\text{ cm}$.</li><li>D. $40 \\text{ cm}$.</li></ul>",
-      "file": "2012_P2_題目英文卷.md",
+      "file": "2012_P2_questions_EN.md",
       "answer": "B",
       "answer_pct": 82
     },
@@ -1804,7 +1804,7 @@ window.QB = {
       ],
       "text": "In the figure, $ABCD$ is a parallelogram. $E$ and $F$ are points lying on $AB$ and $CD$ respectively. $AD$ produced and $EF$ produced meet at $G$. It is given that $DF:FC = 3:4$ and $AD:DG = 1:1$. If the area of $\\triangle DFG$ is $3 \\text{ cm}^2$, then the area of the parallelogram $ABCD$ is\n\u0001IMG0\u0001\n\n- A. $12 \\text{ cm}^2$.\n- B. $14 \\text{ cm}^2$.\n- C. $18 \\text{ cm}^2$.\n- D. $21 \\text{ cm}^2$.",
       "html": "<p>17.&nbsp;&nbsp;&nbsp;In the figure, $ABCD$ is a parallelogram. $E$ and $F$ are points lying on $AB$ and $CD$ respectively. $AD$ produced and $EF$ produced meet at $G$. It is given that $DF:FC = 3:4$ and $AD:DG = 1:1$. If the area of $\\triangle DFG$ is $3 \\text{ cm}^2$, then the area of the parallelogram $ABCD$ is</p>\n<p><img alt=\"Figure Q17 (as printed)\" src=\"2012P2_figs/Q17.png\" /></p>\n<ul><li>A. $12 \\text{ cm}^2$.</li><li>B. $14 \\text{ cm}^2$.</li><li>C. $18 \\text{ cm}^2$.</li><li>D. $21 \\text{ cm}^2$.</li></ul>",
-      "file": "2012_P2_題目英文卷.md",
+      "file": "2012_P2_questions_EN.md",
       "answer": "B",
       "answer_pct": 43
     },
@@ -1823,7 +1823,7 @@ window.QB = {
       ],
       "text": "In the figure, $D$ is a point lying on $AC$ such that $BD$ is perpendicular to $AC$. If $BC = \\ell$, then $AB =$\n\u0001IMG0\u0001\n\n- A. $\\dfrac{\\ell \\sin \\alpha}{\\cos \\beta}$.\n- B. $\\dfrac{\\ell \\sin \\beta}{\\cos \\alpha}$.\n- C. $\\dfrac{\\ell \\cos \\alpha}{\\sin \\beta}$.\n- D. $\\dfrac{\\ell \\cos \\beta}{\\sin \\alpha}$.",
       "html": "<p>18.&nbsp;&nbsp;&nbsp;In the figure, $D$ is a point lying on $AC$ such that $BD$ is perpendicular to $AC$. If $BC = \\ell$, then $AB =$</p>\n<p><img alt=\"Figure Q18 (as printed)\" src=\"2012P2_figs/Q18.png\" /></p>\n<ul><li>A. $\\dfrac{\\ell \\sin \\alpha}{\\cos \\beta}$.</li><li>B. $\\dfrac{\\ell \\sin \\beta}{\\cos \\alpha}$.</li><li>C. $\\dfrac{\\ell \\cos \\alpha}{\\sin \\beta}$.</li><li>D. $\\dfrac{\\ell \\cos \\beta}{\\sin \\alpha}$.</li></ul>",
-      "file": "2012_P2_題目英文卷.md",
+      "file": "2012_P2_questions_EN.md",
       "answer": "A",
       "answer_pct": 70
     },
@@ -1842,7 +1842,7 @@ window.QB = {
       ],
       "text": "$\\dfrac{\\cos 60^\\circ}{1-\\cos(90^\\circ-\\theta)} + \\dfrac{\\cos 240^\\circ}{1-\\cos(270^\\circ-\\theta)} =$\n\n- A. $\\dfrac{1}{\\cos^2\\theta}$\n- B. $\\dfrac{\\cos\\theta}{\\tan\\theta}$\n- C. $\\dfrac{\\tan\\theta}{\\cos\\theta}$\n- D. $\\dfrac{1}{\\cos\\theta\\tan\\theta}$",
       "html": "<p>19.&nbsp;&nbsp;&nbsp;$\\dfrac{\\cos 60^\\circ}{1-\\cos(90^\\circ-\\theta)} + \\dfrac{\\cos 240^\\circ}{1-\\cos(270^\\circ-\\theta)} =$</p>\n<ul><li>A. $\\dfrac{1}{\\cos^2\\theta}$</li><li>B. $\\dfrac{\\cos\\theta}{\\tan\\theta}$</li><li>C. $\\dfrac{\\tan\\theta}{\\cos\\theta}$</li><li>D. $\\dfrac{1}{\\cos\\theta\\tan\\theta}$</li></ul>",
-      "file": "2012_P2_題目英文卷.md",
+      "file": "2012_P2_questions_EN.md",
       "answer": "C",
       "answer_pct": 51
     },
@@ -1861,7 +1861,7 @@ window.QB = {
       ],
       "text": "In the figure, $O$ is the centre of the circle $ABCD$. If $\\angle BAO = 28^\\circ$, $\\angle BCD = 114^\\circ$ and $\\angle CDO = 42^\\circ$, then $\\angle ABC =$\n\u0001IMG0\u0001\n\n- A. $90^\\circ$\n- B. $96^\\circ$\n- C. $100^\\circ$\n- D. $138^\\circ$",
       "html": "<p>20.&nbsp;&nbsp;&nbsp;In the figure, $O$ is the centre of the circle $ABCD$. If $\\angle BAO = 28^\\circ$, $\\angle BCD = 114^\\circ$ and $\\angle CDO = 42^\\circ$, then $\\angle ABC =$</p>\n<p><img alt=\"Figure Q20 (as printed)\" src=\"2012P2_figs/Q20.png\" /></p>\n<ul><li>A. $90^\\circ$</li><li>B. $96^\\circ$</li><li>C. $100^\\circ$</li><li>D. $138^\\circ$</li></ul>",
-      "file": "2012_P2_題目英文卷.md",
+      "file": "2012_P2_questions_EN.md",
       "answer": "C",
       "answer_pct": 71
     },
@@ -1880,7 +1880,7 @@ window.QB = {
       ],
       "text": "In the figure, $AB$ is a diameter of the circle $ABCD$. If $AB = 12 \\text{ cm}$ and $CD = 6 \\text{ cm}$, then the area of the shaded region is\n\u0001IMG0\u0001\n\n- A. $(12\\pi - 9) \\text{ cm}^2$\n- B. $(12\\pi + 9) \\text{ cm}^2$\n- C. $(12\\pi - 9\\sqrt{3}) \\text{ cm}^2$\n- D. $(12\\pi + 9\\sqrt{3}) \\text{ cm}^2$",
       "html": "<p>21.&nbsp;&nbsp;&nbsp;In the figure, $AB$ is a diameter of the circle $ABCD$. If $AB = 12 \\text{ cm}$ and $CD = 6 \\text{ cm}$, then the area of the shaded region is</p>\n<p><img alt=\"Figure Q21 (as printed)\" src=\"2012P2_figs/Q21.png\" /></p>\n<ul><li>A. $(12\\pi - 9) \\text{ cm}^2$</li><li>B. $(12\\pi + 9) \\text{ cm}^2$</li><li>C. $(12\\pi - 9\\sqrt{3}) \\text{ cm}^2$</li><li>D. $(12\\pi + 9\\sqrt{3}) \\text{ cm}^2$</li></ul>",
-      "file": "2012_P2_題目英文卷.md",
+      "file": "2012_P2_questions_EN.md",
       "answer": "D",
       "answer_pct": 45
     },
@@ -1897,7 +1897,7 @@ window.QB = {
       ],
       "text": "Which of the following statements about a regular 12-sided polygon are true? I. Each exterior angle is $30^\\circ$. II. Each interior angle is $150^\\circ$. III. The number of axes of reflectional symmetry is 6.\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
       "html": "<p>22.&nbsp;&nbsp;&nbsp;Which of the following statements about a regular 12-sided polygon are true? I. Each exterior angle is $30^\\circ$. II. Each interior angle is $150^\\circ$. III. The number of axes of reflectional symmetry is 6.</p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
-      "file": "2012_P2_題目英文卷.md",
+      "file": "2012_P2_questions_EN.md",
       "answer": "A",
       "answer_pct": 43
     },
@@ -1916,7 +1916,7 @@ window.QB = {
       ],
       "text": "The rectangular coordinates of the point $P$ are $(-3, -3\\sqrt{3})$. If $P$ is rotated anticlockwise about the origin through $90^\\circ$, then the polar coordinates of its image are\n\n- A. $(3, 150^\\circ)$.\n- B. $(3, 330^\\circ)$.\n- C. $(6, 150^\\circ)$.\n- D. $(6, 330^\\circ)$.",
       "html": "<p>23.&nbsp;&nbsp;&nbsp;The rectangular coordinates of the point $P$ are $(-3, -3\\sqrt{3})$. If $P$ is rotated anticlockwise about the origin through $90^\\circ$, then the polar coordinates of its image are</p>\n<ul><li>A. $(3, 150^\\circ)$.</li><li>B. $(3, 330^\\circ)$.</li><li>C. $(6, 150^\\circ)$.</li><li>D. $(6, 330^\\circ)$.</li></ul>",
-      "file": "2012_P2_題目英文卷.md",
+      "file": "2012_P2_questions_EN.md",
       "answer": "D",
       "answer_pct": 42
     },
@@ -1935,7 +1935,7 @@ window.QB = {
       ],
       "text": "If $P$ is a moving point in the rectangular coordinate plane such that the distance between $P$ and the point $(20, 12)$ is equal to 5, then the locus of $P$ is a\n\n- A. circle.\n- B. square.\n- C. parabola.\n- D. triangle.",
       "html": "<p>24.&nbsp;&nbsp;&nbsp;If $P$ is a moving point in the rectangular coordinate plane such that the distance between $P$ and the point $(20, 12)$ is equal to 5, then the locus of $P$ is a</p>\n<ul><li>A. circle.</li><li>B. square.</li><li>C. parabola.</li><li>D. triangle.</li></ul>",
-      "file": "2012_P2_題目英文卷.md",
+      "file": "2012_P2_questions_EN.md",
       "answer": "A",
       "answer_pct": 72
     },
@@ -1952,7 +1952,7 @@ window.QB = {
       ],
       "text": "In the figure, the equations of the straight lines $ L_1 $ and $ L_2 $ are $ ax + y = b $ and $ cx + y = d $ respectively. Which of the following are true? I. $ a < 0 $ II. $ a < c $ III. $ b > d $ IV. $ ad > bc $\n\u0001IMG0\u0001\n\n- A. I, II and III only\n- B. I, II and IV only\n- C. I, III and IV only\n- D. II, III and IV only",
       "html": "<p>25.&nbsp;&nbsp;&nbsp;In the figure, the equations of the straight lines $ L_1 $ and $ L_2 $ are $ ax + y = b $ and $ cx + y = d $ respectively. Which of the following are true? I. $ a &lt; 0 $ II. $ a &lt; c $ III. $ b &gt; d $ IV. $ ad &gt; bc $</p>\n<p><img alt=\"Figure Q25 (as printed)\" src=\"2012P2_figs/Q25.png\" /></p>\n<ul><li>A. I, II and III only</li><li>B. I, II and IV only</li><li>C. I, III and IV only</li><li>D. II, III and IV only</li></ul>",
-      "file": "2012_P2_題目英文卷.md",
+      "file": "2012_P2_questions_EN.md",
       "answer": "C",
       "answer_pct": 40
     },
@@ -1971,7 +1971,7 @@ window.QB = {
       ],
       "text": "In the figure, the radius of the circle and the coordinates of the centre are $ r $ and $ (h, k) $ respectively. Which of the following are true? I. $ h + k > 0 $ II. $ r - h > 0 $ III. $ r - k > 0 $\n\u0001IMG0\u0001\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
       "html": "<p>26.&nbsp;&nbsp;&nbsp;In the figure, the radius of the circle and the coordinates of the centre are $ r $ and $ (h, k) $ respectively. Which of the following are true? I. $ h + k &gt; 0 $ II. $ r - h &gt; 0 $ III. $ r - k &gt; 0 $</p>\n<p><img alt=\"Figure Q26 (as printed)\" src=\"2012P2_figs/Q26.png\" /></p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
-      "file": "2012_P2_題目英文卷.md",
+      "file": "2012_P2_questions_EN.md",
       "answer": "A",
       "answer_pct": 56
     },
@@ -1988,7 +1988,7 @@ window.QB = {
       ],
       "text": "$ 9 \\star \\diamondsuit $ is a 3-digit number, where $ \\star $ and $ \\diamondsuit $ are integers from 0 to 9 inclusive. Find the probability that the 3-digit number is divisible by 5.\n\n- A. $\\dfrac{1}{5}$\n- B. $\\dfrac{7}{33}$\n- C. $\\dfrac{20}{99}$\n- D. $\\dfrac{19}{100}$ 9",
       "html": "<p>27.&nbsp;&nbsp;&nbsp;$ 9 \\star \\diamondsuit $ is a 3-digit number, where $ \\star $ and $ \\diamondsuit $ are integers from 0 to 9 inclusive. Find the probability that the 3-digit number is divisible by 5.</p>\n<ul><li>A. $\\dfrac{1}{5}$</li><li>B. $\\dfrac{7}{33}$</li><li>C. $\\dfrac{20}{99}$</li><li>D. $\\dfrac{19}{100}$ 9</li></ul>",
-      "file": "2012_P2_題目英文卷.md",
+      "file": "2012_P2_questions_EN.md",
       "answer": "A",
       "answer_pct": 50
     },
@@ -2007,7 +2007,7 @@ window.QB = {
       ],
       "text": "The stem-and-leaf diagram below shows the distribution of the ages of a group of members in a recreational centre.\n:::stemleaf\nStem (tens) | Leaf (units)\n5 | 0 5 6 6 8\n6 | 1 4 5 5 7 8 8 9\n7 | 3 4 4 6 7 9\n8 |\n9 | 1\n:::\n\n- A. 0.2\n- B. 0.3\n- C. 0.7\n- D. 0.8",
       "html": "<p>28.&nbsp;&nbsp;&nbsp;The stem-and-leaf diagram below shows the distribution of the ages of a group of members in a recreational centre.</p>\n<div class=\"stemleaf\"><div class=\"slcol slL\"><div class=\"slr slh\">Stem (tens)</div><div class=\"slr\">5</div><div class=\"slr\">6</div><div class=\"slr\">7</div><div class=\"slr\">8</div><div class=\"slr\">9</div></div><div class=\"slrule\"></div><div class=\"slcol slR\"><div class=\"slr slh\">Leaf (units)</div><div class=\"slr\"><span>0</span><span>5</span><span>6</span><span>6</span><span>8</span></div><div class=\"slr\"><span>1</span><span>4</span><span>5</span><span>5</span><span>7</span><span>8</span><span>8</span><span>9</span></div><div class=\"slr\"><span>3</span><span>4</span><span>4</span><span>6</span><span>7</span><span>9</span></div><div class=\"slr\"></div><div class=\"slr\"><span>1</span></div></div></div>\n<ul><li>A. 0.2</li><li>B. 0.3</li><li>C. 0.7</li><li>D. 0.8</li></ul>",
-      "file": "2012_P2_題目英文卷.md",
+      "file": "2012_P2_questions_EN.md",
       "answer": "B",
       "answer_pct": 59
     },
@@ -2026,7 +2026,7 @@ window.QB = {
       ],
       "text": "The bar chart below shows the distribution of the numbers of rings owned by the girls in a group. Find the standard deviation of the distribution correct to 2 decimal places.\n\u0001IMG0\u0001\n\n- A. 1.04\n- B. 1.16\n- C. 1.19\n- D. 2.09",
       "html": "<p>29.&nbsp;&nbsp;&nbsp;The bar chart below shows the distribution of the numbers of rings owned by the girls in a group. Find the standard deviation of the distribution correct to 2 decimal places.</p>\n<p><img alt=\"Figure Q29 (as printed)\" src=\"2012P2_figs/Q29.png\" /></p>\n<ul><li>A. 1.04</li><li>B. 1.16</li><li>C. 1.19</li><li>D. 2.09</li></ul>",
-      "file": "2012_P2_題目英文卷.md",
+      "file": "2012_P2_questions_EN.md",
       "answer": "B",
       "answer_pct": 71
     },
@@ -2045,7 +2045,7 @@ window.QB = {
       ],
       "text": "Consider the following data: 19 10 12 12 13 13 14 15 16 m n If both the mean and the median of the above data are 14, which of the following are true? I. m ≥ 14 II. n ≤ 16 III. m + n = 30\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
       "html": "<p>30.&nbsp;&nbsp;&nbsp;Consider the following data: 19 10 12 12 13 13 14 15 16 m n If both the mean and the median of the above data are 14, which of the following are true? I. m ≥ 14 II. n ≤ 16 III. m + n = 30</p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
-      "file": "2012_P2_題目英文卷.md",
+      "file": "2012_P2_questions_EN.md",
       "answer": "D",
       "answer_pct": 47
     },
@@ -2064,7 +2064,7 @@ window.QB = {
       ],
       "text": "The H.C.F. and the L.C.M. of three expressions are $ ab^2 $ and $ 4a^4b^5c^6 $ respectively. If the first expression and the second expression are $ 2a^2b^4c $ and $ 4a^4b^2c^6 $ respectively, then the third expression is\n\n- A. $ ab^2 $\n- B. $ ab^5 $\n- C. $ 2ab^2c $\n- D. $ 2ab^5c $",
       "html": "<p>31.&nbsp;&nbsp;&nbsp;The H.C.F. and the L.C.M. of three expressions are $ ab^2 $ and $ 4a^4b^5c^6 $ respectively. If the first expression and the second expression are $ 2a^2b^4c $ and $ 4a^4b^2c^6 $ respectively, then the third expression is</p>\n<ul><li>A. $ ab^2 $</li><li>B. $ ab^5 $</li><li>C. $ 2ab^2c $</li><li>D. $ 2ab^5c $</li></ul>",
-      "file": "2012_P2_題目英文卷.md",
+      "file": "2012_P2_questions_EN.md",
       "answer": "B",
       "answer_pct": 55
     },
@@ -2083,7 +2083,7 @@ window.QB = {
       ],
       "text": "The graph in the figure shows the linear relation between $ x $ and $ \\log_3 y $. If $ y = mn^x $, then $ n = $\n\u0001IMG0\u0001\n\n- A. $ \\dfrac{1}{81} $\n- B. $ \\dfrac{1}{9} $\n- C. 9\n- D. 81",
       "html": "<p>32.&nbsp;&nbsp;&nbsp;The graph in the figure shows the linear relation between $ x $ and $ \\log_3 y $. If $ y = mn^x $, then $ n = $</p>\n<p><img alt=\"Figure Q32 (as printed)\" src=\"2012P2_figs/Q32.png\" /></p>\n<ul><li>A. $ \\dfrac{1}{81} $</li><li>B. $ \\dfrac{1}{9} $</li><li>C. 9</li><li>D. 81</li></ul>",
-      "file": "2012_P2_題目英文卷.md",
+      "file": "2012_P2_questions_EN.md",
       "answer": "C",
       "answer_pct": 43
     },
@@ -2102,7 +2102,7 @@ window.QB = {
       ],
       "text": "AD0000002012$_{16}$ =\n\n- A. $ (10)16^{11} + (13)16^{10} + 8210 $\n- B. $ (10)16^{12} + (13)16^{11} + 131360 $\n- C. $ (11)16^{11} + (14)16^{10} + 8210 $\n- D. $ (11)16^{12} + (14)16^{11} + 131360 $",
       "html": "<p>33.&nbsp;&nbsp;&nbsp;AD0000002012$_{16}$ =</p>\n<ul><li>A. $ (10)16^{11} + (13)16^{10} + 8210 $</li><li>B. $ (10)16^{12} + (13)16^{11} + 131360 $</li><li>C. $ (11)16^{11} + (14)16^{10} + 8210 $</li><li>D. $ (11)16^{12} + (14)16^{11} + 131360 $</li></ul>",
-      "file": "2012_P2_題目英文卷.md",
+      "file": "2012_P2_questions_EN.md",
       "answer": "A",
       "answer_pct": 64
     },
@@ -2120,7 +2120,7 @@ window.QB = {
       ],
       "text": "Let $ f(x) $ be a quadratic function. If the coordinates of the vertex of the graph of $ y = f(x) $ are $ (3, -4) $, which of the following must be true?\n\n- A. The roots of the equation $ f(x) = 0 $ are integers.\n- B. The roots of the equation $ f(x) - 3 = 0 $ are rational numbers.\n- C. The roots of the equation $ f(x) + 4 = 0 $ are real numbers.\n- D. The roots of the equation $ f(x) + 5 = 0 $ are nonreal numbers. 11",
       "html": "<p>34.&nbsp;&nbsp;&nbsp;Let $ f(x) $ be a quadratic function. If the coordinates of the vertex of the graph of $ y = f(x) $ are $ (3, -4) $, which of the following must be true?</p>\n<ul><li>A. The roots of the equation $ f(x) = 0 $ are integers.</li><li>B. The roots of the equation $ f(x) - 3 = 0 $ are rational numbers.</li><li>C. The roots of the equation $ f(x) + 4 = 0 $ are real numbers.</li><li>D. The roots of the equation $ f(x) + 5 = 0 $ are nonreal numbers. 11</li></ul>",
-      "file": "2012_P2_題目英文卷.md",
+      "file": "2012_P2_questions_EN.md",
       "answer": "C",
       "answer_pct": 49
     },
@@ -2137,7 +2137,7 @@ window.QB = {
       ],
       "text": "$i^{3}(\\beta i-3)=$\n\n- A. $\\beta+3i$\n- B. $\\beta-3i$\n- C. $-\\beta+3i$\n- D. $-\\beta-3i$",
       "html": "<p>35.&nbsp;&nbsp;&nbsp;$i^{3}(\\beta i-3)=$</p>\n<ul><li>A. $\\beta+3i$</li><li>B. $\\beta-3i$</li><li>C. $-\\beta+3i$</li><li>D. $-\\beta-3i$</li></ul>",
-      "file": "2012_P2_題目英文卷.md",
+      "file": "2012_P2_questions_EN.md",
       "answer": "A",
       "answer_pct": 55
     },
@@ -2156,7 +2156,7 @@ window.QB = {
       ],
       "text": "The figure shows a shaded region (including the boundary). If $(h,k)$ is a point lying in the shaded region, which of the following are true? I. $k \\geq 3$ II. $h-k \\geq -3$ III. $2h+k \\leq 6$\n\u0001IMG0\u0001\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
       "html": "<p>36.&nbsp;&nbsp;&nbsp;The figure shows a shaded region (including the boundary). If $(h,k)$ is a point lying in the shaded region, which of the following are true? I. $k \\geq 3$ II. $h-k \\geq -3$ III. $2h+k \\leq 6$</p>\n<p><img alt=\"Figure Q36 (as printed)\" src=\"2012P2_figs/Q36.png\" /></p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
-      "file": "2012_P2_題目英文卷.md",
+      "file": "2012_P2_questions_EN.md",
       "answer": "D",
       "answer_pct": 37
     },
@@ -2173,7 +2173,7 @@ window.QB = {
       ],
       "text": "Let $a_{n}$ be the $n$th term of an arithmetic sequence. If $a_{18}=26$ and $a_{23}=61$, which of the following are true? I. $a_{14}<0$ II. $a_{1}-a_{2}<0$ III. $a_{1}+a_{2}+a_{3}+\\cdots+a_{27}>0$\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
       "html": "<p>37.&nbsp;&nbsp;&nbsp;Let $a_{n}$ be the $n$th term of an arithmetic sequence. If $a_{18}=26$ and $a_{23}=61$, which of the following are true? I. $a_{14}&lt;0$ II. $a_{1}-a_{2}&lt;0$ III. $a_{1}+a_{2}+a_{3}+\\cdots+a_{27}&gt;0$</p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
-      "file": "2012_P2_題目英文卷.md",
+      "file": "2012_P2_questions_EN.md",
       "answer": "A",
       "answer_pct": 43
     },
@@ -2190,7 +2190,7 @@ window.QB = {
       ],
       "text": "Which of the following may represent the graph of $ y = f(x) $ and the graph of $ y = f(x-2) + 1 $ on the same rectangular coordinate system?\n\n- A. ![Figure Q38A](2012_P2_figs/Q38A.png)\n- B. ![Figure Q38B](2012_P2_figs/Q38B.png)\n- C. ![Figure Q38C](2012_P2_figs/Q38C.png)\n- D. ![Figure Q38D](2012_P2_figs/Q38D.png)",
       "html": "<p>38.&nbsp;&nbsp;&nbsp;Which of the following may represent the graph of $ y = f(x) $ and the graph of $ y = f(x-2) + 1 $ on the same rectangular coordinate system?</p>\n<ul><li>A. <img alt=\"option A\" src=\"2012P2_figs/Q38A.png\" /></li><li>B. <img alt=\"option B\" src=\"2012P2_figs/Q38B.png\" /></li><li>C. <img alt=\"option C\" src=\"2012P2_figs/Q38C.png\" /></li><li>D. <img alt=\"option D\" src=\"2012P2_figs/Q38D.png\" /></li></ul>",
-      "file": "2012_P2_題目英文卷.md",
+      "file": "2012_P2_questions_EN.md",
       "answer": "C",
       "answer_pct": 63
     },
@@ -2209,7 +2209,7 @@ window.QB = {
       ],
       "text": "The figure shows\n\u0001IMG0\u0001\n\n- A. the graph of $ y = 1 + 3 \\cos \\dfrac{x^\\circ}{2} $.\n- B. the graph of $ y = 1 + 3 \\cos 2x^\\circ $.\n- C. the graph of $ y = 4 + 3 \\cos \\dfrac{x^\\circ}{2} $.\n- D. the graph of $ y = 4 + 3 \\cos 2x^\\circ $.",
       "html": "<p>39.&nbsp;&nbsp;&nbsp;The figure shows</p>\n<p><img alt=\"Figure Q39 (as printed)\" src=\"2012P2_figs/Q39.png\" /></p>\n<ul><li>A. the graph of $ y = 1 + 3 \\cos \\dfrac{x^\\circ}{2} $.</li><li>B. the graph of $ y = 1 + 3 \\cos 2x^\\circ $.</li><li>C. the graph of $ y = 4 + 3 \\cos \\dfrac{x^\\circ}{2} $.</li><li>D. the graph of $ y = 4 + 3 \\cos 2x^\\circ $.</li></ul>",
-      "file": "2012_P2_題目英文卷.md",
+      "file": "2012_P2_questions_EN.md",
       "answer": "D",
       "answer_pct": 53
     },
@@ -2228,7 +2228,7 @@ window.QB = {
       ],
       "text": "The figure shows a regular tetrahedron $ABCD$. Find the angle between the plane $ABC$ and the plane $BCD$ correct to the nearest degree.\n\u0001IMG0\u0001\n\n- A. $48^\\circ$\n- B. $53^\\circ$\n- C. $60^\\circ$\n- D. $71^\\circ$",
       "html": "<p>40.&nbsp;&nbsp;&nbsp;The figure shows a regular tetrahedron $ABCD$. Find the angle between the plane $ABC$ and the plane $BCD$ correct to the nearest degree.</p>\n<p><img alt=\"Figure Q40 (as printed)\" src=\"2012P2_figs/Q40.png?v=3\" /></p>\n<ul><li>A. $48^\\circ$</li><li>B. $53^\\circ$</li><li>C. $60^\\circ$</li><li>D. $71^\\circ$</li></ul>",
-      "file": "2012_P2_題目英文卷.md",
+      "file": "2012_P2_questions_EN.md",
       "answer": "D",
       "answer_pct": 30
     },
@@ -2247,7 +2247,7 @@ window.QB = {
       ],
       "text": "In the figure, $PQ$ is the tangent to the circle $ABC$ at $O$, where $O$ is the centre of the semicircle $PBQ$. It is given that $BCP$ is a straight line. If $\\angle BPQ = 12^\\circ$, then $\\angle BAC =$\n\u0001IMG0\u0001\n\n- A. $18^\\circ$\n- B. $24^\\circ$\n- C. $36^\\circ$\n- D. $54^\\circ$",
       "html": "<p>41.&nbsp;&nbsp;&nbsp;In the figure, $PQ$ is the tangent to the circle $ABC$ at $O$, where $O$ is the centre of the semicircle $PBQ$. It is given that $BCP$ is a straight line. If $\\angle BPQ = 12^\\circ$, then $\\angle BAC =$</p>\n<p><img alt=\"Figure Q41 (as printed)\" src=\"2012P2_figs/Q41.png?v=3\" /></p>\n<ul><li>A. $18^\\circ$</li><li>B. $24^\\circ$</li><li>C. $36^\\circ$</li><li>D. $54^\\circ$</li></ul>",
-      "file": "2012_P2_題目英文卷.md",
+      "file": "2012_P2_questions_EN.md",
       "answer": "C",
       "answer_pct": 47
     },
@@ -2265,7 +2265,7 @@ window.QB = {
       ],
       "text": "Find the range of values of $k$ such that the circle $x^2 + y^2 + 2x - 4y - 13 = 0$ and the straight line $x - y + k = 0$ intersect at two distinct points.\n\n- A. $-9 < k < 3$\n- B. $-3 < k < 9$\n- C. $k < -9$ or $k > 3$\n- D. $k < -3$ or $k > 9$",
       "html": "<p>42.&nbsp;&nbsp;&nbsp;Find the range of values of $k$ such that the circle $x^2 + y^2 + 2x - 4y - 13 = 0$ and the straight line $x - y + k = 0$ intersect at two distinct points.</p>\n<ul><li>A. $-9 &lt; k &lt; 3$</li><li>B. $-3 &lt; k &lt; 9$</li><li>C. $k &lt; -9$ or $k &gt; 3$</li><li>D. $k &lt; -3$ or $k &gt; 9$</li></ul>",
-      "file": "2012_P2_題目英文卷.md",
+      "file": "2012_P2_questions_EN.md",
       "answer": "B",
       "answer_pct": 36
     },
@@ -2282,7 +2282,7 @@ window.QB = {
       ],
       "text": "A drama club is formed by 12 boys and 8 girls. If a team of 5 students is selected from the club to participate in a competition and the team consists of at least one girl, how many different teams can be formed?\n\n- A. 3960\n- B. 14712\n- C. 15448\n- D. 15504",
       "html": "<p>43.&nbsp;&nbsp;&nbsp;A drama club is formed by 12 boys and 8 girls. If a team of 5 students is selected from the club to participate in a competition and the team consists of at least one girl, how many different teams can be formed?</p>\n<ul><li>A. 3960</li><li>B. 14712</li><li>C. 15448</li><li>D. 15504</li></ul>",
-      "file": "2012_P2_題目英文卷.md",
+      "file": "2012_P2_questions_EN.md",
       "answer": "B",
       "answer_pct": 52
     },
@@ -2301,7 +2301,7 @@ window.QB = {
       ],
       "text": "A box contains six balls numbered 7, 8, 8, 9, 9 and 9 respectively. John repeats drawing one ball at a time randomly from the box without replacement until the number drawn is 9. Find the probability that he needs exactly three draws.\n\n- A. $\\dfrac{1}{2}$\n- B. $\\dfrac{1}{6}$\n- C. $\\dfrac{1}{8}$\n- D. $\\dfrac{3}{20}$",
       "html": "<p>44.&nbsp;&nbsp;&nbsp;A box contains six balls numbered 7, 8, 8, 9, 9 and 9 respectively. John repeats drawing one ball at a time randomly from the box without replacement until the number drawn is 9. Find the probability that he needs exactly three draws.</p>\n<ul><li>A. $\\dfrac{1}{2}$</li><li>B. $\\dfrac{1}{6}$</li><li>C. $\\dfrac{1}{8}$</li><li>D. $\\dfrac{3}{20}$</li></ul>",
-      "file": "2012_P2_題目英文卷.md",
+      "file": "2012_P2_questions_EN.md",
       "answer": "D",
       "answer_pct": 56
     },
@@ -2320,7 +2320,7 @@ window.QB = {
       ],
       "text": "Let $m_1$, $r_1$ and $v_1$ be the mean, the range and the variance of a group of numbers $\\{x_1, x_2, x_3, \\ldots, x_{100}\\}$ respectively. If $m_2$, $r_2$ and $v_2$ are the mean, the range and the variance of the group of numbers $\\{x_1, x_2, x_3, \\ldots, x_{100}, m_1\\}$ respectively, which of the following must be true? I. $m_1 = m_2$ II. $r_1 = r_2$ III. $v_1 = v_2$\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
       "html": "<p>45.&nbsp;&nbsp;&nbsp;Let $m_1$, $r_1$ and $v_1$ be the mean, the range and the variance of a group of numbers $\\{x_1, x_2, x_3, \\ldots, x_{100}\\}$ respectively. If $m_2$, $r_2$ and $v_2$ are the mean, the range and the variance of the group of numbers $\\{x_1, x_2, x_3, \\ldots, x_{100}, m_1\\}$ respectively, which of the following must be true? I. $m_1 = m_2$ II. $r_1 = r_2$ III. $v_1 = v_2$</p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
-      "file": "2012_P2_題目英文卷.md",
+      "file": "2012_P2_questions_EN.md",
       "answer": "A",
       "answer_pct": 36
     },
@@ -27202,7 +27202,7 @@ window.QB = {
       ],
       "text": "Simplify $\\dfrac{(2x^4)^3}{2x^5}$.\n\n$$(2x^4)^3 = 2^3 \\cdot x^{12} = 8x^{12}$$\n\n$$\\frac{8x^{12}}{2x^5} = 4x^{12-5} = 4x^7$$\n\n**Answer: C　$4x^7$**",
       "html": "<p>Simplify $\\dfrac{(2x^4)^3}{2x^5}$.</p>\n<p>$$(2x^4)^3 = 2^3 \\cdot x^{12} = 8x^{12}$$</p>\n<p>$$\\frac{8x^{12}}{2x^5} = 4x^{12-5} = 4x^7$$</p>\n<p><strong>Answer: C　$4x^7$</strong></p>",
-      "file": "2012_P2_解答_EN.md"
+      "file": "2012_P2_solutions_EN.md"
     },
     {
       "subject": "數學",
@@ -27217,7 +27217,7 @@ window.QB = {
       ],
       "text": "Evaluate $(4x+y)^2-(4x-y)^2$.\n\nUse $a^2-b^2=(a+b)(a-b)$ (no need to expand):\n\n$$\\left[(4x+y)-(4x-y)\\right]\\left[(4x+y)+(4x-y)\\right] = (2y)(8x) = 16xy$$\n\n**Answer: D　$16xy$**",
       "html": "<p>Evaluate $(4x+y)^2-(4x-y)^2$.</p>\n<p>Use $a^2-b^2=(a+b)(a-b)$ (no need to expand):</p>\n<p>$$\\left[(4x+y)-(4x-y)\\right]\\left[(4x+y)+(4x-y)\\right] = (2y)(8x) = 16xy$$</p>\n<p><strong>Answer: D　$16xy$</strong></p>",
-      "file": "2012_P2_解答_EN.md"
+      "file": "2012_P2_solutions_EN.md"
     },
     {
       "subject": "數學",
@@ -27232,7 +27232,7 @@ window.QB = {
       ],
       "text": "If $p$ and $q$ are constants such that $x^2+p \\equiv (x+2)(x+q)+10$, find $p$.\n\n$$(x+2)(x+q)+10 = x^2+(q+2)x+2q+10$$\n\nCompare coefficients of $x$ (LHS has no $x$ term):\n\n$$q+2 = 0 \\;\\Rightarrow\\; q=-2$$\n\nCompare constant terms:\n\n$$p = 2q+10 = 2(-2)+10 = 6$$\n\n**Answer: C　$p=6$**",
       "html": "<p>If $p$ and $q$ are constants such that $x^2+p \\equiv (x+2)(x+q)+10$, find $p$.</p>\n<p>$$(x+2)(x+q)+10 = x^2+(q+2)x+2q+10$$</p>\n<p>Compare coefficients of $x$ (LHS has no $x$ term):</p>\n<p>$$q+2 = 0 \\;\\Rightarrow\\; q=-2$$</p>\n<p>Compare constant terms:</p>\n<p>$$p = 2q+10 = 2(-2)+10 = 6$$</p>\n<p><strong>Answer: C　$p=6$</strong></p>",
-      "file": "2012_P2_解答_EN.md"
+      "file": "2012_P2_solutions_EN.md"
     },
     {
       "subject": "數學",
@@ -27247,7 +27247,7 @@ window.QB = {
       ],
       "text": "Given that \\(x^3 + 4x^2 + kx - 12\\) is divisible by \\(x + 3\\), find the value of \\(k\\).\n\nBy the factor theorem, \\(f(-3) = 0\\).\n\n\\[\n(-3)^3 + 4(-3)^2 - 3k - 12 = 0\n\\]\n\n\\[\n-27 + 36 - 3k - 12 = 0 \\;\\Rightarrow\\; -3 - 3k = 0 \\;\\Rightarrow\\; k = -1\n\\]\n\n**Answer: B　\\(k = -1\\)**",
       "html": "<p>Given that (x^3 + 4x^2 + kx - 12) is divisible by (x + 3), find the value of (k).</p>\n<p>By the factor theorem, (f(-3) = 0).</p>\n<p>[\n(-3)^3 + 4(-3)^2 - 3k - 12 = 0\n]</p>\n<p>[\n-27 + 36 - 3k - 12 = 0 \\;\\Rightarrow\\; -3 - 3k = 0 \\;\\Rightarrow\\; k = -1\n]</p>\n<p><strong>Answer: B　(k = -1)</strong></p>",
-      "file": "2012_P2_解答_EN.md"
+      "file": "2012_P2_solutions_EN.md"
     },
     {
       "subject": "數學",
@@ -27262,7 +27262,7 @@ window.QB = {
       ],
       "text": "Let $m+2n+6 = 2m-n = 7$, solve for $n$.\n\nSeparate into two equations:\n\n$$m+2n = 1 \\quad (1)$$\n$$2m-n = 7 \\quad (2)$$\n\n$(1)\\times 2 - (2)$:\n\n$$5n = -5 \\;\\Rightarrow\\; n=-1$$\n\n**Answer: B　$n=-1$**",
       "html": "<p>Let $m+2n+6 = 2m-n = 7$, solve for $n$.</p>\n<p>Separate into two equations:</p>\n<p>$$m+2n = 1 \\quad (1)$$\n$$2m-n = 7 \\quad (2)$$</p>\n<p>$(1)\\times 2 - (2)$:</p>\n<p>$$5n = -5 \\;\\Rightarrow\\; n=-1$$</p>\n<p><strong>Answer: B　$n=-1$</strong></p>",
-      "file": "2012_P2_解答_EN.md"
+      "file": "2012_P2_solutions_EN.md"
     },
     {
       "subject": "數學",
@@ -27277,7 +27277,7 @@ window.QB = {
       ],
       "text": "**Stem:** The graph of the quadratic function \\( y = a(x+b)^2 \\) opens downwards and its vertex is located on the positive \\( x \\)-axis.\n\n**Solution:**\n\nThe graph opens downwards, so \\( a < 0 \\).\n\nThe vertex is located at \\( x = -b \\), and it is on the positive \\( x \\)-axis, so \\( -b > 0 \\Rightarrow b < 0 \\).\n\n**Answer: D　\\( a < 0 \\) and \\( b < 0 \\)**",
       "html": "<p><strong>Stem:</strong> The graph of the quadratic function ( y = a(x+b)^2 ) opens downwards and its vertex is located on the positive ( x )-axis.</p>\n<p><strong>Solution:</strong></p>\n<p>The graph opens downwards, so ( a &lt; 0 ).</p>\n<p>The vertex is located at ( x = -b ), and it is on the positive ( x )-axis, so ( -b &gt; 0 \\Rightarrow b &lt; 0 ).</p>\n<p><strong>Answer: D　( a &lt; 0 ) and ( b &lt; 0 )</strong></p>",
-      "file": "2012_P2_解答_EN.md"
+      "file": "2012_P2_solutions_EN.md"
     },
     {
       "subject": "數學",
@@ -27292,7 +27292,7 @@ window.QB = {
       ],
       "text": "Solve the compound inequality \\(15 + 4x < 3\\) or \\(9 - 2x > 1\\).\n\nFor the first inequality:\n\\[15 + 4x < 3 \\implies 4x < -12 \\implies x < -3\\]\n\nFor the second inequality:\n\\[9 - 2x > 1 \\implies -2x > -8 \\implies x < 4\\]\n\nThe \"or\" operation means we take the union of the two sets, which is:\n\\[x < 4\\]\n\n**Answer: C　$x < 4$**",
       "html": "<p>Solve the compound inequality (15 + 4x &lt; 3) or (9 - 2x &gt; 1).</p>\n<p>For the first inequality:\n[15 + 4x &lt; 3 \\implies 4x &lt; -12 \\implies x &lt; -3]</p>\n<p>For the second inequality:\n[9 - 2x &gt; 1 \\implies -2x &gt; -8 \\implies x &lt; 4]</p>\n<p>The \"or\" operation means we take the union of the two sets, which is:\n[x &lt; 4]</p>\n<p><strong>Answer: C　$x &lt; 4$</strong></p>",
-      "file": "2012_P2_解答_EN.md"
+      "file": "2012_P2_solutions_EN.md"
     },
     {
       "subject": "數學",
@@ -27307,7 +27307,7 @@ window.QB = {
       ],
       "text": "In a company, 37.5% of the employees are women (i.e., 3/8, and men 5/8). 60% of the men and 80% of the women are married. What is the percentage of married employees?\n\n$$\\frac{5}{8}\\times 60\\% + \\frac{3}{8}\\times 80\\% = 37.5\\% + 30\\% = 67.5\\%$$\n\n**Answer: D　67.5%**",
       "html": "<p>In a company, 37.5% of the employees are women (i.e., 3/8, and men 5/8). 60% of the men and 80% of the women are married. What is the percentage of married employees?</p>\n<p>$$\\frac{5}{8}\\times 60\\% + \\frac{3}{8}\\times 80\\% = 37.5\\% + 30\\% = 67.5\\%$$</p>\n<p><strong>Answer: D　67.5%</strong></p>",
-      "file": "2012_P2_解答_EN.md"
+      "file": "2012_P2_solutions_EN.md"
     },
     {
       "subject": "數學",
@@ -27322,7 +27322,7 @@ window.QB = {
       ],
       "text": "Given that \\(x\\) and \\(y\\) are non-zero numbers and \\(\\dfrac{6x+5y}{3y-2x}=7\\), find the ratio \\(x:y\\).\n\n\\[\n6x + 5y = 7(3y - 2x)\n\\]\n\n\\[\n6x + 5y = 21y - 14x \\;\\Rightarrow\\; 20x = 16y \\;\\Rightarrow\\; x:y = 4:5\n\\]\n\n**Answer: A　$4:5$**",
       "html": "<p>Given that (x) and (y) are non-zero numbers and (\\dfrac{6x+5y}{3y-2x}=7), find the ratio (x:y).</p>\n<p>[\n6x + 5y = 7(3y - 2x)\n]</p>\n<p>[\n6x + 5y = 21y - 14x \\;\\Rightarrow\\; 20x = 16y \\;\\Rightarrow\\; x:y = 4:5\n]</p>\n<p><strong>Answer: A　$4:5$</strong></p>",
-      "file": "2012_P2_解答_EN.md"
+      "file": "2012_P2_solutions_EN.md"
     },
     {
       "subject": "數學",
@@ -27337,7 +27337,7 @@ window.QB = {
       ],
       "text": "$y$ varies directly with $x^2$ and inversely with $x$ (partially varies). When $x=1$, $y=-4$; when $x=2$, $y=5$. Find $y$ when $x=-2$.\n\nLet $y = k_1 x^2 + \\dfrac{k_2}{x}$:\n\n$$k_1 + k_2 = -4 \\quad (1)$$\n$$4k_1 + \\frac{k_2}{2} = 5 \\;\\Rightarrow\\; 8k_1 + k_2 = 10 \\quad (2)$$\n\n$(2)-(1)$: $7k_1 = 14 \\Rightarrow k_1=2,\\ k_2=-6$\n\n$$x=-2:\\quad y = 2(-2)^2 + \\frac{-6}{-2} = 8 + 3 = 11$$\n\n**Answer: D　$y=11$**",
       "html": "<p>$y$ varies directly with $x^2$ and inversely with $x$ (partially varies). When $x=1$, $y=-4$; when $x=2$, $y=5$. Find $y$ when $x=-2$.</p>\n<p>Let $y = k_1 x^2 + \\dfrac{k_2}{x}$:</p>\n<p>$$k_1 + k_2 = -4 \\quad (1)$$\n$$4k_1 + \\frac{k_2}{2} = 5 \\;\\Rightarrow\\; 8k_1 + k_2 = 10 \\quad (2)$$</p>\n<p>$(2)-(1)$: $7k_1 = 14 \\Rightarrow k_1=2,\\ k_2=-6$</p>\n<p>$$x=-2:\\quad y = 2(-2)^2 + \\frac{-6}{-2} = 8 + 3 = 11$$</p>\n<p><strong>Answer: D　$y=11$</strong></p>",
-      "file": "2012_P2_解答_EN.md"
+      "file": "2012_P2_solutions_EN.md"
     },
     {
       "subject": "數學",
@@ -27352,7 +27352,7 @@ window.QB = {
       ],
       "text": "**Stem:** Mary types for 7 hours: the first 3 hours at an average of 63 words per minute, and the next 4 hours at an average of 56 words per minute. Find her average speed over the entire period.\n\n**Trap:** Do not directly average the two rates $(63+56)/2$. Instead, use the total number of words divided by the total time.\n\n$$\\text{Average} = \\frac{3 \\times 63 \\times 60 + 4 \\times 56 \\times 60}{7 \\times 60} = \\frac{189 + 224}{7} = \\frac{413}{7} = 59 \\text{ words per minute}$$\n\n**Answer: C　59 words per minute**",
       "html": "<p><strong>Stem:</strong> Mary types for 7 hours: the first 3 hours at an average of 63 words per minute, and the next 4 hours at an average of 56 words per minute. Find her average speed over the entire period.</p>\n<p><strong>Trap:</strong> Do not directly average the two rates $(63+56)/2$. Instead, use the total number of words divided by the total time.</p>\n<p>$$\\text{Average} = \\frac{3 \\times 63 \\times 60 + 4 \\times 56 \\times 60}{7 \\times 60} = \\frac{189 + 224}{7} = \\frac{413}{7} = 59 \\text{ words per minute}$$</p>\n<p><strong>Answer: C　59 words per minute</strong></p>",
-      "file": "2012_P2_解答_EN.md"
+      "file": "2012_P2_solutions_EN.md"
     },
     {
       "subject": "數學",
@@ -27367,7 +27367,7 @@ window.QB = {
       ],
       "text": "The first pattern has 1 point; each subsequent pattern has $n$ more points than the previous one. Find the number of points in the 8th pattern.\n\nSumming up: $1, 2, 4, 7, 11, 16, 22, 29$\n\n(General term: $\\frac{n(n-1)}{2} + 1$; when $n=8$, $28+1=29$.)\n\n**Answer: B　29**",
       "html": "<p>The first pattern has 1 point; each subsequent pattern has $n$ more points than the previous one. Find the number of points in the 8th pattern.</p>\n<p>Summing up: $1, 2, 4, 7, 11, 16, 22, 29$</p>\n<p>(General term: $\\frac{n(n-1)}{2} + 1$; when $n=8$, $28+1=29$.)</p>\n<p><strong>Answer: B　29</strong></p>",
-      "file": "2012_P2_解答_EN.md"
+      "file": "2012_P2_solutions_EN.md"
     },
     {
       "subject": "數學",
@@ -27382,7 +27382,7 @@ window.QB = {
       ],
       "text": "Determine which rounding statement is correct for $0.0322515$.\n\n- 3 significant figures: $0.0322515 \\to 0.0323$ (A incorrect)\n- 4 decimal places: $0.0322|515 \\to 0.0323$ (B incorrect)\n- 5 significant figures: $0.03225|15 \\to 0.032252$ (C incorrect: $0.03225$ has only 4 significant figures)\n- 6 decimal places: $0.032251|5 \\to 0.032252$ (D correct)\n\n**Answer: D**",
       "html": "<p>Determine which rounding statement is correct for $0.0322515$.</p>\n<ul>\n<li>3 significant figures: $0.0322515 \\to 0.0323$ (A incorrect)</li>\n<li>4 decimal places: $0.0322|515 \\to 0.0323$ (B incorrect)</li>\n<li>5 significant figures: $0.03225|15 \\to 0.032252$ (C incorrect: $0.03225$ has only 4 significant figures)</li>\n<li>6 decimal places: $0.032251|5 \\to 0.032252$ (D correct)</li>\n</ul>\n<p><strong>Answer: D</strong></p>",
-      "file": "2012_P2_解答_EN.md"
+      "file": "2012_P2_solutions_EN.md"
     },
     {
       "subject": "數學",
@@ -27397,7 +27397,7 @@ window.QB = {
       ],
       "text": "The length of the rope is measured as 25 m (accurate to the nearest meter), and it is cut into $n$ segments, with each segment measured as 5 cm (accurate to the nearest centimeter). Find the maximum possible value of $n$.\n\nConvert all units to centimeters:\n\n$$2450 \\le L < 2550, \\qquad 4.5 \\le \\ell < 5.5$$\n\nThe maximum value of $n$ is obtained by dividing the total length upper limit by the segment lower limit:\n\n$$n < \\frac{2550}{4.5} = 566.\\dot{6} \\;\\Rightarrow\\; n_{\\max} = 566$$\n\n(Verification: $567 \\times 4.5 = 2551.5 > 2550$, which is not possible.)\n\n**Answer: B　566**",
       "html": "<p>The length of the rope is measured as 25 m (accurate to the nearest meter), and it is cut into $n$ segments, with each segment measured as 5 cm (accurate to the nearest centimeter). Find the maximum possible value of $n$.</p>\n<p>Convert all units to centimeters:</p>\n<p>$$2450 \\le L &lt; 2550, \\qquad 4.5 \\le \\ell &lt; 5.5$$</p>\n<p>The maximum value of $n$ is obtained by dividing the total length upper limit by the segment lower limit:</p>\n<p>$$n &lt; \\frac{2550}{4.5} = 566.\\dot{6} \\;\\Rightarrow\\; n_{\\max} = 566$$</p>\n<p>(Verification: $567 \\times 4.5 = 2551.5 &gt; 2550$, which is not possible.)</p>\n<p><strong>Answer: B　566</strong></p>",
-      "file": "2012_P2_解答_EN.md"
+      "file": "2012_P2_solutions_EN.md"
     },
     {
       "subject": "數學",
@@ -27412,7 +27412,7 @@ window.QB = {
       ],
       "text": "> Figure: Quadrilateral $ABCD$, $\\angle A = 90^\\circ$; $BC=26$ cm; $\\angle ADC=90^\\circ$, $CD=6$ cm, $AD=8$ cm.\n\n$\\triangle ACD$ (right at $D$):\n\n$$AC = \\sqrt{6^2+8^2} = \\sqrt{100} = 10$$\n\n$\\triangle ABC$ (right at $A$, hypotenuse $BC=26$):\n\n$$AB = \\sqrt{26^2-10^2} = \\sqrt{576} = 24$$\n\n$$\\text{Area} = \\frac12(24)(10) + \\frac12(6)(8) = 120+24 = 144\\text{ cm}^2$$\n\n**Answer: A　144 cm²**",
       "html": "<blockquote>\n<p>Figure: Quadrilateral $ABCD$, $\\angle A = 90^\\circ$; $BC=26$ cm; $\\angle ADC=90^\\circ$, $CD=6$ cm, $AD=8$ cm.</p>\n</blockquote>\n<p>$\\triangle ACD$ (right at $D$):</p>\n<p>$$AC = \\sqrt{6^2+8^2} = \\sqrt{100} = 10$$</p>\n<p>$\\triangle ABC$ (right at $A$, hypotenuse $BC=26$):</p>\n<p>$$AB = \\sqrt{26^2-10^2} = \\sqrt{576} = 24$$</p>\n<p>$$\\text{Area} = \\frac12(24)(10) + \\frac12(6)(8) = 120+24 = 144\\text{ cm}^2$$</p>\n<p><strong>Answer: A　144 cm²</strong></p>",
-      "file": "2012_P2_解答_EN.md"
+      "file": "2012_P2_solutions_EN.md"
     },
     {
       "subject": "數學",
@@ -27427,7 +27427,7 @@ window.QB = {
       ],
       "text": "**Stem:** In the diagram, $OAB$ and $OCD$ are two sectors with the same center and the same central angle. The arc length $\\overset{\\frown}{AB} = 12\\pi$ cm and $\\overset{\\frown}{CD} = 16\\pi$ cm, and $OA = 30$ cm.\n\nThe arc length is directly proportional to the radius:\n\n$$\\frac{OC}{OA} = \\frac{16\\pi}{12\\pi} \\;\\Rightarrow\\; OC = 30 \\times \\frac{16}{12} = 40$$\n\n$$AC = OC - OA = 40 - 30 = 10 \\text{ cm}$$\n\n**Answer: B　10 cm**",
       "html": "<p><strong>Stem:</strong> In the diagram, $OAB$ and $OCD$ are two sectors with the same center and the same central angle. The arc length $\\overset{\\frown}{AB} = 12\\pi$ cm and $\\overset{\\frown}{CD} = 16\\pi$ cm, and $OA = 30$ cm.</p>\n<p>The arc length is directly proportional to the radius:</p>\n<p>$$\\frac{OC}{OA} = \\frac{16\\pi}{12\\pi} \\;\\Rightarrow\\; OC = 30 \\times \\frac{16}{12} = 40$$</p>\n<p>$$AC = OC - OA = 40 - 30 = 10 \\text{ cm}$$</p>\n<p><strong>Answer: B　10 cm</strong></p>",
-      "file": "2012_P2_解答_EN.md"
+      "file": "2012_P2_solutions_EN.md"
     },
     {
       "subject": "數學",
@@ -27442,7 +27442,7 @@ window.QB = {
       ],
       "text": "**Stem:** In parallelogram $ABCD$, $E$ is on $AB$ and $F$ is on $CD$. The extension of $AD$ intersects the extension of $EF$ at $G$. Given $DF:FC=3:4$ and $AD:DG=1:1$, the area of $\\triangle DFG$ is $3$ cm².\n\n**Solution:**\n\nKey: $\\triangle DFG$ has $DF$ as its base and is of the same height as the parallelogram $ABCD$ (between the same pair of parallel lines). Let this height be $h$.\n\nSince $DF:FC = 3:4$, we have $DF = \\dfrac{3}{7}DC$.\n\n$$[\\triangle DFG] = \\frac{1}{2} \\times \\frac{3}{7}DC \\times h = 3 \\;\\Rightarrow\\; DC \\cdot h = 14$$\n\n$$[ABCD] = DC \\times h = 14 \\text{ cm}^2$$\n\n**Answer: B　14 cm²**",
       "html": "<p><strong>Stem:</strong> In parallelogram $ABCD$, $E$ is on $AB$ and $F$ is on $CD$. The extension of $AD$ intersects the extension of $EF$ at $G$. Given $DF:FC=3:4$ and $AD:DG=1:1$, the area of $\\triangle DFG$ is $3$ cm².</p>\n<p><strong>Solution:</strong></p>\n<p>Key: $\\triangle DFG$ has $DF$ as its base and is of the same height as the parallelogram $ABCD$ (between the same pair of parallel lines). Let this height be $h$.</p>\n<p>Since $DF:FC = 3:4$, we have $DF = \\dfrac{3}{7}DC$.</p>\n<p>$$[\\triangle DFG] = \\frac{1}{2} \\times \\frac{3}{7}DC \\times h = 3 \\;\\Rightarrow\\; DC \\cdot h = 14$$</p>\n<p>$$[ABCD] = DC \\times h = 14 \\text{ cm}^2$$</p>\n<p><strong>Answer: B　14 cm²</strong></p>",
-      "file": "2012_P2_解答_EN.md"
+      "file": "2012_P2_solutions_EN.md"
     },
     {
       "subject": "數學",
@@ -27457,7 +27457,7 @@ window.QB = {
       ],
       "text": "**Stem:** In the diagram, \\(D\\) is on \\(AC\\), \\(BD \\perp AC\\); \\(\\angle BCD = \\alpha\\) and \\(\\angle DBA = \\beta\\); \\(BC = \\ell\\).\n\n**Solution:**\n\nIn \\(\\triangle BDC\\) (right-angled at \\(D\\)):\n\n\\[ BD = \\ell \\sin \\alpha \\]\n\nIn \\(\\triangle BDA\\) (right-angled at \\(D\\), \\(\\beta\\) is the angle between \\(BD\\) and \\(AB\\)):\n\n\\[ \\cos \\beta = \\frac{BD}{AB} \\]\n\n\\[ \\therefore AB = \\frac{BD}{\\cos \\beta} = \\frac{\\ell \\sin \\alpha}{\\cos \\beta} \\]\n\n**Answer: A \\(\\dfrac{\\ell \\sin \\alpha}{\\cos \\beta}\\)**",
       "html": "<p><strong>Stem:</strong> In the diagram, (D) is on (AC), (BD \\perp AC); (\\angle BCD = \\alpha) and (\\angle DBA = \\beta); (BC = \\ell).</p>\n<p><strong>Solution:</strong></p>\n<p>In (\\triangle BDC) (right-angled at (D)):</p>\n<p>[ BD = \\ell \\sin \\alpha ]</p>\n<p>In (\\triangle BDA) (right-angled at (D), (\\beta) is the angle between (BD) and (AB)):</p>\n<p>[ \\cos \\beta = \\frac{BD}{AB} ]</p>\n<p>[ \\therefore AB = \\frac{BD}{\\cos \\beta} = \\frac{\\ell \\sin \\alpha}{\\cos \\beta} ]</p>\n<p><strong>Answer: A (\\dfrac{\\ell \\sin \\alpha}{\\cos \\beta})</strong></p>",
-      "file": "2012_P2_解答_EN.md"
+      "file": "2012_P2_solutions_EN.md"
     },
     {
       "subject": "數學",
@@ -27472,7 +27472,7 @@ window.QB = {
       ],
       "text": "$$\\frac{\\cos 60^\\circ}{1-\\cos(90^\\circ-\\theta)}+\\frac{\\cos 240^\\circ}{1-\\cos(270^\\circ-\\theta)}$$\n\nFirst, use the special angle identities and trigonometric identities:\n\n$$\\cos 60^\\circ = \\frac{1}{2},\\quad \\cos 240^\\circ = -\\frac{1}{2},\\quad \\cos(90^\\circ-\\theta) = \\sin\\theta,\\quad \\cos(270^\\circ-\\theta) = -\\sin\\theta$$\n\nSubstitute these into the expression:\n\n$$\\frac{\\frac{1}{2}}{1-\\sin\\theta} - \\frac{\\frac{1}{2}}{1+\\sin\\theta} = \\frac{1}{2} \\cdot \\frac{(1+\\sin\\theta)-(1-\\sin\\theta)}{1-\\sin^2\\theta} = \\frac{\\sin\\theta}{\\cos^2\\theta}$$\n\n$$= \\frac{\\sin\\theta}{\\cos\\theta} \\cdot \\frac{1}{\\cos\\theta} = \\frac{\\tan\\theta}{\\cos\\theta}$$\n\n**Answer: C　$\\dfrac{\\tan\\theta}{\\cos\\theta}$**",
       "html": "<p>$$\\frac{\\cos 60^\\circ}{1-\\cos(90^\\circ-\\theta)}+\\frac{\\cos 240^\\circ}{1-\\cos(270^\\circ-\\theta)}$$</p>\n<p>First, use the special angle identities and trigonometric identities:</p>\n<p>$$\\cos 60^\\circ = \\frac{1}{2},\\quad \\cos 240^\\circ = -\\frac{1}{2},\\quad \\cos(90^\\circ-\\theta) = \\sin\\theta,\\quad \\cos(270^\\circ-\\theta) = -\\sin\\theta$$</p>\n<p>Substitute these into the expression:</p>\n<p>$$\\frac{\\frac{1}{2}}{1-\\sin\\theta} - \\frac{\\frac{1}{2}}{1+\\sin\\theta} = \\frac{1}{2} \\cdot \\frac{(1+\\sin\\theta)-(1-\\sin\\theta)}{1-\\sin^2\\theta} = \\frac{\\sin\\theta}{\\cos^2\\theta}$$</p>\n<p>$$= \\frac{\\sin\\theta}{\\cos\\theta} \\cdot \\frac{1}{\\cos\\theta} = \\frac{\\tan\\theta}{\\cos\\theta}$$</p>\n<p><strong>Answer: C　$\\dfrac{\\tan\\theta}{\\cos\\theta}$</strong></p>",
-      "file": "2012_P2_解答_EN.md"
+      "file": "2012_P2_solutions_EN.md"
     },
     {
       "subject": "數學",
@@ -27487,7 +27487,7 @@ window.QB = {
       ],
       "text": "1. $OA = OB$ (radius) → $\\angle ABO = \\angle BAO = 28^\\circ$ (base angles of isosceles triangle)\n2. $OD = OC$ → $\\angle OCD = \\angle CDO = 42^\\circ$\n3. $\\angle BAD = 180^\\circ - \\angle BCD = 66^\\circ$ (opposite angles of cyclic quadrilateral)\n4. $\\angle DAO = 66^\\circ - 28^\\circ = 38^\\circ$, and $\\angle ADO = \\angle DAO = 38^\\circ$ (base angles of isosceles triangle)\n5. $\\angle ADC = 38^\\circ + 42^\\circ = 80^\\circ$\n6. $\\angle ABC = 180^\\circ - \\angle ADC = 100^\\circ$ (opposite angles of cyclic quadrilateral)\n\n**Answer: C　$100^\\circ$**",
       "html": "<ol>\n<li>$OA = OB$ (radius) → $\\angle ABO = \\angle BAO = 28^\\circ$ (base angles of isosceles triangle)</li>\n<li>$OD = OC$ → $\\angle OCD = \\angle CDO = 42^\\circ$</li>\n<li>$\\angle BAD = 180^\\circ - \\angle BCD = 66^\\circ$ (opposite angles of cyclic quadrilateral)</li>\n<li>$\\angle DAO = 66^\\circ - 28^\\circ = 38^\\circ$, and $\\angle ADO = \\angle DAO = 38^\\circ$ (base angles of isosceles triangle)</li>\n<li>$\\angle ADC = 38^\\circ + 42^\\circ = 80^\\circ$</li>\n<li>$\\angle ABC = 180^\\circ - \\angle ADC = 100^\\circ$ (opposite angles of cyclic quadrilateral)</li>\n</ol>\n<p><strong>Answer: C　$100^\\circ$</strong></p>",
-      "file": "2012_P2_解答_EN.md"
+      "file": "2012_P2_solutions_EN.md"
     },
     {
       "subject": "數學",
@@ -27502,7 +27502,7 @@ window.QB = {
       ],
       "text": "**Stem:** In the diagram, $AB$ is the diameter ($AB=12$ cm, $r=6$), and $CD \\parallel AB$ ($CD=6$ cm). The shaded region is the area between the chord $AB$ and the chord $CD$, bounded by the arcs $AD$ and $CB$.\n\n**Solution:**\n\nSince $CD = r = 6$, $\\triangle OCD$ is an equilateral triangle. Therefore, the central angle $\\angle COD = 60^\\circ$.\n\nThe area of the segment below $CD$:\n\n\\[\n\\frac{60}{360}\\pi(6)^2 - \\frac{1}{2}(6)(6)\\sin 60^\\circ = 6\\pi - 9\\sqrt{3}\n\\]\n\nThe shaded area is the area of the semicircle minus the area of the segment below $CD$:\n\n\\[\n18\\pi - (6\\pi - 9\\sqrt{3}) = 12\\pi + 9\\sqrt{3} \\ \\text{cm}^2\n\\]\n\n**Answer: D　$(12\\pi+9\\sqrt{3})$ cm²**",
       "html": "<p><strong>Stem:</strong> In the diagram, $AB$ is the diameter ($AB=12$ cm, $r=6$), and $CD \\parallel AB$ ($CD=6$ cm). The shaded region is the area between the chord $AB$ and the chord $CD$, bounded by the arcs $AD$ and $CB$.</p>\n<p><strong>Solution:</strong></p>\n<p>Since $CD = r = 6$, $\\triangle OCD$ is an equilateral triangle. Therefore, the central angle $\\angle COD = 60^\\circ$.</p>\n<p>The area of the segment below $CD$:</p>\n<p>[\n\\frac{60}{360}\\pi(6)^2 - \\frac{1}{2}(6)(6)\\sin 60^\\circ = 6\\pi - 9\\sqrt{3}\n]</p>\n<p>The shaded area is the area of the semicircle minus the area of the segment below $CD$:</p>\n<p>[\n18\\pi - (6\\pi - 9\\sqrt{3}) = 12\\pi + 9\\sqrt{3} \\ \\text{cm}^2\n]</p>\n<p><strong>Answer: D　$(12\\pi+9\\sqrt{3})$ cm²</strong></p>",
-      "file": "2012_P2_解答_EN.md"
+      "file": "2012_P2_solutions_EN.md"
     },
     {
       "subject": "數學",
@@ -27517,7 +27517,7 @@ window.QB = {
       ],
       "text": "### Question Q22\n**English Title:** Regular Polygon Properties\n**Correct Answer Letter:** A\n\n**Solution:**\n\nFor a regular 12-sided polygon (dodecagon):\n\n- **Step 1:** Calculate the exterior angle.\n  \\[\n  \\text{Exterior angle} = \\frac{360^\\circ}{12} = 30^\\circ\n  \\]\n  **(I) Correct**\n\n- **Step 2:** Calculate the interior angle.\n  \\[\n  \\text{Interior angle} = 180^\\circ - 30^\\circ = 150^\\circ\n  \\]\n  **(II) Correct**\n\n- **Step 3:** Determine the number of lines of symmetry.\n  \\[\n  \\text{Number of lines of symmetry} = \\text{Number of sides} = 12\n  \\]\n  This is not 6, so it is incorrect.\n  **(III) Incorrect**\n\n**Answer: A　I and II only**",
       "html": "<h3>Question Q22</h3>\n<p><strong>English Title:</strong> Regular Polygon Properties\n<strong>Correct Answer Letter:</strong> A</p>\n<p><strong>Solution:</strong></p>\n<p>For a regular 12-sided polygon (dodecagon):</p>\n<ul>\n<li>\n<p><strong>Step 1:</strong> Calculate the exterior angle.\n  [\n  \\text{Exterior angle} = \\frac{360^\\circ}{12} = 30^\\circ\n  ]\n  <strong>(I) Correct</strong></p>\n</li>\n<li>\n<p><strong>Step 2:</strong> Calculate the interior angle.\n  [\n  \\text{Interior angle} = 180^\\circ - 30^\\circ = 150^\\circ\n  ]\n  <strong>(II) Correct</strong></p>\n</li>\n<li>\n<p><strong>Step 3:</strong> Determine the number of lines of symmetry.\n  [\n  \\text{Number of lines of symmetry} = \\text{Number of sides} = 12\n  ]\n  This is not 6, so it is incorrect.\n  <strong>(III) Incorrect</strong></p>\n</li>\n</ul>\n<p><strong>Answer: A　I and II only</strong></p>",
-      "file": "2012_P2_解答_EN.md"
+      "file": "2012_P2_solutions_EN.md"
     },
     {
       "subject": "數學",
@@ -27532,7 +27532,7 @@ window.QB = {
       ],
       "text": "**Stem:** Point \\( P(-3, -3\\sqrt{3}) \\) is rotated 90 degrees counterclockwise about the origin. Find the polar coordinates of the image.\n\n**Solution:**\n\nFirst, calculate the distance \\( OP \\) from the origin to point \\( P \\):\n\n\\[\nOP = \\sqrt{(-3)^2 + (-3\\sqrt{3})^2} = \\sqrt{9 + 27} = 6\n\\]\n\nPoint \\( P \\) is in the third quadrant. The reference angle for \\( P \\) is:\n\n\\[\n\\tan^{-1}\\left(\\frac{-3\\sqrt{3}}{-3}\\right) = 60^\\circ\n\\]\n\nSince \\( P \\) is in the third quadrant, the polar angle \\( \\theta \\) is:\n\n\\[\n\\theta = 180^\\circ + 60^\\circ = 240^\\circ\n\\]\n\nAfter rotating 90 degrees counterclockwise, the new polar angle \\( \\theta' \\) is:\n\n\\[\n\\theta' = 240^\\circ + 90^\\circ = 330^\\circ\n\\]\n\nThe length \\( OP \\) remains unchanged.\n\n**Answer: D \\((6, 330^\\circ)\\)**",
       "html": "<p><strong>Stem:</strong> Point ( P(-3, -3\\sqrt{3}) ) is rotated 90 degrees counterclockwise about the origin. Find the polar coordinates of the image.</p>\n<p><strong>Solution:</strong></p>\n<p>First, calculate the distance ( OP ) from the origin to point ( P ):</p>\n<p>[\nOP = \\sqrt{(-3)^2 + (-3\\sqrt{3})^2} = \\sqrt{9 + 27} = 6\n]</p>\n<p>Point ( P ) is in the third quadrant. The reference angle for ( P ) is:</p>\n<p>[\n\\tan^{-1}\\left(\\frac{-3\\sqrt{3}}{-3}\\right) = 60^\\circ\n]</p>\n<p>Since ( P ) is in the third quadrant, the polar angle ( \\theta ) is:</p>\n<p>[\n\\theta = 180^\\circ + 60^\\circ = 240^\\circ\n]</p>\n<p>After rotating 90 degrees counterclockwise, the new polar angle ( \\theta' ) is:</p>\n<p>[\n\\theta' = 240^\\circ + 90^\\circ = 330^\\circ\n]</p>\n<p>The length ( OP ) remains unchanged.</p>\n<p><strong>Answer: D ((6, 330^\\circ))</strong></p>",
-      "file": "2012_P2_解答_EN.md"
+      "file": "2012_P2_solutions_EN.md"
     },
     {
       "subject": "數學",
@@ -27547,7 +27547,7 @@ window.QB = {
       ],
       "text": "The point \\( P \\) is always 5 units away from the fixed point \\((20, 12)\\).\n\nThe locus of points equidistant from a fixed point is a circle.\n\n**Answer: A　circle**",
       "html": "<p>The point ( P ) is always 5 units away from the fixed point ((20, 12)).</p>\n<p>The locus of points equidistant from a fixed point is a circle.</p>\n<p><strong>Answer: A　circle</strong></p>",
-      "file": "2012_P2_解答_EN.md"
+      "file": "2012_P2_solutions_EN.md"
     },
     {
       "subject": "數學",
@@ -27562,7 +27562,7 @@ window.QB = {
       ],
       "text": "**Stem:** The graph of $L_1: ax + y = b$ slopes from the lower left to the upper right, and its y-intercept is positive. The graph of $L_2: cx + y = d$ is steeper and its x-intercept is on the positive x-axis (i.e., its y-intercept $d < 0$).\n\nRewrite in slope-intercept form: $L_1: y = -ax + b$ and $L_2: y = -cx + d$.\n\n- I: $L_1$ slopes upwards → $-a > 0 \\Rightarrow a < 0$ ✔\n- II: $L_2$ is steeper → $-c > -a \\Rightarrow c < a$, so $a < c$ is incorrect ✘\n- III: $b > 0 > d$ ✔\n- IV: $a < 0, d < 0 \\Rightarrow ad > 0$; $b > 0, c < 0 \\Rightarrow bc < 0$ → $ad > bc$ ✔\n\n**Answer: C　I, III and IV only**",
       "html": "<p><strong>Stem:</strong> The graph of $L_1: ax + y = b$ slopes from the lower left to the upper right, and its y-intercept is positive. The graph of $L_2: cx + y = d$ is steeper and its x-intercept is on the positive x-axis (i.e., its y-intercept $d &lt; 0$).</p>\n<p>Rewrite in slope-intercept form: $L_1: y = -ax + b$ and $L_2: y = -cx + d$.</p>\n<ul>\n<li>I: $L_1$ slopes upwards → $-a &gt; 0 \\Rightarrow a &lt; 0$ ✔</li>\n<li>II: $L_2$ is steeper → $-c &gt; -a \\Rightarrow c &lt; a$, so $a &lt; c$ is incorrect ✘</li>\n<li>III: $b &gt; 0 &gt; d$ ✔</li>\n<li>IV: $a &lt; 0, d &lt; 0 \\Rightarrow ad &gt; 0$; $b &gt; 0, c &lt; 0 \\Rightarrow bc &lt; 0$ → $ad &gt; bc$ ✔</li>\n</ul>\n<p><strong>Answer: C　I, III and IV only</strong></p>",
-      "file": "2012_P2_解答_EN.md"
+      "file": "2012_P2_solutions_EN.md"
     },
     {
       "subject": "數學",
@@ -27577,7 +27577,7 @@ window.QB = {
       ],
       "text": "**Stem:** The circle has its center at $(h, k)$ in the second quadrant, passes through the $y$-axis, but does not touch the $x$-axis (the entire circle is above the $x$-axis).\n\n**Solution:**\n\nThe circle passes through the $y$-axis → $r > -h$; the circle does not touch the $x$-axis → $k - r > 0$, which means $r < k$.\n\nCombining these, we get: $-h < r < k$\n\n- I: $-h < k \\Rightarrow h + k > 0$ ✔\n- II: $r > h$ (or $r > 0 > h$) → $r - h > 0$ ✔\n- III: $r < k$ → $r - k > 0$ ✘\n\n**Answer: A　I and II only**",
       "html": "<p><strong>Stem:</strong> The circle has its center at $(h, k)$ in the second quadrant, passes through the $y$-axis, but does not touch the $x$-axis (the entire circle is above the $x$-axis).</p>\n<p><strong>Solution:</strong></p>\n<p>The circle passes through the $y$-axis → $r &gt; -h$; the circle does not touch the $x$-axis → $k - r &gt; 0$, which means $r &lt; k$.</p>\n<p>Combining these, we get: $-h &lt; r &lt; k$</p>\n<ul>\n<li>I: $-h &lt; k \\Rightarrow h + k &gt; 0$ ✔</li>\n<li>II: $r &gt; h$ (or $r &gt; 0 &gt; h$) → $r - h &gt; 0$ ✔</li>\n<li>III: $r &lt; k$ → $r - k &gt; 0$ ✘</li>\n</ul>\n<p><strong>Answer: A　I and II only</strong></p>",
-      "file": "2012_P2_解答_EN.md"
+      "file": "2012_P2_solutions_EN.md"
     },
     {
       "subject": "數學",
@@ -27592,7 +27592,7 @@ window.QB = {
       ],
       "text": "A number $9\\star\\blacklozenge$ is a three-digit number where $\\star$ and $\\blacklozenge$ each take values from 0 to 9. Find the probability that this number is divisible by 5.\n\nTotal number of possibilities: $10 \\times 10 = 100$.\n\nA number is divisible by 5 if and only if its last digit $\\blacklozenge \\in \\{0, 5\\}$. There are $10 \\times 2 = 20$ such possibilities.\n\n$$P = \\frac{20}{100} = \\frac{1}{5}$$\n\n**Answer: A　$\\frac{1}{5}$**",
       "html": "<p>A number $9\\star\\blacklozenge$ is a three-digit number where $\\star$ and $\\blacklozenge$ each take values from 0 to 9. Find the probability that this number is divisible by 5.</p>\n<p>Total number of possibilities: $10 \\times 10 = 100$.</p>\n<p>A number is divisible by 5 if and only if its last digit $\\blacklozenge \\in {0, 5}$. There are $10 \\times 2 = 20$ such possibilities.</p>\n<p>$$P = \\frac{20}{100} = \\frac{1}{5}$$</p>\n<p><strong>Answer: A　$\\frac{1}{5}$</strong></p>",
-      "file": "2012_P2_解答_EN.md"
+      "file": "2012_P2_solutions_EN.md"
     },
     {
       "subject": "數學",
@@ -27607,7 +27607,7 @@ window.QB = {
       ],
       "text": "The age distribution consists of 5, 8, 6, 0, and 1 people, totaling 20 people. We need to find the probability that a randomly selected person is **at least 74 years old**.\n\n**Age ≥ 74:** 74, 74, 76, 77, 79, 91 → 6 people.\n\n$$P = \\frac{6}{20} = 0.3$$\n\n**Answer: B　0.3**",
       "html": "<p>The age distribution consists of 5, 8, 6, 0, and 1 people, totaling 20 people. We need to find the probability that a randomly selected person is <strong>at least 74 years old</strong>.</p>\n<p><strong>Age ≥ 74:</strong> 74, 74, 76, 77, 79, 91 → 6 people.</p>\n<p>$$P = \\frac{6}{20} = 0.3$$</p>\n<p><strong>Answer: B　0.3</strong></p>",
-      "file": "2012_P2_解答_EN.md"
+      "file": "2012_P2_solutions_EN.md"
     },
     {
       "subject": "數學",
@@ -27622,7 +27622,7 @@ window.QB = {
       ],
       "text": "The distribution of rings is: 0 rings 2 people, 1 ring 8 people, 2 rings 4 people, 3 rings 6 people, 4 rings 2 people (n=22).\n\n\\[\n\\sum fx = 0(2) + 1(8) + 2(4) + 3(6) + 4(2) = 42, \\qquad \\sum fx^2 = 0 + 8 + 16 + 54 + 32 = 110\n\\]\n\n\\[\n\\bar{x} = \\frac{42}{22}, \\qquad \\sigma = \\sqrt{\\frac{110}{22} - \\left(\\frac{42}{22}\\right)^2} = \\sqrt{5 - \\left(\\frac{21}{11}\\right)^2} = \\sqrt{1.3554\\ldots}\n\\]\n\n\\[\n\\sigma \\approx 1.16\n\\]\n\n**Answer: B　1.16**",
       "html": "<p>The distribution of rings is: 0 rings 2 people, 1 ring 8 people, 2 rings 4 people, 3 rings 6 people, 4 rings 2 people (n=22).</p>\n<p>[\n\\sum fx = 0(2) + 1(8) + 2(4) + 3(6) + 4(2) = 42, \\qquad \\sum fx^2 = 0 + 8 + 16 + 54 + 32 = 110\n]</p>\n<p>[\n\\bar{x} = \\frac{42}{22}, \\qquad \\sigma = \\sqrt{\\frac{110}{22} - \\left(\\frac{42}{22}\\right)^2} = \\sqrt{5 - \\left(\\frac{21}{11}\\right)^2} = \\sqrt{1.3554\\ldots}\n]</p>\n<p>[\n\\sigma \\approx 1.16\n]</p>\n<p><strong>Answer: B　1.16</strong></p>",
-      "file": "2012_P2_解答_EN.md"
+      "file": "2012_P2_solutions_EN.md"
     },
     {
       "subject": "數學",
@@ -27637,7 +27637,7 @@ window.QB = {
       ],
       "text": "**Stem:** The data set is $19, 10, 12, 12, 13, 13, 14, 15, 16, m, n$ (11 numbers). The mean and median of the data set are both 14.\n\n**Mean:** The sum of the numbers is $11 \\times 14 = 154$. We know the sum of the first nine numbers is 124.\n\n$$m + n = 30 \\quad (\\text{III ✔})$$\n\n**Median:** The median (the 6th number) is 14. We know there are 5 numbers less than 14 ($10, 12, 12, 13, 13$), so $m$ and $n$ cannot be less than 14:\n\n$$m \\ge 14 \\quad (\\text{I ✔}) \\;\\Rightarrow\\; n = 30 - m \\le 16 \\quad (\\text{II ✔})$$\n\n**Answer: D　I, II and III**\n\n# Section B (Questions 31–45)",
       "html": "<p><strong>Stem:</strong> The data set is $19, 10, 12, 12, 13, 13, 14, 15, 16, m, n$ (11 numbers). The mean and median of the data set are both 14.</p>\n<p><strong>Mean:</strong> The sum of the numbers is $11 \\times 14 = 154$. We know the sum of the first nine numbers is 124.</p>\n<p>$$m + n = 30 \\quad (\\text{III ✔})$$</p>\n<p><strong>Median:</strong> The median (the 6th number) is 14. We know there are 5 numbers less than 14 ($10, 12, 12, 13, 13$), so $m$ and $n$ cannot be less than 14:</p>\n<p>$$m \\ge 14 \\quad (\\text{I ✔}) \\;\\Rightarrow\\; n = 30 - m \\le 16 \\quad (\\text{II ✔})$$</p>\n<p><strong>Answer: D　I, II and III</strong></p>\n<h1>Section B (Questions 31–45)</h1>",
-      "file": "2012_P2_解答_EN.md"
+      "file": "2012_P2_solutions_EN.md"
     },
     {
       "subject": "數學",
@@ -27652,7 +27652,7 @@ window.QB = {
       ],
       "text": "The H.C.F. of the three numbers is $ab^2$ and the L.C.M. is $4a^4b^5c^6$. The first two numbers are $2a^2b^4c$ and $4a^4b^2c^6$. We need to find the third number.\n\nRule: H.C.F. takes the **minimum** value of the exponents of each letter; L.C.M. takes the **maximum** value.\n\n- $a$: $\\min(2,4,a_3)=1 \\Rightarrow a_3=1$ (and $\\max(2,4,1)=4$ ✔)\n- $b$: $\\max(4,2,b_3)=5 \\Rightarrow b_3=5$ (and $\\min(4,2,5)=2$ ✔)\n- $c$: $\\min(1,6,c_3)=0 \\Rightarrow c_3=0$ (and $\\max(1,6,0)=6$ ✔)\n\n$$\\text{The third number} = ab^5$$\n\n**Answer: B　$ab^5$**",
       "html": "<p>The H.C.F. of the three numbers is $ab^2$ and the L.C.M. is $4a^4b^5c^6$. The first two numbers are $2a^2b^4c$ and $4a^4b^2c^6$. We need to find the third number.</p>\n<p>Rule: H.C.F. takes the <strong>minimum</strong> value of the exponents of each letter; L.C.M. takes the <strong>maximum</strong> value.</p>\n<ul>\n<li>$a$: $\\min(2,4,a_3)=1 \\Rightarrow a_3=1$ (and $\\max(2,4,1)=4$ ✔)</li>\n<li>$b$: $\\max(4,2,b_3)=5 \\Rightarrow b_3=5$ (and $\\min(4,2,5)=2$ ✔)</li>\n<li>$c$: $\\min(1,6,c_3)=0 \\Rightarrow c_3=0$ (and $\\max(1,6,0)=6$ ✔)</li>\n</ul>\n<p>$$\\text{The third number} = ab^5$$</p>\n<p><strong>Answer: B　$ab^5$</strong></p>",
-      "file": "2012_P2_解答_EN.md"
+      "file": "2012_P2_solutions_EN.md"
     },
     {
       "subject": "數學",
@@ -27667,7 +27667,7 @@ window.QB = {
       ],
       "text": "The graph of $\\log_3 y$ against $x$ is a straight line passing through the points $(-2,0)$ and $(0,4)$. If $y=mn^x$, find the value of $n$.\n\nTaking $\\log_3$ on both sides:\n\n$$\\log_3 y = \\log_3 m + x\\log_3 n$$\n\nThe slope is $\\log_3 n$:\n\n$$\\log_3 n = \\frac{4-0}{0-(-2)} = 2 \\;\\Rightarrow\\; n = 3^2 = 9$$\n\n**Answer: C　$n=9$**",
       "html": "<p>The graph of $\\log_3 y$ against $x$ is a straight line passing through the points $(-2,0)$ and $(0,4)$. If $y=mn^x$, find the value of $n$.</p>\n<p>Taking $\\log_3$ on both sides:</p>\n<p>$$\\log_3 y = \\log_3 m + x\\log_3 n$$</p>\n<p>The slope is $\\log_3 n$:</p>\n<p>$$\\log_3 n = \\frac{4-0}{0-(-2)} = 2 \\;\\Rightarrow\\; n = 3^2 = 9$$</p>\n<p><strong>Answer: C　$n=9$</strong></p>",
-      "file": "2012_P2_解答_EN.md"
+      "file": "2012_P2_solutions_EN.md"
     },
     {
       "subject": "數學",
@@ -27682,7 +27682,7 @@ window.QB = {
       ],
       "text": "Expand $\\text{AD0000002012}_{16}$.\n\nStarting from the rightmost digit: $2(16^0) + 1(16^1) + 0 + 2(16^3)$. The digit $\\text{A}$ (which is $10$) is in the 12th position, and the digit $\\text{D}$ (which is $13$) is in the 11th position:\n\n\\[\n10 \\times 16^{11} + 13 \\times 16^{10} + 2 \\times 16^3 + 1 \\times 16 + 2 = 10(16^{11}) + 13(16^{10}) + 8192 + 16 + 2\n\\]\n\n\\[\n= 10(16^{11}) + 13(16^{10}) + 8210\n\\]\n\n**Answer: A**",
       "html": "<p>Expand $\\text{AD0000002012}_{16}$.</p>\n<p>Starting from the rightmost digit: $2(16^0) + 1(16^1) + 0 + 2(16^3)$. The digit $\\text{A}$ (which is $10$) is in the 12th position, and the digit $\\text{D}$ (which is $13$) is in the 11th position:</p>\n<p>[\n10 \\times 16^{11} + 13 \\times 16^{10} + 2 \\times 16^3 + 1 \\times 16 + 2 = 10(16^{11}) + 13(16^{10}) + 8192 + 16 + 2\n]</p>\n<p>[\n= 10(16^{11}) + 13(16^{10}) + 8210\n]</p>\n<p><strong>Answer: A</strong></p>",
-      "file": "2012_P2_解答_EN.md"
+      "file": "2012_P2_solutions_EN.md"
     },
     {
       "subject": "數學",
@@ -27697,7 +27697,7 @@ window.QB = {
       ],
       "text": "Given that \\( f(x) \\) is a quadratic function with vertex \\((3, -4)\\), we can express it as \\( f(x) = a(x-3)^2 - 4 \\).\n\nWe need to determine which of the following statements is necessarily true:\n\n- A: The roots of \\( f(x) = 0 \\) are integers, depending on \\( a \\) ✘\n- B: \\( f(x) - 3 = 0 \\Rightarrow a(x-3)^2 = 7 \\), the roots are \\( 3 \\pm \\sqrt{7/a} \\), which are not necessarily rational ✘\n- **C: \\( f(x) + 4 = 0 \\Rightarrow a(x-3)^2 = 0 \\Rightarrow x = 3 \\) (real double root) is necessarily true ✔**\n- D: \\( f(x) + 5 = 0 \\Rightarrow a(x-3)^2 = 1 \\), the roots are non-real when \\( a < 0 \\) and real when \\( a > 0 \\), which is not necessarily true ✘\n\n**Answer: C**",
       "html": "<p>Given that ( f(x) ) is a quadratic function with vertex ((3, -4)), we can express it as ( f(x) = a(x-3)^2 - 4 ).</p>\n<p>We need to determine which of the following statements is necessarily true:</p>\n<ul>\n<li>A: The roots of ( f(x) = 0 ) are integers, depending on ( a ) ✘</li>\n<li>B: ( f(x) - 3 = 0 \\Rightarrow a(x-3)^2 = 7 ), the roots are ( 3 \\pm \\sqrt{7/a} ), which are not necessarily rational ✘</li>\n<li><strong>C: ( f(x) + 4 = 0 \\Rightarrow a(x-3)^2 = 0 \\Rightarrow x = 3 ) (real double root) is necessarily true ✔</strong></li>\n<li>D: ( f(x) + 5 = 0 \\Rightarrow a(x-3)^2 = 1 ), the roots are non-real when ( a &lt; 0 ) and real when ( a &gt; 0 ), which is not necessarily true ✘</li>\n</ul>\n<p><strong>Answer: C</strong></p>",
-      "file": "2012_P2_解答_EN.md"
+      "file": "2012_P2_solutions_EN.md"
     },
     {
       "subject": "數學",
@@ -27712,7 +27712,7 @@ window.QB = {
       ],
       "text": "The given expression is \\(i^3(\\beta i - 3)\\).\n\nFirst, simplify \\(i^3\\):\n\\[i^3 = i^2 \\cdot i = -1 \\cdot i = -i\\]\n\nNow substitute \\(i^3\\) back into the expression:\n\\[-i(\\beta i - 3)\\]\n\nNext, distribute \\(-i\\):\n\\[-i \\cdot \\beta i + (-i) \\cdot (-3) = -\\beta i^2 + 3i\\]\n\nSince \\(i^2 = -1\\), substitute \\(-1\\) for \\(i^2\\):\n\\[-\\beta(-1) + 3i = \\beta + 3i\\]\n\n**Answer: A　\\(\\beta + 3i\\)**",
       "html": "<p>The given expression is (i^3(\\beta i - 3)).</p>\n<p>First, simplify (i^3):\n[i^3 = i^2 \\cdot i = -1 \\cdot i = -i]</p>\n<p>Now substitute (i^3) back into the expression:\n[-i(\\beta i - 3)]</p>\n<p>Next, distribute (-i):\n[-i \\cdot \\beta i + (-i) \\cdot (-3) = -\\beta i^2 + 3i]</p>\n<p>Since (i^2 = -1), substitute (-1) for (i^2):\n[-\\beta(-1) + 3i = \\beta + 3i]</p>\n<p><strong>Answer: A　(\\beta + 3i)</strong></p>",
-      "file": "2012_P2_解答_EN.md"
+      "file": "2012_P2_solutions_EN.md"
     },
     {
       "subject": "數學",
@@ -27727,7 +27727,7 @@ window.QB = {
       ],
       "text": "The shaded region (including the boundary) is a triangle bounded by the lines \\( y = x + 3 \\), \\( y = 3 \\), and \\( y = 6 - 2x \\). The point \\((h, k)\\) is within this region.\n\nWe translate the three constraints one by one:\n\n- Above the line \\( y = 3 \\): \\( k \\ge 3 \\) ✔ (I)\n- Below the line \\( y = x + 3 \\): \\( k \\le h + 3 \\Leftrightarrow h - k \\ge -3 \\) ✔ (II)\n- Below the line \\( y = 6 - 2x \\): \\( k \\le 6 - 2h \\Leftrightarrow 2h + k \\le 6 \\) ✔ (III)\n\n**Answer: D　I, II and III**",
       "html": "<p>The shaded region (including the boundary) is a triangle bounded by the lines ( y = x + 3 ), ( y = 3 ), and ( y = 6 - 2x ). The point ((h, k)) is within this region.</p>\n<p>We translate the three constraints one by one:</p>\n<ul>\n<li>Above the line ( y = 3 ): ( k \\ge 3 ) ✔ (I)</li>\n<li>Below the line ( y = x + 3 ): ( k \\le h + 3 \\Leftrightarrow h - k \\ge -3 ) ✔ (II)</li>\n<li>Below the line ( y = 6 - 2x ): ( k \\le 6 - 2h \\Leftrightarrow 2h + k \\le 6 ) ✔ (III)</li>\n</ul>\n<p><strong>Answer: D　I, II and III</strong></p>",
-      "file": "2012_P2_解答_EN.md"
+      "file": "2012_P2_solutions_EN.md"
     },
     {
       "subject": "數學",
@@ -27742,7 +27742,7 @@ window.QB = {
       ],
       "text": "Given:\n\\[ a_{18} = 26 \\]\n\\[ a_{23} = 61 \\]\n\n**Step 1: Calculate the common difference \\( d \\)**\n\nThe common difference \\( d \\) is given by:\n\\[ d = \\frac{a_{23} - a_{18}}{23 - 18} = \\frac{61 - 26}{5} = 7 \\]\n\n**Step 2: Calculate the first term \\( a_1 \\)**\n\nUsing the formula for the \\( n \\)-th term of an arithmetic sequence \\( a_n = a_1 + (n-1)d \\):\n\\[ a_{18} = a_1 + 17d \\]\n\\[ 26 = a_1 + 17 \\times 7 \\]\n\\[ 26 = a_1 + 119 \\]\n\\[ a_1 = 26 - 119 = -93 \\]\n\n**Step 3: Verify each statement**\n\n- **Statement I**: \\( a_{14} = a_{18} - 4d \\)\n\\[ a_{14} = 26 - 4 \\times 7 = 26 - 28 = -2 \\]\nSince \\( -2 < 0 \\), Statement I is true.\n\n- **Statement II**: \\( a_1 - a_2 = -d \\)\n\\[ a_2 = a_1 + d = -93 + 7 = -86 \\]\n\\[ a_1 - a_2 = -93 - (-86) = -93 + 86 = -7 \\]\nSince \\( -7 < 0 \\), Statement II is true.\n\n- **Statement III**: \\( S_{27} = \\frac{27}{2}(a_1 + a_{27}) \\)\nFirst, find \\( a_{27} \\):\n\\[ a_{27} = a_1 + 26d = -93 + 26 \\times 7 = -93 + 182 = 89 \\]\nNow, calculate \\( S_{27} \\):\n\\[ S_{27} = \\frac{27}{2}(-93 + 89) = \\frac{27}{2}(-4) = -54 \\]\nSince \\( -54 \\) is not greater than \\( 0 \\), Statement III is false.\n\n**Answer: A　I and II only**",
       "html": "<p>Given:\n[ a_{18} = 26 ]\n[ a_{23} = 61 ]</p>\n<p><strong>Step 1: Calculate the common difference ( d )</strong></p>\n<p>The common difference ( d ) is given by:\n[ d = \\frac{a_{23} - a_{18}}{23 - 18} = \\frac{61 - 26}{5} = 7 ]</p>\n<p><strong>Step 2: Calculate the first term ( a_1 )</strong></p>\n<p>Using the formula for the ( n )-th term of an arithmetic sequence ( a_n = a_1 + (n-1)d ):\n[ a_{18} = a_1 + 17d ]\n[ 26 = a_1 + 17 \\times 7 ]\n[ 26 = a_1 + 119 ]\n[ a_1 = 26 - 119 = -93 ]</p>\n<p><strong>Step 3: Verify each statement</strong></p>\n<ul>\n<li>\n<p><strong>Statement I</strong>: ( a_{14} = a_{18} - 4d )\n[ a_{14} = 26 - 4 \\times 7 = 26 - 28 = -2 ]\nSince ( -2 &lt; 0 ), Statement I is true.</p>\n</li>\n<li>\n<p><strong>Statement II</strong>: ( a_1 - a_2 = -d )\n[ a_2 = a_1 + d = -93 + 7 = -86 ]\n[ a_1 - a_2 = -93 - (-86) = -93 + 86 = -7 ]\nSince ( -7 &lt; 0 ), Statement II is true.</p>\n</li>\n<li>\n<p><strong>Statement III</strong>: ( S_{27} = \\frac{27}{2}(a_1 + a_{27}) )\nFirst, find ( a_{27} ):\n[ a_{27} = a_1 + 26d = -93 + 26 \\times 7 = -93 + 182 = 89 ]\nNow, calculate ( S_{27} ):\n[ S_{27} = \\frac{27}{2}(-93 + 89) = \\frac{27}{2}(-4) = -54 ]\nSince ( -54 ) is not greater than ( 0 ), Statement III is false.</p>\n</li>\n</ul>\n<p><strong>Answer: A　I and II only</strong></p>",
-      "file": "2012_P2_解答_EN.md"
+      "file": "2012_P2_solutions_EN.md"
     },
     {
       "subject": "數學",
@@ -27757,7 +27757,7 @@ window.QB = {
       ],
       "text": "The function $y = f(x-2) + 1$ involves two transformations of the function $f(x)$:\n1. **Horizontal Shift**: The term $x-2$ indicates a horizontal shift to the right by 2 units.\n2. **Vertical Shift**: The term $+1$ indicates a vertical shift upwards by 1 unit.\n\nLet's analyze each option:\n\n- **A**: The graph of $f(x-2) + 1$ is shifted to the left (leftward). This is incorrect because the term $x-2$ shifts the graph to the right.\n- **B**: The graph is shifted to the right but downwards. This is incorrect because the term $+1$ shifts the graph upwards.\n- **C**: The vertex of the curve $f(x)$ is shifted to the right by 2 units and upwards by 1 unit. This is correct.\n- **D**: The graph is shifted to the left. This is incorrect because the term $x-2$ shifts the graph to the right.\n\n**Answer: C**",
       "html": "<p>The function $y = f(x-2) + 1$ involves two transformations of the function $f(x)$:\n1. <strong>Horizontal Shift</strong>: The term $x-2$ indicates a horizontal shift to the right by 2 units.\n2. <strong>Vertical Shift</strong>: The term $+1$ indicates a vertical shift upwards by 1 unit.</p>\n<p>Let's analyze each option:</p>\n<ul>\n<li><strong>A</strong>: The graph of $f(x-2) + 1$ is shifted to the left (leftward). This is incorrect because the term $x-2$ shifts the graph to the right.</li>\n<li><strong>B</strong>: The graph is shifted to the right but downwards. This is incorrect because the term $+1$ shifts the graph upwards.</li>\n<li><strong>C</strong>: The vertex of the curve $f(x)$ is shifted to the right by 2 units and upwards by 1 unit. This is correct.</li>\n<li><strong>D</strong>: The graph is shifted to the left. This is incorrect because the term $x-2$ shifts the graph to the right.</li>\n</ul>\n<p><strong>Answer: C</strong></p>",
-      "file": "2012_P2_解答_EN.md"
+      "file": "2012_P2_solutions_EN.md"
     },
     {
       "subject": "數學",
@@ -27772,7 +27772,7 @@ window.QB = {
       ],
       "text": "**Stem:** The graph of a sine or cosine function is shown. The curve reaches its maximum value of 7 at \\(x=0\\) and its minimum value of 1 at \\(x=90\\). It returns to 7 at \\(x=180\\).\n\n**Solution:**\n\nThe difference between the maximum and minimum values is \\(7 - 1 = 6\\). Therefore, the amplitude is \\(\\frac{6}{2} = 3\\). The midline is \\(\\frac{7 + 1}{2} = 4\\).\n\nThe maximum value occurs at \\(x=0\\) and \\(x=180\\), indicating a period of \\(180^\\circ\\). This corresponds to a cosine function with a period of \\(180^\\circ\\), which is \\(\\cos 2x^\\circ\\).\n\nThus, the equation of the curve is:\n\\[ y = 4 + 3\\cos 2x^\\circ \\]\n\n(Verification: At \\(x=90\\), \\(4 + 3\\cos 180^\\circ = 1\\), which is correct.)\n\n**Answer: D　\\(y=4+3\\cos 2x^\\circ\\)**",
       "html": "<p><strong>Stem:</strong> The graph of a sine or cosine function is shown. The curve reaches its maximum value of 7 at (x=0) and its minimum value of 1 at (x=90). It returns to 7 at (x=180).</p>\n<p><strong>Solution:</strong></p>\n<p>The difference between the maximum and minimum values is (7 - 1 = 6). Therefore, the amplitude is (\\frac{6}{2} = 3). The midline is (\\frac{7 + 1}{2} = 4).</p>\n<p>The maximum value occurs at (x=0) and (x=180), indicating a period of (180^\\circ). This corresponds to a cosine function with a period of (180^\\circ), which is (\\cos 2x^\\circ).</p>\n<p>Thus, the equation of the curve is:\n[ y = 4 + 3\\cos 2x^\\circ ]</p>\n<p>(Verification: At (x=90), (4 + 3\\cos 180^\\circ = 1), which is correct.)</p>\n<p><strong>Answer: D　(y=4+3\\cos 2x^\\circ)</strong></p>",
-      "file": "2012_P2_解答_EN.md"
+      "file": "2012_P2_solutions_EN.md"
     },
     {
       "subject": "數學",
@@ -27787,7 +27787,7 @@ window.QB = {
       ],
       "text": "In a regular tetrahedron \\(ABCD\\) with edge length \\(a\\), find the dihedral angle between planes \\(ABC\\) and \\(BCD\\).\n\nLet \\(M\\) be the midpoint of \\(BC\\): \\(AM \\perp BC\\) and \\(DM \\perp BC\\). Therefore, the dihedral angle is \\(\\angle AMD\\).\n\n\\[\nAM = DM = \\frac{\\sqrt{3}}{2}a, \\quad AD = a\n\\]\n\n\\[\n\\cos\\angle AMD = \\frac{AM^2 + DM^2 - AD^2}{2(AM)(DM)} = \\frac{\\frac{3}{4}a^2 + \\frac{3}{4}a^2 - a^2}{2 \\cdot \\frac{3}{4}a^2} = \\frac{\\frac{1}{2}a^2}{\\frac{3}{2}a^2} = \\frac{1}{3}\n\\]\n\n\\[\n\\angle AMD \\approx 70.5^\\circ \\approx 71^\\circ\n\\]\n\n**Answer: D　\\(71^\\circ\\)**",
       "html": "<p>In a regular tetrahedron (ABCD) with edge length (a), find the dihedral angle between planes (ABC) and (BCD).</p>\n<p>Let (M) be the midpoint of (BC): (AM \\perp BC) and (DM \\perp BC). Therefore, the dihedral angle is (\\angle AMD).</p>\n<p>[\nAM = DM = \\frac{\\sqrt{3}}{2}a, \\quad AD = a\n]</p>\n<p>[\n\\cos\\angle AMD = \\frac{AM^2 + DM^2 - AD^2}{2(AM)(DM)} = \\frac{\\frac{3}{4}a^2 + \\frac{3}{4}a^2 - a^2}{2 \\cdot \\frac{3}{4}a^2} = \\frac{\\frac{1}{2}a^2}{\\frac{3}{2}a^2} = \\frac{1}{3}\n]</p>\n<p>[\n\\angle AMD \\approx 70.5^\\circ \\approx 71^\\circ\n]</p>\n<p><strong>Answer: D　(71^\\circ)</strong></p>",
-      "file": "2012_P2_解答_EN.md"
+      "file": "2012_P2_solutions_EN.md"
     },
     {
       "subject": "數學",
@@ -27802,7 +27802,7 @@ window.QB = {
       ],
       "text": "1. $\\angle PBQ = 90^\\circ$ (angle in a semicircle) → $\\angle BQP = 78^\\circ$ in $\\triangle PBQ$\n2. $OB = OQ$ (radii of the semicircle) → $\\angle QBO = 78^\\circ$ and $\\angle BOQ = 24^\\circ$\n3. $\\angle OBC = \\angle QBC - \\angle QBO = 90^\\circ - 78^\\circ = 12^\\circ$\n4. Alternate segment theorem: $\\angle POC = \\angle OBC = 12^\\circ$\n5. In $\\triangle OPC$: $\\angle OPC = 12^\\circ$ (since $BCP$ is a straight line) = $\\angle POC$ → $\\angle PCO = 156^\\circ$ → $\\angle BCO = 180^\\circ - 156^\\circ = 24^\\circ$\n6. In $\\triangle OBC$: $\\angle BOC = 180^\\circ - 12^\\circ - 24^\\circ = 144^\\circ$\n7. $A, B, O, C$ are concyclic (cyclic quadrilateral) → $\\angle BAC + \\angle BOC = 180^\\circ$ (opposite angles are supplementary)\n\n$$\\angle BAC = 180^\\circ - 144^\\circ = 36^\\circ$$\n\n**Answer: C　$36^\\circ$**",
       "html": "<ol>\n<li>$\\angle PBQ = 90^\\circ$ (angle in a semicircle) → $\\angle BQP = 78^\\circ$ in $\\triangle PBQ$</li>\n<li>$OB = OQ$ (radii of the semicircle) → $\\angle QBO = 78^\\circ$ and $\\angle BOQ = 24^\\circ$</li>\n<li>$\\angle OBC = \\angle QBC - \\angle QBO = 90^\\circ - 78^\\circ = 12^\\circ$</li>\n<li>Alternate segment theorem: $\\angle POC = \\angle OBC = 12^\\circ$</li>\n<li>In $\\triangle OPC$: $\\angle OPC = 12^\\circ$ (since $BCP$ is a straight line) = $\\angle POC$ → $\\angle PCO = 156^\\circ$ → $\\angle BCO = 180^\\circ - 156^\\circ = 24^\\circ$</li>\n<li>In $\\triangle OBC$: $\\angle BOC = 180^\\circ - 12^\\circ - 24^\\circ = 144^\\circ$</li>\n<li>$A, B, O, C$ are concyclic (cyclic quadrilateral) → $\\angle BAC + \\angle BOC = 180^\\circ$ (opposite angles are supplementary)</li>\n</ol>\n<p>$$\\angle BAC = 180^\\circ - 144^\\circ = 36^\\circ$$</p>\n<p><strong>Answer: C　$36^\\circ$</strong></p>",
-      "file": "2012_P2_解答_EN.md"
+      "file": "2012_P2_solutions_EN.md"
     },
     {
       "subject": "數學",
@@ -27817,7 +27817,7 @@ window.QB = {
       ],
       "text": "To find the range of \\( k \\) values such that the circle \\( x^2 + y^2 + 2x - 4y - 13 = 0 \\) intersects the line \\( x - y + k = 0 \\) at two distinct points, we need to follow these steps:\n\n1. **Find the center and radius of the circle:**\n\n   The given circle equation is:\n   \\[\n   x^2 + y^2 + 2x - 4y - 13 = 0\n   \\]\n\n   We complete the square for both \\( x \\) and \\( y \\):\n\n   For \\( x \\):\n   \\[\n   x^2 + 2x = (x + 1)^2 - 1\n   \\]\n\n   For \\( y \\):\n   \\[\n   y^2 - 4y = (y - 2)^2 - 4\n   \\]\n\n   Substituting these into the circle equation:\n   \\[\n   (x + 1)^2 - 1 + (y - 2)^2 - 4 - 13 = 0\n   \\]\n   Simplifying:\n   \\[\n   (x + 1)^2 + (y - 2)^2 - 18 = 0\n   \\]\n   \\[\n   (x + 1)^2 + (y - 2)^2 = 18\n   \\]\n\n   Therefore, the center of the circle is \\((-1, 2)\\) and the radius \\( r \\) is:\n   \\[\n   r = \\sqrt{18} = 3\\sqrt{2}\n   \\]\n\n2. **Calculate the distance from the center of the circle to the line:**\n\n   The line equation is:\n   \\[\n   x - y + k = 0\n   \\]\n\n   The distance \\( d \\) from a point \\((x_1, y_1)\\) to a line \\( Ax + By + C = 0 \\) is given by:\n   \\[\n   d = \\frac{|Ax_1 + By_1 + C|}{\\sqrt{A^2 + B^2}}\n   \\]\n\n   Here, \\( A = 1 \\), \\( B = -1 \\), \\( C = k \\), and the point \\((x_1, y_1) = (-1, 2)\\). Substituting these values:\n   \\[\n   d = \\frac{|1(-1) + (-1)(2) + k|}{\\sqrt{1^2 + (-1)^2}} = \\frac{|-1 - 2 + k|}{\\sqrt{2}} = \\frac{|k - 3|}{\\sqrt{2}}\n   \\]\n\n3. **Determine the condition for two distinct intersection points:**\n\n   For the circle and the line to intersect at two distinct points, the distance \\( d \\) must be less than the radius \\( r \\):\n   \\[\n   d < r\n   \\]\n   Substituting the values of \\( d \\) and \\( r \\):\n   \\[\n   \\frac{|k - 3|}{\\sqrt{2}} < 3\\sqrt{2}\n   \\]\n\n   Multiply both sides by \\(\\sqrt{2}\\):\n   \\[\n   |k - 3| < 6\n   \\]\n\n   This inequality can be solved by considering the two cases:\n   \\[\n   -6 < k - 3 < 6\n   \\]\n\n   Adding 3 to all parts of the inequality:\n   \\[\n   -3 < k < 9\n   \\]\n\n**Answer: B　\\(-3 < k < 9\\)**",
       "html": "<p>To find the range of ( k ) values such that the circle ( x^2 + y^2 + 2x - 4y - 13 = 0 ) intersects the line ( x - y + k = 0 ) at two distinct points, we need to follow these steps:</p>\n<ol>\n<li><strong>Find the center and radius of the circle:</strong></li>\n</ol>\n<p>The given circle equation is:\n   [\n   x^2 + y^2 + 2x - 4y - 13 = 0\n   ]</p>\n<p>We complete the square for both ( x ) and ( y ):</p>\n<p>For ( x ):\n   [\n   x^2 + 2x = (x + 1)^2 - 1\n   ]</p>\n<p>For ( y ):\n   [\n   y^2 - 4y = (y - 2)^2 - 4\n   ]</p>\n<p>Substituting these into the circle equation:\n   [\n   (x + 1)^2 - 1 + (y - 2)^2 - 4 - 13 = 0\n   ]\n   Simplifying:\n   [\n   (x + 1)^2 + (y - 2)^2 - 18 = 0\n   ]\n   [\n   (x + 1)^2 + (y - 2)^2 = 18\n   ]</p>\n<p>Therefore, the center of the circle is ((-1, 2)) and the radius ( r ) is:\n   [\n   r = \\sqrt{18} = 3\\sqrt{2}\n   ]</p>\n<ol>\n<li><strong>Calculate the distance from the center of the circle to the line:</strong></li>\n</ol>\n<p>The line equation is:\n   [\n   x - y + k = 0\n   ]</p>\n<p>The distance ( d ) from a point ((x_1, y_1)) to a line ( Ax + By + C = 0 ) is given by:\n   [\n   d = \\frac{|Ax_1 + By_1 + C|}{\\sqrt{A^2 + B^2}}\n   ]</p>\n<p>Here, ( A = 1 ), ( B = -1 ), ( C = k ), and the point ((x_1, y_1) = (-1, 2)). Substituting these values:\n   [\n   d = \\frac{|1(-1) + (-1)(2) + k|}{\\sqrt{1^2 + (-1)^2}} = \\frac{|-1 - 2 + k|}{\\sqrt{2}} = \\frac{|k - 3|}{\\sqrt{2}}\n   ]</p>\n<ol>\n<li><strong>Determine the condition for two distinct intersection points:</strong></li>\n</ol>\n<p>For the circle and the line to intersect at two distinct points, the distance ( d ) must be less than the radius ( r ):\n   [\n   d &lt; r\n   ]\n   Substituting the values of ( d ) and ( r ):\n   [\n   \\frac{|k - 3|}{\\sqrt{2}} &lt; 3\\sqrt{2}\n   ]</p>\n<p>Multiply both sides by (\\sqrt{2}):\n   [\n   |k - 3| &lt; 6\n   ]</p>\n<p>This inequality can be solved by considering the two cases:\n   [\n   -6 &lt; k - 3 &lt; 6\n   ]</p>\n<p>Adding 3 to all parts of the inequality:\n   [\n   -3 &lt; k &lt; 9\n   ]</p>\n<p><strong>Answer: B　(-3 &lt; k &lt; 9)</strong></p>",
-      "file": "2012_P2_解答_EN.md"
+      "file": "2012_P2_solutions_EN.md"
     },
     {
       "subject": "數學",
@@ -27832,7 +27832,7 @@ window.QB = {
       ],
       "text": "12 boys and 8 girls, select a team of 5 people and **at least one girl**, find the number of combinations.\n\nUsing the complement method (total - all boys):\n\n$$^{20}C_5 - {}^{12}C_5 = 15504 - 792 = 14712$$\n\n**Answer: B　14712**",
       "html": "<p>12 boys and 8 girls, select a team of 5 people and <strong>at least one girl</strong>, find the number of combinations.</p>\n<p>Using the complement method (total - all boys):</p>\n<p>$$^{20}C_5 - {}^{12}C_5 = 15504 - 792 = 14712$$</p>\n<p><strong>Answer: B　14712</strong></p>",
-      "file": "2012_P2_解答_EN.md"
+      "file": "2012_P2_solutions_EN.md"
     },
     {
       "subject": "數學",
@@ -27847,7 +27847,7 @@ window.QB = {
       ],
       "text": "A bag contains six balls numbered $7, 8, 8, 9, 9, 9$. Balls are drawn without replacement until a $9$ is drawn. Find the probability of drawing exactly three balls.\n\nExactly three draws ⇔ the first two are not $9$ and the third is $9$:\n\n$$P = \\frac{3}{6} \\times \\frac{2}{5} \\times \\frac{3}{4} = \\frac{3}{20}$$\n\n**Answer: D　$\\dfrac{3}{20}$**",
       "html": "<p>A bag contains six balls numbered $7, 8, 8, 9, 9, 9$. Balls are drawn without replacement until a $9$ is drawn. Find the probability of drawing exactly three balls.</p>\n<p>Exactly three draws ⇔ the first two are not $9$ and the third is $9$:</p>\n<p>$$P = \\frac{3}{6} \\times \\frac{2}{5} \\times \\frac{3}{4} = \\frac{3}{20}$$</p>\n<p><strong>Answer: D　$\\dfrac{3}{20}$</strong></p>",
-      "file": "2012_P2_解答_EN.md"
+      "file": "2012_P2_solutions_EN.md"
     },
     {
       "subject": "數學",
@@ -27862,7 +27862,7 @@ window.QB = {
       ],
       "text": "The average, range, and variance of the set \\(\\{x_1, \\dots, x_{100}\\}\\) are \\(m_1\\), \\(r_1\\), and \\(v_1\\) respectively. After adding \\(m_1\\) to the set, the new statistics are \\(m_2\\), \\(r_2\\), and \\(v_2\\). Which of the following must be true?\n\n- **I: \\(m_2 = \\dfrac{100m_1 + m_1}{101} = m_1\\) ✔**\n- **II: \\(m_1\\) is between \\(\\min\\) and \\(\\max\\) → Range remains unchanged \\(r_1 = r_2\\) ✔**\n- III: \\(v_2 = \\dfrac{100v_1 + (m_1 - m_1)^2}{101} = \\dfrac{100}{101}v_1 < v_1\\) (unless \\(v_1 = 0\\)) ✘\n\n**Answer: A　I and II only**\n\n---\n\n*End of 2012 Paper 2 English worked solutions.*",
       "html": "<p>The average, range, and variance of the set ({x_1, \\dots, x_{100}}) are (m_1), (r_1), and (v_1) respectively. After adding (m_1) to the set, the new statistics are (m_2), (r_2), and (v_2). Which of the following must be true?</p>\n<ul>\n<li><strong>I: (m_2 = \\dfrac{100m_1 + m_1}{101} = m_1) ✔</strong></li>\n<li><strong>II: (m_1) is between (\\min) and (\\max) → Range remains unchanged (r_1 = r_2) ✔</strong></li>\n<li>III: (v_2 = \\dfrac{100v_1 + (m_1 - m_1)^2}{101} = \\dfrac{100}{101}v_1 &lt; v_1) (unless (v_1 = 0)) ✘</li>\n</ul>\n<p><strong>Answer: A　I and II only</strong></p>\n<hr />\n<p><em>End of 2012 Paper 2 English worked solutions.</em></p>",
-      "file": "2012_P2_解答_EN.md"
+      "file": "2012_P2_solutions_EN.md"
     }
   ]
 };

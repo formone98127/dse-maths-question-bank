@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-12T00:25:36Z",
+  "title": "Design System: DSE Hub",
+  "extensions": {
+    "colorMeta": {
+      "ground": { "role": "neutral", "displayName": "True Black", "canonical": "#000000", "tonalRamp": ["#000000", "#0a0a0b", "#161618", "#242427", "#3a3a3e", "#5a5a5f", "#8e8e93", "#c7c7cc"] },
+      "surface-card": { "role": "neutral", "displayName": "Elevated Graphite", "canonical": "#1c1c1e", "tonalRamp": ["#0e0e10", "#1c1c1e", "#2c2c2e", "#3a3a3c", "#48484a", "#636366", "#8e8e93", "#c7c7cc"] },
+      "surface-pressed": { "role": "neutral", "displayName": "Pressed Slate", "canonical": "#2c2c2e", "tonalRamp": ["#161617", "#1f1f21", "#2c2c2e", "#3a3a3c", "#48484a", "#636366", "#8e8e93", "#c7c7cc"] },
+      "ink": { "role": "neutral", "displayName": "Pure White", "canonical": "#ffffff", "tonalRamp": ["#1c1c1e", "#3a3a3c", "#545458", "#6e6e73", "#8e8e93", "#aeaeb2", "#d1d1d6", "#ffffff"] },
+      "ink-secondary": { "role": "neutral", "displayName": "Secondary Ink", "canonical": "rgba(235, 235, 245, 0.64)", "tonalRamp": ["rgba(235,235,245,0.16)", "rgba(235,235,245,0.24)", "rgba(235,235,245,0.32)", "rgba(235,235,245,0.42)", "rgba(235,235,245,0.52)", "rgba(235,235,245,0.64)", "rgba(235,235,245,0.80)", "rgba(235,235,245,1)"] },
+      "ink-tertiary": { "role": "neutral", "displayName": "Tertiary Ink", "canonical": "rgba(235, 235, 245, 0.42)", "tonalRamp": ["rgba(235,235,245,0.08)", "rgba(235,235,245,0.14)", "rgba(235,235,245,0.20)", "rgba(235,235,245,0.28)", "rgba(235,235,245,0.36)", "rgba(235,235,245,0.42)", "rgba(235,235,245,0.52)", "rgba(235,235,245,0.64)"] },
+      "separator": { "role": "neutral", "displayName": "Hairline Separator", "canonical": "rgba(84, 84, 88, 0.48)", "tonalRamp": ["rgba(84,84,88,0.10)", "rgba(84,84,88,0.18)", "rgba(84,84,88,0.26)", "rgba(84,84,88,0.34)", "rgba(84,84,88,0.42)", "rgba(84,84,88,0.48)", "rgba(84,84,88,0.64)", "rgba(84,84,88,0.85)"] },
+      "accent": { "role": "primary", "displayName": "System Blue", "canonical": "#0a84ff", "tonalRamp": ["#041e3a", "#083b66", "#0a548f", "#0a6cc0", "#0a84ff", "#409cff", "#7ab9ff", "#b5d9ff"] },
+      "accent-text": { "role": "primary", "displayName": "Accessible Blue", "canonical": "#409cff", "tonalRamp": ["#0a2c4f", "#0d477a", "#126aa8", "#2b8bd4", "#409cff", "#6fb5ff", "#9ccbff", "#cfe6ff"] },
+      "accent-tint": { "role": "primary", "displayName": "Blue Tint Fill", "canonical": "rgba(10, 132, 255, 0.16)", "tonalRamp": ["rgba(10,132,255,0.04)", "rgba(10,132,255,0.08)", "rgba(10,132,255,0.12)", "rgba(10,132,255,0.16)", "rgba(10,132,255,0.22)", "rgba(10,132,255,0.28)", "rgba(10,132,255,0.35)", "rgba(10,132,255,0.45)"] },
+      "seg-track": { "role": "neutral", "displayName": "Segmented Track", "canonical": "rgba(118, 118, 128, 0.24)", "tonalRamp": ["rgba(118,118,128,0.06)", "rgba(118,118,128,0.12)", "rgba(118,118,128,0.18)", "rgba(118,118,128,0.24)", "rgba(118,118,128,0.32)", "rgba(118,118,128,0.42)", "rgba(118,118,128,0.55)", "rgba(118,118,128,0.72)"] },
+      "seg-thumb": { "role": "neutral", "displayName": "Segmented Thumb", "canonical": "#636366", "tonalRamp": ["#161618", "#252528", "#363639", "#48484a", "#636366", "#757579", "#8e8e93", "#aeaeb2"] },
+      "scrollbar": { "role": "neutral", "displayName": "Scrollbar Graphite", "canonical": "#3a3a3c", "tonalRamp": ["#131315", "#1f1f21", "#2a2a2c", "#3a3a3c", "#4a4a4d", "#636366", "#8e8e93", "#c7c7cc"] },
+      "dot-math": { "role": "tertiary", "displayName": "Math Red", "canonical": "#ff453a", "tonalRamp": ["#330604", "#5e0f09", "#8f1a10", "#c32817", "#f23a2b", "#ff6a5c", "#ff9d92", "#ffd0ca"] },
+      "dot-econ": { "role": "tertiary", "displayName": "Econ Green", "canonical": "#32d74b", "tonalRamp": ["#04290c", "#0a4d18", "#127524", "#1aa133", "#32d74b", "#63e26f", "#9beea6", "#cff7d4"] },
+      "dot-chem": { "role": "tertiary", "displayName": "Chem Ice Blue", "canonical": "#64d2ff", "tonalRamp": ["#03202e", "#06455f", "#0a6d92", "#0f95c2", "#3fb9ea", "#64d2ff", "#96e2ff", "#c8f1ff"] },
+      "dot-bio": { "role": "tertiary", "displayName": "Bio Amber", "canonical": "#ff9f0a", "tonalRamp": ["#33200a", "#5e3b0b", "#8f5a0c", "#c27c0d", "#ff9f0a", "#ffb84d", "#ffd08a", "#ffe8c6"] },
+      "dot-phys": { "role": "tertiary", "displayName": "Phys Violet", "canonical": "#bf5af2", "tonalRamp": ["#22092f", "#3f1355", "#5f2080", "#8232ad", "#a244d4", "#bf5af2", "#d48cf7", "#e6c3fb"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Page title only — the one clamp-sized text (700, clamp(24px,5vw,30px), -0.015em)." },
+      "title": { "displayName": "Title", "purpose": "Row titles, leading year figure, sheet header, brand wordmark — 15px/600." },
+      "body": { "displayName": "Body", "purpose": "Base for everything readable; fixed 15px/1.5, no dynamic scaling." },
+      "picker-item": { "displayName": "Picker Item", "purpose": "Wheel-sheet options — 17px, largest UI text after the title; 600 white when selected." },
+      "label": { "displayName": "Label", "purpose": "Field labels, count line, meta, footer — 12–12.5px, secondary ink, tabular numerals for figures." }
+    },
+    "shadows": [],
+    "motion": [
+      { "name": "sheet-ride-up", "value": "cubic-bezier(0.32, 0.72, 0, 1) 0.42s", "purpose": "The surface's one authored motion: wheel-picker sheet rides up from translateY(60%)." },
+      { "name": "backdrop-fade", "value": "ease 0.25s", "purpose": "Sheet scrim opacity 0 to 1 on open." },
+      { "name": "state-tap", "value": "ease 0.15s", "purpose": "Segmented control, filter field, capsule, text-link state transitions." },
+      { "name": "row-press", "value": "ease 0.12s", "purpose": "List-row hover/press fill." },
+      { "name": "reduced-motion-kill", "value": "animation: none; transition: none", "purpose": "prefers-reduced-motion: reduce removes the sheet animation and all listed state transitions." }
+    ],
+    "breakpoints": [
+      { "name": "fields-stack", "value": "480px" }
+    ],
+    "materials": [
+      { "name": "nav-bar", "value": "background: rgba(10, 10, 10, 0.78); -webkit-backdrop-filter: saturate(180%) blur(20px); backdrop-filter: saturate(180%) blur(20px); border-bottom: 0.5px solid rgba(255, 255, 255, 0.08)", "purpose": "Sticky filter bar — the iOS nav-bar material; the only blur in the system, functional not decorative." }
+    ]
+  },
+  "components": [
+    {
+      "name": "Segmented Control",
+      "kind": "custom",
+      "refersTo": "seg-control",
+      "description": "Mode switch (按年份/按課題): sunken gray track, graphite active pill, white 600 label.",
+      "html": "<div class=\"ds-seg\" role=\"tablist\"><button type=\"button\" class=\"ds-seg-btn on\" role=\"tab\" aria-selected=\"true\">按年份</button><button type=\"button\" class=\"ds-seg-btn\" role=\"tab\" aria-selected=\"false\">按課題</button></div>",
+      "css": ".ds-seg { display: flex; background: rgba(118, 118, 128, 0.24); border-radius: 9px; padding: 2px; width: fit-content; min-width: 180px; } .ds-seg-btn { flex: 1; border: 0; background: transparent; cursor: pointer; padding: 6px 18px; font: inherit; font-size: 13.5px; font-weight: 500; color: rgba(235, 235, 245, 0.64); border-radius: 7.5px; transition: color 0.15s ease, background 0.15s ease; } .ds-seg-btn:not(.on):hover { color: #ffffff; } .ds-seg-btn.on { background: #636366; color: #ffffff; font-weight: 600; } .ds-seg-btn:focus-visible { outline: 2px solid rgba(10, 132, 255, 0.65); outline-offset: 2px; }"
+    },
+    {
+      "name": "Filter Field",
+      "kind": "input",
+      "refersTo": "filter-field",
+      "description": "Inset button-field that opens the wheel sheet; drawn chevron arrow, blue 600 text when filtered.",
+      "html": "<button type=\"button\" class=\"ds-field\"><span>所有</span></button>",
+      "css": ".ds-field { width: 100%; height: 40px; padding: 0 12px; border: 0; border-radius: 10px; background: #1c1c1e; color: #ffffff; font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'PingFang TC', 'Noto Sans TC', 'Microsoft JhengHei', sans-serif; font-size: 14.5px; text-align: left; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 8px; transition: background 0.15s ease; } .ds-field::after { content: ''; flex: 0 0 auto; width: 8px; height: 8px; border-right: 1.8px solid rgba(235, 235, 245, 0.42); border-bottom: 1.8px solid rgba(235, 235, 245, 0.42); transform: translateY(-2px) rotate(45deg); } .ds-field:hover { background: #242426; } .ds-field:active { background: #2c2c2e; } .ds-field.is-filtered { color: #409cff; font-weight: 600; } .ds-field:focus-visible { outline: 2px solid rgba(10, 132, 255, 0.65); outline-offset: 2px; }"
+    },
+    {
+      "name": "Inset Grouped List Row",
+      "kind": "custom",
+      "refersTo": "list-row",
+      "description": "Whole-row link on the graphite grouped-list card: tabular year, title + dotted meta, drawn chevron; 0.5px hairline between rows.",
+      "html": "<a class=\"ds-row\" href=\"#\"><span class=\"ds-row-year\">2024</span><span class=\"ds-row-body\"><span class=\"ds-row-title\">文憑試 DSE 數學 · 卷一甲（中文）</span><span class=\"ds-row-sub\"><span class=\"ds-dot ds-dot-math\"></span><span>數學必修部分 · 中文</span></span></span><span class=\"ds-row-chev\" aria-hidden=\"true\"></span></a>",
+      "css": ".ds-row { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 4px 14px; min-height: 56px; padding: 10px 16px; text-decoration: none; color: inherit; background: #1c1c1e; font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'PingFang TC', 'Noto Sans TC', 'Microsoft JhengHei', sans-serif; transition: background 0.12s ease; } .ds-row:hover { background: rgba(255, 255, 255, 0.045); } .ds-row:active { background: rgba(255, 255, 255, 0.08); } .ds-row:focus-visible { outline: 2px solid rgba(10, 132, 255, 0.65); outline-offset: 2px; } .ds-row + .ds-row { border-top: 0.5px solid rgba(84, 84, 88, 0.48); } .ds-row-year { font-weight: 600; font-size: 15px; letter-spacing: -0.01em; font-variant-numeric: tabular-nums; color: #ffffff; min-width: 3.8em; } .ds-row-title { display: block; font-size: 14.5px; font-weight: 600; line-height: 1.4; color: #ffffff; } .ds-row-sub { margin-top: 2px; font-size: 12.5px; line-height: 1.45; color: rgba(235, 235, 245, 0.64); display: flex; align-items: center; gap: 6px; white-space: nowrap; overflow: hidden; } .ds-row-chev { width: 8px; height: 8px; border-right: 2px solid rgba(235, 235, 245, 0.42); border-bottom: 2px solid rgba(235, 235, 245, 0.42); transform: rotate(-45deg); } .ds-dot { flex: 0 0 auto; width: 7px; height: 7px; border-radius: 50%; background: rgba(235, 235, 245, 0.42); } .ds-dot-math { background: #ff453a; }"
+    },
+    {
+      "name": "Subject Dot",
+      "kind": "custom",
+      "refersTo": "subject-dot",
+      "description": "7px identity circles — the only place subject colors may appear; tertiary ink is the fallback.",
+      "html": "<div class=\"ds-ident-demo\"><span class=\"ds-ident-dot is-math\"></span><span class=\"ds-ident-dot is-econ\"></span><span class=\"ds-ident-dot is-chem\"></span><span class=\"ds-ident-dot is-bio\"></span><span class=\"ds-ident-dot is-phys\"></span></div>",
+      "css": ".ds-ident-demo { display: flex; align-items: center; gap: 14px; padding: 14px 16px; background: #1c1c1e; border-radius: 12px; width: fit-content; } .ds-ident-dot { width: 7px; height: 7px; border-radius: 50%; background: rgba(235, 235, 245, 0.42); } .ds-ident-dot.is-math { background: #ff453a; } .ds-ident-dot.is-econ { background: #32d74b; } .ds-ident-dot.is-chem { background: #64d2ff; } .ds-ident-dot.is-bio { background: #ff9f0a; } .ds-ident-dot.is-phys { background: #bf5af2; }"
+    },
+    {
+      "name": "Wheel-Picker Sheet",
+      "kind": "custom",
+      "refersTo": "picker-sheet",
+      "description": "Signature component: bottom sheet with grabber, 取消/完成 links, masked 44px snap wheel with highlight band; the one authored motion (0.42s cubic-bezier(0.32,0.72,0,1)).",
+      "html": "<div class=\"ds-sheet\"><div class=\"ds-sheet-grabber\" aria-hidden=\"true\"></div><div class=\"ds-sheet-head\"><button type=\"button\" class=\"ds-sheet-link\">取消</button><span class=\"ds-sheet-title\">科目</span><button type=\"button\" class=\"ds-sheet-link is-ok\">完成</button></div><div class=\"ds-sheet-window\"><div class=\"ds-sheet-band\" aria-hidden=\"true\"></div><div class=\"ds-sheet-wheel\"><div class=\"ds-sheet-item\">所有</div><div class=\"ds-sheet-item is-on\">數學</div><div class=\"ds-sheet-item\">經濟</div></div></div></div>",
+      "css": ".ds-sheet { width: min(440px, 100%); background: #1c1c1e; border-radius: 16px 16px 0 0; font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'PingFang TC', 'Noto Sans TC', 'Microsoft JhengHei', sans-serif; animation: ds-sheet-up 0.42s cubic-bezier(0.32, 0.72, 0, 1) both; } @keyframes ds-sheet-up { from { transform: translateY(60%); } to { transform: none; } } .ds-sheet-grabber { width: 38px; height: 5px; border-radius: 2.5px; background: rgba(255, 255, 255, 0.22); margin: 8px auto 2px; } .ds-sheet-head { display: flex; align-items: center; justify-content: space-between; padding: 10px 16px 12px; border-bottom: 0.5px solid rgba(84, 84, 88, 0.48); } .ds-sheet-title { font-size: 15px; font-weight: 600; color: #ffffff; } .ds-sheet-link { border: 0; background: transparent; color: #409cff; font: inherit; font-size: 15px; cursor: pointer; padding: 6px 8px; border-radius: 8px; } .ds-sheet-link:hover { background: rgba(255, 255, 255, 0.06); } .ds-sheet-link.is-ok { font-weight: 600; } .ds-sheet-link:focus-visible { outline: 2px solid rgba(10, 132, 255, 0.65); outline-offset: 2px; } .ds-sheet-window { position: relative; height: 220px; overflow: hidden; -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 44px, #000 176px, transparent 220px); mask-image: linear-gradient(180deg, transparent 0, #000 44px, #000 176px, transparent 220px); } .ds-sheet-band { pointer-events: none; position: absolute; left: 14px; right: 14px; top: 88px; height: 44px; border-radius: 8px; background: rgba(255, 255, 255, 0.08); z-index: 1; } .ds-sheet-wheel { height: 220px; overflow-y: auto; scroll-snap-type: y mandatory; position: relative; z-index: 2; scrollbar-width: none; } .ds-sheet-item { height: 44px; line-height: 44px; text-align: center; font-size: 17px; color: rgba(235, 235, 245, 0.75); scroll-snap-align: center; cursor: pointer; } .ds-sheet-item.is-on { color: #ffffff; font-weight: 600; } @media (prefers-reduced-motion: reduce) { .ds-sheet { animation: none; } }"
+    },
+    {
+      "name": "Tinted Capsule Button",
+      "kind": "button",
+      "refersTo": "install-button",
+      "description": "The 安裝 capsule: blue tint fill with accessible-blue text; hidden under display-mode: standalone.",
+      "html": "<button type=\"button\" class=\"ds-install\">安裝</button>",
+      "css": ".ds-install { display: inline-flex; align-items: center; height: 34px; padding: 0 14px; border: 0; border-radius: 17px; background: rgba(10, 132, 255, 0.16); color: #409cff; font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'PingFang TC', 'Noto Sans TC', 'Microsoft JhengHei', sans-serif; font-size: 13.5px; font-weight: 600; cursor: pointer; transition: background 0.15s ease; } .ds-install:hover { background: rgba(10, 132, 255, 0.26); } .ds-install:active { background: rgba(10, 132, 255, 0.32); } .ds-install:focus-visible { outline: 2px solid rgba(10, 132, 255, 0.65); outline-offset: 2px; }"
+    },
+    {
+      "name": "Empty State",
+      "kind": "card",
+      "refersTo": "empty-state",
+      "description": "Grouped-card language for no-results: graphite card, tertiary-ink inline search SVG, secondary 14px message.",
+      "html": "<div class=\"ds-empty\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke-width=\"1.8\" stroke-linecap=\"round\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"7\"></circle><path d=\"m20 20-3.8-3.8\"></path></svg><p>找不到符合條件的試卷。請改選「所有」或放寬篩選。</p></div>",
+      "css": ".ds-empty { padding: 36px 24px; border-radius: 12px; background: #1c1c1e; text-align: center; color: rgba(235, 235, 245, 0.64); font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'PingFang TC', 'Noto Sans TC', 'Microsoft JhengHei', sans-serif; } .ds-empty svg { width: 26px; height: 26px; stroke: rgba(235, 235, 245, 0.42); margin-bottom: 10px; } .ds-empty p { font-size: 14px; line-height: 1.6; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Student's Own Phone",
+    "overview": "The hub disguises itself as a native part of the student's phone. True-black ground, the operating system's own type stack, and Apple's platform component vocabulary — segmented control, inset grouped list, wheel-picker sheet, tinted capsule — so a DSE candidate opening it at night understands it in one second because it behaves like every other app on their device. The world explicitly refuses the gradient-and-glow dark that reads as generated: no glows, no shadows, no decorative color, no loaded fonts.\n\nStructure comes from three quiet devices: a two-step tonal elevation (ground → card → pressed), hairline separators at half a pixel, and a single system-blue accent reserved almost entirely for action — active state, links, and the install capsule's tint. Subject identity never interrupts this calm: each subject rides a 7px colored dot before its name, and nowhere else. Years and counts always render in tabular numerals so figures align down the list.\n\nThe system is built for one surface (the hub index at `docs/hub/`), shipped as a static GitHub Pages site and installed as a PWA; UI copy is standard written Chinese (書面語), a durable brand commitment. Body text is fixed at 15px with no Dynamic-Type-style scaling — a deliberate choice at this scope. The surface's one authored motion is the wheel-picker sheet's ride-up; everything else only transitions on tap state.",
+    "keyCharacteristics": [
+      "True-black ground (#000000) with exactly two elevated tones above it (#1c1c1e cards, #2c2c2e pressed)",
+      "One accent (system blue) plus five subject dot colors that appear only as 7px dots",
+      "System type stack, never a loaded webfont; tabular numerals for years and counts",
+      "iOS component vocabulary: segmented control, inset grouped list (12px radius, 56px rows), wheel-picker bottom sheet, tinted capsule",
+      "Half-pixel hairlines and a functional nav-bar blur; zero shadows, zero gradients as decoration",
+      "書面語 UI copy; standalone PWA display hides the install button; reduced-motion kills the sheet animation"
+    ],
+    "rules": [
+      { "name": "The One Blue Rule", "body": "System Blue is the only accent on any screen. It marks active state, links, and the install capsule — nothing decorative, never a second hue, and blue text is always #409cff on dark.", "section": "colors" },
+      { "name": "The Dots Stay Dots Rule", "body": "Subject colors exist only as 7px dots. They never fill tag backgrounds, never color text, never gradient, never scale up.", "section": "colors" },
+      { "name": "The System Face Rule", "body": "Never load a webfont or name a display face. The stack is the identity; on Apple devices it resolves to SF Pro / PingFang TC and that is the intended look.", "section": "typography" },
+      { "name": "The Tabular Figure Rule", "body": "Every year, count, or numeric column renders `font-variant-numeric: tabular-nums` so figures align vertically (the leading year column also holds a 3.8em minimum so rows align regardless of digits).", "section": "typography" },
+      { "name": "The Two-Step Rule", "body": "Elevation is ground → card → pressed. No third tone, no box-shadow, no glow, no gradient. If a surface needs to feel higher, it is the wrong solution — the list should be shorter.", "section": "elevation" },
+      { "name": "The Hairline Rule", "body": "Dividers are 0.5px separator gray (rgba(84,84,88,0.48)); edges are 0.5px white-alpha. Never 1px, never opaque white, never a gap-instead-of-line.", "section": "shapes" }
+    ],
+    "dos": [
+      "Do keep elevation to the two shipped steps — #1c1c1e for raised surfaces on the #000000 ground, #2c2c2e only for pressed state.",
+      "Do keep every subject color a 7px dot; the dot precedes the subject name and nothing else.",
+      "Do render all years and counts in tabular numerals (`font-variant-numeric: tabular-nums`).",
+      "Do use #409cff (not #0a84ff) whenever blue appears as text on the dark ground.",
+      "Do keep list rows 56px tall whole-row links with the drawn chevron at trailing edge.",
+      "Do theme the browser surface: blue text selection, blue focus-visible ring, thin #3a3a3c scrollbar.",
+      "Do hide the install button under `display-mode: standalone` and kill the sheet animation under `prefers-reduced-motion: reduce`.",
+      "Do write UI copy in 書面語 (standard written Chinese)."
+    ],
+    "donts": [
+      "Don't add shadows, glows, or gradients — the world refuses the gradient-and-glow dark; the only gradient in the code is the wheel's functional alpha mask.",
+      "Don't introduce a second accent hue or use subject colors as fills, text, or tag backgrounds.",
+      "Don't load a webfont or replace the system type stack.",
+      "Don't draw separators heavier than a 0.5px hairline or in opaque white.",
+      "Don't animate beyond the sheet ride-up and tap-state transitions (0.12–0.15s ease).",
+      "Don't scale body text dynamically — 15px fixed is the documented choice at this scope.",
+      "Don't use glyph/icon fonts; icons are inline SVG or drawn CSS borders."
+    ]
+  }
+}

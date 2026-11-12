@@ -1,7 +1,7 @@
-﻿/* ===== DSE Hub service worker â€” ç¶²çµ¡å„ªå…ˆï¼Œæ–·ç·šç”¨å¿«å– ===== */
+/* ===== DSE Hub service worker — 網絡優先，斷線時使用快取 ===== */
 "use strict";
 
-const CACHE = "dsehub-v202611111610";
+const CACHE = "dsehub-v20261112a";
 const SHELL = [
   "./",
   "./hub/",
@@ -38,10 +38,10 @@ self.addEventListener("fetch", (event) => {
   try { url = new URL(req.url); } catch (err) { return; }
   if (url.origin !== self.location.origin) return;
 
-  // è©¦å· PDF ç›´æŽ¥ç”±ç€è¦½å™¨ä¸‹è¼‰ï¼Œå””ä½”é›¢ç·šå¿«å–
+  // 試卷 PDF 直接由瀏覽器下載，不作離線快取
   if (/\.pdf$/i.test(url.pathname)) return;
 
-  // é é¢å°Žè¦½ï¼šå…ˆä¸Šç¶²ï¼Œå¤±æ•—å…ˆç”¨å¿«å–ï¼ˆé›¢ç·šéƒ½é–‹å¾—è¿”ï¼‰
+  // 頁面導航：先連網，失敗時使用快取（離線仍可開啟）
   if (req.mode === "navigate") {
     event.respondWith(
       fetch(req)
@@ -59,7 +59,7 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
-  // éœæ…‹è³‡æºï¼šç¶²çµ¡å„ªå…ˆï¼ˆæ›´æ–°å³è¦‹ï¼‰ï¼Œé›¢ç·šæ™‚ç”¨å¿«å–
+  // 靜態資源：網絡優先（更新即時可見），離線時使用快取
   event.respondWith(
     fetch(req)
       .then((res) => {

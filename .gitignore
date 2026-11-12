@@ -39,3 +39,20 @@ _work_*/
 
 # 水印 idempotency 標記（非交付品）
 *.dsehubwm
+
+# impeccable-ignore-start
+# Ephemeral output, runtime state, and per-dev overrides.
+# Shared artifacts stay tracked: config.json, live/config.json,
+# design.json, surfaces/*.md, critique/*.md.
+**/.impeccable/config.local.json
+**/.impeccable/hook.cache.json
+**/.impeccable/hook.pending.json
+**/.impeccable/*.png
+**/.impeccable/review/
+**/.impeccable/questions/
+**/.impeccable/mocks/
+**/.impeccable/live/
+**/.impeccable/*.cjs
+# impeccable-ignore-end
+node_modules/
+package-lock.json

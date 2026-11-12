@@ -2,12 +2,9 @@
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>DSE Hub · 香港中學文憑歷屆試題資料庫</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
-<meta name="theme-color" content="#0b1220">
+<meta name="theme-color" content="#000000">
 <link rel="manifest" href="../manifest.webmanifest">
 <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../icons/icon-192.png">
@@ -18,49 +15,43 @@
 <meta name="apple-mobile-web-app-title" content="DSE Hub">
 <meta name="application-name" content="DSE Hub">
 <meta name="description" content="DSE 數學、經濟、化學、生物、物理歷屆試題，按課題集中溫習。">
-<link rel="stylesheet" href="style.css?v=20261105o">
+<link rel="stylesheet" href="style.css?v=20261112a">
 </head>
 <body>
-<header class="hero">
-  <div class="hero-glow" aria-hidden="true"></div>
-  <div class="hero-inner">
-    <div class="hero-head">
-      <p class="brand">DSE Hub</p>
-      <button type="button" class="install-btn" data-install-app title="安裝 DSE Hub 到主畫面">
-        <span>一鍵安裝</span>
-      </button>
+<header class="top">
+  <div class="top-row">
+    <p class="brand">DSE Hub</p>
+    <button type="button" class="install-btn" data-install-app title="安裝 DSE Hub 至主畫面">
+      <span>安裝</span>
+    </button>
+  </div>
+  <h1>香港中學文憑歷屆試題資料庫</h1>
+  <div class="install-tip" id="installTip" hidden>
+    <div class="install-tip-body">
+      <strong>一鍵加入主畫面</strong>
+      <span>iPhone／iPad：使用 Safari「分享」→「加入主畫面」。Android／電腦：瀏覽器選單 →「安裝應用程式」。</span>
     </div>
-    <div class="install-tip" id="installTip" hidden>
-      <div class="install-tip-body">
-        <strong>一鍵加到主畫面</strong>
-        <span>iPhone／iPad：用 Safari「分享」→「加到主畫面」。Android／電腦 Chrome、Edge：瀏覽器選單 →「安裝應用程式」。</span>
-      </div>
-      <button type="button" class="install-tip-x" data-install-close aria-label="閂">×</button>
-    </div>
-    <h1>香港中學文憑歷屆試題資料庫</h1>
+    <button type="button" class="install-tip-x" data-install-close aria-label="關閉"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
   </div>
 </header>
 
 <nav class="filters" aria-label="篩選">
   <div class="filters-inner">
-    <div class="titlebar">
-      <span class="filters-label">搵卷</span>
-      <div class="seg" id="modeSeg">
-        <button type="button" data-mode="year" class="on">按年份</button>
-        <button type="button" data-mode="topic">按課題</button>
-      </div>
+    <div class="seg" id="modeSeg" role="tablist">
+      <button type="button" data-mode="year" class="on" role="tab" aria-selected="true">按年份</button>
+      <button type="button" data-mode="topic" role="tab" aria-selected="false">按課題</button>
     </div>
     <div class="bar" id="yearBar">
       <div class="field">
-        <label>科目</label>
+        <label for="bSubj">科目</label>
         <button type="button" class="reel-btn" id="bSubj" data-key="subject">所有</button>
       </div>
       <div class="field">
-        <label id="l2">年份</label>
+        <label for="bYear" id="l2">年份</label>
         <button type="button" class="reel-btn" id="bYear" data-key="year">所有</button>
       </div>
       <div class="field" id="fPaper">
-        <label>卷別</label>
+        <label for="bPaper">卷別</label>
         <button type="button" class="reel-btn" id="bPaper" data-key="paper">所有</button>
       </div>
     </div>
@@ -71,12 +62,13 @@
   <section id="result" class="paper-list" aria-live="polite"></section>
 </main>
 
-<footer>站內只放索引、連結同課題標籤，唔存放試卷原卷 · 只顯示資料庫已有內容</footer>
+<footer>本站僅提供索引與連結，不存放試卷原卷 · 只顯示資料庫已有內容</footer>
 
-<!-- 滾輪（Reel） -->
+<!-- 滾輪選擇器 -->
 <div class="reel-overlay" id="reel" hidden>
   <div class="reel-backdrop" id="reelBackdrop"></div>
   <div class="reel-sheet" role="dialog" aria-modal="true" aria-labelledby="reelTitle">
+    <div class="reel-grabber" aria-hidden="true"></div>
     <div class="reel-head">
       <button type="button" class="reel-link" id="reelCancel">取消</button>
       <span id="reelTitle">科目</span>
@@ -89,9 +81,9 @@
   </div>
 </div>
 
-<script src="../data.js?v=202611111610"></script>
-<script src="data.js?v=202611111610"></script>
-<script src="app.js?v=20261105n"></script>
-<script src="../pwa.js?v=202611111610"></script>
+<script src="../data.js?v=20261112a"></script>
+<script src="data.js?v=20261112a"></script>
+<script src="app.js?v=20261112a"></script>
+<script src="../pwa.js?v=20261112a"></script>
 </body>
 </html>

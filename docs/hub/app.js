@@ -4,7 +4,7 @@
 const PLACE = "";       // 請選擇
 const ALL = "__ALL__";  // 所有
 
-const ICON_VIEW = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5c-7 0-10 7-10 7s3 7 10 7 10-7 10-7-3-7-10-7zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0-6.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z"/></svg>`;
+const ICON_SEARCH = `<svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.8-3.8"/></svg>`;
 
 const state = {
   mode: "year",
@@ -62,6 +62,7 @@ const SID_SUBJECT = {
   bio: "生物",
   phys: "物理",
 };
+const NAME_TO_SID = Object.fromEntries(Object.entries(SID_SUBJECT).map(([sid, name]) => [name, sid]));
 const SUBJECT_PREFIX = {
   數學: "",
   經濟: "econ",
@@ -85,7 +86,7 @@ function bankQuestions(sid) {
   return qs.filter((q) => q.subject === subj && q.type === "題目");
 }
 
-/* 課題選項：用題庫真實 tags（有題先出現），按題數多至少 */
+/* 課題選項：用題庫真實 tags（有題目才出現），按題數由多至少 */
 function realTagsFor(sid) {
   const counts = new Map();
   for (const q of bankQuestions(sid)) {
@@ -183,6 +184,7 @@ function syncButtons() {
     const b = btns[k];
     const v = k === "year" && state.mode === "topic" ? state.topic : state[k];
     b.classList.toggle("placeholder", v === PLACE || v == null);
+    b.classList.toggle("filtered", !(v === PLACE || v === ALL || v == null));
   });
 }
 
@@ -190,52 +192,35 @@ function viewHrefFor(r) {
   return BANK_URL + r.hash;
 }
 
-function viewIconHtml(href) {
-  return `<a class="icon-btn view" href="${href}" target="_blank" rel="noopener" title="檢視" aria-label="檢視">${ICON_VIEW}</a>`;
-}
-
 function rowHtml(r) {
   const sn = shortName(r.name);
   const href = viewHrefFor(r);
   return `
-    <article class="paper-row">
-      <a class="paper-main" href="${href}" target="_blank" rel="noopener" title="直接檢視題目">
-        <div class="paper-year">${r.year}</div>
-        <div class="paper-body">
-          <div class="paper-tags">
-            <span class="tag subj">${sn}</span>
-            <span class="tag cat">${r.paper}</span>
-            <span class="tag lang">${r.lang}</span>
-          </div>
-          <div class="paper-title">文憑試 DSE ${sn} ${r.year} · ${r.paper}（${r.lang}）</div>
-          <div class="paper-sub">${r.name}</div>
-        </div>
-      </a>
-      <div class="paper-actions">${viewIconHtml(href)}</div>
-    </article>`;
+    <a class="paper-row" href="${href}" target="_blank" rel="noopener" title="檢視 ${sn} ${r.year} ${r.paper}">
+      <span class="paper-year">${r.year}</span>
+      <span class="paper-body">
+        <span class="paper-title">文憑試 DSE ${sn} · ${r.paper}（${r.lang}）</span>
+        <span class="paper-sub"><span class="dot ${r.id}"></span><span class="txt">${esc(r.name)} · ${esc(r.lang)}</span></span>
+      </span>
+      <span class="paper-chev" aria-hidden="true"></span>
+    </a>`;
 }
 
 function questionRowHtml(q, topic) {
   const href = questionHref(q, topic);
   const pLabel = `Paper ${paperNo(q.paper)}`;
-  const tags = (q.tags || []).slice(0, 3).map((t) => `<span class="tag cat">${esc(t)}</span>`).join("");
+  const sid = NAME_TO_SID[q.subject] || "math";
+  const tags = (q.tags || []).slice(0, 3).map(esc).join("、");
+  const sub = tags || esc(q.title || "");
   return `
-    <article class="paper-row">
-      <a class="paper-main" href="${href}" target="_blank" rel="noopener" title="直接檢視題目">
-        <div class="paper-year">${q.year}</div>
-        <div class="paper-body">
-          <div class="paper-tags">
-            <span class="tag subj">${esc(q.subject)}</span>
-            <span class="tag lang">${esc(pLabel)}</span>
-            <span class="tag live">Q${q.qno}</span>
-            ${tags}
-          </div>
-          <div class="paper-title">${esc(q.subject)} ${q.year} ${esc(pLabel)} Q${q.qno}</div>
-          <div class="paper-sub">${esc(q.title || "")}</div>
-        </div>
-      </a>
-      <div class="paper-actions">${viewIconHtml(href)}</div>
-    </article>`;
+    <a class="paper-row" href="${href}" target="_blank" rel="noopener" title="檢視 ${esc(q.subject)} ${q.year} ${pLabel} Q${q.qno}">
+      <span class="paper-year">${q.year}</span>
+      <span class="paper-body">
+        <span class="paper-title">${esc(q.subject)} ${pLabel} Q${q.qno}</span>
+        <span class="paper-sub"><span class="dot ${sid}"></span><span class="txt">${sub}</span></span>
+      </span>
+      <span class="paper-chev" aria-hidden="true"></span>
+    </a>`;
 }
 
 function esc(s) {
@@ -249,6 +234,7 @@ function esc(s) {
 function emptyHtml(msg) {
   return `
     <div class="empty">
+      ${ICON_SEARCH}
       <p>${msg}</p>
     </div>`;
 }
@@ -279,7 +265,7 @@ function renderYear() {
 
   const rows = sortRows(filteredCatalog());
   if (!rows.length) {
-    resultEl.innerHTML = emptyHtml("呢組條件喺資料庫搵唔到卷。試下改「所有」或者放寬條件。");
+    resultEl.innerHTML = emptyHtml("找不到符合條件的試卷。請改選「所有」或放寬篩選。");
     return;
   }
   const count = `<p class="list-count">共 ${rows.length} 卷</p>`;
@@ -294,33 +280,35 @@ function renderTopic() {
   const sid = state.subject === PLACE || state.subject === ALL ? null : state.subject;
 
   if (!sid) {
-    resultEl.innerHTML = emptyHtml("按課題：請先用滾輪揀一個資料庫已有嘅科目。");
+    resultEl.innerHTML = emptyHtml("按課題：請先選擇一個資料庫已有的科目。");
     return;
   }
   if (!bankQuestions(sid).length) {
-    resultEl.innerHTML = emptyHtml("呢科暫時未載入題目資料。");
+    resultEl.innerHTML = emptyHtml("此科目暫未載入題目資料。");
     return;
   }
   if (state.topic === PLACE) {
-    resultEl.innerHTML = emptyHtml("請揀課題，或揀「所有」列出呢科全部題目。");
+    resultEl.innerHTML = emptyHtml("請選擇課題，或選「所有」列出此科目的全部題目。");
     return;
   }
 
   const rows = sortQuestions(questionsForTopic(sid, state.topic));
   if (!rows.length) {
-    resultEl.innerHTML = emptyHtml("呢個課題暫時冇對應題目。");
+    resultEl.innerHTML = emptyHtml("此課題暫無對應題目。");
     return;
   }
 
   const topicLabel = state.topic === ALL ? "全部課題" : state.topic;
-  const count = `<p class="list-count">共 ${rows.length} 題 · ${topicLabel}（撳列或眼仔檢視；入去後可上一題／下一題集中溫習）</p>`;
+  const count = `<p class="list-count">共 ${rows.length} 題 · ${topicLabel}（進入後可上一題／下一題集中溫習）</p>`;
   resultEl.innerHTML = count + rows.map((q) => questionRowHtml(q, state.topic)).join("");
 }
 
 function render() {
-  modeSeg.querySelectorAll("button").forEach((b) =>
-    b.classList.toggle("on", b.dataset.mode === state.mode)
-  );
+  modeSeg.querySelectorAll("button").forEach((b) => {
+    const on = b.dataset.mode === state.mode;
+    b.classList.toggle("on", on);
+    b.setAttribute("aria-selected", String(on));
+  });
   syncButtons();
   state.mode === "year" ? renderYear() : renderTopic();
 }
@@ -329,14 +317,17 @@ function render() {
 const reel = $("reel");
 const reelWheel = $("reelWheel");
 const reelTitle = $("reelTitle");
-const ITEM_H = 40;
+const ITEM_H = 44;
 let reelKey = null;
 let reelOpts = [];
 let reelIndex = 0;
 let reelSnapTimer = null;
 
-function openReel(key) {
+let reelInvoker = null;
+
+function openReel(key, invoker) {
   reelKey = key;
+  reelInvoker = invoker || null;
   reelOpts = optionsFor(key);
   const cur = key === "topic" ? state.topic : state[key];
   let idx = reelOpts.findIndex((o) => String(o.value) === String(cur));
@@ -354,6 +345,7 @@ function openReel(key) {
   requestAnimationFrame(() => {
     reelWheel.scrollTop = idx * ITEM_H;
     highlightReel();
+    $("reelDone").focus();
   });
 }
 
@@ -361,6 +353,10 @@ function closeReel() {
   reel.hidden = true;
   document.body.classList.remove("reel-open");
   reelKey = null;
+  if (reelInvoker) {
+    reelInvoker.focus();
+    reelInvoker = null;
+  }
 }
 
 function highlightReel() {
@@ -415,7 +411,7 @@ $("reelCancel").addEventListener("click", closeReel);
 $("reelBackdrop").addEventListener("click", closeReel);
 
 Object.values(btns).forEach((btn) => {
-  btn.addEventListener("click", () => openReel(btn.dataset.key));
+  btn.addEventListener("click", () => openReel(btn.dataset.key, btn));
 });
 
 modeSeg.addEventListener("click", (e) => {

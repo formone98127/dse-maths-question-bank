@@ -1,11 +1,11 @@
-/* ===== DSE Hub — 只放電子題庫已有嘅卷 ===== */
+/* ===== DSE Hub — 只放電子題庫已有的試卷 ===== */
 
 const BANK_URL = "https://formone98127.github.io/dse-maths-question-bank/";
 
 /**
- * 每條 = 資料庫真實有嘅一卷
+ * 每條 = 資料庫真實有的一卷
  * lang: 中文 | 英文
- * hash: 逐題睇深連結
+ * hash: 逐題深層連結
  */
 const CATALOG = [
   { id: "math", name: "數學（必修部分）", year: 2016, paper: "卷二", lang: "英文", hash: "#2016P2Q1" },
@@ -74,7 +74,7 @@ const CATALOG = [
   { id: "phys", name: "物理", year: 2024, paper: "卷二", lang: "中文", hash: "#phys2024P2Q11" },
 ];
 
-/* 按課題：只為資料庫有嘅科目提供（葉節點對齊電子題庫 tags） */
+/* 按課題：只為資料庫有的科目提供（葉節點對齊電子題庫 tags） */
 const TOPICS = {
   math: {
     "數與代數": ["百分法", "指數與對數", "比、率與比例", "多項式（續）", "數系", "方程與不等式", "函數與圖像", "數列", "變分"],
@@ -137,7 +137,7 @@ const TOPICS = {
   },
 };
 
-/* 全卷 PDF → 本站直連檔（撳掣即下載，唔跳 dsepaper.hk 頁） */
+/* 全卷 PDF → 本站直連檔（點擊即下載，不跳轉 dsepaper.hk 頁面） */
 const PDF_LINKS = {
   "math|2012|卷一": "../papers/math-2012-p1.pdf",
   "math|2012|卷二": "../papers/math-2012-p2.pdf",

@@ -1,7 +1,7 @@
 /* ===== DSE Hub service worker — 網絡優先，斷線時使用快取 ===== */
 "use strict";
 
-const CACHE = "dsehub-v20261112m";
+const CACHE = "dsehub-v20261112q";
 const SHELL = [
   "./",
   "./hub/",

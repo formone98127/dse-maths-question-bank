@@ -34,11 +34,16 @@ jobs:
             set net:reconnect-interval-base 5
             set net:timeout 30
             open -u ${FTP_USER},${FTP_PASS} ftp://${FTP_HOST}
-            # Push hub visual changes first so the live site updates quickly
-            mkdir -p hub
+            # Force-overwrite files users notice immediately; --only-newer can skip or leave CDN-stale assets
+            mkdir -p hub 2012P2_figs
             put -O hub docs/hub/style.css
             put -O hub docs/hub/index.html
+            put -O hub docs/hub/app.js
+            put -O hub docs/hub/data.js
             put -O / docs/sw.js
+            put -O / docs/data.js
+            put -O / docs/index.html
+            mirror -R --verbose docs/2012P2_figs/ 2012P2_figs/
             mirror -R --verbose --only-newer --exclude-glob .git/ docs/ /
             bye
           "

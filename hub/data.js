@@ -1,0 +1,153 @@
+/* ===== DSE Hub — 只放電子題庫已有的試卷 ===== */
+
+const BANK_URL = "https://formone98127.github.io/dse-maths-question-bank/";
+
+/**
+ * 每條 = 資料庫真實有的一卷
+ * lang: 中文 | 英文
+ * hash: 逐題深層連結
+ */
+const CATALOG = [
+  { id: "math", name: "數學（必修部分）", year: 2016, paper: "卷二", lang: "英文", hash: "#2016P2Q1" },
+  { id: "math", name: "數學（必修部分）", year: 2017, paper: "卷二", lang: "英文", hash: "#2017P2Q1" },
+  { id: "math", name: "數學（必修部分）", year: 2022, paper: "卷二", lang: "英文", hash: "#2022P2Q1" },
+  { id: "math", name: "數學（必修部分）", year: 2023, paper: "卷二", lang: "英文", hash: "#2023P2Q1" },
+  { id: "math", name: "數學（必修部分）", year: 2018, paper: "卷二", lang: "英文", hash: "#2018P2Q1" },
+  { id: "math", name: "數學（必修部分）", year: 2019, paper: "卷二", lang: "英文", hash: "#2019P2Q1" },
+  { id: "math", name: "數學（必修部分）", year: 2020, paper: "卷二", lang: "中文", hash: "#2020P2Q1" },
+  { id: "math", name: "數學（必修部分）", year: 2021, paper: "卷二", lang: "英文", hash: "#2021P2Q1" },
+  { id: "math", name: "數學（必修部分）", year: 2018, paper: "卷一", lang: "英文", hash: "#2018P1Q1" },
+  { id: "math", name: "數學（必修部分）", year: 2014, paper: "卷二", lang: "英文", hash: "#2014P2Q1" },
+  { id: "math", name: "數學（必修部分）", year: 2025, paper: "卷二", lang: "英文", hash: "#2025P2Q1" },
+  /* 數學（中文卷） */
+  { id: "math", name: "數學（必修部分）", year: 2012, paper: "卷一", lang: "中文", hash: "#2012P1Q1" },
+  { id: "math", name: "數學（必修部分）", year: 2012, paper: "卷二", lang: "中文", hash: "#2012P2Q1" },
+  { id: "math", name: "數學（必修部分）", year: 2013, paper: "卷一", lang: "中文", hash: "#2013P1Q1" },
+  { id: "math", name: "數學（必修部分）", year: 2013, paper: "卷二", lang: "中文", hash: "#2013P2Q1" },
+  { id: "math", name: "數學（必修部分）", year: 2014, paper: "卷一", lang: "中文", hash: "#2014P1Q1" },
+  { id: "math", name: "數學（必修部分）", year: 2015, paper: "卷二", lang: "中文", hash: "#2015P2Q1" },
+  /* 經濟（英文卷） */
+  { id: "econ", name: "經濟", year: 2015, paper: "卷一", lang: "英文", hash: "#econ2015P1Q1" },
+  { id: "econ", name: "經濟", year: 2017, paper: "卷一", lang: "英文", hash: "#econ2017P1Q1" },
+  { id: "econ", name: "經濟", year: 2020, paper: "卷一", lang: "英文", hash: "#econ2020P1Q1" },
+  /* 化學／生物／物理（第 2 層中文；先上線後校對） */
+  { id: "chem", name: "化學", year: 2024, paper: "卷一甲", lang: "中文", hash: "#chem2024P1AQ1" },
+  { id: "chem", name: "化學", year: 2024, paper: "卷一乙", lang: "中文", hash: "#chem2024P1BQ1" },
+  { id: "chem", name: "化學", year: 2024, paper: "卷二", lang: "中文", hash: "#chem2024P2Q1" },
+  { id: "chem", name: "化學", year: 2023, paper: "卷一甲", lang: "中文", hash: "#chem2023P1AQ1" },
+  { id: "chem", name: "化學", year: 2023, paper: "卷一乙", lang: "中文", hash: "#chem2023P1BQ1" },
+  { id: "chem", name: "化學", year: 2023, paper: "卷二", lang: "中文", hash: "#chem2023P2Q1" },
+  { id: "chem", name: "化學", year: 2022, paper: "卷一甲", lang: "中文", hash: "#chem2022P1AQ1" },
+  { id: "chem", name: "化學", year: 2022, paper: "卷一乙", lang: "中文", hash: "#chem2022P1BQ1" },
+  { id: "chem", name: "化學", year: 2022, paper: "卷二", lang: "中文", hash: "#chem2022P2Q1" },
+  { id: "chem", name: "化學", year: 2021, paper: "卷一甲", lang: "中文", hash: "#chem2021P1AQ1" },
+  { id: "chem", name: "化學", year: 2021, paper: "卷一乙", lang: "中文", hash: "#chem2021P1BQ1" },
+  { id: "chem", name: "化學", year: 2021, paper: "卷二", lang: "中文", hash: "#chem2021P2Q1" },
+  { id: "chem", name: "化學", year: 2020, paper: "卷一甲", lang: "中文", hash: "#chem2020P1AQ1" },
+  { id: "chem", name: "化學", year: 2020, paper: "卷一乙", lang: "中文", hash: "#chem2020P1BQ1" },
+  { id: "chem", name: "化學", year: 2020, paper: "卷二", lang: "中文", hash: "#chem2020P2Q1" },
+  { id: "chem", name: "化學", year: 2019, paper: "卷一甲", lang: "中文", hash: "#chem2019P1AQ1" },
+  { id: "chem", name: "化學", year: 2019, paper: "卷一乙", lang: "中文", hash: "#chem2019P1BQ1" },
+  { id: "chem", name: "化學", year: 2019, paper: "卷二", lang: "中文", hash: "#chem2019P2Q1" },
+  { id: "chem", name: "化學", year: 2018, paper: "卷一甲", lang: "中文", hash: "#chem2018P1AQ1" },
+  { id: "chem", name: "化學", year: 2018, paper: "卷一乙", lang: "中文", hash: "#chem2018P1BQ1" },
+  { id: "chem", name: "化學", year: 2018, paper: "卷二", lang: "中文", hash: "#chem2018P2Q1" },
+  { id: "chem", name: "化學", year: 2017, paper: "卷一甲", lang: "中文", hash: "#chem2017P1AQ1" },
+  { id: "chem", name: "化學", year: 2017, paper: "卷一乙", lang: "中文", hash: "#chem2017P1BQ1" },
+  { id: "chem", name: "化學", year: 2017, paper: "卷二", lang: "中文", hash: "#chem2017P2Q1" },
+  { id: "chem", name: "化學", year: 2016, paper: "卷一甲", lang: "中文", hash: "#chem2016P1AQ1" },
+  { id: "chem", name: "化學", year: 2016, paper: "卷一乙", lang: "中文", hash: "#chem2016P1BQ1" },
+  { id: "chem", name: "化學", year: 2016, paper: "卷二", lang: "中文", hash: "#chem2016P2Q1" },
+  { id: "chem", name: "化學", year: 2015, paper: "卷一甲", lang: "中文", hash: "#chem2015P1AQ1" },
+  { id: "chem", name: "化學", year: 2015, paper: "卷一乙", lang: "中文", hash: "#chem2015P1BQ1" },
+  { id: "chem", name: "化學", year: 2015, paper: "卷二", lang: "中文", hash: "#chem2015P2Q1" },
+  { id: "chem", name: "化學", year: 2014, paper: "卷一甲", lang: "中文", hash: "#chem2014P1AQ1" },
+  { id: "chem", name: "化學", year: 2014, paper: "卷一乙", lang: "中文", hash: "#chem2014P1BQ1" },
+  { id: "chem", name: "化學", year: 2014, paper: "卷二", lang: "中文", hash: "#chem2014P2Q1" },
+  { id: "chem", name: "化學", year: 2013, paper: "卷一甲", lang: "中文", hash: "#chem2013P1AQ1" },
+  { id: "chem", name: "化學", year: 2013, paper: "卷一乙", lang: "中文", hash: "#chem2013P1BQ1" },
+  { id: "chem", name: "化學", year: 2013, paper: "卷二", lang: "中文", hash: "#chem2013P2Q1" },
+  { id: "chem", name: "化學", year: 2012, paper: "卷一甲", lang: "中文", hash: "#chem2012P1AQ1" },
+  { id: "chem", name: "化學", year: 2012, paper: "卷一乙", lang: "中文", hash: "#chem2012P1BQ1" },
+  { id: "chem", name: "化學", year: 2012, paper: "卷二", lang: "中文", hash: "#chem2012P2Q1" },
+  { id: "bio", name: "生物", year: 2023, paper: "卷一", lang: "中文", hash: "#bio2023P1Q1" },
+  { id: "bio", name: "生物", year: 2023, paper: "卷二", lang: "中文", hash: "#bio2023P2Q1" },
+  { id: "phys", name: "物理", year: 2024, paper: "卷一", lang: "中文", hash: "#phys2024P1Q1" },
+  { id: "phys", name: "物理", year: 2024, paper: "卷二", lang: "中文", hash: "#phys2024P2Q11" },
+];
+
+/* 按課題：只為資料庫有的科目提供（葉節點對齊電子題庫 tags） */
+const TOPICS = {
+  math: {
+    "數與代數": ["百分法", "指數與對數", "比、率與比例", "多項式（續）", "數系", "方程與不等式", "函數與圖像", "數列", "變分"],
+    "度量、圖形與空間": ["三角學與解三角形", "求積法", "坐標幾何：直線", "坐標幾何：圓", "圓形幾何", "軌跡", "幾何變換"],
+    "數據處理": ["統計圖表", "集中趨勢與離差", "概率", "排列與組合"],
+  },
+  econ: {
+    "基本經濟概念": [
+      "機會成本", "稀少性", "基本經濟問題", "實證陳述", "規範陳述",
+      "經濟制度", "市場經濟", "市場機制", "價格機制", "價格機能", "價格功能",
+      "物物交換", "資源配置", "其他因素不變",
+    ],
+    "生產與企業": [
+      "公司種類", "私人有限公司", "業務擴展", "規模經濟", "垂直合併", "分散風險",
+      "企業家", "利潤", "利潤極大化", "邊際成本", "邊際回報遞減",
+      "總產量", "平均產量", "固定成本", "可變成本", "成本",
+      "人力資本", "勞動力", "勞動供給", "勞動生產力", "勞工流動性",
+      "生產要素回報", "外部經濟",
+    ],
+    "市場與價格": [
+      "供求", "供求均衡", "供給", "需求", "需求定律", "需求彈性", "彈性", "弧彈性",
+      "完全無彈性供給", "競爭供給", "聯合供給", "替代品", "互補品", "劣等物品",
+      "沿曲線移動", "消費者剩餘", "剩餘", "短缺",
+      "價格上限", "價格下限", "黑市", "市場干預", "限額", "進口配額",
+      "關稅", "從量稅", "間接稅", "銷售稅", "煙草稅",
+      "補貼", "單位補貼", "補貼得益", "無謂損失", "稅負", "稅負歸宿",
+    ],
+    "市場結構與競爭": [
+      "市場結構", "完全競爭", "壟斷性競爭", "寡頭壟斷", "價格歧視", "差別取價", "相互依存",
+    ],
+    "效率、公平與政府角色": [
+      "公營物品", "私營物品", "外部性", "界外效應", "私人利益", "社會利益", "社會剩餘", "私人解決",
+      "收入不均", "收入分配", "收入差距", "堅尼系數", "羅倫茲曲線", "財富再分配",
+      "稅制", "稅務原則", "稅務寬免", "稅種", "所得稅", "累進稅", "累退稅", "香港稅制", "稅收",
+    ],
+    "經濟表現量度": [
+      "GDP", "GDP與GNP", "名義GDP", "實質GDP", "人均GDP", "本地生產總值", "國民收入",
+      "就業結構", "產業結構", "宏觀指標",
+    ],
+    "國民收入與價格水平": [
+      "總需求", "總供給", "總供需", "AD-AS", "AD曲線移動", "SRAS", "長期總供給",
+      "潛在產出", "產出缺口", "通縮缺口", "緊縮缺口", "實質產出", "總開支", "總收入",
+    ],
+    "貨幣與銀行": [
+      "貨幣", "貨幣功能", "貨幣供應", "貨幣創造", "貨幣基礎", "貨幣市場",
+      "貨幣需求", "貨幣資產需求", "資產需求", "持有貨幣成本", "價值儲藏", "流動性",
+      "存款創造", "銀行", "銀行乘數", "銀行體系", "超額儲備", "現金流失",
+      "香港貨幣", "香港貨幣制度", "聯繫匯率",
+      "利率", "名義利率", "實質利率", "利息", "債券", "股份",
+    ],
+    "宏觀經濟問題與政策": [
+      "通脹", "未預期通縮", "失業", "失業率", "就業不足",
+      "財政政策", "貨幣政策", "緊縮政策", "穩定政策", "貨幣數量理論",
+    ],
+    "國際貿易與金融": [
+      "國際貿易", "比較優勢", "絕對優勢", "貿易得益", "貿易條件",
+      "小國開放經濟", "開放經濟", "進口", "匯率",
+      "經常帳", "國際收支", "國際收支平衡", "亞當斯密",
+    ],
+  },
+};
+
+/* 全卷 PDF → 本站直連檔（點擊即下載，不跳轉 dsepaper.hk 頁面） */
+const PDF_LINKS = {
+  "math|2012|卷一": "../papers/math-2012-p1.pdf",
+  "math|2012|卷二": "../papers/math-2012-p2.pdf",
+  "math|2013|卷一": "../papers/math-2013-p1.pdf",
+  "math|2013|卷二": "../papers/math-2013-p2.pdf",
+  "math|2014|卷一": "../papers/math-2014-p1.pdf",
+  "math|2015|卷二": "../papers/math-2015-p2.pdf",
+  "econ|2015|卷一": "../papers/econ-2015-p1.pdf",
+  "econ|2017|卷一": "../papers/econ-2017-p1.pdf",
+  "econ|2020|卷一": "../papers/econ-2020-p1.pdf",
+};

@@ -690,3 +690,26 @@ footer a:hover { text-decoration: underline; }
 footer {
   line-height: 1.7;
 }
+
+.topic-guide {
+  margin: 8px 0 22px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--bg-elev);
+  padding: 12px 16px 14px;
+}
+.topic-guide h2 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 8px;
+  color: var(--ink);
+}
+.topic-guide p {
+  color: var(--mut);
+  margin: 0 0 8px;
+  font-size: 14px;
+  line-height: 1.65;
+}
+.topic-guide p:last-child {
+  margin-bottom: 0;
+}

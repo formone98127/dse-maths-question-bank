@@ -2,7 +2,7 @@
 
 DSE 數學必修部分電子題庫 — 題目清洗（Markdown + LaTeX）＋ 插圖 matplotlib 1:1 向量重繪（SVG）＋ 線上檢索。
 
-**線上檢索**：GitHub Pages → `docs/index.html`（關鍵字搜尋 + 年份/卷別/題目/解答/課題標籤篩選）
+**線上檢索**（官方網站）：https://hkdse.exampaper.cloud/ （Hub：https://hkdse.exampaper.cloud/hub/）。按關鍵字、年份、卷別、題目、解答同課題標籤篩選。GitHub Pages 亦有獨立複本，但對外請用官方網址。
 
 ## 內容
 

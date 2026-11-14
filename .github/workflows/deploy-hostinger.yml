@@ -1,5 +1,17 @@
 name: Deploy docs to Hostinger
 
+# 長期機制：任何 push 到 main 而改到 docs/ 的檔案，會自動同步到 hkdse.exampaper.cloud。
+#
+# 設計重點（每一點都係因為實際出過事）：
+#  1. 只上傳「這個 commit 真正改過的檔案」——以前用 `mirror --only-newer` 掃全站
+#     幾千個檔，FTP 比對時間戳要幾分鐘，而且會因為時間戳相同而跳過更新的檔案。
+#  2. 永遠強制覆寫使用者即刻見到的那幾個檔（data.js / index.html / sw.js…），
+#     因為 CDN 與瀏覽器快取會令舊版繼續出現。
+#  3. 上傳完自動驗證線上檔案 —— 驗不到就 fail，唔會靜靜當成功。
+#  4. 刪除的檔案會一併 rm，避免已下架的卷繼續流傳。
+#
+# 手動全站同步：Actions → Deploy docs to Hostinger → Run workflow → full_mirror = true
+
 on:
   push:
     branches: [main]
@@ -7,43 +19,149 @@ on:
       - "docs/**"
       - ".github/workflows/deploy-hostinger.yml"
   workflow_dispatch:
+    inputs:
+      full_mirror:
+        description: "全站鏡像（慢，只在懷疑站上檔案不同步時用）"
+        type: boolean
+        default: false
+
+concurrency:
+  group: hostinger-deploy
+  cancel-in-progress: false
+
+permissions:
+  contents: read
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    env:
+      FTP_HOST: 147.93.109.152
+      FTP_USER: u187459660.hkdseupload
+      SITE: https://hkdse.exampaper.cloud
     steps:
       - uses: actions/checkout@v4
-      - name: Upload docs/ to hkdse.exampaper.cloud
+        with:
+          fetch-depth: 2
+
+      - name: Install lftp
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq lftp
+
+      - name: Work out what changed under docs/
+        id: changes
+        run: |
+          set -euo pipefail
+          FULL="${{ github.event.inputs.full_mirror }}"
+          BEFORE="${{ github.event.before }}"
+          SHA="${{ github.sha }}"
+          : > /tmp/upload.txt
+          : > /tmp/delete.txt
+          if [ "$FULL" = "true" ] || [ -z "$BEFORE" ] || [ "$BEFORE" = "0000000000000000000000000000000000000000" ] \
+             || ! git cat-file -e "$BEFORE^{commit}" 2>/dev/null; then
+            echo "mode=full"
+            git ls-files docs/ | sed 's#^docs/##' > /tmp/upload.txt
+          else
+            echo "mode=incremental ($BEFORE..$SHA)"
+            git diff --name-only --diff-filter=ACMR "$BEFORE" "$SHA" -- docs/ | sed 's#^docs/##' > /tmp/upload.txt
+            git diff --name-only --diff-filter=D "$BEFORE" "$SHA" -- docs/ | sed 's#^docs/##' > /tmp/delete.txt
+          fi
+          # 使用者即刻見到的檔一律重上，即使這個 commit 冇改
+          for f in data.js hub/data.js hub/index.html hub/app.js hub/style.css index.html sw.js pwa.js; do
+            [ -f "docs/$f" ] && echo "$f" >> /tmp/upload.txt
+          done
+          sort -u -o /tmp/upload.txt /tmp/upload.txt
+          echo "upload $(wc -l < /tmp/upload.txt) file(s), delete $(wc -l < /tmp/delete.txt) file(s)"
+
+      - name: Upload to Hostinger
         env:
-          FTP_HOST: 147.93.109.152
-          FTP_USER: u187459660.hkdseupload
           FTP_PASS: ${{ secrets.HKDSE_FTP_PASSWORD }}
         run: |
           set -euo pipefail
-          if [ -z "${FTP_PASS:-}" ]; then
-            echo "Missing secret HKDSE_FTP_PASSWORD" >&2
-            exit 1
-          fi
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq lftp
-          lftp -c "
-            set ssl:verify-certificate no
-            set ftp:ssl-force true
-            set ftp:ssl-protect-data true
-            set net:max-retries 5
-            set net:reconnect-interval-base 5
-            set net:timeout 30
-            open -u ${FTP_USER},${FTP_PASS} ftp://${FTP_HOST}
-            # Force-overwrite files users notice immediately; --only-newer can skip or leave CDN-stale assets
-            mkdir -p hub 2012P2_figs
-            put -O hub docs/hub/style.css
-            put -O hub docs/hub/index.html
-            put -O hub docs/hub/app.js
-            put -O hub docs/hub/data.js
-            put -O / docs/sw.js
-            put -O / docs/data.js
-            put -O / docs/index.html
-            mirror -R --verbose docs/2012P2_figs/ 2012P2_figs/
-            mirror -R --verbose --only-newer --exclude-glob .git/ docs/ /
-            bye
-          "
+          if [ -z "${FTP_PASS:-}" ]; then echo "Missing secret HKDSE_FTP_PASSWORD" >&2; exit 1; fi
+          python3 - <<'PY'
+          import os, pathlib
+          up = [l.strip() for l in open('/tmp/upload.txt') if l.strip()]
+          rm = [l.strip() for l in open('/tmp/delete.txt') if l.strip()]
+          host, user, pw = os.environ['FTP_HOST'], os.environ['FTP_USER'], os.environ['FTP_PASS']
+          lines = [
+            "set ssl:verify-certificate no",
+            "set ftp:ssl-force true",
+            "set ftp:ssl-protect-data true",
+            "set net:max-retries 5",
+            "set net:reconnect-interval-base 5",
+            "set net:timeout 40",
+            "set ftp:passive-mode true",
+            f'open -u "{user}","{pw}" ftp://{host}',
+          ]
+          made = set()
+          for rel in up:
+              d = os.path.dirname(rel) or "/"
+              if d not in made:
+                  lines.append(f'mkdir -p "{d}"')
+                  made.add(d)
+              lines.append(f'put -O "{d}" "docs/{rel}"')
+          for rel in rm:
+              lines.append(f'rm -f "/{rel}"')
+          lines += ["bye", ""]
+          p = pathlib.Path('/tmp/lftp.txt')
+          p.write_text("\n".join(lines))
+          p.chmod(0o600)
+          print(f"lftp script: {len(lines)-1} commands")
+          PY
+          lftp -f /tmp/lftp.txt
+
+      - name: Verify the live site serves this commit
+        env:
+          SHA: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json, os, re, time, urllib.request
+
+          site = os.environ["SITE"]; sha = os.environ["SHA"][:8]
+
+          def fetch(path, tries=12, wait=10):
+              last = None
+              for i in range(tries):
+                  url = f"{site}/{path}?cb={sha}-{i}"
+                  try:
+                      with urllib.request.urlopen(url, timeout=30) as r:
+                          return r.read().decode("utf-8", "replace")
+                  except Exception as e:
+                      last = e
+                      time.sleep(wait)
+              raise SystemExit(f"FETCH FAILED {path}: {last}")
+
+          local = open("docs/data.js", encoding="utf-8").read()
+          want = re.search(r'"count"\s*:\s*(\d+)', local).group(1)
+          live = fetch("data.js")
+          got = re.search(r'"count"\s*:\s*(\d+)', live)
+          if not got:
+              raise SystemExit("live data.js has no count field")
+          print(f"data.js count local={want} live={got.group(1)}")
+          if got.group(1) != want:
+              raise SystemExit(f"STALE: live count {got.group(1)} != {want}")
+
+          lcat = open("docs/hub/data.js", encoding="utf-8").read()
+          cat = fetch("hub/data.js")
+          lrows = len(re.findall(r"id:\s*\"[a-z]+\"", lcat))
+          crows = len(re.findall(r"id:\s*\"[a-z]+\"", cat))
+          print(f"hub catalog rows local={lrows} live={crows}")
+          if crows < lrows:
+              raise SystemExit(f"STALE catalog: live {crows} < {lrows}")
+
+          sw = fetch("sw.js")
+          m = re.search(r'dsehub-v\d+', sw)
+          print("live sw cache:", m.group(0) if m else "(none)")
+          print("OK: live site matches this commit")
+          PY
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "### Hostinger sync" >> $GITHUB_STEP_SUMMARY
+          echo "- commit: ${{ github.sha }}" >> $GITHUB_STEP_SUMMARY
+          echo "- uploaded: $(wc -l < /tmp/upload.txt 2>/dev/null || echo '?') file(s)" >> $GITHUB_STEP_SUMMARY
+          echo "- deleted: $(wc -l < /tmp/delete.txt 2>/dev/null || echo 0) file(s)" >> $GITHUB_STEP_SUMMARY

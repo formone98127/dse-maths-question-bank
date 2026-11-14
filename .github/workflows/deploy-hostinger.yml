@@ -42,7 +42,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 2
+          # Need the push's github.event.before, not just HEAD^1. A push of
+          # 2+ commits with fetch-depth: 2 misses that SHA and falls back to
+          # uploading the entire docs/ tree (~80MB), which can run for tens of minutes.
+          fetch-depth: 0
 
       - name: Install lftp
         run: |

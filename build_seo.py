@@ -15,7 +15,7 @@ from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 ROOT = Path("/workspace/hkdse-publish/dse-maths-question-bank/docs")
 SITE = "https://hkdse.exampaper.cloud"
-VER = "20261115guide"
+VER = "20261115b"
 TODAY = date.today().isoformat()
 BANK = f"{SITE}/"
 HUB = f"{SITE}/hub/"

@@ -1,5 +1,5 @@
 window.QB = {
- "generated": "2026-11-14 15:18",
+ "generated": "2026-11-14 15:19",
  "count": 1756,
  "questions": [
   {
@@ -28486,7 +28486,7 @@ window.QB = {
     "集中趨勢"
    ],
    "text": "Consider the following data:\nα β -4 -3 1 1 1 4\nDenote the mode and the median of the above data by s and t respectively. If the mean and the range of the above data are 0 and 10 respectively, which of the following are true?\nI. s = 1\nII. t = -1\nIII. α + β = 0\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
-   "html": "<p>30.&nbsp;&nbsp;&nbsp;Consider the following data: α β -4 -3 1 1 1 4 Denote the mode and the median of the above data by s and t respectively. If the mean and the range of the above data are 0 and 10 respectively, which of the following are true?</p>\n<p>I. s = 1</p>\n<p>II. t = -1</p>\n<p>III. α + β = 0</p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
+   "html": "<p>30.&nbsp;&nbsp;&nbsp;Consider the following data:</p>\n<p>α&nbsp;&nbsp;&nbsp;β&nbsp;&nbsp;&nbsp;-4&nbsp;&nbsp;&nbsp;-3&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;4</p>\n<p>Denote the mode and the median of the above data by s and t respectively. If the mean and the range of the above data are 0 and 10 respectively, which of the following are true?</p>\n<p>I. s = 1</p>\n<p>II. t = -1</p>\n<p>III. α + β = 0</p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
    "file": "2025_P2_題目英文卷.md"
   },
   {

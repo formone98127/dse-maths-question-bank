@@ -1,6 +1,6 @@
 window.QB = {
- "generated": "2026-11-14 04:42",
- "count": 1711,
+ "generated": "2026-11-14 15:18",
+ "count": 1756,
  "questions": [
   {
    "subject": "數學",
@@ -27976,6 +27976,22 @@ window.QB = {
    "file": "2025_P2_QU(CHI).md"
   },
   {
+   "subject": "數學",
+   "year": 2025,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 1,
+   "title": "第 1 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "指數定律",
+    "代數化簡"
+   ],
+   "text": "$\\dfrac{(27x)^5}{(3x^{-2})^4} =$\n\n- A. $3^2x^3$\n- B. $3^4x^3$\n- C. $3^{11}x^{13}$\n- D. $3^{14}x^{13}$",
+   "html": "<p>1.&nbsp;&nbsp;&nbsp;$\\dfrac{(27x)^5}{(3x^{-2})^4} =$</p>\n<ul><li>A. $3^2x^3$</li><li>B. $3^4x^3$</li><li>C. $3^{11}x^{13}$</li><li>D. $3^{14}x^{13}$</li></ul>",
+   "file": "2025_P2_題目英文卷.md"
+  },
+  {
    "subject": "化學",
    "year": 2025,
    "paper": "Paper 2",
@@ -27995,6 +28011,22 @@ window.QB = {
    "file": "2025_P2_QU(CHI).md"
   },
   {
+   "subject": "數學",
+   "year": 2025,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 2,
+   "title": "第 2 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "代數化簡",
+    "因式分解"
+   ],
+   "text": "$36-(3m+4n)^2 =$\n\n- A. $(6+3m+4n)(6-3m+4n)$\n- B. $(6+3m+4n)(6-3m-4n)$\n- C. $(6+3m-4n)(6-3m+4n)$\n- D. $(6+3m-4n)(6-3m-4n)$",
+   "html": "<p>2.&nbsp;&nbsp;&nbsp;$36-(3m+4n)^2 =$</p>\n<ul><li>A. $(6+3m+4n)(6-3m+4n)$</li><li>B. $(6+3m+4n)(6-3m-4n)$</li><li>C. $(6+3m-4n)(6-3m+4n)$</li><li>D. $(6+3m-4n)(6-3m-4n)$</li></ul>",
+   "file": "2025_P2_題目英文卷.md"
+  },
+  {
    "subject": "化學",
    "year": 2025,
    "paper": "Paper 2",
@@ -28012,6 +28044,691 @@ window.QB = {
    "text": "回答試題的所有部分。\n\n(a)　(i)　一個物理方法可把一個乙醇水溶液的濃度從 12% 提升至大約 50%。寫出這方法的名稱。（1 分）\n\n　　(ii)　建議一項化學測試以檢測氯氣。（2 分）\n\n　　(iii)　以下顯示從薄層色層法所獲得咖啡因和撲熱息痛的色譜。\n\n![Q3 薄層色層法色譜](2025_P2_crops/q3_tlc.png)\n\n計算撲熱息痛的 Rf 值。（1 分）\n\n　　(iv)　在以上色譜所示，撲熱息痛比咖啡因移動得較遠。基於色層法的原理，提出有這結果的一個原因。（1 分）\n\n(b)　某學生為測定一個不純的水樣本中 Cl⁻(aq) 離子的濃度，進行了一個探究。把 25.0 cm³ 的該樣本用蒸餾水稀釋至 250.0 cm³，然後使用一個適當的指示劑，以 0.0802 M AgNO₃(aq) 滴定 10.0 cm³ 的該已稀釋樣本。當所有 Cl⁻(aq) 離子被沉澱出來，便達到終點。\n\n重複該滴定數次，滴定的結果如下所列：\n\n| 試驗 | 1 | 2 | 3 | 4 | 5 |\n|---|---|---|---|---|---|\n| 所用 AgNO₃(aq) 的體積 / cm³ | 7.85 | 8.30 | 7.80 | 7.10 | 7.75 |\n\n　　(i)　繪畫一個標示圖以顯示該滴定的裝置。（2 分）\n\n　　(ii)　計算在該滴定中所用 AgNO₃(aq) 的合理平均體積。（1 分）\n\n　　(iii)　計算在該不純的水樣本中 Cl⁻(aq) 離子的濃度（以 g cm⁻³ 為單位）。（相對原子質量：Cl = 35.5）（3 分）\n\n　　(iv)　其後發現該不純的水樣本中也含有 Br⁻(aq) 離子。解釋在(b)(iii)所計算得到在該樣本中 Cl⁻(aq) 離子的濃度會高於還是低於真實值。（1 分）\n\n(c)　按質量計，一個環狀有機化合物 Q（含 C、H、O）含 72.0% 碳和 12.0% 氫。它的相對分子質量是 100，並且它是非旋光性的。當把 Q 與過量酸化重鉻酸鉀溶液回流加熱時，便生成化合物 R。Q 和 R 的紅外光譜顯示如下：\n\n![Q3 化合物 Q 的紅外光譜](2025_P2_crops/q3_ir_q.png)\n![Q3 化合物 R 的紅外光譜](2025_P2_crops/q3_ir_r.png)\n\n特徵紅外吸收波數域（伸展式）：\n\n| 鍵 | 化合物類別 | 波數域 / cm⁻¹ |\n|---|---|---|\n| C=C | [?] | 1610 至 1680 |\n| C=O | 羧酸及其衍生物 | 1680 至 1800 |\n| C≡C | [?] | 2070 至 2250 |\n| C≡N | [?] | 2200 至 2280 |\n| O-H | 氫鍵的酸 | 2500 至 3300 |\n| C-H | 烯及芳烴 | 2840 至 3095 |\n| O-H | 氫鍵的醇 | 3230 至 3670 |\n| N-H | 胺 | 3350 至 3500 |\n\n　　(i)　推定 Q 的分子式。（相對原子質量：H = 1.0，C = 12.0，O = 16.0）（2 分）\n\n　　(ii)　寫出在紅外光譜中產生各吸收峰的原理。（1 分）\n\n　　(iii)　根據 Q 和 R 的紅外光譜和上表所提供的資料，推定可能存在於 Q 和 R 各自一個的官能基。（2 分）\n\n　　(iv)　參考所提供的資料，推定並繪出 Q 的一個可能結構。（3 分）\n\n---\n\n## 待人工核對\n\n| 題號 | 頁碼 | 原因 |\n|---|---|---|\n| Q1(c) | 卷二 p03 | 試驗 1/2 初速冪次（×10⁻³）OCR 不清，需對頁核實 |\n| Q2(a)(i) | 卷二 p04 | 塑膠粒子尺寸冪次（10⁻⁹ 或 10⁻⁶ m）需對頁核實 |\n| Q2(a)(ii) | 卷二 p04 | 化合物 Z 結構式末端基團（−OC₄H₉ 等）標籤 OCR 不清 |\n| Q2(b)(iii) | 卷二 p04 | 「凱夫拉（Kevlar）」譯名 OCR 作「凱庫勒」，需對頁核實 |\n| Q3(c) | 卷二 p07 | Q 分子式（含 C、H、O）原卷寫法 OCR 不清；IR 參考表 C=C/C≡C/C≡N 化合物類別未讀出 |\n| 全卷圖 | 卷二 多頁 | 所有 crop 截圖由程式化座標裁切，未經肉眼對頁核實 |",
    "html": "<p>3.&nbsp;&nbsp;&nbsp;回答試題的所有部分。</p>\n<p>(a)　(i)　一個物理方法可把一個乙醇水溶液的濃度從 12% 提升至大約 50%。寫出這方法的名稱。（1 分）</p>\n<p>(ii)　建議一項化學測試以檢測氯氣。（2 分）</p>\n<p>(iii)　以下顯示從薄層色層法所獲得咖啡因和撲熱息痛的色譜。</p>\n<p><img alt=\"Q3 薄層色層法色譜\" src=\"chem_2025_P2_crops/q3_tlc.png\" /></p>\n<p>計算撲熱息痛的 Rf 值。（1 分）</p>\n<p>(iv)　在以上色譜所示，撲熱息痛比咖啡因移動得較遠。基於色層法的原理，提出有這結果的一個原因。（1 分）</p>\n<p>(b)　某學生為測定一個不純的水樣本中 Cl⁻(aq) 離子的濃度，進行了一個探究。把 25.0 cm³ 的該樣本用蒸餾水稀釋至 250.0 cm³，然後使用一個適當的指示劑，以 0.0802 M AgNO₃(aq) 滴定 10.0 cm³ 的該已稀釋樣本。當所有 Cl⁻(aq) 離子被沉澱出來，便達到終點。</p>\n<p>重複該滴定數次，滴定的結果如下所列：</p>\n<table>\n<thead>\n<tr>\n<th>試驗</th>\n<th>1</th>\n<th>2</th>\n<th>3</th>\n<th>4</th>\n<th>5</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>所用 AgNO₃(aq) 的體積 / cm³</td>\n<td>7.85</td>\n<td>8.30</td>\n<td>7.80</td>\n<td>7.10</td>\n<td>7.75</td>\n</tr>\n</tbody>\n</table>\n<p>(i)　繪畫一個標示圖以顯示該滴定的裝置。（2 分）</p>\n<p>(ii)　計算在該滴定中所用 AgNO₃(aq) 的合理平均體積。（1 分）</p>\n<p>(iii)　計算在該不純的水樣本中 Cl⁻(aq) 離子的濃度（以 g cm⁻³ 為單位）。（相對原子質量：Cl = 35.5）（3 分）</p>\n<p>(iv)　其後發現該不純的水樣本中也含有 Br⁻(aq) 離子。解釋在(b)(iii)所計算得到在該樣本中 Cl⁻(aq) 離子的濃度會高於還是低於真實值。（1 分）</p>\n<p>(c)　按質量計，一個環狀有機化合物 Q（含 C、H、O）含 72.0% 碳和 12.0% 氫。它的相對分子質量是 100，並且它是非旋光性的。當把 Q 與過量酸化重鉻酸鉀溶液回流加熱時，便生成化合物 R。Q 和 R 的紅外光譜顯示如下：</p>\n<p><img alt=\"Q3 化合物 Q 的紅外光譜\" src=\"chem_2025_P2_crops/q3_ir_q.png\" />\n<img alt=\"Q3 化合物 R 的紅外光譜\" src=\"chem_2025_P2_crops/q3_ir_r.png\" /></p>\n<p>特徵紅外吸收波數域（伸展式）：</p>\n<table>\n<thead>\n<tr>\n<th>鍵</th>\n<th>化合物類別</th>\n<th>波數域 / cm⁻¹</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>C=C</td>\n<td>[?]</td>\n<td>1610 至 1680</td>\n</tr>\n<tr>\n<td>C=O</td>\n<td>羧酸及其衍生物</td>\n<td>1680 至 1800</td>\n</tr>\n<tr>\n<td>C≡C</td>\n<td>[?]</td>\n<td>2070 至 2250</td>\n</tr>\n<tr>\n<td>C≡N</td>\n<td>[?]</td>\n<td>2200 至 2280</td>\n</tr>\n<tr>\n<td>O-H</td>\n<td>氫鍵的酸</td>\n<td>2500 至 3300</td>\n</tr>\n<tr>\n<td>C-H</td>\n<td>烯及芳烴</td>\n<td>2840 至 3095</td>\n</tr>\n<tr>\n<td>O-H</td>\n<td>氫鍵的醇</td>\n<td>3230 至 3670</td>\n</tr>\n<tr>\n<td>N-H</td>\n<td>胺</td>\n<td>3350 至 3500</td>\n</tr>\n</tbody>\n</table>\n<p>(i)　推定 Q 的分子式。（相對原子質量：H = 1.0，C = 12.0，O = 16.0）（2 分）</p>\n<p>(ii)　寫出在紅外光譜中產生各吸收峰的原理。（1 分）</p>\n<p>(iii)　根據 Q 和 R 的紅外光譜和上表所提供的資料，推定可能存在於 Q 和 R 各自一個的官能基。（2 分）</p>\n<p>(iv)　參考所提供的資料，推定並繪出 Q 的一個可能結構。（3 分）</p>\n<hr />\n<h2>待人工核對</h2>\n<table>\n<thead>\n<tr>\n<th>題號</th>\n<th>頁碼</th>\n<th>原因</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Q1(c)</td>\n<td>卷二 p03</td>\n<td>試驗 1/2 初速冪次（×10⁻³）OCR 不清，需對頁核實</td>\n</tr>\n<tr>\n<td>Q2(a)(i)</td>\n<td>卷二 p04</td>\n<td>塑膠粒子尺寸冪次（10⁻⁹ 或 10⁻⁶ m）需對頁核實</td>\n</tr>\n<tr>\n<td>Q2(a)(ii)</td>\n<td>卷二 p04</td>\n<td>化合物 Z 結構式末端基團（−OC₄H₉ 等）標籤 OCR 不清</td>\n</tr>\n<tr>\n<td>Q2(b)(iii)</td>\n<td>卷二 p04</td>\n<td>「凱夫拉（Kevlar）」譯名 OCR 作「凱庫勒」，需對頁核實</td>\n</tr>\n<tr>\n<td>Q3(c)</td>\n<td>卷二 p07</td>\n<td>Q 分子式（含 C、H、O）原卷寫法 OCR 不清；IR 參考表 C=C/C≡C/C≡N 化合物類別未讀出</td>\n</tr>\n<tr>\n<td>全卷圖</td>\n<td>卷二 多頁</td>\n<td>所有 crop 截圖由程式化座標裁切，未經肉眼對頁核實</td>\n</tr>\n</tbody>\n</table>",
    "file": "2025_P2_QU(CHI).md"
+  },
+  {
+   "subject": "數學",
+   "year": 2025,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 3,
+   "title": "第 3 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "多項式"
+   ],
+   "text": "If $a$ and $b$ are constants such that $(x+8)(x+a)+b \\equiv x^2+5a(x+3)$, then $b=$\n\n- A. $-14$\n- B. $-2$\n- C. $2$\n- D. $14$",
+   "html": "<p>3.&nbsp;&nbsp;&nbsp;If $a$ and $b$ are constants such that $(x+8)(x+a)+b \\equiv x^2+5a(x+3)$, then $b=$</p>\n<ul><li>A. $-14$</li><li>B. $-2$</li><li>C. $2$</li><li>D. $14$</li></ul>",
+   "file": "2025_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2025,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 4,
+   "title": "第 4 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "代數化簡"
+   ],
+   "text": "If $(3c+1)(d-4)=2d(5c-1)$, then $c=$\n\n- A. $\\dfrac{3d-4}{7d+12}$\n- B. $\\dfrac{3d+4}{7d-12}$\n- C. $\\dfrac{7d-12}{3d+4}$\n- D. $\\dfrac{7d+12}{3d-4}$",
+   "html": "<p>4.&nbsp;&nbsp;&nbsp;If $(3c+1)(d-4)=2d(5c-1)$, then $c=$</p>\n<ul><li>A. $\\dfrac{3d-4}{7d+12}$</li><li>B. $\\dfrac{3d+4}{7d-12}$</li><li>C. $\\dfrac{7d-12}{3d+4}$</li><li>D. $\\dfrac{7d+12}{3d-4}$</li></ul>",
+   "file": "2025_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2025,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 5,
+   "title": "第 5 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "一元二次方程",
+    "代數化簡",
+    "因式分解"
+   ],
+   "text": "Let $k$ be a constant. Solve the equation $x^2+4x=k^2-2k-3$.\n\n- A. $x=k-3$ or $x=-k-1$\n- B. $x=k-3$ or $x=-k+1$\n- C. $x=k+3$ or $x=-k-1$\n- D. $x=k+3$ or $x=-k+1$",
+   "html": "<p>5.&nbsp;&nbsp;&nbsp;Let $k$ be a constant. Solve the equation $x^2+4x=k^2-2k-3$.</p>\n<ul><li>A. $x=k-3$ or $x=-k-1$</li><li>B. $x=k-3$ or $x=-k+1$</li><li>C. $x=k+3$ or $x=-k-1$</li><li>D. $x=k+3$ or $x=-k+1$</li></ul>",
+   "file": "2025_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2025,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 6,
+   "title": "第 6 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "不等式"
+   ],
+   "text": "If $x=5.67$ (correct to 2 decimal places), find the range of values of $x$.\n\n- A. $5.66<x\\leq5.68$\n- B. $5.66\\leq x<5.68$\n- C. $5.665<x\\leq5.675$\n- D. $5.665\\leq x<5.675$",
+   "html": "<p>6.&nbsp;&nbsp;&nbsp;If $x=5.67$ (correct to 2 decimal places), find the range of values of $x$.</p>\n<ul><li>A. $5.66&lt;x\\leq5.68$</li><li>B. $5.66\\leq x&lt;5.68$</li><li>C. $5.665&lt;x\\leq5.675$</li><li>D. $5.665\\leq x&lt;5.675$</li></ul>",
+   "file": "2025_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2025,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 7,
+   "title": "第 7 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "不等式"
+   ],
+   "text": "The solution of $4y+1<5y-3\\leq8y-9$ is\n\n- A. $y>-4$\n- B. $y\\geq-2$\n- C. $y\\geq2$\n- D. $y>4$",
+   "html": "<p>7.&nbsp;&nbsp;&nbsp;The solution of $4y+1&lt;5y-3\\leq8y-9$ is</p>\n<ul><li>A. $y&gt;-4$</li><li>B. $y\\geq-2$</li><li>C. $y\\geq2$</li><li>D. $y&gt;4$</li></ul>",
+   "file": "2025_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2025,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 8,
+   "title": "第 8 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "代數化簡"
+   ],
+   "text": "Let $ f(x) = x^2 + 7x + k $, where $ k $ is a constant. If $ f(4) + f(-4) = 38 $, find $ k $.\n\n- A. $-6$\n- B. $-3$\n- C. $3$\n- D. $6$",
+   "html": "<p>8.&nbsp;&nbsp;&nbsp;Let $ f(x) = x^2 + 7x + k $, where $ k $ is a constant. If $ f(4) + f(-4) = 38 $, find $ k $.</p>\n<ul><li>A. $-6$</li><li>B. $-3$</li><li>C. $3$</li><li>D. $6$</li></ul>",
+   "file": "2025_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2025,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 9,
+   "title": "第 9 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "多項式",
+    "餘式定理"
+   ],
+   "text": "Let $ p(x) = nx^3 - 3nx + 36 $, where $ n $ is a constant. If $ x + 3 $ is a factor of $ p(x) $, then $ p(3) = $\n\n- A. $-2$\n- B. $0$\n- C. $2$\n- D. $72$",
+   "html": "<p>9.&nbsp;&nbsp;&nbsp;Let $ p(x) = nx^3 - 3nx + 36 $, where $ n $ is a constant. If $ x + 3 $ is a factor of $ p(x) $, then $ p(3) = $</p>\n<ul><li>A. $-2$</li><li>B. $0$</li><li>C. $2$</li><li>D. $72$</li></ul>",
+   "file": "2025_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2025,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 10,
+   "title": "第 10 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "利息與增長"
+   ],
+   "text": "A sum of \\$40 000 is deposited at an interest rate of $3\\%$ per annum for $5$ years, compounded half-yearly. Find the amount correct to the nearest dollar.\n\n- A. $\\$46 000$\n- B. $\\$46 371$\n- C. $\\$46 422$\n- D. $\\$46 465$",
+   "html": "<p>10.&nbsp;&nbsp;&nbsp;A sum of \\$40 000 is deposited at an interest rate of $3\\%$ per annum for $5$ years, compounded half-yearly. Find the amount correct to the nearest dollar.</p>\n<ul><li>A. $\\$46 000$</li><li>B. $\\$46 371$</li><li>C. $\\$46 422$</li><li>D. $\\$46 465$</li></ul>",
+   "file": "2025_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2025,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 11,
+   "title": "第 11 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "比率與比例"
+   ],
+   "text": "If $ \\alpha $, $ \\beta $ and $ \\gamma $ are non-zero constants such that $ (\\alpha + 2\\beta) : (\\beta + 2\\gamma) : (\\gamma + 2\\alpha) = 4 : 9 : 5 $, then $ \\alpha : \\beta = $\n\n- A. $2 : 5$\n- B. $5 : 2$\n- C. $128 : 149$\n- D. $149 : 128$",
+   "html": "<p>11.&nbsp;&nbsp;&nbsp;If $ \\alpha $, $ \\beta $ and $ \\gamma $ are non-zero constants such that $ (\\alpha + 2\\beta) : (\\beta + 2\\gamma) : (\\gamma + 2\\alpha) = 4 : 9 : 5 $, then $ \\alpha : \\beta = $</p>\n<ul><li>A. $2 : 5$</li><li>B. $5 : 2$</li><li>C. $128 : 149$</li><li>D. $149 : 128$</li></ul>",
+   "file": "2025_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2025,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 12,
+   "title": "第 12 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "變分"
+   ],
+   "text": "It is given that $ z $ varies directly as the cube of $ x $ and inversely as the square of $ y $. When $ x=3 $ and $ y=6 $, $ z=3 $. When $ x=5 $ and $ y=2 $, $ z=$\n\n- A. 5.\n- B. 25.\n- C. 125.\n- D. 243.",
+   "html": "<p>12.&nbsp;&nbsp;&nbsp;It is given that $ z $ varies directly as the cube of $ x $ and inversely as the square of $ y $. When $ x=3 $ and $ y=6 $, $ z=3 $. When $ x=5 $ and $ y=2 $, $ z=$</p>\n<ul><li>A. 5.</li><li>B. 25.</li><li>C. 125.</li><li>D. 243.</li></ul>",
+   "file": "2025_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2025,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 13,
+   "title": "第 13 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "數列"
+   ],
+   "text": "Let $ a_n $ be the $ n $th term of a sequence. If $ a_2=3 $, $ a_5=41 $ and $ a_{n+2}=2a_{n+1}+a_n $ for any positive integer $ n $, then $ a_6=$\n\n- A. 99.\n- B. 101.\n- C. 239.\n- D. 243.",
+   "html": "<p>13.&nbsp;&nbsp;&nbsp;Let $ a_n $ be the $ n $th term of a sequence. If $ a_2=3 $, $ a_5=41 $ and $ a_{n+2}=2a_{n+1}+a_n $ for any positive integer $ n $, then $ a_6=$</p>\n<ul><li>A. 99.</li><li>B. 101.</li><li>C. 239.</li><li>D. 243.</li></ul>",
+   "file": "2025_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2025,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 14,
+   "title": "第 14 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "直線方程",
+    "坐標幾何"
+   ],
+   "text": "In the figure, the equation of the straight line $ L $ is $ px+qy=7 $. Which of the following is/are true?\nI. $ p>7 $\nII. $ q>7 $\nIII. $ q>p $\n\u0001IMG0\u0001\n\n- A. I only\n- B. II only\n- C. I and III only\n- D. II and III only",
+   "html": "<p>14.&nbsp;&nbsp;&nbsp;In the figure, the equation of the straight line $ L $ is $ px+qy=7 $. Which of the following is/are true?</p>\n<p>I. $ p&gt;7 $</p>\n<p>II. $ q&gt;7 $</p>\n<p>III. $ q&gt;p $</p>\n<p><img alt=\"Figure Q14 (as printed)\" src=\"2025P2_figs/Q14.png\" /></p>\n<ul><li>A. I only</li><li>B. II only</li><li>C. I and III only</li><li>D. II and III only</li></ul>",
+   "file": "2025_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2025,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 15,
+   "title": "第 15 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "圓的性質",
+    "三角比"
+   ],
+   "text": "The perimeter of the sector $OMN$ is $12\\pi$ cm, where $O$ is the centre of the sector $OMN$. If the radius of the sector $OMN$ is $3\\pi$ cm, which of the following are true?\nI. The area of the sector $OMN$ is $9\\pi^2$ cm$^2$.\nII. The perimeter of $\\triangle OMN$ is less than $35$ cm.\nIII. The angle of the sector $OMN$ is greater than $100^\\circ$.\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
+   "html": "<p>15.&nbsp;&nbsp;&nbsp;The perimeter of the sector $OMN$ is $12\\pi$ cm, where $O$ is the centre of the sector $OMN$. If the radius of the sector $OMN$ is $3\\pi$ cm, which of the following are true?</p>\n<p>I. The area of the sector $OMN$ is $9\\pi^2$ cm$^2$.</p>\n<p>II. The perimeter of $\\triangle OMN$ is less than $35$ cm.</p>\n<p>III. The angle of the sector $OMN$ is greater than $100^\\circ$.</p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
+   "file": "2025_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2025,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 16,
+   "title": "第 16 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "立體圖形"
+   ],
+   "text": "The height and the total surface area of a solid right circular cylinder are $35$ cm and $492\\pi$ cm$^2$ respectively. If the radius of a solid sphere is equal to the base radius of the circular cylinder, then the volume of the sphere is\n\n- A. $144\\pi$ cm$^3$\n- B. $288\\pi$ cm$^3$\n- C. $576\\pi$ cm$^3$\n- D. $864\\pi$ cm$^3$",
+   "html": "<p>16.&nbsp;&nbsp;&nbsp;The height and the total surface area of a solid right circular cylinder are $35$ cm and $492\\pi$ cm$^2$ respectively. If the radius of a solid sphere is equal to the base radius of the circular cylinder, then the volume of the sphere is</p>\n<ul><li>A. $144\\pi$ cm$^3$</li><li>B. $288\\pi$ cm$^3$</li><li>C. $576\\pi$ cm$^3$</li><li>D. $864\\pi$ cm$^3$</li></ul>",
+   "file": "2025_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2025,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 17,
+   "title": "第 17 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "比率與比例",
+    "坐標幾何",
+    "平面幾何"
+   ],
+   "text": "In the figure, $ABCD$ is a parallelogram. Let $E$, $F$ and $G$ be points lying on $AB$, $AD$ and $CD$ respectively such that $BE = 3AE$, $2DF = 3AF$ and $DG = 2CG$. It is given that $BC$ produced and $EG$ produced meet at the point $H$. If the area of $\\triangle CGH$ is $16$ cm$^2$, then the area of the quadrilateral $DFEG$ is\n\u0001IMG0\u0001\n\n- A. $46$ cm$^2$\n- B. $49$ cm$^2$\n- C. $105$ cm$^2$\n- D. $115$ cm$^2$",
+   "html": "<p>17.&nbsp;&nbsp;&nbsp;In the figure, $ABCD$ is a parallelogram. Let $E$, $F$ and $G$ be points lying on $AB$, $AD$ and $CD$ respectively such that $BE = 3AE$, $2DF = 3AF$ and $DG = 2CG$. It is given that $BC$ produced and $EG$ produced meet at the point $H$. If the area of $\\triangle CGH$ is $16$ cm$^2$, then the area of the quadrilateral $DFEG$ is</p>\n<p><img alt=\"Figure Q17 (as printed)\" src=\"2025P2_figs/Q17.png\" /></p>\n<ul><li>A. $46$ cm$^2$</li><li>B. $49$ cm$^2$</li><li>C. $105$ cm$^2$</li><li>D. $115$ cm$^2$</li></ul>",
+   "file": "2025_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2025,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 18,
+   "title": "第 18 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "比率與比例",
+    "平面幾何"
+   ],
+   "text": "The figure shows the triangle $ WXY $. Let $ Z $ be a point lying on $ WY $ such that $ WY : XY = XY : YZ $. If $ WX = 65 \\, \\text{cm} $, $ WZ = 25 \\, \\text{cm} $ and $ XZ = 60 \\, \\text{cm} $, then $ XY = $\n\u0001IMG0\u0001\n\n- A. $ 131 \\, \\text{cm} $.\n- B. $ 144 \\, \\text{cm} $.\n- C. $ 156 \\, \\text{cm} $.\n- D. $ 169 \\, \\text{cm} $.",
+   "html": "<p>18.&nbsp;&nbsp;&nbsp;The figure shows the triangle $ WXY $. Let $ Z $ be a point lying on $ WY $ such that $ WY : XY = XY : YZ $. If $ WX = 65 \\, \\text{cm} $, $ WZ = 25 \\, \\text{cm} $ and $ XZ = 60 \\, \\text{cm} $, then $ XY = $</p>\n<p><img alt=\"Figure Q18 (as printed)\" src=\"2025P2_figs/Q18.png\" /></p>\n<ul><li>A. $ 131 \\, \\text{cm} $.</li><li>B. $ 144 \\, \\text{cm} $.</li><li>C. $ 156 \\, \\text{cm} $.</li><li>D. $ 169 \\, \\text{cm} $.</li></ul>",
+   "file": "2025_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2025,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 19,
+   "title": "第 19 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "平面幾何",
+    "三角比"
+   ],
+   "text": "In the figure, $ ABCD $ is a square. Let $ E $ be a point such that $ CDEF $ is a rhombus, where $ F $ is a point lying on $ AC $ produced. $ DF $ is produced to the point $ G $ such that $ AF \\parallel BG $. Which of the following are true?\nI. $ DF = FG $\nII. $ \\triangle BFG \\sim \\triangle DEF $\nIII. $ \\angle ABG + \\angle BFD = 180^\\circ $\n\u0001IMG0\u0001\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
+   "html": "<p>19.&nbsp;&nbsp;&nbsp;In the figure, $ ABCD $ is a square. Let $ E $ be a point such that $ CDEF $ is a rhombus, where $ F $ is a point lying on $ AC $ produced. $ DF $ is produced to the point $ G $ such that $ AF \\parallel BG $. Which of the following are true?</p>\n<p>I. $ DF = FG $</p>\n<p>II. $ \\triangle BFG \\sim \\triangle DEF $</p>\n<p>III. $ \\angle ABG + \\angle BFD = 180^\\circ $</p>\n<p><img alt=\"Figure Q19 (as printed)\" src=\"2025P2_figs/Q19.png\" /></p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
+   "file": "2025_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2025,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 20,
+   "title": "第 20 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "三角比",
+    "平面幾何"
+   ],
+   "text": "It is given that $ PQRS $ is a trapezium with $ PQ \\parallel SR $. If $ PS = 41 \\, \\text{cm} $, $ RS = 53 \\, \\text{cm} $, $ \\angle PSR = 120^\\circ $ and $ \\angle QRS = 150^\\circ $, then $ PQ = $\n\n- A. $ 82 \\, \\text{cm} $.\n- B. $ 100 \\, \\text{cm} $.\n- C. $ 106 \\, \\text{cm} $.\n- D. $ 135 \\, \\text{cm} $.",
+   "html": "<p>20.&nbsp;&nbsp;&nbsp;It is given that $ PQRS $ is a trapezium with $ PQ \\parallel SR $. If $ PS = 41 \\, \\text{cm} $, $ RS = 53 \\, \\text{cm} $, $ \\angle PSR = 120^\\circ $ and $ \\angle QRS = 150^\\circ $, then $ PQ = $</p>\n<ul><li>A. $ 82 \\, \\text{cm} $.</li><li>B. $ 100 \\, \\text{cm} $.</li><li>C. $ 106 \\, \\text{cm} $.</li><li>D. $ 135 \\, \\text{cm} $.</li></ul>",
+   "file": "2025_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2025,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 21,
+   "title": "第 21 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "坐標幾何",
+    "三角比",
+    "平面幾何"
+   ],
+   "text": "In the figure, $ABCD$ is a rectangle. It is given that $AE = 20 \\text{ cm}$ and $\\angle AED = 90^\\circ$. If the area of $\\triangle ADE$ is $150 \\text{ cm}^2$, then the perpendicular distance from $E$ to $CD$ is\n\u0001IMG0\u0001\n\n- A. $8 \\text{ cm}$.\n- B. $9 \\text{ cm}$.\n- C. $12 \\text{ cm}$.\n- D. $15 \\text{ cm}$.",
+   "html": "<p>21.&nbsp;&nbsp;&nbsp;In the figure, $ABCD$ is a rectangle. It is given that $AE = 20 \\text{ cm}$ and $\\angle AED = 90^\\circ$. If the area of $\\triangle ADE$ is $150 \\text{ cm}^2$, then the perpendicular distance from $E$ to $CD$ is</p>\n<p><img alt=\"Figure Q21 (as printed)\" src=\"2025P2_figs/Q21.png\" /></p>\n<ul><li>A. $8 \\text{ cm}$.</li><li>B. $9 \\text{ cm}$.</li><li>C. $12 \\text{ cm}$.</li><li>D. $15 \\text{ cm}$.</li></ul>",
+   "file": "2025_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2025,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 22,
+   "title": "第 22 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "圓的性質",
+    "平面幾何",
+    "三角比"
+   ],
+   "text": "In the figure, $RSTUV$ is a circle. It is given that $RT \\parallel VU$ and $RT$ is the angle bisector of $\\angle SRU$. If $\\angle RTS = \\angle URV = 33^\\circ$, then $\\angle RUT =$\n\u0001IMG0\u0001\n\n- A. $36^\\circ$.\n- B. $49^\\circ$.\n- C. $65^\\circ$.\n- D. $71^\\circ$.",
+   "html": "<p>22.&nbsp;&nbsp;&nbsp;In the figure, $RSTUV$ is a circle. It is given that $RT \\parallel VU$ and $RT$ is the angle bisector of $\\angle SRU$. If $\\angle RTS = \\angle URV = 33^\\circ$, then $\\angle RUT =$</p>\n<p><img alt=\"Figure Q22 (as printed)\" src=\"2025P2_figs/Q22.png\" /></p>\n<ul><li>A. $36^\\circ$.</li><li>B. $49^\\circ$.</li><li>C. $65^\\circ$.</li><li>D. $71^\\circ$.</li></ul>",
+   "file": "2025_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2025,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 23,
+   "title": "第 23 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "三角比",
+    "平面幾何"
+   ],
+   "text": "The figure shows the quadrilateral $ABCD$. If $\\angle ABC + \\angle ADC = \\angle ACD = \\angle BAC = 90^\\circ$, which of the following must be true?\n\u0001IMG0\u0001\n\n- A. $\\tan \\angle ACB = \\dfrac{AB}{AD}$\n- B. $\\tan \\angle ACB = \\dfrac{AB}{CD}$\n- C. $\\tan \\angle ADC = \\dfrac{BC}{AD}$\n- D. $\\tan \\angle ADC = \\dfrac{BC}{CD}$",
+   "html": "<p>23.&nbsp;&nbsp;&nbsp;The figure shows the quadrilateral $ABCD$. If $\\angle ABC + \\angle ADC = \\angle ACD = \\angle BAC = 90^\\circ$, which of the following must be true?</p>\n<p><img alt=\"Figure Q23 (as printed)\" src=\"2025P2_figs/Q23.png\" /></p>\n<ul><li>A. $\\tan \\angle ACB = \\dfrac{AB}{AD}$</li><li>B. $\\tan \\angle ACB = \\dfrac{AB}{CD}$</li><li>C. $\\tan \\angle ADC = \\dfrac{BC}{AD}$</li><li>D. $\\tan \\angle ADC = \\dfrac{BC}{CD}$</li></ul>",
+   "file": "2025_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2025,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 24,
+   "title": "第 24 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "三角比",
+    "坐標幾何"
+   ],
+   "text": "The polar coordinates of the points $ X $, $ Y $ and $ Z $ are $ (1, 20^\\circ) $, $ (2, 80^\\circ) $ and $ (r, \\theta) $ respectively, where $ 20^\\circ < \\theta < 80^\\circ $. If $ \\triangle XYZ $ is an equilateral triangle, find $ r $.\n\n- A. $\\sqrt{3}$\n- B. $\\sqrt{5}$\n- C. $\\sqrt{7}$\n- D. $\\sqrt{10}$",
+   "html": "<p>24.&nbsp;&nbsp;&nbsp;The polar coordinates of the points $ X $, $ Y $ and $ Z $ are $ (1, 20^\\circ) $, $ (2, 80^\\circ) $ and $ (r, \\theta) $ respectively, where $ 20^\\circ &lt; \\theta &lt; 80^\\circ $. If $ \\triangle XYZ $ is an equilateral triangle, find $ r $.</p>\n<ul><li>A. $\\sqrt{3}$</li><li>B. $\\sqrt{5}$</li><li>C. $\\sqrt{7}$</li><li>D. $\\sqrt{10}$</li></ul>",
+   "file": "2025_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2025,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 25,
+   "title": "第 25 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "坐標幾何",
+    "圓的性質"
+   ],
+   "text": "Denote the origin by $ O $. The coordinates of the point $ A $ are $ (a, 2a) $, where $ a > 0 $. Let $ P $ be a moving point in the rectangular coordinate plane such that $ AP = OA $. The locus of $ P $ is a\n\n- A. point.\n- B. circle.\n- C. rhombus.\n- D. straight line.",
+   "html": "<p>25.&nbsp;&nbsp;&nbsp;Denote the origin by $ O $. The coordinates of the point $ A $ are $ (a, 2a) $, where $ a &gt; 0 $. Let $ P $ be a moving point in the rectangular coordinate plane such that $ AP = OA $. The locus of $ P $ is a</p>\n<ul><li>A. point.</li><li>B. circle.</li><li>C. rhombus.</li><li>D. straight line.</li></ul>",
+   "file": "2025_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2025,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 26,
+   "title": "第 26 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "坐標幾何",
+    "直線方程"
+   ],
+   "text": "The straight lines $ L_1 $ and $ L_2 $ are perpendicular to each other. The equations of $ L_1 $ and $ L_2 $ are $ 3x + 4y - 20 = 0 $ and $ mx + ny - 20 = 0 $ respectively, where $ m $ and $ n $ are constants. Suppose that $ L_1 $ and $ L_2 $ cut the $ x $-axis at the points $ A $ and $ B $ respectively. Let $ C $ be the point of intersection of $ L_1 $ and $ L_2 $. It is given that $ C $ lies above the $ x $-axis. If the area of $ \\triangle ABC $ is 6, find $ n $.\n\n- A. $-12$\n- B. $-9$\n- C. 9\n- D. 12",
+   "html": "<p>26.&nbsp;&nbsp;&nbsp;The straight lines $ L_1 $ and $ L_2 $ are perpendicular to each other. The equations of $ L_1 $ and $ L_2 $ are $ 3x + 4y - 20 = 0 $ and $ mx + ny - 20 = 0 $ respectively, where $ m $ and $ n $ are constants. Suppose that $ L_1 $ and $ L_2 $ cut the $ x $-axis at the points $ A $ and $ B $ respectively. Let $ C $ be the point of intersection of $ L_1 $ and $ L_2 $. It is given that $ C $ lies above the $ x $-axis. If the area of $ \\triangle ABC $ is 6, find $ n $.</p>\n<ul><li>A. $-12$</li><li>B. $-9$</li><li>C. 9</li><li>D. 12</li></ul>",
+   "file": "2025_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2025,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 27,
+   "title": "第 27 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "圓的性質",
+    "圓的方程",
+    "坐標幾何"
+   ],
+   "text": "The coordinates of the centre of the circle $ C $ are $ (7, -5) $. If $ C $ cuts the $ x $-axis at the points $ P $ and $ Q $ such that $ PQ = 24 $, then the equation of $ C $ is\n\n- A. $ x^2 + y^2 - 14x + 10y - 95 = 0 $\n- B. $ x^2 + y^2 + 14x - 10y - 95 = 0 $\n- C. $ x^2 + y^2 - 14x + 10y - 119 = 0 $\n- D. $ x^2 + y^2 + 14x - 10y - 119 = 0 $",
+   "html": "<p>27.&nbsp;&nbsp;&nbsp;The coordinates of the centre of the circle $ C $ are $ (7, -5) $. If $ C $ cuts the $ x $-axis at the points $ P $ and $ Q $ such that $ PQ = 24 $, then the equation of $ C $ is</p>\n<ul><li>A. $ x^2 + y^2 - 14x + 10y - 95 = 0 $</li><li>B. $ x^2 + y^2 + 14x - 10y - 95 = 0 $</li><li>C. $ x^2 + y^2 - 14x + 10y - 119 = 0 $</li><li>D. $ x^2 + y^2 + 14x - 10y - 119 = 0 $</li></ul>",
+   "file": "2025_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2025,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 28,
+   "title": "第 28 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "概率",
+    "統計"
+   ],
+   "text": "A box contains six cards numbered 2, 2, 2, 3, 4 and 5 respectively. In a game, a number is randomly drawn from the box and a certain number of tokens will be got according to the following table:\n:::stemleaf\nNumber drawn | 2 | 3 | 4 | 5\nNumber of tokens got | 10 | 15 | 25 | 50\n:::\nFind the expected number of tokens got in the game.\n\n- A. 3\n- B. 4\n- C. 20\n- D. 25",
+   "html": "<p>28.&nbsp;&nbsp;&nbsp;A box contains six cards numbered 2, 2, 2, 3, 4 and 5 respectively. In a game, a number is randomly drawn from the box and a certain number of tokens will be got according to the following table:</p>\n<div class=\"stemleaf\"><div class=\"slcol slL\"><div class=\"slr slh\">Number drawn</div><div class=\"slr\">Number of tokens got</div></div><div class=\"slrule\"></div><div class=\"slcol slR\"><div class=\"slr slh\">2 | 3 | 4 | 5</div><div class=\"slr\"><span>10</span><span>|</span><span>15</span><span>|</span><span>25</span><span>|</span><span>50</span></div></div></div>\n<p>Find the expected number of tokens got in the game.</p>\n<ul><li>A. 3</li><li>B. 4</li><li>C. 20</li><li>D. 25</li></ul>",
+   "file": "2025_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2025,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 29,
+   "title": "第 29 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "統計",
+    "集中趨勢",
+    "離差"
+   ],
+   "text": "The bar chart below shows the distribution of the numbers of books read by some teachers in a certain month. Find the inter-quartile range of the distribution.\n\n- A. 1\n- B. 2\n- C. 3\n- D. 4",
+   "html": "<p>29.&nbsp;&nbsp;&nbsp;The bar chart below shows the distribution of the numbers of books read by some teachers in a certain month. Find the inter-quartile range of the distribution.</p>\n<ul><li>A. 1</li><li>B. 2</li><li>C. 3</li><li>D. 4</li></ul>",
+   "file": "2025_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2025,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 30,
+   "title": "第 30 題",
+   "section": "Paper 2　Section A",
+   "tags": [
+    "統計",
+    "集中趨勢"
+   ],
+   "text": "Consider the following data:\nα β -4 -3 1 1 1 4\nDenote the mode and the median of the above data by s and t respectively. If the mean and the range of the above data are 0 and 10 respectively, which of the following are true?\nI. s = 1\nII. t = -1\nIII. α + β = 0\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
+   "html": "<p>30.&nbsp;&nbsp;&nbsp;Consider the following data: α β -4 -3 1 1 1 4 Denote the mode and the median of the above data by s and t respectively. If the mean and the range of the above data are 0 and 10 respectively, which of the following are true?</p>\n<p>I. s = 1</p>\n<p>II. t = -1</p>\n<p>III. α + β = 0</p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
+   "file": "2025_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2025,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 31,
+   "title": "第 31 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "指數函數"
+   ],
+   "text": "$3E000000000000_{16}=$\n\n- A. $2^{16}+2^{15}+2^{14}+2^{13}+2^{12}$.\n- B. $2^{17}+2^{16}+2^{15}+2^{14}+2^{13}$.\n- C. $2^{52}+2^{51}+2^{50}+2^{49}+2^{48}$.\n- D. $2^{53}+2^{52}+2^{51}+2^{50}+2^{49}$.",
+   "html": "<p>31.&nbsp;&nbsp;&nbsp;$3E000000000000_{16}=$</p>\n<ul><li>A. $2^{16}+2^{15}+2^{14}+2^{13}+2^{12}$.</li><li>B. $2^{17}+2^{16}+2^{15}+2^{14}+2^{13}$.</li><li>C. $2^{52}+2^{51}+2^{50}+2^{49}+2^{48}$.</li><li>D. $2^{53}+2^{52}+2^{51}+2^{50}+2^{49}$.</li></ul>",
+   "file": "2025_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2025,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 32,
+   "title": "第 32 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "因式分解",
+    "多項式"
+   ],
+   "text": "The L.C.M. of $p^{2}-4q^{2}$, $p^{3}-8q^{3}$ and $(p+2q)(p^{2}-4q^{2})$ is\n\n- A. $p-2q$.\n- B. $p^{2}-4q^{2}$.\n- C. $(p+2q)^{2}(p^{3}-8q^{3})$.\n- D. $(p+2q)(p^{2}-4q^{2})(p^{3}-8q^{3})$.",
+   "html": "<p>32.&nbsp;&nbsp;&nbsp;The L.C.M. of $p^{2}-4q^{2}$, $p^{3}-8q^{3}$ and $(p+2q)(p^{2}-4q^{2})$ is</p>\n<ul><li>A. $p-2q$.</li><li>B. $p^{2}-4q^{2}$.</li><li>C. $(p+2q)^{2}(p^{3}-8q^{3})$.</li><li>D. $(p+2q)(p^{2}-4q^{2})(p^{3}-8q^{3})$.</li></ul>",
+   "file": "2025_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2025,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 33,
+   "title": "第 33 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "對數",
+    "函數與圖像",
+    "直線方程"
+   ],
+   "text": "It is given that $\\log_{5}y$ is a linear function of $\\log_{25}x$. The intercepts on the vertical axis and on the horizontal axis of the graph of the linear function are 12 and 2 respectively. If $y=mx^{n}$, then $n=$\n\n- A. $-12$.\n- B. $-4$.\n- C. $-3$.\n- D. $-1$.",
+   "html": "<p>33.&nbsp;&nbsp;&nbsp;It is given that $\\log_{5}y$ is a linear function of $\\log_{25}x$. The intercepts on the vertical axis and on the horizontal axis of the graph of the linear function are 12 and 2 respectively. If $y=mx^{n}$, then $n=$</p>\n<ul><li>A. $-12$.</li><li>B. $-4$.</li><li>C. $-3$.</li><li>D. $-1$.</li></ul>",
+   "file": "2025_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2025,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 34,
+   "title": "第 34 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "函數與圖像",
+    "對數",
+    "指數函數"
+   ],
+   "text": "On the same rectangular coordinate system, the graph of $ y = \\log_a x $ cuts the graph of $ y = a^x $ and the $ x $-axis at the points $ P $ and $ Q $ respectively, where $ a $ is a positive constant. Denote the origin by $ O $. Which of the following are true?\nI. $ a < 1 $\nII. $ OQ > a $\nIII. $ \\angle POQ = 45^\\circ $\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
+   "html": "<p>34.&nbsp;&nbsp;&nbsp;On the same rectangular coordinate system, the graph of $ y = \\log_a x $ cuts the graph of $ y = a^x $ and the $ x $-axis at the points $ P $ and $ Q $ respectively, where $ a $ is a positive constant. Denote the origin by $ O $. Which of the following are true?</p>\n<p>I. $ a &lt; 1 $</p>\n<p>II. $ OQ &gt; a $</p>\n<p>III. $ \\angle POQ = 45^\\circ $</p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
+   "file": "2025_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2025,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 35,
+   "title": "第 35 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "複數"
+   ],
+   "text": "$ i^9 + i^{10} + i^{11} + \\cdots + i^{999} = $\n\n- A. $-1$\n- B. $0$\n- C. $1$\n- D. $i$",
+   "html": "<p>35.&nbsp;&nbsp;&nbsp;$ i^9 + i^{10} + i^{11} + \\cdots + i^{999} = $</p>\n<ul><li>A. $-1$</li><li>B. $0$</li><li>C. $1$</li><li>D. $i$</li></ul>",
+   "file": "2025_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2025,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 36,
+   "title": "第 36 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "不等式",
+    "坐標幾何",
+    "直線方程"
+   ],
+   "text": "Consider the following system of inequalities:\n$$\n\\begin{cases}\nx \\leq 11 \\\\\n4x + 5y - 19 \\geq 0 \\\\\n7x - 6y + 11 \\leq 0\n\\end{cases}\n$$\nLet $ D $ be the region which represents the solution of the above system of inequalities. If $ (x, y) $ is a point lying in $ D $, then the greatest value of $ 8x - 6y + 11 $ is\n\n- A. $1$\n- B. $11$\n- C. $15$\n- D. $129$",
+   "html": "<p>36.&nbsp;&nbsp;&nbsp;Consider the following system of inequalities:</p>\n<p>$$ \\begin{cases} x \\leq 11 \\\\ 4x + 5y - 19 \\geq 0 \\\\ 7x - 6y + 11 \\leq 0 \\end{cases} $$</p>\n<p>Let $ D $ be the region which represents the solution of the above system of inequalities. If $ (x, y) $ is a point lying in $ D $, then the greatest value of $ 8x - 6y + 11 $ is</p>\n<ul><li>A. $1$</li><li>B. $11$</li><li>C. $15$</li><li>D. $129$</li></ul>",
+   "file": "2025_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2025,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 37,
+   "title": "第 37 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "數列",
+    "指數函數"
+   ],
+   "text": "Let $ p $, $ q $ and $ r $ be non-zero real numbers. If $ p $, $ q $, $ r $ is an arithmetic sequence, which of the following must be true?\nI. $ 3^p $, $ 3^q $, $ 3^r $ is a geometric sequence.\nII. $ \\dfrac{5}{p} $, $ \\dfrac{5}{q} $, $ \\dfrac{5}{r} $ is a geometric sequence.\nIII. $ p-q $, $ q-r $, $ r-p $ is an arithmetic sequence.\n\n- A. I only\n- B. II only\n- C. I and III only\n- D. II and III only",
+   "html": "<p>37.&nbsp;&nbsp;&nbsp;Let $ p $, $ q $ and $ r $ be non-zero real numbers. If $ p $, $ q $, $ r $ is an arithmetic sequence, which of the following must be true?</p>\n<p>I. $ 3^p $, $ 3^q $, $ 3^r $ is a geometric sequence.</p>\n<p>II. $ \\dfrac{5}{p} $, $ \\dfrac{5}{q} $, $ \\dfrac{5}{r} $ is a geometric sequence.</p>\n<p>III. $ p-q $, $ q-r $, $ r-p $ is an arithmetic sequence.</p>\n<ul><li>A. I only</li><li>B. II only</li><li>C. I and III only</li><li>D. II and III only</li></ul>",
+   "file": "2025_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2025,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 38,
+   "title": "第 38 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "圓的性質",
+    "三角比"
+   ],
+   "text": "In the figure, $ AC $ is a diameter of the circle $ ABCD $. Denote the point of intersection of $ AC $ and $ BD $ by $ E $. It is given that $ TD $ is the tangent to the circle at $ D $. If $ \\angle BEC = 96^\\circ $ and $ \\angle CDT = 41^\\circ $, then $ \\angle CDE = $\n\u0001IMG0\u0001\n\n- A. $ 47^\\circ $\n- B. $ 48^\\circ $\n- C. $ 52^\\circ $\n- D. $ 55^\\circ $",
+   "html": "<p>38.&nbsp;&nbsp;&nbsp;In the figure, $ AC $ is a diameter of the circle $ ABCD $. Denote the point of intersection of $ AC $ and $ BD $ by $ E $. It is given that $ TD $ is the tangent to the circle at $ D $. If $ \\angle BEC = 96^\\circ $ and $ \\angle CDT = 41^\\circ $, then $ \\angle CDE = $</p>\n<p><img alt=\"Figure Q38 (as printed)\" src=\"2025P2_figs/Q38.png\" /></p>\n<ul><li>A. $ 47^\\circ $</li><li>B. $ 48^\\circ $</li><li>C. $ 52^\\circ $</li><li>D. $ 55^\\circ $</li></ul>",
+   "file": "2025_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2025,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 39,
+   "title": "第 39 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "三角比",
+    "因式分解",
+    "函數與圖像"
+   ],
+   "text": "For $ 90^\\circ < \\theta < 270^\\circ $, how many roots does the equation $ \\tan^3 \\theta = 2 \\tan \\theta $ have?\n\n- A. 2\n- B. 3\n- C. 4\n- D. 5",
+   "html": "<p>39.&nbsp;&nbsp;&nbsp;For $ 90^\\circ &lt; \\theta &lt; 270^\\circ $, how many roots does the equation $ \\tan^3 \\theta = 2 \\tan \\theta $ have?</p>\n<ul><li>A. 2</li><li>B. 3</li><li>C. 4</li><li>D. 5</li></ul>",
+   "file": "2025_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2025,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 40,
+   "title": "第 40 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "三角比",
+    "立體圖形"
+   ],
+   "text": "$PQRS$ is a regular tetrahedron. Find the angle between $PQ$ and $\\DeltaQRS$ correct to the nearest degree.\n\n- A. $35^\\circ$\n- B. $55^\\circ$\n- C. $60^\\circ$\n- D. $71^\\circ$",
+   "html": "<p>40.&nbsp;&nbsp;&nbsp;$PQRS$ is a regular tetrahedron. Find the angle between $PQ$ and $\\DeltaQRS$ correct to the nearest degree.</p>\n<ul><li>A. $35^\\circ$</li><li>B. $55^\\circ$</li><li>C. $60^\\circ$</li><li>D. $71^\\circ$</li></ul>",
+   "file": "2025_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2025,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 41,
+   "title": "第 41 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "坐標幾何",
+    "三角比"
+   ],
+   "text": "Denote the origin by $O$. The coordinates of the point $U$ are $(20,0)$. Let $V$ be a point lying on the positive $y$-axis such that the $x$-coordinate of the in-centre of $\\Delta OUV$ is 6. Find the area of $\\Delta OUV$.\n\n- A. $70$\n- B. $87$\n- C. $210$\n- D. $250$",
+   "html": "<p>41.&nbsp;&nbsp;&nbsp;Denote the origin by $O$. The coordinates of the point $U$ are $(20,0)$. Let $V$ be a point lying on the positive $y$-axis such that the $x$-coordinate of the in-centre of $\\Delta OUV$ is 6. Find the area of $\\Delta OUV$.</p>\n<ul><li>A. $70$</li><li>B. $87$</li><li>C. $210$</li><li>D. $250$</li></ul>",
+   "file": "2025_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2025,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 42,
+   "title": "第 42 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "排列與組合"
+   ],
+   "text": "A committee is formed by 2 managers, 4 officers and 12 clerks. If 7 members are selected from the committee to form a working group consisting of at least 1 manager, how many different working groups can be formed?\n\n- A. $16 016$\n- B. $20 384$\n- C. $22 880$\n- D. $31824$",
+   "html": "<p>42.&nbsp;&nbsp;&nbsp;A committee is formed by 2 managers, 4 officers and 12 clerks. If 7 members are selected from the committee to form a working group consisting of at least 1 manager, how many different working groups can be formed?</p>\n<ul><li>A. $16 016$</li><li>B. $20 384$</li><li>C. $22 880$</li><li>D. $31824$</li></ul>",
+   "file": "2025_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2025,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 43,
+   "title": "第 43 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "概率",
+    "排列與組合"
+   ],
+   "text": "There are 9 cans of apple juice and 4 cans of grape juice in a bag. If 6 cans are randomly chosen from the bag at the same time, find the probability that at most 3 cans of grape juice are chosen.\n\n- A. $\\dfrac{9}{13}$\n- B. $\\dfrac{133}{143}$\n- C. $\\dfrac{140}{143}$\n- D. $\\dfrac{714}{715}$",
+   "html": "<p>43.&nbsp;&nbsp;&nbsp;There are 9 cans of apple juice and 4 cans of grape juice in a bag. If 6 cans are randomly chosen from the bag at the same time, find the probability that at most 3 cans of grape juice are chosen.</p>\n<ul><li>A. $\\dfrac{9}{13}$</li><li>B. $\\dfrac{133}{143}$</li><li>C. $\\dfrac{140}{143}$</li><li>D. $\\dfrac{714}{715}$</li></ul>",
+   "file": "2025_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2025,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 44,
+   "title": "第 44 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "標準分"
+   ],
+   "text": "The standard scores of a boy and a girl in a Mathematics test are $-2$ and $z$ respectively. The standard deviation of the scores of the Mathematics test is 2 marks. If the difference of the test score of the boy and the test score of the girl is 6 marks, find $z$.\n\n- A. $-5$ or 1\n- B. $-5$ or 3\n- C. $-3$ or 1\n- D. $-3$ or 3",
+   "html": "<p>44.&nbsp;&nbsp;&nbsp;The standard scores of a boy and a girl in a Mathematics test are $-2$ and $z$ respectively. The standard deviation of the scores of the Mathematics test is 2 marks. If the difference of the test score of the boy and the test score of the girl is 6 marks, find $z$.</p>\n<ul><li>A. $-5$ or 1</li><li>B. $-5$ or 3</li><li>C. $-3$ or 1</li><li>D. $-3$ or 3</li></ul>",
+   "file": "2025_P2_題目英文卷.md"
+  },
+  {
+   "subject": "數學",
+   "year": 2025,
+   "paper": "Paper 2",
+   "type": "題目",
+   "qno": 45,
+   "title": "第 45 題",
+   "section": "Paper 2　Section B",
+   "tags": [
+    "統計",
+    "集中趨勢",
+    "離差"
+   ],
+   "text": "It is given that $a$, $b$, $c$ and $d$ are four distinct real numbers. Let $m_1$, $r_1$ and $v_1$ be the mean, the range and the variance of the group of numbers $\\{a, b, c, d\\}$ respectively while $m_2$, $r_2$ and $v_2$ be the mean, the range and the variance of the group of numbers $\\{2a, 2b, 2c, 2d\\}$ respectively. Denote the mean, the range and the variance of the group of numbers $\\{a+3, b+3, c+3, d+3\\}$ by $m_3$, $r_3$ and $v_3$ respectively. Which of the following are true?\nI. $m_1 + m_3 > m_2$\nII. $r_1 + r_3 = r_2$\nIII. $v_1 + v_3 < v_2$\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
+   "html": "<p>45.&nbsp;&nbsp;&nbsp;It is given that $a$, $b$, $c$ and $d$ are four distinct real numbers. Let $m_1$, $r_1$ and $v_1$ be the mean, the range and the variance of the group of numbers $\\{a, b, c, d\\}$ respectively while $m_2$, $r_2$ and $v_2$ be the mean, the range and the variance of the group of numbers $\\{2a, 2b, 2c, 2d\\}$ respectively. Denote the mean, the range and the variance of the group of numbers $\\{a+3, b+3, c+3, d+3\\}$ by $m_3$, $r_3$ and $v_3$ respectively. Which of the following are true?</p>\n<p>I. $m_1 + m_3 &gt; m_2$</p>\n<p>II. $r_1 + r_3 = r_2$</p>\n<p>III. $v_1 + v_3 &lt; v_2$</p>\n<ul><li>A. I and II only</li><li>B. I and III only</li><li>C. II and III only</li><li>D. I, II and III</li></ul>",
+   "file": "2025_P2_題目英文卷.md"
   }
  ]
 };

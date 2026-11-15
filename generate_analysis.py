@@ -318,11 +318,67 @@ def call_llm(cfg, messages):
     return content
 
 
+# LaTeX 命令白名單：字首同 JSON 合法 escape（\b \f \n \r \t \u）撞咗嘅常用命令
+# （\theta \frac \times \neq \underbrace …），要優先當 LaTeX 處理。
+LATEX_CMDS = {
+    "background", "binom", "boxed", "bmod",
+    "frac", "forall",
+    "neq", "ne", "nabla", "notin", "not", "nmid", "newline",
+    "right", "reals", "rfloor", "rangle",
+    "theta", "therefore", "times", "text", "tan", "tfrac", "to", "top", "triangle",
+    "underbrace", "underline", "cup", "cap", "circ", "cdot", "cdots", "cos", "cot", "csc",
+    "sin", "sqrt", "sum", "sec", "sup", "leq", "le", "geq", "ge", "log", "ln", "lim", "land", "lor",
+}
+
+
+def _fix_json_escapes(t):
+    """LLM 寫 LaTeX（\dfrac \theta 等）時常漏 JSON 跳脫。逐個 backslash 判斷：
+    係合法 JSON escape 就保留，係 LaTeX 命令就補成 \\\\，避免 \theta 靜靜變 tab。"""
+    out = []
+    i, n = 0, len(t)
+    while i < n:
+        c = t[i]
+        if c != "\\":
+            out.append(c)
+            i += 1
+            continue
+        nxt = t[i + 1] if i + 1 < n else ""
+        if nxt in ('"', "\\", "/"):
+            out.append(t[i : i + 2])
+            i += 2
+            continue
+        if nxt == "u" and re.fullmatch(r"[0-9a-fA-F]{4}", t[i + 2 : i + 6] or ""):
+            out.append(t[i : i + 6])
+            i += 6
+            continue
+        word = re.match(r"[a-zA-Z]+", t[i + 1 :]).group(0) if nxt.isalpha() else ""
+        if word and word.lower() in LATEX_CMDS:
+            out.append("\\\\")
+            i += 1
+            continue
+        if nxt in "bfnrt":
+            out.append(t[i : i + 2])  # JSON escape；撞名 LaTeX 已喺白名單處理
+            i += 2
+            continue
+        # \u 冇 4 位 hex、或其他非法 escape（\d \e \}…）＝其餘 LaTeX 命令
+        out.append("\\\\")
+        i += 1
+    return "".join(out)
+
+
 def parse_llm_json(text):
     t = text.strip()
     t = re.sub(r"^```(?:json)?\s*", "", t)
     t = re.sub(r"\s*```$", "", t)
-    return json.loads(t)
+    try:
+        return json.loads(t)
+    except json.JSONDecodeError:
+        pass
+    # 修 LaTeX escape + Python 式 True/False/None
+    t = re.sub(r":\s*True\b", ": true", t)
+    t = re.sub(r":\s*False\b", ": false", t)
+    t = re.sub(r":\s*None\b", ": null", t)
+    return json.loads(_fix_json_escapes(t))
 
 
 # ---------- 驗證 ----------
@@ -427,7 +483,12 @@ def process(q, options, answer, cfg, dry_run=False, force=False):
         {"role": "user", "content": prompt},
     ]
     for attempt in range(1, 4):
-        content = call_llm(cfg, messages)
+        try:
+            content = call_llm(cfg, messages)
+        except (TimeoutError, urllib.error.URLError, RuntimeError) as e:
+            errs = [f"API 請求失敗（{type(e).__name__}）：{str(e)[:200]}"]
+            print(f"  ✗ 第 {attempt} 次請求失敗：{errs[0]}")
+            continue
         try:
             obj = parse_llm_json(content)
         except json.JSONDecodeError as e:
@@ -457,6 +518,9 @@ def process(q, options, answer, cfg, dry_run=False, force=False):
             messages.append({"role": "assistant", "content": content})
             messages.append({"role": "user", "content": "你的輸出有以下問題，請修正後重新輸出完整 JSON（仍嚴禁 markdown fences）：\n- " + "\n- ".join(errs)})
     print(f"  ✗ 三次失敗，放棄 Q{q['qno']}")
+    bad = path.with_suffix(".bad")
+    bad.write_text(content, encoding="utf-8")  # 留低 raw output 方便診斷
+    print(f"  ↳ raw output 已存 {bad.relative_to(ROOT)}")
     return False
 
 

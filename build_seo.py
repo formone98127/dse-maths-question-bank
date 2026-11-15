@@ -272,6 +272,11 @@ VISUAL_TUTOR = "https://dsemaths.canonlessons.com"
 VISUAL_TUTOR_LABEL = "免費 DSE 數學視覺教程"
 SUBJECT_TO_SID = {v: k for k, v in SID_TO_SUBJECT.items()}
 SITEMAP_URLS = []
+# 手維護、唔經呢個 build 產生嘅 landing 頁：手動列入 sitemap（檔案存在先會加）
+EXTRA_SITEMAP_PATHS = [
+    "/math/2020/paper-1/",      # 2020 中文卷一（手製頁，data.js 仲未有卷一題目）
+    "/math/2024/paper-2-zh/",   # 舊中文卷路徑（同 paper-2 內容重複，保留過渡）
+]
 
 PAPER_CODE = {
     "卷一": "paper-1",
@@ -686,7 +691,7 @@ def parse_catalog():
         if path:
             row["path"] = path
         catalog.append(row)
-    if len(catalog) < 50:
+    if len(catalog) < 10:
         raise SystemExit(f"catalog parse too small: {len(catalog)}")
     return catalog
 
@@ -975,6 +980,23 @@ def make_sitemap():
             continue
         seen.add(loc)
         urls.append((loc, pri, freq))
+    # 手維護頁面條目
+    for pth in EXTRA_SITEMAP_PATHS:
+        if (ROOT / pth.lstrip("/") / "index.html").is_file():
+            loc = f"{SITE}{pth}"
+            if loc not in seen:
+                seen.add(loc)
+                urls.append((loc, "0.6", "monthly"))
+    # 保留呢個 build 唔會重新產生嘅舊條目（非數學科 notice 頁、bafs/chi 等手維護內容頁）：
+    # 檔案仍存在先保留，死鏈自然淘汰。
+    sm_path = ROOT / "sitemap.xml"
+    if sm_path.is_file():
+        for loc in re.findall(r"<loc>(.*?)</loc>", sm_path.read_text(encoding="utf-8")):
+            if loc in seen or loc.rstrip("/") == SITE or loc.endswith(".pdf"):
+                continue
+            if sitemap_local_path(loc).is_file():
+                seen.add(loc)
+                urls.append((loc, "0.5", "monthly"))
     urls.sort(key=lambda x: (0 if x[0] == HUB else 1, x[0]))
     parts = [
         '<?xml version="1.0" encoding="UTF-8"?>',
@@ -1153,7 +1175,9 @@ def make_subject_pages(catalog, papers):
     for s in SUBJECTS:
         rows = sort_rows(by_id[s["id"]])
         if not rows:
-            raise SystemExit(f"no rows for {s['id']}")
+            # 非數學科已落線（catalog 只返數學卷）：唔好重新產生、保留現有 notice 頁
+            print("SKIP subject (no papers):", s["id"])
+            continue
         span = year_span(rows)
         groups = defaultdict(list)
         for r in rows:
@@ -1547,13 +1571,20 @@ def patch_hub_data(papers):
     """Write resolved landing path onto each CATALOG row in hub/data.js."""
     path = ROOT / "hub/data.js"
     text = path.read_text(encoding="utf-8")
-    by_hash = {p["hash"]: p["path"] for p in papers}
+    # 中英文同卷同 hash：先用 (hash, lang) 對準；fallback 攞第一個（排序上係中文卷）
+    by_key = {(p["hash"], p["lang"]): p["path"] for p in papers}
+    by_hash = {}
+    for p in papers:
+        by_hash.setdefault(p["hash"], p["path"])
     text = re.sub(r",\s*path:\s*\"[^\"]*\"", "", text)
 
     def add_path(m):
         full = m.group(0)
         hash_ = m.group(1)
-        landing = by_hash.get(hash_)
+        lg = re.search(r'lang:\s*"([^"]+)"', full)
+        landing = by_key.get((hash_, lg.group(1))) if lg else None
+        if not landing:
+            landing = by_hash.get(hash_)
         if not landing:
             return full
         return full[:-1] + f', path: "{landing}"' + "}"
@@ -1733,7 +1764,7 @@ def parse_questions():
     assign = text.index("=")
     data, _ = json.JSONDecoder().raw_decode(text[assign + 1 :].lstrip())
     qs = [q for q in data["questions"] if q.get("type") == "題目"]
-    if len(qs) < 1000:
+    if len(qs) < 800:
         raise SystemExit(f"question parse too small: {len(qs)}")
     return qs
 
@@ -2015,7 +2046,7 @@ def paper_zh_label(paper):
 
 def infer_lang(file_name, fallback="中文"):
     f = file_name or ""
-    if any(x in f for x in ("英文", "ENG", "(EN)", "English")):
+    if any(x in f for x in ("英文", "ENG", "(EN)", "English", "_EN", "-EN")):
         return "英文"
     if any(x in f for x in ("中文", "CHI", "(CHI)")):
         return "中文"
@@ -2794,6 +2825,7 @@ def make_question_pages(catalog, papers, questions, analyses):
     for r in papers:
         by_paper[(r["id"], int(r["year"]), r["paper_code"])].append(r)
     count = 0
+    written = set()
     for q in sort_questions(questions):
         try:
             akey = (q.get("subject"), int(q.get("year", 0)), paper_code_of(q.get("paper")), int(q.get("qno", -1)))
@@ -2814,6 +2846,9 @@ def make_question_pages(catalog, papers, questions, analyses):
         r = next((x for x in rows if x["lang"] == lang), rows[0])
         s = subject_meta(sid)
         path = f"{r['path']}q{q['qno']}/"
+        if path in written:
+            # 中英文同 key 並存（如 2012 卷二 Q1-3）：中文卷先出場，頁面寫一次就夠
+            continue
         url = SITE + path
         qzh = paper_zh_label(code)
         title = f"DSE {s['short']} {q['year']} {qzh} 第 {q['qno']} 題深度分析｜DSE Hub"
@@ -2898,6 +2933,7 @@ def make_question_pages(catalog, papers, questions, analyses):
             footer_extra=f'<a href="{esc(r["path"])}">返回 {q["year"]} {esc(qzh)}</a> · <a href="{esc(bank_href)}">喺題庫開啟呢題</a>',
         )
         add_sitemap(url, "0.8", "monthly")
+        written.add(path)
         count += 1
         print("question", path)
     print("question pages", count)
@@ -3087,12 +3123,10 @@ def sanity_check():
     samples = {
         ROOT / "math/2023/index.html": ["免費 DSE 數學 2023", "G-LTB27V0RGW"],
         ROOT / "math/exponents-logarithms/index.html": ["指數與對數", "G-LTB27V0RGW"],
-        ROOT / "chem/2024/paper-1a/index.html": ["化學 2024", "卷一甲", "G-LTB27V0RGW"],
         ROOT / "sitemap.xml": ["https://hkdse.exampaper.cloud/hub/"],
         ROOT / "hub/index.html": [
             "G-LTB27V0RGW",
             VISUAL_TUTOR,
-            'href="/chem/2024/paper-1a/"',
             "點樣搵某一年嘅 DSE past paper？",
             "brand-lockup",
         ],
@@ -3117,12 +3151,14 @@ def sanity_check():
     if ".pdf" in sm.lower():
         raise SystemExit("sitemap includes pdf")
     # Every local landing index.html (except site root) should be in the sitemap.
+    # 非數學科已落線：notice 頁由人工維護、唔喺呢個 build 嘅 sitemap 入面，跳過。
+    OFFLINE_PREFIXES = ("chem/", "econ/", "bio/", "phys/")
     expected = set()
     for p in ROOT.rglob("index.html"):
         if "mathjax" in p.as_posix():
             continue
         rel = p.relative_to(ROOT).as_posix()
-        if rel == "index.html":
+        if rel == "index.html" or rel.startswith(OFFLINE_PREFIXES):
             continue
         expected.add(f"{SITE}/{p.parent.relative_to(ROOT).as_posix()}/".replace("\\", "/"))
     locs = set(re.findall(r"<loc>(.*?)</loc>", sm))

@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-HK">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>免費 DSE 數學 Casio 計算機程式（fx-50FH II）｜DSE Hub</title>
+<meta name="description" content="原創 Casio fx-50FH II／fx-3650P II 程式庫，包括聯立方程、圓與直線相交、等差等比數列同解三角形，並附網上核對器。DSE Hub 真正完全免費。">
+<meta name="keywords" content="DSE, 香港中學文憑, 歷屆試題, past paper, DSE 數學, Casio, fx-50FH II, 計算機程式, 免費題庫">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="googlebot" content="index, follow">
+<meta name="author" content="DSE Hub">
+<link rel="canonical" href="https://hkdse.exampaper.cloud/math/calculator/">
+<link rel="alternate" hreflang="zh-Hant-HK" href="https://hkdse.exampaper.cloud/math/calculator/">
+<link rel="alternate" hreflang="x-default" href="https://hkdse.exampaper.cloud/math/calculator/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DSE Hub">
+<meta property="og:locale" content="zh_HK">
+<meta property="og:title" content="免費 DSE 數學 Casio 計算機程式（fx-50FH II）｜DSE Hub">
+<meta property="og:description" content="原創 Casio fx-50FH II／fx-3650P II 程式庫，包括聯立方程、圓與直線相交、等差等比數列同解三角形，並附網上核對器。DSE Hub 真正完全免費。">
+<meta property="og:url" content="https://hkdse.exampaper.cloud/math/calculator/">
+<meta property="og:image" content="https://hkdse.exampaper.cloud/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="DSE Hub 香港中學文憑歷屆試題資料庫">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="免費 DSE 數學 Casio 計算機程式（fx-50FH II）｜DSE Hub">
+<meta name="twitter:description" content="原創 Casio fx-50FH II／fx-3650P II 程式庫，包括聯立方程、圓與直線相交、等差等比數列同解三角形，並附網上核對器。DSE Hub 真正完全免費。">
+<meta name="twitter:image" content="https://hkdse.exampaper.cloud/og-image.png">
+<meta name="theme-color" content="#0b1220">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="DSE Hub">
+<meta name="application-name" content="DSE Hub">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/hub/style.css?v=20261115b">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LTB27V0RGW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-LTB27V0RGW');
+</script>
+<style>
+  .casio-toc { display: flex; flex-wrap: wrap; gap: 8px 12px; margin: 8px 0 0; }
+  .casio-toc a {
+    color: var(--acc-ink);
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .casio-toc a:hover { text-decoration: underline; }
+  .casio-card {
+    margin: 8px 0 22px;
+    border: 1px solid var(--hair);
+    border-radius: 10px;
+    background: var(--card);
+    padding: 14px 16px 16px;
+  }
+  .casio-card h2 { font-size: 17px; font-weight: 700; margin: 0 0 8px; }
+  .casio-card h3 { font-size: 15px; font-weight: 700; margin: 14px 0 6px; }
+  .casio-card p, .casio-card li { color: var(--ink-2); font-size: 14px; line-height: 1.65; }
+  .casio-card p { margin: 0 0 8px; }
+  .casio-card p:last-child, .casio-card ul:last-child { margin-bottom: 0; }
+  .casio-card ul, .casio-card ol { margin: 0 0 8px; padding-left: 1.2em; }
+  .casio-meta {
+    display: flex; flex-wrap: wrap; gap: 6px 10px;
+    margin: 0 0 10px; padding: 0; list-style: none;
+  }
+  .casio-meta li {
+    background: var(--acc-fill);
+    color: var(--acc-ink);
+    border-radius: 999px;
+    padding: 2px 9px;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  .casio-prewrap { position: relative; }
+  .casio-copy {
+    position: absolute; top: 8px; right: 8px;
+    background: var(--card-hi); color: var(--ink);
+    border: 1px solid var(--hair); border-radius: 8px;
+    font-size: 12px; padding: 4px 8px; cursor: pointer;
+  }
+  .casio-copy:hover { background: #3a3a3c; }
+  .casio-pre {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+    font-size: 13px;
+    line-height: 1.55;
+    background: #111;
+    border: 1px solid var(--hair);
+    border-radius: 10px;
+    padding: 12px 14px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: pre;
+    color: #f2f2f7;
+    margin: 6px 0 10px;
+    tab-size: 2;
+  }
+  .casio-ex {
+    margin: 8px 0 0;
+    padding: 10px 12px;
+    background: #111;
+    border-radius: 8px;
+    border: 1px solid var(--hair);
+  }
+  .casio-ex p { margin: 0 0 6px; }
+  .casio-ex p:last-child { margin-bottom: 0; }
+  .casio-callout {
+    margin: 8px 0 16px;
+    padding: 12px 16px 14px;
+    border-radius: 10px;
+    border: 1px solid rgba(210, 165, 100, 0.35);
+    background: rgba(210, 165, 100, 0.10);
+  }
+  .casio-callout h2 { font-size: 16px; margin: 0 0 8px; }
+  .casio-callout p, .casio-callout li { color: var(--ink-2); font-size: 14px; line-height: 1.65; }
+  .casio-callout p { margin: 0 0 8px; }
+  .casio-callout p:last-child, .casio-callout ul:last-child { margin-bottom: 0; }
+  .casio-callout ul { margin: 0; padding-left: 1.2em; }
+  .casio-form {
+    display: grid;
+    gap: 8px;
+    margin-top: 8px;
+  }
+  .casio-fields {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 8px;
+  }
+  .casio-form label {
+    display: flex; flex-direction: column; gap: 4px;
+    font-size: 13px; color: var(--ink-2);
+  }
+  .casio-form input, .casio-form select {
+    background: #111;
+    color: var(--ink);
+    border: 1px solid var(--hair);
+    border-radius: 8px;
+    padding: 8px 10px;
+    font-size: 15px;
+    width: 100%;
+  }
+  .casio-form button[type="submit"], .casio-form button.run {
+    background: var(--acc);
+    color: #fff;
+    border: 0;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    width: fit-content;
+  }
+  .casio-form button.run:hover { filter: brightness(1.08); }
+  .casio-out {
+    margin: 10px 0 0;
+    padding: 10px 12px;
+    background: #111;
+    border-radius: 8px;
+    border: 1px solid var(--hair);
+    font-size: 14px;
+    line-height: 1.65;
+    white-space: pre-wrap;
+    min-height: 3em;
+  }
+  .casio-note { font-size: 13px; color: var(--ink-3); }
+  @media (max-width: 640px) {
+    .casio-pre { font-size: 12.5px; padding-right: 72px; }
+    .casio-copy { top: 6px; right: 6px; }
+  }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "DSE Hub",
+          "item": "https://hkdse.exampaper.cloud/hub/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "數學",
+          "item": "https://hkdse.exampaper.cloud/math/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Casio 計算機程式",
+          "item": "https://hkdse.exampaper.cloud/math/calculator/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "name": "免費 DSE 數學 Casio 計算機程式（fx-50FH II）｜DSE Hub",
+      "description": "原創 Casio fx-50FH II／fx-3650P II 程式庫，包括聯立方程、圓與直線相交、等差等比數列同解三角形，並附網上核對器。DSE Hub 真正完全免費。",
+      "url": "https://hkdse.exampaper.cloud/math/calculator/",
+      "inLanguage": "zh-Hant-HK",
+      "isPartOf": {
+        "@id": "https://hkdse.exampaper.cloud/#website"
+      },
+      "about": {
+        "@type": "Thing",
+        "name": "香港中學文憑 數學（必修部分） Casio 計算機程式"
+      }
+    },
+    {
+      "@type": "HowTo",
+      "name": "點樣喺 Casio fx-50FH II 輸入同執行程式",
+      "description": "喺考評局准用嘅 Casio fx-50FH II 或 fx-3650P II，建立、執行或刪除一個 COMP 模式程式。",
+      "inLanguage": "zh-Hant-HK",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "進入程式模式",
+          "text": "按 MODE，再按 6 進入 PRGM。若第一個 MODE 畫面未見 PRGM，再撳一次 MODE 睇第二頁（SD、REG、PRGM），然後按 6。"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "開新程式",
+          "text": "按 1（EDIT），揀 P1 至 P4 一個空位，再按 1 揀 COMP 作為執行模式（除非個程式要用複數）。執行模式一經指定就不能改，要改就要刪咗重開。"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "輸入指令",
+          "text": "依程式表輸入。問號 ?、儲存 →、分隔 : 或 」、顯示 ◢、條件 ⇒ 多數喺程式指令選單（P-CMD，通常 SHIFT 3）。編輯時撳 EXE，有啲機款會插入 ◢，有啲會插入分隔符，唔確定就開 P-CMD 核對。輸入完成後按 AC，或返回 PRGM 選單。"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "執行程式",
+          "text": "按 MODE、6、2（RUN），揀對應程式位，再按 EXE。計算機顯示 ? 時輸入數值，每次撳 EXE。輸出順序以程式說明為準。"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "刪除程式",
+          "text": "按 MODE、6、3（DEL 或 DELETE），再揀要刪嘅程式位（1 至 4）。刪除後不能復原。若螢幕再問確認，跟機上提示做。"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "DSE Hub 係咪免費？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "係，真正完全免費查閱香港中學文憑試歷屆試題索引同題目，亦包括呢頁嘅計算機程式說明。唔使報名，亦唔使信用卡。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "考試可唔可以用預先輸入程式嘅計算機？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "考評局准用名單上嘅計算機，包括可編程型號，必須有 H.K.E.A.A. APPROVED 或 H.K.E.A. APPROVED 墊印標籤，先可以帶入試場。fx-50FH、fx-50FH II、fx-3650P 同 fx-3650P II 都列喺 2026 年名單。預先輸入程式係咪符合當年規則，請以最新官方通告同《考生手冊》為準，唔好單靠呢頁摘要。計算機上面除個人資料外唔可以寫字或貼標貼。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "呢啲程式可唔可以直接抄去考試用、代替寫步驟？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "唔可以當寫步驟嘅替代。程式適合核對卷一長題嘅數值，或者加快卷二嘅算術，但評卷仍然要睇你嘅列式同推理。電池沒電或重設之後，程式亦可能會消失，所以一定要識手計。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "網上核對器可唔可以帶入試場？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "唔可以。頁面入面嘅核對器只供練習，唔係考評局准用計算機，亦唔可以喺考試使用。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "可唔可以按課題操練相關題目？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "可以。喺 DSE Hub 揀「按課題」，或者開啟方程與不等式、數列、三角學與解三角形、坐標幾何：圓等課題頁，就會列出相關題目。"
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body class="subj-page">
+<header class="hero">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <nav class="crumb" aria-label="麵包屑">
+      <a href="/hub/">DSE Hub</a>
+      <span aria-hidden="true">／</span>
+      <a href="/math/">數學</a>
+      <span aria-hidden="true">／</span>
+      <span>Casio 計算機程式</span>
+      </nav>
+    <p class="brand">DSE Hub</p>
+    <h1>DSE 數學：Casio 計算機程式</h1>
+    <p class="tagline">為 Casio fx-50FH II 同 fx-3650P II 而寫嘅原創程式庫，用嚟核對卷一長題同加快卷二數值計算。程式要自己輸入；考試仍然要寫清楚步驟。</p>
+        <nav class="subj-nav" aria-label="科目">
+        <a href="/math/" class="on">數學<span class="n">17 卷</span></a>
+        <a href="/econ/">經濟<span class="n">3 卷</span></a>
+        <a href="/chem/">化學<span class="n">39 卷</span></a>
+        <a href="/bio/">生物<span class="n">2 卷</span></a>
+        <a href="/phys/">物理<span class="n">2 卷</span></a>
+        </nav>
+        <nav class="strand-nav" aria-label="課題範疇">
+        <a href="/math/number-and-algebra/">數與代數</a>
+        <a href="/math/measures-shape-space/">度量、圖形與空間</a>
+        <a href="/math/data-handling/">數據處理</a>
+        </nav>
+        <nav class="strand-nav" aria-label="課題">
+        <a href="/math/exponents-logarithms/">指數與對數</a>
+        <a href="/math/ratio-rate-proportion/">比、率與比例</a>
+        <a href="/math/polynomials-factorization/">多項式與因式分解</a>
+        <a href="/math/number-systems/">數系</a>
+        <a href="/math/equations-inequalities/">方程與不等式</a>
+        <a href="/math/percentages-interest/">百分法與利息</a>
+        <a href="/math/functions-graphs/">函數與圖像</a>
+        <a href="/math/sequences/">數列</a>
+        <a href="/math/variations/">變分</a>
+        <a href="/math/trigonometry/">三角學與解三角形</a>
+        <a href="/math/coordinate-geometry-line/">坐標幾何：直線</a>
+        <a href="/math/coordinate-geometry-circle/">坐標幾何：圓</a>
+        <a href="/math/circle-geometry/">圓形幾何</a>
+        <a href="/math/geometric-transformations/">幾何變換</a>
+        <a href="/math/mensuration/">求積法</a>
+        <a href="/math/plane-geometry-similar-triangles/">平面幾何與相似三角形</a>
+        <a href="/math/statistical-graphs/">統計圖表</a>
+        <a href="/math/central-tendency-dispersion/">集中趨勢與離差</a>
+        <a href="/math/probability/">概率</a>
+        <a href="/math/permutations-combinations/">排列與組合</a>
+        </nav>
+    <p class="page-cta"><a href="#pack">建議 P1–P4 組合</a> · <a href="#verifier">網上核對器</a> · <a href="/math/">返回數學科目頁</a></p>
+  </div>
+</header>
+<main class="subj-main">
+<section class="topic-guide" aria-labelledby="intro-heading">
+  <h2 id="intro-heading">呢頁程式點用</h2>
+  <p>呢度收錄嘅係一套短小、同 DSE 必修部分最常手算出錯嘅課題對應嘅程式：聯立二元一次方程、二次方程、圓嘅圓心同半徑、直線與圓相交、等差同等比數列，以及已知三邊解三角形。每條程式都由基本代數從頭推導，並用獨立數值例子測試過。</p>
+  <p>程式最穩陣嘅用法，係做完列式之後先核對答案，或者喺卷二加快重複嘅算術。卷一長題仍然要寫出方法同步驟；答中數值但步驟唔全，一樣可以失分。下面亦有一個瀏覽器核對器，方便你輸入程式前後對答案——佢只供練習，唔係准用計算機。</p>
+  <p>相關課題頁：<a href="/math/equations-inequalities/">方程與不等式</a> · <a href="/math/coordinate-geometry-circle/">坐標幾何：圓</a> · <a href="/math/sequences/">數列</a> · <a href="/math/trigonometry/">三角學與解三角形</a></p>
+</section>
+
+<section class="casio-callout" aria-labelledby="exam-heading" id="exam">
+  <h2 id="exam-heading">考試用計算機注意</h2>
+  <ul>
+    <li>只可以用考評局最新准用名單上嘅型號，而且機身要有「H.K.E.A.A. APPROVED」或「H.K.E.A. APPROVED」墊印標籤，否則有機會被扣分。帶未獲准、又可以讀取預存資料嘅計算機，甚至可能被取消資格。</li>
+    <li>Casio fx-50FH、fx-50FH II、fx-3650P 同 fx-3650P II 都列喺 <a href="https://www.hkeaa.edu.hk/DocLibrary/Circulars/HKDSE/HKDSE_Use_of_Calculators_in_the_2026_Examination.pdf" rel="noopener">2026 年香港中學文憑考試計算機通告（PDF）</a> 嘅准用名單。之後年份請返 <a href="https://www.hkeaa.edu.hk/" rel="noopener">考評局網站</a> 查最新通告，唔好沿用過期名單。</li>
+    <li>准用名單包括可編程計算機。預先輸入程式係咪符合你應考嗰年嘅規則，請自己對照當年通告同《考生手冊》「考生須知」，唔好單靠呢頁嘅摘要。</li>
+    <li>除姓名、班別、學號、電話等個人資料外，計算機上面唔可以寫其他字或貼標貼；套要除低放喺椅下或袋入面。</li>
+    <li>電池沒電、重設或者更換電池之後，程式有可能會消失。一定要識手計方法，唔好把成場考試押喺記憶體度。</li>
+  </ul>
+</section>
+
+<section class="casio-card" id="pack" aria-labelledby="pack-heading">
+  <h2 id="pack-heading">建議 P1–P4 組合（約 381 字節／680）</h2>
+  <p>fx-50FH II 同 fx-3650P II 合共得四個程式位，程式記憶體 680 字節。下面呢組覆蓋最常用、又唔好完全交給內置公式嘅工作，合計約 381 字節，餘量足夠。</p>
+  <ul>
+    <li><strong>P1 聯立二元一次</strong>（約 55 字節）— <a href="#sim">程式同例子</a></li>
+    <li><strong>P2 直線與圓相交</strong>（約 129 字節）— <a href="#line-circle">程式同例子</a></li>
+    <li><strong>P3 等差／等比數列</strong>（約 98 字節）— <a href="#seq">程式同例子</a></li>
+    <li><strong>P4 三邊解三角形</strong>（約 99 字節）— <a href="#triangle">程式同例子</a></li>
+  </ul>
+  <p>二次方程同圓心半徑另外提供，需要時可以同上面其中一條對調。二次方程嘅兩根可以用內置 FMLA 01 計，但呢頁嘅版本會一併輸出頂點同判別式。字節數係按每個指令、變數或數字大約佔 1 字節來估算，實際以機面顯示嘅剩餘容量為準。</p>
+</section>
+
+<section class="casio-card" id="howto" aria-labelledby="howto-heading">
+  <h2 id="howto-heading">點樣輸入、執行同刪除</h2>
+  <p>以下步驟以 Casio fx-50FH II 為準，fx-3650P II 嘅程式模式擺位大致相同。若你部機嘅選單字眼同下面唔完全一樣，以機面同原廠說明書為準。</p>
+  <h3>輸入新程式</h3>
+  <ol>
+    <li>按 MODE，再按 6 進入 PRGM。若第一個 MODE 畫面只有 COMP、CMPLX 等而未見 PRGM，再撳一次 MODE 睇第二頁（通常有 SD、REG、PRGM），然後按 6。</li>
+    <li>按 1（EDIT），再揀 P1、P2、P3 或 P4。新程式要揀未用過嘅空位。</li>
+    <li>揀執行模式：按 1 選 COMP。除非程式要用複數，否則不要揀 CMPLX。執行模式一經指定就不能改；要改就要刪除個位再開過。</li>
+    <li>依下面程式表輸入。換行只係為咗方便閱讀，唔使另外輸入換行符號。</li>
+    <li>完成後按 AC，或者返回 PRGM 選單。可以再睇一次實際用咗幾多字節，同下面嘅約數核對。</li>
+  </ol>
+  <h3>常用符號</h3>
+  <ul>
+    <li><strong>?</strong> 提示輸入，<strong>→</strong> 存入變數，<strong>:</strong> 或 <strong>」</strong> 分隔指令，<strong>◢</strong> 顯示一個數值並暫停，<strong>⇒</strong> 條件成立先執行後面嗰句。</li>
+    <li>以上符號多數喺程式指令選單輸入（P-CMD；通常係 SHIFT 3，然後按對應編號）。</li>
+    <li>編輯時撳 EXE，有啲機款會插入 ◢，有啲會插入分隔符 :。若插入嘅唔係你要嘅符號，改由 P-CMD 選單揀。</li>
+    <li>分隔符 : 喺部分機款可以用 a b/c 鍵輸入（螢幕或會顯示為 」）。</li>
+    <li>呢幾款機只有 <strong>A、B、C、D、X、Y、M</strong> 七個字母變數，冇 E 或 F。第二條方程嘅係數要改用 D、X、Y 來裝。</li>
+    <li>程式入面如果睇唔清係負號定減號，用減號鍵輸入就可以。</li>
+    <li>最後一個結果通常會自動顯示，所以好多程式唔使喺最尾再加 ◢。</li>
+  </ul>
+  <h3>執行</h3>
+  <p>按 MODE、6、2（RUN），揀程式位，再按 EXE。見到 ? 就輸入對應數值，每次撳 EXE。幾個輸出會按程式寫明嘅次序逐個出現，繼續撳 EXE 睇下一個。</p>
+  <h3>刪除</h3>
+  <p>按 MODE、6、3（DEL 或 DELETE），再揀要清空嘅程式位。刪除後不能復原。若螢幕再問確認，跟機上提示做。官方說明書亦係喺 PRGM 選單揀刪除，再指定程式區編號。</p>
+</section>
+
+<section class="casio-card" id="built-in" aria-labelledby="built-in-heading">
+  <h2 id="built-in-heading">先用內置功能，唔好浪費程式位</h2>
+  <p>喺 COMP 模式按 FMLA，再輸入兩位編號，已經有現成公式。下面呢幾條同必修數學最相關，無需再佔 P1–P4：</p>
+  <ul>
+    <li><strong>FMLA 01</strong>：二次方程實根。冇實根會 Math ERROR。</li>
+    <li><strong>FMLA 02</strong>：餘弦公式，已知兩邊及其夾角求第三邊。</li>
+    <li><strong>FMLA 03</strong>：希羅公式，已知三邊求面積。</li>
+    <li><strong>FMLA 04、05</strong>：標準常態分佈嘅 P(x)、Q(x)，有時會喺延伸數學單元一用到。呢頁冇另外寫統計程式。</li>
+  </ul>
+  <p>另外，內置 <strong>Pol(</strong> 同 <strong>Rec(</strong> 已經可以做極坐標同直角坐標互換，唔使再寫一條程式做同樣嘅事。</p>
+</section>
+
+<nav class="topic-guide" id="library" aria-label="程式目錄">
+  <h2>程式目錄</h2>
+  <p class="casio-toc">
+    <a href="#sim">聯立二元一次</a>
+    <a href="#quad">二次方程</a>
+    <a href="#circle">圓心與半徑</a>
+    <a href="#line-circle">直線與圓相交</a>
+    <a href="#seq">等差／等比數列</a>
+    <a href="#triangle">三邊解三角形</a>
+    <a href="#three-points">三點求圓（選用）</a>
+  </p>
+</nav>
+
+<article class="casio-card" id="sim">
+  <h2>聯立二元一次（2-unknown linear）</h2>
+  <ul class="casio-meta">
+    <li>約 55 字節</li>
+    <li>COMP</li>
+    <li>建議 P1</li>
+  </ul>
+  <p>解 <strong>A x + B y = C</strong> 同 <strong>D x + X y = Y</strong>。第二條方程用 D、X、Y，因為冇 E 呢個變數。方法係克拉默法則：分母為 A X − B D。先輸出 x，再輸出 y。</p>
+  <p>若兩條直線平行或重疊，分母為 0，計算機會顯示 Math ERROR。呢個時候要返返去用手判斷係無解定無限多組解，程式唔會代你分類。</p>
+  <div class="casio-prewrap">
+    <button type="button" class="casio-copy" data-copy="sim-src">複製程式</button>
+    <pre class="casio-pre" id="sim-src">?→A:?→B:?→C:?→D:?→X:?→Y:
+(CX-BY)÷(AX-BD)◢
+(AY-CD)÷(AX-BD)</pre>
+  </div>
+  <p>輸入次序：A、B、C、D、X、Y。輸出次序：x，然後 y。</p>
+  <div class="casio-ex">
+    <p><strong>例子 1：</strong> 3x + 2y = 7，x + y = 3。輸入 3、2、7、1、1、3。輸出 x = 1，y = 2。</p>
+    <p><strong>例子 2：</strong> 2x + 3y = 8，x − y = 1。輸入 2、3、8、1、−1、1。輸出 x = 2.2，y = 1.2。</p>
+  </div>
+  <p class="casio-note">第二個例子嘅 X 係 −1；若睇唔清符號，用減號鍵輸入。</p>
+</article>
+
+<article class="casio-card" id="quad">
+  <h2>二次方程：頂點、判別式同兩根（Quadratic）</h2>
+  <ul class="casio-meta">
+    <li>約 66 字節</li>
+    <li>COMP</li>
+    <li>可選，替代 FMLA 01</li>
+  </ul>
+  <p>解 <strong>A x² + B x + C = 0</strong>（A ≠ 0）。輸出次序：頂點橫坐標 −B／(2A)，頂點縱坐標 −Δ／(4A)，判別式 Δ = B² − 4AC，然後兩條小數根 (−B ± √Δ)／(2A)，先取正號再取負號。</p>
+  <p>若 Δ &lt; 0，顯示到 Δ 之後，開方會 Math ERROR，呢個表示冇實根。若 Δ = 0，兩根相同。根式化簡（例如寫成 (p ± √q)／r）請自己用手做，呢條程式只輸出小數，避免自動約簡出錯。</p>
+  <div class="casio-prewrap">
+    <button type="button" class="casio-copy" data-copy="quad-src">複製程式</button>
+    <pre class="casio-pre" id="quad-src">?→A:?→B:?→C:B²-4AC→D:
+-B÷(2A)◢
+-D÷(4A)◢
+D◢
+(-B+√(D))÷(2A)◢
+(-B-√(D))÷(2A)</pre>
+  </div>
+  <p>輸入次序：A、B、C。√(D) 用開方鍵，會帶一對括號。</p>
+  <div class="casio-ex">
+    <p><strong>例子 1：</strong> x² − 5x + 6 = 0。輸入 1、−5、6。輸出頂點 (2.5, −0.25)，Δ = 1，根 3 同 2。</p>
+    <p><strong>例子 2：</strong> 2x² + 3x − 2 = 0。輸入 2、3、−2。輸出頂點 (−0.75, −3.125)，Δ = 25，根 0.5 同 −2。</p>
+  </div>
+</article>
+
+<article class="casio-card" id="circle">
+  <h2>圓嘅圓心與半徑（Circle centre and radius）</h2>
+  <ul class="casio-meta">
+    <li>約 51 字節</li>
+    <li>COMP</li>
+    <li>可選</li>
+  </ul>
+  <p>由一般式 <strong>A x² + A y² + B x + C y + D = 0</strong> 求圓心同半徑。注意 x² 同 y² 嘅係數要相同，都係 A。圓心為 (−B／(2A), −C／(2A))，半徑為 √((B² + C² − 4AD)／(4A²))，亦即係非負嘅那個值。</p>
+  <p>若根號入面係負數，冇實圓，機會顯示 Math ERROR。若半徑為 0，只係一個點。</p>
+  <div class="casio-prewrap">
+    <button type="button" class="casio-copy" data-copy="circ-src">複製程式</button>
+    <pre class="casio-pre" id="circ-src">?→A:?→B:?→C:?→D:
+-B÷(2A)◢
+-C÷(2A)◢
+√((B²+C²-4AD)÷(4A²))</pre>
+  </div>
+  <p>輸入次序：A、B、C、D。輸出次序：圓心橫坐標 h，縱坐標 k，然後半徑 r。</p>
+  <div class="casio-ex">
+    <p><strong>例子 1：</strong> x² + y² − 4x + 6y − 3 = 0。輸入 1、−4、6、−3。輸出圓心 (2, −3)，半徑 4。</p>
+    <p><strong>例子 2：</strong> 2x² + 2y² + 8x − 4y + 6 = 0。輸入 2、8、−4、6。輸出圓心 (−2, 1)，半徑 √2 ≈ 1.414213562。</p>
+  </div>
+</article>
+
+<article class="casio-card" id="line-circle">
+  <h2>直線與圓相交（Line–circle intersection）</h2>
+  <ul class="casio-meta">
+    <li>約 129 字節</li>
+    <li>COMP</li>
+    <li>建議 P2</li>
+  </ul>
+  <p>求直線同圓嘅交點。因為冇 E、F 兩個變數，約定如下：</p>
+  <ul>
+    <li>直線：<strong>A x + B y + C = 0</strong></li>
+    <li>圓：<strong>x² + y² + D x + X y + Y = 0</strong>（呢度嘅 X、Y 相當於一般式入面嘅 E、F）</li>
+  </ul>
+  <p>做法係先求圓心到直線嘅垂足，再沿直線方向移一段 √(r² − h²)。呢個代入對垂直線、水平線都適用。輸出兩個交點，每個點先 x 後 y。</p>
+  <p>若直線同圓相切，√(r² − h²) = 0，兩個點會重複出現。若不相交，根號入面為負，顯示 Math ERROR。若 A、B 同時為 0，亦會因為除以 0 而出錯，因為嗰時唔成一條直線。</p>
+  <div class="casio-prewrap">
+    <button type="button" class="casio-copy" data-copy="lc-src">複製程式</button>
+    <pre class="casio-pre" id="lc-src">?→A:?→B:?→C:?→D:?→X:?→Y:
+√(A²+B²)→M:
+(-AD-BX+2C)÷(2M)→C:
+-D÷2→D:
+-X÷2→X:
+√(D²+X²-Y-C²)→Y:
+D-(CA+YB)÷M◢
+X-(CB-YA)÷M◢
+D-(CA-YB)÷M◢
+X-(CB+YA)÷M</pre>
+  </div>
+  <p>輸入次序：A、B、C、D、X、Y。輸出次序：第一點 (x, y)，第二點 (x, y)。兩個點邊個先出現唔影響正確性，核對時只要兩個座標都對得上就得。程式中段會改寫 C、D、X、Y、M，所以睇完結果若要再跑一次，要重新執行程式。</p>
+  <div class="casio-ex">
+    <p><strong>例子 1（兩個交點，垂直線）：</strong> 圓 x² + y² = 25，直線 x = 3，即 1·x + 0·y − 3 = 0。輸入 1、0、−3、0、0、−25。輸出 (3, 4) 同 (3, −4)。</p>
+    <p><strong>例子 2（相切）：</strong> 同一圓，直線 x = 5。輸入 1、0、−5、0、0、−25。兩個輸出都係 (5, 0)。</p>
+    <p><strong>例子 3（不相交）：</strong> 同一圓，直線 x = 6。輸入 1、0、−6、0、0、−25。開方時 Math ERROR。</p>
+    <p><strong>例子 4（斜線，整數點）：</strong> 圓 x² + y² = 25，直線 x + y − 5 = 0。輸入 1、1、−5、0、0、−25。輸出 (0, 5) 同 (5, 0)（次序或會對調；由於捨入，0 有時會顯示成極細小數，可視作 0）。</p>
+  </div>
+</article>
+
+<article class="casio-card" id="seq">
+  <h2>等差／等比數列（AP / GP）</h2>
+  <ul class="casio-meta">
+    <li>約 98 字節（合併）</li>
+    <li>COMP</li>
+    <li>建議 P3</li>
+  </ul>
+  <p>第一個輸入 M 用來揀類型：<strong>M = 0</strong> 做等差數列，<strong>M = 1</strong> 做等比數列。之後一律輸入首項 A、公差或公比 B、項數 C（正整數 n）。</p>
+  <ul>
+    <li>等差：輸出通項 T<sub>n</sub> = A + (C − 1)B，再輸出前 n 項和 S<sub>n</sub> = C(2A + (C − 1)B)／2。</li>
+    <li>等比：輸出 T<sub>n</sub> = A × B<sup>C−1</sup>，再輸出 S<sub>n</sub> = A(B<sup>C</sup> − 1)／(B − 1)。若 |B| &lt; 1，再輸出無窮和 S<sub>∞</sub> = A／(1 − B)；若 |B| ≥ 1，唔會顯示 S<sub>∞</sub>。</li>
+  </ul>
+  <p>若公比 B = 1，等比求和嗰步會除以 0 而 Math ERROR。呢個情況 S<sub>n</sub> = n A，用手計，或者改用等差程式並設公差為 0。</p>
+  <div class="casio-prewrap">
+    <button type="button" class="casio-copy" data-copy="seq-src">複製程式</button>
+    <pre class="casio-pre" id="seq-src">?→M:?→A:?→B:?→C:
+M=0⇒A+(C-1)B◢
+M=0⇒C(2A+(C-1)B)÷2◢
+M=1⇒A×B^(C-1)◢
+M=1⇒A(B^C-1)÷(B-1)◢
+M=1⇒Abs(B)&lt;1⇒A÷(1-B)</pre>
+  </div>
+  <p>B^(C−1) 用次方鍵（x<sup>y</sup>）。Abs( 係絕對值。最後一行係巢狀條件；若你部機對呢行顯示異常，可以略過佢，當 |r| &lt; 1 時自己計 A÷(1−B)。</p>
+  <p>若你只想佔更少字節，可以分拆成下面兩條短程式，但會用兩個程式位。</p>
+  <h3>只做等差（約 35 字節）</h3>
+  <div class="casio-prewrap">
+    <button type="button" class="casio-copy" data-copy="ap-src">複製程式</button>
+    <pre class="casio-pre" id="ap-src">?→A:?→B:?→C:
+A+(C-1)B◢
+C(2A+(C-1)B)÷2</pre>
+  </div>
+  <h3>只做等比（約 50 字節）</h3>
+  <div class="casio-prewrap">
+    <button type="button" class="casio-copy" data-copy="gp-src">複製程式</button>
+    <pre class="casio-pre" id="gp-src">?→A:?→B:?→C:
+A×B^(C-1)◢
+A(B^C-1)÷(B-1)◢
+Abs(B)&lt;1⇒A÷(1-B)</pre>
+  </div>
+  <div class="casio-ex">
+    <p><strong>例子 1（等差）：</strong> 首項 3，公差 5，n = 4。合併程式輸入 M = 0，然後 3、5、4。輸出 T<sub>4</sub> = 18，S<sub>4</sub> = 42。</p>
+    <p><strong>例子 2（等比，有 S<sub>∞</sub>）：</strong> 首項 2，公比 0.5，n = 4。輸入 M = 1，然後 2、0.5、4。輸出 T<sub>4</sub> = 0.25，S<sub>4</sub> = 3.75，S<sub>∞</sub> = 4。</p>
+    <p><strong>例子 3（等比，無 S<sub>∞</sub>）：</strong> 首項 3，公比 2，n = 5。輸入 M = 1，然後 3、2、5。輸出 T<sub>5</sub> = 48，S<sub>5</sub> = 93，唔會再出第三個值。</p>
+  </div>
+</article>
+
+<article class="casio-card" id="triangle">
+  <h2>三邊解三角形（Triangle from three sides）</h2>
+  <ul class="casio-meta">
+    <li>約 99 字節</li>
+    <li>COMP · Degree</li>
+    <li>建議 P4</li>
+  </ul>
+  <p>已知三邊 A、B、C（分別對住角 A、B、C），先用希羅公式計面積，再用餘弦定律計三隻角。輸出次序：面積，角 A，角 B，角 C（以度為單位）。</p>
+  <p><strong>必須先設為 Degree 模式</strong>（螢幕出現 D）。角度單位通常喺 SETUP／SHIFT MODE 揀 Deg，實際鍵位以你部機說明書為準。</p>
+  <p>三邊符合三角形不等式時，SSS 只有一解。呢條程式<strong>唔處理 SSA 模糊情況</strong>——SSA 可能有兩解，要另外用手分析。若三邊根本唔成三角形，面積嗰步可能 Math ERROR，或者得出 0。</p>
+  <p>若你只需要面積，用內置 FMLA 03 就夠；呢條程式嘅額外用處係一次過出三隻角。</p>
+  <div class="casio-prewrap">
+    <button type="button" class="casio-copy" data-copy="tri-src">複製程式</button>
+    <pre class="casio-pre" id="tri-src">?→A:?→B:?→C:
+(A+B+C)÷2→D:
+√(D(D-A)(D-B)(D-C))◢
+cos⁻¹((B²+C²-A²)÷(2BC))◢
+cos⁻¹((A²+C²-B²)÷(2AC))◢
+cos⁻¹((A²+B²-C²)÷(2AB))</pre>
+  </div>
+  <p>cos⁻¹ 用反餘弦（通常 SHIFT cos）。輸入次序：邊 a、邊 b、邊 c。</p>
+  <div class="casio-ex">
+    <p><strong>例子 1：</strong> 3、4、5。輸出面積 6，角約 36.86989765°、53.13010235°、90°。</p>
+    <p><strong>例子 2：</strong> 2、2、2。輸出面積 √3 ≈ 1.732050808，三角都係 60°。</p>
+  </div>
+</article>
+
+<article class="casio-card" id="three-points">
+  <h2>三點求圓（選用，Three points to a circle）</h2>
+  <ul class="casio-meta">
+    <li>約 205 字節</li>
+    <li>COMP</li>
+    <li>唔入建議四人組，有需要先換入</li>
+  </ul>
+  <p>已知三點 (A, B)、(C, D)、(X, Y)，求外接圓嘅圓心、半徑，以及一般式 x² + y² + P x + Q y + R = 0 嘅係數 P、Q、R。方法係寫出兩條中垂線，用類似克拉默法則嘅公式解圓心，再量去第一點嘅距離。</p>
+  <p>若三點共線，分母為 0，會 Math ERROR，因為唔存在有限半徑嘅圓。</p>
+  <div class="casio-prewrap">
+    <button type="button" class="casio-copy" data-copy="circ3-src">複製程式</button>
+    <pre class="casio-pre" id="circ3-src">?→A:?→B:?→C:?→D:?→X:?→Y:
+2(A(D-Y)+C(Y-B)+X(B-D))→M:
+((A²+B²)(D-Y)+(C²+D²)(Y-B)+(X²+Y²)(B-D))÷M→M:
+M◢
+((A²+B²)(X-C)+(C²+D²)(A-X)+(X²+Y²)(C-A))÷(2(A(D-Y)+C(Y-B)+X(B-D)))→X:
+X◢
+√((M-A)²+(X-B)²)◢
+-2M◢
+-2X◢
+2MA+2XB-A²-B²</pre>
+  </div>
+  <p>輸入次序：x<sub>1</sub>、y<sub>1</sub>、x<sub>2</sub>、y<sub>2</sub>、x<sub>3</sub>、y<sub>3</sub>。輸出次序：圓心 h、k，半徑 r，然後一般式係數 P、Q、R。求 k 嗰步會重算一次分母，避免提早改寫變數。</p>
+  <div class="casio-ex">
+    <p><strong>例子 1：</strong> (1, 0)、(0, 1)、(−1, 0)。輸出圓心 (0, 0)，半徑 1，一般式係數 0、0、−1，即 x² + y² − 1 = 0。</p>
+    <p><strong>例子 2：</strong> (0, 0)、(2, 0)、(0, 2)。輸出圓心 (1, 1)，半徑 √2 ≈ 1.414213562，係數 −2、−2、0，即 x² + y² − 2x − 2y = 0。</p>
+  </div>
+</article>
+
+<section class="topic-guide" aria-labelledby="skip-heading">
+  <h2 id="skip-heading">呢頁故意冇收嘅內容</h2>
+  <p>兩點距離同斜率用 √((C−A)²+(D−B)²) 同 (D−B)÷(C−A) 即可，不必佔用程式位。重心、內心、垂心、外心嘅「四心」套裝，以及三次／四次方程、大型矩陣、財務或數論程式，呢頁都冇寫入——要嘛已經超出必修最常用範圍，要嘛未喺同樣嚴格嘅測試下推出，唔值得為完整而犧牲正確。</p>
+  <p>延伸數學單元一若要用標準常態，優先試內置 FMLA 04、05 同 SD 模式；呢頁冇另外附二項或常態程式。</p>
+</section>
+
+<section class="casio-card" id="verifier" aria-labelledby="verifier-heading">
+  <h2 id="verifier-heading">網上核對器（只供練習）</h2>
+  <p>用同 Casio 程式一樣嘅輸入約定，喺瀏覽器計一次，方便你輸入機程式前後核對。呢個核對器<strong>唔係</strong>考評局准用計算機，唔可以喺考試使用。</p>
+  <form class="casio-form" id="casio-form">
+    <label>揀要核對嘅程式
+      <select id="tool" name="tool">
+        <option value="sim">聯立二元一次</option>
+        <option value="quad">二次方程</option>
+        <option value="circle">圓心與半徑</option>
+        <option value="lc">直線與圓相交</option>
+        <option value="seq">等差／等比數列</option>
+        <option value="tri">三邊解三角形</option>
+        <option value="circ3">三點求圓</option>
+      </select>
+    </label>
+    <p class="casio-note" id="tool-hint"></p>
+    <div class="casio-fields" id="fields"></div>
+    <button type="submit" class="run" id="run-btn">計算</button>
+    <div class="casio-out" id="out" role="status" aria-live="polite">結果會顯示喺呢度。</div>
+  </form>
+</section>
+
+<section class="topic-guide" aria-labelledby="reading-heading">
+  <h2 id="reading-heading">延伸閱讀</h2>
+  <p>若你想睇更闊嘅課題分類（方程、代數、幾何、坐標幾何等）作為課程地圖，David Cheuk 整理咗一套 Casio fx-50FH、fx-50FH II 同 fx-3650P II 嘅程式目錄：<a href="https://webcal.freetzi.com/casio.fx-50FH/fx-50F_Plus.htm" rel="noopener">CASIO fx-50FH／fx-50FH II／fx-3650P II 程式集</a>。呢頁只借用其課題範圍作參考，所有程式碼都由基本代數重新寫同測試，並無轉錄該頁或其他公開程式庫嘅列表。</p>
+</section>
+
+<section class="seo-faq" aria-label="常見問題" id="faq">
+  <h2>常見問題</h2>
+  <details open>
+    <summary>DSE Hub 係咪免費？</summary>
+    <p>係，真正完全免費查閱香港中學文憑試歷屆試題索引同題目，亦包括呢頁嘅計算機程式說明。唔使報名，亦唔使信用卡。</p>
+  </details>
+  <details>
+    <summary>考試可唔可以用預先輸入程式嘅計算機？</summary>
+    <p>考評局准用名單上嘅計算機，包括可編程型號，必須有「H.K.E.A.A. APPROVED」或「H.K.E.A. APPROVED」墊印標籤，先可以帶入試場。fx-50FH、fx-50FH II、fx-3650P 同 fx-3650P II 都列喺 <a href="https://www.hkeaa.edu.hk/DocLibrary/Circulars/HKDSE/HKDSE_Use_of_Calculators_in_the_2026_Examination.pdf" rel="noopener">2026 年計算機通告</a>。預先輸入程式係咪符合當年規則，請以最新官方通告同《考生手冊》為準，唔好單靠呢頁摘要。計算機上面除個人資料外唔可以寫字或貼標貼。</p>
+  </details>
+  <details>
+    <summary>呢啲程式可唔可以直接抄去考試用、代替寫步驟？</summary>
+    <p>唔可以當寫步驟嘅替代。程式適合核對卷一長題嘅數值，或者加快卷二嘅算術，但評卷仍然要睇你嘅列式同推理。電池沒電或重設之後，程式亦可能會消失，所以一定要識手計。</p>
+  </details>
+  <details>
+    <summary>網上核對器可唔可以帶入試場？</summary>
+    <p>唔可以。頁面入面嘅核對器只供練習，唔係考評局准用計算機，亦唔可以喺考試使用。</p>
+  </details>
+  <details>
+    <summary>可唔可以按課題操練相關題目？</summary>
+    <p>可以。喺 DSE Hub 揀「按課題」，或者開啟<a href="/math/equations-inequalities/">方程與不等式</a>、<a href="/math/sequences/">數列</a>、<a href="/math/trigonometry/">三角學與解三角形</a>、<a href="/math/coordinate-geometry-circle/">坐標幾何：圓</a>等課題頁，就會列出相關題目。</p>
+  </details>
+</section>
+</main>
+<footer><a href="/math/">返回數學科目頁</a> · <a href="/hub/">DSE Hub 主頁</a> · 相關：<a href="https://dsemaths.canonlessons.com" rel="noopener">免費 DSE 數學視覺教程</a> · 站內只放索引、連結同課題標籤，只顯示資料庫已有內容</footer>
+<script>
+(function () {
+  function copyListing(id) {
+    var el = document.getElementById(id);
+    if (!el) return;
+    var text = el.textContent.replace(/\u00a0/g, " ").trim();
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).catch(function () { fallbackCopy(text); });
+    } else {
+      fallbackCopy(text);
+    }
+  }
+  function fallbackCopy(text) {
+    var ta = document.createElement("textarea");
+    ta.value = text;
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand("copy"); } catch (e) {}
+    document.body.removeChild(ta);
+  }
+  document.querySelectorAll(".casio-copy").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var id = btn.getAttribute("data-copy");
+      copyListing(id);
+      var old = btn.textContent;
+      btn.textContent = "已複製";
+      setTimeout(function () { btn.textContent = old; }, 1500);
+    });
+  });
+
+  var HINTS = {
+    sim: "輸入 A、B、C、D、X、Y，對應 A x + B y = C 同 D x + X y = Y。",
+    quad: "輸入 A、B、C，對應 A x² + B x + C = 0。",
+    circle: "輸入 A、B、C、D，對應 A x² + A y² + B x + C y + D = 0。",
+    lc: "直線 A x + B y + C = 0；圓 x² + y² + D x + X y + Y = 0。",
+    seq: "M = 0 做等差，M = 1 做等比；然後首項 A、公差或公比 B、項數 n（C）。",
+    tri: "輸入三邊 a、b、c。結果以度為單位，對應 Degree 模式。",
+    circ3: "依序輸入三點 (x1, y1)、(x2, y2)、(x3, y3)。"
+  };
+  var FIELDS = {
+    sim: [["A","A"],["B","B"],["C","C"],["D","D"],["X","X"],["Y","Y"]],
+    quad: [["A","A"],["B","B"],["C","C"]],
+    circle: [["A","A"],["B","B"],["C","C"],["D","D"]],
+    lc: [["A","A"],["B","B"],["C","C"],["D","D"],["X","X"],["Y","Y"]],
+    seq: [["M","M（0 或 1）"],["A","A"],["B","B"],["C","n"]],
+    tri: [["A","邊 a"],["B","邊 b"],["C","邊 c"]],
+    circ3: [["A","x1"],["B","y1"],["C","x2"],["D","y2"],["X","x3"],["Y","y3"]]
+  };
+
+  var tool = document.getElementById("tool");
+  var fields = document.getElementById("fields");
+  var hint = document.getElementById("tool-hint");
+  var out = document.getElementById("out");
+
+  function renderFields() {
+    var key = tool.value;
+    hint.textContent = HINTS[key] || "";
+    fields.innerHTML = "";
+    (FIELDS[key] || []).forEach(function (pair) {
+      var lab = document.createElement("label");
+      lab.appendChild(document.createTextNode(pair[1]));
+      var inp = document.createElement("input");
+      inp.type = "text";
+      inp.inputMode = "decimal";
+      inp.autocomplete = "off";
+      inp.id = "f-" + pair[0];
+      inp.name = pair[0];
+      lab.appendChild(inp);
+      fields.appendChild(lab);
+    });
+    out.textContent = "結果會顯示喺呢度。";
+  }
+
+  function num(id) {
+    var raw = document.getElementById("f-" + id).value.trim().replace("−", "-").replace("＋", "+");
+    if (raw === "") throw new Error("請填齊所有輸入。");
+    var v = Number(raw);
+    if (!isFinite(v)) throw new Error("有輸入唔係有效數字。");
+    return v;
+  }
+  function fmt(v) {
+    if (typeof v === "string") return v;
+    if (!isFinite(v)) return "Math ERROR";
+    if (Math.abs(v) < 1e-12) return "0";
+    var s = Number(v.toPrecision(10)).toString();
+    return s;
+  }
+  function pair(x, y) { return "(" + fmt(x) + ", " + fmt(y) + ")"; }
+
+  function runSim() {
+    var A=num("A"),B=num("B"),C=num("C"),D=num("D"),X=num("X"),Y=num("Y");
+    var det = A*X - B*D;
+    if (det === 0) return "Math ERROR（分母為 0；兩線平行或重疊，請用手判斷無解定無限多組解）";
+    return "x = " + fmt((C*X - B*Y)/det) + "\ny = " + fmt((A*Y - C*D)/det);
+  }
+  function runQuad() {
+    var A=num("A"),B=num("B"),C=num("C");
+    if (A === 0) return "A 唔可以係 0（唔成二次方程）。";
+    var D = B*B - 4*A*C;
+    var lines = [
+      "頂點 x = " + fmt(-B/(2*A)),
+      "頂點 y = " + fmt(-D/(4*A)),
+      "Δ = " + fmt(D)
+    ];
+    if (D < 0) {
+      lines.push("兩根：Math ERROR（冇實根）");
+    } else {
+      lines.push("根 1 = " + fmt((-B+Math.sqrt(D))/(2*A)));
+      lines.push("根 2 = " + fmt((-B-Math.sqrt(D))/(2*A)));
+    }
+    return lines.join("\n");
+  }
+  function runCircle() {
+    var A=num("A"),B=num("B"),C=num("C"),D=num("D");
+    if (A === 0) return "A 唔可以係 0。";
+    var h=-B/(2*A), k=-C/(2*A), rad=(B*B+C*C-4*A*D)/(4*A*A);
+    if (rad < 0) return "圓心 " + pair(h,k) + "\n半徑：Math ERROR（冇實圓）";
+    return "圓心 " + pair(h,k) + "\n半徑 r = " + fmt(Math.sqrt(rad));
+  }
+  function runLC() {
+    var A=num("A"),B=num("B"),C=num("C"),D=num("D"),X=num("X"),Y=num("Y");
+    var S = Math.sqrt(A*A + B*B);
+    if (S === 0) return "Math ERROR（A、B 同時為 0，唔成直線）";
+    var h = (-A*D - B*X + 2*C) / (2*S);
+    var Ox = -D/2, Oy = -X/2;
+    var t2 = Ox*Ox + Oy*Oy - Y - h*h;
+    if (t2 < 0) return "Math ERROR（不相交）";
+    var t = Math.sqrt(t2);
+    var x1 = Ox - (h*A + t*B)/S;
+    var y1 = Oy - (h*B - t*A)/S;
+    var x2 = Ox - (h*A - t*B)/S;
+    var y2 = Oy - (h*B + t*A)/S;
+    var tip = (t === 0) ? "（兩點相同，相切）" : "";
+    return "第一點 " + pair(x1,y1) + "\n第二點 " + pair(x2,y2) + tip;
+  }
+  function runSeq() {
+    var M=num("M"),A=num("A"),B=num("B"),C=num("C");
+    if (M === 0) {
+      return "Tn = " + fmt(A+(C-1)*B) + "\nSn = " + fmt(C*(2*A+(C-1)*B)/2);
+    }
+    if (M !== 1) return "M 只可以係 0（等差）或 1（等比）。";
+    var lines = ["Tn = " + fmt(A*Math.pow(B, C-1))];
+    if (B === 1) lines.push("Sn：Math ERROR（公比為 1 時 Sn = n·A，請手計）");
+    else lines.push("Sn = " + fmt(A*(Math.pow(B,C)-1)/(B-1)));
+    if (Math.abs(B) < 1) lines.push("S∞ = " + fmt(A/(1-B)));
+    else lines.push("唔輸出 S∞（|r| ≥ 1）");
+    return lines.join("\n");
+  }
+  function runTri() {
+    var A=num("A"),B=num("B"),C=num("C");
+    if (A<=0 || B<=0 || C<=0) return "三邊都要係正數。";
+    var s=(A+B+C)/2;
+    var area2=s*(s-A)*(s-B)*(s-C);
+    if (area2 < 0) return "Math ERROR（唔成三角形）";
+    function ang(opp, p, q) {
+      var c = (p*p + q*q - opp*opp) / (2*p*q);
+      if (c > 1) c = 1;
+      if (c < -1) c = -1;
+      return Math.acos(c) * 180 / Math.PI;
+    }
+    return "面積 = " + fmt(Math.sqrt(area2)) +
+      "\n角 A = " + fmt(ang(A,B,C)) + "°" +
+      "\n角 B = " + fmt(ang(B,A,C)) + "°" +
+      "\n角 C = " + fmt(ang(C,A,B)) + "°";
+  }
+  function runCirc3() {
+    var A=num("A"),B=num("B"),C=num("C"),D=num("D"),X=num("X"),Y=num("Y");
+    var den = 2*(A*(D-Y)+C*(Y-B)+X*(B-D));
+    if (den === 0) return "Math ERROR（三點共線，冇有限半徑嘅圓）";
+    var h = ((A*A+B*B)*(D-Y)+(C*C+D*D)*(Y-B)+(X*X+Y*Y)*(B-D))/den;
+    var k = ((A*A+B*B)*(X-C)+(C*C+D*D)*(A-X)+(X*X+Y*Y)*(C-A))/den;
+    var r = Math.sqrt((h-A)*(h-A)+(k-B)*(k-B));
+    var P = -2*h, Q = -2*k, R = 2*h*A + 2*k*B - (A*A+B*B);
+    return "圓心 " + pair(h,k) + "\n半徑 r = " + fmt(r) +
+      "\n一般式係數 P, Q, R = " + fmt(P) + ", " + fmt(Q) + ", " + fmt(R);
+  }
+
+  var RUNNERS = {sim:runSim,quad:runQuad,circle:runCircle,lc:runLC,seq:runSeq,tri:runTri,circ3:runCirc3};
+
+  document.getElementById("casio-form").addEventListener("submit", function (ev) {
+    ev.preventDefault();
+    try {
+      out.textContent = (RUNNERS[tool.value] || function(){return "";})();
+    } catch (err) {
+      out.textContent = err.message || String(err);
+    }
+  });
+  tool.addEventListener("change", renderFields);
+  renderFields();
+})();
+</script>
+</body>
+</html>

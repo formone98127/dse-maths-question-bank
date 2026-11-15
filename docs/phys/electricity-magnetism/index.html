@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-HK">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DSE 物理課題筆記：電與磁｜DSE Hub</title>
+<meta name="description" content="原創整理 DSE 物理「電與磁」溫習重點、常見陷阱同答題習慣。不含官方試題原文。">
+<meta name="keywords" content="DSE, 香港中學文憑, 溫習資源, 課題筆記, 答題框架, 免費">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="googlebot" content="index, follow">
+<meta name="author" content="DSE Hub">
+<link rel="canonical" href="https://hkdse.exampaper.cloud/phys/electricity-magnetism/">
+<link rel="alternate" hreflang="zh-Hant-HK" href="https://hkdse.exampaper.cloud/phys/electricity-magnetism/">
+<link rel="alternate" hreflang="x-default" href="https://hkdse.exampaper.cloud/phys/electricity-magnetism/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DSE Hub">
+<meta property="og:locale" content="zh_HK">
+<meta property="og:title" content="DSE 物理課題筆記：電與磁｜DSE Hub">
+<meta property="og:description" content="原創整理 DSE 物理「電與磁」溫習重點、常見陷阱同答題習慣。不含官方試題原文。">
+<meta property="og:url" content="https://hkdse.exampaper.cloud/phys/electricity-magnetism/">
+<meta property="og:image" content="https://hkdse.exampaper.cloud/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="DSE Hub 香港中學文憑歷屆試題資料庫">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="DSE 物理課題筆記：電與磁｜DSE Hub">
+<meta name="twitter:description" content="原創整理 DSE 物理「電與磁」溫習重點、常見陷阱同答題習慣。不含官方試題原文。">
+<meta name="twitter:image" content="https://hkdse.exampaper.cloud/og-image.png">
+<meta name="theme-color" content="#0b1220">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="DSE Hub">
+<meta name="application-name" content="DSE Hub">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/hub/style.css?v=20261115b">
+<style>
+
+/* Page-scoped resource layout — do not add to the shared stylesheet. */
+.res-sec { margin: 8px 0 24px; }
+.res-sec > h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 10px;
+  color: var(--ink);
+}
+.res-sec > h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 16px 0 8px;
+  color: var(--ink);
+}
+.res-sec p, .res-sec li {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--ink-2);
+}
+.res-sec p { margin: 0 0 10px; }
+.res-sec ul, .res-sec ol { margin: 0 0 10px; padding-left: 1.25em; }
+.res-sec li { margin: 0 0 6px; }
+.res-sec a { color: var(--acc-ink); }
+.res-card {
+  margin: 0 0 12px;
+  border: 1px solid var(--hair);
+  border-radius: var(--radius);
+  background: var(--card);
+  padding: 14px 16px 16px;
+}
+.res-card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 8px;
+  color: var(--ink);
+}
+.res-card p:last-child, .res-card ul:last-child, .res-card ol:last-child { margin-bottom: 0; }
+.res-toc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 8px 0 0;
+}
+.res-toc a {
+  display: inline-block;
+  border: 1px solid var(--hair);
+  border-radius: var(--radius);
+  background: var(--card);
+  color: var(--acc-ink);
+  text-decoration: none;
+  font-size: 14px;
+  padding: 7px 10px;
+}
+.res-toc a:hover { background: var(--card-hi); }
+.res-note {
+  border: 1px solid var(--hair);
+  border-radius: var(--radius);
+  background: var(--card);
+  padding: 12px 14px;
+  margin: 0 0 16px;
+  color: var(--ink-2);
+  font-size: 14px;
+  line-height: 1.65;
+}
+.res-note strong { color: var(--ink); }
+.res-grid {
+  display: grid;
+  gap: 8px;
+}
+.res-grid a.res-item {
+  display: block;
+  border: 1px solid var(--hair);
+  border-radius: var(--radius);
+  background: var(--card);
+  padding: 14px 16px;
+  text-decoration: none;
+  color: inherit;
+}
+.res-grid a.res-item:hover { background: var(--card-hi); }
+.res-grid a.res-item .kicker {
+  margin: 0 0 4px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--acc-ink);
+}
+.res-grid a.res-item h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--ink);
+}
+.res-grid a.res-item p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--ink-2);
+}
+.res-table-wrap { overflow-x: auto; margin: 0 0 12px; }
+.res-sec table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+.res-sec th, .res-sec td {
+  border-bottom: 1px solid var(--hair);
+  text-align: left;
+  vertical-align: top;
+  padding: 8px 8px 8px 0;
+  color: var(--ink-2);
+}
+.res-sec th { color: var(--ink); font-weight: 700; }
+.res-kicker { margin: 0 0 6px; font-size: 13px; font-weight: 600; color: var(--acc-ink); }
+
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LTB27V0RGW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-LTB27V0RGW');
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "/hub/",
+          "item": "DSE Hub"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "/phys/",
+          "item": "物理"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "/phys/electricity-magnetism/",
+          "item": "https://hkdse.exampaper.cloud/phys/electricity-magnetism/"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "name": "DSE 物理課題筆記：電與磁｜DSE Hub",
+      "description": "原創整理 DSE 物理「電與磁」溫習重點、常見陷阱同答題習慣。不含官方試題原文。",
+      "url": "https://hkdse.exampaper.cloud/phys/electricity-magnetism/",
+      "inLanguage": "zh-Hant-HK",
+      "isPartOf": {
+        "@id": "https://hkdse.exampaper.cloud/#website"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "DSE Hub"
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body class="subj-page">
+<header class="hero">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <nav class="crumb" aria-label="麵包屑">
+      <a href="DSE Hub">/hub/</a>
+      <span aria-hidden="true">／</span>
+      <a href="物理">/phys/</a>
+      <span aria-hidden="true">／</span>
+      <span>/phys/electricity-magnetism/</span>
+      </nav>
+    <p class="brand">DSE Hub</p>
+    <h1>電與磁</h1>
+    <p class="tagline">電路、電功率、磁場同電磁感應嘅溫習重點。</p>
+        <nav class="strand-nav" aria-label="科目資源">
+        <a href="/phys/">物理科目頁</a>
+        <a href="/phys/formulas/">公式表</a>
+        <a href="/phys/mechanics/">力學</a>
+        <a href="/phys/heat/">熱與氣體</a>
+        <a href="/phys/waves/">波動</a>
+        <a href="/phys/electricity-magnetism/">電磁</a>
+        <a href="/phys/radioactivity/">放射</a>
+        <a href="/phys/energy/">能量</a>
+        </nav>
+    <p class="page-cta"><a href="/resources/">全科溫習資源</a> · <a href="/hub/">返回 DSE Hub 主頁</a></p>
+  </div>
+</header>
+<main class="subj-main">
+<p class="res-note"><strong>版權同使用說明：</strong>呢啲筆記用自己嘅措辭整理公開課程常見概念同應試方法，方便溫習。正式考試請同時核對考評局當年評核大綱，以及試卷提供嘅公式或資料。本站唔會轉載官方試題、評卷參考、考試報告、課程指引原文，亦唔會刊登指定文言篇章全文。需要原文或官方樣本時，請行下面官方連結。</p>
+
+<section class="res-sec" id="s1"><h2>電路基礎</h2><p>先畫等效電路。串聯電流相同、電壓相加；並聯電壓相同、電流相加。內阻題要把電源同外電路分開寫。</p></section>
+<section class="res-sec" id="s2"><h2>電能同功率</h2><p>功率可用電位差同電流，或其他等價組合。發熱同電能傳輸要講清楚時間。</p></section>
+<section class="res-sec" id="s3"><h2>磁場</h2><p>先判斷場嘅來源（永久磁、電流）。力嘅方向用課程教導嘅法則，並註明對正電荷或電流嘅約定。</p></section>
+<section class="res-sec" id="s4"><h2>電磁感應</h2><p>磁通量變化先產生感應電動勢。要講是邊個量在變：面積、場強定方向。楞次定律用來定方向，抵消「引起它嘅改變」。</p></section>
+<section class="res-sec" id="s5"><h2>常見失分</h2><p>把電壓電流當成永遠成正比而忽略非歐姆元件，或者感應題不講通量變化。</p></section><section class="res-sec" aria-label="官方資料">
+  <h2>官方資料（請以考評局／教育局為準）</h2>
+  <p>以下係官方評核同刊物頁面。本站只提供原創溫習筆記同答題框架，唔會轉載官方試題、評卷參考、考試報告或指定篇章全文。</p>
+  <ul>
+    <li><a href="https://www.hkeaa.edu.hk/DocLibrary/HKDSE/Subject_Information/phy/2027hkdse-c-phy.pdf" rel="noopener">2027 年評核大綱（PDF）</a></li>
+<li><a href="https://www.hkeaa.edu.hk/tc/hkdse/assessment/assessment_framework/" rel="noopener">考評局評核大綱一覽（2026–2029）</a></li>
+<li><a href="https://www.hkeaa.edu.hk/tc/hkdse/assessment/subject_information/category_a_subjects/" rel="noopener">甲類高中科目資訊</a></li>
+<li><a href="https://www.hkeaa.edu.hk/tc/resources/publications/list_of_publications/hkdse_erqp_pub/" rel="noopener">考評局刊物（考試報告及試題專輯）</a></li>
+  </ul>
+</section>
+</main>
+<footer><a href="/phys/">返回物理科目頁</a> · <a href="/hub/">DSE Hub 主頁</a> · 相關：<a href="https://dsemaths.canonlessons.com/" rel="noopener">免費 DSE 數學視覺教程</a></footer>
+</body>
+</html>

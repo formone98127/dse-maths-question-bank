@@ -267,6 +267,67 @@ function sortQuestions(rows) {
   );
 }
 
+
+function resourceTopicGroup(sid, tag) {
+  const fromTopics = topicGroupOf(sid, tag);
+  if (fromTopics && fromTopics !== "其他") return fromTopics;
+  const extra = (window.HUB_TOPIC_GROUPS || {})[sid] || {};
+  for (const [g, ts] of Object.entries(extra)) {
+    if ((ts || []).includes(tag)) return g;
+  }
+  return fromTopics || "其他";
+}
+
+function rankRelatedResources(sid, topic) {
+  const all = Array.isArray(window.HUB_RESOURCES) ? window.HUB_RESOURCES : [];
+  const specific = topic && topic !== ALL && topic !== PLACE;
+  const group = specific ? resourceTopicGroup(sid, topic) : null;
+  const scored = [];
+  for (const r of all) {
+    const sameSubj = r.subject === sid;
+    const isGeneral = !r.subject || r.subject === "general";
+    let score = -1;
+    if (!specific) {
+      // 「所有」：科目級資源先行，再係同科課題頁，最後先一般資源。
+      if (sameSubj && r.level === "subject") score = 0;
+      else if (sameSubj) score = 1;
+      else if (isGeneral) score = 2;
+    } else {
+      const tags = r.tags || [];
+      const groups = r.groups || [];
+      const tagHit = sameSubj && tags.includes(topic);
+      const groupHit = sameSubj && group && group !== "其他" && groups.includes(group);
+      if (tagHit) score = 0;
+      else if (groupHit) score = 1;
+      else if (sameSubj && r.level === "subject") score = 2;
+      else if (isGeneral) score = 3;
+    }
+    if (score >= 0) scored.push({ r, score });
+  }
+  scored.sort((a, b) => a.score - b.score || String(a.r.title).localeCompare(String(b.r.title), "zh-Hant"));
+  return scored.map((x) => x.r);
+}
+
+function relatedResourcesHtml(sid, topic) {
+  const rows = rankRelatedResources(sid, topic);
+  if (!rows.length) return "";
+  const items = rows.map((r) => {
+    const href = esc(r.href);
+    const ext = /^https?:\/\//.test(r.href) ? ' rel="noopener"' : "";
+    return `
+    <a class="hub-related-card" href="${href}"${ext}>
+      <p class="hub-related-kicker">${esc(r.kicker || "溫習資源")}</p>
+      <h3>${esc(r.title)}</h3>
+      <p>${esc(r.desc || "")}</p>
+    </a>`;
+  }).join("");
+  return `
+<section class="hub-related" aria-labelledby="hub-related-heading">
+  <h2 id="hub-related-heading">相關有用資源</h2>
+  <div class="hub-related-grid">${items}</div>
+</section>`;
+}
+
 function renderYear() {
   fPaper.style.display = "";
   l2.textContent = "年份";
@@ -303,13 +364,14 @@ function renderTopic() {
 
   const rows = sortQuestions(questionsForTopic(sid, state.topic));
   if (!rows.length) {
-    resultEl.innerHTML = emptyHtml("此課題暫無對應題目。");
+    resultEl.innerHTML = emptyHtml("此課題暫無對應題目。") + relatedResourcesHtml(sid, state.topic);
     return;
   }
 
   const topicLabel = state.topic === ALL ? "全部課題" : state.topic;
   const count = `<p class="list-count">共 ${rows.length} 題 · ${topicLabel}（進入後可上一題／下一題集中溫習）</p>`;
-  resultEl.innerHTML = count + rows.map((q) => questionRowHtml(q, state.topic)).join("");
+  const related = relatedResourcesHtml(sid, state.topic);
+  resultEl.innerHTML = count + rows.map((q) => questionRowHtml(q, state.topic)).join("") + related;
 }
 
 function render() {

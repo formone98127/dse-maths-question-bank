@@ -17,6 +17,10 @@ OpenAI、Anthropic 相容端點、Ollama、LM Studio 等），驗證輸出 JSON 
   python generate_analysis.py --list
   python generate_analysis.py --dry-run --subject 數學 --year 2012 --paper "Paper 2" --question 1
   python generate_analysis.py --subject 數學 --year 2012 --paper "Paper 2" --question 1 --question 2 --question 3
+  python generate_analysis.py --subject 數學 --year 2012 --paper "Paper 2" --range 1-20
+  python generate_analysis.py --subject 數學 --year 2012 --paper "Paper 2" --range 1-5,8,12-15
+  python generate_analysis.py --subject 數學 --year 2012 --paper "Paper 2" --range 18-20 \
+      --provider anthropic --model claude-opus-5 --temperature 0.3 --max-tokens 8192
 已存在的 JSON 預設跳過；--force 重新產生。
 """
 
@@ -207,6 +211,26 @@ def collect_candidates(questions, subject=None, year=None, paper=None, qnos=None
 
 # ---------- LLM client（OpenAI 相容 /chat/completions） ----------
 
+def parse_qno_spec(spec):
+    """解析題號規格：「1-20」、「5」、「1-5,8,12-15」皆可，回傳題號集合。"""
+    qnos = set()
+    for part in spec.split(","):
+        part = part.strip()
+        if not part:
+            continue
+        m = re.fullmatch(r"(\d+)\s*-\s*(\d+)", part)
+        if m:
+            lo, hi = int(m.group(1)), int(m.group(2))
+            if lo > hi:
+                raise SystemExit(f"題號範圍無效：{part!r}（起始不可大於結束）")
+            qnos.update(range(lo, hi + 1))
+        elif part.isdigit():
+            qnos.add(int(part))
+        else:
+            raise SystemExit(f"題號規格無效：{part!r}（可用 5 或 1-20，逗號分隔多段）")
+    return qnos
+
+
 def resolve_config(args):
     cfg = {}
     if CONFIG_FILE.is_file():
@@ -233,8 +257,8 @@ def resolve_config(args):
         "base_url": base_url.rstrip("/"),
         "api_key": api_key,
         "model": model,
-        "temperature": float(cfg.get("temperature", 0.4)),
-        "max_tokens": int(cfg.get("max_tokens", 4096)),
+        "temperature": args.temperature if args.temperature is not None else float(cfg.get("temperature", 0.4)),
+        "max_tokens": args.max_tokens if args.max_tokens is not None else int(cfg.get("max_tokens", 4096)),
         # Ollama（:11434）走原生 /api/chat，才能帶 think:false 關掉思考模式
         "native_ollama": bool(cfg.get("native_ollama", ":11434" in base_url)),
     }
@@ -478,6 +502,8 @@ def main():
     ap.add_argument("--year", type=int)
     ap.add_argument("--paper")
     ap.add_argument("--question", type=int, action="append", help="題號，可重複")
+    ap.add_argument("--range", dest="qno_range",
+                    help="題號範圍，如 1-20 或 1-5,8,12-15（與 --question 可併用）")
     ap.add_argument("--force", action="store_true")
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--publish", action="store_true",
@@ -487,10 +513,15 @@ def main():
     ap.add_argument("--base-url")
     ap.add_argument("--api-key")
     ap.add_argument("--model")
+    ap.add_argument("--temperature", type=float, help="覆蓋設定檔 temperature（預設 0.4）")
+    ap.add_argument("--max-tokens", type=int, help="覆蓋設定檔 max_tokens（預設 4096）")
     args = ap.parse_args()
 
     questions = load_questions()
-    qnos = set(args.question) if args.question else None
+    qnos = set(args.question) if args.question else set()
+    if args.qno_range:
+        qnos |= parse_qno_spec(args.qno_range)
+    qnos = qnos or None
     cands = collect_candidates(questions, args.subject, args.year, args.paper, qnos)
 
     if args.list:
@@ -517,9 +548,6 @@ def main():
         print(f"完成：{ok}/{len(cands)} 題成功。session tokens：prompt={TOKEN_TOTALS['prompt']} completion={TOKEN_TOTALS['completion']}")
         if args.publish:
             print(f"上線：{published} 題已 push（CI 部署 Hostinger + GitHub Pages）")
-        print("費用 = tokens × 你所用模型的單價，請自行對照供應商價目表。")
-    if not args.dry_run:
-        print(f"完成：{ok}/{len(cands)} 題成功。session tokens：prompt={TOKEN_TOTALS['prompt']} completion={TOKEN_TOTALS['completion']}")
         print("費用 = tokens × 你所用模型的單價，請自行對照供應商價目表。")
 
 

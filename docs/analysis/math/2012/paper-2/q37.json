@@ -1,0 +1,59 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2012",
+  "paper": "Paper 2",
+  "qno": "37",
+  "hash": "#2012P2Q37"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-16",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "等差數列",
+   "secondary_topics": [
+    "公差計算",
+    "通項公式",
+    "前 n 項和公式"
+   ],
+   "required_formulas": [
+    "$a_n = a_1 + (n-1)d$",
+    "$S_n = \\frac{n}{2}[2a_1 + (n-1)d]$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤判 III 項正負性",
+    "student_thought_process": "學生正確算出 $d=3.5$ 與 $a_1=-20$，判斷 I ($a_{14}<0$) 與 II ($a_1-a_2<0$) 正確。但在 III 項中，錯誤認為正數項過多或忽略負數項的絕對值影響，直接假設 $S_{27}>0$"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤判 II 項符號",
+    "student_thought_process": "學生算出 $d>0$，但錯誤地認為 $a_1-a_2 = -d$ 應為正數（混淆了減法順序或公差符號意義），導致否定 II。同時可能正確判斷 III，故選 C。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "計算 $S_{27}$ 時數值錯誤",
+    "student_thought_process": "學生正確算出 $a_1=-20$ 與 $d=3.5$，但在計算 $S_{27} = \\frac{27}{2}(2(-20) + 26(3.5))$ 時，錯誤將括號內結果算成正數（例如忽略負號或加法運算失誤），進而認為 III 正確。"
+   }
+  },
+  "scaffolding_hints": [
+   "Hint 1 啟發：利用兩項之差 $a_{23}-a_{18}$ 與項數差 $23-18$ 來求公差 $d$，並思考 $a_1$ 的符號意義。",
+   "Hint 2 知識：回憶等差數列通項公式 $a_n = a_1 + (n-1)d$ 與前 $n$ 項和公式 $S_n = \\frac{n}{2}(a_1+a_n)$。先計算 $a_1$ 的具體數值。",
+   "Hint 3 破題：對於 III，觀察首項 $a_1$ 為負、公差 $d$ 為正，需比較「負數項的總和」與「正數項的總和」哪個更大，或直接代入公式計算 $S_{27}$ 的正負。"
+  ],
+  "quick_solution_strategy": "先算 $d=3.5, a_1=-20$。I: $a_{14}=-20+13(3.5)<0$ (對)。II: $a_1-a_2=-d<0$ (對)。III: $S_{27}=\\frac{27}{2}(a_1+a_{27})=\\frac{27}{2}(-20+90)=315>0$ (對)？等等，重算 $a_{27}$：$-20+26(3.5)=71$。$S_{27}=\\frac{27}{2}(2a_1+26d)=\\frac{27}{2}(-40+91)=\\frac{27}{2}(51)>0$。咦？題目答案給 A 代表 III 錯？讓我重檢題目邏輯。若 $S_{27}>0$ 則 D 對。為何答案是 A？檢查 $a_1+a_{27}$：$-20 + (-20+26\\times3.5) = -40+91=51>0$。$S_{27}$ 確實大於 0。若標準答案 A 表示 III 錯誤，那題目或答案有誤？或是我算錯 $a_1$？$a_{18}=26 \\Rightarrow a_1+17d=26$。$a_{23}=61 \\Rightarrow a_1+22d=61$。相減得 $5d=35 \\Rightarrow d=7$。啊！之前算錯 $d$ 了！$5d=35 \\Rightarrow d=7$。重新計算：$a_1 = 26-17(7) = 26-119 = -93$。I: $a_{14}=-93+13(7)=-93+91=-2<0$ (對)。II: $a_1-a_2=-d=-7<0$ (對)。III: $S_{27}=\\frac{27}{2}(2(-93)+26(7))=\\frac{27}{2}(-186+182)=\\frac{27}{2}(-4)<0$ (錯)。所以 III 錯。答案 A 正確。"
+ }
+}

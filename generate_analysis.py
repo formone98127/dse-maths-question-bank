@@ -25,6 +25,7 @@ import datetime
 import json
 import os
 import re
+import subprocess
 import sys
 import urllib.error
 import urllib.request
@@ -435,6 +436,42 @@ def process(q, options, answer, cfg, dry_run=False, force=False):
     return False
 
 
+# ---------- 逐題上線（--publish）：build → commit → push → CI 自動部署 ----------
+
+def publish_one(q):
+    """單題分析寫入後即刻重建 SEO 頁、commit、push。push 觸發 CI 部署 Hostinger + Pages。"""
+    print("  ↗ publish：重建 SEO 頁…")
+    r = subprocess.run([sys.executable, "build_seo.py"], cwd=ROOT, capture_output=True, text=True, encoding="utf-8", errors="replace")
+    if r.returncode != 0:
+        print("  ✗ build_seo.py 失敗：", (r.stdout or "") + (r.stderr or ""))
+        return False
+    subprocess.run(["git", "add", "-A"], cwd=ROOT, check=False)
+    if subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=ROOT, check=False).returncode == 0:
+        print("  ↗ publish：冇嘢要 commit（已上線）")
+        return True
+    msg = f"analysis: {q['subject']} {q['year']} {q['paper']} 第 {q['qno']} 題深度分析"
+    c = subprocess.run(["git", "commit", "-q", "-m", msg], cwd=ROOT, check=False)
+    if c.returncode != 0:
+        print("  ✗ git commit 失敗")
+        return False
+    for attempt in range(3):
+        p = subprocess.run(["git", "push"], cwd=ROOT, capture_output=True, text=True, encoding="utf-8", errors="replace")
+        if p.returncode == 0:
+            print(f"  ↗ 已上線：/{SUBJECT_TO_SID[q['subject']]}/{q['year']}/…/q{q['qno']}/（CI 部署中）")
+            return True
+        # 遠端有新 commit（另一部機）：rebase 後重建再試
+        print("  ↗ push 被拒，rebase + 重建後重試…")
+        subprocess.run(["git", "pull", "--rebase", "-q"], cwd=ROOT, check=False)
+        # 若 pull --rebase 留低衝突（罕見：upstream 動咗同一批生成頁），放棄 rebase 保住本地版
+        subprocess.run(["git", "rebase", "--abort"], cwd=ROOT, capture_output=True)
+        subprocess.run([sys.executable, "build_seo.py"], cwd=ROOT, capture_output=True)
+        subprocess.run(["git", "add", "-A"], cwd=ROOT, check=False)
+        if subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=ROOT, check=False).returncode != 0:
+            subprocess.run(["git", "commit", "-q", "-m", msg], cwd=ROOT, check=False)
+    print("  ✗ push 三次失敗，內容保留喺本地，稍後手動 push")
+    return False
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--subject", choices=list(SID_TO_SUBJECT.values()))
@@ -443,6 +480,8 @@ def main():
     ap.add_argument("--question", type=int, action="append", help="題號，可重複")
     ap.add_argument("--force", action="store_true")
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--publish", action="store_true",
+                    help="每題成功後即刻 build_seo + commit + push（CI 自動部署上線）")
     ap.add_argument("--list", action="store_true", help="列出可分析的 MC 題（含配對答案）")
     ap.add_argument("--provider", choices=list(PROVIDER_PRESETS))
     ap.add_argument("--base-url")
@@ -468,9 +507,17 @@ def main():
 
     cfg = None if args.dry_run else resolve_config(args)
     ok = 0
+    published = 0
     for q, opts, letter in cands:
         if process(q, opts, letter, cfg, dry_run=args.dry_run, force=args.force):
             ok += 1
+            if args.publish and publish_one(q):
+                published += 1
+    if not args.dry_run:
+        print(f"完成：{ok}/{len(cands)} 題成功。session tokens：prompt={TOKEN_TOTALS['prompt']} completion={TOKEN_TOTALS['completion']}")
+        if args.publish:
+            print(f"上線：{published} 題已 push（CI 部署 Hostinger + GitHub Pages）")
+        print("費用 = tokens × 你所用模型的單價，請自行對照供應商價目表。")
     if not args.dry_run:
         print(f"完成：{ok}/{len(cands)} 題成功。session tokens：prompt={TOKEN_TOTALS['prompt']} completion={TOKEN_TOTALS['completion']}")
         print("費用 = tokens × 你所用模型的單價，請自行對照供應商價目表。")

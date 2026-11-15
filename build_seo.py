@@ -1587,9 +1587,12 @@ def patch_hub_data(papers):
             landing = by_hash.get(hash_)
         if not landing:
             return full
-        # 揀卷即入第一題：呢卷有 q1/ 題目頁（有 AI 分析）就直達，唔經卷目錄
+        # 揀卷即入第一題，唔經卷目錄：
+        # 有 q1/ 題目頁（有 AI 分析）直達 SEO 題目頁；冇就開題庫 viewer 深層連結（#…Q1）
         if (ROOT / landing.lstrip("/") / "q1" / "index.html").is_file():
             landing += "q1/"
+        else:
+            landing = BANK + hash_
         return full[:-1] + f', path: "{landing}"' + "}"
 
     new = re.sub(r"\{[^{}]*?hash:\s*\"(#[^\"]+)\"\s*\}", add_path, text)

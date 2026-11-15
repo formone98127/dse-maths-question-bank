@@ -1,0 +1,59 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2012",
+  "paper": "Paper 2",
+  "qno": "15",
+  "hash": "#2012P2Q15"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-16",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "幾何圖形面積計算",
+   "secondary_topics": [
+    "平行四邊形面積公式",
+    "三角形面積公式",
+    "勾股定理"
+   ],
+   "required_formulas": [
+    "$ \\text{Area}_{\\triangle} = \\frac{1}{2} \\times \\text{base} \\times \\text{height} $",
+    "$ \\text{Area}_{\\square} = \\text{base} \\times \\text{height} $"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "遺漏除以 2",
+    "student_thought_process": "學生正確算出底為 16、高為 9，但忘記將三角形面積公式中的 $\\frac{1}{2}$ 應用於計算，直接將 $16 \\times 9$ 得出 144，或是將兩個三角形面積相加時發生計算錯誤導致結果偏大至 160（例如誤將高算成 10 或加總時出錯）；更常見的是將平行四邊形面積公式誤用於單一三角形，或是在合併兩個三角形時未正確識別它們組成的整體形狀。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "讀圖錯誤",
+    "student_thought_process": "學生未能正確從圖形中辨識出關鍵線段長度，例如將底邊誤認為是其他數值（如 18 或 12），或是將高誤讀為 10，導致計算結果為 $\\frac{1}{2} \\times 18 \\times 9 = 81$ 或其他錯誤組合，最終得到 178 這個無合理來源的數值。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "公式誤用",
+    "student_thought_process": "學生將整個四邊形視為一個平行四邊形，直接應用 $\\text{base} \\times \\text{height}$ 公式計算，使用底 16 與高 9 得出 $144$，但若題目圖形顯示為兩個三角形拼接而非單一平行四邊形，則此方法錯誤；或者學生誤以為需要將兩個三角形面積分別計算後相加卻算成 $2 \\times (\\frac{1}{2} \\times 16 \\times 9) = 144$ 再乘以某個係數得到 288，顯示對圖形結構理解有根本性偏差。"
+   }
+  },
+  "scaffolding_hints": [
+   "Hint 1 啟發：觀察圖形由哪幾部分組成？這些部分是什麼形狀的圖形？",
+   "Hint 2 知識：回憶三角形面積公式 $\\frac{1}{2} \\times \\text{底} \\times \\text{高}$，並從圖中找出每個三角形的底與對應的高。",
+   "Hint 3 破題：將兩個三角形的面積分別計算後相加，注意確認高的正確位置與數值是否對應正確的底邊。"
+  ],
+  "quick_solution_strategy": "將四邊形視為兩個三角形，分別計算其面積（$\\frac{1}{2} \\times 16 \\times 9$ 與 $\\frac{1}{2} \\times 12 \\times 8$），再相加即得總面積。"
+ }
+}

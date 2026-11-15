@@ -1,0 +1,58 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2012",
+  "paper": "Paper 2",
+  "qno": "11",
+  "hash": "#2012P2Q11"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-16",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "平均數與加權平均",
+   "secondary_topics": [
+    "工作率問題",
+    "總量計算"
+   ],
+   "required_formulas": [
+    "$$\\text{總字數} = \\text{速度} \\times \\text{時間}$$",
+    "$$\\text{平均速度} = \\frac{\\text{總字數}}{\\text{總時間}}$$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "簡單平均誤用",
+    "student_thought_process": "學生錯誤地將兩個給定的速度直接相加再除以 2，即 $\\frac{63+56}{2}$，忽略了兩段時間長度不同（3 小時 vs 4 小時）的事實。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "單位混淆或讀題錯誤",
+    "student_thought_process": "學生可能誤將「words per minute」理解為單純的速率相加，或者在計算總字數時搞錯時間單位（例如忘記將小時轉換為分鐘導致數量級錯誤），最終得出 $35$ 這個無明顯邏輯來源的數字。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "四捨五入或計算錯誤",
+    "student_thought_process": "學生正確列出了加權平均公式，但在計算總字數 $63 \\times 210 + 56 \\times 240$ 時發生代數運算錯誤，或者在最後除以總時間 $420$ 時計算不精確，導致結果偏離正確值。"
+   }
+  },
+  "scaffolding_hints": [
+   "Hint 1 啟發：平均速度不是速度的簡單平均，請思考「總字數」與「總時間」的關係。",
+   "Hint 2 知識：利用公式 $$\\text{總字數} = \\text{速度} \\times \\text{時間}$$，先算出前 3 小時打了多少字，再算出後 4 小時打了多少字（注意時間單位轉換為分鐘）。",
+   "Hint 3 破題：將兩段時間的總字數相加得到全天的總字數，再除以總共 7 小時（換成分鐘），即可找到正確的平均速度。"
+  ],
+  "quick_solution_strategy": "計算加權平均：$\\frac{(63 \\times 3 + 56 \\times 4)}{7}$"
+ }
+}

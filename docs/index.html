@@ -588,6 +588,16 @@ function wireAiPanel(q) {
 const params = new URLSearchParams(location.search);
 const wantSubj = params.get('subject') || '';
 const wantTag = params.get('tag') || '';
+/* ?lang=en|zh（或 中文|英文）：中英卷同 hash 時用語言過濾（英文卷檔名含 英文/_EN/EN） */
+const wantLang = (params.get('lang') || '').toLowerCase();
+const langIsEn = wantLang === 'en' || wantLang === '英文';
+const langIsZh = wantLang === 'zh' || wantLang === '中文';
+const langOfQ = q => {
+  const f = String(q.file || '');
+  if (/英文|_EN|(EN)/i.test(f)) return 'en';
+  if (/中文|CHI/.test(f)) return 'zh';
+  return (String(q.text || '').match(/[一-鿿]/g) || []).length > 8 ? 'zh' : 'en';
+};
 const subjs = [...new Set(QS.map(q => q.subject))];
 
 /* 題目頁唔再揀科目／年份／題號；由 Hub／網址決定，用上一題下一題翻 */
@@ -599,11 +609,13 @@ function qKey(q) {
   return String(q.qno);
 }
 function rebuildQlist() {
+  const langWanted = langIsEn ? 'en' : langIsZh ? 'zh' : null;
   const pool = QS.filter(q =>
     q.subject === subj &&
     (year == null || q.year == year) &&
     (paper == null || q.paper === paper) &&
-    (!tag || (q.tags || []).includes(tag))
+    (!tag || (q.tags || []).includes(tag)) &&
+    (!langWanted || q.type !== '題目' || langOfQ(q) === langWanted)
   );
   const byQ = new Map();
   for (const q of pool) {

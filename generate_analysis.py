@@ -127,18 +127,22 @@ def extract_mc(q):
 
 
 def answer_from_solution(questions, q):
-    """由配對的解答記錄取 **答案：X**；再與來源 MD 的答案速查表核對。"""
+    """由配對的解答記錄取 **答案：X**；再與來源 MD 的答案速查表核對。
+    冇解答記錄時，用題目記錄上 inject_answers 注入嘅 `answer` 欄位（compact data.js）。"""
     for s in questions:
         if (
             s.get("type") == "解答"
             and s.get("subject") == q["subject"]
-            and s.get("year") == q["year"]
+            and str(s.get("year")) == str(q["year"])
             and s.get("paper") == q["paper"]
-            and s.get("qno") == q["qno"]
+            and str(s.get("qno")) == str(q["qno"])
         ):
             m = ANS_RE.search(s.get("text") or "")
             if m:
                 return m.group(1), s
+    ans = str(q.get("answer") or "").strip().upper()
+    if ans in ("A", "B", "C", "D"):
+        return ans, None
     return None, None
 
 
@@ -192,9 +196,10 @@ def collect_candidates(questions, subject=None, year=None, paper=None, qnos=None
         if not letter:
             continue
         sheet = load_answer_sheet(sol)
-        if sheet.get(int(q["qno"]), letter) != letter:
-            print(f"⚠ 答案不一致 q{q['qno']}：解答內文={letter}，速查表={sheet[int(q['qno'])]}（以速查表為準）")
-            letter = sheet[int(q["qno"])]
+        qno_i = int(q["qno"])
+        if sheet.get(qno_i, letter) != letter:
+            print(f"⚠ 答案不一致 q{qno_i}：解答內文={letter}，速查表={sheet[qno_i]}（以速查表為準）")
+            letter = sheet[qno_i]
         out.append((q, opts, letter))
     return out
 

@@ -1099,6 +1099,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://hkdse.exampaper.cloud/math/2012/paper-2-en/q31/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://hkdse.exampaper.cloud/math/2012/paper-2-en/q4/</loc>
     <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
@@ -1280,6 +1286,12 @@
   </url>
   <url>
     <loc>https://hkdse.exampaper.cloud/math/2012/paper-2/q30/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hkdse.exampaper.cloud/math/2012/paper-2/q31/</loc>
     <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

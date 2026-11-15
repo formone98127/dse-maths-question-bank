@@ -23,8 +23,8 @@ const CATALOG = [
   { id: "math", name: "數學（必修部分）", year: 2024, paper: "卷二", lang: "中文", hash: "#2024P2Q1" , path: "https://hkdse.exampaper.cloud/#2024P2Q1"},
   /* 數學（中文卷） */
   { id: "math", name: "數學（必修部分）", year: 2012, paper: "卷一", lang: "中文", hash: "#2012P1Q1" , path: "https://hkdse.exampaper.cloud/#2012P1Q1"},
-  { id: "math", name: "數學（必修部分）", year: 2012, paper: "卷二", lang: "中文", hash: "#2012P2Q1" , path: "/math/2012/paper-2/q1/"},
-  { id: "math", name: "數學（必修部分）", year: 2012, paper: "卷二", lang: "英文", hash: "#2012P2Q1" , path: "/math/2012/paper-2-en/q1/"},
+  { id: "math", name: "數學（必修部分）", year: 2012, paper: "卷二", lang: "中文", hash: "#2012P2Q1" , path: "https://hkdse.exampaper.cloud/#2012P2Q1"},
+  { id: "math", name: "數學（必修部分）", year: 2012, paper: "卷二", lang: "英文", hash: "#2012P2Q1" , path: "https://hkdse.exampaper.cloud/#2012P2Q1"},
   { id: "math", name: "數學（必修部分）", year: 2013, paper: "卷一", lang: "中文", hash: "#2013P1Q1" , path: "https://hkdse.exampaper.cloud/#2013P1Q1"},
   { id: "math", name: "數學（必修部分）", year: 2013, paper: "卷二", lang: "英文", hash: "#2013P2Q1" , path: "https://hkdse.exampaper.cloud/#2013P2Q1"},
   { id: "math", name: "數學（必修部分）", year: 2014, paper: "卷一", lang: "中文", hash: "#2014P1Q1" , path: "https://hkdse.exampaper.cloud/#2014P1Q1"},

@@ -1,0 +1,58 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2012",
+  "paper": "Paper 2",
+  "qno": "7",
+  "hash": "#2012P2Q7"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-16",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "一元一次不等式",
+   "secondary_topics": [
+    "連言與選言命題",
+    "數軸表示解集"
+   ],
+   "required_formulas": [
+    "ax + b > c <=> ax > c - b (當 a>0)",
+    "ax + b < c <=> ax < c - b (當 a>0)"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "忽略選言邏輯",
+    "student_thought_process": "學生解出第一個不等式 $x < -3$ 後，誤以為題目只要求解其中一個條件，直接將其作為最終答案而忽略了第二個不等式 $9-2x>1$ 的存在。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "移項符號錯誤",
+    "student_thought_process": "學生在解第一個不等式時，正確算出 $4x < -12$ 得 $x < -3$；但在處理第二個不等式 $9-2x>1$ 時，移項後寫成 $-2x > -8$ 卻錯誤地除以負數而不變號（或完全忽略），導致得出 $x > 4$，最後因混淆邏輯關係而選錯。更可能的狀況是學生解出 $x < -3$ 和 $x < 4$ 後，誤以為答案應為兩者的交集而非並集，進而錯誤地將較小的邊界 $-3$ 與方向搞混。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "誤解選言邏輯",
+    "student_thought_process": "學生正確解出第二個不等式 $x < 4$，但將「或 (or)」的條件誤解為需要同時滿足兩個條件（交集），或者在解完 $x < 4$ 後，錯誤地認為答案應取較大的邊界值且方向相反，導致選出 $x > 4$。"
+   }
+  },
+  "scaffolding_hints": [
+   "Hint 1 啟發：題目中的關鍵字 'or' (或) 代表我們需要找到滿足任一條件的所有 x 值集合。",
+   "Hint 2 知識：請分別解出 $4x < -12$ 與 $-2x > -8$ 這兩個不等式，並注意除以負數時不等號方向需改變。",
+   "Hint 3 破題：將兩個解集 $x < -3$ 與 $x < 4$ 在數軸上畫出來，觀察哪一個區間涵蓋了所有滿足條件的點。"
+  ],
+  "quick_solution_strategy": "分別解出兩邊不等式得 $x<-3$ 與 $x<4$；因是 '或' 關係，取兩者並集即為 $x<4$"
+ }
+}

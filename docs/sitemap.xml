@@ -991,6 +991,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://hkdse.exampaper.cloud/math/2012/paper-2-en/q7/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://hkdse.exampaper.cloud/math/2012/paper-2/</loc>
     <lastmod>2026-11-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -1028,6 +1034,12 @@
   </url>
   <url>
     <loc>https://hkdse.exampaper.cloud/math/2012/paper-2/q6/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hkdse.exampaper.cloud/math/2012/paper-2/q7/</loc>
     <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

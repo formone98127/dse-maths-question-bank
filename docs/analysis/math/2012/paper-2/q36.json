@@ -1,0 +1,58 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2012",
+  "paper": "Paper 2",
+  "qno": "36",
+  "hash": "#2012P2Q36"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-16",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "線性不等式與平面區域",
+   "secondary_topics": [
+    "直線方程式的斜率與截距",
+    "點與直線的相對位置關係"
+   ],
+   "required_formulas": [
+    "直線方程式 $y = mx + c$",
+    "不等式區域判定：代入測試點法"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "漏解不等式 III",
+    "student_thought_process": "學生正確判斷出 $k \\ge 3$ (I) 與 $h-k \\ge -3$ (II)，但錯誤地認為 $2h+k \\le 6$ (III) 不成立。這通常發生在學生未能將陰影區域的右側邊界直線識別為 $y = -2x + 6$，或者雖然識別出該直線卻誤判了不等號方向（例如以為是 $\\ge$ 而非 $\\le$），導致忽略了 III 也是正確的條件。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "漏解不等式 II",
+    "student_thought_process": "學生正確判斷出 $k \\ge 3$ (I) 與 $2h+k \\le 6$ (III)，但錯誤地排除了 $h-k \\ge -3$ (II)。這可能是因為學生未能從圖形中讀取左側邊界的斜率為 $1$（即 $y=x+3$）並轉換為 $y-x \\ge 3$ 或 $x-y \\le -3$，進而誤以為該條件不必要或錯誤。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "漏解不等式 I",
+    "student_thought_process": "學生正確判斷出 $h-k \\ge -3$ (II) 與 $2h+k \\le 6$ (III)，但錯誤地排除了 $k \\ge 3$ (I)。這通常源於學生忽略了圖形下方的水平邊界，或者誤以為該區域是無限延伸的，未注意到 $y=3$ 作為下界的限制條件。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "Hint 1 啟發：觀察陰影區域的三條邊界線，分別為水平線、斜率為正的直線與斜率為負的直線，試著將這些邊界的方程式寫出來。",
+   "Hint 2 知識：對於每一條邊界直線，請判斷陰影區域位於該直線的哪一側（上方或下方），從而決定不等號的方向。例如，水平線 $y=3$ 上方的點滿足什麼條件？",
+   "Hint 3 破題：將三個候選不等式分別對應到三條邊界線進行驗證，確認是否所有邊界條件都已被涵蓋，即可判斷哪組選項完整描述了該區域。"
+  ],
+  "quick_solution_strategy": "寫出三條邊界直線方程式並確認陰影區位於其上方或下方，三個不等式同時成立故選 D。"
+ }
+}

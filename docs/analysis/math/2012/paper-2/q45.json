@@ -1,0 +1,60 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2012",
+  "paper": "Paper 2",
+  "qno": "45",
+  "hash": "#2012P2Q45"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-16",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "統計量性質 (平均值, 分佈域, 方差)",
+   "secondary_topics": [
+    "算術平均數",
+    "極差定義",
+    "方差的加權性質"
+   ],
+   "required_formulas": [
+    "$\\bar{x}_{new} = \\frac{n\\bar{x}_{old} + x_{new}}{n+1}$",
+    "$R = \\max(x) - \\min(x)$",
+    "$s^2 = \\frac{\\sum(x_i - \\bar{x})^2}{n-1}$ (或總離差平方和性質)"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤認平均值不變",
+    "student_thought_process": "學生忽略了新加入的數值 $m_1$ 會改變總和與項數，因此計算出新的平均值 $m_2 = \\frac{100m_1 + m_1}{101} = \\frac{101}{100}m_1 > m_1$，誤以為平均值不變而選 I 為真；同時正確判斷方差會因新數據加入而改變（除非 $m_1$ 恰好等於原平均數且分佈特殊，但題目問必為正確），卻錯誤地認為方差也不變或只考慮了極差影響。關鍵錯誤在於同時保留了錯誤的 I 和正確的 II，忽略了 III 必然為假。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "誤判平均值變化",
+    "student_thought_process": "學生正確判斷出平均值 $m_1 \\neq m_2$（因為加入了一個等於原平均數的數據會拉高整體平均值），因此排除了 I。但學生未能理解分佈域（極差）只取最大值減最小值，若新加入的 $m_1$ 介於原最大最小值之間，則極差不變，故 II 為真；然而學生錯誤地認為方差也不變（III），這通常源於對「增加一個等於平均數的數據」會降低離散度的直覺誤解，或者單純計算錯誤。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "全盤否定統計量變化",
+    "student_thought_process": "學生認為加入任何數據都會改變所有統計量，或者完全不懂極差的定義。具體錯誤過程是：計算出 $m_2 \\neq m_1$（正確），但對於極差，學生可能誤以為加入一個數值必然會擴大範圍或改變極差；對於方差，學生可能認為只要項數增加，分母變大導致數值變化而忽略分子離差平方和的變化。最終錯誤地推論出所有三個陳述都為真。"
+   }
+  },
+  "scaffolding_hints": [
+   "Hint 1 啟發：思考當你在集合中加入一個「等於現行平均值」的數據時，總和與項數如何變化？這會導致新的平均值 $m_2$ 與舊平均值 $m_1$ 相等嗎？",
+   "Hint 2 知識：分佈域（極差）定義為最大值減最小值。若新加入的數據 $m_1$ 介於原集合的最大值與最小值之間，極差會改變嗎？方差的計算涉及每個數據與平均值的離差平方和，加入新數據後，平均值改變且多了一項離差，總體方差必然變化。",
+   "Hint 3 破題：關鍵轉折點在於 $m_1$ 介於原分佈的極值之間（因為它是平均值，不可能小於最小值或大於最大值），因此它不會影響極差；但加入數據後，新的平均值會向上微調（除非所有數都相同），且方差的離差平方和絕對會因多一項 $0^2$ 及平均值的偏移而改變。"
+  ],
+  "quick_solution_strategy": "平均值必變（分母變大），極差不變（新數在極值內），方差必變（離差平方和性質）。故選 A。"
+ }
+}

@@ -1,0 +1,58 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2012",
+  "paper": "Paper 2",
+  "qno": "12",
+  "hash": "#2012P2Q12"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-16",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "數列規律與遞迴關係",
+   "secondary_topics": [
+    "三角形數 (Triangular Numbers)",
+    "等差級數求和公式"
+   ],
+   "required_formulas": [
+    "T_n = \\frac{n(n+1)}{2}",
+    "\\sum_{i=1}^{k} i = \\frac{k(k+1)}{2}"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "計算錯誤：求和公式應用不當或加總算錯",
+    "student_thought_process": "學生可能正確識別出第 n 項為三角形數 T_n，但在計算 T_8 = \\frac{8 \\times 9}{2} = 36 時，卻誤算成 22（例如將 8+9=17 後除以 2 得到 8.5 再四捨五入錯誤，或是混淆了 n=8 與 n=7 的數值 T_7=28 然後減去某個數字導致 22，這通常是粗心計算所致）。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "概念混淆：誤以為是平方數序列或加錯起始項",
+    "student_thought_process": "學生可能將題目中的遞迴規則「加上 n 個點」誤解為直接累加自然數但從錯誤的起點開始，或者將第 8 項誤認為是 1+2+3+...+7+8 的和（即 T_8），卻在過程中多加了 1 或減錯了數字。另一種可能是學生計算出 T_8=36 (選項 C)，但題目問的是第 8 個圖形，若學生誤以為第 1 個圖形有 0 點（不符合題意）或從 n=0 開始計數，會導致答案偏移。但在本題中，C 是 T_8 的值，若選 C 代表學生算對了公式但可能對題目「第幾項」的定義有誤解（例如認為第 1 個圖形對應 n=0），或者單純計算錯誤將 29 看成 36。更精確地說，若學生算出 T_8=36，他應該選 C，但正確答案是 B (29)？等等，讓我重新檢查題目邏輯。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "審題不清：未注意「第 1 個圖形」的定義或 n 的起始值",
+    "student_thought_process": "學生可能誤讀題目，認為第 1 個圖形對應 n=1 時有 1 點，而第 2 個圖形是加 1 點變成 2 點（T_2），以此類推。然而，若學生錯誤地將「第 8 個圖形」理解為累加到 n=7（即 T_7=28）再加上某個誤差，或者完全忽略了題目中的圖形序列邏輯，直接猜測或選取最接近的數字。在這種情況下，選 D (37) 可能代表學生計算出 T_8=36 後，又無故加了 1（例如誤以為要包含第 0 項），或是將 n=8 代入錯誤的公式如 \\frac{(n+1)(n+2)}{2} - 1 等，導致結果偏大。"
+   }
+  },
+  "scaffolding_hints": [
+   "Hint 1 啟發：觀察題目描述，第 (n+1) 個圖形是在第 n 個圖形的基礎上「加上 n 個點」，這意味著每個新圖形的點數等於前一個圖形的點數加上新增的 n 個點。",
+   "Hint 2 知識：若令 a_n 代表第 n 個圖形的點數，則根據遞迴關係 a_{n+1} = a_n + n，且已知 a_1 = 1。請嘗試將此關係展開，看看 a_n 是否與自然數的前 (n-1) 項和有關，並寫出通項公式的表達式。",
+   "Hint 3 破題：關鍵轉折點在於確認第 n 個圖形的點數實際上等於前 (n-1) 個自然數的和加上初始值。請計算當 n=8 時，需要累加哪些數字，並小心處理起始項（是加到 7 還是 8）。"
+  ],
+  "quick_solution_strategy": "由 a_1=1, a_{n+1}=a_n+n 推導得 a_n = 1 + \\sum_{i=1}^{n-1} i = 1 + \\frac{(n-1)n}{2}，代入 n=8 計算即可。"
+ }
+}

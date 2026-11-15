@@ -1,0 +1,59 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2012",
+  "paper": "Paper 2",
+  "qno": "42",
+  "hash": "#2012P2Q42"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-16",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓與直線的相交條件",
+   "secondary_topics": [
+    "圓的標準式方程式",
+    "點到直線距離公式",
+    "一元二次方程式判別式"
+   ],
+   "required_formulas": [
+    "圓心 $(h,k)$ 與半徑 $r$：$(x-h)^2+(y-k)^2=r^2$",
+    "點 $(x_0,y_0)$ 到直線 $Ax+By+C=0$ 距離：$d = \\frac{|Ax_0+By_0+C|}{\\sqrt{A^2+B^2}}$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 180
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "符號取反錯誤",
+    "student_thought_process": "在計算圓心 $(-1,2)$ 到直線距離時，分子絕對值內算出 $|-3+k|$，但在後續不等式處理或代入數值時，將 $k-3$ 的係數弄錯，導致上下界互換（將 $-3$ 與 $9$ 的位置顛倒），最終得出 $-9<k<3$"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "不等號方向混淆",
+    "student_thought_process": "正確算出距離範圍後，誤以為「相交」對應的是距離大於半徑（這通常是相離的條件），或者在解 $|k-3| < 10$ 時，錯誤地將不等式展開為 $k-3 > 10$ 或 $k-3 < -10$ 的並集，導致得到「或」的區間且數值大小顛倒"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "半徑計算錯誤",
+    "student_thought_process": "在將圓的一般式 $x^2+y^2+2x-4y-13=0$ 配方時，常數項處理出錯。正確應為 $(-1)^2+(2)^2-r^2=-13 \\Rightarrow r^2=18$，但學生可能算成 $r^2=9$（即 $r=3$）。若用錯誤的半徑 $3$ 代入距離公式 $\\frac{|k-3|}{\\sqrt{2}} < 3$，解得 $|k-3|<6 \\Rightarrow -3<k<9$"
+   }
+  },
+  "scaffolding_hints": [
+   "Hint 1 啟發：將圓的方程式配方成標準式，找出圓心坐標與半徑長度。",
+   "Hint 2 知識：利用「圓心到直線的距離小於半徑」作為相交條件，寫出 $d < r$ 的不等式，並注意分母為 $\\sqrt{1^2+(-1)^2}$。",
+   "Hint 3 破題：解絕對值不等式 $|k-3| < \\text{某數值}$ 時，記得拆成兩個同向不等式（小於號），而非大於號或並集。"
+  ],
+  "quick_solution_strategy": "配方得圓心$(-1,2)$半徑$\\sqrt{18}$，距離公式化簡得$|k-3|<6$，解得$-3<k<9$"
+ }
+}

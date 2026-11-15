@@ -13,9 +13,9 @@ from urllib.parse import quote, urlencode
 
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
-ROOT = Path("/workspace/hkdse-publish/dse-maths-question-bank/docs")
+ROOT = Path(__file__).resolve().parent / "docs"
 SITE = "https://hkdse.exampaper.cloud"
-VER = "20261115b"
+VER = "20261116ai1"
 TODAY = date.today().isoformat()
 BANK = f"{SITE}/"
 HUB = f"{SITE}/hub/"
@@ -28,7 +28,7 @@ SUBJECTS = [
         "name": "數學（必修部分）",
         "short": "數學",
         "en": "Mathematics (Compulsory Part)",
-        "blurb": "按年份或課題查閱香港中學文憑試（DSE）數學必修部分歷屆試題，涵蓋卷一、卷二，部分年份有中文或英文卷。適合操卷、對題同按課題集中溫習。",
+        "blurb": "免費 DSE 數學 past paper 集中喺呢度：按年份開卷，或者按課題（例如函數與圖像、三角、圓形幾何）集中操。涵蓋數學必修卷一、卷二，部分年份有中文或英文卷，適合考前操卷同對題。",
         "title": "DSE 數學必修歷屆試題免費 Past Paper（2012–2023）｜DSE Hub",
         "description": "免費查閱 DSE 數學必修部分 2012 至 2023 年歷屆試題，按年份或課題溫習卷一、卷二。DSE Hub 提供題目索引同課題標籤，方便操卷。",
         "h1": "DSE 數學必修歷屆試題",
@@ -39,7 +39,7 @@ SUBJECTS = [
         "name": "經濟",
         "short": "經濟",
         "en": "Economics",
-        "blurb": "查閱 DSE 經濟科歷屆試題，而家資料庫已有 2015、2017、2020 年卷一（英文卷），可按課題例如供求、GDP、貨幣同貿易集中溫習。",
+        "blurb": "免費 DSE 經濟 past paper：而家有 2015、2017、2020 年卷一（英文卷）。可按課題溫習供求、市場結構、GDP、貨幣銀行同國際貿易，適合想集中操某一類題嘅同學。",
         "title": "DSE 經濟歷屆試題免費 Past Paper（2015、2017、2020）｜DSE Hub",
         "description": "免費查閱 DSE 經濟科歷屆試題，現有 2015、2017、2020 年卷一。可按課題溫習供求、市場、GDP、貨幣同國際貿易等。",
         "h1": "DSE 經濟歷屆試題",
@@ -50,7 +50,7 @@ SUBJECTS = [
         "name": "化學",
         "short": "化學",
         "en": "Chemistry",
-        "blurb": "查閱 DSE 化學科歷屆試題，資料庫已覆蓋 2012 至 2025 年卷一甲、卷一乙同卷二（中文卷），方便按年份揀卷操練。",
+        "blurb": "免費 DSE 化學 past paper：2012 至 2025 年卷一甲、卷一乙同卷二（中文卷）都有索引。可按年份開卷，亦可按課題例如酸鹼、有機化學、氧化還原集中溫習。",
         "title": "DSE 化學歷屆試題免費 Past Paper（2012–2025）｜DSE Hub",
         "description": "免費查閱 DSE 化學 2012 至 2025 年歷屆試題，包括卷一甲、卷一乙同卷二。DSE Hub 提供題目索引，方便按年份操卷。",
         "h1": "DSE 化學歷屆試題",
@@ -61,7 +61,7 @@ SUBJECTS = [
         "name": "生物",
         "short": "生物",
         "en": "Biology",
-        "blurb": "查閱 DSE 生物科歷屆試題。而家資料庫已有 2023 年卷一同卷二（中文卷），之後會繼續加其他年份。",
+        "blurb": "免費 DSE 生物 past paper：而家已有 2023 年卷一同卷二（中文卷），可喺手機或電腦直接開題溫習；之後會繼續加其他年份。",
         "title": "DSE 生物歷屆試題免費 Past Paper（2023）｜DSE Hub",
         "description": "免費查閱 DSE 生物歷屆試題。現已提供 2023 年卷一同卷二，可喺 DSE Hub 直接檢視題目。",
         "h1": "DSE 生物歷屆試題",
@@ -72,7 +72,7 @@ SUBJECTS = [
         "name": "物理",
         "short": "物理",
         "en": "Physics",
-        "blurb": "查閱 DSE 物理科歷屆試題。而家資料庫已有 2024 年卷一同卷二（中文卷），之後會繼續加其他年份。",
+        "blurb": "免費 DSE 物理 past paper：而家已有 2024 年卷一同卷二（中文卷），方便按卷操練同對答案；之後會繼續加其他年份。",
         "title": "DSE 物理歷屆試題免費 Past Paper（2024）｜DSE Hub",
         "description": "免費查閱 DSE 物理歷屆試題。現已提供 2024 年卷一同卷二，可喺 DSE Hub 直接檢視題目。",
         "h1": "DSE 物理歷屆試題",
@@ -676,13 +676,16 @@ def esc(s):
 def parse_catalog():
     text = (ROOT / "hub/data.js").read_text(encoding="utf-8")
     rows = re.findall(
-        r'\{ id: "(\w+)", name: "([^"]+)", year: (\d+), paper: "([^"]+)", lang: "([^"]+)", hash: "([^"]+)" \}',
+        r'\{\s*id:\s*"(\w+)",\s*name:\s*"([^"]+)",\s*year:\s*(\d+),\s*paper:\s*"([^"]+)",\s*lang:\s*"([^"]+)",\s*hash:\s*"([^"]+)"'
+        r'(?:\s*,\s*path:\s*"([^"]+)")?\s*\}',
         text,
     )
-    catalog = [
-        {"id": i, "name": n, "year": int(y), "paper": p, "lang": lg, "hash": h}
-        for i, n, y, p, lg, h in rows
-    ]
+    catalog = []
+    for i, n, y, p, lg, h, path in rows:
+        row = {"id": i, "name": n, "year": int(y), "paper": p, "lang": lg, "hash": h}
+        if path:
+            row["path"] = path
+        catalog.append(row)
     if len(catalog) < 50:
         raise SystemExit(f"catalog parse too small: {len(catalog)}")
     return catalog
@@ -768,6 +771,25 @@ def paper_href(row):
     return BANK.rstrip("/") + row["hash"]
 
 
+def attach_paths(catalog, papers):
+    """Copy resolved landing paths (and corrected lang) onto catalog rows."""
+    by_hash = {p["hash"]: p for p in papers}
+    out = []
+    for r in catalog:
+        rr = dict(r)
+        p = by_hash.get(r["hash"])
+        if p:
+            rr["path"] = p["path"]
+            rr["lang"] = p["lang"]
+            rr["paper"] = p["paper"]
+            rr["n_questions"] = p.get("n_questions")
+        else:
+            code = paper_code_of(r["paper"])
+            rr["path"] = paper_landing_path(r["id"], r["year"], code, r["lang"])
+        out.append(rr)
+    return out
+
+
 def paper_row_html(r):
     sn = short_name(r["name"])
     landing = r.get("path")
@@ -838,10 +860,41 @@ def make_og():
     img = base.convert("RGB")
     draw = ImageDraw.Draw(img)
 
-    font_black = ImageFont.truetype("/home/box/.fonts/NotoSansCJKtc-Black.otf", 96)
-    font_bold = ImageFont.truetype("/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc", 42, index=0)
-    font_med = ImageFont.truetype("/home/box/.fonts/NotoSansCJKtc-Medium.otf", 32)
-    font_sm = ImageFont.truetype("/home/box/.fonts/NotoSansCJKtc-Medium.otf", 24)
+    font_candidates = [
+        (
+            Path("/home/box/.fonts/NotoSansCJKtc-Black.otf"),
+            Path("/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc"),
+            Path("/home/box/.fonts/NotoSansCJKtc-Medium.otf"),
+        ),
+        (
+            Path(r"C:\Windows\Fonts\msjhbd.ttc"),
+            Path(r"C:\Windows\Fonts\msjhbd.ttc"),
+            Path(r"C:\Windows\Fonts\msjh.ttc"),
+        ),
+        (
+            Path(r"C:\Windows\Fonts\mingliu.ttc"),
+            Path(r"C:\Windows\Fonts\mingliu.ttc"),
+            Path(r"C:\Windows\Fonts\mingliu.ttc"),
+        ),
+    ]
+    fonts = None
+    for black_p, bold_p, med_p in font_candidates:
+        if not (black_p.exists() and bold_p.exists() and med_p.exists()):
+            continue
+        try:
+            fonts = (
+                ImageFont.truetype(str(black_p), 96),
+                ImageFont.truetype(str(bold_p), 42, index=0),
+                ImageFont.truetype(str(med_p), 32, index=0),
+                ImageFont.truetype(str(med_p), 24, index=0),
+            )
+            break
+        except OSError:
+            continue
+    if fonts is None:
+        print("og-image skipped (no CJK font)")
+        return
+    font_black, font_bold, font_med, font_sm = fonts
 
     # icon
     icon_path = ROOT / "icons/icon-512.png"
@@ -929,7 +982,7 @@ def make_sitemap():
     ]
     for loc, pri, freq in urls:
         parts.append(
-            f"  <url>\n    <loc>{esc(loc)}</loc>\n    <lastmod>2026-11-12</lastmod>\n    <changefreq>{freq}</changefreq>\n    <priority>{pri}</priority>\n  </url>"
+            f"  <url>\n    <loc>{esc(loc)}</loc>\n    <lastmod>{TODAY}</lastmod>\n    <changefreq>{freq}</changefreq>\n    <priority>{pri}</priority>\n  </url>"
         )
     parts.append("</urlset>\n")
     (ROOT / "sitemap.xml").write_text("\n".join(parts), encoding="utf-8")
@@ -943,11 +996,9 @@ def sort_rows(rows):
     )
 
 
-def make_hub(catalog):
-    prerender = "\n".join(paper_row_html(r) for r in sort_rows(catalog))
-    counts = defaultdict(int)
-    for r in catalog:
-        counts[r["id"]] += 1
+def make_hub(catalog, papers):
+    rows = attach_paths(catalog, papers)
+    prerender = "\n".join(paper_row_html(r) for r in sort_rows(rows))
     item_list = {
         "@context": "https://schema.org",
         "@graph": [
@@ -998,64 +1049,11 @@ def make_hub(catalog):
             },
             {
                 "@type": "FAQPage",
-                "mainEntity": [
-                    {
-                        "@type": "Question",
-                        "name": "DSE Hub 係咪免費？",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "係，DSE Hub 免費查閱香港中學文憑試歷屆試題索引同題目，唔使報名，亦唔使信用卡。",
-                        },
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "而家有邊啲科目？",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "而家有數學（必修部分）、經濟、化學、生物同物理。每科已上線嘅年份同卷別，以資料庫實際內容為準。",
-                        },
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "可唔可以按課題溫習？",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "可以。喺主頁揀「按課題」，先揀科目再揀課題，就會列出相關題目，方便集中操同一類型。",
-                        },
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "呢度係咪官方原卷檔案庫？",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "站內主要提供索引、題目同課題標籤，方便溫習；部分卷另有 PDF 連結。內容以資料庫已有項目為準，並唔取代考試及評核局官方刊物。",
-                        },
-                    },
-                ],
+                "mainEntity": faq_ld_entities(HUB_FAQS),
             },
         ],
     }
-    faq_html = """
-<section class="seo-faq" aria-label="常見問題">
-  <h2>常見問題</h2>
-  <details open>
-    <summary>DSE Hub 係咪免費？</summary>
-    <p>係，免費查閱香港中學文憑試歷屆試題索引同題目，唔使報名，亦唔使信用卡。</p>
-  </details>
-  <details>
-    <summary>而家有邊啲科目？</summary>
-    <p>而家有數學（必修部分）、經濟、化學、生物同物理。每科已上線嘅年份同卷別，以資料庫實際內容為準，科目頁會列出全部已有卷。</p>
-  </details>
-  <details>
-    <summary>可唔可以按課題溫習？</summary>
-    <p>可以。喺上面揀「按課題」，先揀科目再揀課題，就會列出相關題目，方便集中操同一類型。</p>
-  </details>
-  <details>
-    <summary>呢度係咪官方原卷檔案庫？</summary>
-    <p>站內主要提供索引、題目同課題標籤，方便溫習；部分卷另有 PDF 連結。內容以資料庫已有項目為準，並唔取代考試及評核局官方刊物。</p>
-  </details>
-</section>
-"""
+    faq_html = faq_block(HUB_FAQS)
     footer_links = " · ".join(
         f'<a href="/{s["slug"]}/">{esc(s["short"])}</a>' for s in SUBJECTS
     )
@@ -1067,48 +1065,44 @@ def make_hub(catalog):
 {ld_json(item_list)}
 </head>
 <body>
-<header class="hero">
-  <div class="hero-glow" aria-hidden="true"></div>
-  <div class="hero-inner">
-    <div class="hero-head">
-      <p class="brand">DSE Hub</p>
-      <button type="button" class="install-btn" data-install-app title="安裝 DSE Hub 到主畫面">
-        <span>一鍵安裝</span>
-      </button>
+<header class="top">
+  <div class="top-row">
+    <p class="brand-lockup" aria-label="DSE Hub">
+      <span class="brand-dse">DSE</span>
+      <span class="brand">hub</span>
+    </p>
+    <button type="button" class="install-btn" data-install-app title="安裝 DSE Hub 至主畫面">
+      <span>安裝</span>
+    </button>
+  </div>
+  <h1>{esc(HUB_H1)}</h1>
+  <p class="tagline">即時睇題目／題解，自選按課題操卷——完全免費，真正方便用家既 Past Paper 收集平台。</p>
+  <div class="install-tip" id="installTip" hidden>
+    <div class="install-tip-body">
+      <strong>一鍵加入主畫面</strong>
+      <span>iPhone／iPad：使用 Safari「分享」→「加入主畫面」。Android／電腦：瀏覽器選單 →「安裝應用程式」。</span>
     </div>
-    <div class="install-tip" id="installTip" hidden>
-      <div class="install-tip-body">
-        <strong>一鍵加到主畫面</strong>
-        <span>iPhone／iPad：用 Safari「分享」→「加到主畫面」。Android／電腦 Chrome、Edge：瀏覽器選單 →「安裝應用程式」。</span>
-      </div>
-      <button type="button" class="install-tip-x" data-install-close aria-label="閂">×</button>
-    </div>
-    <h1>{esc(HUB_H1)}</h1>
-    <p class="tagline">真正免費。按年份或課題，查閱 DSE 數學、經濟、化學、生物、物理 past paper——唔使報班都睇到題。</p>
-        {subject_nav(catalog)}
+    <button type="button" class="install-tip-x" data-install-close aria-label="關閉"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
   </div>
 </header>
 
 <nav class="filters" aria-label="篩選">
   <div class="filters-inner">
-    <div class="titlebar">
-      <span class="filters-label">搵卷</span>
-      <div class="seg" id="modeSeg">
-        <button type="button" data-mode="year" class="on">按年份</button>
-        <button type="button" data-mode="topic">按課題</button>
-      </div>
+    <div class="seg" id="modeSeg" role="tablist" aria-label="瀏覽方式">
+      <button type="button" data-mode="year" class="on" role="tab" aria-selected="true">按年份</button>
+      <button type="button" data-mode="topic" role="tab" aria-selected="false">按課題</button>
     </div>
     <div class="bar" id="yearBar">
       <div class="field">
-        <label>科目</label>
+        <label for="bSubj">科目</label>
         <button type="button" class="reel-btn" id="bSubj" data-key="subject">所有</button>
       </div>
       <div class="field">
-        <label id="l2">年份</label>
+        <label for="bYear" id="l2">年份</label>
         <button type="button" class="reel-btn" id="bYear" data-key="year">所有</button>
       </div>
       <div class="field" id="fPaper">
-        <label>卷別</label>
+        <label for="bPaper">卷別</label>
         <button type="button" class="reel-btn" id="bPaper" data-key="paper">所有</button>
       </div>
     </div>
@@ -1117,17 +1111,18 @@ def make_hub(catalog):
 
 <main>
   <section id="result" class="paper-list" aria-live="polite">
-    <p class="list-count">共 {len(catalog)} 卷</p>
+    <p class="list-count">共 {len(rows)} 卷</p>
 {prerender}
   </section>
 </main>
 {faq_html}
 <footer>站內只放索引、連結同課題標籤，唔存放試卷原卷 · 只顯示資料庫已有內容<br>科目：{footer_links}<br>相關：<a href="{esc(VISUAL_TUTOR)}" rel="noopener">{esc(VISUAL_TUTOR_LABEL)}</a></footer>
 
-<!-- 滾輪（Reel） -->
+<!-- 滾輪選擇器 -->
 <div class="reel-overlay" id="reel" hidden>
   <div class="reel-backdrop" id="reelBackdrop"></div>
   <div class="reel-sheet" role="dialog" aria-modal="true" aria-labelledby="reelTitle">
+    <div class="reel-grabber" aria-hidden="true"></div>
     <div class="reel-head">
       <button type="button" class="reel-link" id="reelCancel">取消</button>
       <span id="reelTitle">科目</span>
@@ -1143,12 +1138,10 @@ def make_hub(catalog):
 <script src="/data.js?v={VER}"></script>
 <script src="/hub/data.js?v={VER}"></script>
 <script src="/hub/app.js?v={VER}"></script>
-<script src="//pwa.js?v={VER}"></script>
+<script src="/pwa.js?v={VER}"></script>
 </body>
 </html>
 """
-    # typo fix pwa path
-    page = page.replace('src="//pwa.js', 'src="/pwa.js')
     (ROOT / "hub/index.html").write_text(page, encoding="utf-8")
     print("hub index", len(page))
 
@@ -1205,9 +1198,17 @@ def make_subject_pages(catalog, papers):
                         ],
                     },
                 },
+                {
+                    "@type": "FAQPage",
+                    "mainEntity": faq_ld_entities(LANDING_FAQS),
+                },
             ],
         }
-        topic_cta = f'<p class="page-cta"><a href="/hub/?subject={s["id"]}&amp;mode=topic">按課題篩選{esc(s["short"])}題目</a> · <a href="/hub/?subject={s["id"]}&amp;mode=year">按年份睇卷</a></p>'
+        topic_cta = (
+            f'<p class="page-cta"><a href="/hub/?subject={s["id"]}&amp;mode=topic">按課題篩選{esc(s["short"])}題目</a>'
+            f' · <a href="/hub/?subject={s["id"]}&amp;mode=year">按年份睇卷</a>'
+            f' · <a href="/hub/">返回 DSE Hub 主頁</a></p>'
+        )
         strand_links = "\n    ".join(
             f'<a href="/{st["subject_id"]}/{st["slug"]}/">{esc(st["name"])}</a>'
             for st in STRANDS
@@ -1235,7 +1236,7 @@ def make_subject_pages(catalog, papers):
                 + nav_pills(topic_links, label="課題")
                 + "\n</section>\n"
             )
-        faq = faq_block([FAQ_FREE, FAQ_TOPIC])
+        faq = faq_block(LANDING_FAQS)
         page = f"""<!DOCTYPE html>
 <html lang="zh-Hant-HK">
 <head>
@@ -1479,6 +1480,30 @@ footer a:hover { text-decoration: underline; }
   font-weight: 500;
   margin-right: 6px;
 }
+.q-ai {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #0b62c4;
+  background: rgba(11, 98, 196, 0.1);
+  border: 1px solid rgba(11, 98, 196, 0.28);
+  vertical-align: middle;
+}
+.q-embed { font-size: 15.5px; line-height: 1.8; max-width: 72ch; }
+.q-embed img { max-width: 100%; height: auto; }
+.ai-chips { color: var(--mut); font-size: 13px; }
+.ai-hints { margin: 10px 0; }
+.ai-hint { border: 1px solid var(--line); border-radius: 10px; padding: 8px 12px; margin: 6px 0; background: rgba(255,255,255,0.04); }
+.ai-hint summary { cursor: pointer; font-weight: 700; color: #93c5fd; }
+.ai-hint div { margin-top: 8px; line-height: 1.8; }
+.ai-oa { display: grid; gap: 10px; margin: 10px 0; }
+.ai-oa-card { border: 1px solid var(--line); border-radius: 10px; padding: 10px 14px; line-height: 1.7; }
+.ai-oa-card strong { color: #93c5fd; }
+.ai-oa-meta { margin: 2px 0 4px; font-size: 13px; color: var(--mut); }
+.ai-strategy { border: 1px solid rgba(11,98,196,0.35); border-radius: 10px; padding: 10px 14px; background: rgba(11,98,196,0.08); }
 .open-cta a {
   display: inline-block;
   margin-top: 4px;
@@ -1518,9 +1543,70 @@ footer {
     print("css patched")
 
 
+def patch_hub_data(papers):
+    """Write resolved landing path onto each CATALOG row in hub/data.js."""
+    path = ROOT / "hub/data.js"
+    text = path.read_text(encoding="utf-8")
+    by_hash = {p["hash"]: p["path"] for p in papers}
+    text = re.sub(r",\s*path:\s*\"[^\"]*\"", "", text)
+
+    def add_path(m):
+        full = m.group(0)
+        hash_ = m.group(1)
+        landing = by_hash.get(hash_)
+        if not landing:
+            return full
+        return full[:-1] + f', path: "{landing}"' + "}"
+
+    new = re.sub(r"\{[^{}]*?hash:\s*\"(#[^\"]+)\"\s*\}", add_path, text)
+    if new == text:
+        print("hub data.js path patch: no changes")
+        return
+    path.write_text(new, encoding="utf-8")
+    n = new.count('path: "')
+    print("hub data.js paths", n)
+
+
 def patch_app():
     path = ROOT / "hub/app.js"
     text = path.read_text(encoding="utf-8")
+    # Keep landing-path helper if an older build rewrote viewHrefFor.
+    if "function viewHrefFor(r)" in text and "r.path" not in text.split("function viewHrefFor(r)", 1)[1][:400]:
+        old = re.search(
+            r"function viewHrefFor\(r\) \{\n  return BANK_URL \+ r\.hash;\n\}",
+            text,
+        )
+        if old:
+            text = text.replace(
+                old.group(0),
+                """const PAPER_CODE = {
+  "卷一": "paper-1",
+  "卷二": "paper-2",
+  "卷一甲": "paper-1a",
+  "卷一乙": "paper-1b",
+  "Paper 1": "paper-1",
+  "Paper 2": "paper-2",
+  "Paper 1A": "paper-1a",
+  "Paper 1B": "paper-1b",
+};
+
+const LANDING_BY_HASH = {
+  "#2012P2Q1": "/math/2012/paper-2-en/",
+  "#2013P2Q1": "/math/2013/paper-2-en/",
+};
+
+function viewHrefFor(r) {
+  if (r.path) return r.path;
+  if (LANDING_BY_HASH[r.hash]) return LANDING_BY_HASH[r.hash];
+  const code = PAPER_CODE[r.paper] || "paper-1";
+  const slug = r.lang === "英文" ? `${code}-en` : code;
+  return `/${r.id}/${r.year}/${slug}/`;
+}""",
+                1,
+            )
+            path.write_text(text, encoding="utf-8")
+            print("app.js viewHrefFor -> landing paths")
+            text = path.read_text(encoding="utf-8")
     hook = """(function applyQuery() {
   const p = new URLSearchParams(location.search);
   const sid = p.get("subject");
@@ -1650,6 +1736,30 @@ def parse_questions():
     if len(qs) < 1000:
         raise SystemExit(f"question parse too small: {len(qs)}")
     return qs
+
+
+def load_analyses():
+    """docs/analysis/<sid>/<year>/<paper-code>/q<qno>.json → key (subject_zh, year, paper_code, qno)。"""
+    out = {}
+    adir = ROOT / "analysis"
+    if not adir.is_dir():
+        return out
+    for fp in sorted(adir.glob("*/*/*/q*.json")):
+        try:
+            data = json.loads(fp.read_text(encoding="utf-8"))
+        except (OSError, ValueError) as e:
+            print("analysis json skipped", fp, e)
+            continue
+        qq = data.get("question") or {}
+        try:
+            key = (qq["subject"], int(qq["year"]), paper_code_of(qq["paper"]), int(qq["qno"]))
+        except (KeyError, ValueError):
+            print("analysis json bad question meta", fp)
+            continue
+        out[key] = data
+    if out:
+        print("analyses", len(out))
+    return out
 
 
 def paper_no(paper):
@@ -1818,6 +1928,43 @@ FAQ_TOPIC = (
     "可唔可以按課題操練？",
     "可以。喺 DSE Hub 揀「按課題」，或者開啟各課題頁，就會列出相關題目，方便集中操同一類型。",
 )
+FAQ_FIND_YEAR = (
+    "點樣搵某一年嘅 DSE past paper？",
+    "喺 DSE Hub 主頁揀「按年份」，再揀科目同年份；或者開啟科目頁，撳對應年份就可以睇嗰年各卷。",
+)
+FAQ_ENGLISH = (
+    "有冇英文卷可以操？",
+    "有。數學同經濟部分年份提供英文卷；化學、生物、物理而家主要係中文卷。每卷頁會標明語言。",
+)
+FAQ_PDF = (
+    "可唔可以下載 PDF 原卷？",
+    "站內主要提供題目索引同逐題睇題，方便溫習；部分卷另有 PDF 連結。內容以資料庫已有項目為準，並唔取代考評局官方刊物。",
+)
+FAQ_MOBILE = (
+    "手機可唔可以睇題？",
+    "可以。網站已為手機優化，亦支援加到主畫面，方便隨身搵 DSE past paper 同操卷。",
+)
+FAQ_SUBJECTS = (
+    "而家有邊啲科目？",
+    "而家有數學（必修部分）、經濟、化學、生物同物理。每科已上線嘅年份同卷別，以資料庫實際內容為準，科目頁會列出全部已有卷。",
+)
+FAQ_OFFICIAL = (
+    "呢度係咪官方原卷檔案庫？",
+    "站內主要提供索引、題目同課題標籤，方便溫習；部分卷另有 PDF 連結。內容以資料庫已有項目為準，並唔取代考試及評核局官方刊物。",
+)
+LANDING_FAQS = [FAQ_FREE, FAQ_TOPIC, FAQ_FIND_YEAR, FAQ_ENGLISH]
+HUB_FAQS = [FAQ_FREE, FAQ_SUBJECTS, FAQ_TOPIC, FAQ_FIND_YEAR, FAQ_ENGLISH, FAQ_PDF, FAQ_MOBILE, FAQ_OFFICIAL]
+
+
+def faq_ld_entities(pairs):
+    return [
+        {
+            "@type": "Question",
+            "name": q,
+            "acceptedAnswer": {"@type": "Answer", "text": a},
+        }
+        for q, a in pairs
+    ]
 
 
 def nav_pills(items, current=None, label="相關連結"):
@@ -1829,14 +1976,22 @@ def nav_pills(items, current=None, label="相關連結"):
     return "\n        ".join(bits)
 
 
-def q_list_html(rows, topic=None):
+def q_list_html(rows, topic=None, analyses=None, paper_path=None):
     items = []
     for q in rows:
         label = f"{q['subject']} {q['year']} {paper_zh_label(q.get('paper'))} Q{q['qno']}"
         title = (q.get("title") or "").strip()
         extra = f" — {esc(title)}" if title else ""
+        badge = ""
+        href = question_href(q, topic)
+        akey = None
+        if analyses is not None:
+            akey = (q.get("subject"), int(q.get("year", 0)), paper_code_of(q.get("paper")), int(q.get("qno", -1)))
+        if analyses and akey in analyses and paper_path and not topic:
+            href = f"{paper_path}q{q['qno']}/"
+            badge = '<span class="q-ai">AI 分析</span>'
         items.append(
-            f'    <li><a href="{esc(question_href(q, topic))}"><span class="q-meta">{esc(label)}</span>{extra}</a></li>'
+            f'    <li><a href="{esc(href)}"><span class="q-meta">{esc(label)}</span>{extra}{badge}</a></li>'
         )
     return '<ul class="q-index">\n' + "\n".join(items) + "\n  </ul>"
 
@@ -2060,10 +2215,26 @@ def make_strand_pages(catalog, questions, topics):
         add_sitemap(url, "0.8", "weekly")
         unmatched = len(keywords) - len(matched_qs)
         tagline = (
-            f"{st['blurb']} 資料庫入面，呢個範疇有 {len(union)} 題對應 "
+            f"{st['blurb']} 想集中溫習 DSE {s['short']}「{st['name']}」past paper，"
+            f"呢頁已按課題整理。資料庫入面，呢個範疇有 {len(union)} 題對應 "
             f"{len(matched_qs)} 個課題標籤"
         )
         tagline += f"，另有 {unmatched} 個課題暫時未有對應題目。" if unmatched else "。"
+        strand_years = sorted({int(q["year"]) for q in union}, reverse=True)
+        year_nav = (
+            nav_pills(
+                [(year_path(st["subject_id"], y), str(y), y) for y in strand_years],
+                label="年份",
+            )
+            if strand_years
+            else ""
+        )
+        topic_landings = [
+            (topic_path(tp["subject_id"], tp["slug"]), tp["name"], tp["slug"])
+            for tp in TOPIC_PAGES
+            if tp["subject_id"] == st["subject_id"] and tp.get("strand") == st["slug"]
+        ]
+        topic_nav = nav_pills(topic_landings, label="課題頁") if topic_landings else ""
         graph = {
             "@context": "https://schema.org",
             "@graph": [
@@ -2099,6 +2270,10 @@ def make_strand_pages(catalog, questions, topics):
                         ],
                     },
                 },
+                {
+                    "@type": "FAQPage",
+                    "mainEntity": faq_ld_entities(LANDING_FAQS),
+                },
             ],
         }
         siblings = " · ".join(
@@ -2133,7 +2308,13 @@ def make_strand_pages(catalog, questions, topics):
                 f'    <p class="tagline">{esc(tagline)}</p>',
                 f"        {subject_nav(catalog, current=st['subject_id'])}",
                 f"        {strand_nav_html(st['subject_id'], current=st['slug'])}",
-                f'    <p class="page-cta"><a href="{esc(hub_topic_path(st["subject_id"]))}">按課題篩選{esc(s["short"])}題目</a></p>',
+                f"        {year_nav}" if year_nav else "",
+                f"        {topic_nav}" if topic_nav else "",
+                (
+                    f'<p class="page-cta"><a href="{esc(hub_topic_path(st["subject_id"]))}">按課題篩選{esc(s["short"])}題目</a>'
+                    f' · <a href="/{st["subject_id"]}/">返回{esc(s["short"])}科目頁</a>'
+                    f' · <a href="/hub/?subject={st["subject_id"]}&amp;mode=year">按年份睇卷</a></p>'
+                ),
                 "  </div>",
                 "</header>",
                 '<main class="subj-main">',
@@ -2142,6 +2323,12 @@ def make_strand_pages(catalog, questions, topics):
                 f"  <h2>{esc(st['name'])}課題</h2>",
                 "\n".join(blocks),
                 "</section>",
+                (
+                    f'<section class="strand-index" aria-label="出現年份">\n  <h2>出現年份</h2>\n  {year_nav}\n</section>'
+                    if year_nav
+                    else ""
+                ),
+                faq_block(LANDING_FAQS),
                 "</main>",
                 site_footer(f'<a href="/{st["subject_id"]}/">返回{esc(s["short"])}科目頁</a> · 同科範疇：{siblings}'),
                 "</body>",
@@ -2188,6 +2375,48 @@ def year_nav_html(papers, sid, current=None):
         [(year_path(sid, y), str(y), y) for y in years],
         current=current,
         label="年份",
+    )
+
+
+def topic_hits_for_questions(sid, question_rows):
+    """Topic landing links that match tags in the given question set."""
+    hits = []
+    for tp in TOPIC_PAGES:
+        if tp["subject_id"] != sid:
+            continue
+        n = len(
+            [
+                q
+                for q in question_rows
+                if set(q.get("tags") or []) & set(tp["tags"])
+            ]
+        )
+        if n:
+            hits.append(
+                (topic_path(sid, tp["slug"]), f"{tp['name']}（{n}）", tp["slug"])
+            )
+    return hits
+
+
+def related_papers_for_years(papers, sid, years, limit=12):
+    year_set = set(years)
+    rows = [
+        p
+        for p in papers
+        if p["id"] == sid and p["year"] in year_set
+    ]
+    rows = sorted(rows, key=lambda r: (-r["year"], r["paper_code"], r["lang"]))
+    items = [
+        (p["path"], f"{p['year']} {p['paper']}（{p['lang']}）", p["path"])
+        for p in rows[:limit]
+    ]
+    if not items:
+        return ""
+    return (
+        '<section class="strand-index" aria-label="相關年份卷">\n'
+        "  <h2>相關年份卷</h2>\n  "
+        + nav_pills(items, label="相關年份卷")
+        + "\n</section>"
     )
 
 
@@ -2269,14 +2498,15 @@ def make_year_pages(catalog, papers, questions):
         h1 = f"DSE {s['short']} {year} 歷屆試題"
         paper_bits = "、".join(f"{r['paper']}（{r['lang']}）" for r in rows) if rows else "相關題目"
         tagline = (
-            f"真正完全免費查閱 DSE {esc(s['short'])} {year} 年歷屆試題"
-            + (f"，包括 {esc(paper_bits)}" if rows else "")
-            + (f"。而家資料庫有 {n_qs} 題索引。" if n_qs else "。")
+            f"免費 DSE {esc(s['short'])} {year} past paper："
+            + (f"包括 {esc(paper_bits)}" if rows else "相關題目")
+            + (f"。而家資料庫有 {n_qs} 題索引，可按卷或課題操練。" if n_qs else "。真正完全免費查閱。")
         )
         hub_link = f"/hub/?subject={sid}&amp;mode=year&amp;year={year}"
         cta = (
             f'<p class="page-cta"><a href="{hub_link}">喺 DSE Hub 按年份睇 {year} 年卷</a>'
-            f' · <a href="/{sid}/">返回{esc(s["short"])}科目頁</a></p>'
+            f' · <a href="/{sid}/">返回{esc(s["short"])}科目頁</a>'
+            f' · <a href="/hub/?subject={sid}&amp;mode=topic">按課題溫習</a></p>'
         )
         sibling_years = year_nav_html(papers, sid, current=year)
         sections = []
@@ -2285,20 +2515,7 @@ def make_year_pages(catalog, papers, questions):
             sections.append(
                 f'<section class="year-group">\n  <h2>{year} 年各卷</h2>\n  <div class="paper-list">\n{items}\n  </div>\n</section>'
             )
-        # topics that have questions this year
-        topic_hits = []
-        for tp in TOPIC_PAGES:
-            if tp["subject_id"] != sid:
-                continue
-            n = len(
-                [
-                    q
-                    for q in yqs
-                    if set(q.get("tags") or []) & set(tp["tags"])
-                ]
-            )
-            if n:
-                topic_hits.append((topic_path(sid, tp["slug"]), f"{tp['name']}（{n}）", tp["slug"]))
+        topic_hits = topic_hits_for_questions(sid, yqs)
         if topic_hits:
             sections.append(
                 '<section class="strand-index" aria-label="本年相關課題">\n'
@@ -2314,6 +2531,9 @@ def make_year_pages(catalog, papers, questions):
         extra_nav = sibling_years
         if strand_links:
             extra_nav += "\n        " + nav_pills(strand_links, label="課題範疇")
+        if topic_hits:
+            # Keep a compact topic strip in the hero so year ↔ topic is obvious.
+            extra_nav += "\n        " + nav_pills(topic_hits[:10], label="本年課題")
         crumbs = [("/hub/", "DSE Hub"), (f"/{sid}/", s["short"]), (None, str(year))]
         graph = {
             "@context": "https://schema.org",
@@ -2352,23 +2572,12 @@ def make_year_pages(catalog, papers, questions):
                 },
                 {
                     "@type": "FAQPage",
-                    "mainEntity": [
-                        {
-                            "@type": "Question",
-                            "name": FAQ_FREE[0],
-                            "acceptedAnswer": {"@type": "Answer", "text": FAQ_FREE[1]},
-                        },
-                        {
-                            "@type": "Question",
-                            "name": FAQ_TOPIC[0],
-                            "acceptedAnswer": {"@type": "Answer", "text": FAQ_TOPIC[1]},
-                        },
-                    ],
+                    "mainEntity": faq_ld_entities(LANDING_FAQS),
                 },
             ],
         }
         body = hero_html(crumbs, h1, tagline, catalog, sid, extra_nav=extra_nav, cta=cta)
-        body += '<main class="subj-main">\n' + "\n".join(sections) + "\n" + faq_block([FAQ_FREE, FAQ_TOPIC]) + "\n</main>"
+        body += '<main class="subj-main">\n' + "\n".join(sections) + "\n" + faq_block(LANDING_FAQS) + "\n</main>"
         write_landing(path, title, desc, url, graph, body, footer_extra=f'<a href="/{sid}/">返回{esc(s["short"])}科目頁</a>')
         add_sitemap(url, "0.8", "weekly")
         count += 1
@@ -2377,7 +2586,7 @@ def make_year_pages(catalog, papers, questions):
     return count
 
 
-def make_paper_pages(catalog, papers, questions):
+def make_paper_pages(catalog, papers, questions, analyses=None):
     count = 0
     by_year = defaultdict(list)
     for p in papers:
@@ -2401,8 +2610,11 @@ def make_paper_pages(catalog, papers, questions):
         )
         open_href = paper_href(r)
         hub_qs = f"/hub/?subject={r['id']}&amp;mode=year&amp;year={r['year']}&amp;paper={quote(r['paper'], safe='')}"
+        year_href = year_path(r["id"], r["year"])
         cta = (
             f'<p class="page-cta open-cta"><a href="{esc(open_href)}">喺題庫開啟呢份卷</a>'
+            f' · <a href="{esc(year_href)}">返回 {r["year"]} 年頁</a>'
+            f' · <a href="/{r["id"]}/">返回{esc(s["short"])}科目頁</a>'
             f' · <a href="{hub_qs}">喺 DSE Hub 篩選呢一年</a></p>'
         )
         siblings = [
@@ -2412,6 +2624,9 @@ def make_paper_pages(catalog, papers, questions):
         extra_nav = year_nav_html(papers, r["id"], current=r["year"])
         if siblings:
             extra_nav += "\n        " + nav_pills(siblings, current=r["path"], label="同年試卷")
+        paper_topics = topic_hits_for_questions(r["id"], qs)
+        if paper_topics:
+            extra_nav += "\n        " + nav_pills(paper_topics[:8], label="相關課題")
         crumbs = [
             ("/hub/", "DSE Hub"),
             (f"/{r['id']}/", s["short"]),
@@ -2422,7 +2637,7 @@ def make_paper_pages(catalog, papers, questions):
         if nq:
             sections.append(
                 f'<section class="kw-section" aria-label="題目索引">\n  <h2>題目索引（{nq} 題）</h2>\n  '
-                + q_list_html(qs)
+                + q_list_html(qs, analyses=analyses, paper_path=path)
                 + "\n</section>"
             )
         else:
@@ -2431,6 +2646,13 @@ def make_paper_pages(catalog, papers, questions):
                 "  <p>呢份卷已收錄喺資料庫目錄，可以喺題庫開啟；逐題索引稍後再補。</p>\n"
                 f'  <p><a href="{esc(open_href)}">開啟 {esc(s["short"])} {r["year"]} {esc(r["paper"])}</a></p>\n'
                 "</section>"
+            )
+        if paper_topics:
+            sections.append(
+                '<section class="strand-index" aria-label="相關課題">\n'
+                "  <h2>呢份卷相關課題</h2>\n  "
+                + nav_pills(paper_topics, label="相關課題")
+                + "\n</section>"
             )
         graph = {
             "@context": "https://schema.org",
@@ -2497,6 +2719,191 @@ def make_paper_pages(catalog, papers, questions):
     return count
 
 
+def _embed_question_html(q):
+    """data.js 嘅 html img src 係 docs 根相對路徑；子頁面要用絕對路徑先搵到圖。"""
+    html = q.get("html") or ""
+    return re.sub(r'(src=")(?!/|https?://)', r"\1/", html)
+
+
+def _analysis_section_html(analysis):
+    a = analysis.get("analysis") or {}
+    md = a.get("metadata") or {}
+    oa = a.get("options_analysis") or {}
+    cat_zh = {
+        "Conceptual": "概念錯誤",
+        "Calculation": "計算粗心",
+        "Reading-Formatting": "審題不清",
+        "Methodological": "策略錯誤",
+    }
+    chips = []
+    if md.get("primary_topic"):
+        chips.append(f'<span class="q-ai">{esc(md["primary_topic"])}</span>')
+    if md.get("bloom_taxonomy_level"):
+        chips.append(f"認知層次：{esc(str(md['bloom_taxonomy_level']))}")
+    if md.get("estimated_time_seconds"):
+        chips.append(f"建議作答 {esc(str(md['estimated_time_seconds']))} 秒")
+    hint_items = []
+    hints = [h for h in (a.get("scaffolding_hints") or []) if isinstance(h, str) and h.strip()]
+    labels = ("提示 1（啟發）", "提示 2（知識）", "提示 3（破題）")
+    for i, h in enumerate(hints[:3]):
+        hint_items.append(
+            f'<details class="ai-hint"><summary>{labels[i]}</summary><div>{esc(h)}</div></details>'
+        )
+    rows = []
+    for L in "ABCD":
+        v = oa.get(L)
+        if not isinstance(v, dict):
+            continue
+        if v.get("is_correct") is True:
+            head = f'<strong>{L}　✓ 正確答案</strong>'
+            bits = ""
+        else:
+            head = f"<strong>{L}</strong>"
+            bits = []
+            if v.get("error_category"):
+                bits.append(f'<span class="q-ai">{esc(cat_zh.get(v["error_category"], v["error_category"]))}</span>')
+            if v.get("error_tag"):
+                bits.append(esc(v["error_tag"]))
+            bits = f'<p class="ai-oa-meta">{"　".join(bits)}</p>' if bits else ""
+        thought = v.get("student_thought_process") or ""
+        rows.append(f'<div class="ai-oa-card">{head}{bits}<div>{esc(thought)}</div></div>')
+    strategy = ""
+    if a.get("quick_solution_strategy"):
+        strategy = f'<p class="ai-strategy"><strong>速解策略：</strong>{esc(a["quick_solution_strategy"])}</p>'
+    formulas = ""
+    if md.get("required_formulas"):
+        fs = "、".join(esc(str(x)) for x in md["required_formulas"])
+        formulas = f'<p>核心公式／定理：{fs}</p>'
+    return (
+        '<section class="kw-section" aria-label="深度分析">\n  <h2>深度分析</h2>\n'
+        + (f'<p class="ai-chips">{"　".join(chips)}</p>' if chips else "")
+        + formulas
+        + (f'<div class="ai-hints">{"".join(hint_items)}</div>' if hint_items else "")
+        + ('<h3>誘答項逆向工程</h3><div class="ai-oa">' + "".join(rows) + "</div>" if rows else "")
+        + strategy
+        + "\n</section>"
+    )
+
+
+def make_question_pages(catalog, papers, questions, analyses):
+    """每題有分析 JSON 就出一頁 /<sid>/<year>/<paper-code>/q<qno>/。"""
+    if not analyses:
+        print("question pages 0")
+        return 0
+    by_paper = defaultdict(list)
+    for r in papers:
+        by_paper[(r["id"], int(r["year"]), r["paper_code"])].append(r)
+    count = 0
+    for q in sort_questions(questions):
+        try:
+            akey = (q.get("subject"), int(q.get("year", 0)), paper_code_of(q.get("paper")), int(q.get("qno", -1)))
+        except ValueError:
+            continue
+        analysis = analyses.get(akey)
+        if not analysis:
+            continue
+        sid = SUBJECT_TO_SID.get(q.get("subject"))
+        if not sid:
+            continue
+        code = paper_code_of(q.get("paper"))
+        rows = by_paper.get((sid, int(q["year"]), code)) or []
+        if not rows:
+            print("question page skipped (no paper row)", akey)
+            continue
+        lang = infer_lang(q.get("file") or "")
+        r = next((x for x in rows if x["lang"] == lang), rows[0])
+        s = subject_meta(sid)
+        path = f"{r['path']}q{q['qno']}/"
+        url = SITE + path
+        qzh = paper_zh_label(code)
+        title = f"DSE {s['short']} {q['year']} {qzh} 第 {q['qno']} 題深度分析｜DSE Hub"
+        a = (analysis.get("analysis") or {}).get("metadata") or {}
+        topic = a.get("primary_topic") or ""
+        desc = (
+            f"DSE {s['short']} {q['year']} {qzh} 第 {q['qno']} 題深度解析：考點"
+            + (f"「{topic}」" if topic else "")
+            + "、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。"
+        )
+        h1 = f"DSE {s['short']} {q['year']} {qzh} 第 {q['qno']} 題深度分析"
+        tagline = "考點圖譜 · 布魯姆認知層次 · 三層鷹架提示 · 誘答項逆向工程"
+        bank_href = question_href(q)
+        crumbs = [
+            ("/hub/", "DSE Hub"),
+            (f"/{sid}/", s["short"]),
+            (year_path(sid, int(q["year"])), str(q["year"])),
+            (r["path"], f"{r['paper']}（{r['lang']}）"),
+            (None, f"第 {q['qno']} 題"),
+        ]
+        cta = (
+            f'<p class="page-cta open-cta"><a href="{esc(bank_href)}">喺題庫開啟呢題</a>'
+            f' · <a href="{esc(r["path"])}">返回 {q["year"]} {esc(qzh)} 全卷</a></p>'
+        )
+        sections = [
+            '<section class="kw-block" aria-label="題目">\n  <h2>題目</h2>\n'
+            f'  <div class="q-embed">{_embed_question_html(q)}</div>\n</section>',
+            _analysis_section_html(analysis),
+        ]
+        # JSON-LD：QAPage，acceptedAnswer 用正確選項＋速解策略
+        oa = ((analysis.get("analysis") or {}).get("options_analysis")) or {}
+        opts = dict(re.findall(r"^-\s*([A-D])[.．、]\s*(.+)$", str(q.get("text") or ""), re.M))
+        clean = lambda s: re.sub(r"\s+", " ", str(s or "")).strip()
+        correct_letter = next((L for L in "ABCD" if isinstance(oa.get(L), dict) and oa[L].get("is_correct")), None)
+        answers = []
+        for L in "ABCD":
+            if L not in opts:
+                continue
+            answers.append({"@type": "Answer", "text": f"{L}. {clean(opts[L])}"})
+        qtext = clean(q.get("text"))
+        strategy_txt = str((analysis.get("analysis") or {}).get("quick_solution_strategy") or "")
+        accepted = (
+            f"{correct_letter}. {clean(opts.get(correct_letter))}。速解策略：{strategy_txt}"
+            if correct_letter and correct_letter in opts
+            else strategy_txt
+        )
+        qtext = qtext[:500]
+        graph = {
+            "@context": "https://schema.org",
+            "@graph": [
+                ld_breadcrumb(
+                    [
+                        ("/hub/", "DSE Hub"),
+                        (f"/{sid}/", s["short"]),
+                        (year_path(sid, int(q["year"])), str(q["year"])),
+                        (SITE + r["path"], f"{r['paper']}（{r['lang']}）"),
+                        (url, f"第 {q['qno']} 題"),
+                    ]
+                ),
+                {
+                    "@type": "QAPage",
+                    "mainEntity": {
+                        "@type": "Question",
+                        "name": f"DSE {s['short']} {q['year']} {qzh} 第 {q['qno']} 題",
+                        "text": qtext[:500],
+                        "answerCount": 4,
+                        "acceptedAnswer": {"@type": "Answer", "text": accepted},
+                        "suggestedAnswer": [x for x in answers if x.get("@type") == "Answer"],
+                    },
+                },
+            ],
+        }
+        body = hero_html(crumbs, h1, tagline, catalog, sid, cta=cta)
+        body += '<main class="subj-main">\n' + "\n".join(sections) + "\n</main>"
+        write_landing(
+            path,
+            title,
+            desc,
+            url,
+            graph,
+            body,
+            footer_extra=f'<a href="{esc(r["path"])}">返回 {q["year"]} {esc(qzh)}</a> · <a href="{esc(bank_href)}">喺題庫開啟呢題</a>',
+        )
+        add_sitemap(url, "0.8", "monthly")
+        count += 1
+        print("question", path)
+    print("question pages", count)
+    return count
+
+
 def make_topic_pages(catalog, questions, papers):
     count = 0
     by_subj = defaultdict(int)
@@ -2529,17 +2936,25 @@ def make_topic_pages(catalog, questions, papers):
         desc = tp["description"]
         h1 = tp["h1"]
         tagline = (
-            f"{esc(tp['blurb'])} 資料庫有 {len(rows)} 題（{esc(span)}），真正完全免費按課題操練。"
+            f"{esc(tp['blurb'])} 想搵「DSE {esc(s['short'])} {esc(tp['name'])} past paper」"
+            f"可以直接喺呢頁操。資料庫有 {len(rows)} 題（{esc(span)}），真正完全免費。"
         )
         hub = hub_topic_path(sid)
         cta = (
             f'<p class="page-cta"><a href="{esc(hub)}">喺 DSE Hub 按課題篩選{esc(s["short"])}題目</a>'
-            f' · <a href="/{sid}/">返回{esc(s["short"])}科目頁</a></p>'
+            f' · <a href="/{sid}/">返回{esc(s["short"])}科目頁</a>'
+            f' · <a href="/hub/?subject={sid}&amp;mode=year">按年份睇卷</a></p>'
         )
-        extra_nav = topic_nav_html(sid, current=tp["slug"])
+        year_list = sorted({int(q["year"]) for q in rows}, reverse=True)
+        year_hits = nav_pills(
+            [(year_path(sid, y), str(y), y) for y in year_list],
+            label="年份",
+        )
+        extra_nav = year_hits
         if tp.get("strand"):
-            extra_nav = (
-                nav_pills(
+            extra_nav += (
+                "\n        "
+                + nav_pills(
                     [
                         (f"/{st['subject_id']}/{st['slug']}/", st["name"], st["slug"])
                         for st in STRANDS
@@ -2548,16 +2963,10 @@ def make_topic_pages(catalog, questions, papers):
                     current=tp["strand"],
                     label="課題範疇",
                 )
-                + "\n        "
-                + extra_nav
             )
-        year_hits = nav_pills(
-            [
-                (year_path(sid, y), str(y), y)
-                for y in sorted({int(q["year"]) for q in rows}, reverse=True)
-            ],
-            label="年份",
-        )
+        topic_nav = topic_nav_html(sid, current=tp["slug"])
+        if topic_nav:
+            extra_nav += "\n        " + topic_nav
         # tag counts
         tag_counts = []
         for tag in tags:
@@ -2568,6 +2977,7 @@ def make_topic_pages(catalog, questions, papers):
             f'<a href="{esc(hub_topic_path(sid, tag))}">{esc(tag)}<span class="n">{n} 題</span></a>'
             for tag, n in tag_counts
         )
+        related_papers = related_papers_for_years(papers, sid, year_list)
         guide_html = topic_guide_html(tp.get("guide"))
         if not guide_html:
             raise SystemExit(f"missing topic guide: {sid} {tp['name']}")
@@ -2579,10 +2989,14 @@ def make_topic_pages(catalog, questions, papers):
             + tag_html
             + "\n  </nav>\n</section>",
             f'<section class="strand-index" aria-label="出現年份">\n  <h2>出現年份</h2>\n  {year_hits}\n</section>',
+        ]
+        if related_papers:
+            sections.append(related_papers)
+        sections.append(
             f'<section class="kw-section" aria-label="題目索引">\n  <h2>題目索引（{len(rows)} 題）</h2>\n  '
             + q_list_html(rows, topic=tp["name"])
-            + "\n</section>",
-        ]
+            + "\n</section>"
+        )
         crumbs = [("/hub/", "DSE Hub"), (f"/{sid}/", s["short"])]
         crumb_ld = [("/hub/", "DSE Hub"), (f"/{sid}/", s["short"])]
         if tp.get("strand"):
@@ -2621,23 +3035,12 @@ def make_topic_pages(catalog, questions, papers):
                 },
                 {
                     "@type": "FAQPage",
-                    "mainEntity": [
-                        {
-                            "@type": "Question",
-                            "name": FAQ_FREE[0],
-                            "acceptedAnswer": {"@type": "Answer", "text": FAQ_FREE[1]},
-                        },
-                        {
-                            "@type": "Question",
-                            "name": FAQ_TOPIC[0],
-                            "acceptedAnswer": {"@type": "Answer", "text": FAQ_TOPIC[1]},
-                        },
-                    ],
+                    "mainEntity": faq_ld_entities(LANDING_FAQS),
                 },
             ],
         }
         body = hero_html(crumbs, h1, tagline, catalog, sid, extra_nav=extra_nav, cta=cta)
-        body += '<main class="subj-main">\n' + "\n".join(sections) + "\n" + faq_block([FAQ_FREE, FAQ_TOPIC]) + "\n</main>"
+        body += '<main class="subj-main">\n' + "\n".join(sections) + "\n" + faq_block(LANDING_FAQS) + "\n</main>"
         write_landing(
             path,
             title,
@@ -2686,7 +3089,14 @@ def sanity_check():
         ROOT / "math/exponents-logarithms/index.html": ["指數與對數", "G-LTB27V0RGW"],
         ROOT / "chem/2024/paper-1a/index.html": ["化學 2024", "卷一甲", "G-LTB27V0RGW"],
         ROOT / "sitemap.xml": ["https://hkdse.exampaper.cloud/hub/"],
-        ROOT / "hub/index.html": ["G-LTB27V0RGW", VISUAL_TUTOR],
+        ROOT / "hub/index.html": [
+            "G-LTB27V0RGW",
+            VISUAL_TUTOR,
+            'href="/chem/2024/paper-1a/"',
+            "點樣搵某一年嘅 DSE past paper？",
+            "brand-lockup",
+        ],
+        ROOT / "math/index.html": ["免費 DSE 數學 past paper", "有冇英文卷可以操？"],
     }
     for fp, needles in samples.items():
         if not fp.is_file():
@@ -2697,12 +3107,29 @@ def sanity_check():
         for n in needles:
             if n not in text:
                 raise SystemExit(f"spot-check {fp} missing {n!r}")
+    hub = (ROOT / "hub/index.html").read_text(encoding="utf-8")
+    bad_hub = re.findall(r'href="https://hkdse\.exampaper\.cloud#[^"]+"', hub)
+    if bad_hub:
+        raise SystemExit(f"hub still has bank hash links: {bad_hub[:5]}")
     sm = (ROOT / "sitemap.xml").read_text(encoding="utf-8")
     if f"<loc>{SITE}</loc>" in sm or f"<loc>{SITE}/</loc>" in sm:
         raise SystemExit("sitemap includes domain root")
     if ".pdf" in sm.lower():
         raise SystemExit("sitemap includes pdf")
-    print("sanity check ok", "sitemap urls", len({u[0] for u in SITEMAP_URLS}))
+    # Every local landing index.html (except site root) should be in the sitemap.
+    expected = set()
+    for p in ROOT.rglob("index.html"):
+        if "mathjax" in p.as_posix():
+            continue
+        rel = p.relative_to(ROOT).as_posix()
+        if rel == "index.html":
+            continue
+        expected.add(f"{SITE}/{p.parent.relative_to(ROOT).as_posix()}/".replace("\\", "/"))
+    locs = set(re.findall(r"<loc>(.*?)</loc>", sm))
+    missing_pages = sorted(expected - locs)
+    if missing_pages:
+        raise SystemExit(f"sitemap missing pages: {missing_pages[:10]}")
+    print("sanity check ok", "sitemap urls", len(locs), "local landings", len(expected))
 
 
 def main():
@@ -2712,23 +3139,26 @@ def main():
     topics = parse_topics()
     questions = parse_questions()
     papers = collect_papers(catalog, questions)
+    analyses = load_analyses()
     print("catalog", len(catalog), "questions", len(questions), "papers", len(papers))
     make_og()
     make_htaccess()
     make_robots()
-    make_hub(catalog)
+    make_hub(catalog, papers)
     make_subject_pages(catalog, papers)
     make_strand_pages(catalog, questions, topics)
     n_year = make_year_pages(catalog, papers, questions)
-    n_paper = make_paper_pages(catalog, papers, questions)
+    n_paper = make_paper_pages(catalog, papers, questions, analyses)
+    n_question = make_question_pages(catalog, papers, questions, analyses)
     n_topic = make_topic_pages(catalog, questions, papers)
     make_sitemap()
     patch_css()
+    patch_hub_data(papers)
     patch_app()
     patch_root_index()
     patch_sw()
     sanity_check()
-    print("SEO build complete", "years", n_year, "papers", n_paper, "topics", n_topic)
+    print("SEO build complete", "years", n_year, "papers", n_paper, "questions", n_question, "topics", n_topic)
 
 
 if __name__ == "__main__":

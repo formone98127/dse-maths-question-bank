@@ -173,6 +173,71 @@ main { flex:1; min-height:0; display:flex; flex-direction:column; max-width:960p
 #qbody .mc-feedback { color:var(--ink); font-size:13.5px; font-weight:700; margin:8px 0 0; }
 #qbody .mc-feedback.ok { color:#1b7a3d; }
 #qbody .mc-feedback.bad { color:#b42318; }
+/* 深度分析面板：同 sol-panel 一套寫法，藍色 accent */
+.ai-panel { margin-top:12px; padding-top:10px; border-top:1px dashed var(--line); }
+.ai-toggle {
+  display:inline-flex; align-items:center; gap:8px;
+  padding:8px 12px; min-height:40px;
+  border:1px solid rgba(11,98,196,.28); border-radius:10px;
+  background:#eef5fc; color:var(--acc);
+  font:inherit; font-size:14px; font-weight:700;
+  cursor:pointer; touch-action:manipulation;
+}
+.ai-panel > .ai-toggle { display:flex; width:fit-content; margin-left:auto; }
+.ai-toggle:hover { filter:brightness(0.98); }
+.ai-chevron {
+  width:0; height:0;
+  border-left:5px solid transparent; border-right:5px solid transparent;
+  border-top:6px solid currentColor;
+  transition: transform .18s ease;
+}
+.ai-panel.open .ai-chevron { transform: rotate(180deg); }
+.ai-body {
+  margin-top:12px; padding:12px 14px;
+  border:1px solid rgba(11,98,196,.18); border-radius:12px;
+  background:#f7fbff; font-size:14.5px; line-height:1.7;
+}
+.ai-body[hidden] { display:none !important; }
+.ai-loading { color:var(--mut); font-size:13px; }
+.ai-chips { display:flex; flex-wrap:wrap; gap:6px; margin:0 0 10px; }
+.ai-chip {
+  padding:3px 9px; border-radius:999px; font-size:12px; font-weight:700;
+  color:var(--acc); background:#eef5fc; border:1px solid rgba(11,98,196,.22);
+}
+.ai-chip.mut { color:var(--mut); background:var(--card); border-color:var(--line); }
+.ai-hints { display:grid; gap:8px; margin:0 0 10px; }
+.ai-hint-btn {
+  text-align:left; padding:9px 12px; min-height:38px;
+  border:1px solid rgba(11,98,196,.25); border-radius:9px;
+  background:var(--card); color:var(--acc);
+  font:inherit; font-size:13.5px; font-weight:700;
+  cursor:pointer; touch-action:manipulation;
+}
+.ai-hint-btn:disabled { opacity:.4; cursor:default; }
+.ai-hint-reveal {
+  padding:9px 12px; border:1px dashed rgba(11,98,196,.35); border-radius:9px;
+  background:var(--card); font-size:14.5px;
+}
+.ai-spoiler-btn {
+  width:100%; padding:9px 12px; min-height:38px;
+  border:1px solid rgba(198,40,40,.3); border-radius:9px;
+  background:#fff5f5; color:var(--sol);
+  font:inherit; font-size:13.5px; font-weight:700;
+  cursor:pointer; touch-action:manipulation;
+}
+.ai-oa { display:grid; gap:8px; margin:10px 0; }
+.ai-oa-card { padding:9px 12px; border:1px solid var(--line); border-radius:9px; background:var(--card); }
+.ai-oa-card.correct { border-color:rgba(46,125,50,.5); background:#f2faf3; }
+.ai-oa-head { font-weight:700; font-size:13.5px; margin-bottom:3px; }
+.ai-oa-card.correct .ai-oa-head { color:#2e7d32; }
+.ai-oa-cat { color:var(--acc); font-size:12px; font-weight:700; }
+.ai-oa-tag { color:var(--sol); font-size:12px; font-weight:700; }
+.ai-oa-body { font-size:14px; }
+.ai-strategy { padding:9px 12px; border:1px solid rgba(11,98,196,.25); border-radius:9px; background:#eef5fc; font-size:14px; }
+.ai-strategy b { color:var(--acc); }
+/* 劇透後嘅 MC 正確答案標示 */
+#qbody .option.correct { border-color:rgba(46,125,50,.55); background:#f2faf3; box-shadow:0 0 0 2px rgba(46,125,50,.15); }
+#qbody .option.wrong { border-color:rgba(198,40,40,.5); background:#fff5f5; }
 mjx-container { overflow-x:auto; overflow-y:hidden; }
 #nav { display:flex; gap:6px; align-items:center; justify-content:center; flex-wrap:nowrap; padding:10px 0; }
 #nav .btn { flex:0 0 auto; padding:8px 10px; border:1px solid var(--line); border-radius:8px;
@@ -373,6 +438,153 @@ function wireSolToggle(q) {
 let subj = null, year = null, paper = null, qno = null, tag = '';
 let qlist = [];
 
+/* ===== 深度分析面板（docs/analysis/<sid>/<year>/<paper>/q<qno>.json）===== */
+const AI_SID = { '數學':'math', '經濟':'econ', '化學':'chem', '生物':'bio', '物理':'phys' };
+const AI_CAT_ZH = { 'Conceptual':'概念錯誤', 'Calculation':'計算粗心', 'Reading-Formatting':'審題不清', 'Methodological':'策略錯誤' };
+const AI_CACHE = new Map();   /* path → payload｜null（無分析） */
+let aiToken = 0;
+
+function isMcQuestion(q) {
+  if (!q || !q.text) return false;
+  const letters = new Set([...String(q.text).matchAll(/^- ([A-D])[.．、]/gm)].map(m => m[1]));
+  return letters.size === 4;
+}
+function analysisPath(q) {
+  const sid = AI_SID[q.subject] || 'math';
+  return `analysis/${sid}/${q.year}/paper-${pno(q.paper).toLowerCase()}/q${q.qno}.json`;
+}
+function aiExpandHtml(q) {
+  if (!isMcQuestion(q)) return '';
+  /* 預先驗證 fetch 未完成都唔會閃掣：fetch 成功先顯示 */
+  return `<div class="ai-panel" id="aiPanel" style="display:none">
+    <button type="button" class="ai-toggle" id="aiToggle" aria-expanded="false">
+      <span class="ai-toggle-label">深度分析</span>
+      <span class="ai-chevron" aria-hidden="true"></span>
+    </button>
+    <div class="ai-body" id="aiBody" hidden><span class="ai-loading">載入中…</span></div>
+  </div>`;
+}
+function typesetAi() {
+  const MJ = window.MathJax;
+  const el = $('#aiBody');
+  if (el && MJ?.typesetPromise) MJ.typesetPromise([el]).catch(() => {});
+}
+function revealMcAnswers(correct) {
+  const wraps = document.querySelectorAll('#qbody .options');
+  if (!wraps.length) return;
+  const wrap = wraps[0];   /* 題目本身嘅選項組（題解入面如有 MC 另計） */
+  wrap.querySelectorAll('.option').forEach(btn => {
+    const c = btn.dataset.choice;
+    if (c === correct) btn.classList.add('correct');
+    else if (btn.classList.contains('selected')) btn.classList.add('wrong');
+  });
+  const hint = wrap.querySelector('.mc-hint');
+  if (hint) hint.textContent = '已顯示正確答案（綠色）';
+}
+function renderAi(data) {
+  const body = $('#aiBody');
+  if (!body || !data) return;
+  const a = data.analysis || {};
+  const md = a.metadata || {};
+  const oa = a.options_analysis || {};
+  const chips = [];
+  if (md.primary_topic) chips.push(`<span class="ai-chip">考點：${esc(md.primary_topic)}</span>`);
+  (md.secondary_topics || []).forEach(t => chips.push(`<span class="ai-chip mut">${esc(t)}</span>`));
+  if (md.bloom_taxonomy_level) chips.push(`<span class="ai-chip mut">認知層次：${esc(md.bloom_taxonomy_level)}</span>`);
+  if (md.estimated_time_seconds) chips.push(`<span class="ai-chip mut">建議 ${esc(String(md.estimated_time_seconds))} 秒</span>`);
+  const hints = (a.scaffolding_hints || []).filter(h => typeof h === 'string' && h.trim()).slice(0, 3);
+  const hintHtml = hints.length
+    ? `<div class="ai-hints" id="aiHints">${hints.map((h, i) =>
+        `<button type="button" class="ai-hint-btn" data-i="${i}"${i ? ' disabled' : ''}>提示 ${i + 1}</button>`
+      ).join('')}</div>`
+    : '';
+  body.innerHTML =
+    (chips.length ? `<div class="ai-chips">${chips.join('')}</div>` : '') +
+    hintHtml +
+    `<button type="button" class="ai-spoiler-btn" id="aiSpoiler">顯示選項分析（含正確答案）</button>
+     <div class="ai-oa" id="aiOa" hidden></div>` +
+    (a.quick_solution_strategy ? `<div class="ai-strategy" style="margin-top:10px"><b>速解策略：</b>${esc(a.quick_solution_strategy)}</div>` : '');
+  /* 三層提示：順序解鎖 */
+  const hintBtns = [...body.querySelectorAll('.ai-hint-btn')];
+  hintBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const i = +btn.dataset.i;
+      const reveal = document.createElement('div');
+      reveal.className = 'ai-hint-reveal';
+      reveal.style.marginTop = '6px';
+      reveal.innerHTML = esc(hints[i]);
+      btn.replaceWith(reveal);
+      const next = body.querySelector(`.ai-hint-btn[data-i="${i + 1}"]`);
+      if (next) next.disabled = false;
+      typesetAi();
+    });
+  });
+  /* 誘答項分析：劇透開關，先至標正確答案 */
+  const spoiler = body.querySelector('#aiSpoiler');
+  spoiler.addEventListener('click', () => {
+    const box = body.querySelector('#aiOa');
+    const cards = [];
+    let correct = null;
+    'ABCD'.split('').forEach(L => {
+      const v = oa[L];
+      if (!v || typeof v !== 'object') return;
+      if (v.is_correct === true) correct = L;
+      const bits = [];
+      if (v.error_category) bits.push(`<span class="ai-oa-cat">${esc(AI_CAT_ZH[v.error_category] || v.error_category)}</span>`);
+      if (v.error_tag) bits.push(`<span class="ai-oa-tag">${esc(v.error_tag)}</span>`);
+      cards.push(`<div class="ai-oa-card${v.is_correct ? ' correct' : ''}">
+        <div class="ai-oa-head">${L}${v.is_correct ? '　✓ 正確答案' : ''}</div>
+        ${bits.length ? `<div>${bits.join('　')}</div>` : ''}
+        ${v.student_thought_process ? `<div class="ai-oa-body">${esc(v.student_thought_process)}</div>` : ''}
+      </div>`);
+    });
+    box.innerHTML = cards.join('');
+    box.hidden = false;
+    spoiler.remove();
+    if (correct) revealMcAnswers(correct);
+    typesetAi();
+  });
+}
+function wireAiPanel(q) {
+  const panel = $('#aiPanel');
+  if (!panel) return;
+  const path = analysisPath(q);
+  const token = ++aiToken;
+  const showPanel = (data) => {
+    if (token !== aiToken || curQ !== q) return;
+    if (!data) { panel.remove(); return; }
+    panel.style.display = '';
+    renderAi(data);
+    const toggle = $('#aiToggle');
+    const bodyEl = $('#aiBody');
+    if (toggle && bodyEl) {
+      toggle.addEventListener('click', () => {
+        const open = bodyEl.hidden;
+        bodyEl.hidden = !open;
+        panel.classList.toggle('open', open);
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        const label = toggle.querySelector('.ai-toggle-label');
+        if (label) label.textContent = open ? '收起分析' : '深度分析';
+        if (open) typesetAi();
+      });
+    }
+  };
+  let payload = AI_CACHE.get(path);
+  if (payload === undefined) {
+    /* 預先 fetch；未返到嚟之前面板維持隱形 */
+    fetch(path)
+      .then(r => (r.ok ? r.json() : null))
+      .then(j => {
+        const data = j && j.analysis ? j : null;
+        AI_CACHE.set(path, data);
+        showPanel(data);
+      })
+      .catch(() => { AI_CACHE.set(path, null); showPanel(null); });
+    return;
+  }
+  showPanel(payload);
+}
+
 const params = new URLSearchParams(location.search);
 const wantSubj = params.get('subject') || '';
 const wantTag = params.get('tag') || '';
@@ -524,12 +736,14 @@ function show(q, opts) {
   const expandSol = !!opts.expandSol && !!findSolution(q);
   $('#qbody').innerHTML =
     `<div class="qcontent">${q.html}${tagsHtml}</div>` +
-    solExpandHtml(q, expandSol);
+    solExpandHtml(q, expandSol) +
+    aiExpandHtml(q);
   const qcontent = $('#qbody .qcontent');
   if (qcontent) enhanceMc(qcontent);
   const solContent = $('#qbody .sol-content');
   if (solContent) enhanceMc(solContent);
   wireSolToggle(q);
+  wireAiPanel(q);
   $('#qbody').scrollTop = 0;
   const i = qlist.findIndex(x => x.year === q.year && x.paper === q.paper && x.qno === q.qno && x.type === q.type);
   fillPosSelect(i);

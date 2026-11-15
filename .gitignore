@@ -57,3 +57,5 @@ _work_*/
 node_modules/
 package-lock.json
 gh-pages-dist/
+analysis_config.local.json
+_tmp_2012p2/

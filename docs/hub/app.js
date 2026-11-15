@@ -187,15 +187,36 @@ function syncButtons() {
   });
 }
 
+const PAPER_CODE = {
+  "卷一": "paper-1",
+  "卷二": "paper-2",
+  "卷一甲": "paper-1a",
+  "卷一乙": "paper-1b",
+  "Paper 1": "paper-1",
+  "Paper 2": "paper-2",
+  "Paper 1A": "paper-1a",
+  "Paper 1B": "paper-1b",
+};
+
+/* Catalog lang can disagree with the real landing folder (e.g. 2012/2013 卷二). */
+const LANDING_BY_HASH = {
+  "#2012P2Q1": "/math/2012/paper-2-en/",
+  "#2013P2Q1": "/math/2013/paper-2-en/",
+};
+
 function viewHrefFor(r) {
-  return BANK_URL + r.hash;
+  if (r.path) return r.path;
+  if (LANDING_BY_HASH[r.hash]) return LANDING_BY_HASH[r.hash];
+  const code = PAPER_CODE[r.paper] || "paper-1";
+  const slug = r.lang === "英文" ? `${code}-en` : code;
+  return `/${r.id}/${r.year}/${slug}/`;
 }
 
 function rowHtml(r) {
   const sn = shortName(r.name);
   const href = viewHrefFor(r);
   return `
-    <a class="paper-row" href="${href}" target="_blank" rel="noopener" title="檢視 ${sn} ${r.year} ${r.paper}">
+    <a class="paper-row" href="${href}" title="檢視 ${sn} ${r.year} ${r.paper}">
       <span class="paper-year">${r.year}</span>
       <span class="paper-body">
         <span class="paper-tags">

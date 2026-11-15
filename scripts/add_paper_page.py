@@ -26,11 +26,13 @@ def paper_html(year: int, slug: str, cat: str, lang: str, nq: int) -> str:
     h = h.replace("數學 2023 卷二（英文）", f"數學 {year} {cat}（{lang}）")
     h = h.replace("2023 年卷二（英文）", f"{year} 年{cat}（{lang}）")
     h = h.replace("2023 卷二", f"{year} {cat}")
-    h = h.replace("#2023P2Q", f"#{year}P2Q").replace("year=2023", f"year={year}")
+    pcode = "P1" if "1" in slug else "P2"
+    h = h.replace("#2023P2Q", f"#{year}{pcode}Q").replace("year=2023", f"year={year}")
+    h = h.replace("year%3D2023", f"year%3D{year}")
     h = h.replace("卷二（英文）", f"{cat}（{lang}）")
     h = re.sub(r'class="on">2023</a>', f'class="on">{year}</a>', h)
     items = "\n".join(
-        f'    <li><a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#{year}P2Q{i}">'
+        f'    <li><a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#{year}{("P1" if "1" in slug else "P2")}Q{i}">'
         f'<span class="q-meta">數學 {year} {cat} Q{i}</span> — 第 {i} 題</a></li>' for i in range(1, nq + 1))
     h = re.sub(r'(<ul class="q-index">)(.*?)(\s*</ul>)', lambda m: m.group(1) + "\n" + items + "\n  " + m.group(3),
                h, count=1, flags=re.S)

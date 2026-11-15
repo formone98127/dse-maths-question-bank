@@ -445,7 +445,7 @@ def publish_one(q):
     if r.returncode != 0:
         print("  ✗ build_seo.py 失敗：", (r.stdout or "") + (r.stderr or ""))
         return False
-    subprocess.run(["git", "add", "-A"], cwd=ROOT, check=False)
+    subprocess.run(["git", "add", "docs"], cwd=ROOT, check=False)  # 建置產物全部喺 docs/
     if subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=ROOT, check=False).returncode == 0:
         print("  ↗ publish：冇嘢要 commit（已上線）")
         return True

@@ -553,7 +553,7 @@ def publish_one(q):
         # 若 pull --rebase 留低衝突（罕見：upstream 動咗同一批生成頁），放棄 rebase 保住本地版
         subprocess.run(["git", "rebase", "--abort"], cwd=ROOT, capture_output=True)
         subprocess.run([sys.executable, "build_seo.py"], cwd=ROOT, capture_output=True)
-        subprocess.run(["git", "add", "-A"], cwd=ROOT, check=False)
+        subprocess.run(["git", "add", "docs"], cwd=ROOT, check=False)  # 只加 docs/，唔好掃埋本地其他改動
         if subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=ROOT, check=False).returncode != 0:
             subprocess.run(["git", "commit", "-q", "-m", msg], cwd=ROOT, check=False)
     print("  ✗ push 三次失敗，內容保留喺本地，稍後手動 push")

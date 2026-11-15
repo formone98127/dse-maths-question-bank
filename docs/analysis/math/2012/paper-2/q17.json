@@ -1,0 +1,58 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2012",
+  "paper": "Paper 2",
+  "qno": "17",
+  "hash": "#2012P2Q17"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-16",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "平行四邊形面積與相似三角形",
+   "secondary_topics": [
+    "比例性質",
+    "同高三角形面積比等於底之比"
+   ],
+   "required_formulas": [
+    "\\text{Area of } \\triangle = \\frac{1}{2} \\times \\text{base} \\times \\text{height}",
+    "\\frac{\\text{Area}_1}{\\text{Area}_2} = \\left(\\frac{b_1}{b_2}\\right) \\times \\left(\\frac{h_1}{h_2}\\right)"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "誤算比例係數",
+    "student_thought_process": "學生可能正確算出 \\triangle ADG 的面積為 6，但在計算平行四邊形面積時，錯誤地將底邊比 \\frac{AB}{BE} 視為 1:1 或忽略了 \\triangle ADE 與梯形關係，直接假設平行四邊形面積為 \\triangle ADG 的 2 倍減去某部分，導致算出 12。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆底邊關係",
+    "student_thought_process": "學生可能正確算出 \\triangle ADG 面積為 6，但在求平行四邊形面積時，錯誤地認為平行四邊形的底是 \\triangle ADG 底的 3 倍（因為 DF:FC=3:4），忽略了 \\triangle ADE 的底與平行四邊形底的不同關係，導致結果偏大。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "忽略題目條件 DF:FC",
+    "student_thought_process": "學生可能完全忽略了 \\triangle DFG 與平行四邊形的高的對應關係，或者錯誤地將 \\triangle DFG 的面積直接乘以某個整數（如 7），而未考慮 \\triangle ADG 才是關鍵橋樑，導致算出 21。"
+   }
+  },
+  "scaffolding_hints": [
+   "Hint 1: 觀察 \\triangle DFG 與 \\triangle ADG，它們共用同一個頂點 G 且底邊在同一直線上，這意味著它們的高相同。",
+   "Hint 2: 利用題目給出的 DF:FC = 3:4，推導出 DF:DC 的比例，進而找到 \\triangle ADG 的底邊 DG 與平行四邊形底邊 AB(=CD) 的關係。",
+   "Hint 3: 先計算 \\triangle ADG 的面積，再利用相似性或比例關係，將 \\triangle ADG 的面積轉換為平行四邊形 \\triangle ABD 或整個平行四邊形的面積。"
+  ],
+  "quick_solution_strategy": "由 \\triangle DFG(3) 與 \\triangle ADG 同高底比 4:7 得 \\triangle ADG=6；再由 \\triangle ADG\\sim\\triangle EBG 或比例關係，發現平行四邊形面積是 \\triangle ADG 的 3 倍。"
+ }
+}

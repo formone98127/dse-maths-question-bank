@@ -74,6 +74,8 @@ jobs:
           for f in data.js hub/data.js hub/index.html hub/app.js hub/style.css index.html sw.js pwa.js; do
             [ -f "docs/$f" ] && echo "$f" >> /tmp/upload.txt
           done
+          # 所有年／卷頁一律重上：卷數與導覽改動最易被「只上傳改動檔」漏掉
+          git ls-files 'docs/math/*/index.html' 'docs/math/*/*/index.html' | sed 's#^docs/##' >> /tmp/upload.txt
           sort -u -o /tmp/upload.txt /tmp/upload.txt
           echo "upload $(wc -l < /tmp/upload.txt) file(s), delete $(wc -l < /tmp/delete.txt) file(s)"
 
@@ -158,6 +160,16 @@ jobs:
           sw = fetch("sw.js")
           m = re.search(r'dsehub-v\d+', sw)
           print("live sw cache:", m.group(0) if m else "(none)")
+          # 首頁目錄與科目頁的「卷數」曾經因為漏上傳而長期停在舊值 → 一定要核對
+          for page, pattern, label in (("hub/", r"共 (\d+) 卷", "hub 共 N 卷"),
+                                       ("math/", r'數學<span class="n">(\d+) 卷', "math 卷數")):
+              local_html = open(f"docs/{page}index.html", encoding="utf-8").read()
+              lm = re.search(pattern, local_html)
+              lv = re.search(pattern, fetch(page))
+              print(f"{label} local={lm.group(1) if lm else '?'} live={lv.group(1) if lv else '?'}")
+              if lm and lv and lm.group(1) != lv.group(1):
+                  raise SystemExit(f"STALE {page}: live {lv.group(1)} != local {lm.group(1)}")
+
           print("OK: live site matches this commit")
           PY
 

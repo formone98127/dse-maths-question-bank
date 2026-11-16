@@ -207,7 +207,9 @@ const LANDING_BY_HASH = {
 function viewHrefFor(r) {
   if (r.path) return r.path;
   if (LANDING_BY_HASH[r.hash]) return LANDING_BY_HASH[r.hash];
-  if (r.hash) return `/${r.hash}`;
+  const code = PAPER_CODE[r.paper] || "paper-1";
+  const slug = r.lang === "英文" ? `${code}-en` : code;
+  return `/${r.id}/${r.year}/${slug}/`;
 }
 
 const SUBJECT_EN = { "數學": "Maths", "經濟": "Econ", "化學": "Chem",

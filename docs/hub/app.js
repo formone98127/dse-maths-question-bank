@@ -223,7 +223,7 @@ function rowHtml(r) {
   const langLbl = en ? "English" : r.lang;
   const href = viewHrefFor(r);
   const title = en
-    ? `DSE ${sn} ${paperEn} (English)`
+    ? `DSE ${sn} · ${paperEn} (English)`
     : `文憑試 DSE ${sn} · ${r.paper}（${r.lang}）`;
   return `
     <a class="paper-row" href="${href}" title="檢視 ${sn} ${r.year} ${paperLbl}">

@@ -66,8 +66,40 @@ def main() -> None:
     merged = "\n".join(kept + lines)
     new_hub = head + "const CATALOG = [\n" + merged.lstrip("\n") + "\n" + tail
 
+    # hub/index.html 有一份靜態預渲染卡片（給 no-JS 與 SEO），數目亦要同步
+    def card(year, paper, lang, nq):
+        slug = ("paper-1" if paper == "Paper 1" else "paper-2") + ("" if lang == "中文" else "-en")
+        cat = paper_label(paper)
+        return (f'    <article class="paper-row">\n'
+                f'      <a class="paper-main" href="/math/{year}/{slug}/" title="開啟卷頁">\n'
+                f'        <div class="paper-year">{year}</div>\n'
+                f'        <div class="paper-body">\n'
+                f'          <div class="paper-tags">\n'
+                f'            <span class="tag subj">數學</span>\n'
+                f'            <span class="tag cat">{cat}</span>\n'
+                f'            <span class="tag lang">{lang}</span>\n'
+                f'          </div>\n'
+                f'          <div class="paper-title">文憑試 DSE 數學 {year} · {cat}（{lang}）</div>\n'
+                f'          <div class="paper-sub">{nq} 題索引</div>\n'
+                f'        </div>\n'
+                f'      </a>\n'
+                f'    </article>')
+
+    cards = [card(y, p, l, seen[(y, p, l)]) for (y, p, l) in sorted(seen, key=lambda k: (-k[0], k[1], k[2]))]
+    hub_page = DOCS / "hub" / "index.html"
+    if hub_page.exists():
+        h = hub_page.read_text(encoding="utf-8")
+        h2 = re.sub(r'(<section id="result" class="paper-list"[^>]*>).*?(\n\s*</section>)',
+                    lambda m: m.group(1) + "\n    <p class=\"list-count\">共 %d 卷</p>\n" % len(cards)
+                    + "\n".join(cards) + m.group(2),
+                    h, count=1, flags=re.S)
+        if h2 != h:
+            print(f"hub/index.html: {len(cards)} 卷, {len(h2) - len(h)} bytes 變化")
+
     if a.write:
         HUB.write_text(new_hub, encoding="utf-8")
+        if hub_page.exists():
+            hub_page.write_text(h2, encoding="utf-8")
         # 頁面上的「數學 N 卷」
         n = len(lines)
         touched = 0

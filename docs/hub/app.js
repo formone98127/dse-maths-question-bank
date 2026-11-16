@@ -216,7 +216,8 @@ const SUBJECT_EN = { "數學": "Mathematics", "經濟": "Economics", "化學": "
   "生物": "Biology", "物理": "Physics", "英語": "English Language" };
 function rowHtml(r) {
   const en = r.lang === "英文";
-  const paperEn = String(r.paper).replace("卷", "Paper ");
+  const paperEn = String(r.paper).replace("卷", "Paper ")
+    .replace("一", "1").replace("二", "2").replace("三", "3").replace("四", "4").replace("五", "5");
   const sn = en ? (SUBJECT_EN[shortName(r.name)] || shortName(r.name)) : shortName(r.name);
   const paperLbl = en ? paperEn : r.paper;
   const langLbl = en ? "English" : r.lang;

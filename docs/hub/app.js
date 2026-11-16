@@ -212,19 +212,28 @@ function viewHrefFor(r) {
   return `/${r.id}/${r.year}/${slug}/`;
 }
 
+const SUBJECT_EN = { "數學": "Mathematics", "經濟": "Economics", "化學": "Chemistry",
+  "生物": "Biology", "物理": "Physics", "英語": "English Language" };
 function rowHtml(r) {
-  const sn = shortName(r.name);
+  const en = r.lang === "英文";
+  const paperEn = String(r.paper).replace("卷", "Paper ");
+  const sn = en ? (SUBJECT_EN[shortName(r.name)] || shortName(r.name)) : shortName(r.name);
+  const paperLbl = en ? paperEn : r.paper;
+  const langLbl = en ? "English" : r.lang;
   const href = viewHrefFor(r);
+  const title = en
+    ? `DSE ${sn} ${paperEn} (English)`
+    : `文憑試 DSE ${sn} · ${r.paper}（${r.lang}）`;
   return `
-    <a class="paper-row" href="${href}" title="檢視 ${sn} ${r.year} ${r.paper}">
+    <a class="paper-row" href="${href}" title="檢視 ${sn} ${r.year} ${paperLbl}">
       <span class="paper-year">${r.year}</span>
       <span class="paper-body">
         <span class="paper-tags">
           <span class="tag subj">${esc(sn)}</span>
-          <span class="tag paper">${esc(r.paper)}</span>
-          <span class="tag lang">${esc(r.lang)}</span>
+          <span class="tag paper">${esc(paperLbl)}</span>
+          <span class="tag lang">${esc(langLbl)}</span>
         </span>
-        <span class="paper-title">文憑試 DSE ${sn} · ${r.paper}（${r.lang}）</span>
+        <span class="paper-title">${esc(title)}</span>
       </span>
       <span class="paper-chev" aria-hidden="true"></span>
     </a>`;

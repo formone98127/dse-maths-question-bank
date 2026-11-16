@@ -68,18 +68,23 @@ def main() -> None:
 
     # hub/index.html 有一份靜態預渲染卡片（給 no-JS 與 SEO），數目亦要同步
     def card(year, paper, lang, nq):
-        slug = ("paper-1" if paper == "Paper 1" else "paper-2") + ("" if lang == "中文" else "-en")
         cat = paper_label(paper)
+        code = "P1" if paper.endswith("1") else "P2"
+        hash = f"#{year}{code}Q1"
+        en = lang == "英文"
+        paper_en = f"Paper {1 if paper.endswith('1') else 2}"
+        subj = "Maths" if en else "數學"
+        title = f"DSE {subj} · {paper_en} (English)" if en else f"文憑試 DSE 數學 {year} · {cat}（中文）"
         return (f'    <article class="paper-row">\n'
-                f'      <a class="paper-main" href="/math/{year}/{slug}/" title="開啟卷頁">\n'
+                f'      <a class="paper-main" href="/{hash}" title="開啟題目">\n'
                 f'        <div class="paper-year">{year}</div>\n'
                 f'        <div class="paper-body">\n'
                 f'          <div class="paper-tags">\n'
-                f'            <span class="tag subj">數學</span>\n'
-                f'            <span class="tag cat">{cat}</span>\n'
-                f'            <span class="tag lang">{lang}</span>\n'
+                f'            <span class="tag subj">{subj}</span>\n'
+                f'            <span class="tag cat">{paper_en if en else cat}</span>\n'
+                f'            <span class="tag lang">{"English" if en else lang}</span>\n'
                 f'          </div>\n'
-                f'          <div class="paper-title">文憑試 DSE 數學 {year} · {cat}（{lang}）</div>\n'
+                f'          <div class="paper-title">{title}</div>\n'
                 f'          <div class="paper-sub">{nq} 題索引</div>\n'
                 f'        </div>\n'
                 f'      </a>\n'

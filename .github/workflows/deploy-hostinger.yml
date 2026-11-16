@@ -41,6 +41,12 @@ jobs:
       SITE: https://hkdse.exampaper.cloud
     steps:
       - uses: actions/checkout@v4
+      - name: Guard — links must not target auto-generated paper index pages
+        run: |
+          if grep -rEn 'href="[^"]*/(math|econ|chem|bio|phys)/[0-9]{4}/(paper-[12](-en|-zh)?)/"' docs --include='*.html' --include='*.js'; then
+            echo "::error::Links point to auto-generated paper index pages — use main-reader deep links (/\#HASH) instead"
+            exit 1
+          fi
         with:
           # Need the push's github.event.before, not just HEAD^1. A push of
           # 2+ commits with fetch-depth: 2 misses that SHA and falls back to

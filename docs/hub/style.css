@@ -420,10 +420,11 @@ body.reel-open { overflow: hidden; }
 }
 .reel-link:hover { background: rgba(255, 255, 255, 0.06); }
 .reel-link.ok { font-weight: 600; }
-.reel-search {
-  padding: 10px 16px 4px;
+.topic-search {
+  position: relative;
+  margin: 12px 0 2px;
 }
-.reel-search input {
+.topic-search input {
   width: 100%;
   box-sizing: border-box;
   font: inherit;
@@ -435,8 +436,36 @@ body.reel-open { overflow: hidden; }
   padding: 9px 12px;
   outline: none;
 }
-.reel-search input:focus { border-color: var(--acc-ink); }
-.reel-search input::placeholder { color: rgba(255, 255, 255, 0.4); }
+.topic-search input:focus { border-color: var(--acc-ink); }
+.topic-search input::placeholder { color: rgba(255, 255, 255, 0.4); }
+.topic-search-list {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  z-index: 30;
+  max-height: 260px;
+  overflow-y: auto;
+  background: var(--card);
+  border: 0.5px solid var(--hair);
+  border-radius: 12px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+  padding: 4px;
+}
+.topic-search-list .ts-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  color: var(--ink);
+}
+.topic-search-list .ts-item:hover { background: rgba(255, 255, 255, 0.07); }
+.topic-search-list .ts-item .ts-n { color: rgba(255, 255, 255, 0.45); font-size: 13px; flex: none; }
+.topic-search-list .ts-empty { padding: 9px 12px; color: rgba(255, 255, 255, 0.45); font-size: 14px; }
 .reel-window {
   position: relative;
   height: 220px;

@@ -250,6 +250,10 @@
       <button type="button" data-mode="year" class="on" role="tab" aria-selected="true">按年份</button>
       <button type="button" data-mode="topic" role="tab" aria-selected="false">按課題</button>
     </div>
+    <div class="topic-search" id="topicSearchWrap" hidden>
+      <input type="search" id="topicSearch" placeholder="搜尋課題…" autocomplete="off" enterkeyhint="search" />
+      <div class="topic-search-list" id="topicSearchList" hidden></div>
+    </div>
     <div class="bar" id="yearBar">
       <div class="field">
         <label for="bSubj">科目</label>
@@ -963,9 +967,6 @@
       <span id="reelTitle">科目</span>
       <button type="button" class="reel-link ok" id="reelDone">完成</button>
     </div>
-    <div class="reel-search" id="reelSearchWrap" hidden>
-      <input type="search" id="reelSearch" placeholder="搜尋課題…" autocomplete="off" enterkeyhint="search" />
-    </div>
     <div class="reel-window">
       <div class="reel-highlight" aria-hidden="true"></div>
       <div class="reel-wheel" id="reelWheel"></div>
@@ -975,7 +976,7 @@
 
 <script src="/data.js?v=202611161515"></script>
 <script src="/hub/data.js?v=202611161515"></script>
-<script src="/hub/app.js?v=20261116ai3"></script>
+<script src="/hub/app.js?v=20261116ai4"></script>
 <script src="/pwa.js?v=202611161515"></script>
 
 <!-- 錯誤／改善回報（Telegram bot；FB_BOT 未填時按鍵自動隱藏） -->

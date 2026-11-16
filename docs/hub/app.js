@@ -412,6 +412,10 @@ function render() {
     b.setAttribute("aria-selected", String(on));
   });
   syncButtons();
+  topicSearchWrap.hidden = state.mode !== "topic";
+  tsOptions = optionsFor("topic").slice(2); // 去走「請選擇／所有」
+  topicSearch.value = "";
+  closeTopicList();
   state.mode === "year" ? renderYear() : renderTopic();
 }
 
@@ -419,66 +423,92 @@ function render() {
 const reel = $("reel");
 const reelWheel = $("reelWheel");
 const reelTitle = $("reelTitle");
-const reelSearchWrap = $("reelSearchWrap");
-const reelSearch = $("reelSearch");
+const topicSearchWrap = $("topicSearchWrap");
+const topicSearch = $("topicSearch");
+const topicSearchList = $("topicSearchList");
 const ITEM_H = 44;
 let reelKey = null;
 let reelOpts = [];
-let reelFiltered = [];  // 搜尋過濾後嘅選項（搜尋只喺課題選擇器出現）
 let reelIndex = 0;
 let reelSnapTimer = null;
 
 let reelInvoker = null;
 
-function renderReelWheel() {
-  const idx = Math.max(0, reelFiltered.findIndex((o) => String(o.value) === String(reelOpts[reelIndex]?.value)));
-  reelWheel.innerHTML =
-    `<div class="reel-pad"></div>` +
-    reelFiltered.map((o, i) => `<div class="reel-item${i === idx ? " on" : ""}" data-i="${i}">${o.label}</div>`).join("") +
-    (reelFiltered.length ? "" : `<div class="reel-item" style="opacity:.5">無符合課題</div>`) +
-    `<div class="reel-pad"></div>`;
-  reelIndex = idx;
-  reelWheel.scrollTop = idx * ITEM_H;
-}
-
-reelSearch.addEventListener("input", () => {
-  const q = reelSearch.value.trim().toLowerCase();
-  reelFiltered = q
-    ? reelOpts.filter((o) => String(o.label).toLowerCase().includes(q))
-    : reelOpts.slice();
-  renderReelWheel();
-});
-reelSearch.addEventListener("keydown", (e) => {
-  if (e.key === "Enter") {
-    e.preventDefault();
-    commitReel();
-  }
-});
-
 function openReel(key, invoker) {
   reelKey = key;
   reelInvoker = invoker || null;
   reelOpts = optionsFor(key);
-  reelFiltered = reelOpts.slice();
   const cur = key === "topic" ? state.topic : state[key];
   let idx = reelOpts.findIndex((o) => String(o.value) === String(cur));
   if (idx < 0) idx = 0;
   reelIndex = idx;
   reelTitle.textContent = LABEL[key] || key;
 
-  // 搜尋 bar 只喺「按課題」模式揀課題時出現
-  reelSearchWrap.hidden = key !== "topic";
-  reelSearch.value = "";
-
-  renderReelWheel();
+  reelWheel.innerHTML =
+    `<div class="reel-pad"></div>` +
+    reelOpts.map((o, i) => `<div class="reel-item${i === idx ? " on" : ""}" data-i="${i}">${o.label}</div>`).join("") +
+    `<div class="reel-pad"></div>`;
 
   reel.hidden = false;
   document.body.classList.add("reel-open");
   requestAnimationFrame(() => {
+    reelWheel.scrollTop = idx * ITEM_H;
     highlightReel();
     $("reelDone").focus();
   });
 }
+
+/* ---------- 常駐課題搜尋 bar（只喺「按課題」模式顯示） ---------- */
+let tsOptions = [];
+
+function closeTopicList() {
+  topicSearchList.hidden = true;
+  topicSearchList.innerHTML = "";
+}
+
+function renderTopicList(q) {
+  const sid = state.subject === PLACE || state.subject === ALL ? null : state.subject;
+  if (!sid) {
+    topicSearchList.innerHTML = `<div class="ts-empty">請先揀選科目</div>`;
+    topicSearchList.hidden = false;
+    return;
+  }
+  const hits = q
+    ? tsOptions.filter((o) => String(o.label).toLowerCase().includes(q))
+    : tsOptions.slice();
+  if (!hits.length) {
+    topicSearchList.innerHTML = `<div class="ts-empty">無符合課題</div>`;
+    topicSearchList.hidden = false;
+    return;
+  }
+  topicSearchList.innerHTML = hits.slice(0, 30).map((o) => {
+    const g = o.group && o.group !== "其他" ? `<span class="ts-n">${o.group}</span>` : "";
+    return `<div class="ts-item" data-v="${o.value}"><span>${o.label}</span>${g}</div>`;
+  }).join("");
+  topicSearchList.hidden = false;
+}
+
+topicSearch.addEventListener("input", () => {
+  const q = topicSearch.value.trim().toLowerCase();
+  q ? renderTopicList(q) : closeTopicList();
+});
+topicSearch.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    e.preventDefault();
+    const first = topicSearchList.querySelector(".ts-item");
+    if (first) first.click();
+  }
+});
+topicSearchList.addEventListener("click", (e) => {
+  const item = e.target.closest(".ts-item");
+  if (!item) return;
+  state.topic = item.dataset.v;
+  closeTopicList();
+  render();
+});
+document.addEventListener("click", (e) => {
+  if (!topicSearchWrap.contains(e.target)) closeTopicList();
+});
 
 function closeReel() {
   reel.hidden = true;
@@ -492,13 +522,13 @@ function closeReel() {
 
 function highlightReel() {
   const i = Math.round(reelWheel.scrollTop / ITEM_H);
-  reelIndex = Math.max(0, Math.min(reelFiltered.length - 1, i));
+  reelIndex = Math.max(0, Math.min(reelOpts.length - 1, i));
   reelWheel.querySelectorAll(".reel-item").forEach((el, n) => el.classList.toggle("on", n === reelIndex));
 }
 
 function commitReel() {
   if (reelKey == null) return;
-  const opt = reelFiltered[reelIndex];
+  const opt = reelOpts[reelIndex];
   if (!opt) return closeReel();
   const v = opt.value;
 

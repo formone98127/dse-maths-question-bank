@@ -4,12 +4,8 @@ name: Deploy docs to Cloudflare Pages
 # 需要 repo secret：CLOUDFLARE_API_TOKEN（Pages:Edit）、CLOUDFLARE_ACCOUNT_ID。
 # 手動全量重發：Actions → Deploy docs to Cloudflare Pages → Run workflow。
 
+# 現時繼續用 Hostinger 部署（Kin 2026-11-16）；Cloudflare Pages 只可手動執行。
 on:
-  push:
-    branches: [main]
-    paths:
-      - "docs/**"
-      - ".github/workflows/deploy-cloudflare.yml"
   workflow_dispatch:
 
 concurrency:

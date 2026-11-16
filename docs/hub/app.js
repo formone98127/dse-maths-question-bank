@@ -212,8 +212,8 @@ function viewHrefFor(r) {
   return `/${r.id}/${r.year}/${slug}/`;
 }
 
-const SUBJECT_EN = { "數學": "Mathematics", "經濟": "Economics", "化學": "Chemistry",
-  "生物": "Biology", "物理": "Physics", "英語": "English Language" };
+const SUBJECT_EN = { "數學": "Maths", "經濟": "Econ", "化學": "Chem",
+  "生物": "Bio", "物理": "Phys", "英語": "Eng" };
 function rowHtml(r) {
   const en = r.lang === "英文";
   const paperEn = String(r.paper).replace("卷", "Paper ")

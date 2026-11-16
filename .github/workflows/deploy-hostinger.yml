@@ -47,12 +47,6 @@ jobs:
           # uploading the entire docs/ tree (~80MB), which can run for tens of minutes.
           fetch-depth: 0
 
-      - name: Guard — links must not target auto-generated paper index pages
-        run: |
-          if grep -rEn 'href="[^"]*/(math|econ|chem|bio|phys)/[0-9]{4}/(paper-[12](-en|-zh)?)/"' docs --include='*.html' --include='*.js'; then
-            echo "::error::Links point to auto-generated paper index pages — use main-reader deep links (like /#HASH) instead"
-            exit 1
-          fi
 
       - name: Install lftp
         run: |

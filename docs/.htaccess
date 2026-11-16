@@ -8,6 +8,9 @@ Options -Indexes
   RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
   RewriteCond %{HTTP_HOST} ^www\.hkdse\.exampaper\.cloud$ [NC]
   RewriteRule ^ https://hkdse.exampaper.cloud%{REQUEST_URI} [L,R=301]
+
+  # 索引頁 → 主 reader 深連結：用戶直入第 1 題，SEO 權重經 301 轉移
+  RewriteRule ^math/([0-9]{4})/paper-([12])(-en|-zh)?/?$ https://hkdse.exampaper.cloud/#$1P$2Q1 [R=301,L,NE]
 </IfModule>
 
 <IfModule mod_headers.c>

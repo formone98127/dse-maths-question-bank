@@ -413,7 +413,7 @@ function render() {
   });
   syncButtons();
   topicSearchWrap.hidden = state.mode !== "topic";
-  tsOptions = optionsFor("topic").slice(2); // 去走「請選擇／所有」
+  tsOptions = subjectSelected() ? optionsFor("topic").slice(2) : allSubjectTagOptions();
   topicSearch.value = "";
   closeTopicList();
   state.mode === "year" ? renderYear() : renderTopic();
@@ -461,18 +461,40 @@ function openReel(key, invoker) {
 /* ---------- 常駐課題搜尋 bar（只喺「按課題」模式顯示） ---------- */
 let tsOptions = [];
 
+function subjectSelected() {
+  return state.subject !== PLACE && state.subject !== ALL ? state.subject : null;
+}
+
+// 未揀科目時：跨科彙總題庫所有課題（同名合併題數）
+function allSubjectTagOptions() {
+  const acc = new Map();
+  subjectsInDb().forEach((s) => {
+    realTagsFor(s.id).forEach(({ tag, n }) => {
+      const cur = acc.get(tag);
+      if (cur) {
+        cur.n += n;
+        if (!cur.sids.includes(s.id)) cur.sids.push(s.id);
+      } else {
+        acc.set(tag, { value: tag, n, sids: [s.id] });
+      }
+    });
+  });
+  return [...acc.values()]
+    .sort((a, b) => b.n - a.n || a.value.localeCompare(b.value, "zh-Hant"))
+    .map((o) => ({
+      value: o.value,
+      label: `${o.value}（${o.n}）`,
+      group: o.sids.length > 1 ? `${o.sids.length} 科` : "",
+      sid: o.sids[0],
+    }));
+}
+
 function closeTopicList() {
   topicSearchList.hidden = true;
   topicSearchList.innerHTML = "";
 }
 
 function renderTopicList(q) {
-  const sid = state.subject === PLACE || state.subject === ALL ? null : state.subject;
-  if (!sid) {
-    topicSearchList.innerHTML = `<div class="ts-empty">請先揀選科目</div>`;
-    topicSearchList.hidden = false;
-    return;
-  }
   const hits = q
     ? tsOptions.filter((o) => String(o.label).toLowerCase().includes(q))
     : tsOptions.slice();
@@ -483,7 +505,8 @@ function renderTopicList(q) {
   }
   topicSearchList.innerHTML = hits.slice(0, 30).map((o) => {
     const g = o.group && o.group !== "其他" ? `<span class="ts-n">${o.group}</span>` : "";
-    return `<div class="ts-item" data-v="${o.value}"><span>${o.label}</span>${g}</div>`;
+    const s = o.sid && !subjectSelected() ? ` data-s="${o.sid}"` : "";
+    return `<div class="ts-item" data-v="${o.value}"${s}><span>${o.label}</span>${g}</div>`;
   }).join("");
   topicSearchList.hidden = false;
 }
@@ -502,6 +525,7 @@ topicSearch.addEventListener("keydown", (e) => {
 topicSearchList.addEventListener("click", (e) => {
   const item = e.target.closest(".ts-item");
   if (!item) return;
+  if (item.dataset.s && !subjectSelected()) state.subject = item.dataset.s;
   state.topic = item.dataset.v;
   closeTopicList();
   render();

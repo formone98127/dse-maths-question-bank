@@ -60,3 +60,4 @@ gh-pages-dist/
 analysis_config.local.json
 _tmp_2012p2/
 _tmp_merge/
+.sync_push.log

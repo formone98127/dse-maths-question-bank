@@ -16,7 +16,9 @@ window.QB = {
    ],
    "text": "$\\dfrac{(27x)^5}{(3x^{-2})^4} =$\n\n- A. $3^2x^3$\n- B. $3^4x^3$\n- C. $3^{11}x^{13}$\n- D. $3^{14}x^{13}$",
    "html": "<p>$\\dfrac{(27x)^5}{(3x^{-2})^4} =$</p>\n<ul>\n<li>A. $3^2x^3$</li>\n<li>B. $3^4x^3$</li>\n<li>C. $3^{11}x^{13}$</li>\n<li>D. $3^{14}x^{13}$</li>\n</ul>",
-   "file": "2025_P2_題目英文卷.md"
+   "file": "2025_P2_題目英文卷.md",
+   "answer": "C",
+   "answer_pct": 88
   },
   {
    "subject": "數學",
@@ -32,7 +34,9 @@ window.QB = {
    ],
    "text": "$36-(3m+4n)^2 =$\n\n- A. $(6+3m+4n)(6-3m+4n)$\n- B. $(6+3m+4n)(6-3m-4n)$\n- C. $(6+3m-4n)(6-3m+4n)$\n- D. $(6+3m-4n)(6-3m-4n)$",
    "html": "<p>$36-(3m+4n)^2 =$</p>\n<ul>\n<li>A. $(6+3m+4n)(6-3m+4n)$</li>\n<li>B. $(6+3m+4n)(6-3m-4n)$</li>\n<li>C. $(6+3m-4n)(6-3m+4n)$</li>\n<li>D. $(6+3m-4n)(6-3m-4n)$</li>\n</ul>",
-   "file": "2025_P2_題目英文卷.md"
+   "file": "2025_P2_題目英文卷.md",
+   "answer": "B",
+   "answer_pct": 78
   },
   {
    "subject": "數學",
@@ -47,7 +51,9 @@ window.QB = {
    ],
    "text": "If $a$ and $b$ are constants such that $(x+8)(x+a)+b \\equiv x^2+5a(x+3)$, then $b=$\n\n- A. $-14$\n- B. $-2$\n- C. $2$\n- D. $14$",
    "html": "<p>If $a$ and $b$ are constants such that $(x+8)(x+a)+b \\equiv x^2+5a(x+3)$, then $b=$</p>\n<ul>\n<li>A. $-14$</li>\n<li>B. $-2$</li>\n<li>C. $2$</li>\n<li>D. $14$</li>\n</ul>",
-   "file": "2025_P2_題目英文卷.md"
+   "file": "2025_P2_題目英文卷.md",
+   "answer": "D",
+   "answer_pct": 79
   },
   {
    "subject": "數學",
@@ -62,7 +68,9 @@ window.QB = {
    ],
    "text": "If $(3c+1)(d-4)=2d(5c-1)$, then $c=$\n\n- A. $\\dfrac{3d-4}{7d+12}$\n- B. $\\dfrac{3d+4}{7d-12}$\n- C. $\\dfrac{7d-12}{3d+4}$\n- D. $\\dfrac{7d+12}{3d-4}$",
    "html": "<p>If $(3c+1)(d-4)=2d(5c-1)$, then $c=$</p>\n<ul>\n<li>A. $\\dfrac{3d-4}{7d+12}$</li>\n<li>B. $\\dfrac{3d+4}{7d-12}$</li>\n<li>C. $\\dfrac{7d-12}{3d+4}$</li>\n<li>D. $\\dfrac{7d+12}{3d-4}$</li>\n</ul>",
-   "file": "2025_P2_題目英文卷.md"
+   "file": "2025_P2_題目英文卷.md",
+   "answer": "A",
+   "answer_pct": 80
   },
   {
    "subject": "數學",
@@ -79,7 +87,9 @@ window.QB = {
    ],
    "text": "Let $k$ be a constant. Solve the equation $x^2+4x=k^2-2k-3$.\n\n- A. $x=k-3$ or $x=-k-1$\n- B. $x=k-3$ or $x=-k+1$\n- C. $x=k+3$ or $x=-k-1$\n- D. $x=k+3$ or $x=-k+1$",
    "html": "<p>Let $k$ be a constant. Solve the equation $x^2+4x=k^2-2k-3$.</p>\n<ul>\n<li>A. $x=k-3$ or $x=-k-1$</li>\n<li>B. $x=k-3$ or $x=-k+1$</li>\n<li>C. $x=k+3$ or $x=-k-1$</li>\n<li>D. $x=k+3$ or $x=-k+1$</li>\n</ul>",
-   "file": "2025_P2_題目英文卷.md"
+   "file": "2025_P2_題目英文卷.md",
+   "answer": "A",
+   "answer_pct": 59
   },
   {
    "subject": "數學",
@@ -94,7 +104,9 @@ window.QB = {
    ],
    "text": "If $x=5.67$ (correct to 2 decimal places), find the range of values of $x$.\n\n- A. $5.66<x\\leq5.68$\n- B. $5.66\\leq x<5.68$\n- C. $5.665<x\\leq5.675$\n- D. $5.665\\leq x<5.675$",
    "html": "<p>If $x=5.67$ (correct to 2 decimal places), find the range of values of $x$.</p>\n<ul>\n<li>A. $5.66&lt;x\\leq5.68$</li>\n<li>B. $5.66\\leq x&lt;5.68$</li>\n<li>C. $5.665&lt;x\\leq5.675$</li>\n<li>D. $5.665\\leq x&lt;5.675$</li>\n</ul>",
-   "file": "2025_P2_題目英文卷.md"
+   "file": "2025_P2_題目英文卷.md",
+   "answer": "D",
+   "answer_pct": 81
   },
   {
    "subject": "數學",
@@ -109,7 +121,9 @@ window.QB = {
    ],
    "text": "The solution of $4y+1<5y-3\\leq8y-9$ is\n\n- A. $y>-4$\n- B. $y\\geq-2$\n- C. $y\\geq2$\n- D. $y>4$",
    "html": "<p>The solution of $4y+1&lt;5y-3\\leq8y-9$ is</p>\n<ul>\n<li>A. $y&gt;-4$</li>\n<li>B. $y\\geq-2$</li>\n<li>C. $y\\geq2$</li>\n<li>D. $y&gt;4$</li>\n</ul>",
-   "file": "2025_P2_題目英文卷.md"
+   "file": "2025_P2_題目英文卷.md",
+   "answer": "D",
+   "answer_pct": 66
   },
   {
    "subject": "數學",
@@ -124,7 +138,9 @@ window.QB = {
    ],
    "text": "Let $ f(x) = x^2 + 7x + k $, where $ k $ is a constant. If $ f(4) + f(-4) = 38 $, find $ k $.\n\n- A. $-6$\n- B. $-3$\n- C. $3$\n- D. $6$",
    "html": "<p>Let $ f(x) = x^2 + 7x + k $, where $ k $ is a constant. If $ f(4) + f(-4) = 38 $, find $ k $.</p>\n<ul>\n<li>A. $-6$</li>\n<li>B. $-3$</li>\n<li>C. $3$</li>\n<li>D. $6$</li>\n</ul>",
-   "file": "2025_P2_題目英文卷.md"
+   "file": "2025_P2_題目英文卷.md",
+   "answer": "C",
+   "answer_pct": 85
   },
   {
    "subject": "數學",
@@ -140,7 +156,9 @@ window.QB = {
    ],
    "text": "Let $ p(x) = nx^3 - 3nx + 36 $, where $ n $ is a constant. If $ x + 3 $ is a factor of $ p(x) $, then $ p(3) = $\n\n- A. $-2$\n- B. $0$\n- C. $2$\n- D. $72$",
    "html": "<p>Let $ p(x) = nx^3 - 3nx + 36 $, where $ n $ is a constant. If $ x + 3 $ is a factor of $ p(x) $, then $ p(3) = $</p>\n<ul>\n<li>A. $-2$</li>\n<li>B. $0$</li>\n<li>C. $2$</li>\n<li>D. $72$</li>\n</ul>",
-   "file": "2025_P2_題目英文卷.md"
+   "file": "2025_P2_題目英文卷.md",
+   "answer": "D",
+   "answer_pct": 74
   },
   {
    "subject": "數學",
@@ -155,7 +173,9 @@ window.QB = {
    ],
    "text": "A sum of \\$40 000 is deposited at an interest rate of $3\\%$ per annum for $5$ years, compounded half-yearly. Find the amount correct to the nearest dollar.\n\n- A. $\\$46 000$\n- B. $\\$46 371$\n- C. $\\$46 422$\n- D. $\\$46 465$",
    "html": "<p>A sum of \\$40 000 is deposited at an interest rate of $3\\%$ per annum for $5$ years, compounded half-yearly. Find the amount correct to the nearest dollar.</p>\n<ul>\n<li>A. $\\$46 000$</li>\n<li>B. $\\$46 371$</li>\n<li>C. $\\$46 422$</li>\n<li>D. $\\$46 465$</li>\n</ul>",
-   "file": "2025_P2_題目英文卷.md"
+   "file": "2025_P2_題目英文卷.md",
+   "answer": "C",
+   "answer_pct": 78
   },
   {
    "subject": "數學",
@@ -170,7 +190,9 @@ window.QB = {
    ],
    "text": "If $ \\alpha $, $ \\beta $ and $ \\gamma $ are non-zero constants such that $ (\\alpha + 2\\beta) : (\\beta + 2\\gamma) : (\\gamma + 2\\alpha) = 4 : 9 : 5 $, then $ \\alpha : \\beta = $\n\n- A. $2 : 5$\n- B. $5 : 2$\n- C. $128 : 149$\n- D. $149 : 128$",
    "html": "<p>If $ \\alpha $, $ \\beta $ and $ \\gamma $ are non-zero constants such that $ (\\alpha + 2\\beta) : (\\beta + 2\\gamma) : (\\gamma + 2\\alpha) = 4 : 9 : 5 $, then $ \\alpha : \\beta = $</p>\n<ul>\n<li>A. $2 : 5$</li>\n<li>B. $5 : 2$</li>\n<li>C. $128 : 149$</li>\n<li>D. $149 : 128$</li>\n</ul>",
-   "file": "2025_P2_題目英文卷.md"
+   "file": "2025_P2_題目英文卷.md",
+   "answer": "A",
+   "answer_pct": 52
   },
   {
    "subject": "數學",
@@ -185,7 +207,9 @@ window.QB = {
    ],
    "text": "It is given that $ z $ varies directly as the cube of $ x $ and inversely as the square of $ y $. When $ x=3 $ and $ y=6 $, $ z=3 $. When $ x=5 $ and $ y=2 $, $ z=$\n\n- A. 5.\n- B. 25.\n- C. 125.\n- D. 243.",
    "html": "<p>It is given that $ z $ varies directly as the cube of $ x $ and inversely as the square of $ y $. When $ x=3 $ and $ y=6 $, $ z=3 $. When $ x=5 $ and $ y=2 $, $ z=$</p>\n<ul>\n<li>A. 5.</li>\n<li>B. 25.</li>\n<li>C. 125.</li>\n<li>D. 243.</li>\n</ul>",
-   "file": "2025_P2_題目英文卷.md"
+   "file": "2025_P2_題目英文卷.md",
+   "answer": "C",
+   "answer_pct": 80
   },
   {
    "subject": "數學",
@@ -200,7 +224,9 @@ window.QB = {
    ],
    "text": "Let $ a_n $ be the $ n $th term of a sequence. If $ a_2=3 $, $ a_5=41 $ and $ a_{n+2}=2a_{n+1}+a_n $ for any positive integer $ n $, then $ a_6=$\n\n- A. 99.\n- B. 101.\n- C. 239.\n- D. 243.",
    "html": "<p>Let $ a_n $ be the $ n $th term of a sequence. If $ a_2=3 $, $ a_5=41 $ and $ a_{n+2}=2a_{n+1}+a_n $ for any positive integer $ n $, then $ a_6=$</p>\n<ul>\n<li>A. 99.</li>\n<li>B. 101.</li>\n<li>C. 239.</li>\n<li>D. 243.</li>\n</ul>",
-   "file": "2025_P2_題目英文卷.md"
+   "file": "2025_P2_題目英文卷.md",
+   "answer": "A",
+   "answer_pct": 80
   },
   {
    "subject": "數學",
@@ -216,7 +242,9 @@ window.QB = {
    ],
    "text": "In the figure, the equation of the straight line $ L $ is $ px+qy=7 $. Which of the following is/are true?\nI. $ p>7 $\nII. $ q>7 $\nIII. $ q>p $\n\n![Figure Q14 (as printed)](2025P2_figs/Q14.png)\n\n- A. I only\n- B. II only\n- C. I and III only\n- D. II and III only",
    "html": "<p>In the figure, the equation of the straight line $ L $ is $ px+qy=7 $. Which of the following is/are true?\nI. $ p&gt;7 $\nII. $ q&gt;7 $\nIII. $ q&gt;p $</p>\n<p><img alt=\"Figure Q14 (as printed)\" src=\"2025P2_figs/Q14.png\" /></p>\n<ul>\n<li>A. I only</li>\n<li>B. II only</li>\n<li>C. I and III only</li>\n<li>D. II and III only</li>\n</ul>",
-   "file": "2025_P2_題目英文卷.md"
+   "file": "2025_P2_題目英文卷.md",
+   "answer": "A",
+   "answer_pct": 53
   },
   {
    "subject": "數學",
@@ -232,7 +260,9 @@ window.QB = {
    ],
    "text": "The perimeter of the sector $OMN$ is $12\\pi$ cm, where $O$ is the centre of the sector $OMN$. If the radius of the sector $OMN$ is $3\\pi$ cm, which of the following are true?\nI. The area of the sector $OMN$ is $9\\pi^2$ cm$^2$.\nII. The perimeter of $\\triangle OMN$ is less than $35$ cm.\nIII. The angle of the sector $OMN$ is greater than $100^\\circ$.\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
    "html": "<p>The perimeter of the sector $OMN$ is $12\\pi$ cm, where $O$ is the centre of the sector $OMN$. If the radius of the sector $OMN$ is $3\\pi$ cm, which of the following are true?\nI. The area of the sector $OMN$ is $9\\pi^2$ cm$^2$.\nII. The perimeter of $\\triangle OMN$ is less than $35$ cm.\nIII. The angle of the sector $OMN$ is greater than $100^\\circ$.</p>\n<ul>\n<li>A. I and II only</li>\n<li>B. I and III only</li>\n<li>C. II and III only</li>\n<li>D. I, II and III</li>\n</ul>",
-   "file": "2025_P2_題目英文卷.md"
+   "file": "2025_P2_題目英文卷.md",
+   "answer": "D",
+   "answer_pct": 25
   },
   {
    "subject": "數學",
@@ -247,7 +277,9 @@ window.QB = {
    ],
    "text": "The height and the total surface area of a solid right circular cylinder are $35$ cm and $492\\pi$ cm$^2$ respectively. If the radius of a solid sphere is equal to the base radius of the circular cylinder, then the volume of the sphere is\n\n- A. $144\\pi$ cm$^3$\n- B. $288\\pi$ cm$^3$\n- C. $576\\pi$ cm$^3$\n- D. $864\\pi$ cm$^3$",
    "html": "<p>The height and the total surface area of a solid right circular cylinder are $35$ cm and $492\\pi$ cm$^2$ respectively. If the radius of a solid sphere is equal to the base radius of the circular cylinder, then the volume of the sphere is</p>\n<ul>\n<li>A. $144\\pi$ cm$^3$</li>\n<li>B. $288\\pi$ cm$^3$</li>\n<li>C. $576\\pi$ cm$^3$</li>\n<li>D. $864\\pi$ cm$^3$</li>\n</ul>",
-   "file": "2025_P2_題目英文卷.md"
+   "file": "2025_P2_題目英文卷.md",
+   "answer": "B",
+   "answer_pct": 66
   },
   {
    "subject": "數學",
@@ -264,7 +296,9 @@ window.QB = {
    ],
    "text": "In the figure, $ABCD$ is a parallelogram. Let $E$, $F$ and $G$ be points lying on $AB$, $AD$ and $CD$ respectively such that $BE = 3AE$, $2DF = 3AF$ and $DG = 2CG$. It is given that $BC$ produced and $EG$ produced meet at the point $H$. If the area of $\\triangle CGH$ is $16$ cm$^2$, then the area of the quadrilateral $DFEG$ is\n\n![Figure Q17 (as printed)](2025P2_figs/Q17.png)\n\n- A. $46$ cm$^2$\n- B. $49$ cm$^2$\n- C. $105$ cm$^2$\n- D. $115$ cm$^2$",
    "html": "<p>In the figure, $ABCD$ is a parallelogram. Let $E$, $F$ and $G$ be points lying on $AB$, $AD$ and $CD$ respectively such that $BE = 3AE$, $2DF = 3AF$ and $DG = 2CG$. It is given that $BC$ produced and $EG$ produced meet at the point $H$. If the area of $\\triangle CGH$ is $16$ cm$^2$, then the area of the quadrilateral $DFEG$ is</p>\n<p><img alt=\"Figure Q17 (as printed)\" src=\"2025P2_figs/Q17.png\" /></p>\n<ul>\n<li>A. $46$ cm$^2$</li>\n<li>B. $49$ cm$^2$</li>\n<li>C. $105$ cm$^2$</li>\n<li>D. $115$ cm$^2$</li>\n</ul>",
-   "file": "2025_P2_題目英文卷.md"
+   "file": "2025_P2_題目英文卷.md",
+   "answer": "B",
+   "answer_pct": 40
   },
   {
    "subject": "數學",
@@ -280,7 +314,9 @@ window.QB = {
    ],
    "text": "The figure shows the triangle $ WXY $. Let $ Z $ be a point lying on $ WY $ such that $ WY : XY = XY : YZ $. If $ WX = 65 \\, \\text{cm} $, $ WZ = 25 \\, \\text{cm} $ and $ XZ = 60 \\, \\text{cm} $, then $ XY = $\n\n![Figure Q18 (as printed)](2025P2_figs/Q18.png)\n\n- A. $ 131 \\, \\text{cm} $.\n- B. $ 144 \\, \\text{cm} $.\n- C. $ 156 \\, \\text{cm} $.\n- D. $ 169 \\, \\text{cm} $.",
    "html": "<p>The figure shows the triangle $ WXY $. Let $ Z $ be a point lying on $ WY $ such that $ WY : XY = XY : YZ $. If $ WX = 65 \\, \\text{cm} $, $ WZ = 25 \\, \\text{cm} $ and $ XZ = 60 \\, \\text{cm} $, then $ XY = $</p>\n<p><img alt=\"Figure Q18 (as printed)\" src=\"2025P2_figs/Q18.png\" /></p>\n<ul>\n<li>A. $ 131 \\, \\text{cm} $.</li>\n<li>B. $ 144 \\, \\text{cm} $.</li>\n<li>C. $ 156 \\, \\text{cm} $.</li>\n<li>D. $ 169 \\, \\text{cm} $.</li>\n</ul>",
-   "file": "2025_P2_題目英文卷.md"
+   "file": "2025_P2_題目英文卷.md",
+   "answer": "C",
+   "answer_pct": 44
   },
   {
    "subject": "數學",
@@ -296,7 +332,9 @@ window.QB = {
    ],
    "text": "In the figure, $ ABCD $ is a square. Let $ E $ be a point such that $ CDEF $ is a rhombus, where $ F $ is a point lying on $ AC $ produced. $ DF $ is produced to the point $ G $ such that $ AF \\parallel BG $. Which of the following are true?\nI. $ DF = FG $\nII. $ \\triangle BFG \\sim \\triangle DEF $\nIII. $ \\angle ABG + \\angle BFD = 180^\\circ $\n\n![Figure Q19 (as printed)](2025P2_figs/Q19.png)\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
    "html": "<p>In the figure, $ ABCD $ is a square. Let $ E $ be a point such that $ CDEF $ is a rhombus, where $ F $ is a point lying on $ AC $ produced. $ DF $ is produced to the point $ G $ such that $ AF \\parallel BG $. Which of the following are true?\nI. $ DF = FG $\nII. $ \\triangle BFG \\sim \\triangle DEF $\nIII. $ \\angle ABG + \\angle BFD = 180^\\circ $</p>\n<p><img alt=\"Figure Q19 (as printed)\" src=\"2025P2_figs/Q19.png\" /></p>\n<ul>\n<li>A. I and II only</li>\n<li>B. I and III only</li>\n<li>C. II and III only</li>\n<li>D. I, II and III</li>\n</ul>",
-   "file": "2025_P2_題目英文卷.md"
+   "file": "2025_P2_題目英文卷.md",
+   "answer": "D",
+   "answer_pct": 28
   },
   {
    "subject": "數學",
@@ -312,7 +350,9 @@ window.QB = {
    ],
    "text": "It is given that $ PQRS $ is a trapezium with $ PQ \\parallel SR $. If $ PS = 41 \\, \\text{cm} $, $ RS = 53 \\, \\text{cm} $, $ \\angle PSR = 120^\\circ $ and $ \\angle QRS = 150^\\circ $, then $ PQ = $\n\n- A. $ 82 \\, \\text{cm} $.\n- B. $ 100 \\, \\text{cm} $.\n- C. $ 106 \\, \\text{cm} $.\n- D. $ 135 \\, \\text{cm} $.",
    "html": "<p>It is given that $ PQRS $ is a trapezium with $ PQ \\parallel SR $. If $ PS = 41 \\, \\text{cm} $, $ RS = 53 \\, \\text{cm} $, $ \\angle PSR = 120^\\circ $ and $ \\angle QRS = 150^\\circ $, then $ PQ = $</p>\n<ul>\n<li>A. $ 82 \\, \\text{cm} $.</li>\n<li>B. $ 100 \\, \\text{cm} $.</li>\n<li>C. $ 106 \\, \\text{cm} $.</li>\n<li>D. $ 135 \\, \\text{cm} $.</li>\n</ul>",
-   "file": "2025_P2_題目英文卷.md"
+   "file": "2025_P2_題目英文卷.md",
+   "answer": "D",
+   "answer_pct": 39
   },
   {
    "subject": "數學",
@@ -329,7 +369,9 @@ window.QB = {
    ],
    "text": "In the figure, $ABCD$ is a rectangle. It is given that $AE = 20 \\text{ cm}$ and $\\angle AED = 90^\\circ$. If the area of $\\triangle ADE$ is $150 \\text{ cm}^2$, then the perpendicular distance from $E$ to $CD$ is\n\n![Figure Q21 (as printed)](2025P2_figs/Q21.png)\n\n- A. $8 \\text{ cm}$.\n- B. $9 \\text{ cm}$.\n- C. $12 \\text{ cm}$.\n- D. $15 \\text{ cm}$.",
    "html": "<p>In the figure, $ABCD$ is a rectangle. It is given that $AE = 20 \\text{ cm}$ and $\\angle AED = 90^\\circ$. If the area of $\\triangle ADE$ is $150 \\text{ cm}^2$, then the perpendicular distance from $E$ to $CD$ is</p>\n<p><img alt=\"Figure Q21 (as printed)\" src=\"2025P2_figs/Q21.png\" /></p>\n<ul>\n<li>A. $8 \\text{ cm}$.</li>\n<li>B. $9 \\text{ cm}$.</li>\n<li>C. $12 \\text{ cm}$.</li>\n<li>D. $15 \\text{ cm}$.</li>\n</ul>",
-   "file": "2025_P2_題目英文卷.md"
+   "file": "2025_P2_題目英文卷.md",
+   "answer": "B",
+   "answer_pct": 58
   },
   {
    "subject": "數學",
@@ -346,7 +388,9 @@ window.QB = {
    ],
    "text": "In the figure, $RSTUV$ is a circle. It is given that $RT \\parallel VU$ and $RT$ is the angle bisector of $\\angle SRU$. If $\\angle RTS = \\angle URV = 33^\\circ$, then $\\angle RUT =$\n\n![Figure Q22 (as printed)](2025P2_figs/Q22.png)\n\n- A. $36^\\circ$.\n- B. $49^\\circ$.\n- C. $65^\\circ$.\n- D. $71^\\circ$.",
    "html": "<p>In the figure, $RSTUV$ is a circle. It is given that $RT \\parallel VU$ and $RT$ is the angle bisector of $\\angle SRU$. If $\\angle RTS = \\angle URV = 33^\\circ$, then $\\angle RUT =$</p>\n<p><img alt=\"Figure Q22 (as printed)\" src=\"2025P2_figs/Q22.png\" /></p>\n<ul>\n<li>A. $36^\\circ$.</li>\n<li>B. $49^\\circ$.</li>\n<li>C. $65^\\circ$.</li>\n<li>D. $71^\\circ$.</li>\n</ul>",
-   "file": "2025_P2_題目英文卷.md"
+   "file": "2025_P2_題目英文卷.md",
+   "answer": "D",
+   "answer_pct": 41
   },
   {
    "subject": "數學",
@@ -362,7 +406,9 @@ window.QB = {
    ],
    "text": "The figure shows the quadrilateral $ABCD$. If $\\angle ABC + \\angle ADC = \\angle ACD = \\angle BAC = 90^\\circ$, which of the following must be true?\n\n![Figure Q23 (as printed)](2025P2_figs/Q23.png)\n\n- A. $\\tan \\angle ACB = \\dfrac{AB}{AD}$\n- B. $\\tan \\angle ACB = \\dfrac{AB}{CD}$\n- C. $\\tan \\angle ADC = \\dfrac{BC}{AD}$\n- D. $\\tan \\angle ADC = \\dfrac{BC}{CD}$",
    "html": "<p>The figure shows the quadrilateral $ABCD$. If $\\angle ABC + \\angle ADC = \\angle ACD = \\angle BAC = 90^\\circ$, which of the following must be true?</p>\n<p><img alt=\"Figure Q23 (as printed)\" src=\"2025P2_figs/Q23.png\" /></p>\n<ul>\n<li>A. $\\tan \\angle ACB = \\dfrac{AB}{AD}$</li>\n<li>B. $\\tan \\angle ACB = \\dfrac{AB}{CD}$</li>\n<li>C. $\\tan \\angle ADC = \\dfrac{BC}{AD}$</li>\n<li>D. $\\tan \\angle ADC = \\dfrac{BC}{CD}$</li>\n</ul>",
-   "file": "2025_P2_題目英文卷.md"
+   "file": "2025_P2_題目英文卷.md",
+   "answer": "C",
+   "answer_pct": 23
   },
   {
    "subject": "數學",
@@ -378,7 +424,9 @@ window.QB = {
    ],
    "text": "The polar coordinates of the points $ X $, $ Y $ and $ Z $ are $ (1, 20^\\circ) $, $ (2, 80^\\circ) $ and $ (r, \\theta) $ respectively, where $ 20^\\circ < \\theta < 80^\\circ $. If $ \\triangle XYZ $ is an equilateral triangle, find $ r $.\n\n- A. $\\sqrt{3}$\n- B. $\\sqrt{5}$\n- C. $\\sqrt{7}$\n- D. $\\sqrt{10}$",
    "html": "<p>The polar coordinates of the points $ X $, $ Y $ and $ Z $ are $ (1, 20^\\circ) $, $ (2, 80^\\circ) $ and $ (r, \\theta) $ respectively, where $ 20^\\circ &lt; \\theta &lt; 80^\\circ $. If $ \\triangle XYZ $ is an equilateral triangle, find $ r $.</p>\n<ul>\n<li>A. $\\sqrt{3}$</li>\n<li>B. $\\sqrt{5}$</li>\n<li>C. $\\sqrt{7}$</li>\n<li>D. $\\sqrt{10}$</li>\n</ul>",
-   "file": "2025_P2_題目英文卷.md"
+   "file": "2025_P2_題目英文卷.md",
+   "answer": "C",
+   "answer_pct": 26
   },
   {
    "subject": "數學",
@@ -394,7 +442,9 @@ window.QB = {
    ],
    "text": "Denote the origin by $ O $. The coordinates of the point $ A $ are $ (a, 2a) $, where $ a > 0 $. Let $ P $ be a moving point in the rectangular coordinate plane such that $ AP = OA $. The locus of $ P $ is a\n\n- A. point.\n- B. circle.\n- C. rhombus.\n- D. straight line.",
    "html": "<p>Denote the origin by $ O $. The coordinates of the point $ A $ are $ (a, 2a) $, where $ a &gt; 0 $. Let $ P $ be a moving point in the rectangular coordinate plane such that $ AP = OA $. The locus of $ P $ is a</p>\n<ul>\n<li>A. point.</li>\n<li>B. circle.</li>\n<li>C. rhombus.</li>\n<li>D. straight line.</li>\n</ul>",
-   "file": "2025_P2_題目英文卷.md"
+   "file": "2025_P2_題目英文卷.md",
+   "answer": "B",
+   "answer_pct": 59
   },
   {
    "subject": "數學",
@@ -410,7 +460,9 @@ window.QB = {
    ],
    "text": "The straight lines $ L_1 $ and $ L_2 $ are perpendicular to each other. The equations of $ L_1 $ and $ L_2 $ are $ 3x + 4y - 20 = 0 $ and $ mx + ny - 20 = 0 $ respectively, where $ m $ and $ n $ are constants. Suppose that $ L_1 $ and $ L_2 $ cut the $ x $-axis at the points $ A $ and $ B $ respectively. Let $ C $ be the point of intersection of $ L_1 $ and $ L_2 $. It is given that $ C $ lies above the $ x $-axis. If the area of $ \\triangle ABC $ is 6, find $ n $.\n\n- A. $-12$\n- B. $-9$\n- C. 9\n- D. 12",
    "html": "<p>The straight lines $ L_1 $ and $ L_2 $ are perpendicular to each other. The equations of $ L_1 $ and $ L_2 $ are $ 3x + 4y - 20 = 0 $ and $ mx + ny - 20 = 0 $ respectively, where $ m $ and $ n $ are constants. Suppose that $ L_1 $ and $ L_2 $ cut the $ x $-axis at the points $ A $ and $ B $ respectively. Let $ C $ be the point of intersection of $ L_1 $ and $ L_2 $. It is given that $ C $ lies above the $ x $-axis. If the area of $ \\triangle ABC $ is 6, find $ n $.</p>\n<ul>\n<li>A. $-12$</li>\n<li>B. $-9$</li>\n<li>C. 9</li>\n<li>D. 12</li>\n</ul>",
-   "file": "2025_P2_題目英文卷.md"
+   "file": "2025_P2_題目英文卷.md",
+   "answer": "B",
+   "answer_pct": 14
   },
   {
    "subject": "數學",
@@ -427,7 +479,9 @@ window.QB = {
    ],
    "text": "The coordinates of the centre of the circle $ C $ are $ (7, -5) $. If $ C $ cuts the $ x $-axis at the points $ P $ and $ Q $ such that $ PQ = 24 $, then the equation of $ C $ is\n\n- A. $ x^2 + y^2 - 14x + 10y - 95 = 0 $\n- B. $ x^2 + y^2 + 14x - 10y - 95 = 0 $\n- C. $ x^2 + y^2 - 14x + 10y - 119 = 0 $\n- D. $ x^2 + y^2 + 14x - 10y - 119 = 0 $",
    "html": "<p>The coordinates of the centre of the circle $ C $ are $ (7, -5) $. If $ C $ cuts the $ x $-axis at the points $ P $ and $ Q $ such that $ PQ = 24 $, then the equation of $ C $ is</p>\n<ul>\n<li>A. $ x^2 + y^2 - 14x + 10y - 95 = 0 $</li>\n<li>B. $ x^2 + y^2 + 14x - 10y - 95 = 0 $</li>\n<li>C. $ x^2 + y^2 - 14x + 10y - 119 = 0 $</li>\n<li>D. $ x^2 + y^2 + 14x - 10y - 119 = 0 $</li>\n</ul>",
-   "file": "2025_P2_題目英文卷.md"
+   "file": "2025_P2_題目英文卷.md",
+   "answer": "A",
+   "answer_pct": 53
   },
   {
    "subject": "數學",
@@ -443,7 +497,9 @@ window.QB = {
    ],
    "text": "A box contains six cards numbered 2, 2, 2, 3, 4 and 5 respectively. In a game, a number is randomly drawn from the box and a certain number of tokens will be got according to the following table:\n\n:::stemleaf\nNumber drawn | 2 | 3 | 4 | 5\nNumber of tokens got | 10 | 15 | 25 | 50\n:::\n\nFind the expected number of tokens got in the game.\n\n- A. 3\n- B. 4\n- C. 20\n- D. 25",
    "html": "<p>A box contains six cards numbered 2, 2, 2, 3, 4 and 5 respectively. In a game, a number is randomly drawn from the box and a certain number of tokens will be got according to the following table:</p>\n<p>:::stemleaf\nNumber drawn | 2 | 3 | 4 | 5\nNumber of tokens got | 10 | 15 | 25 | 50\n:::</p>\n<p>Find the expected number of tokens got in the game.</p>\n<ul>\n<li>A. 3</li>\n<li>B. 4</li>\n<li>C. 20</li>\n<li>D. 25</li>\n</ul>",
-   "file": "2025_P2_題目英文卷.md"
+   "file": "2025_P2_題目英文卷.md",
+   "answer": "C",
+   "answer_pct": 60
   },
   {
    "subject": "數學",
@@ -460,7 +516,9 @@ window.QB = {
    ],
    "text": "The bar chart below shows the distribution of the numbers of books read by some teachers in a certain month. Find the inter-quartile range of the distribution.\n\n- A. 1\n- B. 2\n- C. 3\n- D. 4",
    "html": "<p>The bar chart below shows the distribution of the numbers of books read by some teachers in a certain month. Find the inter-quartile range of the distribution.</p>\n<ul>\n<li>A. 1</li>\n<li>B. 2</li>\n<li>C. 3</li>\n<li>D. 4</li>\n</ul>",
-   "file": "2025_P2_題目英文卷.md"
+   "file": "2025_P2_題目英文卷.md",
+   "answer": "A",
+   "answer_pct": 73
   },
   {
    "subject": "數學",
@@ -476,7 +534,9 @@ window.QB = {
    ],
    "text": "Consider the following data:\n\nα β -4 -3 1 1 1 4\n\nDenote the mode and the median of the above data by s and t respectively. If the mean and the range of the above data are 0 and 10 respectively, which of the following are true?\nI. s = 1\nII. t = -1\nIII. α + β = 0\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
    "html": "<p>Consider the following data:</p>\n<p>α β -4 -3 1 1 1 4</p>\n<p>Denote the mode and the median of the above data by s and t respectively. If the mean and the range of the above data are 0 and 10 respectively, which of the following are true?\nI. s = 1\nII. t = -1\nIII. α + β = 0</p>\n<ul>\n<li>A. I and II only</li>\n<li>B. I and III only</li>\n<li>C. II and III only</li>\n<li>D. I, II and III</li>\n</ul>",
-   "file": "2025_P2_題目英文卷.md"
+   "file": "2025_P2_題目英文卷.md",
+   "answer": "B",
+   "answer_pct": 59
   },
   {
    "subject": "數學",
@@ -491,7 +551,9 @@ window.QB = {
    ],
    "text": "$3E000000000000_{16}=$\n\n- A. $2^{16}+2^{15}+2^{14}+2^{13}+2^{12}$.\n- B. $2^{17}+2^{16}+2^{15}+2^{14}+2^{13}$.\n- C. $2^{52}+2^{51}+2^{50}+2^{49}+2^{48}$.\n- D. $2^{53}+2^{52}+2^{51}+2^{50}+2^{49}$.",
    "html": "<p>$3E000000000000_{16}=$</p>\n<ul>\n<li>A. $2^{16}+2^{15}+2^{14}+2^{13}+2^{12}$.</li>\n<li>B. $2^{17}+2^{16}+2^{15}+2^{14}+2^{13}$.</li>\n<li>C. $2^{52}+2^{51}+2^{50}+2^{49}+2^{48}$.</li>\n<li>D. $2^{53}+2^{52}+2^{51}+2^{50}+2^{49}$.</li>\n</ul>",
-   "file": "2025_P2_題目英文卷.md"
+   "file": "2025_P2_題目英文卷.md",
+   "answer": "D",
+   "answer_pct": 51
   },
   {
    "subject": "數學",
@@ -507,7 +569,9 @@ window.QB = {
    ],
    "text": "The L.C.M. of $p^{2}-4q^{2}$, $p^{3}-8q^{3}$ and $(p+2q)(p^{2}-4q^{2})$ is\n\n- A. $p-2q$.\n- B. $p^{2}-4q^{2}$.\n- C. $(p+2q)^{2}(p^{3}-8q^{3})$.\n- D. $(p+2q)(p^{2}-4q^{2})(p^{3}-8q^{3})$.",
    "html": "<p>The L.C.M. of $p^{2}-4q^{2}$, $p^{3}-8q^{3}$ and $(p+2q)(p^{2}-4q^{2})$ is</p>\n<ul>\n<li>A. $p-2q$.</li>\n<li>B. $p^{2}-4q^{2}$.</li>\n<li>C. $(p+2q)^{2}(p^{3}-8q^{3})$.</li>\n<li>D. $(p+2q)(p^{2}-4q^{2})(p^{3}-8q^{3})$.</li>\n</ul>",
-   "file": "2025_P2_題目英文卷.md"
+   "file": "2025_P2_題目英文卷.md",
+   "answer": "C",
+   "answer_pct": 35
   },
   {
    "subject": "數學",
@@ -524,7 +588,9 @@ window.QB = {
    ],
    "text": "It is given that $\\log_{5}y$ is a linear function of $\\log_{25}x$. The intercepts on the vertical axis and on the horizontal axis of the graph of the linear function are 12 and 2 respectively. If $y=mx^{n}$, then $n=$\n\n- A. $-12$.\n- B. $-4$.\n- C. $-3$.\n- D. $-1$.",
    "html": "<p>It is given that $\\log_{5}y$ is a linear function of $\\log_{25}x$. The intercepts on the vertical axis and on the horizontal axis of the graph of the linear function are 12 and 2 respectively. If $y=mx^{n}$, then $n=$</p>\n<ul>\n<li>A. $-12$.</li>\n<li>B. $-4$.</li>\n<li>C. $-3$.</li>\n<li>D. $-1$.</li>\n</ul>",
-   "file": "2025_P2_題目英文卷.md"
+   "file": "2025_P2_題目英文卷.md",
+   "answer": "C",
+   "answer_pct": 46
   },
   {
    "subject": "數學",
@@ -541,7 +607,9 @@ window.QB = {
    ],
    "text": "On the same rectangular coordinate system, the graph of $ y = \\log_a x $ cuts the graph of $ y = a^x $ and the $ x $-axis at the points $ P $ and $ Q $ respectively, where $ a $ is a positive constant. Denote the origin by $ O $. Which of the following are true?\nI. $ a < 1 $\nII. $ OQ > a $\nIII. $ \\angle POQ = 45^\\circ $\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
    "html": "<p>On the same rectangular coordinate system, the graph of $ y = \\log_a x $ cuts the graph of $ y = a^x $ and the $ x $-axis at the points $ P $ and $ Q $ respectively, where $ a $ is a positive constant. Denote the origin by $ O $. Which of the following are true?\nI. $ a &lt; 1 $\nII. $ OQ &gt; a $\nIII. $ \\angle POQ = 45^\\circ $</p>\n<ul>\n<li>A. I and II only</li>\n<li>B. I and III only</li>\n<li>C. II and III only</li>\n<li>D. I, II and III</li>\n</ul>",
-   "file": "2025_P2_題目英文卷.md"
+   "file": "2025_P2_題目英文卷.md",
+   "answer": "D",
+   "answer_pct": 25
   },
   {
    "subject": "數學",
@@ -556,7 +624,9 @@ window.QB = {
    ],
    "text": "$ i^9 + i^{10} + i^{11} + \\cdots + i^{999} = $\n\n- A. $-1$\n- B. $0$\n- C. $1$\n- D. $i$",
    "html": "<p>$ i^9 + i^{10} + i^{11} + \\cdots + i^{999} = $</p>\n<ul>\n<li>A. $-1$</li>\n<li>B. $0$</li>\n<li>C. $1$</li>\n<li>D. $i$</li>\n</ul>",
-   "file": "2025_P2_題目英文卷.md"
+   "file": "2025_P2_題目英文卷.md",
+   "answer": "A",
+   "answer_pct": 41
   },
   {
    "subject": "數學",
@@ -573,7 +643,9 @@ window.QB = {
    ],
    "text": "Consider the following system of inequalities:\n\n$$\n\n\\begin{cases}\n\nx \\leq 11 \\\\\n\n4x + 5y - 19 \\geq 0 \\\\\n\n7x - 6y + 11 \\leq 0\n\n\\end{cases}\n\n$$\n\nLet $ D $ be the region which represents the solution of the above system of inequalities. If $ (x, y) $ is a point lying in $ D $, then the greatest value of $ 8x - 6y + 11 $ is\n\n- A. $1$\n- B. $11$\n- C. $15$\n- D. $129$",
    "html": "<p>Consider the following system of inequalities:</p>\n<p>$$</p>\n<p>\\begin{cases}</p>\n<p>x \\leq 11 \\</p>\n<p>4x + 5y - 19 \\geq 0 \\</p>\n<p>7x - 6y + 11 \\leq 0</p>\n<p>\\end{cases}</p>\n<p>$$</p>\n<p>Let $ D $ be the region which represents the solution of the above system of inequalities. If $ (x, y) $ is a point lying in $ D $, then the greatest value of $ 8x - 6y + 11 $ is</p>\n<ul>\n<li>A. $1$</li>\n<li>B. $11$</li>\n<li>C. $15$</li>\n<li>D. $129$</li>\n</ul>",
-   "file": "2025_P2_題目英文卷.md"
+   "file": "2025_P2_題目英文卷.md",
+   "answer": "B",
+   "answer_pct": 26
   },
   {
    "subject": "數學",
@@ -589,7 +661,9 @@ window.QB = {
    ],
    "text": "Let $ p $, $ q $ and $ r $ be non-zero real numbers. If $ p $, $ q $, $ r $ is an arithmetic sequence, which of the following must be true?\nI. $ 3^p $, $ 3^q $, $ 3^r $ is a geometric sequence.\nII. $ \\dfrac{5}{p} $, $ \\dfrac{5}{q} $, $ \\dfrac{5}{r} $ is a geometric sequence.\nIII. $ p-q $, $ q-r $, $ r-p $ is an arithmetic sequence.\n\n- A. I only\n- B. II only\n- C. I and III only\n- D. II and III only",
    "html": "<p>Let $ p $, $ q $ and $ r $ be non-zero real numbers. If $ p $, $ q $, $ r $ is an arithmetic sequence, which of the following must be true?\nI. $ 3^p $, $ 3^q $, $ 3^r $ is a geometric sequence.\nII. $ \\dfrac{5}{p} $, $ \\dfrac{5}{q} $, $ \\dfrac{5}{r} $ is a geometric sequence.\nIII. $ p-q $, $ q-r $, $ r-p $ is an arithmetic sequence.</p>\n<ul>\n<li>A. I only</li>\n<li>B. II only</li>\n<li>C. I and III only</li>\n<li>D. II and III only</li>\n</ul>",
-   "file": "2025_P2_題目英文卷.md"
+   "file": "2025_P2_題目英文卷.md",
+   "answer": "A",
+   "answer_pct": 65
   },
   {
    "subject": "數學",
@@ -605,7 +679,9 @@ window.QB = {
    ],
    "text": "In the figure, $ AC $ is a diameter of the circle $ ABCD $. Denote the point of intersection of $ AC $ and $ BD $ by $ E $. It is given that $ TD $ is the tangent to the circle at $ D $. If $ \\angle BEC = 96^\\circ $ and $ \\angle CDT = 41^\\circ $, then $ \\angle CDE = $\n\n![Figure Q38 (as printed)](2025P2_figs/Q38.png)\n\n- A. $ 47^\\circ $\n- B. $ 48^\\circ $\n- C. $ 52^\\circ $\n- D. $ 55^\\circ $",
    "html": "<p>In the figure, $ AC $ is a diameter of the circle $ ABCD $. Denote the point of intersection of $ AC $ and $ BD $ by $ E $. It is given that $ TD $ is the tangent to the circle at $ D $. If $ \\angle BEC = 96^\\circ $ and $ \\angle CDT = 41^\\circ $, then $ \\angle CDE = $</p>\n<p><img alt=\"Figure Q38 (as printed)\" src=\"2025P2_figs/Q38.png\" /></p>\n<ul>\n<li>A. $ 47^\\circ $</li>\n<li>B. $ 48^\\circ $</li>\n<li>C. $ 52^\\circ $</li>\n<li>D. $ 55^\\circ $</li>\n</ul>",
-   "file": "2025_P2_題目英文卷.md"
+   "file": "2025_P2_題目英文卷.md",
+   "answer": "A",
+   "answer_pct": 44
   },
   {
    "subject": "數學",
@@ -622,7 +698,9 @@ window.QB = {
    ],
    "text": "For $ 90^\\circ < \\theta < 270^\\circ $, how many roots does the equation $ \\tan^3 \\theta = 2 \\tan \\theta $ have?\n\n- A. 2\n- B. 3\n- C. 4\n- D. 5",
    "html": "<p>For $ 90^\\circ &lt; \\theta &lt; 270^\\circ $, how many roots does the equation $ \\tan^3 \\theta = 2 \\tan \\theta $ have?</p>\n<ul>\n<li>A. 2</li>\n<li>B. 3</li>\n<li>C. 4</li>\n<li>D. 5</li>\n</ul>",
-   "file": "2025_P2_題目英文卷.md"
+   "file": "2025_P2_題目英文卷.md",
+   "answer": "B",
+   "answer_pct": 39
   },
   {
    "subject": "數學",
@@ -638,7 +716,9 @@ window.QB = {
    ],
    "text": "$PQRS$ is a regular tetrahedron. Find the angle between $PQ$ and $\\DeltaQRS$ correct to the nearest degree.\n\n- A. $35^\\circ$\n- B. $55^\\circ$\n- C. $60^\\circ$\n- D. $71^\\circ$",
    "html": "<p>$PQRS$ is a regular tetrahedron. Find the angle between $PQ$ and $\\DeltaQRS$ correct to the nearest degree.</p>\n<ul>\n<li>A. $35^\\circ$</li>\n<li>B. $55^\\circ$</li>\n<li>C. $60^\\circ$</li>\n<li>D. $71^\\circ$</li>\n</ul>",
-   "file": "2025_P2_題目英文卷.md"
+   "file": "2025_P2_題目英文卷.md",
+   "answer": "B",
+   "answer_pct": 36
   },
   {
    "subject": "數學",
@@ -654,7 +734,9 @@ window.QB = {
    ],
    "text": "Denote the origin by $O$. The coordinates of the point $U$ are $(20,0)$. Let $V$ be a point lying on the positive $y$-axis such that the $x$-coordinate of the in-centre of $\\Delta OUV$ is 6. Find the area of $\\Delta OUV$.\n\n- A. $70$\n- B. $87$\n- C. $210$\n- D. $250$",
    "html": "<p>Denote the origin by $O$. The coordinates of the point $U$ are $(20,0)$. Let $V$ be a point lying on the positive $y$-axis such that the $x$-coordinate of the in-centre of $\\Delta OUV$ is 6. Find the area of $\\Delta OUV$.</p>\n<ul>\n<li>A. $70$</li>\n<li>B. $87$</li>\n<li>C. $210$</li>\n<li>D. $250$</li>\n</ul>",
-   "file": "2025_P2_題目英文卷.md"
+   "file": "2025_P2_題目英文卷.md",
+   "answer": "C",
+   "answer_pct": 36
   },
   {
    "subject": "數學",
@@ -669,7 +751,9 @@ window.QB = {
    ],
    "text": "A committee is formed by 2 managers, 4 officers and 12 clerks. If 7 members are selected from the committee to form a working group consisting of at least 1 manager, how many different working groups can be formed?\n\n- A. $16 016$\n- B. $20 384$\n- C. $22 880$\n- D. $31824$",
    "html": "<p>A committee is formed by 2 managers, 4 officers and 12 clerks. If 7 members are selected from the committee to form a working group consisting of at least 1 manager, how many different working groups can be formed?</p>\n<ul>\n<li>A. $16 016$</li>\n<li>B. $20 384$</li>\n<li>C. $22 880$</li>\n<li>D. $31824$</li>\n</ul>",
-   "file": "2025_P2_題目英文卷.md"
+   "file": "2025_P2_題目英文卷.md",
+   "answer": "B",
+   "answer_pct": 55
   },
   {
    "subject": "數學",
@@ -685,7 +769,9 @@ window.QB = {
    ],
    "text": "There are 9 cans of apple juice and 4 cans of grape juice in a bag. If 6 cans are randomly chosen from the bag at the same time, find the probability that at most 3 cans of grape juice are chosen.\n\n- A. $\\dfrac{9}{13}$\n- B. $\\dfrac{133}{143}$\n- C. $\\dfrac{140}{143}$\n- D. $\\dfrac{714}{715}$",
    "html": "<p>There are 9 cans of apple juice and 4 cans of grape juice in a bag. If 6 cans are randomly chosen from the bag at the same time, find the probability that at most 3 cans of grape juice are chosen.</p>\n<ul>\n<li>A. $\\dfrac{9}{13}$</li>\n<li>B. $\\dfrac{133}{143}$</li>\n<li>C. $\\dfrac{140}{143}$</li>\n<li>D. $\\dfrac{714}{715}$</li>\n</ul>",
-   "file": "2025_P2_題目英文卷.md"
+   "file": "2025_P2_題目英文卷.md",
+   "answer": "A",
+   "answer_pct": 43
   },
   {
    "subject": "數學",
@@ -700,7 +786,9 @@ window.QB = {
    ],
    "text": "The standard scores of a boy and a girl in a Mathematics test are $-2$ and $z$ respectively. The standard deviation of the scores of the Mathematics test is 2 marks. If the difference of the test score of the boy and the test score of the girl is 6 marks, find $z$.\n\n- A. $-5$ or 1\n- B. $-5$ or 3\n- C. $-3$ or 1\n- D. $-3$ or 3",
    "html": "<p>The standard scores of a boy and a girl in a Mathematics test are $-2$ and $z$ respectively. The standard deviation of the scores of the Mathematics test is 2 marks. If the difference of the test score of the boy and the test score of the girl is 6 marks, find $z$.</p>\n<ul>\n<li>A. $-5$ or 1</li>\n<li>B. $-5$ or 3</li>\n<li>C. $-3$ or 1</li>\n<li>D. $-3$ or 3</li>\n</ul>",
-   "file": "2025_P2_題目英文卷.md"
+   "file": "2025_P2_題目英文卷.md",
+   "answer": "D",
+   "answer_pct": 36
   },
   {
    "subject": "數學",
@@ -7340,7 +7428,8 @@ window.QB = {
    "text": "$\\dfrac{6x}{(3x^{-5})^{-2}}=$\n\n- A. $54x^8$。\n- B. $\\dfrac{2x^8}{3}$。\n- C. $\\dfrac{54}{x^9}$。\n- D. $\\dfrac{2}{3x^9}$。",
    "html": "<p>$\\dfrac{6x}{(3x^{-5})^{-2}}=$</p>\n<ul>\n<li>A. $54x^8$。</li>\n<li>B. $\\dfrac{2x^8}{3}$。</li>\n<li>C. $\\dfrac{54}{x^9}$。</li>\n<li>D. $\\dfrac{2}{3x^9}$。</li>\n</ul>",
    "file": "2020_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 76
   },
   {
    "subject": "數學",
@@ -7356,7 +7445,8 @@ window.QB = {
    "text": "若 $a(a+b)=2(b-a)$，則 $b=$\n\n- A. $\\dfrac{a^2+a}{2+a}$。\n- B. $\\dfrac{a^2-2a}{2+a}$。\n- C. $\\dfrac{a^2+2a}{2-a}$。\n- D. $\\dfrac{a^2-a}{2-a}$。",
    "html": "<p>若 $a(a+b)=2(b-a)$，則 $b=$</p>\n<ul>\n<li>A. $\\dfrac{a^2+a}{2+a}$。</li>\n<li>B. $\\dfrac{a^2-2a}{2+a}$。</li>\n<li>C. $\\dfrac{a^2+2a}{2-a}$。</li>\n<li>D. $\\dfrac{a^2-a}{2-a}$。</li>\n</ul>",
    "file": "2020_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 85
   },
   {
    "subject": "數學",
@@ -7372,7 +7462,8 @@ window.QB = {
    "text": "$\\dfrac{5}{4k+3}-\\dfrac{2}{4k-3}=$\n\n- A. $\\dfrac{12k-21}{16k^2-9}$。\n- B. $\\dfrac{12k+9}{16k^2-9}$。\n- C. $\\dfrac{14k-21}{16k^2-9}$。\n- D. $\\dfrac{14k+9}{16k^2-9}$。",
    "html": "<p>$\\dfrac{5}{4k+3}-\\dfrac{2}{4k-3}=$</p>\n<ul>\n<li>A. $\\dfrac{12k-21}{16k^2-9}$。</li>\n<li>B. $\\dfrac{12k+9}{16k^2-9}$。</li>\n<li>C. $\\dfrac{14k-21}{16k^2-9}$。</li>\n<li>D. $\\dfrac{14k+9}{16k^2-9}$。</li>\n</ul>",
    "file": "2020_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 89
   },
   {
    "subject": "數學",
@@ -7388,7 +7479,8 @@ window.QB = {
    "text": "$(3a+2b)(4a-5b)-a(6a+4b)=$\n\n- A. $(3a+2b)(2a-5b)$\n- B. $(3a+2b)(6a-5b)$\n- C. $(3a-2b)(2a+5b)$\n- D. $(3a-2b)(6a+5b)$",
    "html": "<p>$(3a+2b)(4a-5b)-a(6a+4b)=$</p>\n<ul>\n<li>A. $(3a+2b)(2a-5b)$</li>\n<li>B. $(3a+2b)(6a-5b)$</li>\n<li>C. $(3a-2b)(2a+5b)$</li>\n<li>D. $(3a-2b)(6a+5b)$</li>\n</ul>",
    "file": "2020_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 85
   },
   {
    "subject": "數學",
@@ -7404,7 +7496,8 @@ window.QB = {
    "text": "設 $f(x)=3x^2-x-2$。若 $\\beta$ 為一常數，則 $f(1+\\beta)-f(1-\\beta)=$\n\n- A. $2\\beta$\n- B. $10\\beta$\n- C. $6\\beta^2-2$\n- D. $6\\beta^2-2\\beta$",
    "html": "<p>設 $f(x)=3x^2-x-2$。若 $\\beta$ 為一常數，則 $f(1+\\beta)-f(1-\\beta)=$</p>\n<ul>\n<li>A. $2\\beta$</li>\n<li>B. $10\\beta$</li>\n<li>C. $6\\beta^2-2$</li>\n<li>D. $6\\beta^2-2\\beta$</li>\n</ul>",
    "file": "2020_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 63
   },
   {
    "subject": "數學",
@@ -7420,7 +7513,8 @@ window.QB = {
    "text": "設 $g(x)=ax^3+4ax^2-24$，其中 $a$ 為一常數。若 $x+2$ 為 $g(x)$ 的因式，則 $g(2)=$\n\n- A. $-96$\n- B. $0$\n- C. $3$\n- D. $48$",
    "html": "<p>設 $g(x)=ax^3+4ax^2-24$，其中 $a$ 為一常數。若 $x+2$ 為 $g(x)$ 的因式，則 $g(2)=$</p>\n<ul>\n<li>A. $-96$</li>\n<li>B. $0$</li>\n<li>C. $3$</li>\n<li>D. $48$</li>\n</ul>",
    "file": "2020_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 75
   },
   {
    "subject": "數學",
@@ -7437,7 +7531,8 @@ window.QB = {
    "text": "若 $h$ 及 $k$ 均為常數使得 $(x+h)(x+6)\\equiv(x+4)^2+k$，則 $k=$\n\n- A. $-28$\n- B. $-16$\n- C. $-4$\n- D. $2$",
    "html": "<p>若 $h$ 及 $k$ 均為常數使得 $(x+h)(x+6)\\equiv(x+4)^2+k$，則 $k=$</p>\n<ul>\n<li>A. $-28$</li>\n<li>B. $-16$</li>\n<li>C. $-4$</li>\n<li>D. $2$</li>\n</ul>",
    "file": "2020_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 79
   },
   {
    "subject": "數學",
@@ -7454,7 +7549,8 @@ window.QB = {
    "text": "圖中, 直線 $ L_1 $ 及直線 $ L_2 $ 的方程分別為 $ x + ay + b = 0 $ 及 $ bx + y + c = 0 $ 。下列何者正確?\nI. $ c < 0 $\nII. $ ab < 1 $\nIII. $ ac < b $\n\n\n![Figure Q8 (as printed)](2020P2_zh_figs/Q08.png)\n\n- A. 只有 I 及 II\n- B. 只有 I 及 III\n- C. 只有 II 及 III\n- D. I 、II 及 III",
    "html": "<p>圖中, 直線 $ L_1 $ 及直線 $ L_2 $ 的方程分別為 $ x + ay + b = 0 $ 及 $ bx + y + c = 0 $ 。下列何者正確?\nI. $ c &lt; 0 $\nII. $ ab &lt; 1 $\nIII. $ ac &lt; b $</p>\n<p><img alt=\"Figure Q8 (as printed)\" src=\"2020P2_zh_figs/Q08.png\" /></p>\n<ul>\n<li>A. 只有 I 及 II</li>\n<li>B. 只有 I 及 III</li>\n<li>C. 只有 II 及 III</li>\n<li>D. I 、II 及 III</li>\n</ul>",
    "file": "2020_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 33
   },
   {
    "subject": "數學",
@@ -7470,7 +7566,8 @@ window.QB = {
    "text": "某玩具的成本較其售價低 $ x\\% $ 。售出該玩具後, 盈利百分率為 $ 25\\% $ 。求 $ x $ 。\n\n- A. 20\n- B. 25\n- C. 75\n- D. 80",
    "html": "<p>某玩具的成本較其售價低 $ x\\% $ 。售出該玩具後, 盈利百分率為 $ 25\\% $ 。求 $ x $ 。</p>\n<ul>\n<li>A. 20</li>\n<li>B. 25</li>\n<li>C. 75</li>\n<li>D. 80</li>\n</ul>",
    "file": "2020_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 46
   },
   {
    "subject": "數學",
@@ -7486,7 +7583,8 @@ window.QB = {
    "text": "某高爾夫球場的實際面積為 $ 0.75 \\text{ km}^2 $ 。若該球場在某地圖上的面積為 $ 300 \\text{ cm}^2 $ ，則該地圖的比例尺為\n\n- A. $ 1:250 $\n- B. $ 1:5\\,000 $\n- C. $ 1:62\\,500 $\n- D. $ 1:25\\,000\\,000 $",
    "html": "<p>某高爾夫球場的實際面積為 $ 0.75 \\text{ km}^2 $ 。若該球場在某地圖上的面積為 $ 300 \\text{ cm}^2 $ ，則該地圖的比例尺為</p>\n<ul>\n<li>A. $ 1:250 $</li>\n<li>B. $ 1:5\\,000 $</li>\n<li>C. $ 1:62\\,500 $</li>\n<li>D. $ 1:25\\,000\\,000 $</li>\n</ul>",
    "file": "2020_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 33
   },
   {
    "subject": "數學",
@@ -7502,7 +7600,8 @@ window.QB = {
    "text": "已知 $ w $ 隨 $ u $ 的立方及 $ v $ 的平方根正變。當 $ u = 2 $ 及 $ v = 4 $ 時，$ w = 8 $ 。當 $ u = 4 $ 及 $ v = 9 $ 時，$ w = $\n\n- A. 96\n- B. 324\n- C. 384\n- D. 729",
    "html": "<p>已知 $ w $ 隨 $ u $ 的立方及 $ v $ 的平方根正變。當 $ u = 2 $ 及 $ v = 4 $ 時，$ w = 8 $ 。當 $ u = 4 $ 及 $ v = 9 $ 時，$ w = $</p>\n<ul>\n<li>A. 96</li>\n<li>B. 324</li>\n<li>C. 384</li>\n<li>D. 729</li>\n</ul>",
    "file": "2020_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 68
   },
   {
    "subject": "數學",
@@ -7518,7 +7617,8 @@ window.QB = {
    "text": "圖中, 第 1 個圖案包含 3 粒點子。對任意正整數 $ n $, 第 $ (n+1) $ 個圖案是由第 $ n $ 個圖案加上 $ (2n+1) $ 粒點子所組成。求第 7 個圖案的點子數目。\n\n\n![Figure Q12 (as printed)](2020P2_zh_figs/Q12.png)\n\n- A. 15\n- B. 27\n- C. 38\n- D. 51",
    "html": "<p>圖中, 第 1 個圖案包含 3 粒點子。對任意正整數 $ n $, 第 $ (n+1) $ 個圖案是由第 $ n $ 個圖案加上 $ (2n+1) $ 粒點子所組成。求第 7 個圖案的點子數目。</p>\n<p><img alt=\"Figure Q12 (as printed)\" src=\"2020P2_zh_figs/Q12.png\" /></p>\n<ul>\n<li>A. 15</li>\n<li>B. 27</li>\n<li>C. 38</li>\n<li>D. 51</li>\n</ul>",
    "file": "2020_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 83
   },
   {
    "subject": "數學",
@@ -7534,7 +7634,8 @@ window.QB = {
    "text": "$ 5-4x<9 $ 及 $ \\dfrac{2x-3}{7}>1 $ 的解為\n\n- A. $ x<-1 $\n- B. $ x>-1 $\n- C. $ x<5 $\n- D. $ x>5 $",
    "html": "<p>$ 5-4x&lt;9 $ 及 $ \\dfrac{2x-3}{7}&gt;1 $ 的解為</p>\n<ul>\n<li>A. $ x&lt;-1 $</li>\n<li>B. $ x&gt;-1 $</li>\n<li>C. $ x&lt;5 $</li>\n<li>D. $ x&gt;5 $</li>\n</ul>",
    "file": "2020_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 79
   },
   {
    "subject": "數學",
@@ -7551,7 +7652,8 @@ window.QB = {
    "text": "圖中, $ PQRST $ 為五邊形, 其中所有的量度均準確至最接近的 cm。設 $ A \\, \\text{cm}^2 $ 為該五邊形的實際面積。求 $ A $ 值的範圍。\n\n\n![Figure Q14 (as printed)](2020P2_zh_figs/Q14.png)\n\n- A. $ 27.83 \\leq A < 31.83 $\n- B. $ 44.75 \\leq A < 60.75 $\n- C. $ 46.75 \\leq A < 63.25 $\n- D. $ 48.25 \\leq A < 64.75 $",
    "html": "<p>圖中, $ PQRST $ 為五邊形, 其中所有的量度均準確至最接近的 cm。設 $ A \\, \\text{cm}^2 $ 為該五邊形的實際面積。求 $ A $ 值的範圍。</p>\n<p><img alt=\"Figure Q14 (as printed)\" src=\"2020P2_zh_figs/Q14.png\" /></p>\n<ul>\n<li>A. $ 27.83 \\leq A &lt; 31.83 $</li>\n<li>B. $ 44.75 \\leq A &lt; 60.75 $</li>\n<li>C. $ 46.75 \\leq A &lt; 63.25 $</li>\n<li>D. $ 48.25 \\leq A &lt; 64.75 $</li>\n</ul>",
    "file": "2020_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 41
   },
   {
    "subject": "數學",
@@ -7567,7 +7669,8 @@ window.QB = {
    "text": "某扇形的角減少 60%, 而它的半徑卻增加 $ k \\% $ 。若該扇形的弧長維持不變, 求 $ k $ 的值。\n\n- A. 40\n- B. 60\n- C. 67\n- D. 150",
    "html": "<p>某扇形的角減少 60%, 而它的半徑卻增加 $ k \\% $ 。若該扇形的弧長維持不變, 求 $ k $ 的值。</p>\n<ul>\n<li>A. 40</li>\n<li>B. 60</li>\n<li>C. 67</li>\n<li>D. 150</li>\n</ul>",
    "file": "2020_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 42
   },
   {
    "subject": "數學",
@@ -7584,7 +7687,8 @@ window.QB = {
    "text": "若一底半徑為 $5a$ cm 及高為 $7b$ cm 的直立圓柱體的體積為 $525$ cm$^3$ ，則一底半徑為 $7a$ cm 及高為 $5b$ cm 的直立圓錐體的體積為\n\n- A. $175$ cm$^3$\n- B. $245$ cm$^3$\n- C. $490$ cm$^3$\n- D. $735$ cm$^3$",
    "html": "<p>若一底半徑為 $5a$ cm 及高為 $7b$ cm 的直立圓柱體的體積為 $525$ cm$^3$ ，則一底半徑為 $7a$ cm 及高為 $5b$ cm 的直立圓錐體的體積為</p>\n<ul>\n<li>A. $175$ cm$^3$</li>\n<li>B. $245$ cm$^3$</li>\n<li>C. $490$ cm$^3$</li>\n<li>D. $735$ cm$^3$</li>\n</ul>",
    "file": "2020_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 39
   },
   {
    "subject": "數學",
@@ -7601,7 +7705,8 @@ window.QB = {
    "text": "圖中，$P$ 及 $Q$ 均為 $OR$ 上的點而 $U$ 及 $T$ 均為 $OS$ 上的點使得 $OP=PQ=QR$ 且 $PU\\parallel QT\\parallel RS$ 。梯形 $PQTU$ 的面積與梯形 $QRST$ 的面積之比為\n\n\n![Figure Q17 (as printed)](2020P2_zh_figs/Q17.png)\n\n- A. $1:2$\n- B. $2:3$\n- C. $3:5$\n- D. $4:9$",
    "html": "<p>圖中，$P$ 及 $Q$ 均為 $OR$ 上的點而 $U$ 及 $T$ 均為 $OS$ 上的點使得 $OP=PQ=QR$ 且 $PU\\parallel QT\\parallel RS$ 。梯形 $PQTU$ 的面積與梯形 $QRST$ 的面積之比為</p>\n<p><img alt=\"Figure Q17 (as printed)\" src=\"2020P2_zh_figs/Q17.png\" /></p>\n<ul>\n<li>A. $1:2$</li>\n<li>B. $2:3$</li>\n<li>C. $3:5$</li>\n<li>D. $4:9$</li>\n</ul>",
    "file": "2020_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 48
   },
   {
    "subject": "數學",
@@ -7618,7 +7723,8 @@ window.QB = {
    "text": "圖中，$ABCD$ 為一平行四邊形。設 $E$ 為 $AD$ 上的一點使得 $AE:ED=2:5$ 。延長 $CB$ 至點 $F$ 使得 $BF=DE$ 。將 $AB$ 與 $EF$ 的交點記為 $G$ 。已知 $BD$ 與 $CG$ 相交於點 $H$ 。若 $\\triangle AEG$ 的面積為 $48$ cm$^2$ ，則 $\\triangle CDH$ 的面積為\n\n\n![Figure Q18 (as printed)](2020P2_zh_figs/Q18.png)\n\n- A. $98$ cm$^2$\n- B. $343$ cm$^2$\n- C. $420$ cm$^2$\n- D. $588$ cm$^2$",
    "html": "<p>圖中，$ABCD$ 為一平行四邊形。設 $E$ 為 $AD$ 上的一點使得 $AE:ED=2:5$ 。延長 $CB$ 至點 $F$ 使得 $BF=DE$ 。將 $AB$ 與 $EF$ 的交點記為 $G$ 。已知 $BD$ 與 $CG$ 相交於點 $H$ 。若 $\\triangle AEG$ 的面積為 $48$ cm$^2$ ，則 $\\triangle CDH$ 的面積為</p>\n<p><img alt=\"Figure Q18 (as printed)\" src=\"2020P2_zh_figs/Q18.png\" /></p>\n<ul>\n<li>A. $98$ cm$^2$</li>\n<li>B. $343$ cm$^2$</li>\n<li>C. $420$ cm$^2$</li>\n<li>D. $588$ cm$^2$</li>\n</ul>",
    "file": "2020_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 43
   },
   {
    "subject": "數學",
@@ -7634,7 +7740,8 @@ window.QB = {
    "text": "根據圖中所示，下列何者必為正確？\nI. $ u - v + w = 0^\\circ $\nII. $ u + v - w = 180^\\circ $\nIII. $ u + v + w = 450^\\circ $\n\n\n![Figure Q19 (as printed)](2020P2_zh_figs/Q19.png)\n\n- A. 只有 I\n- B. 只有 II\n- C. 只有 I 及 III\n- D. 只有 II 及 III",
    "html": "<p>根據圖中所示，下列何者必為正確？\nI. $ u - v + w = 0^\\circ $\nII. $ u + v - w = 180^\\circ $\nIII. $ u + v + w = 450^\\circ $</p>\n<p><img alt=\"Figure Q19 (as printed)\" src=\"2020P2_zh_figs/Q19.png\" /></p>\n<ul>\n<li>A. 只有 I</li>\n<li>B. 只有 II</li>\n<li>C. 只有 I 及 III</li>\n<li>D. 只有 II 及 III</li>\n</ul>",
    "file": "2020_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 56
   },
   {
    "subject": "數學",
@@ -7650,7 +7757,8 @@ window.QB = {
    "text": "圖中，$ ABC $ 為一等邊三角形及 $ CDE $ 為一等腰三角形且 $ CD = CE $ 。若 $ \\angle DCE = 78^\\circ $ 及 $ \\angle ADC = \\angle CAD = 40^\\circ $，則 $ \\angle CBE = $\n\n\n![Figure Q20 (as printed)](2020P2_zh_figs/Q20.png)\n\n- A. $ 14^\\circ $\n- B. $ 19^\\circ $\n- C. $ 24^\\circ $\n- D. $ 29^\\circ $",
    "html": "<p>圖中，$ ABC $ 為一等邊三角形及 $ CDE $ 為一等腰三角形且 $ CD = CE $ 。若 $ \\angle DCE = 78^\\circ $ 及 $ \\angle ADC = \\angle CAD = 40^\\circ $，則 $ \\angle CBE = $</p>\n<p><img alt=\"Figure Q20 (as printed)\" src=\"2020P2_zh_figs/Q20.png\" /></p>\n<ul>\n<li>A. $ 14^\\circ $</li>\n<li>B. $ 19^\\circ $</li>\n<li>C. $ 24^\\circ $</li>\n<li>D. $ 29^\\circ $</li>\n</ul>",
    "file": "2020_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 70
   },
   {
    "subject": "數學",
@@ -7667,7 +7775,8 @@ window.QB = {
    "text": "圖中，$ ABCD $ 為一長方形。設 $ E $ 為 $ AD $ 上的一點使得 $ BE = 8 \\text{ cm} $ 及 $ CE = 15 \\text{ cm} $ 。若 $ BC = 17 \\text{ cm} $，求長方形 $ ABCD $ 的面積。\n\n\n![Figure Q21 (as printed)](2020P2_zh_figs/Q21.png)\n\n- A. $ 60 \\text{ cm}^2 $\n- B. $ 68 \\text{ cm}^2 $\n- C. $ 120 \\text{ cm}^2 $\n- D. $ 136 \\text{ cm}^2 $",
    "html": "<p>圖中，$ ABCD $ 為一長方形。設 $ E $ 為 $ AD $ 上的一點使得 $ BE = 8 \\text{ cm} $ 及 $ CE = 15 \\text{ cm} $ 。若 $ BC = 17 \\text{ cm} $，求長方形 $ ABCD $ 的面積。</p>\n<p><img alt=\"Figure Q21 (as printed)\" src=\"2020P2_zh_figs/Q21.png\" /></p>\n<ul>\n<li>A. $ 60 \\text{ cm}^2 $</li>\n<li>B. $ 68 \\text{ cm}^2 $</li>\n<li>C. $ 120 \\text{ cm}^2 $</li>\n<li>D. $ 136 \\text{ cm}^2 $</li>\n</ul>",
    "file": "2020_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 62
   },
   {
    "subject": "數學",
@@ -7684,7 +7793,8 @@ window.QB = {
    "text": "圖中, $ABCDE$ 為一圓。若 $AB=10\\, \\text{cm}$ 、$BC=5\\, \\text{cm}$ 、$\\angle ABC=90^\\circ$ 及 $\\angle CED=40^\\circ$ ，求 $CD$ 準確至最接近的 $\\text{cm}$ 。\n\n\n![Figure Q22 (as printed)](2020P2_zh_figs/Q22.png)\n\n- A. $5\\, \\text{cm}$\n- B. $6\\, \\text{cm}$\n- C. $7\\, \\text{cm}$\n- D. $8\\, \\text{cm}$",
    "html": "<p>圖中, $ABCDE$ 為一圓。若 $AB=10\\, \\text{cm}$ 、$BC=5\\, \\text{cm}$ 、$\\angle ABC=90^\\circ$ 及 $\\angle CED=40^\\circ$ ，求 $CD$ 準確至最接近的 $\\text{cm}$ 。</p>\n<p><img alt=\"Figure Q22 (as printed)\" src=\"2020P2_zh_figs/Q22.png\" /></p>\n<ul>\n<li>A. $5\\, \\text{cm}$</li>\n<li>B. $6\\, \\text{cm}$</li>\n<li>C. $7\\, \\text{cm}$</li>\n<li>D. $8\\, \\text{cm}$</li>\n</ul>",
    "file": "2020_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 37
   },
   {
    "subject": "數學",
@@ -7700,7 +7810,8 @@ window.QB = {
    "text": "某船位於燈塔以西 $50\\, \\text{km}$ 。若該船沿 $S60^\\circ E$ 方向移動，求該船與燈塔間的最短距離。\n\n- A. $20\\, \\text{km}$\n- B. $25\\, \\text{km}$\n- C. $43\\, \\text{km}$\n- D. $87\\, \\text{km}$",
    "html": "<p>某船位於燈塔以西 $50\\, \\text{km}$ 。若該船沿 $S60^\\circ E$ 方向移動，求該船與燈塔間的最短距離。</p>\n<ul>\n<li>A. $20\\, \\text{km}$</li>\n<li>B. $25\\, \\text{km}$</li>\n<li>C. $43\\, \\text{km}$</li>\n<li>D. $87\\, \\text{km}$</li>\n</ul>",
    "file": "2020_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 48
   },
   {
    "subject": "數學",
@@ -7716,7 +7827,8 @@ window.QB = {
    "text": "點 $P$ 向左平移 4 單位至點 $Q$ 。若 $Q$ 對 $y$ 軸的反射影像的坐標為 $(5,-1)$，則 $P$ 的極坐標為\n\n- A. $(1,45^\\circ)$\n- B. $(1,225^\\circ)$\n- C. $(\\sqrt{2},45^\\circ)$\n- D. $(\\sqrt{2},225^\\circ)$",
    "html": "<p>點 $P$ 向左平移 4 單位至點 $Q$ 。若 $Q$ 對 $y$ 軸的反射影像的坐標為 $(5,-1)$，則 $P$ 的極坐標為</p>\n<ul>\n<li>A. $(1,45^\\circ)$</li>\n<li>B. $(1,225^\\circ)$</li>\n<li>C. $(\\sqrt{2},45^\\circ)$</li>\n<li>D. $(\\sqrt{2},225^\\circ)$</li>\n</ul>",
    "file": "2020_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 53
   },
   {
    "subject": "數學",
@@ -7733,7 +7845,8 @@ window.QB = {
    "text": "設 $ A $ 為直線 $ 9x + 4y - 7 = 0 $ 與直線 $ 9x - 4y + 7 = 0 $ 的交點。若 $ P $ 為直角坐標平面上的一動點使得 $ P $ 與 $ A $ 間的距離為 8 ，則 $ P $ 的軌跡為一\n\n- A. 圓。\n- B. 三角形。\n- C. 四邊形。\n- D. 正六邊形。",
    "html": "<p>設 $ A $ 為直線 $ 9x + 4y - 7 = 0 $ 與直線 $ 9x - 4y + 7 = 0 $ 的交點。若 $ P $ 為直角坐標平面上的一動點使得 $ P $ 與 $ A $ 間的距離為 8 ，則 $ P $ 的軌跡為一</p>\n<ul>\n<li>A. 圓。</li>\n<li>B. 三角形。</li>\n<li>C. 四邊形。</li>\n<li>D. 正六邊形。</li>\n</ul>",
    "file": "2020_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 70
   },
   {
    "subject": "數學",
@@ -7749,7 +7862,8 @@ window.QB = {
    "text": "直線 $ L $ 的方程為 $ kx + 4y - 2k = 0 $，其中 $ k $ 為一常數。若 $ L $ 垂直於直線 $ 6x - 9y + 4 = 0 $，求 $ L $ 的 $ y $ 截距。\n\n- A. $-3$\n- B. $-2$\n- C. 2\n- D. 3",
    "html": "<p>直線 $ L $ 的方程為 $ kx + 4y - 2k = 0 $，其中 $ k $ 為一常數。若 $ L $ 垂直於直線 $ 6x - 9y + 4 = 0 $，求 $ L $ 的 $ y $ 截距。</p>\n<ul>\n<li>A. $-3$</li>\n<li>B. $-2$</li>\n<li>C. 2</li>\n<li>D. 3</li>\n</ul>",
    "file": "2020_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 52
   },
   {
    "subject": "數學",
@@ -7765,7 +7879,8 @@ window.QB = {
    "text": "圓 $ C_1 $ 及圓 $ C_2 $ 的方程分別為 $ 2x^2 + 2y^2 + 4x + 8y - 149 = 0 $ 及 $ x^2 + y^2 - 8x - 20y - 53 = 0 $。下列何者正確？\nI. $ C_1 $ 的圓心在 $ C_2 $ 上。\nII. $ C_1 $ 與 $ C_2 $ 的半徑相等。\nIII. $ C_1 $ 與 $ C_2 $ 相交於兩相異點。\n\n- A. 只有 I\n- B. 只有 II\n- C. 只有 I 及 III\n- D. 只有 II 及 III",
    "html": "<p>圓 $ C_1 $ 及圓 $ C_2 $ 的方程分別為 $ 2x^2 + 2y^2 + 4x + 8y - 149 = 0 $ 及 $ x^2 + y^2 - 8x - 20y - 53 = 0 $。下列何者正確？\nI. $ C_1 $ 的圓心在 $ C_2 $ 上。\nII. $ C_1 $ 與 $ C_2 $ 的半徑相等。\nIII. $ C_1 $ 與 $ C_2 $ 相交於兩相異點。</p>\n<ul>\n<li>A. 只有 I</li>\n<li>B. 只有 II</li>\n<li>C. 只有 I 及 III</li>\n<li>D. 只有 II 及 III</li>\n</ul>",
    "file": "2020_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 50
   },
   {
    "subject": "數學",
@@ -7781,7 +7896,8 @@ window.QB = {
    "text": "從四張分別記有數字 3、5、7 及 9 的紙卡中，隨機同時抽出兩個數字。求抽出數字之積大於 35 的概率。\n\n- A. $\\dfrac{1}{2}$\n- B. $\\dfrac{1}{3}$\n- C. $\\dfrac{2}{3}$\n- D. $\\dfrac{3}{8}$",
    "html": "<p>從四張分別記有數字 3、5、7 及 9 的紙卡中，隨機同時抽出兩個數字。求抽出數字之積大於 35 的概率。</p>\n<ul>\n<li>A. $\\dfrac{1}{2}$</li>\n<li>B. $\\dfrac{1}{3}$</li>\n<li>C. $\\dfrac{2}{3}$</li>\n<li>D. $\\dfrac{3}{8}$</li>\n</ul>",
    "file": "2020_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 54
   },
   {
    "subject": "數學",
@@ -7798,7 +7914,8 @@ window.QB = {
    "text": "下面的棒形圖顯示某些學生擁有原子筆的數目的分佈。求該分佈的四分位數間距。\n\n\n![Figure Q29 (as printed)](2020P2_zh_figs/Q29.png)\n\n- A. 1\n- B. 2\n- C. 4\n- D. 6",
    "html": "<p>下面的棒形圖顯示某些學生擁有原子筆的數目的分佈。求該分佈的四分位數間距。</p>\n<p><img alt=\"Figure Q29 (as printed)\" src=\"2020P2_zh_figs/Q29.png\" /></p>\n<ul>\n<li>A. 1</li>\n<li>B. 2</li>\n<li>C. 4</li>\n<li>D. 6</li>\n</ul>",
    "file": "2020_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 69
   },
   {
    "subject": "數學",
@@ -7815,7 +7932,8 @@ window.QB = {
    "text": "考慮以下整數：\n\n3   3   8   8   10   12   m\n\n n 設 $x$、$y$ 及 $z$ 分別為以上整數的中位數、平均值及眾數。若以上整數的分佈域為 9，則下列何者必為正確？\nI. $x=8$\nII. $y=8$\nIII. $z=8$\n\n- A. 只有 I\n- B. 只有 II\n- C. 只有 I 及 III\n- D. 只有 II 及 III 乙部",
    "html": "<p>考慮以下整數：</p>\n<p>3   3   8   8   10   12   m</p>\n<p>n 設 $x$、$y$ 及 $z$ 分別為以上整數的中位數、平均值及眾數。若以上整數的分佈域為 9，則下列何者必為正確？\nI. $x=8$\nII. $y=8$\nIII. $z=8$</p>\n<ul>\n<li>A. 只有 I</li>\n<li>B. 只有 II</li>\n<li>C. 只有 I 及 III</li>\n<li>D. 只有 II 及 III 乙部</li>\n</ul>",
    "file": "2020_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 49
   },
   {
    "subject": "數學",
@@ -7831,7 +7949,8 @@ window.QB = {
    "text": "B000000000000030\\_{16} =\n\n- A. 10×2^{60}+48\n- B. 11×2^{60}+48\n- C. 10×2^{64}+768\n- D. 11×2^{64}+768",
    "html": "<p>B000000000000030_{16} =</p>\n<ul>\n<li>A. 10×2^{60}+48</li>\n<li>B. 11×2^{60}+48</li>\n<li>C. 10×2^{64}+768</li>\n<li>D. 11×2^{64}+768</li>\n</ul>",
    "file": "2020_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 67
   },
   {
    "subject": "數學",
@@ -7848,7 +7967,8 @@ window.QB = {
    "text": "若方程 (log\\_{π}x)^{2}−10log\\_{π}x+24=log\\_{π}x 的根為 α 及 β ，則 αβ =\n\n- A. π^{10}\n- B. π^{11}\n- C. log\\_{π}10\n- D. log\\_{π}11",
    "html": "<p>若方程 (log_{π}x)^{2}−10log_{π}x+24=log_{π}x 的根為 α 及 β ，則 αβ =</p>\n<ul>\n<li>A. π^{10}</li>\n<li>B. π^{11}</li>\n<li>C. log_{π}10</li>\n<li>D. log_{π}11</li>\n</ul>",
    "file": "2020_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 40
   },
   {
    "subject": "數學",
@@ -7864,7 +7984,8 @@ window.QB = {
    "text": "圖中所示為在同一直角坐標系上 y=a^{x} 的圖像及 y=b^{x} 的圖像 ，其中 a 及 b 均為正常數。若 y=a^{x} 的圖像為 y=b^{x} 的圖像對 y 軸的反射影像 ，則下列何者正確？ -\nI. a<1 -\nII. b>1 -\nIII. ab=1\n\n\n![Figure Q33 (as printed)](2020P2_zh_figs/Q33.png)\n\n- A. 只有 I 及 II\n- B. 只有 I 及 III\n- C. 只有 II 及 III\n- D. I 、 II 及 III",
    "html": "<p>圖中所示為在同一直角坐標系上 y=a^{x} 的圖像及 y=b^{x} 的圖像 ，其中 a 及 b 均為正常數。若 y=a^{x} 的圖像為 y=b^{x} 的圖像對 y 軸的反射影像 ，則下列何者正確？ -\nI. a&lt;1 -\nII. b&gt;1 -\nIII. ab=1</p>\n<p><img alt=\"Figure Q33 (as printed)\" src=\"2020P2_zh_figs/Q33.png\" /></p>\n<ul>\n<li>A. 只有 I 及 II</li>\n<li>B. 只有 I 及 III</li>\n<li>C. 只有 II 及 III</li>\n<li>D. I 、 II 及 III</li>\n</ul>",
    "file": "2020_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 40
   },
   {
    "subject": "數學",
@@ -7881,7 +8002,8 @@ window.QB = {
    "text": "圖中的圖像顯示 $ x^3 $ 與 $ \\sqrt{y} $ 之間的線性關係。若 $ x=2 $，則 $ y=$\n\n\n![Figure Q34 (as printed)](2020P2_zh_figs/Q34.png)\n\n- A. 3。\n- B. 8。\n- C. 9。\n- D. 33。",
    "html": "<p>圖中的圖像顯示 $ x^3 $ 與 $ \\sqrt{y} $ 之間的線性關係。若 $ x=2 $，則 $ y=$</p>\n<p><img alt=\"Figure Q34 (as printed)\" src=\"2020P2_zh_figs/Q34.png\" /></p>\n<ul>\n<li>A. 3。</li>\n<li>B. 8。</li>\n<li>C. 9。</li>\n<li>D. 33。</li>\n</ul>",
    "file": "2020_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 48
   },
   {
    "subject": "數學",
@@ -7898,7 +8020,8 @@ window.QB = {
    "text": "若 $ a>0 $，則下列何者為等差數列？\nI. $\\log a^{-3}, \\log a, \\log a^5$\nII. $8-4a, 9-5a, 10-6a$\nIII. $\\cos(90-a)^\\circ, \\cos 90^\\circ, \\cos(90+a)^\\circ$\n\n- A. 只有 I 及 II\n- B. 只有 I 及 III\n- C. 只有 II 及 III\n- D. I 、II 及 III",
    "html": "<p>若 $ a&gt;0 $，則下列何者為等差數列？\nI. $\\log a^{-3}, \\log a, \\log a^5$\nII. $8-4a, 9-5a, 10-6a$\nIII. $\\cos(90-a)^\\circ, \\cos 90^\\circ, \\cos(90+a)^\\circ$</p>\n<ul>\n<li>A. 只有 I 及 II</li>\n<li>B. 只有 I 及 III</li>\n<li>C. 只有 II 及 III</li>\n<li>D. I 、II 及 III</li>\n</ul>",
    "file": "2020_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 33
   },
   {
    "subject": "數學",
@@ -7915,7 +8038,8 @@ window.QB = {
    "text": "考慮以下的不等式組：\n\n$$\n\n\\begin{cases}\n\n0 \\leq x \\leq 2 \\\\\n\n2x + y + 3 \\geq 0 \\\\\n\nx + y + 1 \\leq 0\n\n\\end{cases}\n\n$$\n\n設 $ D $ 為表示以上的不等式組的解之區域。求常數 $ k $ 使得 $ 4x + 3y + k $ 的最小值為 24 ，其中 $ (x, y) $ 為 $ D $ 中的一點。\n\n- A. 25\n- B. 27\n- C. 37\n- D. 53",
    "html": "<p>考慮以下的不等式組：</p>\n<p>$$</p>\n<p>\\begin{cases}</p>\n<p>0 \\leq x \\leq 2 \\</p>\n<p>2x + y + 3 \\geq 0 \\</p>\n<p>x + y + 1 \\leq 0</p>\n<p>\\end{cases}</p>\n<p>$$</p>\n<p>設 $ D $ 為表示以上的不等式組的解之區域。求常數 $ k $ 使得 $ 4x + 3y + k $ 的最小值為 24 ，其中 $ (x, y) $ 為 $ D $ 中的一點。</p>\n<ul>\n<li>A. 25</li>\n<li>B. 27</li>\n<li>C. 37</li>\n<li>D. 53</li>\n</ul>",
    "file": "2020_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 34
   },
   {
    "subject": "數學",
@@ -7931,7 +8055,8 @@ window.QB = {
    "text": "定義 $ z_1 = \\dfrac{2 + ki}{1 + i} $ 及 $ z_2 = \\dfrac{k + 5i}{2 - i} $，其中 $ k $ 為一實數。若 $ z_1 $ 的虛部等於 $ z_2 $ 的虛部，則 $ z_1 - z_2 = $\n\n- A. $-20$。\n- B. $0$。\n- C. $3$。\n- D. $10$。",
    "html": "<p>定義 $ z_1 = \\dfrac{2 + ki}{1 + i} $ 及 $ z_2 = \\dfrac{k + 5i}{2 - i} $，其中 $ k $ 為一實數。若 $ z_1 $ 的虛部等於 $ z_2 $ 的虛部，則 $ z_1 - z_2 = $</p>\n<ul>\n<li>A. $-20$。</li>\n<li>B. $0$。</li>\n<li>C. $3$。</li>\n<li>D. $10$。</li>\n</ul>",
    "file": "2020_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 42
   },
   {
    "subject": "數學",
@@ -7948,7 +8073,8 @@ window.QB = {
    "text": "圖中，$ ABCDEF $ 為一直立三角柱體。$ P $ 為 $ AE $ 上的一點。若 $ AB = AC = 12 \\, \\text{cm} $ 、$ AP = 9 \\, \\text{cm} $ 、$ EP = 5 \\, \\text{cm} $ 及 $ BD = 2k \\, \\text{cm} $，求 $ \\Delta BDP $ 的面積。\n\n\n![Figure Q38 (as printed)](2020P2_zh_figs/Q38.png)\n\n- A. $\\sqrt{(k^2 - 1)(196 - k^2)} \\, \\text{cm}^2$\n- B. $\\sqrt{(k^2 - 1)(196 + k^2)} \\, \\text{cm}^2$\n- C. $\\sqrt{(k^2 + 1)(196 - k^2)} \\, \\text{cm}^2$\n- D. $\\sqrt{(k^2 + 1)(196 + k^2)} \\, \\text{cm}^2$",
    "html": "<p>圖中，$ ABCDEF $ 為一直立三角柱體。$ P $ 為 $ AE $ 上的一點。若 $ AB = AC = 12 \\, \\text{cm} $ 、$ AP = 9 \\, \\text{cm} $ 、$ EP = 5 \\, \\text{cm} $ 及 $ BD = 2k \\, \\text{cm} $，求 $ \\Delta BDP $ 的面積。</p>\n<p><img alt=\"Figure Q38 (as printed)\" src=\"2020P2_zh_figs/Q38.png\" /></p>\n<ul>\n<li>A. $\\sqrt{(k^2 - 1)(196 - k^2)} \\, \\text{cm}^2$</li>\n<li>B. $\\sqrt{(k^2 - 1)(196 + k^2)} \\, \\text{cm}^2$</li>\n<li>C. $\\sqrt{(k^2 + 1)(196 - k^2)} \\, \\text{cm}^2$</li>\n<li>D. $\\sqrt{(k^2 + 1)(196 + k^2)} \\, \\text{cm}^2$</li>\n</ul>",
    "file": "2020_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 29
   },
   {
    "subject": "數學",
@@ -7965,7 +8091,8 @@ window.QB = {
    "text": "圖中，$ ABC $ 及 $ CDE $ 均為圓使得 $ ADC $ 為一直線。$ PQ $ 為該兩圓在 $ C $ 的公切線。$ AB $ 為圓 $ CDE $ 在 $ E $ 的切線。若 $ \\angle ADE = 100^\\circ $ 及 $ \\angle BCQ = 35^\\circ $，則 $ \\angle ABC = $\n\n\n![Figure Q39 (as printed)](2020P2_zh_figs/Q39.png)\n\n- A. $55^\\circ$。\n- B. $65^\\circ$。\n- C. $70^\\circ$。\n- D. $80^\\circ$。",
    "html": "<p>圖中，$ ABC $ 及 $ CDE $ 均為圓使得 $ ADC $ 為一直線。$ PQ $ 為該兩圓在 $ C $ 的公切線。$ AB $ 為圓 $ CDE $ 在 $ E $ 的切線。若 $ \\angle ADE = 100^\\circ $ 及 $ \\angle BCQ = 35^\\circ $，則 $ \\angle ABC = $</p>\n<p><img alt=\"Figure Q39 (as printed)\" src=\"2020P2_zh_figs/Q39.png\" /></p>\n<ul>\n<li>A. $55^\\circ$。</li>\n<li>B. $65^\\circ$。</li>\n<li>C. $70^\\circ$。</li>\n<li>D. $80^\\circ$。</li>\n</ul>",
    "file": "2020_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 28
   },
   {
    "subject": "數學",
@@ -7982,7 +8109,8 @@ window.QB = {
    "text": "某三角形的三邊的方程為 $4x+3y=24$ 、 $4x-3y=24$ 及 $x=a$ ，其中 $a$ 為一常數。若該三角形的內心的 $x$ 坐標為 31 ，則 $a=$\n\n- A. 15。\n- B. 31。\n- C. 45。\n- D. 51。",
    "html": "<p>某三角形的三邊的方程為 $4x+3y=24$ 、 $4x-3y=24$ 及 $x=a$ ，其中 $a$ 為一常數。若該三角形的內心的 $x$ 坐標為 31 ，則 $a=$</p>\n<ul>\n<li>A. 15。</li>\n<li>B. 31。</li>\n<li>C. 45。</li>\n<li>D. 51。</li>\n</ul>",
    "file": "2020_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 23
   },
   {
    "subject": "數學",
@@ -7999,7 +8127,8 @@ window.QB = {
    "text": "求 $c$ 值的範圍使得圓 $x^2+y^2-6x+cy-7=0$ 與直線 $x-y+9=0$ 相交。\n\n- A. $-56 \\leq c \\leq 8$\n- B. $-8 \\leq c \\leq 56$\n- C. $c \\leq -56$ 或 $c \\geq 8$\n- D. $c \\leq -8$ 或 $c \\geq 56$",
    "html": "<p>求 $c$ 值的範圍使得圓 $x^2+y^2-6x+cy-7=0$ 與直線 $x-y+9=0$ 相交。</p>\n<ul>\n<li>A. $-56 \\leq c \\leq 8$</li>\n<li>B. $-8 \\leq c \\leq 56$</li>\n<li>C. $c \\leq -56$ 或 $c \\geq 8$</li>\n<li>D. $c \\leq -8$ 或 $c \\geq 56$</li>\n</ul>",
    "file": "2020_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 33
   },
   {
    "subject": "數學",
@@ -8015,7 +8144,8 @@ window.QB = {
    "text": "6 名男生與 5 名女生排成一隊。若沒有男生相鄰而排，則可排成多少不同的隊？\n\n- A. 86 400\n- B. 172 800\n- C. 213 444\n- D. 39 916 800",
    "html": "<p>6 名男生與 5 名女生排成一隊。若沒有男生相鄰而排，則可排成多少不同的隊？</p>\n<ul>\n<li>A. 86 400</li>\n<li>B. 172 800</li>\n<li>C. 213 444</li>\n<li>D. 39 916 800</li>\n</ul>",
    "file": "2020_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 61
   },
   {
    "subject": "數學",
@@ -8031,7 +8161,8 @@ window.QB = {
    "text": "某箱子內有 8 本中文書及 7 本英文書。若從該箱子中隨機同時抽出 5 本書，求抽出至多 3 本中文書的概率。\n\n- A. $\\dfrac{2}{11}$\n- B. $\\dfrac{9}{11}$\n- C. $\\dfrac{61}{143}$\n- D. $\\dfrac{82}{143}$",
    "html": "<p>某箱子內有 8 本中文書及 7 本英文書。若從該箱子中隨機同時抽出 5 本書，求抽出至多 3 本中文書的概率。</p>\n<ul>\n<li>A. $\\dfrac{2}{11}$</li>\n<li>B. $\\dfrac{9}{11}$</li>\n<li>C. $\\dfrac{61}{143}$</li>\n<li>D. $\\dfrac{82}{143}$</li>\n</ul>",
    "file": "2020_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 56
   },
   {
    "subject": "數學",
@@ -8048,7 +8179,8 @@ window.QB = {
    "text": "在一測驗，某兩學生的測驗得分之差及標準分之差分別為 30 分及 6。在該測驗，測驗得分的標準差為\n\n- A. 5 分。\n- B. 24 分。\n- C. 25 分。\n- D. 36 分。",
    "html": "<p>在一測驗，某兩學生的測驗得分之差及標準分之差分別為 30 分及 6。在該測驗，測驗得分的標準差為</p>\n<ul>\n<li>A. 5 分。</li>\n<li>B. 24 分。</li>\n<li>C. 25 分。</li>\n<li>D. 36 分。</li>\n</ul>",
    "file": "2020_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 45
   },
   {
    "subject": "數學",
@@ -8065,7 +8197,8 @@ window.QB = {
    "text": "六個數 $20a+3$、$20a+5$、$20a+9$、$20a+11$、$20a+15$ 及 $20a+17$ 的方差為\n\n- A. 5。\n- B. 10。\n- C. 25。\n- D. $20a+25$。\n\n\n---\n\n## 答案（官方評卷參考）\n\n| 題–答 | | | | |\n|---|---|---|---|---|\n| 1 C | 2 C | 3 A | 4 A | 5 B |\n| 6 D | 7 C | 8 A | 9 A | 10 B |\n| 11 A | 12 D | 13 D | 14 B | 15 D |\n| 16 B | 17 C | 18 B | 19 B | 20 D |\n| 21 C | 22 C | 23 B | 24 D | 25 A |\n| 26 D | 27 C | 28 B | 29 A | 30 A |\n| 31 B | 32 B | 33 D | 34 C | 35 D |\n| 36 C | 37 C | 38 A | 39 A | 40 D |\n| 41 D | 42 A | 43 B | 44 A | 45 C |",
    "html": "<p>六個數 $20a+3$、$20a+5$、$20a+9$、$20a+11$、$20a+15$ 及 $20a+17$ 的方差為</p>\n<ul>\n<li>A. 5。</li>\n<li>B. 10。</li>\n<li>C. 25。</li>\n<li>D. $20a+25$。</li>\n</ul>\n<hr />\n<h2>答案（官方評卷參考）</h2>\n<table>\n<thead>\n<tr>\n<th>題–答</th>\n<th></th>\n<th></th>\n<th></th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1 C</td>\n<td>2 C</td>\n<td>3 A</td>\n<td>4 A</td>\n<td>5 B</td>\n</tr>\n<tr>\n<td>6 D</td>\n<td>7 C</td>\n<td>8 A</td>\n<td>9 A</td>\n<td>10 B</td>\n</tr>\n<tr>\n<td>11 A</td>\n<td>12 D</td>\n<td>13 D</td>\n<td>14 B</td>\n<td>15 D</td>\n</tr>\n<tr>\n<td>16 B</td>\n<td>17 C</td>\n<td>18 B</td>\n<td>19 B</td>\n<td>20 D</td>\n</tr>\n<tr>\n<td>21 C</td>\n<td>22 C</td>\n<td>23 B</td>\n<td>24 D</td>\n<td>25 A</td>\n</tr>\n<tr>\n<td>26 D</td>\n<td>27 C</td>\n<td>28 B</td>\n<td>29 A</td>\n<td>30 A</td>\n</tr>\n<tr>\n<td>31 B</td>\n<td>32 B</td>\n<td>33 D</td>\n<td>34 C</td>\n<td>35 D</td>\n</tr>\n<tr>\n<td>36 C</td>\n<td>37 C</td>\n<td>38 A</td>\n<td>39 A</td>\n<td>40 D</td>\n</tr>\n<tr>\n<td>41 D</td>\n<td>42 A</td>\n<td>43 B</td>\n<td>44 A</td>\n<td>45 C</td>\n</tr>\n</tbody>\n</table>",
    "file": "2020_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 50
   },
   {
    "subject": "數學",
@@ -8663,7 +8796,8 @@ window.QB = {
    "text": "$(a-b)(a^2+ab-b^2)=$\n\n- A. $(a-b)^3$\n- B. $a^3-b^3$\n- C. $a^3-2ab^2+b^3$\n- D. $a^3-2a^2b+2ab^2+b^3$",
    "html": "<p>$(a-b)(a^2+ab-b^2)=$</p>\n<ul>\n<li>A. $(a-b)^3$</li>\n<li>B. $a^3-b^3$</li>\n<li>C. $a^3-2ab^2+b^3$</li>\n<li>D. $a^3-2a^2b+2ab^2+b^3$</li>\n</ul>",
    "file": "2019_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 67
   },
   {
    "subject": "數學",
@@ -8679,7 +8813,8 @@ window.QB = {
    "text": "$(a-b)(a^2+ab-b^2)=$\n\n- A. $(a-b)^3$.\n- B. $a^3-b^3$.\n- C. $a^3-2ab^2+b^3$.\n- D. $a^3-2a^2b+2ab^2+b^3$.",
    "html": "<p>$(a-b)(a^2+ab-b^2)=$</p>\n<ul>\n<li>A. $(a-b)^3$.</li>\n<li>B. $a^3-b^3$.</li>\n<li>C. $a^3-2ab^2+b^3$.</li>\n<li>D. $a^3-2a^2b+2ab^2+b^3$.</li>\n</ul>",
    "file": "2019_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 67
   },
   {
    "subject": "數學",
@@ -8695,7 +8830,8 @@ window.QB = {
    "text": "$\\frac{(6x^7)^2}{4x^5}=$\n\n- A. $3x^4$\n- B. $9x^4$\n- C. $3x^9$\n- D. $9x^9$",
    "html": "<p>$\\frac{(6x^7)^2}{4x^5}=$</p>\n<ul>\n<li>A. $3x^4$</li>\n<li>B. $9x^4$</li>\n<li>C. $3x^9$</li>\n<li>D. $9x^9$</li>\n</ul>",
    "file": "2019_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 88
   },
   {
    "subject": "數學",
@@ -8711,7 +8847,8 @@ window.QB = {
    "text": "$\\dfrac{(6x^7)^2}{4x^5}=$\n\n- A. $3x^4$.\n- B. $9x^4$.\n- C. $3x^9$.\n- D. $9x^9$.",
    "html": "<p>$\\dfrac{(6x^7)^2}{4x^5}=$</p>\n<ul>\n<li>A. $3x^4$.</li>\n<li>B. $9x^4$.</li>\n<li>C. $3x^9$.</li>\n<li>D. $9x^9$.</li>\n</ul>",
    "file": "2019_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 88
   },
   {
    "subject": "數學",
@@ -8727,7 +8864,8 @@ window.QB = {
    "text": "若 $6x-7y=40=2x+11y$，則 $y=$\n\n- A. $-4$\n- B. $2$\n- C. $4$\n- D. $9$",
    "html": "<p>若 $6x-7y=40=2x+11y$，則 $y=$</p>\n<ul>\n<li>A. $-4$</li>\n<li>B. $2$</li>\n<li>C. $4$</li>\n<li>D. $9$</li>\n</ul>",
    "file": "2019_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 90
   },
   {
    "subject": "數學",
@@ -8743,7 +8881,8 @@ window.QB = {
    "text": "If $6x-7y=40=2x+11y$, then $y=$\n\n- A. $-4$.\n- B. $2$.\n- C. $4$.\n- D. $9$.",
    "html": "<p>If $6x-7y=40=2x+11y$, then $y=$</p>\n<ul>\n<li>A. $-4$.</li>\n<li>B. $2$.</li>\n<li>C. $4$.</li>\n<li>D. $9$.</li>\n</ul>",
    "file": "2019_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 90
   },
   {
    "subject": "數學",
@@ -8759,7 +8898,8 @@ window.QB = {
    "text": "若 $\\alpha$ 及 $\\beta$ 均為常數使得 $(x-8)(x+\\alpha)-6\\equiv(x-9)^2+\\beta$，則 $\\beta=$\n\n- A. $-26$\n- B. $-10$\n- C. $-7$\n- D. $-6$",
    "html": "<p>若 $\\alpha$ 及 $\\beta$ 均為常數使得 $(x-8)(x+\\alpha)-6\\equiv(x-9)^2+\\beta$，則 $\\beta=$</p>\n<ul>\n<li>A. $-26$</li>\n<li>B. $-10$</li>\n<li>C. $-7$</li>\n<li>D. $-6$</li>\n</ul>",
    "file": "2019_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 69
   },
   {
    "subject": "數學",
@@ -8775,7 +8915,8 @@ window.QB = {
    "text": "If $\\alpha$ and $\\beta$ are constants such that $(x-8)(x+\\alpha)-6\\equiv(x-9)^2+\\beta$, then $\\beta=$\n\n- A. $-26$.\n- B. $-10$.\n- C. $-7$.\n- D. $-6$.",
    "html": "<p>If $\\alpha$ and $\\beta$ are constants such that $(x-8)(x+\\alpha)-6\\equiv(x-9)^2+\\beta$, then $\\beta=$</p>\n<ul>\n<li>A. $-26$.</li>\n<li>B. $-10$.</li>\n<li>C. $-7$.</li>\n<li>D. $-6$.</li>\n</ul>",
    "file": "2019_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 69
   },
   {
    "subject": "數學",
@@ -8791,7 +8932,8 @@ window.QB = {
    "text": "若 $h=3-\\frac{5}{k+4}$ ，則 $k=$\n\n- A. $\\frac{4h-7}{3-h}$\n- B. $\\frac{4h-17}{3-h}$\n- C. $\\frac{4h-7}{3+h}$\n- D. $\\frac{4h-17}{3+h}$",
    "html": "<p>若 $h=3-\\frac{5}{k+4}$ ，則 $k=$</p>\n<ul>\n<li>A. $\\frac{4h-7}{3-h}$</li>\n<li>B. $\\frac{4h-17}{3-h}$</li>\n<li>C. $\\frac{4h-7}{3+h}$</li>\n<li>D. $\\frac{4h-17}{3+h}$</li>\n</ul>",
    "file": "2019_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 75
   },
   {
    "subject": "數學",
@@ -8807,7 +8949,8 @@ window.QB = {
    "text": "If $h=3-\\dfrac{5}{k+4}$, then $k=$\n\n- A. $\\dfrac{4h-7}{3-h}$.\n- B. $\\dfrac{4h-17}{3-h}$.\n- C. $\\dfrac{4h-7}{3+h}$.\n- D. $\\dfrac{4h-17}{3+h}$.",
    "html": "<p>If $h=3-\\dfrac{5}{k+4}$, then $k=$</p>\n<ul>\n<li>A. $\\dfrac{4h-7}{3-h}$.</li>\n<li>B. $\\dfrac{4h-17}{3-h}$.</li>\n<li>C. $\\dfrac{4h-7}{3+h}$.</li>\n<li>D. $\\dfrac{4h-17}{3+h}$.</li>\n</ul>",
    "file": "2019_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 75
   },
   {
    "subject": "數學",
@@ -8823,7 +8966,8 @@ window.QB = {
    "text": "若 $0.06557 < x < 0.06564$ ，則下列何者正確？\n\n- A. $x=0.065$（準確至二位小數）\n- B. $x=0.065$（準確至二位有效數字）\n- C. $x=0.0656$（準確至三位小數）\n- D. $x=0.0656$（準確至三位有效數字）",
    "html": "<p>若 $0.06557 &lt; x &lt; 0.06564$ ，則下列何者正確？</p>\n<ul>\n<li>A. $x=0.065$（準確至二位小數）</li>\n<li>B. $x=0.065$（準確至二位有效數字）</li>\n<li>C. $x=0.0656$（準確至三位小數）</li>\n<li>D. $x=0.0656$（準確至三位有效數字）</li>\n</ul>",
    "file": "2019_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 80
   },
   {
    "subject": "數學",
@@ -8839,7 +8983,8 @@ window.QB = {
    "text": "If $0.06557 < x < 0.06564$, which of the following is true?\n\n- A. $x=0.065$ (correct to 2 decimal places).\n- B. $x=0.065$ (correct to 2 significant figures).\n- C. $x=0.0656$ (correct to 3 decimal places).\n- D. $x=0.0656$ (correct to 3 significant figures).",
    "html": "<p>If $0.06557 &lt; x &lt; 0.06564$, which of the following is true?</p>\n<ul>\n<li>A. $x=0.065$ (correct to 2 decimal places).</li>\n<li>B. $x=0.065$ (correct to 2 significant figures).</li>\n<li>C. $x=0.0656$ (correct to 3 decimal places).</li>\n<li>D. $x=0.0656$ (correct to 3 significant figures).</li>\n</ul>",
    "file": "2019_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 80
   },
   {
    "subject": "數學",
@@ -8855,7 +9000,8 @@ window.QB = {
    "text": "滿足複合不等式 $-2(x-5)+5<21$ 或 $\\frac{3x-5}{7}>1$ 的最小整數為\n\n- A. $-3$\n- B. $-2$\n- C. $4$\n- D. $5$",
    "html": "<p>滿足複合不等式 $-2(x-5)+5&lt;21$ 或 $\\frac{3x-5}{7}&gt;1$ 的最小整數為</p>\n<ul>\n<li>A. $-3$</li>\n<li>B. $-2$</li>\n<li>C. $4$</li>\n<li>D. $5$</li>\n</ul>",
    "file": "2019_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 61
   },
   {
    "subject": "數學",
@@ -8871,7 +9017,8 @@ window.QB = {
    "text": "The least integer satisfying the compound inequality $-2(x-5)+5 < 21$ or $\\dfrac{3x-5}{7} > 1$ is\n\n- A. $-3$.\n- B. $-2$.\n- C. $4$.\n- D. $5$.",
    "html": "<p>The least integer satisfying the compound inequality $-2(x-5)+5 &lt; 21$ or $\\dfrac{3x-5}{7} &gt; 1$ is</p>\n<ul>\n<li>A. $-3$.</li>\n<li>B. $-2$.</li>\n<li>C. $4$.</li>\n<li>D. $5$.</li>\n</ul>",
    "file": "2019_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 61
   },
   {
    "subject": "數學",
@@ -8887,7 +9034,8 @@ window.QB = {
    "text": "設 $c$ 為一常數。若 $f(x)=x^3+cx^2+c$ ，則 $f(c)+f(-c)=$\n\n- A. $0$\n- B. $2c$\n- C. $2c^3+2c$\n- D. $-2c^3+2c$",
    "html": "<p>設 $c$ 為一常數。若 $f(x)=x^3+cx^2+c$ ，則 $f(c)+f(-c)=$</p>\n<ul>\n<li>A. $0$</li>\n<li>B. $2c$</li>\n<li>C. $2c^3+2c$</li>\n<li>D. $-2c^3+2c$</li>\n</ul>",
    "file": "2019_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 69
   },
   {
    "subject": "數學",
@@ -8903,7 +9051,8 @@ window.QB = {
    "text": "Let $c$ be a constant. If $f(x)=x^{3}+cx^{2}+c$, then $f(c)+f(-c)=$\n\n- A. $0$.\n- B. $2c$.\n- C. $2c^{3}+2c$.\n- D. $-2c^{3}+2c$.",
    "html": "<p>Let $c$ be a constant. If $f(x)=x^{3}+cx^{2}+c$, then $f(c)+f(-c)=$</p>\n<ul>\n<li>A. $0$.</li>\n<li>B. $2c$.</li>\n<li>C. $2c^{3}+2c$.</li>\n<li>D. $-2c^{3}+2c$.</li>\n</ul>",
    "file": "2019_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 69
   },
   {
    "subject": "數學",
@@ -8920,7 +9069,8 @@ window.QB = {
    "text": "設 $k$ 為一常數使得 $2x^4 + kx^3 - 4x - 16$ 可被 $2x + k$ 整除。求 $k$。\n\n- A. $-2$\n- B. $2$\n- C. $4$\n- D. $8$",
    "html": "<p>設 $k$ 為一常數使得 $2x^4 + kx^3 - 4x - 16$ 可被 $2x + k$ 整除。求 $k$。</p>\n<ul>\n<li>A. $-2$</li>\n<li>B. $2$</li>\n<li>C. $4$</li>\n<li>D. $8$</li>\n</ul>",
    "file": "2019_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 65
   },
   {
    "subject": "數學",
@@ -8937,7 +9087,8 @@ window.QB = {
    "text": "Let $k$ be a constant such that $2x^{4}+kx^{3}-4x-16$ is divisible by $2x+k$. Find $k$.\n\n- A. $-2$\n- B. $2$\n- C. $4$\n- D. $8$",
    "html": "<p>Let $k$ be a constant such that $2x^{4}+kx^{3}-4x-16$ is divisible by $2x+k$. Find $k$.</p>\n<ul>\n<li>A. $-2$</li>\n<li>B. $2$</li>\n<li>C. $4$</li>\n<li>D. $8$</li>\n</ul>",
    "file": "2019_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 65
   },
   {
    "subject": "數學",
@@ -8953,7 +9104,8 @@ window.QB = {
    "text": "下列有關 $y = (3 - x)(x + 2) + 6$ 的圖像之敘述，何者正確？\nI. 該圖像開口向下。\nII. 該圖像通過點 $(1, 10)$。\nIII. 該圖像的 $x$ 截距為 $-2$ 及 $3$。\n\n- A. 只有 I\n- B. 只有 II\n- C. 只有 I 及 III\n- D. 只有 II 及 III",
    "html": "<p>下列有關 $y = (3 - x)(x + 2) + 6$ 的圖像之敘述，何者正確？\nI. 該圖像開口向下。\nII. 該圖像通過點 $(1, 10)$。\nIII. 該圖像的 $x$ 截距為 $-2$ 及 $3$。</p>\n<ul>\n<li>A. 只有 I</li>\n<li>B. 只有 II</li>\n<li>C. 只有 I 及 III</li>\n<li>D. 只有 II 及 III</li>\n</ul>",
    "file": "2019_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 68
   },
   {
    "subject": "數學",
@@ -8969,7 +9121,8 @@ window.QB = {
    "text": "Which of the following statements about the graph of $y=(3-x)(x+2)+6$ is/are true?\nI. The graph opens downwards.\nII. The graph passes through the point $(1,10)$.\nIII. The $x$-intercepts of the graph are $-2$ and $3$.\n\n- A. I only\n- B. II only\n- C. I and III only\n- D. II and III only",
    "html": "<p>Which of the following statements about the graph of $y=(3-x)(x+2)+6$ is/are true?\nI. The graph opens downwards.\nII. The graph passes through the point $(1,10)$.\nIII. The $x$-intercepts of the graph are $-2$ and $3$.</p>\n<ul>\n<li>A. I only</li>\n<li>B. II only</li>\n<li>C. I and III only</li>\n<li>D. II and III only</li>\n</ul>",
    "file": "2019_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 68
   },
   {
    "subject": "數學",
@@ -8985,7 +9138,8 @@ window.QB = {
    "text": "存款 $65000$，年利率 $7\\%$，年期 $8$ 年，複利計算，每季一結。求本利和準確至最接近的元。\n\n- A. $101400$\n- B. $111682$\n- C. $113244$\n- D. $113609$",
    "html": "<p>存款 $65000$，年利率 $7\\%$，年期 $8$ 年，複利計算，每季一結。求本利和準確至最接近的元。</p>\n<ul>\n<li>A. $101400$</li>\n<li>B. $111682$</li>\n<li>C. $113244$</li>\n<li>D. $113609$</li>\n</ul>",
    "file": "2019_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 79
   },
   {
    "subject": "數學",
@@ -9001,7 +9155,8 @@ window.QB = {
    "text": "A sum of $\\$65\\,000$ is deposited at an interest rate of $7\\%$ per annum for $8$ years, compounded quarterly. Find the amount correct to the nearest dollar.\n\n- A. $\\$101\\,400$\n- B. $\\$111\\,682$\n- C. $\\$113\\,244$\n- D. $\\$113\\,609$",
    "html": "<p>A sum of $\\$65\\,000$ is deposited at an interest rate of $7\\%$ per annum for $8$ years, compounded quarterly. Find the amount correct to the nearest dollar.</p>\n<ul>\n<li>A. $\\$101\\,400$</li>\n<li>B. $\\$111\\,682$</li>\n<li>C. $\\$113\\,244$</li>\n<li>D. $\\$113\\,609$</li>\n</ul>",
    "file": "2019_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 79
   },
   {
    "subject": "數學",
@@ -9017,7 +9172,8 @@ window.QB = {
    "text": "$A$ 牌及 $B$ 牌茶葉的成本分別為 $140/kg$ 及 $315/kg$。若 $xkg$ 的 $A$ 牌茶葉與 $ykg$ 的 $B$ 牌茶葉混合使得混合後的茶葉的成本為 $210/kg$，則 $x:y=$\n\n- A. $2:3$\n- B. $3:2$\n- C. $4:9$\n- D. $9:4$",
    "html": "<p>$A$ 牌及 $B$ 牌茶葉的成本分別為 $140/kg$ 及 $315/kg$。若 $xkg$ 的 $A$ 牌茶葉與 $ykg$ 的 $B$ 牌茶葉混合使得混合後的茶葉的成本為 $210/kg$，則 $x:y=$</p>\n<ul>\n<li>A. $2:3$</li>\n<li>B. $3:2$</li>\n<li>C. $4:9$</li>\n<li>D. $9:4$</li>\n</ul>",
    "file": "2019_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 66
   },
   {
    "subject": "數學",
@@ -9033,7 +9189,8 @@ window.QB = {
    "text": "The costs of tea of brand $A$ and brand $B$ are $\\$140/kg$ and $\\$315/kg$ respectively. If $x$ kg of tea of brand $A$ and $y$ kg of tea of brand $B$ are mixed so that the cost of the mixture is $\\$210/kg$, then $x:y=$\n\n- A. $2:3$\n- B. $3:2$\n- C. $4:9$\n- D. $9:4$",
    "html": "<p>The costs of tea of brand $A$ and brand $B$ are $\\$140/kg$ and $\\$315/kg$ respectively. If $x$ kg of tea of brand $A$ and $y$ kg of tea of brand $B$ are mixed so that the cost of the mixture is $\\$210/kg$, then $x:y=$</p>\n<ul>\n<li>A. $2:3$</li>\n<li>B. $3:2$</li>\n<li>C. $4:9$</li>\n<li>D. $9:4$</li>\n</ul>",
    "file": "2019_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 66
   },
   {
    "subject": "數學",
@@ -9049,7 +9206,8 @@ window.QB = {
    "text": "已知 $z$ 隨 $x$ 的平方正變且隨 $y$ 的平方根反變。若 $x$ 減少 $40\\%$ 且 $y$ 增加 $44\\%$ ，則 $z$\n\n- A. 減少 $70\\%$ 。\n- B. 增加 $70\\%$ 。\n- C. 減少 $76\\%$ 。\n- D. 增加 $76\\%$ 。",
    "html": "<p>已知 $z$ 隨 $x$ 的平方正變且隨 $y$ 的平方根反變。若 $x$ 減少 $40\\%$ 且 $y$ 增加 $44\\%$ ，則 $z$</p>\n<ul>\n<li>A. 減少 $70\\%$ 。</li>\n<li>B. 增加 $70\\%$ 。</li>\n<li>C. 減少 $76\\%$ 。</li>\n<li>D. 增加 $76\\%$ 。</li>\n</ul>",
    "file": "2019_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 69
   },
   {
    "subject": "數學",
@@ -9065,7 +9223,8 @@ window.QB = {
    "text": "It is given that $z$ varies directly as the square of $x$ and inversely as the square root of $y$. If $x$ is decreased by $40\\%$ and $y$ is increased by $44\\%$, then $z$\n\n- A. is decreased by $70\\%$.\n- B. is increased by $70\\%$.\n- C. is decreased by $76\\%$.\n- D. is increased by $76\\%$.",
    "html": "<p>It is given that $z$ varies directly as the square of $x$ and inversely as the square root of $y$. If $x$ is decreased by $40\\%$ and $y$ is increased by $44\\%$, then $z$</p>\n<ul>\n<li>A. is decreased by $70\\%$.</li>\n<li>B. is increased by $70\\%$.</li>\n<li>C. is decreased by $76\\%$.</li>\n<li>D. is increased by $76\\%$.</li>\n</ul>",
    "file": "2019_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 69
   },
   {
    "subject": "數學",
@@ -9081,7 +9240,8 @@ window.QB = {
    "text": "圖中，第 1 個圖案包含 6 粒點子。對任意正整數 $n$ ，第 $(n+1)$ 個圖案是由第 $n$ 個圖案加上 4 粒點子所組成。求第 9 個圖案的點子數目。\n\n\n![Figure Q14 (as printed)](2019P2_zh_figs/Q14.png)\n\n- A. 30\n- B. 34\n- C. 38\n- D. 42",
    "html": "<p>圖中，第 1 個圖案包含 6 粒點子。對任意正整數 $n$ ，第 $(n+1)$ 個圖案是由第 $n$ 個圖案加上 4 粒點子所組成。求第 9 個圖案的點子數目。</p>\n<p><img alt=\"Figure Q14 (as printed)\" src=\"2019P2_zh_figs/Q14.png\" /></p>\n<ul>\n<li>A. 30</li>\n<li>B. 34</li>\n<li>C. 38</li>\n<li>D. 42</li>\n</ul>",
    "file": "2019_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 91
   },
   {
    "subject": "數學",
@@ -9097,7 +9257,8 @@ window.QB = {
    "text": "In the figure, the 1st pattern consists of 6 dots. For any positive integer $n$, the $(n+1)$th pattern is formed by adding 4 dots to the $n$th pattern. Find the number of dots in the 9th pattern.\n![Figure Q14 (as printed)](2019P2_figs/Q14.png)\n*[FIGURE Q14: The figure shows a grid of dots with three rightward arrows. No point labels, numbers, angles, shaded regions, arcs, or dashed lines are printed. The arrows are solid and point right.]*\n\n- A. 30\n- B. 34\n- C. 38\n- D. 42",
    "html": "<p>In the figure, the 1st pattern consists of 6 dots. For any positive integer $n$, the $(n+1)$th pattern is formed by adding 4 dots to the $n$th pattern. Find the number of dots in the 9th pattern.\n<img alt=\"Figure Q14 (as printed)\" src=\"2019P2_figs/Q14.png\" />\n<em>[FIGURE Q14: The figure shows a grid of dots with three rightward arrows. No point labels, numbers, angles, shaded regions, arcs, or dashed lines are printed. The arrows are solid and point right.]</em></p>\n<ul>\n<li>A. 30</li>\n<li>B. 34</li>\n<li>C. 38</li>\n<li>D. 42</li>\n</ul>",
    "file": "2019_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 91
   },
   {
    "subject": "數學",
@@ -9114,7 +9275,8 @@ window.QB = {
    "text": "某實心直立角錐體的底為一正方形，其邊長為 $18\\text{ cm}$ 。若該角錐體的高為 $12\\text{ cm}$ ，則該角錐體的總表面面積為\n\n- A. $432\\text{ cm}^2$ 。\n- B. $540\\text{ cm}^2$ 。\n- C. $756\\text{ cm}^2$ 。\n- D. $864\\text{ cm}^2$ 。",
    "html": "<p>某實心直立角錐體的底為一正方形，其邊長為 $18\\text{ cm}$ 。若該角錐體的高為 $12\\text{ cm}$ ，則該角錐體的總表面面積為</p>\n<ul>\n<li>A. $432\\text{ cm}^2$ 。</li>\n<li>B. $540\\text{ cm}^2$ 。</li>\n<li>C. $756\\text{ cm}^2$ 。</li>\n<li>D. $864\\text{ cm}^2$ 。</li>\n</ul>",
    "file": "2019_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 61
   },
   {
    "subject": "數學",
@@ -9131,7 +9293,8 @@ window.QB = {
    "text": "The base of a solid right pyramid is a square of side $18\\text{ cm}$. If the height of the pyramid is $12\\text{ cm}$, then the total surface area of the pyramid is\n\n- A. $432\\text{ cm}^2$.\n- B. $540\\text{ cm}^2$.\n- C. $756\\text{ cm}^2$.\n- D. $864\\text{ cm}^2$.",
    "html": "<p>The base of a solid right pyramid is a square of side $18\\text{ cm}$. If the height of the pyramid is $12\\text{ cm}$, then the total surface area of the pyramid is</p>\n<ul>\n<li>A. $432\\text{ cm}^2$.</li>\n<li>B. $540\\text{ cm}^2$.</li>\n<li>C. $756\\text{ cm}^2$.</li>\n<li>D. $864\\text{ cm}^2$.</li>\n</ul>",
    "file": "2019_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 61
   },
   {
    "subject": "數學",
@@ -9149,7 +9312,8 @@ window.QB = {
    "text": "圖中，$ABCD$ 為一平行四邊形及 $AEFG$ 為一正方形。已知 $BE:EF:FC=2:7:3$。$BD$ 分別與 $AE$ 及 $FG$ 相交於點 $X$ 及點 $Y$。若 $\\triangle ABX$ 的面積為 $24\\, \\text{cm}^2$，則四邊形 $CDYF$ 的面積為\n\n\n![Figure Q16 (as printed)](2019P2_zh_figs/Q16.png)\n\n- A. $54\\, \\text{cm}^2$\n- B. $77\\, \\text{cm}^2$\n- C. $81\\, \\text{cm}^2$\n- D. $87\\, \\text{cm}^2$",
    "html": "<p>圖中，$ABCD$ 為一平行四邊形及 $AEFG$ 為一正方形。已知 $BE:EF:FC=2:7:3$。$BD$ 分別與 $AE$ 及 $FG$ 相交於點 $X$ 及點 $Y$。若 $\\triangle ABX$ 的面積為 $24\\, \\text{cm}^2$，則四邊形 $CDYF$ 的面積為</p>\n<p><img alt=\"Figure Q16 (as printed)\" src=\"2019P2_zh_figs/Q16.png\" /></p>\n<ul>\n<li>A. $54\\, \\text{cm}^2$</li>\n<li>B. $77\\, \\text{cm}^2$</li>\n<li>C. $81\\, \\text{cm}^2$</li>\n<li>D. $87\\, \\text{cm}^2$</li>\n</ul>",
    "file": "2019_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 25
   },
   {
    "subject": "數學",
@@ -9167,7 +9331,8 @@ window.QB = {
    "text": "In the figure, $ABCD$ is a parallelogram and $AEFG$ is a square. It is given that $BE:EF:FC=2:7:3$. $BD$ cuts $AE$ and $FG$ at the points $X$ and $Y$ respectively. If the area of $\\triangle ABX$ is $24\\text{ cm}^2$, then the area of the quadrilateral $CDYF$ is\n![Figure Q16 (as printed)](2019P2_figs/Q16.png)\n*[FIGURE Q16: A quadrilateral ABCD with points E, F, G, X, Y on its sides. Solid lines connect points. No angles, arcs, arrows, or shaded regions. No dashed lines. Printed labels: A, B, C, D, E, F, G, X, Y.]*\n\n- A. $54\\text{ cm}^2$.\n- B. $77\\text{ cm}^2$.\n- C. $81\\text{ cm}^2$.\n- D. $87\\text{ cm}^2$.",
    "html": "<p>In the figure, $ABCD$ is a parallelogram and $AEFG$ is a square. It is given that $BE:EF:FC=2:7:3$. $BD$ cuts $AE$ and $FG$ at the points $X$ and $Y$ respectively. If the area of $\\triangle ABX$ is $24\\text{ cm}^2$, then the area of the quadrilateral $CDYF$ is\n<img alt=\"Figure Q16 (as printed)\" src=\"2019P2_figs/Q16.png\" />\n<em>[FIGURE Q16: A quadrilateral ABCD with points E, F, G, X, Y on its sides. Solid lines connect points. No angles, arcs, arrows, or shaded regions. No dashed lines. Printed labels: A, B, C, D, E, F, G, X, Y.]</em></p>\n<ul>\n<li>A. $54\\text{ cm}^2$.</li>\n<li>B. $77\\text{ cm}^2$.</li>\n<li>C. $81\\text{ cm}^2$.</li>\n<li>D. $87\\text{ cm}^2$.</li>\n</ul>",
    "file": "2019_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 25
   },
   {
    "subject": "數學",
@@ -9183,7 +9348,8 @@ window.QB = {
    "text": "圖中，$ABC$ 及 $ADE$ 均為直線。已知 $AB=BD$ 及 $BC=CD$。若 $\\angle CDE=66^\\circ$，則 $\\angle ACD=$\n\n\n![Figure Q17 (as printed)](2019P2_zh_figs/Q17.png)\n\n- A. $28^\\circ$\n- B. $33^\\circ$\n- C. $36^\\circ$\n- D. $38^\\circ$",
    "html": "<p>圖中，$ABC$ 及 $ADE$ 均為直線。已知 $AB=BD$ 及 $BC=CD$。若 $\\angle CDE=66^\\circ$，則 $\\angle ACD=$</p>\n<p><img alt=\"Figure Q17 (as printed)\" src=\"2019P2_zh_figs/Q17.png\" /></p>\n<ul>\n<li>A. $28^\\circ$</li>\n<li>B. $33^\\circ$</li>\n<li>C. $36^\\circ$</li>\n<li>D. $38^\\circ$</li>\n</ul>",
    "file": "2019_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 58
   },
   {
    "subject": "數學",
@@ -9199,7 +9365,8 @@ window.QB = {
    "text": "In the figure, $ABC$ and $ADE$ are straight lines. It is given that $AB=BD$ and $BC=CD$. If $\\angle CDE=66^\\circ$, then $\\angle ACD=$\n![Figure Q17 (as printed)](2019P2_figs/Q17.png)\n*[FIGURE Q17: A triangle ABC with points D and E. Solid lines: AB, BC, AC, BD, CD, DE. Dashed line: AD. No angles, arcs, arrows, shaded regions, or right-angle marks printed.]*\n\n- A. $28^\\circ$.\n- B. $33^\\circ$.\n- C. $36^\\circ$.\n- D. $38^\\circ$.",
    "html": "<p>In the figure, $ABC$ and $ADE$ are straight lines. It is given that $AB=BD$ and $BC=CD$. If $\\angle CDE=66^\\circ$, then $\\angle ACD=$\n<img alt=\"Figure Q17 (as printed)\" src=\"2019P2_figs/Q17.png\" />\n<em>[FIGURE Q17: A triangle ABC with points D and E. Solid lines: AB, BC, AC, BD, CD, DE. Dashed line: AD. No angles, arcs, arrows, shaded regions, or right-angle marks printed.]</em></p>\n<ul>\n<li>A. $28^\\circ$.</li>\n<li>B. $33^\\circ$.</li>\n<li>C. $36^\\circ$.</li>\n<li>D. $38^\\circ$.</li>\n</ul>",
    "file": "2019_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 58
   },
   {
    "subject": "數學",
@@ -9216,7 +9383,8 @@ window.QB = {
    "text": "圖中，$ABC$ 為一等腰三角形且 $AB=AC$。$D$ 及 $E$ 均為 $AB$ 上的點使得 $AD=DE=2EB$，而 $F$ 為 $AC$ 上的一點使得 $DF\\parallel EC$。若 $\\angle ADF=90^\\circ$ 及 $CE=60\\, \\text{cm}$，則 $EF=$\n\n\n![Figure Q18 (as printed)](2019P2_zh_figs/Q18.png)\n\n- A. $40\\, \\text{cm}$\n- B. $45\\, \\text{cm}$\n- C. $48\\, \\text{cm}$\n- D. $50\\, \\text{cm}$",
    "html": "<p>圖中，$ABC$ 為一等腰三角形且 $AB=AC$。$D$ 及 $E$ 均為 $AB$ 上的點使得 $AD=DE=2EB$，而 $F$ 為 $AC$ 上的一點使得 $DF\\parallel EC$。若 $\\angle ADF=90^\\circ$ 及 $CE=60\\, \\text{cm}$，則 $EF=$</p>\n<p><img alt=\"Figure Q18 (as printed)\" src=\"2019P2_zh_figs/Q18.png\" /></p>\n<ul>\n<li>A. $40\\, \\text{cm}$</li>\n<li>B. $45\\, \\text{cm}$</li>\n<li>C. $48\\, \\text{cm}$</li>\n<li>D. $50\\, \\text{cm}$</li>\n</ul>",
    "file": "2019_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 26
   },
   {
    "subject": "數學",
@@ -9233,7 +9401,8 @@ window.QB = {
    "text": "In the figure, $ABC$ is an isosceles triangle with $AB=AC$. $D$ and $E$ are points lying on $AB$ such that $AD=DE=2EB$ while $F$ is a point lying on $AC$ such that $DF\\parallel EC$. If $\\angle ADF=90^\\circ$ and $CE=60\\text{ cm}$, then $EF=$\n![Figure Q18 (as printed)](2019P2_figs/Q18.png)\n*[FIGURE Q18: A triangle ABC with points D, E, F on sides AB, BC, AC respectively. Solid lines connect A to D, D to F, F to C, B to E, E to F, and C to F. No angles, arcs, arrows, or shaded regions. No dashed lines.]*\n\n- A. $40\\text{ cm}$.\n- B. $45\\text{ cm}$.\n- C. $48\\text{ cm}$.\n- D. $50\\text{ cm}$.",
    "html": "<p>In the figure, $ABC$ is an isosceles triangle with $AB=AC$. $D$ and $E$ are points lying on $AB$ such that $AD=DE=2EB$ while $F$ is a point lying on $AC$ such that $DF\\parallel EC$. If $\\angle ADF=90^\\circ$ and $CE=60\\text{ cm}$, then $EF=$\n<img alt=\"Figure Q18 (as printed)\" src=\"2019P2_figs/Q18.png\" />\n<em>[FIGURE Q18: A triangle ABC with points D, E, F on sides AB, BC, AC respectively. Solid lines connect A to D, D to F, F to C, B to E, E to F, and C to F. No angles, arcs, arrows, or shaded regions. No dashed lines.]</em></p>\n<ul>\n<li>A. $40\\text{ cm}$.</li>\n<li>B. $45\\text{ cm}$.</li>\n<li>C. $48\\text{ cm}$.</li>\n<li>D. $50\\text{ cm}$.</li>\n</ul>",
    "file": "2019_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 26
   },
   {
    "subject": "數學",
@@ -9249,7 +9418,8 @@ window.QB = {
    "text": "圖中，$ABCD$ 為一梯形且 $AB//DC$ 及 $\\angle ABD=90^\\circ$ 。若 $AB=18\\text{ cm}$ 、 $BC=26\\text{ cm}$ 及 $AD=30\\text{ cm}$ ，求梯形 $ABCD$ 的面積。\n\n\n![Figure Q19 (as printed)](2019P2_zh_figs/Q19.png)\n\n- A. $336\\text{ cm}^2$\n- B. $400\\text{ cm}^2$\n- C. $504\\text{ cm}^2$\n- D. $552\\text{ cm}^2$",
    "html": "<p>圖中，$ABCD$ 為一梯形且 $AB//DC$ 及 $\\angle ABD=90^\\circ$ 。若 $AB=18\\text{ cm}$ 、 $BC=26\\text{ cm}$ 及 $AD=30\\text{ cm}$ ，求梯形 $ABCD$ 的面積。</p>\n<p><img alt=\"Figure Q19 (as printed)\" src=\"2019P2_zh_figs/Q19.png\" /></p>\n<ul>\n<li>A. $336\\text{ cm}^2$</li>\n<li>B. $400\\text{ cm}^2$</li>\n<li>C. $504\\text{ cm}^2$</li>\n<li>D. $552\\text{ cm}^2$</li>\n</ul>",
    "file": "2019_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 85
   },
   {
    "subject": "數學",
@@ -9265,7 +9435,8 @@ window.QB = {
    "text": "In the figure, $ABCD$ is a trapezium with $AB \\parallel DC$ and $\\angle ABD = 90^\\circ$. If $AB = 18 \\text{ cm}$, $BC = 26 \\text{ cm}$ and $AD = 30 \\text{ cm}$, find the area of the trapezium $ABCD$.\n![Figure Q19 (as printed)](2019P2_figs/Q19.png)\n*[FIGURE Q19: A quadrilateral ABCD with right angles at B and D. Diagonal AC is dashed. Lines AB, BC, CD, DA are solid. No numbers, angles, arcs, arrows, or shaded regions printed.]*\n\n- A. $336 \\text{ cm}^2$\n- B. $400 \\text{ cm}^2$\n- C. $504 \\text{ cm}^2$\n- D. $552 \\text{ cm}^2$",
    "html": "<p>In the figure, $ABCD$ is a trapezium with $AB \\parallel DC$ and $\\angle ABD = 90^\\circ$. If $AB = 18 \\text{ cm}$, $BC = 26 \\text{ cm}$ and $AD = 30 \\text{ cm}$, find the area of the trapezium $ABCD$.\n<img alt=\"Figure Q19 (as printed)\" src=\"2019P2_figs/Q19.png\" />\n<em>[FIGURE Q19: A quadrilateral ABCD with right angles at B and D. Diagonal AC is dashed. Lines AB, BC, CD, DA are solid. No numbers, angles, arcs, arrows, or shaded regions printed.]</em></p>\n<ul>\n<li>A. $336 \\text{ cm}^2$</li>\n<li>B. $400 \\text{ cm}^2$</li>\n<li>C. $504 \\text{ cm}^2$</li>\n<li>D. $552 \\text{ cm}^2$</li>\n</ul>",
    "file": "2019_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 85
   },
   {
    "subject": "數學",
@@ -9281,7 +9452,8 @@ window.QB = {
    "text": "圖中，$ABCD$ 為一菱形。$ABE$ 及 $BCF$ 均為直線使得 $BE=EF$ 。若 $\\angle BEF=56^\\circ$ ，則 $\\angle BDC=$\n\n\n![Figure Q20 (as printed)](2019P2_zh_figs/Q20.png)\n\n- A. $48^\\circ$\n- B. $56^\\circ$\n- C. $59^\\circ$\n- D. $62^\\circ$",
    "html": "<p>圖中，$ABCD$ 為一菱形。$ABE$ 及 $BCF$ 均為直線使得 $BE=EF$ 。若 $\\angle BEF=56^\\circ$ ，則 $\\angle BDC=$</p>\n<p><img alt=\"Figure Q20 (as printed)\" src=\"2019P2_zh_figs/Q20.png\" /></p>\n<ul>\n<li>A. $48^\\circ$</li>\n<li>B. $56^\\circ$</li>\n<li>C. $59^\\circ$</li>\n<li>D. $62^\\circ$</li>\n</ul>",
    "file": "2019_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 51
   },
   {
    "subject": "數學",
@@ -9297,7 +9469,8 @@ window.QB = {
    "text": "In the figure, $ABCD$ is a rhombus. $ABE$ and $BCF$ are straight lines such that $BE = EF$. If $\\angle BEF = 56^\\circ$, then $\\angle BDC =$\n![Figure Q20 (as printed)](2019P2_figs/Q20.png)\n*[FIGURE Q20: A trapezium ABCD with points E, F, G. Solid lines AB, BC, CD, DA, DE, DF, DG, EF, FG. No angles, arcs, arrows, shaded regions, or right-angle marks. No numbers.]*\n\n- A. $48^\\circ$\n- B. $56^\\circ$\n- C. $59^\\circ$\n- D. $62^\\circ$",
    "html": "<p>In the figure, $ABCD$ is a rhombus. $ABE$ and $BCF$ are straight lines such that $BE = EF$. If $\\angle BEF = 56^\\circ$, then $\\angle BDC =$\n<img alt=\"Figure Q20 (as printed)\" src=\"2019P2_figs/Q20.png\" />\n<em>[FIGURE Q20: A trapezium ABCD with points E, F, G. Solid lines AB, BC, CD, DA, DE, DF, DG, EF, FG. No angles, arcs, arrows, shaded regions, or right-angle marks. No numbers.]</em></p>\n<ul>\n<li>A. $48^\\circ$</li>\n<li>B. $56^\\circ$</li>\n<li>C. $59^\\circ$</li>\n<li>D. $62^\\circ$</li>\n</ul>",
    "file": "2019_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 51
   },
   {
    "subject": "數學",
@@ -9314,7 +9487,8 @@ window.QB = {
    "text": "圖中，$O$ 為半圓 $ABCD$ 的圓心。若 $AC=BD$ 及 $\\angle COD=48^\\circ$ ，則 $\\angle ABD=$\n\n\n![Figure Q21 (as printed)](2019P2_zh_figs/Q21.png)\n\n- A. $31^\\circ$\n- B. $33^\\circ$\n- C. $42^\\circ$\n- D. $48^\\circ$",
    "html": "<p>圖中，$O$ 為半圓 $ABCD$ 的圓心。若 $AC=BD$ 及 $\\angle COD=48^\\circ$ ，則 $\\angle ABD=$</p>\n<p><img alt=\"Figure Q21 (as printed)\" src=\"2019P2_zh_figs/Q21.png\" /></p>\n<ul>\n<li>A. $31^\\circ$</li>\n<li>B. $33^\\circ$</li>\n<li>C. $42^\\circ$</li>\n<li>D. $48^\\circ$</li>\n</ul>",
    "file": "2019_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 53
   },
   {
    "subject": "數學",
@@ -9331,7 +9505,8 @@ window.QB = {
    "text": "In the figure, $O$ is the centre of the semi-circle $ABCD$. If $AC = BD$ and $\\angle COD = 48^\\circ$, then $\\angle ABD =$\n![Figure Q21 (as printed)](2019P2_figs/Q21.png)\n*[FIGURE Q21: A circle with center O, points A, B, C, D on circumference. Solid lines connect A–B, B–C, C–D, D–A, and O–A, O–B, O–C, O–D. Arcs show minor arcs AC, BD, CD. No angles, right-angle marks, or shaded regions.]*\n\n- A. $31^\\circ$\n- B. $33^\\circ$\n- C. $42^\\circ$\n- D. $48^\\circ$",
    "html": "<p>In the figure, $O$ is the centre of the semi-circle $ABCD$. If $AC = BD$ and $\\angle COD = 48^\\circ$, then $\\angle ABD =$\n<img alt=\"Figure Q21 (as printed)\" src=\"2019P2_figs/Q21.png\" />\n<em>[FIGURE Q21: A circle with center O, points A, B, C, D on circumference. Solid lines connect A–B, B–C, C–D, D–A, and O–A, O–B, O–C, O–D. Arcs show minor arcs AC, BD, CD. No angles, right-angle marks, or shaded regions.]</em></p>\n<ul>\n<li>A. $31^\\circ$</li>\n<li>B. $33^\\circ$</li>\n<li>C. $42^\\circ$</li>\n<li>D. $48^\\circ$</li>\n</ul>",
    "file": "2019_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 53
   },
   {
    "subject": "數學",
@@ -9347,7 +9522,8 @@ window.QB = {
    "text": "圖中，$ABCD$ 為一長方形。$E$ 為 $AD$ 上的一點。求 $\\frac{CE}{AC}$。\n\n\n![Figure Q22 (as printed)](2019P2_zh_figs/Q22.png)\n\n- A. $\\frac{\\sin \\alpha}{\\sin \\beta}$\n- B. $\\frac{\\cos \\alpha}{\\cos \\beta}$\n- C. $\\sin \\alpha \\sin \\beta$\n- D. $\\cos \\alpha \\cos \\beta$",
    "html": "<p>圖中，$ABCD$ 為一長方形。$E$ 為 $AD$ 上的一點。求 $\\frac{CE}{AC}$。</p>\n<p><img alt=\"Figure Q22 (as printed)\" src=\"2019P2_zh_figs/Q22.png\" /></p>\n<ul>\n<li>A. $\\frac{\\sin \\alpha}{\\sin \\beta}$</li>\n<li>B. $\\frac{\\cos \\alpha}{\\cos \\beta}$</li>\n<li>C. $\\sin \\alpha \\sin \\beta$</li>\n<li>D. $\\cos \\alpha \\cos \\beta$</li>\n</ul>",
    "file": "2019_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 59
   },
   {
    "subject": "數學",
@@ -9363,7 +9539,8 @@ window.QB = {
    "text": "In the figure, $ABCD$ is a rectangle. $E$ is a point lying on $AD$. Find $\\dfrac{CE}{AC}$.\n![Figure Q22 (as printed)](2019P2_figs/Q22.png)\n*[FIGURE Q22: Rectangular ABCD with point E on AD. Diagonals AC and BD. Angles α at A and β at C marked with arcs. No dashed lines. No shaded regions. No right-angle marks.]*\n\n- A. $\\dfrac{\\sin \\alpha}{\\sin \\beta}$\n- B. $\\dfrac{\\cos \\alpha}{\\cos \\beta}$\n- C. $\\sin \\alpha \\sin \\beta$\n- D. $\\cos \\alpha \\cos \\beta$",
    "html": "<p>In the figure, $ABCD$ is a rectangle. $E$ is a point lying on $AD$. Find $\\dfrac{CE}{AC}$.\n<img alt=\"Figure Q22 (as printed)\" src=\"2019P2_figs/Q22.png\" />\n<em>[FIGURE Q22: Rectangular ABCD with point E on AD. Diagonals AC and BD. Angles α at A and β at C marked with arcs. No dashed lines. No shaded regions. No right-angle marks.]</em></p>\n<ul>\n<li>A. $\\dfrac{\\sin \\alpha}{\\sin \\beta}$</li>\n<li>B. $\\dfrac{\\cos \\alpha}{\\cos \\beta}$</li>\n<li>C. $\\sin \\alpha \\sin \\beta$</li>\n<li>D. $\\cos \\alpha \\cos \\beta$</li>\n</ul>",
    "file": "2019_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 59
   },
   {
    "subject": "數學",
@@ -9380,7 +9557,8 @@ window.QB = {
    "text": "圖中，直線 $L$ 的方程為 $ax + by + 15 = 0$。下列何者正確？\nI. $a > b$\nII. $a > -3$\nIII. $b > -5$\n\n\n![Figure Q23 (as printed)](2019P2_zh_figs/Q23.png)\n\n- A. 只有 I 及 II\n- B. 只有 I 及 III\n- C. 只有 II 及 III\n- D. I 、II 及 III",
    "html": "<p>圖中，直線 $L$ 的方程為 $ax + by + 15 = 0$。下列何者正確？\nI. $a &gt; b$\nII. $a &gt; -3$\nIII. $b &gt; -5$</p>\n<p><img alt=\"Figure Q23 (as printed)\" src=\"2019P2_zh_figs/Q23.png\" /></p>\n<ul>\n<li>A. 只有 I 及 II</li>\n<li>B. 只有 I 及 III</li>\n<li>C. 只有 II 及 III</li>\n<li>D. I 、II 及 III</li>\n</ul>",
    "file": "2019_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 32
   },
   {
    "subject": "數學",
@@ -9397,7 +9575,8 @@ window.QB = {
    "text": "In the figure, the equation of the straight line $L$ is $ax + by + 15 = 0$. Which of the following are true?\n![Figure Q23 (as printed)](2019P2_figs/Q23.png)\n*[FIGURE Q23: A Cartesian coordinate system with x- and y-axes. A straight line slopes downward from left to right, passing through y=3 on the y-axis and intersecting the x-axis at x=5. No other marks or labels are printed.]*\nI. $a > b$\nII. $a > -3$\nIII. $b > -5$\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
    "html": "<p>In the figure, the equation of the straight line $L$ is $ax + by + 15 = 0$. Which of the following are true?\n<img alt=\"Figure Q23 (as printed)\" src=\"2019P2_figs/Q23.png\" />\n<em>[FIGURE Q23: A Cartesian coordinate system with x- and y-axes. A straight line slopes downward from left to right, passing through y=3 on the y-axis and intersecting the x-axis at x=5. No other marks or labels are printed.]</em>\nI. $a &gt; b$\nII. $a &gt; -3$\nIII. $b &gt; -5$</p>\n<ul>\n<li>A. I and II only</li>\n<li>B. I and III only</li>\n<li>C. II and III only</li>\n<li>D. I, II and III</li>\n</ul>",
    "file": "2019_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 32
   },
   {
    "subject": "數學",
@@ -9413,7 +9592,8 @@ window.QB = {
    "text": "求常數 $k$ 使得直線 $3x + 2y + k = 0$ 與直線 $kx + 12y - 6 = 0$ 互相垂直。\n\n- A. $-8$\n- B. $-4$\n- C. $4$\n- D. $8$",
    "html": "<p>求常數 $k$ 使得直線 $3x + 2y + k = 0$ 與直線 $kx + 12y - 6 = 0$ 互相垂直。</p>\n<ul>\n<li>A. $-8$</li>\n<li>B. $-4$</li>\n<li>C. $4$</li>\n<li>D. $8$</li>\n</ul>",
    "file": "2019_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 65
   },
   {
    "subject": "數學",
@@ -9429,7 +9609,8 @@ window.QB = {
    "text": "Find the constant $k$ such that the straight lines $3x + 2y + k = 0$ and $kx + 12y - 6 = 0$ are perpendicular to each other.\n\n- A. $-8$\n- B. $-4$\n- C. $4$\n- D. $8$",
    "html": "<p>Find the constant $k$ such that the straight lines $3x + 2y + k = 0$ and $kx + 12y - 6 = 0$ are perpendicular to each other.</p>\n<ul>\n<li>A. $-8$</li>\n<li>B. $-4$</li>\n<li>C. $4$</li>\n<li>D. $8$</li>\n</ul>",
    "file": "2019_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 65
   },
   {
    "subject": "數學",
@@ -9445,7 +9626,8 @@ window.QB = {
    "text": "點 $A$ 的坐標為 $(-5,-2)$ 。 $A$ 向右平移 9 單位至點 $B$ ，然後 $B$ 繞原點逆時針方向旋轉 $90^\\circ$ 至點 $C$ 。求 $C$ 的 $y$ 坐標。\n\n- A. $-4$\n- B. $-2$\n- C. 2\n- D. 4",
    "html": "<p>點 $A$ 的坐標為 $(-5,-2)$ 。 $A$ 向右平移 9 單位至點 $B$ ，然後 $B$ 繞原點逆時針方向旋轉 $90^\\circ$ 至點 $C$ 。求 $C$ 的 $y$ 坐標。</p>\n<ul>\n<li>A. $-4$</li>\n<li>B. $-2$</li>\n<li>C. 2</li>\n<li>D. 4</li>\n</ul>",
    "file": "2019_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 69
   },
   {
    "subject": "數學",
@@ -9461,7 +9643,8 @@ window.QB = {
    "text": "The coordinates of the point $A$ are $(-5,-2)$. $A$ is translated rightwards by 9 units to the point $B$. $B$ is then rotated anticlockwise about the origin through $90^\\circ$ to the point $C$. Find the $y$-coordinate of $C$.\n\n- A. $-4$\n- B. $-2$\n- C. $2$\n- D. $4$",
    "html": "<p>The coordinates of the point $A$ are $(-5,-2)$. $A$ is translated rightwards by 9 units to the point $B$. $B$ is then rotated anticlockwise about the origin through $90^\\circ$ to the point $C$. Find the $y$-coordinate of $C$.</p>\n<ul>\n<li>A. $-4$</li>\n<li>B. $-2$</li>\n<li>C. $2$</li>\n<li>D. $4$</li>\n</ul>",
    "file": "2019_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 69
   },
   {
    "subject": "數學",
@@ -9478,7 +9661,8 @@ window.QB = {
    "text": "直線 $L$ 的方程為 $5x-7y-14=0$ 。若 $P$ 為直角坐標平面上的一動點使得由 $P$ 至 $L$ 的垂直距離等於 3 ，則 $P$ 的軌跡為\n\n- A. 一扇形。\n- B. 一正方形。\n- C. 一拋物線。\n- D. 一對直線。",
    "html": "<p>直線 $L$ 的方程為 $5x-7y-14=0$ 。若 $P$ 為直角坐標平面上的一動點使得由 $P$ 至 $L$ 的垂直距離等於 3 ，則 $P$ 的軌跡為</p>\n<ul>\n<li>A. 一扇形。</li>\n<li>B. 一正方形。</li>\n<li>C. 一拋物線。</li>\n<li>D. 一對直線。</li>\n</ul>",
    "file": "2019_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 68
   },
   {
    "subject": "數學",
@@ -9495,7 +9679,8 @@ window.QB = {
    "text": "The equation of the straight line $L$ is $5x-7y-14=0$. If $P$ is a moving point in the rectangular coordinate plane such that the perpendicular distance from $P$ to $L$ is equal to 3, then the locus of $P$ is\n\n- A. a sector.\n- B. a square.\n- C. a parabola.\n- D. a pair of straight lines.",
    "html": "<p>The equation of the straight line $L$ is $5x-7y-14=0$. If $P$ is a moving point in the rectangular coordinate plane such that the perpendicular distance from $P$ to $L$ is equal to 3, then the locus of $P$ is</p>\n<ul>\n<li>A. a sector.</li>\n<li>B. a square.</li>\n<li>C. a parabola.</li>\n<li>D. a pair of straight lines.</li>\n</ul>",
    "file": "2019_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 68
   },
   {
    "subject": "數學",
@@ -9512,7 +9697,8 @@ window.QB = {
    "text": "將圓 $2x^2+2y^2+4x-12y+15=0$ 記為 $C$ 。下列何者正確？\nI. $C$ 的面積為 $25\\pi$ 。\nII. 點 $(-3,3)$ 位於 $C$ 以外。\nIII. $C$ 的圓心位於第四象限。\n\n- A. 只有 I\n- B. 只有 II\n- C. 只有 I 及 III\n- D. 只有 II 及 III",
    "html": "<p>將圓 $2x^2+2y^2+4x-12y+15=0$ 記為 $C$ 。下列何者正確？\nI. $C$ 的面積為 $25\\pi$ 。\nII. 點 $(-3,3)$ 位於 $C$ 以外。\nIII. $C$ 的圓心位於第四象限。</p>\n<ul>\n<li>A. 只有 I</li>\n<li>B. 只有 II</li>\n<li>C. 只有 I 及 III</li>\n<li>D. 只有 II 及 III</li>\n</ul>",
    "file": "2019_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 56
   },
   {
    "subject": "數學",
@@ -9529,7 +9715,8 @@ window.QB = {
    "text": "Denote the circle $2x^2+2y^2+4x-12y+15=0$ by $C$. Which of the following is/are true?\nI. The area of $C$ is $25\\pi$.\nII. The point $(-3,3)$ lies outside $C$.\nIII. The centre of $C$ lies in the fourth quadrant.\n\n- A. I only\n- B. II only\n- C. I and III only\n- D. II and III only",
    "html": "<p>Denote the circle $2x^2+2y^2+4x-12y+15=0$ by $C$. Which of the following is/are true?\nI. The area of $C$ is $25\\pi$.\nII. The point $(-3,3)$ lies outside $C$.\nIII. The centre of $C$ lies in the fourth quadrant.</p>\n<ul>\n<li>A. I only</li>\n<li>B. II only</li>\n<li>C. I and III only</li>\n<li>D. II and III only</li>\n</ul>",
    "file": "2019_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 56
   },
   {
    "subject": "數學",
@@ -9546,7 +9733,8 @@ window.QB = {
    "text": "從九個分別記有數字 1、2、3、4、5、6、7、8 及 9 的球中，隨機同時抽出兩個數字。求抽出的兩個數字為連續整數的概率。\n\n- A. $\\frac{1}{2}$\n- B. $\\frac{1}{4}$\n- C. $\\frac{2}{9}$\n- D. $\\frac{7}{9}$",
    "html": "<p>從九個分別記有數字 1、2、3、4、5、6、7、8 及 9 的球中，隨機同時抽出兩個數字。求抽出的兩個數字為連續整數的概率。</p>\n<ul>\n<li>A. $\\frac{1}{2}$</li>\n<li>B. $\\frac{1}{4}$</li>\n<li>C. $\\frac{2}{9}$</li>\n<li>D. $\\frac{7}{9}$</li>\n</ul>",
    "file": "2019_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 66
   },
   {
    "subject": "數學",
@@ -9563,7 +9751,8 @@ window.QB = {
    "text": "Two numbers are randomly drawn at the same time from nine balls numbered $1, 2, 3, 4, 5, 6, 7, 8$ and $9$ respectively. Find the probability that the two numbers drawn are consecutive integers.\n\n- A. $\\dfrac{1}{2}$\n- B. $\\dfrac{1}{4}$\n- C. $\\dfrac{2}{9}$\n- D. $\\dfrac{7}{9}$",
    "html": "<p>Two numbers are randomly drawn at the same time from nine balls numbered $1, 2, 3, 4, 5, 6, 7, 8$ and $9$ respectively. Find the probability that the two numbers drawn are consecutive integers.</p>\n<ul>\n<li>A. $\\dfrac{1}{2}$</li>\n<li>B. $\\dfrac{1}{4}$</li>\n<li>C. $\\dfrac{2}{9}$</li>\n<li>D. $\\dfrac{7}{9}$</li>\n</ul>",
    "file": "2019_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 66
   },
   {
    "subject": "數學",
@@ -9580,7 +9769,8 @@ window.QB = {
    "text": "下列何者能從任意一框線圖得出？\nI. 分佈域\nII. 標準差\nIII. 四分位數間距\n\n- A. 只有 I 及 II\n- B. 只有 I 及 III\n- C. 只有 II 及 III\n- D. I、II 及 III",
    "html": "<p>下列何者能從任意一框線圖得出？\nI. 分佈域\nII. 標準差\nIII. 四分位數間距</p>\n<ul>\n<li>A. 只有 I 及 II</li>\n<li>B. 只有 I 及 III</li>\n<li>C. 只有 II 及 III</li>\n<li>D. I、II 及 III</li>\n</ul>",
    "file": "2019_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 84
   },
   {
    "subject": "數學",
@@ -9597,7 +9787,8 @@ window.QB = {
    "text": "Which of the following can be obtained from any box-and-whisker diagram?\nI. Range\nII. Standard deviation\nIII. Inter-quartile range\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
    "html": "<p>Which of the following can be obtained from any box-and-whisker diagram?\nI. Range\nII. Standard deviation\nIII. Inter-quartile range</p>\n<ul>\n<li>A. I and II only</li>\n<li>B. I and III only</li>\n<li>C. II and III only</li>\n<li>D. I, II and III</li>\n</ul>",
    "file": "2019_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 84
   },
   {
    "subject": "數學",
@@ -9613,7 +9804,8 @@ window.QB = {
    "text": "下表顯示某些學生在一年內所獲優點的數目的分佈。\n\n:::stemleaf\n所獲優點的數目 | 6 | 7 | 8 | 9 | 10\n學生人數 | 32 | 36 | 28 | 18 | 2\n:::\n\n下列何者正確？\n\n- A. 該分佈的眾數為 36。\n- B. 該分佈的中位數為 8。\n- C. 該分佈的下四分位數為 6。\n- D. 該分佈的上四分位數為 10。 乙部",
    "html": "<p>下表顯示某些學生在一年內所獲優點的數目的分佈。</p>\n<p>:::stemleaf\n所獲優點的數目 | 6 | 7 | 8 | 9 | 10\n學生人數 | 32 | 36 | 28 | 18 | 2\n:::</p>\n<p>下列何者正確？</p>\n<ul>\n<li>A. 該分佈的眾數為 36。</li>\n<li>B. 該分佈的中位數為 8。</li>\n<li>C. 該分佈的下四分位數為 6。</li>\n<li>D. 該分佈的上四分位數為 10。 乙部</li>\n</ul>",
    "file": "2019_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 78
   },
   {
    "subject": "數學",
@@ -9629,7 +9821,8 @@ window.QB = {
    "text": "The table below shows the distribution of the numbers of merits obtained by some students in a year.\n\n| Number of merits obtained | 6 | 7 | 8 | 9 | 10 |\n|--------------------------|---|---|---|---|----|\n| Number of students       | 32| 36| 28| 18| 2  |\n\nWhich of the following is true?\n\n- A. The mode of the distribution is $36$.\n- B. The median of the distribution is $8$.\n- C. The lower quartile of the distribution is $6$.\n- D. The upper quartile of the distribution is $10$.",
    "html": "<p>The table below shows the distribution of the numbers of merits obtained by some students in a year.</p>\n<table>\n<thead>\n<tr>\n<th>Number of merits obtained</th>\n<th>6</th>\n<th>7</th>\n<th>8</th>\n<th>9</th>\n<th>10</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Number of students</td>\n<td>32</td>\n<td>36</td>\n<td>28</td>\n<td>18</td>\n<td>2</td>\n</tr>\n</tbody>\n</table>\n<p>Which of the following is true?</p>\n<ul>\n<li>A. The mode of the distribution is $36$.</li>\n<li>B. The median of the distribution is $8$.</li>\n<li>C. The lower quartile of the distribution is $6$.</li>\n<li>D. The upper quartile of the distribution is $10$.</li>\n</ul>",
    "file": "2019_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 78
   },
   {
    "subject": "數學",
@@ -9646,7 +9839,8 @@ window.QB = {
    "text": "已知 $\\log_{9} y$ 為 $\\log_{3} x$ 的線性函數。該線性函數的圖像在垂直軸上的截距及在水平軸上的截距分別為 7 及 8。下列何者必為正確？\n\n- A. $x^{4} y^{7} = 3^{56}$\n- B. $x^{7} y^{4} = 3^{56}$\n- C. $x^{7} y^{8} = 3^{56}$\n- D. $x^{8} y^{7} = 3^{56}$",
    "html": "<p>已知 $\\log_{9} y$ 為 $\\log_{3} x$ 的線性函數。該線性函數的圖像在垂直軸上的截距及在水平軸上的截距分別為 7 及 8。下列何者必為正確？</p>\n<ul>\n<li>A. $x^{4} y^{7} = 3^{56}$</li>\n<li>B. $x^{7} y^{4} = 3^{56}$</li>\n<li>C. $x^{7} y^{8} = 3^{56}$</li>\n<li>D. $x^{8} y^{7} = 3^{56}$</li>\n</ul>",
    "file": "2019_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 34
   },
   {
    "subject": "數學",
@@ -9663,7 +9857,8 @@ window.QB = {
    "text": "It is given that $\\log_{9}y$ is a linear function of $\\log_{3}x$. The intercepts on the vertical axis and on the horizontal axis of the graph of the linear function are 7 and 8 respectively. Which of the following must be true?\n\n- A. $x^{4}y^{7}=3^{56}$\n- B. $x^{7}y^{4}=3^{56}$\n- C. $x^{7}y^{8}=3^{56}$\n- D. $x^{8}y^{7}=3^{56}$",
    "html": "<p>It is given that $\\log_{9}y$ is a linear function of $\\log_{3}x$. The intercepts on the vertical axis and on the horizontal axis of the graph of the linear function are 7 and 8 respectively. Which of the following must be true?</p>\n<ul>\n<li>A. $x^{4}y^{7}=3^{56}$</li>\n<li>B. $x^{7}y^{4}=3^{56}$</li>\n<li>C. $x^{7}y^{8}=3^{56}$</li>\n<li>D. $x^{8}y^{7}=3^{56}$</li>\n</ul>",
    "file": "2019_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 34
   },
   {
    "subject": "數學",
@@ -9679,7 +9874,8 @@ window.QB = {
    "text": "若 $\\frac{3}{3 \\log x - 2} + 7 = \\frac{2}{2 \\log x + 1}$，則 $\\log \\frac{1}{x} =$\n\n- A. $-3$ 或 $2$\n- B. $-2$ 或 $3$\n- C. $\\frac{-1}{3}$ 或 $\\frac{1}{2}$\n- D. $\\frac{-1}{2}$ 或 $\\frac{1}{3}$",
    "html": "<p>若 $\\frac{3}{3 \\log x - 2} + 7 = \\frac{2}{2 \\log x + 1}$，則 $\\log \\frac{1}{x} =$</p>\n<ul>\n<li>A. $-3$ 或 $2$</li>\n<li>B. $-2$ 或 $3$</li>\n<li>C. $\\frac{-1}{3}$ 或 $\\frac{1}{2}$</li>\n<li>D. $\\frac{-1}{2}$ 或 $\\frac{1}{3}$</li>\n</ul>",
    "file": "2019_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 35
   },
   {
    "subject": "數學",
@@ -9695,7 +9891,8 @@ window.QB = {
    "text": "If $\\dfrac{3}{3\\log x-2}+7=\\dfrac{2}{2\\log x+1}$, then $\\log \\dfrac{1}{x}=$\n\n- A. $-3$ or $2$\n- B. $-2$ or $3$\n- C. $\\dfrac{-1}{3}$ or $\\dfrac{1}{2}$\n- D. $\\dfrac{-1}{2}$ or $\\dfrac{1}{3}$",
    "html": "<p>If $\\dfrac{3}{3\\log x-2}+7=\\dfrac{2}{2\\log x+1}$, then $\\log \\dfrac{1}{x}=$</p>\n<ul>\n<li>A. $-3$ or $2$</li>\n<li>B. $-2$ or $3$</li>\n<li>C. $\\dfrac{-1}{3}$ or $\\dfrac{1}{2}$</li>\n<li>D. $\\dfrac{-1}{2}$ or $\\dfrac{1}{3}$</li>\n</ul>",
    "file": "2019_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 35
   },
   {
    "subject": "數學",
@@ -9711,7 +9908,8 @@ window.QB = {
    "text": "$100110000010110_{2} =$\n\n- A. $19 \\times 2^{10} + 22$\n- B. $19 \\times 2^{10} + 44$\n- C. $19 \\times 2^{11} + 22$\n- D. $19 \\times 2^{11} + 44$",
    "html": "<p>$100110000010110_{2} =$</p>\n<ul>\n<li>A. $19 \\times 2^{10} + 22$</li>\n<li>B. $19 \\times 2^{10} + 44$</li>\n<li>C. $19 \\times 2^{11} + 22$</li>\n<li>D. $19 \\times 2^{11} + 44$</li>\n</ul>",
    "file": "2019_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 61
   },
   {
    "subject": "數學",
@@ -9727,7 +9925,8 @@ window.QB = {
    "text": "$100110000010110_{2}=$\n\n- A. $19\\times 2^{10}+22$\n- B. $19\\times 2^{10}+44$\n- C. $19\\times 2^{11}+22$\n- D. $19\\times 2^{11}+44$",
    "html": "<p>$100110000010110_{2}=$</p>\n<ul>\n<li>A. $19\\times 2^{10}+22$</li>\n<li>B. $19\\times 2^{10}+44$</li>\n<li>C. $19\\times 2^{11}+22$</li>\n<li>D. $19\\times 2^{11}+44$</li>\n</ul>",
    "file": "2019_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 61
   },
   {
    "subject": "數學",
@@ -9743,7 +9942,8 @@ window.QB = {
    "text": "若 $a$ 為一實數，則 $\\frac{4+i^5}{a+i}-i^6$ 的實部為\n\n- A. $\\frac{4a+1}{a^2-1}$\n- B. $\\frac{4a+1}{a^2+1}$\n- C. $\\frac{a^2+4a+2}{a^2-1}$\n- D. $\\frac{a^2+4a+2}{a^2+1}$",
    "html": "<p>若 $a$ 為一實數，則 $\\frac{4+i^5}{a+i}-i^6$ 的實部為</p>\n<ul>\n<li>A. $\\frac{4a+1}{a^2-1}$</li>\n<li>B. $\\frac{4a+1}{a^2+1}$</li>\n<li>C. $\\frac{a^2+4a+2}{a^2-1}$</li>\n<li>D. $\\frac{a^2+4a+2}{a^2+1}$</li>\n</ul>",
    "file": "2019_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 46
   },
   {
    "subject": "數學",
@@ -9759,7 +9959,8 @@ window.QB = {
    "text": "If $a$ is a real number, then the real part of $\\dfrac{4+i^{5}}{a+i}-i^{6}$ is\n\n- A. $\\dfrac{4a+1}{a^{2}-1}$\n- B. $\\dfrac{4a+1}{a^{2}+1}$\n- C. $\\dfrac{a^{2}+4a+2}{a^{2}-1}$\n- D. $\\dfrac{a^{2}+4a+2}{a^{2}+1}$",
    "html": "<p>If $a$ is a real number, then the real part of $\\dfrac{4+i^{5}}{a+i}-i^{6}$ is</p>\n<ul>\n<li>A. $\\dfrac{4a+1}{a^{2}-1}$</li>\n<li>B. $\\dfrac{4a+1}{a^{2}+1}$</li>\n<li>C. $\\dfrac{a^{2}+4a+2}{a^{2}-1}$</li>\n<li>D. $\\dfrac{a^{2}+4a+2}{a^{2}+1}$</li>\n</ul>",
    "file": "2019_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 46
   },
   {
    "subject": "數學",
@@ -9775,7 +9976,8 @@ window.QB = {
    "text": "考慮以下的不等式組：\n\n$$\n\n\\begin{cases}\n\nx+2y \\leq 20 \\\\\n\n7x-6y \\leq 20 \\\\\n\n13x+6y \\geq 20\n\n\\end{cases}\n\n$$\n\n設 $R$ 為表示以上的不等式組的解之區域。若 $(x,y)$ 為 $R$ 中的一點，則 $7x+8y+9$ 的最大值為\n\n- A. 15\n- B. 77\n- C. 113\n- D. 115",
    "html": "<p>考慮以下的不等式組：</p>\n<p>$$</p>\n<p>\\begin{cases}</p>\n<p>x+2y \\leq 20 \\</p>\n<p>7x-6y \\leq 20 \\</p>\n<p>13x+6y \\geq 20</p>\n<p>\\end{cases}</p>\n<p>$$</p>\n<p>設 $R$ 為表示以上的不等式組的解之區域。若 $(x,y)$ 為 $R$ 中的一點，則 $7x+8y+9$ 的最大值為</p>\n<ul>\n<li>A. 15</li>\n<li>B. 77</li>\n<li>C. 113</li>\n<li>D. 115</li>\n</ul>",
    "file": "2019_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 53
   },
   {
    "subject": "數學",
@@ -9791,7 +9993,8 @@ window.QB = {
    "text": "Consider the following system of inequalities:\n$\\begin{cases} x+2y\\leq 20 \\\\ 7x-6y\\leq 20 \\\\ 13x+6y\\geq 20 \\end{cases}$\nLet $R$ be the region which represents the solution of the above system of inequalities. If $(x,y)$ is a point lying in $R$, then the greatest value of $7x+8y+9$ is\n\n- A. 15\n- B. 77\n- C. 113\n- D. 115",
    "html": "<p>Consider the following system of inequalities:\n$\\begin{cases} x+2y\\leq 20 \\ 7x-6y\\leq 20 \\ 13x+6y\\geq 20 \\end{cases}$\nLet $R$ be the region which represents the solution of the above system of inequalities. If $(x,y)$ is a point lying in $R$, then the greatest value of $7x+8y+9$ is</p>\n<ul>\n<li>A. 15</li>\n<li>B. 77</li>\n<li>C. 113</li>\n<li>D. 115</li>\n</ul>",
    "file": "2019_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 53
   },
   {
    "subject": "數學",
@@ -9807,7 +10010,8 @@ window.QB = {
    "text": "一等比數列的第 2 項與第 5 項之和為 9，而該數列的第 7 項與第 10 項之和為 288。求該數列的第 20 項。\n\n- A. 65536\n- B. 131072\n- C. 262144\n- D. 524288",
    "html": "<p>一等比數列的第 2 項與第 5 項之和為 9，而該數列的第 7 項與第 10 項之和為 288。求該數列的第 20 項。</p>\n<ul>\n<li>A. 65536</li>\n<li>B. 131072</li>\n<li>C. 262144</li>\n<li>D. 524288</li>\n</ul>",
    "file": "2019_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 41
   },
   {
    "subject": "數學",
@@ -9823,7 +10027,8 @@ window.QB = {
    "text": "The sum of the 2nd term and the 5th term of a geometric sequence is 9 while the sum of the 7th term and the 10th term of the sequence is 288. Find the 20th term of the sequence.\n\n- A. 65 536\n- B. 131 072\n- C. 262 144\n- D. 524 288",
    "html": "<p>The sum of the 2nd term and the 5th term of a geometric sequence is 9 while the sum of the 7th term and the 10th term of the sequence is 288. Find the 20th term of the sequence.</p>\n<ul>\n<li>A. 65 536</li>\n<li>B. 131 072</li>\n<li>C. 262 144</li>\n<li>D. 524 288</li>\n</ul>",
    "file": "2019_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 41
   },
   {
    "subject": "數學",
@@ -9840,7 +10045,8 @@ window.QB = {
    "text": "設 $ k $ 為一常數。直線 $ 3x - y - 2 = 0 $ 與圓 $ 5x^2 + 5y^2 + kx + 4y - 20 = 0 $ 相交於點 $ P $ 及點 $ Q $。若 $ PQ $ 的中點的 $ x $ 坐標為 2，求 $ k $。\n\n- A. $-152$\n- B. $-52$\n- C. $148$\n- D. $248$",
    "html": "<p>設 $ k $ 為一常數。直線 $ 3x - y - 2 = 0 $ 與圓 $ 5x^2 + 5y^2 + kx + 4y - 20 = 0 $ 相交於點 $ P $ 及點 $ Q $。若 $ PQ $ 的中點的 $ x $ 坐標為 2，求 $ k $。</p>\n<ul>\n<li>A. $-152$</li>\n<li>B. $-52$</li>\n<li>C. $148$</li>\n<li>D. $248$</li>\n</ul>",
    "file": "2019_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 31
   },
   {
    "subject": "數學",
@@ -9857,7 +10063,8 @@ window.QB = {
    "text": "Let $k$ be a constant. The straight line $3x - y - 2 = 0$ and the circle $5x^2 + 5y^2 + kx + 4y - 20 = 0$ intersect at the points $P$ and $Q$. If the $x$-coordinate of the mid-point of $PQ$ is 2, find $k$.\n\n- A. $-152$\n- B. $-52$\n- C. $148$\n- D. $248$",
    "html": "<p>Let $k$ be a constant. The straight line $3x - y - 2 = 0$ and the circle $5x^2 + 5y^2 + kx + 4y - 20 = 0$ intersect at the points $P$ and $Q$. If the $x$-coordinate of the mid-point of $PQ$ is 2, find $k$.</p>\n<ul>\n<li>A. $-152$</li>\n<li>B. $-52$</li>\n<li>C. $148$</li>\n<li>D. $248$</li>\n</ul>",
    "file": "2019_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 31
   },
   {
    "subject": "數學",
@@ -9874,7 +10081,8 @@ window.QB = {
    "text": "圖中，$ O $ 為扇形 $ OABC $ 的圓心。已知 $ \\Delta OAB $ 為一等邊三角形。$ AC $ 與 $ OB $ 相交於點 $ D $。若 $ OA = 12 \\, \\text{cm} $ 及 $ \\angle AOC = 90^\\circ $，求陰影區域 $ BCD $ 的面積準確至最接近的 $ \\text{cm}^2 $。\n\n\n![Figure Q38 (as printed)](2019P2_zh_figs/Q38.png)\n\n- A. $11 \\, \\text{cm}^2$\n- B. $16 \\, \\text{cm}^2$\n- C. $26 \\, \\text{cm}^2$\n- D. $38 \\, \\text{cm}^2$",
    "html": "<p>圖中，$ O $ 為扇形 $ OABC $ 的圓心。已知 $ \\Delta OAB $ 為一等邊三角形。$ AC $ 與 $ OB $ 相交於點 $ D $。若 $ OA = 12 \\, \\text{cm} $ 及 $ \\angle AOC = 90^\\circ $，求陰影區域 $ BCD $ 的面積準確至最接近的 $ \\text{cm}^2 $。</p>\n<p><img alt=\"Figure Q38 (as printed)\" src=\"2019P2_zh_figs/Q38.png\" /></p>\n<ul>\n<li>A. $11 \\, \\text{cm}^2$</li>\n<li>B. $16 \\, \\text{cm}^2$</li>\n<li>C. $26 \\, \\text{cm}^2$</li>\n<li>D. $38 \\, \\text{cm}^2$</li>\n</ul>",
    "file": "2019_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 35
   },
   {
    "subject": "數學",
@@ -9891,7 +10099,8 @@ window.QB = {
    "text": "In the figure, $O$ is the centre of the sector $OABC$. It is given that $\\triangle OAB$ is an equilateral triangle. $AC$ and $OB$ intersect at the point $D$. If $OA = 12 \\text{ cm}$ and $\\angle AOC = 90^\\circ$, find the area of the shaded region $BCD$ correct to the nearest $\\text{cm}^2$.\n![Figure Q38 (as printed)](2019P2_figs/Q38.png)\n*[FIGURE Q38: A right triangle OAC with points B, D on OA and OC respectively. Shaded triangle ABC. Solid lines; no dashed lines. No angles, numbers, or right-angle marks printed.]*\n\n- A. $11 \\text{ cm}^2$\n- B. $16 \\text{ cm}^2$\n- C. $26 \\text{ cm}^2$\n- D. $38 \\text{ cm}^2$",
    "html": "<p>In the figure, $O$ is the centre of the sector $OABC$. It is given that $\\triangle OAB$ is an equilateral triangle. $AC$ and $OB$ intersect at the point $D$. If $OA = 12 \\text{ cm}$ and $\\angle AOC = 90^\\circ$, find the area of the shaded region $BCD$ correct to the nearest $\\text{cm}^2$.\n<img alt=\"Figure Q38 (as printed)\" src=\"2019P2_figs/Q38.png\" />\n<em>[FIGURE Q38: A right triangle OAC with points B, D on OA and OC respectively. Shaded triangle ABC. Solid lines; no dashed lines. No angles, numbers, or right-angle marks printed.]</em></p>\n<ul>\n<li>A. $11 \\text{ cm}^2$</li>\n<li>B. $16 \\text{ cm}^2$</li>\n<li>C. $26 \\text{ cm}^2$</li>\n<li>D. $38 \\text{ cm}^2$</li>\n</ul>",
    "file": "2019_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 35
   },
   {
    "subject": "數學",
@@ -9908,7 +10117,8 @@ window.QB = {
    "text": "圖中，$ TA $ 為圓 $ ABCDE $ 在點 $ A $ 的切線。若 $ \\angle BAD = 64^\\circ $、$ \\angle EAT = 38^\\circ $ 及 $ \\angle DCE = 22^\\circ $，則 $ \\angle ADB = $\n\n\n![Figure Q39 (as printed)](2019P2_zh_figs/Q39.png)\n\n- A. $52^\\circ$\n- B. $56^\\circ$\n- C. $60^\\circ$\n- D. $68^\\circ$",
    "html": "<p>圖中，$ TA $ 為圓 $ ABCDE $ 在點 $ A $ 的切線。若 $ \\angle BAD = 64^\\circ $、$ \\angle EAT = 38^\\circ $ 及 $ \\angle DCE = 22^\\circ $，則 $ \\angle ADB = $</p>\n<p><img alt=\"Figure Q39 (as printed)\" src=\"2019P2_zh_figs/Q39.png\" /></p>\n<ul>\n<li>A. $52^\\circ$</li>\n<li>B. $56^\\circ$</li>\n<li>C. $60^\\circ$</li>\n<li>D. $68^\\circ$</li>\n</ul>",
    "file": "2019_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 49
   },
   {
    "subject": "數學",
@@ -9925,7 +10135,8 @@ window.QB = {
    "text": "In the figure, $TA$ is the tangent to the circle $ABCDE$ at the point $A$. If $\\angle BAD = 64^\\circ$, $\\angle EAT = 38^\\circ$ and $\\angle DCE = 22^\\circ$, then $\\angle ADB =$\n![Figure Q39 (as printed)](2019P2_figs/Q39.png)\n*[FIGURE Q39: A circle with points A, B, C, D, E, T. Solid lines connect A-B, B-C, C-D, D-E, E-A, A-T, B-T, C-T, D-T. No angles, arcs, arrows, shaded regions, or right-angle marks. No dashed lines.]*\n\n- A. $52^\\circ$\n- B. $56^\\circ$\n- C. $60^\\circ$\n- D. $68^\\circ$",
    "html": "<p>In the figure, $TA$ is the tangent to the circle $ABCDE$ at the point $A$. If $\\angle BAD = 64^\\circ$, $\\angle EAT = 38^\\circ$ and $\\angle DCE = 22^\\circ$, then $\\angle ADB =$\n<img alt=\"Figure Q39 (as printed)\" src=\"2019P2_figs/Q39.png\" />\n<em>[FIGURE Q39: A circle with points A, B, C, D, E, T. Solid lines connect A-B, B-C, C-D, D-E, E-A, A-T, B-T, C-T, D-T. No angles, arcs, arrows, shaded regions, or right-angle marks. No dashed lines.]</em></p>\n<ul>\n<li>A. $52^\\circ$</li>\n<li>B. $56^\\circ$</li>\n<li>C. $60^\\circ$</li>\n<li>D. $68^\\circ$</li>\n</ul>",
    "file": "2019_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 49
   },
   {
    "subject": "數學",
@@ -9941,7 +10152,8 @@ window.QB = {
    "text": "圖中所示為四面體 $PQRS$ ，其底 $QRS$ 在水平地面上。已知 $Q$ 鉛垂於 $P$ 之下。若 $\\angle PRQ = 47^\\circ$ 、$\\angle PSQ = 53^\\circ$ 及 $\\angle RQS = 120^\\circ$ ，求 $\\angle RPS$ 準確至最接近的度。\n\n\n![Figure Q40 (as printed)](2019P2_zh_figs/Q40.png)\n\n- A. $52^\\circ$\n- B. $60^\\circ$\n- C. $68^\\circ$\n- D. $76^\\circ$",
    "html": "<p>圖中所示為四面體 $PQRS$ ，其底 $QRS$ 在水平地面上。已知 $Q$ 鉛垂於 $P$ 之下。若 $\\angle PRQ = 47^\\circ$ 、$\\angle PSQ = 53^\\circ$ 及 $\\angle RQS = 120^\\circ$ ，求 $\\angle RPS$ 準確至最接近的度。</p>\n<p><img alt=\"Figure Q40 (as printed)\" src=\"2019P2_zh_figs/Q40.png\" /></p>\n<ul>\n<li>A. $52^\\circ$</li>\n<li>B. $60^\\circ$</li>\n<li>C. $68^\\circ$</li>\n<li>D. $76^\\circ$</li>\n</ul>",
    "file": "2019_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 38
   },
   {
    "subject": "數學",
@@ -9957,7 +10169,8 @@ window.QB = {
    "text": "The figure shows a tetrahedron $PQRS$ with the base $QRS$ lying on the horizontal ground. It is given that $Q$ is vertically below $P$. If $\\angle PRQ = 47^\\circ$, $\\angle PSQ = 53^\\circ$ and $\\angle RQS = 120^\\circ$, find $\\angle RPS$ correct to the nearest degree.\n![Figure Q40 (as printed)](2019P2_figs/Q40.png)\n*[FIGURE Q40: A quadrilateral PRSQ with solid lines PR, RS, and PS; dashed line QS. Points P, Q, R, S labeled. Right-angle marks at P and R. Dashed line from Q to S. No numbers or angles printed.]*\n\n- A. $52^\\circ$\n- B. $60^\\circ$\n- C. $68^\\circ$\n- D. $76^\\circ$",
    "html": "<p>The figure shows a tetrahedron $PQRS$ with the base $QRS$ lying on the horizontal ground. It is given that $Q$ is vertically below $P$. If $\\angle PRQ = 47^\\circ$, $\\angle PSQ = 53^\\circ$ and $\\angle RQS = 120^\\circ$, find $\\angle RPS$ correct to the nearest degree.\n<img alt=\"Figure Q40 (as printed)\" src=\"2019P2_figs/Q40.png\" />\n<em>[FIGURE Q40: A quadrilateral PRSQ with solid lines PR, RS, and PS; dashed line QS. Points P, Q, R, S labeled. Right-angle marks at P and R. Dashed line from Q to S. No numbers or angles printed.]</em></p>\n<ul>\n<li>A. $52^\\circ$</li>\n<li>B. $60^\\circ$</li>\n<li>C. $68^\\circ$</li>\n<li>D. $76^\\circ$</li>\n</ul>",
    "file": "2019_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 38
   },
   {
    "subject": "數學",
@@ -9973,7 +10186,8 @@ window.QB = {
    "text": "若 $\\triangle ABC$ 為一直角三角形且 $\\angle ABC = 90^\\circ$ ，則下列何者正確？\nI. $\\triangle ABC$ 的垂心在 $AC$ 上。\nII. $\\triangle ABC$ 的形心位於 $\\triangle ABC$ 以內。\nIII. $\\triangle ABC$ 的內心位於 $\\triangle ABC$ 以外。\n\n- A. 只有 I\n- B. 只有 II\n- C. 只有 I 及 III\n- D. 只有 II 及 III",
    "html": "<p>若 $\\triangle ABC$ 為一直角三角形且 $\\angle ABC = 90^\\circ$ ，則下列何者正確？\nI. $\\triangle ABC$ 的垂心在 $AC$ 上。\nII. $\\triangle ABC$ 的形心位於 $\\triangle ABC$ 以內。\nIII. $\\triangle ABC$ 的內心位於 $\\triangle ABC$ 以外。</p>\n<ul>\n<li>A. 只有 I</li>\n<li>B. 只有 II</li>\n<li>C. 只有 I 及 III</li>\n<li>D. 只有 II 及 III</li>\n</ul>",
    "file": "2019_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 44
   },
   {
    "subject": "數學",
@@ -9989,7 +10203,8 @@ window.QB = {
    "text": "If $\\triangle ABC$ is a right-angled triangle with $\\angle ABC = 90^\\circ$, which of the following is/are true?\nI. The orthocentre of $\\triangle ABC$ lies on $AC$.\nII. The centroid of $\\triangle ABC$ lies inside $\\triangle ABC$.\nIII. The in-centre of $\\triangle ABC$ lies outside $\\triangle ABC$.\n\n- A. I only\n- B. II only\n- C. I and III only\n- D. II and III only",
    "html": "<p>If $\\triangle ABC$ is a right-angled triangle with $\\angle ABC = 90^\\circ$, which of the following is/are true?\nI. The orthocentre of $\\triangle ABC$ lies on $AC$.\nII. The centroid of $\\triangle ABC$ lies inside $\\triangle ABC$.\nIII. The in-centre of $\\triangle ABC$ lies outside $\\triangle ABC$.</p>\n<ul>\n<li>A. I only</li>\n<li>B. II only</li>\n<li>C. I and III only</li>\n<li>D. II and III only</li>\n</ul>",
    "file": "2019_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 44
   },
   {
    "subject": "數學",
@@ -10006,7 +10221,8 @@ window.QB = {
    "text": "某袋子內有 2 個綠色杯、8 個藍色杯及 9 個紅色杯。若從該袋子內隨機同時抽出 6 個杯，求抽出至少 1 個藍色杯的概率。\n\n- A. $\\frac{31}{57}$\n- B. $\\frac{44}{323}$\n- C. $\\frac{635}{646}$\n- D. $\\frac{968}{969}$",
    "html": "<p>某袋子內有 2 個綠色杯、8 個藍色杯及 9 個紅色杯。若從該袋子內隨機同時抽出 6 個杯，求抽出至少 1 個藍色杯的概率。</p>\n<ul>\n<li>A. $\\frac{31}{57}$</li>\n<li>B. $\\frac{44}{323}$</li>\n<li>C. $\\frac{635}{646}$</li>\n<li>D. $\\frac{968}{969}$</li>\n</ul>",
    "file": "2019_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 65
   },
   {
    "subject": "數學",
@@ -10023,7 +10239,8 @@ window.QB = {
    "text": "There are 2 green cups, 8 blue cups and 9 red cups in a bag. If 6 cups are randomly drawn from the bag at the same time, find the probability that at least 1 blue cup is drawn.\n\n- A. $\\dfrac{31}{57}$\n- B. $\\dfrac{44}{323}$\n- C. $\\dfrac{635}{646}$\n- D. $\\dfrac{968}{969}$",
    "html": "<p>There are 2 green cups, 8 blue cups and 9 red cups in a bag. If 6 cups are randomly drawn from the bag at the same time, find the probability that at least 1 blue cup is drawn.</p>\n<ul>\n<li>A. $\\dfrac{31}{57}$</li>\n<li>B. $\\dfrac{44}{323}$</li>\n<li>C. $\\dfrac{635}{646}$</li>\n<li>D. $\\dfrac{968}{969}$</li>\n</ul>",
    "file": "2019_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 65
   },
   {
    "subject": "數學",
@@ -10039,7 +10256,8 @@ window.QB = {
    "text": "某數學比賽共設三題。素珊答對第一題、答對第二題及答對第三題的概率分別為 $\\frac{1}{3}$ 、 $\\frac{1}{5}$ 及 $\\frac{1}{7}$ 。素珊在該比賽中答對至多 2 題的概率為\n\n- A. $\\frac{1}{105}$\n- B. $\\frac{13}{105}$\n- C. $\\frac{92}{105}$\n- D. $\\frac{104}{105}$",
    "html": "<p>某數學比賽共設三題。素珊答對第一題、答對第二題及答對第三題的概率分別為 $\\frac{1}{3}$ 、 $\\frac{1}{5}$ 及 $\\frac{1}{7}$ 。素珊在該比賽中答對至多 2 題的概率為</p>\n<ul>\n<li>A. $\\frac{1}{105}$</li>\n<li>B. $\\frac{13}{105}$</li>\n<li>C. $\\frac{92}{105}$</li>\n<li>D. $\\frac{104}{105}$</li>\n</ul>",
    "file": "2019_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 47
   },
   {
    "subject": "數學",
@@ -10055,7 +10273,8 @@ window.QB = {
    "text": "There are three questions in a mathematics competition. The probabilities that Susan answers the first question correctly, the second question correctly and the third question correctly are $\\frac{1}{3}$, $\\frac{1}{5}$ and $\\frac{1}{7}$ respectively. The probability that Susan answers at most 2 questions correctly in the competition is\n\n- A. $\\frac{1}{105}$.\n- B. $\\frac{13}{105}$.\n- C. $\\frac{92}{105}$.\n- D. $\\frac{104}{105}$.",
    "html": "<p>There are three questions in a mathematics competition. The probabilities that Susan answers the first question correctly, the second question correctly and the third question correctly are $\\frac{1}{3}$, $\\frac{1}{5}$ and $\\frac{1}{7}$ respectively. The probability that Susan answers at most 2 questions correctly in the competition is</p>\n<ul>\n<li>A. $\\frac{1}{105}$.</li>\n<li>B. $\\frac{13}{105}$.</li>\n<li>C. $\\frac{92}{105}$.</li>\n<li>D. $\\frac{104}{105}$.</li>\n</ul>",
    "file": "2019_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 47
   },
   {
    "subject": "數學",
@@ -10072,7 +10291,8 @@ window.QB = {
    "text": "在某考試，考試得分的標準差為 8 分。小麗的考試得分為 69 分且她的標準分為 0.5 。若偉明在該考試的標準分為 -1.5 ，則他的考試得分為\n\n- A. 45 分\n- B. 53 分\n- C. 65 分\n- D. 77 分",
    "html": "<p>在某考試，考試得分的標準差為 8 分。小麗的考試得分為 69 分且她的標準分為 0.5 。若偉明在該考試的標準分為 -1.5 ，則他的考試得分為</p>\n<ul>\n<li>A. 45 分</li>\n<li>B. 53 分</li>\n<li>C. 65 分</li>\n<li>D. 77 分</li>\n</ul>",
    "file": "2019_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 72
   },
   {
    "subject": "數學",
@@ -10089,7 +10309,8 @@ window.QB = {
    "text": "In an examination, the standard deviation of the examination scores is 8 marks. The examination score of Mary is 69 marks and her standard score is 0.5. If the standard score of John in the examination is -1.5, then his examination score is\n\n- A. 45 marks.\n- B. 53 marks.\n- C. 65 marks.\n- D. 77 marks.",
    "html": "<p>In an examination, the standard deviation of the examination scores is 8 marks. The examination score of Mary is 69 marks and her standard score is 0.5. If the standard score of John in the examination is -1.5, then his examination score is</p>\n<ul>\n<li>A. 45 marks.</li>\n<li>B. 53 marks.</li>\n<li>C. 65 marks.</li>\n<li>D. 77 marks.</li>\n</ul>",
    "file": "2019_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 72
   },
   {
    "subject": "數學",
@@ -10106,7 +10327,8 @@ window.QB = {
    "text": "某組數的平均值、分佈域及方差分別為 $m$ 、 $r$ 及 $v$ 。將該組的每個數乘以 6 後各加上 5 而成新一組數。下列何者正確？\nI. 新一組數的平均值為 $6m+5$ 。\nII. 新一組數的分佈域為 $6r+5$ 。\nIII. 新一組數的方差為 $6v+5$ 。\n\n- A. 只有 I\n- B. 只有 II\n- C. 只有 I 及 III\n- D. 只有 II 及 III\n\n\n---\n\n## 答案（官方評卷參考）\n\n| 題–答 | | | | |\n|---|---|---|---|---|\n| 1 C | 2 D | 3 B | 4 C | 5 A |\n| 6 D | 7 B | 8 C | 9 D | 10 A |\n| 11 C | 12 B | 13 A | 14 C | 15 D |\n| 16 D | 17 A | 18 D | 19 A | 20 C |\n| 21 B | 22 B | 23 A | 24 A | 25 D |\n| 26 D | 27 B | 28 C | 29 B | 30 C |\n| 31 B | 32 D | 33 A | 34 D | 35 C |\n| 36 C | 37 A | 38 A | 39 B | 40 C |\n| 41 B | 42 C | 43 D | 44 B | 45 A |",
    "html": "<p>某組數的平均值、分佈域及方差分別為 $m$ 、 $r$ 及 $v$ 。將該組的每個數乘以 6 後各加上 5 而成新一組數。下列何者正確？\nI. 新一組數的平均值為 $6m+5$ 。\nII. 新一組數的分佈域為 $6r+5$ 。\nIII. 新一組數的方差為 $6v+5$ 。</p>\n<ul>\n<li>A. 只有 I</li>\n<li>B. 只有 II</li>\n<li>C. 只有 I 及 III</li>\n<li>D. 只有 II 及 III</li>\n</ul>\n<hr />\n<h2>答案（官方評卷參考）</h2>\n<table>\n<thead>\n<tr>\n<th>題–答</th>\n<th></th>\n<th></th>\n<th></th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1 C</td>\n<td>2 D</td>\n<td>3 B</td>\n<td>4 C</td>\n<td>5 A</td>\n</tr>\n<tr>\n<td>6 D</td>\n<td>7 B</td>\n<td>8 C</td>\n<td>9 D</td>\n<td>10 A</td>\n</tr>\n<tr>\n<td>11 C</td>\n<td>12 B</td>\n<td>13 A</td>\n<td>14 C</td>\n<td>15 D</td>\n</tr>\n<tr>\n<td>16 D</td>\n<td>17 A</td>\n<td>18 D</td>\n<td>19 A</td>\n<td>20 C</td>\n</tr>\n<tr>\n<td>21 B</td>\n<td>22 B</td>\n<td>23 A</td>\n<td>24 A</td>\n<td>25 D</td>\n</tr>\n<tr>\n<td>26 D</td>\n<td>27 B</td>\n<td>28 C</td>\n<td>29 B</td>\n<td>30 C</td>\n</tr>\n<tr>\n<td>31 B</td>\n<td>32 D</td>\n<td>33 A</td>\n<td>34 D</td>\n<td>35 C</td>\n</tr>\n<tr>\n<td>36 C</td>\n<td>37 A</td>\n<td>38 A</td>\n<td>39 B</td>\n<td>40 C</td>\n</tr>\n<tr>\n<td>41 B</td>\n<td>42 C</td>\n<td>43 D</td>\n<td>44 B</td>\n<td>45 A</td>\n</tr>\n</tbody>\n</table>",
    "file": "2019_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 56
   },
   {
    "subject": "數學",
@@ -10123,7 +10345,8 @@ window.QB = {
    "text": "The mean, the range and the variance of a set of numbers are $m$, $r$ and $v$ respectively. Each number of the set is multiplied by 6 and then 5 is added to each resulting number to form a new set of numbers. Which of the following is/are true?\nI. The mean of the new set of numbers is $6m+5$.\nII. The range of the new set of numbers is $6r+5$.\nIII. The variance of the new set of numbers is $6v+5$.\n\n- A. I only.\n- B. II only.\n- C. I and III only.\n- D. II and III only.\n\n\n---",
    "html": "<p>The mean, the range and the variance of a set of numbers are $m$, $r$ and $v$ respectively. Each number of the set is multiplied by 6 and then 5 is added to each resulting number to form a new set of numbers. Which of the following is/are true?\nI. The mean of the new set of numbers is $6m+5$.\nII. The range of the new set of numbers is $6r+5$.\nIII. The variance of the new set of numbers is $6v+5$.</p>\n<ul>\n<li>A. I only.</li>\n<li>B. II only.</li>\n<li>C. I and III only.</li>\n<li>D. II and III only.</li>\n</ul>\n<hr />",
    "file": "2019_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 56
   },
   {
    "subject": "數學",
@@ -11085,7 +11308,8 @@ window.QB = {
    "text": "$\\frac{8^{2n+1}}{4^{3n+1}}=$\n\n- A. $1$。\n- B. $2$。\n- C. $2^n$。\n- D. $2^{-n}$。",
    "html": "<p>$\\frac{8^{2n+1}}{4^{3n+1}}=$</p>\n<ul>\n<li>A. $1$。</li>\n<li>B. $2$。</li>\n<li>C. $2^n$。</li>\n<li>D. $2^{-n}$。</li>\n</ul>",
    "file": "2018_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 71
   },
   {
    "subject": "數學",
@@ -11101,7 +11325,8 @@ window.QB = {
    "text": "$\\dfrac{8^{2n+1}}{4^{3n+1}}=$\n\n- A. $1$\n- B. $2$\n- C. $2^{n}$\n- D. $2^{-n}$",
    "html": "<p>$\\dfrac{8^{2n+1}}{4^{3n+1}}=$</p>\n<ul>\n<li>A. $1$</li>\n<li>B. $2$</li>\n<li>C. $2^{n}$</li>\n<li>D. $2^{-n}$</li>\n</ul>",
    "file": "2018_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 71
   },
   {
    "subject": "數學",
@@ -11117,7 +11342,8 @@ window.QB = {
    "text": "若 $\\frac{\\alpha}{1-x}=\\frac{\\beta}{x}$，則 $x=$\n\n- A. $\\frac{\\alpha}{\\alpha-\\beta}$。\n- B. $\\frac{\\alpha}{\\alpha+\\beta}$。\n- C. $\\frac{\\beta}{\\alpha-\\beta}$。\n- D. $\\frac{\\beta}{\\alpha+\\beta}$。",
    "html": "<p>若 $\\frac{\\alpha}{1-x}=\\frac{\\beta}{x}$，則 $x=$</p>\n<ul>\n<li>A. $\\frac{\\alpha}{\\alpha-\\beta}$。</li>\n<li>B. $\\frac{\\alpha}{\\alpha+\\beta}$。</li>\n<li>C. $\\frac{\\beta}{\\alpha-\\beta}$。</li>\n<li>D. $\\frac{\\beta}{\\alpha+\\beta}$。</li>\n</ul>",
    "file": "2018_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 80
   },
   {
    "subject": "數學",
@@ -11133,7 +11359,8 @@ window.QB = {
    "text": "If $\\dfrac{\\alpha}{1-x}=\\dfrac{\\beta}{x}$, then $x=$\n\n- A. $\\dfrac{\\alpha}{\\alpha-\\beta}$\n- B. $\\dfrac{\\alpha}{\\alpha+\\beta}$\n- C. $\\dfrac{\\beta}{\\alpha-\\beta}$\n- D. $\\dfrac{\\beta}{\\alpha+\\beta}$",
    "html": "<p>If $\\dfrac{\\alpha}{1-x}=\\dfrac{\\beta}{x}$, then $x=$</p>\n<ul>\n<li>A. $\\dfrac{\\alpha}{\\alpha-\\beta}$</li>\n<li>B. $\\dfrac{\\alpha}{\\alpha+\\beta}$</li>\n<li>C. $\\dfrac{\\beta}{\\alpha-\\beta}$</li>\n<li>D. $\\dfrac{\\beta}{\\alpha+\\beta}$</li>\n</ul>",
    "file": "2018_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 80
   },
   {
    "subject": "數學",
@@ -11149,7 +11376,8 @@ window.QB = {
    "text": "$h^2-6h-4k^2-12k=$\n\n- A. $(h-2k)(h-2k+6)$。\n- B. $(h-2k)(h+2k+6)$。\n- C. $(h+2k)(h-2k-6)$。\n- D. $(h+2k)(h+2k-6)$。",
    "html": "<p>$h^2-6h-4k^2-12k=$</p>\n<ul>\n<li>A. $(h-2k)(h-2k+6)$。</li>\n<li>B. $(h-2k)(h+2k+6)$。</li>\n<li>C. $(h+2k)(h-2k-6)$。</li>\n<li>D. $(h+2k)(h+2k-6)$。</li>\n</ul>",
    "file": "2018_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 80
   },
   {
    "subject": "數學",
@@ -11165,7 +11393,8 @@ window.QB = {
    "text": "$h^{2}-6h-4k^{2}-12k=$\n\n- A. $(h-2k)(h-2k+6)$\n- B. $(h-2k)(h+2k+6)$\n- C. $(h+2k)(h-2k-6)$\n- D. $(h+2k)(h+2k-6)$",
    "html": "<p>$h^{2}-6h-4k^{2}-12k=$</p>\n<ul>\n<li>A. $(h-2k)(h-2k+6)$</li>\n<li>B. $(h-2k)(h+2k+6)$</li>\n<li>C. $(h+2k)(h-2k-6)$</li>\n<li>D. $(h+2k)(h+2k-6)$</li>\n</ul>",
    "file": "2018_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 80
   },
   {
    "subject": "數學",
@@ -11181,7 +11410,8 @@ window.QB = {
    "text": "$\\dfrac{1}{3x+7}-\\dfrac{1}{3x-7}=$\n\n- A. $\\dfrac{14}{49-9x^2}$\n- B. $\\dfrac{14}{9x^2-49}$\n- C. $\\dfrac{6x}{49-9x^2}$\n- D. $\\dfrac{6x}{9x^2-49}$",
    "html": "<p>$\\dfrac{1}{3x+7}-\\dfrac{1}{3x-7}=$</p>\n<ul>\n<li>A. $\\dfrac{14}{49-9x^2}$</li>\n<li>B. $\\dfrac{14}{9x^2-49}$</li>\n<li>C. $\\dfrac{6x}{49-9x^2}$</li>\n<li>D. $\\dfrac{6x}{9x^2-49}$</li>\n</ul>",
    "file": "2018_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 74
   },
   {
    "subject": "數學",
@@ -11197,7 +11427,8 @@ window.QB = {
    "text": "$\\dfrac{1}{3x+7}-\\dfrac{1}{3x-7}=$\n\n- A. $\\dfrac{14}{49-9x^{2}}$\n- B. $\\dfrac{14}{9x^{2}-49}$\n- C. $\\dfrac{6x}{49-9x^{2}}$\n- D. $\\dfrac{6x}{9x^{2}-49}$",
    "html": "<p>$\\dfrac{1}{3x+7}-\\dfrac{1}{3x-7}=$</p>\n<ul>\n<li>A. $\\dfrac{14}{49-9x^{2}}$</li>\n<li>B. $\\dfrac{14}{9x^{2}-49}$</li>\n<li>C. $\\dfrac{6x}{49-9x^{2}}$</li>\n<li>D. $\\dfrac{6x}{9x^{2}-49}$</li>\n</ul>",
    "file": "2018_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 74
   },
   {
    "subject": "數學",
@@ -11214,7 +11445,8 @@ window.QB = {
    "text": "下列有關 $y=16-(x-6)^2$ 的圖像之敘述，何者正確？\n\n- A. 該圖像與 $x$ 軸相交。\n- B. 該圖像開口向上。\n- C. 該圖像的 $y$ 截距為 16。\n- D. 該圖像通過原點。",
    "html": "<p>下列有關 $y=16-(x-6)^2$ 的圖像之敘述，何者正確？</p>\n<ul>\n<li>A. 該圖像與 $x$ 軸相交。</li>\n<li>B. 該圖像開口向上。</li>\n<li>C. 該圖像的 $y$ 截距為 16。</li>\n<li>D. 該圖像通過原點。</li>\n</ul>",
    "file": "2018_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 61
   },
   {
    "subject": "數學",
@@ -11231,7 +11463,8 @@ window.QB = {
    "text": "Which of the following statements about the graph of $y=16-(x-6)^{2}$ is true?\n\n- A. The graph cuts the $x$-axis.\n- B. The graph opens upwards.\n- C. The $y$-intercept of the graph is 16.\n- D. The graph passes through the origin.",
    "html": "<p>Which of the following statements about the graph of $y=16-(x-6)^{2}$ is true?</p>\n<ul>\n<li>A. The graph cuts the $x$-axis.</li>\n<li>B. The graph opens upwards.</li>\n<li>C. The $y$-intercept of the graph is 16.</li>\n<li>D. The graph passes through the origin.</li>\n</ul>",
    "file": "2018_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 61
   },
   {
    "subject": "數學",
@@ -11248,7 +11481,8 @@ window.QB = {
    "text": "圖中，直線 $L_1$ 及直線 $L_2$ 的方程分別為 $3x+ay=b$ 及 $cx+y=d$。下列何者正確？\nI. $ac<3$\nII. $ad<b$\nIII. $bc<3d$\n\n\n![Figure Q6 (as printed)](2018P2_zh_figs/Q06.png)\n\n- A. 只有 II\n- B. 只有 III\n- C. 只有 I 及 II\n- D. 只有 I 及 III",
    "html": "<p>圖中，直線 $L_1$ 及直線 $L_2$ 的方程分別為 $3x+ay=b$ 及 $cx+y=d$。下列何者正確？\nI. $ac&lt;3$\nII. $ad&lt;b$\nIII. $bc&lt;3d$</p>\n<p><img alt=\"Figure Q6 (as printed)\" src=\"2018P2_zh_figs/Q06.png\" /></p>\n<ul>\n<li>A. 只有 II</li>\n<li>B. 只有 III</li>\n<li>C. 只有 I 及 II</li>\n<li>D. 只有 I 及 III</li>\n</ul>",
    "file": "2018_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 22
   },
   {
    "subject": "數學",
@@ -11265,7 +11499,8 @@ window.QB = {
    "text": "In the figure, the equations of the straight lines $L_{1}$ and $L_{2}$ are $3x+ay=b$ and $cx+y=d$ respectively. Which of the following is/are true?\nI. $ac<3$\nII. $ad<b$\nIII. $bc<3d$ [FIGURE Q6: 兩條相交直線 L1（較陡）與 L2（較平），第一象限交點，L1 交 x 軸於負值、L2 交 y 軸正值；標 x, y, O]\n\n- A. II only\n- B. III only\n- C. I and II only\n- D. I and III only",
    "html": "<p>In the figure, the equations of the straight lines $L_{1}$ and $L_{2}$ are $3x+ay=b$ and $cx+y=d$ respectively. Which of the following is/are true?\nI. $ac&lt;3$\nII. $ad&lt;b$\nIII. $bc&lt;3d$ [FIGURE Q6: 兩條相交直線 L1（較陡）與 L2（較平），第一象限交點，L1 交 x 軸於負值、L2 交 y 軸正值；標 x, y, O]</p>\n<ul>\n<li>A. II only</li>\n<li>B. III only</li>\n<li>C. I and II only</li>\n<li>D. I and III only</li>\n</ul>",
    "file": "2018_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 22
   },
   {
    "subject": "數學",
@@ -11281,7 +11516,8 @@ window.QB = {
    "text": "若 $f(x)=3x^2-2x+1$，則 $f(2m-1)=$\n\n- A. $6m^2-4m+2$\n- B. $6m^2-4m+6$\n- C. $12m^2-16m+2$\n- D. $12m^2-16m+6$",
    "html": "<p>若 $f(x)=3x^2-2x+1$，則 $f(2m-1)=$</p>\n<ul>\n<li>A. $6m^2-4m+2$</li>\n<li>B. $6m^2-4m+6$</li>\n<li>C. $12m^2-16m+2$</li>\n<li>D. $12m^2-16m+6$</li>\n</ul>",
    "file": "2018_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 73
   },
   {
    "subject": "數學",
@@ -11297,7 +11533,8 @@ window.QB = {
    "text": "If $f(x)=3x^{2}-2x+1$, then $f(2m-1)=$\n\n- A. $6m^{2}-4m+2$\n- B. $6m^{2}-4m+6$\n- C. $12m^{2}-16m+2$\n- D. $12m^{2}-16m+6$",
    "html": "<p>If $f(x)=3x^{2}-2x+1$, then $f(2m-1)=$</p>\n<ul>\n<li>A. $6m^{2}-4m+2$</li>\n<li>B. $6m^{2}-4m+6$</li>\n<li>C. $12m^{2}-16m+2$</li>\n<li>D. $12m^{2}-16m+6$</li>\n</ul>",
    "file": "2018_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 73
   },
   {
    "subject": "數學",
@@ -11313,7 +11550,8 @@ window.QB = {
    "text": "設 $g(x)=x^8+ax^7+b$，其中 $a$ 及 $b$ 均為常數。若 $g(x)$ 可被 $x-1$ 整除，求當 $g(x)$ 除以 $x+1$ 時的餘數。\n\n- A. 0\n- B. $2a$\n- C. $-2a$\n- D. $-2a+2$",
    "html": "<p>設 $g(x)=x^8+ax^7+b$，其中 $a$ 及 $b$ 均為常數。若 $g(x)$ 可被 $x-1$ 整除，求當 $g(x)$ 除以 $x+1$ 時的餘數。</p>\n<ul>\n<li>A. 0</li>\n<li>B. $2a$</li>\n<li>C. $-2a$</li>\n<li>D. $-2a+2$</li>\n</ul>",
    "file": "2018_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 51
   },
   {
    "subject": "數學",
@@ -11330,7 +11568,8 @@ window.QB = {
    "text": "Let $g(x)=x^{8}+ax^{7}+b$, where $a$ and $b$ are constants. If $g(x)$ is divisible by $x-1$, find the remainder when $g(x)$ is divided by $x+1$.\n\n- A. $0$\n- B. $2a$\n- C. $-2a$\n- D. $-2a+2$",
    "html": "<p>Let $g(x)=x^{8}+ax^{7}+b$, where $a$ and $b$ are constants. If $g(x)$ is divisible by $x-1$, find the remainder when $g(x)$ is divided by $x+1$.</p>\n<ul>\n<li>A. $0$</li>\n<li>B. $2a$</li>\n<li>C. $-2a$</li>\n<li>D. $-2a+2$</li>\n</ul>",
    "file": "2018_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 51
   },
   {
    "subject": "數學",
@@ -11346,7 +11585,8 @@ window.QB = {
    "text": "存款 $100000$，年利率 $2\\%$，年期 $3$ 年，複利計算，每月一結。求利息準確至最接近的元。\n\n- A. $6000$\n- B. $6121$\n- C. $6176$\n- D. $6178$",
    "html": "<p>存款 $100000$，年利率 $2\\%$，年期 $3$ 年，複利計算，每月一結。求利息準確至最接近的元。</p>\n<ul>\n<li>A. $6000$</li>\n<li>B. $6121$</li>\n<li>C. $6176$</li>\n<li>D. $6178$</li>\n</ul>",
    "file": "2018_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 72
   },
   {
    "subject": "數學",
@@ -11362,7 +11602,8 @@ window.QB = {
    "text": "A sum of $\\$100\\,000$ is deposited at an interest rate of $2\\%$ per annum for 3 years, compounded monthly. Find the interest correct to the nearest dollar.\n\n- A. $\\$6\\,000$\n- B. $\\$6\\,121$\n- C. $\\$6\\,176$\n- D. $\\$6\\,178$",
    "html": "<p>A sum of $\\$100\\,000$ is deposited at an interest rate of $2\\%$ per annum for 3 years, compounded monthly. Find the interest correct to the nearest dollar.</p>\n<ul>\n<li>A. $\\$6\\,000$</li>\n<li>B. $\\$6\\,121$</li>\n<li>C. $\\$6\\,176$</li>\n<li>D. $\\$6\\,178$</li>\n</ul>",
    "file": "2018_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 72
   },
   {
    "subject": "數學",
@@ -11378,7 +11619,8 @@ window.QB = {
    "text": "設 $a$、$b$ 及 $c$ 均為非零的數。若 $3a=4b$ 及 $a:c=2:5$，則 $\\frac{a+3b}{b+3c}=$\n\n- A. $\\frac{5}{3}$\n- B. $\\frac{13}{33}$\n- C. $\\frac{30}{53}$\n- D. $\\frac{75}{38}$",
    "html": "<p>設 $a$、$b$ 及 $c$ 均為非零的數。若 $3a=4b$ 及 $a:c=2:5$，則 $\\frac{a+3b}{b+3c}=$</p>\n<ul>\n<li>A. $\\frac{5}{3}$</li>\n<li>B. $\\frac{13}{33}$</li>\n<li>C. $\\frac{30}{53}$</li>\n<li>D. $\\frac{75}{38}$</li>\n</ul>",
    "file": "2018_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 72
   },
   {
    "subject": "數學",
@@ -11394,7 +11636,8 @@ window.QB = {
    "text": "Let $a$, $b$ and $c$ be non-zero numbers. If $3a=4b$ and $a:c=2:5$, then $\\dfrac{a+3b}{b+3c}=$\n\n- A. $\\dfrac{5}{3}$\n- B. $\\dfrac{13}{33}$\n- C. $\\dfrac{30}{53}$\n- D. $\\dfrac{75}{38}$",
    "html": "<p>Let $a$, $b$ and $c$ be non-zero numbers. If $3a=4b$ and $a:c=2:5$, then $\\dfrac{a+3b}{b+3c}=$</p>\n<ul>\n<li>A. $\\dfrac{5}{3}$</li>\n<li>B. $\\dfrac{13}{33}$</li>\n<li>C. $\\dfrac{30}{53}$</li>\n<li>D. $\\dfrac{75}{38}$</li>\n</ul>",
    "file": "2018_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 72
   },
   {
    "subject": "數學",
@@ -11410,7 +11653,8 @@ window.QB = {
    "text": "若 $ w $ 隨 $ u $ 的平方根正變且隨 $ v $ 的平方反變，則下列何者必為常數？\n\n- A. $ u^4vw^2 $\n- B. $ uv^4w^2 $\n- C. $ \\frac{vw^2}{u^4} $\n- D. $ \\frac{v^4w^2}{u} $",
    "html": "<p>若 $ w $ 隨 $ u $ 的平方根正變且隨 $ v $ 的平方反變，則下列何者必為常數？</p>\n<ul>\n<li>A. $ u^4vw^2 $</li>\n<li>B. $ uv^4w^2 $</li>\n<li>C. $ \\frac{vw^2}{u^4} $</li>\n<li>D. $ \\frac{v^4w^2}{u} $</li>\n</ul>",
    "file": "2018_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 67
   },
   {
    "subject": "數學",
@@ -11427,7 +11671,8 @@ window.QB = {
    "text": "If $w$ varies directly as the square root of $u$ and inversely as the square of $v$, which of the following must be constant?\n\n- A. $u^{4}vw^{2}$\n- B. $uv^{4}w^{2}$\n- C. $\\dfrac{vw^{2}}{u^{4}}$\n- D. $\\dfrac{v^{4}w^{2}}{u}$",
    "html": "<p>If $w$ varies directly as the square root of $u$ and inversely as the square of $v$, which of the following must be constant?</p>\n<ul>\n<li>A. $u^{4}vw^{2}$</li>\n<li>B. $uv^{4}w^{2}$</li>\n<li>C. $\\dfrac{vw^{2}}{u^{4}}$</li>\n<li>D. $\\dfrac{v^{4}w^{2}}{u}$</li>\n</ul>",
    "file": "2018_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 67
   },
   {
    "subject": "數學",
@@ -11443,7 +11688,8 @@ window.QB = {
    "text": "設 $ a_n $ 為某數列的第 $ n $ 項。若 $ a_3 = 21 $ 、 $ a_6 = 89 $ 及對任意正整數 $ n $，$ a_{n+2} = a_n + a_{n+1} $，則 $ a_1 = $\n\n- A. 8\n- B. 13\n- C. 34\n- D. 55",
    "html": "<p>設 $ a_n $ 為某數列的第 $ n $ 項。若 $ a_3 = 21 $ 、 $ a_6 = 89 $ 及對任意正整數 $ n $，$ a_{n+2} = a_n + a_{n+1} $，則 $ a_1 = $</p>\n<ul>\n<li>A. 8</li>\n<li>B. 13</li>\n<li>C. 34</li>\n<li>D. 55</li>\n</ul>",
    "file": "2018_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 62
   },
   {
    "subject": "數學",
@@ -11459,7 +11705,8 @@ window.QB = {
    "text": "Let $a_{n}$ be the $n$th term of a sequence. If $a_{3}=21$, $a_{6}=89$ and $a_{n+2}=a_{n}+a_{n+1}$ for any positive integer $n$, then $a_{1}=$\n\n- A. $8$\n- B. $13$\n- C. $34$\n- D. $55$",
    "html": "<p>Let $a_{n}$ be the $n$th term of a sequence. If $a_{3}=21$, $a_{6}=89$ and $a_{n+2}=a_{n}+a_{n+1}$ for any positive integer $n$, then $a_{1}=$</p>\n<ul>\n<li>A. $8$</li>\n<li>B. $13$</li>\n<li>C. $34$</li>\n<li>D. $55$</li>\n</ul>",
    "file": "2018_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 62
   },
   {
    "subject": "數學",
@@ -11475,7 +11722,8 @@ window.QB = {
    "text": "$ \\frac{1-2x}{3} \\geq x-3 $ 或 $ 4x+9 < 1 $ 的解為\n\n- A. $ x < -2 $\n- B. $ x > -2 $\n- C. $ x \\leq 2 $\n- D. $ x \\geq 2 $",
    "html": "<p>$ \\frac{1-2x}{3} \\geq x-3 $ 或 $ 4x+9 &lt; 1 $ 的解為</p>\n<ul>\n<li>A. $ x &lt; -2 $</li>\n<li>B. $ x &gt; -2 $</li>\n<li>C. $ x \\leq 2 $</li>\n<li>D. $ x \\geq 2 $</li>\n</ul>",
    "file": "2018_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 69
   },
   {
    "subject": "數學",
@@ -11491,7 +11739,8 @@ window.QB = {
    "text": "The solution of $\\dfrac{1-2x}{3}\\ge x-3$ or $4x+9<1$ is\n\n- A. $x<-2$\n- B. $x>-2$\n- C. $x\\le 2$\n- D. $x\\ge 2$",
    "html": "<p>The solution of $\\dfrac{1-2x}{3}\\ge x-3$ or $4x+9&lt;1$ is</p>\n<ul>\n<li>A. $x&lt;-2$</li>\n<li>B. $x&gt;-2$</li>\n<li>C. $x\\le 2$</li>\n<li>D. $x\\ge 2$</li>\n</ul>",
    "file": "2018_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 69
   },
   {
    "subject": "數學",
@@ -11507,7 +11756,8 @@ window.QB = {
    "text": "圖中，$ ABCDEFGH $ 為八邊形，其中所有的量度均準確至最接近的 $ \\text{cm} $ 。設 $ x \\text{cm}^2 $ 為該八邊形的實際面積。求 $ x $ 值的範圍。\n\n\n![Figure Q14 (as printed)](2018P2_zh_figs/Q14.png)\n\n- A. $ 13 < x < 23 $\n- B. $ 13 < x < 27 $\n- C. $ 17 < x < 23 $\n- D. $ 17 < x < 27 $",
    "html": "<p>圖中，$ ABCDEFGH $ 為八邊形，其中所有的量度均準確至最接近的 $ \\text{cm} $ 。設 $ x \\text{cm}^2 $ 為該八邊形的實際面積。求 $ x $ 值的範圍。</p>\n<p><img alt=\"Figure Q14 (as printed)\" src=\"2018P2_zh_figs/Q14.png\" /></p>\n<ul>\n<li>A. $ 13 &lt; x &lt; 23 $</li>\n<li>B. $ 13 &lt; x &lt; 27 $</li>\n<li>C. $ 17 &lt; x &lt; 23 $</li>\n<li>D. $ 17 &lt; x &lt; 27 $</li>\n</ul>",
    "file": "2018_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 42
   },
   {
    "subject": "數學",
@@ -11523,7 +11773,8 @@ window.QB = {
    "text": "In the figure, $ABCDEFGH$ is an octagon, where all the measurements are correct to the nearest cm. Let $x\\ \\mathrm{cm}^{2}$ be the actual area of the octagon. Find the range of values of $x$.\n\n[FIGURE Q14: 八邊形 A(左上)-H(上)-E(右上)-D(右)-C(右下)-B(左下)，中間底部有 2cm 寬缺口 G-F（上方標 2 cm），左邊 AB 與右邊 CD 各標 4 cm，底邊 B-C 標 6 cm，A、H、E、D、B、C 各處有直角記號]\n\n\n![Figure Q14 (as printed)](2018P2_figs/Q14.png)\n\n- A. $13<x<23$\n- B. $13<x<27$\n- C. $17<x<23$\n- D. $17<x<27$",
    "html": "<p>In the figure, $ABCDEFGH$ is an octagon, where all the measurements are correct to the nearest cm. Let $x\\ \\mathrm{cm}^{2}$ be the actual area of the octagon. Find the range of values of $x$.</p>\n<p>[FIGURE Q14: 八邊形 A(左上)-H(上)-E(右上)-D(右)-C(右下)-B(左下)，中間底部有 2cm 寬缺口 G-F（上方標 2 cm），左邊 AB 與右邊 CD 各標 4 cm，底邊 B-C 標 6 cm，A、H、E、D、B、C 各處有直角記號]</p>\n<p><img alt=\"Figure Q14 (as printed)\" src=\"2018P2_figs/Q14.png\" /></p>\n<ul>\n<li>A. $13&lt;x&lt;23$</li>\n<li>B. $13&lt;x&lt;27$</li>\n<li>C. $17&lt;x&lt;23$</li>\n<li>D. $17&lt;x&lt;27$</li>\n</ul>",
    "file": "2018_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 42
   },
   {
    "subject": "數學",
@@ -11540,7 +11791,8 @@ window.QB = {
    "text": "圖中，實心直立三角柱體的體積為\n\n\n![Figure Q15 (as printed)](2018P2_zh_figs/Q15.png)\n\n- A. $544\\, \\text{cm}^3$。\n- B. $600\\, \\text{cm}^3$。\n- C. $660\\, \\text{cm}^3$。\n- D. $720\\, \\text{cm}^3$。",
    "html": "<p>圖中，實心直立三角柱體的體積為</p>\n<p><img alt=\"Figure Q15 (as printed)\" src=\"2018P2_zh_figs/Q15.png\" /></p>\n<ul>\n<li>A. $544\\, \\text{cm}^3$。</li>\n<li>B. $600\\, \\text{cm}^3$。</li>\n<li>C. $660\\, \\text{cm}^3$。</li>\n<li>D. $720\\, \\text{cm}^3$。</li>\n</ul>",
    "file": "2018_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 83
   },
   {
    "subject": "數學",
@@ -11556,7 +11808,8 @@ window.QB = {
    "text": "In the figure, the volume of the solid right triangular prism is\n\n[FIGURE Q15: 直立三稜柱，頂邊標 17 cm，前下斜邊標 12 cm，右側豎邊標 8 cm（直角記號）]\n\n\n![Figure Q15 (as printed)](2018P2_figs/Q15.png)\n\n- A. $544\\ \\mathrm{cm}^{3}$\n- B. $600\\ \\mathrm{cm}^{3}$\n- C. $660\\ \\mathrm{cm}^{3}$\n- D. $720\\ \\mathrm{cm}^{3}$",
    "html": "<p>In the figure, the volume of the solid right triangular prism is</p>\n<p>[FIGURE Q15: 直立三稜柱，頂邊標 17 cm，前下斜邊標 12 cm，右側豎邊標 8 cm（直角記號）]</p>\n<p><img alt=\"Figure Q15 (as printed)\" src=\"2018P2_figs/Q15.png\" /></p>\n<ul>\n<li>A. $544\\ \\mathrm{cm}^{3}$</li>\n<li>B. $600\\ \\mathrm{cm}^{3}$</li>\n<li>C. $660\\ \\mathrm{cm}^{3}$</li>\n<li>D. $720\\ \\mathrm{cm}^{3}$</li>\n</ul>",
    "file": "2018_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 83
   },
   {
    "subject": "數學",
@@ -11573,7 +11826,8 @@ window.QB = {
    "text": "圖中，$ABCD$ 為一平行四邊形。$E$ 為$BC$上的一點使得$BE:EC=5:3$。$AE$ 與$BD$相交於點$F$。若$\\triangle ABF$的面積為$120\\, \\text{cm}^2$，則四邊形$CDFE$的面積為\n\n\n![Figure Q16 (as printed)](2018P2_zh_figs/Q16.png)\n\n- A. $237\\, \\text{cm}^2$。\n- B. $307\\, \\text{cm}^2$。\n- C. $312\\, \\text{cm}^2$。\n- D. $429\\, \\text{cm}^2$。",
    "html": "<p>圖中，$ABCD$ 為一平行四邊形。$E$ 為$BC$上的一點使得$BE:EC=5:3$。$AE$ 與$BD$相交於點$F$。若$\\triangle ABF$的面積為$120\\, \\text{cm}^2$，則四邊形$CDFE$的面積為</p>\n<p><img alt=\"Figure Q16 (as printed)\" src=\"2018P2_zh_figs/Q16.png\" /></p>\n<ul>\n<li>A. $237\\, \\text{cm}^2$。</li>\n<li>B. $307\\, \\text{cm}^2$。</li>\n<li>C. $312\\, \\text{cm}^2$。</li>\n<li>D. $429\\, \\text{cm}^2$。</li>\n</ul>",
    "file": "2018_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 39
   },
   {
    "subject": "數學",
@@ -11590,7 +11844,8 @@ window.QB = {
    "text": "In the figure, $ABCD$ is a parallelogram. $E$ is a point lying on $BC$ such that $BE:EC=5:3$. $AE$ and $BD$ intersect at the point $F$. If the area of $\\triangle ABF$ is $120\\ \\mathrm{cm}^{2}$, then the area of the quadrilateral $CDFE$ is\n\n[FIGURE Q16: 平行四邊形 A(上中)-D(右上)-C(右下)-B(左下)，E 在 BC 上，對角線 BD 與 AE 交於 F]\n\n\n![Figure Q16 (as printed)](2018P2_figs/Q16.png)\n\n- A. $237\\ \\mathrm{cm}^{2}$\n- B. $307\\ \\mathrm{cm}^{2}$\n- C. $312\\ \\mathrm{cm}^{2}$\n- D. $429\\ \\mathrm{cm}^{2}$",
    "html": "<p>In the figure, $ABCD$ is a parallelogram. $E$ is a point lying on $BC$ such that $BE:EC=5:3$. $AE$ and $BD$ intersect at the point $F$. If the area of $\\triangle ABF$ is $120\\ \\mathrm{cm}^{2}$, then the area of the quadrilateral $CDFE$ is</p>\n<p>[FIGURE Q16: 平行四邊形 A(上中)-D(右上)-C(右下)-B(左下)，E 在 BC 上，對角線 BD 與 AE 交於 F]</p>\n<p><img alt=\"Figure Q16 (as printed)\" src=\"2018P2_figs/Q16.png\" /></p>\n<ul>\n<li>A. $237\\ \\mathrm{cm}^{2}$</li>\n<li>B. $307\\ \\mathrm{cm}^{2}$</li>\n<li>C. $312\\ \\mathrm{cm}^{2}$</li>\n<li>D. $429\\ \\mathrm{cm}^{2}$</li>\n</ul>",
    "file": "2018_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 39
   },
   {
    "subject": "數學",
@@ -11606,7 +11861,8 @@ window.QB = {
    "text": "圖中，$O$ 為扇形$OABCD$的圓心。$AD$ 與$OC$互相垂直且相交於點$E$。$F$ 為$AD$上的一點使得$BF$垂直於$AD$。若$AF=9\\, \\text{cm}$、$DF=39\\, \\text{cm}$及$OE=18\\, \\text{cm}$，則扇形$OBC$的面積為\n\n\n![Figure Q17 (as printed)](2018P2_zh_figs/Q17.png)\n\n- A. $48\\pi\\, \\text{cm}^2$。\n- B. $75\\pi\\, \\text{cm}^2$。\n- C. $96\\pi\\, \\text{cm}^2$。\n- D. $150\\pi\\, \\text{cm}^2$。",
    "html": "<p>圖中，$O$ 為扇形$OABCD$的圓心。$AD$ 與$OC$互相垂直且相交於點$E$。$F$ 為$AD$上的一點使得$BF$垂直於$AD$。若$AF=9\\, \\text{cm}$、$DF=39\\, \\text{cm}$及$OE=18\\, \\text{cm}$，則扇形$OBC$的面積為</p>\n<p><img alt=\"Figure Q17 (as printed)\" src=\"2018P2_zh_figs/Q17.png\" /></p>\n<ul>\n<li>A. $48\\pi\\, \\text{cm}^2$。</li>\n<li>B. $75\\pi\\, \\text{cm}^2$。</li>\n<li>C. $96\\pi\\, \\text{cm}^2$。</li>\n<li>D. $150\\pi\\, \\text{cm}^2$。</li>\n</ul>",
    "file": "2018_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 28
   },
   {
    "subject": "數學",
@@ -11623,7 +11879,8 @@ window.QB = {
    "text": "In the figure, $O$ is the centre of the sector $OABCD$. $AD$ and $OC$ are perpendicular to each other and intersect at the point $E$. $F$ is a point lying on $AD$ such that $BF$ is perpendicular to $AD$. If $AF=9\\ \\mathrm{cm}$, $DF=39\\ \\mathrm{cm}$ and $OE=18\\ \\mathrm{cm}$, then the area of the sector $OBC$ is\n\n[FIGURE Q17: 扇形 OABCD，O 在下方，水平弦 AD（左 D、右 A），OC 垂直 AD 交於 E（虛線），B 在弧上偏右，BF 垂直 AD 交於 F（虛線）]\n\n\n![Figure Q17 (as printed)](2018P2_figs/Q17.png)\n\n- A. $48\\pi\\ \\mathrm{cm}^{2}$\n- B. $75\\pi\\ \\mathrm{cm}^{2}$\n- C. $96\\pi\\ \\mathrm{cm}^{2}$\n- D. $150\\pi\\ \\mathrm{cm}^{2}$",
    "html": "<p>In the figure, $O$ is the centre of the sector $OABCD$. $AD$ and $OC$ are perpendicular to each other and intersect at the point $E$. $F$ is a point lying on $AD$ such that $BF$ is perpendicular to $AD$. If $AF=9\\ \\mathrm{cm}$, $DF=39\\ \\mathrm{cm}$ and $OE=18\\ \\mathrm{cm}$, then the area of the sector $OBC$ is</p>\n<p>[FIGURE Q17: 扇形 OABCD，O 在下方，水平弦 AD（左 D、右 A），OC 垂直 AD 交於 E（虛線），B 在弧上偏右，BF 垂直 AD 交於 F（虛線）]</p>\n<p><img alt=\"Figure Q17 (as printed)\" src=\"2018P2_figs/Q17.png\" /></p>\n<ul>\n<li>A. $48\\pi\\ \\mathrm{cm}^{2}$</li>\n<li>B. $75\\pi\\ \\mathrm{cm}^{2}$</li>\n<li>C. $96\\pi\\ \\mathrm{cm}^{2}$</li>\n<li>D. $150\\pi\\ \\mathrm{cm}^{2}$</li>\n</ul>",
    "file": "2018_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 28
   },
   {
    "subject": "數學",
@@ -11639,7 +11896,8 @@ window.QB = {
    "text": "圖中，$ABCD$ 為一菱形。$E$ 及 $F$ 分別為 $AB$ 及 $AD$ 上的點使得 $AE=AF$ 及 $\\angle ECF=42^\\circ$。若 $\\angle BAD=110^\\circ$，則 $\\angle BEC=$\n\n\n![Figure Q18 (as printed)](2018P2_zh_figs/Q18.png)\n\n- A. $70^\\circ$\n- B. $76^\\circ$\n- C. $80^\\circ$\n- D. $84^\\circ$",
    "html": "<p>圖中，$ABCD$ 為一菱形。$E$ 及 $F$ 分別為 $AB$ 及 $AD$ 上的點使得 $AE=AF$ 及 $\\angle ECF=42^\\circ$。若 $\\angle BAD=110^\\circ$，則 $\\angle BEC=$</p>\n<p><img alt=\"Figure Q18 (as printed)\" src=\"2018P2_zh_figs/Q18.png\" /></p>\n<ul>\n<li>A. $70^\\circ$</li>\n<li>B. $76^\\circ$</li>\n<li>C. $80^\\circ$</li>\n<li>D. $84^\\circ$</li>\n</ul>",
    "file": "2018_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 78
   },
   {
    "subject": "數學",
@@ -11657,7 +11915,8 @@ window.QB = {
    "text": "In the figure, $ABCD$ is a rhombus. $E$ and $F$ are points lying on $AB$ and $AD$ respectively such that $AE=AF$ and $\\angle ECF=42^{\\circ}$. If $\\angle BAD=110^{\\circ}$, then $\\angle BEC=$\n\n[FIGURE Q18: 菱形 A(右下)-B(左下)-C(左上)-D(右上)，E 在 BA 延線上（近 A），F 在 AD 上，連 CE、CF；∠BEC 有弧標]\n\n\n![Figure Q18 (as printed)](2018P2_figs/Q18.png)\n\n- A. $70^{\\circ}$\n- B. $76^{\\circ}$\n- C. $80^{\\circ}$\n- D. $84^{\\circ}$",
    "html": "<p>In the figure, $ABCD$ is a rhombus. $E$ and $F$ are points lying on $AB$ and $AD$ respectively such that $AE=AF$ and $\\angle ECF=42^{\\circ}$. If $\\angle BAD=110^{\\circ}$, then $\\angle BEC=$</p>\n<p>[FIGURE Q18: 菱形 A(右下)-B(左下)-C(左上)-D(右上)，E 在 BA 延線上（近 A），F 在 AD 上，連 CE、CF；∠BEC 有弧標]</p>\n<p><img alt=\"Figure Q18 (as printed)\" src=\"2018P2_figs/Q18.png\" /></p>\n<ul>\n<li>A. $70^{\\circ}$</li>\n<li>B. $76^{\\circ}$</li>\n<li>C. $80^{\\circ}$</li>\n<li>D. $84^{\\circ}$</li>\n</ul>",
    "file": "2018_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 78
   },
   {
    "subject": "數學",
@@ -11673,7 +11932,8 @@ window.QB = {
    "text": "圖中，$ABCDE$ 為一正五邊形。$AD$ 與 $CE$ 相交於點 $F$。下列何者正確？\nI. $CD=CF$\nII. $\\triangle ABF \\cong \\triangle CBF$\nIII. $\\angle AFB + \\angle EAF = 90^\\circ$\n\n\n![Figure Q19 (as printed)](2018P2_zh_figs/Q19.png)\n\n- A. 只有 I 及 II\n- B. 只有 I 及 III\n- C. 只有 II 及 III\n- D. I、II 及 III",
    "html": "<p>圖中，$ABCDE$ 為一正五邊形。$AD$ 與 $CE$ 相交於點 $F$。下列何者正確？\nI. $CD=CF$\nII. $\\triangle ABF \\cong \\triangle CBF$\nIII. $\\angle AFB + \\angle EAF = 90^\\circ$</p>\n<p><img alt=\"Figure Q19 (as printed)\" src=\"2018P2_zh_figs/Q19.png\" /></p>\n<ul>\n<li>A. 只有 I 及 II</li>\n<li>B. 只有 I 及 III</li>\n<li>C. 只有 II 及 III</li>\n<li>D. I、II 及 III</li>\n</ul>",
    "file": "2018_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 24
   },
   {
    "subject": "數學",
@@ -11691,7 +11951,8 @@ window.QB = {
    "text": "In the figure, $ABCDE$ is a regular pentagon. $AD$ and $CE$ intersect at the point $F$. Which of the following are true?\nI. $CD=CF$\nII. $\\triangle ABF\\cong\\triangle CBF$\nIII. $\\angle AFB+\\angle AEF=90^{\\circ}$ [FIGURE Q19: 正五邊形 A(右下)-B(左下)-C(左)-D(上)-E(右)，對角線 AD 與 CE 交於 F]\n\n\n![Figure Q19 (as printed)](2018P2_figs/Q19.png)\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
    "html": "<p>In the figure, $ABCDE$ is a regular pentagon. $AD$ and $CE$ intersect at the point $F$. Which of the following are true?\nI. $CD=CF$\nII. $\\triangle ABF\\cong\\triangle CBF$\nIII. $\\angle AFB+\\angle AEF=90^{\\circ}$ [FIGURE Q19: 正五邊形 A(右下)-B(左下)-C(左)-D(上)-E(右)，對角線 AD 與 CE 交於 F]</p>\n<p><img alt=\"Figure Q19 (as printed)\" src=\"2018P2_figs/Q19.png\" /></p>\n<ul>\n<li>A. I and II only</li>\n<li>B. I and III only</li>\n<li>C. II and III only</li>\n<li>D. I, II and III</li>\n</ul>",
    "file": "2018_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 24
   },
   {
    "subject": "數學",
@@ -11708,7 +11969,8 @@ window.QB = {
    "text": "圖中，$ABCD$ 為一正方形。$E$ 為 $AB$ 的延線上的一點使得 $BE=4\\text{ cm}$。$BC$ 與 $DE$ 相交於點 $F$。若 $EF=5\\text{ cm}$，則 $DF=$\n\n\n![Figure Q20 (as printed)](2018P2_zh_figs/Q20.png)\n\n- A. $12\\text{ cm}$\n- B. $15\\text{ cm}$\n- C. $16\\text{ cm}$\n- D. $20\\text{ cm}$",
    "html": "<p>圖中，$ABCD$ 為一正方形。$E$ 為 $AB$ 的延線上的一點使得 $BE=4\\text{ cm}$。$BC$ 與 $DE$ 相交於點 $F$。若 $EF=5\\text{ cm}$，則 $DF=$</p>\n<p><img alt=\"Figure Q20 (as printed)\" src=\"2018P2_zh_figs/Q20.png\" /></p>\n<ul>\n<li>A. $12\\text{ cm}$</li>\n<li>B. $15\\text{ cm}$</li>\n<li>C. $16\\text{ cm}$</li>\n<li>D. $20\\text{ cm}$</li>\n</ul>",
    "file": "2018_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 48
   },
   {
    "subject": "數學",
@@ -11725,7 +11987,8 @@ window.QB = {
    "text": "In the figure, $ABCD$ is a square. $E$ is a point lying on $AB$ produced such that $BE=4\\ \\mathrm{cm}$. $BC$ and $DE$ intersect at the point $F$. If $EF=5\\ \\mathrm{cm}$, then $DF=$\n\n[FIGURE Q20: 正方形 C(左上)-D(右上)-A(右下)-B(左下)，E 在 BA 向左延長線上，連 DE 與 BC 交於 F]\n\n\n![Figure Q20 (as printed)](2018P2_figs/Q20.png)\n\n- A. $12\\ \\mathrm{cm}$\n- B. $15\\ \\mathrm{cm}$\n- C. $16\\ \\mathrm{cm}$\n- D. $20\\ \\mathrm{cm}$",
    "html": "<p>In the figure, $ABCD$ is a square. $E$ is a point lying on $AB$ produced such that $BE=4\\ \\mathrm{cm}$. $BC$ and $DE$ intersect at the point $F$. If $EF=5\\ \\mathrm{cm}$, then $DF=$</p>\n<p>[FIGURE Q20: 正方形 C(左上)-D(右上)-A(右下)-B(左下)，E 在 BA 向左延長線上，連 DE 與 BC 交於 F]</p>\n<p><img alt=\"Figure Q20 (as printed)\" src=\"2018P2_figs/Q20.png\" /></p>\n<ul>\n<li>A. $12\\ \\mathrm{cm}$</li>\n<li>B. $15\\ \\mathrm{cm}$</li>\n<li>C. $16\\ \\mathrm{cm}$</li>\n<li>D. $20\\ \\mathrm{cm}$</li>\n</ul>",
    "file": "2018_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 48
   },
   {
    "subject": "數學",
@@ -11742,7 +12005,8 @@ window.QB = {
    "text": "圖中，$ABCD$ 為一梯形且 $\\angle ABC = \\angle BAD = 90^\\circ$。$E$ 及 $F$ 均為 $AB$ 上的點使得 $E$ 與 $F$ 將 $AB$ 分成三等分。下列何者必為正確？\nI. $AF \\sin \\alpha = BE \\sin \\beta$\nII. $CE \\cos \\alpha = DF \\cos \\beta$\nIII. $AD \\tan \\alpha = BC \\tan \\beta$\n\n\n![Figure Q21 (as printed)](2018P2_zh_figs/Q21.png)\n\n- A. 只有 I 及 II\n- B. 只有 I 及 III\n- C. 只有 II 及 III\n- D. I 、II 及 III",
    "html": "<p>圖中，$ABCD$ 為一梯形且 $\\angle ABC = \\angle BAD = 90^\\circ$。$E$ 及 $F$ 均為 $AB$ 上的點使得 $E$ 與 $F$ 將 $AB$ 分成三等分。下列何者必為正確？\nI. $AF \\sin \\alpha = BE \\sin \\beta$\nII. $CE \\cos \\alpha = DF \\cos \\beta$\nIII. $AD \\tan \\alpha = BC \\tan \\beta$</p>\n<p><img alt=\"Figure Q21 (as printed)\" src=\"2018P2_zh_figs/Q21.png\" /></p>\n<ul>\n<li>A. 只有 I 及 II</li>\n<li>B. 只有 I 及 III</li>\n<li>C. 只有 II 及 III</li>\n<li>D. I 、II 及 III</li>\n</ul>",
    "file": "2018_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 45
   },
   {
    "subject": "數學",
@@ -11760,7 +12024,8 @@ window.QB = {
    "text": "In the figure, $ABCD$ is a trapezium with $\\angle ABC=\\angle BAD=90^{\\circ}$. $E$ and $F$ are points lying on $AB$ such that $E$ and $F$ divide $AB$ into three equal parts. Which of the following must be true?\nI. $AF\\sin\\alpha=BE\\sin\\beta$\nII. $CE\\cos\\alpha=DF\\cos\\beta$\nIII. $AD\\tan\\alpha=BC\\tan\\beta$ [FIGURE Q21: 梯形 A(左下)-D(左上)-C(右上)-B(右下)，∠A、∠B 為直角；AB 上由左至右為 A、E、F、B，α 在 E、β 在 F；連 DE、CE]\n\n\n![Figure Q21 (as printed)](2018P2_figs/Q21.png)\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
    "html": "<p>In the figure, $ABCD$ is a trapezium with $\\angle ABC=\\angle BAD=90^{\\circ}$. $E$ and $F$ are points lying on $AB$ such that $E$ and $F$ divide $AB$ into three equal parts. Which of the following must be true?\nI. $AF\\sin\\alpha=BE\\sin\\beta$\nII. $CE\\cos\\alpha=DF\\cos\\beta$\nIII. $AD\\tan\\alpha=BC\\tan\\beta$ [FIGURE Q21: 梯形 A(左下)-D(左上)-C(右上)-B(右下)，∠A、∠B 為直角；AB 上由左至右為 A、E、F、B，α 在 E、β 在 F；連 DE、CE]</p>\n<p><img alt=\"Figure Q21 (as printed)\" src=\"2018P2_figs/Q21.png\" /></p>\n<ul>\n<li>A. I and II only</li>\n<li>B. I and III only</li>\n<li>C. II and III only</li>\n<li>D. I, II and III</li>\n</ul>",
    "file": "2018_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 45
   },
   {
    "subject": "數學",
@@ -11777,7 +12042,8 @@ window.QB = {
    "text": "圖中，$ABCD$ 為一圓。$AD$ 的延線與 $BC$ 的延線相交於點 $E$。已知 $BD = DE$、$\\angle BAC = 66^\\circ$ 及 $\\angle ABD = 30^\\circ$。求 $\\angle CED$。\n\n\n![Figure Q22 (as printed)](2018P2_zh_figs/Q22.png)\n\n- A. $20^\\circ$\n- B. $28^\\circ$\n- C. $36^\\circ$\n- D. $42^\\circ$",
    "html": "<p>圖中，$ABCD$ 為一圓。$AD$ 的延線與 $BC$ 的延線相交於點 $E$。已知 $BD = DE$、$\\angle BAC = 66^\\circ$ 及 $\\angle ABD = 30^\\circ$。求 $\\angle CED$。</p>\n<p><img alt=\"Figure Q22 (as printed)\" src=\"2018P2_zh_figs/Q22.png\" /></p>\n<ul>\n<li>A. $20^\\circ$</li>\n<li>B. $28^\\circ$</li>\n<li>C. $36^\\circ$</li>\n<li>D. $42^\\circ$</li>\n</ul>",
    "file": "2018_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 45
   },
   {
    "subject": "數學",
@@ -11795,7 +12061,8 @@ window.QB = {
    "text": "In the figure, $ABCD$ is a circle. $AD$ produced and $BC$ produced meet at the point $E$. It is given that $BD=DE$, $\\angle BAC=60^{\\circ}$ and $\\angle ABD=30^{\\circ}$. Find $\\angle CED$.\n\n[FIGURE Q22: 圓上一點 A（左上方）與 B（左）在圓周，D 在圓上偏右，C 在圓上右下方；AD 延長與 BC 延長交於圓外 E（右）；連 AB、BC、CA、AD、BD、CD]\n\n\n![Figure Q22 (as printed)](2018P2_figs/Q22.png)\n\n- A. $20^{\\circ}$\n- B. $28^{\\circ}$\n- C. $36^{\\circ}$\n- D. $42^{\\circ}$",
    "html": "<p>In the figure, $ABCD$ is a circle. $AD$ produced and $BC$ produced meet at the point $E$. It is given that $BD=DE$, $\\angle BAC=60^{\\circ}$ and $\\angle ABD=30^{\\circ}$. Find $\\angle CED$.</p>\n<p>[FIGURE Q22: 圓上一點 A（左上方）與 B（左）在圓周，D 在圓上偏右，C 在圓上右下方；AD 延長與 BC 延長交於圓外 E（右）；連 AB、BC、CA、AD、BD、CD]</p>\n<p><img alt=\"Figure Q22 (as printed)\" src=\"2018P2_figs/Q22.png\" /></p>\n<ul>\n<li>A. $20^{\\circ}$</li>\n<li>B. $28^{\\circ}$</li>\n<li>C. $36^{\\circ}$</li>\n<li>D. $42^{\\circ}$</li>\n</ul>",
    "file": "2018_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 45
   },
   {
    "subject": "數學",
@@ -11811,7 +12078,8 @@ window.QB = {
    "text": "下面的圖形包含八個完全相同的正方形。該圖形的旋轉對稱的折式數目為\n\n\n![Figure Q23 (as printed)](2018P2_zh_figs/Q23.png)\n\n- A. $2^\\circ$\n- B. $4^\\circ$\n- C. $6^\\circ$\n- D. $8^\\circ$",
    "html": "<p>下面的圖形包含八個完全相同的正方形。該圖形的旋轉對稱的折式數目為</p>\n<p><img alt=\"Figure Q23 (as printed)\" src=\"2018P2_zh_figs/Q23.png\" /></p>\n<ul>\n<li>A. $2^\\circ$</li>\n<li>B. $4^\\circ$</li>\n<li>C. $6^\\circ$</li>\n<li>D. $8^\\circ$</li>\n</ul>",
    "file": "2018_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 75
   },
   {
    "subject": "數學",
@@ -11828,7 +12096,8 @@ window.QB = {
    "text": "The figure below consists of eight identical squares. The number of folds of rotational symmetry of the figure is\n\n[FIGURE Q23: 由八個相同正方形斜向排列成的圖形（2×4 方格旋轉 45°）]\n\n\n![Figure Q23 (as printed)](2018P2_figs/Q23.png)\n\n- A. $2$\n- B. $4$\n- C. $6$\n- D. $8$",
    "html": "<p>The figure below consists of eight identical squares. The number of folds of rotational symmetry of the figure is</p>\n<p>[FIGURE Q23: 由八個相同正方形斜向排列成的圖形（2×4 方格旋轉 45°）]</p>\n<p><img alt=\"Figure Q23 (as printed)\" src=\"2018P2_figs/Q23.png\" /></p>\n<ul>\n<li>A. $2$</li>\n<li>B. $4$</li>\n<li>C. $6$</li>\n<li>D. $8$</li>\n</ul>",
    "file": "2018_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 75
   },
   {
    "subject": "數學",
@@ -11844,7 +12113,8 @@ window.QB = {
    "text": "點 $ C $ 、點 $ D $ 及點 $ E $ 的極坐標分別為 $ (16, 127^\\circ) $ 、$ (12, 217^\\circ) $ 及 $ (5, 307^\\circ) $ 。求 $ \\Delta CDE $ 的周界。\n\n- A. $ 54 $\n- B. $ 78 $\n- C. $ 126 $\n- D. $ 130 $",
    "html": "<p>點 $ C $ 、點 $ D $ 及點 $ E $ 的極坐標分別為 $ (16, 127^\\circ) $ 、$ (12, 217^\\circ) $ 及 $ (5, 307^\\circ) $ 。求 $ \\Delta CDE $ 的周界。</p>\n<ul>\n<li>A. $ 54 $</li>\n<li>B. $ 78 $</li>\n<li>C. $ 126 $</li>\n<li>D. $ 130 $</li>\n</ul>",
    "file": "2018_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 56
   },
   {
    "subject": "數學",
@@ -11861,7 +12131,8 @@ window.QB = {
    "text": "The polar coordinates of the points $C$, $D$ and $E$ are $(16,127^{\\circ})$, $(12,217^{\\circ})$ and $(5,307^{\\circ})$ respectively. Find the perimeter of $\\triangle CDE$.\n\n- A. $54$\n- B. $78$\n- C. $126$\n- D. $130$",
    "html": "<p>The polar coordinates of the points $C$, $D$ and $E$ are $(16,127^{\\circ})$, $(12,217^{\\circ})$ and $(5,307^{\\circ})$ respectively. Find the perimeter of $\\triangle CDE$.</p>\n<ul>\n<li>A. $54$</li>\n<li>B. $78$</li>\n<li>C. $126$</li>\n<li>D. $130$</li>\n</ul>",
    "file": "2018_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 56
   },
   {
    "subject": "數學",
@@ -11877,7 +12148,8 @@ window.QB = {
    "text": "直線 $ L_1 $ 及直線 $ L_2 $ 的方程分別為 $ 3x - y + 7 = 0 $ 及 $ 12x - 4y - 11 = 0 $ 。設 $ P $ 為直角坐標平面上的一動點使得由 $ P $ 至 $ L_1 $ 的垂直距離等於由 $ P $ 至 $ L_2 $ 的垂直距離。求 $ P $ 的軌跡的方程。\n\n- A. $ 8x - 24y - 17 = 0 $\n- B. $ 8x - 24y + 17 = 0 $\n- C. $ 24x - 8y - 17 = 0 $\n- D. $ 24x - 8y + 17 = 0 $",
    "html": "<p>直線 $ L_1 $ 及直線 $ L_2 $ 的方程分別為 $ 3x - y + 7 = 0 $ 及 $ 12x - 4y - 11 = 0 $ 。設 $ P $ 為直角坐標平面上的一動點使得由 $ P $ 至 $ L_1 $ 的垂直距離等於由 $ P $ 至 $ L_2 $ 的垂直距離。求 $ P $ 的軌跡的方程。</p>\n<ul>\n<li>A. $ 8x - 24y - 17 = 0 $</li>\n<li>B. $ 8x - 24y + 17 = 0 $</li>\n<li>C. $ 24x - 8y - 17 = 0 $</li>\n<li>D. $ 24x - 8y + 17 = 0 $</li>\n</ul>",
    "file": "2018_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 41
   },
   {
    "subject": "數學",
@@ -11895,7 +12167,8 @@ window.QB = {
    "text": "The equations of the straight lines $L_{1}$ and $L_{2}$ are $3x-y+7=0$ and $12x-4y-11=0$ respectively. Let $P$ be a moving point in the rectangular coordinate plane such that the perpendicular distance from $P$ to $L_{1}$ is equal to the perpendicular distance from $P$ to $L_{2}$. Find the equation of the locus of $P$.\n\n- A. $8x-24y-17=0$\n- B. $8x-24y+17=0$\n- C. $24x-8y-17=0$\n- D. $24x-8y+17=0$",
    "html": "<p>The equations of the straight lines $L_{1}$ and $L_{2}$ are $3x-y+7=0$ and $12x-4y-11=0$ respectively. Let $P$ be a moving point in the rectangular coordinate plane such that the perpendicular distance from $P$ to $L_{1}$ is equal to the perpendicular distance from $P$ to $L_{2}$. Find the equation of the locus of $P$.</p>\n<ul>\n<li>A. $8x-24y-17=0$</li>\n<li>B. $8x-24y+17=0$</li>\n<li>C. $24x-8y-17=0$</li>\n<li>D. $24x-8y+17=0$</li>\n</ul>",
    "file": "2018_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 41
   },
   {
    "subject": "數學",
@@ -11912,7 +12185,8 @@ window.QB = {
    "text": "直線 $ L_1 $ 的方程為 $ 4x + 3y - 36 = 0 $ 。直線 $ L_2 $ 垂直於 $ L_1 $ 且與 $ L_1 $ 相交於 $ y $ 軸上的一點。求 $ L_1 $ 、$ L_2 $ 與 $ x $ 軸圍成的區域的面積。\n\n- A. $ 96 $\n- B. $ 108 $\n- C. $ 150 $\n- D. $ 192 $",
    "html": "<p>直線 $ L_1 $ 的方程為 $ 4x + 3y - 36 = 0 $ 。直線 $ L_2 $ 垂直於 $ L_1 $ 且與 $ L_1 $ 相交於 $ y $ 軸上的一點。求 $ L_1 $ 、$ L_2 $ 與 $ x $ 軸圍成的區域的面積。</p>\n<ul>\n<li>A. $ 96 $</li>\n<li>B. $ 108 $</li>\n<li>C. $ 150 $</li>\n<li>D. $ 192 $</li>\n</ul>",
    "file": "2018_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 40
   },
   {
    "subject": "數學",
@@ -11928,7 +12202,8 @@ window.QB = {
    "text": "The equation of the straight line $L_{1}$ is $4x+3y-36=0$. The straight line $L_{2}$ is perpendicular to $L_{1}$ and intersects $L_{1}$ at a point lying on the $y$-axis. Find the area of the region bounded by $L_{1}$, $L_{2}$ and the $x$-axis.\n\n- A. $96$\n- B. $108$\n- C. $150$\n- D. $192$",
    "html": "<p>The equation of the straight line $L_{1}$ is $4x+3y-36=0$. The straight line $L_{2}$ is perpendicular to $L_{1}$ and intersects $L_{1}$ at a point lying on the $y$-axis. Find the area of the region bounded by $L_{1}$, $L_{2}$ and the $x$-axis.</p>\n<ul>\n<li>A. $96$</li>\n<li>B. $108$</li>\n<li>C. $150$</li>\n<li>D. $192$</li>\n</ul>",
    "file": "2018_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 40
   },
   {
    "subject": "數學",
@@ -11944,7 +12219,8 @@ window.QB = {
    "text": "圓 $ C $ 的方程為 $ 5x^2 + 5y^2 - 30x + 10y + 6 = 0 $ 。下列何者正確？\n\n- A. 原點位於 $ C $ 以內。\n- B. $ C $ 位於第二象限內。\n- C. $ C $ 的圓周少於 $ 20 $ 。\n- D. $ C $ 的圓心的坐標為 $ (15, -5) $ 。",
    "html": "<p>圓 $ C $ 的方程為 $ 5x^2 + 5y^2 - 30x + 10y + 6 = 0 $ 。下列何者正確？</p>\n<ul>\n<li>A. 原點位於 $ C $ 以內。</li>\n<li>B. $ C $ 位於第二象限內。</li>\n<li>C. $ C $ 的圓周少於 $ 20 $ 。</li>\n<li>D. $ C $ 的圓心的坐標為 $ (15, -5) $ 。</li>\n</ul>",
    "file": "2018_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 43
   },
   {
    "subject": "數學",
@@ -11960,7 +12236,8 @@ window.QB = {
    "text": "The equation of the circle $C$ is $5x^{2}+5y^{2}-30x+10y+6=0$. Which of the following is true?\n\n- A. The origin lies inside $C$.\n- B. $C$ lies in the second quadrant.\n- C. The circumference of $C$ is less than 20.\n- D. The coordinates of the centre of $C$ are $(15,-5)$.",
    "html": "<p>The equation of the circle $C$ is $5x^{2}+5y^{2}-30x+10y+6=0$. Which of the following is true?</p>\n<ul>\n<li>A. The origin lies inside $C$.</li>\n<li>B. $C$ lies in the second quadrant.</li>\n<li>C. The circumference of $C$ is less than 20.</li>\n<li>D. The coordinates of the centre of $C$ are $(15,-5)$.</li>\n</ul>",
    "file": "2018_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 43
   },
   {
    "subject": "數學",
@@ -11976,7 +12253,8 @@ window.QB = {
    "text": "從七張分別記有數字 1、1、1、2、2、3 及 4 的紙卡中，隨機同時抽出兩個數字。求抽出數字之和為 5 的概率。\n\n- A. $\\frac{5}{21}$\n- B. $\\frac{5}{42}$\n- C. $\\frac{5}{49}$\n- D. $\\frac{10}{49}$",
    "html": "<p>從七張分別記有數字 1、1、1、2、2、3 及 4 的紙卡中，隨機同時抽出兩個數字。求抽出數字之和為 5 的概率。</p>\n<ul>\n<li>A. $\\frac{5}{21}$</li>\n<li>B. $\\frac{5}{42}$</li>\n<li>C. $\\frac{5}{49}$</li>\n<li>D. $\\frac{10}{49}$</li>\n</ul>",
    "file": "2018_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 50
   },
   {
    "subject": "數學",
@@ -11993,7 +12271,8 @@ window.QB = {
    "text": "Two numbers are randomly drawn at the same time from seven cards numbered $1$, $1$, $1$, $2$, $2$, $3$ and $4$ respectively. Find the probability that the sum of the numbers drawn is 5.\n\n- A. $\\dfrac{5}{21}$\n- B. $\\dfrac{5}{42}$\n- C. $\\dfrac{5}{49}$\n- D. $\\dfrac{10}{49}$",
    "html": "<p>Two numbers are randomly drawn at the same time from seven cards numbered $1$, $1$, $1$, $2$, $2$, $3$ and $4$ respectively. Find the probability that the sum of the numbers drawn is 5.</p>\n<ul>\n<li>A. $\\dfrac{5}{21}$</li>\n<li>B. $\\dfrac{5}{42}$</li>\n<li>C. $\\dfrac{5}{49}$</li>\n<li>D. $\\dfrac{10}{49}$</li>\n</ul>",
    "file": "2018_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 50
   },
   {
    "subject": "數學",
@@ -12010,7 +12289,8 @@ window.QB = {
    "text": "某 10 本雜誌的頁數的平均值為 132。若這 10 本雜誌其中 6 本的頁數的平均值為 108，則餘下 4 本雜誌的頁數的平均值為\n\n- A. 148\n- B. 156\n- C. 168\n- D. 176",
    "html": "<p>某 10 本雜誌的頁數的平均值為 132。若這 10 本雜誌其中 6 本的頁數的平均值為 108，則餘下 4 本雜誌的頁數的平均值為</p>\n<ul>\n<li>A. 148</li>\n<li>B. 156</li>\n<li>C. 168</li>\n<li>D. 176</li>\n</ul>",
    "file": "2018_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 78
   },
   {
    "subject": "數學",
@@ -12027,7 +12307,8 @@ window.QB = {
    "text": "The mean of the numbers of pages of 10 magazines is 132. If the mean of the numbers of pages of 6 of these 10 magazines is 108, then the mean of the numbers of pages of the remaining 4 magazines is\n\n- A. $148$\n- B. $156$\n- C. $168$\n- D. $176$",
    "html": "<p>The mean of the numbers of pages of 10 magazines is 132. If the mean of the numbers of pages of 6 of these 10 magazines is 108, then the mean of the numbers of pages of the remaining 4 magazines is</p>\n<ul>\n<li>A. $148$</li>\n<li>B. $156$</li>\n<li>C. $168$</li>\n<li>D. $176$</li>\n</ul>",
    "file": "2018_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 78
   },
   {
    "subject": "數學",
@@ -12044,7 +12325,8 @@ window.QB = {
    "text": "下面的幹葉圖顯示 20 名學生在一年內閱書數目的分佈。\n:::stemleaf\n幹（十位） | 葉（個位）\n2 | 1 2 2 8\n3 | a a\n4 | 0 2 4 5 5 7 8\n5 | 3\n6 | b b 9 9\n7 | 0 8\n:::\n若上述分佈的四分位數間距至多為 25，則下列何者必為正確？\nI. 5 ≤ a ≤\nII. 0 ≤ b ≤ 4\nIII. 1 ≤ a - b ≤ 6\n\n\n![Figure Q30 (as printed)](2018P2_zh_figs/Q30.png)\n\n- A. 只有 I 及 II\n- B. 只有 I 及 III\n- C. 只有 II 及 III\n- D. I、II 及 III 乙部",
    "html": "<p>下面的幹葉圖顯示 20 名學生在一年內閱書數目的分佈。\n:::stemleaf\n幹（十位） | 葉（個位）\n2 | 1 2 2 8\n3 | a a\n4 | 0 2 4 5 5 7 8\n5 | 3\n6 | b b 9 9\n7 | 0 8\n:::\n若上述分佈的四分位數間距至多為 25，則下列何者必為正確？\nI. 5 ≤ a ≤\nII. 0 ≤ b ≤ 4\nIII. 1 ≤ a - b ≤ 6</p>\n<p><img alt=\"Figure Q30 (as printed)\" src=\"2018P2_zh_figs/Q30.png\" /></p>\n<ul>\n<li>A. 只有 I 及 II</li>\n<li>B. 只有 I 及 III</li>\n<li>C. 只有 II 及 III</li>\n<li>D. I、II 及 III 乙部</li>\n</ul>",
    "file": "2018_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 43
   },
   {
    "subject": "數學",
@@ -12062,7 +12344,8 @@ window.QB = {
    "text": "The stem-and-leaf diagram below shows the distribution of the numbers of books read by 20 students in a year.\n:::stemleaf\nStem (tens) | Leaf (units)\n2 | 1 2 2 8\n3 | $a$ $a$\n4 | 0 2 4 5 5 7 8\n5 | 3\n6 | $b$ $b$ 9 9\n7 | 0 8\n:::\nIf the inter-quartile range of the above distribution is at most 25, which of the following must be true?\nI. $5\\le a\\le 9$\nII. $0\\le b\\le 4$\nIII. $1\\le a-b\\le 6$\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
    "html": "<p>The stem-and-leaf diagram below shows the distribution of the numbers of books read by 20 students in a year.\n:::stemleaf\nStem (tens) | Leaf (units)\n2 | 1 2 2 8\n3 | $a$ $a$\n4 | 0 2 4 5 5 7 8\n5 | 3\n6 | $b$ $b$ 9 9\n7 | 0 8\n:::\nIf the inter-quartile range of the above distribution is at most 25, which of the following must be true?\nI. $5\\le a\\le 9$\nII. $0\\le b\\le 4$\nIII. $1\\le a-b\\le 6$</p>\n<ul>\n<li>A. I and II only</li>\n<li>B. I and III only</li>\n<li>C. II and III only</li>\n<li>D. I, II and III</li>\n</ul>",
    "file": "2018_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 43
   },
   {
    "subject": "數學",
@@ -12079,7 +12362,8 @@ window.QB = {
    "text": "設 $f(x)$ 為二次函數。下圖可表示 $y=f(x)$ 的圖像及\n\n\n![Figure Q31 (as printed)](2018P2_zh_figs/Q31.png)\n\n- A. $y=-3f(x)$ 的圖像。\n- B. $y=f(-3x)$ 的圖像。\n- C. $y=-f(x+4)$ 的圖像。\n- D. $y=f(-x+11)$ 的圖像。",
    "html": "<p>設 $f(x)$ 為二次函數。下圖可表示 $y=f(x)$ 的圖像及</p>\n<p><img alt=\"Figure Q31 (as printed)\" src=\"2018P2_zh_figs/Q31.png\" /></p>\n<ul>\n<li>A. $y=-3f(x)$ 的圖像。</li>\n<li>B. $y=f(-3x)$ 的圖像。</li>\n<li>C. $y=-f(x+4)$ 的圖像。</li>\n<li>D. $y=f(-x+11)$ 的圖像。</li>\n</ul>",
    "file": "2018_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 66
   },
   {
    "subject": "數學",
@@ -12096,7 +12380,8 @@ window.QB = {
    "text": "Let $f(x)$ be a quadratic function. The figure below may represent the graph of $y=f(x)$ and\n\n[FIGURE Q31: 同一坐標系畫出兩條拋物線——一條開口向下（x 軸截距 2 與 6，頂點在 x=4 上方）；另一條開口向上（x 軸截距約 5 與 9，最低點在 7 附近）；標 x、y、O]\n\n\n![Figure Q31 (as printed)](2018P2_figs/Q31.png)\n\n- A. the graph of $y=-3f(x)$.\n- B. the graph of $y=f(-3x)$.\n- C. the graph of $y=-f(x+4)$.\n- D. the graph of $y=f(-x+11)$.",
    "html": "<p>Let $f(x)$ be a quadratic function. The figure below may represent the graph of $y=f(x)$ and</p>\n<p>[FIGURE Q31: 同一坐標系畫出兩條拋物線——一條開口向下（x 軸截距 2 與 6，頂點在 x=4 上方）；另一條開口向上（x 軸截距約 5 與 9，最低點在 7 附近）；標 x、y、O]</p>\n<p><img alt=\"Figure Q31 (as printed)\" src=\"2018P2_figs/Q31.png\" /></p>\n<ul>\n<li>A. the graph of $y=-3f(x)$.</li>\n<li>B. the graph of $y=f(-3x)$.</li>\n<li>C. the graph of $y=-f(x+4)$.</li>\n<li>D. the graph of $y=f(-x+11)$.</li>\n</ul>",
    "file": "2018_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 66
   },
   {
    "subject": "數學",
@@ -12113,7 +12398,8 @@ window.QB = {
    "text": "圖中所示為在同一直角坐標系上 $y=\\log_a x$ 的圖像及 $y=\\log_b x$ 的圖像，其中 $a$ 及 $b$ 均為正常數。若一垂直線分別與 $y=\\log_a x$ 的圖像、$y=\\log_b x$ 的圖像及 $x$ 軸相交於點 $A$ 、點 $B$ 及點 $C$ ，則下列何者正確？\nI. $a>1$\nII. $a>b$\nIII. $\\frac{AB}{BC}=\\log_a \\frac{b}{a}$\n\n\n![Figure Q32 (as printed)](2018P2_zh_figs/Q32.png)\n\n- A. 只有 I\n- B. 只有 II\n- C. 只有 I 及 III\n- D. 只有 II 及 III",
    "html": "<p>圖中所示為在同一直角坐標系上 $y=\\log_a x$ 的圖像及 $y=\\log_b x$ 的圖像，其中 $a$ 及 $b$ 均為正常數。若一垂直線分別與 $y=\\log_a x$ 的圖像、$y=\\log_b x$ 的圖像及 $x$ 軸相交於點 $A$ 、點 $B$ 及點 $C$ ，則下列何者正確？\nI. $a&gt;1$\nII. $a&gt;b$\nIII. $\\frac{AB}{BC}=\\log_a \\frac{b}{a}$</p>\n<p><img alt=\"Figure Q32 (as printed)\" src=\"2018P2_zh_figs/Q32.png\" /></p>\n<ul>\n<li>A. 只有 I</li>\n<li>B. 只有 II</li>\n<li>C. 只有 I 及 III</li>\n<li>D. 只有 II 及 III</li>\n</ul>",
    "file": "2018_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 34
   },
   {
    "subject": "數學",
@@ -12131,7 +12417,8 @@ window.QB = {
    "text": "The figure shows the graph of $y=\\log_{a}x$ and the graph of $y=\\log_{b}x$ on the same rectangular coordinate system, where $a$ and $b$ are positive constants. If a vertical line cuts the graph of $y=\\log_{a}x$, the graph of $y=\\log_{b}x$ and the $x$-axis at the points $A$, $B$ and $C$ respectively, which of the following is/are true?\nI. $a>1$\nII. $a>b$\nIII. $\\dfrac{AB}{BC}=\\log_{a}\\dfrac{b}{a}$ [FIGURE Q32: 兩條對數曲線 $y=\\log_{a}x$（上）與 $y=\\log_{b}x$（下），由原點右側上升；一條豎直線在 C 處與 x 軸相交，依次與下曲線交於 B、上曲線交於 A；標 x、y、O]\n\n- A. I only\n- B. II only\n- C. I and III only\n- D. II and III only",
    "html": "<p>The figure shows the graph of $y=\\log_{a}x$ and the graph of $y=\\log_{b}x$ on the same rectangular coordinate system, where $a$ and $b$ are positive constants. If a vertical line cuts the graph of $y=\\log_{a}x$, the graph of $y=\\log_{b}x$ and the $x$-axis at the points $A$, $B$ and $C$ respectively, which of the following is/are true?\nI. $a&gt;1$\nII. $a&gt;b$\nIII. $\\dfrac{AB}{BC}=\\log_{a}\\dfrac{b}{a}$ [FIGURE Q32: 兩條對數曲線 $y=\\log_{a}x$（上）與 $y=\\log_{b}x$（下），由原點右側上升；一條豎直線在 C 處與 x 軸相交，依次與下曲線交於 B、上曲線交於 A；標 x、y、O]</p>\n<ul>\n<li>A. I only</li>\n<li>B. II only</li>\n<li>C. I and III only</li>\n<li>D. II and III only</li>\n</ul>",
    "file": "2018_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 34
   },
   {
    "subject": "數學",
@@ -12147,7 +12434,8 @@ window.QB = {
    "text": "圖中，直線 $ L $ 顯示 $\\log_{4} x$ 與 $\\log_{4} y$ 之間的關係。已知 $ L $ 通過點 $(1,2)$ 及點 $(9,6)$。若 $ y = kx^{a} $，則 $ k = $\n\n\n![Figure Q33 (as printed)](2018P2_zh_figs/Q33.png)\n\n- A. $\\frac{1}{2}$\n- B. $\\frac{3}{2}$\n- C. 2\n- D. 8",
    "html": "<p>圖中，直線 $ L $ 顯示 $\\log_{4} x$ 與 $\\log_{4} y$ 之間的關係。已知 $ L $ 通過點 $(1,2)$ 及點 $(9,6)$。若 $ y = kx^{a} $，則 $ k = $</p>\n<p><img alt=\"Figure Q33 (as printed)\" src=\"2018P2_zh_figs/Q33.png\" /></p>\n<ul>\n<li>A. $\\frac{1}{2}$</li>\n<li>B. $\\frac{3}{2}$</li>\n<li>C. 2</li>\n<li>D. 8</li>\n</ul>",
    "file": "2018_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 30
   },
   {
    "subject": "數學",
@@ -12164,7 +12452,8 @@ window.QB = {
    "text": "In the figure, the straight line $L$ shows the relation between $\\log_{4}x$ and $\\log_{4}y$. It is given that $L$ passes through the points $(1,2)$ and $(9,6)$. If $y=kx^{a}$, then $k=$\n\n[FIGURE Q33: 直角坐標系，橫軸標 $\\log_{4}x$、縱軸標 $\\log_{4}y$，直線 L 由左下向右上，通過 (1,2)、(9,6)；標 O]\n\n\n![Figure Q33 (as printed)](2018P2_figs/Q33.png)\n\n- A. $\\dfrac{1}{2}$\n- B. $\\dfrac{3}{2}$\n- C. $2$\n- D. $8$",
    "html": "<p>In the figure, the straight line $L$ shows the relation between $\\log_{4}x$ and $\\log_{4}y$. It is given that $L$ passes through the points $(1,2)$ and $(9,6)$. If $y=kx^{a}$, then $k=$</p>\n<p>[FIGURE Q33: 直角坐標系，橫軸標 $\\log_{4}x$、縱軸標 $\\log_{4}y$，直線 L 由左下向右上，通過 (1,2)、(9,6)；標 O]</p>\n<p><img alt=\"Figure Q33 (as printed)\" src=\"2018P2_figs/Q33.png\" /></p>\n<ul>\n<li>A. $\\dfrac{1}{2}$</li>\n<li>B. $\\dfrac{3}{2}$</li>\n<li>C. $2$</li>\n<li>D. $8$</li>\n</ul>",
    "file": "2018_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 30
   },
   {
    "subject": "數學",
@@ -12181,7 +12470,8 @@ window.QB = {
    "text": "考慮以下的不等式組：\n\n$$\n\n\\begin{cases}\n\nx - 21 \\leq 0 \\\\\n\nx - y - 35 \\leq 0 \\\\\n\nx + 5y - 91 \\leq 0 \\\\\n\n3x + 2y \\geq 0\n\n\\end{cases}\n\n$$\n\n設 $ D $ 為表示以上的不等式組的解之區域。若 $(x, y)$ 為 $ D $ 中的一點，則 $5x + 6y + 234$ 的最小值為\n\n- A. 45\n- B. 150\n- C. 178\n- D. 423",
    "html": "<p>考慮以下的不等式組：</p>\n<p>$$</p>\n<p>\\begin{cases}</p>\n<p>x - 21 \\leq 0 \\</p>\n<p>x - y - 35 \\leq 0 \\</p>\n<p>x + 5y - 91 \\leq 0 \\</p>\n<p>3x + 2y \\geq 0</p>\n<p>\\end{cases}</p>\n<p>$$</p>\n<p>設 $ D $ 為表示以上的不等式組的解之區域。若 $(x, y)$ 為 $ D $ 中的一點，則 $5x + 6y + 234$ 的最小值為</p>\n<ul>\n<li>A. 45</li>\n<li>B. 150</li>\n<li>C. 178</li>\n<li>D. 423</li>\n</ul>",
    "file": "2018_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 35
   },
   {
    "subject": "數學",
@@ -12198,7 +12488,8 @@ window.QB = {
    "text": "Consider the following system of inequalities:\n\n$\\begin{cases} x-21\\le 0\\\\ x-y-35\\le 0\\\\ x+5y-91\\le 0\\\\ 3x+2y\\ge 0\\end{cases}$\n\nLet $D$ be the region which represents the solution of the above system of inequalities. If $(x,y)$ is a point lying in $D$, then the least value of $5x+6y+234$ is\n\n- A. $45$\n- B. $150$\n- C. $178$\n- D. $423$",
    "html": "<p>Consider the following system of inequalities:</p>\n<p>$\\begin{cases} x-21\\le 0\\ x-y-35\\le 0\\ x+5y-91\\le 0\\ 3x+2y\\ge 0\\end{cases}$</p>\n<p>Let $D$ be the region which represents the solution of the above system of inequalities. If $(x,y)$ is a point lying in $D$, then the least value of $5x+6y+234$ is</p>\n<ul>\n<li>A. $45$</li>\n<li>B. $150$</li>\n<li>C. $178$</li>\n<li>D. $423$</li>\n</ul>",
    "file": "2018_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 35
   },
   {
    "subject": "數學",
@@ -12214,7 +12505,8 @@ window.QB = {
    "text": "若某數列的首 $ n $ 項之和為 $6n^{2} - n$，則下列何者正確？\nI. 22 為該數列的其中一項。\nII. 該數列的第 1 項為 5。\nIII. 該數列為一等比數列。\n\n- A. 只有 I\n- B. 只有 II\n- C. 只有 I 及 III\n- D. 只有 II 及 III",
    "html": "<p>若某數列的首 $ n $ 項之和為 $6n^{2} - n$，則下列何者正確？\nI. 22 為該數列的其中一項。\nII. 該數列的第 1 項為 5。\nIII. 該數列為一等比數列。</p>\n<ul>\n<li>A. 只有 I</li>\n<li>B. 只有 II</li>\n<li>C. 只有 I 及 III</li>\n<li>D. 只有 II 及 III</li>\n</ul>",
    "file": "2018_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 40
   },
   {
    "subject": "數學",
@@ -12230,7 +12522,8 @@ window.QB = {
    "text": "If the sum of the first $n$ terms of a sequence is $6n^{2}-n$, which of the following is/are true?\nI. 22 is a term of the sequence.\nII. The 1st term of the sequence is 5.\nIII. The sequence is a geometric sequence.\n\n- A. I only\n- B. II only\n- C. I and III only\n- D. II and III only",
    "html": "<p>If the sum of the first $n$ terms of a sequence is $6n^{2}-n$, which of the following is/are true?\nI. 22 is a term of the sequence.\nII. The 1st term of the sequence is 5.\nIII. The sequence is a geometric sequence.</p>\n<ul>\n<li>A. I only</li>\n<li>B. II only</li>\n<li>C. I and III only</li>\n<li>D. II and III only</li>\n</ul>",
    "file": "2018_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 40
   },
   {
    "subject": "數學",
@@ -12246,7 +12539,8 @@ window.QB = {
    "text": "若 $ m \\neq n $ 且 $ 2m^2 + 5m = 2n^2 + 5n = 14 $，則 $ (m+2)(n+2) = $\n\n- A. $-8$\n- B. $2$\n- C. $6$\n- D. $16$",
    "html": "<p>若 $ m \\neq n $ 且 $ 2m^2 + 5m = 2n^2 + 5n = 14 $，則 $ (m+2)(n+2) = $</p>\n<ul>\n<li>A. $-8$</li>\n<li>B. $2$</li>\n<li>C. $6$</li>\n<li>D. $16$</li>\n</ul>",
    "file": "2018_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 49
   },
   {
    "subject": "數學",
@@ -12262,7 +12556,8 @@ window.QB = {
    "text": "If $m\\ne n$ and $2m^{2}+5m=2n^{2}+5n=14$, then $(m+2)(n+2)=$\n\n- A. $-8$\n- B. $2$\n- C. $6$\n- D. $16$",
    "html": "<p>If $m\\ne n$ and $2m^{2}+5m=2n^{2}+5n=14$, then $(m+2)(n+2)=$</p>\n<ul>\n<li>A. $-8$</li>\n<li>B. $2$</li>\n<li>C. $6$</li>\n<li>D. $16$</li>\n</ul>",
    "file": "2018_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 49
   },
   {
    "subject": "數學",
@@ -12278,7 +12573,8 @@ window.QB = {
    "text": "$\\frac{2i^{12} + 3i^{13} + 4i^{14} + 5i^{15} + 6i^{16}}{1-i}$ 的實部為\n\n- A. $-3$\n- B. $-1$\n- C. $1$\n- D. $3$",
    "html": "<p>$\\frac{2i^{12} + 3i^{13} + 4i^{14} + 5i^{15} + 6i^{16}}{1-i}$ 的實部為</p>\n<ul>\n<li>A. $-3$</li>\n<li>B. $-1$</li>\n<li>C. $1$</li>\n<li>D. $3$</li>\n</ul>",
    "file": "2018_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 44
   },
   {
    "subject": "數學",
@@ -12294,7 +12590,8 @@ window.QB = {
    "text": "The real part of $\\dfrac{2i^{12}+3i^{13}+4i^{14}+5i^{15}+6i^{16}}{1-i}$ is\n\n- A. $-3$\n- B. $-1$\n- C. $1$\n- D. $3$",
    "html": "<p>The real part of $\\dfrac{2i^{12}+3i^{13}+4i^{14}+5i^{15}+6i^{16}}{1-i}$ is</p>\n<ul>\n<li>A. $-3$</li>\n<li>B. $-1$</li>\n<li>C. $1$</li>\n<li>D. $3$</li>\n</ul>",
    "file": "2018_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 44
   },
   {
    "subject": "數學",
@@ -12310,7 +12607,8 @@ window.QB = {
    "text": "當 $0^\\circ \\leq x < 360^\\circ$ 時，方程 $6\\cos^2 x = \\cos x + 5$ 有多少個根？\n\n- A. $2$\n- B. $3$\n- C. $4$\n- D. $5$",
    "html": "<p>當 $0^\\circ \\leq x &lt; 360^\\circ$ 時，方程 $6\\cos^2 x = \\cos x + 5$ 有多少個根？</p>\n<ul>\n<li>A. $2$</li>\n<li>B. $3$</li>\n<li>C. $4$</li>\n<li>D. $5$</li>\n</ul>",
    "file": "2018_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 41
   },
   {
    "subject": "數學",
@@ -12327,7 +12625,8 @@ window.QB = {
    "text": "For $0^{\\circ}\\le x<360^{\\circ}$, how many roots does the equation $6\\cos^{2}x=\\cos x+5$ have?\n\n- A. $2$\n- B. $3$\n- C. $4$\n- D. $5$",
    "html": "<p>For $0^{\\circ}\\le x&lt;360^{\\circ}$, how many roots does the equation $6\\cos^{2}x=\\cos x+5$ have?</p>\n<ul>\n<li>A. $2$</li>\n<li>B. $3$</li>\n<li>C. $4$</li>\n<li>D. $5$</li>\n</ul>",
    "file": "2018_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 41
   },
   {
    "subject": "數學",
@@ -12344,7 +12643,8 @@ window.QB = {
    "text": "圖中，$TA$ 為圓 $ABCD$ 在點 $A$ 的切線。$CD$ 的延線與 $TA$ 的延線相交於點 $E$。已知 $AB = CD$、$\\angle BAT = 24^\\circ$ 及 $\\angle AED = 72^\\circ$。求 $\\angle ABC$。\n\n\n![Figure Q39 (as printed)](2018P2_zh_figs/Q39.png)\n\n- A. $60^\\circ$\n- B. $66^\\circ$\n- C. $72^\\circ$\n- D. $78^\\circ$",
    "html": "<p>圖中，$TA$ 為圓 $ABCD$ 在點 $A$ 的切線。$CD$ 的延線與 $TA$ 的延線相交於點 $E$。已知 $AB = CD$、$\\angle BAT = 24^\\circ$ 及 $\\angle AED = 72^\\circ$。求 $\\angle ABC$。</p>\n<p><img alt=\"Figure Q39 (as printed)\" src=\"2018P2_zh_figs/Q39.png\" /></p>\n<ul>\n<li>A. $60^\\circ$</li>\n<li>B. $66^\\circ$</li>\n<li>C. $72^\\circ$</li>\n<li>D. $78^\\circ$</li>\n</ul>",
    "file": "2018_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 28
   },
   {
    "subject": "數學",
@@ -12361,7 +12661,8 @@ window.QB = {
    "text": "In the figure, $TA$ is the tangent to the circle $ABCD$ at the point $A$. $CD$ produced and $TA$ produced meet at the point $E$. It is given that $AB=CD$, $\\angle BAT=24^{\\circ}$ and $\\angle AED=72^{\\circ}$. Find $\\angle ABC$.\n\n[FIGURE Q39: 圓 ABCD，A 在圓底，切線 AT 向右延伸；C 在上方，D 在左，B 在右；CD 向左延長與 TA 延長交於 E；連 AB、BC、CD、DA、AC；∠BAT 標 24°（弧），∠AED 標 72°（弧）]\n\n\n![Figure Q39 (as printed)](2018P2_figs/Q39.png)\n\n- A. $60^{\\circ}$\n- B. $66^{\\circ}$\n- C. $72^{\\circ}$\n- D. $78^{\\circ}$",
    "html": "<p>In the figure, $TA$ is the tangent to the circle $ABCD$ at the point $A$. $CD$ produced and $TA$ produced meet at the point $E$. It is given that $AB=CD$, $\\angle BAT=24^{\\circ}$ and $\\angle AED=72^{\\circ}$. Find $\\angle ABC$.</p>\n<p>[FIGURE Q39: 圓 ABCD，A 在圓底，切線 AT 向右延伸；C 在上方，D 在左，B 在右；CD 向左延長與 TA 延長交於 E；連 AB、BC、CD、DA、AC；∠BAT 標 24°（弧），∠AED 標 72°（弧）]</p>\n<p><img alt=\"Figure Q39 (as printed)\" src=\"2018P2_figs/Q39.png\" /></p>\n<ul>\n<li>A. $60^{\\circ}$</li>\n<li>B. $66^{\\circ}$</li>\n<li>C. $72^{\\circ}$</li>\n<li>D. $78^{\\circ}$</li>\n</ul>",
    "file": "2018_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 28
   },
   {
    "subject": "數學",
@@ -12378,7 +12679,8 @@ window.QB = {
    "text": "已知 $a$ 為一正常數。直線 $2x + 5y = a$ 分別與 $x$ 軸及 $y$ 軸相交於點 $P$ 及點 $Q$。設 $R$ 為 $y$ 軸上的一點使得 $\\Delta PQR$ 的垂心的 $x$ 坐標為 10。求 $R$ 的 $y$ 坐標。\n\n- A. $-25$\n- B. $-4$\n- C. $4$\n- D. $25$",
    "html": "<p>已知 $a$ 為一正常數。直線 $2x + 5y = a$ 分別與 $x$ 軸及 $y$ 軸相交於點 $P$ 及點 $Q$。設 $R$ 為 $y$ 軸上的一點使得 $\\Delta PQR$ 的垂心的 $x$ 坐標為 10。求 $R$ 的 $y$ 坐標。</p>\n<ul>\n<li>A. $-25$</li>\n<li>B. $-4$</li>\n<li>C. $4$</li>\n<li>D. $25$</li>\n</ul>",
    "file": "2018_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 20
   },
   {
    "subject": "數學",
@@ -12396,7 +12698,8 @@ window.QB = {
    "text": "It is given that $a$ is a positive constant. The straight line $2x+5y=a$ cuts the $x$-axis and the $y$-axis at the points $P$ and $Q$ respectively. Let $R$ be a point lying on the $y$-axis such that the $x$-coordinate of the orthocentre of $\\triangle PQR$ is 10. Find the $y$-coordinate of $R$.\n\n- A. $-25$\n- B. $-4$\n- C. $4$\n- D. $25$",
    "html": "<p>It is given that $a$ is a positive constant. The straight line $2x+5y=a$ cuts the $x$-axis and the $y$-axis at the points $P$ and $Q$ respectively. Let $R$ be a point lying on the $y$-axis such that the $x$-coordinate of the orthocentre of $\\triangle PQR$ is 10. Find the $y$-coordinate of $R$.</p>\n<ul>\n<li>A. $-25$</li>\n<li>B. $-4$</li>\n<li>C. $4$</li>\n<li>D. $25$</li>\n</ul>",
    "file": "2018_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 20
   },
   {
    "subject": "數學",
@@ -12413,7 +12716,8 @@ window.QB = {
    "text": "圖中，$ABCDEFGH$ 為一長方體。設 $X$ 為 $DE$ 上的一點使得 $DX = 9\\, \\text{cm}$ 及 $EX = 4\\, \\text{cm}$。將 $BX$ 與平面 $ABGF$ 間的交角記為 $\\theta$。求 $\\cos\\theta$。\n\n\n![Figure Q41 (as printed)](2018P2_zh_figs/Q41.png)\n\n- A. $\\frac{3}{5}$\n- B. $\\frac{4}{5}$\n- C. $\\frac{8}{17}$\n- D. $\\frac{15}{17}$",
    "html": "<p>圖中，$ABCDEFGH$ 為一長方體。設 $X$ 為 $DE$ 上的一點使得 $DX = 9\\, \\text{cm}$ 及 $EX = 4\\, \\text{cm}$。將 $BX$ 與平面 $ABGF$ 間的交角記為 $\\theta$。求 $\\cos\\theta$。</p>\n<p><img alt=\"Figure Q41 (as printed)\" src=\"2018P2_zh_figs/Q41.png\" /></p>\n<ul>\n<li>A. $\\frac{3}{5}$</li>\n<li>B. $\\frac{4}{5}$</li>\n<li>C. $\\frac{8}{17}$</li>\n<li>D. $\\frac{15}{17}$</li>\n</ul>",
    "file": "2018_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 35
   },
   {
    "subject": "數學",
@@ -12430,7 +12734,8 @@ window.QB = {
    "text": "In the figure, $ABCDEFGH$ is a rectangular block. Let $X$ be a point lying on $DE$ such that $DX=9\\ \\mathrm{cm}$ and $EX=4\\ \\mathrm{cm}$. Denote the angle between $BX$ and the plane $ABGF$ by $\\theta$. Find $\\cos\\theta$.\n\n[FIGURE Q41: 長方體 ABCDEFGH（前左下 A、前右下 B，底邊 AB 標 12 cm；右側深度標 8 cm；D 在 A 後方，E 在 D 上方，F 左前上，G 右後上，H 後右上）；虛線 DE、DC、DX；X 在 DE 上；實線 BX]\n\n\n![Figure Q41 (as printed)](2018P2_figs/Q41.png)\n\n- A. $\\dfrac{3}{5}$\n- B. $\\dfrac{4}{5}$\n- C. $\\dfrac{8}{17}$\n- D. $\\dfrac{15}{17}$",
    "html": "<p>In the figure, $ABCDEFGH$ is a rectangular block. Let $X$ be a point lying on $DE$ such that $DX=9\\ \\mathrm{cm}$ and $EX=4\\ \\mathrm{cm}$. Denote the angle between $BX$ and the plane $ABGF$ by $\\theta$. Find $\\cos\\theta$.</p>\n<p>[FIGURE Q41: 長方體 ABCDEFGH（前左下 A、前右下 B，底邊 AB 標 12 cm；右側深度標 8 cm；D 在 A 後方，E 在 D 上方，F 左前上，G 右後上，H 後右上）；虛線 DE、DC、DX；X 在 DE 上；實線 BX]</p>\n<p><img alt=\"Figure Q41 (as printed)\" src=\"2018P2_figs/Q41.png\" /></p>\n<ul>\n<li>A. $\\dfrac{3}{5}$</li>\n<li>B. $\\dfrac{4}{5}$</li>\n<li>C. $\\dfrac{8}{17}$</li>\n<li>D. $\\dfrac{15}{17}$</li>\n</ul>",
    "file": "2018_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 35
   },
   {
    "subject": "數學",
@@ -12446,7 +12751,8 @@ window.QB = {
    "text": "某班有 14 名男生及 15 名女生。若從該班中選出 3 名相同性別的學生組成一隊，則可組成多少不同的隊？\n\n- A. $819$\n- B. $3654$\n- C. $4914$\n- D. $165620$",
    "html": "<p>某班有 14 名男生及 15 名女生。若從該班中選出 3 名相同性別的學生組成一隊，則可組成多少不同的隊？</p>\n<ul>\n<li>A. $819$</li>\n<li>B. $3654$</li>\n<li>C. $4914$</li>\n<li>D. $165620$</li>\n</ul>",
    "file": "2018_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 51
   },
   {
    "subject": "數學",
@@ -12462,7 +12768,8 @@ window.QB = {
    "text": "In a class, there are 14 boys and 15 girls. If 3 students of the same gender are selected from the class to form a team, how many different teams can be formed?\n\n- A. $819$\n- B. $3\\,654$\n- C. $4\\,914$\n- D. $165\\,620$",
    "html": "<p>In a class, there are 14 boys and 15 girls. If 3 students of the same gender are selected from the class to form a team, how many different teams can be formed?</p>\n<ul>\n<li>A. $819$</li>\n<li>B. $3\\,654$</li>\n<li>C. $4\\,914$</li>\n<li>D. $165\\,620$</li>\n</ul>",
    "file": "2018_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 51
   },
   {
    "subject": "數學",
@@ -12478,7 +12785,8 @@ window.QB = {
    "text": "偉明及小麗輪流投擲一枚勻稱骰子，直至其中一人擲得點數「1」或「6」為止。偉明首先投擲該骰子。求偉明擲得點數「6」的概率。\n\n- A. $\\frac{1}{2}$\n- B. $\\frac{1}{6}$\n- C. $\\frac{3}{10}$\n- D. $\\frac{7}{10}$",
    "html": "<p>偉明及小麗輪流投擲一枚勻稱骰子，直至其中一人擲得點數「1」或「6」為止。偉明首先投擲該骰子。求偉明擲得點數「6」的概率。</p>\n<ul>\n<li>A. $\\frac{1}{2}$</li>\n<li>B. $\\frac{1}{6}$</li>\n<li>C. $\\frac{3}{10}$</li>\n<li>D. $\\frac{7}{10}$</li>\n</ul>",
    "file": "2018_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 26
   },
   {
    "subject": "數學",
@@ -12494,7 +12802,8 @@ window.QB = {
    "text": "John and Mary take turns to throw a fair die until one of them gets a number '1' or '6'. John throws the die first. Find the probability that John gets a number '6'.\n\n- A. $\\dfrac{1}{2}$\n- B. $\\dfrac{1}{6}$\n- C. $\\dfrac{3}{10}$\n- D. $\\dfrac{7}{10}$",
    "html": "<p>John and Mary take turns to throw a fair die until one of them gets a number '1' or '6'. John throws the die first. Find the probability that John gets a number '6'.</p>\n<ul>\n<li>A. $\\dfrac{1}{2}$</li>\n<li>B. $\\dfrac{1}{6}$</li>\n<li>C. $\\dfrac{3}{10}$</li>\n<li>D. $\\dfrac{7}{10}$</li>\n</ul>",
    "file": "2018_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 26
   },
   {
    "subject": "數學",
@@ -12511,7 +12820,8 @@ window.QB = {
    "text": "在某測驗，測驗得分的平均值為 68 分。文俊在該測驗得 46 分且他的標準分為 -2.2 。若素珊在該測驗得 52 分，則她的標準分為\n\n- A. $-2.5$\n- B. $-1.6$\n- C. $-0.6$\n- D. $1.6$",
    "html": "<p>在某測驗，測驗得分的平均值為 68 分。文俊在該測驗得 46 分且他的標準分為 -2.2 。若素珊在該測驗得 52 分，則她的標準分為</p>\n<ul>\n<li>A. $-2.5$</li>\n<li>B. $-1.6$</li>\n<li>C. $-0.6$</li>\n<li>D. $1.6$</li>\n</ul>",
    "file": "2018_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 78
   },
   {
    "subject": "數學",
@@ -12529,7 +12839,8 @@ window.QB = {
    "text": "In a test, the mean of the test scores is 68 marks. Peter gets 46 marks in the test and his standard score is $-2.2$. If Susan gets 52 marks in the test, then her standard score is\n\n- A. $-2.5$\n- B. $-1.6$\n- C. $-0.6$\n- D. $1.6$",
    "html": "<p>In a test, the mean of the test scores is 68 marks. Peter gets 46 marks in the test and his standard score is $-2.2$. If Susan gets 52 marks in the test, then her standard score is</p>\n<ul>\n<li>A. $-2.5$</li>\n<li>B. $-1.6$</li>\n<li>C. $-0.6$</li>\n<li>D. $1.6$</li>\n</ul>",
    "file": "2018_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 78
   },
   {
    "subject": "數學",
@@ -12546,7 +12857,8 @@ window.QB = {
    "text": "某等差數列有 49 項。若該數列首 7 項的方差為 9 ，則該數列最後 7 項的方差為\n\n- A. $9$\n- B. $18$\n- C. $49$\n- D. $81$",
    "html": "<p>某等差數列有 49 項。若該數列首 7 項的方差為 9 ，則該數列最後 7 項的方差為</p>\n<ul>\n<li>A. $9$</li>\n<li>B. $18$</li>\n<li>C. $49$</li>\n<li>D. $81$</li>\n</ul>",
    "file": "2018_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 51
   },
   {
    "subject": "數學",
@@ -12563,7 +12875,8 @@ window.QB = {
    "text": "There are 49 terms in an arithmetic sequence. If the variance of the first 7 terms of the sequence is 9, then the variance of the last 7 terms of the sequence is\n\n- A. $9$\n- B. $18$\n- C. $49$\n- D. $81$\n\n\n---",
    "html": "<p>There are 49 terms in an arithmetic sequence. If the variance of the first 7 terms of the sequence is 9, then the variance of the last 7 terms of the sequence is</p>\n<ul>\n<li>A. $9$</li>\n<li>B. $18$</li>\n<li>C. $49$</li>\n<li>D. $81$</li>\n</ul>\n<hr />",
    "file": "2018_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 51
   },
   {
    "subject": "數學",
@@ -15549,7 +15862,8 @@ window.QB = {
    "text": "$8^{222} \\cdot 5^{666} =$\n\n- A. $10^{666}$\n- B. $10^{888}$\n- C. $40^{666}$\n- D. $40^{888}$",
    "html": "<p>$8^{222} \\cdot 5^{666} =$</p>\n<ul>\n<li>A. $10^{666}$</li>\n<li>B. $10^{888}$</li>\n<li>C. $40^{666}$</li>\n<li>D. $40^{888}$</li>\n</ul>",
    "file": "2016_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 47
   },
   {
    "subject": "數學",
@@ -15565,7 +15879,8 @@ window.QB = {
    "text": "$8^{222} \\cdot 5^{666} =$\n\n- A. $10^{666}$\n- B. $10^{888}$\n- C. $40^{666}$\n- D. $40^{888}$",
    "html": "<p>$8^{222} \\cdot 5^{666} =$</p>\n<ul>\n<li>A. $10^{666}$</li>\n<li>B. $10^{888}$</li>\n<li>C. $40^{666}$</li>\n<li>D. $40^{888}$</li>\n</ul>",
    "file": "2016_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 47
   },
   {
    "subject": "數學",
@@ -15581,7 +15896,8 @@ window.QB = {
    "text": "若 $\\frac{a}{x} + \\frac{b}{y} = 3$，則 $x =$\n\n- A. $\\frac{ay}{3y - b}$\n- B. $\\frac{ay}{b - 3y}$\n- C. $\\frac{by}{3y - a}$\n- D. $\\frac{by}{a - 3y}$",
    "html": "<p>若 $\\frac{a}{x} + \\frac{b}{y} = 3$，則 $x =$</p>\n<ul>\n<li>A. $\\frac{ay}{3y - b}$</li>\n<li>B. $\\frac{ay}{b - 3y}$</li>\n<li>C. $\\frac{by}{3y - a}$</li>\n<li>D. $\\frac{by}{a - 3y}$</li>\n</ul>",
    "file": "2016_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 81
   },
   {
    "subject": "數學",
@@ -15597,7 +15913,8 @@ window.QB = {
    "text": "If $\\dfrac{a}{x} + \\dfrac{b}{y} =3$, then $x =$\n\n- A. $\\dfrac{ay}{3y - b}$\n- B. $\\dfrac{ay}{b - 3y}$\n- C. $\\dfrac{by}{3y - a}$\n- D. $\\dfrac{by}{a - 3y}$",
    "html": "<p>If $\\dfrac{a}{x} + \\dfrac{b}{y} =3$, then $x =$</p>\n<ul>\n<li>A. $\\dfrac{ay}{3y - b}$</li>\n<li>B. $\\dfrac{ay}{b - 3y}$</li>\n<li>C. $\\dfrac{by}{3y - a}$</li>\n<li>D. $\\dfrac{by}{a - 3y}$</li>\n</ul>",
    "file": "2016_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 81
   },
   {
    "subject": "數學",
@@ -15613,7 +15930,8 @@ window.QB = {
    "text": "$16 - (2x - 3y)^2 =$\n\n- A. $(4 - 2x - 3y)(4 + 2x + 3y)$\n- B. $(4 - 2x - 3y)(4 + 2x - 3y)$\n- C. $(4 - 2x + 3y)(4 + 2x + 3y)$\n- D. $(4 - 2x + 3y)(4 + 2x - 3y)$",
    "html": "<p>$16 - (2x - 3y)^2 =$</p>\n<ul>\n<li>A. $(4 - 2x - 3y)(4 + 2x + 3y)$</li>\n<li>B. $(4 - 2x - 3y)(4 + 2x - 3y)$</li>\n<li>C. $(4 - 2x + 3y)(4 + 2x + 3y)$</li>\n<li>D. $(4 - 2x + 3y)(4 + 2x - 3y)$</li>\n</ul>",
    "file": "2016_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 65
   },
   {
    "subject": "數學",
@@ -15629,7 +15947,8 @@ window.QB = {
    "text": "$16 - (2x - 3y)^2 =$\n\n- A. $(4 - 2x - 3y)(4 + 2x + 3y)$\n- B. $(4 - 2x - 3y)(4 + 2x - 3y)$\n- C. $(4 - 2x + 3y)(4 + 2x + 3y)$\n- D. $(4 - 2x + 3y)(4 + 2x - 3y)$",
    "html": "<p>$16 - (2x - 3y)^2 =$</p>\n<ul>\n<li>A. $(4 - 2x - 3y)(4 + 2x + 3y)$</li>\n<li>B. $(4 - 2x - 3y)(4 + 2x - 3y)$</li>\n<li>C. $(4 - 2x + 3y)(4 + 2x + 3y)$</li>\n<li>D. $(4 - 2x + 3y)(4 + 2x - 3y)$</li>\n</ul>",
    "file": "2016_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 65
   },
   {
    "subject": "數學",
@@ -15645,7 +15964,8 @@ window.QB = {
    "text": "$0.0765403=$\n\n- A. $0.076$ (準確至二位有效數字)。\n- B. $0.0765$ (準確至三位小數)。\n- C. $0.07654$ (準確至四位有效數字)。\n- D. $0.076540$ (準確至五位小數)。",
    "html": "<p>$0.0765403=$</p>\n<ul>\n<li>A. $0.076$ (準確至二位有效數字)。</li>\n<li>B. $0.0765$ (準確至三位小數)。</li>\n<li>C. $0.07654$ (準確至四位有效數字)。</li>\n<li>D. $0.076540$ (準確至五位小數)。</li>\n</ul>",
    "file": "2016_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 87
   },
   {
    "subject": "數學",
@@ -15661,7 +15981,8 @@ window.QB = {
    "text": "$0.0765403=$\n\n- A. $0.076$ (correct to 2 significant figures).\n- B. $0.0765$ (correct to 3 decimal places).\n- C. $0.07654$ (correct to 4 significant figures).\n- D. $0.076540$ (correct to 5 decimal places).",
    "html": "<p>$0.0765403=$</p>\n<ul>\n<li>A. $0.076$ (correct to 2 significant figures).</li>\n<li>B. $0.0765$ (correct to 3 decimal places).</li>\n<li>C. $0.07654$ (correct to 4 significant figures).</li>\n<li>D. $0.076540$ (correct to 5 decimal places).</li>\n</ul>",
    "file": "2016_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 87
   },
   {
    "subject": "數學",
@@ -15677,7 +15998,8 @@ window.QB = {
    "text": "若 $4\\alpha+\\beta=7\\alpha+3\\beta=5$ ，則 $\\beta=$\n\n- A. $-3$。\n- B. $-2$。\n- C. $2$。\n- D. $3$。",
    "html": "<p>若 $4\\alpha+\\beta=7\\alpha+3\\beta=5$ ，則 $\\beta=$</p>\n<ul>\n<li>A. $-3$。</li>\n<li>B. $-2$。</li>\n<li>C. $2$。</li>\n<li>D. $3$。</li>\n</ul>",
    "file": "2016_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 80
   },
   {
    "subject": "數學",
@@ -15693,7 +16015,8 @@ window.QB = {
    "text": "If $4\\alpha+\\beta=7\\alpha+3\\beta=5$, then $\\beta=$\n\n- A. $-3$.\n- B. $-2$.\n- C. $2$.\n- D. $3$.",
    "html": "<p>If $4\\alpha+\\beta=7\\alpha+3\\beta=5$, then $\\beta=$</p>\n<ul>\n<li>A. $-3$.</li>\n<li>B. $-2$.</li>\n<li>C. $2$.</li>\n<li>D. $3$.</li>\n</ul>",
    "file": "2016_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 80
   },
   {
    "subject": "數學",
@@ -15710,7 +16033,8 @@ window.QB = {
    "text": "設 $f(x)=4x^3+kx+3$ ，其中 $k$ 為一常數。若 $f(x)$ 可被 $2x+1$ 整除，求當 $f(x)$ 除以 $x+1$ 時的餘數。\n\n- A. $-7$\n- B. $-6$\n- C. $0$\n- D. $5$",
    "html": "<p>設 $f(x)=4x^3+kx+3$ ，其中 $k$ 為一常數。若 $f(x)$ 可被 $2x+1$ 整除，求當 $f(x)$ 除以 $x+1$ 時的餘數。</p>\n<ul>\n<li>A. $-7$</li>\n<li>B. $-6$</li>\n<li>C. $0$</li>\n<li>D. $5$</li>\n</ul>",
    "file": "2016_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 76
   },
   {
    "subject": "數學",
@@ -15727,7 +16051,8 @@ window.QB = {
    "text": "Let $f(x)=4x^3+kx+3$, where $k$ is a constant. If $f(x)$ is divisible by $2x+1$, find the remainder when $f(x)$ is divided by $x+1$.\n\n- A. $-7$\n- B. $-6$\n- C. $0$\n- D. $5$",
    "html": "<p>Let $f(x)=4x^3+kx+3$, where $k$ is a constant. If $f(x)$ is divisible by $2x+1$, find the remainder when $f(x)$ is divided by $x+1$.</p>\n<ul>\n<li>A. $-7$</li>\n<li>B. $-6$</li>\n<li>C. $0$</li>\n<li>D. $5$</li>\n</ul>",
    "file": "2016_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 76
   },
   {
    "subject": "數學",
@@ -15743,7 +16068,8 @@ window.QB = {
    "text": "$-5x>21-2x$ 及 $6x-18<0$ 的解為\n\n- A. $x<-7$。\n- B. $x<3$。\n- C. $-7<x<3$。\n- D. $x<-7$ 或 $x>3$。",
    "html": "<p>$-5x&gt;21-2x$ 及 $6x-18&lt;0$ 的解為</p>\n<ul>\n<li>A. $x&lt;-7$。</li>\n<li>B. $x&lt;3$。</li>\n<li>C. $-7&lt;x&lt;3$。</li>\n<li>D. $x&lt;-7$ 或 $x&gt;3$。</li>\n</ul>",
    "file": "2016_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 62
   },
   {
    "subject": "數學",
@@ -15759,7 +16085,8 @@ window.QB = {
    "text": "The solution of $-5x>21-2x$ and $6x-18<0$ is\n\n- A. $x<-7$.\n- B. $x<3$.\n- C. $-7<x<3$.\n- D. $x<-7$ or $x>3$.",
    "html": "<p>The solution of $-5x&gt;21-2x$ and $6x-18&lt;0$ is</p>\n<ul>\n<li>A. $x&lt;-7$.</li>\n<li>B. $x&lt;3$.</li>\n<li>C. $-7&lt;x&lt;3$.</li>\n<li>D. $x&lt;-7$ or $x&gt;3$.</li>\n</ul>",
    "file": "2016_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 62
   },
   {
    "subject": "數學",
@@ -15775,7 +16102,8 @@ window.QB = {
    "text": "若 $k$ 為一常數使得二次方程 $x^2 + kx + 8k + 36 = 0$ 有等根，則 $k=$\n\n- A. $-6$\n- B. $12$\n- C. $-4$ 或 $36$\n- D. $-18$ 或 $2$",
    "html": "<p>若 $k$ 為一常數使得二次方程 $x^2 + kx + 8k + 36 = 0$ 有等根，則 $k=$</p>\n<ul>\n<li>A. $-6$</li>\n<li>B. $12$</li>\n<li>C. $-4$ 或 $36$</li>\n<li>D. $-18$ 或 $2$</li>\n</ul>",
    "file": "2016_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 82
   },
   {
    "subject": "數學",
@@ -15791,7 +16119,8 @@ window.QB = {
    "text": "If $k$ is a constant such that the quadratic equation $x^2 + kx + 8k + 36 =0$ has equal roots, then $k=$\n\n- A. $-6$\n- B. $12$\n- C. $-4$ or $36$\n- D. $-18$ or $2$",
    "html": "<p>If $k$ is a constant such that the quadratic equation $x^2 + kx + 8k + 36 =0$ has equal roots, then $k=$</p>\n<ul>\n<li>A. $-6$</li>\n<li>B. $12$</li>\n<li>C. $-4$ or $36$</li>\n<li>D. $-18$ or $2$</li>\n</ul>",
    "file": "2016_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 82
   },
   {
    "subject": "數學",
@@ -15807,7 +16136,8 @@ window.QB = {
    "text": "若 $-1 < a < 0$，則下列何者可表示 $y = (ax + 1)^2 + a$ 的圖像？\n\n\n![Figure Q9 (as printed)](2016P2_zh_figs/Q09.png)\n\n- A. ![](https://i.imgur.com/1.png)\n- B. ![](https://i.imgur.com/2.png)\n- C. ![](https://i.imgur.com/3.png)\n- D. ![](https://i.imgur.com/4.png)",
    "html": "<p>若 $-1 &lt; a &lt; 0$，則下列何者可表示 $y = (ax + 1)^2 + a$ 的圖像？</p>\n<p><img alt=\"Figure Q9 (as printed)\" src=\"2016P2_zh_figs/Q09.png\" /></p>\n<ul>\n<li>A. <img alt=\"\" src=\"https://i.imgur.com/1.png\" /></li>\n<li>B. <img alt=\"\" src=\"https://i.imgur.com/2.png\" /></li>\n<li>C. <img alt=\"\" src=\"https://i.imgur.com/3.png\" /></li>\n<li>D. <img alt=\"\" src=\"https://i.imgur.com/4.png\" /></li>\n</ul>",
    "file": "2016_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 46
   },
   {
    "subject": "數學",
@@ -15823,7 +16153,8 @@ window.QB = {
    "text": "If $-1 < a <0$, which of the following may represent the graph of $y = (ax + 1)^2 + a$?\n\n- A. ![](2016P2_figs/Q09A.png)\n- B. ![](2016P2_figs/Q09B.png)\n- C. ![](2016P2_figs/Q09C.png)\n- D. ![](2016P2_figs/Q09D.png)",
    "html": "<p>If $-1 &lt; a &lt;0$, which of the following may represent the graph of $y = (ax + 1)^2 + a$?</p>\n<ul>\n<li>A. <img alt=\"\" src=\"2016P2_figs/Q09A.png\" /></li>\n<li>B. <img alt=\"\" src=\"2016P2_figs/Q09B.png\" /></li>\n<li>C. <img alt=\"\" src=\"2016P2_figs/Q09C.png\" /></li>\n<li>D. <img alt=\"\" src=\"2016P2_figs/Q09D.png\" /></li>\n</ul>",
    "file": "2016_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 46
   },
   {
    "subject": "數學",
@@ -15839,7 +16170,8 @@ window.QB = {
    "text": "漢林的月薪較文俊高 $25\\%$，而文俊的月薪較佩怡低 $25\\%$。已知漢林的月薪為 $33360$。佩怡的月薪為\n\n- A. $31275$\n- B. $33360$\n- C. $35584$\n- D. $52125$",
    "html": "<p>漢林的月薪較文俊高 $25\\%$，而文俊的月薪較佩怡低 $25\\%$。已知漢林的月薪為 $33360$。佩怡的月薪為</p>\n<ul>\n<li>A. $31275$</li>\n<li>B. $33360$</li>\n<li>C. $35584$</li>\n<li>D. $52125$</li>\n</ul>",
    "file": "2016_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 69
   },
   {
    "subject": "數學",
@@ -15855,7 +16187,8 @@ window.QB = {
    "text": "The monthly salary of Donald is $25\\%$ higher than that of Peter while the monthly salary of Peter is $25\\%$ lower than that of Teresa. It is given that the monthly salary of Donald is $\\$33\\,360$. The monthly salary of Teresa is\n\n- A. $\\$31\\,275$\n- B. $\\$33\\,360$\n- C. $\\$35\\,584$\n- D. $\\$52\\,125$",
    "html": "<p>The monthly salary of Donald is $25\\%$ higher than that of Peter while the monthly salary of Peter is $25\\%$ lower than that of Teresa. It is given that the monthly salary of Donald is $\\$33\\,360$. The monthly salary of Teresa is</p>\n<ul>\n<li>A. $\\$31\\,275$</li>\n<li>B. $\\$33\\,360$</li>\n<li>C. $\\$35\\,584$</li>\n<li>D. $\\$52\\,125$</li>\n</ul>",
    "file": "2016_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 69
   },
   {
    "subject": "數學",
@@ -15872,7 +16205,8 @@ window.QB = {
    "text": "若 $x$ 及 $y$ 均為非零的數使得 $(3y-4x):(2x+y)=5:6$ ，則 $x:y=$\n\n- A. $7:8$\n- B. $8:29$\n- C. $9:32$\n- D. $13:34$",
    "html": "<p>若 $x$ 及 $y$ 均為非零的數使得 $(3y-4x):(2x+y)=5:6$ ，則 $x:y=$</p>\n<ul>\n<li>A. $7:8$</li>\n<li>B. $8:29$</li>\n<li>C. $9:32$</li>\n<li>D. $13:34$</li>\n</ul>",
    "file": "2016_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 81
   },
   {
    "subject": "數學",
@@ -15889,7 +16223,8 @@ window.QB = {
    "text": "If $x$ and $y$ are non-zero numbers such that $(3y-4x):(2x+y)=5:6$, then $x:y=$\n\n- A. $7:8$\n- B. $8:29$\n- C. $9:32$\n- D. $13:34$",
    "html": "<p>If $x$ and $y$ are non-zero numbers such that $(3y-4x):(2x+y)=5:6$, then $x:y=$</p>\n<ul>\n<li>A. $7:8$</li>\n<li>B. $8:29$</li>\n<li>C. $9:32$</li>\n<li>D. $13:34$</li>\n</ul>",
    "file": "2016_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 81
   },
   {
    "subject": "數學",
@@ -15905,7 +16240,8 @@ window.QB = {
    "text": "已知 $z$ 隨 $\\sqrt{x}$ 正變且隨 $y$ 反變。若 $x$ 減少 $36\\%$ 且 $y$ 增加 $60\\%$ ，則 $z$\n\n- A. 增加 $24\\%$\n- B. 增加 $28\\%$\n- C. 減少 $40\\%$\n- D. 減少 $50\\%$",
    "html": "<p>已知 $z$ 隨 $\\sqrt{x}$ 正變且隨 $y$ 反變。若 $x$ 減少 $36\\%$ 且 $y$ 增加 $60\\%$ ，則 $z$</p>\n<ul>\n<li>A. 增加 $24\\%$</li>\n<li>B. 增加 $28\\%$</li>\n<li>C. 減少 $40\\%$</li>\n<li>D. 減少 $50\\%$</li>\n</ul>",
    "file": "2016_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 67
   },
   {
    "subject": "數學",
@@ -15921,7 +16257,8 @@ window.QB = {
    "text": "It is given that $z$ varies directly as $\\sqrt{x}$ and inversely as $y$. If $x$ is decreased by $36\\%$ and $y$ is increased by $60\\%$, then $z$\n\n- A. is increased by $24\\%$\n- B. is increased by $28\\%$\n- C. is decreased by $40\\%$\n- D. is decreased by $50\\%$",
    "html": "<p>It is given that $z$ varies directly as $\\sqrt{x}$ and inversely as $y$. If $x$ is decreased by $36\\%$ and $y$ is increased by $60\\%$, then $z$</p>\n<ul>\n<li>A. is increased by $24\\%$</li>\n<li>B. is increased by $28\\%$</li>\n<li>C. is decreased by $40\\%$</li>\n<li>D. is decreased by $50\\%$</li>\n</ul>",
    "file": "2016_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 67
   },
   {
    "subject": "數學",
@@ -15938,7 +16275,8 @@ window.QB = {
    "text": "$X$ 牌麵粉的成本為 $\\$42/kg$ 。若 $3kg$ 的 $X$ 牌麵粉與 $2kg$ 的 $Y$ 牌麵粉混合使得混合後的麵粉的成本為 $\\$36/kg$ ，求 $Y$ 牌麵粉的成本。\n\n- A. $\\$27/kg$\n- B. $\\$30/kg$\n- C. $\\$32/kg$\n- D. $\\$39/kg$",
    "html": "<p>$X$ 牌麵粉的成本為 $\\$42/kg$ 。若 $3kg$ 的 $X$ 牌麵粉與 $2kg$ 的 $Y$ 牌麵粉混合使得混合後的麵粉的成本為 $\\$36/kg$ ，求 $Y$ 牌麵粉的成本。</p>\n<ul>\n<li>A. $\\$27/kg$</li>\n<li>B. $\\$30/kg$</li>\n<li>C. $\\$32/kg$</li>\n<li>D. $\\$39/kg$</li>\n</ul>",
    "file": "2016_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 81
   },
   {
    "subject": "數學",
@@ -15955,7 +16293,8 @@ window.QB = {
    "text": "The cost of flour of brand $X$ is $\\$42/kg$. If $3kg$ of flour of brand $X$ and $2kg$ of flour of brand $Y$ are mixed so that the cost of the mixture is $\\$36/kg$, find the cost of flour of brand $Y$.\n\n- A. $\\$27/kg$\n- B. $\\$30/kg$\n- C. $\\$32/kg$\n- D. $\\$39/kg$",
    "html": "<p>The cost of flour of brand $X$ is $\\$42/kg$. If $3kg$ of flour of brand $X$ and $2kg$ of flour of brand $Y$ are mixed so that the cost of the mixture is $\\$36/kg$, find the cost of flour of brand $Y$.</p>\n<ul>\n<li>A. $\\$27/kg$</li>\n<li>B. $\\$30/kg$</li>\n<li>C. $\\$32/kg$</li>\n<li>D. $\\$39/kg$</li>\n</ul>",
    "file": "2016_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 81
   },
   {
    "subject": "數學",
@@ -15971,7 +16310,8 @@ window.QB = {
    "text": "圖中，第 1 個圖案包含 9 粒點子。對任意正整數 $n$ ，第 $(n+1)$ 個圖案是由第 $n$ 個圖案加上 5 粒點子所組成。求第 7 個圖案的點子數目。\n\n- A. 29\n- B. 34\n- C. 39\n- D. 44",
    "html": "<p>圖中，第 1 個圖案包含 9 粒點子。對任意正整數 $n$ ，第 $(n+1)$ 個圖案是由第 $n$ 個圖案加上 5 粒點子所組成。求第 7 個圖案的點子數目。</p>\n<ul>\n<li>A. 29</li>\n<li>B. 34</li>\n<li>C. 39</li>\n<li>D. 44</li>\n</ul>",
    "file": "2016_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 92
   },
   {
    "subject": "數學",
@@ -15987,7 +16327,8 @@ window.QB = {
    "text": "In the figure, the 1st pattern consists of $9$ dots. For any positive integer $n$, the $(n+1)$th pattern is formed by adding $5$ dots to the $n$th pattern. Find the number of dots in the 7th pattern.\n![Figure Q14 (as printed)](2016P2_figs/Q14.png)\n*[FIGURE Q14: Figure shows a dot pattern with arrows indicating progression. No capital letters, numbers, angles, dashed lines, or shading. Dots form a triangular grid, increasing in rows and columns per stage.]*\n\n- A. $29$\n- B. $34$\n- C. $39$\n- D. $44$",
    "html": "<p>In the figure, the 1st pattern consists of $9$ dots. For any positive integer $n$, the $(n+1)$th pattern is formed by adding $5$ dots to the $n$th pattern. Find the number of dots in the 7th pattern.\n<img alt=\"Figure Q14 (as printed)\" src=\"2016P2_figs/Q14.png\" />\n<em>[FIGURE Q14: Figure shows a dot pattern with arrows indicating progression. No capital letters, numbers, angles, dashed lines, or shading. Dots form a triangular grid, increasing in rows and columns per stage.]</em></p>\n<ul>\n<li>A. $29$</li>\n<li>B. $34$</li>\n<li>C. $39$</li>\n<li>D. $44$</li>\n</ul>",
    "file": "2016_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 92
   },
   {
    "subject": "數學",
@@ -16003,7 +16344,8 @@ window.QB = {
    "text": "根據圖中所示，下列何者必為正確？\nI. $a + c = 180^\\circ$\nII. $a + b - c = 180^\\circ$\nIII. $b + c = 360^\\circ$\n\n\n![Figure Q15 (as printed)](2016P2_zh_figs/Q15.png)\n\n- A. 只有 I\n- B. 只有 II\n- C. 只有 I 及 III\n- D. 只有 II 及 III",
    "html": "<p>根據圖中所示，下列何者必為正確？\nI. $a + c = 180^\\circ$\nII. $a + b - c = 180^\\circ$\nIII. $b + c = 360^\\circ$</p>\n<p><img alt=\"Figure Q15 (as printed)\" src=\"2016P2_zh_figs/Q15.png\" /></p>\n<ul>\n<li>A. 只有 I</li>\n<li>B. 只有 II</li>\n<li>C. 只有 I 及 III</li>\n<li>D. 只有 II 及 III</li>\n</ul>",
    "file": "2016_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 45
   },
   {
    "subject": "數學",
@@ -16019,7 +16361,8 @@ window.QB = {
    "text": "According to the figure, which of the following must be true?\n![Figure Q15 (as printed)](2016P2_figs/Q15.png)\n*[FIGURE Q15: A geometric figure with three circles labeled a, b, c. Lines connect centers. No angles, units, dashed lines, or right-angle marks. No shading. All labels are lowercase letters.]*\nI. $a+c=180^\\circ$\nII. $a+b-c=180^\\circ$\nIII. $b+c=360^\\circ$\n\n- A. I only\n- B. II only\n- C. I and III only\n- D. II and III only",
    "html": "<p>According to the figure, which of the following must be true?\n<img alt=\"Figure Q15 (as printed)\" src=\"2016P2_figs/Q15.png\" />\n<em>[FIGURE Q15: A geometric figure with three circles labeled a, b, c. Lines connect centers. No angles, units, dashed lines, or right-angle marks. No shading. All labels are lowercase letters.]</em>\nI. $a+c=180^\\circ$\nII. $a+b-c=180^\\circ$\nIII. $b+c=360^\\circ$</p>\n<ul>\n<li>A. I only</li>\n<li>B. II only</li>\n<li>C. I and III only</li>\n<li>D. II and III only</li>\n</ul>",
    "file": "2016_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 45
   },
   {
    "subject": "數學",
@@ -16035,7 +16378,8 @@ window.QB = {
    "text": "圖中，$ABC$ 為一直線。若 $AB = 24\\, \\text{cm}$、$AD = 40\\, \\text{cm}$、$BD = 32\\, \\text{cm}$ 及 $CD = 68\\, \\text{cm}$，則 $BC =$\n\n\n![Figure Q16 (as printed)](2016P2_zh_figs/Q16.png)\n\n- A. $43\\, \\text{cm}$\n- B. $54\\, \\text{cm}$\n- C. $55\\, \\text{cm}$\n- D. $60\\, \\text{cm}$",
    "html": "<p>圖中，$ABC$ 為一直線。若 $AB = 24\\, \\text{cm}$、$AD = 40\\, \\text{cm}$、$BD = 32\\, \\text{cm}$ 及 $CD = 68\\, \\text{cm}$，則 $BC =$</p>\n<p><img alt=\"Figure Q16 (as printed)\" src=\"2016P2_zh_figs/Q16.png\" /></p>\n<ul>\n<li>A. $43\\, \\text{cm}$</li>\n<li>B. $54\\, \\text{cm}$</li>\n<li>C. $55\\, \\text{cm}$</li>\n<li>D. $60\\, \\text{cm}$</li>\n</ul>",
    "file": "2016_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 80
   },
   {
    "subject": "數學",
@@ -16051,7 +16395,8 @@ window.QB = {
    "text": "In the figure, $ABC$ is a straight line. If $AB=24\\text{ cm}$, $AD=40\\text{ cm}$, $BD=32\\text{ cm}$ and $CD=68\\text{ cm}$, then $BC=$\n![Figure Q16 (as printed)](2016P2_figs/Q16.png)\n*[FIGURE Q16: Right-angled figure with points A, B, C, D. Solid lines form quadrilateral ABCD with right angle at D. Diagonal AC and DB intersect. No numbers, angles, shading, or dashed lines printed.]*\n\n- A. $43\\text{ cm}$.\n- B. $54\\text{ cm}$.\n- C. $55\\text{ cm}$.\n- D. $60\\text{ cm}$.",
    "html": "<p>In the figure, $ABC$ is a straight line. If $AB=24\\text{ cm}$, $AD=40\\text{ cm}$, $BD=32\\text{ cm}$ and $CD=68\\text{ cm}$, then $BC=$\n<img alt=\"Figure Q16 (as printed)\" src=\"2016P2_figs/Q16.png\" />\n<em>[FIGURE Q16: Right-angled figure with points A, B, C, D. Solid lines form quadrilateral ABCD with right angle at D. Diagonal AC and DB intersect. No numbers, angles, shading, or dashed lines printed.]</em></p>\n<ul>\n<li>A. $43\\text{ cm}$.</li>\n<li>B. $54\\text{ cm}$.</li>\n<li>C. $55\\text{ cm}$.</li>\n<li>D. $60\\text{ cm}$.</li>\n</ul>",
    "file": "2016_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 80
   },
   {
    "subject": "數學",
@@ -16067,7 +16412,8 @@ window.QB = {
    "text": "圖中，$ABCD$ 為一平行四邊形。$E$ 為 $CD$ 上的一點使得 $BE = CE$。若 $\\angle ADC = 114^\\circ$，則 $\\angle ABE =$\n\n\n![Figure Q17 (as printed)](2016P2_zh_figs/Q17.png)\n\n- A. $48^\\circ$\n- B. $57^\\circ$\n- C. $62^\\circ$\n- D. $66^\\circ$",
    "html": "<p>圖中，$ABCD$ 為一平行四邊形。$E$ 為 $CD$ 上的一點使得 $BE = CE$。若 $\\angle ADC = 114^\\circ$，則 $\\angle ABE =$</p>\n<p><img alt=\"Figure Q17 (as printed)\" src=\"2016P2_zh_figs/Q17.png\" /></p>\n<ul>\n<li>A. $48^\\circ$</li>\n<li>B. $57^\\circ$</li>\n<li>C. $62^\\circ$</li>\n<li>D. $66^\\circ$</li>\n</ul>",
    "file": "2016_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 55
   },
   {
    "subject": "數學",
@@ -16083,7 +16429,8 @@ window.QB = {
    "text": "In the figure, $ABCD$ is a parallelogram. $E$ is a point lying on $CD$ such that $BE=CE$. If $\\angle ADC=114^\\circ$, then $\\angle ABE=$\n![Figure Q17 (as printed)](2016P2_figs/Q17.png)\n*[FIGURE Q17: A parallelogram ABCD with point E on DC. Lines AE and BE drawn. No numbers, angles, dashed lines, or shading printed. Right-angle marks absent.]*\n\n- A. $48^\\circ$.\n- B. $57^\\circ$.\n- C. $62^\\circ$.\n- D. $66^\\circ$.",
    "html": "<p>In the figure, $ABCD$ is a parallelogram. $E$ is a point lying on $CD$ such that $BE=CE$. If $\\angle ADC=114^\\circ$, then $\\angle ABE=$\n<img alt=\"Figure Q17 (as printed)\" src=\"2016P2_figs/Q17.png\" />\n<em>[FIGURE Q17: A parallelogram ABCD with point E on DC. Lines AE and BE drawn. No numbers, angles, dashed lines, or shading printed. Right-angle marks absent.]</em></p>\n<ul>\n<li>A. $48^\\circ$.</li>\n<li>B. $57^\\circ$.</li>\n<li>C. $62^\\circ$.</li>\n<li>D. $66^\\circ$.</li>\n</ul>",
    "file": "2016_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 55
   },
   {
    "subject": "數學",
@@ -16099,7 +16446,8 @@ window.QB = {
    "text": "圖中所示為一直立角柱體。求該角柱體的體積。\n\n\n![Figure Q18 (as printed)](2016P2_zh_figs/Q18.png)\n\n- A. $216\\, \\text{cm}^3$\n- B. $240\\, \\text{cm}^3$\n- C. $300\\, \\text{cm}^3$\n- D. $328\\, \\text{cm}^3$",
    "html": "<p>圖中所示為一直立角柱體。求該角柱體的體積。</p>\n<p><img alt=\"Figure Q18 (as printed)\" src=\"2016P2_zh_figs/Q18.png\" /></p>\n<ul>\n<li>A. $216\\, \\text{cm}^3$</li>\n<li>B. $240\\, \\text{cm}^3$</li>\n<li>C. $300\\, \\text{cm}^3$</li>\n<li>D. $328\\, \\text{cm}^3$</li>\n</ul>",
    "file": "2016_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 79
   },
   {
    "subject": "數學",
@@ -16115,7 +16463,8 @@ window.QB = {
    "text": "The figure shows a right prism. Find the volume of the prism.\n![Figure Q18 (as printed)](2016P2_figs/Q18.png)\n*[FIGURE Q18: A composite polygon figure with labeled sides: 6 cm, 4 cm, 13 cm, and an unlabeled vertical side. Two right-angle marks. No capital letters or shading. No dashed lines. Units are cm.]*\n\n- A. $216 \\text{ cm}^{3}$\n- B. $240 \\text{ cm}^{3}$\n- C. $300 \\text{ cm}^{3}$\n- D. $328 \\text{ cm}^{3}$",
    "html": "<p>The figure shows a right prism. Find the volume of the prism.\n<img alt=\"Figure Q18 (as printed)\" src=\"2016P2_figs/Q18.png\" />\n<em>[FIGURE Q18: A composite polygon figure with labeled sides: 6 cm, 4 cm, 13 cm, and an unlabeled vertical side. Two right-angle marks. No capital letters or shading. No dashed lines. Units are cm.]</em></p>\n<ul>\n<li>A. $216 \\text{ cm}^{3}$</li>\n<li>B. $240 \\text{ cm}^{3}$</li>\n<li>C. $300 \\text{ cm}^{3}$</li>\n<li>D. $328 \\text{ cm}^{3}$</li>\n</ul>",
    "file": "2016_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 79
   },
   {
    "subject": "數學",
@@ -16131,7 +16480,8 @@ window.QB = {
    "text": "圖中，扇形 $OAB$ 及扇形 $OCD$ 的圓心均為 $O$，其中 $OA=33\\, \\text{cm}$ 及 $OC=39\\, \\text{cm}$。陰影區域 $ABDC$ 的面積為 $72\\pi\\, \\text{cm}^2$。下列何者正確？\nI. 扇形 $OAB$ 的角為 $60^\\circ$。\nII. 扇形 $OAB$ 的面積為 $11\\pi\\, \\text{cm}^2$。\nIII. 扇形 $OCD$ 的周界為 $13\\pi\\, \\text{cm}$。\n\n\n![Figure Q19 (as printed)](2016P2_zh_figs/Q19.png)\n\n- A. 只有 I\n- B. 只有 II\n- C. 只有 I 及 III\n- D. 只有 II 及 III",
    "html": "<p>圖中，扇形 $OAB$ 及扇形 $OCD$ 的圓心均為 $O$，其中 $OA=33\\, \\text{cm}$ 及 $OC=39\\, \\text{cm}$。陰影區域 $ABDC$ 的面積為 $72\\pi\\, \\text{cm}^2$。下列何者正確？\nI. 扇形 $OAB$ 的角為 $60^\\circ$。\nII. 扇形 $OAB$ 的面積為 $11\\pi\\, \\text{cm}^2$。\nIII. 扇形 $OCD$ 的周界為 $13\\pi\\, \\text{cm}$。</p>\n<p><img alt=\"Figure Q19 (as printed)\" src=\"2016P2_zh_figs/Q19.png\" /></p>\n<ul>\n<li>A. 只有 I</li>\n<li>B. 只有 II</li>\n<li>C. 只有 I 及 III</li>\n<li>D. 只有 II 及 III</li>\n</ul>",
    "file": "2016_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 59
   },
   {
    "subject": "數學",
@@ -16147,7 +16497,8 @@ window.QB = {
    "text": "In the figure, $OAB$ and $OCD$ are sectors with centre $O$, where $OA=33 \\text{ cm}$ and $OC=39 \\text{ cm}$. The area of the shaded region $ABDC$ is $72 \\pi \\mathrm{cm}^{2}$. Which of the following is/are true?\n![Figure Q19 (as printed)](2016P2_figs/Q19.png)\n*[FIGURE Q19: Figure shows a shaded quadrilateral ABCD with point O. Lines OA, OB, OC, OD are drawn. No angles or units printed. No dashed lines or right-angle marks. Shading is hatched diagonally.]*\nI. The angle of the sector $OAB$ is $60^{\\circ}$.\nII. The area of the sector $OAB$ is $11 \\pi \\mathrm{cm}^{2}$.\nIII. The perimeter of the sector $OCD$ is $13 \\pi \\mathrm{cm}$.\n\n- A. I only\n- B. II only\n- C. I and III only\n- D. II and III only",
    "html": "<p>In the figure, $OAB$ and $OCD$ are sectors with centre $O$, where $OA=33 \\text{ cm}$ and $OC=39 \\text{ cm}$. The area of the shaded region $ABDC$ is $72 \\pi \\mathrm{cm}^{2}$. Which of the following is/are true?\n<img alt=\"Figure Q19 (as printed)\" src=\"2016P2_figs/Q19.png\" />\n<em>[FIGURE Q19: Figure shows a shaded quadrilateral ABCD with point O. Lines OA, OB, OC, OD are drawn. No angles or units printed. No dashed lines or right-angle marks. Shading is hatched diagonally.]</em>\nI. The angle of the sector $OAB$ is $60^{\\circ}$.\nII. The area of the sector $OAB$ is $11 \\pi \\mathrm{cm}^{2}$.\nIII. The perimeter of the sector $OCD$ is $13 \\pi \\mathrm{cm}$.</p>\n<ul>\n<li>A. I only</li>\n<li>B. II only</li>\n<li>C. I and III only</li>\n<li>D. II and III only</li>\n</ul>",
    "file": "2016_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 59
   },
   {
    "subject": "數學",
@@ -16164,7 +16515,8 @@ window.QB = {
    "text": "圖中，$ABCD$、$CDEF$ 及 $EFGH$ 均為正方形。$AG$ 分別與 $CD$ 及 $EF$ 相交於 $P$ 及 $Q$。求四邊形 $DEQP$ 的面積與四邊形 $ABCP$ 的面積之比。\n\n\n![Figure Q20 (as printed)](2016P2_zh_figs/Q20.png)\n\n- A. $1:2$\n- B. $2:3$\n- C. $3:5$\n- D. $4:9$",
    "html": "<p>圖中，$ABCD$、$CDEF$ 及 $EFGH$ 均為正方形。$AG$ 分別與 $CD$ 及 $EF$ 相交於 $P$ 及 $Q$。求四邊形 $DEQP$ 的面積與四邊形 $ABCP$ 的面積之比。</p>\n<p><img alt=\"Figure Q20 (as printed)\" src=\"2016P2_zh_figs/Q20.png\" /></p>\n<ul>\n<li>A. $1:2$</li>\n<li>B. $2:3$</li>\n<li>C. $3:5$</li>\n<li>D. $4:9$</li>\n</ul>",
    "file": "2016_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 51
   },
   {
    "subject": "數學",
@@ -16181,7 +16533,8 @@ window.QB = {
    "text": "In the figure, $ABCD$, $CDEF$ and $EFGH$ are squares. $AG$ cuts $CD$ and $EF$ at $P$ and $Q$ respectively. Find the ratio of the area of quadrilateral $DEQP$ to the area of quadrilateral $ABCP$.\n![Figure Q20 (as printed)](2016P2_figs/Q20.png)\n*[FIGURE Q20: Rectangular grid with labeled vertices A, B, C, D, E, F, G, H, and points P, Q on segments. No numbers, angles, dashed lines, or shading. Right-angle marks at corners.]*\n\n- A. $1:2$\n- B. $2:3$\n- C. $3:5$\n- D. $4:9$",
    "html": "<p>In the figure, $ABCD$, $CDEF$ and $EFGH$ are squares. $AG$ cuts $CD$ and $EF$ at $P$ and $Q$ respectively. Find the ratio of the area of quadrilateral $DEQP$ to the area of quadrilateral $ABCP$.\n<img alt=\"Figure Q20 (as printed)\" src=\"2016P2_figs/Q20.png\" />\n<em>[FIGURE Q20: Rectangular grid with labeled vertices A, B, C, D, E, F, G, H, and points P, Q on segments. No numbers, angles, dashed lines, or shading. Right-angle marks at corners.]</em></p>\n<ul>\n<li>A. $1:2$</li>\n<li>B. $2:3$</li>\n<li>C. $3:5$</li>\n<li>D. $4:9$</li>\n</ul>",
    "file": "2016_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 51
   },
   {
    "subject": "數學",
@@ -16197,7 +16550,8 @@ window.QB = {
    "text": "圖中，$AD=$\n\n\n![Figure Q21 (as printed)](2016P2_zh_figs/Q21.png)\n\n- A. $AB\\cos a + BC\\cos c$\n- B. $AB\\cos a + BC\\sin c$\n- C. $AB\\sin a + BC\\cos c$\n- D. $AB\\sin a + BC\\sin c$",
    "html": "<p>圖中，$AD=$</p>\n<p><img alt=\"Figure Q21 (as printed)\" src=\"2016P2_zh_figs/Q21.png\" /></p>\n<ul>\n<li>A. $AB\\cos a + BC\\cos c$</li>\n<li>B. $AB\\cos a + BC\\sin c$</li>\n<li>C. $AB\\sin a + BC\\cos c$</li>\n<li>D. $AB\\sin a + BC\\sin c$</li>\n</ul>",
    "file": "2016_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 57
   },
   {
    "subject": "數學",
@@ -16213,7 +16567,8 @@ window.QB = {
    "text": "In the figure, $AD=$\n![Figure Q21 (as printed)](2016P2_figs/Q21.png)\n*[FIGURE Q21: Right-angled figure with points A, B, C, D. Segments labeled 'a' and 'c'. Right-angle marks at D. No shading or dashed lines. No angle units printed.]*\n\n- A. $AB\\cos a + BC\\cos c$\n- B. $AB\\cos a + BC\\sin c$\n- C. $AB\\sin a + BC\\cos c$\n- D. $AB\\sin a + BC\\sin c$",
    "html": "<p>In the figure, $AD=$\n<img alt=\"Figure Q21 (as printed)\" src=\"2016P2_figs/Q21.png\" />\n<em>[FIGURE Q21: Right-angled figure with points A, B, C, D. Segments labeled 'a' and 'c'. Right-angle marks at D. No shading or dashed lines. No angle units printed.]</em></p>\n<ul>\n<li>A. $AB\\cos a + BC\\cos c$</li>\n<li>B. $AB\\cos a + BC\\sin c$</li>\n<li>C. $AB\\sin a + BC\\cos c$</li>\n<li>D. $AB\\sin a + BC\\sin c$</li>\n</ul>",
    "file": "2016_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 57
   },
   {
    "subject": "數學",
@@ -16230,7 +16585,8 @@ window.QB = {
    "text": "圖中，$ABCD$ 為一菱形。$C$ 為圓 $BDE$ 的圓心且 $ADE$ 為一直線。$BE$ 與 $CD$ 相交於 $F$。若 $\\angle ADC = 118^\\circ$，則 $\\angle DFE=$\n\n\n![Figure Q22 (as printed)](2016P2_zh_figs/Q22.png)\n\n- A. $59^\\circ$\n- B. $62^\\circ$\n- C. $78^\\circ$\n- D. $87^\\circ$",
    "html": "<p>圖中，$ABCD$ 為一菱形。$C$ 為圓 $BDE$ 的圓心且 $ADE$ 為一直線。$BE$ 與 $CD$ 相交於 $F$。若 $\\angle ADC = 118^\\circ$，則 $\\angle DFE=$</p>\n<p><img alt=\"Figure Q22 (as printed)\" src=\"2016P2_zh_figs/Q22.png\" /></p>\n<ul>\n<li>A. $59^\\circ$</li>\n<li>B. $62^\\circ$</li>\n<li>C. $78^\\circ$</li>\n<li>D. $87^\\circ$</li>\n</ul>",
    "file": "2016_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 54
   },
   {
    "subject": "數學",
@@ -16247,7 +16603,8 @@ window.QB = {
    "text": "In the figure, $ABCD$ is a rhombus. $C$ is the centre of the circle $BDE$ and $ADE$ is a straight line. $BE$ and $CD$ intersect at $F$. If $\\angle ADC =118^\\circ$, then $\\angle DFE=$\n![Figure Q22 (as printed)](2016P2_figs/Q22.png)\n*[FIGURE Q22: Circle diagram with labeled points A, B, C, D, E, F. No angles or numbers shown. No dashed lines, right-angle marks, or shading. Lines connect labeled points forming chords and secants.]*\n\n- A. $59^\\circ$\n- B. $62^\\circ$\n- C. $78^\\circ$\n- D. $87^\\circ$",
    "html": "<p>In the figure, $ABCD$ is a rhombus. $C$ is the centre of the circle $BDE$ and $ADE$ is a straight line. $BE$ and $CD$ intersect at $F$. If $\\angle ADC =118^\\circ$, then $\\angle DFE=$\n<img alt=\"Figure Q22 (as printed)\" src=\"2016P2_figs/Q22.png\" />\n<em>[FIGURE Q22: Circle diagram with labeled points A, B, C, D, E, F. No angles or numbers shown. No dashed lines, right-angle marks, or shading. Lines connect labeled points forming chords and secants.]</em></p>\n<ul>\n<li>A. $59^\\circ$</li>\n<li>B. $62^\\circ$</li>\n<li>C. $78^\\circ$</li>\n<li>D. $87^\\circ$</li>\n</ul>",
    "file": "2016_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 54
   },
   {
    "subject": "數學",
@@ -16264,7 +16621,8 @@ window.QB = {
    "text": "下面的圖形包含八個完全相同的正六邊形。該圖形的反射對稱軸的數目為\n\n\n![Figure Q23 (as printed)](2016P2_zh_figs/Q23.png)\n\n- A. 2\n- B. 4\n- C. 6\n- D. 8",
    "html": "<p>下面的圖形包含八個完全相同的正六邊形。該圖形的反射對稱軸的數目為</p>\n<p><img alt=\"Figure Q23 (as printed)\" src=\"2016P2_zh_figs/Q23.png\" /></p>\n<ul>\n<li>A. 2</li>\n<li>B. 4</li>\n<li>C. 6</li>\n<li>D. 8</li>\n</ul>",
    "file": "2016_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 82
   },
   {
    "subject": "數學",
@@ -16281,7 +16639,8 @@ window.QB = {
    "text": "The figure below consists of eight identical regular hexagons. The number of axes of reflectional symmetry of the figure is\n![Figure Q23 (as printed)](2016P2_figs/Q23.png)\n*[FIGURE Q23: Hexagonal grid pattern with no labels, numbers, angles, dashed lines, or shading. All hexagons are identical, outlined in black, arranged in a tessellated, staggered formation.]*\n\n- A. 2\n- B. 4\n- C. 6\n- D.",
    "html": "<p>The figure below consists of eight identical regular hexagons. The number of axes of reflectional symmetry of the figure is\n<img alt=\"Figure Q23 (as printed)\" src=\"2016P2_figs/Q23.png\" />\n<em>[FIGURE Q23: Hexagonal grid pattern with no labels, numbers, angles, dashed lines, or shading. All hexagons are identical, outlined in black, arranged in a tessellated, staggered formation.]</em></p>\n<ul>\n<li>A. 2</li>\n<li>B. 4</li>\n<li>C. 6</li>\n<li>D.</li>\n</ul>",
    "file": "2016_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 82
   },
   {
    "subject": "數學",
@@ -16297,7 +16656,8 @@ window.QB = {
    "text": "若一正 $n$ 邊形的內角和為 $3240^\\circ$ ，則下列何者正確？\n\n- A. $n$ 的值為 $16$ 。\n- B. 該多邊形的每一外角均為 $18^\\circ$ 。\n- C. 該多邊形的對角線數目為 $20$ 。\n- D. 該多邊形的每一內角均為 $160^\\circ$ 。",
    "html": "<p>若一正 $n$ 邊形的內角和為 $3240^\\circ$ ，則下列何者正確？</p>\n<ul>\n<li>A. $n$ 的值為 $16$ 。</li>\n<li>B. 該多邊形的每一外角均為 $18^\\circ$ 。</li>\n<li>C. 該多邊形的對角線數目為 $20$ 。</li>\n<li>D. 該多邊形的每一內角均為 $160^\\circ$ 。</li>\n</ul>",
    "file": "2016_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 64
   },
   {
    "subject": "數學",
@@ -16313,7 +16673,8 @@ window.QB = {
    "text": "If the sum of the interior angles of a regular $n$-sided polygon is $3240^\\circ$, which of the following is true?\n\n- A. The value of $n$ is 16.\n- B. Each exterior angle of the polygon is $18^\\circ$.\n- C. The number of diagonals of the polygon is 20.\n- D. Each interior angle of the polygon is $160^\\circ$.",
    "html": "<p>If the sum of the interior angles of a regular $n$-sided polygon is $3240^\\circ$, which of the following is true?</p>\n<ul>\n<li>A. The value of $n$ is 16.</li>\n<li>B. Each exterior angle of the polygon is $18^\\circ$.</li>\n<li>C. The number of diagonals of the polygon is 20.</li>\n<li>D. Each interior angle of the polygon is $160^\\circ$.</li>\n</ul>",
    "file": "2016_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 64
   },
   {
    "subject": "數學",
@@ -16329,7 +16690,8 @@ window.QB = {
    "text": "若直線 $hx+ky+15=0$ 與直線 $4x+3y-5=0$ 互相垂直且相交於 $x$ 軸上的一點，則 $k=$\n\n- A. $-12$ 。\n- B. $-4$ 。\n- C. $3$ 。\n- D. $16$ 。",
    "html": "<p>若直線 $hx+ky+15=0$ 與直線 $4x+3y-5=0$ 互相垂直且相交於 $x$ 軸上的一點，則 $k=$</p>\n<ul>\n<li>A. $-12$ 。</li>\n<li>B. $-4$ 。</li>\n<li>C. $3$ 。</li>\n<li>D. $16$ 。</li>\n</ul>",
    "file": "2016_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 35
   },
   {
    "subject": "數學",
@@ -16345,7 +16707,8 @@ window.QB = {
    "text": "If the straight lines $hx + ky + 15 =0$ and $4x + 3y - 5 =0$ are perpendicular to each other and intersect at a point on the $x$-axis, then $k =$\n\n- A. $-12$.\n- B. $-4$.\n- C. $3$.\n- D. $16$.",
    "html": "<p>If the straight lines $hx + ky + 15 =0$ and $4x + 3y - 5 =0$ are perpendicular to each other and intersect at a point on the $x$-axis, then $k =$</p>\n<ul>\n<li>A. $-12$.</li>\n<li>B. $-4$.</li>\n<li>C. $3$.</li>\n<li>D. $16$.</li>\n</ul>",
    "file": "2016_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 35
   },
   {
    "subject": "數學",
@@ -16362,7 +16725,8 @@ window.QB = {
    "text": "點 $A$ 及點 $B$ 的坐標分別為 $(9,-2)$ 及 $(-1,8)$ 。若 $C$ 為直線 $x-2y=0$ 上的一點使得 $AC=BC$ ，則 $C$ 的 $x$ 坐標為\n\n- A. $1$ 。\n- B. $2$ 。\n- C. $3$ 。\n- D. $4$ 。",
    "html": "<p>點 $A$ 及點 $B$ 的坐標分別為 $(9,-2)$ 及 $(-1,8)$ 。若 $C$ 為直線 $x-2y=0$ 上的一點使得 $AC=BC$ ，則 $C$ 的 $x$ 坐標為</p>\n<ul>\n<li>A. $1$ 。</li>\n<li>B. $2$ 。</li>\n<li>C. $3$ 。</li>\n<li>D. $4$ 。</li>\n</ul>",
    "file": "2016_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 37
   },
   {
    "subject": "數學",
@@ -16379,7 +16743,8 @@ window.QB = {
    "text": "The coordinates of the points $A$ and $B$ are $(9, -2)$ and $(-1, 8)$ respectively. If $C$ is a point lying on the straight line $x - 2y =0$ such that $AC = BC$, then the $x$-coordinate of $C$ is\n\n- A. $1$.\n- B. $2$.\n- C. $3$.\n- D. $4$.",
    "html": "<p>The coordinates of the points $A$ and $B$ are $(9, -2)$ and $(-1, 8)$ respectively. If $C$ is a point lying on the straight line $x - 2y =0$ such that $AC = BC$, then the $x$-coordinate of $C$ is</p>\n<ul>\n<li>A. $1$.</li>\n<li>B. $2$.</li>\n<li>C. $3$.</li>\n<li>D. $4$.</li>\n</ul>",
    "file": "2016_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 37
   },
   {
    "subject": "數學",
@@ -16396,7 +16761,8 @@ window.QB = {
    "text": "圓 $C$ 的方程為 $3x^2+3y^2-12x+30y+65=0$ 。下列何者正確？\nI. $C$ 的半徑為 $14$ 。\nII. 原點位於 $C$ 以外。\nIII. $C$ 的圓心的坐標為 $(2,-5)$ 。\n\n- A. 只有 I 及 II\n- B. 只有 I 及 III\n- C. 只有 II 及 III\n- D. I 、 II 及 III",
    "html": "<p>圓 $C$ 的方程為 $3x^2+3y^2-12x+30y+65=0$ 。下列何者正確？\nI. $C$ 的半徑為 $14$ 。\nII. 原點位於 $C$ 以外。\nIII. $C$ 的圓心的坐標為 $(2,-5)$ 。</p>\n<ul>\n<li>A. 只有 I 及 II</li>\n<li>B. 只有 I 及 III</li>\n<li>C. 只有 II 及 III</li>\n<li>D. I 、 II 及 III</li>\n</ul>",
    "file": "2016_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 56
   },
   {
    "subject": "數學",
@@ -16413,7 +16779,8 @@ window.QB = {
    "text": "The equation of the circle $C$ is $3x^2 + 3y^2 - 12x + 30y + 65 =0$. Which of the following are true?\nI. The radius of $C$ is $14$.\nII. The origin lies outside $C$.\nIII. The coordinates of the centre of $C$ are $(2, -5)$.\n\n- A. I and II only.\n- B. I and III only.\n- C. II and III only.\n- D. I, II and III.",
    "html": "<p>The equation of the circle $C$ is $3x^2 + 3y^2 - 12x + 30y + 65 =0$. Which of the following are true?\nI. The radius of $C$ is $14$.\nII. The origin lies outside $C$.\nIII. The coordinates of the centre of $C$ are $(2, -5)$.</p>\n<ul>\n<li>A. I and II only.</li>\n<li>B. I and III only.</li>\n<li>C. II and III only.</li>\n<li>D. I, II and III.</li>\n</ul>",
    "file": "2016_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 56
   },
   {
    "subject": "數學",
@@ -16429,7 +16796,8 @@ window.QB = {
    "text": "潔儀的口袋內有一個 \\$1 硬幣、一個 \\$2 硬幣、一個 \\$5 硬幣及一個 \\$10 硬幣。若潔儀從她的口袋中隨機取出三個硬幣，求她取得至少 \\$13 的概率。\n\n- A. $\\frac{1}{2}$\n- B. $\\frac{1}{4}$\n- C. $\\frac{3}{4}$\n- D. $\\frac{23}{24}$",
    "html": "<p>潔儀的口袋內有一個 \\$1 硬幣、一個 \\$2 硬幣、一個 \\$5 硬幣及一個 \\$10 硬幣。若潔儀從她的口袋中隨機取出三個硬幣，求她取得至少 \\$13 的概率。</p>\n<ul>\n<li>A. $\\frac{1}{2}$</li>\n<li>B. $\\frac{1}{4}$</li>\n<li>C. $\\frac{3}{4}$</li>\n<li>D. $\\frac{23}{24}$</li>\n</ul>",
    "file": "2016_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 58
   },
   {
    "subject": "數學",
@@ -16445,7 +16813,8 @@ window.QB = {
    "text": "Christine has one \\$1 coin, one \\$2 coin, one \\$5 coin and one \\$10 coin in her pocket. If Christine takes out three coins randomly from her pocket, find the probability that the total value of the three coins taken out is $\\$11$.\n\n- A. $\\dfrac{1}{2}$\n- B. $\\dfrac{1}{4}$\n- C. $\\dfrac{3}{4}$\n- D. $\\dfrac{23}{24}$",
    "html": "<p>Christine has one \\$1 coin, one \\$2 coin, one \\$5 coin and one \\$10 coin in her pocket. If Christine takes out three coins randomly from her pocket, find the probability that the total value of the three coins taken out is $\\$11$.</p>\n<ul>\n<li>A. $\\dfrac{1}{2}$</li>\n<li>B. $\\dfrac{1}{4}$</li>\n<li>C. $\\dfrac{3}{4}$</li>\n<li>D. $\\dfrac{23}{24}$</li>\n</ul>",
    "file": "2016_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 58
   },
   {
    "subject": "數學",
@@ -16461,7 +16830,8 @@ window.QB = {
    "text": "某袋子內有 1 個紅球、3 個黃球及 6 個白球。在一幸運抽獎中，從該袋子內隨機抽出一個球，並將根據下表獲得若干個代幣：\n\n:::stemleaf\n所抽出的球的顏色 | 紅 | 黃 | 白\n所獲代幣的數目 | 90 | 20 | 10\n:::\n\n求在該幸運抽獎中所獲代幣的數目的期望值。\n\n\n![Figure Q29 (as printed)](2016P2_zh_figs/Q29.png)\n\n- A. 10\n- B. 21\n- C. 40\n- D. 61",
    "html": "<p>某袋子內有 1 個紅球、3 個黃球及 6 個白球。在一幸運抽獎中，從該袋子內隨機抽出一個球，並將根據下表獲得若干個代幣：</p>\n<p>:::stemleaf\n所抽出的球的顏色 | 紅 | 黃 | 白\n所獲代幣的數目 | 90 | 20 | 10\n:::</p>\n<p>求在該幸運抽獎中所獲代幣的數目的期望值。</p>\n<p><img alt=\"Figure Q29 (as printed)\" src=\"2016P2_zh_figs/Q29.png\" /></p>\n<ul>\n<li>A. 10</li>\n<li>B. 21</li>\n<li>C. 40</li>\n<li>D. 61</li>\n</ul>",
    "file": "2016_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 69
   },
   {
    "subject": "數學",
@@ -16477,7 +16847,8 @@ window.QB = {
    "text": "A bag contains 1 red ball, 3 yellow balls and 6 white balls. In a lucky draw, a ball is randomly drawn from the bag and a certain number of tokens will be got according to the following table:\n\n| Colour of the ball drawn | Red | Yellow | White |\n|--------------------------|-----|--------|-------|\n| Number of tokens got     | 90  | 20     | 10    |\n\nFind the expected number of tokens got in the lucky draw.\n\n- A. \n- B. 21\n- C. 40\n- D. 61",
    "html": "<p>A bag contains 1 red ball, 3 yellow balls and 6 white balls. In a lucky draw, a ball is randomly drawn from the bag and a certain number of tokens will be got according to the following table:</p>\n<table>\n<thead>\n<tr>\n<th>Colour of the ball drawn</th>\n<th>Red</th>\n<th>Yellow</th>\n<th>White</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Number of tokens got</td>\n<td>90</td>\n<td>20</td>\n<td>10</td>\n</tr>\n</tbody>\n</table>\n<p>Find the expected number of tokens got in the lucky draw.</p>\n<ul>\n<li>A. </li>\n<li>B. 21</li>\n<li>C. 40</li>\n<li>D. 61</li>\n</ul>",
    "file": "2016_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 69
   },
   {
    "subject": "數學",
@@ -16493,7 +16864,8 @@ window.QB = {
    "text": "考慮以下數據：\n\n\n\n32   68   79   86   88   98   98   a   b   c\n\n\n\n若以上數據的平均值及眾數分別為 77 及 68 ，則以上數據的中位數為\n\n- A. 76\n- B. 82\n- C. 85\n- D. 93 乙部",
    "html": "<p>考慮以下數據：</p>\n<p>32   68   79   86   88   98   98   a   b   c</p>\n<p>若以上數據的平均值及眾數分別為 77 及 68 ，則以上數據的中位數為</p>\n<ul>\n<li>A. 76</li>\n<li>B. 82</li>\n<li>C. 85</li>\n<li>D. 93 乙部</li>\n</ul>",
    "file": "2016_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 76
   },
   {
    "subject": "數學",
@@ -16509,7 +16881,8 @@ window.QB = {
    "text": "Consider the following data:\n32 68 79 86 88 98 98 a b c\nIf the mean and the mode of the above data are 77 and 68 respectively, then the median of the above data is\n\n- A. 76\n- B. 82\n- C. 85\n- D. 93",
    "html": "<p>Consider the following data:\n32 68 79 86 88 98 98 a b c\nIf the mean and the mode of the above data are 77 and 68 respectively, then the median of the above data is</p>\n<ul>\n<li>A. 76</li>\n<li>B. 82</li>\n<li>C. 85</li>\n<li>D. 93</li>\n</ul>",
    "file": "2016_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 76
   },
   {
    "subject": "數學",
@@ -16525,7 +16898,8 @@ window.QB = {
    "text": "$9a^2b$、$12a^4b^3$ 及 $15a^6$ 的 L.C.M. 為\n\n- A. $3a^2$\n- B. $3a^2b$\n- C. $180a^6b^3$\n- D. $180a^{12}b^4$",
    "html": "<p>$9a^2b$、$12a^4b^3$ 及 $15a^6$ 的 L.C.M. 為</p>\n<ul>\n<li>A. $3a^2$</li>\n<li>B. $3a^2b$</li>\n<li>C. $180a^6b^3$</li>\n<li>D. $180a^{12}b^4$</li>\n</ul>",
    "file": "2016_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 61
   },
   {
    "subject": "數學",
@@ -16541,7 +16915,8 @@ window.QB = {
    "text": "The L.C.M. of $9a^2b$, $12a^4b^3$ and $15a^6$ is\n\n- A. $3a^2$.\n- B. $3a^2b$.\n- C. $180a^6b^3$.\n- D. $180a^{12}b^4$.",
    "html": "<p>The L.C.M. of $9a^2b$, $12a^4b^3$ and $15a^6$ is</p>\n<ul>\n<li>A. $3a^2$.</li>\n<li>B. $3a^2b$.</li>\n<li>C. $180a^6b^3$.</li>\n<li>D. $180a^{12}b^4$.</li>\n</ul>",
    "file": "2016_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 61
   },
   {
    "subject": "數學",
@@ -16558,7 +16933,8 @@ window.QB = {
    "text": "圖中的圖像顯示 $x$ 與 $\\log_9y$ 之間的線性關係。若 $y=ab^x$，則 $b=$\n\n\n![Figure Q32 (as printed)](2016P2_zh_figs/Q32.png)\n\n- A. $-2$\n- B. $\\frac{1}{81}$\n- C. $\\frac{1}{2}$\n- D. $3$",
    "html": "<p>圖中的圖像顯示 $x$ 與 $\\log_9y$ 之間的線性關係。若 $y=ab^x$，則 $b=$</p>\n<p><img alt=\"Figure Q32 (as printed)\" src=\"2016P2_zh_figs/Q32.png\" /></p>\n<ul>\n<li>A. $-2$</li>\n<li>B. $\\frac{1}{81}$</li>\n<li>C. $\\frac{1}{2}$</li>\n<li>D. $3$</li>\n</ul>",
    "file": "2016_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 40
   },
   {
    "subject": "數學",
@@ -16575,7 +16951,8 @@ window.QB = {
    "text": "The graph in the figure shows the linear relation between $x$ and $\\log_9y$. If $y=ab^x$, then $b=$\n![Figure Q32 (as printed)](2016P2_figs/Q32.png)\n*[FIGURE Q32: Cartesian coordinate system graph with x-axis and y-axis labeled. y-axis labeled \"log₉ y\". Points marked: (4, 4) and (0, -2). No dashed lines, right-angle marks, or shading.]*\n\n- A. $-2$.\n- B. $\\dfrac{1}{81}$.\n- C. $\\dfrac{1}{2}$.\n- D. $3$.",
    "html": "<p>The graph in the figure shows the linear relation between $x$ and $\\log_9y$. If $y=ab^x$, then $b=$\n<img alt=\"Figure Q32 (as printed)\" src=\"2016P2_figs/Q32.png\" />\n<em>[FIGURE Q32: Cartesian coordinate system graph with x-axis and y-axis labeled. y-axis labeled \"log₉ y\". Points marked: (4, 4) and (0, -2). No dashed lines, right-angle marks, or shading.]</em></p>\n<ul>\n<li>A. $-2$.</li>\n<li>B. $\\dfrac{1}{81}$.</li>\n<li>C. $\\dfrac{1}{2}$.</li>\n<li>D. $3$.</li>\n</ul>",
    "file": "2016_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 40
   },
   {
    "subject": "數學",
@@ -16591,7 +16968,8 @@ window.QB = {
    "text": "BC000DE000000_{16} =\n\n- A. $188 \\times 16^{11} + 222 \\times 16^6$\n- B. $205 \\times 16^{11} + 239 \\times 16^6$\n- C. $188 \\times 16^{12} + 222 \\times 16^7$\n- D. $205 \\times 16^{12} + 239 \\times 16^7$",
    "html": "<p>BC000DE000000_{16} =</p>\n<ul>\n<li>A. $188 \\times 16^{11} + 222 \\times 16^6$</li>\n<li>B. $205 \\times 16^{11} + 239 \\times 16^6$</li>\n<li>C. $188 \\times 16^{12} + 222 \\times 16^7$</li>\n<li>D. $205 \\times 16^{12} + 239 \\times 16^7$</li>\n</ul>",
    "file": "2016_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 43
   },
   {
    "subject": "數學",
@@ -16607,7 +16985,8 @@ window.QB = {
    "text": "BC000DE000000$_{16}=$\n\n- A. $188 \\times 16^{11} + 222 \\times 16^6$.\n- B. $205 \\times 16^{11} + 239 \\times 16^6$.\n- C. $188 \\times 16^{12} + 222 \\times 16^7$.\n- D. $205 \\times 16^{12} + 239 \\times 16^7$. Go on to the next page",
    "html": "<p>BC000DE000000$_{16}=$</p>\n<ul>\n<li>A. $188 \\times 16^{11} + 222 \\times 16^6$.</li>\n<li>B. $205 \\times 16^{11} + 239 \\times 16^6$.</li>\n<li>C. $188 \\times 16^{12} + 222 \\times 16^7$.</li>\n<li>D. $205 \\times 16^{12} + 239 \\times 16^7$. Go on to the next page</li>\n</ul>",
    "file": "2016_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 43
   },
   {
    "subject": "數學",
@@ -16624,7 +17003,8 @@ window.QB = {
    "text": "設 $u=\\frac{7}{a+i}$ 及 $v=\\frac{7}{a-i}$ ，其中 $a$ 為一實數。下列何者必為正確？\nI. $uv$ 為一有理數。\nII. $u$ 的實部等於 $v$ 的實部。\nIII. $\\frac{1}{u}$ 的虛部等於 $\\frac{1}{v}$ 的虛部。\n\n\n![Figure Q34 (as printed)](2016P2_zh_figs/Q34.png)\n\n- A. 只有 I\n- B. 只有 II\n- C. 只有 I 及 III\n- D. 只有 II 及 III",
    "html": "<p>設 $u=\\frac{7}{a+i}$ 及 $v=\\frac{7}{a-i}$ ，其中 $a$ 為一實數。下列何者必為正確？\nI. $uv$ 為一有理數。\nII. $u$ 的實部等於 $v$ 的實部。\nIII. $\\frac{1}{u}$ 的虛部等於 $\\frac{1}{v}$ 的虛部。</p>\n<p><img alt=\"Figure Q34 (as printed)\" src=\"2016P2_zh_figs/Q34.png\" /></p>\n<ul>\n<li>A. 只有 I</li>\n<li>B. 只有 II</li>\n<li>C. 只有 I 及 III</li>\n<li>D. 只有 II 及 III</li>\n</ul>",
    "file": "2016_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 38
   },
   {
    "subject": "數學",
@@ -16641,7 +17021,8 @@ window.QB = {
    "text": "Let $u=\\dfrac{7}{a+i}$ and $v=\\dfrac{7}{a-i}$, where $a$ is a real number. Which of the following must be true?\nI. $uv$ is a rational number.\nII. The real part of $u$ is equal to the real part of $v$.\nIII. The imaginary part of $\\dfrac{1}{u}$ is equal to the imaginary part of $\\dfrac{1}{v}$.\n\n- A. I only\n- B. II only\n- C. I and III only\n- D. II and III only",
    "html": "<p>Let $u=\\dfrac{7}{a+i}$ and $v=\\dfrac{7}{a-i}$, where $a$ is a real number. Which of the following must be true?\nI. $uv$ is a rational number.\nII. The real part of $u$ is equal to the real part of $v$.\nIII. The imaginary part of $\\dfrac{1}{u}$ is equal to the imaginary part of $\\dfrac{1}{v}$.</p>\n<ul>\n<li>A. I only</li>\n<li>B. II only</li>\n<li>C. I and III only</li>\n<li>D. II and III only</li>\n</ul>",
    "file": "2016_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 38
   },
   {
    "subject": "數學",
@@ -16658,7 +17039,8 @@ window.QB = {
    "text": "圖中，$PQ$ 及 $SR$ 均平行於 $x$ 軸。若 $(x,y)$ 為陰影區域 $PQRS$ （包括邊界在內）中的一點，則 $7y-5x+3$ 於哪一點達至其最大值？\n\n- A. $P$\n- B. $Q$\n- C. $R$\n- D. $S$",
    "html": "<p>圖中，$PQ$ 及 $SR$ 均平行於 $x$ 軸。若 $(x,y)$ 為陰影區域 $PQRS$ （包括邊界在內）中的一點，則 $7y-5x+3$ 於哪一點達至其最大值？</p>\n<ul>\n<li>A. $P$</li>\n<li>B. $Q$</li>\n<li>C. $R$</li>\n<li>D. $S$</li>\n</ul>",
    "file": "2016_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 47
   },
   {
    "subject": "數學",
@@ -16675,7 +17057,8 @@ window.QB = {
    "text": "In the figure, $PQ$ and $SR$ are parallel to the $x$-axis. If $(x, y)$ is a point lying in the shaded region $PQRS$ (including the boundary), at which point does $7y-5x+3$ attain its greatest value?\n![Figure Q35 (as printed)](2016P2_figs/Q35.png)\n*[FIGURE Q35: Cartesian coordinate system with axes labeled x and y. Points O, P, Q, R, S labeled. Lines from (0,24) to (24,0) and (0,0) to (24,24) intersecting. Shaded quadrilateral PQRS. Grid lines at y=6, y=12, y=24.]*\n\n- A. $P$\n- B. $Q$\n- C. $R$\n- D. $S$",
    "html": "<p>In the figure, $PQ$ and $SR$ are parallel to the $x$-axis. If $(x, y)$ is a point lying in the shaded region $PQRS$ (including the boundary), at which point does $7y-5x+3$ attain its greatest value?\n<img alt=\"Figure Q35 (as printed)\" src=\"2016P2_figs/Q35.png\" />\n<em>[FIGURE Q35: Cartesian coordinate system with axes labeled x and y. Points O, P, Q, R, S labeled. Lines from (0,24) to (24,0) and (0,0) to (24,24) intersecting. Shaded quadrilateral PQRS. Grid lines at y=6, y=12, y=24.]</em></p>\n<ul>\n<li>A. $P$</li>\n<li>B. $Q$</li>\n<li>C. $R$</li>\n<li>D. $S$</li>\n</ul>",
    "file": "2016_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 47
   },
   {
    "subject": "數學",
@@ -16692,7 +17075,8 @@ window.QB = {
    "text": "設 $a_n$ 為一等比數列的第 $n$ 項。若 $a_3=21$ 及 $a_7=189$ ，則下列何者必為正確？\nI. 該數列的公比小於 1 。\nII. 該數列的某些項為無理數。\nIII. 該數列的首 99 項之和大於 $3 \\times 10^{24}$ 。\n\n- A. 只有 I\n- B. 只有 II\n- C. 只有 I 及 III\n- D. 只有 II 及 III",
    "html": "<p>設 $a_n$ 為一等比數列的第 $n$ 項。若 $a_3=21$ 及 $a_7=189$ ，則下列何者必為正確？\nI. 該數列的公比小於 1 。\nII. 該數列的某些項為無理數。\nIII. 該數列的首 99 項之和大於 $3 \\times 10^{24}$ 。</p>\n<ul>\n<li>A. 只有 I</li>\n<li>B. 只有 II</li>\n<li>C. 只有 I 及 III</li>\n<li>D. 只有 II 及 III</li>\n</ul>",
    "file": "2016_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 35
   },
   {
    "subject": "數學",
@@ -16709,7 +17093,8 @@ window.QB = {
    "text": "Let $a_n$ be the $n$th term of a geometric sequence. If $a_3=21$ and $a_7=189$, which of the following must be true?\nI. The common ratio of the sequence is less than 1.\nII. Some of the terms of the sequence are irrational numbers.\nIII. The sum of the first 99 terms of the sequence is greater than $3\\times 10^{24}$.\n\n- A. I only\n- B. II only\n- C. I and III only\n- D. II and III only",
    "html": "<p>Let $a_n$ be the $n$th term of a geometric sequence. If $a_3=21$ and $a_7=189$, which of the following must be true?\nI. The common ratio of the sequence is less than 1.\nII. Some of the terms of the sequence are irrational numbers.\nIII. The sum of the first 99 terms of the sequence is greater than $3\\times 10^{24}$.</p>\n<ul>\n<li>A. I only</li>\n<li>B. II only</li>\n<li>C. I and III only</li>\n<li>D. II and III only</li>\n</ul>",
    "file": "2016_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 35
   },
   {
    "subject": "數學",
@@ -16725,7 +17110,8 @@ window.QB = {
    "text": "設 $a$ 及 $b$ 均為常數。若圖中所示為 $y = a \\cos 2x^\\circ$ 的圖像，則\n\n\n![Figure Q37 (as printed)](2016P2_zh_figs/Q37.png)\n\n- A. $a = -2$ 及 $b = 90^\\circ$\n- B. $a = -2$ 及 $b = 360^\\circ$\n- C. $a = 2$ 及 $b = 90^\\circ$\n- D. $a = 2$ 及 $b = 360^\\circ$",
    "html": "<p>設 $a$ 及 $b$ 均為常數。若圖中所示為 $y = a \\cos 2x^\\circ$ 的圖像，則</p>\n<p><img alt=\"Figure Q37 (as printed)\" src=\"2016P2_zh_figs/Q37.png\" /></p>\n<ul>\n<li>A. $a = -2$ 及 $b = 90^\\circ$</li>\n<li>B. $a = -2$ 及 $b = 360^\\circ$</li>\n<li>C. $a = 2$ 及 $b = 90^\\circ$</li>\n<li>D. $a = 2$ 及 $b = 360^\\circ$</li>\n</ul>",
    "file": "2016_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 46
   },
   {
    "subject": "數學",
@@ -16741,7 +17127,8 @@ window.QB = {
    "text": "Let $a$ and $b$ be constants. If the figure shows the graph of $y = a \\cos 2x^\\circ$, then\n![Figure Q37 (as printed)](2016P2_figs/Q37.png)\n*[FIGURE Q37: Cartesian coordinate system graph with curve, labeled points O, b, and y=2. Dotted horizontal line at y=2. No angles, shading, or right-angle marks.]*\n\n- A. $a = -2$ and $b = 90$.\n- B. $a = -2$ and $b = 360$.\n- C. $a = 2$ and $b = 90$.\n- D. $a = 2$ and $b = 360$.",
    "html": "<p>Let $a$ and $b$ be constants. If the figure shows the graph of $y = a \\cos 2x^\\circ$, then\n<img alt=\"Figure Q37 (as printed)\" src=\"2016P2_figs/Q37.png\" />\n<em>[FIGURE Q37: Cartesian coordinate system graph with curve, labeled points O, b, and y=2. Dotted horizontal line at y=2. No angles, shading, or right-angle marks.]</em></p>\n<ul>\n<li>A. $a = -2$ and $b = 90$.</li>\n<li>B. $a = -2$ and $b = 360$.</li>\n<li>C. $a = 2$ and $b = 90$.</li>\n<li>D. $a = 2$ and $b = 360$.</li>\n</ul>",
    "file": "2016_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 46
   },
   {
    "subject": "數學",
@@ -16757,7 +17144,8 @@ window.QB = {
    "text": "當 $0^\\circ \\leq \\theta \\leq 360^\\circ$ 時，方程 $5 \\sin^2 \\theta + \\sin \\theta - 4 = 0$ 有多少個根？\n\n- A. 2\n- B. 3\n- C. 4\n- D. 5",
    "html": "<p>當 $0^\\circ \\leq \\theta \\leq 360^\\circ$ 時，方程 $5 \\sin^2 \\theta + \\sin \\theta - 4 = 0$ 有多少個根？</p>\n<ul>\n<li>A. 2</li>\n<li>B. 3</li>\n<li>C. 4</li>\n<li>D. 5</li>\n</ul>",
    "file": "2016_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 49
   },
   {
    "subject": "數學",
@@ -16773,7 +17161,8 @@ window.QB = {
    "text": "For $0^\\circ \\leq \\theta \\leq 360^\\circ$, how many roots does the equation $5 \\sin^2 \\theta + \\sin \\theta - 4 = 0$ have?\n\n- A. 2\n- B. 3\n- C. 4\n- D. 5",
    "html": "<p>For $0^\\circ \\leq \\theta \\leq 360^\\circ$, how many roots does the equation $5 \\sin^2 \\theta + \\sin \\theta - 4 = 0$ have?</p>\n<ul>\n<li>A. 2</li>\n<li>B. 3</li>\n<li>C. 4</li>\n<li>D. 5</li>\n</ul>",
    "file": "2016_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 49
   },
   {
    "subject": "數學",
@@ -16789,7 +17178,8 @@ window.QB = {
    "text": "圖中，$ABCDEFGH$ 為一長方體。$AC$ 與 $BD$ 相交於 $P$。$Q$ 為 $CH$ 上的一點使得 $CQ = 9 \\text{cm}$ 及 $QH = 15 \\text{cm}$。求 $\\sin \\angle PFQ$。\n\n\n![Figure Q39 (as printed)](2016P2_zh_figs/Q39.png)\n\n- A. $\\frac{33}{65}$\n- B. $\\frac{56}{65}$\n- C. $\\frac{13}{5\\sqrt{181}}$\n- D. $\\frac{58}{13\\sqrt{181}}$",
    "html": "<p>圖中，$ABCDEFGH$ 為一長方體。$AC$ 與 $BD$ 相交於 $P$。$Q$ 為 $CH$ 上的一點使得 $CQ = 9 \\text{cm}$ 及 $QH = 15 \\text{cm}$。求 $\\sin \\angle PFQ$。</p>\n<p><img alt=\"Figure Q39 (as printed)\" src=\"2016P2_zh_figs/Q39.png\" /></p>\n<ul>\n<li>A. $\\frac{33}{65}$</li>\n<li>B. $\\frac{56}{65}$</li>\n<li>C. $\\frac{13}{5\\sqrt{181}}$</li>\n<li>D. $\\frac{58}{13\\sqrt{181}}$</li>\n</ul>",
    "file": "2016_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 35
   },
   {
    "subject": "數學",
@@ -16805,7 +17195,8 @@ window.QB = {
    "text": "In the figure, $ABCDEFGH$ is a rectangular block. $AC$ and $BD$ intersect at $P$. $Q$ is a point lying on $CH$ such that $CQ = 9 \\text{ cm}$ and $QH = 15 \\text{ cm}$. Find $\\sin \\angle PFQ$.\n![Figure Q39 (as printed)](2016P2_figs/Q39.png)\n*[FIGURE Q39: Rectangular figure with labeled vertices A, B, C, D, E, F, G, H. Dimensions: AB=16 cm, BC=12 cm, CH=15 cm, CQ=9 cm. Dashed lines connect points. No shading or right-angle marks printed.]*\n\n- A. $\\dfrac{33}{65}$\n- B. $\\dfrac{56}{65}$\n- C. $\\dfrac{13}{5\\sqrt{181}}$\n- D. $\\dfrac{58}{13\\sqrt{181}}$",
    "html": "<p>In the figure, $ABCDEFGH$ is a rectangular block. $AC$ and $BD$ intersect at $P$. $Q$ is a point lying on $CH$ such that $CQ = 9 \\text{ cm}$ and $QH = 15 \\text{ cm}$. Find $\\sin \\angle PFQ$.\n<img alt=\"Figure Q39 (as printed)\" src=\"2016P2_figs/Q39.png\" />\n<em>[FIGURE Q39: Rectangular figure with labeled vertices A, B, C, D, E, F, G, H. Dimensions: AB=16 cm, BC=12 cm, CH=15 cm, CQ=9 cm. Dashed lines connect points. No shading or right-angle marks printed.]</em></p>\n<ul>\n<li>A. $\\dfrac{33}{65}$</li>\n<li>B. $\\dfrac{56}{65}$</li>\n<li>C. $\\dfrac{13}{5\\sqrt{181}}$</li>\n<li>D. $\\dfrac{58}{13\\sqrt{181}}$</li>\n</ul>",
    "file": "2016_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 35
   },
   {
    "subject": "數學",
@@ -16822,7 +17213,8 @@ window.QB = {
    "text": "圖中，$AC$ 為圓 $ABCD$ 的一直徑。$PB$ 及 $PD$ 均為該圓的切線。$AD$ 的延線與 $BC$ 的延線相交於 $Q$。若 $\\angle BPD=68^\\circ$，則 $\\angle AQB=$\n\n\n![Figure Q40 (as printed)](2016P2_zh_figs/Q40.png)\n\n- A. $22^\\circ$\n- B. $28^\\circ$\n- C. $32^\\circ$\n- D. $34^\\circ$",
    "html": "<p>圖中，$AC$ 為圓 $ABCD$ 的一直徑。$PB$ 及 $PD$ 均為該圓的切線。$AD$ 的延線與 $BC$ 的延線相交於 $Q$。若 $\\angle BPD=68^\\circ$，則 $\\angle AQB=$</p>\n<p><img alt=\"Figure Q40 (as printed)\" src=\"2016P2_zh_figs/Q40.png\" /></p>\n<ul>\n<li>A. $22^\\circ$</li>\n<li>B. $28^\\circ$</li>\n<li>C. $32^\\circ$</li>\n<li>D. $34^\\circ$</li>\n</ul>",
    "file": "2016_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 38
   },
   {
    "subject": "數學",
@@ -16839,7 +17231,8 @@ window.QB = {
    "text": "In the figure, $AC$ is a diameter of the circle $ABCD$. $PB$ and $PD$ are tangents to the circle. $AD$ produced and $BC$ produced meet at $Q$. If $\\angle BPD =68^\\circ$, then $\\angle AQB =$\n![Figure Q40 (as printed)](2016P2_figs/Q40.png)\n*[FIGURE Q40: Circle with points A, B, C, D on circumference. Chord AB, secant ADQ, tangent PC. Dashed lines AC, BC. No angles, no right-angle marks, no shading. Labels: A, B, C, D, P, Q, O.]*\n\n- A. $22^\\circ$.\n- B. $28^\\circ$.\n- C. $32^\\circ$.\n- D. $34^\\circ$.",
    "html": "<p>In the figure, $AC$ is a diameter of the circle $ABCD$. $PB$ and $PD$ are tangents to the circle. $AD$ produced and $BC$ produced meet at $Q$. If $\\angle BPD =68^\\circ$, then $\\angle AQB =$\n<img alt=\"Figure Q40 (as printed)\" src=\"2016P2_figs/Q40.png\" />\n<em>[FIGURE Q40: Circle with points A, B, C, D on circumference. Chord AB, secant ADQ, tangent PC. Dashed lines AC, BC. No angles, no right-angle marks, no shading. Labels: A, B, C, D, P, Q, O.]</em></p>\n<ul>\n<li>A. $22^\\circ$.</li>\n<li>B. $28^\\circ$.</li>\n<li>C. $32^\\circ$.</li>\n<li>D. $34^\\circ$.</li>\n</ul>",
    "file": "2016_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 38
   },
   {
    "subject": "數學",
@@ -16856,7 +17249,8 @@ window.QB = {
    "text": "直線 $2x-y-6=0$ 與圓 $x^2+y^2-8y-14=0$ 相交於 $P$ 及 $Q$。求 $PQ$ 的中點的 $y$ 坐標。\n\n- A. $-4$\n- B. $-2$\n- C. $2$\n- D. $4$",
    "html": "<p>直線 $2x-y-6=0$ 與圓 $x^2+y^2-8y-14=0$ 相交於 $P$ 及 $Q$。求 $PQ$ 的中點的 $y$ 坐標。</p>\n<ul>\n<li>A. $-4$</li>\n<li>B. $-2$</li>\n<li>C. $2$</li>\n<li>D. $4$</li>\n</ul>",
    "file": "2016_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 45
   },
   {
    "subject": "數學",
@@ -16873,7 +17267,8 @@ window.QB = {
    "text": "The straight line $2x - y - 6 =0$ and the circle $x^2 + y^2 - 8y - 14 =0$ intersect at $P$ and $Q$. Find the $y$-coordinate of the mid-point of $PQ$.\n\n- A. $-4$\n- B. $-2$\n- C. $2$\n- D. $4$",
    "html": "<p>The straight line $2x - y - 6 =0$ and the circle $x^2 + y^2 - 8y - 14 =0$ intersect at $P$ and $Q$. Find the $y$-coordinate of the mid-point of $PQ$.</p>\n<ul>\n<li>A. $-4$</li>\n<li>B. $-2$</li>\n<li>C. $2$</li>\n<li>D. $4$</li>\n</ul>",
    "file": "2016_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 45
   },
   {
    "subject": "數學",
@@ -16890,7 +17285,8 @@ window.QB = {
    "text": "某箱子內有 9 罐咖啡及 3 罐紅茶。若從該箱子中隨機取出 4 罐，求取出至少 2 罐紅茶的概率。\n\n- A. $\\frac{13}{55}$\n- B. $\\frac{21}{55}$\n- C. $\\frac{34}{55}$\n- D. $\\frac{42}{55}$",
    "html": "<p>某箱子內有 9 罐咖啡及 3 罐紅茶。若從該箱子中隨機取出 4 罐，求取出至少 2 罐紅茶的概率。</p>\n<ul>\n<li>A. $\\frac{13}{55}$</li>\n<li>B. $\\frac{21}{55}$</li>\n<li>C. $\\frac{34}{55}$</li>\n<li>D. $\\frac{42}{55}$</li>\n</ul>",
    "file": "2016_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 55
   },
   {
    "subject": "數學",
@@ -16907,7 +17303,8 @@ window.QB = {
    "text": "There are 9 cans of coffee and 3 cans of tea in a box. If 4 cans are randomly chosen from the box, find the probability that at least 2 cans of tea are chosen.\n\n- A. $\\dfrac{13}{55}$\n- B. $\\dfrac{21}{55}$\n- C. $\\dfrac{34}{55}$\n- D. $\\dfrac{42}{55}$",
    "html": "<p>There are 9 cans of coffee and 3 cans of tea in a box. If 4 cans are randomly chosen from the box, find the probability that at least 2 cans of tea are chosen.</p>\n<ul>\n<li>A. $\\dfrac{13}{55}$</li>\n<li>B. $\\dfrac{21}{55}$</li>\n<li>C. $\\dfrac{34}{55}$</li>\n<li>D. $\\dfrac{42}{55}$</li>\n</ul>",
    "file": "2016_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 55
   },
   {
    "subject": "數學",
@@ -16923,7 +17320,8 @@ window.QB = {
    "text": "某班有 20 名男生及 15 名女生。若從該班中選出 6 名學生組成一個至多有 2 名女生的委員會，則可組成多少個不同的委員會？\n\n- A. $271320$\n- B. $324415$\n- C. $508725$\n- D. $780045$",
    "html": "<p>某班有 20 名男生及 15 名女生。若從該班中選出 6 名學生組成一個至多有 2 名女生的委員會，則可組成多少個不同的委員會？</p>\n<ul>\n<li>A. $271320$</li>\n<li>B. $324415$</li>\n<li>C. $508725$</li>\n<li>D. $780045$</li>\n</ul>",
    "file": "2016_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 51
   },
   {
    "subject": "數學",
@@ -16939,7 +17337,8 @@ window.QB = {
    "text": "There are 20 boys and 15 girls in a class. If 6 students are selected from the class to form a committee consisting of at most 2 girls, how many different committees can be formed?\n\n- A. 271 320\n- B. 324 415\n- C. 508 725\n- D. 780 045",
    "html": "<p>There are 20 boys and 15 girls in a class. If 6 students are selected from the class to form a committee consisting of at most 2 girls, how many different committees can be formed?</p>\n<ul>\n<li>A. 271 320</li>\n<li>B. 324 415</li>\n<li>C. 508 725</li>\n<li>D. 780 045</li>\n</ul>",
    "file": "2016_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 51
   },
   {
    "subject": "數學",
@@ -16956,7 +17355,8 @@ window.QB = {
    "text": "下面的幹葉圖顯示某群學生在一測驗中得分（以分為單位）的分佈。佩玲在該測驗中獲最高得分。\n:::stemleaf\n幹（十位） | 葉（個位）\n4 | 5 6 7 8\n5 | 5 5 6 8\n6 | 3 5 5 6 9 9\n7 | 0 0 1\n8 | 0 2 5\n:::\n下列何者正確？\nI. 該分佈的上四分位數為 55 分。\nII. 佩玲在該測驗中的標準分低於 2。\nIII. 該分佈的標準差大於 12 分。\n\n- A. 只有 I\n- B. 只有 II\n- C. 只有 I 及 III\n- D. 只有 II 及 III",
    "html": "<p>下面的幹葉圖顯示某群學生在一測驗中得分（以分為單位）的分佈。佩玲在該測驗中獲最高得分。\n:::stemleaf\n幹（十位） | 葉（個位）\n4 | 5 6 7 8\n5 | 5 5 6 8\n6 | 3 5 5 6 9 9\n7 | 0 0 1\n8 | 0 2 5\n:::\n下列何者正確？\nI. 該分佈的上四分位數為 55 分。\nII. 佩玲在該測驗中的標準分低於 2。\nIII. 該分佈的標準差大於 12 分。</p>\n<ul>\n<li>A. 只有 I</li>\n<li>B. 只有 II</li>\n<li>C. 只有 I 及 III</li>\n<li>D. 只有 II 及 III</li>\n</ul>",
    "file": "2016_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 52
   },
   {
    "subject": "數學",
@@ -16973,7 +17373,8 @@ window.QB = {
    "text": "The stem-and-leaf diagram below shows the distribution of the scores (in marks) of a group of students in a test. Ada gets the highest score in the test.\n\n:::stemleaf\nStem (tens) | Leaf (units)\n4 | 5 6 7 8\n5 | 5 5 6 8\n6 | 3 5 5 6 9 9\n7 | 0 0 1\n8 | 0 2 5\n:::\n\nWhich of the following is/are true?\nI. The upper quartile of the distribution is 55 marks.\nII. The standard score of Ada in the test is lower than 2.\nIII. The standard deviation of the distribution is greater than 12 marks.\n\n- A. I only\n- B. II only\n- C. I and III only\n- D. II and III only",
    "html": "<p>The stem-and-leaf diagram below shows the distribution of the scores (in marks) of a group of students in a test. Ada gets the highest score in the test.</p>\n<p>:::stemleaf\nStem (tens) | Leaf (units)\n4 | 5 6 7 8\n5 | 5 5 6 8\n6 | 3 5 5 6 9 9\n7 | 0 0 1\n8 | 0 2 5\n:::</p>\n<p>Which of the following is/are true?\nI. The upper quartile of the distribution is 55 marks.\nII. The standard score of Ada in the test is lower than 2.\nIII. The standard deviation of the distribution is greater than 12 marks.</p>\n<ul>\n<li>A. I only</li>\n<li>B. II only</li>\n<li>C. I and III only</li>\n<li>D. II and III only</li>\n</ul>",
    "file": "2016_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 52
   },
   {
    "subject": "數學",
@@ -16989,7 +17390,8 @@ window.QB = {
    "text": "某組數的方差為 49。將該組的每個數乘以 4 後各加上 9 而成新一組數。求新一組數的方差。\n\n- A. $196$\n- B. $205$\n- C. $784$\n- D. $793$\n\n\n---\n\n## 答案（官方評卷參考）\n\n| 題–答 | | | | |\n|---|---|---|---|---|\n| 1 A | 2 A | 3 D | 4 C | 5 A |\n| 6 B | 7 A | 8 C | 9 D | 10 C |\n| 11 D | 12 D | 13 A | 14 C | 15 B |\n| 16 D | 17 A | 18 C | 19 A | 20 C |\n| 21 B | 22 D | 23 A | 24 B | 25 D |\n| 26 B | 27 C | 28 C | 29 B | 30 B |\n| 31 C | 32 D | 33 A | 34 B | 35 D |\n| 36 B | 37 A | 38 B | 39 A | 40 D |\n| 41 C | 42 A | 43 D | 44 B | 45 C |",
    "html": "<p>某組數的方差為 49。將該組的每個數乘以 4 後各加上 9 而成新一組數。求新一組數的方差。</p>\n<ul>\n<li>A. $196$</li>\n<li>B. $205$</li>\n<li>C. $784$</li>\n<li>D. $793$</li>\n</ul>\n<hr />\n<h2>答案（官方評卷參考）</h2>\n<table>\n<thead>\n<tr>\n<th>題–答</th>\n<th></th>\n<th></th>\n<th></th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1 A</td>\n<td>2 A</td>\n<td>3 D</td>\n<td>4 C</td>\n<td>5 A</td>\n</tr>\n<tr>\n<td>6 B</td>\n<td>7 A</td>\n<td>8 C</td>\n<td>9 D</td>\n<td>10 C</td>\n</tr>\n<tr>\n<td>11 D</td>\n<td>12 D</td>\n<td>13 A</td>\n<td>14 C</td>\n<td>15 B</td>\n</tr>\n<tr>\n<td>16 D</td>\n<td>17 A</td>\n<td>18 C</td>\n<td>19 A</td>\n<td>20 C</td>\n</tr>\n<tr>\n<td>21 B</td>\n<td>22 D</td>\n<td>23 A</td>\n<td>24 B</td>\n<td>25 D</td>\n</tr>\n<tr>\n<td>26 B</td>\n<td>27 C</td>\n<td>28 C</td>\n<td>29 B</td>\n<td>30 B</td>\n</tr>\n<tr>\n<td>31 C</td>\n<td>32 D</td>\n<td>33 A</td>\n<td>34 B</td>\n<td>35 D</td>\n</tr>\n<tr>\n<td>36 B</td>\n<td>37 A</td>\n<td>38 B</td>\n<td>39 A</td>\n<td>40 D</td>\n</tr>\n<tr>\n<td>41 C</td>\n<td>42 A</td>\n<td>43 D</td>\n<td>44 B</td>\n<td>45 C</td>\n</tr>\n</tbody>\n</table>",
    "file": "2016_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 50
   },
   {
    "subject": "數學",
@@ -17005,7 +17407,8 @@ window.QB = {
    "text": "The variance of a set of numbers is 49. Each number of the set is multiplied by 4 and then 9 is added to each resulting number to form a new set of numbers. Find the variance of the new set of numbers.\n\n- A. 196\n- B. 205\n- C. 784\n- D. 793\n\n\n---\n\n\n---\n\n\n---\n\n\n---",
    "html": "<p>The variance of a set of numbers is 49. Each number of the set is multiplied by 4 and then 9 is added to each resulting number to form a new set of numbers. Find the variance of the new set of numbers.</p>\n<ul>\n<li>A. 196</li>\n<li>B. 205</li>\n<li>C. 784</li>\n<li>D. 793</li>\n</ul>\n<hr />\n<hr />\n<hr />\n<hr />",
    "file": "2016_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 50
   },
   {
    "subject": "數學",
@@ -22182,7 +22585,8 @@ window.QB = {
    "text": "$(27\\cdot9^{n+1})^3 =$\n\n- A. $3^{6n+12}$。\n- B. $3^{6n+15}$。\n- C. $3^{9n+12}$。\n- D. $3^{9n+18}$。",
    "html": "<p>$(27\\cdot9^{n+1})^3 =$</p>\n<ul>\n<li>A. $3^{6n+12}$。</li>\n<li>B. $3^{6n+15}$。</li>\n<li>C. $3^{9n+12}$。</li>\n<li>D. $3^{9n+18}$。</li>\n</ul>",
    "file": "2013_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 69
   },
   {
    "subject": "數學",
@@ -22200,7 +22604,8 @@ window.QB = {
    "text": "$(27 \\cdot 9^{n+1})^3 =$\n\n- A. $3^{6n+12}$\n- B. $3^{6n+15}$\n- C. $3^{9n+12}$\n- D. $3^{9n+18}$",
    "html": "<p>$(27 \\cdot 9^{n+1})^3 =$</p>\n<ul>\n<li>A. $3^{6n+12}$</li>\n<li>B. $3^{6n+15}$</li>\n<li>C. $3^{9n+12}$</li>\n<li>D. $3^{9n+18}$</li>\n</ul>",
    "file": "2013_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 69
   },
   {
    "subject": "數學",
@@ -22216,7 +22621,8 @@ window.QB = {
    "text": "若 $\\dfrac{y-1}{c}=\\dfrac{y+1}{d}$，則 $y=$\n\n- A. $\\dfrac{c-d}{c+d}$。\n- B. $\\dfrac{d-c}{c+d}$。\n- C. $\\dfrac{c+d}{c-d}$。\n- D. $\\dfrac{c+d}{d-c}$。",
    "html": "<p>若 $\\dfrac{y-1}{c}=\\dfrac{y+1}{d}$，則 $y=$</p>\n<ul>\n<li>A. $\\dfrac{c-d}{c+d}$。</li>\n<li>B. $\\dfrac{d-c}{c+d}$。</li>\n<li>C. $\\dfrac{c+d}{c-d}$。</li>\n<li>D. $\\dfrac{c+d}{d-c}$。</li>\n</ul>",
    "file": "2013_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 81
   },
   {
    "subject": "數學",
@@ -22232,7 +22638,8 @@ window.QB = {
    "text": "If $\\dfrac{y-1}{c} = \\dfrac{y+1}{d}$, then $y =$\n\n- A. $\\dfrac{c-d}{c+d}$\n- B. $\\dfrac{d-c}{c+d}$\n- C. $\\dfrac{c+d}{c-d}$\n- D. $\\dfrac{c+d}{d-c}$",
    "html": "<p>If $\\dfrac{y-1}{c} = \\dfrac{y+1}{d}$, then $y =$</p>\n<ul>\n<li>A. $\\dfrac{c-d}{c+d}$</li>\n<li>B. $\\dfrac{d-c}{c+d}$</li>\n<li>C. $\\dfrac{c+d}{c-d}$</li>\n<li>D. $\\dfrac{c+d}{d-c}$</li>\n</ul>",
    "file": "2013_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 81
   },
   {
    "subject": "數學",
@@ -22248,7 +22655,8 @@ window.QB = {
    "text": "$h\\ell-k\\ell+hm-km-hn+kn=$\n\n- A. $(h+k)(\\ell-m+n)$。\n- B. $(h+k)(\\ell+m-n)$。\n- C. $(h-k)(\\ell-m+n)$。\n- D. $(h-k)(\\ell+m-n)$。",
    "html": "<p>$h\\ell-k\\ell+hm-km-hn+kn=$</p>\n<ul>\n<li>A. $(h+k)(\\ell-m+n)$。</li>\n<li>B. $(h+k)(\\ell+m-n)$。</li>\n<li>C. $(h-k)(\\ell-m+n)$。</li>\n<li>D. $(h-k)(\\ell+m-n)$。</li>\n</ul>",
    "file": "2013_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 85
   },
   {
    "subject": "數學",
@@ -22266,7 +22674,8 @@ window.QB = {
    "text": "$h\\ell - k\\ell + hm - km - hn + kn =$\n\n- A. $(h+k)(\\ell - m + n)$\n- B. $(h+k)(\\ell + m - n)$\n- C. $(h-k)(\\ell - m + n)$\n- D. $(h-k)(\\ell + m - n)$",
    "html": "<p>$h\\ell - k\\ell + hm - km - hn + kn =$</p>\n<ul>\n<li>A. $(h+k)(\\ell - m + n)$</li>\n<li>B. $(h+k)(\\ell + m - n)$</li>\n<li>C. $(h-k)(\\ell - m + n)$</li>\n<li>D. $(h-k)(\\ell + m - n)$</li>\n</ul>",
    "file": "2013_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 85
   },
   {
    "subject": "數學",
@@ -22282,7 +22691,8 @@ window.QB = {
    "text": "$0.0504545=$\n\n- A. $0.051$（準確至二位有效數字）。\n- B. $0.0505$（準確至三位小數）。\n- C. $0.05045$（準確至四位有效數字）。\n- D. $0.05046$（準確至五位小數）。",
    "html": "<p>$0.0504545=$</p>\n<ul>\n<li>A. $0.051$（準確至二位有效數字）。</li>\n<li>B. $0.0505$（準確至三位小數）。</li>\n<li>C. $0.05045$（準確至四位有效數字）。</li>\n<li>D. $0.05046$（準確至五位小數）。</li>\n</ul>",
    "file": "2013_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 75
   },
   {
    "subject": "數學",
@@ -22298,7 +22708,8 @@ window.QB = {
    "text": "0.0504545 =\n\n- A. 0.051 (correct to 2 significant figures).\n- B. 0.0505 (correct to 3 decimal places).\n- C. 0.05045 (correct to 4 significant figures).\n- D. 0.05046 (correct to 5 decimal places).",
    "html": "<p>0.0504545 =</p>\n<ul>\n<li>A. 0.051 (correct to 2 significant figures).</li>\n<li>B. 0.0505 (correct to 3 decimal places).</li>\n<li>C. 0.05045 (correct to 4 significant figures).</li>\n<li>D. 0.05046 (correct to 5 decimal places).</li>\n</ul>",
    "file": "2013_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 75
   },
   {
    "subject": "數學",
@@ -22314,7 +22725,8 @@ window.QB = {
    "text": "$x-\\dfrac{x-1}{2}>5$ 或 $1<x-11$ 的解為\n\n- A. $x>9$。\n- B. $x>10$。\n- C. $x>11$。\n- D. $x>12$。",
    "html": "<p>$x-\\dfrac{x-1}{2}&gt;5$ 或 $1&lt;x-11$ 的解為</p>\n<ul>\n<li>A. $x&gt;9$。</li>\n<li>B. $x&gt;10$。</li>\n<li>C. $x&gt;11$。</li>\n<li>D. $x&gt;12$。</li>\n</ul>",
    "file": "2013_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 40
   },
   {
    "subject": "數學",
@@ -22330,7 +22742,8 @@ window.QB = {
    "text": "The solution of $ x - \\dfrac{x-1}{2} > 5 $ or $ 1 < x - 11 $ is\n\n- A. $ x > 9 $.\n- B. $ x > 10 $.\n- C. $ x > 11 $.\n- D. $ x > 12 $.",
    "html": "<p>The solution of $ x - \\dfrac{x-1}{2} &gt; 5 $ or $ 1 &lt; x - 11 $ is</p>\n<ul>\n<li>A. $ x &gt; 9 $.</li>\n<li>B. $ x &gt; 10 $.</li>\n<li>C. $ x &gt; 11 $.</li>\n<li>D. $ x &gt; 12 $.</li>\n</ul>",
    "file": "2013_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 40
   },
   {
    "subject": "數學",
@@ -22346,7 +22759,8 @@ window.QB = {
    "text": "設 $k$ 為一常數。解方程 $(x-k)^2=4k^2$。\n\n- A. $x=3k$\n- B. $x=5k$\n- C. $x=-k$ 或 $x=3k$\n- D. $x=-3k$ 或 $x=5k$",
    "html": "<p>設 $k$ 為一常數。解方程 $(x-k)^2=4k^2$。</p>\n<ul>\n<li>A. $x=3k$</li>\n<li>B. $x=5k$</li>\n<li>C. $x=-k$ 或 $x=3k$</li>\n<li>D. $x=-3k$ 或 $x=5k$</li>\n</ul>",
    "file": "2013_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 70
   },
   {
    "subject": "數學",
@@ -22362,7 +22776,8 @@ window.QB = {
    "text": "Let $ k $ be a constant. Solve the equation $ (x-k)^2 = 4k^2 $.\n\n- A. $ x = 3k $\n- B. $ x = 5k $\n- C. $ x = -k $ or $ x = 3k $\n- D. $ x = -3k $ or $ x = 5k $",
    "html": "<p>Let $ k $ be a constant. Solve the equation $ (x-k)^2 = 4k^2 $.</p>\n<ul>\n<li>A. $ x = 3k $</li>\n<li>B. $ x = 5k $</li>\n<li>C. $ x = -k $ or $ x = 3k $</li>\n<li>D. $ x = -3k $ or $ x = 5k $</li>\n</ul>",
    "file": "2013_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 70
   },
   {
    "subject": "數學",
@@ -22379,7 +22794,8 @@ window.QB = {
    "text": "圖中所示為 $y=-2x^2+ax+b$ 的圖像，其中 $a$ 及 $b$ 均為常數。該圖像的對稱軸的方程為\n\n\n![Figure Q7 (as printed)](2013P2_zh_figs/Q7.png)\n\n- A. $x=2$。\n- B. $x=3$。\n- C. $x=5$。\n- D. $y=8$。",
    "html": "<p>圖中所示為 $y=-2x^2+ax+b$ 的圖像，其中 $a$ 及 $b$ 均為常數。該圖像的對稱軸的方程為</p>\n<p><img alt=\"Figure Q7 (as printed)\" src=\"2013P2_zh_figs/Q7.png\" /></p>\n<ul>\n<li>A. $x=2$。</li>\n<li>B. $x=3$。</li>\n<li>C. $x=5$。</li>\n<li>D. $y=8$。</li>\n</ul>",
    "file": "2013_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 59
   },
   {
    "subject": "數學",
@@ -22397,7 +22813,8 @@ window.QB = {
    "text": "The figure shows the graph of $ y = -2x^2 + ax + b $, where $ a $ and $ b $ are constants. The equation of the axis of symmetry of the graph is\n\n\n![Figure Q7 (as printed)](2013P2_figs/Q07.png)\n\n- A. $ x = 2 $.\n- B. $ x = 3 $.\n- C. $ x = 5 $.\n- D. $ y = 8 $.",
    "html": "<p>The figure shows the graph of $ y = -2x^2 + ax + b $, where $ a $ and $ b $ are constants. The equation of the axis of symmetry of the graph is</p>\n<p><img alt=\"Figure Q7 (as printed)\" src=\"2013P2_figs/Q07.png\" /></p>\n<ul>\n<li>A. $ x = 2 $.</li>\n<li>B. $ x = 3 $.</li>\n<li>C. $ x = 5 $.</li>\n<li>D. $ y = 8 $.</li>\n</ul>",
    "file": "2013_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 59
   },
   {
    "subject": "數學",
@@ -22414,7 +22831,8 @@ window.QB = {
    "text": "若 $a$、$b$ 及 $c$ 均為非零的常數使得 $x(x+3a)+a \\equiv x^2+2(bx+c)$，則 $a:b:c=$\n\n- A. $2:3:1$。\n- B. $2:3:4$。\n- C. $3:2:6$。\n- D. $6:4:3$。",
    "html": "<p>若 $a$、$b$ 及 $c$ 均為非零的常數使得 $x(x+3a)+a \\equiv x^2+2(bx+c)$，則 $a:b:c=$</p>\n<ul>\n<li>A. $2:3:1$。</li>\n<li>B. $2:3:4$。</li>\n<li>C. $3:2:6$。</li>\n<li>D. $6:4:3$。</li>\n</ul>",
    "file": "2013_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 59
   },
   {
    "subject": "數學",
@@ -22432,7 +22850,8 @@ window.QB = {
    "text": "If $a$, $b$ and $c$ are non-zero constants such that $x(x+3a)+a \\equiv x^2+2(bx+c)$, then $a:b:c=$\n\n- A. $2:3:1$.\n- B. $2:3:4$.\n- C. $3:2:6$.\n- D. $6:4:3$.",
    "html": "<p>If $a$, $b$ and $c$ are non-zero constants such that $x(x+3a)+a \\equiv x^2+2(bx+c)$, then $a:b:c=$</p>\n<ul>\n<li>A. $2:3:1$.</li>\n<li>B. $2:3:4$.</li>\n<li>C. $3:2:6$.</li>\n<li>D. $6:4:3$.</li>\n</ul>",
    "file": "2013_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 59
   },
   {
    "subject": "數學",
@@ -22448,7 +22867,8 @@ window.QB = {
    "text": "設 $f(x)=x^{13}-2x+k$，其中 $k$ 為一常數。若 $f(x)$ 可被 $x+1$ 整除，求當 $f(x)$ 除以 $x-1$ 時的餘數。\n\n- A. $0$\n- B. $-1$\n- C. $2$\n- D. $-2$",
    "html": "<p>設 $f(x)=x^{13}-2x+k$，其中 $k$ 為一常數。若 $f(x)$ 可被 $x+1$ 整除，求當 $f(x)$ 除以 $x-1$ 時的餘數。</p>\n<ul>\n<li>A. $0$</li>\n<li>B. $-1$</li>\n<li>C. $2$</li>\n<li>D. $-2$</li>\n</ul>",
    "file": "2013_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 66
   },
   {
    "subject": "數學",
@@ -22466,7 +22886,8 @@ window.QB = {
    "text": "Let $f(x) = x^{13} - 2x + k$, where $k$ is a constant. If $f(x)$ is divisible by $x+1$, find the remainder when $f(x)$ is divided by $x-1$.\n\n- A. 0\n- B. -1\n- C. 2\n- D. -2",
    "html": "<p>Let $f(x) = x^{13} - 2x + k$, where $k$ is a constant. If $f(x)$ is divisible by $x+1$, find the remainder when $f(x)$ is divided by $x-1$.</p>\n<ul>\n<li>A. 0</li>\n<li>B. -1</li>\n<li>C. 2</li>\n<li>D. -2</li>\n</ul>",
    "file": "2013_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 66
   },
   {
    "subject": "數學",
@@ -22482,7 +22903,8 @@ window.QB = {
    "text": "素珊售出兩輛汽車，每輛汽車的售價均為 $\\$80\\,080$，其中一輛獲利 30%，而另一輛則虧蝕 30%。完成該兩項交易後，素珊\n\n- A. 虧蝕 $\\$15\\,840$。\n- B. 獲利 $\\$5\\,544$。\n- C. 獲利 $\\$10\\,296$。\n- D. 既無獲利，又無虧蝕。",
    "html": "<p>素珊售出兩輛汽車，每輛汽車的售價均為 $\\$80\\,080$，其中一輛獲利 30%，而另一輛則虧蝕 30%。完成該兩項交易後，素珊</p>\n<ul>\n<li>A. 虧蝕 $\\$15\\,840$。</li>\n<li>B. 獲利 $\\$5\\,544$。</li>\n<li>C. 獲利 $\\$10\\,296$。</li>\n<li>D. 既無獲利，又無虧蝕。</li>\n</ul>",
    "file": "2013_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 45
   },
   {
    "subject": "數學",
@@ -22499,7 +22921,8 @@ window.QB = {
    "text": "Susan sells two cars for \\$80 080 each. She gains 30% on one and loses 30% on the other. After the two transactions, Susan\n\n- A. loses \\$15 840.\n- B. gains \\$5 544.\n- C. gains \\$10 296.\n- D. has no gain and no loss.",
    "html": "<p>Susan sells two cars for \\$80 080 each. She gains 30% on one and loses 30% on the other. After the two transactions, Susan</p>\n<ul>\n<li>A. loses \\$15 840.</li>\n<li>B. gains \\$5 544.</li>\n<li>C. gains \\$10 296.</li>\n<li>D. has no gain and no loss.</li>\n</ul>",
    "file": "2013_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 45
   },
   {
    "subject": "數學",
@@ -22515,7 +22938,8 @@ window.QB = {
    "text": "存款 $\\$50\\,000$，年利率 8%，年期 1 年，複利計算，每月一結。求利息準確至最接近的元。\n\n- A. $\\$4\\,000$\n- B. $\\$4\\,122$\n- C. $\\$4\\,143$\n- D. $\\$4\\,150$",
    "html": "<p>存款 $\\$50\\,000$，年利率 8%，年期 1 年，複利計算，每月一結。求利息準確至最接近的元。</p>\n<ul>\n<li>A. $\\$4\\,000$</li>\n<li>B. $\\$4\\,122$</li>\n<li>C. $\\$4\\,143$</li>\n<li>D. $\\$4\\,150$</li>\n</ul>",
    "file": "2013_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 65
   },
   {
    "subject": "數學",
@@ -22531,7 +22955,8 @@ window.QB = {
    "text": "A sum of \\$50 000 is deposited at an interest rate of 8% per annum for 1 year, compounded monthly. Find the interest correct to the nearest dollar.\n\n- A. \\$4 000\n- B. \\$4 122\n- C. \\$4 143\n- D. \\$4 150",
    "html": "<p>A sum of \\$50 000 is deposited at an interest rate of 8% per annum for 1 year, compounded monthly. Find the interest correct to the nearest dollar.</p>\n<ul>\n<li>A. \\$4 000</li>\n<li>B. \\$4 122</li>\n<li>C. \\$4 143</li>\n<li>D. \\$4 150</li>\n</ul>",
    "file": "2013_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 65
   },
   {
    "subject": "數學",
@@ -22547,7 +22972,8 @@ window.QB = {
    "text": "某遊樂場的實際面積為 $900 \\text{ m}^2$。若該遊樂場在某地圖上的面積為 $36 \\text{ cm}^2$，則該地圖的比例尺為\n\n- A. $1:25$。\n- B. $1:50$。\n- C. $1:500$。\n- D. $1:250\\,000$。",
    "html": "<p>某遊樂場的實際面積為 $900 \\text{ m}^2$。若該遊樂場在某地圖上的面積為 $36 \\text{ cm}^2$，則該地圖的比例尺為</p>\n<ul>\n<li>A. $1:25$。</li>\n<li>B. $1:50$。</li>\n<li>C. $1:500$。</li>\n<li>D. $1:250\\,000$。</li>\n</ul>",
    "file": "2013_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 31
   },
   {
    "subject": "數學",
@@ -22563,7 +22989,8 @@ window.QB = {
    "text": "The actual area of a playground is $900 \\text{ m}^2$. If the area of the playground on a map is $36 \\text{ cm}^2$, then the scale of the map is\n\n- A. $1:25$.\n- B. $1:50$.\n- C. $1:500$.\n- D. $1:250 000$.",
    "html": "<p>The actual area of a playground is $900 \\text{ m}^2$. If the area of the playground on a map is $36 \\text{ cm}^2$, then the scale of the map is</p>\n<ul>\n<li>A. $1:25$.</li>\n<li>B. $1:50$.</li>\n<li>C. $1:500$.</li>\n<li>D. $1:250 000$.</li>\n</ul>",
    "file": "2013_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 31
   },
   {
    "subject": "數學",
@@ -22579,7 +23006,8 @@ window.QB = {
    "text": "已知 $z$ 隨 $x$ 正變且隨 $\\sqrt{y}$ 反變。若 $y$ 減少 $64\\%$ 且 $z$ 增加 $25\\%$，則 $x$\n\n- A. 增加 $20\\%$。\n- B. 增加 $80\\%$。\n- C. 減少 $25\\%$。\n- D. 減少 $75\\%$。",
    "html": "<p>已知 $z$ 隨 $x$ 正變且隨 $\\sqrt{y}$ 反變。若 $y$ 減少 $64\\%$ 且 $z$ 增加 $25\\%$，則 $x$</p>\n<ul>\n<li>A. 增加 $20\\%$。</li>\n<li>B. 增加 $80\\%$。</li>\n<li>C. 減少 $25\\%$。</li>\n<li>D. 減少 $75\\%$。</li>\n</ul>",
    "file": "2013_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 63
   },
   {
    "subject": "數學",
@@ -22597,7 +23025,8 @@ window.QB = {
    "text": "It is given that $z$ varies directly as $x$ and inversely as $\\sqrt{y}$. If $y$ is decreased by $64\\%$ and $z$ is increased by $25\\%$, then $x$\n\n- A. is increased by $20\\%$.\n- B. is increased by $80\\%$.\n- C. is decreased by $25\\%$.\n- D. is decreased by $75\\%$.",
    "html": "<p>It is given that $z$ varies directly as $x$ and inversely as $\\sqrt{y}$. If $y$ is decreased by $64\\%$ and $z$ is increased by $25\\%$, then $x$</p>\n<ul>\n<li>A. is increased by $20\\%$.</li>\n<li>B. is increased by $80\\%$.</li>\n<li>C. is decreased by $25\\%$.</li>\n<li>D. is decreased by $75\\%$.</li>\n</ul>",
    "file": "2013_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 63
   },
   {
    "subject": "數學",
@@ -22613,7 +23042,8 @@ window.QB = {
    "text": "圖中所示為直線 $x+ay+b=0$ 的圖像。下列何者正確？\nI. $a<0$\nII. $b<0$\nIII. $a<b$\n\n\n![Figure Q14 (as printed)](2013P2_zh_figs/Q14.png)\n\n- A. 只有 I 及 II\n- B. 只有 I 及 III\n- C. 只有 II 及 III\n- D. I、II 及 III",
    "html": "<p>圖中所示為直線 $x+ay+b=0$ 的圖像。下列何者正確？\nI. $a&lt;0$\nII. $b&lt;0$\nIII. $a&lt;b$</p>\n<p><img alt=\"Figure Q14 (as printed)\" src=\"2013P2_zh_figs/Q14.png\" /></p>\n<ul>\n<li>A. 只有 I 及 II</li>\n<li>B. 只有 I 及 III</li>\n<li>C. 只有 II 及 III</li>\n<li>D. I、II 及 III</li>\n</ul>",
    "file": "2013_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 21
   },
   {
    "subject": "數學",
@@ -22629,7 +23059,8 @@ window.QB = {
    "text": "The figure shows the graph of the straight line $x + ay + b = 0$. Which of the following are true?\nI. $a < 0$\nII. $b < 0$\nIII. $a < b$\n\n\n![Figure Q14 (as printed)](2013P2_figs/Q14.png)\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
    "html": "<p>The figure shows the graph of the straight line $x + ay + b = 0$. Which of the following are true?\nI. $a &lt; 0$\nII. $b &lt; 0$\nIII. $a &lt; b$</p>\n<p><img alt=\"Figure Q14 (as printed)\" src=\"2013P2_figs/Q14.png\" /></p>\n<ul>\n<li>A. I and II only</li>\n<li>B. I and III only</li>\n<li>C. II and III only</li>\n<li>D. I, II and III</li>\n</ul>",
    "file": "2013_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 21
   },
   {
    "subject": "數學",
@@ -22646,7 +23077,8 @@ window.QB = {
    "text": "圖中，正八邊形被分為八個完全相同的等腰三角形，且其中四個均塗上陰影。該八邊形的反射對稱軸的數目為\n\n\n![Figure Q15 (as printed)](2013P2_zh_figs/Q15.png)\n\n- A. $2$。\n- B. $4$。\n- C. $8$。\n- D. $16$。",
    "html": "<p>圖中，正八邊形被分為八個完全相同的等腰三角形，且其中四個均塗上陰影。該八邊形的反射對稱軸的數目為</p>\n<p><img alt=\"Figure Q15 (as printed)\" src=\"2013P2_zh_figs/Q15.png\" /></p>\n<ul>\n<li>A. $2$。</li>\n<li>B. $4$。</li>\n<li>C. $8$。</li>\n<li>D. $16$。</li>\n</ul>",
    "file": "2013_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 71
   },
   {
    "subject": "數學",
@@ -22662,7 +23094,8 @@ window.QB = {
    "text": "In the figure, the regular octagon is divided into eight identical isosceles triangles and four of them are shaded. The number of axes of reflectional symmetry of the octagon is\n\n\n![Figure Q15 (as printed)](2013P2_figs/Q15.png)\n\n- A. 2.\n- B. 4.\n- C. 8.\n- D. 16.",
    "html": "<p>In the figure, the regular octagon is divided into eight identical isosceles triangles and four of them are shaded. The number of axes of reflectional symmetry of the octagon is</p>\n<p><img alt=\"Figure Q15 (as printed)\" src=\"2013P2_figs/Q15.png\" /></p>\n<ul>\n<li>A. 2.</li>\n<li>B. 4.</li>\n<li>C. 8.</li>\n<li>D. 16.</li>\n</ul>",
    "file": "2013_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 71
   },
   {
    "subject": "數學",
@@ -22679,7 +23112,8 @@ window.QB = {
    "text": "圖中，半圓 $ABC$ 的直徑為 $3 \\text{ cm}$。若 $AC=2 \\text{ cm}$，求陰影區域的面積準確至最接近的 $0.01 \\text{ cm}^2$。\n\n\n![Figure Q16 (as printed)](2013P2_zh_figs/Q16.png)\n\n- A. $0.23 \\text{ cm}^2$\n- B. $0.52 \\text{ cm}^2$\n- C. $0.64 \\text{ cm}^2$\n- D. $1.07 \\text{ cm}^2$",
    "html": "<p>圖中，半圓 $ABC$ 的直徑為 $3 \\text{ cm}$。若 $AC=2 \\text{ cm}$，求陰影區域的面積準確至最接近的 $0.01 \\text{ cm}^2$。</p>\n<p><img alt=\"Figure Q16 (as printed)\" src=\"2013P2_zh_figs/Q16.png\" /></p>\n<ul>\n<li>A. $0.23 \\text{ cm}^2$</li>\n<li>B. $0.52 \\text{ cm}^2$</li>\n<li>C. $0.64 \\text{ cm}^2$</li>\n<li>D. $1.07 \\text{ cm}^2$</li>\n</ul>",
    "file": "2013_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 33
   },
   {
    "subject": "數學",
@@ -22695,7 +23129,8 @@ window.QB = {
    "text": "In the figure, the diameter of the semicircle $ABC$ is $3 \\text{ cm}$. If $AC = 2 \\text{ cm}$, find the area of the shaded region correct to the nearest $0.01 \\text{ cm}^2$.\n\n\n![Figure Q16 (as printed)](2013P2_figs/Q16.png)\n\n- A. $0.23 \\text{ cm}^2$\n- B. $0.52 \\text{ cm}^2$\n- C. $0.64 \\text{ cm}^2$\n- D. $1.07 \\text{ cm}^2$",
    "html": "<p>In the figure, the diameter of the semicircle $ABC$ is $3 \\text{ cm}$. If $AC = 2 \\text{ cm}$, find the area of the shaded region correct to the nearest $0.01 \\text{ cm}^2$.</p>\n<p><img alt=\"Figure Q16 (as printed)\" src=\"2013P2_figs/Q16.png\" /></p>\n<ul>\n<li>A. $0.23 \\text{ cm}^2$</li>\n<li>B. $0.52 \\text{ cm}^2$</li>\n<li>C. $0.64 \\text{ cm}^2$</li>\n<li>D. $1.07 \\text{ cm}^2$</li>\n</ul>",
    "file": "2013_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 33
   },
   {
    "subject": "數學",
@@ -22713,7 +23148,8 @@ window.QB = {
    "text": "圖中的固體由某直立圓錐體及某半球體組成，兩部分的底相同。該圓錐體的底半徑及高分別為 $3 \\text{ cm}$ 及 $4 \\text{ cm}$。求該固體的總表面積。\n\n\n![Figure Q17 (as printed)](2013P2_zh_figs/Q17.png)\n\n- A. $30\\pi \\text{ cm}^2$\n- B. $33\\pi \\text{ cm}^2$\n- C. $48\\pi \\text{ cm}^2$\n- D. $51\\pi \\text{ cm}^2$",
    "html": "<p>圖中的固體由某直立圓錐體及某半球體組成，兩部分的底相同。該圓錐體的底半徑及高分別為 $3 \\text{ cm}$ 及 $4 \\text{ cm}$。求該固體的總表面積。</p>\n<p><img alt=\"Figure Q17 (as printed)\" src=\"2013P2_zh_figs/Q17.png\" /></p>\n<ul>\n<li>A. $30\\pi \\text{ cm}^2$</li>\n<li>B. $33\\pi \\text{ cm}^2$</li>\n<li>C. $48\\pi \\text{ cm}^2$</li>\n<li>D. $51\\pi \\text{ cm}^2$</li>\n</ul>",
    "file": "2013_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 56
   },
   {
    "subject": "數學",
@@ -22731,7 +23167,8 @@ window.QB = {
    "text": "In the figure, the solid consists of a right circular cone and a hemisphere with a common base. The base radius and the height of the circular cone are $3 \\text{ cm}$ and $4 \\text{ cm}$ respectively. Find the total surface area of the solid.\n\n\n![Figure Q17 (as printed)](2013P2_figs/Q17.png)\n\n- A. $30\\pi \\text{ cm}^2$\n- B. $33\\pi \\text{ cm}^2$\n- C. $48\\pi \\text{ cm}^2$\n- D. $51\\pi \\text{ cm}^2$",
    "html": "<p>In the figure, the solid consists of a right circular cone and a hemisphere with a common base. The base radius and the height of the circular cone are $3 \\text{ cm}$ and $4 \\text{ cm}$ respectively. Find the total surface area of the solid.</p>\n<p><img alt=\"Figure Q17 (as printed)\" src=\"2013P2_figs/Q17.png\" /></p>\n<ul>\n<li>A. $30\\pi \\text{ cm}^2$</li>\n<li>B. $33\\pi \\text{ cm}^2$</li>\n<li>C. $48\\pi \\text{ cm}^2$</li>\n<li>D. $51\\pi \\text{ cm}^2$</li>\n</ul>",
    "file": "2013_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 56
   },
   {
    "subject": "數學",
@@ -22748,7 +23185,8 @@ window.QB = {
    "text": "圖中，$ABCD$ 為一梯形且 $AD\\parallel BC$ 及 $AD:BC=2:3$。設 $E$ 為 $BC$ 的中點。$AC$ 與 $DE$ 相交於 $F$。若 $\\triangle CEF$ 的面積為 $36 \\text{ cm}^2$，則梯形 $ABCD$ 的面積為\n\n\n![Figure Q18 (as printed)](2013P2_zh_figs/Q18.png)\n\n- A. $216 \\text{ cm}^2$。\n- B. $264 \\text{ cm}^2$。\n- C. $280 \\text{ cm}^2$。\n- D. $320 \\text{ cm}^2$。",
    "html": "<p>圖中，$ABCD$ 為一梯形且 $AD\\parallel BC$ 及 $AD:BC=2:3$。設 $E$ 為 $BC$ 的中點。$AC$ 與 $DE$ 相交於 $F$。若 $\\triangle CEF$ 的面積為 $36 \\text{ cm}^2$，則梯形 $ABCD$ 的面積為</p>\n<p><img alt=\"Figure Q18 (as printed)\" src=\"2013P2_zh_figs/Q18.png\" /></p>\n<ul>\n<li>A. $216 \\text{ cm}^2$。</li>\n<li>B. $264 \\text{ cm}^2$。</li>\n<li>C. $280 \\text{ cm}^2$。</li>\n<li>D. $320 \\text{ cm}^2$。</li>\n</ul>",
    "file": "2013_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 37
   },
   {
    "subject": "數學",
@@ -22765,7 +23203,8 @@ window.QB = {
    "text": "In the figure, $ABCD$ is a trapezium with $AD \\parallel BC$ and $AD : BC = 2 : 3$. Let $E$ be the mid-point of $BC$. If the area of $\\triangle CEF$ is $36 \\text{ cm}^2$, then the area of the trapezium $ABCD$ is\n\n\n![Figure Q18 (as printed)](2013P2_figs/Q18.png)\n\n- A. $216 \\text{ cm}^2$\n- B. $264 \\text{ cm}^2$\n- C. $280 \\text{ cm}^2$\n- D. $320 \\text{ cm}^2$",
    "html": "<p>In the figure, $ABCD$ is a trapezium with $AD \\parallel BC$ and $AD : BC = 2 : 3$. Let $E$ be the mid-point of $BC$. If the area of $\\triangle CEF$ is $36 \\text{ cm}^2$, then the area of the trapezium $ABCD$ is</p>\n<p><img alt=\"Figure Q18 (as printed)\" src=\"2013P2_figs/Q18.png\" /></p>\n<ul>\n<li>A. $216 \\text{ cm}^2$</li>\n<li>B. $264 \\text{ cm}^2$</li>\n<li>C. $280 \\text{ cm}^2$</li>\n<li>D. $320 \\text{ cm}^2$</li>\n</ul>",
    "file": "2013_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 37
   },
   {
    "subject": "數學",
@@ -22782,7 +23221,8 @@ window.QB = {
    "text": "圖中，$ABCD$ 為一圓。$AC$ 與 $BD$ 相交於 $E$。若 $AB=AD$ 及 $AD\\parallel BC$，則 $\\angle BAE=$\n\n\n![Figure Q19 (as printed)](2013P2_zh_figs/Q19.png)\n\n- A. $53^\\circ$。\n- B. $57^\\circ$。\n- C. $69^\\circ$。\n- D. $74^\\circ$。",
    "html": "<p>圖中，$ABCD$ 為一圓。$AC$ 與 $BD$ 相交於 $E$。若 $AB=AD$ 及 $AD\\parallel BC$，則 $\\angle BAE=$</p>\n<p><img alt=\"Figure Q19 (as printed)\" src=\"2013P2_zh_figs/Q19.png\" /></p>\n<ul>\n<li>A. $53^\\circ$。</li>\n<li>B. $57^\\circ$。</li>\n<li>C. $69^\\circ$。</li>\n<li>D. $74^\\circ$。</li>\n</ul>",
    "file": "2013_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 56
   },
   {
    "subject": "數學",
@@ -22800,7 +23240,8 @@ window.QB = {
    "text": "In the figure, $ABCD$ is a circle. $AC$ and $BD$ intersect at $E$. If $AB = AD$ and $AD \\parallel BC$, then $\\angle BAE =$\n\n\n![Figure Q19 (as printed)](2013P2_figs/Q19.png)\n\n- A. $53^\\circ$.\n- B. $57^\\circ$.\n- C. $69^\\circ$.\n- D. $74^\\circ$.",
    "html": "<p>In the figure, $ABCD$ is a circle. $AC$ and $BD$ intersect at $E$. If $AB = AD$ and $AD \\parallel BC$, then $\\angle BAE =$</p>\n<p><img alt=\"Figure Q19 (as printed)\" src=\"2013P2_figs/Q19.png\" /></p>\n<ul>\n<li>A. $53^\\circ$.</li>\n<li>B. $57^\\circ$.</li>\n<li>C. $69^\\circ$.</li>\n<li>D. $74^\\circ$.</li>\n</ul>",
    "file": "2013_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 56
   },
   {
    "subject": "數學",
@@ -22816,7 +23257,8 @@ window.QB = {
    "text": "圖中，由 $O$ 測 $P$ 的方位為 $\\text{S}86^\\circ\\text{E}$，且由 $O$ 測 $Q$ 的方位為 $\\text{N}32^\\circ\\text{E}$。若 $P$ 及 $Q$ 與 $O$ 等距，則由 $Q$ 測 $P$ 的方位為\n\n\n![Figure Q20 (as printed)](2013P2_zh_figs/Q20.png)\n\n- A. $\\text{N}24^\\circ\\text{W}$。\n- B. $\\text{N}27^\\circ\\text{W}$。\n- C. $\\text{S}24^\\circ\\text{E}$。\n- D. $\\text{S}27^\\circ\\text{E}$。",
    "html": "<p>圖中，由 $O$ 測 $P$ 的方位為 $\\text{S}86^\\circ\\text{E}$，且由 $O$ 測 $Q$ 的方位為 $\\text{N}32^\\circ\\text{E}$。若 $P$ 及 $Q$ 與 $O$ 等距，則由 $Q$ 測 $P$ 的方位為</p>\n<p><img alt=\"Figure Q20 (as printed)\" src=\"2013P2_zh_figs/Q20.png\" /></p>\n<ul>\n<li>A. $\\text{N}24^\\circ\\text{W}$。</li>\n<li>B. $\\text{N}27^\\circ\\text{W}$。</li>\n<li>C. $\\text{S}24^\\circ\\text{E}$。</li>\n<li>D. $\\text{S}27^\\circ\\text{E}$。</li>\n</ul>",
    "file": "2013_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 58
   },
   {
    "subject": "數學",
@@ -22832,7 +23274,8 @@ window.QB = {
    "text": "In the figure, the bearing of $P$ from $O$ is S86°E and the bearing of $Q$ from $O$ is N32°E. If $P$ and $Q$ are equidistant from $O$, then the bearing of $P$ from $Q$ is\n\n\n![Figure Q20 (as printed)](2013P2_figs/Q20.png)\n\n- A. N24°W.\n- B. N27°W.\n- C. S24°E.\n- D. S27°E.",
    "html": "<p>In the figure, the bearing of $P$ from $O$ is S86°E and the bearing of $Q$ from $O$ is N32°E. If $P$ and $Q$ are equidistant from $O$, then the bearing of $P$ from $Q$ is</p>\n<p><img alt=\"Figure Q20 (as printed)\" src=\"2013P2_figs/Q20.png\" /></p>\n<ul>\n<li>A. N24°W.</li>\n<li>B. N27°W.</li>\n<li>C. S24°E.</li>\n<li>D. S27°E.</li>\n</ul>",
    "file": "2013_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 58
   },
   {
    "subject": "數學",
@@ -22848,7 +23291,8 @@ window.QB = {
    "text": "若某正 $n$ 邊形的一內角為該多邊形一外角的 4 倍，則下列何者正確？\nI. $n$ 的值為 10。\nII. 該多邊形的對角線數目為 10。\nIII. 該多邊形的旋轉對稱的折式數目為 10。\n\n- A. 只有 I\n- B. 只有 II\n- C. 只有 I 及 III\n- D. 只有 II 及 III",
    "html": "<p>若某正 $n$ 邊形的一內角為該多邊形一外角的 4 倍，則下列何者正確？\nI. $n$ 的值為 10。\nII. 該多邊形的對角線數目為 10。\nIII. 該多邊形的旋轉對稱的折式數目為 10。</p>\n<ul>\n<li>A. 只有 I</li>\n<li>B. 只有 II</li>\n<li>C. 只有 I 及 III</li>\n<li>D. 只有 II 及 III</li>\n</ul>",
    "file": "2013_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 46
   },
   {
    "subject": "數學",
@@ -22864,7 +23308,8 @@ window.QB = {
    "text": "If an interior angle of a regular $n$-sided polygon is 4 times an exterior angle of the polygon, which of the following is/are true?\nI. The value of $n$ is 10.\nII. The number of diagonals of the polygon is 10.\nIII. The number of folds of rotational symmetry of the polygon is 10.\n\n- A. I only\n- B. II only\n- C. I and III only\n- D. II and III only",
    "html": "<p>If an interior angle of a regular $n$-sided polygon is 4 times an exterior angle of the polygon, which of the following is/are true?\nI. The value of $n$ is 10.\nII. The number of diagonals of the polygon is 10.\nIII. The number of folds of rotational symmetry of the polygon is 10.</p>\n<ul>\n<li>A. I only</li>\n<li>B. II only</li>\n<li>C. I and III only</li>\n<li>D. II and III only</li>\n</ul>",
    "file": "2013_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 46
   },
   {
    "subject": "數學",
@@ -22881,7 +23326,8 @@ window.QB = {
    "text": "$\\triangle ABC$ 中，$AB:BC:AC=8:15:17$。求 $\\cos A:\\cos C$。\n\n- A. $8:15$\n- B. $8:17$\n- C. $15:8$\n- D. $15:17$",
    "html": "<p>$\\triangle ABC$ 中，$AB:BC:AC=8:15:17$。求 $\\cos A:\\cos C$。</p>\n<ul>\n<li>A. $8:15$</li>\n<li>B. $8:17$</li>\n<li>C. $15:8$</li>\n<li>D. $15:17$</li>\n</ul>",
    "file": "2013_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 48
   },
   {
    "subject": "數學",
@@ -22898,7 +23344,8 @@ window.QB = {
    "text": "In $\\triangle ABC$, $AB:BC:AC=8:15:17$. Find $\\cos A:\\cos C$.\n\n- A. $8:15$\n- B. $8:17$\n- C. $15:8$\n- D. $15:17$",
    "html": "<p>In $\\triangle ABC$, $AB:BC:AC=8:15:17$. Find $\\cos A:\\cos C$.</p>\n<ul>\n<li>A. $8:15$</li>\n<li>B. $8:17$</li>\n<li>C. $15:8$</li>\n<li>D. $15:17$</li>\n</ul>",
    "file": "2013_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 48
   },
   {
    "subject": "數學",
@@ -22914,7 +23361,8 @@ window.QB = {
    "text": "若 $0^\\circ<x<90^\\circ$，則下列何者必為正確？\nI. $\\tan x\\tan(90^\\circ-x)=1$\nII. $\\sin x-\\sin(90^\\circ-x)<0$\nIII. $\\cos x+\\cos(90^\\circ-x)>0$\n\n- A. 只有 I 及 II\n- B. 只有 I 及 III\n- C. 只有 II 及 III\n- D. I、II 及 III",
    "html": "<p>若 $0^\\circ&lt;x&lt;90^\\circ$，則下列何者必為正確？\nI. $\\tan x\\tan(90^\\circ-x)=1$\nII. $\\sin x-\\sin(90^\\circ-x)&lt;0$\nIII. $\\cos x+\\cos(90^\\circ-x)&gt;0$</p>\n<ul>\n<li>A. 只有 I 及 II</li>\n<li>B. 只有 I 及 III</li>\n<li>C. 只有 II 及 III</li>\n<li>D. I、II 及 III</li>\n</ul>",
    "file": "2013_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 56
   },
   {
    "subject": "數學",
@@ -22932,7 +23380,8 @@ window.QB = {
    "text": "If $0^\\circ < x < 90^\\circ$, which of the following must be true?\nI. $\\tan x \\tan(90^\\circ - x) = 1$\nII. $\\sin x - \\sin(90^\\circ - x) < 0$\nIII. $\\cos x + \\cos(90^\\circ - x) > 0$\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
    "html": "<p>If $0^\\circ &lt; x &lt; 90^\\circ$, which of the following must be true?\nI. $\\tan x \\tan(90^\\circ - x) = 1$\nII. $\\sin x - \\sin(90^\\circ - x) &lt; 0$\nIII. $\\cos x + \\cos(90^\\circ - x) &gt; 0$</p>\n<ul>\n<li>A. I and II only</li>\n<li>B. I and III only</li>\n<li>C. II and III only</li>\n<li>D. I, II and III</li>\n</ul>",
    "file": "2013_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 56
   },
   {
    "subject": "數學",
@@ -22949,7 +23398,8 @@ window.QB = {
    "text": "點 $A$ 及點 $B$ 的坐標分別為 $(2,5)$ 及 $(4,-1)$。設 $P$ 為直角坐標平面上的一動點使得 $AP=BP$。求 $P$ 的軌跡的方程。\n\n- A. $x-3y+3=0$\n- B. $x-3y-7=0$\n- C. $x-3y+13=0$\n- D. $3x+y-11=0$",
    "html": "<p>點 $A$ 及點 $B$ 的坐標分別為 $(2,5)$ 及 $(4,-1)$。設 $P$ 為直角坐標平面上的一動點使得 $AP=BP$。求 $P$ 的軌跡的方程。</p>\n<ul>\n<li>A. $x-3y+3=0$</li>\n<li>B. $x-3y-7=0$</li>\n<li>C. $x-3y+13=0$</li>\n<li>D. $3x+y-11=0$</li>\n</ul>",
    "file": "2013_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 54
   },
   {
    "subject": "數學",
@@ -22967,7 +23417,8 @@ window.QB = {
    "text": "The coordinates of the points $A$ and $B$ are $(2,5)$ and $(4,-1)$ respectively. Let $P$ be a moving point in the rectangular coordinate plane such that $AP = BP$. Find the equation of the locus of $P$.\n\n- A. $x - 3y + 3 = 0$\n- B. $x - 3y - 7 = 0$\n- C. $x - 3y + 13 = 0$\n- D. $3x + y - 11 = 0$",
    "html": "<p>The coordinates of the points $A$ and $B$ are $(2,5)$ and $(4,-1)$ respectively. Let $P$ be a moving point in the rectangular coordinate plane such that $AP = BP$. Find the equation of the locus of $P$.</p>\n<ul>\n<li>A. $x - 3y + 3 = 0$</li>\n<li>B. $x - 3y - 7 = 0$</li>\n<li>C. $x - 3y + 13 = 0$</li>\n<li>D. $3x + y - 11 = 0$</li>\n</ul>",
    "file": "2013_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 54
   },
   {
    "subject": "數學",
@@ -22983,7 +23434,8 @@ window.QB = {
    "text": "圓 $C$ 的方程為 $2x^2+2y^2-4x+8y-5=0$。點 $P$ 及點 $Q$ 的坐標分別為 $(-1,2)$ 及 $(4,0)$。下列何者正確？\nI. $C$ 的半徑為 5。\nII. $PQ$ 的中點位於 $C$ 以外。\nIII. 若 $G$ 為 $C$ 的圓心，則 $\\angle PGQ$ 為一銳角。\n\n- A. 只有 I\n- B. 只有 II\n- C. 只有 I 及 III\n- D. 只有 II 及 III",
    "html": "<p>圓 $C$ 的方程為 $2x^2+2y^2-4x+8y-5=0$。點 $P$ 及點 $Q$ 的坐標分別為 $(-1,2)$ 及 $(4,0)$。下列何者正確？\nI. $C$ 的半徑為 5。\nII. $PQ$ 的中點位於 $C$ 以外。\nIII. 若 $G$ 為 $C$ 的圓心，則 $\\angle PGQ$ 為一銳角。</p>\n<ul>\n<li>A. 只有 I</li>\n<li>B. 只有 II</li>\n<li>C. 只有 I 及 III</li>\n<li>D. 只有 II 及 III</li>\n</ul>",
    "file": "2013_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 36
   },
   {
    "subject": "數學",
@@ -23001,7 +23453,8 @@ window.QB = {
    "text": "The equation of the circle $C$ is $2x^2 + 2y^2 - 4x + 8y - 5 = 0$. The coordinates of the points $P$ and $Q$ are $(-1,2)$ and $(4,0)$ respectively. Which of the following is/are true?\nI. The radius of $C$ is $5$.\nII. The mid-point of $PQ$ lies outside $C$.\nIII. If $G$ is the centre of $C$, then $\\angle PGQ$ is an acute angle.\n\n- A. I only\n- B. II only\n- C. I and III only\n- D. II and III only",
    "html": "<p>The equation of the circle $C$ is $2x^2 + 2y^2 - 4x + 8y - 5 = 0$. The coordinates of the points $P$ and $Q$ are $(-1,2)$ and $(4,0)$ respectively. Which of the following is/are true?\nI. The radius of $C$ is $5$.\nII. The mid-point of $PQ$ lies outside $C$.\nIII. If $G$ is the centre of $C$, then $\\angle PGQ$ is an acute angle.</p>\n<ul>\n<li>A. I only</li>\n<li>B. II only</li>\n<li>C. I and III only</li>\n<li>D. II and III only</li>\n</ul>",
    "file": "2013_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 36
   },
   {
    "subject": "數學",
@@ -23017,7 +23470,8 @@ window.QB = {
    "text": "從七張分別記有數字 1、2、3、4、5、6 及 7 的紙卡中，隨機同時抽出兩個數字。求抽出數字之積為奇數的概率。\n\n- A. $\\dfrac{2}{7}$\n- B. $\\dfrac{4}{7}$\n- C. $\\dfrac{12}{49}$\n- D. $\\dfrac{16}{49}$",
    "html": "<p>從七張分別記有數字 1、2、3、4、5、6 及 7 的紙卡中，隨機同時抽出兩個數字。求抽出數字之積為奇數的概率。</p>\n<ul>\n<li>A. $\\dfrac{2}{7}$</li>\n<li>B. $\\dfrac{4}{7}$</li>\n<li>C. $\\dfrac{12}{49}$</li>\n<li>D. $\\dfrac{16}{49}$</li>\n</ul>",
    "file": "2013_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 42
   },
   {
    "subject": "數學",
@@ -23034,7 +23488,8 @@ window.QB = {
    "text": "Two numbers are randomly drawn at the same time from seven cards numbered 1, 2, 3, 4, 5, 6 and 7 respectively. Find the probability that the product of the numbers drawn is an odd number.\n\n- A. $\\dfrac{2}{7}$\n- B. $\\dfrac{4}{7}$\n- C. $\\dfrac{12}{49}$\n- D. $\\dfrac{16}{49}$",
    "html": "<p>Two numbers are randomly drawn at the same time from seven cards numbered 1, 2, 3, 4, 5, 6 and 7 respectively. Find the probability that the product of the numbers drawn is an odd number.</p>\n<ul>\n<li>A. $\\dfrac{2}{7}$</li>\n<li>B. $\\dfrac{4}{7}$</li>\n<li>C. $\\dfrac{12}{49}$</li>\n<li>D. $\\dfrac{16}{49}$</li>\n</ul>",
    "file": "2013_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 42
   },
   {
    "subject": "數學",
@@ -23053,7 +23508,8 @@ window.QB = {
    "text": "若九個數 14、6、4、5、7、5、$x$、$y$ 與 $z$ 的平均值及眾數分別為 8 及 14，則這九個數的中位數為\n\n- A. $5$。\n- B. $6$。\n- C. $7$。\n- D. $8$。",
    "html": "<p>若九個數 14、6、4、5、7、5、$x$、$y$ 與 $z$ 的平均值及眾數分別為 8 及 14，則這九個數的中位數為</p>\n<ul>\n<li>A. $5$。</li>\n<li>B. $6$。</li>\n<li>C. $7$。</li>\n<li>D. $8$。</li>\n</ul>",
    "file": "2013_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 68
   },
   {
    "subject": "數學",
@@ -23070,7 +23526,8 @@ window.QB = {
    "text": "If the mean and the mode of the nine numbers 14, 6, 4, 5, 7, 5, $x$, $y$ and $z$ are 8 and 14 respectively, then the median of these nine numbers is\n\n- A. 5.\n- B. 6.\n- C. 7.\n- D. 8.",
    "html": "<p>If the mean and the mode of the nine numbers 14, 6, 4, 5, 7, 5, $x$, $y$ and $z$ are 8 and 14 respectively, then the median of these nine numbers is</p>\n<ul>\n<li>A. 5.</li>\n<li>B. 6.</li>\n<li>C. 7.</li>\n<li>D. 8.</li>\n</ul>",
    "file": "2013_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 68
   },
   {
    "subject": "數學",
@@ -23087,7 +23544,8 @@ window.QB = {
    "text": "下面的散點圖顯示 $x$ 與 $y$ 之間的關係。下列何者可表示 $x$ 與 $y$ 之間的關係？\n\n\n![Figure Q28 (as printed)](2013P2_zh_figs/Q28.png)\n\n- A. 當 $x$ 增加時，$y$ 增加。\n- B. 當 $x$ 增加時，$y$ 減少。\n- C. $y$ 隨 $x^2$ 反變。\n- D. $y$ 隨 $x^3$ 正變。",
    "html": "<p>下面的散點圖顯示 $x$ 與 $y$ 之間的關係。下列何者可表示 $x$ 與 $y$ 之間的關係？</p>\n<p><img alt=\"Figure Q28 (as printed)\" src=\"2013P2_zh_figs/Q28.png\" /></p>\n<ul>\n<li>A. 當 $x$ 增加時，$y$ 增加。</li>\n<li>B. 當 $x$ 增加時，$y$ 減少。</li>\n<li>C. $y$ 隨 $x^2$ 反變。</li>\n<li>D. $y$ 隨 $x^3$ 正變。</li>\n</ul>",
    "file": "2013_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 80
   },
   {
    "subject": "數學",
@@ -23105,7 +23563,8 @@ window.QB = {
    "text": "The scatter diagram below shows the relation between $x$ and $y$. Which of the following may represent the relation between $x$ and $y$?\n\n\n![Figure Q28 (as printed)](2013P2_figs/Q28.png)\n\n- A. $y$ increases when $x$ increases.\n- B. $y$ decreases when $x$ increases.\n- C. $y$ varies inversely as $x^2$.\n- D. $y$ varies directly as $x^{-3}$.",
    "html": "<p>The scatter diagram below shows the relation between $x$ and $y$. Which of the following may represent the relation between $x$ and $y$?</p>\n<p><img alt=\"Figure Q28 (as printed)\" src=\"2013P2_figs/Q28.png\" /></p>\n<ul>\n<li>A. $y$ increases when $x$ increases.</li>\n<li>B. $y$ decreases when $x$ increases.</li>\n<li>C. $y$ varies inversely as $x^2$.</li>\n<li>D. $y$ varies directly as $x^{-3}$.</li>\n</ul>",
    "file": "2013_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 80
   },
   {
    "subject": "數學",
@@ -23123,7 +23582,8 @@ window.QB = {
    "text": "下面的幹葉圖顯示某些工人的時薪（以元為單位）的分佈。\n\n:::stemleaf\n幹（十位） | 葉（個位）\n4 | 0 2 2 2 4 4 4 7\n5 | 0 0 1 2 2 6 8 9\n6 | 3 5 5 7\n7 | 0\n8 | 2 6\n9 | 5\n:::\n\n下列哪一個框線圖可表示他們時薪的分佈？\n\n- A. ![Figure Q29A](2013P2_zh_figs/Q29A.png)\n- B. ![Figure Q29B](2013P2_zh_figs/Q29B.png)\n- C. ![Figure Q29C](2013P2_zh_figs/Q29C.png)\n- D. ![Figure Q29D](2013P2_zh_figs/Q29D.png)",
    "html": "<p>下面的幹葉圖顯示某些工人的時薪（以元為單位）的分佈。</p>\n<p>:::stemleaf\n幹（十位） | 葉（個位）\n4 | 0 2 2 2 4 4 4 7\n5 | 0 0 1 2 2 6 8 9\n6 | 3 5 5 7\n7 | 0\n8 | 2 6\n9 | 5\n:::</p>\n<p>下列哪一個框線圖可表示他們時薪的分佈？</p>\n<ul>\n<li>A. <img alt=\"Figure Q29A\" src=\"2013P2_zh_figs/Q29A.png\" /></li>\n<li>B. <img alt=\"Figure Q29B\" src=\"2013P2_zh_figs/Q29B.png\" /></li>\n<li>C. <img alt=\"Figure Q29C\" src=\"2013P2_zh_figs/Q29C.png\" /></li>\n<li>D. <img alt=\"Figure Q29D\" src=\"2013P2_zh_figs/Q29D.png\" /></li>\n</ul>",
    "file": "2013_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 57
   },
   {
    "subject": "數學",
@@ -23141,7 +23601,8 @@ window.QB = {
    "text": "The stem-and-leaf diagram below shows the distribution of the hourly wages (in dollars) of some workers.\n:::stemleaf\nStem (tens) | Leaf (units)\n4 | 0 2 2 2 4 4 4 7\n5 | 0 0 1 2 2 6 8 9\n6 | 3 5 5 7\n7 | 0\n8 | 2 6\n9 | 5\n:::\nWhich of the following box-and-whisker diagrams may represent the distribution of their hourly wages?\n\n- A. ![Figure Q29A](2013P2_figs/Q29A.png)\n- B. ![Figure Q29B](2013P2_figs/Q29B.png)\n- C. ![Figure Q29C](2013P2_figs/Q29C.png)\n- D. ![Figure Q29D](2013P2_figs/Q29D.png)",
    "html": "<p>The stem-and-leaf diagram below shows the distribution of the hourly wages (in dollars) of some workers.\n:::stemleaf\nStem (tens) | Leaf (units)\n4 | 0 2 2 2 4 4 4 7\n5 | 0 0 1 2 2 6 8 9\n6 | 3 5 5 7\n7 | 0\n8 | 2 6\n9 | 5\n:::\nWhich of the following box-and-whisker diagrams may represent the distribution of their hourly wages?</p>\n<ul>\n<li>A. <img alt=\"Figure Q29A\" src=\"2013P2_figs/Q29A.png\" /></li>\n<li>B. <img alt=\"Figure Q29B\" src=\"2013P2_figs/Q29B.png\" /></li>\n<li>C. <img alt=\"Figure Q29C\" src=\"2013P2_figs/Q29C.png\" /></li>\n<li>D. <img alt=\"Figure Q29D\" src=\"2013P2_figs/Q29D.png\" /></li>\n</ul>",
    "file": "2013_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 57
   },
   {
    "subject": "數學",
@@ -23158,7 +23619,8 @@ window.QB = {
    "text": "下面的圓形圖顯示 $X$ 文具店及 $Y$ 文具店在某月從銷售文具所得的盈利的分佈。下列何者必為正確？\n\n\n![Figure Q30 (as printed)](2013P2_zh_figs/Q30.png)\n\n- A. 在該月，$X$ 文具店從銷售鉛筆所得的盈利與 $Y$ 文具店相同。\n- B. 在該月，$X$ 文具店從銷售原子筆和筆記簿所得的總盈利少於該店從銷售間尺和鉛筆所得的總盈利。\n- C. $k=14$\n- D. $\\theta=36^\\circ$",
    "html": "<p>下面的圓形圖顯示 $X$ 文具店及 $Y$ 文具店在某月從銷售文具所得的盈利的分佈。下列何者必為正確？</p>\n<p><img alt=\"Figure Q30 (as printed)\" src=\"2013P2_zh_figs/Q30.png\" /></p>\n<ul>\n<li>A. 在該月，$X$ 文具店從銷售鉛筆所得的盈利與 $Y$ 文具店相同。</li>\n<li>B. 在該月，$X$ 文具店從銷售原子筆和筆記簿所得的總盈利少於該店從銷售間尺和鉛筆所得的總盈利。</li>\n<li>C. $k=14$</li>\n<li>D. $\\theta=36^\\circ$</li>\n</ul>",
    "file": "2013_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 54
   },
   {
    "subject": "數學",
@@ -23174,7 +23636,8 @@ window.QB = {
    "text": "The pie charts below show the distributions of the profits of stationery shop $ X $ and stationery shop $ Y $ from the sales of stationery in a certain month. Which of the following must be true?\nDistribution of the profits of stationery shop $ X $\nDistribution of the profits of stationery shop $ Y $\n\n\n![Figure Q30 (as printed)](2013P2_figs/Q30.png)\n\n- A. In that month, the profit from the sales of pencils of stationery shop $ X $ is the same as that of stationery shop $ Y $.\n- B. In that month, the total profit from the sales of pens and notebooks of stationery shop $ X $ is less than the total profit from the sales of rulers and pencils of the shop.\n- C. $ k = 14 $\n- D. $ \\theta = 36^\\circ $",
    "html": "<p>The pie charts below show the distributions of the profits of stationery shop $ X $ and stationery shop $ Y $ from the sales of stationery in a certain month. Which of the following must be true?\nDistribution of the profits of stationery shop $ X $\nDistribution of the profits of stationery shop $ Y $</p>\n<p><img alt=\"Figure Q30 (as printed)\" src=\"2013P2_figs/Q30.png\" /></p>\n<ul>\n<li>A. In that month, the profit from the sales of pencils of stationery shop $ X $ is the same as that of stationery shop $ Y $.</li>\n<li>B. In that month, the total profit from the sales of pens and notebooks of stationery shop $ X $ is less than the total profit from the sales of rulers and pencils of the shop.</li>\n<li>C. $ k = 14 $</li>\n<li>D. $ \\theta = 36^\\circ $</li>\n</ul>",
    "file": "2013_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 54
   },
   {
    "subject": "數學",
@@ -23191,7 +23654,8 @@ window.QB = {
    "text": "$a^2+4a+4$、$a^2-4$ 及 $a^3+8$ 的 L.C.M. 為\n\n- A. $a+2$。\n- B. $(a-2)(a+2)^2(a^2-2a+4)$。\n- C. $(a-2)(a+2)^2(a^2+2a+4)$。\n- D. $(a-2)(a+2)^4(a^2-2a+4)$。",
    "html": "<p>$a^2+4a+4$、$a^2-4$ 及 $a^3+8$ 的 L.C.M. 為</p>\n<ul>\n<li>A. $a+2$。</li>\n<li>B. $(a-2)(a+2)^2(a^2-2a+4)$。</li>\n<li>C. $(a-2)(a+2)^2(a^2+2a+4)$。</li>\n<li>D. $(a-2)(a+2)^4(a^2-2a+4)$。</li>\n</ul>",
    "file": "2013_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 52
   },
   {
    "subject": "數學",
@@ -23209,7 +23673,8 @@ window.QB = {
    "text": "The L.C.M. of $a^2 + 4a + 4$, $a^2 - 4$ and $a^3 + 8$ is\n\n- A. $a + 2$\n- B. $(a - 2)(a + 2)^2(a^2 - 2a + 4)$\n- C. $(a - 2)(a + 2)^2(a^2 + 2a + 4)$\n- D. $(a - 2)(a + 2)^4(a^2 - 2a + 4)$",
    "html": "<p>The L.C.M. of $a^2 + 4a + 4$, $a^2 - 4$ and $a^3 + 8$ is</p>\n<ul>\n<li>A. $a + 2$</li>\n<li>B. $(a - 2)(a + 2)^2(a^2 - 2a + 4)$</li>\n<li>C. $(a - 2)(a + 2)^2(a^2 + 2a + 4)$</li>\n<li>D. $(a - 2)(a + 2)^4(a^2 - 2a + 4)$</li>\n</ul>",
    "file": "2013_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 52
   },
   {
    "subject": "數學",
@@ -23226,7 +23691,8 @@ window.QB = {
    "text": "上圖所示為 $y=ab^x$ 的圖像，其中 $a$ 及 $b$ 均為常數。下列哪一個圖像可表示 $x$ 與 $\\log_7 y$ 之間的關係？\n\n\n![Figure Q32 (as printed)](2013P2_zh_figs/Q32.png)\n\n- A. ![Figure Q32A](2013P2_zh_figs/Q32A.png)\n- B. ![Figure Q32B](2013P2_zh_figs/Q32B.png)\n- C. ![Figure Q32C](2013P2_zh_figs/Q32C.png)\n- D. ![Figure Q32D](2013P2_zh_figs/Q32D.png)",
    "html": "<p>上圖所示為 $y=ab^x$ 的圖像，其中 $a$ 及 $b$ 均為常數。下列哪一個圖像可表示 $x$ 與 $\\log_7 y$ 之間的關係？</p>\n<p><img alt=\"Figure Q32 (as printed)\" src=\"2013P2_zh_figs/Q32.png\" /></p>\n<ul>\n<li>A. <img alt=\"Figure Q32A\" src=\"2013P2_zh_figs/Q32A.png\" /></li>\n<li>B. <img alt=\"Figure Q32B\" src=\"2013P2_zh_figs/Q32B.png\" /></li>\n<li>C. <img alt=\"Figure Q32C\" src=\"2013P2_zh_figs/Q32C.png\" /></li>\n<li>D. <img alt=\"Figure Q32D\" src=\"2013P2_zh_figs/Q32D.png\" /></li>\n</ul>",
    "file": "2013_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 40
   },
   {
    "subject": "數學",
@@ -23244,7 +23710,8 @@ window.QB = {
    "text": "The figure above shows the graph of $y = ab^x$, where $a$ and $b$ are constants. Which of the following graphs may represent the relation between $x$ and $\\log_7 y$?\n\n\n![Figure Q32 (as printed)](2013P2_figs/Q32.png)\n\n- A. ![Figure Q32A](2013P2_figs/Q32A.png)\n- B. ![Figure Q32B](2013P2_figs/Q32B.png)\n- C. ![Figure Q32C](2013P2_figs/Q32C.png)\n- D. ![Figure Q32D](2013P2_figs/Q32D.png)",
    "html": "<p>The figure above shows the graph of $y = ab^x$, where $a$ and $b$ are constants. Which of the following graphs may represent the relation between $x$ and $\\log_7 y$?</p>\n<p><img alt=\"Figure Q32 (as printed)\" src=\"2013P2_figs/Q32.png\" /></p>\n<ul>\n<li>A. <img alt=\"Figure Q32A\" src=\"2013P2_figs/Q32A.png\" /></li>\n<li>B. <img alt=\"Figure Q32B\" src=\"2013P2_figs/Q32B.png\" /></li>\n<li>C. <img alt=\"Figure Q32C\" src=\"2013P2_figs/Q32C.png\" /></li>\n<li>D. <img alt=\"Figure Q32D\" src=\"2013P2_figs/Q32D.png\" /></li>\n</ul>",
    "file": "2013_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 40
   },
   {
    "subject": "數學",
@@ -23261,7 +23728,8 @@ window.QB = {
    "text": "$\\mathrm{A00000E00011}_{16} =$\n\n- A. $10\\times16^{11}+14\\times16^5+17$。\n- B. $11\\times16^{11}+15\\times16^5+17$。\n- C. $10\\times16^{12}+14\\times16^6+272$。\n- D. $11\\times16^{12}+15\\times16^6+272$。",
    "html": "<p>$\\mathrm{A00000E00011}_{16} =$</p>\n<ul>\n<li>A. $10\\times16^{11}+14\\times16^5+17$。</li>\n<li>B. $11\\times16^{11}+15\\times16^5+17$。</li>\n<li>C. $10\\times16^{12}+14\\times16^6+272$。</li>\n<li>D. $11\\times16^{12}+15\\times16^6+272$。</li>\n</ul>",
    "file": "2013_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 64
   },
   {
    "subject": "數學",
@@ -23279,7 +23747,8 @@ window.QB = {
    "text": "A00000E00011\\_{16} =\n\n- A. 10 \\times 16^{11} + 14 \\times 16^5 + 17 .\n- B. 11 \\times 16^{11} + 15 \\times 16^5 + 17 .\n- C. 10 \\times 16^{12} + 14 \\times 16^6 + 272 .\n- D. 11 \\times 16^{12} + 15 \\times 16^6 + 272 .",
    "html": "<p>A00000E00011_{16} =</p>\n<ul>\n<li>A. 10 \\times 16^{11} + 14 \\times 16^5 + 17 .</li>\n<li>B. 11 \\times 16^{11} + 15 \\times 16^5 + 17 .</li>\n<li>C. 10 \\times 16^{12} + 14 \\times 16^6 + 272 .</li>\n<li>D. 11 \\times 16^{12} + 15 \\times 16^6 + 272 .</li>\n</ul>",
    "file": "2013_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 64
   },
   {
    "subject": "數學",
@@ -23295,7 +23764,8 @@ window.QB = {
    "text": "若 $x-\\log y=x^2-\\log y^2-10=2$，則 $y=$\n\n- A. $100$。\n- B. $2$ 或 $-4$。\n- C. $\\dfrac{1}{100}$ 或 $10\\,000$。\n- D. $\\dfrac{1}{10\\,000}$ 或 $100$。",
    "html": "<p>若 $x-\\log y=x^2-\\log y^2-10=2$，則 $y=$</p>\n<ul>\n<li>A. $100$。</li>\n<li>B. $2$ 或 $-4$。</li>\n<li>C. $\\dfrac{1}{100}$ 或 $10\\,000$。</li>\n<li>D. $\\dfrac{1}{10\\,000}$ 或 $100$。</li>\n</ul>",
    "file": "2013_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 29
   },
   {
    "subject": "數學",
@@ -23313,7 +23783,8 @@ window.QB = {
    "text": "If $ x - \\log y = x^2 - \\log y^2 - 10 = 2 $, then $ y = $\n\n- A. 100 .\n- B. 2 or -4 .\n- C. $\\dfrac{1}{100}$ or 10 000 .\n- D. $\\dfrac{1}{10 000}$ or 100 .",
    "html": "<p>If $ x - \\log y = x^2 - \\log y^2 - 10 = 2 $, then $ y = $</p>\n<ul>\n<li>A. 100 .</li>\n<li>B. 2 or -4 .</li>\n<li>C. $\\dfrac{1}{100}$ or 10 000 .</li>\n<li>D. $\\dfrac{1}{10 000}$ or 100 .</li>\n</ul>",
    "file": "2013_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 29
   },
   {
    "subject": "數學",
@@ -23330,7 +23801,8 @@ window.QB = {
    "text": "若 $\\alpha\\neq\\beta$ 且 $\\begin{cases}3\\alpha=\\alpha^2-5\\\\ 3\\beta=\\beta^2-5\\end{cases}$，則 $\\alpha\\beta=$\n\n- A. $3$。\n- B. $-3$。\n- C. $5$。\n- D. $-5$。",
    "html": "<p>若 $\\alpha\\neq\\beta$ 且 $\\begin{cases}3\\alpha=\\alpha^2-5\\ 3\\beta=\\beta^2-5\\end{cases}$，則 $\\alpha\\beta=$</p>\n<ul>\n<li>A. $3$。</li>\n<li>B. $-3$。</li>\n<li>C. $5$。</li>\n<li>D. $-5$。</li>\n</ul>",
    "file": "2013_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 46
   },
   {
    "subject": "數學",
@@ -23347,7 +23819,8 @@ window.QB = {
    "text": "If $\\alpha \\neq \\beta$ and $\\begin{cases} 3\\alpha = \\alpha^2 - 5 \\\\ 3\\beta = \\beta^2 - 5 \\end{cases}$, then $\\alpha\\beta = $\n\n- A. 3 .\n- B. -3 .\n- C. 5 .\n- D. -5 .",
    "html": "<p>If $\\alpha \\neq \\beta$ and $\\begin{cases} 3\\alpha = \\alpha^2 - 5 \\ 3\\beta = \\beta^2 - 5 \\end{cases}$, then $\\alpha\\beta = $</p>\n<ul>\n<li>A. 3 .</li>\n<li>B. -3 .</li>\n<li>C. 5 .</li>\n<li>D. -5 .</li>\n</ul>",
    "file": "2013_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 46
   },
   {
    "subject": "數學",
@@ -23363,7 +23836,8 @@ window.QB = {
    "text": "$i+2i^2+3i^3+4i^4$ 的實部為\n\n- A. $2$。\n- B. $-2$。\n- C. $6$。\n- D. $-6$。",
    "html": "<p>$i+2i^2+3i^3+4i^4$ 的實部為</p>\n<ul>\n<li>A. $2$。</li>\n<li>B. $-2$。</li>\n<li>C. $6$。</li>\n<li>D. $-6$。</li>\n</ul>",
    "file": "2013_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 60
   },
   {
    "subject": "數學",
@@ -23379,7 +23853,8 @@ window.QB = {
    "text": "The real part of $ i + 2i^2 + 3i^3 + 4i^4 $ is\n\n- A. 2.\n- B. -2.\n- C. 6.\n- D. -6.",
    "html": "<p>The real part of $ i + 2i^2 + 3i^3 + 4i^4 $ is</p>\n<ul>\n<li>A. 2.</li>\n<li>B. -2.</li>\n<li>C. 6.</li>\n<li>D. -6.</li>\n</ul>",
    "file": "2013_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 60
   },
   {
    "subject": "數學",
@@ -23395,7 +23870,8 @@ window.QB = {
    "text": "考慮以下的不等式組：\n\n$\\begin{cases}x\\ge 2\\\\ y\\ge 0\\\\ x+4y\\le 22\\\\ 4x-y\\le 20\\end{cases}$\n\n設 $D$ 為表示以上的不等式組的解之區域。若 $(x,y)$ 為 $D$ 中的一點，則 $3y-4x+15$ 的最大值為\n\n- A. $3$。\n- B. $17$。\n- C. $22$。\n- D. $30$。",
    "html": "<p>考慮以下的不等式組：</p>\n<p>$\\begin{cases}x\\ge 2\\ y\\ge 0\\ x+4y\\le 22\\ 4x-y\\le 20\\end{cases}$</p>\n<p>設 $D$ 為表示以上的不等式組的解之區域。若 $(x,y)$ 為 $D$ 中的一點，則 $3y-4x+15$ 的最大值為</p>\n<ul>\n<li>A. $3$。</li>\n<li>B. $17$。</li>\n<li>C. $22$。</li>\n<li>D. $30$。</li>\n</ul>",
    "file": "2013_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 46
   },
   {
    "subject": "數學",
@@ -23413,7 +23889,8 @@ window.QB = {
    "text": "Consider the following system of inequalities:\n$$\n\\begin{cases}\nx \\geq 2 \\\\\ny \\geq 0 \\\\\nx + 4y \\leq 22 \\\\\n4x - y \\leq 20\n\\end{cases}\n$$\nLet $ D $ be the region which represents the solution of the above system of inequalities. If $ (x, y) $ is a point lying in $ D $, then the greatest value of $ 3y - 4x + 15 $ is\n\n- A. 3.\n- B. 17.\n- C. 22.\n- D. 30.",
    "html": "<p>Consider the following system of inequalities:\n$$\n\\begin{cases}\nx \\geq 2 \\\ny \\geq 0 \\\nx + 4y \\leq 22 \\\n4x - y \\leq 20\n\\end{cases}\n$$\nLet $ D $ be the region which represents the solution of the above system of inequalities. If $ (x, y) $ is a point lying in $ D $, then the greatest value of $ 3y - 4x + 15 $ is</p>\n<ul>\n<li>A. 3.</li>\n<li>B. 17.</li>\n<li>C. 22.</li>\n<li>D. 30.</li>\n</ul>",
    "file": "2013_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 46
   },
   {
    "subject": "數學",
@@ -23429,7 +23906,8 @@ window.QB = {
    "text": "某數列的第 $n$ 項為 $2n-19$。下列何者正確？\nI. 25 為該數列的其中一項。\nII. 該數列有 10 個負值項。\nIII. 該數列的首 $n$ 項之和為 $n^2-18n$。\n\n- A. 只有 I\n- B. 只有 II\n- C. 只有 I 及 III\n- D. 只有 II 及 III",
    "html": "<p>某數列的第 $n$ 項為 $2n-19$。下列何者正確？\nI. 25 為該數列的其中一項。\nII. 該數列有 10 個負值項。\nIII. 該數列的首 $n$ 項之和為 $n^2-18n$。</p>\n<ul>\n<li>A. 只有 I</li>\n<li>B. 只有 II</li>\n<li>C. 只有 I 及 III</li>\n<li>D. 只有 II 及 III</li>\n</ul>",
    "file": "2013_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 47
   },
   {
    "subject": "數學",
@@ -23445,7 +23923,8 @@ window.QB = {
    "text": "The $ n $th term of a sequence is $ 2n - 19 $. Which of the following is/are true?\nI. 25 is a term of the sequence.\nII. The sequence has 10 negative terms.\nIII. The sum of the first $ n $ terms of the sequence is $ n^2 - 18n $.\n\n- A. I only\n- B. II only\n- C. I and III only\n- D. II and III only",
    "html": "<p>The $ n $th term of a sequence is $ 2n - 19 $. Which of the following is/are true?\nI. 25 is a term of the sequence.\nII. The sequence has 10 negative terms.\nIII. The sum of the first $ n $ terms of the sequence is $ n^2 - 18n $.</p>\n<ul>\n<li>A. I only</li>\n<li>B. II only</li>\n<li>C. I and III only</li>\n<li>D. II and III only</li>\n</ul>",
    "file": "2013_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 47
   },
   {
    "subject": "數學",
@@ -23462,7 +23941,8 @@ window.QB = {
    "text": "設 $h$ 及 $k$ 均為常數。圖中所示為 $y=h+k\\tan 2x^\\circ$ 的圖像，其中 $0\\le x\\le\\alpha$。下列何者正確？\nI. $h>0$\nII. $k<0$\nIII. $\\tan\\alpha^\\circ=\\dfrac{1}{k}$\n\n\n![Figure Q39 (as printed)](2013P2_zh_figs/Q39.png)\n\n- A. 只有 I 及 II\n- B. 只有 I 及 III\n- C. 只有 II 及 III\n- D. I、II 及 III",
    "html": "<p>設 $h$ 及 $k$ 均為常數。圖中所示為 $y=h+k\\tan 2x^\\circ$ 的圖像，其中 $0\\le x\\le\\alpha$。下列何者正確？\nI. $h&gt;0$\nII. $k&lt;0$\nIII. $\\tan\\alpha^\\circ=\\dfrac{1}{k}$</p>\n<p><img alt=\"Figure Q39 (as printed)\" src=\"2013P2_zh_figs/Q39.png\" /></p>\n<ul>\n<li>A. 只有 I 及 II</li>\n<li>B. 只有 I 及 III</li>\n<li>C. 只有 II 及 III</li>\n<li>D. I、II 及 III</li>\n</ul>",
    "file": "2013_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 29
   },
   {
    "subject": "數學",
@@ -23480,7 +23960,8 @@ window.QB = {
    "text": "Let $ h $ and $ k $ be constants. The figure shows the graph of $ y = h + k \\tan 2x^\\circ $, where $ 0 \\leq x \\leq \\alpha $. Which of the following are true?\nI. $ h > 0 $\nII. $ k < 0 $\nIII. $ \\tan \\alpha^\\circ = \\dfrac{1}{k} $\n\n\n![Figure Q39 (as printed)](2013P2_figs/Q39.png)\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
    "html": "<p>Let $ h $ and $ k $ be constants. The figure shows the graph of $ y = h + k \\tan 2x^\\circ $, where $ 0 \\leq x \\leq \\alpha $. Which of the following are true?\nI. $ h &gt; 0 $\nII. $ k &lt; 0 $\nIII. $ \\tan \\alpha^\\circ = \\dfrac{1}{k} $</p>\n<p><img alt=\"Figure Q39 (as printed)\" src=\"2013P2_figs/Q39.png\" /></p>\n<ul>\n<li>A. I and II only</li>\n<li>B. I and III only</li>\n<li>C. II and III only</li>\n<li>D. I, II and III</li>\n</ul>",
    "file": "2013_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 29
   },
   {
    "subject": "數學",
@@ -23497,7 +23978,8 @@ window.QB = {
    "text": "若一正四面體的高為 $2 \\text{ cm}$，則該四面體的體積為\n\n- A. $2 \\text{ cm}^3$。\n- B. $\\sqrt{3} \\text{ cm}^3$。\n- C. $\\sqrt{6} \\text{ cm}^3$。\n- D. $3\\sqrt{3} \\text{ cm}^3$。",
    "html": "<p>若一正四面體的高為 $2 \\text{ cm}$，則該四面體的體積為</p>\n<ul>\n<li>A. $2 \\text{ cm}^3$。</li>\n<li>B. $\\sqrt{3} \\text{ cm}^3$。</li>\n<li>C. $\\sqrt{6} \\text{ cm}^3$。</li>\n<li>D. $3\\sqrt{3} \\text{ cm}^3$。</li>\n</ul>",
    "file": "2013_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 21
   },
   {
    "subject": "數學",
@@ -23513,7 +23995,8 @@ window.QB = {
    "text": "If the height of a regular tetrahedron is $ 2 \\text{ cm} $, then the volume of the tetrahedron is\n\n- A. $ 2 \\text{ cm}^3 $\n- B. $ \\sqrt{3} \\text{ cm}^3 $\n- C. $ \\sqrt{6} \\text{ cm}^3 $\n- D. $ 3\\sqrt{3} \\text{ cm}^3 $",
    "html": "<p>If the height of a regular tetrahedron is $ 2 \\text{ cm} $, then the volume of the tetrahedron is</p>\n<ul>\n<li>A. $ 2 \\text{ cm}^3 $</li>\n<li>B. $ \\sqrt{3} \\text{ cm}^3 $</li>\n<li>C. $ \\sqrt{6} \\text{ cm}^3 $</li>\n<li>D. $ 3\\sqrt{3} \\text{ cm}^3 $</li>\n</ul>",
    "file": "2013_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 21
   },
   {
    "subject": "數學",
@@ -23530,7 +24013,8 @@ window.QB = {
    "text": "圖中，$O$ 為圓 $ABC$ 的圓心。$DE$ 為該圓在 $A$ 的切線。若 $AB$ 為 $\\angle CAE$ 的角平分線，則 $\\angle ACO=$\n\n\n![Figure Q41 (as printed)](2013P2_zh_figs/Q41.png)\n\n- A. $26^\\circ$。\n- B. $28^\\circ$。\n- C. $31^\\circ$。\n- D. $34^\\circ$。",
    "html": "<p>圖中，$O$ 為圓 $ABC$ 的圓心。$DE$ 為該圓在 $A$ 的切線。若 $AB$ 為 $\\angle CAE$ 的角平分線，則 $\\angle ACO=$</p>\n<p><img alt=\"Figure Q41 (as printed)\" src=\"2013P2_zh_figs/Q41.png\" /></p>\n<ul>\n<li>A. $26^\\circ$。</li>\n<li>B. $28^\\circ$。</li>\n<li>C. $31^\\circ$。</li>\n<li>D. $34^\\circ$。</li>\n</ul>",
    "file": "2013_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 39
   },
   {
    "subject": "數學",
@@ -23547,7 +24031,8 @@ window.QB = {
    "text": "In the figure, $ O $ is the centre of the circle $ ABC $. $ DE $ is the tangent to the circle at $ A $. If $ AB $ is the angle bisector of $ \\angle CAE $, then $ \\angle ACO = $\n\n\n![Figure Q41 (as printed)](2013P2_figs/Q41.png)\n\n- A. $ 26^\\circ $\n- B. $ 28^\\circ $\n- C. $ 31^\\circ $\n- D. $ 34^\\circ $",
    "html": "<p>In the figure, $ O $ is the centre of the circle $ ABC $. $ DE $ is the tangent to the circle at $ A $. If $ AB $ is the angle bisector of $ \\angle CAE $, then $ \\angle ACO = $</p>\n<p><img alt=\"Figure Q41 (as printed)\" src=\"2013P2_figs/Q41.png\" /></p>\n<ul>\n<li>A. $ 26^\\circ $</li>\n<li>B. $ 28^\\circ $</li>\n<li>C. $ 31^\\circ $</li>\n<li>D. $ 34^\\circ $</li>\n</ul>",
    "file": "2013_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 39
   },
   {
    "subject": "數學",
@@ -23564,7 +24049,8 @@ window.QB = {
    "text": "求 $k$ 值的範圍使得圓 $x^2+y^2+2x-2y-7=0$ 與直線 $3x-4y+k=0$ 相交。\n\n- A. $-8<k<22$\n- B. $-8\\le k\\le 22$\n- C. $k<-22$ 或 $k>8$\n- D. $k\\le -22$ 或 $k\\ge 8$",
    "html": "<p>求 $k$ 值的範圍使得圓 $x^2+y^2+2x-2y-7=0$ 與直線 $3x-4y+k=0$ 相交。</p>\n<ul>\n<li>A. $-8&lt;k&lt;22$</li>\n<li>B. $-8\\le k\\le 22$</li>\n<li>C. $k&lt;-22$ 或 $k&gt;8$</li>\n<li>D. $k\\le -22$ 或 $k\\ge 8$</li>\n</ul>",
    "file": "2013_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 37
   },
   {
    "subject": "數學",
@@ -23581,7 +24067,8 @@ window.QB = {
    "text": "Find the range of values of $ k $ such that the circle $ x^2 + y^2 + 2x - 2y - 7 = 0 $ and the straight line $ 3x - 4y + k = 0 $ intersect.\n\n- A. $-8 < k < 22$\n- B. $-8 \\leq k \\leq 22$\n- C. $ k < -22 $ or $ k > 8 $\n- D. $ k \\leq -22 $ or $ k \\geq 8 $",
    "html": "<p>Find the range of values of $ k $ such that the circle $ x^2 + y^2 + 2x - 2y - 7 = 0 $ and the straight line $ 3x - 4y + k = 0 $ intersect.</p>\n<ul>\n<li>A. $-8 &lt; k &lt; 22$</li>\n<li>B. $-8 \\leq k \\leq 22$</li>\n<li>C. $ k &lt; -22 $ or $ k &gt; 8 $</li>\n<li>D. $ k \\leq -22 $ or $ k \\geq 8 $</li>\n</ul>",
    "file": "2013_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 37
   },
   {
    "subject": "數學",
@@ -23598,7 +24085,8 @@ window.QB = {
    "text": "設 $O$ 為原點。若點 $A$ 及點 $B$ 的坐標分別為 $(0,12)$ 及 $(30,12)$，則 $\\triangle OAB$ 的外心的 $y$ 坐標為\n\n- A. $6$。\n- B. $8$。\n- C. $12$。\n- D. $15$。",
    "html": "<p>設 $O$ 為原點。若點 $A$ 及點 $B$ 的坐標分別為 $(0,12)$ 及 $(30,12)$，則 $\\triangle OAB$ 的外心的 $y$ 坐標為</p>\n<ul>\n<li>A. $6$。</li>\n<li>B. $8$。</li>\n<li>C. $12$。</li>\n<li>D. $15$。</li>\n</ul>",
    "file": "2013_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 30
   },
   {
    "subject": "數學",
@@ -23616,7 +24104,8 @@ window.QB = {
    "text": "Let $ O $ be the origin. If the coordinates of the points $ A $ and $ B $ are $ (0, 12) $ and $ (30, 12) $ respectively, then the $ y $-coordinate of the circumcentre of $ \\Delta OAB $ is\n\n- A. 6.\n- B. 8.\n- C. 12.\n- D. 15.",
    "html": "<p>Let $ O $ be the origin. If the coordinates of the points $ A $ and $ B $ are $ (0, 12) $ and $ (30, 12) $ respectively, then the $ y $-coordinate of the circumcentre of $ \\Delta OAB $ is</p>\n<ul>\n<li>A. 6.</li>\n<li>B. 8.</li>\n<li>C. 12.</li>\n<li>D. 15.</li>\n</ul>",
    "file": "2013_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 30
   },
   {
    "subject": "數學",
@@ -23632,7 +24121,8 @@ window.QB = {
    "text": "若八位電話號碼的首三個位及尾五個位分別由 5,6,9 的排列及 2,3,4,7,8 的排列所組成，則可組成多少個不同的八位電話號碼？\n\n- A. 15\n- B. 126\n- C. 720\n- D. 40 320",
    "html": "<p>若八位電話號碼的首三個位及尾五個位分別由 5,6,9 的排列及 2,3,4,7,8 的排列所組成，則可組成多少個不同的八位電話號碼？</p>\n<ul>\n<li>A. 15</li>\n<li>B. 126</li>\n<li>C. 720</li>\n<li>D. 40 320</li>\n</ul>",
    "file": "2013_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 64
   },
   {
    "subject": "數學",
@@ -23648,7 +24138,8 @@ window.QB = {
    "text": "If the first three digits and the last five digits of an eight-digit phone number are formed by a permutation of $ 5, 6, 9 $ and a permutation of $ 2, 3, 4, 7, 8 $ respectively, how many different eight-digit phone numbers can be formed?\n\n- A. 15\n- B. 126\n- C. 720\n- D. 40 320",
    "html": "<p>If the first three digits and the last five digits of an eight-digit phone number are formed by a permutation of $ 5, 6, 9 $ and a permutation of $ 2, 3, 4, 7, 8 $ respectively, how many different eight-digit phone numbers can be formed?</p>\n<ul>\n<li>A. 15</li>\n<li>B. 126</li>\n<li>C. 720</li>\n<li>D. 40 320</li>\n</ul>",
    "file": "2013_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 64
   },
   {
    "subject": "數學",
@@ -23665,7 +24156,8 @@ window.QB = {
    "text": "若五個數 $x_1$、$x_2$、$x_3$、$x_4$ 及 $x_5$ 的方差為 13，則 $3x_1+4$、$3x_2+4$、$3x_3+4$、$3x_4+4$ 及 $3x_5+4$ 這五個數的方差為\n\n- A. $39$。\n- B. $43$。\n- C. $117$。\n- D. $121$。\n\n\n---\n\n## 答案（官方評卷參考）\n\n| 題–答 | | | | |\n|---|---|---|---|---|\n| 1 B | 2 D | 3 D | 4 C | 5 A |\n| 6 C | 7 B | 8 A | 9 D | 10 A |\n| 11 D | 12 C | 13 C | 14 D | 15 B |\n| 16 B | 17 B | 18 C | 19 C | 20 D |\n| 21 C | 22 A | 23 B | 24 A | 25 D |\n| 26 A | 27 B | 28 A | 29 D | 30 B |\n| 31 B | 32 B | 33 A | 34 D | 35 D |\n| 36 A | 37 C | 38 C | 39 A | 40 B |\n| 41 D | 42 B | 43 A | 44 C | 45 C |",
    "html": "<p>若五個數 $x_1$、$x_2$、$x_3$、$x_4$ 及 $x_5$ 的方差為 13，則 $3x_1+4$、$3x_2+4$、$3x_3+4$、$3x_4+4$ 及 $3x_5+4$ 這五個數的方差為</p>\n<ul>\n<li>A. $39$。</li>\n<li>B. $43$。</li>\n<li>C. $117$。</li>\n<li>D. $121$。</li>\n</ul>\n<hr />\n<h2>答案（官方評卷參考）</h2>\n<table>\n<thead>\n<tr>\n<th>題–答</th>\n<th></th>\n<th></th>\n<th></th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1 B</td>\n<td>2 D</td>\n<td>3 D</td>\n<td>4 C</td>\n<td>5 A</td>\n</tr>\n<tr>\n<td>6 C</td>\n<td>7 B</td>\n<td>8 A</td>\n<td>9 D</td>\n<td>10 A</td>\n</tr>\n<tr>\n<td>11 D</td>\n<td>12 C</td>\n<td>13 C</td>\n<td>14 D</td>\n<td>15 B</td>\n</tr>\n<tr>\n<td>16 B</td>\n<td>17 B</td>\n<td>18 C</td>\n<td>19 C</td>\n<td>20 D</td>\n</tr>\n<tr>\n<td>21 C</td>\n<td>22 A</td>\n<td>23 B</td>\n<td>24 A</td>\n<td>25 D</td>\n</tr>\n<tr>\n<td>26 A</td>\n<td>27 B</td>\n<td>28 A</td>\n<td>29 D</td>\n<td>30 B</td>\n</tr>\n<tr>\n<td>31 B</td>\n<td>32 B</td>\n<td>33 A</td>\n<td>34 D</td>\n<td>35 D</td>\n</tr>\n<tr>\n<td>36 A</td>\n<td>37 C</td>\n<td>38 C</td>\n<td>39 A</td>\n<td>40 B</td>\n</tr>\n<tr>\n<td>41 D</td>\n<td>42 B</td>\n<td>43 A</td>\n<td>44 C</td>\n<td>45 C</td>\n</tr>\n</tbody>\n</table>",
    "file": "2013_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 37
   },
   {
    "subject": "數學",
@@ -23683,7 +24175,8 @@ window.QB = {
    "text": "If the variance of the five numbers $ x_1 $, $ x_2 $, $ x_3 $, $ x_4 $ and $ x_5 $ is 13, then the variance of the five numbers $ 3x_1 + 4 $, $ 3x_2 + 4 $, $ 3x_3 + 4 $, $ 3x_4 + 4 $ and $ 3x_5 + 4 $ is\n\n- A. 39.\n- B. 43.\n- C. 117.\n- D. 121.\n\n\n---",
    "html": "<p>If the variance of the five numbers $ x_1 $, $ x_2 $, $ x_3 $, $ x_4 $ and $ x_5 $ is 13, then the variance of the five numbers $ 3x_1 + 4 $, $ 3x_2 + 4 $, $ 3x_3 + 4 $, $ 3x_4 + 4 $ and $ 3x_5 + 4 $ is</p>\n<ul>\n<li>A. 39.</li>\n<li>B. 43.</li>\n<li>C. 117.</li>\n<li>D. 121.</li>\n</ul>\n<hr />",
    "file": "2013_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 37
   },
   {
    "subject": "數學",
@@ -24304,7 +24797,8 @@ window.QB = {
    "text": "$\\dfrac{(2x^4)^3}{2x^5} =$\n\n- A. $3x^2$。\n- B. $3x^7$。\n- C. $4x^7$。\n- D. $4x^{59}$。",
    "html": "<p>$\\dfrac{(2x^4)^3}{2x^5} =$</p>\n<ul>\n<li>A. $3x^2$。</li>\n<li>B. $3x^7$。</li>\n<li>C. $4x^7$。</li>\n<li>D. $4x^{59}$。</li>\n</ul>",
    "file": "2012_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 94
   },
   {
    "subject": "數學",
@@ -24322,7 +24816,8 @@ window.QB = {
    "text": "$\\dfrac{(2x^4)^3}{2x^5} =$\n\n- A. $3x^2$.\n- B. $3x^7$.\n- C. $4x^7$.\n- D. $4x^{59}$.",
    "html": "<p>$\\dfrac{(2x^4)^3}{2x^5} =$</p>\n<ul>\n<li>A. $3x^2$.</li>\n<li>B. $3x^7$.</li>\n<li>C. $4x^7$.</li>\n<li>D. $4x^{59}$.</li>\n</ul>",
    "file": "2012_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 94
   },
   {
    "subject": "數學",
@@ -24353,7 +24848,8 @@ window.QB = {
    "text": "$(4x+y)^2-(4x-y)^2 =$\n\n- A. $0$。\n- B. $2y^2$。\n- C. $8xy$。\n- D. $16xy$。",
    "html": "<p>$(4x+y)^2-(4x-y)^2 =$</p>\n<ul>\n<li>A. $0$。</li>\n<li>B. $2y^2$。</li>\n<li>C. $8xy$。</li>\n<li>D. $16xy$。</li>\n</ul>",
    "file": "2012_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 74
   },
   {
    "subject": "數學",
@@ -24369,7 +24865,8 @@ window.QB = {
    "text": "$(4x+y)^2-(4x-y)^2 =$\n\n- A. $0$.\n- B. $2y^2$.\n- C. $8xy$.\n- D. $16xy$.",
    "html": "<p>$(4x+y)^2-(4x-y)^2 =$</p>\n<ul>\n<li>A. $0$.</li>\n<li>B. $2y^2$.</li>\n<li>C. $8xy$.</li>\n<li>D. $16xy$.</li>\n</ul>",
    "file": "2012_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 74
   },
   {
    "subject": "數學",
@@ -24401,7 +24898,8 @@ window.QB = {
    "text": "若 $p$ 及 $q$ 均為常數使得 $x^2+p \\equiv (x+2)(x+q)+10$，則 $p=$\n\n- A. $-4$。\n- B. $-2$。\n- C. $6$。\n- D. $10$。",
    "html": "<p>若 $p$ 及 $q$ 均為常數使得 $x^2+p \\equiv (x+2)(x+q)+10$，則 $p=$</p>\n<ul>\n<li>A. $-4$。</li>\n<li>B. $-2$。</li>\n<li>C. $6$。</li>\n<li>D. $10$。</li>\n</ul>",
    "file": "2012_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 59
   },
   {
    "subject": "數學",
@@ -24419,7 +24917,8 @@ window.QB = {
    "text": "If $p$ and $q$ are constants such that $x^2+p=(x+2)(x+q)+10$, then $p=$\n\n- A. $-4$.\n- B. $-2$.\n- C. $6$.\n- D. $10$.",
    "html": "<p>If $p$ and $q$ are constants such that $x^2+p=(x+2)(x+q)+10$, then $p=$</p>\n<ul>\n<li>A. $-4$.</li>\n<li>B. $-2$.</li>\n<li>C. $6$.</li>\n<li>D. $10$.</li>\n</ul>",
    "file": "2012_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 59
   },
   {
    "subject": "數學",
@@ -24450,7 +24949,8 @@ window.QB = {
    "text": "若 $k$ 為一常數使得 $x^3+4x^2+kx-12$ 被 $x+3$ 整除，則 $k=$\n\n- A. $-25$。\n- B. $-1$。\n- C. $1$。\n- D. $17$。",
    "html": "<p>若 $k$ 為一常數使得 $x^3+4x^2+kx-12$ 被 $x+3$ 整除，則 $k=$</p>\n<ul>\n<li>A. $-25$。</li>\n<li>B. $-1$。</li>\n<li>C. $1$。</li>\n<li>D. $17$。</li>\n</ul>",
    "file": "2012_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 75
   },
   {
    "subject": "數學",
@@ -24468,7 +24968,8 @@ window.QB = {
    "text": "If $ k $ is a constant such that $ x^3 + 4x^2 + kx - 12 $ is divisible by $ x + 3 $, then $ k = $\n\n- A. $-25$.\n- B. $-1$.\n- C. $1$.\n- D. $17$.",
    "html": "<p>If $ k $ is a constant such that $ x^3 + 4x^2 + kx - 12 $ is divisible by $ x + 3 $, then $ k = $</p>\n<ul>\n<li>A. $-25$.</li>\n<li>B. $-1$.</li>\n<li>C. $1$.</li>\n<li>D. $17$.</li>\n</ul>",
    "file": "2012_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 75
   },
   {
    "subject": "數學",
@@ -24499,7 +25000,8 @@ window.QB = {
    "text": "若 $m+2n+6=2m-n=7$，則 $n=$\n\n- A. $-4$。\n- B. $-1$。\n- C. $3$。\n- D. $11$。",
    "html": "<p>若 $m+2n+6=2m-n=7$，則 $n=$</p>\n<ul>\n<li>A. $-4$。</li>\n<li>B. $-1$。</li>\n<li>C. $3$。</li>\n<li>D. $11$。</li>\n</ul>",
    "file": "2012_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 78
   },
   {
    "subject": "數學",
@@ -24516,7 +25018,8 @@ window.QB = {
    "text": "If $ m + 2n + 6 = 2m - n = 7 $, then $ n = $\n\n- A. $-4$.\n- B. $-1$.\n- C. $3$.\n- D. $11$.",
    "html": "<p>If $ m + 2n + 6 = 2m - n = 7 $, then $ n = $</p>\n<ul>\n<li>A. $-4$.</li>\n<li>B. $-1$.</li>\n<li>C. $3$.</li>\n<li>D. $11$.</li>\n</ul>",
    "file": "2012_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 78
   },
   {
    "subject": "數學",
@@ -24548,7 +25051,8 @@ window.QB = {
    "text": "圖中所示為 $y=a(x+b)^2$ 的圖像，其中 $a$ 及 $b$ 均為常數。下列何者正確？\n\n\n![Figure Q6 (as printed)](2012P2_zh_figs/Q06.png)\n\n- A. $a>0$ 及 $b>0$\n- B. $a>0$ 及 $b<0$\n- C. $a<0$ 及 $b>0$\n- D. $a<0$ 及 $b<0$",
    "html": "<p>圖中所示為 $y=a(x+b)^2$ 的圖像，其中 $a$ 及 $b$ 均為常數。下列何者正確？</p>\n<p><img alt=\"Figure Q6 (as printed)\" src=\"2012P2_zh_figs/Q06.png\" /></p>\n<ul>\n<li>A. $a&gt;0$ 及 $b&gt;0$</li>\n<li>B. $a&gt;0$ 及 $b&lt;0$</li>\n<li>C. $a&lt;0$ 及 $b&gt;0$</li>\n<li>D. $a&lt;0$ 及 $b&lt;0$</li>\n</ul>",
    "file": "2012_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 53
   },
   {
    "subject": "數學",
@@ -24564,7 +25068,8 @@ window.QB = {
    "text": "The figure shows the graph of $ y = a(x + b)^2 $, where $ a $ and $ b $ are constants. Which of the following is true?\n\n\n![Figure Q6 (as printed)](2012P2_figs/Q06.png)\n\n- A. $ a > 0 $ and $ b > 0 $\n- B. $ a > 0 $ and $ b < 0 $\n- C. $ a < 0 $ and $ b > 0 $\n- D. $ a < 0 $ and $ b < 0 $",
    "html": "<p>The figure shows the graph of $ y = a(x + b)^2 $, where $ a $ and $ b $ are constants. Which of the following is true?</p>\n<p><img alt=\"Figure Q6 (as printed)\" src=\"2012P2_figs/Q06.png\" /></p>\n<ul>\n<li>A. $ a &gt; 0 $ and $ b &gt; 0 $</li>\n<li>B. $ a &gt; 0 $ and $ b &lt; 0 $</li>\n<li>C. $ a &lt; 0 $ and $ b &gt; 0 $</li>\n<li>D. $ a &lt; 0 $ and $ b &lt; 0 $</li>\n</ul>",
    "file": "2012_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 53
   },
   {
    "subject": "數學",
@@ -24595,7 +25100,8 @@ window.QB = {
    "text": "$15+4x<3$ 或 $9-2x>1$ 的解為\n\n- A. $x<-3$。\n- B. $x>-3$。\n- C. $x<4$。\n- D. $x>4$。",
    "html": "<p>$15+4x&lt;3$ 或 $9-2x&gt;1$ 的解為</p>\n<ul>\n<li>A. $x&lt;-3$。</li>\n<li>B. $x&gt;-3$。</li>\n<li>C. $x&lt;4$。</li>\n<li>D. $x&gt;4$。</li>\n</ul>",
    "file": "2012_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 59
   },
   {
    "subject": "數學",
@@ -24611,7 +25117,8 @@ window.QB = {
    "text": "The solution of $ 15 + 4x < 3 $ or $ 9 - 2x > 1 $ is\n\n- A. $ x < -3 $.\n- B. $ x > -3 $.\n- C. $ x < 4 $.\n- D. $ x > 4 $.",
    "html": "<p>The solution of $ 15 + 4x &lt; 3 $ or $ 9 - 2x &gt; 1 $ is</p>\n<ul>\n<li>A. $ x &lt; -3 $.</li>\n<li>B. $ x &gt; -3 $.</li>\n<li>C. $ x &lt; 4 $.</li>\n<li>D. $ x &gt; 4 $.</li>\n</ul>",
    "file": "2012_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 59
   },
   {
    "subject": "數學",
@@ -24642,7 +25149,8 @@ window.QB = {
    "text": "在某公司，37.5% 的僱員為女性。若 60% 的男僱員及 80% 的女僱員均已婚，則該公司中已婚僱員所佔的百分數為\n\n- A. 32.5%。\n- B. 45%。\n- C. 55%。\n- D. 67.5%。",
    "html": "<p>在某公司，37.5% 的僱員為女性。若 60% 的男僱員及 80% 的女僱員均已婚，則該公司中已婚僱員所佔的百分數為</p>\n<ul>\n<li>A. 32.5%。</li>\n<li>B. 45%。</li>\n<li>C. 55%。</li>\n<li>D. 67.5%。</li>\n</ul>",
    "file": "2012_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 84
   },
   {
    "subject": "數學",
@@ -24660,7 +25168,8 @@ window.QB = {
    "text": "In a company, 37.5% of the employees are female. If 60% of the male employees and 80% of the female employees are married, then the percentage of married employees in the company is\n\n- A. 32.5%.\n- B. 45%.\n- C. 55%.\n- D. 67.5%.",
    "html": "<p>In a company, 37.5% of the employees are female. If 60% of the male employees and 80% of the female employees are married, then the percentage of married employees in the company is</p>\n<ul>\n<li>A. 32.5%.</li>\n<li>B. 45%.</li>\n<li>C. 55%.</li>\n<li>D. 67.5%.</li>\n</ul>",
    "file": "2012_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 84
   },
   {
    "subject": "數學",
@@ -24691,7 +25200,8 @@ window.QB = {
    "text": "若 $x$ 及 $y$ 均為非零的數使得 $\\dfrac{6x+5y}{3y-2x}=7$，則 $x:y=$\n\n- A. $4:5$。\n- B. $4:13$。\n- C. $5:4$。\n- D. $13:4$。",
    "html": "<p>若 $x$ 及 $y$ 均為非零的數使得 $\\dfrac{6x+5y}{3y-2x}=7$，則 $x:y=$</p>\n<ul>\n<li>A. $4:5$。</li>\n<li>B. $4:13$。</li>\n<li>C. $5:4$。</li>\n<li>D. $13:4$。</li>\n</ul>",
    "file": "2012_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 75
   },
   {
    "subject": "數學",
@@ -24707,7 +25217,8 @@ window.QB = {
    "text": "If $x$ and $y$ are non-zero numbers such that $\\dfrac{6x+5y}{3y-2x}=7$, then $x:y=$\n\n- A. 4:5.\n- B. 4:13.\n- C. 5:4.\n- D. 13:4.",
    "html": "<p>If $x$ and $y$ are non-zero numbers such that $\\dfrac{6x+5y}{3y-2x}=7$, then $x:y=$</p>\n<ul>\n<li>A. 4:5.</li>\n<li>B. 4:13.</li>\n<li>C. 5:4.</li>\n<li>D. 13:4.</li>\n</ul>",
    "file": "2012_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 75
   },
   {
    "subject": "數學",
@@ -24738,7 +25249,8 @@ window.QB = {
    "text": "已知 $y$ 的一部分隨 $x^2$ 正變，而另一部分隨 $x$ 反變。當 $x=1$ 時，$y=-4$；又當 $x=2$ 時，$y=5$。當 $x=-2$ 時，$y=$\n\n- A. $-11$。\n- B. $-5$。\n- C. $5$。\n- D. $11$。",
    "html": "<p>已知 $y$ 的一部分隨 $x^2$ 正變，而另一部分隨 $x$ 反變。當 $x=1$ 時，$y=-4$；又當 $x=2$ 時，$y=5$。當 $x=-2$ 時，$y=$</p>\n<ul>\n<li>A. $-11$。</li>\n<li>B. $-5$。</li>\n<li>C. $5$。</li>\n<li>D. $11$。</li>\n</ul>",
    "file": "2012_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 63
   },
   {
    "subject": "數學",
@@ -24755,7 +25267,8 @@ window.QB = {
    "text": "It is given that $y$ partly varies directly as $x^2$ and partly varies inversely as $x$. When $x=1$, $y=-4$ and when $x=2$, $y=5$. When $x=-2$, $y=$\n\n- A. -11.\n- B. -5.\n- C. 5.\n- D. 11.",
    "html": "<p>It is given that $y$ partly varies directly as $x^2$ and partly varies inversely as $x$. When $x=1$, $y=-4$ and when $x=2$, $y=5$. When $x=-2$, $y=$</p>\n<ul>\n<li>A. -11.</li>\n<li>B. -5.</li>\n<li>C. 5.</li>\n<li>D. 11.</li>\n</ul>",
    "file": "2012_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 63
   },
   {
    "subject": "數學",
@@ -24786,7 +25299,8 @@ window.QB = {
    "text": "小麗執行一項 7 小時的打字工作。她在首 3 小時及最後 4 小時的平均打字速率分別為每分鐘 63 字及每分鐘 56 字。求她在該 7 小時的平均打字速率。\n\n- A. 每分鐘 17 字\n- B. 每分鐘 35 字\n- C. 每分鐘 59 字\n- D. 每分鐘 60 字",
    "html": "<p>小麗執行一項 7 小時的打字工作。她在首 3 小時及最後 4 小時的平均打字速率分別為每分鐘 63 字及每分鐘 56 字。求她在該 7 小時的平均打字速率。</p>\n<ul>\n<li>A. 每分鐘 17 字</li>\n<li>B. 每分鐘 35 字</li>\n<li>C. 每分鐘 59 字</li>\n<li>D. 每分鐘 60 字</li>\n</ul>",
    "file": "2012_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 79
   },
   {
    "subject": "數學",
@@ -24802,7 +25316,8 @@ window.QB = {
    "text": "Mary performs a typing task for 7 hours. Her average typing speeds for the first 3 hours and the last 4 hours are 63 words per minute and 56 words per minute respectively. Find her average typing speed for the 7 hours.\n\n- A. 17 words per minute\n- B. 35 words per minute\n- C. 59 words per minute\n- D. 60 words per minute",
    "html": "<p>Mary performs a typing task for 7 hours. Her average typing speeds for the first 3 hours and the last 4 hours are 63 words per minute and 56 words per minute respectively. Find her average typing speed for the 7 hours.</p>\n<ul>\n<li>A. 17 words per minute</li>\n<li>B. 35 words per minute</li>\n<li>C. 59 words per minute</li>\n<li>D. 60 words per minute</li>\n</ul>",
    "file": "2012_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 79
   },
   {
    "subject": "數學",
@@ -24834,7 +25349,8 @@ window.QB = {
    "text": "圖中，第 1 個圖案包含 1 粒貼子。對任意正整數 $n$，第 $(n+1)$ 個圖案是由第 $n$ 個圖案加上 $n$ 粒貼子所組成。求第 8 個圖案的貼子數目。\n\n\n![Figure Q12 (as printed)](2012P2_zh_figs/Q12.png)\n\n- A. 22\n- B. 29\n- C. 36\n- D. 37",
    "html": "<p>圖中，第 1 個圖案包含 1 粒貼子。對任意正整數 $n$，第 $(n+1)$ 個圖案是由第 $n$ 個圖案加上 $n$ 粒貼子所組成。求第 8 個圖案的貼子數目。</p>\n<p><img alt=\"Figure Q12 (as printed)\" src=\"2012P2_zh_figs/Q12.png\" /></p>\n<ul>\n<li>A. 22</li>\n<li>B. 29</li>\n<li>C. 36</li>\n<li>D. 37</li>\n</ul>",
    "file": "2012_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 74
   },
   {
    "subject": "數學",
@@ -24850,7 +25366,8 @@ window.QB = {
    "text": "In the figure, the 1st pattern consists of 1 dot. For any positive integer $ n $, the $(n+1)$th pattern is formed by adding $ n $ dots to the $ n $th pattern. Find the number of dots in the 8th pattern.\n\n\n![Figure Q12 (as printed)](2012P2_figs/Q12.png)\n\n- A. 22\n- B. 29\n- C. 36\n- D. 37",
    "html": "<p>In the figure, the 1st pattern consists of 1 dot. For any positive integer $ n $, the $(n+1)$th pattern is formed by adding $ n $ dots to the $ n $th pattern. Find the number of dots in the 8th pattern.</p>\n<p><img alt=\"Figure Q12 (as printed)\" src=\"2012P2_figs/Q12.png\" /></p>\n<ul>\n<li>A. 22</li>\n<li>B. 29</li>\n<li>C. 36</li>\n<li>D. 37</li>\n</ul>",
    "file": "2012_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 74
   },
   {
    "subject": "數學",
@@ -24881,7 +25398,8 @@ window.QB = {
    "text": "$0.0322515 =$\n\n- A. $0.032$（準確至三位有效數字）。\n- B. $0.0322$（準確至四位小數）。\n- C. $0.03225$（準確至五位有效數字）。\n- D. $0.032252$（準確至六位小數）。",
    "html": "<p>$0.0322515 =$</p>\n<ul>\n<li>A. $0.032$（準確至三位有效數字）。</li>\n<li>B. $0.0322$（準確至四位小數）。</li>\n<li>C. $0.03225$（準確至五位有效數字）。</li>\n<li>D. $0.032252$（準確至六位小數）。</li>\n</ul>",
    "file": "2012_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 79
   },
   {
    "subject": "數學",
@@ -24899,7 +25417,8 @@ window.QB = {
    "text": "$ 0.0322515 = $\n\n- A. 0.032 (correct to 3 significant figures).\n- B. 0.0322 (correct to 4 decimal places).\n- C. 0.03225 (correct to 5 significant figures).\n- D. 0.032252 (correct to 6 decimal places).",
    "html": "<p>$ 0.0322515 = $</p>\n<ul>\n<li>A. 0.032 (correct to 3 significant figures).</li>\n<li>B. 0.0322 (correct to 4 decimal places).</li>\n<li>C. 0.03225 (correct to 5 significant figures).</li>\n<li>D. 0.032252 (correct to 6 decimal places).</li>\n</ul>",
    "file": "2012_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 79
   },
   {
    "subject": "數學",
@@ -24931,7 +25450,8 @@ window.QB = {
    "text": "一條幼繩的長度量得 25 m 準確至最接近的 m。若將該繩分割為 $n$ 條使每條均量得 5 cm 準確至最接近的 cm，求 $n$ 的最大可取。\n\n- A. 445\n- B. 566\n- C. 567\n- D. 650",
    "html": "<p>一條幼繩的長度量得 25 m 準確至最接近的 m。若將該繩分割為 $n$ 條使每條均量得 5 cm 準確至最接近的 cm，求 $n$ 的最大可取。</p>\n<ul>\n<li>A. 445</li>\n<li>B. 566</li>\n<li>C. 567</li>\n<li>D. 650</li>\n</ul>",
    "file": "2012_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 49
   },
   {
    "subject": "數學",
@@ -24949,7 +25469,8 @@ window.QB = {
    "text": "The length of a piece of thin string is measured as $ 25 \\text{ m} $ correct to the nearest $ \\text{m} $. If the string is cut into $ n $ pieces such that the length of each piece is measured as $ 5 \\text{ cm} $ correct to the nearest $ \\text{cm} $, find the greatest possible value of $ n $.\n\n- A. 445\n- B. 566\n- C. 567\n- D. 650",
    "html": "<p>The length of a piece of thin string is measured as $ 25 \\text{ m} $ correct to the nearest $ \\text{m} $. If the string is cut into $ n $ pieces such that the length of each piece is measured as $ 5 \\text{ cm} $ correct to the nearest $ \\text{cm} $, find the greatest possible value of $ n $.</p>\n<ul>\n<li>A. 445</li>\n<li>B. 566</li>\n<li>C. 567</li>\n<li>D. 650</li>\n</ul>",
    "file": "2012_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 49
   },
   {
    "subject": "數學",
@@ -24981,7 +25502,8 @@ window.QB = {
    "text": "圖中，四邊形 $ABCD$ 的面積為\n\n\n![Figure Q15 (as printed)](2012P2_zh_figs/Q15.png)\n\n- A. $144 \\text{ cm}^2$。\n- B. $160 \\text{ cm}^2$。\n- C. $178 \\text{ cm}^2$。\n- D. $288 \\text{ cm}^2$。",
    "html": "<p>圖中，四邊形 $ABCD$ 的面積為</p>\n<p><img alt=\"Figure Q15 (as printed)\" src=\"2012P2_zh_figs/Q15.png\" /></p>\n<ul>\n<li>A. $144 \\text{ cm}^2$。</li>\n<li>B. $160 \\text{ cm}^2$。</li>\n<li>C. $178 \\text{ cm}^2$。</li>\n<li>D. $288 \\text{ cm}^2$。</li>\n</ul>",
    "file": "2012_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 89
   },
   {
    "subject": "數學",
@@ -24998,7 +25520,8 @@ window.QB = {
    "text": "In the figure, the area of quadrilateral $ ABCD $ is\n\n\n![Figure Q15 (as printed)](2012P2_figs/Q15.png)\n\n- A. $ 144 \\text{ cm}^2 $.\n- B. $ 160 \\text{ cm}^2 $.\n- C. $ 178 \\text{ cm}^2 $.\n- D. $ 288 \\text{ cm}^2 $.",
    "html": "<p>In the figure, the area of quadrilateral $ ABCD $ is</p>\n<p><img alt=\"Figure Q15 (as printed)\" src=\"2012P2_figs/Q15.png\" /></p>\n<ul>\n<li>A. $ 144 \\text{ cm}^2 $.</li>\n<li>B. $ 160 \\text{ cm}^2 $.</li>\n<li>C. $ 178 \\text{ cm}^2 $.</li>\n<li>D. $ 288 \\text{ cm}^2 $.</li>\n</ul>",
    "file": "2012_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 89
   },
   {
    "subject": "數學",
@@ -25030,7 +25553,8 @@ window.QB = {
    "text": "圖中，扇形 $OAB$ 及扇形 $OCD$ 的圓心均為 $O$。若 $\\overset{\\frown}{AB}=12\\pi \\text{ cm}$、$\\overset{\\frown}{CD}=16\\pi \\text{ cm}$ 及 $OA=30 \\text{ cm}$，則 $AC=$\n\n\n![Figure Q16 (as printed)](2012P2_zh_figs/Q16.png)\n\n- A. $5 \\text{ cm}$。\n- B. $10 \\text{ cm}$。\n- C. $20 \\text{ cm}$。\n- D. $40 \\text{ cm}$。",
    "html": "<p>圖中，扇形 $OAB$ 及扇形 $OCD$ 的圓心均為 $O$。若 $\\overset{\\frown}{AB}=12\\pi \\text{ cm}$、$\\overset{\\frown}{CD}=16\\pi \\text{ cm}$ 及 $OA=30 \\text{ cm}$，則 $AC=$</p>\n<p><img alt=\"Figure Q16 (as printed)\" src=\"2012P2_zh_figs/Q16.png\" /></p>\n<ul>\n<li>A. $5 \\text{ cm}$。</li>\n<li>B. $10 \\text{ cm}$。</li>\n<li>C. $20 \\text{ cm}$。</li>\n<li>D. $40 \\text{ cm}$。</li>\n</ul>",
    "file": "2012_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 82
   },
   {
    "subject": "數學",
@@ -25048,7 +25572,8 @@ window.QB = {
    "text": "In the figure, $OAB$ and $OCD$ are sectors with centre $O$. If $\\widehat{AB} = 12\\pi \\text{ cm}$, $\\widehat{CD} = 16\\pi \\text{ cm}$ and $OA = 30 \\text{ cm}$, then $AC =$\n\n\n![Figure Q16 (as printed)](2012P2_figs/Q16.png)\n\n- A. $5 \\text{ cm}$.\n- B. $10 \\text{ cm}$.\n- C. $20 \\text{ cm}$.\n- D. $40 \\text{ cm}$.",
    "html": "<p>In the figure, $OAB$ and $OCD$ are sectors with centre $O$. If $\\widehat{AB} = 12\\pi \\text{ cm}$, $\\widehat{CD} = 16\\pi \\text{ cm}$ and $OA = 30 \\text{ cm}$, then $AC =$</p>\n<p><img alt=\"Figure Q16 (as printed)\" src=\"2012P2_figs/Q16.png\" /></p>\n<ul>\n<li>A. $5 \\text{ cm}$.</li>\n<li>B. $10 \\text{ cm}$.</li>\n<li>C. $20 \\text{ cm}$.</li>\n<li>D. $40 \\text{ cm}$.</li>\n</ul>",
    "file": "2012_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 82
   },
   {
    "subject": "數學",
@@ -25080,7 +25605,8 @@ window.QB = {
    "text": "圖中，$ABCD$ 為一平行四邊形。$E$ 及 $F$ 分別為 $AB$ 及 $CD$ 上的點。$AD$ 的延線與 $EF$ 的延線相交於 $G$。已知 $DF:FC=3:4$ 及 $AD:DG=1:1$。若 $\\triangle DFG$ 的面積為 $3 \\text{ cm}^2$，則平行四邊形 $ABCD$ 的面積為\n\n\n![Figure Q17 (as printed)](2012P2_zh_figs/Q17.png)\n\n- A. $12 \\text{ cm}^2$。\n- B. $14 \\text{ cm}^2$。\n- C. $18 \\text{ cm}^2$。\n- D. $21 \\text{ cm}^2$。",
    "html": "<p>圖中，$ABCD$ 為一平行四邊形。$E$ 及 $F$ 分別為 $AB$ 及 $CD$ 上的點。$AD$ 的延線與 $EF$ 的延線相交於 $G$。已知 $DF:FC=3:4$ 及 $AD:DG=1:1$。若 $\\triangle DFG$ 的面積為 $3 \\text{ cm}^2$，則平行四邊形 $ABCD$ 的面積為</p>\n<p><img alt=\"Figure Q17 (as printed)\" src=\"2012P2_zh_figs/Q17.png\" /></p>\n<ul>\n<li>A. $12 \\text{ cm}^2$。</li>\n<li>B. $14 \\text{ cm}^2$。</li>\n<li>C. $18 \\text{ cm}^2$。</li>\n<li>D. $21 \\text{ cm}^2$。</li>\n</ul>",
    "file": "2012_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 43
   },
   {
    "subject": "數學",
@@ -25098,7 +25624,8 @@ window.QB = {
    "text": "In the figure, $ABCD$ is a parallelogram. $E$ and $F$ are points lying on $AB$ and $CD$ respectively. $AD$ produced and $EF$ produced meet at $G$. It is given that $DF:FC = 3:4$ and $AD:DG = 1:1$. If the area of $\\triangle DFG$ is $3 \\text{ cm}^2$, then the area of the parallelogram $ABCD$ is\n\n\n![Figure Q17 (as printed)](2012P2_figs/Q17.png)\n\n- A. $12 \\text{ cm}^2$.\n- B. $14 \\text{ cm}^2$.\n- C. $18 \\text{ cm}^2$.\n- D. $21 \\text{ cm}^2$.",
    "html": "<p>In the figure, $ABCD$ is a parallelogram. $E$ and $F$ are points lying on $AB$ and $CD$ respectively. $AD$ produced and $EF$ produced meet at $G$. It is given that $DF:FC = 3:4$ and $AD:DG = 1:1$. If the area of $\\triangle DFG$ is $3 \\text{ cm}^2$, then the area of the parallelogram $ABCD$ is</p>\n<p><img alt=\"Figure Q17 (as printed)\" src=\"2012P2_figs/Q17.png\" /></p>\n<ul>\n<li>A. $12 \\text{ cm}^2$.</li>\n<li>B. $14 \\text{ cm}^2$.</li>\n<li>C. $18 \\text{ cm}^2$.</li>\n<li>D. $21 \\text{ cm}^2$.</li>\n</ul>",
    "file": "2012_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 43
   },
   {
    "subject": "數學",
@@ -25129,7 +25656,8 @@ window.QB = {
    "text": "圖中，$D$ 為 $AC$ 上的一點使得 $BD$ 垂直於 $AC$。若 $BC=\\ell$，則 $AB=$\n\n\n![Figure Q18 (as printed)](2012P2_zh_figs/Q18.png)\n\n- A. $\\dfrac{\\ell\\sin\\alpha}{\\cos\\beta}$。\n- B. $\\dfrac{\\ell\\sin\\beta}{\\cos\\alpha}$。\n- C. $\\dfrac{\\ell\\cos\\alpha}{\\sin\\beta}$。\n- D. $\\dfrac{\\ell\\cos\\beta}{\\sin\\alpha}$。",
    "html": "<p>圖中，$D$ 為 $AC$ 上的一點使得 $BD$ 垂直於 $AC$。若 $BC=\\ell$，則 $AB=$</p>\n<p><img alt=\"Figure Q18 (as printed)\" src=\"2012P2_zh_figs/Q18.png\" /></p>\n<ul>\n<li>A. $\\dfrac{\\ell\\sin\\alpha}{\\cos\\beta}$。</li>\n<li>B. $\\dfrac{\\ell\\sin\\beta}{\\cos\\alpha}$。</li>\n<li>C. $\\dfrac{\\ell\\cos\\alpha}{\\sin\\beta}$。</li>\n<li>D. $\\dfrac{\\ell\\cos\\beta}{\\sin\\alpha}$。</li>\n</ul>",
    "file": "2012_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 70
   },
   {
    "subject": "數學",
@@ -25147,7 +25675,8 @@ window.QB = {
    "text": "In the figure, $D$ is a point lying on $AC$ such that $BD$ is perpendicular to $AC$. If $BC = \\ell$, then $AB =$\n\n\n![Figure Q18 (as printed)](2012P2_figs/Q18.png)\n\n- A. $\\dfrac{\\ell \\sin \\alpha}{\\cos \\beta}$.\n- B. $\\dfrac{\\ell \\sin \\beta}{\\cos \\alpha}$.\n- C. $\\dfrac{\\ell \\cos \\alpha}{\\sin \\beta}$.\n- D. $\\dfrac{\\ell \\cos \\beta}{\\sin \\alpha}$.",
    "html": "<p>In the figure, $D$ is a point lying on $AC$ such that $BD$ is perpendicular to $AC$. If $BC = \\ell$, then $AB =$</p>\n<p><img alt=\"Figure Q18 (as printed)\" src=\"2012P2_figs/Q18.png\" /></p>\n<ul>\n<li>A. $\\dfrac{\\ell \\sin \\alpha}{\\cos \\beta}$.</li>\n<li>B. $\\dfrac{\\ell \\sin \\beta}{\\cos \\alpha}$.</li>\n<li>C. $\\dfrac{\\ell \\cos \\alpha}{\\sin \\beta}$.</li>\n<li>D. $\\dfrac{\\ell \\cos \\beta}{\\sin \\alpha}$.</li>\n</ul>",
    "file": "2012_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 70
   },
   {
    "subject": "數學",
@@ -25178,7 +25707,8 @@ window.QB = {
    "text": "$\\dfrac{\\cos 60^\\circ}{1-\\cos(90^\\circ-\\theta)} + \\dfrac{\\cos 240^\\circ}{1-\\cos(270^\\circ-\\theta)} =$\n\n- A. $\\dfrac{1}{\\cos^2\\theta}$。\n- B. $\\dfrac{\\cos\\theta}{\\tan\\theta}$。\n- C. $\\dfrac{\\tan\\theta}{\\cos\\theta}$。\n- D. $\\dfrac{1}{\\cos\\theta\\tan\\theta}$。",
    "html": "<p>$\\dfrac{\\cos 60^\\circ}{1-\\cos(90^\\circ-\\theta)} + \\dfrac{\\cos 240^\\circ}{1-\\cos(270^\\circ-\\theta)} =$</p>\n<ul>\n<li>A. $\\dfrac{1}{\\cos^2\\theta}$。</li>\n<li>B. $\\dfrac{\\cos\\theta}{\\tan\\theta}$。</li>\n<li>C. $\\dfrac{\\tan\\theta}{\\cos\\theta}$。</li>\n<li>D. $\\dfrac{1}{\\cos\\theta\\tan\\theta}$。</li>\n</ul>",
    "file": "2012_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 51
   },
   {
    "subject": "數學",
@@ -25196,7 +25726,8 @@ window.QB = {
    "text": "$\\dfrac{\\cos 60^\\circ}{1-\\cos(90^\\circ-\\theta)} + \\dfrac{\\cos 240^\\circ}{1-\\cos(270^\\circ-\\theta)} =$\n\n- A. $\\dfrac{1}{\\cos^2\\theta}$\n- B. $\\dfrac{\\cos\\theta}{\\tan\\theta}$\n- C. $\\dfrac{\\tan\\theta}{\\cos\\theta}$\n- D. $\\dfrac{1}{\\cos\\theta\\tan\\theta}$",
    "html": "<p>$\\dfrac{\\cos 60^\\circ}{1-\\cos(90^\\circ-\\theta)} + \\dfrac{\\cos 240^\\circ}{1-\\cos(270^\\circ-\\theta)} =$</p>\n<ul>\n<li>A. $\\dfrac{1}{\\cos^2\\theta}$</li>\n<li>B. $\\dfrac{\\cos\\theta}{\\tan\\theta}$</li>\n<li>C. $\\dfrac{\\tan\\theta}{\\cos\\theta}$</li>\n<li>D. $\\dfrac{1}{\\cos\\theta\\tan\\theta}$</li>\n</ul>",
    "file": "2012_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 51
   },
   {
    "subject": "數學",
@@ -25227,7 +25758,8 @@ window.QB = {
    "text": "圖中，$O$ 為圓 $ABCD$ 的圓心。若 $\\angle BAO=28^\\circ$、$\\angle BCD=114^\\circ$ 及 $\\angle CDO=42^\\circ$，則 $\\angle ABC=$\n\n\n![Figure Q20 (as printed)](2012P2_zh_figs/Q20.png)\n\n- A. $90^\\circ$。\n- B. $96^\\circ$。\n- C. $100^\\circ$。\n- D. $138^\\circ$。",
    "html": "<p>圖中，$O$ 為圓 $ABCD$ 的圓心。若 $\\angle BAO=28^\\circ$、$\\angle BCD=114^\\circ$ 及 $\\angle CDO=42^\\circ$，則 $\\angle ABC=$</p>\n<p><img alt=\"Figure Q20 (as printed)\" src=\"2012P2_zh_figs/Q20.png\" /></p>\n<ul>\n<li>A. $90^\\circ$。</li>\n<li>B. $96^\\circ$。</li>\n<li>C. $100^\\circ$。</li>\n<li>D. $138^\\circ$。</li>\n</ul>",
    "file": "2012_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 71
   },
   {
    "subject": "數學",
@@ -25245,7 +25777,8 @@ window.QB = {
    "text": "In the figure, $O$ is the centre of the circle $ABCD$. If $\\angle BAO = 28^\\circ$, $\\angle BCD = 114^\\circ$ and $\\angle CDO = 42^\\circ$, then $\\angle ABC =$\n\n\n![Figure Q20 (as printed)](2012P2_figs/Q20.png)\n\n- A. $90^\\circ$\n- B. $96^\\circ$\n- C. $100^\\circ$\n- D. $138^\\circ$",
    "html": "<p>In the figure, $O$ is the centre of the circle $ABCD$. If $\\angle BAO = 28^\\circ$, $\\angle BCD = 114^\\circ$ and $\\angle CDO = 42^\\circ$, then $\\angle ABC =$</p>\n<p><img alt=\"Figure Q20 (as printed)\" src=\"2012P2_figs/Q20.png\" /></p>\n<ul>\n<li>A. $90^\\circ$</li>\n<li>B. $96^\\circ$</li>\n<li>C. $100^\\circ$</li>\n<li>D. $138^\\circ$</li>\n</ul>",
    "file": "2012_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 71
   },
   {
    "subject": "數學",
@@ -25277,7 +25810,8 @@ window.QB = {
    "text": "圖中，$AB$ 為圓 $ABCD$ 的一直徑。若 $AB=12 \\text{ cm}$ 及 $CD=6 \\text{ cm}$，則陰影區域的面積為\n\n\n![Figure Q21 (as printed)](2012P2_zh_figs/Q21.png)\n\n- A. $(12\\pi-9) \\text{ cm}^2$。\n- B. $(12\\pi+9) \\text{ cm}^2$。\n- C. $(12\\pi-9\\sqrt{3}) \\text{ cm}^2$。\n- D. $(12\\pi+9\\sqrt{3}) \\text{ cm}^2$。",
    "html": "<p>圖中，$AB$ 為圓 $ABCD$ 的一直徑。若 $AB=12 \\text{ cm}$ 及 $CD=6 \\text{ cm}$，則陰影區域的面積為</p>\n<p><img alt=\"Figure Q21 (as printed)\" src=\"2012P2_zh_figs/Q21.png\" /></p>\n<ul>\n<li>A. $(12\\pi-9) \\text{ cm}^2$。</li>\n<li>B. $(12\\pi+9) \\text{ cm}^2$。</li>\n<li>C. $(12\\pi-9\\sqrt{3}) \\text{ cm}^2$。</li>\n<li>D. $(12\\pi+9\\sqrt{3}) \\text{ cm}^2$。</li>\n</ul>",
    "file": "2012_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 45
   },
   {
    "subject": "數學",
@@ -25295,7 +25829,8 @@ window.QB = {
    "text": "In the figure, $AB$ is a diameter of the circle $ABCD$. If $AB = 12 \\text{ cm}$ and $CD = 6 \\text{ cm}$, then the area of the shaded region is\n\n\n![Figure Q21 (as printed)](2012P2_figs/Q21.png)\n\n- A. $(12\\pi - 9) \\text{ cm}^2$\n- B. $(12\\pi + 9) \\text{ cm}^2$\n- C. $(12\\pi - 9\\sqrt{3}) \\text{ cm}^2$\n- D. $(12\\pi + 9\\sqrt{3}) \\text{ cm}^2$",
    "html": "<p>In the figure, $AB$ is a diameter of the circle $ABCD$. If $AB = 12 \\text{ cm}$ and $CD = 6 \\text{ cm}$, then the area of the shaded region is</p>\n<p><img alt=\"Figure Q21 (as printed)\" src=\"2012P2_figs/Q21.png\" /></p>\n<ul>\n<li>A. $(12\\pi - 9) \\text{ cm}^2$</li>\n<li>B. $(12\\pi + 9) \\text{ cm}^2$</li>\n<li>C. $(12\\pi - 9\\sqrt{3}) \\text{ cm}^2$</li>\n<li>D. $(12\\pi + 9\\sqrt{3}) \\text{ cm}^2$</li>\n</ul>",
    "file": "2012_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 45
   },
   {
    "subject": "數學",
@@ -25327,7 +25862,8 @@ window.QB = {
    "text": "下列有關正 12 邊形的敘述，何者正確？\nI. 每一外角均為 $30^\\circ$。\nII. 每一內角均為 $150^\\circ$。\nIII. 反射對稱軸的數目為 6。\n\n- A. 只有 I 及 II\n- B. 只有 I 及 III\n- C. 只有 II 及 III\n- D. I、II 及 III",
    "html": "<p>下列有關正 12 邊形的敘述，何者正確？\nI. 每一外角均為 $30^\\circ$。\nII. 每一內角均為 $150^\\circ$。\nIII. 反射對稱軸的數目為 6。</p>\n<ul>\n<li>A. 只有 I 及 II</li>\n<li>B. 只有 I 及 III</li>\n<li>C. 只有 II 及 III</li>\n<li>D. I、II 及 III</li>\n</ul>",
    "file": "2012_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 43
   },
   {
    "subject": "數學",
@@ -25343,7 +25879,8 @@ window.QB = {
    "text": "Which of the following statements about a regular 12-sided polygon are true? I. Each exterior angle is $30^\\circ$. II. Each interior angle is $150^\\circ$. III. The number of axes of reflectional symmetry is 6.\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
    "html": "<p>Which of the following statements about a regular 12-sided polygon are true? I. Each exterior angle is $30^\\circ$. II. Each interior angle is $150^\\circ$. III. The number of axes of reflectional symmetry is 6.</p>\n<ul>\n<li>A. I and II only</li>\n<li>B. I and III only</li>\n<li>C. II and III only</li>\n<li>D. I, II and III</li>\n</ul>",
    "file": "2012_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 43
   },
   {
    "subject": "數學",
@@ -25375,7 +25912,8 @@ window.QB = {
    "text": "點 $P$ 的直角坐標為 $(-3,-3\\sqrt{3})$。若 $P$ 繞原點逆時針方向旋轉 $90^\\circ$，則它的像的極坐標為\n\n- A. $(3,150^\\circ)$。\n- B. $(3,330^\\circ)$。\n- C. $(6,150^\\circ)$。\n- D. $(6,330^\\circ)$。",
    "html": "<p>點 $P$ 的直角坐標為 $(-3,-3\\sqrt{3})$。若 $P$ 繞原點逆時針方向旋轉 $90^\\circ$，則它的像的極坐標為</p>\n<ul>\n<li>A. $(3,150^\\circ)$。</li>\n<li>B. $(3,330^\\circ)$。</li>\n<li>C. $(6,150^\\circ)$。</li>\n<li>D. $(6,330^\\circ)$。</li>\n</ul>",
    "file": "2012_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 42
   },
   {
    "subject": "數學",
@@ -25393,7 +25931,8 @@ window.QB = {
    "text": "The rectangular coordinates of the point $P$ are $(-3, -3\\sqrt{3})$. If $P$ is rotated anticlockwise about the origin through $90^\\circ$, then the polar coordinates of its image are\n\n- A. $(3, 150^\\circ)$.\n- B. $(3, 330^\\circ)$.\n- C. $(6, 150^\\circ)$.\n- D. $(6, 330^\\circ)$.",
    "html": "<p>The rectangular coordinates of the point $P$ are $(-3, -3\\sqrt{3})$. If $P$ is rotated anticlockwise about the origin through $90^\\circ$, then the polar coordinates of its image are</p>\n<ul>\n<li>A. $(3, 150^\\circ)$.</li>\n<li>B. $(3, 330^\\circ)$.</li>\n<li>C. $(6, 150^\\circ)$.</li>\n<li>D. $(6, 330^\\circ)$.</li>\n</ul>",
    "file": "2012_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 42
   },
   {
    "subject": "數學",
@@ -25424,7 +25963,8 @@ window.QB = {
    "text": "若 $P$ 為直角坐標平面上的一動點使得 $P$ 與點 $(20,12)$ 之間的距離等於 5，則 $P$ 的軌跡為一\n\n- A. 圓。\n- B. 正方形。\n- C. 拋物線。\n- D. 三角形。",
    "html": "<p>若 $P$ 為直角坐標平面上的一動點使得 $P$ 與點 $(20,12)$ 之間的距離等於 5，則 $P$ 的軌跡為一</p>\n<ul>\n<li>A. 圓。</li>\n<li>B. 正方形。</li>\n<li>C. 拋物線。</li>\n<li>D. 三角形。</li>\n</ul>",
    "file": "2012_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 72
   },
   {
    "subject": "數學",
@@ -25442,7 +25982,8 @@ window.QB = {
    "text": "If $P$ is a moving point in the rectangular coordinate plane such that the distance between $P$ and the point $(20, 12)$ is equal to 5, then the locus of $P$ is a\n\n- A. circle.\n- B. square.\n- C. parabola.\n- D. triangle.",
    "html": "<p>If $P$ is a moving point in the rectangular coordinate plane such that the distance between $P$ and the point $(20, 12)$ is equal to 5, then the locus of $P$ is a</p>\n<ul>\n<li>A. circle.</li>\n<li>B. square.</li>\n<li>C. parabola.</li>\n<li>D. triangle.</li>\n</ul>",
    "file": "2012_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 72
   },
   {
    "subject": "數學",
@@ -25473,7 +26014,8 @@ window.QB = {
    "text": "圖中，直線 $L_1$ 及直線 $L_2$ 的方程分別為 $ax+y=b$ 及 $cx+y=d$。下列何者正確？\nI. $a<0$\nII. $a<c$\nIII. $b>d$\nIV. $ad>bc$\n\n\n![Figure Q25 (as printed)](2012P2_zh_figs/Q25.png)\n\n- A. 只有 I、II 及 III\n- B. 只有 I、II 及 IV\n- C. 只有 I、III 及 IV\n- D. 只有 II、III 及 IV",
    "html": "<p>圖中，直線 $L_1$ 及直線 $L_2$ 的方程分別為 $ax+y=b$ 及 $cx+y=d$。下列何者正確？\nI. $a&lt;0$\nII. $a<c$\nIII. $b>d$\nIV. $ad&gt;bc$</p>\n<p><img alt=\"Figure Q25 (as printed)\" src=\"2012P2_zh_figs/Q25.png\" /></p>\n<ul>\n<li>A. 只有 I、II 及 III</li>\n<li>B. 只有 I、II 及 IV</li>\n<li>C. 只有 I、III 及 IV</li>\n<li>D. 只有 II、III 及 IV</li>\n</ul>",
    "file": "2012_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 40
   },
   {
    "subject": "數學",
@@ -25489,7 +26031,8 @@ window.QB = {
    "text": "In the figure, the equations of the straight lines $ L_1 $ and $ L_2 $ are $ ax + y = b $ and $ cx + y = d $ respectively. Which of the following are true? I. $ a < 0 $ II. $ a < c $ III. $ b > d $ IV. $ ad > bc $\n\n\n![Figure Q25 (as printed)](2012P2_figs/Q25.png)\n\n- A. I, II and III only\n- B. I, II and IV only\n- C. I, III and IV only\n- D. II, III and IV only",
    "html": "<p>In the figure, the equations of the straight lines $ L_1 $ and $ L_2 $ are $ ax + y = b $ and $ cx + y = d $ respectively. Which of the following are true? I. $ a &lt; 0 $ II. $ a &lt; c $ III. $ b &gt; d $ IV. $ ad &gt; bc $</p>\n<p><img alt=\"Figure Q25 (as printed)\" src=\"2012P2_figs/Q25.png\" /></p>\n<ul>\n<li>A. I, II and III only</li>\n<li>B. I, II and IV only</li>\n<li>C. I, III and IV only</li>\n<li>D. II, III and IV only</li>\n</ul>",
    "file": "2012_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 40
   },
   {
    "subject": "數學",
@@ -25521,7 +26064,8 @@ window.QB = {
    "text": "圖中，圓的半徑及圓心的坐標分別為 $r$ 及 $(h,k)$。下列何者正確？\nI. $h+k>0$\nII. $r-h>0$\nIII. $r-k>0$\n\n\n![Figure Q26 (as printed)](2012P2_zh_figs/Q26.png)\n\n- A. 只有 I 及 II\n- B. 只有 I 及 III\n- C. 只有 II 及 III\n- D. I、II 及 III",
    "html": "<p>圖中，圓的半徑及圓心的坐標分別為 $r$ 及 $(h,k)$。下列何者正確？\nI. $h+k&gt;0$\nII. $r-h&gt;0$\nIII. $r-k&gt;0$</p>\n<p><img alt=\"Figure Q26 (as printed)\" src=\"2012P2_zh_figs/Q26.png\" /></p>\n<ul>\n<li>A. 只有 I 及 II</li>\n<li>B. 只有 I 及 III</li>\n<li>C. 只有 II 及 III</li>\n<li>D. I、II 及 III</li>\n</ul>",
    "file": "2012_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 56
   },
   {
    "subject": "數學",
@@ -25539,7 +26083,8 @@ window.QB = {
    "text": "In the figure, the radius of the circle and the coordinates of the centre are $ r $ and $ (h, k) $ respectively. Which of the following are true? I. $ h + k > 0 $ II. $ r - h > 0 $ III. $ r - k > 0 $\n\n\n![Figure Q26 (as printed)](2012P2_figs/Q26.png)\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
    "html": "<p>In the figure, the radius of the circle and the coordinates of the centre are $ r $ and $ (h, k) $ respectively. Which of the following are true? I. $ h + k &gt; 0 $ II. $ r - h &gt; 0 $ III. $ r - k &gt; 0 $</p>\n<p><img alt=\"Figure Q26 (as printed)\" src=\"2012P2_figs/Q26.png\" /></p>\n<ul>\n<li>A. I and II only</li>\n<li>B. I and III only</li>\n<li>C. II and III only</li>\n<li>D. I, II and III</li>\n</ul>",
    "file": "2012_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 56
   },
   {
    "subject": "數學",
@@ -25570,7 +26115,8 @@ window.QB = {
    "text": "$9\\star\\blacklozenge$ 為三位數，其中 $\\star$ 及 $\\blacklozenge$ 均為 0 至 9（包括 0 及 9）內的整數。求該三位數可被 5 整除的概率。\n\n- A. $\\dfrac{1}{5}$\n- B. $\\dfrac{7}{33}$\n- C. $\\dfrac{20}{99}$\n- D. $\\dfrac{19}{100}$",
    "html": "<p>$9\\star\\blacklozenge$ 為三位數，其中 $\\star$ 及 $\\blacklozenge$ 均為 0 至 9（包括 0 及 9）內的整數。求該三位數可被 5 整除的概率。</p>\n<ul>\n<li>A. $\\dfrac{1}{5}$</li>\n<li>B. $\\dfrac{7}{33}$</li>\n<li>C. $\\dfrac{20}{99}$</li>\n<li>D. $\\dfrac{19}{100}$</li>\n</ul>",
    "file": "2012_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 50
   },
   {
    "subject": "數學",
@@ -25586,7 +26132,8 @@ window.QB = {
    "text": "$ 9 \\star \\diamondsuit $ is a 3-digit number, where $ \\star $ and $ \\diamondsuit $ are integers from 0 to 9 inclusive. Find the probability that the 3-digit number is divisible by 5.\n\n- A. $\\dfrac{1}{5}$\n- B. $\\dfrac{7}{33}$\n- C. $\\dfrac{20}{99}$\n- D. $\\dfrac{19}{100}$ 9",
    "html": "<p>$ 9 \\star \\diamondsuit $ is a 3-digit number, where $ \\star $ and $ \\diamondsuit $ are integers from 0 to 9 inclusive. Find the probability that the 3-digit number is divisible by 5.</p>\n<ul>\n<li>A. $\\dfrac{1}{5}$</li>\n<li>B. $\\dfrac{7}{33}$</li>\n<li>C. $\\dfrac{20}{99}$</li>\n<li>D. $\\dfrac{19}{100}$ 9</li>\n</ul>",
    "file": "2012_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 50
   },
   {
    "subject": "數學",
@@ -25618,7 +26165,8 @@ window.QB = {
    "text": "下面的幹葉圖顯示一群文娛中心的會員的年齡的分佈。\n\n:::stemleaf\n幹（十位） | 葉（個位）\n5 | 0 5 6 6 8\n6 | 1 4 5 5 7 8 8 9\n7 | 3 4 4 6 7 9\n8 |\n9 | 1\n:::\n\n從該群中隨機選出一名會員。求所選出的會員的年齡不小於 74 的概率。\n\n- A. 0.2\n- B. 0.3\n- C. 0.7\n- D. 0.8",
    "html": "<p>下面的幹葉圖顯示一群文娛中心的會員的年齡的分佈。</p>\n<p>:::stemleaf\n幹（十位） | 葉（個位）\n5 | 0 5 6 6 8\n6 | 1 4 5 5 7 8 8 9\n7 | 3 4 4 6 7 9\n8 |\n9 | 1\n:::</p>\n<p>從該群中隨機選出一名會員。求所選出的會員的年齡不小於 74 的概率。</p>\n<ul>\n<li>A. 0.2</li>\n<li>B. 0.3</li>\n<li>C. 0.7</li>\n<li>D. 0.8</li>\n</ul>",
    "file": "2012_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 59
   },
   {
    "subject": "數學",
@@ -25636,7 +26184,8 @@ window.QB = {
    "text": "The stem-and-leaf diagram below shows the distribution of the ages of a group of members in a recreational centre.\n\n:::stemleaf\nStem (tens) | Leaf (units)\n5 | 0 5 6 6 8\n6 | 1 4 5 5 7 8 8 9\n7 | 3 4 4 6 7 9\n8 |\n9 | 1\n:::\n- A. 0.2\n- B. 0.3\n- C. 0.7\n- D. 0.8",
    "html": "<p>The stem-and-leaf diagram below shows the distribution of the ages of a group of members in a recreational centre.</p>\n<p>:::stemleaf\nStem (tens) | Leaf (units)\n5 | 0 5 6 6 8\n6 | 1 4 5 5 7 8 8 9\n7 | 3 4 4 6 7 9\n8 |\n9 | 1\n:::\n- A. 0.2\n- B. 0.3\n- C. 0.7\n- D. 0.8</p>",
    "file": "2012_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 59
   },
   {
    "subject": "數學",
@@ -25668,7 +26217,8 @@ window.QB = {
    "text": "下面的棒形圖顯示一群女生擁有指環的數目的分佈。求該分佈的標準差準確至二位小數。\n\n\n![Figure Q29 (as printed)](2012P2_zh_figs/Q29.png)\n\n- A. 1.04\n- B. 1.16\n- C. 1.19\n- D. 2.09",
    "html": "<p>下面的棒形圖顯示一群女生擁有指環的數目的分佈。求該分佈的標準差準確至二位小數。</p>\n<p><img alt=\"Figure Q29 (as printed)\" src=\"2012P2_zh_figs/Q29.png\" /></p>\n<ul>\n<li>A. 1.04</li>\n<li>B. 1.16</li>\n<li>C. 1.19</li>\n<li>D. 2.09</li>\n</ul>",
    "file": "2012_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 71
   },
   {
    "subject": "數學",
@@ -25686,7 +26236,8 @@ window.QB = {
    "text": "The bar chart below shows the distribution of the numbers of rings owned by the girls in a group. Find the standard deviation of the distribution correct to 2 decimal places.\n\n\n![Figure Q29 (as printed)](2012P2_figs/Q29.png)\n\n- A. 1.04\n- B. 1.16\n- C. 1.19\n- D. 2.09",
    "html": "<p>The bar chart below shows the distribution of the numbers of rings owned by the girls in a group. Find the standard deviation of the distribution correct to 2 decimal places.</p>\n<p><img alt=\"Figure Q29 (as printed)\" src=\"2012P2_figs/Q29.png\" /></p>\n<ul>\n<li>A. 1.04</li>\n<li>B. 1.16</li>\n<li>C. 1.19</li>\n<li>D. 2.09</li>\n</ul>",
    "file": "2012_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 71
   },
   {
    "subject": "數學",
@@ -25719,7 +26270,8 @@ window.QB = {
    "text": "考慮以下數據：\n\n19   10   12   12   13   13   14   15   16   $m$   $n$\n\n若以上數據的平均值及中位數均為 14，則下列何者正確？\nI. $m \\ge 14$\nII. $n \\le 16$\nIII. $m+n=30$\n\n- A. 只有 I 及 II\n- B. 只有 I 及 III\n- C. 只有 II 及 III\n- D. I、II 及 III",
    "html": "<p>考慮以下數據：</p>\n<p>19   10   12   12   13   13   14   15   16   $m$   $n$</p>\n<p>若以上數據的平均值及中位數均為 14，則下列何者正確？\nI. $m \\ge 14$\nII. $n \\le 16$\nIII. $m+n=30$</p>\n<ul>\n<li>A. 只有 I 及 II</li>\n<li>B. 只有 I 及 III</li>\n<li>C. 只有 II 及 III</li>\n<li>D. I、II 及 III</li>\n</ul>",
    "file": "2012_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 47
   },
   {
    "subject": "數學",
@@ -25737,7 +26289,8 @@ window.QB = {
    "text": "Consider the following data: 19 10 12 12 13 13 14 15 16 m n If both the mean and the median of the above data are 14, which of the following are true? I. m ≥ 14 II. n ≤ 16 III. m + n = 30\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
    "html": "<p>Consider the following data: 19 10 12 12 13 13 14 15 16 m n If both the mean and the median of the above data are 14, which of the following are true? I. m ≥ 14 II. n ≤ 16 III. m + n = 30</p>\n<ul>\n<li>A. I and II only</li>\n<li>B. I and III only</li>\n<li>C. II and III only</li>\n<li>D. I, II and III</li>\n</ul>",
    "file": "2012_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 47
   },
   {
    "subject": "數學",
@@ -25769,7 +26322,8 @@ window.QB = {
    "text": "三個數式的 H.C.F. 及 L.C.M. 分別為 $ab^2$ 及 $4a^4b^5c^6$。若第一個數式及第二個數式分別為 $2a^2b^4c$ 及 $4a^4b^2c^6$，則第三個數式為\n\n- A. $ab^2$。\n- B. $ab^5$。\n- C. $2ab^2c$。\n- D. $2ab^5c$。",
    "html": "<p>三個數式的 H.C.F. 及 L.C.M. 分別為 $ab^2$ 及 $4a^4b^5c^6$。若第一個數式及第二個數式分別為 $2a^2b^4c$ 及 $4a^4b^2c^6$，則第三個數式為</p>\n<ul>\n<li>A. $ab^2$。</li>\n<li>B. $ab^5$。</li>\n<li>C. $2ab^2c$。</li>\n<li>D. $2ab^5c$。</li>\n</ul>",
    "file": "2012_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 55
   },
   {
    "subject": "數學",
@@ -25787,7 +26341,8 @@ window.QB = {
    "text": "The H.C.F. and the L.C.M. of three expressions are $ ab^2 $ and $ 4a^4b^5c^6 $ respectively. If the first expression and the second expression are $ 2a^2b^4c $ and $ 4a^4b^2c^6 $ respectively, then the third expression is\n\n- A. $ ab^2 $\n- B. $ ab^5 $\n- C. $ 2ab^2c $\n- D. $ 2ab^5c $",
    "html": "<p>The H.C.F. and the L.C.M. of three expressions are $ ab^2 $ and $ 4a^4b^5c^6 $ respectively. If the first expression and the second expression are $ 2a^2b^4c $ and $ 4a^4b^2c^6 $ respectively, then the third expression is</p>\n<ul>\n<li>A. $ ab^2 $</li>\n<li>B. $ ab^5 $</li>\n<li>C. $ 2ab^2c $</li>\n<li>D. $ 2ab^5c $</li>\n</ul>",
    "file": "2012_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 55
   },
   {
    "subject": "數學",
@@ -25819,7 +26374,8 @@ window.QB = {
    "text": "圖中的圖像顯示 $x$ 與 $\\log_3 y$ 之間的線性關係。若 $y=mn^x$，則 $n=$\n\n\n![Figure Q32 (as printed)](2012P2_zh_figs/Q32.png)\n\n- A. $\\dfrac{1}{81}$。\n- B. $\\dfrac{1}{9}$。\n- C. $9$。\n- D. $81$。",
    "html": "<p>圖中的圖像顯示 $x$ 與 $\\log_3 y$ 之間的線性關係。若 $y=mn^x$，則 $n=$</p>\n<p><img alt=\"Figure Q32 (as printed)\" src=\"2012P2_zh_figs/Q32.png\" /></p>\n<ul>\n<li>A. $\\dfrac{1}{81}$。</li>\n<li>B. $\\dfrac{1}{9}$。</li>\n<li>C. $9$。</li>\n<li>D. $81$。</li>\n</ul>",
    "file": "2012_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 43
   },
   {
    "subject": "數學",
@@ -25837,7 +26393,8 @@ window.QB = {
    "text": "The graph in the figure shows the linear relation between $ x $ and $ \\log_3 y $. If $ y = mn^x $, then $ n = $\n\n\n![Figure Q32 (as printed)](2012P2_figs/Q32.png)\n\n- A. $ \\dfrac{1}{81} $\n- B. $ \\dfrac{1}{9} $\n- C. 9\n- D. 81",
    "html": "<p>The graph in the figure shows the linear relation between $ x $ and $ \\log_3 y $. If $ y = mn^x $, then $ n = $</p>\n<p><img alt=\"Figure Q32 (as printed)\" src=\"2012P2_figs/Q32.png\" /></p>\n<ul>\n<li>A. $ \\dfrac{1}{81} $</li>\n<li>B. $ \\dfrac{1}{9} $</li>\n<li>C. 9</li>\n<li>D. 81</li>\n</ul>",
    "file": "2012_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 43
   },
   {
    "subject": "數學",
@@ -25869,7 +26426,8 @@ window.QB = {
    "text": "$\\mathrm{AD0000002012}_{16} =$\n\n- A. $(10)16^{11}+(13)16^{10}+8210$。\n- B. $(10)16^{12}+(13)16^{11}+131360$。\n- C. $(11)16^{11}+(14)16^{10}+8210$。\n- D. $(11)16^{12}+(14)16^{11}+131360$。",
    "html": "<p>$\\mathrm{AD0000002012}_{16} =$</p>\n<ul>\n<li>A. $(10)16^{11}+(13)16^{10}+8210$。</li>\n<li>B. $(10)16^{12}+(13)16^{11}+131360$。</li>\n<li>C. $(11)16^{11}+(14)16^{10}+8210$。</li>\n<li>D. $(11)16^{12}+(14)16^{11}+131360$。</li>\n</ul>",
    "file": "2012_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 64
   },
   {
    "subject": "數學",
@@ -25887,7 +26445,8 @@ window.QB = {
    "text": "AD0000002012$_{16}$ =\n\n- A. $ (10)16^{11} + (13)16^{10} + 8210 $\n- B. $ (10)16^{12} + (13)16^{11} + 131360 $\n- C. $ (11)16^{11} + (14)16^{10} + 8210 $\n- D. $ (11)16^{12} + (14)16^{11} + 131360 $",
    "html": "<p>AD0000002012$_{16}$ =</p>\n<ul>\n<li>A. $ (10)16^{11} + (13)16^{10} + 8210 $</li>\n<li>B. $ (10)16^{12} + (13)16^{11} + 131360 $</li>\n<li>C. $ (11)16^{11} + (14)16^{10} + 8210 $</li>\n<li>D. $ (11)16^{12} + (14)16^{11} + 131360 $</li>\n</ul>",
    "file": "2012_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 64
   },
   {
    "subject": "數學",
@@ -25918,7 +26477,8 @@ window.QB = {
    "text": "設 $f(x)$ 為二次函數。若 $y=f(x)$ 的圖像的頂點的坐標為 $(3,-4)$，則下列何者必為正確？\n\n- A. 方程 $f(x)=0$ 的根均為整數。\n- B. 方程 $f(x)-3=0$ 的根均為有理數。\n- C. 方程 $f(x)+4=0$ 的根均為實數。\n- D. 方程 $f(x)+5=0$ 的根均為非實數。",
    "html": "<p>設 $f(x)$ 為二次函數。若 $y=f(x)$ 的圖像的頂點的坐標為 $(3,-4)$，則下列何者必為正確？</p>\n<ul>\n<li>A. 方程 $f(x)=0$ 的根均為整數。</li>\n<li>B. 方程 $f(x)-3=0$ 的根均為有理數。</li>\n<li>C. 方程 $f(x)+4=0$ 的根均為實數。</li>\n<li>D. 方程 $f(x)+5=0$ 的根均為非實數。</li>\n</ul>",
    "file": "2012_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 49
   },
   {
    "subject": "數學",
@@ -25935,7 +26495,8 @@ window.QB = {
    "text": "Let $ f(x) $ be a quadratic function. If the coordinates of the vertex of the graph of $ y = f(x) $ are $ (3, -4) $, which of the following must be true?\n\n- A. The roots of the equation $ f(x) = 0 $ are integers.\n- B. The roots of the equation $ f(x) - 3 = 0 $ are rational numbers.\n- C. The roots of the equation $ f(x) + 4 = 0 $ are real numbers.\n- D. The roots of the equation $ f(x) + 5 = 0 $ are nonreal numbers. 11",
    "html": "<p>Let $ f(x) $ be a quadratic function. If the coordinates of the vertex of the graph of $ y = f(x) $ are $ (3, -4) $, which of the following must be true?</p>\n<ul>\n<li>A. The roots of the equation $ f(x) = 0 $ are integers.</li>\n<li>B. The roots of the equation $ f(x) - 3 = 0 $ are rational numbers.</li>\n<li>C. The roots of the equation $ f(x) + 4 = 0 $ are real numbers.</li>\n<li>D. The roots of the equation $ f(x) + 5 = 0 $ are nonreal numbers. 11</li>\n</ul>",
    "file": "2012_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 49
   },
   {
    "subject": "數學",
@@ -25966,7 +26527,8 @@ window.QB = {
    "text": "$i^3(\\beta i-3)=$\n\n- A. $\\beta+3i$。\n- B. $\\beta-3i$。\n- C. $-\\beta+3i$。\n- D. $-\\beta-3i$。",
    "html": "<p>$i^3(\\beta i-3)=$</p>\n<ul>\n<li>A. $\\beta+3i$。</li>\n<li>B. $\\beta-3i$。</li>\n<li>C. $-\\beta+3i$。</li>\n<li>D. $-\\beta-3i$。</li>\n</ul>",
    "file": "2012_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 55
   },
   {
    "subject": "數學",
@@ -25982,7 +26544,8 @@ window.QB = {
    "text": "$i^{3}(\\beta i-3)=$\n\n- A. $\\beta+3i$\n- B. $\\beta-3i$\n- C. $-\\beta+3i$\n- D. $-\\beta-3i$",
    "html": "<p>$i^{3}(\\beta i-3)=$</p>\n<ul>\n<li>A. $\\beta+3i$</li>\n<li>B. $\\beta-3i$</li>\n<li>C. $-\\beta+3i$</li>\n<li>D. $-\\beta-3i$</li>\n</ul>",
    "file": "2012_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 55
   },
   {
    "subject": "數學",
@@ -26014,7 +26577,8 @@ window.QB = {
    "text": "圖中所示為一陰影區域（包括邊界在內）。若 $(h,k)$ 為陰影區域中的一點，則下列何者正確？\nI. $k \\ge 3$\nII. $h-k \\ge -3$\nIII. $2h+k \\le 6$\n\n\n![Figure Q36 (as printed)](2012P2_zh_figs/Q36.png)\n\n- A. 只有 I 及 II\n- B. 只有 I 及 III\n- C. 只有 II 及 III\n- D. I、II 及 III",
    "html": "<p>圖中所示為一陰影區域（包括邊界在內）。若 $(h,k)$ 為陰影區域中的一點，則下列何者正確？\nI. $k \\ge 3$\nII. $h-k \\ge -3$\nIII. $2h+k \\le 6$</p>\n<p><img alt=\"Figure Q36 (as printed)\" src=\"2012P2_zh_figs/Q36.png\" /></p>\n<ul>\n<li>A. 只有 I 及 II</li>\n<li>B. 只有 I 及 III</li>\n<li>C. 只有 II 及 III</li>\n<li>D. I、II 及 III</li>\n</ul>",
    "file": "2012_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 37
   },
   {
    "subject": "數學",
@@ -26032,7 +26596,8 @@ window.QB = {
    "text": "The figure shows a shaded region (including the boundary). If $(h,k)$ is a point lying in the shaded region, which of the following are true? I. $k \\geq 3$ II. $h-k \\geq -3$ III. $2h+k \\leq 6$\n\n\n![Figure Q36 (as printed)](2012P2_figs/Q36.png)\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
    "html": "<p>The figure shows a shaded region (including the boundary). If $(h,k)$ is a point lying in the shaded region, which of the following are true? I. $k \\geq 3$ II. $h-k \\geq -3$ III. $2h+k \\leq 6$</p>\n<p><img alt=\"Figure Q36 (as printed)\" src=\"2012P2_figs/Q36.png\" /></p>\n<ul>\n<li>A. I and II only</li>\n<li>B. I and III only</li>\n<li>C. II and III only</li>\n<li>D. I, II and III</li>\n</ul>",
    "file": "2012_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 37
   },
   {
    "subject": "數學",
@@ -26063,7 +26628,8 @@ window.QB = {
    "text": "設 $a_n$ 為一等差數列的第 $n$ 項。若 $a_{18}=26$ 及 $a_{23}=61$，則下列何者正確？\nI. $a_{14}<0$\nII. $a_1-a_2<0$\nIII. $a_1+a_2+a_3+\\cdots+a_{27}>0$\n\n- A. 只有 I 及 II\n- B. 只有 I 及 III\n- C. 只有 II 及 III\n- D. I、II 及 III",
    "html": "<p>設 $a_n$ 為一等差數列的第 $n$ 項。若 $a_{18}=26$ 及 $a_{23}=61$，則下列何者正確？\nI. $a_{14}&lt;0$\nII. $a_1-a_2&lt;0$\nIII. $a_1+a_2+a_3+\\cdots+a_{27}&gt;0$</p>\n<ul>\n<li>A. 只有 I 及 II</li>\n<li>B. 只有 I 及 III</li>\n<li>C. 只有 II 及 III</li>\n<li>D. I、II 及 III</li>\n</ul>",
    "file": "2012_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 43
   },
   {
    "subject": "數學",
@@ -26079,7 +26645,8 @@ window.QB = {
    "text": "Let $a_{n}$ be the $n$th term of an arithmetic sequence. If $a_{18}=26$ and $a_{23}=61$, which of the following are true? I. $a_{14}<0$ II. $a_{1}-a_{2}<0$ III. $a_{1}+a_{2}+a_{3}+\\cdots+a_{27}>0$\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III",
    "html": "<p>Let $a_{n}$ be the $n$th term of an arithmetic sequence. If $a_{18}=26$ and $a_{23}=61$, which of the following are true? I. $a_{14}&lt;0$ II. $a_{1}-a_{2}&lt;0$ III. $a_{1}+a_{2}+a_{3}+\\cdots+a_{27}&gt;0$</p>\n<ul>\n<li>A. I and II only</li>\n<li>B. I and III only</li>\n<li>C. II and III only</li>\n<li>D. I, II and III</li>\n</ul>",
    "file": "2012_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 43
   },
   {
    "subject": "數學",
@@ -26111,7 +26678,8 @@ window.QB = {
    "text": "下列何者可表示在同一直角坐標系上 $y=f(x)$ 的圖像及 $y=f(x-2)+1$ 的圖像？\n\n- A. ![Figure Q38A](2012P2_zh_figs/Q38A.png)\n- B. ![Figure Q38B](2012P2_zh_figs/Q38B.png)\n- C. ![Figure Q38C](2012P2_zh_figs/Q38C.png)\n- D. ![Figure Q38D](2012P2_zh_figs/Q38D.png)",
    "html": "<p>下列何者可表示在同一直角坐標系上 $y=f(x)$ 的圖像及 $y=f(x-2)+1$ 的圖像？</p>\n<ul>\n<li>A. <img alt=\"Figure Q38A\" src=\"2012P2_zh_figs/Q38A.png\" /></li>\n<li>B. <img alt=\"Figure Q38B\" src=\"2012P2_zh_figs/Q38B.png\" /></li>\n<li>C. <img alt=\"Figure Q38C\" src=\"2012P2_zh_figs/Q38C.png\" /></li>\n<li>D. <img alt=\"Figure Q38D\" src=\"2012P2_zh_figs/Q38D.png\" /></li>\n</ul>",
    "file": "2012_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 63
   },
   {
    "subject": "數學",
@@ -26127,7 +26695,8 @@ window.QB = {
    "text": "Which of the following may represent the graph of $ y = f(x) $ and the graph of $ y = f(x-2) + 1 $ on the same rectangular coordinate system?\n\n- A. ![Figure Q38A](2012P2_figs/Q38A.png)\n- B. ![Figure Q38B](2012P2_figs/Q38B.png)\n- C. ![Figure Q38C](2012P2_figs/Q38C.png)\n- D. ![Figure Q38D](2012P2_figs/Q38D.png)",
    "html": "<p>Which of the following may represent the graph of $ y = f(x) $ and the graph of $ y = f(x-2) + 1 $ on the same rectangular coordinate system?</p>\n<ul>\n<li>A. <img alt=\"Figure Q38A\" src=\"2012P2_figs/Q38A.png\" /></li>\n<li>B. <img alt=\"Figure Q38B\" src=\"2012P2_figs/Q38B.png\" /></li>\n<li>C. <img alt=\"Figure Q38C\" src=\"2012P2_figs/Q38C.png\" /></li>\n<li>D. <img alt=\"Figure Q38D\" src=\"2012P2_figs/Q38D.png\" /></li>\n</ul>",
    "file": "2012_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 63
   },
   {
    "subject": "數學",
@@ -26159,7 +26728,8 @@ window.QB = {
    "text": "圖中所示為\n\n\n![Figure Q39 (as printed)](2012P2_zh_figs/Q39.png)\n\n- A. $y=1+3\\cos\\dfrac{x^\\circ}{2}$ 的圖像。\n- B. $y=1+3\\cos 2x^\\circ$ 的圖像。\n- C. $y=4+3\\cos\\dfrac{x^\\circ}{2}$ 的圖像。\n- D. $y=4+3\\cos 2x^\\circ$ 的圖像。",
    "html": "<p>圖中所示為</p>\n<p><img alt=\"Figure Q39 (as printed)\" src=\"2012P2_zh_figs/Q39.png\" /></p>\n<ul>\n<li>A. $y=1+3\\cos\\dfrac{x^\\circ}{2}$ 的圖像。</li>\n<li>B. $y=1+3\\cos 2x^\\circ$ 的圖像。</li>\n<li>C. $y=4+3\\cos\\dfrac{x^\\circ}{2}$ 的圖像。</li>\n<li>D. $y=4+3\\cos 2x^\\circ$ 的圖像。</li>\n</ul>",
    "file": "2012_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 53
   },
   {
    "subject": "數學",
@@ -26177,7 +26747,8 @@ window.QB = {
    "text": "The figure shows\n\n\n![Figure Q39 (as printed)](2012P2_figs/Q39.png)\n\n- A. the graph of $ y = 1 + 3 \\cos \\dfrac{x^\\circ}{2} $.\n- B. the graph of $ y = 1 + 3 \\cos 2x^\\circ $.\n- C. the graph of $ y = 4 + 3 \\cos \\dfrac{x^\\circ}{2} $.\n- D. the graph of $ y = 4 + 3 \\cos 2x^\\circ $.",
    "html": "<p>The figure shows</p>\n<p><img alt=\"Figure Q39 (as printed)\" src=\"2012P2_figs/Q39.png\" /></p>\n<ul>\n<li>A. the graph of $ y = 1 + 3 \\cos \\dfrac{x^\\circ}{2} $.</li>\n<li>B. the graph of $ y = 1 + 3 \\cos 2x^\\circ $.</li>\n<li>C. the graph of $ y = 4 + 3 \\cos \\dfrac{x^\\circ}{2} $.</li>\n<li>D. the graph of $ y = 4 + 3 \\cos 2x^\\circ $.</li>\n</ul>",
    "file": "2012_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 53
   },
   {
    "subject": "數學",
@@ -26208,7 +26779,8 @@ window.QB = {
    "text": "圖中所示為一正四面體 $ABCD$。求平面 $ABC$ 與平面 $BCD$ 之間的交角準確至最接近的度。\n\n\n![Figure Q40 (as printed)](2012P2_zh_figs/Q40.png)\n\n- A. $48^\\circ$\n- B. $53^\\circ$\n- C. $60^\\circ$\n- D. $71^\\circ$",
    "html": "<p>圖中所示為一正四面體 $ABCD$。求平面 $ABC$ 與平面 $BCD$ 之間的交角準確至最接近的度。</p>\n<p><img alt=\"Figure Q40 (as printed)\" src=\"2012P2_zh_figs/Q40.png\" /></p>\n<ul>\n<li>A. $48^\\circ$</li>\n<li>B. $53^\\circ$</li>\n<li>C. $60^\\circ$</li>\n<li>D. $71^\\circ$</li>\n</ul>",
    "file": "2012_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 30
   },
   {
    "subject": "數學",
@@ -26226,7 +26798,8 @@ window.QB = {
    "text": "The figure shows a regular tetrahedron $ABCD$. Find the angle between the plane $ABC$ and the plane $BCD$ correct to the nearest degree.\n\n\n![Figure Q40 (as printed)](2012P2_figs/Q40.png)\n\n- A. $48^\\circ$\n- B. $53^\\circ$\n- C. $60^\\circ$\n- D. $71^\\circ$",
    "html": "<p>The figure shows a regular tetrahedron $ABCD$. Find the angle between the plane $ABC$ and the plane $BCD$ correct to the nearest degree.</p>\n<p><img alt=\"Figure Q40 (as printed)\" src=\"2012P2_figs/Q40.png\" /></p>\n<ul>\n<li>A. $48^\\circ$</li>\n<li>B. $53^\\circ$</li>\n<li>C. $60^\\circ$</li>\n<li>D. $71^\\circ$</li>\n</ul>",
    "file": "2012_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 30
   },
   {
    "subject": "數學",
@@ -26258,7 +26831,8 @@ window.QB = {
    "text": "圖中，$PQ$ 為圓 $ABC$ 在 $O$ 的切線，其中 $O$ 為半圓 $PBQ$ 的圓心。已知 $BCP$ 為一直線。若 $\\angle BPQ=12^\\circ$，則 $\\angle BAC=$\n\n\n![Figure Q41 (as printed)](2012P2_zh_figs/Q41.png)\n\n- A. $18^\\circ$。\n- B. $24^\\circ$。\n- C. $36^\\circ$。\n- D. $54^\\circ$。",
    "html": "<p>圖中，$PQ$ 為圓 $ABC$ 在 $O$ 的切線，其中 $O$ 為半圓 $PBQ$ 的圓心。已知 $BCP$ 為一直線。若 $\\angle BPQ=12^\\circ$，則 $\\angle BAC=$</p>\n<p><img alt=\"Figure Q41 (as printed)\" src=\"2012P2_zh_figs/Q41.png\" /></p>\n<ul>\n<li>A. $18^\\circ$。</li>\n<li>B. $24^\\circ$。</li>\n<li>C. $36^\\circ$。</li>\n<li>D. $54^\\circ$。</li>\n</ul>",
    "file": "2012_P2_題目中文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 47
   },
   {
    "subject": "數學",
@@ -26276,7 +26850,8 @@ window.QB = {
    "text": "In the figure, $PQ$ is the tangent to the circle $ABC$ at $O$, where $O$ is the centre of the semicircle $PBQ$. It is given that $BCP$ is a straight line. If $\\angle BPQ = 12^\\circ$, then $\\angle BAC =$\n\n\n![Figure Q41 (as printed)](2012P2_figs/Q41.png)\n\n- A. $18^\\circ$\n- B. $24^\\circ$\n- C. $36^\\circ$\n- D. $54^\\circ$",
    "html": "<p>In the figure, $PQ$ is the tangent to the circle $ABC$ at $O$, where $O$ is the centre of the semicircle $PBQ$. It is given that $BCP$ is a straight line. If $\\angle BPQ = 12^\\circ$, then $\\angle BAC =$</p>\n<p><img alt=\"Figure Q41 (as printed)\" src=\"2012P2_figs/Q41.png\" /></p>\n<ul>\n<li>A. $18^\\circ$</li>\n<li>B. $24^\\circ$</li>\n<li>C. $36^\\circ$</li>\n<li>D. $54^\\circ$</li>\n</ul>",
    "file": "2012_P2_題目英文卷.md",
-   "answer": "C"
+   "answer": "C",
+   "answer_pct": 47
   },
   {
    "subject": "數學",
@@ -26308,7 +26883,8 @@ window.QB = {
    "text": "求 $k$ 值的範圍使得圓 $x^2+y^2+2x-4y-13=0$ 與直線 $x-y+k=0$ 相交於兩相異點。\n\n- A. $-9<k<3$\n- B. $-3<k<9$\n- C. $k<-9$ 或 $k>3$\n- D. $k<-3$ 或 $k>9$",
    "html": "<p>求 $k$ 值的範圍使得圓 $x^2+y^2+2x-4y-13=0$ 與直線 $x-y+k=0$ 相交於兩相異點。</p>\n<ul>\n<li>A. $-9&lt;k&lt;3$</li>\n<li>B. $-3&lt;k&lt;9$</li>\n<li>C. $k&lt;-9$ 或 $k&gt;3$</li>\n<li>D. $k&lt;-3$ 或 $k&gt;9$</li>\n</ul>",
    "file": "2012_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 36
   },
   {
    "subject": "數學",
@@ -26325,7 +26901,8 @@ window.QB = {
    "text": "Find the range of values of $k$ such that the circle $x^2 + y^2 + 2x - 4y - 13 = 0$ and the straight line $x - y + k = 0$ intersect at two distinct points.\n\n- A. $-9 < k < 3$\n- B. $-3 < k < 9$\n- C. $k < -9$ or $k > 3$\n- D. $k < -3$ or $k > 9$",
    "html": "<p>Find the range of values of $k$ such that the circle $x^2 + y^2 + 2x - 4y - 13 = 0$ and the straight line $x - y + k = 0$ intersect at two distinct points.</p>\n<ul>\n<li>A. $-9 &lt; k &lt; 3$</li>\n<li>B. $-3 &lt; k &lt; 9$</li>\n<li>C. $k &lt; -9$ or $k &gt; 3$</li>\n<li>D. $k &lt; -3$ or $k &gt; 9$</li>\n</ul>",
    "file": "2012_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 36
   },
   {
    "subject": "數學",
@@ -26356,7 +26933,8 @@ window.QB = {
    "text": "某戲劇學會由 12 名男生及 8 名女生組成。若從該學會中選出 5 名學生為一隊參加比賽且該隊至少有一名女生，則可組成多少不同的隊？\n\n- A. 3960\n- B. 14712\n- C. 15448\n- D. 15504",
    "html": "<p>某戲劇學會由 12 名男生及 8 名女生組成。若從該學會中選出 5 名學生為一隊參加比賽且該隊至少有一名女生，則可組成多少不同的隊？</p>\n<ul>\n<li>A. 3960</li>\n<li>B. 14712</li>\n<li>C. 15448</li>\n<li>D. 15504</li>\n</ul>",
    "file": "2012_P2_題目中文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 52
   },
   {
    "subject": "數學",
@@ -26372,7 +26950,8 @@ window.QB = {
    "text": "A drama club is formed by 12 boys and 8 girls. If a team of 5 students is selected from the club to participate in a competition and the team consists of at least one girl, how many different teams can be formed?\n\n- A. 3960\n- B. 14712\n- C. 15448\n- D. 15504",
    "html": "<p>A drama club is formed by 12 boys and 8 girls. If a team of 5 students is selected from the club to participate in a competition and the team consists of at least one girl, how many different teams can be formed?</p>\n<ul>\n<li>A. 3960</li>\n<li>B. 14712</li>\n<li>C. 15448</li>\n<li>D. 15504</li>\n</ul>",
    "file": "2012_P2_題目英文卷.md",
-   "answer": "B"
+   "answer": "B",
+   "answer_pct": 52
   },
   {
    "subject": "數學",
@@ -26403,7 +26982,8 @@ window.QB = {
    "text": "某盒子中有六個球，該六個球分別記有數字 7、8、8、9、9 及 9。偉明從該盒子中隨機重複取球，每次只取出一個且不放回該盒子中，直至取出的數字是 9 為止。求他需要取球恰好三次的概率。\n\n- A. $\\dfrac{1}{2}$\n- B. $\\dfrac{1}{6}$\n- C. $\\dfrac{1}{8}$\n- D. $\\dfrac{3}{20}$",
    "html": "<p>某盒子中有六個球，該六個球分別記有數字 7、8、8、9、9 及 9。偉明從該盒子中隨機重複取球，每次只取出一個且不放回該盒子中，直至取出的數字是 9 為止。求他需要取球恰好三次的概率。</p>\n<ul>\n<li>A. $\\dfrac{1}{2}$</li>\n<li>B. $\\dfrac{1}{6}$</li>\n<li>C. $\\dfrac{1}{8}$</li>\n<li>D. $\\dfrac{3}{20}$</li>\n</ul>",
    "file": "2012_P2_題目中文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 56
   },
   {
    "subject": "數學",
@@ -26421,7 +27001,8 @@ window.QB = {
    "text": "A box contains six balls numbered 7, 8, 8, 9, 9 and 9 respectively. John repeats drawing one ball at a time randomly from the box without replacement until the number drawn is 9. Find the probability that he needs exactly three draws.\n\n- A. $\\dfrac{1}{2}$\n- B. $\\dfrac{1}{6}$\n- C. $\\dfrac{1}{8}$\n- D. $\\dfrac{3}{20}$",
    "html": "<p>A box contains six balls numbered 7, 8, 8, 9, 9 and 9 respectively. John repeats drawing one ball at a time randomly from the box without replacement until the number drawn is 9. Find the probability that he needs exactly three draws.</p>\n<ul>\n<li>A. $\\dfrac{1}{2}$</li>\n<li>B. $\\dfrac{1}{6}$</li>\n<li>C. $\\dfrac{1}{8}$</li>\n<li>D. $\\dfrac{3}{20}$</li>\n</ul>",
    "file": "2012_P2_題目英文卷.md",
-   "answer": "D"
+   "answer": "D",
+   "answer_pct": 56
   },
   {
    "subject": "數學",
@@ -26453,7 +27034,8 @@ window.QB = {
    "text": "設 $m_1$、$r_1$ 及 $v_1$ 分別為某組數 $\\{x_1,x_2,x_3,\\ldots,x_{100}\\}$ 的平均值、分佈域及方差。若 $m_2$、$r_2$ 及 $v_2$ 分別為 $\\{x_1,x_2,x_3,\\ldots,x_{100},m_1\\}$ 這組數的平均值、分佈域及方差，則下列何者必為正確？\nI. $m_1=m_2$\nII. $r_1=r_2$\nIII. $v_1=v_2$\n\n- A. 只有 I 及 II\n- B. 只有 I 及 III\n- C. 只有 II 及 III\n- D. I、II 及 III\n\n\n---\n\n## 答案（官方評卷參考）\n\n| 題–答 | | | | |\n|---|---|---|---|---|\n| 1 C | 2 D | 3 C | 4 B | 5 B |\n| 6 D | 7 C | 8 D | 9 A | 10 D |\n| 11 C | 12 B | 13 D | 14 B | 15 A |\n| 16 B | 17 B | 18 A | 19 C | 20 C |\n| 21 D | 22 A | 23 D | 24 A | 25 C |\n| 26 A | 27 A | 28 B | 29 B | 30 D |\n| 31 B | 32 C | 33 A | 34 C | 35 A |\n| 36 D | 37 A | 38 C | 39 D | 40 D |\n| 41 C | 42 B | 43 B | 44 D | 45 A |",
    "html": "<p>設 $m_1$、$r_1$ 及 $v_1$ 分別為某組數 ${x_1,x_2,x_3,\\ldots,x_{100}}$ 的平均值、分佈域及方差。若 $m_2$、$r_2$ 及 $v_2$ 分別為 ${x_1,x_2,x_3,\\ldots,x_{100},m_1}$ 這組數的平均值、分佈域及方差，則下列何者必為正確？\nI. $m_1=m_2$\nII. $r_1=r_2$\nIII. $v_1=v_2$</p>\n<ul>\n<li>A. 只有 I 及 II</li>\n<li>B. 只有 I 及 III</li>\n<li>C. 只有 II 及 III</li>\n<li>D. I、II 及 III</li>\n</ul>\n<hr />\n<h2>答案（官方評卷參考）</h2>\n<table>\n<thead>\n<tr>\n<th>題–答</th>\n<th></th>\n<th></th>\n<th></th>\n<th></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1 C</td>\n<td>2 D</td>\n<td>3 C</td>\n<td>4 B</td>\n<td>5 B</td>\n</tr>\n<tr>\n<td>6 D</td>\n<td>7 C</td>\n<td>8 D</td>\n<td>9 A</td>\n<td>10 D</td>\n</tr>\n<tr>\n<td>11 C</td>\n<td>12 B</td>\n<td>13 D</td>\n<td>14 B</td>\n<td>15 A</td>\n</tr>\n<tr>\n<td>16 B</td>\n<td>17 B</td>\n<td>18 A</td>\n<td>19 C</td>\n<td>20 C</td>\n</tr>\n<tr>\n<td>21 D</td>\n<td>22 A</td>\n<td>23 D</td>\n<td>24 A</td>\n<td>25 C</td>\n</tr>\n<tr>\n<td>26 A</td>\n<td>27 A</td>\n<td>28 B</td>\n<td>29 B</td>\n<td>30 D</td>\n</tr>\n<tr>\n<td>31 B</td>\n<td>32 C</td>\n<td>33 A</td>\n<td>34 C</td>\n<td>35 A</td>\n</tr>\n<tr>\n<td>36 D</td>\n<td>37 A</td>\n<td>38 C</td>\n<td>39 D</td>\n<td>40 D</td>\n</tr>\n<tr>\n<td>41 C</td>\n<td>42 B</td>\n<td>43 B</td>\n<td>44 D</td>\n<td>45 A</td>\n</tr>\n</tbody>\n</table>",
    "file": "2012_P2_題目中文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 36
   },
   {
    "subject": "數學",
@@ -26471,7 +27053,8 @@ window.QB = {
    "text": "Let $m_1$, $r_1$ and $v_1$ be the mean, the range and the variance of a group of numbers $\\{x_1, x_2, x_3, \\ldots, x_{100}\\}$ respectively. If $m_2$, $r_2$ and $v_2$ are the mean, the range and the variance of the group of numbers $\\{x_1, x_2, x_3, \\ldots, x_{100}, m_1\\}$ respectively, which of the following must be true? I. $m_1 = m_2$ II. $r_1 = r_2$ III. $v_1 = v_2$\n\n- A. I and II only\n- B. I and III only\n- C. II and III only\n- D. I, II and III\n\n\n---",
    "html": "<p>Let $m_1$, $r_1$ and $v_1$ be the mean, the range and the variance of a group of numbers ${x_1, x_2, x_3, \\ldots, x_{100}}$ respectively. If $m_2$, $r_2$ and $v_2$ are the mean, the range and the variance of the group of numbers ${x_1, x_2, x_3, \\ldots, x_{100}, m_1}$ respectively, which of the following must be true? I. $m_1 = m_2$ II. $r_1 = r_2$ III. $v_1 = v_2$</p>\n<ul>\n<li>A. I and II only</li>\n<li>B. I and III only</li>\n<li>C. II and III only</li>\n<li>D. I, II and III</li>\n</ul>\n<hr />",
    "file": "2012_P2_題目英文卷.md",
-   "answer": "A"
+   "answer": "A",
+   "answer_pct": 36
   },
   {
    "subject": "數學",

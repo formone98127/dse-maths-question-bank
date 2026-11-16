@@ -1,0 +1,140 @@
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+error: cannot pull with rebase: You have unstaged changes.
+error: Please commit or stash them.
+conflict — resolving
+2012_P1_題目中文卷.md: 19 questions, tags 19
+figures: 7 -> docs/2012P1_zh_figs
+data.js: 1.62 MB, 1844 entries
+2015_P1_題目中文卷.md: 19 questions, tags 19
+figures: 3 -> docs/2015P1_zh_figs
+data.js: 1.62 MB, 1844 entries
+2016_P1_題目中文卷.md: 19 questions, tags 19
+figures: 3 -> docs/2016P1_zh_figs
+data.js: 1.62 MB, 1844 entries
+2017_P1_題目中文卷.md: 19 questions, tags 19
+figures: 3 -> docs/2017P1_zh_figs
+data.js: 1.62 MB, 1844 entries
+2018_P1_題目中文卷.md: 19 questions, tags 19
+figures: 4 -> docs/2018P1_zh_figs
+data.js: 1.62 MB, 1844 entries
+2019_P1_題目中文卷.md: 19 questions, tags 19
+figures: 4 -> docs/2019P1_zh_figs
+data.js: 1.62 MB, 1844 entries
+2020_P1_題目中文卷.md: 19 questions, tags 19
+figures: 2 -> docs/2020P1_zh_figs
+data.js: 1.62 MB, 1844 entries
+2021_P1_題目中文卷.md: 19 questions, tags 19
+figures: 2 -> docs/2021P1_zh_figs
+data.js: 1.62 MB, 1844 entries
+2022_P1_題目中文卷.md: 19 questions, tags 19
+figures: 2 -> docs/2022P1_zh_figs
+data.js: 1.62 MB, 1844 entries
+2023_P1_題目中文卷.md: 19 questions, tags 19
+figures: 1 -> docs/2023P1_zh_figs
+data.js: 1.62 MB, 1844 entries
+2024_P1_題目中文卷.md: 19 questions, tags 19
+figures: 1 -> docs/2024P1_zh_figs
+data.js: 1.62 MB, 1844 entries
+2012_P1_題目英文卷.md: 19 questions, tags 19
+figures: 4 -> docs/2012P1_figs
+data.js: 1.62 MB, 1844 entries
+2013_P1_題目英文卷.md: 19 questions, tags 19
+figures: 2 -> docs/2013P1_figs
+data.js: 1.62 MB, 1844 entries
+2014_P1_題目英文卷.md: 19 questions, tags 19
+figures: 17 -> docs/2014P1_figs
+data.js: 1.62 MB, 1844 entries
+2015_P1_題目英文卷.md: 19 questions, tags 19
+figures: 3 -> docs/2015P1_figs
+data.js: 1.62 MB, 1844 entries
+2016_P1_題目英文卷.md: 19 questions, tags 19
+figures: 3 -> docs/2016P1_figs
+data.js: 1.62 MB, 1844 entries
+2012_P2_題目中文卷.md: 45 questions, 45 with answers
+figures: 20 from 2012_P2_zh_figs -> docs/2012P2_zh_figs
+data.js: 1.62 MB, 1844 entries
+2013_P2_題目中文卷.md: 45 questions, 45 with answers
+figures: 21 from 2013_P2_zh_figs -> docs/2013P2_zh_figs
+data.js: 1.62 MB, 1844 entries
+2014_P2_題目中文卷.md: 45 questions, 45 with answers
+figures: 16 from 2014_P2_zh_figs -> docs/2014P2_zh_figs
+data.js: 1.62 MB, 1844 entries
+2015_P2_題目中文卷.md: 45 questions, 45 with answers
+figures: 10 from 2015_P2_zh_figs -> docs/2015P2_zh_figs
+data.js: 1.62 MB, 1844 entries
+2016_P2_題目中文卷.md: 45 questions, 45 with answers
+figures: 20 from 2016_P2_zh_figs -> docs/2016P2_zh_figs
+data.js: 1.62 MB, 1844 entries
+2017_P2_題目中文卷.md: 45 questions, 45 with answers
+figures: 22 from 2017_P2_zh_figs -> docs/2017P2_zh_figs
+data.js: 1.62 MB, 1844 entries
+2018_P2_題目中文卷.md: 45 questions, 0 with answers
+figures: 17 from 2018_P2_zh_figs -> docs/2018P2_zh_figs
+data.js: 1.62 MB, 1844 entries
+2019_P2_題目中文卷.md: 45 questions, 45 with answers
+figures: 12 from 2019_P2_zh_figs -> docs/2019P2_zh_figs
+data.js: 1.62 MB, 1844 entries
+2020_P2_題目中文卷.md: 45 questions, 45 with answers
+data.js: 1.62 MB, 1844 entries
+2021_P2_題目中文卷.md: 45 questions, 45 with answers
+figures: 10 from 2021_P2_zh_figs -> docs/2021P2_zh_figs
+data.js: 1.62 MB, 1844 entries
+2023_P2_題目中文卷.md: 45 questions, 45 with answers
+figures: 9 from 2023_P2_zh_figs -> docs/2023P2_zh_figs
+data.js: 1.61 MB, 1844 entries
+2024_P2_題目中文卷.md: 45 questions, 45 with answers
+figures: 10 from 2024_P2_zh_figs -> docs/2024P2_zh_figs
+data.js: 1.61 MB, 1844 entries
+2012_P2_題目英文卷.md: 45 questions, 45 with answers
+figures: 20 from 2012_P2_figs -> docs/2012P2_figs
+data.js: 1.61 MB, 1844 entries
+2013_P2_題目英文卷.md: 45 questions, 45 with answers
+figures: 27 from 2013_P2_figs -> docs/2013P2_figs
+data.js: 1.61 MB, 1844 entries
+2014_P2_題目英文卷.md: 45 questions, 45 with answers
+figures: 16 from 2014_P2_figs -> docs/2014P2_figs
+data.js: 1.61 MB, 1844 entries
+2015_P2_題目英文卷.md: 45 questions, 45 with answers
+figures: 14 from 2015_P2_figs -> docs/2015P2_figs
+data.js: 1.61 MB, 1844 entries
+2016_P2_題目英文卷.md: 45 questions, 45 with answers
+figures: 23 from 2016_P2_figs -> docs/2016P2_figs
+data.js: 1.61 MB, 1844 entries
+2017_P2_題目英文卷.md: 45 questions, 45 with answers
+figures: 21 from 2017_P2_figs -> docs/2017P2_figs
+data.js: 1.61 MB, 1844 entries
+2018_P2_題目英文卷.md: 45 questions, 0 with answers
+figures: 16 from 2018_P2_figs -> docs/2018P2_figs
+data.js: 1.61 MB, 1844 entries
+2019_P2_題目英文卷.md: 45 questions, 45 with answers
+figures: 12 from 2019_P2_figs -> docs/2019P2_figs
+data.js: 1.6 MB, 1844 entries
+2021_P2_題目英文卷.md: 45 questions, 45 with answers
+figures: 10 from 2021_P2_figs -> docs/2021P2_figs
+data.js: 1.6 MB, 1844 entries
+2022_P2_題目英文卷.md: 45 questions, 0 with answers
+figures: 10 from 2022_P2_figs -> docs/2022P2_figs
+data.js: 1.6 MB, 1844 entries
+2023_P2_題目英文卷.md: 45 questions, 45 with answers
+figures: 9 from 2023_P2_figs -> docs/2023P2_figs
+data.js: 1.6 MB, 1844 entries
+2024_P2_題目英文卷.md: 45 questions, 45 with answers
+figures: 10 from 2024_P2_figs -> docs/2024P2_figs
+data.js: 1.6 MB, 1844 entries
+2025_P2_題目英文卷.md: 45 questions, 0 with answers
+figures: 8 from 2025_P2_figs -> docs/2025P2_figs
+data.js: 1.6 MB, 1844 entries
+entries updated: 90; still missing: 90
+no official key for: ['2022-en', '2025-en']
+wrote C:\Users\Administrator\Projects\dse-maths-question-bank\docs\data.js 1.6 MB
+tagged entries updated: 1115; still without tags: 10 ['2016-en', '2016-zh', '2019-en', '2019-zh']
+wrote C:\Users\Administrator\Projects\dse-maths-question-bank\docs\data.js 1.62 MB
+P1 zh [2012, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024] | P1 en [2012, 2013, 2014, 2015, 2016]
+P2 zh [2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2023, 2024] | P2 en [2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025]
+dedupe: dropped 0 -> count 1844
+final: 1844 entries
+warning: in the working copy of '.sync_push.log', LF will be replaced by CRLF the next time Git touches it
+fatal: no rebase in progress

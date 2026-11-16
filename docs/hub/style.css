@@ -422,7 +422,14 @@ body.reel-open { overflow: hidden; }
 .reel-link.ok { font-weight: 600; }
 .topic-search {
   position: relative;
-  margin: 12px 0 2px;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.filters-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 .topic-search input {
   width: 100%;
@@ -509,6 +516,10 @@ body.reel-open { overflow: hidden; }
 
 @media (max-width: 480px) {
   .bar { gap: 5px; }
+  .filters-top { gap: 6px; }
+  .filters-top .seg { min-width: 0; }
+  .filters-top .seg button { padding: 6px 10px; font-size: 13px; }
+  .topic-search input { padding: 7px 10px; font-size: 16px; } /* iOS 唔好 <16px，否則聚焦自動放大 */
   .field > label { font-size: 10.5px; }
   .reel-btn { height: 34px; padding: 0 8px; font-size: 12.5px; border-radius: 9px; }
   .paper-row { padding: 10px 14px; gap: 4px 10px; }

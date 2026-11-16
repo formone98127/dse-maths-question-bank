@@ -1,0 +1,47 @@
+name: Deploy docs to Cloudflare Pages
+
+# 取代 Hostinger FTP：push 到 main 即部署，30–90 秒全站生效，自帶 cache 與回滾。
+# 需要 repo secret：CLOUDFLARE_API_TOKEN（Pages:Edit）、CLOUDFLARE_ACCOUNT_ID。
+# 手動全量重發：Actions → Deploy docs to Cloudflare Pages → Run workflow。
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "docs/**"
+      - ".github/workflows/deploy-cloudflare.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: cf-pages-deploy
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  deployments: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy docs --project-name=dse-hub --branch=main
+
+      - name: Verify live pages
+        run: |
+          set -euo pipefail
+          SITE="https://dse-hub.pages.dev"
+          for i in $(seq 1 20); do
+            hub=$(curl -fsS "$SITE/hub/?cb=$i" || true)
+            math=$(curl -fsS "$SITE/math/?cb=$i" || true)
+            if echo "$hub" | grep -q "共 "; then break; fi
+            sleep 6
+          done
+          echo "$hub" | grep -o '共 [0-9]* 卷' | head -1
+          echo "$math" | grep -o '數學<span class="n">[0-9]* 卷' | head -1

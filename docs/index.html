@@ -302,7 +302,7 @@ footer { text-align:center; color:var(--mut); font-size:11.5px; padding:4px 0 12
 </main>
 <footer>DSE 題庫（數學）— 內容僅供學習用途</footer>
 
-<script src="data.js?v=202611161515"></script>
+<script src="data.js?v=20261116170055"></script>
 <script src="answers.js?v=202611160341"></script>
 <script>
 const QS = window.QB.questions;
@@ -881,11 +881,14 @@ function openFromHash() {
     paper = p;
   }
   rebuildQlist();
-  const qu = n != null
-    ? QS.find(x => x.subject===subj && x.year==y && x.paper===p && x.qno==n && x.type==='題目')
-    : QS.find(x => x.subject===subj && x.year==y && x.paper===p && x.ref===ref && x.type==='篇章');
+  /* 中英同題：?lang=en 要揀英文嗰份，唔好永遠攞第一條 */
+  const langOk = (x) => (!langIsEn && !langIsZh) ? true
+    : (x.type !== '題目' || langOfQ(x) === (langIsEn ? 'en' : 'zh'));
+  const candQ = QS.filter(x => x.subject===subj && x.year==y && x.paper==p
+    && (n != null ? x.qno==n : x.ref===ref) && (n != null ? x.type==='題目' : x.type==='篇章'));
+  const qu = candQ.find(langOk) || candQ[0];
   const sol = n != null
-    ? QS.find(x => x.subject===subj && x.year==y && x.paper===p && x.qno==n && x.type==='解答')
+    ? QS.find(x => x.subject===subj && x.year==y && x.paper==p && x.qno==n && x.type==='解答')
     : null;
   const q = qu || sol || qlist.find(x => x.year==y && x.paper===p && (n != null ? x.qno==n : x.ref===ref)) ||
             QS.find(x => x.subject===subj && x.year==y && x.paper===p
@@ -896,8 +899,24 @@ function openFromHash() {
 window.addEventListener('hashchange', openFromHash);
 
 /* 冇 hash：head 已轉去 hub/（除非 ?subject / ?tag 課題深連結） */
+/* 化學／經濟／生物／物理 只上咗卷頁索引，題目內容未入庫：
+   唔好靜靜跌落數學空白頁，要講清楚同帶去卷頁。 */
+const SUBJECT_LANDING = { '化學': '/chem/', '經濟': '/econ/', '生物': '/bio/', '物理': '/phys/' };
+function showSubjectNotInBank(name) {
+  show(null);
+  const land = SUBJECT_LANDING[name];
+  const hub = `/hub/?subject=${encodeURIComponent({ '化學': 'chem', '經濟': 'econ', '生物': 'bio', '物理': 'phys' }[name] || 'math')}&mode=year`;
+  $('#qbody').innerHTML = `<div style="padding:18px 6px;line-height:1.8">
+      <p><strong>${name} 題目內容尚未收錄。</strong></p>
+      <p style="color:var(--mut)">題庫目前只有數學必修部分嘅逐題內容；${name} 暫時提供歷屆試卷索引。</p>
+      <p>${land ? `<a class="btn" href="${land}">睇 ${name} 歷屆試卷索引</a> ` : ''}<a class="btn" href="${hub}">去 DSE Hub 揀卷</a></p>
+    </div>`;
+}
 if (!location.hash) {
   if (wantSubj || wantTag) {
+    if (wantSubj && !subjs.includes(wantSubj)) {
+      showSubjectNotInBank(wantSubj);
+    } else {
     if (wantSubj && subjs.includes(wantSubj)) subj = wantSubj;
     else subj = subjs[0];
     tag = wantTag || '';
@@ -916,12 +935,19 @@ if (!location.hash) {
         show(first);
       } else show(null);
     }
+    }
   }
 } else {
-  openFromHash();
+  if (!openFromHash()) {
+    // #chem… / #econ… / #bio… / #phys… 屬於未入庫科目，唔好跌返數學空白頁
+    const pre = (location.hash || '').replace('#', '').match(/^(chem|econ|bio|phys)/i);
+    const byPrefix = { chem: '化學', econ: '經濟', bio: '生物', phys: '物理' };
+    const name = (wantSubj && !subjs.includes(wantSubj)) ? wantSubj : (pre ? byPrefix[pre[1].toLowerCase()] : '');
+    if (name && !subjs.includes(name)) showSubjectNotInBank(name);
+  }
 }
 </script>
-<script src="pwa.js?v=202611161515-v20261112165848"></script>
+<script src="pwa.js?v=20261116170055"></script>
 
 <script>
 /* 圖片點擊放大 */

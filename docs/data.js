@@ -9141,7 +9141,11 @@ window.QB = {
    "qno": "16",
    "title": "第 16 題",
    "section": "Paper 2",
-   "tags": [],
+   "tags": [
+    "四邊形",
+    "面積比",
+    "比率與比例"
+   ],
    "text": "圖中，$ABCD$ 為一平行四邊形及 $AEFG$ 為一正方形。已知 $BE:EF:FC=2:7:3$。$BD$ 分別與 $AE$ 及 $FG$ 相交於點 $X$ 及點 $Y$。若 $\\triangle ABX$ 的面積為 $24\\, \\text{cm}^2$，則四邊形 $CDYF$ 的面積為\n\n\n![Figure Q16 (as printed)](2019P2_zh_figs/Q16.png)\n\n- A. $54\\, \\text{cm}^2$\n- B. $77\\, \\text{cm}^2$\n- C. $81\\, \\text{cm}^2$\n- D. $87\\, \\text{cm}^2$",
    "html": "<p>圖中，$ABCD$ 為一平行四邊形及 $AEFG$ 為一正方形。已知 $BE:EF:FC=2:7:3$。$BD$ 分別與 $AE$ 及 $FG$ 相交於點 $X$ 及點 $Y$。若 $\\triangle ABX$ 的面積為 $24\\, \\text{cm}^2$，則四邊形 $CDYF$ 的面積為</p>\n<p><img alt=\"Figure Q16 (as printed)\" src=\"2019P2_zh_figs/Q16.png\" /></p>\n<ul>\n<li>A. $54\\, \\text{cm}^2$</li>\n<li>B. $77\\, \\text{cm}^2$</li>\n<li>C. $81\\, \\text{cm}^2$</li>\n<li>D. $87\\, \\text{cm}^2$</li>\n</ul>",
    "file": "2019_P2_題目中文卷.md",
@@ -9155,7 +9159,11 @@ window.QB = {
    "qno": "16",
    "title": "第 16 題",
    "section": "Paper 2",
-   "tags": [],
+   "tags": [
+    "四邊形",
+    "面積比",
+    "比率與比例"
+   ],
    "text": "In the figure, $ABCD$ is a parallelogram and $AEFG$ is a square. It is given that $BE:EF:FC=2:7:3$. $BD$ cuts $AE$ and $FG$ at the points $X$ and $Y$ respectively. If the area of $\\triangle ABX$ is $24\\text{ cm}^2$, then the area of the quadrilateral $CDYF$ is\n![Figure Q16 (as printed)](2019P2_figs/Q16.png)\n*[FIGURE Q16: A quadrilateral ABCD with points E, F, G, X, Y on its sides. Solid lines connect points. No angles, arcs, arrows, or shaded regions. No dashed lines. Printed labels: A, B, C, D, E, F, G, X, Y.]*\n\n- A. $54\\text{ cm}^2$.\n- B. $77\\text{ cm}^2$.\n- C. $81\\text{ cm}^2$.\n- D. $87\\text{ cm}^2$.",
    "html": "<p>In the figure, $ABCD$ is a parallelogram and $AEFG$ is a square. It is given that $BE:EF:FC=2:7:3$. $BD$ cuts $AE$ and $FG$ at the points $X$ and $Y$ respectively. If the area of $\\triangle ABX$ is $24\\text{ cm}^2$, then the area of the quadrilateral $CDYF$ is\n<img alt=\"Figure Q16 (as printed)\" src=\"2019P2_figs/Q16.png\" />\n<em>[FIGURE Q16: A quadrilateral ABCD with points E, F, G, X, Y on its sides. Solid lines connect points. No angles, arcs, arrows, or shaded regions. No dashed lines. Printed labels: A, B, C, D, E, F, G, X, Y.]</em></p>\n<ul>\n<li>A. $54\\text{ cm}^2$.</li>\n<li>B. $77\\text{ cm}^2$.</li>\n<li>C. $81\\text{ cm}^2$.</li>\n<li>D. $87\\text{ cm}^2$.</li>\n</ul>",
    "file": "2019_P2_題目英文卷.md",
@@ -9859,7 +9867,10 @@ window.QB = {
    "qno": "38",
    "title": "第 38 題",
    "section": "Paper 2　乙部",
-   "tags": [],
+   "tags": [
+    "扇形面積",
+    "三角形面積"
+   ],
    "text": "圖中，$ O $ 為扇形 $ OABC $ 的圓心。已知 $ \\Delta OAB $ 為一等邊三角形。$ AC $ 與 $ OB $ 相交於點 $ D $。若 $ OA = 12 \\, \\text{cm} $ 及 $ \\angle AOC = 90^\\circ $，求陰影區域 $ BCD $ 的面積準確至最接近的 $ \\text{cm}^2 $。\n\n\n![Figure Q38 (as printed)](2019P2_zh_figs/Q38.png)\n\n- A. $11 \\, \\text{cm}^2$\n- B. $16 \\, \\text{cm}^2$\n- C. $26 \\, \\text{cm}^2$\n- D. $38 \\, \\text{cm}^2$",
    "html": "<p>圖中，$ O $ 為扇形 $ OABC $ 的圓心。已知 $ \\Delta OAB $ 為一等邊三角形。$ AC $ 與 $ OB $ 相交於點 $ D $。若 $ OA = 12 \\, \\text{cm} $ 及 $ \\angle AOC = 90^\\circ $，求陰影區域 $ BCD $ 的面積準確至最接近的 $ \\text{cm}^2 $。</p>\n<p><img alt=\"Figure Q38 (as printed)\" src=\"2019P2_zh_figs/Q38.png\" /></p>\n<ul>\n<li>A. $11 \\, \\text{cm}^2$</li>\n<li>B. $16 \\, \\text{cm}^2$</li>\n<li>C. $26 \\, \\text{cm}^2$</li>\n<li>D. $38 \\, \\text{cm}^2$</li>\n</ul>",
    "file": "2019_P2_題目中文卷.md",
@@ -9873,7 +9884,10 @@ window.QB = {
    "qno": "38",
    "title": "第 38 題",
    "section": "Paper 2　Section B",
-   "tags": [],
+   "tags": [
+    "扇形面積",
+    "三角形面積"
+   ],
    "text": "In the figure, $O$ is the centre of the sector $OABC$. It is given that $\\triangle OAB$ is an equilateral triangle. $AC$ and $OB$ intersect at the point $D$. If $OA = 12 \\text{ cm}$ and $\\angle AOC = 90^\\circ$, find the area of the shaded region $BCD$ correct to the nearest $\\text{cm}^2$.\n![Figure Q38 (as printed)](2019P2_figs/Q38.png)\n*[FIGURE Q38: A right triangle OAC with points B, D on OA and OC respectively. Shaded triangle ABC. Solid lines; no dashed lines. No angles, numbers, or right-angle marks printed.]*\n\n- A. $11 \\text{ cm}^2$\n- B. $16 \\text{ cm}^2$\n- C. $26 \\text{ cm}^2$\n- D. $38 \\text{ cm}^2$",
    "html": "<p>In the figure, $O$ is the centre of the sector $OABC$. It is given that $\\triangle OAB$ is an equilateral triangle. $AC$ and $OB$ intersect at the point $D$. If $OA = 12 \\text{ cm}$ and $\\angle AOC = 90^\\circ$, find the area of the shaded region $BCD$ correct to the nearest $\\text{cm}^2$.\n<img alt=\"Figure Q38 (as printed)\" src=\"2019P2_figs/Q38.png\" />\n<em>[FIGURE Q38: A right triangle OAC with points B, D on OA and OC respectively. Shaded triangle ABC. Solid lines; no dashed lines. No angles, numbers, or right-angle marks printed.]</em></p>\n<ul>\n<li>A. $11 \\text{ cm}^2$</li>\n<li>B. $16 \\text{ cm}^2$</li>\n<li>C. $26 \\text{ cm}^2$</li>\n<li>D. $38 \\text{ cm}^2$</li>\n</ul>",
    "file": "2019_P2_題目英文卷.md",
@@ -10135,7 +10149,10 @@ window.QB = {
    "qno": 1,
    "title": "第 1 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "Change of Subject",
+    "Algebra"
+   ],
    "lang": "英文",
    "text": "1. a+4 b+1 1. U 3 2 2a+8=3b+3 1M 3b=2a+5 2a+5 b= 1M for putting b on one side 3 1A or equivalent a+4 b+1 3 2 2a+8 1M =b+1 3 2a+8 1M 2a+5 for putting b on one side b= 3 1A or equivalent --(3) xy{7",
    "html": "<p><img src=\"ms/2018P1/Q01.png\" alt=\"MS Q1\"></p>",
@@ -10181,7 +10198,10 @@ window.QB = {
    "qno": 2,
    "title": "第 2 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "Laws of Indices",
+    "Algebra"
+   ],
    "lang": "英文",
    "text": "2. 2. (x^{2y{3}{4 xy 1M for (ah)k =ahk or (ab)=ab CP 1M -=c_{P-9 d_{−r= for 1 c{q x9 d y5 1A --(3)",
    "html": "<p><img src=\"ms/2018P1/Q02.png\" alt=\"MS Q2\"></p>",
@@ -10227,7 +10247,10 @@ window.QB = {
    "qno": 3,
    "title": "第 3 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "Errors",
+    "Significant Figures"
+   ],
    "lang": "英文",
    "text": "3. 3. (a) 266 1A (b) 265.4 1A (c) 270 1A --(3) 44",
    "html": "<p><img src=\"ms/2018P1/Q03.png\" alt=\"MS Q3\"></p>",
@@ -10273,7 +10296,10 @@ window.QB = {
    "qno": 4,
    "title": "第 4 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "Probability",
+    "Statistics"
+   ],
    "lang": "英文",
    "text": "4. 1M 4. Note that the probability of drawing a red ball is for denominator n+5+8 1A 2 8 n+5+8 2n+26=40 1A n=7 --(3)",
    "html": "<p><img src=\"ms/2018P1/Q04.png\" alt=\"MS Q4\"></p>",
@@ -10319,7 +10345,10 @@ window.QB = {
    "qno": 5,
    "title": "第 5 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "Factorisation",
+    "Polynomials"
+   ],
    "lang": "英文",
    "text": "5. 5. (a) 9r³-18r²s =9r²(r-2s) 1A or equivalent (b) 9r³-18r{2s-rs^{2}+2s{3}} for using the result of (a) 9r²(r-2s)-rs²+2s3 1M =9r²(r-2s)-s2(r-2s) =(r−2s)(9r²-s²) 1M =(r−2s)(3r+s)(3r-s) iA or equivalent --(4)",
    "html": "<p><img src=\"ms/2018P1/Q05.png\" alt=\"MS Q5\"></p>",
@@ -10365,7 +10394,10 @@ window.QB = {
    "qno": 6,
    "title": "第 6 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "Linear Inequalities",
+    "Algebra"
+   ],
    "lang": "英文",
    "text": "6. 3-x 6. (a) >2x+7 2 3-x>4x+14 -5x>11 1M for putting x on one side -11 x< 5 1A x<-2.2 x+8≥0 x≥-8 Thus, the required range is - 8 ≤ x < -11 1A -8≤ x < -2.2 5 (b) -3 1A -(4) 45",
    "html": "<p><img src=\"ms/2018P1/Q06.png\" alt=\"MS Q6\"></p>",
@@ -10411,7 +10443,10 @@ window.QB = {
    "qno": 7,
    "title": "第 7 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "Percentages",
+    "Profit and Loss"
+   ],
    "lang": "英文",
    "text": "7. C (34) 7. D(73) 32. D (30) 8. C(51) 33. C (35) 9. D(72) 34. B (40)",
    "html": "<p><img src=\"ms/2018P1/Q07.png\" alt=\"MS Q7\"></p>",
@@ -10457,7 +10492,10 @@ window.QB = {
    "qno": 8,
    "title": "第 8 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "Circle Properties",
+    "Angles"
+   ],
    "lang": "英文",
    "text": "8. 8. 1A =180°-θ LADE 1M = x =180°-θ ∠BED 1M = x =180°-θ y 1M =180°-∠ADE-∠BED =180°-(180°-θ)-(180°-θ) 1A =2θ-180° --(5) 46",
    "html": "<p><img src=\"ms/2018P1/Q08.png\" alt=\"MS Q8\"></p>",
@@ -10504,7 +10542,10 @@ window.QB = {
    "qno": 9,
    "title": "第 9 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "Rate and Ratio",
+    "Ratio"
+   ],
    "lang": "英文",
    "text": "9. Then, the time required for the car to travel from city Q to city R is 9. 1A (161–x) minutes. 1M for changing unit 1M+1A+1M 161-x x =210 Mg +90 72 60 60 18x=1890 1A x=105 Thus, the car takes 105 minutes to travel from city P to city Q. 72 km/h 1M 72 km/min U 60 =1.2 km/min either one 90 km/h 90 km/min I 60 =1.5 km/min Let x minutes and y minutes be the time required for the car to travel from city P to city Q and from city Q to city R respectively. 1A+1A So, we have x+y=161 and 1.2x+1.5y=210.  1M Therefore, we have 1.2x+1.5(161-x)= 210. 1A Solving, we have x = 105 and y = 56. Thus, the car takes 105 minutes to travel from city P to city Q. Let x hours be the time required for the car to travel from city P to city Q. 161 1M+1A hours to travel from city Q to city R. 1M for changing unit Then, the car takes -x 60 161 72x+90 =210 1A+1M 1M for getting a linear equation in one um x 60 1A x=1.75 Thus, the car takes 1.75 hours to travel from city P to city O. The time required for the car to travel from city P to city Q 161 -210 06 09 M+1A 1M       eator = +1M+1A + 1M for changing unit + 1A for denomin 90-72 =1.75 hours 1A Let y km be the distance between city P and city Q. 1A Then, the distance between city Q and city R is (210 – y) km. 161 210-y y 1M for changing unit + 1M+1A+1M 1M for getting a linear equation in one 72 90 60 y=126 The time required for the car to travel from city P to city Q 126 72 1A =1.75 hours --(5) 47",
    "html": "<p><img src=\"ms/2018P1/Q09.png\" alt=\"MS Q9\"></p>",
@@ -10550,7 +10591,10 @@ window.QB = {
    "qno": 10,
    "title": "第 10 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "Statistics",
+    "Box-and-whisker Diagram"
+   ],
    "lang": "英文",
    "text": "10. 10. 35. B (72) A(49)",
    "html": "<p><img src=\"ms/2018P1/Q10.png\" alt=\"MS Q10\"></p>",
@@ -10598,7 +10642,11 @@ window.QB = {
    "qno": 11,
    "title": "第 11 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "Statistics",
+    "Mean",
+    "Median"
+   ],
    "lang": "英文",
    "text": "11. 36. 11. D(67) D (44) 37. 12. A(62) B (41)",
    "html": "<p><img src=\"ms/2018P1/Q11.png\" alt=\"MS Q11\"></p>",
@@ -10646,7 +10694,11 @@ window.QB = {
    "qno": 12,
    "title": "第 12 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "Polynomials",
+    "Factor Theorem",
+    "Quadratic Equations"
+   ],
    "lang": "英文",
    "text": "12. 12. (a) f(3)=0 4(3)(3+1)²+a(3)+b=0 3a+b=-192 1M f(-2)=2b+165 4(-2)(-2+1)²+a(-2)+b=2b+165 2a+b=-173 for both correct 1A Solving, we have a = -19 and b =-135. --(3) (b) f(x)=0 4x(x+1)²-19x-135=0 4x3+8x{²-15x-135=0 for (x-3)(px²+qx+r) 1M (x-3)(4x²+20x+45)=0 x=3 or 4x²+20x+45=0 1M 202-4(4)(45) =-320 <0 1M So, the equation 4x² + 20x +45 = 0 has no real roots. Note that 3 is not an irrational number. 1A f.t. Thus, the claim is disagreed. -(4) 49",
    "html": "<p><img src=\"ms/2018P1/Q12.png\" alt=\"MS Q12\"></p>",
@@ -10692,7 +10744,10 @@ window.QB = {
    "qno": 13,
    "title": "第 13 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "Similar Triangles",
+    "Mensuration"
+   ],
    "lang": "英文",
    "text": "13. 38. 13. C(69) B (28) 39. B (42) 14. A(20)",
    "html": "<p><img src=\"ms/2018P1/Q13.png\" alt=\"MS Q13\"></p>",
@@ -10739,7 +10794,10 @@ window.QB = {
    "qno": 14,
    "title": "第 14 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "Mensuration",
+    "Solids"
+   ],
    "lang": "英文",
    "text": "14. 14. (a) 1M = π(82)(64) 1A =4096π cm{³} --(2) (b) Let h cm be the depth of water in the vessel. h 1M Then, the radius of the water surface is cm . 3 2 1M+1A h 1 h=4096π π 13 3 h{3} = 110 592 1A h=48 Thus, the depth of water in the vessel is 48 cm Let h cm be the depth of water in the vessel. 1 π(20)²(60) cm³. 1M The capacity of the vessel is 3 3 h 1 π(20)²(60) 1M for =4096π 1M+1A 60 3 60 h{3} = 110 592 h=48 Thus, the depth of water in the vessel is 48 cm. 1A --(4) (c) The volume not occupied by water in the vessel 1 π(202)(60)−4096π 1M = 3 =3904π cm³ The volume of the metal sphere 4 π(1^{3}) 1M = 3 10976 π cm³ 3 <3904π cm³ Thus, the water will not overflow. 1A f.t. --(3) 51",
    "html": "<p><img src=\"ms/2018P1/Q14.png\" alt=\"MS Q14\"></p>",
@@ -10786,7 +10844,10 @@ window.QB = {
    "qno": 15,
    "title": "第 15 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "Permutations and Combinations",
+    "Probability"
+   ],
    "lang": "英文",
    "text": "15. 40. 15. D(83) D (35)",
    "html": "<p><img src=\"ms/2018P1/Q15.png\" alt=\"MS Q15\"></p>",
@@ -10832,7 +10893,10 @@ window.QB = {
    "qno": 16,
    "title": "第 16 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "Geometric Sequence",
+    "Sequences"
+   ],
    "lang": "英文",
    "text": "16. 41. A(39) 16. A(51) 42. B(28) 17. C (26)",
    "html": "<p><img src=\"ms/2018P1/Q16.png\" alt=\"MS Q16\"></p>",
@@ -10879,7 +10943,11 @@ window.QB = {
    "qno": 17,
    "title": "第 17 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "Trigonometry",
+    "3-D Geometry",
+    "Angle between Planes"
+   ],
    "lang": "英文",
    "text": "17. 17. (a) By sine formula, we have AD AB 1M sin ∠ADB sin ∠ABD AD 60 sin 20° sin(180°−120°-20°) AD≈31.92533317cm AD ≈31.9 cm 1A r.t. 31.9 cm --(2) (b) (i) By cosine formula, we have AB{2}+BC{2}-AC{2} cos∠ABC= 2(AB)(BC) 1M 602+(31.92533317)²-402 cos∠ABC ≈ 2(60)(31.92533317) ∠ABC≈37.99207534° ∠ABC≈38.0° 1A r.t. 38.0° (ii) In Figure 3(a), AP produced meets CD at Q, where P is the foot of the perpendicular from A to BD. Note that the required angle is ∠APQin Figure 3(b). for identifying the required 1M AP = AD sin ∠ADP 1M ≈31.92533317sin(180°−120°-20°) ≈20.5212086 cm DP{2}= AD{2}-AP{2} DP2≈(31.92533317)2-(20.5212086)² DP ≈24.45622407 cm PQ = DP tan ∠PDQ - either one ≈ (24.45622407) tan 20° ≈8.901337605 cm DQ2 = DP{2 + PQ{2 DQ2 ≈ (24.45622407)² + (8.901337605)2 DQ≈26.02577006 cm Note that∠ADC = ∠ABC ≈37.99207534° By cosine formula, we have AQ2 = AD2 + DQ2 - 2(AD)(DQ) cos ∠ADC AQ2≈(31.92533317)2+(26.02577006)2-2(31.92533317)(26.02577006) cos37.99207534° AQ≈19.67076991 cm By cosine formula, we have AP{2 + PQ{2 - AQ2 cos∠APQ= 2(AP)(PQ) (20.5212086)²+(8.901337605)²-(19.67076991)² cos∠APQ≈ 2(20.5212086)(8.901337605) ∠APQ≈71.91411397° ∠APQ≈71.9° 1A r.t. 71.9° Thus, the required angle is 71.9° ---(5) 53",
    "html": "<p><img src=\"ms/2018P1/Q17.png\" alt=\"MS Q17\"></p>",
@@ -10926,7 +10994,10 @@ window.QB = {
    "qno": 18,
    "title": "第 18 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "Variation",
+    "Quadratic Functions"
+   ],
    "lang": "英文",
    "text": "18. 43. B (78) 18. B (78) 44. D(24) 19. A(51) 45. B(48) 20. C(45) 21. B (45) 22. B (75) 23. A(56) 24. D(41) 25. Note: Figures in brackets indicate the percentages of candidates choosing the correct answers.",
    "html": "<p><img src=\"ms/2018P1/Q18.png\" alt=\"MS Q18\"></p>",
@@ -10973,7 +11044,11 @@ window.QB = {
    "qno": 19,
    "title": "第 19 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "Equations of Circles",
+    "Equations of Straight Lines",
+    "Tangents"
+   ],
    "lang": "英文",
    "text": "19. 1A 19. (a) The equation of C is (x-8)² +(y-2)²= r2. in (x-8)²+(y-2)²=r²,we have kx-21 Putting y= 5 1M 2 kx-21 = r² (x-8){2}+ -2 5 (k²+25)x²+(-62k−400)x+2561-25r²=0 Note that L is a tangent to C. 1M So,we have (-62k-400)²-4(k²+25)(2561-25r²)=0. (8k-31){2} r²= 64k²-496k +961 1A Thus, we have r² = k2+25 k²+25 --(4) 1M (b) (i) Since L passes through D, we have 18k -5(39)-21 = 0. Solving, we have k = 12 . 64(12)²-496(12)+961 for using the result of (a) 1M By (a), we have r² = 122+25 1A Thus, we have r =5. (ii) Let G be the centre of C. -21 1M 0, Note that the coordinates of E are 5 Also note that G is the in-centre of ∆DEF. 1M DG2=(18-8)2+(39-2)2 DG=√1469 1M r sin ∠EDG = DG either one 5 sin ∠EDG = √1469 ∠EDG ≈7.49585764° either 2 21 EG2=(8-0){2+ 2+ 5 √2561 EG = 5 r sin ∠DEG = EG 25 sin ∠DEG = √2561 ∠DEG≈29.60445074° for either one 1M Note that ∠EDG = ∠FDG and ∠DEG = ∠FEG. ∠DFE =180°-(∠EDG+∠FDG)-(∠DEG+∠FEG) ≈180°-2(7.49585764°)-2(29.60445074°) ≈105.7993832° >90° f.t. 1A Thus, ∆DEF is an obtuse-angled triangle. --(8) 55",
    "html": "<p><img src=\"ms/2018P1/Q19.png\" alt=\"MS Q19\"></p>",
@@ -12498,7 +12573,9 @@ window.QB = {
    "qno": 1,
    "title": "第 1 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "主項變換"
+   ],
    "lang": "中文",
    "text": "1. 3x-y 1. k = y yk = 3x − y 3x y = k+1",
    "html": "<p><img src=\"ms/2017P1zh/Q01.png\" alt=\"MS Q1\"></p>",
@@ -12543,7 +12620,9 @@ window.QB = {
    "qno": 2,
    "title": "第 2 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "指數定律"
+   ],
    "lang": "中文",
    "text": "2. (m^{4}n−1){3 2. (m-2)5 m12n-3 01-u 22 u εu",
    "html": "<p><img src=\"ms/2017P1zh/Q02.png\" alt=\"MS Q2\"></p>",
@@ -12588,7 +12667,9 @@ window.QB = {
    "qno": 3,
    "title": "第 3 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "因式分解"
+   ],
    "lang": "中文",
    "text": "3. 3. x2 −4xy+ 3y2 = (x −3y)(x− y) (a) (b) x2 −4xy+ 3y2 +11x −33y =(x−3y)(x−y)+11(x−3y) = (x−3y+11)(x−y) Let x, y be the number of regular tickets and concessionary tickets sold respectively ∫x = 5 y 126x + 78y = 50976 x = 50976 126x + 78 5 x=360 y = 72 The number of admission tickets sold that day =432",
    "html": "<p><img src=\"ms/2017P1zh/Q03.png\" alt=\"MS Q3\"></p>",
@@ -12633,7 +12714,9 @@ window.QB = {
    "qno": 4,
    "title": "第 4 題評卷參考（待核對）",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "一元一次方程"
+   ],
    "lang": "中文",
    "text": "4. Mathematics Compulsory Part Paper 1 Remarks Solution Marks 3x-y 1. k = y yk = 3x − y 3x y = k+1 (m^{4}n−1){3 2. (m-2)5 m12n-3 01-u 22 u εu 3. x2 −4xy+ 3y2 = (x −3y)(x− y) (a) (b) x2 −4xy+ 3y2 +11x −33y =(x−3y)(x−y)+11(x−3y) = (x−3y+11)(x−y) Let x, y be the number of regular tickets and concessionary tickets sold respectively ∫x = 5 y 126x + 78y = 50976 x = 50976 126x + 78 5 x=360 y = 72 The number of admission tickets sold that day =432",
    "html": "<p><img src=\"ms/2017P1zh/Q04.png\" alt=\"MS Q4\"></p>",
@@ -12678,7 +12761,9 @@ window.QB = {
    "qno": 5,
    "title": "第 5 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "一元一次不等式"
+   ],
    "lang": "中文",
    "text": "5. 5. (a) 11x+8 7(x−2)≤ and 6−x<5 3 21(x− 2)≤11x+ 8 and x >1 x≤5and x >1 ∴1<x≤5 (b) 2, 3, 4, 5 are the only integers satisfying (a) So, there are 4 integers satisfying both inequalities in (a)",
    "html": "<p><img src=\"ms/2017P1zh/Q05.png\" alt=\"MS Q5\"></p>",
@@ -12723,7 +12808,10 @@ window.QB = {
    "qno": 6,
    "title": "第 6 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "變換與對稱",
+    "坐標幾何"
+   ],
    "lang": "中文",
    "text": "6. (a) The coordinates of A'= (-4,-3) 6. The coordinates of B'=(9,9) (b) Slope of AB -9-4 9-(-3) 13 12 Slope of A'B' -3-9 -4-9 12 13 Slope of AB×Slope of A'B' 13 12 × 13 12 =-1 ∴ AB ⊥ A'B'",
    "html": "<p><img src=\"ms/2017P1zh/Q06.png\" alt=\"MS Q6\"></p>",
@@ -12770,7 +12858,10 @@ window.QB = {
    "qno": 7,
    "title": "第 7 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "統計",
+    "概率"
+   ],
    "lang": "中文",
    "text": "7. 7. (a) 1 x 360° 9 x=40° (b) Let N be the number of students in the school 360°−90°−40°−158° 180 N 360° N=900 The number of students in the school =900 (a) k y = √x When y = 81, x = 144 k 81= √144 k=972 972 y = √x (b) Change in value of y 972 972 √144 √324 =-27",
    "html": "<p><img src=\"ms/2017P1zh/Q07.png\" alt=\"MS Q7\"></p>",
@@ -12817,7 +12908,9 @@ window.QB = {
    "qno": 8,
    "title": "第 8 題評卷參考（待核對）",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "變分"
+   ],
    "lang": "中文",
    "text": "8. Remarks Marks Solution",
    "html": "<p><img src=\"ms/2017P1zh/Q08.png\" alt=\"MS Q8\"></p>",
@@ -12862,7 +12955,9 @@ window.QB = {
    "qno": 9,
    "title": "第 9 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "百分數"
+   ],
    "lang": "中文",
    "text": "9. 9. (a) Let x mL be the actual capacity of a standard bottle 10 10 200- ≤ x < 200 + 2 2 195 ≤ x < 205 The least possible capacity is 195 mL (b) 23400≤120x<24600 23.4L ≤120x < 24.6L Least total capacity = 23.4 L No, I don't agree the claim.",
    "html": "<p><img src=\"ms/2017P1zh/Q09.png\" alt=\"MS Q9\"></p>",
@@ -12907,7 +13002,9 @@ window.QB = {
    "qno": 10,
    "title": "第 10 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "平面幾何"
+   ],
    "lang": "中文",
    "text": "10. OP = OR(given) 10. (a) PS = RS(given) OS = OS(common) ∴ ∆OPS ≈ ∆ORS (SSS) ∠POQ=10° (b) ∠POQ = ∠QOR =10° ∠POR = 20° Area of the sector OPQR 20° ×π×62 360° = 2π cm2",
    "html": "<p><img src=\"ms/2017P1zh/Q10.png\" alt=\"MS Q10\"></p>",
@@ -12952,7 +13049,10 @@ window.QB = {
    "qno": 11,
    "title": "第 11 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "統計",
+    "幹葉圖"
+   ],
    "lang": "中文",
    "text": "11. 11. (a) 895 + 70 + a + 80 + b = 70 15 a+b=5 80+b-61=22 b=3 a = 2 median = $69 standard deviation =$7.330302404 ≈ $7.33 (corr to 3 sig fig)",
    "html": "<p><img src=\"ms/2017P1zh/Q11.png\" alt=\"MS Q11\"></p>",
@@ -12999,7 +13099,10 @@ window.QB = {
    "qno": 12,
    "title": "第 12 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "立體圖形",
+    "求積法"
+   ],
    "lang": "中文",
    "text": "12. 12. (a) Let V cm³ and V, cm³ be the volume of smaller right pyramid and larger right pyramid respectively V1 V2 3 4 二 9 8 27 V1+V2 = (84)(20) =1680 V2 27 =1680× 27 + 8 =1296 The volume of the larger pyramid = 1296 cm³ Volume of smaller pyramid = 384 cm3 (b) Height of smaller pyramid 2 ×12 二 3 =8 1 (Base Area)(8) = 384 一 3 Base Area =144cm² Length of square in base =√144 =12 Total surface area 12 2 1 (12) +82×4+144 二 2 2 =384cm²",
    "html": "<p><img src=\"ms/2017P1zh/Q12.png\" alt=\"MS Q12\"></p>",
@@ -13046,7 +13149,9 @@ window.QB = {
    "qno": 13,
    "title": "第 13 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "圓的方程"
+   ],
    "lang": "中文",
    "text": "13. 13. (a) Let the equation of C be (x − 4)2 + (y + 1)2 = r , where r is a real constant Since Cpasses through (-6,5), So, we have (−6 −2)2 + (5 +1)2 = r r=100 The equation of C : (x − 4)2 + (y + 1)2 = 100 (b) Radius of C = 10 GF = √(2 −(−3))2 + (−1−11)2 =13 >10 F lies outside C (c) (i) F , G, H are collinear (ii) The equation of straight line which passes through F and H: y−11_11-(−1) x+3 -3-2 19 12 y = x+ 5 5 12x+5y−19=0",
    "html": "<p><img src=\"ms/2017P1zh/Q13.png\" alt=\"MS Q13\"></p>",
@@ -13091,7 +13196,9 @@ window.QB = {
    "qno": 14,
    "title": "第 14 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "多項式"
+   ],
    "lang": "中文",
    "text": "14. 14. (a) f(x) = (3x + 7)(2x2 + ax + 4) + bx + c = 6x3 + (3a + 14)x2 + (12 + 7a + b)x + 28 + c = 6x3 −13x2 − 46x + 34 3a+14=-13 a = −9 (b) (i) Since g(x) is a quadratic polynomial, degree of quotient when g(x) is divided by 2x2 + ax + 4is 0 g(x) = A(2x2 − 9x + 4) + bx + c , where A is a constant f(x)− g(x) = (3x + 7)(2x2 + ax + 4) + bx + c − (A(2x2 − 9x + 4) + bx + c) = (3x + 7 − A)(2x2 + ax + 4) ∴ f(x) − g(x) is divisible by 2x2 + ax + 4 (b) (ii) f(x) − g(x) = 0 (3x + 7 − A)(2x2 − 9x + 4) = 0 A-7 1 or x = 4 or x = x = 3 2 1 Since is not an integer, I don't agree the claim 2",
    "html": "<p><img src=\"ms/2017P1zh/Q14.png\" alt=\"MS Q14\"></p>",
@@ -13136,7 +13243,10 @@ window.QB = {
    "qno": 15,
    "title": "第 15 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "對數",
+    "函數與圖像"
+   ],
    "lang": "中文",
    "text": "15. 15. [0 = a + log b 9 3 = a + log b 243 3 = log b 243 − log b 9 243 3 = log b 9 b3 = 27 b=3 a = −2 y = −2 + log 3 x y + 2 = log3 x x =3y+2",
    "html": "<p><img src=\"ms/2017P1zh/Q15.png\" alt=\"MS Q15\"></p>",
@@ -13183,7 +13293,9 @@ window.QB = {
    "qno": 16,
    "title": "第 16 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "數列"
+   ],
    "lang": "中文",
    "text": "16. 16. (a) The total volume of water imported =1.5×107 + 0.9×1.5×107 + 0.92 ×1.5×107 +... + 0.919 ×1.5×10 = 1.5 ×107 × (1 + 0.9 + 0.92 + ... + 0.919) 1-0.9{20 =1.5×10× 1-0.9 =1.31763501×108 ≈1.32×108 m3(corr to 3 sig fig) (b) Since the water imported every year is positive, The total volume of water imported <1.5×107 + 0.9×1.5×107 + 0.92 ×1.5×107 +... =1.5×107 ×(1+0.9 + 0.92 +...) 1 =1.5×107× 1-0.9 =1.5×108 <1.6×108 No, I don't agree the claim. Suppose the total water imported can exceed 1.6×108 m3 at nth year 1.5×107 + 0.9×1.5×107 + 0.92 ×1.5×107 +...+ 0.9n-1 ×1.5×107 >1.6×108 1.5×107 × (1 + 0.9 + 0.92 + ... + 0.9n-1) > 1.6×108 1-0.9ⁿ 32 V 3 1-0.9 1 0.9\" < − which is impossible 15 No, I don't agree the claim.",
    "html": "<p><img src=\"ms/2017P1zh/Q16.png\" alt=\"MS Q16\"></p>",
@@ -13228,7 +13340,10 @@ window.QB = {
    "qno": 17,
    "title": "第 17 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "概率",
+    "排列與組合"
+   ],
    "lang": "中文",
    "text": "17. 17. (a) Required probability C4C1 C19 二 15 3 2 1 4 C54 二 19 18 17 16 15 r.t. 0.00129 5 3876 (b) Required probability C3C15 C19 2 15 14 3 4 二 19 18 17 16 15 35 r.t. 0.0361 696 (o) eit 35 5 -1= 3876 969 15 14 13 12 12 15 14 13 11 4 C5 C5 + 二 19 人15 19 人15 18 17 16 18 17 16 15 13 4 3 十 19 18 17 16 15 3731 r.t. 0.963 3876",
    "html": "<p><img src=\"ms/2017P1zh/Q17.png\" alt=\"MS Q17\"></p>",
@@ -13275,7 +13390,9 @@ window.QB = {
    "qno": 18,
    "title": "第 18 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "二次函數"
+   ],
    "lang": "中文",
    "text": "18. 18. (a) ∫y =19 y = 2x2 − 2kx + 2x −3k + 8 19 = 2x2 − 2kx + 2x − 3k + 8 2x2−2kx+2x−3k−11=0 ∆ = (−2k + 2)2 − 4(2)(−3k −11) = 4k2 +16k + 92 = 4(k + 2)2 + 76 ≥ 76 , for all real values of k ∴ ∆ > 0 , for all real values of k L and Γ intersect at two distinct points. (b) (i) a , b are the roots of 2x2 − 2kx + 2x − 3k −11 = 0 ab -3k-11 2 3k +11 2 a+b −2k+2 2 =k−1 (a −b)² = a2 + b2 − 2ab = (a + b)2 − 4ab 3k+11 = (k − 1)2 − 4(− 2 = k2 − 2k + 1 + 6k + 22 = k2 + 4k + 23 (ii) AB = √(a −b)2 = √k2 + 4k + 23 = √(k + 2)2 + 19 ≥√19 = 4.358898944 , for all real values of k No, it is impossible.",
    "html": "<p><img src=\"ms/2017P1zh/Q18.png\" alt=\"MS Q18\"></p>",
@@ -13320,7 +13437,10 @@ window.QB = {
    "qno": 19,
    "title": "第 19 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "三角學",
+    "求積法"
+   ],
    "lang": "中文",
    "text": "19. 19. (a) 24 AC sin 30° sin(180°−30°−42°) AC=45.65071278 AC ≈ 45.7 cm (corr to 3 sig fig) The length of AC is 45.7 cm (b) (i) CF 2 CF + AC 10 1 CF = AC 4 1 CF = ×45.65071278 4 CF=11.4126782 CF ≈11.4 cm (corr to 3 sig fig) (ii) 1 (AB)(AF)sin 30° Area of ∆ABF = 2 AF = CF + AC = 57.06339098 AB2 = AC2 + BC2 − 2(AC)(BC)cos 42° AB2 = (45.65071278)² + 242 − 2(24)(45.65071278) cos 42° AB=32.11826911 Area of ∆ABF 1 (32.11826911)(57.06339098)sin 30° 2 = 458.1943369 cm^² ≈ 458 cm2 (corr to 3 sig fig)",
    "html": "<p><img src=\"ms/2017P1zh/Q19.png\" alt=\"MS Q19\"></p>",
@@ -15745,7 +15865,10 @@ window.QB = {
    "qno": "11",
    "title": "第 11 題",
    "section": "Paper 2",
-   "tags": [],
+   "tags": [
+    "比率與比例",
+    "代數化簡"
+   ],
    "text": "若 $x$ 及 $y$ 均為非零的數使得 $(3y-4x):(2x+y)=5:6$ ，則 $x:y=$\n\n- A. $7:8$\n- B. $8:29$\n- C. $9:32$\n- D. $13:34$",
    "html": "<p>若 $x$ 及 $y$ 均為非零的數使得 $(3y-4x):(2x+y)=5:6$ ，則 $x:y=$</p>\n<ul>\n<li>A. $7:8$</li>\n<li>B. $8:29$</li>\n<li>C. $9:32$</li>\n<li>D. $13:34$</li>\n</ul>",
    "file": "2016_P2_題目中文卷.md",
@@ -15759,7 +15882,10 @@ window.QB = {
    "qno": "11",
    "title": "第 11 題",
    "section": "Paper 2",
-   "tags": [],
+   "tags": [
+    "比率與比例",
+    "代數化簡"
+   ],
    "text": "If $x$ and $y$ are non-zero numbers such that $(3y-4x):(2x+y)=5:6$, then $x:y=$\n\n- A. $7:8$\n- B. $8:29$\n- C. $9:32$\n- D. $13:34$",
    "html": "<p>If $x$ and $y$ are non-zero numbers such that $(3y-4x):(2x+y)=5:6$, then $x:y=$</p>\n<ul>\n<li>A. $7:8$</li>\n<li>B. $8:29$</li>\n<li>C. $9:32$</li>\n<li>D. $13:34$</li>\n</ul>",
    "file": "2016_P2_題目英文卷.md",
@@ -16031,7 +16157,10 @@ window.QB = {
    "qno": "20",
    "title": "第 20 題",
    "section": "Paper 2",
-   "tags": [],
+   "tags": [
+    "面積比",
+    "四邊形"
+   ],
    "text": "圖中，$ABCD$、$CDEF$ 及 $EFGH$ 均為正方形。$AG$ 分別與 $CD$ 及 $EF$ 相交於 $P$ 及 $Q$。求四邊形 $DEQP$ 的面積與四邊形 $ABCP$ 的面積之比。\n\n\n![Figure Q20 (as printed)](2016P2_zh_figs/Q20.png)\n\n- A. $1:2$\n- B. $2:3$\n- C. $3:5$\n- D. $4:9$",
    "html": "<p>圖中，$ABCD$、$CDEF$ 及 $EFGH$ 均為正方形。$AG$ 分別與 $CD$ 及 $EF$ 相交於 $P$ 及 $Q$。求四邊形 $DEQP$ 的面積與四邊形 $ABCP$ 的面積之比。</p>\n<p><img alt=\"Figure Q20 (as printed)\" src=\"2016P2_zh_figs/Q20.png\" /></p>\n<ul>\n<li>A. $1:2$</li>\n<li>B. $2:3$</li>\n<li>C. $3:5$</li>\n<li>D. $4:9$</li>\n</ul>",
    "file": "2016_P2_題目中文卷.md",
@@ -16045,7 +16174,10 @@ window.QB = {
    "qno": "20",
    "title": "第 20 題",
    "section": "Paper 2",
-   "tags": [],
+   "tags": [
+    "面積比",
+    "四邊形"
+   ],
    "text": "In the figure, $ABCD$, $CDEF$ and $EFGH$ are squares. $AG$ cuts $CD$ and $EF$ at $P$ and $Q$ respectively. Find the ratio of the area of quadrilateral $DEQP$ to the area of quadrilateral $ABCP$.\n![Figure Q20 (as printed)](2016P2_figs/Q20.png)\n*[FIGURE Q20: Rectangular grid with labeled vertices A, B, C, D, E, F, G, H, and points P, Q on segments. No numbers, angles, dashed lines, or shading. Right-angle marks at corners.]*\n\n- A. $1:2$\n- B. $2:3$\n- C. $3:5$\n- D. $4:9$",
    "html": "<p>In the figure, $ABCD$, $CDEF$ and $EFGH$ are squares. $AG$ cuts $CD$ and $EF$ at $P$ and $Q$ respectively. Find the ratio of the area of quadrilateral $DEQP$ to the area of quadrilateral $ABCP$.\n<img alt=\"Figure Q20 (as printed)\" src=\"2016P2_figs/Q20.png\" />\n<em>[FIGURE Q20: Rectangular grid with labeled vertices A, B, C, D, E, F, G, H, and points P, Q on segments. No numbers, angles, dashed lines, or shading. Right-angle marks at corners.]</em></p>\n<ul>\n<li>A. $1:2$</li>\n<li>B. $2:3$</li>\n<li>C. $3:5$</li>\n<li>D. $4:9$</li>\n</ul>",
    "file": "2016_P2_題目英文卷.md",
@@ -16125,7 +16257,10 @@ window.QB = {
    "qno": "23",
    "title": "第 23 題",
    "section": "Paper 2",
-   "tags": [],
+   "tags": [
+    "對稱軸",
+    "對稱"
+   ],
    "text": "下面的圖形包含八個完全相同的正六邊形。該圖形的反射對稱軸的數目為\n\n\n![Figure Q23 (as printed)](2016P2_zh_figs/Q23.png)\n\n- A. 2\n- B. 4\n- C. 6\n- D. 8",
    "html": "<p>下面的圖形包含八個完全相同的正六邊形。該圖形的反射對稱軸的數目為</p>\n<p><img alt=\"Figure Q23 (as printed)\" src=\"2016P2_zh_figs/Q23.png\" /></p>\n<ul>\n<li>A. 2</li>\n<li>B. 4</li>\n<li>C. 6</li>\n<li>D. 8</li>\n</ul>",
    "file": "2016_P2_題目中文卷.md",
@@ -16139,7 +16274,10 @@ window.QB = {
    "qno": "23",
    "title": "第 23 題",
    "section": "Paper 2",
-   "tags": [],
+   "tags": [
+    "對稱軸",
+    "對稱"
+   ],
    "text": "The figure below consists of eight identical regular hexagons. The number of axes of reflectional symmetry of the figure is\n![Figure Q23 (as printed)](2016P2_figs/Q23.png)\n*[FIGURE Q23: Hexagonal grid pattern with no labels, numbers, angles, dashed lines, or shading. All hexagons are identical, outlined in black, arranged in a tessellated, staggered formation.]*\n\n- A. 2\n- B. 4\n- C. 6\n- D.",
    "html": "<p>The figure below consists of eight identical regular hexagons. The number of axes of reflectional symmetry of the figure is\n<img alt=\"Figure Q23 (as printed)\" src=\"2016P2_figs/Q23.png\" />\n<em>[FIGURE Q23: Hexagonal grid pattern with no labels, numbers, angles, dashed lines, or shading. All hexagons are identical, outlined in black, arranged in a tessellated, staggered formation.]</em></p>\n<ul>\n<li>A. 2</li>\n<li>B. 4</li>\n<li>C. 6</li>\n<li>D.</li>\n</ul>",
    "file": "2016_P2_題目英文卷.md",
@@ -21068,7 +21206,10 @@ window.QB = {
    "qno": 1,
    "title": "第 1 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "指數定律",
+    "代數化簡"
+   ],
    "lang": "中文",
    "text": "1. 1. (x^{y){} for (ab) = ambm or (am)n = an 1M cP CP 1 1M for = cp−-q or cq-p c9 C9 2 1A 七10 = -(3) 3 1",
    "html": "<p><img src=\"ms/2013P1zh/Q01.png\" alt=\"MS Q1\"></p>",
@@ -21114,7 +21255,10 @@ window.QB = {
    "qno": 2,
    "title": "第 2 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "主項變換",
+    "分式方程"
+   ],
    "lang": "中文",
    "text": "2. =2 2. h k 1M for putting k on one side 1M h k = 1A or equivalent 3-2h 3 1 =2 h k 2hk 1M hk 3k-h=2hk 3k-2hk=h 1M for putting k on one side k(3−2h)=h h k = 1A or equivalent 3-2h 3 1 =2 k h 1M 3k−h=2hk 3k-2hk=h 1M for putting k on one side k(3-2h)=h h k = 1A or equivalent 3-2h --(3)",
    "html": "<p><img src=\"ms/2013P1zh/Q02.png\" alt=\"MS Q2\"></p>",
@@ -21144,7 +21288,9 @@ window.QB = {
    "qno": 3,
    "title": "第 3 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "因式分解"
+   ],
    "lang": "中文",
    "text": "3. 3. (a) 4m²-25n2 =(2m)²-(5n)²2 =(2m-5n)(2m+5n) 1A or equivalent (b) 4m2-25n2+6m-15n 1M for using the result of (a) = (2m-5n)(2m + 5n) +3(2m-5n) =(2m-5n)(2m+5n+3) 1A or equivalent -(3) 44",
    "html": "<p><img src=\"ms/2013P1zh/Q03.png\" alt=\"MS Q3\"></p>",
@@ -21190,7 +21336,10 @@ window.QB = {
    "qno": 4,
    "title": "第 4 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "一元方程",
+    "聯立方程"
+   ],
    "lang": "中文",
    "text": "4. 4. Let $x be the price of a pear and $ y be the price of an orange. 7x+3y=47 1A+1A 5x+6y=49 1M So, we have 2(7x) − 5x = 2(47)- 49. for getting a linear equation in x or y only 1A Solving, we have x = 5 . Thus, the price of a pear is $5. Let $x be the price of a pear. 47-7x 1A for y = 47-7x 3 =49 5x+6 1M+1A+1A 3 + 1M for 5x + 6y 1A Solving, we have x = 5. Thus, the price of a pear is $5. The price of a pear 2(47)-49 1M for fraction + 1A for numerator 1M+1A+1A = 2(7)-5 + 1A for denominator =$5 1A --(4) 19-7x",
    "html": "<p><img src=\"ms/2013P1zh/Q04.png\" alt=\"MS Q4\"></p>",
@@ -21236,7 +21385,10 @@ window.QB = {
    "qno": 5,
    "title": "第 5 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "一元一次不等式",
+    "整數解"
+   ],
    "lang": "中文",
    "text": "5. 5. (a) >23-5x 3 19-7x>69-15x 1M -7x+15x>69-19 for putting x on one side 8x> 50 25 x> 6.25 1A x> 4 (b) 18-2x≥0 1A x≤9 25 < x ≤ 9 . By (a), we have 4 1A Thus, the required integers are 7, 8 and 9. for all correct -(4) 45",
    "html": "<p><img src=\"ms/2013P1zh/Q05.png\" alt=\"MS Q5\"></p>",
@@ -21283,7 +21435,11 @@ window.QB = {
    "qno": 6,
    "title": "第 6 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "極坐標",
+    "三角學",
+    "等腰三角形"
+   ],
    "lang": "中文",
    "text": "6. 6. (a) L is the angle bisector of ∠AOB . 1M (b) Let S(r, θ) be the point of intersection of L and AB . r = 26 cos 60° 1M =13 1A θ = 70° 1A Thus, the required polar coordinates are (13, 70°). --(4)",
    "html": "<p><img src=\"ms/2013P1zh/Q06.png\" alt=\"MS Q6\"></p>",
@@ -21331,7 +21487,12 @@ window.QB = {
    "qno": 7,
    "title": "第 7 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "全等三角形",
+    "相似三角形",
+    "圓的幾何",
+    "證明題"
+   ],
    "lang": "中文",
    "text": "7. 7. (a) In ∆ABC and ∆DCB, ∠BCE =∠CBE (base ∠s, isos. ∆) (given) ∠BAC = ∠BDC BC = BC (common side) (AAS) ∆ABC ≡∆DCB Marking Scheme: 2 Case 1 Any correct proof with correct reasons. Case 2 1 Any correct proof without reasons. (b) (i) There are 3 pairs of congruent triangles. 1A 1A (ii) There are 4 pairs of similar triangles. --(4) 46",
    "html": "<p><img src=\"ms/2013P1zh/Q07.png\" alt=\"MS Q7\"></p>",
@@ -21379,7 +21540,11 @@ window.QB = {
    "qno": 8,
    "title": "第 8 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "百分之一",
+    "誤差上下限",
+    "有效數字"
+   ],
    "lang": "中文",
    "text": "8. 8. (a) The maximum absolute error = 0.5 g The least possible weight 1M =99.5g 1A (b) The least possible total weight of 32 regular packs of sea salt 1M = (99.5)(32) =3184g 1A =3.184 kg = 3.2 kg (correct to the nearest 0.1 kg) Thus, it is impossible that the total weight of 32 regular packs of sea salt 1A f.t. is measured as 3.1 kg correct to the nearest 0.1 kg. Note that 3.15 kg 1M 32 = 0.0984375 kg =98.4375g 1A < 99.5 g Thus, it is impossible that the total weight of 32 regular packs of sea salt 1A f.t. is measured as 3.1 kg correct to the nearest 0.1 kg. -(5)",
    "html": "<p><img src=\"ms/2013P1zh/Q08.png\" alt=\"MS Q8\"></p>",
@@ -21428,7 +21593,13 @@ window.QB = {
    "qno": 9,
    "title": "第 9 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "統計",
+    "平均值",
+    "標準差",
+    "四分位數間距",
+    "棒形圖"
+   ],
    "lang": "中文",
    "text": "9. 9. (a) The mean 7 1A 3.5 2 The inter-quartile range 1M =2 1A The standard deviation =1.5 1A (b) The new standard deviation ≈1.451456116 The decrease in the standard deviation ≈1.5-1.451456116 =0.048543884 1A r.t. 0.0485 ≈ 0.0485 --(5) 47",
    "html": "<p><img src=\"ms/2013P1zh/Q09.png\" alt=\"MS Q9\"></p>",
@@ -21479,7 +21650,15 @@ window.QB = {
    "qno": 10,
    "title": "第 10 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "統計",
+    "中位數",
+    "眾數",
+    "幹葉圖",
+    "分佈域",
+    "概率",
+    "排列與組合"
+   ],
    "lang": "中文",
    "text": "10. 10. (a) The median 1A =31 The mode 1A =23 -(2) (b) (i) Note that 0 ≤ a ≤ 5 and 7 ≤b ≤9. Also note that the range of the distribution is 47. a = 0 a=2 a=1 1A+1A 1A for one pair + 1A for all Thus, we have or b=7b=8 b=9 (ii) The required probability 3+3+3+3+2+9+9 1M 260 32 260 8 1A r.t. 0.123 65 The required probability 3+3+2+2+2+2+2+2+2+4+4+4 1M 260 32 = 260 8 r.t. 0.123 1A = 65 --(4)",
    "html": "<p><img src=\"ms/2013P1zh/Q10.png\" alt=\"MS Q10\"></p>",
@@ -21527,7 +21706,11 @@ window.QB = {
    "qno": 11,
    "title": "第 11 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "變分",
+    "聯立方程",
+    "求積法"
+   ],
    "lang": "中文",
    "text": "11. 11. (a) Let W = he + kl^2 1A where h and k are non-zero constants h(1)+k(1²)=181 1M for substitution (h(2)+k(22)=402 1A for both correct Solving, we have h = 161 and k = 20. The required weight =161(1.2)+20(1.22) =222 grams 1A --(4) (b) 20l{2 + 161e = 594 20l{2 + 161l-594 = 0 1M (4l −11)(5l + 54) = 0 11 l = 2.75 1A (rejected) 4 11 Thus, the perimeter of the tray is metres. 4 --(2) 48",
    "html": "<p><img src=\"ms/2013P1zh/Q11.png\" alt=\"MS Q11\"></p>",
@@ -21575,7 +21758,12 @@ window.QB = {
    "qno": 12,
    "title": "第 12 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "因式定理",
+    "多項式",
+    "二次函數",
+    "判別式"
+   ],
    "lang": "中文",
    "text": "12. 12. (a) By comparing the coefficients of x3 and the constant terms, we have 1A+1A a = 3 and c = 4 . Note that the coefficient of x2 in the expansion of (x - 2)(3x2 + bx + 4) is b-6. 1M By comparing the coefficients of x², we have b -6 = -7. 1A Thus, we have b = -1 . Note that x-2 is a factor of f(x). f(2)=0 3(2)3 − 7(2)2 + 2k − 8 = 0 1M k = 6 f(x) =3x3-7x2+6x-8 =(x−2)(3x2−x+4) Thus, we have a = 3 , b = -1 and c = 4 . 1A+1A+1A ---(4) (b) ∆ =(−1)²−4(3)(4) 1M =-47 < 0 So, the equation 3x² - x + 4 = 0 has nonreal roots. f.t. 1M+1A Thus, the claim is disagreed. --(3) 49",
    "html": "<p><img src=\"ms/2013P1zh/Q12.png\" alt=\"MS Q12\"></p>",
@@ -21624,7 +21812,13 @@ window.QB = {
    "qno": 13,
    "title": "第 13 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "求積法",
+    "立體幾何",
+    "圓柱體",
+    "相似圖形",
+    "比與比例"
+   ],
    "lang": "中文",
    "text": "13. 1M 13. (a) (i) πR2 9 2 r 1 = R 9 1 r R 1A r:R=1:3 (ii) Let h cm be the height of a larger circular cylinder. 2πR2h = 27(π r2(10)) 1M 2 270 r h= R 2 2 270 1M h= 2 3 1A h=15 Thus, the height of a larger circular cylinder is 15 cm . --(5) The base radius of a smaller circular cylinder 1 (b) 3 The base radius of a larger circular cylinder 10 The height of a smaller circular cylinder 2 15 3 The height of a larger circular cylinder The height of a smaller circular cylinder The base radius of a smaller circular cylinder 1M for comparing two ratios ≠ The height of a larger circular cylinder The base radius of a larger circular cylinder Therefore, the two circular cylinders are not similar. 1A f.t. Thus, the claim is disagreed. The base area of a smaller circular cylinder 1 9 The base area of a larger circular cylinder 2πr(10) 2 The curved surface area of a smaller circular cylinder 2π R(15) 9 The curved surface area of a larger circular cylinder The base area of a smaller circular cylinder The curved surface area of a smaller circular cylinder 1M for comparing two ratios The base area of a larger circular cylinder The curved surface area of a larger circular cylinder Therefore, the two circular cylinders are not similar 1A f.t. Thus, the claim is disagreed. The base radius of a smaller circular cylinder 1 The base radius of a larger circular cylinder 3 3 3 The base radius of a smaller circular cylinder 1 = = 27 The base radius of a larger circular cylinder 3 The volume of a smaller circular cylinder 2 The volume of a larger circular cylinder 27 The volume of a smaller circular cylinder The base radius of a smaller circular cylinder 1M for comparing two ratios ≠ The volume of a larger circular cylinder The base radius of a larger circular cylinder Therefore, the two circular cylinders are not similar. 1A f.t. Thus, the claim is disagreed. -(2) 50",
    "html": "<p><img src=\"ms/2013P1zh/Q13.png\" alt=\"MS Q13\"></p>",
@@ -21674,7 +21868,13 @@ window.QB = {
    "qno": 14,
    "title": "第 14 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "圓的方程",
+    "直線方程",
+    "點到直線距離",
+    "圓的幾何",
+    "三角形面積"
+   ],
    "lang": "中文",
    "text": "14. 14. (a) The coordinates of R 1A = (6,17) --(1) (b) (i) Let (h, k) be the coordinates of P. 1M Since P lies on L, we have 4h + 3k + 50 = 0. Note that RP is perpendicular to the straight line 4x + 3y + 50 = 0 k-17 Also note that the slope of RP is h-6 k-17 -4 =-1. 1M Hence, we have h-6 So, we have 3h − 4k + 50 = 0 . Solving, we have h = -14 and k = 2. Therefore, the coordinates of P are (-14, 2) The distance between P and R =√(−14 −6)2+(2 −17)2 1M =25 1A (ii) (1) P, Q and R are collinear. 1M (2) Note that the radius of the C is 10. The distance between Q and R =10 1M The distance between P and Q =25-10 =15 1M The required ratio = PQ:QR =15:10 1A =3:2 --(8) 51",
    "html": "<p><img src=\"ms/2013P1zh/Q14.png\" alt=\"MS Q14\"></p>",
@@ -21722,7 +21922,12 @@ window.QB = {
    "qno": 15,
    "title": "第 15 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "標準分",
+    "框線圖",
+    "統計",
+    "平均值"
+   ],
    "lang": "中文",
    "text": "15. 15. (a) Note that the highest score of the distribution is 90 marks. Let µ marks and σ marks be the mean and the standard deviation of the distribution respectively. [90 − µ = 3σ 1M 65−µ=0.5σ 1A Solving, we have µ = 60 . Thus, the mean of the distribution is 60 marks. Note that the highest score of the distribution is 90 marks. Let σ marks be the standard deviation of the distribution. 90-65 3-0.5= 1M σ σ=10 for both The mean =90-3σ =90-3(10) = 60 marks 1A Note that the highest score of the distribution is 90 marks. The mean 90-65 =90-3 1M 3-0.5 = 60 marks 1A Note that the highest score of the distribution is 90 marks. The mean 90-65 =65-0.5 1M 3-0.5 1A = 60 marks --(2) 1M (b) Note that if the test score of a student is lower than the mean, then the standard score of the student is negative. either one Also note that the median is 55 marks and the mean is 60 marks. So, the median is less than the mean. Therefore, the test scores of at least half of the students are less than the mean. f.t. 1A Thus, the claim is agreed. -(2) 52",
    "html": "<p><img src=\"ms/2013P1zh/Q15.png\" alt=\"MS Q15\"></p>",
@@ -21769,7 +21974,10 @@ window.QB = {
    "qno": 16,
    "title": "第 16 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "概率",
+    "排列與組合"
+   ],
    "lang": "中文",
    "text": "16. 16. (a) The required probability C4C21 + C5Cl1 1M for numerator C6 二 286 8008 1 r.t. 0.0357 1A 28 The required probability 5 10 4 3 2 11 5 4 3 2 11 1 for 15p1}+6 p2} =15 1M +6 11 12 15 14 13 12 11 16 15 14 13 16 1 1A r.t. 0.0357 = 28 --(2) (b) The required probability 1 1M =1- for 1-(a) 28 27 1A r.t. 0.964 二 28 The required probability +C{3C{3} 1M for considering 4 cases = C6 7722 8008 27 1A r.t. 0.964 28 The required probability 10 10 9 8 7 6 5 9 8 7 11 11 +6 = 14 13 13 11 16 12 11 16 15 12 15 14 1M for p3 +6p4+15 p5+ 20 6 10 3 11 10 5 11 9 8 5 4 9 4 +20 +15 15 15 14 11 16 14 13 12 16 13 12 11 27 1A r.t. 0.964 28 -(2) 53",
    "html": "<p><img src=\"ms/2013P1zh/Q16.png\" alt=\"MS Q16\"></p>",
@@ -21819,7 +22027,13 @@ window.QB = {
    "qno": 17,
    "title": "第 17 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "二次函數",
+    "配方法",
+    "主項變換",
+    "極值",
+    "一元二次方程"
+   ],
    "lang": "中文",
    "text": "17. 17. (a) f(x) =36x-x2 =-(x2-36x+182)+182 1M =-(x−18)2+324 1A Thus, the coordinates of the vertex are (18, 324) --(2) (b) (i) A 108-3x 108-mx , m>0 1M for x 1M+1A = x 2 2 3 22 =54x- 2 f(x) , where f(x) = 36 x − x2 and 0 < x < 36 . (ii) Note that A = 2 1M By (a), the greatest value of A is 486. f.t. 1A Thus, the claim is disagreed. Assume that A > 500. 3 x2>500 . Hence, we have 54x- 2 So, we have 3x2 −108x +1000 < 0. Δ =(−108)²−4(3)(1000) =-336 < 0 1M Therefore, we have 3x² -108x +1000 >0. This is impossible. 1A f.t. Thus, the claim is disagreed. 3 x2 Note that A = 54x - 2 Hence, the quadratic equation 3x2 –108x + 2A = 0 has real roots. 1M So, we have (−108)2 - 4(3)(2.A) ≥ 0. Therefore, we have 11 664 -24 A ≥ 0 Solving, we have A ≤ 486 . 1A f.t. Thus, the claim is disagreed. --(4) 54",
    "html": "<p><img src=\"ms/2013P1zh/Q17.png\" alt=\"MS Q17\"></p>",
@@ -21869,7 +22083,14 @@ window.QB = {
    "qno": 18,
    "title": "第 18 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "三角學",
+    "正弦定理",
+    "餘弦定理",
+    "立體幾何",
+    "兩面角",
+    "摺紙問題"
+   ],
    "lang": "中文",
    "text": "18. 18. (a) (i) Note that ∠ABC = 90° 28 tan∠BCM = 21 r.t. 53.1° 1A ∠BCM ≈ 53.1° (ii) By sine formula, BC CM 1M sin ∠MBC sin ∠BMC 21 CM 2 sin(180°-75°-53.13010235°) sin 75° 1A CM ≈17.1 cm r.t. 17.1 cm --(3) (b) (i) By cosine formula, AC2 = AM2 +CM2 -2(AM)(CM)cos∠AMC 1M AC2 ≈(35 -17.10154643)2 + (17.10154643)2 -2 (35 -17.10154643)(17.10154643)cos107° AC ≈ 28.1 cm 1A r.t. 28.1 cm (ii) CN 1M = CM cos ∠BCM ≈17.10154643cos 53.13010235° ≈10.26092786 By cosine formula, AB2 = BC2+ AC2 -2(AC)(BC)cos∠ACB any one 212+(28.13898297)2 −282 cos∠ACB≈ 2(28.13898297)(21) ∠ACB≈67.6818202° By cosine formula, AN² = CN2 + AC2-2(CN)(AC)cos∠ACB AN2 ≈ (10.26092786)2 + (28.13898297)2 - 2(10.260927867)(28.13898297)cos67.6818202° AN ≈26.03453787 By sine formula, AN AC sin ∠ANC sin ∠ACN 28.13898297 26.03453787 sin 67.6818202° sin ∠ANC ∠ANC≈89.06498097°or∠ANC≈90.93501903° 1M So, ∠ANC is not a right angle. Hence, ∠ANM is not the angle between the face BCM and the horizontal ground. 1A f.t. Thus, the claim is disagreed. 55",
    "html": "<p><img src=\"ms/2013P1zh/Q18.png\" alt=\"MS Q18\"></p>",
@@ -21919,7 +22140,13 @@ window.QB = {
    "qno": 19,
    "title": "第 19 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "等比數列",
+    "百分之一增長",
+    "指數方程",
+    "對數",
+    "數列應用"
+   ],
    "lang": "中文",
    "text": "19. 19. (a) (i) The required area =9×106(1+r%)-3×105 1A =(870+9r)×104m2 (ii) (9×106(1+r%)-3×105)(1+r%)-3×10^5=1.026×107} 1M 1M 3r²+590r-6200=0 150(1+r%)²−5(1+r%)-176=0 11 -16 or 1+r%= (rejected) 1+r%= 10 15 1A Thus, we have r = 10. -(4) (b) (i) The required area =9×106(1.1)n−1−3×105(1.1)n−2−3×105(1.1)n-3−3×105(1.1)n-4−..-3×105 1M (1.1) -1-1) =9×106(1.1)n−1−3×105 1M for sum of geometric sequence 1.1-1 =9×106(1.1)n−1 −3×106((1.1)n−1−1) = (6(1.1)n−1 + 3)×106 m2 1A 37 (ii) When (6(1.1)n−1 + 3)×106 > 4×107 , we have (1.1)n−1 > 6 37 Hence, we have log(1.1)n−1 > log 1M 6 37 So, we have (n – 1) log 1.1 > log 6 37 log 6 Therefore, we have n-1> log1.1 Solving, we have n > 20.08671715. Thus, the total floor area of all public housing flats will first exceed 4×107m² at the end of the 21st year. 1A --(5) (c) Note that a(1.21)1 + b = 1×10{7 and a(1.21)2 + b =1.063×107 300 ×106 and b=7×106. 1M Solving, we have a = 121 300 (1.21)\" +7)×10 .. (*) Consider (6(1.1)\"−1 + 3)×106 > 121 -300 (1.21)n − 7 + 6(1.1)n−1 + 3 > 0 . So, we have 121 1M 3((1.1)n−1)2 − 6(1.1)n−1 + 4 < 0 Therefore, we have 75((1.1)\")2 −165(1.1)\" +121 < 0 . ∆ =(−165)²−4(75)(121) =-9075 < 0 Since 75 > 0 , we have 75((1.1)\")2 −165(1.1)\" +121> 0 for all n. 1M Hence, there is no solution for (*). f.t. 1A Thus, the claim is incorrect. -(4) 57",
    "html": "<p><img src=\"ms/2013P1zh/Q19.png\" alt=\"MS Q19\"></p>",
@@ -26254,7 +26481,9 @@ window.QB = {
    "qno": 1,
    "title": "第 1 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "主項變換"
+   ],
    "lang": "中文",
    "text": "1. 1. h+k h-3 1M 5(h−3)=k(h+k) 5h-15=hk+k² IM 5h−hk=15+k² for putting h on one side 15+k² 1A or equivalent h = 5-k k 5 1 h-3 h+k h+k 1M h 1M for putting h on one side -3 k 1 1 h 三 k k 5 5 -15-k² k-5 h 1 5k 5k 15+k² 1A or equivalent h= 5-k --(3) x-8y",
    "html": "<p><img src=\"ms/2023P1/Q01.png\" alt=\"MS Q1\"></p>",
@@ -26269,7 +26498,9 @@ window.QB = {
    "qno": 2,
    "title": "第 2 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "指數定律"
+   ],
    "lang": "中文",
    "text": "2. 2. (x^{y9){-6 for (ah)k = ahk or (ab)' = a'b 1M cp 1 = c^P-9 or d−r= =x-8-(-42)y1-(-54) IM for 09 dr =x{34y, 555 IA ---(3)",
    "html": "<p><img src=\"ms/2023P1/Q02.png\" alt=\"MS Q2\"></p>",
@@ -26284,7 +26515,9 @@ window.QB = {
    "qno": 3,
    "title": "第 3 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "百分數"
+   ],
    "lang": "中文",
    "text": "3. The least possible total weight of 250 regular packets of cheese 3. 1M+1M =(0.22-0.005)(250) = 53.75 kg > 53.65 kg 1A f.t. Thus, the claim is not correct. Note that 53600+50 1M+1M 250 =214.6g <215g f.t. 1A Thus, the claim is not correct. Note that 53600+50 1M+1M 220-5 ≈249.5348837 <250 1A f.t. Thus, the claim is not correct. --(3) 44",
    "html": "<p><img src=\"ms/2023P1/Q03.png\" alt=\"MS Q3\"></p>",
@@ -26299,7 +26532,9 @@ window.QB = {
    "qno": 4,
    "title": "第 4 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "一元一次不等式"
+   ],
    "lang": "中文",
    "text": "4. 4. (a) 3x+2> 2 6x+4>4x-5 1M 6x-4x>-5-4 for putting x on one side 2x>-9 -9 x>-4.5 1A x> 2 3x-2<7 x<3 6- x>3 1A h v 2 (6b) 4 1A --(4)",
    "html": "<p><img src=\"ms/2023P1/Q04.png\" alt=\"MS Q4\"></p>",
@@ -26314,7 +26549,9 @@ window.QB = {
    "qno": 5,
    "title": "第 5 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "百分數"
+   ],
    "lang": "中文",
    "text": "5. 5. Let x and y be the number of male passengers and the original number of female passengers on the ferry respectively. y=(1+40%)x 1A+1A x=(1+40%)(y-24) 1M So, we have x = 1.4(1.4x - 24) for getting a linear equation in one unknown 1A Solving, we have x = 35 Thus, the number of male passengers on the ferry is 35. Let x be the number of male passengers on the ferry. 1A So, the original number of female passengers on the ferry is (1 + 40%)x. x=(1+40%)((1+40%)x-24) 1M+1A 1M for getting a linear equation in one unknown x=1.4(1.4x-24) 1A Solving, we have x = 35. Thus, the number of male passengers on the ferry is 35. The number of male passengers on the ferry (1+40%)24 1M for fraction + 1A for numerator 11 1M+1A+1A (1+40%)²-1 + 1A for denominator =35 1A --(4) 45",
    "html": "<p><img src=\"ms/2023P1/Q05.png\" alt=\"MS Q5\"></p>",
@@ -26329,7 +26566,9 @@ window.QB = {
    "qno": 6,
    "title": "第 6 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "比率與比例"
+   ],
    "lang": "中文",
    "text": "6. 6. (a) a:b =6:7 4a-3c =9 2b-c 4a-3c=18b-9c 24 1M b-3c=18b-9c 7 17 b c = 7 b:c =7:17 a:b:c 1A =6:7:17 (b) Let a = 6k , b = 7k and c = 17k , where k is a non-zero constant. 5a+8b 7b+3c 5(6k)+8(7k) 1M 7(7k)+3(17k) 86 100 43 1A 0.86 1 50 --(4)",
    "html": "<p><img src=\"ms/2023P1/Q06.png\" alt=\"MS Q6\"></p>",
@@ -26344,7 +26583,9 @@ window.QB = {
    "qno": 7,
    "title": "第 7 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "圓的性質"
+   ],
    "lang": "中文",
    "text": "7. ∠RPS 7. 1M =∠PTQ-∠PSQ = 68°−41° = 27° ∠RQS =∠RPS 1A = 27° 1M Note that ∠PQR=90°. ∠PQS =∠PQR-∠RQS =90°-27° = 63° 1A --(4) 46",
    "html": "<p><img src=\"ms/2023P1/Q07.png\" alt=\"MS Q7\"></p>",
@@ -26359,7 +26600,10 @@ window.QB = {
    "qno": 8,
    "title": "第 8 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "平面幾何",
+    "相似三角形"
+   ],
    "lang": "中文",
    "text": "8. 8. (a) ∠CAE=∠DBE (alt. ∠s, AC// DB) ∠AEC =∠BED (vert. opp. ∠s) ∠ACE=∠BDE (∠ sum of ∆) (AAA) ∆ACE~∆BDE (AA) (equiangular) Marking Scheme: Case 1 Any correct proof with correct reasons. 2 Case 2 Any correct proof without reasons. 1 BE AE (b) (by(a)) 1M BD AC AE 20-AE 15 10 AE=8cm Note that AC > AE > CE AC²} =102 =100 AE{2}+CE^2} =82+72 =113 Therefore, we have AE²+ CE2 ≠ AC2 IM Hence, ∆ACE is not a right-angled triangle. f.t. 1A By (a), ∆BDE is not a right-angled triangle. --(5)",
    "html": "<p><img src=\"ms/2023P1/Q08.png\" alt=\"MS Q8\"></p>",
@@ -26374,7 +26618,10 @@ window.QB = {
    "qno": 9,
    "title": "第 9 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "統計",
+    "幹葉圖"
+   ],
    "lang": "中文",
    "text": "9. 9. (a) 49-(20+a)=27 1M a = 2 The mean =36 1A The mode =33 1A (b) The required probability 14 1M for denominator 1 24 7 1A r.t. 0.583 12 --(5) 47",
    "html": "<p><img src=\"ms/2023P1/Q09.png\" alt=\"MS Q9\"></p>",
@@ -26389,7 +26636,9 @@ window.QB = {
    "qno": 10,
    "title": "第 10 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "軌跡"
+   ],
    "lang": "中文",
    "text": "10. 1M 10. (a) T is the perpendicular bisector of AB. --(1) The slope of Γ (b) (i) = -3 The slope of AB 1 3 The equation of AB is y+4= (x-2) 1M 3 1A or equivalent x-3y-14=0 (ii) Note that the centre of the required circle is the point of intersection of AB and Γ . Solving 3x + y -12 = 0 and x -3y -14 = 0, the coordinates of the 1M centre of the required circle are (5, -3). The radius of the required circle =√(2-5)²+(-4+3)2 1M =√10 Thus, the equation of the required circle is (x-5)²+(y+3)²=10. x2+ y2−10x+6y+24=0 1A Let (h, k) be the coordinates of B. h-3k-14=0 h=3k+14 Note that the mid-point of AB lies on T . 2+3k+14 −4+k -12=0 3 十 2 2 Solving, we have k = -2 and h = 8 . Therefore, the coordinates of B are (8, -2). The coordinates of the centre of the required circle 2+8 -4-2 1M 1 2 2 (5,-3) 'h irc 1M =√(2-5)²+(-4+3)² =√10 Thus, the equation of the required circle is (x - 5)²+ (y +3)²=10 x2+y2-10x+6y+24=0 1A --(5) 48",
    "html": "<p><img src=\"ms/2023P1/Q10.png\" alt=\"MS Q10\"></p>",
@@ -26404,7 +26653,9 @@ window.QB = {
    "qno": 11,
    "title": "第 11 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "統計"
+   ],
    "lang": "中文",
    "text": "11. (1)(8)+(2)(5)+(3)(n)+(4)(1) 11. (a) =2 1M 8+5+n+1 n= 6 The median =2 1A The inter-quartile range =3-1 1M =2 1A The variance = 0.9 1A --(5) (b) Note that the original range is 3. There are two cases. Case 1: Each of the two students owns 2 calculators. The range of the distribution =3 1M Case 2: One of the two students owns 1 calculator and the other either one student owns 3 calculators. The range of the distribution =3 Thus, there is no change in the range of the distribution due to the f.t. 1A withdrawal of the two students. --(2)",
    "html": "<p><img src=\"ms/2023P1/Q11.png\" alt=\"MS Q11\"></p>",
@@ -26419,7 +26670,9 @@ window.QB = {
    "qno": 12,
    "title": "第 12 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "變分"
+   ],
    "lang": "中文",
    "text": "12. 12.(a)Letf(x) = px²+q, where p and q are non-zero constants 1M 1M So, we have 100p + q = 62 and 225p + q = 122 for either substitution 12 Solving, we have p = and q =14. 25 12 x2+14. Hence, we have f(x) = 25 1A Thus, we have f(5) = 26 . --(3) (b) By (a), we have u = 14 and v = 26. 1M for either one So, we have UW = 12 and VW = 5. Note that ∠UWV = 90° 1M Hence, UV is a diameter of C. The circumference of C =π√UW2+VW2 1M =π√122+52 =13π 1A --(4) 49",
    "html": "<p><img src=\"ms/2023P1/Q12.png\" alt=\"MS Q12\"></p>",
@@ -26434,7 +26687,9 @@ window.QB = {
    "qno": 13,
    "title": "第 13 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "多項式"
+   ],
    "lang": "中文",
    "text": "13. 1M 13. (a) Let mx + n be the required quotient, where m and n are constants Then, we have h(x) =(mx +n)(x³+ 5x²−12x −1) +mx+n. 1M By comparing the coefficients of x4, we have m = 3 . either one By comparing the coefficients of x², we have 5n -12m = -16. So, we have n = 4. 1A Thus, the required quotient is 3x + 4 . --(3) (b) h(x)=0 (3x+4)(x3+5x²-12x-1)+3x+4=0 (by(a)) for(px+q)(x3+5x²-12x)=0 (3x+4)(x3+5x²-12x)=0 1M x(3x+4)(x2+5x-12)=0 x=0,3x+4=0 or x2+5x-12=0 1M -5±√73 -4 1M x=0，x= or x = 2 3 -5-√73 -5+√73 and Note that both are not rational numbers. 2 2 -4 and 0 are rational roots of h(x) =0. Also note that both 3 f.t. 1A Thus, the equation h(x) = 0 has 2 rational roots. -(4)",
    "html": "<p><img src=\"ms/2023P1/Q13.png\" alt=\"MS Q13\"></p>",
@@ -26449,7 +26704,10 @@ window.QB = {
    "qno": 14,
    "title": "第 14 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "立體圖形",
+    "求積法"
+   ],
    "lang": "中文",
    "text": "14. 14. (a) Let l cm be the slant height of the circular cone. π(14)(l) = 700π 1M l=50 The height of the circular cone =√12-142 1M =√50²-142 = 48 cm 1A --(3) (b) (i) The volume of Y 1 1 π(14²)(48)1- 1M+1M H √15+1 3 = 3 087π cm³ 1A (ii) Let d cm be the diameter of each sphere. 3 3087π d 4 1M π 2 2 3 1A d =21 Thus, the diameter of each sphere is 21 cm. --(5) 50",
    "html": "<p><img src=\"ms/2023P1/Q14.png\" alt=\"MS Q14\"></p>",
@@ -26464,7 +26722,9 @@ window.QB = {
    "qno": 15,
    "title": "第 15 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "概率"
+   ],
    "lang": "中文",
    "text": "15. 15. (a) The required probability C2 IM for denominator = C2 5 1A r.t. 0.278 18 ---(2) (b) The required probability C{C4C3 +C2C8 5 1M for (a) + p , where 0 < p < 1 + 11 C2C10 18 67 1A r.t. 0.744 11 90 --(2)",
    "html": "<p><img src=\"ms/2023P1/Q15.png\" alt=\"MS Q15\"></p>",
@@ -26479,7 +26739,9 @@ window.QB = {
    "qno": 16,
    "title": "第 16 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "一元二次方程"
+   ],
    "lang": "中文",
    "text": "16. 1M 16. (a) Note that p + 5p = -a and p(5p) = b . for either one Therefore, we have 6p=-a and 5p²= b. 2 -a =b. So, we have 5 6 Thus, we have 5a²= 36b. 1 --(2) (b) Let t be the x-coordinate of Q. Then, the x-coordinate of R is 5t . Putting y = mx in x2+y2-6x-12y+20=0,we have 1M x2+(mx)2-6x-12(mx)+20=0 So, we have (m² + 1) x² -(12m + 6) x + 20 = 0. Therefore, t and 5t are the roots of the equation 20 x2 6(2m+1) 0= x+ 1+tu 1+2u 2 -62m +1) 20 =36 1M By (a), we have 5 m2+1 m2+1 Simplifying, we have (2m +1)²= 4(m²+1) Therefore, we have 4m = 3 . 3 0.75 1A Solving, we have m = 4 --(3) 51",
    "html": "<p><img src=\"ms/2023P1/Q16.png\" alt=\"MS Q16\"></p>",
@@ -26494,7 +26756,9 @@ window.QB = {
    "qno": 17,
    "title": "第 17 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "三角學"
+   ],
    "lang": "中文",
    "text": "17. 17. (a) By sine formula, we have sin∠XWYsin∠WYX 1M XX XM sin  sn n0° 9 5 · 7d) r.t. 51.5° 1A ∠XWY ≈51.5° --(2) (b) Let P be the projection of Z on the triangle WXY. Note that PW = PX = PY Denote the mid-point of XY by M. The angle between the triangles WXY and XYZ is ∠PMZ. 1M The centre of the circle which passes through W, X and Y is P. So, we have ∠MPX = ∠XPY = ∠XWY. 1 2 MP 1M = PX cos ∠MPX = PW cos ∠XWY PZ tan ∠PWZ = 1M PW PZ tan30°= PW either one PZ = PW tan 30° tan∠PMZ PZ MP PW tan 30° PWcos∠XWY tan30° cos∠XWY tan 30° (by(a)) cos51.54318937 ≈0.928328501 Therefore, we have tan ∠PMZ <1. Hence, we have ∠PMZ < 45° f.t. 1A Thus, the angle between the triangles WXY and XYZ does not exceed 45° -(4) 52",
    "html": "<p><img src=\"ms/2023P1/Q17.png\" alt=\"MS Q17\"></p>",
@@ -26509,7 +26773,9 @@ window.QB = {
    "qno": 18,
    "title": "第 18 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "數列"
+   ],
    "lang": "中文",
    "text": "18. β 7 18. (a) 1M 7 α αβ = 49 log, αβ = log7 49 1M log7 α + log7 β = 2 log7 α = 2 − log7 β IA --(3) (b) loga β −log7β =log7β−logβα 1M log7α log7β − log7 β = log, β − 1M log7 β log7 a Let u = log, β . 2-u u (by(a)) 1M -u=u- for using the result of (a) 2-u u u2-u_u2+u-2 2-u u u(u−1)(u+2)(u-1) 2-u u u2=(u+2)(2-u) (since u ≠1) u2=2 u=√2 or u =-√2(rejected) l0g7β=√2 The common difference of the arithmetic sequence = log7 β − logβ α log7a = log7 β − log7 β 2-10g7β = log7 β − log7β 2-√2 =√2- 1M √2 =1 1A --(5) 53",
    "html": "<p><img src=\"ms/2023P1/Q18.png\" alt=\"MS Q18\"></p>",
@@ -26524,7 +26790,10 @@ window.QB = {
    "qno": 19,
    "title": "第 19 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "坐標幾何",
+    "直線方程"
+   ],
    "lang": "中文",
    "text": "19. 19. (a) The slope of PQ t-0 32-50 -t 18 Note that the x-coordinate of G is 25. 1M The equation of the perpendicular bisector of PR is 18 (x-32) 1M y-t= t t²2-126 18 (x-32), we have y= Putting x =25 in y-t= t t t²-126 1A 25, Therefore, the coordinates of G are either one t IM Also note that the x-coordinate of R is 14. The equation of the straight line which passes through O and is 18 perpendicular to PR is y = x . t 252 18 Putting x=14 in y= x, we have y = t t 252 14, 1A Thus, the coordinates of H are t --(5) (b) (i) As ∠PQS = ∠POQ , we have tan ∠PQS = tan ∠POQ. 50-32 t 1M for either side 1 32 1 11 1 32 1 t²-576=0 Since t > 0, we have t = 24. 1 75 25, 1M for using the result of (a) (ii) By (a), the coordinates of G are 4 The coordinates of Q are (32, 24). The slope of OG 75 -0 4 1 25-0 3 二 4 The slope of OQ 24-0 32-0 3 4 Therefore, the slope of OG and the slope of OQ are equal. f.t. 1A Thus, O, G and Q are collinear. 54",
    "html": "<p><img src=\"ms/2023P1/Q19.png\" alt=\"MS Q19\"></p>",
@@ -26539,7 +26808,9 @@ window.QB = {
    "qno": 1,
    "title": "第 1 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "指數定律"
+   ],
    "lang": "中文",
    "text": "1. 1. 1 1 給 x^{P= =x 或 1M dx dx bt b 1 x-bx= 馆 1M = yr-q y y n 1A m12 --(3) 3a+b",
    "html": "<p><img src=\"ms/2012P1/Q01.png\" alt=\"MS Q1\"></p>",
@@ -26554,7 +26825,9 @@ window.QB = {
    "qno": 2,
    "title": "第 2 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "主項變換"
+   ],
    "lang": "中文",
    "text": "2. 2. =b-1 8 3a+b=8(b-1) 1M 3a+b=8b-8 給將 a 放在一邊 1M 3a=7b-8 7b-8 或等價 1A a = 3 3a+b =b-1 8 3a b =b-1 + 8 8 3a 1M 給將 a 放在一邊 8 7b 3a -1 8 8 7b 3a=8 8 3a=7b-8 1M 7b-8 或等價 1A a = 3 --(3)",
    "html": "<p><img src=\"ms/2012P1/Q02.png\" alt=\"MS Q2\"></p>",
@@ -26569,7 +26842,9 @@ window.QB = {
    "qno": 3,
    "title": "第 3 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "因式分解"
+   ],
    "lang": "中文",
    "text": "3. x²−6xy+9y2 3. (a) 或等價 = (x−3y)² 1A x²-6xy+9y²+7x-21y (b) 給利用(a)的結果 1M (x-3y)²+7x-21y =(x−3y)2+7(x−3y) 或等價 1A =(x-3y)(x-3y+7) --(3) 2",
    "html": "<p><img src=\"ms/2012P1/Q03.png\" alt=\"MS Q3\"></p>",
@@ -26584,7 +26859,9 @@ window.QB = {
    "qno": 4,
    "title": "第 4 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "百分數"
+   ],
    "lang": "中文",
    "text": "4. 4. (a) 佩玲的日薪 1M = 480(1+ 20%) 1A u-1 給漏寫單位 = $576 pp-1 給未定義符號 (b) 設 $x 為潔儀的日薪。 1M x(1-20%)=480 480 x = 1-20% x = 600 必須顯示理由 1A 因此，潔儀的日薪最高。 1 留意 >1+20%。 1M 1-20% 必須顯示理由 1A 因此，潔儀的日薪最高。 -(4)",
    "html": "<p><img src=\"ms/2012P1/Q04.png\" alt=\"MS Q4\"></p>",
@@ -26599,7 +26876,10 @@ window.QB = {
    "qno": 5,
    "title": "第 5 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "應用題",
+    "一元一次方程"
+   ],
    "lang": "中文",
    "text": "5. pp-1 給未定義符號 5. 設 x 為在該展覽中心內男保安員的人數， 1A 則在該展覽中心内女保安員的人數爲(x+24) x+(x+24)=132 1M+1A 2x=108 1A x = 54 因此，在該展覽中心內男保安員的人數為54。 pp-1 給未定義符號 設x及y分別爲在該展覽中心內男及女保安員的人數。 x y 故此，可得x+y=132及 =4。 6 6 所以，可得x+(x+24)=132。 1M 給得只有 x 或 y 的線性方程 1A 求解後，可得x=54。 因此，在該展覽中心內男保安員的人數為54。 在該展覽中心內男保安員的人數 1M 給分數 + 1A給分子 132-(6)(4) 1M+1A+1A +1A給分母 2 108 2 =54 1A --(4)",
    "html": "<p><img src=\"ms/2012P1/Q05.png\" alt=\"MS Q5\"></p>",
@@ -26614,7 +26894,9 @@ window.QB = {
    "qno": 6,
    "title": "第 6 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "一元一次不等式"
+   ],
    "lang": "中文",
    "text": "6. 4x+6 6. (a) >2(x-3) 7 4x+6>14(x-3) 10x < 48 24 1A x < 4.8 x< 5 2x-10≤0 1A x≤5 24 1M 因此，所求的解爲x< o 5 (b) 4 1A -(4) 3",
    "html": "<p><img src=\"ms/2012P1/Q06.png\" alt=\"MS Q6\"></p>",
@@ -26629,7 +26911,10 @@ window.QB = {
    "qno": 7,
    "title": "第 7 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "統計",
+    "框線圖"
+   ],
    "lang": "中文",
    "text": "7. 7. (a) a =18.1-6.8 1A =11.3 b =12.1+3.2 1A =15.3 (b) 留意在訓練後，該些學生完成 100m 賽跑的最長所需時間 1M 為15.2s，並較訓練前所需時間的分佈的上四分位數少。 1A 必須顯示理由 因此，同意該宣稱。 --(4)",
    "html": "<p><img src=\"ms/2012P1/Q07.png\" alt=\"MS Q7\"></p>",
@@ -26644,7 +26929,10 @@ window.QB = {
    "qno": 8,
    "title": "第 8 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "圓的幾何",
+    "交弦定理"
+   ],
    "lang": "中文",
    "text": "8. 8. (a) 1A ΔAED~ΔBEC ∆AEB~∆DEC 1A AE DE 1M BE CE AE 15 20 8 u-1 給漏寫單位 AE = 6 cm 1A AE² + BE2 (b) 1M =6²+8² =102 = AB² 因此，AC與BD互相垂直。 必須顯示理由 1A --(5)",
    "html": "<p><img src=\"ms/2012P1/Q08.png\" alt=\"MS Q8\"></p>",
@@ -26659,7 +26947,10 @@ window.QB = {
    "qno": 9,
    "title": "第 9 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "立體幾何",
+    "角柱體"
+   ],
    "lang": "中文",
    "text": "9. pp-1 給未定義符號 9. (a) 設 xcm 爲 AD 的長度。 (6+x)(12) (10)=1020 1M 2 1A x=11 u-1 給漏寫單位 因此，AD的長度為11cm。 (b) CD =√12²+(11-6)2 1M = 13 cm 角柱體 ABCDEFGH 的總表面面積 (6+11)(12) (2) =(12+11+13+6)(10)+ 1M 2 = 624 cm² 1A u-1 給漏寫單位 --(5) 4",
    "html": "<p><img src=\"ms/2012P1/Q09.png\" alt=\"MS Q9\"></p>",
@@ -26674,7 +26965,10 @@ window.QB = {
    "qno": 10,
    "title": "第 10 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "統計",
+    "幹葉圖"
+   ],
    "lang": "中文",
    "text": "10. 10. (a) 平均值 =18 1A 中位數 =16 1A -(2) (b) (i) 平均值 =18 1A (ii) 設 a 及 b 爲另外兩份問卷記錄得的時數。 a+b+19+20 留意 =18 4 所以，可得a+b=33。 1M 若該兩中位數相同，則可得a≤16及 b≤16。 1M 由此，可得a+b≤32。 由於a+b=33，所以這是不可能。 1A 因此，該兩中位數相同是沒有可能。 必須顯示理由 設a及b爲另外兩份問卷記錄得的時數。 a+b+19+20 留意 =18。 4 所以，可得b=33-a。 1M 若該兩中位數相同，則可得a≤16及b≤16。 1M 由此，可得a≤16及33-a≤16。 故此，可得a≤16及a≥17。 由於17>16，所以這是不可能。 因此，該兩中位數相同是沒有可能。 1A 必須顯示理由 --(4)",
    "html": "<p><img src=\"ms/2012P1/Q10.png\" alt=\"MS Q10\"></p>",
@@ -26689,7 +26983,9 @@ window.QB = {
    "qno": 11,
    "title": "第 11 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "變分"
+   ],
    "lang": "中文",
    "text": "11. 11. (a)設C=r+sA，其中a及b均爲非零的常數。 1A 故此，可得r+2s=62 及r+6s=74。 1M 給任何一項代換 求解後，可得r=56及 s=3。 1A 給兩項正確 所求的成本 =56+3(13) =$95 1A u-1 給漏寫單位 --(4) (b) 由於該較大的罐的體積為(a)所描述的罐的 8 倍，所以該較大 的罐的表面面積為(a)所描述的罐的4倍。 1M 該較大的罐的表面面積 = (13)(4) = 52 m² 所求的成本 =56+3(52) =$212 1A u-1 給漏寫單位 --(2) 5",
    "html": "<p><img src=\"ms/2012P1/Q11.png\" alt=\"MS Q11\"></p>",
@@ -26704,7 +27000,10 @@ window.QB = {
    "qno": 12,
    "title": "第 12 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "立體幾何",
+    "圓錐"
+   ],
    "lang": "中文",
    "text": "12. 所求的體積 12. (a) 1 π(48)²(96) 1M 3 1A u-1 給漏寫單位 = 73 728π cm³ --(2) (b) (i) 所求的體積 2 π(60)3 1M 二 3 u-1 給漏寫單位 1A =144000π cm³ (ii) 設 hcm 為在牛奶表面下的平截頭體的高度 及rcm 為在牛奶表面上的圓錐體的底半徑。 h =√602-482 1M =36 96-36 r 96 48 r=30 剩下在該容器內的牛奶的體積 π(30)2(96-36) 1 =144000π-73728π 1M 3 = 88 272π cm³ ≈ 0.2773146667 m3 < 0.3 m³ 1A 必須顯示理由 因此，不同意該宣稱。 在牛奶表面下的平截頭體的高度 1M =√602-482 = 36 cm 剩下在該容器內的牛奶的體積 96-36 =144000π-73728π1- 1M 96 88 2727 cm3 0.23：7 m≈ <0.3 m3 必須顯示理由 VA 委民刷前局监房 --(5) 6",
    "html": "<p><img src=\"ms/2012P1/Q12.png\" alt=\"MS Q12\"></p>",
@@ -26719,7 +27018,10 @@ window.QB = {
    "qno": 13,
    "title": "第 13 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "因式定理",
+    "二次函數"
+   ],
    "lang": "中文",
    "text": "13. 13. (a) k(2)3−21(2)²+24(2)-4=0 1M 8k = 40 1A k=5 --(2) 長方形 OPQR 的面積 (b) (i) 1A =m(15m²-63m+72) =15m³-63m²+72m (ii) 留意長方形 OPQR 的面積為 12。 1M 15m³-63m²+72m=12 5m³-21m²+24m-4=0 1M 給 (m-2)(am² +bm+c) (m-2)(5m²-11m+2)=0 1M+1A (m-2)²(5m-1)=0 1 m=2或m= 5 故此，Q只有兩個不同的位置使得長方形 OPQR的面積 必須顯示理由 1A 爲12。 因此，Q沒有三個不同的位置使得長方形 OPQR 的面積 爲12。 --(5)",
    "html": "<p><img src=\"ms/2012P1/Q13.png\" alt=\"MS Q13\"></p>",
@@ -26734,7 +27036,10 @@ window.QB = {
    "qno": 14,
    "title": "第 14 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "直線方程",
+    "軌跡"
+   ],
    "lang": "中文",
    "text": "14. 1A 14.(a) (i) 尸平行於L。 1A (ii) 留意  的 y截距爲-2。 L的斜率 -1-0 1M 0-3 1 1A 3 Γ的方程為 (x-0) y+2= 3 或等價 1A x-3y-6=0 --(5) 1A (b) (i) 留意 Q 的坐標為 (6,0)。 1A 必須顯示理由 由於6-3(0)-6=0，所以Γ通過Q。 任何一項--- 1M (ii) 留意 QH 及 QK 均為該圓的半徑。 再留意 ΔAQH 及 ΔBQK 的高均為L 與T 間之距離。 所以，ΔAQH 的面積等於ΔBQK的面積。 1A 因此，所求之比爲1：1。 --(4) 7",
    "html": "<p><img src=\"ms/2012P1/Q14.png\" alt=\"MS Q14\"></p>",
@@ -26749,7 +27054,11 @@ window.QB = {
    "qno": 15,
    "title": "第 15 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "統計",
+    "標準差",
+    "標準分"
+   ],
    "lang": "中文",
    "text": "15. 標準差 15. (a) =10(1+20%) =12分 1A --(1) (b) 設 x 為測驗得分及 m 為得分調整前，測驗得分的平均值。 得分調整前的標準分 x-m 二 10 得分調整後的標準分 (x(1+20%)+5)-(m(1+20%)+5) 1M = 12 1.2(x-m) 12 x-m 10 因此，每名學生的標準分沒有因得分調整而改變。 1A 必須顯示理由 --(2)",
    "html": "<p><img src=\"ms/2012P1/Q15.png\" alt=\"MS Q15\"></p>",
@@ -26764,7 +27073,10 @@ window.QB = {
    "qno": 16,
    "title": "第 16 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "概率",
+    "組合"
+   ],
    "lang": "中文",
    "text": "16. 16. (a) 所求的概率 (C{4)(^{2){}} 1M 給分子或分母 C46 8 1A 接受答案準確至 0.615 13 所求的概率 (14) 12 10 1M 給分子或分母 = 15 14 16 13 8 1A 接受答案準確至0.615 1 13 --(2) 所求的概率 (b) 8 =1- 給 1-(a) 1M 13 5 1A 接受答案準確至 0.385 U 13 所求的概率 C8 (C{)(C2)(C2)(C^{²)² 1M 給考慮 2 個情況 1 C46 C46 5 1A 二 接受答案準確至0.385 13 所求的概率 C82 (C2)(C{2}){²}(C{)(C{2) 房市房房 IM 十 1 C46 1 S 1A 接受答案準確至 0.385 13 --(2) 8",
    "html": "<p><img src=\"ms/2012P1/Q16.png\" alt=\"MS Q16\"></p>",
@@ -26779,7 +27091,9 @@ window.QB = {
    "qno": 17,
    "title": "第 17 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "圓的方程"
+   ],
    "lang": "中文",
    "text": "17. 17. (a) 留意 C 的半徑為 10。 1M 可以被包含 因此，C的方程爲(x-6)²+(y-10)²=10²。 x²+y²-12x-20y+36=0 1A --(2) 1M (b) L的方程爲y=-x+k。 把 y=-x+k 代入 x²+y²-12x-20y+36=0 1M 可得 x²+(-x+k)²-12x-20(-x+k)+36=0。 故此，可得 2x²+(8-2k)x+(k²-20k+36)=0。 AB 的中點的 x 坐標 -(8−2k) 2 給兩根之和 1M 2 k-4 1A 2 AB 的中點的y坐標 -(k-4) + k 2 k+4 1A 2 k-4 k+4 因此，所求的坐標為 o 2 2 L的方程為y=-x+k。 1M 留意通過C的圓心且垂直於L的直線的方程為 1M y-10=1(x-6)° ∫y=−x+k 解線性方程組 1M 給求解 x-y+4=0 k-4 x = 2 可得 1A+1A k+4 y = 2 k-4 k+4 因此，所求的坐標為 o 2 2 9",
    "html": "<p><img src=\"ms/2012P1/Q17.png\" alt=\"MS Q17\"></p>",
@@ -26794,7 +27108,11 @@ window.QB = {
    "qno": 18,
    "title": "第 18 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "立體幾何",
+    "角錐",
+    "兩面角"
+   ],
    "lang": "中文",
    "text": "18. 18. (a) 藉正弦公式，可得 AP AB 1M sin∠PBAsin∠APB AP 20 sin 60° sin(180°−60°−72°) AP≈23.30704256cm 1A 接受答案準確至 23.3 cm AP ≈ 23.3 cm 因此，AP的長度為23.3cm。 --(2) (b) (i) 設 S 為由 P 至 AD 的垂足。 PS 1M = APsin ∠PAD ≈ 23.30704256 sin 72° 任何一項 ≈22.1663147 cm AS = APcos ∠PAD ≈ 23.30704256 cos 72° ≈7.202272239 cm 藉正弦公式，可得 PB AB sin∠PAB sin∠APB PB 20 sin 72° sin(180°−60°-72°) PB ≈25.59545552 cm 設 T 爲由 P 至 BC 的垂足。 PT2 = PB2 − AS2 PT2 ≈ (25.59545552)² − (7.202272239)² PT ≈ 24.56124219 cm 留意α = ∠PTS。 1M 藉餘弦公式，可得 PT2 + ST2 − PS2 1M cos α = 2(PT)(ST) (24.56124219)² +(20)² -(22.1663147)2 cosα ≈ 2(24.56124219)(20) α≈58.59703733° α ≈ 58.6° 1A 接受答案準確至 58.6° (ii) 設 X 爲 P 在底 ABCD 的投影， 則可得β=∠PBX。 1M 留意 PB>PT。 sin α PX PT PX > PB = sin ∠PBX = sin β 由於α及β均爲銳角，所以α大於β。 1A 必須顯示理由 --(6) 11",
    "html": "<p><img src=\"ms/2012P1/Q18.png\" alt=\"MS Q18\"></p>",
@@ -26809,7 +27127,10 @@ window.QB = {
    "qno": 19,
    "title": "第 19 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "等比數列",
+    "對數"
+   ],
    "lang": "中文",
    "text": "19. 1M 19. (a) (i) 留意 ab4=307461 307 461 故此，可得b{²= 254100 求解後，可得b=1.1及a=210000。 1A+1A 所求的重量 =(210 000)(1.1(2)(4)) 1A 接受答案準確至 450 000 公噸 =450153.6501公噸 貨物的總重量 (ii) = ab2 + ab4 + ... + ab2n ab{(b{2n}-1) 1M b^2-1 (210 000)(1.1)²((1.1)²n-1) 1.12-1 =1210000((1.1)2n -1) 公噸 IA --(6) (b) (i) 留意 A(4)=450153.65>420 000=2a 再留意對任意正整數 m，(1.1)²m>(1.1)\"。 1M A(m+4) 給考慮 A(m+4) = (1.1)²m A(4) > (1.1)²m(2a) > (1.1)(2a) = B(m) 1A 因此，同意該宣稱。 必須顯示理由 (ii) 設 n 為自 X 開始運作起計所經過的年數。 Y所處理的貨物的總重量 = 2ab + 2ab2 + .. + 2abn−4 2ab(bn-4-1) 公噸，其中 n>4 1 b-1 420 000(1.1)((1.1)n−4-1) 1210 000((1.1)²n -1)+ 1M+1A >20000 000 1.1-1 121(1.1²n)+462(1.1n−4)-2 583>0 121(1.14)(1.1n)²+462(1.1\")−2 583(1.14)>0 1M 1.1\">3.496831134或 1.1\"<-6.10470069（捨去） 1M nlog1.1 > log3.496831134 n>13.13455888 留意 n為一整數。 1A 因此，自X開始運作起計的第14年應安裝新設施。 --(7) 12",
    "html": "<p><img src=\"ms/2012P1/Q19.png\" alt=\"MS Q19\"></p>",
@@ -26824,7 +27145,9 @@ window.QB = {
    "qno": 1,
    "title": "第 1 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "指數定律"
+   ],
    "lang": "中文",
    "text": "1. 1. (m^{³n{-7){5} m9 給(a)=ak或(ab)=abe 1M m15n-35 CP n35 1 給 = cP q 或 d= 1M c9 15-9 dr m 235 1A m6 --(3) 4a+5b-7",
    "html": "<p><img src=\"ms/2015P1/Q01.png\" alt=\"MS Q1\"></p>",
@@ -26839,7 +27162,9 @@ window.QB = {
    "qno": 2,
    "title": "第 2 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "主項變換"
+   ],
    "lang": "中文",
    "text": "2. 2. =8 b 1M 4a+5b-7=8b 1M 給將 b 放在一邊 4a-7=8b-5b 4a-7=3b 4a-7 或等價 1A b= 3 4a+5b-7 =8 b 4a-7 1M +5=8 b 4a-7 給將常數放在一邊 1M =8-5 b 4a-7 =3 b 4a-7 或等價 1A b= 3 --(3)",
    "html": "<p><img src=\"ms/2015P1/Q02.png\" alt=\"MS Q2\"></p>",
@@ -26854,7 +27179,9 @@ window.QB = {
    "qno": 3,
    "title": "第 3 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "概率"
+   ],
    "lang": "中文",
    "text": "3. 所求的概率 3. 1M給分子 1+2+3 1M+1M 1M給分母 (4)(5) 6 二 20 3 1A 0.3 10 --(3) 44",
    "html": "<p><img src=\"ms/2015P1/Q03.png\" alt=\"MS Q3\"></p>",
@@ -26869,7 +27196,9 @@ window.QB = {
    "qno": 4,
    "title": "第 4 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "因式分解"
+   ],
    "lang": "中文",
    "text": "4. x³+x²y−7x² 4. (a) 或等價 =x2(x+y−7) 1A x³+x²y-7x²-x-y+7 (b) =x²(x+y−7)−x−y+7 1M 給利用(a)的結果 =x2(x+y-7)-(x+y-7) =(x2−1)(x+y−7) 1M 或等價 =(x-1)(x+1)(x+y-7) 1A --(4)",
    "html": "<p><img src=\"ms/2015P1/Q04.png\" alt=\"MS Q4\"></p>",
@@ -26884,7 +27213,9 @@ window.QB = {
    "qno": 5,
    "title": "第 5 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "一元一次不等式"
+   ],
    "lang": "中文",
    "text": "5. 7-3x 5. (a) ≤2(x+2) 5 7-3x≤10(x+2) 7-3x≤10x+20 -13≤13x x≥-1 1A 4x-13>0 13 x>3.25 1A x> 4 13 因此，所求的範圍為 x> 1M 4 (b) 4 1A --(4) 45",
    "html": "<p><img src=\"ms/2015P1/Q05.png\" alt=\"MS Q5\"></p>",
@@ -26899,7 +27230,9 @@ window.QB = {
    "qno": 6,
    "title": "第 6 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "百分數"
+   ],
    "lang": "中文",
    "text": "6. 6. (a) 該書的售價 1M =250(1+20%) = $300 1A (b) 設 $x為該書的標價。 1M (75%)x= 300 300 x = 75% 1A x=400 因此，該書的標價為$400。 --(4)",
    "html": "<p><img src=\"ms/2015P1/Q06.png\" alt=\"MS Q6\"></p>",
@@ -26914,7 +27247,9 @@ window.QB = {
    "qno": 7,
    "title": "第 7 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "一元一次方程"
+   ],
    "lang": "中文",
    "text": "7. 7. 設 x 為志偉擁有蘋果的數目， 1A 則佩玲擁有蘋果的數目為4x。 1A+1M 4x-12=x+12 3x=24 x = 8 1A 因此，佩玲和志偉擁有蘋果的總數為40。 設x及y分別為佩玲及志偉擁有蘋果的數目。 1A+1A 故此，可得x=4y及x12=y+12。 1M 給得只有 x 或 y 的線性方程 所以，可得4y-12=y+12。 由此，可得3y=24。 求解後，可得x=32及y=8。 因此，佩玲和志偉擁有蘋果的總數為40。 1A 設x為佩玲和志偉擁有蘋果的總數 x x 及 +12 給兩項正確 則佩玲及志偉擁有蘋果的數目分別為 1A 2 2 x x12 -12 +12=4 1A+1M 2 x +12=2x-48 2 3x=120 1A x=40 因此，佩玲和志偉擁有蘋果的總數為40。 佩玲和志偉擁有蘋果的總數 1M給分數+1A給分子 (12 -(12))(4 +1) 1M+1A+1A 1 +1A給分母 4-1 (24)(5) 1 3 =40 1A (4) 46",
    "html": "<p><img src=\"ms/2015P1/Q07.png\" alt=\"MS Q7\"></p>",
@@ -26929,7 +27264,9 @@ window.QB = {
    "qno": 8,
    "title": "第 8 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "圓的性質"
+   ],
    "lang": "中文",
    "text": "8. 留意∠ABD=∠ADB=58°。 1M 8. 再者留意∠ABC+∠ADC=180°。 任何一項 故此，可得 58°+25°+58°+∠BDC=180°。 所以，可得∠BDC=39°。 1A 又再留意∠BCE=∠ADB=58°。 ∠BEC 180°-∠BCE 1M 2 180°-58° 2 =61° ∠ABE 1M =∠BEC ∠BAC =∠BEC-∠BDC =61°-39° 1A = 22° 1M 留意∠ABD=∠ADB=58°及∠ACB=∠ADB=58°。 給任何一項 ∠CBE = ∠BEC 180°-∠BCE 1M I 2 180°-∠ACB I 2 180°-58° 2 = 61° ∠ABE =∠ABD+∠CBD ∠CBE = 58° + 25°-61° 1A =22° ∠BDC =∠BAE 1M =∠BEC-∠ABE =61°-22° =39° 1A ---(5)",
    "html": "<p><img src=\"ms/2015P1/Q08.png\" alt=\"MS Q8\"></p>",
@@ -26944,7 +27281,9 @@ window.QB = {
    "qno": 9,
    "title": "第 9 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "求積法"
+   ],
    "lang": "中文",
    "text": "9. 9. (a) 設 θ°為該扇形的角。 θ (π(122)=30π 1M 360 1A θ=75 因此，該扇形的角為75°。 所求的周界 (b) (2π(12))+2(12) 75 1M+1M 360 = (5π + 24) cm 1A ---(5) 47",
    "html": "<p><img src=\"ms/2015P1/Q09.png\" alt=\"MS Q9\"></p>",
@@ -26959,7 +27298,9 @@ window.QB = {
    "qno": 10,
    "title": "第 10 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "變分"
+   ],
    "lang": "中文",
    "text": "10. 10. (a) 設 S=a+bn，其中a及 b 均為非零的常數。 1A 1M 故此，可得a+b(10)=10600及a+b(6)=9000。 給任何一項代換 求解後，可得a=6600及b=400。 1A 給兩項正確 所求的收入 =6600+400(20) =$14 600 1A ---(4) 1M (b) 6600+400n=18000 400n=11400 n=28.5 留意 28.5 不是整數。 1A 因此，素姍該月的收入沒有可能是$18000。 必須顯示理由 --(2)",
    "html": "<p><img src=\"ms/2015P1/Q10.png\" alt=\"MS Q10\"></p>",
@@ -26974,7 +27315,9 @@ window.QB = {
    "qno": 11,
    "title": "第 11 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "多項式"
+   ],
    "lang": "中文",
    "text": "11. 1A 11. (a) k = -5 f(3)=0 1M (3-2)2(3+h)-5=0 h=2 1A --(3) (b) f(x)=0 (x-2)(x 2)(x+2)-5=0 x³-2x²-4x+3=0 1A 給(x-3)(ax{+bx+c) (x-3)(x²+x-1)=0 1M -1±√5 x=3 或 x= 2 -1-√5 -1+√5 留意 均不是整數。 及 2 2 因此，不同意該宣稱。 1A 必須顯示理由 -(3) 48",
    "html": "<p><img src=\"ms/2015P1/Q11.png\" alt=\"MS Q11\"></p>",
@@ -26989,7 +27332,10 @@ window.QB = {
    "qno": 12,
    "title": "第 12 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "統計",
+    "幹葉圖"
+   ],
    "lang": "中文",
    "text": "12. 12. (a) 平均值 1A = 55 kg 中位數 = 52 kg 1A 分佈域 =79-40 = 39 kg 1A --(3) (b) 設 akg 及 bkg 為這兩名學生的體重，其中 a≤b。 a+b+55(20) 留意 =55+1 1M 22 所以，可得a+b=132。 由於分佈域增加 1kg，新分佈域為40kg。 有兩種情況。 情况1：a=39 1M 由於a+b=132，可得b=93。 任何一項 所以，新分佈域為54kg。 這是不可能。 情况2:40≤a≤80 在這情況下，可得b=80。 1A 由於a+b=132，可得a=52。 1A 因此，這兩名學生的體重為 52kg 及 80kg° --(4) 49",
    "html": "<p><img src=\"ms/2015P1/Q12.png\" alt=\"MS Q12\"></p>",
@@ -27004,7 +27350,9 @@ window.QB = {
    "qno": 13,
    "title": "第 13 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "平面幾何"
+   ],
    "lang": "中文",
    "text": "13. [正方形性質] 13. (a) AB = BC [已知] AE = BF ∠ABE=90°=∠BCF [正方形性質] (RHS) ∆ABE=∆BCF 評分標準： 情况1附有正確理由的任何正確證明。 2 情況2未附有正確理由的任何正確證明。 1 -(2) (b) 藉(a)，可得∠BAE=∠CBF。 1M ∠AEB 1M =180°-∠ABE-∠BAE =180°-90°-∠BAE =90°-∠BAE 任何一項 ∠BGE =180°∠CBF-∠AEB =180°-∠BAE(90°-∠BAE) =90° 1A 必須顯示理由 因此，ΔBGE是一直角三角形。 藉(a)，可得∠BAE=∠CBF。 1M 留意∠AEB∠DAE 由於∠BAE+∠DAE=90°，可得∠CBF+∠AEB=90°。 再者留意∠CBF+∠AEB+∠BGE=180°。 1M 故此，可得∠BGE=90°。 因此，ΔBGE是一直角三角形。 1A 必須顯示理由 --(3) (c) 藉(a)，可得 BE =CF=15cm= BG =√BE2-EG2 1M =√152-92 1A =12 cm --(2) 50",
    "html": "<p><img src=\"ms/2015P1/Q13.png\" alt=\"MS Q13\"></p>",
@@ -27019,7 +27367,10 @@ window.QB = {
    "qno": 14,
    "title": "第 14 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "直線方程",
+    "軌跡"
+   ],
    "lang": "中文",
    "text": "14. PQ 的中點 14. (a) (i) =(-5,11) PQ的斜率 23-(-1) 1M -14-4 -4 1 3 L的方程為 3 (x-(-5)) y-11= 1M 4 或等價 1A 3x-4y+59=0 L的方程為 (x−4)2+(y+1)2 =(x+14)2 +(y−23)2 1M+1M x2-8x+16+y2+2y+1=x2+28x+196+y2-46y+529 36x-48y+708=0 或等價 1A 3x-4y+59=0 (ii) 設 k 為 G 的 y 坐標。 藉(a)(i)，可得 3h-4k+59=0。 3h+59 故此，可得 k= 1M 4 C 的方程為 (x-h)2+(y−k)²=(4-h)²+(-1-k)² 1M 3h+59 3h+59 y+8h-2 -17=0 x2+ y2−2hx−2 4 4 2x²+2y²-4hx-(3h+59)y+13h-93=0 1 把圓 2x²+2y2-4hx-(3h+59)y+13h-93=0記為C'。 3h+59 h, C'的圓心的坐標為 1M 0 4 設 k為G 的 y 坐標。 藉(a)(i)，可得 3h-4k+59=0。 3h+59 故此，可得 k= 1M 4 所以，C的圓心為G。 再者留意 2(4)²+2(-1)²-4h(4)-(3h+59)(-1)+13h-93=0 及 2(-14)²+2(23)²-4h(-14)-(3h+59)(23)+13h-93=0。 1 由此，C'是以G 為圓心且通過 P及Q 的圓。 因此，C的方程為 2x²+2y²-4hx-(3h+59)y+13h-93=0。 -(6) 51",
    "html": "<p><img src=\"ms/2015P1/Q14.png\" alt=\"MS Q14\"></p>",
@@ -27034,7 +27385,10 @@ window.QB = {
    "qno": 15,
    "title": "第 15 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "標準分",
+    "統計"
+   ],
    "lang": "中文",
    "text": "15. 15. (a) 設 x 分為家華在數學考試的得分。 x-66 =-0.5 1M 12 x=66 (0.5)(12) 1A x=60 因此，家華在數學考試的得分為60分。 -(2) (b) 家華在科學考試的標準分 49-52 10 1A =-0.3 >-0.5 相對於其他學生，家華在科學考試的表現較數學考試為佳。 1A 必須顯示理由 因此，該宣稱正確。 --(2)",
    "html": "<p><img src=\"ms/2015P1/Q15.png\" alt=\"MS Q15\"></p>",
@@ -27049,7 +27403,10 @@ window.QB = {
    "qno": 16,
    "title": "第 16 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "概率",
+    "排列與組合"
+   ],
    "lang": "中文",
    "text": "16. 16. (a) 所求的概率 C2C2 給分子 1M 二 C14 360 接受答案準確至 0.360 1A I 1001 所求的概率 9 5 8 4 給6P_{1P2P3P{4 1M = 6 14 12 11 13 360 接受答案準確至 0.360 1A 1001 --(2) (b) 所求的概率 C3C9 C{4 360 1M 給(a)+Ps+P6 + + C4 1001 5 1A 接受答案準確至 0.455 = 11 所求的概率 3 5 4 2 5 3 9 360 4 1M 給(a)+P7+P8 +4 + = 14 12 13 12 11 11 14 13 1001 5 接受答案準確至 0.455 1A 二 11 所求的概率 C94 C{5}C{3 =1- 給1-p9-P_10 1M C14 C14 5 安金全房 1A = 11 -(2) 53",
    "html": "<p><img src=\"ms/2015P1/Q16.png\" alt=\"MS Q16\"></p>",
@@ -27064,7 +27421,10 @@ window.QB = {
    "qno": 17,
    "title": "第 17 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "數列",
+    "指數定律"
+   ],
    "lang": "中文",
    "text": "17. 17. (a) A(1) + A(2) + A(3) +  + A(n) =-1+3+7++(4n-5) n ((-1) +(4n -5)) 1M = 2 或等價 1A = n(2n−3) -(2) (b) log(B(1)B(2)B(3)  B(n)) ≤ 8 000 1M log B(1) + log B(2) + log B(3) +  … + log B(n) ≤ 8 000 留意對所有正整數 k，logB(k)= A(k)。 A(1) + A(2) + A(3) +  + A(n) ≤ 8 000 1M n(2n−3)≤8000 2n2-3n-8000≤0 (n−64)(2n+125)≤0 -125 ≤n≤64 2 因此，n的最大值為64。 1A log(B(1)B(2)B(3) · · B(n)) ≤ 8 000 log(10−1 103 107 ... 104n-5) ≤ 8 000 log(10−1+3+7+…+(4n-5)) ≤ 8000 1M log(10n(2n-3) ≤ 8000 n(2n−3)≤8000 1M 2n2-3n-8000≤0 (n−64)(2n+125)≤0 -125 ≤n≤64 2 1A 因此，n的最大值為64。 -(3) 54",
    "html": "<p><img src=\"ms/2015P1/Q17.png\" alt=\"MS Q17\"></p>",
@@ -27079,7 +27439,9 @@ window.QB = {
    "qno": 18,
    "title": "第 18 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "二次函數"
+   ],
    "lang": "中文",
    "text": "18. 18. (a) (-4k)2−4(2)(3k2+5) 1M =16k²-24k²-40 =-8k2-40 <0 1A 必須顯示理由 因此，y=f(x)的圖像不與x軸相交。 (2) (b) f(x) =2x2-4kx+3k²+5 =2(x2−2kx)+3k2+5 =2(x2−2kx+k²−k²)+3k²+5 1M =2(x−k)²+k²+5 1A 1M 因此，頂點的坐標為(k，k²+5)。 ---(3) 1M (c) 藉(b)，y=2 f(x) 的圖像的頂點的坐標為 (k,-k²-3)。 當S 與 T 最接近時，S 及T 的坐標分別為(k,k²+5)及 (k,-k²-3)。 1M 在這情況下，ST為垂直線。 故此，ST的垂直平分線為一水平線。 ΔOST的外心的y坐標 (k²+5)+(-k²-3) 1M 二 2 =1 ≠0 所以，ΔOST的外心不在x軸上。 1A 必須顯示理由 因此，該宣稱不正確。 假設當S 與T最接近時，∆OST的外心在x 軸上。 在這情況下，S及 T 的坐標分別為 (k,k²+5) 及 1M (k,-k²-3)° 設(r,0) 為 ΔOST 的外心R 的坐標。 1M RS =√r(-k)2+(0-(k²+5))2 任何一項 =√(r-k)2+(k2+5)2 RT =√(r-k)2+(0-(k2-3))2 = √(r −k)2+ (k2+ 3)2 故此，可得 RS≠ RT。 1M 這是不可能。 1A 必須顯示理由 因此，該宣稱不正確。 --(4) 55",
    "html": "<p><img src=\"ms/2015P1/Q18.png\" alt=\"MS Q18\"></p>",
@@ -27094,7 +27456,10 @@ window.QB = {
    "qno": 19,
    "title": "第 19 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "平面幾何",
+    "三角比"
+   ],
    "lang": "中文",
    "text": "19. 19. (a) (i) 藉餘弦公式， AC2 = AB2 + BC2 −2(AB)(BC)cos∠ABC 1M AC2 = 402+242- 2(40)(24) cos 80° AC ≈ 42.92546446 cm 1A AC ≈ 42.9 cm 接受答案準確至42.9 cm 因此，A與C 間的距離為42.9 cm。 (ii) 藉正弦公式， sin ∠ACB sin∠ABC 1M AC AB sin 80° sin ∠ACB 2 40 42.92546446 ∠ACB≈66.59081487°或∠ACB≈113.4091851°（捨去） 1A ∠ACB ≈ 66.6° 接受答案準確至 66.6° (iii)∠CAD=180°-2(∠BCD-∠ACB) 23.18162974°<∠CAD<103.1816297° 該紙卡的面積 1 1 AC² sin ∠CAD (40)(24)sin 80° =2 1M 十 2 2 1 AC² sin ∠CAD = 960 sin 80° + 2 1 AC²sin ∠CAD 随 sin∠CAD 留意 960sin80°為一常數而 2 正變。 1M 再者留意當∠CAD=90°時，該紙卡的面積最大。 定義α=45°+∠ACB， 則可得α≈111.59081487°。 當∠BCD由105°增加至α期間，該紙卡的面積增加 必須顯示理由 1A 當∠BCD由α增加至145°期間，該紙卡的面積減少。 --(7) (b) ∠ACD=∠BCD-∠ACB ∠ACD≈65.40918513° CD 2 1M cos∠ACD= AC CD≈35.72557859 cm 設 M 為 CD 的中點。 AM2=AC2-CM2 AM2 ≈1523.516258 BM2 =BC2-CM2 BM2 ≈256.9207587 藉餘弦公式， AM2+BM2 -AB2 1M cos∠AMB= 2(AM)(BM) ∠AMB≈81.70890517° 56",
    "html": "<p><img src=\"ms/2015P1/Q19.png\" alt=\"MS Q19\"></p>",
@@ -27109,7 +27474,9 @@ window.QB = {
    "qno": 1,
    "title": "第 1 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "指數定律"
+   ],
    "lang": "中文",
    "text": "1. 1. xy-6 x16 y,14 給(ab)=ab或(a)=a 1M x5y-6 Cp cP 1 = x16-5 y,14-(-6) 給 = cp-9或 1M cq-p cq cq = x11 y 20 1A --(3)",
    "html": "<p><img src=\"ms/2016P1/Q01.png\" alt=\"MS Q1\"></p>",
@@ -27124,7 +27491,9 @@ window.QB = {
    "qno": 2,
    "title": "第 2 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "主項變換"
+   ],
    "lang": "中文",
    "text": "2. Ax=(4x+B)C 2. Ax=4Cx+BC 1M 給將 x 放在一邊 1M Ax-4Cx=BC (A−4C)x=BC BC 或等價 1A x= A-4C Ax=(4x+B)C A 1M x=4x+B C A 1M 給將 x 放在一邊 x-4x=B C A x=B -4 C A-4C x = B C BC 或等價 1A x= A-4C --(3) 2 3",
    "html": "<p><img src=\"ms/2016P1/Q02.png\" alt=\"MS Q2\"></p>",
@@ -27139,7 +27508,9 @@ window.QB = {
    "qno": 3,
    "title": "第 3 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "代數化簡"
+   ],
    "lang": "中文",
    "text": "3. 3. + 4x-5 1-6x 2(1-6x)+3(4x-5) 1M (4x-5)(1-6x) 2-12x+12x-15 1M (4x-5)(1-6x) -13 或等價 1A (4x-5)(1-6x) 13 = (4x-5)(6x-1) -(3) 44",
    "html": "<p><img src=\"ms/2016P1/Q03.png\" alt=\"MS Q3\"></p>",
@@ -27154,7 +27525,9 @@ window.QB = {
    "qno": 4,
    "title": "第 4 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "因式分解"
+   ],
    "lang": "中文",
    "text": "4. 4. (a) 5m-10n 1A =5(m-2n) (b) m²+mn−6n2 1A =(m+3n)(m−2n) (c) m²+mn-6n2-5m+10n =m2+mn-6n2−(5m−10n) 1M 給利用(a)及(b)的結果 =(m+3n)(m-2n)-5(m-2n) 或等價 1A =(m−2n)(m+3n-5) -(4)",
    "html": "<p><img src=\"ms/2016P1/Q04.png\" alt=\"MS Q4\"></p>",
@@ -27169,7 +27542,9 @@ window.QB = {
    "qno": 5,
    "title": "第 5 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "百分數"
+   ],
    "lang": "中文",
    "text": "5. 5. 設x及y分別為男會員人數及女會員人數。 x+y=180 1A+1A x=(1+40%)y 1M 故此，可得1.4y+y=180。 給得只有x或y的線性方程 求解後，可得y=75及x=105。 1A 因此，男會員人數與女會員人數之差為30。 設x為男會員人數。 1A給 x=(1+40%)y 1A+1A+1M x=(1+40%)(180-x) +1A給y=180-x 求解後，可得x=105。 +1M給一元線性方程 留意105-(180-105)=30。 1A 因此，男會員人數與女會員人數之差為30。 男會員人數與女會員人數之差 (180)(40%) 1A給分子+1A給分母 1A+1A+1M = +1M給分數 100%+(100%+40%) 1A =30 180+d 180-d 設d為男會員人數與女會員人數之差。 1A給 或 2 2 180-d 180+d (1+40%) 180-d 1A+1A+1M + 1A 給 (1+40%) = 2 2 2 1A +1M給一元線性方程 d=30 因此，男會員人數與女會員人數之差為30。 --(4) 45",
    "html": "<p><img src=\"ms/2016P1/Q05.png\" alt=\"MS Q5\"></p>",
@@ -27184,7 +27559,10 @@ window.QB = {
    "qno": 6,
    "title": "第 6 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "複合不等式",
+    "一元一次不等式"
+   ],
    "lang": "中文",
    "text": "6. 6. (a) x+6<6(x+11) x+6<6x+66 1M 給將 x 放在一邊 x-6x<66-6 -5x<60 1A x>-12 所以，可得x>-12或x≤-5。 1A 因此，(*)的解為所有實數。 (b) -1 1A -(4)",
    "html": "<p><img src=\"ms/2016P1/Q06.png\" alt=\"MS Q6\"></p>",
@@ -27199,7 +27577,9 @@ window.QB = {
    "qno": 7,
    "title": "第 7 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "坐標幾何"
+   ],
    "lang": "中文",
    "text": "7. 7. (a) ∠AOB =135°-75° = 60° 1A (b) 由於AO=BO，可得∠OAB=∠OBA。 留意∠OAB+∠OBA+60°=180°。 所以，可得∠OAB=∠OBA=60°。 1M 可以被包含 故此，ΔAOB為一等邊三角形。 ΔAOB 的周界 =3(12) =36 1A (c) 3 1A --(4)",
    "html": "<p><img src=\"ms/2016P1/Q07.png\" alt=\"MS Q7\"></p>",
@@ -27214,7 +27594,9 @@ window.QB = {
    "qno": 8,
    "title": "第 8 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "變分"
+   ],
    "lang": "中文",
    "text": "8. 8. (a) 設 f(x) =hx+kx²，其中 h及k均為非零的常數。 1A 1M 故此，可得3h+9k=48及9h+81k=198。 給任何一項代換 1A 求解後，可得h=13及k=1。 因此，可得f(x)=13x+x²。 (b) f(x)=90 13x+x2=90 x2+13x-90=0 1M (x-5)(x+18)=0 1A x=5或 x=-18 --(5) 46",
    "html": "<p><img src=\"ms/2016P1/Q08.png\" alt=\"MS Q8\"></p>",
@@ -27229,7 +27611,10 @@ window.QB = {
    "qno": 9,
    "title": "第 9 題評卷參考（待核對）",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "統計",
+    "頻數分佈表"
+   ],
    "lang": "中文",
    "text": "9. (a) x =2+4 =6 1A y =37-15 =22 1A Z 37+3 =4 1A (q) 里房品 22-6 y-x 給 1M 40 Z 2 1A 0.4 = 5 留意 b=7 及 c=9。 所求的概率 7+9 b+c 1M = 給 40 Z 2 1A 0.4 二 5 留意 a=2。 所求的概率 40-2-4-15-3 z-a-4-15-3 1M 給 = 40 z 2 1A 0.4 = 5 --(5) 47",
    "html": "<p><img src=\"ms/2016P1/Q09.png\" alt=\"MS Q9\"></p>",
@@ -27244,7 +27629,10 @@ window.QB = {
    "qno": 10,
    "title": "第 10 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "軌跡",
+    "坐標幾何"
+   ],
    "lang": "中文",
    "text": "10. 10. (a) 設 (x, y) 為P 的坐標。 √(x−5)2+(y−7)2=√(x−13)2+(y−1)2 1M 或等價 1A 4x-3y-24=0 因此，Γ的方程為 4x-3y-24=0。 AB 的斜率 7-1 = 5-13 -3 = 4 Γ的斜率 4 = 3 AB的中點 (5+13 7+1) = 2 2 = (9,4) 4 (x-9)。 1M 所以，Γ的方程為y-4= 3 或等價 1A 因此，Γ的方程為4x-3y-24=0。 --(2) 1M (b) 把 y = 0 代入 4x-3y-24 = 0，可得 x =6。 任何一項 故此，H的坐標為(6,0）。 把 x=0代入4x-3y-24=0，可得 y=-8。 所以，K的坐標為(0,-8)。 C的直徑 = HK =√(6−0)2+(0-(-8))2 =10 C 的圓周 1M =10π ≈31.41592654 >30 1A 必須顯示理由 因此，該宣稱正確。 --(3) 48",
    "html": "<p><img src=\"ms/2016P1/Q10.png\" alt=\"MS Q10\"></p>",
@@ -27259,7 +27647,10 @@ window.QB = {
    "qno": 11,
    "title": "第 11 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "立體圖形",
+    "求積法"
+   ],
    "lang": "中文",
    "text": "11. 11. (a) 設 Vcm³ 為該容器內牛奶的最終體積。 12 12 V-444π 1M給 1M+1A = 16 16 V V =768 π 1A 因此，該容器內牛奶的最終體積為768πcm³。 設 cm³及 rcm 分別為該容器內牛奶的最終體積及牛奶 表面的最終半徑。 1 πr²(16) V = 3 2 12r 1 (12) V-444π= π 16 3 (12 2 3V 1 (12)。 1M給消去r² 故此，可得V-444π= 1M+1A π 16 16π 3 1A 求解後，可得V=768π。 因此，該容器內牛奶的最終體積為768πcm³。 --(3) (b) 設 rcm 為該容器內牛奶表面的最終半徑。 1 πr2(16)=768π 1M 3 r =12 該容器被浸濕的曲面的最終面積 =π(12)√122+162 1M =240π ≈753.9822369 cm2 < 800 cm² 1A 必須顯示理由 因此，不同意該宣稱。 --(3) 49",
    "html": "<p><img src=\"ms/2016P1/Q11.png\" alt=\"MS Q11\"></p>",
@@ -27274,7 +27665,10 @@ window.QB = {
    "qno": 12,
    "title": "第 12 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "統計",
+    "集中趨勢"
+   ],
    "lang": "中文",
    "text": "12. 12. (a) 11+a=11+b+4 1M a=b+4 留意a>11 及4<b<10。 ∫a=13 ∫a=12 因此，可得 或 1A+1A 1A 給一對+1A給所有 b=8 b=9 --(3) (b) (i) 當這四名小童的年歲為7、8、9 及 10 時，中位數 1M 最大。 該群小童的年歲的最大可取中位數 1A =8 (ii) 當這四名小童的年歲為6、7、8及9時，平均值 1M 最小。 藉(a)，有兩個情況。 情况1：a=12及b=8 該群小童的年歲的平均值 12(6)+13(7)+12(8)+9(9)+4(10) 12+13+12+9+4 = 7.6 情况2:a=13及b=9 該群小童的年歲的平均值 12(6)+14(7)+12(8)+10(9)+4(10) 12+14+12+10+4 ≈7.615384615 1A 必須顯示理由 因此，該群小童的年歲的最小可取平均值為7.6。 --(4) 50",
    "html": "<p><img src=\"ms/2016P1/Q12.png\" alt=\"MS Q12\"></p>",
@@ -27289,7 +27683,9 @@ window.QB = {
    "qno": 13,
    "title": "第 13 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "平面幾何"
+   ],
    "lang": "中文",
    "text": "13. 13. (a) 在 ΔACD及 ∆ABE中， [已知] ∠ADC=∠AEB AD = AE [等角對邊相等] [已知] CE=BD CE + DE=BD + DE CD=BE (SAS) ∆ACD≈∆ABE 評分標準： 2 情況1附有正確理由的任何正確證明。 情况2未附有正確理由的任何正確證明。 1 --(2) (b) (i) 留意 DM = EM = 9 cm 及 ∠AMD = ∠AME = 90°。 AM =√AD2-DM2 1M =√152-92 =√144 1A =12 cm (ii) AB{ = AM^{2 + BM^{2} =144+(7+9)² =400 1M 藉(a)，可得AE=AD=15cm° AB² + AE2 =400+152 = 625 = (7+18)² = (BD + DE)²2 = BE2 1M  必須顯示理由 因此，ΔABE是一直角三角形。 1A --(5) 51",
    "html": "<p><img src=\"ms/2016P1/Q13.png\" alt=\"MS Q13\"></p>",
@@ -27304,7 +27700,9 @@ window.QB = {
    "qno": 14,
    "title": "第 14 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "多項式"
+   ],
    "lang": "中文",
    "text": "14. 14. (a) 留意 p(2)=152+4a+2b+c 及 p(-2)=40+4a-2b+c。 1M 由於p(2)=p(-2)，可得b=-28。 1A 藉比較x4的係數，可得l=3。 留意在 (3x²+5x+8)(2x²+mx+n) 的展開式中 x3 及 x的係數 分別為 3m+10 及 8m+5n° 1M 故此，可得 3m+10=7及 8m+5n=-28。 1A+1A 求解後，可得m=-1及n=-4。 ---(5) (b) p(x) = 0 (3x²+5x+8)(2x2-x-4)=0（藉(a)） 3x2+5x+8=0或 2x²-x-4=0 5²−4(3)(8) 1M 1A =-71 任何一項 < 0 1M+1A 故此，二次方程3x²+5x+8=0沒有實根。 任何一項 (-1)²−4(2)(-4) 任何一項 =33 >0 所以，二次方程2x²-x-4=0有2個實根。 由此，方程(3x²+5x+8)(2x²-x-4)=0有2個實根。 1A 必須顯示理由 因此，方程 p(x)=0有2個實根。 --(5) 52",
    "html": "<p><img src=\"ms/2016P1/Q14.png\" alt=\"MS Q14\"></p>",
@@ -27319,7 +27717,10 @@ window.QB = {
    "qno": 15,
    "title": "第 15 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "概率",
+    "排列與組合"
+   ],
    "lang": "中文",
    "text": "15. 15. 所求的概率 C{645! 1M給分母+1M給 4!5! 1M+1M 三 (4+5)! 43200 II 362 880 5 1A 接受答案準確至0.119 = 42 所求的概率 4!5!+4!5!(4)(2)+4!5!(3)+4!5!(3) 1M給分母+1M給 4!5! 1M+1M (4+5)! 43 200 = 362 880 5 接受答案準確至0.119 1A = 42 所求的概率 1M給分母 2-6 31 2 5 4 4 3 1 1M+1M (1+(4)(2)+3+3) = 17 + 1M)())(2()())) 3 2 5 4 1 6 8 3 20 I 362 880 5 1A 接受答案準確至0.119 42 --(3)",
    "html": "<p><img src=\"ms/2016P1/Q15.png\" alt=\"MS Q15\"></p>",
@@ -27334,7 +27735,10 @@ window.QB = {
    "qno": 16,
    "title": "第 16 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "標準分",
+    "統計"
+   ],
    "lang": "中文",
    "text": "16. 16. 設σ分為該分佈的標準差。 22-61 1M =-2.6 σ σ=15 任何一項 小麗的得分 =61+1.4σ =61+1.4(15) 7 =82分 1A 小麗的得分與偉健的得分之差 =82-22 =60分 >59分 留意該分佈的分佈域至少為小麗的得分與偉健的得分之差。 所以，該分佈的分佈域超過59分。 1A 必須顯示理由 因此，該宣稱不正確。 --(3) 53",
    "html": "<p><img src=\"ms/2016P1/Q16.png\" alt=\"MS Q16\"></p>",
@@ -27349,7 +27753,9 @@ window.QB = {
    "qno": 17,
    "title": "第 17 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "數列"
+   ],
    "lang": "中文",
    "text": "17. 17. (a) 設 d 為該數列的公差。 1M 555=666+(38-1)d 1A d =-3 該數列的公差 555-666 1M = 38-1 1A =-3 --(2) n (b) 1M+1A (2(666)+(n-1)(-3))>0 2 1335n-3n2>0 n(n−445)<0 0 <n<445 1A 因此，n的最大值為444。 -(3)",
    "html": "<p><img src=\"ms/2016P1/Q17.png\" alt=\"MS Q17\"></p>",
@@ -27364,7 +27770,9 @@ window.QB = {
    "qno": 18,
    "title": "第 18 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "二次函數"
+   ],
    "lang": "中文",
    "text": "18. 18. (a) f(x) -1 1x2+12x-121 二 3 -1 (x²-36x)-121 = 3 -1 (x²-36x+18²-18²)-121 1M = 3 -1 (x-18)²-13 = 3 1A 因此，頂點的坐標為(18，-13)。 --(2) (b) g(x) 1M f(x)+13 -1 -1 (x−18)² 接受 -x2 1A +12x-108 = 3 3 --(2) -1 x2-12x−121=f(−x) (c) 留意 3 1A 給反射 + 1A 給全部正確 1A+1A 因此，該變換為對y軸的反射。 -1 1x2−12x−121=f(x+36)° 留意 3 因此，該變換為向左平移36單位。 1A+1A 1A 給平移 + 1A 給全部正確 --(2) 54",
    "html": "<p><img src=\"ms/2016P1/Q18.png\" alt=\"MS Q18\"></p>",
@@ -27379,7 +27787,10 @@ window.QB = {
    "qno": 19,
    "title": "第 19 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "立體圖形",
+    "三角比"
+   ],
    "lang": "中文",
    "text": "19. 19. (a) 藉正弦公式 AB BD 1M sin ∠ADB sin ∠BAD 10 15 sin∠ADB sin 86° ∠ADB≈41.68560132°或∠ADB≈138.3143987°（捨去） ∠ABD=180°-∠BAD-∠ADB ∠ABD≈52.31439868° 接受答案準確至 52.3° 1A ∠ABD≈52.3° 藉餘弦公式， CD2 = BC2 + BD2 − 2(BC)(BD) cos ∠CBD 1M CD2≈82+152 − 2(8)(15)cos43° CD≈10.65246974 1A CD ≈10.7 cm 接受答案準確至10.7cm --(4) (b) 由於AC2+BC2 =AB2，可得∠ACB =90°。 藉餘弦公式， AD2 = AB2 + BD2 −2(AB)(BD) cos ∠ABD AD2≈102+152-2(10)(15)cos52.31439868° AD≈11.89964475 藉餘弦公式， AD2 = AC² + CD² −2(AC)(CD) cos∠ACD 62+(10.65246974)²-(11.89964475)² cos∠ACD≈ 2(6)(10.65246794) ∠ACD≈86.46867599° 1M 故此，∠ACD不是直角。 由此，AB與面BCD間的交角不是∠ABC。 1A 必須顯示理由 因此，不同意該宣稱。 由於AC2+BC2=AB2，可得∠ACB=90°。 藉餘弦公式， AD2 = AB2 + BD2 −2(AB)(BD) cos∠ABD AD2≈102+152 −2(10)(15)cos52.31439868° AD2 ≈141.6015451 AC2 + CD2 ≈ 62 + (10.65246974)2 AC2+CD2≈149.4751116 由此，可得 AD2≠AC²+CD2。 故此，∠ACD不是直角。 1M 由此，AB與面BCD間的交角不是∠ABC。 1A 必須顯示理由 因此，不同意該宣稱。 --(2) 55",
    "html": "<p><img src=\"ms/2016P1/Q19.png\" alt=\"MS Q19\"></p>",
@@ -27394,7 +27805,9 @@ window.QB = {
    "qno": 1,
    "title": "第 1 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "主項變換"
+   ],
    "lang": "中文",
    "text": "1. 9(h+6k)=7h+8 1. 1M 1M for putting h on one side 2h=8-54k 1A h=4-27k or equivalent 9(h+6k)=7h+8 1M 1M for putting h on one side 2h 8-54k 9 9 2h=8−54k h=4-27k 1A or equivalent -(3) 2",
    "html": "<p><img src=\"ms/2019P1/Q01.png\" alt=\"MS Q1\"></p>",
@@ -27409,7 +27822,9 @@ window.QB = {
    "qno": 2,
    "title": "第 2 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "代數化簡"
+   ],
    "lang": "中文",
    "text": "2. 3 2. 5x-4 7x-6 1M 1M x 1A or equivalent (7x-6)(5x-4) -(3)",
    "html": "<p><img src=\"ms/2019P1/Q02.png\" alt=\"MS Q2\"></p>",
@@ -27424,7 +27839,9 @@ window.QB = {
    "qno": 3,
    "title": "第 3 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "一元一次方程"
+   ],
    "lang": "中文",
    "text": "3. 24²+(13+r)²=(17-3r)² 1M 3. 576+169+26r+r²=289-102r+9r² 8r²-128r-456=0 for ar²+br+c=0 1M r²-16r-57=0 (r+3)(r-19)=0 r=-3 IA Thus, we have r = -3 ---(3)",
    "html": "<p><img src=\"ms/2019P1/Q03.png\" alt=\"MS Q3\"></p>",
@@ -27439,7 +27856,9 @@ window.QB = {
    "qno": 4,
    "title": "第 4 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "因式分解"
+   ],
    "lang": "中文",
    "text": "4. 4. (a) 4m²-9 =(2m+3)(2m-3) 1A or equivalent 2m²n+7mn-15n (b) =n(2m²+7m−15) =n(2m−3)(m+5) 1A or equivalent 4m²-9-2m²n-7mn+15n (c) =4m²-9-(2m²n+7mn~15n) 1M for using the results of (a) and (b) 1A =(2m-3)(2m-mn-5n+3) or equivalent --(4) 44",
    "html": "<p><img src=\"ms/2019P1/Q04.png\" alt=\"MS Q4\"></p>",
@@ -27454,7 +27873,9 @@ window.QB = {
    "qno": 5,
    "title": "第 5 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "百分數"
+   ],
    "lang": "中文",
    "text": "5. 5. (a) Let $m be the marked price of the wallet. (1−25%)m=690 IM 690 m 0.75 m=920 1A Thus, the marked price of the wallet is $920. (b) Let $c be the cost of the wallet. (1+15%)c=690 1M 690 c= 1.15 c=600 1A Thus, the cost of the wallet is $600 --(4)",
    "html": "<p><img src=\"ms/2019P1/Q05.png\" alt=\"MS Q5\"></p>",
@@ -27469,7 +27890,9 @@ window.QB = {
    "qno": 6,
    "title": "第 6 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "一元一次不等式"
+   ],
    "lang": "中文",
    "text": "6. 7x+26 6. (a) ≤2(3x−1) 4 7x+26≤24x−8 1M 7x-24x≤-8-26 for putting x on one side −17x ≤ -34 x≥2 IA (b) 45-5x≥0 x≤9 1A By (a), we have 2 ≤ x ≤9. Thus, the required number is 8. 1A -(4)",
    "html": "<p><img src=\"ms/2019P1/Q06.png\" alt=\"MS Q6\"></p>",
@@ -27484,7 +27907,9 @@ window.QB = {
    "qno": 7,
    "title": "第 7 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "比率與比例"
+   ],
    "lang": "中文",
    "text": "7. 7. Let 13k and 6k be the original number of adults and the original number of children in the playground respectively where /isposive cghstant 1A can be absorbed 13k+9 8 1M+1A 6k +24 91k -48k=192-63 k=3 Thus, the original number of adults in the playground is 39. IA Let x and y be the original number of adults and the original number of children in the playground respectively. £3 x 9 π AIA 8 6+x y+24 7 6x=13y 7x-8y=129 6x So, we have 7x -8 =129. 1M for getting a linear equation in x or y only 13 Solving, we have x =39. 1A Thus, the original number of adults in the playground is 39 -(4) 45",
    "html": "<p><img src=\"ms/2019P1/Q07.png\" alt=\"MS Q7\"></p>",
@@ -27499,7 +27924,9 @@ window.QB = {
    "qno": 8,
    "title": "第 8 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "統計"
+   ],
    "lang": "中文",
    "text": "8. 8. (a) 2 1A (b) Note that 360°−54°−90°-144º = 72° The mean of the distribution 2(144)+3(54)+5(72)+7(90) 1M 精 360 =4 1A (c) The required probability 72+90 IM 360 9 0.45 IA 1 20 The required probability 360-54-144 1M 360 9 1A 0.45 a 20 --(5)",
    "html": "<p><img src=\"ms/2019P1/Q08.png\" alt=\"MS Q8\"></p>",
@@ -27514,7 +27941,10 @@ window.QB = {
    "qno": 9,
    "title": "第 9 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "求積法",
+    "立體圖形"
+   ],
    "lang": "中文",
    "text": "9. 9. (a) Note that the ratio of the radius of the larger sphere to the radius of the smaller sphere is 2:1. So, the ratio of the volume of the larger sphere to the volume of the 1M smaller sphere is 8:1. The volume of the larger sphere 8 =324π 1+8 =288π cm³ 1A (b) Let R cm be the radius of the larger sphere. 4 πR{3 = 288π 1M 3 R=6 So, the radius of the smaller sphere is 3 cm. The sum of the surface areas of the two spheres =4π(6²)+4π(3²) 1M =180π cm² IA 0-2 ---(5) 46",
    "html": "<p><img src=\"ms/2019P1/Q09.png\" alt=\"MS Q9\"></p>",
@@ -27529,7 +27959,9 @@ window.QB = {
    "qno": 10,
    "title": "第 10 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "變分"
+   ],
    "lang": "中文",
    "text": "10. 10. (a) Let h(x)=r+sx 1A So, we have r-2s = −96 and r+ 5s = 72 IM for either substitution Solving, we have r = −48 and s = 24 . 1A for both correct Thus, we have h(x) =24x – 48. -(3) (b) h(x)=3x{2 3x²-24x+48=0 IM x=4 1A --(2)",
    "html": "<p><img src=\"ms/2019P1/Q10.png\" alt=\"MS Q10\"></p>",
@@ -27544,7 +27976,9 @@ window.QB = {
    "qno": 11,
    "title": "第 11 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "多項式"
+   ],
    "lang": "中文",
    "text": "11. 11. (a) Let ax + b be the required quotient 1M Then, we have p(x) = (ax + b)(2x²+ 9x + 14) IM for either one Note that p(1) = 50 and p(-2) = -52 . Hence, we have (a(1) + b)(2(1)²+ 9(1) +14) = 50 and (a(-2)+b)(2(-2)²+9(-2)+14)=−52. So, we have a+b = 2 and −2a + b = −13 . Solving, we have a =5 and b = -3 . IA for both correct Thus, the required quotient is 5x –3 . --(3) (b) p(x)=0 (5x-3)(2x²+9x+14)=0 (by(a)) 5x-3=0 or 2x²+9x+14=0 9^2-4(2)(14) 1M =-31 <0 So, the quadratic equation 2x²+ 9x + 14 = 0 does not have real roots. 1M 3-5 Note that is a rational root of the equation p(x) = 0 . f.t. 1A Thus, the equation p(x) = 0 has 1 rational root. --(3) 47",
    "html": "<p><img src=\"ms/2019P1/Q11.png\" alt=\"MS Q11\"></p>",
@@ -27559,7 +27993,10 @@ window.QB = {
    "qno": 12,
    "title": "第 12 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "統計",
+    "幹葉圖"
+   ],
    "lang": "中文",
    "text": "12. 1M 12. (a) 72-(60+c)=8 c=4 1A --(2) (b) (i) (80+b)-(50+a)>34 1M b-a>4 50+a+60(2)+63+64(2)+68+69(3)+70+71(3)+72(2)+75+76+79+80+6 1M = 69 20 Therefore, we have a + b = 7 a = 0 a =1 1A+1A Thus, we have 1A for one pair + 1A for all or b=7 b=6 (ii) By (b)(i), there are two cases. Case 1: a = 0 and b = 7 The standard deviation of the distribution 1M ≈7.582875444 either one Case 2: a=1 and b=6 The standard deviation of the distribution ≈7.341661937 Thus, the least possible standard deviation of the distribution 1A f.t. is 7.34 seconds. Note that (50-69)²+(87-69)²>(51-69)²+(86−69)² 1M When a = 1 and b = 6 , the standard deviation of the distribution is the least. The standard deviation ≈7.341661937 Thus, the least possible standard deviation of the distribution 1A f.t. is 7,34 seconds. 6) 48",
    "html": "<p><img src=\"ms/2019P1/Q12.png\" alt=\"MS Q12\"></p>",
@@ -27574,7 +28011,10 @@ window.QB = {
    "qno": 13,
    "title": "第 13 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "圓的性質",
+    "圓的幾何"
+   ],
    "lang": "中文",
    "text": "13. 13. (a) Note that ∠ABF+∠AED =180° 1M So, we have ∠ABF +115° =180° Hence, we have ∠ABF = 65° Also note that ∠ABC = 90° 1M Therefore, we have ∠CBF + 65° = 90° Thus, we have ∠CBF = 25° 1A ∠AOD e a 1M =360°-2∠AED =360°−2(115°) =130° ∠COD =180°-∠AOD 1M =180°-130° = 50° Since 2∠CBF = ∠COD , we have ∠CBF = 25° 1A --(3) (b) ∠ODF = ∠CBF =25° 1M 1M ∠OBF = ∠ODF = 25° ∠DOF =2∠CBF =2(25°) = 50° ∠BOC 1M =180°-∠DOF-∠OBF-∠ODF =180°-50°-25°-25° = 80° The perimeter of the sector OBC 80 (2π(18))+2(18) 1M 360 =8π+36 >8(3)+36 =60 f.t. Thus, the perimeter of the sector OBC is not less than 60 cm. 1A ∠ODF =∠CBF=25° 1M ∠OBF = ∠ODF = 25° 1M ∠BOC =180°−∠COD −∠OBF –∠ODF IM =180°-50°-25°-25° = 80° The perimeter of the sector OBC 80 (2π(18))+2(18) 1M 360 =8π+36 >8(3)+36 =60 Thus, the perimeter of the sector OBC is not less than 60 cm . f.t. 1A -(5) 49",
    "html": "<p><img src=\"ms/2019P1/Q13.png\" alt=\"MS Q13\"></p>",
@@ -27589,7 +28029,9 @@ window.QB = {
    "qno": 14,
    "title": "第 14 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "平面幾何"
+   ],
    "lang": "中文",
    "text": "14. Marking Schemes for (a)(i) and (a)(ii) : 14. 2 Case 1 Any correct proof with correct reasons. Case 2 Any correct proof without reasons. (a) (i) (common side) BC = BC ∠BCG = ∠CBF (alt. ∠s, CG// DB) ∠CBG =∠BCF (alt. ∠s, BG//EC ) (ASA) ∆BCG ≡ ∆CBF (alt. ∠s, BC// ED) ∠CBF = ∠EDF (ii) ∠BFC =∠DFE (vert. opp. ∠s) MBCF-4DEF snnofA (AAA) (AA) (equiangular) ΔBCF ~ ΔDEF --(4) (b) (i) By (a)(i), we have ∠BGC = ∠BFC . Since ∠BCF = ∠BGC , we have ∠BCF = ∠BFC Therefore, we have BF = BC = l . 1M Since BDcos45° = l , we have BD = √2e. DF = BD-BF =√2e-l 1A =(√2-1)e (ii) By (b)(i), ∆BCF is an isosceles triangle with BC = BF By (a)(ii), ∆DEF is an isosceles triangle with DE = DF AE =AD-DE = AD - DF =e-(√2-1)e (by (b)(i)) 1M for using the result of (b)(i) =(2-√2)e 3 2- e 2 e 2 Note that AE + DE = l. e So, we have DE < 2 0i Since DE = DF , we have DF < 2 Therefore, we have AE > DF IA f.t. Thus, the claim is agreed. -(4) 50",
    "html": "<p><img src=\"ms/2019P1/Q14.png\" alt=\"MS Q14\"></p>",
@@ -27604,7 +28046,9 @@ window.QB = {
    "qno": 15,
    "title": "第 15 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "排列與組合"
+   ],
    "lang": "中文",
    "text": "15. 15. The required number 1M for Cp - Cn =C{32-C{} 1M+1M l+1M for either one =200914 1A The required number 1M for considering 5 cases =C²Cl1+C2C31+C2Cl1 $+C{}C^{}+C^{} 1M+1M +1M for either one =200914 1A (3)",
    "html": "<p><img src=\"ms/2019P1/Q15.png\" alt=\"MS Q15\"></p>",
@@ -27619,7 +28063,10 @@ window.QB = {
    "qno": 16,
    "title": "第 16 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "代數化簡",
+    "一元二次方程"
+   ],
    "lang": "中文",
    "text": "16. 16. (a) Putting β = 5a −18 in β = α2-13a +63, we have 5a−18=α2-13a+63 1M a²-18a+81=0 Solving, we have α = 9 and β = 27. 1A for both correct --(2) (b) Let T(n) be the nth term of the arithmetic sequence. Since T(1) = log9 = log 3² = 2 log 3 and T(2) = log 27 = log3³ = 3log3 , IM for either one the common difference of the sequence is log3 T(1) + T(2) + T(3) +  + T(n) > 888 2log3+3log3+4log3+.+(n+1)log3>888 =12 (2(21og3)+(n-1)log3)>888 1M (log3)n²+(3log3)n-1776 >0 1M n < -62.52928981 or n>59.52928981 Thus, the least value of n is 60. 1A Let T(n) be the nth term of the arithmetic sequence. Since T(1) = log 9 = log 32 and T(2) = log27 = log 3³ the common difference of the sequence is log3 T(1) + T(2) + T(3) + · + T(n) > 888 log9+log27+log81+.+log3\"+1>888 log 3²+ log 3³+ log 3⁴+ . + log 3ⁿ+1 > 888 log(3².33.34…3\"+1)>888 1M log(32+3+4++(n+1)>888 n(n+3) log3 2 >888 1M n(n+3) 3 2>10888 n(n+3) 2> log3 10888 2 n²+3n-21og₃10{88>0 n<-62.52928981 or n>59.52928981 IM Thus, the least value of n is 60. 1A (4) 51",
    "html": "<p><img src=\"ms/2019P1/Q16.png\" alt=\"MS Q16\"></p>",
@@ -27634,7 +28081,10 @@ window.QB = {
    "qno": 17,
    "title": "第 17 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "坐標幾何",
+    "軌跡"
+   ],
    "lang": "中文",
    "text": "17. r(CD), r(DE) r(CE) 17. (a) IM a 2 2 2 r(CD + DE + CE) = 2a pr = 2a 1 -(2) (b) (i) Γ is the angle bisector of ∠OHK. 1M OH (ii) =√9²+122 =15 HK =√(9-14)²+12² =13 14(12) = 84. Note that the area of ∆OHK = 2 Also note that the perimeter of ∆OHK = 13 + 14 +15 = 42. Let r be the radius of the inscribed circle of ∆OHK 1M By (a), we have 42r = 2(84) for using (a) So, we have r = 4 . Let (h, 4) be the coordinates of the in-centre of ∆OHK Hence, we have (15 − h) + (14 − h) = 13 1M Therefore, we have h = 8. The slope of Γ 12-4 9-8 =8 The equation of  is IM y-4=8(x-8) 8x-y-60=0 1A or equivalent --(5) 1 -2 52",
    "html": "<p><img src=\"ms/2019P1/Q17.png\" alt=\"MS Q17\"></p>",
@@ -27649,7 +28099,10 @@ window.QB = {
    "qno": 18,
    "title": "第 18 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "立體圖形",
+    "三角比"
+   ],
    "lang": "中文",
    "text": "18. 18. (a)(i) By sine formula, we have sin∠BAD sin ∠ABD 1M BD AD sin∠BAD sin 72° 12 13 r.t. 61.4° Thus, we have ∠BAD ≈61.4° 1A ∠ADB≈180°~72°−61.38986936° (ii) ∠ADB≈46.61013064° AD-AP cos∠ADB = 1M BD AP≈13-12cos46.61013064° AP ≈ 4.756491614 Note that ∠CAP = 60° By cosine formula, we have CP² = AC²+ AP²-2(AC)(AP)cos∠CAP 1M CP² ≈13²+4.756491614²-2(13)(4.756491614)cos60° QR-1139263339 CP≈11.4 cm IA r.t. 11.4 cm By sine formula, we have AB AD sin∠ADB sin ∠ABD AB 13 sin(180° – 72° – 61.38986936°) sin 72° AB≈9.933216094 AP 1M cos∠BAD= AB AP = ABcos ∠BAD AP≈4.756491614 Note that ∠CAP = 60° By cosine formula, we have CP² = AC²}+ AP{²}-2(AC)(AP)cos∠CAP 1M CP² ≈ 13²+ 4.7564916142- 2(13)(4.756491614)cos 60° CP≈11.4cm 1A r.t. 11.4 cm --(5) AP²+CP² (b) ≈4.7564916142+11.39253359² ≈152.4140341 AC² =169 Hence, we have AP²+ CP² ≠ AC² Therefore, ∠APC is not a right angle. 1M So, ∠BPC is not the angle between the face ABD and the face ACD. Thus, the claim is not correct. 1A f.t. -(2) 53",
    "html": "<p><img src=\"ms/2019P1/Q18.png\" alt=\"MS Q18\"></p>",
@@ -27664,7 +28117,9 @@ window.QB = {
    "qno": 19,
    "title": "第 19 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "二次函數"
+   ],
    "lang": "中文",
    "text": "19. f(4) 19. (a) 1 (4²+4(6k-2)+(9k+25)) 1+ k 1 -(33+33k) 1+k =33 1 Thus, the graph of y = f(x) passes through F. (b) (i) g(x) 1M =f(-x)+4 1 (-x)²+(6k-2)(-x)+(9k+25))+4 1 + k 1 (x²-(6k-2)x+(3k−1)²-(3k−1)²+(9k+25))+4 1M for completing the square 1 +k 1 (x-3k+1)²-(k+1)(9k-24))+4 k+1 (x-(3k-1))²+(28-9k) 1M k +1 Thus, the coordinates of U are (3k –1, 28 – 9k). 1A (ii) Note that the area of the circle passing through F and O is the IM least when FO is a diameter of the circle. If U lies on this circle, then we have ∠FUO = 90°. 5 1 and k ≠ Under this case, we have k ≠ 3 3 (28-9k)-033-(28-9k) =-1 1M+1A (3k-1)-0人4-(3k-1) (28-9k)(5+9k) =-1 (3k-1)(5-3k) 2k²-5k-3=0 k = 3 IA Thus, the area of the circle passing through F, O and U is the least when k = 3. Note that the area of the circle passing through F and O is the least when FO is a diameter of the circle. 1M Let M be the mid-point of FO. The coordinates of M 33 2, 自 2 If U lies on this circle, then we have FO = 2MU. 2 33 -(28-9k) √(0-4)²+(0-33)²=2(2-(3k-1))²+ 1M+1A 2 2k²-5k-3=0 k= 3 1A Thus, the area of the circle passing through F, O and U is the least when k = 3 . 54",
    "html": "<p><img src=\"ms/2019P1/Q19.png\" alt=\"MS Q19\"></p>",
@@ -27679,7 +28134,9 @@ window.QB = {
    "qno": 1,
    "title": "第 1 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "代數化簡"
+   ],
    "lang": "中文",
    "text": "1. 1. 4h-7 6h-5 2(6h-5)-3(4h-7) IM (4h−7)(6h-5) 12h-10-12h+21 IM (4h−7)(6h-5) 11 或等價 1A (4h−7)(6h-5) -(3) Ax+C",
    "html": "<p><img src=\"ms/2024P1/Q01.png\" alt=\"MS Q1\"></p>",
@@ -27694,7 +28151,9 @@ window.QB = {
    "qno": 2,
    "title": "第 2 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "主項變換"
+   ],
    "lang": "中文",
    "text": "2. =3x 2. B IM Ax+C=3Bx 1M 给將 x 放在一邊 Ax-3Bx=-C C 或等價 1A x= 3B-A  Ax+C =3x B Ax C 1M =3x 十 B B O- xv -=xx- 1M 给將 x 放在一邊 B B C 或等價 1A x= 3B-A -(3)",
    "html": "<p><img src=\"ms/2024P1/Q02.png\" alt=\"MS Q2\"></p>",
@@ -27709,7 +28168,9 @@ window.QB = {
    "qno": 3,
    "title": "第 3 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "因式分解"
+   ],
    "lang": "中文",
    "text": "3. 6r²-13rs-28s² 3. (a) 或等價 1A =(2r−7s)(3r+4s) 4r-14s+6r²-13rs-28s² (b) 给利用(a)的结果 1M =4r−14s+(2r−7s)(3r+4s) =2(2r−7s)+(2r−7s)(3r+4s) 或等價 LA =(2r−7s)(2+3r+4s) -(3) 5x+7",
    "html": "<p><img src=\"ms/2024P1/Q03.png\" alt=\"MS Q3\"></p>",
@@ -27724,7 +28185,9 @@ window.QB = {
    "qno": 4,
    "title": "第 4 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "一元一次不等式"
+   ],
    "lang": "中文",
    "text": "4. 4. (a) -1<2x 4 5x+7-4<8x 给將 x 放在一邊 LM -3x<-3 x>1 1A 3x+9≥0 x≥-3 因此，所求的範圍為x>1。 1A (b) 2 1A -(4) 44",
    "html": "<p><img src=\"ms/2024P1/Q04.png\" alt=\"MS Q4\"></p>",
@@ -27739,7 +28202,9 @@ window.QB = {
    "qno": 5,
    "title": "第 5 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "比率與比例"
+   ],
    "lang": "中文",
    "text": "5. 5. a:c=6:5 1M 2b+7c =4 任何一項 b+c 2b+7c=4b+4c 2b=3c b:c=3:2 b:c=15:10 a:c=12:10 故此，可得a:b:c=12:15:10 1M 設a=12k、b=15k及c=10k，其中k為一非零的常數· 5a+8b 2b+3c 5(12k)+8(15k) 1M 2(15k)+3(10k) =3 1A -(4)",
    "html": "<p><img src=\"ms/2024P1/Q05.png\" alt=\"MS Q5\"></p>",
@@ -27754,7 +28219,9 @@ window.QB = {
    "qno": 6,
    "title": "第 6 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "百分數"
+   ],
    "lang": "中文",
    "text": "6. 6. 設 Sx為該計算機的標價· 該計算機的成本 x 1M (1+40%) 5x =S 7 該計算機的售價 =(75%)x 1M 3x =S 4 5x 3x =13 1M 47 x=364 IA 因此，該計算機的樑價為S364 設Sc 為該計算機的成本。 該計算機的標價 =(1+40%)c 1M =S1.4c 該計算機的售價 =(75%)(1.4c) IM =S1.05c 1.05c-c=13 IM c=260 因此，該計算機的標價為S364 1A ----(4) 45",
    "html": "<p><img src=\"ms/2024P1/Q06.png\" alt=\"MS Q6\"></p>",
@@ -27769,7 +28236,9 @@ window.QB = {
    "qno": 7,
    "title": "第 7 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "坐標幾何"
+   ],
    "lang": "中文",
    "text": "7. 7. (a) ∠POQ =149°-59° =90° IA (b) ∠POR =239°-59° =180° 1A 因此·P、Q與R共線· 必須顯示理由 所求的周界 (c) 1M =PQ+QR+PR =√11²+602+√60²+144²+(11+144) =372 1A -(4)",
    "html": "<p><img src=\"ms/2024P1/Q07.png\" alt=\"MS Q7\"></p>",
@@ -27784,7 +28253,9 @@ window.QB = {
    "qno": 8,
    "title": "第 8 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "平面幾何"
+   ],
    "lang": "中文",
    "text": "8. 8. (a) [已知] ∠ACB=∠ADB=90° BC=AD [已知] AB=AB [公共邊]  AABAD (RHS) 有路： 明流品别停司 2 情况2未附有正確理由的任何正確證明。 1 (b) AE =√AD2+DE2 1M =15cm 藉(a)，可得∠ABE=∠BAE· 由此·可得AE=BE· 1M 故此，可得BE=15cm· 留意CE=DE=9cm• 所求的面積 1 1 (AD)(BD)+ (BC)(CE) 2 2 1 1 (12)(9) (12)(9+15)+ = 2 2 =198cm² 1A ---(5) 4+k 5",
    "html": "<p><img src=\"ms/2024P1/Q08.png\" alt=\"MS Q8\"></p>",
@@ -27799,7 +28270,9 @@ window.QB = {
    "qno": 9,
    "title": "第 9 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "統計"
+   ],
    "lang": "中文",
    "text": "9. 9. (a) 1M 10+9+4+3+4+k 18 k=6 1A (b) 平均值 = 5 1A 眾数=3 lA 中位数=4 1A --(5) 46",
    "html": "<p><img src=\"ms/2024P1/Q09.png\" alt=\"MS Q9\"></p>",
@@ -27814,7 +28287,9 @@ window.QB = {
    "qno": 10,
    "title": "第 10 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "變分"
+   ],
    "lang": "中文",
    "text": "10. 10. (a) 設g(x)=a+bx，其中a及b均為非零的常數。 1A 故此，可得a-3b=-21及a+7b=9。 1M 给任何一項代换 求解後，可得a=-12及b=3。 1A 给兩項正確 因此，可得g(x)=3x-12。 --(3) (b) h(x)=0 xg(x)+k=0 3x2-12x+k=0 1M 留意方程h(x)=0所有的根均為實數。 (-12)²−4(3)(k)≥0 1M k≤12 1A -(3) 21+32+33+37+39+40+40+b+(20+28+29+30+34)(2)+(20+a)(3)",
    "html": "<p><img src=\"ms/2024P1/Q10.png\" alt=\"MS Q10\"></p>",
@@ -27829,7 +28304,10 @@ window.QB = {
    "qno": 11,
    "title": "第 11 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "統計",
+    "幹葉圖"
+   ],
    "lang": "中文",
    "text": "11. 11. (a) 1M =30 20 所以，可得3a+b=16。 ∫a=5。 ∫a=3 ∫a=4 或 因此，可得 1A+1A 1A给一對+1A给所有 L=9] [=9] b=94 (-)-- (6) (2) IA IM (c) 當a=3時，該分佈的四分位數間距最大。 該分佈的最大可取四分位數問距 1M =34-23 必須顯示理由 1A =11 藉(a)，有三種情况。 情况1：a=3 該分佈的四分位數問距 1M =34-23 IM =11 情况2：a=4 該分佈的四分位數間距 --任何一項 =34-24 -任何一項 =10 情况2:a=5 該分佈的四分位數間距 =34-25 6= 全管限 VI 局院院路局院路房局园 47",
    "html": "<p><img src=\"ms/2024P1/Q11.png\" alt=\"MS Q11\"></p>",
@@ -27844,7 +28322,10 @@ window.QB = {
    "qno": 12,
    "title": "第 12 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "直線方程",
+    "坐標幾何"
+   ],
    "lang": "中文",
    "text": "12. 12. (a) 設 (b, 0) 為 B 的坐標， 則A、C及D的坐標分別為(mb+b,0)、(b,mb)及 1M 给任何一項 (mb+b,mb) OD 的斜率 mb-0 IM mb+b-0 m 1A m+1 設k為 OD 的斜率。 將A 的 x坐標記為a 1M 則D的坐標為(a,ka)。 任何一項 所以，B的x坐標為a-ka· 故此，C的坐標為(a-ka,ka)· 1M ka=m(a-ka) k=m-mk  m k= m+1 m 因此，OD的斜率為 1A m+1 -(3) (b) OM的斜率 5-0 = 6-0 5  6 0Q的斜率 5 6 给利用(a)的结果 1M (藉(a)) 5 +1 6 5 11 5x 故此，通過O及Q的直線的方程為y= 11 通過M及N的直線的方程為 5-0 1M (x-10) y-0= 6-10 -5x25 y = + 2 4 22 10 -5x 25 5x 後·Q的坐標為 與y= 解 y= + 3 3 2 11 4 P 的 x 坐標 22 10 1M 3 3 lA =4 -(4) 48",
    "html": "<p><img src=\"ms/2024P1/Q12.png\" alt=\"MS Q12\"></p>",
@@ -27859,7 +28340,10 @@ window.QB = {
    "qno": 13,
    "title": "第 13 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "立體圖形",
+    "求積法"
+   ],
    "lang": "中文",
    "text": "13. X的體积 13. (a) (18 (64²)(24)1- 1 1M+1M = 24 3 =18944cm³ 1A 接受答案準確至18900cm³ --(3) (b) X每一侧面的面积 (64)√62+82 3 1 64+ 1M 2 =560cm² X的總表面面积 3 =4(560)+642 1M 1+ 4 =8640cm² 2 X的高 2 6 =4 Z的高 3 X的總表面面积 8640 =9 Z的總表面面积 960 X的高 X的總表面面积 1M ≠ Z的總表面面積 Z的高 因此，X與Z不相似。 1A 必須顯示理由 --(4)",
    "html": "<p><img src=\"ms/2024P1/Q13.png\" alt=\"MS Q13\"></p>",
@@ -27874,7 +28358,9 @@ window.QB = {
    "qno": 14,
    "title": "第 14 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "多項式"
+   ],
    "lang": "中文",
    "text": "14. 14. (a) -4 IA -(1) (b) (i) 藉(a),可得 F(x)=(6x²+x-4)(gx²+rx-10)· 留意F(-1)=-12及F(2)=0。 1M+1M 由此，可得(6(-1)²+(-1)-4)(g(-1)²+r(-1)-10)=-12 及(6(2)²+(2)−4)(g(2)²+r(2)-10)=0。 故此，可得g-r=-2及2g+r=5。 求解後，可得g=1及r=3。 给兩項正確 IA (ii) F(x)=0 (6x²+x-4)(x²+3x-10)=0 (6x²+x-4)(x-2)(x+5)=0 IM 6x2+x-4=0、x-2=0或x+5=0 IM -1±√97 x=2或x=-5 IM x= 12 -1-√97 L6↑+1- 索 2 品。 12 12 再者留意2及-5均不是無理数。 因此，方程F(x)=0有2個無理根。 必須顯示理由 1A --(7) 49",
    "html": "<p><img src=\"ms/2024P1/Q14.png\" alt=\"MS Q14\"></p>",
@@ -27889,7 +28375,10 @@ window.QB = {
    "qno": 15,
    "title": "第 15 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "對數",
+    "函數與圖像"
+   ],
    "lang": "中文",
    "text": "15. 1M 15. l0g9y-22=4(log3x-5) 1M loggy=log3x⁴+2 log9y=log39x⁴4 ---任何一項 log3y =l0g39x4 log39 log3y=2l0g39x⁴ y=81x8 IA -(3)",
    "html": "<p><img src=\"ms/2024P1/Q15.png\" alt=\"MS Q15\"></p>",
@@ -27904,7 +28393,9 @@ window.QB = {
    "qno": 16,
    "title": "第 16 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "概率"
+   ],
    "lang": "中文",
    "text": "16. 16. (a) 所求的概率 C^6C{4}  给分子 1M C{20} 455 IA 接受答案準确至0.470 969 所求的概率 给分子 1M =5 (20人19人18人(17人16) 455 1A 接受答案準確至0.470 969 -(2) 所求的概率 (b) C{6} 455 给 1-Pp_1-(a) 1M =1- C{20 969 455 91 =1- 969 323 241 1A 接受答案準確至0.249 969 所求的概率 C16C4 C36C2+C26C4 给 P2+P3+P4 1M + + C{O C{0 C{O 10 70 1 + + 969 323 323 241 1A 接受答案準確至0.249 969 --(2) 50",
    "html": "<p><img src=\"ms/2024P1/Q16.png\" alt=\"MS Q16\"></p>",
@@ -27919,7 +28410,10 @@ window.QB = {
    "qno": 17,
    "title": "第 17 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "直線方程",
+    "軌跡"
+   ],
    "lang": "中文",
    "text": "17. 17. (a) (i) Γ 為 QR 的垂直平分線。 1M (ii) QR 的中贴的坐标為 (3,-5)• QR 的斜率 -9-(-1) -4-10 4 7 Γ的方程為 -7 y−(-5)= IM (x-3) 4 1A 或等價 7x+4y-1=0 -(3) (b) (i) 將點 (4,3) 記為 S RS的中點的坐標為(0,-3) RS 的斜率 3-(-9) 4-(-4) 3 2 RS 的垂直平分線的方程為 -2 y−(−3)= (x-0) 3  2x+3y+9=0 解7x+4y-1=0與2x+3y+9=0後，C的面心的坐標 IM 為(3，-5)。 C的半徑 =√(4-3)²+(3+5)² 1M =√65 1A x²+y²-6x+10y-31=0 因此，C的方程為(x-3)²+(y+5)²=65· (ii) 將 C 的圓心記為 G· 留意G 在 △UVW的外接面上。 再者留意GU為△UVW的外接回的一直徑。 GU =√(10-3)²+(4+5)² =√130 ΔUVW的外接圆的面積 2 √130 IM =π 2 ≈102.1017612 >100 因此，ΔUVW的外接圓的面積大於100 必須顯示理由 1A --(5) 51",
    "html": "<p><img src=\"ms/2024P1/Q17.png\" alt=\"MS Q17\"></p>",
@@ -27934,7 +28428,10 @@ window.QB = {
    "qno": 18,
    "title": "第 18 題評卷參考（待核對）",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "平面幾何",
+    "求積法"
+   ],
    "lang": "中文",
    "text": "18. 備註 解 分 1B. (a) (1) 藉餘弦公式，可得 QS²= PQ²+ PS²−2(PQ)(PS)cos∠QPS 1M QS²=12²+10²−2(12)(10)cos82° QS≈14.51201074 1A 接受答案準确至14.5cm QS≈14.5cm 因此，QS的長度為14.5cm· (ii) 藉正弦公式，可得 sin ∠QSR sin ∠QRS IM QR QS 13sin 65° sin∠QSR≈ 14.51201074 ∠QSR≈54.27995332°或∠QSR≈125.7200468°（捨去） ∠RQS ≈180°-65°-54.27995332° ≈60.72004668° — 1A 接受答案準確至60.7° ≈60.7° (4) (b) (i) 將由 R 至 QS 的垂足記為T， 則可得RT=13sin∠RQS· 設hcm為由 R至平面 PQS 的最短距離· 1M h = RTsin80° h=(13sin∠RQS)sin 80° 藉(a)(ii)，可得h≈11.16685898· 接受答案準確至11.2cm lA 因此，所求的距離為11.2cm· (ii) 將由 P至平面 QRS 的最短距離記為 dcm· (△PQS 的面积)h=-(△QRS 的面积)d 1M 13 3 (PQ)(PS)sin ∠QPS d 2 h (QR)(QS)sin ∠RQS (12)(10)(sin 82°) d (13)(14.51201074)sin 60.72004668° 11.16685898 d≈8.064136851 由於 PX≥d，所以P與X間的距離超過8cm· LA 必須顯示理由 因此，該宣稱正確。 -(4) 52",
    "html": "<p><img src=\"ms/2024P1/Q18.png\" alt=\"MS Q18\"></p>",
@@ -27949,7 +28446,9 @@ window.QB = {
    "qno": 19,
    "title": "第 19 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "二次函數"
+   ],
    "lang": "中文",
    "text": "19. 19. (a) f(x) =2x²+4mx+8x+2m²+8m+n =2(x²+2mx+4x)+2m²+8m+n =2(x²+2(m+2)x+(m+2)²-(m+2)²)+2m²+8m+n 1M =2(x+m+2)²+n-8 因此，P的坐棵為(-m-2,n-8)。 1A ---(2) x (b) f(x) 變换為 f +7 表示沿 x 轴放大至原本的 5 倍且 5 向上平移7單位· 1A+1A -(2) (c) (1) Q 的坐標為 (-5m-10,n-1)• 1M n-1. 4-m 留意1+n-(-m-2)=-5m-10-(1+n)及 1M+1M 4-m n-8 给au²+βu+γ=0 1M 故此，可得n=-3m-7及8m²+77m+104=0 由於mn<0，可得m=-8及n=17。 IA 给兩項正確 因此，P及Q的坐標分别為(6,9)及(30,16)· (ii) 對 PQ//SR，PQ 的斜率等於RS的斜率。 16-9。 1-(21-3) IM 所以，可得 31+27-(31+3)30-6 求解後，可得1=-4 R及S的坐標分别為(15,-4)及(-9,-11)· PQ=√(30-6)²+(16-9)²=25 IM RS=√(15-(-9))²+(-4-(-11))²=25 ----任何一項 QR=√(30-15)²+(16-(-4))²=25 當1=-4時，可得PQ=QR=RS及PQ//SR· IA 因此，PQRS有可能為一菱形。 必須顯示理由 封 PQ=RS，可得 √(30-6)²+(16-9)²=√((31+27)-(31+3))²+(1-(21-3))². IM 化簡後，可得r²-6r-40=0· 求解後，可得1=10或1=-4 情况1：1=10 R及S的坐標分别為(57,10)及(33,17)· QR=√(57-30)²+(10-16)²=√765≠25=PQ IM 由此，PQRS不是一菱形· 情况2：1=-4 R及S的坐标分别為(15,-4)及(-9,-11)· -----任何一項 QR=√(30-15)²+(16-(-4))²=25 PS=√(6-(-9))²+(9-(-11))²=25 當1=-4時：可得PQ=QR=RS=PS。 1A 因此，PQRS 有可能為一菱形。 必須顯示理由 53",
    "html": "<p><img src=\"ms/2024P1/Q19.png\" alt=\"MS Q19\"></p>",
@@ -27964,7 +28463,10 @@ window.QB = {
    "qno": 1,
    "title": "第 1 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "指數定律",
+    "代數化簡"
+   ],
    "lang": "中文",
    "text": "1. 1. 27 for (ab) = amb or (a{)n = a{m 1M cP 1 = cP−q for cP= 1M or CP C9 x³3 1A 110 1 --(3)",
    "html": "<p><img src=\"ms/2014P1zh/Q01.png\" alt=\"MS Q1\"></p>",
@@ -27979,7 +28481,9 @@ window.QB = {
    "qno": 2,
    "title": "第 2 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "因式分解"
+   ],
    "lang": "中文",
    "text": "2. a{2-2a-3 2. (a) or equivalent 1A =(a+1)(a−3) ab2 + b2 + a2 −2a −3 (b) 1M for using the result of (a) =b2(a+1)+(a+1)(a−3) or equivalent 1A =(a+1)(b2+a−3) --(3)",
    "html": "<p><img src=\"ms/2014P1zh/Q02.png\" alt=\"MS Q2\"></p>",
@@ -27994,7 +28498,10 @@ window.QB = {
    "qno": 3,
    "title": "第 3 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "近似值",
+    "有效數字"
+   ],
    "lang": "中文",
    "text": "3. 3. (a) 200 1A (b) 123 1A (c) 123.4 1A -(3)",
    "html": "<p><img src=\"ms/2014P1zh/Q03.png\" alt=\"MS Q3\"></p>",
@@ -28009,7 +28516,11 @@ window.QB = {
    "qno": 4,
    "title": "第 4 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "中位數",
+    "眾數",
+    "標準差"
+   ],
    "lang": "中文",
    "text": "4. 4. The median 1A =1 The mode 1A =2 The standard deviation ≈0.888819441 r.t. 0.889 1A ≈0.889 -(3)",
    "html": "<p><img src=\"ms/2014P1zh/Q04.png\" alt=\"MS Q4\"></p>",
@@ -28024,7 +28535,10 @@ window.QB = {
    "qno": 5,
    "title": "第 5 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "主項變換",
+    "公式變換"
+   ],
    "lang": "中文",
    "text": "5. 5. (a) 2(3m+n)=m+7 1M for expanding 7-5m 1A or equivalent n = 2 2(3m+n)=m+7 1M for division 7-5m 1A or equivalent n = 2 (b) The decrease in the value of n 1M =5 1M --(4)",
    "html": "<p><img src=\"ms/2014P1zh/Q05.png\" alt=\"MS Q5\"></p>",
@@ -28039,7 +28553,10 @@ window.QB = {
    "qno": 6,
    "title": "第 6 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "百分比",
+    "盈利虧損"
+   ],
    "lang": "中文",
    "text": "6. 6. (a) The selling price of the toy 1M =255(1-40%) =$153 1A (b) Let $x be the cost of the toy. 1M (1+2%)x=153 x=150 1A Thus, the cost of the toy is $150. --(4)",
    "html": "<p><img src=\"ms/2014P1zh/Q06.png\" alt=\"MS Q6\"></p>",
@@ -28054,7 +28571,11 @@ window.QB = {
    "qno": 7,
    "title": "第 7 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "因式定理",
+    "餘數定理",
+    "有理根"
+   ],
    "lang": "中文",
    "text": "7. 1M 7. (a) f(2) =-33 4(2)3-5(2)2-18(2)+c=-33 c = -9 f(−1) 1M =4(-1)3-5(-1)²-18(-1)-9 =0 f.t. 1A Thus, x+1 is a factor of f(x). (b) f(x)=0 4x3-5x²-18x-9=0 (x+1)(4x²-9x-9)=0 1M for (x +1)(px2 + qx + r) = 0 (x+ 1)(x−3)(4x+3) = 0 -3 x=-1,x=3 or x= 4 -3 Note that -1, 3 and are rational numbers. 4 1A f.t. Thus, the claim is agreed. --(5)",
    "html": "<p><img src=\"ms/2014P1zh/Q07.png\" alt=\"MS Q7\"></p>",
@@ -28069,7 +28590,12 @@ window.QB = {
    "qno": 8,
    "title": "第 8 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "平面坐標",
+    "旋轉",
+    "平移",
+    "斜率"
+   ],
    "lang": "中文",
    "text": "8. 1A 8. (a) The coordinates of P' are (5, 3). 1A The coordinates of Q' are (-19, -7). (b) The slope of PQ 5+7 1M -3-2 -12 1A 5 either one The slope of P'Q' either one 3+7 5+19 5 1 12 So, the product of the slope of PQ and the slope of P'Q' is -1. 1 Thus, PQ is perpendicular to P'Q'. --(5)",
    "html": "<p><img src=\"ms/2014P1zh/Q08.png\" alt=\"MS Q8\"></p>",
@@ -28084,7 +28610,10 @@ window.QB = {
    "qno": 9,
    "title": "第 9 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "相似三角形",
+    "角度證明"
+   ],
    "lang": "中文",
    "text": "9. 9. (a) In ∆ABC and ∆BDC, ∠BAC =∠DBC (given) [已知] (common ∠) [公共角] ∠ACB=∠BCD (AAA) ∆ABC ~ ∆BDC (AA) (equiangular) [等角] Marking Scheme: Case 1 Any correct proof with correct reasons. 2 Case 2 Any correct proof without reasons. 1 CD BC (b) 1M BC AC CD 20 25 20 CD =16 cm BD2 + CD2} 1M =122+162 =202 = BC² Thus, ∆BCD is a right-angled triangle. 1A f.t. --(5)",
    "html": "<p><img src=\"ms/2014P1zh/Q09.png\" alt=\"MS Q9\"></p>",
@@ -28099,7 +28628,10 @@ window.QB = {
    "qno": 10,
    "title": "第 10 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "時間速度距離圖",
+    "平均速率"
+   ],
    "lang": "中文",
    "text": "10. 10. (a) The distance of car A from town X at 8:15 in the morning 45 (80) 1M 120 1A = 30 km --(2) (b) Suppose that car A and car B first meet at the time t minutes after 7:30 in the morning. 44 t 1M 120 80 t = 66 1A Thus, car A and car B first meet at 8:36 in the morning. --(2) (c) During the period 8:15 to 9:30 in the morning, car B travels 36 km 1M while car A travels more than 36 km . So, the average speed of car A is higher than that of car B. f.t. 1A Thus, the claim is disagreed. The average speed of car A during the period 8:15 to 9:30 in the morning 80 80-30 1M accept 2 1.25 50 1.25 either one = 40 km/h The average speed of car B during the period 8:15 to 9:30 in the morning 80-44 1.25 36 1.25 = 28.8 km/h Note that 40 > 28.8 . So, the average speed of car A is higher than that of car B. 1A f.t. Thus, the claim is disagreed. --(2)",
    "html": "<p><img src=\"ms/2014P1zh/Q10.png\" alt=\"MS Q10\"></p>",
@@ -28114,7 +28646,12 @@ window.QB = {
    "qno": 11,
    "title": "第 11 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "框線圖",
+    "四分位數",
+    "平均數",
+    "中位數"
+   ],
    "lang": "中文",
    "text": "11. 11. (a) The range 1M 1A = 73 thousand dollars either one The inter-quartile range 1A =21 thousand dollars -(3) The mean of the prices of the remaining paintings in the art gallery (b) (33)(53)-32-34-58-59 1M 33-4 1566 29 1A = 54 thousand dollars Note that 32 and 34 are less than 55. Also note that 58 and 59 are greater than 55. The median of the prices of the remaining paintings in the art gallery 1A =55 thousand dollars --(3)",
    "html": "<p><img src=\"ms/2014P1zh/Q11.png\" alt=\"MS Q11\"></p>",
@@ -28129,7 +28666,11 @@ window.QB = {
    "qno": 12,
    "title": "第 12 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "圓的方程",
+    "軌跡",
+    "垂直平分線"
+   ],
    "lang": "中文",
    "text": "12. 12. (a) The radius of C =√(6-0)²+(11-3)² 1M =10 Thus, the equation of C is x² + (y -3)² = 10² 1A x2 + y2−6y−91= 0 --(2) (b) (i) Let (x, y) be the coordinates of P. √(x−0)2+(y−3)2=√(x-6)2+(y−11)2 1M 1A 3x+4y-37=0 Thus, the equation of Γ is 3x + 4 y - 37 = 0. The slope of AG 11-3 1 6-0 4 二 3 -3 1M Note that the slope of Γ is 4 Also note that the mid-point of AG is (3, 7). The equation of Γ is -3 y-7= (x-3) 4 3x+4y-37=0 1A 1A (ii) I is the perpendicular bisector of the line segment AG. (iii) The perimeter of the quadrilateral AQGR 1M =4(10) =40 1A --(5)",
    "html": "<p><img src=\"ms/2014P1zh/Q12.png\" alt=\"MS Q12\"></p>",
@@ -28144,7 +28685,11 @@ window.QB = {
    "qno": 13,
    "title": "第 13 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "正變",
+    "二次函數",
+    "坐標幾何"
+   ],
    "lang": "中文",
    "text": "13. 1A 13. (a) Let f(x)= px2 +q g are non-zero constants 1M for either substitution So, we have 4 p + q = 59 and 49 p + q = -121. 1A for both correct Solving, we have p = -4 and q = 75. Therefore, we have f(x) = 75 - 4x². 1A Thus, we have f(6) = −69. --(4) 1M (b) By (a), we have a = -69 . either one Since f(x) = 75 − 4x2, we have f(−6) = f(6). So, we have b = -69. AB 1M can be absorbed =6-(-6) =12 The area of ∆ABC (12)(69) 1M 2 1A =414 ---(4)",
    "html": "<p><img src=\"ms/2014P1zh/Q13.png\" alt=\"MS Q13\"></p>",
@@ -28159,7 +28704,12 @@ window.QB = {
    "qno": 14,
    "title": "第 14 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "圓錐",
+    "平截頭體",
+    "曲面面積",
+    "體積"
+   ],
    "lang": "中文",
    "text": "14. 14. (a) The slant height of the circular cone =√722+962 1M =120 cm The area of the wet curved surface of the vessel (96-60+28)²-(96-60)² = π(72)(120) 1M+1M 962 64²-36² = π(72)(120) 962 = 2625π cm² 1A Let R cm be the radius of the water surface. R 96-60+28 Then, we have 1M 72 96 64 R Therefore, we have 72 96 either one So, we have R = 48 . Let r cm be the base radius of the lower part of the inverted right circular cone. 96-60 r Then, we have 72 96 36 r Therefore, we have 72 96 So, we have r = 27 . The area of the wet curved surface of the vessel = π(48)√482 + 642 − π(27)√27² +362 1M+1M = π(48)(80) −π(27)(45) = 2625π cm² 1A --(4) (b) The volume of the circular cone 1 π(72)²(96) 1M 二 3 =165888πcm³ The volume of water in the vessel 643-36^3 =165888π IM+1A 963 = 40 404π cm3 ≈0.126932909m3 >0.1m³ f.t. 1A Thus, the claim is agreed. The volume of water in the vessel 1 1 π(48)²(64)- π(27)²(36) 二 M +1A 1 ε ε 42228 40 c3 ≈ 0.126932909 m³ >0.1m³ 1A f.t. Thus, the claim is agreed. --(4)",
    "html": "<p><img src=\"ms/2014P1zh/Q14.png\" alt=\"MS Q14\"></p>",
@@ -28174,7 +28724,11 @@ window.QB = {
    "qno": 15,
    "title": "第 15 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "對數",
+    "線性關係",
+    "圖像"
+   ],
    "lang": "中文",
    "text": "15. (log{4 x−3) 1M 15. log8 y-0 = 3 -1 log8y = log4x+1 3 -1 +log44 log8 y = log4 x3 log8 y = log4 4x- log2y 1M log28 log24 log24x3 3 log2y = 2 log2 y = log2 8x2 y=8x 1A -1 (log4 x −3) log8y-0= 1M 3 -1 log8 y = log4x+1 3 +log44 log8 y = log4 4x y=810g,4x y=4210g₄4x^{31 1M y=410g48x21 y=8x2 1A --(3)",
    "html": "<p><img src=\"ms/2014P1zh/Q15.png\" alt=\"MS Q15\"></p>",
@@ -28189,7 +28743,11 @@ window.QB = {
    "qno": 16,
    "title": "第 16 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "數列",
+    "等差數列",
+    "總和"
+   ],
    "lang": "中文",
    "text": "16. 16. Note that the numbers of dots in the patterns form an arithmetic sequence. The total number of dots in the first m patterns =3+5+7++(2m+1) m u (3+(2m+1)) (2)(3) (m -1()(2) 1M+1A accept T 2 2 = m2 + 2m m² + 2m > 6 888 m²+2m-6888>0 1M (m-82)(m+84)>0 m < -84 or m >82 Thus, the least value of m is 83. 1A -(4)",
    "html": "<p><img src=\"ms/2014P1zh/Q16.png\" alt=\"MS Q16\"></p>",
@@ -28204,7 +28762,11 @@ window.QB = {
    "qno": 17,
    "title": "第 17 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "立體圖形",
+    "餘弦定理",
+    "梯形面積"
+   ],
    "lang": "中文",
    "text": "17. By sine formula, we have 17. (a) sin∠AVB sin∠VAB 1M VB AB sin∠AVB sin 110° 30 18 ∠AVB≈34.32008291° ∠VBA≈180°-110°-34.32008291° ∠VBA≈35.67991709° r.t. 35.7° 1A ∠VBA≈35.7° --(2) (b) By cosine formula, we have 1M MP2 = BP2 + BM2 - 2(BP)(BM)cos ∠VBA MP2 ≈ 92 +152 − 2(9)(15) cos35.67991709° MP≈9.310329519 cm BC 1M MN = 2 MN = 5 cm Note that MP = NQ Let h cm be the height of the trapezium PQNM. PQ-MN MP{2}- 1M h=1 2 (10-5 2 h≈9.3103295192 2 h≈8.968402074 The area of the trapezium PQNM h(MN + PQ) 1M 2 (8.968402074)(5+10) 2 2 ≈67.26301555 cm² < 70 cm² f.t. 1A Thus, the claim is agreed.",
    "html": "<p><img src=\"ms/2014P1zh/Q17.png\" alt=\"MS Q17\"></p>",
@@ -28219,7 +28781,11 @@ window.QB = {
    "qno": 18,
    "title": "第 18 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "線性規劃",
+    "不等式組",
+    "圖解"
+   ],
    "lang": "中文",
    "text": "18. 18. (a) The slope of L_2 90-0 45-180 -2 二 3 The equation of L, is -2 (x-45) y-90= 1M 3 2x+3y-360=0 1A 6x+7y≤900 2x+3y≤360 1M+1A or equivalent Thus, the system of inequalities is x≥0 y≥0 --(4) (b) Let x and y be the numbers of wardrobes X and Y produced that month respectively. Now, the constraints are 6x + 7y ≤ 900 and 2x + 3y ≤ 360, where x and y are non-negative integers. Denote the total profit on the production of wardrobes by $P. 1A Then, we have P = 440x + 665y. Note that the vertices of the shaded region in Figure 7 are the points (0,0), (0,120),(45,90) and (150,0). 1M+1M At the point (0, 0), we have P = (440)(0) + (665)(0) = 0. 1M for testing a point + At the point (0, 120), we have P = (440)(0) + (665)(120) = 79 800. 1M for testing all points At the point (45, 90), we have P = (440)(45) + (665)(90) = 79 650. At the point (150, 0), we have P = (440)(150) + (665)(0) = 66 000. So, the greatest possible profit is $79 800. f.t. 1A Thus, the claim is disagreed. Let x and y be the numbers of wardrobes X and Y produced that month respectively. Now, the constraints are 6x + 7y ≤ 900 and 2x + 3y ≤ 360, where x and y are non-negative integers. Denote the total profit on the production of wardrobes by $P. 1A Then, we have P = 440x + 665y. 1M for sliding straight line+ Draw the straight line 88x + 133y = k on Figure 7, where k is a 1M+1M 1M for straight line with negative slope constant. It is found that P attains its greatest value at the point (0, 120) So, the greatest value of P is $79 800. 1A f.t. Thus, the claim is disagreed. --(4)",
    "html": "<p><img src=\"ms/2014P1zh/Q18.png\" alt=\"MS Q18\"></p>",
@@ -28234,7 +28800,11 @@ window.QB = {
    "qno": 19,
    "title": "第 19 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "概率",
+    "期望值",
+    "幾何概率"
+   ],
    "lang": "中文",
    "text": "19. 19. (a) The required probability 5 5 5 5 5 5 1 1 1 1M + 十 十 H 6 6 6 6 6 6 6 6 6 2 25 25 1 1 1 + … + 十 11 6 36 36 6 6 1 6 1M 25 1- 36 6 r.t. 0.545 1A 11 Let p be the probability that Ada wins the first round of the game. 5p 1M Then, the probability that Billy wins the first round of the game is 6 5p =1 1M p+ 6 11p =1 6 6 r.t. 0.545 1A p = 11 6 Thus, the required probability is 11 -(3) (b) (i) Suppose that the player of the second round adopts Option 1. The probability of getting 10 tokens 8 1 = (1) 1M accept 1.∞ 82 1 8 The probability of getting 5 tokens (7)(P2) 82 7 1A can be absorbed 32 The expected number of tokens got 7 1 +(5) = (10) 1M 8 32 75 1A r.t. 2.34 32",
    "html": "<p><img src=\"ms/2014P1zh/Q19.png\" alt=\"MS Q19\"></p>",
@@ -28249,7 +28819,9 @@ window.QB = {
    "qno": 1,
    "title": "第 1 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "指數定律"
+   ],
    "lang": "中文",
    "text": "1. 1. m-4 1M 給(a^{h}k}= a{hk}或 (ab)1 = a' b{l} 4 m 3-(-4) cP m 1 210 1M 給 =c ^-9}或 d^−-r = c9 d m9 20 1A I --(3)",
    "html": "<p><img src=\"ms/2020P1zh/Q01.png\" alt=\"MS Q1\"></p>",
@@ -28264,7 +28836,9 @@ window.QB = {
    "qno": 2,
    "title": "第 2 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "因式分解"
+   ],
    "lang": "中文",
    "text": "2. 2. (a) a2+α-6 =(a+3)(α-2) 1A 或等價 a^{4}+a^{3}-6^{2}} (b) =a^2(a^2+α-6) 1M =α2(α+3)(a−2) 或等價 1A --(3)",
    "html": "<p><img src=\"ms/2020P1zh/Q02.png\" alt=\"MS Q2\"></p>",
@@ -28279,7 +28853,9 @@ window.QB = {
    "qno": 3,
    "title": "第 3 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "數系"
+   ],
    "lang": "中文",
    "text": "3. 3. (a) 600 1A (b) 534.76 1A (c) 530 LA --(3)",
    "html": "<p><img src=\"ms/2020P1zh/Q03.png\" alt=\"MS Q3\"></p>",
@@ -28294,7 +28870,9 @@ window.QB = {
    "qno": 4,
    "title": "第 4 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "比率與比例"
+   ],
    "lang": "中文",
    "text": "4. a:b 4. =6:7 =12:14 1M a:c 任何一項 =4:3 =12:9 a:b:c =12:14:9 設a=12k、b=14k及c=9k，其中k為一非零的常數。 b+2c a+2b 14k+2(9k) 1M 12k+2(14k) 4  1A 0.8 5 --(3) 44 Provided by dse.life",
    "html": "<p><img src=\"ms/2020P1zh/Q04.png\" alt=\"MS Q4\"></p>",
@@ -28309,7 +28887,9 @@ window.QB = {
    "qno": 5,
    "title": "第 5 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "百分數"
+   ],
    "lang": "中文",
    "text": "5. 5. 設 x 為在該招聘活動中女申請者的人數。 1A 故此，男申請者的人數為(1+28%)x。 1M給得一元線性方程 1M+1A (1+28%)x-x=91 0.28x=91 x=325 1A (1+28%)x=416 因此，在該招聘活動中男申請者的人數為416。 設x及y分別為在該招聘活動中男申請者的人數及女申請者的人 數。 1A+1A 故此，可得x-y=91及x=(1+28%)y。 IM給得一元線性方程 1M 所以，可得(1+28%)y-y=91。 0.28y=91 y=325 1A x=416 因此，在該招聘活動中男申請者的人數為416。 在該招聘活動中男申請者的人數 1M給分數+1A給分子 (1+28%)(91) 1M+1A+1A +1A給分母 1 28% 1A =416 -(4) 7-x",
    "html": "<p><img src=\"ms/2020P1zh/Q05.png\" alt=\"MS Q5\"></p>",
@@ -28324,7 +28904,9 @@ window.QB = {
    "qno": 6,
    "title": "第 6 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "一元一次不等式"
+   ],
    "lang": "中文",
    "text": "6. 6. (a) 3-x> 2 6-2x>7-x 給將 x 放在一邊 1M -2x+x>7-6 1A x < -1 5+x>4 x>-1 x<-1 或 x>-1 1A 因此，可得x≠-1。 IA (b) -2 --(4)",
    "html": "<p><img src=\"ms/2020P1zh/Q06.png\" alt=\"MS Q6\"></p>",
@@ -28339,7 +28921,9 @@ window.QB = {
    "qno": 7,
    "title": "第 7 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "一元二次方程"
+   ],
    "lang": "中文",
    "text": "7. 7.(a) 由於方程4x²+12x+c=0 有等根，可得Δ=0。 1M+1A 122-4(4)c=0 144-16c=0 1A c=9 (b) y =p(x)-169 1M (藉(a)) =4x2+12x-160 =4(x+8)(x-5) 1A 因此，y=p(x)-169的圖像的x 截距為-8 及5。 --(5) 45 Provided by dse.life",
    "html": "<p><img src=\"ms/2020P1zh/Q07.png\" alt=\"MS Q7\"></p>",
@@ -28354,7 +28938,9 @@ window.QB = {
    "qno": 8,
    "title": "第 8 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "平面幾何"
+   ],
    "lang": "中文",
    "text": "8. 8. (a) ∠AEC =∠ADB 1M = 42° ∠AEB = ∠CAE 1M =30° ∠BEC =∠AEC-∠AEB =42°-30° =12° IA (b) ∠DCE =∠BDC 1M = θ ∠CFE =180°-∠BEC-∠DCE =180°-12°-θ =168°-θ 1A ∠DBE =∠BEC 1M =12° ∠BFD =180°-∠BDC-∠DBE =180°-θ-12° =168°-θ ∠CFE = ∠BFD =168°-θ 1A -(5)",
    "html": "<p><img src=\"ms/2020P1zh/Q08.png\" alt=\"MS Q8\"></p>",
@@ -28369,7 +28955,9 @@ window.QB = {
    "qno": 9,
    "title": "第 9 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "統計"
+   ],
    "lang": "中文",
    "text": "9. 9. (a) 平均值 =5.4 IA 中位數 =5.5 1A 標準差 ≈0.916515139 ≈0.917 1A 接受答案準確至0.917 (b) 新的中位數 =5 中位數的减少 =5.5-5 1M =0.5 1A (5) 46 Provided by dse.life",
    "html": "<p><img src=\"ms/2020P1zh/Q09.png\" alt=\"MS Q9\"></p>",
@@ -28384,7 +28972,9 @@ window.QB = {
    "qno": 10,
    "title": "第 10 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "變分"
+   ],
    "lang": "中文",
    "text": "10. 1A 其中a及b均為非零的常數 10. (a) 設 P=a+bh3 給任何一項代换 1M 故此，可得a+27b=59及a+343b=691。 可以被包含 1A 求解後，可得a=5及b=2。 所求的價錢 =5+2(43) 1A = $133 -(4) 1M (b) 當 h=5 時，P=5+2(53)=255。 留意 2(133) =266。 必須顯示理由 1A 由於255<266，故此該宣稱不正確。 -(2)",
    "html": "<p><img src=\"ms/2020P1zh/Q10.png\" alt=\"MS Q10\"></p>",
@@ -28399,7 +28989,10 @@ window.QB = {
    "qno": 11,
    "title": "第 11 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "統計",
+    "幹葉圖"
+   ],
    "lang": "中文",
    "text": "11. 11. (a) 分佈域 1M =50+w-11 =(w+39)克 四分位數間距 1M =38-23 =15克 1M w+39=3(15) 1A w=6 --(4) (b) 該分佈的眾數為 38 克。 所求的概率 6 1M 20 3 0.3 1A 二 10 --(2) 47 Provided by dse.life",
    "html": "<p><img src=\"ms/2020P1zh/Q11.png\" alt=\"MS Q11\"></p>",
@@ -28414,7 +29007,10 @@ window.QB = {
    "qno": 12,
    "title": "第 12 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "立體圖形",
+    "求積法"
+   ],
    "lang": "中文",
    "text": "12. 12. (a) 該圓錐體的中間部分的體積 23-13 I π(152)(36) 1M+1M = 33 3 =700π cm³ IA 設 Rcm 及 rcm 分別為該圓錐體的中間部分的較大的 底半徑及較小的底半徑。 12 R 24 r 所以，可得 及 給任何一項 1M 1 5 15 36 15 36 求解後，可得r=5及R=10。 該圓錐體的中間部分的體積 1 1 π(10^{2)(24) π(52)(12) 1M 給任何一項 二 一 3 3 = 700π cm3 1A --(3) (b) 該圓錐體的中間部分的曲面面積 22-12 =π(15)(√152+36² 1M+1M 32 =195π cm² IA 該圓錐體的中間部分的曲面面積 =π(10)√102+242-π(5)√52+122 IM+1M = π(10)(26) −π(5)(13) =195πcm² 1A --(3) 48 Provided by dse.life",
    "html": "<p><img src=\"ms/2020P1zh/Q12.png\" alt=\"MS Q12\"></p>",
@@ -28429,7 +29025,9 @@ window.QB = {
    "qno": 13,
    "title": "第 13 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "多項式"
+   ],
    "lang": "中文",
    "text": "13. 13. (a) 設 f(x)=(x2-1)q(x)+(kx+8)，其中 q(x) 為一多項式。 1M 1M 由於 f(1)=0，可得 (1²-1)q(1)+(k+8)=0。 1A 因此，可得k=-8。 --(3) 1M (b) 設 f(x)=(x-1)(x+3)(ax+b)，其中a 及 b 均為常數。 由於f(0)=24，可得(-1)(3)(b)=24。 1M 1A 求解後，可得b=-8。 留意 f(x)=(x2-1)q(x)+(-8x+8)。 故此，可得 f(-1)=(-1)²-1)q(-1)+((-8)(-1)+8)=16。 所以，可得(-1-1)(-1+3)(-a-8)=16。 求解後，可得a=-4。 1A 由此，可得f(x)=(x-1)(x+3)(-4x-8)。 方程 f(x)=0 的根為1、-3 及-2。 方程f(x)=0所有的根均為整數。 1A 因此，該宣稱正確。 必須顯示理由 設 f(x)=(x2-1)(mx+n)+(-8x+8)，其中 m 及 n 均為常數。 1M 1M 由於f(0)=24，可得(-1)(n)+8=24。 求解後，可得n=-16。 1A 由於 f(-3)=0，可得((-3)2-1)(-3m-16)+((-8)(-3)+8)=0。 求解後，可得m=-4。 1A f(x) =(x2-1)(-4x-16)+(-8x+8) =(x-1)(x+1)(-4x-16)-8(x-1) =(x-1)(-4x2-20x-24) =-4(x-1)(x+2)(x+3) 所以，方程f(x)=0的根為1、-2及-3。 方程f(x)=0所有的根均為整数。 1A 必須顯示理由 因此，該宣稱正確。 --(5) 49 Provided by dse.life",
    "html": "<p><img src=\"ms/2020P1zh/Q13.png\" alt=\"MS Q13\"></p>",
@@ -28444,7 +29042,9 @@ window.QB = {
    "qno": 14,
    "title": "第 14 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "圓的方程"
+   ],
    "lang": "中文",
    "text": "14. 14. (a) G 的 x 坐標 -10+30 1M 二 2 =10 C的半徑 =√(-10-10)²+(0+15)² 1M =25 因此，C的方程為(x-10)2+(y+15)2=252。 x2+y2-20x+30y-300=0 1A G 的 x 坐標 -10+30 1M 1 2 =10 設x²+y2-20x+30y+F=0為C的方程，其中F為一常數 由於A位於C上，可得(-10){+02-20(-10)+30(0)+F=0。 1M 求解後，可得F=-300。 1A 因此，C的方程為x2+y2-20x+30y-300=0。 (x-10)2+(y+15)2=252 --(3) (b) (i) Γ 平行於 L。 1M L的斜率 (ii) 0+15 = 30-10 3 三 4 3 故此，的斜率為 (藉(b)(i))。 4 Γ的方程為 3 y-0= (x-(-10)) 1M 4 3x-4y+30=0 1A 或等價 3 (iii) tan∠ABG= 1M 4 ∠ABG≈36.86989765° 留意∠BAH=∠ABG及∠BAG=∠ABG。 1M 給任何一項 ∠GAH =∠BAH+∠BAG =2∠ABG 由於∠ABG>35°，可得∠GAH>70°。 因此，不同意該宣稱。 1A 必須顯示理由 --(6) 50 Provided by dse.life",
    "html": "<p><img src=\"ms/2020P1zh/Q14.png\" alt=\"MS Q14\"></p>",
@@ -28459,7 +29059,10 @@ window.QB = {
    "qno": 15,
    "title": "第 15 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "概率",
+    "排列與組合"
+   ],
    "lang": "中文",
    "text": "15. 15. (a) 所求的概率 C{2}+C{} 1M給p1+p_2}及1M給分母 1M+1M 二 C49 161 接受答案準確至 0.0415 1A 3876 所求的概率 P47+P4P} 1M給 P1+P2}及IM給分母 1M+1M 二 p19 161 接受答案準確至 0.0415 1A 二 3876 所求的概率 6 9 8 7 7 6 5 4 1M給p_1+p_2}及1M給分母 IM+IM + = 17 16 18 16 19 18 16 17 161 接受答案準確至 0.0415 1A 1 3876 --(3) 所求的概率 (b) 161 1M 給1-(a) =1- 3 876 3715 接受答案準確至 0.958 1A 3 876 --(2)",
    "html": "<p><img src=\"ms/2020P1zh/Q15.png\" alt=\"MS Q15\"></p>",
@@ -28474,7 +29077,9 @@ window.QB = {
    "qno": 16,
    "title": "第 16 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "數列"
+   ],
    "lang": "中文",
    "text": "16. 16. (a) 設 a 及 r 分別為該等比數列的第 1 項及公比。 給任何一項 1M 所以，可得ar²=144及ar⁵=486。 求解後，可得r=1.5。 1A 故此，可得a=64。 因此，該數列的第1項為64。 --(2) (b) 64+64(1.5)+64(1.52)+..+64(1.5n-1)>8×1018 64(1.5^{n-1) >8×1018 1M 1.5-1 1.5\" > 6.25×10^16+1 1M log 1.5\" > log(6.25×1016+1) nlog1.5>log(6.25×1016+1) n>95.38167941 1A 因此，n的最小值為96。 -(3) 51 Provided by dse.life",
    "html": "<p><img src=\"ms/2020P1zh/Q16.png\" alt=\"MS Q16\"></p>",
@@ -28489,7 +29094,9 @@ window.QB = {
    "qno": 17,
    "title": "第 17 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "二次函數"
+   ],
    "lang": "中文",
    "text": "17. 17. (a) g(x) =x²-2kx+2k²+4 =x2-2kx+k2+k²+4 1M =(x−k)2+k2+4 因此，y=g(x) 的圖像的頂點的坐標為(k,k²+4)。 1A --(2) (b) 留意 D =(k-2,k2+4) 及 E =(k+ 2,-k2-4)。 1A 給任何一項 將點(0,3)記為C。 CD^2} =((k-2)-0)²+((k²+4)-3)² IM =k4+3k{2-4k+5 任何一項 CE2 =(k+2-0)2+((-k2-4)-3)2 =k{4+15k{2}+4k+53 CD2} = CE2} k4}+3k{2}-4k+5=k{4}+15k{2+4k+53 1M 3k2+2k+12=0 留意 22-4(3)(12) =-140<0。 故此，方程3k²+2k+12=0沒有實根。 因此，這直角坐標系中沒有一點F使得△DEF的外心的坐標 為(0,3)。 1A 必須顯示理由 --(4) 52 Provided by dse.life",
    "html": "<p><img src=\"ms/2020P1zh/Q17.png\" alt=\"MS Q17\"></p>",
@@ -28504,7 +29111,9 @@ window.QB = {
    "qno": 18,
    "title": "第 18 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "圓的性質"
+   ],
    "lang": "中文",
    "text": "18. [交錯弓形的圓周角] 18. (a) ∠TUV=∠TWU ∠UTV = ∠UTW [公共角] ∠TVU=∠TUW [Δ内角和] (AAA) (AA) [等角] △UTV ~∆WTU 評分標準： 2 情況1附有正確理由的任何正確證明。 情况2未附有正確理由的任何正確證明。 -(2) TW TU (b) (i) (藉(a)) 1M 1 TU TV TU TV+VW TU TV 780 325+VW 780 325 VW =1547 cm 1A 因此，C的圓周為1547πcm。 (ii) 藉 (a)，可得 UV:UW=TV:TU =325:780 =5:12。 由於VW為C 的一直徑，可得∠VUW=90°。 1M 故此，可得UV:UW:VW=5:12:13。 UV 5 = (1547) 1M 13 =595cm 任何一項 UW 12 =(1547) 13 =1428 cm ΔUVW 的周界 =595+1428+1547 =3570 cm =35.7m >35 m 必須顯示理由 1A 因此，同意該宣稱。 --(5) 53 Provided by dse.life",
    "html": "<p><img src=\"ms/2020P1zh/Q18.png\" alt=\"MS Q18\"></p>",
@@ -28519,7 +29128,10 @@ window.QB = {
    "qno": 19,
    "title": "第 19 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "平面幾何",
+    "求積法"
+   ],
    "lang": "中文",
    "text": "19. PQ 19. (a) （藉正弦公式) 1M sin ∠PQR sin∠PRQ PR 60 sin 30° sin 55° PR≈36.62323766 cm 由於∠QPR=95°，可得∠RPS=25°。 RS2 = PS2+ PR2 -2(PS)(PR)cos∠RPS (藉餘弦公式) 1M RS2 ≈ 402 +36.623237662 -2(40)(36.62323766) cos25° RS≈16.90879944 RS ≈16.9 cm 1A 接受答案準確至 16.9 cm 因此，RS的長度為16.9cm。 --(3) 該紙卡的面積 (b) 1 1 (PQ)(PR)sin ∠QPR+ 1M (PR)(PS)sin ∠RPS 1 2 2 1 1 (60)(36.62323766)sin 95°+ (36.62323766)(40)sin 25° 2 2 2 ≈1404.069236 ≈1400 cm2 1A 接受答案準確至1400cm² ---(2) (c) (i) 設 H 為 P 至 QR 的垂足。 PH = PQsin ∠PQH 1M PH= 60 sin 30° PH=30cm 將 P 在水平地面上的投影記為G。 任何一項 故此，該紙卡與水平地面間的交角為∠PHG。 1M 由此，可得∠PHG=32°。 PG = PH sin ∠PHG PG =30 sin 32° PG≈15.89757793 PG ≈15.9 cm 1A 接受答案準確至 15.9cm 因此，由P 至水平地面的最短距離為 15.9cm。 (ii) 將 S 在水平地面上的投影記為 K。 設T 為 PS 的延線與 QR 的延線交點， 則可得 ΔSKT ~ΔPGT 及 PT = PQ。 PT - PS PQ-PS 60-40 故此，可得 SK= 1 PG= PG = PG = 1M PG PT PQ 60 3 藉(c)(i)，可得 SK=10sin32°cm。 留意 RS 與水平地面間的交角為∠SRK。 1M SK sin ∠SRK = 1M RS 10 sin 32° sin ∠SRK ≈ 16.90879944 ∠SRK ≈18.26416068° 所以，可得∠SRK≤20°。 因此，該宣稱正確。 1A 必須顯示理由 --(7) 54 Provided by dse.life",
    "html": "<p><img src=\"ms/2020P1zh/Q19.png\" alt=\"MS Q19\"></p>",
@@ -28534,7 +29146,9 @@ window.QB = {
    "qno": 1,
    "title": "第 1 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "指數定律"
+   ],
    "lang": "中文",
    "text": "1. 1. a-5b6 a12b-8 for (mh)k = mhk or (mn) = m1n1 1M a-5b6 a{12+5 xP 1 = x p−q or y−r= 1M for b6+8 xq y a{17} 1A b14 --(3)",
    "html": "<p><img src=\"ms/2022P1zh/Q01.png\" alt=\"MS Q1\"></p>",
@@ -28549,7 +29163,9 @@ window.QB = {
    "qno": 2,
    "title": "第 2 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "一元方程"
+   ],
    "lang": "中文",
    "text": "2. 1A 2. Note that x + y = 456 and 7x = y. for either correct So, we have x + 7x = 456 . 1M for getting a linear equation in x or y only 1A Solving, we have x = 57 . x 456 1M+1A 1M for fraction 二 1+7 1A =57 --(3) 2 3",
    "html": "<p><img src=\"ms/2022P1zh/Q02.png\" alt=\"MS Q2\"></p>",
@@ -28564,7 +29180,9 @@ window.QB = {
    "qno": 3,
    "title": "第 3 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "代數化簡"
+   ],
    "lang": "中文",
    "text": "3. 3. + k-9 5k+6 3(5k+6)+2(k−9) 1M (k−9)(5k+6) 15k+18+2k-18 1M (k−9)(5k+6) 17k or equivalent 1A (k −9)(5k +6) --(3)",
    "html": "<p><img src=\"ms/2022P1zh/Q03.png\" alt=\"MS Q3\"></p>",
@@ -28579,7 +29197,9 @@ window.QB = {
    "qno": 4,
    "title": "第 4 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "因式分解"
+   ],
    "lang": "中文",
    "text": "4. 4. (a) 9c²-6c+1 = (3c−1)2 1A or equivalent (b) (4c+d)2-9c2+6c-1 =(4c+d)2−(9c2−6c+1) =(4c+d)2−(3c−1)² 1M for using the result of (a) 1M =(4c+d+3c−1)(4c+d−(3c−1)) or equivalent 1A = (7c + d − 1)(c + d + 1) --(4)",
    "html": "<p><img src=\"ms/2022P1zh/Q04.png\" alt=\"MS Q4\"></p>",
@@ -28594,7 +29214,9 @@ window.QB = {
    "qno": 5,
    "title": "第 5 題評卷參考（待核對）",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "百分數"
+   ],
    "lang": "中文",
    "text": "5. Let $ x be the cost of the fan. 1M (26%) x = 78 78 x = 0.26 x=300 The selling price of the fan =300+78 1M =$378 Let $ y be the marked price of the fan. (70%)y =378 1M 378 y = 0.7 y=540 1A Thus, the marked price of the fan is $ 540. The marked price of the fan (78)(1+26%) 1M for fraction + 1M for numerator = 1M+1M+1M (26%)(70%) + 1M for denominator =$540 1A --(4)",
    "html": "<p><img src=\"ms/2022P1zh/Q05.png\" alt=\"MS Q5\"></p>",
@@ -28609,7 +29231,9 @@ window.QB = {
    "qno": 6,
    "title": "第 6 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "不等式"
+   ],
    "lang": "中文",
    "text": "6. 6. (a) −2(3x+ 2)> x+10 -6x-4>x+10 -6x-x>10+4 1M for putting x on one side -7x>14 1A x < -2 2x≤-8 x≤-4 Therefore, we have x < -2 or x ≤-4. 1A Thus, the solution of (*) is x < -2 . (b) -3 1A --(4)",
    "html": "<p><img src=\"ms/2022P1zh/Q06.png\" alt=\"MS Q6\"></p>",
@@ -28624,7 +29248,9 @@ window.QB = {
    "qno": 7,
    "title": "第 7 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "變換與對稱"
+   ],
    "lang": "中文",
    "text": "7. 1A 7. (a) The coordinates of S' are (5, 12) 1A The coordinates of T' are (-3, 7) The slope of S'T' (b) 12-7 1M 5-(-3) 5 1A 0.625 8 --(4)",
    "html": "<p><img src=\"ms/2022P1zh/Q07.png\" alt=\"MS Q7\"></p>",
@@ -28639,7 +29265,9 @@ window.QB = {
    "qno": 8,
    "title": "第 8 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "平面幾何"
+   ],
    "lang": "中文",
    "text": "8. ∠ACB=∠CAD (a) (alt. ∠s, AD// BC) [(内)錯角，AD//BC] 8. ∠CAD=∠ADE (alt. ∠s, AC // ED) [(内)錯角，AC//ED] ∠ACB=∠ADE (given) [已知] ∠ABC=∠AED (given) [已知] AB = AE (AAS) ∆ABC ≡∆AED Marking Scheme: Case 1 2 Any correct proof with correct reasons. 1 Case 2 Any correct proof without reasons. (b) ∠BAC 1M =∠DAE = 87° ∠ACB =180°-∠BAC-∠ABC =180°-87°-39° = 54° ∠CAD =∠ACB = 54° Note that AC = AD. ∠ACD =∠ADC 180°-∠CAD 1M 2 180°-54° 2 1A = 63° --(5)",
    "html": "<p><img src=\"ms/2022P1zh/Q08.png\" alt=\"MS Q8\"></p>",
@@ -28654,7 +29282,9 @@ window.QB = {
    "qno": 9,
    "title": "第 9 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "統計"
+   ],
    "lang": "中文",
    "text": "9. 9. (a) 12 1A (b) Note that a = 3 and b = 5. The mean 12(3)+17(9)+22(5)+27(3) 1M 20 1A = 19 minutes (c) The required probability 12 1M for numerator 20 3 1A 0.6 5 --(5)",
    "html": "<p><img src=\"ms/2022P1zh/Q09.png\" alt=\"MS Q9\"></p>",
@@ -28669,7 +29299,9 @@ window.QB = {
    "qno": 10,
    "title": "第 10 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "變分"
+   ],
    "lang": "中文",
    "text": "10. 1A 10. (a) Let f(x) = ax2+ bx, where a and b are non-zero constants 1M So, we have 16a + 4b = 96 and 25a -5b =15. for either substitution 1A for both correct Solving, we have a = 3 and b = 12. Thus, we have f(x) = 3x2 + 12x . --(3) 1A (b) The x-intercepts of the graph of y = 8f(x) are 0 and -4. for both correct --(1) (c) The equation 3x2+ 12x – k = 0 has two distinct real roots. 122 −4(3)(−k)> 0 1M k>-12 1A --(2)",
    "html": "<p><img src=\"ms/2022P1zh/Q10.png\" alt=\"MS Q10\"></p>",
@@ -28684,7 +29316,10 @@ window.QB = {
    "qno": 11,
    "title": "第 11 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "統計",
+    "幹葉圖"
+   ],
    "lang": "中文",
    "text": "11. 1M 11. (a) 36-(20+ a)=14 1A a=2 30+b=31 1A b=1 --(3) (b) (i) The original mode 1M =36 either one The new mode =36 f.t. 1A Thus, there is no change in the mode of the distribution. (ii) There are two cases. Case 1: The player of age 17 leaves the football team. The standard deviation of the distribution 1M ≈7.162537194 Case 2: The player of age 43 leaves the football team. either one The standard deviation of the distribution ≈7.132307207 Thus, the greatest possible standard deviation of the distribution 1A f.t. is 7.16. --(4)",
    "html": "<p><img src=\"ms/2022P1zh/Q11.png\" alt=\"MS Q11\"></p>",
@@ -28699,7 +29334,9 @@ window.QB = {
    "qno": 12,
    "title": "第 12 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "圓的方程"
+   ],
    "lang": "中文",
    "text": "12. 12. (a) The coordinates of G 154 128 1M = 2 2 = (77,64) The distance between G and H =√(77−65)²+(64−48)² 1M =20 1A --(3) (b) (i) GH is perpendicular to GP. 1M (ii) The radius of C 2 154 2 128 -224 1M 十 2 2 =99 HP2=GH2}+GP2} 1M HP2=202+992 HP=101 The perimeter of ∆GHP = GH + GP + HP =20+99+101 1A =220 --(4)",
    "html": "<p><img src=\"ms/2022P1zh/Q12.png\" alt=\"MS Q12\"></p>",
@@ -28714,7 +29351,10 @@ window.QB = {
    "qno": 13,
    "title": "第 13 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "立體圖形",
+    "求積法"
+   ],
    "lang": "中文",
    "text": "13. 1M 13. (a) The ratio of the volume of the smaller sphere to the volume of the larger sphere is 8 : 27. The volume of the smaller sphere 8 4 -π(9) 3 1M 二 27 3 = 288π cm³ 1A --(3) (b) The volume of A 1 π(62)(10) 1M Ⅱ 3 =120π cm³ The volume of B 4 π(9)3-−120π 1M =288π+ 3 =1140πcm³ The volume of B The volume of A 1140π 1M 120π 19 2 either one The base radius of B The base radius of A 3 12 = 6 =8 19 ≠ 2 So, A and B are not similar. 1A f.t. Thus, the claim is not correct. -(4)",
    "html": "<p><img src=\"ms/2022P1zh/Q13.png\" alt=\"MS Q13\"></p>",
@@ -28729,7 +29369,9 @@ window.QB = {
    "qno": 14,
    "title": "第 14 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "多項式"
+   ],
    "lang": "中文",
    "text": "14. 1M 14. (a) Let p(x) = (mx + n)(x2− 2x + 3) + x +13 , where m and n are constants. Therefore, we have p(x) = mx3 + (n− 2m)x2 + (3m − 2n + 1)x + 3n +13 . 1M So, we have m = 2 and 3n+13 =-20. for either one Solving, we have m = 2 and n = −11. Hence, we have p(x) = 2x3-15x2+ 29x-20. 1A Thus, we have a = -15 and b = 29. for both correct --(3) (b) p(5) 1M =2(5)3−15(5)²+29(5)−20 =0 1A f.t. Thus, x -5 is a factor of p(x) --(2) (c) p(x)= 0 (x−5)(2x2-5x+4)=0 1M x-5=0or 2x2-5x+4=0 (-5)2-4(2)(4) 1M =-7 <0 So, the quadratic equation 2x2- 5x + 4 = 0 has no real roots. Hence, the quadratic equation 2x²- 5x + 4 = 0 has no irrational roots. Note that 5 is not an irrational number. Therefore, the equation p(x) = 0 has no irrational roots. 1A f.t. Thus, the claim is disagreed. --(3)",
    "html": "<p><img src=\"ms/2022P1zh/Q14.png\" alt=\"MS Q14\"></p>",
@@ -28744,7 +29386,9 @@ window.QB = {
    "qno": 15,
    "title": "第 15 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "排列與組合"
+   ],
    "lang": "中文",
    "text": "15. 15. (a) The required probability C20C12 1M for numerator = C{222} 54 1A r.t. 0.406 133 The required probability 10 12 11 9 for 6pP_{1P2P{3P{4} =6 1M 22 21 19 20 54 1A r.t. 0.406 二 133 --(2) The required probability (b) 54 =1- 1M for 1-(a) 133 79 1A r.t. 0.594 133 The required probability C{30C1²2 C10C{12 C10 C12 1M for p5 + p6 + P 7 + P8 C222 C222 = + + 十 C2222 C222 79 r.t. 0.594 1A = 133 --(2)",
    "html": "<p><img src=\"ms/2022P1zh/Q15.png\" alt=\"MS Q15\"></p>",
@@ -28759,7 +29403,9 @@ window.QB = {
    "qno": 16,
    "title": "第 16 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "二次函數"
+   ],
    "lang": "中文",
    "text": "16. 16. (a) g(x) =3x2+12kx+16k2+8 =3(x2+4kx)+16k2+8 =3(x2+4kx+4k2)+4k2+8 1M =3(x+2k)2+4k2+8 Thus, the coordinates of the vertex are (-2k, 4k² + 8). 1A --(2) (b) The coordinates of B are (2k, 8k²+16) 1M Note that AM : MB =1:3. The coordinates of M 3(-2k)+(2k) 3(4k2+8)+(8k2+16) 1M 二 1+3 1+3 =(−k,5k²+10) 1A --(3)",
    "html": "<p><img src=\"ms/2022P1zh/Q16.png\" alt=\"MS Q16\"></p>",
@@ -28774,7 +29420,9 @@ window.QB = {
    "qno": 17,
    "title": "第 17 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "一元二次方程"
+   ],
    "lang": "中文",
    "text": "17. 1M 17. (a) Note that α +β =-c and αβ=-9 for either one a2 + β2 = (α + β)2 − 2αβ 1M = (-c)2-2(-9) = c2+18 1A --(3) (b) α2+ β2−c2= 85−(2+ β2) 1M c2+18-c2=85-(c2+18) c2=49 Note that the 1st term and the common difference of the sequence are 49 and 18 respectively. n (2(49)+18(n-1))>2×106 1M 2 9n2+40n-2×106>0 −40+√40²-4(9)(-2×106) −40-√40²−4(9)(-2×106) 1M n < or n> 2(9) 2(9) n <-473.6319808 or n> 469.1875364 1A Thus, the least value of n is 470. --(4)",
    "html": "<p><img src=\"ms/2022P1zh/Q17.png\" alt=\"MS Q17\"></p>",
@@ -28789,7 +29437,10 @@ window.QB = {
    "qno": 18,
    "title": "第 18 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "三角比",
+    "平面幾何"
+   ],
    "lang": "中文",
    "text": "18. QR2= PQ2+ PR2−2(PQ)(PR)cos∠QPR 18. (a) 1M QR2=302+252-2(30)(25)cos95° QR≈40.69070673 QR ≈ 40.7 cm 1A r.t. 40.7 cm Thus, the length of QR is 40.7 cm. sin∠PQRsin∠QPR (ii) 1M PR QR sin 95° sin ∠PQR 2 25 40.69070673 or ∠PQR≈142.2619063°(rejected) ∠PQR≈37.73809375° r.t. 37.7° Thus, we have ∠PQR ≈ 37.7° 1A --(4) (b) PM²=PQ2+QM^2-2(PQ)(QM)cos∠PQR 2 40.69070673 40.69070673 PM2≈302+ -2(30) cos37.73809375° 2 2 PM ≈18.66993831 cm Let D and N be the projections of R and M on the horizontal ground respectively. MN 1 RD 1M = 2 1 PRsin 70° = 2 1 (25) sin 70° = 2 ≈11.74615776 cm Note that the angle between PM and the horizontal ground is ∠MPN. 1M MN sin ∠MPN = PM 11.74615776 sin ∠MPN ≈ 18.66993831 ∠MPN≈38.98730493° ∠MPN < 40° 1A f.t. Thus, the claim is not correct. --(3)",
    "html": "<p><img src=\"ms/2022P1zh/Q18.png\" alt=\"MS Q18\"></p>",
@@ -28804,7 +29455,9 @@ window.QB = {
    "qno": 19,
    "title": "第 19 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "圓的方程"
+   ],
    "lang": "中文",
    "text": "19. 19. (a) The slope of AG 112-12 83-158 -4 = 3 The required equation is -4 y-12= (x-158) 1M 3 4x+3y-668=0 1A or equivalent --(2) (b) The radius of C is 75. Since 83 + 75 = 158, AP is vertical or AQ is vertical. So, the coordinates of P or the coordinates of Q are (158, 112). 1M Note that ∆AGP ≈ ∆AGQ and AG ⊥ PQ. 3 Hence, the slope of PQ is 4 3 (x−158). The equation of PQ is y -112 = 4 3 1M Solving y−112= (x−158) and 4x+3y-668 = 0, we have 4 x =110 and y=76. 1A Thus, the coordinates of the point of intersection of AG and PQ are (110, 76). --(3) (c) Let I and r be the centre and the radius of the inscribed circle of ∆ APQ respectively. Note that AP = AQ and I lies on AG. The x-coordiante of I 3r accept 110+ 1M =158-r 5 The y-coordinate of I 668 -4 (158−r)+ = 3 3 4r +12 = 3 4r 158-r, +12 So, the coordinates of I are 3 The distance between I and the point of intersection of AG and PQ is r. 2 4r 3r = r² +12 -76 ((158−r)-110)2+ accept 158-r=110+ 1M 3 5 16 800 r+ 6 400 = 0 9 3 r²-150r+3600=0 1M r =30 or r =120 (rejected) Therefore, we have r = 30. Hence, the coordinates of I are (128, 52). Thus, the required equation is (x -128)²+ (y -52)2 = 30². x2+y2-256x-104y+18188=0 1A --(4)",
    "html": "<p><img src=\"ms/2022P1zh/Q19.png\" alt=\"MS Q19\"></p>",
@@ -28819,7 +29472,9 @@ window.QB = {
    "qno": 1,
    "title": "第 1 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "指數定律"
+   ],
    "lang": "中文",
    "text": "1. 1. (aβ3)(a−-10 β{20}) 给(a{}){}=a^{}k或(a){}=a^'^'} 1M kaβ 1 1M 给c_{P{^{}=_^{P+}或_^{}} β23} d a 1A --(3) 4-3a",
    "html": "<p><img src=\"ms/2021P1zh/Q01.png\" alt=\"MS Q1\"></p>",
@@ -28834,7 +29489,9 @@ window.QB = {
    "qno": 2,
    "title": "第 2 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "主項變換"
+   ],
    "lang": "中文",
    "text": "2. =5 2. b 3a=5b 1M 1M 4-5b a= 3 或等價 1A 4-3a =5 b 3a 4 =5 b b 5 1M+1M -b 4 5- a= 3 b 4 5b a= 3 3 1A 或等價 -(3)",
    "html": "<p><img src=\"ms/2021P1zh/Q02.png\" alt=\"MS Q2\"></p>",
@@ -28849,7 +29506,9 @@ window.QB = {
    "qno": 3,
    "title": "第 3 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "因式分解"
+   ],
    "lang": "中文",
    "text": "3. 6x²+xy-2y² 3. (a) =(2x-y)(3x+2y) 1A 或等價 (b) 8x-4y-6x²-xy+2y² 1M 給利用(a)的结果 =4(2x-y)-(2x-y)(3x+2y) =(2x-y)(4-3x-2y) 1A 或等價 --(3)",
    "html": "<p><img src=\"ms/2021P1zh/Q03.png\" alt=\"MS Q3\"></p>",
@@ -28864,7 +29523,9 @@ window.QB = {
    "qno": 4,
    "title": "第 4 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "一元一次不等式"
+   ],
    "lang": "中文",
    "text": "4. 7(x-2) 4. (a) +11>3(x-1) 5 7x-14>15x-70 -8x>-56 1M 給將 x 放在一邊 x<7 IA x+4≥0 x≥-4 因此，所求的範圍為 -4≤x<7· 1A (b) 6 1A -(4) 44 Provided by dse.life",
    "html": "<p><img src=\"ms/2021P1zh/Q04.png\" alt=\"MS Q4\"></p>",
@@ -28879,7 +29540,9 @@ window.QB = {
    "qno": 5,
    "title": "第 5 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "一元一次方程"
+   ],
    "lang": "中文",
    "text": "5. 設 x為該女生擁有貼紙的數目， 5. 則該男生擁有貼紙的數目為3x。 1A 2(3x-20)=x+20 1M+1A 6x-40=x+20 x=12 因此，該男生和該女生擁有貼紙的總數為48。 1A 設x及y分別為該女生擁有貼紙的數目及該男生擁有貼紙的數目 則可得 3x=y 及 2(y-20)=x+20。 1A+1A 2(3x-20)=x+20 1M 6x-40=x+20 x=12 y=36 因此，該男生和該女生擁有貼紙的總數為48。 1A 設n為該男生和該女生擁有貼紙的總數， 3 則可得2 1 n-20 n+20。 = 1M+1A+1A 4 4 5 n=60 4 n=48 1A 因此，該男生和該女生擁有貼紙的總數為48。 -(4) i. 設 $x 為該襯衣的標價。 該襯衣的成本 =$(x-80) 1M 該襯衣的售價 =(90%)x IM =$0.9x 0.9x=(x-80)(1+30%) 1M 0.9x=1.3x-104 x=260 1A 因此，該襯衣的標價為$260。 設$c 為該襯衣的成本。 該襯衣的標價 =$(c+80) 1M 該襯衣的售價 =(c+80)(90%) 1M =$(0.9c+72) 0.9c+72=(1+30%)c 1M 0.9c+72=1.3c c=180 因此，該襯衣的標價為$260。 1A -(4) 45 Provided by dse.life",
    "html": "<p><img src=\"ms/2021P1zh/Q05.png\" alt=\"MS Q5\"></p>",
@@ -28894,7 +29557,9 @@ window.QB = {
    "qno": 6,
    "title": "第 6 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "百分數"
+   ],
    "lang": "中文",
    "text": "6. D(49) 6. 31. A(65)",
    "html": "<p><img src=\"ms/2021P1zh/Q06.png\" alt=\"MS Q6\"></p>",
@@ -28909,7 +29574,9 @@ window.QB = {
    "qno": 7,
    "title": "第 7 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "坐標幾何"
+   ],
    "lang": "中文",
    "text": "7. A(76) 7. D(41) 32.",
    "html": "<p><img src=\"ms/2021P1zh/Q07.png\" alt=\"MS Q7\"></p>",
@@ -28924,7 +29591,9 @@ window.QB = {
    "qno": 8,
    "title": "第 8 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "平面幾何"
+   ],
    "lang": "中文",
    "text": "8. 8. B (29) 33. C (30)",
    "html": "<p><img src=\"ms/2021P1zh/Q08.png\" alt=\"MS Q8\"></p>",
@@ -28939,7 +29608,9 @@ window.QB = {
    "qno": 9,
    "title": "第 9 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "統計"
+   ],
    "lang": "中文",
    "text": "9. A(62) 9. C (46) 34. 10. C (68) A(33) 35. 11. A(54) C(73) 36.",
    "html": "<p><img src=\"ms/2021P1zh/Q09.png\" alt=\"MS Q9\"></p>",
@@ -28954,7 +29625,9 @@ window.QB = {
    "qno": 10,
    "title": "第 10 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "變分"
+   ],
    "lang": "中文",
    "text": "10. 10. (a) 設 f(x)=m(x+4)²+n其中m及 n 均為為非零的常数。 IM 給任何一項代換 1M 由於f(-3)=0及f(2)=105，可得m+n=0及36m+n=105。 求解後，可得 m=3 及n=-3。 1A 因此，可得 f(0)=45。 --(3) (a)+3 1M (b) (i) 48 (ii) 對 f(x)+3=0，可得 IM 3(x+4)²=0 1A x=-4 因此，G的x截距為-4。 --(3)",
    "html": "<p><img src=\"ms/2021P1zh/Q10.png\" alt=\"MS Q10\"></p>",
@@ -28969,7 +29642,9 @@ window.QB = {
    "qno": 11,
    "title": "第 11 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "統計"
+   ],
    "lang": "中文",
    "text": "11. 11. (a) 平均值 1(15)+2(9)+3(2)+4(5)+5(4)+6(2)+7(5) 1M 15+9+2+5+4+2+5 126 42 =3 1A --(2) (b) 中位数及眾数分別為 2 及1。 1M 給任何一項 因此，該分佈的中位數與眾數不相等· 1A 必須顯示理由 --(2) (c) (i) 42 1A (ii) 11 1A (iii) 10 1A --(3) Provided by dse.life",
    "html": "<p><img src=\"ms/2021P1zh/Q11.png\" alt=\"MS Q11\"></p>",
@@ -28984,7 +29659,9 @@ window.QB = {
    "qno": 12,
    "title": "第 12 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "多項式"
+   ],
    "lang": "中文",
    "text": "12. 12. B (74) B (27) 37. 13. C (83) B (34) 38.",
    "html": "<p><img src=\"ms/2021P1zh/Q12.png\" alt=\"MS Q12\"></p>",
@@ -28999,7 +29676,9 @@ window.QB = {
    "qno": 13,
    "title": "第 13 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "圓的方程"
+   ],
    "lang": "中文",
    "text": "13. 13. (a) 留意 G 的坐標為 (6,8) 。 OG =√(6-0)²+(8-0)²2 1M =10 1A -(2) (b) C 的半徑 1 √(-12)2+(-16)²+4(69) I 2 =13 >OG (藉(a)) 因此，O位於C以内。 必須顯示理由 1A -(1) (c) 由於 M 及 N 均位於 P 上，可得 OM = GM 及 ON = GN 。 留意 GM = GN。 故此，可得 OM = GM = GN = ON。 由此，四邊形OMGN為一菱形。 設Q為OG 與 MN 的交點。 GQ 1 OG H 2 1 (10) (藉(a)) 2 1M 給利用(a)的結果 =5 再者留意 ∠GQM=90°及 GM=13。 MQ =√GM^2-GQ{2} 1M =√132-52 =12 四邊形 OMGN 的面積 (GQ)(MQ) =4 1M (5)(12) =4 =120 1A -(4) 49 Provided by dse.life",
    "html": "<p><img src=\"ms/2021P1zh/Q13.png\" alt=\"MS Q13\"></p>",
@@ -29014,7 +29693,10 @@ window.QB = {
    "qno": 14,
    "title": "第 14 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "立體圖形",
+    "求積法"
+   ],
    "lang": "中文",
    "text": "14. D (37) 14. A(52) 39. A(31) 15. C (43) 40. C (33) A(34) 41. 16.",
    "html": "<p><img src=\"ms/2021P1zh/Q14.png\" alt=\"MS Q14\"></p>",
@@ -29029,7 +29711,10 @@ window.QB = {
    "qno": 15,
    "title": "第 15 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "排列與組合",
+    "概率"
+   ],
    "lang": "中文",
    "text": "15. 15. (a) 所求的數目 = P10 1A =3628800 -(1) (b) 所求的概率 71C{3}31 1M 給分母 + 1M 给 73 1M+1M 3 628 800 1693 440 3 628 800 7 接受答案準確至 0.467 1A 1 15 --(3)",
    "html": "<p><img src=\"ms/2021P1zh/Q15.png\" alt=\"MS Q15\"></p>",
@@ -29044,7 +29729,9 @@ window.QB = {
    "qno": 16,
    "title": "第 16 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "直線方程"
+   ],
    "lang": "中文",
    "text": "16. 16. (a) L4的斜率 6-3 2-0 3 1 2 L1的方程為 3 y-3= (x-0) 2 1M 3x-2y+6=0 1A 任何一項 L2的方程為 -2 任何一 y-6= (x-2) 3 2x+3y-22=0 3x-2y+6≥0 因此，該不等式組為 2x+3y-22≤0 1A 或等價 y≥0 --(3) (b) 留意 R 的頂點為點 (-2,0)、點 (2,6) 及點 (11,0)。 當 x=-2 及y=0 時，可得 8x-5y=-16。 當 x=2 及 y=6 時，可得 8x-5y=-14。 1M 當 x=11 及y=0 時，可得 8x-5y=88。 --任何一項 因此，8x-5y的最小值為-16。 1A --(2) 51 Provided by dse.life",
    "html": "<p><img src=\"ms/2021P1zh/Q16.png\" alt=\"MS Q16\"></p>",
@@ -29059,7 +29746,9 @@ window.QB = {
    "qno": 17,
    "title": "第 17 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "數列"
+   ],
    "lang": "中文",
    "text": "17. D(62) 42. B (50) 17. D(44) B (72) 43. 18.",
    "html": "<p><img src=\"ms/2021P1zh/Q17.png\" alt=\"MS Q17\"></p>",
@@ -29074,7 +29763,10 @@ window.QB = {
    "qno": 18,
    "title": "第 18 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "平面幾何",
+    "求積法"
+   ],
    "lang": "中文",
    "text": "18. 18. (a) 設 P 為 AD 上的一點使得 AB//PC。 藉正弦公式，可得 CP CD 1M sin∠CDP sin∠CPD 45 CD sin 50° sin 70° CDN36.68433611cm 接受答案準確至 36.7cm 1A CD≈36.7 cm -(2) (b) (i) AE = ABcos ∠BAE = 45 cos 50°≈28.92544244 cm DE= BC+ CDcos ∠CDE≈ 40 + 36.68433611cos 70°≈ 52.54678189cm AD =√AE2}+DE² 1M ≈√(28.92544244)²+(52.54678189)2 ≈ 59.98204321 cm 任何一項 留意∠ABC=90°。 AC =√AB{2+BC^{2} =√45²2+402 ≈ 60.20797289 cm 藉餘弦公式，可得 AC{2}+AD{2}-CD{2} cos∠CAD= 1M 2(AC)(AD) (60.20797289)2+(59.98204321)2-(36.68433611)2 cos∠CAD≈ 2(60.20797289)(59.98204321) ZCAD≈35.54210789° ∠CAD≈35.5° 接受答案準確至 35.5° 1A (ii) 設 Q 為由 A 至 CD 的垂足。 平面 ACD 與平面 BCDE 間的交角為 ∠AQE。 1M (AQ)(CD)_(AC)(AD)sin∠CAD 2 2 (AQ)(36.68433611) (60.20797289)(59.98204321)sin35.54210789° R 2 2 AQ≈57.22631076 cm AE sin∠AQE= AQ 28.92544244 sin∠AQE≈ 57.22631076 ∠AQE≈30.36169732° 由於 ∠AQE>30°，因此平面ACD 與平面 BCDE 間的 交角超過 30°· 必須顯示理由 1A -(5) 53 Provided by dse.life",
    "html": "<p><img src=\"ms/2021P1zh/Q18.png\" alt=\"MS Q18\"></p>",
@@ -29089,7 +29781,9 @@ window.QB = {
    "qno": 19,
    "title": "第 19 題評卷參考",
    "section": "Paper 1 MS",
-   "tags": [],
+   "tags": [
+    "二次函數"
+   ],
    "lang": "中文",
    "text": "19. D(36) C(76) 44. 19. 45. B (41) C (34) 20. D (40) 21. A(56) 22. B (65) 23. D (64) 24. C (36) 25. 括號内數字為答對百分率。 註： 56 Provided by dse.life",
    "html": "<p><img src=\"ms/2021P1zh/Q19.png\" alt=\"MS Q19\"></p>",

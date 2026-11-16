@@ -116,13 +116,23 @@ function questionHref(q, topic) {
   const params = new URLSearchParams();
   params.set("subject", q.subject);
   if (topic && topic !== ALL && topic !== PLACE) params.set("tag", topic);
+  // 英文卷要帶 lang，否則中英文兩行會開同一份（閱讀器用 lang 過濾）
+  if (/英文|_EN|\(EN\)|ENG/i.test(String(q.file || ""))) params.set("lang", "en");
   return `${BANK_URL}?${params.toString()}${hashForQuestion(q)}`;
 }
 
 function questionsForTopic(sid, topic) {
   const rows = bankQuestions(sid);
-  if (topic === ALL) return rows;
-  return rows.filter((q) => (q.tags || []).includes(topic));
+  const pick = topic === ALL ? rows : rows.filter((q) => (q.tags || []).includes(topic));
+  // 同一題的「題目」與「解答」帶同一組 tags → 只保留題目；中英文卷係兩份，唔可以合併
+  const langOf = (q) => (/英文|_EN|\(EN\)|ENG/i.test(String(q.file || "")) ? "en" : "zh");
+  const byKey = new Map();
+  for (const q of pick) {
+    const k = `${q.year}|${q.paper}|${q.qno}|${langOf(q)}`;
+    const cur = byKey.get(k);
+    if (!cur || (cur.type !== "題目" && q.type === "題目")) byKey.set(k, q);
+  }
+  return [...byKey.values()];
 }
 
 function optionsFor(key) {
@@ -243,6 +253,7 @@ function rowHtml(r) {
 function questionRowHtml(q, topic) {
   const href = questionHref(q, topic);
   const pLabel = `Paper ${paperNo(q.paper)}`;
+  const isEn = /英文|_EN|\(EN\)|ENG/i.test(String(q.file || ""));
   const topicTags = (q.tags || []).slice(0, 3)
     .map((t) => `<span class="tag topic">${esc(t)}</span>`)
     .join("");
@@ -254,6 +265,7 @@ function questionRowHtml(q, topic) {
           <span class="tag subj">${esc(q.subject)}</span>
           <span class="tag paper">${esc(pLabel)}</span>
           <span class="tag q">Q${q.qno}</span>
+          <span class="tag lang">${isEn ? "English" : "中文"}</span>
           ${topicTags}
         </span>
         <span class="paper-title">${esc(q.subject)} ${pLabel} Q${q.qno}</span>
@@ -280,12 +292,15 @@ function emptyHtml(msg) {
 }
 
 function sortRows(rows) {
+  // 甲／乙 用 collation 唔穩定（實測會乙排喺甲前），用固定次序
+  const P = { 卷一甲: 1, 卷一乙: 2, 卷一: 1, 卷二: 2, 卷三: 3, 卷四: 4, 卷五: 5 };
+  const pkey = (p) => P[String(p)] ?? 9;
   return rows.sort(
     (a, b) =>
       b.year - a.year ||
+      pkey(a.paper) - pkey(b.paper) ||
       String(a.lang).localeCompare(String(b.lang), "zh-Hant") ||
-      a.name.localeCompare(b.name, "zh-Hant") ||
-      a.paper.localeCompare(b.paper, "zh-Hant")
+      a.name.localeCompare(b.name, "zh-Hant")
   );
 }
 

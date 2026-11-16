@@ -420,6 +420,23 @@ body.reel-open { overflow: hidden; }
 }
 .reel-link:hover { background: rgba(255, 255, 255, 0.06); }
 .reel-link.ok { font-weight: 600; }
+.reel-search {
+  padding: 10px 16px 4px;
+}
+.reel-search input {
+  width: 100%;
+  box-sizing: border-box;
+  font: inherit;
+  font-size: 15px;
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.06);
+  border: 0.5px solid var(--hair);
+  border-radius: 10px;
+  padding: 9px 12px;
+  outline: none;
+}
+.reel-search input:focus { border-color: var(--acc-ink); }
+.reel-search input::placeholder { color: rgba(255, 255, 255, 0.4); }
 .reel-window {
   position: relative;
   height: 220px;

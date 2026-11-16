@@ -419,33 +419,62 @@ function render() {
 const reel = $("reel");
 const reelWheel = $("reelWheel");
 const reelTitle = $("reelTitle");
+const reelSearchWrap = $("reelSearchWrap");
+const reelSearch = $("reelSearch");
 const ITEM_H = 44;
 let reelKey = null;
 let reelOpts = [];
+let reelFiltered = [];  // 搜尋過濾後嘅選項（搜尋只喺課題選擇器出現）
 let reelIndex = 0;
 let reelSnapTimer = null;
 
 let reelInvoker = null;
 
+function renderReelWheel() {
+  const idx = Math.max(0, reelFiltered.findIndex((o) => String(o.value) === String(reelOpts[reelIndex]?.value)));
+  reelWheel.innerHTML =
+    `<div class="reel-pad"></div>` +
+    reelFiltered.map((o, i) => `<div class="reel-item${i === idx ? " on" : ""}" data-i="${i}">${o.label}</div>`).join("") +
+    (reelFiltered.length ? "" : `<div class="reel-item" style="opacity:.5">無符合課題</div>`) +
+    `<div class="reel-pad"></div>`;
+  reelIndex = idx;
+  reelWheel.scrollTop = idx * ITEM_H;
+}
+
+reelSearch.addEventListener("input", () => {
+  const q = reelSearch.value.trim().toLowerCase();
+  reelFiltered = q
+    ? reelOpts.filter((o) => String(o.label).toLowerCase().includes(q))
+    : reelOpts.slice();
+  renderReelWheel();
+});
+reelSearch.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    e.preventDefault();
+    commitReel();
+  }
+});
+
 function openReel(key, invoker) {
   reelKey = key;
   reelInvoker = invoker || null;
   reelOpts = optionsFor(key);
+  reelFiltered = reelOpts.slice();
   const cur = key === "topic" ? state.topic : state[key];
   let idx = reelOpts.findIndex((o) => String(o.value) === String(cur));
   if (idx < 0) idx = 0;
   reelIndex = idx;
   reelTitle.textContent = LABEL[key] || key;
 
-  reelWheel.innerHTML =
-    `<div class="reel-pad"></div>` +
-    reelOpts.map((o, i) => `<div class="reel-item${i === idx ? " on" : ""}" data-i="${i}">${o.label}</div>`).join("") +
-    `<div class="reel-pad"></div>`;
+  // 搜尋 bar 只喺「按課題」模式揀課題時出現
+  reelSearchWrap.hidden = key !== "topic";
+  reelSearch.value = "";
+
+  renderReelWheel();
 
   reel.hidden = false;
   document.body.classList.add("reel-open");
   requestAnimationFrame(() => {
-    reelWheel.scrollTop = idx * ITEM_H;
     highlightReel();
     $("reelDone").focus();
   });
@@ -463,13 +492,13 @@ function closeReel() {
 
 function highlightReel() {
   const i = Math.round(reelWheel.scrollTop / ITEM_H);
-  reelIndex = Math.max(0, Math.min(reelOpts.length - 1, i));
+  reelIndex = Math.max(0, Math.min(reelFiltered.length - 1, i));
   reelWheel.querySelectorAll(".reel-item").forEach((el, n) => el.classList.toggle("on", n === reelIndex));
 }
 
 function commitReel() {
   if (reelKey == null) return;
-  const opt = reelOpts[reelIndex];
+  const opt = reelFiltered[reelIndex];
   if (!opt) return closeReel();
   const v = opt.value;
 

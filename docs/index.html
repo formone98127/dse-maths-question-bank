@@ -268,6 +268,13 @@ footer { text-align:center; color:var(--mut); font-size:11.5px; padding:4px 0 12
 .stemleaf .slR .slr > span { width:1.1em; text-align:center; margin-right:1.25em; }
 .stemleaf .slR .slr > span:last-child { margin-right:0; }
 .stemleaf .slh { font-size:.94em; height:1.809em; line-height:1.809em; color:var(--mut); }
+
+/* 圖片點擊放大（MS 裁圖／題目圖） */
+#qbody img{cursor:zoom-in}
+#imgzoom{position:fixed;inset:0;background:rgba(0,0,0,.94);display:none;z-index:9999;overflow:auto;cursor:zoom-out}
+#imgzoom.open{display:block}
+#imgzoom img{width:100%;max-width:none;display:block}
+#imgzoom .xz{position:fixed;top:10px;right:14px;font-size:20px;color:#fff;background:#0009;border:1px solid #ffffff55;border-radius:8px;padding:6px 12px;cursor:pointer}
 </style>
 </head>
 <body>
@@ -295,7 +302,7 @@ footer { text-align:center; color:var(--mut); font-size:11.5px; padding:4px 0 12
 </main>
 <footer>DSE 題庫（數學 · 經濟 · 理科）— 內容僅供學習用途</footer>
 
-<script src="data.js?v=202611151852"></script>
+<script src="data.js?v=202611160254"></script>
 <script>
 const QS = window.QB.questions;
 const $ = s => document.querySelector(s);
@@ -901,6 +908,27 @@ if (!location.hash) {
   openFromHash();
 }
 </script>
-<script src="pwa.js?v=202611151852-v20261112165848"></script>
+<script src="pwa.js?v=202611160254-v20261112165848"></script>
+
+<script>
+/* 圖片點擊放大 */
+(function(){
+  const Z=document.createElement('div');
+  Z.id='imgzoom';
+  Z.innerHTML='<button class="xz" aria-label="關閉">✕ 關閉</button>';
+  document.body.appendChild(Z);
+  Z.addEventListener('click',()=>Z.classList.remove('open'));
+  document.addEventListener('click',e=>{
+    const im=e.target.closest('#qbody img');
+    if(!im) return;
+    e.preventDefault();
+    Z.querySelectorAll('img').forEach(x=>x.remove());
+    const big=new Image();
+    big.src=im.currentSrc||im.src;
+    Z.appendChild(big);
+    Z.classList.add('open');
+  });
+})();
+</script>
 </body>
 </html>

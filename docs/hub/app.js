@@ -27,6 +27,8 @@ const btns = {
 };
 
 const LABEL = { subject: "科目", year: "年份", paper: "卷別", topic: "課題" };
+const YEAR_LABEL = { PP: "練習卷", SP: "樣本試卷" };
+const yNum = (y) => { const n = Number(y); return Number.isFinite(n) ? n : 0; };
 
 function shortName(name) {
   return String(name).replace(/（.*?）/g, "").replace(/\s*\/.*/, "").trim();
@@ -152,7 +154,7 @@ function optionsFor(key) {
     return head.concat(subjectsInDb().map((s) => ({ value: s.id, label: s.name })));
   }
   if (key === "year") {
-    return head.concat(uniq(rows.map((r) => r.year)).sort((a, b) => b - a).map((y) => ({ value: String(y), label: String(y) })));
+    return head.concat(uniq(rows.map((r) => r.year)).sort((a, b) => yNum(b) - yNum(a)).map((y) => ({ value: String(y), label: YEAR_LABEL[y] || String(y) })));
   }
   if (key === "paper") {
     return head.concat(uniq(rows.map((r) => r.paper)).map((p) => ({ value: p, label: p })));
@@ -297,7 +299,7 @@ function sortRows(rows) {
   const pkey = (p) => P[String(p)] ?? 9;
   return rows.sort(
     (a, b) =>
-      b.year - a.year ||
+      yNum(b.year) - yNum(a.year) ||
       pkey(a.paper) - pkey(b.paper) ||
       String(a.lang).localeCompare(String(b.lang), "zh-Hant") ||
       a.name.localeCompare(b.name, "zh-Hant")
@@ -307,7 +309,7 @@ function sortRows(rows) {
 function sortQuestions(rows) {
   return rows.sort(
     (a, b) =>
-      b.year - a.year ||
+      yNum(b.year) - yNum(a.year) ||
       paperNo(a.paper).localeCompare(paperNo(b.paper)) ||
       a.qno - b.qno
   );

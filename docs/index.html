@@ -337,8 +337,8 @@ footer { text-align:center; color:var(--mut); font-size:11.5px; padding:4px 0 12
 </main>
 <footer>DSE 題庫（數學）— 內容僅供學習用途</footer>
 
-<script src="data.js?v=20261117135653"></script>
-<script src="answers.js?v=20261117135653"></script>
+<script src="data.js?v=202611180005"></script>
+<script src="answers.js?v=202611180005"></script>
 <script>
 const QS = window.QB.questions;
 const $ = s => document.querySelector(s);
@@ -347,6 +347,9 @@ const pno = p => {
   const m = String(p || '').match(/(\d+[A-Za-z]?)/);
   return m ? m[1].toUpperCase() : '1';
 };
+const YEAR_LABEL = { PP: '練習卷', SP: '樣本試卷' };
+const yLabel = y => YEAR_LABEL[y] || y;
+const yNum = y => { const n = Number(y); return Number.isFinite(n) ? n : 0; };
 const SUBJECT_PREFIX = { '數學': '', '經濟': 'econ', '化學': 'chem', '生物': 'bio', '物理': 'phys', '英語': 'eng' };
 const PREFIX_SUBJECT = { econ: '經濟', chem: '化學', bio: '生物', phys: '物理', eng: '英語' };
 
@@ -708,7 +711,7 @@ function rebuildQlist() {
   }
   qlist = [...byQ.values()].sort((a, b) =>
     (tag || year == null)
-      ? (a.year - b.year || String(a.paper).localeCompare(String(b.paper)) || a.qno - b.qno)
+      ? (yNum(a.year) - yNum(b.year) || String(a.paper).localeCompare(String(b.paper)) || a.qno - b.qno)
       : (a.qno - b.qno)
   );
 }
@@ -726,8 +729,8 @@ function paperBarLabel(q) {
   if (!q) return 'DSE 題庫';
   const sec = shortSection(q.title);
   const base = sec
-    ? `${q.subject} ${q.year} ${q.paper} ${sec}`
-    : `${q.subject} ${q.year} ${q.paper}`;
+    ? `${q.subject} ${yLabel(q.year)} ${q.paper} ${sec}`
+    : `${q.subject} ${yLabel(q.year)} ${q.paper}`;
   return q.qno != null ? `${base} Q${q.qno}` : base;
 }
 function syncBarTitle(q) {
@@ -880,7 +883,7 @@ function fillPosSelect(idx) {
   sel.innerHTML = qlist.map((q, i) => {
     const isPassage = q.type === '篇章';
     const label = tag
-      ? `${i + 1} / ${n}　${q.year} P${pno(q.paper)} ${isPassage ? (q.ref || q.title || '篇章') : 'Q' + q.qno}`
+      ? `${i + 1} / ${n}　${yLabel(q.year)} P${pno(q.paper)} ${isPassage ? (q.ref || q.title || '篇章') : 'Q' + q.qno}`
       : `${i + 1} / ${n}　${isPassage ? (q.title || '篇章') : `第 ${q.qno} 題`}`;
     return `<option value="${i}"${i === cur ? ' selected' : ''}>${esc(label)}</option>`;
   }).join('');
@@ -928,7 +931,7 @@ document.addEventListener('keydown', e => {
 });
 
 function openFromHash() {
-  const m = location.hash.match(/^#(econ|chem|bio|phys|eng)?(\d{4})P(\d+[A-Za-z]?)(?:Q(\d+)|T(\d+))(A)?/i);
+  const m = location.hash.match(/^#(econ|chem|bio|phys|eng)?(\d{4}|PP|SP)P(\d+[A-Za-z]?)(?:Q(\d+)|T(\d+))(A)?/i);
   if (!m) return false;
   const hSubj = m[1] ? (PREFIX_SUBJECT[m[1].toLowerCase()] || '數學') : '數學';
   const passageRef = m[5] ? 'T' + m[5] : null;
@@ -941,7 +944,7 @@ function openFromHash() {
     if (wantSol === expanded || (wantSol && curQ.type === '解答')) return true;
   }
   subj = hSubj;
-  const y = +m[2];
+  const y = /^\d{4}$/.test(m[2]) ? +m[2] : m[2].toUpperCase();
   const p = pToken === '2' ? 'Paper 2'
     : pToken === '1A' ? 'Paper 1A'
     : pToken === '1B' ? 'Paper 1B'
@@ -1025,7 +1028,7 @@ if (!location.hash) {
   }
 }
 </script>
-<script src="pwa.js?v=20261117135653"></script>
+<script src="pwa.js?v=202611180005"></script>
 
 <script>
 /* 圖片點擊放大 */

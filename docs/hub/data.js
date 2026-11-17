@@ -58,6 +58,10 @@ const CATALOG = [
   { id: "math", name: "數學（必修部分）", year: 2012, paper: "卷一", lang: "英文", hash: "#2012P1Q1" },
   { id: "math", name: "數學（必修部分）", year: 2012, paper: "卷二", lang: "中文", hash: "#2012P2Q1" },
   { id: "math", name: "數學（必修部分）", year: 2012, paper: "卷二", lang: "英文", hash: "#2012P2Q1" },
+  /* 樣本試卷 / 練習卷（year 用字串，hub 會顯示「樣本試卷」「練習卷」） */
+  { id: "math", name: "數學（必修部分）", year: "SP", paper: "卷一", lang: "中文", hash: "#SPP1Q1" },
+  { id: "math", name: "數學（必修部分）", year: "PP", paper: "卷一", lang: "中文", hash: "#PPP1Q1" },
+  { id: "math", name: "數學（必修部分）", year: "PP", paper: "卷一", lang: "英文", hash: "#PPP1Q1" },
 ];
 
 /* 按課題：只為資料庫有的科目提供（葉節點對齊電子題庫 tags） */

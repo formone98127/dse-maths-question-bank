@@ -2,17 +2,7 @@
 "use strict";
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-const CACHE = "dsehub-v20261117135653";
-=======
-const CACHE = "dsehub-v20261117135653";
-=======
-const CACHE = "dsehub-v20261117135653";
-=======
-const CACHE = "dsehub-v20261117135653";
->>>>>>> e64f7c8 (2025 P1 圖：Q12a 幹葉圖行距／欄距／分隔線對齊原卷)
->>>>>>> aac36b6 (2025 P1 圖：Q12a 幹葉圖、Q12b 框線圖 100% 照原卷重排（欄距、虛線導引、鬚線不穿框、標籤貼軸）)
+const CACHE = "dsehub-v202611180005";
 const SHELL = [
   "./",
   "./hub/",

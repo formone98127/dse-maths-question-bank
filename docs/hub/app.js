@@ -221,7 +221,16 @@ function optionsFor(key) {
     return head.concat(subjectsInDb().map((s) => ({ value: s.id, label: s.name })));
   }
   if (key === "year") {
-    return head.concat(uniq(rows.map((r) => r.year)).sort((a, b) => yNum(b) - yNum(a)).map((y) => ({ value: String(y), label: YEAR_LABEL[y] || String(y) })));
+    /* 年份清單：catalog + 該科 PDF 目錄（非數學科只有 PDF，靠 catalog 會冇年份可揀） */
+    const yrs = new Set(rows.map((r) => r.year));
+    const sid0 = state.subject !== PLACE && state.subject !== ALL ? state.subject : null;
+    const sidList = sid0 ? [sid0] : pdfSubjects().map((x) => x.id);
+    for (const id of sidList) {
+      const items = (((window.PAPERS || {}).subjects || {})[id] || {}).items || [];
+      for (const it of items) yrs.add(it.y);
+    }
+    return head.concat([...yrs].sort((a, b) => yNum(b) - yNum(a))
+      .map((y) => ({ value: String(y), label: YEAR_LABEL[y] || String(y) })));
   }
   if (key === "paper") {
     return head.concat(uniq(rows.map((r) => r.paper)).map((p) => ({ value: p, label: p })));

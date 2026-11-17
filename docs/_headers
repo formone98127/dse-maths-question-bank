@@ -1,0 +1,41 @@
+# Cloudflare Pages headers — 讓「改完即見」同「圖片長快取」同時成立
+# 問題根源：舊主機對 HTML 一律 max-age=3600，改完要等一小時；這裡改成分層。
+
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
+
+# 每次都會變的資料檔：短 TTL + 重新驗證
+/data.js
+  Cache-Control: public, max-age=60, must-revalidate
+
+/hub/data.js
+  Cache-Control: public, max-age=60, must-revalidate
+
+/sw.js
+  Cache-Control: no-cache
+
+/manifest.webmanifest
+  Cache-Control: public, max-age=300
+
+# 年／卷頁與科目頁：5 分鐘內必見新版
+/math/*
+  Cache-Control: public, max-age=300, must-revalidate
+  X-Robots-Tag: index, follow
+
+/hub/*
+  Cache-Control: public, max-age=300, must-revalidate
+
+# 圖片與 PDF 不會原地改內容 → 長快取
+/*.png
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.jpg
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.svg
+  Cache-Control: public, max-age=31536000, immutable
+
+/papers/*
+  Cache-Control: public, max-age=604800

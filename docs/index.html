@@ -3,8 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>免費 DSE Past Paper 下載｜2012–2025 歷屆試題＋答案題解｜DSE Hub</title>
-<meta name="theme-color" content="#0b1220">
+<title>免費 DSE Past Paper 下載｜2012–2025 數學試題＋Marking Scheme｜DSE Hub</title><meta name="theme-color" content="#0b1220">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
@@ -14,24 +13,21 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="apple-mobile-web-app-title" content="DSE Hub">
 <meta name="application-name" content="DSE Hub">
-<meta name="description" content="免費下載 2012–2025 DSE Past Paper：數學、英文、中文、Chem、Bio、Phy、Econ 歷屆試卷＋答案題解，按年份、課題搜尋，唔使報名即刻開卷。">
-<link rel="canonical" href="https://hkdse.exampaper.cloud/hub/">
+<meta name="description" content="免費下載 2012–2025 DSE 數學 Past Paper：卷一、卷二、中英文卷＋Marking Scheme、答案題解，按年份、課題搜尋，唔使報名即刻開卷。"><link rel="canonical" href="https://hkdse.exampaper.cloud/hub/">
 <link rel="alternate" hreflang="zh-Hant-HK" href="https://hkdse.exampaper.cloud/hub/">
 <link rel="alternate" hreflang="x-default" href="https://hkdse.exampaper.cloud/hub/">
 <meta name="robots" content="index, follow">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="DSE Hub">
 <meta property="og:locale" content="zh_HK">
-<meta property="og:title" content="免費 DSE Past Paper 下載｜2012–2025 歷屆試題＋答案題解｜DSE Hub">
-<meta property="og:description" content="免費下載 2012–2025 DSE Past Paper：數學、英文、中文、Chem、Bio、Phy、Econ 歷屆試卷＋答案題解，按年份、課題搜尋，唔使報名即刻開卷。">
-<meta property="og:url" content="https://hkdse.exampaper.cloud/hub/">
+<meta property="og:title" content="免費 DSE Past Paper 下載｜2012–2025 數學試題＋Marking Scheme｜DSE Hub">
+<meta property="og:description" content="免費下載 2012–2025 DSE 數學 Past Paper：卷一、卷二、中英文卷＋Marking Scheme、答案題解，按年份、課題搜尋，唔使報名即刻開卷。"><meta property="og:url" content="https://hkdse.exampaper.cloud/hub/">
 <meta property="og:image" content="https://hkdse.exampaper.cloud/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="免費 DSE Past Paper 下載｜2012–2025 歷屆試題＋答案題解｜DSE Hub">
-<meta name="twitter:description" content="免費下載 2012–2025 DSE Past Paper：數學、英文、中文、Chem、Bio、Phy、Econ 歷屆試卷＋答案題解，按年份、課題搜尋，唔使報名即刻開卷。">
-<meta name="twitter:image" content="https://hkdse.exampaper.cloud/og-image.png">
+<meta name="twitter:title" content="免費 DSE Past Paper 下載｜2012–2025 數學試題＋Marking Scheme｜DSE Hub">
+<meta name="twitter:description" content="免費下載 2012–2025 DSE 數學 Past Paper：卷一、卷二、中英文卷＋Marking Scheme、答案題解，按年份、課題搜尋，唔使報名即刻開卷。"><meta name="twitter:image" content="https://hkdse.exampaper.cloud/og-image.png">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LTB27V0RGW"></script>
 <script>
@@ -106,7 +102,18 @@ main { flex:1; min-height:0; display:flex; flex-direction:column; max-width:960p
 #qbody table { border-collapse:collapse; width:auto; max-width:100%; margin:0.7em 0; font-size:14.5px; }
 #qbody th, #qbody td { border:1px solid #8a96a5; padding:5px 10px; text-align:left; vertical-align:middle; }
 #qbody th { background:#eef2f6; font-weight:700; }
-#qbody .ttag { color:var(--acc); font-size:12.5px; }
+#qbody .mc-pct {
+  display: inline-block;
+  margin: 6px 0 4px;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #7ec8ff;
+  background: rgba(90,170,255,0.12);
+  border: 0.5px solid rgba(90,170,255,0.35);
+}
+.mc-pct strong { font-weight: 700; }
+.ttag { color:var(--acc); font-size:12.5px; }
 #qbody .ttag-label { color:var(--mut); font-size:12.5px; margin-right:4px; }
 .sol-panel {
   margin-top:16px; padding-top:10px; border-top:1px dashed var(--line);
@@ -129,6 +136,30 @@ main { flex:1; min-height:0; display:flex; flex-direction:column; max-width:960p
   transition: transform .18s ease;
 }
 .sol-panel.open .sol-chevron { transform: rotate(180deg); }
+.sol-btnrow { display:flex; gap:8px; justify-content:flex-end; align-items:center; flex-wrap:wrap; }
+.sol-btnrow > .sol-toggle { margin-left:0; }
+.sol-btnrow > .ai-toggle { margin-left:0; }
+.rep-toggle {
+  border-color:rgba(21,90,168,.28); background:#f3f8ff; color:#155aa8;
+}
+.rep-body {
+  margin-top:12px; padding:12px 14px;
+  border:1px solid rgba(21,90,168,.18); border-radius:12px;
+  background:#f7fbff; font-size:15.5px; line-height:1.8;
+}
+.rep-body[hidden] { display:none !important; }
+.rep-body p { margin:0 0 8px; }
+.rep-body p:last-child { margin-bottom:0; }
+/* 評卷參考表格（2025 卷一解答由 MinerU 抽出，直接係 table） */
+table.ms-table { width:100%; border-collapse:collapse; font-size:14px; line-height:1.6; }
+table.ms-table th, table.ms-table td {
+  border:1px solid #d9e2ec; padding:6px 8px; vertical-align:top; text-align:left;
+}
+table.ms-table th { background:#eef4fb; font-weight:600; white-space:nowrap; }
+table.ms-table td:last-child { color:#5a6b7c; font-size:13.5px; }
+/* 長解答（例如 2025 Q19 的圓方程）會撐爆手機闊度：容許橫向滑動，唔好切走 Marks 欄 */
+.sol-content { overflow-x:auto; -webkit-overflow-scrolling:touch; }
+table.ms-table { min-width:520px; }
 .sol-body {
   margin-top:12px; padding:12px 14px;
   border:1px solid rgba(198,40,40,.18); border-radius:12px;
@@ -268,6 +299,13 @@ footer { text-align:center; color:var(--mut); font-size:11.5px; padding:4px 0 12
 .stemleaf .slR .slr > span { width:1.1em; text-align:center; margin-right:1.25em; }
 .stemleaf .slR .slr > span:last-child { margin-right:0; }
 .stemleaf .slh { font-size:.94em; height:1.809em; line-height:1.809em; color:var(--mut); }
+
+/* 圖片點擊放大（MS 裁圖／題目圖） */
+#qbody img{cursor:zoom-in}
+#imgzoom{position:fixed;inset:0;background:rgba(0,0,0,.94);display:none;z-index:9999;overflow:auto;cursor:zoom-out}
+#imgzoom.open{display:block}
+#imgzoom img{width:100%;max-width:none;display:block}
+#imgzoom .xz{position:fixed;top:10px;right:14px;font-size:20px;color:#fff;background:#0009;border:1px solid #ffffff55;border-radius:8px;padding:6px 12px;cursor:pointer}
 </style>
 </head>
 <body>
@@ -293,9 +331,11 @@ footer { text-align:center; color:var(--mut); font-size:11.5px; padding:4px 0 12
     <button class="btn" id="next">下一題 →</button>
   </div>
 </main>
-<footer>DSE 題庫（數學 · 經濟 · 理科）— 內容僅供學習用途</footer>
+<footer>DSE 題庫（數學）— 內容僅供學習用途</footer>
 
-<script src="data.js?v=202611151852"></script>
+<script src="hub/papers.js?v=1"></script>
+<script src="data.js?v=20261117170119"></script>
+<script src="answers.js?v=20261117170119"></script>
 <script>
 const QS = window.QB.questions;
 const $ = s => document.querySelector(s);
@@ -304,6 +344,9 @@ const pno = p => {
   const m = String(p || '').match(/(\d+[A-Za-z]?)/);
   return m ? m[1].toUpperCase() : '1';
 };
+const YEAR_LABEL = { PP: '練習卷', SP: '樣本試卷' };
+const yLabel = y => YEAR_LABEL[y] || y;
+const yNum = y => { const n = Number(y); return Number.isFinite(n) ? n : 0; };
 const SUBJECT_PREFIX = { '數學': '', '經濟': 'econ', '化學': 'chem', '生物': 'bio', '物理': 'phys', '英語': 'eng' };
 const PREFIX_SUBJECT = { econ: '經濟', chem: '化學', bio: '生物', phys: '物理', eng: '英語' };
 
@@ -329,8 +372,26 @@ function paperKey(subject, year, paper) {
   else if (/2/.test(p)) zh = '卷二';
   return `${sid}|${year}|${zh}`;
 }
+/* 由 window.PAPERS 找該卷 PDF（CASE 2 卷都由這裡提供「全卷下載」） */
+const SUBJ_SID = { '數學': 'math', '數學（必修部分）': 'math', '經濟': 'econ', '化學': 'chem',
+                   '生物': 'bio', '物理': 'phys', '英語': 'eng', '英文': 'eng', '中文': 'chi',
+                   '企業、會計與財務概論': 'bafs', '地理': 'geog', '歷史': 'hist',
+                   '中國歷史': 'chist', '資訊及通訊科技': 'ict', '旅遊與款待': 'toursm' };
+function papersPdfFor(q) {
+  const subs = (window.PAPERS || {}).subjects || {};
+  const sid = SUBJ_SID[q.subject] || 'math';
+  const subj = subs[sid];
+  if (!subj) return null;
+  const wantP = String(q.paper || '').match(/1A|1B|[12]/i);
+  const pTok = wantP ? /1A/i.test(q.paper) ? '1A' : /1B/i.test(q.paper) ? '1B' : wantP[0] : '';
+  const isEn = /英文|_EN|\(EN\)|ENG/i.test(String(q.file || ''));
+  const items = (subj.items || []).filter((it) => it.k === 'paper' && String(it.y) === String(q.year));
+  const exact = items.filter((it) => pTok && String(it.p || '').toUpperCase() === pTok.toUpperCase());
+  const anyLang = (arr) => arr.find((it) => it.l === (isEn ? 'en' : 'zh')) || arr[0];
+  return anyLang(exact.length ? exact : items) ? (anyLang(exact.length ? exact : items).u) : null;
+}
 function syncPdfTop(q) {
-  const url = q ? (PDF_LINKS[paperKey(q.subject, q.year, q.paper)] || null) : null;
+  const url = q ? (PDF_LINKS[paperKey(q.subject, q.year, q.paper)] || papersPdfFor(q)) : null;
   const btn = $('#pdfBtn');
   if (url) {
     btn.href = url;
@@ -352,12 +413,15 @@ function syncPdfTop(q) {
 
 function findSolution(q) {
   if (!q) return null;
+  /* 解答 entry 由 MS 匯入時 year／qno 係 number，題目係 string，
+     用 === 會永遠配唔到（題解鍵因此長期唔出）。一律轉字串比較。 */
+  const y = String(q.year), p = String(q.paper), n = String(q.qno);
   return QS.find(x =>
     x.type === '解答' &&
     x.subject === q.subject &&
-    x.year === q.year &&
-    x.paper === q.paper &&
-    x.qno === q.qno
+    String(x.year) === y &&
+    String(x.paper) === p &&
+    String(x.qno) === n
   ) || null;
 }
 function findQuestion(q) {
@@ -388,20 +452,42 @@ function solExpandHtml(q, expanded) {
     return '';
   }
   const sol = findSolution(q);
-  if (!sol) {
+  const rep = reportHtml(q);
+  if (!sol && !rep) {
     return `<div class="sol-pending-row"><span class="sol-pending">待建立題解</span></div>`;
   }
-  const open = !!expanded;
+  const open = !!expanded && !!sol;
+  const solBtn = sol ? `<button type="button" class="sol-toggle" id="solToggle" aria-expanded="${open ? 'true' : 'false'}">
+          <span class="sol-toggle-label">${open ? '收起題解' : '題解'}</span>
+          <span class="sol-chevron" aria-hidden="true"></span>
+        </button>` : '';
+  const repBtn = rep ? `<button type="button" class="sol-toggle rep-toggle" id="repToggle" aria-expanded="false">
+          <span class="rep-toggle-label">考評報告</span>
+          <span class="sol-chevron" aria-hidden="true"></span>
+        </button>` : '';
+  const aiBtn = isMcQuestion(q) ? `<button type="button" class="sol-toggle ai-toggle" id="aiToggle"
+          style="display:none" aria-expanded="false">
+          <span class="ai-toggle-label">深度分析</span>
+          <span class="sol-chevron" aria-hidden="true"></span>
+        </button>` : '';
   return `
     <div class="sol-panel${open ? ' open' : ''}" id="solPanel" data-expanded="${open ? 'true' : 'false'}">
-      <button type="button" class="sol-toggle" id="solToggle" aria-expanded="${open ? 'true' : 'false'}">
-        <span class="sol-toggle-label">${open ? '收起題解' : '題解'}</span>
-        <span class="sol-chevron" aria-hidden="true"></span>
-      </button>
-      <div class="sol-body" id="solBody"${open ? '' : ' hidden'}>
+      <div class="sol-btnrow">${solBtn}${repBtn}${aiBtn}</div>
+      ${sol ? `<div class="sol-body" id="solBody"${open ? '' : ' hidden'}>
         <div class="sol-content">${sol.html}</div>
-      </div>
+      </div>` : ''}
+      ${rep ? `<div class="rep-body" id="repBody" hidden>${rep}</div>` : ''}
     </div>`;
+}
+/* 考評局對本題嘅評語（data.js 的 report 欄；已按段落分開） */
+function reportHtml(q) {
+  const t = (q && q.report) || '';
+  const pct = (q && q.answer_pct != null) ? `<p class="mc-pct mc-pct-rep">考生答對率 <strong>${q.answer_pct}%</strong></p>` : '';
+  if (!t.trim()) return pct;
+  const body = t.split(/\n{2,}/).filter(Boolean)
+          .map(x => `<p>${x.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}</p>`)
+          .join('');
+  return pct + body;
 }
 function scrollSolIntoView(panel) {
   const qb = $('#qbody');
@@ -411,6 +497,21 @@ function scrollSolIntoView(panel) {
   qb.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
 }
 function wireSolToggle(q) {
+  /* 考評報告按鍵要先接駁：冇題解嘅題目只有這一粒，唔可以因為 solBody 唔存在就跳走 */
+  const rep = document.getElementById('repToggle');
+  const repBody = document.getElementById('repBody');
+  if (rep && repBody) {
+    rep.addEventListener('click', () => {
+      const open = repBody.hidden;
+      repBody.hidden = !open;
+      rep.setAttribute('aria-expanded', open ? 'true' : 'false');
+      rep.classList.toggle('open', open);
+      const lbl = rep.querySelector('.rep-toggle-label');
+      if (lbl) lbl.textContent = open ? '收起考評報告' : '考評報告';
+      const MJ = window.MathJax;
+      if (open && MJ?.typesetPromise) MJ.typesetPromise([repBody]).catch(()=>{});
+    });
+  }
   const toggle = $('#solToggle');
   const panel = $('#solPanel');
   const body = $('#solBody');
@@ -455,12 +556,9 @@ function analysisPath(q) {
 }
 function aiExpandHtml(q) {
   if (!isMcQuestion(q)) return '';
-  /* 預先驗證 fetch 未完成都唔會閃掣：fetch 成功先顯示 */
+  /* 按鍵由 sol-btnrow 出（同「題解」「考評報告」並排），這裡只有面板本體；
+     分析 JSON fetch 成功先顯示按鍵，避免閃掣。 */
   return `<div class="ai-panel" id="aiPanel" style="display:none">
-    <button type="button" class="ai-toggle" id="aiToggle" aria-expanded="false">
-      <span class="ai-toggle-label">深度分析</span>
-      <span class="ai-chevron" aria-hidden="true"></span>
-    </button>
     <div class="ai-body" id="aiBody" hidden><span class="ai-loading">載入中…</span></div>
   </div>`;
 }
@@ -555,6 +653,8 @@ function wireAiPanel(q) {
     if (!data) { panel.remove(); return; }
     panel.style.display = '';
     renderAi(data);
+    const rowBtn = $('#aiToggle');
+    if (rowBtn) rowBtn.style.display = '';
     const toggle = $('#aiToggle');
     const bodyEl = $('#aiBody');
     if (toggle && bodyEl) {
@@ -626,7 +726,7 @@ function rebuildQlist() {
   }
   qlist = [...byQ.values()].sort((a, b) =>
     (tag || year == null)
-      ? (a.year - b.year || String(a.paper).localeCompare(String(b.paper)) || a.qno - b.qno)
+      ? (yNum(a.year) - yNum(b.year) || String(a.paper).localeCompare(String(b.paper)) || a.qno - b.qno)
       : (a.qno - b.qno)
   );
 }
@@ -644,8 +744,8 @@ function paperBarLabel(q) {
   if (!q) return 'DSE 題庫';
   const sec = shortSection(q.title);
   const base = sec
-    ? `${q.subject} ${q.year} ${q.paper} ${sec}`
-    : `${q.subject} ${q.year} ${q.paper}`;
+    ? `${q.subject} ${yLabel(q.year)} ${q.paper} ${sec}`
+    : `${q.subject} ${yLabel(q.year)} ${q.paper}`;
   return q.qno != null ? `${base} Q${q.qno}` : base;
 }
 function syncBarTitle(q) {
@@ -694,16 +794,18 @@ function enhanceMc(root) {
         btn.classList.add('selected');
         if (!ans) return;
         const ok = p.letter === ans;
-        wrap.querySelectorAll('.option').forEach(b => {
-          if (b.dataset.choice === ans) b.classList.add('correct');
-        });
-        if (!ok) btn.classList.add('wrong');
         const rate = (pct != null) ? `（答對率 ${pct}%）` : '';
         feedback.hidden = false;
-        feedback.className = 'mc-feedback ' + (ok ? 'ok' : 'bad');
-        feedback.textContent = ok
-          ? `正確！答案是 ${ans}${rate}`
-          : `唔啱。正確答案是 ${ans}${rate}`;
+        if (ok) {
+          /* 答對先至標正確答案；答錯只話你知錯，唔可以透漏邊個先啱 */
+          btn.classList.add('correct');
+          feedback.className = 'mc-feedback ok';
+          feedback.textContent = `正確！答案是 ${ans}${rate}`;
+        } else {
+          btn.classList.add('wrong');
+          feedback.className = 'mc-feedback bad';
+          feedback.textContent = `唔啱，再試一次。${rate}`;
+        }
       });
       wrap.appendChild(btn);
     });
@@ -745,9 +847,23 @@ function show(q, opts) {
   const tagsHtml = (q.tags && q.tags.length)
     ? `<p class="ttag"><span class="ttag-label">課題</span>${q.tags.map(t=>'#'+esc(t)).join('　')}</p>`
     : '';
+  /* MC 答案接駁：answers.js（官方答案表）→ q.answer（冇先至填） */
+  if (!q.answer && window.ANS) {
+    const table = (window.ANS[q.subject] || {})[String(q.year)];
+    const file = (q.file || '') + ' ' + (q.section || '');
+    const lg = /ENG|英文/i.test(file) ? 'en' : 'zh';
+    if (table && /卷二|Paper 2/i.test(q.paper || '')) {
+      const key = table[lg] ? lg : Object.keys(table)[0];
+      if (key) q.answer = table[key][String(q.qno)] || q.answer;
+    }
+  }
   const expandSol = !!opts.expandSol && !!findSolution(q);
+  /* Paper 2（MC）：顯示官方考評報告的考生答對率 */
+  const pctHtml = (isMcQuestion(q) && q.answer_pct != null)
+    ? `<p class="mc-pct" title="來自考評局考評報告／評卷參考">考生答對率 <strong>${q.answer_pct}%</strong></p>`
+    : '';
   $('#qbody').innerHTML =
-    `<div class="qcontent">${q.html}${tagsHtml}</div>` +
+    `<div class="qcontent">${pctHtml}${q.html}${tagsHtml}</div>` +
     solExpandHtml(q, expandSol) +
     aiExpandHtml(q);
   const qcontent = $('#qbody .qcontent');
@@ -782,7 +898,7 @@ function fillPosSelect(idx) {
   sel.innerHTML = qlist.map((q, i) => {
     const isPassage = q.type === '篇章';
     const label = tag
-      ? `${i + 1} / ${n}　${q.year} P${pno(q.paper)} ${isPassage ? (q.ref || q.title || '篇章') : 'Q' + q.qno}`
+      ? `${i + 1} / ${n}　${yLabel(q.year)} P${pno(q.paper)} ${isPassage ? (q.ref || q.title || '篇章') : 'Q' + q.qno}`
       : `${i + 1} / ${n}　${isPassage ? (q.title || '篇章') : `第 ${q.qno} 題`}`;
     return `<option value="${i}"${i === cur ? ' selected' : ''}>${esc(label)}</option>`;
   }).join('');
@@ -830,7 +946,7 @@ document.addEventListener('keydown', e => {
 });
 
 function openFromHash() {
-  const m = location.hash.match(/^#(econ|chem|bio|phys|eng)?(\d{4})P(\d+[A-Za-z]?)(?:Q(\d+)|T(\d+))(A)?/i);
+  const m = location.hash.match(/^#(econ|chem|bio|phys|eng)?(\d{4}|PP|SP)P(\d+[A-Za-z]?)(?:Q(\d+)|T(\d+))(A)?/i);
   if (!m) return false;
   const hSubj = m[1] ? (PREFIX_SUBJECT[m[1].toLowerCase()] || '數學') : '數學';
   const passageRef = m[5] ? 'T' + m[5] : null;
@@ -843,7 +959,7 @@ function openFromHash() {
     if (wantSol === expanded || (wantSol && curQ.type === '解答')) return true;
   }
   subj = hSubj;
-  const y = +m[2];
+  const y = /^\d{4}$/.test(m[2]) ? +m[2] : m[2].toUpperCase();
   const p = pToken === '2' ? 'Paper 2'
     : pToken === '1A' ? 'Paper 1A'
     : pToken === '1B' ? 'Paper 1B'
@@ -861,11 +977,14 @@ function openFromHash() {
     paper = p;
   }
   rebuildQlist();
-  const qu = n != null
-    ? QS.find(x => x.subject===subj && x.year==y && x.paper===p && x.qno==n && x.type==='題目')
-    : QS.find(x => x.subject===subj && x.year==y && x.paper===p && x.ref===ref && x.type==='篇章');
+  /* 中英同題：?lang=en 要揀英文嗰份，唔好永遠攞第一條 */
+  const langOk = (x) => (!langIsEn && !langIsZh) ? true
+    : (x.type !== '題目' || langOfQ(x) === (langIsEn ? 'en' : 'zh'));
+  const candQ = QS.filter(x => x.subject===subj && x.year==y && x.paper==p
+    && (n != null ? x.qno==n : x.ref===ref) && (n != null ? x.type==='題目' : x.type==='篇章'));
+  const qu = candQ.find(langOk) || candQ[0];
   const sol = n != null
-    ? QS.find(x => x.subject===subj && x.year==y && x.paper===p && x.qno==n && x.type==='解答')
+    ? QS.find(x => x.subject===subj && x.year==y && x.paper==p && x.qno==n && x.type==='解答')
     : null;
   const q = qu || sol || qlist.find(x => x.year==y && x.paper===p && (n != null ? x.qno==n : x.ref===ref)) ||
             QS.find(x => x.subject===subj && x.year==y && x.paper===p
@@ -876,8 +995,24 @@ function openFromHash() {
 window.addEventListener('hashchange', openFromHash);
 
 /* 冇 hash：head 已轉去 hub/（除非 ?subject / ?tag 課題深連結） */
+/* 化學／經濟／生物／物理 只上咗卷頁索引，題目內容未入庫：
+   唔好靜靜跌落數學空白頁，要講清楚同帶去卷頁。 */
+const SUBJECT_LANDING = { '化學': '/chem/', '經濟': '/econ/', '生物': '/bio/', '物理': '/phys/' };
+function showSubjectNotInBank(name) {
+  show(null);
+  const land = SUBJECT_LANDING[name];
+  const hub = `/hub/?subject=${encodeURIComponent({ '化學': 'chem', '經濟': 'econ', '生物': 'bio', '物理': 'phys' }[name] || 'math')}&mode=year`;
+  $('#qbody').innerHTML = `<div style="padding:18px 6px;line-height:1.8">
+      <p><strong>${name} 題目內容尚未收錄。</strong></p>
+      <p style="color:var(--mut)">題庫目前只有數學必修部分嘅逐題內容；${name} 暫時提供歷屆試卷索引。</p>
+      <p>${land ? `<a class="btn" href="${land}">睇 ${name} 歷屆試卷索引</a> ` : ''}<a class="btn" href="${hub}">去 DSE Hub 揀卷</a></p>
+    </div>`;
+}
 if (!location.hash) {
   if (wantSubj || wantTag) {
+    if (wantSubj && !subjs.includes(wantSubj)) {
+      showSubjectNotInBank(wantSubj);
+    } else {
     if (wantSubj && subjs.includes(wantSubj)) subj = wantSubj;
     else subj = subjs[0];
     tag = wantTag || '';
@@ -896,11 +1031,117 @@ if (!location.hash) {
         show(first);
       } else show(null);
     }
+    }
   }
 } else {
-  openFromHash();
+  if (!openFromHash()) {
+    // #chem… / #econ… / #bio… / #phys… 屬於未入庫科目，唔好跌返數學空白頁
+    const pre = (location.hash || '').replace('#', '').match(/^(chem|econ|bio|phys)/i);
+    const byPrefix = { chem: '化學', econ: '經濟', bio: '生物', phys: '物理' };
+    const name = (wantSubj && !subjs.includes(wantSubj)) ? wantSubj : (pre ? byPrefix[pre[1].toLowerCase()] : '');
+    if (name && !subjs.includes(name)) showSubjectNotInBank(name);
+  }
 }
 </script>
-<script src="pwa.js?v=202611151852-v20261112165848"></script>
+<script src="pwa.js?v=20261117170119"></script>
+
+<script>
+/* 圖片點擊放大 */
+(function(){
+  const Z=document.createElement('div');
+  Z.id='imgzoom';
+  Z.innerHTML='<button class="xz" aria-label="關閉">✕ 關閉</button>';
+  document.body.appendChild(Z);
+  Z.addEventListener('click',()=>Z.classList.remove('open'));
+  document.addEventListener('click',e=>{
+    const im=e.target.closest('#qbody img');
+    if(!im) return;
+    e.preventDefault();
+    Z.querySelectorAll('img').forEach(x=>x.remove());
+    const big=new Image();
+    big.src=im.currentSrc||im.src;
+    Z.appendChild(big);
+    Z.classList.add('open');
+  });
+})();
+</script>
+
+<!-- 錯誤／改善回報（Telegram bot；FB_BOT 未填時按鍵自動隱藏） -->
+<button id="fbBtn" type="button" aria-label="回報錯誤或改善建議">⚠ 回報</button>
+<div id="fbModal" role="dialog" aria-modal="true">
+  <div class="fb-card">
+    <h3>回報錯誤／改善建議</h3>
+    <div class="fb-cats">
+      <button type="button" data-cat="題目錯誤">題目錯誤</button>
+      <button type="button" data-cat="答案錯誤">答案錯誤</button>
+      <button type="button" data-cat="圖片問題">圖片問題</button>
+      <button type="button" data-cat="意見/建議">意見/建議</button>
+      <button type="button" data-cat="其他">其他</button>
+    </div>
+    <textarea id="fbText" rows="4" placeholder="補充說明（可留空）"></textarea>
+    <div class="fb-actions">
+      <button type="button" class="fb-cancel">取消</button>
+      <button type="button" class="fb-send" disabled>經 Telegram 發送</button>
+    </div>
+  </div>
+</div>
+<style>
+#fbBtn{position:fixed;left:12px;bottom:12px;z-index:9000;background:#2a2f3a;color:#e8eaf0;
+border:1px solid #ffffff33;border-radius:999px;padding:8px 14px;font-size:14px;cursor:pointer;display:none}
+#fbModal{position:fixed;inset:0;z-index:9500;background:rgba(0,0,0,.7);display:none;
+align-items:center;justify-content:center;padding:16px}
+#fbModal.open{display:flex}
+.fb-card{background:#1c2029;color:#e8eaf0;border-radius:14px;padding:18px;max-width:420px;width:100%;
+font-family:system-ui,"Noto Sans TC",sans-serif}
+.fb-card h3{margin:0 0 12px;font-size:1.05rem}
+.fb-cats{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.fb-cats button{background:#2a2f3a;color:#e8eaf0;border:1px solid #ffffff33;border-radius:999px;
+padding:6px 12px;cursor:pointer;font-size:13px}
+.fb-cats button.on{background:#4c7dff;border-color:#4c7dff}
+#fbText{width:100%;box-sizing:border-box;background:#12151c;color:#e8eaf0;border:1px solid #ffffff33;
+border-radius:8px;padding:8px;font-size:14px;resize:vertical}
+.fb-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:12px}
+.fb-actions button{border-radius:8px;padding:8px 14px;cursor:pointer;font-size:14px;border:1px solid #ffffff33}
+.fb-cancel{background:transparent;color:#e8eaf0}
+.fb-send{background:#4c7dff;color:#fff;border-color:#4c7dff}
+.fb-send:disabled{opacity:.45;cursor:default}
+</style>
+<script>
+(function(){
+  /* ⬇️ 開好 Telegram bot 後填 username（@ 後面嗰段），例如 "dse_feedback_bot" */
+  const FB_BOT = "dsehub_feedback_bot";
+
+  const btn = document.getElementById('fbBtn');
+  const modal = document.getElementById('fbModal');
+  if (!FB_BOT) return;              // 未設定 bot 之前唔顯示
+  btn.style.display = 'block';
+
+  let cat = '';
+  const send = modal.querySelector('.fb-send');
+  modal.querySelectorAll('.fb-cats button').forEach(b => {
+    b.addEventListener('click', () => {
+      modal.querySelectorAll('.fb-cats button').forEach(x => x.classList.remove('on'));
+      b.classList.add('on');
+      cat = b.dataset.cat;
+      send.disabled = false;
+    });
+  });
+  const close = () => { modal.classList.remove('open'); cat = ''; send.disabled = true; };
+  modal.querySelector('.fb-cancel').addEventListener('click', close);
+  modal.addEventListener('click', e => { if (e.target === modal) close(); });
+  btn.addEventListener('click', () => modal.classList.add('open'));
+  send.addEventListener('click', () => {
+    const q = window.curQ || null;
+    const ref = q ? `${q.subject || ''} ${q.year || ''} ${q.paper || ''} Q${q.qno ?? ''}` : document.title;
+    const url = location.origin + location.pathname + location.hash;
+    const note = (document.getElementById('fbText').value || '').trim();
+    const text = `⚠ 題庫回報\n類別：${cat || '其他'}\n位置：${ref}\n頁面：${url}\n說明：${note || '（無補充）'}`;
+    window.open(`https://t.me/${FB_BOT}?text=${encodeURIComponent(text)}`, '_blank');
+    close();
+    document.getElementById('fbText').value = '';
+  });
+})();
+</script>
+
 </body>
 </html>

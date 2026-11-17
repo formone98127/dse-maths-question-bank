@@ -1,0 +1,134 @@
+name: Deploy PDF library to Hostinger
+
+# 把 deploy_manifest.tsv 的試卷 PDF（源：roothk.org 公開檔案）上傳到主機 /papers/<科目>/。
+# 為什麼唔入 git：896 個檔約 6.6GB，遠超 repo 與單檔限制。
+# 效能重點：先並行下載（aria2 -j8），再用「單一 lftp session」批量 put；
+#           逐檔重開 FTP 連線實測慢 20 倍以上（8 分鐘只上到 3 個檔）。
+
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "只處理前 N 個檔（0 = 全部）"
+        default: "0"
+      only_kind:
+        description: "只上傳某類型（paper/ms/report/mock，空白 = 全部）"
+        default: ""
+  push:
+    branches: [main]
+    paths:
+      - "deploy_manifest.tsv"
+      - ".github/workflows/deploy-pdfs.yml"
+
+concurrency:
+  group: pdf-deploy
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      FTP_HOST: 147.93.109.152
+      FTP_USER: u187459660.hkdseupload
+      SITE: https://hkdse.exampaper.cloud
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq lftp aria2
+
+      - name: Build work list
+        env:
+          LIMIT: ${{ github.event.inputs.limit || '0' }}
+          ONLY_KIND: ${{ github.event.inputs.only_kind || '' }}
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import os
+          rows=[l.rstrip('\n').split('\t') for l in open('deploy_manifest.tsv',encoding='utf-8') if l.strip()]
+          k=(os.environ.get('ONLY_KIND') or '').strip()
+          if k: rows=[r for r in rows if f'-{k}-' in r[1]]
+          n=int(os.environ.get('LIMIT') or 0)
+          if n: rows=rows[:n]
+          with open('/tmp/work.tsv','w',encoding='utf-8') as f:
+              for i,(src,dst) in enumerate(rows):
+                  f.write(f"{i}\t{src}\t{dst}\n")
+          print(f'work items: {len(rows)}')
+          PY
+
+      - name: Parallel download
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/pdfs
+          python3 - <<'PY'
+          import concurrent.futures as cf, pathlib, urllib.request, os
+          rows=[l.rstrip('\n').split('\t') for l in open('/tmp/work.tsv',encoding='utf-8') if l.strip()]
+          out=pathlib.Path('/tmp/pdfs'); out.mkdir(exist_ok=True)
+          def grab(r):
+              i,src,_=r
+              dst=out/f'{i}.pdf'
+              try:
+                  req=urllib.request.Request(src, headers={'User-Agent':'Mozilla/5.0'})
+                  with urllib.request.urlopen(req, timeout=180) as resp, open(dst,'wb') as f:
+                      f.write(resp.read())
+                  if dst.stat().st_size < 8000:
+                      dst.unlink(); return i,'small'
+                  return i,'ok'
+              except Exception as e:
+                  return i,f'err:{type(e).__name__}'
+          ok=bad=0; missing=[]
+          with cf.ThreadPoolExecutor(max_workers=8) as ex:
+              for i,st in ex.map(grab, rows):
+                  if st=='ok': ok+=1
+                  else: bad+=1; missing.append(i)
+          open('/tmp/missing.txt','w').write('\n'.join(missing))
+          print(f'downloaded ok={ok} bad={bad} total={len(rows)}')
+          PY
+
+      - name: Upload via single lftp session
+        env:
+          FTP_PASS: ${{ secrets.HKDSE_FTP_PASSWORD }}
+        run: |
+          set -euo pipefail
+          [ -z "${FTP_PASS:-}" ] && { echo "Missing secret HKDSE_FTP_PASSWORD"; exit 1; }
+          python3 - <<'PY'
+          import os, pathlib, subprocess
+          rows=[l.rstrip('\n').split('\t') for l in open('/tmp/work.tsv',encoding='utf-8') if l.strip()]
+          missing={l.strip() for l in open('/tmp/missing.txt') if l.strip()}
+          rows=[r for r in rows if r[0] not in missing]
+          dirs=sorted({os.path.dirname(r[2]) for r in rows})
+          host,user,pw=os.environ['FTP_HOST'],os.environ['FTP_USER'],os.environ['FTP_PASS']
+          base=['set ssl:verify-certificate no','set ftp:ssl-force true','set ftp:ssl-protect-data true',
+                'set net:max-retries 4','set net:reconnect-interval-base 5','set net:timeout 180',
+                'set ftp:passive-mode true',
+                f'open -u "{user}","{pw}" ftp://{host}']
+          def run(lines,label):
+              p=pathlib.Path('/tmp/lftp.cmd'); p.write_text('\n'.join(base+lines+['bye','']),encoding='utf-8'); p.chmod(0o600)
+              r=subprocess.run(['lftp','-f',str(p)],capture_output=True,text=True)
+              print(f'{label}: rc={r.returncode} {(r.stderr or "").strip()[:200]}')
+              return r.returncode
+          run([f'mkdir -p "/{d}"' for d in dirs], 'mkdir')
+          ok=0
+          for i in range(0,len(rows),120):
+              chunk=rows[i:i+120]
+              lines=[f'put "/tmp/pdfs/{r[0]}.pdf" -o "/{r[2]}"' for r in chunk]
+              if run(lines, f'put {i}-{i+len(chunk)}')==0: ok+=len(chunk)
+          print(f'uploaded ok≈{ok}/{len(rows)}')
+          PY
+
+      - name: Verify sample
+        run: |
+          set -uo pipefail
+          ok=0; total=0
+          for f in $(shuf -n 10 /tmp/work.tsv | cut -f3); do
+            total=$((total+1))
+            code=$(curl -s -o /dev/null -w '%{http_code}' --max-time 30 "$SITE/$f")
+            echo "$code  /$f"
+            [ "$code" = "200" ] && ok=$((ok+1)) || sleep 15
+          done
+          echo "verified $ok/$total"

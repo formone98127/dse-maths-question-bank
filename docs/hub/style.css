@@ -420,6 +420,59 @@ body.reel-open { overflow: hidden; }
 }
 .reel-link:hover { background: rgba(255, 255, 255, 0.06); }
 .reel-link.ok { font-weight: 600; }
+.topic-search {
+  position: relative;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.filters-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.topic-search input {
+  width: 100%;
+  box-sizing: border-box;
+  font: inherit;
+  font-size: 15px;
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.06);
+  border: 0.5px solid var(--hair);
+  border-radius: 10px;
+  padding: 9px 12px;
+  outline: none;
+}
+.topic-search input:focus { border-color: var(--acc-ink); }
+.topic-search input::placeholder { color: rgba(255, 255, 255, 0.4); }
+.topic-search-list {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  z-index: 30;
+  max-height: 260px;
+  overflow-y: auto;
+  background: var(--card);
+  border: 0.5px solid var(--hair);
+  border-radius: 12px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+  padding: 4px;
+}
+.topic-search-list .ts-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  color: var(--ink);
+}
+.topic-search-list .ts-item:hover { background: rgba(255, 255, 255, 0.07); }
+.topic-search-list .ts-item .ts-n { color: rgba(255, 255, 255, 0.45); font-size: 13px; flex: none; }
+.topic-search-list .ts-empty { padding: 9px 12px; color: rgba(255, 255, 255, 0.45); font-size: 14px; }
 .reel-window {
   position: relative;
   height: 220px;
@@ -463,6 +516,10 @@ body.reel-open { overflow: hidden; }
 
 @media (max-width: 480px) {
   .bar { gap: 5px; }
+  .filters-top { gap: 6px; }
+  .filters-top .seg { min-width: 0; }
+  .filters-top .seg button { padding: 6px 10px; font-size: 13px; }
+  .topic-search input { padding: 7px 10px; font-size: 16px; } /* iOS 唔好 <16px，否則聚焦自動放大 */
   .field > label { font-size: 10.5px; }
   .reel-btn { height: 34px; padding: 0 8px; font-size: 12.5px; border-radius: 9px; }
   .paper-row { padding: 10px 14px; gap: 4px 10px; }
@@ -737,3 +794,5 @@ footer {
 .topic-guide p:last-child {
   margin-bottom: 0;
 }
+
+.tag.pdf { background: rgba(90,170,255,0.16); color: #8fd0ff; }

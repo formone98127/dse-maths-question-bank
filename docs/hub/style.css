@@ -794,3 +794,5 @@ footer {
 .topic-guide p:last-child {
   margin-bottom: 0;
 }
+
+.tag.pdf { background: rgba(90,170,255,0.16); color: #8fd0ff; }

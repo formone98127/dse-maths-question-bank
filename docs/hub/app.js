@@ -27,6 +27,64 @@ const btns = {
 };
 
 const LABEL = { subject: "科目", year: "年份", paper: "卷別", topic: "課題" };
+/* ===== CASE 1：未入電子題庫的卷 → 直接下載官方 PDF（window.PAPERS，見 papers.js） ===== */
+const PAPER_KIND = { paper: "試卷", ms: "評卷參考", report: "考評報告", mock: "模擬卷" };
+
+function pdfSubjects() {
+  return Object.entries((window.PAPERS || {}).subjects || {}).map(([id, v]) => ({
+    id, name: v.name, items: v.items || [],
+  }));
+}
+
+/* 該科該年已在電子題庫（data.js）的卷別，例如 {"Paper 1","Paper 2"} */
+function bankPapers(subjectName, year) {
+  const out = new Set();
+  const qs = (window.QB && window.QB.questions) || [];
+  for (const q of qs) {
+    if (q.subject === subjectName && String(q.year) === String(year)) out.add(String(q.paper));
+  }
+  return out;
+}
+
+function subjectName(id) {
+  const hit = subjectsInDb().find((s) => s.id === id);
+  return hit ? hit.name : id;
+}
+
+function pdfRowsFor(sid, name, year) {
+  const subj = ((window.PAPERS || {}).subjects || {})[sid];
+  if (!subj) return [];
+  const have = bankPapers(name, year);
+  return (subj.items || [])
+    .filter((it) => String(it.y) === String(year))
+    .filter((it) => {
+      if (it.k !== "paper") return true;      // 評卷參考／考評報告永遠可下載
+      const pn = it.p ? `Paper ${it.p}` : "";
+      return !(pn && have.has(pn));           // 有電子版 → CASE 2，唔重複
+    })
+    .map((it) => ({ pdf: true, sid, name, year: it.y, kind: it.k, paper: it.p, lang: it.l, url: it.u }));
+}
+
+function pdfRowHtml(r) {
+  const kindLbl = PAPER_KIND[r.kind] || r.kind;
+  const paperLbl = r.paper ? `Paper ${r.paper}` : "全卷";
+  const langLbl = r.lang === "zh" ? "中文" : r.lang === "en" ? "English" : "—";
+  return `
+    <a class="paper-row" href="${esc(r.url)}" target="_blank" rel="noopener" download title="下載 ${esc(r.name)} ${r.year} ${kindLbl}">
+      <span class="paper-year">${r.year}</span>
+      <span class="paper-body">
+        <span class="paper-tags">
+          <span class="tag subj">${esc(r.name)}</span>
+          <span class="tag paper">${esc(paperLbl)}</span>
+          <span class="tag lang">${esc(langLbl)}</span>
+          <span class="tag pdf">${esc(kindLbl)} PDF</span>
+        </span>
+        <span class="paper-title">${esc(r.name)} ${esc(paperLbl)} · ${esc(kindLbl)}（直接下載）</span>
+      </span>
+      <span class="paper-chev" aria-hidden="true"></span>
+    </a>`;
+}
+
 const YEAR_LABEL = { PP: "練習卷", SP: "樣本試卷" };
 const yNum = (y) => { const n = Number(y); return Number.isFinite(n) ? n : 0; };
 
@@ -54,6 +112,8 @@ function filteredCatalog() {
 function subjectsInDb() {
   const map = new Map();
   CATALOG.forEach((r) => map.set(r.id, r.name));
+  /* 未入電子題庫、但有官方 PDF 的科目（CASE 1） */
+  pdfSubjects().forEach((s) => { if (!map.has(s.id)) map.set(s.id, s.name); });
   return [...map.entries()].map(([id, name]) => ({ id, name }));
 }
 
@@ -381,13 +441,29 @@ function renderYear() {
   l2.textContent = "年份";
   btns.year.dataset.key = "year";
 
-  const rows = sortRows(filteredCatalog());
+  const bankRows = sortRows(filteredCatalog());
+  /* CASE 1：補上未入題庫但有官方 PDF 的卷（連評卷參考／考評報告下載） */
+  const pdfRows = [];
+  const wantSubj = (state.subject !== PLACE && state.subject !== ALL)
+    ? [state.subject] : pdfSubjects().map((s) => s.id);
+  for (const sid of wantSubj) {
+    const nm = subjectName(sid);
+    const subjItems = (((window.PAPERS || {}).subjects || {})[sid] || {}).items || [];
+    const years = (state.year !== PLACE && state.year !== ALL)
+      ? [Number(state.year)] : [...new Set(subjItems.map((i) => i.y))];
+    for (const y of years) pdfRows.push(...pdfRowsFor(sid, nm, y));
+  }
+  const rows = bankRows.concat(pdfRows)
+    .filter((r) => !r.pdf || state.year === PLACE || state.year === ALL || String(r.year) === String(state.year))
+    .sort((a, b) => (b.year - a.year) || String(a.name || "").localeCompare(String(b.name || ""), "zh-Hant"));
+
   if (!rows.length) {
     resultEl.innerHTML = emptyHtml("找不到符合條件的試卷。請改選「所有」或放寬篩選。");
     return;
   }
-  const count = `<p class="list-count">共 ${rows.length} 卷</p>`;
-  resultEl.innerHTML = count + rows.map(rowHtml).join("");
+  const nBank = rows.filter((r) => !r.pdf).length;
+  const count = `<p class="list-count">共 ${rows.length} 項（電子題庫 ${nBank} 卷 · PDF 下載 ${rows.length - nBank} 份）</p>`;
+  resultEl.innerHTML = count + rows.map((r) => (r.pdf ? pdfRowHtml(r) : rowHtml(r))).join("");
 }
 
 function renderTopic() {

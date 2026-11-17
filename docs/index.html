@@ -131,6 +131,7 @@ main { flex:1; min-height:0; display:flex; flex-direction:column; max-width:960p
 .sol-panel.open .sol-chevron { transform: rotate(180deg); }
 .sol-btnrow { display:flex; gap:8px; justify-content:flex-end; align-items:center; flex-wrap:wrap; }
 .sol-btnrow > .sol-toggle { margin-left:0; }
+.sol-btnrow > .ai-toggle { margin-left:0; }
 .rep-toggle {
   border-color:rgba(21,90,168,.28); background:#f3f8ff; color:#155aa8;
 }
@@ -422,9 +423,14 @@ function solExpandHtml(q, expanded) {
           <span class="rep-toggle-label">考評報告</span>
           <span class="sol-chevron" aria-hidden="true"></span>
         </button>` : '';
+  const aiBtn = isMcQuestion(q) ? `<button type="button" class="sol-toggle ai-toggle" id="aiToggle"
+          style="display:none" aria-expanded="false">
+          <span class="ai-toggle-label">深度分析</span>
+          <span class="sol-chevron" aria-hidden="true"></span>
+        </button>` : '';
   return `
     <div class="sol-panel${open ? ' open' : ''}" id="solPanel" data-expanded="${open ? 'true' : 'false'}">
-      <div class="sol-btnrow">${solBtn}${repBtn}</div>
+      <div class="sol-btnrow">${solBtn}${repBtn}${aiBtn}</div>
       ${sol ? `<div class="sol-body" id="solBody"${open ? '' : ' hidden'}>
         <div class="sol-content">${sol.html}</div>
       </div>` : ''}
@@ -506,12 +512,9 @@ function analysisPath(q) {
 }
 function aiExpandHtml(q) {
   if (!isMcQuestion(q)) return '';
-  /* 預先驗證 fetch 未完成都唔會閃掣：fetch 成功先顯示 */
+  /* 按鍵由 sol-btnrow 出（同「題解」「考評報告」並排），這裡只有面板本體；
+     分析 JSON fetch 成功先顯示按鍵，避免閃掣。 */
   return `<div class="ai-panel" id="aiPanel" style="display:none">
-    <button type="button" class="ai-toggle" id="aiToggle" aria-expanded="false">
-      <span class="ai-toggle-label">深度分析</span>
-      <span class="ai-chevron" aria-hidden="true"></span>
-    </button>
     <div class="ai-body" id="aiBody" hidden><span class="ai-loading">載入中…</span></div>
   </div>`;
 }
@@ -606,6 +609,8 @@ function wireAiPanel(q) {
     if (!data) { panel.remove(); return; }
     panel.style.display = '';
     renderAi(data);
+    const rowBtn = $('#aiToggle');
+    if (rowBtn) rowBtn.style.display = '';
     const toggle = $('#aiToggle');
     const bodyEl = $('#aiBody');
     if (toggle && bodyEl) {

@@ -73,7 +73,9 @@ def collect(src: str) -> dict[int, list[str]]:
                 n = qnum(cols[0]) if cols else None
                 if n is not None:
                     cur = n
-                    cols = cols[1:]
+                    # pipe table 的題號同解答同一個 cell（"19. (a) Since …"），
+                    # 只剝走前綴，唔可以整格掉走，否則第一行解答會唔見。
+                    cols = [re.sub(r"^\s*\d{1,2}\.\s*", "", cols[0])] + cols[1:]
                 if cur is None:
                     continue
                 while cols and not cols[-1]:

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="211.080073pt" height="130.4pt" viewBox="0 0 211.080073 130.4" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="240.583287pt" height="144.098132pt" viewBox="0 0 240.583287 144.098132" xmlns="http://www.w3.org/2000/svg" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-11-17T12:51:28.472020</dc:date>
+    <dc:date>2026-11-17T12:57:38.011166</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -21,32 +21,32 @@
  </defs>
  <g id="figure_1">
   <g id="patch_1">
-   <path d="M 0 130.4 
-L 211.080073 130.4 
-L 211.080073 0 
-L 0 0 
+   <path d="M -0 144.098132 
+L 240.583287 144.098132 
+L 240.583287 -0 
+L -0 -0 
 z
 " style="fill: #ffffff"/>
   </g>
   <g id="axes_1">
    <g id="line2d_1">
-    <path d="M 19.644779 16.298039 
-L 50.578112 16.298039 
-" clip-path="url(#pff80069d6e)" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linecap: square"/>
+    <path d="M 19.099416 16.504431 
+L 54.061521 16.504431 
+" clip-path="url(#p4f19583664)" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linecap: square"/>
    </g>
    <g id="line2d_2">
-    <path d="M 84.468308 16.298039 
-L 125.409485 16.298039 
-" clip-path="url(#pff80069d6e)" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linecap: square"/>
+    <path d="M 78.309433 16.504431 
+L 131.880401 16.504431 
+" clip-path="url(#p4f19583664)" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linecap: square"/>
    </g>
    <g id="line2d_3">
-    <path d="M 51.487916 118.65098 
-L 51.487916 19.709804 
-" clip-path="url(#pff80069d6e)" style="fill: none; stroke: #000000; stroke-linecap: square"/>
+    <path d="M 55.753236 107.857029 
+L 55.753236 22.14348 
+" clip-path="url(#p4f19583664)" style="fill: none; stroke: #000000; stroke-linecap: square"/>
    </g>
    <g id="text_1">
     <!-- Stem (tens) -->
-    <g transform="translate(7.2 16.491674) scale(0.095 -0.095)">
+    <g transform="translate(7.2 15.437096) scale(0.1 -0.1)">
      <defs>
       <path id="DejaVuSerif-36" d="M 594 225 
 L 594 1288 
@@ -278,7 +278,7 @@ z
    </g>
    <g id="text_2">
     <!-- Leaf (units) -->
-    <g transform="translate(77.182568 16.491674) scale(0.095 -0.095)">
+    <g transform="translate(75.877729 15.437096) scale(0.1 -0.1)">
      <defs>
       <path id="DejaVuSerif-2f" d="M 353 0 
 L 353 331 
@@ -426,7 +426,7 @@ z
    </g>
    <g id="text_3">
     <!-- 4 -->
-    <g transform="translate(31.930195 33.680009) scale(0.1 -0.1)">
+    <g transform="translate(33.240156 33.893498) scale(0.105 -0.105)">
      <defs>
       <path id="DejaVuSerif-17" d="M 2234 1581 
 L 2234 4063 
@@ -457,7 +457,7 @@ z
    </g>
    <g id="text_4">
     <!-- 5 -->
-    <g transform="translate(55.585097 33.680009) scale(0.1 -0.1)">
+    <g transform="translate(60.307593 33.893498) scale(0.105 -0.105)">
      <defs>
       <path id="DejaVuSerif-18" d="M 3219 4666 
 L 3219 4153 
@@ -492,7 +492,7 @@ z
    </g>
    <g id="text_5">
     <!-- 6 -->
-    <g transform="translate(81.74196 33.680009) scale(0.1 -0.1)">
+    <g transform="translate(88.502839 33.893498) scale(0.105 -0.105)">
      <defs>
       <path id="DejaVuSerif-19" d="M 2094 219 
 Q 2534 219 2771 542 
@@ -531,7 +531,7 @@ z
    </g>
    <g id="text_6">
     <!-- 8 -->
-    <g transform="translate(134.055686 33.680009) scale(0.1 -0.1)">
+    <g transform="translate(144.893331 33.893498) scale(0.105 -0.105)">
      <defs>
       <path id="DejaVuSerif-1b" d="M 2981 1275 
 Q 2981 1775 2732 2051 
@@ -578,13 +578,13 @@ z
    </g>
    <g id="text_7">
     <!-- 5 -->
-    <g transform="translate(31.930195 51.421186) scale(0.1 -0.1)">
+    <g transform="translate(33.240156 51.374551) scale(0.105 -0.105)">
      <use xlink:href="#DejaVuSerif-18"/>
     </g>
    </g>
    <g id="text_8">
     <!-- w -->
-    <g transform="translate(54.48666 51.421186) scale(0.1 -0.1)">
+    <g transform="translate(59.154233 51.374551) scale(0.105 -0.105)">
      <defs>
       <path id="DejaVuSerif-5a" d="M 3072 3322 
 L 3922 728 
@@ -616,19 +616,19 @@ z
    </g>
    <g id="text_9">
     <!-- w -->
-    <g transform="translate(80.643523 51.421186) scale(0.1 -0.1)">
+    <g transform="translate(87.349479 51.374551) scale(0.105 -0.105)">
      <use xlink:href="#DejaVuSerif-5a"/>
     </g>
    </g>
    <g id="text_10">
     <!-- 6 -->
-    <g transform="translate(107.898823 51.421186) scale(0.1 -0.1)">
+    <g transform="translate(116.698085 51.374551) scale(0.105 -0.105)">
      <use xlink:href="#DejaVuSerif-19"/>
     </g>
    </g>
    <g id="text_11">
     <!-- 7 -->
-    <g transform="translate(134.055686 51.421186) scale(0.1 -0.1)">
+    <g transform="translate(144.893331 51.374551) scale(0.105 -0.105)">
      <defs>
       <path id="DejaVuSerif-1a" d="M 3609 4347 
 L 1784 0 
@@ -648,13 +648,13 @@ z
    </g>
    <g id="text_12">
     <!-- 6 -->
-    <g transform="translate(31.930195 69.162362) scale(0.1 -0.1)">
+    <g transform="translate(33.240156 68.855604) scale(0.105 -0.105)">
      <use xlink:href="#DejaVuSerif-19"/>
     </g>
    </g>
    <g id="text_13">
     <!-- 3 -->
-    <g transform="translate(55.585097 69.162362) scale(0.1 -0.1)">
+    <g transform="translate(60.307593 68.855604) scale(0.105 -0.105)">
      <defs>
       <path id="DejaVuSerif-16" d="M 622 4469 
 Q 988 4606 1323 4678 
@@ -696,25 +696,25 @@ z
    </g>
    <g id="text_14">
     <!-- 4 -->
-    <g transform="translate(81.74196 69.162362) scale(0.1 -0.1)">
+    <g transform="translate(88.502839 68.855604) scale(0.105 -0.105)">
      <use xlink:href="#DejaVuSerif-17"/>
     </g>
    </g>
    <g id="text_15">
     <!-- 5 -->
-    <g transform="translate(107.898823 69.162362) scale(0.1 -0.1)">
+    <g transform="translate(116.698085 68.855604) scale(0.105 -0.105)">
      <use xlink:href="#DejaVuSerif-18"/>
     </g>
    </g>
    <g id="text_16">
     <!-- 6 -->
-    <g transform="translate(134.055686 69.162362) scale(0.1 -0.1)">
+    <g transform="translate(144.893331 68.855604) scale(0.105 -0.105)">
      <use xlink:href="#DejaVuSerif-19"/>
     </g>
    </g>
    <g id="text_17">
     <!-- 9 -->
-    <g transform="translate(160.212548 69.162362) scale(0.1 -0.1)">
+    <g transform="translate(173.088577 68.855604) scale(0.105 -0.105)">
      <defs>
       <path id="DejaVuSerif-1c" d="M 2994 2091 
 Q 2784 1856 2512 1740 
@@ -753,19 +753,19 @@ z
    </g>
    <g id="text_18">
     <!-- 9 -->
-    <g transform="translate(186.369411 69.162362) scale(0.1 -0.1)">
+    <g transform="translate(201.283824 68.855604) scale(0.105 -0.105)">
      <use xlink:href="#DejaVuSerif-1c"/>
     </g>
    </g>
    <g id="text_19">
     <!-- 7 -->
-    <g transform="translate(31.930195 86.903539) scale(0.1 -0.1)">
+    <g transform="translate(33.240156 86.336656) scale(0.105 -0.105)">
      <use xlink:href="#DejaVuSerif-1a"/>
     </g>
    </g>
    <g id="text_20">
     <!-- 0 -->
-    <g transform="translate(55.585097 86.903539) scale(0.1 -0.1)">
+    <g transform="translate(60.307593 86.336656) scale(0.105 -0.105)">
      <defs>
       <path id="DejaVuSerif-13" d="M 2034 219 
 Q 2513 219 2750 744 
@@ -794,7 +794,7 @@ z
    </g>
    <g id="text_21">
     <!-- 2 -->
-    <g transform="translate(81.74196 86.903539) scale(0.1 -0.1)">
+    <g transform="translate(88.502839 86.336656) scale(0.105 -0.105)">
      <defs>
       <path id="DejaVuSerif-15" d="M 819 3553 
 L 469 3553 
@@ -827,21 +827,21 @@ z
    </g>
    <g id="text_22">
     <!-- 8 -->
-    <g transform="translate(31.930195 104.644715) scale(0.1 -0.1)">
+    <g transform="translate(33.240156 103.817709) scale(0.105 -0.105)">
      <use xlink:href="#DejaVuSerif-1b"/>
     </g>
    </g>
    <g id="text_23">
     <!-- 7 -->
-    <g transform="translate(55.585097 104.644715) scale(0.1 -0.1)">
+    <g transform="translate(60.307593 103.817709) scale(0.105 -0.105)">
      <use xlink:href="#DejaVuSerif-1a"/>
     </g>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="pff80069d6e">
-   <rect x="13.958504" y="7.2" width="189.921569" height="116"/>
+  <clipPath id="p4f19583664">
+   <rect x="14.870129" y="7.2" width="218.513158" height="129.698132"/>
   </clipPath>
  </defs>
 </svg>

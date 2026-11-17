@@ -37,8 +37,12 @@ def bank_reports() -> dict[tuple[str, str, int, int], str]:
         d = json.loads(f.read_text(encoding="utf-8"))
         for k, v in d["paper"]["p1"].items():
             mm = re.match(r"\s*(\d{1,2})", k)
-            if mm and v.strip():
-                out[(year, lang, 1, int(mm.group(1)))] = v.strip()
+            if not (mm and v.strip()):
+                continue
+            key = (year, lang, 1, int(mm.group(1)))
+            letters = re.findall(r"\(([a-c])\)", k)
+            txt = f"（{letters[0]}）{v.strip()}" if len(letters) == 1 else v.strip()
+            out[key] = (out[key] + "\n\n" + txt) if key in out else txt
         for k, v in d["paper"]["p2"].items():
             if k.isdigit() and v.strip():
                 out[(year, lang, 2, int(k))] = v.strip()
@@ -46,9 +50,13 @@ def bank_reports() -> dict[tuple[str, str, int, int], str]:
 
 
 def note_html(note: str) -> str:
-    esc = note.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+    """One <p> per paragraph, so （a）/（b） sit on separate lines on the site."""
+    def esc(x: str) -> str:
+        return x.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+    paras = [p.strip() for p in str(note).split("\n\n") if p.strip()]
+    body = "".join(f"<p>{esc(x)}</p>" for x in paras)
     return ('<details class="exam-note"><summary>考評報告這樣說</summary>'
-            f'<p>{esc}</p></details>')
+            f'{body}</details>')
 
 
 def main() -> None:

@@ -106,7 +106,18 @@ main { flex:1; min-height:0; display:flex; flex-direction:column; max-width:960p
 #qbody table { border-collapse:collapse; width:auto; max-width:100%; margin:0.7em 0; font-size:14.5px; }
 #qbody th, #qbody td { border:1px solid #8a96a5; padding:5px 10px; text-align:left; vertical-align:middle; }
 #qbody th { background:#eef2f6; font-weight:700; }
-#qbody .ttag { color:var(--acc); font-size:12.5px; }
+#qbody .mc-pct {
+  display: inline-block;
+  margin: 6px 0 4px;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #7ec8ff;
+  background: rgba(90,170,255,0.12);
+  border: 0.5px solid rgba(90,170,255,0.35);
+}
+.mc-pct strong { font-weight: 700; }
+.ttag { color:var(--acc); font-size:12.5px; }
 #qbody .ttag-label { color:var(--mut); font-size:12.5px; margin-right:4px; }
 .sol-panel {
   margin-top:16px; padding-top:10px; border-top:1px dashed var(--line);
@@ -326,8 +337,8 @@ footer { text-align:center; color:var(--mut); font-size:11.5px; padding:4px 0 12
 </main>
 <footer>DSE 題庫（數學）— 內容僅供學習用途</footer>
 
-<script src="data.js?v=202611172310"></script>
-<script src="answers.js?v=202611172310"></script>
+<script src="data.js?v=20261117135653"></script>
+<script src="answers.js?v=20261117135653"></script>
 <script>
 const QS = window.QB.questions;
 const $ = s => document.querySelector(s);
@@ -453,10 +464,12 @@ function solExpandHtml(q, expanded) {
 /* 考評局對本題嘅評語（data.js 的 report 欄；已按段落分開） */
 function reportHtml(q) {
   const t = (q && q.report) || '';
-  if (!t.trim()) return '';
-  return t.split(/\n{2,}/).filter(Boolean)
+  const pct = (q && q.answer_pct != null) ? `<p class="mc-pct mc-pct-rep">考生答對率 <strong>${q.answer_pct}%</strong></p>` : '';
+  if (!t.trim()) return pct;
+  const body = t.split(/\n{2,}/).filter(Boolean)
           .map(x => `<p>${x.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}</p>`)
           .join('');
+  return pct + body;
 }
 function scrollSolIntoView(panel) {
   const qb = $('#qbody');
@@ -827,8 +840,12 @@ function show(q, opts) {
     }
   }
   const expandSol = !!opts.expandSol && !!findSolution(q);
+  /* Paper 2（MC）：顯示官方考評報告的考生答對率 */
+  const pctHtml = (isMcQuestion(q) && q.answer_pct != null)
+    ? `<p class="mc-pct" title="來自考評局考評報告／評卷參考">考生答對率 <strong>${q.answer_pct}%</strong></p>`
+    : '';
   $('#qbody').innerHTML =
-    `<div class="qcontent">${q.html}${tagsHtml}</div>` +
+    `<div class="qcontent">${pctHtml}${q.html}${tagsHtml}</div>` +
     solExpandHtml(q, expandSol) +
     aiExpandHtml(q);
   const qcontent = $('#qbody .qcontent');
@@ -1008,7 +1025,7 @@ if (!location.hash) {
   }
 }
 </script>
-<script src="pwa.js?v=202611172310"></script>
+<script src="pwa.js?v=20261117135653"></script>
 
 <script>
 /* 圖片點擊放大 */

@@ -83,10 +83,11 @@ function pdfRowHtml(r) {
         <span class="paper-tags">
           <span class="tag subj">${esc(r.name)}</span>
           <span class="tag paper">${esc(paperLbl)}</span>
-          <span class="tag lang">${esc(langLbl)}</span>
-          <span class="tag pdf">${esc(kindLbl)} PDF</span>
+          ${r.lang === "na" ? "" : `<span class="tag lang">${esc(langLbl)}</span>`}
+          <span class="tag pdf">${esc(kindLbl)}</span>
+          <span class="tag dl">直接下載</span>
         </span>
-        <span class="paper-title">${esc(r.name)} ${esc(paperLbl)} · ${esc(kindLbl)}（直接下載）</span>
+        <span class="paper-title">${esc(r.name)} ${esc(paperLbl)} · ${esc(kindLbl)}</span>
       </span>
       <span class="paper-chev" aria-hidden="true"></span>
     </a>`;

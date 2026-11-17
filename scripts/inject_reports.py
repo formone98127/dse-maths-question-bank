@@ -86,11 +86,11 @@ def main() -> None:
             v = q.get(field) or ""
             if "【考生表現】" in v:
                 q[field] = INLINE.sub("", v)
-        # an older box (e.g. the pre-fix text) must be replaced, not stacked
+        # 2026-11-17 Kin: 評語改成「題解」按鍵側邊一粒「考評報告」按鍵，
+        # 所以 data.js 唔再嵌 <details>，只留 report 欄（順手清走舊框）。
         html = q.get("html") or ""
         html = re.sub(r'(?:<p>)?<details class="exam-note">.*?</details>(?:</p>)?', "", html, flags=re.S)
-        box = note_html(note)
-        q["html"] = html + "<p>" + box + "</p>"
+        q["html"] = html
         q["report"] = note
         n += 1
 

@@ -129,6 +129,19 @@ main { flex:1; min-height:0; display:flex; flex-direction:column; max-width:960p
   transition: transform .18s ease;
 }
 .sol-panel.open .sol-chevron { transform: rotate(180deg); }
+.sol-btnrow { display:flex; gap:8px; justify-content:flex-end; align-items:center; flex-wrap:wrap; }
+.sol-btnrow > .sol-toggle { margin-left:0; }
+.rep-toggle {
+  border-color:rgba(21,90,168,.28); background:#f3f8ff; color:#155aa8;
+}
+.rep-body {
+  margin-top:12px; padding:12px 14px;
+  border:1px solid rgba(21,90,168,.18); border-radius:12px;
+  background:#f7fbff; font-size:15.5px; line-height:1.8;
+}
+.rep-body[hidden] { display:none !important; }
+.rep-body p { margin:0 0 8px; }
+.rep-body p:last-child { margin-bottom:0; }
 .sol-body {
   margin-top:12px; padding:12px 14px;
   border:1px solid rgba(198,40,40,.18); border-radius:12px;
@@ -396,20 +409,35 @@ function solExpandHtml(q, expanded) {
     return '';
   }
   const sol = findSolution(q);
-  if (!sol) {
+  const rep = reportHtml(q);
+  if (!sol && !rep) {
     return `<div class="sol-pending-row"><span class="sol-pending">待建立題解</span></div>`;
   }
-  const open = !!expanded;
+  const open = !!expanded && !!sol;
+  const solBtn = sol ? `<button type="button" class="sol-toggle" id="solToggle" aria-expanded="${open ? 'true' : 'false'}">
+          <span class="sol-toggle-label">${open ? '收起題解' : '題解'}</span>
+          <span class="sol-chevron" aria-hidden="true"></span>
+        </button>` : '';
+  const repBtn = rep ? `<button type="button" class="sol-toggle rep-toggle" id="repToggle" aria-expanded="false">
+          <span class="rep-toggle-label">考評報告</span>
+          <span class="sol-chevron" aria-hidden="true"></span>
+        </button>` : '';
   return `
     <div class="sol-panel${open ? ' open' : ''}" id="solPanel" data-expanded="${open ? 'true' : 'false'}">
-      <button type="button" class="sol-toggle" id="solToggle" aria-expanded="${open ? 'true' : 'false'}">
-        <span class="sol-toggle-label">${open ? '收起題解' : '題解'}</span>
-        <span class="sol-chevron" aria-hidden="true"></span>
-      </button>
-      <div class="sol-body" id="solBody"${open ? '' : ' hidden'}>
+      <div class="sol-btnrow">${solBtn}${repBtn}</div>
+      ${sol ? `<div class="sol-body" id="solBody"${open ? '' : ' hidden'}>
         <div class="sol-content">${sol.html}</div>
-      </div>
+      </div>` : ''}
+      ${rep ? `<div class="rep-body" id="repBody" hidden>${rep}</div>` : ''}
     </div>`;
+}
+/* 考評局對本題嘅評語（data.js 的 report 欄；已按段落分開） */
+function reportHtml(q) {
+  const t = (q && q.report) || '';
+  if (!t.trim()) return '';
+  return t.split(/\n{2,}/).filter(Boolean)
+          .map(x => `<p>${x.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}</p>`)
+          .join('');
 }
 function scrollSolIntoView(panel) {
   const qb = $('#qbody');
@@ -419,6 +447,21 @@ function scrollSolIntoView(panel) {
   qb.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
 }
 function wireSolToggle(q) {
+  /* 考評報告按鍵要先接駁：冇題解嘅題目只有這一粒，唔可以因為 solBody 唔存在就跳走 */
+  const rep = document.getElementById('repToggle');
+  const repBody = document.getElementById('repBody');
+  if (rep && repBody) {
+    rep.addEventListener('click', () => {
+      const open = repBody.hidden;
+      repBody.hidden = !open;
+      rep.setAttribute('aria-expanded', open ? 'true' : 'false');
+      rep.classList.toggle('open', open);
+      const lbl = rep.querySelector('.rep-toggle-label');
+      if (lbl) lbl.textContent = open ? '收起考評報告' : '考評報告';
+      const MJ = window.MathJax;
+      if (open && MJ?.typesetPromise) MJ.typesetPromise([repBody]).catch(()=>{});
+    });
+  }
   const toggle = $('#solToggle');
   const panel = $('#solPanel');
   const body = $('#solBody');

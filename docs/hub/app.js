@@ -37,11 +37,16 @@ function pdfSubjects() {
 }
 
 /* 該科該年已在電子題庫（data.js）的卷別，例如 {"Paper 1","Paper 2"} */
-function bankPapers(subjectName, year) {
+/* sid → 題庫用的科目名（CATALOG 顯示名可能係「數學（必修部分）」，QB 用「數學」） */
+const QB_SUBJECT = { math: "數學", econ: "經濟", chem: "化學", bio: "生物", phys: "物理",
+                     eng: "英語", chi: "中文", bafs: "企會財", geog: "地理", hist: "歷史",
+                     chist: "中史", ict: "ICT", toursm: "旅遊與款待", m1: "M1" };
+function bankPapers(sid, year) {
   const out = new Set();
+  const names = new Set([QB_SUBJECT[sid], sid].filter(Boolean));
   const qs = (window.QB && window.QB.questions) || [];
   for (const q of qs) {
-    if (q.subject === subjectName && String(q.year) === String(year)) out.add(String(q.paper));
+    if (names.has(q.subject) && String(q.year) === String(year)) out.add(String(q.paper));
   }
   return out;
 }
@@ -54,13 +59,15 @@ function subjectName(id) {
 function pdfRowsFor(sid, name, year) {
   const subj = ((window.PAPERS || {}).subjects || {})[sid];
   if (!subj) return [];
-  const have = bankPapers(name, year);
+  const have = bankPapers(sid, year);
   return (subj.items || [])
     .filter((it) => String(it.y) === String(year))
     .filter((it) => {
-      if (it.k !== "paper") return true;      // 評卷參考／考評報告永遠可下載
+      /* CASE 2：該卷已有電子版 → 卡片完全唔出（PDF 改由閱讀器右上角「全卷下載」提供） */
       const pn = it.p ? `Paper ${it.p}` : "";
-      return !(pn && have.has(pn));           // 有電子版 → CASE 2，唔重複
+      if (pn && have.has(pn)) return false;
+      if (!pn && have.size > 0) return false;   // 「全卷」PDF 而該年已有電子版
+      return true;
     })
     .map((it) => ({ pdf: true, sid, name, year: it.y, kind: it.k, paper: it.p, lang: it.l, url: it.u }));
 }

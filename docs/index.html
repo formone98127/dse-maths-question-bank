@@ -337,8 +337,9 @@ footer { text-align:center; color:var(--mut); font-size:11.5px; padding:4px 0 12
 </main>
 <footer>DSE 題庫（數學）— 內容僅供學習用途</footer>
 
-<script src="data.js?v=202611180030"></script>
-<script src="answers.js?v=202611180030"></script>
+<script src="hub/papers.js?v=1"></script>
+<script src="data.js?v=20261117155754"></script>
+<script src="answers.js?v=20261117155754"></script>
 <script>
 const QS = window.QB.questions;
 const $ = s => document.querySelector(s);
@@ -375,8 +376,26 @@ function paperKey(subject, year, paper) {
   else if (/2/.test(p)) zh = '卷二';
   return `${sid}|${year}|${zh}`;
 }
+/* 由 window.PAPERS 找該卷 PDF（CASE 2 卷都由這裡提供「全卷下載」） */
+const SUBJ_SID = { '數學': 'math', '數學（必修部分）': 'math', '經濟': 'econ', '化學': 'chem',
+                   '生物': 'bio', '物理': 'phys', '英語': 'eng', '英文': 'eng', '中文': 'chi',
+                   '企業、會計與財務概論': 'bafs', '地理': 'geog', '歷史': 'hist',
+                   '中國歷史': 'chist', '資訊及通訊科技': 'ict', '旅遊與款待': 'toursm' };
+function papersPdfFor(q) {
+  const subs = (window.PAPERS || {}).subjects || {};
+  const sid = SUBJ_SID[q.subject] || 'math';
+  const subj = subs[sid];
+  if (!subj) return null;
+  const wantP = String(q.paper || '').match(/1A|1B|[12]/i);
+  const pTok = wantP ? /1A/i.test(q.paper) ? '1A' : /1B/i.test(q.paper) ? '1B' : wantP[0] : '';
+  const isEn = /英文|_EN|\(EN\)|ENG/i.test(String(q.file || ''));
+  const items = (subj.items || []).filter((it) => it.k === 'paper' && String(it.y) === String(q.year));
+  const exact = items.filter((it) => pTok && String(it.p || '').toUpperCase() === pTok.toUpperCase());
+  const anyLang = (arr) => arr.find((it) => it.l === (isEn ? 'en' : 'zh')) || arr[0];
+  return anyLang(exact.length ? exact : items) ? (anyLang(exact.length ? exact : items).u) : null;
+}
 function syncPdfTop(q) {
-  const url = q ? (PDF_LINKS[paperKey(q.subject, q.year, q.paper)] || null) : null;
+  const url = q ? (PDF_LINKS[paperKey(q.subject, q.year, q.paper)] || papersPdfFor(q)) : null;
   const btn = $('#pdfBtn');
   if (url) {
     btn.href = url;
@@ -1028,7 +1047,7 @@ if (!location.hash) {
   }
 }
 </script>
-<script src="pwa.js?v=202611180030"></script>
+<script src="pwa.js?v=20261117155754"></script>
 
 <script>
 /* 圖片點擊放大 */

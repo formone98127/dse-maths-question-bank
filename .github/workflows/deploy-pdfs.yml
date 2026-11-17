@@ -63,20 +63,32 @@ jobs:
 
       - name: Parallel download
         run: |
-          set -uo pipefail
+          set -euo pipefail
           mkdir -p /tmp/pdfs
-          while IFS=$'\t' read -r i src dst; do
-            printf '%s\n  out=/tmp/pdfs/%s.pdf\n  dir=/tmp/pdfs\n' "$src" "$i"
-          done < /tmp/work.tsv > /tmp/dl.txt
-          aria2c -i /tmp/dl.txt -j 8 -x 4 -s 4 --allow-overwrite=true --auto-file-renaming=false \
-                 --file-allocation=none --console-log-level=warn --summary-interval=0 >/dev/null 2>&1 || true
-          echo "downloaded: $(ls /tmp/pdfs | wc -l) files, $(du -sh /tmp/pdfs | cut -f1)"
-          : > /tmp/missing.txt
-          while IFS=$'\t' read -r i src dst; do
-            f=/tmp/pdfs/$i.pdf
-            if [ ! -s "$f" ] || [ "$(stat -c%s "$f")" -lt 8000 ]; then echo "$i" >> /tmp/missing.txt; fi
-          done < /tmp/work.tsv
-          echo "missing: $(wc -l < /tmp/missing.txt)"
+          python3 - <<'PY'
+          import concurrent.futures as cf, pathlib, urllib.request, os
+          rows=[l.rstrip('\n').split('\t') for l in open('/tmp/work.tsv',encoding='utf-8') if l.strip()]
+          out=pathlib.Path('/tmp/pdfs'); out.mkdir(exist_ok=True)
+          def grab(r):
+              i,src,_=r
+              dst=out/f'{i}.pdf'
+              try:
+                  req=urllib.request.Request(src, headers={'User-Agent':'Mozilla/5.0'})
+                  with urllib.request.urlopen(req, timeout=180) as resp, open(dst,'wb') as f:
+                      f.write(resp.read())
+                  if dst.stat().st_size < 8000:
+                      dst.unlink(); return i,'small'
+                  return i,'ok'
+              except Exception as e:
+                  return i,f'err:{type(e).__name__}'
+          ok=bad=0; missing=[]
+          with cf.ThreadPoolExecutor(max_workers=8) as ex:
+              for i,st in ex.map(grab, rows):
+                  if st=='ok': ok+=1
+                  else: bad+=1; missing.append(i)
+          open('/tmp/missing.txt','w').write('\n'.join(missing))
+          print(f'downloaded ok={ok} bad={bad} total={len(rows)}')
+          PY
 
       - name: Upload via single lftp session
         env:

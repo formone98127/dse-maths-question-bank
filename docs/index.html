@@ -374,12 +374,15 @@ function syncPdfTop(q) {
 
 function findSolution(q) {
   if (!q) return null;
+  /* 解答 entry 由 MS 匯入時 year／qno 係 number，題目係 string，
+     用 === 會永遠配唔到（題解鍵因此長期唔出）。一律轉字串比較。 */
+  const y = String(q.year), p = String(q.paper), n = String(q.qno);
   return QS.find(x =>
     x.type === '解答' &&
     x.subject === q.subject &&
-    x.year === q.year &&
-    x.paper === q.paper &&
-    x.qno === q.qno
+    String(x.year) === y &&
+    String(x.paper) === p &&
+    String(x.qno) === n
   ) || null;
 }
 function findQuestion(q) {

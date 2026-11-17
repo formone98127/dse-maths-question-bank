@@ -1,0 +1,398 @@
+# HKDSE Mathematics Compulsory Part Paper 1 — Question Bank (2018)
+
+> Source paper: HKDSE Mathematics Compulsory Part Paper 1 (2018, 24 pages, English paper).
+> Questions are reproduced verbatim in the original language. No answers and no worked solutions are included.
+> Texts transcribed page by page; figures redrawn 1:1 with matplotlib (SOP §3). Copyright of the paper belongs to the Hong Kong Examinations and Assessment Authority.
+
+---
+
+## Question 1
+
+【建議標籤】
+
+- 卷別/部分：Paper 1 · Section A(1)
+- 課題：#Change of Subject #Algebra
+
+【題目內容】
+
+Make \( b \) the subject of the formula \( \frac{a+4}{3} = \frac{b+1}{2} \). (3 marks)
+
+---
+
+## Question 2
+
+【建議標籤】
+
+- 卷別/部分：Paper 1 · Section A(1)
+- 課題：#Laws of Indices #Algebra
+
+【題目內容】
+
+Simplify \( \frac{xy^7}{(x^{-2}y^3)^4} \) and express your answer with positive indices. (3 marks)
+
+---
+
+## Question 3
+
+【建議標籤】
+
+- 卷別/部分：Paper 1 · Section A(1)
+- 課題：#Errors #Significant Figures
+
+【題目內容】
+
+(a) Round up $265.473$ to the nearest integer.
+
+(b) Round down $265.473$ to 1 decimal place.
+
+(c) Round off $265.473$ to 2 significant figures.
+
+(3 marks)
+
+---
+
+## Question 4
+
+【建議標籤】
+
+- 卷別/部分：Paper 1 · Section A(1)
+- 課題：#Probability #Statistics
+
+【題目內容】
+
+A box contains $n$ white balls, 5 black balls and 8 red balls. If a ball is randomly drawn from the box, then the probability of drawing a red ball is $\frac{2}{5}$. Find the value of $n$.
+
+(3 marks)
+
+---
+
+## Question 5
+
+【建議標籤】
+
+- 卷別/部分：Paper 1 · Section A(1)
+- 課題：#Factorisation #Polynomials
+
+【題目內容】
+
+Factorize
+
+(a) \(9r^3 - 18r^2s\)
+
+(b) \(9r^3 - 18r^2s - rs^2 + 2s^3\)
+
+(4 marks)
+
+---
+
+## Question 6
+
+【建議標籤】
+
+- 卷別/部分：Paper 1 · Section A(1)
+- 課題：#Linear Inequalities #Algebra
+
+【題目內容】
+
+(a) Find the range of values of \( x \) which satisfy both \(\frac{3-x}{2} > 2x + 7\) and \( x + 8 \geq 0 \).
+
+(b) Write down the greatest integer satisfying both inequalities in (a).
+
+(4 marks)
+
+---
+
+## Question 7
+
+【建議標籤】
+
+- 卷別/部分：Paper 1 · Section A(1)
+- 課題：#Percentages #Profit and Loss
+
+【題目內容】
+
+The marked price of a vase is 30% above its cost. A loss of $88 is made by selling the vase at a discount of 40% on its marked price. Find the marked price of the vase. (5 marks)
+
+---
+
+## Question 8
+
+【建議標籤】
+
+- 卷別/部分：Paper 1 · Section A(1)
+- 課題：#Circle Properties #Angles
+
+【題目內容】
+
+In Figure 1, $ABCDE$ is a circle. It is given that $AB \parallel ED$. $AD$ and $BE$ intersect at the point $F$.
+
+![Figure 1](2018_P1_figs_svg/Fig1.png)
+
+Express $x$ and $y$ in terms of $\theta$.
+
+(5 marks)
+
+---
+
+## Question 9
+
+【建議標籤】
+
+- 卷別/部分：Paper 1 · Section A(1)
+- 課題：#Rate and Ratio #Ratio
+
+【題目內容】
+
+A car travels from city \( P \) to city \( Q \) at an average speed of \( 72 \text{ km/h} \) and then the car travels from city \( Q \) to city \( R \) at an average speed of \( 90 \text{ km/h} \). It is given that the car travels \( 210 \text{ km} \) in \( 161 \text{ minutes} \) for the whole journey. How long does the car take to travel from city \( P \) to city \( Q \)? (5 marks)
+
+---
+
+## Question 10
+
+【建議標籤】
+
+- 卷別/部分：Paper 1 · Section A(1)
+- 課題：#Statistics #Box-and-whisker Diagram
+
+【題目內容】
+
+The box-and-whisker diagram below shows the distribution of the ages of the clerks in team \(X\) of a company. It is given that the range and the inter-quartile range of this distribution are 43 and 21 respectively.
+
+![](2018_P1_figs_svg/Fig2.png)
+
+(a) Find \(a\) and \(b\).
+
+(3 marks)
+
+(b) There are five clerks in team \(Y\) of the company and three of them are of age 38. It is given that the range of the ages of the clerks in team \(Y\) is 20. Team \(X\) and team \(Y\) are now combined to form a section. The manager of the company claims that the range of the ages of the clerks in the section and the range of the ages of the clerks in team \(X\) must be the same. Do you agree? Explain your answer.
+
+(2 marks)
+
+---
+
+## Question 11
+
+【建議標籤】
+
+- 卷別/部分：Paper 1 · Section A(1)
+- 課題：#Statistics #Mean #Median
+
+【題目內容】
+
+The following table shows the distribution of the numbers of children of some families:
+
+| Number of children | 0 | 1 | 2 | 3 | 4 | |--------------------|---|---|---|---|---| | Number of families | $k$ | 2 | 9 | 6 | 7 |
+
+It is given that $k$ is a positive integer.
+
+(a) If the mode of the distribution is 2, write down
+
+(i) the least possible value of $k$;
+
+(ii) the greatest possible value of $k$.
+
+(2 marks)
+
+(b) If the median of the distribution is 2, write down
+
+(i) the least possible value of $k$;
+
+(ii) the greatest possible value of $k$.
+
+(2 marks)
+
+(c) If the mean of the distribution is 2, find the value of $k$.
+
+(2 marks)
+
+---
+
+## Question 12
+
+【建議標籤】
+
+- 卷別/部分：Paper 1 · Section A(1)
+- 課題：#Polynomials #Factor Theorem #Quadratic Equations
+
+【題目內容】
+
+Let \( f(x) = 4x(x+1)^2 + ax + b \), where \( a \) and \( b \) are constants. It is given that \( x-3 \) is a factor of \( f(x) \). When \( f(x) \) is divided by \( x+2 \), the remainder is \( 2b+165 \).
+
+(a) Find \( a \) and \( b \).
+
+(b) Someone claims that the equation \( f(x) = 0 \) has at least one irrational root. Do you agree? Explain your answer.
+
+(3 marks)
+
+(4 marks)
+
+---
+
+## Question 13
+
+【建議標籤】
+
+- 卷別/部分：Paper 1 · Section A(1)
+- 課題：#Similar Triangles #Mensuration
+
+【題目內容】
+
+In Figure 2, \(ABCD\) is a trapezium with \(\angle ABC = 90^\circ\) and \(AB \parallel DC\). \(E\) is a point lying on \(BC\) such that \(\angle AED = 90^\circ\).
+
+![Figure 2](2018_P1_figs_svg/Fig3.png)
+
+(a) Prove that \(\triangle ABE \sim \triangle ECD\).
+
+(b) It is given that \(AB = 15 \text{ cm}\), \(AE = 25 \text{ cm}\) and \(CE = 36 \text{ cm}\).
+
+(i) Find the length of \(CD\).
+
+(ii) Find the area of \(\triangle ADE\).
+
+(iii) Is there a point \(F\) lying on \(AD\) such that the distance between \(E\) and \(F\) is less than \(23 \text{ cm}\)? Explain your answer.
+
+(2 marks)
+
+(6 marks)
+
+\(2018\)-DSE-MATH-CP 1-13 [FIGURE]
+
+---
+
+## Question 14
+
+【建議標籤】
+
+- 卷別/部分：Paper 1 · Section A(1)
+- 課題：#Mensuration #Solids
+
+【題目內容】
+
+A right circular cylindrical container of base radius $8\text{ cm}$ and height $64\text{ cm}$ and an inverted right circular conical vessel of base radius $20\text{ cm}$ and height $60\text{ cm}$ are held vertically. The container is fully filled with water. The water in the container is now poured into the vessel.
+
+(a) Find the volume of water in the vessel in terms of $\pi$. (2 marks)
+
+(b) Find the depth of water in the vessel. (4 marks)
+
+(c) If a solid metal sphere of radius $14\text{ cm}$ is then put into the vessel and the sphere is totally immersed in the water, will the water overflow? Explain your answer. (3 marks)
+
+---
+
+## Question 15
+
+【建議標籤】
+
+- 卷別/部分：Paper 1 · Section A(1)
+- 課題：#Permutations and Combinations #Probability
+
+【題目內容】
+
+An eight-digit phone number is formed by a permutation of $2, 3, 4, 5, 6, 7, 8$ and $9$.
+
+(a) How many different eight-digit phone numbers can be formed?
+
+(b) If the first digit and the last digit of an eight-digit phone number are odd numbers, how many different eight-digit phone numbers can be formed?
+
+(1 mark)
+
+(2 marks)
+
+---
+
+## Question 16
+
+【建議標籤】
+
+- 卷別/部分：Paper 1 · Section A(1)
+- 課題：#Geometric Sequence #Sequences
+
+【題目內容】
+
+The 3rd term and the 4th term of a geometric sequence are 720 and 864 respectively.
+
+(a) Find the 1st term of the sequence.
+
+(b) Find the greatest value of \( n \) such that the sum of the \((n+1)\)th term and the \((2n+1)\)th term is less than \( 5 \times 10^{14} \).
+
+(2 marks)
+
+(3 marks)
+
+---
+
+## Question 17
+
+【建議標籤】
+
+- 卷別/部分：Paper 1 · Section A(1)
+- 課題：#Trigonometry #3-D Geometry #Angle between Planes
+
+【題目內容】
+
+(a) In Figure 3(a), $ABCD$ is a paper card in the shape of a parallelogram. It is given that $AB=60\text{ cm}$, $\angle ABD=20^\circ$ and $\angle BAD=120^\circ$.
+
+![Figure 3(a)](2018_P1_figs_svg/Fig4.png)
+
+Find the length of $AD$. (2 marks)
+
+(b) The paper card in Figure 3(a) is folded along $BD$ such that the distance between $A$ and $C$ is $40\text{ cm}$ (see Figure 3(b)).
+
+![Figure 3(b)](2018_P1_figs_svg/Fig5.png)
+
+(i) Find $\angle ABC$.
+
+(ii) Find the angle between the plane $ABD$ and the plane $BCD$. (5 marks)
+
+---
+
+## Question 18
+
+【建議標籤】
+
+- 卷別/部分：Paper 1 · Section A(1)
+- 課題：#Variation #Quadratic Functions
+
+【題目內容】
+
+It is given that \( f(x) \) partly varies as \( x^2 \) and partly varies as \( x \). Suppose that \( f(2) = 60 \) and \( f(3) = 99 \).
+
+(a) Find \( f(x) \). (3 marks)
+
+(b) Let \( Q \) be the vertex of the graph of \( y = f(x) \) and \( R \) be the vertex of the graph of \( y = 27 - f(x) \).
+
+(i) Using the method of completing the square, find the coordinates of \( Q \).
+
+(ii) Write down the coordinates of \( R \).
+
+(iii) The coordinates of the point \( S \) are \( (56, 0) \). Let \( P \) be the circumcentre of \( \Delta QRS \). Describe the geometric relationship between \( P \), \( Q \) and \( R \). Explain your answer.
+
+(5 marks)
+
+---
+
+## Question 19
+
+【建議標籤】
+
+- 卷別/部分：Paper 1 · Section A(1)
+- 課題：#Equations of Circles #Equations of Straight Lines #Tangents
+
+【題目內容】
+
+The coordinates of the centre of the circle \( C \) are \( (8,2) \). Denote the radius of \( C \) by \( r \). Let \( L \) be the straight line \( kx - 5y - 21 = 0 \), where \( k \) is a constant. It is given that \( L \) is a tangent to \( C \).
+
+(a) Find the equation of \( C \) in terms of \( r \). Hence, express \( r^2 \) in terms of \( k \). (4 marks)
+
+(b) \( L \) passes through the point \( D(18,39) \).
+
+(i) Find \( r \).
+
+(ii) It is given that \( L \) cuts the \( y \)-axis at the point \( E \). Let \( F \) be a point such that \( C \) is the inscribed circle of \( \triangle DEF \). Is \( \triangle DEF \) an obtuse-angled triangle? Explain your answer.
+
+(8 marks)
+
+---
+
+*End of paper.*
+
+> Built by DSE Visual Tutor: source PDF → page-by-page transcription → tagging → matplotlib figure redraw → Markdown. For study reference only; copyright belongs to HKEAA.

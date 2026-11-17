@@ -8,6 +8,7 @@ const BANK_URL = "https://hkdse.exampaper.cloud/";
  * hash: 逐題深層連結
  */
 const CATALOG = [
+  { id: "math", name: "數學（必修部分）", year: 2025, paper: "卷一", lang: "英文", hash: "#2025P1Q1" },
   /* 數學（中文卷） */
   /* 經濟（英文卷） */
   /* 化學／生物／物理（第 2 層中文；先上線後校對） */

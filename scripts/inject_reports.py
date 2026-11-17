@@ -78,10 +78,11 @@ def main() -> None:
             v = q.get(field) or ""
             if "【考生表現】" in v:
                 q[field] = INLINE.sub("", v)
+        # an older box (e.g. the pre-fix text) must be replaced, not stacked
+        html = q.get("html") or ""
+        html = re.sub(r'(?:<p>)?<details class="exam-note">.*?</details>(?:</p>)?', "", html, flags=re.S)
         box = note_html(note)
-        if box in (q.get("html") or ""):
-            continue
-        q["html"] = (q.get("html") or "") + "<p>" + box + "</p>"
+        q["html"] = html + "<p>" + box + "</p>"
         q["report"] = note
         n += 1
 

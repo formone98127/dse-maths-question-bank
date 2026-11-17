@@ -238,8 +238,8 @@ function rowHtml(r) {
     ? `DSE ${sn} · ${paperEn} (English)`
     : `文憑試 DSE ${sn} · ${r.paper}（${r.lang}）`;
   return `
-    <a class="paper-row" href="${href}" title="檢視 ${sn} ${r.year} ${paperLbl}">
-      <span class="paper-year">${r.year}</span>
+    <a class="paper-row" href="${href}" title="檢視 ${sn} ${YEAR_LABEL[r.year] || r.year} ${paperLbl}">
+      <span class="paper-year">${YEAR_LABEL[r.year] || r.year}</span>
       <span class="paper-body">
         <span class="paper-tags">
           <span class="tag subj">${esc(sn)}</span>
@@ -260,8 +260,8 @@ function questionRowHtml(q, topic) {
     .map((t) => `<span class="tag topic">${esc(t)}</span>`)
     .join("");
   return `
-    <a class="paper-row" href="${href}" target="_blank" rel="noopener" title="檢視 ${esc(q.subject)} ${q.year} ${pLabel} Q${q.qno}">
-      <span class="paper-year">${q.year}</span>
+    <a class="paper-row" href="${href}" target="_blank" rel="noopener" title="檢視 ${esc(q.subject)} ${YEAR_LABEL[q.year] || q.year} ${pLabel} Q${q.qno}">
+      <span class="paper-year">${YEAR_LABEL[q.year] || q.year}</span>
       <span class="paper-body">
         <span class="paper-tags">
           <span class="tag subj">${esc(q.subject)}</span>

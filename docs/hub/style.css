@@ -795,6 +795,65 @@ footer {
   margin-bottom: 0;
 }
 
-.tag.pdf { background: rgba(90,170,255,0.16); color: #8fd0ff; }
-
-.tag.dl { background: rgba(80,220,150,0.16); color: #7ee2b8; }
+/* ===== 溫習攻略（blog） ===== */
+.prose {
+  max-width: 76ch;
+  line-height: 1.85;
+  font-size: 15.5px;
+}
+.prose h2 {
+  font-size: 19px;
+  font-weight: 800;
+  margin: 26px 0 10px;
+  color: var(--ink);
+}
+.prose h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 18px 0 8px;
+  color: var(--ink);
+}
+.prose p { margin: 0 0 12px; color: var(--ink); }
+.prose ul { margin: 0 0 14px; padding-left: 22px; }
+.prose li { margin-bottom: 8px; }
+.prose a, .guide-card a, .guide-more {
+  color: #93c5fd;
+  font-weight: 600;
+  text-decoration: none;
+}
+.prose a:hover, .guide-card a:hover, .guide-more:hover { text-decoration: underline; }
+.guide-cta {
+  border: 1px solid rgba(52, 211, 153, 0.45);
+  background: rgba(52, 211, 153, 0.08);
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin: 20px 0;
+}
+.guide-cta strong {
+  display: block;
+  font-size: 15.5px;
+  color: #6ee7b7;
+  margin-bottom: 6px;
+}
+.guide-cta p { margin: 0 0 10px; color: var(--mut); font-size: 14px; }
+.guide-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: rgba(52, 211, 153, 0.16);
+  border: 1px solid rgba(52, 211, 153, 0.5);
+  font-size: 14px;
+  font-weight: 700;
+}
+.blog-index .guide-card {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--bg-elev);
+  padding: 16px 18px;
+  margin-bottom: 14px;
+}
+.blog-index .guide-card h2 { margin: 0 0 6px; font-size: 17px; }
+.blog-index .guide-card h2 a { color: var(--ink); }
+.blog-index .guide-card h2 a:hover { color: #93c5fd; }
+.guide-card-date { color: var(--mut); font-size: 12.5px; margin: 0 0 8px; }
+.blog-index .guide-card p { color: var(--mut); font-size: 14px; margin: 0 0 10px; }

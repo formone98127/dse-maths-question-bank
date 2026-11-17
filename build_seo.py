@@ -15,7 +15,7 @@ from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 ROOT = Path(__file__).resolve().parent / "docs"
 SITE = "https://hkdse.exampaper.cloud"
-VER = "20261116ai2"
+VER = "20261118a1"
 TODAY = date.today().isoformat()
 BANK = f"{SITE}/"
 HUB = f"{SITE}/hub/"
@@ -669,6 +669,206 @@ for _tp in TOPIC_PAGES:
 TOPIC_SLUG_BY_NAME[("math", "多項式（續）")] = "polynomials-factorization"
 TOPIC_SLUG_BY_NAME[("math", "百分法")] = "percentages-interest"
 
+# ===== 長篇 SEO 溫習攻略（Topical Authority 層） =====
+# 每篇攻略：中段 + 結尾 CTA 指向 /hub/（下載齊全 Past Paper）同 /ms/（評卷參考）。
+# body block 類型：("h2", t) ("h3", t) ("p", raw_html) ("ul", [raw_html...]) ("cta", title, desc, href)
+CTA_HUB = ("前往 HKDSE Exam Paper Cloud 下載齊全 Past Paper", "/hub/")
+CTA_MS = ("免費查閱 DSE 數學評卷參考（Marking Scheme）", "/ms/")
+
+GUIDES = [
+    {
+        "slug": "2027-dse-maths-survival-guide",
+        "title": "2027 DSE 數學求生指南：改制後 Past Paper 仲做唔做得？｜DSE Hub",
+        "description": "2027 DSE 數學必修備戰攻略：改制後歷屆 Past Paper 仲適唔適用、卷一卷二點分配、Marking Scheme 點配合操卷。補習名師式溫習策略，附分階段時間表。",
+        "h1": "2027 DSE 數學求生指南：改制後 Past Paper 仲做唔做得？",
+        "tagline": "俾 2027 考生嘅數學科備戰策略：舊卷照做，但要做啱方法",
+        "date": "2026-11-18",
+        "updated": "2026-11-18",
+        "body": [
+            ("p", "各位 2027 嘅同學，而家同你講一個殘酷嘅事實：<strong>你由細到大聽人講「做 Past Paper 就得」，呢句說話啱咗一半，錯咗一半。</strong>啱嘅係——Past Paper 確實係 DSE 數學最高性價比嘅彈藥。錯嘅係——大部分人做卷嘅方式，等同攞住一堆黃金彈藥，然後用把水槍射出嚟。"),
+            ("h2", "改制之後，舊卷會唔會「過期」？"),
+            ("h3", "課程微調 ≠ 題型革命"),
+            ("p", "先解答最多人問嘅問題：「課程改咗，2012 年嗰啲卷仲做唔做得？」<strong>做得，仲要做到唔好停。</strong>DSE 數學必修部分嘅核心題型——三角學、概率、圓形性質、坐標幾何、數列——十年嚟穩過你阿媽嘅脾氣。改制影響嘅係考核重心同深淺分佈，唔係考綱推倒重來。換句話講：舊卷唔係過期食品，係陳年靚酒。"),
+            ("h3", "真正要小心嘅係 2024 至 2026 呢幾年"),
+            ("p", "要留神嘅反而係近三屆。呢段時間考評局嘅出題風格明顯轉咗——長題目多咗跨章節整合，卷一後半部分嘅「分題連環扣」越嚟越多。你溫習嗰陣，近三屆嘅卷要做足、做透、做到識背；遠啲嘅年份就當操練場，練速度同準繩度。"),
+            ("h2", "90% 考生做 Past Paper 嘅三大死法"),
+            ("h3", "死法一：淨做卷，唔對 Marking Scheme"),
+            ("p", "呢個係最普遍、亦係最抵死嘅一種。做完一份卷，對完答案計咗分，就以為完事？同學，<strong>答案只話俾你聽啱定錯，Marking Scheme 先話俾你聽點解錯、點樣先攞足分。</strong>卷一長題目每一步都有分——你跳步、寫漏單位、冇寫「let x be」，全部都係白送俾考評局嘅分。睇 Marking Scheme 唔係核對答案，係學評卷員嘅思維。"),
+            ("h3", "死法二：計時由第一天開始"),
+            ("p", "啱啱開始溫習就限時做卷，等於未學行就學跑。第一輪做卷，開卷、慢慢做、唔識就查書，目標係搞懂題型；第二輪先開始分章節計時；最後兩個月先做全卷模擬。次序掉轉咗，你只會訓練自己「喺壓力下做唔識嘅題目」——呢個技能考評局唔會俾分。"),
+            ("h3", "死法三：做完唔記錄"),
+            ("p", "做過嘅卷，錯嘅題目冇記低，三個禮拜後同一條數再錯多次，仲要錯得比上次更有信心。開一個 Excel，每份卷記低：錯嘅題號、考嘅課題、錯因（計錯／唔識／睇錯題）。兩個月後你就會見到自己嘅失分地圖——溫習從此唔靠感覺，靠數據。"),
+            ("cta", "唔使四圍問人俾卷你", "歷屆數學卷一、卷二，中英文卷齊全，即開即做。", CTA_HUB),
+            ("h2", "2027 考生嘅分階段操卷時間表"),
+            ("p", "2027 DSE 數學必修部分已定於 4 月開考。由今日數起，你仲有時間由補底做到摘星，關鍵係次序："),
+            ("ul", [
+                "<strong>而家至考前 4 個月：</strong>開卷唔限時，按課題分類掃雷，目標係「冇一個課題唔識」。",
+                "<strong>考前 4 個月至 2 個月：</strong>分章節計時操卷，每章揀 10 題，限 30 分鐘，練準繰度。",
+                "<strong>最後 2 個月：</strong>全卷模擬，卷一限 2 小時 15 分鐘、卷二限 75 分鐘，做完即對 <a href=\"/ms/\">評卷參考（Marking Scheme）</a>復盤。",
+            ]),
+            ("h2", "而家開始，唔遲，但唔好再等"),
+            ("p", "記住：DSE 數學唔係考天分，係考你願唔願意用正確嘅方法，做足夠多嘅正確嘅卷。你同 5** 嘅距離，中間只係隔住一堆未做嘅 Past Paper 同未睇嘅 Marking Scheme。而家開始，仲嚟得切。"),
+            ("cta", "今日做嘅第一份卷，就係你摘星嘅第一步", "即刻開卷：2012 至 2025 年 DSE 數學歷屆試題，完全免費。", CTA_HUB),
+        ],
+        "faqs": [
+            ("2027 DSE 數學幾時考？", "2027 HKDSE 數學必修部分筆試定於 4 月中開考，實際日期以考評局公佈為準。建議以 3 月底為全卷模擬嘅死線。"),
+            ("改制後歷屆 Past Paper 仲適用嗎？", "適用。數學必修部分核心課題同題型十年嚕好穩定，改制影響嘅係考核重心而唔係考綱。近三屆（2024–2026）卷要做得最透，舊年份用嚟操速度。"),
+            ("卷一同卷二應該點分配時間？", "卷一（長題目）要配合 Marking Scheme 練步驟分；卷二（選擇題）重點係速度同 eliminating 技巧。建議卷二每日一小節保持手感，卷一每星期完整做一份。"),
+        ],
+    },
+    {
+        "slug": "dse-maths-4-to-5star",
+        "title": "DSE 數學由 4 升 5**：唔係做多啲卷，係做啱嗰啲卷｜DSE Hub",
+        "description": "DSE 數學摘星攻略：Level 4 考生嘅三個天花板——卷二速度、卷一步驟分、速解技巧——同突破方法。附 5** 操卷法同 cut off 認知。",
+        "h1": "DSE 數學由 4 升 5**：唔係做多啲卷，係做啱嗰啲卷",
+        "tagline": "Level 4 同 5** 之間，隔住嘅唔係天分，係操卷方法",
+        "date": "2026-11-18",
+        "updated": "2026-11-18",
+        "body": [
+            ("p", "每年都有大把學生同我講：「Sir，我做咗二十幾份卷，點解仲係 Level 4？」我嘅答案永遠一樣：<strong>因為你係「做」卷，唔係「收割」卷。</strong>Level 4 同 5** 嘅距離，唔係卷嘅數量，係你對住一份卷嘅姿態。"),
+            ("h2", "先搞清楚：你嘅分數去咗邊？"),
+            ("p", "DSE 數學卷一佔 65%，卷二佔 35%。想上 5**，兩卷都要有貢獻，但貢獻方式完全唔同：卷一靠「步驟分一滴不漏」，卷二靠「速度同命中率」。大部分 Level 4 考生嘅死因係：卷一識做但跳步，卷二識做但做唔切。"),
+            ("h2", "Level 4 考生嘅三個天花板"),
+            ("h3", "天花板一：卷一後半長題斷步驟分"),
+            ("p", "卷一後半部（大約第 13 題開始）係 5** 嘅分水嶺。呢啲題目成日一條大題扣住三四個分題，你喺 (a) 計錯一個數，(b)(c)(d) 全部陪葬。破解方法：做嘅時候逐步寫清楚，對卷嘅時候開 <a href=\"/ms/\">評卷參考（Marking Scheme）</a>逐行核對——你會發現自己跳咗嘅每一步，考評局都標明值幾多分。"),
+            ("h3", "天花板二：卷二速度唔夠"),
+            ("p", "卷二 45 條選擇題 75 分鐘，即係平均每題 100 秒。Level 4 考生成日逼到最後 10 分鐘仲有 8 題。速度唔係靠天賦，係靠「見過」——同一類數你做過五次，第六次自然 30 秒搞掂。所以卷二操卷嘅重點係重複，唔係貪新。"),
+            ("h3", "天花板三：識做，但唔識快做"),
+            ("p", "5** 考生同 Level 4 考生最大嘅分別：佢哋每條選擇題都有「速解版」。人哋用正攻法計 90 秒，佢哋用代入法、估範圍、剔走極端選項 20 秒搞掂。呢啲技巧全部可以由歷屆卷同 Marking Scheme 度偷師——邊條路徑考評局俾分最快，就係最快嘅路。"),
+            ("cta", "摘星之前，先要有齊彈藥", "歷屆 DSE 數學卷一卷二、中英文卷，一次過載齊。", CTA_HUB),
+            ("h2", "5** 操卷法：由「做卷」變「收割」"),
+            ("ul", [
+                "<strong>每份卷做兩次：</strong>第一次限時模擬，第二次隔兩週重做錯題。同一份卷，第二次嘅收穫大過第一次。",
+                "<strong>錯題分三類：</strong>計錯（罰自己重做三次）、唔識（返去課題頁掃雷）、睇錯題（寫低「審題」兩個字貼喺檯頭）。",
+                "<strong>每週一份全卷 + 逐題復盤：</strong>對答案只係開始，逐條睇 Marking Scheme 先係主食。",
+                "<strong>速度訓練分開練：</strong>卷二唔好成份做，每日抽 15 題計時，命中率同速度分開統計。",
+            ]),
+            ("h2", "Cut Off 認知：唔使完美，要夠分"),
+            ("p", "事實上，數學科 5** 嘅 cut off 歷年都唔需要你「全對」。你要嘅唔係完美主義，係清楚知道自己邊部分穩、邊部分要棄。Time management 本身就係考核嘅一部分——識得戰略性放棄一兩條深題，將時間留俾穩收嘅分，先係摘星者嘅思維。"),
+            ("cta", "你同 5** 嘅距離，係一堆未做嘅卷", "由最舊嗰年開始，定額每日收割。完全免費，唔使報名。", CTA_HUB),
+        ],
+        "faqs": [
+            ("DSE 數學 5** 要幾多分？", "每年 cut off 有浮動，大致上要兩卷合計攞到約八成分數。與其估分數線，不如逐份卷統計自己嘅穩定命中率。"),
+            ("卷一同卷二邊個重要啲？", "卷一佔 65% 係主戰場，但卷二係拉開 5 同 5** 嘅關鍵——因為卷二快，可以騰出時間；卷二慢，卷一都要趕住做。兩卷要分開練，唔好淨做卷一。"),
+            ("淨做 Past Paper 唔上堂得唔得？", "Past Paper 加 Marking Scheme 係性價比最高嘅組合，但前提係基本概念清楚。有課題成日錯，就返去該課題嘅題目集中掃雷，先再落卷。"),
+        ],
+    },
+    {
+        "slug": "dse-marking-scheme-guide",
+        "title": "DSE Marking Scheme 點用？90% 考生睇錯咗嘅 3 個方法｜DSE Hub",
+        "description": "DSE 評卷參考（Marking Scheme）正確使用攻略：逐步對分、學官方寫法、逆向出題。附常見誤區同免費查閱歷屆數學評卷參考。",
+        "h1": "Marking Scheme 先係你嘅補習老師：90% 考生睇錯咗嘅 3 個方法",
+        "tagline": "搵到卷，搵唔到 Marking Scheme？搵到又唔識用？呢篇幫你搞掂",
+        "date": "2026-11-18",
+        "updated": "2026-11-18",
+        "body": [
+            ("p", "DSE 考生最大嘅痛，唔係冇卷做——網度大把卷。最大嘅痛係：<strong>做完成份卷，先發現搵唔到 Marking Scheme；搵到之後，又只識用嚟對最後答案。</strong>一份評卷參考俾你用成咁，認真嘥。"),
+            ("h2", "Marking Scheme 唔係答案紙，係評卷員個腦"),
+            ("p", "你要明白一件事：評卷員改你份卷嘅時候，枱面擺嘅就係呢份 Marking Scheme。佢逐行睇你嘅步驟，逐個分點剔。即係話，<strong>Marking Scheme 就係考評局親手寫俾你嘅「攞分說明書」</strong>。識用嘅人係偷師，唔識用嘅人只係核對。"),
+            ("h2", "三個正確用法"),
+            ("h3", "用法一：逐步對分，唔係對答案"),
+            ("p", "做完一條長題，攞住評卷參考，將自己嘅每一步同 MS 嘅每個分點 (M1)、(M2)、(A1) 對照。你會即時見到：邊一步你有寫但 MS 唔俾分（多餘步驟）、邊一步 MS 俾分但你跳咗（白送嘅分）。呢個對照訓練做十次，你寫步驟嘅習慣會完全唔同。"),
+            ("h3", "用法二：學官方語言"),
+            ("p", "卷一幾何題要寫理由、統計題要寫單位、三角題要寫搵到嘅角。呢啲「格式分」全部寫晒喺 MS 度。睇得多，你就會識得用考評局鍾意嘅寫法作答——同一個答案，寫法唔同，分可以差一個 grade。"),
+            ("h3", "用法三：逆向出題"),
+            ("p", "睇 MS 嘅分佈，你會估到考官重視咩：一條題目原來 (a) 佔 2 分只係熱身，(c) 先係 5 分嘅主菜。下次見到同類題，你就知時間應該分配去邊。識得逆向睇卷，你係同考官對住睇，唔係俾人考。"),
+            ("cta", "2012 至 2024 年數學卷一評卷參考", "中文卷、英文卷 Marking Scheme 免費逐題睇。", CTA_MS),
+            ("h2", "三個常見誤區"),
+            ("ul", [
+                "<strong>睇完當做完：</strong>睇明 MS 點解唔等於你識寫。每條錯題睇完 MS 之後，閂住佢自己由頭寫一次先算數。",
+                "<strong>只對最後答案：</strong>答案啱但步驟跳，考評局照扣方法分；答案錯但方法啱，考評局照俾步驟分。淨睇答案你永遠唔知真相。",
+                "<strong>背 solution：</strong>MS 係俾你學思維，唔係俾你背。背咗舊年嘅寫法，今年轉個問法你就瓜。",
+            ]),
+            ("h2", "做卷流程建議"),
+            ("p", "正確嘅循環係：限時做卷 → 自己批改 → 開 MS 逐題復盤 → 隔兩週重做錯題 → 再對 MS。呢個循環行一次，一份卷先算「用盡」。淨做卷唔對 MS，等於食飯唔吸收。做完卷想即刻開卷對 MS？<a href=\"/hub/\">DSE Hub</a> 入面歷屆試卷同 <a href=\"/ms/\">評卷參考</a> 一 click 就到，唔使四圍搵。"),
+            ("cta", "唔使再四圍搵 Marking Scheme", "歷屆數學評卷參考免費睇，配合 Past Paper 一次過用盡。", CTA_MS),
+        ],
+        "faqs": [
+            ("DSE 數學 Marking Scheme 邊度有得睇？", "本站 DSE Hub 免費提供 2012 至 2024 年數學卷一評卷參考（中英文卷），可以逐題對照歷屆試題一齊睇。"),
+            ("中文卷定英文卷嘅評卷參考啱我？", "看你考邊個語言版本嘅卷。兩個版本嘅評分準則相同，建議操邊卷就對邊個版本嘅 MS，順便學埋官方術語寫法。"),
+            ("卷二選擇題有冇 Marking Scheme？", "卷二主要係答案同簡短解析，重點係對答案之後研究每個錯誤選項點解錯。卷一長題目先係 MS 步驟分嘅主戰場。"),
+        ],
+    },
+    {
+        "slug": "dse-last-100-days-plan",
+        "title": "DSE 最後 100 日溫習時間表：一日一份 Past Paper 排程｜DSE Hub",
+        "description": "中六最後 100 日 DSE 溫習計劃：三階段操卷法（掃雷→計時分章→全卷模擬）、一日一份 Past Paper 排程、最後衝刺唔好做嘅三件事。",
+        "h1": "中六最後 100 日：一日一份 Past Paper 嘅地獄溫習時間表",
+        "tagline": "倒數 100 日，由 panic 變 plan——附實際排程",
+        "date": "2026-11-18",
+        "updated": "2026-11-18",
+        "body": [
+            ("p", "中六同學，倒數 100 日嗰日，你大概會有兩種反應：一種係嚇到唔敢諗，一種係終於肯面對。無論邊種，而家我俾你一個事實安慰下：<strong>100 日，足夠任何一個正常考生由補底升兩個 grade。</strong>前提係，你之後嘅每一日都唔好再做錯嘅嘢。"),
+            ("h2", "100 日拆解：三個階段"),
+            ("h3", "第一階段（100–60 日）：分課題掃雷"),
+            ("p", "呢個階段唔好一份份卷咁做。按課題分類掃雷：概率唔穩就集中做晒十年嘅概率題，圓形幾何成日錯就做晒啲幾何題。目標只有一個：<strong>考前兩個月，冇任何一個課題係「唔識」。</strong>呢度嘅題目索引可以直接按課題篩選，唔使自己逐份卷搵。"),
+            ("h3", "第二階段（60–30 日）：計時分章操"),
+            ("p", "雷掃完，開始計時。每個課題揀 10–15 題，限時完成，統計命中率。呢個階段嘅產物係一張「失分地圖」——你會清楚知道邊三四個課題食咗你大部分分數，最後三十日就重點圍剿佢哋。"),
+            ("h3", "第三階段（30–0 日）：全卷模擬 + Marking Scheme 復盤"),
+            ("p", "最後一個月，每兩至三日一份完整全卷模擬，仲要用返考試嘅時段（朝早定下晝，照足考試當日節奏）。做完即對 <a href=\"/ms/\">評卷參考（Marking Scheme）</a>，逐步復盤。考前一星期唔好再做新卷，淨係重做錯題本。"),
+            ("cta", "100 日，即係大約 30 份卷", "歷屆試卷免費任開，今日就開始數你嘅第 1 份。", CTA_HUB),
+            ("h2", "一日一份卷嘅實際排程"),
+            ("ul", [
+                "<strong>星期一至五：</strong>每日一份卷二或者半份卷一（計時），夜晚 30 分鐘對 MS 復盤。",
+                "<strong>星期六：</strong>全卷模擬（卷一或卷二輪流），下晝完整復盤。",
+                "<strong>星期日：</strong>重做本週錯題 + 補返最弱嘅一個課題。",
+                "<strong>其他科點算？</strong>數學每日最多佔 90 分鐘。呢 100 日係全科倒數，唔係數學地獄週。",
+            ]),
+            ("h2", "最後衝刺：三件唔好做嘅事"),
+            ("ul", [
+                "<strong>唔好貪新做陌生 mock 卷：</strong>最後階段做質素冇保證嘅 Mock，錯咗都唔知錯咩。歷屆卷 + 官方 MS 先係正餐。",
+                "<strong>唔好熬夜：</strong>DSE 係朝早考嘅試。你嘅大腦要習慣朝早十點做數，唔係凌晨兩點。",
+                "<strong>唔好同同學比進度：</strong>人哋做咗四十份卷但你嘅命中率高過佢，你係贏嗰個。統計自己，唔好統計人哋。",
+            ]),
+            ("cta", "第 100 日嘅你，會多謝今日開始嘅你", "即刻開第一份卷：完全免費，唔使登記。", CTA_HUB),
+        ],
+        "faqs": [
+            ("DSE 前 100 日先溫數學仲唔仲得？", "得。數學係最能短時間拉升嘅科目之一，因為題型重複率高。100 日用「掃雷→計時→模擬」三階段行，補底考生升兩個 grade 係常見操作。"),
+            ("一日一份卷會唔會太多？", "視乎階段：最後 30 日每兩至三日一份全卷已夠，重點係每份卷都要完整復盤。做多而不復盤，係最常見嘅浪費時間方式。"),
+            ("最後兩星期應該做咩？", "唔好做新卷。重做錯題本、翻 Marking Scheme、朝早時段做輕鬆嘅熟題保持手感，同埋瞓夠。"),
+        ],
+    },
+    {
+        "slug": "dse-mock-vs-past-paper",
+        "title": "DSE Mock 卷 vs Past Paper：補底考生必讀嘅殘酷真相｜DSE Hub",
+        "description": "DSE Mock 卷同歷屆 Past Paper 有咩分別？補底考生應該操邊樣？重複率、出題邏輯、同點樣用 Mock 卷先唔會嘥時間——名師殘酷分析。",
+        "h1": "DSE Mock 卷 vs Past Paper：邊樣先令你合格？補底考生嘅殘酷真相",
+        "tagline": "Mock 卷唔係冇用，但大部分人用錯咗",
+        "date": "2026-11-18",
+        "updated": "2026-11-18",
+        "body": [
+            ("p", "補底同學，先講一個你可能唔想聽嘅事實：<strong>你學校份 Mock 卷嘅出題人，同考評局嗰位，唔係同一個人。</strong>佢哋鍾意嘅難度、陷阱、甚至答案風格都唔同。你操 Mock 操到爆棚，出咗考場可能發現完全是兩個世界。"),
+            ("h2", "Mock 卷係乜？Past Paper 又係乜？"),
+            ("p", "Past Paper 係考評局親手出嘅卷——佢定義咗「DSE 數學係咩」。Mock 卷係其他人模仿佢出嘅卷——佢定義咗「某位老師覺得 DSE 數學係咩」。兩樣嘢都有價值，但價值完全唔同等，次序更加唔可以調轉。"),
+            ("h2", "補底第一原則：操重複率"),
+            ("p", "DSE 數學嘅殘酷真相（亦係好消息）：<strong>卷內容重複率高得驚人。</strong>十年嚟，等差數列嘅問法、概率題嘅包裝、坐標幾何嘅直線配圓，翻嚟覆去都係嗰幾款。補底考生嘅任務唔係識做所有嘢，係將重複率最高嗰啲課題做到變條件反射。而重複率嘅唯一可靠樣本，係歷屆卷，唔係 Mock。"),
+            ("h3", "Mock 卷嘅真正用途"),
+            ("p", "咁 Mock 卷係咪冇用？唔係。Mock 卷嘅正確用途係：<strong>模擬考試氣氛</strong>——唔熟悉嘅卷、陌生嘅排版、時間壓力。所以 Mock 卷喺考前一兩個月，當「實戰演習」用，做完當日就要復盤完。用 Mock 卷嚟學課題內容？嗰個係 Past Paper 嘅工作，唔好搞亂。"),
+            ("cta", "補底由第一份歷屆卷開始", "2012 年起歷屆 DSE 數學試題，免費即開，唔使登記。", CTA_HUB),
+            ("h2", "補底考生嘅一個月循環"),
+            ("ul", [
+                "<strong>第 1–2 週：</strong>淨做歷屆卷嘅卷二選擇題（唔限時），目標係「全部見過晒」，建立題型庫。",
+                "<strong>第 3 週：</strong>歷屆卷一，淨做前半部短題，配 <a href=\"/ms/\">Marking Scheme</a> 學點樣攞步驟分。",
+                "<strong>第 4 週：</strong>限時做一份近年份全卷 + 一份 Mock 卷實戰演習，對比兩者分數差異。",
+                "<strong>循環重複：</strong>每個循環你嘅重心會慢慢由卷二移去卷一，由唔限時移去限時。",
+            ]),
+            ("h2", "殘酷真相總結"),
+            ("p", "Mock 卷高分，你未必合格；歷屆卷穩，你幾乎實合格。<strong>補底考生嘅安全感應該嚟自「我見過呢條題十年嚟嘅所有變種」，而呢句說話唯一嘅數據來源係 Past Paper。</strong>學校派嘅 Mock 照做，但做完記住問自己：呢條題，歷屆卷入面嘅同類題我做晒未？未嘅話，而家知道去邊度搵。"),
+            ("cta", "由今日起，做「見過晒」嗰個考生", "歷屆 DSE 數學 Past Paper 免費任開，配合評卷參考一齊用。", CTA_HUB),
+        ],
+        "faqs": [
+            ("DSE Mock 卷重要定 Past Paper 重要？", "Past Paper 係主糧，Mock 卷係演習。DSE 出題邏輯、重複題型、評卷準則全部以歷屆卷為準；Mock 卷用嚟模擬考試節奏同壓力。資源有限就先做晒歷屆卷。"),
+            ("補底即係淨做淺題？", "唔係。補底係集中操重複率最高嘅課題做到穩，唔係逃避深題。卷二前半同卷一前半嘅「必收分」穩咗，先有空間處理深題。"),
+            ("Mock 卷成績差好灰，點算？", "Mock 卷分數只反映你同「嗰位出卷老師」嘅匹配度，唔反映你 DSE 嘅真實水平。做完復盤錯題就得，分數唔好上心。"),
+        ],
+    },
+]
+
+FAQ_GUIDES = (
+    "DSE Hub 有冇溫習攻略文章？",
+    "有。DSE Hub 部落格集中出 DSE 溫習攻略：Past Paper 點用、Marking Scheme 點對、倒數 100 日計劃同摘星策略，全部免費閱讀。",
+)
+
 HUB_TITLE = "免費 DSE 歷屆試題｜數學經濟化學生物物理 Past Paper｜DSE Hub"
 HUB_DESC = "免費查閱香港中學文憑試（DSE）數學、經濟、化學、生物、物理歷屆試題，按年份或課題溫習，支援中英文卷。唔使報名，即時喺 DSE Hub 開卷。"
 HUB_H1 = "香港中學文憑（DSE）歷屆試題資料庫"
@@ -1138,7 +1338,7 @@ def make_hub(catalog, papers):
   </section>
 </main>
 {faq_html}
-<footer>站內只放索引、連結同課題標籤，唔存放試卷原卷 · 只顯示資料庫已有內容<br>科目：{footer_links}<br>相關：<a href="{esc(VISUAL_TUTOR)}" rel="noopener">{esc(VISUAL_TUTOR_LABEL)}</a></footer>
+<footer>站內只放索引、連結同課題標籤，唔存放試卷原卷 · 只顯示資料庫已有內容<br>科目：{footer_links}<br>攻略：<a href="/blog/">DSE 溫習攻略（Past Paper 操卷法・Marking Scheme 用法・摘星策略）</a><br>相關：<a href="{esc(VISUAL_TUTOR)}" rel="noopener">{esc(VISUAL_TUTOR_LABEL)}</a></footer>
 
 <!-- 滾輪選擇器 -->
 <div class="reel-overlay" id="reel" hidden>
@@ -1558,6 +1758,69 @@ footer {
 .topic-guide p:last-child {
   margin-bottom: 0;
 }
+
+/* ===== 溫習攻略（blog） ===== */
+.prose {
+  max-width: 76ch;
+  line-height: 1.85;
+  font-size: 15.5px;
+}
+.prose h2 {
+  font-size: 19px;
+  font-weight: 800;
+  margin: 26px 0 10px;
+  color: var(--ink);
+}
+.prose h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 18px 0 8px;
+  color: var(--ink);
+}
+.prose p { margin: 0 0 12px; color: var(--ink); }
+.prose ul { margin: 0 0 14px; padding-left: 22px; }
+.prose li { margin-bottom: 8px; }
+.prose a, .guide-card a, .guide-more {
+  color: #93c5fd;
+  font-weight: 600;
+  text-decoration: none;
+}
+.prose a:hover, .guide-card a:hover, .guide-more:hover { text-decoration: underline; }
+.guide-cta {
+  border: 1px solid rgba(52, 211, 153, 0.45);
+  background: rgba(52, 211, 153, 0.08);
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin: 20px 0;
+}
+.guide-cta strong {
+  display: block;
+  font-size: 15.5px;
+  color: #6ee7b7;
+  margin-bottom: 6px;
+}
+.guide-cta p { margin: 0 0 10px; color: var(--mut); font-size: 14px; }
+.guide-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: rgba(52, 211, 153, 0.16);
+  border: 1px solid rgba(52, 211, 153, 0.5);
+  font-size: 14px;
+  font-weight: 700;
+}
+.blog-index .guide-card {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--bg-elev);
+  padding: 16px 18px;
+  margin-bottom: 14px;
+}
+.blog-index .guide-card h2 { margin: 0 0 6px; font-size: 17px; }
+.blog-index .guide-card h2 a { color: var(--ink); }
+.blog-index .guide-card h2 a:hover { color: #93c5fd; }
+.guide-card-date { color: var(--mut); font-size: 12.5px; margin: 0 0 8px; }
+.blog-index .guide-card p { color: var(--mut); font-size: 14px; margin: 0 0 10px; }
 """
     if marker in text:
         text = text.split(marker)[0].rstrip() + "\n" + extra
@@ -1765,7 +2028,16 @@ def parse_questions():
     text = (ROOT / "data.js").read_text(encoding="utf-8")
     assign = text.index("=")
     data, _ = json.JSONDecoder().raw_decode(text[assign + 1 :].lstrip())
-    qs = [q for q in data["questions"] if q.get("type") == "題目"]
+    # PP（Practice Paper）／SP（Sample Paper）唔係真實年份，淨係題庫 viewer 用；
+    # SEO 落地頁只處理數字年份，避免 year 排序／路徑爆炸。
+    qs = [
+        q
+        for q in data["questions"]
+        if q.get("type") == "題目" and str(q.get("year", "")).isdigit()
+    ]
+    n_skipped = sum(1 for q in data["questions"] if q.get("type") == "題目") - len(qs)
+    if n_skipped:
+        print("non-year questions skipped (PP/SP):", n_skipped)
     if len(qs) < 800:
         raise SystemExit(f"question parse too small: {len(qs)}")
     return qs
@@ -1912,6 +2184,7 @@ def site_footer(extra=""):
     vt = f'<a href="{esc(VISUAL_TUTOR)}" rel="noopener">{esc(VISUAL_TUTOR_LABEL)}</a>'
     parts = [extra] if extra else []
     parts.append(f'<a href="/hub/">DSE Hub 主頁</a>')
+    parts.append('<a href="/blog/">DSE 溫習攻略</a>')
     parts.append(f"相關：{vt}")
     parts.append("站內只放索引、連結同課題標籤，只顯示資料庫已有內容")
     return "<footer>" + " · ".join(parts) + "</footer>"
@@ -1987,6 +2260,7 @@ FAQ_OFFICIAL = (
 )
 LANDING_FAQS = [FAQ_FREE, FAQ_TOPIC, FAQ_FIND_YEAR, FAQ_ENGLISH]
 HUB_FAQS = [FAQ_FREE, FAQ_SUBJECTS, FAQ_TOPIC, FAQ_FIND_YEAR, FAQ_ENGLISH, FAQ_PDF, FAQ_MOBILE, FAQ_OFFICIAL]
+BLOG_FAQS = [FAQ_FREE, FAQ_TOPIC, FAQ_FIND_YEAR, FAQ_GUIDES]
 
 
 def faq_ld_entities(pairs):
@@ -2453,6 +2727,22 @@ def related_papers_for_years(papers, sid, years, limit=12):
     )
 
 
+def ms_href_for(paper):
+    """數學卷一 → /ms/<year>P1(zh)/ 評卷參考頁（存在先連，否則返 /ms/ 索引）。"""
+    if paper["id"] != "math" or paper["paper_code"] != "paper-1":
+        return "/ms/"
+    year = paper["year"]
+    cands = (
+        [f"/ms/{year}P1zh/", f"/ms/{year}P1/"]
+        if paper["lang"] == "中文"
+        else [f"/ms/{year}P1/", f"/ms/{year}P1zh/"]
+    )
+    for c in cands:
+        if (ROOT / c.lstrip("/") / "index.html").is_file():
+            return c
+    return "/ms/"
+
+
 def write_landing(path, title, description, canonical, graph, body_inner, footer_extra=""):
     page = (
         "<!DOCTYPE html>\n"
@@ -2686,6 +2976,17 @@ def make_paper_pages(catalog, papers, questions, analyses=None):
                 "  <h2>呢份卷相關課題</h2>\n  "
                 + nav_pills(paper_topics, label="相關課題")
                 + "\n</section>"
+            )
+        if r["id"] == "math":
+            ms_href = ms_href_for(r)
+            sections.append(
+                '<section class="topic-guide" aria-label="開卷之後">\n'
+                "  <h2>開卷之後：三步用盡呢份卷</h2>\n"
+                "  <p><strong>第一步・唔好即刻限時：</strong>第一輪開卷慢慢做，唔識就查筆記，目標係搞懂題型；第二輪先分章節計時，最後一個月先全卷模擬。</p>\n"
+                '  <p><strong>第二步・對答案之前先對步驟：</strong>答案只話俾你聽啱定錯，<a href="/ms/">評卷參考（Marking Scheme）</a>先話俾你聽點解錯、點樣攞足分。</p>\n'
+                "  <p><strong>第三步・記低錯題：</strong>開個表記低錯嘅題號、課題同錯因（計錯／唔識／睇錯題），三個禮拜後重做，啱晒先刪走。</p>\n"
+                f'  <p>做完呢份？<a href="{esc(ms_href)}">睇埋呢年嘅評卷參考</a>，或者去 <a href="/blog/">DSE 溫習攻略</a> 學埋操卷方法。</p>\n'
+                "</section>"
             )
         graph = {
             "@context": "https://schema.org",
@@ -3096,6 +3397,167 @@ def make_topic_pages(catalog, questions, papers):
     return count
 
 
+def guide_cta_html(title, desc, href):
+    return (
+        '<aside class="guide-cta">\n'
+        f"  <strong>{esc(title)}</strong>\n"
+        f"  <p>{esc(desc)}</p>\n"
+        f'  <a class="guide-btn" href="{esc(href)}">{esc(title)} →</a>\n'
+        "</aside>"
+    )
+
+
+def guide_body_html(g):
+    bits = []
+    for blk in g["body"]:
+        kind = blk[0]
+        if kind == "h2":
+            bits.append(f"<h2>{esc(blk[1])}</h2>")
+        elif kind == "h3":
+            bits.append(f"<h3>{esc(blk[1])}</h3>")
+        elif kind == "p":
+            bits.append(f"<p>{blk[1]}</p>")
+        elif kind == "ul":
+            lis = "\n".join(f"  <li>{item}</li>" for item in blk[1])
+            bits.append(f"<ul>\n{lis}\n</ul>")
+        elif kind == "cta":
+            bits.append(guide_cta_html(blk[1], blk[2], blk[3]))
+    return "\n".join(bits)
+
+
+def make_guide_pages(catalog):
+    """長篇溫習攻略：/blog/<slug>/ + /blog/ 索引頁（Article + FAQ JSON-LD）。"""
+    blog_url = f"{SITE}/blog/"
+    # 索引頁
+    cards = []
+    list_items = []
+    for i, g in enumerate(GUIDES, 1):
+        url = f"{SITE}/blog/{g['slug']}/"
+        cards.append(
+            '<article class="guide-card">\n'
+            f'  <h2><a href="/blog/{g["slug"]}/">{esc(g["h1"])}</a></h2>\n'
+            f'  <p class="guide-card-date">{esc(g["date"])} 更新</p>\n'
+            f"  <p>{esc(g['description'])}</p>\n"
+            f'  <a class="guide-more" href="/blog/{g["slug"]}/">閱讀全文 →</a>\n'
+            "</article>"
+        )
+        list_items.append(
+            {"@type": "ListItem", "position": i, "name": g["h1"], "url": url}
+        )
+    graph_idx = {
+        "@context": "https://schema.org",
+        "@graph": [
+            ld_breadcrumb([("/hub/", "DSE Hub"), (blog_url, "溫習攻略")]),
+            {
+                "@type": "Blog",
+                "@id": f"{blog_url}#blog",
+                "name": "DSE 溫習攻略",
+                "description": "DSE Past Paper 操卷策略、Marking Scheme 用法、倒數計劃同摘星攻略，全部免費。",
+                "url": blog_url,
+                "inLanguage": "zh-Hant-HK",
+                "isPartOf": {"@id": f"{SITE}/#website"},
+                "publisher": {"@id": f"{SITE}/#org"},
+                "blogPost": [
+                    {
+                        "@type": "BlogPosting",
+                        "headline": g["h1"],
+                        "url": f"{SITE}/blog/{g['slug']}/",
+                        "datePublished": g["date"],
+                        "dateModified": g["updated"],
+                    }
+                    for g in GUIDES
+                ],
+            },
+            {"@type": "FAQPage", "mainEntity": faq_ld_entities(BLOG_FAQS)},
+        ],
+    }
+    tagline = (
+        "名師級 DSE 溫習攻略：Past Paper 唔係攞嚟「做」，係攞嚟「收割」。"
+        "呢度嘅文章教你點用歷屆卷同 Marking Scheme，由補底到摘星都有路線圖。"
+    )
+    body_idx = (
+        hero_html([("/hub/", "DSE Hub"), (None, "溫習攻略")], "DSE 溫習攻略", tagline, catalog, None)
+        + '<main class="subj-main blog-index">\n'
+        + "\n".join(cards)
+        + "\n" + faq_block(BLOG_FAQS) + "\n</main>"
+    )
+    write_landing(
+        "/blog/",
+        "DSE 溫習攻略：Past Paper 操卷、Marking Scheme、摘星策略｜DSE Hub",
+        "免費 DSE 溫習攻略：Past Paper 點操、Marking Scheme 點用、最後 100 日計劃、Mock 卷比較同 4 升 5** 摘星策略。",
+        blog_url,
+        graph_idx,
+        body_idx,
+    )
+    add_sitemap(blog_url, "0.9", "weekly")
+    print("blog index", len(GUIDES), "guides")
+    # 每篇攻略
+    count = 0
+    for g in GUIDES:
+        url = f"{SITE}/blog/{g['slug']}/"
+        path = f"/blog/{g['slug']}/"
+        others = [
+            (f"/blog/{x['slug']}/", x["h1"], x["slug"])
+            for x in GUIDES
+            if x["slug"] != g["slug"]
+        ]
+        extra_nav = nav_pills(others[:4], label="延伸閱讀")
+        cta = (
+            '<p class="page-cta"><a href="/hub/">前往 DSE Hub 開卷</a>'
+            ' · <a href="/ms/">數學評卷參考（Marking Scheme）</a>'
+            ' · <a href="/blog/">全部溫習攻略</a></p>'
+        )
+        graph = {
+            "@context": "https://schema.org",
+            "@graph": [
+                ld_breadcrumb([("/hub/", "DSE Hub"), (blog_url, "溫習攻略"), (url, g["h1"])]),
+                {
+                    "@type": "BlogPosting",
+                    "headline": g["h1"],
+                    "description": g["description"],
+                    "url": url,
+                    "inLanguage": "zh-Hant-HK",
+                    "datePublished": g["date"],
+                    "dateModified": g["updated"],
+                    "image": OG,
+                    "author": {"@id": f"{SITE}/#org"},
+                    "publisher": {"@id": f"{SITE}/#org"},
+                    "mainEntityOfPage": {"@type": "WebPage", "@id": url},
+                    "isPartOf": {"@id": f"{blog_url}#blog"},
+                },
+                {"@type": "FAQPage", "mainEntity": faq_ld_entities(g["faqs"])},
+            ],
+        }
+        body = hero_html(
+            [("/hub/", "DSE Hub"), ("/blog/", "溫習攻略"), (None, g["h1"])],
+            g["h1"],
+            g["tagline"],
+            catalog,
+            None,
+            extra_nav=extra_nav,
+            cta=cta,
+        )
+        body += (
+            '<main class="subj-main">\n<article class="prose">\n'
+            + guide_body_html(g)
+            + "\n</article>\n" + faq_block(g["faqs"]) + "\n</main>"
+        )
+        write_landing(
+            path,
+            g["title"],
+            g["description"],
+            url,
+            graph,
+            body,
+            footer_extra='<a href="/blog/">返回溫習攻略</a> · <a href="/hub/">前往 DSE Hub 開卷</a>',
+        )
+        add_sitemap(url, "0.8", "monthly")
+        count += 1
+        print("guide", path)
+    print("guide pages", count)
+    return count
+
+
 def sitemap_local_path(loc):
     path = loc[len(SITE) :] if loc.startswith(SITE) else loc
     if not path.startswith("/"):
@@ -3189,6 +3651,7 @@ def main():
     n_paper = make_paper_pages(catalog, papers, questions, analyses)
     n_question = make_question_pages(catalog, papers, questions, analyses)
     n_topic = make_topic_pages(catalog, questions, papers)
+    n_guide = make_guide_pages(catalog)
     make_sitemap()
     patch_css()
     patch_hub_data(papers)
@@ -3196,7 +3659,7 @@ def main():
     patch_root_index()
     patch_sw()
     sanity_check()
-    print("SEO build complete", "years", n_year, "papers", n_paper, "questions", n_question, "topics", n_topic)
+    print("SEO build complete", "years", n_year, "papers", n_paper, "questions", n_question, "topics", n_topic, "guides", n_guide)
 
 
 if __name__ == "__main__":

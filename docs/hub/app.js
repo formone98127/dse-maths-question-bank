@@ -75,12 +75,17 @@ function pdfRowsFor(sid, name, year) {
     .map((it) => ({ pdf: true, sid, name, year: it.y, kind: it.k, paper: it.p, lang: it.l, url: it.u }));
 }
 
+function downloadPageHref(pdfUrl) {
+  // /papers/<sid>/<stem>.pdf  ->  /download/<sid>/<stem>.html
+  return "/download/" + String(pdfUrl).replace(/^\/papers\//, "").replace(/\.pdf$/, "") + ".html";
+}
+
 function pdfRowHtml(r) {
   const kindLbl = PAPER_KIND[r.kind] || r.kind;
   const paperLbl = r.paper ? `Paper ${r.paper}` : "全卷";
   const langLbl = r.lang === "zh" ? "中文" : r.lang === "en" ? "English" : "—";
   return `
-    <a class="paper-row" href="${esc(r.url)}" target="_blank" rel="noopener" download title="下載 ${esc(r.name)} ${r.year} ${kindLbl}">
+    <a class="paper-row" href="${esc(downloadPageHref(r.url))}" title="下載 ${esc(r.name)} ${r.year} ${kindLbl}">
       <span class="paper-year">${r.year}</span>
       <span class="paper-body">
         <span class="paper-tags">
@@ -88,7 +93,7 @@ function pdfRowHtml(r) {
           <span class="tag paper">${esc(paperLbl)}</span>
           ${r.lang === "na" ? "" : `<span class="tag lang">${esc(langLbl)}</span>`}
           <span class="tag pdf">${esc(kindLbl)}</span>
-          <span class="tag dl">直接下載</span>
+          <span class="tag dl">下載頁</span>
         </span>
         <span class="paper-title">${esc(r.name)} ${esc(paperLbl)} · ${esc(kindLbl)}</span>
       </span>

@@ -306,6 +306,7 @@ footer { text-align:center; color:var(--mut); font-size:11.5px; padding:4px 0 12
 #imgzoom.open{display:block}
 #imgzoom img{width:100%;max-width:none;display:block}
 #imgzoom .xz{position:fixed;top:10px;right:14px;font-size:20px;color:#fff;background:#0009;border:1px solid #ffffff55;border-radius:8px;padding:6px 12px;cursor:pointer}
+.perm-link{display:inline-block;margin:2px 0 10px;font-size:12px;color:#2d6cdf;text-decoration:none;opacity:.8}.perm-link:hover{opacity:1;text-decoration:underline}
 </style>
 </head>
 <body>
@@ -334,8 +335,8 @@ footer { text-align:center; color:var(--mut); font-size:11.5px; padding:4px 0 12
 <footer>DSE 題庫（數學）— 內容僅供學習用途</footer>
 
 <script src="hub/papers.js?v=1"></script>
-<script src="data.js?v=20261118072429"></script>
-<script src="answers.js?v=20261118072429"></script>
+<script src="data.js?v=20261118082817"></script>
+<script src="answers.js?v=20261118082817"></script>
 <script>
 const QS = window.QB.questions;
 const $ = s => document.querySelector(s);
@@ -816,6 +817,15 @@ function enhanceMc(root) {
 }
 
 let curQ = null;
+/* 每題「永久連結」→ 對應 SEO 靜態頁（內鏈，助 Google 順住爬） */
+function staticLink(q) {
+  const y = Number(q.year);
+  if (!Number.isFinite(y) || y < 2019 || y > 2025) return '';   // 靜態頁現只 cover 2019–2025
+  const pn = /Paper 2|卷二/i.test(q.paper || '') ? 2 : 1;
+  const href = `/questions/math/${y}/paper-${pn}/q${q.qno}/`;
+  return `<a class="perm-link" href="${href}" title="此題獨立頁面（可分享）">🔗 永久連結</a>`;
+}
+
 function show(q, opts) {
   opts = opts || {};
   if (!q) {
@@ -865,6 +875,7 @@ function show(q, opts) {
     : '';
   $('#qbody').innerHTML =
     `<div class="qcontent">${pctHtml}${q.html}${tagsHtml}</div>` +
+    staticLink(q) +
     solExpandHtml(q, expandSol) +
     aiExpandHtml(q);
   const qcontent = $('#qbody .qcontent');
@@ -1044,7 +1055,7 @@ if (!location.hash) {
   }
 }
 </script>
-<script src="pwa.js?v=20261118072429"></script>
+<script src="pwa.js?v=20261118082817"></script>
 
 <script>
 /* 圖片點擊放大 */

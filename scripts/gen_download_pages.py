@@ -75,6 +75,8 @@ h1{{font-size:24px;line-height:1.4;margin:0 0 8px}}
 .dl:hover{{background:#2458b8}}
 .note{{font-size:12px;color:#999;text-align:center;margin-top:12px}}
 </style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LTB27V0RGW"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-LTB27V0RGW');</script>
 </head>
 <body>
 <main>

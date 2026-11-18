@@ -63,10 +63,13 @@ function pdfRowsFor(sid, name, year) {
   return (subj.items || [])
     .filter((it) => String(it.y) === String(year))
     .filter((it) => {
-      /* CASE 2：該卷已有電子版 → 卡片完全唔出（PDF 改由閱讀器右上角「全卷下載」提供） */
+      /* CASE 2：該卷已有電子版 → 只收起「試卷」PDF（改由閱讀器右上角「全卷下載」提供）；
+         評卷參考（MS）同考試報告 PDF 照出卡，方便一次過下載成份（Kin 2026-11-17） */
       const pn = it.p ? `Paper ${it.p}` : "";
-      if (pn && have.has(pn)) return false;
-      if (!pn && have.size > 0) return false;   // 「全卷」PDF 而該年已有電子版
+      if (it.k === "paper") {
+        if (pn && have.has(pn)) return false;
+        if (!pn && have.size > 0) return false;   // 「全卷」PDF 而該年已有電子版
+      }
       return true;
     })
     .map((it) => ({ pdf: true, sid, name, year: it.y, kind: it.k, paper: it.p, lang: it.l, url: it.u }));

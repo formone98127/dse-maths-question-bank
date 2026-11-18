@@ -19,7 +19,7 @@ def stem_of(u):
     return u.replace('/papers/', '').replace('.pdf', '')
 
 def page_path(sid, u):
-    return f'/download/{sid}/{stem_of(u)}.html'
+    return f'/download/{stem_of(u)}.html'
 
 pages = []  # (url, title)
 
@@ -95,7 +95,7 @@ h1{{font-size:24px;line-height:1.4;margin:0 0 8px}}
 </html>
 '''
         # 寫檔
-        rel = f'download/{sid}/{stem}.html'
+        rel = f'download/{stem}.html'
         path = os.path.join(ROOT, rel)
         os.makedirs(os.path.dirname(path), exist_ok=True)
         with open(path, 'w', encoding='utf-8') as f:

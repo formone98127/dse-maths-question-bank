@@ -337,8 +337,8 @@ footer { text-align:center; color:var(--mut); font-size:11.5px; padding:4px 0 12
 <footer>DSE 題庫（數學）— 內容僅供學習用途</footer>
 
 <script src="hub/papers.js?v=1"></script>
-<script src="data.js?v=202611191315"></script>
-<script src="answers.js?v=202611191315"></script>
+<script src="data.js?v=202611191330"></script>
+<script src="answers.js?v=202611191330"></script>
 <script>
 const QS = window.QB.questions;
 const $ = s => document.querySelector(s);
@@ -486,7 +486,8 @@ function solExpandHtml(q, expanded) {
 /* 考評局對本題嘅評語（data.js 的 report 欄；已按段落分開） */
 function reportHtml(q) {
   const t = (q && q.report) || '';
-  const pct = (q && q.answer_pct != null) ? `<p class="mc-pct mc-pct-rep">考生答對率 <strong>${q.answer_pct}%</strong></p>` : '';
+  const pct = (q && q.answer_pct != null)
+    ? `<p class="mc-pct mc-pct-rep" id="repPct" hidden>考生答對率 <strong>${q.answer_pct}%</strong></p>` : '';
   if (!t.trim()) return pct;
   const body = t.split(/\n{2,}/).filter(Boolean)
           .map(x => `<p>${x.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}</p>`)
@@ -796,6 +797,9 @@ function enhanceMc(root) {
           b.classList.remove('selected', 'correct', 'wrong');
         });
         btn.classList.add('selected');
+        /* 一揀答案就揭開考評報告入面嘅答對率 */
+        const repPct = document.getElementById('repPct');
+        if (repPct) repPct.hidden = false;
         if (!ans) return;
         const ok = p.letter === ans;
         const rate = (pct != null) ? `（答對率 ${pct}%）` : '';
@@ -871,12 +875,9 @@ function show(q, opts) {
     }
   }
   const expandSol = !!opts.expandSol && !!findSolution(q);
-  /* Paper 2（MC）：顯示官方考評報告的考生答對率 */
-  const pctHtml = (isMcQuestion(q) && q.answer_pct != null)
-    ? `<p class="mc-pct" title="來自考評局考評報告／評卷參考">考生答對率 <strong>${q.answer_pct}%</strong></p>`
-    : '';
+  /* 答對率唔即時顯示：要 user 揀了選項才在回饋／考評報告面板出現 */
   $('#qbody').innerHTML =
-    `<div class="qcontent">${pctHtml}${q.html}${tagsHtml}</div>` +
+    `<div class="qcontent">${q.html}${tagsHtml}</div>` +
     staticLink(q) +
     solExpandHtml(q, expandSol) +
     aiExpandHtml(q);
@@ -1057,7 +1058,7 @@ if (!location.hash) {
   }
 }
 </script>
-<script src="pwa.js?v=202611191315"></script>
+<script src="pwa.js?v=202611191330"></script>
 
 <script>
 /* 圖片點擊放大 */

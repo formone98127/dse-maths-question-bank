@@ -113,20 +113,14 @@ main { flex:1; min-height:0; display:flex; flex-direction:column; max-width:960p
   border: 0.5px solid rgba(90,170,255,0.35);
 }
 .mc-pct strong { font-weight: 700; }
-/* 答對率視覺化：紅(低)→綠(高) 色階 bar，thumb 標示實際百分位 */
+/* 答對率視覺化：雙色 bar（綠=答對比例、紅=答錯比例），70% → 綠7:紅3 */
 .pct-meter { display: inline-flex; align-items: center; gap: 8px; vertical-align: middle; margin-left: 4px; }
 .pct-scale {
-  position: relative; flex: 0 0 auto; width: 90px; height: 8px; border-radius: 999px;
-  background: linear-gradient(to right, #e5533d 0%, #f0a92e 50%, #33a852 100%);
-  box-shadow: inset 0 0 0 1px rgba(0,0,0,.08);
+  display: flex; flex: 0 0 auto; width: 90px; height: 8px; border-radius: 999px;
+  overflow: hidden; box-shadow: inset 0 0 0 1px rgba(0,0,0,.08);
 }
-.pct-thumb {
-  position: absolute; top: 50%; left: 0;
-  width: 12px; height: 12px; border-radius: 50%;
-  background: #fff; border: 2px solid #33475b;
-  transform: translate(-50%, -50%);
-  box-shadow: 0 1px 3px rgba(0,0,0,.3);
-}
+.pct-seg-green { height: 100%; background: #33a852; }
+.pct-seg-red { height: 100%; background: #e5533d; }
 .pct-num { font-weight: 700; font-size: 13px; color: var(--ink); }
 .ttag { color:var(--acc); font-size:12.5px; }
 #qbody .ttag-label { color:var(--mut); font-size:12.5px; margin-right:4px; }
@@ -352,8 +346,8 @@ footer { text-align:center; color:var(--mut); font-size:11.5px; padding:4px 0 12
 <footer>DSE 題庫（數學）— 內容僅供學習用途</footer>
 
 <script src="hub/papers.js?v=1"></script>
-<script src="data.js?v=202611191730"></script>
-<script src="answers.js?v=202611191730"></script>
+<script src="data.js?v=202611191830"></script>
+<script src="answers.js?v=202611191830"></script>
 <script>
 const QS = window.QB.questions;
 const $ = s => document.querySelector(s);
@@ -509,12 +503,15 @@ function solExpandHtml(q, expanded) {
       ${rep ? `<div class="rep-body" id="repBody" hidden>${rep}</div>` : ''}
     </div>`;
 }
-/* 答對率視覺化 bar：紅(低)→綠(高) 色階，thumb 標示實際百分位 */
+/* 答對率視覺化：雙色 bar（綠=答對比例、紅=答錯比例） */
 function pctGauge(pct) {
   if (pct == null || isNaN(pct)) return '';
   const p = Math.max(0, Math.min(100, Number(pct)));
   return `<span class="pct-meter" role="img" aria-label="考生答對率 ${p}%">`
-    + `<span class="pct-scale"><span class="pct-thumb" style="left:${p}%"></span></span>`
+    + `<span class="pct-scale">`
+    + `<span class="pct-seg-green" style="width:${p}%"></span>`
+    + `<span class="pct-seg-red" style="width:${100 - p}%"></span>`
+    + `</span>`
     + `<span class="pct-num">${p}%</span></span>`;
 }
 /* 考評局對本題嘅評語（data.js 的 report 欄；已按段落分開） */
@@ -1099,7 +1096,7 @@ if (!location.hash) {
   }
 }
 </script>
-<script src="pwa.js?v=202611191730"></script>
+<script src="pwa.js?v=202611191830"></script>
 
 <script>
 /* 圖片點擊放大 */

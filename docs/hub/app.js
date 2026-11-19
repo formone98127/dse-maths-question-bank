@@ -157,6 +157,17 @@ function paperNo(paper) {
   return m ? m[1].toUpperCase() : "1";
 }
 
+/* PDF 目錄的卷別（p: ""／"1"／"2"／"1A"…）→ 同 CATALOG 一致的標籤 */
+function paperLabelFromPdf(p) {
+  const s = String(p == null ? "" : p).trim().toUpperCase();
+  if (!s) return "";                 // 全卷（跨兩卷）→ 冇特定卷別
+  if (s === "1") return "卷一";
+  if (s === "2") return "卷二";
+  if (s === "1A") return "卷一甲";
+  if (s === "1B") return "卷一乙";
+  return "Paper " + s;
+}
+
 function bankQuestions(sid) {
   const subj = sidToSubject(sid);
   const qs = (window.QB && Array.isArray(window.QB.questions)) ? window.QB.questions : [];
@@ -242,7 +253,25 @@ function optionsFor(key) {
       .map((y) => ({ value: String(y), label: YEAR_LABEL[y] || String(y) })));
   }
   if (key === "paper") {
-    return head.concat(uniq(rows.map((r) => r.paper)).map((p) => ({ value: p, label: p })));
+    /* 卷別選項：同時由電子題庫（CATALOG，如數學 卷一/卷二）同 PDF 目錄（未入庫科目）
+       收集，統一標籤；按科目／年份現有嘅卷別才出，唔會出空選項。 */
+    const labels = new Set();
+    rows.forEach((r) => { if (r.paper) labels.add(String(r.paper)); });
+    const sid0 = state.subject !== PLACE && state.subject !== ALL ? state.subject : null;
+    const sidList = sid0 ? [sid0] : pdfSubjects().map((x) => x.id);
+    const yr = (state.year !== PLACE && state.year !== ALL) ? String(state.year) : null;
+    for (const id of sidList) {
+      const items = (((window.PAPERS || {}).subjects || {})[id] || {}).items || [];
+      for (const it of items) {
+        if (yr && String(it.y) !== yr) continue;
+        const lbl = paperLabelFromPdf(it.p);
+        if (lbl) labels.add(lbl);
+      }
+    }
+    const ORDER = { "卷一": 1, "卷一甲": 1.1, "卷一乙": 1.2, "卷二": 2 };
+    return head.concat([...labels]
+      .sort((a, b) => (ORDER[a] || 9) - (ORDER[b] || 9) || a.localeCompare(b, "zh-Hant"))
+      .map((p) => ({ value: p, label: p })));
   }
   if (key === "topic") {
     const sid = state.subject === PLACE || state.subject === ALL ? null : state.subject;
@@ -480,6 +509,12 @@ function renderYear() {
   }
   const rows = bankRows.concat(pdfRows)
     .filter((r) => !r.pdf || state.year === PLACE || state.year === ALL || String(r.year) === String(state.year))
+    .filter((r) => {
+      /* 卷別：電子題庫行已由 filteredCatalog 過濾；PDF 行要在這裡按卷別比對 */
+      if (state.paper === PLACE || state.paper === ALL) return true;
+      if (!r.pdf) return true;
+      return paperLabelFromPdf(r.paper) === state.paper;
+    })
     .sort((a, b) => (b.year - a.year) || String(a.name || "").localeCompare(String(b.name || ""), "zh-Hant"));
 
   if (!rows.length) {

@@ -337,8 +337,8 @@ footer { text-align:center; color:var(--mut); font-size:11.5px; padding:4px 0 12
 <footer>DSE 題庫（數學）— 內容僅供學習用途</footer>
 
 <script src="hub/papers.js?v=1"></script>
-<script src="data.js?v=202611191500"></script>
-<script src="answers.js?v=202611191500"></script>
+<script src="data.js?v=202611191530"></script>
+<script src="answers.js?v=202611191530"></script>
 <script>
 const QS = window.QB.questions;
 const $ = s => document.querySelector(s);
@@ -811,9 +811,16 @@ function enhanceMc(root) {
         /* 一揀答案就揭開考評報告入面嘅答對率 */
         const repPct = document.getElementById('repPct');
         if (repPct) repPct.hidden = false;
-        if (!ans) return;
+        const rateTxt = (pct != null) ? `（考生答對率 ${pct}%）` : '';
+        if (!ans) {
+          /* 冇官方答案都照樣顯示答對率，唔會「揀完乜都冇」 */
+          feedback.hidden = false;
+          feedback.className = 'mc-feedback';
+          feedback.textContent = `已選擇 ${p.letter}${rateTxt}`;
+          return;
+        }
         const ok = p.letter === ans;
-        const rate = (pct != null) ? `（答對率 ${pct}%）` : '';
+        const rate = (pct != null) ? `（考生答對率 ${pct}%）` : '';
         feedback.hidden = false;
         if (ok) {
           /* 答對先至標正確答案；答錯只話你知錯，唔可以透漏邊個先啱 */
@@ -1069,7 +1076,7 @@ if (!location.hash) {
   }
 }
 </script>
-<script src="pwa.js?v=202611191500"></script>
+<script src="pwa.js?v=202611191530"></script>
 
 <script>
 /* 圖片點擊放大 */

@@ -654,6 +654,43 @@ body.reel-open { overflow: hidden; }
   font-size: 14px;
   line-height: 1.65;
 }
+/* Hub → topics 可爬內鏈（SEO 用，同 seo-faq 一致嘅外觀） */
+.hub-topic-index {
+  max-width: var(--max);
+  margin: 8px auto 4px;
+  padding: 0 18px 20px;
+  width: 100%;
+}
+.hub-topic-index h2 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.hub-topic-index .hti-sub {
+  color: var(--mut);
+  font-size: 13px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+.hti-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2px 14px;
+}
+.hti-list li a {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 5px 0;
+  color: var(--acc-ink);
+  font-size: 13.5px;
+  text-decoration: none;
+  border-bottom: 1px solid var(--line);
+}
+.hti-list li a:hover { text-decoration: underline; }
+.hti-list .n { color: var(--mut); font-variant-numeric: tabular-nums; }
+@media (max-width: 420px) { .hti-list { grid-template-columns: 1fr; } }
 footer a {
   color: #93c5fd;
   text-decoration: none;

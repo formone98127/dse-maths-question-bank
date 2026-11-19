@@ -798,3 +798,9 @@ footer {
 .tag.pdf { background: rgba(90,170,255,0.16); color: #8fd0ff; }
 
 .tag.dl { background: rgba(80,220,150,0.16); color: #7ee2b8; }
+
+a.brand-lockup { text-decoration: none; color: inherit; }
+a.brand-lockup:hover .brand, a.brand-lockup:hover .brand-dse { opacity: .85; }
+
+a.brand { text-decoration: none; color: inherit; display: inline-block; }
+a.brand:hover { opacity: .85; }

@@ -113,6 +113,21 @@ main { flex:1; min-height:0; display:flex; flex-direction:column; max-width:960p
   border: 0.5px solid rgba(90,170,255,0.35);
 }
 .mc-pct strong { font-weight: 700; }
+/* 答對率視覺化：紅(低)→綠(高) 色階 bar，thumb 標示實際百分位 */
+.pct-meter { display: inline-flex; align-items: center; gap: 8px; vertical-align: middle; margin-left: 4px; }
+.pct-scale {
+  position: relative; flex: 0 0 auto; width: 90px; height: 8px; border-radius: 999px;
+  background: linear-gradient(to right, #e5533d 0%, #f0a92e 50%, #33a852 100%);
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,.08);
+}
+.pct-thumb {
+  position: absolute; top: 50%; left: 0;
+  width: 12px; height: 12px; border-radius: 50%;
+  background: #fff; border: 2px solid #33475b;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 1px 3px rgba(0,0,0,.3);
+}
+.pct-num { font-weight: 700; font-size: 13px; color: var(--ink); }
 .ttag { color:var(--acc); font-size:12.5px; }
 #qbody .ttag-label { color:var(--mut); font-size:12.5px; margin-right:4px; }
 .sol-panel {
@@ -337,8 +352,8 @@ footer { text-align:center; color:var(--mut); font-size:11.5px; padding:4px 0 12
 <footer>DSE 題庫（數學）— 內容僅供學習用途</footer>
 
 <script src="hub/papers.js?v=1"></script>
-<script src="data.js?v=202611191530"></script>
-<script src="answers.js?v=202611191530"></script>
+<script src="data.js?v=202611191730"></script>
+<script src="answers.js?v=202611191730"></script>
 <script>
 const QS = window.QB.questions;
 const $ = s => document.querySelector(s);
@@ -494,11 +509,19 @@ function solExpandHtml(q, expanded) {
       ${rep ? `<div class="rep-body" id="repBody" hidden>${rep}</div>` : ''}
     </div>`;
 }
+/* 答對率視覺化 bar：紅(低)→綠(高) 色階，thumb 標示實際百分位 */
+function pctGauge(pct) {
+  if (pct == null || isNaN(pct)) return '';
+  const p = Math.max(0, Math.min(100, Number(pct)));
+  return `<span class="pct-meter" role="img" aria-label="考生答對率 ${p}%">`
+    + `<span class="pct-scale"><span class="pct-thumb" style="left:${p}%"></span></span>`
+    + `<span class="pct-num">${p}%</span></span>`;
+}
 /* 考評局對本題嘅評語（data.js 的 report 欄；已按段落分開） */
 function reportHtml(q) {
   const t = (q && q.report) || '';
   const pct = (q && q.answer_pct != null)
-    ? `<p class="mc-pct mc-pct-rep" id="repPct" hidden>考生答對率 <strong>${q.answer_pct}%</strong></p>` : '';
+    ? `<p class="mc-pct mc-pct-rep" id="repPct" hidden>考生答對率 ${pctGauge(q.answer_pct)}</p>` : '';
   if (!t.trim()) return pct;
   const body = t.split(/\n{2,}/).filter(Boolean)
           .map(x => `<p>${x.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}</p>`)
@@ -811,26 +834,26 @@ function enhanceMc(root) {
         /* 一揀答案就揭開考評報告入面嘅答對率 */
         const repPct = document.getElementById('repPct');
         if (repPct) repPct.hidden = false;
-        const rateTxt = (pct != null) ? `（考生答對率 ${pct}%）` : '';
+        const gauge = pctGauge(pct);
+        const rateTxt = gauge ? ' ' + gauge : '';
         if (!ans) {
           /* 冇官方答案都照樣顯示答對率，唔會「揀完乜都冇」 */
           feedback.hidden = false;
           feedback.className = 'mc-feedback';
-          feedback.textContent = `已選擇 ${p.letter}${rateTxt}`;
+          feedback.innerHTML = `已選擇 ${p.letter}${rateTxt}`;
           return;
         }
         const ok = p.letter === ans;
-        const rate = (pct != null) ? `（考生答對率 ${pct}%）` : '';
         feedback.hidden = false;
         if (ok) {
           /* 答對先至標正確答案；答錯只話你知錯，唔可以透漏邊個先啱 */
           btn.classList.add('correct');
           feedback.className = 'mc-feedback ok';
-          feedback.textContent = `正確！答案是 ${ans}${rate}`;
+          feedback.innerHTML = `正確！答案是 ${ans}${rateTxt}`;
         } else {
           btn.classList.add('wrong');
           feedback.className = 'mc-feedback bad';
-          feedback.textContent = `唔啱，再試一次。${rate}`;
+          feedback.innerHTML = `唔啱，再試一次。${rateTxt}`;
         }
       });
       wrap.appendChild(btn);
@@ -1076,7 +1099,7 @@ if (!location.hash) {
   }
 }
 </script>
-<script src="pwa.js?v=202611191530"></script>
+<script src="pwa.js?v=202611191730"></script>
 
 <script>
 /* 圖片點擊放大 */

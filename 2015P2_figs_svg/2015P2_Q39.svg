@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="321.12pt" height="167.136122pt" viewBox="0 0 321.12 167.136122" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-05T18:23:48.596399</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.9, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 167.136122 
+L 321.12 167.136122 
+L 321.12 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="line2d_1">
+    <path d="M 16.338462 122.916126 
+L 19.517694 119.733468 
+L 22.696926 116.245735 
+L 26.406031 111.830912 
+L 30.645007 106.392425 
+L 35.413855 99.871926 
+L 41.242448 91.500771 
+L 58.728226 66.069488 
+L 63.497074 59.660375 
+L 67.736051 54.349964 
+L 71.445155 50.06808 
+L 74.624387 46.708585 
+L 77.80362 43.666207 
+L 80.982852 40.966868 
+L 83.632212 38.996147 
+L 86.281572 37.291338 
+L 88.930933 35.862528 
+L 91.580293 34.718175 
+L 94.229653 33.865051 
+L 96.349141 33.395688 
+L 98.46863 33.117754 
+L 100.588118 33.032302 
+L 102.707606 33.139657 
+L 104.827094 33.439411 
+L 106.946582 33.930428 
+L 109.066071 34.61085 
+L 111.715431 35.723731 
+L 114.364791 37.121889 
+L 117.014151 38.797051 
+L 119.663512 40.739303 
+L 122.312872 42.937149 
+L 125.492104 45.893533 
+L 128.671337 49.173979 
+L 131.850569 52.750536 
+L 135.559673 57.256654 
+L 139.79865 62.781931 
+L 144.567498 69.37615 
+L 150.925963 78.57935 
+L 165.76238 100.209643 
+L 170.531229 106.711346 
+L 174.770205 112.127983 
+L 178.479309 116.519985 
+L 181.658542 119.985615 
+L 184.837774 123.144023 
+L 188.017006 125.968297 
+L 190.666367 128.049167 
+L 193.315727 129.868921 
+L 195.965087 131.416788 
+L 198.614447 132.68361 
+L 201.263808 133.661887 
+L 203.383296 134.232808 
+L 205.502784 134.61316 
+L 207.622272 134.801501 
+L 209.74176 134.797119 
+L 211.861249 134.600029 
+L 213.980737 134.210978 
+L 216.100225 133.63144 
+L 218.749585 132.642558 
+L 221.398946 131.365376 
+L 224.048306 129.807451 
+L 226.697666 127.978004 
+L 229.347026 125.887861 
+L 232.526259 123.053094 
+L 235.705491 119.884967 
+L 238.884723 116.410476 
+L 242.593828 112.009319 
+L 246.832804 106.58391 
+L 251.601653 100.074651 
+L 257.430245 91.711945 
+L 275.445895 65.537186 
+L 280.214743 59.161177 
+L 280.744615 58.47986 
+L 280.744615 58.47986 
+" clip-path="url(#pf2329f616c)" style="fill: none; stroke: #000000; stroke-width: 1.5; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <defs>
+     <path id="mc8fa450e25" d="M 0 1.75 
+C 0.464105 1.75 0.909265 1.565609 1.237437 1.237437 
+C 1.565609 0.909265 1.75 0.464105 1.75 0 
+C 1.75 -0.464105 1.565609 -0.909265 1.237437 -1.237437 
+C 0.909265 -1.565609 0.464105 -1.75 0 -1.75 
+C -0.464105 -1.75 -0.909265 -1.565609 -1.237437 -1.237437 
+C -1.565609 -0.909265 -1.75 -0.464105 -1.75 0 
+C -1.75 0.464105 -1.565609 0.909265 -1.237437 1.237437 
+C -0.909265 1.565609 -0.464105 1.75 0 1.75 
+z
+" style="stroke: #000000"/>
+    </defs>
+    <g clip-path="url(#pf2329f616c)">
+     <use xlink:href="#mc8fa450e25" x="154.550769" y="83.927729" style="stroke: #000000"/>
+     <use xlink:href="#mc8fa450e25" x="262.716923" y="83.927729" style="stroke: #000000"/>
+    </g>
+   </g>
+   <g id="patch_2">
+    <path d="M 6.723692 83.927729 
+Q 150.945231 83.927729 293.936932 83.927729 
+" style="fill: none; stroke: #000000; stroke-width: 1.1; stroke-linecap: round"/>
+    <path d="M 288.736932 81.327729 
+L 293.936932 83.927729 
+L 288.736932 86.527729 
+z
+" style="stroke: #000000; stroke-width: 1.1; stroke-linecap: round"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 64.412308 152.636975 
+Q 64.412308 83.927729 64.412308 16.44832 
+" style="fill: none; stroke: #000000; stroke-width: 1.1; stroke-linecap: round"/>
+    <path d="M 61.812308 21.64832 
+L 64.412308 16.44832 
+L 67.012308 21.64832 
+z
+" style="stroke: #000000; stroke-width: 1.1; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <!-- 75 -->
+    <g transform="translate(146.437332 118.022061) scale(0.14 -0.14)">
+     <defs>
+      <path id="MicrosoftJhengHeiRegular-37" d="M 3391 4688 
+L 1459 0 
+L 922 0 
+L 2741 4366 
+L 288 4366 
+L 288 4841 
+L 3391 4841 
+L 3391 4688 
+z
+" transform="scale(0.015625)"/>
+      <path id="MicrosoftJhengHeiRegular-35" d="M 553 684 
+Q 1047 363 1559 363 
+Q 2072 363 2394 658 
+Q 2716 953 2716 1441 
+Q 2716 1931 2394 2200 
+Q 2072 2469 1466 2469 
+Q 1275 2469 706 2431 
+L 706 4841 
+L 3025 4841 
+L 3025 4366 
+L 1203 4366 
+L 1203 2916 
+Q 1475 2931 1616 2931 
+Q 2378 2931 2811 2548 
+Q 3244 2166 3244 1472 
+Q 3244 750 2775 334 
+Q 2306 -81 1544 -81 
+Q 875 -81 553 119 
+L 553 684 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#MicrosoftJhengHeiRegular-37"/>
+     <use xlink:href="#MicrosoftJhengHeiRegular-35" transform="translate(57.958984 0)"/>
+    </g>
+   </g>
+   <g id="text_2">
+    <!-- 165 -->
+    <g transform="translate(250.546767 118.022061) scale(0.14 -0.14)">
+     <defs>
+      <path id="MicrosoftJhengHeiRegular-31" d="M 3313 0 
+L 594 0 
+L 594 466 
+L 1694 466 
+L 1694 4272 
+L 566 3931 
+L 566 4434 
+L 2216 4950 
+L 2216 466 
+L 3313 466 
+L 3313 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="MicrosoftJhengHeiRegular-36" d="M 3138 4284 
+Q 2756 4475 2347 4475 
+Q 1681 4475 1297 3892 
+Q 913 3309 916 2328 
+L 931 2328 
+Q 1266 3022 2041 3022 
+Q 2675 3022 3053 2609 
+Q 3431 2197 3431 1525 
+Q 3431 834 3006 376 
+Q 2581 -81 1922 -81 
+Q 1166 -81 770 509 
+Q 375 1100 375 2125 
+Q 375 3353 890 4137 
+Q 1406 4922 2338 4922 
+Q 2844 4922 3138 4781 
+L 3138 4284 
+z
+M 953 1584 
+Q 953 1072 1226 717 
+Q 1500 363 1941 363 
+Q 2369 363 2631 675 
+Q 2894 988 2894 1459 
+Q 2894 1988 2637 2281 
+Q 2381 2575 1934 2575 
+Q 1525 2575 1239 2287 
+Q 953 2000 953 1584 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#MicrosoftJhengHeiRegular-31"/>
+     <use xlink:href="#MicrosoftJhengHeiRegular-36" transform="translate(57.958984 0)"/>
+     <use xlink:href="#MicrosoftJhengHeiRegular-35" transform="translate(115.917969 0)"/>
+    </g>
+   </g>
+   <g id="text_3">
+    <!-- O -->
+    <g transform="translate(58.714964 118.022061) scale(0.14 -0.14)">
+     <defs>
+      <path id="MicrosoftJhengHeiRegular-4f" d="M 322 2363 
+Q 322 3528 955 4225 
+Q 1588 4922 2666 4922 
+Q 3666 4922 4277 4240 
+Q 4888 3559 4888 2484 
+Q 4888 1325 4270 622 
+Q 3653 -81 2584 -81 
+Q 1563 -81 942 603 
+Q 322 1288 322 2363 
+z
+M 881 2413 
+Q 881 1541 1343 970 
+Q 1806 400 2581 400 
+Q 3409 400 3870 939 
+Q 4331 1478 4331 2403 
+Q 4331 3359 3886 3896 
+Q 3441 4434 2625 4434 
+Q 1831 4434 1356 3861 
+Q 881 3288 881 2413 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#MicrosoftJhengHeiRegular-4f"/>
+    </g>
+   </g>
+   <g id="text_4">
+    <!-- $x$ -->
+    <g transform="translate(306.590769 87.783198) scale(0.14 -0.14)">
+     <defs>
+      <path id="DejaVuSans-Oblique-78" d="M 3841 3500 
+L 2234 1784 
+L 3219 0 
+L 2559 0 
+L 1819 1388 
+L 531 0 
+L -166 0 
+L 1556 1844 
+L 641 3500 
+L 1300 3500 
+L 1972 2234 
+L 3144 3500 
+L 3841 3500 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#DejaVuSans-Oblique-78" transform="translate(0 0.3125)"/>
+    </g>
+   </g>
+   <g id="text_5">
+    <!-- $y$ -->
+    <g transform="translate(65.019692 15.51125) scale(0.14 -0.14)">
+     <defs>
+      <path id="DejaVuSans-Oblique-79" d="M 1588 -325 
+Q 1188 -997 936 -1164 
+Q 684 -1331 294 -1331 
+L -159 -1331 
+L -63 -850 
+L 269 -850 
+Q 509 -850 678 -719 
+Q 847 -588 1056 -206 
+L 1234 128 
+L 459 3500 
+L 1069 3500 
+L 1650 819 
+L 3256 3500 
+L 3859 3500 
+L 1588 -325 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#DejaVuSans-Oblique-79" transform="translate(0 0.3125)"/>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pf2329f616c">
+   <rect x="4.32" y="7.584122" width="312.48" height="155.232"/>
+  </clipPath>
+ </defs>
+
+ <g id="dsepaper-hk-wm" pointer-events="none" aria-hidden="true">
+  <text x="314.698" y="161.136" text-anchor="end" font-family="Noto Sans TC, PingFang TC, Microsoft JhengHei, sans-serif" font-size="10.000" font-weight="700" fill="#3d8bfd" fill-opacity="0.28">dsepaper.hk</text>
+ </g>
+</svg>

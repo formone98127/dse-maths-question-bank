@@ -1,0 +1,58 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2012",
+  "paper": "Paper 2",
+  "qno": "4",
+  "hash": "#2012P2Q4"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-16",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "多項式除法與餘數定理",
+   "secondary_topics": [
+    "代數基本定理",
+    "因式定理"
+   ],
+   "required_formulas": [
+    "$P(x)$ 除以 $x-a$ 的餘數為 $P(a)$",
+    "若 $x+a$ 為 $P(x)$ 之因式，則 $P(-a) = 0$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "符號處理錯誤",
+    "student_thought_process": "學生正確代入 $x=-3$ 但計算時將 $4(-3)^2$ 算成 $36$，接著在合併項時誤將 $-12 - 9 + k(-3)$ 中的常數項 $-12$ 與 $-9$ 加總為 $-21$，再錯誤地移項或解方程導致得到 $-25$。另一可能路徑是計算 $k(-3) = -12 - 4(9) = -48$，然後除以 $-3$ 時誤算為 $+25$（忽略負號）或混淆了 $x^3$ 項的係數影響。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "平方運算錯誤",
+    "student_thought_process": "學生在計算 $4(-3)^2$ 時，正確得出 $36$，但在後續步驟中將 $kx$ 項視為 $+k(3)$ 而非 $k(-3)$，或者在移項解 $k$ 時，錯誤地將等式兩邊除以 $-3$ 後忘記了負號，導致結果為正數 $1$（實際應為 $-1$）。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "餘數定理誤用",
+    "student_thought_process": "學生可能錯誤地認為因式是 $x+3$ 意味著根是 $3$ 而非 $-3$，於是代入 $x=3$ 計算：$27 + 36 + 3k - 12 = 0 \\Rightarrow 51 + 3k = 0 \\Rightarrow k = -17$（非選項），或者更嚴重地完全搞混了因式定理的符號規則，直接將 $k$ 設為某個與常數項無關的值，或是將題目看錯成求 $x=3$ 時的值。另一種可能是學生試圖用長除法但算錯了前兩步，導致最後餘數為零時解出錯誤的 $k$ 值。"
+   }
+  },
+  "scaffolding_hints": [
+   "Hint 1 啟發：當一個多項式能被 $(x+a)$ 整除時，根據因式定理，將 $x=-a$ 代入該多項式後結果應為零。",
+   "Hint 2 知識：本題需使用公式 $P(-3) = (-3)^3 + 4(-3)^2 + k(-3) - 12 = 0$，請先計算已知數值部分。",
+   "Hint 3 破題：計算完常數項後，你會得到一個關於 $k$ 的簡單一次方程，只需將 $k$ 的係數移項並除以該係數即可求得答案。"
+  ],
+  "quick_solution_strategy": "代入 $x=-3$ 使多項式為零，解得 $-27 + 36 - 3k - 12 = 0 \\Rightarrow -3 = 3k \\Rightarrow k=-1$"
+ }
+}

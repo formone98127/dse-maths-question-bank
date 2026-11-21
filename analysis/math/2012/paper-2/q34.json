@@ -1,0 +1,57 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2012",
+  "paper": "Paper 2",
+  "qno": "34",
+  "hash": "#2012P2Q34"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-16",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "二次函數與頂點式",
+   "secondary_topics": [
+    "複數的基本性質",
+    "二次方程式根的種類判斷"
+   ],
+   "required_formulas": [
+    "$f(x) = a(x-h)^2 + k$"
+   ],
+   "bloom_taxonomy_level": "理解",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "頂點坐標不決定係數 a 的具體值",
+    "student_thought_process": "學生誤以為頂點在 (3,-4) 且開口向上時，必然經過整數點。他們可能假設 a=1 或 a=某些特定值，導致根為整數（如 x=2,4），但忽略了 a 可以是任意非零實數（例如 a=0.5 時根就不是整數）的條件。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略係數 a 對根的影響",
+    "student_thought_process": "學生將方程 f(x)-3=0 視為 a(x-3)^2 - 4 - 3 = 0 => a(x-3)^2 = 7。他們可能錯誤地認為只要右邊是正數，根就一定是有理數，卻忘了若 a 為無理數（如 sqrt(2)），則 (x-3)^2 = 7/sqrt(2)，解出的 x 將包含無理數成分，因此根未必是有理數。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤解非實數的定義與頂點位置關係",
+    "student_thought_process": "學生觀察到頂點 y 坐標為 -4，方程 f(x)+5=0 相當於求 f(x)=-5。他們知道最小值（或最大值）是 -4，所以 -5 在極值之外。對於開口向上的二次函數，-5 確實無解（非實數）。但學生未能考慮到「必為」的條件：若該二次函數開口向下，頂點為 (3,-4) 表示最大值為 -4，此時 f(x)=-5 會有兩個不同的實數根。題目未指定開口方向，故 D 選項不是「必為」正確。"
+   }
+  },
+  "scaffolding_hints": [
+   "Hint 1: 二次函數的頂點式為 $f(x) = a(x-3)^2 - 4$，其中 $a$ 是任意非零實數，且 $a$ 的正負決定開口方向。",
+   "Hint 2: 將選項中的方程代入頂點式，例如 C 選項變為 $a(x-3)^2 - 4 + 4 = 0$，觀察此時的解的情況。",
+   "Hint 3: 思考「必為」的條件。若函數開口向下，最大值為 -4，那麼求 $f(x)=-5$ 會有幾個實根？這會推翻選項 D 的絕對性。"
+  ],
+  "quick_solution_strategy": "代入頂點式 $f(x)=a(x-3)^2-4$，C 選項化簡得 $a(x-3)^2=0$，無論 $a$ 為何值，必有一實根 $x=3$（重根），故 C 正確。"
+ }
+}

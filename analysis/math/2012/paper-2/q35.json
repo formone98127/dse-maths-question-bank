@@ -1,0 +1,58 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2012",
+  "paper": "Paper 2",
+  "qno": "35",
+  "hash": "#2012P2Q35"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-16",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "複數運算",
+   "secondary_topics": [
+    "虛數單位性質",
+    "二項式展開"
+   ],
+   "required_formulas": [
+    "$i^2 = -1$",
+    "$i^3 = -i$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "符號處理失誤",
+    "student_thought_process": "學生正確算出 $i^3 = -i$，但在展開 $-i(\\beta i - 3)$ 時，對第二項 $-i \\times (-3)$ 的負負得正處理錯誤，誤算為 $-3i$，導致結果變成 $\\beta - 3i$"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "展開符號混淆",
+    "student_thought_process": "學生在展開時完全忽略了括號前的負號，直接將 $-i$ 分配進去變成 $+\\beta i^2 + 3i$，然後錯誤地認為 $i^2=1$（或忘記變號），最終得到 $-\\beta+3i$"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略虛數單位立方值",
+    "student_thought_process": "學生完全忘記 $i^3 = -i$，誤以為 $i^3 = i$ 或 $1$，直接將 $i$ 分配進去得到 $\\beta i^2 - 3i$，再錯誤化簡為 $-\\beta-3i$"
+   }
+  },
+  "scaffolding_hints": [
+   "Hint 1 啟發：觀察題目左側的 $i^3$，回想虛數單位 $i$ 的週期性性質，特別是 $i^2$ 與 $i^3$ 的值。",
+   "Hint 2 知識：將 $i^3$ 替換為 $-i$ 後，題目變為計算 $-i(\\beta i - 3)$；請小心運用分配律，注意括號前負號對兩項的影響。",
+   "Hint 3 破題：展開時，第一項是 $(-i) \\times (\\beta i)$，第二項是 $(-i) \\times (-3)$，請特別檢查第二項的符號變化是否正確。"
+  ],
+  "quick_solution_strategy": "先化簡 $i^3=-i$，再展開得 $-\\beta i^2 + 3i$，利用 $i^2=-1$ 即得 $\\beta+3i$"
+ }
+}

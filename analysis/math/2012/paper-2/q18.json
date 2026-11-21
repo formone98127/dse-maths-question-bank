@@ -1,0 +1,59 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2012",
+  "paper": "Paper 2",
+  "qno": "18",
+  "hash": "#2012P2Q18"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-16",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "直角三角形三角函數",
+   "secondary_topics": [
+    "正弦定義",
+    "餘弦定義",
+    "互餘角關係"
+   ],
+   "required_formulas": [
+    "$\\sin \\theta = \\frac{對邊}{斜邊}$",
+    "$\\cos \\theta = \\frac{鄰邊}{斜邊}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "正弦餘弦混淆",
+    "student_thought_process": "學生正確畫出 $BD$ 為高，但在 $\triangle BCD$ 中將 $BC$ 視為斜邊時，誤以為 $\\sin \\beta = \\frac{BD}{BC}$ 應導出 $BD=\\ell \\sin \\beta$（此步正確），接著在 $\triangle ABD$ 中求 $AB$ 時，錯誤地將 $\\cos \\alpha$ 放在分母或分子位置搞混，導致結果變成 $\\frac{\\ell \\sin \\beta}{\\cos \\alpha}$。這通常發生於學生忘記 $AB$ 是斜邊而誤用鄰邊公式，或是混淆了角度 $\\alpha$ 與 $\\beta$ 在各自三角形中的對邊/鄰邊角色。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "互餘角誤用",
+    "student_thought_process": "學生試圖利用 $\\alpha + \\beta = 90^\\circ$ 的關係，但錯誤地將 $\\sin \\alpha$ 替換為 $\\cos \\beta$ 或反之時，未同時調整分母。例如在 $\triangle ABD$ 中，正確應為 $AB = \\frac{BD}{\\cos \\alpha}$，若學生錯誤認為 $\\cos \\alpha = \\sin \\beta$ 並直接代入而不考慮係數，會得到類似選項 C 的形式（分子分母互換或函數名稱錯誤）。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "三角比反轉",
+    "student_thought_process": "學生正確識別出 $BD = \\ell \\sin \\beta$，但在第二步求 $AB$ 時，錯誤地使用 $\\sin \\alpha = \\frac{BD}{AB}$ 而寫成 $AB = \\frac{BD}{\\sin \\alpha}$，卻忘記在 $\triangle ABD$ 中 $\\alpha$ 的鄰邊是 $AD$ 而非 $BD$，導致將 $\\cos \\beta$（來自互餘關係）錯誤地放在分母，形成 $\\frac{\\ell \\cos \\beta}{\\sin \\alpha}$。這顯示學生在處理互餘角代換時，未嚴格檢查哪條邊是斜邊。"
+   }
+  },
+  "scaffolding_hints": [
+   "Hint 1 啟發：觀察圖形中的兩個直角三角形 $\\triangle BCD$ 和 $\\triangle ABD$，它們共用高 $BD$。",
+   "Hint 2 知識：在 $\\triangle BCD$ 中利用正弦定義表示 $BD$；在 $\\triangle ABD$ 中利用餘弦定義建立 $AB$ 與 $BD$ 的關係。",
+   "Hint 3 破題：將第一步求得的 $BD$ 代入第二步的式子，注意 $\\alpha$ 在 $\\triangle ABD$ 中的位置是鄰邊關係而非對邊。"
+  ],
+  "quick_solution_strategy": "先由 $\\triangle BCD$ 得 $BD=\\ell \\sin \\beta$，再於 $\\triangle ABD$ 用 $AB = BD/\\cos \\alpha$ 代換即得答案。"
+ }
+}

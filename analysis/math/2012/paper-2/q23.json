@@ -1,0 +1,58 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2012",
+  "paper": "Paper 2",
+  "qno": "23",
+  "hash": "#2012P2Q23"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-16",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "極坐標與直角坐標轉換、旋轉",
+   "secondary_topics": [
+    "三角函數值",
+    "象限判斷"
+   ],
+   "required_formulas": [
+    "r = \\sqrt{x^2+y^2}",
+    "點 (x,y) 繞原點逆時針旋轉 90^\\circ 後新直角坐標為 (-y,x)"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "旋轉方向與角度計算錯誤",
+    "student_thought_process": "學生可能正確算出 r=6，但在判斷旋轉後的角度時，誤以為逆時針旋轉 90^\\circ 會將原角度減去 90^\\circ（順時針），或者在將直角坐標轉換回極坐標時，錯誤地將第三象限的點對應到了第二象限 (150^\\circ) 而非第四象限。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "半徑計算錯誤且角度方向混淆",
+    "student_thought_process": "學生在計算半徑 r 時出錯（算成 3），同時在角度上犯了與選項 A 類似的錯誤，將逆時針旋轉誤解為角度減小或選錯了象限。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "僅計算半徑正確但角度方向錯誤",
+    "student_thought_process": "學生成功算出 r=6，但在處理旋轉後的象限時，將逆時針旋轉 90^\\circ 誤認為是順時針（角度減 90^\\circ），導致選到 330^\\circ 以外的錯誤角度。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "Hint 1 啟發：先觀察點 P 位於第幾象限，並思考逆時針旋轉 90^\\circ 後會移動到哪個新的象限？",
+   "Hint 2 知識：利用 r = \\sqrt{x^2+y^2} 計算半徑；若先轉為直角坐標 (-y, x)，再觀察新點所在象限即可決定角度。",
+   "Hint 3 破題：原點在第三象限，逆時針轉 90^\\circ 必進入第四象限，第四象限的角度範圍是 270^\\circ 到 360^\\circ"
+  ],
+  "quick_solution_strategy": "先算 r=\\sqrt{(-3)^2+(-3\\sqrt{3})^2}=6。原點在第三象限，逆時針轉 90^\\circ 進入第四象限，故選 (6, 330^\\circ)。"
+ }
+}

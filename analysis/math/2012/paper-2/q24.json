@@ -1,0 +1,58 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2012",
+  "paper": "Paper 2",
+  "qno": "24",
+  "hash": "#2012P2Q24"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-16",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "平面幾何與距離公式",
+   "secondary_topics": [
+    "圓的定義",
+    "直角坐標系中的距離概念"
+   ],
+   "required_formulas": [
+    "兩點間距離公式：$d = \\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$",
+    "圓的標準方程式：$(x-h)^2 + (y-k)^2 = r^2$"
+   ],
+   "bloom_taxonomy_level": "理解",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤將軌跡視為固定圖形",
+    "student_thought_process": "學生可能混淆了「滿足條件的點集」與「由這些點組成的封閉多邊形」，錯誤地認為所有滿足條件的點會連成正方形，或是將焦點與準線的概念錯置應用於此情境。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆拋物線定義",
+    "student_thought_process": "學生可能將「到一點距離等於定長」誤記為「到一點與一直線距離相等」的拋物線定義，或是因為看到軌跡問題就直覺聯想到二次曲線中的拋物線。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤解點集形狀",
+    "student_thought_process": "學生可能認為滿足條件的點只有有限個（例如只考慮整數座標），進而將這些離散點錯誤地連結成三角形，或是完全無法想像連續軌跡的概念。"
+   }
+  },
+  "scaffolding_hints": [
+   "Hint 1 啟發：回想一下，在平面上所有與某個固定點距離相等的點，會形成什麼樣的圖形？",
+   "Hint 2 知識：設圓心為 $(h,k)$，半徑為 $r$，則圓上任意一點 $(x,y)$ 滿足的方程式為 $(x-h)^2 + (y-k)^2 = r^2$。本題中固定點即為圓心，定長即為半徑。",
+   "Hint 3 破題：將題目給定的坐標 $(20,12)$ 視為圓心，距離 $5$ 視為半徑，代入上述方程式觀察其圖形特徵，即可排除其他選項。"
+  ],
+  "quick_solution_strategy": "到定點距離為定長的點的軌跡定義即為圓。"
+ }
+}

@@ -33,7 +33,19 @@ def lang_of(entry: dict) -> str:
 
 
 def paper_label(p: str) -> str:
+    if p.endswith("1M"):
+        return "M1"
     return "卷一" if p.endswith("1") else "卷二"
+
+
+def subject_name(p: str) -> str:
+    return "數學（延伸部分 M1）" if p.endswith("1M") else "數學（必修部分）"
+
+
+def paper_code(p: str) -> str:
+    if p.endswith("1M"):
+        return "P1M"
+    return "P1" if p.endswith("1") else "P2"
 
 
 def main() -> None:
@@ -47,14 +59,18 @@ def main() -> None:
     for q in blob["questions"]:
         if q.get("subject") != "數學" or q.get("type") != "題目":
             continue
-        key = (int(q["year"]), q["paper"], lang_of(q))
+        key = (str(q["year"]), q["paper"], lang_of(q))
         seen.setdefault(key, 0)
         seen[key] += 1
 
     lines = []
-    for (year, paper, lang) in sorted(seen, key=lambda k: (-k[0], k[1], k[2])):
-        code = "P1" if paper.endswith("1") else "P2"
-        lines.append(f'  {{ id: "math", name: "數學（必修部分）", year: {year}, paper: "{paper_label(paper)}", '
+    def ynum(y):
+        return int(y) if str(y).isdigit() else 0
+
+    for (year, paper, lang) in sorted(seen, key=lambda k: (-ynum(k[0]), k[1], k[2])):
+        code = paper_code(paper)
+        yval = year if str(year).isdigit() else f'"{year}"'
+        lines.append(f'  {{ id: "math", name: "{subject_name(paper)}", year: {yval}, paper: "{paper_label(paper)}", '
                      f'lang: "{lang}", hash: "#{year}{code}Q1" }},')
     print(f"catalog maths papers: {len(lines)}  (from {len(seen)} year/paper/language sets)")
 
@@ -69,7 +85,7 @@ def main() -> None:
     # hub/index.html 有一份靜態預渲染卡片（給 no-JS 與 SEO），數目亦要同步
     def card(year, paper, lang, nq):
         cat = paper_label(paper)
-        code = "P1" if paper.endswith("1") else "P2"
+        code = paper_code(paper)
         hash = f"#{year}{code}Q1"
         en = lang == "英文"
         paper_en = f"Paper {1 if paper.endswith('1') else 2}"
@@ -90,7 +106,7 @@ def main() -> None:
                 f'      </a>\n'
                 f'    </article>')
 
-    cards = [card(y, p, l, seen[(y, p, l)]) for (y, p, l) in sorted(seen, key=lambda k: (-k[0], k[1], k[2]))]
+    cards = [card(y, p, l, seen[(y, p, l)]) for (y, p, l) in sorted(seen, key=lambda k: (-ynum(k[0]), k[1], k[2]))]
     hub_page = DOCS / "hub" / "index.html"
     if hub_page.exists():
         h = hub_page.read_text(encoding="utf-8")

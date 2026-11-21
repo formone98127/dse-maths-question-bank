@@ -8,31 +8,39 @@ const BANK_URL = "https://hkdse.exampaper.cloud/";
  * hash: 逐題深層連結
  */
 const CATALOG = [
-  { id: "math", name: "數學（延伸部分 M1）", year: 2019, paper: "M1", lang: "英文", hash: "#2019P1MQ1" },
-  { id: "math", name: "數學（延伸部分 M1）", year: 2020, paper: "M1", lang: "英文", hash: "#2020P1MQ1" },
-  { id: "math", name: "數學（延伸部分 M1）", year: 2022, paper: "M1", lang: "英文", hash: "#2022P1MQ1" },
-  { id: "math", name: "數學（延伸部分 M1）", year: 2023, paper: "M1", lang: "英文", hash: "#2023P1MQ1" },
-  { id: "math", name: "數學（延伸部分 M1）", year: 2024, paper: "M1", lang: "英文", hash: "#2024P1MQ1" },
-  { id: "math", name: "數學（必修部分）", year: 2025, paper: "卷一", lang: "英文", hash: "#2025P1Q1" },
   /* 數學（中文卷） */
   /* 經濟（英文卷） */
   /* 化學／生物／物理（第 2 層中文；先上線後校對） */
+  /* 樣本試卷 / 練習卷（year 用字串，hub 會顯示「樣本試卷」「練習卷」） */
+  { id: "math", name: "數學（必修部分）", year: 2025, paper: "卷一", lang: "英文", hash: "#2025P1Q1" },
+  { id: "math", name: "數學（必修部分）", year: 2025, paper: "卷二", lang: "中文", hash: "#2025P2Q1" },
   { id: "math", name: "數學（必修部分）", year: 2025, paper: "卷二", lang: "英文", hash: "#2025P2Q1" },
   { id: "math", name: "數學（必修部分）", year: 2024, paper: "卷一", lang: "中文", hash: "#2024P1Q1" },
+  { id: "math", name: "數學（必修部分）", year: 2024, paper: "卷一", lang: "英文", hash: "#2024P1Q1" },
+  { id: "math", name: "數學（延伸部分 M1）", year: 2024, paper: "M1", lang: "英文", hash: "#2024P1MQ1" },
   { id: "math", name: "數學（必修部分）", year: 2024, paper: "卷二", lang: "中文", hash: "#2024P2Q1" },
   { id: "math", name: "數學（必修部分）", year: 2024, paper: "卷二", lang: "英文", hash: "#2024P2Q1" },
   { id: "math", name: "數學（必修部分）", year: 2023, paper: "卷一", lang: "中文", hash: "#2023P1Q1" },
+  { id: "math", name: "數學（必修部分）", year: 2023, paper: "卷一", lang: "英文", hash: "#2023P1Q1" },
+  { id: "math", name: "數學（延伸部分 M1）", year: 2023, paper: "M1", lang: "英文", hash: "#2023P1MQ1" },
   { id: "math", name: "數學（必修部分）", year: 2023, paper: "卷二", lang: "中文", hash: "#2023P2Q1" },
   { id: "math", name: "數學（必修部分）", year: 2023, paper: "卷二", lang: "英文", hash: "#2023P2Q1" },
   { id: "math", name: "數學（必修部分）", year: 2022, paper: "卷一", lang: "中文", hash: "#2022P1Q1" },
+  { id: "math", name: "數學（必修部分）", year: 2022, paper: "卷一", lang: "英文", hash: "#2022P1Q1" },
+  { id: "math", name: "數學（延伸部分 M1）", year: 2022, paper: "M1", lang: "英文", hash: "#2022P1MQ1" },
   { id: "math", name: "數學（必修部分）", year: 2022, paper: "卷二", lang: "英文", hash: "#2022P2Q1" },
   { id: "math", name: "數學（必修部分）", year: 2021, paper: "卷一", lang: "中文", hash: "#2021P1Q1" },
+  { id: "math", name: "數學（必修部分）", year: 2021, paper: "卷一", lang: "英文", hash: "#2021P1Q1" },
   { id: "math", name: "數學（必修部分）", year: 2021, paper: "卷二", lang: "中文", hash: "#2021P2Q1" },
   { id: "math", name: "數學（必修部分）", year: 2021, paper: "卷二", lang: "英文", hash: "#2021P2Q1" },
   { id: "math", name: "數學（必修部分）", year: 2020, paper: "卷一", lang: "中文", hash: "#2020P1Q1" },
+  { id: "math", name: "數學（必修部分）", year: 2020, paper: "卷一", lang: "英文", hash: "#2020P1Q1" },
+  { id: "math", name: "數學（延伸部分 M1）", year: 2020, paper: "M1", lang: "英文", hash: "#2020P1MQ1" },
   { id: "math", name: "數學（必修部分）", year: 2020, paper: "卷二", lang: "中文", hash: "#2020P2Q1" },
+  { id: "math", name: "數學（必修部分）", year: 2020, paper: "卷二", lang: "英文", hash: "#2020P2Q1" },
   { id: "math", name: "數學（必修部分）", year: 2019, paper: "卷一", lang: "中文", hash: "#2019P1Q1" },
   { id: "math", name: "數學（必修部分）", year: 2019, paper: "卷一", lang: "英文", hash: "#2019P1Q1" },
+  { id: "math", name: "數學（延伸部分 M1）", year: 2019, paper: "M1", lang: "英文", hash: "#2019P1MQ1" },
   { id: "math", name: "數學（必修部分）", year: 2019, paper: "卷二", lang: "中文", hash: "#2019P2Q1" },
   { id: "math", name: "數學（必修部分）", year: 2019, paper: "卷二", lang: "英文", hash: "#2019P2Q1" },
   { id: "math", name: "數學（必修部分）", year: 2018, paper: "卷一", lang: "中文", hash: "#2018P1Q1" },
@@ -63,10 +71,10 @@ const CATALOG = [
   { id: "math", name: "數學（必修部分）", year: 2012, paper: "卷一", lang: "英文", hash: "#2012P1Q1" },
   { id: "math", name: "數學（必修部分）", year: 2012, paper: "卷二", lang: "中文", hash: "#2012P2Q1" },
   { id: "math", name: "數學（必修部分）", year: 2012, paper: "卷二", lang: "英文", hash: "#2012P2Q1" },
-  /* 樣本試卷 / 練習卷（year 用字串，hub 會顯示「樣本試卷」「練習卷」） */
-  { id: "math", name: "數學（必修部分）", year: "SP", paper: "卷一", lang: "中文", hash: "#SPP1Q1" },
   { id: "math", name: "數學（必修部分）", year: "PP", paper: "卷一", lang: "中文", hash: "#PPP1Q1" },
+  { id: "math", name: "數學（必修部分）", year: "SP", paper: "卷一", lang: "中文", hash: "#SPP1Q1" },
   { id: "math", name: "數學（必修部分）", year: "PP", paper: "卷一", lang: "英文", hash: "#PPP1Q1" },
+  { id: "math", name: "數學（延伸部分 M1）", year: "PP", paper: "M1", lang: "英文", hash: "#PPP1MQ1" },
 ];
 
 /* 按課題：只為資料庫有的科目提供（葉節點對齊電子題庫 tags） */

@@ -9,8 +9,8 @@ Options -Indexes
   RewriteCond %{HTTP_HOST} ^www\.hkdse\.exampaper\.cloud$ [NC]
   RewriteRule ^ https://hkdse.exampaper.cloud%{REQUEST_URI} [L,R=301]
 
-  # 索引頁 → 主 reader 深連結：用戶直入第 1 題，SEO 權重經 301 轉移
-  RewriteRule ^math/([0-9]{4})/paper-([12])(-en|-zh)?/?$ https://hkdse.exampaper.cloud/#$1P$2Q1 [R=301,L,NE]
+  # （已移除）卷目錄頁 301 → reader：會令卷頁無法被 Google 爬到逐題連結。
+  # 改由卷頁本身顯示內容＋「開始做題」掣跳去 reader 深連結。
 </IfModule>
 
 <IfModule mod_headers.c>

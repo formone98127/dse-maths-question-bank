@@ -9,8 +9,11 @@ Options -Indexes
   RewriteCond %{HTTP_HOST} ^www\.hkdse\.exampaper\.cloud$ [NC]
   RewriteRule ^ https://hkdse.exampaper.cloud%{REQUEST_URI} [L,R=301]
 
-  # （已移除）卷目錄頁 301 → reader：會令卷頁無法被 Google 爬到逐題連結。
-  # 改由卷頁本身顯示內容＋「開始做題」掣跳去 reader 深連結。
+  # 卷目錄頁（/math/<年>/<卷>/）一律 301 去 reader 互動版第 1 題；
+  # 用戶唔會見到靜態目錄頁（2026-11 定案，Kin 要求）。
+  RewriteRule ^math/([0-9]{4})/paper-([12])(-en|-zh)?/?$ https://hkdse.exampaper.cloud/#$1P$2Q1 [R=301,L,NE]
+  # 舊版「/math/<年>/<卷>/qN/」深度分析頁（重複＋canonical 壞）→ 一樣 301 去 reader
+  RewriteRule ^math/([0-9]{4})/paper-([12])(-en|-zh)?/q([0-9]+)/?$ https://hkdse.exampaper.cloud/#$1P$2Q$4 [R=301,L,NE]
 </IfModule>
 
 <IfModule mod_headers.c>

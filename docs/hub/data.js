@@ -13,6 +13,7 @@ const CATALOG = [
   /* 化學／生物／物理（第 2 層中文；先上線後校對） */
   /* 樣本試卷 / 練習卷（year 用字串，hub 會顯示「樣本試卷」「練習卷」） */
   { id: "math", name: "數學（必修部分）", year: 2025, paper: "卷一", lang: "英文", hash: "#2025P1Q1" },
+  { id: "math", name: "數學（延伸部分 M1）", year: 2025, paper: "M1", lang: "英文", hash: "#2025P1MQ1" },
   { id: "math", name: "數學（必修部分）", year: 2025, paper: "卷二", lang: "中文", hash: "#2025P2Q1" },
   { id: "math", name: "數學（必修部分）", year: 2025, paper: "卷二", lang: "英文", hash: "#2025P2Q1" },
   { id: "math", name: "數學（必修部分）", year: 2024, paper: "卷一", lang: "中文", hash: "#2024P1Q1" },

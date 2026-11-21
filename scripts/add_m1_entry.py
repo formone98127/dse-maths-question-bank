@@ -9,7 +9,7 @@ import pathlib
 import re
 
 SITE = pathlib.Path(r"C:/Users/Administrator/projects/dse-maths-question-bank")
-YEARS = ["2019", "2020", "2022", "2023", "2024"]
+YEARS = ["2019", "2020", "2022", "2023", "2024", "2025"]
 
 ROW = """    <article class="paper-row">
       <a class="paper-main" href="/?subject=%E6%95%B8%E5%AD%B8#__HASH__" title="開啟 M1 題目">

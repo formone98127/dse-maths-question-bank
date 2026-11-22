@@ -318,6 +318,9 @@ footer { text-align:center; color:var(--mut); font-size:11.5px; padding:4px 0 12
 #imgzoom img{width:100%;max-width:none;display:block}
 #imgzoom .xz{position:fixed;top:10px;right:14px;font-size:20px;color:#fff;background:#0009;border:1px solid #ffffff55;border-radius:8px;padding:6px 12px;cursor:pointer}
 .perm-link{display:inline-block;margin:2px 0 10px;font-size:12px;color:#2d6cdf;text-decoration:none;opacity:.8}.perm-link:hover{opacity:1;text-decoration:underline}
+.anim-body{padding:10px 0 4px}
+.anim-gif{width:100%;max-width:560px;border-radius:10px;display:block;background:#0b0f16}
+.anim-note{font-size:12px;color:#8894A8;margin:8px 0 0}
 </style>
 </head>
 <body>
@@ -497,6 +500,10 @@ function solExpandHtml(q, expanded) {
           <span class="rep-toggle-label">考評報告</span>
           <span class="sol-chevron" aria-hidden="true"></span>
         </button>` : '';
+  const animBtn = q.anim ? `<button type="button" class="sol-toggle anim-toggle" id="animToggle" aria-expanded="false">
+          <span class="anim-toggle-label">動畫解題</span>
+          <span class="sol-chevron" aria-hidden="true"></span>
+        </button>` : '';
   const aiBtn = isMcQuestion(q) ? `<button type="button" class="sol-toggle ai-toggle" id="aiToggle"
           style="display:none" aria-expanded="false">
           <span class="ai-toggle-label">深度分析</span>
@@ -504,7 +511,11 @@ function solExpandHtml(q, expanded) {
         </button>` : '';
   return `
     <div class="sol-panel${open ? ' open' : ''}" id="solPanel" data-expanded="${open ? 'true' : 'false'}">
-      <div class="sol-btnrow">${solBtn}${repBtn}${aiBtn}</div>
+      <div class="sol-btnrow">${solBtn}${animBtn}${repBtn}${aiBtn}</div>
+      ${q.anim ? `<div class="anim-body" id="animBody" hidden>
+        <img class="anim-gif" src="${q.anim}" alt="動畫解題示範" loading="lazy">
+        <p class="anim-note">動畫為按題意改寫之解題示範，非重現試題。</p>
+      </div>` : ''}
       ${sol ? `<div class="sol-body" id="solBody"${open ? '' : ' hidden'}>
         <div class="sol-content">${sol.html}</div>
       </div>` : ''}
@@ -554,6 +565,18 @@ function wireSolToggle(q) {
       if (lbl) lbl.textContent = open ? '收起考評報告' : '考評報告';
       const MJ = window.MathJax;
       if (open && MJ?.typesetPromise) MJ.typesetPromise([repBody]).catch(()=>{});
+    });
+  }
+  const animT = document.getElementById('animToggle');
+  const animB = document.getElementById('animBody');
+  if (animT && animB) {
+    animT.addEventListener('click', () => {
+      const open = animB.hidden;
+      animB.hidden = !open;
+      animT.setAttribute('aria-expanded', open ? 'true' : 'false');
+      animT.classList.toggle('open', open);
+      const lbl = animT.querySelector('.anim-toggle-label');
+      if (lbl) lbl.textContent = open ? '收起動畫' : '動畫解題';
     });
   }
   const toggle = $('#solToggle');

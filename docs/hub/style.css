@@ -874,3 +874,7 @@ a.brand:hover { opacity: .85; }
 
 .paper-row.is-static { opacity: 0.55; cursor: default; }
 .paper-row.is-static:hover { background: transparent; }
+
+/* 靜態目錄卡內的連結：沿用卡片顏色，不要藍字底線 */
+.paper-row .paper-main { color: inherit; text-decoration: none; }
+.paper-row .paper-main:hover { color: inherit; }

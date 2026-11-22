@@ -1,11 +1,11 @@
 name: Deploy selected files to Hostinger
 
-# 小批量上傳：用 curl 主動模式，避免 lftp 暫存檔（.in.*）與 passive 端口問題。
+# 小批量上傳：先上傳成 .up 暫名，再 mv 覆蓋，避開 lftp .in.* 暫存檔卡死（550）。
 on:
   workflow_dispatch:
     inputs:
       pattern:
-        description: "git ls-files glob，例如 docs/m1/*/paper-1-en/index.html"
+        description: "git ls-files glob"
         required: true
         default: "docs/m1/*/paper-1-en/index.html"
 
@@ -22,27 +22,37 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Build file list
+      - name: Install lftp
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq lftp
+
+      - name: Build list
         run: |
           set -euo pipefail
           git ls-files "${{ github.event.inputs.pattern }}" | sed 's#^docs/##' | sort -u > /tmp/list.txt
           echo "files: $(wc -l < /tmp/list.txt)"
-          head -5 /tmp/list.txt
 
       - name: Upload
         env:
           FTP_PASS: ${{ secrets.HKDSE_FTP_PASSWORD }}
         run: |
           set -uo pipefail
-          fail=0
-          while IFS= read -r rel; do
-            if [ -z "$rel" ]; then continue; fi
-            code=$(curl -sS -o /dev/null -w '%{http_code}' --ssl-reqd -k \
-                     --ftp-port - --ftp-create-dirs \
-                     -T "docs/$rel" \
-                     "ftp://${FTP_USER}:${FTP_PASS}@${FTP_HOST}/${rel}") || code="ERR"
-            echo "$rel -> $code"
-            if [ "$code" != "226" ]; then fail=$((fail+1)); fi
-          done < /tmp/list.txt
-          echo "failures: $fail"
-          exit 0
+          python3 - <<'PY'
+          import os, pathlib
+          up = [l.strip() for l in open('/tmp/list.txt') if l.strip()]
+          host, user, pw = os.environ['FTP_HOST'], os.environ['FTP_USER'], os.environ['FTP_PASS']
+          L = ["set ssl:verify-certificate no", "set ftp:ssl-force true",
+               "set ftp:ssl-protect-data true", "set net:timeout 25", "set net:max-retries 2",
+               "set ftp:passive-mode false", "set ftp:prefer-epsv false",
+               "set ftp:use-temp-file no", "set xfer:clobber on",
+               'open -u "%s","%s" ftp://%s' % (user, pw, host)]
+          for rel in up:
+              d, b = os.path.dirname(rel) or "/", os.path.basename(rel)
+              L += ['mkdir -p "%s"' % d,
+                    'put -O "%s" -o "%s.up" "docs/%s"' % (d, b, rel),
+                    'rm -f "%s/%s"' % (d, b),
+                    'mv "%s/%s.up" "%s/%s"' % (d, b, d, b)]
+          L += ["bye", ""]
+          pathlib.Path('/tmp/lftp.txt').write_text(chr(10).join(L))
+          print("cmds", len(L) - 1)
+          PY
+          timeout 600 lftp -f /tmp/lftp.txt || echo "lftp exit=$?"

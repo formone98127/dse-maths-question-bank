@@ -31,7 +31,7 @@ jobs:
           mkdir -p /tmp/up
           git ls-files "${{ github.event.inputs.pattern }}" | sed 's#^docs/##' | sort -u > /tmp/list.txt
           while IFS= read -r rel; do
-            flat=$(echo "$rel" | tr '/' '_')
+            flat=$(echo "$rel" | tr '/' '_').${GITHUB_RUN_ID}
             cp "docs/$rel" "/tmp/up/$flat.up"
           done < /tmp/list.txt
           echo "files: $(wc -l < /tmp/list.txt)"; ls /tmp/up | head -3
@@ -39,6 +39,7 @@ jobs:
       - name: Upload
         env:
           FTP_PASS: ${{ secrets.HKDSE_FTP_PASSWORD }}
+          GITHUB_RUN_ID: ${{ github.run_id }}
         run: |
           set -uo pipefail
           python3 - <<'PY'
@@ -53,7 +54,7 @@ jobs:
           for rel in up:
               d = "/" + (os.path.dirname(rel) or "")
               b = os.path.basename(rel)
-              flat = rel.replace('/', '_')
+              flat = rel.replace('/', '_') + '.' + os.environ.get('GITHUB_RUN_ID', '0')
               L += ['mkdir -p "%s"' % d,
                     'cd "%s"' % d,
                     'rm -f "%s/.in.%s.up"' % (d, flat),

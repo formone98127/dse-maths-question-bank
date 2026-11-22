@@ -51,7 +51,7 @@ jobs:
                "set ftp:use-temp-file no", "set xfer:clobber on",
                'open -u "%s","%s" ftp://%s' % (user, pw, host)]
           for rel in up:
-              d = os.path.dirname(rel) or "/"
+              d = "/" + (os.path.dirname(rel) or "")
               b = os.path.basename(rel)
               flat = rel.replace('/', '_')
               L += ['mkdir -p "%s"' % d,
@@ -59,6 +59,9 @@ jobs:
                     'put "/tmp/up/%s.up"' % flat,
                     'rm -f "%s"' % b,
                     'mv "%s.up" "%s"' % (b, b)]
+          # 清走之前誤建的嵌套目錄（相對 mkdir 造成）
+          for y in ("2019", "2020", "2022", "2023", "2024", "2025"):
+              L.append('rm -rf "/m1/%s/paper-1-en/m1"' % y)
           L += ["bye", ""]
           pathlib.Path('/tmp/lftp.txt').write_text(chr(10).join(L))
           print("cmds", len(L) - 1)

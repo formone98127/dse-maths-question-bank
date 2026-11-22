@@ -88,29 +88,35 @@ jobs:
           if [ -z "${FTP_PASS:-}" ]; then echo "Missing secret HKDSE_FTP_PASSWORD" >&2; exit 1; fi
           python3 - <<'PY'
           import os, pathlib
+          up = [l.strip() for l in open('/tmp/upload.txt') if l.strip()]
           rm = [l.strip() for l in open('/tmp/delete.txt') if l.strip()]
           host, user, pw = os.environ['FTP_HOST'], os.environ['FTP_USER'], os.environ['FTP_PASS']
           lines = [
             "set ssl:verify-certificate no",
             "set ftp:ssl-force true",
             "set ftp:ssl-protect-data true",
-            "set net:max-retries 3",
-            "set net:reconnect-interval-base 3",
-            "set net:timeout 30",
+            "set net:max-retries 5",
+            "set net:reconnect-interval-base 5",
+            "set net:timeout 40",
             "set ftp:passive-mode true",
             f'open -u "{user}","{pw}" ftp://{host}',
-            # 一次過鏡像整個 docs/：--only-newer 由 lftp 自己比對，--parallel 並行上傳
-            "mirror -R --only-newer --parallel=8 --verbose=0 --exclude-glob .DS_Store docs/ /",
           ]
-          for rel in rm[:200]:
+          made = set()
+          for rel in up:
+              d = os.path.dirname(rel) or "/"
+              if d not in made:
+                  lines.append(f'mkdir -p "{d}"')
+                  made.add(d)
+              lines.append(f'put -O "{d}" "docs/{rel}"')
+          for rel in rm:
               lines.append(f'rm -f "/{rel}"')
           lines += ["bye", ""]
           p = pathlib.Path('/tmp/lftp.txt')
-          p.write_text(chr(10).join(lines))
+          p.write_text("\n".join(lines))
           p.chmod(0o600)
-          print(f"lftp script: {len(lines)-1} commands (mirror mode)")
+          print(f"lftp script: {len(lines)-1} commands")
           PY
-          timeout 1500 lftp -f /tmp/lftp.txt || echo "lftp exited $?"
+          lftp -f /tmp/lftp.txt
 
       - name: Verify the live site serves this commit
         env:

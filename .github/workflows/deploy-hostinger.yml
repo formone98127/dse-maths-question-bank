@@ -99,7 +99,7 @@ jobs:
             "set net:reconnect-interval-base 5",
             "set net:timeout 40",
             "set ftp:passive-mode false",
-            "set ftp:use-temp-file false",
+            "set ftp:use-temp-file no",
             "set xfer:clobber on",   # Hostinger 封 passive 端口；active 模式才通
             "set ftp:prefer-epsv false",
             f'open -u "{user}","{pw}" ftp://{host}',

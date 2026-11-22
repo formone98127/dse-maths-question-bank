@@ -49,7 +49,7 @@ jobs:
             "set net:reconnect-interval-base 2",
             "set net:timeout 20",
             "set ftp:passive-mode false",
-            "set ftp:use-temp-file false",
+            "set ftp:use-temp-file no",
             "set xfer:clobber on",
             "set ftp:prefer-epsv false",
             'open -u "%s","%s" ftp://%s' % (user, pw, host),
@@ -60,6 +60,7 @@ jobs:
               if d not in made:
                   lines.append('mkdir -p "%s"' % d)
                   made.add(d)
+              lines.append('rm -f "%s/.in.%s"' % (d, os.path.basename(rel)))
               lines.append('put -O "%s" "docs/%s"' % (d, rel))
           lines += ["bye", ""]
           pathlib.Path('/tmp/lftp.txt').write_text(chr(10).join(lines))

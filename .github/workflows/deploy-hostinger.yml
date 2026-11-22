@@ -98,7 +98,8 @@ jobs:
             "set net:max-retries 5",
             "set net:reconnect-interval-base 5",
             "set net:timeout 40",
-            "set ftp:passive-mode true",
+            "set ftp:passive-mode false",   # Hostinger 封 passive 端口；active 模式才通
+            "set ftp:prefer-epsv false",
             f'open -u "{user}","{pw}" ftp://{host}',
           ]
           made = set()

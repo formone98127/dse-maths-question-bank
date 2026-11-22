@@ -1,0 +1,64 @@
+name: Deploy selected files to Hostinger
+
+# 只上傳指定 glob 的檔案（小批量），用來避開全站鏡像卡死。
+# 用法：Actions → Deploy selected files to Hostinger → Run workflow → pattern
+on:
+  workflow_dispatch:
+    inputs:
+      pattern:
+        description: "git ls-files glob，例如 'docs/math/*/index.html'"
+        required: true
+        default: "docs/math/*/index.html"
+
+concurrency:
+  group: hostinger-targeted
+  cancel-in-progress: false
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install lftp
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq lftp
+
+      - name: Build file list
+        run: |
+          set -euo pipefail
+          git ls-files "${{ github.event.inputs.pattern }}" | sed 's#^docs/##' | sort -u > /tmp/list.txt
+          echo "files: $(wc -l < /tmp/list.txt)"
+          head -5 /tmp/list.txt
+
+      - name: Upload
+        env:
+          FTP_PASS: ${{ secrets.HKDSE_FTP_PASSWORD }}
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import os, pathlib
+          up = [l.strip() for l in open('/tmp/list.txt') if l.strip()]
+          host, user, pw = os.environ['FTP_HOST'], os.environ['FTP_USER'], os.environ['FTP_PASS']
+          lines = [
+            "set ssl:verify-certificate no",
+            "set ftp:ssl-force true",
+            "set ftp:ssl-protect-data true",
+            "set net:max-retries 2",
+            "set net:reconnect-interval-base 2",
+            "set net:timeout 20",
+            "set ftp:passive-mode true",
+            'open -u "%s","%s" ftp://%s' % (user, pw, host),
+          ]
+          made = set()
+          for rel in up:
+              d = os.path.dirname(rel) or "/"
+              if d not in made:
+                  lines.append('mkdir -p "%s"' % d)
+                  made.add(d)
+              lines.append('put -O "%s" "docs/%s"' % (d, rel))
+          lines += ["bye", ""]
+          pathlib.Path('/tmp/lftp.txt').write_text(chr(10).join(lines))
+          print("lftp commands:", len(lines) - 1)
+          PY
+          timeout 900 lftp -f /tmp/lftp.txt
+          echo uploaded

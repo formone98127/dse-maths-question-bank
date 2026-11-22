@@ -596,11 +596,13 @@ let reelKey = null;
 let reelOpts = [];
 let reelIndex = 0;
 let reelSnapTimer = null;
+let reelTarget = null; /* tap 目標 index：smooth scroll 期間唔准 scroll 事件覆蓋 */
 
 let reelInvoker = null;
 
 function openReel(key, invoker) {
   reelKey = key;
+  reelTarget = null;
   reelInvoker = invoker || null;
   reelOpts = optionsFor(key);
   const cur = key === "topic" ? state.topic : state[key];
@@ -703,13 +705,20 @@ function closeReel() {
   reel.hidden = true;
   document.body.classList.remove("reel-open");
   reelKey = null;
+  reelTarget = null;
   if (reelInvoker) {
     reelInvoker.focus();
     reelInvoker = null;
   }
 }
 
-function highlightReel() {
+function highlightReel(force) {
+  if (!force && reelTarget !== null) {
+    /* 手指／滑鼠剛 tap 某項，smooth scroll 未到位前唔好被舊 scrollTop 覆蓋 */
+    reelIndex = reelTarget;
+    reelWheel.querySelectorAll(".reel-item").forEach((el, n) => el.classList.toggle("on", n === reelIndex));
+    return;
+  }
   const i = Math.round(reelWheel.scrollTop / ITEM_H);
   reelIndex = Math.max(0, Math.min(reelOpts.length - 1, i));
   reelWheel.querySelectorAll(".reel-item").forEach((el, n) => el.classList.toggle("on", n === reelIndex));
@@ -738,12 +747,17 @@ function commitReel() {
 }
 
 reelWheel.addEventListener("scroll", () => {
+  const tgt = reelTarget;
+  if (tgt !== null && Math.abs(reelWheel.scrollTop - tgt * ITEM_H) <= 1.5) {
+    reelTarget = null; /* 已到位，之後交返 scroll 主導 */
+  }
   highlightReel();
   clearTimeout(reelSnapTimer);
   reelSnapTimer = setTimeout(() => {
+    if (reelTarget !== null) return;
     const i = Math.round(reelWheel.scrollTop / ITEM_H);
     reelWheel.scrollTo({ top: i * ITEM_H, behavior: "smooth" });
-    highlightReel();
+    highlightReel(true);
   }, 80);
 });
 
@@ -751,12 +765,15 @@ reelWheel.addEventListener("click", (e) => {
   const item = e.target.closest(".reel-item");
   if (!item) return;
   const i = +item.dataset.i;
-  reelWheel.scrollTo({ top: i * ITEM_H, behavior: "smooth" });
+  reelTarget = i;
   reelIndex = i;
-  highlightReel();
+  reelWheel.querySelectorAll(".reel-item").forEach((el, n) => el.classList.toggle("on", n === i));
+  reelWheel.scrollTo({ top: i * ITEM_H, behavior: "smooth" });
+  /* 保險：smooth scroll 可能唔觸發 scroll（已喺位），400ms 後強制清 flag */
+  setTimeout(() => { reelTarget = null; }, 400);
 });
 
-$("reelDone").addEventListener("click", commitReel);
+$("reelDone").addEventListener("click", () => { reelTarget = null; commitReel(); });
 $("reelCancel").addEventListener("click", closeReel);
 $("reelBackdrop").addEventListener("click", closeReel);
 

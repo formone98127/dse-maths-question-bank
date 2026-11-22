@@ -500,7 +500,7 @@ function solExpandHtml(q, expanded) {
           <span class="rep-toggle-label">考評報告</span>
           <span class="sol-chevron" aria-hidden="true"></span>
         </button>` : '';
-  const animBtn = q.anim ? `<button type="button" class="sol-toggle anim-toggle" id="animToggle" aria-expanded="false">
+  const animBtn = (sol && sol.anim) ? `<button type="button" class="sol-toggle anim-toggle" id="animToggle" aria-expanded="false">
           <span class="anim-toggle-label">動畫解題</span>
           <span class="sol-chevron" aria-hidden="true"></span>
         </button>` : '';
@@ -512,8 +512,8 @@ function solExpandHtml(q, expanded) {
   return `
     <div class="sol-panel${open ? ' open' : ''}" id="solPanel" data-expanded="${open ? 'true' : 'false'}">
       <div class="sol-btnrow">${solBtn}${animBtn}${repBtn}${aiBtn}</div>
-      ${q.anim ? `<div class="anim-body" id="animBody" hidden>
-        <img class="anim-gif" src="${q.anim}" alt="動畫解題示範" loading="lazy">
+      ${(sol && sol.anim) ? `<div class="anim-body" id="animBody" hidden>
+        <img class="anim-gif" src="${sol.anim}" alt="動畫解題示範" loading="lazy">
         <p class="anim-note">動畫為按題意改寫之解題示範，非重現試題。</p>
       </div>` : ''}
       ${sol ? `<div class="sol-body" id="solBody"${open ? '' : ' hidden'}>

@@ -106,8 +106,7 @@ jobs:
               lines.append(f'rm -f "/{rel}"')
           lines += ["bye", ""]
           p = pathlib.Path('/tmp/lftp.txt')
-          p.write_text("
-".join(lines))
+          p.write_text(chr(10).join(lines))
           p.chmod(0o600)
           print(f"lftp script: {len(lines)-1} commands (mirror mode)")
           PY

@@ -48,7 +48,7 @@ jobs:
           for rel in up:
               d, b = os.path.dirname(rel) or "/", os.path.basename(rel)
               L += ['mkdir -p "%s"' % d,
-                    'put -O "%s" -o "%s.up" "docs/%s"' % (d, b, rel),
+                    'put -o "%s/%s.up" "docs/%s"' % (d, b, rel),
                     'rm -f "%s/%s"' % (d, b),
                     'mv "%s/%s.up" "%s/%s"' % (d, b, d, b)]
           L += ["bye", ""]

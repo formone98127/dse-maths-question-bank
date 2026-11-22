@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-HK">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>DSE 數學伏位快問｜辨別 MC 常見陷阱小遊戲｜DSE Hub</title>
+<meta name="description" content="一撳即玩嘅 DSE 數學伏位遊戲：每張卡一句數學陳述，右掃＝真、左掃＝伏，即時揭曉答案同一句提示。涵蓋百分率、對數、概率、幾何等必修課題常見 MC 陷阱，搭車排隊都可溫。">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://hkdse.exampaper.cloud/trap/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DSE Hub">
+<meta property="og:locale" content="zh_HK">
+<meta property="og:title" content="DSE 數學伏位快問｜辨別 MC 常見陷阱小遊戲｜DSE Hub">
+<meta property="og:description" content="每張卡一句數學陳述，右掃＝真、左掃＝伏，答錯即刻有一句提示。搭車排隊無腦溫 DSE 數學 MC 伏位。">
+<meta property="og:url" content="https://hkdse.exampaper.cloud/trap/">
+<meta property="og:image" content="https://hkdse.exampaper.cloud/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#000000">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="DSE Hub">
+<link rel="stylesheet" href="style.css">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LTB27V0RGW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-LTB27V0RGW');
+</script>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$']] },
+  startup: { ready() { MathJax.startup.defaultReady(); if (window.onMathJaxReady) window.onMathJaxReady(); } }
+};
+</script>
+<script src="/mathjax/tex-chtml.js" async></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "DSE 伏位快問",
+  "url": "https://hkdse.exampaper.cloud/trap/",
+  "applicationCategory": "EducationalGame",
+  "operatingSystem": "Web",
+  "inLanguage": "zh-Hant-HK",
+  "description": "辨別 DSE 數學 MC 常見陷阱嘅左右掃小遊戲：每張卡一句陳述，答錯即時有一句廣東話提示。",
+  "isPartOf": { "@type": "WebSite", "name": "DSE Hub", "url": "https://hkdse.exampaper.cloud/hub/" }
+}
+</script>
+</head>
+<body>
+<header class="bar">
+  <a class="brand" href="/hub/">DSE Hub</a>
+  <span class="mode-chip" id="modeChip" hidden></span>
+  <span class="streak" id="streak" hidden>🔥 <b>0</b></span>
+</header>
+
+<!-- 起始：揀模式 -->
+<section id="home" class="screen">
+  <h1>伏位快問</h1>
+  <p class="sub">每張卡一句數學陳述：係<strong>真</strong>定係<strong>伏</strong>？右掃＝真，左掃＝伏。答錯即刻有提示，錯咗嘅卡會再出現，直到答啱為止。</p>
+  <button type="button" class="big-btn" data-mode="mixed">綜合 20 卡（推薦）</button>
+  <h2>專項課題</h2>
+  <div id="topicChips" class="chips"></div>
+  <noscript>
+    <p>此遊戲需要 JavaScript。例子：「√(x²+y²) = x+y」係伏（開方拆唔開加號）；「兩件獨立事件 P(A∩B) = P(A)×P(B)」係真。</p>
+  </noscript>
+</section>
+
+<!-- 遊戲中 -->
+<main id="game" class="screen" hidden>
+  <div id="stackWrap">
+    <div id="stack" aria-live="polite"></div>
+    <div id="hintLayer" hidden>
+      <p class="verdict" id="verdict"></p>
+      <p class="hint" id="hintText"></p>
+      <a id="srcLink" class="src-link" target="_blank" rel="noopener" hidden>做返相關真題 →</a>
+    </div>
+  </div>
+</main>
+
+<!-- 總結 -->
+<section id="summary" class="screen" hidden>
+  <h1>完成！</h1>
+  <div id="sumStats" class="sum-stats"></div>
+  <h2 id="weakHead" hidden>弱點課題</h2>
+  <div id="weakList" class="chips"></div>
+  <button type="button" class="big-btn" id="againBtn">再嚟一局</button>
+  <button type="button" class="ghost-btn" id="homeBtn">揀過模式</button>
+</section>
+
+<footer class="actions" id="actions" hidden>
+  <button type="button" class="ans-btn trap" id="btnTrap"><span class="mark">✗</span> 伏</button>
+  <button type="button" class="ans-btn real" id="btnReal">真 <span class="mark">✓</span></button>
+</footer>
+
+<script src="cards.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

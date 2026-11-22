@@ -15,7 +15,7 @@ from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 ROOT = Path(__file__).resolve().parent / "docs"
 SITE = "https://hkdse.exampaper.cloud"
-VER = "20261118a1"
+VER = "20261123a1"
 TODAY = date.today().isoformat()
 BANK = f"{SITE}/"
 HUB = f"{SITE}/hub/"
@@ -276,6 +276,7 @@ SITEMAP_URLS = []
 EXTRA_SITEMAP_PATHS = [
     "/math/2020/paper-1/",      # 2020 中文卷一（手製頁，data.js 仲未有卷一題目）
     "/math/2024/paper-2-zh/",   # 舊中文卷路徑（同 paper-2 內容重複，保留過渡）
+    "/trap/",                   # MC 伏位快問小遊戲（手維護頁，cards.js 由 build_trap_cards.py 產生）
 ]
 
 PAPER_CODE = {
@@ -1338,7 +1339,7 @@ def make_hub(catalog, papers):
   </section>
 </main>
 {faq_html}
-<footer>站內只放索引、連結同課題標籤，唔存放試卷原卷 · 只顯示資料庫已有內容<br>科目：{footer_links}<br>攻略：<a href="/blog/">DSE 溫習攻略（Past Paper 操卷法・Marking Scheme 用法・摘星策略）</a><br>相關：<a href="{esc(VISUAL_TUTOR)}" rel="noopener">{esc(VISUAL_TUTOR_LABEL)}</a></footer>
+<footer>站內只放索引、連結同課題標籤，唔存放試卷原卷 · 只顯示資料庫已有內容<br>科目：{footer_links}<br>攻略：<a href="/blog/">DSE 溫習攻略（Past Paper 操卷法・Marking Scheme 用法・摘星策略）</a><br>小遊戲：<a href="/trap/">DSE 數學伏位快問（左右掃辨別 MC 常見陷阱）</a><br>相關：<a href="{esc(VISUAL_TUTOR)}" rel="noopener">{esc(VISUAL_TUTOR_LABEL)}</a></footer>
 
 <!-- 滾輪選擇器 -->
 <div class="reel-overlay" id="reel" hidden>
@@ -3593,6 +3594,7 @@ def sanity_check():
             VISUAL_TUTOR,
             "點樣搵某一年嘅 DSE past paper？",
             "brand-lockup",
+            "/trap/",
         ],
         ROOT / "math/index.html": ["免費 DSE 數學 past paper", "有冇英文卷可以操？"],
     }

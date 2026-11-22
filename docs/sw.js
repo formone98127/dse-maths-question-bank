@@ -2,7 +2,7 @@
 "use strict";
 
 
-const CACHE = "dsehub-v20261118a1";
+const CACHE = "dsehub-v20261123a1";
 const SHELL = [
   "./",
   "./hub/",
@@ -10,6 +10,10 @@ const SHELL = [
   "./hub/app.js",
   "./hub/data.js",
   "./data.js",
+  "./trap/",
+  "./trap/style.css",
+  "./trap/app.js",
+  "./trap/cards.js",
   "./manifest.webmanifest",
   "./icons/icon-192.png",
   "./icons/icon-512.png"

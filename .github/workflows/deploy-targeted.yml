@@ -49,6 +49,8 @@ jobs:
             "set net:reconnect-interval-base 2",
             "set net:timeout 20",
             "set ftp:passive-mode false",
+            "set ftp:use-temp-file false",
+            "set xfer:clobber on",
             "set ftp:prefer-epsv false",
             'open -u "%s","%s" ftp://%s' % (user, pw, host),
           ]
@@ -63,5 +65,5 @@ jobs:
           pathlib.Path('/tmp/lftp.txt').write_text(chr(10).join(lines))
           print("lftp commands:", len(lines) - 1)
           PY
-          timeout 900 lftp -f /tmp/lftp.txt
+          timeout 900 lftp -f /tmp/lftp.txt || echo "lftp exit=$?"
           echo uploaded

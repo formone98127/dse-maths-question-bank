@@ -56,6 +56,7 @@ jobs:
               flat = rel.replace('/', '_')
               L += ['mkdir -p "%s"' % d,
                     'cd "%s"' % d,
+                    'rm -f "%s/.in.%s.up"' % (d, flat),
                     'put "/tmp/up/%s.up"' % flat,
                     'rm -f "%s"' % b,
                     'mv "%s.up" "%s"' % (b, b)]

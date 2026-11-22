@@ -337,7 +337,7 @@ function viewHrefFor(r) {
   if (r.path) return r.path;
   /* M1／M2 延伸部分冇有獨立卷頁，直接開閱讀器深連結 */
   if (String(r.id).toLowerCase() === "m1" || String(r.id).toLowerCase() === "m2") {
-    return "/" + (r.hash || "");
+    return "/" + r.id + "/" + r.year + "/paper-1-en/";
   }
   if (LANDING_BY_HASH[r.hash]) return LANDING_BY_HASH[r.hash];
   /* 只有 math（必修部分）有靜態落地板；M1 等未有板嘅科目唔好出死鏈（404） */

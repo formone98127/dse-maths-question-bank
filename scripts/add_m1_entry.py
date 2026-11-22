@@ -8,7 +8,7 @@ SITE = pathlib.Path(r"C:/Users/Administrator/projects/dse-maths-question-bank")
 YEARS = ["2019", "2020", "2022", "2023", "2024", "2025"]
 
 CARD = """    <article class="paper-row">
-      <a class="paper-main" href="/#__HASH__" title="開啟 M1 題目">
+      <a class="paper-main" href="/m1/{year}/paper-1-en/" title="開啟 M1 題目">
         <div class="paper-year">{year}</div>
         <div class="paper-body">
           <div class="paper-tags">

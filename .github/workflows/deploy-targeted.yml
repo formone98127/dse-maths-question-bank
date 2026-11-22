@@ -1,14 +1,13 @@
 name: Deploy selected files to Hostinger
 
-# 只上傳指定 glob 的檔案（小批量），用來避開全站鏡像卡死。
-# 用法：Actions → Deploy selected files to Hostinger → Run workflow → pattern
+# 小批量上傳：用 curl 主動模式，避免 lftp 暫存檔（.in.*）與 passive 端口問題。
 on:
   workflow_dispatch:
     inputs:
       pattern:
-        description: "git ls-files glob，例如 'docs/math/*/index.html'"
+        description: "git ls-files glob，例如 docs/m1/*/paper-1-en/index.html"
         required: true
-        default: "docs/math/*/index.html"
+        default: "docs/m1/*/paper-1-en/index.html"
 
 concurrency:
   group: hostinger-targeted
@@ -17,11 +16,11 @@ concurrency:
 jobs:
   upload:
     runs-on: ubuntu-latest
+    env:
+      FTP_HOST: 147.93.109.152
+      FTP_USER: u187459660.hkdseupload
     steps:
       - uses: actions/checkout@v4
-
-      - name: Install lftp
-        run: sudo apt-get update -qq && sudo apt-get install -y -qq lftp
 
       - name: Build file list
         run: |
@@ -32,39 +31,18 @@ jobs:
 
       - name: Upload
         env:
-          FTP_HOST: 147.93.109.152
-          FTP_USER: u187459660.hkdseupload
           FTP_PASS: ${{ secrets.HKDSE_FTP_PASSWORD }}
         run: |
-          set -euo pipefail
-          python3 - <<'PY'
-          import os, pathlib
-          up = [l.strip() for l in open('/tmp/list.txt') if l.strip()]
-          host, user, pw = os.environ['FTP_HOST'], os.environ['FTP_USER'], os.environ['FTP_PASS']
-          lines = [
-            "set ssl:verify-certificate no",
-            "set ftp:ssl-force true",
-            "set ftp:ssl-protect-data true",
-            "set net:max-retries 2",
-            "set net:reconnect-interval-base 2",
-            "set net:timeout 20",
-            "set ftp:passive-mode false",
-            "set ftp:use-temp-file no",
-            "set xfer:clobber on",
-            "set ftp:prefer-epsv false",
-            'open -u "%s","%s" ftp://%s' % (user, pw, host),
-          ]
-          made = set()
-          for rel in up:
-              d = os.path.dirname(rel) or "/"
-              if d not in made:
-                  lines.append('mkdir -p "%s"' % d)
-                  made.add(d)
-              lines.append('rm -f "%s/.in.%s"' % (d, os.path.basename(rel)))
-              lines.append('put -O "%s" "docs/%s"' % (d, rel))
-          lines += ["bye", ""]
-          pathlib.Path('/tmp/lftp.txt').write_text(chr(10).join(lines))
-          print("lftp commands:", len(lines) - 1)
-          PY
-          timeout 900 lftp -f /tmp/lftp.txt || echo "lftp exit=$?"
-          echo uploaded
+          set -uo pipefail
+          fail=0
+          while IFS= read -r rel; do
+            if [ -z "$rel" ]; then continue; fi
+            code=$(curl -sS -o /dev/null -w '%{http_code}' --ssl-reqd -k \
+                     --ftp-port - --ftp-create-dirs \
+                     -T "docs/$rel" \
+                     "ftp://${FTP_USER}:${FTP_PASS}@${FTP_HOST}/${rel}") || code="ERR"
+            echo "$rel -> $code"
+            if [ "$code" != "226" ]; then fail=$((fail+1)); fi
+          done < /tmp/list.txt
+          echo "failures: $fail"
+          exit 0

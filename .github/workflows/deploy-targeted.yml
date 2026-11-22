@@ -1,6 +1,6 @@
 name: Deploy selected files to Hostinger
 
-# 小批量上傳：先上傳成 .up 暫名，再 mv 覆蓋，避開 lftp .in.* 暫存檔卡死（550）。
+# 小批量上傳：本地改名成 .up 再 put，然後 server-side mv 覆蓋（避開 .in.* 暫存檔 550）。
 on:
   workflow_dispatch:
     inputs:
@@ -25,11 +25,16 @@ jobs:
       - name: Install lftp
         run: sudo apt-get update -qq && sudo apt-get install -y -qq lftp
 
-      - name: Build list
+      - name: Build list and staged copies
         run: |
           set -euo pipefail
+          mkdir -p /tmp/up
           git ls-files "${{ github.event.inputs.pattern }}" | sed 's#^docs/##' | sort -u > /tmp/list.txt
-          echo "files: $(wc -l < /tmp/list.txt)"
+          while IFS= read -r rel; do
+            flat=$(echo "$rel" | tr '/' '_')
+            cp "docs/$rel" "/tmp/up/$flat.up"
+          done < /tmp/list.txt
+          echo "files: $(wc -l < /tmp/list.txt)"; ls /tmp/up | head -3
 
       - name: Upload
         env:
@@ -46,11 +51,14 @@ jobs:
                "set ftp:use-temp-file no", "set xfer:clobber on",
                'open -u "%s","%s" ftp://%s' % (user, pw, host)]
           for rel in up:
-              d, b = os.path.dirname(rel) or "/", os.path.basename(rel)
+              d = os.path.dirname(rel) or "/"
+              b = os.path.basename(rel)
+              flat = rel.replace('/', '_')
               L += ['mkdir -p "%s"' % d,
-                    'put -o "%s/%s.up" "docs/%s"' % (d, b, rel),
-                    'rm -f "%s/%s"' % (d, b),
-                    'mv "%s/%s.up" "%s/%s"' % (d, b, d, b)]
+                    'cd "%s"' % d,
+                    'put "/tmp/up/%s.up"' % flat,
+                    'rm -f "%s"' % b,
+                    'mv "%s.up" "%s"' % (b, b)]
           L += ["bye", ""]
           pathlib.Path('/tmp/lftp.txt').write_text(chr(10).join(L))
           print("cmds", len(L) - 1)

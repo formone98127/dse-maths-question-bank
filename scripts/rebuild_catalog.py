@@ -70,7 +70,8 @@ def main() -> None:
     for (year, paper, lang) in sorted(seen, key=lambda k: (-ynum(k[0]), k[1], k[2])):
         code = paper_code(paper)
         yval = year if str(year).isdigit() else f'"{year}"'
-        lines.append(f'  {{ id: "math", name: "{subject_name(paper)}", year: {yval}, paper: "{paper_label(paper)}", '
+        sid = "m1" if paper.endswith("1M") else "math"
+        lines.append(f'  {{ id: "{sid}", name: "{subject_name(paper)}", year: {yval}, paper: "{paper_label(paper)}", '
                      f'lang: "{lang}", hash: "#{year}{code}Q1" }},')
     print(f"catalog maths papers: {len(lines)}  (from {len(seen)} year/paper/language sets)")
 

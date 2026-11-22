@@ -46,7 +46,10 @@ function bankPapers(sid, year) {
   const names = new Set([QB_SUBJECT[sid], sid].filter(Boolean));
   const qs = (window.QB && window.QB.questions) || [];
   for (const q of qs) {
-    if (names.has(q.subject) && String(q.year) === String(year)) out.add(String(q.paper));
+    if (String(q.year) !== String(year)) continue;
+    /* M1／M2 延伸部分：以 paper 認，唔靠 subject（兩者 subject 都係「數學」） */
+    if (sid === "m1") { if (q.paper === "Paper 1M") out.add("Paper 1M"); continue; }
+    if (names.has(q.subject)) out.add(String(q.paper));
   }
   return out;
 }

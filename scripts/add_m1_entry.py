@@ -1,23 +1,19 @@
-"""在年份頁加 M1 入口，並寫入 hub 目錄。
-
-用法：python scripts/add_m1_entry.py --write
-"""
+"""年份頁的 M1 入口（獨立一段，不與必修卷混在一起）。"""
 from __future__ import annotations
 
 import json
 import pathlib
-import re
 
 SITE = pathlib.Path(r"C:/Users/Administrator/projects/dse-maths-question-bank")
 YEARS = ["2019", "2020", "2022", "2023", "2024", "2025"]
 
-ROW = """    <article class="paper-row">
+CARD = """    <article class="paper-row">
       <a class="paper-main" href="/?subject=%E6%95%B8%E5%AD%B8#__HASH__" title="開啟 M1 題目">
         <div class="paper-year">{year}</div>
         <div class="paper-body">
           <div class="paper-tags">
             <span class="tag subj">數學</span>
-            <span class="tag cat">M1 延伸部分</span>
+            <span class="tag cat">延伸部分 M1</span>
             <span class="tag lang">英文</span>
           </div>
           <div class="paper-title">文憑試 DSE 數學延伸部分 M1 {year} · 題目（英文）</div>
@@ -38,52 +34,40 @@ def counts() -> dict[str, int]:
     return out
 
 
+def strip_old(s: str, year: str) -> str:
+    token = f"{year}P1MQ1"
+    i = s.find(token)
+    while i != -1:
+        start = s.rfind("<article", 0, i)
+        end = s.find("</article>", i)
+        if start == -1 or end == -1:
+            break
+        end += len("</article>")
+        s = s[:start] + s[end:]
+        i = s.find(token)
+    return s
+
+
 def main(write: bool) -> int:
     cnt = counts()
     for y in YEARS:
         page = SITE / "docs" / "math" / y / "index.html"
         if not page.exists():
-            print(f"{y}: 無年份頁，跳過")
+            print(f"{y}: 無年份頁")
             continue
         s = page.read_text(encoding="utf-8")
-        if f"#__HASH__" not in s and f'#{{y}}P1MQ1' in s:
-            print(f"{y}: 已有 M1 入口")
-            continue
-        if f"{y}P1MQ1" in s:
-            print(f"{y}: 已有 M1 入口")
-            continue
-        row = ROW.replace("__HASH__", f"{y}P1MQ1").format(year=y, n=cnt.get(y, 0))
-        # 插在第一個 </article> 之後
-        idx = s.find("</article>")
+        s = strip_old(s, y)
+        card = CARD.replace("__HASH__", f"{y}P1MQ1").format(year=y, n=cnt.get(y, 0))
+        sect = (f'<section class="year-group">\n  <h2>{y} 年延伸部分 M1</h2>\n'
+                f'  <div class="paper-list">\n{card}  </div>\n</section>\n')
+        idx = s.find("</main>")
         if idx == -1:
-            print(f"{y}: 找不到插入點")
+            print(f"{y}: 找不到 </main>")
             continue
-        s = s[: idx + len("</article>")] + "\n\n" + row + s[idx + len("</article>"):]
+        s = s[:idx] + sect + s[idx:]
         if write:
             page.write_text(s, encoding="utf-8")
-        print(f"{y}: 加 M1 入口（{cnt.get(y,0)} 題）{'✓' if write else '（dry）'}")
-
-    # hub 目錄
-    hub = SITE / "docs" / "hub" / "data.js"
-    hs = hub.read_text(encoding="utf-8")
-    rows = []
-    for y in YEARS:
-        if f'"#P{y}P1MQ1"' in hs or f'#{"P"}{y}P1MQ1' in hs or f"#{y}P1MQ1" in hs:
-            continue
-        rows.append(
-            '  { id: "math", name: "數學（延伸部分 M1）", year: %s, paper: "M1", lang: "英文", hash: "#%sP1MQ1" },'
-            % (y if y.isdigit() else '"%s"' % y, y)
-        )
-    if rows:
-        marker = "const CATALOG = ["
-        i = hs.find(marker)
-        j = hs.find("\n", i)
-        hs = hs[: j + 1] + "\n".join(rows) + "\n" + hs[j + 1:]
-        if write:
-            hub.write_text(hs, encoding="utf-8")
-        print(f"hub 加 {len(rows)} 行{'（dry）' if not write else ''}")
-    else:
-        print("hub 已有 M1 行")
+        print(f"{y}: 獨立 M1 段（{cnt.get(y,0)} 題）{'OK' if write else 'dry'}")
     return 0
 
 

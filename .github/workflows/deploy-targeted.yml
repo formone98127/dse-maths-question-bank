@@ -1,71 +1,40 @@
 name: Deploy selected files to Hostinger
 
-# 小批量上傳：本地改名成 .up 再 put，然後 server-side mv 覆蓋（避開 .in.* 暫存檔 550）。
+# 用 curl 被動模式逐檔上傳（實測 226 成功；lftp 會撞 .in.* 暫存檔，不可用）。
 on:
   workflow_dispatch:
     inputs:
       pattern:
-        description: "git ls-files glob"
+        description: "git ls-files glob（可多個，空白分隔）"
         required: true
-        default: "docs/m1/*/paper-1-en/index.html"
-
-concurrency:
-  group: hostinger-targeted
-  cancel-in-progress: false
+        default: "docs/hub/app.js docs/hub/style.css"
 
 jobs:
   upload:
     runs-on: ubuntu-latest
     env:
-      FTP_HOST: 147.93.109.152
-      FTP_USER: u187459660.hkdseupload
+      H: 147.93.109.152
+      U: u187459660.hkdseupload
     steps:
       - uses: actions/checkout@v4
-
-      - name: Install lftp
-        run: sudo apt-get update -qq && sudo apt-get install -y -qq lftp
-
-      - name: Build list and staged copies
-        run: |
-          set -euo pipefail
-          mkdir -p /tmp/up
-          git ls-files "${{ github.event.inputs.pattern }}" | sed 's#^docs/##' | sort -u > /tmp/list.txt
-          while IFS= read -r rel; do
-            flat=$(echo "$rel" | tr '/' '_').${GITHUB_RUN_ID}
-            cp "docs/$rel" "/tmp/up/$flat.up"
-          done < /tmp/list.txt
-          echo "files: $(wc -l < /tmp/list.txt)"; ls /tmp/up | head -3
-
       - name: Upload
         env:
-          FTP_PASS: ${{ secrets.HKDSE_FTP_PASSWORD }}
-          GITHUB_RUN_ID: ${{ github.run_id }}
+          P: ${{ secrets.HKDSE_FTP_PASSWORD }}
         run: |
           set -uo pipefail
-          python3 - <<'PY'
-          import os, pathlib
-          up = [l.strip() for l in open('/tmp/list.txt') if l.strip()]
-          host, user, pw = os.environ['FTP_HOST'], os.environ['FTP_USER'], os.environ['FTP_PASS']
-          L = ["set ssl:verify-certificate no", "set ftp:ssl-force true",
-               "set ftp:ssl-protect-data true", "set net:timeout 25", "set net:max-retries 2",
-               "set ftp:passive-mode false", "set ftp:prefer-epsv false",
-               "set ftp:use-temp-file no", "set xfer:clobber on",
-               'open -u "%s","%s" ftp://%s' % (user, pw, host)]
-          for rel in up:
-              d = "/" + (os.path.dirname(rel) or "")
-              b = os.path.basename(rel)
-              flat = rel.replace('/', '_') + '.' + os.environ.get('GITHUB_RUN_ID', '0')
-              L += ['mkdir -p "%s"' % d,
-                    'cd "%s"' % d,
-                    'rm -f "%s/.in.%s.up"' % (d, flat),
-                    'put "/tmp/up/%s.up"' % flat,
-                    'rm -f "%s"' % b,
-                    'mv "%s.up" "%s"' % (b, b)]
-          # 清走之前誤建的嵌套目錄（相對 mkdir 造成）
-          for y in ("2019", "2020", "2022", "2023", "2024", "2025"):
-              L.append('rm -rf "/m1/%s/paper-1-en/m1"' % y)
-          L += ["bye", ""]
-          pathlib.Path('/tmp/lftp.txt').write_text(chr(10).join(L))
-          print("cmds", len(L) - 1)
-          PY
-          timeout 600 lftp -f /tmp/lftp.txt || echo "lftp exit=$?"
+          : > /tmp/list.txt
+          for pat in ${{ github.event.inputs.pattern }}; do
+            git ls-files "$pat" >> /tmp/list.txt
+          done
+          sort -u /tmp/list.txt -o /tmp/list.txt
+          echo "files: $(wc -l < /tmp/list.txt)"
+          ok=0; bad=0
+          while IFS= read -r f; do
+            [ -z "$f" ] && continue
+            r="${f#docs/}"
+            code=$(curl -sS -o /dev/null -w '%{http_code}' --connect-timeout 20 --max-time 120 \
+                     -k --ssl-reqd --ftp-create-dirs -T "$f" "ftp://${U}:${P}@${H}/${r}") || code="ERR$?"
+            echo "$r -> $code"
+            if [ "$code" = "226" ]; then ok=$((ok+1)); else bad=$((bad+1)); fi
+          done < /tmp/list.txt
+          echo "ok=$ok bad=$bad"

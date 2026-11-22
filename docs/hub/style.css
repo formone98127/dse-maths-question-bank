@@ -871,3 +871,6 @@ a.brand-lockup:hover .brand, a.brand-lockup:hover .brand-dse { opacity: .85; }
 
 a.brand { text-decoration: none; color: inherit; display: inline-block; }
 a.brand:hover { opacity: .85; }
+
+.paper-row.is-static { opacity: 0.55; cursor: default; }
+.paper-row.is-static:hover { background: transparent; }

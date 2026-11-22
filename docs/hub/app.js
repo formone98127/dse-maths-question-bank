@@ -336,6 +336,8 @@ const LANDING_BY_HASH = {
 function viewHrefFor(r) {
   if (r.path) return r.path;
   if (LANDING_BY_HASH[r.hash]) return LANDING_BY_HASH[r.hash];
+  /* 只有 math（必修部分）有靜態落地板；M1 等未有板嘅科目唔好出死鏈（404） */
+  if (r.id !== "math") return null;
   const code = PAPER_CODE[r.paper] || "paper-1";
   const slug = r.lang === "英文" ? `${code}-en` : code;
   return `/${r.id}/${r.year}/${slug}/`;
@@ -354,8 +356,7 @@ function rowHtml(r) {
   const title = en
     ? `DSE ${sn} · ${paperEn} (English)`
     : `文憑試 DSE ${sn} · ${r.paper}（${r.lang}）`;
-  return `
-    <a class="paper-row" href="${href}" title="檢視 ${sn} ${YEAR_LABEL[r.year] || r.year} ${paperLbl}">
+  const rowBody = `
       <span class="paper-year">${YEAR_LABEL[r.year] || r.year}</span>
       <span class="paper-body">
         <span class="paper-tags">
@@ -364,7 +365,11 @@ function rowHtml(r) {
           <span class="tag lang">${esc(langLbl)}</span>
         </span>
         <span class="paper-title">${esc(title)}</span>
-      </span>
+      </span>`;
+  /* 未有落地板（例如 M1 掃描緊）：render 做靜態行，唔好出 404 死鏈 */
+  if (!href) return `<div class="paper-row is-static" title="即將上線">${rowBody}</div>`;
+  return `
+    <a class="paper-row" href="${href}" title="檢視 ${sn} ${YEAR_LABEL[r.year] || r.year} ${paperLbl}">${rowBody}
       <span class="paper-chev" aria-hidden="true"></span>
     </a>`;
 }

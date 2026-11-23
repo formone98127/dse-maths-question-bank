@@ -248,7 +248,7 @@ a:hover {{ text-decoration: underline; }}
 <body>
 <div class="app">
   <header class="top">
-    <div class="brand">⚔ 數學 RPG 技能樹</div>
+    <div class="brand">數學 RPG 技能樹</div>
     <nav class="top-nav">
       <a href="/hub/">DSE Hub</a>
       <a href="/skills/">技能地圖</a>

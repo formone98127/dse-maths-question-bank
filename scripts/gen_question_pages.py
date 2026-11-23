@@ -120,15 +120,14 @@ def ms_img_path(year: int, paper: int, qno: int) -> str | None:
 
 
 def render_page(year: int, paper: int, qno: int, zh, en, topic_map: dict,
-                n_total: int) -> str:
+                n_total: int, pct=None) -> str:
     tags = zh.get("tags") or []
     first_tag = tags[0] if tags else "數學"
     slug = f"paper-{paper}"
     qurl = f"{SITE}/questions/math/{year}/{slug}/q{qno}/"
-    _pct = q.get("answer_pct")
-    _tail = f"｜答對率 {round(float(_pct))}%" if _pct is not None else ""
+    _tail = f"｜答對率 {round(float(pct))}%" if pct is not None else ""
     title = f"{year} DSE 數學 P{paper} Q{qno} 答案＋詳解{_tail}｜DSE Hub"
-    h1 = f"{year} DSE 數學 Paper {paper} 第 {qno} 題 評卷參考＋詳解"
+    h1 = f"{year} DSE 數學 P{paper} Q{qno} 答案＋詳解{_tail}"
     desc = f"{year} Paper {paper} 第 {qno} 題（{first_tag}）長題目：官方評卷參考、題解、考評報告。"
 
     zh_html = zh.get("html") or f"<p>{zh.get('text', '')}</p>"
@@ -273,7 +272,7 @@ def main() -> None:
             print(f"skip q{qno}: 無中文題目")
             continue
         en = rec.get("en")
-        html = render_page(a.year, a.paper, qno, zh, en, topic_map, n_total)
+        html = render_page(a.year, a.paper, qno, zh, en, topic_map, n_total, pct=rec.get("answer_pct") or zh.get("answer_pct"))
         outdir = DOCS / "questions" / "math" / str(a.year) / f"paper-{a.paper}" / f"q{qno}"
         outfile = outdir / "index.html"
         if a.write:

@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 2",
+  "qno": "24",
+  "hash": "#2014P2Q24"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "兩平行直線的距離公式與軌跡分析",
+   "secondary_topics": [
+    "點到直線距離公式",
+    "直線係數關係判斷平行性"
+   ],
+   "required_formulas": [
+    "點 $P(x_0, y_0)$ 至直線 $Ax+By+C=0$ 的距離 $d = \\frac{|Ax_0+By_0+C|}{\\sqrt{A^2+B^2}}$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤以為等距點軌跡必為圓",
+    "student_thought_process": "學生可能將「到兩固定點距離相等」的垂直平分線概念混淆，或誤認為到兩相交直線等距是角平分線（雙射線），若誤判直線相交則選圓。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆幾何圖形定義",
+    "student_thought_process": "學生可能將「等距」與正方形對角線性質錯誤連結，或單純猜測複雜圖形，未進行代數化簡。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "誤用拋物線定義",
+    "student_thought_process": "學生可能將焦點與準線距離相等的定義（拋物線）套用到兩直線情境，忽略了此處是兩條直線而非點與直線。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "首先觀察 $L_1$ 與 $L_2$ 的係數關係，判斷兩直線位置是相交還是平行。",
+   "若兩直線平行，請回憶點到直線距離公式，並比較兩式分母與分子的結構差異。",
+   "將距離等式化簡後，觀察未知數 $x, y$ 的次數與係數關係，判斷其代表何種圖形。"
+  ],
+  "quick_solution_strategy": "發現兩直線平行且不等，等距點軌跡為兩平行線中間的平行線（直線）。"
+ },
+ "skills": {
+  "topic_id": "T-LOC",
+  "knowledge_point_ids": [
+   "K-LOC-01",
+   "K-LOC-02"
+  ],
+  "formula_ids": [
+   "F-LOC-01",
+   "F-LOC-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-LOC-01",
+    "formula_id": "F-LOC-01",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-LOC-01",
+    "formula_id": "F-LOC-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-LOC-01",
+    "formula_id": "F-LOC-01",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

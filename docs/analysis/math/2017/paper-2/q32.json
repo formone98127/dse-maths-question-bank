@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 2",
+  "qno": "32",
+  "hash": "#2017P2Q32"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "指數法則與十六進位轉換",
+   "secondary_topics": [
+    "冪數運算",
+    "十六進位系統"
+   ],
+   "required_formulas": [
+    "$a^m \\cdot a^n = a^{m+n}$",
+    "$8 = 2^3$",
+    "$16 = 2^4$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "漏乘係數 2",
+    "student_thought_process": "學生算出 $8^{3}+8^{19}=8^3(1+8^{16})$，但錯誤地認為 $1+8^{16}$ 對應十六進位 $10_{16}$，忽略了 $8^{16}=(2^3)^{16}=2^{48}=16^{12}$ 應產生前導零與係數 2。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "多餘的零位",
+    "student_thought_process": "學生正確算出 $8^{19}$ 貢獻 $2$，但錯誤地將 $8^3$ 轉換為十六進位時多加了兩個零，導致結果變成 $...020_{16}$。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略係數 2",
+    "student_thought_process": "學生將 $8^{3}+8^{19}$ 簡化為 $8^3(1+8^{16})$，並錯誤地認為 $1+8^{16}$ 等於十六進位的 $10_{16}$，完全忽略了 $8^{16}$ 是 $2^{48}$ 會產生係數 2。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：將底數 $8$ 轉換為 $2$ 的冪次，利用指數法則合併項。",
+   "提示 2：計算 $2^{48}$ 對應十六進位時，需考慮 $2^4=16$ 的關係，確認係數是否為 $1$ 或 $2$。",
+   "提示 3：將結果寫成 $2 \\times 16^{12} + 1 \\times 16^2$，觀察十六進位數字排列與零的數量。"
+  ],
+  "quick_solution_strategy": "將 $8$ 換成 $2^3$，合併為 $2^3(1+2^{48})$，再轉為十六進位。"
+ },
+ "skills": {
+  "topic_id": "T-NUM",
+  "knowledge_point_ids": [
+   "K-NUM-01",
+   "K-NUM-02"
+  ],
+  "formula_ids": [
+   "F-NUM-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

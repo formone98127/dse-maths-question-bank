@@ -1,0 +1,93 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2019",
+  "paper": "Paper 2",
+  "qno": "38",
+  "hash": "#2019P2Q38"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "幾何面積計算",
+   "secondary_topics": [
+    "圓扇形面積公式",
+    "等邊三角形性質",
+    "三角函數應用"
+   ],
+   "required_formulas": [
+    "\\text{扇形面積} = \\frac{\\theta}{360^\\circ} \\times \\pi r^2",
+    "\\text{三角形面積} = \\frac{1}{2}ab\\sin C"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 180
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "角度轉換錯誤",
+    "student_thought_process": "將 \\angle AOB 誤算為 60^\\circ 而非 120^\\circ，導致扇形面積計算偏差。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "區域定義混淆",
+    "student_thought_process": "誤將陰影視為 \\triangle OBC 減去扇形，或忽略 D 點位置對面積的影響。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "公式套用錯誤",
+    "student_thought_process": "直接計算半圓面積 \\frac{1}{2}\\pi r^2 而未扣除三角形與弓形部分。"
+   }
+  },
+  "scaffolding_hints": [
+   "陰影區域 BCD 的面積等於扇形 OAC 的面積減去三角形 OAD 與 OCD 的組合，或視為扇形 OBC 減去 \\triangle OBD 再加修正項。",
+   "利用等邊三角形 OAB 得知 \\angle AOB = 60^\\circ，結合 \\angle AOC = 90^\\circ 推導出 \\angle BOC = 30^\\circ。",
+   "計算扇形 OBC 面積後，需進一步求 \\triangle OBD 與弓形 CD 的關係，建議先算出 D 點坐標或使用相似三角形比例。"
+  ],
+  "quick_solution_strategy": "陰影面積 = 扇形 OBC - \\triangle OBD + (\\triangle OCD - 弓形 CD)，或直接積分/幾何分解為扇形 OAC 減去相關多邊形。"
+ },
+ "skills": {
+  "topic_id": "T-MEN",
+  "knowledge_point_ids": [
+   "K-MEN-01",
+   "K-MEN-02"
+  ],
+  "formula_ids": [
+   "F-MEN-01",
+   "F-MEN-02",
+   "F-MEN-03",
+   "F-MEN-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

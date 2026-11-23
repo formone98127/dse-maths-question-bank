@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 2",
+  "qno": "7",
+  "hash": "#2017P2Q7"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "多項式除法與餘式定理",
+   "secondary_topics": [
+    "一次因式與根的關係",
+    "代入法求常數"
+   ],
+   "required_formulas": [
+    "餘式定理：若 $p(x)$ 被 $x-a$ 整除，則 $p(a)=0$",
+    "多項式除法定義：$p(x) = (2x+1)Q(x) + R$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "符號處理失誤",
+    "student_thought_process": "算出 c=49 後代入 x=-1/2 時，計算 $2(-1/2)^2 - 11(-1/2) + 49$。可能將 $-11 \times (-0.5)$ 算成負數，或最後加總時符號搞錯，導致結果變成正數或絕對值錯誤的負數。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "忽略平方項符號",
+    "student_thought_process": "代入 $x=-1/2$ 時，計算 $2(-1/2)^2$。可能忘記平方後為正，直接沿用負數邏輯，或者在合併同類項時，將 $+0.5$ 與 $+49$ 加錯，導致結果偏小或符號相反。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "餘式定義混淆",
+    "student_thought_process": "誤以為被 $x-7$ 整除的條件與除以 $2x+1$ 的餘數無直接關聯，或者錯誤地認為餘數應該等於某個因式的值（如 $p(7)$），完全忽略餘式定理在除法中的應用。"
+   }
+  },
+  "scaffolding_hints": [
+   "根據餘式定理，若多項式 $p(x)$ 能被 $x-a$ 整除，代表當 $x=a$ 時，該多項式的值為多少？",
+   "利用上一步求得的 $c$ 值，將 $p(x)$ 完整寫出。接下來，請思考：當 $p(x)$ 除以 $(2x+1)$ 時，餘數 $R$ 與除式 $(2x+1)=0$ 時的 $x$ 值有何關係？",
+   "將求得的 $x$ 值代入完整的 $p(x)$ 中計算即可得到餘數。請注意分數運算的細節。"
+  ],
+  "quick_solution_strategy": "由 $p(7)=0$ 求 $c=49$；再由 $2x+1=0$ 得 $x=-1/2$，代入 $p(x)$ 計算餘數。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-03",
+   "K-POL-04"
+  ],
+  "formula_ids": [
+   "F-POL-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": "F-POL-04",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": "F-POL-04",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": "F-POL-04",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

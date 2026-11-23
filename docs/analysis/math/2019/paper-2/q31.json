@@ -1,0 +1,93 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2019",
+  "paper": "Paper 2",
+  "qno": "31",
+  "hash": "#2019P2Q31"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "對數法則與線性函數",
+   "secondary_topics": [
+    "變數替換 (Substitution)",
+    "直線方程式的截距式"
+   ],
+   "required_formulas": [
+    "$\\log_{a^n} b = \\frac{1}{n}\\log_a b$",
+    "$y - y_0 = m(x - x_0)$",
+    "$\\log_b a^k = k \\log_b a$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆 x 與 y 的係數關係",
+    "student_thought_process": "學生可能錯誤地將截距 8 對應到 y 的指數，7 對應到 x 的指數，未考慮變數替換後的斜率影響。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "斜率計算錯誤導致指數比例不對",
+    "student_thought_process": "學生在設定直線方程式時，可能算錯斜率 m，導致 x 與 y 的係數比例 (7:4) 變成 (7:8)。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "未進行變數底數轉換",
+    "student_thought_process": "學生直接將題目中的 log 視為普通線性關係，忽略底數 9 與 3 的換算，導致係數完全錯誤。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：觀察題目，令 $u = \\log_3 x$ 且 $v = \\log_9 y$，將對數關係轉化為兩個新變數 $u, v$ 之間的線性方程式。",
+   "提示 2：利用底數換算公式 $\\log_{9} y = \\frac{1}{2}\\log_{3} y$，建立 $v$ 與 $\\log_3 y$ 的關係，並結合直線截距式 $\\frac{X}{a} + \\frac{Y}{b} = 1$。",
+   "提示 3：將 $u, v$ 代回原變數 $x, y$，注意指數係數的變化，最後整理成選項中的形式即可驗證。"
+  ],
+  "quick_solution_strategy": "令 $u=\\log_3 x, v=\\log_9 y$，設直線為 $v=m(u-u_0)$，代入截距求斜率與係數關係。"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-01",
+   "K-EXP-02"
+  ],
+  "formula_ids": [
+   "F-EXP-01",
+   "F-EXP-02",
+   "F-EXP-03",
+   "F-EXP-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-EXP-01",
+    "formula_id": "F-EXP-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-EXP-01",
+    "formula_id": "F-EXP-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-EXP-01",
+    "formula_id": "F-EXP-01",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

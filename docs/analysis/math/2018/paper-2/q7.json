@@ -1,0 +1,86 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2018",
+  "paper": "Paper 2",
+  "qno": "7",
+  "hash": "#2018P2Q7"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "函數代入與展開",
+   "secondary_topics": [
+    "二項式定理應用",
+    "多項式運算"
+   ],
+   "required_formulas": [
+    "$f(g(x)) = 3(g(x))^2 - 2(g(x)) + 1$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "展開平方項時漏掉交叉項",
+    "student_thought_process": "學生計算 $3(2m-1)^2$ 時，可能只算成 $3(4m^2)$ 或忘記了 $-4m+2$ 的部分，導致常數項與一次項完全錯誤。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "展開平方項時漏掉交叉項且常數項算錯",
+    "student_thought_process": "學生算出 $3(4m^2-4m+1)=12m^2-12m+3$ 後，未乘以 3 或加法錯誤，導致一次項係數變為 -4，常數項變為 6。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "展開平方項時漏掉交叉項且常數項算錯",
+    "student_thought_process": "學生算出 $3(4m^2-4m+1)=12m^2-12m+3$ 後，未乘以 3 或加法錯誤，導致一次項係數變為 -16，常數項變為 2。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：請先將 $x=2m-1$ 代入函數式，注意括號的運算順序。",
+   "提示 2：展開 $(2m-1)^2$ 時，記得使用公式 $(a-b)^2=a^2-2ab+b^2$。",
+   "提示 3：將各項係數合併後，檢查二次項、一次項與常數項是否正確。"
+  ],
+  "quick_solution_strategy": "代入 $x=2m-1$ 展開平方項，再分配係數並合併同類項。"
+ },
+ "skills": {
+  "topic_id": "T-FUN",
+  "knowledge_point_ids": [
+   "K-FUN-01",
+   "K-FUN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

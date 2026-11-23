@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2018",
+  "paper": "Paper 2",
+  "qno": "43",
+  "hash": "#2018P2Q43"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "幾何級數與條件概率",
+   "secondary_topics": [
+    "無限等比級數求和",
+    "互斥事件加法原理"
+   ],
+   "required_formulas": [
+    "S = a / (1 - r)",
+    "P(A 或 B) = P(A) + P(B)"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略輪流機制",
+    "student_thought_process": "誤以為兩人機會均等，直接將總概率平分給偉明和小麗，忽略了遊戲在特定條件下結束的規則。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆單次與總概率",
+    "student_thought_process": "誤將「擲得 6」的單次基本事件概率 $1/6$ 當作最終答案，未考慮多次投擲累積的概率。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "級數求和錯誤",
+    "student_thought_process": "正確列出幾何級數 $1/6 + (4/6)(5/6)(1/6) + ...$，但在計算公比或分母時發生算術錯誤，導致結果偏大。"
+   }
+  },
+  "scaffolding_hints": [
+   "思考：偉明只有在第一次、第三次、第五次...投擲時才可能擲出「6」並結束遊戲，這些情況互斥。",
+   "知識：若前一次未發生目標事件（非 1 或 6），則進入下一輪的概率需乘以存活概率 $4/6$。",
+   "破題：偉明成功的總概率為首項 $a=1/6$，公比 $r=(5/6)^2$ 的無限等比級數之和。"
+  ],
+  "quick_solution_strategy": "計算首項 $1/6$ 與公比 $(5/6)^2$ 的無窮級數和 $S = \\frac{a}{1-r}$。"
+ },
+ "skills": {
+  "topic_id": "T-PROB",
+  "knowledge_point_ids": [
+   "K-PROB-04"
+  ],
+  "formula_ids": [
+   "F-PROB-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2018",
+  "paper": "Paper 2",
+  "qno": "14",
+  "hash": "#2018P2Q14"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "誤差範圍與幾何面積估算",
+   "secondary_topics": [
+    "多邊形面積計算",
+    "極值問題"
+   ],
+   "required_formulas": [
+    "梯形/三角形面積公式 $\\frac{1}{2}bh$ 或 $\\frac{(a+b)h}{2}$",
+    "極大極小值原理"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "下限計算錯誤",
+    "student_thought_process": "學生正確算出上限，但在計算最小面積時，可能將某邊長誤讀為整數而非減去 0.5，導致下限偏小（如算成 13）。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "上下限皆錯",
+    "student_thought_process": "學生在計算最小面積時，錯誤地將所有邊長都減去 0.5（甚至更多），導致下限過低；同時上限計算亦有誤。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "讀圖錯誤",
+    "student_thought_process": "學生未能正確識別圖形結構，可能將非直角部分視為直角梯形計算，或誤讀了某個關鍵邊長數值。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：題目給出的是「最接近」的測量值，這意味著實際長度是在測量值的 $\\pm 0.5$ 範圍內浮動的。",
+   "提示 2：要找到面積的範圍，你需要分別計算八邊形的「最小可能面積」和「最大可能面積」。請思考如何調整各邊長以達到這兩個極限。",
+   "提示 3：將圖形分割成熟悉的幾何形狀（如矩形、三角形）來計算面積。記得在計算極小值時，所有相關長度應取最小可能值；計算極大值時則取最大可能值。"
+  ],
+  "quick_solution_strategy": "將多邊形分割為簡單圖形，分別代入邊長的 $(\\text{測量值}-0.5)$ 與 $(\\text{測量值}+0.5)$ 計算極小與極大面積。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-01",
+   "K-GEO-02"
+  ],
+  "formula_ids": [
+   "F-GEO-01",
+   "F-GEO-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

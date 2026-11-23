@@ -1,0 +1,92 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 2",
+  "qno": "39",
+  "hash": "#2021P2Q39"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓的性質與平行線",
+   "secondary_topics": [
+    "切線性質",
+    "弦切角定理",
+    "半圓所對圆周角為直角"
+   ],
+   "required_formulas": [
+    "$\\angle$ 弦切角 $= \\frac{1}{2} \\times \\text{夾弧對應圆周角}$",
+    "$\\triangle$ 內角和 $= 180^\\circ$",
+    "平行線內錯角相等"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆弦切角與圆周角關係",
+    "student_thought_process": "學生誤以為 $\\angle CDF$ 直接等於所求角，或錯誤認為 $\\angle CED$ 與目標角有直接相等關係而忽略中間轉換步驟。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "角度運算錯誤",
+    "student_thought_process": "學生正確求出 $\\angle CDE$ 或相關角，但在計算 $\\angle ACB$ 時加法或減法出錯（例如將 $49+31=80$ 誤算或其他組合）。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "未利用平行線條件",
+    "student_thought_process": "學生忽略了 $AB \\parallel EC$ 這一關鍵條件，導致無法建立 $\\angle BAC$ 與已知角的聯繫，從而解題路徑斷裂。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "回憶圓的性質：直徑 $AC$ 所對的圆周角 $\\angle ADC$ 是多少度？",
+   "利用切線 $EF$ 與弦 $CD$ 構成的弦切角 $\\angle CDE$，它與哪個圆周角相等？",
+   "結合平行線 $AB \\parallel EC$ 的內錯角性質，找出 $\\angle BAC$ 的值後，在直角三角形 $ABC$ 中求解。"
+  ],
+  "quick_solution_strategy": "先求 $\\angle CDE=49^\\circ$（弦切角），得 $\\angle ACD=42^\\circ$；再由平行線得 $\\angle BAC=42^\\circ$，最後在 Rt$\\triangle ABC$ 中算出餘角。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-01",
+   "K-GEO-02"
+  ],
+  "formula_ids": [
+   "F-GEO-01",
+   "F-GEO-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

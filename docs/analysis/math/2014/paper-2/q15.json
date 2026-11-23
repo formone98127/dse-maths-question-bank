@@ -1,0 +1,93 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 2",
+  "qno": "15",
+  "hash": "#2014P2Q15"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "幾何圖形面積計算",
+   "secondary_topics": [
+    "全等三角形判定 (SAS)",
+    "直角梯形面積公式",
+    "勾股定理"
+   ],
+   "required_formulas": [
+    "\\text{梯形面積} = \\frac{(上底 + 下底) \\times 高}{2}",
+    "\\triangle ABC \\cong \\triangle ADE \\implies AC=AE, BC=DE$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "面積加總錯誤",
+    "student_thought_process": "將梯形面積算出後，忘記加上三角形 ADE 的面積，僅計算了部分區域。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "圖形分割錯誤",
+    "student_thought_process": "誤以為五邊形由兩個直角三角形組成，忽略了中間梯形或誤判 AB 長度。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "單位換算或乘法錯誤",
+    "student_thought_process": "正確計算出梯形與三角形面積後，將兩者相加時發生加法運算錯誤。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察圖形中 \\triangle ABC 與 \\triangle ADE 的邊角關係，嘗試證明它們是否全等。",
+   "若 \\triangle ABC \\cong \\triangle ADE，則五邊形可視為由一個直角梯形 \\text{BCDE} 加上兩個全等三角形組成。",
+   "利用梯形面積公式計算 \\text{BCDE} 部分，並乘以 2（或分別計算三角形）後求總和。"
+  ],
+  "quick_solution_strategy": "證 \\triangle ABC \\cong \\triangle ADE\\Rightarrow AB=16\\Rightarrow 五邊形=梯形 BCDE+2\\times\\triangle ABC$"
+ },
+ "skills": {
+  "topic_id": "T-MEN",
+  "knowledge_point_ids": [
+   "K-MEN-01",
+   "K-MEN-02"
+  ],
+  "formula_ids": [
+   "F-MEN-01",
+   "F-MEN-02",
+   "F-MEN-03",
+   "F-MEN-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2019",
+  "paper": "Paper 2",
+  "qno": "34",
+  "hash": "#2019P2Q34"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "複數運算",
+   "secondary_topics": [
+    "虛數單位性質",
+    "複數四則運算",
+    "實部定義"
+   ],
+   "required_formulas": [
+    "$i^2=-1$, $i^3=-i$, $i^4=1$",
+    "$\\frac{z_1}{z_2}=\\frac{z_1\\bar{z_2}}{|z_2|^2}$",
+    "$z=x+yi$ 的實部為 $x$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "分母處理錯誤",
+    "student_thought_process": "分子化簡正確，但在將分母有理化時，誤將 $a+i$ 的共軛複數 $(a-i)$ 乘入後，分母計算成 $a^2-1$ 而非 $a^2+(-1)^2=a^2+1$。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "虛部處理疏漏",
+    "student_thought_process": "成功將分母化為 $a^2+1$，但在合併分子時，忽略了原式中的 $-i^6$（即 $-1$）與分母有理化後產生的虛部項未正確歸類或抵消。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "分母符號混淆",
+    "student_thought_process": "完全忽略了複數分母有理化時，分母會變成 $a^2+1$ 的規則，錯誤地沿用了實數除法或平方差公式 $(a+i)(a-i)=a^2-1$。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "先利用 $i^2=-1$ 化簡分子中的 $i^5$ 與 $i^6$，將表達式整理為 $\\frac{4+i}{a+i}-1$。",
+   "處理分式時，請務必將分母有理化：分子分母同乘 $(a-i)$，並記得 $|a+i|^2=a^2+1$。",
+   "將化簡後的結果寫成 $x+yi$ 形式，題目僅要求實部 $x$，請檢查選項中分母是否為 $a^2+1$"
+  ],
+  "quick_solution_strategy": "化簡虛數單位 -> 有理化分母 -> 合併分子 -> 提取實部"
+ },
+ "skills": {
+  "topic_id": "T-NUM",
+  "knowledge_point_ids": [
+   "K-NUM-01"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": null,
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

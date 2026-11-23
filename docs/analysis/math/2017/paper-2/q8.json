@@ -1,0 +1,86 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 2",
+  "qno": "8",
+  "hash": "#2017P2Q8"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "多項式恆等式與係數比較",
+   "secondary_topics": [
+    "一次方程式解法",
+    "代入特殊值法"
+   ],
+   "required_formulas": [
+    "若 $P(x) \\equiv Q(x)$，則對應次數係數相等；或代入特定 $x$ 值使方程成立"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "展開時符號錯誤",
+    "student_thought_process": "學生正確比較 $x^2$ 係數得 $m=4$，但在計算 $n(x-4)$ 的常數項時，將 $4 \\times (-8) = -32$ 算錯或與 $28$ 合併時出錯，導致結果偏離。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆左右兩邊結構",
+    "student_thought_process": "學生誤以為 $n$ 直接等於左邊某係數，或未將右邊展開合併同類項，直接猜測 $28$ 與 $-4n$ 的關係時忽略 $m$ 的影響。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "代入值計算錯誤",
+    "student_thought_process": "學生正確設 $x=-4$，但計算 $m(-4)(-1)$ 時算成 $4 \\times 4 = 16$，忘記加上左邊常數項 $28$ 的平衡關係，或誤以為 $n=16$。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察等式兩邊，將右邊的多項式展開並合併同類項，使形式與左邊一致。",
+   "利用恆等式的定義：若兩多項式相等，則代入任意 $x$ 值均成立，或比較對應次數的係數。",
+   "先比較 $x^2$ 的係數求出 $m$，再比較常數項（不含 $x$ 的部分）建立關於 $n$ 的方程式求解。"
+  ],
+  "quick_solution_strategy": "展開右邊合併同類項，比較 $x^2$ 係數得 $m=4$，再比較常數項解出 $n=-8$"
+ },
+ "skills": {
+  "topic_id": "T-FUN",
+  "knowledge_point_ids": [
+   "K-FUN-01",
+   "K-FUN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

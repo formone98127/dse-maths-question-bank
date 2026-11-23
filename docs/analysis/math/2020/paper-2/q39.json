@@ -1,0 +1,92 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2020",
+  "paper": "Paper 2",
+  "qno": "39",
+  "hash": "#2020P2Q39"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓的性質與切線",
+   "secondary_topics": [
+    "弦切角定理",
+    "圓內接四邊形性質",
+    "等腰三角形"
+   ],
+   "required_formulas": [
+    "弦切角等於所夾弧之圆周角",
+    "圓內接四邊形對角互補",
+    "等腰三角形底角相等"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 120
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "角度計算錯誤",
+    "student_thought_process": "算出 $\\angle CDE = 80^\\circ$ 後，誤將 $180 - 35 - 80$ 算成 $65$，或是混淆了 $\\angle ABC$ 與 $\\angle CED$ 的關係。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤用圓內接四邊形性質",
+    "student_thought_process": "錯誤認為 $\\angle ABC + \\angle CDE = 180^\\circ$，導致算出 $100^\\circ$ 或相關錯誤角度，未注意到 $AB$ 是切線而非圓弦。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "忽略公切線條件",
+    "student_thought_process": "直接利用 $\\angle BCQ=35^\\circ$ 與圓心角關係，卻未連結到 $\\angle ADE$，導致計算出 $80^\\circ$ 等無關角度。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察 $AB$ 為圓 $CDE$ 在 $E$ 點的切線，弦切角 $\\angle AED$ 與圆周角 $\\angle ECD$ 有何關係？",
+   "考慮四邊形 $BCDE$ 內接於圓，其對角 $\\angle BCD$ 與 $\\angle BED$（或相關角）之和為何？",
+   "利用等腰三角形 $ABC$（若連結 $AC$）或弦切角 $\\angle BCQ$ 與弧 $BC$ 的關係，推導出 $\\angle ABC$"
+  ],
+  "quick_solution_strategy": "由弦切角得 $\\angle AED=35^\\circ$，故 $\\angle BED=65^\\circ$；再由圓內接四邊形得 $\\angle BCD=115^\\circ$，最後解等腰三角形。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-01",
+   "K-GEO-02"
+  ],
+  "formula_ids": [
+   "F-GEO-01",
+   "F-GEO-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

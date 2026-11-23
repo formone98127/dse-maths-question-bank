@@ -98,57 +98,43 @@ def skill_catalog_for_prompt():
     return "\n".join(lines)
 
 
-SYSTEM_PROMPT_BASE = """你是一位擁有 20 年經驗的頂尖數學教育專家與測驗心理學家（Psychometrician）。你的任務是對輸入的「數學選擇題」進行深度的解構與預先分析：精準剖析這道題目的考點、預測學生的作答行為，並針對每一個錯誤選項進行「逆向工程」，找出對應的思考盲點。
+SYSTEM_PROMPT = """你是一位擁有 20 年經驗的頂尖數學教育專家與測驗心理學家（Psychometrician）。你的任務是對輸入的「數學選擇題」進行深度的解構與預先分析：精準剖析這道題目的考點、預測學生的作答行為，並針對每一個錯誤選項進行「逆向工程」，找出對應的思考盲點。
 
 你必須輸出一個有效的 JSON 物件（嚴禁輸出 markdown code fences 或任何 JSON 以外的文字），嚴格遵守以下 Schema：
 
 {
   "metadata": {
-    "primary_topic": "字串, 例如: 一元二次方程式（可讀說明，可自由用詞）",
+    "primary_topic": "字串, 例如: 一元二次方程式",
     "secondary_topics": ["陣列, 1-3 個次考點/先備知識"],
-    "required_formulas": ["陣列, 解題必須用到的核心公式或定理（可讀 LaTeX）"],
+    "required_formulas": ["陣列, 解題必須用到的核心公式或定理"],
     "bloom_taxonomy_level": "記憶|理解|應用|分析|評鑑|創造 之一",
     "estimated_time_seconds": 一般程度學生的合理作答秒數（30-300 整數）
   },
   "options_analysis": {
-    "A": {"is_correct": boolean, "error_category": null 或 "Conceptual"|"Calculation"|"Reading-Formatting"|"Methodological", "error_tag": "字串, 簡短錯誤標籤, 正確選項填 null", "student_thought_process": "字串, 學生選到這項的具體錯誤計算/思考過程, 正確選項填 null"},
+    "A": {"is_correct": boolean, "error_category": null 或 "Conceptual"|"Calculation"|"Reading-Formatting"|"Methodological", "error_tag": "字串, 簡短錯誤標籤, 正確選項填 null", "student_thought_process": "字串, 80字以內, 正確選項填 null"},
     "B": { ... },
     "C": { ... },
     "D": { ... }
   },
-  "scaffolding_hints": ["Hint 1 啟發: 點出思考方向或關鍵字, 不給公式", "Hint 2 知識: 提供本題需要的公式或第一步具體列式", "Hint 3 破題: 解題過程最關鍵的轉折點"],
-  "quick_solution_strategy": "字串, 30 字以內的速解法或最有效率的切入點",
-  "skills": {
-    "topic_id": "技能冊課題 id，例如 T-EXP",
-    "knowledge_point_ids": ["技能冊知識點 id 陣列"],
-    "formula_ids": ["技能冊公式 id 陣列，可空"],
-    "ability_ids": ["技能冊能力 id 陣列"],
-    "option_faults": {
-      "A": {"knowledge_point_id": "id 或 null", "formula_id": "id 或 null", "ability_id": "能力 id"},
-      "B": { ... },
-      "C": { ... },
-      "D": { ... }
-    }
-  }
+  "scaffolding_hints": ["Hint 1 啟發", "Hint 2 知識", "Hint 3 破題"],
+  "quick_solution_strategy": "字串, 30 字以內"
 }
 
 要求：
 - 全部內容使用繁體中文；數學式一律用 LaTeX（$...$ 行內、$$...$$ 展示）。
 - 恰有一個選項 is_correct 為 true，且必須等於題目提供的正確答案字母。
 - 正確選項的 error_category / error_tag / student_thought_process 必須是 null。
-- error_category 四類定義：Conceptual（概念與邏輯錯誤）、Calculation（計算與代數操作粗心）、Reading-Formatting（審題不清、未注意單位或條件）、Methodological（使用了無效或低效的解題策略）。
-- student_thought_process 必須寫出該選項對應的具體錯誤計算過程（例如把什麼看錯、哪一步展開錯），不要泛泛而談。
+- error_category 四類：Conceptual、Calculation、Reading-Formatting、Methodological。
+- student_thought_process 每項不超過 80 字，寫具體錯步，不要長篇。
 - 三個提示須漸進：Hint 1 不洩漏公式與答案，Hint 3 不直接寫出最終答案。
-- skills 為必填：所有 id 必須來自下方技能冊；禁止自創課題名／公式名作 id。
-- option_faults 只為錯誤選項填寫（正確選項不要出現）；每個錯選項恰好一個 ability_id，且 knowledge_point_id 或 formula_id 至少一個非 null。"""
+- 不要輸出 skills 欄位。"""
 
-
-def build_system_prompt():
-    return SYSTEM_PROMPT_BASE + "\n\n" + skill_catalog_for_prompt()
-
-
-# 向後相容：多數呼叫處用 SYSTEM_PROMPT；真正送出前再用 build_system_prompt()
-SYSTEM_PROMPT = SYSTEM_PROMPT_BASE
+CAT_TO_ABILITY = {
+    "Conceptual": "A-ALG",
+    "Calculation": "A-CALC",
+    "Reading-Formatting": "A-COND",
+    "Methodological": "A-CHAIN",
+}
 
 
 # ---------- data.js 載入 ----------
@@ -238,18 +224,40 @@ def load_answer_sheet(sol_record):
     return sheet
 
 
-def collect_candidates(questions, subject=None, year=None, paper=None, qnos=None):
+def _year_matches(q_year, year) -> bool:
+    if year is None:
+        return True
+    raw = str(q_year or "").strip()
+    try:
+        return int(raw) == int(year)
+    except ValueError:
+        return raw == str(year)
+
+
+def _is_chinese_question(q: dict) -> bool:
+    f = str(q.get("file") or "")
+    if "英文" in f or "English" in f or re.search(r"(?i)(^|[_\-/])en([_\-/]|$)", f):
+        return False
+    if "中文" in f or "zh" in f.lower():
+        return True
+    return bool(re.search(r"[\u4e00-\u9fff]", q.get("text") or ""))
+
+
+def collect_candidates(questions, subject=None, year=None, paper=None, qnos=None, chinese_only=True):
+    """Collect MC questions with answers. Default chinese_only avoids zh/en duplicates."""
     out = []
     for q in questions:
         if q.get("type") != "題目":
             continue
         if subject and q.get("subject") != subject:
             continue
-        if year and int(q.get("year", 0)) != year:
+        if not _year_matches(q.get("year"), year):
             continue
         if paper and q.get("paper") != paper:
             continue
-        if qnos and int(q.get("qno", -1)) not in qnos:
+        if qnos and int(re.sub(r"\D", "", str(q.get("qno", ""))) or -1) not in qnos:
+            continue
+        if chinese_only and not _is_chinese_question(q):
             continue
         opts, _ = extract_mc(q)
         if not opts:
@@ -258,7 +266,7 @@ def collect_candidates(questions, subject=None, year=None, paper=None, qnos=None
         if not letter:
             continue
         sheet = load_answer_sheet(sol)
-        qno_i = int(q["qno"])
+        qno_i = int(re.sub(r"\D", "", str(q["qno"])) or 0)
         if sheet.get(qno_i, letter) != letter:
             print(f"⚠ 答案不一致 q{qno_i}：解答內文={letter}，速查表={sheet[qno_i]}（以速查表為準）")
             letter = sheet[qno_i]
@@ -487,58 +495,76 @@ def validate_analysis(obj, answer):
         errs.append("scaffolding_hints 須為 3 個非空字串")
     if not obj.get("quick_solution_strategy"):
         errs.append("缺 quick_solution_strategy")
-
-    # skills：固定技能冊 id（必填）
-    skills = obj.get("skills")
-    if not isinstance(skills, dict):
-        errs.append("缺 skills 物件（必須使用 docs/skills/math_skill_book.json 的 id）")
-    else:
-        try:
-            _, topics, kps, formulas, abilities = load_skill_book()
-        except SystemExit as e:
-            errs.append(str(e))
-            return errs
-        if skills.get("topic_id") not in topics:
-            errs.append(f"skills.topic_id 不在技能冊：{skills.get('topic_id')!r}")
-        for kid in skills.get("knowledge_point_ids") or []:
-            if kid not in kps:
-                errs.append(f"skills 未知 knowledge_point_id {kid!r}")
-        for fid in skills.get("formula_ids") or []:
-            if fid not in formulas:
-                errs.append(f"skills 未知 formula_id {fid!r}")
-        for aid in skills.get("ability_ids") or []:
-            if aid not in abilities:
-                errs.append(f"skills 未知 ability_id {aid!r}")
-        wrong = {
-            k
-            for k, v in (oa.items() if isinstance(oa, dict) else [])
-            if isinstance(v, dict) and not v.get("is_correct")
-        }
-        faults = skills.get("option_faults")
-        if not isinstance(faults, dict):
-            errs.append("skills.option_faults 須為物件")
-        else:
-            for opt in faults:
-                if opt not in wrong:
-                    errs.append(f"skills.option_faults 含非錯選項 {opt}")
-            for opt in wrong:
-                if opt not in faults:
-                    errs.append(f"錯選項 {opt} 缺 skills.option_faults")
-                    continue
-                f = faults[opt]
-                if not isinstance(f, dict):
-                    errs.append(f"skills.option_faults.{opt} 不是物件")
-                    continue
-                kid, fid, aid = f.get("knowledge_point_id"), f.get("formula_id"), f.get("ability_id")
-                if aid not in abilities:
-                    errs.append(f"{opt} 未知 ability_id {aid!r}")
-                if kid is None and fid is None:
-                    errs.append(f"{opt} 須有 knowledge_point_id 或 formula_id")
-                if kid is not None and kid not in kps:
-                    errs.append(f"{opt} 未知 knowledge_point_id {kid!r}")
-                if fid is not None and fid not in formulas:
-                    errs.append(f"{opt} 未知 formula_id {fid!r}")
+    # skills 由 attach_skills_post() 事後掛上，唔再要求 LLM 輸出
     return errs
+
+
+def attach_skills_post(q: dict, analysis: dict) -> dict:
+    """用題庫 tags + 分析 metadata，掛上技能冊 id；錯選項用 error_category 對能力。"""
+    book, topics, kps, formulas, abilities = load_skill_book()
+    cross_path = ROOT / "docs" / "skills" / "math_tag_crosswalk.json"
+    cross = {}
+    if cross_path.is_file():
+        cross = json.loads(cross_path.read_text(encoding="utf-8")).get("map") or {}
+
+    tags = list(q.get("tags") or [])
+    md = analysis.get("metadata") or {}
+    blob = " ".join(tags) + " " + str(md.get("primary_topic") or "") + " " + " ".join(md.get("secondary_topics") or [])
+    blob += " " + (q.get("text") or "")
+
+    votes = {}
+    for tag in tags:
+        hit = cross.get(tag)
+        if hit:
+            tid = hit["topic_id"]
+            votes[tid] = votes.get(tid, 0) + 2
+    # keyword bump from skill book topic names
+    for t in book["topics"]:
+        if t["name"] in blob:
+            votes[t["id"]] = votes.get(t["id"], 0) + 1
+    topic_id = max(votes, key=votes.get) if votes else "T-EQN"
+
+    kp_ids = []
+    for t in book["topics"]:
+        if t["id"] != topic_id:
+            continue
+        for k in t["knowledge_points"]:
+            if any(part in blob for part in re.split(r"[：:／/、]", k["name"]) if len(part) >= 2):
+                kp_ids.append(k["id"])
+        if not kp_ids:
+            kp_ids = [k["id"] for k in t["knowledge_points"][:2]]
+        break
+    kp_ids = kp_ids[:3] or ["K-EQN-01"]
+
+    formula_ids = []
+    for t in book["topics"]:
+        for f in t["formulas"]:
+            if f["knowledge_point_id"] in kp_ids:
+                formula_ids.append(f["id"])
+    formula_ids = formula_ids[:4]
+
+    ability_ids = ["A-ALG", "A-CALC"]
+    faults = {}
+    oa = analysis.get("options_analysis") or {}
+    for opt, v in oa.items():
+        if not isinstance(v, dict) or v.get("is_correct"):
+            continue
+        aid = CAT_TO_ABILITY.get(v.get("error_category"), "A-ALG")
+        faults[opt] = {
+            "knowledge_point_id": kp_ids[0] if kp_ids else None,
+            "formula_id": formula_ids[0] if formula_ids else None,
+            "ability_id": aid if aid in abilities else "A-ALG",
+        }
+        if faults[opt]["knowledge_point_id"] is None and faults[opt]["formula_id"] is None:
+            faults[opt]["knowledge_point_id"] = next(iter(kps))
+
+    return {
+        "topic_id": topic_id if topic_id in topics else next(iter(topics)),
+        "knowledge_point_ids": [k for k in kp_ids if k in kps],
+        "formula_ids": [f for f in formula_ids if f in formulas],
+        "ability_ids": [a for a in ability_ids if a in abilities],
+        "option_faults": faults,
+    }
 
 
 def soft_answer_leak_warning(obj, answer, options):
@@ -587,9 +613,10 @@ def process(q, options, answer, cfg, dry_run=False, force=False):
         return False
     print(f"→ 分析 {q['subject']} {q['year']} {q['paper']} Q{q['qno']}（model={cfg['model']}，輸入 ~{est_tokens} tokens）")
     messages = [
-        {"role": "system", "content": build_system_prompt()},
+        {"role": "system", "content": SYSTEM_PROMPT},
         {"role": "user", "content": prompt},
     ]
+    content = ""
     for attempt in range(1, 4):
         try:
             content = call_llm(cfg, messages)
@@ -602,9 +629,10 @@ def process(q, options, answer, cfg, dry_run=False, force=False):
         except json.JSONDecodeError as e:
             errs = [f"JSON 解析失敗：{e}"]
         else:
+            obj.pop("skills", None)  # 忽略模型若仍輸出
             errs = validate_analysis(obj, answer)
             if not errs:
-                skills = obj.pop("skills", None)
+                skills = attach_skills_post(q, obj)
                 payload = {
                     "question": {
                         "subject": q["subject"],
@@ -616,9 +644,8 @@ def process(q, options, answer, cfg, dry_run=False, force=False):
                     "model": cfg["model"],
                     "generated": datetime.datetime.now().strftime("%Y-%m-%d"),
                     "analysis": obj,
+                    "skills": skills,
                 }
-                if skills is not None:
-                    payload["skills"] = skills
                 path.parent.mkdir(parents=True, exist_ok=True)
                 path.write_text(json.dumps(payload, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
                 soft_answer_leak_warning(obj, answer, options)
@@ -629,8 +656,9 @@ def process(q, options, answer, cfg, dry_run=False, force=False):
             messages.append({"role": "assistant", "content": content})
             messages.append({"role": "user", "content": "你的輸出有以下問題，請修正後重新輸出完整 JSON（仍嚴禁 markdown fences）：\n- " + "\n- ".join(errs)})
     print(f"  ✗ 三次失敗，放棄 Q{q['qno']}")
+    path.parent.mkdir(parents=True, exist_ok=True)
     bad = path.with_suffix(".bad")
-    bad.write_text(content, encoding="utf-8")  # 留低 raw output 方便診斷
+    bad.write_text(content or "", encoding="utf-8")
     print(f"  ↳ raw output 已存 {bad.relative_to(ROOT)}")
     return False
 
@@ -684,6 +712,8 @@ def main():
     ap.add_argument("--publish", action="store_true",
                     help="每題成功後即刻 build_seo + commit + push（CI 自動部署上線）")
     ap.add_argument("--list", action="store_true", help="列出可分析的 MC 題（含配對答案）")
+    ap.add_argument("--all-langs", action="store_true",
+                    help="包含英文卷（預設只取中文，避免中英重複；2022 卷二等只有英文時要用）")
     ap.add_argument("--provider", choices=list(PROVIDER_PRESETS))
     ap.add_argument("--base-url")
     ap.add_argument("--api-key")
@@ -697,7 +727,10 @@ def main():
     if args.qno_range:
         qnos |= parse_qno_spec(args.qno_range)
     qnos = qnos or None
-    cands = collect_candidates(questions, args.subject, args.year, args.paper, qnos)
+    cands = collect_candidates(
+        questions, args.subject, args.year, args.paper, qnos,
+        chinese_only=not args.all_langs,
+    )
 
     if args.list:
         for q, opts, letter in cands:

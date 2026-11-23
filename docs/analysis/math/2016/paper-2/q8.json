@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2016",
+  "paper": "Paper 2",
+  "qno": "8",
+  "hash": "#2016P2Q8"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "一元二次方程式",
+   "secondary_topics": [
+    "判別式",
+    "等根條件",
+    "因式分解"
+   ],
+   "required_formulas": [
+    "$b^2 - 4ac = 0$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "解方程時忽略二次項",
+    "student_thought_process": "學生可能將 $kx$ 視為一次式，錯誤地只解 $8k+36=0$ 得到 $k=-4.5$ 或計算出 $-6$。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "忽略常數項符號",
+    "student_thought_process": "學生正確列出判別式但計算錯誤，例如將 $4ac$ 算成 $-36$ 導致 $k=12$。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "完全算錯判別式數值",
+    "student_thought_process": "學生可能混淆 $a,b,c$ 的係數，或將 $4ac$ 計算為 $144+36$ 等錯誤步驟。"
+   }
+  },
+  "scaffolding_hints": [
+   "回憶一元二次方程式 $ax^2+bx+c=0$ 有等根的條件是什麼？",
+   "在此題中，$a=1, b=k, c=8k+36$，請將這些係數代入判別式公式。",
+   "解出關於 $k$ 的一元一次或二次方程式後，務必檢查所有可能的解是否符合原題意。"
+  ],
+  "quick_solution_strategy": "利用判別式等於零建立方程，解出 $k$ 的值並驗證選項。"
+ },
+ "skills": {
+  "topic_id": "T-FUN",
+  "knowledge_point_ids": [
+   "K-FUN-01",
+   "K-FUN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

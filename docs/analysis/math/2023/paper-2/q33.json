@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2023",
+  "paper": "Paper 2",
+  "qno": "33",
+  "hash": "#2023P2Q33"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "對數與線性函數",
+   "secondary_topics": [
+    "變換基底公式",
+    "直線截距式方程式"
+   ],
+   "required_formulas": [
+    "$\\log_a b = \\frac{\\log_c b}{\\log_c a}$",
+    "$y - y_1 = m(x - x_1)$ 或 $\\frac{x}{a} + \\frac{y}{b} = 1$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "截距係數計算錯誤",
+    "student_thought_process": "學生成功建立對數關係，但在將截距 $5,3$ 轉化為直線方程式時，未正確處理變數係數，導致指數比例失衡。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "基底轉換應用不當",
+    "student_thought_process": "學生混淆了 $\\log_8 y$ 與 $\\log_4 x$ 的係數關係，錯誤地假設兩者基底差異直接對應指數倍數，忽略變換後的斜率計算。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "截距意義解讀偏差",
+    "student_thought_process": "學生誤將垂直軸截距 $5$ 視為 $y$ 的係數，水平軸截距 $3$ 視為 $x$ 的係數，而未考慮對數函數轉換後的斜率影響。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：利用變換基底公式，將 $\\log_8 y$ 與 $\\log_4 x$ 統一為同一基底（如自然對數或常用對數），觀察它們之間的線性關係式。",
+   "提示 2：設 $u = \\log_4 x$，$v = \\log_8 y$，根據截距 $(3,0)$ 與 $(0,5)$ 寫出 $v$ 與 $u$ 的直線方程式，並整理成 $v = mu + c$ 的形式。",
+   "提示 3：將直線方程式代回原對數表達式，利用指數定義消去對數符號，比較兩邊指數與係數，即可驗證哪一選項符合條件。"
+  ],
+  "quick_solution_strategy": "統一基底得 $\\log_8 y = \\frac{1}{2}\\log_4 x + c$，代入截距求斜率與常數項，再轉回指數形式比對選項。"
+ },
+ "skills": {
+  "topic_id": "T-FUN",
+  "knowledge_point_ids": [
+   "K-FUN-01",
+   "K-FUN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

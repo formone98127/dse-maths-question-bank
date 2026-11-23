@@ -1,0 +1,91 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2025",
+  "paper": "Paper 2",
+  "qno": "22",
+  "hash": "#2025P2Q22"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓的性質與平行線",
+   "secondary_topics": [
+    "弦切角定理",
+    "等腰三角形性質"
+   ],
+   "required_formulas": [
+    "圓周角定理：同弧所對圓周角相等",
+    "平行線內錯角相等",
+    "等腰三角形底角相等"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "角度計算錯誤",
+    "student_thought_process": "算出 $\\angle SRT=33^\\circ$，誤以為 $\\angle RUT$ 直接等於 $\\angle RTS + \\angle URV = 66^\\circ$ 後四捨五入或計算失误得 36。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆圓周角關係",
+    "student_thought_process": "誤認為 $\\angle RUT$ 對應的弧是 $ST$，因此嘗試用 $180 - (33+33)$ 或其他錯誤組合，得出 49。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略平行線條件",
+    "student_thought_process": "完全忽略 $RT//VU$ 的條件，直接假設 $\\triangle RUT$ 為等邊或特殊三角形，隨意選出 65。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "觀察 $RT$ 為角平分線，推導出 $\\angle SRT$ 與已知角度的關係。",
+   "利用平行線 $RT // VU$ 找出與 $\\angle RUT$ 相關的內錯角或同旁內角關係。",
+   "結合圓的性質（如弦切角或等腰三角形）建立方程求解未知角度。"
+  ],
+  "quick_solution_strategy": "由角平分線得 $\\angle SRT=33^\\circ$，再由平行線得 $\\angle RUT + \\angle TRV = 180^\\circ$ 或找內錯角，利用圓周角性質解出。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-01",
+   "K-GEO-02"
+  ],
+  "formula_ids": [
+   "F-GEO-01",
+   "F-GEO-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

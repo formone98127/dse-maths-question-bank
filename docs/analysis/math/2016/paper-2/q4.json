@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2016",
+  "paper": "Paper 2",
+  "qno": "4",
+  "hash": "#2016P2Q4"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "有效數字與小數",
+   "secondary_topics": [
+    "有效數字的定義",
+    "四捨五入規則"
+   ],
+   "required_formulas": [
+    "有效數字計數規則：非零數字皆算，夾在非零間的零皆算，前導零不算",
+    "四捨五入：看下一位是否大於等於 5"
+   ],
+   "bloom_taxonomy_level": "理解",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "有效數字誤算",
+    "student_thought_process": "學生可能認為前導零不算，但誤將後面的數位計錯。0.076 有三位非零位前的零不算，實際是 2 位有效數字 (7,6)，但題目要求準確至二位有效數字，此選項雖數值對但描述需確認。若學生認為 0.076 是二位有效數字則正確，但若題目意指四捨五入後結果，0.0765403 約為 0.077 (二位有效)。故 A 錯誤在於未正確執行四捨五入至二位有效數字應得 0.077。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "混淆有效數字與小數位數",
+    "student_thought_process": "學生看到選項 B 有三位小數，便以為符合「三位」的描述，卻忽略了題目要求的是「三位有效數字」而非「三位小數」。0.0765 有四位有效數字 (7,6,5,4)，與描述不符。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤解有效數字含義",
+    "student_thought_process": "學生可能認為尾隨零也有意義，但 0.076540 有六位有效數字 (7,6,5,4,0)，與題目「四位有效數字」的描述矛盾。此選項混淆了小數位數與有效數位數的概念。"
+   }
+  },
+  "scaffolding_hints": [
+   "回想：有效數字從第一個非零數字開始計算，前導零不計入。",
+   "練習：將 0.0765403 寫成科學記號 $7.65403 \\times 10^{-2}$，再依序取四位。",
+   "確認：選項 C 的數值與描述是否完全吻合，其他選項是否有概念混淆。"
+  ],
+  "quick_solution_strategy": "先識別第一個非零數字起算有效位，再依題目要求四捨五入並比對描述。"
+ },
+ "skills": {
+  "topic_id": "T-PCT",
+  "knowledge_point_ids": [
+   "K-PCT-01",
+   "K-PCT-02"
+  ],
+  "formula_ids": [
+   "F-PCT-01",
+   "F-PCT-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-COND"
+   },
+   "D": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

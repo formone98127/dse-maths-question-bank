@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2018",
+  "paper": "Paper 2",
+  "qno": "30",
+  "hash": "#2018P2Q30"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "統計學: 四分位數間距 (IQR)",
+   "secondary_topics": [
+    "幹葉圖的讀取",
+    "中位數的計算",
+    "數據排序"
+   ],
+   "required_formulas": [
+    "$IQR = Q_3 - Q_2$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略III的錯誤性",
+    "student_thought_process": "學生算出 I 與 II 正確，但誤以為 III 也成立。可能未仔細檢查 a-b 的範圍是否包含所有情況，或混淆了不等式方向。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略I的錯誤性",
+    "student_thought_process": "學生算出 II 與 III 正確，但忽略了 I 的限制。可能誤解了 Q1 的計算方式，導致 a 的範圍判斷錯誤。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "全選陷阱",
+    "student_thought_process": "學生認為所有陳述都正確，通常是因为計算出 I 與 II 後，未嚴格驗證 III 的邊界條件（如 a=0, b=4 時 IQR=25，但 a-b 範圍需精確）。"
+   }
+  },
+  "scaffolding_hints": [
+   "首先將幹葉圖中的數據按大小順序完整寫出來，注意未知數 a 和 b 的位置。",
+   "回憶四分位數間距 $IQR = Q_3 - Q_2$ 的定義，並找出第 5 個與第 16 個數據作為中位數（Q2），第 15 個數據作為第三四分位數（Q3）。",
+   "代入 IQR ≤ 25 的條件建立不等式，分別解出 a 和 b 的範圍，再檢查 III 選項中的 $a-b$ 是否恆成立。"
+  ],
+  "quick_solution_strategy": "列出所有數據 -> 找出 Q2, Q3 -> 計算 IQR 不等式 -> 驗證各選項。"
+ },
+ "skills": {
+  "topic_id": "T-STA",
+  "knowledge_point_ids": [
+   "K-STA-01",
+   "K-STA-02"
+  ],
+  "formula_ids": [
+   "F-STA-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

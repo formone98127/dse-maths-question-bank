@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 2",
+  "qno": "10",
+  "hash": "#2024P2Q10"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "一元一次不等式",
+   "secondary_topics": [
+    "邏輯運算符 (或)",
+    "區間表示法"
+   ],
+   "required_formulas": [
+    "$\\frac{a}{b} \\geq c \\implies a \\geq bc$ (當 $b>0$)",
+    "$A \\text{ 或 } B \\iff A \\cup B$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "忽略第二個不等式解集",
+    "student_thought_process": "學生正確解出 $x \\leq -7$，但完全遺漏處理 $7+5x \\leq -3$ 這部分，導致只寫下其中一個解集。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆「或」與「且」的邏輯",
+    "student_thought_process": "學生誤以為不等式由「或」連接時，解集應取交集（$\\cap$），將兩個範圍重疊起來寫成 $-7 \\leq x \\leq -2$。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "誤解「或」的集合意義",
+    "student_thought_process": "學生正確算出兩個解集，但錯誤地認為「或」意味著必須將答案寫成「A 或 B」的文字形式，而非數學上的並集符號。"
+   }
+  },
+  "scaffolding_hints": [
+   "請先單獨解開第一個不等式 $\\frac{1-x}{2} \\geq 4$，求出 $x$ 的範圍。",
+   "接著請單獨解開第二個不等式 $7 + 5x \\leq -3$，同樣找出 $x$ 的範圍。",
+   "題目中的「或」代表集合的並集（Union），請將上述兩個範圍合併寫出最終答案。"
+  ],
+  "quick_solution_strategy": "分別解兩邊不等式得 $x \\leq -7$ 與 $x \\leq -2$，取兩者之並集即為 $x \\leq -2$"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-05"
+  ],
+  "formula_ids": [
+   "F-EQN-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

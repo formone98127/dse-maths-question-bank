@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2020",
+  "paper": "Paper 2",
+  "qno": "13",
+  "hash": "#2020P2Q13"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "一元一次不等式組",
+   "secondary_topics": [
+    "不等式的性質",
+    "分數與整數的運算"
+   ],
+   "required_formulas": [
+    "$\\frac{a}{b} > c \\implies a > bc$ (當 $b>0$)",
+    "$x > a, x < b \\implies a < x < b$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "不等號方向混淆",
+    "student_thought_process": "解第一個不等式得 $x<-1$。學生誤以為只要滿足其中一個條件即可，忽略了這是聯立不等式組，且未檢查第二個條件是否與此交集。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "移項符號錯誤",
+    "student_thought_process": "解第一個不等式 $5-4x<9$ 時，移項得 $-4x<4$，卻誤算為 $x>-1$（除以負數未變號）。此錯誤導致直接選出 B。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "分數運算錯誤",
+    "student_thought_process": "解第二個不等式 $\\frac{2x-3}{7}>1$ 時，兩邊同乘 7 得 $2x-3>7$。學生可能誤算為 $2x>4$ 或 $2x>10$ 時算錯，得到 $x<5$ 或混淆了不等號方向。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：解不等式組時，必須同時滿足兩個條件，即求兩個解集的交集。",
+   "提示 2：處理分數不等式 $\\frac{A}{B}>C$ 時，若 $B>0$，可直接兩邊同乘 $B$ 去除分母。",
+   "提示 3：請分別解出 $5-4x<9$ 與 $\\frac{2x-3}{7}>1$ 的範圍，再在數軸上找出重疊部分。"
+  ],
+  "quick_solution_strategy": "先解第一式得 $x<-1$，再解第二式得 $x>5$，取交集即為空集？等等，重新計算：$5-4x<9 \\to -4x<4 \\to x>-1$。第二式 $2x-3>7 \\to 2x>10 \\to x>5$。交集為 $x>5$"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-05"
+  ],
+  "formula_ids": [
+   "F-EQN-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

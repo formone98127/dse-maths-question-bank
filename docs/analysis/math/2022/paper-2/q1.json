@@ -1,0 +1,86 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 2",
+  "qno": "1",
+  "hash": "#2022P2Q1"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "因式分解",
+   "secondary_topics": [
+    "分組分解法",
+    "平方差公式"
+   ],
+   "required_formulas": [
+    "a^2 - b^2 = (a-b)(a+b)",
+    "a^2 - a = a(a-1)"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "符號處理錯誤",
+    "student_thought_process": "學生正確分組為 (α^2-β^2) 與 (-α+β)，但將 -α+β 提公因式時，誤認為是 -(α-β+1) 的展開形式，導致最後常數項符號錯誤，算成 +1。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "公因式提取失誤",
+    "student_thought_process": "學生將 -α+β 錯誤地視為 -(α-β)，忽略了中間項的係數變化，導致展開後常數項變成 -1，而非正確的 -1（此處應為 -α+β=-(α-β)）。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "分組策略錯誤",
+    "student_thought_process": "學生嘗試將 α^2 與 -α 分組，β^2 與 β 分組，但忽略了 -α+β 無法直接提出 (α-β) 的公因式，導致結構完全錯誤。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "觀察題目中的四個項，嘗試將它們分成兩組，使每組內部可以進行因式分解。",
+   "回憶平方差公式 a^2-b^2=(a-b)(a+b)，並思考如何處理剩下的線性項 -α+β。",
+   "檢查選項 D 的結構，將其展開驗證是否等於原題目，確認常數項與一次項係數是否吻合。"
+  ],
+  "quick_solution_strategy": "分組為 (α^2-β^2) 和 (-α+β)，利用平方差公式及提取公因式 -(α-β)。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-03"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

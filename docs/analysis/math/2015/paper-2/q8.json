@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2015",
+  "paper": "Paper 2",
+  "qno": "8",
+  "hash": "#2015P2Q8"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "二次函數圖形特性",
+   "secondary_topics": [
+    "拋物線開口方向與係數關係",
+    "頂點式轉換與平移"
+   ],
+   "required_formulas": [
+    "y = a(x + b)^2 的頂點為 (-b, 0)",
+    "a > 0 時開口向上，a < 0 時開口向下"
+   ],
+   "bloom_taxonomy_level": "理解",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "頂點坐標誤判",
+    "student_thought_process": "學生認為圖形向右移代表 b<0，混淆了 (x+b) 中 b 的符號與平移方向的關係。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "頂點坐標誤判",
+    "student_thought_process": "學生正確判斷 a>0，但錯誤地認為圖形向右移代表 b<0，導致符號判斷出錯。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "頂點坐標誤判",
+    "student_thought_process": "學生認為圖形向右移代表 b>0，但同時錯誤地判斷 a<0（可能看錯開口方向）。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "觀察拋物線的開口方向，判斷係數 a 的正負。",
+   "回憶頂點式 y=a(x+b)^2 的頂點坐標公式為何？",
+   "將圖形與 x 軸交點（頂點）的橫座標與 b 的符號建立關聯。"
+  ],
+  "quick_solution_strategy": "開口向上則 a>0；頂點在 x 軸正半軸 (-b>0) 故 b<0，選 D。"
+ },
+ "skills": {
+  "topic_id": "T-FUN",
+  "knowledge_point_ids": [
+   "K-FUN-01",
+   "K-FUN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2025",
+  "paper": "Paper 2",
+  "qno": "19",
+  "hash": "#2025P2Q19"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "幾何證明與相似形",
+   "secondary_topics": [
+    "菱形性質",
+    "平行線性質",
+    "正方形性質"
+   ],
+   "required_formulas": [
+    "菱形的對角線互相垂直平分",
+    "相似三角形判定定理 (AA)",
+    "平行線內錯角相等"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 120
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "忽略 III 的正確性",
+    "student_thought_process": "學生驗證 I、II 成立後，未仔細檢查 III。可能誤以為 $\\angle ABG$ 與 $\\angle BFD$ 無直接關聯，或計算角度時出錯，導致排除包含 III 的選項。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "忽略 II 的正確性",
+    "student_thought_process": "學生成功證明 I 與 III，但在判斷 $\\triangle BFG$ 與 $\\triangle DEF$ 是否相似時，未能發現對應角相等（如利用平行線性質導出的角度關係），從而錯誤地排除 II。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "忽略 I 的正確性",
+    "student_thought_process": "學生能證明相似與角度和關係，但在處理菱形對角線平分性質時出現疏失，無法推導出 $F$ 為 $DG$ 中點，因此錯誤地排除 I。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "提示一：觀察菱形 $CDEF$ 的性質，特別是對角線 $CF$ 與 $DE$ 的關係，以及 $F$ 點在 $AC$ 延長線上的位置。",
+   "提示二：利用 $AF // BG$ 這一條件，結合平行線的內錯角或同位角性質，推導 $\\triangle BFG$ 與 $\\triangle DEF$ 的角度關係。",
+   "提示三：綜合上述角度關係與邊長比例（由菱形及正方形性質得出），判斷三個陳述是否同時成立。"
+  ],
+  "quick_solution_strategy": "利用菱形對角線平分性質證 I；用平行線導出對應角相等證 II；計算或利用補角關係證 III。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-05"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CHAIN"
+   },
+   "B": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CHAIN"
+   },
+   "C": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

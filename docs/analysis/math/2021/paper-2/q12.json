@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 2",
+  "qno": "12",
+  "hash": "#2021P2Q12"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "變數關係與比例",
+   "secondary_topics": [
+    "正變與反變定義",
+    "冪指數運算規則"
+   ],
+   "required_formulas": [
+    "$w = k_1 x^2 y^{-3}$ (其中 $k_1$ 為常數)",
+    "$\\frac{A}{B} = k \\iff A = kB$"
+   ],
+   "bloom_taxonomy_level": "理解",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "冪指數運算錯誤",
+    "student_thought_process": "學生誤將 $y$ 的負三次方處理成正六次方，或混淆 $w$ 與 $x$ 的關係，導致分母指數加總錯誤。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "分母構造錯誤",
+    "student_thought_process": "學生正確寫出 $w$ 與 $x,y$ 的關係，但忘記將等式兩邊除以 $w$ 來孤立常數項，直接選了原式。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "比例關係理解偏差",
+    "student_thought_process": "學生誤以為「正變」與「反變」的指數可以直接相加而不考慮 $w$ 在分子或分母的位置影響。"
+   }
+  },
+  "scaffolding_hints": [
+   "回想定義：若 $A$ 隨 $B$ 的 $n$ 次方正變，則 $A = k B^n$；若隨 $C$ 的 $m$ 次方反變，則含 $C^{-m}$。",
+   "將題目文字轉化為方程式：令 $w = k x^2 y^{-3}$，其中 $k$ 為常數。",
+   "觀察選項結構，尋找哪個選項等於 $k$（即消除所有變數 $x, y, w$）的表達式。"
+  ],
+  "quick_solution_strategy": "由 $w = k x^2 / y^3$ 移項得 $k = w / (x^2 y^3)$，再檢查選項是否可化為此形式。"
+ },
+ "skills": {
+  "topic_id": "T-VAR",
+  "knowledge_point_ids": [
+   "K-VAR-01",
+   "K-VAR-02"
+  ],
+  "formula_ids": [
+   "F-VAR-01",
+   "F-VAR-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

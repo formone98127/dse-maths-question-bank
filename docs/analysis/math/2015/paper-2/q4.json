@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2015",
+  "paper": "Paper 2",
+  "qno": "4",
+  "hash": "#2015P2Q4"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "近似值與四捨五入",
+   "secondary_topics": [
+    "小數位數",
+    "有效數字"
+   ],
+   "required_formulas": [
+    "四捨五入規則：觀察下一位數字，若大於等於 5 則進位，否則捨去。"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆小數位數與有效數字",
+    "student_thought_process": "學生誤以為題目要求六位小數，直接看第七位 8 進位成 0.002346，但選項 A 是 0.00235，顯示學生可能亂猜或誤讀題意。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆小數位數與有效數字",
+    "student_thought_process": "學生正確識別需六位小數，但第七位 8 應進位成 0.002346，而非捨去成 0.002345。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "有效數字計數錯誤",
+    "student_thought_process": "學生知道要六位有效數字，但從第一個非零開始算：2,3,4,5,6,7。第七位是 8，應進位成 0.0023457，選項 C 卻給 0.002346，顯示計算或計數錯誤。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "先區分「六位小數」與「六位有效數字」的定義差異。",
+   "有效數字從第一個非零數字開始計算，小數位數則從小數點後第一位開始算。",
+   "對原數 $0.0023456789$ 依序標記前六個有效數字，並觀察第七位決定是否進位。"
+  ],
+  "quick_solution_strategy": "先判斷題目要求是小數位數或有效數字，再依四捨五入規則處理。"
+ },
+ "skills": {
+  "topic_id": "T-NUM",
+  "knowledge_point_ids": [
+   "K-NUM-01",
+   "K-NUM-02"
+  ],
+  "formula_ids": [
+   "F-NUM-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

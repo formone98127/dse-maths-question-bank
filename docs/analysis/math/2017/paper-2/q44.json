@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 2",
+  "qno": "44",
+  "hash": "#2017P2Q44"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "標準差與 Z 分數",
+   "secondary_topics": [
+    "平均值",
+    "統計量定義"
+   ],
+   "required_formulas": [
+    "$Z = \\frac{x - \\mu}{\\sigma}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "誤用標準差為 Z 分數",
+    "student_thought_process": "學生可能將 Z 分數 -2 直接當作標準差，或計算時忽略分子絕對值，錯誤地認為 $\\sigma = |Z| = 2$ 並四捨五入或混淆概念選 3。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "忽略分母或誤算差值",
+    "student_thought_process": "學生正確算出 $x - \\mu = -12$，但錯誤地將 $\\sigma$ 計算為 $12 / (-2)$ 的絕對值且未理解公式結構，或誤以為標準差是差值的兩倍。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆 Z 分數與原始分數關係",
+    "student_thought_process": "學生可能將 $Z$ 視為 $x$ 的倍數，錯誤推導出 $\\sigma = (x - \\mu) / Z$ 時忽略符號或誤算為 $(33-45)/(-2)$ 後再平方開根號失敗，直接選最大數值。"
+   }
+  },
+  "scaffolding_hints": [
+   "回想標準分（Z 分數）的定義公式：$Z = \\frac{x - \\mu}{\\sigma}$，其中 $x$ 是得分，$\\mu$ 是平均值，$\\sigma$ 是標準差。",
+   "將題目給出的數值代入公式：$-2 = \\frac{33 - 45}{\\sigma}$，注意分子為負數時如何處理符號。",
+   "解出 $\\sigma$ 後檢查單位與合理性，標準差應為正數且代表分佈的離散程度。"
+  ],
+  "quick_solution_strategy": "利用公式 $Z = \\frac{x - \\mu}{\\sigma}$，代入 $-2 = \\frac{33 - 45}{\\sigma}$，解得 $\\sigma = 6$。"
+ },
+ "skills": {
+  "topic_id": "T-STA",
+  "knowledge_point_ids": [
+   "K-STA-01",
+   "K-STA-02"
+  ],
+  "formula_ids": [
+   "F-STA-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

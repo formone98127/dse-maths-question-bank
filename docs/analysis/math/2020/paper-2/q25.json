@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2020",
+  "paper": "Paper 2",
+  "qno": "25",
+  "hash": "#2020P2Q25"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "直線與圓的幾何性質",
+   "secondary_topics": [
+    "兩直線交點求解",
+    "平面上到定點距離為定值的軌跡定義"
+   ],
+   "required_formulas": [
+    "$Ax + By + C = 0$",
+    "$d(P, L) = \\frac{|Ax_0 + By_0 + C|}{\\sqrt{A^2 + B^2}}$"
+   ],
+   "bloom_taxonomy_level": "理解",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤以為軌跡是線段或封閉多邊形",
+    "student_thought_process": "學生可能混淆了兩直線交點與動點的關係，錯誤地認為 P 只能在有限區域移動，將圓的一部分誤解為三角形。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "過度複雜化幾何形狀",
+    "student_thought_process": "學生可能試圖用直線切割圓的思維，錯誤地推導出四邊形，忽略了「距離為定值」在平面上的定義是完整的圓。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "無根據的圖形假設",
+    "student_thought_process": "學生可能將此題與正多邊形相關題目混淆，或錯誤地認為兩條直線對稱性會產生正六邊形，完全脫離距離定義。"
+   }
+  },
+  "scaffolding_hints": [
+   "回想平面幾何中，滿足「到某一定點距離等於定長」的所有點的集合被稱為什麼圖形？",
+   "先求出兩直線 $9x + 4y - 7 = 0$ 與 $9x - 4y + 7 = 0$ 的唯一交點 $A$ 的座標。",
+   "根據題目條件，動點 $P$ 到定點 $A$ 的距離恆為 $8$，這直接對應了哪種基本圖形的定義？"
+  ],
+  "quick_solution_strategy": "求兩直線交點 A，由 PA=8 知 P 軌跡為以 A 為圓心、8 為半徑之圓。"
+ },
+ "skills": {
+  "topic_id": "T-LIN",
+  "knowledge_point_ids": [
+   "K-LIN-01",
+   "K-LIN-02"
+  ],
+  "formula_ids": [
+   "F-LIN-01",
+   "F-LIN-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

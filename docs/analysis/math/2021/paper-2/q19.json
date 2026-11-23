@@ -1,0 +1,86 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 2",
+  "qno": "19",
+  "hash": "#2021P2Q19"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "幾何相似與全等",
+   "secondary_topics": [
+    "長方形性質",
+    "垂直線段關係"
+   ],
+   "required_formulas": [
+    "相似三角形判定 (AA)",
+    "全等三角形判定 (SAS, ASA, AAS)"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 120
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略 III 之正確性",
+    "student_thought_process": "學生證明了 I 與 II 成立，但在判斷 III 時，錯誤地認為 CF=AD 不足以構成全等條件，或誤以為 F 點位置不對，導致漏選 III。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略 II 之正確性",
+    "student_thought_process": "學生證明了 I 與 III 成立，但在判斷 II 時，未能從平行線性質 (AB // CD) 推導出對應角相等，從而否定相似關係。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略 I 之正確性",
+    "student_thought_process": "學生證明了 II 與 III 成立，但在判斷 I 時，無法連結 $\\triangle ADE$ 與 $\\triangle GDF$ 的角度關係，或誤以為 $E, F$ 不對稱導致角度不等。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：觀察長方形 $ABCD$ 中，$AB$ 平行於 $CD$，這會產生哪些內錯角相等？",
+   "提示 2：利用 $BE \\perp AC$ 與 $CF=AD$ 的條件，試著證明 $\\triangle BCE$ 與 $\\triangle FCE$ 是否滿足全等條件 (SAS)。",
+   "提示 3：若 III 成立，則 $F$ 與 $B$ 關於 $AC$ 對稱；利用此對稱性檢查 I 與 II 的角度關係。"
+  ],
+  "quick_solution_strategy": "先證 III 全等 ($SAS$)，再利用對稱性證 I (角度相等) 與 II (相似)"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-05"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

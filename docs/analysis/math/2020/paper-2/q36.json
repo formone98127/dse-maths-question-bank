@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2020",
+  "paper": "Paper 2",
+  "qno": "36",
+  "hash": "#2020P2Q36"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "線性規劃",
+   "secondary_topics": [
+    "二元一次不等式組",
+    "直線方程式",
+    "點線距離"
+   ],
+   "required_formulas": [
+    "$Ax + By + C = 0$",
+    "$z = mx + ny + k$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "忽略可行域邊界條件",
+    "student_thought_process": "學生可能只考慮 $x+y+1=0$ 與 $y$ 軸交點，或錯誤計算斜率比率，導致算出較小的 $k$ 值。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆最大值與最小值位置",
+    "student_thought_process": "學生誤以為目標函數在可行域另一頂點（如 $x=2$ 處）取得最小值，而非斜率最陡的邊界。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "代入錯誤頂點坐標",
+    "student_thought_process": "學生正確畫出可行域，但將最小值點誤判為 $(-1, 0)$ 或其他非最遠頂點，導致 $k$ 值偏大。"
+   }
+  },
+  "scaffolding_hints": [
+   "線性規劃問題中，目標函數的最值一定出現在可行域的頂點上。",
+   "請先畫出由三個不等式圍成的可行域 $D$，並標出其所有頂點坐標。",
+   "觀察目標函數 $4x+3y+k=24$ 的斜率與邊界直線的斜率關係，判斷最小值出現在哪個頂點。"
+  ],
+  "quick_solution_strategy": "畫出可行域找出三個頂點，代入 $4x+3y=k-24$ 比較何者使 $k$ 最大（因係數為負時最小值對應最大 $k$）。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

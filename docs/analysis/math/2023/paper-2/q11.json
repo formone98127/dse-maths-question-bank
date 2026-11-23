@@ -1,0 +1,91 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2023",
+  "paper": "Paper 2",
+  "qno": "11",
+  "hash": "#2023P2Q11"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "利潤與折扣計算",
+   "secondary_topics": [
+    "百分數應用",
+    "一元一次方程式"
+   ],
+   "required_formulas": [
+    "標價 = 成本 \\times (1 +  Markup)",
+    "售價 = 標價 \\times 折扣率",
+    "利潤 = 售價 - 成本"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "忽略折扣率計算",
+    "student_thought_process": "學生可能直接將成本乘以 (1+0.6) 再減去利潤，忘記標價需先打七五折，導致算出較低的數值。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤解利潤定義",
+    "student_thought_process": "學生可能將標價視為售價，直接計算成本 = 標價 - 利潤，完全忽略折扣與成本的關係。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "方程式設定錯誤",
+    "student_thought_process": "學生可能將利潤設為標價的某個比例，而非售價與成本的差值，導致算出過高的成本。"
+   }
+  },
+  "scaffolding_hints": [
+   "先定義變數：設成本為 $x$，請寫出標價與售價（含折扣）的表達式。",
+   "回憶利潤公式：利潤等於售價減去成本，將上述表達式代入此等式。",
+   "解一元一次方程式求出 $x$ 的值，並檢查是否符合題目條件。"
+  ],
+  "quick_solution_strategy": "設成本為 $C$，標價為 $1.6C$，售價為 $0.75 \\times 1.6C = 1.2C$，利潤 $1.2C - C = 0.2C = 104$"
+ },
+ "skills": {
+  "topic_id": "T-PCT",
+  "knowledge_point_ids": [
+   "K-PCT-01",
+   "K-PCT-02"
+  ],
+  "formula_ids": [
+   "F-PCT-01",
+   "F-PCT-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

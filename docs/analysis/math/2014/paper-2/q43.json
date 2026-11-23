@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 2",
+  "qno": "43",
+  "hash": "#2014P2Q43"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "組合數學 (Combination)",
+   "secondary_topics": [
+    "排列與組合的基本公式",
+    "獨立事件的乘法原理"
+   ],
+   "required_formulas": [
+    "$\\binom{n}{r} = \\frac{n!}{r!(n-r)!}$",
+    "$N_{total} = N_{boys} \\times N_{girls}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "計算錯誤 (階乘或除法)",
+    "student_thought_process": "學生正確列出公式 $\\binom{13}{2} \\times \\binom{17}{3}$，但在計算 $\\binom{13}{2}=78$ 與 $\\binom{17}{3}=680$ 後，相乘時算錯（如 $78 \\times 680 = 53040$ 卻誤算為 38896），可能是筆誤或乘法口訣不熟。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆排列與組合",
+    "student_thought_process": "學生可能誤以為順序重要，試著用排列 $P(13,2) \\times P(17,3)$ 計算，或者在計算 $\\binom{17}{3}$ 時忘記除以 $(17-3)!$，導致數值過大或錯誤。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "讀題錯誤 (數字抄錯)",
+    "student_thought_process": "學生在計算 $\\binom{13}{2}$ 時，可能將男生人數 13 看錯或抄錯成其他數字（例如 14 或 15），導致最終結果變成 636,480。"
+   }
+  },
+  "scaffolding_hints": [
+   "回想一下：如果選出的隊員順序不重要（例如 A、B 兩男生換位置算同一隊），我們應該使用什麼數學概念？",
+   "組合公式 $\\binom{n}{r}$ 的意義是從 $n$ 個元素中取出 $r$ 個元素的辦法數，請分別計算選男生的方法與選女生的方法。",
+   "根據乘法原理，將「選男生的方法數」乘以「選女生的方法數」，即可得到總隊數。請仔細檢查你的階乘運算。"
+  ],
+  "quick_solution_strategy": "計算 $\\binom{13}{2}$ 與 $\\binom{17}{3}$ 後相乘。"
+ },
+ "skills": {
+  "topic_id": "T-COM",
+  "knowledge_point_ids": [
+   "K-COM-02",
+   "K-COM-03"
+  ],
+  "formula_ids": [
+   "F-COM-01",
+   "F-COM-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-COM-02",
+    "formula_id": "F-COM-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-COM-02",
+    "formula_id": "F-COM-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-COM-02",
+    "formula_id": "F-COM-01",
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

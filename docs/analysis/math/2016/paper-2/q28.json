@@ -1,0 +1,91 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2016",
+  "paper": "Paper 2",
+  "qno": "28",
+  "hash": "#2016P2Q28"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "組合與概率",
+   "secondary_topics": [
+    "排列組合基礎 (nCr)",
+    "互斥事件加法原理",
+    "補集法則"
+   ],
+   "required_formulas": [
+    "$\\binom{n}{r} = \\frac{n!}{r!(n-r)!}$",
+    "$P(E) = \\frac{N(E)}{N(S)}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "忽略互斥事件加總",
+    "student_thought_process": "學生可能只計算了其中一種符合條件的情況（例如包含$10 的組合），卻忘記將其他互斥情況相加，導致分母雖對但分子過小。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "計算錯誤或約分失敗",
+    "student_thought_process": "學生正確列出了所有符合條件的組合數，但在將分子除以總樣本空間時算錯數字，或是將$\\frac{6}{8}$錯誤約分為$\\frac{3}{4}$以外的結果（此處更可能是漏算導致分母相同但分子不同）。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "誤讀題目條件",
+    "student_thought_process": "學生可能將「至少$13」誤解為「恰好$13」，或者完全忽略硬幣數量的限制，錯誤地假設所有硬幣都被取出。"
+   }
+  },
+  "scaffolding_hints": [
+   "首先列出潔儀口袋中所有的硬幣面值及其總數，並計算隨機取出三個硬幣的所有可能組合（樣本空間大小）。",
+   "定義「至少$13」的條件，接著嘗試用「補集法則」（即 1 - P(少於$13)）來解決問題，這通常比直接加總所有符合情況更簡單。",
+   "計算出「總額少於$13」的所有組合後，將其數量除以樣本空間大小得到補事件的機率，最後用 1 減去該值即可得出答案。"
+  ],
+  "quick_solution_strategy": "使用補集法：計算總組合數 $\\binom{4}{3}=4$，找出總和少於$13 的組合（僅有不含$10 的情況），再用 1 減去其機率。"
+ },
+ "skills": {
+  "topic_id": "T-PROB",
+  "knowledge_point_ids": [
+   "K-PROB-01",
+   "K-PROB-02"
+  ],
+  "formula_ids": [
+   "F-PROB-01",
+   "F-PROB-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CHAIN"
+   },
+   "B": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

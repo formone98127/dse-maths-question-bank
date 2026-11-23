@@ -1,0 +1,92 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 2",
+  "qno": "38",
+  "hash": "#2024P2Q38"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓的幾何性質 (切線、弦切角、圓內接四邊形)",
+   "secondary_topics": [
+    "等腰三角形",
+    "三角形外角定理",
+    "平行線判定"
+   ],
+   "required_formulas": [
+    "$\\text{弦切角} = \\frac{1}{2}\\text{夾弧所對圓周角}$",
+    "$\\triangle ABC$ 中 $AB=AC \\implies \\angle ABC = \\angle ACB$",
+    "$\\angle CBE + \\angle ACD = 180^\\circ$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "角度加減錯誤",
+    "student_thought_process": "算出 $\\angle ACD=78^\\circ$ 後，誤以為目標角即為此值，或計算 $180-78$ 時算錯成 $64$。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆圓內接四邊形性質",
+    "student_thought_process": "誤認為 $\\angle CBE$ 與 $\\angle ACD$ 互餘或相等，未應用對角互補性質。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "忽略弦切角定義",
+    "student_thought_process": "直接使用 $\\angle D A T=55^\\circ$ 作為弦切角，未考慮 $T A$ 是切線且夾弧應為 $A D$。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察圖形，利用圓的半徑相等性質找出等腰三角形 $\\triangle ABC$ 的底角關係。",
+   "回憶弦切角定理：切線與弦夾角等於該弦所對弧之圆周角（即 $\\angle ACD$）。",
+   "考慮四邊形 $ACDE$ 為圓內接四邊形，其對角互補性質如何幫助求 $\\angle CBE$？"
+  ],
+  "quick_solution_strategy": "先由等腰三角形求 $\\angle ABC$，再用弦切角定理求 $\\angle ACD$，最後利用圓內接四邊形對角互補求 $\\angle CBE$。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-01",
+   "K-GEO-02"
+  ],
+  "formula_ids": [
+   "F-GEO-01",
+   "F-GEO-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

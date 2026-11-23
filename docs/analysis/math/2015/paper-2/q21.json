@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2015",
+  "paper": "Paper 2",
+  "qno": "21",
+  "hash": "#2015P2Q21"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓的性質與三角形面積",
+   "secondary_topics": [
+    "直徑與弦的關係",
+    "直角三角形特性"
+   ],
+   "required_formulas": [
+    "\\text{三角形面積} = \\frac{1}{2} \\times \\text{底} \\times \\text{高}",
+    "\\text{半徑} = \\frac{\\text{直徑}}{2}"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "誤用半徑為底",
+    "student_thought_process": "學生可能將直徑 $AC=24$ 當作三角形的一邊，並錯誤地假設高為半徑 $12$，計算出 $\\frac{1}{2} \\times 24 \\times 3.5 \\approx 42$ (四捨五入誤差) 或直接混淆數值。更可能是將底視為半徑 $12$ 與高 $6$ 的乘積再錯算，或是單純計算錯誤導致接近 41。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "忘記除以 2",
+    "student_thought_process": "學生正確找出底為半徑 $12$ 與高為半徑 $12$，但在計算面積公式時，忘記乘以 $\\frac{1}{2}$，直接算出 $12 \\times 12 = 144$"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "完全遺漏係數",
+    "student_thought_process": "學生將面積誤算為直徑與半徑的乘積，或是將底高都當作直徑 $24$ 來計算 ($24 \\times 12 = 288$)，忽略了三角形是圓內接直角三角形且 $E$ 為圓心的特性。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察題目中的直徑 $AC$ 與 $BD$ 相交於點 $E$，這暗示了哪幾何圖形的中心？",
+   "既然 $AC$ 是直徑且長度為 $24\\text{ cm}$，那麼從圓心 $E$ 到頂點的距離（半徑）是多少？",
+   "考慮到 $\\angle AEB=90^\\circ$，三角形 $AEB$ 的底和高與圓的半徑有何關係？試著代入面積公式。"
+  ],
+  "quick_solution_strategy": "直徑為底時高為半徑；但此處 $E$ 為圓心，故底 $AE=12$、高 $BE=12$，面積=$\\frac{1}{2}\\times 12 \\times 12$"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-01",
+   "K-GEO-02"
+  ],
+  "formula_ids": [
+   "F-GEO-01",
+   "F-GEO-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

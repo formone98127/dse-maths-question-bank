@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2020",
+  "paper": "Paper 2",
+  "qno": "42",
+  "hash": "#2020P2Q42"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "排列組合 (不相鄰問題)",
+   "secondary_topics": [
+    "插空法",
+    "階乘運算"
+   ],
+   "required_formulas": [
+    "$P(n, r) = \\frac{n!}{(n-r)!}$",
+    "$n!$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "階乘計算錯誤",
+    "student_thought_process": "正確算出 $7! \times 6! = 3628800$，但可能誤算 $6! \times 5!$ 或乘法進位錯誤，導致數值偏大。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略女生排列",
+    "student_thought_process": "只考慮了男生不相鄰的插空位置，忘記將 5 名女生的 $5!$ 種排列方式乘進去。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "邏輯順序混亂",
+    "student_thought_process": "嘗試用總排列減去男生相鄰情況，但計算「至少一對男生相鄰」的容斥原理過於複雜且易錯。"
+   }
+  },
+  "scaffolding_hints": [
+   "要讓男生不相鄰，我們應該先排誰？",
+   "女生排好後會產生多少個可以插入男生的「空隙」（包含兩端）？",
+   "將男生視為不同個體插入這些空隙中，如何計算總排列數？"
+  ],
+  "quick_solution_strategy": "先排 5 女 ($5!$)，產 6 空插 6 男 ($P(6,6)$)，相乘即得。"
+ },
+ "skills": {
+  "topic_id": "T-COM",
+  "knowledge_point_ids": [
+   "K-COM-02",
+   "K-COM-03"
+  ],
+  "formula_ids": [
+   "F-COM-01",
+   "F-COM-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-COM-02",
+    "formula_id": "F-COM-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-COM-02",
+    "formula_id": "F-COM-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-COM-02",
+    "formula_id": "F-COM-01",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

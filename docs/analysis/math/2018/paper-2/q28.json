@@ -1,0 +1,91 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2018",
+  "paper": "Paper 2",
+  "qno": "28",
+  "hash": "#2018P2Q28"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "組合概率與加法原理",
+   "secondary_topics": [
+    "樣本空間計算",
+    "有利結果計數",
+    "重複元素的處理"
+   ],
+   "required_formulas": [
+    "$\\binom{n}{k}$ (組合公式)",
+    "$P(E) = \\frac{N(E)}{S}$ (概率定義)"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "分母錯誤",
+    "student_thought_process": "學生誤算總樣本數為 $7\\times 6 = 42$ (排列) 而非組合，導致分母變為 42。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "忽略重複元素",
+    "student_thought_process": "學生將三個 '1' 視為一個，兩個 '2' 視為一個，錯誤計算總樣本數為 $4\\times 3 = 12$ 或類似的誤讀。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "有利結果加倍",
+    "student_thought_process": "學生正確算出總樣本數為 21，但在計算有利結果時，將 (1,4) 的組合重複計算了兩次。"
+   }
+  },
+  "scaffolding_hints": [
+   "第一步：確認紙卡總數為 7 張，且每張是獨立的實體（即使數字相同）。",
+   "第二步：列出所有可能的數字對 $(x, y)$，使得 $x+y=5$，並注意 '1' 有三張、'2' 有兩張。",
+   "第三步：計算有利結果的數量時，需根據紙卡數量進行乘法分配（例如選一張 1 和一張 4 的方法數）。"
+  ],
+  "quick_solution_strategy": "總樣本 $\\binom{7}{2}=21$；有利結果為 $(1,4)$ 與 $(2,3)$，分別有 $3\\times1=3$ 及 $2\\times1=2$ 種，共 5 種。"
+ },
+ "skills": {
+  "topic_id": "T-PROB",
+  "knowledge_point_ids": [
+   "K-PROB-01",
+   "K-PROB-02"
+  ],
+  "formula_ids": [
+   "F-PROB-01",
+   "F-PROB-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-COND"
+   },
+   "D": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

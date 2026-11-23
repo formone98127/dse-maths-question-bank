@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 2",
+  "qno": "21",
+  "hash": "#2024P2Q21"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "幾何證明 (菱形，長方形，平行線性質)",
+   "secondary_topics": [
+    "全等三角形判定",
+    "角度關係",
+    "相似形概念"
+   ],
+   "required_formulas": [
+    "菱形對角線互相垂直平分",
+    "平行線內錯角相等",
+    "全等三角形 S.A.S 或 A.A.S 條件"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 120
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤判 III 為假",
+    "student_thought_process": "學生可能忽略 BH//EF 導致的角度對應關係，或錯誤認為三角形 ADE 與 HCF 大小不等，未發現全等條件。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤判 I 為假",
+    "student_thought_process": "學生可能未注意到 EF 與 CD 相交形成的等腰三角形性質，或錯誤計算 CI 與 FI 的長度關係。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤判 I 為假且 III 為真",
+    "student_thought_process": "學生通常會確認 II 與 III 正確，但對 I 產生懷疑，這是因為 I 點位置需透過平行線截距定理或相似比推導，非直觀。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察菱形性質：AB=BC=CD=DA 且對角線互相垂直平分。",
+   "利用 BH//EF 分析角度關係，並證明三角形 ADE 全等於 HCF。",
+   "檢查三角形 CIF 的邊長關係，確認是否為等腰三角形以驗證 I"
+  ],
+  "quick_solution_strategy": "先證 II(平行線同位角)，再證 III(SAS/AAS)，最後由平行線性質推導 I"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-05"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

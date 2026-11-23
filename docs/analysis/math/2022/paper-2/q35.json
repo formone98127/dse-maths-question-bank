@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 2",
+  "qno": "35",
+  "hash": "#2022P2Q35"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "複數與虛數單位冪次",
+   "secondary_topics": [
+    "純虛數的定義",
+    "實部與虛部的區分"
+   ],
+   "required_formulas": [
+    "$i^1 = i, i^2 = -1, i^3 = -i, i^4 = 1$",
+    "$i^n$ 的週期性規律 (每 4 個循環)"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "冪次計算錯誤",
+    "student_thought_process": "算錯 $i^{10}$ 或 $i^{21}$ 的符號，導致實部與虛部不等式解出錯誤值。例如將 $i^{10}=-1$ 誤算成正數，或忽略 $k$ 的係數。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "實虛部混淆",
+    "student_thought_process": "未能正確將複數寫成 $a+bi$ 形式，直接將所有項加總當作實部，忽略了 $i$ 的係數才是虛部。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "忽略負號或題目條件",
+    "student_thought_process": "在計算 $i^{15}$ 時，可能將 $-ki^{15}$ 中的負號遺漏，或者解方程時移項錯誤，導致最終結果偏大。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：請先回憶虛數單位 $i$ 的冪次週期性規律 ($i^1, i^2, i^3, i^4$)，並計算出題目中所有 $i$ 的高次冪 ($i^{10}, i^{15}, i^{21}, i^{28}$) 具體等於多少。",
+   "提示 2：將原式 $z$ 整理成標準形式 $A + Bi$，其中 $A$ 為實部，$B$ 為虛部係數（注意 $k$ 是實數）。",
+   "提示 3：根據題目條件「實部等於虛部」建立方程式 $A = B$，解出 $k$ 的值後，代回計算實部的數值即可。"
+  ],
+  "quick_solution_strategy": "化簡 $i$ 的冪次 -> 寫成 $a+bi$ 形式 -> 令實部=虛部求 $k$ -> 代入求實部。"
+ },
+ "skills": {
+  "topic_id": "T-NUM",
+  "knowledge_point_ids": [
+   "K-NUM-01",
+   "K-NUM-02"
+  ],
+  "formula_ids": [
+   "F-NUM-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

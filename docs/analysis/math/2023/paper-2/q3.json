@@ -1,0 +1,86 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2023",
+  "paper": "Paper 2",
+  "qno": "3",
+  "hash": "#2023P2Q3"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "指數法則與底數分解",
+   "secondary_topics": [
+    "質數分解 (4=2^2, 3)",
+    "冪的乘法法則 a^x * a^y = a^(x+y)"
+   ],
+   "required_formulas": [
+    "$a^m \\cdot b^n$ 無法直接合併為 $(ab)^k$ 除非 $m=n$",
+    "$4^{n+2} = (2^2)^{n+2}$"
+   ],
+   "bloom_taxonomy_level": "理解",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "指數係數錯誤相加",
+    "student_thought_process": "學生誤以為底數合併後，指數應將原指數與底數變化量直接加總為 4n+8，混淆了 $2(n+2)$ 的運算。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "忽略指數不等於合併底數",
+    "student_thought_process": "學生正確識別 $4 \\times 3 = 12$，但錯誤地認為 $4^{n+2}3^{2n+4}$ 可直接化為 $12^{2n+4}$，未檢查兩項指數是否相等。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "底數與指數關係混淆",
+    "student_thought_process": "學生試圖將 $4$ 視為 $2^2$ 後錯誤處理，或誤以為 $3^{2n+4}$ 的指數 $2n+4$ 應乘以某個係數變成 $3n+6$。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察左邊式子由 $2$ 的冪與 $3$ 的冪相乘組成，試著將 $4^{n+2}$ 轉換為以 $2$ 為底的冪。",
+   "回憶指數法則：只有當兩個不同底數的指數完全相同時，才能合併底數（例如 $x^k y^k = (xy)^k$）。",
+   "計算左邊兩項各自的指數是否相等？若不相等，則無法直接寫成單一底數的冪，需重新檢視選項結構。"
+  ],
+  "quick_solution_strategy": "將 $4^{n+2}$ 化為 $(2^2)^{n+2}=2^{2n+4}$，發現指數與 $3$ 項相同，故合併為 $12^{2n+4}$？不，題目選項 A 是 $6...$。重新檢查：$4^{n+2} = (2^2)^{n+2} = 2^{2n+4}$。原式=$2^{2n+4} \\cdot 3^{2n+4} = (2\\cdot 3)^{2n+4} = 6^{2n+4}$。故选 A。"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

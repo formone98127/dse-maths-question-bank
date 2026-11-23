@@ -1,0 +1,91 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 2",
+  "qno": "40",
+  "hash": "#2022P2Q40"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "立體幾何，二面角",
+   "secondary_topics": [
+    "向量法求夾角",
+    "正四面體性質"
+   ],
+   "required_formulas": [
+    "$\\cos \\theta = \\frac{\\vec{n_1} \\cdot \\vec{n_2}}{|\\vec{n_1}| |\\vec{n_2}|}$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "二面角大小判斷錯誤",
+    "student_thought_process": "誤以為兩個平面夾角都小於 60 度，未正確計算出\\alpha 大於 60 度。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "向量點積計算錯誤",
+    "student_thought_process": "在計算\\cos \\alpha 時，分母或分子算錯，導致得出\\alpha > 60^\\circ 的結論。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "平面選擇錯誤",
+    "student_thought_process": "混淆了\\triangle AFG 與\\triangle AFH 的法向量方向，導致\\alpha 與\\beta 大小關係顛倒。"
+   }
+  },
+  "scaffolding_hints": [
+   "建立空間直角坐標系，令邊長為 1，寫出相關頂點座標。",
+   "分別求出平面 AFG、AFH 及 FGH 的法向量。",
+   "利用餘弦公式計算\\alpha 與\\beta 的餘弦值，比較其大小關係。"
+  ],
+  "quick_solution_strategy": "建系求法向量，算 cos 值比大小。"
+ },
+ "skills": {
+  "topic_id": "T-MEN",
+  "knowledge_point_ids": [
+   "K-MEN-01",
+   "K-MEN-02"
+  ],
+  "formula_ids": [
+   "F-MEN-01",
+   "F-MEN-02",
+   "F-MEN-03",
+   "F-MEN-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

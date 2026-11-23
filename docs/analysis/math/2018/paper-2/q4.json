@@ -1,0 +1,86 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2018",
+  "paper": "Paper 2",
+  "qno": "4",
+  "hash": "#2018P2Q4"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "分式運算與因式分解",
+   "secondary_topics": [
+    "平方差公式",
+    "公分母概念"
+   ],
+   "required_formulas": [
+    "$\\frac{a}{b} - \\frac{c}{d} = \\frac{ad-bc}{bd}$",
+    "$(A+B)(A-B) = A^2 - B^2$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "符號順序錯誤",
+    "student_thought_process": "學生算出正確分子 $14$ 與分母 $9x^2-49$，但忘記將分母寫成 $49-9x^2$ 的形式，導致符號順序顛倒。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "分子計算錯誤",
+    "student_thought_process": "學生在計算交叉相乘時出錯，將 $1 \\cdot (-7) - 1 \\cdot 7$ 算成 $6x$ 而非 $-14$，混淆了常數與變數。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "分子分母雙重錯誤",
+    "student_thought_process": "學生同時犯了分子計算錯誤（得出 $6x$）與分母符號順序錯誤（得出 $9x^2-49$），完全未正確執行通分。"
+   }
+  },
+  "scaffolding_hints": [
+   "先觀察兩個分式的公分母，思考如何將它們合併成一個單一分式。",
+   "回憶平方差公式 $(a+b)(a-b) = a^2 - b^2$ 在處理分母時的應用。",
+   "計算分子時請小心符號：$(3x-7)$ 與 $(3x+7)$ 相乘後，再減去交叉項 $1 \\cdot (-7)$ 與 $1 \\cdot 7$"
+  ],
+  "quick_solution_strategy": "通分合併分子為 $-14$，分母利用平方差公式化為 $49-9x^2$"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-03"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-COND"
+   },
+   "C": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

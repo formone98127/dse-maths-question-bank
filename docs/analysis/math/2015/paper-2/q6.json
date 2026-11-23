@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2015",
+  "paper": "Paper 2",
+  "qno": "6",
+  "hash": "#2015P2Q6"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "一元一次不等式與邏輯或",
+   "secondary_topics": [
+    "不等式的運算規則",
+    "集合的聯集概念"
+   ],
+   "required_formulas": [
+    "$ax + b > c \\Rightarrow x > (c-b)/a$ (當 $a>0$)",
+    "$A \\lor B = A \\cup B$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "解第一式時移項錯誤",
+    "student_thought_process": "解 $18+7x>4$ 得 $7x>-14 \\Rightarrow x>-2$。解第二式 $5-2x<3$ 得 $-2x<-2 \\Rightarrow x>1$。學生將兩解取交集而非並集，且可能誤算第一式為 $x>-1$"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆或與且的邏輯",
+    "student_thought_process": "學生認為題目是「且」的關係，因此取兩個解集的交集 $x>1$。忽略了題目中關鍵的「或」字樣。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "錯誤處理不等號方向",
+    "student_thought_process": "解第二式時，除以負數 $-2$ 忘記改變不等號方向，得出 $x>1$。再將第一式解錯或誤讀，導致範圍變成 $-2<x<1$"
+   }
+  },
+  "scaffolding_hints": [
+   "請先分別求解兩個獨立的不等式，並寫出各自的解集。",
+   "注意題目中的連接詞是「或」(OR)，這代表我們需要尋找滿足其中任一條件的 $x$ 值範圍。",
+   "在數軸上畫出這兩個解集，觀察它們合併後的形狀，即可找到正確選項。"
+  ],
+  "quick_solution_strategy": "分別解兩不等式得 $x>-2$ 與 $x>1$；因是「或」關係，取並集即為 $x>-2$"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-05"
+  ],
+  "formula_ids": [
+   "F-EQN-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

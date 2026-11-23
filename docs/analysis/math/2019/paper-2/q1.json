@@ -1,0 +1,86 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2019",
+  "paper": "Paper 2",
+  "qno": "1",
+  "hash": "#2019P2Q1"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "多項式乘法與立方差公式",
+   "secondary_topics": [
+    "指數法則",
+    "二項式展開"
+   ],
+   "required_formulas": [
+    "$(x-y)(x^2+xy+y^2)=x^3-y^3$ (立方差公式)",
+    "$(a-b)^3=a^3-3a^2b+3ab^2-b^3$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆立方差與完全立方公式",
+    "student_thought_process": "學生誤記公式，以為 $(a-b)$ 乘以某個式子會變成 $(a-b)^3$，忽略了中間項的係數變化。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "記憶錯誤公式形式",
+    "student_thought_process": "學生死記立方差公式為 $(a-b)(a^2+ab+b^2)=a^3-b^3$，未注意到題目第二項是 $-b^2$ 而非 $+b^2$。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "展開時符號處理錯誤",
+    "student_thought_process": "學生在展開 $(a-b)(a^2+ab-b^2)$ 時，計算 $-b \\times -b^2$ 或交叉項合併時出錯，導致多餘的 $a^2b$ 項。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察題目第二括號內的第三項是 $-b^2$ 還是 $+b^2$？這決定了是否適用標準立方差公式。",
+   "若直接展開，請小心處理 $(a-b)$ 中的負號與後方各項的乘積，特別是 $(-b) \\times (-b^2)$ 的結果。",
+   "將展開後的結果與選項 C 進行項數與係數比對，確認是否多餘或缺失特定次數的項。"
+  ],
+  "quick_solution_strategy": "直接展開左式：$a(a^2+ab-b^2)-b(a^2+ab-b^2)$，合併同類項即可得答案。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-03"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

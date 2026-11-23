@@ -1,0 +1,92 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 2",
+  "qno": "20",
+  "hash": "#2024P2Q20"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "正多邊形性質",
+   "secondary_topics": [
+    "內角和公式",
+    "對稱性 (旋轉與反射)"
+   ],
+   "required_formulas": [
+    "(n-2) \\times 180^\\circ = \\text{內角和}",
+    "\\frac{n(n-3)}{2} = \\text{對角線數目}",
+    "\\text{正 } n \\text{ 邊形旋轉對稱次數} = n",
+    "\\text{正 } n \\text{ 邊形反射對稱軸數} = n"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤解旋轉對稱定義",
+    "student_thought_process": "算出 n=7，認為正七邊形只有 1 個旋轉對稱 (360 度)，忽略中間狀態的旋轉對稱性。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤解反射對稱定義",
+    "student_thought_process": "算出 n=7，認為正七邊形沒有反射對稱軸 (奇數邊形？)，或混淆對角線與對稱軸概念。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "計算對角線錯誤",
+    "student_thought_process": "算出 n=7，正確知道旋轉與反射次數為 7，但誤以為對角線數目也是 7 (實際是 14)，導致排除 II。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "首先利用內角和公式 $(n-2) \\times 180^\\circ = 900^\\circ$ 解出該正多邊形的邊數 $n$。",
+   "回想正 $n$ 邊形的定義：它具有 $n$ 條反射對稱軸，以及 $n$ 個旋轉對稱位置 (包含恆等)。",
+   "計算當 $n=7$ 時，對角線數目為 $\\frac{7(7-3)}{2}$，並比較各敘述是否成立。"
+  ],
+  "quick_solution_strategy": "解出 n=7，正七邊形有 7 條反射軸、7 個旋轉位置，但對角線數為 14，故選 II 及 III。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-01",
+   "K-GEO-02"
+  ],
+  "formula_ids": [
+   "F-GEO-01",
+   "F-GEO-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

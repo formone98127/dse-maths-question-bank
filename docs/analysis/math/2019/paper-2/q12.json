@@ -1,0 +1,91 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2019",
+  "paper": "Paper 2",
+  "qno": "12",
+  "hash": "#2019P2Q12"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "混合問題與加權平均",
+   "secondary_topics": [
+    "一元一次方程式",
+    "比例概念"
+   ],
+   "required_formulas": [
+    "\\frac{x \\cdot C_A + y \\cdot C_B}{x+y} = C_{mix}"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "反向比例誤解",
+    "student_thought_process": "學生可能認為成本越低需要越多，但混淆了差值大小與份數關係，直接將成本差值比當作答案。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "差值計算錯誤",
+    "student_thought_process": "學生正確列出方程式，但在計算 \\( 315-210 \\) 或 \\( 210-140 \\) 時算錯數值。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "比例顛倒",
+    "student_thought_process": "學生算出正確比例但忘記題目問的是 \\( x:y \\) 而非 \\( y:x \\)，導致答案顛倒。"
+   }
+  },
+  "scaffolding_hints": [
+   "思考：混合後的價格介於兩者之間，哪種茶葉較便宜？",
+   "提示：利用「十字交叉法」或方程式 \\( 140x + 315y = 210(x+y) \\) 來建立關係。",
+   "引導：計算出兩種茶葉與混合價的差值，並觀察這些差值與所需份數的比例關係。"
+  ],
+  "quick_solution_strategy": "利用十字交叉法：\\( (315-210):(210-140) = x:y \\)，化簡即得答案。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-01",
+   "K-POL-02"
+  ],
+  "formula_ids": [
+   "F-POL-01",
+   "F-POL-02",
+   "F-POL-03",
+   "F-POL-06"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

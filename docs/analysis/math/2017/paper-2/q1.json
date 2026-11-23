@@ -1,0 +1,86 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 2",
+  "qno": "1",
+  "hash": "#2017P2Q1"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "因式分解",
+   "secondary_topics": [
+    "二元二次齊次式",
+    "十字相乘法",
+    "展開驗證"
+   ],
+   "required_formulas": [
+    "(a+b)(c+d+e) = ac + ad + ae + bc + bd + be"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "符號錯誤",
+    "student_thought_process": "分解二次項得 $(m-n)(3m-2n)$，但展開時將 $-2n \\times m$ 誤算為 $+2mn$"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "一次項符號混淆",
+    "student_thought_process": "正確分解出 $(m-n)$ 與 $(3m-2n)$，但在處理 $+m-n$ 時，誤將 $-n$ 對應到括號內變成 $-1$"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "一次項符號混淆",
+    "student_thought_process": "正確分解出 $(m-n)$ 與 $(3m-2n)$，但在處理 $+m-n$ 時，誤將 $-n$ 對應到括號內變成 $-1$"
+   }
+  },
+  "scaffolding_hints": [
+   "先專注於二次項 $3m^2 - 5mn + 2n^2$，嘗試用十字相乘法將其分解為兩個一次因式的乘積。",
+   "觀察原式中的線性項 $+m-n$，思考如何將它們分配到已分解出的兩個括號中，使得展開後符號吻合。",
+   "選定一個選項進行快速展開驗證：計算 $(m-n)(3m-2n+1)$ 是否等於原式左邊。"
+  ],
+  "quick_solution_strategy": "先分解二次項得 $(m-n)(3m-2n)$，再調整一次項分配，最後展開 A 選項驗證符號全對。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-03"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

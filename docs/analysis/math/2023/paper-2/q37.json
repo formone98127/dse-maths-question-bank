@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2023",
+  "paper": "Paper 2",
+  "qno": "37",
+  "hash": "#2023P2Q37"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "線性規劃與不等式組",
+   "secondary_topics": [
+    "直線方程式",
+    "斜率概念",
+    "極值原理"
+   ],
+   "required_formulas": [
+    "$y = mx + c$",
+    "$\\max(c_1 x + c_2 y) \\text{ 發生於可行域頂點}$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 180
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "斜率關係誤判",
+    "student_thought_process": "學生算出兩邊直線斜率後，錯誤認為只要目標函數斜率在兩者之間即可，忽略係數 $\\beta$ 與 $y$ 係數比對時需考慮的符號變化。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "斜率計算錯誤",
+    "student_thought_process": "學生正確找出頂點，但在將目標函數 $\\beta x + 6y = 24$ 轉換為斜率形式時，除以 6 後忘記變號或算錯分母，導致範圍偏移。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "不等號方向混淆",
+    "student_thought_process": "學生正確計算出臨界斜率為 -4，但未能理解題目要求的是「最大值」條件下 $\\beta$ 的範圍，誤選了包含錯誤邊界的選項。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "先畫出由三個不等式圍成的可行域 $D$，並標記出所有的頂點座標。",
+   "回憶線性規劃定理：目標函數的最值必發生在可行域的某個頂點上。",
+   "將目標函數視為一簇平行直線，當其斜率變化時，觀察哪種情況能讓最大值固定為 24 且僅發生在特定頂點或邊上。"
+  ],
+  "quick_solution_strategy": "找出可行域頂點，比較目標函數在各頂點的價值，利用斜率關係確定 $\\beta$ 範圍。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

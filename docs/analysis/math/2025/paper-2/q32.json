@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2025",
+  "paper": "Paper 2",
+  "qno": "32",
+  "hash": "#2025P2Q32"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "因式分解與最小公倍數 (LCM)",
+   "secondary_topics": [
+    "平方差公式",
+    "立方差公式",
+    "冪的性質"
+   ],
+   "required_formulas": [
+    "$a^2 - b^2 = (a-b)(a+b)$",
+    "$a^3 - b^3 = (a-b)(a^2 + ab + b^2)$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆 LCM 與 GCD",
+    "student_thought_process": "學生將題目誤解為求最大公因數 (GCD)。$p-2q$ 是三個式子的公因數，但並非最小公倍數。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤解 LCM 定義",
+    "student_thought_process": "學生認為 LCM 僅需取所有式子中最高次項的乘積，或誤以為其中一個複雜式子即為答案。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "重複因式",
+    "student_thought_process": "學生在求 LCM 時，將不同項式中相同的因式 $(p+2q)$ 與 $(p-2q)$ 全部相乘，未考慮取最高次方。"
+   }
+  },
+  "scaffolding_hints": [
+   "請先將三個代数式分別進行完全因式分解。",
+   "平方差公式為 $a^2-b^2=(a-b)(a+b)$，立方差公式為 $a^3-b^3=(a-b)(a^2+ab+b^2)$。",
+   "求 LCM 時，取所有出現過的因式，並取其在不同項式中出現的最高次方。"
+  ],
+  "quick_solution_strategy": "分解後取各質因數最高次方之積：$(p-2q)(p+2q)^2(p^2+4pq+4q^2)$。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-03"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

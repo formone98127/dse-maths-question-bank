@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 2",
+  "qno": "29",
+  "hash": "#2017P2Q29"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "統計量 (四分位數)",
+   "secondary_topics": [
+    "累積頻率圖",
+    "中位數定義"
+   ],
+   "required_formulas": [
+    "$Q_1 = \\text{第 } \\frac{n}{4} \\text{ 個數據的位置}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "誤讀中位數位置",
+    "student_thought_process": "學生混淆了四分位數與中位數。在累積頻率圖上，中位數對應 $n/2$ 的位置（即第 15 個數據），因此選出該點的縱座標值 5。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "計算位置錯誤",
+    "student_thought_process": "學生正確識別需找 $Q_1$，但計算數據總數 $n=60$ 時出錯，算成 $n=40$ 或誤以為 $n/4=25$。導致在圖上尋找第 25 個數據的位置，讀出錯誤值。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "讀圖誤解",
+    "student_thought_process": "學生可能將累積頻率曲線上的點 $(15, 5)$ 誤認為是四分位數，或是錯誤地將 $n/4$ 的位置對應到縱軸最大值附近，完全誤解了累積頻率的定義。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察圖形標題與座標軸，確認橫軸代表什麼變量，縱軸代表累積頻率。",
+   "回憶四分位數 $Q_1$ 的定義：它將數據集分為四等份，位於第 $25\\%$ 的位置。",
+   "計算總樣本數 $n$，然後求出 $n/4$ 的值，再在圖上找到對應累積頻率為該值的點。"
+  ],
+  "quick_solution_strategy": "計算總人數 $n=60$，求 $Q_1$ 位置為第 $15$ 人，讀取對應縱座標值。"
+ },
+ "skills": {
+  "topic_id": "T-CHR",
+  "knowledge_point_ids": [
+   "K-CHR-01",
+   "K-CHR-02"
+  ],
+  "formula_ids": [
+   "F-CHR-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-CHR-01",
+    "formula_id": "F-CHR-01",
+    "ability_id": "A-COND"
+   },
+   "C": {
+    "knowledge_point_id": "K-CHR-01",
+    "formula_id": "F-CHR-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-CHR-01",
+    "formula_id": "F-CHR-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

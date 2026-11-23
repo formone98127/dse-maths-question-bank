@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 2",
+  "qno": "1",
+  "hash": "#2021P2Q1"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "指數法則與冪數化簡",
+   "secondary_topics": [
+    "底數轉換 (2, 4, 8, 64 的關係)",
+    "冪的乘法與除法性質"
+   ],
+   "required_formulas": [
+    "$a^m \\cdot a^n = a^{m+n}$",
+    "$\\frac{a^m}{a^n} = a^{m-n}$",
+    "$(a^m)^n = a^{mn}$",
+    "$2^3=8, 4^2=16, 4^3=64$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "指數加法錯誤",
+    "student_thought_process": "將 $8^{3n}$ 視為 $2^{3n}$，誤算分子為 $2^n \\cdot 2^{3n} = 2^{4n}$。分母 $64^n=2^{6n}$。結果應為 $2^{-2n}$，學生可能忘記將底數換成 4，或錯誤認為 $2^{-2n}=4^{-n}$ 而非 $4^{-n/2}$，最終選錯。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "指數乘法錯誤",
+    "student_thought_process": "將 $8^{3n}$ 誤算為 $(2^3)^{3n}=2^{9n}$，分子變為 $2^{10n}$。分母 $2^{6n}$。結果 $2^{4n}=(4^2)^{2n}=4^{4n}$? 不，學生可能將 $8^{3n}$ 視為 $(2^3)^{3n}$ 但計算錯誤，或混淆 $64=2^6$ 與 $4^3$。另一種可能是算出 $2^{-2n}$ 後，誤以為 $-2n = -3n$"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "底數轉換失敗",
+    "student_thought_process": "正確算出指數部分為 $-2n$ (即 $2^{-2n}$)，但無法將 $2^{-2n}$ 轉換為以 4 為底的冪。學生可能認為 $2^{-2n} = 4^{-4n}$，誤以為指數要乘以 4 而非除以 2。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察題目中的所有數字 (2, 8, 64) 與選項底數 (4) 之間的冪次關係。",
+   "回憶指數法則：同底數相乘指數相加，相除指數相減，冪的冪指數相乘。",
+   "將所有項統一轉換為以 2 為底的冪後，先計算分子分母的總指數，最後再換底。"
+  ],
+  "quick_solution_strategy": "將 8 寫成 $2^3$，64 寫成 $2^6$；化簡得 $2^{n+9n-6n}=2^{4n}$? 不對，是 $n+9n-6n=4n$? 重算：$2^n \\cdot (2^3)^{3n} / (2^6)^n = 2^n \\cdot 2^{9n} / 2^{6n} = 2^{10n-6n} = 2^{4n}$。等等，題目是 $8^{3n}$ 還是 $(8^3)^n$? 題目寫 $8^{3n}$。$8=2^3 \\Rightarrow 8^{3n}=(2^3)^{3n}=2^{9n}$。分子 $2^n \\cdot 2^{9n}=2^{10n}$。分母 $64^n=(2^6)^n=2^{6n}$。結果 $2^{4n} = (2^2)^{2n} = 4^{2n}$。"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 2",
+  "qno": "1",
+  "hash": "#2014P2Q1"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "指數法則",
+   "secondary_topics": [
+    "冪的乘法與除法",
+    "負指數的定義"
+   ],
+   "required_formulas": [
+    "$(ab)^n = a^n b^n$",
+    "$(a^m)^n = a^{mn}$",
+    "$a^{-n} = \\frac{1}{a^n}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "冪的指數運算錯誤",
+    "student_thought_process": "學生可能將 $(2n^3)^{-5}$ 誤算為 $2^{-5} \\cdot n^{3 \\times -1}$，或者在計算 $3 \\times -5$ 時出錯得到 $-2$。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤解負指數與係數關係",
+    "student_thought_process": "學生可能將 $2^{-5}$ 錯誤地視為 $10$（混淆底數），並將指數運算完全搞錯，認為結果是 $n^{125}$。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "冪的指數乘法錯誤",
+    "student_thought_process": "學生正確應用了 $(ab)^n$ 法則，但在計算 $3 \\times -5$ 時，可能將負號忽略或算錯，得到 $243$（可能是 $3^5$ 的結果）。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：回想一下冪的乘法法則 $(ab)^n = a^n b^n$ 和 $(a^m)^n = a^{mn}$，如何將題目中的式子拆解？",
+   "提示 2：記得負指數 $x^{-n}$ 代表什麼意義？它與分數有何關係？",
+   "提示 3：分別計算係數 $2$ 的 $-5$ 次方以及變數 $n^3$ 的 $-5$ 次方，最後將它們相乘。"
+  ],
+  "quick_solution_strategy": "先將係數與變數分開處理，再應用冪的指數法則計算。"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2020",
+  "paper": "Paper 2",
+  "qno": "11",
+  "hash": "#2020P2Q11"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "變數間的關係與比例",
+   "secondary_topics": [
+    "立方函數",
+    "平方根",
+    "正變定義"
+   ],
+   "required_formulas": [
+    "$ w = k u^3 \\sqrt{v} $"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "平方根計算錯誤",
+    "student_thought_process": "算出 $\\sqrt{9}=3$ 後，代入時誤將 $3^2=9$ 當作係數或忘記乘以 $k$，導致結果變成 $4 \\times 81 = 324$。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "立方計算錯誤",
+    "student_thought_process": "正確算出 $k=\\frac{1}{2}$，但在計算 $4^3 \\times 3$ 時，誤將 $64 \\times 3$ 算成 $384$（可能混淆了乘法表或筆誤）。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略平方根",
+    "student_thought_process": "完全忽略題目中的「$v$ 的平方根」，直接假設 $w$ 與 $u^3 v$ 成正比，導致計算出 $k=1/8$ 後得到錯誤答案。"
+   }
+  },
+  "scaffolding_hints": [
+   "回憶「正變」的數學表達式：若 $y$ 隨 $x^n$ 正變，則 $y = k x^n$。此題涉及兩個變數，需將它們相乘。",
+   "注意題目描述的是「$v$ 的平方根」，而非 $v$ 本身。請先寫出包含 $\\sqrt{v}$ 的完整方程式。",
+   "利用第一組數據 ($u=2, v=4, w=8$) 解出常數 $k$，再將第二組數據代入求值。"
+  ],
+  "quick_solution_strategy": "建立 $w = k u^3 \\sqrt{v}$，代數求出 $k=1/2$，再代入 $u=4, v=9$ 計算。"
+ },
+ "skills": {
+  "topic_id": "T-VAR",
+  "knowledge_point_ids": [
+   "K-VAR-01"
+  ],
+  "formula_ids": [
+   "F-VAR-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

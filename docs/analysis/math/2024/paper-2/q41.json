@@ -1,0 +1,92 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 2",
+  "qno": "41",
+  "hash": "#2024P2Q41"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "三角形幾何中心 (形心,重心,內心,外心)",
+   "secondary_topics": [
+    "等腰三角形性質",
+    "三角形內角和定理"
+   ],
+   "required_formulas": [
+    "三角形內角和 = 180°",
+    "等腰三角形底角相等",
+    "形心/重心/內心恆在三角形內部",
+    "外心位置取決於最大角 (銳角在內, 直角在中點, 鈍角在外)"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤認外心位置",
+    "student_thought_process": "學生可能忘記鈍角三角形外心在外部，或誤以為 III 正確。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤認重心位置",
+    "student_thought_process": "學生可能認為重心可能在三角形外，忽略了所有中心都在內部 (除頂點) 的性質。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "同時誤認多個概念",
+    "student_thought_process": "學生完全搞混了外心位置與共線條件，認為所有敘述都對。"
+   }
+  },
+  "scaffolding_hints": [
+   "第一步：計算 $\\Delta PQR$ 的頂角 $\\angle QPR$ 大小，判斷這是銳角、直角還是鈍角三角形。",
+   "第二步：回憶四個中心 (形心 G, 重心 H, 內心 I, 外心 J) 在一般三角形中的位置特性 (特別注意外心的特殊性)。",
+   "第三步：檢查 $I$ 與 $J$ 是否共線於 $Q$，這取決於 $\\Delta PQR$ 是否為等腰三角形及其頂點定義。"
+  ],
+  "quick_solution_strategy": "算出頂角為鈍角 (136°)，故外心 J 在外部；其餘中心恆在內部；因 PQ=PR，Q 不在 PJ 中線上。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-01",
+   "K-GEO-02"
+  ],
+  "formula_ids": [
+   "F-GEO-01",
+   "F-GEO-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

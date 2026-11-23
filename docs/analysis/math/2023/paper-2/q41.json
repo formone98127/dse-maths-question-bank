@@ -1,0 +1,92 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2023",
+  "paper": "Paper 2",
+  "qno": "41",
+  "hash": "#2023P2Q41"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "直線方程與三角形內心性質",
+   "secondary_topics": [
+    "斜率與垂直關係",
+    "截距計算",
+    "角平分線定理"
+   ],
+   "required_formulas": [
+    "直線方程 $Ax+By+C=0$",
+    "兩直線垂直條件 $m_1 m_2 = -1$",
+    "三角形內心坐標性質：若內心在 $x$ 軸，則頂角 $\\angle P$ 的平分線為 $x$ 軸"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 180
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤判內心位置意義",
+    "student_thought_process": "學生可能認為 $R$ 點需滿足某種對稱性而選取負值，或是混淆了 $P$ 與 $Q$ 的相對位置關係，導致符號錯誤。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "截距計算失誤",
+    "student_thought_process": "學生正確判斷 $P$ 點為 $(-k/3, 0)$，但在求 $Q$ 點或 $R$ 點坐標時，解聯立方程出現代數錯誤，導致結果偏小。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "忽略 $k$ 的係數倍率",
+    "student_thought_process": "學生可能正確找出 $R$ 點在 $L_2$ 上，但忘記了 $L_2$ 斜率與截距的比例關係，直接將 $P$ 點 $x$ 坐標放大或縮小錯誤倍數。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察 $L_1$ 與 $L_2$ 的係數，判斷兩直線之間的幾何關係（垂直）。",
+   "回憶三角形內心的定義：內心是三個角平分線的交點。若內心在 $x$ 軸上，且 $P$ 也在 $x$ 軸上，這意味著什麼關於 $\\angle P$ 的性質？",
+   "利用角平分線定理或對稱性，找出 $R$ 點與 $Q$ 點在 $L_2$ 上的相對位置關係。"
+  ],
+  "quick_solution_strategy": "先證 $L_1 \\perp L_2$，再推導內心在 $x$ 軸意味著 $x$ 軸平分 $\\angle P$，利用對稱性求 $R$。"
+ },
+ "skills": {
+  "topic_id": "T-LIN",
+  "knowledge_point_ids": [
+   "K-LIN-01",
+   "K-LIN-02"
+  ],
+  "formula_ids": [
+   "F-LIN-01",
+   "F-LIN-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 2",
+  "qno": "32",
+  "hash": "#2021P2Q32"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "十六進位數制與指數運算",
+   "secondary_topics": [
+    "因式分解",
+    "二項式展開"
+   ],
+   "required_formulas": [
+    "$a^n \\times b = a^{n-1} \\times (ab)$",
+    "$x^2 + y^2 + 2xy = (x+y)^2$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "高次項係數計算錯誤",
+    "student_thought_process": "學生算出 $15 \\times 16^{14} + 17 \\times 16^{14}$ 後，誤以為 $15+17=32$ 對應十六進位為 20 而非 20(即 32)，且高階項係數算成 E (14) 而非 F (15)。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "低次項合併錯誤",
+    "student_thought_process": "學生正確算出高階項為 $F00...$，但在處理 $16^2+17$ 時，誤將 $16^2=256$ (即 $100_{16}$) 與 $17(11_{16})$ 相加時進位或位置搞錯，算成 $111$ 但位置偏移。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "高次項係數計算錯誤",
+    "student_thought_process": "學生在合併 $14 \\times 16^{15} + 17 \\times 16^{14}$ 時，錯誤地將 $14+17=31$ (即 $1F_{16}$) 處理成 $E(14)$，忽略了 $17 \\times 16^{14} = 1.0625 \\times 16^{15}$ 的權重影響。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：觀察前兩項 $14 \\times 16^{15}$ 與 $17 \\times 16^{14}$，嘗試將它們合併為同一指數的項。",
+   "提示 2：利用公式 $a \\cdot x^n + b \\cdot x^{n-1} = (a + \\frac{b}{x}) \\cdot x^n$，這裡 $x=16$，計算括號內的數值。",
+   "提示 3：處理剩餘項 $16^2+17$，將其轉換為十六進位後，與前一步結果拼接。"
+  ],
+  "quick_solution_strategy": "將前兩項合併為 $(14+1)\\times 16^{15} = 15 \\times 16^{15}$ (即 $F0...$)，再處理尾數 $100_{16}+11_{16}=111_{16}$。"
+ },
+ "skills": {
+  "topic_id": "T-NUM",
+  "knowledge_point_ids": [
+   "K-NUM-01",
+   "K-NUM-02"
+  ],
+  "formula_ids": [
+   "F-NUM-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-COND"
+   },
+   "C": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

@@ -1,0 +1,92 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 2",
+  "qno": "18",
+  "hash": "#2022P2Q18"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "相似三角形與勾股定理",
+   "secondary_topics": [
+    "矩形周長公式",
+    "全等三角形判定 (AAS/ASA)",
+    "線段比例關係"
+   ],
+   "required_formulas": [
+    "$P = 2(l + w)$",
+    "$a^2 + b^2 = c^2$",
+    "$\\triangle AEB \\sim \\triangle BFC$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "忽略相似比計算",
+    "student_thought_process": "算出 AB=35 後，直接將 AE+EB (24+7) 當作 EF，忘記 F 點位置及相似縮放比例，導致結果偏小。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "相似比取反或計算錯誤",
+    "student_thought_process": "正確算出 EB=7 與 FC，但將比例 $\\frac{EB}{AE}$ 誤用為 $\\frac{BC}{BF}$ 或直接相加時數值處理錯誤，得到中間值。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤解直線 EBF 定義",
+    "student_thought_process": "將 EF 視為 $AE+BC$ 的簡單加總，或誤以為 E、F 關於中心對稱，完全忽略三角形相似縮放關係。"
+   }
+  },
+  "scaffolding_hints": [
+   "利用矩形對邊相等 ($AD=BC, AB=CD$) 與周長 $170$，先求出 $AB$ 的長度。",
+   "觀察直角三角形 $\\triangle AEB$ 與 $\\triangle BFC$，證明它們相似 ($\\angle A = \\angle C = 90^\\circ, \\angle ABE + \\angle CBF = 90^\\circ$)。",
+   "利用相似比求出 $BF$ 的長度，最後將 $EB$ 與 $BF$ 相加即得 $EF$"
+  ],
+  "quick_solution_strategy": "求 AB -> 勾股求 EB -> 證相似求 BF -> EF=EB+BF"
+ },
+ "skills": {
+  "topic_id": "T-LIN",
+  "knowledge_point_ids": [
+   "K-LIN-01",
+   "K-LIN-02"
+  ],
+  "formula_ids": [
+   "F-LIN-01",
+   "F-LIN-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

@@ -1,0 +1,86 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 2",
+  "qno": "36",
+  "hash": "#2014P2Q36"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "複數運算",
+   "secondary_topics": [
+    "共軛複數",
+    "虛數單位性質"
+   ],
+   "required_formulas": [
+    "$\\dfrac{z}{w} = \\dfrac{z\\bar{w}}{|w|^2}$",
+    "$i^2 = -1$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略分母共軛",
+    "student_thought_process": "學生誤以為分子除以 $(\\beta+2i)$ 直接等於分子減去 $2i$，忽略了複數除法的分母需有理化（乘以共軛）的步驟。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "虛部符號錯誤",
+    "student_thought_process": "學生正確進行了分母有理化，但在計算 $\\beta(2i) + 4(-2i)$ 時，將 $-4\\beta i$ 與 $8\\beta i$ 合併出錯，或混淆了實部虛部的係數位置。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "符號處理錯誤",
+    "student_thought_process": "學生在乘以分母共軛 $(\\beta-2i)$ 時，展開 $4(\\beta-2i)$ 得到 $-8i$ 而非正確的 $+8i$（因 $4 \\times -2i = -8i$），導致虛部符號全反。"
+   }
+  },
+  "scaffolding_hints": [
+   "複數除法的核心技巧是將分子分母同時乘以分母的共軛複數，使分母變為實數。",
+   "請回憶 $(a+bi)(a-bi) = a^2+b^2$ 的公式，並注意 $i^2=-1$ 在展開時的影響。",
+   "將分子展開後，分別整理出含 $\\beta$ 的項與純虛數項，即可觀察到化簡結果。"
+  ],
+  "quick_solution_strategy": "上下同乘 $(\\beta-2i)$，分母變為 $\\beta^2+4$，分子約分後得 $\\beta-2i$。"
+ },
+ "skills": {
+  "topic_id": "T-NUM",
+  "knowledge_point_ids": [
+   "K-NUM-01"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

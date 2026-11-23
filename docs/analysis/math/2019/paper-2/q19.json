@@ -1,0 +1,92 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2019",
+  "paper": "Paper 2",
+  "qno": "19",
+  "hash": "#2019P2Q19"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "梯形面積與畢氏定理",
+   "secondary_topics": [
+    "直角三角形性質",
+    "平行線間距離"
+   ],
+   "required_formulas": [
+    "梯形面積公式: $Area = \\frac{1}{2}(a+b)h$",
+    "畢氏定理: $a^2 + b^2 = c^2$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "高度計算錯誤",
+    "student_thought_process": "學生算出 $BD=24$ 後，誤將 $BC=26$ 當作高，或計算 $\\sqrt{30^2-24^2}$ 時出現運算失誤導致結果偏差。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆斜邊與高",
+    "student_thought_process": "學生誤以為 $BC$ 是梯形的高，直接代入面積公式計算，忽略了需先求平行線間垂直距離。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "漏掉除以 2",
+    "student_thought_process": "學生正確算出上底、下底與高，但在代入梯形面積公式時忘記乘以 $\\frac{1}{2}$。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察圖形中直角符號，確定哪一條線段是平行線 $AB$ 與 $DC$ 之間的垂直距離（高）。",
+   "在直角三角形 $ABD$ 中，利用畢氏定理求出斜邊 $BD$ 的長度。",
+   "過點 $B$ 作 $DC$ 的垂線，結合平行線性質與勾股定理推導出梯形的高。"
+  ],
+  "quick_solution_strategy": "先由 $\\triangle ABD$ 求 $BD=24$；再於直角三角形中求高 $h=\\sqrt{30^2-24^2}=18$；最後代入面積公式。"
+ },
+ "skills": {
+  "topic_id": "T-MEN",
+  "knowledge_point_ids": [
+   "K-MEN-01",
+   "K-MEN-02"
+  ],
+  "formula_ids": [
+   "F-MEN-01",
+   "F-MEN-02",
+   "F-MEN-03",
+   "F-MEN-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

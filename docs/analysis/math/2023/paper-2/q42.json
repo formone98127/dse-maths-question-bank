@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2023",
+  "paper": "Paper 2",
+  "qno": "42",
+  "hash": "#2023P2Q42"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "排列組合",
+   "secondary_topics": [
+    "組合公式",
+    "排列公式"
+   ],
+   "required_formulas": [
+    "$\\binom{n}{r} = \\frac{n!}{r!(n-r)!}$",
+    "$P(n, r) = \\frac{n!}{(n-r)!}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "少乘主席位置數",
+    "student_thought_process": "先選出 5 人組成委員會，忘記主席與委員角色不同需乘以 P(5,1) 或 5。只計算了 C(15,5)。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆排列與組合順序",
+    "student_thought_process": "誤以為主席選完後，剩下 4 人選委員也要考慮順序，直接計算 C(15,1)*P(14,4)，導致數字過大。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "完全排列誤解",
+    "student_thought_process": "將主席與委員視為全排列，計算 P(15,5)，忽略了同一委員會內 4 名委員之間無順序差異。"
+   }
+  },
+  "scaffolding_hints": [
+   "思考：選出 5 人組成團體時，成員間的順序重要嗎？主席與委員的角色是否相同？",
+   "知識：若角色不同，可先從 15 人中選 1 人為主席，再從剩餘 14 人中選 4 人為委員。",
+   "提示：將兩步驟的結果相乘即可得到總數，記得不要重複計算委員之間的順序。"
+  ],
+  "quick_solution_strategy": "先選主席 (C(15,1))，再選 4 名委員 (C(14,4))，兩者相乘。"
+ },
+ "skills": {
+  "topic_id": "T-COM",
+  "knowledge_point_ids": [
+   "K-COM-02",
+   "K-COM-03"
+  ],
+  "formula_ids": [
+   "F-COM-01",
+   "F-COM-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-COM-02",
+    "formula_id": "F-COM-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-COM-02",
+    "formula_id": "F-COM-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-COM-02",
+    "formula_id": "F-COM-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

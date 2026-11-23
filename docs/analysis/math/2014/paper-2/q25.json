@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 2",
+  "qno": "25",
+  "hash": "#2014P2Q25"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "一次函數圖形性質",
+   "secondary_topics": [
+    "斜率與截距的幾何意義",
+    "直線交點的坐標特徵"
+   ],
+   "required_formulas": [
+    "y = mx + c (m 為斜率，c 為 y 軸截距)",
+    "兩直線相交於一點則該點滿足兩方程式"
+   ],
+   "bloom_taxonomy_level": "理解",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤判斜率符號",
+    "student_thought_process": "觀察圖形直線往右上方延伸，認為斜率應為負；或忽略第三項 b=d 的必要性，錯誤排除 III。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤判截距符號",
+    "student_thought_process": "正確判斷斜率 a>0，但認為 y 軸交點在負半軸故 c<0；或忽略 b=d 的幾何意義。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤判斜率符號",
+    "student_thought_process": "觀察圖形直線往右上方延伸，錯誤認為斜率 a<0；同時正確判斷 c>0 與 b=d。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "回憶一次函數 y = ax + c 中，a 代表斜率（直線傾斜程度與方向），c 代表與 y 軸交點的縱坐標。",
+   "觀察圖形中兩條直線的走向：若 x 增加時 y 也增加，則斜率為正；反之為負。",
+   "思考兩直線相交於 y 軸上的點意味著什麼？這表示當 x=0 時，兩直線的 y 值相同。"
+  ],
+  "quick_solution_strategy": "由圖知直線上升故 a>0；交 y 軸於正半軸故 c>0；交點在 y 軸故截距相等 b=d。"
+ },
+ "skills": {
+  "topic_id": "T-LIN",
+  "knowledge_point_ids": [
+   "K-LIN-02"
+  ],
+  "formula_ids": [
+   "F-LIN-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-LIN-02",
+    "formula_id": "F-LIN-02",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-LIN-02",
+    "formula_id": "F-LIN-02",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-LIN-02",
+    "formula_id": "F-LIN-02",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

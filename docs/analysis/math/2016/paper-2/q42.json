@@ -1,0 +1,91 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2016",
+  "paper": "Paper 2",
+  "qno": "42",
+  "hash": "#2016P2Q42"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "組合機率",
+   "secondary_topics": [
+    "條件機率",
+    "互斥事件",
+    "總樣本空間計算"
+   ],
+   "required_formulas": [
+    "$\\binom{n}{k} = \\frac{n!}{k!(n-k)!}$",
+    "$P(E) = \\frac{N(E)}{N(S)}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "錯算有利事件數",
+    "student_thought_process": "學生可能只計算了「2 紅 2 咖」的情況：$\\binom{3}{2}\\times\\binom{9}{2}=27$，忘記加上「3 紅 1 咖」的 $\\binom{3}{3}\\times\\binom{9}{1}=27$？或是加法算錯。若僅算出其中一種情況再除以總數，會得到錯誤分數。另一可能是將分子加總為 $27+27=54$ 後與分母 $55$ 混淆，或誤以為選項 B 是正確答案而選錯。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "忘記互斥事件加總",
+    "student_thought_process": "學生計算了「2 紅 2 咖」的組合數 $27$，但忽略了題目要求「至少 2 罐」還包含「3 紅 1 咖」的情況。直接將單一情況除以總樣本空間，導致漏算另一種互斥事件。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "分母計算錯誤",
+    "student_thought_process": "學生正確列出分子為 $27+27=54$（假設），但分母算成 $132$ 或其他數字，或者在約分時出錯。若選項 D 是 $\\frac{54}{132}$ 化簡錯誤，或是將總組合數 $\\binom{12}{4}=495$ 誤算為 $55$ 的倍數但係數不對。常見錯誤是分母算成 $9+3=12$ 的排列而非組合。"
+   }
+  },
+  "scaffolding_hints": [
+   "首先，請計算從 12 罐飲料中任取 4 罐的所有可能組合數（總樣本空間）。",
+   "題目要求「至少 2 罐紅茶」，這包含哪兩種互斥的情況？請分別列出這兩種情況的組合數。",
+   "將上述兩種情況的有利事件數相加，再除以總樣本空間，即可得到正確機率。"
+  ],
+  "quick_solution_strategy": "計算總組合 $\\binom{12}{4}$，再加總「2 紅 2 咖」與「3 紅 1 咖」的組合數，最後相除並約分。"
+ },
+ "skills": {
+  "topic_id": "T-COM",
+  "knowledge_point_ids": [
+   "K-COM-02",
+   "K-COM-03"
+  ],
+  "formula_ids": [
+   "F-COM-01",
+   "F-COM-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-COM-02",
+    "formula_id": "F-COM-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-COM-02",
+    "formula_id": "F-COM-01",
+    "ability_id": "A-CHAIN"
+   },
+   "D": {
+    "knowledge_point_id": "K-COM-02",
+    "formula_id": "F-COM-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

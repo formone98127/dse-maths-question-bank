@@ -1,0 +1,85 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 2",
+  "qno": "3",
+  "hash": "#2021P2Q3"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "多項式運算",
+   "secondary_topics": [
+    "平方差公式",
+    "分配律"
+   ],
+   "required_formulas": [
+    "(a+b)(a-b) = a^2 - b^2"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "符號處理錯誤",
+    "student_thought_process": "學生計算 (u+v)(u-v) 得到 u²-v²，但接著乘以 (u-1) 時，將 -v² * (-1) 誤算為 +v²，且忽略了 u²*(-1)=-u² 的符號變化。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "展開錯誤",
+    "student_thought_process": "學生正確算出中間項 -uv²，但在計算 u²*(-1) 時忘記變號，寫成 +u²，導致最高次項係數與符號皆錯。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "分配律應用不全",
+    "student_thought_process": "學生在展開 (u²-v²)(u-1) 時，只處理了 u²*u 和 -v²*u，卻忘記了 -v²*(-1)，導致最後一項符號錯誤。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "先觀察題目包含連續兩次乘法，建議先計算前兩項的積。",
+   "請回憶平方差公式：(a+b)(a-b) 的結果是什麼？",
+   "將得到的結果與 (u-1) 相乘時，務必將多項式的每一項都分別乘以 (u-1) 中的 u 和 -1。"
+  ],
+  "quick_solution_strategy": "先算前兩項得 u²-v²，再將其展開並注意所有符號變化即可。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-03"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

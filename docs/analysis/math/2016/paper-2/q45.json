@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2016",
+  "paper": "Paper 2",
+  "qno": "45",
+  "hash": "#2016P2Q45"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "方差變換性質",
+   "secondary_topics": [
+    "標準差與方差的關係",
+    "數據平移對離散程度的影響"
+   ],
+   "required_formulas": [
+    "$\\text{Var}(aX + b) = a^2 \\cdot \\text{Var}(X)$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "忽略平方運算",
+    "student_thought_process": "學生計算 $4 \\times 49 = 196$，忘記了方差係數需要平方。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "誤加常數項",
+    "student_thought_process": "學生計算 $4^2 \\times 49 + 9 = 196 + 9 = 205$，錯誤地將平移量加到方差上。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "混淆標準差與方差",
+    "student_thought_process": "學生先求新標準差 $4 \\times 7 = 28$，再誤以為答案是 $28^2 + 9 = 793$"
+   }
+  },
+  "scaffolding_hints": [
+   "思考：若將所有數據同時加上一個常數（如 +9），數據之間的相對距離會改變嗎？",
+   "知識：方差的定義是數據與平均數偏差平方的平均值，它反映的是數據的離散程度。",
+   "提示：利用公式 $\\text{Var}(aX+b) = a^2 \\cdot \\text{Var}(X)$ 進行計算，其中 $b$ 不影響方差。"
+  ],
+  "quick_solution_strategy": "應用公式 $\\text{Var}(4x+9) = 4^2 \\times 49$"
+ },
+ "skills": {
+  "topic_id": "T-STA",
+  "knowledge_point_ids": [
+   "K-STA-01",
+   "K-STA-02"
+  ],
+  "formula_ids": [
+   "F-STA-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

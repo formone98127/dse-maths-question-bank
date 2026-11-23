@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 2",
+  "qno": "14",
+  "hash": "#2021P2Q14"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "二次函數圖形性質",
+   "secondary_topics": [
+    "y 截距定義",
+    "點坐標代入驗證"
+   ],
+   "required_formulas": [
+    "二次函數標準式：$y = a(x-h)^2 + k$",
+    "$y$ 截距設定 $x=0$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略係數影響",
+    "student_thought_process": "學生誤認 $(m-x)^2$ 前係數恆為正，忽視 $n$ 可為負導致 $y$ 截距非正；亦可能認為點 $(n,m)$ 必在圖上。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "代入驗證失誤",
+    "student_thought_process": "學生計算 $x=0$ 時 $y=n^2+m$，錯誤推論此值恆正；或代入 $(n,m)$ 時未考慮 $m-n$ 符號變化。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "過度簡化條件",
+    "student_thought_process": "學生僅檢查特殊情況（如 $m,n>0$），未考慮實數常數可為負，導致錯誤判定 II 與 III 皆成立。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察二次項 $(m-x)^2$ 的係數符號對圖形開口方向的決定作用。",
+   "將 $x=0$ 代入方程式，計算 $y$ 截距表達式，並討論 $n$ 與 $m$ 為任意實數時的正負可能性。",
+   "將點 $(n, m)$ 的坐標代入原方程式左邊，檢查是否恆等於右邊（即驗證等式是否成立）。"
+  ],
+  "quick_solution_strategy": "二次項係數決定開口；$y$ 截距取決於 $n$；代入 $(n,m)$ 驗證等式是否恆成立。"
+ },
+ "skills": {
+  "topic_id": "T-FUN",
+  "knowledge_point_ids": [
+   "K-FUN-01",
+   "K-FUN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

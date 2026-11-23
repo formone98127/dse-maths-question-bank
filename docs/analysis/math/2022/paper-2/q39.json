@@ -1,0 +1,91 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 2",
+  "qno": "39",
+  "hash": "#2022P2Q39"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "三角函數",
+   "secondary_topics": [
+    "倍角公式",
+    "單位圓解題",
+    "週期性"
+   ],
+   "required_formulas": [
+    "$\\tan^2 x + 1 = \\sec^2 x$",
+    "$\\sin^2 x + \\cos^2 x = 1$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "漏解週期內根",
+    "student_thought_process": "算出 $\\tan x = \\pm \\sqrt{5}$ 後，只考慮第一、三象限的兩個解，忘記第二、四象限也有對應角度。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "混淆正切週期",
+    "student_thought_process": "計算出 $\\tan x = \\pm \\sqrt{5}$，誤以為在 $0^\\circ$ 到 $360^\\circ$ 之間只有三個解（例如忽略負角的對應）。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤解定義域限制",
+    "student_thought_process": "將 $\\tan x$ 的週期性過度推演，或錯誤計算反正切值導致多算一個超出範圍的根。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：將方程兩邊同時除以 $\\cos^2 x$（需考慮 $\\cos x \\neq 0$），轉換為關於 $\\tan x$ 的形式。",
+   "提示 2：利用 $\\tan x = k$，在 $0^\\circ \\leq x < 360^\\circ$ 範圍內，正切函數每個週期有兩個解（一正一負）。",
+   "提示 3：計算出 $\\tan x = \\pm \\sqrt{5}$ 的具體角度值，並逐一檢查是否落在給定的區間內。"
+  ],
+  "quick_solution_strategy": "除以 $\\cos^2 x$ 得 $\\tan^2 x=5$，解出 $x=\\arctan(\\pm\\sqrt{5})$ 及其週期性解，數個數。"
+ },
+ "skills": {
+  "topic_id": "T-TRI",
+  "knowledge_point_ids": [
+   "K-TRI-01",
+   "K-TRI-02"
+  ],
+  "formula_ids": [
+   "F-TRI-01",
+   "F-TRI-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

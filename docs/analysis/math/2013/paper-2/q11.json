@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 2",
+  "qno": "11",
+  "hash": "#2013P2Q11"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "複利計算",
+   "secondary_topics": [
+    "指數運算",
+    "百分比應用"
+   ],
+   "required_formulas": [
+    "A = P(1 + r/n)^{nt}"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "單利誤用",
+    "student_thought_process": "學生忘記題目要求「複利」，直接計算單利：$50000 \\times 8\\% = 4000$"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "週期數錯誤",
+    "student_thought_process": "學生知道用複利公式，但將「每月一結」誤算為一年 4 次（季度）：$50000((1+0.08/4)^{4}-1)$"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "計算精度不足",
+    "student_thought_process": "學生公式正確，但在計算指數或開方時四捨五入過早，導致結果偏離正確值。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "複利意味著利息會產生利息，需確認一年內計息次數 $n$ 是多少。",
+   "將年利率除以計息次數得到每期利率，再代入指數公式 $A = P(1 + r/n)^{nt}$。",
+   "計算出最終金額後，減去本金即可得出準確至最接近元的利息。"
+  ],
+  "quick_solution_strategy": "使用複利公式 $I = 50000((1+0.08/12)^{12}-1)$ 計算並四捨五入。"
+ },
+ "skills": {
+  "topic_id": "T-PCT",
+  "knowledge_point_ids": [
+   "K-PCT-01",
+   "K-PCT-02"
+  ],
+  "formula_ids": [
+   "F-PCT-01",
+   "F-PCT-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

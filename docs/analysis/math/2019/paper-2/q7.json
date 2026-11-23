@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2019",
+  "paper": "Paper 2",
+  "qno": "7",
+  "hash": "#2019P2Q7"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "複合不等式",
+   "secondary_topics": [
+    "一元一次不等式解法",
+    "整數概念"
+   ],
+   "required_formulas": [
+    "線性不等式化簡規則：$ax+b<c \\Rightarrow ax < c-b$",
+    "分母為正時不等號方向不變：$\\frac{a}{b}>c \\Rightarrow a > bc$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "左側不等式解算錯誤導致範圍擴大",
+    "student_thought_process": "解 $-2(x-5)+5<21$ 時，展開得 $-2x+15<21 \\Rightarrow -2x<6 \\Rightarrow x>-3$。學生可能誤算為 $x<-3$ 或忽略符號變化，導致選入錯誤範圍。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "右側不等式解算錯誤導致範圍縮小",
+    "student_thought_process": "解 $\\frac{3x-5}{7}>1$ 時，得 $3x-5>7 \\Rightarrow 3x>12 \\Rightarrow x>4$。學生可能誤算為 $x<4$ 或計算錯誤，導致遺漏此區間的最小整數。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆「或」與「且」的集合概念",
+    "student_thought_process": "題目為「或」，解集應為兩區間合併。學生誤以為需同時滿足（交集），或僅取較大的 $x>4$ 範圍，忽略 $x>-3$ 中的整數如 $-2, -1$ 等。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：將複合不等式拆分為兩個獨立的一元一次不等式分別求解。",
+   "提示 2：注意第一個不等式中係數為負數時，兩邊除以 $-2$ 需改變不等號方向；第二個不等式需先消去分母。",
+   "提示 3：求出兩個解集後，用「或」連接合併範圍，再從合併後的區間中找出最小的整數。"
+  ],
+  "quick_solution_strategy": "分別解出 $x>-3$ 與 $x>4$，合併得 $x>-3$，故最小整數為 $-2$"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-05"
+  ],
+  "formula_ids": [
+   "F-EQN-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

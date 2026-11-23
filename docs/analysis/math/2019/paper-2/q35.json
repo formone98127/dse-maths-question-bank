@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2019",
+  "paper": "Paper 2",
+  "qno": "35",
+  "hash": "#2019P2Q35"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "線性規劃 (Linear Programming)",
+   "secondary_topics": [
+    "不等式解區域",
+    "直線交點計算",
+    "目標函數極值"
+   ],
+   "required_formulas": [
+    "直線方程式 $ax+by=c$",
+    "兩直線交點求解系統方程式"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略邊界點測試",
+    "student_thought_process": "學生可能隨意選了區域內某一點（如原點或簡單整數點）代入計算，得到較小的值，誤以為這就是最大值。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "交點座標算錯",
+    "student_thought_process": "學生正確找出頂點位置，但在解聯立方程式求交點時，計算錯誤（如符號搞錯或移項錯誤），導致代入後數值偏差。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "未檢查所有頂點",
+    "student_thought_process": "學生可能只計算了其中兩個邊界的交點，或是將不等式方向搞混後算出錯誤的極大值點。"
+   }
+  },
+  "scaffolding_hints": [
+   "線性規劃問題中，目標函數 $7x+8y+9$ 的最大值通常出現在可行域（解區域）的頂點處。",
+   "你需要畫出或想像由三條直線圍成的三角形區域，並找出這三個頂點的座標。",
+   "將求得的三個頂點座標分別代入 $7x+8y+9$ 計算，比較大小即可得出最大值。"
+  ],
+  "quick_solution_strategy": "解聯立方程式求出可行域三頂點，代入目標函數比較大小。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

@@ -1,0 +1,91 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 2",
+  "qno": "3",
+  "hash": "#2014P2Q3"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "多項式恆等式",
+   "secondary_topics": [
+    "係數比較法",
+    "代入特殊值法"
+   ],
+   "required_formulas": [
+    "若 $P(x) \\equiv Q(x)$，則對應次數之係數必相等。"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "展開時漏掉 $x^2$ 項係數",
+    "student_thought_process": "左邊展開為 $px^2 - px + x^2 = (p+1)x^2 - px$。右邊展開為 $qx^2 - 2qx + 4x$。學生可能錯誤計算左邊 $x^2$ 係數為 $p$，導致 $(p+1)=q$ 且 $-p=4q$ 解錯，或忘記合併同类項後 $x^2$ 係數是 $p+1$ 而非 $p$，進而算出錯誤結果。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "代入 $x=1$ 時計算錯誤",
+    "student_thought_process": "學生嘗試代入 $x=1$，左邊為 $0$，右邊為 $q(1)(-1)+4 = -q+4$。若解得 $q=4$，再代入原式求 $p$ 時，可能將 $px(x-1)$ 在 $x=2$ 處算錯，或混淆 $p$ 與 $q$ 的關係，導致解出 $p=3$。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤解恆等式定義",
+    "student_thought_process": "學生可能認為只需讓某個特定 $x$ 值成立即可，而非所有 $x$。例如代入 $x=0$ 得 $0=0$（無用），代入 $x=1$ 得 $q=4$。接著任意選一個 $p$ 值如 $4$ 來湊合另一項，忽略係數必須嚴格對應的觀念。"
+   }
+  },
+  "scaffolding_hints": [
+   "當兩個多項式在所有 $x$ 值下都相等時，它們對應次數的係數必須完全相同。",
+   "請先將方程式左右兩邊展開並合併同类項，整理成 $Ax^2+Bx$ 的形式。",
+   "比較左右兩邊 $x^2$ 與 $x$ 的係數，建立聯立方程組求解 $p$ 與 $q$"
+  ],
+  "quick_solution_strategy": "展開合併後比較 $x^2$ 係數：$p+1=q$；比較 $x$ 係數：$-p=-2q+4$。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-01",
+   "K-POL-02"
+  ],
+  "formula_ids": [
+   "F-POL-01",
+   "F-POL-02",
+   "F-POL-03",
+   "F-POL-06"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

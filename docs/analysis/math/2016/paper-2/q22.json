@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2016",
+  "paper": "Paper 2",
+  "qno": "22",
+  "hash": "#2016P2Q22"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "幾何 (菱形, 圓性質, 三角形內角和)",
+   "secondary_topics": [
+    "等腰三角形",
+    "對頂角",
+    "平行線性質"
+   ],
+   "required_formulas": [
+    "菱形對邊平行且四邊相等",
+    "圓半徑相等 ($CB=CE$)",
+    "三角形內角和 $180^\\circ$",
+    "等腰三角形底角相等"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 95
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "角度計算錯誤 (除以 2 後減錯)",
+    "student_thought_process": "算出 $\\angle CDE = 61^\\circ$ 後，誤以為 $\\angle DFE = 180-61=119$ 再取補角或簡單除法 $118/2=59$"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆圓心與弦的關係",
+    "student_thought_process": "誤以為 $F$ 是 $CD$ 中點或 $\\angle DFE$ 等於菱形內角的一半，直接取 $118/2=59$ 附近的數值"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "三角形外角定理應用錯誤",
+    "student_thought_process": "算出 $\\angle BCD = 62^\\circ$，誤將此值當作 $\\angle DFE$，或是計算 $180 - (118+?)$ 時出現偏差"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "利用菱形性質：$AB \\parallel CD$ 且 $BC=CD$。",
+   "觀察圓心 $C$：連接 $CE$，可知 $\\triangle BCE$ 為等腰三角形 ($CB=CE$)。",
+   "在 $\\triangle CDE$ 中計算 $\\angle CDE$，再利用外角定理或三角形內角和求 $\\angle DFE$"
+  ],
+  "quick_solution_strategy": "由菱形得 $\\angle BCD = 180-118=62^\\circ$；因 $C$ 為圓心，$CB=CE$，故 $\\triangle BCE$ 等腰。計算 $\\angle CDE$ 後用外角定理求 $\\angle DFE$"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-05"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

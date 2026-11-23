@@ -1,0 +1,91 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 2",
+  "qno": "45",
+  "hash": "#2021P2Q45"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "等差數列的統計量性質",
+   "secondary_topics": [
+    "中位數",
+    "分佈域 (極差)",
+    "方差"
+   ],
+   "required_formulas": [
+    "等差數列通項公式 $T(n) = a + (n-1)d$",
+    "中位數定義：有序數據中間位置的數值",
+    "分佈域定義：最大值減最小值",
+    "方差定義：各數據與平均數差的平方和的平均值"
+   ],
+   "bloom_taxonomy_level": "理解",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤認中位數隨項數增加而改變",
+    "student_thought_process": "學生認為等差數列後段數值較大，故中位數 $x_1 < x_2$。忽略了兩組數據的相對位置與間距相同，僅平移了起點，中位數在相對順序上應相等（若考慮絕對值則需看公差正負，但題目比較的是統計量性質的相對變化邏輯，通常此類題意指結構性不變）。更精確地說，若 $d>0$，則 $x_1 < x_2$ 成立；若 $d<0$，則 $x_1 > x_2$。題目問「必為正確」，故 I 不一定。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤認方差會隨平移改變",
+    "student_thought_process": "學生混淆了數據平移對統計量的影響。認為數值變大，分佈散度也會變，故 $z_1 > z_2$ 或反之。實際上平移不改變方差。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "同時誤認中位數與方差變化",
+    "student_thought_process": "學生錯誤地認為所有統計量都會隨項數增加而改變，或搞混了分佈域與方差的定義。"
+   }
+  },
+  "scaffolding_hints": [
+   "思考：將等差數列的圖形想像成一條直線，第一組和第二組數據在直線上是相鄰且間距固定的片段。",
+   "知識：平移（Shift）數據時，形狀不變，因此分佈域與方差會如何變化？中位數在相對位置上的性質呢？",
+   "破題：比較兩組數據的結構，第一組是從 $T(1)$ 到 $T(49)$，第二組是從 $T(51)$ 到 $T(99)$。它們之間跳過了 $T(50)$，但內部結構（公差 $d$）完全一致。"
+  ],
+  "quick_solution_strategy": "等差數列平移不改變分佈形狀，故分佈域與方差相等；中位數取決於公差符號，非絕對必然大小關係。"
+ },
+ "skills": {
+  "topic_id": "T-SEQ",
+  "knowledge_point_ids": [
+   "K-SEQ-02"
+  ],
+  "formula_ids": [
+   "F-SEQ-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-SEQ-02",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-SEQ-02",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-SEQ-02",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

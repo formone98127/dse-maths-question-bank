@@ -1,0 +1,95 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 2",
+  "qno": "15",
+  "hash": "#2021P2Q15"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "立體幾何：正六邊形柱體",
+   "secondary_topics": [
+    "正多邊形面積公式",
+    "直柱體體積與高之關係",
+    "圓周率近似值應用"
+   ],
+   "required_formulas": [
+    "V = A_base * h",
+    "A_hexagon = (3sqrt(3)/2) * s^2",
+    "P_hexagon = 6s",
+    "SA = P*h + 2*A_base"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "忽略底面積計算或高算錯",
+    "student_thought_process": "學生可能忘記乘上 2 個底面，只算了側面積加一個底面積；或者在計算六邊形面積時公式記錯，導致總面積嚴重偏小。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "高值取整過早或圓周率誤用",
+    "student_thought_process": "學生算出正確的高，但在計算六邊形面積時可能將 sqrt(3) 近似為 1.7 而非 1.732，導致總面積偏差約 10-20，落入此選項。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆體積與面積單位或邏輯",
+    "student_thought_process": "學生可能將體積數值 288 誤認為是某種面積，或是完全忽略幾何形狀特性，隨意估算出極大的數字。"
+   }
+  },
+  "scaffolding_hints": [
+   "首先利用體積公式 V = 底面積 × 高，反推該柱體的垂直高度 h。",
+   "正六邊形可由 6 個等邊三角形組成，請回想邊長為 s 的等邊三角形面積公式 (sqrt(3)/4)s^2。",
+   "總表面積 = 側面積 + 2 × 底面積，其中側面積等於底面周長乘以高 h。"
+  ],
+  "quick_solution_strategy": "先算高 h=V/A_base，再代入 SA=P*h+2*A_base 計算。"
+ },
+ "skills": {
+  "topic_id": "T-MEN",
+  "knowledge_point_ids": [
+   "K-MEN-01",
+   "K-MEN-02"
+  ],
+  "formula_ids": [
+   "F-MEN-01",
+   "F-MEN-02",
+   "F-MEN-03",
+   "F-MEN-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 2",
+  "qno": "34",
+  "hash": "#2024P2Q34"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "函數圖形與線性關係",
+   "secondary_topics": [
+    "平方根函數",
+    "冪函數",
+    "負數的立方"
+   ],
+   "required_formulas": [
+    "若 $y^3$ 與 $\\sqrt{x}$ 成線性關係，則可設 $y^3 = m\\sqrt{x} + c$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "冪運算錯誤",
+    "student_thought_process": "學生可能誤將 $y^3$ 視為 $y$，直接代入 $\\sqrt{36}=6$ 後計算 $6^3=216$ 或相關錯步，導致數值過大且符號混亂。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略負號可能性",
+    "student_thought_process": "學生算出 $y=-4$ 後，忘記立方根有唯一實數解且負數的立方仍為負，誤選正數或絕對值錯誤的選項。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "冪運算錯誤",
+    "student_thought_process": "學生計算 $(-4)^3$ 時出錯，誤以為結果是 $-16$（混淆平方與立方），或將 $6^3=216$ 開方後算錯。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "觀察圖形可知 $y^3$ 與 $\\sqrt{x}$ 呈現直線關係，請嘗試設定一般式 $y^3 = m\\sqrt{x} + c$。",
+   "從圖中讀取兩個清晰的座標點（例如截距或明顯交點），代入公式以求出斜率 $m$ 與截距 $c$。",
+   "將 $x=36$ 代入已求得的關係式中，計算 $\\sqrt{36}$ 後解出 $y$ 的值，並注意負數的立方特性。"
+  ],
+  "quick_solution_strategy": "設 $y^3=m\\sqrt{x}+c$，由圖取點代數求解係數，再代入 $x=36$ 算得 $y=-4$"
+ },
+ "skills": {
+  "topic_id": "T-FUN",
+  "knowledge_point_ids": [
+   "K-FUN-01",
+   "K-FUN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

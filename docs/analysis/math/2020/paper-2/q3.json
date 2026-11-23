@@ -1,0 +1,86 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2020",
+  "paper": "Paper 2",
+  "qno": "3",
+  "hash": "#2020P2Q3"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "異分母分數加法與乘法",
+   "secondary_topics": [
+    "因式分解 (平方差公式)",
+    "整式的展開與合併"
+   ],
+   "required_formulas": [
+    "\\frac{a}{b} \\pm \\frac{c}{d} = \\frac{ad \\pm bc}{bd}",
+    "(x+y)(x-y) = x^2 - y^2"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "符號處理錯誤",
+    "student_thought_process": "分子計算時，將減法 \\frac{5}{4k+3} - \\frac{2}{4k-3} 誤算為加法，導致 \\frac{5(4k-3)+2(4k+3)}{...} = \\frac{20k-15+8k+6}{...} = \\frac{28k-9}{...} (此處模擬另一種常見錯誤：符號搞錯)。若選 B 通常是因为計算 \\frac{5(4k-3)+2(4k+3)}{...} 但忘了變號，或者在合併常數項時 \\ -15+6=-9\\ 卻算成 \\ +9\\。更可能是分子 \\ 5(4k-3)\\ 展開後 \\ -15\\ 與 \\ 2(4k+3)\\ 的 \\ +6\\ 合併錯誤，或 \\ 5(-3)\\ 忘記負號變成正數。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "係數計算錯誤",
+    "student_thought_process": "分子 \\ k\\ 的係數算錯：\\ 5(4k) - 2(4k) = 20k - 8k = 12k\\ ，選項 C 寫成 \\ 14k\\ ，可能是 \\ 5+2=7\\ 再乘 \\ 4\\ 得到 \\ 28\\ 然後除以 2 得 14，邏輯混亂。或是將 \\ 5(4k)\\ 算成 \\ 20k\\ ，\\ 2(4k)\\ 算成 \\ 6k\\ (誤讀題目)，導致 \\ 20k-6k=14k\\ 。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "符號與係數雙重錯誤",
+    "student_thought_process": "分子 \\ k\\ 的係數算成 \\ 14k\\ (同 C)，且常數項算成 \\ +9\\ 。這通常是將減法完全忽略，當成加法 \\ 5(4k-3)+2(4k+3)\\ 計算，得到 \\ 28k-9\\ ，再除以 2 得 \\ 14k-4.5\\ (不符)。更可能是 \\ 5(4k)-2(-3)=20k+6\\ 與 \\ -2(4k)+2(3)=-8k+6\\ 混淆，導致 \\ k\\ 係數與常數項皆錯。"
+   }
+  },
+  "scaffolding_hints": [
+   "第一步：觀察分母 \\ (4k+3)\\ 與 \\ (4k-3)\\ ，它們的公分母是平方差形式 \\ (4k)^2 - 3^2\\ 。",
+   "第二步：通分後，分子應為 \\ 5\\ 乘以第一個分母減去 \\ 2\\ 乘以第二個分母。請小心處理負號與括號展開。",
+   "第三步：將展開後的 \\ k\\ 項與常數項分別合併，檢查最終分子是否匹配選項。"
+  ],
+  "quick_solution_strategy": "公分母為 \\ 16k^2-9\\ ，分子計算 \\ 5(4k-3)-2(4k+3)\\ ，展開合併得 \\ 12k-21\\ 。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-03"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

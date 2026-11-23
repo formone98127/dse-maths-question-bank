@@ -1,0 +1,92 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 2",
+  "qno": "27",
+  "hash": "#2024P2Q27"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓的方程式與幾何性質",
+   "secondary_topics": [
+    "配方法",
+    "圓心半徑計算",
+    "點與圓位置關係"
+   ],
+   "required_formulas": [
+    "$x^2+y^2+Dx+Ey+F=0$ 化為 $(x-h)^2+(y-k)^2=r^2$",
+    "圓周長 $C=2\\pi r$",
+    "點 $(x_0,y_0)$ 在圓內條件：$(x_0-h)^2+(y_0-k)^2 < r^2$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略 III",
+    "student_thought_process": "算出圓心 (1,-2) 與半徑 $\\sqrt{3}$，判斷 III 錯。誤判 II 為錯（可能計算圓周長時取 $\\pi \\approx 3$ 或計算錯誤），漏選 I。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "誤判 II",
+    "student_thought_process": "正確判斷圓心 (1,-2) 與半徑 $\\sqrt{3}$，確認 I 對、III 對。但計算圓周長 $2\\pi\\sqrt{3} \\approx 10.8 < 16$ 時算錯，認為 II 錯。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略 I",
+    "student_thought_process": "正確判斷圓心 (1,-2) 與半徑 $\\sqrt{3}$，確認 III 對、II 對。但忘記檢查原點位置，誤以為原點在圓外或圓上，故排除 I。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "將一般式圓方程式配方，找出圓心坐標 $(h,k)$ 與半徑 $r$。",
+   "計算圓周長 $2\\pi r$ 並與 16 比較；同時代入原點 $(0,0)$ 驗證其是否在圓內。",
+   "確認圓心縱座標絕對值是否等於至 x 軸的垂直距離，再綜合判斷三個陳述。"
+  ],
+  "quick_solution_strategy": "配方得圓心 (1,-2)、半徑 $\\sqrt{3}$；驗證 I(原點在內)、II(周長<16)、III(距 x 軸 2)。"
+ },
+ "skills": {
+  "topic_id": "T-CIR",
+  "knowledge_point_ids": [
+   "K-CIR-01",
+   "K-CIR-02"
+  ],
+  "formula_ids": [
+   "F-CIR-01",
+   "F-CIR-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

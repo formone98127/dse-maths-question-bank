@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 2",
+  "qno": "20",
+  "hash": "#2017P2Q20"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "平行四邊形性質與全等三角形判定",
+   "secondary_topics": [
+    "等腰三角形判定",
+    "角平分線性質",
+    "三角形內角和定理"
+   ],
+   "required_formulas": [
+    "$\\triangle ABE \\cong \\triangle DBE \\implies AB=BD$",
+    "$\\angle ABC = \\angle ABE + \\angle EBD + \\angle CBD$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略 III 之正確性",
+    "student_thought_process": "學生可能誤以為 $\\triangle ABE$ 與 $\\triangle DBE$ 不全等，僅因邊長不等或角度不明而排除 III。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略 II 之正確性",
+    "student_thought_process": "學生可能忘記計算 $\\angle ABC$ 的總和，或誤解角平分線條件導致的角度關係。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略 I 之正確性",
+    "student_thought_process": "學生可能未意識到全等三角形對應邊相等，故錯誤排除 I。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "利用 $E$ 為中點與平行四邊形對角線性質，觀察 $\\triangle ABE$ 與 $\\triangle DBE$ 的關係。",
+   "由 $\\angle ABE=\\angle DBE=\\angle CBD$ 推導出 $\\triangle ABD$ 的形狀及 $\\angle ABC$ 的度數。",
+   "綜合上述結論，判斷哪些陳述正確並選擇對應選項。"
+  ],
+  "quick_solution_strategy": "證 $\\triangle ABE \\cong \\triangle DBE$ 得 I；算角和得 II；故選 D。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-05"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

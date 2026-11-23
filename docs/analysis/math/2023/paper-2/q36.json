@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2023",
+  "paper": "Paper 2",
+  "qno": "36",
+  "hash": "#2023P2Q36"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "等差數列求和",
+   "secondary_topics": [
+    "等差數列通項公式",
+    "一元一次方程式組解法"
+   ],
+   "required_formulas": [
+    "$T_n = a + (n-1)d$",
+    "$S_k = \\frac{k}{2}[2a + (k-1)d]$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "不等式邊界誤判",
+    "student_thought_process": "算出 k 約為 299.3，誤以為大於 400000 的最小整數是 299，忽略小數點後部分導致總和仍不足。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "平方根計算錯誤",
+    "student_thought_process": "解不等式時，將 $k^2$ 開方算錯，或混淆了 $S_k$ 公式中係數的倍率，導致 k 值放大了約 3 倍。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "平方根計算錯誤",
+    "student_thought_process": "同樣在解一元二次不等式時，對常數項處理不當，導致開方結果偏大，可能是計算機輸入錯誤。"
+   }
+  },
+  "scaffolding_hints": [
+   "先利用 $T(11)$ 與 $T(25)+T(30)=463$ 這兩個條件，建立關於首項 $a$ 與公差 $d$ 的聯立方程式組。",
+   "解出 $a$ 與 $d$ 後，代入等差數列前 $k$ 項和公式 $S_k = \\frac{k}{2}[2a + (k-1)d]$。",
+   "將不等式整理成關於 $k$ 的一元二次不等式，解出正根後，注意題目要求的是「最小整數」而非實數解。"
+  ],
+  "quick_solution_strategy": "先求 $a,d$，代回 $S_k$ 公式，解 $S_k > 400000$ 得 $k$ 的最小整數。"
+ },
+ "skills": {
+  "topic_id": "T-SEQ",
+  "knowledge_point_ids": [
+   "K-SEQ-02"
+  ],
+  "formula_ids": [
+   "F-SEQ-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-SEQ-02",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-SEQ-02",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-SEQ-02",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

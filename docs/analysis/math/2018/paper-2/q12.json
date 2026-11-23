@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2018",
+  "paper": "Paper 2",
+  "qno": "12",
+  "hash": "#2018P2Q12"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "線性遞迴數列 (Fibonacci 類)",
+   "secondary_topics": [
+    "等差級數概念",
+    "倒推法"
+   ],
+   "required_formulas": [
+    "$ a_{n+2} = a_n + a_{n+1} $",
+    "$ a_6 = a_4 + a_5 = (a_3 + a_4) + (a_3 + 2a_4) $"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "係數計算錯誤",
+    "student_thought_process": "將 $a_6$ 表達為 $3a_4 + 2a_3$ 時，誤算係數或代入數值時出錯，導致解得 $a_1=13$"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆遞迴關係",
+    "student_thought_process": "誤以為 $a_6$ 與 $a_3$ 之間有直接倍數關係，或直接套用 Fibonacci 標準值而忽略初始條件不同"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "方向錯誤",
+    "student_thought_process": "嘗試從 $a_1$ 正向推導至 $a_6$，但因未知數過多而放棄或隨意猜測大數字選項"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：利用遞迴公式 $a_{n+2} = a_n + a_{n+1}$，將所有項用 $a_3$ 和 $a_4$ 表示。",
+   "提示 2：觀察 $a_6$ 與 $a_3, a_4$ 的係數關係，建立關於 $a_4$ 的一次方程式求解。",
+   "提示 3：求得 $a_4$ 後，利用 $a_5 = a_3 + a_4$ 和 $a_6 = a_4 + a_5$ 驗證，最後由 $a_4 = a_3 + a_2$ 及 $a_3 = a_1 + a_2$ 解出 $a_1$"
+  ],
+  "quick_solution_strategy": "將 $a_6$ 用 $a_3, a_4$ 表示，解出 $a_4$，再倒推求 $a_1$"
+ },
+ "skills": {
+  "topic_id": "T-SEQ",
+  "knowledge_point_ids": [
+   "K-SEQ-01",
+   "K-SEQ-02"
+  ],
+  "formula_ids": [
+   "F-SEQ-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-SEQ-01",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-SEQ-01",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-SEQ-01",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

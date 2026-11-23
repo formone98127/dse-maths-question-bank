@@ -1,0 +1,85 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2015",
+  "paper": "Paper 2",
+  "qno": "35",
+  "hash": "#2015P2Q35"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "複數與實數性質",
+   "secondary_topics": [
+    "多項式係數",
+    "虛數單位 i 的定義"
+   ],
+   "required_formulas": [
+    "複數 z = x + yi (x, y 為實數時，z 為實數當且僅當 y = 0)"
+   ],
+   "bloom_taxonomy_level": "理解",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆係數與虛部",
+    "student_thought_process": "學生誤以為只要讓 t^6 的係數為 0，整個表達式就變成實數，忽略了 t^7 項的存在。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤解虛部條件",
+    "student_thought_process": "學生錯誤地認為只要讓 t^7 的係數為 0，t^6 項就會自動消失或變成實數，未考慮兩項獨立性。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "符號處理錯誤",
+    "student_thought_process": "學生正確設 a-3=0 但解方程時算出 a=3，卻因粗心將答案選成相反數或混淆選項。"
+   }
+  },
+  "scaffolding_hints": [
+   "思考：一個多項式要成為實數（假設 t 為變數且包含虛數成分），其所有非實係數的項必須消失。",
+   "在此題中，t^6 和 t^7 是獨立變數項，若要 z 恆為實數（針對任意 t），則這兩個項的係數需滿足特定條件使虛部歸零。",
+   "觀察題目隱含條件：此處 a 為實數參數，若 z 要視為純實數表達式，通常意味著虛部係數必須為 0。請檢查哪一項代表虛部來源並令其為 0。"
+  ],
+  "quick_solution_strategy": "令 t^7 的係數 (a-3) 等於 0，解得 a=3。"
+ },
+ "skills": {
+  "topic_id": "T-NUM",
+  "knowledge_point_ids": [
+   "K-NUM-01"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

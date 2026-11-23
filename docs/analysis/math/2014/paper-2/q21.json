@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 2",
+  "qno": "21",
+  "hash": "#2014P2Q21"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓周角與圓心角關係",
+   "secondary_topics": [
+    "弦長相等之弧的關係",
+    "多邊形內角和"
+   ],
+   "required_formulas": [
+    "圓心角 = 2 × 圓周角",
+    "n 邊形內角和 = (n-2)×180°"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "角度加總錯誤",
+    "student_thought_process": "將 $38^\\circ$ 乘以 3 得 $114^\\circ$，誤以為是圓心角總和，再隨意加上或減去某個小角度（如 $3^\\circ$）得到 $117^\\circ$。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略多邊形內角和",
+    "student_thought_process": "只計算了三個弓形的圓心角總和 $114^\\circ$，忘記六邊形 $ABCDEF$ 的內角和必須為 $(6-2)\\times 180=720^\\circ$。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "方向判斷錯誤",
+    "student_thought_process": "正確算出六邊形內角和後，誤將 $360^\\circ$ 減去內角和，或搞混了劣弧與優弧的圓心角大小關係。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察圖形，$\\triangle PQR$ 的頂點 $P$ 在圓外，其兩邊截得圓上的弧對應的圓周角為 $38^\\circ$。",
+   "利用弦長相等推導出六邊形 $ABCDEF$ 各內角的關係，並計算六邊形的總內角和。",
+   "將六邊形的內角和與由圓周角導出的圓心角總和進行比較，找出 $\\angle QOR$ 的數值。"
+  ],
+  "quick_solution_strategy": "先求六邊形內角和 $720^\\circ$，再減去三個已知圓周角對應的圓心角部分（注意方向），即可得解。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-01",
+   "K-GEO-02"
+  ],
+  "formula_ids": [
+   "F-GEO-01",
+   "F-GEO-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

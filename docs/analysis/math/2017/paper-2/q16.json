@@ -1,0 +1,92 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 2",
+  "qno": "16",
+  "hash": "#2017P2Q16"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "幾何面積比",
+   "secondary_topics": [
+    "相似三角形",
+    "平行線截割定理"
+   ],
+   "required_formulas": [
+    "\\frac{Area(\\Delta ABG)}{Area(\\Delta CBG)} = \\frac{AG}{GC}",
+    "\\frac{Area(\\Delta ADH)}{Area(\\Delta CDH)} = \\frac{AH}{HC}"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 180
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "比例計算錯誤",
+    "student_thought_process": "算出 AG:GC=2:3 後，直接將 135 乘以 2/3 或類似簡單比例，忽略面積與底邊比及高比的綜合關係，導致數值偏小。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆相似比",
+    "student_thought_process": "誤以為 \\Delta ABG 與 \\Delta CDH 全等或面積直接相等，未考慮 E 點位置對 DE 線段截割的影響，導致計算出錯誤的幾何平均數。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "漏算區域",
+    "student_thought_process": "正確算出 \\Delta CDH 面積為 90，但忘記四邊形 DFGH 還包含 \\Delta ADH 或 \\Delta CFG 的部分，僅將某一個三角形面積當作答案。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "利用平行線 \\text{AC} \\parallel \\text{BD} (不成立，應為 AB\\parallel CD, AD\\parallel BC) 及相似三角形性質，找出 AG:GC 與 AH:HC 的比例關係。",
+   "計算 \\Delta CBG 與 \\Delta ADH 的面積時，注意它們的底邊比與高之比如何影響最終面積。",
+   "四邊形 DFGH 的面積等於 \\Delta CDH 的面積減去 \\Delta CHG 的面積，或是 \\Delta ADC 減去 \\Delta ABG 與 \\Delta ADH 後剩餘部分（需視圖形分割方式）。"
+  ],
+  "quick_solution_strategy": "先求 AG:GC=2:3\\Rightarrow Area(\\Delta CBG)=202.5。再利用相似比求 Area(\\Delta CDH)，最後減去 \\Delta CHG 或加總相關區域。"
+ },
+ "skills": {
+  "topic_id": "T-MEN",
+  "knowledge_point_ids": [
+   "K-MEN-01",
+   "K-MEN-02"
+  ],
+  "formula_ids": [
+   "F-MEN-01",
+   "F-MEN-02",
+   "F-MEN-03",
+   "F-MEN-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

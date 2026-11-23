@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2016",
+  "paper": "Paper 2",
+  "qno": "14",
+  "hash": "#2016P2Q14"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "等差數列",
+   "secondary_topics": [
+    "遞迴關係",
+    "通項公式"
+   ],
+   "required_formulas": [
+    "a_n = a_1 + (n-1)d"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "首項錯誤",
+    "student_thought_process": "誤以為第 1 個圖案是起始遞增點，計算 a_7 = 9 + (7-1)*5 = 39 時算錯成 29，或是將 n=0 代入公式導致首項理解偏差。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "公差誤用",
+    "student_thought_process": "正確算出 a_7 = 39，但看錯題目或計算加法錯誤（如 9+5*6=44 卻選 B），或是將 n=6 代入公式後計算 9+30-5=34。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "項數誤算",
+    "student_thought_process": "正確公式 a_n = 9 + (n-1)5，但代入 n=7 時算成 9+35=44，忘記減去第一個公差，或誤以為第 7 個圖案需加 7 次 5。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察題目描述：後一個圖案比前一個多 5 粒點子，這代表這是一個等差數列。",
+   "確認已知條件：首項 a_1 = 9，公差 d = 5，要求第 7 項 a_7 的值。",
+   "使用通項公式 a_n = a_1 + (n-1)d 代入 n=7, a_1=9, d=5 進行計算。"
+  ],
+  "quick_solution_strategy": "a_7 = 9 + (7-1)\\times 5 = 39"
+ },
+ "skills": {
+  "topic_id": "T-SEQ",
+  "knowledge_point_ids": [
+   "K-SEQ-02"
+  ],
+  "formula_ids": [
+   "F-SEQ-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-SEQ-02",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-SEQ-02",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-SEQ-02",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

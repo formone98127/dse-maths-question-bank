@@ -1,0 +1,86 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2015",
+  "paper": "Paper 2",
+  "qno": "40",
+  "hash": "#2015P2Q40"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓的切線性質與相似三角形",
+   "secondary_topics": [
+    "畢氏定理",
+    "弦切角定理"
+   ],
+   "required_formulas": [
+    "$\\angle OBA = 90^\\circ$ (半徑垂直於切線)",
+    "$\\triangle ABE \\sim \\triangle ACE$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "錯誤勾股數或比例計算",
+    "student_thought_process": "學生可能算出 $BE=8$ 後，誤以為半徑是 $3$（將直徑與半徑混淆），或是計算 $AE^2 - AB^2$ 時出現小數處理錯誤導致選錯。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤認半徑長度為答案",
+    "student_thought_process": "學生正確算出 $BE=8$，但誤以為題目問的是 $BE$ 的長度，或是將 $BD$ 的定義搞錯，直接選了與直角三角形邊長相關的數字。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "忽略題目所求為直徑",
+    "student_thought_process": "學生算出半徑 $r=3$ 或半徑相關數值，但未注意題目問的是 $BD$（直徑），反而選了與 $BE$ 或錯誤比例相關的選項。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：觀察圖形，利用切線性質判斷哪些角是直角，並標記出關鍵的相似三角形。",
+   "提示 2：在 $\\triangle ABE$ 中，已知兩邊長，請使用畢氏定理求出第三邊 $BE$ 的長度。",
+   "提示 3：利用圓內接四邊形或弦切角性質證明 $\\angle EBC = \\angle BAC$，進而建立相似關係求半徑，最後乘以 2 得到直徑。"
+  ],
+  "quick_solution_strategy": "先由畢氏定理求 $BE=8$，再證 $\\triangle ABE \\sim \\triangle ACE$ 得比例式求半徑，最後乘 2。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-05"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

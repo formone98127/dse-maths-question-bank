@@ -1,0 +1,86 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2018",
+  "paper": "Paper 2",
+  "qno": "32",
+  "hash": "#2018P2Q32"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "對數函數圖形性質與底數比較",
+   "secondary_topics": [
+    "指數與對數互換關係",
+    "對數函數單調性"
+   ],
+   "required_formulas": [
+    "$y = \\log_a x$",
+    "$\\frac{AB}{BC} = \\frac{y_A - y_C}{y_B - y_C}$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 120
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略 III 式正確性",
+    "student_thought_process": "學生確認 a>1 正確，但誤以為比例式複雜或無意義，直接排除 III，未進行具體數值驗證。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "底數大小判斷錯誤",
+    "student_thought_process": "學生誤判圖形斜率，認為底數較小者圖像較陡，從而得出 a>b 或反之的錯誤結論。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "同時誤判底數與比例",
+    "student_thought_process": "學生錯誤認定 a>b，且同樣忽略 III 式在特定坐標下的幾何意義。"
+   }
+  },
+  "scaffolding_hints": [
+   "思考：當 $x>1$ 時，底數越大，對數函數的圖形越靠近 $x$ 軸（增長越慢）。",
+   "知識：利用特值法驗證，例如設 $x=a$ 與 $x=b$ 時點的坐標關係。",
+   "破題：計算 $A, B, C$ 三點縱座標差值之比值，並利用對數換底公式化簡 III 式。"
+  ],
+  "quick_solution_strategy": "取 $x=a$，得 $A(a,1), C(a,0)$；代入 $B$ 點坐標驗證 III 式是否成立。"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

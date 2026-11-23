@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2025",
+  "paper": "Paper 2",
+  "qno": "42",
+  "hash": "#2025P2Q42"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "組合數學 (容斥原理)",
+   "secondary_topics": [
+    "排列與組合公式",
+    "補集法則"
+   ],
+   "required_formulas": [
+    "$C(n, k) = \\frac{n!}{k!(n-k)!}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "誤算無經理情況",
+    "student_thought_process": "學生可能錯誤地將「至少一經理」理解為「恰有一經理」，導致計算時僅考慮 $C(2,1) \\times C(14,6)$，忽略了恰有 2 名經理的情況。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤解互斥事件",
+    "student_thought_process": "學生可能試圖直接將選 1 名經理與選 2 名經理的組合相加，卻忘記了經理人數有限制（僅 2 人），導致重複計數或邏輯錯誤。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "忽略題目限制條件",
+    "student_thought_process": "學生可能完全忽略了「至少 1 名經理」的限制，直接計算從所有 18 人中選 7 人的總組合數 $C(18,7)$，而未扣除全無經理的情況。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：題目要求「至少 1 名經理」，直接分類討論（恰 1 人、恰 2 人）雖可行但步驟繁瑣，是否有更簡捷的思維路徑？",
+   "提示 2：在組合問題中，若處理「至少一個」或「不超過」等條件時，通常可考慮總情況減去不符合條件的情況（補集法）。",
+   "提示 3：請先計算從所有人選 7 人的總方式，再計算完全沒有經理（僅由主任與文員組成）的方式，兩者相減即為答案。"
+  ],
+  "quick_solution_strategy": "計算總組合數 $C(18,7)$ 減去無經理的組合數 $C(14,7)$。"
+ },
+ "skills": {
+  "topic_id": "T-COM",
+  "knowledge_point_ids": [
+   "K-COM-02",
+   "K-COM-03"
+  ],
+  "formula_ids": [
+   "F-COM-01",
+   "F-COM-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-COM-02",
+    "formula_id": "F-COM-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-COM-02",
+    "formula_id": "F-COM-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-COM-02",
+    "formula_id": "F-COM-01",
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

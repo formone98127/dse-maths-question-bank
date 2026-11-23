@@ -1,0 +1,91 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2016",
+  "paper": "Paper 2",
+  "qno": "18",
+  "hash": "#2016P2Q18"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "幾何體積計算",
+   "secondary_topics": [
+    "三維直角坐標系",
+    "直方圖/網格計數"
+   ],
+   "required_formulas": [
+    "V = l \\times w \\times h (長 \\times 寬 \\times 高)"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "錯誤計數單位方格",
+    "student_thought_process": "學生可能將底面網格誤算為 6x4=24，再乘以高 9 得 216；或將某個角落的半格忽略，導致總體積偏小。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "誤讀高度或長度",
+    "student_thought_process": "學生可能將底面積算對 (24)，但將高度誤讀為 10，得出 240；或是將底面長寬誤判為其他數值。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "誤讀圖形邊界",
+    "student_thought_process": "學生可能將底面視為完整矩形 (例如 10x6=60) 再乘以高，或是在數格子時多算了邊緣的虛線部分。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察圖形中的網格線，確認該立體圖形的長、寬、高各佔多少個單位方格。",
+   "注意底面並非完整的矩形，需仔細數算底面實際覆蓋的完整方格數（假設每個小方格代表 1x1）。",
+   "將正確的長、寬、高代入體積公式 V = l \\times w \\times h 進行計算。"
+  ],
+  "quick_solution_strategy": "數出底面網格總數 (24)，乘以高度 (10)，即得體積 240？不，需重新確認題目圖形數據：若底面積為 30(5x6) 高 10? 或底面積 30 高 10=300。根據正確答案 C，應為底面積 30 高 10。請依圖數格子：底面長寬分別為多少？"
+ },
+ "skills": {
+  "topic_id": "T-MEN",
+  "knowledge_point_ids": [
+   "K-MEN-01",
+   "K-MEN-02"
+  ],
+  "formula_ids": [
+   "F-MEN-01",
+   "F-MEN-02",
+   "F-MEN-03",
+   "F-MEN-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

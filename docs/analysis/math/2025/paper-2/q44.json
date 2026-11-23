@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2025",
+  "paper": "Paper 2",
+  "qno": "44",
+  "hash": "#2025P2Q44"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "標準分",
+   "secondary_topics": [
+    "平均數與標準差關係",
+    "絕對值方程"
+   ],
+   "required_formulas": [
+    "z = (x - mu) / sigma"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "符號處理錯誤",
+    "student_thought_process": "計算 |z - (-2)| = 6 時，解出 z-(-2)=6 => z=4 (錯) 或 z-(-2)=-6 => z=-8 (錯)。學生可能誤以為差值直接相減即可，忽略絕對值兩側情況。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "標準分定義混淆",
+    "student_thought_process": "學生可能將標準差 2 誤用為分數差值，或者在設定方程時搞混了 x 與 z 的關係，導致解出錯誤的數值組合。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "絕對值展開錯誤",
+    "student_thought_process": "在解 |z - (-2)| = 6 時，錯誤地認為只有 z+2=6 和 z+2=-6 兩種情況但算錯結果，或者混淆了正負號的分配。"
+   }
+  },
+  "scaffolding_hints": [
+   "回想標準分 (Z-score) 的定義公式：z = (x - mu) / sigma，其中 sigma 為何值？",
+   "男生與女生的得分差為 6 分，這意味著他們的標準分之差的絕對值是多少？即 |z_girl - z_boy| = ?",
+   "利用絕對值方程 |z - (-2)| = 某數值，考慮兩種可能性來解出 z。"
+  ],
+  "quick_solution_strategy": "由標準分差公式得 |z - (-2)| = 6/2 = 3，解絕對值方程即可。"
+ },
+ "skills": {
+  "topic_id": "T-STA",
+  "knowledge_point_ids": [
+   "K-STA-01"
+  ],
+  "formula_ids": [
+   "F-STA-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

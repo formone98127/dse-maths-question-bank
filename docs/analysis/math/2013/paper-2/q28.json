@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 2",
+  "qno": "28",
+  "hash": "#2013P2Q28"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "散點圖與函數關係",
+   "secondary_topics": [
+    "直線趨勢的辨識",
+    "正相關與負相關的定義"
+   ],
+   "required_formulas": [
+    "無特定公式，需觀察 $y$ 值隨 $x$ 值的變化方向"
+   ],
+   "bloom_taxonomy_level": "理解",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆正負相關",
+    "student_thought_process": "誤以為圖形向下傾斜或看錯 $y$ 軸數值，將上升趨勢解讀為減少。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "錯誤套用反變關係",
+    "student_thought_process": "未觀察到曲線形狀，直接套用「平方」或「反比例」的刻板印象。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "錯誤假設高階多項式",
+    "student_thought_process": "過度複雜化問題，假設必須是三次函數才能解釋數據分佈。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察散點圖中數據點的整體走向：當 $x$ 軸向右移動時，對應的 $y$ 軸位置是變高還是變低？",
+   "回憶「正相關」與「負相關」的定義：若 $x$ 增大導致 $y$ 也增大，則稱為正相關。",
+   "排除法思考：選項 C 與 D 描述的是非線性關係，請先確認圖形是否呈現明顯的曲線彎折特徵。"
+  ],
+  "quick_solution_strategy": "觀察數據點整體呈上升趨勢，即 $x$ 增則 $y$ 增，故選 A。"
+ },
+ "skills": {
+  "topic_id": "T-STA",
+  "knowledge_point_ids": [
+   "K-STA-01",
+   "K-STA-02"
+  ],
+  "formula_ids": [
+   "F-STA-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 2",
+  "qno": "43",
+  "hash": "#2021P2Q43"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "條件概率與排列組合",
+   "secondary_topics": [
+    "互斥事件加法原理",
+    "不重複取樣 (無放回)",
+    "分步乘法原理"
+   ],
+   "required_formulas": [
+    "$P(A \\cap B) = P(A) \\times P(B|A)$",
+    "$P(A \\cup B) = P(A) + P(B)$ (互斥事件)"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略無放回機制",
+    "student_thought_process": "學生可能誤以為每次取球機率不變，直接計算 $3/15 + 3/14 \\times ...$ 或錯誤地將總球數視為固定。若選 A ($\\frac{4}{7}$)，可能是只考慮第一次取到黑球的機率 $5/15=1/3$ 加上其他簡化錯誤，或是混淆了有放回與無放回的計算方式，導致分母始終為 15 或 14 而未正確遞減。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "分數運算錯誤",
+    "student_thought_process": "學生正確列出事件：第一次黑 ($5/15$)、第二次黑 ($4/14 \\times 10/14$)、第三次黑 ($3/13 \\times 10/14 \\times 9/13$)。但在通分或加法計算時出錯，例如將 $10/14$ 約分為 $5/7$ 後與前項相加時公分母處理不當，導致結果變成 $\\frac{5}{9}$。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "事件定義不清",
+    "student_thought_process": "學生可能將「至多三次」誤解為「恰好三次」，或者在計算「前兩次非黑球」時，忘記了第一次取走後總數變少。例如計算 $P(\\text{非黑}) \\times P(\\text{非黑}|\\text{非黑}) \\times P(\\text{黑}|\\text{非黑, 非黑})$ 時，數字代入錯誤（如用 $10/14$ 而非 $9/13$）。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "題目要求「至多三次」，這包含哪三種互斥的情況？請用文字列出。",
+   "注意是「不放回」取球，每取一次後袋中球的總數和顏色數量都會改變，請寫出每次的機率分式。",
+   "將上述三種情況的機率計算出來並相加，最後通分即可得到答案。"
+  ],
+  "quick_solution_strategy": "計算 $P(\\text{第1黑}) + P(\\text{非黑, 第2黑}) + P(\\text{非黑, 非黑, 第3黑})$ 並求和。"
+ },
+ "skills": {
+  "topic_id": "T-PROB",
+  "knowledge_point_ids": [
+   "K-PROB-04"
+  ],
+  "formula_ids": [
+   "F-PROB-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

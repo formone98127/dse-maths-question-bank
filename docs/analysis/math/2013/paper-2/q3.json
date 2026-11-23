@@ -1,0 +1,86 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 2",
+  "qno": "3",
+  "hash": "#2013P2Q3"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "因式分解",
+   "secondary_topics": [
+    "分組分解法",
+    "分配律"
+   ],
+   "required_formulas": [
+    "$ab+ac= a(b+c)$",
+    "$-(ab+ac)= -a(b+c)$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "符號處理錯誤",
+    "student_thought_process": "學生在分組後，將 $-k\\ell$ 與 $+hm$ 合併時，錯誤地將負號分配給整個括號 $(h+k)$，導致符號混亂。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "符號處理錯誤",
+    "student_thought_process": "學生正確分出 $\\ell$ 與 $m$ 的係數，但在處理 $-k\\ell+hm$ 時，未能將 $h$ 與 $k$ 合併為 $(h-k)$，而是誤寫為 $(h+k)$。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "展開驗證失敗",
+    "student_thought_process": "學生選對了 $h-k$ 的結構，但在展開 $(\\ell-m+n)$ 時，忘記了 $-k$ 分配給 $n$ 應為 $-kn$，與原題不符。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "觀察式子中有四項，試著將含有 $\\ell$ 的項與不含 $\\ell$ 的項分組。",
+   "注意每一組中係數的正負號，特別是當提出公因數時，括號內項的符號變化。",
+   "將選項 D 展開驗證，看是否能還原回題目原本的式子。"
+  ],
+  "quick_solution_strategy": "前兩項分組：$\\ell(h-k)$；後兩項分組：$m(h-k) + n(k-h)$? 不，是 $-mn+kn = n(-m+k)$? 重新觀察：$hm-km-hn+kn = m(h-k) - n(h-k) = (h-k)(m-n)$? 等等，題目是 $hm-km-hn+kn$。分組：$(hm-km) + (-hn+kn) = m(h-k) - n(h-k) = (m-n)(h-k)$。選項 D 是 $(h-k)(\\ell+m-n)$? 原題有 $\\ell$。重新看題：$h\\ell-k\\ell+hm-km-hn+kn$。分組：$(h\\ell-k\\ell) + (hm-km) + (-hn+kn) = \\ell(h-k) + m(h-k) - n(h-k) = (h-k)(\\ell+m-n)$。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-03"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CHAIN"
+   },
+   "B": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CHAIN"
+   },
+   "C": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

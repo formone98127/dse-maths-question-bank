@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 2",
+  "qno": "36",
+  "hash": "#2017P2Q36"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "等差數列",
+   "secondary_topics": [
+    "指數法則",
+    "線性關係識別"
+   ],
+   "required_formulas": [
+    "$a_{n+1} - a_n = d$ (常數)",
+    "$\\pi \\approx 3.14$"
+   ],
+   "bloom_taxonomy_level": "理解",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤判指數序列為等差",
+    "student_thought_process": "學生混淆幾何級數與等差數列。認為 $\\pi^{30}$ 到 $\\pi^{45}$ 的倍率是固定的，所以誤以為是等差，忽略了底數相同但指數增加才是等比特徵。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤判減法序列為非等差",
+    "student_thought_process": "學生正確識別 II 為等差，但錯誤地認為 III 中 $\\pi$ 的存在破壞了常數差。忽略了 $(\\pi-30)-(\\pi-45) = 15$ 仍為常數。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "同時誤判 I 與 III",
+    "student_thought_process": "學生完全無法區分指數增長與線性減少的本質。將 I 視為等差（錯），並將 III 視為非等差（錯），導致選擇包含錯誤的選項。"
+   }
+  },
+  "scaffolding_hints": [
+   "回憶等差數列的定義：任意相鄰兩項之差必須為同一個常數 $d$。",
+   "計算 II 組數據的差值，觀察是否為常數；再思考 III 組中 $\\pi$ 在減法中會如何影響結果。",
+   "檢查 I 組數據：若將指數看作項數，底數固定時指數成等差，則原數列是幾何級數而非等差。"
+  ],
+  "quick_solution_strategy": "計算相鄰項之差：II 為 $15\\pi$；III 為 $(\\pi-30)-(\\pi-45)=15$；I 為 $\\pi^{15}$ (非常數)。選 C。"
+ },
+ "skills": {
+  "topic_id": "T-SEQ",
+  "knowledge_point_ids": [
+   "K-SEQ-02",
+   "K-SEQ-03"
+  ],
+  "formula_ids": [
+   "F-SEQ-01",
+   "F-SEQ-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-SEQ-02",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-SEQ-02",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-SEQ-02",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

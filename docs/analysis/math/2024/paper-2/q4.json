@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 2",
+  "qno": "4",
+  "hash": "#2024P2Q4"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "平方根的估算與四捨五入",
+   "secondary_topics": [
+    "完全平方數的記憶",
+    "有效數字與小數位數的定義",
+    "近似值的誤差分析"
+   ],
+   "required_formulas": [
+    "$\\sqrt{n} \\approx k$ 其中 $k^2 \\le n < (k+1)^2$",
+    "四捨五入規則：若下一位數字 $\\ge 5$ 則進一，否則捨去"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "混淆小數位數與有效數字",
+    "student_thought_process": "學生誤以為題目要求計算到二位小數，但選項 B 標註的是「準確至二位小數」，若計算正確應為 18.24，此處主要錯誤在於未檢查是否為最接近整數。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤解有效數字定義",
+    "student_thought_process": "學生混淆了「三位有效數字」與「三位小數」。18.248 確實是三位有效數字，但題目要求是「最接近的整數」，此選項未符合題意。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "過度精確化誤導",
+    "student_thought_process": "學生可能認為計算越精確越好，忽略了題目明確要求的「最接近的整數」條件，直接選擇了更多小數位數的選項。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：先估算 $\\sqrt{333}$ 介於哪兩個連續整數之間？（參考 $18^2$ 與 $19^2$）",
+   "提示 2：回憶「最接近的整數」意味著要比較該數值與前後整數的距離，或直接計算後四捨五入到個位。",
+   "提示 3：確認題目要求的是「最接近的整數」，而非特定小數位數或有效數字，排除不符合條件的選項。"
+  ],
+  "quick_solution_strategy": "估算 $18^2=324$ 與 $19^2=361$，因 $333$ 靠近 $324$，故最接近整數為 $18$"
+ },
+ "skills": {
+  "topic_id": "T-NUM",
+  "knowledge_point_ids": [
+   "K-NUM-01",
+   "K-NUM-04"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": null,
+    "ability_id": "A-COND"
+   },
+   "C": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

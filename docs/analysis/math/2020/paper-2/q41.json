@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2020",
+  "paper": "Paper 2",
+  "qno": "41",
+  "hash": "#2020P2Q41"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓與直線的相交條件",
+   "secondary_topics": [
+    "圓的標準方程式",
+    "點到直線距離公式"
+   ],
+   "required_formulas": [
+    "$ (x-h)^2 + (y-k)^2 = r^2 $",
+    "$ d = \\frac{|Ax_0+By_0+C|}{\\sqrt{A^2+B^2}} $"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 120
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "圓心坐標計算錯誤",
+    "student_thought_process": "將 $-6x$ 配對時，誤認為圓心橫座標是 $+3$ 或符號搞反，導致圓心 $(3, -c/2)$ 算錯，進而距離公式代入出錯。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "半徑平方計算錯誤",
+    "student_thought_process": "圓心坐標正確但半徑 $r$ 算成 $\\sqrt{7}$，未將常數項移到右邊配對，導致 $d \\le r$ 時不等式邊界數值完全錯誤。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "相交條件邏輯混淆",
+    "student_thought_process": "正確算出圓心與半徑，但誤以為「相交」代表圓在直線兩側（距離大於半徑），搞反了 $d \\le r$ 的含義。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "將圓的一般式配方，找出圓心 $(h,k)$ 與半徑 $r$ 的表達式。",
+   "回憶點到直線距離公式，並理解相交條件為「圓心到直線距離不大於半徑」。",
+   "建立關於 $c$ 的不等式 $d \\le r$，解出 $c$ 的範圍即可。"
+  ],
+  "quick_solution_strategy": "配方得圓心 $(3, -c/2)$、半徑 $\\sqrt{16+c^2/4}$；代入距離公式並解不等式。"
+ },
+ "skills": {
+  "topic_id": "T-CIR",
+  "knowledge_point_ids": [
+   "K-CIR-01"
+  ],
+  "formula_ids": [
+   "F-CIR-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2018",
+  "paper": "Paper 2",
+  "qno": "5",
+  "hash": "#2018P2Q5"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "二次函數圖形性質",
+   "secondary_topics": [
+    "頂點式方程式",
+    "與座標軸交點判斷"
+   ],
+   "required_formulas": [
+    "$y=a(x-h)^2+k$ (頂點式)",
+    "令 $y=0$ 解一元二次方程式"
+   ],
+   "bloom_taxonomy_level": "理解",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "符號判斷錯誤",
+    "student_thought_process": "學生忽略 $x^2$ 係數為負 ($-1$)，誤以為拋物線開口向上，混淆了 $a>0$ 與 $a<0$ 的意義。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "截距計算疏失",
+    "student_thought_process": "學生直接將頂點式中的 $k=6$ 或常數項誤讀，未正確代入 $x=0$ 計算 $y$ 值 ($16-36=-20$)。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "原點驗證失敗",
+    "student_thought_process": "學生未將 $(0,0)$ 代入方程式驗證，僅憑直覺或錯誤記憶認為所有拋物線都通過原點。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察頂點式 $y=a(x-h)^2+k$ 中 $a$ 的符號決定開口方向。",
+   "計算 $y$ 截距需令 $x=0$，計算與 $x$ 軸交點需令 $y=0$。",
+   "將 $(0,0)$ 代入方程式檢查等式是否成立以判斷是否過原點。"
+  ],
+  "quick_solution_strategy": "由頂點式知 $a=-1<0$ 開口向下；令 $x=0$ 得 $y=-20\\neq 16$；令 $y=0$ 有實根故與 $x$ 軸相交。"
+ },
+ "skills": {
+  "topic_id": "T-FUN",
+  "knowledge_point_ids": [
+   "K-FUN-01",
+   "K-FUN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

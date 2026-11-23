@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 2",
+  "qno": "26",
+  "hash": "#2021P2Q26"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "直線方程與中點公式",
+   "secondary_topics": [
+    "坐標幾何",
+    "三角形中線性質"
+   ],
+   "required_formulas": [
+    "中點公式：$M = \\frac{A+B}{2}$",
+    "兩點式直線方程：$\\frac{y-y_1}{x-x_1} = \\frac{y_2-y_1}{x_2-x_1}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "中點座標計算錯誤",
+    "student_thought_process": "求 $BC$ 中點時，將 $(5+9)/2$ 算成 $7$ 而非 $7$（此處假設學生算錯為其他值導致斜率偏差），或代入兩點式時分母分子顛倒。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "常數項符號錯誤",
+    "student_thought_process": "斜率與 $x,y$ 係數算對，但在整理成一般式時，將 $+3$ 寫成 $-3$ 或反之，忽略移項時的符號變化。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "搞混中線與高線/角平分線",
+    "student_thought_process": "誤以為 $AP$ 是 $BC$ 邊上的高，因此嘗試用垂直斜率關係求解，導致係數互換且符號改變。"
+   }
+  },
+  "scaffolding_hints": [
+   "首先，回憶三角形中線的定義：連接頂點與對邊中點的線段。",
+   "計算 $BC$ 兩端點 $(5,8)$ 與 $(9,2)$ 的中點座標，這是關鍵步驟。",
+   "利用已知的頂點 $A(3,3)$ 與剛求出的中點，代入兩點式求出直線方程並化簡。"
+  ],
+  "quick_solution_strategy": "先求 $BC$ 中點，再聯結 $A$ 與中點寫出直線方程。"
+ },
+ "skills": {
+  "topic_id": "T-LIN",
+  "knowledge_point_ids": [
+   "K-LIN-01",
+   "K-LIN-02"
+  ],
+  "formula_ids": [
+   "F-LIN-01",
+   "F-LIN-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

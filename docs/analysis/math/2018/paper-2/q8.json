@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2018",
+  "paper": "Paper 2",
+  "qno": "8",
+  "hash": "#2018P2Q8"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "多項式除法定理",
+   "secondary_topics": [
+    "餘數定理",
+    "因式定理",
+    "代數運算"
+   ],
+   "required_formulas": [
+    "若 $P(x)$ 可被 $(x-c)$ 整除，則 $P(c)=0$",
+    "多項式除以 $(x-k)$ 的餘數為 $P(k)$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤解整除條件",
+    "student_thought_process": "學生認為 $g(1)=0$ 後，直接假設餘數必為 0。混淆了「可被 $x-1$ 整除」與「除以 $x+1$ 的餘數」兩者無關的邏輯關係，未計算 $g(-1)$。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "符號處理錯誤",
+    "student_thought_process": "學生正確算出 $b=-1$，但在計算 $g(-1)=1+(-a)-1$ 時，將 $-a$ 誤寫為 $+a$，導致結果變成 $2a$。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "忽略常數項影響",
+    "student_thought_process": "學生在代入 $x=-1$ 時，忘記了 $g(x)$ 中的常數項 $b$。雖然利用 $g(1)=0$ 消去 $b$，但若未正確帶入 $b=-1$ 或誤以為 $b=0$，會導致多餘的 $+2$ 出現。"
+   }
+  },
+  "scaffolding_hints": [
+   "根據因式定理，若 $g(x)$ 可被 $x-1$ 整除，則 $g(1)=0$，請先利用此條件找出 $a$ 與 $b$ 的關係。",
+   "根據餘數定理，當 $g(x)$ 除以 $x+1$ 時，其餘數等於 $g(-1)$ 的值。",
+   "將 $x=-1$ 代入 $g(x)$ 的表達式，並利用第一步得到的關係式消去未知常數 $b$，即可求得最終答案。"
+  ],
+  "quick_solution_strategy": "由 $g(1)=0$ 得 $b=-1-a$；餘數為 $g(-1)=1+(-a)+(-1-a)=-2a$"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-05"
+  ],
+  "formula_ids": [
+   "F-POL-05"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-POL-05",
+    "formula_id": "F-POL-05",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-POL-05",
+    "formula_id": "F-POL-05",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-POL-05",
+    "formula_id": "F-POL-05",
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

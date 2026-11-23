@@ -1,0 +1,91 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2023",
+  "paper": "Paper 2",
+  "qno": "27",
+  "hash": "#2023P2Q27"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓的方程式與幾何性質",
+   "secondary_topics": [
+    "圓心半徑計算",
+    "兩圓位置關係判定",
+    "三角形邊長比較"
+   ],
+   "required_formulas": [
+    "(x-h)^2 + (y-k)^2 = r^2",
+    "d^2 = (x_2-x_1)^2 + (y_2-y_1)^2"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤判 II 與 III 同時成立",
+    "student_thought_process": "算出圓心半徑後，誤以為 OG1 在 C2 內且兩圓相交，忽略了 r2-d > r1 的條件導致無交點。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "誤判 II 成立",
+    "student_thought_process": "計算 OG2 長度時出錯，或誤解「位於以內」的定義，認為 OG1 < r2 即代表線段在圓內（忽略端點）。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤判 III 成立",
+    "student_thought_process": "未檢查兩圓心距與半徑和的關係，直接假設係數不同即相交，忽略 d > r1+r2 的情況。"
+   }
+  },
+  "scaffolding_hints": [
+   "將兩圓方程式化為標準式 $(x-h)^2 + (y-k)^2 = r^2$，找出圓心 $G_1, G_2$ 與半徑 $r_1, r_2$。",
+   "計算原點 $O$ 到兩圓心的距離 $OG_1, OG_2$，並比較 $OG_1$ 與 $r_2$ 的大小關係以判斷 II。",
+   "利用三角形不等式或半徑和條件 ($d < r_1+r_2$) 來驗證 III 是否成立。"
+  ],
+  "quick_solution_strategy": "先求圓心半徑，再算三邊長 $OG_1, OG_2, G_1G_2$ 判斷 I；比較 $OG_1$ 與 $r_2$ 判斷 II；比較 $G_1G_2$ 與 $r_1+r_2$ 判斷 III。"
+ },
+ "skills": {
+  "topic_id": "T-CIR",
+  "knowledge_point_ids": [
+   "K-CIR-01",
+   "K-CIR-02"
+  ],
+  "formula_ids": [
+   "F-CIR-01",
+   "F-CIR-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

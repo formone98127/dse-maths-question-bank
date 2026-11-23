@@ -1,0 +1,85 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 2",
+  "qno": "31",
+  "hash": "#2014P2Q31"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "整數與單項式的最大公因式 (H.C.F.)",
+   "secondary_topics": [
+    "指數法則",
+    "質因數分解"
+   ],
+   "required_formulas": [
+    "\\text{H.C.F.}(a^m b^n, a^p b^q) = a^{\\min(m,p)} b^{\\min(n,q)}"
+   ],
+   "bloom_taxonomy_level": "理解",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "錯誤包含非公因式變數 z",
+    "student_thought_process": "學生誤以為所有項都含有的字母必須包含在 H.C.F. 中，忽略了第三項 $6x^2y^3$ 不含 $z$。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆 L.C.M. 與 H.C.F.",
+    "student_thought_process": "學生將係數相乘 ($3\\times4\\times6$) 並取各變數最高次幂，這實際上是求最小公倍式 (L.C.M.) 的方法。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "錯誤加總指數",
+    "student_thought_process": "學生將不同項的指數直接相加 ($4+2=6$, $1+5=6$ 等) 而非取最小值，且係數處理亦無邏輯。"
+   }
+  },
+  "scaffolding_hints": [
+   "H.C.F. (最大公因式) 的定義是同時整除所有給定項的最大單項式。",
+   "對於每個變數 ($x, y, z$)，我們需要找出它在所有項中出現的最低次幂。",
+   "檢查第三項 $6x^2y^3$，它沒有包含變數 $z$，這對結果有何影響？"
+  ],
+  "quick_solution_strategy": "比較各變數指數的最小值：係數取最大公因數，$x$ 取最小次幂，$y$ 取最小次幂，$z$ 若缺項則不列入。"
+ },
+ "skills": {
+  "topic_id": "T-NUM",
+  "knowledge_point_ids": [
+   "K-NUM-01"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

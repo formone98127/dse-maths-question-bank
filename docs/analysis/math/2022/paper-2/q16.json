@@ -1,0 +1,94 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 2",
+  "qno": "16",
+  "hash": "#2022P2Q16"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓幾何與扇形面積",
+   "secondary_topics": [
+    "弦長與半徑關係",
+    "三角函數 (cosine rule)",
+    "弓形面積計算"
+   ],
+   "required_formulas": [
+    "$\\text{Area of Sector} = \\frac{1}{2}r^2\\theta$",
+    "$\\text{Area of Triangle} = \\frac{1}{2}ab\\sin C$",
+    "$\\text{Area of Segment} = \\text{Sector Area} - \\text{Triangle Area}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "混淆大弓形與小弓形面積",
+    "student_thought_process": "算出較小的弓形面積 (約 11) 後，誤以為題目問的是這個較小的部分，未注意 major segment 的定義。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "角度轉換或三角值錯誤",
+    "student_thought_process": "在計算扇形面積時，將弧度轉為角度出錯，或使用 cos 值算錯導致三角形面積偏差。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "誤讀 major/minor segment",
+    "student_thought_process": "正確算出小弓形面積 (約 11)，但選項 C(55) 可能是總面積減去小弓形時的計算錯誤，或是將大扇形面積直接當作答案。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "首先，利用餘弦定理或三角函數，根據半徑 $5$ 與弦長 $8$ 求出圓心角 $\\theta$。",
+   "其次，計算對應扇形的面積 ($\\frac{1}{2}r^2\\theta$) 以及由兩條半徑與弦組成的三角形面積。",
+   "最後，用扇形面積減去三角形面積得到小弓形面積，再用圓總面積減去它即得大弓形面積。"
+  ],
+  "quick_solution_strategy": "先求圓心角，算出小弓形面積，再以圓面積減之。"
+ },
+ "skills": {
+  "topic_id": "T-MEN",
+  "knowledge_point_ids": [
+   "K-MEN-01",
+   "K-MEN-02"
+  ],
+  "formula_ids": [
+   "F-MEN-01",
+   "F-MEN-02",
+   "F-MEN-03",
+   "F-MEN-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

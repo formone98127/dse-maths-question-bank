@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 2",
+  "qno": "29",
+  "hash": "#2022P2Q29"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "平均數與總和關係",
+   "secondary_topics": [
+    "加權平均",
+    "代數方程組"
+   ],
+   "required_formulas": [
+    "\bar{x} = \\frac{\\sum x}{n}",
+    "總重量 = 人數 \\times 平均重量"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "計算錯誤：總和差值分配不均",
+    "student_thought_process": "算出演員總重 3780kg，全組總重 3420kg，差值 -360kg。若誤將差值除以演員人數 60 而非演員加藝伶總人數，會得到錯誤結果。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "概念混淆：忽略人數權重",
+    "student_thought_process": "誤以為平均數差值 6kg 直接對應藝伶平均數，或錯誤地將差值除以演員人數 60 而非總人數 100 來計算藝伶平均數。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "方法論錯誤：邏輯推導方向反了",
+    "student_thought_process": "誤認為演員較重，藝伶平均數應接近但高於某值，或錯誤地將差值加到演員平均數上而非從總和中扣除。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：回想平均數的定義，平均數等於總和除以人數。",
+   "提示 2：先計算所有演員的總重量與所有人的總重量。",
+   "提示 3：利用所有人總重量減去演員總重量，即可得出藝伶的總重量，再除以藝伶人數即得答案。"
+  ],
+  "quick_solution_strategy": "計算演員總重 (60×63)，全組總重 (100×57)，兩者之差為藝伶總重，再除以 40。"
+ },
+ "skills": {
+  "topic_id": "T-STA",
+  "knowledge_point_ids": [
+   "K-STA-01",
+   "K-STA-03"
+  ],
+  "formula_ids": [
+   "F-STA-01",
+   "F-STA-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

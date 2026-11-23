@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 2",
+  "qno": "11",
+  "hash": "#2022P2Q11"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "複利計算",
+   "secondary_topics": [
+    "指數運算",
+    "四捨五入規則"
+   ],
+   "required_formulas": [
+    "A = P(1 + r/n)^{nt}"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "單利誤用",
+    "student_thought_process": "學生忘記了「按月複利」，直接套用單利公式 I=Prt 計算：80000*0.06*4=19200，但選項無此數。若誤以為是簡單加法或計算錯誤導致偏離。更可能是將年利率直接乘以年數再乘本金的某種變體，例如忽略複利效應僅做線性估算，或者將 88000 看錯數字。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "計期錯誤",
+    "student_thought_process": "學生正確使用複利公式，但在計算指數部分 nt 時出錯。例如將 n=12, t=4 誤算為 48 以外的數字，或在計算 (1+0.06/12)^{48} 時手動計算或按鍵順序錯誤（如先算冪再除），導致最終金額偏小約 700。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "四捨五入誤差",
+    "student_thought_process": "學生正確算出總金額約 111825，減去本金 88000 得利息。但在計算過程或最後一步四捨五入時，可能對中間步驟（如每個月利率）保留過少小數位，或者在計算 (1.005)^{48} 時使用近似值導致結果偏大 22。"
+   }
+  },
+  "scaffolding_hints": [
+   "複利公式中，n 代表每年複利次數，t 代表年數，nt 是總複利期數。",
+   "將年利率 6% 除以 12 得到每月利率，再代入公式計算本利和 A。",
+   "利息 = 本利和 - 原始本金，最後結果需四捨五入至整數。"
+  ],
+  "quick_solution_strategy": "套用 A=P(1+r/n)^{nt} 算出總額後減去 P 即得利息。"
+ },
+ "skills": {
+  "topic_id": "T-PCT",
+  "knowledge_point_ids": [
+   "K-PCT-01",
+   "K-PCT-02"
+  ],
+  "formula_ids": [
+   "F-PCT-01",
+   "F-PCT-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-CHAIN"
+   },
+   "B": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

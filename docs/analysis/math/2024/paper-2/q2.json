@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 2",
+  "qno": "2",
+  "hash": "#2024P2Q2"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "指數法則與冪數運算",
+   "secondary_topics": [
+    "負指數的定義",
+    "冪的乘方性質",
+    "冪的除法性質"
+   ],
+   "required_formulas": [
+    "(a^m)^n = a^(mn)",
+    "(ab)^n = a^n b^n",
+    "a^-n = 1/a^n",
+    "a^m / a^n = a^(m-n)"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "冪的乘方運算錯誤",
+    "student_thought_process": "學生計算 (2a)^3 時得到 8a^3，但處理分母時將 (4a^-5)^-1 誤算為 4a^5 或直接忽略係數，導致最終係數變成 2。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "冪的乘方運算錯誤",
+    "student_thought_process": "學生正確處理了 (4a^-5)^-1 得到 4a^5，但計算 (2a)^3 / (4a^5) 時，係數 8/4 算成 32，或是將指數運算混淆。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "負指數處理錯誤",
+    "student_thought_process": "學生在處理分母的負指數時，可能將 (4a^-5)^-1 誤認為只是 a^5 而忽略係數 4，或者在最後一步約分時出錯。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：先觀察分母中的負指數 -1，根據 (x^-1) = 1/x，這會如何改變分母的結構？",
+   "提示 2：處理完負指數後，你現在面對的是兩個冪的除法。請分別回憶係數部分和變數 a 的部分該如何分開計算。",
+   "提示 3：將分子 (2a)^3 展開為 8a^3，分母化簡後為 4a^5，接著計算 8/4 與 a^3/a^5 即可得到最終答案。"
+  ],
+  "quick_solution_strategy": "先化簡分母的負指數，再將分子分母係數與變數分別運算。"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

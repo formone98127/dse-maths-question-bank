@@ -1,0 +1,92 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 2",
+  "qno": "37",
+  "hash": "#2014P2Q37"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "等比數列與指數對數性質",
+   "secondary_topics": [
+    "指數法則",
+    "對數法則",
+    "等差數列"
+   ],
+   "required_formulas": [
+    "$\\frac{a_{n+1}}{a_n} = r$ (常數)",
+    "$\\log_b(x^k) = k \\log_b x$",
+    "$x^{ab} = (x^a)^b$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤認 II 為等比",
+    "student_thought_process": "學生可能將 $m, 2m^2, 3m^4...$ 的係數與指數混合，錯誤認為係數成等差、指數成等差即構成等比，忽略了比值必須恆定的核心定義。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤認 III 為等比",
+    "student_thought_process": "學生可能錯誤運算對數項，認為 $\\log m^2 - \\log m = \\log m$ 與 $\\log m^4 - \\log m^2 = 2\\log m$ 比值不同卻仍選入，或是誤以為底數相同即為等比。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "全選錯誤判斷",
+    "student_thought_process": "學生未能區分指數函數與對數函數在構建等比數列時的差異，將 III 中的項誤判為等比，導致多選。"
+   }
+  },
+  "scaffolding_hints": [
+   "回想等比數列的定義：任意相鄰兩項之比必須為常數 $r$。",
+   "檢查 II 與 III 時，先將各項化簡（利用指數/對數法則）再計算比值。",
+   "觀察 I 中底數相同、指數成等差數列的特性，推導其比值是否為常數。"
+  ],
+  "quick_solution_strategy": "計算各選項相鄰項比值，僅當比值恆定時才為等比數列。"
+ },
+ "skills": {
+  "topic_id": "T-SEQ",
+  "knowledge_point_ids": [
+   "K-SEQ-02",
+   "K-SEQ-03"
+  ],
+  "formula_ids": [
+   "F-SEQ-01",
+   "F-SEQ-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-SEQ-02",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-SEQ-02",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-SEQ-02",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 2",
+  "qno": "34",
+  "hash": "#2022P2Q34"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "十六進制轉換與冪運算",
+   "secondary_topics": [
+    "位值原理",
+    "指數法則"
+   ],
+   "required_formulas": [
+    "$16^n = (4^2)^n = 4^{2n}$",
+    "$\\text{Hex}(D) = 13$"
+   ],
+   "bloom_taxonomy_level": "理解",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "指數係數錯誤",
+    "student_thought_process": "將 $D$ 視為 $13$ 但誤算 $12 \\times 4^{22}$ 部分，或混淆了 $B(11)$ 與 $C(12)$ 的權重係數。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "指數倍率錯誤",
+    "student_thought_process": "正確識別 $B=11, C=12, D=13$，但錯誤地將 $4^{2n}$ 寫成 $4^{2n+2}$（即多乘了 $4^2$）。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "指數與係數雙重錯誤",
+    "student_thought_process": "同時犯了指數倍率錯誤（用 $4^{2n+2}$）與係數計算錯誤（將 $B$ 算成 $300$）。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：十六進制中，$D$ 代表十進制的 $13$。請先將整個十六進制數展開為以 $16$ 為底的冪級數形式。",
+   "提示 2：利用公式 $16^k = (4^2)^k = 4^{2k}$，將底數統一轉換為 $4$。注意 $4^{2k}$ 與 $4^{2k+2}$ 的指數差異。",
+   "提示 3：計算各項係數時，請仔細檢查 $B(11)$ 和 $C(12)$ 對應的 $4$ 的冪次是否正確，避免多乘或少乘 $4^2$"
+  ],
+  "quick_solution_strategy": "將 $16^n$ 轉為 $4^{2n}$，代入 $B=11, C=12, D=13$ 展開計算。"
+ },
+ "skills": {
+  "topic_id": "T-NUM",
+  "knowledge_point_ids": [
+   "K-NUM-01",
+   "K-NUM-02"
+  ],
+  "formula_ids": [
+   "F-NUM-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-CHAIN"
+   },
+   "D": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2015",
+  "paper": "Paper 2",
+  "qno": "24",
+  "hash": "#2015P2Q24"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "幾何軌跡與垂直平分線",
+   "secondary_topics": [
+    "距離公式",
+    "直線方程性質"
+   ],
+   "required_formulas": [
+    "$PA = PB$ 的定義",
+    "$\\sqrt{(x_1-x_2)^2 + (y_1-y_2)^2}$"
+   ],
+   "bloom_taxonomy_level": "理解",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆圓的定義與等距條件",
+    "student_thought_process": "誤以為到兩點距離相等意味著這兩點是直徑端點，忽略了圓上其他點到直徑端點距離不等。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆共線與等距概念",
+    "student_thought_process": "誤認為只要經過 A 和 B 的直線上所有點都滿足 PA=PB，實際上只有中點滿足。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆角平分線與垂直平分線",
+    "student_thought_process": "將到原點 O 的距離關係誤用，或混淆了角平分線（到兩邊距離相等）與垂直平分線（到兩端點距離相等）的定義。"
+   }
+  },
+  "scaffolding_hints": [
+   "回想「垂直平分線」的幾何定義：它上面的任意一點具有什麼特殊性質？",
+   "試著畫出滿足 $PA = PB$ 的幾個點，觀察它們連起來會形成什麼圖形。",
+   "思考：如果 P 在 AB 上，是否可能同時滿足 PA=PB（除了中點外）？"
+  ],
+  "quick_solution_strategy": "根據定義，到兩定点距離相等的點的集合即為該兩点連線的垂直平分線。"
+ },
+ "skills": {
+  "topic_id": "T-CIR",
+  "knowledge_point_ids": [
+   "K-CIR-01",
+   "K-CIR-02"
+  ],
+  "formula_ids": [
+   "F-CIR-01",
+   "F-CIR-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

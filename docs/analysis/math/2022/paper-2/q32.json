@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 2",
+  "qno": "32",
+  "hash": "#2022P2Q32"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "對數函數與指數函數的性質",
+   "secondary_topics": [
+    "線性方程式的截距",
+    "指數底數與係數的關係",
+    "不等式判斷"
+   ],
+   "required_formulas": [
+    "$\\log_a(mn^x) = \\log_a m + x\\log_a n$",
+    "$y = mx+c$ 的截距定義"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 120
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略截距條件導致 m>1",
+    "student_thought_process": "學生誤以為只要指數函數底數小於 1，則 m 必小於 1。未考慮垂直截距 $\\log_a m = 6$ 且 $0<a<1$ 時，m 必須大於 1 才能使對數為正數。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤解水平截距與 n 的關係",
+    "student_thought_process": "學生未能正確利用水平截距 $x=3$ 時 $y=0$ 的條件。若忽略此條件，會錯誤地認為 n 的範圍僅由 $0<a<1$ 決定，而忽略了 $\\log_a m + 3\\log_a n = 0$ 的限制。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "計算 m 與 n 關係時出錯",
+    "student_thought_process": "學生正確推導出 $m>1$，但在處理水平截距條件時，錯誤地得出 $mn^3=1$ 不成立。可能是將 $\\log_a(mn^3)=0$ 誤算為其他形式，或混淆了對數運算規則。"
+   }
+  },
+  "scaffolding_hints": [
+   "將 $y=mn^x$ 代入對數式後，利用對數性質展開成關於 $x$ 的線性方程式形式。",
+   "觀察垂直截距（當 $x=0$）與水平截距（當 $y=0$）對應的方程式條件。",
+   "結合 $0<a<1$ 時對數函數的減函数特性，判斷係數符號與大小關係。"
+  ],
+  "quick_solution_strategy": "展開對數得 $y = \\log_a m + x\\log_a n$，利用截距解出 $m, n$ 關係並判斷不等式。"
+ },
+ "skills": {
+  "topic_id": "T-SEQ",
+  "knowledge_point_ids": [
+   "K-SEQ-01",
+   "K-SEQ-02"
+  ],
+  "formula_ids": [
+   "F-SEQ-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-SEQ-01",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-SEQ-01",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-SEQ-01",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

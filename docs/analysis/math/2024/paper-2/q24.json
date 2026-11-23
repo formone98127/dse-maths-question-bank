@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 2",
+  "qno": "24",
+  "hash": "#2024P2Q24"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "平面幾何變換 (旋轉與反射)",
+   "secondary_topics": [
+    "坐標平面上點的旋轉公式",
+    "點關於直線的反射公式",
+    "座標軸的性質"
+   ],
+   "required_formulas": [
+    "$ (x, y) \\xrightarrow{\\text{逆時針 } 90^\\circ} (-y, x) $",
+    "$ (x, y) \\xrightarrow{\\text{反射於 } x=k} (2k-x, y) $"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "反射公式應用錯誤",
+    "student_thought_process": "學生可能混淆了旋轉後的座標與反射後的座標，誤將 $V$ 的 $y$ 坐標 $-3$ 當作 $W$ 的 $x$ 坐標；或是計算 $2k-x$ 時口算錯誤。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "旋轉公式應用錯誤導致中間值偏差",
+    "student_thought_process": "學生可能正確使用反射公式，但在旋轉步驟出錯：將逆時針 $90^\\circ$ 誤用為順時針或記錯公式，算出 $V(-8, 3)$，再反射得 $x=12$ (D)。若選 C(7)，可能是學生在計算 $2k-x$ 時，將 $x=8$ 誤算為 $4-8=-4$ 但選項無此值，或學生算出 $V(8, -3)$，反射時算成 $4-(-3)=7$ (混淆了 $x,y$ 座標代入公式)。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "旋轉方向或反射軸理解錯誤",
+    "student_thought_process": "學生可能將逆時針旋轉 $90^\\circ$ 誤認為順時針，得出 $V(-8, 3)$；接著對 $x=2$ 反射，計算 $2(2)-(-8)=12$，選 D。這是典型的旋轉方向概念錯誤。"
+   }
+  },
+  "scaffolding_hints": [
+   "回憶點 $(x,y)$ 繞原點逆時針旋轉 $90^\\circ$ 後的坐標變換規則為何？",
+   "求出中間點 $V$ 的坐標後，思考點 $(x,y)$ 關於直線 $x=k$ 反射時，$y$ 坐標不變，$x$ 坐標如何計算？",
+   "將求得的 $V$ 點坐標代入反射公式，注意減法運算的符號處理。"
+  ],
+  "quick_solution_strategy": "先旋轉得 $V(8,-3)$，再反射：$x_W = 2(2)-8 = -4$"
+ },
+ "skills": {
+  "topic_id": "T-TRF",
+  "knowledge_point_ids": [
+   "K-TRF-02",
+   "K-TRF-03"
+  ],
+  "formula_ids": [
+   "F-TRF-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-TRF-02",
+    "formula_id": "F-TRF-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-TRF-02",
+    "formula_id": "F-TRF-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-TRF-02",
+    "formula_id": "F-TRF-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

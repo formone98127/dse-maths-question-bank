@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2025",
+  "paper": "Paper 2",
+  "qno": "14",
+  "hash": "#2025P2Q14"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "直線方程與斜率截距",
+   "secondary_topics": [
+    "不等式判斷",
+    "坐標軸交點分析"
+   ],
+   "required_formulas": [
+    "$y = -\\frac{p}{q}x + \\frac{7}{q}$"
+   ],
+   "bloom_taxonomy_level": "理解",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "截距符號誤判",
+    "student_thought_process": "學生認為 $y$ 軸截距為正即 $q>7$，忽略分母 $q$ 必須為負數才能使截距為正（因分子 7 為正），導致邏輯矛盾。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "斜率與截距關係混淆",
+    "student_thought_process": "學生誤以為 $q>p$ 成立，未考慮 $p,q$ 符號。當 $q<0$ 時，$q$ 必小於正數 7，故 II 錯誤；同時 $p$ 為負，$q$ 亦為負，大小關係需具體數值，不能直接推導 III。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "兩項同時錯誤",
+    "student_thought_process": "學生同時誤判 II 與 III。未從圖形觀察到直線與 $y$ 軸交點在正半軸，推導出 $q<0$，進而否定 II；又因 $p,q$ 皆負，無法斷言 $q>p$"
+   }
+  },
+  "scaffolding_hints": [
+   "將直線方程改寫為斜截式 $y = mx+c$，觀察 $c$ 與圖形中 $y$ 軸交點的關係。",
+   "注意圖形中直線與 $x, y$ 軸的交點位置（正負），這決定了係數 $p, q$ 的符號。",
+   "若 $y$ 軸截距為正且常數項為 7，則分母 $q$ 必須為何種符號？由此推導 $q$ 與 7 的大小關係。"
+  ],
+  "quick_solution_strategy": "由圖知 $y$ 截距為正，故 $-\\frac{7}{q}>0 \\Rightarrow q<0$；又 $x$ 截距為負，故 $-\\frac{7}{p}<0 \\Rightarrow p>0$。因此 I 正確，II,III 錯誤。"
+ },
+ "skills": {
+  "topic_id": "T-LIN",
+  "knowledge_point_ids": [
+   "K-LIN-01",
+   "K-LIN-02"
+  ],
+  "formula_ids": [
+   "F-LIN-01",
+   "F-LIN-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

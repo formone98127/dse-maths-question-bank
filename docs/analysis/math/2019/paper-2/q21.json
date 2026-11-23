@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2019",
+  "paper": "Paper 2",
+  "qno": "21",
+  "hash": "#2019P2Q21"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓的幾何性質",
+   "secondary_topics": [
+    "弦長與弧長的關係",
+    "圓周角定理",
+    "等腰三角形性質"
+   ],
+   "required_formulas": [
+    "圓周角 = 1/2 中央角",
+    "同圓半徑相等"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "弧長誤算",
+    "student_thought_process": "學生可能將 AC=BD 解讀為弧 AC 等於弧 BD，進而錯誤推導出角 AOC 等於角 BOD 且兩者均為 48 度，導致計算出 31 度。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆弦與弧",
+    "student_thought_process": "學生誤以為 AC=BD 代表角 AOC 等於角 BOD 等於 48 度，直接應用圓周角定理算出 24 度後加錯角度，或誤認 ABCD 對稱性導致選 42 度。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "直接抄寫已知條件",
+    "student_thought_process": "學生未進行任何幾何推導，直接將題目給出的角 COD=48 度視為答案，忽略 AC=BD 的條件。"
+   }
+  },
+  "scaffolding_hints": [
+   "思考：在圓中，若兩條弦長度相等（AC=BD），它們所對應的弧長與中央角有何關係？",
+   "提示：利用 OA=OB=OC=OD 構建等腰三角形，觀察三角形 AOC 與三角形 BOD 的全等性。",
+   "引導：求出角 AOB 後，如何在三角形 AOB 中利用內角和定理求角 ABD？"
+  ],
+  "quick_solution_strategy": "AC=BD 推導弧 AC 等於弧 BD，故中央角 AOC 等於 BOD 等於 48 度。半圓總角 180 度減去兩邊得 AOB 為 84 度。三角形 AOB 等腰，底角 ABD 為 42 度。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-05"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

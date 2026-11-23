@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2016",
+  "paper": "Paper 2",
+  "qno": "44",
+  "hash": "#2016P2Q44"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "統計量：四分位數、標準分、標準差",
+   "secondary_topics": [
+    "數據排序",
+    "離散程度評估"
+   ],
+   "required_formulas": [
+    "Q3 = (n+1)/4 * 位置",
+    "Z = (X - mean) / SD",
+    "SD = sqrt(sum((x-mean)^2)/n)"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤判 Q3 位置",
+    "student_thought_process": "學生可能誤以為 Q3 是中間值或計算位置錯誤。實際 n=16，Q3 位於第 5.25 個數據，即 58 分而非 55 分。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤認 Q3 與 SD",
+    "student_thought_process": "學生同時犯了計算 Q3 錯誤（以為是 55）且高估標準差。實際上 SD 約為 11.8，小於 12。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "誤算 Z 分數",
+    "student_thought_process": "學生可能正確判斷 Q3 錯誤，但錯誤計算標準差或 Z 分數，認為佩玲的 Z 分高於 2。"
+   }
+  },
+  "scaffolding_hints": [
+   "第一步：將幹葉圖數據完整寫出並由小到大排序，確認總樣本數 n。",
+   "第二步：計算 Q3 的位置公式為 (n+1)/4，觀察該位置落在哪個具體分數之間進行插值或判斷。",
+   "第三步：估算平均數與標準差（可畫箱形圖輔助），再代入 Z 分數公式判斷佩玲的相對排名是否低於 2 個標準差。"
+  ],
+  "quick_solution_strategy": "排序得 n=16，Q3 為第 5.25 位 (58)；估算 SD≈11.8<12；佩玲分數最高，Z>0，但需精算 Z 值。"
+ },
+ "skills": {
+  "topic_id": "T-CHR",
+  "knowledge_point_ids": [
+   "K-CHR-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-CHR-02",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-CHR-02",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-CHR-02",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

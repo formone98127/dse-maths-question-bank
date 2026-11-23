@@ -1,0 +1,92 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2023",
+  "paper": "Paper 2",
+  "qno": "18",
+  "hash": "#2023P2Q18"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "幾何角度關係",
+   "secondary_topics": [
+    "對頂角性質",
+    "平行線截線性質",
+    "三角形內角和"
+   ],
+   "required_formulas": [
+    "$\\angle_{vertical} = \\angle_{vertical}$",
+    "$\\triangle$ 內角和 $= 180^\\circ$",
+    "同位角/內錯角相等"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤判 III 成立",
+    "student_thought_process": "學生忽略 a+b 與 d 無直接等量關係，錯誤推導 a+b+c=d。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "漏看 I 成立",
+    "student_thought_process": "學生未能識別圖中垂直線或互餘關係，錯誤認為 a+b=90 度不成立。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "過度推論 III",
+    "student_thought_process": "學生將 c+d=180 度與 a+b+c=d 混為一談，未區分角度加總與替換邏輯。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察圖中直線相交處，哪些角是對頂角？",
+   "若兩線垂直，相鄰角之和為何？若平行線被截，內錯角有何關係？",
+   "將 a+b+c=d 代入已知角度關係，檢查是否恆成立。"
+  ],
+  "quick_solution_strategy": "確認 I(互餘)、II(補角) 成立；III 需特定條件，故選 A。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-01",
+   "K-GEO-02"
+  ],
+  "formula_ids": [
+   "F-GEO-01",
+   "F-GEO-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-COND"
+   },
+   "D": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

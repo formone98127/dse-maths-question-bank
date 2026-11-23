@@ -1,0 +1,86 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 2",
+  "qno": "2",
+  "hash": "#2017P2Q2"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "指數運算",
+   "secondary_topics": [
+    "冪的乘方性質",
+    "底數分解"
+   ],
+   "required_formulas": [
+    "$\\left(a^m\\right)^n = a^{mn}$",
+    "$9 = 3^2$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤認為指數為負或零",
+    "student_thought_process": "學生可能混淆了 $0$ 的性質，或者錯誤地認為分母很大時結果趨近於 $0$，忽略了正數冪次運算永遠大於 $0$"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "指數乘法計算錯誤",
+    "student_thought_process": "學生成功將底數轉換為 $3$，但在計算指數 $2 \\times 555 \\times 3444$ 時，錯誤地將 $555 \\times 3444$ 的結果除以了某個數字，或是單純算錯乘積"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "指數乘法計算錯誤",
+    "student_thought_process": "學生正確分解底數，但在計算 $2 \\times 555 \\times 3444$ 時，可能將 $3444$ 看錯或乘法運算出錯，得到 $222$"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "觀察題目中的底數 $9$，思考它與選項中底數 $3$ 的關係。",
+   "回憶冪的乘方法則：$(a^m)^n = a^{mn}$，並將其應用於整個分式。",
+   "先計算指數部分的總乘積：$2 \\times 555 \\times 3444$，再與選項比對。"
+  ],
+  "quick_solution_strategy": "利用 $(a^m)^n=a^{mn}$ 及 $9=3^2$ 將指數合併計算。"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

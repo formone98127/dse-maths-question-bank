@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2025",
+  "paper": "Paper 2",
+  "qno": "24",
+  "hash": "#2025P2Q24"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "極坐標系與幾何",
+   "secondary_topics": [
+    "等邊三角形性質",
+    "餘弦定理"
+   ],
+   "required_formulas": [
+    "極坐標距離公式：$d^2 = r_1^2+r_2^2 - 2r_1r_2\\cos(\\theta_1-\\theta_2)$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤用直角坐標差值平方和",
+    "student_thought_process": "學生可能直接將角度差當作直角邊，計算 $\\sqrt{(2-1)^2+(80-20)^2}$ 的誤讀，或忘記餘弦定理中的夾角餘弦項，導致結果錯誤。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "計算過程出錯",
+    "student_thought_process": "學生正確列出 $r^2+4-4r\\cos 60^\\circ = r^2+1+r\\cos 60^\\circ$ 等式，但在移項或合併同類項時算錯數值，得到錯誤根號。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "未考慮角度範圍限制",
+    "student_thought_process": "學生解出兩個可能的 $r$ 值，但未檢查 $20^\\circ < \\theta < 80^\\circ$ 的限制條件，隨意選取另一個不合適的根號值。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：在極坐標系中計算兩點距離時，不能直接用角度差作為直角邊長，需使用餘弦定理 $d^2 = r_1^2+r_2^2 - 2r_1r_2\\cos(\\Delta\\theta)$。",
+   "提示 2：由於 $\\triangle XYZ$ 為等邊三角形，故 $XY=XZ=YZ$。先計算已知兩點 $X, Y$ 的距離平方，再令其等於含 $r$ 的表達式。",
+   "提示 3：解出關於 $r$ 的一元一次方程後，務必驗證所得角度 $\\theta$ 是否落在題目給定的 $20^\\circ < \\theta < 80^\\circ$ 範圍內。"
+  ],
+  "quick_solution_strategy": "利用餘弦定理算出 $XY^2$，再令 $XZ^2=XY^2$ 解出 $r$，並驗證角度範圍。"
+ },
+ "skills": {
+  "topic_id": "T-TRI",
+  "knowledge_point_ids": [
+   "K-TRI-04"
+  ],
+  "formula_ids": [
+   "F-TRI-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-TRI-04",
+    "formula_id": "F-TRI-04",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-TRI-04",
+    "formula_id": "F-TRI-04",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-TRI-04",
+    "formula_id": "F-TRI-04",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

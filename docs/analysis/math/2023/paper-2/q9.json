@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2023",
+  "paper": "Paper 2",
+  "qno": "9",
+  "hash": "#2023P2Q9"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "多項式除法與餘數定理",
+   "secondary_topics": [
+    "因式定理",
+    "代入法求常數"
+   ],
+   "required_formulas": [
+    "若 $P(x)$ 可被 $(x-k)$ 整除，則 $P(k)=0$",
+    "多項式除以 $(ax+b)$ 的餘數為 $P(-\\frac{b}{a})$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "符號錯誤",
+    "student_thought_process": "算出 $h(-3/2)$ 時，$( -3/2 )^6$ 與 $( -3/2 )^3$ 的符號處理出錯，導致結果為正或絕對值不符。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略整除條件",
+    "student_thought_process": "忘記利用 $h(x)$ 可被 $2x-3$ 整除這一條件來求 $b$，直接假設 $b=0$ 或任意值計算。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "混淆除式",
+    "student_thought_process": "將題目要求的「除以 $2x+3$」誤讀為「除以 $2x-3$」，或將餘數定理中的根號弄反。"
+   }
+  },
+  "scaffolding_hints": [
+   "回想多項式除法中，若除式為一次式 $(ax+b)$，其對應的根為何？",
+   "利用「可被整除」的條件，代入該根可得關於 $a$ 與 $b$ 的關係式。",
+   "將 $x=-\\frac{3}{2}$ 代入原式前，先確認是否已求出 $b$ 的值。"
+  ],
+  "quick_solution_strategy": "由 $h(3/2)=0$ 得 $b$；再算 $h(-3/2)$ 即為所求餘數。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-05"
+  ],
+  "formula_ids": [
+   "F-POL-05"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-POL-05",
+    "formula_id": "F-POL-05",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-POL-05",
+    "formula_id": "F-POL-05",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-POL-05",
+    "formula_id": "F-POL-05",
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

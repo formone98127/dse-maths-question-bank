@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2016",
+  "paper": "Paper 2",
+  "qno": "7",
+  "hash": "#2016P2Q7"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "一元一次不等式組",
+   "secondary_topics": [
+    "不等式的性質",
+    "區間表示法"
+   ],
+   "required_formulas": [
+    "$ax > b \\Rightarrow x > b/a$ (當 $a>0$)",
+    "$ax > b \\Rightarrow x < b/a$ (當 $a<0$, 需變號)"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "忽略不等式方向變化",
+    "student_thought_process": "解第一個不等式時，除以 -3 忘記變號，直接得 x>-7，再與第二個條件取交集錯誤。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "混淆並集與交集邏輯",
+    "student_thought_process": "將兩個不等式的解集誤以為是相加或取中間區間，未理解「且」的交集概念。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤用並集邏輯",
+    "student_thought_process": "將聯立的不等式組誤解為「或」的關係，導致解集變為兩個分開區間的並集。"
+   }
+  },
+  "scaffolding_hints": [
+   "請先分別求出兩個不等式的獨立解集。",
+   "注意當不等式兩邊同時除以負數時，不等號方向必須改變。",
+   "聯立兩個條件時，需找出同時滿足兩者的重疊區域（交集）。"
+  ],
+  "quick_solution_strategy": "分步求解：先化簡再變號，最後取交集。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-05"
+  ],
+  "formula_ids": [
+   "F-EQN-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-CHAIN"
+   },
+   "C": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-CHAIN"
+   },
+   "D": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

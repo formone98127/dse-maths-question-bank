@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2015",
+  "paper": "Paper 2",
+  "qno": "25",
+  "hash": "#2015P2Q25"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "直線方程與係數符號判斷",
+   "secondary_topics": [
+    "斜率概念",
+    "截距與係數關係"
+   ],
+   "required_formulas": [
+    "$x = k$ (垂直線)",
+    "$y = -\\frac{b}{c}x + \\frac{1}{c}$ (一般式轉斜截式)"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略 III 正確性",
+    "student_thought_process": "學生誤判 $c$ 的符號。由圖知 $L_2$ 與 y 軸交點為正，故 $1/c > 0 \\Rightarrow c>0$。III 正確，排除 A。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略 I 正確性",
+    "student_thought_process": "學生誤判 $a$ 的符號。$L_1$ 為垂直線，與 x 軸交點在負半軸，故 $x = 1/a < 0 \\Rightarrow a<0$。I 正確，排除 C。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "同時忽略 I 與 III 正確性",
+    "student_thought_process": "學生完全誤判 $a$ 與 $c$ 的符號，認為兩者皆為負或混淆截距意義，導致選出全對選項。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察直線 $L_1$ 與 x 軸的交點位置，這能告訴我們關於 $a$ 的什麼資訊？",
+   "將 $L_2$ 的方程變形為 $y = mx + k$ 的形式，截距 $k$ 的符號取決於哪個係數？",
+   "綜合上述兩點的結論，判斷哪些陳述是正確的。"
+  ],
+  "quick_solution_strategy": "由圖讀出 $L_1$ 交點負值推 $a<0$；$L_2$ 截距正值推 $c>0$；斜率負推 $b/c<0$ 故 $b,c$ 異號。"
+ },
+ "skills": {
+  "topic_id": "T-LIN",
+  "knowledge_point_ids": [
+   "K-LIN-01",
+   "K-LIN-02"
+  ],
+  "formula_ids": [
+   "F-LIN-01",
+   "F-LIN-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

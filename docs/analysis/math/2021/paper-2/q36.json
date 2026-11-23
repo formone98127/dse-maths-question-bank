@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 2",
+  "qno": "36",
+  "hash": "#2021P2Q36"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "等比數列性質",
+   "secondary_topics": [
+    "不等式基本性質",
+    "代數變形技巧"
+   ],
+   "required_formulas": [
+    "等比數列定義：$\\frac{b}{a}=\\frac{c}{b}=r$",
+    "等比中項公式：$ac=b^2$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆等差與等比性質",
+    "student_thought_process": "誤以為等比數列滿足 $p+s=q+r$（這是等差數列性質），忽略了公比對加法的非線性影響。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略公比範圍限制",
+    "student_thought_process": "假設所有等比數列必為單調遞增，忽略了 $r<1$ 或 $r<0$ 時大小關係可能顛倒的情況。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "同時犯下 B 與 C 錯誤",
+    "student_thought_process": "既誤用等差性質 $p+s=q+r$，又錯誤假設數列必遞增，導致排除正確選項 I。"
+   }
+  },
+  "scaffolding_hints": [
+   "回想等比數列的定義：後一項除以前一項等於常數公比 $r$。",
+   "觀察選項 I 與 II 的形式，思考哪種運算（乘除或加減）能保持比例關係不變。",
+   "嘗試代入具體數字驗證：例如取 $2, 4, 8, 16$ 檢查各選項；再取 $16, 8, 4, 2$ 檢驗大小關係是否恆成立。"
+  ],
+  "quick_solution_strategy": "利用等比中項性質，由 $\\frac{q}{p}=\\frac{r}{q}=\\frac{s}{r}$ 推導出 $ps=qr$"
+ },
+ "skills": {
+  "topic_id": "T-SEQ",
+  "knowledge_point_ids": [
+   "K-SEQ-03"
+  ],
+  "formula_ids": [
+   "F-SEQ-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-SEQ-03",
+    "formula_id": "F-SEQ-03",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-SEQ-03",
+    "formula_id": "F-SEQ-03",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-SEQ-03",
+    "formula_id": "F-SEQ-03",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

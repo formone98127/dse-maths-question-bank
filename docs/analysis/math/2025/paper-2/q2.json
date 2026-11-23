@@ -1,0 +1,86 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2025",
+  "paper": "Paper 2",
+  "qno": "2",
+  "hash": "#2025P2Q2"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "因式分解，平方差公式",
+   "secondary_topics": [
+    "完全平方公式",
+    "多項式乘法展開"
+   ],
+   "required_formulas": [
+    "$x^2 - y^2 = (x+y)(x-y)$",
+    "$(a+b)^2 = a^2 + 2ab + b^2$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "符號處理錯誤",
+    "student_thought_process": "學生正確識別出 $x=6$，但在展開 $(3m+4n)^2$ 時，忘記將 $b^2$ 項的符號變號。他們認為 $(3m+4n)^2 = (3m-4n)^2$，導致最後一項符號錯誤，未注意到平方差公式要求兩因式中對應項符號相反。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "完全平方展開錯誤",
+    "student_thought_process": "學生在處理 $(3m+4n)^2$ 時，不僅忘記變號，還錯誤地將中間項 $2ab$ 的符號也搞錯了。他們可能誤以為 $(a+b)^2 = a^2 + b^2$，完全忽略了交叉項的存在或其正確符號，導致兩個因式中的 $m, n$ 符號都與原題不符。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "平方差公式誤用",
+    "student_thought_process": "學生試圖套用平方差公式，但錯誤地認為兩個因式中的所有項符號都必須與原多項式相反。他們沒有理解平方差公式 $(A-B)(A+B)$ 中，$B$ 項在一個因式中變號，另一個不變號的結構，而是將所有項都取反。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：觀察題目形式 $36 - (\\text{某式})^2$，這符合平方差公式 $x^2 - y^2 = (x+y)(x-y)$ 的結構。",
+   "提示 2：將 $36$ 寫成 $6^2$，令 $y = 3m+4n$。請回想 $(a+b)^2$ 展開後各項的符號變化規則。",
+   "提示 3：比較選項中兩個因式與原題的關係。正確答案應為 $(6+(3m+4n))(6-(3m+4n))$，請檢查哪個選項符合此結構。"
+  ],
+  "quick_solution_strategy": "利用平方差公式 $x^2-y^2=(x+y)(x-y)$，其中 $x=6, y=3m+4n$，直接代入即可。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-03"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CHAIN"
+   },
+   "D": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

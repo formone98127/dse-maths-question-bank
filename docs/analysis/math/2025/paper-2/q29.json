@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2025",
+  "paper": "Paper 2",
+  "qno": "29",
+  "hash": "#2025P2Q29"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "統計量：四分位數間距",
+   "secondary_topics": [
+    "棒形圖讀圖",
+    "累積頻率計算",
+    "中位數概念"
+   ],
+   "required_formulas": [
+    "$IQR = Q3 - Q1$"
+   ],
+   "bloom_taxonomy_level": "理解",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "誤算 Q3 位置",
+    "student_thought_process": "將總人數 12 除以 4 得 3，直接取第 3 個數據點作為 Q3 (6)，未考慮累積頻率分佈，導致計算出 6-4=2。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆中位數與 Q1",
+    "student_thought_process": "誤以為棒形圖中間最高的一格 (6 本) 是中位數或 Q1，直接讀取數據值 4 或 5 進行減法，未透過累積頻率定位。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "誤用極差概念",
+    "student_thought_process": "將最大頻數 (6) 與最小非零頻數 (1) 相減，或僅計算圖形範圍跨度，完全跳過四分位數定義。"
+   }
+  },
+  "scaffolding_hints": [
+   "要計算四分位數間距 (IQR)，我們首先需要從棒形圖中讀取每個閱書數目的「頻數」(人數)。",
+   "請將所有頻數加總得到樣本總量 $n$，並計算第一四分位數位置 ($\\frac{n+1}{4}$) 與第三四分位數位置 ($\\frac{3(n+1)}{4}$) 所對應的累積頻率。",
+   "根據題目提供的棒形圖數據，第 1 四分位數 $Q_1$ 對應的閱書數為 4 本，第 3 四分位數 $Q_3$ 對應的閱書數為 5 本，兩者相減即得答案。"
+  ],
+  "quick_solution_strategy": "讀取頻數求總人數 $n=12$，定位 $Q_1$ (第 4 人) 與 $Q_3$ (第 9 人) 對應的閱書數，計算差值。"
+ },
+ "skills": {
+  "topic_id": "T-STA",
+  "knowledge_point_ids": [
+   "K-STA-01",
+   "K-STA-02"
+  ],
+  "formula_ids": [
+   "F-STA-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

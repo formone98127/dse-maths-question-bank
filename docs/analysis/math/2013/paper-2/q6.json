@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 2",
+  "qno": "6",
+  "hash": "#2013P2Q6"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "一元二次方程式",
+   "secondary_topics": [
+    "平方根性質",
+    "絕對值概念"
+   ],
+   "required_formulas": [
+    "\\sqrt{x^2} = |x|",
+    "(a-b)^2 = a^2 - 2ab + b^2"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略負根",
+    "student_thought_process": "學生開平方後只取正根 x-k=2k，解得 x=3k，忘記了另一種情況 x-k=-2k。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "符號運算錯誤",
+    "student_thought_process": "學生可能將方程誤讀為 (x-k)^2=4k^2+2k(x-k) 或其他複雜變形，導致計算出 5k。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆平方根定義",
+    "student_thought_process": "學生錯誤認為 sqrt(4k^2)=2k 且忽略了絕對值，或將 x-k=-2k 誤算為 x=-3k。"
+   }
+  },
+  "scaffolding_hints": [
+   "思考：對兩邊開平方時，記得考慮正負兩種情況嗎？",
+   "提示：sqrt(4k^2) 等於多少？是單純的 2k 還是與 k 的符號有關？",
+   "引導：分別解 x-k=2k 和 x-k=-2k，看看能得到哪兩個解。"
+  ],
+  "quick_solution_strategy": "兩邊開平方得 x-k = pm 2k，移項合併同類項即可。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

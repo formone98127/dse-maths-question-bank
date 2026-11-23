@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 2",
+  "qno": "24",
+  "hash": "#2017P2Q24"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "直線方程式與斜率",
+   "secondary_topics": [
+    "垂直直線的斜率關係",
+    "截距的定義"
+   ],
+   "required_formulas": [
+    "$ m_{\\perp} = -1/m $",
+    "$ y-y_1 = m(x-x_1) $"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "截距計算錯誤",
+    "student_thought_process": "算出斜率 -9/5 後，代入 $x=-3$ 時，誤將 $-(-3)$ 視為減去 3 而非加上 15，導致常數項算成 27。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆垂直與平行",
+    "student_thought_process": "誤以為垂直直線的係數只需互換位置，直接沿用原直線 $9x-5y$ 的係數結構，未改變斜率符號關係。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆垂直與平行且計算錯誤",
+    "student_thought_process": "同時犯下兩個錯誤：一是沿用原直線係數（視為平行），二是隨意將常數項改為 27，完全忽略截距條件。"
+   }
+  },
+  "scaffolding_hints": [
+   "回憶兩直線垂直時，其斜率 $m_1$ 與 $m_2$ 的乘積關係為何？",
+   "將原直線化為斜截式 $y=mx+c$，找出其斜率後，如何設定垂直直線的斜率？",
+   "已知 $x$ 截距為 $-3$，代表該點坐標為 $(-3, 0)$，請利用點斜式寫出方程。"
+  ],
+  "quick_solution_strategy": "先求原直線斜率，取負倒數得新斜率，再代入點 $(-3,0)$ 定常數項。"
+ },
+ "skills": {
+  "topic_id": "T-LIN",
+  "knowledge_point_ids": [
+   "K-LIN-01",
+   "K-LIN-02"
+  ],
+  "formula_ids": [
+   "F-LIN-01",
+   "F-LIN-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

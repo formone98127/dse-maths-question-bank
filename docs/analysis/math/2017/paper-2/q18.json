@@ -1,0 +1,86 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 2",
+  "qno": "18",
+  "hash": "#2017P2Q18"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "等腰三角形性質與平行線角度計算",
+   "secondary_topics": [
+    "圓內接四邊形（若涉及）, 三角形內角和定理"
+   ],
+   "required_formulas": [
+    "$\\triangle ABC$ 中 $AB=BC \\Rightarrow \\angle BAC = \\angle BCA$",
+    "$AE // BC \\Rightarrow \\angle EAC + \\angle BCA = 180^\\circ$ (同旁內角) 或 $\\angle DAE = \\angle BCA$ (錯位角，視點而定)",
+    "$\\triangle ADC$ 中 $AC=AD \\Rightarrow \\angle ACD = \\angle ADC$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "錯算同旁內角關係",
+    "student_thought_process": "學生可能誤以為 $\\angle EAC + \\angle BCA = 180^\\circ$ 時直接將 $x$ 視為互餘而非互補，導致計算出 $56^\\circ$。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆等腰三角形底角",
+    "student_thought_process": "學生可能將 $AC=AD$ 的等腰三角形誤判為 $AB=AC$，導致設錯未知數關係。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "忽略平行線條件",
+    "student_thought_process": "學生可能完全忽略 $AE // BC$ 的條件，僅憑直覺或錯誤圖形想像選出此值。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察題目中的平行線 $AE // BC$，思考這兩條線被截線 $AC$ 所截時，會產生什麼角度關係？",
+   "利用 $AB=BC$ 與 $AC=AD$ 這兩個等腰條件，將圖形中的未知角用同一個變數（例如設 $\\angle BCA = x$）表示出來。",
+   "在 $\\triangle ABC$ 中，三個內角之和為 $180^\\circ$，請將前述步驟得到的角度關係代入此公式求解。"
+  ],
+  "quick_solution_strategy": "設 $\\angle BCA=x$，由平行得 $\\angle EAC=180-x$，再由等腰三角形性質列方程解出 $x$。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-05"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

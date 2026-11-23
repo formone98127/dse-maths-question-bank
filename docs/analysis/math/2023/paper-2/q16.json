@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2023",
+  "paper": "Paper 2",
+  "qno": "16",
+  "hash": "#2023P2Q16"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓的幾何性質與面積計算",
+   "secondary_topics": [
+    "相似三角形",
+    "畢氏定理"
+   ],
+   "required_formulas": [
+    "圓內接直徑所對角為直角 ($90^\\circ$)",
+    "圓面積公式 $A=\\pi r^2$",
+    "三角形面積公式 $A=\\frac{1}{2}bh$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 180
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "忽略圓心位置導致半徑計算錯誤",
+    "student_thought_process": "學生可能誤以為 $G$ 是圓 $BEDF$ 的圓心，直接以 $AG$ 或 $CG$ 作為半徑計算面積，忽略了 $BD$ 與 $EF$ 交於不同點的事實。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆兩個圓的半徑關係",
+    "student_thought_process": "學生可能正確求出 $BG$ 但忘記加上小圓 $BEDF$ 的扇形部分，或者將大圓面積減去錯誤的三角形面積。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "近似值取捨過早或計算誤差",
+    "student_thought_process": "學生在計算 $\\pi$ 的倍數時，可能使用了 $3.14$ 而非保留符號直到最後一步，導致結果偏離正確值。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "觀察圖形，$AC$ 是圓 $ABCD$ 的直徑，這意味著什麼關於角 $ABC$ 和角 $ADC$ 的性質？",
+   "同樣地，$BD$ 是圓 $BEDF$ 的直徑，這對點 $E$、$F$ 與 $G$ 的關係有何啟示？特別注意 $G$ 點在兩個圓中的角色。",
+   "陰影區域的面積等於大圓半圓面積減去三角形 $ABG$ 加上小圓扇形 $EDF$ 嗎？請先確定各段線長，再組合圖形面積。"
+  ],
+  "quick_solution_strategy": "利用直徑對角為直角求 $BC$、$CD$；確認 $G$ 為小圓圓心後求小圓半徑；計算大圓扇形減三角形加小圓扇形之總和。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-05"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

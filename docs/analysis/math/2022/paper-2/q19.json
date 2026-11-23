@@ -1,0 +1,86 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 2",
+  "qno": "19",
+  "hash": "#2022P2Q19"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "全等三角形與角度計算",
+   "secondary_topics": [
+    "等邊三角形性質",
+    "三角形內角和定理"
+   ],
+   "required_formulas": [
+    "\\triangle ADE \\cong \\triangle CEB (SAS)",
+    "\\angle AEB = 180^\\circ - \\angle CED"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "角度減法錯誤",
+    "student_thought_process": "算出 \\angle CED=38^\\circ 後，誤以為 \\angle AEB = 90-38=52 或類似錯誤運算，未正確利用互補關係求 \\angle AEB。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "錯認全等對應邊",
+    "student_thought_process": "認為 AD=CE 但忽略 AB=BC，錯誤判定 \\triangle ABD\\cong\\triangle BCE，導致角度關係混亂。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "餘角計算失誤",
+    "student_thought_process": "正確算出 \\angle CED=38^\\circ，但在求 \\angle AEB 時，錯誤地將 90-38 當成 78（實際應為 52），或混淆互補角概念。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "觀察 \\triangle ABD 與 \\triangle CEB，利用等邊三角形性質 (AB=BC, \\angle A = \\angle C) 及已知 AD=CE。",
+   "證明 \\triangle ABD \\cong \\triangle CEB 後，推導出對應角 \\angle ABD = \\angle CBE。",
+   "計算 \\angle CBD + \\angle CBE = \\angle ABC = 60^\\circ$，進而求出 \\angle AEB$"
+  ],
+  "quick_solution_strategy": "證全等得角相等，利用 60 度減已知角求互補角。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-05"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

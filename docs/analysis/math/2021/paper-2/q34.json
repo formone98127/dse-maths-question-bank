@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 2",
+  "qno": "34",
+  "hash": "#2021P2Q34"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "對數函數與線性關係",
+   "secondary_topics": [
+    "指數法則",
+    "坐標軸截距含義"
+   ],
+   "required_formulas": [
+    "$\\log_{a}(mn) = \\log_a m + \\log_a n$",
+    "$\\log_{a}(m^k) = k \\log_a m$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 120
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "截距轉換錯誤",
+    "student_thought_process": "學生誤將 $y$ 軸截距當作 $\\log y$ 的係數，而非指數。正確應為 $\\log x + k \\log y = c$，若 $k=2$ 則得 $xy^2=c$，但圖中斜率與截距關係顯示 $y$ 的係數應為負或分母形式，此選項混淆了 $x$ 與 $y$ 的權重分配。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "截距轉換錯誤",
+    "student_thought_process": "學生正確識別出線性關係形式，但誤判 $x$ 與 $y$ 的係數大小。圖中 $x$ 軸截距對應 $\\log x = c$，$y$ 軸截距對應 $\\log y = k$，若斜率為正且大於 1，則 $y$ 的係數應小於 $x$ 的係數（或反之），此選項將 $x$ 的權重設為 2，與圖形不符。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "截距數值讀取錯誤",
+    "student_thought_process": "學生正確推導出形式 $\\frac{y^k}{x}=c$，但在計算截距時，將 $x$ 軸截距誤認為是 $2$（對應 $\\log x = 2 \\implies x=25$），而實際上圖形顯示 $x$ 軸截距為 $1$（即 $\\log_5 x = 1$）。此導致常數項計算錯誤，將 $625$ 的位置放錯或係數搞混。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察圖形：當 $y=1$ 時（$\\log_5 y = 0$），$x$ 的截距是多少？這代表 $\\log_5 x$ 的值。",
+   "觀察圖形：當 $x=1$ 時（$\\log_5 x = 0$），$y$ 的截距是多少？這代表 $\\log_5 y$ 的值。",
+   "利用對數加法法則將兩軸截距合併成一個單一的指數式方程，並代入截距數值驗證常數項。"
+  ],
+  "quick_solution_strategy": "由截距得 $-\\log x + 2\\log y = 4$，整理為 $\\log(y^2/x)=4$，故 $y^2/x=5^4=625$"
+ },
+ "skills": {
+  "topic_id": "T-FUN",
+  "knowledge_point_ids": [
+   "K-FUN-01",
+   "K-FUN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

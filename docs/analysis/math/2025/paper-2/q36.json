@@ -1,0 +1,92 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2025",
+  "paper": "Paper 2",
+  "qno": "36",
+  "hash": "#2025P2Q36"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "線性規劃",
+   "secondary_topics": [
+    "二元一次不等式",
+    "直線方程式",
+    "區間端點比較"
+   ],
+   "required_formulas": [
+    "直線截距式與一般式轉換",
+    "兩直線交點座標計算公式",
+    "目標函數在可行域頂點取極值定理"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "端點計算錯誤",
+    "student_thought_process": "算出交點後，代入目標函數時將 $x$ 或 $y$ 的符號搞錯，導致結果偏小，誤選最小值。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "交點求解錯誤",
+    "student_thought_process": "解聯立方程組時，消元法步驟出錯，算出的交點座標不滿足原不等式條件。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略可行域限制",
+    "student_thought_process": "忘記檢查解是否在可行域內，直接將目標函數對 $x$ 的係數放大計算，得到不存在的虛假最大值。"
+   }
+  },
+  "scaffolding_hints": [
+   "線性規劃問題中，目標函數的最大值通常出現在可行域的頂點（邊界交點）上。",
+   "請先繪製或想像三條直線 $x=11$、$4x+5y-19=0$ 與 $7x-6y+11=0$，找出它們圍成的封閉區域。",
+   "計算出所有相鄰邊界的交點座標，並將這些頂點代入目標函數 $8x-6y+11$ 比較大小即可。"
+  ],
+  "quick_solution_strategy": "解聯立方程求可行域三個頂點，代入 $8x-6y+11$ 比較即得最大值。"
+ },
+ "skills": {
+  "topic_id": "T-LIN",
+  "knowledge_point_ids": [
+   "K-LIN-01",
+   "K-LIN-02"
+  ],
+  "formula_ids": [
+   "F-LIN-01",
+   "F-LIN-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

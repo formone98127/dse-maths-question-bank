@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 2",
+  "qno": "44",
+  "hash": "#2014P2Q44"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "標準分 (Z-score)",
+   "secondary_topics": [
+    "平均值與標準差關係",
+    "線性變換"
+   ],
+   "required_formulas": [
+    "$z = \\frac{x - \\mu}{\\sigma}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "誤用標準差為平均值",
+    "student_thought_process": "將標準分 -3 與 2 直接平均得 -0.5，再誤以為標準差是 1，算出 8。或單純計算 (55+95)/2=75 後選錯。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤解標準分定義",
+    "student_thought_process": "認為標準分 -3 代表低於平均 3 個標準差，2 代表高於平均 2 個標準差，直接相加得 5 或混淆數值意義。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "忽略標準差一致性",
+    "student_thought_process": "正確算出標準差為 10，但計算平均值時用錯公式，如 $55 - (-3) + 95 - 2$ 等錯誤運算。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "回憶標準分 $z$ 的定義公式，它連結了原始分數 $x$、平均值 $\\mu$ 與標準差 $\\sigma$。",
+   "觀察題目中有兩個學生，他們的標準差 $\\sigma$ 必須是相同的常數，利用此條件建立等式。",
+   "先求出共同的標準差 $\\sigma$，再將任一學生的資料代入公式解出平均值 $\\mu$。"
+  ],
+  "quick_solution_strategy": "由兩組數據列出 $55-\\mu = -3\\sigma$ 與 $95-\\mu = 2\\sigma$，相減求 $\\sigma=10$，代回求 $\\mu=85$"
+ },
+ "skills": {
+  "topic_id": "T-STA",
+  "knowledge_point_ids": [
+   "K-STA-01",
+   "K-STA-02"
+  ],
+  "formula_ids": [
+   "F-STA-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

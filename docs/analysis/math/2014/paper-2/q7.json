@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 2",
+  "qno": "7",
+  "hash": "#2014P2Q7"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "不等式解法",
+   "secondary_topics": [
+    "複合不等式處理",
+    "除負數變號規則"
+   ],
+   "required_formulas": [
+    "若 a < b < c，則需滿足 a < x 且 x < c"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "忽略右邊不等式",
+    "student_thought_process": "只解 -3x < 6 得 x > -2，完全忘記處理 6 < 2x 這部分條件。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "除數處理錯誤",
+    "student_thought_process": "解右邊得 x > 3，但左邊算成 -3x/6=x>0.5 或混淆數字，選出中間值。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "未合併解集",
+    "student_thought_process": "正確算出 x > -2 與 x > 3，但誤以為要取交集卻寫成並集或邏輯混亂。"
+   }
+  },
+  "scaffolding_hints": [
+   "複合不等式 $A < Bx < C$ 需同時滿足左邊與右邊兩個條件。",
+   "解不等式時，若兩邊除以負數，不等號方向必須改變。",
+   "將題目拆成 $-3x < 6$ 與 $6 < 2x$ 分別求解後取交集。"
+  ],
+  "quick_solution_strategy": "分拆為兩個不等式：解 -3x<6 得 x>-2；解 6<2x 得 x>3，取交集得 x>3。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-05"
+  ],
+  "formula_ids": [
+   "F-EQN-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-COND"
+   },
+   "B": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

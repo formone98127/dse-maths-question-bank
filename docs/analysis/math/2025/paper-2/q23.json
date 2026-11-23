@@ -1,0 +1,91 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2025",
+  "paper": "Paper 2",
+  "qno": "23",
+  "hash": "#2025P2Q23"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "幾何相似與三角比",
+   "secondary_topics": [
+    "直角三角形性質",
+    "正切函數定義",
+    "角度關係推導"
+   ],
+   "required_formulas": [
+    "$\\tan \\theta = \\frac{對邊}{鄰邊}$",
+    "$\\triangle ABC \\sim \\triangle CAD$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 120
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆相似比對應邊",
+    "student_thought_process": "學生可能認為 $\\tan \\angle ACB$ 在 $\\triangle ABC$ 中為 $AB/AC$，但題目選項給出 $AD$。若誤判相似比例關係，會將 $AC$ 錯換成 $AD$"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆斜邊與直角邊",
+    "student_thought_process": "學生正確算出 $\\tan \\angle ACB = AB/AC$，但誤以為 $AC=CD$ 或因圖形直觀誤判 $AC$ 與 $CD$ 長度關係而選此項"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "相似三角形對應邊寫錯",
+    "student_thought_process": "學生能推導出 $\\tan \\angle ADC = AC/CD$，但在將比例式轉換時計算錯誤，或誤以為 $BC/CD$ 是正確比例"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察題目條件：$\\angle ABC+\\angle ADC=90^\\circ$ 且 $\\angle ACD=\\angle BAC=90^\\circ$，這暗示了兩個直角三角形之間可能存在相似關係。",
+   "確認 $\\triangle ABC$ 與 $\\triangle CAD$（注意頂點順序）是否相似？若相似，請寫出對應的邊比例式。",
+   "利用正切定義：在直角三角形中，某角的正切值等於對邊除以鄰邊。將相似比代入即可驗證選項。"
+  ],
+  "quick_solution_strategy": "證明 $\\triangle ABC \\sim \\triangle CAD$，得對應邊比例 $\\frac{BC}{AD}=\\frac{AC}{CD}$，而 $\\tan \\angle ADC=\\frac{AC}{CD}$，故選 C。"
+ },
+ "skills": {
+  "topic_id": "T-TRI",
+  "knowledge_point_ids": [
+   "K-TRI-01",
+   "K-TRI-02"
+  ],
+  "formula_ids": [
+   "F-TRI-01",
+   "F-TRI-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

@@ -1,0 +1,92 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 2",
+  "qno": "25",
+  "hash": "#2017P2Q25"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "極坐標與直角坐標轉換",
+   "secondary_topics": [
+    "直線斜率公式",
+    "點到直線距離公式",
+    "三角函數值 (30°/60°)"
+   ],
+   "required_formulas": [
+    "$x = r \\cos \\theta$",
+    "$y = r \\sin \\theta$",
+    "$d = \\frac{|Ax_0 + By_0 + C|}{\\sqrt{A^2+B^2}}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "忽略根號或角度轉換錯誤",
+    "student_thought_process": "學生可能正確算出 P( -3/2, 3√3/2 )，但在計算直線斜率時將 60° 誤認為 30° 導致斜率為 1/√3，最終距離算成 2。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆角度與半徑關係",
+    "student_thought_process": "學生可能誤以為 Q(4, 280°) 到 PR 的距離等於 Q 到原點距離減去某固定值，或錯誤地將 30° 角對應的邊長直接當作答案 3。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "斜率符號或分母計算錯誤",
+    "student_thought_process": "學生可能正確轉換坐標，但在求直線方程時，將 $\\sqrt{3}$ 的係數搞錯符號或大小，導致分子分母約分後多餘一個根號。"
+   }
+  },
+  "scaffolding_hints": [
+   "第一步：利用公式 $x=r\\cos\\theta, y=r\\sin\\theta$ 將 P、R 的極坐標轉換為直角坐標，並觀察其幾何特徵。",
+   "第二步：由 P、R 兩點求出直線 PR 的斜率與一般式方程 $Ax+By+C=0$。",
+   "第三步：代入 Q 點直角坐標至點到直線距離公式進行計算。"
+  ],
+  "quick_solution_strategy": "先轉 P,R 為直角坐標，發現 PR 垂直於 x 軸或斜率固定，再代公式求距。"
+ },
+ "skills": {
+  "topic_id": "T-TRI",
+  "knowledge_point_ids": [
+   "K-TRI-01",
+   "K-TRI-02"
+  ],
+  "formula_ids": [
+   "F-TRI-01",
+   "F-TRI-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

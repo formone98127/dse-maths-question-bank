@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 2",
+  "qno": "2",
+  "hash": "#2022P2Q2"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "指數法則",
+   "secondary_topics": [
+    "冪的乘法",
+    "冪的除法",
+    "冪的乘方"
+   ],
+   "required_formulas": [
+    "$a^m \\cdot a^n = a^{m+n}$",
+    "\\frac{a^m}{a^n} = a^{m-n}",
+    "(a^m)^n = a^{mn}",
+    "$81 = 3^4$",
+    "$27 = 3^3$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "冪次消去錯誤",
+    "student_thought_process": "學生計算分子分母指數差時，可能將 $2n+3$ 與 $2(n+1)$ 直接相減得 $n+1$，再誤以為底數變為 3 後需再調整，或完全忽略底數轉換導致結果為常數。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "冪次乘法錯誤",
+    "student_thought_process": "學生在處理分母 $(27^{n+1})^2$ 時，可能將指數 $2(n+1)$ 展開為 $2n+2$ 後，與分子 $2n+3$ 相減得 $1$，卻錯誤地將底數轉換係數 $4$ 乘入指數，或誤用 $(a^m)^n=a^{m+n}$。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "完全忽略底數轉換",
+    "student_thought_process": "學生未將 $81$ 與 $27$ 轉換為同底數 $3$，直接對指數進行複雜運算如 $(2n+3) - 2(n+1)$ 但未考慮底數差異，導致係數錯誤累加。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察題目中的所有數字 $81$、$27$ 與 $3$ 之間的關係，嘗試將它們統一為同一個底數。",
+   "回顧指數法則：$(a^m)^n = a^{mn}$ 以及同底數冪的除法法則 $\\frac{a^x}{a^y} = a^{x-y}$。",
+   "先化簡分母的冪，再將分子與分母轉換為以 $3$ 為底的指數式進行相減運算。"
+  ],
+  "quick_solution_strategy": "將 $81=3^4, 27=3^3$ 代入，化簡分母指數，最後合併分子分母指數。"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

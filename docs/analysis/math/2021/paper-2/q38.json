@@ -1,0 +1,93 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 2",
+  "qno": "38",
+  "hash": "#2021P2Q38"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "平面幾何與座標解析",
+   "secondary_topics": [
+    "相似三角形性質",
+    "畢氏定理",
+    "直線方程式"
+   ],
+   "required_formulas": [
+    "$d = \\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$",
+    "分點公式：若 $P$ 分割 $AB$ 為 $AP:PB=m:n$, 則 $P = \\frac{nA+mB}{m+n}$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 180
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "四捨五入過早導致誤差累積",
+    "student_thought_process": "學生計算出精確值約為 728.9，但可能因中間步驟保留小數位數不足（如僅取兩位），或錯誤地將 728.9 四捨五入為 728，而非最接近的整數 729。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆相似比導致比例錯誤",
+    "student_thought_process": "學生在建立相似三角形時，搞混了對應邊的比例關係。例如將 $AE$ 與 $CG$ 直接相減或相加來尋找比例，而非正確利用平行線截割定理（Thales's theorem）找出 $AH:HF$ 的正確比值，導致最終距離偏大。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "座標設定方向錯誤或計算筆誤",
+    "student_thought_process": "學生在設定座標時，可能將 $B$ 點設為原點但搞錯 $x,y$ 軸的正負方向，或者在計算 $H$ 點坐標後代入畢氏定理時出現簡單的加法/乘法筆誤，導致結果比正確值大 1。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：建立直角座標系，令 $B$ 為原點 $(0,0)$，寫出 $A, C, D$ 及 $E, F, G$ 的坐標。",
+   "提示 2：利用兩點式寫出直線 $AF$ 與 $EG$ 的方程式，並聯立求解交點 $H$ 的精確坐標（保留分數形式以減少誤差）。",
+   "提示 3：計算 $D$ 到 $H$ 的距離時，使用畢氏定理，最後再對結果進行四捨五入至最接近的整數。"
+  ],
+  "quick_solution_strategy": "設定座標系求交點 $H$ 坐標，再用畢氏定理算 $DH$ 長度並四捨五入。"
+ },
+ "skills": {
+  "topic_id": "T-MEN",
+  "knowledge_point_ids": [
+   "K-MEN-01",
+   "K-MEN-02"
+  ],
+  "formula_ids": [
+   "F-MEN-01",
+   "F-MEN-02",
+   "F-MEN-03",
+   "F-MEN-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

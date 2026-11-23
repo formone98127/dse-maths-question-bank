@@ -1,0 +1,86 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 2",
+  "qno": "31",
+  "hash": "#2024P2Q31"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "指數法則與最大公因數 (H.C.F.)",
+   "secondary_topics": [
+    "字串運算",
+    "冪的性質"
+   ],
+   "required_formulas": [
+    "$a^m \\cdot a^n = a^{m+n}$",
+    "\\text{H.C.F.}(u^a v^b w^c, u^d v^e w^f) = u^{\\min(a,d)} v^{\\min(b,e)} w^{\\min(c,f)}$"
+   ],
+   "bloom_taxonomy_level": "理解",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "低估指數",
+    "student_thought_process": "學生計算 $u$ 的指數時，可能將 $2+3$ 誤算為 $1$，或是忘記相加直接取最小值但選錯數。對於 $v$ 則正確取了 $3$ 的最小值，顯示部分混淆。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤解 H.C.F. 定義",
+    "student_thought_process": "學生將題目誤讀為求 L.C.M. (最小公倍數)，因此直接取各變數指數的最大值，導致選出 C 選項。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "錯誤相加指數",
+    "student_thought_process": "學生誤以為 H.C.F. 涉及將指數相加，特別是對 $u$ 取了 $2+3=5$ (未在選項) 或單純亂數選擇較大的指數組合，未能正確識別最小值。"
+   }
+  },
+  "scaffolding_hints": [
+   "H.C.F. (最大公因數) 是兩個式子共同擁有的最大因子，對於每個變數，我們應該取它們指數中的「最小值」。",
+   "請分別列出第一個式子 $u^2 v^3 w^1$ 和第二個式子 $u^2 v^3 w^4$ 中各變數的指數。",
+   "比較每組指數：$u$ 為 $(2, 2)$，$v$ 為 $(3, 3)$，$w$ 為 $(1, 4)$，找出每組的最小值並組合。"
+  ],
+  "quick_solution_strategy": "對每個變數取指數最小值：$u^{\\min(2,2)} v^{\\min(3,3)} w^{\\min(1,4)} = u^2 v^3 w^1$"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

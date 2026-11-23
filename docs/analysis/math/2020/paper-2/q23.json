@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2020",
+  "paper": "Paper 2",
+  "qno": "23",
+  "hash": "#2020P2Q23"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "三角學應用 (方向角與直角三角形)",
+   "secondary_topics": [
+    "坐標平面",
+    "正弦定理",
+    "餘弦定理"
+   ],
+   "required_formulas": [
+    "$\\sin(90^\\circ-\\theta) = \\cos\\theta$",
+    "$d = r\\cos\\alpha$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆角度定義",
+    "student_thought_process": "將 $S60^\\circ E$ 誤解為與正東方向夾角 $60^\\circ$，導致計算出錯。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "三角函數值計算錯誤",
+    "student_thought_process": "正確建立模型但計算 $\\cos 30^\\circ$ 時出錯，或誤用 $\\sin 60^\\circ$ 為 $0.5$"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "錯誤使用餘弦定理",
+    "student_thought_process": "未意識到最短距離即垂線，直接對 $50\\text{km}$ 與角度進行無意義的餘弦運算。"
+   }
+  },
+  "scaffolding_hints": [
+   "畫出燈塔與船的初始位置圖，標記方向角 $S60^\\circ E$ 的幾何意義。",
+   "回憶「最短距離」在幾何上的定義：點到直線的垂線段長度。",
+   "將方向角轉換為直角三角形中的內角，利用鄰邊關係求解。"
+  ],
+  "quick_solution_strategy": "將 $S60^\\circ E$ 轉化為與正北夾角 $30^\\circ$，最短距離即 $50\\cos 30^\\circ$"
+ },
+ "skills": {
+  "topic_id": "T-TRI",
+  "knowledge_point_ids": [
+   "K-TRI-04"
+  ],
+  "formula_ids": [
+   "F-TRI-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-TRI-04",
+    "formula_id": "F-TRI-04",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-TRI-04",
+    "formula_id": "F-TRI-04",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-TRI-04",
+    "formula_id": "F-TRI-04",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

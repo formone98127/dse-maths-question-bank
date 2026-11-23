@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 2",
+  "qno": "4",
+  "hash": "#2017P2Q4"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "計算機與近似值",
+   "secondary_topics": [
+    "有效數字",
+    "小數點後數位"
+   ],
+   "required_formulas": [],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "精度不足",
+    "student_thought_process": "學生計算出正確數值，但誤以為題目要求的是有效數字而非小數位數，因此選擇了三位有效數字的選項。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "精度不足",
+    "student_thought_process": "學生計算出正確數值，但誤讀題目要求「五位小數」，卻選擇了四位有效數字（實為五位小數）的選項 B，混淆概念。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "四捨五入錯誤",
+    "student_thought_process": "學生計算出 0.010265...，在保留五位小數時，因下一位是 5 而向上進位至 0.01027，或錯誤地向下捨去。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "計算 $\\pi^4$ 的數值，並取其倒數。",
+   "觀察題目要求的是「準確至五位小數」，需保留到小數點後第五位。",
+   "檢查小數點後第六位的數字，決定是否進位以得出正確的五位小數答案。"
+  ],
+  "quick_solution_strategy": "計算倒數後，觀察第六位小數進行四捨五入。"
+ },
+ "skills": {
+  "topic_id": "T-PCT",
+  "knowledge_point_ids": [
+   "K-PCT-01",
+   "K-PCT-02"
+  ],
+  "formula_ids": [
+   "F-PCT-01",
+   "F-PCT-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-COND"
+   },
+   "B": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-COND"
+   },
+   "C": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

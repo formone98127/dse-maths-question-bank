@@ -1,0 +1,92 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 2",
+  "qno": "31",
+  "hash": "#2021P2Q31"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "指數法則與最大公因數最小公倍數",
+   "secondary_topics": [
+    "變量係數比較",
+    "指數運算性質"
+   ],
+   "required_formulas": [
+    "$\\text{H.C.F.}(a,b,c) = x^{\\min(e_a,e_b,e_c)}y^{\\min(f_a,f_b,f_c)}z^{\\min(g_a,g_b,g_c)}$",
+    "$\\text{L.C.M.}(a,b,c) = x^{\\max(e_a,e_b,e_c)}y^{\\max(f_a,f_b,f_c)}z^{\\max(h_a,h_b,h_c)}$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "z 指數計算錯誤",
+    "student_thought_process": "前三個數式 z 的指數為 2, 5, ?。已知 H.C.F. 中 z 指數為 1，故第三個必為 1；但 B 選項給出 2，混淆了 min/max 概念或計算錯誤。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "y 指數判斷失誤",
+    "student_thought_process": "已知 y 的 H.C.F. 為 2，L.C.M. 為 4。若第三個數式 y 指數為 3，則 min(2,3,?)=2 成立，但 max(2,3,?)=4 要求 ?=4。C 選項給出 3，無法滿足 L.C.M. 條件。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "x 與 y 指數混淆",
+    "student_thought_process": "學生可能將 x 的 max(3,3,?)=3 誤認為需要更大值，或錯誤計算 y 的 min/max。D 選項 y 指數為 3，同樣無法滿足 L.C.M. 中 y 必須為 4 的要求。"
+   }
+  },
+  "scaffolding_hints": [
+   "回顧最大公因數 (H.C.F.) 與最小公倍數 (L.C.M.) 在變量指數上的定義：H.C.F. 取各變量指數的最小值，L.C.M. 取最大值。",
+   "針對每個變量 x, y, z 分別列出已知兩個數式的指數，並設第三個數式對應指數為未知數 n_x, n_y, n_z。",
+   "利用不等式關係 min(a,b,n) = h_c_f_exponent 與 max(a,b,n) = l_c_m_exponent 解出每個未知數的具體值。"
+  ],
+  "quick_solution_strategy": "分別比較 x, y, z 的指數，設第三個數式指數為 n，建立 min(已知1, 已知2, n) 與 max(已知1, 已知2, n) 等式求解。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-01",
+   "K-POL-02"
+  ],
+  "formula_ids": [
+   "F-POL-01",
+   "F-POL-02",
+   "F-POL-03",
+   "F-POL-06"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

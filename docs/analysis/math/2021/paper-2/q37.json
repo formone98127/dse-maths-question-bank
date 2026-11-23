@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 2",
+  "qno": "37",
+  "hash": "#2021P2Q37"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "一元二次不等式",
+   "secondary_topics": [
+    "二次函數圖形性質",
+    "判别式應用"
+   ],
+   "required_formulas": [
+    "$\\Delta = b^2 - 4ac$",
+    "$ax^2 + bx + c \\geq 0$ (對任意 $x$ 成立條件)"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "符號取反錯誤",
+    "student_thought_process": "算出 $\\Delta \\leq 0$ 後，解不等式時將 $k^2 - 4(k+8) \\leq 0$ 展開為 $k^2 - 4k - 32 \\leq 0$，因式分解得 $(k-8)(k+4) \\leq 0$。錯誤地認為解集應為兩根之間但數值顛倒或計算錯誤，寫成 $-8 \\leq k \\leq 4$"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆不等式成立條件",
+    "student_thought_process": "誤以為題目要求「存在」$x$ 使不等式成立，或混淆了 $\\Delta \\leq 0$ 與 $\\Delta > 0$ 時解集的區間表示法（如 $k \\leq -8$ 或 $k \\geq 4$），這通常是 $\\Delta \\geq 0$ 時的錯誤推論"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "因式分解解錯根",
+    "student_thought_process": "正確列出 $k^2 - 4k - 32 \\leq 0$，但在求解 $(k-8)(k+4) \\leq 0$ 時，錯誤地將根判斷為 $\\pm 4$ 或混淆了不等號方向，導致得出 $k \\leq -4$ 或 $k \\geq 8$"
+   }
+  },
+  "scaffolding_hints": [
+   "思考：當二次函數圖形開口向上時，要讓其值永遠大於等於零，圖形與 $x$ 軸最多只能有幾個交點？",
+   "關鍵條件：利用判别式 $\\Delta = b^2 - 4ac \\leq 0$ 來確保圖形不穿過 $x$ 軸或僅相切。",
+   "執行步驟：將 $a=1, b=k, c=k+8$ 代入公式，解關於 $k$ 的一元二次不等式 $(k-8)(k+4) \\leq 0$"
+  ],
+  "quick_solution_strategy": "令 $\\Delta = k^2 - 4(k+8) \\leq 0$，解得 $-4 \\leq k \\leq 8$"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2019",
+  "paper": "Paper 2",
+  "qno": "42",
+  "hash": "#2019P2Q42"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "組合概率與補集法則",
+   "secondary_topics": [
+    "總樣本空間計算",
+    "非藍色杯的排列組合"
+   ],
+   "required_formulas": [
+    "$P(A) = 1 - P(A^c)$",
+    "$\\binom{n}{r} = \\frac{n!}{r!(n-r)!}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "分母計算錯誤",
+    "student_thought_process": "學生可能算出總組合數為 $\\binom{19}{6}=27132$，但分母誤算成 $57$ 或漏掉階乘運算，導致數值極小。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "分子計算錯誤",
+    "student_thought_process": "學生正確使用補集法則，但計算「全選非藍杯」的組合數時出錯，例如誤算 $\\binom{11}{6}$ 或加法運算錯誤。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略補集法則",
+    "student_thought_process": "學生可能嘗試直接計算「至少 1 藍杯」的複雜情況（1 藍、2 藍...），忘記用 $1-P(無藍)$，或誤以為答案是 $\\frac{\\binom{8}{1}\\binom{11}{5}}{\\binom{19}{6}}$ 等未歸一化形式。"
+   }
+  },
+  "scaffolding_hints": [
+   "直接計算「至少一個藍色杯」的情況需要分六種情況加總，非常繁瑣；試著思考其反面情況是什麼？",
+   "袋子中總共有多少個杯子？其中有多少個不是藍色的？請先寫下非藍色杯的總數。",
+   "利用補集法則：$P(\\text{至少 1 藍}) = 1 - P(\\text{全選非藍})$，請計算從 $11$ 個非藍杯中選 $6$ 個的組合數與總組合數之比。"
+  ],
+  "quick_solution_strategy": "計算 $1 - \\frac{\\binom{11}{6}}{\\binom{19}{6}}$"
+ },
+ "skills": {
+  "topic_id": "T-COM",
+  "knowledge_point_ids": [
+   "K-COM-02",
+   "K-COM-03"
+  ],
+  "formula_ids": [
+   "F-COM-01",
+   "F-COM-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-COM-02",
+    "formula_id": "F-COM-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-COM-02",
+    "formula_id": "F-COM-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-COM-02",
+    "formula_id": "F-COM-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

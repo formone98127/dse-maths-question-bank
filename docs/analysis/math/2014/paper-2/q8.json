@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 2",
+  "qno": "8",
+  "hash": "#2014P2Q8"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "二元一次聯立方程式",
+   "secondary_topics": [
+    "代數式化簡",
+    "單變量問題建模"
+   ],
+   "required_formulas": [
+    "$2b + 3c = 506$",
+    "$5b = 4c$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "除數取反",
+    "student_thought_process": "學生解出 $c=10b$ 後，計算 $2b+3(10b)=506 \\Rightarrow 32b=506$。錯誤將 $506\\div32$ 算成 $92$（可能是手算筆誤或對 $32\\times92$ 的記憶混淆）"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "未利用比例關係",
+    "student_thought_process": "學生嘗試直接將 $506$ 除以碗杯總數 $(2+3)=5$，誤以為平均分配。忽略題目關鍵條件「5 碗等於 4 杯」的比例限制"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "等價代換錯誤",
+    "student_thought_process": "學生將 $5b=4c$ 誤讀為 $c=4b$（混淆係數位置）。代入後得 $2b+12b=506 \\Rightarrow 14b=506$，計算結果非選項，但此類錯誤常導致選出接近的錯誤答案或放棄"
+   }
+  },
+  "scaffolding_hints": [
+   "設碗價為 $b$，杯價為 $c$，請根據題目描述列出兩個關於 $b$ 與 $c$ 的方程式。",
+   "觀察第二個條件「5 個碗等於 4 個杯」，試著將其中一個變數（例如 $c$）用另一個變數（$b$）表示出來。",
+   "將表達式代入第一個方程式後，你會得到關於 $b$ 的一元一次方程式，請解出 $b$ 的數值並與選項比對。"
+  ],
+  "quick_solution_strategy": "由 $5b=4c$ 得 $c=1.25b$，代入 $2b+3(1.25b)=506$ 解得 $b=88$"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN"
+   },
+   "D": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

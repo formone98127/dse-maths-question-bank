@@ -1,0 +1,86 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2016",
+  "paper": "Paper 2",
+  "qno": "23",
+  "hash": "#2016P2Q23"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "幾何對稱性",
+   "secondary_topics": [
+    "正六邊形性質",
+    "反射對稱軸定義"
+   ],
+   "required_formulas": [
+    "正 n 邊形對稱軸數 = n (若獨立)",
+    "複合圖形對稱軸需同時滿足各組件及整體排列的對稱性"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤以為個數多對稱就多",
+    "student_thought_process": "學生可能認為 8 個圖形就有 8 條或 4 條，忽略了排列方式破壞了部分潛在的對稱軸。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆獨立與複合圖形",
+    "student_thought_process": "學生直接將 8 個正六邊形的對稱性相加或取平均，未考慮整體排列形成的單一軸。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "過度推論",
+    "student_thought_process": "學生看到正六邊形有 6 條，又見 8 個圖形，錯誤地將兩者結合得出 8 條或想當然爾。"
+   }
+  },
+  "scaffolding_hints": [
+   "回顧單一正六邊形擁有幾條反射對稱軸？",
+   "當多個相同圖形排列時，對稱軸必須讓整個圖形翻轉後完全重疊，而非僅某個部分。",
+   "想像沿著垂直線或水平線翻折，觀察左右兩側的六邊形位置是否互換且形狀一致。"
+  ],
+  "quick_solution_strategy": "先畫出單一正六邊形的對稱軸，再檢查整體排列是否保留這些軸；若排列打破某些軸，則該軸不成立。"
+ },
+ "skills": {
+  "topic_id": "T-TRF",
+  "knowledge_point_ids": [
+   "K-TRF-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-TRF-02",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-TRF-02",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-TRF-02",
+    "formula_id": null,
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

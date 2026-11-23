@@ -1,0 +1,91 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 2",
+  "qno": "19",
+  "hash": "#2014P2Q19"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "三角函數",
+   "secondary_topics": [
+    "诱导公式",
+    "和差角公式"
+   ],
+   "required_formulas": [
+    "$\\cos(90^\\circ + \\theta) = -\\sin\\theta$",
+    "$\\sin(360^\\circ - \\theta) = -\\sin\\theta$",
+    "$(a+b)(a-b) = a^2 - b^2$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "符號遺漏",
+    "student_thought_process": "學生可能正確算出 $-\\sin\\theta$ 與 $-\\sin\\theta$，但在平方差公式應用時，誤將 $(a+b)(a-b)$ 視為 $(a+b)^2$ 或忘記了第二項的負號導致符號錯誤。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "符號遺漏",
+    "student_thought_process": "學生在處理 $\\cos(90^\\circ+\\theta)$ 時，錯誤地認為結果為正 $\\sin\\theta$，導致最終乘積符號錯誤。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "平方差公式誤用",
+    "student_thought_process": "學生正確轉換角度為 $-\\sin\\theta$，但計算 $( -\\sin\\theta + 1 )( -\\sin\\theta - 1 )$ 時，錯誤地將其視為完全平方或算錯符號。"
+   }
+  },
+  "scaffolding_hints": [
+   "請先利用三角函數的诱导公式，將括號內的 $90^\\circ+\\theta$ 與 $360^\\circ-\\theta$ 轉換為只含 $\\sin\\theta$ 或 $\\cos\\theta$ 的形式。",
+   "觀察轉換後的式子結構，這是否符合 $(a+b)(a-b)$ 的平方差公式特徵？請注意各項的符號變化。",
+   "將轉換後的結果代入平方差公式展開，即可得到最終答案。"
+  ],
+  "quick_solution_strategy": "利用诱导公式化簡為 $(-\\sin\\theta+1)(-\\sin\\theta-1)$，再套用平方差公式求解。"
+ },
+ "skills": {
+  "topic_id": "T-TRI",
+  "knowledge_point_ids": [
+   "K-TRI-01",
+   "K-TRI-02"
+  ],
+  "formula_ids": [
+   "F-TRI-01",
+   "F-TRI-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

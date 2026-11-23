@@ -1,0 +1,91 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2025",
+  "paper": "Paper 2",
+  "qno": "37",
+  "hash": "#2025P2Q37"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "等差數列與指數函數性質",
+   "secondary_topics": [
+    "等比數列定義",
+    "倒數數列性質",
+    "線性組合的等差性"
+   ],
+   "required_formulas": [
+    "若 $a, b, c$ 為等差，則 $b-a = c-b$",
+    "若 $a, b, c$ 為等比，則 $b^2 = ac$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤認倒數等差必為等比",
+    "student_thought_process": "學生認為 $1/p, 1/q, 1/r$ 若成等差則其平方成等比，但題目是 $5/p$。實際上 $p,q,r$ 等差不代表 $1/p,1/q,1/r$ 等比，除非 $p,q,r$ 本身等比。此處混淆了等差與等比的逆運算關係。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤判 III 的公差符號",
+    "student_thought_process": "學生正確判斷 $p,q,r$ 等差時，$p-q$ 與 $q-r$ 不等於常數（除非 $d=0$），但題目說非零實數。III 中 $p-q = -d, q-r = -d, r-p = 2d$，不成等差。學生忽略 $r-p$ 是前兩項之和的相反數，破壞了等差結構。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "同時誤判 II 與 III",
+    "student_thought_process": "學生完全搞混等差與等比的轉換條件，認為任何線性變換或指數變換都能保持數列類型。忽略 $p,q,r$ 成等差時，$3^p,3^q,3^r$ 才成等比（因為指數函數是單調且將加法轉為乘法），而倒數與線性組合不一定。"
+   }
+  },
+  "scaffolding_hints": [
+   "回想：若 $a,b,c$ 成等差，則 $b-a = c-b = d$（公差）。",
+   "思考：指數函數 $f(x)=3^x$ 將加法轉換為乘法，即 $3^{p+q} = 3^p \\cdot 3^q$。若 $p,q,r$ 成等差，則 $q-p = r-q$。",
+   "驗證：檢查選項 II 中 $\\frac{5}{q}$ 的平方是否等於 $\\frac{5}{p} \\cdot \\frac{5}{r}$？檢查選項 III 中第三項 $r-p$ 是否滿足等差條件。"
+  ],
+  "quick_solution_strategy": "利用指數函數將等差轉為等比；倒數與線性組合通常不保持等比或等差，除非特殊情況。"
+ },
+ "skills": {
+  "topic_id": "T-SEQ",
+  "knowledge_point_ids": [
+   "K-SEQ-02",
+   "K-SEQ-03"
+  ],
+  "formula_ids": [
+   "F-SEQ-01",
+   "F-SEQ-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-SEQ-02",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-SEQ-02",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-SEQ-02",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 2",
+  "qno": "3",
+  "hash": "#2017P2Q3"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "分數運算與代數變形",
+   "secondary_topics": [
+    "比例關係",
+    "通分技巧"
+   ],
+   "required_formulas": [
+    "$\\frac{x}{y} = \\frac{z}{w}$ 時可交叉相乘為 $xw = yz$",
+    "$\\frac{A+B}{C} = \\frac{A}{C} + \\frac{B}{C}$"
+   ],
+   "bloom_taxonomy_level": "理解",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "分母處理錯誤",
+    "student_thought_process": "學生可能將右邊 $2+\\frac{b}{a}$ 視為整體分子，或計算時將 $2a$ 與 $2$ 混淆，導致分數倒置。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略常數項",
+    "student_thought_process": "學生可能忘記將右邊的 $2$ 轉換為分母為 $a$ 的項，直接計算導致結果偏差。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "移項符號錯誤",
+    "student_thought_process": "學生在移項時可能忘記變號，或將 $4b$ 與 $2a$ 的關係算反，導致分數值過大。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：觀察等式右邊，試著將 $2+\\frac{b}{a}$ 合併成一個單一的分式。",
+   "提示 2：利用分數加法公理，將 $2$ 寫成 $\\frac{2a}{a}$，然後與 $\\frac{b}{a}$ 相加。",
+   "提示 3：比較等式兩邊分子與分母的係數關係，解出 $a$ 與 $b$ 的比例。"
+  ],
+  "quick_solution_strategy": "將右邊合併為單一分式後，交叉相乘並整理即可得 $a=\\frac{2b}{3}$。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

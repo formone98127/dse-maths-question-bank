@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2025",
+  "paper": "Paper 2",
+  "qno": "13",
+  "hash": "#2025P2Q13"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "線性遞迴關係",
+   "secondary_topics": [
+    "二階線性齊次遞迴式",
+    "特徵方程式法則"
+   ],
+   "required_formulas": [
+    "$a_{n+2} = 2a_{n+1} + a_n$",
+    "$r^2 - 2r - 1 = 0$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "計算誤差",
+    "student_thought_process": "算出 $a_3=13$ 後，將 $2 \\times 13 + 41$ 誤算為 $101$，或是混淆了 $a_5$ 與 $a_6$ 的係數關係。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "遞迴邏輯錯誤",
+    "student_thought_process": "誤以為 $a_6 = a_5 + a_4$ 或將係數 $2$ 遺漏，直接加總前兩項導致結果過大。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "讀題疏忽",
+    "student_thought_process": "未仔細閱讀係數 $2$，誤記遞迴式為 $a_{n+2} = a_{n+1} + a_n$（類似費波那契），導致計算結果偏差。"
+   }
+  },
+  "scaffolding_hints": [
+   "根據題目給出的遞迴公式 $a_{n+2}=2a_{n+1}+a_n$，我們需要找出 $a_3$ 才能繼續推導。",
+   "利用已知條件 $a_2=3$ 與 $a_5=41$，先計算出中間項 $a_3$ 和 $a_4$ 的數值。",
+   "確認求得 $a_4$ 後，代入公式即可直接算出目標答案 $a_6$。"
+  ],
+  "quick_solution_strategy": "由 $a_5=2a_4+a_3$ 與 $a_4=2a_3+a_2$ 聯立解出 $a_3$，再順向計算至 $a_6$"
+ },
+ "skills": {
+  "topic_id": "T-SEQ",
+  "knowledge_point_ids": [
+   "K-SEQ-01",
+   "K-SEQ-02"
+  ],
+  "formula_ids": [
+   "F-SEQ-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-SEQ-01",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-SEQ-01",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-SEQ-01",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

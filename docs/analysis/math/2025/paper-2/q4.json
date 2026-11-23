@@ -1,0 +1,92 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2025",
+  "paper": "Paper 2",
+  "qno": "4",
+  "hash": "#2025P2Q4"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "一元一次方程式與變數移項",
+   "secondary_topics": [
+    "因式展開",
+    "合併同類項"
+   ],
+   "required_formulas": [
+    "分配律 (FOIL)",
+    "一元一次方程式解法公式 $x = \\frac{b}{a}$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "展開時符號錯誤",
+    "student_thought_process": "左邊展開 $3cd - 12c + d - 4$，右邊 $10cd - 2d$。移項得 $-7cd + 8d - 12c - 4 = 0$。若將 $-12c$ 錯算為 $+12c$ 或移項時符號弄反，會得到 $3d+4$ 在分子的情況。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "倒數關係混淆",
+    "student_thought_process": "算出正確結果後，忘記題目要求解 $c$ 而非 $\\frac{1}{c}$，或是將方程式兩邊取倒數時未考慮整體結構，直接將係數互換。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "移項後符號全反",
+    "student_thought_process": "在合併 $cd$ 項時，將 $-7cd$ 錯記為 $+7cd$，導致分母變成 $3d-4$，且分子符號也隨之錯誤。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：請先將方程式左右兩邊完全展開，消除括號。",
+   "提示 2：將所有含有 $c$ 的項移到一側，不含 $c$ 的項移到另一側，並合併同類項。",
+   "提示 3：整理成 $A \\cdot c = B$ 的形式後，即可寫出 $c = \\frac{B}{A}$。"
+  ],
+  "quick_solution_strategy": "展開兩邊 -> 移項歸類含 $c$ 與不含 $c$ 的項 -> 除以 $c$ 的係數。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-01",
+   "K-POL-02"
+  ],
+  "formula_ids": [
+   "F-POL-01",
+   "F-POL-02",
+   "F-POL-03",
+   "F-POL-06"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CHAIN"
+   },
+   "D": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

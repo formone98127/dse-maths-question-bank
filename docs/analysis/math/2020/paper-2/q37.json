@@ -1,0 +1,86 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2020",
+  "paper": "Paper 2",
+  "qno": "37",
+  "hash": "#2020P2Q37"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "複數運算與虛部概念",
+   "secondary_topics": [
+    "分母有理化",
+    "複數相等條件"
+   ],
+   "required_formulas": [
+    "$\\dfrac{a+bi}{c+di} = \\dfrac{(a+bi)(c-di)}{c^2+d^2}$",
+    "$z = x + yi$ 的虛部為 $y$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "符號處理錯誤",
+    "student_thought_process": "計算 $z_1$ 虛部時，忘記分母有理化後分子展開的交叉項符號，導致虛部數值算錯，進而影響後續減法結果。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤解複數性質",
+    "student_thought_process": "誤以為兩虛部相等則兩複數必相等，忽略實部可能不同的情況，直接得出差為 0。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "實部計算失誤",
+    "student_thought_process": "正確求出虛部相等條件後，在計算 $z_1$ 與 $z_2$ 的實部差值時，分母平方項或展開式符號處理錯誤。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：先將 $z_1$ 和 $z_2$ 分別進行分母有理化，寫成標準形式 $a+bi$。",
+   "提示 2：根據題目條件「虛部相等」，建立關於 $k$ 的方程式並求解 $k$ 的值。",
+   "提示 3：將求得的 $k$ 代回原式計算出 $z_1$ 與 $z_2$ 的具體數值，最後執行減法運算。"
+  ],
+  "quick_solution_strategy": "先化簡兩複數得虛部含 $k$ 之式，令其相等解得 $k=3$，再代回求差值。"
+ },
+ "skills": {
+  "topic_id": "T-NUM",
+  "knowledge_point_ids": [
+   "K-NUM-01"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

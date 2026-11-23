@@ -1,0 +1,86 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2023",
+  "paper": "Paper 2",
+  "qno": "4",
+  "hash": "#2023P2Q4"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "多項式因式分解",
+   "secondary_topics": [
+    "二次型配方法",
+    "對稱性觀察",
+    "展開驗證技巧"
+   ],
+   "required_formulas": [
+    "$(x+y)(ax+by+c) = ax^2 + (a+b)xy + bcy^2 + (ac+bc)x + (ab+bc)y$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "展開後 y^2 符號錯誤",
+    "student_thought_process": "學生可能將 $(x+y)(2x+y-4)$ 展開時，計算 $y \\cdot y$ 與 $-4 \\cdot y$ 混合出錯，誤認為 $y^2$ 係數為正或忽略符號變化。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆一次項係數符號",
+    "student_thought_process": "學生在展開 $(x-y)(2x+y-4)$ 時，錯誤地將 $x \\cdot (-4)$ 與 $y \\cdot 2x$ 的合併計算搞混，導致 $xy$ 或 $x$ 係數不對。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "完全展開錯誤",
+    "student_thought_process": "學生可能直接猜測 $(x-y)$ 結構，但在展開時將所有項的符號都弄反，導致最終結果與題目相差甚遠。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察原式中 $y^2$ 的係數是 $-1$，推測因式分解後兩個括號內 $y$ 的係數乘積應為負。",
+   "嘗試將選項展開，特別注意 $xy$ 項與一次項 $x, y$ 的係數是否與原式吻合。",
+   "比較選項 A 與 B 中 $y$ 的係數差異，代入 $y=1, x=0$ 快速驗證哪一個符合原式值。"
+  ],
+  "quick_solution_strategy": "展開選項 B，檢查 $xy$ 項係數為 $(2-1)=1$ 且 $x$ 項為 $4-4=0$ 不符？重新計算：$(x+y)(2x-y+4) = 2x^2 -xy +4x +2xy -y^2 +4y = 2x^2 +xy -y^2 +4x +4y$，完全吻合。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-03"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

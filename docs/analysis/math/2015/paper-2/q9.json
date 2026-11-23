@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2015",
+  "paper": "Paper 2",
+  "qno": "9",
+  "hash": "#2015P2Q9"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "百分數變化與連續變動",
+   "secondary_topics": [
+    "指數運算",
+    "相對改變量計算"
+   ],
+   "required_formulas": [
+    "新價格 = 原價格 \\times (1 + r_1) \\times (1 + r_2)",
+    "總百分比變化 = (最終價格 - 原價格) / 原價格 \\times 100%"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "簡單相加誤區",
+    "student_thought_process": "學生錯誤地將 +70% 與 -60% 直接相減得到 +10%，再誤以為是 D，或計算 (70-60)/100=10% 後選錯。若選 A，可能是算出 70-60=10 後搞錯符號，或是直接用 70+60=130 再減 80 等混亂運算導致錯誤數值。更可能的是將 70-60=10 視為增加，但題目是減少，故選 A 可能是計算過程中的符號混淆或對 -58% 的來源不明（如誤算 (1.7*0.4) 相關數字）。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略基準值變化",
+    "student_thought_process": "學生誤以為增加 70% 後減少 60% 會回到原價附近，計算 (1.7 * 0.4) = 0.68，認為只減少了 32%，但忘記這是相對於原價的變化，正確應為 -32%。此選項是將絕對百分比誤解為相對變化後的結果，未考慮基準改變。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "符號處理錯誤",
+    "student_thought_process": "學生正確計算出最終價格為原價的 68%，即減少 32%，但在最後一步忘記加上負號，或誤以為「改變」指絕對值而選正數。另一可能是將 1.7 * 0.4 = 0.68 誤算成 0.9 或其他，導致選出錯誤的正百分數。"
+   }
+  },
+  "scaffolding_hints": [
+   "假設原價格為 100，先計算增加 70% 後的價格是多少？",
+   "再對新價格減少 60%，請仔細計算新的價格值。",
+   "比較最終價格與原價格，計算出總體變化的百分數（注意符號）"
+  ],
+  "quick_solution_strategy": "設原價為 1，新價 = 1 * 1.7 * 0.4 = 0.68，變化 = (0.68 - 1)/1 = -0.32 = -32%"
+ },
+ "skills": {
+  "topic_id": "T-PCT",
+  "knowledge_point_ids": [
+   "K-PCT-01",
+   "K-PCT-02"
+  ],
+  "formula_ids": [
+   "F-PCT-01",
+   "F-PCT-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

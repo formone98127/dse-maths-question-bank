@@ -1,0 +1,84 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2019",
+  "paper": "Paper 2",
+  "qno": "41",
+  "hash": "#2019P2Q41"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "幾何圖形性質",
+   "secondary_topics": [
+    "垂心定義",
+    "形心位置特性",
+    "內心位置特性"
+   ],
+   "required_formulas": [],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 120
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤認垂心位置",
+    "student_thought_process": "學生知道直角三角形垂心在頂點，但誤以為該頂點不在邊 AC 上，或混淆了斜邊與直角邊的定義，導致認為 I 錯誤。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤認內心位置",
+    "student_thought_process": "學生知道垂心在頂點（故 I 錯），但錯誤認為內心可能在三角形外部，忽略了內心永遠位於三角形內部。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "同時誤認垂心與內心",
+    "student_thought_process": "學生正確判斷形心在內，但錯誤地認為垂心不在 AC 上（可能混淆銳角三角形性質），且錯誤認為內心可在外部。"
+   }
+  },
+  "scaffolding_hints": [
+   "回想直角三角形的三個高線分別落在哪些邊上？",
+   "形心是重心的意思，物體的重力作用點是否會在物體之外？",
+   "內切圓的圓心（內心）是否可能跑到三角形外面去？"
+  ],
+  "quick_solution_strategy": "直角三角形垂心即為直角頂點，位於斜邊上；形心與內心恆在內部。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-05"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

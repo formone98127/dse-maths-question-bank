@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2023",
+  "paper": "Paper 2",
+  "qno": "28",
+  "hash": "#2023P2Q28"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "概率與整除性",
+   "secondary_topics": [
+    "樹狀圖法",
+    "互斥事件加法原理"
+   ],
+   "required_formulas": [
+    "$P(A) = \\frac{n(A)}{n(S)}$",
+    "$\\text{積被 4 整除} \\iff (\\text{至少有一個偶數且非單奇})$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "低估偶數組合",
+    "student_thought_process": "僅考慮 (1,4), (2,6), (3,8) 等少數情況，忽略 (5,8), (4,9) 等組合，計算總數時遺漏。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤解整除條件",
+    "student_thought_process": "認為只要有一個偶數即可被 4 整除，忽略了另一個數字必須是偶數或 4 的倍數的情況。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "計數錯誤",
+    "student_thought_process": "正確列出有利情況但算錯總組合數，或將 (2,6) 與 (4,8) 重複計算導致分母分子比例失衡。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "列出所有可能抽到的數字組合，並計算總共有多少種情況。",
+   "分析乘積被 4 整除的條件：需考慮奇數與偶數的搭配，特別是 4 的倍數的角色。",
+   "計算有利於題目要求的組合數量，再除以總組合數得出概率。"
+  ],
+  "quick_solution_strategy": "總情況 $5 \\times 4 = 20$；有利情況：(1,4), (3,4), (5,4) 及含偶數與另一偶數之積為 4 倍者，共 9 種。"
+ },
+ "skills": {
+  "topic_id": "T-PROB",
+  "knowledge_point_ids": [
+   "K-PROB-01",
+   "K-PROB-02"
+  ],
+  "formula_ids": [
+   "F-PROB-01",
+   "F-PROB-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

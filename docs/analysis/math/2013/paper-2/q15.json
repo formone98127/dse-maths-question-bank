@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 2",
+  "qno": "15",
+  "hash": "#2013P2Q15"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "幾何對稱性",
+   "secondary_topics": [
+    "正多邊形性質",
+    "反射對稱軸定義"
+   ],
+   "required_formulas": [
+    "正 $n$ 邊形的反射對稱軸數目為 $n$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤認對稱軸數目",
+    "student_thought_process": "學生可能只考慮經過頂點的對稱軸，忽略了經過邊中點的對稱軸，或者錯誤地認為陰影破壞了所有對稱性。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆旋轉與反射對稱",
+    "student_thought_process": "學生將正八邊形的旋轉對稱次數（8 次）誤認為是反射對稱軸的數目，未區分兩種對稱的不同定義。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "過度推論或讀圖錯誤",
+    "student_thought_process": "學生可能誤以為陰影部分增加了對稱軸，或者將 $8$ 與 $2$ 的組合誤算為 $16$，屬於無根據的數值堆疊。"
+   }
+  },
+  "scaffolding_hints": [
+   "回憶正多邊形的反射對稱軸定義：連接相對頂點或相對邊中點的直線。",
+   "觀察圖形中的陰影分佈，判斷其是否破壞了原本正八邊形的某些對稱軸。",
+   "逐一檢查經過每個頂點及其相對邊的直線，確認哪些直線能將整個圖形（含陰影）完美重疊。"
+  ],
+  "quick_solution_strategy": "正八邊形本身有 8 條對稱軸；因陰影分佈具特定規律，僅保留 4 條經過相對頂點或相對邊中點的軸。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-01",
+   "K-GEO-02"
+  ],
+  "formula_ids": [
+   "F-GEO-01",
+   "F-GEO-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

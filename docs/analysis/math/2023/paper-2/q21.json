@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2023",
+  "paper": "Paper 2",
+  "qno": "21",
+  "hash": "#2023P2Q21"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "幾何相似與全等",
+   "secondary_topics": [
+    "長方形性質",
+    "直線角定義",
+    "平行線判據"
+   ],
+   "required_formulas": [
+    "相似三角形判定 (AA)",
+    "長方形對邊平行且相等",
+    "直線上一點之角度和為 180°"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤認等腰三角形底角與平行關係",
+    "student_thought_process": "學生看到 RT=RV，認為△RTV 為等腰，故∠RTV=∠RVT。但欲證 RV∥ST，需∠RVT+∠RTS=180°或內錯角相等，此處無足夠條件證明兩角互補或相等，邏輯斷鏈。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "角度代換錯誤",
+    "student_thought_process": "學生嘗試用∠PTS=90°推導，誤以為∠PTQ 與∠RTS 互餘關係直接相等。實際上 ∠PTQ = 90°-∠STQ，而∠RTS=90°-∠PST，除非 PQ=RS (即 T 為中點)，否則兩角不等。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆全等與相似條件",
+    "student_thought_process": "學生試圖證明△PQT≅△TRS，發現 PQ=RS 且∠P=∠R=90°，但缺少夾角或另一邊相等。T 點位置任意，QT 不一定等於 TS，故全等不成立。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察長方形 PQRS，利用對邊平行 (PQ∥SR) 找出內錯角關係。",
+   "利用 ∠PTS=90° 將直線 QR 上的角度分解為互餘的兩個角。",
+   "比較△PST 與△UTQ 的角度：找出一組公共角或相等的互餘角，應用 AA 相似判定。"
+  ],
+  "quick_solution_strategy": "利用 PQ∥SR 得內錯角相等，結合直線角性質證明兩三角形有兩角對應相等 (AA) 而相似。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-05"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

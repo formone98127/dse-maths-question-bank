@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2018",
+  "paper": "Paper 2",
+  "qno": "29",
+  "hash": "#2018P2Q29"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "平均值與總和的關係",
+   "secondary_topics": [
+    "代數式化簡",
+    "邏輯推理"
+   ],
+   "required_formulas": [
+    "$\\text{總和} = \\text{平均值} \\times \\text{數量}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "計算錯誤",
+    "student_thought_process": "學生算出前 6 本總和為 648，10 本總和為 1320。相減得 672。除以 4 時誤算成 148（可能將 672/4 錯記或筆誤），或是錯誤地認為平均值直接相加再調整。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "計算錯誤",
+    "student_thought_process": "學生正確算出餘下 4 本總和為 672。但在最後一步除以 4 時，錯誤地將 672 視為其他數字（如 624 或 600），導致得出 156。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "計算錯誤",
+    "student_thought_process": "學生算出餘下 4 本總和為 672。在除以 4 時，可能誤將 672 看成 680 或進行不正確的借位運算，得出 176。"
+   }
+  },
+  "scaffolding_hints": [
+   "回想平均值的定義：平均值乘以數量等於總和。",
+   "先計算出 10 本雜誌的總頁數與前 6 本的總頁數。",
+   "用 10 本的總頁數減去前 6 本的總頁數，得到後 4 本的總頁數，再除以 4。"
+  ],
+  "quick_solution_strategy": "計算總和差：$(132 \\times 10) - (108 \\times 6)$，結果除以 4。"
+ },
+ "skills": {
+  "topic_id": "T-STA",
+  "knowledge_point_ids": [
+   "K-STA-01",
+   "K-STA-02"
+  ],
+  "formula_ids": [
+   "F-STA-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

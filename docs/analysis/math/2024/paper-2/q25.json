@@ -1,0 +1,93 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 2",
+  "qno": "25",
+  "hash": "#2024P2Q25"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "幾何：垂直平分線與直線交點",
+   "secondary_topics": [
+    "坐標幾何",
+    "中點公式",
+    "兩直線交點"
+   ],
+   "required_formulas": [
+    "垂直平分線定義：到兩端點距離相等之點軌跡",
+    "中點公式：$M = \\left(\\frac{x_1+x_2}{2}, \\frac{y_1+y_2}{2}\\right)$",
+    "斜率公式：$m = \\frac{y_2-y_1}{x_2-x_1}$",
+    "兩直線交點聯立方程組"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤用中點為 P",
+    "student_thought_process": "學生可能直接將 A、B 兩點坐標相加除以 2，算出 AB 中點 $(-5,-2)$ 的 y 座標為 -2（這是選項 B），卻混淆了「中點」與「垂直平分線上的點」。若再誤算斜率符號或代入錯誤數值，可能得到 -11。此處更可能是將題目理解為 P 是 AB 中點，但計算出錯，或是完全猜測。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤認 P 為 AB 中點",
+    "student_thought_process": "學生正確計算出 A、B 兩段的中點 $M = \\left(\\frac{-3+(-7)}{2}, \\frac{1+(-5)}{2}\\right) = (-5, -2)$。因題目要求 $AP=PB$，學生誤以為 P 就是這個中點，故選取 y 坐標為 -2。這是典型的概念混淆錯誤。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "斜率符號或代入錯誤",
+    "student_thought_process": "學生正確求出 AB 中點 $(-5,-2)$ 及 AB 斜率 $m_{AB}=\\frac{-5-1}{-7-(-3)} = \\frac{-6}{-4} = \\frac{3}{2}$。垂直平分線斜率應為 $-\\frac{2}{3}$。若學生在計算垂直平分線方程時，將中點坐標代入錯誤，或將斜率算成 $\\frac{2}{3}$ 導致符號錯誤，進而解出 y=11。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：題目條件 $AP=PB$ 意味著點 $P$ 位於何種特殊直線上？該直線與哪一條已知直線重合或相關？",
+   "提示 2：要畫出這條特殊的直線，你需要先找出線段 $AB$ 的什麼資訊（中點與斜率）？請寫出垂直平分線的方程式。",
+   "提示 3：將求得的垂直平分線方程式與已知直線 $x-y+13=0$ 聯立求解，即可得到交點 $P$ 的坐標。"
+  ],
+  "quick_solution_strategy": "先求 AB 中點與斜率，寫出垂直平分線方程，再與 $x-y+13=0$ 聯立解出 y。"
+ },
+ "skills": {
+  "topic_id": "T-LIN",
+  "knowledge_point_ids": [
+   "K-LIN-01",
+   "K-LIN-02"
+  ],
+  "formula_ids": [
+   "F-LIN-01",
+   "F-LIN-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

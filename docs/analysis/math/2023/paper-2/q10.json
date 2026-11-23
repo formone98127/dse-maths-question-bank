@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2023",
+  "paper": "Paper 2",
+  "qno": "10",
+  "hash": "#2023P2Q10"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "二次函數圖形性質",
+   "secondary_topics": [
+    "頂點式方程式",
+    "截距定義"
+   ],
+   "required_formulas": [
+    "$y=a(x-h)^2+k$",
+    "$x$ 截距：令 $y=0$ 解 $x$",
+    "$y$ 截距：令 $x=0$ 解 $y$"
+   ],
+   "bloom_taxonomy_level": "理解",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "係數符號誤判",
+    "student_thought_process": "學生看到平方項 $(x-3)^2$，忽略 $a=1$ 為正數，誤以為任何二次函數開口皆向下或混淆了 $y=-x^2$ 的形式。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "解方程錯誤",
+    "student_thought_process": "學生令 $y=0$ 得 $(x-3)^2=-5$，誤判無實根或隨意猜測 $x=3$ 是截距，未計算出實際 $x$ 截距為 $3 \\pm \\sqrt{5}$。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "代入值錯誤",
+    "student_thought_process": "學生直接將 $x=0$ 代入時，忽略括號內的 $-3$，誤算為 $y=5+(0)^2=5$，未計算 $(0-3)^2=9$。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "二次函數頂點式 $y=a(x-h)^2+k$ 中，參數 $a$ 決定開口方向與寬窄。",
+   "$y$ 截距是圖形與 $y$ 軸交點，需令 $x=0$；$x$ 截距是圖形與 $x$ 軸交點，需令 $y=0$。",
+   "將 $x=3$ 代入方程式中，觀察計算結果是否等於 $5$，即可驗證該點是否在圖形上。"
+  ],
+  "quick_solution_strategy": "比較頂點式參數與選項描述，直接代入特殊點 $(3, k)$ 或令 $x=0$ 驗證截距。"
+ },
+ "skills": {
+  "topic_id": "T-FUN",
+  "knowledge_point_ids": [
+   "K-FUN-01",
+   "K-FUN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

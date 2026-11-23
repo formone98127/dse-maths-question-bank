@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 2",
+  "qno": "22",
+  "hash": "#2013P2Q22"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "三角比與畢氏定理",
+   "secondary_topics": [
+    "勾股數",
+    "餘弦定理",
+    "直角三角形性質"
+   ],
+   "required_formulas": [
+    "$\\cos A = \\frac{b^2+c^2-a^2}{2bc}$",
+    "$\\cos C = \\frac{a^2+b^2-c^2}{2ab}$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆邊與角的對應關係",
+    "student_thought_process": "學生可能誤將角度餘弦比直接等同於夾角兩邊的比值，或是錯誤地將 $\\cos A$ 對應到最短邊 $BC$ 的比例上。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "比例顛倒或計算錯誤",
+    "student_thought_process": "學生正確識別出直角三角形，但在代入餘弦定理公式時，將分子分母順序弄反，或是算出 $\\cos A$ 與 $\\cos C$ 的數值後比錯。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤判直角位置",
+    "student_thought_process": "學生可能認為最大邊 $AC$ 對應角 $A$，或是完全搞混了 $A$ 與 $C$ 所對的邊長，導致比例完全錯誤。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察三邊長度比例 $8:15:17$，這組數字是否符合勾股數？請先判斷三角形類型。",
+   "確認直角所在位置後，利用直角三角形中「鄰邊比斜邊」的定義來思考 $\\cos A$ 與 $\\cos C$ 的表達式。",
+   "將 $\\cos A$ 與 $\\cos C$ 寫成最簡分數形式後，直接比較兩個分數的比例關係即可得出答案。"
+  ],
+  "quick_solution_strategy": "判定為直角三角形，利用鄰邊比斜邊定義求餘弦值，再計算兩餘弦值的比值。"
+ },
+ "skills": {
+  "topic_id": "T-TRI",
+  "knowledge_point_ids": [
+   "K-TRI-04"
+  ],
+  "formula_ids": [
+   "F-TRI-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-TRI-04",
+    "formula_id": "F-TRI-04",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-TRI-04",
+    "formula_id": "F-TRI-04",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-TRI-04",
+    "formula_id": "F-TRI-04",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

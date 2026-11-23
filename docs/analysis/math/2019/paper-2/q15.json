@@ -1,0 +1,95 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2019",
+  "paper": "Paper 2",
+  "qno": "15",
+  "hash": "#2019P2Q15"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "立體幾何：角錐體的表面積",
+   "secondary_topics": [
+    "直角三角形畢氏定理",
+    "正方形面積公式",
+    "三角形面積公式"
+   ],
+   "required_formulas": [
+    "$A_{\\text{底}} = s^2$",
+    "$l = \\sqrt{h^2 + (s/2)^2}$",
+    "$A_{\\text{側}} = 4 \\times (\\frac{1}{2} \\cdot s \\cdot l)$",
+    "$A_{\\text{總}} = A_{\\text{底}} + A_{\\text{側}}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "僅計算側面積忽略底面",
+    "student_thought_process": "學生算出四個三角形側面積總和為 $432$，忘記加上正方形底面積 $18^2=324$。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "斜高計算錯誤",
+    "student_thought_process": "學生可能誤將高 $12$ 當作斜高，或畢氏定理運算出錯，導致側面積計算偏差。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "底邊長度代入錯誤",
+    "student_thought_process": "學生在計算斜高時，誤將半邊長 $9$ 當作整邊長 $18$ 代入畢氏定理，導致結果偏大。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "角錐體的總表面面積包含底面與四個側面，請先確認題目要求的是「總」面積。",
+   "由於是直立角錐，斜高並非題目給出的高，需利用畢氏定理，以高與底邊的一半構建直角三角形求解斜高。",
+   "算出正確的斜高後，計算四個全等三角形的面積並加上正方形底面積，即可得出正確答案。"
+  ],
+  "quick_solution_strategy": "先求斜高 $l=\\sqrt{12^2+9^2}=15$，再算總面積 $324 + 4 \\times (\\frac{1}{2} \\cdot 18 \\cdot 15)$。"
+ },
+ "skills": {
+  "topic_id": "T-MEN",
+  "knowledge_point_ids": [
+   "K-MEN-01",
+   "K-MEN-02"
+  ],
+  "formula_ids": [
+   "F-MEN-01",
+   "F-MEN-02",
+   "F-MEN-03",
+   "F-MEN-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

@@ -1,0 +1,91 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 2",
+  "qno": "45",
+  "hash": "#2017P2Q45"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "統計量變換性質",
+   "secondary_topics": [
+    "眾數定義",
+    "四分位數間距定義",
+    "方差定義"
+   ],
+   "required_formulas": [
+    "$m_{kx} = k \\cdot m_x$",
+    "$r_{kx} = k \\cdot r_x$",
+    "$v_{kx} = k^2 \\cdot v_x$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤解方差變換係數",
+    "student_thought_process": "學生認為所有統計量都隨數據線性放大，忘記方差是離散程度指標，其變換需平方倍數（$k^2$），故 III 錯誤。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆眾數與間距性質",
+    "student_thought_process": "學生誤以為四分位數間距不隨數據放大而改變，或誤解眾數定義，導致否定 I 而肯定 III。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "過度簡化統計量變換",
+    "student_thought_process": "學生假設所有描述數據特徵的數值（包括分散度）都直接乘以 $k$，忽略方差與標準差需平方倍數的特性。"
+   }
+  },
+  "scaffolding_hints": [
+   "回想眾數是出現最頻繁的數值，若每個數值都放大 $8$ 倍，新的眾數會如何變化？",
+   "四分位數間距（IQR）是兩個百分位的差值。若數據整體放大 $8$ 倍，這兩個差值會變成多少倍？",
+   "方差衡量的是數據與均值的偏差平方和的平均值。若每個偏差都放大 $8$ 倍，偏差的平方會變成多少倍？"
+  ],
+  "quick_solution_strategy": "眾數與間距線性變換 ($\\times k$)，方差需平方變換 ($\\times k^2$)。"
+ },
+ "skills": {
+  "topic_id": "T-STA",
+  "knowledge_point_ids": [
+   "K-STA-01",
+   "K-STA-02"
+  ],
+  "formula_ids": [
+   "F-STA-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

@@ -1,0 +1,92 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 2",
+  "qno": "6",
+  "hash": "#2024P2Q6"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "多項式恆等式與係數比較",
+   "secondary_topics": [
+    "一元一次方程式化簡",
+    "比例計算"
+   ],
+   "required_formulas": [
+    "多項式展開 $x(4x+b)$",
+    "對應次數係數相等原則"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "係數配對錯誤",
+    "student_thought_process": "展開右邊得 $4x^2+bx$，左邊 $4x^2+2ax+3a$。比較一次項係數：$b=2a$；常數項：$3a=2c$。學生誤算 $b=3a$ 或 $2c=a$，導致比例顛倒。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "常數項關係搞混",
+    "student_thought_process": "由 $3a=2c$ 推導出 $c=1.5a$，學生錯誤記成 $c=a/2$ 或混淆 $a:c$ 與 $c:a$ 的比例關係，算出 $4:6:3$。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略二次項係數",
+    "student_thought_process": "學生未檢查二次項係數是否匹配（均為 4），直接假設 $a=4, b=2, c=3$ 等數值代入，導致比例完全錯誤。"
+   }
+  },
+  "scaffolding_hints": [
+   "將方程式右邊展開，整理成 $Ax^2+Bx+C$ 的形式。",
+   "利用多項式恆等的性質：對應次數的係數必須完全相等。",
+   "從一次項與常數項建立 $a,b,c$ 的關係式後，再求最簡整數比。"
+  ],
+  "quick_solution_strategy": "展開右邊得 $4x^2+bx+2c$，比較係數：$b=2a, 3a=2c\\Rightarrow a:b:c=a:2a:\\frac{3}{2}a = 1:2:\\frac{3}{2} = 2:4:3$"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-01",
+   "K-POL-02"
+  ],
+  "formula_ids": [
+   "F-POL-01",
+   "F-POL-02",
+   "F-POL-03",
+   "F-POL-06"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

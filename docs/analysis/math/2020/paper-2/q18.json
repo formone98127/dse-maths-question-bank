@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2020",
+  "paper": "Paper 2",
+  "qno": "18",
+  "hash": "#2020P2Q18"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "幾何面積比例",
+   "secondary_topics": [
+    "相似三角形",
+    "平行四邊形性質",
+    "線段比例"
+   ],
+   "required_formulas": [
+    "Area = \\frac{1}{2}bh",
+    "\\triangle AEG \\sim \\triangle FBG",
+    "\\text{若 } EF \\parallel BD, \\text{則 } \\triangle CDH \\sim \\triangle FBH"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 180
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "比例開方錯誤",
+    "student_thought_process": "算出相似比為 2:7，但忘記面積比是平方關係，直接將線段比乘以 48 或加錯數值，導致結果偏小。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆相似對應邊",
+    "student_thought_process": "誤以為 \\triangle CDH 與 \\triangle AEG 直接相關，忽略中間轉換步驟，或錯誤判斷 \\triangle FBG 的形狀導致面積計算偏差。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "放大倍數錯誤",
+    "student_thought_process": "正確算出相似比，但在將 \\triangle FBG 面積轉換至 \\triangle CDH 時，錯誤地將比例因子平方兩次或乘以總長度。"
+   }
+  },
+  "scaffolding_hints": [
+   "利用平行線截割定理，觀察 \\triangle AEG 與 \\triangle FBG 的相似關係，並由 AE:ED=2:5 推導出對應線段比。",
+   "確認 \\triangle CDH 與 \\triangle FBH 是否相似，以及它們與已知面積圖形的連結路徑。",
+   "先求 \\triangle FBG 的面積，再透過平行四邊形對角線性質或相似比轉換至 \\triangle CDH。"
+  ],
+  "quick_solution_strategy": "由 AE:ED=2:5 得 EG:GB=2:7；\\triangle AEG 面積 48\\Rightarrow \\triangle FBG=48\\times(7/2)^2=735；再利用平行線性質求 \\triangle CDH。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-05"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

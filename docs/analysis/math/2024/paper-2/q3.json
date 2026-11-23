@@ -1,0 +1,85 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 2",
+  "qno": "3",
+  "hash": "#2024P2Q3"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "字串，一次方程式變形與分數運算",
+   "secondary_topics": [
+    "字串，移項規則",
+    "字串，分母為零的限制"
+   ],
+   "required_formulas": [
+    "字串，$a = b + c \\Rightarrow a - c = b$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "字串，符號處理錯誤",
+    "student_thought_process": "字串，學生移項時忘記變號，將 $k-n$ 寫成 $n-k$"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "字串，倒置分數關係",
+    "student_thought_process": "字串，學生誤以為移項後直接將分子分母互換，未保留係數 5"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "字串，雙重符號錯誤",
+    "student_thought_process": "字串，學生同時犯下移項變號錯誤與分數倒置錯誤"
+   }
+  },
+  "scaffolding_hints": [
+   "字串，觀察等式結構：$k$ 等於兩部分相加，要解出 $m$ 需先隔離含 $m$ 的項。",
+   "字串，將 $n$ 移到左邊時，符號會改變，請注意 $k-n$ 與 $n-k$ 的差異。",
+   "字串，移項後得到 $\frac{5}{2m} = k-n$，接下來對兩邊取倒數並整理即可。"
+  ],
+  "quick_solution_strategy": "字串，先減去 $n$ 得 $\frac{5}{2m}=k-n$，再取倒數並乘係數即得答案。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-POL-07",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-POL-07",
+    "formula_id": null,
+    "ability_id": "A-CHAIN"
+   },
+   "D": {
+    "knowledge_point_id": "K-POL-07",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

@@ -1,0 +1,92 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 2",
+  "qno": "43",
+  "hash": "#2022P2Q43"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "幾何機率與條件機率",
+   "secondary_topics": [
+    "無放回/有放回抽樣",
+    "互斥事件",
+    "獨立重複試驗"
+   ],
+   "required_formulas": [
+    "P(白或黃) = (2+2)/10",
+    "P(非白且非黃) = 3/5",
+    "等比級數求和公式 S_n = a_1(1-r^n)/(1-r)"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 180
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "等比級數求和計算錯誤",
+    "student_thought_process": "學生算出首項 a=2/5, r=3/5。正確答案應為 1-(3/5)^n，但學生可能誤算成 (2/5)/(1-3/5) = 2/3 或混淆了分母，導致得出 3/10 這樣的錯誤數值，可能是將分子分母搞混或計算時遺漏步驟。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "未考慮女孩抽到白球的條件機率",
+    "student_thought_process": "學生可能只計算了「最終停止時是女孩」的機率，或是誤以為只要球被抽出就是女孩抽到。忽略了題目要求的是「女孩抽到白球」這特定事件的總機率，而非單純的停止事件機率。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "誤讀題目情境或混淆互斥與獨立",
+    "student_thought_process": "學生可能將「女孩抽到白球」理解為「所有非紅色球的總機率」，或是錯誤地認為只要不是男孩先抽中就算女孩成功，從而將機率加總過大，甚至算出接近 1 的結果如 17/20。"
+   }
+  },
+  "scaffolding_hints": [
+   "定義事件：設 E 為女孩抽到白球的事件，F 為遊戲停止（有人抽到白或黃）的事件。",
+   "分析過程：男孩先抽，若未中則換女孩；女孩抽，若未中則輪回。計算每次女孩抽球的條件機率。",
+   "利用無限等比級數：女孩在第 n 次抽球成功的機率構成一個級數，求其總和即可得到答案。"
+  ],
+  "quick_solution_strategy": "計算女孩在第 1,3,5...次抽球時抽到白球的機率並求和：(2/5)(3/5)^0 + (2/5)(3/5)^2 + ..."
+ },
+ "skills": {
+  "topic_id": "T-PROB",
+  "knowledge_point_ids": [
+   "K-PROB-01",
+   "K-PROB-02"
+  ],
+  "formula_ids": [
+   "F-PROB-01",
+   "F-PROB-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

@@ -1,0 +1,91 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2020",
+  "paper": "Paper 2",
+  "qno": "14",
+  "hash": "#2020P2Q14"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "測量誤差與範圍估算",
+   "secondary_topics": [
+    "多邊形面積計算",
+    "梯形面積公式"
+   ],
+   "required_formulas": [
+    "$\\text{Area} = \\frac{1}{2}(a+b)h$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "邊長取值錯誤導致面積極小化計算失敗",
+    "student_thought_process": "學生可能將所有邊長直接取最小值（如 3.5, 4.5）代入公式，但忽略了題目要求「最接近」意味著誤差範圍是 $\\pm 0.5$，且未正確處理最大與最小面積的極限情況。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "邊長取值邏輯混淆：將最小值與最大值混合計算",
+    "student_thought_process": "學生可能錯誤地認為最小面積是用所有邊長的最小值，最大面積是用所有邊長的最大值，但在具體數值代入時，對某個邊（如底邊）的極限處理有誤，導致範圍偏移。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "誤讀圖形比例或數值刻度",
+    "student_thought_process": "學生可能將圖中的某個長度（例如 4.5）看錯成其他數值，或者在計算最大面積時，錯誤地將底邊長度加上了過多的誤差範圍，導致上限過大。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：題目中的「所有量度均準確至最接近的 cm」意味著每個讀數都有 $\\pm 0.5$ cm 的誤差範圍。",
+   "提示 2：要找出面積 $A$ 的範圍，需分別計算該五邊形的「最小可能面積」與「最大可能面積」。",
+   "提示 3：最小面積應由所有邊長取最小值（讀數 -0.5）算出；最大面積應由所有邊長取最大值（讀數 +0.5）算出。"
+  ],
+  "quick_solution_strategy": "將各邊長分別減 0.5 得最小邊長，加 0.5 得最大邊長，再分別代入梯形面積公式計算極限值。"
+ },
+ "skills": {
+  "topic_id": "T-MEN",
+  "knowledge_point_ids": [
+   "K-MEN-01",
+   "K-MEN-02"
+  ],
+  "formula_ids": [
+   "F-MEN-01",
+   "F-MEN-02",
+   "F-MEN-03",
+   "F-MEN-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

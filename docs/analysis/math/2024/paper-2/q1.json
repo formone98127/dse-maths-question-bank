@@ -1,0 +1,93 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 2",
+  "qno": "1",
+  "hash": "#2024P2Q1"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "代數展開與平方差公式",
+   "secondary_topics": [
+    "完全平方公式",
+    "合併同類項"
+   ],
+   "required_formulas": [
+    "$(a+b)^2 = a^2 + 2ab + b^2$",
+    "$(a-b)^2 = a^2 - 2ab + b^2$",
+    "$A^2 - B^2 = (A-B)(A+B)$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "漏掉交叉項",
+    "student_thought_process": "學生展開後得到 $x^2+6xy+9y^2$ 與 $x^2-6xy+9y^2$，相減時錯誤地認為 $9y^2$ 抵消後只剩 $12xy$，卻又誤算係數或混淆選項，最終選到只有 $2x^2$ 的錯誤結果，可能是在計算 $6xy - (-6xy)$ 時出錯。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "係數算錯",
+    "student_thought_process": "學生正確展開得到 $12xy$，但在合併 $6xy - (-6xy)$ 時，錯誤地將結果寫成 $6xy$，可能是忘記了負負得正的規則或單純計算加法錯誤。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤解平方差結構",
+    "student_thought_process": "學生可能認為 $(x+3y)^2$ 與 $(x-3y)^2$ 的 $y^2$ 項不會抵消，或者錯誤地將兩式相加而非相減，導致保留了 $18y^2$ 項。"
+   }
+  },
+  "scaffolding_hints": [
+   "嘗試先將題目視為 $A^2 - B^2$ 的形式，其中 $A = x+3y$, $B = x-3y$。",
+   "回憶平方差公式 $A^2 - B^2 = (A-B)(A+B)$ 是否比直接展開更簡便？",
+   "計算 $(x+3y) + (x-3y)$ 與 $(x+3y) - (x-3y)$ 的結果，再相乘即可。"
+  ],
+  "quick_solution_strategy": "利用平方差公式 $A^2-B^2=(A-B)(A+B)$，代入後直接計算括號內式子。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-01",
+   "K-POL-02"
+  ],
+  "formula_ids": [
+   "F-POL-01",
+   "F-POL-02",
+   "F-POL-03",
+   "F-POL-06"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

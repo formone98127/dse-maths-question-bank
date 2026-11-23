@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2018",
+  "paper": "Paper 2",
+  "qno": "36",
+  "hash": "#2018P2Q36"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "一元二次方程式與因式定理",
+   "secondary_topics": [
+    "韋達定理",
+    "函數圖形對稱性"
+   ],
+   "required_formulas": [
+    "$ax^2+bx+c=0$ 的根與係數關係 $x_1+x_2=-b/a, x_1x_2=c/a$",
+    "$f(x)=y$ 時 $(x-x_1)(x-x_2)$ 展開式"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆係數與常數項關係",
+    "student_thought_process": "學生可能誤將 $m,n$ 視為方程 $2x^2+5x=14$ 的根，直接計算 $(m+n)$ 而非 $(m+2)(n+2)$。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "展開後符號處理錯誤",
+    "student_thought_process": "正確算出 $mn=-16$ 與 $m+n=-2.5$，但在計算 $mn+2(m+n)+4$ 時，將 $2(-2.5)$ 算錯或加減混淆。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "忽略題目條件導致增根",
+    "student_thought_process": "學生解出 $m,n$ 後，可能未檢查 $m \neq n$ 條件，或錯誤地將方程視為 $(x-m)(x-n)=0$ 而遺漏常數項調整。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察 $2m^2+5m=14$ 與 $2n^2+5n=14$，可知 $m,n$ 是同一個一元二次方程式的兩個不同根。",
+   "將方程整理為標準形式 $2x^2+5x-14=0$，利用韋達定理求出 $m+n$ 與 $mn$ 的值。",
+   "目標式 $(m+2)(n+2)$ 可展開為 $mn + 2(m+n) + 4$，代入前兩步求得的值即可計算。"
+  ],
+  "quick_solution_strategy": "利用韋達定理求和與積，代入展開式計算。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

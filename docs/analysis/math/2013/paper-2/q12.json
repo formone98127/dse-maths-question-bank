@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 2",
+  "qno": "12",
+  "hash": "#2013P2Q12"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "比例尺與面積比",
+   "secondary_topics": [
+    "單位換算 (cm² to m²)",
+    "平方根運算"
+   ],
+   "required_formulas": [
+    "$\\text{面積比} = (\\text{長度比})^2$",
+    "$\\text{比例尺} = \\frac{1}{\\sqrt{\\text{面積比}}}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "忽略平方根",
+    "student_thought_process": "計算出面積比為 25，直接誤以為比例尺就是 1:25，忘記對長度比取平方根。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "單位未換算",
+    "student_thought_process": "將 900 m²與 36 cm²直接相比得 25，再誤算平方根為 50，或混淆了面積比數值與比例尺數值關係。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "單位換算錯誤",
+    "student_thought_process": "將 900 m²誤讀為 900 cm²，導致面積比為 25:1，平方根後得 5，再乘以某個係數或單位混淆得到巨大數字。"
+   }
+  },
+  "scaffolding_hints": [
+   "比例尺定義為長度之比，而非面積之比。",
+   "計算前必須將實際面積與地圖面積統一為相同單位（如 cm²）。",
+   "利用公式：$\\text{長度比} = \\sqrt{\\frac{\\text{地圖面積}}{\\text{實際面積}}}$ 來求解比例尺。"
+  ],
+  "quick_solution_strategy": "先換成同一單位，再求面積比並開平方根。"
+ },
+ "skills": {
+  "topic_id": "T-RAT",
+  "knowledge_point_ids": [
+   "K-RAT-01",
+   "K-RAT-02"
+  ],
+  "formula_ids": [
+   "F-RAT-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-RAT-01",
+    "formula_id": "F-RAT-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-RAT-01",
+    "formula_id": "F-RAT-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-RAT-01",
+    "formula_id": "F-RAT-01",
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

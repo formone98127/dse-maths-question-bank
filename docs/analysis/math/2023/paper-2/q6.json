@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2023",
+  "paper": "Paper 2",
+  "qno": "6",
+  "hash": "#2023P2Q6"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "一元一次不等式與邏輯或",
+   "secondary_topics": [
+    "分數不等式處理",
+    "負號移項規則"
+   ],
+   "required_formulas": [
+    "$\\frac{a}{b} < c \\Rightarrow a < bc$ (當 $b>0$)",
+    "$x - k < m \\Rightarrow x < m + k$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略或運算",
+    "student_thought_process": "學生解出第一個不等式 $x<-2$，誤以為這是唯一解集，忽略了題目中的「或」條件，直接選取自己解出的結果。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "移項符號錯誤",
+    "student_thought_process": "學生在處理第一個不等式時，將 $-3$ 移到右邊變成 $+3$ 但方向搞錯，或者解第二個時分母處理不當導致範圍擴大。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "混淆不等號與等號",
+    "student_thought_process": "學生正確算出 $x<-2$ 或 $x>-6$，但在合併範圍時，誤將「或」理解為交集（且），並錯誤地認為邊界點包含在內。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "請先分別解出兩個獨立的不等式：$x - 3 < -5$ 與 $\\frac{6 - x}{4} < 2$。",
+   "注意第二個不等式中分母為正數，直接乘過去不等號方向不變；移項時要注意符號變換。",
+   "題目關鍵字是「或」，代表只要滿足其中任一條件即可，請將兩個解集合併後觀察共同特徵。"
+  ],
+  "quick_solution_strategy": "分別求解兩邊得 $x<-2$ 與 $x>-6$，合併後發現所有實數均符合至少一個條件。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-05"
+  ],
+  "formula_ids": [
+   "F-EQN-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

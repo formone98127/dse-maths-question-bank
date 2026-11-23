@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2015",
+  "paper": "Paper 2",
+  "qno": "10",
+  "hash": "#2015P2Q10"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "複利計算",
+   "secondary_topics": [
+    "年利率轉季利率",
+    "複利公式應用"
+   ],
+   "required_formulas": [
+    "A = P(1 + r/n)^(nt)"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "單利誤用",
+    "student_thought_process": "學生可能將年利率直接乘以年數，或忽略複利效應，使用單利公式計算導致結果偏低。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "結算頻率錯誤",
+    "student_thought_process": "學生可能誤以為每年結息一次，將 n 設為 1，導致計算出的本利和低於實際複利結果。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "四捨五入誤差",
+    "student_thought_process": "學生在計算過程中可能過早進行四捨五入，或對指數運算精度掌握不足，導致結果偏離。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "複利計算需考慮利息再投資，公式為 A = P(1 + r/n)^(nt)。",
+   "注意題目要求每季結息，故年利率需除以 4，總期數為年數乘以 4。",
+   "代入數值後請保留足夠小數位至最後一步再四捨五入至最接近的元。"
+  ],
+  "quick_solution_strategy": "使用複利公式，注意季結頻率調整利率與期數。"
+ },
+ "skills": {
+  "topic_id": "T-PCT",
+  "knowledge_point_ids": [
+   "K-PCT-01",
+   "K-PCT-02"
+  ],
+  "formula_ids": [
+   "F-PCT-01",
+   "F-PCT-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

@@ -1,0 +1,92 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 2",
+  "qno": "15",
+  "hash": "#2024P2Q15"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓與扇形",
+   "secondary_topics": [
+    "弧長公式",
+    "扇形面積公式"
+   ],
+   "required_formulas": [
+    "$L = \\frac{n}{360} \\times 2\\pi r$",
+    "$A = \\frac{n}{360} \\times \\pi r^2$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "角度計算錯誤",
+    "student_thought_process": "算出半徑 r=24 後，代入弧長公式時將 $8\\pi$ 與 $2\\pi \\times 24$ 的比例算錯，得到 $360/10 = 36$"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "單位混淆",
+    "student_thought_process": "直接將面積 $80\\pi$ 除以半徑平方，忘記乘以 $\\pi$ 或角度係數，導致誤算為 $45$"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "公式記錯",
+    "student_thought_process": "混淆弧長與面積公式中的係數，錯誤認為角度與半徑無關，直接猜測 $60$"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "回想扇形的弧長 $L$ 與面積 $A$ 分別與半徑 $r$ 及角度 $n$ 的關係式。",
+   "觀察題目給出的數值，嘗試將兩個公式相除以消去未知數 $\\pi r^2$ 或 $2\\pi r$。",
+   "利用比例關係求出角度 $n$ 後，再代入任一公式驗證半徑是否合理。"
+  ],
+  "quick_solution_strategy": "由 $A/L = (\\pi r^2 \\cdot n/360) / (2\\pi r \\cdot n/360) = r/2$ 得 $r=10$，再代回求角度。"
+ },
+ "skills": {
+  "topic_id": "T-MEN",
+  "knowledge_point_ids": [
+   "K-MEN-01",
+   "K-MEN-02"
+  ],
+  "formula_ids": [
+   "F-MEN-01",
+   "F-MEN-02",
+   "F-MEN-03",
+   "F-MEN-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CHAIN"
+   },
+   "C": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

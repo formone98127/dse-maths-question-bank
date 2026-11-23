@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2015",
+  "paper": "Paper 2",
+  "qno": "38",
+  "hash": "#2015P2Q38"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "三角函數",
+   "secondary_topics": [
+    "畢氏恆等式",
+    "一元二次方程式"
+   ],
+   "required_formulas": [
+    "$\\cos^2 x + \\sin^2 x = 1$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "漏解根",
+    "student_thought_process": "解出 $\\sin x = -1$ 後，只寫出 $x=270^\\circ$ 這一個解，忘記了 $\\sin x = 0$ 時對應的 $x=0^\\circ, 360^\\circ(排除)$ 與 $x=180^\\circ$"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "多算根",
+    "student_thought_process": "將 $x=360^\\circ$ 誤認為在範圍內，或錯誤地將 $\\sin x = -1$ 的解算出兩個值（如混淆週期性），導致總數變成 4 個。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "範圍判斷錯誤",
+    "student_thought_process": "完全忽略題目給定的 $0^\\circ \\leq x < 360^\\circ$ 的嚴格不等號，將 $x=360^\\circ$ 也計入根數中，導致總數多算一個。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：利用畢氏恆等式 $\\cos^2 x = 1 - \\sin^2 x$ 將原方程轉換成僅含 $\\sin x$ 的一元二次方程式。",
+   "提示 2：解出該一元二次方程式後，你會得到關於 $\\sin x$ 的兩個不同數值，請分別列出所有可能的角度解。",
+   "提示 3：最後務必檢查每一個求得的 $x$ 值是否滿足題目給定的範圍條件 $0^\\circ \\leq x < 360^\\circ$"
+  ],
+  "quick_solution_strategy": "代換 $\\cos^2 x$，解一元二次式得 $\\sin x$ 值，再求角度並檢查範圍。"
+ },
+ "skills": {
+  "topic_id": "T-TRI",
+  "knowledge_point_ids": [
+   "K-TRI-01",
+   "K-TRI-02"
+  ],
+  "formula_ids": [
+   "F-TRI-01",
+   "F-TRI-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

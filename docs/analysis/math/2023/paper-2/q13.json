@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2023",
+  "paper": "Paper 2",
+  "qno": "13",
+  "hash": "#2023P2Q13"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "比例關係與冪數",
+   "secondary_topics": [
+    "立方根計算",
+    "平方運算",
+    "代入法"
+   ],
+   "required_formulas": [
+    "$z = k \\cdot x^2 \\cdot \\sqrt[3]{y}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "平方計算錯誤",
+    "student_thought_process": "正確設出公式後，在代入 $x=16$ 時算成 $256$ 而非 $256$ (誤以為 $16^2=256$ 但可能與 $144/36$ 比例混淆)，或在計算 $k$ 時出錯導致結果偏小。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "立方根計算錯誤",
+    "student_thought_process": "正確算出 $k=1/4$，但在計算 $\\sqrt[3]{729}=9$ 時誤算為其他數值，或將 $9^2$ 算錯，導致結果偏大。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "忽略比例常數",
+    "student_thought_process": "直接比較 $x$ 與 $y$ 的變化倍數，忘記先求 $k$ 或假設 $z$ 與變量成簡單線性關係，導致結果過大。"
+   }
+  },
+  "scaffolding_hints": [
+   "根據題目描述寫出 $z$ 與 $x, y$ 的函數關係式，包含比例常數 $k$。",
+   "利用第一組數據 ($x=12, y=64, z=36$) 代入公式求出 $k$ 的值。",
+   "將第二組數據 ($x=16, y=729$) 與求得的 $k$ 代入公式計算最終結果。"
+  ],
+  "quick_solution_strategy": "設 $z=k x^2 \\sqrt[3]{y}$，代第一組數求 $k$，再代第二組數算 $z$"
+ },
+ "skills": {
+  "topic_id": "T-VAR",
+  "knowledge_point_ids": [
+   "K-VAR-01"
+  ],
+  "formula_ids": [
+   "F-VAR-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

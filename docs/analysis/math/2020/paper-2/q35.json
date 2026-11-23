@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2020",
+  "paper": "Paper 2",
+  "qno": "35",
+  "hash": "#2020P2Q35"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "等差數列, 對數性質, 餘弦函數",
+   "secondary_topics": [
+    "指數法則",
+    "三角函數和角公式"
+   ],
+   "required_formulas": [
+    "\\log(a^b) = b\\log a",
+    "\\cos(90\\pm \\theta) = \\sin/\\cos \\theta",
+    "\\text{等差條件: } d_2-d_1 = d_3-d_2"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略 III 項為等差",
+    "student_thought_process": "學生算出 I(公比)與 II(公差)正確，但誤判 III。可能認為餘弦函數非線性故無等差，或計算 \\cos(90-a)-\\cos 90\\neq \\cos 90-\\cos(90+a) 時出錯。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "誤判 II 項非等差",
+    "student_thought_process": "學生正確判斷 I 與 III，但在計算 II 時，將 \\frac{(9-5a)-(8-4a)}{1} = 1-a\\neq 0 看錯，或混淆線性表達式是否為常數。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤判 I 項非等差",
+    "student_thought_process": "學生忽略對數指數法則，將 \\log a^{-3}, \\log a, \\log a^5 視為 \\log(a^{-3}), \\log a, \\log a^5 直接比較數值，未化簡係數 -3, 1, 5 成等差。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "檢查 I：利用對數法則 \\log a^n = n\\log a，將三項化為 \\log a 的倍數形式。",
+   "檢查 II：觀察三項係數變化規律，計算相鄰兩項之差是否為常數。",
+   "檢查 III：利用 \\cos(90-\\theta) = \\sin \\theta 與 \\cos(90+\\theta) = -\\sin \\theta 展開並比較公差。"
+  ],
+  "quick_solution_strategy": "化簡 I 為係數等差；II 為線性式公差固定；III 轉餘弦為正弦後驗證等差。"
+ },
+ "skills": {
+  "topic_id": "T-SEQ",
+  "knowledge_point_ids": [
+   "K-SEQ-02"
+  ],
+  "formula_ids": [
+   "F-SEQ-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-SEQ-02",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-SEQ-02",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-SEQ-02",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

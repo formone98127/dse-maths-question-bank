@@ -1,0 +1,92 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2023",
+  "paper": "Paper 2",
+  "qno": "40",
+  "hash": "#2023P2Q40"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "立體幾何，向量法求二面角",
+   "secondary_topics": [
+    "餘弦定理",
+    "直三稜柱的性質"
+   ],
+   "required_formulas": [
+    "$\\cos\\theta = \\frac{\\vec{n_1} \\cdot \\vec{n_2}}{|\\vec{n_1}| |\\vec{n_2}|}$",
+    "$|\\vec{u} \\times \\vec{v}|^2 + (\\vec{u} \\cdot \\vec{v})^2 = |\\vec{u}|^2 |\\vec{v}|^2$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "計算錯誤，分母算錯",
+    "student_thought_process": "建立坐標系後，求出兩個面的法向量時，其中一個法向量的 $z$ 分量平方項計算出錯，導致最終餘弦值分母變成 33。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤解二面角定義",
+    "student_thought_process": "學生可能誤以為 $\\theta$ 是側面與底面的夾角，或是直接用三角形內角餘弦定理計算錯誤的平面角，忽略了法向量夾角與二面角的關係。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "忽略幾何結構",
+    "student_thought_process": "學生可能誤判 $V$ 在底面的投影位置，假設 $V$ 投影在正方形中心或邊中點，導致法向量垂直於彼此，得出餘弦為 0。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：由於底面是正方形且側棱長不等，直立角錐的頂點 $V$ 在底面的投影不一定在中心，需先設坐標系表示各點。",
+   "提示 2：利用向量積叉乘求兩個平面（$\\triangle ABV$ 與 $\\triangle BCV$）的法向量時，注意座標代入的準確性。",
+   "提示 3：二面角的餘弦值等於兩法向量夾角餘弦值的絕對值或相反數，需根據圖形判斷符號，再計算具體數值。"
+  ],
+  "quick_solution_strategy": "建立坐標系，求兩平面法向量，代入公式 $\\cos\\theta = \\frac{\\vec{n_1} \\cdot \\vec{n_2}}{|\\vec{n_1}| |\\vec{n_2}|}$ 計算。"
+ },
+ "skills": {
+  "topic_id": "T-MEN",
+  "knowledge_point_ids": [
+   "K-MEN-01",
+   "K-MEN-02"
+  ],
+  "formula_ids": [
+   "F-MEN-01",
+   "F-MEN-02",
+   "F-MEN-03",
+   "F-MEN-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

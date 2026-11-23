@@ -1,0 +1,86 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 2",
+  "qno": "31",
+  "hash": "#2022P2Q31"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "指數運算與數值大小比較",
+   "secondary_topics": [
+    "負數的偶次方性質",
+    "倒數與分數大小關係"
+   ],
+   "required_formulas": [
+    "$a^{-n} = \\frac{1}{a^n}$",
+    "$(-x)^{even} = x^{even}$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "負數偶次方誤判為負",
+    "student_thought_process": "學生可能認為 $(-345)^{768}$ 是負數，因此選它。但指數 768 是偶數，結果必為正數且極大。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "忽略負指數意義",
+    "student_thought_process": "學生將 $453^{-786}$ 視為 $453^{786}$，認為底數大所以值大，忘記這是極小的正分數。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "分數大小比較失誤",
+    "student_thought_process": "學生認為 $\\frac{2}{543}$ 比 $\\frac{1}{435}$ 大，故其倒數或原值較大，未意識到指數效應讓 C 更小。"
+   }
+  },
+  "scaffolding_hints": [
+   "第一步：觀察所有選項的符號與底數範圍，判斷哪些是正數、哪些可能為負數。",
+   "第二步：將負指數轉換為分母形式，比較各選項化簡後分子與分母的相對大小關係。",
+   "第三步：針對兩個極小的正數選項 C 與 D，比較其底數與指數的綜合影響以決定最小值。"
+  ],
+  "quick_solution_strategy": "先排除負數（無）與大於 1 的數；比較 $453^{-786}$ 與 $\\left(\\frac{2}{543}\\right)^{876}$ 時，注意 C 的底數更小。"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

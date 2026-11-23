@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 2",
+  "qno": "7",
+  "hash": "#2022P2Q7"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "複合不等式",
+   "secondary_topics": [
+    "一元一次不等式",
+    "區間表示法"
+   ],
+   "required_formulas": [
+    "$3y-5 < 5y+1$",
+    "$5y+1 \\leq 11$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "不等號方向混淆",
+    "student_thought_process": "解出 $y < 2$ 後，錯誤地將小於號寫成小於等於號，忽略了原題中 $5y+1 \\leq 11$ 的嚴格不等關係。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "移項計算錯誤",
+    "student_thought_process": "在解 $3y-5 < 5y+1$ 時，移項後算出 $-2y < 6 \\Rightarrow y > -3$，卻誤算成 $y > -2$，導致下界錯誤。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "不等號方向與邊界混淆",
+    "student_thought_process": "同時犯下兩項錯誤：將 $y > -3$ 誤算為 $y \\geq -2$，並將 $y < 2$ 誤寫為 $y < 3$，完全搞錯數值與符號。"
+   }
+  },
+  "scaffolding_hints": [
+   "將複合不等式拆分成兩個獨立的一元一次不等式來分別求解。",
+   "注意不等式中箭頭的方向以及等號的有無，這決定了區間是開還是閉。",
+   "先解左邊部分 $3y-5 < 5y+1$ 得到下界，再解右邊部分 $5y+1 \\leq 11$ 得到上界。"
+  ],
+  "quick_solution_strategy": "拆分不等式為兩部分求解：$3y-5 < 5y+1$ 與 $5y+1 \\leq 11$，合併結果並檢查不等號。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-05"
+  ],
+  "formula_ids": [
+   "F-EQN-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

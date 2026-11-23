@@ -1,0 +1,91 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 2",
+  "qno": "30",
+  "hash": "#2022P2Q30"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "平均數與中位數的應用",
+   "secondary_topics": [
+    "眾數 (Mode)",
+    "全距 (Range)",
+    "變異數 (Variance)",
+    "不等式性質"
+   ],
+   "required_formulas": [
+    "$\\text{Mean} = \\frac{\\sum x}{n}$",
+    "$\\text{Median} = \\text{中位數位置的值}$",
+    "$\\text{Range} = \\max(x) - \\min(x)$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 120
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤判 I 的必然性",
+    "student_thought_process": "學生可能認為既然中位數是 6，且數字多為 6，所以眾數必然是 6。忽略了 x 和 y 若取其他值（如 x=10, y=10），眾數會變成 10 而非 6，故 I 非必然成立。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤判 III 的必然性",
+    "student_thought_process": "學生可能混淆了「可能的變異數」與「最大的變異數」。題目問的是「必須為真」，而變異數取決於 x, y 的值，其最大值遠大於 6（當 x,y 極大時），故 III 錯誤。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "同時誤判 I 與 III",
+    "student_thought_process": "學生未能區分「必然成立」與「可能情況」。他們認為只要存在某種情況讓變異數為 6，III 就成立；或認為眾數一定是 6。忽略了題目要求的是在所有滿足條件的 x,y 組合下都必須成立的語句。"
+   }
+  },
+  "scaffolding_hints": [
+   "利用平均數公式建立關於 $x, y$ 的方程，並結合中位數定義確定 $x, y$ 的相對大小關係。",
+   "將 $x, y$ 視為可變量，思考在滿足平均數與中位數條件下，$x, y$ 的取值範圍是否受限於特定整數。",
+   "逐一檢驗 I, II, III 三個陳述：I 關注頻率分佈，II 關注最大最小值之差，III 關注數據分散程度，判斷哪些是「必然」而非「可能」。"
+  ],
+  "quick_solution_strategy": "由平均數=6 推導 $x+y$ 關係；由中位數=6 確定排序；檢驗各選項是否在所有合法 $(x,y)$ 下均成立。"
+ },
+ "skills": {
+  "topic_id": "T-STA",
+  "knowledge_point_ids": [
+   "K-STA-01"
+  ],
+  "formula_ids": [
+   "F-STA-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

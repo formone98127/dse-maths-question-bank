@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2019",
+  "paper": "Paper 2",
+  "qno": "36",
+  "hash": "#2019P2Q36"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "等比數列",
+   "secondary_topics": [
+    "指數運算性質",
+    "二元一次聯立方程式"
+   ],
+   "required_formulas": [
+    "$a_n = a_1 r^{n-1}$",
+    "$r^n$ 的計算規則"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "公比計算錯誤導致指數次方低估",
+    "student_thought_process": "解出 $r=2$ 後，誤算 $a_1 = 3/2$。代入 $n=20$ 時，可能將 $(3/2) \\cdot 2^{19}$ 簡化為 $3 \\cdot 2^{17}$ 或計算 $2^{19}$ 時少乘一次公比，導致結果為 $65536$。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "指數運算錯誤或忽略首項係數",
+    "student_thought_process": "正確求出 $a_1=3/2, r=2$。但在計算 $a_{20} = (3/2) \\cdot 2^{19}$ 時，誤認為 $(3/2) \\cdot 2^{19} = 3 \\cdot 2^{18}$ 且算出 $3 \\cdot 262144 / 2 = 393216$ 後四捨五入？或是直接算錯 $2^{19}$ 為 $524288/2=262144$ 但忘了乘 $3/2$ 的分子分母處理，導致誤選 $131072$（即 $2^{17}$）。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆項數與指數關係",
+    "student_thought_process": "解出 $a_1=3/2, r=2$。在計算 $a_{20}$ 時，錯誤地將公式記為 $a_n = a_1 \\cdot r^n$（從第 0 項開始），導致計算 $(3/2) \\cdot 2^{20} = 3 \\cdot 524288 / 2 = 786432$，再誤算或混淆選項，最終選出最大數值 $524288$（即 $2^{19}$）。"
+   }
+  },
+  "scaffolding_hints": [
+   "設首項為 $a$，公比為 $r$。請將題目條件寫成兩個關於 $a$ 與 $r$ 的方程式：$ar + ar^4 = 9$ 與 $ar^6 + ar^9 = 288$。",
+   "觀察兩個方程式中 $r$ 的指數關係，利用第二式除以第一式來消去 $a$，進而求出公比 $r$ 的值。",
+   "求得 $r$ 後，代回任一原方程式解出首項 $a$。最後將 $n=20$ 代入通項公式 $a_n = a r^{n-1}$ 計算最終答案。"
+  ],
+  "quick_solution_strategy": "設首項 $a$、公比 $r$，列式 $ar(1+r^3)=9$ 與 $ar^6(1+r^3)=288$，相除得 $r^5=32 \\Rightarrow r=2$，代回得 $a=1.5$，算出 $a_{20}$。"
+ },
+ "skills": {
+  "topic_id": "T-SEQ",
+  "knowledge_point_ids": [
+   "K-SEQ-03"
+  ],
+  "formula_ids": [
+   "F-SEQ-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-SEQ-03",
+    "formula_id": "F-SEQ-03",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-SEQ-03",
+    "formula_id": "F-SEQ-03",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-SEQ-03",
+    "formula_id": "F-SEQ-03",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2016",
+  "paper": "Paper 2",
+  "qno": "25",
+  "hash": "#2016P2Q25"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "直線方程式與垂直條件",
+   "secondary_topics": [
+    "x 軸上點的坐標特徵",
+    "斜率乘積為負一"
+   ],
+   "required_formulas": [
+    "若 $Ax+By+C=0$，則斜率 $m=-\\frac{A}{B}$",
+    "兩直線垂直時，斜率乘積 $m_1 \\cdot m_2 = -1$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "斜率計算錯誤",
+    "student_thought_process": "將 $4x+3y-5=0$ 斜率算成 $\\frac{3}{4}$，導致垂直直線斜率算成 $-\\frac{4}{3}$，代入求 $k$ 時出錯或混淆截距概念。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "忽略常數項影響",
+    "student_thought_process": "未注意到兩直線交於 $x$ 軸，直接假設過原點或隨意設定截距，導致 $k$ 值計算偏差。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "符號處理失誤",
+    "student_thought_process": "正確算出第一直線斜率為 $-\\frac{4}{3}$，垂直斜率應為 $\\frac{3}{4}$，但在代入 $hx+ky+15=0$ 時，將 $k$ 與係數關係搞混，算出 $k=3$。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：回想直線 $Ax+By+C=0$ 的斜率公式為何？",
+   "提示 2：兩直線垂直時，它們的斜率之間有什麼數值關係？",
+   "提示 3：利用「交於 $x$ 軸」這個條件，你能先求出 $h$ 與 $k$ 的關係嗎？再結合垂直條件解出 $k$"
+  ],
+  "quick_solution_strategy": "求第一直線斜率 $-4/3$，垂直則第二直線斜率為 $3/4$。由 $hx+ky+15=0$ 得 $-h/k=3/4$。再令 $y=0$ 求交點 $x=-15/h$，代入第一直線解出 $h$，進而得 $k$"
+ },
+ "skills": {
+  "topic_id": "T-LIN",
+  "knowledge_point_ids": [
+   "K-LIN-01",
+   "K-LIN-02"
+  ],
+  "formula_ids": [
+   "F-LIN-01",
+   "F-LIN-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-COND"
+   },
+   "C": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

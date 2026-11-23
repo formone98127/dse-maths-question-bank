@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2016",
+  "paper": "Paper 2",
+  "qno": "11",
+  "hash": "#2016P2Q11"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "比例與變數代換",
+   "secondary_topics": [
+    "一元一次方程式解法",
+    "比的基本性質"
+   ],
+   "required_formulas": [
+    "\\frac{a}{b} = \\frac{c}{d} \\implies ad = bc"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆分子分母順序",
+    "student_thought_process": "學生可能將 \\(3y-4x\\) 對應到 \\(2x+y\\) 的係數直接相加，或誤以為 \\(x\\) 與 \\(y\\) 係數比即為答案，忽略常數項影響。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "展開時符號錯誤",
+    "student_thought_process": "在解 \\(6(3y-4x)=5(2x+y)\\) 時，展開 \\(-24x\\) 或 \\(10x\\) 時弄錯符號，導致 \\(x\\) 的係數計算出錯。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "合併同類項錯誤",
+    "student_thought_process": "正確展開後，在將 \\(x\\) 與 \\(y\\) 係數移項合併時，計算 \\(18y-y=17y\\) 或類似步驟時算錯數字。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "將比例式 \\((3y-4x):(2x+y)=5:6\\) 轉換為分數等式 \\(\\frac{3y-4x}{2x+y}=\\frac{5}{6}\\)。",
+   "利用交叉相乘法（Cross-multiplication）去除分母，得到一個關於 \\(x\\) 和 \\(y\\) 的線性方程式。",
+   "將所有含 \\(x\\) 的項移到一邊，含 \\(y\\) 的項移到另一邊，整理出 \\(x\\) 與 \\(y\\) 的係數比即為所求。"
+  ],
+  "quick_solution_strategy": "交叉相乘展開，移項合併同類項，計算 \\(x:y\\) 係數比。"
+ },
+ "skills": {
+  "topic_id": "T-RAT",
+  "knowledge_point_ids": [
+   "K-RAT-01",
+   "K-RAT-02"
+  ],
+  "formula_ids": [
+   "F-RAT-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-RAT-01",
+    "formula_id": "F-RAT-01",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-RAT-01",
+    "formula_id": "F-RAT-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-RAT-01",
+    "formula_id": "F-RAT-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

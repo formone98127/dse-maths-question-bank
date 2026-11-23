@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2025",
+  "paper": "Paper 2",
+  "qno": "39",
+  "hash": "#2025P2Q39"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "三角函數方程",
+   "secondary_topics": [
+    "正切函數圖像與週期性",
+    "因式分解",
+    "角度範圍限制"
+   ],
+   "required_formulas": [
+    "$\\tan^3 \\theta = 2 \\tan \\theta$",
+    "$\\tan \\theta (\\tan^2 \\theta - 2) = 0$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略重根或誤判解數",
+    "student_thought_process": "學生解出 $\\tan \\theta = 0$ 與 $\\tan \\theta = \\pm\\sqrt{2}$，但可能忘記 $\\tan \\theta=0$ 在範圍內無解，或誤以為正負根各一僅得兩解。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "計算週期或範圍誤差",
+    "student_thought_process": "學生正確解出三根，但錯誤地將 $90^\\circ < \\theta < 270^\\circ$ 視為包含端點，多算一解；或混淆正切週期導致重複計數。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "誤讀不等號方向",
+    "student_thought_process": "學生將 $90^\\circ < \\theta < 270^\\circ$ 誤解為 $0^\\circ$ 到 $360^\\circ$，導致多算出第一與第三象限的額外解，總數變為四或五。"
+   }
+  },
+  "scaffolding_hints": [
+   "將方程移項並因式分解，找出所有可能的 $\\tan \\theta$ 值。",
+   "畫出正切函數在 $90^\\circ$ 到 $270^\\circ$ 之間的圖像，觀察與水平線的交點。",
+   "檢查每個解是否落在題目給定的開放區間 $(90^\\circ, 270^\\circ)$ 內，注意漸近線處無定義。"
+  ],
+  "quick_solution_strategy": "因式分解得 $\\tan \\theta = 0, \\pm\\sqrt{2}$；檢查哪些值落在 $(90^\\circ, 270^\\circ)$ 區間內並計數。"
+ },
+ "skills": {
+  "topic_id": "T-FUN",
+  "knowledge_point_ids": [
+   "K-FUN-01",
+   "K-FUN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

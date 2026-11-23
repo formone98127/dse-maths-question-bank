@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 2",
+  "qno": "10",
+  "hash": "#2021P2Q10"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "一元一次不等式解集",
+   "secondary_topics": [
+    "集合的聯集運算",
+    "區間表示法"
+   ],
+   "required_formulas": [
+    "$ ax+b \\leq cx+d $",
+    "$ ax > b $"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆聯集與交集",
+    "student_thought_process": "學生解出兩個不等式後，誤以為題目要求同時滿足（交集），直接取較嚴格的範圍 $x \\leq -4$。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "移項變號錯誤",
+    "student_thought_process": "解第二個不等式時，將 $6-7x > 20$ 移項得 $-7x > 14$，除以負數忘記變號，算成 $x < -2$ 或方向搞反。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "除負數未變號",
+    "student_thought_process": "解第二個不等式 $-7x > 14$ 時，除以 $-7$ 忘記改變不等號方向，錯誤得出 $x > -2$"
+   }
+  },
+  "scaffolding_hints": [
+   "先分別求解兩個獨立的不等式，將結果寫成區間形式。",
+   "注意：當不等式兩邊同除以負數時，不等號方向必須反轉。",
+   "題目中的「或」代表解集為兩個結果的聯集（Union），需合併所有滿足條件的 $x$ 值範圍。"
+  ],
+  "quick_solution_strategy": "分別解出兩邊區間，取兩者並集即為答案。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-05"
+  ],
+  "formula_ids": [
+   "F-EQN-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

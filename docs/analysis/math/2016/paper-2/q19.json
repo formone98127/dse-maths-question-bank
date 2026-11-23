@@ -1,0 +1,92 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2016",
+  "paper": "Paper 2",
+  "qno": "19",
+  "hash": "#2016P2Q19"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓與扇形面積",
+   "secondary_topics": [
+    "弧度與角度轉換",
+    "周界計算"
+   ],
+   "required_formulas": [
+    "扇形面積公式 $A = \\frac{\\theta}{360} \\pi r^2$",
+    "陰影面積差公式 $A_{shaded} = A_{large} - A_{small}$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 180
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略周界定義",
+    "student_thought_process": "學生誤以為 II 正確，可能未計算出角度即假設面積關係成立，或錯誤認為周界包含直徑部分。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "角度計算錯誤",
+    "student_thought_process": "學生在計算陰影面積差時，未能正確解出 $\\theta$ 值，導致誤判 I 與 III 的真偽組合。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "周界概念混淆",
+    "student_thought_process": "學生錯誤計算扇形 $OCD$ 的周界，可能將兩半徑相加而非弧長加半徑，或誤算角度導致 III 不成立。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：陰影區域面積等於大扇形面積減小扇形面積，兩者圓心角相同，可建立方程式求解角度 $\\theta$。",
+   "提示 2：利用公式 $72\\pi = \\frac{\\theta}{360}\\pi(39^2 - 33^2)$，先化簡括號內數字再解 $\\theta$。",
+   "提示 3：求出角度後，分別驗證扇形 $OAB$ 面積與扇形 $OCD$ 周界（弧長加半徑）的數值是否匹配選項。"
+  ],
+  "quick_solution_strategy": "先由陰影面積差求角度，再逐一驗證三個陳述句的真偽。"
+ },
+ "skills": {
+  "topic_id": "T-MEN",
+  "knowledge_point_ids": [
+   "K-MEN-01",
+   "K-MEN-02"
+  ],
+  "formula_ids": [
+   "F-MEN-01",
+   "F-MEN-02",
+   "F-MEN-03",
+   "F-MEN-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

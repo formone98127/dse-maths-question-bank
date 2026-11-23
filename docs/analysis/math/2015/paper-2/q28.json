@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2015",
+  "paper": "Paper 2",
+  "qno": "28",
+  "hash": "#2015P2Q28"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "機率 (Probability)",
+   "secondary_topics": [
+    "棒形圖解讀",
+    "分數運算"
+   ],
+   "required_formulas": [
+    "P(E) = 事件 E 發生的次數 / 總試驗次數"
+   ],
+   "bloom_taxonomy_level": "理解",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "總人數計算錯誤 (10+9=19)",
+    "student_thought_process": "學生將圖表數據看錯或加總錯誤，算出總人數為 19。分母應為 11(5+4+2)，而非 19。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "分子分母混淆 (4/11)",
+    "student_thought_process": "學生正確算出總人數 11，但將擁有 2 條鑰匙的學生數 (4) 當作分子，而非題目要求的 3 條 (2)。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "概念混淆 (將總人數當分子)",
+    "student_thought_process": "學生誤解機率定義，將擁有 3 條鑰匙的學生數 (2) 當作分子，卻用擁有 2 條鑰匙的學生數 (4) 或總人數做分母邏輯混亂。"
+   }
+  },
+  "scaffolding_hints": [
+   "第一步：仔細觀察棒形圖，確認橫軸代表什麼（鑰匙數），縱軸代表什麼（人數）。",
+   "第二步：將所有欄位的高度相加，計算該班學生的總人數。",
+   "第三步：找出擁有 3 條鑰匙的學生人數，並套入機率公式 $P = \\frac{\\text{目標人數}}{\\text{總人數}}$"
+  ],
+  "quick_solution_strategy": "先加總各欄高度得總人數 11，再取擁有 3 把鑰匙之人数 2，計算 2/11。"
+ },
+ "skills": {
+  "topic_id": "T-STA",
+  "knowledge_point_ids": [
+   "K-STA-01",
+   "K-STA-02"
+  ],
+  "formula_ids": [
+   "F-STA-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-COND"
+   },
+   "C": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

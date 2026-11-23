@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 2",
+  "qno": "5",
+  "hash": "#2021P2Q5"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "近似值與誤差範圍",
+   "secondary_topics": [
+    "四捨五入原理",
+    "不等式表示法"
+   ],
+   "required_formulas": [
+    "若 $x$ 準確至第 $n$ 位小數為 $d_n.d_{n-1}...d_1$，則實際範圍為 $[d_n.d_{n-1}...d_1 - 0.5\\times10^{-n}, d_n.d_{n-1}...d_1 + 0.5\\times10^{-n})$"
+   ],
+   "bloom_taxonomy_level": "理解",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤差邊界計算錯誤",
+    "student_thought_process": "學生只考慮了整數部分變化，將誤差範圍擴大到下一個小數位（0.01），忽略了四捨五入時僅影響末位小數的性質，導致上下限變成 6.23 和 6.25。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤差邊界計算錯誤與不等號方向混淆",
+    "student_thought_process": "學生同樣將誤差範圍擴大到 0.01，且在不確定四捨五入規則下，隨機選擇了包含下限但不含上限的不等式形式，未能正確識別 $6.245$ 會進位成 $6.25$。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "不等號方向判斷錯誤",
+    "student_thought_process": "學生正確計算出誤差半徑為 $0.005$，得到邊界 $6.235$ 和 $6.245$，但錯誤地認為較小的數值（$6.235$）對應大於符號，混淆了「四捨五入後等於目標值」時，原數需滿足的大小關係。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "回想「四捨五入」的定義：當末位後一位小數大於等於 5 時，末位進 1。",
+   "思考：若 $x$ 四捨五入後為 $6.24$，則 $x$ 必須落在哪個區間內？請考慮邊界值 $6.235$ 和 $6.245$ 分別會變成什麼數。",
+   "確認邊界值的包含性：若邊界值本身四捨五入後等於目標值，該邊界是否應被包含在範圍內（使用 $\\leq$ 或 $<$）？"
+  ],
+  "quick_solution_strategy": "計算誤差半徑 $0.5 \\times 10^{-2}=0.005$，得邊界 $6.235, 6.245$；驗證邊界值四捨五入後是否等於 $6.24$ 以決定不等號方向。"
+ },
+ "skills": {
+  "topic_id": "T-PCT",
+  "knowledge_point_ids": [
+   "K-PCT-01",
+   "K-PCT-02"
+  ],
+  "formula_ids": [
+   "F-PCT-01",
+   "F-PCT-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

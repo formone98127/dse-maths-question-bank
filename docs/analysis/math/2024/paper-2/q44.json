@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 2",
+  "qno": "44",
+  "hash": "#2024P2Q44"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "描述性統計",
+   "secondary_topics": [
+    "中位數定義",
+    "標準差計算",
+    "平均數"
+   ],
+   "required_formulas": [
+    "$$\\text{Median} = \\text{第 } \\frac{n+1}{2} \\text{ 個數據 (排序後)}$$",
+    "$$s = \\sqrt{\\frac{\\sum(x_i-\\bar{x})^2}{n-1}}$$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤判 II 與 III 皆錯",
+    "student_thought_process": "算出中位數是 21.5，四捨五入成 22 覺得對。但忽略標準差計算結果，以為數據分散度不大而否定 III，同時誤算 Z-score 否定 II。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "中位數計算錯誤",
+    "student_thought_process": "未將資料排序，直接取中間數字或算錯平均數當作中位數。例如 (39+10)/2=24.5 或誤以為 13,16 中間是 14.5 而忽略實際位置。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "混淆中位數定義",
+    "student_thought_process": "正確算出標準差大於 8，認為 III 對。但對於 I，因為中位數精確值是 21.5，便認定「22」是錯的，忽略了題目是否允許近似值（通常不允許）。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "第一步：將給出的 12 個分數依由小到大重新排列，確認第 6 與第 7 個數值。",
+   "第二步：計算平均數 $\\bar{x}$，再求每個數據與平均數的偏差平方和，除以 $n-1$ 後開根號得到標準差。",
+   "第三步：對每個考生計算 Z-score ($Z = \\frac{x - \\bar{x}}{s}$)，觀察是否有大於或等於 2 的情況。"
+  ],
+  "quick_solution_strategy": "排序求中位數為 21.5(非 22)；算標準差約 9.6，故 III 對；最大 Z-score 約 0.8，II 對。選 D。"
+ },
+ "skills": {
+  "topic_id": "T-STA",
+  "knowledge_point_ids": [
+   "K-STA-01"
+  ],
+  "formula_ids": [
+   "F-STA-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

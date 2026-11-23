@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2015",
+  "paper": "Paper 2",
+  "qno": "2",
+  "hash": "#2015P2Q2"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "指數法則",
+   "secondary_topics": [
+    "冪的冪 (Power of a Power)",
+    "商的冪 (Quotient of Powers)"
+   ],
+   "required_formulas": [
+    "$\\frac{a^m}{a^n} = a^{m-n}$",
+    "$(ab)^n = a^n b^n$",
+    "$(a^m)^n = a^{mn}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "冪的冪誤算係數",
+    "student_thought_process": "將 $(3y^6)^4$ 中的 $3$ 誤以為是 $3^1$，然後直接乘以 $4$ 得到 $12$ 或忽略冪運算，又將指數相減時計算錯誤，導致係數變成 $4$"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "冪的冪誤算係數與指數",
+    "student_thought_process": "將 $(3y^6)^4$ 中的 $3$ 誤認為 $3^1 \\times 4 = 12$ 後又簡化錯誤，或者將 $3^4=81$ 誤算成 $4$，同時指數計算為 $24-2=22$ 但係數處理完全錯誤"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "冪的冪誤算指數",
+    "student_thought_process": "正確計算出 $3^4=81$ 但誤以為是 $27$，且將指數 $6 \\times 4 = 24$ 減去 $2$ 時算成 $10$ 或混淆規則，導致結果為 $27y^{12}$"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "先處理括號內的冪運算，利用 $(ab)^n = a^n b^n$ 將係數與變數分開。",
+   "接著運用商的冪法則 $\\frac{a^m}{a^n} = a^{m-n}$ 來合併相同底數的項。",
+   "最後檢查 $3^4$ 的值以及指數運算結果是否匹配選項 D。"
+  ],
+  "quick_solution_strategy": "先展開 $(3y^6)^4$ 得 $81y^{24}$，再除以 $3y^2$ 得 $27y^{22}$。"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-02",
+   "K-EXP-07"
+  ],
+  "formula_ids": [
+   "F-EXP-03",
+   "F-EXP-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-EXP-02",
+    "formula_id": "F-EXP-03",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-EXP-02",
+    "formula_id": "F-EXP-03",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-EXP-02",
+    "formula_id": "F-EXP-03",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

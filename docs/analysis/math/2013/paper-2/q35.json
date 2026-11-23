@@ -1,0 +1,86 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 2",
+  "qno": "35",
+  "hash": "#2013P2Q35"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "一元二次方程式根與係數關係",
+   "secondary_topics": [
+    "因式分解",
+    "代數變換"
+   ],
+   "required_formulas": [
+    "若 $ax^2+bx+c=0$ 之兩根為 $\\alpha, \beta$, 則 $\\alpha\beta = c/a$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "符號錯誤",
+    "student_thought_process": "學生將方程移項後得 $x^2-3x+5=0$，誤認為常數項係數為正，直接取 $c=5$ 或計算時忽略負號。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "移項符號處理不當",
+    "student_thought_process": "學生正確移項得 $x^2-3x+5=0$，但在計算 $\\alpha\beta=c/a$ 時，誤將 $c$ 視為 $-5$ 或混淆了 $3x$ 的符號影響。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略條件 $\\alpha\\neq\beta$",
+    "student_thought_process": "學生未將方程整理成標準形式，直接從原式 $3x=x^2-5$ 看出 $x(x-3)=-5$，誤判乘積為 $5$。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "將給出的兩個方程式整理成標準的一元二次方程式形式 $x^2+bx+c=0$。",
+   "觀察題目條件 $\\alpha\\neq\beta$，這暗示了該方程式有兩個不同的實根，且我們需要求的是兩根之積。",
+   "利用韋達定理（Vieta's formulas），在標準形式下，兩根之積等於常數項除以二次項係數。"
+  ],
+  "quick_solution_strategy": "整理方程為 $x^2-3x+5=0$，由韋達定理知 $\\alpha\beta=5/1$，再檢查移項符號是否正確。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

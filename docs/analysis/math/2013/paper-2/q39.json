@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 2",
+  "qno": "39",
+  "hash": "#2013P2Q39"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "正切函數圖像性質",
+   "secondary_topics": [
+    "振幅與垂直位移",
+    "漸近線方程",
+    "三角函數基本值"
+   ],
+   "required_formulas": [
+    "$$y = h + k\\tan(2x)$$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 120
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤判漸近線條件",
+    "student_thought_process": "學生認為當 x 趨近 \\alpha 時，y 值有限，故 \\tan\\alpha = 1/k。忽略了題目圖像顯示在 \\alpha 處為漸近線，應滿足 \\tan(2\\alpha) 無定義或特定關係，而非簡單代數等式。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤判垂直位移方向",
+    "student_thought_process": "學生觀察到圖像整體位於 x 軸上方，但錯誤地將水平漸近線（或中心線）位置與 \\tan\\alpha 的關係混淆，導致同時接受 II 和 III。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "過度推導錯誤關係",
+    "student_thought_process": "學生正確判斷 h>0 與 k<0，但在處理 III 時，錯誤地將 \\tan(2\\alpha) 的無定義條件簡化為 \\tan\\alpha = 1/k，導致多選。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察圖像中曲線在 x=\\alpha 處的行為：它是垂直漸近線還是普通點？",
+   "正切函數 y=A\\tan(Bx+C)+D 的垂直漸近線發生在 Bx+C = 90^\\circ + n\\cdot 180^\\circ 時。",
+   "檢查 \\alpha 是否為第一個垂直漸近線的位置，並利用此性質驗證選項 III 的數學表達式是否正確。"
+  ],
+  "quick_solution_strategy": "由圖像知 x=\\alpha 為漸近線，故 \\tan(2\\alpha) 無意義；h>0, k<0 成立，III 錯誤。"
+ },
+ "skills": {
+  "topic_id": "T-TRI",
+  "knowledge_point_ids": [
+   "K-TRI-01",
+   "K-TRI-02"
+  ],
+  "formula_ids": [
+   "F-TRI-01",
+   "F-TRI-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 2",
+  "qno": "44",
+  "hash": "#2013P2Q44"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "排列組合",
+   "secondary_topics": [
+    "分步計數原理",
+    "全排列公式"
+   ],
+   "required_formulas": [
+    "n! = n × (n-1) × ... × 1",
+    "乘法原理：總情況數 = 步驟 A 情況數 × 步驟 B 情況數"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "僅計算首三位排列數",
+    "student_thought_process": "學生只注意到首三個位由 3 個數字排列，算出 3! = 6，再誤以為尾五個位固定或忽略，最終選錯。若選 A(15)可能是算成 C(5,3) 或其他錯誤組合數。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "僅計算尾五位排列數並除以誤差因子",
+    "student_thought_process": "學生正確算出尾五位為 5! = 120，但可能誤以為首三位只需選 3 個數字而非全排列，或將 120 與某個小數字相乘得 126（如 120+6 之類錯誤運算）。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "將兩個排列相乘後又乘以總數字數",
+    "student_thought_process": "學生算出 3! × 5! = 720，但誤以為還要再乘以電話號碼總長度 8，得到 5760 或類似大數；D(40320) 實際是 8!，顯示學生混淆了「部分排列」與「全排列」。"
+   }
+  },
+  "scaffolding_hints": [
+   "將八位號碼拆成兩獨立區塊：首三位與尾五位。",
+   "回憶排列公式 n! 代表 n 個不同元素的全排列數目。",
+   "利用乘法原理將兩個區塊的排列數相乘即得總數。"
+  ],
+  "quick_solution_strategy": "計算 3! × 5! = 6 × 120 = 720"
+ },
+ "skills": {
+  "topic_id": "T-COM",
+  "knowledge_point_ids": [
+   "K-COM-02",
+   "K-COM-03"
+  ],
+  "formula_ids": [
+   "F-COM-01",
+   "F-COM-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-COM-02",
+    "formula_id": "F-COM-01",
+    "ability_id": "A-COND"
+   },
+   "B": {
+    "knowledge_point_id": "K-COM-02",
+    "formula_id": "F-COM-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-COM-02",
+    "formula_id": "F-COM-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

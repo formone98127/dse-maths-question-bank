@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 2",
+  "qno": "5",
+  "hash": "#2022P2Q5"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "分式方程變形",
+   "secondary_topics": [
+    "通分",
+    "移項與因式分解",
+    "基本代數運算"
+   ],
+   "required_formulas": [
+    "\\frac{a}{b} + \\frac{c}{d} = \\frac{ad+bc}{bd} ",
+    " \\frac{A}{B} = C \\implies A = BC "
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "符號錯誤",
+    "student_thought_process": "移項後分母變號時，忘記將 $4v$ 與 $-3$ 的相對位置互換，導致分母變成 $3-4v$"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "交叉相乘混淆",
+    "student_thought_process": "誤以為左邊通分後分子是 $2v+3u$，然後直接將 $u$ 的係數與 $v$ 互換，搞錯分母結構"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "移項符號混亂",
+    "student_thought_process": "將 $\\frac{3}{v}$ 移到右邊時，錯誤地寫成 $-\\frac{2v}{4v-2}$，且分母未正確化簡為 $4v-3$"
+   }
+  },
+  "scaffolding_hints": [
+   "將等式左邊的兩個分式通分，合併成一個單一的分式。",
+   "利用比例性質 $\\frac{A}{B}=C$ 可推出 $A=BC$，將 $u$ 從分母移到分子。",
+   "檢查最終結果的符號與分母是否為 $4v-3$"
+  ],
+  "quick_solution_strategy": "通分得 $\\frac{2v+3u}{uv}=4$，移項整理出 $u=\\frac{2v}{4v-3}$"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

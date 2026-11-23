@@ -1,0 +1,92 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2016",
+  "paper": "Paper 2",
+  "qno": "20",
+  "hash": "#2016P2Q20"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "幾何相似與面積比",
+   "secondary_topics": [
+    "平行線截割定理",
+    "正方形性質"
+   ],
+   "required_formulas": [
+    "相似三角形對應邊長比等於相似比",
+    "相似圖形面積比等於相似比的平方"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆線段比與面積比關係",
+    "student_thought_process": "學生算出相似比為 1:2，誤以為面積比直接等於邊長比，忽略了面積需平方。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "比例運算錯誤",
+    "student_thought_process": "正確求出相似比為 2:3，但在計算面積比時，將 (2/3)^2 誤算為 2:3 或 4:9 以外的數值。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "誤讀題目所求對象",
+    "student_thought_process": "學生混淆了四邊形 DEQP 與 ABCP 的對應關係，或將相似比 2:3 直接當作答案 D 的 4:9 的平方根處理錯誤。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察圖形中平行線 $AB \\parallel CD \\parallel EF$，思考它們如何截斷直線 $AG$ 形成相似三角形。",
+   "利用相似三角形 $\\triangle ABP \\sim \\triangle GDP$（或相關對應三角形）找出線段 $AP:PG$ 的比例關係。",
+   "確定相似比後，記得面積比等於相似比的平方，並確認題目要求的兩塊區域是否直接對應。"
+  ],
+  "quick_solution_strategy": "利用平行線得相似比 $2:3$，面積比為 $(2/3)^2 = 4/9$，但需注意題目求的是 $DEQP:ABCP$，需調整分子分母順序或重新審視對應區域。"
+ },
+ "skills": {
+  "topic_id": "T-MEN",
+  "knowledge_point_ids": [
+   "K-MEN-01",
+   "K-MEN-02"
+  ],
+  "formula_ids": [
+   "F-MEN-01",
+   "F-MEN-02",
+   "F-MEN-03",
+   "F-MEN-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

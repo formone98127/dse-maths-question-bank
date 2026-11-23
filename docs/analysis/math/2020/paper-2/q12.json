@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2020",
+  "paper": "Paper 2",
+  "qno": "12",
+  "hash": "#2020P2Q12"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "數列遞迴與求和",
+   "secondary_topics": [
+    "等差級數",
+    "平方數性質"
+   ],
+   "required_formulas": [
+    "a_{n+1} = a_n + (2n+1)",
+    "\\sum_{k=1}^{n}(2k+1) = n^2 + 2n"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "誤算第 1 項或求和起始點",
+    "student_thought_process": "學生可能直接將 n=7 代入公式 a_n = n^2 + 2n 得到 63，但題目定義 a_1=3。若誤以為 a_0=0 則算出 a_7=51 是 D。若選 A(15) 可能是只加了前幾項或混淆了 n 的意義，例如計算 1+2+3+4+5+6=21 再加錯數。更可能的是計算 1^2+2^2... 時算錯。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "誤用通項公式導致偏移",
+    "student_thought_process": "學生可能計算出 a_n = n^2 + 3n + 1 或其他錯誤遞迴關係，或者在計算 a_6 時出錯。若選 B(27)，可能是算到第 5 個圖案的結果 (a_5=27) 而誤以為題目問的是這個。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "求和時漏掉初始條件或項數",
+    "student_thought_process": "學生可能正確建立 a_{n+1} = a_n + 2n + 1，但在手算累加時出錯。例如從 a_1=3 開始，加上 5,7,9,11,13,15 時加法錯誤得到 38。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "觀察題目給出的遞迴關係：第 (n+1) 個圖案比第 n 個多 (2n+1) 粒點子。",
+   "列出前幾個圖案的點子數目，尋找規律或直接建立通項公式 a_n。",
+   "利用平方數性質：連續奇數之和等於項數的平方，推導 a_n 與 n 的關係後代入 n=7 計算。"
+  ],
+  "quick_solution_strategy": "由 a_1=3, a_{n+1}=a_n+(2n+1) 推得 a_n=n^2+2n+1=(n+1)^2，故第 7 個為 (7+1)^2=64? 等等，重新檢查：a_1=3=(1+1)^2? 不對。應為 a_n = n^2+2n+1? 不，a_1=3, a_2=3+5=8=2^2+4? 讓我們重算：a_1=3; a_2=3+(2*1+1)=8; a_3=8+(2*2+1)=13; ... 發現 a_n = n^2 + 2n + 1? 不，a_1=3, (1)^2+2(1)+1=4≠3。正確通項：a_n = n^2 + 2n + 1 - 1? 不。實際上是 a_n = n^2 + 2n + 1 從 n=0 開始？題目 a_1=3。令 b_n = a_n - 1，則 b_{n+1} = b_n + (2n+1)，b_1=2。此路不通。直接累加：a_7 = 3 + sum_{k=1}^{6}(2k+1) = 3 + [2*(1..6)+6] = 3 + (2*21+6)=3+48=51。"
+ },
+ "skills": {
+  "topic_id": "T-SEQ",
+  "knowledge_point_ids": [
+   "K-SEQ-01",
+   "K-SEQ-02"
+  ],
+  "formula_ids": [
+   "F-SEQ-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-SEQ-01",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-SEQ-01",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-SEQ-01",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

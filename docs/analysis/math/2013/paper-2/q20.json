@@ -1,0 +1,91 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 2",
+  "qno": "20",
+  "hash": "#2013P2Q20"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "三角測量與方位角",
+   "secondary_topics": [
+    "等腰三角形性質",
+    "平行線內錯角",
+    "方位角定義"
+   ],
+   "required_formulas": [
+    "三角形內角和定理：$\\sum \\theta = 180^\\circ$",
+    "等腰三角形底角相等：$\\angle OQP = \\angle OPQ$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "角度計算錯誤",
+    "student_thought_process": "算出頂角 $24^\\circ$ 後，誤以為底角是 $24^\\circ$。正確應為 $(180-24)/2 = 78^\\circ$。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "角度計算錯誤",
+    "student_thought_process": "算出頂角 $24^\\circ$ 後，誤以為底角是 $27^\\circ$。可能將 $180-24=156$ 除以 $5.7$ 或單純口算錯誤。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "方位方向混淆",
+    "student_thought_process": "算出角度大小正確，但忘記「由 $Q$ 測 $P$」需反向。誤將東向當作西向，或搞混南北基準線方向。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "畫出以 $O$ 為頂點的三角形，標記已知方位角與北極線。",
+   "利用平行線性質（兩條北極線平行），找出三角形內部的角度關係。",
+   "結合等腰三角形底角相等與三角形內角和，計算未知角後轉換回方位角格式。"
+  ],
+  "quick_solution_strategy": "算出頂角 $24^\\circ$，得底角 $78^\\circ$；由北轉西 $90-78=12^\\circ$ 錯，應為由南偏東 $27^\\circ$"
+ },
+ "skills": {
+  "topic_id": "T-TRI",
+  "knowledge_point_ids": [
+   "K-TRI-01",
+   "K-TRI-02"
+  ],
+  "formula_ids": [
+   "F-TRI-01",
+   "F-TRI-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

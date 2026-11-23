@@ -1,0 +1,92 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 2",
+  "qno": "21",
+  "hash": "#2013P2Q21"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "正多邊形性質",
+   "secondary_topics": [
+    "內角與外角關係",
+    "對角線計數公式",
+    "旋轉對稱性"
+   ],
+   "required_formulas": [
+    "$\\text{內角} + \\text{外角} = 180^\\circ$",
+    "$\\text{對角線數} = \\frac{n(n-1)}{2}$",
+    "$\\text{旋轉對稱次數} = n$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "忽略其他正確語句",
+    "student_thought_process": "算出 n=10 後，未檢查 II 和 III。因為 II (對角線=45) 和 III (旋轉=10) 皆為真，學生誤以為只要選出 n 值即可，忽略了題目是「下列何者正確」的組合選擇。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆對角線與邊數關係",
+    "student_thought_process": "學生可能誤以為正十邊形的對角線數就是 10，或者忘記了對角線公式 $\\frac{n(n-1)}{2}$。若認為對角線數=邊數，則會選 B，但這在幾何上是不成立的。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤解旋轉對稱定義",
+    "student_thought_process": "學生正確算出 n=10，但認為正十邊形沒有旋轉對稱性（或認為只有 1 次），因此排除了 III。這顯示學生未理解正多邊形具有 $n$ 個旋轉對稱位置的概念。"
+   }
+  },
+  "scaffolding_hints": [
+   "先利用內角與外角互補關係 ($180^\\circ$) 建立方程，求出邊數 $n$ 的值。",
+   "確認正 $n$ 邊形的旋轉對稱性定義：繞中心旋轉 $360/n$ 度後重合的次數即為 $n$。",
+   "代入 $n=10$ 至對角線公式 $\\frac{n(n-1)}{2}$ 驗證語句 II，並結合 I 與 III 判斷最終選項。"
+  ],
+  "quick_solution_strategy": "由內外角關係求 n=10；正十邊形有 45 條對角線、10 個旋轉對稱位置，故選 C。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-01",
+   "K-GEO-02"
+  ],
+  "formula_ids": [
+   "F-GEO-01",
+   "F-GEO-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CHAIN"
+   },
+   "B": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

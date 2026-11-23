@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2023",
+  "paper": "Paper 2",
+  "qno": "35",
+  "hash": "#2023P2Q35"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "函數變換與二次函數頂點",
+   "secondary_topics": [
+    "複合函數 f(3x)",
+    "對稱軸公式 x = -b/2a",
+    "頂點坐標計算"
+   ],
+   "required_formulas": [
+    "$y = ax^2 + bx + c$ 的頂點 $x$ 座標為 $-\\frac{b}{2a}$",
+    "$f(kx)$ 表示水平壓縮與變換"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略 f(3x) 的變換係數",
+    "student_thought_process": "學生直接對原函數 $f(x)$ 求頂點，未考慮 $f(3x)$ 將 $x$ 壓縮為 $3x$，導致 $b$ 與 $a$ 值判斷錯誤。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "頂點 y 座標計算失誤",
+    "student_thought_process": "學生算出正確頂點 x，但代入時忘記負號或平方運算錯誤，導致 y 座標變成 $5m^2$ 而非正確值。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆變換後的對稱軸",
+    "student_thought_process": "學生認為對稱軸仍為 $x = -\\frac{18m}{6}$，未將 $3x$ 視為新的自變數，誤判對稱軸位置。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "先將 $y = -f(3x)$ 展開成 $Ax^2 + Bx + C$ 的形式，注意 $3x$ 取代了原本的 $x$。",
+   "二次函數頂點公式為 $x = -\\frac{B}{2A}$，請小心辨識展開後的係數 $A$ 與 $B$。",
+   "將計算出的頂點 $(x, y)$ 代入選項 I、II、III 逐一驗證，即可找出正確組合。"
+  ],
+  "quick_solution_strategy": "展開 $y = -(3(3x)^2 + 18m(3x) + 22m^2)$，再套用頂點公式與對稱軸定義。"
+ },
+ "skills": {
+  "topic_id": "T-FUN",
+  "knowledge_point_ids": [
+   "K-FUN-01",
+   "K-FUN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

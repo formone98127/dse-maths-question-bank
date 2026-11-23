@@ -1,0 +1,91 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2018",
+  "paper": "Paper 2",
+  "qno": "42",
+  "hash": "#2018P2Q42"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "排列組合",
+   "secondary_topics": [
+    "加法原理",
+    "乘法原理",
+    "組合公式"
+   ],
+   "required_formulas": [
+    "$\\binom{n}{r} = \\frac{n!}{r!(n-r)!}$",
+    "$\\binom{14}{3} + \\binom{15}{3}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "計算錯誤",
+    "student_thought_process": "算出 $\\binom{14}{3}=364$ 與 $\\binom{15}{3}=455$，相加時誤為 $364+455=819$ 但選項 B 是 $3654$，可能是將 $364$ 看錯或加法進位錯誤。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "計算錯誤",
+    "student_thought_process": "正確算出 $364+455=819$，卻誤選 C 的 $4914$，可能混淆了其他題目數字或誤將結果乘以某個係數。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "概念性錯誤",
+    "student_thought_process": "誤以為要考慮順序，使用排列公式 $P(14,3)+P(15,3)$ 或將兩組人數直接相乘 $14\\times15$ 導致結果過大。"
+   }
+  },
+  "scaffolding_hints": [
+   "題目要求選出「相同性別」的學生，因此需分別計算男生與女生各能組成多少隊。",
+   "回憶組合公式 $\\binom{n}{r}$，其中 $n$ 為總人數，$r$ 為要選取的人數。",
+   "將男生的組合數與女生的組合數相加，即為所有可能的不同隊伍數量。"
+  ],
+  "quick_solution_strategy": "計算 $\\binom{14}{3}$ 與 $\\binom{15}{3}$ 後相加得答案。"
+ },
+ "skills": {
+  "topic_id": "T-COM",
+  "knowledge_point_ids": [
+   "K-COM-02",
+   "K-COM-03"
+  ],
+  "formula_ids": [
+   "F-COM-01",
+   "F-COM-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-COM-02",
+    "formula_id": "F-COM-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-COM-02",
+    "formula_id": "F-COM-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-COM-02",
+    "formula_id": "F-COM-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

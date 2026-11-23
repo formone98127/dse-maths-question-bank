@@ -1,0 +1,86 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2015",
+  "paper": "Paper 2",
+  "qno": "7",
+  "hash": "#2015P2Q7"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "一元二次方程式",
+   "secondary_topics": [
+    "代數式化簡",
+    "根之定義"
+   ],
+   "required_formulas": [
+    "若 a 為方程 ax^2+bx+c=0 之根，則 ax^2+bx+c=0"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略係數關係",
+    "student_thought_process": "學生可能誤以為 $\beta^2$ 項可完全消除剩餘常數，或錯誤計算 $-8\beta^2+10\beta$ 的代數值為 0 而非 -7。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "符號處理錯誤",
+    "student_thought_process": "學生在代入 $4\beta^2 = 5\beta + 1$ 後，計算 $-8\beta^2$ 時可能將係數 -8 與等式右邊係數 4 混淆，導致算出錯誤結果。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "解方程求根",
+    "student_thought_process": "學生試圖直接解出 $\beta$ 的無理數值，再代入計算，因計算複雜度過高而產生錯誤或捨棄正確路徑。"
+   }
+  },
+  "scaffolding_hints": [
+   "思考：題目給出 $\beta$ 是方程的根，這意味著什麼等式成立？",
+   "知識：利用 $4\beta^2 - 5\beta - 1 = 0$，將目標式中的 $\beta^2$ 項用一次式表示。",
+   "破題：觀察目標式 $7 + 10\beta - 8\beta^2$，將其變形為 $7 + 2(5\beta - 4\beta^2)$ 即可快速求解。"
+  ],
+  "quick_solution_strategy": "由根之定義得 $4\beta^2 = 5\beta + 1$，代入原式化簡即得答案。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

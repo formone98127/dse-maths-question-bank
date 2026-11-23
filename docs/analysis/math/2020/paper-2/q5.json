@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2020",
+  "paper": "Paper 2",
+  "qno": "5",
+  "hash": "#2020P2Q5"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "一元二次函數的代數運算",
+   "secondary_topics": [
+    "代入法求值",
+    "多項式展開與合併同類項"
+   ],
+   "required_formulas": [
+    "$f(a) = 3a^2 - a - 2$",
+    "$f(b) = 3b^2 - b - 2$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "漏掉二次項係數",
+    "student_thought_process": "計算時忽略 $3x^2$ 項，僅考慮一次項與常數項的差值，導致結果偏小。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "漏掉一次項係數",
+    "student_thought_process": "正確算出二次項 $6\\beta^2$，但計算一次項時遺漏了 $-(-\\beta) - (-(-\\beta)) = -2\\beta$ 的部分。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "符號處理錯誤",
+    "student_thought_process": "在展開 $f(1-\\beta)$ 時，對 $-(1-\\beta)$ 的符號處理出錯，導致一次項係數計算不正確。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：嘗試先將 $x=1+\\beta$ 和 $x=1-\\beta$ 分別代入函數表達式 $f(x)$。",
+   "提示 2：展開多項式時，注意 $(1\\pm\\beta)^2 = 1 \\pm 2\\beta + \\beta^2$ 的結構。",
+   "提示 3：將兩個結果相減時，觀察哪些項會相互抵消，哪些項會保留。"
+  ],
+  "quick_solution_strategy": "直接代入並展開，利用 $(1+\\beta)^2-(1-\\beta)^2=4\\beta$ 簡化二次項計算。"
+ },
+ "skills": {
+  "topic_id": "T-FUN",
+  "knowledge_point_ids": [
+   "K-FUN-01",
+   "K-FUN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

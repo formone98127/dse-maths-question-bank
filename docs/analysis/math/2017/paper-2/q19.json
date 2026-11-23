@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 2",
+  "qno": "19",
+  "hash": "#2017P2Q19"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "畢氏定理與直角三角形",
+   "secondary_topics": [
+    "坐標幾何",
+    "網格圖形分析"
+   ],
+   "required_formulas": [
+    "$c = \\sqrt{a^2 + b^2}$ (畢氏定理)",
+    "距離公式 $d = \\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "平方計算錯誤",
+    "student_thought_process": "學生可能將 $3^2=9$ 與 $4^2=16$ 加總後，誤算 $\\sqrt{25}$ 為 $6$ (混淆了 $6^2=36$)，或是單純口算錯誤。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤用勾股數",
+    "student_thought_process": "學生可能看到直角邊為 3 和 4，直接回憶常見勾股數 $(6,8,10)$ 或 $(3,4,5)$ 的倍數關係，但錯誤地將斜邊長度猜測為 $8$ (可能是 $3-4-5$ 三角形的 $2$ 倍誤植)。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "讀圖誤解",
+    "student_thought_process": "學生可能將圖形中的單位長度看錯，例如認為水平距離是 $2$ 格而非 $3$ 格，或是垂直距離為 $5$ 而非 $4$，導致計算出錯誤的斜邊長。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "觀察圖形，找出連接 $A$ 與 $H$ 的線段構成了哪一個直角三角形的斜邊？",
+   "量出或數出該直角三角形兩條直角邊的長度各是多少單位？",
+   "將兩直角邊的長度平方後相加，再開根號即可求得答案。"
+  ],
+  "quick_solution_strategy": "識別直角三角形直角邊為 $3$ 與 $4$，運用畢氏定理計算斜邊。"
+ },
+ "skills": {
+  "topic_id": "T-LIN",
+  "knowledge_point_ids": [
+   "K-LIN-01",
+   "K-LIN-02"
+  ],
+  "formula_ids": [
+   "F-LIN-01",
+   "F-LIN-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

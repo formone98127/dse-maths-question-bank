@@ -1,0 +1,86 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 2",
+  "qno": "33",
+  "hash": "#2022P2Q33"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "對數方程式與變數替換",
+   "secondary_topics": [
+    "指數與對數轉換",
+    "一元二次方程式解法"
+   ],
+   "required_formulas": [
+    "$\\log_{a^n} b = \\frac{1}{n}\\log_a b$",
+    "$x^2 - bx + c = 0$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "忽略變數替換後的係數調整",
+    "student_thought_process": "學生令 $u = \\log_4 y$，代入得 $u=2x-1$ 與 $u^2=20x-31$。消去 $x$ 時計算錯誤，未正確將 $x=(u+1)/2$ 代入第二式，導致二次項係數算錯。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "底數轉換計算失誤",
+    "student_thought_process": "學生正確解出 $u$ 的值，但在最後一步由 $\\log_4 y$ 轉為 $\\log_2 y$ 時，忘記乘以 2（因為 $\\log_2 y = 2\\log_4 y$），直接將 $u$ 的值當作答案。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆變數關係",
+    "student_thought_process": "學生試圖消去 $x$，但錯誤地認為 $\\log_4 y$ 與 $\\log_2 y$ 是獨立變量，未意識到題目要求的是後者的值，導致解出的根無意義或對應錯誤。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：考慮將 $\\log_4 y$ 視為一個整體變數 $u$，並觀察兩個方程式中 $x$ 的關係。",
+   "提示 2：利用對數換底公式 $\\log_2 y = 2\\log_4 y$，思考如何將第一個方程式中的 $x$ 用 $u$ 表示。",
+   "提示 3：將 $x = \\frac{u+1}{2}$ 代入第二個方程式，整理成關於 $u$ 的一元二次方程式求解。"
+  ],
+  "quick_solution_strategy": "令 $u=\\log_4 y$，由第一式得 $x=(u+1)/2$，代入第二式解出 $u$，最後乘以 2 即為答案。"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

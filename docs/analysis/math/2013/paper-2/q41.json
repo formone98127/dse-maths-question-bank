@@ -1,0 +1,91 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 2",
+  "qno": "41",
+  "hash": "#2013P2Q41"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓的性質與切線",
+   "secondary_topics": [
+    "弦切角定理",
+    "等腰三角形性質",
+    "角平分線定義"
+   ],
+   "required_formulas": [
+    "$\\text{弦切角} = \\frac{1}{2}\\text{夾弧所對圓周角}$",
+    "$OA=OC \\Rightarrow \\triangle OAC$ 為等腰三角形"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "角度計算錯誤",
+    "student_thought_process": "算出 $\\angle CAE=52^\\circ$ 後，誤以為 $\\angle CAB=26^\\circ$ 直接選 A，忽略了需先求 $\\angle OAC$ 再減去 $\\angle OAB$ 的過程。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "角度計算錯誤",
+    "student_thought_process": "可能將 $\\angle CAE$ 算錯為 $56^\\circ$，導致 $\\angle CAB=28^\\circ$，進而選 B。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "角度計算錯誤",
+    "student_thought_process": "可能將 $\\angle CAE$ 算錯為 $62^\\circ$，導致 $\\angle CAB=31^\\circ$，進而選 C。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "回憶圓的切線性質：半徑與切線垂直，以及弦切角定理。",
+   "利用 $OA=OC$ 得知 $\\triangle OAC$ 為等腰三角形，故 $\\angle OAC = \\angle OCA$。",
+   "結合角平分線條件，找出 $\\angle OAB$ 與 $\\angle CAB$ 的關係，進而求出目標角度。"
+  ],
+  "quick_solution_strategy": "先求弦切角 $\\angle CAE=52^\\circ$，得 $\\angle CAB=26^\\circ$；再證 $\\triangle OAC$ 等腰，利用外角或內角和求 $\\angle ACO$"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-01",
+   "K-GEO-02"
+  ],
+  "formula_ids": [
+   "F-GEO-01",
+   "F-GEO-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

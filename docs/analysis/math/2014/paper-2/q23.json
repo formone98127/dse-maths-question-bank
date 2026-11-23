@@ -1,0 +1,91 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 2",
+  "qno": "23",
+  "hash": "#2014P2Q23"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "極坐標與直角坐標轉換",
+   "secondary_topics": [
+    "反射對稱",
+    "三角函數值 (sin/cos)",
+    "角度範圍規範"
+   ],
+   "required_formulas": [
+    "$r = \\sqrt{x^2+y^2}$",
+    "$\\theta = \\tan^{-1}(y/x)$ 並調整象限",
+    "反射對稱性質：$(x,y) \\to (x,-y)$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "角度計算錯誤",
+    "student_thought_process": "算出 $r=2$ 正確，但反射後點在第三象限 ($180+30=210$)，未考慮反射後 $y$ 變號導致角度變化。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "半徑計算錯誤",
+    "student_thought_process": "反射不改變距離原點長度，$r$ 應為 $2$ 而非 $4$。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "象限判斷錯誤",
+    "student_thought_process": "反射後點落在第三象限，角度應為 $180+30=210$ 而非 $240$"
+   }
+  },
+  "scaffolding_hints": [
+   "先將直角坐標轉換為極坐標，計算半徑 $r$ 與參考角。",
+   "對 $x$ 軸反射意味著 $y$ 座標變號，請畫圖確認新點落在哪個象限。",
+   "根據新點的象限調整角度，確保最終答案符合題目選項格式。"
+  ],
+  "quick_solution_strategy": "算 $r=2$，原角 $30^\\circ$，反射後變第三象限，故為 $180+30=210^\\circ$"
+ },
+ "skills": {
+  "topic_id": "T-TRF",
+  "knowledge_point_ids": [
+   "K-TRF-02",
+   "K-TRF-04"
+  ],
+  "formula_ids": [
+   "F-TRF-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-TRF-02",
+    "formula_id": "F-TRF-02",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-TRF-02",
+    "formula_id": "F-TRF-02",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-TRF-02",
+    "formula_id": "F-TRF-02",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

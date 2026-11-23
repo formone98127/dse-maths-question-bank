@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2019",
+  "paper": "Paper 2",
+  "qno": "30",
+  "hash": "#2019P2Q30"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "統計量 (眾數, 中位數, 四分位數)",
+   "secondary_topics": [
+    "累積頻率",
+    "數據分佈的定義"
+   ],
+   "required_formulas": [
+    "$Q_1 = \\text{第 } \\frac{n+1}{4} \\text{ 個數據}$",
+    "$\\text{中位數} = \\text{第 } \\frac{n+1}{2} \\text{ 個數據}$",
+    "$Q_3 = \\text{第 } \\frac{3(n+1)}{4} \\text{ 個數據}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆頻率與數據值",
+    "student_thought_process": "學生誤以為出現次數最多的數字 (36) 就是眾數，忘記眾數是「數據值」而非「發生次數」。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "中位數位置計算錯誤",
+    "student_thought_process": "算出總人數 116，正確位置應為第 58.5 個數據。學生可能直接取中間類別或算錯累積頻率導致選到 8。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "上四分位數位置計算錯誤",
+    "student_thought_process": "算出 $Q_3$ 位置為第 87.75 個數據。學生可能誤認為落在最高分組即可選最大值，或插值計算錯誤。"
+   }
+  },
+  "scaffolding_hints": [
+   "首先計算所有學生的總人數 $n$，這是尋找任何百分位數的基礎。",
+   "回想四分位數的位置公式：下四分位數 ($Q_1$) 位於第 $\\frac{n+1}{4}$ 個數據處。",
+   "根據累積頻率表，找到對應於計算出位置的「優點數目」，而非該區間內的人數。"
+  ],
+  "quick_solution_strategy": "算總人數 116，求 $Q_1$ 位置為第 29.25 個數據，查累積頻率落在 6 這一組。"
+ },
+ "skills": {
+  "topic_id": "T-STA",
+  "knowledge_point_ids": [
+   "K-STA-01",
+   "K-STA-02"
+  ],
+  "formula_ids": [
+   "F-STA-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

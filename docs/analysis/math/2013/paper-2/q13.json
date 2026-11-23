@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 2",
+  "qno": "13",
+  "hash": "#2013P2Q13"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "比例關係與百分比變化",
+   "secondary_topics": [
+    "變量間的正反比定義",
+    "平方根運算性質"
+   ],
+   "required_formulas": [
+    "z = k * x / sqrt(y)",
+    "新舊值關係式：(1+p_x)/(1-p_y_sqrt) = 新/舊比例係數"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "平方根計算錯誤",
+    "student_thought_process": "忽略了 y 減少 64% 後其平方根僅減少 40%，誤以為 sqrt(y) 也減少 64%，導致分母變化算錯，進而得出 x 需增加 20% 的錯誤結論。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "反變概念混淆",
+    "student_thought_process": "未能正確理解隨 sqrt(y) 反變的含義，可能誤認為 y 減少會導致 x 大幅增加以補償，或錯誤地將分母變化直接轉化為分子增加的百分比。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "百分比方向搞反",
+    "student_thought_process": "正確算出 sqrt(y) 減少 40%，但在設定方程式時，錯誤地將分子 x 的變化方向與分母關係弄反，或誤以為 x 需減少才能維持平衡。"
+   }
+  },
+  "scaffolding_hints": [
+   "首先寫出 z 與 x, y 之間的數學關係式，注意是隨 sqrt(y) 反變。",
+   "計算當 y 減少 64% 時，sqrt(y) 實際減少了多少百分比？",
+   "將已知的 y 與 z 的變化率代入公式，解出 x 的變化百分比。"
+  ],
+  "quick_solution_strategy": "設原值為 1，新 sqrt(y) 為 0.6，新 z 為 1.25，則新 x = 1.25 * 0.6 = 0.75，即減少 25%。"
+ },
+ "skills": {
+  "topic_id": "T-VAR",
+  "knowledge_point_ids": [
+   "K-VAR-01",
+   "K-VAR-02"
+  ],
+  "formula_ids": [
+   "F-VAR-01",
+   "F-VAR-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

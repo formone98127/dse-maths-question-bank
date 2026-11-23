@@ -1,0 +1,92 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 2",
+  "qno": "40",
+  "hash": "#2024P2Q40"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "立體幾何，球面三角學",
+   "secondary_topics": [
+    "三維座標系",
+    "餘弦定理"
+   ],
+   "required_formulas": [
+    "$\\cos \\theta = \\frac{a^2+b^2-c^2}{2ab}$ (餘弦定理)",
+    "$\\cos(\\alpha+\\beta) = \\cos\\alpha\\cos\\beta - \\sin\\alpha\\sin\\beta$ (和角公式)"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤認平面角為空間角",
+    "student_thought_process": "直接將 $\\angle PQR=90^\\circ$ 與其他角度混淆，錯誤地認為 $\\cos \\angle PRS = \\cos 60^\\circ = 1/2$。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "三角函數值計算錯誤",
+    "student_thought_process": "正確建立關係式，但在計算 $\\cos(45^\\circ+30^\\circ)$ 時，將 $\\sin 45^\\circ\\sin 30^\\circ$ 算錯或符號弄反。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "忽略空間幾何關係",
+    "student_thought_process": "試圖用平面餘弦定理直接解 $\\triangle PRS$，卻忽略了 $P, Q, R, S$ 的三維位置關係導致邊長無法直接確定。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察圖形，找出與待求角 $\\angle PRS$ 相關的已知角度和邊長關係。",
+   "考慮將空間問題轉化為平面問題，利用三維幾何中的投影或輔助線構建直角三角形。",
+   "注意題目給出的角度是空間角，需確認是否可直接應用平面三角公式，若不可則需轉換為餘弦定理形式。"
+  ],
+  "quick_solution_strategy": "連結 $\\angle QPS$ 與 $\\angle QRS$ 通過三維幾何關係，利用餘弦定理求解 $\\cos \\angle PRS$。"
+ },
+ "skills": {
+  "topic_id": "T-MEN",
+  "knowledge_point_ids": [
+   "K-MEN-01",
+   "K-MEN-02"
+  ],
+  "formula_ids": [
+   "F-MEN-01",
+   "F-MEN-02",
+   "F-MEN-03",
+   "F-MEN-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

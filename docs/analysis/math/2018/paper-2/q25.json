@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2018",
+  "paper": "Paper 2",
+  "qno": "25",
+  "hash": "#2018P2Q25"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "直線距離公式與平行線系",
+   "secondary_topics": [
+    "斜率概念",
+    "平行線判定"
+   ],
+   "required_formulas": [
+    "d = |Ax + By + C| / sqrt(A^2 + B^2)"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "符號錯誤",
+    "student_thought_process": "學生算出平行線係數比正確，但在合併常數項時，將 -17 與 +17 搞混，選了錯誤的符號組合。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "平行線判定失敗",
+    "student_thought_process": "學生未將 L2 化為最簡式，直接比較係數導致斜率判斷錯誤，選出與題目不符的平行線。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "常數項計算錯誤",
+    "student_thought_process": "學生正確找出平行線方向，但在計算兩直線間距中點或垂直平分線截距時，算術運算出錯。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：兩直線距離相等意味著 P 點位於這兩條平行線的垂直平分線上。",
+   "提示 2：首先將 L_2 的方程除以 4，使其與 L_1 具有相同的 x, y 係數以確認平行關係。",
+   "提示 3：計算兩平行線的中間位置（常數項取平均值），即可得到軌跡方程。"
+  ],
+  "quick_solution_strategy": "化簡 L2 為 3x-y-11/4=0，求兩線中間的常數項平均值得到 -17/8，整理即得答案。"
+ },
+ "skills": {
+  "topic_id": "T-LIN",
+  "knowledge_point_ids": [
+   "K-LIN-01",
+   "K-LIN-02"
+  ],
+  "formula_ids": [
+   "F-LIN-01",
+   "F-LIN-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

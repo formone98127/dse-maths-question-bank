@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 2",
+  "qno": "22",
+  "hash": "#2024P2Q22"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓的幾何性質 (直徑與圓周角)",
+   "secondary_topics": [
+    "三角形內角和",
+    "外角定理"
+   ],
+   "required_formulas": [
+    "$\\text{直徑所對之圓周角} = 90^\\circ$",
+    "$\\angle APD = \\angle PAB + \\angle PBA$ (三角形外角定理)"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "角度加減錯誤",
+    "student_thought_process": "算出 $\\angle ABE=46^\\circ$ 與 $\\angle DBE=16^\\circ$，但誤將 $90-46+16$ 或類似邏輯混淆，得出 $104^\\circ$"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略直徑性質",
+    "student_thought_process": "未意識到 $AC$ 為直徑導致 $\\angle ABC=90^\\circ$，誤以為需從 $180^\\circ$ 減去其他角"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "混淆角度定義",
+    "student_thought_process": "誤讀題目，將 $\\angle APD$ 視為與 $\\angle AEB$ 或其他無關角度的關係，隨意選取大數值"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察圖形中哪些線段是圓的直徑？",
+   "利用直徑所對的圓周角為直角這一性質，找出 $\\triangle ABP$ 或相關三角形的已知角。",
+   "在 $\\triangle PAB$ 中，如何利用外角定理將未知角 $\\angle APD$ 與已知角聯繫起來？"
+  ],
+  "quick_solution_strategy": "由直徑得直角，求 $\\angle ABP$，再用外角定理加總。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-01",
+   "K-GEO-02"
+  ],
+  "formula_ids": [
+   "F-GEO-01",
+   "F-GEO-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 2",
+  "qno": "14",
+  "hash": "#2014P2Q14"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "線性遞迴關係 (Fibonacci 類)",
+   "secondary_topics": [
+    "等比數列概念",
+    "代數變形"
+   ],
+   "required_formulas": [
+    "$a_{n+2} = a_{n+1} + a_n$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "錯用 a3=a2+a1 或計算錯誤",
+    "student_thought_process": "學生可能誤以為 a3=7+63=70，然後直接選 B；或是算出 a3 後，求 a5 時跳過步驟直接加錯數值。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "計算 a3 錯誤或混淆 a4 與 a5",
+    "student_thought_process": "學生算出 a3=70 後，誤以為題目問的就是 a3 的值，或是將 a4 的條件看錯當作答案。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略遞迴關係的連續性",
+    "student_thought_process": "學生正確算出 a3=70，但在求 a5 時跳過 a4，錯誤地將 a3 與 a4 相加 (70+63=133) 或其他組合導致 91。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "根據題目給出的遞迴公式 $a_{n+2}=a_{n+1}+a_n$，我們需要找出缺少的中間項 $a_3$。",
+   "利用已知條件 $a_4=63$ 和剛求出的 $a_3$，代入公式計算 $a_5 = a_4 + a_3$。",
+   "將計算結果與選項比對，確認哪一個數值符合邏輯推導。"
+  ],
+  "quick_solution_strategy": "先由 $a_4=a_3+a_2$ 解出 $a_3=56$，再算 $a_5=a_4+a_3=119$"
+ },
+ "skills": {
+  "topic_id": "T-SEQ",
+  "knowledge_point_ids": [
+   "K-SEQ-03"
+  ],
+  "formula_ids": [
+   "F-SEQ-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-SEQ-03",
+    "formula_id": "F-SEQ-03",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-SEQ-03",
+    "formula_id": "F-SEQ-03",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-SEQ-03",
+    "formula_id": "F-SEQ-03",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

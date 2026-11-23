@@ -1,0 +1,86 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2019",
+  "paper": "Paper 2",
+  "qno": "2",
+  "hash": "#2019P2Q2"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "指數法則與冪的運算",
+   "secondary_topics": [
+    "冪的乘方",
+    "單項式的除"
+   ],
+   "required_formulas": [
+    "(a^m)^n = a^{mn}",
+    "\\frac{a^m}{a^n} = a^{m-n}"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "冪的乘方係數處理錯誤",
+    "student_thought_process": "學生將 (6x^7)^2 視為 36x^{14}，但在除以 4 時，錯誤地認為 36/4=9 但指數只減了 5 得到 9，卻又誤算係數為 3。更可能是將 (6x^7)^2 算成 6x^{14}(忘了平方係數)，然後 6/4 約分得 3/2，再隨意調整指數。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "冪的乘方係數處理正確但指數計算錯誤",
+    "student_thought_process": "學生正確算出 (6x^7)^2 = 36x^{14}，除以 4 得 9，但在指數運算時，錯誤地將 14-5 算成 4，導致選 B。這是常見的減法口算錯誤。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "冪的乘方指數處理錯誤",
+    "student_thought_process": "學生正確將係數平方得 36/4=9，但完全忘記對 x 的指數進行平方與減法，直接保留原指數 7 或誤以為 (x^7)^2=x^{14} 後再減 5 卻算成 9 但係數只取 3。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：回憶冪的乘方法則 (ab)^n = a^n b^n，以及 (a^m)^n = a^{mn}。",
+   "提示 2：先處理係數部分 6^2 \\div 4，再處理變數部分 x^7 \\cdot x^7 \\div x^5。",
+   "提示 3：將分子展開為 36x^{14}，再除以分母 4x^5，記得係數相除與指數相減分開計算。"
+  ],
+  "quick_solution_strategy": "先平方係數與變數，再除以分母；係數 36\\div4=9，指數 14-5=9"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

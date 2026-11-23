@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 2",
+  "qno": "35",
+  "hash": "#2021P2Q35"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "複數運算與性質",
+   "secondary_topics": [
+    "共軛複數",
+    "實部與虛部定義",
+    "複數除法有理化"
+   ],
+   "required_formulas": [
+    "$\\overline{z_1/z_2} = \\bar{z}_1/\\bar{z}_2$",
+    "$z + \\bar{z} = 2\\text{Re}(z)$",
+    "$z - \\bar{z} = 2i\\text{Im}(z)$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤判 III 正確性",
+    "student_thought_process": "學生可能錯誤認為 $w$ 與 $2w$ 虛部相同，忽略了係數 2 的放大效應，或混淆了比例關係。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤判 I 正確性",
+    "student_thought_process": "學生可能忽略 $w$ 的模長為 1 的特性，未意識到 $w+1/w$ 必為實數。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "同時誤判 I 與 III",
+    "student_thought_process": "學生未能正確處理 $w$ 的定義，導致對所有性質判斷失誤，通常源於有理化步驟錯誤。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：先將 $w = \\frac{\\alpha+i}{\\alpha-i}$ 分子分母同乘 $(\\alpha+i)$ 進行有理化，觀察其模長特性。",
+   "提示 2：利用性質 $z+\\bar{z} = 2\\text{Re}(z)$ 判斷 I；利用 $z-\\bar{z} = 2i\\text{Im}(z)$ 判斷 II。",
+   "提示 3：計算 $w$ 的虛部與 $2w$ 的虛部，比較兩者係數關係以驗證 III。"
+  ],
+  "quick_solution_strategy": "有理化 $w$ 發現 $|w|=1$，故 $1/w=\\bar{w}$，代換後 I、II 成立；III 中虛部不等。"
+ },
+ "skills": {
+  "topic_id": "T-NUM",
+  "knowledge_point_ids": [
+   "K-NUM-01"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

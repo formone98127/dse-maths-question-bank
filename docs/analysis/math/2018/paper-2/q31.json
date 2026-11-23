@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2018",
+  "paper": "Paper 2",
+  "qno": "31",
+  "hash": "#2018P2Q31"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "二次函數圖形變換",
+   "secondary_topics": [
+    "水平平移",
+    "垂直縮放與翻轉",
+    "頂點座標讀取"
+   ],
+   "required_formulas": [
+    "y = a(x-h)^2 + k (頂點式)",
+    "y = f(bx) 水平縮放",
+    "y = -f(x) 關於 x 軸翻轉",
+    "y = f(x+h) 水平平移"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略垂直翻轉與縮放順序",
+    "student_thought_process": "學生誤以為只要係數是 -3 就是正確，忘記了圖形中頂點橫座標已改變，且未考慮水平平移。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆水平縮放與翻轉",
+    "student_thought_process": "學生看到 -3 就選 B，忘記了 f(-3x) 會改變頂點橫座標但不會關於 x 軸翻轉，而圖形明顯有翻轉。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "平移方向計算錯誤",
+    "student_thought_process": "學生可能誤算 x+4 為向右移，或忽略負號造成的翻轉，導致頂點位置與開口方向皆不符。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察原圖形與目標圖形的頂點座標變化，特別是橫座標的改變暗示了水平平移。",
+   "注意目標圖形開口向下，這表示函數值被乘以了一個負號，即發生了關於 x 軸的翻轉。",
+   "將選項 C 代入標準二次函數形式驗證：y = -[a(x-h)^2+k] 是否同時滿足翻轉與左移 4 個單位。"
+  ],
+  "quick_solution_strategy": "檢查頂點橫座標變化 (x->x+4) 與開口方向 (乘以-1)，確認為 y=-f(x+4)。"
+ },
+ "skills": {
+  "topic_id": "T-FUN",
+  "knowledge_point_ids": [
+   "K-FUN-01",
+   "K-FUN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

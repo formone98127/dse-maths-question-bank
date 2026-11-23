@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2016",
+  "paper": "Paper 2",
+  "qno": "38",
+  "hash": "#2016P2Q38"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "三角函數與二次方程式",
+   "secondary_topics": [
+    "代數變量替換",
+    "正弦函數值域限制"
+   ],
+   "required_formulas": [
+    "$\\sin^2 \\theta + \\cos^2 \\theta = 1$",
+    "$x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "忽略解的數量",
+    "student_thought_process": "學生算出兩個 sinθ 值後，只注意到其中一個正數解對應兩個角度 (一象限、二象限)，而忽略了負數解也對應兩個角度，最終誤以為總共只有 2 個根。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "計算錯誤導致多解",
+    "student_thought_process": "學生在求解二次方程式時，可能將常數項 -4 誤算為其他數字，或者在開根號後忘記除以 2a，導致算出三個或四個無效解，進而選錯。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤解正弦函數性質",
+    "student_thought_process": "學生完全忽略了 $\\sin \\theta$ 的值域必須在 [-1, 1] 之間。若算出 sinθ > 1 的解，仍盲目地認為每個解都對應兩個角度，導致計數錯誤。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：令 $u = \\sin \\theta$，將原三角方程式轉換為關於 $u$ 的一元二次方程式 $5u^2 + u - 4 = 0$。",
+   "提示 2：解出該二次方程式的兩個根後，務必檢查每個根是否落在正弦函數的有效範圍 $[-1, 1]$ 內。",
+   "提示 3：對於每一個有效且在 $(-1, 1)$ 區間內的 $\\sin \\theta$ 值，在 $0^\\circ \\leq \\theta \\leq 360^\\circ$ 範圍內通常對應兩個角度；若為 $1$ 或 $-1$ 則僅有一個。"
+  ],
+  "quick_solution_strategy": "解二次式得 sinθ=0.8 與 -1，前者有 2 解，後者有 1 解，共 3 解。"
+ },
+ "skills": {
+  "topic_id": "T-TRI",
+  "knowledge_point_ids": [
+   "K-TRI-04"
+  ],
+  "formula_ids": [
+   "F-TRI-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-TRI-04",
+    "formula_id": "F-TRI-04",
+    "ability_id": "A-CHAIN"
+   },
+   "C": {
+    "knowledge_point_id": "K-TRI-04",
+    "formula_id": "F-TRI-04",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-TRI-04",
+    "formula_id": "F-TRI-04",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

@@ -1,0 +1,92 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 2",
+  "qno": "27",
+  "hash": "#2022P2Q27"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓的幾何性質與直線方程式",
+   "secondary_topics": [
+    "中點公式",
+    "斜率計算",
+    "點與圓的位置關係"
+   ],
+   "required_formulas": [
+    "圓心為 $O(h,k)$ 時，半徑平方 $r^2 = h^2 + k^2$ (因過原點)",
+    "直線方程式一般式 $Ax+By+C=0$",
+    "點 $(x_0, y_0)$ 與圓心距離平方與半徑平方比較"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 120
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "直徑誤判",
+    "student_thought_process": "學生計算 $OP$ 與 $OQ$ 斜率，發現不相等或不等於 $-1$，但可能誤以為只要過三點就自動構成直徑，未驗證 $\\angle POQ=90^\\circ$"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "面積計算錯誤",
+    "student_thought_process": "學生算出圓心 $(5, -6)$ 後，誤將半徑平方 $r^2 = 196$ 當作直徑或忘記 $\\pi$，或混淆半徑與直徑關係導致面積算錯"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "直線方程式代入錯誤",
+    "student_thought_process": "學生算出圓心 $(5, -6)$，但代入 $5x+12y$ 時計算 $5(5)+12(-6)=25-72\\neq0$"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：圓經過原點 $(0,0)$、$P(10,-24)$、$Q(17,-7)$，若設圓心為 $(h,k)$，利用到三點距離相等建立方程組。",
+   "提示 2：因圓過原點，半徑平方 $r^2 = h^2+k^2$；亦可利用弦的中垂線交點求圓心。",
+   "提示 3：求出圓心與半徑後，將選項 C 的點代入圓的不等式 $ (x-h)^2+(y-k)^2 < r^2 $ 判斷位置"
+  ],
+  "quick_solution_strategy": "先求圓心 $(5,-6)$ 與半徑平方 $196$，再比較點 $(16,-9)$ 到圓心距離平方是否小於 $196$"
+ },
+ "skills": {
+  "topic_id": "T-LIN",
+  "knowledge_point_ids": [
+   "K-LIN-01",
+   "K-LIN-02"
+  ],
+  "formula_ids": [
+   "F-LIN-01",
+   "F-LIN-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

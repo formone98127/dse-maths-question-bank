@@ -1,0 +1,86 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 2",
+  "qno": "18",
+  "hash": "#2013P2Q18"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "梯形面積與相似三角形",
+   "secondary_topics": [
+    "平行線截割比例定理",
+    "等高三角形面積比等於底邊比"
+   ],
+   "required_formulas": [
+    "\\text{Area}_{\\triangle} = \\frac{1}{2} \\times \\text{base} \\times \\text{height}",
+    "\\frac{\\text{Area}_1}{\\text{Area}_2} = \\left(\\frac{b_1}{b_2}\\right)^2 \\text{ (for similar triangles)}"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "忽略中間三角形面積",
+    "student_thought_process": "算出\\triangle ADF與\\triangle CEF相似比後，直接將\\triangle CEF面積乘以相似比平方 (9/4)，得到81，再誤以為這是梯形總面積或只加上一部分。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "忘記加上\\triangle CDF",
+    "student_thought_process": "正確算出\\triangle ADF=144, \\triangle CEF=36，但忘記計算\\triangle CDF。若用梯形面積公式時，誤將上底下底比例應用錯誤導致少算中間部分。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤判\\triangle CDF與\\triangle ADF關係",
+    "student_thought_process": "認為\\triangle CDF面積等於\\triangle CEF，或錯誤假設\\triangle CDF與\\triangle ADF面積相等，導致總和過大。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察\\triangle ADF與\\triangle CEF，由於AD平行BC，它們是相似三角形，請找出對應邊長比。",
+   "利用相似比計算\\triangle ADF的面積；接著比較\\triangle CDF與\\triangle CEF，它們等高，面積比等於底邊CD與CE之比嗎？不，是CF與AF之比。",
+   "梯形面積等於四個小三角形面積之和：\\triangle ADF + \\triangle CEF + \\triangle CDF + \\triangle ABE（需先求\\triangle ABE或\\triangle ADC關係）。提示：\\triangle ADC被DE分割，請思考\\triangle CDF與\\triangle CEF的邊長關係。"
+  ],
+  "quick_solution_strategy": "利用相似比求\\triangle ADF面積；再利用等高三角形底邊比求\\triangle CDF面積；最後加總四塊區域（含\\triangle ABE或通過大三角形減去）。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-05"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

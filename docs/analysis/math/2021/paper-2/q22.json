@@ -1,0 +1,91 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 2",
+  "qno": "22",
+  "hash": "#2021P2Q22"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓內接四邊形與弦切角性質",
+   "secondary_topics": [
+    "同弧所對圓周角相等",
+    "等弦對應等弧",
+    "三角形內角和"
+   ],
+   "required_formulas": [
+    "$\\angle AED = \\angle ABD$ (同弧 $AD$ 所對圓周角)",
+    "$AC = BD \\implies \\text{弧}AC = \\text{弧}BD$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "角度減算錯誤",
+    "student_thought_process": "學生算出 $\\angle ABD = 96^\\circ$，$\\angle DBC = 14^\\circ$，正確應為 $96-14=82$。若誤算成 $96+14$ 或混淆角度關係，可能導至錯誤選項。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "等弦推論錯誤",
+    "student_thought_process": "學生誤以為 $AC=BD$ 意味著 $\\angle CAD = \\angle CBD$ 直接成立，忽略需先求 $\\angle ABD$ 再減去 $\\angle DBC$ 的步驟。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "順序邏輯混亂",
+    "student_thought_process": "學生可能直接將已知角度相加 $96+14=110$，再隨意除以 2 或減去某個數，未遵循「先求大角再減小角」的邏輯。"
+   }
+  },
+  "scaffolding_hints": [
+   "在圓中，同一段弧所對的所有圓周角大小相等。",
+   "若兩弦長度相等（$AC = BD$），則它們對應的弧長也相等，進而導出相關角度關係。",
+   "觀察 $\\triangle ABD$ 中的角度關係：已知 $\\angle AED$ 與 $\\angle ABD$ 的關係，以及 $\\angle BDC$ 的位置，如何求得 $\\angle CAD$？"
+  ],
+  "quick_solution_strategy": "利用同弧角相等得 $\\angle ABD=96^\\circ$；由等弦推導角度關係後，計算 $96^\\circ-14^\\circ$ 即得答案。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-01",
+   "K-GEO-02"
+  ],
+  "formula_ids": [
+   "F-GEO-01",
+   "F-GEO-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

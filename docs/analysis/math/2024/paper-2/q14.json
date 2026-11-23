@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 2",
+  "qno": "14",
+  "hash": "#2024P2Q14"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "二次函數圖形特性",
+   "secondary_topics": [
+    "y 截距定義",
+    "頂點式轉換",
+    "與 x 軸交點判斷"
+   ],
+   "required_formulas": [
+    "$y = a(x-h)^2 + k$",
+    "$x=0$ 時求 $y$ 截距"
+   ],
+   "bloom_taxonomy_level": "理解",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "頂點與軸位置誤判",
+    "student_thought_process": "學生計算頂點 $y=-7$ 後，誤以為 $-7<0$ 即無交點。忽略開口向上且頂點低於 x 軸時必與 x 軸相交的事實。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "混淆截距定義",
+    "student_thought_process": "學生將頂點式中的常數項 $k=-7$ 直接等同於 y 截距，忘記需代入 $x=0$ 計算，誤認頂點高度即為截距。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "坐標代入錯誤",
+    "student_thought_process": "學生將 $x=-6$ 代入時，計算 $(6-(-6))^2 = 12^2$ 卻誤算成 $0$ 或忽略符號變化，導致得出 $y=-7$ 的錯誤結論。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察二次函數頂點式 $y=a(x-h)^2+k$ 中係數 $a$ 的正負如何決定圖形開口方向。",
+   "回想「y 截距」的定義：當 $x=0$ 時的 $y$ 值，而非頂點式的常數項 $k$。",
+   "試著將 $x=-6$ 代入方程式計算，檢查是否通過該點；並思考開口向上且頂點在 x 軸下方時與 x 軸的相交情況。"
+  ],
+  "quick_solution_strategy": "看 $a=2>0$ 知開口向上；令 $x=0$ 算截距；代入 $x=-6$ 驗點；因頂點 $y<0$ 且開口上，必與 x 軸相交。"
+ },
+ "skills": {
+  "topic_id": "T-FUN",
+  "knowledge_point_ids": [
+   "K-FUN-01",
+   "K-FUN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-COND"
+   },
+   "D": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

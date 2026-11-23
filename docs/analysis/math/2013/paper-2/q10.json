@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 2",
+  "qno": "10",
+  "hash": "#2013P2Q10"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "百分比與成本價計算",
+   "secondary_topics": [
+    "利潤與虧損定義",
+    "進銷差價關係"
+   ],
+   "required_formulas": [
+    "售價 = 成本價 \\times (1 + 利潤率)",
+    "售價 = 成本價 \\times (1 - 虧損率)"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤以為獲利虧損直接抵消",
+    "student_thought_process": "學生認為 30% 獲利與 30% 虧蝕金額相同，故總計為零或僅計算售價差值，忽略成本價不同導致虧損額大於獲利額。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "計算錯誤或比例混淆",
+    "student_thought_process": "學生可能正確算出成本價，但在計算淨虧損時出現數值錯誤，或是將 30% 誤用為絕對金額而非比率。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略成本基數差異",
+    "student_thought_process": "學生錯誤地認為相同百分比的獲利與虧損會互相抵消，未意識到虧損項目的成本價較高，因此虧損金額大於獲利金額。"
+   }
+  },
+  "scaffolding_hints": [
+   "先設未知數 $C_1$ 與 $C_2$ 分別代表兩輛汽車的成本價。",
+   "利用公式 將售價 $\\$80,080$ 表達為成本價加上或減去 30%。",
+   "計算總收入與總成本的差值，注意虧損項目的成本較高。"
+  ],
+  "quick_solution_strategy": "求出兩輛車的成本價，比較總收入與總成本之差。"
+ },
+ "skills": {
+  "topic_id": "T-PCT",
+  "knowledge_point_ids": [
+   "K-PCT-01",
+   "K-PCT-02"
+  ],
+  "formula_ids": [
+   "F-PCT-01",
+   "F-PCT-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

@@ -1,0 +1,92 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2018",
+  "paper": "Paper 2",
+  "qno": "15",
+  "hash": "#2018P2Q15"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "三維幾何體積計算",
+   "secondary_topics": [
+    "直角三角形勾股定理",
+    "三角柱體積公式"
+   ],
+   "required_formulas": [
+    "V = \\text{底面積} \\times \\text{高}",
+    "\\text{底面積} = \\frac{1}{2} \\times \\text{底} \\times \\text{高}"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "勾股定理計算錯誤",
+    "student_thought_process": "算出斜邊為 20，但將底面積誤算為 \\frac{1}{2} \\times 16 \\times 12 = 96，再乘以高 5.625 或類似錯誤數值，導致結果偏小。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "忽略圖形比例或單位",
+    "student_thought_process": "可能將底邊長度誤讀為 15 而非 20，或直接使用 \\frac{1}{2} \\times 16 \\times 15 = 120，再乘以錯誤高度得到 600。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "混淆公式應用順序",
+    "student_thought_process": "先計算側面積或誤將體積公式記為 \\text{底} \\times \\text{高} \\times \\text{深}，未除以 2，導致數值偏大。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "觀察圖形，該三角柱的底面是一個直角三角形。",
+   "利用勾股定理確認底邊長度關係，並計算底面積。",
+   "將算出的底面積乘以柱體的高度，即可得到體積。"
+  ],
+  "quick_solution_strategy": "計算底面積 \\frac{1}{2} \\times 16 \\times 12 = 96，再乘以高 7.5 得 720。"
+ },
+ "skills": {
+  "topic_id": "T-MEN",
+  "knowledge_point_ids": [
+   "K-MEN-01",
+   "K-MEN-02"
+  ],
+  "formula_ids": [
+   "F-MEN-01",
+   "F-MEN-02",
+   "F-MEN-03",
+   "F-MEN-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-COND"
+   },
+   "C": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

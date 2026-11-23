@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 2",
+  "qno": "7",
+  "hash": "#2024P2Q7"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "一元二次方程式",
+   "secondary_topics": [
+    "代數結構觀察",
+    "配方法"
+   ],
+   "required_formulas": [
+    "ax^2+bx+c=0",
+    "求根公式或配方法"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "符號處理錯誤",
+    "student_thought_process": "解出 x=m-1 後，對第二項展開計算時，將 -3(m-1) 的符號弄錯，導致 m-4 而非 4-m。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "移項符號錯誤",
+    "student_thought_process": "將方程視為 (x-(m-1))^2 = k 時，錯誤地將 m-1 變號為 1-m，且未正確展開常數項。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "展開計算失誤",
+    "student_thought_process": "正確觀察到 x=m-1，但在處理 -3(m-1) 時，錯誤地將 -3m+3 與 (m-1)^2 合併時算錯符號。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察方程右邊的形式，是否可視為某個函數 f(t)=t^2-3t 在 t=m-1 時的值？",
+   "考慮將左邊配方成 (x-3/2)^2 - 9/4，比較兩邊結構。",
+   "若令 y=x-(m-1)，代入原方程可簡化為關於 y 的簡單平方項等於常數。"
+  ],
+  "quick_solution_strategy": "觀察右邊為 f(m-1)，左邊為 f(x)，故 x=m-1 或 f(x)=f(m-1) 的另一解。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2016",
+  "paper": "Paper 2",
+  "qno": "40",
+  "hash": "#2016P2Q40"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓的性質與切線",
+   "secondary_topics": [
+    "弦切角定理",
+    "直徑所對圆周角為直角",
+    "三角形內角和"
+   ],
+   "required_formulas": [
+    "切線長相等 (PB=PD)",
+    "弦切角等於夾弧之圆周角",
+    "$\\angle BPD + \\angle PAB = 180^\\circ$ (圓內接四邊形外角性質)"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "角度計算錯誤",
+    "student_thought_process": "算出 $\\angle PAB=106^\\circ$ 後，誤以為 $\\angle AQB = 180-106-22=52$ (假設錯角) 或直接減去一半角度得 22，未正確連結 $\\angle DAB$ 與 $\\angle AQB$ 關係。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆弦切角定義",
+    "student_thought_process": "錯誤認為 $\\angle PAB = \\frac{1}{2} \\angle BPD$ 或誤用直徑性質，將 $\\angle DAB$ 算成 $53^\\circ$ 而非正確值，導致最終結果偏差。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "四捨五入或筆誤",
+    "student_thought_process": "正確算出 $\\angle DAB=53^\\circ$，但在計算 $\\triangle ABQ$ 內角和時，將 $180-90-53$ 算錯為 32，或是混淆了 $\\angle C$ 與 $\\angle Q$ 的數值。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "利用切線長相等 ($PB=PD$) 與等腰三角形性質，先求 $\\angle PBD$。",
+   "連結 $P, B, D$ 三點構成圓內接四邊形，思考外角 $\\angle QAB$ 與內角 $\\angle PDB$ 的關係，或直接利用弦切角定理找出 $\\angle DAB$。",
+   "在直角三角形 $\\triangle ABQ$ 中，已知 $\\angle B=90^\\circ$ (因 $AC$ 為直徑) 與 $\\angle A$，即可求出 $\\angle Q$"
+  ],
+  "quick_solution_strategy": "先求 $\\angle PBD=56^\\circ$，再由弦切角得 $\\angle DAB=28^\\circ$，最後在直角 $\\triangle ABQ$ 中求餘角。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-05"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

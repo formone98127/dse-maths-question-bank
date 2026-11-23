@@ -1,0 +1,91 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2015",
+  "paper": "Paper 2",
+  "qno": "19",
+  "hash": "#2015P2Q19"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "三角函數恆等式",
+   "secondary_topics": [
+    "誘導公式",
+    "特殊角三角函數值"
+   ],
+   "required_formulas": [
+    "$\\cos(180^\\circ) = -1$",
+    "$\\sin(90^\\circ + \\theta) = \\cos \\theta$",
+    "$\\cos(360^\\circ) = 1$",
+    "$\\sin(270^\\circ + \\theta) = -\\cos \\theta$",
+    "$\\frac{1}{1-x} + \\frac{1}{1+x} = \\frac{2}{1-x^2}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "忽略分母符號變化",
+    "student_thought_process": "學生算出分子為 0，忘記第二項分母為 $1-\\cos \\theta$，誤以為兩項互消或計算錯誤導致結果為 0。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "通分後約分錯誤",
+    "student_thought_process": "正確通分得 $\\frac{2}{1-\\cos^2 \\theta}$，但學生誤將分母寫成 $\\cos \\theta$ 或忘記平方，直接選 B。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆正弦餘弦關係",
+    "student_thought_process": "學生在誘導公式中將 $\\sin(270^\\circ+\\theta)$ 誤認為與 $\\sin \\theta$ 相關，導致分母變為 $1-\\sin^2 \\theta = \\cos^2 \\theta$"
+   }
+  },
+  "scaffolding_hints": [
+   "請先利用誘導公式化簡題目中的兩個正弦項：$\\sin(90^\\circ+\\theta)$ 與 $\\sin(270^\\circ+\\theta)$。",
+   "注意特殊角 $180^\\circ$ 與 $360^\\circ$ 的餘弦值分別為何？",
+   "將化簡後的式子通分，利用恆等式 $1-\\cos^2 \\theta = \\sin^2 \\theta$ 進行約分。"
+  ],
+  "quick_solution_strategy": "化簡分母後通分，分子相加得 2，分母變為 $\\sin^2 \\theta$。"
+ },
+ "skills": {
+  "topic_id": "T-TRI",
+  "knowledge_point_ids": [
+   "K-TRI-03"
+  ],
+  "formula_ids": [
+   "F-TRI-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-TRI-03",
+    "formula_id": "F-TRI-03",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-TRI-03",
+    "formula_id": "F-TRI-03",
+    "ability_id": "A-CHAIN"
+   },
+   "D": {
+    "knowledge_point_id": "K-TRI-03",
+    "formula_id": "F-TRI-03",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

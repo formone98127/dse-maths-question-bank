@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2025",
+  "paper": "Paper 2",
+  "qno": "20",
+  "hash": "#2025P2Q20"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "梯形性質與三角函數應用",
+   "secondary_topics": [
+    "平行線內錯角",
+    "餘弦定理",
+    "正弦定理"
+   ],
+   "required_formulas": [
+    "$\\cos(180^\\circ - \\theta) = -\\cos \\theta$",
+    "$c^2 = a^2 + b^2 - 2ab \\cos C$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤用平行線性質",
+    "student_thought_process": "學生可能認為梯形底角互補，直接將 $120^\\circ$ 與 $150^\\circ$ 相加或相減，未考慮非直角梯形的角度關係。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "餘弦定理計算錯誤",
+    "student_thought_process": "學生正確畫出輔助線，但在計算 $\\triangle PQR$ 或 $\\triangle PSR$ 時，誤將角度代入為銳角（如用 $120^\\circ$ 的餘弦值算成正值），導致數值偏小。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "輔助線作法不當",
+    "student_thought_process": "學生嘗試作高，但錯誤地假設垂足落在底邊延長線上之外側，或未將 $120^\\circ$ 轉化為外角 $60^\\circ$ 來構建特殊直角三角形。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "觀察 $PQ // SR$，推導 $\\angle SPR$ 與 $\\angle PSR$ 的互補或外角關係。",
+   "將梯形分割為三角形與平行四邊形，或利用餘弦定理在 $\\triangle PSR$ 中求 $PR$。",
+   "注意 $\\angle QRS = 150^\\circ$ 暗示 $\\angle PQR = 30^\\circ$，結合 $\\triangle PQR$ 的邊角關係求解 $PQ$"
+  ],
+  "quick_solution_strategy": "作 $PR$ 連線，利用餘弦定理求 $PR$，再於 $\\triangle PQR$ 中利用正弦定理或幾何性質求 $PQ$"
+ },
+ "skills": {
+  "topic_id": "T-TRI",
+  "knowledge_point_ids": [
+   "K-TRI-04"
+  ],
+  "formula_ids": [
+   "F-TRI-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-TRI-04",
+    "formula_id": "F-TRI-04",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-TRI-04",
+    "formula_id": "F-TRI-04",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-TRI-04",
+    "formula_id": "F-TRI-04",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

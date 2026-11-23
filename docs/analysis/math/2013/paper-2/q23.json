@@ -1,0 +1,92 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 2",
+  "qno": "23",
+  "hash": "#2013P2Q23"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "三角函數關係",
+   "secondary_topics": [
+    "互餘角關係",
+    "正弦餘弦定義",
+    "不等式判斷"
+   ],
+   "required_formulas": [
+    "$\\tan(90^\\circ-x) = \\cot x$",
+    "$\\sin(90^\\circ-x) = \\cos x$",
+    "$\\cos(90^\\circ-x) = \\sin x$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤判 II 式符號",
+    "student_thought_process": "學生正確算出 I 對 III 對，但錯誤認為 $\\sin x - \\cos x$ 在 $0<x<90^\\circ$ 恆小於 0。忽略當 $x>45^\\circ$ 時 $\\sin x > \\cos x$ 的情況。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤判 I 式關係",
+    "student_thought_process": "學生錯誤認為 $\\tan x \\cdot \\cot x$ 不等於 1，或混淆了互餘角的正切與餘弦關係，導致否定正確的 I 式。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤判 II 式符號",
+    "student_thought_process": "學生正確算出 I 對 III 對，但錯誤認為 $\\sin x - \\cos x$ 恆小於 0。未考慮 $x=60^\\circ$ 時 $\\sin 60^\\circ > \\cos 60^\\circ$ 的反例。"
+   }
+  },
+  "scaffolding_hints": [
+   "回想互餘角公式：$\\tan(90^\\circ-x)$ 等於什麼？",
+   "將 II 式與 III 式中的互餘角轉換為 $\\sin x, \\cos x$ 的運算，觀察其大小關係。",
+   "嘗試代入特殊角度（如 $30^\\circ, 60^\\circ$）來驗證 II 式是否恆成立。"
+  ],
+  "quick_solution_strategy": "利用互餘公式化簡 I、II、III，並比較 $\\sin x$ 與 $\\cos x$ 大小。"
+ },
+ "skills": {
+  "topic_id": "T-TRI",
+  "knowledge_point_ids": [
+   "K-TRI-03",
+   "K-TRI-04"
+  ],
+  "formula_ids": [
+   "F-TRI-03",
+   "F-TRI-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-TRI-03",
+    "formula_id": "F-TRI-03",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-TRI-03",
+    "formula_id": "F-TRI-03",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-TRI-03",
+    "formula_id": "F-TRI-03",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

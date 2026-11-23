@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 2",
+  "qno": "12",
+  "hash": "#2024P2Q12"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "平均速率",
+   "secondary_topics": [
+    "距離=速率×時間",
+    "單位換算 (分鐘轉小時)"
+   ],
+   "required_formulas": [
+    "$$\\text{總距離} = \\sum (v_i \\times t_i)$$",
+    "$$\\text{平均速率} = \\frac{\\text{總距離}}{\\text{總時間}}$$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "簡單平均陷阱",
+    "student_thought_process": "直接計算 (60+40)/2=50，忽略兩段時間不同。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "時間換算錯誤",
+    "student_thought_process": "忘記將分鐘轉為小時，導致距離計算偏差。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "加權平均誤用",
+    "student_thought_process": "僅考慮時間比例而不正確加權，或計算總距離時出錯。"
+   }
+  },
+  "scaffolding_hints": [
+   "回憶平均速率的定義：總距離除以總時間，而非速度的算術平均。",
+   "注意題目給出的時間單位是分鐘，需先統一轉換為小時再計算距離。",
+   "分別計算兩段路程的距離後相加，再除以總時間即可得出答案。"
+  ],
+  "quick_solution_strategy": "將分鐘轉小時，算出兩段距離之和除以總時間 (1.25 小時)。"
+ },
+ "skills": {
+  "topic_id": "T-RAT",
+  "knowledge_point_ids": [
+   "K-RAT-01",
+   "K-RAT-02"
+  ],
+  "formula_ids": [
+   "F-RAT-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-RAT-01",
+    "formula_id": "F-RAT-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-RAT-01",
+    "formula_id": "F-RAT-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-RAT-01",
+    "formula_id": "F-RAT-01",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 2",
+  "qno": "10",
+  "hash": "#2017P2Q10"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "複利計算",
+   "secondary_topics": [
+    "指數運算",
+    "時間與頻率轉換"
+   ],
+   "required_formulas": [
+    "A = P(1 + r/n)^(nt)"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "單利誤用",
+    "student_thought_process": "學生忘記複利概念，直接計算單利：2000*5%*4=400。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "週期計算錯誤",
+    "student_thought_process": "學生知道複利公式，但將 4 年誤算為 8 個半年期，或指數運算時四捨五入過早。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "年利率誤用",
+    "student_thought_process": "學生可能將年利率 5% 直接代入公式而忘記除以結算頻率 n=2，導致結果偏大。"
+   }
+  },
+  "scaffolding_hints": [
+   "複利計算中，本金會隨著時間增加，因此利息會滾入本金繼續生息。",
+   "注意題目中的「每半年一結」，這意味著一年有幾次計息週期？年利率需要如何調整？",
+   "請將 4 年轉換為總計息次數，並代入複利公式 A = P(1 + r/n)^(nt) 計算最終金額。"
+  ],
+  "quick_solution_strategy": "使用複利公式，注意 n=2（半年結），t=4，r=0.05，計算 A-2000 即可。"
+ },
+ "skills": {
+  "topic_id": "T-PCT",
+  "knowledge_point_ids": [
+   "K-PCT-01",
+   "K-PCT-02"
+  ],
+  "formula_ids": [
+   "F-PCT-01",
+   "F-PCT-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

@@ -1,0 +1,91 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 2",
+  "qno": "28",
+  "hash": "#2024P2Q28"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "組合概率與乘法原理",
+   "secondary_topics": [
+    "樣本空間計算",
+    "條件補集法則",
+    "基本不等式判斷"
+   ],
+   "required_formulas": [
+    "$\\binom{n}{k} = \\frac{n!}{k!(n-k)!}$",
+    "$P(E) = 1 - P(E^c)$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "樣本數計算錯誤",
+    "student_thought_process": "學生可能算出總組合數為 30，但只找出 12 種符合條件的積，或誤將有利事件數算成 10 種，導致 $\\frac{10}{30}=\\frac{1}{3}$。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略不重複抽樣",
+    "student_thought_process": "學生可能假設是有放回抽樣，總組合數算成 $6 \\times 6 = 36$，有利事件數誤算，導致分母錯誤或概率值偏大。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "有利事件數多算",
+    "student_thought_process": "學生可能將 $(2,6)$ 與 $(3,4)$ 等組合重複計算，或忘記 $\\binom{6}{2}$ 的順序無關性，導致有利事件數變成 18 種。"
+   }
+  },
+  "scaffolding_hints": [
+   "首先確定從 6 張紙卡中同時抽出 2 張的所有可能組合數（樣本空間大小）是多少？",
+   "列出所有數字對 $(a,b)$，其中 $a < b$，並計算其乘積 $ab$。哪些情況滿足 $ab \\geq 12$？",
+   "考慮使用補集法則：先計算所有乘積小於 12 的情況數，再用總組合數減去該數字。"
+  ],
+  "quick_solution_strategy": "總組合數為 $\\binom{6}{2}=15$。列出所有 15 對數字，統計乘積 $<12$ 的有 7 對，故答案為 $1-\\frac{7}{15}=\\frac{8}{15}$？等等，題目求不小於 12，即 $\\geq 12$。重新檢查：乘積小於 12 的有 $(1,2)..(2,5)$ 共 7 對？不，$(1,2),(1,3),(1,4),(1,5),(1,6)$ 五種；$(2,3)=6,(2,4)=8,(2,5)=10$ 三種；$(3,?)$ 無。總共 $5+3=8$ 對小於 12？再算：$(1,2)..(1,6)$ 五種；$(2,3),(2,4),(2,5)$ 三種；$(3,?)$ 最小 $(3,4)=12$。故小於 12 的有 $5+3=8$ 對？不對，$(2,5)=10<12$, $(2,6)=12\\geq 12$。所以小於 12 的是：含 1 的五種；不含 1 且積<12：$(2,3),(2,4),(2,5)$ 三種。共 8 種小於 12。故不小於 12 為 $15-8=7$ 種？答案應為 $\\frac{7}{15}$。確認：有利事件 7，總 15，得 $\\frac{7}{15}$。"
+ },
+ "skills": {
+  "topic_id": "T-PROB",
+  "knowledge_point_ids": [
+   "K-PROB-01",
+   "K-PROB-02"
+  ],
+  "formula_ids": [
+   "F-PROB-01",
+   "F-PROB-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

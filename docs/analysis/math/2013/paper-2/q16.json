@@ -1,0 +1,92 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 2",
+  "qno": "16",
+  "hash": "#2013P2Q16"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "幾何面積計算",
+   "secondary_topics": [
+    "圓扇形面積公式",
+    "三角形面積公式",
+    "弧度與角度轉換"
+   ],
+   "required_formulas": [
+    "$A_{sector} = \\frac{1}{2}r^2\\theta$ (弧度制)",
+    "$A_{triangle} = \\frac{1}{2}ab\\sin C$",
+    "$\\sin(360^\\circ/4) = 1/\\sqrt{2}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "角度轉換錯誤",
+    "student_thought_process": "學生可能將 $90^\\circ$ 誤算為 $\\pi/4$ 而非 $\\pi/2$，導致扇形面積計算偏小，最終差值錯誤。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "半徑取值錯誤",
+    "student_thought_process": "學生可能誤將半圓直徑 $3$ 當作半徑，或計算三角形面積時未正確使用半徑 $1.5$。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "陰影定義混淆",
+    "student_thought_process": "學生可能將陰影區域誤認為是半圓減去三角形，卻忘記了扇形角度並非 $180^\\circ$ 而是 $90^\\circ$"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察圖形中 $AC$ 與直徑的關係，確定陰影部分是由哪種基本圖形組成的。",
+   "回憶圓的性質：半圓被平分後形成的扇形角度是多少？如何計算該扇形的面積？",
+   "提示：陰影面積 = 扇形面積 - 三角形面積，請先畫出輔助線標註已知長度與角度。"
+  ],
+  "quick_solution_strategy": "計算 $90^\\circ$ 扇形面積減去對應直角三角形面積，注意半徑為 $1.5$"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-01",
+   "K-GEO-02"
+  ],
+  "formula_ids": [
+   "F-GEO-01",
+   "F-GEO-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

@@ -1,0 +1,93 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 2",
+  "qno": "18",
+  "hash": "#2021P2Q18"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "幾何圖形性質",
+   "secondary_topics": [
+    "等腰三角形",
+    "平行線性質",
+    "三角形內角和"
+   ],
+   "required_formulas": [
+    "平行線內錯角相等",
+    "等腰三角形底角相等",
+    "三角形外角等於不相鄰兩內角和",
+    "三角形內角和為 180°"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "角度運算錯誤",
+    "student_thought_process": "學生可能正確算出 $\\angle C=94^\\circ$ 與 $\\angle BDC=28^\\circ$，但在計算 $\\angle CAD$ 時，誤將 $94-56=38$ 或 $180-(94+28)=58$ 等錯誤組合，最終選錯。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆外角定理應用",
+    "student_thought_process": "學生可能誤以為 $\\angle AEB$ 是 $\\triangle CDE$ 的外角，直接計算 $94-28=66$，再除以 2 得 $33^\\circ$ 但中間步驟邏輯混亂，或混淆了三角形內角關係。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "看錯題目條件",
+    "student_thought_process": "學生可能忽略 $AB=BC$ 這個等腰條件，或誤讀 $\\angle ADC=28^\\circ$ 為其他角，導致計算結果偏離正確路徑。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察平行線 $AB // CD$，利用內錯角性質找出與 $\\angle ADC$ 相關的角。",
+   "在 $\\triangle CDE$ 中，利用三角形外角定理或內角和，求出 $\\angle DCE$ 的度數。",
+   "結合等腰三角形 $AB=BC$ 的性質，推導出 $\\angle BAC$ 與 $\\angle BCA$ 的關係，進而求解目標角。"
+  ],
+  "quick_solution_strategy": "利用平行線得內錯角相等，再於小三角形中運用外角定理或內角和求角。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-01",
+   "K-GEO-02"
+  ],
+  "formula_ids": [
+   "F-GEO-01",
+   "F-GEO-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

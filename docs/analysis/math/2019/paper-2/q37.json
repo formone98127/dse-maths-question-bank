@@ -1,0 +1,92 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2019",
+  "paper": "Paper 2",
+  "qno": "37",
+  "hash": "#2019P2Q37"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓與直線的交點、弦中點性質",
+   "secondary_topics": [
+    "圓的一般式與標準式轉換",
+    "直線斜率與垂直關係",
+    "代數方程式求解"
+   ],
+   "required_formulas": [
+    "(x-h)^2 + (y-k)^2 = r^2",
+    "M_mid = (P+Q)/2",
+    "弦中點與圓心連線垂直於弦"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "符號處理錯誤",
+    "student_thought_process": "求得中點坐標後，代入圓心公式時，將 kx 項的係數與 x 坐標關係搞錯，導致最終 k 值少了一個負號或計算出錯。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略圓心位置",
+    "student_thought_process": "未將圓的一般式轉換為標準式以找出圓心，或誤以為直線斜率與弦中點無直接關聯。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "解法路徑錯誤",
+    "student_thought_process": "嘗試將直線方程式代入圓方程式後，未利用中點 x=2 這一關鍵條件，而是盲目求解整個交點系統。"
+   }
+  },
+  "scaffolding_hints": [
+   "首先，請將圓的方程式整理成標準式 (x-h)^2 + (y-k)^2 = r^2，以明確找出圓心的坐標。",
+   "利用幾何性質：連接圓心與弦 PQ 中點的直線，必然垂直於弦 PQ（即已知直線）。",
+   "設中點為 M(2, y_M)，利用兩直線斜率乘積為 -1 的關係，建立關於 y_M 與 k 的方程式。"
+  ],
+  "quick_solution_strategy": "找圓心 -> 定弦中點 -> 用垂直斜率關係列式求解 k。"
+ },
+ "skills": {
+  "topic_id": "T-LIN",
+  "knowledge_point_ids": [
+   "K-LIN-01",
+   "K-LIN-02"
+  ],
+  "formula_ids": [
+   "F-LIN-01",
+   "F-LIN-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

@@ -1,0 +1,86 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 2",
+  "qno": "22",
+  "hash": "#2017P2Q22"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "幾何圖形角度計算",
+   "secondary_topics": [
+    "平行線性質",
+    "互餘角關係"
+   ],
+   "required_formulas": [
+    "直角三角形內角和為 $180^\\circ$",
+    "平行線內錯角相等"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "互餘角計算錯誤",
+    "student_thought_process": "先算出 $\\angle CEB = 50^\\circ$，但誤將 $180^\\circ - 40^\\circ - 90^\\circ$ 算成 $30^\\circ$，導致後續平行線內錯角也變成 $30^\\circ$。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "誤讀題目條件",
+    "student_thought_process": "可能將 $\\angle CBE=40^\\circ$ 誤認為是所求角，或混淆了 $\\angle AED$ 與 $\\angle CED$ 的位置關係，直接選取接近 $40^\\circ$ 的選項。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "互餘角計算錯誤",
+    "student_thought_process": "正確算出 $\\angle CEB=50^\\circ$，但在計算 $\\angle AED$ 時，誤將互餘關係搞混，用 $90^\\circ - 40^\\circ = 50^\\circ$ 後又加錯數值。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "利用長方形對邊平行 ($AB \\parallel CD$) 的性質，思考 $\\angle ABE$ 與 $\\angle CEB$ 的關係。",
+   "在直角三角形 $\\triangle BCE$ 中，已知一個銳角，如何求另一個銳角？",
+   "一旦求出 $\\angle CEB$，利用平行線內錯角相等即可得到 $\\angle AED$ 的值。"
+  ],
+  "quick_solution_strategy": "在 $\\triangle BCE$ 中算出 $\\angle CEB=50^\\circ$，再利用 $AB \\parallel CD$ 得 $\\angle AED = \\angle CEB$"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-05"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-COND"
+   },
+   "C": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

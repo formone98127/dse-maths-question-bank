@@ -1,0 +1,86 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2018",
+  "paper": "Paper 2",
+  "qno": "20",
+  "hash": "#2018P2Q20"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "相似三角形",
+   "secondary_topics": [
+    "勾股定理",
+    "平行線性質"
+   ],
+   "required_formulas": [
+    "$\\frac{DF}{EF} = \\frac{CD}{BE}$ (相似比)",
+    "$DE^2 = DF^2 + EF^2$ (畢氏定理)"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "相似比算錯",
+    "student_thought_process": "學生可能誤以為 $DF/EF = CD/AB$ 或其他錯誤比例，導致計算出 $12$。或是算出正確相似比後，將 $DE$ 長度算錯為 $17$ 再減去 $5$ 得 $12$（假設 $CD=4$）。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆相似對應邊",
+    "student_thought_process": "學生可能將 $DF$ 與 $EF$ 的比設為正方形邊長與 $BE$ 的比，但搞混了斜邊與直角邊的對應關係，或是誤用 $CD$ 而非 $BC$。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "忽略單位或讀圖錯誤",
+    "student_thought_process": "學生可能將 $EF=5$ 誤認為是斜邊總長，直接加上某個數字得到 $20$；或是將 $BE=4$ 與 $DF$ 混淆。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察圖形中哪兩組線段因為正方形性質而平行？",
+   "利用平行線截割定理，找出包含 $DF$、$EF$、$CD$、$BE$ 的相似三角形。",
+   "寫出相似比公式後，代入已知數值求解未知邊長。"
+  ],
+  "quick_solution_strategy": "由 $AB \\parallel CD$ 得 $\\triangle EBF \\sim \\triangle DCF$，列式 $\\frac{DF}{EF}=\\frac{CD}{BE}$ 求解。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-05"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

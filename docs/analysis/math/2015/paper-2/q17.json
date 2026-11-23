@@ -1,0 +1,86 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2015",
+  "paper": "Paper 2",
+  "qno": "17",
+  "hash": "#2015P2Q17"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "相似三角形與平行線性質",
+   "secondary_topics": [
+    "平行四邊形性質",
+    "三角形面積比"
+   ],
+   "required_formulas": [
+    "相似三角形對應邊長比等於面積比的平方根",
+    "平行線截割定理 (Thales's Theorem)"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 120
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "比例計算錯誤",
+    "student_thought_process": "學生算出 DE:EC=2:3 後，誤以為面積比直接等於邊長比的平方 (4:9)，然後將 8 乘以 1.5 或進行其他簡單加法得到 12，忽略了相似比是 2:5 而非 2:3。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆對應邊",
+    "student_thought_process": "學生正確判斷 DE:DF=2:5，但錯誤地將目標三角形 CEG 的相似比設定為 EC:GC 而非 EC:EB 或相關線段，導致計算出中間值 18。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "誤讀比例關係",
+    "student_thought_process": "學生將 DE:EC=2:3 誤解為 DE:DC=2:3，進而推導出錯誤的相似比，導致面積計算結果偏離正確答案。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "由於 $ABCD$ 是平行四邊形，推斷 $AD \\parallel BC$ 及 $AB \\parallel DC$ 後，觀察 $\\triangle DEF$ 與 $\\triangle CEG$ 是否直接相似？若不直接，需找出中間橋樑三角形。",
+   "利用 $AD \\parallel BC$，證明 $\\triangle DEF \\sim \\triangle CEB$ (或相關三角形)，並求出線段比 $EF:FB$ 或 $DF:FA$。",
+   "同理利用 $AB \\parallel DC$，分析 $\\triangle ADE$ 與 $\\triangle GCE$ 的關係，或是透過 $\\triangle DEF \\sim \\triangle CEG$ 的間接比例鏈 (經 $\\triangle BCE$) 來建立面積比。"
+  ],
+  "quick_solution_strategy": "先由 $AD \\parallel BC$ 得 $\\triangle DEF \\sim \\triangle CEB$ 求 $EF:FB$；再由 $AB \\parallel DC$ 得 $\\triangle ADE \\sim \\triangle GCE$ 或 $\\triangle ABG \\sim \\triangle FGE$，最終連結面積比。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-05"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

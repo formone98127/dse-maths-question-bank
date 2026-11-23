@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2025",
+  "paper": "Paper 2",
+  "qno": "35",
+  "hash": "#2025P2Q35"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "複數的冪運算",
+   "secondary_topics": [
+    "虛數單位 i 的週期性",
+    "等比級數求和公式"
+   ],
+   "required_formulas": [
+    "$i^1=i, i^2=-1, i^3=-i, i^4=1$",
+    "$S_n = a_1 \\frac{r^n-1}{r-1}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略週期性",
+    "student_thought_process": "學生可能誤以為 $i$ 的冪次總和會因正負抵消而歸零，未考慮項數非 4 的倍數。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "首項計算錯誤",
+    "student_thought_process": "學生算出 $i^9=i$ 但求和時誤以為是 $1+i+(-1)+(-i)$ 的循環，導致結果偏離。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "項數計數錯誤",
+    "student_thought_process": "學生正確知道週期為 4，但計算總項數時算錯，導致餘數判斷出錯。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：回憶 $i$ 的冪次呈現何種規律？每幾次會重複一次？",
+   "提示 2：計算從 $i^9$ 到 $i^{999}$ 總共有多少項？這些項能組成幾個完整的週期（4 項一組）？",
+   "提示 3：利用等比級數公式或將完整週期歸零後，僅計算剩餘的幾項即可得出答案。"
+  ],
+  "quick_solution_strategy": "總項數為 991，除以 4 餘 3，故和等於 $i^9+i^{10}+i^{11}$。"
+ },
+ "skills": {
+  "topic_id": "T-NUM",
+  "knowledge_point_ids": [
+   "K-NUM-01",
+   "K-NUM-02"
+  ],
+  "formula_ids": [
+   "F-NUM-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

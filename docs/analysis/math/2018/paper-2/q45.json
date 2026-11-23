@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2018",
+  "paper": "Paper 2",
+  "qno": "45",
+  "hash": "#2018P2Q45"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "等差數列與變異數",
+   "secondary_topics": [
+    "方差的定義與性質",
+    "等差數列的對稱性"
+   ],
+   "required_formulas": [
+    "$\\text{Var}(X) = \\frac{1}{n}\\sum (x_i - \\bar{x})^2$",
+    "$\\text{Var}(a + d) = \\text{Var}(a)$"
+   ],
+   "bloom_taxonomy_level": "理解",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤以為變異數隨項數增加而加倍",
+    "student_thought_process": "學生可能認為最後 7 項比首 7 項分散度更大，或錯誤地將方差與公差大小直接掛鉤，導致選出 18。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "混淆總項數與局部區間",
+    "student_thought_process": "學生可能錯誤地將 49 項的性質套用到局部，或誤算 $7^2=49$，認為方差會放大。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤解平移不變性",
+    "student_thought_process": "學生可能以為等差數列越往後公差累積，數據越分散，因此方差會變成 $9 \\times 3^2 = 81$。"
+   }
+  },
+  "scaffolding_hints": [
+   "回想方差的定義：它計算的是每個數據點與平均數的偏差平方和的平均值。",
+   "思考等差數列的特性：若將一組等差數列的所有項同時加上或減去一個常數，其形狀是否改變？",
+   "比較「首 7 項」與「最後 7 項」的相對位置關係，它們在數軸上的分佈間距有何不同？"
+  ],
+  "quick_solution_strategy": "等差數列任意連續 $k$ 項構成一個新的等差子序列，其內部相對間距不變，故變異數相同。"
+ },
+ "skills": {
+  "topic_id": "T-STA",
+  "knowledge_point_ids": [
+   "K-STA-01",
+   "K-STA-02"
+  ],
+  "formula_ids": [
+   "F-STA-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

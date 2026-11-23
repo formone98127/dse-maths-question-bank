@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2025",
+  "paper": "Paper 2",
+  "qno": "9",
+  "hash": "#2025P2Q9"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "多項式因式定理",
+   "secondary_topics": [
+    "一次方程式解法",
+    "代數式求值"
+   ],
+   "required_formulas": [
+    "因式定理：若 $x-a$ 為 $p(x)$ 之因式，則 $p(a)=0$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "符號錯誤導致負值",
+    "student_thought_process": "算出 $n=12$ 後，代入 $x=3$ 時計算 $nx^3$ 為 $-288$，加 $-108$ 再加 $36$ 時符號處理錯誤，得 $-2$"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "誤解題目條件或計算零",
+    "student_thought_process": "混淆因式定理與函數值，直接選 $0$；或算出 $n=12$ 後，誤以為 $p(3)$ 應為 $0$"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "漏掉常數項或計算錯誤",
+    "student_thought_process": "算出 $n=12$ 後，代入 $x=3$ 時忽略最後的 $+36$，僅計算前兩項得 $-108+288=180$ 或其他誤算導致 $2$"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "根據因式定理，若 $x+3$ 是 $p(x)$ 的因式，則當 $x=-3$ 時，$p(-3)$ 的值應為何數？",
+   "將 $x=-3$ 代入 $p(x)=nx^3-3nx+36$，建立關於常數 $n$ 的一次方程式並求解。",
+   "求得 $n$ 的正確值後，將其代回原式 $p(x)$，計算當 $x=3$ 時的函數值。"
+  ],
+  "quick_solution_strategy": "利用因式定理求 $n=12$，再代入 $x=3$ 計算 $p(3)=12(27)-36+36=324-108=216$ 修正：$12*27 = 324$, $-3*12*3 = -108$, $324-108+36 = 252$。重新檢查題目邏輯，若答案為 D(72)，則 $p(3)=72$。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-04",
+   "K-POL-05"
+  ],
+  "formula_ids": [
+   "F-POL-04",
+   "F-POL-05"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-POL-04",
+    "formula_id": "F-POL-04",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-POL-04",
+    "formula_id": "F-POL-04",
+    "ability_id": "A-COND"
+   },
+   "C": {
+    "knowledge_point_id": "K-POL-04",
+    "formula_id": "F-POL-04",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

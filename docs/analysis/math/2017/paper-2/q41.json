@@ -1,0 +1,91 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 2",
+  "qno": "41",
+  "hash": "#2017P2Q41"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "幾何：三角形內心與直線",
+   "secondary_topics": [
+    "坐標幾何",
+    "內角平分線性質",
+    "相似三角形"
+   ],
+   "required_formulas": [
+    "內心座標公式 $I = (\\frac{ax_A+bx_B+cx_C}{a+b+c}, \\frac{ay_A+by_B+cy_C}{a+b+c})$",
+    "直線斜率與截距"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆內心與外心座標公式",
+    "student_thought_process": "學生可能誤用外心或重心公式，將邊長權重搞錯，導致計算出錯誤比例。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "內角平分線定理應用錯誤",
+    "student_thought_process": "學生知道內心在角平分線上，但在計算 $\\tan(A/2)$ 或邊長關係時算錯數值。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "誤讀直線方程式係數",
+    "student_thought_process": "學生將 $3x+4y=3p$ 看錯為 $3x+4y=p$ 或混淆 $p,q$ 的位置，導致比例顛倒。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "回憶三角形內心座標的定義：內角平分線的交點，或是利用邊長加權平均的公式。",
+   "計算 $\\triangle OPQ$ 三邊長度 $OP=p, OQ=q, PQ=\\sqrt{p^2+q^2}$，並寫出內心 $I$ 的座標表達式。",
+   "將內心 $I$ 代入直線方程式 $3x+4y=3p$，化簡後解出 $p$ 與 $q$ 的關係比。"
+  ],
+  "quick_solution_strategy": "利用內心座標公式 $I(\\frac{p \\cdot 0 + q \\cdot p + \\sqrt{p^2+q^2} \\cdot 0}{p+q+\\sqrt{p^2+q^2}}, \\dots)$ 代入直線式化簡。"
+ },
+ "skills": {
+  "topic_id": "T-LIN",
+  "knowledge_point_ids": [
+   "K-LIN-01",
+   "K-LIN-02"
+  ],
+  "formula_ids": [
+   "F-LIN-01",
+   "F-LIN-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

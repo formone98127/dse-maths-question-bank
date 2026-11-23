@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 2",
+  "qno": "24",
+  "hash": "#2021P2Q24"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "三維幾何與三角函數",
+   "secondary_topics": [
+    "球座標系轉換",
+    "線段長度公式"
+   ],
+   "required_formulas": [
+    "$r = \\frac{\\rho}{\\cos\\theta}$",
+    "$z = \\rho\\sin\\phi$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆線段投影關係",
+    "student_thought_process": "學生誤以為 AB 直接對應 \\cos\\theta，未考慮 \\tan\\theta 的定義，將直角邊與斜邊關係搞混。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆三角函數定義",
+    "student_thought_process": "學生錯誤地將 \\sin\\theta 與 \\cos\\phi 相乘，忽略了 AB 是直角三角形的一條直角邊而非斜邊。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "餘弦項計算錯誤",
+    "student_thought_process": "學生正確推導出 \\tan\\theta，但在處理 \\phi 角時，誤將斜邊投影關係記為 \\cos\\phi 而非 \\sin\\phi。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "觀察圖形中 \\triangle OAB，找出 AB 與 OA、OB 之間的三角函數關係。",
+   "考慮將三維座標轉換為球座標系，利用 \\rho, \\theta, \\phi 表達各線段長度。",
+   "結合上述兩步結果，化簡 \\frac{AB}{CD} 的比值，注意 \\sin\\phi 與 \\cos\\phi 的區別。"
+  ],
+  "quick_solution_strategy": "在 \\triangle OAB 中用 \\tan\\theta 表 AB/OA；在 \\triangle OCD 中用 \\sin\\phi 表 CD/OC，再結合 OA=OC 化簡。"
+ },
+ "skills": {
+  "topic_id": "T-TRI",
+  "knowledge_point_ids": [
+   "K-TRI-01",
+   "K-TRI-02"
+  ],
+  "formula_ids": [
+   "F-TRI-01",
+   "F-TRI-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

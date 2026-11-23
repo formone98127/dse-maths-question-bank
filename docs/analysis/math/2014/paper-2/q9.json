@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 2",
+  "qno": "9",
+  "hash": "#2014P2Q9"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "百分比與比例",
+   "secondary_topics": [
+    "一元一次方程式",
+    "變量關係"
+   ],
+   "required_formulas": [
+    "總數 = 男工 + 女工",
+    "男工 = 女工 × (1 - 20%)"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "計算錯誤",
+    "student_thought_process": "先設女工為 x，得 0.8x + x = 792，解得 x=432。誤將 432 當作男工數，忘記男工是 0.8x，故選 B。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "比例關係混淆",
+    "student_thought_process": "誤以為男工較女工少 20% 是指總數的 20%，直接算 792×0.8=633.6，再亂推導或選接近值 C。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "性別角色刻板印象",
+    "student_thought_process": "因題目說男工較女工少，直覺認為男工應少於一半，但誤算 792×0.55≈435，四捨五入選 D。"
+   }
+  },
+  "scaffolding_hints": [
+   "設女工人數為 x，則男工人數可表示為何？",
+   "男工與女工總數等於 792，請列出方程式。",
+   "解出女工人數後，再乘以 0.8 得到男工人數。"
+  ],
+  "quick_solution_strategy": "設女工 x，則 1.8x=792，x=440，男工=440×0.8=352。"
+ },
+ "skills": {
+  "topic_id": "T-PCT",
+  "knowledge_point_ids": [
+   "K-PCT-01",
+   "K-PCT-02"
+  ],
+  "formula_ids": [
+   "F-PCT-01",
+   "F-PCT-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

@@ -1,0 +1,92 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2015",
+  "paper": "Paper 2",
+  "qno": "22",
+  "hash": "#2015P2Q22"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "正多邊形性質",
+   "secondary_topics": [
+    "內角與外角關係",
+    "對角線計算公式",
+    "旋轉對稱性"
+   ],
+   "required_formulas": [
+    "內角 + 外角 = 180°",
+    "n 邊形對角線數 = n(n-3)/2",
+    "正 n 邊形旋轉對稱次數 = n"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略 I 項正確性",
+    "student_thought_process": "學生誤判內角為 150°，認為對角線數目 6 是唯一重點，或忘記檢查 I 項是否成立。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤認 III 項正確",
+    "student_thought_process": "學生算出內角 150°，對角線 6，但錯誤認為正十二邊形旋轉對稱次數為 6（應為 12）。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "同時誤認 II、III",
+    "student_thought_process": "學生完全忽略 I 項正確，且錯誤計算旋轉對稱次數為 6，將邊數與對角線數混淆。"
+   }
+  },
+  "scaffolding_hints": [
+   "先設內角為 x，外角為 y，利用 x + y = 180° 及題意建立方程式求解 n。",
+   "確認正多邊形所有內角相等後，計算對角線數目公式 n(n-3)/2 與旋轉對稱次數等於邊數 n。",
+   "綜合上述結果判斷哪些陳述正確，注意選項組合是否包含所有正確項目。"
+  ],
+  "quick_solution_strategy": "由內角=5×外角→內角=150°→邊數=12→對角線=54,旋轉=12→僅 I 正確。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-01",
+   "K-GEO-02"
+  ],
+  "formula_ids": [
+   "F-GEO-01",
+   "F-GEO-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

@@ -1,0 +1,92 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2019",
+  "paper": "Paper 2",
+  "qno": "45",
+  "hash": "#2019P2Q45"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "統計量變換性質",
+   "secondary_topics": [
+    "平均值定義",
+    "分佈域（極差）定義",
+    "方差定義"
+   ],
+   "required_formulas": [
+    "\\bar{x}_{new} = a\\bar{x}_{old} + b",
+    "Range_{new} = a \\times Range_{old}",
+    "Var(X+c) = Var(X)",
+    "Var(aX) = a^2 Var(X)"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤認平均值變換規則",
+    "student_thought_process": "學生可能認為平均值僅加 5，忽略了乘以 6 的係數影響，或者混淆了分佈域的計算方式。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤認方差變換規則",
+    "student_thought_process": "學生錯誤地認為方差會加上常數 5，未理解平移（+5）不影響方差，且忽略了係數平方。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤認分佈域變換規則",
+    "student_thought_process": "學生可能認為分佈域是平均值加常數，或者在計算方差時同時加入了錯誤的平移項。"
+   }
+  },
+  "scaffolding_hints": [
+   "思考：若將每個數據乘以 $a$，數據間距會如何變化？若加上 $b$，數據間的距離會改變嗎？",
+   "知識：平均值、分佈域（極差）與方差對於線性變換 $Y = aX + b$ 的反應不同。平移（+5）不影響離散程度，縮放（x6）會影響。",
+   "破題：逐一檢查 I, II, III。I 是平均值公式；II 是極差需乘以係數；III 是方差需乘以係數平方且不受平移影響。"
+  ],
+  "quick_solution_strategy": "平均值 $\\to 6m+5$ (對)；分佈域 $\\to 6r$ (錯)；方差 $\\to 36v$ (錯)。僅 I 正確。"
+ },
+ "skills": {
+  "topic_id": "T-SEQ",
+  "knowledge_point_ids": [
+   "K-SEQ-01",
+   "K-SEQ-02"
+  ],
+  "formula_ids": [
+   "F-SEQ-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-SEQ-01",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-SEQ-01",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-SEQ-01",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

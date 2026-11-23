@@ -1,0 +1,86 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 2",
+  "qno": "34",
+  "hash": "#2013P2Q34"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "對數方程式",
+   "secondary_topics": [
+    "指數與對數關係",
+    "一元二次方程式解法"
+   ],
+   "required_formulas": [
+    "$\\log_b(x^n) = n\\log_b x$",
+    "$x^2 - 10x + c = 0$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "忽略負根",
+    "student_thought_process": "解出 x=10 後，代入 y=x^2/100 得 100。但忘記檢查另一種情況（當 log y^2 = -10 時），導致漏解。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆對數定義域",
+    "student_thought_process": "誤以為 log y^2 可直接化為 2log y 且 y 可為負數，忽略對數真數必須大於零的限制。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "指數運算錯誤",
+    "student_thought_process": "正確解出 x=10 與 x=-10，但在計算 y 時，將 (-10)^2 誤算為 10000 而非 100。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "觀察題目結構，將等式拆分為兩個獨立條件：x-log y = x^2-log y^2-10 與 =2。",
+   "利用對數性質 log y^2 = 2log |y| 或分情況討論 y>0 與 y<0（若定義域允許）來簡化方程。",
+   "解出 x 的兩個可能值後，分別代回原式求 y，並務必驗證所得 y 值是否滿足對數真數大於零的條件。"
+  ],
+  "quick_solution_strategy": "由 =2 得 x-log y=2；代入另一式化簡得關於 x 與 y 關係，解出兩組 (x,y) 並驗證定義域。"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

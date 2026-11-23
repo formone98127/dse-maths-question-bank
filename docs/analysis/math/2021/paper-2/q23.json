@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 2",
+  "qno": "23",
+  "hash": "#2021P2Q23"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "座標幾何變換",
+   "secondary_topics": [
+    "關於 y 軸的反射",
+    "繞原點順時針旋轉 90 度"
+   ],
+   "required_formulas": [
+    "$P(x, y) \\xrightarrow{\\text{y 軸反射}} P'(-x, y)$",
+    "$Q(x', y') \\xrightarrow{\\text{順時針} 90^\\circ} R(y', -x')$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "旋轉符號搞錯",
+    "student_thought_process": "算出 Q(-7, -5) 後，直接將 x 坐標取反或忘記旋轉公式中的變換，錯誤地認為 R 的 x 坐標是 -7。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "旋轉後坐標順序混亂",
+    "student_thought_process": "知道要換 x,y，但混淆了順時針與逆時針的座標互換規則，錯誤地將 y 值直接當做 x 值且符號未調整。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "忽略反射步驟",
+    "student_thought_process": "完全跳過反射步驟，直接對 P(7,-5) 進行順時針旋轉，導致 x 坐標變成 -(-5)=5，但此處選 D 代表學生可能算出 R 的 y 坐標或是單純記錯原座標。"
+   }
+  },
+  "scaffolding_hints": [
+   "首先，請寫下點 P(7, -5) 關於 y 軸反射後的坐標 Q 是甚麼？",
+   "回憶一下，在平面直角座標系中，順時針旋轉 90 度，點 (x, y) 會變成什麼新的座標 (x', y')？",
+   "將上一步得到的 Q 點座標代入旋轉公式，計算出 R 點的 x 坐標即可。"
+  ],
+  "quick_solution_strategy": "先反射得 Q(-7,-5)，再順時針轉 90 度變為 (y, -x) 即 (-5, 7)，故 x 為 -5。"
+ },
+ "skills": {
+  "topic_id": "T-TRF",
+  "knowledge_point_ids": [
+   "K-TRF-02",
+   "K-TRF-03"
+  ],
+  "formula_ids": [
+   "F-TRF-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-TRF-02",
+    "formula_id": "F-TRF-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-TRF-02",
+    "formula_id": "F-TRF-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-TRF-02",
+    "formula_id": "F-TRF-01",
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2015",
+  "paper": "Paper 2",
+  "qno": "12",
+  "hash": "#2015P2Q12"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "變數關係與比例",
+   "secondary_topics": [
+    "指數運算",
+    "代入法求解常數"
+   ],
+   "required_formulas": [
+    "$z = k x^3 y^2$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "符號處理錯誤",
+    "student_thought_process": "算出 k=1.75 後，代入 x=3, y=-2 時，忘記 y^2 為正數，直接將 y=-2 帶入計算導致結果變號，或最後一步乘法符號搞錯。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "常數求解錯誤",
+    "student_thought_process": "在計算 k 時，將 $2^3$ 算成 8 但 $1^2$ 處理有誤，或是將 14/8 簡化錯誤，導致 k 值偏離正確值，進而影響後續結果。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略平方性質",
+    "student_thought_process": "學生知道公式結構，但在代入 y=-2 時，錯誤地認為負數的偶次方仍為負，或完全忽略了題目說「正變」意味著係數 k 必須為正的邏輯。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "當一個變數隨其他變數正變時，可設關係式為 $z = k x^a y^b$，其中 $k$ 為常數。",
+   "將第一組已知條件 ($x=2, y=1, z=14$) 代入公式，解出常數 $k$ 的具體數值。",
+   "將求得的 $k$ 與第二組條件 ($x=3, y=-2$) 代入公式，注意 $y^2$ 的結果恆為正數。"
+  ],
+  "quick_solution_strategy": "設 $z=kx^3y^2$，代第一組數據求 $k$，再代第二組數據計算 $z$"
+ },
+ "skills": {
+  "topic_id": "T-VAR",
+  "knowledge_point_ids": [
+   "K-VAR-01"
+  ],
+  "formula_ids": [
+   "F-VAR-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

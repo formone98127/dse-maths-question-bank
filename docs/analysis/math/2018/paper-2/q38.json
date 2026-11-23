@@ -1,0 +1,91 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2018",
+  "paper": "Paper 2",
+  "qno": "38",
+  "hash": "#2018P2Q38"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "三角函數方程",
+   "secondary_topics": [
+    "餘弦倍角公式",
+    "一元二次方程式解法",
+    "單位圓週期性"
+   ],
+   "required_formulas": [
+    "$\\cos(2x) = 2\\cos^2 x - 1$",
+    "$\\cos(2x) + \\cos x - 5 = 0$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "忽略解的數量",
+    "student_thought_process": "算出 $\\cos x$ 的值後，只考慮到一個有效解（例如 $x=60^\\circ$），忘記了餘弦函數在 $0^\\circ$ 至 $360^\\circ$ 間通常有兩個解的性質。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤判解的範圍",
+    "student_thought_process": "將 $\\cos x = -1$ 視為無解，或者錯誤地認為 $\\cos x = -2/3$ 在該區間內沒有對應角度，導致漏算。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "範圍理解偏差",
+    "student_thought_process": "誤以為題目要求的是所有實數解（無限多個），或是將 $360^\\circ$ 包含在內導致多算一個週期，或者單純猜測數字。"
+   }
+  },
+  "scaffolding_hints": [
+   "嘗試利用恆等式 $2\\cos^2 x - 1 = \\cos(2x)$ 將原方程轉換為關於 $2x$ 的形式。",
+   "回憶餘弦函數 $y=\\cos \\theta$ 在 $0^\\circ \\leq \\theta < 360^\\circ$ 的圖形特徵，特別是負值解的數量。",
+   "先求出一元二次方程的兩個根 $\\cos x = k_1, k_2$，再分別檢查每個 $k$ 值在指定範圍內對應幾個角度。"
+  ],
+  "quick_solution_strategy": "利用倍角公式化簡為 $\\cos(2x) + \\cos x - 5 = 0$，解得 $\\cos x = -1$ 或 $-2/3$，再數出對應角度總數。"
+ },
+ "skills": {
+  "topic_id": "T-TRI",
+  "knowledge_point_ids": [
+   "K-TRI-01",
+   "K-TRI-02"
+  ],
+  "formula_ids": [
+   "F-TRI-01",
+   "F-TRI-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

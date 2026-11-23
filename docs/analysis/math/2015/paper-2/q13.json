@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2015",
+  "paper": "Paper 2",
+  "qno": "13",
+  "hash": "#2015P2Q13"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "等差數列",
+   "secondary_topics": [
+    "遞迴關係",
+    "通項公式"
+   ],
+   "required_formulas": [
+    "a_n = a_1 + (n-1)d"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "公差誤算",
+    "student_thought_process": "學生可能將首項 5 視為 n=1，然後錯誤計算第 6 項時減去了一個公差，或誤以為題目是從 n=0 開始計數導致結果偏小。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "過度推演",
+    "student_thought_process": "學生正確計算出第 5 項為 21，但題目要求第 6 項，學生卻因粗心或理解偏差繼續加 4 得到 29，或是誤讀題目求第 5 個圖案。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "首項定義錯誤",
+    "student_thought_process": "學生可能將「第 1 個」誤認為是遞迴開始前的狀態，或者在套用公式時搞混 n 的起始值，導致計算出比正確答案多一個公差的結果。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察題目描述：後一項比前一項固定增加多少？",
+   "確認第 1 個圖案的點子數是序列的哪一項（a_1）？",
+   "代入等差數列通項公式，計算當 n=6 時的值。"
+  ],
+  "quick_solution_strategy": "首項 a_1=5, 公差 d=4, 求 a_6 = 5 + (6-1)\\times 4 = 25。"
+ },
+ "skills": {
+  "topic_id": "T-SEQ",
+  "knowledge_point_ids": [
+   "K-SEQ-02"
+  ],
+  "formula_ids": [
+   "F-SEQ-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-SEQ-02",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-SEQ-02",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-CHAIN"
+   },
+   "D": {
+    "knowledge_point_id": "K-SEQ-02",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

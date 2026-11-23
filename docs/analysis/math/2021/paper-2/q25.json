@@ -1,0 +1,91 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 2",
+  "qno": "25",
+  "hash": "#2021P2Q25"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓的方程式",
+   "secondary_topics": [
+    "距離公式",
+    "直線方程式",
+    "幾何軌跡概念"
+   ],
+   "required_formulas": [
+    "$d = \\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$",
+    "$(x-h)^2 + (y-k)^2 = r^2$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤解圓與直線定義",
+    "student_thought_process": "學生將 $PM=MN$ 誤認為 $P$ 在固定直線上，而非以 $M$ 為圓心、$MN$ 為半徑的圓。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "斜率計算錯誤",
+    "student_thought_process": "學生嘗試求垂直平分線，但混淆了 $MN$ 中點與半徑長度，導致得出錯誤直線方程式。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "半徑平方計算錯誤",
+    "student_thought_process": "學生正確建立圓方程式結構，但在計算半徑平方 $MN^2$ 時出現算術錯誤。"
+   }
+  },
+  "scaffolding_hints": [
+   "思考：滿足到兩點距離相等的點的集合是什麼圖形？這裡的條件是 $P$ 到 $M$ 的距離等於固定長度 $MN$。",
+   "提示：軌跡是以 $M(5,7)$ 為圓心，半徑長度為 $MN$ 的圓。請先計算 $MN$ 的長度平方。",
+   "引導：將圓心坐標 $(h,k)=(5,7)$ 與半徑平方 $r^2=2$ 代入標準圓方程式 $(x-h)^2+(y-k)^2=r^2$ 並展開。"
+  ],
+  "quick_solution_strategy": "計算 $MN^2=2$，建立以 $(5,7)$ 為圓心、$\\sqrt{2}$ 為半徑的圓方程式並展開。"
+ },
+ "skills": {
+  "topic_id": "T-LOC",
+  "knowledge_point_ids": [
+   "K-LOC-01",
+   "K-LOC-02"
+  ],
+  "formula_ids": [
+   "F-LOC-01",
+   "F-LOC-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-LOC-01",
+    "formula_id": "F-LOC-01",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-LOC-01",
+    "formula_id": "F-LOC-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-LOC-01",
+    "formula_id": "F-LOC-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

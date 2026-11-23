@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 2",
+  "qno": "29",
+  "hash": "#2014P2Q29"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓形圖與比例",
+   "secondary_topics": [
+    "百分比計算",
+    "角度與扇形關係"
+   ],
+   "required_formulas": [
+    "$\\text{交通支出} = \\frac{\\text{衣物角度}}{360^\\circ} \\times \\text{總支出}$",
+    "$\\text{總支出} = \\frac{240}{\\text{衣物百分比}}"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "角度讀取錯誤",
+    "student_thought_process": "學生誤將衣物扇形角度看為 $90^\\circ$ (25%)，導致計算出交通支出為 $40$。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "步驟跳躍",
+    "student_thought_process": "學生直接假設衣物佔 $30\\%$ 而忽略圖表數據，或忘記先求總支出。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "比例混淆",
+    "student_thought_process": "學生誤以為衣物與交通的支出比等於角度差，直接計算 $240 \\times (135/90)$ 等錯誤邏輯。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察圓形圖中代表衣物的扇形，估算或測量其對應的中心角度數。",
+   "回憶圓形圖的總合概念：所有扇形角度之和為 $360^\\circ$，且各部分比例等於角度比。",
+   "利用衣物支出與衣物角度的關係求出該星期的總支出，再乘以交通支出的角度比例即可。"
+  ],
+  "quick_solution_strategy": "先由衣物金額與對應角度求總額，再乘交通角度比例。"
+ },
+ "skills": {
+  "topic_id": "T-STA",
+  "knowledge_point_ids": [
+   "K-STA-01",
+   "K-STA-02"
+  ],
+  "formula_ids": [
+   "F-STA-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CHAIN"
+   },
+   "D": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

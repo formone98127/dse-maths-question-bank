@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 2",
+  "qno": "39",
+  "hash": "#2017P2Q39"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "空間幾何與線面夾角",
+   "secondary_topics": [
+    "三垂線定理",
+    "餘弦定理"
+   ],
+   "required_formulas": [
+    "$\\cos \\theta = \\frac{\\text{投影長}}{\\text{斜線長}}$",
+    "$c^2 = a^2 + b^2 - 2ab \\cos C$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "餘弦定理計算誤差",
+    "student_thought_process": "在三角形 $ACD$ 中算出 $AC^2=836$，但後續求 $\\cos \\angle CAD$ 時將 $AD$ 當作底邊或角度對應邊搞混，導致算出約 $54.1^\\circ$"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆線面夾角定義",
+    "student_thought_process": "誤以為所求為 $AB$ 與地面 $BCD$ 的夾角，直接算 $\\sin \\theta = AD/AB = 15/25$ 得到 $37^\\circ$ 後錯選或誤讀，或是算出 $AC$ 後直接用 $BC$ 當作投影。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "四捨五入判斷錯誤",
+    "student_thought_process": "正確算出角度約為 $53.16^\\circ$，但學生因題目要求「最接近」而猶豫，或誤將 $53.16$ 看錯成 $70$（極少見），更可能是計算錯誤導至 $69$ 附近。"
+   }
+  },
+  "scaffolding_hints": [
+   "線面夾角的定義：斜線與其在平面上的投影所成的角。",
+   "利用勾股定理求出 $AC$ 的長度，並確認 $AD \\perp BC$ 的關係以確定投影位置。",
+   "在 $\\triangle ABC$ 中應用餘弦定理求 $\\cos \\angle BAC$，再換算成角度。"
+  ],
+  "quick_solution_strategy": "先由 $Rt\\triangle ADC$ 得 $AC=\\sqrt{AD^2+CD^2}$，再由 $Rt\\triangle ABC$ 得 $BC=\\sqrt{AB^2-AC^2}$（錯），應直接求 $AC$ 後，在 $\\triangle ABC$ 中用餘弦定理求 $\\angle BAC$。"
+ },
+ "skills": {
+  "topic_id": "T-TRI",
+  "knowledge_point_ids": [
+   "K-TRI-04"
+  ],
+  "formula_ids": [
+   "F-TRI-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-TRI-04",
+    "formula_id": "F-TRI-04",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-TRI-04",
+    "formula_id": "F-TRI-04",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-TRI-04",
+    "formula_id": "F-TRI-04",
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

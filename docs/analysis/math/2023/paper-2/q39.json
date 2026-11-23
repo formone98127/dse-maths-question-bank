@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2023",
+  "paper": "Paper 2",
+  "qno": "39",
+  "hash": "#2023P2Q39"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓與直線之交點及中點性質",
+   "secondary_topics": [
+    "圓的標準方程式",
+    "弦的中垂線過圓心"
+   ],
+   "required_formulas": [
+    "圓的一般式轉換標準式：$(x-a)^2+(y-b)^2=r^2$",
+    "兩點間距離公式或弦長公式"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "斜率計算錯誤",
+    "student_thought_process": "算出圓心 $(4,2)$ 與中點 $(1,0)$ 連線斜率為 $\\frac{2-0}{4-1}=\\frac{2}{3}$，誤以為直線斜率也是 $\\frac{2}{3}$，代入 $h,k$ 關係時計算出錯。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略垂直條件",
+    "student_thought_process": "忘記弦的中垂線必過圓心這一關鍵性質，直接將直線方程式代入圓方程式解聯立方程組，導致未知數過多無法求解。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "代數化簡失誤",
+    "student_thought_process": "正確求出直線斜率 $-\\frac{3}{2}$ 後，代入 $hx+ky=6$ 得 $h=-\\frac{3}{2}k$，但在將此關係代入圓心距公式或驗證時，平方展開過程出現代數化簡錯誤。"
+   }
+  },
+  "scaffolding_hints": [
+   "思考：弦的中點與圓心的連線，與該弦（直線）之間有何幾何位置關係？",
+   "提示：先將圓的一般式 $x^2 + y^2 - 8x - 4y - 18 = 0$ 配方成標準式 $(x-a)^2+(y-b)^2=r^2$，找出圓心座標。",
+   "引導：利用「弦的中垂線過圓心」的性質，求出直線的斜率，再與直線方程式 $hx+ky=6$ 的斜率公式結合求解 $k$。"
+  ],
+  "quick_solution_strategy": "1.配方求圓心；2.由圓心與中點求垂線斜率；3.得直線斜率；4.代入直線式求 k。"
+ },
+ "skills": {
+  "topic_id": "T-CIR",
+  "knowledge_point_ids": [
+   "K-CIR-01"
+  ],
+  "formula_ids": [
+   "F-CIR-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

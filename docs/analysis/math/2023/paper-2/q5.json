@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2023",
+  "paper": "Paper 2",
+  "qno": "5",
+  "hash": "#2023P2Q5"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "多項式恆等式",
+   "secondary_topics": [
+    "展開與合併同類項",
+    "比較係數法"
+   ],
+   "required_formulas": [
+    "$(x+a)(x+b) = x^2 + (a+b)x + ab$",
+    "多項式相等則對應次數係數必相等"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "展開錯誤導致係數算錯",
+    "student_thought_process": "左邊展開得 $x^2+(c+2)x+2c+12$，右邊為 $x^2+(d+6c)x+6c$。比較一次項係數：$c+2=d+6c \\Rightarrow d=-5c+2$；常數項：$2c+12=6c \\Rightarrow c=3$。代入得 $d=-13$。選 B 可能是計算 $-5(3)+2$ 時算成 $-9$ 或忘記加 2。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "忽略符號或看錯題目方向",
+    "student_thought_process": "可能將 $d=-5c+2$ 中 $c=3$ 代入時，錯誤認為 $-5(3)$ 是負數但忘記加 2，或者誤以為 $d$ 與 $c$ 關係為正比。亦可能是看錯題目要求解 $d$ 而非 $c$"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "未使用恆等式性質直接猜測",
+    "student_thought_process": "可能嘗試代入特定 $x$ 值（如 $x=0, -2$）但處理不當，或完全忽略常數項與一次項係數的對應關係，隨意選取數字。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：兩邊都是關於 $x$ 的多項式，若對所有 $x$ 成立，則展開後同次數的係數必須完全相等。",
+   "提示 2：請先將左右兩邊分別展開成 $ax^2+bx+c$ 的形式，並整理出一次項與常數項的係數表達式。",
+   "提示 3：由常數項相等可解出 $c$ 的值，再代入一次項係數的等式中求出 $d$"
+  ],
+  "quick_solution_strategy": "展開兩邊多項式，比較常數項求 $c$，再代入一次項係數求 $d$"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-01"
+  ],
+  "formula_ids": [
+   "F-POL-06"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-06",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-06",
+    "ability_id": "A-COND"
+   },
+   "D": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-06",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

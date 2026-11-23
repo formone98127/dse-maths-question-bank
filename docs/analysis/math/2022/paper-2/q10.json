@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 2",
+  "qno": "10",
+  "hash": "#2022P2Q10"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "一元二次函數圖形性質",
+   "secondary_topics": [
+    "係數與開口方向關係",
+    "根與截距的意義"
+   ],
+   "required_formulas": [
+    "$y = ax^2 + bx + c$ 中 $a>0$ 開口向上",
+    "$\\Delta = b^2 - 4ac$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤判 y 截距符號",
+    "student_thought_process": "學生將 $y$ 截距計算為 $hk$，因 $hk<0$ 故認為 III 錯誤，卻忽略 $x$ 截距存在性。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤判開口方向",
+    "student_thought_process": "學生未展開式子，直接看 $(h-x)(k-x)$ 認為 $x^2$ 係數為負，或混淆 $hk<0$ 與開口關係。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "同時接受錯誤推論",
+    "student_thought_process": "學生認為 I、II、III 皆對，可能誤算 $y$ 截距為正，或忽略 $hk<0$ 的條件限制。"
+   }
+  },
+  "scaffolding_hints": [
+   "將式子展開成標準二次形式 $ax^2+bx+c$，觀察 $a$ 的符號決定開口方向。",
+   "令 $y=0$ 解出 $x$ 截距數量；令 $x=0$ 求 $y$ 截距並結合 $hk<0$ 判斷符號。",
+   "綜合前三項分析結果，選出包含所有正確敘述的組合選項。"
+  ],
+  "quick_solution_strategy": "展開得 $y=x^2-(h+k)x+hk$，因 $x^2$ 係數為正故 I 對；$\\Delta>0$ 故 II 對；$y$ 截距 $hk<0$ 故 III 錯。"
+ },
+ "skills": {
+  "topic_id": "T-FUN",
+  "knowledge_point_ids": [
+   "K-FUN-01",
+   "K-FUN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

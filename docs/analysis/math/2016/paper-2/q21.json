@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2016",
+  "paper": "Paper 2",
+  "qno": "21",
+  "hash": "#2016P2Q21"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "三角函數投影",
+   "secondary_topics": [
+    "直角三角形邊角關係",
+    "平行線間距離概念"
+   ],
+   "required_formulas": [
+    "$\\text{投影} = \\text{斜邊} \\times \\cos(\\theta)$",
+    "$\\text{對邊} = \\text{斜邊} \\times \\sin(\\theta)$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆投影與對邊定義",
+    "student_thought_process": "學生誤以為垂直距離應使用正弦函數，將兩個分段的垂直分量都算成 $\\sin$，導致兩項皆為對邊長度而非投影。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混合使用錯誤三角函數",
+    "student_thought_process": "學生正確辨識出 $AB$ 段應用餘弦，但誤將 $BC$ 段的垂直距離算成餘弦（即把水平投影當作垂直高度）。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "過度簡化或誤讀圖形結構",
+    "student_thought_process": "學生可能認為垂直距離總和應全用正弦，卻在 $AB$ 段錯誤地使用了餘弦，顯示對直角三角形邊角對應關係理解不清。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：觀察圖形中 $AD$ 代表哪種幾何意義？它是連接兩平行線間的垂直距離嗎？",
+   "提示 2：將折線 $AB-BC$ 分解為兩個直角三角形，分別找出每段在垂直方向上的分量。",
+   "提示 3：回憶三角函數定義，在直角三角形中，鄰邊用餘弦、對邊用正弦，判斷哪一段是垂直分量。"
+  ],
+  "quick_solution_strategy": "將 $AD$ 視為總垂直距離，分別計算 $AB$ 與 $BC$ 在垂直方向的分量並相加。"
+ },
+ "skills": {
+  "topic_id": "T-TRI",
+  "knowledge_point_ids": [
+   "K-TRI-01",
+   "K-TRI-02"
+  ],
+  "formula_ids": [
+   "F-TRI-01",
+   "F-TRI-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

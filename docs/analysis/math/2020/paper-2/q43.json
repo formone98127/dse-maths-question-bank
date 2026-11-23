@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2020",
+  "paper": "Paper 2",
+  "qno": "43",
+  "hash": "#2020P2Q43"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "組合概率",
+   "secondary_topics": [
+    "互斥事件加法原理",
+    "對立事件補集法則"
+   ],
+   "required_formulas": [
+    "$\\binom{n}{k}$",
+    "$P(E) = 1 - P(E')$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "分母計算錯誤",
+    "student_thought_process": "學生可能算出有利情形為$\\binom{8}{3}\\binom{7}{2}+\\binom{8}{2}\\binom{7}{3}+\\binom{8}{1}\\binom{7}{4}$，但分母錯誤計算為$11$而非$\\binom{15}{5}=3003$。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "漏算一項",
+    "student_thought_process": "學生僅計算了抽出 1 本或 2 本中文書的情況，遺漏了恰好抽出 3 本中文書的情形，導致分子偏小。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "未使用補集法則",
+    "student_thought_process": "學生嘗試直接計算所有情況但算錯，或者完全忽略對立事件（抽出 4 本或 5 本中文書）的簡單性。"
+   }
+  },
+  "scaffolding_hints": [
+   "首先確定總共有多少種抽取 5 本書的不同組合方式？",
+   "題目要求「至多 3 本」，其對立事件是什麼情況？計算對立事件的概率是否更簡單？",
+   "利用補集法則：$P(\\text{至多}3) = 1 - P(\\text{大於}3)$，請代入數值驗證。"
+  ],
+  "quick_solution_strategy": "計算抽出 4 本或 5 本中文書的概率，再用 1 減去該值即可。"
+ },
+ "skills": {
+  "topic_id": "T-PROB",
+  "knowledge_point_ids": [
+   "K-PROB-01",
+   "K-PROB-02"
+  ],
+  "formula_ids": [
+   "F-PROB-01",
+   "F-PROB-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

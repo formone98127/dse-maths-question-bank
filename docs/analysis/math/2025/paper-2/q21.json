@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2025",
+  "paper": "Paper 2",
+  "qno": "21",
+  "hash": "#2025P2Q21"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "幾何面積與相似三角形",
+   "secondary_topics": [
+    "長方形性質",
+    "垂直距離定義"
+   ],
+   "required_formulas": [
+    "三角形面積公式：$Area = \\frac{1}{2} \\times base \\times height$",
+    "直角三角形射影定理或相似三角形比例關係"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "錯誤計算 DE 長度",
+    "student_thought_process": "學生算出 $DE=15$ 後，誤以為題目問的就是 $DE$ 的長度，直接選 D 或 A（若混淆數值），未理解垂直距離是 $E$ 到 $CD$ 的垂線段。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤解垂直距離定義",
+    "student_thought_process": "學生將 $E$ 到 $CD$ 的垂直距離誤認為是 $ED$ 或 $EC$，未畫出從 $E$ 向 $CD$ 所作的垂線。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "讀題不仔細",
+    "student_thought_process": "學生看到選項中有 $15\\text{ cm}$（即 $DE$ 的長度），因題目提及 $AE=20$ 與面積，直接選出符合數值的選項，忽略「垂直距離」的關鍵詞。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：回想三角形面積公式，如何利用已知的面積與底邊 $AE$ 求出另一邊 $DE$？",
+   "提示 2：在長方形中，從點 $E$ 向對邊 $CD$ 所作的垂直距離，與哪條線段長度相等？",
+   "提示 3：利用長方形對邊平行且相等的性質，結合直角三角形關係，推導出該垂直距離的數值。"
+  ],
+  "quick_solution_strategy": "先由面積求 $DE=15$；再認出 $E$ 到 $CD$ 的垂距等於 $AD$ 的一部分，利用相似或長方形性質得結果為 $9\\text{ cm}$。"
+ },
+ "skills": {
+  "topic_id": "T-LIN",
+  "knowledge_point_ids": [
+   "K-LIN-01",
+   "K-LIN-02"
+  ],
+  "formula_ids": [
+   "F-LIN-01",
+   "F-LIN-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

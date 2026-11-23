@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2018",
+  "paper": "Paper 2",
+  "qno": "1",
+  "hash": "#2018P2Q1"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "指數法則",
+   "secondary_topics": [
+    "底數轉換",
+    "冪的運算性質"
+   ],
+   "required_formulas": [
+    "$a^m \\cdot a^n = a^{m+n}$",
+    "$\\frac{a^m}{a^n} = a^{m-n}$",
+    "$a^{mn} = (a^m)^n$",
+    "$4 = 2^2$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略底數差異",
+    "student_thought_process": "學生可能錯誤認為 $8^{2n+1}$ 與 $4^{3n+1}$ 約分後完全抵消，或誤算指數相減結果為 0。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "指數運算錯誤",
+    "student_thought_process": "學生在計算 $2(2n+1) - 2(3n+1)$ 時，可能算錯係數或常數項，導致結果多餘一個 $2^n$。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "符號處理失誤",
+    "student_thought_process": "學生在展開括號時，可能將減號遺漏或錯誤分配負號至 $n$ 項，導致指數變為負數。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察題目中的底數 $8$ 與 $4$，思考如何統一它們的底數以運用同底數冪的除法法則。",
+   "將所有底數轉換為 $2$ 後，利用指數分配律展開分子與分母的指數，並仔細處理括號內的運算。",
+   "計算完指數相減後的結果，確認常數項是否正確抵消，最後整理成最簡形式。"
+  ],
+  "quick_solution_strategy": "將 $8$ 換成 $2^3$、$4$ 換成 $2^2$，再利用 $(a^m)^n=a^{mn}$ 展開指數後相減。"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

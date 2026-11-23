@@ -1,0 +1,91 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 2",
+  "qno": "42",
+  "hash": "#2013P2Q42"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓與直線的相交條件",
+   "secondary_topics": [
+    "圓的一般式轉標準式",
+    "點到直線距離公式",
+    "不等式的解法"
+   ],
+   "required_formulas": [
+    "(x-a)^2 + (y-b)^2 = r^2",
+    "d = |Ax_0 + By_0 + C| / \\sqrt{A^2 + B^2}"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆相交與相割的定義範圍",
+    "student_thought_process": "學生算出距離不等式後，誤以為「相交」僅指兩個不同交點（相割），忽略了相切時也算作相交的一種情況，因此錯誤地使用了嚴格不等號 <。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "圓心坐標或半徑計算錯誤",
+    "student_thought_process": "學生在將圓的一般式 $x^2+y^2+2x-2y-7=0$ 轉為標準式時出錯，可能算錯了圓心 $(\\pm1, \\mp1)$ 或半徑平方 $r^2$ 的數值，導致後續距離公式中的常數項計算偏差。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "不等號方向判斷錯誤",
+    "student_thought_process": "學生正確算出臨界值 $k=\\pm8$，但在解絕對值不等式 $|k+8| \\le 30$ 時，錯誤地將結果寫成「或」的關係（相離條件），而非「且」的範圍。"
+   }
+  },
+  "scaffolding_hints": [
+   "首先，請將圓的方程式配方，找出圓心坐標 $(a,b)$ 與半徑 $r$。",
+   "其次，利用點到直線距離公式，計算圓心到直線 $3x-4y+k=0$ 的距離 $d$。",
+   "最後，根據「相交」的定義（相割或相切），建立不等式 $d \\le r$ 並求解 $k$ 的範圍。"
+  ],
+  "quick_solution_strategy": "配方得圓心 $(\\pm1, \\mp1)$，半徑 $r=4$；利用距離公式建 $|k+8|/5 \\le 4$。"
+ },
+ "skills": {
+  "topic_id": "T-CIR",
+  "knowledge_point_ids": [
+   "K-CIR-01",
+   "K-CIR-02"
+  ],
+  "formula_ids": [
+   "F-CIR-01",
+   "F-CIR-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

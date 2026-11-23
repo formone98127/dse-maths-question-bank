@@ -1,0 +1,93 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 2",
+  "qno": "15",
+  "hash": "#2022P2Q15"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓柱體與半球體的表積計算",
+   "secondary_topics": [
+    "球面面積公式",
+    "圓柱側面積公式",
+    "底面積概念"
+   ],
+   "required_formulas": [
+    "半球總表面積 = $\\frac{1}{2}(4\\pi r^2) + \\pi r^2 = 3\\pi r^2$",
+    "圓柱總表面積 = $2\\pi rh + 2\\pi r^2$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "圓柱高度代換錯誤",
+    "student_thought_process": "學生將圓柱高度 $h$ 誤認為半徑 $r$，導致圓柱表面積算成 $4\\pi r^2$，比值變為 $3:4$ 或混淆分母。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "半球定義不清",
+    "student_thought_process": "學生忘記半球包含底面，僅計算曲面 $2\\pi r^2$，導致總表面積為 $3\\pi r^2$ 時與圓柱比值錯誤。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "直徑與半徑混淆",
+    "student_thought_process": "題目說高度等於底面直徑，學生誤讀為高度等於半徑 $r$，直接代入 $h=r$ 計算，導致結果偏差。"
+   }
+  },
+  "scaffolding_hints": [
+   "先列出半球與圓柱各自的總表面積公式，注意半球包含底面圓。",
+   "根據題意，將圓柱的高度 $h$ 用半徑 $r$ 表示出來（高度=直徑）。",
+   "將兩個面積表達式代入比值計算，並化簡分數以找出正確比例。"
+  ],
+  "quick_solution_strategy": "半球表積 $3\\pi r^2$；圓柱 $h=2r$，表積 $6\\pi r^2$；比值 $1:2$"
+ },
+ "skills": {
+  "topic_id": "T-MEN",
+  "knowledge_point_ids": [
+   "K-MEN-01",
+   "K-MEN-02"
+  ],
+  "formula_ids": [
+   "F-MEN-01",
+   "F-MEN-02",
+   "F-MEN-03",
+   "F-MEN-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

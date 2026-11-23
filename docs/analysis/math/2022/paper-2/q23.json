@@ -1,0 +1,86 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 2",
+  "qno": "23",
+  "hash": "#2022P2Q23"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "菱形性質與三角函數",
+   "secondary_topics": [
+    "直角三角形邊角關係",
+    "菱形對角線互相垂直平分"
+   ],
+   "required_formulas": [
+    "$\\sin \\theta = \\frac{對邊}{斜邊}$",
+    "$\\cos \\theta = \\frac{鄰邊}{斜邊}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆三角函數定義",
+    "student_thought_process": "學生可能誤以為 $\\frac{PQ}{ST}$ 直接等於對邊比斜邊，忽略了 $PQ$ 是斜邊而 $ST$ 是鄰邊的一部分，或者錯誤地將比值記為正弦。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆三角函數定義",
+    "student_thought_process": "學生可能正確識別直角三角形，但錯誤地將比值記為餘弦（鄰邊比斜邊），未注意到題目要求的是斜邊與另一段線的比值。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆三角函數定義",
+    "student_thought_process": "學生可能將比值記為餘弦的倒數，但錯誤地選用了 $\\cos \\theta$ 而非 $\\sin \\theta$ 來構建關係，顯示對菱形半部直角三角形的邊長對應關係理解不清。"
+   }
+  },
+  "scaffolding_hints": [
+   "回想菱形的性質：對角線互相垂直平分，將菱形分為四個全等的直角三角形。",
+   "觀察 $\\triangle RST$，其中 $\\angle RTS = 90^\\circ$，標出已知角 $\\theta$ 與相關邊長。",
+   "利用三角函數定義建立 $RT$ 與 $RS$（即 $PQ$）的關係，再結合 $T$ 為中點的特性找出 $ST$"
+  ],
+  "quick_solution_strategy": "在直角 $\\triangle RST$ 中，$\\cos \\theta = \\frac{RT}{RS} = \\frac{RT}{PQ}$。因 $T$ 為中點，$QS=2ST$。需重新審視邊長關係：在 $\\triangle RST$ 中，$\\sin \\theta = \\frac{RT}{RS}$ 不成立，應為 $\\cos \\theta = \\frac{RT}{RS}$? 不對，角 $\\theta$ 在 $R$，對邊是 $ST$，鄰邊是 $RT$。故 $\\tan \\theta = \\frac{ST}{RT}$。題目求 $\\frac{PQ}{ST}$。因 $PQ=RS$，在 $\\triangle RST$ 中 $\\sin \\theta = \\frac{ST}{RS} = \\frac{ST}{PQ}$，故 $\\frac{PQ}{ST} = \\frac{1}{\\sin \\theta}$。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-05"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

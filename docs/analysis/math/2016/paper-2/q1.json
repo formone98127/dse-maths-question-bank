@@ -1,0 +1,86 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2016",
+  "paper": "Paper 2",
+  "qno": "1",
+  "hash": "#2016P2Q1"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "指數運算與冪的性質",
+   "secondary_topics": [
+    "底數分解",
+    "乘法交換律與結合律"
+   ],
+   "required_formulas": [
+    "$a^m \\cdot a^n = a^{m+n}$",
+    "$(ab)^n = a^n b^n$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "指數加總錯誤",
+    "student_thought_process": "學生將 $222+666=888$ 當作結果指數，完全忽略了底數 $8$ 與 $5$ 合併成 $10$ 的步驟。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "底數混淆",
+    "student_thought_process": "學生錯誤地認為 $8 \\times 5 = 40$，並直接將指數 $666$ 應用於此錯誤底數，未進行質因數分解。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "雙重錯誤",
+    "student_thought_process": "學生同時犯了底數混淆（$8 \\times 5 = 40$）與指數加總錯誤（$222+666=888$），導致完全偏離正確路徑。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察數字 $8$、$5$ 與 $10$ 之間的關係，思考如何將底數轉換為 $10$。",
+   "嘗試將大指數 $222$ 表示為 $666$ 的倍數，以便利用冪的分配律 $(ab)^n = a^n b^n$。",
+   "將原式改寫為 $(8^3)^{222} \\cdot 5^{666}$，觀察是否能合併成 $10$ 的冪。"
+  ],
+  "quick_solution_strategy": "將 $8^{222}$ 變換為 $(8^3)^{222}=64^{222}$ 或直接分解 $8=2^3, 5=5$，合併底數得 $(2 \\cdot 5)^{666}$。"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

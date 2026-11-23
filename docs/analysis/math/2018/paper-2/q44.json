@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2018",
+  "paper": "Paper 2",
+  "qno": "44",
+  "hash": "#2018P2Q44"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "標準分與平均數",
+   "secondary_topics": [
+    "變異數",
+    "Z-score 公式"
+   ],
+   "required_formulas": [
+    "$$z = \\frac{x - \\mu}{\\sigma}$$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "變異數誤算",
+    "student_thought_process": "學生可能將分數差直接當作標準分，或錯誤計算變異數為 10（52-46=6?），導致結果偏差。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "變異數低估",
+    "student_thought_process": "學生算出變異數為 10，但未正確代入公式，或誤以為分數差 6 對應標準分 -2.5。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "符號混淆",
+    "student_thought_process": "學生忽略標準分負號意義，誤以為分數低於平均應為正數，或計算時忘記變異數影響。"
+   }
+  },
+  "scaffolding_hints": [
+   "回想標準分的定義：$(x - \\mu) / \\sigma$。",
+   "利用文俊的數據求出變異數 $\\sigma$。",
+   "將素珊的分數代入公式計算其標準分。"
+  ],
+  "quick_solution_strategy": "先由文俊資料求變異數，再代素珊分數算標準分。"
+ },
+ "skills": {
+  "topic_id": "T-STA",
+  "knowledge_point_ids": [
+   "K-STA-01"
+  ],
+  "formula_ids": [
+   "F-STA-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

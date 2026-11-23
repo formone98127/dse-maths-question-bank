@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2015",
+  "paper": "Paper 2",
+  "qno": "33",
+  "hash": "#2015P2Q33"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "二進位數值運算",
+   "secondary_topics": [
+    "指數法則",
+    "二進位權重概念"
+   ],
+   "required_formulas": [
+    "$2^n = \\underbrace{10...0}_{n\\text{個}0}$ (二進位)"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "權重加總錯誤",
+    "student_thought_process": "計算 $2^6+2^{10}$ 時，誤將位元位置錯開或進位處理不當，導致中間連續零的數量錯誤。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "少寫一個零",
+    "student_thought_process": "在將 $2^6$ 與 $2^{10}$ 疊加時，漏掉了 $2^6$ 對應位元後的進位影響，導致結果比正確值多了一個零。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "起始位元錯誤",
+    "student_thought_process": "將 $11$ 轉換為二進位時，誤以為是 $8+2=10_2$ 而非 $1011_2$，導致最高位與次高位排列混亂。"
+   }
+  },
+  "scaffolding_hints": [
+   "將十進位的 $11$、$2^6$、$2^{10}$、$2^{11}$ 分別轉換成二進位數值，觀察它們佔據的位元位置。",
+   "記住二進位中 $2^n$ 對應的是第 $n$ 個零的位置（從右往左數，最低位為第 0 位）。",
+   "將四個二進位數值對齊後進行直式加法運算，注意相同位元相加後的進位規則。"
+  ],
+  "quick_solution_strategy": "先轉 $11$ 為 $1011_2$，再將各次方項寫成對應位元的 $1$，最後疊加求和。"
+ },
+ "skills": {
+  "topic_id": "T-NUM",
+  "knowledge_point_ids": [
+   "K-NUM-01",
+   "K-NUM-02"
+  ],
+  "formula_ids": [
+   "F-NUM-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-COND"
+   },
+   "D": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

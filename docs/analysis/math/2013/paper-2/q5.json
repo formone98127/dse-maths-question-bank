@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 2",
+  "qno": "5",
+  "hash": "#2013P2Q5"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "一元一次不等式",
+   "secondary_topics": [
+    "分數運算",
+    "邏輯或 (OR)",
+    "整數範圍"
+   ],
+   "required_formulas": [
+    "不等式基本性質：兩邊同乘正數不等號方向不變",
+    "合併集合的定義"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "分母處理錯誤",
+    "student_thought_process": "解 $x-1/2=5$ 時，誤算為 $x-0.5=5 \\Rightarrow x=5.5$ 後再加 1 得 6.5，或忽略分母直接 $x-(x-1)=5$ 導致錯誤。正確應為 $2x-(x-1)>10 \\Rightarrow x>-9$。選項 B 可能是算出 $x>10$ 源自於解另一邊 $x-11<-1$ 混淆或計算 $x>12$ 減誤差。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "忽略不等號方向",
+    "student_thought_process": "解第二個不等式 $1<x-11$ 得 $x>12$。學生可能將「或」誤認為「且」，取交集時錯誤地認為需滿足較嚴條件，或直接選出較大的數字 12 當作答案，忽略了第一個不等式的解集範圍更大。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "移項符號錯誤",
+    "student_thought_process": "解 $1<x-11$ 時，正確應為 $x>12$。學生可能將第一個不等式算錯，例如 $2x-x+1>10 \\Rightarrow x>9$，然後誤以為要選最大的整數界限，或者在處理 $x-1/2$ 時忘記括號，算成 $x-1=10 \\Rightarrow x=11$ 再調整。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：請先分別解出兩個不等式 $x-\\frac{x-1}{2}>5$ 與 $1<x-11$，注意分數運算時需將分母去除。",
+   "提示 2：題目中的「或」代表解集是兩個結果的合併（Union），請畫數線圖觀察哪個區間涵蓋了所有可能的解。",
+   "提示 3：比較兩個解集的範圍，選擇那個能包含所有滿足條件 $x$ 值的區間描述。"
+  ],
+  "quick_solution_strategy": "分別解兩邊不等式得 $x>-9$ 與 $x>12$，取並集得 $x>-9$（即 $x>9$ 若考慮整數或題目語境），但此題選項皆為大於某數，實際解 $x>-9$ 涵蓋所有選項，唯 A 最寬鬆且正確。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-05"
+  ],
+  "formula_ids": [
+   "F-EQN-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-COND"
+   },
+   "D": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

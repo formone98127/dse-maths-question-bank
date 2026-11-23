@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2025",
+  "paper": "Paper 2",
+  "qno": "10",
+  "hash": "#2025P2Q10"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "複利計算",
+   "secondary_topics": [
+    "指數運算",
+    "金融數學符號"
+   ],
+   "required_formulas": [
+    "$A = P(1 + \\frac{r}{n})^{nt}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "忽略複利頻率",
+    "student_thought_process": "學生誤以為是單利計算，直接用 $40000 \\times (1 + 0.03 \\times 5)$ 得出結果約 $46000$。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "結算週期錯誤",
+    "student_thought_process": "學生正確使用複利公式，但將 $n$ 設為 $1$（年結）而非 $2$（半年結），導致指數與底數計算偏差。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "四捨五入誤差或計算失誤",
+    "student_thought_process": "學生可能正確列出公式，但在計算 $(1.015)^{10}$ 時發生手算錯誤或使用計算機輸入錯誤。"
+   }
+  },
+  "scaffolding_hints": [
+   "複利計算的關鍵在於確定每期的利率與總期數，注意題目中的「半年一結」。",
+   "年利率需除以每年結算次數 $n$ 得到每期利率，總期數為年數乘以 $n$。",
+   "將數值代入公式 $A = P(1 + \\frac{r}{n})^{nt}$ 進行指數運算後，記得四捨五入至最接近的元。"
+  ],
+  "quick_solution_strategy": "識別 $P=40000, r=0.03, n=2, t=5$，代入公式計算 $(1+0.015)^{10}$。"
+ },
+ "skills": {
+  "topic_id": "T-PCT",
+  "knowledge_point_ids": [
+   "K-PCT-03"
+  ],
+  "formula_ids": [
+   "F-PCT-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-PCT-03",
+    "formula_id": "F-PCT-03",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-PCT-03",
+    "formula_id": "F-PCT-03",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-PCT-03",
+    "formula_id": "F-PCT-03",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

@@ -1,0 +1,91 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2015",
+  "paper": "Paper 2",
+  "qno": "5",
+  "hash": "#2015P2Q5"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "多項式恆等式",
+   "secondary_topics": [
+    "一元二次方程式展開",
+    "係數比較法"
+   ],
+   "required_formulas": [
+    "(x+a)(x+b) = x^2 + (a+b)x + ab"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略常數項偏移",
+    "student_thought_process": "學生可能直接將 (x+4)(x-m) 展開後，錯誤地認為 n 等於 -m*4 而忽略 +6，計算得 -8。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "符號處理錯誤",
+    "student_thought_process": "學生正確展開右邊，但在比較常數項時，算錯 -4m + 6 = n，將 m=2 代入時誤算為 2。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "混淆題目變數",
+    "student_thought_process": "學生可能將題目中的 n 與展開式中的 -m 混淆，或者誤以為 n 就是等式右邊的 +6。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：將等式右側的 $(x+4)(x-m)$ 先展開成 $x^2 + (4-m)x - 4m$。",
+   "提示 2：利用多項式恆等的定義，左右兩邊對應次數的係數必須相等。",
+   "提示 3：比較一次項係數求出 $m$ 的值後，再代入常數項等式求解 $n$"
+  ],
+  "quick_solution_strategy": "展開右側多項式，比較一次項係數得 $m=2$，再比較常數項得 $n=-4(2)+6=-2$"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-01",
+   "K-POL-02"
+  ],
+  "formula_ids": [
+   "F-POL-01",
+   "F-POL-02",
+   "F-POL-03",
+   "F-POL-06"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

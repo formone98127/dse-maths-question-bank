@@ -1,0 +1,92 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2020",
+  "paper": "Paper 2",
+  "qno": "7",
+  "hash": "#2020P2Q7"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "代數展開與恆等式",
+   "secondary_topics": [
+    "完全平方公式",
+    "多項式係數比較"
+   ],
+   "required_formulas": [
+    "(a+b)^2 = a^2 + 2ab + b^2",
+    "(x+a)(x+b) = x^2 + (a+b)x + ab"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "展開符號錯誤",
+    "student_thought_process": "將 (x+4)^2 展開時，誤算為 x^2 + 8x - 16。接著與左邊 x^2+(h+6)x+6h 比較，解出 k=-28。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "忽略常數項符號",
+    "student_thought_process": "正確展開 (x+4)^2 得 x^2+8x+16，但計算 k 時誤將 6h-16 算成 6h+16-k=0，導致 k=32 或類似錯誤，選錯。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "混淆題目條件",
+    "student_thought_process": "誤以為 h 是未知數需同時解出，或將 (x+6) 看錯為 (x-6)，導致常數項計算錯誤選 D。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：恆等式兩邊展開後，對應次數的係數必須完全相等。",
+   "提示 2：先將右邊的 (x+4)^2 利用完全平方公式展開成標準形式 x^2 + bx + c。",
+   "提示 3：比較兩邊常數項，建立關於 k 與 h 的方程，再比較一次項係數找出 h 值代入求解。"
+  ],
+  "quick_solution_strategy": "展開兩邊多項式，比較一次項係數求 h，再代回常數項求 k。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-01",
+   "K-POL-02"
+  ],
+  "formula_ids": [
+   "F-POL-01",
+   "F-POL-02",
+   "F-POL-03",
+   "F-POL-06"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

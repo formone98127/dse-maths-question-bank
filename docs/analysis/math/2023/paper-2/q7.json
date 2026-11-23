@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2023",
+  "paper": "Paper 2",
+  "qno": "7",
+  "hash": "#2023P2Q7"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "有效數字與誤差範圍",
+   "secondary_topics": [
+    "四捨五入規則",
+    "不等式表示法"
+   ],
+   "required_formulas": [
+    "若 $x$ 準確至第 $n$ 位小數，則下界為 $x - 0.5 \\times 10^{-n}$，上界為 $x + 0.5 \\times 10^{-n}$"
+   ],
+   "bloom_taxonomy_level": "理解",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤差範圍計算錯誤",
+    "student_thought_process": "學生直接將有效數字減加 0.1，忽略了四捨五入的精度是半個單位（0.05），導致範圍過大。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤差範圍計算錯誤",
+    "student_thought_process": "同樣犯了將誤差視為 0.1 的錯誤，且不等號方向弄反，認為小於 73.8 的部分不包含下界。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "不等號方向錯誤",
+    "student_thought_process": "學生正確計算出 73.75 與 73.85，但混淆了四捨五入的含義，誤以為小於原值才符合條件。"
+   }
+  },
+  "scaffolding_hints": [
+   "當一個數值被四捨五入到某一位時，實際值必須落在該位數前後各半個單位的區間內。",
+   "對於 $73.8$（三位有效數字），最後一位是百分位，因此誤差範圍應以 $0.05$ 為單位計算。",
+   "考慮四捨五入的定義：若小數點後第三位大於等於 5 則進位，小於 5 則捨去，推導出上下界的不等式方向。"
+  ],
+  "quick_solution_strategy": "將 $73.8$ 視為 $73.80$，誤差為 $\\pm 0.05$，故範圍為 $[73.75, 73.85)$。"
+ },
+ "skills": {
+  "topic_id": "T-PCT",
+  "knowledge_point_ids": [
+   "K-PCT-01",
+   "K-PCT-02"
+  ],
+  "formula_ids": [
+   "F-PCT-01",
+   "F-PCT-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

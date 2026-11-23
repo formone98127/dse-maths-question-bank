@@ -1,0 +1,92 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 2",
+  "qno": "11",
+  "hash": "#2017P2Q11"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "比例尺與面積換算",
+   "secondary_topics": [
+    "單位轉換 (cm² 轉 m²)",
+    "科學記號運算"
+   ],
+   "required_formulas": [
+    "實際面積 = 地圖面積 × (比例尺分母)²",
+    "1 m² = 10,000 cm²"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "忘記平方比例尺",
+    "student_thought_process": "學生只將比例尺分母 20000 乘以地圖面積 4，得到 800000 cm²，再換算成 m² 時忽略單位換算係數或計算錯誤，導致結果偏小。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "單位換算錯誤",
+    "student_thought_process": "學生正確算出實際面積為 160,000,000 cm²，但在轉換成 m² 時，錯誤地除以 100 而非 10000，導致結果放大了 100 倍。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆長度與面積比例",
+    "student_thought_process": "學生誤以為比例尺是線性關係，直接將 4 cm² 乘以 20000 得到 80000 cm²，再錯誤地認為需要進一步放大或計算混亂，完全忽略面積需平方。"
+   }
+  },
+  "scaffolding_hints": [
+   "回想比例尺 1:20000 代表什麼意義？這是長度比還是面積比？",
+   "若長度放大 20000 倍，面積會放大多少倍？請記住平方關係。",
+   "計算出以 cm² 為單位的實際面積後，記得將 cm² 轉換為 m²（1 m = 100 cm）。"
+  ],
+  "quick_solution_strategy": "先將地圖面積乘以比例尺分母的平方 (20000²)，最後除以 10000 換算單位。"
+ },
+ "skills": {
+  "topic_id": "T-MEN",
+  "knowledge_point_ids": [
+   "K-MEN-01",
+   "K-MEN-02"
+  ],
+  "formula_ids": [
+   "F-MEN-01",
+   "F-MEN-02",
+   "F-MEN-03",
+   "F-MEN-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

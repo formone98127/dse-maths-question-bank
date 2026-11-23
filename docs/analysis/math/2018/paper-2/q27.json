@@ -1,0 +1,92 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2018",
+  "paper": "Paper 2",
+  "qno": "27",
+  "hash": "#2018P2Q27"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓的標準式與一般式轉換",
+   "secondary_topics": [
+    "圓心座標公式",
+    "半徑計算公式",
+    "圓周長公式"
+   ],
+   "required_formulas": [
+    "$x^2+y^2+Dx+Ey+F=0 \\Rightarrow (x-h)^2+(y-k)^2=r^2$",
+    "$r = \\sqrt{h^2+k^2-F}$",
+    "$C = 2\\pi r$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "點與圓位置關係誤判",
+    "student_thought_process": "學生未將原點座標代入圓方程左側，或算出 $F > 0$ 後誤以為原点在圓外。正確應為 $5(0)^2+5(0)^2-30(0)+10(0)+6 = 6 > 0$，因 $r^2=4$，故原點在圓外。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "象限判斷錯誤",
+    "student_thought_process": "學生算出圓心 $(3, -1)$ 位於第四象限，卻誤選第二象限。或學生忽略半徑大小，以為整個圓都在某象限，未考慮圓與軸的交點。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "配方係數計算錯誤",
+    "student_thought_process": "學生在配方時，將 $-30x$ 視為 $(x-15)^2$ 展開後的項，忘記除以 $5$ 的係數。正確應為 $5(x^2-6x) \\Rightarrow (x-3)^2$，故圓心為 $(3, -1)$。"
+   }
+  },
+  "scaffolding_hints": [
+   "將圓的一般式方程 $Ax^2+Ay^2+Bx+Cy+D=0$ 兩邊同除以 $A$ 以化為標準形式。",
+   "利用配方法將 $x^2-6x$ 與 $y^2+2y$ 分別補全平方，找出圓心 $(h,k)$ 與半徑平方 $r^2$。",
+   "計算出半徑後，使用 $C=2\\pi r$ 估算圓周長是否小於 $20$"
+  ],
+  "quick_solution_strategy": "配方得圓心 $(3,-1)$、半徑 $r=2$，故圓周 $4\\pi \\approx 12.56 < 20$"
+ },
+ "skills": {
+  "topic_id": "T-CIR",
+  "knowledge_point_ids": [
+   "K-CIR-01",
+   "K-CIR-02"
+  ],
+  "formula_ids": [
+   "F-CIR-01",
+   "F-CIR-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2018",
+  "paper": "Paper 2",
+  "qno": "18",
+  "hash": "#2018P2Q18"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "菱形性質與全等三角形",
+   "secondary_topics": [
+    "等腰三角形角度計算",
+    "三角形內角和定理"
+   ],
+   "required_formulas": [
+    "菱形對角線平分內角且垂直",
+    "全等三角形判定 (SAS)",
+    "三角形內角和 $180^\\circ$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "忽略菱形對角線平分性質導致角度算錯",
+    "student_thought_process": "學生可能直接將 $110^\\circ$ 除以 2 得到 $55^\\circ$，然後誤以為 $\\angle BCE = 55^\\circ$。接著在 $\\triangle BEC$ 中用 $180-90-55=35$ (假設垂直) 或單純加法錯誤，導致結果偏離。若算出 $\\angle BCD=70^\\circ$ 後未正確平分，會誤選 A。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆 $\\angle ECF$ 與菱形對角線關係，誤判 $EC=FC$",
+    "student_thought_process": "學生可能認為 $\\triangle AEF$ 是等腰三角形後，直接推導 $\\angle AFE = \\angle AEF$。但關鍵在於證明 $\\triangle CBE \\cong \\triangle CDF$ 時，若未意識到 $CB=CD$ 且 $BE=DF$ (因 $AB-AD$ 剩餘部分相等)，會導致角度計算錯誤，選出中間值如 $80^\\circ$。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "角度加法或減法順序錯誤",
+    "student_thought_process": "學生算出 $\\angle BCD = 70^\\circ$，並正確知道 $AC$ 平分它得到 $35^\\circ$。但在計算 $\\angle BCE$ 時，可能誤將 $\\angle ECF=42^\\circ$ 加到 $35^\\circ$ 上得到 $77^\\circ$ (接近但非選項)，或是用 $180 - 42 - 63$ 等錯誤組合。另一種可能是算出 $\\angle A = 110^\\circ$，$\\triangle AEF$ 底角為 $35^\\circ$，然後誤以為 $\\angle CEB = 180-35=145$ 再除以 2 等複雜錯誤步驟導致 $84^\\circ$"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：在菱形 $ABCD$ 中，連接對角線 $AC$。根據菱形性質，$\\triangle ABC \\cong \\triangle ADC$，且 $AC$ 平分 $\\angle BAD$ 和 $\\angle BCD$。請先計算 $\\angle BCA$ 的度數。",
+   "提示 2：觀察 $\\triangle AEF$。已知 $AE=AF$ 且 $\\angle EAF = 110^\\circ$，這是一個等腰三角形。請計算其底角 $\\angle AFE$ 和 $\\angle AEF$ 的度數。",
+   "提示 3：考慮 $\\triangle CBE$ 與 $\\triangle CDF$。證明它們全等 (SAS)。利用全等性質得出 $\\angle BCE = \\angle DCF$，再結合已知條件 $\\angle ECF = 42^\\circ$ 求解 $\\angle BEC$"
+  ],
+  "quick_solution_strategy": "證 $\\triangle CBE \\cong \\triangle CDF \\Rightarrow \\angle BCE=\\angle DCF=x$。由 $2x+42=70 \\Rightarrow x=14$。在直角 $\\triangle CBE$ 中，$\\angle BEC=90-14=76$"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-05"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

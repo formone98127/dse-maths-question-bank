@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2019",
+  "paper": "Paper 2",
+  "qno": "5",
+  "hash": "#2019P2Q5"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "一元一次方程式變形",
+   "secondary_topics": [
+    "分數運算",
+    "移項合併同類項"
+   ],
+   "required_formulas": [
+    "$a - \\frac{b}{c} = d \\Rightarrow a-d = \\frac{b}{c}$",
+    "$\\frac{x}{y} = z \\Rightarrow x = zy$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "分母符號處理錯誤",
+    "student_thought_process": "移項後將 $3-h$ 視為 $(3-h)$，但在乘回時忘記了 $h$ 的負號應變為正，導致分子最後一項變成 $-17$"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "分母符號處理錯誤",
+    "student_thought_process": "移項後將 $3-h$ 視為 $(3+h)$，在乘回時完全搞錯 $h$ 的符號方向，導致分母變成加號"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "分母符號處理錯誤",
+    "student_thought_process": "同時犯下分母與分子符號錯誤，既將 $3-h$ 視為 $(3+h)$ 又算錯分子常數項"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：首先嘗試將等式左邊的 $h$ 移到右邊，或是將分數項單獨處理。",
+   "提示 2：觀察分母 $(k+4)$，若要解出 $k$，下一步應消除分母，兩邊同時乘以 $(k+4)$。",
+   "提示 3：整理後的式子形如 $A = \\frac{B}{C}$，請將 $C$ 乘到左邊，並小心處理 $h$ 的符號變化。"
+  ],
+  "quick_solution_strategy": "移項得 $k+4=\\frac{5}{3-h}$，再乘分母整理分子即得答案。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2016",
+  "paper": "Paper 2",
+  "qno": "12",
+  "hash": "#2016P2Q12"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "變量關係與百分比變化",
+   "secondary_topics": [
+    "正變與反變定義",
+    "複合百分比計算"
+   ],
+   "required_formulas": [
+    "$z = k \\frac{\\sqrt{x}}{y}$ (其中 $k$ 為常數)",
+    "新值 = 原值 $\\times$ (1 + 變化率)"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "錯誤的複合百分比加減",
+    "student_thought_process": "學生可能誤以為 $\\sqrt{x}$ 減少 $36\\%$ 與 $y$ 增加 $60\\%$ 的效果直接相減或簡單平均，未考慮分母變化的放大效應，導致算出錯誤的淨變化率。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "忽略平方根係數",
+    "student_thought_process": "學生可能忘記了 $\\sqrt{x}$ 的係數影響，直接將 $x$ 減少 $36\\%$ 視為 $z$ 減少 $36\\%$，再與 $y$ 的增加進行錯誤運算，得到此中間值。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆正變反變方向",
+    "student_thought_process": "學生可能誤認為 $x$ 減少會導致 $z$ 增加，或者在處理分母 $y$ 增加時，錯誤地將其視為減法而非除法效應，從而得出減少但數值錯誤的結果。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "第一步：根據題目描述，寫出 $z$ 關於 $x$ 和 $y$ 的數學關係式。",
+   "第二步：計算 $x$ 減少 $36\\%$ 後，其平方根 $\\sqrt{x}$ 具體變成了原來的多少倍（提示：設原值為 $100$）。",
+   "第三步：將 $y$ 的新值與 $\\sqrt{x}$ 的新值代入關係式，計算新的 $z$ 是原 $z$ 的幾分之幾。"
+  ],
+  "quick_solution_strategy": "設 $z = k\\frac{\\sqrt{x}}{y}$；新 $x=0.64x \\Rightarrow$ 新 $\\sqrt{x}=0.8\\sqrt{x}$；新 $y=1.6y$；代入得新 $z=0.5z$。"
+ },
+ "skills": {
+  "topic_id": "T-VAR",
+  "knowledge_point_ids": [
+   "K-VAR-01",
+   "K-VAR-02"
+  ],
+  "formula_ids": [
+   "F-VAR-01",
+   "F-VAR-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

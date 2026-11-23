@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 2",
+  "qno": "17",
+  "hash": "#2017P2Q17"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "幾何相似三角形",
+   "secondary_topics": [
+    "等邊三角形性質",
+    "角度計算",
+    "比例關係"
+   ],
+   "required_formulas": [
+    "\\triangle ADE \\sim \\triangle ECD (AA Similarity)",
+    "\\frac{AD}{EC} = \\frac{AE}{ED} = \\frac{DE}{CD}"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 120
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "比例算錯",
+    "student_thought_process": "學生可能正確建立相似比，但在代入數值時計算錯誤。例如將 AD=4 與 EC=x 的關係搞混，或解方程 x^2 - 16x + 36 = 0 時解出錯誤根 9（誤判另一根）。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略相似條件",
+    "student_thought_process": "學生可能嘗試使用餘弦定理直接解三角形 CDE，但忽略了題目給出的 60 度角與等邊三角形內角的關係，導致無法建立有效方程。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "代入錯誤長度",
+    "student_thought_process": "學生可能將 DE 的長度算錯，或者在相似比 \\frac{AD}{EC} 中誤以為 AD 對應的是 CD 而非 EC，導致得出 12 這個中間數值。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "觀察 \\triangle ADE 與 \\triangle ECD 中，\\angle A = \\angle C = 60^\\circ。思考是否有另一組相等的角能證明兩者相似？",
+   "利用等邊三角形性質求出 \\angle BDE 或 \\angle AED 的表達式，發現 \\angle ADE + \\angle EDC + \\angle BDE = 180^\\circ 的關係。",
+   "確認相似比為 \\frac{AD}{EC} = \\frac{AE}{ED} = \\frac{DE}{CD}，並注意到 AE = 12, CD = 16-x (設 CE=x)，建立關於 x 的二次方程求解。"
+  ],
+  "quick_solution_strategy": "證 \\triangle ADE \\sim \\triangle ECD，得 \\frac{AD}{EC}=\\frac{AE}{ED}=\\frac{DE}{CD}，代入數值解方程求 CE。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-05"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

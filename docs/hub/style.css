@@ -878,3 +878,12 @@ a.brand:hover { opacity: .85; }
 /* 靜態目錄卡內的連結：沿用卡片顏色，不要藍字底線 */
 .paper-row .paper-main { color: inherit; text-decoration: none; }
 .paper-row .paper-main:hover { color: inherit; }
+
+.ext-index{margin:0 0 18px;padding:16px 18px;background:#141b28;border:1px solid #2b3446;border-radius:14px}
+.ext-index h2{font-size:15px;margin:0 0 12px;color:#e8edf6}
+.ext-group{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:10px 0}
+.ext-label{font-size:13px;color:#9aa8bf;min-width:190px}
+.ext-label em{font-style:normal;color:#ffd166;margin-left:6px;font-size:12px}
+.ext-list{display:flex;flex-wrap:wrap;gap:6px;list-style:none;margin:0;padding:0}
+.ext-list a{display:inline-block;padding:5px 10px;border:1px solid #2b3446;border-radius:8px;color:#e8edf6;text-decoration:none;font-size:13px}
+.ext-list a:hover{border-color:#ffd166;color:#ffd166}

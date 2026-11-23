@@ -53,5 +53,36 @@
    "Hint 3 破題：注意「7」行中，只有最後三個數字（6, 7, 9）代表年齡 76, 77, 79 是符合條件的；而 73, 74, 74 是不符合的。請仔細區分邊界值。"
   ],
   "quick_solution_strategy": "數出總人數 25，找出>=74 的人數為 5（76,77,79,80?,91? 需重檢：7行有3個符合，8行0個，9行1個。總共 3+0+1=4? 等等，讓我重新計算題目數據。"
+ },
+ "skills": {
+  "topic_id": "T-PROB",
+  "knowledge_point_ids": [
+   "K-PROB-01",
+   "K-CHR-02"
+  ],
+  "formula_ids": [
+   "F-PROB-01"
+  ],
+  "ability_ids": [
+   "A-GRAPH",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-CHR-02",
+    "formula_id": null,
+    "ability_id": "A-GRAPH"
+   },
+   "C": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-COND"
+   }
+  }
  }
 }

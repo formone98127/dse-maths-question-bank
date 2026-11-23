@@ -55,5 +55,37 @@
    "Hint 3 破題: 關鍵在於精確計算 \\sum f_i x_i 與 \\sum f_i (x_i - \\bar{x})^2 的加權總和，注意 \\bar{x} = 1.2 是精確值而非近似值，代入後再求開根號即可。"
   ],
   "quick_solution_strategy": "先算平均數 \\bar{x}=1.2，再用加權公式計算離差平方和，最後除以總人數 105 並開根號，注意中間步驟勿四捨五入。"
+ },
+ "skills": {
+  "topic_id": "T-STA",
+  "knowledge_point_ids": [
+   "K-STA-05",
+   "K-STA-01"
+  ],
+  "formula_ids": [
+   "F-STA-02",
+   "F-STA-04"
+  ],
+  "ability_ids": [
+   "A-CALC",
+   "A-CHAIN"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-02",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-STA-05",
+    "formula_id": "F-STA-04",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-STA-05",
+    "formula_id": "F-STA-04",
+    "ability_id": "A-CHAIN"
+   }
+  }
  }
 }

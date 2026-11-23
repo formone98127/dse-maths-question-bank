@@ -55,5 +55,36 @@
    "Hint 3 破題：在 $\\triangle AMD$ 中，已知三邊長後，請使用餘弦定理 $\\cos \\theta = \\frac{AM^2 + DM^2 - AD^2}{2 \\cdot AM \\cdot DM}$ 計算角度的餘弦值，最後取反餘弦函數得到角度。"
   ],
   "quick_solution_strategy": "取 $BC$ 中點連兩高構建直角三角形截面，利用餘弦定理求該截面頂角。"
+ },
+ "skills": {
+  "topic_id": "T-MEN",
+  "knowledge_point_ids": [
+   "K-MEN-05"
+  ],
+  "formula_ids": [
+   "F-MEN-05",
+   "F-TRI-04"
+  ],
+  "ability_ids": [
+   "A-CHAIN",
+   "A-ALG"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-MEN-05",
+    "formula_id": "F-MEN-05",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-MEN-05",
+    "formula_id": "F-TRI-04",
+    "ability_id": "A-CHAIN"
+   },
+   "C": {
+    "knowledge_point_id": "K-MEN-05",
+    "formula_id": "F-MEN-05",
+    "ability_id": "A-COND"
+   }
+  }
  }
 }

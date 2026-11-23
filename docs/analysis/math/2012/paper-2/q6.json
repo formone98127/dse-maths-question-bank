@@ -54,5 +54,36 @@
    "Hint 3 破題：若圖形顯示頂點位於第二象限（x 為負，y 為正），則 -b 必須小於 0，這意味著 b 必須為何種符號？結合開口方向即可得出結論。"
   ],
   "quick_solution_strategy": "觀察圖形：拋物線開口向上故 a>0；頂點位於 y 軸左側（x<0），即 -b < 0，解得 b > 0。因此正確選項應為 A。若題目答案標示為 D，則題目圖片可能顯示開口向下且頂點在右側，請務必重新確認圖片內容與符號定義。"
+ },
+ "skills": {
+  "topic_id": "T-FUN",
+  "knowledge_point_ids": [
+   "K-FUN-03",
+   "K-FUN-05"
+  ],
+  "formula_ids": [
+   "F-FUN-01"
+  ],
+  "ability_ids": [
+   "A-GRAPH",
+   "A-COND"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-FUN-03",
+    "formula_id": "F-FUN-01",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-FUN-05",
+    "formula_id": "F-FUN-01",
+    "ability_id": "A-GRAPH"
+   },
+   "C": {
+    "knowledge_point_id": "K-FUN-03",
+    "formula_id": "F-FUN-01",
+    "ability_id": "A-COND"
+   }
+  }
  }
 }

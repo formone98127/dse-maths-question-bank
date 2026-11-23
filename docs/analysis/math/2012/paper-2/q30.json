@@ -54,5 +54,36 @@
    "Hint 3 破題：結合中位數定義（第 6、7 項平均為 14）推導出 m 的下界，再代入平均值公式驗證 n 的上界。"
   ],
   "quick_solution_strategy": "先由平均值算出 m+n=30，再由中位數條件得 m≥14，進而推導 n≤16。"
+ },
+ "skills": {
+  "topic_id": "T-STA",
+  "knowledge_point_ids": [
+   "K-STA-01",
+   "K-STA-02"
+  ],
+  "formula_ids": [
+   "F-STA-01"
+  ],
+  "ability_ids": [
+   "A-CALC",
+   "A-COND"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-STA-02",
+    "formula_id": null,
+    "ability_id": "A-COND"
+   },
+   "C": {
+    "knowledge_point_id": "K-STA-02",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   }
+  }
  }
 }

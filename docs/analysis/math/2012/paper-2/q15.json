@@ -55,5 +55,35 @@
    "Hint 3 破題：將兩個三角形的面積分別計算後相加，注意確認高的正確位置與數值是否對應正確的底邊。"
   ],
   "quick_solution_strategy": "將四邊形視為兩個三角形，分別計算其面積（$\\frac{1}{2} \\times 16 \\times 9$ 與 $\\frac{1}{2} \\times 12 \\times 8$），再相加即得總面積。"
+ },
+ "skills": {
+  "topic_id": "T-MEN",
+  "knowledge_point_ids": [
+   "K-MEN-01"
+  ],
+  "formula_ids": [
+   "F-MEN-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-COND"
+   }
+  }
  }
 }

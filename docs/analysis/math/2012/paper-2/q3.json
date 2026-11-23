@@ -53,5 +53,36 @@
    "Hint 3 破題：找到 $q=-2$ 後，將其代入常數項關係式 $p = 2q + 10$ 即可求得正確答案，注意正負號運算。"
   ],
   "quick_solution_strategy": "比較一次項係數得 $q=-2$，再代入常數項關係 $p=2(-2)+10=6$"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-01",
+   "K-POL-06"
+  ],
+  "formula_ids": [
+   "F-POL-06"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-06",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-POL-06",
+    "formula_id": "F-POL-06",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-06",
+    "ability_id": "A-CALC"
+   }
+  }
  }
 }

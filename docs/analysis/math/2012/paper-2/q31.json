@@ -55,5 +55,35 @@
    "Hint 3 破題：計算出 $4a^4b^5c^6 \\times ab^2$ 後，再除以 $(2a^2b^4c) \\times (4a^4b^2c^6)$，觀察各變數指數的變化即可得出答案。"
   ],
   "quick_solution_strategy": "利用公式 $LCM \\times HCF = P_1 \\times P_2 \\times P_3$，代入數值化簡求 $P_3$"
+ },
+ "skills": {
+  "topic_id": "T-NUM",
+  "knowledge_point_ids": [
+   "K-NUM-02"
+  ],
+  "formula_ids": [
+   "F-NUM-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-NUM-02",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-NUM-02",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-NUM-02",
+    "formula_id": null,
+    "ability_id": "A-COND"
+   }
+  }
  }
 }

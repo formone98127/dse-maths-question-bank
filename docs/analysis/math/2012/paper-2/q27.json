@@ -53,5 +53,36 @@
    "Hint 3 破題：將「有利情況數」除以「總情況數」即可得到機率。注意化簡分數時不要粗心！"
   ],
   "quick_solution_strategy": "百位 9 選、十位 10 選、個位 2 選（0 或 5）；總數 $9\\times10\\times10=900$，有利 $9\\times10\\times2=180$，機率 $180/900=1/5$"
+ },
+ "skills": {
+  "topic_id": "T-PROB",
+  "knowledge_point_ids": [
+   "K-PROB-01",
+   "K-PROB-05"
+  ],
+  "formula_ids": [
+   "F-PROB-01"
+  ],
+  "ability_ids": [
+   "A-COND",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-COND"
+   },
+   "C": {
+    "knowledge_point_id": "K-PROB-05",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-ALG"
+   }
+  }
  }
 }

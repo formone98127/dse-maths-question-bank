@@ -54,5 +54,35 @@
    "Hint 3 破題：將兩個解集 $x < -3$ 與 $x < 4$ 在數軸上畫出來，觀察哪一個區間涵蓋了所有滿足條件的點。"
   ],
   "quick_solution_strategy": "分別解出兩邊不等式得 $x<-3$ 與 $x<4$；因是 '或' 關係，取兩者並集即為 $x<4$"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-05"
+  ],
+  "formula_ids": [
+   "F-EQN-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-ELIM"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-ELIM"
+   },
+   "D": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-ELIM"
+   }
+  }
  }
 }

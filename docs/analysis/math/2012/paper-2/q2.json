@@ -54,5 +54,37 @@
    "Hint 3 破題：當你發現 $x^2$ 和 $y^2$ 的係數互相抵消後，剩下的關鍵在於計算兩個交叉項 $2(4x)(y)$ 與 $-2(4x)(y)$ 相減後的總合。"
   ],
   "quick_solution_strategy": "利用平方差公式 $(a+b)^2-(a-b)^2=4ab$，此處 $a=4x, b=y$，故結果為 $4(4x)(y)=16xy$。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-01",
+   "K-POL-02"
+  ],
+  "formula_ids": [
+   "F-POL-01",
+   "F-POL-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-POL-02",
+    "formula_id": "F-POL-03",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CALC"
+   }
+  }
  }
 }

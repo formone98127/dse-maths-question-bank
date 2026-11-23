@@ -510,7 +510,7 @@ a:hover {{ text-decoration: underline; }}
       }},
       {{
         selector: 'node.unlocked',
-        style: {{ 'background-image': 'assets/node-unlocked.png' }}
+        style: {{ 'background-image': 'assets/node-unlocked.svg' }}
       }},
       {{
         selector: 'node.ready',
@@ -527,9 +527,9 @@ a:hover {{ text-decoration: underline; }}
       {{
         selector: 'node:selected',
         style: {{
-          'background-image': 'assets/node-active.png',
-          'width': 76,
-          'height': 76,
+          'background-image': 'assets/node-active.svg',
+          'width': 72,
+          'height': 72,
           'color': '#ffe9a8',
           'opacity': 1,
         }}

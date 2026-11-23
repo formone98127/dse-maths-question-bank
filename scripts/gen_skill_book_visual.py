@@ -43,6 +43,7 @@ window.MathJax = {{
 <script src="vendor/elk.bundled.js"></script>
 <script src="vendor/cytoscape-elk.js"></script>
 <script src="vendor/pixi.min.js"></script>
+<script src="assets/math_symbols.js"></script>
 <style>
 :root {{
   --ink: #f4e8c8;
@@ -396,9 +397,10 @@ a:hover {{ text-decoration: underline; }}
         <h3>${{f.name}}</h3>
         <div class="latex">$$${{f.latex}}$$</div>
       </div>`).join('') || `<div class="empty">呢格未掛公式</div>`;
+    const symbol = symbolFor(topic, kp);
     box.innerHTML = `
       <div class="kp-card ${{unlocked ? '' : 'locked'}}">
-        <div class="id">${{kp.id}}</div>
+        <div class="id">${{kp.id}} · 符號 ${{symbol}}</div>
         <h3>${{kp.name}}</h3>
         <span class="badge ${{unlocked ? 'on' : 'off'}}">${{unlocked ? '已解鎖' : (ready ? '可解鎖' : '未解鎖')}}</span>
         <div class="prereq">先要識：${{pre}}</div>
@@ -461,19 +463,70 @@ a:hover {{ text-decoration: underline; }}
     }}
   }}
 
+  function symbolFor(topic, kp) {{
+    const pack = window.MATH_SKILL_SYMBOLS || {{ topic: {{}}, kp: {{}} }};
+    return (pack.kp && pack.kp[kp.id]) || (pack.topic && pack.topic[topic.id]) || '∑';
+  }}
+
+  function escapeXml(s) {{
+    return String(s)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }}
+
+  function nodeIconDataUri(symbol, state) {{
+    const sym = escapeXml(symbol);
+    const long = String(symbol).length >= 4;
+    const fontSize = long ? 18 : (String(symbol).length >= 3 ? 22 : 28);
+    let bgOuter, stroke, ring, inner, ink;
+    if (state === 'active') {{
+      bgOuter = '#071410'; stroke = '#9dffd0'; ring = '#2f9b78'; inner = '#0b221b'; ink = '#e9fff5';
+    }} else if (state === 'locked' || state === 'ready') {{
+      bgOuter = '#0e1014'; stroke = state === 'ready' ? '#e2c36b' : '#5a6270';
+      ring = '#3a404a'; inner = '#151820'; ink = '#c9d0dc';
+    }} else {{
+      bgOuter = '#1a1208'; stroke = '#f0d278'; ring = '#d4a017'; inner = '#24180c'; ink = '#ffe9a8';
+    }}
+    let center;
+    if (state === 'locked' || state === 'ready') {{
+      center = `
+        <rect x="50" y="60" width="28" height="22" rx="3" fill="#c9d0dc"/>
+        <path d="M54 60 V52 a10 10 0 0 1 20 0 v8" fill="none" stroke="#c9d0dc" stroke-width="5" stroke-linecap="round"/>
+        <circle cx="64" cy="70" r="3" fill="#2a2e36"/>`;
+    }} else {{
+      center = `<text x="64" y="70" text-anchor="middle" font-size="${{fontSize}}"
+        font-family="Georgia, 'Times New Roman', 'Noto Serif TC', serif"
+        font-weight="700" fill="${{ink}}">${{sym}}</text>`;
+    }}
+    const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+      <circle cx="64" cy="64" r="58" fill="${{bgOuter}}" stroke="${{stroke}}" stroke-width="4"/>
+      <circle cx="64" cy="64" r="48" fill="${{ring}}" stroke="${{ink}}" stroke-width="2" opacity="0.95"/>
+      <circle cx="64" cy="64" r="36" fill="${{inner}}"/>
+      ${{center}}
+    </svg>`;
+    return 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
+  }}
+
   function buildElements(topic) {{
     const nodes = [];
     const edges = [];
     (topic.knowledge_points || []).forEach(k => {{
       const unlocked = !!unlocks[k.id];
+      const ready = canUnlock(k);
+      const state = unlocked ? 'unlocked' : (ready ? 'ready' : 'locked');
+      const symbol = symbolFor(topic, k);
       nodes.push({{
         data: {{
           id: k.id,
           label: k.name,
+          symbol,
           unlocked,
-          ready: canUnlock(k),
+          ready,
+          icon: nodeIconDataUri(symbol, state),
         }},
-        classes: unlocked ? 'unlocked' : (canUnlock(k) ? 'ready' : 'locked'),
+        classes: state,
       }});
       (k.prereqs || []).forEach(p => {{
         edges.push({{ data: {{ id: p + '->' + k.id, source: p, target: k.id }} }});
@@ -487,13 +540,14 @@ a:hover {{ text-decoration: underline; }}
       {{
         selector: 'node',
         style: {{
+          'background-image': 'data(icon)',
           'background-fit': 'cover',
           'background-clip': 'none',
           'background-opacity': 1,
           'background-color': 'transparent',
           'border-width': 0,
-          'width': 70,
-          'height': 70,
+          'width': 72,
+          'height': 72,
           'label': 'data(label)',
           'color': '#f4e8c8',
           'text-valign': 'bottom',
@@ -509,27 +563,14 @@ a:hover {{ text-decoration: underline; }}
         }}
       }},
       {{
-        selector: 'node.unlocked',
-        style: {{ 'background-image': 'assets/node-unlocked.png' }}
-      }},
-      {{
-        selector: 'node.ready',
-        style: {{
-          'background-image': 'assets/node-locked.svg',
-          'border-width': 2,
-          'border-color': '#e2c36b',
-        }}
-      }},
-      {{
         selector: 'node.locked',
-        style: {{ 'background-image': 'assets/node-locked.svg', 'opacity': 0.72 }}
+        style: {{ 'opacity': 0.78 }}
       }},
       {{
         selector: 'node:selected',
         style: {{
-          'background-image': 'assets/node-active.png',
-          'width': 76,
-          'height': 76,
+          'width': 80,
+          'height': 80,
           'color': '#ffe9a8',
           'opacity': 1,
         }}
@@ -585,13 +626,32 @@ a:hover {{ text-decoration: underline; }}
       }},
     }});
 
+    function refreshNodeIcon(ele) {{
+      if (!ele || !ele.isNode || !ele.isNode()) return;
+      const id = ele.id();
+      const kp = (topic.knowledge_points || []).find(k => k.id === id);
+      if (!kp) return;
+      const unlocked = !!unlocks[id];
+      const ready = canUnlock(kp);
+      let state = unlocked ? 'unlocked' : (ready ? 'ready' : 'locked');
+      if (selectedKp === id) state = unlocked ? 'active' : state;
+      const symbol = symbolFor(topic, kp);
+      ele.data('symbol', symbol);
+      ele.data('icon', nodeIconDataUri(symbol, state));
+    }}
+
     cy.on('tap', 'node', (evt) => {{
+      const prev = selectedKp;
       selectedKp = evt.target.id();
+      if (prev) refreshNodeIcon(cy.getElementById(prev));
+      refreshNodeIcon(evt.target);
       showDetail(topic, selectedKp);
     }});
     cy.on('tap', (evt) => {{
       if (evt.target === cy) {{
+        const prev = selectedKp;
         selectedKp = null;
+        if (prev) refreshNodeIcon(cy.getElementById(prev));
         showDetail(topic, null);
       }}
     }});

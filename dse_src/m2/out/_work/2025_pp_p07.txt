@@ -1,0 +1,9 @@
+6. Let $\frac{\pi}{2} < x < \frac{3\pi}{4}$.
+
+(a) Find a pair of constants $h$ and $k$ such that $\frac{\sec x + \tan x}{\csc x - \cot x} + \frac{\sec x - \tan x}{\csc x + \cot x} = h \sec x \csc x + k$.
+
+(b) Solve the equation $\frac{\sec x + \tan x}{\csc x - \cot x} + \frac{\sec x - \tan x}{\csc x + \cot x} + 6 = 0$.
+
+(5 marks)
+
+Answers written in the margins will not be marked.

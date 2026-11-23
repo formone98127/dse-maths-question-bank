@@ -1,0 +1,5 @@
+4. Let $C = \begin{pmatrix} k & 1 \\ -1 & 2 \end{pmatrix}$ and $D = \begin{pmatrix} 2 & k-3 \\ k+3 & -4 \end{pmatrix}$, where $k$ is a real number. Find $k$ such that $CD = DC$.
+
+(3 marks)
+
+Answers written in the margins will not be marked.

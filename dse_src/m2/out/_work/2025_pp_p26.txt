@@ -1,0 +1,11 @@
+13. The position vectors of the points $A, B$ and $C$ are $\mathbf{i}-2\mathbf{j}+3\mathbf{k}$, $-2\mathbf{i}+5\mathbf{j}+2\mathbf{k}$ and $2\mathbf{i}-\mathbf{k}$ respectively. Denote the plane containing $A, B$ and $C$ by $\Pi$. Let $E$ be the projection of the point $D(-2,-6,2)$ on $\Pi$. It is given that $EA$ produced meets $BC$ at the point $F$.
+
+(a) Find $\overrightarrow{AB} \times \overrightarrow{AC}$. (3 marks)
+
+(b) Find $\overrightarrow{ED}$ and $\overrightarrow{EA}$. (4 marks)
+
+(c) If $BF:FC=1:t$, find $t$. (3 marks)
+
+(d) Find the volume of the pyramid $ABDF$. (3 marks)
+
+Answers written in the margins will not be marked.

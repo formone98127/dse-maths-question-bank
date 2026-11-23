@@ -1,0 +1,9 @@
+8. Consider the parabola $C: y = x^2 + 4$. $C$ cuts the $y$-axis at the point $P$. $Q$ is a moving point on $C$ with $h$ as its $x$-coordinate, where $h > 0$. The vertical line which passes through $Q$ cuts the $x$-axis at the point $R$. Denote the origin by $O$. Let $A$ be the area of the quadrilateral $OPQR$.
+
+(a) By expressing $A$ in terms of $h$, find $\frac{dA}{dh}$.
+
+(b) Suppose that $h = 3 - 2e^{-t}$, where $t (t > 0)$ is the time measured in seconds. Someone claims that the rate of change of $A$ has only one maximum value. Do you agree? Explain your answer.
+
+(7 marks)
+
+Answers written in the margins will not be marked.

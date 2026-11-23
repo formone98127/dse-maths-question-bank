@@ -1,0 +1,7 @@
+3. (a) Find the constant $k$ such that $\frac{d}{dx} \ln \left( \sqrt{x^4} + 9 - x^2 \right) = \frac{kx}{\sqrt{x^4} + 9}$.
+
+(b) At any point $(x, y)$ on the curve $\Gamma$, the slope of the tangent to $\Gamma$ is $\frac{4x^3 - x}{\sqrt{x^4} + 9}$. It is given that $\Gamma$ passes through the point $(2, 5)$. Does $\Gamma$ pass through the point $(-2, 5)$? Explain your answer.
+
+(6 marks)
+
+Answers written in the margins will not be marked.

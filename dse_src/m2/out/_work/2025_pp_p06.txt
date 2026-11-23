@@ -1,0 +1,7 @@
+5. (a) Using mathematical induction, prove that $\sum_{k=1}^{n} (-1)^k k^2 (k^2 - 1) = \frac{(-1)^n (n-1) n(n+1)(n+2)}{2}$ for all positive integers $n$.
+
+(b) Using (a), evaluate $\sum_{k=10}^{60} (-1)^k k^2 (k^2 - 1)$.
+
+(6 marks)
+
+Answers written in the margins will not be marked.

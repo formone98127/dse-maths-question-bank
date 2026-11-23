@@ -1,0 +1,15 @@
+11. (a) Let $m$ be a positive integer. Express $\int_{0}^{\pi} e^{-x} \sin 2mx \, dx$ in terms of $m$.
+
+(3 marks)
+
+(b) (i) Evaluate $\int_{0}^{\pi} e^{-x} \sin 5x \cos 3x \, dx$.
+
+(6 marks)
+
+(ii) Evaluate $\int_{0}^{2\pi} e^{-x} \sin 5x \cos 3x \, dx$.
+
+(c) Evaluate $\int_{e}^{\frac{\pi}{2}} e^{\frac{\pi}{2}} \cos(\ln x^5) \sin(\ln x^3) \, dx$.
+
+(4 marks)
+
+Answers written in the margins will not be marked.

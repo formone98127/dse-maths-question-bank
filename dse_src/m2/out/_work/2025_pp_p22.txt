@@ -1,0 +1,21 @@
+12. Consider the system of linear equations in real variables $x, y, z$
+
+$$(E): \begin{cases} x - (a+1)y + 2z = 1 \\ 2x + ay + 7z = 2, \text{ where } a, b \in \mathbb{R}. \\ 4x + (a+6)y + (3a+14)z = b \end{cases}$$
+
+(a) Assume that $(E)$ has a unique solution.
+
+(i) Find the range of values of $a$.
+
+(ii) Express $y$ in terms of $a$ and $b$.
+
+(5 marks)
+
+(b) Assume that $(E)$ has infinitely many solutions and $a > 0$.
+
+(i) Solve $(E)$.
+
+(ii) Let $k$ be a real constant. If all the solutions of $(E)$ satisfy $kx + y + 4kz^2 > 0$, find the range of values of $k$.
+
+(7 marks)
+
+Answers written in the margins will not be marked.

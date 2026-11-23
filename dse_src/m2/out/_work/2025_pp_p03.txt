@@ -1,0 +1,9 @@
+2. Let $f(x) = \frac{2x}{\tan x}$, where $0 < x < \frac{\pi}{2}$.
+
+(a) Prove that $f\left(\frac{\pi}{4} + h\right) - f\left(\frac{\pi}{4}\right) = \frac{2h - 2h \tan h - \pi \tan h}{1 + \tan h}$.
+
+(b) Find $f'\left(\frac{\pi}{4}\right)$ from first principles.
+
+(5 marks)
+
+Answers written in the margins will not be marked.

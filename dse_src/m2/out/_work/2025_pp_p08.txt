@@ -1,0 +1,13 @@
+7. Let $B = \begin{pmatrix} 4 & 3 \\ 0 & 1 \end{pmatrix}$ and $n$ be a positive integer. Define $A = B - I$, where $I$ is the $2 \times 2$ identity matrix.
+
+(a) (i) Find $A^3$.
+
+(ii) Write down $A^n$ in terms of $n$.
+
+(b) Using the fact that $(I + A)^n = I + \sum_{k=1}^{n} C_k^n A^k$, express $B^n$ in terms of $n$.
+
+(c) Does there exist a positive integer $m$ such that $A^m - B^m$ is singular? Explain your answer.
+
+(6 marks)
+
+Answers written in the margins will not be marked.

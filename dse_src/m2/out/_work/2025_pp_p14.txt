@@ -1,0 +1,15 @@
+SECTION B (50 marks)
+
+10. Define $f(x) = \frac{x^3 + 25x}{x^2 + 3}$ for all $x \in \mathbb{R}$. Denote the graph of $y = f(x)$ by $G$.
+
+(a) Find the asymptote(s) of $G$. (2 marks)
+
+(b) Is $f(x)$ an increasing function? Explain your answer. (2 marks)
+
+(c) Explain why $G$ has rotational symmetry about the origin. (1 mark)
+
+(d) Find the point(s) of inflexion of $G$. (4 marks)
+
+(e) Let $L$ be the straight line which passes through all the points of inflexion of $G$. Find the area of the region bounded by $G$ and $L$. (3 marks)
+
+Answers written in the margins will not be marked.

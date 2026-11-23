@@ -344,7 +344,7 @@ function viewHrefFor(r) {
     return `/m1/${encodeURIComponent(String(r.year))}/paper-1-en/`;
   }
   if (String(r.id).toLowerCase() === "m2") {
-    return "/" + (r.hash || "");
+    return `/m2/${encodeURIComponent(String(r.year))}/paper-1-en/`;
   }
   if (LANDING_BY_HASH[r.hash]) return LANDING_BY_HASH[r.hash];
   /* 其他未有落地板嘅科目唔好出死鏈 */

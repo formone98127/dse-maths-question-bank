@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
-"""Generate interactive visual skill book at docs/skills/book/index.html."""
+"""Generate RPG-style interactive skill tree at docs/skills/book/index.html.
+
+Uses vendored Cytoscape + ELK (+ Pixi sparkle). Data from math_skill_book.json.
+"""
 from __future__ import annotations
 
 import json
@@ -26,8 +29,8 @@ def main() -> None:
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>數學技能冊（視覺版）｜20 課題 · 知識點 · 公式｜DSE Hub</title>
-<meta name="description" content="DSE 數學必修技能冊視覺瀏覽：20 大課題、知識點先後、公式同 8 種能力。">
+<title>數學 RPG 技能樹｜20 課題 · 知識點解鎖｜DSE Hub</title>
+<meta name="description" content="DSE 數學必修 RPG 技能樹：點撃解鎖知識點、睇先備關係同公式。">
 <link rel="canonical" href="https://hkdse.exampaper.cloud/skills/book/">
 <script>
 window.MathJax = {{
@@ -36,274 +39,272 @@ window.MathJax = {{
 }};
 </script>
 <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script src="vendor/cytoscape.min.js"></script>
+<script src="vendor/elk.bundled.js"></script>
+<script src="vendor/cytoscape-elk.js"></script>
+<script src="vendor/pixi.min.js"></script>
 <style>
 :root {{
-  --ink: #14201a;
-  --mut: #5a6b62;
-  --line: rgba(20, 32, 26, 0.12);
-  --paper: #f3f6f2;
-  --panel: #ffffff;
-  --alg: #1f6f5a;
-  --alg-soft: #d8efe6;
-  --geo: #2a5f8f;
-  --geo-soft: #d7e6f4;
-  --data: #8a5a1e;
-  --data-soft: #f3e6cf;
-  --acc: #1f6f5a;
-  --shadow: 0 10px 28px rgba(20, 32, 26, 0.08);
+  --ink: #f4e8c8;
+  --mut: #b7a789;
+  --line: rgba(244, 232, 200, 0.14);
+  --panel: rgba(18, 14, 10, 0.88);
+  --panel-solid: #16110d;
+  --gold: #e2c36b;
+  --gold-2: #9a7420;
+  --alg: #6fd6b0;
+  --geo: #7db4e8;
+  --data: #e0b06a;
+  --locked: #6a6f78;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
 }}
 * {{ box-sizing: border-box; }}
-html {{ scroll-behavior: smooth; }}
+html, body {{ height: 100%; }}
 body {{
   margin: 0;
-  min-height: 100vh;
   color: var(--ink);
-  background:
-    radial-gradient(1200px 500px at 10% -10%, #e4f0ea 0%, transparent 55%),
-    radial-gradient(900px 420px at 100% 0%, #e3ebf4 0%, transparent 50%),
-    var(--paper);
-  font: 16px/1.65 "PingFang HK", "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+  background: #070605 url("assets/bg-map.svg") center / cover fixed;
+  font: 15px/1.55 "PingFang HK", "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
   -webkit-font-smoothing: antialiased;
-}}
-a {{ color: var(--acc); text-decoration: none; }}
-a:hover {{ text-decoration: underline; }}
-.wrap {{ max-width: 1100px; margin: 0 auto; padding: 0 18px; }}
-header.site {{
-  position: sticky; top: 0; z-index: 20;
-  backdrop-filter: blur(10px);
-  background: rgba(243, 246, 242, 0.88);
-  border-bottom: 1px solid var(--line);
-}}
-header.site .wrap {{
-  display: flex; align-items: center; justify-content: space-between;
-  gap: 12px; padding: 12px 18px; font-size: 14px; color: var(--mut);
-}}
-.brand {{ font-weight: 700; color: var(--ink); letter-spacing: 0.02em; }}
-.hero {{
-  padding: 36px 0 8px;
-  animation: rise 0.7s var(--ease) both;
-}}
-.hero h1 {{
-  margin: 0 0 10px;
-  font-size: clamp(28px, 4.5vw, 42px);
-  line-height: 1.15;
-  letter-spacing: -0.02em;
-}}
-.hero p {{
-  margin: 0;
-  max-width: 42rem;
-  color: var(--mut);
-  font-size: 17px;
-}}
-.stats {{
-  display: flex; flex-wrap: wrap; gap: 10px;
-  margin: 22px 0 8px;
-  animation: rise 0.8s var(--ease) 0.08s both;
-}}
-.stat {{
-  background: var(--panel);
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  padding: 8px 14px;
-  font-size: 14px;
-  box-shadow: var(--shadow);
-}}
-.stat b {{ font-variant-numeric: tabular-nums; }}
-.abilities {{
-  margin: 28px 0 10px;
-  animation: rise 0.8s var(--ease) 0.12s both;
-}}
-.abilities h2 {{ margin: 0 0 10px; font-size: 15px; color: var(--mut); font-weight: 600; }}
-.ability-row {{
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-  gap: 8px;
-}}
-.ability {{
-  background: rgba(255,255,255,0.72);
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  padding: 10px 12px;
-  font-size: 13px;
-  transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease);
-}}
-.ability:hover {{ transform: translateY(-2px); box-shadow: var(--shadow); }}
-.ability strong {{ display: block; font-size: 14px; margin-bottom: 2px; }}
-.ability span {{ color: var(--mut); font-size: 12px; line-height: 1.4; }}
-.section {{ margin: 34px 0 10px; animation: rise 0.75s var(--ease) both; }}
-.section-head {{
-  display: flex; align-items: baseline; justify-content: space-between;
-  gap: 12px; margin-bottom: 12px;
-}}
-.section-head h2 {{ margin: 0; font-size: 22px; letter-spacing: -0.01em; }}
-.section-head .count {{ color: var(--mut); font-size: 13px; }}
-.tone-alg .section-head h2 {{ color: var(--alg); }}
-.tone-geo .section-head h2 {{ color: var(--geo); }}
-.tone-data .section-head h2 {{ color: var(--data); }}
-.grid {{
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 12px;
-}}
-.tile {{
-  appearance: none; border: 1px solid var(--line);
-  background: var(--panel);
-  border-radius: 16px;
-  padding: 16px 16px 14px;
-  text-align: left;
-  cursor: pointer;
-  box-shadow: var(--shadow);
-  transition: transform 0.28s var(--ease), border-color 0.28s var(--ease), box-shadow 0.28s var(--ease);
-}}
-.tile:hover {{ transform: translateY(-3px); }}
-.tile:focus-visible {{ outline: 2px solid var(--acc); outline-offset: 2px; }}
-.tile.active {{ border-color: currentColor; box-shadow: 0 12px 30px rgba(20,32,26,0.14); }}
-.tone-alg .tile {{ color: var(--alg); }}
-.tone-geo .tile {{ color: var(--geo); }}
-.tone-data .tile {{ color: var(--data); }}
-.tile .name {{ color: var(--ink); font-size: 17px; font-weight: 700; margin: 0 0 8px; }}
-.tile .meta {{ display: flex; gap: 8px; flex-wrap: wrap; }}
-.chip {{
-  font-size: 12px; color: var(--mut);
-  background: rgba(20,32,26,0.04);
-  border-radius: 999px; padding: 3px 8px;
-}}
-.tone-alg .tile.active {{ background: var(--alg-soft); }}
-.tone-geo .tile.active {{ background: var(--geo-soft); }}
-.tone-data .tile.active {{ background: var(--data-soft); }}
-.detail {{
-  margin: 28px 0 60px;
-  background: var(--panel);
-  border: 1px solid var(--line);
-  border-radius: 20px;
-  box-shadow: var(--shadow);
   overflow: hidden;
-  min-height: 220px;
-  animation: rise 0.55s var(--ease) both;
 }}
-.detail-empty {{
-  padding: 48px 28px;
-  color: var(--mut);
-  text-align: center;
-}}
-.detail-head {{
-  padding: 22px 24px 14px;
-  border-bottom: 1px solid var(--line);
-  background: linear-gradient(180deg, rgba(255,255,255,0.2), transparent);
-}}
-.detail-head .eyebrow {{
-  font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase;
-  color: var(--mut); margin: 0 0 6px;
-}}
-.detail-head h3 {{ margin: 0 0 6px; font-size: 26px; letter-spacing: -0.02em; }}
-.detail-head .id {{ font-size: 13px; color: var(--mut); font-family: ui-monospace, Consolas, monospace; }}
-.detail-body {{
+a {{ color: var(--gold); text-decoration: none; }}
+a:hover {{ text-decoration: underline; }}
+.app {{
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  gap: 0;
+  grid-template-rows: auto 1fr;
+  height: 100%;
+  height: 100dvh;
 }}
-@media (max-width: 820px) {{
-  .detail-body {{ grid-template-columns: 1fr; }}
+.top {{
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 10px 16px;
+  background: linear-gradient(180deg, rgba(10,8,6,0.95), rgba(10,8,6,0.72));
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(8px);
+  z-index: 5;
 }}
-.col {{ padding: 18px 22px 24px; }}
-.col + .col {{ border-left: 1px solid var(--line); }}
-@media (max-width: 820px) {{
-  .col + .col {{ border-left: 0; border-top: 1px solid var(--line); }}
+.brand {{ font-weight: 800; letter-spacing: 0.04em; color: var(--gold); }}
+.top-nav {{ display: flex; gap: 14px; flex-wrap: wrap; font-size: 13px; color: var(--mut); }}
+.main {{
+  display: grid;
+  grid-template-columns: 280px 1fr 320px;
+  min-height: 0;
 }}
-.col h4 {{
-  margin: 0 0 12px;
-  font-size: 13px;
-  letter-spacing: 0.06em;
+@media (max-width: 980px) {{
+  body {{ overflow: auto; }}
+  .app {{ height: auto; min-height: 100dvh; }}
+  .main {{ grid-template-columns: 1fr; grid-template-rows: auto 55vh auto; }}
+}}
+.side, .info {{
+  background: var(--panel);
+  border-right: 1px solid var(--line);
+  overflow: auto;
+  padding: 14px;
+}}
+.info {{ border-right: 0; border-left: 1px solid var(--line); }}
+.side h2, .info h2 {{
+  margin: 0 0 10px;
+  font-size: 12px;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--mut);
 }}
-.kp {{
-  position: relative;
-  padding: 12px 12px 12px 14px;
-  border-left: 3px solid var(--line);
-  margin: 0 0 10px;
-  border-radius: 0 10px 10px 0;
-  background: rgba(20,32,26,0.02);
+.stats {{
+  display: grid; grid-template-columns: 1fr 1fr; gap: 8px;
+  margin-bottom: 14px;
 }}
-.kp .kid {{
-  font-size: 11px; color: var(--mut);
-  font-family: ui-monospace, Consolas, monospace;
-}}
-.kp .kname {{ font-weight: 700; margin: 2px 0 4px; }}
-.prereqs {{ font-size: 12px; color: var(--mut); }}
-.prereqs code {{
-  font-size: 11px;
-  background: rgba(20,32,26,0.06);
-  padding: 1px 5px;
-  border-radius: 4px;
-}}
-.formula {{
-  padding: 12px 14px;
+.stat {{
   border: 1px solid var(--line);
   border-radius: 12px;
-  margin: 0 0 10px;
-  background: #fbfcfb;
+  padding: 10px;
+  background: rgba(255,255,255,0.03);
 }}
-.formula .fname {{ font-weight: 700; margin-bottom: 4px; }}
-.formula .fid {{
+.stat b {{ display: block; font-size: 20px; color: var(--gold); font-variant-numeric: tabular-nums; }}
+.stat span {{ font-size: 12px; color: var(--mut); }}
+.group-label {{
+  margin: 14px 0 8px;
+  font-size: 13px; font-weight: 700;
+}}
+.group-label.alg {{ color: var(--alg); }}
+.group-label.geo {{ color: var(--geo); }}
+.group-label.data {{ color: var(--data); }}
+.topic-list {{ display: grid; gap: 8px; }}
+.topic-btn {{
+  appearance: none; width: 100%;
+  text-align: left;
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,0.03);
+  color: var(--ink);
+  border-radius: 12px;
+  padding: 10px 12px;
+  cursor: pointer;
+  transition: transform 0.2s var(--ease), border-color 0.2s, background 0.2s;
+}}
+.topic-btn:hover {{ transform: translateY(-1px); border-color: rgba(226,195,107,0.45); }}
+.topic-btn.active {{
+  border-color: var(--gold);
+  background: linear-gradient(135deg, rgba(226,195,107,0.18), rgba(255,255,255,0.03));
+  box-shadow: 0 0 0 1px rgba(226,195,107,0.25) inset;
+}}
+.topic-btn .name {{ font-weight: 700; display: block; margin-bottom: 4px; }}
+.topic-btn .meta {{ font-size: 12px; color: var(--mut); }}
+.stage-wrap {{
+  position: relative;
+  min-height: 0;
+  background: rgba(0,0,0,0.25);
+}}
+#cy {{
+  position: absolute; inset: 0;
+}}
+#fx {{
+  position: absolute; inset: 0; pointer-events: none; z-index: 2;
+}}
+.hint-bar {{
+  position: absolute; left: 12px; right: 12px; bottom: 12px; z-index: 3;
+  display: flex; gap: 8px; flex-wrap: wrap; align-items: center;
+  pointer-events: none;
+}}
+.hint-bar > * {{ pointer-events: auto; }}
+.pill {{
+  background: rgba(12,10,8,0.85);
+  border: 1px solid var(--line);
+  color: var(--mut);
+  border-radius: 999px;
+  padding: 8px 12px;
+  font-size: 12px;
+}}
+.btn {{
+  appearance: none;
+  border: 1px solid var(--gold-2);
+  background: linear-gradient(180deg, #e2c36b, #9a7420);
+  color: #1a1208;
+  font-weight: 800;
+  border-radius: 999px;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-size: 13px;
+}}
+.btn.ghost {{
+  background: rgba(12,10,8,0.85);
+  color: var(--ink);
+  border-color: var(--line);
+  font-weight: 600;
+}}
+.empty {{
+  color: var(--mut);
+  padding: 24px 8px;
+  text-align: center;
+}}
+.ability-row {{ display: grid; gap: 6px; margin-bottom: 16px; }}
+.ability {{
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 8px 10px;
+  font-size: 12px;
+  background: rgba(255,255,255,0.03);
+}}
+.ability strong {{ display: block; color: var(--gold); margin-bottom: 2px; }}
+.kp-card, .formula {{
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 10px;
+  background: rgba(255,255,255,0.03);
+}}
+.kp-card.locked {{ opacity: 0.55; }}
+.kp-card .id, .formula .id {{
   font-size: 11px; color: var(--mut);
   font-family: ui-monospace, Consolas, monospace;
 }}
-.formula .latex {{
-  margin-top: 6px;
-  overflow-x: auto;
-  font-size: 15px;
+.kp-card h3, .formula h3 {{
+  margin: 4px 0 8px; font-size: 16px;
 }}
-footer.page {{
-  color: var(--mut);
-  font-size: 13px;
-  padding: 0 0 48px;
+.badge {{
+  display: inline-block;
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  margin-right: 6px;
 }}
-@keyframes rise {{
-  from {{ opacity: 0; transform: translateY(10px); }}
-  to {{ opacity: 1; transform: translateY(0); }}
+.badge.on {{ color: #9dffd0; border-color: rgba(157,255,208,0.35); }}
+.badge.off {{ color: var(--locked); }}
+.prereq {{ font-size: 12px; color: var(--mut); margin-top: 6px; }}
+.latex {{ overflow-x: auto; margin-top: 6px; color: #fff; }}
+.legend {{
+  display: flex; gap: 10px; flex-wrap: wrap;
+  font-size: 12px; color: var(--mut); margin-bottom: 12px;
 }}
+.legend i {{
+  display: inline-block; width: 10px; height: 10px; border-radius: 50%;
+  margin-right: 4px; vertical-align: middle;
+}}
+.legend .l-on {{ background: #2f9b78; }}
+.legend .l-off {{ background: #5a6270; }}
+.legend .l-sel {{ background: #e2c36b; }}
 </style>
 </head>
 <body>
-<header class="site">
-  <div class="wrap">
-    <div><a href="/hub/">← DSE Hub</a> · <a href="/skills/">技能地圖</a></div>
-    <div class="brand">數學技能冊</div>
+<div class="app">
+  <header class="top">
+    <div class="brand">⚔ 數學 RPG 技能樹</div>
+    <nav class="top-nav">
+      <a href="/hub/">DSE Hub</a>
+      <a href="/skills/">技能地圖</a>
+      <span id="progressLabel">進度 0%</span>
+    </nav>
+  </header>
+  <div class="main">
+    <aside class="side">
+      <h2>冒險進度</h2>
+      <div class="stats" id="stats"></div>
+      <div class="legend">
+        <span><i class="l-on"></i>已解鎖</span>
+        <span><i class="l-off"></i>未解鎖</span>
+        <span><i class="l-sel"></i>選中</span>
+      </div>
+      <h2>選擇技能分支</h2>
+      <div id="topicList"></div>
+    </aside>
+    <section class="stage-wrap">
+      <div id="cy"></div>
+      <canvas id="fx"></canvas>
+      <div class="hint-bar">
+        <div class="pill" id="branchHint">揀左邊一個課題開始</div>
+        <button type="button" class="btn" id="btnUnlock">解鎖選中技能</button>
+        <button type="button" class="btn ghost" id="btnReset">重置本分支進度</button>
+        <button type="button" class="btn ghost" id="btnFit">置中地圖</button>
+      </div>
+    </section>
+    <aside class="info">
+      <h2>全科能力</h2>
+      <div class="ability-row" id="abilities"></div>
+      <h2>技能詳情</h2>
+      <div id="detail"><div class="empty">點地圖上嘅技能格，睇知識點同公式</div></div>
+    </aside>
   </div>
-</header>
-<main class="wrap">
-  <section class="hero">
-    <h1>數學技能冊（視覺版）</h1>
-    <p>點一個課題，就會睇到佢下面嘅細知識點、要先識咩、同常用公式。全部編號固定，之後計分同報告都用同一套。</p>
-    <div class="stats" id="stats"></div>
-  </section>
-
-  <section class="abilities">
-    <h2>全科共用 8 種能力</h2>
-    <div class="ability-row" id="abilities"></div>
-  </section>
-
-  <div id="groups"></div>
-
-  <section class="detail" id="detail" aria-live="polite">
-    <div class="detail-empty">← 上面揀一個課題，細節會喺呢度出現</div>
-  </section>
-
-  <footer class="page">
-    技能分類為本站整理，非考評局官方。<br>
-    <a href="/skills/">技能地圖總覽</a> · <a href="/hub/">DSE Hub</a>
-  </footer>
-</main>
+</div>
 <script id="BOOK_DATA" type="application/json">{data_json}</script>
 <script>
 (function () {{
   const book = JSON.parse(document.getElementById('BOOK_DATA').textContent);
   const groupOrder = {json.dumps(GROUP_ORDER, ensure_ascii=False)};
   const toneMap = {json.dumps(GROUP_TONE, ensure_ascii=False)};
-  const kpIndex = {{}};
-  book.topics.forEach(t => (t.knowledge_points || []).forEach(k => {{ kpIndex[k.id] = k.name; }}));
+  const STORE_KEY = 'dsehub-rpg-skill-unlocks-v1';
+
+  if (window.cytoscapeElk && window.cytoscape && window.ELK) {{
+    cytoscape.use(cytoscapeElk);
+  }}
+
+  const kpName = {{}};
+  const formulaByKp = {{}};
+  book.topics.forEach(t => {{
+    (t.knowledge_points || []).forEach(k => {{ kpName[k.id] = k.name; }});
+    (t.formulas || []).forEach(f => {{
+      (formulaByKp[f.knowledge_point_id] = formulaByKp[f.knowledge_point_id] || []).push(f);
+    }});
+  }});
 
   const nKp = book.topics.reduce((s, t) => s + (t.knowledge_points || []).length, 0);
   const nF = book.topics.reduce((s, t) => s + (t.formulas || []).length, 0);
@@ -312,37 +313,64 @@ footer.page {{
     ['知識點', nKp],
     ['公式', nF],
     ['能力', book.abilities.length],
-  ].map(([k, v]) => `<div class="stat"><b>${{v}}</b> ${{k}}</div>`).join('');
+  ].map(([k, v]) => `<div class="stat"><b>${{v}}</b><span>${{k}}</span></div>`).join('');
 
   document.getElementById('abilities').innerHTML = book.abilities.map(a =>
-    `<div class="ability" title="${{a.id}}"><strong>${{a.name}}</strong><span>${{a.desc || ''}}</span></div>`
+    `<div class="ability"><strong>${{a.name}}</strong>${{a.desc || ''}}</div>`
   ).join('');
+
+  function loadUnlocks() {{
+    try {{ return JSON.parse(localStorage.getItem(STORE_KEY) || '{{}}') || {{}}; }}
+    catch {{ return {{}}; }}
+  }}
+  function saveUnlocks(map) {{
+    localStorage.setItem(STORE_KEY, JSON.stringify(map));
+  }}
+  let unlocks = loadUnlocks(); // {{ [kpId]: true }}
+
+  // seed roots unlocked for first-time users
+  book.topics.forEach(t => {{
+    (t.knowledge_points || []).forEach(k => {{
+      if (!(k.prereqs || []).length && unlocks[k.id] === undefined) unlocks[k.id] = true;
+    }});
+  }});
+  saveUnlocks(unlocks);
+
+  function progressPct() {{
+    const ids = [];
+    book.topics.forEach(t => (t.knowledge_points || []).forEach(k => ids.push(k.id)));
+    const on = ids.filter(id => unlocks[id]).length;
+    return ids.length ? Math.round(100 * on / ids.length) : 0;
+  }}
+  function refreshProgress() {{
+    document.getElementById('progressLabel').textContent = '進度 ' + progressPct() + '%';
+  }}
+  refreshProgress();
 
   const byGroup = {{}};
   book.topics.forEach(t => {{
     const g = t.group || '其他';
     (byGroup[g] = byGroup[g] || []).push(t);
   }});
-
-  const groupsEl = document.getElementById('groups');
-  groupsEl.innerHTML = groupOrder.filter(g => byGroup[g]).map(g => {{
+  const list = document.getElementById('topicList');
+  list.innerHTML = groupOrder.filter(g => byGroup[g]).map(g => {{
     const tone = toneMap[g] || 'alg';
-    const tiles = byGroup[g].map(t => `
-      <button type="button" class="tile" data-id="${{t.id}}" aria-pressed="false">
-        <div class="name">${{t.name}}</div>
-        <div class="meta">
-          <span class="chip">${{(t.knowledge_points || []).length}} 知識點</span>
-          <span class="chip">${{(t.formulas || []).length}} 公式</span>
-        </div>
+    const buttons = byGroup[g].map(t => `
+      <button type="button" class="topic-btn" data-id="${{t.id}}">
+        <span class="name">${{t.name}}</span>
+        <span class="meta">${{(t.knowledge_points || []).length}} 技能格 · ${{(t.formulas || []).length}} 公式</span>
       </button>`).join('');
-    return `<section class="section tone-${{tone}}">
-      <div class="section-head"><h2>${{g}}</h2><div class="count">${{byGroup[g].length}} 個課題</div></div>
-      <div class="grid">${{tiles}}</div>
-    </section>`;
+    return `<div class="group-label ${{tone}}">${{g}}</div><div class="topic-list">${{buttons}}</div>`;
   }}).join('');
 
-  const detail = document.getElementById('detail');
-  let selected = null;
+  let currentTopicId = null;
+  let selectedKp = null;
+  let cy = null;
+
+  function canUnlock(kp) {{
+    const pre = kp.prereqs || [];
+    return pre.every(id => unlocks[id]);
+  }}
 
   function typeset(node) {{
     if (window.MathJax && MathJax.typesetPromise) {{
@@ -350,53 +378,281 @@ footer.page {{
     }}
   }}
 
-  function showTopic(id) {{
-    const t = book.topics.find(x => x.id === id);
-    if (!t) return;
-    selected = id;
-    document.querySelectorAll('.tile').forEach(el => {{
-      const on = el.dataset.id === id;
-      el.classList.toggle('active', on);
-      el.setAttribute('aria-pressed', on ? 'true' : 'false');
-    }});
-    const kps = (t.knowledge_points || []).map(k => {{
-      const pre = (k.prereqs || []).map(p => `<code title="${{kpIndex[p] || p}}">${{p}}</code>`).join(' ') || '無（起點）';
-      return `<div class="kp">
-        <div class="kid">${{k.id}}</div>
-        <div class="kname">${{k.name}}</div>
-        <div class="prereqs">先要識：${{pre}}</div>
-      </div>`;
-    }}).join('') || '<p style="color:var(--mut)">未有知識點</p>';
-
-    const formulas = (t.formulas || []).map(f => `
+  function showDetail(topic, kpId) {{
+    const box = document.getElementById('detail');
+    if (!kpId) {{
+      box.innerHTML = `<div class="empty">點地圖上嘅技能格，睇知識點同公式</div>`;
+      return;
+    }}
+    const kp = (topic.knowledge_points || []).find(k => k.id === kpId);
+    if (!kp) return;
+    const unlocked = !!unlocks[kp.id];
+    const ready = canUnlock(kp);
+    const pre = (kp.prereqs || []).map(id => kpName[id] || id).join('、') || '無（起點技能）';
+    const formulas = (formulaByKp[kp.id] || []).map(f => `
       <div class="formula">
-        <div class="fid">${{f.id}} · 掛喺 ${{f.knowledge_point_id}}</div>
-        <div class="fname">${{f.name}}</div>
+        <div class="id">${{f.id}}</div>
+        <h3>${{f.name}}</h3>
         <div class="latex">$$${{f.latex}}$$</div>
-      </div>`).join('') || '<p style="color:var(--mut)">未有公式</p>';
-
-    detail.innerHTML = `
-      <div class="detail-head">
-        <p class="eyebrow">${{t.group || ''}}</p>
-        <h3>${{t.name}}</h3>
-        <div class="id">${{t.id}}</div>
+      </div>`).join('') || `<div class="empty">呢格未掛公式</div>`;
+    box.innerHTML = `
+      <div class="kp-card ${{unlocked ? '' : 'locked'}}">
+        <div class="id">${{kp.id}}</div>
+        <h3>${{kp.name}}</h3>
+        <span class="badge ${{unlocked ? 'on' : 'off'}}">${{unlocked ? '已解鎖' : (ready ? '可解鎖' : '未解鎖')}}</span>
+        <div class="prereq">先要識：${{pre}}</div>
       </div>
-      <div class="detail-body">
-        <div class="col"><h4>知識點（有先後）</h4>${{kps}}</div>
-        <div class="col"><h4>公式</h4>${{formulas}}</div>
-      </div>`;
-    typeset(detail);
-    detail.scrollIntoView({{ behavior: 'smooth', block: 'nearest' }});
+      <h2>相關公式</h2>
+      ${{formulas}}`;
+    typeset(box);
   }}
 
-  groupsEl.addEventListener('click', (e) => {{
-    const btn = e.target.closest('.tile');
+  // Pixi sparkle layer
+  let sparkApp = null;
+  async function ensureFx() {{
+    try {{
+      const canvas = document.getElementById('fx');
+      const wrap = document.querySelector('.stage-wrap');
+      const w = wrap.clientWidth || 800;
+      const h = wrap.clientHeight || 600;
+      canvas.width = w; canvas.height = h;
+      if (!window.PIXI) return null;
+      if (sparkApp) {{
+        sparkApp.renderer.resize(w, h);
+        return sparkApp;
+      }}
+      sparkApp = new PIXI.Application();
+      await sparkApp.init({{
+        canvas,
+        width: w,
+        height: h,
+        backgroundAlpha: 0,
+        antialias: true,
+      }});
+      return sparkApp;
+    }} catch (err) {{
+      console.warn('Pixi FX unavailable', err);
+      return null;
+    }}
+  }}
+  async function sparkleAt(x, y) {{
+    const app = await ensureFx();
+    if (!app) return;
+    for (let i = 0; i < 18; i++) {{
+      const g = new PIXI.Graphics();
+      g.circle(0, 0, 2 + Math.random() * 3);
+      g.fill(0xffe9a8);
+      g.x = x; g.y = y;
+      app.stage.addChild(g);
+      const ang = Math.random() * Math.PI * 2;
+      const dist = 30 + Math.random() * 70;
+      const life = 400 + Math.random() * 400;
+      const t0 = performance.now();
+      const tick = () => {{
+        const t = (performance.now() - t0) / life;
+        if (t >= 1) {{ app.stage.removeChild(g); g.destroy(); return; }}
+        g.x = x + Math.cos(ang) * dist * t;
+        g.y = y + Math.sin(ang) * dist * t;
+        g.alpha = 1 - t;
+        requestAnimationFrame(tick);
+      }};
+      requestAnimationFrame(tick);
+    }}
+  }}
+
+  function buildElements(topic) {{
+    const nodes = [];
+    const edges = [];
+    (topic.knowledge_points || []).forEach(k => {{
+      const unlocked = !!unlocks[k.id];
+      nodes.push({{
+        data: {{
+          id: k.id,
+          label: k.name,
+          unlocked,
+          ready: canUnlock(k),
+        }},
+        classes: unlocked ? 'unlocked' : (canUnlock(k) ? 'ready' : 'locked'),
+      }});
+      (k.prereqs || []).forEach(p => {{
+        edges.push({{ data: {{ id: p + '->' + k.id, source: p, target: k.id }} }});
+      }});
+    }});
+    return nodes.concat(edges);
+  }}
+
+  function styleFor() {{
+    return [
+      {{
+        selector: 'node',
+        style: {{
+          'background-fit': 'cover',
+          'background-clip': 'none',
+          'background-opacity': 1,
+          'background-color': 'transparent',
+          'border-width': 0,
+          'width': 64,
+          'height': 64,
+          'label': 'data(label)',
+          'color': '#f4e8c8',
+          'text-valign': 'bottom',
+          'text-halign': 'center',
+          'text-margin-y': 8,
+          'font-size': 12,
+          'font-weight': 700,
+          'text-wrap': 'wrap',
+          'text-max-width': 110,
+          'text-outline-width': 2,
+          'text-outline-color': '#0a0806',
+          'overlay-padding': 8,
+        }}
+      }},
+      {{
+        selector: 'node.unlocked',
+        style: {{ 'background-image': 'assets/node-unlocked.svg' }}
+      }},
+      {{
+        selector: 'node.ready',
+        style: {{
+          'background-image': 'assets/node-locked.svg',
+          'border-width': 2,
+          'border-color': '#e2c36b',
+        }}
+      }},
+      {{
+        selector: 'node.locked',
+        style: {{ 'background-image': 'assets/node-locked.svg', 'opacity': 0.72 }}
+      }},
+      {{
+        selector: 'node:selected',
+        style: {{
+          'background-image': 'assets/node-active.svg',
+          'width': 72,
+          'height': 72,
+          'color': '#ffe9a8',
+          'opacity': 1,
+        }}
+      }},
+      {{
+        selector: 'edge',
+        style: {{
+          'curve-style': 'bezier',
+          'target-arrow-shape': 'triangle',
+          'arrow-scale': 1.1,
+          'line-color': '#7a6540',
+          'target-arrow-color': '#c9a227',
+          'width': 2,
+          'opacity': 0.85,
+        }}
+      }}
+    ];
+  }}
+
+  function renderTopic(topicId) {{
+    const topic = book.topics.find(t => t.id === topicId);
+    if (!topic) return;
+    currentTopicId = topicId;
+    selectedKp = null;
+    document.querySelectorAll('.topic-btn').forEach(btn => {{
+      btn.classList.toggle('active', btn.dataset.id === topicId);
+    }});
+    document.getElementById('branchHint').textContent =
+      topic.name + ' · 由上到下解鎖 · 起點已點亮';
+
+    const elements = buildElements(topic);
+    if (cy) {{ cy.destroy(); cy = null; }}
+    cy = cytoscape({{
+      container: document.getElementById('cy'),
+      elements,
+      style: styleFor(),
+      minZoom: 0.4,
+      maxZoom: 2.2,
+      wheelSensitivity: 0.25,
+      layout: {{
+        name: (window.cytoscapeElk && window.ELK) ? 'elk' : 'breadthfirst',
+        elk: {{
+          algorithm: 'layered',
+          'elk.direction': 'DOWN',
+          'elk.spacing.nodeNode': 48,
+          'elk.layered.spacing.nodeNodeBetweenLayers': 70,
+        }},
+        directed: true,
+        padding: 40,
+        spacingFactor: 1.35,
+        animate: true,
+        animationDuration: 350,
+      }},
+    }});
+
+    cy.on('tap', 'node', (evt) => {{
+      selectedKp = evt.target.id();
+      showDetail(topic, selectedKp);
+    }});
+    cy.on('tap', (evt) => {{
+      if (evt.target === cy) {{
+        selectedKp = null;
+        showDetail(topic, null);
+      }}
+    }});
+    showDetail(topic, null);
+    ensureFx();
+  }}
+
+  list.addEventListener('click', (e) => {{
+    const btn = e.target.closest('.topic-btn');
     if (!btn) return;
-    showTopic(btn.dataset.id);
+    renderTopic(btn.dataset.id);
   }});
 
-  // open first topic by default for an immediate visual
-  if (book.topics[0]) showTopic(book.topics[0].id);
+  document.getElementById('btnFit').addEventListener('click', () => {{
+    if (cy) cy.fit(undefined, 48);
+  }});
+
+  document.getElementById('btnReset').addEventListener('click', () => {{
+    if (!currentTopicId) return;
+    const topic = book.topics.find(t => t.id === currentTopicId);
+    (topic.knowledge_points || []).forEach(k => {{
+      unlocks[k.id] = !(k.prereqs || []).length;
+    }});
+    saveUnlocks(unlocks);
+    refreshProgress();
+    renderTopic(currentTopicId);
+  }});
+
+  document.getElementById('btnUnlock').addEventListener('click', async () => {{
+    if (!currentTopicId || !selectedKp || !cy) return;
+    const topic = book.topics.find(t => t.id === currentTopicId);
+    const kp = (topic.knowledge_points || []).find(k => k.id === selectedKp);
+    if (!kp) return;
+    if (unlocks[kp.id]) {{
+      document.getElementById('branchHint').textContent = '呢格已經解鎖咗';
+      return;
+    }}
+    if (!canUnlock(kp)) {{
+      document.getElementById('branchHint').textContent = '仲未滿足先備技能，唔可以解鎖';
+      return;
+    }}
+    unlocks[kp.id] = true;
+    saveUnlocks(unlocks);
+    refreshProgress();
+    const node = cy.getElementById(kp.id);
+    const p = node.renderedPosition();
+    await sparkleAt(p.x, p.y);
+    renderTopic(currentTopicId);
+    // reselect
+    selectedKp = kp.id;
+    if (cy) {{
+      const n2 = cy.getElementById(kp.id);
+      n2.select();
+      showDetail(topic, kp.id);
+    }}
+    document.getElementById('branchHint').textContent = '解鎖成功：' + kp.name;
+  }});
+
+  window.addEventListener('resize', () => {{ ensureFx(); if (cy) cy.resize(); }});
+
+  // default open first topic
+  if (book.topics[0]) renderTopic(book.topics[0].id);
 }})();
 </script>
 </body>
@@ -405,6 +661,7 @@ footer.page {{
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(html, encoding="utf-8")
     print(f"wrote {OUT.relative_to(ROOT)}")
+    print(f"topics={len(book['topics'])} kps={sum(len(t['knowledge_points']) for t in book['topics'])}")
 
 
 if __name__ == "__main__":

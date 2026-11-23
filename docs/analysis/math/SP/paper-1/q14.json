@@ -1,0 +1,132 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "SP",
+  "paper": "Paper 1",
+  "qno": "14",
+  "hash": "#SPP1Q14"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "集中趨勢",
+   "secondary_topics": [
+    "中位數",
+    "平均值",
+    "數據分析與推論"
+   ],
+   "required_formulas": [
+    "$\\text{平均值} = \\frac{\\sum x}{n}$",
+    "$\\text{中位數} = \\text{排序後第 } \\frac{n+1}{2} \\text{ 個數據}"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 420,
+   "marks": 35
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "將五個數據由小到大排列，計算平均值與中位數。",
+    "marks": 6,
+    "common_error": "未排序直接取中間數；或加總時算錯百分號處理。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "假設 $a \\le b$，探討七個數據中位數最小值的情境（$a,b$ 為最小時）。",
+    "marks": 4,
+    "common_error": "忽略 $n=7$ 時中位數位置為第 4 個；或忘記排序條件。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "利用平均值不變，建立方程求 $a+b$ 的和。",
+    "marks": 5,
+    "common_error": "忘記原總和；或解聯立方程時出現代數錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "結合中位數條件與 $a+b$ 的和，找出符合的 $(a,b)$ 對。",
+    "marks": 6,
+    "common_error": "找到的組合不滿足排序或中位數位置要求。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 5,
+    "what": "分析店主論點：比較其他報章佔有率，指出數據不足。",
+    "marks": 8,
+    "common_error": "僅因數值大於 50% 就同意；未提及缺乏競爭對手數據。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 6,
+    "what": "總結答案，確保邏輯完整、計算準確及解釋合理。",
+    "marks": 6,
+    "common_error": "忽略題目要求「解釋」；或語句含糊不清。",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "此題測試學生對集中趨勢指標的計算及應用能力，並強調在解讀統計數據時需考慮背景資訊（如市場佔有率定義），避免單一指標誤導結論。",
+  "scaffolding_hints": [
+   "Hint1: 先將已知五個數據排序，找出第 3 個數作為中位數。",
+   "Hint2: 七個數據的中位數位於排序後第 4 個位置，思考 $a,b$ 最小時如何影響排序。",
+   "Hint3: 平均值不變意味著新加入兩數之和等於原總和的補數，利用此關係縮小搜尋範圍。"
+  ],
+  "quick_solution_strategy": "先算出五數平均與中位數；再設 $a \\le b$，令 $a,b$ 極小求最小中位數；由平均值不變得 $a+b$ 定值，再試數對；最後批判店主論點需更多競爭數據。"
+ },
+ "skills": {
+  "topic_id": "T-STA",
+  "knowledge_point_ids": [
+   "K-STA-01",
+   "K-STA-02"
+  ],
+  "formula_ids": [
+   "F-STA-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "5": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "6": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

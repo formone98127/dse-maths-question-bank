@@ -1,0 +1,129 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 1M",
+  "qno": "8",
+  "hash": "#2024P1MQ8"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "正態分佈",
+   "secondary_topics": [
+    "積分法",
+    "面積計算"
+   ],
+   "required_formulas": [
+    "\\int_{0}^{z} e^{-t^2/2} dt = \\sqrt{2\\pi} P(0 < Z \\le z)",
+    "\\int (uv)' dx = uv"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 7
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用標準正態分佈表計算 \\int_{0}^{0.5} e^{-x^2/2} dx 的數值。",
+    "marks": 2,
+    "common_error": "忘記乘以 \\sqrt{2\\pi} 或誤讀表格中的機率值。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "將曲線 \\int_{0}^{x} (2t-1)e^{-t^2/2} dt 拆解為兩部分積分。",
+    "marks": 1,
+    "common_error": "未能正確拆分被積函數導致漏掉其中一項。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "計算第一部分 \\int_{0}^{x} 2e^{-t^2/2} dt 並代入上下限。",
+    "marks": 1,
+    "common_error": "代入數值時符號錯誤或計算機誤操作。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "利用 (a) 題結果處理第二部分 \\int_{0}^{x} e^{-t^2/2} dt。",
+    "marks": 1,
+    "common_error": "忘記將 (a) 題結果乘以 \\sqrt{2\\pi} 或上下限弄反。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 5,
+    "what": "合併兩部分結果並代入 x=0.5 計算最終面積數值。",
+    "marks": 1,
+    "common_error": "四捨五入錯誤或保留位數不合要求。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "檢查答案合理性並確認單位與格式符合卷面要求。",
+    "marks": 1,
+    "common_error": "未檢查負號或面積為負的荒謬結果。",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "此題結合微積分與統計表，考評報告常強調學生需熟練運用標準正態分佈函數與機率密度函數之間的轉換關係，避免機械式計算而忽略概念連結。",
+  "scaffolding_hints": [
+   "Recall that \\phi(z) = e^{-z^2/2} and the CDF relates to the integral.",
+   "Split the integrand (2x-1)e^{-x^2/2} into 2e^{-x^2/2} - e^{-x^2/2}.",
+   "Use part (a) result directly for the second term with proper scaling."
+  ],
+  "quick_solution_strategy": "先算(a)得數值，再將(b)被積函數拆成兩項，一項用(a)結果，另一項直接積分。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "5": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

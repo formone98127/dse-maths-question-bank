@@ -1,0 +1,115 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 1",
+  "qno": "4",
+  "hash": "#2017P1Q4"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "一元一次方程",
+   "secondary_topics": [
+    "應用題建模",
+    "整除性檢查"
+   ],
+   "required_formulas": [
+    "$\\text{總金額} = \\text{正價票數} \\times \\text{正價} + \\text{特惠票數} \\times \\text{特惠}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120,
+   "marks": 5
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "設特惠票數為 $x$，則正價票數為 $5x$。",
+    "marks": 1,
+    "common_error": "未設未知數或比例關係搞反（如設正價為 $x$）。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 2,
+    "what": "列出方程：$5x \\times 126 + x \\times 78 = 50976$。",
+    "marks": 1,
+    "common_error": "代數式寫錯，漏乘係數或加減號錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "合併同類項：$(630 + 78)x = 50976$。",
+    "marks": 1,
+    "common_error": "計算 $5 \\times 126$ 或 $630+78$ 出錯。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "解方程求 $x$：$708x = 50976 \\Rightarrow x = 72$。",
+    "marks": 1,
+    "common_error": "除法計算錯誤或未能整除檢查。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "計算總數：$x + 5x = 6x = 6 \\times 72 = 432$。",
+    "marks": 1,
+    "common_error": "忘記題目問的是「總數」而非特惠票數。",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "根據考評報告，約 80% 考生能正確解答，顯示此類一元一次方程應用題為學生掌握重點，但需注意計算準確度及讀懂題目要求（求總數而非單一種票數）。",
+  "scaffolding_hints": [
+   "提示 1：先畫表格或樹狀圖理清正價與特惠的數量關係。",
+   "提示 2：記得將「總金額」拆解為兩部分相加。",
+   "提示 3：最後一步務必確認題目問的是什麼（是 $x$ 還是 $6x$）。"
+  ],
+  "quick_solution_strategy": "設特惠 $x$，正價 $5x$，列式 $(126 \\times 5 + 78)x = 50976$，解出 $x=72$，總數 $6x=432$"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

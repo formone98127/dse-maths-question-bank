@@ -1,0 +1,135 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 1",
+  "qno": "13",
+  "hash": "#2021P1Q13"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓的方程",
+   "secondary_topics": [
+    "距離公式",
+    "點與圓的位置關係",
+    "幾何圖形性質 (菱形)",
+    "三角形面積計算"
+   ],
+   "required_formulas": [
+    "$x^2+y^2+Dx+Ey+F=0$ 化為標準式 $(x-h)^2+(y-k)^2=r^2$",
+    "$d = \\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}$",
+    "$Area = \\frac{1}{2} d_1 d_2$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 180,
+   "marks": 7
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "將圓方程配方，找出圓心 G(6,8) 及半徑 r=15。",
+    "marks": 2,
+    "common_error": "配方時符號錯誤或計算出錯導致圓心坐標不對。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "利用距離公式計算原點 O(0,0) 到 G(6,8) 的距離 OG=10。",
+    "marks": 2,
+    "common_error": "忘記開根號或坐標代入錯誤導致數值不正確。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "比較 OG(10) 與半徑 r(15)，因 10<15，故 O 在圓內。",
+    "marks": 1,
+    "common_error": "未比較大小直接作答，或解釋不清為何在圓內。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 4,
+    "what": "分析 OP=GP 知 P 在 OG 中垂線上；結合 OM=GM=r 推導 OMGN 為菱形。",
+    "marks": 1,
+    "common_error": "忽略菱形的判定條件，誤以為是普通四邊形而無法計算面積。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 5,
+    "what": "利用菱形對角線互相垂直平分的性質，將 OG 視為一條對角線。",
+    "marks": 1,
+    "common_error": "未能正確識別另一條對角線 MN 與圓的幾何關係。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 6,
+    "what": "計算菱形面積：利用半徑 r、OG 長度及三角函數或相似三角形求另一條對角線長。",
+    "marks": 0,
+    "common_error": "此步為綜合應用，若前幾步錯誤將導致最終面積計算全錯。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "考評報告指出考生常忽略 OMGN 為菱形這一關鍵幾何性質，導致無法簡化面積計算過程，顯示對圓與直線交點形成的特殊四邊形性質掌握不足。",
+  "scaffolding_hints": [
+   "提示 1：先將一般式圓方程配方成標準式，找出圓心 G 和半徑 r。",
+   "提示 2：OP=GP 表示 P 在 OG 的中垂線上，而 M、N 既在圓上又在該中垂線上，故 MN 為弦且垂直於 OG。",
+   "提示 3：四邊形 OMGN 的四條邊均等於半徑 r，因此它是菱形，面積可用對角線乘積的一半計算。"
+  ],
+  "quick_solution_strategy": "配方得圓心 G(6,8) 與半徑 15；OG=10<15 故 O 在內；由 OP=GP 及 OM=GM 知 OMGN 為菱形，利用對角線 OG 與 MN 垂直平分求面積。"
+ },
+ "skills": {
+  "topic_id": "T-CIR",
+  "knowledge_point_ids": [
+   "K-CIR-01",
+   "K-CIR-02"
+  ],
+  "formula_ids": [
+   "F-CIR-01",
+   "F-CIR-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "4": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "5": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "6": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

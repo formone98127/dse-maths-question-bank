@@ -1,0 +1,129 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 1M",
+  "qno": "8",
+  "hash": "#2022P1MQ8"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "微分法",
+   "secondary_topics": [
+    "極值",
+    "常數求解"
+   ],
+   "required_formulas": [
+    "$f'(x) = \\frac{d}{dx}(ax^n) = anx^{n-1}$",
+    "$f''(x)$ 用於判斷極大/小值"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 240,
+   "marks": 7
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "求 $f(x)$ 的一階導數 $f'(x)$ 並令其等於零。",
+    "marks": 2,
+    "common_error": "微分指數錯誤或遺漏係數",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "證明 $x=0$ 為極大值點（利用二階導數或符號分析）。",
+    "marks": 1,
+    "common_error": "混淆極大與極小值的判定條件",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "代入 $x=-2$ 至 $f'(x)=0$，解出常數 $a$。",
+    "marks": 1,
+    "common_error": "計算錯誤導致 $a$ 值不對",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "驗證 $x=-2$ 確實為極小值點（題目已給，此步確認邏輯）。",
+    "marks": 0,
+    "common_error": "無",
+    "error_category": null
+   },
+   {
+    "step": 5,
+    "what": "將 $a=5$ 代回原函數並計算 $f(-2)$。",
+    "marks": 1,
+    "common_error": "代入時算術錯誤",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "確認邊界行為或另一臨界點以確保為全局最小值。",
+    "marks": 2,
+    "common_error": "忽略 $x \\to \\pm\\infty$ 時的函數趨勢",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "此題測試學生對高次多項式極值的掌握，特別是結合常數求解與全局最值判斷，屬卷一較難的綜合應用題。",
+  "scaffolding_hints": [
+   "先求導數 $f'(x) = x^4(8ax^3 - 152x^2 - 8640)$。",
+   "注意 $x=0$ 是重根，需檢查二階導數 $f''(0)$ 的符號。",
+   "利用 $x=-2$ 為極小值點時 $f'(-2)=0$ 來解 $a$"
+  ],
+  "quick_solution_strategy": "先求導找臨界點，證 $x=0$ 為極大；再代 $x=-2$ 入導數方程解 $a$，最後算 $f(-2)$。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": null
+   },
+   "5": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

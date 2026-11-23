@@ -1,0 +1,96 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2019",
+  "paper": "Paper 1",
+  "qno": "5",
+  "hash": "#2019P1Q5"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "百分數",
+   "secondary_topics": [
+    "折扣計算",
+    "利潤率公式"
+   ],
+   "required_formulas": [
+    "$\\text{售價} = \\text{標價} \\times \\text{折扣率}$",
+    "$\\text{盈利百分率} = \\frac{\\text{售價} - \\text{成本}}{\\text{成本}} \\times 100\\%$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用折扣率與售價求標價",
+    "marks": 2,
+    "common_error": "將七五折誤算為乘以 0.75 而非 0.75，或混淆標價與售價關係",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 2,
+    "what": "確認已知條件：售價$690$"
+   },
+   {
+    "step": 3,
+    "what": "計算標價：$690 \\div 0.75 = 920$"
+   },
+   {
+    "step": 4,
+    "what": "利用利潤率公式建立方程",
+    "marks": 1,
+    "common_error": "錯誤使用售價代替成本作為分母，或忘記乘以 100%",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 5,
+    "what": "代入數值：$15\\% = \\frac{690 - C}{C}$"
+   },
+   {
+    "step": 6,
+    "what": "解方程求成本 $C$"
+   }
+  ],
+  "exam_report_insight": "考評報告指出少數考生混淆標價與售價，這在計算利潤率時尤為關鍵，因利潤率公式中的分母必須是成本而非標價或售價。",
+  "scaffolding_hints": [
+   "提示 1：七五折代表售價是標價的 $75\\%$（即 $0.75$ 倍）。",
+   "提示 2：利潤率公式中，分母永遠是「成本」，分子是「售價減成本」。",
+   "提示 3：先求出標價，再設成本為未知數建立等式。"
+  ],
+  "quick_solution_strategy": "先除 $0.75$ 得標價；再用 $(690-C)/C=0.15$ 解 $C$。"
+ },
+ "skills": {
+  "topic_id": "T-PCT",
+  "knowledge_point_ids": [
+   "K-PCT-01",
+   "K-PCT-02"
+  ],
+  "formula_ids": [
+   "F-PCT-01",
+   "F-PCT-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "4": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

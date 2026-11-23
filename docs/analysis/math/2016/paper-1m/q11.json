@@ -1,0 +1,130 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2016",
+  "paper": "Paper 1M",
+  "qno": "11",
+  "hash": "#2016P1MQ11"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "微分法",
+   "secondary_topics": [
+    "指數與對數函數",
+    "積分應用",
+    "梯形則"
+   ],
+   "required_formulas": [
+    "\\frac{d}{dt} \\ln(u) = \\frac{u'}{u}",
+    "\\int_a^b f(t) dt \\approx \\frac{h}{2}[y_0 + 2(y_1+y_2+\\dots+y_{n-1}) + y_n]",
+    "\\frac{d}{dt}(t^n) = nt^{n-1}"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 420,
+   "marks": 13
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "計算 A(t) 在 t=0,2,4,6,8,10,12 的函數值。",
+    "marks": 1,
+    "common_error": "計算對數內項錯誤或代入 t 值時算錯平方差。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "應用梯形則公式估算 P_1，注意步長 h=2。",
+    "marks": 3,
+    "common_error": "遺漏首尾項係數為 1，中間項係數為 2；或 h 取值錯誤。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "求 A'(t) 並化簡，準備求二階導數。",
+    "marks": 1,
+    "common_error": "鏈式法則應用錯誤，忘記除以內層函數的導數。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "求 A''(t) 並化簡至最簡分式形式。",
+    "marks": 1,
+    "common_error": "商法則或鏈式法則運算出錯，未合併項。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "對 B(t) 進行變數替換或直接積分求 P_2。",
+    "marks": 1,
+    "common_error": "處理根號時指數運算錯誤，或積分常數遺漏（雖定積分不需）。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "比較 |P_1 - P_2| 與 2 的大小並下結論。",
+    "marks": 1,
+    "common_error": "計算差值錯誤或判斷不等號方向錯誤。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "此題結合微積分與數值方法，考生需熟練處理對數與根號函數的導數及積分，並能正確運用梯形則進行近似計算，同時具備數值比較與邏輯判斷能力。",
+  "scaffolding_hints": [
+   "提示 1：梯形則公式為 \\frac{h}{2}[y_0 + 2(y_1+\\dots+y_{n-1}) + y_n]，此題 n=4，故有 5 個點。",
+   "提示 2：求 A''(t) 時，先將 A'(t) = \\frac{2t-8}{t^2-8t+95} 視為商數形式再求導。",
+   "提示 3：B(t) 積分可令 u=t+3，則 t=u-3，轉化為 \\int (u-1)/\\sqrt{u} du 易於計算。"
+  ],
+  "quick_solution_strategy": "先算出 A(t) 的 7 個點值代入梯形公式；接著用商法則求二階導數；B(t) 積分用換元法；最後比較絕對差值。"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

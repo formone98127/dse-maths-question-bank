@@ -1,0 +1,118 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 1M",
+  "qno": "11",
+  "hash": "#2022P1MQ11"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "積分法",
+   "secondary_topics": [
+    "梯形法",
+    "分部積分法",
+    "微積分基本定理"
+   ],
+   "required_formulas": [
+    "\\frac{h}{2}[y_0 + 2(y_1+...+y_{n-1}) + y_n]",
+    "\\int u dv = uv - \\int v du",
+    "\\frac{d}{dx}(uv) = u'v + uv'"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 300,
+   "marks": 7
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "計算梯形法近似值，h=0.25，列出 y_0 至 y_5 之值。",
+    "marks": 2,
+    "common_error": "h 計算錯誤或漏掉首尾項；y 值代入 e^x ln x 時計算失誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "利用乘積求導公式展開 d/dx(xe^x ln x)，整理被積函數。",
+    "marks": 1,
+    "common_error": "忘記鏈式法則或商法則；符號錯誤導致無法合併項。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "確認被積函數等於題目所給，寫下不定積分結果。",
+    "marks": 1,
+    "common_error": "積分常數 C 遺漏；未將 xe^x ln x 視為單項直接寫出。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 4,
+    "what": "代入上下限 1 和 2，利用 (a) 與 (b) 結果計算 α 之估計值。",
+    "marks": 2,
+    "common_error": "直接重新計算定積分而非使用之前結果；代入數值時粗心。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "比較所得 α 與 4 之大小，並根據誤差性質解釋為何不認同。",
+    "marks": 1,
+    "common_error": "僅比較數值未提及梯形法高估/低估特性；邏輯不清。",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "此題結合數值積分與解析積分技巧，測試學生能否靈活運用已知結果進行推導及誤差分析，屬典型 DSE 卷一綜合應用題型。",
+  "scaffolding_hints": [
+   "梯形法公式中 h 為區間長度，注意 n=5 時共有 6 個點。",
+   "乘積求導公式 (uv)' = u'v + uv' 是解此不定積分關鍵。",
+   "梯形法對凸函數通常會高估面積，可用於判斷 α 與 4 的關係。"
+  ],
+  "quick_solution_strategy": "先算梯形和，再求導展開被積式得原函數，代入限值後比較大小並引用誤差理論解釋。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

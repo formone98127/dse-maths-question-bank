@@ -1,0 +1,134 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 1",
+  "qno": "8",
+  "hash": "#2022P1Q8"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "平面幾何",
+   "secondary_topics": [
+    "三角形全等 (SAS)",
+    "平行線性質",
+    "圓周角/弦切角概念"
+   ],
+   "required_formulas": [
+    "SAS 全等判定定理",
+    "平行線內錯角相等",
+    "三角形內角和 = 180°"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 120,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用平行線性質找出兩組對應角相等：∠BAC=∠AED 及 ∠CAD=∠ADE。",
+    "marks": 2,
+    "common_error": "誤認為∠BAC與∠DAE是對頂角而直接相等，忽略平行線條件。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "結合已知邊 AB=AE 及已證角，使用 SAS 定理證明 ΔABC ≅ ΔAED。",
+    "marks": 1,
+    "common_error": "寫出全等結論但漏掉「由 (a) 得」或對應點順序錯誤（如寫成ΔACB≅ΔADE）。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "由全等得出對應角相等：∠ACB = ∠ADE。",
+    "marks": 1,
+    "common_error": "未能正確找出對應角，或混淆∠ACB與∠AED的關係。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "利用平行線 AC//ED 得出 ∠CAE + ∠AED = 180°，計算出 ∠CAE。",
+    "marks": 1,
+    "common_error": "忘記同旁內角互補，直接相加角度導致錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "在 ΔACE 中利用內角和求 ∠ACE（即所求∠ACD）。",
+    "marks": 1,
+    "common_error": "計算錯誤或將∠CAE與∠CAD混淆。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "檢查答案合理性：角度是否為正數且小於 180°。",
+    "marks": 0,
+    "common_error": "無",
+    "error_category": null
+   }
+  ],
+  "exam_report_insight": "根據考評報告，考生常誤判對頂角導致 (a) 步失分；(b) 步需穩固平行線性質與全等推導，避免跳步。",
+  "scaffolding_hints": [
+   "提示 1：畫出平行符號 //，標註內錯角相等的位置。",
+   "提示 2：SAS 需要「邊 - 角- 邊」，確認哪兩個角是由平行線導出的。",
+   "提示 3：(b) 問中 ∠ACD 是 ΔACE 的一部分，先求 ΔACE 的第三個角。"
+  ],
+  "quick_solution_strategy": "由 AC//ED 得∠BAC=∠AED (錯！應為∠CAD=∠ADE)，再配合 AB=AE 及∠ABC=∠AED，用 SAS 證全等。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-01",
+   "K-GEO-02"
+  ],
+  "formula_ids": [
+   "F-GEO-01",
+   "F-GEO-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-ALG",
+    "error_category": null
+   }
+  }
+ }
+}

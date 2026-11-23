@@ -1,0 +1,120 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 1M",
+  "qno": "3",
+  "hash": "#2014P1MQ3"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "微分法",
+   "secondary_topics": [
+    "積分法",
+    "代數展開"
+   ],
+   "required_formulas": [
+    "\\frac{dy}{dx} = \\text{slope}",
+    "\\int f(x) dx = F(x) + C",
+    "\\left(a-b\\right)^3 = a^3 - 3a^2b + 3ab^2 - b^3"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 7
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "代入 x=1,y=5 求切線斜率 k，寫出點斜式方程。",
+    "marks": 2,
+    "common_error": "忘記括號立方導致斜率計算錯誤，或混淆曲線與切線方程。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "展開 (2x-1/x)^3，注意符號與冪次規則。",
+    "marks": 2,
+    "common_error": "二項式展開漏項或符號錯誤，特別是負項的處理。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "將 dy/dx 替換為展開後的表達式並積分求 y。",
+    "marks": 1,
+    "common_error": "積分時常數 C 遺漏，或 x^-n 積分指數錯誤（+1 忘記）。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 4,
+    "what": "代入 P(1,5) 解出積分常數 C。",
+    "marks": 1,
+    "common_error": "代入時計算錯誤，或忽略 x>0 定義域限制。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "寫出 S 的完整方程並檢查格式與定義域。",
+    "marks": 1,
+    "common_error": "未標註 x>0 或簡化錯誤導致表達式不正確。",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "此題結合微分與積分，考評報告雖無直接數據，但類似題目常因展開與積分細節失誤扣分，建議學生熟練二項式展開與冪函數積分技巧。",
+  "scaffolding_hints": [
+   "回顧點斜式方程公式：y - y1 = m(x - x1)。",
+   "練習 (a-b)^3 的完整展開，特別注意中間項符號。",
+   "積分時記得將 1/x^2 寫為 x^{-2} 以便應用指數法則。"
+  ],
+  "quick_solution_strategy": "先算斜率寫切線；再展開並積分得 S，最後代點求 C。"
+ },
+ "skills": {
+  "topic_id": "T-PROB",
+  "knowledge_point_ids": [
+   "K-PROB-01",
+   "K-PROB-02"
+  ],
+  "formula_ids": [
+   "F-PROB-01",
+   "F-PROB-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "4": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

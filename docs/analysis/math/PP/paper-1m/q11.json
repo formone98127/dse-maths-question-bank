@@ -1,0 +1,129 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "PP",
+  "paper": "Paper 1M",
+  "qno": "11",
+  "hash": "#PPP1MQ11"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "微分方程",
+   "secondary_topics": [
+    "對數運算",
+    "極值問題",
+    "指數函數性質"
+   ],
+   "required_formulas": [
+    "\\ln\\left(\\frac{A}{B}\\right) = \\ln A - \\ln B",
+    "\\frac{d}{dt}(uv) = u'v + uv'"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 420,
+   "marks": 15
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "將 P'(t) 代入對數式並化簡為 mt+c 形式",
+    "marks": 1,
+    "common_error": "忘記除以 t 導致常數項錯誤",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "計算 (t, ln(P'/t)) 坐標並繪圖選取直線",
+    "marks": 1,
+    "common_error": "讀表數據錯誤或描點不準確",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 3,
+    "what": "由直線斜率與截距估計整數 a 與 k",
+    "marks": 5,
+    "common_error": "忽略題目要求為整數而四捨五入錯誤",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 4,
+    "what": "對 P'(t) 求導找出極大值點 t",
+    "marks": 2,
+    "common_error": "乘積法則應用錯誤或解方程失誤",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "積分 P'(t) 並利用 P(0)=30 定常數 C",
+    "marks": 4,
+    "common_error": "忽略積分常數或代入初始條件錯誤",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "利用極限性質求 t 趨近無限時的 P(t)",
+    "marks": 2,
+    "common_error": "誤判指數增長快於線性項導致錯誤",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "此題結合數據分析與微積分，強調學生將非線性模型轉化為直線關係以估計參數的能力，並需熟練處理指數函數的極限行為。",
+  "scaffolding_hints": [
+   "提示：取對數時注意 \\ln(AB) = \\ln A + \\ln B 與 \\ln(A/B) 的區別。",
+   "提示：直線方程 y=mx+c 中，斜率 m 對應 a/20，截距 c 對應 \\ln k。",
+   "提示：求極大值時令 P''(t)=0 或觀察 P'(t) 圖形頂點位置。"
+  ],
+  "quick_solution_strategy": "先化簡對數式得直線方程，由圖讀斜率截距定 a,k；再積分求 P(t)，最後用極限判斷長期趨勢。"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "3": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "4": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

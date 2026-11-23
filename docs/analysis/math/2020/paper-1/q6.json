@@ -1,0 +1,105 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2020",
+  "paper": "Paper 1",
+  "qno": "6",
+  "hash": "#2020P1Q6"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "一元一次不等式",
+   "secondary_topics": [
+    "複合不等式 (或/且)",
+    "解不等式組",
+    "負整數範圍"
+   ],
+   "required_formulas": [
+    "$3-x > \\frac{7-x}{2}$",
+    "$5+x > 4$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 8
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "解不等式 $3 - x > \\frac{7 - x}{2}$，得 $x < 5$。",
+    "marks": 2,
+    "common_error": "去分母時漏乘左邊項或符號變錯號",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "解不等式 $5 + x > 4$，得 $x > -1$。",
+    "marks": 2,
+    "common_error": "移項時忘記改變符號",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "合併結果：$x < 5$ 或 $x > -1$，寫出解集。",
+    "marks": 2,
+    "common_error": "誤以為需同時滿足兩者而寫成交集",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "畫數軸確認：所有實數均滿足（因兩區間覆蓋全數線）。",
+    "marks": 2,
+    "common_error": "錯誤判斷並集範圍，遺漏中間重疊部分",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "考生常混淆「或」與「且」的邏輯，導致將解集誤判為空集或小於 -1 的區間。",
+  "scaffolding_hints": [
+   "提醒：「或」代表滿足任一即可，解集為並集。",
+   "提示：先分別解兩個簡單不等式再合併。",
+   "引導：畫數軸時用不同顏色標示兩解集範圍。"
+  ],
+  "quick_solution_strategy": "分別解出 $x<5$ 與 $x>-1$，因是「或」，故所有實數皆滿足，最大負整數為 -1。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-05"
+  ],
+  "formula_ids": [
+   "F-EQN-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

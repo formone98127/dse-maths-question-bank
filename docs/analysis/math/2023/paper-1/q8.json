@@ -1,0 +1,117 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2023",
+  "paper": "Paper 1",
+  "qno": "8",
+  "hash": "#2023P1Q8"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "平面幾何",
+   "secondary_topics": [
+    "相似三角形證明",
+    "畢氏定理應用",
+    "直角三角形判定"
+   ],
+   "required_formulas": [
+    "$\\triangle ACE \\sim \\triangle BDE$ (AA 相似)",
+    "$\\frac{AC}{BD} = \\frac{CE}{DE}$",
+    "$a^2 + b^2 = c^2$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 180,
+   "marks": 5
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用平行線性質證明角相等，完成相似三角形證明。",
+    "marks": 2,
+    "common_error": "漏寫「對頂角相等」或平行線內錯角/同位角理由。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 2,
+    "what": "利用相似比計算 $DE$ 的長度。",
+    "marks": 1,
+    "common_error": "比例式寫錯對應邊（如將 $AC$ 對 $BD$ 卻算出 $AE$）。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "計算 $BE$ 的長度（利用 $AB = AE + BE$）。",
+    "marks": 1,
+    "common_error": "忘記減去 $AE$ 直接當作 $BE$，或算錯 $AE$。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "檢查三邊長度是否滿足畢氏定理（斜邊最大）。",
+    "marks": 1,
+    "common_error": "只比較兩短邊平方和，忽略斜邊必須是 $BE$。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 5,
+    "what": "下結論並解釋原因（不滿足畢氏定理）。",
+    "marks": 0,
+    "common_error": "未明確說明「因為 $15^2 \\neq 7^2 + BE^2$」。",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "考生常忽略直角三角形斜邊必為最長邊這一關鍵性質，導致在計算出三邊後仍誤判為直角三角形。",
+  "scaffolding_hints": [
+   "提示：平行線 $AC // DB$ 會產生哪兩組相等的角？",
+   "知識：相似三角形的對應邊成比例，注意哪條邊對應哪條邊。",
+   "破題：算出三邊後，先找出最長的邊作為假設斜邊進行驗證。"
+  ],
+  "quick_solution_strategy": "先證相似得 $DE=10.5$，再求 $AE=12, BE=8$。檢查 $7^2+8^2 \\neq 10.5^2$，故非直角三角形。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-05"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "2": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "5": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

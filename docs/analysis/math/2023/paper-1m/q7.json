@@ -1,0 +1,135 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2023",
+  "paper": "Paper 1M",
+  "qno": "7",
+  "hash": "#2023P1MQ7"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "定積分",
+   "secondary_topics": [
+    "對數函數性質",
+    "多項式因式分解",
+    "面積計算"
+   ],
+   "required_formulas": [
+    "\\int \\frac{u^n}{x} dx = \\frac{x^n}{n} + C \\quad (\\text{令 } u=\\ln x)",
+    "\\int_a^b f(x) dx = F(b) - F(a)"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "令 y=0 解方程求 x 截距，利用對數性質化簡。",
+    "marks": 1,
+    "common_error": "忘記 ln(e)=1 或解二次方程時漏根。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "將被積函數分子分解為 (ln x - 1)(ln x - 2)。",
+    "marks": 1,
+    "common_error": "因式分解錯誤或無法處理分母 x。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "設定 u = ln x，將積分轉換為關於 u 的多項式積分。",
+    "marks": 1,
+    "common_error": "微分 du = dx/x 忘記換元係數或範圍錯誤。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 4,
+    "what": "計算定積分上下限：x=1->u=0, x=9->u=ln 9。",
+    "marks": 1,
+    "common_error": "代入上下限時符號錯誤或計算數值錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "執行多項式積分運算並代入上限減下限求值。",
+    "marks": 1,
+    "common_error": "積分公式記錯（如 u^2/2）或代數化簡錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "確認結果為正數，若負則取絕對值（面積定義）。",
+    "marks": 1,
+    "common_error": "直接輸出負值而未考慮幾何意義。",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "此題結合對數變換與多項式積分，是 DSE 卷一經典的「換元法」綜合應用題，旨在測試學生處理超越函數積分的靈活性。",
+  "scaffolding_hints": [
+   "Hint1: 觀察分母有 x，提示令 u = ln x 可簡化 dx/x。",
+   "Hint2: 分子是關於 ln x 的二次式，先嘗試因式分解。",
+   "Hint3: 面積公式為 ∫|f(x)|dx，但需先判斷區間內函數正負。"
+  ],
+  "quick_solution_strategy": "令 u=lnx 換元，分子分解後變為 (u-1)(u-2)，積分限 0 到 ln9，直接計算多項式定積分即可。"
+ },
+ "skills": {
+  "topic_id": "T-MEN",
+  "knowledge_point_ids": [
+   "K-MEN-01",
+   "K-MEN-02"
+  ],
+  "formula_ids": [
+   "F-MEN-01",
+   "F-MEN-02",
+   "F-MEN-03",
+   "F-MEN-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "4": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

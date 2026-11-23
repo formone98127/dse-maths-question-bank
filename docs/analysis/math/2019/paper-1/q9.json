@@ -1,0 +1,122 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2019",
+  "paper": "Paper 1",
+  "qno": "9",
+  "hash": "#2019P1Q9"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "立體幾何",
+   "secondary_topics": [
+    "球體體積公式",
+    "球體表面積公式",
+    "代數化簡"
+   ],
+   "required_formulas": [
+    "$V = \\frac{4}{3}\\pi r^3$",
+    "$A = 4\\pi r^2$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 5
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "設較小球半徑為 r，則大球半徑為 2r。",
+    "marks": 1,
+    "common_error": "未正確理解「大球半徑等於小球直徑」的數量關係。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 2,
+    "what": "列出體積和方程：$\\frac{4}{3}\\pi (2r)^3 + \\frac{4}{3}\\pi r^3 = 324\\pi$。",
+    "marks": 1,
+    "common_error": "立方展開錯誤或漏掉 $\\frac{4}{3}\\pi$ 係數。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "化簡方程解出 r，並計算大球半徑 2r 的數值。",
+    "marks": 1,
+    "common_error": "解一元三次方程時計算錯誤或遺漏根號。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "代入公式計算較大的球體體積（a）部分答案。",
+    "marks": 1,
+    "common_error": "忘記將 r=6 代入 $\\frac{4}{3}\\pi (2r)^3$ 而直接算錯。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "分別計算兩球表面積並求和（b）部分答案。",
+    "marks": 1,
+    "common_error": "混淆體積公式與表面積公式，或漏算小球表面積。",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "根據考評報告，考生普遍能正確處理代數化簡，但需注意區分體積與表面積的定義，避免在 (b) 部分因公式混淆而失分。",
+  "scaffolding_hints": [
+   "Hint1: 設未知數時，利用直徑與半徑關係簡化變數。",
+   "Hint2: 記住球體體積是 $\\frac{4}{3}\\pi r^3$，表面積是 $4\\pi r^2$。",
+   "Hint3: 先解出半徑 r，再分別代入兩個公式計算。"
+  ],
+  "quick_solution_strategy": "設小球半徑 r，大球 2r。體積和方程化簡得 r=6。大球體積 $4\\pi(12)^3$，表面積和 $4\\pi(2r)^2 + 4\\pi r^2$"
+ },
+ "skills": {
+  "topic_id": "T-MEN",
+  "knowledge_point_ids": [
+   "K-MEN-01",
+   "K-MEN-02"
+  ],
+  "formula_ids": [
+   "F-MEN-01",
+   "F-MEN-02",
+   "F-MEN-03",
+   "F-MEN-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "2": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

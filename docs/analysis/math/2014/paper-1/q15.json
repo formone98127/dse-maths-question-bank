@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 1",
+  "qno": "15",
+  "hash": "#2014P1Q15"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "對數",
+   "secondary_topics": [
+    "指數與對數轉換",
+    "直線方程斜率與截距"
+   ],
+   "required_formulas": [
+    "$\\log_{a}b = \\frac{\\ln b}{\\ln a}$",
+    "$y = Ax^k \\implies \\log y = \\log A + k \\log x$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 3
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用對數換底公式將 $\\log_8 y$ 轉換為以 4 為底的式子。",
+    "marks": 1,
+    "common_error": "誤以為截距是垂直軸截距而非水平軸截距，或換底計算錯誤。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 2,
+    "what": "建立直線方程 $\\log_4 y = m \\log_4 x + c$ 並代入斜率與截距。",
+    "marks": 1,
+    "common_error": "混淆水平軸截距（$y=0$）與垂直軸截距（$x=0$），導致 $c$ 值錯誤。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 3,
+    "what": "將方程整理為 $y = A x^k$ 形式，解出常數 $A$ 與 $k$。",
+    "marks": 1,
+    "common_error": "忘記將對數形式轉換回指數形式，或計算 $4^c$ 時出錯。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "考生常誤讀圖表截距定義（混淆水平與垂直軸），且對換底公式應用不熟練，導致無法正確建立線性關係式。",
+  "scaffolding_hints": [
+   "提示：換底公式 $\\log_8 y = \\frac{\\ln y}{\\ln 8} = \\frac{\\ln y}{3 \\ln 2}$ 與 $\\log_4 x = \\frac{\\ln x}{\\ln 4} = \\frac{\\ln x}{2 \\ln 2}$ 的係數關係。",
+   "提示：水平軸截距意味著當 $y=1$（對數為 0）時，$x$ 的值為何？注意對數定義域。",
+   "提示：最終目標是消除對數符號，利用指數定義 $y = e^{\\ln y}$ 還原。"
+  ],
+  "quick_solution_strategy": "換底使兩邊同底（如均以 2 為底），代入斜率與截距求係數，再取指數還原。"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "2": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "3": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

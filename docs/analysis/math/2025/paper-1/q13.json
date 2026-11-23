@@ -1,0 +1,133 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": 2025,
+  "paper": "Paper 1",
+  "qno": 13,
+  "hash": "#2025P1Q13"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "軌跡與直線方程",
+   "secondary_topics": [
+    "垂直平分線性質",
+    "截距式直線方程",
+    "幾何圖形面積計算"
+   ],
+   "required_formulas": [
+    "$MP=NP \\implies P$ 在 $MN$ 的垂直平分線上",
+    "$\\text{Area} = \\frac{1}{2}|x_1(y_2-y_3) + x_2(y_3-y_1) + x_3(y_1-y_2)|$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 60,
+   "marks": 7
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "由 $MP=NP$ 判定 $\\Gamma$ 為 $MN$ 垂直平分線",
+    "marks": 1,
+    "common_error": "誤以為是角平分線或中點連線",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "利用 $\\Gamma$ 方程求 $MN$ 中點坐標",
+    "marks": 1,
+    "common_error": "解聯立方程時計算錯誤",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "由中點與斜率關係求 $L$ 方程",
+    "marks": 2,
+    "common_error": "忽略垂直平分線斜率互為負倒數",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 4,
+    "what": "求 $\\Gamma$ 與 $L$ 交點 $Q$ 及 $x$ 軸截距 $R$",
+    "marks": 1,
+    "common_error": "解二元一次方程組時出錯",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "求 $\\Gamma$ 與 $y$ 軸截距 $N$ 及 $L$ 與 $x$ 軸截距（確認點）",
+    "marks": 1,
+    "common_error": "混淆題目給定與求出的截距點",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 6,
+    "what": "計算四邊形 $ONQR$ 面積（分割成兩個三角形）",
+    "marks": 1,
+    "common_error": "誤用大三角減小三角或公式記錯",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "考生常忽略垂直平分線必過 $MN$ 中點，導致無法正確建立 $L$ 的方程；計算面積時亦易混淆不同三角形的邊界。",
+  "scaffolding_hints": [
+   "回想：到兩點距離相等的點在哪條線上？",
+   "垂直平分線必經過線段的中點，這是關鍵連結。",
+   "先畫圖標出 $O, N, M, Q, R$ 的位置關係再計算。"
+  ],
+  "quick_solution_strategy": "由 $\\Gamma$ 得中點與斜率，反推 $L$；求交點後分割四邊形為 $\\triangle ONQ + \\triangle OQR$ 或 $\\triangle ONR - \\triangle QNR$"
+ },
+ "skills": {
+  "topic_id": "T-LOC",
+  "knowledge_point_ids": [
+   "K-LOC-01",
+   "K-LOC-02"
+  ],
+  "formula_ids": [
+   "F-LOC-01",
+   "F-LOC-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-LOC-01",
+    "formula_id": "F-LOC-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-LOC-01",
+    "formula_id": "F-LOC-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-LOC-01",
+    "formula_id": "F-LOC-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "4": {
+    "knowledge_point_id": "K-LOC-01",
+    "formula_id": "F-LOC-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-LOC-01",
+    "formula_id": "F-LOC-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "6": {
+    "knowledge_point_id": "K-LOC-01",
+    "formula_id": "F-LOC-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

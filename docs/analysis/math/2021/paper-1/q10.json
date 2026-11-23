@@ -1,0 +1,132 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 1",
+  "qno": "10",
+  "hash": "#2021P1Q10"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "函數與變分",
+   "secondary_topics": [
+    "二次函數性質",
+    "圖像平移",
+    "截距定義"
+   ],
+   "required_formulas": [
+    "$f(x) = a(x+4)^2 + k$",
+    "$y$ 截距：令 $x=0$",
+    "$x$ 截距：令 $y=0$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "設定 $f(x) = a(x+4)^2 + k$，利用 $f(-3)=0$ 代入求關係式。",
+    "marks": 1,
+    "common_error": "忽略「一部分為常數」設為 $k$，直接寫成一次函數。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 2,
+    "what": "利用 $f(2)=105$ 聯立解出參數 $a$ 與 $k$ 的值。",
+    "marks": 1,
+    "common_error": "計算錯誤導致 $a$ 或 $k$ 值不正確，無法進行下一步。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "寫出完整 $f(x)$ 表達式並代入 $x=0$ 求 $f(0)$。",
+    "marks": 1,
+    "common_error": "忘記將 $k$ 值代回最終答案，只寫 $a(4)^2$。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 4,
+    "what": "構建 $G: y = f(x)+3$，令 $x=0$ 求 $y$ 截距。",
+    "marks": 1,
+    "common_error": "未加 3 直接求原函數截距，或混淆 $f(0)$ 與 $G$ 的截距。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 5,
+    "what": "令 $y=0$ 解方程求 $G$ 的 $x$ 截距。",
+    "marks": 1,
+    "common_error": "解二次方程時漏根或算錯平方根符號。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "檢查答案合理性（如截距是否為負數等）。",
+    "marks": 1,
+    "common_error": "未檢查導致 $x$ 截距寫成正值而實際應為負。",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "考評報告指出約 25% 考生未能正確求 $f(0)$，多因誤解「變分」含常數項；而 $G$ 的 $x$ 截距常見錯誤是直接抄寫原函數 $x$ 截距，忽略垂直平移對 $x$ 截距無影響但需重新計算 $y=0$ 條件。",
+  "scaffolding_hints": [
+   "提示 1：題目說「一部分為常數」，代表二次項外還有一個獨立常數 $k$。",
+   "提示 2：變分（Vary）意味著隨 $(x+4)^2$ 變化，故形式必為 $a(x+4)^2+k$。",
+   "提示 3：圖像向上平移 3 單位，$y$ 截距會變，但 $x$ 截距需重新解 $f(x)+3=0$"
+  ],
+  "quick_solution_strategy": "設 $f(x)=a(x+4)^2+k$，代兩點求 $a,k$；(a) 代 $x=0$；(b)(i) 代 $x=0$ 加 3；(ii) 令整體為 0 解 $x$"
+ },
+ "skills": {
+  "topic_id": "T-VAR",
+  "knowledge_point_ids": [
+   "K-VAR-01"
+  ],
+  "formula_ids": [
+   "F-VAR-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "2": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "4": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "5": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

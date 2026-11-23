@@ -1,0 +1,134 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 1",
+  "qno": "19",
+  "hash": "#2024P1Q19"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "二次函數與圖形變換",
+   "secondary_topics": [
+    "配方法求頂點",
+    "幾何變換（縮放/平移）",
+    "等差等比數列性質",
+    "菱形判定條件"
+   ],
+   "required_formulas": [
+    "$y = a(x-h)^2 + k \\Rightarrow V(h,k)$",
+    "$f\\left(\\frac{x}{k}\\right) \\text{ 表示 } x \\text{ 軸方向縮放 } k \\text{ 倍}",
+    "$a_1, a, a_2 \\text{ 等差} \\Rightarrow a = \\frac{a_1+a_2}{2}$",
+    "$b_1, b, b_2 \\text{ 等比} \\Rightarrow b^2 = b_1 b_2$",
+    "$\\text{菱形條件：四邊相等或對角線互相垂直平分}$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 480,
+   "marks": 20
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "配方法求 P 點坐標 (a) 及描述變換意義 (b)",
+    "marks": 4,
+    "common_error": "配方法算錯頂點；混淆 x 軸縮放方向（應為橫向拉伸而非壓縮）",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "利用等差數列性質建立 a1, an+1, a2 關係式",
+    "marks": 3,
+    "common_error": "忘記 n 是變數導致方程多解或漏解",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "利用等比數列性質建立 b1, 4-m, b2 關係式並聯立求解 m,n",
+    "marks": 5,
+    "common_error": "忽略 mn<0 條件導致出現不合理解；計算平方根時漏掉負號",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 4,
+    "what": "代入 m,n 求出 P,Q 確切坐標 (c)(i)",
+    "marks": 3,
+    "common_error": "代回數值時計算錯誤",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "計算 PR 與 QS 中點是否重合及斜率乘積是否為 -1 (c)(ii)",
+    "marks": 4,
+    "common_error": "僅檢查邊長相等而忽略對角線性質；未考慮 t 的範圍限制",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 6,
+    "what": "根據菱形定義下結論並解釋 (c)(ii)",
+    "marks": 1,
+    "common_error": "未明確說明為何不滿足菱形條件",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "此題結合二次函數配方法、圖形變換及數列性質，測試學生將代數結構轉化為幾何條件的能力，屬高階綜合應用題。",
+  "scaffolding_hints": [
+   "先完成 (a)(b) 確保頂點坐標表達式正確，這是後續計算基礎。",
+   "等差數列取中間項等於兩端項平均，等比數列中間項平方等於兩端項乘積。",
+   "菱形判定可選「對角線互相垂直平分」或「四邊相等」，建議用中點與斜率較簡便。"
+  ],
+  "quick_solution_strategy": "先配方法得 P(m, n+m^2+4m)，變換後 Q(5m, n+m^2+4m+7)。利用等差等比列方程解 m,n，再驗證菱形條件（中點重合且斜率垂直）。"
+ },
+ "skills": {
+  "topic_id": "T-FUN",
+  "knowledge_point_ids": [
+   "K-FUN-01",
+   "K-FUN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "4": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "6": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

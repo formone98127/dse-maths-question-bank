@@ -1,0 +1,116 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "PP",
+  "paper": "Paper 1M",
+  "qno": "1",
+  "hash": "#PPP1MQ1"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "指數級數",
+   "secondary_topics": [
+    "二項式定理",
+    "泰勒展開",
+    "對數運算"
+   ],
+   "required_formulas": [
+    "(a+b)^n = \\sum_{k=0}^n \\binom{n}{k} a^{n-k} b^k",
+    "e^x = 1 + x + \\frac{x^2}{2!} + \\cdots"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 150,
+   "marks": 5
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "展開 (2x+1)^3 至 x^2 項",
+    "marks": 1,
+    "common_error": "忘記二項式係數或計算錯誤",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "展開 e^{-ax} 至 x^2 項",
+    "marks": 1,
+    "common_error": "代入 -ax 時符號搞錯或忘記階乘",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "將兩式相除，保留至 x^2 項",
+    "marks": 1,
+    "common_error": "除法時忽略低次項影響高次係數",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 4,
+    "what": "找出 x^2 項的係數表達式",
+    "marks": 1,
+    "common_error": "合併同類項時計算出錯",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "令係數等於 -4 並解方程求 a",
+    "marks": 1,
+    "common_error": "解一元二次方程遺漏根或計算錯誤",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "此題測試學生在處理指數與二項式混合展開時的耐心與準確度，常見失分點在於複雜除法運算中的低次項忽略。",
+  "scaffolding_hints": [
+   "先分別寫出兩個展開式的前三項。",
+   "利用 (1+u)/(1+v) ≈ (1+u)(1-v+v^2) 簡化除法。",
+   "專注收集 x^2 的係數，忽略常數與 x 項。"
+  ],
+  "quick_solution_strategy": "分別展開分子分母至 x^2，用 (1+A)/(1+B)≈1+(A-B)+B^2-AB 快速合併 x^2 係數。"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "4": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

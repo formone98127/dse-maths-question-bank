@@ -1,0 +1,107 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 1",
+  "qno": "6",
+  "hash": "#2024P1Q6"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "百分數",
+   "secondary_topics": [
+    "利潤與虧損",
+    "折扣問題"
+   ],
+   "required_formulas": [
+    "$\\text{標價} = \\text{成本} \\times (1 + \\text{加成率})$",
+    "$\\text{售價} = \\text{標價} \\times \\text{折扣}$",
+    "$\\text{利潤} = \\text{售價} - \\text{成本}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "設成本為 $x$，表達標價為 $1.4x$。",
+    "marks": 1,
+    "common_error": "直接設標價為 $x$ 而忽略成本與標價關係導致方程錯誤。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "計算七五折後的售價，即 $0.75 \\times 1.4x = 1.05x$。",
+    "marks": 1,
+    "common_error": "折扣乘法錯誤或混淆標價與成本關係。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "建立利潤方程：$1.05x - x = 13$，解得 $x = 260$。",
+    "marks": 1,
+    "common_error": "移項錯誤或忘記減去成本計算利潤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "代入 $x$ 求標價：$1.4 \\times 260 = 364$，答題完整。",
+    "marks": 1,
+    "common_error": "只寫出成本值而未回答題目所問的標價。",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "DSE 數學常結合百分數與利潤虧損考學生對變量間關係的理解，強調正確設定未知數以簡化計算流程。",
+  "scaffolding_hints": [
+   "Hint1: 先畫出成本、標價、售價三者關係圖。",
+   "Hint2: 記住七五折等於乘以 $0.75$。",
+   "Hint3: 利潤是售價減成本，不是減標價。"
+  ],
+  "quick_solution_strategy": "設成本為 $x$，標價 $1.4x$，售價 $1.05x$，列式 $1.05x - x = 13$ 解出 $x$ 再乘 $1.4$"
+ },
+ "skills": {
+  "topic_id": "T-PCT",
+  "knowledge_point_ids": [
+   "K-PCT-01",
+   "K-PCT-02"
+  ],
+  "formula_ids": [
+   "F-PCT-01",
+   "F-PCT-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

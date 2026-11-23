@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 1",
+  "qno": "1",
+  "hash": "#2014P1Q1"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "指數定律",
+   "secondary_topics": [
+    "負指數轉換",
+    "冪的乘法與除法"
+   ],
+   "required_formulas": [
+    "$ (a^m)^n = a^{mn} $",
+    "$ \\frac{a^m}{a^n} = a^{m-n} $",
+    "$ a^{-n} = \\frac{1}{a^n} $"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90,
+   "marks": 3
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "運用冪的乘法律處理分子中的括號：$(xy^{-2})^3 = x^3y^{-6}$",
+    "marks": 1,
+    "common_error": "忘記將 $y^{-2}$ 的指數乘以 3，誤算為 $y^{-2}$。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "合併同底數冪：$\\frac{x^3y^{-6}}{y^4} = x^3y^{-6-4} = x^3y^{-10}$",
+    "marks": 1,
+    "common_error": "除法運算時指數相減符號弄反，變成 $y^{-2}$。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "將負指數轉換為正指數形式：$x^3 \\cdot \\frac{1}{y^{10}}$",
+    "marks": 1,
+    "common_error": "未轉換負指數，直接寫成 $x^3y^{-10}$ 被扣分。",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "考評報告指出少數考生對負指數處理困難，常忽略冪的乘法律導致指數計算錯誤，或忘記題目要求「正指數」而直接提交含負指數答案。",
+  "scaffolding_hints": [
+   "提示 1：先處理括號內的冪，記得將每個因子的指數都乘以 3。",
+   "提示 2：同底數相除時，指數要相減，注意符號方向（上減下）。",
+   "提示 3：最後檢查是否所有指數皆為正數，若為負則移至分母。"
+  ],
+  "quick_solution_strategy": "先展開分子得 $x^3y^{-6}$，再與分母 $y^4$ 合併得 $x^3y^{-10}$，最後將 $y^{-10}$ 移到分母變為正指數。"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

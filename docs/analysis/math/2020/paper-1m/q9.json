@@ -1,0 +1,133 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2020",
+  "paper": "Paper 1M",
+  "qno": "9",
+  "hash": "#2020P1MQ9"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "正態分佈",
+   "secondary_topics": [
+    "條件機率",
+    "二項分佈"
+   ],
+   "required_formulas": [
+    "\\( P(Z < z) = \\Phi\\left(\\frac{x - \\mu}{\\sigma}\\right) \\)",
+    "\\( P(X > x) = 1 - P(X \\leq x) \\)",
+    "\\( P(k \\text{ successes}) = \\binom{n}{k} p^k q^{n-k} \\)"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 300,
+   "marks": 8
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "計算 Tom 到達時間 X 的標準化變數 Z，求 P(7:23 < X < 7:30)。(2)",
+    "marks": 2,
+    "common_error": "忘記將時間轉換為分鐘；誤用標準正態分佈表查錯值。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "計算 Mary 到達時間 Y，利用 P(Y<7:30)=0.6328 求其標準差。(1)",
+    "marks": 1,
+    "common_error": "混淆 Mary 與 Tom 的機率值；未正確反推 Z 分數。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "定義事件 G：Mary 與 Tom 同車，計算單日 P(G)。(1)",
+    "marks": 1,
+    "common_error": "未考慮兩人都抓同一班車的邏輯組合。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 4,
+    "what": "設定二項分佈模型，n=4, k=2, p=P(G)，計算機率。(1)",
+    "marks": 1,
+    "common_error": "搞錯 n 與 k 的定義；遺漏組合數 \\(\\binom{4}{2}\\)。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 5,
+    "what": "計算 Mary 抓 7:30 班的條件機率，作為最終答案。(1)",
+    "marks": 1,
+    "common_error": "混淆條件機率定義；未使用 P(A|B) = P(AB)/P(B)。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 6,
+    "what": "檢查所有時間單位轉換及數值計算準確性。(2)",
+    "marks": 1,
+    "common_error": "計算錯誤導致最終結果偏差；未檢查小數位精度。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "正態分佈應用題常考標準化變數轉換與條件機率結合，考生需熟練查表及二項分佈公式，避免混淆獨立事件與條件事件。",
+  "scaffolding_hints": [
+   "先將所有時間統一換算成分鐘，以 7:10 為基準點 0。",
+   "利用標準正態分佈表反推 Mary 的標準差，注意 P(Z<1)=0.8413, P(Z<2)=0.9772 等關鍵值。",
+   "同車事件需考慮兩人各自抓車的機率交集，再套用二項分佈計算第 4 天第 2 次發生。"
+  ],
+  "quick_solution_strategy": "先算 Tom 與 Mary 的到達時間範圍，求同車機率 p，再用 \\(\\binom{4}{2}p^2(1-p)^2\\) 解 (i)，最後用條件機率公式解 (ii)。"
+ },
+ "skills": {
+  "topic_id": "T-PROB",
+  "knowledge_point_ids": [
+   "K-PROB-01",
+   "K-PROB-02"
+  ],
+  "formula_ids": [
+   "F-PROB-01",
+   "F-PROB-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "4": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "5": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "6": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

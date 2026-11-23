@@ -1,0 +1,121 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "PP",
+  "paper": "Paper 1",
+  "qno": "9",
+  "hash": "#PPP1Q9"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "離差",
+   "secondary_topics": [
+    "集中趨勢",
+    "四分位距",
+    "中位數"
+   ],
+   "required_formulas": [
+    "Q1 = 第 25% 位置的數值",
+    "Q3 = 第 75% 位置的數值",
+    "IQR = Q3 - Q1",
+    "Median = 第 50% 位置的數值"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 240,
+   "marks": 5
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "計算總人數 N = r + 8 + 12 + s，並列出累積頻率表。",
+    "marks": 1,
+    "common_error": "忘記將 r 和 s 加入總人數計算中。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 2,
+    "what": "分析 Q1 位置：當 N 較小時，Q1 落在時數 2 或 3 的區間。",
+    "marks": 1,
+    "common_error": "錯誤判斷 Q1 的位置，忽略 r 對累積頻率的影響。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "分析 Q3 位置：當 N 較小時，Q3 落在時數 4 或 5 的區間。",
+    "marks": 1,
+    "common_error": "錯誤判斷 Q3 的位置，忽略 s 對累積頻率的影響。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "計算 IQR 的最小值（Q1 最大，Q3 最小）與最大值。",
+    "marks": 1,
+    "common_error": "混淆最小/最大值條件，或計算差值時出錯。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "代入 r=9，利用中位數為 3 的條件解不等式求 s 的可能值。",
+    "marks": 1,
+    "common_error": "未正確應用中位數定義或忽略 s 必須為正整數。",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "此題測試學生對離散數據集中趨勢與分散程度的理解，特別是處理未知參數時如何界定四分位距的極值範圍，是 DSE 數學卷一常見的統計分析題型。",
+  "scaffolding_hints": [
+   "Hint1: 先畫出累積頻率表，標明每個時數對應的累積人數。",
+   "Hint2: 記住 Q1 約在 N/4 位置，Q3 約在 3N/4 位置，中位數在 N/2 位置。",
+   "Hint3: 考慮 r 和 s 取最小正整數（1）與最大可能值對位置的影響。"
+  ],
+  "quick_solution_strategy": "先求總人數 N(r,s)，定 Q1,Q3 位置；極值視於 r,s 大小使 Q1 靠右、Q3 靠左；中位數條件列不等式解 s。"
+ },
+ "skills": {
+  "topic_id": "T-STA",
+  "knowledge_point_ids": [
+   "K-STA-01",
+   "K-STA-02"
+  ],
+  "formula_ids": [
+   "F-STA-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "2": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

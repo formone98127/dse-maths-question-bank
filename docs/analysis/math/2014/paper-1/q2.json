@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 1",
+  "qno": "2",
+  "hash": "#2014P1Q2"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "因式分解",
+   "secondary_topics": [
+    "二次三項式",
+    "提公因式法",
+    "配方法"
+   ],
+   "required_formulas": [
+    "$x^2 + bx + c = (x+p)(x+q)$, 其中 $p+q=b, pq=c$",
+    "$a^2 - b^2 = (a-b)(a+b)$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 3
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "分解 (a)：找出兩數和為 -2，積為 -3。",
+    "marks": 1,
+    "common_error": "符號錯誤，寫成 $(a+3)(a-1)$ 或 $(a-3)(a+1)$。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "分解 (b)：先提公因式 $b^2$，再處理括號內。",
+    "marks": 1,
+    "common_error": "忘記提 $b^2$，直接對六項進行錯誤分解。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "處理 (b) 括號內：視作關於 $a$ 的二次式。",
+    "marks": 1,
+    "common_error": "混淆變量，錯誤分解為 $(a+1)(a-3)$ 等無意義形式。",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "考生常忽略多項式中的公因式 $b^2$，導致後續分解邏輯混亂，需強調觀察整體結構的重要性。",
+  "scaffolding_hints": [
+   "先檢查是否有公因式可提。",
+   "將含 $a$ 的項視為主要變量，$b$ 視為常數處理。",
+   "利用十字相乘法或配方法分解二次三項式。"
+  ],
+  "quick_solution_strategy": "先看 (a) 得 $(a-3)(a+1)$；再看 (b) 提 $b^2$ 後，括號內同 (a)，故為 $b^2(a-3)(a+1)$。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-03"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

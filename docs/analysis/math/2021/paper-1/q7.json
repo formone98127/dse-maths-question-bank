@@ -1,0 +1,106 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 1",
+  "qno": "7",
+  "hash": "#2021P1Q7"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "極坐標與三角法",
+   "secondary_topics": [
+    "餘弦定理",
+    "等腰三角形性質"
+   ],
+   "required_formulas": [
+    "$\\cos \\theta = \\frac{a^2+b^2-c^2}{2ab}$",
+    "$\\text{周界} = a+b+c$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用極坐標定義，由角度直接計算 $\\angle POQ$。",
+    "marks": 2,
+    "common_error": "未將角度相減而誤以為是 $80^\\circ+140^\\circ$。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 2,
+    "what": "在 $\\triangle OPQ$ 中，利用餘弦定理建立方程求 $r$。",
+    "marks": 2,
+    "common_error": "誤以為 $PQ=r$ 或 $PQ=21/2$ 而跳過計算。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "解方程求出 $r$ 的確切數值，注意單位轉換。",
+    "marks": 1,
+    "common_error": "計算錯誤導致 $r$ 值不正確。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "觀察三角形邊長關係，確認是否為等腰或等邊。",
+    "marks": 1,
+    "common_error": "忽略 $OP=OQ=r$ 導致無法簡化周界計算。",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "考生常因忽略極坐標角度差而失分，且在餘弦定理應用時易誤判邊長關係，需加強幾何直觀與公式熟練度。",
+  "scaffolding_hints": [
+   "提示 1：極坐標中兩點夾角等於角度之差 $|\\theta_2 - \\theta_1|$。",
+   "提示 2：餘弦定理適用於已知兩邊及夾角求第三邊，此處 $OP=OQ=r$。",
+   "提示 3：若三角形兩邊相等且頂角為 $60^\\circ$，則必為等邊三角形。"
+  ],
+  "quick_solution_strategy": "先算角度差得 $60^\\circ$，再用餘弦定理 $21^2 = r^2+r^2 - 2r^2\\cos 60^\\circ$ 解出 $r=21$，最後周界為 $3r$"
+ },
+ "skills": {
+  "topic_id": "T-LIN",
+  "knowledge_point_ids": [
+   "K-LIN-01",
+   "K-LIN-02"
+  ],
+  "formula_ids": [
+   "F-LIN-01",
+   "F-LIN-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "2": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

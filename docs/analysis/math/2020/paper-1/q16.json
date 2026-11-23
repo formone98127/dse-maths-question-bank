@@ -1,0 +1,120 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2020",
+  "paper": "Paper 1",
+  "qno": "16",
+  "hash": "#2020P1Q16"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "數列",
+   "secondary_topics": [
+    "等比數列通項公式",
+    "等比數列求和公式",
+    "指數不等式"
+   ],
+   "required_formulas": [
+    "$a_n = a r^{n-1}$",
+    "$S_n = \\frac{a(r^n - 1)}{r - 1} (r \\neq 1)$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 300,
+   "marks": 5
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用第 3 項及第 6 項求公比 r 與首項 a",
+    "marks": 2,
+    "common_error": "混淆等差數列公式或計算指數錯誤導致 r 值錯誤",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "寫出首 n 項之和 Sn 的正確表達式",
+    "marks": 1,
+    "common_error": "使用第 n 項公式代替求和公式，或忘記 r≠1 條件",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "建立不等式 Sn > 8×10^18 並化簡",
+    "marks": 1,
+    "common_error": "化簡指數時計算錯誤，或忽略負號影響",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "取對數解出 n 的範圍",
+    "marks": 1,
+    "common_error": "對數運算錯誤或忘記不等號方向改變",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "確認 n 為整數並取最小值",
+    "marks": 0,
+    "common_error": "直接寫出非整數解或四捨五入錯誤",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "考生常混淆等比與等差公式，且在處理大指數不等式時缺乏對數運算技巧，導致無法正確求解 n。",
+  "scaffolding_hints": [
+   "先由 a3=144, a6=486 得 r^3 = 486/144 = 3.375",
+   "求和公式為 S_n = a(r^n - 1)/(r-1)，注意 r>1 時分母正負",
+   "將不等式轉為 r^n > ...，再取 log_r 解 n"
+  ],
+  "quick_solution_strategy": "先求 r=1.5, a=64；代入 Sn 公式得不等式，取對數解 n≥20，故最小值為 20。"
+ },
+ "skills": {
+  "topic_id": "T-SEQ",
+  "knowledge_point_ids": [
+   "K-SEQ-03",
+   "K-SEQ-04"
+  ],
+  "formula_ids": [
+   "F-SEQ-02",
+   "F-SEQ-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-SEQ-03",
+    "formula_id": "F-SEQ-02",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-SEQ-03",
+    "formula_id": "F-SEQ-02",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-SEQ-03",
+    "formula_id": "F-SEQ-02",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-SEQ-03",
+    "formula_id": "F-SEQ-02",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-SEQ-03",
+    "formula_id": "F-SEQ-02",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

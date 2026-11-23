@@ -1,0 +1,131 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 1M",
+  "qno": "9",
+  "hash": "#2022P1MQ9"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "條件機率與分佈",
+   "secondary_topics": [
+    "全機率公式",
+    "貝氏定理",
+    "泊松分佈"
+   ],
+   "required_formulas": [
+    "$P(A) = P(A|B)P(B) + P(A|B^c)P(B^c)$",
+    "$P(B|A) = \\frac{P(A|B)P(B)}{P(A)}$",
+    "$P(X=k) = \\frac{e^{-\\lambda}\\lambda^k}{k!}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 9
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "定義事件：B=男，G=女，W=體重>3.7kg。列出已知機率 P(B), P(G), P(W|B), P(W|G)。",
+    "marks": 1,
+    "common_error": "混淆條件機率與全機率公式的順序，或忘記男孩女孩機率各為0.5。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 2,
+    "what": "(a) 利用全機率公式計算 P(W)。注意分母需包含男女兩種情況的加權和。",
+    "marks": 1,
+    "common_error": "遺漏其中一種性別的情況，或計算加權平均時未乘以 0.5。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "(b) 利用貝氏定理計算 P(B|W)。將 (a) 的結果作為分母，分子為 P(W|B)P(B)。",
+    "marks": 2,
+    "common_error": "忘記將 P(B) 與 P(W|B) 相乘，或直接用 P(W|B) 除以 P(W) 時算錯數值。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "(c)(i) 定義新事件：無體重<=3.7kg 的嬰兒。先求單個嬰兒符合此條件的機率 p，再用泊松公式。",
+    "marks": 1,
+    "common_error": "未將男女體重條件機率加權平均求出單一嬰兒「體重>3.7kg」的機率，導致 p 算錯。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 5,
+    "what": "(c)(i) 代入泊松公式計算 k=2 且無其他嬰兒（即總數為 2）的機率。注意題目要求「恰好 2 個且都>3.7kg」。",
+    "marks": 1,
+    "common_error": "誤解題意，算出有 2 個嬰兒但其中一個體重<=3.7kg 的情況，或忘記 e^-lambda 項。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 6,
+    "what": "(c)(ii) 定義事件 A=總數<=2 且無體重<=3.7kg；事件 B=恰有 1 個男孩。計算 P(B|A)。",
+    "marks": 3,
+    "common_error": "忘記考慮「0 個嬰兒」或「2 個嬰兒（1 男 1 女）」的情況，導致分母 P(A) 算錯。",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "此題綜合考查全機率、貝氏定理與泊松分佈的應用，常見失誤在於對「無體重<=3.7kg」這一新條件的理解，以及處理混合性別人口時未正確加權平均。",
+  "scaffolding_hints": [
+   "先畫樹狀圖或列出事件定義：B, G, W, W^c。",
+   "單個嬰兒體重>3.7kg 的機率 p = 0.5*0.3085 + 0.5*0.1587。",
+   "泊松分佈中，若要求「恰好 k 個且都符合條件」，需將 lambda 換成 k*p 或直接調整事件定義。"
+  ],
+  "quick_solution_strategy": "先求單人體重>3.7kg 機率 p=0.2336；(a) P(W)=p；(b) P(B|W)=P(W|B)*0.5/p；(c)(i) 用泊松算 k=2 且都>3.7kg；(c)(ii) 條件機率分母為總數<=2 且都>3.7kg 的機率。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "5": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "6": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

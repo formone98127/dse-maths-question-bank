@@ -1,0 +1,136 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2023",
+  "paper": "Paper 1M",
+  "qno": "1",
+  "hash": "#2023P1MQ1"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "概率分佈",
+   "secondary_topics": [
+    "期望值",
+    "變異數",
+    "隨機變數線性轉換"
+   ],
+   "required_formulas": [
+    "\\sum P(X=x) = 1",
+    "\\operatorname{E}(X) = \\sum xP(X=x)",
+    "\\operatorname{Var}(X) = \\operatorname{E}(X^2) - [\\operatorname{E}(X)]^2",
+    "\\operatorname{Var}(aX+b) = a^2\\operatorname{Var}(X)",
+    "\\operatorname{Var}(c) = 0"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用總機率為 1 求 k",
+    "marks": 2,
+    "common_error": "忘記將所有概率相加等於 1，或計算錯誤",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 2,
+    "what": "計算 E(X) 用 n 表示",
+    "marks": 1,
+    "common_error": "漏乘對應的 x 值或算錯加總",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "計算 E(X^2) 用 n 表示",
+    "marks": 1,
+    "common_error": "忘記平方 x 再乘概率，或算錯平方",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "代入公式求 Var(X) 表達式",
+    "marks": 1,
+    "common_error": "混淆 E(X^2) 與 [E(X)]^2",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 5,
+    "what": "確認題目不需解 n，直接處理變異數",
+    "marks": 0,
+    "common_error": "誤解題目要求，多餘求解 n",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 6,
+    "what": "利用性質求 Var(10X^2-9)",
+    "marks": 1,
+    "common_error": "誤以為 Var(aX+b)=aVar(X)+b，或忽略常數項",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "考評局近年加強對變異數性質及非線性轉換（如 X^2）的考查，學生需熟記 Var(c)=0 及 Var(aX+b) 公式。",
+  "scaffolding_hints": [
+   "先確認所有概率和為 1 求 k",
+   "E(X) 與 E(X^2) 計算步驟分明",
+   "變異數定義：E(X^2)-[E(X)]^2"
+  ],
+  "quick_solution_strategy": "先求 k=0.4，再算 E(X)、E(X^2)，代入 Var 公式，最後用性質處理 10X^2-9。"
+ },
+ "skills": {
+  "topic_id": "T-PROB",
+  "knowledge_point_ids": [
+   "K-PROB-01",
+   "K-PROB-02"
+  ],
+  "formula_ids": [
+   "F-PROB-01",
+   "F-PROB-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "2": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "5": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "6": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

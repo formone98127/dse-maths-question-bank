@@ -1,0 +1,105 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2023",
+  "paper": "Paper 1M",
+  "qno": "2",
+  "hash": "#2023P1MQ2"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "泊松分佈",
+   "secondary_topics": [
+    "中央極限定理",
+    "期望與變異數"
+   ],
+   "required_formulas": [
+    "E(X) = n\\lambda",
+    "Var(X) = n\\lambda",
+    "\\Phi(z) = P(Z \\le z)",
+    "\\Phi^{-1}(p)"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 300,
+   "marks": 5
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "計算一小時的期望與變異數 (n=60)",
+    "marks": 2,
+    "common_error": "忘記將時間單位從分鐘換算成小時，導致\\lambda錯誤",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 2,
+    "what": "標準化變量 Z 並寫出概率不等式",
+    "marks": 1,
+    "common_error": "Z 分數計算時忽略除以標準差\\sqrt{n\\lambda}",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "利用對稱性合併兩側尾部的機率",
+    "marks": 1,
+    "common_error": "未將兩側尾部機率相加，誤以為是單側",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "查表求對應於總機率的 Z 分數值",
+    "marks": 1,
+    "common_error": "查表錯誤或混淆\\Phi^{-1}(0.8665)與\\Phi^{-1}(0.1335)",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "此題結合泊松分佈的累積性質與中央極限定理，考驗學生在處理大數律近似時對標準差隨樣本數變化（\\sqrt{n}）的敏感度，是 DSE 數學卷一常考的綜合應用點。",
+  "scaffolding_hints": [
+   "回顧泊松分佈 E(X)=Var(X)=n\\lambda 的定義",
+   "注意中央極限定理要求標準化時除以\\sqrt{n\\lambda}",
+   "利用正態分佈對稱性，將 P(178 \\le \\overline{X} \\le 182)轉為尾部機率之和"
+  ],
+  "quick_solution_strategy": "先算一小時\\lambda=180，再標準化邊界值，查表得 Z 值，解不等式求 n。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

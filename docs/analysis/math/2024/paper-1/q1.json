@@ -1,0 +1,94 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 1",
+  "qno": "1",
+  "hash": "#2024P1Q1"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "代數",
+   "secondary_topics": [
+    "有理式化簡",
+    "通分"
+   ],
+   "required_formulas": [
+    "\\frac{A}{B} \\pm \\frac{C}{D} = \\frac{AD \\pm BC}{BD}"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90,
+   "marks": 3
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "找出公分母 (4h-7)(6h-5)",
+    "marks": 1,
+    "common_error": "錯誤合併分母為 24h^2 - 37h + 35",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 2,
+    "what": "交叉相乘分子：2(6h-5) - 3(4h-7)",
+    "marks": 1,
+    "common_error": "符號錯誤，如變成 +3(4h-7)",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "化簡分子並寫出最終答案",
+    "marks": 1,
+    "common_error": "未化簡分子，保留展開式",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "此題測試基本有理式運算，常見失分點在於通分時漏乘或符號錯誤，以及未能將分子合併為最簡形式。",
+  "scaffolding_hints": [
+   "Recall the formula for subtracting fractions with different denominators.",
+   "Expand the numerator carefully and watch out for negative signs.",
+   "Combine like terms in the numerator to simplify."
+  ],
+  "quick_solution_strategy": "公分母為兩分母之積，分子做交叉相乘後合併同類項。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-01",
+   "K-POL-02"
+  ],
+  "formula_ids": [
+   "F-POL-01",
+   "F-POL-02",
+   "F-POL-03",
+   "F-POL-06"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "2": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

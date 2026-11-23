@@ -1,0 +1,131 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 1M",
+  "qno": "10",
+  "hash": "#2014P1MQ10"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "指數與對數函數",
+   "secondary_topics": [
+    "微分法",
+    "積分法",
+    "換元積分",
+    "泰勒級數近似"
+   ],
+   "required_formulas": [
+    "\\frac{d}{dx}(uv) = u'v + uv'",
+    "\\int e^{f(x)} f'(x) dx = e^{f(x)} + C",
+    "\\int \\frac{\\ln x}{x^2} dx"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 300,
+   "marks": 14
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用積分之微分法求 \\frac{d}{dv}(ve^{-\\nu})",
+    "marks": 1,
+    "common_error": "忘記乘積法則，直接將 v 視為常數或誤導為線性。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 2,
+    "what": "由 (a)(i) 結果反推積分 \\int ve^{-\\nu}dv",
+    "marks": 1,
+    "common_error": "符號錯誤，漏掉負號或常數 C。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "設定換元 \\nu = -\\ln x 處理 (b) 式",
+    "marks": 2,
+    "common_error": "換元後 dx 與 d\\nu 轉換錯誤，邊界未調整。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 4,
+    "what": "代入 (a)(ii) 結果計算定積分面積",
+    "marks": 2,
+    "common_error": "代入邊界時算錯 \\ln 2 相關項。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "求二階導數 \\frac{d^2}{dx^2}(\\frac{\\ln x}{x^2})",
+    "marks": 1,
+    "common_error": "一階導數算錯導致二階完全錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "利用泰勒展開比較級數和與不等式右邊",
+    "marks": 7,
+    "common_error": "忽略 \\frac{1}{x} 項或誤用積分近似公式。",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "此題結合微積分基本定理與泰勒級數，考驗學生將連續函數面積轉化為離散級數近似的理解能力，屬高階應用題型。",
+  "scaffolding_hints": [
+   "提示 1：回顧乘積法則 \\frac{d}{dx}(uv) = u'v + uv' 的結構。",
+   "提示 2：觀察被積分函數形式，嘗試令 \\nu = -\\ln x 以簡化指數項。",
+   "提示 3：對於級數不等式，考慮將 \\frac{1}{x} 展開為泰勒級數並截斷至一階或二階。"
+  ],
+  "quick_solution_strategy": "先解 (a) 建立積分公式，再用換元法解 (b)，最後用泰勒展開處理 (c) 的級數不等式證明。"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "2": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "4": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

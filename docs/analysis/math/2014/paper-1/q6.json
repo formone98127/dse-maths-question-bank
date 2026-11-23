@@ -1,0 +1,93 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 1",
+  "qno": "6",
+  "hash": "#2014P1Q6"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "百分數",
+   "secondary_topics": [
+    "折扣計算",
+    "盈利百分率公式"
+   ],
+   "required_formulas": [
+    "$\\text{售價} = \\text{標價} \\times \\text{折扣}$",
+    "$\\text{盈利百分率} = \\frac{\\text{售價} - \\text{成本}}{\\text{成本}} \\times 100\\%$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "計算六折售價：$255 \\times 0.6$",
+    "marks": 2,
+    "common_error": "誤讀題目為四折，或計算錯誤。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 2,
+    "what": "列出盈利公式：$(\\text{售價} - C)/C = 0.02$",
+    "marks": 1,
+    "common_error": "將 $2\\%$ 寫成 $0.2$ 而非 $0.02$。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "代入數值並解方程求成本 $C$",
+    "marks": 1,
+    "common_error": "移項錯誤或計算精度不足。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "考生需仔細閱讀題目中的折扣數值，並準確掌握百分數與小數的轉換關係以避免常見陷阱。",
+  "scaffolding_hints": [
+   "提示 1：六折即乘以 $0.6$，四折才是 $0.4$。",
+   "提示 2：盈利公式分母是成本，非售價。",
+   "提示 3：$2\\%$ 等於 $0.02$，不是 $0.2$"
+  ],
+  "quick_solution_strategy": "先算售價 $153$；再用 $(153-C)/C=0.02$ 解得 $C \\approx 149.9$"
+ },
+ "skills": {
+  "topic_id": "T-PCT",
+  "knowledge_point_ids": [
+   "K-PCT-01",
+   "K-PCT-02"
+  ],
+  "formula_ids": [
+   "F-PCT-01",
+   "F-PCT-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "2": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

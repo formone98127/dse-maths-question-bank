@@ -1,0 +1,129 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 1M",
+  "qno": "5",
+  "hash": "#2024P1MQ5"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "指數級數",
+   "secondary_topics": [
+    "二項式定理",
+    "函數展開"
+   ],
+   "required_formulas": [
+    "\\frac{1}{e^u} = e^{-u} = 1 - u + \\frac{u^2}{2!} - \\frac{u^3}{3!} + \\cdots",
+    "(a+b)^m = a^m + ma^{m-1}b + \\frac{m(m-1)}{2}a^{m-2}b^2 + \\cdots"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 300,
+   "marks": 7
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "展開 $\\frac{2}{e^{nx}}$ 至 $x^3$ 項",
+    "marks": 2,
+    "common_error": "忘記負號或階乘計算錯誤",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "展開 $(1+4x)^m$ 至 $x^3$ 項",
+    "marks": 1,
+    "common_error": "二項式係數公式記錯或漏寫高階項",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "合併兩部分展開式並整理 $x$ 與 $x^2$ 係數",
+    "marks": 1,
+    "common_error": "合併時漏掉某個項或符號錯誤",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "利用 $x$ 係數建立方程求 $m$",
+    "marks": 1,
+    "common_error": "解一元一次方程算錯",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "利用 $x^2$ 係數驗證或求 $n$",
+    "marks": 1,
+    "common_error": "代入錯誤的 $m$ 值導致矛盾",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 6,
+    "what": "將 $m, n$ 代回計算 $x^3$ 係數",
+    "marks": 1,
+    "common_error": "最終計算錯誤或忘記乘以 2",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "考生常混淆 $e^{-u}$ 的泰勒展開符號，或在合併二項式與指數級數時忽略高階項對低階係數的影響。",
+  "scaffolding_hints": [
+   "先熟練背誦 $e^x$ 的前四項展開式。",
+   "注意 $(1+4x)^m$ 中 $b=4x$，代入時需小心冪次變化。",
+   "將兩個展開式寫在同一行方便對比係數。"
+  ],
+  "quick_solution_strategy": "先寫出兩個級數的前三項，直接對照 $x, x^2$ 係數列方程組解出參數，最後代回求答案。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "6": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

@@ -1,0 +1,130 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 1M",
+  "qno": "12",
+  "hash": "#2024P1MQ12"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "微分方程",
+   "secondary_topics": [
+    "指數函數性質",
+    "定積分應用",
+    "極限計算"
+   ],
+   "required_formulas": [
+    "\\int \\frac{f'(x)}{f(x)} dx = \\ln|f(x)| + C",
+    "\\lim_{t \\to \\infty} (0.8)^{2t+3} = 0"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 450,
+   "marks": 13
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "觀察 \\frac{dR}{dt} 結構，發現分子為分母導數。",
+    "marks": 2,
+    "common_error": "嘗試直接積分而不先簡化分式，導致計算錯誤。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 2,
+    "what": "利用對數性質將 \\frac{dR}{dt} 寫成 \\ln(分母) + 2 形式。",
+    "marks": 1,
+    "common_error": "忘記絕對值符號或微分係數計算錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "對 \\frac{dR}{dt} 積分求 R(t)，並處理常數 C。",
+    "marks": 1,
+    "common_error": "忽略積分常數或代入初始條件時出錯。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "分析 \\frac{dR}{dt} 最大值是否超過 4，解釋原因。",
+    "marks": 1,
+    "common_error": "未比較極值點或誤判函數行為。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 5,
+    "what": "計算 P(t) 的定積分，代入 t=0 與 t=12。",
+    "marks": 4,
+    "common_error": "指數函數 \\int a^{kt} dt 公式記錯或計算錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "求 t\\to\\infty 時 \\frac{dP}{dt} 的極限值。",
+    "marks": 1,
+    "common_error": "誤以為指數項不趨近於零而計算錯誤。",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "此題測試考生對複雜分式微分方程的簡化能力及定積分在實際情境（利潤與收入）中的應用，強調數學建模與極限概念的結合。",
+  "scaffolding_hints": [
+   "Hint1: 觀察 \\frac{dR}{dt} 的分母結構，其導數是否等於分子？",
+   "Hint2: 回憶 \\int \\frac{u'}{u} dx = \\ln|u| + C 的積分公式。",
+   "Hint3: 對於指數衰減項 (0.8)^{kt}，當 t 很大時其行為如何？"
+  ],
+  "quick_solution_strategy": "先簡化 \\frac{dR}{dt} 為對數導數形式，再積分；接著處理利潤差值積分，最後取極限。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "5": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

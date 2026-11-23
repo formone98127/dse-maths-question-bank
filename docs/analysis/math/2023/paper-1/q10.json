@@ -1,0 +1,134 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2023",
+  "paper": "Paper 1",
+  "qno": "10",
+  "hash": "#2023P1Q10"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "幾何：垂直平分線與圓",
+   "secondary_topics": [
+    "直線方程",
+    "圓的標準方程",
+    "中點公式"
+   ],
+   "required_formulas": [
+    "$\\frac{x_1+x_2}{2}, \\frac{y_1+y_2}{2}$ (中點)",
+    "$\\sqrt{(x_1-x_2)^2 + (y_1-y_2)^2}$ (距離)",
+    "$(x-h)^2 + (y-k)^2 = r^2$ (圓方程)"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 300,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "回答 (a)：指出 $\\Gamma$ 為 $AB$ 的垂直平分線。",
+    "marks": 1,
+    "common_error": "誤答為平行線或重合直線，未理解等距定義。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "計算 $AB$ 中點坐標作為圓心 $(h,k)$。",
+    "marks": 1,
+    "common_error": "中點坐標加錯或抄寫錯誤，導致圓心位置偏差。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "將垂直平分線方程化為斜率式求 $AB$ 斜率。",
+    "marks": 1,
+    "common_error": "忽略負倒數關係，算出與已知直線平行的斜率。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "利用點斜式寫出通過 $A$ 及 $B$ 的直線方程。",
+    "marks": 1,
+    "common_error": "代入點坐標時符號錯誤，或化簡後常數項算錯。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "利用 $A$ 到圓心的距離求半徑 $r$。",
+    "marks": 1,
+    "common_error": "忘記開根號，或將直線方程誤認為半徑長度。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "寫出圓的標準方程並化簡為一般式（若需要）。",
+    "marks": 1,
+    "common_error": "展開平方時漏項，或合併同類項時符號錯誤。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "考生常混淆垂直平分線與平行線的性質，且在由直線方程推導斜率時易忽略負倒數關係，導致後續圓心與半徑計算全錯。",
+  "scaffolding_hints": [
+   "提示：$P$ 到 $A,B$ 等距的點集定義何種幾何圖形？",
+   "知識：垂直平分線的斜率是原直線斜率的負倒數。",
+   "破題：先由 (a) 結論直接鎖定圓心位置與直線方向。"
+  ],
+  "quick_solution_strategy": "先答 (a) 得 1 分；由已知直線斜率取負倒數求 $AB$ 斜率；用中點公式定圓心；算 $A$ 到圓心距離為半徑；代入圓方程。"
+ },
+ "skills": {
+  "topic_id": "T-LOC",
+  "knowledge_point_ids": [
+   "K-LOC-01",
+   "K-LOC-02"
+  ],
+  "formula_ids": [
+   "F-LOC-01",
+   "F-LOC-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-LOC-01",
+    "formula_id": "F-LOC-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-LOC-01",
+    "formula_id": "F-LOC-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-LOC-01",
+    "formula_id": "F-LOC-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-LOC-01",
+    "formula_id": "F-LOC-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-LOC-01",
+    "formula_id": "F-LOC-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-LOC-01",
+    "formula_id": "F-LOC-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

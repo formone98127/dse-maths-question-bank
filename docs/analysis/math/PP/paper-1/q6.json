@@ -1,0 +1,116 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "PP",
+  "paper": "Paper 1",
+  "qno": "6",
+  "hash": "#PPP1Q6"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "極坐標",
+   "secondary_topics": [
+    "共線性判斷",
+    "三角形面積計算"
+   ],
+   "required_formulas": [
+    "$\\theta_1 - \\theta_2 = 180^\\circ$ (共線條件)",
+    "$Area = \\frac{1}{2}ab\\sin C$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "計算 $A$ 與 $C$ 的角度差，判斷是否相差 $180^\\circ$。",
+    "marks": 2,
+    "common_error": "忽略角度週期性，直接比較數值而不考慮 $360^\\circ$ 調整。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 2,
+    "what": "確認 $O$ 點位於直線 $AC$ 上（極點定義）。",
+    "marks": 0,
+    "common_error": "忘記說明 $O$ 為極點即為共線的一部分。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "計算 $OA$ 與 $OC$ 的長度（即極徑 $r$）。",
+    "marks": 0,
+    "common_error": "誤將角度當作長度使用。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "計算夾角 $\\angle AOC$ 的正弦值或直接用兩向量夾角。",
+    "marks": 0,
+    "common_error": "角度減算錯誤，未歸一化至 $0-360^\\circ$ 範圍。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "代入面積公式 $\\frac{1}{2} \\times OA \\times OC \\times \\sin(\\angle AOC)$。",
+    "marks": 2,
+    "common_error": "忘記乘以 $\\frac{1}{2}$ 或使用錯誤的夾角（如用外角）。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "極坐標題目常考角度差與極徑應用，考生需熟練處理角度週期性以判斷幾何關係。",
+  "scaffolding_hints": [
+   "檢查 $A$ 與 $C$ 的角度差是否為 $180^\\circ$ 的倍數。",
+   "回憶三角形面積公式：兩邊及其夾角的正弦乘積的一半。",
+   "畫出極坐標圖，視覺化 $O, A, C$ 的位置關係。"
+  ],
+  "quick_solution_strategy": "先算角度差判斷共線，再取 $OA, OC$ 長度與夾角代入面積公式計算。"
+ },
+ "skills": {
+  "topic_id": "T-TRF",
+  "knowledge_point_ids": [
+   "K-TRF-01",
+   "K-TRF-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-TRF-01",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "2": {
+    "knowledge_point_id": "K-TRF-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-TRF-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-TRF-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-TRF-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

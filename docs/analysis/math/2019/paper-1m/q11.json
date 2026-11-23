@@ -1,0 +1,103 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2019",
+  "paper": "Paper 1M",
+  "qno": "11",
+  "hash": "#2019P1MQ11"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "定積分",
+   "secondary_topics": [
+    "梯形法",
+    "換元積分法"
+   ],
+   "required_formulas": [
+    "\\int_a^b f(t) dt",
+    "\\int \\frac{4\\ln(2e^t+1)}{e^{-t}+2} dt"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 300,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "計算 P 機器的總產量α的梯形法估計值α₁",
+    "marks": 2,
+    "common_error": "將對數函數展開錯誤或代入端點數值時算錯",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "判斷α₁是高估還是低估並解釋原因",
+    "marks": 1,
+    "common_error": "未分析曲線凹凸性直接猜測結果",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "利用換元法 u=ln(2e^t+1) 計算 Q 機器的總產量β",
+    "marks": 2,
+    "common_error": "微分 du/dt 計算錯誤或積分限轉換失敗",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "比較 β 與 0.3(α+β) 的大小關係",
+    "marks": 1,
+    "common_error": "代入數值時忽略小數點精度導致判斷錯誤",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "梯形法題目常考函數凹凸性判斷，考生需熟練二階導數測試及換元積分技巧以應對複雜對數式。",
+  "scaffolding_hints": [
+   "回憶梯形法公式：h/2 * (y0 + 2y1 + ... + yn)",
+   "分析 p(t) 的二階導數符號決定曲線凹凸性",
+   "換元時注意將 dt 轉換為 du 並調整積分上下限"
+  ],
+  "quick_solution_strategy": "先畫圖觀察 p(t) 曲線形狀，再直接套用梯形公式計算，最後用二階導數判斷誤差方向。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

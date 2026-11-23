@@ -1,0 +1,133 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 1",
+  "qno": "19",
+  "hash": "#2021P1Q19"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "二次函數與圓",
+   "secondary_topics": [
+    "配方法",
+    "直線方程",
+    "內切圓性質",
+    "幾何圖形判定"
+   ],
+   "required_formulas": [
+    "$y = a(x-h)^2 + k \\Rightarrow$ 頂點 $(h, k)$",
+    "$y = f(a-x) \\Rightarrow$ 對稱軸變換",
+    "$Ax^2 + Bxy + Cy^2 + Dx + Ey + F = 0$",
+    "圓心到直線距離等於半徑"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 360,
+   "marks": 14
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "配方法將 f(x) 化為標準式，求 Q 坐標。",
+    "marks": 2,
+    "common_error": "合併 x 項時漏掉 -14x，或配方後常數項計算錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "利用對稱性直接寫出 R 坐標。",
+    "marks": 1,
+    "common_error": "忘記 f(14-x) 的變換規則，仍用原頂點。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "求 Q、S 兩點斜率與直線方程。",
+    "marks": 2,
+    "common_error": "坐標代入錯誤導致斜率計算偏差。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "求 QR 中垂線與 QS 垂直平分線交點得圓心 U。",
+    "marks": 3,
+    "common_error": "誤以為內切圓圆心是三角形重心或外心。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 5,
+    "what": "計算半徑並寫出圓 C 方程。",
+    "marks": 3,
+    "common_error": "距離公式應用錯誤或展開平方項時漏項。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "驗證 STUV 為長方形所需條件並解釋。",
+    "marks": 3,
+    "common_error": "忽略切線性質或無法建立 k 的矛盾等式。",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "考生普遍在配方法與幾何關係連結上薄弱，導致後續圓方程與長方形判定全盤崩潰，反映對二次函數變形與內切圓性質掌握不足。",
+  "scaffolding_hints": [
+   "先專注於將 f(x) 配方成 a(x-h)^2+k 形式找出頂點 Q。",
+   "注意 f(14-x) 代表圖像沿 x=7 對稱翻轉後的頂點位置。",
+   "內切圓圆心是三角形三邊垂直平分線交點，非重心。"
+  ],
+  "quick_solution_strategy": "先配方得 Q，再利用對稱性得 R；接著求 QS 直線方程，再找 QR 中垂線與 QS 垂直平分線交點為圓心 U，最後驗證長方形條件。"
+ },
+ "skills": {
+  "topic_id": "T-FUN",
+  "knowledge_point_ids": [
+   "K-FUN-01",
+   "K-FUN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "5": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

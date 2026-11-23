@@ -1,0 +1,104 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2016",
+  "paper": "Paper 1",
+  "qno": "6",
+  "hash": "#2016P1Q6"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "複合不等式",
+   "secondary_topics": [
+    "一元一次不等式解法",
+    "整數範圍判斷"
+   ],
+   "required_formulas": [
+    "$x+6<6(x+11) \\Rightarrow x < 60$",
+    "$A \\text{ 或 } B \\Rightarrow A \\cup B$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "解不等式 $x+6<6(x+11)$，得 $x < 60$。",
+    "marks": 1,
+    "common_error": "展開括號時符號錯誤或移項算錯。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "結合 $x\\leq-5$，寫出並集解集：$x < 60 \\text{ 或 } x\\leq-5$。",
+    "marks": 1,
+    "common_error": "誤將「或」解為交集，寫成 $-12<x\\leq-5$。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "觀察解集範圍，確認包含所有小於 60 的數及負數部分。",
+    "marks": 1,
+    "common_error": "忽略 $x<60$ 的部分，只關注負數區間。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 4,
+    "what": "在解集中找出最大負整數，即 -1（因 -1 < 60）。",
+    "marks": 1,
+    "common_error": "誤以為答案必須來自 $x\\leq-5$ 而選 -5。",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "考生常混淆「或」的邏輯意義，將並集誤解為交集，導致在 (a) 步寫出錯誤區間，進而影響 (b) 步對最大負整數的判斷。",
+  "scaffolding_hints": [
+   "複合不等式中的「或」代表取兩個條件的並集（Union）。",
+   "解不等式 $x+6<6(x+11)$ 時，記得將右邊展開後移項。",
+   "最大負整數是緊鄰 0 左側的整數，即 -1，只要它在解集內即可。"
+  ],
+  "quick_solution_strategy": "先解出 $x<60$，發現並集涵蓋所有小於 60 的數，故最大負整數直接為 -1。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-05"
+  ],
+  "formula_ids": [
+   "F-EQN-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

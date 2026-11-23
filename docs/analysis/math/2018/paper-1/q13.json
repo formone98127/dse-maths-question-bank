@@ -1,0 +1,117 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2018",
+  "paper": "Paper 1",
+  "qno": "13",
+  "hash": "#2018P1Q13"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "相似三角形",
+   "secondary_topics": [
+    "直角梯形性質",
+    "畢氏定理",
+    "點線距離最小值"
+   ],
+   "required_formulas": [
+    "$\\frac{AB}{EC} = \\frac{BE}{CD} = \\frac{AE}{ED}$",
+    "$Area = \\frac{1}{2} \\times base \\times height$",
+    "$d_{min} = perpendicular\\ distance$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 300,
+   "marks": 9
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用互餘角證明 $\\angle BAE = \\angle CED$ 以建立相似。",
+    "marks": 2,
+    "common_error": "未能寫出角度互餘關係導致證明不完整。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 2,
+    "what": "利用畢氏定理由 $AB, AE$ 求 $BE$；再由相似比求 $ED$。",
+    "marks": 3,
+    "common_error": "計算錯誤或誤將 $DE$ 算成 $45$ (混淆邊長)。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "利用相似比 $\\frac{AB}{EC} = \\frac{AE}{ED}$ 求 $CD$。",
+    "marks": 2,
+    "common_error": "比例式寫錯對應邊導致結果錯誤。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 4,
+    "what": "計算 $\\triangle ADE$ 面積：$\\frac{1}{2} \\times AE \\times ED$。",
+    "marks": 1,
+    "common_error": "忘記除以 2 或使用錯誤底高。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "解釋 $E$ 到 $AD$ 最短距離為垂線，比較與 23cm。",
+    "marks": 1,
+    "common_error": "僅說「沒有」而未說明最短距離原理。",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "考評報告指出考生常忽略角度互餘關係導致證明失敗，且在求 $DE$ 長度時易混淆數值（如誤算為 45cm），解釋部分則缺乏對「最短距離即垂線」的幾何直覺。",
+  "scaffolding_hints": [
+   "Hint1: 觀察直角三角形 $\\triangle ABE$ 與 $\\triangle ECD$ 中，互餘角關係為何？",
+   "Hint2: 相似三角形對應邊成比例，請確認 $AB$ 對應哪條邊？",
+   "Hint3: 點到直線的最短距離是垂線段長度，此長度是否小於 23cm？"
+  ],
+  "quick_solution_strategy": "先證互餘角得相似，再用畢氏定理求 $BE, ED$，代入比例式求 $CD$ 與面積，最後比較垂距。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-05"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "2": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "4": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

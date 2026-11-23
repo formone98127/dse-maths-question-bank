@@ -1,0 +1,129 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 1",
+  "qno": "10",
+  "hash": "#2024P1Q10"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "函數與不等式",
+   "secondary_topics": [
+    "分段函數",
+    "二次方程根的性质"
+   ],
+   "required_formulas": [
+    "$\\Delta = b^2 - 4ac \\geq 0$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用 g(-3)=-21 及 g(7)=9 建立方程組解出分段函數參數",
+    "marks": 2,
+    "common_error": "忽略其中一段為常數的條件，誤設為一次式導致多餘變數",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "寫出 g(x) 的分段定義式並確認斜率為正",
+    "marks": 1,
+    "common_error": "未檢查斜率是否為正，或分段點設定錯誤",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "代入 h(x) 表達式並整理成 x 的二次方程形式",
+    "marks": 1,
+    "common_error": "展開時符號錯誤或漏掉 k 項",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "分析 h(x)=0 的根的情況，考慮分段對根的數目影響",
+    "marks": 1,
+    "common_error": "僅考慮二次部分而忽略常數段可能產生的額外根",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 5,
+    "what": "確保所有根均為實數，計算判别式條件及分段交點限制",
+    "marks": 1,
+    "common_error": "忘記常數段方程 xg(x)+k=0 在特定區間可能無解或產生虛根",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 6,
+    "what": "綜合所有條件得出 k 的取值範圍並寫出最終答案",
+    "marks": 1,
+    "common_error": "不等號方向搞錯或遺漏區間端點是否包含",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "此題測試學生處理分段函數及二次方程根的性質，常見失分原因在於忽略常數段對根的影響。",
+  "scaffolding_hints": [
+   "提示 1：g(x) 一部分為常數，另一部分隨 x 正變，設 g(x)=ax+b (x>c) 及 g(x)=d (x≤c)。",
+   "提示 2：h(x)=0 即 xg(x)+k=0，若 g(x) 為常數 d，則 xd+k=0 有唯一解；若 g(x) 為一次式，則為二次方程。",
+   "提示 3：所有根均為實數意味著二次部分判别式≥0，且常數段若有解亦需為實數（此處恆為實數），關鍵在於分段點處的連續性或定義域限制。"
+  ],
+  "quick_solution_strategy": "先求 g(x) 表達式，再將 h(x)=0 拆解為兩部分討論：二次方程判别式≥0 及常數段解的存在性，合併 k 範圍。"
+ },
+ "skills": {
+  "topic_id": "T-VAR",
+  "knowledge_point_ids": [
+   "K-VAR-01"
+  ],
+  "formula_ids": [
+   "F-VAR-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "5": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "6": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

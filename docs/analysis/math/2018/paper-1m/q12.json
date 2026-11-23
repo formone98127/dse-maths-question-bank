@@ -1,0 +1,129 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2018",
+  "paper": "Paper 1M",
+  "qno": "12",
+  "hash": "#2018P1MQ12"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "指數與對數函數",
+   "secondary_topics": [
+    "微分法",
+    "線性方程",
+    "邏輯推理"
+   ],
+   "required_formulas": [
+    "\\frac{d}{dt}(e^{kt}) = ke^{kt}",
+    "\\ln(a/b) = \\ln a - \\ln b"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 300,
+   "marks": 11
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用截距與斜率求 r 和 s",
+    "marks": 2,
+    "common_error": "混淆直線方程 y=mx+c 中 m 與 c 的對應關係",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 2,
+    "what": "代數變形證明 N 的表達式",
+    "marks": 3,
+    "common_error": "對數運算錯誤或指數底數轉換失敗",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "判斷 N=4 是否可能並解釋",
+    "marks": 2,
+    "common_error": "忽略 t 的取值範圍導致錯誤結論",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "求一階導數 dN/dt",
+    "marks": 1,
+    "common_error": "複合函數微分鏈則應用錯誤",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "求二階導數 d^2N/dt^2",
+    "marks": 1,
+    "common_error": "商法則或乘積法則計算出錯",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "分析 dN/dt 的變化趨勢並解釋",
+    "marks": 2,
+    "common_error": "未結合二階導數符號判斷增减性",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "此題測試學生將生物增長模型轉化為數學函數的能力，並強調微分在分析變化率（增長速度）中的應用，符合 DSE 對實際問題建模的要求。",
+  "scaffolding_hints": [
+   "Hint1: 直線方程 y = mx + c，注意題目給的是 Q(t) 而非標準形式，需整理成 mt+c。",
+   "Hint2: 利用 \\ln(a/b) = \\ln a - \\ln b 將 Q 的兩個表達式聯立，解出 N。",
+   "Hint3: dN/dt 的正負取決於二階導數的符號，觀察分母大小變化即可判斷趨勢。"
+  ],
+  "quick_solution_strategy": "先由線性條件定 r,s；再代數操作得 N；接著微分求速率與加速度；最後根據二階導數符號描述變化率遞減。"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "2": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

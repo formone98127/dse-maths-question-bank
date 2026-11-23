@@ -1,0 +1,106 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2012",
+  "paper": "Paper 1",
+  "qno": "16",
+  "hash": "#2012P1Q16"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "概率",
+   "secondary_topics": [
+    "組合",
+    "互補事件"
+   ],
+   "required_formulas": [
+    "$\\frac{{C}_r^n}{{C}_k^N}$",
+    "$P(A') = 1 - P(A)$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "計算總樣本空間：從 16 人中選 4 人的組合數。",
+    "marks": 1,
+    "common_error": "忘記除以總組合數，或誤用排列公式。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 2,
+    "what": "計算(a)有利情況：從 8 部門各選 1 人的組合數。",
+    "marks": 1,
+    "common_error": "誤以為是 $C_4^8$ 或 $(C_1^2)^4$，忽略每部選 1 人。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "計算(b)互補事件：先求由 4 個不同部門提名的概率。",
+    "marks": 1,
+    "common_error": "未能識別「至多 3 部」與「4 部」互補關係。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "利用互補公式 $1-P(A)$ 計算(b)最終概率。",
+    "marks": 1,
+    "common_error": "直接嘗試枚舉所有至多 3 部的複雜情況。",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "考生常忽略「至多」條件可透過互補事件簡化計算，這是概率題中常見的思維陷阱。",
+  "scaffolding_hints": [
+   "提示 1：總共有多少種選法？分母是 $C_4^{16}$。",
+   "提示 2：(a) 部要選 4 個不同部門，每部選幾人？",
+   "提示 3：(b) 「至多 3 部」的反面是什麼情況？"
+  ],
+  "quick_solution_strategy": "先算總組合數；(a) 用 $C_2^1 C_2^1 C_2^1 C_2^1 / C_4^{16}$；(b) 直接用 $1-P(a)$。"
+ },
+ "skills": {
+  "topic_id": "T-PROB",
+  "knowledge_point_ids": [
+   "K-PROB-01",
+   "K-PROB-02"
+  ],
+  "formula_ids": [
+   "F-PROB-01",
+   "F-PROB-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "2": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

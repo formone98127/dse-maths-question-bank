@@ -1,0 +1,133 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 1M",
+  "qno": "4",
+  "hash": "#2021P1MQ4"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "統計",
+   "secondary_topics": [
+    "樣本比例",
+    "置信區間",
+    "樣本大小估算"
+   ],
+   "required_formulas": [
+    "$\\hat{p} = \\frac{x}{n}$",
+    "$\\hat{p} \\pm z_{\\alpha/2}\\sqrt{\\frac{\\hat{p}(1-\\hat{p})}{n}}$",
+    "$n = \\left( \\frac{z_{\\alpha/2}}{E} \\right)^2 \\hat{p}(1-\\hat{p})$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 300,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "計算樣本比例 \\hat{p} = 28/40 = 0.7。",
+    "marks": 1,
+    "common_error": "計算錯誤或忘記除以總樣本數 n。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "查表得 90% 置信度對應之 z 值 (z=1.645)。",
+    "marks": 1,
+    "common_error": "混淆不同百分比（如用成 95% 或 99% 的 z 值）。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 3,
+    "what": "代入公式計算標準誤並得出置信區間上下限。",
+    "marks": 2,
+    "common_error": "忘記乘以 \\sqrt{n} 或平方根位置錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "確認區間寬度 (上限 - 下限) 是否小於等於指定值。",
+    "marks": 0,
+    "common_error": "誤將半寬度當作全寬度計算。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 5,
+    "what": "設定新置信度 99% 之 z 值 (z=2.576) 及誤差界限 E。",
+    "marks": 1,
+    "common_error": "誤解寬度限制，未正確定義半寬度 E = 0.05。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 6,
+    "what": "利用樣本大小公式計算 n 並向上取整得最終答案。",
+    "marks": 1,
+    "common_error": "計算結果未向上取整，或代入舊 n 值重複計算。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "此題結合樣本比例與置信區間寬度控制，是 DSE 統計部分常見的應用題型，旨在測試學生對誤差界限與樣本量關係的理解。",
+  "scaffolding_hints": [
+   "Hint1: 先算出 \\hat{p}=0.7，這是後續所有計算的基礎參數。",
+   "Hint2: 記住寬度 (Width) = 2 \\times \\text{Margin of Error}，題目給的是總寬度限制。",
+   "Hint3: 求樣本量 n 時，公式中的 z 值要根據新的置信水平 (99%) 調整。"
+  ],
+  "quick_solution_strategy": "先算 \\hat{p}=0.7，再用 $n = \\frac{z^2 \\cdot 0.7 \\cdot 0.3}{(0.1/2)^2}$ 代入 z=2.576 計算並向上取整。"
+ },
+ "skills": {
+  "topic_id": "T-STA",
+  "knowledge_point_ids": [
+   "K-STA-01",
+   "K-STA-02"
+  ],
+  "formula_ids": [
+   "F-STA-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "3": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "5": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "6": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

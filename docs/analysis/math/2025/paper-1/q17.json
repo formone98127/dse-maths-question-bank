@@ -1,0 +1,134 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": 2025,
+  "paper": "Paper 1",
+  "qno": 17,
+  "hash": "#2025P1Q17"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "數列",
+   "secondary_topics": [
+    "等差數列",
+    "等比數列",
+    "二次不等式"
+   ],
+   "required_formulas": [
+    "$T_n = T_1 + (n-1)d$",
+    "$S_n = \\frac{n}{2}[2a+(n-1)d]$",
+    "$\\frac{T_{47}}{T_9} = \\left(\\frac{T_{199}}{T_{47}}\\right)$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 300,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "設等差數列首項為 a，公差為 d，利用 T(47) 寫出關係式。",
+    "marks": 1,
+    "common_error": "忘記將 n=47 代入公式，或混淆 T(n) 與 S(n)。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 2,
+    "what": "利用等比中項性質建立方程：T(47)^2 = T(9) * T(199)。",
+    "marks": 1,
+    "common_error": "寫成加法關係或搞錯指數，未展開化簡。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "將 T(47)=456 代入並化簡方程，解出公差 d 的值。",
+    "marks": 1,
+    "common_error": "代數運算錯誤，無法正確解出 d=2 或 d=-2。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "利用 T(47) 與求出的 d，回代計算首項 T(1)。",
+    "marks": 1,
+    "common_error": "計算錯誤導致 T(1) 不正確，忽略 T(1)≠T(2) 條件。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "寫出 S_n 公式並代入不等式 S_n > 10^6，化簡為二次不等式。",
+    "marks": 1,
+    "common_error": "S_n 公式記錯或展開時符號錯誤，導致不等式方向反了。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "解二次不等式求 n 範圍，取最小整數 n 作為答案。",
+    "marks": 1,
+    "common_error": "遺漏不等號方向或取錯整數界限，未檢查 n 為正數。",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "考生常混淆等差與等比性質導致 (a) 失分；(b) 則多因無法處理二次不等式而未能找出最小 n，顯示對 S_n 公式及解不等式技巧掌握不足。",
+  "scaffolding_hints": [
+   "Recall: T_n = a + (n-1)d and use the geometric mean property T_47^2 = T_9 * T_199.",
+   "Substitute T_47=456 into the equation to solve for d first.",
+   "For part (b), ensure S_n > 10^6 leads to a quadratic inequality in n."
+  ],
+  "quick_solution_strategy": "Use T_47=456 and geometric property to find d, then get a. For S_n>10^6, solve the resulting quadratic inequality for minimum integer n."
+ },
+ "skills": {
+  "topic_id": "T-SEQ",
+  "knowledge_point_ids": [
+   "K-SEQ-02",
+   "K-SEQ-03"
+  ],
+  "formula_ids": [
+   "F-SEQ-01",
+   "F-SEQ-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-SEQ-02",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "2": {
+    "knowledge_point_id": "K-SEQ-02",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-SEQ-02",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-SEQ-02",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-SEQ-02",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-SEQ-02",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

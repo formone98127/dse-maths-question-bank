@@ -1,0 +1,106 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": 2025,
+  "paper": "Paper 1",
+  "qno": 11,
+  "hash": "#2025P1Q11"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "變分",
+   "secondary_topics": [
+    "二次函數圖形性質",
+    "一元二次方程判別式"
+   ],
+   "required_formulas": [
+    "$p(x) = ax + bx^2$",
+    "$\\Delta = b^2 - 4ac$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "設 $p(x)=ax+bx^2$，代入 $x=7,9$ 得方程組解出 $a,b$。",
+    "marks": 3,
+    "common_error": "忘記設定兩個變數係數；計算時分母約錯導致 $a,b$ 符號錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "將 $p(x)=c$ 整理為標準一元二次方程形式 $bx^2+ax+(b-c)=0$。",
+    "marks": 1,
+    "common_error": "移項時漏掉常數項，或忘記 $c$ 是待求參數而非已知數。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "利用「兩個相異實根」條件，列出判別式 $\\Delta > 0$。",
+    "marks": 1,
+    "common_error": "寫成 $\\Delta \\ge 0$（包含重根情況），或算錯 $a^2-4b(b-c)$。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "展開不等式並化簡，解出 $c$ 的範圍。",
+    "marks": 1,
+    "common_error": "二次不等式方向搞反；忘記除以 $b$ 時考慮 $b$ 的正負（此題 $b>0$）。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "考生常混淆「兩個相異實根」與「有實根」的條件，誤將判別式寫成 $\\Delta \\ge 0$，導致答案範圍錯誤。",
+  "scaffolding_hints": [
+   "提示 1：變分問題需假設 $p(x) = k_1x + k_2x^2$ 形式。",
+   "提示 2：二次方程有兩個相異實根的關鍵是判別式嚴格大於零 ($\\Delta > 0$)。",
+   "提示 3：解不等式時注意係數 $b$ 的符號，此題由 $p(9)=216$ 可推斷 $b>0$"
+  ],
+  "quick_solution_strategy": "先代數求 $a,b$ 得 $p(x)$；再令 $\\Delta = a^2 - 4b(b-c) > 0$ 解 $c$"
+ },
+ "skills": {
+  "topic_id": "T-VAR",
+  "knowledge_point_ids": [
+   "K-VAR-01",
+   "K-VAR-02"
+  ],
+  "formula_ids": [
+   "F-VAR-01",
+   "F-VAR-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

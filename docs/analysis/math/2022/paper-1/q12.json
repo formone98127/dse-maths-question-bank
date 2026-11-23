@@ -1,0 +1,134 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 1",
+  "qno": "12",
+  "hash": "#2022P1Q12"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓的方程",
+   "secondary_topics": [
+    "圓心半徑公式",
+    "點間距離公式",
+    "三角形面積最大化條件"
+   ],
+   "required_formulas": [
+    "$x^2 + y^2 + 2gx + 2fy + c = 0 \\Rightarrow (g, f)$",
+    "$d = \\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$",
+    "$Area = \\frac{1}{2} \\times base \\times height$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 300,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "由圓的方程配方或對比係數，找出圓心 G 的坐標。",
+    "marks": 1,
+    "common_error": "忘記除以 2 而誤將 g, f 當作圓心坐標；計算配方法時出錯。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "利用兩點距離公式，計算 G(圓心) 與 H(65,48) 的距離 GH。",
+    "marks": 1,
+    "common_error": "代入坐標時符號錯誤；根號內數字加總錯誤導致結果非整數或無理數過大。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "分析當面積最大時，底邊 GH 固定，高必須最大，故 P 點位置。",
+    "marks": 1,
+    "common_error": "誤以為 GH 是垂直平分線；未能理解圓心與直徑關係導致面積極大化。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "描述幾何關係：GP 經過 G 且垂直於 GH，即 GP 為半徑方向延長線。",
+    "marks": 1,
+    "common_error": "只寫「P 在圓上」而未指出 GP 與 GH 的垂直或共線關係；語句含糊。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 5,
+    "what": "計算半徑 r（利用 G 到原點距離及常數項），並確認 P 為圓上特定点。",
+    "marks": 1,
+    "common_error": "混淆圓心到 H 的距離與半徑；未能正確從方程提取半徑平方值。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "計算三角形周界 = GH + GP(半徑) + HP(利用畢氏定理或幾何關係)。",
+    "marks": 1,
+    "common_error": "將面積數值直接當作周界答案；忘記加上第三邊 HP 的長度。",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "考生普遍掌握圓心求法及距離計算，但在幾何關係描述上易受「垂直平分線」誤區影響，且常混淆面積與周界概念。",
+  "scaffolding_hints": [
+   "提示：圓的一般方程 $x^2+y^2+2gx+2fy+c=0$ 中，圓心為 $(-g, -f)$。",
+   "提示：三角形面積 = \\frac{1}{2} \\times 底 \\times 高，當底邊 GH 固定時，如何使高最大？",
+   "提示：當高最大時，P 點位於哪條直線上？這條線與圓心 G 有何關係？"
+  ],
+  "quick_solution_strategy": "先配方得圓心 G，算出半徑 r 及 GH 距離。面積最大時 P 在 GH 延長線上，周界為 GH+r+HP。"
+ },
+ "skills": {
+  "topic_id": "T-CIR",
+  "knowledge_point_ids": [
+   "K-CIR-01",
+   "K-CIR-02"
+  ],
+  "formula_ids": [
+   "F-CIR-01",
+   "F-CIR-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "5": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

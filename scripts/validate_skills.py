@@ -47,11 +47,13 @@ def validate_skills(skills, idx, wrong: set[str]) -> list[str]:
         if aid not in abilities:
             errs.append(f"未知 ability_id {aid!r}")
     faults = skills.get("option_faults")
+    if faults is None:
+        faults = {}
     if not isinstance(faults, dict):
         errs.append("option_faults 須為物件")
         return errs
     for opt in faults:
-        if opt not in wrong:
+        if wrong and opt not in wrong:
             errs.append(f"option_faults 含非錯選項 {opt}")
     for opt in wrong:
         if opt not in faults:
@@ -67,6 +69,21 @@ def validate_skills(skills, idx, wrong: set[str]) -> list[str]:
             errs.append(f"{opt} 未知 knowledge_point_id {kid!r}")
         if fid is not None and fid not in formulas:
             errs.append(f"{opt} 未知 formula_id {fid!r}")
+    # long-question step_faults (optional)
+    for step, f in (skills.get("step_faults") or {}).items():
+        if not isinstance(f, dict):
+            errs.append(f"step_faults.{step} 不是物件")
+            continue
+        aid = f.get("ability_id")
+        if aid not in abilities:
+            errs.append(f"step {step} 未知 ability_id {aid!r}")
+        kid, fid = f.get("knowledge_point_id"), f.get("formula_id")
+        if kid is None and fid is None:
+            errs.append(f"step {step} 須有 knowledge_point_id 或 formula_id")
+        if kid is not None and kid not in kps:
+            errs.append(f"step {step} 未知 knowledge_point_id {kid!r}")
+        if fid is not None and fid not in formulas:
+            errs.append(f"step {step} 未知 formula_id {fid!r}")
     return errs
 
 

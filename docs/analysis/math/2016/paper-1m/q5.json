@@ -1,0 +1,115 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2016",
+  "paper": "Paper 1M",
+  "qno": "5",
+  "hash": "#2016P1MQ5"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "指數與對數函數",
+   "secondary_topics": [
+    "二項式展開",
+    "係數比較"
+   ],
+   "required_formulas": [
+    "$e^x = 1 + x + \\frac{x^2}{2!} + \\dots$",
+    "$(a+b)^n = a^n + n a^{n-1}b + \\frac{n(n-1)}{2} a^{n-2}b^2 + \\dots$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 5
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "展開 $e^{kx}$ 至 $x^2$ 項，代入 $(1+2x)^7$ 展開式",
+    "marks": 2,
+    "common_error": "忘記將 $kx$ 代入指數級數公式中的 $x$",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "計算 $(1+2x)^7$ 的前三項展開式",
+    "marks": 1,
+    "common_error": "二項式係數計算錯誤或漏掉 $x^2$ 項",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "將兩部分相乘，收集所有含 $x$ 的項",
+    "marks": 1,
+    "common_error": "漏掉交叉項（如 $1 \\cdot kx^2/2$ 或 $2x \\cdot kx$）",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 4,
+    "what": "令 $x$ 的係數等於 8，解出常數 $k$",
+    "marks": 1,
+    "common_error": "解方程時移項錯誤或算錯 $k$ 值",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "將求得的 $k$ 值代回，計算 $x^2$ 的總係數",
+    "marks": 0,
+    "common_error": "代入後再次計算錯誤",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "此題結合指數展開與二項式定理，重點在於學生是否能系統性地處理多項式乘法中的交叉項，並準確解出參數 $k$。",
+  "scaffolding_hints": [
+   "先單獨寫出 $e^{kx}$ 和 $(1+2x)^7$ 的前三項展開式。",
+   "注意 $(1+2x)^7$ 的展開式中 $x^0, x^1, x^2$ 係數分別為何。",
+   "相乘時，$x$ 的係數來自：$(1)\\times(kx)$ 與 $(2x)\\times(\\text{常數項})$"
+  ],
+  "quick_solution_strategy": "先展開兩部分，列出 $x$ 係數方程求 $k$，再代回算 $x^2$ 係數。"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "4": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

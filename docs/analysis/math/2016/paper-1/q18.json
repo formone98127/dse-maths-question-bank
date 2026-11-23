@@ -1,0 +1,130 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2016",
+  "paper": "Paper 1",
+  "qno": "18",
+  "hash": "#2016P1Q18"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "二次函數",
+   "secondary_topics": [
+    "配方法",
+    "圖像平移",
+    "幾何變換"
+   ],
+   "required_formulas": [
+    "$y = a(x-h)^2 + k$",
+    "$f(x) \\pm c$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "將 $f(x)$ 配方成頂點式，找出 $(h,k)$。",
+    "marks": 2,
+    "common_error": "計算錯誤導致頂點坐標不正確。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "根據與 x 軸相切條件，確定垂直平移單位數。",
+    "marks": 1,
+    "common_error": "忽略頂點 y 座標需為 0 的條件。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "寫出 $g(x)$ 的完整表達式。",
+    "marks": 1,
+    "common_error": "忘記加上垂直平移的常數項。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "比較 $f(x)$ 與目標函數的係數差異。",
+    "marks": 1,
+    "common_error": "誤解 x 係數變化代表反射而非平移。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 5,
+    "what": "確認 y 係數不變，僅 x 係數符號改變。",
+    "marks": 1,
+    "common_error": "混淆關於 y 軸反射與水平壓縮的定義。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 6,
+    "what": "描述變換為「關於 y 軸的反射」。",
+    "marks": 1,
+    "common_error": "回答成「對 x 軸反射」或「水平翻轉」。",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "考生常混淆配方法計算細節及變換方向，特別是將關於 y 軸的反射誤認為是其他變換。",
+  "scaffolding_hints": [
+   "先專注於配方步驟，確保頂點式正確。",
+   "相切意味著頂點的 y 座標必須為零。",
+   "觀察 $x$ 係數從 $+12$ 變為 $-12$ 代表什麼對稱操作。"
+  ],
+  "quick_solution_strategy": "配方找頂點，令頂點 y=0 得 g(x)，比較 x 係數符號知為關於 y 軸反射。"
+ },
+ "skills": {
+  "topic_id": "T-FUN",
+  "knowledge_point_ids": [
+   "K-FUN-01",
+   "K-FUN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "5": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "6": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

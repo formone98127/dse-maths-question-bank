@@ -1,0 +1,116 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "PP",
+  "paper": "Paper 1M",
+  "qno": "6",
+  "hash": "#PPP1MQ6"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "正態分佈與統計推論",
+   "secondary_topics": [
+    "樣本平均數之變異數",
+    "t-分佈置信區間"
+   ],
+   "required_formulas": [
+    "Var(aX+b) = a^2 Var(X)",
+    "CI: \\bar{x} \\pm t_{n-1, \\alpha/2} \\frac{s}{\\sqrt{n}}"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 5
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用變異數性質計算 Var(2X̄+7)",
+    "marks": 2,
+    "common_error": "忘記常數項 7 對變異數無影響，或平方位置錯誤",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "確認母體標準差未知且樣本小於 30",
+    "marks": 1,
+    "common_error": "誤用 Z 分佈而非 t 分佈計算區間",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "由題幹推斷需假設母體變異數或給定 s",
+    "marks": 0,
+    "common_error": "無此步，僅為邏輯判斷",
+    "error_category": null
+   },
+   {
+    "step": 4,
+    "what": "查表取得 t 臨界值 (df=9, α=0.03)",
+    "marks": 1,
+    "common_error": "單尾與雙尾機率混淆導致 t 值錯誤",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 5,
+    "what": "代入公式計算置信區間上下限",
+    "marks": 1,
+    "common_error": "標準誤計算時忘記除以根號 n",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "考生常混淆母體變異數已知與未知之情境，導致 Z 分佈與 t 分佈應用錯誤，尤其在樣本量小時更需謹慎。",
+  "scaffolding_hints": [
+   "回憶 Var(aX+b) = a²Var(X)，常數 b 不影響變異數。",
+   "樣本小於 30 且母體變異數未知時，應使用 t-分佈。",
+   "置信區間公式為：點估計 ± (臨界值 × 標準誤)。"
+  ],
+  "quick_solution_strategy": "先算 Var(2X̄+7)=4×8/10=3.2；再查 t(9,0.015) 代入 CI 公式。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": null
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "5": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

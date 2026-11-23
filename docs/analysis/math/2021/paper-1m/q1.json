@@ -1,0 +1,120 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 1M",
+  "qno": "1",
+  "hash": "#2021P1MQ1"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "概率",
+   "secondary_topics": [
+    "期望值計算",
+    "條件概率",
+    "離散隨機變數"
+   ],
+   "required_formulas": [
+    "$\\sum P(X=x) = 1$",
+    "$E(X) = \\sum xP(X=x)$",
+    "$E(aX+b) = aE(X)+b$",
+    "$P(C|D) = \\frac{P(C \\cap D)}{P(D)}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用總概率為 1 建立方程求 a+b 的值。",
+    "marks": 2,
+    "common_error": "忘記將已知概率相加，或計算錯誤導致 a+b 值不正確。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "利用期望線性性質 E(5X+1)=10 求 E(X)。",
+    "marks": 1,
+    "common_error": "忘記加上常數項 1，或誤用公式 E(aX+b)=aE(X)+b。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "利用 E(X) 公式建立方程解出 a 和 b 的具體數值。",
+    "marks": 2,
+    "common_error": "代入 x 與 P(X=x) 時漏項或算術錯誤，導致無解或多解。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "計算事件 D (X≤2) 的總概率 P(D)。",
+    "marks": 1,
+    "common_error": "誤將 X=3 或 4 納入 D 中，或加法錯誤。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 5,
+    "what": "確定事件 C∩D (X>0 且 X≤2) 的範圍並計算 P(C∩D)。",
+    "marks": 1,
+    "common_error": "誤解不等式交集，將 X=0 或 X=3 錯誤包含在內。",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "此題結合離散隨機變數的基本性質與條件概率，是卷一常見的綜合應用題型，考生需熟練掌握期望線性性質及概率公理。",
+  "scaffolding_hints": [
+   "提示 1：所有可能結果的機率總和必須等於 1，這是解出 a+b 的關鍵。",
+   "提示 2：記得 E(aX+b) = aE(X)+b，不要忘記常數項 b 的影響。",
+   "提示 3：條件概率公式中，分子是兩個事件同時發生的機率，分母是條件事件的機率。"
+  ],
+  "quick_solution_strategy": "先由總和為 1 得 a+b=0.5；再由 E(5X+1)=10 推導 5E(X)+1=10 求 E(X)；聯立解出 a,b；最後計算 P(D) 與 P(C∩D) 代入條件概率公式。"
+ },
+ "skills": {
+  "topic_id": "T-PROB",
+  "knowledge_point_ids": [
+   "K-PROB-04"
+  ],
+  "formula_ids": [
+   "F-PROB-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "5": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

@@ -1,0 +1,136 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2018",
+  "paper": "Paper 1M",
+  "qno": "4",
+  "hash": "#2018P1MQ4"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "概率分佈",
+   "secondary_topics": [
+    "期望值",
+    "變異數",
+    "隨機變數性質"
+   ],
+   "required_formulas": [
+    "$\\sum P(Y=y) = 1$",
+    "$\\text{E}(Y) = \\sum yP(Y=y)$",
+    "$\\text{Var}(Y) = \\text{E}(Y^2) - (\\text{E}(Y))^2$",
+    "$\\text{Var}(aY+b) = a^2\\text{Var}(Y)$",
+    "$\\text{E}(aY+b) = a\\text{E}(Y)+b$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 180,
+   "marks": 7
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用總概率為 1 求出 p 與 m 的關係式。",
+    "marks": 2,
+    "common_error": "忘記將所有機率相加等於 1，或計算錯誤導致關係式錯誤。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 2,
+    "what": "計算 $\\text{E}(Y)$ 和 $\\text{E}(Y^2)$ 的表達式（含 m）。",
+    "marks": 1,
+    "common_error": "漏乘對應的機率，或平方項計算錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "代入變異數公式並化簡，證明第 (a) 問結論。",
+    "marks": 2,
+    "common_error": "化簡時符號錯誤，或未能將 p 替換為含 m 的式子。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "應用變異數性質 $\\text{Var}(2Y-1) = 4\\text{Var}(Y)$。",
+    "marks": 1,
+    "common_error": "錯誤認為常數 -1 影響變異數，或係數平方處理不當。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 5,
+    "what": "應用期望值性質 $\\text{E}(2Y-1) = 2\\text{E}(Y)-1$。",
+    "marks": 1,
+    "common_error": "忘記減去常數項，或係數未乘入期望值。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "聯立 (a) 結果與 (b) 條件解方程求 m 並驗證合理性。",
+    "marks": 0,
+    "common_error": "解二次方程遺漏根，或求出負機率值未檢查。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "此題測試學生對離散隨機變數基本性質的掌握，特別是變異數與期望值的線性性質應用，常見錯誤在於混淆常數對變異數的影響。",
+  "scaffolding_hints": [
+   "Recall that the sum of all probabilities must equal 1.",
+   "Remember $\\text{Var}(aY+b) = a^2\\text{Var}(Y)$ and the constant 'b' does not affect variance.",
+   "Check if your calculated m results in valid probabilities (between 0 and 1)."
+  ],
+  "quick_solution_strategy": "先由 $p+0.25+0.5=1$ 得 $p=0.25$，再計算 $\\text{E}(Y)$ 和 $\\text{Var}(Y)$，最後代入條件解 m。"
+ },
+ "skills": {
+  "topic_id": "T-PROB",
+  "knowledge_point_ids": [
+   "K-PROB-01",
+   "K-PROB-02"
+  ],
+  "formula_ids": [
+   "F-PROB-01",
+   "F-PROB-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "2": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "5": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

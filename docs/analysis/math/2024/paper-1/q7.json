@@ -1,0 +1,133 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 1",
+  "qno": "7",
+  "hash": "#2024P1Q7"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "極坐標系",
+   "secondary_topics": [
+    "角度計算",
+    "共線判定",
+    "餘弦定理"
+   ],
+   "required_formulas": [
+    "$\\theta_{diff} = |\\theta_1 - \\theta_2|$",
+    "$a^2 = b^2 + c^2 - 2bc\\cos A$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 300,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "計算 $\\angle POQ$ 為兩點極角之差的絕對值。",
+    "marks": 4,
+    "common_error": "未取絕對值或方向搞錯，導致角度大於 180 度。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 2,
+    "what": "比較 $P$ 與 $R$ 的極角差是否為 $180^\\circ$ 或 $k \\cdot 360^\\circ + 180^\\circ$。",
+    "marks": 4,
+    "common_error": "忽略週期性，只算簡單差值而未考慮多圈旋轉。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "解釋共線結論：若角度差為 $180^\\circ$ 則共線，否則不共線。",
+    "marks": 4,
+    "common_error": "僅寫「是」或「否」而未提供極角關係之邏輯解釋。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 4,
+    "what": "將極坐標轉換為直角坐標或利用餘弦定理求 $PQ$、$QR$、$RP$。",
+    "marks": 4,
+    "common_error": "計算三角函數值時出現四捨五入錯誤或手算失误。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "分別計算三邊長度 $PQ$、$QR$ 及 $RP$ 的數值。",
+    "marks": 4,
+    "common_error": "遺漏某一條邊或重複計算同一條邊導致總和錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "將三邊長度相加得出周界並保留適當有效數字。",
+    "marks": 4,
+    "common_error": "未檢查單位一致性或錯誤四捨五入至不合理精度。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "極坐標題目常考角度差與共線判斷，考生需熟練處理角度週期性以避免概念性錯誤。",
+  "scaffolding_hints": [
+   "Hint1: 極角之差直接對應夾角大小，注意取最小正角。",
+   "Hint2: 共線條件為兩點與極點形成的角度差為 $180^\\circ$ 的奇數倍。",
+   "Hint3: 使用餘弦定理時，先確認已知邊長與夾角是否對應正確三角形。"
+  ],
+  "quick_solution_strategy": "直接計算角度差判斷共線；用餘弦定理求三邊後相加得周界。"
+ },
+ "skills": {
+  "topic_id": "T-LIN",
+  "knowledge_point_ids": [
+   "K-LIN-01",
+   "K-LIN-02"
+  ],
+  "formula_ids": [
+   "F-LIN-01",
+   "F-LIN-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "2": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "4": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

@@ -288,6 +288,19 @@ def write_paper_map(year: str, paper: str, items: list[dict]) -> Path:
                 fault_kp[kps[f["knowledge_point_id"]]["name"]] += 1
             if opt in oa and oa[opt].get("error_category"):
                 err_c[CAT_ZH.get(oa[opt]["error_category"], oa[opt]["error_category"])] += 1
+        # Paper 1 / M1 step faults
+        for _step, f in (it["skills"].get("step_faults") or {}).items():
+            if not isinstance(f, dict):
+                continue
+            aid = f.get("ability_id")
+            if aid in abilities:
+                fault_ab[abilities[aid]] += 1
+            kid = f.get("knowledge_point_id")
+            if kid in kps:
+                fault_kp[kps[kid]["name"]] += 1
+            cat = f.get("error_category")
+            if cat:
+                err_c[CAT_ZH.get(cat, cat)] += 1
 
     slug = paper_slug(paper)
     path = OUT_DIR / f"math-{year}-{slug}.md"

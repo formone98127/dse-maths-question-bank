@@ -1,0 +1,104 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2012",
+  "paper": "Paper 1",
+  "qno": "8",
+  "hash": "#2012P1Q8"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓的幾何",
+   "secondary_topics": [
+    "交弦定理",
+    "相似三角形判定",
+    "畢氏定理"
+   ],
+   "required_formulas": [
+    "\\frac{AE}{DE} = \\frac{CE}{BE}",
+    "\\angle BAC + \\angle ADB = 180^\\circ$ (圓內接四邊形性質)",
+    "勾股定理：$a^2+b^2=c^2$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 5
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "指出相似三角形並利用交弦定理求 AE。",
+    "marks": 2,
+    "common_error": "寫錯相似對應點順序，或計算錯誤。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "計算 AC 總長度 (AE + CE)。",
+    "marks": 1,
+    "common_error": "忘記將 AE 與 CE 相加。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "利用 AB 長度計算 BC 長度 (勾股定理)。",
+    "marks": 1,
+    "common_error": "誤用畢氏定理於非直角三角形。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 4,
+    "what": "比較 BC 與 BD 長度關係或直接驗證垂直條件。",
+    "marks": 1,
+    "common_error": "未能正確連結邊長關係至垂直結論。",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "考生需熟練圓內接四邊形對角線相交時形成的相似三角形性質，並能準確運用交弦定理計算未知線段長度；在判斷垂直時，應透過計算邊長關係或角度和來論證，避免僅憑直覺作答。",
+  "scaffolding_hints": [
+   "提示：圓內接四邊形中，對角線相交形成的兩個三角形（如 $\\Delta ABE$ 與 $\\Delta DCE$）是否相似？",
+   "知識：交弦定理公式為 $AE \\cdot CE = BE \\cdot DE$。",
+   "破題：先求出 $AC$ 總長，再結合 $AB=10$ 判斷 $\\Delta ABC$ 是否為直角三角形。"
+  ],
+  "quick_solution_strategy": "利用相似比求 AE，算出 AC 後用畢氏定理驗證 BC 長度，若滿足勾股數則垂直。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-05"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "4": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

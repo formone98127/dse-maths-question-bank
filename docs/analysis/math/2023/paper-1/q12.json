@@ -1,0 +1,92 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2023",
+  "paper": "Paper 1",
+  "qno": "12",
+  "hash": "#2023P1Q12"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "函數與變分",
+   "secondary_topics": [
+    "二次函數性質",
+    "坐標幾何",
+    "圓的半徑計算"
+   ],
+   "required_formulas": [
+    "$y = ax^2 + c$",
+    "$r = \\sqrt{(x_1-x_2)^2 + (y_1-y_2)^2}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "設 f(x) = ax^2 + c，利用已知點求 a 與 c",
+    "marks": 2,
+    "common_error": "忽略常數部分 c，誤以為是純二次函數 y=ax^2",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "代入 x=10, f(10)=62 及 x=15, f(15)=122 解方程組",
+    "marks": 2,
+    "common_error": "計算錯誤導致 a 或 c 值不正確，無法求出 f(5)",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "計算 f(5) 的數值並寫出最終答案",
+    "marks": 2,
+    "common_error": "忘記代入 x=5 到正確公式中，或算錯平方值",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "此題 (a) 部分主要測試考生建立二次函數模型的能力，考評報告顯示超過 75% 考生能正確處理常數項與變數項的混合情況。",
+  "scaffolding_hints": [
+   "提示 1：題目說「一部分為常數」，代表形式必為 y = ax^2 + c。",
+   "提示 2：將兩個已知點代入方程，得到關於 a 和 c 的二元一次方程組。",
+   "提示 3：解出 a 和 c 後，直接代回 x=5 即可求得答案。"
+  ],
+  "quick_solution_strategy": "設 f(x)=ax^2+c，代入 (10,62) 和 (15,122) 解得 a=4, c=-38，再求 f(5)。"
+ },
+ "skills": {
+  "topic_id": "T-VAR",
+  "knowledge_point_ids": [
+   "K-VAR-01"
+  ],
+  "formula_ids": [
+   "F-VAR-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

@@ -1,0 +1,118 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2018",
+  "paper": "Paper 1",
+  "qno": "16",
+  "hash": "#2018P1Q16"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "等比數列",
+   "secondary_topics": [
+    "指數不等式",
+    "對數運算",
+    "數列通項公式"
+   ],
+   "required_formulas": [
+    "$a_n = a r^{n-1}$",
+    "$\\sum_{k=1}^m ar^{k-1} = \\frac{a(r^m - 1)}{r - 1}$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 420,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用第3、4項求公比 r 及首項 a",
+    "marks": 2,
+    "common_error": "計算 r=864/720 時約分錯誤，或混淆 a_n 公式指數。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "寫出第 (n+1) 項與第 (2n+1) 項的通項表達式",
+    "marks": 1,
+    "common_error": "忘記減去首項指數 -1，直接寫成 ar^n。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "建立不等式 a_{n+1} + a_{2n+1} < 5\\times 10^{14}",
+    "marks": 1,
+    "common_error": "代入數值時計算機輸入錯誤，或指數運算混亂。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "化簡不等式為 r^n < K 的形式 (K 為常數)",
+    "marks": 1,
+    "common_error": "未能正確合併指數項，或忘記將係數移至右邊。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 5,
+    "what": "取對數求解 n 的上界並向下取整",
+    "marks": 1,
+    "common_error": "忽略 log 底數轉換，或計算 log(大數) 時精度不足。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "考評局指出考生常混淆「單項」與「前 n 項和」，導致在處理指數不等式時建立錯誤模型，需加強對通項公式的直觀理解。",
+  "scaffolding_hints": [
+   "先計算 r = 864/720 = 1.2，再求 a = 720 / (1.2)^2。",
+   "注意題目要求的是「第 (n+1) 項」加「第 (2n+1) 項」，而非前 n 項和。",
+   "將不等式化為 $r^n < \\text{某數值}$ 後，利用對數求 n 的最大整數解。"
+  ],
+  "quick_solution_strategy": "先算 r=1.2, a=500。列出不等式 $500(1.2)^n + 500(1.2)^{2n} < 5\\times 10^{14}$，令 $x=(1.2)^n$ 解二次不等式再取對數。"
+ },
+ "skills": {
+  "topic_id": "T-SEQ",
+  "knowledge_point_ids": [
+   "K-SEQ-03"
+  ],
+  "formula_ids": [
+   "F-SEQ-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-SEQ-03",
+    "formula_id": "F-SEQ-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-SEQ-03",
+    "formula_id": "F-SEQ-03",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-SEQ-03",
+    "formula_id": "F-SEQ-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-SEQ-03",
+    "formula_id": "F-SEQ-03",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "5": {
+    "knowledge_point_id": "K-SEQ-03",
+    "formula_id": "F-SEQ-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

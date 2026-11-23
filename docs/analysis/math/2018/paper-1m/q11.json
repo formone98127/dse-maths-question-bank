@@ -1,0 +1,117 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2018",
+  "paper": "Paper 1M",
+  "qno": "11",
+  "hash": "#2018P1MQ11"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "微分法",
+   "secondary_topics": [
+    "指數與對數函數",
+    "梯形則 (Trapezoidal Rule)",
+    "定積分應用"
+   ],
+   "required_formulas": [
+    "\\int_{a}^{b} f(t) dt",
+    "\\text{Trapezoidal Rule: } \\frac{h}{2}[y_0 + 2y_1 + 2y_2 + \\dots + y_n]",
+    "\\int \\frac{1+10t}{1+2t} dt = \\frac{5}{2}(1+10t) - \\frac{15}{4}\\ln|1+2t| + C"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 360,
+   "marks": 12
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "計算 A(t) 在 t=0.1, 0.25, 0.4, 0.5 的值",
+    "marks": 2,
+    "common_error": "代入數值時算錯指數或分數，導致 h/2 係數遺漏",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "應用梯形則公式計算 D_1 並得出數值",
+    "marks": 2,
+    "common_error": "忘記將首尾點加一次，中間點乘 2，或 h 取值錯誤",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "分析 A(t) 圖形凹凸性判斷 D_1 誤差方向",
+    "marks": 2,
+    "common_error": "未求二階導數或畫圖，直接猜測過/不足估計",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "計算 B(t) 的原函數並代入上下限求 D_2",
+    "marks": 2,
+    "common_error": "分部積分或對數處理錯誤，導致定積分結果偏差",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "比較 D_1 與 D_2 誤差大小並回應 Mary 的論點",
+    "marks": 2,
+    "common_error": "僅比較數值大小而未考慮模型本身的擬合度或誤差來源",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "此題結合微積分與數值方法，強調學生需理解梯形則的幾何意義及函數凹凸性對估計誤差的影響，同時測試處理複雜指數與有理函數積分的技巧。",
+  "scaffolding_hints": [
+   "先計算 h = (0.5-0.1)/4 = 0.1，確定節點 t 值。",
+   "求 A''(t) 判斷圖形是上凹還是下凹以決定過/不足估計。",
+   "對 B(t) 積分時可將分子拆成 (1+2t) + 8t 來簡化計算。"
+  ],
+  "quick_solution_strategy": "先算 A(t) 四點值套梯形則；求二階導數判凹凸性；B(t) 用拆分法積分比較誤差。"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

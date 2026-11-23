@@ -1,0 +1,118 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 1M",
+  "qno": "3",
+  "hash": "#2021P1MQ3"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "概率",
+   "secondary_topics": [
+    "二項分佈",
+    "條件概率",
+    "貝氏定理"
+   ],
+   "required_formulas": [
+    "$P(X=k) = \\binom{n}{k} p^k (1-p)^{n-k}$",
+    "$P(A|B) = \\frac{P(B|A)P(A)}{P(B)}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 300,
+   "marks": 7
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "定義隨機變數：設 X 為答對題數，計算單題答對機率 p。",
+    "marks": 2,
+    "common_error": "忽略粗心答錯情況，直接將答對機率設為 0.8。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "計算 Peter 獲得 A 級（X≥8）的總概率 P(A)。",
+    "marks": 2,
+    "common_error": "忘記將 k=8,9,10 三種情況相加，或計算二項係數錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "定義事件 B：Peter 會做所有題目，計算 P(A∩B)。",
+    "marks": 1,
+    "common_error": "誤以為只要會做就一定會對，忽略粗心答錯的機率。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "計算 Peter 會做所有題目的先驗概率 P(B)。",
+    "marks": 1,
+    "common_error": "將 P(B) 誤算為 0.8^10，而非考慮他不會做的題目。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 5,
+    "what": "應用貝氏定理計算條件概率 P(B|A)。",
+    "marks": 1,
+    "common_error": "公式顛倒，算成 P(A|B) 而非 P(B|A)，或分母用錯。",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "此題測試學生處理多階段隨機過程及結合二項分佈與條件概率的能力，常見失誤在於混淆「會做」與「答對」的定義，以及忽略粗心因素。",
+  "scaffolding_hints": [
+   "Hint1: 單題答對機率 p = P(會)×P(不粗心) + P(不會)×0 = 0.8×0.9 + 0.2×0。",
+   "Hint2: 事件 A 包含三種情況：全對、錯 1 題、錯 2 題，需用二項分佈求和。",
+   "Hint3: 貝氏定理中，分子是「會做且答對」的機率，分母是「總體答對」的機率。"
+  ],
+  "quick_solution_strategy": "先算單題有效答對率 0.72，再用二項分佈求和 P(X≥8)，最後用貝氏定理結合全會做的條件概率求解。"
+ },
+ "skills": {
+  "topic_id": "T-PROB",
+  "knowledge_point_ids": [
+   "K-PROB-04"
+  ],
+  "formula_ids": [
+   "F-PROB-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "5": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

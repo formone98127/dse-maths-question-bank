@@ -1,0 +1,135 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2019",
+  "paper": "Paper 1",
+  "qno": "16",
+  "hash": "#2019P1Q16"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "代數化簡",
+   "secondary_topics": [
+    "一元二次方程",
+    "對數運算",
+    "等差數列求和"
+   ],
+   "required_formulas": [
+    "S_n = \\frac{n}{2}[2a + (n-1)d]",
+    "\\log(xy) = \\log x + \\log y"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "聯立兩個方程，消去β得到關於α的一元二次方程。",
+    "marks": 1,
+    "common_error": "代入時符號錯誤或展開平方項計算出錯。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "解一元二次方程求出α的兩個可能值。",
+    "marks": 1,
+    "common_error": "忘記檢查判别式或算錯根，忽略實數限制。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "代回原方程求對應的β值，並驗證是否為實數。",
+    "marks": 1,
+    "common_error": "未將α代回檢查β，或算錯對數定義域。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 4,
+    "what": "利用對數性質化簡等差數列首n項和公式。",
+    "marks": 0,
+    "common_error": "混淆等差與等比求和公式，或對數運算錯誤。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 5,
+    "what": "將αβ值代入化簡後的公式，建立關於n的不等式。",
+    "marks": 1,
+    "common_error": "計算數值時出錯，導致不等式方向搞反。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "解不等式找出滿足條件的最小整數n。",
+    "marks": 2,
+    "common_error": "忽略n必須為正整數的條件，或計算錯誤。",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "考生常混淆等差與等比數列求和公式，導致在處理對數化簡後的線性遞增關係時無法正確建立不等式求解n。",
+  "scaffolding_hints": [
+   "先將兩個關於β的表達式相等，整理成標準一元二次方程形式。",
+   "記得檢查α與β是否滿足對數定義域（大於0）。",
+   "等差數列求和公式S_n = n/2(2a+(n-1)d)，注意d為logβ-logα。"
+  ],
+  "quick_solution_strategy": "聯立方程解出α,β後，直接代入等差求和公式，化簡成An+B形式不等於888即可解得n。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-01",
+   "K-POL-02"
+  ],
+  "formula_ids": [
+   "F-POL-01",
+   "F-POL-02",
+   "F-POL-03",
+   "F-POL-06"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "4": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "5": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

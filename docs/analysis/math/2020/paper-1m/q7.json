@@ -1,0 +1,109 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2020",
+  "paper": "Paper 1M",
+  "qno": "7",
+  "hash": "#2020P1MQ7"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "微分法",
+   "secondary_topics": [
+    "圓柱體幾何性質",
+    "不等式判斷"
+   ],
+   "required_formulas": [
+    "V = \\pi r^2 h",
+    "A = 2\\pi rh + 2\\pi r^2",
+    "\\frac{dV}{dr} = 2\\pi r(h+r)"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用全表面積公式建立 h 與 r 的關係式",
+    "marks": 2,
+    "common_error": "忘記側面面積的 2\\pi rh，或混淆底面積公式",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 2,
+    "what": "將 V 表示為僅含 r 的函數並求導數 dV/dr",
+    "marks": 2,
+    "common_error": "代入 h 時展開錯誤，或微分時漏掉鏈式法則項",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "將數值 486\\pi 代入求導結果並化簡",
+    "marks": 1,
+    "common_error": "計算大數乘法出錯，或忘記除以常數係數",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "比較 dV/dr 與目標值判斷體積是否可超過 5000",
+    "marks": 1,
+    "common_error": "誤解導數意義為體積最大值，而非變化率",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "考生常忽略圓柱高 h 隨半徑 r 變化的依賴關係，導致微分時將 h 視為常數而失分。",
+  "scaffolding_hints": [
+   "先寫出 A = 2\\pi rh + 2\\pi r^2 = 486\\pi 解出 h(r)",
+   "V = \\pi r^2 h，代入 h(r) 後再對 r 微分",
+   "注意題目問的是 dV/dr 而非 V 的最大值"
+  ],
+  "quick_solution_strategy": "由 A=486\\pi 得 h=213/r-1, 代入 V=\\pi r^2(213/r-1), 求導後計算數值。"
+ },
+ "skills": {
+  "topic_id": "T-MEN",
+  "knowledge_point_ids": [
+   "K-MEN-01",
+   "K-MEN-02"
+  ],
+  "formula_ids": [
+   "F-MEN-01",
+   "F-MEN-02",
+   "F-MEN-03",
+   "F-MEN-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "2": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

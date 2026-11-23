@@ -1,0 +1,108 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2015",
+  "paper": "Paper 1",
+  "qno": "8",
+  "hash": "#2015P1Q8"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓的性質",
+   "secondary_topics": [
+    "等腰三角形",
+    "圓內接四邊形",
+    "弦切角/同弧所對圓周角"
+   ],
+   "required_formulas": [
+    "圓內接四邊形對角互補：$\\angle A + \\angle C = 180^\\circ$",
+    "等腰三角形底角相等",
+    "同弧所對圓周角相等"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 240,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用 $AB=AD$ 及圓內接四邊形性質求 $\\angle C$",
+    "marks": 2,
+    "common_error": "忽略 $AB=AD$ 導致無法求出 $\\angle ABD$，或誤算 $\\angle ADB$ 位置",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "在 $\\triangle BCD$ 中利用內角和求 $\\angle BDC$",
+    "marks": 2,
+    "common_error": "忘記使用圓內接四邊形求出 $\\angle C$，直接假設直角",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "利用 $BC=CE$ 及等腰三角形性質求 $\\angle CBE$",
+    "marks": 1,
+    "common_error": "誤以為 $BC=BE$，導致計算出錯誤的 $\\angle CBE$",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 4,
+    "what": "利用圓內接四邊形外角等於內對角求 $\\angle ABE$",
+    "marks": 1,
+    "common_error": "混淆 $\\angle ABE$ 與 $\\angle CBE$，或誤用圓周角定理",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "考評報告指出考生常因誤讀條件 $BC=CE$ 為 $BC=BE$，導致將 $\\angle ABE$ 算成 $19^\\circ$，顯示閱讀題意與識別等腰三角形頂點的能力需加強。",
+  "scaffolding_hints": [
+   "提示 1：先由 $AB=AD$ 和圓內接四邊形性質推導 $\\angle C$ 的數值。",
+   "提示 2：在 $\\triangle BCD$ 中，已知兩角可求第三角 $\\angle BDC$。",
+   "提示 3：注意題目給的是 $BC=CE$，故 $\\triangle BCE$ 是等腰三角形，頂點為 $C$"
+  ],
+  "quick_solution_strategy": "先由 $AB=AD$ 得 $\\angle ABD = \\angle ADB = 58^\\circ$，再求 $\\angle A$ 及 $\\angle C$；接著在 $\\triangle BCD$ 求 $\\angle BDC$；最後利用 $BC=CE$ 求 $\\angle CBE$，再由圓內接四邊形外角性質得 $\\angle ABE$"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-01",
+   "K-GEO-02"
+  ],
+  "formula_ids": [
+   "F-GEO-01",
+   "F-GEO-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "4": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

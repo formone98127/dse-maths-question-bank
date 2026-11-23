@@ -1,0 +1,105 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 1M",
+  "qno": "2",
+  "hash": "#2013P1MQ2"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "微分法",
+   "secondary_topics": [
+    "鏈式法則",
+    "指數函數求導",
+    "代入計算"
+   ],
+   "required_formulas": [
+    "\\frac{d}{dx}(x^n) = nx^{n-1}",
+    "\\frac{d}{dx}(a^u) = a^u \\ln(a) \\cdot \\frac{du}{dx}",
+    "\\frac{d}{dt}C(t) = \\frac{dC}{dp} \\cdot \\frac{dp}{dt}"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "對 p 的表達式關於 t 求導，計算 dp/dt。",
+    "marks": 1,
+    "common_error": "忘記根號指數變為 -1/2，或微分常數時出錯。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "對 C = 2^p 關於 p 求導，計算 dC/dp。",
+    "marks": 1,
+    "common_error": "忘記指數函數需乘 ln(2)，誤以為是線性。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "利用鏈式法則將兩導數相乘得 dC/dt。",
+    "marks": 1,
+    "common_error": "漏寫中間變數 p，直接代入導致結構錯誤。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 4,
+    "what": "代入 t=5 計算 p、dp/dt 與最終答案。",
+    "marks": 1,
+    "common_error": "計算精度不足或算錯根號值。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "此題結合指數函數與根式微分，測試學生對鏈式法則的熟練度及處理複合函數的能力，屬典型應用題型。",
+  "scaffolding_hints": [
+   "先將 \\sqrt{t+4} 寫成 (t+4)^{1/2} 方便微分。",
+   "記住指數底數大於 1 時的導數公式需乘自然對數。",
+   "最後務必檢查單位與數值合理性。"
+  ],
+  "quick_solution_strategy": "先求 dp/dt，再求 dC/dp，相乘後代 t=5 即可。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

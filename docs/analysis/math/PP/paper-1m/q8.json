@@ -1,0 +1,104 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "PP",
+  "paper": "Paper 1M",
+  "qno": "8",
+  "hash": "#PPP1MQ8"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "二項分佈",
+   "secondary_topics": [
+    "幾何分佈",
+    "期望值"
+   ],
+   "required_formulas": [
+    "$P(X=k) = \\binom{n}{k} p^k (1-p)^{n-k}$",
+    "$P(X > k) = 1 - P(X \\le k)$",
+    "$E(Y) = \\frac{1}{p}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 300,
+   "marks": 7
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "定義隨機變數 X，計算 P(X>1) = 1 - P(X=0) - P(X=1)",
+    "marks": 3,
+    "common_error": "忘記用 1 減去前兩項，或二項係數計算錯誤",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "定義 Y 為試驗次數，確立 Y 服從幾何分佈 G(p)",
+    "marks": 1,
+    "common_error": "混淆二項與幾何分佈的參數意義",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "計算 P(Y=6) = (1-p)^5 * p，其中 p 為第 1 步結果",
+    "marks": 2,
+    "common_error": "指數寫成 6 而非 5，或忘記乘上成功機率 p",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "計算期望值 E(Y) = 1/p",
+    "marks": 1,
+    "common_error": "直接寫成 n*p 或誤用二項分佈期望公式",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "此題測試學生將實際情境轉化為二項及幾何分佈模型的能力，特別是處理「超過某數值」的補集計算及幾何分佈定義。",
+  "scaffolding_hints": [
+   "Hint1: 先算出單盒有超過 1 個壞蛋的機率 p_success。",
+   "Hint2: 第 (b)(i) 問是「第一次成功發生在第 6 次」，符合幾何分佈定義。",
+   "Hint3: 幾何分佈期望公式簡單，只需代入步驟 1 算出的機率即可。"
+  ],
+  "quick_solution_strategy": "先算 P(X>1)，設此為 p。則 (i) 為 (1-p)^5 * p，(ii) 為 1/p。注意幾何分佈指數是 k-1。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

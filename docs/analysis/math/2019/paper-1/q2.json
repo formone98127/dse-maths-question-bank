@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2019",
+  "paper": "Paper 1",
+  "qno": "2",
+  "hash": "#2019P1Q2"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "代數化簡",
+   "secondary_topics": [
+    "異分母分式運算",
+    "因式分解（無）",
+    "通分"
+   ],
+   "required_formulas": [
+    "\\frac{A}{B} \\pm \\frac{C}{D} = \\frac{AD \\pm BC}{BD}"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120,
+   "marks": 3
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "找出公分母 (7x-6)(5x-4) 並通分。",
+    "marks": 1,
+    "common_error": "直接相減分子，忽略分母乘積。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 2,
+    "what": "計算新分子：3(5x-4) - 2(7x-6)。",
+    "marks": 1,
+    "common_error": "符號錯誤，如漏掉減號或括號分配錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "合併同類項並化簡分子為最簡形式。",
+    "marks": 1,
+    "common_error": "未合併 x 項與常數項，或計算錯誤。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "此題屬基礎分式運算，75% 考生能答對顯示大部分學生掌握異分母通分概念，但剩餘 25% 可能因計算細節失誤扣分。",
+  "scaffolding_hints": [
+   "Recall the rule for subtracting fractions with different denominators.",
+   "Ensure you distribute the negative sign correctly to both terms in the second numerator.",
+   "Check your final answer by substituting a value for x (e.g., x=2) into original and simplified expressions."
+  ],
+  "quick_solution_strategy": "公分母為兩分母乘積，分子交叉相乘後相減，最後合併同類項。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-03"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "2": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

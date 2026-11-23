@@ -1,0 +1,135 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 1",
+  "qno": "19",
+  "hash": "#2022P1Q19"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓的方程",
+   "secondary_topics": [
+    "直線方程",
+    "幾何性質 (切線/垂徑)",
+    "三角形內心與外心",
+    "面積比"
+   ],
+   "required_formulas": [
+    "$y - y_1 = m(x - x_1)$",
+    "$r^2 = (x-h)^2 + (y-k)^2$",
+    "$\\text{Area} = \\pi r^2$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 480,
+   "marks": 12
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用 A(158,12) 與 G(83,112) 求 AG 斜率並寫出直線方程。",
+    "marks": 2,
+    "common_error": "計算斜率時坐標減反號，或忘記代入點寫出完整方程。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "利用圓半徑求切線長 AP，再求 P、Q 座標（或利用幾何關係）。",
+    "marks": 1,
+    "common_error": "未計算半徑直接假設坐標，或混淆切線長公式。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "利用 AG⊥PQ 性質求 PQ 中點 M 及直線 PQ 方程，得交點。",
+    "marks": 2,
+    "common_error": "忽略 AG⊥PQ 垂直關係，誤用垂直平分線公式。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "利用 P、Q 座標求 PQ 中點 M 及半徑 PM，寫出內切圓方程。",
+    "marks": 2,
+    "common_error": "混淆內心與外心位置，或計算半徑時未考慮幾何比例。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "證明 AG 為外接圓直徑，求外接圓半徑 R 並比較面積比。",
+    "marks": 2,
+    "common_error": "未察覺直角三角形斜邊為直徑，導致無法求外接圓半徑。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 6,
+    "what": "計算內切圓與外接圓面積比，判斷宣稱是否正確並解釋。",
+    "marks": 3,
+    "common_error": "只寫出比例數值卻未說明 AG 為直徑的幾何理由。",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "考生常忽略直角三角形斜邊即為外接圓直徑這一關鍵性質，導致無法正確建立內切圓與外接圓的面積關係。",
+  "scaffolding_hints": [
+   "提示：從圓心 G 到點 A 的距離平方減去半徑平方等於切線長 AP 的平方。",
+   "知識：直角三角形的外接圓直徑即為斜邊，內心位於斜邊上且分斜邊為兩段。",
+   "破題：先畫圖標出 G、A、P、Q，觀察 AG 與 PQ 垂直相交於 M 的幾何結構。"
+  ],
+  "quick_solution_strategy": "先求 AG 方程與半徑；利用 AP²=AG²-r² 得切線長；由 AG⊥PQ 知 M 為 PQ 中點，內切圓直徑即 PM；外接圓直徑為 AG。"
+ },
+ "skills": {
+  "topic_id": "T-CIR",
+  "knowledge_point_ids": [
+   "K-CIR-01",
+   "K-CIR-02"
+  ],
+  "formula_ids": [
+   "F-CIR-01",
+   "F-CIR-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "6": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

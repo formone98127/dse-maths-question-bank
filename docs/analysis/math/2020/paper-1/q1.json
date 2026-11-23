@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2020",
+  "paper": "Paper 1",
+  "qno": "1",
+  "hash": "#2020P1Q1"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "指數定律",
+   "secondary_topics": [
+    "負指數",
+    "冪的乘方"
+   ],
+   "required_formulas": [
+    "$\\frac{a^m}{a^n} = a^{m-n}$",
+    "$(a^m)^n = a^{mn}$",
+    "$a^{-n} = \\frac{1}{a^n}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90,
+   "marks": 3
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "處理分數內的負指數，將 $m^{-4}$ 移至分子變正指數。",
+    "marks": 1,
+    "common_error": "忘記將分母的負指數移到分子或變號錯誤。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "合併同底數的冪，計算 $m$ 的指數差 ($1 - (-4))$。",
+    "marks": 1,
+    "common_error": "計算指數時符號處理錯誤，如 $1+4=5$ 而非 $5$。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "應用冪的乘方法則，將外層指數 5 乘入括號內所有項。",
+    "marks": 1,
+    "common_error": "忘記將指數 5 分配給 $n$ 或計算 $2 \\times 5$ 錯誤。",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "此題為基礎指數運算，考評顯示超過八成半考生能正確化簡，顯示學生對負指數與冪的性質掌握良好，主要失分點在於計算細節與符號處理。",
+  "scaffolding_hints": [
+   "先專注於 $m$ 的底數，利用除法法則合併指數。",
+   "記住 $a^{-n}$ 移到分子會變成正指數 $a^n$。",
+   "最後一步務必檢查所有指數是否為正數。"
+  ],
+  "quick_solution_strategy": "移負指數合併底數後，再將外層指數乘入即可得答案 $m^{25}n^{10}$。"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

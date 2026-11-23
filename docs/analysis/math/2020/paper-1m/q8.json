@@ -1,0 +1,129 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2020",
+  "paper": "Paper 1M",
+  "qno": "8",
+  "hash": "#2020P1MQ8"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "Integration by Parts",
+   "secondary_topics": [
+    "Exponential Functions",
+    "Definite Integrals"
+   ],
+   "required_formulas": [
+    "$$\\int u \\, dv = uv - \\int v \\, du$$",
+    "$$\\frac{d}{dx}(xe^{mx}) = e^{mx} + mx e^{mx}$$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 7
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "對 $xe^{mx}$ 求導，觀察結構以擬定分部積分法。",
+    "marks": 1,
+    "common_error": "忘記乘積法則導致求導錯誤，或誤以為直接積分即可。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 2,
+    "what": "設定 $u=x$ 與 $dv=e^{mx}dx$，計算 $du$ 與 $v$。",
+    "marks": 1,
+    "common_error": "微分 $x$ 時忘記變為 $dx$，或積分 $e^{mx}$ 漏掉除以 $m$。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "代入分部積分公式得出原函數的通用表達式。",
+    "marks": 1,
+    "common_error": "符號錯誤（如負號位置）或忘記加上積分常數 $C$。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "將上下限 $0$ 與 $1$ 代入原函數計算定積分值。",
+    "marks": 2,
+    "common_error": "代入時搞錯上下限順序，或忽略 $x=0$ 時的項為零。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 5,
+    "what": "根據題目條件面積等於 $1/m$，建立關於 $m$ 的方程。",
+    "marks": 1,
+    "common_error": "忘記面積需取絕對值，或誤將 $1/m$ 當作負數處理。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 6,
+    "what": "解方程求 $m$ 的值，並驗證是否符合非零常數條件。",
+    "marks": 1,
+    "common_error": "解二次方程時遺漏一解，或忽略 $m$ 不能為零的限制。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "此題結合分部積分與指數函數性質，常見失誤在於計算細節與對面積定義的理解不足。",
+  "scaffolding_hints": [
+   "Recall the product rule for differentiation to guide integration by parts.",
+   "Remember that $\\int e^{mx} dx = \\frac{1}{m}e^{mx}$, not just $e^{mx}$.",
+   "The area condition implies taking the absolute value of the definite integral."
+  ],
+  "quick_solution_strategy": "Use $u=x, dv=e^{mx}dx$ for parts (a), then evaluate bounds and solve for $m$ in (b)."
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "5": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "6": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

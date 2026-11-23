@@ -1,0 +1,135 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2012",
+  "paper": "Paper 1",
+  "qno": "18",
+  "hash": "#2012P1Q18"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "立體幾何",
+   "secondary_topics": [
+    "直線與平面之交角",
+    "兩平面之交角",
+    "餘弦定理"
+   ],
+   "required_formulas": [
+    "cos A = (b^2 + c^2 - a^2) / (2bc)",
+    "sin θ = opposite / hypotenuse"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 420,
+   "marks": 11
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用餘弦定理求 VA 長度，並由 ∠PBA=60° 解 △VAB 得 AP。",
+    "marks": 2,
+    "common_error": "誤讀∠AVB=72° 而非∠VAB；計算三角比錯誤。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 2,
+    "what": "作 VH⊥AB 於 H，求 VH 及 HB，確定 P 點高度對應的垂直距離。",
+    "marks": 1,
+    "common_error": "忽略直立角錐性質，誤算斜高。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "證明 BC⊥平面 VAD，推導 PQ∥BC 意味著截面為梯形且垂直於 AD。",
+    "marks": 2,
+    "common_error": "未能建立線面垂直關係導致邏輯斷裂。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "取 BC 中點 M，連 AM，證明 α 為平面 PBCQ 與底面交角即∠PAM。",
+    "marks": 1,
+    "common_error": "錯誤定義二面角之平面角位置。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 5,
+    "what": "在△PAH 中（H 為 P 在底面投影），利用 tanα = PH / AH 求 α。",
+    "marks": 3,
+    "common_error": "AH 長度計算錯誤；混淆斜邊與鄰邊。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "比較 β（PB 與底面交角）之正切值與 tanα，判斷大小並解釋。",
+    "marks": 2,
+    "common_error": "誤認β=∠PBA；未正確投影 PB 至底面。",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "考生常混淆題目所給角度位置，且對二面角與線面角的定義理解不足，導致無法正確建立幾何模型求解。",
+  "scaffolding_hints": [
+   "先畫出直立角錐側視圖，標明已知角度與邊長。",
+   "回憶：二面角之平面角需由兩平面交線上一點作垂線至各平面。",
+   "提示：PQ∥BC 且 BC⊥平面 VAD ⇒ PQ⊥平面 VAD，故截面 PBCQ 為梯形。"
+  ],
+  "quick_solution_strategy": "先解△VAB 得 VA，再由相似或比例求 AP；二面角取 AD 中點作垂線，線面角則投影 PB 至底面。"
+ },
+ "skills": {
+  "topic_id": "T-MEN",
+  "knowledge_point_ids": [
+   "K-MEN-01",
+   "K-MEN-02"
+  ],
+  "formula_ids": [
+   "F-MEN-01",
+   "F-MEN-02",
+   "F-MEN-03",
+   "F-MEN-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "2": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "5": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

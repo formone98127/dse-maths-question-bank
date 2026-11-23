@@ -1,0 +1,103 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": 2025,
+  "paper": "Paper 1",
+  "qno": 16,
+  "hash": "#2025P1Q16"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "對數",
+   "secondary_topics": [
+    "聯立方程",
+    "指數與對數轉換"
+   ],
+   "required_formulas": [
+    "$\\log_{a}b + \\log_{a}c = \\log_{a}(bc)$",
+    "$\\log_{a}b = \\frac{\\ln b}{\\ln a}$",
+    "$\\log_{x}81 = \\frac{\\log_{3}81}{\\log_{3}x} = \\frac{4}{\\log_{3}x}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用對數加法性質將第一式化為 $\\log_3(xy)=9$，並用 $u$ 表示第二式左項。",
+    "marks": 1,
+    "common_error": "忘記換底公式或無法將 $\\log_x 81$ 轉為含 $u$ 的式子。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 2,
+    "what": "代入 $v=\\log_3 x$，整理第二式得關於 $v$ 與 $u$ 的關係式，再結合第一式消去變數。",
+    "marks": 1,
+    "common_error": "未能正確建立 $v$ 與 $u$ 的關聯，導致無法化簡出二次方程。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "解得 $u^2-3u-18=0$，完成 (a) 問證明。",
+    "marks": 1,
+    "common_error": "計算錯誤導致方程係數不對，或忘記驗證題目要求之等式形式。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "由 (a) 解出 $u$ 值，回代求 $\\log_3 x$，再轉為 $x$ 之數值。",
+    "marks": 1,
+    "common_error": "忽略題設 $0<x<y$ 條件而保留不合適解，或未將對數結果轉為指數形式。",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "考生常因不熟悉換底公式及聯立消元技巧，導致無法正確建立關於 $u$ 的二次方程；同時易忽略 $0<x<y$ 的限制條件而選取錯誤解。",
+  "scaffolding_hints": [
+   "Hint1: 回憶對數加法性質 $\\log_a b + \\log_a c = \\log_a(bc)$。",
+   "Hint2: 使用換底公式將所有對數轉換為以 3 為底的對數。",
+   "Hint3: 注意題目中 $0<x<y$ 的條件，用於篩選最終答案。"
+  ],
+  "quick_solution_strategy": "先將第一式寫成 $\\log_3 x + u = 9$，再將第二式換底為 $\\frac{4}{\\log_3 x} - \\frac{2}{u} = 1$，聯立消去 $\\log_3 x$ 即可得證。"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "2": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

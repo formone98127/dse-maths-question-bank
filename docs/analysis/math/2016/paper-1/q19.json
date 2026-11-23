@@ -1,0 +1,109 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2016",
+  "paper": "Paper 1",
+  "qno": "19",
+  "hash": "#2016P1Q19"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "立體幾何",
+   "secondary_topics": [
+    "三角比",
+    "線面夾角定義",
+    "畢氏定理應用"
+   ],
+   "required_formulas": [
+    "\\cos C = \\frac{a^2+b^2-c^2}{2ab}",
+    "\\sin A = \\frac{a}{c}"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 180,
+   "marks": 5
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "在 \\triangle ABD 中用餘弦定理求 \\cos\\angle ABD",
+    "marks": 2,
+    "common_error": "忘記使用餘弦定理，直接假設直角三角形。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 2,
+    "what": "利用 \\sin\\angle BAD 與 \\sin\\angle ABD 關係求 CD",
+    "marks": 1,
+    "common_error": "混淆正弦定理與餘弦定理的適用情境。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "確認 \\triangle ABC 是否為直角三角形",
+    "marks": 1,
+    "common_error": "未驗證邊長關係即認定為直角。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 4,
+    "what": "解釋線面夾角定義（需垂直於交線）",
+    "marks": 1,
+    "common_error": "誤以為只要在同一平面內即為交角。",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "考生常混淆線面夾角的定義，誤將斜線與交線的夾角當作線面夾角，顯示對空間想像力及定義理解不足。",
+  "scaffolding_hints": [
+   "提示：餘弦定理可用於非直角三角形求角度。",
+   "提示：線面夾角需從直線上一點作垂線至平面。",
+   "提示：檢查 \\triangle ABC 邊長是否滿足畢氏定理。"
+  ],
+  "quick_solution_strategy": "先解 \\triangle ABD 得 \\angle ABD，再用正弦定理求 CD；再驗證 \\triangle ABC 直角性並解釋定義差異。"
+ },
+ "skills": {
+  "topic_id": "T-MEN",
+  "knowledge_point_ids": [
+   "K-MEN-01",
+   "K-MEN-02"
+  ],
+  "formula_ids": [
+   "F-MEN-01",
+   "F-MEN-02",
+   "F-MEN-03",
+   "F-MEN-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "2": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "4": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

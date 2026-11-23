@@ -1,0 +1,135 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "SP",
+  "paper": "Paper 1",
+  "qno": "10",
+  "hash": "#SPP1Q10"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "多項式",
+   "secondary_topics": [
+    "長除式",
+    "因數定理",
+    "一元二次方程"
+   ],
+   "required_formulas": [
+    "$$g(x) = (x^2+2x-3)(qx+r)$$",
+    "$$x^2+2x-3=(x+3)(x-1)$$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 2
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "對被除式與除式進行長除式運算，求出商式。",
+    "marks": 2,
+    "common_error": "除法步驟錯誤或抄錯符號導致商式不正確。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "將 g(x) 表達為 (x^2+2x-3)(qx+r)，展開並比較係數。",
+    "marks": 1,
+    "common_error": "展開多項式時漏掉交叉項或符號錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "由比較係數得出 a 與 b 的數值。",
+    "marks": 0.5,
+    "common_error": "解聯立方程組時計算出錯。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "將 g(x)=0 化簡為 (x+3)(x-1)(qx+r)=0 的形式。",
+    "marks": 0.5,
+    "common_error": "忘記將二次因式分解為線性因式之積。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 5,
+    "what": "令每個線性因式等於零，解出 x 的三個根。",
+    "marks": 1,
+    "common_error": "解一元一次方程時移項或除法錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "整理解出的三個根作為最終答案。",
+    "marks": 0.5,
+    "common_error": "遺漏任一根或寫錯集合符號。",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "多項式除法與因數定理是卷一常考重點，學生需熟練長除技巧並能靈活運用係數比較法求參數。",
+  "scaffolding_hints": [
+   "先檢查除式 $x^2+2x-3$ 是否可分解為 $(x+3)(x-1)$。",
+   "利用因數定理：若 $g(x)$ 被 $x^2+2x-3$ 整除，則其餘式必為零。",
+   "將 $g(x)=0$ 視為三個線性因式的乘積來求解根。"
+  ],
+  "quick_solution_strategy": "直接長除得商式；令餘式為零比較係數求 a,b；分解後解三次方程。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-01",
+   "K-POL-02"
+  ],
+  "formula_ids": [
+   "F-POL-01",
+   "F-POL-02",
+   "F-POL-03",
+   "F-POL-06"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "5": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

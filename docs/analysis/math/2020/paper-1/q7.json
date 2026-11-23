@@ -1,0 +1,117 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2020",
+  "paper": "Paper 1",
+  "qno": "7",
+  "hash": "#2020P1Q7"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "一元二次方程",
+   "secondary_topics": [
+    "等根條件 (判別式)",
+    "函數平移與圖像性質",
+    "x 截距定義"
+   ],
+   "required_formulas": [
+    "$b^2 - 4ac = 0$",
+    "$y = ax^2 + bx + c$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用等根條件 $\\Delta=0$ 建立關於 c 的方程。",
+    "marks": 2,
+    "common_error": "忘記除以首項係數或計算 $b^2-4ac$ 時符號錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "解方程求出 c 的正確值。",
+    "marks": 1,
+    "common_error": "計算過程出錯導致 c 值不正確。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "將 c 代回原式，寫出 $y=p(x)-169$ 的完整表達式。",
+    "marks": 1,
+    "common_error": "忘記減去 169 或代入 c 時抄錯數值。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 4,
+    "what": "令 $y=0$，解新方程求 x 截距。",
+    "marks": 1,
+    "common_error": "解二次方程時遺漏一個根或計算錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "確認答案為 x 截距而非頂點坐標或其他點。",
+    "marks": 1,
+    "common_error": "誤將頂點座標或與 y 軸交點當作 x 截距。",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "考生常混淆圖像平移後的性質，特別是將頂點坐標誤認為是 x 截距，需強調 x 截距是令 y=0 的解。",
+  "scaffolding_hints": [
+   "等根意味著圖形與 x 軸只有一個交點，即 $\\Delta = 0$。",
+   "平移後的函數形式為 $y = 4(x+k)^2 + m$，令 $y=0$ 即可求截距。",
+   "x 截距是圖像與 x 軸的交點，務必令 $y=0$ 求解。"
+  ],
+  "quick_solution_strategy": "先由 $\\Delta=0$ 得 $c=-9$；再寫出 $y=4x^2+12x-9-169$，令 $y=0$ 解方程即得兩個 x 截距。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

@@ -1,0 +1,135 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2012",
+  "paper": "Paper 1",
+  "qno": "12",
+  "hash": "#2012P1Q12"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "立體幾何",
+   "secondary_topics": [
+    "圓錐體體積",
+    "半球體體積",
+    "單位換算"
+   ],
+   "required_formulas": [
+    "$V_{\\text{cone}} = \\frac{1}{3}\\pi r^2 h$",
+    "$V_{\\text{hemisphere}} = \\frac{2}{3}\\pi r^3$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 60,
+   "marks": 9
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "計算圓錐體體積 (a) 題，代入公式求值。",
+    "marks": 2,
+    "common_error": "遺漏 $\\pi$ 或忘記除以 3。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "計算半球體牛奶總體積 (b)(i) 題，注意半徑與單位。",
+    "marks": 5,
+    "common_error": "誤用球體公式 $\\frac{4}{3}\\pi r^3$ 而非半球。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "將圓錐體半徑與高換算為米制單位 (m)。",
+    "marks": 1,
+    "common_error": "未換算單位直接計算，導致數量級錯誤。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 4,
+    "what": "計算圓錐體浸入牛奶部分的體積 (需相似三角形求高)。",
+    "marks": 1,
+    "common_error": "直接假設圓錐完全浸沒或高度計算錯誤。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 5,
+    "what": "計算剩下牛奶體積 = 半球總體積 - 圓錐浸入體積。",
+    "marks": 1,
+    "common_error": "誤以為剩餘體積等於兩物體體積之差 (忽略浸沒深度)。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 6,
+    "what": "比較結果與 $0.3\\, \\text{m}^3$，並寫出結論解釋。",
+    "marks": 1,
+    "common_error": "未進行數值比較或邏輯解釋不清。",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "考評報告指出大部分考生誤解 (ii) 問，認為剩餘牛奶體積等於半球與圓錐總體積之差，忽略了圓錐未完全浸沒且需計算實際排開液體體積。",
+  "scaffolding_hints": [
+   "Hint1: 圓錐體積公式為 $\\frac{1}{3}\\pi r^2 h$，半球為 $\\frac{2}{3}\\pi r^3$。",
+   "Hint2: (ii) 問中圓錐未必完全浸沒，需利用相似三角形求浸入高度。",
+   "Hint3: 題目給出 cm，比較時務必統一換算為 m ($1\\, \\text{m} = 100\\, \\text{cm}$)。"
+  ],
+  "quick_solution_strategy": "先算圓錐與半球體積 (注意單位)，再求圓錐浸入高度算排開液體，最後比較剩餘量。"
+ },
+ "skills": {
+  "topic_id": "T-MEN",
+  "knowledge_point_ids": [
+   "K-MEN-01",
+   "K-MEN-02"
+  ],
+  "formula_ids": [
+   "F-MEN-01",
+   "F-MEN-02",
+   "F-MEN-03",
+   "F-MEN-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "4": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "5": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "6": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

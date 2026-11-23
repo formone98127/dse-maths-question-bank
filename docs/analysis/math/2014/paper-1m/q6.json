@@ -1,0 +1,109 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 1M",
+  "qno": "6",
+  "hash": "#2014P1MQ6"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "概率",
+   "secondary_topics": [
+    "期望值 (Expectation)",
+    "變異數 (Variance)",
+    "事件交集"
+   ],
+   "required_formulas": [
+    "$E(X) = \\sum x P(X=x)$",
+    "$\\text{Var}(aX+b) = a^2\\text{Var}(X)$",
+    "$\\text{Var}(X) = E(X^2) - [E(X)]^2$",
+    "$P(G \\cap H) = P(G) \\times P(H)$ (若獨立)"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 5
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用期望公式 $E(X) = \\sum x P(X=x)$ 建立方程求 $k$。",
+    "marks": 2,
+    "common_error": "忘記將 $x=k$ 代入計算，或算錯加權平均數。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "計算 $E(X^2)$ 以準備求變異數。",
+    "marks": 1,
+    "common_error": "直接套用 $(3-4X)^2$ 展開，忘記先算 $\\text{Var}(X)$。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "利用性質 $\\text{Var}(3-4X) = (-4)^2 \\text{Var}(X)$ 計算最終變異數。",
+    "marks": 1,
+    "common_error": "忘記係數平方，或誤以為線性變換不改變變異數。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "分析事件 $G$ ($X<4$) 與 $H$ ($X \\geq -1$) 的交集範圍。",
+    "marks": 1,
+    "common_error": "錯誤判斷 $X=6$ 是否屬於交集，或混淆不等號方向。",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "此題結合離散隨機變數的期望、變異數性質及基本概率事件運算，是卷一常考的綜合應用題型，考生需熟練公式變形與邏輯判斷。",
+  "scaffolding_hints": [
+   "提示 1：期望值是加權平均，記得把所有 $x$ 值（包括未知數 $k$）都乘上對應機率再相加。",
+   "提示 2：變異數的線性性質中，常數項 $b$ 不影響變異數，但係數 $a$ 必須平方 ($a^2$)。",
+   "提示 3：事件交集 $G \\cap H$ 代表同時滿足兩個條件，畫出數軸或列出符合條件的 $x$ 值最清楚。"
+  ],
+  "quick_solution_strategy": "先由 $E(X)=3.4$ 解出 $k=2$；再算 $E(X^2)$ 得 $\\text{Var}(X)$，最後乘 $16$；交集即 $X \\in \\{0, 2, 4\\}$ 中滿足條件者（注意 $X<4$ 排除 4）。"
+ },
+ "skills": {
+  "topic_id": "T-PROB",
+  "knowledge_point_ids": [
+   "K-PROB-01",
+   "K-PROB-02"
+  ],
+  "formula_ids": [
+   "F-PROB-01",
+   "F-PROB-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

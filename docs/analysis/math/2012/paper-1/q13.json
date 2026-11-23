@@ -1,0 +1,132 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2012",
+  "paper": "Paper 1",
+  "qno": "13",
+  "hash": "#2012P1Q13"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "因式定理",
+   "secondary_topics": [
+    "二次函數",
+    "面積公式",
+    "二次方程解的個數"
+   ],
+   "required_formulas": [
+    "f(a)=0 若 x-a 為因式",
+    "Area = xy",
+    "Δ=b²-4ac"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 2
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "代入 x=2 至多項式，令結果為 0 解 k",
+    "marks": 1,
+    "common_error": "忘記代入 x=2 或計算錯誤導致 k 值不正確",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "寫出 P(m,0) 與 Q(m,y) 的坐標關係",
+    "marks": 1,
+    "common_error": "混淆 m 與 x 的關係或忘記 y 是函數值",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 3,
+    "what": "用 m 表示長方形面積 A = m(15m²-63m+72)",
+    "marks": 1,
+    "common_error": "未將 y 代入面積公式或展開錯誤",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "令 A=12 並化簡成標準二次方程形式",
+    "marks": 1,
+    "common_error": "移項時符號錯誤或未化簡至 ax²+bx+c=0",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "計算判別式 Δ 判斷解的個數",
+    "marks": 1,
+    "common_error": "Δ 計算錯誤或誤以為無實數解",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "根據 Δ>0/Δ=0/Δ<0 回答是否有三個位置",
+    "marks": 1,
+    "common_error": "忽略二次方程最多兩個解的性質",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "考生常忽略二次方程最多只有兩個實數解，誤以為面積為定值時可能有三個點。",
+  "scaffolding_hints": [
+   "因式定理：若 x-a 是因式，則 f(a)=0",
+   "長方形面積 = 寬 × 高 = m × y_Q",
+   "二次方程 ax²+bx+c=0 的解數取決於 Δ"
+  ],
+  "quick_solution_strategy": "先求 k，再設面積公式，令等於 12 得二次方程，算 Δ 知最多兩解故無三點"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-05"
+  ],
+  "formula_ids": [
+   "F-POL-05"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-POL-05",
+    "formula_id": "F-POL-05",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-POL-05",
+    "formula_id": "F-POL-05",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "3": {
+    "knowledge_point_id": "K-POL-05",
+    "formula_id": "F-POL-05",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-POL-05",
+    "formula_id": "F-POL-05",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-POL-05",
+    "formula_id": "F-POL-05",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-POL-05",
+    "formula_id": "F-POL-05",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

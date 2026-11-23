@@ -1,0 +1,138 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 1",
+  "qno": "14",
+  "hash": "#2014P1Q14"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "立體圖形",
+   "secondary_topics": [
+    "圓錐平截頭體",
+    "相似三角形性質",
+    "曲面面積計算",
+    "體積計算",
+    "單位轉換"
+   ],
+   "required_formulas": [
+    "$A = \\pi l (r_1 + r_2)$ (圓台側面積公式)",
+    "$V_{\\text{cone}} = \\frac{1}{3}\\pi R^2 H$",
+    "$\\frac{r}{h} = \\frac{R}{H}$ (相似比)"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 480,
+   "marks": 8
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用相似三角形求出原圓錐頂點至容器底部的距離及水面處半徑。",
+    "marks": 2,
+    "common_error": "忘記減去容器高度，直接將水深當作小圓錐高度。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 2,
+    "what": "計算浸濕部分的側面高度 $l$ 及上下底半徑 $r_1, r_2$。",
+    "marks": 1,
+    "common_error": "混淆圓錐母線長度與垂直高度，未使用勾股定理求母線。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "代入圓台側面積公式 $\\pi l(r_1+r_2)$ 計算 (a) 問答案。",
+    "marks": 1,
+    "common_error": "遺漏 $\\pi$，或將直徑誤作半徑代入公式。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "計算上方小圓錐（空氣部分）的體積：$V_{air} = \\frac{1}{3}\\pi r^2 h$。",
+    "marks": 1,
+    "common_error": "忘記除以 3，或高度 $h$ 取錯（應為原高減水深）。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "計算完整大圓錐體積並減去上方小圓錐體積，得出水的體積。",
+    "marks": 1,
+    "common_error": "直接計算圓柱體積或誤用平截頭體公式導致重複計算。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 6,
+    "what": "將結果由 $\\text{cm}^3$ 轉換為 $\\text{m}^3$ 並與 $0.1$ 比較。",
+    "marks": 2,
+    "common_error": "單位轉換錯誤（如只換長度未換體積，或換算係數記錯）。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "考生常忽略題目中的「倒置」與「切去下部分」的幾何關係，導致相似比設定錯誤；此外，(b) 問中單位轉換（$\\text{cm}^3 \\to \\text{m}^3$）是失分高發區，需特別注意 $10^6$ 倍數。",
+  "scaffolding_hints": [
+   "Hint1: 畫出完整大圓錐的剖面圖，標註已知長度與未知頂點距離。",
+   "Hint2: 利用相似三角形性質 $\\frac{r}{h} = \\frac{R}{H}$ 找出水面處半徑。",
+   "Hint3: 水的體積等於「完整大圓錐」減去「上方空氣小圓錐」。"
+  ],
+  "quick_solution_strategy": "先求相似比定出小圓錐高度與半徑，再用 $V_{water} = V_{big} - V_{small}$ 計算，最後小心單位轉換。"
+ },
+ "skills": {
+  "topic_id": "T-MEN",
+  "knowledge_point_ids": [
+   "K-MEN-01",
+   "K-MEN-02"
+  ],
+  "formula_ids": [
+   "F-MEN-01",
+   "F-MEN-02",
+   "F-MEN-03",
+   "F-MEN-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "2": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "6": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

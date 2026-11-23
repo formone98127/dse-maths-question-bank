@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 1",
+  "qno": "2",
+  "hash": "#2021P1Q2"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "主項變換",
+   "secondary_topics": [
+    "代數式化簡",
+    "移項法則"
+   ],
+   "required_formulas": [
+    "$\\frac{4-3a}{b}=5 \\Rightarrow 4-3a=5b \\Rightarrow -3a=5b-4 \\Rightarrow a=\\frac{4-5b}{3}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90,
+   "marks": 3
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "兩邊同乘 b 去分母",
+    "marks": 1,
+    "common_error": "忘記乘 b 或只乘部分項",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "移項將含 a 項留左邊",
+    "marks": 1,
+    "common_error": "移項時變號錯誤",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "兩邊同除 -3 解出 a",
+    "marks": 1,
+    "common_error": "除以 -3 時符號處理錯",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "此題測試基本代數操作，90% 考生能正確完成，顯示學生對移項與去分母掌握良好。",
+  "scaffolding_hints": [
+   "先將 a 單獨放在分子上再處理分母",
+   "移項時注意正負號變化",
+   "最後檢查 a 是否獨立於等號左邊"
+  ],
+  "quick_solution_strategy": "乘 b 去分母，移項集中 a，除係數得答案。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-POL-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-POL-07",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-POL-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

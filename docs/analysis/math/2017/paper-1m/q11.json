@@ -1,0 +1,129 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 1M",
+  "qno": "11",
+  "hash": "#2017P1MQ11"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "指數與對數函數",
+   "secondary_topics": [
+    "梯形法則近似",
+    "泰勒級數展開 (Maclaurin Series)",
+    "積分計算"
+   ],
+   "required_formulas": [
+    "\\int_a^b f(x) dx \\approx \\frac{h}{2}[f(x_0) + 2f(x_1) + ... + 2f(x_n) + f(x_n)]",
+    "e^{ax} \\approx 1 + ax + \\frac{(ax)^2}{2!}"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 480,
+   "marks": 13
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "計算 Ada 的梯形法則估計值 (h=0.1)",
+    "marks": 5,
+    "common_error": "漏掉首尾項係數 1，或中間項係數未乘 2",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 2,
+    "what": "計算 Billy 的近似積分值 (代入多項式)",
+    "marks": 5,
+    "common_error": "泰勒展開項數錯誤或微分求錯",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "判斷 Ada 估計值為高估 (曲線下凹)",
+    "marks": 2,
+    "common_error": "混淆上凸與下凹的誤差性質",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "判斷 Billy 估計值為高估 (截斷誤差)",
+    "marks": 2,
+    "common_error": "忽略剩餘項符號導致判斷反了",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 5,
+    "what": "計算 Billy 估計值與 0.746 之差",
+    "marks": 2,
+    "common_error": "算術錯誤導致差值判斷失誤",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "結論：同意該說法 (差值 < 0.002)",
+    "marks": 3,
+    "common_error": "未比較數值大小直接下結論",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "此題測試學生對近似方法誤差性質的直觀理解，特別是梯形法則對下凹曲線必為高估的特性，以及泰勒級數截斷項符號與誤差關係。",
+  "scaffolding_hints": [
+   "畫出 f(x) 草圖觀察凹凸性 (Concavity)。",
+   "梯形法則誤差公式與二階導數 sign 相關。",
+   "Billy 的方法本質是用二階泰勒多項式近似 e^x。"
+  ],
+  "quick_solution_strategy": "先畫圖確認 f(x) 下凹，故 Ada 高估；Billy 展開式截斷項為正，故亦高估；比較數值差即可。"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "2": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "5": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

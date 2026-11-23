@@ -1,0 +1,107 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 1",
+  "qno": "7",
+  "hash": "#2022P1Q7"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "變換與對稱",
+   "secondary_topics": [
+    "旋轉 (90°)",
+    "反射 (x 軸)",
+    "直線斜率"
+   ],
+   "required_formulas": [
+    "$S(x, y) \\xrightarrow{\\text{逆時針 } 90^\\circ} S'(-y, x)$",
+    "$T(x, y) \\xrightarrow{\\text{反射 } x\\text{軸}} T'(x, -y)$",
+    "$m = \\frac{y_2 - y_1}{x_2 - x_1}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "對 S(12,-5) 作逆時針旋轉 90° 求 S'。",
+    "marks": 1,
+    "common_error": "誤用順時針公式 (-y, x) 或忘記變號，寫成 (5, 12)。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 2,
+    "what": "對 T(-3,-7) 作 x 軸反射求 T'。",
+    "marks": 1,
+    "common_error": "忘記 y 座標變號，寫成 (-3, -7) 或 (-3, 7)。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "列出 S' 與 T' 的正確坐標。",
+    "marks": 1,
+    "common_error": "兩步計算均錯導致此步無分，或寫錯格式。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "代入斜率公式計算 S'T' 的斜率。",
+    "marks": 1,
+    "common_error": "座標代錯位置或減法順序錯誤，導致分數為負號問題。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "考評報告指出大部分考生能正確處理坐標變換與斜率計算，顯示學生對基本變換公式掌握良好，但需留意順逆時針旋轉的細節差異。",
+  "scaffolding_hints": [
+   "回憶逆時針旋轉 90° 的座標變化規律：(x, y) \\to (-y, x)。",
+   "反射 x 軸時，x 座標不變，僅 y 座標變號。",
+   "計算斜率時，務必確認起點與終點的 (x, y) 對應正確。"
+  ],
+  "quick_solution_strategy": "先套用公式求 S'(-5, 12) 與 T'(-3, 7)，再代入 m=(y2-y1)/(x2-x1) 計算得 -1/4。"
+ },
+ "skills": {
+  "topic_id": "T-TRF",
+  "knowledge_point_ids": [
+   "K-TRF-02",
+   "K-TRF-03"
+  ],
+  "formula_ids": [
+   "F-TRF-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-TRF-02",
+    "formula_id": "F-TRF-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "2": {
+    "knowledge_point_id": "K-TRF-02",
+    "formula_id": "F-TRF-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-TRF-02",
+    "formula_id": "F-TRF-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-TRF-02",
+    "formula_id": "F-TRF-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

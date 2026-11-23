@@ -1,0 +1,136 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 1",
+  "qno": "19",
+  "hash": "#2017P1Q19"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "三角學",
+   "secondary_topics": [
+    "正弦定理",
+    "相似三角形",
+    "三角函數定義"
+   ],
+   "required_formulas": [
+    "\\frac{a}{\\sin A}=\\frac{b}{\\sin B}=\\frac{c}{\\sin C}",
+    "\\tan \\theta = \\frac{對邊}{鄰邊}",
+    "\\text{Area} = \\frac{1}{2}bh"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 300,
+   "marks": 2
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用正弦定理求 AC 長度。",
+    "marks": 2,
+    "common_error": "混淆角對邊關係或計算錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "證明三角形 ADF 與 CEF 相似。",
+    "marks": 0,
+    "common_error": "忽略垂直條件導致無法建立比例。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "利用相似比求 CF 距離。",
+    "marks": 0,
+    "common_error": "代入數值時弄錯對應邊。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "計算三角形 ABF 的面積。",
+    "marks": 0,
+    "common_error": "底或高取值錯誤。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 5,
+    "what": "利用正切定義求傾角。",
+    "marks": 0,
+    "common_error": "角度與邊長對應關係搞混。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 6,
+    "what": "計算三角形 BDF 面積並比較。",
+    "marks": 0,
+    "common_error": "四捨五入或計算失誤導致結論錯誤。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "考評報告指出大部分考生在求傾角及判斷面積大小時出現困難，顯示對三角函數定義及空間想像力掌握不足。",
+  "scaffolding_hints": [
+   "回憶正弦定理公式及其適用條件。",
+   "注意垂直線與水平線構成的直角三角形關係。",
+   "將複雜圖形分解為簡單幾何形狀處理。"
+  ],
+  "quick_solution_strategy": "先用正弦定理求 AC，再透過相似三角形求 CF，最後計算面積與傾角並比較數值。"
+ },
+ "skills": {
+  "topic_id": "T-MEN",
+  "knowledge_point_ids": [
+   "K-MEN-01",
+   "K-MEN-02"
+  ],
+  "formula_ids": [
+   "F-MEN-01",
+   "F-MEN-02",
+   "F-MEN-03",
+   "F-MEN-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "5": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "6": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

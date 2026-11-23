@@ -1,0 +1,107 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 1",
+  "qno": "5",
+  "hash": "#2022P1Q5"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "百分數",
+   "secondary_topics": [
+    "成本與售價關係",
+    "盈利百分率計算"
+   ],
+   "required_formulas": [
+    "$\\text{盈利} = \\text{售價} - \\text{成本}$",
+    "$\\text{盈利百分率} = \\frac{\\text{盈利}}{\\text{成本}} \\times 100\\%$",
+    "$\\text{售價} = \\text{標價} \\times \\text{折扣率}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用盈利百分率公式求出成本。",
+    "marks": 1,
+    "common_error": "直接用 $78$ 除以 $26\\%$ 時未確認分母為成本而非售價。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "計算實際售出價格（售價）。",
+    "marks": 1,
+    "common_error": "忘記加上成本或混淆標價與售價概念。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "根據七折關係建立標價方程式。",
+    "marks": 1,
+    "common_error": "將七折誤算為 $0.7$ 倍成本而非售價。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 4,
+    "what": "解方程求出標價並作答。",
+    "marks": 1,
+    "common_error": "計算錯誤或單位遺漏。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "考評報告指出考生常混淆標價與售價，故解題時應明確區分兩者關係並逐步標示。",
+  "scaffolding_hints": [
+   "先由盈利百分率定義找出成本。",
+   "確認售價是標價的 $70\\%$。",
+   "最後用售價除以 $0.7$ 得標價。"
+  ],
+  "quick_solution_strategy": "先求成本：$78/0.26=300$；再求售價：$300+78=378$；最後求標價：$378/0.7=540$"
+ },
+ "skills": {
+  "topic_id": "T-PCT",
+  "knowledge_point_ids": [
+   "K-PCT-01",
+   "K-PCT-02"
+  ],
+  "formula_ids": [
+   "F-PCT-01",
+   "F-PCT-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "4": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

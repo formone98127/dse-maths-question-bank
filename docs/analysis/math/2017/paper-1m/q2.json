@@ -1,0 +1,134 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 1M",
+  "qno": "2",
+  "hash": "#2017P1MQ2"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "概率",
+   "secondary_topics": [
+    "條件概率",
+    "互斥事件",
+    "獨立事件"
+   ],
+   "required_formulas": [
+    "$P(B|A) = \\frac{P(A \\cap B)}{P(A)}$",
+    "$P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)}$",
+    "$P(B') = 1 - P(B)$",
+    "互斥：$P(A \\cap B) = 0$",
+    "獨立：$P(A \\cap B) = P(A)P(B)$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "計算 $P(B)$ 與 $P(A \\cap B)$",
+    "marks": 2,
+    "common_error": "忘記用 $P(B') = 0.7$ 求 $P(B)=0.3$，或算錯交集概率。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "代入公式求 $P(B \\mid A)$",
+    "marks": 1,
+    "common_error": "分母寫成 $P(A \\cap B)$ 或混淆條件概率定義。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "判斷互斥：檢查 $P(A \\cap B)$ 是否為 0",
+    "marks": 1,
+    "common_error": "誤以為概率非零即不互斥，忽略定義。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "判斷獨立：比較 $P(A \\cap B)$ 與 $P(A)P(B)$",
+    "marks": 1,
+    "common_error": "直接比較 $P(A|B)$ 與 $P(A)$ 而未驗證定義。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 5,
+    "what": "撰寫解釋論述（互斥與獨立）",
+    "marks": 1,
+    "common_error": "只寫結論無理由，或理由與計算不符。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 6,
+    "what": "檢查數值精度與單位（概率無單位）",
+    "marks": 0,
+    "common_error": "保留過多小數位或寫錯分數約分。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "此題測試基礎概率定義與邏輯推理，常見失分點在於混淆互斥與獨立概念，以及計算 $P(A \\cap B)$ 時出錯。",
+  "scaffolding_hints": [
+   "先由 $P(B')$ 求 $P(B)$ 是關鍵第一步。",
+   "條件概率公式 $P(X|Y) = P(X \\cap Y)/P(Y)$ 需熟記。",
+   "互斥看交集是否為零，獨立看乘積是否相等。"
+  ],
+  "quick_solution_strategy": "先算 $P(B)=0.3$ 與 $P(A \\cap B)=0.18$，再套公式求條件概率，最後比較數值判斷性質。"
+ },
+ "skills": {
+  "topic_id": "T-PROB",
+  "knowledge_point_ids": [
+   "K-PROB-04"
+  ],
+  "formula_ids": [
+   "F-PROB-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "5": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "6": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

@@ -1,0 +1,104 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2023",
+  "paper": "Paper 1",
+  "qno": "4",
+  "hash": "#2023P1Q4"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "一元一次不等式",
+   "secondary_topics": [
+    "複合不等式解集",
+    "負整數計數"
+   ],
+   "required_formulas": [
+    "$3x + 2 > \\frac{4x - 5}{2} \\Rightarrow 6x + 4 > 4x - 5 \\Rightarrow 2x > -9 \\Rightarrow x > -4.5$",
+    "$3x - 2 < 7 \\Rightarrow 3x < 9 \\Rightarrow x < 3$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "解不等式 $3x + 2 > \\frac{4x - 5}{2}$，得 $x > -4.5$。",
+    "marks": 1,
+    "common_error": "去分母時漏乘常數項或變號錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "解不等式 $3x - 2 < 7$，得 $x < 3$。",
+    "marks": 1,
+    "common_error": "移項時符號變換錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "寫出解集 $-4.5 < x < 3$ 並畫數軸表示。",
+    "marks": 1,
+    "common_error": "區間端點用錯符號（應為空心圓）。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 4,
+    "what": "列出範圍內負整數：$-4, -3, -2, -1$。",
+    "marks": 1,
+    "common_error": "漏算 $-4$ 或誤將 $0$ 計入負整數。",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "考評報告顯示此題難度適中，考生對基本不等式操作掌握良好，但需注意解集表示及負整數定義（不含零）的細節。",
+  "scaffolding_hints": [
+   "Hint1: 處理分母時，兩邊同乘 2 消去分母。",
+   "Hint2: 不等式方向不變，除非除以負數。",
+   "Hint3: 負整數指 $-1, -2, -3, \\dots$，不包括 0。"
+  ],
+  "quick_solution_strategy": "先解兩邊得 $x > -4.5$ 及 $x < 3$，交集為 $(-4.5, 3)$，負整數有 4 個：$-4,-3,-2,-1$"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-05"
+  ],
+  "formula_ids": [
+   "F-EQN-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

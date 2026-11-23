@@ -45,6 +45,21 @@ def group_by_qno(rows):
     return groups
 
 
+
+def group_by_heading(md_text):
+    """非表格格式（2023–2025）：以行首 "N." 分題。"""
+    groups, cur = {}, None
+    for raw in md_text.splitlines():
+        line = raw.strip()
+        m = re.match(r"^(\d{1,2})\s*[.)]\s", line)
+        if m and 1 <= int(m.group(1)) <= 20:
+            cur = int(m.group(1))
+            groups.setdefault(cur, [])
+        if cur is None or not line:
+            continue
+        groups[cur].append(line)
+    return groups
+
 def build_html(rows):
     body = "".join(
         f"<tr><td>{sol}</td><td>{marks}</td><td>{rem}</td></tr>" for sol, marks, rem in rows
@@ -67,24 +82,32 @@ def main():
         if not p.exists():
             print(f"skip {y}: 冇 {p.name}")
             continue
-        rows = split_rows(p.read_text(encoding="utf-8"))
-        groups = group_by_qno(rows)
+        md_text = p.read_text(encoding="utf-8")
+        rows = split_rows(md_text)
+        if len(rows) >= 10:
+            groups = group_by_qno(rows)
+            mode = "table"
+        else:
+            groups = group_by_heading(md_text)
+            mode = "heading"
         n = 0
         for qno, rws in sorted(groups.items()):
             key = (y, "Paper 1M", str(qno), "解答")
             if key in have:
                 continue
-            text = "\n".join(f"{a} | {b} | {c}" for a, b, c in rws)
+            text = "\n".join(f"{a} | {b} | {c}" for a, b, c in rws) if mode == "table" else "\n".join(rws)
             data["questions"].append({
                 "subject": "數學", "year": y, "paper": "Paper 1M", "type": "解答",
                 "qno": qno, "title": f"第 {qno} 題 評卷參考", "section": "M1",
                 "tags": ["評卷參考"],
-                "text": text, "html": build_html(rws), "file": p.name,
+                "text": text,
+                "html": build_html(rws) if mode == "table" else "<div class=\"ms-prose\">" + "<br>".join(rws) + "</div>",
+                "file": p.name,
             })
             have.add(key)
             added += 1
             n += 1
-        print(f"{y}: 解答 {n} 題（表格 rows={len(rows)}）")
+        print(f"{y}: 解答 {n} 題（mode={mode} rows={len(rows)}）")
 
     data["count"] = len(data["questions"])
     DATA.write_text("window.QB =" + json.dumps(data, ensure_ascii=False, separators=(",", ":")) + ";", encoding="utf-8")

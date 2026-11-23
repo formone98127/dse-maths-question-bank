@@ -1,0 +1,2105 @@
+{
+ "note": "tag -> URL slug。mapped=false 代表用 URL-encode 的中文原名做 slug，可以由你補拼音後重跑。",
+ "slugs": {
+  "statistics": {
+   "name": "統計",
+   "questions": 149
+  },
+  "plane-geometry": {
+   "name": "平面幾何",
+   "questions": 141
+  },
+  "equation-of-straight-line": {
+   "name": "直線方程",
+   "questions": 137
+  },
+  "coordinate-geometry": {
+   "name": "坐標幾何",
+   "questions": 95
+  },
+  "trigonometric-ratios": {
+   "name": "三角比",
+   "questions": 92
+  },
+  "mensuration": {
+   "name": "求積法",
+   "questions": 87
+  },
+  "probability": {
+   "name": "概率",
+   "questions": 87
+  },
+  "similar-triangles": {
+   "name": "相似三角形",
+   "questions": 85
+  },
+  "factorisation": {
+   "name": "因式分解",
+   "questions": 77
+  },
+  "functions-and-graphs": {
+   "name": "函數與圖像",
+   "questions": 77
+  },
+  "circle-properties": {
+   "name": "圓的性質",
+   "questions": 76
+  },
+  "algebraic-simplification": {
+   "name": "代數化簡",
+   "questions": 74
+  },
+  "percentages": {
+   "name": "百分比",
+   "questions": 73
+  },
+  "sequences": {
+   "name": "數列",
+   "questions": 72
+  },
+  "laws-of-indices": {
+   "name": "指數定律",
+   "questions": 69
+  },
+  "quadratic-functions": {
+   "name": "二次函數",
+   "questions": 68
+  },
+  "solids": {
+   "name": "立體圖形",
+   "questions": 66
+  },
+  "polynomials": {
+   "name": "多項式",
+   "questions": 63
+  },
+  "circle-geometry": {
+   "name": "圓的幾何",
+   "questions": 60
+  },
+  "permutations-and-combinations": {
+   "name": "排列與組合",
+   "questions": 57
+  },
+  "equation-of-circle": {
+   "name": "圓的方程",
+   "questions": 55
+  },
+  "variation": {
+   "name": "變分",
+   "questions": 54
+  },
+  "ratio-and-proportion": {
+   "name": "比率與比例",
+   "questions": 54
+  },
+  "logarithms": {
+   "name": "對數",
+   "questions": 49
+  },
+  "quadratic-equations": {
+   "name": "一元二次方程",
+   "questions": 46
+  },
+  "linear-inequalities": {
+   "name": "一元一次不等式",
+   "questions": 41
+  },
+  "inequalities": {
+   "name": "不等式",
+   "questions": 39
+  },
+  "dispersion": {
+   "name": "離差",
+   "questions": 37
+  },
+  "central-tendency": {
+   "name": "集中趨勢",
+   "questions": 37
+  },
+  "linear-equations": {
+   "name": "一元方程",
+   "questions": 36
+  },
+  "trigonometry": {
+   "name": "三角學",
+   "questions": 35
+  },
+  "change-of-subject": {
+   "name": "主項變換",
+   "questions": 34
+  },
+  "complex-numbers": {
+   "name": "複數",
+   "questions": 30
+  },
+  "standard-score": {
+   "name": "標準分",
+   "questions": 29
+  },
+  "locus": {
+   "name": "軌跡",
+   "questions": 27
+  },
+  "transformation-and-symmetry": {
+   "name": "變換與對稱",
+   "questions": 24
+  },
+  "standard-deviation": {
+   "name": "標準差",
+   "questions": 22
+  },
+  "stem-and-leaf": {
+   "name": "幹葉圖",
+   "questions": 21
+  },
+  "3d-geometry": {
+   "name": "立體幾何",
+   "questions": 20
+  },
+  "percentages-and-interest": {
+   "name": "百分數／利息",
+   "questions": 19
+  },
+  "number-bases": {
+   "name": "數制",
+   "questions": 18
+  },
+  "number-systems": {
+   "name": "數系",
+   "questions": 14
+  },
+  "geometric-sequence": {
+   "name": "等比數列",
+   "questions": 13
+  },
+  "box-and-whisker": {
+   "name": "框線圖",
+   "questions": 11
+  },
+  "trigonometric-identities": {
+   "name": "三角恆等式",
+   "questions": 10
+  },
+  "exponential-functions": {
+   "name": "指數函數",
+   "questions": 10
+  },
+  "linear-programming": {
+   "name": "線性規劃",
+   "questions": 10
+  },
+  "simultaneous-equations": {
+   "name": "聯立方程",
+   "questions": 9
+  },
+  "factor-theorem": {
+   "name": "因式定理",
+   "questions": 8
+  },
+  "remainder-theorem": {
+   "name": "餘式定理",
+   "questions": 7
+  },
+  "approximation-and-error": {
+   "name": "近似與誤差",
+   "questions": 7
+  },
+  "interest-and-growth": {
+   "name": "利息與增長",
+   "questions": 7
+  },
+  "median": {
+   "name": "中位數",
+   "questions": 7
+  },
+  "polygons": {
+   "name": "多邊形",
+   "questions": 6
+  },
+  "parallel-lines": {
+   "name": "平行線",
+   "questions": 6
+  },
+  "tangents": {
+   "name": "切線",
+   "questions": 6
+  },
+  "average-speed": {
+   "name": "平均速率",
+   "questions": 6
+  },
+  "sector": {
+   "name": "扇形",
+   "questions": 6
+  },
+  "cone": {
+   "name": "圓錐",
+   "questions": 5
+  },
+  "identities": {
+   "name": "恆等式",
+   "questions": 5
+  },
+  "comparing-coefficients": {
+   "name": "比較係數",
+   "questions": 5
+  },
+  "symmetry": {
+   "name": "對稱",
+   "questions": 5
+  },
+  "variance": {
+   "name": "方差",
+   "questions": 5
+  },
+  "algebra": {
+   "name": "Algebra",
+   "questions": 5
+  },
+  "graphs": {
+   "name": "圖像",
+   "questions": 5
+  },
+  "discriminant": {
+   "name": "判別式",
+   "questions": 5
+  },
+  "mean": {
+   "name": "平均數",
+   "questions": 5
+  },
+  "hcf": {
+   "name": "H.C.F.",
+   "questions": 4
+  },
+  "arithmetic-sequence": {
+   "name": "等差數列",
+   "questions": 4
+  },
+  "angles-in-circle": {
+   "name": "圓周角",
+   "questions": 4
+  },
+  "congruent-triangles": {
+   "name": "全等三角形",
+   "questions": 4
+  },
+  "polar-coordinates": {
+   "name": "極坐標",
+   "questions": 4
+  },
+  "quartiles": {
+   "name": "四分位數",
+   "questions": 4
+  },
+  "angles": {
+   "name": "角",
+   "questions": 4
+  },
+  "centres-of-triangle": {
+   "name": "幾何中心",
+   "questions": 4
+  },
+  "parabola": {
+   "name": "拋物線",
+   "questions": 3
+  },
+  "linear-relationship": {
+   "name": "線性關係",
+   "questions": 3
+  },
+  "graph-transformations": {
+   "name": "圖像變換",
+   "questions": 3
+  },
+  "logarithmic-equations": {
+   "name": "對數方程",
+   "questions": 3
+  },
+  "trigonometric-equations": {
+   "name": "三角方程",
+   "questions": 3
+  },
+  "frequency-distribution": {
+   "name": "頻數分佈表",
+   "questions": 3
+  },
+  "statistical-charts": {
+   "name": "統計圖表",
+   "questions": 3
+  },
+  "combinations": {
+   "name": "組合",
+   "questions": 3
+  },
+  "pie-chart": {
+   "name": "圓形圖",
+   "questions": 3
+  },
+  "incentre": {
+   "name": "內心",
+   "questions": 3
+  },
+  "angle-between-planes": {
+   "name": "兩面角",
+   "questions": 3
+  },
+  "triangle": {
+   "name": "三角形",
+   "questions": 3
+  },
+  "word-problems": {
+   "name": "應用題",
+   "questions": 2
+  },
+  "area-ratio": {
+   "name": "面積比",
+   "questions": 2
+  },
+  "lcm": {
+   "name": "L.C.M.",
+   "questions": 2
+  },
+  "trigonometric-functions": {
+   "name": "三角函數",
+   "questions": 2
+  },
+  "ratio-and-similarity": {
+   "name": "比例與相似",
+   "questions": 2
+  },
+  "radians": {
+   "name": "弧度",
+   "questions": 2
+  },
+  "cylinder": {
+   "name": "圓柱",
+   "questions": 2
+  },
+  "pythagoras": {
+   "name": "畢氏定理",
+   "questions": 2
+  },
+  "quadrilaterals": {
+   "name": "四邊形",
+   "questions": 2
+  },
+  "rhombus": {
+   "name": "菱形",
+   "questions": 2
+  },
+  "tetrahedron": {
+   "name": "四面體",
+   "questions": 2
+  },
+  "reflection": {
+   "name": "Reflection",
+   "questions": 2
+  },
+  "circle-and-line": {
+   "name": "圓與直線",
+   "questions": 2
+  },
+  "profit-and-loss": {
+   "name": "Profit",
+   "questions": 2
+  },
+  "cost-and-revenue": {
+   "name": "Cost Function",
+   "questions": 2
+  },
+  "intersecting-chords": {
+   "name": "交弦定理",
+   "questions": 1
+  },
+  "prism": {
+   "name": "角柱體",
+   "questions": 1
+  },
+  "pyramid": {
+   "name": "角錐",
+   "questions": 1
+  },
+  "patterns": {
+   "name": "圖案規律",
+   "questions": 1
+  },
+  "max-error": {
+   "name": "誤差上限",
+   "questions": 1
+  },
+  "area": {
+   "name": "面積",
+   "questions": 1
+  },
+  "arc-length": {
+   "name": "弧長",
+   "questions": 1
+  },
+  "axis-of-symmetry": {
+   "name": "對稱軸",
+   "questions": 1
+  },
+  "circle": {
+   "name": "圓形",
+   "questions": 1
+  },
+  "hemisphere": {
+   "name": "半球",
+   "questions": 1
+  },
+  "trapezium-area": {
+   "name": "梯形面積",
+   "questions": 1
+  },
+  "bearing": {
+   "name": "方位角",
+   "questions": 1
+  },
+  "cosine-rule": {
+   "name": "餘弦定理",
+   "questions": 1
+  },
+  "mode": {
+   "name": "眾數",
+   "questions": 1
+  },
+  "scatter-plot": {
+   "name": "散點圖",
+   "questions": 1
+  },
+  "roots-and-coefficients": {
+   "name": "根與係數",
+   "questions": 1
+  },
+  "circumcentre": {
+   "name": "外心",
+   "questions": 1
+  },
+  "percentage-change": {
+   "name": "百分變化",
+   "questions": 1
+  },
+  "polygon-area": {
+   "name": "多邊形面積",
+   "questions": 1
+  },
+  "square": {
+   "name": "正方形",
+   "questions": 1
+  },
+  "right-triangle": {
+   "name": "直角三角形",
+   "questions": 1
+  },
+  "range-of-data": {
+   "name": "分佈域",
+   "questions": 1
+  },
+  "comparing-indices": {
+   "name": "指數比較",
+   "questions": 1
+  },
+  "vertex": {
+   "name": "頂點",
+   "questions": 1
+  },
+  "significant-figures": {
+   "name": "Significant Figures",
+   "questions": 1
+  },
+  "perpendicular-bisector": {
+   "name": "垂直平分線",
+   "questions": 1
+  },
+  "surface-area": {
+   "name": "表面積",
+   "questions": 1
+  },
+  "volume": {
+   "name": "體積",
+   "questions": 1
+  },
+  "completing-the-square": {
+   "name": "配方法",
+   "questions": 1
+  },
+  "variables": {
+   "name": "Variables",
+   "questions": 1
+  },
+  "quadratic-expressions": {
+   "name": "Quadratic Expressions",
+   "questions": 1
+  },
+  "discount": {
+   "name": "Discount",
+   "questions": 1
+  },
+  "capacity": {
+   "name": "容量",
+   "questions": 1
+  },
+  "isosceles-triangle": {
+   "name": "Isosceles Triangle",
+   "questions": 1
+  },
+  "rotation": {
+   "name": "Rotation",
+   "questions": 1
+  },
+  "data-distribution": {
+   "name": "Data Distribution",
+   "questions": 1
+  },
+  "division": {
+   "name": "Division",
+   "questions": 1
+  },
+  "cube": {
+   "name": "Cube",
+   "questions": 1
+  },
+  "bar-chart": {
+   "name": "棒形圖",
+   "questions": 1
+  },
+  "change-in-data": {
+   "name": "Change in Data",
+   "questions": 1
+  },
+  "conditional-probability": {
+   "name": "Conditional Probability",
+   "questions": 1
+  }
+ },
+ "tags": [
+  {
+   "tag": "統計",
+   "slug": "statistics",
+   "topic": "統計",
+   "questions": 146,
+   "mapped": true
+  },
+  {
+   "tag": "平面幾何",
+   "slug": "plane-geometry",
+   "topic": "平面幾何",
+   "questions": 137,
+   "mapped": true
+  },
+  {
+   "tag": "直線方程",
+   "slug": "equation-of-straight-line",
+   "topic": "直線方程",
+   "questions": 136,
+   "mapped": true
+  },
+  {
+   "tag": "坐標幾何",
+   "slug": "coordinate-geometry",
+   "topic": "坐標幾何",
+   "questions": 95,
+   "mapped": true
+  },
+  {
+   "tag": "求積法",
+   "slug": "mensuration",
+   "topic": "求積法",
+   "questions": 85,
+   "mapped": true
+  },
+  {
+   "tag": "概率",
+   "slug": "probability",
+   "topic": "概率",
+   "questions": 83,
+   "mapped": true
+  },
+  {
+   "tag": "相似三角形",
+   "slug": "similar-triangles",
+   "topic": "相似三角形",
+   "questions": 83,
+   "mapped": true
+  },
+  {
+   "tag": "三角比",
+   "slug": "trigonometric-ratios",
+   "topic": "三角比",
+   "questions": 79,
+   "mapped": true
+  },
+  {
+   "tag": "因式分解",
+   "slug": "factorisation",
+   "topic": "因式分解",
+   "questions": 74,
+   "mapped": true
+  },
+  {
+   "tag": "代數化簡",
+   "slug": "algebraic-simplification",
+   "topic": "代數化簡",
+   "questions": 73,
+   "mapped": true
+  },
+  {
+   "tag": "圓的性質",
+   "slug": "circle-properties",
+   "topic": "圓的性質",
+   "questions": 71,
+   "mapped": true
+  },
+  {
+   "tag": "數列",
+   "slug": "sequences",
+   "topic": "數列",
+   "questions": 71,
+   "mapped": true
+  },
+  {
+   "tag": "二次函數",
+   "slug": "quadratic-functions",
+   "topic": "二次函數",
+   "questions": 67,
+   "mapped": true
+  },
+  {
+   "tag": "指數定律",
+   "slug": "laws-of-indices",
+   "topic": "指數定律",
+   "questions": 66,
+   "mapped": true
+  },
+  {
+   "tag": "立體圖形",
+   "slug": "solids",
+   "topic": "立體圖形",
+   "questions": 65,
+   "mapped": true
+  },
+  {
+   "tag": "函數與圖像",
+   "slug": "functions-and-graphs",
+   "topic": "函數與圖像",
+   "questions": 63,
+   "mapped": true
+  },
+  {
+   "tag": "圓的幾何",
+   "slug": "circle-geometry",
+   "topic": "圓的幾何",
+   "questions": 60,
+   "mapped": true
+  },
+  {
+   "tag": "多項式",
+   "slug": "polynomials",
+   "topic": "多項式",
+   "questions": 60,
+   "mapped": true
+  },
+  {
+   "tag": "排列與組合",
+   "slug": "permutations-and-combinations",
+   "topic": "排列與組合",
+   "questions": 56,
+   "mapped": true
+  },
+  {
+   "tag": "百分數",
+   "slug": "percentages",
+   "topic": "百分比",
+   "questions": 54,
+   "mapped": true
+  },
+  {
+   "tag": "圓的方程",
+   "slug": "equation-of-circle",
+   "topic": "圓的方程",
+   "questions": 54,
+   "mapped": true
+  },
+  {
+   "tag": "變分",
+   "slug": "variation",
+   "topic": "變分",
+   "questions": 52,
+   "mapped": true
+  },
+  {
+   "tag": "比率與比例",
+   "slug": "ratio-and-proportion",
+   "topic": "比率與比例",
+   "questions": 49,
+   "mapped": true
+  },
+  {
+   "tag": "對數",
+   "slug": "logarithms",
+   "topic": "對數",
+   "questions": 49,
+   "mapped": true
+  },
+  {
+   "tag": "一元二次方程",
+   "slug": "quadratic-equations",
+   "topic": "一元二次方程",
+   "questions": 42,
+   "mapped": true
+  },
+  {
+   "tag": "不等式",
+   "slug": "inequalities",
+   "topic": "不等式",
+   "questions": 39,
+   "mapped": true
+  },
+  {
+   "tag": "一元一次不等式",
+   "slug": "linear-inequalities",
+   "topic": "一元一次不等式",
+   "questions": 38,
+   "mapped": true
+  },
+  {
+   "tag": "離差",
+   "slug": "dispersion",
+   "topic": "離差",
+   "questions": 37,
+   "mapped": true
+  },
+  {
+   "tag": "集中趨勢",
+   "slug": "central-tendency",
+   "topic": "集中趨勢",
+   "questions": 37,
+   "mapped": true
+  },
+  {
+   "tag": "三角學",
+   "slug": "trigonometry",
+   "topic": "三角學",
+   "questions": 34,
+   "mapped": true
+  },
+  {
+   "tag": "主項變換",
+   "slug": "change-of-subject",
+   "topic": "主項變換",
+   "questions": 32,
+   "mapped": true
+  },
+  {
+   "tag": "複數",
+   "slug": "complex-numbers",
+   "topic": "複數",
+   "questions": 29,
+   "mapped": true
+  },
+  {
+   "tag": "標準分",
+   "slug": "standard-score",
+   "topic": "標準分",
+   "questions": 28,
+   "mapped": true
+  },
+  {
+   "tag": "一元方程",
+   "slug": "linear-equations",
+   "topic": "一元方程",
+   "questions": 27,
+   "mapped": true
+  },
+  {
+   "tag": "軌跡",
+   "slug": "locus",
+   "topic": "軌跡",
+   "questions": 26,
+   "mapped": true
+  },
+  {
+   "tag": "標準差",
+   "slug": "standard-deviation",
+   "topic": "標準差",
+   "questions": 22,
+   "mapped": true
+  },
+  {
+   "tag": "幹葉圖",
+   "slug": "stem-and-leaf",
+   "topic": "幹葉圖",
+   "questions": 21,
+   "mapped": true
+  },
+  {
+   "tag": "變換與對稱",
+   "slug": "transformation-and-symmetry",
+   "topic": "變換與對稱",
+   "questions": 21,
+   "mapped": true
+  },
+  {
+   "tag": "立體幾何",
+   "slug": "3d-geometry",
+   "topic": "立體幾何",
+   "questions": 19,
+   "mapped": true
+  },
+  {
+   "tag": "百分數／利息",
+   "slug": "percentages-and-interest",
+   "topic": "百分數／利息",
+   "questions": 19,
+   "mapped": true
+  },
+  {
+   "tag": "百分比",
+   "slug": "percentages",
+   "topic": "百分比",
+   "questions": 17,
+   "mapped": true
+  },
+  {
+   "tag": "數系",
+   "slug": "number-systems",
+   "topic": "數系",
+   "questions": 14,
+   "mapped": true
+  },
+  {
+   "tag": "函數",
+   "slug": "functions-and-graphs",
+   "topic": "函數與圖像",
+   "questions": 14,
+   "mapped": true
+  },
+  {
+   "tag": "數制",
+   "slug": "number-bases",
+   "topic": "數制",
+   "questions": 13,
+   "mapped": true
+  },
+  {
+   "tag": "三角比／角",
+   "slug": "trigonometric-ratios",
+   "topic": "三角比",
+   "questions": 13,
+   "mapped": true
+  },
+  {
+   "tag": "等比數列",
+   "slug": "geometric-sequence",
+   "topic": "等比數列",
+   "questions": 11,
+   "mapped": true
+  },
+  {
+   "tag": "框線圖",
+   "slug": "box-and-whisker",
+   "topic": "框線圖",
+   "questions": 10,
+   "mapped": true
+  },
+  {
+   "tag": "三角恆等式",
+   "slug": "trigonometric-identities",
+   "topic": "三角恆等式",
+   "questions": 10,
+   "mapped": true
+  },
+  {
+   "tag": "指數函數",
+   "slug": "exponential-functions",
+   "topic": "指數函數",
+   "questions": 10,
+   "mapped": true
+  },
+  {
+   "tag": "線性規劃",
+   "slug": "linear-programming",
+   "topic": "線性規劃",
+   "questions": 10,
+   "mapped": true
+  },
+  {
+   "tag": "一元一次方程",
+   "slug": "linear-equations",
+   "topic": "一元方程",
+   "questions": 9,
+   "mapped": true
+  },
+  {
+   "tag": "因式定理",
+   "slug": "factor-theorem",
+   "topic": "因式定理",
+   "questions": 7,
+   "mapped": true
+  },
+  {
+   "tag": "餘式定理",
+   "slug": "remainder-theorem",
+   "topic": "餘式定理",
+   "questions": 7,
+   "mapped": true
+  },
+  {
+   "tag": "聯立方程",
+   "slug": "simultaneous-equations",
+   "topic": "聯立方程",
+   "questions": 6,
+   "mapped": true
+  },
+  {
+   "tag": "近似與誤差",
+   "slug": "approximation-and-error",
+   "topic": "近似與誤差",
+   "questions": 6,
+   "mapped": true
+  },
+  {
+   "tag": "多邊形",
+   "slug": "polygons",
+   "topic": "多邊形",
+   "questions": 6,
+   "mapped": true
+  },
+  {
+   "tag": "平行線",
+   "slug": "parallel-lines",
+   "topic": "平行線",
+   "questions": 6,
+   "mapped": true
+  },
+  {
+   "tag": "圓錐",
+   "slug": "cone",
+   "topic": "圓錐",
+   "questions": 5,
+   "mapped": true
+  },
+  {
+   "tag": "恆等式",
+   "slug": "identities",
+   "topic": "恆等式",
+   "questions": 5,
+   "mapped": true
+  },
+  {
+   "tag": "比較係數",
+   "slug": "comparing-coefficients",
+   "topic": "比較係數",
+   "questions": 5,
+   "mapped": true
+  },
+  {
+   "tag": "利息與增長",
+   "slug": "interest-and-growth",
+   "topic": "利息與增長",
+   "questions": 5,
+   "mapped": true
+  },
+  {
+   "tag": "對稱",
+   "slug": "symmetry",
+   "topic": "對稱",
+   "questions": 5,
+   "mapped": true
+  },
+  {
+   "tag": "中位數",
+   "slug": "median",
+   "topic": "中位數",
+   "questions": 5,
+   "mapped": true
+  },
+  {
+   "tag": "切線",
+   "slug": "tangents",
+   "topic": "切線",
+   "questions": 5,
+   "mapped": true
+  },
+  {
+   "tag": "方差",
+   "slug": "variance",
+   "topic": "方差",
+   "questions": 5,
+   "mapped": true
+  },
+  {
+   "tag": "Algebra",
+   "slug": "algebra",
+   "topic": "Algebra",
+   "questions": 5,
+   "mapped": true
+  },
+  {
+   "tag": "平均速率",
+   "slug": "average-speed",
+   "topic": "平均速率",
+   "questions": 4,
+   "mapped": true
+  },
+  {
+   "tag": "扇形",
+   "slug": "sector",
+   "topic": "扇形",
+   "questions": 4,
+   "mapped": true
+  },
+  {
+   "tag": "H.C.F.",
+   "slug": "hcf",
+   "topic": "H.C.F.",
+   "questions": 4,
+   "mapped": true
+  },
+  {
+   "tag": "等差數列",
+   "slug": "arithmetic-sequence",
+   "topic": "等差數列",
+   "questions": 4,
+   "mapped": true
+  },
+  {
+   "tag": "圖像",
+   "slug": "graphs",
+   "topic": "圖像",
+   "questions": 4,
+   "mapped": true
+  },
+  {
+   "tag": "判別式",
+   "slug": "discriminant",
+   "topic": "判別式",
+   "questions": 4,
+   "mapped": true
+  },
+  {
+   "tag": "圓周角",
+   "slug": "angles-in-circle",
+   "topic": "圓周角",
+   "questions": 4,
+   "mapped": true
+  },
+  {
+   "tag": "全等三角形",
+   "slug": "congruent-triangles",
+   "topic": "全等三角形",
+   "questions": 4,
+   "mapped": true
+  },
+  {
+   "tag": "Probability",
+   "slug": "probability",
+   "topic": "概率",
+   "questions": 4,
+   "mapped": true
+  },
+  {
+   "tag": "拋物線",
+   "slug": "parabola",
+   "topic": "拋物線",
+   "questions": 3,
+   "mapped": true
+  },
+  {
+   "tag": "極坐標",
+   "slug": "polar-coordinates",
+   "topic": "極坐標",
+   "questions": 3,
+   "mapped": true
+  },
+  {
+   "tag": "線性關係",
+   "slug": "linear-relationship",
+   "topic": "線性關係",
+   "questions": 3,
+   "mapped": true
+  },
+  {
+   "tag": "圖像變換",
+   "slug": "graph-transformations",
+   "topic": "圖像變換",
+   "questions": 3,
+   "mapped": true
+  },
+  {
+   "tag": "對數方程",
+   "slug": "logarithmic-equations",
+   "topic": "對數方程",
+   "questions": 3,
+   "mapped": true
+  },
+  {
+   "tag": "三角方程",
+   "slug": "trigonometric-equations",
+   "topic": "三角方程",
+   "questions": 3,
+   "mapped": true
+  },
+  {
+   "tag": "頻數分佈表",
+   "slug": "frequency-distribution",
+   "topic": "頻數分佈表",
+   "questions": 3,
+   "mapped": true
+  },
+  {
+   "tag": "Statistics",
+   "slug": "statistics",
+   "topic": "統計",
+   "questions": 3,
+   "mapped": true
+  },
+  {
+   "tag": "Factorisation",
+   "slug": "factorisation",
+   "topic": "因式分解",
+   "questions": 3,
+   "mapped": true
+  },
+  {
+   "tag": "Polynomials",
+   "slug": "polynomials",
+   "topic": "多項式",
+   "questions": 3,
+   "mapped": true
+  },
+  {
+   "tag": "Circle Properties",
+   "slug": "circle-properties",
+   "topic": "圓的性質",
+   "questions": 3,
+   "mapped": true
+  },
+  {
+   "tag": "四分位數",
+   "slug": "quartiles",
+   "topic": "四分位數",
+   "questions": 3,
+   "mapped": true
+  },
+  {
+   "tag": "統計圖表",
+   "slug": "statistical-charts",
+   "topic": "統計圖表",
+   "questions": 3,
+   "mapped": true
+  },
+  {
+   "tag": "Geometry",
+   "slug": "plane-geometry",
+   "topic": "平面幾何",
+   "questions": 3,
+   "mapped": true
+  },
+  {
+   "tag": "應用題",
+   "slug": "word-problems",
+   "topic": "應用題",
+   "questions": 2,
+   "mapped": true
+  },
+  {
+   "tag": "組合",
+   "slug": "combinations",
+   "topic": "組合",
+   "questions": 2,
+   "mapped": true
+  },
+  {
+   "tag": "面積比",
+   "slug": "area-ratio",
+   "topic": "面積比",
+   "questions": 2,
+   "mapped": true
+  },
+  {
+   "tag": "扇形面積",
+   "slug": "sector",
+   "topic": "扇形",
+   "questions": 2,
+   "mapped": true
+  },
+  {
+   "tag": "L.C.M.",
+   "slug": "lcm",
+   "topic": "L.C.M.",
+   "questions": 2,
+   "mapped": true
+  },
+  {
+   "tag": "十六進位",
+   "slug": "number-bases",
+   "topic": "數制",
+   "questions": 2,
+   "mapped": true
+  },
+  {
+   "tag": "變換",
+   "slug": "transformation-and-symmetry",
+   "topic": "變換與對稱",
+   "questions": 2,
+   "mapped": true
+  },
+  {
+   "tag": "三角函數",
+   "slug": "trigonometric-functions",
+   "topic": "三角函數",
+   "questions": 2,
+   "mapped": true
+  },
+  {
+   "tag": "比例與相似",
+   "slug": "ratio-and-similarity",
+   "topic": "比例與相似",
+   "questions": 2,
+   "mapped": true
+  },
+  {
+   "tag": "平均數",
+   "slug": "mean",
+   "topic": "平均數",
+   "questions": 2,
+   "mapped": true
+  },
+  {
+   "tag": "圓形圖",
+   "slug": "pie-chart",
+   "topic": "圓形圖",
+   "questions": 2,
+   "mapped": true
+  },
+  {
+   "tag": "二次方程",
+   "slug": "quadratic-equations",
+   "topic": "一元二次方程",
+   "questions": 2,
+   "mapped": true
+  },
+  {
+   "tag": "內心",
+   "slug": "incentre",
+   "topic": "內心",
+   "questions": 2,
+   "mapped": true
+  },
+  {
+   "tag": "複合不等式",
+   "slug": "linear-inequalities",
+   "topic": "一元一次不等式",
+   "questions": 2,
+   "mapped": true
+  },
+  {
+   "tag": "Change of Subject",
+   "slug": "change-of-subject",
+   "topic": "主項變換",
+   "questions": 2,
+   "mapped": true
+  },
+  {
+   "tag": "Laws of Indices",
+   "slug": "laws-of-indices",
+   "topic": "指數定律",
+   "questions": 2,
+   "mapped": true
+  },
+  {
+   "tag": "Percentages",
+   "slug": "percentages",
+   "topic": "百分比",
+   "questions": 2,
+   "mapped": true
+  },
+  {
+   "tag": "Angles",
+   "slug": "angles",
+   "topic": "角",
+   "questions": 2,
+   "mapped": true
+  },
+  {
+   "tag": "Ratio",
+   "slug": "ratio-and-proportion",
+   "topic": "比率與比例",
+   "questions": 2,
+   "mapped": true
+  },
+  {
+   "tag": "Mean",
+   "slug": "mean",
+   "topic": "平均數",
+   "questions": 2,
+   "mapped": true
+  },
+  {
+   "tag": "Median",
+   "slug": "median",
+   "topic": "中位數",
+   "questions": 2,
+   "mapped": true
+  },
+  {
+   "tag": "Quadratic Equations",
+   "slug": "quadratic-equations",
+   "topic": "一元二次方程",
+   "questions": 2,
+   "mapped": true
+  },
+  {
+   "tag": "Similar Triangles",
+   "slug": "similar-triangles",
+   "topic": "相似三角形",
+   "questions": 2,
+   "mapped": true
+  },
+  {
+   "tag": "Mensuration",
+   "slug": "mensuration",
+   "topic": "求積法",
+   "questions": 2,
+   "mapped": true
+  },
+  {
+   "tag": "Geometric Sequence",
+   "slug": "geometric-sequence",
+   "topic": "等比數列",
+   "questions": 2,
+   "mapped": true
+  },
+  {
+   "tag": "Angle between Planes",
+   "slug": "angle-between-planes",
+   "topic": "兩面角",
+   "questions": 2,
+   "mapped": true
+  },
+  {
+   "tag": "Variation",
+   "slug": "variation",
+   "topic": "變分",
+   "questions": 2,
+   "mapped": true
+  },
+  {
+   "tag": "二元一次方程組",
+   "slug": "simultaneous-equations",
+   "topic": "聯立方程",
+   "questions": 2,
+   "mapped": true
+  },
+  {
+   "tag": "弧度",
+   "slug": "radians",
+   "topic": "弧度",
+   "questions": 2,
+   "mapped": true
+  },
+  {
+   "tag": "圓柱",
+   "slug": "cylinder",
+   "topic": "圓柱",
+   "questions": 2,
+   "mapped": true
+  },
+  {
+   "tag": "畢氏定理",
+   "slug": "pythagoras",
+   "topic": "畢氏定理",
+   "questions": 2,
+   "mapped": true
+  },
+  {
+   "tag": "四邊形",
+   "slug": "quadrilaterals",
+   "topic": "四邊形",
+   "questions": 2,
+   "mapped": true
+  },
+  {
+   "tag": "角",
+   "slug": "angles",
+   "topic": "角",
+   "questions": 2,
+   "mapped": true
+  },
+  {
+   "tag": "菱形",
+   "slug": "rhombus",
+   "topic": "菱形",
+   "questions": 2,
+   "mapped": true
+  },
+  {
+   "tag": "十六進制",
+   "slug": "number-bases",
+   "topic": "數制",
+   "questions": 2,
+   "mapped": true
+  },
+  {
+   "tag": "三角形的心",
+   "slug": "centres-of-triangle",
+   "topic": "幾何中心",
+   "questions": 2,
+   "mapped": true
+  },
+  {
+   "tag": "幾何中心",
+   "slug": "centres-of-triangle",
+   "topic": "幾何中心",
+   "questions": 2,
+   "mapped": true
+  },
+  {
+   "tag": "三角形",
+   "slug": "triangle",
+   "topic": "三角形",
+   "questions": 2,
+   "mapped": true
+  },
+  {
+   "tag": "圓形性質",
+   "slug": "circle-properties",
+   "topic": "圓的性質",
+   "questions": 2,
+   "mapped": true
+  },
+  {
+   "tag": "交弦定理",
+   "slug": "intersecting-chords",
+   "topic": "交弦定理",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "角柱體",
+   "slug": "prism",
+   "topic": "角柱體",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "角錐",
+   "slug": "pyramid",
+   "topic": "角錐",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "兩面角",
+   "slug": "angle-between-planes",
+   "topic": "兩面角",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "圖案規律",
+   "slug": "patterns",
+   "topic": "圖案規律",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "誤差上限",
+   "slug": "max-error",
+   "topic": "誤差上限",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "面積",
+   "slug": "area",
+   "topic": "面積",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "弧長",
+   "slug": "arc-length",
+   "topic": "弧長",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "平均值",
+   "slug": "mean",
+   "topic": "平均數",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "對稱軸",
+   "slug": "axis-of-symmetry",
+   "topic": "對稱軸",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "複利息",
+   "slug": "interest-and-growth",
+   "topic": "利息與增長",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "圓形",
+   "slug": "circle",
+   "topic": "圓形",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "半球",
+   "slug": "hemisphere",
+   "topic": "半球",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "梯形面積",
+   "slug": "trapezium-area",
+   "topic": "梯形面積",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "方位角",
+   "slug": "bearing",
+   "topic": "方位角",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "餘弦定理",
+   "slug": "cosine-rule",
+   "topic": "餘弦定理",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "眾數",
+   "slug": "mode",
+   "topic": "眾數",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "散點圖",
+   "slug": "scatter-plot",
+   "topic": "散點圖",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "根與係數",
+   "slug": "roots-and-coefficients",
+   "topic": "根與係數",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "四面體",
+   "slug": "tetrahedron",
+   "topic": "四面體",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "外心",
+   "slug": "circumcentre",
+   "topic": "外心",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "百分變化",
+   "slug": "percentage-change",
+   "topic": "百分變化",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "比例",
+   "slug": "ratio-and-proportion",
+   "topic": "比率與比例",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "多邊形面積",
+   "slug": "polygon-area",
+   "topic": "多邊形面積",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "幾何",
+   "slug": "plane-geometry",
+   "topic": "平面幾何",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "正方形",
+   "slug": "square",
+   "topic": "正方形",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "直角三角形",
+   "slug": "right-triangle",
+   "topic": "直角三角形",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "三角形內心",
+   "slug": "incentre",
+   "topic": "內心",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "反射",
+   "slug": "reflection",
+   "topic": "Reflection",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "分佈域",
+   "slug": "range-of-data",
+   "topic": "分佈域",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "指數比較",
+   "slug": "comparing-indices",
+   "topic": "指數比較",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "二進位",
+   "slug": "number-bases",
+   "topic": "數制",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "頂點",
+   "slug": "vertex",
+   "topic": "頂點",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "圓與直線",
+   "slug": "circle-and-line",
+   "topic": "圓與直線",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "Errors",
+   "slug": "approximation-and-error",
+   "topic": "近似與誤差",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "Significant Figures",
+   "slug": "significant-figures",
+   "topic": "Significant Figures",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "Linear Inequalities",
+   "slug": "linear-inequalities",
+   "topic": "一元一次不等式",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "Profit and Loss",
+   "slug": "profit-and-loss",
+   "topic": "Profit",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "Rate and Ratio",
+   "slug": "ratio-and-proportion",
+   "topic": "比率與比例",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "Box-and-whisker Diagram",
+   "slug": "box-and-whisker",
+   "topic": "框線圖",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "Factor Theorem",
+   "slug": "factor-theorem",
+   "topic": "因式定理",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "Solids",
+   "slug": "solids",
+   "topic": "立體圖形",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "Permutations and Combinations",
+   "slug": "permutations-and-combinations",
+   "topic": "排列與組合",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "Sequences",
+   "slug": "sequences",
+   "topic": "數列",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "Trigonometry",
+   "slug": "trigonometry",
+   "topic": "三角學",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "3-D Geometry",
+   "slug": "3d-geometry",
+   "topic": "立體幾何",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "Quadratic Functions",
+   "slug": "quadratic-functions",
+   "topic": "二次函數",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "Equations of Circles",
+   "slug": "equation-of-circle",
+   "topic": "圓的方程",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "Equations of Straight Lines",
+   "slug": "equation-of-straight-line",
+   "topic": "直線方程",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "Tangents",
+   "slug": "tangents",
+   "topic": "切線",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "變換／對稱",
+   "slug": "transformation-and-symmetry",
+   "topic": "變換與對稱",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "垂直平分線",
+   "slug": "perpendicular-bisector",
+   "topic": "垂直平分線",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "表面積",
+   "slug": "surface-area",
+   "topic": "表面積",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "體積",
+   "slug": "volume",
+   "topic": "體積",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "配方法",
+   "slug": "completing-the-square",
+   "topic": "配方法",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "直線與圓",
+   "slug": "circle-and-line",
+   "topic": "圓與直線",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "比與比例",
+   "slug": "ratio-and-proportion",
+   "topic": "比率與比例",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "Positive Indices",
+   "slug": "laws-of-indices",
+   "topic": "指數定律",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "Variables",
+   "slug": "variables",
+   "topic": "Variables",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "Quadratic Expressions",
+   "slug": "quadratic-expressions",
+   "topic": "Quadratic Expressions",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "Algebraic Expressions",
+   "slug": "algebraic-simplification",
+   "topic": "代數化簡",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "Discount",
+   "slug": "discount",
+   "topic": "Discount",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "Profit",
+   "slug": "profit-and-loss",
+   "topic": "Profit",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "Capacity",
+   "slug": "capacity",
+   "topic": "容量",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "Simultaneous Equations",
+   "slug": "simultaneous-equations",
+   "topic": "聯立方程",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "Polar Coordinates",
+   "slug": "polar-coordinates",
+   "topic": "極坐標",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "Area of Triangle",
+   "slug": "triangle",
+   "topic": "三角形",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "Isosceles Triangle",
+   "slug": "isosceles-triangle",
+   "topic": "Isosceles Triangle",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "Reflection",
+   "slug": "reflection",
+   "topic": "Reflection",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "Rotation",
+   "slug": "rotation",
+   "topic": "Rotation",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "Locus",
+   "slug": "locus",
+   "topic": "軌跡",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "Data Distribution",
+   "slug": "data-distribution",
+   "topic": "Data Distribution",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "Interquartile Range",
+   "slug": "quartiles",
+   "topic": "四分位數",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "Division",
+   "slug": "division",
+   "topic": "Division",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "Cost Function",
+   "slug": "cost-and-revenue",
+   "topic": "Cost Function",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "Cube",
+   "slug": "cube",
+   "topic": "Cube",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "Graph Reading",
+   "slug": "graphs",
+   "topic": "圖像",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "Kinematics",
+   "slug": "average-speed",
+   "topic": "平均速率",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "Average Speed",
+   "slug": "average-speed",
+   "topic": "平均速率",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "Bar Chart",
+   "slug": "bar-chart",
+   "topic": "棒形圖",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "Pie Chart",
+   "slug": "pie-chart",
+   "topic": "圓形圖",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "Standard Score",
+   "slug": "standard-score",
+   "topic": "標準分",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "Change in Data",
+   "slug": "change-in-data",
+   "topic": "Change in Data",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "Combinations",
+   "slug": "combinations",
+   "topic": "組合",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "Conditional Probability",
+   "slug": "conditional-probability",
+   "topic": "Conditional Probability",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "Complex Numbers",
+   "slug": "complex-numbers",
+   "topic": "複數",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "Real Roots",
+   "slug": "discriminant",
+   "topic": "判別式",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "Tetrahedron",
+   "slug": "tetrahedron",
+   "topic": "四面體",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "Investment",
+   "slug": "interest-and-growth",
+   "topic": "利息與增長",
+   "questions": 1,
+   "mapped": true
+  },
+  {
+   "tag": "Revenue",
+   "slug": "cost-and-revenue",
+   "topic": "Cost Function",
+   "questions": 1,
+   "mapped": true
+  }
+ ]
+}

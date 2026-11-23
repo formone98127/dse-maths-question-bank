@@ -41,11 +41,19 @@ body {
   border: 1px solid #2c2c2e; border-radius: 99px; padding: 3px 10px;
   max-width: 40vw; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
 }
+.progress {
+  margin-left: auto; font-size: 13px; color: var(--ink-dim);
+  font-variant-numeric: tabular-nums;
+}
 .streak {
-  margin-left: auto; font-size: 14px; color: var(--ink-dim);
+  font-size: 14px; color: var(--ink-dim);
   font-variant-numeric: tabular-nums;
 }
 .streak b { color: var(--ink); font-size: 16px; }
+.deck-meta {
+  color: var(--ink-dim); font-size: 13px; text-align: center;
+  font-variant-numeric: tabular-nums;
+}
 
 /* ---------- 畫面切換 ---------- */
 .screen {

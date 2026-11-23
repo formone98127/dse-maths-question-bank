@@ -1,0 +1,40 @@
+name: Deploy selected files to Hostinger
+
+# 用 curl 被動模式逐檔上傳（實測 226 成功；lftp 會撞 .in.* 暫存檔，不可用）。
+on:
+  workflow_dispatch:
+    inputs:
+      pattern:
+        description: "git ls-files glob（可多個，空白分隔）"
+        required: true
+        default: "docs/hub/app.js docs/hub/style.css"
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    env:
+      H: 147.93.109.152
+      U: u187459660.hkdseupload
+    steps:
+      - uses: actions/checkout@v4
+      - name: Upload
+        env:
+          P: ${{ secrets.HKDSE_FTP_PASSWORD }}
+        run: |
+          set -uo pipefail
+          : > /tmp/list.txt
+          for pat in ${{ github.event.inputs.pattern }}; do
+            git ls-files "$pat" >> /tmp/list.txt
+          done
+          sort -u /tmp/list.txt -o /tmp/list.txt
+          echo "files: $(wc -l < /tmp/list.txt)"
+          ok=0; bad=0
+          while IFS= read -r f; do
+            [ -z "$f" ] && continue
+            r="${f#docs/}"
+            code=$(curl -sS -o /dev/null -w '%{http_code}' --connect-timeout 20 --max-time 120 \
+                     -k --ssl-reqd --ftp-create-dirs -T "$f" "ftp://${U}:${P}@${H}/${r}") || code="ERR$?"
+            echo "$r -> $code"
+            if [ "$code" = "226" ]; then ok=$((ok+1)); else bad=$((bad+1)); fi
+          done < /tmp/list.txt
+          echo "ok=$ok bad=$bad"

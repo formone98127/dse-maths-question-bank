@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-HK">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>開考倒數｜DSE 數學深夜撐關小遊戲｜DSE Hub</title>
+<meta name="description" content="距離開考還有 15 日。左右滑卡撐住腦力、時間、分數、心情。信錯一句公式，考試局會遲啲嚟收數。深夜書桌風格，無腦溫 DSE 數學伏位。">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://hkdse.exampaper.cloud/eve/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DSE Hub">
+<meta property="og:locale" content="zh_HK">
+<meta property="og:title" content="開考倒數｜DSE 數學深夜撐關小遊戲｜DSE Hub">
+<meta property="og:description" content="左右滑卡撐到開考。信錯一句，考試局遲啲嚟收數。">
+<meta property="og:url" content="https://hkdse.exampaper.cloud/eve/">
+<meta property="og:image" content="https://hkdse.exampaper.cloud/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0c0908">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="DSE Hub">
+<link rel="stylesheet" href="style.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LTB27V0RGW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-LTB27V0RGW');
+</script>
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$']] },
+  startup: { ready() { MathJax.startup.defaultReady(); if (window.onMathJaxReady) window.onMathJaxReady(); } }
+};
+</script>
+<script src="/mathjax/tex-chtml.js" async></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "開考倒數",
+  "url": "https://hkdse.exampaper.cloud/eve/",
+  "applicationCategory": "EducationalGame",
+  "operatingSystem": "Web",
+  "inLanguage": "zh-Hant-HK",
+  "description": "Reigns 式左右滑卡：四條橫條、日子倒數、信錯公式遲啲先爆。",
+  "isPartOf": { "@type": "WebSite", "name": "DSE Hub", "url": "https://hkdse.exampaper.cloud/hub/" }
+}
+</script>
+</head>
+<body>
+<header class="bar">
+  <a class="brand" href="/hub/">DSE Hub</a>
+  <span class="day-chip" id="dayChip" hidden>距離開考還有 <b id="dayNum">15</b> 日</span>
+  <span class="best" id="bestChip" hidden>最遠 <b id="bestNum">0</b> 日</span>
+</header>
+
+<section id="home" class="screen">
+  <div class="lamp" aria-hidden="true"></div>
+  <h1>開考倒數</h1>
+  <p class="sub">距離開考還有 <strong>15 日</strong>。左右滑卡，撐住腦力、時間、分數、心情。信錯一句，考試局會遲啲嚟收數。</p>
+  <p class="deck-meta" id="deckMeta"></p>
+  <button type="button" class="big-btn" id="startBtn">開始撐</button>
+  <noscript><p>此遊戲需要 JavaScript。</p></noscript>
+</section>
+
+<main id="game" class="screen" hidden>
+  <div class="meters" id="meters" aria-label="四條橫條">
+    <div class="meter" data-stat="brain"><span class="m-label">腦力</span><div class="m-track"><i id="mBrain"></i></div></div>
+    <div class="meter" data-stat="time"><span class="m-label">時間</span><div class="m-track"><i id="mTime"></i></div></div>
+    <div class="meter" data-stat="score"><span class="m-label">分數</span><div class="m-track"><i id="mScore"></i></div></div>
+    <div class="meter" data-stat="mood"><span class="m-label">心情</span><div class="m-track"><i id="mMood"></i></div></div>
+  </div>
+  <div class="urgent-ring" id="urgentRing" hidden>
+    <svg viewBox="0 0 36 36" aria-hidden="true">
+      <circle class="ring-bg" cx="18" cy="18" r="15.5"></circle>
+      <circle class="ring-fg" id="ringFg" cx="18" cy="18" r="15.5"></circle>
+    </svg>
+    <span id="urgentSec">3</span>
+  </div>
+  <div id="stackWrap">
+    <div id="stack" aria-live="polite"></div>
+  </div>
+</main>
+
+<section id="death" class="screen" hidden>
+  <p class="death-days" id="deathDays"></p>
+  <p class="death-cause" id="deathCause"></p>
+  <p class="death-formula" id="deathFormula" hidden></p>
+  <p class="death-correct" id="deathCorrect"></p>
+  <button type="button" class="big-btn" id="againBtn">再撐一次</button>
+  <button type="button" class="ghost-btn" id="homeBtn">返主頁</button>
+</section>
+
+<footer class="actions" id="actions" hidden>
+  <button type="button" class="ans-btn left" id="btnLeft"><span class="mark">←</span> <span id="btnLeftLabel">左</span></button>
+  <button type="button" class="ans-btn right" id="btnRight"><span id="btnRightLabel">右</span> <span class="mark">→</span></button>
+</footer>
+
+<!-- 扁平人物 SVG 模板 -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="fig-self" viewBox="0 0 80 80">
+    <circle cx="40" cy="22" r="12" fill="#c4a574"/>
+    <rect x="26" y="36" width="28" height="30" rx="8" fill="#3d5a80"/>
+    <rect x="52" y="10" width="10" height="18" rx="2" fill="#e8c36a"/>
+    <circle cx="57" cy="10" r="5" fill="#f5e6a8" opacity=".7"/>
+  </symbol>
+  <symbol id="fig-parents" viewBox="0 0 80 80">
+    <circle cx="40" cy="20" r="13" fill="#a8896a"/>
+    <rect x="22" y="36" width="36" height="32" rx="8" fill="#5c4a3a"/>
+    <path d="M28 18 Q40 6 52 18" fill="none" stroke="#3a2e24" stroke-width="4"/>
+  </symbol>
+  <symbol id="fig-classmate" viewBox="0 0 80 80">
+    <circle cx="40" cy="22" r="12" fill="#c4a574"/>
+    <rect x="26" y="36" width="28" height="30" rx="8" fill="#6b8f71"/>
+    <rect x="48" y="48" width="14" height="22" rx="2" fill="#1a1a1a"/>
+    <rect x="50" y="50" width="10" height="16" rx="1" fill="#4a90d9"/>
+  </symbol>
+  <symbol id="fig-tutor" viewBox="0 0 80 80">
+    <circle cx="40" cy="22" r="12" fill="#c4a574"/>
+    <circle cx="34" cy="22" r="5" fill="none" stroke="#2a2a2a" stroke-width="1.5"/>
+    <circle cx="46" cy="22" r="5" fill="none" stroke="#2a2a2a" stroke-width="1.5"/>
+    <line x1="39" y1="22" x2="41" y2="22" stroke="#2a2a2a" stroke-width="1.5"/>
+    <rect x="26" y="36" width="28" height="30" rx="8" fill="#4a5568"/>
+    <rect x="54" y="42" width="4" height="22" rx="1" fill="#c45c26"/>
+  </symbol>
+  <symbol id="fig-exam" viewBox="0 0 80 80">
+    <rect x="18" y="18" width="44" height="44" rx="4" fill="#1a1a1a"/>
+    <circle cx="40" cy="40" r="16" fill="none" stroke="#c45c26" stroke-width="3"/>
+    <text x="40" y="46" text-anchor="middle" font-size="14" font-weight="700" fill="#c45c26">考</text>
+  </symbol>
+</svg>
+
+<script src="cards.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

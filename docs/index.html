@@ -13,7 +13,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="apple-mobile-web-app-title" content="DSE Hub">
 <meta name="application-name" content="DSE Hub">
-<meta name="description" content="免費下載 2012–2025 DSE 數學 Past Paper：卷一、卷二、中英文卷＋Marking Scheme、答案題解，按年份、課題搜尋，唔使報名即刻開卷。"><link rel="canonical" href="https://hkdse.exampaper.cloud/hub/">
+<meta name="description" content="免費下載 2012–2025 DSE 數學 Past Paper：卷一、卷二、中英文卷＋Marking Scheme、答案題解，按年份、課題搜尋，唔使報名即刻開卷。"><link rel="canonical" href="https://hkdse.exampaper.cloud/" />
 <link rel="alternate" hreflang="zh-Hant-HK" href="https://hkdse.exampaper.cloud/hub/">
 <link rel="alternate" hreflang="x-default" href="https://hkdse.exampaper.cloud/hub/">
 <meta name="robots" content="index, follow">
@@ -113,6 +113,15 @@ main { flex:1; min-height:0; display:flex; flex-direction:column; max-width:960p
   border: 0.5px solid rgba(90,170,255,0.35);
 }
 .mc-pct strong { font-weight: 700; }
+/* 答對率視覺化：雙色 bar（綠=答對比例、紅=答錯比例），70% → 綠7:紅3 */
+.pct-meter { display: inline-flex; align-items: center; gap: 8px; vertical-align: middle; margin-left: 4px; }
+.pct-scale {
+  display: flex; flex: 0 0 auto; width: 90px; height: 8px; border-radius: 999px;
+  overflow: hidden; box-shadow: inset 0 0 0 1px rgba(0,0,0,.08);
+}
+.pct-seg-green { height: 100%; background: #33a852; }
+.pct-seg-red { height: 100%; background: #e5533d; }
+.pct-num { font-weight: 700; font-size: 13px; color: var(--ink); }
 .ttag { color:var(--acc); font-size:12.5px; }
 #qbody .ttag-label { color:var(--mut); font-size:12.5px; margin-right:4px; }
 .sol-panel {
@@ -157,6 +166,8 @@ table.ms-table th, table.ms-table td {
 }
 table.ms-table th { background:#eef4fb; font-weight:600; white-space:nowrap; }
 table.ms-table td:last-child { color:#5a6b7c; font-size:13.5px; }
+/* 校對台人手修正過的解答（純文字，一行一段） */
+.ms-manual { font-size:14.5px; line-height:1.9; white-space:normal; }
 /* 長解答（例如 2025 Q19 的圓方程）會撐爆手機闊度：容許橫向滑動，唔好切走 Marks 欄 */
 .sol-content { overflow-x:auto; -webkit-overflow-scrolling:touch; }
 table.ms-table { min-width:520px; }
@@ -306,6 +317,10 @@ footer { text-align:center; color:var(--mut); font-size:11.5px; padding:4px 0 12
 #imgzoom.open{display:block}
 #imgzoom img{width:100%;max-width:none;display:block}
 #imgzoom .xz{position:fixed;top:10px;right:14px;font-size:20px;color:#fff;background:#0009;border:1px solid #ffffff55;border-radius:8px;padding:6px 12px;cursor:pointer}
+.perm-link{display:inline-block;margin:2px 0 10px;font-size:12px;color:#2d6cdf;text-decoration:none;opacity:.8}.perm-link:hover{opacity:1;text-decoration:underline}
+.anim-body{padding:10px 0 4px}
+.anim-gif{width:100%;max-width:560px;border-radius:10px;display:block;background:#0b0f16}
+.anim-note{font-size:12px;color:#8894A8;margin:8px 0 0}
 </style>
 </head>
 <body>
@@ -331,11 +346,17 @@ footer { text-align:center; color:var(--mut); font-size:11.5px; padding:4px 0 12
     <button class="btn" id="next">下一題 →</button>
   </div>
 </main>
-<footer>DSE 題庫（數學）— 內容僅供學習用途</footer>
+<footer>DSE 題庫（數學）— 內容僅供學習用途 · <a href="/privacy/">私隱政策</a></footer>
+<details class="seo-intro" style="max-width:900px;margin:0 auto;padding:6px 16px 56px;font-family:-apple-system,'PingFang TC','Microsoft JhengHei',sans-serif;color:#1a1a2e;line-height:1.6;">
+  <summary style="cursor:pointer;font-size:14px;color:#555;padding:6px 0;outline-offset:4px;">關於 DSE 數學題庫｜按年份導覽</summary>
+  <h1 style="font-size:18px;margin:8px 0 6px;">DSE 數學歷屆試題題庫（2012–2025）</h1>
+  <p style="margin:0 0 8px;font-size:14px;color:#444;">免費 DSE 數學 Past Paper 題目、官方評卷參考（Marking Scheme）、考生表現與詳解，按年份、卷別、課題搜尋，毋須報名。</p>
+  <p style="margin:0;font-size:13px;">按年份：<a href="/questions/math/2019/paper-1/q1/">2019</a> · <a href="/questions/math/2020/paper-1/q1/">2020</a> · <a href="/questions/math/2021/paper-1/q1/">2021</a> · <a href="/questions/math/2022/paper-1/q1/">2022</a> · <a href="/questions/math/2023/paper-1/q1/">2023</a> · <a href="/questions/math/2024/paper-1/q1/">2024</a> · <a href="/questions/math/2025/paper-1/q1/">2025</a></p>
+</details>
 
-<script src="hub/papers.js?v=1"></script>
-<script src="data.js?v=20261117170851"></script>
-<script src="answers.js?v=20261117170851"></script>
+<script src="hub/papers.js?v=202611221029"></script>
+<script src="data.js?v=202611221029"></script>
+<script src="answers.js?v=202611221029"></script>
 <script>
 const QS = window.QB.questions;
 const $ = s => document.querySelector(s);
@@ -345,6 +366,8 @@ const pno = p => {
   return m ? m[1].toUpperCase() : '1';
 };
 const YEAR_LABEL = { PP: '練習卷', SP: '樣本試卷' };
+const PAPER_LABEL = { 'Paper 1M': 'M1' };
+const plabel = p => PAPER_LABEL[p] || p;
 const yLabel = y => YEAR_LABEL[y] || y;
 const yNum = y => { const n = Number(y); return Number.isFinite(n) ? n : 0; };
 const SUBJECT_PREFIX = { '數學': '', '經濟': 'econ', '化學': 'chem', '生物': 'bio', '物理': 'phys', '英語': 'eng' };
@@ -391,11 +414,23 @@ function papersPdfFor(q) {
   return anyLang(exact.length ? exact : items) ? (anyLang(exact.length ? exact : items).u) : null;
 }
 function syncPdfTop(q) {
-  const url = q ? (PDF_LINKS[paperKey(q.subject, q.year, q.paper)] || papersPdfFor(q)) : null;
+  /* 一律去本站的獨立下載頁（/download/<slug>.html），唔再直連 PDF、唔跳外部站 */
+  const canon = q ? papersPdfFor(q) : null;
+  const legacy = q ? PDF_LINKS[paperKey(q.subject, q.year, q.paper)] : null;
+  let url = null;
+  if (canon && canon.startsWith('/papers/')) {
+    url = canon.replace(/^\/papers\//, '/download/').replace(/\.pdf$/, '.html');
+  } else if (legacy) {
+    const slug = String(legacy).split('/').pop().replace(/\.pdf$/, '.html');
+    url = '/download/' + slug;          /* 舊表只有檔名，照樣導去下載頁 */
+  } else if (canon) {
+    url = canon;
+  }
   const btn = $('#pdfBtn');
   if (url) {
     btn.href = url;
-    btn.setAttribute('download', url.split('/').pop());
+    if (url.endsWith('.html')) btn.removeAttribute('download');
+    else btn.setAttribute('download', url.split('/').pop());
     btn.removeAttribute('target');
     btn.removeAttribute('rel');
     btn.classList.remove('disabled');
@@ -465,6 +500,10 @@ function solExpandHtml(q, expanded) {
           <span class="rep-toggle-label">考評報告</span>
           <span class="sol-chevron" aria-hidden="true"></span>
         </button>` : '';
+  const animBtn = (sol && sol.anim) ? `<button type="button" class="sol-toggle anim-toggle" id="animToggle" aria-expanded="false">
+          <span class="anim-toggle-label">視覺解題</span>
+          <span class="sol-chevron" aria-hidden="true"></span>
+        </button>` : '';
   const aiBtn = isMcQuestion(q) ? `<button type="button" class="sol-toggle ai-toggle" id="aiToggle"
           style="display:none" aria-expanded="false">
           <span class="ai-toggle-label">深度分析</span>
@@ -472,17 +511,33 @@ function solExpandHtml(q, expanded) {
         </button>` : '';
   return `
     <div class="sol-panel${open ? ' open' : ''}" id="solPanel" data-expanded="${open ? 'true' : 'false'}">
-      <div class="sol-btnrow">${solBtn}${repBtn}${aiBtn}</div>
+      <div class="sol-btnrow">${solBtn}${animBtn}${repBtn}${aiBtn}</div>
+      ${(sol && sol.anim) ? `<div class="anim-body" id="animBody" hidden>
+        <img class="anim-gif" src="${sol.anim}" alt="視覺解題示範" loading="lazy">
+        <p class="anim-note">視覺解題為按題意改寫之示範，非重現試題。</p>
+      </div>` : ''}
       ${sol ? `<div class="sol-body" id="solBody"${open ? '' : ' hidden'}>
         <div class="sol-content">${sol.html}</div>
       </div>` : ''}
       ${rep ? `<div class="rep-body" id="repBody" hidden>${rep}</div>` : ''}
     </div>`;
 }
+/* 答對率視覺化：雙色 bar（綠=答對比例、紅=答錯比例） */
+function pctGauge(pct) {
+  if (pct == null || isNaN(pct)) return '';
+  const p = Math.max(0, Math.min(100, Number(pct)));
+  return `<span class="pct-meter" role="img" aria-label="考生答對率 ${p}%">`
+    + `<span class="pct-scale">`
+    + `<span class="pct-seg-green" style="width:${p}%"></span>`
+    + `<span class="pct-seg-red" style="width:${100 - p}%"></span>`
+    + `</span>`
+    + `<span class="pct-num">${p}%</span></span>`;
+}
 /* 考評局對本題嘅評語（data.js 的 report 欄；已按段落分開） */
 function reportHtml(q) {
   const t = (q && q.report) || '';
-  const pct = (q && q.answer_pct != null) ? `<p class="mc-pct mc-pct-rep">考生答對率 <strong>${q.answer_pct}%</strong></p>` : '';
+  const pct = (q && q.answer_pct != null)
+    ? `<p class="mc-pct mc-pct-rep" id="repPct" hidden>考生答對率 ${pctGauge(q.answer_pct)}</p>` : '';
   if (!t.trim()) return pct;
   const body = t.split(/\n{2,}/).filter(Boolean)
           .map(x => `<p>${x.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}</p>`)
@@ -510,6 +565,18 @@ function wireSolToggle(q) {
       if (lbl) lbl.textContent = open ? '收起考評報告' : '考評報告';
       const MJ = window.MathJax;
       if (open && MJ?.typesetPromise) MJ.typesetPromise([repBody]).catch(()=>{});
+    });
+  }
+  const animT = document.getElementById('animToggle');
+  const animB = document.getElementById('animBody');
+  if (animT && animB) {
+    animT.addEventListener('click', () => {
+      const open = animB.hidden;
+      animB.hidden = !open;
+      animT.setAttribute('aria-expanded', open ? 'true' : 'false');
+      animT.classList.toggle('open', open);
+      const lbl = animT.querySelector('.anim-toggle-label');
+      if (lbl) lbl.textContent = open ? '收起視覺解題' : '視覺解題';
     });
   }
   const toggle = $('#solToggle');
@@ -744,8 +811,8 @@ function paperBarLabel(q) {
   if (!q) return 'DSE 題庫';
   const sec = shortSection(q.title);
   const base = sec
-    ? `${q.subject} ${yLabel(q.year)} ${q.paper} ${sec}`
-    : `${q.subject} ${yLabel(q.year)} ${q.paper}`;
+    ? `${q.subject} ${yLabel(q.year)} ${plabel(q.paper)} ${sec}`
+    : `${q.subject} ${yLabel(q.year)} ${plabel(q.paper)}`;
   return q.qno != null ? `${base} Q${q.qno}` : base;
 }
 function syncBarTitle(q) {
@@ -792,19 +859,29 @@ function enhanceMc(root) {
           b.classList.remove('selected', 'correct', 'wrong');
         });
         btn.classList.add('selected');
-        if (!ans) return;
+        /* 一揀答案就揭開考評報告入面嘅答對率 */
+        const repPct = document.getElementById('repPct');
+        if (repPct) repPct.hidden = false;
+        const gauge = pctGauge(pct);
+        const rateTxt = gauge ? ' ' + gauge : '';
+        if (!ans) {
+          /* 冇官方答案都照樣顯示答對率，唔會「揀完乜都冇」 */
+          feedback.hidden = false;
+          feedback.className = 'mc-feedback';
+          feedback.innerHTML = `已選擇 ${p.letter}${rateTxt}`;
+          return;
+        }
         const ok = p.letter === ans;
-        const rate = (pct != null) ? `（答對率 ${pct}%）` : '';
         feedback.hidden = false;
         if (ok) {
           /* 答對先至標正確答案；答錯只話你知錯，唔可以透漏邊個先啱 */
           btn.classList.add('correct');
           feedback.className = 'mc-feedback ok';
-          feedback.textContent = `正確！答案是 ${ans}${rate}`;
+          feedback.innerHTML = `正確！答案是 ${ans}${rateTxt}`;
         } else {
           btn.classList.add('wrong');
           feedback.className = 'mc-feedback bad';
-          feedback.textContent = `唔啱，再試一次。${rate}`;
+          feedback.innerHTML = `唔啱，再試一次。${rateTxt}`;
         }
       });
       wrap.appendChild(btn);
@@ -815,6 +892,15 @@ function enhanceMc(root) {
 }
 
 let curQ = null;
+/* 每題「永久連結」→ 對應 SEO 靜態頁（內鏈，助 Google 順住爬） */
+function staticLink(q) {
+  const y = Number(q.year);
+  if (!Number.isFinite(y) || y < 2019 || y > 2025) return '';   // 靜態頁現只 cover 2019–2025
+  const pn = /Paper 2|卷二/i.test(q.paper || '') ? 2 : 1;
+  const href = `/questions/math/${y}/paper-${pn}/q${q.qno}/`;
+  return `<a class="perm-link" href="${href}" title="此題獨立頁面（可分享）">🔗 永久連結</a>`;
+}
+
 function show(q, opts) {
   opts = opts || {};
   if (!q) {
@@ -858,12 +944,10 @@ function show(q, opts) {
     }
   }
   const expandSol = !!opts.expandSol && !!findSolution(q);
-  /* Paper 2（MC）：顯示官方考評報告的考生答對率 */
-  const pctHtml = (isMcQuestion(q) && q.answer_pct != null)
-    ? `<p class="mc-pct" title="來自考評局考評報告／評卷參考">考生答對率 <strong>${q.answer_pct}%</strong></p>`
-    : '';
+  /* 答對率唔即時顯示：要 user 揀了選項才在回饋／考評報告面板出現 */
   $('#qbody').innerHTML =
-    `<div class="qcontent">${pctHtml}${q.html}${tagsHtml}</div>` +
+    `<div class="qcontent">${q.html}${tagsHtml}</div>` +
+    staticLink(q) +
     solExpandHtml(q, expandSol) +
     aiExpandHtml(q);
   const qcontent = $('#qbody .qcontent');
@@ -963,6 +1047,7 @@ function openFromHash() {
   const p = pToken === '2' ? 'Paper 2'
     : pToken === '1A' ? 'Paper 1A'
     : pToken === '1B' ? 'Paper 1B'
+    : pToken === '1M' ? 'Paper 1M'
     : 'Paper 1';
   const n = m[4] ? +m[4] : null;
   const ref = passageRef;
@@ -1043,7 +1128,7 @@ if (!location.hash) {
   }
 }
 </script>
-<script src="pwa.js?v=20261117170851"></script>
+<script src="pwa.js?v=202611221029"></script>
 
 <script>
 /* 圖片點擊放大 */

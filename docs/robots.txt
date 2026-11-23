@@ -1,5 +1,9 @@
 User-agent: *
 Allow: /
 Disallow: /mathjax/
+Disallow: /papers/
 
 Sitemap: https://hkdse.exampaper.cloud/sitemap.xml
+Sitemap: https://hkdse.exampaper.cloud/sitemap-questions.xml
+Sitemap: https://hkdse.exampaper.cloud/sitemap-download.xml
+Sitemap: https://hkdse.exampaper.cloud/sitemap-topics.xml

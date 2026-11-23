@@ -1,0 +1,354 @@
+/* ===== 開考倒數 — 深夜書桌 ===== */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #0c0908;
+  --bg-red: #1a0808;
+  --paper: #f3ebe0;
+  --paper-ink: #1a1410;
+  --paper-dim: #6b5e52;
+  --ink: #f0e6d8;
+  --ink-dim: #8a7a6a;
+  --accent: #c45c26;
+  --accent-ink: #e07840;
+  --brain: #d8d4cc;
+  --time: #d4a056;
+  --score: #6b9e78;
+  --mood: #c4788a;
+  --danger: #c43c2e;
+  --radius: 14px;
+}
+
+html, body { height: 100%; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Noto Serif TC",
+    "Songti TC", "Microsoft JhengHei", Georgia, serif;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  transition: background 0.6s ease;
+}
+body.danger { background: var(--bg-red); }
+
+.bar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+  padding: calc(10px + env(safe-area-inset-top)) 16px 8px;
+  z-index: 2;
+  min-height: 36px;
+}
+.brand {
+  color: var(--ink-dim); text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-weight: 700; font-size: 13px;
+  flex-shrink: 0;
+}
+.day-chip {
+  margin-left: auto;
+  font-size: 12px; color: var(--ink-dim);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.day-chip b { color: var(--ink); font-size: 15px; }
+.day-chip.warn b { color: var(--danger); }
+.best {
+  font-size: 12px; color: var(--ink-dim);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.best b { color: var(--time); }
+/* 遊戲中：日子獨佔右，最遠收埋；主頁／死亡先顯示最遠 */
+body.playing .best { display: none; }
+body.playing .day-chip { margin-left: auto; }
+
+.screen {
+  flex: 1; display: flex; flex-direction: column; align-items: center;
+  justify-content: center; gap: 14px;
+  padding: 16px 20px calc(24px + env(safe-area-inset-bottom));
+  overflow-x: hidden; overflow-y: auto; position: relative;
+  width: 100%;
+}
+.screen[hidden] { display: none; }
+
+.lamp {
+  width: 80px; height: 80px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(232, 195, 106, 0.35) 0%, transparent 70%);
+  margin-bottom: -20px;
+}
+
+h1 {
+  font-size: 32px; font-weight: 700; letter-spacing: 0.04em;
+  color: var(--paper);
+}
+.sub {
+  color: var(--ink-dim); font-size: 15px; line-height: 1.9;
+  text-align: center; max-width: 17em;
+  padding: 0 8px;
+}
+.sub strong { color: var(--ink); }
+.deck-meta {
+  color: var(--ink-dim); font-size: 13px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-variant-numeric: tabular-nums;
+}
+
+.big-btn {
+  min-height: 56px; padding: 0 32px; width: min(100%, 300px);
+  background: var(--accent); color: #fff; border: none; border-radius: var(--radius);
+  font-size: 18px; font-weight: 700; cursor: pointer; touch-action: manipulation;
+  font-family: inherit; letter-spacing: 0.06em;
+}
+.big-btn:active { background: var(--accent-ink); }
+.ghost-btn {
+  min-height: 48px; padding: 0 24px; width: min(100%, 300px);
+  background: none; color: var(--ink-dim); border: 1px solid #3a2e28;
+  border-radius: var(--radius); font-size: 15px; cursor: pointer;
+  font-family: inherit;
+}
+
+/* ---------- 橫條 ---------- */
+.meters {
+  width: min(92vw, 400px);
+  display: grid; grid-template-columns: 1fr 1fr; gap: 10px 16px;
+  padding: 6px 4px 10px;
+  flex-shrink: 0;
+}
+.meter { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.m-label {
+  font-size: 11px; color: var(--ink-dim);
+  width: 2.6em; flex-shrink: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.2;
+}
+.m-track {
+  flex: 1; min-width: 0; height: 6px; border-radius: 99px;
+  background: rgba(255,255,255,0.08); overflow: hidden;
+  position: relative;
+}
+.m-track i {
+  display: block; height: 100%; width: 50%;
+  border-radius: 99px; transition: width 0.25s ease, background 0.25s;
+}
+.meter[data-stat="brain"] .m-track i { background: var(--brain); }
+.meter[data-stat="time"] .m-track i { background: var(--time); }
+.meter[data-stat="score"] .m-track i { background: var(--score); }
+.meter[data-stat="mood"] .m-track i { background: var(--mood); }
+.meter.flash .m-track { box-shadow: 0 0 0 2px var(--danger); }
+
+/* ---------- 突發圓環 ---------- */
+.urgent-ring {
+  position: absolute; top: 8px; right: 14px; z-index: 6;
+  width: 40px; height: 40px;
+}
+.urgent-ring[hidden] { display: none; }
+.urgent-ring svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+.ring-bg { fill: none; stroke: rgba(255,255,255,0.1); stroke-width: 3; }
+.ring-fg {
+  fill: none; stroke: var(--danger); stroke-width: 3;
+  stroke-dasharray: 97.4; stroke-dashoffset: 0;
+  transition: stroke-dashoffset 0.1s linear;
+}
+.urgent-ring span {
+  position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+  font-size: 14px; font-weight: 700; color: var(--danger);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- 卡片疊 ---------- */
+#game {
+  padding: 0 0 88px; overflow: hidden; justify-content: flex-start;
+  gap: 0;
+}
+#stackWrap {
+  position: relative; flex: 1; width: 100%;
+  min-height: 0; /* 否則 flex 子項會撐爆 */
+  display: flex; align-items: center; justify-content: center;
+  padding: 4px 0 8px;
+}
+#stack {
+  position: relative;
+  width: min(88vw, 360px);
+  height: min(520px, calc(100dvh - 230px), 100%);
+  flex-shrink: 0;
+}
+.tcard {
+  position: absolute; inset: 0;
+  background: var(--paper);
+  color: var(--paper-ink);
+  border-radius: 18px;
+  padding: 16px 16px 14px;
+  display: flex; flex-direction: column; gap: 8px;
+  touch-action: none; user-select: none; -webkit-user-select: none;
+  will-change: transform;
+  overflow: hidden;
+  box-shadow:
+    0 12px 40px rgba(0,0,0,0.55),
+    inset 0 0 0 1px rgba(180,150,110,0.25);
+  background-image:
+    radial-gradient(ellipse at 20% 0%, rgba(255,240,210,0.5), transparent 50%),
+    linear-gradient(180deg, #f7f0e6 0%, #efe4d4 100%);
+}
+.tcard.top { cursor: grab; }
+.tcard.behind-1 { transform: translateY(10px) scale(0.97); opacity: 0.7; }
+.tcard.behind-2 { transform: translateY(18px) scale(0.94); opacity: 0.4; }
+.tcard.urgent {
+  box-shadow:
+    0 12px 40px rgba(0,0,0,0.55),
+    inset 0 0 0 3px var(--danger);
+}
+
+.tcard .who {
+  display: flex; align-items: center; gap: 10px;
+  flex-shrink: 0;
+}
+.tcard .who svg {
+  width: 44px; height: 44px; flex-shrink: 0;
+  border-radius: 50%; background: rgba(0,0,0,0.06);
+}
+.tcard .who .name {
+  font-size: 13px; font-weight: 700; color: var(--paper-dim);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  letter-spacing: 0.04em;
+}
+.tcard .stmt {
+  flex: 1; min-height: 0;
+  display: flex; align-items: center; justify-content: center;
+  text-align: center; font-size: clamp(15px, 4.2vw, 18px);
+  line-height: 1.65;
+  overflow-x: hidden; overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 8px 2px;
+  overflow-wrap: anywhere; word-break: break-word;
+}
+/* MathJax 唔好貼埋／撐爆 */
+.tcard .stmt mjx-container,
+.death-formula mjx-container,
+.death-correct mjx-container,
+.death-cause mjx-container {
+  margin: 0.35em 0 !important;
+  max-width: 100%;
+  overflow-x: auto;
+  line-height: normal !important;
+}
+.tcard .stmt mjx-container[display="true"] {
+  margin: 0.5em 0 !important;
+}
+.tcard .hints {
+  display: flex; justify-content: space-between; gap: 12px;
+  font-size: 12px; color: var(--paper-dim);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  flex-shrink: 0;
+  padding-top: 2px;
+}
+.tcard .hints .h-l, .tcard .hints .h-r {
+  flex: 1; min-width: 0; line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+.tcard .hints .h-l { text-align: left; }
+.tcard .hints .h-r { text-align: right; }
+
+.tcard .stamp {
+  position: absolute; top: 58px; font-size: 22px; font-weight: 900;
+  border: 3px solid currentColor; border-radius: 10px; padding: 2px 10px;
+  opacity: 0; transition: opacity 0.1s; pointer-events: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  max-width: 42%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.tcard .stamp.go-l { left: 14px; color: var(--danger); transform: rotate(-12deg); }
+.tcard .stamp.go-r { right: 14px; color: #2a6b4a; transform: rotate(12deg); }
+
+.tcard.exit-l { transform: translateX(-120vw) rotate(-24deg); transition: transform 0.25s ease; }
+.tcard.exit-r { transform: translateX(120vw) rotate(24deg); transition: transform 0.25s ease; }
+
+@media (prefers-reduced-motion: reduce) {
+  .tcard.exit-l, .tcard.exit-r { transition: none; transform: none; display: none; }
+  .m-track i { transition: none; }
+}
+
+/* ---------- 死亡 ---------- */
+#death {
+  background: #000;
+  padding-left: 24px; padding-right: 24px;
+  gap: 12px;
+}
+.death-days {
+  font-size: 15px; color: var(--ink-dim);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.4;
+}
+.death-cause {
+  font-size: clamp(18px, 5vw, 22px); font-weight: 700; text-align: center;
+  max-width: 20em; width: 100%;
+  line-height: 1.55; color: var(--paper);
+  overflow-wrap: anywhere; word-break: break-word;
+  padding: 0 4px;
+}
+.death-formula {
+  font-size: clamp(16px, 4.5vw, 20px); text-align: center;
+  max-width: 20em; width: 100%;
+  line-height: 1.8; color: var(--paper);
+  padding: 12px 14px;
+  margin: 2px 0 6px;
+  background: rgba(243, 235, 224, 0.06);
+  border-radius: 12px;
+  overflow-wrap: anywhere; word-break: break-word;
+}
+.death-formula[hidden] { display: none; }
+.death-correct {
+  font-size: 15px; text-align: center;
+  max-width: 16em; width: 100%;
+  line-height: 2; color: var(--time);
+  margin: 8px 0 22px;
+  padding: 4px 12px 10px;
+  overflow-wrap: anywhere; word-break: break-word;
+}
+.death-correct .dc-label {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: var(--ink-dim);
+  margin-bottom: 6px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+.death-correct .dc-body {
+  display: block;
+  line-height: 1.9;
+}
+
+/* ---------- 底部掣 ---------- */
+.actions {
+  position: fixed; left: 0; right: 0; bottom: 0;
+  display: flex; gap: 10px;
+  padding: 10px 14px calc(10px + env(safe-area-inset-bottom));
+  background: linear-gradient(transparent, var(--bg) 28%);
+  z-index: 4;
+}
+.actions[hidden] { display: none; }
+.ans-btn {
+  flex: 1; min-width: 0; min-height: 52px;
+  border: none; border-radius: var(--radius);
+  font-size: 15px; font-weight: 700; cursor: pointer; touch-action: manipulation;
+  font-family: inherit; background: rgba(243, 235, 224, 0.1); color: var(--ink);
+  padding: 10px 8px; line-height: 1.35;
+  display: flex; align-items: center; justify-content: center; gap: 4px;
+}
+.ans-btn:active { filter: brightness(1.3); }
+.ans-btn .mark { opacity: 0.6; flex-shrink: 0; }
+.ans-btn #btnLeftLabel, .ans-btn #btnRightLabel {
+  min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.ans-btn.left { color: #e09090; }
+.ans-btn.right { color: #90c0a0; }
+
+@media (max-height: 700px) {
+  #stack { height: min(420px, calc(100dvh - 210px), 100%); }
+  .tcard { padding: 12px 14px 12px; gap: 6px; }
+  .tcard .who svg { width: 38px; height: 38px; }
+  .tcard .stmt { font-size: 15px; line-height: 1.55; }
+}

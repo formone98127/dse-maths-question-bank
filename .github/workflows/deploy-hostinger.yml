@@ -26,7 +26,7 @@ on:
         default: false
 
 concurrency:
-  group: hostinger-deploy
+  group: hostinger-full-deploy
   cancel-in-progress: false
 
 permissions:
@@ -82,41 +82,24 @@ jobs:
 
       - name: Upload to Hostinger
         env:
-          FTP_PASS: ${{ secrets.HKDSE_FTP_PASSWORD }}
+          P: ${{ secrets.HKDSE_FTP_PASSWORD }}
         run: |
-          set -euo pipefail
-          if [ -z "${FTP_PASS:-}" ]; then echo "Missing secret HKDSE_FTP_PASSWORD" >&2; exit 1; fi
-          python3 - <<'PY'
-          import os, pathlib
-          up = [l.strip() for l in open('/tmp/upload.txt') if l.strip()]
-          rm = [l.strip() for l in open('/tmp/delete.txt') if l.strip()]
-          host, user, pw = os.environ['FTP_HOST'], os.environ['FTP_USER'], os.environ['FTP_PASS']
-          lines = [
-            "set ssl:verify-certificate no",
-            "set ftp:ssl-force true",
-            "set ftp:ssl-protect-data true",
-            "set net:max-retries 5",
-            "set net:reconnect-interval-base 5",
-            "set net:timeout 40",
-            "set ftp:passive-mode true",
-            f'open -u "{user}","{pw}" ftp://{host}',
-          ]
-          made = set()
-          for rel in up:
-              d = os.path.dirname(rel) or "/"
-              if d not in made:
-                  lines.append(f'mkdir -p "{d}"')
-                  made.add(d)
-              lines.append(f'put -O "{d}" "docs/{rel}"')
-          for rel in rm:
-              lines.append(f'rm -f "/{rel}"')
-          lines += ["bye", ""]
-          p = pathlib.Path('/tmp/lftp.txt')
-          p.write_text("\n".join(lines))
-          p.chmod(0o600)
-          print(f"lftp script: {len(lines)-1} commands")
-          PY
-          lftp -f /tmp/lftp.txt
+          set -uo pipefail
+          H=147.93.109.152
+          U=u187459660.hkdseupload
+          ok=0; bad=0
+          while IFS= read -r r; do
+            [ -z "$r" ] && continue
+            [ -f "docs/$r" ] || continue
+            code=$(curl -sS -o /dev/null -w '%{http_code}' --connect-timeout 20 --max-time 120                      -k --ssl-reqd --ftp-create-dirs -T "docs/$r" "ftp://${U}:${P}@${H}/${r}") || code="ERR$?"
+            if [ "$code" = "226" ]; then ok=$((ok+1)); else bad=$((bad+1)); echo "FAIL $r ($code)"; fi
+          done < /tmp/upload.txt
+          echo "uploaded=$ok failed=$bad"
+          while IFS= read -r r; do
+            [ -z "$r" ] && continue
+            curl -sS -o /dev/null -k --ssl-reqd --connect-timeout 20 --max-time 60               -Q "DELE /$r" "ftp://${U}:${P}@${H}/" || true
+          done < /tmp/delete.txt
+          if [ "$bad" -gt 0 ] && [ "$bad" -eq "$(grep -c . /tmp/upload.txt)" ]; then exit 1; fi
 
       - name: Verify the live site serves this commit
         env:

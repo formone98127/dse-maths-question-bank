@@ -888,6 +888,10 @@ def parse_catalog():
     )
     catalog = []
     for i, n, y, p, lg, h, path in rows:
+        if i == "m1":
+            # M1 卷頁由 gen_m1_pages.py 維護、hub 卡用 /#hash 深連結；
+            # build_seo 唔生成 M1 落地頁（跳過，同已部署 hub 靜態目錄一致）。
+            continue
         row = {"id": i, "name": n, "year": int(y), "paper": p, "lang": lg, "hash": h}
         if path:
             row["path"] = path
@@ -1163,8 +1167,12 @@ def make_robots():
         f"""User-agent: *
 Allow: /
 Disallow: /mathjax/
+Disallow: /papers/
 
 Sitemap: {SITE}/sitemap.xml
+Sitemap: {SITE}/sitemap-questions.xml
+Sitemap: {SITE}/sitemap-download.xml
+Sitemap: {SITE}/sitemap-topics.xml
 """,
         encoding="utf-8",
     )
@@ -1339,7 +1347,7 @@ def make_hub(catalog, papers):
   </section>
 </main>
 {faq_html}
-<footer>站內只放索引、連結同課題標籤，唔存放試卷原卷 · 只顯示資料庫已有內容<br>科目：{footer_links}<br>攻略：<a href="/blog/">DSE 溫習攻略（Past Paper 操卷法・Marking Scheme 用法・摘星策略）</a><br>小遊戲：<a href="/trap/">DSE 數學伏位快問（左右掃辨別 MC 常見陷阱）</a><br>相關：<a href="{esc(VISUAL_TUTOR)}" rel="noopener">{esc(VISUAL_TUTOR_LABEL)}</a></footer>
+<footer>站內只放索引、連結同課題標籤，唔存放試卷原卷 · 只顯示資料庫已有內容<br>科目：<a href="/math/">數學</a> · 經濟（即將推出）· 化學（即將推出）· 生物（即將推出）· 物理（即將推出）<br>攻略：<a href="/blog/">DSE 溫習攻略（Past Paper 操卷法・Marking Scheme 用法・摘星策略）</a><br>小遊戲：<a href="/trap/">DSE 數學伏位快問（左右掃辨別 MC 常見陷阱）</a><br>相關：<a href="{esc(VISUAL_TUTOR)}" rel="noopener">{esc(VISUAL_TUTOR_LABEL)}</a> · <a href="/topics/">課題總匯</a> · <a href="/questions/">全部題目目錄</a> · <a href="/privacy/">私隱政策</a></footer>
 
 <!-- 滾輪選擇器 -->
 <div class="reel-overlay" id="reel" hidden>
@@ -1956,7 +1964,8 @@ def patch_root_index():
     path = ROOT / "index.html"
     text = path.read_text(encoding="utf-8")
     text = text.replace('<html lang="zh-Hant">', '<html lang="zh-Hant-HK">', 1)
-    if f'rel="canonical" href="{HUB}"' in text:
+    # 已 SEO 化嘅 root：canonical 指向 hub（舊）或自我指向（51d2323e 起）
+    if f'rel="canonical" href="{HUB}"' in text or f'rel="canonical" href="{SITE}/"' in text:
         text, added = ensure_root_ga4(text)
         if added:
             path.write_text(text, encoding="utf-8")
@@ -3618,7 +3627,9 @@ def sanity_check():
         raise SystemExit("sitemap includes pdf")
     # Every local landing index.html (except site root) should be in the sitemap.
     # 非數學科已落線：notice 頁由人工維護、唔喺呢個 build 嘅 sitemap 入面，跳過。
-    OFFLINE_PREFIXES = ("chem/", "econ/", "bio/", "phys/")
+    # m1／questions／topics／download 頁由各自腳本產生，有獨立 sitemap-*.xml（robots.txt 聲明）。
+    OFFLINE_PREFIXES = ("chem/", "econ/", "bio/", "phys/", "m1/",
+                        "questions/", "topics/", "download/")
     expected = set()
     for p in ROOT.rglob("index.html"):
         if "mathjax" in p.as_posix():

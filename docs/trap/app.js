@@ -14,7 +14,8 @@
     hintLayer: $("hintLayer"), verdict: $("verdict"), hintText: $("hintText"),
     srcLink: $("srcLink"), actions: $("actions"),
     btnTrap: $("btnTrap"), btnReal: $("btnReal"),
-    streak: $("streak"), modeChip: $("modeChip"),
+    streak: $("streak"), modeChip: $("modeChip"), progress: $("progress"),
+    deckMeta: $("deckMeta"),
     sumStats: $("sumStats"), weakHead: $("weakHead"), weakList: $("weakList"),
     againBtn: $("againBtn"), homeBtn: $("homeBtn"),
   };
@@ -83,10 +84,19 @@
     el.modeChip.textContent = mode === "mixed" ? "綜合" : topic;
     el.modeChip.hidden = false;
     el.actions.hidden = false;
+    el.progress.hidden = false;
     el.streak.hidden = false;
     el.streak.querySelector("b").textContent = "0";
+    updateProgress();
     track("trap_session_start", { mode, topic: topic || undefined });
     renderStack();
+  }
+
+  function updateProgress() {
+    if (!session) return;
+    const left = session.queue.length;
+    const done = Math.max(0, session.total - left);
+    el.progress.textContent = done + " / " + session.total;
   }
 
   /* ---------- 卡片疊渲染 ---------- */
@@ -130,6 +140,7 @@
       const dom = cardDom(session.queue[i], cls);
       el.stack.appendChild(dom);
     }
+    updateProgress();
     typesetTop();
     if (mjReady) {
       // 閒時預排下一卡
@@ -301,6 +312,7 @@
   function endSession() {
     el.actions.hidden = true;
     el.streak.hidden = true;
+    el.progress.hidden = true;
     el.modeChip.hidden = true;
     const acc = session.answered ? Math.round((session.correct / session.answered) * 100) : 0;
     el.sumStats.innerHTML =
@@ -333,8 +345,14 @@
 
   /* ---------- 起始頁 ---------- */
   function renderHome() {
+    const topics = [...new Set(DECK.map((c) => c.topic))];
+    if (el.deckMeta) {
+      el.deckMeta.textContent = DECK.length
+        ? `卡庫 ${DECK.length} 張 · ${topics.length} 個課題`
+        : "";
+    }
     el.topicChips.innerHTML = DECK.length
-      ? [...new Set(DECK.map((c) => c.topic))].sort((a, b) => a.localeCompare(b, "zh-Hant"))
+      ? topics.sort((a, b) => a.localeCompare(b, "zh-Hant"))
           .map((t) => {
             const n = DECK.filter((c) => c.topic === t).length;
             return `<button type="button" data-topic="${esc(t)}">${esc(t)} <span class="n">${n}</span></button>`;
@@ -354,6 +372,7 @@
   el.homeBtn.addEventListener("click", () => {
     el.actions.hidden = true;
     el.streak.hidden = true;
+    el.progress.hidden = true;
     el.modeChip.hidden = true;
     showScreen("home");
   });

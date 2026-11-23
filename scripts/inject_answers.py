@@ -38,6 +38,21 @@ def load_bank() -> dict:
                 ans[int(q["number"])] = str(q["answer"]).upper()
         if ans:
             out[key] = ans
+    # 再由 {year}_P2_答案.md 補（中英共用同一份官方答案鍵）
+    for md in QB.glob("*_P2_答案.md"):
+        m = re.match(r"(\d{4})_P2_答案", md.name)
+        if not m:
+            continue
+        year = int(m.group(1))
+        rows = re.findall(r"\|\s*(\d{1,2})\s*\|\s*([A-D])\s*\|", md.read_text(encoding="utf-8"))
+        if not rows:
+            continue
+        ans = {int(n): a for n, a in rows}
+        for lang in ("zh", "en"):
+            k = (year, lang)
+            merged = dict(ans)
+            merged.update(out.get(k, {}))   # cleaned 目錄優先
+            out[k] = merged
     return out
 
 

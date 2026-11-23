@@ -8,6 +8,12 @@ Options -Indexes
   RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
   RewriteCond %{HTTP_HOST} ^www\.hkdse\.exampaper\.cloud$ [NC]
   RewriteRule ^ https://hkdse.exampaper.cloud%{REQUEST_URI} [L,R=301]
+
+  # 卷目錄頁（/math/<年>/<卷>/）一律 301 去 reader 互動版第 1 題；
+  # 用戶唔會見到靜態目錄頁（2026-11 定案，Kin 要求）。
+  RewriteRule ^math/([0-9]{4})/paper-([12])(-en|-zh)?/?$ https://hkdse.exampaper.cloud/#$1P$2Q1 [R=301,L,NE]
+  # 舊版「/math/<年>/<卷>/qN/」深度分析頁（重複＋canonical 壞）→ 一樣 301 去 reader
+  RewriteRule ^math/([0-9]{4})/paper-([12])(-en|-zh)?/q([0-9]+)/?$ https://hkdse.exampaper.cloud/#$1P$2Q$4 [R=301,L,NE]
 </IfModule>
 
 <IfModule mod_headers.c>
@@ -17,14 +23,30 @@ Options -Indexes
 
 <IfModule mod_expires.c>
   ExpiresActive On
-  ExpiresByType text/html "access plus 1 hour"
-  ExpiresByType text/css "access plus 7 days"
-  ExpiresByType application/javascript "access plus 7 days"
+  # 改完要即刻見到：頁面 60 秒、程式／樣式 5 分鐘
+  ExpiresByType text/html "access plus 1 minutes"
+  ExpiresByType text/css "access plus 5 minutes"
+  ExpiresByType application/javascript "access plus 5 minutes"
+  ExpiresByType application/manifest+json "access plus 5 minutes"
+  # 內容唔會原地改的資產：長快取
   ExpiresByType image/png "access plus 30 days"
   ExpiresByType image/jpeg "access plus 30 days"
+  ExpiresByType image/webp "access plus 30 days"
   ExpiresByType image/svg+xml "access plus 30 days"
   ExpiresByType application/pdf "access plus 30 days"
-  ExpiresByType application/manifest+json "access plus 7 days"
+</IfModule>
+
+<IfModule mod_headers.c>
+  # mod_expires 只出 Expires；Cache-Control 亦要短，先至壓得住 Hostinger CDN 的 1 小時預設
+  <FilesMatch "\.(html|htm)$">
+    Header set Cache-Control "public, max-age=60, must-revalidate"
+  </FilesMatch>
+  <FilesMatch "\.(css|js|json)$">
+    Header set Cache-Control "public, max-age=300, must-revalidate"
+  </FilesMatch>
+  <FilesMatch "sw\.js$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
 </IfModule>
 
 <IfModule mod_deflate.c>

@@ -1,0 +1,33 @@
+name: FTP probe
+
+on:
+  workflow_dispatch:
+    inputs:
+      path:
+        description: "repo 內路徑，例如 docs/hub/app.js"
+        required: true
+        default: "docs/hub/app.js"
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    env:
+      H: 147.93.109.152
+      U: u187459660.hkdseupload
+    steps:
+      - uses: actions/checkout@v4
+      - name: Probe upload modes
+        env:
+          P: ${{ secrets.HKDSE_FTP_PASSWORD }}
+        run: |
+          set -uo pipefail
+          F="${{ github.event.inputs.path }}"
+          R="${F#docs/}"
+          echo "== A: curl 被動 (default) =="
+          curl -sS -o /dev/null -w 'A=%{http_code}\n' --connect-timeout 20 --max-time 90 -k --ssl-reqd --ftp-create-dirs -T "$F" "ftp://$U:$P@$H/$R" || echo "A=ERR$?"
+          echo "== B: curl 主動 --ftp-port - =="
+          curl -sS -o /dev/null -w 'B=%{http_code}\n' --connect-timeout 20 --max-time 90 -k --ssl-reqd --ftp-port - --ftp-create-dirs -T "$F" "ftp://$U:$P@$H/$R" || echo "B=ERR$?"
+          echo "== C: lftp 明文 STOR (no temp) =="
+          sudo apt-get update -qq && sudo apt-get install -y -qq lftp
+          printf 'set ssl:verify-certificate no\nset ftp:ssl-force true\nset ftp:ssl-protect-data true\nset ftp:use-temp-file no\nset net:timeout 20\nset net:max-retries 1\nopen -u "%s","%s" ftp://%s\nput -o "/%s" "%s"\nbye\n' "$U" "$P" "$H" "$R" "$F" > /tmp/p.txt
+          timeout 120 lftp -f /tmp/p.txt || echo "C=$?"

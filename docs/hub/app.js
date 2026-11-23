@@ -46,7 +46,10 @@ function bankPapers(sid, year) {
   const names = new Set([QB_SUBJECT[sid], sid].filter(Boolean));
   const qs = (window.QB && window.QB.questions) || [];
   for (const q of qs) {
-    if (names.has(q.subject) && String(q.year) === String(year)) out.add(String(q.paper));
+    if (String(q.year) !== String(year)) continue;
+    /* M1／M2 延伸部分：以 paper 認，唔靠 subject（兩者 subject 都係「數學」） */
+    if (sid === "m1") { if (q.paper === "Paper 1M") out.add("Paper 1M"); continue; }
+    if (names.has(q.subject)) out.add(String(q.paper));
   }
   return out;
 }
@@ -63,13 +66,21 @@ function pdfRowsFor(sid, name, year) {
   return (subj.items || [])
     .filter((it) => String(it.y) === String(year))
     .filter((it) => {
-      /* CASE 2：該卷已有電子版 → 卡片完全唔出（PDF 改由閱讀器右上角「全卷下載」提供） */
+      /* CASE 2：該卷已有電子版 → 只收起「試卷」PDF（改由閱讀器右上角「全卷下載」提供）；
+         評卷參考（MS）同考試報告 PDF 照出卡，方便一次過下載成份（Kin 2026-11-17） */
       const pn = it.p ? `Paper ${it.p}` : "";
-      if (pn && have.has(pn)) return false;
-      if (!pn && have.size > 0) return false;   // 「全卷」PDF 而該年已有電子版
+      if (it.k === "paper") {
+        if (pn && have.has(pn)) return false;
+        if (!pn && have.size > 0) return false;   // 「全卷」PDF 而該年已有電子版
+      }
       return true;
     })
     .map((it) => ({ pdf: true, sid, name, year: it.y, kind: it.k, paper: it.p, lang: it.l, url: it.u }));
+}
+
+function downloadPageHref(pdfUrl) {
+  // /papers/<sid>/<stem>.pdf  ->  /download/<sid>/<stem>.html
+  return "/download/" + String(pdfUrl).replace(/^\/papers\//, "").replace(/\.pdf$/, "") + ".html";
 }
 
 function pdfRowHtml(r) {
@@ -77,7 +88,7 @@ function pdfRowHtml(r) {
   const paperLbl = r.paper ? `Paper ${r.paper}` : "全卷";
   const langLbl = r.lang === "zh" ? "中文" : r.lang === "en" ? "English" : "—";
   return `
-    <a class="paper-row" href="${esc(r.url)}" target="_blank" rel="noopener" download title="下載 ${esc(r.name)} ${r.year} ${kindLbl}">
+    <a class="paper-row" href="${esc(downloadPageHref(r.url))}" title="下載 ${esc(r.name)} ${r.year} ${kindLbl}">
       <span class="paper-year">${r.year}</span>
       <span class="paper-body">
         <span class="paper-tags">
@@ -85,7 +96,7 @@ function pdfRowHtml(r) {
           <span class="tag paper">${esc(paperLbl)}</span>
           ${r.lang === "na" ? "" : `<span class="tag lang">${esc(langLbl)}</span>`}
           <span class="tag pdf">${esc(kindLbl)}</span>
-          <span class="tag dl">直接下載</span>
+          <span class="tag dl">下載頁</span>
         </span>
         <span class="paper-title">${esc(r.name)} ${esc(paperLbl)} · ${esc(kindLbl)}</span>
       </span>
@@ -147,6 +158,17 @@ function sidToSubject(sid) {
 function paperNo(paper) {
   const m = String(paper || "").match(/(\d+[A-Za-z]?)/);
   return m ? m[1].toUpperCase() : "1";
+}
+
+/* PDF 目錄的卷別（p: ""／"1"／"2"／"1A"…）→ 同 CATALOG 一致的標籤 */
+function paperLabelFromPdf(p) {
+  const s = String(p == null ? "" : p).trim().toUpperCase();
+  if (!s) return "";                 // 全卷（跨兩卷）→ 冇特定卷別
+  if (s === "1") return "卷一";
+  if (s === "2") return "卷二";
+  if (s === "1A") return "卷一甲";
+  if (s === "1B") return "卷一乙";
+  return "Paper " + s;
 }
 
 function bankQuestions(sid) {
@@ -234,7 +256,25 @@ function optionsFor(key) {
       .map((y) => ({ value: String(y), label: YEAR_LABEL[y] || String(y) })));
   }
   if (key === "paper") {
-    return head.concat(uniq(rows.map((r) => r.paper)).map((p) => ({ value: p, label: p })));
+    /* 卷別選項：同時由電子題庫（CATALOG，如數學 卷一/卷二）同 PDF 目錄（未入庫科目）
+       收集，統一標籤；按科目／年份現有嘅卷別才出，唔會出空選項。 */
+    const labels = new Set();
+    rows.forEach((r) => { if (r.paper) labels.add(String(r.paper)); });
+    const sid0 = state.subject !== PLACE && state.subject !== ALL ? state.subject : null;
+    const sidList = sid0 ? [sid0] : pdfSubjects().map((x) => x.id);
+    const yr = (state.year !== PLACE && state.year !== ALL) ? String(state.year) : null;
+    for (const id of sidList) {
+      const items = (((window.PAPERS || {}).subjects || {})[id] || {}).items || [];
+      for (const it of items) {
+        if (yr && String(it.y) !== yr) continue;
+        const lbl = paperLabelFromPdf(it.p);
+        if (lbl) labels.add(lbl);
+      }
+    }
+    const ORDER = { "卷一": 1, "卷一甲": 1.1, "卷一乙": 1.2, "卷二": 2 };
+    return head.concat([...labels]
+      .sort((a, b) => (ORDER[a] || 9) - (ORDER[b] || 9) || a.localeCompare(b, "zh-Hant"))
+      .map((p) => ({ value: p, label: p })));
   }
   if (key === "topic") {
     const sid = state.subject === PLACE || state.subject === ALL ? null : state.subject;
@@ -295,7 +335,13 @@ const LANDING_BY_HASH = {
 
 function viewHrefFor(r) {
   if (r.path) return r.path;
+  /* M1／M2 延伸部分冇有獨立卷頁，直接開閱讀器深連結 */
+  if (String(r.id).toLowerCase() === "m1" || String(r.id).toLowerCase() === "m2") {
+    return "/" + (r.hash || "");
+  }
   if (LANDING_BY_HASH[r.hash]) return LANDING_BY_HASH[r.hash];
+  /* 只有 math（必修部分）有靜態落地板；M1 等未有板嘅科目唔好出死鏈（404） */
+  if (r.id !== "math") return null;
   const code = PAPER_CODE[r.paper] || "paper-1";
   const slug = r.lang === "英文" ? `${code}-en` : code;
   return `/${r.id}/${r.year}/${slug}/`;
@@ -314,8 +360,7 @@ function rowHtml(r) {
   const title = en
     ? `DSE ${sn} · ${paperEn} (English)`
     : `文憑試 DSE ${sn} · ${r.paper}（${r.lang}）`;
-  return `
-    <a class="paper-row" href="${href}" title="檢視 ${sn} ${YEAR_LABEL[r.year] || r.year} ${paperLbl}">
+  const rowBody = `
       <span class="paper-year">${YEAR_LABEL[r.year] || r.year}</span>
       <span class="paper-body">
         <span class="paper-tags">
@@ -324,7 +369,11 @@ function rowHtml(r) {
           <span class="tag lang">${esc(langLbl)}</span>
         </span>
         <span class="paper-title">${esc(title)}</span>
-      </span>
+      </span>`;
+  /* 未有落地板（例如 M1 掃描緊）：render 做靜態行，唔好出 404 死鏈 */
+  if (!href) return `<div class="paper-row is-static" title="即將上線">${rowBody}</div>`;
+  return `
+    <a class="paper-row" href="${href}" title="檢視 ${sn} ${YEAR_LABEL[r.year] || r.year} ${paperLbl}">${rowBody}
       <span class="paper-chev" aria-hidden="true"></span>
     </a>`;
 }
@@ -472,6 +521,12 @@ function renderYear() {
   }
   const rows = bankRows.concat(pdfRows)
     .filter((r) => !r.pdf || state.year === PLACE || state.year === ALL || String(r.year) === String(state.year))
+    .filter((r) => {
+      /* 卷別：電子題庫行已由 filteredCatalog 過濾；PDF 行要在這裡按卷別比對 */
+      if (state.paper === PLACE || state.paper === ALL) return true;
+      if (!r.pdf) return true;
+      return paperLabelFromPdf(r.paper) === state.paper;
+    })
     .sort((a, b) => (b.year - a.year) || String(a.name || "").localeCompare(String(b.name || ""), "zh-Hant"));
 
   if (!rows.length) {
@@ -541,11 +596,13 @@ let reelKey = null;
 let reelOpts = [];
 let reelIndex = 0;
 let reelSnapTimer = null;
+let reelTarget = null; /* tap 目標 index：smooth scroll 期間唔准 scroll 事件覆蓋 */
 
 let reelInvoker = null;
 
 function openReel(key, invoker) {
   reelKey = key;
+  reelTarget = null;
   reelInvoker = invoker || null;
   reelOpts = optionsFor(key);
   const cur = key === "topic" ? state.topic : state[key];
@@ -648,13 +705,20 @@ function closeReel() {
   reel.hidden = true;
   document.body.classList.remove("reel-open");
   reelKey = null;
+  reelTarget = null;
   if (reelInvoker) {
     reelInvoker.focus();
     reelInvoker = null;
   }
 }
 
-function highlightReel() {
+function highlightReel(force) {
+  if (!force && reelTarget !== null) {
+    /* 手指／滑鼠剛 tap 某項，smooth scroll 未到位前唔好被舊 scrollTop 覆蓋 */
+    reelIndex = reelTarget;
+    reelWheel.querySelectorAll(".reel-item").forEach((el, n) => el.classList.toggle("on", n === reelIndex));
+    return;
+  }
   const i = Math.round(reelWheel.scrollTop / ITEM_H);
   reelIndex = Math.max(0, Math.min(reelOpts.length - 1, i));
   reelWheel.querySelectorAll(".reel-item").forEach((el, n) => el.classList.toggle("on", n === reelIndex));
@@ -683,12 +747,17 @@ function commitReel() {
 }
 
 reelWheel.addEventListener("scroll", () => {
+  const tgt = reelTarget;
+  if (tgt !== null && Math.abs(reelWheel.scrollTop - tgt * ITEM_H) <= 1.5) {
+    reelTarget = null; /* 已到位，之後交返 scroll 主導 */
+  }
   highlightReel();
   clearTimeout(reelSnapTimer);
   reelSnapTimer = setTimeout(() => {
+    if (reelTarget !== null) return;
     const i = Math.round(reelWheel.scrollTop / ITEM_H);
     reelWheel.scrollTo({ top: i * ITEM_H, behavior: "smooth" });
-    highlightReel();
+    highlightReel(true);
   }, 80);
 });
 
@@ -696,12 +765,15 @@ reelWheel.addEventListener("click", (e) => {
   const item = e.target.closest(".reel-item");
   if (!item) return;
   const i = +item.dataset.i;
-  reelWheel.scrollTo({ top: i * ITEM_H, behavior: "smooth" });
+  reelTarget = i;
   reelIndex = i;
-  highlightReel();
+  reelWheel.querySelectorAll(".reel-item").forEach((el, n) => el.classList.toggle("on", n === i));
+  reelWheel.scrollTo({ top: i * ITEM_H, behavior: "smooth" });
+  /* 保險：smooth scroll 可能唔觸發 scroll（已喺位），400ms 後強制清 flag */
+  setTimeout(() => { reelTarget = null; }, 400);
 });
 
-$("reelDone").addEventListener("click", commitReel);
+$("reelDone").addEventListener("click", () => { reelTarget = null; commitReel(); });
 $("reelCancel").addEventListener("click", closeReel);
 $("reelBackdrop").addEventListener("click", closeReel);
 

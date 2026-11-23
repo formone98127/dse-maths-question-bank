@@ -1,0 +1,519 @@
+{
+  "version": 1,
+  "generated": "2026-11-23",
+  "note": "錯法短標籤目錄；由 distractor／analysis／report 文字規則對上。",
+  "tags": [
+    {
+      "id": "E-DEF",
+      "name": "定義／概念混淆",
+      "count": 231,
+      "examples": [
+        "math-2012-p1-q1",
+        "math-2012-p1-q3",
+        "math-2012-p1-q4",
+        "math-2012-p1-q5",
+        "math-2012-p1-q6"
+      ]
+    },
+    {
+      "id": "E-OTHER",
+      "name": "其他",
+      "count": 136,
+      "examples": [
+        "math-2012-p1-q15",
+        "math-2012-p1-q17",
+        "math-2012-p2-q42",
+        "math-2013-p1-q4",
+        "math-2013-p1-q8"
+      ]
+    },
+    {
+      "id": "E-CALC",
+      "name": "計算粗心",
+      "count": 56,
+      "examples": [
+        "math-2012-p1-q12",
+        "math-2012-p2-q1",
+        "math-2012-p2-q3",
+        "math-2012-p2-q4",
+        "math-2012-p2-q8"
+      ]
+    },
+    {
+      "id": "E-COND",
+      "name": "條件漏讀",
+      "count": 39,
+      "examples": [
+        "math-2012-p2-q3",
+        "math-2012-p2-q5",
+        "math-2012-p2-q7",
+        "math-2012-p2-q10",
+        "math-2012-p2-q14"
+      ]
+    },
+    {
+      "id": "E-GRAPH",
+      "name": "讀圖／圖像錯誤",
+      "count": 28,
+      "examples": [
+        "math-2012-p2-q6",
+        "math-2012-p2-q15",
+        "math-2012-p2-q28",
+        "math-2012-p2-q32",
+        "math-2012-p2-q34"
+      ]
+    },
+    {
+      "id": "E-FORMULA",
+      "name": "公式／定理誤用",
+      "count": 18,
+      "examples": [
+        "math-2012-p1-q2",
+        "math-2012-p1-q13",
+        "math-2012-p2-q4",
+        "math-2012-p2-q12",
+        "math-2012-p2-q15"
+      ]
+    },
+    {
+      "id": "E-COEFF",
+      "name": "係數運算錯誤",
+      "count": 13,
+      "examples": [
+        "math-2012-p2-q1",
+        "math-2012-p2-q2",
+        "math-2012-p2-q16",
+        "math-2012-p2-q17",
+        "math-2012-p2-q31"
+      ]
+    },
+    {
+      "id": "E-GEOM",
+      "name": "幾何關係誤用",
+      "count": 12,
+      "examples": [
+        "math-2012-p1-q8",
+        "math-2012-p2-q16",
+        "math-2012-p2-q20",
+        "math-2012-p2-q41",
+        "math-2013-p1-q13"
+      ]
+    },
+    {
+      "id": "E-SIGN-FLIP",
+      "name": "符號顛倒",
+      "count": 10,
+      "examples": [
+        "math-2012-p2-q23",
+        "math-2012-p2-q38",
+        "math-2012-p2-q42",
+        "math-2025-p2-q2",
+        "math-2025-p2-q3"
+      ]
+    },
+    {
+      "id": "E-INDEX-SCOPE",
+      "name": "指數作用範圍錯",
+      "count": 9,
+      "examples": [
+        "math-2012-p2-q2",
+        "math-2025-p2-q1",
+        "math-2025-p2-q7",
+        "math-2025-p2-q11",
+        "math-2025-p2-q15"
+      ]
+    },
+    {
+      "id": "E-COMPLEMENT",
+      "name": "至少／補集誤用",
+      "count": 9,
+      "examples": [
+        "math-2012-p2-q28",
+        "math-2012-p2-q43",
+        "math-2014-p2-q30",
+        "math-2015-p1-q16",
+        "math-2018-p1-q12"
+      ]
+    },
+    {
+      "id": "E-PERM",
+      "name": "排列組合誤用",
+      "count": 6,
+      "examples": [
+        "math-2025-p2-q42",
+        "math-2025-p2-q43"
+      ]
+    },
+    {
+      "id": "E-UNIT",
+      "name": "單位未統一",
+      "count": 5,
+      "examples": [
+        "math-2012-p2-q11",
+        "math-2012-p2-q14",
+        "math-2012-p2-q35",
+        "math-2014-p1-q8",
+        "math-2016-p1-q11"
+      ]
+    },
+    {
+      "id": "E-ORDER",
+      "name": "比例次序倒轉",
+      "count": 4,
+      "examples": [
+        "math-2012-p2-q9",
+        "math-2025-p2-q8",
+        "math-2025-p2-q11"
+      ]
+    },
+    {
+      "id": "E-SUB",
+      "name": "代入錯誤",
+      "count": 3,
+      "examples": [
+        "math-2012-p2-q3",
+        "math-2025-p2-q1",
+        "math-2025-p2-q12"
+      ]
+    },
+    {
+      "id": "E-INTEREST",
+      "name": "單複利混淆",
+      "count": 3,
+      "examples": [
+        "math-2025-p2-q10"
+      ]
+    },
+    {
+      "id": "E-OTHER",
+      "name": "IV判斷錯誤",
+      "count": 2,
+      "examples": [
+        "math-2012-p2-q25"
+      ]
+    },
+    {
+      "id": "E-OTHER",
+      "name": "對稱軸數量誤解",
+      "count": 2,
+      "examples": [
+        "math-2012-p2-q22"
+      ]
+    },
+    {
+      "id": "E-OTHER",
+      "name": "移項符號錯誤",
+      "count": 2,
+      "examples": [
+        "math-2012-p2-q5",
+        "math-2012-p2-q7"
+      ]
+    },
+    {
+      "id": "E-OTHER",
+      "name": "符號處理錯誤",
+      "count": 2,
+      "examples": [
+        "math-2012-p2-q4",
+        "math-2012-p2-q10"
+      ]
+    },
+    {
+      "id": "E-SIGN-DROP",
+      "name": "負號丟掉",
+      "count": 2,
+      "examples": [
+        "math-2012-p2-q10",
+        "math-2025-p2-q1"
+      ]
+    },
+    {
+      "id": "E-OTHER",
+      "name": "I與II判斷錯誤",
+      "count": 1,
+      "examples": [
+        "math-2012-p2-q25"
+      ]
+    },
+    {
+      "id": "E-OTHER",
+      "name": "三角比反轉",
+      "count": 1,
+      "examples": [
+        "math-2012-p2-q18"
+      ]
+    },
+    {
+      "id": "E-OTHER",
+      "name": "互餘角誤用",
+      "count": 1,
+      "examples": [
+        "math-2012-p2-q18"
+      ]
+    },
+    {
+      "id": "E-OTHER",
+      "name": "交叉相乘後移項錯誤",
+      "count": 1,
+      "examples": [
+        "math-2012-p2-q9"
+      ]
+    },
+    {
+      "id": "E-OTHER",
+      "name": "假設直徑導致直角",
+      "count": 1,
+      "examples": [
+        "math-2012-p2-q20"
+      ]
+    },
+    {
+      "id": "E-OTHER",
+      "name": "全盤否定統計量變化",
+      "count": 1,
+      "examples": [
+        "math-2012-p2-q45"
+      ]
+    },
+    {
+      "id": "E-OTHER",
+      "name": "分母簡化錯誤",
+      "count": 1,
+      "examples": [
+        "math-2012-p2-q27"
+      ]
+    },
+    {
+      "id": "E-OTHER",
+      "name": "分母錯誤",
+      "count": 1,
+      "examples": [
+        "math-2012-p2-q28"
+      ]
+    },
+    {
+      "id": "E-OTHER",
+      "name": "多重識別與指數錯配",
+      "count": 1,
+      "examples": [
+        "math-2012-p2-q33"
+      ]
+    },
+    {
+      "id": "E-OTHER",
+      "name": "審題不清：未注意「第1個圖形」的",
+      "count": 1,
+      "examples": [
+        "math-2012-p2-q12"
+      ]
+    },
+    {
+      "id": "E-OTHER",
+      "name": "展開式符號錯誤",
+      "count": 1,
+      "examples": [
+        "math-2012-p2-q9"
+      ]
+    },
+    {
+      "id": "E-OTHER",
+      "name": "展開時符號處理錯誤",
+      "count": 1,
+      "examples": [
+        "math-2012-p2-q3"
+      ]
+    },
+    {
+      "id": "E-OTHER",
+      "name": "常數求解錯誤",
+      "count": 1,
+      "examples": [
+        "math-2012-p2-q10"
+      ]
+    },
+    {
+      "id": "E-OTHER",
+      "name": "平均數四捨五入誤差",
+      "count": 1,
+      "examples": [
+        "math-2012-p2-q29"
+      ]
+    },
+    {
+      "id": "E-OTHER",
+      "name": "平均數陷阱",
+      "count": 1,
+      "examples": [
+        "math-2012-p2-q8"
+      ]
+    },
+    {
+      "id": "E-OTHER",
+      "name": "平方根近似值取捨不當",
+      "count": 1,
+      "examples": [
+        "math-2012-p2-q40"
+      ]
+    },
+    {
+      "id": "E-OTHER",
+      "name": "弧度轉換或加法錯誤",
+      "count": 1,
+      "examples": [
+        "math-2012-p2-q20"
+      ]
+    },
+    {
+      "id": "E-OTHER",
+      "name": "指數位數錯配",
+      "count": 1,
+      "examples": [
+        "math-2012-p2-q33"
+      ]
+    },
+    {
+      "id": "E-INDEX-ADD",
+      "name": "指數加減混淆",
+      "count": 1,
+      "examples": [
+        "math-2012-p2-q1"
+      ]
+    },
+    {
+      "id": "E-REPLACE",
+      "name": "放回條件混淆",
+      "count": 1,
+      "examples": [
+        "math-2012-p2-q44"
+      ]
+    },
+    {
+      "id": "E-OTHER",
+      "name": "數字識別錯誤",
+      "count": 1,
+      "examples": [
+        "math-2012-p2-q33"
+      ]
+    },
+    {
+      "id": "E-OTHER",
+      "name": "有效數字計數錯誤",
+      "count": 1,
+      "examples": [
+        "math-2012-p2-q13"
+      ]
+    },
+    {
+      "id": "E-OTHER",
+      "name": "未注意問題所求",
+      "count": 1,
+      "examples": [
+        "math-2012-p2-q16"
+      ]
+    },
+    {
+      "id": "E-OTHER",
+      "name": "漏解不等式I",
+      "count": 1,
+      "examples": [
+        "math-2012-p2-q36"
+      ]
+    },
+    {
+      "id": "E-OTHER",
+      "name": "漏解不等式II",
+      "count": 1,
+      "examples": [
+        "math-2012-p2-q36"
+      ]
+    },
+    {
+      "id": "E-OTHER",
+      "name": "漏解不等式III",
+      "count": 1,
+      "examples": [
+        "math-2012-p2-q36"
+      ]
+    },
+    {
+      "id": "E-OTHER",
+      "name": "符號處理失誤",
+      "count": 1,
+      "examples": [
+        "math-2012-p2-q35"
+      ]
+    },
+    {
+      "id": "E-OTHER",
+      "name": "簡單平均誤用",
+      "count": 1,
+      "examples": [
+        "math-2012-p2-q11"
+      ]
+    },
+    {
+      "id": "E-OTHER",
+      "name": "角度判斷正確但半徑代換錯誤",
+      "count": 1,
+      "examples": [
+        "math-2012-p2-q21"
+      ]
+    },
+    {
+      "id": "E-OTHER",
+      "name": "計數錯誤",
+      "count": 1,
+      "examples": [
+        "math-2012-p2-q44"
+      ]
+    },
+    {
+      "id": "E-OTHER",
+      "name": "誤將軌跡視為固定圖形",
+      "count": 1,
+      "examples": [
+        "math-2012-p2-q24"
+      ]
+    },
+    {
+      "id": "E-OTHER",
+      "name": "誤解選言邏輯",
+      "count": 1,
+      "examples": [
+        "math-2012-p2-q7"
+      ]
+    },
+    {
+      "id": "E-OTHER",
+      "name": "誤解點集形狀",
+      "count": 1,
+      "examples": [
+        "math-2012-p2-q24"
+      ]
+    },
+    {
+      "id": "E-OTHER",
+      "name": "過度推論所有不等式皆成立",
+      "count": 1,
+      "examples": [
+        "math-2012-p2-q26"
+      ]
+    },
+    {
+      "id": "E-OTHER",
+      "name": "遺漏除以2",
+      "count": 1,
+      "examples": [
+        "math-2012-p2-q15"
+      ]
+    },
+    {
+      "id": "E-OTHER",
+      "name": "頻率讀取錯誤",
+      "count": 1,
+      "examples": [
+        "math-2012-p2-q29"
+      ]
+    }
+  ]
+}

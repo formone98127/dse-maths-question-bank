@@ -12,10 +12,9 @@
   </defs>
   <circle cx="64" cy="64" r="52" fill="#1a1208" stroke="#f0d278" stroke-width="3"/>
   <circle cx="64" cy="64" r="42" fill="url(#g)" stroke="#fff1b0" stroke-width="2"/>
-  <circle cx="64" cy="64" r="28" fill="#2a1c0c"/>
-  <!-- sword -->
-  <path d="M64 34 L70 56 L64 52 L58 56 Z" fill="url(#blade)"/>
-  <rect x="61" y="50" width="6" height="28" rx="1.5" fill="url(#blade)"/>
-  <rect x="54" y="76" width="20" height="5" rx="1.5" fill="#c9a227"/>
-  <rect x="61.5" y="80" width="5" height="10" rx="1.5" fill="#a8841f"/>
+  <!-- larger sword -->
+  <path d="M64 22 L78 52 L64 46 L50 52 Z" fill="url(#blade)"/>
+  <rect x="57" y="44" width="14" height="42" rx="2" fill="url(#blade)"/>
+  <rect x="44" y="82" width="40" height="10" rx="2" fill="#c9a227"/>
+  <rect x="58" y="90" width="12" height="16" rx="2" fill="#a8841f"/>
 </svg>

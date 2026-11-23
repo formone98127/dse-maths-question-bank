@@ -492,8 +492,8 @@ a:hover {{ text-decoration: underline; }}
           'background-opacity': 1,
           'background-color': 'transparent',
           'border-width': 0,
-          'width': 64,
-          'height': 64,
+          'width': 70,
+          'height': 70,
           'label': 'data(label)',
           'color': '#f4e8c8',
           'text-valign': 'bottom',
@@ -510,7 +510,7 @@ a:hover {{ text-decoration: underline; }}
       }},
       {{
         selector: 'node.unlocked',
-        style: {{ 'background-image': 'assets/node-unlocked.svg' }}
+        style: {{ 'background-image': 'assets/node-unlocked.png' }}
       }},
       {{
         selector: 'node.ready',
@@ -527,9 +527,9 @@ a:hover {{ text-decoration: underline; }}
       {{
         selector: 'node:selected',
         style: {{
-          'background-image': 'assets/node-active.svg',
-          'width': 72,
-          'height': 72,
+          'background-image': 'assets/node-active.png',
+          'width': 76,
+          'height': 76,
           'color': '#ffe9a8',
           'opacity': 1,
         }}

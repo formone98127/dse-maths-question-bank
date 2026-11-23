@@ -51,7 +51,7 @@ def main(write: bool) -> int:
     obj = json.loads(raw[len("window.QB ="):].rstrip().rstrip(";"))
     by_year: dict[str, list] = {}
     for e in obj["questions"]:
-        if e.get("paper") == "Paper 1M":
+        if e.get("paper") == "Paper 1M" and e.get("type") == "題目":
             by_year.setdefault(str(e["year"]), []).append(e)
     for y in YEARS:
         qs = sorted(by_year.get(y, []), key=lambda e: int(e["qno"]))

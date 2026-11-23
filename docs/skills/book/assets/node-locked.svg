@@ -1,16 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
-  <defs>
-    <radialGradient id="ring" cx="50%" cy="40%" r="65%">
-      <stop offset="0%" stop-color="#6a6f78"/>
-      <stop offset="100%" stop-color="#2a2e36"/>
-    </radialGradient>
-  </defs>
-  <!-- shared frame (same sizes as unlocked) -->
   <circle cx="64" cy="64" r="58" fill="#0e1014" stroke="#5a6270" stroke-width="4"/>
-  <circle cx="64" cy="64" r="48" fill="url(#ring)" stroke="#8a93a3" stroke-width="2"/>
+  <circle cx="64" cy="64" r="48" fill="#3a404a" stroke="#5a6270" stroke-width="2"/>
   <circle cx="64" cy="64" r="36" fill="#151820"/>
-  <!-- lock (centered, similar visual weight to sword) -->
-  <rect x="46" y="62" width="36" height="28" rx="4" fill="#c9d0dc"/>
-  <path d="M52 62 V52 a12 12 0 0 1 24 0 v10" fill="none" stroke="#c9d0dc" stroke-width="7" stroke-linecap="round"/>
-  <circle cx="64" cy="74" r="4" fill="#2a2e36"/>
+  <rect x="48" y="58" width="32" height="24" rx="4" fill="#c9d0dc"/>
+  <path d="M52 58 V50 a12 12 0 0 1 24 0 v8" fill="none" stroke="#c9d0dc" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="64" cy="70" r="3.5" fill="#2a2e36"/>
 </svg>

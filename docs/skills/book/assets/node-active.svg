@@ -1,31 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
-  <defs>
-    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#7dffb2" stop-opacity="0.75"/>
-      <stop offset="75%" stop-color="#1f6f5a" stop-opacity="0.25"/>
-      <stop offset="100%" stop-color="#1f6f5a" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="ring" cx="50%" cy="40%" r="65%">
-      <stop offset="0%" stop-color="#b8ffe0"/>
-      <stop offset="55%" stop-color="#2f9b78"/>
-      <stop offset="100%" stop-color="#0f4a3a"/>
-    </radialGradient>
-    <linearGradient id="copper" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#2d5540"/>
-      <stop offset="35%" stop-color="#d8ffe6"/>
-      <stop offset="70%" stop-color="#6fd6b0"/>
-      <stop offset="100%" stop-color="#145a45"/>
-    </linearGradient>
-  </defs>
-  <circle cx="64" cy="64" r="62" fill="url(#glow)"/>
+  <circle cx="64" cy="64" r="62" fill="#7dffb2" opacity="0.22"/>
   <circle cx="64" cy="64" r="58" fill="#071410" stroke="#9dffd0" stroke-width="4"/>
-  <circle cx="64" cy="64" r="48" fill="url(#ring)" stroke="#e9fff5" stroke-width="2"/>
+  <circle cx="64" cy="64" r="48" fill="#2f9b78" stroke="#9dffd0" stroke-width="2"/>
   <circle cx="64" cy="64" r="36" fill="#0b221b"/>
-  <g fill="url(#copper)" stroke="#0b221b" stroke-width="2" stroke-linejoin="round">
-    <path d="M64 22 L74 56 L64 98 L54 56 Z"/>
-    <rect x="46" y="54" width="36" height="10" rx="2"/>
-    <rect x="58" y="62" width="12" height="18" rx="2"/>
-    <circle cx="64" cy="86" r="8"/>
-  </g>
-  <path d="M64 28 L64 90" stroke="#f4fff9" stroke-width="2" stroke-linecap="round" opacity="0.75"/>
+  <path d="M46 66 L58 78 L86 48" fill="none" stroke="#e9fff5" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

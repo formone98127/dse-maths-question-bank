@@ -876,4 +876,6 @@
   <url><loc>https://hkdse.exampaper.cloud/m1/2024/paper-1-en/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://hkdse.exampaper.cloud/m1/2025/paper-1-en/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://hkdse.exampaper.cloud/m1/PP/paper-1-en/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://hkdse.exampaper.cloud/skills/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://hkdse.exampaper.cloud/skills/2012/paper-2/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>

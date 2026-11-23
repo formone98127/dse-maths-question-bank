@@ -10,10 +10,18 @@
       <stop offset="55%" stop-color="#2f9b78"/>
       <stop offset="100%" stop-color="#0f4a3a"/>
     </radialGradient>
+    <linearGradient id="blade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4fff9"/>
+      <stop offset="100%" stop-color="#b8e0cc"/>
+    </linearGradient>
   </defs>
   <circle cx="64" cy="64" r="60" fill="url(#glow)"/>
   <circle cx="64" cy="64" r="48" fill="#071410" stroke="#9dffd0" stroke-width="3"/>
   <circle cx="64" cy="64" r="38" fill="url(#g)" stroke="#e9fff5" stroke-width="2"/>
-  <circle cx="64" cy="64" r="24" fill="#0b221b"/>
-  <path d="M50 66 L58 74 L80 50" fill="none" stroke="#e9fff5" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="64" cy="64" r="26" fill="#0b221b"/>
+  <!-- sword -->
+  <path d="M64 36 L70 56 L64 52 L58 56 Z" fill="url(#blade)"/>
+  <rect x="61" y="50" width="6" height="26" rx="1.5" fill="url(#blade)"/>
+  <rect x="54" y="74" width="20" height="5" rx="1.5" fill="#9dffd0"/>
+  <rect x="61.5" y="78" width="5" height="10" rx="1.5" fill="#6fd6b0"/>
 </svg>

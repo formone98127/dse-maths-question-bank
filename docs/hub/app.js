@@ -339,16 +339,14 @@ const LANDING_BY_HASH = {
 
 function viewHrefFor(r) {
   if (r.path) return r.path;
-  /* M1／M2 延伸部分冇有獨立卷頁，直接開閱讀器深連結 */
-  if (String(r.id).toLowerCase() === "m1" || String(r.id).toLowerCase() === "m2") {
+  /* M2 未有獨立卷頁 → 閱讀器深連結；M1 已有 /m1/<year>/paper-1-en/ 卷頁 */
+  if (String(r.id).toLowerCase() === "m1") {
+    return `/m1/${encodeURIComponent(String(r.year))}/paper-1-en/`;
+  }
+  if (String(r.id).toLowerCase() === "m2") {
     return "/" + (r.hash || "");
   }
   if (LANDING_BY_HASH[r.hash]) return LANDING_BY_HASH[r.hash];
-  /* M1 未有靜態落地板 → 用 reader 深連結（hash 由 data.js 直接渲染，唔會 404） */
-  if (r.id === "m1") {
-    const y = String(r.year);
-    return `/m1/${encodeURIComponent(y)}/paper-1-en/`;
-  }
   /* 其他未有落地板嘅科目唔好出死鏈 */
   if (r.id !== "math") return null;
   const code = PAPER_CODE[r.paper] || "paper-1";

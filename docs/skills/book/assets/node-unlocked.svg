@@ -1,27 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
-  <defs>
-    <radialGradient id="ring" cx="50%" cy="40%" r="65%">
-      <stop offset="0%" stop-color="#ffe9a8"/>
-      <stop offset="55%" stop-color="#d4a017"/>
-      <stop offset="100%" stop-color="#7a4e08"/>
-    </radialGradient>
-    <linearGradient id="copper" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#8a4a16"/>
-      <stop offset="35%" stop-color="#ffd27a"/>
-      <stop offset="70%" stop-color="#e09a3a"/>
-      <stop offset="100%" stop-color="#6a3810"/>
-    </linearGradient>
-  </defs>
-  <!-- frame -->
   <circle cx="64" cy="64" r="58" fill="#1a1208" stroke="#f0d278" stroke-width="4"/>
-  <circle cx="64" cy="64" r="48" fill="url(#ring)" stroke="#fff1b0" stroke-width="2"/>
+  <circle cx="64" cy="64" r="48" fill="#d4a017" stroke="#f0d278" stroke-width="2"/>
   <circle cx="64" cy="64" r="36" fill="#24180c"/>
-  <!-- symbolic copper sword -->
-  <g fill="url(#copper)" stroke="#5a300c" stroke-width="2" stroke-linejoin="round">
-    <path d="M64 22 L74 56 L64 98 L54 56 Z"/>
-    <rect x="46" y="54" width="36" height="10" rx="2"/>
-    <rect x="58" y="62" width="12" height="18" rx="2"/>
-    <circle cx="64" cy="86" r="8"/>
-  </g>
-  <path d="M64 28 L64 90" stroke="#fff3c8" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+  <path d="M46 66 L58 78 L86 48" fill="none" stroke="#ffe9a8" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

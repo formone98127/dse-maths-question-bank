@@ -5,43 +5,44 @@
       <stop offset="55%" stop-color="#d4a017"/>
       <stop offset="100%" stop-color="#7a4e08"/>
     </radialGradient>
-    <linearGradient id="steel" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#8a9098"/>
-      <stop offset="22%" stop-color="#f2f4f7"/>
-      <stop offset="48%" stop-color="#d5d9e0"/>
-      <stop offset="72%" stop-color="#f7f8fa"/>
-      <stop offset="100%" stop-color="#6e757e"/>
+    <linearGradient id="copper" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8a4a16"/>
+      <stop offset="18%" stop-color="#f0b45a"/>
+      <stop offset="42%" stop-color="#ffd78a"/>
+      <stop offset="58%" stop-color="#e09a3a"/>
+      <stop offset="82%" stop-color="#ffcc70"/>
+      <stop offset="100%" stop-color="#6a3810"/>
     </linearGradient>
-    <linearGradient id="steelEdge" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#eceff3"/>
-      <stop offset="100%" stop-color="#9aa1ab"/>
+    <linearGradient id="copperDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffd27a"/>
+      <stop offset="100%" stop-color="#a85c18"/>
     </linearGradient>
-    <linearGradient id="bronze" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#e8c36a"/>
-      <stop offset="45%" stop-color="#b8892a"/>
-      <stop offset="100%" stop-color="#6d4a12"/>
+    <linearGradient id="guard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffe2a0"/>
+      <stop offset="50%" stop-color="#d4892a"/>
+      <stop offset="100%" stop-color="#7a450f"/>
     </linearGradient>
-    <linearGradient id="grip" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#3a2414"/>
-      <stop offset="50%" stop-color="#6b4423"/>
-      <stop offset="100%" stop-color="#2a180e"/>
-    </linearGradient>
-    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="1" stdDeviation="1.2" flood-color="#000" flood-opacity="0.45"/>
+    <filter id="soft" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="1.4" flood-color="#4a2808" flood-opacity="0.55"/>
     </filter>
   </defs>
   <circle cx="64" cy="64" r="58" fill="#1a1208" stroke="#f0d278" stroke-width="4"/>
   <circle cx="64" cy="64" r="48" fill="url(#ring)" stroke="#fff1b0" stroke-width="2"/>
   <circle cx="64" cy="64" r="36" fill="#24180c"/>
   <g filter="url(#soft)">
-    <path d="M64 18 L72 54 L64 100 L56 54 Z" fill="url(#steel)"/>
-    <path d="M64 22 L68.5 54 L64 92 L59.5 54 Z" fill="url(#steelEdge)" opacity="0.9"/>
-    <path d="M64 20 L64 88" stroke="#ffffff" stroke-opacity="0.55" stroke-width="1.2"/>
-    <path d="M42 54 C48 50, 56 52, 64 52 C72 52, 80 50, 86 54 L84 60 C76 56, 70 58, 64 58 C58 58, 52 56, 44 60 Z" fill="url(#bronze)"/>
-    <rect x="43" y="53" width="42" height="3" rx="1" fill="#f0d278" opacity="0.35"/>
-    <rect x="58" y="58" width="12" height="22" rx="3" fill="url(#grip)"/>
-    <path d="M59 62 H69 M59 67 H69 M59 72 H69" stroke="#c9a227" stroke-width="1" opacity="0.55"/>
-    <circle cx="64" cy="84" r="7" fill="url(#bronze)"/>
-    <circle cx="64" cy="84" r="3.2" fill="#f0d278" opacity="0.55"/>
+    <!-- anime elongated blade, full copper -->
+    <path d="M64 14 L78 58 L64 104 L50 58 Z" fill="url(#copper)"/>
+    <path d="M64 18 L71 58 L64 96 L57 58 Z" fill="url(#copperDark)" opacity="0.95"/>
+    <path d="M64 16 L64 94" stroke="#fff3c8" stroke-opacity="0.75" stroke-width="2"/>
+    <path d="M60 30 L64 26 L68 30" fill="none" stroke="#fff6d8" stroke-width="1.6" stroke-linecap="round"/>
+    <!-- winged anime guard -->
+    <path d="M34 56 C46 48, 54 52, 64 52 C74 52, 82 48, 94 56 L88 66 C78 58, 70 62, 64 62 C58 62, 50 58, 40 66 Z" fill="url(#guard)"/>
+    <path d="M38 58 C48 52, 56 56, 64 56 C72 56, 80 52, 90 58" fill="none" stroke="#ffe9a8" stroke-width="1.5" opacity="0.7"/>
+    <!-- copper grip -->
+    <rect x="57" y="60" width="14" height="24" rx="4" fill="url(#guard)"/>
+    <path d="M58 65 H70 M58 71 H70 M58 77 H70" stroke="#5a300c" stroke-width="1.4" opacity="0.45"/>
+    <!-- diamond pommel -->
+    <path d="M64 82 L74 92 L64 106 L54 92 Z" fill="url(#guard)"/>
+    <path d="M64 86 L70 92 L64 100 L58 92 Z" fill="#ffe9a8" opacity="0.55"/>
   </g>
 </svg>

@@ -1,0 +1,32 @@
+12. 
+c 
+G
+X 
+X 。
+!_ 
+A
+I 
+＼ B
+D 
+Figure 6 
+Figure 6 shows an acute ah 芝!ed scalene triangle ABC , where D is the mid-point of AB , G is the centroid and 0
+'
+'
+ 
+is the c1rcumcentre. Let OA = a 
+OB=b and OC=c . 
+(a)
+Express AG in terms of a, b and c.
+(b)
+It is given that E is a point on AB such that CE is an altitude. Extend OG to meet CE at F.
+(i)
+Prove thatiDOG -iCFG .
+Hence find FG : GO .
+(ii)
+Show that AF = b + c .
+Hence prove that F is the orthocentre of MBC .
+(3 marks) 
+(9 marks) 
+2012-DSE-MATH-EP(MZ)--13 
+30 
+更多試卷歡迎瀏覽 http://dsepp.com

@@ -1,0 +1,21 @@
+FORMULAS FOR REFERENCE
+
+$$\sin(A \pm B) = \sin A \cos B \pm \cos A \sin B$$
+$$\cos(A \pm B) = \cos A \cos B \mp \sin A \sin B$$
+$$\tan(A \pm B) = \frac{\tan A \pm \tan B}{1 \mp \tan A \tan B}$$
+$$2\sin A \cos B = \sin(A + B) + \sin(A - B)$$
+$$2\cos A \cos B = \cos(A + B) + \cos(A - B)$
+$$2\sin A \sin B = \cos(A - B) - \cos(A + B)$$
+
+$$\sin A + \sin B = 2\sin \frac{A+B}{2} \cos \frac{A-B}{2}$$
+$$\sin A - \sin B = 2\cos \frac{A+B}{2} \sin \frac{A-B}{2}$$
+$$\cos A + \cos B = 2\cos \frac{A+B}{2} \cos \frac{A-B}{2}$$
+$$\cos A - \cos B = -2\sin \frac{A+B}{2} \sin \frac{A-B}{2}$$
+
+SECTION A (50 marks)
+
+1. Let $f(x) = \frac{10x}{7 + 3x^2}$. Prove that $f(1 + h) - f(1) = \frac{4h - 3h^2}{10 + 6h + 3h^2}$. Hence, find $f'(1)$ from first principles.
+
+(4 marks)
+
+Answers written in the margins will not be marked.

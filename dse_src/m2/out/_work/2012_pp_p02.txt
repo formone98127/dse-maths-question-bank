@@ -1,0 +1,28 @@
+FORMULAS FOR REFERENCE
+
+$$\sin(A \pm B) = \sin A \cos B \pm \cos A \sin B$$
+$$\cos(A \pm B) = \cos A \cos B \mp \sin A \sin B$$
+$$\tan(A \pm B) = \frac{\tan A \pm \tan B}{1 \mp \tan A \tan B}$$
+$$2 \sin A \cos B = \sin(A + B) + \sin(A - B)$$
+$$2 \cos A \cos B = \cos(A + B) + \cos(A - B)$$
+$$2 \sin A \sin B = \cos(A - B) - \cos(A + B)$$
+
+$$\sin A + \sin B = 2 \sin \frac{A + B}{2} \cos \frac{A - B}{2}$$
+$$\sin A - \sin B = 2 \cos \frac{A + B}{2} \sin \frac{A - B}{2}$$
+$$\cos A + \cos B = 2 \cos \frac{A + B}{2} \cos \frac{A - B}{2}$$
+$$\cos A - \cos B = -2 \sin \frac{A + B}{2} \sin \frac{A - B}{2}$$
+
+Section A (50 marks)
+In this section, write your answers in the spaces provided in this Question-Answer Book.
+
+1. Let $f(x) = e^{2x}$. Find $f'(0)$ from first principles.
+
+(3 marks)
+
+2. It is given that
+$$(1 + ax)^n = 1 + 6x + 16x^2 + \text{terms involving higher powers of } x,$$
+where $n$ is a positive integer and $a$ is a constant. Find the values of $a$ and $n$.
+
+(5 marks)
+
+Answers written in the margins will not be marked.

@@ -96,10 +96,10 @@
    13,
    14
   ],
-  "marks": 9,
+  "marks": 12,
   "paper": 12,
-  "ok": false,
-  "method": "小計之和"
+  "ok": true,
+  "method": "marks 欄逐格"
  },
  {
   "q": 11,

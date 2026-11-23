@@ -1,0 +1,10 @@
+$F = -5i - 12j + tk$, where $O$ is the origin and $t$ is
+
+(3 marks)
+
+(2 marks)
+
+(2 marks)
+
+$C$ by $\Pi$. It is given that $P, Q$ and $R$ are points
+and $\overrightarrow{OR} = rk$. Let $D$ be the

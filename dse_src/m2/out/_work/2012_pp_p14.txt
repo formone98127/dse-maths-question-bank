@@ -1,0 +1,73 @@
+13.
+(a) (i) 
+Suppose
+2冗
+-l+cos — 
+5
+一冗
+冗
+tanu = 
+, where -<u <一．
+. 2冗
+2
+2 
+sm— 
+一冗
+Show that u = - . 
+5 
+(ii)
+Suppose
+2冗
+l+cos 一
+tanv= 
+5 
+sin竺
+．
+5 
+-,r
+冗
+Find v , where -< v < - . 
+2 
+2 
+(4 marks) 
+2冗
+(b)
+(i) 
+Express x2 + 2xcos-+ 1 in the form (x+a)2 +b2 , where a and b are constants.
+5 
+(ii)
+Evaluate
+·
+ 
+dx
+ 
+l
+十
+王
+52
+ 
+瓦一
+5
+oScx
+n.
+1S
+2
+ 
+十2
+xA
+L
+(6 marks) 
+. 7冗
+(c)
+Evaluate f
+sm了
+dx . 
+I 
+2
+冧
+x +2xcos —-+1 
+5 
+(3 marks) 
+2012-DSE-MATH-EP(M2)-14 
+31 
+更多試卷歡迎瀏覽 http://dsepp.com

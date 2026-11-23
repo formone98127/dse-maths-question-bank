@@ -1,0 +1,9 @@
+11. Let $M = \begin{pmatrix} 2 & 7 \\ -1 & -6 \end{pmatrix}$. Denote the $2 \times 2$ identity matrix by $I$.
+
+(a) Find a pair of real numbers $a$ and $b$ such that $M^2 = aM + bI$. (3 marks)
+
+(b) Prove that $6M^n = (1 - (-5)^n)M + (5 + (-5)^n)I$ for all positive integers $n$. (4 marks)
+
+(c) Does there exist a pair of $2 \times 2$ real matrices $A$ and $B$ such that $(M^n)^{-1} = A + \frac{1}{(-5)^n}B$ for all positive integers $n$? Explain your answer. (5 marks)
+
+Answers written in the margins will not be marked.

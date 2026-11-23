@@ -1,0 +1,28 @@
+14.
+Consider the curve r: y = k;xP , where k > 0 , p > O . In Figure 7, the tangent to r at A(a, ka勺cuts the
+x-axis at B(-a, 0) , where a > 0 .
+y 
+x
+ 
+Figure 7 
+1 
+(a)
+Show that p =- .
+2 
+(3 markrs) 
+(b)
+Suppose that a= l . As shown in Figure 8, the circle C, with radius 2 and centre on the y-axis, touches 「
+at point A.
+x
+ 
+Figure 8 
+(i)
+Show that k = - .
+2✓3 
+(ii)
+Find the area of the shaded region bounded by r , C and the y-axis.
+(9 marks) 
+ENDOFPAPER 
+2012-DSE-MATH-EP(M2)-15 
+32 
+更多試卷歡迎瀏覽 http://dsepp.com

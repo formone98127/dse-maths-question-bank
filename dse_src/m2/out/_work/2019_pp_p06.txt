@@ -1,0 +1,7 @@
+5. (a) Using mathematical induction, prove that $\sum_{k=n}^{2n} \frac{1}{k(k+1)} = \frac{n+1}{n(2n+1)}$ for all positive integers $n$.
+
+(b) Using (a), evaluate $\sum_{k=50}^{200} \frac{1}{k(k+1)}$.
+
+(7 marks)
+
+Answers written in the margins will not be marked.

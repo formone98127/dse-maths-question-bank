@@ -1,0 +1,9 @@
+3. A researcher performs an experiment to study the rate of change of the volume of liquid $X$ in a vessel. The experiment lasts for 24 hours. At the start of the experiment, the vessel contains $580 \text{ cm}^3$ of liquid $X$. The researcher finds that during the experiment, $\frac{\text{d}V}{\text{d}t} = -2t$, where $V \text{ cm}^3$ is the volume of liquid $X$ in the vessel and $t$ is the number of hours elapsed since the start of the experiment.
+
+(a) The researcher claims that the vessel contains some liquid $X$ at the end of the experiment. Is the claim correct? Explain your answer.
+
+(b) It is given that $V = h^2 + 24h$, where $h \text{ cm}$ is the depth of liquid $X$ in the vessel. Find the value of $\frac{\text{d}h}{\text{d}t}$ when $t = 18$.
+
+(6 marks)
+
+Answers written in the margins will not be marked.

@@ -1,0 +1,92 @@
+[
+ {
+  "file": "2012_pp",
+  "page": 1,
+  "method": "text",
+  "chars": 1907
+ },
+ {
+  "file": "2012_pp",
+  "page": 2,
+  "method": "glm@200",
+  "chars": 1035
+ },
+ {
+  "file": "2012_pp",
+  "page": 3,
+  "method": "glm@200",
+  "chars": 167
+ },
+ {
+  "file": "2012_pp",
+  "page": 4,
+  "method": "glm@200",
+  "chars": 342
+ },
+ {
+  "file": "2012_pp",
+  "page": 5,
+  "method": "glm@200",
+  "chars": 167
+ },
+ {
+  "file": "2012_pp",
+  "page": 6,
+  "method": "glm@200",
+  "chars": 1045
+ },
+ {
+  "file": "2012_pp",
+  "page": 7,
+  "method": "glm@200",
+  "chars": 167
+ },
+ {
+  "file": "2012_pp",
+  "page": 8,
+  "method": "glm@200",
+  "chars": 676
+ },
+ {
+  "file": "2012_pp",
+  "page": 9,
+  "method": "glm@200",
+  "chars": 129
+ },
+ {
+  "file": "2012_pp",
+  "page": 10,
+  "method": "glm@200",
+  "chars": 648
+ },
+ {
+  "file": "2012_pp",
+  "page": 11,
+  "method": "glm@200",
+  "chars": 130
+ },
+ {
+  "file": "2012_pp",
+  "page": 12,
+  "method": "text",
+  "chars": 496
+ },
+ {
+  "file": "2012_pp",
+  "page": 13,
+  "method": "text",
+  "chars": 546
+ },
+ {
+  "file": "2012_pp",
+  "page": 14,
+  "method": "text",
+  "chars": 484
+ },
+ {
+  "file": "2012_pp",
+  "page": 15,
+  "method": "text",
+  "chars": 513
+ }
+]

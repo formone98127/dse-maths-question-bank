@@ -25,7 +25,7 @@ $m = -3$
 ## 第 2 題  <!-- 頁 [4]｜OK（單一小計） -->
 
 Subtotals: (5)
-Marks: 1 1 1 1 1
+Marks: 1 1 1 1 1 1
 
 2. (a) $f\left(\frac{\pi}{4}+h\right)-f\left(\frac{\pi}{4}\right)$
 $= \frac{2\left(\frac{\pi}{4}+h\right)}{\tan\left(\frac{\pi}{4}+h\right)}-\frac{2\left(\frac{\pi}{4}\right)}{\tan\left(\frac{\pi}{4}\right)}$
@@ -97,8 +97,8 @@ Thus, k = 0.
 
 ## 第 5 題  <!-- 頁 [8]｜OK（單一小計） -->
 
-Subtotals: (9) (6)
-Marks: 1 1 1 1
+Subtotals: (6)
+Marks: 1 1 1 1 1 1
 
 5. (a) Note that $\sum_{k=1}^{1} (-1)^k k^2 (k^2 - 1) = (-1)^1 (1)^2 (1^2 - 1) = 0$ and $\frac{(-1)^1 (1 - 1) (1 + 1) (1 + 2)}{2} = 0$. Therefore, the statement is true for $n = 1$.
 Assume that $\sum_{k=1}^{m} (-1)^k k^2 (k^2 - 1) = \frac{(-1)^m (m - 1) m (m + 1) (m + 2)}{2}$, where $m$ is a positive integer.
@@ -185,7 +185,7 @@ So, $\frac{dA}{dt}$ attains its maximum value when $t = \ln \frac{6}{5}$. Thus, 
 ## 第 9 題  <!-- 頁 [12]｜OK（單一小計） -->
 
 Subtotals: (8)
-Marks: 1 1 1 1 1 1
+Marks: 1 1 1 1 1 1 1
 
 9. (a) Let $x = \tan \theta$.
 So, we have $\frac{dx}{d\theta} = \sec^2 \theta$.
@@ -205,10 +205,10 @@ $$= \frac{\pi}{\sqrt{3}} \int_0^{\sqrt{3}} \frac{1}{(1+y^2)^2} dy$$
 $$= \frac{\pi}{\sqrt{3}} \left[ \frac{1}{2} \tan^{-1} y + \frac{y}{2(1+y^2)} \right]_0^{\sqrt{3}}$$
 $$= \frac{\sqrt{3} \pi^2}{18} + \frac{\pi}{8}$$
 
-## 第 10 題  <!-- 頁 [13, 14]｜⚠ 小計之和 9 ≠ 12 -->
+## 第 10 題  <!-- 頁 [13, 14]｜OK（marks 欄逐格） -->
 
 Subtotals: (2) (2) (1) (4)
-Marks: 1 1 1 1 1 1
+Marks: 1 1 1 1 1 1 1
 
 10. (a) f(x)
 $$= \frac{x^3+25x}{x^2+3}\\= x+\frac{22x}{x^2+3}$$
@@ -331,4 +331,4 @@ $= \frac{1}{3}\left(\frac{143\sqrt{6}}{64}\right)\sqrt{\left(\frac{-11}{3}\right
 $= \frac{1573}{192}$
 
 
-**合計 97 / 100**
+**合計 100 / 100**

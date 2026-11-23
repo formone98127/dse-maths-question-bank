@@ -1,0 +1,15 @@
+6. Consider the system of linear equations in real variables $x, y, z$
+
+$$(E): \begin{cases} x - 2y - 2z = \beta \\ 5x + \alpha y + \alpha z = 5\beta, \text{ where } \alpha, \beta \in \mathbb{R}. \\ 7x + (\alpha - 3)y + (2\alpha + 1)z = 8\beta \end{cases}$$
+
+(a) Assume that $(E)$ has a unique solution.
+
+(i) Find the range of values of $\alpha$.
+
+(ii) Express $y$ in terms of $\alpha$ and $\beta$.
+
+(b) Assume that $\alpha = -4$. If $(E)$ is inconsistent, find the range of values of $\beta$.
+
+(7 marks)
+
+Answers written in the margins will not be marked.

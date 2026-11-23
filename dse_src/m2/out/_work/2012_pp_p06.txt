@@ -1,0 +1,21 @@
+5. Find the minimum point(s) and asymptote(s) of the graph of $y = \frac{x^2 + x + 1}{x + 1}$.
+
+(6 marks)
+
+6.
+
+![Figure 1](image1.png) ![Figure 2](image2.png)
+
+A frustum of height $H$ is made by cutting off a right circular cone of base radius $r$ from a right circular cone of base radius $R$ (see Figure 1). It is given that the volume of the frustum is $\frac{\pi}{3} H (r^2 + r R + R^2)$.
+
+An empty glass is in the form of an inverted frustum described above with height 10 cm, the radii of the rim and the base 4 cm and 3 cm respectively. Water is being poured into the glass. Let $h$ cm ($0 \leq h \leq 10$) be the depth of the water inside the glass at time $t$ (see Figure 2).
+
+(a) Show that the volume $V$ cm$^3$ of water inside the glass at time $t$ is given by
+
+$$V = \frac{\pi}{300} (h^3 + 90h^2 + 2700h).$$
+
+(b) If the volume of water in the glass is increasing at the rate $7\pi$ cm$^3$s$^{-1}$, find the rate of increase of depth of water at the instant when $h = 5$.
+
+(6 marks)
+
+Answers written in the margins will not be marked.

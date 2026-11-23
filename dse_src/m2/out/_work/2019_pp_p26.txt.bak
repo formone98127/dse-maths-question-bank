@@ -1,0 +1,19 @@
+12. Let $\overrightarrow{OA} = \mathbf{i} - 4\mathbf{j} + 2\mathbf{k}$, $\overrightarrow{OB} = -5\mathbf{i} - 4\mathbf{j} + 8\mathbf{k}$ and $\overrightarrow{OC} = -5\mathbf{i} - 12\mathbf{j} + t\mathbf{k}$, where $O$ is the origin and $t$ is a constant. It is given that $|\overrightarrow{AC}| = |\overrightarrow{BC}|$.
+
+(a) Find $t$.
+
+(b) Find $\overrightarrow{AB} \times \overrightarrow{AC}$.
+
+(c) Find the volume of the pyramid $OABC$.
+
+(d) Denote the plane which contains $A, B$ and $C$ by $\Pi$. It is given that $P, Q$ and $R$ are points lying on $\Pi$ such that $\overrightarrow{OP} = p\mathbf{i}$, $\overrightarrow{OQ} = q\mathbf{j}$ and $\overrightarrow{OR} = r\mathbf{k}$. Let $D$ be the projection of $O$ on $\Pi$.
+
+(i) Prove that $pqr \neq 0$.
+
+(ii) Find $\overrightarrow{OD}$.
+
+(iii) Let $E$ be a point such that $\overrightarrow{OE} = \frac{1}{p}\mathbf{i} + \frac{1}{q}\mathbf{j} + \frac{1}{r}\mathbf{k}$. Describe the geometric relationship between $D, E$ and $O$. Explain your answer.
+
+(6 marks)
+
+Answers written in the margins will not be marked.

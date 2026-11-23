@@ -1,0 +1,31 @@
+Section B (50 marks) 
+In this section, write your answers in the DSE(B) answer book. 
+11.
+(a) Solve the equation
+11 - X 
+4 I 
+= 0 --------------------------------- (*) .
+2 
+3-x 
+a 
+C 
+(b)
+Let x1, x2
+尪<x2) be the roots of (*). Let P = (b 』. It is given that
+〔；：〕〔：〕=x1 〔:〕，〔］］〕〔］〕=X2 〔［〕
+and IPI =1
+where a , b and c are constants. 
+(i)
+Find P.
+1 4 
+(ii)
+Evaluate r1(2 」P.
+1 4 
+(iii) Using (b)(ii), evaluate (〕
+2 3 
+2012-DSE-MATH-EP(M2}-12 
+12 
+29 
+(2 marks) 
+(11 marks) 
+更多試卷歡迎瀏覽 http://dsepp.com

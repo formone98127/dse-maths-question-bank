@@ -1,0 +1,28 @@
+7.
+
+Figure 3 shows a parallelepiped $OADBECFG$. Let $\overrightarrow{OA} = 6i + 2j - k$, $\overrightarrow{OB} = 2i + j$ and $\overrightarrow{OC} = 5i - j + 2k$.
+
+(a) Find the area of the parallelogram $OADB$.
+
+(b) Find the distance between point $C$ and the plane $OADB$.
+
+(5 marks)
+
+8. (a) Solve the following system of linear equations:
+
+$$\begin{cases}
+x + y + z = 0 \\
+2x - y + 5z = 6
+\end{cases}$$
+
+(b) Using (a), or otherwise, solve the following system of linear equations:
+
+$$\begin{cases}
+x + y + z = 0 \\
+2x - y + 5z = 6, \text{ where } \lambda \text{ is a constant.}
+x - y + \lambda z = 4
+\end{cases}$$
+
+(5 marks)
+
+Answers written in the margins will not be marked.

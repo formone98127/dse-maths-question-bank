@@ -1,0 +1,9 @@
+3. Prove, by mathematical induction, that for all positive integers $n$,
+$$1 \times 2 + 2 \times 5 + 3 \times 8 + \cdots + n(3n - 1) = n^2(n + 1).$$
+(5 marks)
+
+4. (a) Find $\int \frac{x+1}{x} \, dx$.
+(b) Using the substitution $u = x^2 - 1$, find $\int \frac{x^3}{x^2 - 1} \, dx$.
+(5 marks)
+
+Answers written in the margins will not be marked.

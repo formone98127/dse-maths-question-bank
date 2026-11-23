@@ -1,0 +1,13 @@
+8. Let $h(x)$ be a continuous function defined on $\mathbb{R}^+$, where $\mathbb{R}^+$ is the set of positive real numbers. It is given that $h'(x) = \frac{2x^2 - 7x + 8}{x}$ for all $x > 0$.
+
+(a) Is $h(x)$ an increasing function? Explain your answer.
+
+(b) Denote the curve $y = h(x)$ by $H$. It is given that $H$ passes through the point $(1, 3)$. Find
+
+(i) the equation of $H$,
+
+(ii) the point(s) of inflexion of $H$.
+
+(8 marks)
+
+Answers written in the margins will not be marked.

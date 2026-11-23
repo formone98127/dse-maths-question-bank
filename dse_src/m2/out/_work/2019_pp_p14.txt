@@ -1,0 +1,19 @@
+SECTION B (50 marks)
+
+9. Consider the curve $\Gamma: y = \frac{1}{3}\sqrt{12 - x^2}$, where $0 < x < 2\sqrt{3}$. Denote the tangent to $\Gamma$ at $x = 3$ by $L$.
+
+(a) Find the equation of $L$.
+
+(3 marks)
+
+(b) Let $C$ be the curve $y = \sqrt{4 - x^2}$, where $0 < x < 2$. It is given that $L$ is a tangent to $C$. Find
+
+(i) the point(s) of contact of $L$ and $C$;
+
+(ii) the point(s) of intersection of $C$ and $\Gamma$;
+
+(iii) the area of the region bounded by $L$, $C$ and $\Gamma$.
+
+(9 marks)
+
+Answers written in the margins will not be marked.

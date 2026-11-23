@@ -1,0 +1,7 @@
+7. (a) Using integration by parts, find $\int e^x \sin \pi x \, dx$.
+
+(b) Using integration by substitution, evaluate $\int_0^3 e^{3-x} \sin \pi x \, dx$.
+
+(7 marks)
+
+Answers written in the margins will not be marked.

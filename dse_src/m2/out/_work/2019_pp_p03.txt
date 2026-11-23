@@ -1,0 +1,9 @@
+2. Let $P(x) = \begin{vmatrix} x + \lambda & 1 & 2 \\ 0 & (x + \lambda)^2 & 3 \\ 4 & 5 & (x + \lambda)^3 \end{vmatrix}$, where $\lambda \in \mathbb{R}$. It is given that the coefficient of $x^3$ in the expansion of $P(x)$ is 160. Find
+
+(a) $\lambda$,
+
+(b) $P'(0)$.
+
+(5 marks)
+
+Answers written in the margins will not be marked.

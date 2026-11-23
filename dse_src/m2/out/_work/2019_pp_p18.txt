@@ -1,0 +1,9 @@
+10. (a) Let $0 \leq x \leq \frac{\pi}{4}$. Prove that $\frac{1}{2 + \cos 2x} = \frac{\sec^2 x}{2 + \sec^2 x}$. (1 mark)
+
+(b) Evaluate $\int_0^{\frac{\pi}{4}} \frac{1}{2 + \cos 2x} \, dx$. (3 marks)
+
+(c) Let $f(x)$ be a continuous function defined on $\mathbb{R}$ such that $f(-x) = -f(x)$ for all $x \in \mathbb{R}$. Prove that $\int_{-a}^{a} f(x) \ln(1 + e^x) \, dx = \int_0^a x f(x) \, dx$ for any $a \in \mathbb{R}$. (4 marks)
+
+(d) Evaluate $\int_{\frac{-\pi}{4}}^{\frac{\pi}{4}} \frac{\sin 2x}{(2 + \cos 2x)^2} \ln(1 + e^x) \, dx$. (5 marks)
+
+Answers written in the margins will not be marked.

@@ -10,29 +10,25 @@
       <stop offset="55%" stop-color="#2f9b78"/>
       <stop offset="100%" stop-color="#0f4a3a"/>
     </radialGradient>
-    <linearGradient id="steel" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#7a9090"/>
-      <stop offset="22%" stop-color="#eef8f4"/>
-      <stop offset="48%" stop-color="#cfe3db"/>
-      <stop offset="72%" stop-color="#f4fff9"/>
-      <stop offset="100%" stop-color="#5f7570"/>
+    <linearGradient id="copper" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3f6a4e"/>
+      <stop offset="18%" stop-color="#b6e6c4"/>
+      <stop offset="42%" stop-color="#e7fff0"/>
+      <stop offset="58%" stop-color="#8fd4a8"/>
+      <stop offset="82%" stop-color="#d8ffe6"/>
+      <stop offset="100%" stop-color="#2d5540"/>
     </linearGradient>
-    <linearGradient id="steelEdge" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="copperDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d9ffe8"/>
+      <stop offset="100%" stop-color="#4ea87a"/>
+    </linearGradient>
+    <linearGradient id="guard" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#e9fff5"/>
-      <stop offset="100%" stop-color="#9ecabb"/>
-    </linearGradient>
-    <linearGradient id="bronze" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#b8ffe0"/>
-      <stop offset="45%" stop-color="#3da884"/>
+      <stop offset="50%" stop-color="#3da884"/>
       <stop offset="100%" stop-color="#145a45"/>
     </linearGradient>
-    <linearGradient id="grip" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#1c332b"/>
-      <stop offset="50%" stop-color="#2f5548"/>
-      <stop offset="100%" stop-color="#12241e"/>
-    </linearGradient>
-    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="1" stdDeviation="1.2" flood-color="#000" flood-opacity="0.45"/>
+    <filter id="soft" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="1.4" flood-color="#063528" flood-opacity="0.55"/>
     </filter>
   </defs>
   <circle cx="64" cy="64" r="62" fill="url(#glow)"/>
@@ -40,14 +36,15 @@
   <circle cx="64" cy="64" r="48" fill="url(#ring)" stroke="#e9fff5" stroke-width="2"/>
   <circle cx="64" cy="64" r="36" fill="#0b221b"/>
   <g filter="url(#soft)">
-    <path d="M64 18 L72 54 L64 100 L56 54 Z" fill="url(#steel)"/>
-    <path d="M64 22 L68.5 54 L64 92 L59.5 54 Z" fill="url(#steelEdge)" opacity="0.9"/>
-    <path d="M64 20 L64 88" stroke="#ffffff" stroke-opacity="0.55" stroke-width="1.2"/>
-    <path d="M42 54 C48 50, 56 52, 64 52 C72 52, 80 50, 86 54 L84 60 C76 56, 70 58, 64 58 C58 58, 52 56, 44 60 Z" fill="url(#bronze)"/>
-    <rect x="43" y="53" width="42" height="3" rx="1" fill="#e9fff5" opacity="0.35"/>
-    <rect x="58" y="58" width="12" height="22" rx="3" fill="url(#grip)"/>
-    <path d="M59 62 H69 M59 67 H69 M59 72 H69" stroke="#9dffd0" stroke-width="1" opacity="0.55"/>
-    <circle cx="64" cy="84" r="7" fill="url(#bronze)"/>
-    <circle cx="64" cy="84" r="3.2" fill="#e9fff5" opacity="0.55"/>
+    <path d="M64 14 L78 58 L64 104 L50 58 Z" fill="url(#copper)"/>
+    <path d="M64 18 L71 58 L64 96 L57 58 Z" fill="url(#copperDark)" opacity="0.95"/>
+    <path d="M64 16 L64 94" stroke="#f4fff9" stroke-opacity="0.8" stroke-width="2"/>
+    <path d="M60 30 L64 26 L68 30" fill="none" stroke="#f4fff9" stroke-width="1.6" stroke-linecap="round"/>
+    <path d="M34 56 C46 48, 54 52, 64 52 C74 52, 82 48, 94 56 L88 66 C78 58, 70 62, 64 62 C58 62, 50 58, 40 66 Z" fill="url(#guard)"/>
+    <path d="M38 58 C48 52, 56 56, 64 56 C72 56, 80 52, 90 58" fill="none" stroke="#e9fff5" stroke-width="1.5" opacity="0.7"/>
+    <rect x="57" y="60" width="14" height="24" rx="4" fill="url(#guard)"/>
+    <path d="M58 65 H70 M58 71 H70 M58 77 H70" stroke="#0b221b" stroke-width="1.4" opacity="0.35"/>
+    <path d="M64 82 L74 92 L64 106 L54 92 Z" fill="url(#guard)"/>
+    <path d="M64 86 L70 92 L64 100 L58 92 Z" fill="#e9fff5" opacity="0.55"/>
   </g>
 </svg>

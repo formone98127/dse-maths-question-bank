@@ -1,0 +1,4 @@
+<table border="1"><tr><td></td><td>Marks</td><td>Remarks</td></tr><tr><td>-1)=0</td><td></td><td></td></tr><tr><td>$\frac{-1)m(m+1)(m+2)}{2}$</td><td>1</td><td></td></tr><tr><td></td><td>1M</td><td></td></tr><tr><td>$(2-1)^2-1$</td><td></td><td></td></tr><tr><td>$(+1)^2(m+2)$
+(induction assumption)</td><td>1M</td><td>for using induction assumption</td></tr><tr><td>true for n=m.
+e for all positive integers n.</td><td>1</td><td></td></tr><tr><td>$\frac{-1)(9)(9+1)(9+2)}{2}$</td><td>1M
+1A</td><td></td></tr><tr><td></td><td>(6)</td><td></td></tr></table>

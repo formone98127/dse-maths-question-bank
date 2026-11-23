@@ -1,0 +1,4 @@
+<table border="1"><tr><td></td><td>Marks</td><td>Remarks</td></tr><tr><td>$(a+6)$
+$(a+6)$</td><td>1M</td><td></td></tr><tr><td>$(a+1)$
+a 7
+a+6 3a+14</td><td>1M</td><td></td></tr><tr><td>a&gt;1</td><td>1A</td><td></td></tr><tr><td></td><td>1M</td><td>for Cramer&#x27;s rule</td></tr><tr><td></td><td>1A</td><td></td></tr><tr><td></td><td>(5)</td><td></td></tr><tr><td></td><td>1M</td><td></td></tr><tr><td>~$\begin{pmatrix}1&-2&2&1\\0&5&3&0\\0&0&0&b-4\end{pmatrix}$</td><td>1M</td><td></td></tr><tr><td>1,3t,-5t): t∈R</td><td>1A</td><td></td></tr></table>

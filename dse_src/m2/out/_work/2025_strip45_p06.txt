@@ -1,0 +1,4 @@
+<table border="1"><tr><td></td><td>Marks</td><td>Remarks</td></tr><tr><td rowspan="5">C is a constant
+e have
+$(\sqrt{x^{4}+9}-x^{2})-5$.</td><td>1M</td><td rowspan="5">for using the result of(a)
+f.t.</td></tr><tr><td>1M</td></tr><tr><td>1M</td></tr><tr><td>1A</td></tr><tr><td>(6)</td></tr></table>

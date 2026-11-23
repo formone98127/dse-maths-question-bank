@@ -6,7 +6,8 @@
   ],
   "marks": 4,
   "paper": 4,
-  "ok": true
+  "ok": true,
+  "method": "單一小計"
  },
  {
   "q": 2,
@@ -15,7 +16,8 @@
   ],
   "marks": 5,
   "paper": 5,
-  "ok": true
+  "ok": true,
+  "method": "單一小計"
  },
  {
   "q": 3,
@@ -23,9 +25,10 @@
    5,
    6
   ],
-  "marks": 9,
+  "marks": 6,
   "paper": 6,
-  "ok": false
+  "ok": true,
+  "method": "單一小計"
  },
  {
   "q": 4,
@@ -34,16 +37,18 @@
   ],
   "marks": 3,
   "paper": 3,
-  "ok": true
+  "ok": true,
+  "method": "單一小計"
  },
  {
   "q": 5,
   "pages": [
    8
   ],
-  "marks": 4,
+  "marks": 6,
   "paper": 6,
-  "ok": false
+  "ok": true,
+  "method": "單一小計"
  },
  {
   "q": 6,
@@ -52,7 +57,8 @@
   ],
   "marks": 5,
   "paper": 5,
-  "ok": true
+  "ok": true,
+  "method": "單一小計"
  },
  {
   "q": 7,
@@ -61,7 +67,8 @@
   ],
   "marks": 6,
   "paper": 6,
-  "ok": true
+  "ok": true,
+  "method": "單一小計"
  },
  {
   "q": 8,
@@ -70,16 +77,18 @@
   ],
   "marks": 7,
   "paper": 7,
-  "ok": true
+  "ok": true,
+  "method": "單一小計"
  },
  {
   "q": 9,
   "pages": [
    12
   ],
-  "marks": 7,
+  "marks": 8,
   "paper": 8,
-  "ok": false
+  "ok": true,
+  "method": "單一小計"
  },
  {
   "q": 10,
@@ -87,9 +96,10 @@
    13,
    14
   ],
-  "marks": 10,
+  "marks": 9,
   "paper": 12,
-  "ok": false
+  "ok": false,
+  "method": "小計之和"
  },
  {
   "q": 11,
@@ -99,7 +109,8 @@
   ],
   "marks": 13,
   "paper": 13,
-  "ok": true
+  "ok": true,
+  "method": "小計之和"
  },
  {
   "q": 12,
@@ -109,7 +120,8 @@
   ],
   "marks": 12,
   "paper": 12,
-  "ok": true
+  "ok": true,
+  "method": "小計之和"
  },
  {
   "q": 13,
@@ -119,6 +131,7 @@
   ],
   "marks": 13,
   "paper": 13,
-  "ok": true
+  "ok": true,
+  "method": "小計之和"
  }
 ]

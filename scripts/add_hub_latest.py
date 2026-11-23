@@ -37,7 +37,7 @@ def main():
              "<h2>最新題目（逐題答案＋詳解）</h2>\n"
              "<p class=\"sub\">啱啱更新嘅題目頁，附官方評卷參考同答對率。</p>\n"
              f"<ul>{''.join(lis)}</ul>\n"
-             "<p class=\"sub\"><a href=\"/questions/\">睇全部 448 題 →</a></p>\n"
+             "<p class=\"sub\"><a href=\"/questions/\">睇全部 896 題 →</a></p>\n"
              f"</section>\n{END}")
 
     html = HUB.read_text(encoding="utf-8")

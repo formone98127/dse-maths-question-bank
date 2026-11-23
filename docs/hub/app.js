@@ -156,7 +156,11 @@ function sidToSubject(sid) {
 }
 
 function paperNo(paper) {
-  const m = String(paper || "").match(/(\d+[A-Za-z]?)/);
+  const raw = String(paper || "").trim();
+  const m1 = raw.match(/^M(\d+)$/i);        /* "M1" → "1M"（延伸單元） */
+  if (m1) return "1M";
+  if (/^Paper\s*1M$/i.test(raw)) return "1M";
+  const m = raw.match(/(\d+[A-Za-z]?)/);
   return m ? m[1].toUpperCase() : "1";
 }
 

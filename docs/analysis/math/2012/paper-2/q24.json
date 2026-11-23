@@ -54,5 +54,35 @@
    "Hint 3 破題：將題目給定的坐標 $(20,12)$ 視為圓心，距離 $5$ 視為半徑，代入上述方程式觀察其圖形特徵，即可排除其他選項。"
   ],
   "quick_solution_strategy": "到定點距離為定長的點的軌跡定義即為圓。"
+ },
+ "skills": {
+  "topic_id": "T-LIN",
+  "knowledge_point_ids": [
+   "K-LIN-01"
+  ],
+  "formula_ids": [
+   "F-LIN-01"
+  ],
+  "ability_ids": [
+   "A-CALC",
+   "A-ALG"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-COND"
+   }
+  }
  }
 }

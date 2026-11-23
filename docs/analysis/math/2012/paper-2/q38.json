@@ -54,5 +54,36 @@
    "Hint 3 破題：在四個選項中尋找那個「相對於另一條曲線」同時位於「右側且上方」的圖形組合。"
   ],
   "quick_solution_strategy": "找出一對圖形，其中一條比另一條明顯偏右且偏上。"
+ },
+ "skills": {
+  "topic_id": "T-FUN",
+  "knowledge_point_ids": [
+   "K-FUN-04"
+  ],
+  "formula_ids": [
+   "F-FUN-02",
+   "F-FUN-03"
+  ],
+  "ability_ids": [
+   "A-GRAPH",
+   "A-COND"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-FUN-04",
+    "formula_id": "F-FUN-02",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-FUN-04",
+    "formula_id": "F-FUN-03",
+    "ability_id": "A-GRAPH"
+   },
+   "D": {
+    "knowledge_point_id": "K-FUN-04",
+    "formula_id": "F-FUN-02",
+    "ability_id": "A-COND"
+   }
+  }
  }
 }

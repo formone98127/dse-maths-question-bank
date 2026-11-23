@@ -54,5 +54,35 @@
    "Hint 3 破題：展開時，第一項是 $(-i) \\times (\\beta i)$，第二項是 $(-i) \\times (-3)$，請特別檢查第二項的符號變化是否正確。"
   ],
   "quick_solution_strategy": "先化簡 $i^3=-i$，再展開得 $-\\beta i^2 + 3i$，利用 $i^2=-1$ 即得 $\\beta+3i$"
+ },
+ "skills": {
+  "topic_id": "T-NUM",
+  "knowledge_point_ids": [
+   "K-NUM-06"
+  ],
+  "formula_ids": [
+   "F-NUM-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-NUM-06",
+    "formula_id": "F-NUM-04",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-NUM-06",
+    "formula_id": "F-NUM-04",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-NUM-06",
+    "formula_id": "F-NUM-04",
+    "ability_id": "A-COND"
+   }
+  }
  }
 }

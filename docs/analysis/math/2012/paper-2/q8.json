@@ -54,5 +54,36 @@
    "Hint 3 破題: 算出已婚男性和已婚女性的具體人數後，將兩者相加並除以總人數 $N$，即可得到最終的百分比。注意題目給的是「女性佔 37.5%」，因此男性佔 $1 - 0.375 = 0.625$"
   ],
   "quick_solution_strategy": "假設總人數為 800。女性=300(已婚 240)，男性=500(已婚 300)。總已婚 540，比例 $540/800 = 67.5\\%$。"
+ },
+ "skills": {
+  "topic_id": "T-PCT",
+  "knowledge_point_ids": [
+   "K-PCT-05",
+   "K-PCT-01"
+  ],
+  "formula_ids": [
+   "F-PCT-01"
+  ],
+  "ability_ids": [
+   "A-CALC",
+   "A-COND"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-PCT-05",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-PCT-05",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-PCT-05",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-COND"
+   }
+  }
  }
 }

@@ -54,5 +54,37 @@
    "Hint 3 破題：關鍵在於正確計算出全男生的組合數 ${12 \\choose 5} = 792$，然後從總數 $15504$ 中減去這個數字，注意減法運算的準確性。"
   ],
   "quick_solution_strategy": "計算總組合 ${20 \\choose 5}$ 減去全男生組合 ${12 \\choose 5}$。"
+ },
+ "skills": {
+  "topic_id": "T-COM",
+  "knowledge_point_ids": [
+   "K-COM-03",
+   "K-COM-04"
+  ],
+  "formula_ids": [
+   "F-COM-02",
+   "F-COM-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-COM-03",
+    "formula_id": "F-COM-02",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-COM-04",
+    "formula_id": "F-COM-03",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-COM-03",
+    "formula_id": "F-COM-02",
+    "ability_id": "A-COND"
+   }
+  }
  }
 }

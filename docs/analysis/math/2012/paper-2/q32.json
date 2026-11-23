@@ -55,5 +55,36 @@
    "Hint 3 破題：由對數性質可知，直線斜率等於 $\\log_3 n$。既然算出斜率為 $-2$，請直接計算 $3^{-2}$ 的值即可得到答案。"
   ],
   "quick_solution_strategy": "將 $y=mn^x$ 取 $\\log_3$ 得 $\\log_3 y = x \\log_3 n + \\text{const}$。圖中直線斜率為 $-2$，故 $\\log_3 n = -2 \\Rightarrow n=3^{-2}=1/9$"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-06",
+   "K-EXP-07"
+  ],
+  "formula_ids": [
+   "F-EXP-09"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CHAIN"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-EXP-06",
+    "formula_id": "F-EXP-09",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": "F-EXP-09",
+    "ability_id": "A-CHAIN"
+   },
+   "D": {
+    "knowledge_point_id": "K-EXP-06",
+    "formula_id": "F-EXP-08",
+    "ability_id": "A-COND"
+   }
+  }
  }
 }

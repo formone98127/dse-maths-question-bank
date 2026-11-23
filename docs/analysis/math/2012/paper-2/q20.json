@@ -56,5 +56,37 @@
    "Hint 3 破題：求出 $\\angle ABD$ 後，利用 $\\angle ABC = \\angle ABD + \\angle DBC$（或透過四邊形 $ABOD$ 的內角和）來求最終角度，注意 $\\angle DBC$ 與已知條件的關聯。"
   ],
   "quick_solution_strategy": "先由圓周角 $114^\\circ$ 得圓心角 $228^\\circ$ (劣弧對應 $132^\\circ$)，再結合等腰三角形性質求解四邊形內角。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-01",
+   "K-GEO-04"
+  ],
+  "formula_ids": [
+   "F-GEO-01",
+   "F-GEO-04"
+  ],
+  "ability_ids": [
+   "A-CHAIN",
+   "A-ALG"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-GEO-04",
+    "formula_id": "F-GEO-04",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CHAIN"
+   }
+  }
  }
 }

@@ -55,5 +55,37 @@
    "Hint 3 破題：解絕對值不等式 $|k-3| < \\text{某數值}$ 時，記得拆成兩個同向不等式（小於號），而非大於號或並集。"
   ],
   "quick_solution_strategy": "配方得圓心$(-1,2)$半徑$\\sqrt{18}$，距離公式化簡得$|k-3|<6$，解得$-3<k<9$"
+ },
+ "skills": {
+  "topic_id": "T-CIR",
+  "knowledge_point_ids": [
+   "K-CIR-03",
+   "K-LIN-05"
+  ],
+  "formula_ids": [
+   "F-CIR-01",
+   "F-LIN-04"
+  ],
+  "ability_ids": [
+   "A-CHAIN",
+   "A-COND"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-CIR-03",
+    "formula_id": "F-LIN-04",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-CIR-03",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-COND"
+   },
+   "D": {
+    "knowledge_point_id": "K-LIN-05",
+    "formula_id": "F-LIN-04",
+    "ability_id": "A-CHAIN"
+   }
+  }
  }
 }

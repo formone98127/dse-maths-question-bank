@@ -53,5 +53,35 @@
    "Hint 3 破題: 該數字串長度為 12 位，因此最高位（最左邊）的指數應為 $11$，次高位為 $10$。請將字母轉換後代入正確的指數位置。"
   ],
   "quick_solution_strategy": "確認總位數為 12，故最高位指數為 11；將 A=10, D=13 代入前兩項，排除其他選項。"
+ },
+ "skills": {
+  "topic_id": "T-NUM",
+  "knowledge_point_ids": [
+   "K-NUM-03"
+  ],
+  "formula_ids": [
+   "F-NUM-02"
+  ],
+  "ability_ids": [
+   "A-CALC",
+   "A-SUB"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-NUM-03",
+    "formula_id": "F-NUM-02",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-NUM-03",
+    "formula_id": "F-NUM-02",
+    "ability_id": "A-SUB"
+   },
+   "D": {
+    "knowledge_point_id": "K-NUM-03",
+    "formula_id": "F-NUM-02",
+    "ability_id": "A-COND"
+   }
+  }
  }
 }

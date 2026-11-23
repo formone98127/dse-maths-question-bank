@@ -54,5 +54,37 @@
    "Hint 3 破題：關鍵在於正確應用條件概率公式 P(ABC) = P(A) * P(B|A) * P(C|AB)。注意前三次取球的順序是固定的（非 9, 非 9, 9），無需考慮排列，直接將三次事件的概率相乘即可得到答案。"
   ],
   "quick_solution_strategy": "計算 (3/6) * (2/5) * (3/4)。注意非 9 球有 3 個 (7,8,8)，9 球有 3 個。概率 = 18/120 = 3/20。"
+ },
+ "skills": {
+  "topic_id": "T-PROB",
+  "knowledge_point_ids": [
+   "K-PROB-04",
+   "K-COM-03"
+  ],
+  "formula_ids": [
+   "F-PROB-03",
+   "F-COM-02"
+  ],
+  "ability_ids": [
+   "A-CHAIN",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-COM-03",
+    "formula_id": "F-COM-02",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CHAIN"
+   }
+  }
  }
 }

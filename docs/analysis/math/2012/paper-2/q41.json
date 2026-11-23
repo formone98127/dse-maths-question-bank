@@ -55,5 +55,37 @@
    "Hint 3 破題：關鍵在於先由 $90^\\circ - 12^\\circ$ 求出 $\\angle PBO$，再確認 $\\angle PBO$ 即為等腰三角形 $\\triangle OBC$ 的底角，最後計算頂角 $\\angle BOC$ 並除以 2 即可。"
   ],
   "quick_solution_strategy": "利用切線垂直半徑 ($90^\\circ-12^\\circ=78^\\circ$) 與等腰三角形性質求圓心角，再除以 2 得圓周角。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-02",
+   "K-GEO-01"
+  ],
+  "formula_ids": [
+   "F-GEO-02",
+   "F-GEO-01"
+  ],
+  "ability_ids": [
+   "A-CHAIN",
+   "A-ALG"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-GEO-02",
+    "formula_id": "F-GEO-02",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CHAIN"
+   },
+   "D": {
+    "knowledge_point_id": "K-GEO-02",
+    "formula_id": "F-GEO-02",
+    "ability_id": "A-COND"
+   }
+  }
  }
 }

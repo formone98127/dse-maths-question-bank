@@ -54,5 +54,37 @@
    "Hint 3 破題：原點在第三象限，逆時針轉 90^\\circ 必進入第四象限，第四象限的角度範圍是 270^\\circ 到 360^\\circ"
   ],
   "quick_solution_strategy": "先算 r=\\sqrt{(-3)^2+(-3\\sqrt{3})^2}=6。原點在第三象限，逆時針轉 90^\\circ 進入第四象限，故選 (6, 330^\\circ)。"
+ },
+ "skills": {
+  "topic_id": "T-TRF",
+  "knowledge_point_ids": [
+   "K-TRF-03",
+   "K-TRF-04"
+  ],
+  "formula_ids": [
+   "F-TRF-01",
+   "F-TRF-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CHAIN"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-TRF-04",
+    "formula_id": "F-TRF-02",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-TRF-03",
+    "formula_id": "F-TRF-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-TRF-03",
+    "formula_id": "F-TRF-01",
+    "ability_id": "A-COND"
+   }
+  }
  }
 }

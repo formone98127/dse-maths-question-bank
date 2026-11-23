@@ -500,6 +500,47 @@ def validate_analysis(obj, answer):
     return errs
 
 
+def validate_skills_ids(skills: dict, wrong_options: set[str]) -> list[str]:
+    """Ensure every skills id exists in the fixed skill book (no free-form names)."""
+    _, topics, kps, formulas, abilities = load_skill_book()
+    errs = []
+    if not isinstance(skills, dict):
+        return ["skills 不是物件"]
+    if skills.get("topic_id") not in topics:
+        errs.append(f"未知 topic_id {skills.get('topic_id')!r}（必須來自技能冊）")
+    for kid in skills.get("knowledge_point_ids") or []:
+        if kid not in kps:
+            errs.append(f"未知 knowledge_point_id {kid!r}（必須來自技能冊）")
+    for fid in skills.get("formula_ids") or []:
+        if fid not in formulas:
+            errs.append(f"未知 formula_id {fid!r}（必須來自技能冊）")
+    for aid in skills.get("ability_ids") or []:
+        if aid not in abilities:
+            errs.append(f"未知 ability_id {aid!r}（必須來自技能冊）")
+    faults = skills.get("option_faults") or {}
+    if not isinstance(faults, dict):
+        return errs + ["option_faults 須為物件"]
+    for opt in wrong_options:
+        if opt not in faults:
+            errs.append(f"錯選項 {opt} 缺 option_faults")
+            continue
+        f = faults[opt]
+        aid = f.get("ability_id")
+        kid, fid = f.get("knowledge_point_id"), f.get("formula_id")
+        if aid not in abilities:
+            errs.append(f"{opt} 未知 ability_id {aid!r}")
+        if kid is None and fid is None:
+            errs.append(f"{opt} 須有 knowledge_point_id 或 formula_id")
+        if kid is not None and kid not in kps:
+            errs.append(f"{opt} 未知 knowledge_point_id {kid!r}")
+        if fid is not None and fid not in formulas:
+            errs.append(f"{opt} 未知 formula_id {fid!r}")
+    for opt in faults:
+        if opt not in wrong_options:
+            errs.append(f"option_faults 含非錯選項 {opt}")
+    return errs
+
+
 def attach_skills_post(q: dict, analysis: dict) -> dict:
     """用題庫 tags + 分析 metadata，掛上技能冊 id；錯選項用 error_category 對能力。"""
     book, topics, kps, formulas, abilities = load_skill_book()
@@ -559,13 +600,18 @@ def attach_skills_post(q: dict, analysis: dict) -> dict:
         if faults[opt]["knowledge_point_id"] is None and faults[opt]["formula_id"] is None:
             faults[opt]["knowledge_point_id"] = next(iter(kps))
 
-    return {
+    skills = {
         "topic_id": topic_id if topic_id in topics else next(iter(topics)),
         "knowledge_point_ids": [k for k in kp_ids if k in kps],
         "formula_ids": [f for f in formula_ids if f in formulas],
         "ability_ids": [a for a in ability_ids if a in abilities],
         "option_faults": faults,
     }
+    wrong = {k for k, v in oa.items() if isinstance(v, dict) and not v.get("is_correct")}
+    bad = validate_skills_ids(skills, wrong)
+    if bad:
+        raise ValueError("skills 掛鉤不合格：" + "; ".join(bad))
+    return skills
 
 
 def soft_answer_leak_warning(obj, answer, options):
@@ -630,28 +676,32 @@ def process(q, options, answer, cfg, dry_run=False, force=False):
         except json.JSONDecodeError as e:
             errs = [f"JSON 解析失敗：{e}"]
         else:
-            obj.pop("skills", None)  # 忽略模型若仍輸出
+            obj.pop("skills", None)  # 忽略模型若仍輸出自由課題／公式名
             errs = validate_analysis(obj, answer)
             if not errs:
-                skills = attach_skills_post(q, obj)
-                payload = {
-                    "question": {
-                        "subject": q["subject"],
-                        "year": q["year"],
-                        "paper": q["paper"],
-                        "qno": q["qno"],
-                        "hash": hash_for_question(q),
-                    },
-                    "model": cfg["model"],
-                    "generated": datetime.datetime.now().strftime("%Y-%m-%d"),
-                    "analysis": obj,
-                    "skills": skills,
-                }
-                path.parent.mkdir(parents=True, exist_ok=True)
-                path.write_text(json.dumps(payload, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-                soft_answer_leak_warning(obj, answer, options)
-                print(f"  ✓ 寫入 {path.relative_to(ROOT)}")
-                return True
+                try:
+                    skills = attach_skills_post(q, obj)
+                except ValueError as e:
+                    errs = [str(e)]
+                else:
+                    payload = {
+                        "question": {
+                            "subject": q["subject"],
+                            "year": q["year"],
+                            "paper": q["paper"],
+                            "qno": q["qno"],
+                            "hash": hash_for_question(q),
+                        },
+                        "model": cfg["model"],
+                        "generated": datetime.datetime.now().strftime("%Y-%m-%d"),
+                        "analysis": obj,
+                        "skills": skills,
+                    }
+                    path.parent.mkdir(parents=True, exist_ok=True)
+                    path.write_text(json.dumps(payload, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+                    soft_answer_leak_warning(obj, answer, options)
+                    print(f"  ✓ 寫入 {path.relative_to(ROOT)}")
+                    return True
         print(f"  ✗ 第 {attempt} 次驗證失敗：{errs}")
         if attempt < 3:
             messages.append({"role": "assistant", "content": content})

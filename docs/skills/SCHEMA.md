@@ -3,7 +3,9 @@
 ## 檔案
 
 - `math_skill_book.json` — 固定技能冊（課題／知識點／公式／能力）
+- `math_skill_book.md` — 同上，方便逐條睇
 - `math_tag_crosswalk.json` — 題庫 tag → 技能冊 20 課題（不改網站既有 tag）
+- `math_tag_crosswalk.md` — 同上對照表
 - `math_question_cards.json` — 統一題卡（由 `scripts/build_question_cards.py` 產生）
 - `math_error_tags.json` — 錯法短標籤目錄（同上腳本產生）
 - `math_cards_index.json` — 按課題／錯法索引題卡 id（同上腳本產生）
@@ -30,6 +32,7 @@
 
 ```text
 python scripts/build_math_skill_foundation.py
+python scripts/export_skill_book_md.py
 python scripts/build_question_cards.py
 ```
 

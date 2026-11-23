@@ -1168,7 +1168,9 @@ SCHEMA_MD = """# Math skills schema（本地基礎）
 ## 檔案
 
 - `math_skill_book.json` — 固定技能冊（課題／知識點／公式／能力）
+- `math_skill_book.md` — 同上，方便逐條睇
 - `math_tag_crosswalk.json` — 題庫 tag → 技能冊 20 課題（不改網站既有 tag）
+- `math_tag_crosswalk.md` — 同上對照表
 - `math_question_cards.json` — 統一題卡（由 `scripts/build_question_cards.py` 產生）
 - `math_error_tags.json` — 錯法短標籤目錄（同上腳本產生）
 - `math_cards_index.json` — 按課題／錯法索引題卡 id（同上腳本產生）
@@ -1195,6 +1197,7 @@ SCHEMA_MD = """# Math skills schema（本地基礎）
 
 ```text
 python scripts/build_math_skill_foundation.py
+python scripts/export_skill_book_md.py
 python scripts/build_question_cards.py
 ```
 
@@ -1364,6 +1367,21 @@ def main():
     book_path.write_text(json.dumps(book, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     cw_path.write_text(json.dumps(crosswalk, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     schema_path.write_text(SCHEMA_MD, encoding="utf-8")
+
+    # human-readable copies
+    try:
+        import importlib.util
+
+        spec = importlib.util.spec_from_file_location(
+            "export_skill_book_md", ROOT / "scripts" / "export_skill_book_md.py"
+        )
+        mod = importlib.util.module_from_spec(spec)
+        assert spec.loader is not None
+        spec.loader.exec_module(mod)
+        mod.export_book()
+        mod.export_crosswalk()
+    except Exception as e:
+        print(f"warn: markdown export skipped ({e})")
 
     n, errors = annotate_pilot(book)
     print(coverage_report(book))

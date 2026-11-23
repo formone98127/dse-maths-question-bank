@@ -4,8 +4,8 @@ from __future__ import annotations
 import json
 import pathlib
 
-SITE = pathlib.Path(r"C:/Users/Administrator/projects/dse-maths-question-bank")
-YEARS = ["2019", "2020", "2022", "2023", "2024", "2025"]
+SITE = pathlib.Path(__file__).resolve().parent.parent
+YEARS = [str(y) for y in range(2012, 2026)] + ["PP", "SP"]
 
 TPL = """<!doctype html>
 <html lang="zh-Hant-HK">

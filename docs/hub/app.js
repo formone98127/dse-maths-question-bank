@@ -347,8 +347,7 @@ function viewHrefFor(r) {
   /* M1 未有靜態落地板 → 用 reader 深連結（hash 由 data.js 直接渲染，唔會 404） */
   if (r.id === "m1") {
     const y = String(r.year);
-    const prefix = y === "PP" ? "PP" : y;
-    return `/#${prefix}P1MQ1`;
+    return `/m1/${encodeURIComponent(y)}/paper-1-en/`;
   }
   /* 其他未有落地板嘅科目唔好出死鏈 */
   if (r.id !== "math") return null;

@@ -1,0 +1,129 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "PP",
+  "paper": "Paper 1",
+  "qno": "3",
+  "hash": "#PPP1Q3"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "因式分解",
+   "secondary_topics": [
+    "完全平方公式",
+    "十字相乘法",
+    "提公因式法"
+   ],
+   "required_formulas": [
+    "$a^2 \\pm 2ab + b^2 = (a \\pm b)^2$",
+    "$ax^2 + bx + c$ 十字相乘"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 3
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "識別 (a) 為完全平方公式並分解。",
+    "marks": 1,
+    "common_error": "忘記係數，寫成 $(3x-7y)^2$ 時漏掉中間項符號或算錯係數。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "觀察 (b) 前三項與 (a) 相同，先提公因式或重組。",
+    "marks": 1,
+    "common_error": "直接嘗試對四項十字相乘，忽略前兩部分已構成完全平方。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "將 (b) 寫成 $(3x-7y)^2 - 6(x-\\frac{7}{3}y)$ 形式調整。",
+    "marks": 0,
+    "common_error": "無法看出 $-6x+14y$ 與前部分的關係，導致卡關。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "將 (b) 視為 $(3x-7y)^2 - 2(3x-7y)$ 進行提公因式。",
+    "marks": 1,
+    "common_error": "錯誤地認為 $-6x+14y = -2(3x-7y)$ 時算錯係數。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "最終得出 $(3x-7y)(3x-7y-2)$ 作為答案。",
+    "marks": 0,
+    "common_error": "忘記檢查括號內是否需進一步因式分解或化簡。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 6,
+    "what": "檢查答案是否為最簡形式且無計算錯誤。",
+    "marks": 0,
+    "common_error": "粗心導致 $(3x-7y-2)$ 寫成 $(3x-7y+2)$ 等符號錯誤。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "此題測試學生對完全平方公式的熟練度及處理多項式因式分解時的觀察力，特別是識別隱藏的公因式結構。",
+  "scaffolding_hints": [
+   "Hint1: 檢查 $9x^2$ 和 $49y^2$ 是否為完全平方數。",
+   "Hint2: 回憶 $(a-b)^2 = a^2 - 2ab + b^2$ 的展開式。",
+   "Hint3: 將 (b) 的前三項視為一個整體，再看後兩項能否與之配對。"
+  ],
+  "quick_solution_strategy": "先分解 (a)，再將 (b) 前部分代入 (a) 的結果，觀察後兩項是否為該結果的倍數以提公因式。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-03"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "6": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

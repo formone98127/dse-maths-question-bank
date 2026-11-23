@@ -1,0 +1,130 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2016",
+  "paper": "Paper 1",
+  "qno": "13",
+  "hash": "#2016P1Q13"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "平面幾何",
+   "secondary_topics": [
+    "全等三角形證明",
+    "畢氏定理應用",
+    "等腰三角形性質"
+   ],
+   "required_formulas": [
+    "SSS, SAS, ASA, AAS 全等判定",
+    "$a^2+b^2=c^2$ (畢氏定理)",
+    "等腰三角形底角相等"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 300,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "證明 $\\triangle ADC \\cong \\triangle AEB$ (利用 SAS: $AD=AE$, $\\angle D=\\angle E$, $DC=EB$)",
+    "marks": 2,
+    "common_error": "未能證明 $AD=AE$ 或 $DC=EB$，直接假設全等。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "由 (a) 得 $\\triangle ADE$ 為等腰三角形 ($AD=AE$)，故 $AM \\perp DE$ 且平分 $DE$。",
+    "marks": 1,
+    "common_error": "忘記利用等腰三角形「三线合一」性質求 $EM$。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "計算 $EM = DE/2 = 9$，在 Rt$\\triangle AME$ 中用畢氏定理求 $AM$。",
+    "marks": 1,
+    "common_error": "計算錯誤或忘記除以 2。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "由 (a) 得 $\\angle B = \\angle C$，結合 $BD=CE$ 及 $BC$ 關係推導角度或邊長。",
+    "marks": 1,
+    "common_error": "未能連結 $\\triangle ABE$ 的角與已知直角條件。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 5,
+    "what": "計算 $AB^2 + BE^2$ 是否等於 $AE^2$ (或反之) 以驗證畢氏定理逆定理。",
+    "marks": 1,
+    "common_error": "邊長代入錯誤，忽略 $BE = BD+DE$ 的總和關係。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "解釋結論：因滿足畢氏定理關係，故為直角三角形。",
+    "marks": 0,
+    "common_error": "無（此步為總結）。",
+    "error_category": null
+   }
+  ],
+  "exam_report_insight": "考生常忽略由全等導出的 $AD=AE$ 導致證明失敗，且部分學生在計算 $BE$ 長度時忘記加上 $BD$ 與 $DE$ 的組合關係。",
+  "scaffolding_hints": [
+   "提示：先利用 $\\angle ADC = \\angle AEB$ 和 $DM=EM$ 推導 $AD=AE$。",
+   "知識：等腰三角形頂點到底邊中點的連線垂直於底邊。",
+   "破題：(ii) 部分需將 $BE$ 視為 $BD+DE$ 來計算斜邊平方。"
+  ],
+  "quick_solution_strategy": "先證全等得 $AD=AE$，再用等腰性質求高 $AM$，最後驗算畢氏定理判斷直角。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-05"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "5": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": null
+   }
+  }
+ }
+}

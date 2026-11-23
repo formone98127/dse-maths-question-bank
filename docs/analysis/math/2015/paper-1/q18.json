@@ -1,0 +1,130 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2015",
+  "paper": "Paper 1",
+  "qno": "18",
+  "hash": "#2015P1Q18"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "二次函數",
+   "secondary_topics": [
+    "判別式與圖像相交條件",
+    "配方法求頂點",
+    "三角形外心性質"
+   ],
+   "required_formulas": [
+    "$\\Delta = b^2 - 4ac$",
+    "$y = a(x-h)^2 + k$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 180,
+   "marks": 5
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "計算 $f(x)$ 之判別式 $\\Delta$ 並判斷符號",
+    "marks": 2,
+    "common_error": "錯誤認為 $\\Delta=0$ 時相交，或忽略 $\\Delta<0$ 無實根。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "利用配方法將 $f(x)$ 寫成頂點式",
+    "marks": 3,
+    "common_error": "配方法步驟錯誤，頂點坐標含 $k$ 表達不清。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "寫出 $y=2-f(x)$ 的頂點式並繪圖",
+    "marks": 1,
+    "common_error": "忽略係數變化導致圖像位置錯誤。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 4,
+    "what": "分析 $S, T$ 最接近時 $ST$ 連線與 $x$ 軸關係",
+    "marks": 1,
+    "common_error": "誤以為外心必在兩圖形對稱軸上。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 5,
+    "what": "證明或反駁外心是否在 $x$ 軸上",
+    "marks": 1,
+    "common_error": "未考慮三角形形狀導致結論錯誤。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 6,
+    "what": "總結並解釋最終答案",
+    "marks": 0,
+    "common_error": "解釋不完整或缺乏邏輯連貫性。",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "考生常混淆判別式意義及忽略配方法細節，且在分析外心位置時缺乏幾何直觀，需加強圖像與代數結合的思維訓練。",
+  "scaffolding_hints": [
+   "先計算 $\\Delta$ 判斷是否有實根。",
+   "配方法時注意 $k$ 的係數處理。",
+   "外心是垂直平分線交點，思考其與 $x$ 軸關係。"
+  ],
+  "quick_solution_strategy": "算 $\\Delta<0$ 無交點；配方得頂點；分析兩圖形對稱性判斷外心位置。"
+ },
+ "skills": {
+  "topic_id": "T-FUN",
+  "knowledge_point_ids": [
+   "K-FUN-01",
+   "K-FUN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "4": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "5": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "6": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

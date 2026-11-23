@@ -1,0 +1,103 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "PP",
+  "paper": "Paper 1",
+  "qno": "11",
+  "hash": "#PPP1Q11"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "變分",
+   "secondary_topics": [
+    "立方體體積與表面積關係",
+    "一次方程式應用"
+   ],
+   "required_formulas": [
+    "C = kx^2 + c"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "建立成本 C 與邊長 x 的二次函數模型 C=kx^2+c",
+    "marks": 1,
+    "common_error": "忘記設定兩個未知數 k 和 c，直接假設過原點",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 2,
+    "what": "代入 x=20 及 x=120 的數據建立聯立方程式",
+    "marks": 1,
+    "common_error": "計算平方時出錯或抄寫數字錯誤",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "解聯立方程式求出 k 與 c 的具體數值",
+    "marks": 1,
+    "common_error": "解方程組時符號搞錯或消元法步驟跳過",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "將求得的 k,c 代入公式計算 x=50 時的成本",
+    "marks": 1,
+    "common_error": "忘記代入正確的 k 值或計算機按錯鍵",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "變分題型常考於中四至中五，重點在於建立含兩個常數的模型並透過兩組數據求解，學生需熟練聯立方程式技巧。",
+  "scaffolding_hints": [
+   "提示：成本由固定部分和隨邊長平方變化的部分組成。",
+   "知識：聯立方程式是解出兩個未知數的關鍵工具。",
+   "破題：先寫出通式 C=kx^2+c，再代入題目給定的兩組數值。"
+  ],
+  "quick_solution_strategy": "設 C=kx²+c，代 x=20,C=42 及 x=120,C=112 解 k,c，再算 x=50。"
+ },
+ "skills": {
+  "topic_id": "T-VAR",
+  "knowledge_point_ids": [
+   "K-VAR-01"
+  ],
+  "formula_ids": [
+   "F-VAR-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "2": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

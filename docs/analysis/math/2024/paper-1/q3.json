@@ -1,0 +1,128 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 1",
+  "qno": "3",
+  "hash": "#2024P1Q3"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "因式分解",
+   "secondary_topics": [
+    "十字相乘法",
+    "提公因式法",
+    "二次型配對"
+   ],
+   "required_formulas": [
+    "$ax^2 + bx + c = (x - x_1)(x - x_2)$ 形式展開驗證"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "觀察 (b) 式，發現其後三項與 (a) 式完全相同。",
+    "marks": 2,
+    "common_error": "直接對 (b) 式全部四項嘗試十字相乘，忽略結構重複性。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 2,
+    "what": "先將 (a) 式 $6r^2 - 13rs - 28s^2$ 完成因式分解。",
+    "marks": 1,
+    "common_error": "十字相乘時符號處理錯誤，導致展開後係數不對。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "將 (b) 式重寫為 $2r(2r - 7s) + (6r^2 - 13rs - 28s^2)$。",
+    "marks": 1,
+    "common_error": "提公因式時漏掉係數，或將 $4r$ 與後三項錯誤配對。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 4,
+    "what": "代入步驟 2 的結果，得 $2r(2r - 7s) + (2r - 7s)(3r + 4s)$。",
+    "marks": 1,
+    "common_error": "忘記將已分解好的部分視為一個整體進行提公因式。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 5,
+    "what": "提取公因式 $(2r - 7s)$，寫出最終答案 $(2r - 7s)(2r + 3r + 4s)$。",
+    "marks": 1,
+    "common_error": "最後合併時算錯 $2r+3r$ 為 $5r$ 而非保持原狀或簡化錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "檢查答案：展開 $(2r - 7s)(5r + 4s)$ 是否等於原式。",
+    "marks": 1,
+    "common_error": "跳過驗算步驟，導致符號錯誤未被發現。",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "近年卷一常出現「部分因式分解」題目，旨在測試學生觀察題目結構及重複項的能力，而非單純計算技巧。",
+  "scaffolding_hints": [
+   "Hint1: 先看 (b) 式後三項是否眼熟？",
+   "Hint2: 十字相乘時，$6 \\times -28 = -168$，找和為 $-13$ 的數對。",
+   "Hint3: 把 (a) 的結果當做一個整體塊來處理 (b) 式。"
+  ],
+  "quick_solution_strategy": "先解 (a)，再將 (b) 視為 $2r \\times (?) + (a)$，直接提公因式即可。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-03"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "2": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "4": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "5": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

@@ -1,0 +1,110 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 1",
+  "qno": "12",
+  "hash": "#2013P1Q12"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "多項式",
+   "secondary_topics": [
+    "係數比較",
+    "二次方程式根",
+    "實數與虛數"
+   ],
+   "required_formulas": [
+    "$f(x) = (x-2)(ax^2+bx+c)$",
+    "$\\Delta = b^2 - 4ac$",
+    "$x = \\frac{-b \\pm \\sqrt{b^2-4ac}}{2a}$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 180,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "展開右邊式子並比較 $x^3$ 與 $x^2$ 係數求 $a,b$。",
+    "marks": 2,
+    "common_error": "展開時漏項或符號錯誤，導致 $a,b$ 算錯。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "利用原式 $x^1$ 係數比較求 $c$ 的正確值。",
+    "marks": 2,
+    "common_error": "誤用原式 $kx$ 係數或代入錯誤 $a,b$ 值。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "寫出分解後的二次方程式並計算判別式 $\\Delta$。",
+    "marks": 1,
+    "common_error": "忘記計算 $\\Delta$ 或公式記錯符號。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 4,
+    "what": "根據 $\\Delta$ 符號判斷根是否全為實數並解釋。",
+    "marks": 1,
+    "common_error": "忽略 $x=2$ 這個根，只分析二次部分。",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "考評報告指出考生在比較係數時易出錯，且在判斷根性質時常誤用公式或忽略已知根 $x=2$，導致未能正確評估所有根的實虛性。",
+  "scaffolding_hints": [
+   "提示 1：展開 $(x-2)(ax^2+bx+c)$ 時注意分配律與符號。",
+   "提示 2：比較係數是解多項式恆等式的關鍵步驟。",
+   "提示 3：題目問的是「所有」根，必須包含 $x=2$ 這個已知根。"
+  ],
+  "quick_solution_strategy": "先展開右邊比較係數得 $a,b,c$；再算二次部分判別式，並明確指出 $x=2$ 亦為實根，故同意宣稱。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-01",
+   "K-POL-02"
+  ],
+  "formula_ids": [
+   "F-POL-01",
+   "F-POL-02",
+   "F-POL-03",
+   "F-POL-06"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "4": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

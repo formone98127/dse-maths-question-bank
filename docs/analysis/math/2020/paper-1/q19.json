@@ -1,0 +1,98 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2020",
+  "paper": "Paper 1",
+  "qno": "19",
+  "hash": "#2020P1Q19"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "平面幾何",
+   "secondary_topics": [
+    "餘弦公式",
+    "正弦公式",
+    "三角形面積公式",
+    "空間想像"
+   ],
+   "required_formulas": [
+    "$a^2 = b^2 + c^2 - 2bc \\cos A$",
+    "$\\frac{a}{\\sin A} = \\frac{b}{\\sin B}$",
+    "$\\text{Area} = \\frac{1}{2}ab \\sin C$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 300,
+   "marks": 3
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "在 $\\triangle PQR$ 中利用正弦公式求 $PR$。",
+    "marks": 1,
+    "common_error": "忘記先求 $PR$ 或角度計算錯誤導致後續步驟全錯。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "在 $\\triangle PQR$ 中利用餘弦公式求 $QR$。",
+    "marks": 1,
+    "common_error": "代入數值時符號錯誤或混淆邊長對應關係。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "在 $\\triangle PQS$ 中利用餘弦公式求 $QS$ 並結合 $PR$ 求 $RS$。",
+    "marks": 1,
+    "common_error": "誤以為四邊形面積直接相加而忽略分割三角形邏輯。",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "考評報告指出考生常誤將紙卡懸掛角 $32^\\circ$ 應用於錯誤的線段（如 $PR$），導致空間想像分數流失，需強調「最短距離」是垂直高度而非斜邊投影。",
+  "scaffolding_hints": [
+   "提示：先畫出 $\\triangle PQR$ 和 $\\triangle PQS$ 兩個獨立三角形。",
+   "知識：懸掛時紙卡與地面夾角是指整個平面與水平面的角度，非局部線段角度。",
+   "破題：求 $RS$ 需連通 $\\triangle PQR$ 與 $\\triangle PQS$ 的公共邊或間接關係。"
+  ],
+  "quick_solution_strategy": "先解 $\\triangle PQR$ 得 $PR, QR$；再解 $\\triangle PQS$ 得 $QS$；最後利用餘弦公式於 $\\triangle QRS$ 求 $RS$"
+ },
+ "skills": {
+  "topic_id": "T-MEN",
+  "knowledge_point_ids": [
+   "K-MEN-01",
+   "K-MEN-02"
+  ],
+  "formula_ids": [
+   "F-MEN-01",
+   "F-MEN-02",
+   "F-MEN-03",
+   "F-MEN-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

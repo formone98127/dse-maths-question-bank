@@ -1,0 +1,93 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 1",
+  "qno": "6",
+  "hash": "#2013P1Q6"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "極坐標與幾何",
+   "secondary_topics": [
+    "反射對稱軸性質",
+    "直角與極坐標轉換"
+   ],
+   "required_formulas": [
+    "$\\theta_{sym} = \\frac{\\theta_1 + \\theta_2}{2}$",
+    "$r_{mid} = \\sqrt{r^2 + r^2 - 2r^2\\cos(\\theta_2-\\theta_1)}$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 180,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用極坐標對稱性，計算反射軸 L 的角度。",
+    "marks": 2,
+    "common_error": "誤以為 L 平分頂角而直接取平均角度，忽略幾何關係描述要求。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "計算弦 AB 的中點或交點的極徑 r。",
+    "marks": 1,
+    "common_error": "誤用三角形邊長公式算錯 r，或直接用半徑相加。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "將極坐標交點轉換為直角坐標以驗證（若題目要求）。",
+    "marks": 1,
+    "common_error": "忘記轉換步驟，直接提交極坐標導致扣分。",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "考生常混淆「幾何關係描述」與「數值計算」，且易將極坐標交點誤答為直角坐標或錯誤推導角度公式。",
+  "scaffolding_hints": [
+   "Hint1: 反射軸 L 是角 AOB 的角平分線所在直線。",
+   "Hint2: 利用餘弦定理求 AB 長度，再用幾何關係找中點極徑。",
+   "Hint3: 注意題目問的是「極坐標」，最後必須轉換回 $(r, \\theta)$ 格式。"
+  ],
+  "quick_solution_strategy": "先寫 L 平分角 AOB；再算半徑 r=13\\sqrt{2}，角度為 70°，得出 (13\\sqrt{2}, 70°)。"
+ },
+ "skills": {
+  "topic_id": "T-LIN",
+  "knowledge_point_ids": [
+   "K-LIN-01",
+   "K-LIN-02"
+  ],
+  "formula_ids": [
+   "F-LIN-01",
+   "F-LIN-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

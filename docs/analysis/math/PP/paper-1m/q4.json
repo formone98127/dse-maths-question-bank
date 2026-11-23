@@ -1,0 +1,134 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "PP",
+  "paper": "Paper 1M",
+  "qno": "4",
+  "hash": "#PPP1MQ4"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "微分法",
+   "secondary_topics": [
+    "鏈式法則",
+    "平行直線斜率",
+    "解二次方程"
+   ],
+   "required_formulas": [
+    "\\frac{d}{dx}[uv] = u'v + uv'",
+    "\\frac{d}{dx}[f(g(x))] = f'(g(x)) \\cdot g'(x)",
+    "m_1 = m_2"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 300,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "對 y=x(2x-1)^{1/2} 使用乘積法則求 dy/dx",
+    "marks": 2,
+    "common_error": "忘記鏈式法則或乘積法則展開錯誤",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "化簡導數表達式為最簡形式",
+    "marks": 1,
+    "common_error": "未能合併項導致後續計算複雜",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "找出已知直線 2x-y=0 的斜率 m",
+    "marks": 1,
+    "common_error": "誤以為斜率為 2 而非 2",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 4,
+    "what": "令 dy/dx = 2 建立方程",
+    "marks": 1,
+    "common_error": "等號寫錯或移項錯誤",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "解方程求對應的 x 值（應得兩個解）",
+    "marks": 1,
+    "common_error": "漏解一個根或計算平方根錯誤",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "代回原函數求 y 並寫出兩條切線方程",
+    "marks": 0,
+    "common_error": "忘記代入 x 求 y 或格式不正確",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "微分應用題常考於中三至中四，考生需熟練鏈式法則與乘積法則組合運用，並能準確處理平行直線斜率條件。",
+  "scaffolding_hints": [
+   "先練習單純的 (2x-1)^{1/2} 求導",
+   "回顧 y=mx+c 形式找出斜率 m",
+   "解方程時注意平方根會有正負兩解"
+  ],
+  "quick_solution_strategy": "乘積法則展開後令等於 2，解出兩個 x 再代回得 y，寫出兩條直線。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-01",
+   "K-GEO-02"
+  ],
+  "formula_ids": [
+   "F-GEO-01",
+   "F-GEO-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "4": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

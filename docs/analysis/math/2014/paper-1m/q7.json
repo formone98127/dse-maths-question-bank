@@ -1,0 +1,93 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 1M",
+  "qno": "7",
+  "hash": "#2014P1MQ7"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "概率",
+   "secondary_topics": [
+    "條件概率",
+    "獨立事件",
+    "集合運算"
+   ],
+   "required_formulas": [
+    "P(A \\cup B) = P(A) + P(B) - P(A \\cap B)",
+    "P(A \\mid B) = P(A \\cap B) / P(B)",
+    "A, B 獨立 \\iff P(A \\cap B) = P(A)P(B)"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "由 P(B')=0.75 求 P(B)，並利用條件概率公式求 P(A \\cap B)。",
+    "marks": 2,
+    "common_error": "忘記將 P(B') 轉換為 P(B)；計算 P(A\\cap B) 時分母搞錯。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "利用並集公式 P(A \\cup B) = P(A) + P(B) - P(A \\cap B) 求 P(A)。",
+    "marks": 2,
+    "common_error": "移項時符號出錯；忘記減去已算出的交集概率。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "計算 P(A)P(B) 與已求得的 P(A \\cap B) 進行比較以判斷獨立性。",
+    "marks": 2,
+    "common_error": "直接回答是或否而未證明；計算乘積時數值錯誤。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "此題測試學生對概率基本公理及條件概率定義的熟練度，常考點在於正確運用集合運算公式處理並集與交集關係。",
+  "scaffolding_hints": [
+   "先從補事件 P(B') 推導出 P(B) 是關鍵第一步。",
+   "熟記三個核心公式：條件概率、並集加法原理、獨立事件定義。",
+   "判斷獨立性時，務必明確寫出 '因為 P(A\\cap B) \\neq P(A)P(B)' 或反之。"
+  ],
+  "quick_solution_strategy": "先求 P(B)，代公式得交集；再代入並集公式解 P(A)；最後比對乘積與交集判斷獨立性。"
+ },
+ "skills": {
+  "topic_id": "T-PROB",
+  "knowledge_point_ids": [
+   "K-PROB-04"
+  ],
+  "formula_ids": [
+   "F-PROB-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

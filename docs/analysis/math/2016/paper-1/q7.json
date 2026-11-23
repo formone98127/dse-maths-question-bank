@@ -1,0 +1,132 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2016",
+  "paper": "Paper 1",
+  "qno": "7",
+  "hash": "#2016P1Q7"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "極坐標與幾何",
+   "secondary_topics": [
+    "等邊三角形性質",
+    "旋轉對稱性"
+   ],
+   "required_formulas": [
+    "$\\theta = \\beta - \\alpha$",
+    "$r_1 = r_2 = 12$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 3
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "計算兩極角之差以求出\\angle AOB。",
+    "marks": 1,
+    "common_error": "忘記取絕對值或方向錯誤導致角度為負數。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "確認兩半徑相等且夾角為60度，判定三角形形狀。",
+    "marks": 1,
+    "common_error": "忽略r=12相等，誤算為一般三角形而不用特殊性質。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "利用等邊三角形周界公式計算三邊總和。",
+    "marks": 1,
+    "common_error": "只算一邊或兩邊，忘記乘以3。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "理解等邊三角形具有三次旋轉對稱性。",
+    "marks": 0,
+    "common_error": "混淆旋轉對稱與鏡像對稱，寫出2或4次。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 5,
+    "what": "檢查角度單位是否為度數而非弧度。",
+    "marks": 0,
+    "common_error": "將75與135當作弧度計算，導致結果荒謬。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 6,
+    "what": "驗證周界數值是否為整數（12*3=36）。",
+    "marks": 0,
+    "common_error": "計算加法錯誤，如12+12+12算成其他數字。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "考評報告指出考生易忽略等邊三角形性質導致(b)失分，這反映學生在極坐標轉化為幾何圖形時，對特殊三角形判定的直覺不足。",
+  "scaffolding_hints": [
+   "提示1：觀察兩個點的極徑r是否相同？",
+   "提示2：計算角度差60度時，聯想等邊三角形的內角特徵。",
+   "提示3：旋轉對稱次數等於正n邊形的n值，這裡是幾邊形？"
+  ],
+  "quick_solution_strategy": "先算角度差得60度，因兩半徑相等，故為等邊三角形，周界即12乘3；等邊三角形有3次旋轉對稱。"
+ },
+ "skills": {
+  "topic_id": "T-LIN",
+  "knowledge_point_ids": [
+   "K-LIN-01",
+   "K-LIN-02"
+  ],
+  "formula_ids": [
+   "F-LIN-01",
+   "F-LIN-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "5": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "6": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

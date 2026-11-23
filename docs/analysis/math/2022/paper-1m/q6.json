@@ -1,0 +1,119 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 1M",
+  "qno": "6",
+  "hash": "#2022P1MQ6"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "微分法",
+   "secondary_topics": [
+    "商法則",
+    "切線方程"
+   ],
+   "required_formulas": [
+    "\\frac{d}{dx}\\left(\\frac{u}{v}\\right) = \\frac{vu' - uv'}{v^2}",
+    "y-y_1=m(x-x_1)"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 300,
+   "marks": 7
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用商法則求 dy/dx，化簡後整理成最簡形式。",
+    "marks": 2,
+    "common_error": "微分時忘記負號或分母平方漏掉指數。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "令 y = -2 代入原曲線方程，解出對應的 x 值。",
+    "marks": 1,
+    "common_error": "解二次方程時遺漏一個根或算錯符號。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "將求得的 x 值代入 dy/dx 計算該點的斜率 m。",
+    "marks": 2,
+    "common_error": "代數錯誤導致斜率計算不正確。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "利用點斜式寫出切線方程，並化簡為一般式或斜截式。",
+    "marks": 1,
+    "common_error": "方程未化簡或格式不符合要求。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 5,
+    "what": "檢查另一個 x 值是否也產生有效切線（若存在）。",
+    "marks": 1,
+    "common_error": "忽略第二個解導致答案不完整。",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "此題測試微分技巧與幾何應用，常見失誤在於商法則的符號處理及二次方程根的完整性檢查。",
+  "scaffolding_hints": [
+   "回憶商法則公式：(vu' - uv')/v²",
+   "先解 y=-2 找出切點坐標再求斜率",
+   "注意題目是否要求所有可能的切線"
+  ],
+  "quick_solution_strategy": "先微分，再解 y=-2 得 x 值，代入求 m，最後寫方程。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-01",
+   "K-GEO-02"
+  ],
+  "formula_ids": [
+   "F-GEO-01",
+   "F-GEO-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "5": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

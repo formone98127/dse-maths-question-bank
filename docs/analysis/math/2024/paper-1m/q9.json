@@ -1,0 +1,92 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 1M",
+  "qno": "9",
+  "hash": "#2024P1MQ9"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "正態分佈",
+   "secondary_topics": [
+    "期望與方差",
+    "二項分佈"
+   ],
+   "required_formulas": [
+    "$P(Z > z) = 1 - \\Phi(z)$",
+    "$\\mu_{\\bar{X}} = \\mu$, $\\sigma_{\\bar{X}} = \\frac{\\sigma}{\\sqrt{n}}$",
+    "$E[X] = np$",
+    "$P(X=k) = \\binom{n}{k}p^k(1-p)^{n-k}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 420,
+   "marks": 3
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用標準化公式將 $P(X>5.7)$ 轉為 $Z$ 分佈，解出 $\\mu+1.5\\sigma=5.7$。",
+    "marks": 1,
+    "common_error": "忘記變換符號或查表時讀錯機率值導致方程組錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "利用 $P(\\mu-1.5\\sigma < X < \\mu+1.5\\sigma) = 0.7888$ 建立第二個方程。",
+    "marks": 1,
+    "common_error": "誤以為區間長度直接對應 $2\\sigma$ 而忽略係數 $1.5$。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "聯立兩個方程解出 $\\mu$ 與 $\\sigma$，並檢查答案合理性。",
+    "marks": 1,
+    "common_error": "計算錯誤導致 $\\mu$ 或 $\\sigma$ 數值不符題意範圍。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "正態分佈題目常結合實際情境（如南瓜重量），考生需熟練標準化過程及查表技巧，同時注意區間概率對稱性以簡化解題步驟。",
+  "scaffolding_hints": [
+   "Hint1: 回憶標準正態分佈曲線下 $\\pm z$ 區間的機率與 $z$ 值的對應關係。",
+   "Hint2: 利用題目給出的兩條概率資訊建立關於 $\\mu$ 和 $\\sigma$ 的聯立方程組。",
+   "Hint3: 將複雜的概率描述轉化為標準正態分佈函數 $\\Phi(z)$ 的形式進行計算。"
+  ],
+  "quick_solution_strategy": "先由 $P(X>5.7)=0.3085$ 得 $Z=0.5$，再由對稱性得另一邊 $Z=-0.5$，結合區間長度直接列方程求解參數。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

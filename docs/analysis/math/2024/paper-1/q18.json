@@ -1,0 +1,97 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 1",
+  "qno": "18",
+  "hash": "#2024P1Q18"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "平面幾何",
+   "secondary_topics": [
+    "餘弦定理",
+    "正弦定理",
+    "三維空間距離"
+   ],
+   "required_formulas": [
+    "a^2 = b^2 + c^2 - 2bc cos A",
+    "\\frac{a}{\\sin A} = \\frac{b}{\\sin B}",
+    "d = h sin \\theta"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "在三角形 PQS 中用餘弦定理求 QS",
+    "marks": 2,
+    "common_error": "忘記將角度轉換為弧度或計算錯誤",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "在三角形 QRS 中用正弦定理求角 RQS",
+    "marks": 1,
+    "common_error": "搞錯對邊與角的對應關係",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "將 QS 視為斜邊，利用交角 80 度求高",
+    "marks": 1,
+    "common_error": "混淆平面距離與空間直線距離公式",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "此題結合平面幾何計算與三維空間想像，是近年 DSE 數學卷一常見的高階應用題型，強調學生將二維圖形轉化為三維模型的能力。",
+  "scaffolding_hints": [
+   "先專注於平面 PQS 和 QRS 分別解三角形",
+   "注意 QS 是兩個平面的交線，也是計算空間距離的關鍵",
+   "最短距離即為垂線長度，可用正弦函數表達"
+  ],
+  "quick_solution_strategy": "先用餘弦定理求 QS，再正弦定理求角，最後用三角函數求空間距離。"
+ },
+ "skills": {
+  "topic_id": "T-MEN",
+  "knowledge_point_ids": [
+   "K-MEN-01",
+   "K-MEN-02"
+  ],
+  "formula_ids": [
+   "F-MEN-01",
+   "F-MEN-02",
+   "F-MEN-03",
+   "F-MEN-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

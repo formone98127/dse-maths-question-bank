@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 1",
+  "qno": "15",
+  "hash": "#2017P1Q15"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "對數函數",
+   "secondary_topics": [
+    "圖像性質",
+    "反函數"
+   ],
+   "required_formulas": [
+    "$\\log_b(b^x) = x$",
+    "$y = a + \\log_b(x) \\Rightarrow y-a = \\log_b(x) \\Rightarrow b^{y-a} = x$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "代入點 (243,3) 及 x 截距 9 求常數 a 與 b",
+    "marks": 2,
+    "common_error": "計算錯誤或誤解 x 截距定義為 y=0 時 x=9",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "將方程變形為 $y-a = \\log_b(x)$ 形式",
+    "marks": 1,
+    "common_error": "忘記移項導致指數底數與真數關係錯誤",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "利用對數定義將方程化為指數形式 $x = b^{y-a}$",
+    "marks": 1,
+    "common_error": "未能正確轉換為以 y 表 x 的指數式",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "考評局指出學生擅長由 x 表 y，但在處理對數函數反轉（以 y 表 x）時常忽略指數轉換步驟，導致無法完成最後表達式。",
+  "scaffolding_hints": [
+   "先利用截距與過點條件解出 a, b 的具體數值。",
+   "移項後記得對數定義：$y = \\log_b(x) \\iff x = b^y$。",
+   "最終答案應為 $x$ 關於 $y$ 的多項式或指數形式，而非含 $\\log$ 的式子。"
+  ],
+  "quick_solution_strategy": "先求 a,b，移項得 $y-a=\\log_b x$，再轉化為 $x=b^{y-a}$ 即完成以 y 表 x。"
+ },
+ "skills": {
+  "topic_id": "T-FUN",
+  "knowledge_point_ids": [
+   "K-FUN-01",
+   "K-FUN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

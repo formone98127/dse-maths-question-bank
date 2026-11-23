@@ -1,0 +1,105 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "SP",
+  "paper": "Paper 1",
+  "qno": "9",
+  "hash": "#SPP1Q9"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓形圖",
+   "secondary_topics": [
+    "百分數計算",
+    "比例比較"
+   ],
+   "required_formulas": [
+    "$\\text{角度} = \\frac{\\text{部分數值}}{\\text{總數值}} \\times 360^\\circ$",
+    "$\\text{百分比} = \\frac{\\text{角度}}{360} \\times 100\\%$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "計算 A 區與 B 區的角度差對應的百分比關係。",
+    "marks": 1,
+    "common_error": "直接將角度相減而未考慮總體比例，導致誤算。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 2,
+    "what": "利用 A 區比 B 區大 20% 的條件建立方程式求 x。",
+    "marks": 1,
+    "common_error": "混淆角度與百分比數值，錯誤設定等式。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "解方程式得出 x 的正確數值。",
+    "marks": 1,
+    "common_error": "計算錯誤或移項時符號弄錯。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "計算 A 區與 C 區的實際數值或百分比進行比較。",
+    "marks": 1,
+    "common_error": "僅比較角度而未轉換為相同基準（如總數）。",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "此題測試學生將圖表數據轉化為數值並應用百分數概念的能力，常見失分點在於未能正確連結角度與百分比的轉換邏輯。",
+  "scaffolding_hints": [
+   "提示 1：圓形圖中每度代表多少百分比？（$\\frac{1}{360} \\times 100\\%$）",
+   "提示 2：A 區角度減 B 區角度等於總體數值的 20%，如何列式？",
+   "提示 3：比較 A 與 C 時，是否可以直接比角度？還是需要知道總數？"
+  ],
+  "quick_solution_strategy": "先算出 A、B 角度差對應百分比，再除以 20% 得總體比例係數，進而解 x；最後直接比較 A、C 絕對數值。"
+ },
+ "skills": {
+  "topic_id": "T-CHR",
+  "knowledge_point_ids": [
+   "K-CHR-01",
+   "K-CHR-02"
+  ],
+  "formula_ids": [
+   "F-CHR-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-CHR-01",
+    "formula_id": "F-CHR-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "2": {
+    "knowledge_point_id": "K-CHR-01",
+    "formula_id": "F-CHR-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-CHR-01",
+    "formula_id": "F-CHR-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-CHR-01",
+    "formula_id": "F-CHR-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

@@ -1,0 +1,118 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 1",
+  "qno": "18",
+  "hash": "#2022P1Q18"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "三角比",
+   "secondary_topics": [
+    "餘弦公式",
+    "正弦公式",
+    "幾何性質"
+   ],
+   "required_formulas": [
+    "$c^2 = a^2 + b^2 - 2ab\\cos C$",
+    "$\\frac{a}{\\sin A} = \\frac{b}{\\sin B}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用餘弦公式計算邊 QR 的長度。",
+    "marks": 2,
+    "common_error": "忘記負號或角度轉弧度錯誤，導致平方項計算偏差。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "利用正弦公式求角 PQR，注意取銳角解。",
+    "marks": 1,
+    "common_error": "忽略反正弦函數的兩個可能解，誤選鈍角。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "確認 M 為 QR 中點，計算 PM 長度（需先求其他角或座標）。",
+    "marks": 1,
+    "common_error": "誤以為 PM 垂直於 QR，直接假設直角三角形。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "建立水平線與 PR 夾角關係，求 PM 與水平線夾角。",
+    "marks": 1,
+    "common_error": "混淆內角與外角，未正確應用平行線性質。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 5,
+    "what": "比較計算結果與 40°，判斷工匠宣稱是否正確。",
+    "marks": 1,
+    "common_error": "計算錯誤導致結論相反，或忽略題目要求解釋。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "考生常誤解中線 PM 與底邊 QR 的垂直關係，導致無法正確分析角度大小，需加強幾何直觀訓練。",
+  "scaffolding_hints": [
+   "提示：餘弦公式適用於已知兩邊夾角求第三邊。",
+   "提示：正弦公式求角時，若對邊較小需注意解的唯一性。",
+   "提示：PM 僅為中線而非高線，除非三角形等腰。"
+  ],
+  "quick_solution_strategy": "先用餘弦定理算 QR，再正弦定理算角；注意 PM 非垂線，需透過座標或角度關係求傾角。"
+ },
+ "skills": {
+  "topic_id": "T-TRI",
+  "knowledge_point_ids": [
+   "K-TRI-04"
+  ],
+  "formula_ids": [
+   "F-TRI-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-TRI-04",
+    "formula_id": "F-TRI-04",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-TRI-04",
+    "formula_id": "F-TRI-04",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-TRI-04",
+    "formula_id": "F-TRI-04",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-TRI-04",
+    "formula_id": "F-TRI-04",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "5": {
+    "knowledge_point_id": "K-TRI-04",
+    "formula_id": "F-TRI-04",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

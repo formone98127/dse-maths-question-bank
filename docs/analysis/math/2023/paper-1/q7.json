@@ -1,0 +1,107 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2023",
+  "paper": "Paper 1",
+  "qno": "7",
+  "hash": "#2023P1Q7"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓的性質",
+   "secondary_topics": [
+    "弦切角定理（非適用，此為內接三角形）",
+    "同弧所對之圆周角相等",
+    "直徑與半圓"
+   ],
+   "required_formulas": [
+    "$\\angle$ 於半圓 $= 90^\\circ$",
+    "$\\angle$ 同弧所對 $=$ 相等"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用直徑 $PR$ 判定 $\\angle PSR = 90^\\circ$",
+    "marks": 1,
+    "common_error": "忘記半圓所對角為直角",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "在 $\\triangle PQS$ 中，利用內角和求 $\\angle PQS$",
+    "marks": 1,
+    "common_error": "計算錯誤或搞混已知角度",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "利用同弧 $QS$ 所對角相等，得 $\\angle RQS = \\angle PQS$",
+    "marks": 1,
+    "common_error": "混淆不同弧所對之角",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "利用同弧 $PS$ 所對角相等，得 $\\angle PRS = \\angle PQS$",
+    "marks": 1,
+    "common_error": "未識別題目只問 $\\angle RQS$ 而多算",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "考評報告指出約七成考生能正確運用圓的性質（半圓直角及同弧角相等）解出答案，顯示此類基礎幾何概念掌握度良好。",
+  "scaffolding_hints": [
+   "提示 1：看到直徑 $PR$，立刻聯想半圓上的角是直角。",
+   "提示 2：$\\triangle PQS$ 已知兩角，第三角易求。",
+   "提示 3：觀察 $\\angle RQS$ 與哪一個已知角對著同一條弧 $QS$"
+  ],
+  "quick_solution_strategy": "$\\angle PSR=90^\\circ \\Rightarrow \\angle PQS = 180-90-41=49^\\circ$。因同弧所對角相等，故 $\\angle RQS = \\angle PQS = 49^\\circ$"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-01",
+   "K-GEO-02"
+  ],
+  "formula_ids": [
+   "F-GEO-01",
+   "F-GEO-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

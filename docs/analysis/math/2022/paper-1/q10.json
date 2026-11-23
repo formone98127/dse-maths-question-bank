@@ -1,0 +1,118 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 1",
+  "qno": "10",
+  "hash": "#2022P1Q10"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "變分",
+   "secondary_topics": [
+    "函數模型建立",
+    "圖像性質分析",
+    "不等式求解"
+   ],
+   "required_formulas": [
+    "$y = ax^2 + bx$",
+    "$\\Delta = b^2 - 4ac > 0$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 7
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "根據變分關係設出 f(x) = ax^2 + bx，代入已知點解出 a,b",
+    "marks": 3,
+    "common_error": "忘記 b 項或誤以為是純二次函數",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "計算 y=8f(x) 的 x 截距，即令 f(x)=0 解出 x 值",
+    "marks": 1,
+    "common_error": "未考慮係數 8 對根的影響（實際上無影響）",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "繪製或分析 f(x) 圖像，找出頂點坐標及與 x 軸交點",
+    "marks": 1,
+    "common_error": "頂點計算錯誤導致範圍判斷失誤",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "理解 f(x)=k 有兩相異實根即直線 y=k 與拋物線交於兩點",
+    "marks": 1,
+    "common_error": "混淆大於等於零與大於零的條件",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 5,
+    "what": "建立不等式 k < f(頂點) 且 k > 0 (因另一根在負軸)",
+    "marks": 1,
+    "common_error": "忽略 x 截距位置導致範圍多寫或少寫",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "考生普遍能正確建立變分函數模型，但在處理圖像交點數量與係數關係時偶有概念混淆，需加強對「相異實根」嚴格不等式的理解。",
+  "scaffolding_hints": [
+   "提示：正變於 x^2 意味著含 ax^2 項，正變於 x 意味著含 bx 項。",
+   "知識：變分函數形式為 f(x) = ax^n + bx^m，此處 n=2, m=1。",
+   "破題：先求 a,b 得完整式子，再畫圖觀察 y=k 與曲線交點情況。"
+  ],
+  "quick_solution_strategy": "設 f(x)=ax^2+bx，代數解出係數後直接畫草圖判斷 k 範圍，注意頂點高度與 x 軸截距。"
+ },
+ "skills": {
+  "topic_id": "T-VAR",
+  "knowledge_point_ids": [
+   "K-VAR-01"
+  ],
+  "formula_ids": [
+   "F-VAR-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "5": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

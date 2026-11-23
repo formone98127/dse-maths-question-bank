@@ -1,0 +1,91 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "PP",
+  "paper": "Paper 1M",
+  "qno": "3",
+  "hash": "#PPP1MQ3"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "微分法",
+   "secondary_topics": [
+    "相關變化率",
+    "幾何圖形面積體積公式"
+   ],
+   "required_formulas": [
+    "$V = \\frac{1}{3}\\pi r^2 h$",
+    "$A = \\pi r\\sqrt{r^2+h^2}$",
+    "$\\frac{dV}{dt} = -2\\pi$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用相似三角形將 h 用 r 表示，代入 V 與 A 公式。",
+    "marks": 2,
+    "common_error": "忘記相似比導致 h 與 r 關係錯誤；未化簡成僅含 r 的式子。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "對 V 關於 t 微分，代入 dr/dt 求值 (r=3)。",
+    "marks": 2,
+    "common_error": "鏈式法則應用錯誤；忘記 dV/dt 為負值（水流出）。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "對 A 關於 t 微分，代入 r=3 及剛求得的 dr/dt。",
+    "marks": 2,
+    "common_error": "乘積法則或鏈式法則計算出錯；未將 r=3 代入化簡。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "此題測試學生在相關變化率中處理幾何約束條件的能力，常見失分點在於未能正確建立變量間的關係式或微分運算細節疏失。",
+  "scaffolding_hints": [
+   "提示：利用倒立錐的相似三角形性質，找出 h 與 r 的線性關係。",
+   "提示：記住體積公式 V 對 t 求導時需使用鏈式法則 dV/dt = (dV/dr) * (dr/dt)。",
+   "提示：面積 A 包含根號項，微分時注意乘積法則與鏈式法則的組合應用。"
+  ],
+  "quick_solution_strategy": "先由相似比得 h=5/3 r，代換 V, A 成單變量；再分別對 t 求導並代入數值計算。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

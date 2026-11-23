@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 1",
+  "qno": "2",
+  "hash": "#2013P1Q2"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "字串",
+   "secondary_topics": [
+    "主項變換",
+    "分式運算",
+    "移項整理"
+   ],
+   "required_formulas": [
+    "$\\frac{A}{B} = C \\Rightarrow A = BC$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90,
+   "marks": 3
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "將等式兩邊同時乘以 $k$，消去分母中的 $k$。",
+    "marks": 1,
+    "common_error": "直接移項忘記變號，或錯誤處理 $\\frac{1}{k}$ 為 $-1$。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 2,
+    "what": "將含 $h$ 的項移到左邊，常數項移到右邊。",
+    "marks": 1,
+    "common_error": "移項時忘記改變符號，例如 $-\\frac{3}{h}$ 變為 $+\\frac{3}{h}$。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "通分合併左邊，並化簡右邊常數。",
+    "marks": 1,
+    "common_error": "通分錯誤或未能將 $k$ 提至最前作為主項。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "考生需警惕處理分式時對倒數與移項的混淆，特別是 $\\frac{1}{k}$ 移項後應變為 $-1$ 而非直接消去。",
+  "scaffolding_hints": [
+   "Hint1: 主項變換的核心是將 $k$ 單獨留在等號一側。",
+   "Hint2: 處理分式時，先考慮通分或交叉相乘消除分母。",
+   "Hint3: 移項務必檢查符號是否正確改變。"
+  ],
+  "quick_solution_strategy": "將 $\\frac{1}{k}$ 移至右邊得 $\\frac{3}{h}-2$，再取倒數並化簡即得 $k = \\frac{h}{3-2h}$。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-POL-07",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "2": {
+    "knowledge_point_id": "K-POL-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-POL-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

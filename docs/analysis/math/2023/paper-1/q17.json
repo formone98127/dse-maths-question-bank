@@ -1,0 +1,105 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2023",
+  "paper": "Paper 1",
+  "qno": "17",
+  "hash": "#2023P1Q17"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "三角學",
+   "secondary_topics": [
+    "餘弦公式",
+    "正弦公式",
+    "空間幾何交角"
+   ],
+   "required_formulas": [
+    "$a^2 = b^2 + c^2 - 2bc \\cos A$",
+    "$\\frac{a}{\\sin A} = \\frac{b}{\\sin B}$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 180,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用餘弦公式求 WY，再套正弦公式求∠XWY",
+    "marks": 2,
+    "common_error": "直接套用正弦公式導致雙解或忽略邊長關係",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 2,
+    "what": "確認 WZ=XZ=YZ，推斷側面三角形全等",
+    "marks": 1,
+    "common_error": "忽略題目給出的邊長相等條件",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 3,
+    "what": "計算 XY 與 XZ 夾角（即三角形 XYZ 與底面交角）",
+    "marks": 1,
+    "common_error": "混淆線面角與面面角的定義",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "比較計算結果與 45°，並解釋原因",
+    "marks": 2,
+    "common_error": "未進行數值比較或缺乏文字解釋",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "考評報告指出大部分考生未能識別空間中兩個三角形平面的交角，顯示學生對三維幾何中「面面角」的概念理解不足，常誤將線面角或側棱與底邊的夾角當作所求。",
+  "scaffolding_hints": [
+   "提示 1：先畫出平面圖，標記已知邊長與角度。",
+   "提示 2：利用餘弦公式求出 WY 的長度是關鍵步驟。",
+   "提示 3：注意 WZ=XZ=YZ 意味著三個側面三角形全等，交角即為 XY 與 XZ 的夾角。"
+  ],
+  "quick_solution_strategy": "先算 WY 再用正弦定理得角度；由全等知 XY 與 XZ 夾角等於 WXY 中 XY 與 WX 夾角的餘角關係，直接比較大小。"
+ },
+ "skills": {
+  "topic_id": "T-TRI",
+  "knowledge_point_ids": [
+   "K-TRI-04"
+  ],
+  "formula_ids": [
+   "F-TRI-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-TRI-04",
+    "formula_id": "F-TRI-04",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "2": {
+    "knowledge_point_id": "K-TRI-04",
+    "formula_id": "F-TRI-04",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "3": {
+    "knowledge_point_id": "K-TRI-04",
+    "formula_id": "F-TRI-04",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-TRI-04",
+    "formula_id": "F-TRI-04",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

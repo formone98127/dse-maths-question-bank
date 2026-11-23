@@ -1,0 +1,116 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": 2025,
+  "paper": "Paper 1",
+  "qno": 8,
+  "hash": "#2025P1Q8"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "全等與相似三角形",
+   "secondary_topics": [
+    "平行線性質",
+    "中點定義",
+    "周長計算"
+   ],
+   "required_formulas": [
+    "$\\triangle ABC \\equiv \\triangle DEF$ (ASA/CAS)",
+    "$\\frac{Perimeter_1}{Perimeter_2} = \\text{Scale Factor}$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 180,
+   "marks": 5
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用平行線及中點證明 $\\triangle SUW \\equiv \\triangle TVW$ (ASA)。",
+    "marks": 2,
+    "common_error": "誤以為 W 是 UV 中點，或漏寫平行線導出的內錯角相等。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "由全等得出 $TV = SU = 57$ 及 $TW = SW = 63$。",
+    "marks": 1,
+    "common_error": "忘記將已知長度轉移至 $\\triangle TVX$ 的邊上。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "利用相似比計算 $VX$ 與 $WX$ 對應的 $TV$ 長度關係。",
+    "marks": 1,
+    "common_error": "搞錯相似三角形的頂點對應順序，導致比例式錯誤。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 4,
+    "what": "計算 $\\triangle TVX$ 的三邊長度：$TV, VX, TX$。",
+    "marks": 1,
+    "common_error": "將 $TX$ 算錯（應為 $TW - WX$），或漏加某一邊。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "將三邊相加得出最終周長答案。",
+    "marks": 1,
+    "common_error": "計算錯誤或單位未標註（題目有 cm）。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "考生常因混淆全等與相似的對應點，或在相似比應用時選錯三角形邊長（如選 $\\triangle VWX$ 而非 $\\triangle TVX$）而失分。",
+  "scaffolding_hints": [
+   "Hint1: 平行線 $SU \\parallel VT$ 會產生哪兩組內錯角相等？",
+   "Hint2: 全等證明後，哪些線段長度可以互換使用？",
+   "Hint3: 相似三角形 $\\triangle SUW \\sim \\triangle VXW$ 的對應邊比例如何設定？"
+  ],
+  "quick_solution_strategy": "先證全等得邊長，再依相似比求第三邊，最後加總三邊。注意頂點順序 $S-V, U-X, W-W$"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-05"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "4": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

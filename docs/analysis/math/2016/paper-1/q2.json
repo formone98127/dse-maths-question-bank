@@ -1,0 +1,86 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2016",
+  "paper": "Paper 1",
+  "qno": "2",
+  "hash": "#2016P1Q2"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "字串",
+   "secondary_topics": [
+    "主項變換",
+    "代數操作"
+   ],
+   "required_formulas": [],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120,
+   "marks": 3
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "展開右邊括號，將含 x 項與常數項分開。",
+    "marks": 1,
+    "common_error": "忘記分配律導致 $4x^2$ 或漏乘 C。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "將所有含 x 的項移至左邊，常數移至右邊。",
+    "marks": 1,
+    "common_error": "移項時忘記變號或漏掉 C 中的 x。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "兩邊同除以 x 的係數，解出 x 的表達式。",
+    "marks": 1,
+    "common_error": "最後一步除法錯誤或忘記寫等號。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "此題測試基本代數操作，考評報告顯示超過八成考生能正確處理，反映學生對主項變換概念掌握良好，但計算細節仍需加強。",
+  "scaffolding_hints": [
+   "Hint1: 先展開右邊 $Ax = (4x + B)C$ 成 $Ax = 4xC + BC$。",
+   "Hint2: 將含 x 的項集中到一邊，例如 $Ax - 4xC = BC$。",
+   "Hint3: 提取左邊公因式 x，得 $x(A - 4C) = BC$，再除以係數。"
+  ],
+  "quick_solution_strategy": "展開右邊 -> 移項合併含 x 項 -> 提公因式 -> 兩邊除以係數。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-POL-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-POL-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-POL-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

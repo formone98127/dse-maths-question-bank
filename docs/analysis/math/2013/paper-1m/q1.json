@@ -1,0 +1,115 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 1M",
+  "qno": "1",
+  "hash": "#2013P1MQ1"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "二項式展開",
+   "secondary_topics": [
+    "指數與對數函數",
+    "係數比較"
+   ],
+   "required_formulas": [
+    "$\\binom{n}{r}a^{n-r}b^r$",
+    "$e^x = 1 + x + \\frac{x^2}{2!} + \\dots$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 5
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "展開 (a) 式，列出 $u$ 的降冪排列各項。",
+    "marks": 2,
+    "common_error": "忘記組合數計算或指數運算錯誤導致係數不對。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "將 (b) 式中的 $e^{ax}$ 與 $e^{-ax}$ 展開至 $x^2$ 項。",
+    "marks": 1,
+    "common_error": "忘記泰勒級數展開公式或寫錯符號（如負號）。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "將兩部分相乘並合併同類項，找出 $x^2$ 的係數。",
+    "marks": 1,
+    "common_error": "乘法分配律應用錯誤或忽略交叉項（如 $ax \\cdot -ax$）。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 4,
+    "what": "根據題目條件係數等於 2，建立關於 $a$ 的方程。",
+    "marks": 1,
+    "common_error": "方程式列錯或忘記除以分母（如階乘）。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 5,
+    "what": "解方程找出所有可能的 $a$ 值並寫出答案。",
+    "marks": 1,
+    "common_error": "漏解平方根的正負兩解或計算錯誤。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "此題結合二項式與指數展開，重點測試學生對泰勒級數的熟練度及處理係數運算的能力，常因符號混亂失分。",
+  "scaffolding_hints": [
+   "先回憶 $e^x$ 的馬克勞林級數展開式。",
+   "注意 $(A+B)^4$ 中交叉項的計算細節。",
+   "解完方程後務必檢查是否有遺漏解。"
+  ],
+  "quick_solution_strategy": "直接套用二項式定理與 $e^x$ 展開式，合併 $x^2$ 係數後解簡單二次方程即可。"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "4": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "5": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

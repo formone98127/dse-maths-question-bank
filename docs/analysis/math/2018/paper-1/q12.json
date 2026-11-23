@@ -1,0 +1,133 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2018",
+  "paper": "Paper 1",
+  "qno": "12",
+  "hash": "#2018P1Q12"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "多項式",
+   "secondary_topics": [
+    "因式定理",
+    "餘式定理",
+    "有理根定理"
+   ],
+   "required_formulas": [
+    "$P(c) = 0$ (若 $x-c$ 為因式)",
+    "$R = P(-d)$ (若除以 $x+d$，餘數)"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 7
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用 $x-3$ 為因式，代入 $x=3$ 得方程求關係式",
+    "marks": 2,
+    "common_error": "誤以為 $f(-3)=0$ 或忘記展開 $(x+1)^2$",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 2,
+    "what": "利用除以 $x+2$ 餘數為 $2b+165$，代入 $x=-2$",
+    "marks": 2,
+    "common_error": "代入時符號錯誤，如用 $f(2)$ 代替",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "聯立兩方程解出 $a$ 與 $b$ 的確切數值",
+    "marks": 1,
+    "common_error": "計算錯誤導致 $a,b$ 值不正確",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "寫出 $f(x)=0$ 的完整方程式並嘗試因式分解",
+    "marks": 1,
+    "common_error": "未正確代入 $a,b$ 值，或分解失敗",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 5,
+    "what": "檢查所有根是否為有理數（整數或分數）",
+    "marks": 1,
+    "common_error": "忽略重根情況，或誤判無理根",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 6,
+    "what": "根據有理根定理結論：若有理根已盡，則無無理根",
+    "marks": 0,
+    "common_error": "混淆無理根與非實根（虛數）",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "考生常將『無理根』誤解為包含虛數，實際上此題所有根均為有理數，故宣稱有無理根者錯誤。",
+  "scaffolding_hints": [
+   "Hint1: 因式定理 $x-3$ 是因子 $\\Rightarrow f(3)=0$。",
+   "Hint2: 餘式定理 $f(x) \\div (x+2)$ 餘數 $\\Rightarrow f(-2)=2b+165$。",
+   "Hint3: 解出 $a,b$ 後，觀察方程是否可分解為有理係數一次因式之積。"
+  ],
+  "quick_solution_strategy": "先代 $x=3$ 與 $x=-2$ 得兩方程聯立解 $a,b$；再代入原式檢查根性質，確認全為有理數即否定無理根。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-04",
+   "K-POL-05"
+  ],
+  "formula_ids": [
+   "F-POL-04",
+   "F-POL-05"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-POL-04",
+    "formula_id": "F-POL-04",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "2": {
+    "knowledge_point_id": "K-POL-04",
+    "formula_id": "F-POL-04",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-POL-04",
+    "formula_id": "F-POL-04",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-POL-04",
+    "formula_id": "F-POL-04",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "5": {
+    "knowledge_point_id": "K-POL-04",
+    "formula_id": "F-POL-04",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "6": {
+    "knowledge_point_id": "K-POL-04",
+    "formula_id": "F-POL-04",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

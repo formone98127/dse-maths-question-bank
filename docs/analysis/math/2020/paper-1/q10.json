@@ -1,0 +1,104 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2020",
+  "paper": "Paper 1",
+  "qno": "10",
+  "hash": "#2020P1Q10"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "變分",
+   "secondary_topics": [
+    "正比例關係",
+    "代數方程求解",
+    "不等式比較"
+   ],
+   "required_formulas": [
+    "$P = a + bh^3$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "建立模型：設 P = a + bh^3，代入 h=3 與 h=7 的數據。",
+    "marks": 2,
+    "common_error": "忘記常數項 a，誤以為 P 與 h^3 成正比。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "聯立兩個方程解出常數 a 及 b 的值。",
+    "marks": 1,
+    "common_error": "計算錯誤導致 a 或 b 值不正確。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "將 h=4 代入完整公式，計算出單個紀念品價錢。",
+    "marks": 1,
+    "common_error": "忘記加上常數項 a，只計算 bh^3 部分。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "比較 h=5 的單價與兩個 h=4 總價，並解釋原因。",
+    "marks": 1,
+    "common_error": "計算錯誤或未能清楚說明宣稱不正確的原因。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "根據考評報告，大部分考生能正確建立模型並進行比較，顯示學生對變分概念理解良好，但需注意計算細節以避免失分。",
+  "scaffolding_hints": [
+   "啟發：題目提到 P 的一部分為常數，另一部分隨 h^3 正變，這提示我們需要一個包含常數項的線性組合模型。",
+   "知識：變分問題中，若某量與另一量的立方成正比，則關係式應寫為 y = a + bx^3。",
+   "破題：先利用兩個已知條件建立方程組，解出未知常數後再進行後續計算與比較。"
+  ],
+  "quick_solution_strategy": "設 P = a + bh³，代入兩組數據解得 a, b；計算 h=4 時 P 值；比較 P(5) 與 2P(4)。"
+ },
+ "skills": {
+  "topic_id": "T-VAR",
+  "knowledge_point_ids": [
+   "K-VAR-01"
+  ],
+  "formula_ids": [
+   "F-VAR-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

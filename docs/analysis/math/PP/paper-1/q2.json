@@ -1,0 +1,86 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "PP",
+  "paper": "Paper 1",
+  "qno": "2",
+  "hash": "#PPP1Q2"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "字串",
+   "secondary_topics": [
+    "主項變換",
+    "代數式操作"
+   ],
+   "required_formulas": [],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90,
+   "marks": 3
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "將等式右邊展開，移項使含 a 的項集中。",
+    "marks": 1,
+    "common_error": "忘記將分母乘過去或移項時變號錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "整理方程，將所有包含 a 的項移到一邊。",
+    "marks": 1,
+    "common_error": "計算出錯導致係數不正確。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "提取公因式 a 並解出 a 的表達式。",
+    "marks": 1,
+    "common_error": "最後一步除法錯誤或忘記括號。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "此題測試學生處理分數方程及主項變換的基本能力，常見失誤在於移項與合併同類項時的符號處理不當。",
+  "scaffolding_hints": [
+   "先將分母清除，再集中 a 的項。",
+   "注意移項時正負號的變化。",
+   "最後檢查表達式是否為 a = ... 形式。"
+  ],
+  "quick_solution_strategy": "展開右邊，移項合併含 a 項，除以 a 係數即可。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-POL-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-POL-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-POL-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

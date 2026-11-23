@@ -1,0 +1,105 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2015",
+  "paper": "Paper 1",
+  "qno": "5",
+  "hash": "#2015P1Q5"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "一元一次不等式",
+   "secondary_topics": [
+    "複合不等式求解",
+    "不等式解集交集",
+    "整數範圍判斷"
+   ],
+   "required_formulas": [
+    "$\\frac{7-3x}{5} \\leq 2(x+2)$",
+    "$4x-13 > 0$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "解不等式 $\\frac{7-3x}{5} \\leq 2(x+2)$",
+    "marks": 1,
+    "common_error": "去分母時漏乘右邊項，或移項變號錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "解不等式 $4x-13 > 0$",
+    "marks": 1,
+    "common_error": "移項時忘記改變符號，導致解集方向錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "將兩解集寫成區間形式並求交集",
+    "marks": 1,
+    "common_error": "畫數軸時混淆「大於」與「小於」方向。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 4,
+    "what": "從交集範圍中找出最小整數",
+    "marks": 1,
+    "common_error": "誤選非整數或超出解集範圍的數字。",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "根據考評報告，複合不等式是易錯點，考生需特別注意去分母及移項時的符號變化，並準確畫出數軸交集。",
+  "scaffolding_hints": [
+   "先分別解兩個獨立不等式，再求共同滿足的範圍。",
+   "記得去分母時，不等式兩邊所有項都要乘以 5。",
+   "最後一步只需在解集左端點附近找第一個整數。"
+  ],
+  "quick_solution_strategy": "先解出兩個不等式的 $x$ 範圍，畫數軸取交集，再讀取最小整數。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-05"
+  ],
+  "formula_ids": [
+   "F-EQN-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

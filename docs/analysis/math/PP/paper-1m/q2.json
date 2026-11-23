@@ -1,0 +1,120 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "PP",
+  "paper": "Paper 1M",
+  "qno": "2",
+  "hash": "#PPP1MQ2"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "對數與微分",
+   "secondary_topics": [
+    "鏈式法則",
+    "隱函數微分"
+   ],
+   "required_formulas": [
+    "\\frac{d}{dx}(e^u) = e^u \\cdot u'"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 5
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "對 t 關於 y 微分，得 dt/dy。",
+    "marks": 1,
+    "common_error": "忘記處理負指數項的係數變化。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "對 e^t = x^{x^2+1} 兩邊取自然對數。",
+    "marks": 1,
+    "common_error": "錯用 log(ab) 公式或忘記底數變換。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "將右側指數 x^{x^2+1} 轉換為 (x^2+1)ln x。",
+    "marks": 1,
+    "common_error": "微分前未正確處理指數函數結構。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 4,
+    "what": "對兩邊關於 x 微分，應用鏈式法則。",
+    "marks": 1,
+    "common_error": "忘記左側 e^t 的導數需乘 t'。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "整理方程並代入 dt/dy 求 dy/dx。",
+    "marks": 1,
+    "common_error": "代換時未保持 y 與 x 關係一致。",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "此題測試學生處理複雜指數對數混合式及鏈式法則的熟練度，常見失分點在於隱函數微分時的步驟跳躍。",
+  "scaffolding_hints": [
+   "先練習單純指數函數取對數的技巧。",
+   "回顧 a^b 型式的微分公式：a^u \\cdot u' ln a。",
+   "將 dt/dy 視為中間變量代入最終式子。"
+  ],
+  "quick_solution_strategy": "先求 dt/dy，再取對數化簡 e^t 式，最後聯立消去 t 得 dy/dx。"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-01",
+   "K-EXP-02"
+  ],
+  "formula_ids": [
+   "F-EXP-01",
+   "F-EXP-02",
+   "F-EXP-03",
+   "F-EXP-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EXP-01",
+    "formula_id": "F-EXP-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EXP-01",
+    "formula_id": "F-EXP-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-EXP-01",
+    "formula_id": "F-EXP-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "4": {
+    "knowledge_point_id": "K-EXP-01",
+    "formula_id": "F-EXP-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-EXP-01",
+    "formula_id": "F-EXP-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

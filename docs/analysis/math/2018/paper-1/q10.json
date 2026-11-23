@@ -1,0 +1,132 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2018",
+  "paper": "Paper 1",
+  "qno": "10",
+  "hash": "#2018P1Q10"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "統計",
+   "secondary_topics": [
+    "分佈域",
+    "四分位數間距",
+    "離差"
+   ],
+   "required_formulas": [
+    "\\text{分佈域} = \\text{最大值} - \\text{最小值}",
+    "\\text{四分位數間距} = Q_3 - Q_1"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用箱線圖讀取已知極值與四分位數位置。",
+    "marks": 2,
+    "common_error": "誤將中位數當作 Q3 或混淆四分位數定義。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 2,
+    "what": "建立方程：Q3-Q1=21 及 Max-Min=43。",
+    "marks": 2,
+    "common_error": "列式錯誤，如將 a,b 代入位置而非數值。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "解聯立方程組求出 a 與 b 的具體數值。",
+    "marks": 1,
+    "common_error": "計算錯誤或代回驗證時出錯。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "列出 Y 組數據：38, 38, 38, x, y。",
+    "marks": 1,
+    "common_error": "忽略 Y 組只有五人，誤以為是連續分佈。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 5,
+    "what": "分析合併後數據集的最小值與最大值變化。",
+    "marks": 1,
+    "common_error": "假設合併後極值不變，忽略 Y 組可能提供更小或更大值。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 6,
+    "what": "結論：因 Y 組未知數可能改變極值，故分佈域未必相同。",
+    "marks": 1,
+    "common_error": "僅說「不同意」但未解釋原因導致扣分。",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "考評報告指出考生常難以解釋為何合併後分佈域會改變，需強調新數據組可能引入新的極值點。",
+  "scaffolding_hints": [
+   "回顧箱線圖中 a, b 分別對應 Q1 與 Q3 的位置定義。",
+   "分佈域公式為最大值減最小值，四分位數間距為 Q3 減 Q1。",
+   "思考：加入一組新數據（Y 組），是否可能讓整體的最大值變大或最小值變小？"
+  ],
+  "quick_solution_strategy": "先由箱線圖讀出 Q1=a, Q3=b，列式 b-a=21；再由極值關係 Max-Min=43 解 a,b。第二部分強調 Y 組未知數可能改變極值。"
+ },
+ "skills": {
+  "topic_id": "T-STA",
+  "knowledge_point_ids": [
+   "K-STA-01",
+   "K-STA-02"
+  ],
+  "formula_ids": [
+   "F-STA-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "2": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "5": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "6": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

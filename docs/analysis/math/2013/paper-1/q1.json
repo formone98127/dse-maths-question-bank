@@ -1,0 +1,92 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 1",
+  "qno": "1",
+  "hash": "#2013P1Q1"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "指數定律",
+   "secondary_topics": [
+    "冪的乘法",
+    "冪的除法",
+    "冪的乘方"
+   ],
+   "required_formulas": [
+    "$a^m \\cdot a^n = a^{m+n}$",
+    "$\\frac{a^m}{a^n} = a^{m-n}$",
+    "$(ab)^n = a^n b^n$",
+    "$(a^m)^n = a^{mn}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90,
+   "marks": 3
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "展開分母 $(x^5y)^6$，利用冪的乘方律將係數與變數分開處理。",
+    "marks": 1,
+    "common_error": "誤以為 $(x^5y)^6=x^{11}y^6$ 或 $x^5y^6$，忘記對每個因子取冪。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "應用冪的除法律 $\\frac{x^{20}}{x^{30}}$ 與 $\\frac{y^{13}}{y^6}$ 合併同底數。",
+    "marks": 1,
+    "common_error": "除時指數運算錯誤，如將 $20-30$ 算錯或符號弄反。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "計算最終指數並確保所有指數為正，整理成標準形式。",
+    "marks": 1,
+    "common_error": "出現負指數未轉換成正指數，如寫成 $x^{-10}y^7$。",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "考評報告指出考生常誤解冪的乘方律，將 $(ab)^n$ 錯誤展開為 $a^n b$ 或混淆指數運算規則，導致答案出現負指數或係數錯誤。",
+  "scaffolding_hints": [
+   "先處理分母的冪：$(x^5y)^6 = (x^5)^6 \\cdot y^6$",
+   "記住公式 $(a^m)^n = a^{mn}$，這裡是 $5\\times6=30$ 與 $1\\times6=6$",
+   "最後用 $20-30=-10$ 與 $13-6=7$，並將負指數變成正指數"
+  ],
+  "quick_solution_strategy": "展開分母得 $x^{30}y^6$，相除得 $x^{-10}y^7$，轉正指數為 $\\frac{y^7}{x^{10}}$"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

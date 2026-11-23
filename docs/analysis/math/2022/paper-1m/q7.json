@@ -1,0 +1,129 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 1M",
+  "qno": "7",
+  "hash": "#2022P1MQ7"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "微分法",
+   "secondary_topics": [
+    "指數函數求導",
+    "對數運算",
+    "定積分應用"
+   ],
+   "required_formulas": [
+    "\\frac{d}{dx}(a^{u}) = a^u \\ln a \\cdot u'"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 180,
+   "marks": 5
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "計算 g'(9) 與 g'(4) 的表達式並建立等式",
+    "marks": 2,
+    "common_error": "忘記對指數函數求導時需乘以 ln(底數)",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 2,
+    "what": "代入 x=9 與 x=4 化簡數值關係",
+    "marks": 1,
+    "common_error": "計算 3 的冪次或根號時出錯",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "取自然對數解出 β 的值並驗證",
+    "marks": 1,
+    "common_error": "忘記除以 ln(3) 或移項錯誤",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "將 β=-1/2 代回原導數式子",
+    "marks": 0,
+    "common_error": "無",
+    "error_category": null
+   },
+   {
+    "step": 5,
+    "what": "對 g'(x) 積分求 g(x) 的表達式",
+    "marks": 1,
+    "common_error": "忘記加上積分常數 C",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 6,
+    "what": "利用 g(4)=0 定出 C 並計算 g(9)",
+    "marks": 0,
+    "common_error": "無",
+    "error_category": null
+   }
+  ],
+  "exam_report_insight": "此題結合指數函數求導與對數運算，考生需熟練處理底數不同於 e 的指數函數微分公式，並能正確運用定積分概念求解函數值。",
+  "scaffolding_hints": [
+   "回憶 a^u 的微分公式：a^u \\cdot u' \\ln a",
+   "將 g'(9)=2g'(4) 寫成含 β 的方程式",
+   "積分時注意指數與係數的處理"
+  ],
+  "quick_solution_strategy": "先求導數在 9 和 4 的值，取對數解 β，再積分並代入條件求值。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": null
+   },
+   "5": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "6": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": null
+   }
+  }
+ }
+}

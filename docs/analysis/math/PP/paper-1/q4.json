@@ -1,0 +1,107 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "PP",
+  "paper": "Paper 1",
+  "qno": "4",
+  "hash": "#PPP1Q4"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "利潤與虧損",
+   "secondary_topics": [
+    "百分數應用",
+    "成本、售價、利潤關係"
+   ],
+   "required_formulas": [
+    "$\\text{售價} = \\text{標價} \\times (1 - \\text{折扣率})$",
+    "$\\text{利潤} = \\text{售價} - \\text{成本}$",
+    "$\\text{獲利百分數} = \\frac{\\text{利潤}}{\\text{成本}} \\times 100\\%$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "設標價為 $x$，用 $x$ 表示售價。",
+    "marks": 1,
+    "common_error": "忘記將折扣率轉為小數或百分號計算錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "利用獲利公式建立方程式：$\\frac{0.8x - 360}{360} = 0.3$。",
+    "marks": 1,
+    "common_error": "將利潤率誤算為售價與成本之比而非利潤除以成本。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "整理方程式，計算 $0.8x - 360 = 108$。",
+    "marks": 1,
+    "common_error": "移項時符號錯誤或乘法分配律運用不當。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "解出 $x$ 並檢查答案是否符合題意。",
+    "marks": 1,
+    "common_error": "計算結果未驗證是否為合理價格或單位錯誤。",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "此類利潤問題常考於中四至中五，重點在於區分成本、售價與利潤的定義，學生易混淆利潤率計算基準。",
+  "scaffolding_hints": [
+   "先畫出「成本 vs 售價」關係圖，標註折扣後價格位置。",
+   "記住公式：獲利% = (售價 - 成本) / 成本 × 100%。",
+   "設未知數 $x$ 代表標價，將文字轉化為代數式。"
+  ],
+  "quick_solution_strategy": "設標價 $x$，售價 $0.8x$，利潤 $0.3 \\times 360=108$，故 $0.8x-360=108$，解得 $x=540$"
+ },
+ "skills": {
+  "topic_id": "T-PCT",
+  "knowledge_point_ids": [
+   "K-PCT-01",
+   "K-PCT-02"
+  ],
+  "formula_ids": [
+   "F-PCT-01",
+   "F-PCT-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

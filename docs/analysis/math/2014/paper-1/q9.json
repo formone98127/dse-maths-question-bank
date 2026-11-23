@@ -1,0 +1,116 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 1",
+  "qno": "9",
+  "hash": "#2014P1Q9"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "平面幾何",
+   "secondary_topics": [
+    "相似三角形判定",
+    "畢氏定理",
+    "三角比"
+   ],
+   "required_formulas": [
+    "\\frac{AB}{BD} = \\frac{BC}{DC} = \\frac{AC}{BC}",
+    "a^2 + b^2 = c^2"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 5
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "列出兩個三角形的對應角相等條件。",
+    "marks": 2,
+    "common_error": "只寫出一組角相等，忽略公共角 C。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 2,
+    "what": "根據 AA 判定法證明三角形相似。",
+    "marks": 1,
+    "common_error": "寫錯對應頂點順序導致比例式錯誤。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "利用相似比計算 CD 的長度。",
+    "marks": 1,
+    "common_error": "誤以為 AC=CD 或混淆對應邊。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "計算 BC² + CD² 與 BD² 的數值。",
+    "marks": 1,
+    "common_error": "計算錯誤或平方運算出錯。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "比較結果並下結論是否為直角三角形。",
+    "marks": 0,
+    "common_error": "未明確寫出「是」或「否」。",
+    "error_category": null
+   }
+  ],
+  "exam_report_insight": "考生常混淆相似與全等條件，且在計算 CD 時易誤將 AC 當作 CD，需強調對應邊比例關係。",
+  "scaffolding_hints": [
+   "回顧 AA 相似判定定理：兩組角相等即可。",
+   "注意公共角 C 是關鍵的一組相等角。",
+   "相似三角形對應邊成比例，寫出正確比例式再代入數值。"
+  ],
+  "quick_solution_strategy": "先證相似得比例式求 CD，再用畢氏定理檢驗三邊關係。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-05"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "2": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": null
+   }
+  }
+ }
+}

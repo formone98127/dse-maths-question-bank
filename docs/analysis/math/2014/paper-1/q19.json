@@ -1,0 +1,106 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 1",
+  "qno": "19",
+  "hash": "#2014P1Q19"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "概率",
+   "secondary_topics": [
+    "期望值",
+    "獨立事件",
+    "條件概率"
+   ],
+   "required_formulas": [
+    "E[X] = \\sum x P(x)",
+    "P(A|B) = P(A \\cap B) / P(B)",
+    "P(\\text{無代幣}) = 1 - P(\\text{獲代幣})"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 300,
+   "marks": 10
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "計算佩玲勝出第一回合的概率 (幾何級數求和)。",
+    "marks": 3,
+    "common_error": "忽略輪流投擲機制，直接用 1/6 或算錯無限項和。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 2,
+    "what": "計算選項 1 下獲 0、5、10 代幣的三種情況概率。",
+    "marks": 3,
+    "common_error": "誤算相鄰管子組合數，或忽略「同一管子」與「相鄰」互斥。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "計算選項 1 的期望值並比較兩選項大小。",
+    "marks": 2,
+    "common_error": "遺漏獲 0 代幣的概率，導致期望值算錯。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "計算佩玲不獲代幣的總概率 (第一回合輸且第二回合無代幣)。",
+    "marks": 2,
+    "common_error": "未考慮第一回合勝負對第二回合參與者的影響。",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "考評報告指出考生普遍無法正確處理多階段獨立事件及相鄰組合計數，導致期望值與條件概率計算錯誤。",
+  "scaffolding_hints": [
+   "第一回合佩玲勝出需考慮她先投、志偉後投的無限循環情況。",
+   "選項 1 中「同一管子」有 8 種可能，「相鄰」有 7 種可能 (1-2, 2-3...7-8)。",
+   "佩玲不獲代幣 = (佩玲輸第一回合) × (第二回合無代幣概率)"
+  ],
+  "quick_solution_strategy": "先求佩玲勝率，再算選項 1 期望值選最大者，最後用互斥事件求總體不獲代幣機率。"
+ },
+ "skills": {
+  "topic_id": "T-PROB",
+  "knowledge_point_ids": [
+   "K-PROB-04"
+  ],
+  "formula_ids": [
+   "F-PROB-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "2": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

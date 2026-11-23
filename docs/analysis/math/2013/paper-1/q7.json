@@ -1,0 +1,129 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 1",
+  "qno": "7",
+  "hash": "#2013P1Q7"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "平面幾何",
+   "secondary_topics": [
+    "全等三角形證明",
+    "相似三角形判定",
+    "公共邊概念"
+   ],
+   "required_formulas": [
+    "SAS (Side-Angle-Side)",
+    "AA (Angle-Angle)"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 180,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用已知角相等及公共邊，證明△ABC ≅ △DCB (SAS/AAS)",
+    "marks": 3,
+    "common_error": "忽略 BC 為公共邊，或錯誤使用 SSA 判定全等。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 2,
+    "what": "由△ABC ≅ △DCB 推導對應角相等 (∠ACB = ∠DBC)",
+    "marks": 1,
+    "common_error": "未能正確找出全等三角形的對應角。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "利用 BE=CE 及對頂角相等，證明△ABE ≅ △DCE",
+    "marks": 1,
+    "common_error": "忽略此對全等三角形，或忘記使用對頂角。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 4,
+    "what": "統計圖中所有全等三角形對數 (需包含上述兩對)",
+    "marks": 1,
+    "common_error": "只寫出題目要求的一對，漏算其他明顯全等。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 5,
+    "what": "利用 AA 判定法找出所有相似三角形對數 (含全等者)",
+    "marks": 1,
+    "common_error": "忘記全等三角形也是相似三角形，導致漏算。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 6,
+    "what": "整理答案並檢查是否重複計算或遺漏明顯組合",
+    "marks": 1,
+    "common_error": "計數錯誤，將同一對三角形算兩次。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "考評報告指出考生常忽略公共邊 BC 導致無法證明第一對全等，且易漏掉由全等導出的相似關係及另一對隱藏的全等三角形 (△ABE ≅ △DCE)。",
+  "scaffolding_hints": [
+   "提示：尋找兩個三角形的公共邊 BC。",
+   "知識：SAS 全等判定需要兩邊夾一角，這裡角是公共的嗎？不，是已知相等的∠BAC 和∠BDC，需結合其他條件。",
+   "破題：先證明大三角形全等，再利用全等性質找出更多小三角形的關係。"
+  ],
+  "quick_solution_strategy": "先抓公共邊 BC 和已知角，用 AAS 證大三角全等；再由 BE=CE 及對頂角證小三角全等；全等必相似，全數加總即可。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-05"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "2": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "4": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "5": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "6": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

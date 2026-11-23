@@ -1,0 +1,132 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2016",
+  "paper": "Paper 1",
+  "qno": "10",
+  "hash": "#2016P1Q10"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "軌跡",
+   "secondary_topics": [
+    "垂直平分線",
+    "圓的半徑與圓周長"
+   ],
+   "required_formulas": [
+    "d^2 = (x_1-x_2)^2 + (y_1-y_2)^2",
+    "C = 2\\pi r"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 5
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用 PA=PB 建立方程並化簡",
+    "marks": 2,
+    "common_error": "忘記開根號或平方時漏掉一側",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "找出直線與 x 軸交點 H 的座標",
+    "marks": 1,
+    "common_error": "令 y=0 時計算錯誤",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "找出直線與 y 軸交點 K 的座標",
+    "marks": 1,
+    "common_error": "令 x=0 時計算錯誤",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "確認 HK 為圓 C 的直徑",
+    "marks": 1,
+    "common_error": "誤以為需另求圓心",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 5,
+    "what": "計算半徑並得出圓周長公式",
+    "marks": 1,
+    "common_error": "忘記乘以 2\\pi",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "比較數值與 30 並解釋結論",
+    "marks": 1,
+    "common_error": "計算結果四捨五入錯誤",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "考生常忽略 HK 為直徑這一幾何性質，導致多餘步驟或計算出錯。",
+  "scaffolding_hints": [
+   "動點到兩定點等距代表垂直平分線",
+   "圓通過三點且其中兩點在坐標軸上時，若夾角為直角則弦為直徑",
+   "先畫圖確認幾何關係再代入數值"
+  ],
+  "quick_solution_strategy": "直接寫出垂直平分線方程，令 x=0,y=0 得截距，利用半徑算圓周。"
+ },
+ "skills": {
+  "topic_id": "T-LOC",
+  "knowledge_point_ids": [
+   "K-LOC-01",
+   "K-LOC-02"
+  ],
+  "formula_ids": [
+   "F-LOC-01",
+   "F-LOC-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-LOC-01",
+    "formula_id": "F-LOC-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-LOC-01",
+    "formula_id": "F-LOC-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-LOC-01",
+    "formula_id": "F-LOC-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-LOC-01",
+    "formula_id": "F-LOC-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "5": {
+    "knowledge_point_id": "K-LOC-01",
+    "formula_id": "F-LOC-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-LOC-01",
+    "formula_id": "F-LOC-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

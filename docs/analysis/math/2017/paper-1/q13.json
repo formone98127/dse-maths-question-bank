@@ -1,0 +1,133 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 1",
+  "qno": "13",
+  "hash": "#2017P1Q13"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓的方程",
+   "secondary_topics": [
+    "距離公式",
+    "點在圓內外的判定",
+    "幾何關係描述"
+   ],
+   "required_formulas": [
+    "$(x-h)^2 + (y-k)^2 = r^2$",
+    "$d = \\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 480,
+   "marks": 7
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用圓心 G 和點 E 計算半徑平方 r^2，寫出圓方程。",
+    "marks": 2,
+    "common_error": "誤將 E 當作圓心，或忘記使用距離公式的平方。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "計算 F 到圓心 G 的距離 d，並與半徑 r 比較。",
+    "marks": 1,
+    "common_error": "計算距離時算錯數值或忘記開根號。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "因 d > r，結論 F 在圓外並完成證明步驟。",
+    "marks": 1,
+    "common_error": "只寫不等式未寫出「故 F 在 C 以外」的結論句。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 4,
+    "what": "描述 F、G、H 共線且 G 位於 F 與 H 之間。",
+    "marks": 1,
+    "common_error": "只說共線未指出 G 在 F、H 之間的順序關係。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 5,
+    "what": "計算 FG 斜率，利用垂直條件求 FH 直線斜率。",
+    "marks": 1,
+    "common_error": "垂直直線斜率乘積為 -1 時算錯或混淆公式。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "代入 F 點坐標寫出 FH 直線方程並化簡。",
+    "marks": 1,
+    "common_error": "點斜式應用錯誤或最後未將方程整理為一般式/斜截式。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "考評報告指出考生常誤認圓心，導致第一步失分；後續幾何關係與直線方程部分表現良好，顯示學生對垂直條件與共線概念掌握尚可。",
+  "scaffolding_hints": [
+   "Hint1: 圓的定義是到圓心距離等於半徑的所有點集合。",
+   "Hint2: 判定點在圓外只需比較「點到圓心距離」與「半徑」大小。",
+   "Hint3: 最遠點 H 必位於直線 FG 上，且 G 介於 F 與 H 之間。"
+  ],
+  "quick_solution_strategy": "先定圓心 G 和半徑 r；比較 GF 與 r 判別位置；利用共線垂直關係求最遠點直線斜率及方程。"
+ },
+ "skills": {
+  "topic_id": "T-CIR",
+  "knowledge_point_ids": [
+   "K-CIR-01",
+   "K-CIR-02"
+  ],
+  "formula_ids": [
+   "F-CIR-01",
+   "F-CIR-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "4": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "5": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

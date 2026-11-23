@@ -1,0 +1,106 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 1M",
+  "qno": "3",
+  "hash": "#2017P1MQ3"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "正態分佈",
+   "secondary_topics": [
+    "標準化變換",
+    "樣本平均數之分佈"
+   ],
+   "required_formulas": [
+    "$Z = \\frac{X - \\mu}{\\sigma}$",
+    "$P(a < \\bar{X} < b) = P(\\frac{a-\\mu}{\\sigma/\\sqrt{n}} < Z < \\frac{b-\\mu}{\\sigma/\\sqrt{n}})$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 5
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用對稱性求均值 \\(\\mu\\)，並由面積比例求標準差 \\(\\sigma\\)。",
+    "marks": 3,
+    "common_error": "混淆單尾與雙尾機率，或計算 Z 值時未查表準確。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "確認樣本平均數 \\(\\bar{X}\\) 的分佈參數（均值與標準誤）。",
+    "marks": 1,
+    "common_error": "忘記除以 \\(\\sqrt{n}\\)，直接沿用母體標準差 \\(\\sigma\\)。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "將邊界值 2.5 與 3.1 標準化為 Z 分數。",
+    "marks": 0,
+    "common_error": "代入數值時計算錯誤或記錯 \\(\\sigma/\\sqrt{n}\\)。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "查標準正態分佈表求對應機率並相減。",
+    "marks": 1,
+    "common_error": "讀錯 Z 表數值或忽略小數點後數位精度。",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "正態分佈題目常考對稱性與標準化變換，考生需熟練查表及處理樣本平均數之標準誤概念。",
+  "scaffolding_hints": [
+   "Hint1: 正態曲線關於 \\(\\mu\\) 對稱，兩尾機率相等意味著邊界中點即為 \\(\\mu\\)。",
+   "Hint2: 89.04% 對應於 \\(-Z_{0.0598}\\) 至 \\(+Z_{0.0598}\\)，查表可得 Z 值。",
+   "Hint3: 樣本平均數分佈標準差為 \\(\\sigma/\\sqrt{n}\\)，切勿遺漏根號 n。"
+  ],
+  "quick_solution_strategy": "先由對稱性得 \\(\\mu=2.63\\)，再由面積得 \\(Z\\approx1.75\\) 求 \\(\\sigma\\)。第二部分用 \\(\\sigma/\\sqrt{9}\\) 標準化後查表。"
+ },
+ "skills": {
+  "topic_id": "T-PROB",
+  "knowledge_point_ids": [
+   "K-PROB-01",
+   "K-PROB-02"
+  ],
+  "formula_ids": [
+   "F-PROB-01",
+   "F-PROB-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

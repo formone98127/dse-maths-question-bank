@@ -1,0 +1,122 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2025",
+  "paper": "Paper 1M",
+  "qno": "7",
+  "hash": "#2025P1MQ7"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "積分法",
+   "secondary_topics": [
+    "分部積分",
+    "對數函數性質",
+    "方程求解"
+   ],
+   "required_formulas": [
+    "\\int u \\, dv = uv - \\int v \\, du",
+    "\\frac{d}{dx}(x^n) = nx^{n-1}"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 300,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用乘積求導公式展開 \\frac{d}{dx}(x^{m+1}\\ln x)",
+    "marks": 2,
+    "common_error": "忘記對 \\ln x 求導時加 \\frac{1}{x}",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "比較兩邊係數，寫出 \\int x^m \\ln x dx 的表達式",
+    "marks": 1,
+    "common_error": "積分常數 C 遺漏或位置錯誤",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "代入上下限 e 和 1 (因 \\ln 1=0) 計算定積分值",
+    "marks": 1,
+    "common_error": "上限下限搞錯導致符號錯誤",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 4,
+    "what": "將題目給出的面積公式與計算結果列等式",
+    "marks": 1,
+    "common_error": "分母 (m+1)^2 抄寫錯誤",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "化簡方程，解出 m 的數值",
+    "marks": 1,
+    "common_error": "忽略 m>0 條件或算錯平方根",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "此題結合微積分基本定理與分部積分法，常見失誤在於對 \\ln x 求導時遺漏 \\frac{1}{x} 項及定積分上下限代入時的符號處理。",
+  "scaffolding_hints": [
+   "回憶乘積求導法則：(uv)' = u'v + uv'",
+   "分部積分核心思想：將難積分者轉為易積分者",
+   "注意 \\ln x 定義域 x>0，故下限取 1 而非 0"
+  ],
+  "quick_solution_strategy": "先微分得 \\int x^m \\ln x dx = \\frac{x^{m+1}\\ln x}{m+1} - \\frac{x^{m+1}}{(m+1)^2} + C，再代入 e 與 1 解方程。"
+ },
+ "skills": {
+  "topic_id": "T-MEN",
+  "knowledge_point_ids": [
+   "K-MEN-01",
+   "K-MEN-02"
+  ],
+  "formula_ids": [
+   "F-MEN-01",
+   "F-MEN-02",
+   "F-MEN-03",
+   "F-MEN-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "4": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

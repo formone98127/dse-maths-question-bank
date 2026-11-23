@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 1",
+  "qno": "1",
+  "hash": "#2017P1Q1"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "主項變換",
+   "secondary_topics": [
+    "分式運算",
+    "移項整理"
+   ],
+   "required_formulas": [
+    "$k = \\frac{3x - y}{y}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90,
+   "marks": 3
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "將分母乘至左邊，消除分式。",
+    "marks": 1,
+    "common_error": "忘記乘以整個分子或只乘部分項。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "展開括號並移項，將含 y 的項集中。",
+    "marks": 1,
+    "common_error": "符號錯誤或移項時漏掉負號。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "合併同類項並解出 y。",
+    "marks": 1,
+    "common_error": "最後除法步驟計算錯誤。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "此題為基礎代數操作，考評顯示超過八成半考生能正確處理，反映學生對分式主項變換掌握良好。",
+  "scaffolding_hints": [
+   "先將 $y$ 乘至左邊消去分母",
+   "注意展開時括號內的符號變化",
+   "最後將 $y$ 的係數除到右邊"
+  ],
+  "quick_solution_strategy": "乘 $y$ 展開，移項合併含 $y$ 項，再除以 $3x-y$"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-POL-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-POL-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-POL-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

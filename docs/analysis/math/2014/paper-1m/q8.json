@@ -1,0 +1,132 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 1M",
+  "qno": "8",
+  "hash": "#2014P1MQ8"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "條件概率與貝氏定理",
+   "secondary_topics": [
+    "全概率公式",
+    "互斥事件",
+    "獨立性概念"
+   ],
+   "required_formulas": [
+    "$P(A \\cap B) = P(B|A)P(A)$",
+    "$P(A) + P(A^c) = 1$",
+    "$P(B|A) = \\frac{P(A \\cap B)}{P(A)}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 240,
+   "marks": 5
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "定義事件：設 F 為故障，G 為正常，A/B 為生產線。",
+    "marks": 1,
+    "common_error": "未明確定義事件符號導致後續計算混亂。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 2,
+    "what": "列出已知機率：P(F)=0.04, P(F|A)=0.02, P(G|B)=2/3。",
+    "marks": 1,
+    "common_error": "誤讀題目將「正常」與「故障」機率混淆。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 3,
+    "what": "利用全概率公式求 P(A) 與 P(B)。",
+    "marks": 1,
+    "common_error": "忘記將故障與正常兩部分機率相加。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 4,
+    "what": "計算 (a)：P(B ∩ G) = P(G|B) × P(B)。",
+    "marks": 1,
+    "common_error": "直接套用條件概率公式而忽略分母。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "計算 (b)：P(A) = P(F|A)P(A) + P(G|A)P(A)。",
+    "marks": 1,
+    "common_error": "未將 A 線故障與正常機率合併。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "計算 (c)：P(G|B) = P(B ∩ G)/P(B)。",
+    "marks": 1,
+    "common_error": "混淆條件概率與聯合概率之定義。",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "此題測試學生對條件概率與全概率公式的綜合應用能力，常見失分點在於未能正確區分「已知結果推原因」與「已知原因推結果」的方向。",
+  "scaffolding_hints": [
+   "先畫樹狀圖或文氏圖釐清事件關係。",
+   "注意題目給出的是「正常產品中 B 線佔比」而非「B 線產品正常率」。",
+   "全概率公式是連接總機率與條件機率的橋樑。"
+  ],
+  "quick_solution_strategy": "先求 P(B)，再乘 P(G|B) 得 (a)；用 1-P(B) 得 (b)；(c) 即題目已給之 P(G|B)。"
+ },
+ "skills": {
+  "topic_id": "T-PROB",
+  "knowledge_point_ids": [
+   "K-PROB-04"
+  ],
+  "formula_ids": [
+   "F-PROB-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "2": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "3": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "4": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

@@ -1,0 +1,118 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 1M",
+  "qno": "8",
+  "hash": "#2017P1MQ8"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "積分法",
+   "secondary_topics": [
+    "對數函數性質",
+    "指數函數性質",
+    "定積分的幾何意義"
+   ],
+   "required_formulas": [
+    "$\\int \\ln(u) du = u(\\ln u - 1) + C$",
+    "$\\frac{d}{dx}(\\ln x) = \\frac{1}{x}$",
+    "$\\int_a^b f(x) dx = F(b) - F(a)$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 240,
+   "marks": 7
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "化簡 $g(x)$ 為 $\\ln(e/x) - \\ln x$，準備積分。",
+    "marks": 1,
+    "common_error": "未能正確展開 $\\ln(e/x)$ 或忽略常數項處理。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "利用代數法（令 $u=\\ln x$）求不定積分原函數。",
+    "marks": 3,
+    "common_error": "代換變數後忘記回代 $x$，或微分檢查失敗。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "寫下 $\\Gamma$ 的 $x$-截距（令 $y=0$）。",
+    "marks": 1,
+    "common_error": "解方程時算錯對數值或忽略定義域 $x>0$。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "設定定積分上下限為 $1$ 與 $e^2$。",
+    "marks": 1,
+    "common_error": "寫錯上限或下限，混淆 $x=1$ 與 $x=e^2$。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 5,
+    "what": "代入原函數計算定積分數值。",
+    "marks": 1,
+    "common_error": "代入時符號錯誤或對數運算出錯。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "此題測試學生處理複雜對數函數的積分能力，常見失分點在於化簡 $\\ln(e/x)$ 時未能正確應用性質及後續代換法回代步驟遺漏。",
+  "scaffolding_hints": [
+   "提示 1：先利用對數性質將 $g(x)$ 拆成簡單項。",
+   "提示 2：觀察被積函數結構，嘗試令 $u = \\ln x$。",
+   "提示 3：截距只需解 $\\ln(e/x) - \\ln x = 0$"
+  ],
+  "quick_solution_strategy": "先化簡 $g(x)$ 為 $1-\\ln x$，再積分得 $x-x\\ln x+x$，最後代入上下限計算面積。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "5": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

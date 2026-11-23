@@ -1,0 +1,103 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 1M",
+  "qno": "11",
+  "hash": "#2014P1MQ11"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "指數與對數函數",
+   "secondary_topics": [
+    "代數變量替換",
+    "二次方程根與係數關係",
+    "極值分析"
+   ],
+   "required_formulas": [
+    "$y = \\frac{340}{2 + e^{-t} - 2e^{-2t}}$",
+    "$u^2 - (\\text{sum})u + (\\text{product}) = 0$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 180,
+   "marks": 8
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "令 $u=e^{-t}$，將 $y$ 表達為關於 $u$ 的函數並分析漸近行為。",
+    "marks": 2,
+    "common_error": "忽略 $t \\to \\infty$ 時 $u \\to 0$ 的極限情況，或計算錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "求導數 $dy/du$ 或利用配方法找出分母最大值以確定 $y$ 的最小值。",
+    "marks": 3,
+    "common_error": "混淆 $u$ 與 $t$ 的範圍，錯誤判斷極值點位置。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "檢查邊界條件 $t=0$ ($u=1$) 以確定 $y$ 的最大值。",
+    "marks": 1,
+    "common_error": "忘記檢查定義域端點 $t=0$ 的情況。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 4,
+    "what": "利用對稱性 $t=\\alpha$ 與 $t=3-\\alpha$ 對應相同的 $y$ 值推導關係式。",
+    "marks": 2,
+    "common_error": "未能正確建立關於 $\\alpha$ 的方程，或解錯二次方程。",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "此題測試學生將指數函數轉化為代數結構的能力，並結合極值理論與二次方程性質，屬於高階分析能力評估。",
+  "scaffolding_hints": [
+   "提示 1：觀察分母中 $e^{-t}$ 的次數，考慮換元法簡化表達式。",
+   "提示 2：注意 $t \\geq 0$ 時 $e^{-t}$ 的取值範圍是 $(0, 1]$。",
+   "提示 3：若兩不同時間點 $y$ 值相同，對應的分母值必相等，利用此對稱性求解。"
+  ],
+  "quick_solution_strategy": "先換元 $u=e^{-t}$ 轉為二次分式；再求極限與邊界得最值；最後利用根的和或對稱性解 $\\alpha$。"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "4": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

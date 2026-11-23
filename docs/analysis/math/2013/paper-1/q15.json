@@ -1,0 +1,106 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 1",
+  "qno": "15",
+  "hash": "#2013P1Q15"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "標準分",
+   "secondary_topics": [
+    "平均值",
+    "離差",
+    "中位數"
+   ],
+   "required_formulas": [
+    "$Z = \\frac{x - \\mu}{\\sigma}$",
+    "$\\text{中位數} = 55$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用素珊資料 (Z=3) 列方程求平均值與標準差關係",
+    "marks": 1,
+    "common_error": "忽略最高分對應 Z 值，或誤用中位數位置。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 2,
+    "what": "利用志誠資料 (Z=0.5) 列第二個方程聯立求解",
+    "marks": 1,
+    "common_error": "計算錯誤導致解出非整數平均值。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "確認求得的平均值是否與中位數位置一致",
+    "marks": 1,
+    "common_error": "混淆平均值與中位數概念，誤填 55 為平均值。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "解釋中位數意義以判斷負標準分學生比例",
+    "marks": 1,
+    "common_error": "未提及中位數即斷言同意或不同意。",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "考生常混淆平均值與中位數，誤將框線圖峰值或中位數位置當作平均值計算標準分問題。",
+  "scaffolding_hints": [
+   "回想標準分公式 Z = (x - μ)/σ。",
+   "最高分對應最大 Z 值，65 分對應 Z=0.5。",
+   "中位數位於框線圖中間位置，即 55 分。"
+  ],
+  "quick_solution_strategy": "設平均值μ，標準差σ。由素珊得 (Max-μ)/σ=3；由志誠得(65-μ)/σ=0.5。聯立解出μ。中位數為55，故一半學生分數低於55，Z值為負。"
+ },
+ "skills": {
+  "topic_id": "T-STA",
+  "knowledge_point_ids": [
+   "K-STA-01",
+   "K-STA-02"
+  ],
+  "formula_ids": [
+   "F-STA-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "2": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

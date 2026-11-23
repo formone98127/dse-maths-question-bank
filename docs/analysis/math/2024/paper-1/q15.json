@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 1",
+  "qno": "15",
+  "hash": "#2024P1Q15"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "對數與指數",
+   "secondary_topics": [
+    "線性函數",
+    "換底公式"
+   ],
+   "required_formulas": [
+    "$\\log_{a^n}b = \\frac{1}{n}\\log_a b$",
+    "$y = mx + c$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90,
+   "marks": 3
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用換底公式將 $\\log_9 y$ 轉換為以 3 為底的對數形式。",
+    "marks": 1,
+    "common_error": "忘記 $9=3^2$，直接寫成 $\\log_9 y = \\log_3 y$"
+   },
+   {
+    "step": 2,
+    "what": "設線性函數為 $y = mx + c$，代入斜率 $m=4$。",
+    "marks": 1,
+    "common_error": "混淆變數 $x$ 與 $y$ 的位置，寫成 $x = 4y + c$"
+   },
+   {
+    "step": 3,
+    "what": "代入點 $(5, 22)$ 解出截距 $c$，並整理得最終式。",
+    "marks": 1,
+    "common_error": "計算錯誤或忘記將對數係數乘入線性關係中"
+   }
+  ],
+  "exam_report_insight": "此題結合對數性質與直線方程，考驗學生是否能靈活運用換底公式將不同底的對數統一，並正確識別線性關係中的自變量與因變量。",
+  "scaffolding_hints": [
+   "Hint1: 觀察底數 9 與 3 的關係，$9=3^2$。",
+   "Hint2: 換底公式 $\\log_{a^n} b = \\frac{1}{n}\\log_a b$ 可簡化係數。",
+   "Hint3: 線性函數形式為 $y = mx+c$，注意題目要求「以 $x$ 表 $y$」即 $y=\\dots$"
+  ],
+  "quick_solution_strategy": "先換底得 $\\frac{1}{2}\\log_3 y = 4(\\log_3 x) + c$，再代點求 $c$，最後整理出 $y$。"
+ },
+ "skills": {
+  "topic_id": "T-FUN",
+  "knowledge_point_ids": [
+   "K-FUN-01",
+   "K-FUN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": null
+   },
+   "2": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": null
+   },
+   "3": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": null
+   }
+  }
+ }
+}

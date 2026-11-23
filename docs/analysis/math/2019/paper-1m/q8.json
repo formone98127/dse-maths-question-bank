@@ -1,0 +1,115 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2019",
+  "paper": "Paper 1M",
+  "qno": "8",
+  "hash": "#2019P1MQ8"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "指數與對數",
+   "secondary_topics": [
+    "積分法",
+    "微分應用"
+   ],
+   "required_formulas": [
+    "$a^b = e^{b\\ln a}$",
+    "$\\int x e^{kx} dx$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 420,
+   "marks": 7
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用 $a^b=e^{b\\ln a}$ 將 $7^{-1/\\ln 7}$ 轉換為 $e$ 的冪。",
+    "marks": 2,
+    "common_error": "忘記負號或混淆 $\\ln 7$ 與 $7$ 的位置，導致結果為 $1/e$ 而非 $1/7$。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "計算 $h'(x)$ 並令其等於 0，解出 $\\alpha = \\ln 7 - 1$。",
+    "marks": 2,
+    "common_error": "微分時漏掉鏈式法則中的 $-x$，或忘記 $\\ln 7$ 係數，算錯 $\\alpha$。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "將積分轉換為 $\\int x e^{-(\\ln 7)x} dx$ 形式準備分部積分。",
+    "marks": 1,
+    "common_error": "未先化簡底數直接嘗試分部積分，導致係數混亂。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 4,
+    "what": "執行分部積分求不定積分 $\\int x7^{-x} dx$ 的通解。",
+    "marks": 1,
+    "common_error": "符號錯誤，特別是 $e^{-(\\ln 7)x}$ 微分後多出的負號未處理。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "代入上下限 $0$ 至 $\\alpha$，並利用 $h(\\alpha)=0$ 簡化數值。",
+    "marks": 1,
+    "common_error": "忘記代入 $x=0$ 時的項，或未能將 $7^{-\\alpha}$ 化為 $e$ 的冪。",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "此題測試學生對指數底數轉換及分部積分的熟練度，常見失分點在於處理負指數與自然對數係數時的符號錯誤。",
+  "scaffolding_hints": [
+   "Hint1: 記得 $a^x = e^{x\\ln a}$ 是連接任意底數與 $e$ 的橋樑。",
+   "Hint2: 微分 $7^{-x}$ 時，別忘了鏈式法則帶來的 $-\\ln 7$ 係數。",
+   "Hint3: 定積分計算時，利用極值點 $\\alpha$ 處函數值為 0 可大幅簡化代入步驟。"
+  ],
+  "quick_solution_strategy": "先化簡 (a) 得 $1/7$；微分找 $\\alpha=\\ln 7-1$；分部積分時令 $u=x, dv=7^{-x}dx$，最後代數化簡即可。"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "4": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

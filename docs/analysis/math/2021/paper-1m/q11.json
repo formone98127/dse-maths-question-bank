@@ -1,0 +1,78 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 1M",
+  "qno": "11",
+  "hash": "#2021P1MQ11"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "積分法",
+   "secondary_topics": [
+    "微分法",
+    "梯形公式",
+    "數值估計"
+   ],
+   "required_formulas": [
+    "$\\frac{d}{dx}[u(x)^n] = n u(x)^{n-1} u'(x)$",
+    "$\\int_a^b f(x) dx \\approx \\frac{h}{2}[(y_0 + y_n) + 2(y_1 + \\dots + y_{n-1})]$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 450,
+   "marks": 3
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用鏈式法則求 $f'(x)$，注意分母平方與開根號處理。",
+    "marks": 2,
+    "common_error": "忘記將 $\frac{1}{2}$ 乘入導數係數；或混淆 $(\\frac{x}{2-x})'$ 的商法則。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "對 $f'(x)$ 再次微分求 $f''(x)$，注意乘積法則與鏈式法則。",
+    "marks": 1,
+    "common_error": "展開時漏掉項數；或化簡後符號錯誤導致結果不符預期。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "此題結合微積分基礎與數值方法，測試學生在處理複雜分式函數時的運算準確度及對梯形公式的靈活應用能力。",
+  "scaffolding_hints": [
+   "Hint1: 令 $u = \\frac{x}{2-x}$，先求 $u'$ 再代入鏈式法則。",
+   "Hint2: 梯形公式需計算 $x=0, 0.1, 0.2, 0.3, 0.4, 0.5$ 共六個點的函數值。",
+   "Hint3: 利用總積分等於 $J+K$，由已知總積分減去估計的 $J$ 即得 $K$"
+  ],
+  "quick_solution_strategy": "先化簡導數表達式避免繁瑣計算；梯形公式注意端點係數為 1，中間點係數為 2。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

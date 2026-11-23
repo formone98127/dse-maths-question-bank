@@ -1,0 +1,107 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 1",
+  "qno": "6",
+  "hash": "#2017P1Q6"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "變換與對稱",
+   "secondary_topics": [
+    "旋轉規則",
+    "反射規則",
+    "斜率計算"
+   ],
+   "required_formulas": [
+    "$ (x, y) \\xrightarrow{\\text{逆時針 }90^\\circ} (-y, x) $",
+    "$ (x, y) \\xrightarrow{\\text{對 }x\\text{軸反射}} (x, -y) $",
+    "$ m_1 \\cdot m_2 = -1 \\implies \\text{垂直}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "應用旋轉公式求 A' 坐標 (-4, -3)。",
+    "marks": 1,
+    "common_error": "順時針旋轉或記錯公式致坐標符號錯誤。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "應用反射公式求 B' 坐標 (9, 9)。",
+    "marks": 1,
+    "common_error": "對 y 軸反射或忘記變號致坐標錯誤。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "計算直線 AB 之斜率 m_AB = -7/12。",
+    "marks": 1,
+    "common_error": "坐標減法順序錯誤致斜率數值不對。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "計算直線 A'B' 之斜率 m_A'B' = 12/7。",
+    "marks": 1,
+    "common_error": "坐標減法順序錯誤致斜率數值不對。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "考生常混淆旋轉方向與反射軸，導致坐標計算全錯；證明垂直時若坐標算錯，後續斜率乘積驗證必失敗。",
+  "scaffolding_hints": [
+   "回憶逆時針旋轉 90 度是 (x,y)->(-y,x)。",
+   "對 x 軸反射只需改變 y 座標符號。",
+   "垂直條件是斜率乘積為 -1，先算出兩條線斜率再比較。"
+  ],
+  "quick_solution_strategy": "直接套公式寫出 A'(-4,-3) 與 B'(9,9)，再計算 m_AB=-7/12 與 m_A'B'=12/7，驗證乘積為 -1 即證畢。"
+ },
+ "skills": {
+  "topic_id": "T-TRF",
+  "knowledge_point_ids": [
+   "K-TRF-02",
+   "K-TRF-03"
+  ],
+  "formula_ids": [
+   "F-TRF-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-TRF-02",
+    "formula_id": "F-TRF-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-TRF-02",
+    "formula_id": "F-TRF-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-TRF-02",
+    "formula_id": "F-TRF-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-TRF-02",
+    "formula_id": "F-TRF-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

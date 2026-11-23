@@ -1,0 +1,116 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2020",
+  "paper": "Paper 1M",
+  "qno": "2",
+  "hash": "#2020P1MQ2"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "二項分佈",
+   "secondary_topics": [
+    "幾何分佈",
+    "條件期望"
+   ],
+   "required_formulas": [
+    "$P(X=k) = \\binom{n}{k} p^k (1-p)^{n-k}$",
+    "$E(Y) = \\frac{1}{p}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 300,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "定義單頁有塵概率 p=1/5，計算文件整體有塵概率。",
+    "marks": 2,
+    "common_error": "誤將單頁概率直接相加或混淆獨立事件乘法規則。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "利用二項分佈公式計算不可接受（塵污>=3頁）的概率。",
+    "marks": 1,
+    "common_error": "忘記計算 P(X<3) 再用 1 減去，或算錯組合數。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "確立不可接受事件為成功，求其概率 p' 作為幾何分佈參數。",
+    "marks": 1,
+    "common_error": "未將步驟 2 結果轉化為幾何分佈的成功概率 p'。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 4,
+    "what": "應用幾何分佈期望公式 E = 1/p' 計算可接受副本數目。",
+    "marks": 1,
+    "common_error": "誤用二項分佈期望 np 或忘記除以 p'。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 5,
+    "what": "代入數值計算最終答案並檢查合理性（應大於 1）。",
+    "marks": 1,
+    "common_error": "計算錯誤導致結果小於 1 或邏輯矛盾。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "此題結合二項與幾何分佈，測試學生對「連續試驗間隔」概念的掌握，常為考生混淆獨立事件與條件期望的難點。",
+  "scaffolding_hints": [
+   "先算單頁無塵概率 (4/5)，再求整份文件完全無塵概率。",
+   "不可接受即「至少 3 頁有塵」，用 1 - P(0 頁) - P(1 頁) - P(2 頁)。",
+   "兩不可接受副本之間的「可接受副本數」符合幾何分佈，期望為 1/p'。"
+  ],
+  "quick_solution_strategy": "先求整份文件有塵概率 p_total = 1 - (4/5)^6；再算 P(unacceptable) = 1 - [P(0)+P(1)+P(2)]；最後 E = 1/P(unacceptable)。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "5": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

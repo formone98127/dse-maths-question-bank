@@ -1,0 +1,129 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": 2025,
+  "paper": "Paper 1",
+  "qno": 12,
+  "hash": "#2025P1Q12"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "幹葉圖",
+   "secondary_topics": [
+    "框線圖",
+    "四分位數",
+    "離差"
+   ],
+   "required_formulas": [
+    "$\\text{Range} = \\text{Max} - \\text{Min}$",
+    "$\\text{IQR} = Q_3 - Q_1$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 7
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "從幹葉圖讀出最小值與最大值，計算範圍 (Range)。",
+    "marks": 1,
+    "common_error": "誤將四分位數差當作題目給的 25kg。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 2,
+    "what": "利用範圍公式建立方程，解出未知數 w 的值。",
+    "marks": 2,
+    "common_error": "計算錯誤或忽略單位 kg。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "從框線圖讀出訓練後的上四分位數 (Q3)。",
+    "marks": 1,
+    "common_error": "誤讀中位數或下四分位數為上四分位數。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 4,
+    "what": "計算訓練前後上四分位數的變化量 (差值)。",
+    "marks": 1,
+    "common_error": "誤用四分位距 (IQR) 的變化代替上四分位數變化。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 5,
+    "what": "比較訓練前後兩個分佈的離散程度指標 (範圍或 IQR)。",
+    "marks": 1,
+    "common_error": "僅給出結論而未說明使用的比較依據。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 6,
+    "what": "根據步驟 5 的數據，論證分佈是否變得不那麼分散。",
+    "marks": 1,
+    "common_error": "邏輯矛盾或解釋與數據不符。",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "考生常混淆「四分位數差」與題目給出的「範圍減四分位距」，需嚴格區分 Range 與 IQR 的定義以避免概念性錯誤。",
+  "scaffolding_hints": [
+   "Hint1: 範圍 = 最大值 - 最小值，注意幹葉圖的讀數規則。",
+   "Hint2: 框線圖的四個關鍵點分別對應 Min, Q1, Median, Q3。",
+   "Hint3: 離散程度看 Range 或 IQR 是否縮小，而非單純看位置移動。"
+  ],
+  "quick_solution_strategy": "先讀幹葉圖求 Range，解 w；再讀框線圖求 Q3 變化；最後比較 Range 或 IQR 判斷離散度。"
+ },
+ "skills": {
+  "topic_id": "T-CHR",
+  "knowledge_point_ids": [
+   "K-CHR-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-CHR-02",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "2": {
+    "knowledge_point_id": "K-CHR-02",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-CHR-02",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "4": {
+    "knowledge_point_id": "K-CHR-02",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "5": {
+    "knowledge_point_id": "K-CHR-02",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "6": {
+    "knowledge_point_id": "K-CHR-02",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

@@ -1,0 +1,130 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 1M",
+  "qno": "10",
+  "hash": "#2013P1MQ10"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "指數與對數函數",
+   "secondary_topics": [
+    "積分法 (梯形則)",
+    "微分方程應用",
+    "不等式解集"
+   ],
+   "required_formulas": [
+    "$\\ln a - \\ln b = \\ln(\\frac{a}{b})$",
+    "$\\int_a^b f(x) dx \\approx \\frac{h}{2}[y_0 + 2(y_1+y_2+y_3) + y_4]$",
+    "$N'(t) = \\text{出生率} - \\text{死亡率}$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 480,
+   "marks": 12
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "化簡 f(x) 並解不等式 f(x)<0 求 x 範圍",
+    "marks": 3,
+    "common_error": "忘記定義域 x>-20/3 或對數運算錯誤",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 2,
+    "what": "計算梯形則估計值 (h=1, y0 至 y4)",
+    "marks": 3,
+    "common_error": "漏乘首尾項或中間項係數算錯",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "判斷過/不足估計並說明 (f(x) 凹凸性)",
+    "marks": 2,
+    "common_error": "混淆二階導數符號與梯形則誤差關係",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "寫出 N'(t) 的表達式 (出生減死亡)",
+    "marks": 1,
+    "common_error": "符號搞反或漏乘係數 10",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "解微分方程求 N(t) 通解並代入初值",
+    "marks": 2,
+    "common_error": "積分變數混淆或常數 C 計算錯誤",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "驗證 t=4 時 N(4) 是否大於 0 並下結論",
+    "marks": 1,
+    "common_error": "計算錯誤導致誤判種群是否滅絕",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "此題結合對數性質、梯形則近似及微分方程應用，考查學生將生物增長模型轉化為數學式並進行分析的能力，屬卷一較難的綜合題。",
+  "scaffolding_hints": [
+   "利用對數商法則合併 f(x) 為單一對數項。",
+   "梯形則公式中首尾項係數為 1，中間項係數為 2。",
+   "若二階導數大於 0 (凹上)，梯形則會低估面積；反之亦然。"
+  ],
+  "quick_solution_strategy": "先化簡對數不等式得定義域交集；梯形則代數計算；求 N'(t) 後積分得 N(t)，代入 t=4 判斷正負。"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "2": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

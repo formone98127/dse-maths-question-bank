@@ -1,0 +1,116 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 1M",
+  "qno": "4",
+  "hash": "#2022P1MQ4"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "置信區間",
+   "secondary_topics": [
+    "樣本平均數計算",
+    "標準誤差概念",
+    "區間寬度與樣本量的關係"
+   ],
+   "required_formulas": [
+    "$\\bar{x} \\pm z_{\\alpha/2} \\frac{\\sigma}{\\sqrt{n}}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 5
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "計算樣本平均數 \\(\\bar{x}\\) 並確認已知參數。",
+    "marks": 1,
+    "common_error": "忘記將總時間除以樣本數，或混淆標準差與標準誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "寫出 95% 置信區間公式並代入 \\(z\\) 值（1.96）。",
+    "marks": 1,
+    "common_error": "使用錯誤的 \\(z\\) 分位數或忘記除以根號下樣本量。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "計算標準誤差 \\(\\frac{\\sigma}{\\sqrt{n}}\\) 的數值。",
+    "marks": 1,
+    "common_error": "計算錯誤，特別是根號運算或分數乘法出錯。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "寫出最終的置信區間數值範圍（保留適當小數位）。",
+    "marks": 1,
+    "common_error": "四捨五入錯誤或未標註單位。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "分析刪除數據後樣本量 \\(n\\) 變化的影響。",
+    "marks": 1,
+    "common_error": "誤以為平均值變化會導致區間變寬，忽略樣本量關鍵作用。",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "考生常混淆標準差與標準誤，且在處理樣本量減少對區間寬度影響時，未能連結 \\(n\\) 與精度的反比關係。",
+  "scaffolding_hints": [
+   "回憶正態分佈下總體均值 \\(\\mu\\) 的置信區間構造公式。",
+   "確認標準誤差是標準差除以根號下樣本量。",
+   "思考樣本量減少時，估計精確度會如何變化？"
+  ],
+  "quick_solution_strategy": "先算 \\(\\bar{x}=1.5\\)，套公式 \\(1.5 \\pm 1.96 \\times \\frac{0.4}{\\sqrt{100}}\\)；刪除數據後 \\(n\\) 減小，分母變小，區間變寬。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

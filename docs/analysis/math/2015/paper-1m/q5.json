@@ -1,0 +1,103 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2015",
+  "paper": "Paper 1M",
+  "qno": "5",
+  "hash": "#2015P1MQ5"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "指數與對數函數",
+   "secondary_topics": [
+    "二項式展開",
+    "泰勒級數展開",
+    "分式處理"
+   ],
+   "required_formulas": [
+    "$e^x = 1 + x + \\frac{x^2}{2!} + \\dots$",
+    "$(a+b)^n = \\sum_{r=0}^{n} \\binom{n}{r} a^{n-r} b^r$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 5
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "將 $e^{-4x}$ 展開至 $x^2$ 項，代入公式計算係數。",
+    "marks": 2,
+    "common_error": "忘記變號或階乘計算錯誤，導致係數符號或大小不對。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "將 $(2+x)^5$ 展開至 $x^2$ 項（高次項忽略）。",
+    "marks": 1,
+    "common_error": "二項式係數 $\binom{5}{r}$ 計算錯誤或漏掉低次項。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "將兩部分相乘，只保留 $x^2$ 及以下的項。",
+    "marks": 1,
+    "common_error": "交叉相乘時漏掉組合（如常數乘以 $x^2$ 或 $x$ 乘以 $x$）。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 4,
+    "what": "合併同類項，計算最終 $x^2$ 的係數。",
+    "marks": 1,
+    "common_error": "分數加法錯誤或最後一步算術出錯。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "此題結合指數展開與二項式，考驗學生處理多項式乘法時篩選特定次項的能力，屬中階綜合運算題型。",
+  "scaffolding_hints": [
+   "先熟記 $e^x$ 的標準展開式，注意變數替換時的符號變化。",
+   "二項式 $(2+x)^5$ 可視為 $(2(1+\\frac{x}{2}))^5$ 或直接展開前幾項。",
+   "相乘時畫表格或樹狀圖，確保所有產生 $x^2$ 的組合都被計算。"
+  ],
+  "quick_solution_strategy": "分別寫出兩個函數的前三項，交叉相乘僅保留總次數不超過 2 的項，最後加總係數。"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "4": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

@@ -1,0 +1,131 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2012",
+  "paper": "Paper 1",
+  "qno": "10",
+  "hash": "#2012P1Q10"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "統計：平均值及中位數",
+   "secondary_topics": [
+    "幹葉圖讀取",
+    "數據合併計算"
+   ],
+   "required_formulas": [
+    "$\\bar{x} = \\frac{\\sum x}{n}$",
+    "$Median: \\text{第 } \\frac{n+1}{2} \\text{個數據 (當 n 為奇數)}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 420,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "從幹葉圖讀取 20 個數據並計算總和與排序位置。",
+    "marks": 1,
+    "common_error": "誤讀幹葉圖（如忽略十位數）或加總錯誤。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 2,
+    "what": "計算 (a) 部平均值及找出第 10、11 個數據求中位數。",
+    "marks": 1,
+    "common_error": "未將排序後中間兩個數取平均，或算錯總和。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "計算新增四份問卷的時數總和（已知兩份為 19、20）。",
+    "marks": 1,
+    "common_error": "忽略平均值公式反推，直接假設未知數。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 4,
+    "what": "合併所有數據（24 個），計算新平均值並排序找中位數位置。",
+    "marks": 1,
+    "common_error": "忘記將原 20 個數據與新增 4 個合併，或排序錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "比較 (a) 部中位數與新中位數是否相同並解釋原因。",
+    "marks": 1,
+    "common_error": "僅回答「不同」卻未說明數據分布改變導致位置偏移。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 6,
+    "what": "檢查數值計算與邏輯解釋是否完整對應題目要求。",
+    "marks": 1,
+    "common_error": "忽略 (ii) 部解釋分數，只寫出數值無說明。",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "考生常能正確計算平均值，但在處理數據合併後中位數位置變化時，難以清晰解釋為何新中位數必然大於原中位數（因新增高值拉高整體分佈）。",
+  "scaffolding_hints": [
+   "幹葉圖：每格代表一個數，例如「1 | 0」即為 10。",
+   "中位數位置：n=20 時取第 10 與 11 個的平均；n=24 時取第 12 與 13 個的平均。",
+   "新增數據皆大於原中位數（18.5），故新中位數必上升。"
+  ],
+  "quick_solution_strategy": "先讀圖得總和算平均；合併後重排找第 12、13 個數，因新增值大於原中位數，故新中位數必不同。"
+ },
+ "skills": {
+  "topic_id": "T-STA",
+  "knowledge_point_ids": [
+   "K-STA-01",
+   "K-STA-02"
+  ],
+  "formula_ids": [
+   "F-STA-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "2": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "4": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "6": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

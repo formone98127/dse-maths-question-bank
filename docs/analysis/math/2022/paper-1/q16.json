@@ -1,0 +1,104 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 1",
+  "qno": "16",
+  "hash": "#2022P1Q16"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "二次函數",
+   "secondary_topics": [
+    "配方法",
+    "直線方程式",
+    "幾何面積比"
+   ],
+   "required_formulas": [
+    "$y = a(x-h)^2 + k$ 頂點為 $(h, k)$",
+    "$\\text{Area} = \\frac{1}{2} \\times \\text{base} \\times \\text{height}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 300,
+   "marks": 5
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "將 g(x) 配方找出頂點 A(h,k)，並計算 g(-x) 的頂點 B",
+    "marks": 2,
+    "common_error": "配方時 k^2 項處理錯誤，或忘記 y=2g(-x) 需乘 2",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "確認 O, A, B 坐標，利用面積比推斷 M 分點比例 BM:AM=3:1",
+    "marks": 1,
+    "common_error": "誤以為面積比等於線段比而忽略高不同或底不同",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "利用內分點公式計算 M 的 x 座標 (以 k 表示)",
+    "marks": 1,
+    "common_error": "內分點公式順序搞反，應是靠近 A 還是 B 弄錯",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 4,
+    "what": "利用內分點公式計算 M 的 y 座標 (以 k 表示)",
+    "marks": 1,
+    "common_error": "代入數值時抄錯 A 或 B 的 y 座標",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "考生常忽略題目中的係數變化（如 2g(-x)）及面積比與線段比的幾何關係，導致無法正確建立分點比例。",
+  "scaffolding_hints": [
+   "先將 g(x) 配方成標準式找出頂點 A",
+   "注意 y=2g(-x) 代表水平對稱後垂直拉伸 2 倍",
+   "觀察 O, A, B 位置，利用 BM=3AM 直接定 M 為 AB 內分點"
+  ],
+  "quick_solution_strategy": "配方得 A( -2k, 8), B(2k, 16)。由面積比推 BM:MA=3:1，用內分點公式求 M(-0.4k, 12)"
+ },
+ "skills": {
+  "topic_id": "T-FUN",
+  "knowledge_point_ids": [
+   "K-FUN-01",
+   "K-FUN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "4": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

@@ -1,0 +1,119 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2025",
+  "paper": "Paper 1M",
+  "qno": "3",
+  "hash": "#2025P1MQ3"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "置信區間",
+   "secondary_topics": [
+    "樣本標準差計算",
+    "合併樣本均值"
+   ],
+   "required_formulas": [
+    "\\bar{x} \\pm t_{n-1, \\alpha/2} \\frac{s}{\\sqrt{n}}",
+    "\\bar{x}_{comb} = \\frac{n_1\\bar{x}_1 + n_2\\bar{x}_2}{n_1+n_2}",
+    "s_{comb}^2 = \\frac{(n_1-1)s_1^2 + (n_2-1)s_2^2}{n_1+n_2-2}"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 480,
+   "marks": 7
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用第一樣本置信區間公式反推標準差 s1",
+    "marks": 2,
+    "common_error": "忘記 t 分佈自由度或誤用 z 值",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "計算合併樣本的均值與方差的加權平均",
+    "marks": 2,
+    "common_error": "直接取兩均值平均，忽略樣本大小",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "計算合併樣本的標準差 s_comb",
+    "marks": 1,
+    "common_error": "方差不等於標準差的平方誤算",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "確定新自由度與 t 分佈臨界值 (90%)",
+    "marks": 1,
+    "common_error": "查表錯誤或自由度計算錯",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 5,
+    "what": "構建合併樣本 90% 置信區間",
+    "marks": 1,
+    "common_error": "標準誤計算錯誤 s/sqrt(n)",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "此題結合了置信區間反推與合併樣本概念，常見於高階統計單元，考生需熟練 t 分佈臨界值查閱及加權平均計算。",
+  "scaffolding_hints": [
+   "回憶置信區間公式：均值 ± 臨界值 × (標準差/根號n)",
+   "合併方差公式為加權平均，注意自由度調整",
+   "90% 置信區間對應雙尾機率 0.10"
+  ],
+  "quick_solution_strategy": "先由 CI 寬度反推 s1，再算合併均值與方差，最後代入新樣本 n=80 計算新 CI。"
+ },
+ "skills": {
+  "topic_id": "T-STA",
+  "knowledge_point_ids": [
+   "K-STA-01",
+   "K-STA-02"
+  ],
+  "formula_ids": [
+   "F-STA-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "5": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

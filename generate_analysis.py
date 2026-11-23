@@ -45,6 +45,7 @@ SUBJECT_TO_SID = {v: k for k, v in SID_TO_SUBJECT.items()}
 PAPER_CODE = {
     "Paper 1": "paper-1",
     "Paper 2": "paper-2",
+    "Paper 1M": "paper-1m",
     "Paper 1A": "paper-1a",
     "Paper 1B": "paper-1b",
     "卷一": "paper-1",

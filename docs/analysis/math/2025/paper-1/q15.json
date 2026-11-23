@@ -1,0 +1,106 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": 2025,
+  "paper": "Paper 1",
+  "qno": 15,
+  "hash": "#2025P1Q15"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "概率",
+   "secondary_topics": [
+    "組合數 (Combinations)",
+    "互斥事件"
+   ],
+   "required_formulas": [
+    "$\\binom{n}{r} = \\frac{n!}{r!(n-r)!}$",
+    "$P(A) = \\frac{\\text{有利情況數}}{\\text{總情況數}}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "計算從 13 個盤子中隨機取 3 個的總組合數。",
+    "marks": 1,
+    "common_error": "使用排列公式或忽略分母，導致總情況數錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "計算 (a) 部分：同色盤子的有利組合數並求機率。",
+    "marks": 1,
+    "common_error": "忘記黑盤只有 1 個，無法選出 3 個同色；或誤算紅盤組合。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "計算 (b) 部分：三種顏色各取一個的有利組合數並求機率。",
+    "marks": 1,
+    "common_error": "未將白、紅、黑三種顏色的排列考慮進去（應為 $\\binom{8}{1}\\times\\binom{4}{1}\\times\\binom{1}{1}$）。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "檢查答案合理性：兩部分機率總和是否小於 1。",
+    "marks": 0,
+    "common_error": "未進行最終檢查，導致計算錯誤未被發現。",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "考生普遍能掌握基本機率概念，但在處理極端情況（如僅有一種顏色可選）及互斥事件分解時需加強細節審視。",
+  "scaffolding_hints": [
+   "先列出所有盤子總數：$8+4+1=13$。",
+   "同色情況需分三種情形討論：全白、全紅、全黑（注意黑盤數量）。",
+   "不同色情況只需將三種顏色各選一個相乘即可。"
+  ],
+  "quick_solution_strategy": "總組合 $\\binom{13}{3}$；(a) 僅有 $\\binom{8}{3}+\\binom{4}{3}$（黑盤不足）；(b) $\\binom{8}{1}\\times\\binom{4}{1}\\times\\binom{1}{1}$。"
+ },
+ "skills": {
+  "topic_id": "T-PROB",
+  "knowledge_point_ids": [
+   "K-PROB-01",
+   "K-PROB-02"
+  ],
+  "formula_ids": [
+   "F-PROB-01",
+   "F-PROB-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

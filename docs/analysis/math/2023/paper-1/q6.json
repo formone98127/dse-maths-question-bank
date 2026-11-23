@@ -1,0 +1,105 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2023",
+  "paper": "Paper 1",
+  "qno": "6",
+  "hash": "#2023P1Q6"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "比率與比例",
+   "secondary_topics": [
+    "代數式化簡",
+    "代入法"
+   ],
+   "required_formulas": [
+    "$\\frac{x}{y} = \\frac{z}{w} \\implies x:y = z:w$",
+    "$\\frac{A+B}{C+D}$ 的求值"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "由 $7a=6b$ 推導出 $a:b = 6:7$。",
+    "marks": 1,
+    "common_error": "假設 $a=6, b=7$ 而忽略 $c$ 的關係，導致比例不完整。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "將 $b = \\frac{7}{6}a$ 代入第二個方程解出 $c$ 與 $a$ 的關係。",
+    "marks": 1,
+    "common_error": "代入時分數運算錯誤，或未能消去變數得出 $c:a$ 比例。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "綜合 (1) 與 (2) 的結果，寫出完整比例 $a:b:c$。",
+    "marks": 1,
+    "common_error": "比例數值未化簡至最簡單整數比，或順序顛倒。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 4,
+    "what": "將 $b = \\frac{7}{6}a$ 及 $c = ka$ (由步驟 2 得之) 代入目標式。",
+    "marks": 1,
+    "common_error": "代入後忘記將所有項統一用 $a$ 表示，導致無法化簡。",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "考生常誤以為比例可直接設具體數值而忽略未知數間的連繫，應強調通過代數變換建立完整比例鏈的重要性。",
+  "scaffolding_hints": [
+   "提示 1：若 $7a=6b$，則 $\\frac{a}{b}=\\frac{6}{7}$，這是否意味著 $a=6, b=7$？",
+   "提示 2：將第二個分數中的 $b$ 全部換成含 $a$ 的式子，再解出 $c$。",
+   "提示 3：求值時，試著把所有項都除以 $a$，看看會變成什麼純數字。"
+  ],
+  "quick_solution_strategy": "先由第一式得 $a:b=6:7$；將 $b$ 代入第二式解出 $c$ 與 $a$ 關係；合併得比例；最後代入目標式化簡。"
+ },
+ "skills": {
+  "topic_id": "T-RAT",
+  "knowledge_point_ids": [
+   "K-RAT-01",
+   "K-RAT-02"
+  ],
+  "formula_ids": [
+   "F-RAT-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-RAT-01",
+    "formula_id": "F-RAT-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-RAT-01",
+    "formula_id": "F-RAT-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-RAT-01",
+    "formula_id": "F-RAT-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "4": {
+    "knowledge_point_id": "K-RAT-01",
+    "formula_id": "F-RAT-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

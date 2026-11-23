@@ -1,0 +1,130 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2020",
+  "paper": "Paper 1M",
+  "qno": "11",
+  "hash": "#2020P1MQ11"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "積分法",
+   "secondary_topics": [
+    "梯形法",
+    "對數函數性質",
+    "指數函數性質"
+   ],
+   "required_formulas": [
+    "$\\int_a^b f(x) dx = F(b) - F(a)$",
+    "$\\text{Trapezoidal Rule: } \\frac{h}{2}[y_0 + 2y_1 + ... + 2y_{n-1} + y_n]$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 300,
+   "marks": 12
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "計算 $A(t)$ 在 $t=0$ 至 $t=2$ 間，以 $h=0.4$ 劃分 5 個子區間的梯形法近似值 $\\alpha_1$。",
+    "marks": 3,
+    "common_error": "計算 $A(t)$ 在每個節點的值時四捨五入過早導致誤差累積；或算錯步長 $h$。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "判斷 $A(t)$ 圖形凹凸性（二階導數符號），決定梯形法是高估還是低估。",
+    "marks": 2,
+    "common_error": "混淆凹凸性與誤差方向關係；未計算二階導數直接猜測。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "對 $B(t)$ 進行變數代換（如 $u=3^{2t}$）求原函數，計算 $0$ 至 $2$ 月的總人數。",
+    "marks": 2,
+    "common_error": "積分過程中處理指數底數錯誤；忽略積分常數（此處為定積分不需寫）。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 4,
+    "what": "計算總大人數 $\\alpha$ 與總小孩人數之差，並求出差值佔大人數的百分比。",
+    "marks": 1,
+    "common_error": "忘記將單位「千」帶入比較；算錯百分比公式（如除以小孩數）。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 5,
+    "what": "將計算出的百分比與題目給定的 $40\\%$ 進行比較，並下結論。",
+    "marks": 2,
+    "common_error": "僅寫出數值未明確回答「同意」或「不同意」；比較方向搞反。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 6,
+    "what": "整理解題過程與論證，確保邏輯連貫以獲得完整分數。",
+    "marks": 2,
+    "common_error": "步驟跳躍導致扣分；未解釋清楚為何同意或不同意經理的說法。",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "此題結合了數值積分與解析積分，考評報告常強調學生需熟練處理不同類型的函數（如對數與指數）並能準確判斷梯形法的誤差方向。",
+  "scaffolding_hints": [
+   "Recall that the Trapezoidal Rule over-estimates when the curve is concave down ($f'' < 0$) and under-estimates when concave up ($f'' > 0$).",
+   "For $B(t)$, try substitution $u = 3^{2t}$ to simplify the integral.",
+   "Remember to calculate the percentage based on the total number of adults as the denominator."
+  ],
+  "quick_solution_strategy": "先算梯形法數值，再求二階導數定誤差方向；對 $B(t)$ 代換後積分，最後比較百分比。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "5": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "6": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

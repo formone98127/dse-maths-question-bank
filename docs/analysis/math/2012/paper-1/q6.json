@@ -1,0 +1,105 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2012",
+  "paper": "Paper 1",
+  "qno": "6",
+  "hash": "#2012P1Q6"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "一元一次不等式",
+   "secondary_topics": [
+    "聯立不等式求解",
+    "區間表示法",
+    "正整數定義"
+   ],
+   "required_formulas": [
+    "$\\frac{4x+6}{7} > 2(x-3)$",
+    "$2x-10 \\leq 0$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 8
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "解不等式 (i) $\\frac{4x+6}{7} > 2(x-3)$ 得 $x > 4.8$。",
+    "marks": 2,
+    "common_error": "去分母時漏乘常數項或移項變號錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "解不等式 (ii) $2x-10 \\leq 0$ 得 $x \\leq 5$。",
+    "marks": 2,
+    "common_error": "移項時忘記除以係數 2，導致邊界值錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "取兩解集交集，寫出 $x$ 的範圍為 $4.8 < x \\leq 5$。",
+    "marks": 2,
+    "common_error": "混淆並集與交集概念，或區間符號寫錯。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "列出範圍內所有正整數：5（因 $x>4.8$ 且 $x\\leq 5$）。",
+    "marks": 2,
+    "common_error": "誤認 0 為正整數，或忽略小數點後部分。",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "考生常混淆「正整數」定義（排除 0）及區間邊界是否包含，導致將答案誤寫為 5 個或 6 個。",
+  "scaffolding_hints": [
+   "先單獨解兩個不等式，再畫數軸找重疊部分。",
+   "注意 $x > 4.8$ 表示整數必須大於 4.8，即從 5 開始。",
+   "正整數指 $1, 2, 3...$，0 不是正整數。"
+  ],
+  "quick_solution_strategy": "解出 $4.8 < x \\leq 5$，唯獨一個正整數是 5，故答案為 1 個。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-05"
+  ],
+  "formula_ids": [
+   "F-EQN-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

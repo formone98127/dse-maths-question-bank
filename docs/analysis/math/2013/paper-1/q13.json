@@ -1,0 +1,135 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 1",
+  "qno": "13",
+  "hash": "#2013P1Q13"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "立體圖形",
+   "secondary_topics": [
+    "體積守恆",
+    "相似圖形性質",
+    "圓柱體公式"
+   ],
+   "required_formulas": [
+    "$V = \\pi R^2 h$",
+    "$A_{base} = \\pi r^2$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 180,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用體積守恆建立等式：2 大圓柱體總體積 = 27 小圓柱體總體積。",
+    "marks": 2,
+    "common_error": "忘記乘以數量（2 個大，27 個小），直接令單個體積相等。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 2,
+    "what": "利用底面積關係 ($\\pi R^2 = 9\\pi r^2$) 求出半徑比 $r:R$。",
+    "marks": 1,
+    "common_error": "混淆面積比與線段比，誤以為面積比 9 倍對應長度比 9 倍。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "將 $r:R$ 代入體積等式，解出較小圓柱體半徑 $r$ 與高度關係。",
+    "marks": 1,
+    "common_error": "代數運算錯誤，無法消去 $\\pi$ 或 $R$。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "利用小圓柱體高度 $10\\text{ cm}$ 求出較大的圓柱體高度 $H$。",
+    "marks": 1,
+    "common_error": "算出 $r$ 後忘記除以 9 或誤用比例關係求 $H$。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "比較兩圓柱體對應線段比（半徑比 vs 高度比）是否相等以判斷相似性。",
+    "marks": 1,
+    "common_error": "僅比較底面積或體積，未檢查所有對應邊長比例。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 6,
+    "what": "下結論並解釋：因高度比不等於半徑比，故不相似。",
+    "marks": 1,
+    "common_error": "只寫「不相似」卻未提供計算依據或反例說明。",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "考評報告指出考生常誤認面積比直接轉化為長度比，並錯誤認為體積改變後形狀仍保持相似，顯示對「相似」定義及「體積守恆」概念理解不足。",
+  "scaffolding_hints": [
+   "Hint1: 熔化重鑄意味著總體積不變，記得乘以數量！",
+   "Hint2: 面積比是長度比的平方，別忘了開根號求線段比。",
+   "Hint3: 相似要求所有對應邊長比例相同，高度也是邊長之一！"
+  ],
+  "quick_solution_strategy": "先寫體積等式 $2\\pi R^2 H = 27\\pi r^2 \\cdot 10$，再聯立 $R^2=9r^2$ 解出 $r:R$ 與 $H$"
+ },
+ "skills": {
+  "topic_id": "T-MEN",
+  "knowledge_point_ids": [
+   "K-MEN-01",
+   "K-MEN-02"
+  ],
+  "formula_ids": [
+   "F-MEN-01",
+   "F-MEN-02",
+   "F-MEN-03",
+   "F-MEN-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "2": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "6": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

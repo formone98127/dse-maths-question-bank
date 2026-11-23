@@ -1,0 +1,132 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2020",
+  "paper": "Paper 1",
+  "qno": "15",
+  "hash": "#2020P1Q15"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "概率",
+   "secondary_topics": [
+    "排列與組合",
+    "互補事件"
+   ],
+   "required_formulas": [
+    "$\\binom{n}{r} = \\frac{n!}{r!(n-r)!}$",
+    "$P(E) = 1 - P(E')$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 3
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "計算總碟數及從中任取4隻的所有可能情況數。",
+    "marks": 1,
+    "common_error": "忘記將三種顏色碟數相加，或組合公式用錯。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 2,
+    "what": "計算(a)部：抽到4隻同色（藍/綠/紫）的有利情況數。",
+    "marks": 1,
+    "common_error": "忽略紫色碟只有9隻，誤以為可選出4隻以上或算錯組合。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "計算(a)部：將三種顏色的有利情況相加得出總有利數。",
+    "marks": 1,
+    "common_error": "只計算一種顏色（如綠色）就當作答案，忘記加其他顏色。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 4,
+    "what": "寫出(a)部最終概率公式並化簡結果。",
+    "marks": 0,
+    "common_error": "未約分或保留過長的小數，不符合卷一要求。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "計算(b)部：利用互補事件「所有碟顏色皆相同」的概率。",
+    "marks": 1,
+    "common_error": "直接計算複雜情況（如2藍3綠等），而非用互補法。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 6,
+    "what": "寫出(b)部最終公式：1 減去(a)部結果，得出答案。",
+    "marks": 0,
+    "common_error": "忘記用 1-P(同色)，或誤以為要加其他情況。",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "考評報告指出考生能解(a)但(b)部常未能善用互補事件，顯示學生對「至少」類問題缺乏靈活運用互補法的策略思維。",
+  "scaffolding_hints": [
+   "Hint1: 先算總組合數 $\\binom{29}{4}$ 作為分母。",
+   "Hint2: (a)部需分別計算藍、綠、紫各能組出多少種同色情況再相加。",
+   "Hint3: (b)部「至少2隻不同」的互補事件是「0隻不同」（即4隻全同）"
+  ],
+  "quick_solution_strategy": "總數$\\binom{29}{4}$；(a)=$\\binom{3}{4}+\\binom{7}{4}+\\binom{9}{4}$（注意$\\binom{3}{4}=0$）；(b)=1-(a)"
+ },
+ "skills": {
+  "topic_id": "T-PROB",
+  "knowledge_point_ids": [
+   "K-PROB-01",
+   "K-PROB-02"
+  ],
+  "formula_ids": [
+   "F-PROB-01",
+   "F-PROB-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "2": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "4": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "6": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

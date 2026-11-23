@@ -1,0 +1,106 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2012",
+  "paper": "Paper 1",
+  "qno": "4",
+  "hash": "#2012P1Q4"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "百分數",
+   "secondary_topics": [
+    "連比問題",
+    "比較大小",
+    "邏輯推理"
+   ],
+   "required_formulas": [
+    "$\\text{新數} = \\text{原數} \\times (1 \\pm \\frac{\\text{百分比}}{100})$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "計算佩玲日薪：志偉 $\\times (1+20\\%)$",
+    "marks": 1,
+    "common_error": "忘記加上原本的 $1$，直接乘 $20\\%$",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "計算潔儀日薪：志偉 $\\div (1-20\\%)$",
+    "marks": 1,
+    "common_error": "誤以為減 $20\\%$ 就是除以 $80$，忽略單位一變化",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "比較三人的數值大小",
+    "marks": 1,
+    "common_error": "誤認為增减相同百分比結果相等",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "寫出結論並解釋原因（潔儀最高）",
+    "marks": 1,
+    "common_error": "只寫名字未解釋，或解釋邏輯錯誤",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "考評報告指出考生常誤以為增减相同百分比結果相等，這反映了對「單位一」概念理解不清，教學需強調基準量隨條件改變而不同。",
+  "scaffolding_hints": [
+   "提示 1：計算潔儀時，志偉是潔儀的 $80\\%$，所以要用除法找回潔儀。",
+   "提示 2：佩玲比志偉高，志偉比潔儀低，直覺上誰最高？",
+   "提示 3：用具體數字代入驗證（如設潔儀為 $x$），觀察變化趨勢。"
+  ],
+  "quick_solution_strategy": "先算佩玲 ($480 \\times 1.2$)，再算潔儀 ($480 \\div 0.8$)，比較三者數值，潔儀最高因她是基準且被減小後才到志偉。"
+ },
+ "skills": {
+  "topic_id": "T-PCT",
+  "knowledge_point_ids": [
+   "K-PCT-01",
+   "K-PCT-02"
+  ],
+  "formula_ids": [
+   "F-PCT-01",
+   "F-PCT-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

@@ -1,0 +1,116 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2016",
+  "paper": "Paper 1M",
+  "qno": "6",
+  "hash": "#2016P1MQ6"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "指數函數積分",
+   "secondary_topics": [
+    "指數方程求解",
+    "定積分的幾何意義"
+   ],
+   "required_formulas": [
+    "\\int a^{kx} dx = \\frac{a^{kx}}{k \\ln a} + C",
+    "\\int_{\\alpha}^{\\beta} f(x) dx = F(\\beta) - F(\\alpha)"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "計算不定積分，令 u=3^x 或直接套用公式。",
+    "marks": 2,
+    "common_error": "忘記除以 ln(3) 或 k 值，導致係數錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "解方程 f(x)=0 找出兩個 x 截距點。",
+    "marks": 1,
+    "common_error": "二次方程求根公式運用錯誤或忽略負號。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "將定積分的上下限代入原函數的原像 F(x)。",
+    "marks": 1,
+    "common_error": "代入時符號搞錯或計算大數減小數錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "確認曲線在 x 軸上方，面積即為定積分值。",
+    "marks": 1,
+    "common_error": "誤以為需取絕對值（此題無穿過問題）。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 5,
+    "what": "化簡最終數值答案至最簡形式。",
+    "marks": 1,
+    "common_error": "未合併同類項或保留不必要的根號。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "DSE 數學卷一常考指數與對數的混合運算，考生易因忽略 ln(base) 導致積分結果偏差，需加強基本公式熟練度。",
+  "scaffolding_hints": [
+   "提示 1：觀察 f(x) 結構，可視為關於 3^x 的二次式。",
+   "提示 2：積分時注意底數為 3，係數需除以 ln(3)。",
+   "提示 3：求面積前先解方程找出交點，確認區域位置。"
+  ],
+  "quick_solution_strategy": "先積分得 F(x)，再解 3^x 二次式得截距，最後代入計算定積分值。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "5": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

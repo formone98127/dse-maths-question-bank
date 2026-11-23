@@ -1,0 +1,120 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "SP",
+  "paper": "Paper 1",
+  "qno": "8",
+  "hash": "#SPP1Q8"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "變換與對稱",
+   "secondary_topics": [
+    "旋轉",
+    "反射",
+    "垂直線判定"
+   ],
+   "required_formulas": [
+    "點 $(x, y)$ 繞原點順時針旋轉 $90^\\circ$ 變為 $(y, -x)$",
+    "點 $(x, y)$ 對 $y$ 軸反射變為 $(-x, y)$",
+    "斜率乘積 $m_1 m_2 = -1$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 5
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "計算 $A'$ 坐標：$(-2,5)$ 順時針轉 $90^\\circ$ 得 $(5,2)$。",
+    "marks": 1,
+    "common_error": "混淆順逆時針方向，寫成 $(-5,-2)$ 或 $(5,-2)$。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 2,
+    "what": "計算 $A''$ 坐標：$(-2,5)$ 對 $y$ 軸反射得 $(2,5)$。",
+    "marks": 1,
+    "common_error": "忘記改變 $x$ 符號，仍寫成 $(-2,5)$ 或只改 $y$。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "計算直線 $AA'$ 斜率：利用 $(5,2)$ 與 $(-2,5)$ 求 $\\Delta y/\\Delta x$。",
+    "marks": 1,
+    "common_error": "點坐標代入錯誤，或算出斜率為 $0$（誤以為水平）。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "計算直線 $OA''$ 斜率：利用 $(2,5)$ 與 $(0,0)$ 求 $\\Delta y/\\Delta x$。",
+    "marks": 1,
+    "common_error": "忽略原點，只用 $A''$ 坐標當作斜率值。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 5,
+    "what": "比較兩斜率乘積是否等於 $-1$ 以判定垂直關係。",
+    "marks": 1,
+    "common_error": "計算乘積時算錯，或誤判非整數乘積為 $-1$。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "學生常混淆旋轉方向導致坐標錯誤，且在判定垂直時未正確計算斜率乘積，需加強變換後坐標的記憶與斜率公式應用。",
+  "scaffolding_hints": [
+   "順時針轉 $90^\\circ$：$(x,y) \\to (y,-x)$",
+   "對 $y$ 軸反射：$x$ 變號，$y$ 不變",
+   "垂直條件：斜率乘積為 $-1$"
+  ],
+  "quick_solution_strategy": "先寫出兩點坐標，再算斜率乘積。若乘積為 $-1$ 則垂直，否則不垂直。"
+ },
+ "skills": {
+  "topic_id": "T-TRF",
+  "knowledge_point_ids": [
+   "K-TRF-02",
+   "K-TRF-03"
+  ],
+  "formula_ids": [
+   "F-TRF-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-TRF-02",
+    "formula_id": "F-TRF-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "2": {
+    "knowledge_point_id": "K-TRF-02",
+    "formula_id": "F-TRF-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-TRF-02",
+    "formula_id": "F-TRF-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-TRF-02",
+    "formula_id": "F-TRF-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "5": {
+    "knowledge_point_id": "K-TRF-02",
+    "formula_id": "F-TRF-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

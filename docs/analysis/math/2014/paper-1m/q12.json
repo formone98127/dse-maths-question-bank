@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 1M",
+  "qno": "12",
+  "hash": "#2014P1MQ12"
+ },
+ "model": "tag-stub",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "統計",
+   "secondary_topics": [
+    "概率"
+   ],
+   "required_formulas": [],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 160,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "讀清題目條件與所求",
+    "marks": 1,
+    "common_error": "漏睇條件或單位",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 2,
+    "what": "選用正確公式／模型並列式",
+    "marks": 2,
+    "common_error": "用錯公式或模型",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "計算並寫出答案",
+    "marks": 1,
+    "common_error": "計算或小數位出錯",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "（無考評報告）",
+  "scaffolding_hints": [
+   "Hint 1：先標出已知同未知。",
+   "Hint 2：對應課題：統計、概率",
+   "Hint 3：檢查單位同答題格式。"
+  ],
+  "quick_solution_strategy": "按標籤課題套公式，逐步得分。"
+ },
+ "skills": {
+  "topic_id": "T-PROB",
+  "knowledge_point_ids": [
+   "K-PROB-01",
+   "K-PROB-02"
+  ],
+  "formula_ids": [
+   "F-PROB-01",
+   "F-PROB-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "2": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ },
+ "note": "LLM failed on oversized table/content; stub from tags."
+}

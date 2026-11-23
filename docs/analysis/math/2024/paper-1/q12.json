@@ -1,0 +1,134 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 1",
+  "qno": "12",
+  "hash": "#2024P1Q12"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "直線方程與坐標幾何",
+   "secondary_topics": [
+    "斜率公式",
+    "正方形性質",
+    "相似三角形"
+   ],
+   "required_formulas": [
+    "$m = \\frac{y_2 - y_1}{x_2 - x_1}$",
+    "$\\text{Area} = s^2$",
+    "$\\tan \\theta = \\frac{\\text{對邊}}{\\text{鄰邊}}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 300,
+   "marks": 7
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "設 $B$ 點坐標為 $(b,0)$，利用 $AB=BC$ 及斜率 $m$ 表達 $C$ 點坐標。",
+    "marks": 1,
+    "common_error": "混淆 $A,B$ 順序導致長度計算錯誤；忘記 $C$ 的 $x$ 坐標等於 $B$。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 2,
+    "what": "利用正方形性質（邊長相等且垂直）找出 $D$ 點坐標與 $m$ 的關係。",
+    "marks": 1,
+    "common_error": "未正確應用斜率乘積為 -1 或誤判向量方向導致 $D$ 點錯誤。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "計算 $OD$ 斜率並化簡，得出 (a) 部分答案 $m$ 的表達式。",
+    "marks": 1,
+    "common_error": "分數運算錯誤；未約分至最簡形式。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "針對 (b) 部分，計算 $OM$ 直線方程及斜率，設定 $P$ 點坐標參數化。",
+    "marks": 1,
+    "common_error": "寫錯 $OM$ 截距式或點斜式；忽略 $M(6,5)$ 的正確代入。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "利用相似三角形或斜率關係，建立正方形邊長與 $P$ 點坐標的方程。",
+    "marks": 1,
+    "common_error": "假設正方形位置錯誤（如 $S$ 不在 $x$ 軸）；未考慮 $Q,R,S$ 的幾何限制。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 6,
+    "what": "解方程求得 $P$ 的 $x$ 坐標，並檢查是否符合題目範圍（正方形存在性）。",
+    "marks": 2,
+    "common_error": "解二次方程遺漏一解；未驗證所得點是否構成真實正方形。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "此題結合代數與幾何，考評報告常強調學生需熟練運用斜率公式及相似三角形比例關係來處理非標準位置的圖形問題。",
+  "scaffolding_hints": [
+   "Hint1: 先畫出 (a) 部分草圖，標註 $A,B,C,D$ 相對位置，確認 $AB=BC$ 的向量意義。",
+   "Hint2: 正方形相鄰邊斜率乘積為 -1，且邊長相等，可透過向量旋轉或相似比求解。",
+   "Hint3: (b) 部分關鍵在於將 $P$ 點坐標設為 $(x, y)$，利用 $OM$ 直線方程連結 $x,y$。"
+  ],
+  "quick_solution_strategy": "先由 (a) 推導通用斜率公式，再代入 (b) 的具體數值；善用相似三角形比例代替複雜坐標運算。"
+ },
+ "skills": {
+  "topic_id": "T-LIN",
+  "knowledge_point_ids": [
+   "K-LIN-01",
+   "K-LIN-02"
+  ],
+  "formula_ids": [
+   "F-LIN-01",
+   "F-LIN-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "2": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "6": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

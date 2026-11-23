@@ -1,0 +1,121 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "SP",
+  "paper": "Paper 1",
+  "qno": "18",
+  "hash": "#SPP1Q18"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "立體幾何",
+   "secondary_topics": [
+    "三角函數",
+    "四面體體積公式",
+    "二面角"
+   ],
+   "required_formulas": [
+    "$\\sin \\theta = \\frac{\\text{對邊}}{\\text{斜邊}}$",
+    "$V = \\frac{1}{3} \\times \\text{底面積} \\times \\text{高}$",
+    "$\\cos \\theta = \\frac{\\text{鄰邊}}{\\text{斜邊}}$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 300,
+   "marks": 8
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "在 Rt\\triangle ACD 中求 CD 及 AD；在 Rt\\triangle BCD 中求 BC 及 BD。",
+    "marks": 3,
+    "common_error": "混淆 sin/cos/tan 或計算錯誤導致根式化簡不當。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "利用餘弦定理求 AB=18 時\\triangle ADB 的邊長關係，或直接構建空間坐標系。",
+    "marks": 1,
+    "common_error": "忽略立體摺疊後 AD 與 BD 不再共線，誤用平面幾何公式。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "確定二面角的平面角：作 B 到水平面的垂線，連接垂足與 D，求\\angle BDC'（或類似構造）。",
+    "marks": 1,
+    "common_error": "未正確識別二面角的平面角，誤將\\angle ADB 當作所求角度。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "計算\\triangle BCD 面積及 D 到 AB 距離（高），代入體積公式 $V=\\frac{1}{3}Sh$。",
+    "marks": 2,
+    "common_error": "忘記四面體體積需除以 3，或底面積計算錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "分析\\angle ADB 變化對高（D 到 AB 距離）的影響，判斷體積增減趨勢。",
+    "marks": 1,
+    "common_error": "未解釋原因，僅給出結論；或誤認為體積隨角度線性增加。",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "此題結合平面三角與立體幾何，考評報告常強調學生對「二面角平面角的構造」及「四面體體積公式中高的動態變化」掌握不足。",
+  "scaffolding_hints": [
+   "Hint1: 先解兩個直角三角形求出 CD, AD, BD 的長度。",
+   "Hint2: 摺疊後，\\triangle ACD 固定於水平面，求二面角需找垂直於交線 CD 的平面內兩條垂線夾角。",
+   "Hint3: 體積變化關鍵在於點 D 到直線 AB 的距離（即四面體的高）如何隨\\angle ADB 改變。"
+  ],
+  "quick_solution_strategy": "先算出 CD, AD, BD；利用餘弦定理或坐標法求二面角；體積公式 $V=\\frac{1}{3}S_{BCD}\\cdot h$，分析 h 隨角度變化。"
+ },
+ "skills": {
+  "topic_id": "T-TRI",
+  "knowledge_point_ids": [
+   "K-TRI-01",
+   "K-TRI-02"
+  ],
+  "formula_ids": [
+   "F-TRI-01",
+   "F-TRI-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

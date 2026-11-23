@@ -1,0 +1,120 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 1",
+  "qno": "7",
+  "hash": "#2014P1Q7"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "多項式",
+   "secondary_topics": [
+    "因式定理",
+    "餘式定理",
+    "有理根定理"
+   ],
+   "required_formulas": [
+    "P(a) = 0 \\iff (x-a)\\text{是}P(x)\\text{的因式}",
+    "有理數定義：可表示為\\frac{p}{q}\\text{之整數比}"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120,
+   "marks": 5
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用餘式定理求 c 值，代入 x=2 得 f(2)=-33",
+    "marks": 1,
+    "common_error": "計算錯誤導致 c 值不正確",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "將 x=-1 代入 f(x) 驗證是否為零",
+    "marks": 1,
+    "common_error": "代入時符號錯誤或計算失誤",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "根據 f(-1) 結果判斷 x+1 是否為因式並解釋",
+    "marks": 2,
+    "common_error": "只寫結論未說明因式定理關係",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 4,
+    "what": "解方程 f(x)=0 找出所有根（含 c 值）",
+    "marks": 1,
+    "common_error": "漏解三次方程或分解因式錯誤",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "檢查各根是否為有理數並回應宣稱",
+    "marks": 1,
+    "common_error": "誤判無理數或有理數定義不清",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "考生對餘式定理應用良好，但在處理具體數值計算及有理數定義（如負分數）時偶有混淆。",
+  "scaffolding_hints": [
+   "先由 f(2)=-33 解出 c 的數值。",
+   "因式定理：若 x=a 是根，則 (x-a) 是因式；反之亦然。",
+   "有理數包含所有整數及有限小數、循環小數（如 -3/4）。"
+  ],
+  "quick_solution_strategy": "先求 c，再代 x=-1 驗算因式；解方程得根後檢查分母是否為 0 且分子分母整除。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-04",
+   "K-POL-05"
+  ],
+  "formula_ids": [
+   "F-POL-04",
+   "F-POL-05"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-POL-04",
+    "formula_id": "F-POL-04",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-POL-04",
+    "formula_id": "F-POL-04",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-POL-04",
+    "formula_id": "F-POL-04",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "4": {
+    "knowledge_point_id": "K-POL-04",
+    "formula_id": "F-POL-04",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-POL-04",
+    "formula_id": "F-POL-04",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

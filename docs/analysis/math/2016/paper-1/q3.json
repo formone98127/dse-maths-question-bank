@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2016",
+  "paper": "Paper 1",
+  "qno": "3",
+  "hash": "#2016P1Q3"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "有理式運算",
+   "secondary_topics": [
+    "通分",
+    "因式分解",
+    "符號處理"
+   ],
+   "required_formulas": [
+    "\\frac{A}{B} + \\frac{C}{D} = \\frac{AD + BC}{BD}"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90,
+   "marks": 3
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "觀察分母，將第二項分母變為與第一項相似形式。",
+    "marks": 1,
+    "common_error": "直接通分時忽略符號變化，導致分母無法合併或錯誤展開。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 2,
+    "what": "將第二項分母 $1-6x$ 變為 $-(6x-1)$ 以利觀察結構。",
+    "marks": 1,
+    "common_error": "未能靈活調整分母符號，堅持用原樣通分導致計算複雜化。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "正確通分並合併分子，化簡為最簡有理式。",
+    "marks": 1,
+    "common_error": "合併後未檢查是否可約分，或展開時出現計算錯誤。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "考評報告指出大部分考生能正確化簡，顯示此題為基礎運算題，主要考驗學生對分母結構的敏感度及符號處理能力。",
+  "scaffolding_hints": [
+   "注意分母 $4x-5$ 與 $1-6x$ 並非直接倍數關係，需調整符號。",
+   "通分時務必將分子分母同時乘以對應因子，保持等式平衡。",
+   "最終結果應為最簡形式，檢查是否有公因式可約去。"
+  ],
+  "quick_solution_strategy": "將第二項分母寫成 $-(6x-1)$，再通分合併分子，最後化簡。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-03"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "2": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

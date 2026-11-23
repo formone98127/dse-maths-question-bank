@@ -1,0 +1,128 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2018",
+  "paper": "Paper 1M",
+  "qno": "6",
+  "hash": "#2018P1MQ6"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "指數與對數函數",
+   "secondary_topics": [
+    "二項式展開",
+    "泰勒級數展開"
+   ],
+   "required_formulas": [
+    "e^{ax} = 1 + ax + \\frac{(ax)^2}{2!} + \\dots",
+    "(a+b)^n = \\sum_{r=0}^n \\binom{n}{r} a^{n-r} b^r"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 360,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "展開 e^{kx} 至 x^2 項，保留常數項",
+    "marks": 1,
+    "common_error": "忘記除以階乘或漏寫常數項 1",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "展開 e^{2x} 至 x^2 項，合併同類項",
+    "marks": 1,
+    "common_error": "指數代換錯誤導致係數算錯",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "展開 (1-3x)^8 至 x^2 項（忽略 x^3 以上）",
+    "marks": 1,
+    "common_error": "二項式係數計算錯誤或漏掉交叉項",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "將 (a) 部分結果代入大括號內",
+    "marks": 1,
+    "common_error": "符號處理錯誤導致正負號混亂",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 5,
+    "what": "計算整體展開式中 x 與 x^2 的係數",
+    "marks": 1,
+    "common_error": "合併項時漏掉某一部分的貢獻",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "令兩係數相等並解方程求 k",
+    "marks": 1,
+    "common_error": "解一元一次方程時移項錯誤",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "此題結合指數展開與二項式定理，考生需熟練泰勒級數前幾項公式及二項式係數計算，常見失分點在於多項式乘法時的交叉項遺漏。",
+  "scaffolding_hints": [
+   "回憶 e^u 的馬克勞林展開式前三項",
+   "注意 (1-3x)^8 展開時只取到 x^2 項即可",
+   "先寫出 x 與 x^2 係數的表達式再列等式"
+  ],
+  "quick_solution_strategy": "分別展開兩部分至 x^2，合併後提取係數，令其相等解 k。"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "5": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

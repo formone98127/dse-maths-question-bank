@@ -1,0 +1,107 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": 2025,
+  "paper": "Paper 1",
+  "qno": 7,
+  "hash": "#2025P1Q7"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "百分數",
+   "secondary_topics": [
+    "折扣計算",
+    "成本與售價關係",
+    "損益判斷"
+   ],
+   "required_formulas": [
+    "$\\text{售價} = \\text{標價} \\times (1 - \\text{折扣率})$",
+    "$\\text{標價} = \\text{成本} \\times (1 + \\text{溢價率})$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 5
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用售價與折扣率，反推標價。",
+    "marks": 2,
+    "common_error": "誤以為折後價是打 4 折（即剩餘 40%），而非減去 60%。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 2,
+    "what": "利用標價與溢價率，反推成本。",
+    "marks": 1,
+    "common_error": "混淆「高於成本 75%」為標價是成本的 75%，而非 175%。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "比較售價與成本，判斷損益。",
+    "marks": 1,
+    "common_error": "未計算差額直接下結論，或算錯減法結果。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "明確寫出「賺取」或「虧損」並說明理由。",
+    "marks": 1,
+    "common_error": "僅寫結論無解釋，或未指出售價大於成本。",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "考生普遍能正確處理折扣與溢價概念，但需警惕將「打幾折」與「減去幾成」混淆的閱讀誤解。",
+  "scaffolding_hints": [
+   "提示：售價是標價的 (1-60%) = 40%。",
+   "知識：標價比成本高 75%，即標價 = 成本 × 1.75。",
+   "破題：先求標價，再求成本，最後比較兩者大小。"
+  ],
+  "quick_solution_strategy": "售價=標價×0.4 → 標價=378/0.4；標價=成本×1.75 → 成本=標價/1.75；比較售價與成本。"
+ },
+ "skills": {
+  "topic_id": "T-PCT",
+  "knowledge_point_ids": [
+   "K-PCT-01",
+   "K-PCT-02"
+  ],
+  "formula_ids": [
+   "F-PCT-01",
+   "F-PCT-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "2": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

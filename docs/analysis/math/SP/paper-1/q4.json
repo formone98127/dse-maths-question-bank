@@ -1,0 +1,106 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "SP",
+  "paper": "Paper 1",
+  "qno": "4",
+  "hash": "#SPP1Q4"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "百分數",
+   "secondary_topics": [
+    "成本與售價關係",
+    "盈利百分率計算"
+   ],
+   "required_formulas": [
+    "$\\text{標價} = \\text{成本} \\times (1 + \\text{加成率})$",
+    "$\\text{盈利百分率} = \\frac{\\text{售價} - \\text{成本}}{\\text{成本}} \\times 100\\%$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "設成本為 x，列式：x(1+40%)=560",
+    "marks": 1,
+    "common_error": "將 560 直接除以 40% 而忽略 (1+40%)",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "解方程求出成本 x=400",
+    "marks": 1,
+    "common_error": "計算錯誤導致 x≠400",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "計算盈利金額：460-400=60",
+    "marks": 1,
+    "common_error": "用售價減標價或忘記減成本",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 4,
+    "what": "計算盈利百分率：60/400*100%",
+    "marks": 1,
+    "common_error": "分母用錯成售價或標價",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "此題測試學生對成本、售價與利潤百分率關係的基礎理解，常因混淆基準量（成本 vs 售價）而出錯。",
+  "scaffolding_hints": [
+   "Hint1: 標價是成本的 140%，不是成本的 40%。",
+   "Hint2: 盈利百分率的基準永遠是「成本」。",
+   "Hint3: 先畫出成本 -> 標價 -> 售價的數值關係圖。"
+  ],
+  "quick_solution_strategy": "設成本 x，x(1.4)=560→x=400；盈利=(460-400)/400=15%。"
+ },
+ "skills": {
+  "topic_id": "T-PCT",
+  "knowledge_point_ids": [
+   "K-PCT-01",
+   "K-PCT-02"
+  ],
+  "formula_ids": [
+   "F-PCT-01",
+   "F-PCT-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "4": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

@@ -1,0 +1,136 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 1",
+  "qno": "18",
+  "hash": "#2013P1Q18"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "平面幾何",
+   "secondary_topics": [
+    "正弦公式",
+    "餘弦公式",
+    "摺疊問題",
+    "空間想像"
+   ],
+   "required_formulas": [
+    "$\\frac{a}{\\sin A} = \\frac{b}{\\sin B} = \\frac{c}{\\sin C}$",
+    "$c^2 = a^2 + b^2 - 2ab \\cos C$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 480,
+   "marks": 16
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "驗證三角形 ABC 為直角三角形 (28^2+21^2=35^2)，確認角 B 為 90 度。",
+    "marks": 2,
+    "common_error": "忽略勾股數關係，直接對三角形 ABC 使用餘弦公式求角 BCM。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 2,
+    "what": "在三角形 BMC 中，利用正弦公式由已知邊長及角度求 CM。",
+    "marks": 3,
+    "common_error": "計算錯誤或混淆正弦公式對應的邊角關係。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "利用摺疊性質，確定摺疊後 A'C 距離（即原 AC 長度）。",
+    "marks": 2,
+    "common_error": "誤以為摺疊後 AC 長度改變，或未能理解空間中 A 與 C 的相對位置。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "在三角形 AMC 中，利用餘弦公式求 AM 長度（注意角 AMC=107）。",
+    "marks": 3,
+    "common_error": "角度代入錯誤，或忘記使用原 AC 長度而非其他邊長。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "利用勾股定理於三角形 ABM (直角) 求 BM，再結合摺疊性質解空間距離。",
+    "marks": 3,
+    "common_error": "未能正確建立三維空間中的直角三角形關係，混淆平面與立體計算。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 6,
+    "what": "判斷 AN 是否垂直 BC，並解釋文俊宣稱的錯誤（AN 不垂直於 BC）。",
+    "marks": 3,
+    "common_error": "僅回答同意或不同意，缺乏幾何理由說明為何角 ANM 不等於二面角。",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "考評報告指出考生常忽略三角形 ABC 為直角三角形的關鍵條件，導致後續計算全錯；此外，空間想像力不足使得學生誤解摺疊後的幾何關係及垂直判定。",
+  "scaffolding_hints": [
+   "提示：先檢查邊長 28, 21, 35 是否符合勾股定理？",
+   "提示：摺疊問題中，紙卡上的長度在摺疊後是否改變？",
+   "提示：二面角的平面角定義為何？AN 真的垂直於 BC 嗎？"
+  ],
+  "quick_solution_strategy": "先確認 ABC 為直角三角形，再用正弦公式求 CM，最後利用餘弦公式處理摺疊後的空間距離。"
+ },
+ "skills": {
+  "topic_id": "T-MEN",
+  "knowledge_point_ids": [
+   "K-MEN-01",
+   "K-MEN-02"
+  ],
+  "formula_ids": [
+   "F-MEN-01",
+   "F-MEN-02",
+   "F-MEN-03",
+   "F-MEN-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "2": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "6": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

@@ -1,0 +1,133 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2020",
+  "paper": "Paper 1",
+  "qno": "3",
+  "hash": "#2020P1Q3"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "數系",
+   "secondary_topics": [
+    "近似值（上捨入）",
+    "近似值（下捨入）",
+    "有效數字"
+   ],
+   "required_formulas": [
+    "上捨入：若目標位後第一位 $\\ge 5$，則進一；否則不變。",
+    "下捨入：直接截斷目標位後的數字。",
+    "有效數字：從左起第一個非零數字開始計數。"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 60,
+   "marks": 3
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "識別題目要求：上捨入、下捨入與有效數字。",
+    "marks": 1,
+    "common_error": "混淆「上」與「下」的定義，將下捨入誤作四捨五入。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "執行 (a)：上捨入至百位（看十位數字）。",
+    "marks": 1,
+    "common_error": "誤看百位後的數字，或忘記「上」需進位的規則。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 3,
+    "what": "執行 (b)：下捨入至二位小數（直接截斷）。",
+    "marks": 1,
+    "common_error": "誤用四捨五入法則，將第三位小數影響結果。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 4,
+    "what": "執行 (c)：捨入至二位有效數字（從左起計）。",
+    "marks": 0,
+    "common_error": "誤將小數點位置當作有效數字起始點。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 5,
+    "what": "檢查答案格式是否符合題目要求（單位/位數）。",
+    "marks": 0,
+    "common_error": "遺漏「約」字或寫出過多無效數字。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 6,
+    "what": "確認所有部分已作答且無計算錯誤。",
+    "marks": 0,
+    "common_error": "漏做其中一問導致扣分。",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "根據考評報告，考生多能正確作答，但少數人混淆「上捨入」與「下捨入」的定義，此為主要失分原因。",
+  "scaffolding_hints": [
+   "Hint1：上捨入 = 若後一位 $\\ge5$ 則進位；下捨入 = 直接切掉後面數字。",
+   "Hint2：有效數字從第一個非零數字開始算，不管是不是小數點前。",
+   "Hint3：先標出目標位，再看下一位決定是否調整或截斷。"
+  ],
+  "quick_solution_strategy": "標記目標位→看下一位數字→上則進/下則切→有效數字從左起計兩位。"
+ },
+ "skills": {
+  "topic_id": "T-NUM",
+  "knowledge_point_ids": [
+   "K-NUM-01",
+   "K-NUM-02"
+  ],
+  "formula_ids": [
+   "F-NUM-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "3": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "4": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "5": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "6": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

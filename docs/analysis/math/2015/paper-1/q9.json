@@ -1,0 +1,96 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2015",
+  "paper": "Paper 1",
+  "qno": "9",
+  "hash": "#2015P1Q9"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓幾何",
+   "secondary_topics": [
+    "扇形面積公式",
+    "扇形周界定義",
+    "弧度制"
+   ],
+   "required_formulas": [
+    "$A = \\frac{1}{2}r^2\\theta$",
+    "$C = 2r + r\\theta$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90,
+   "marks": 5
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用面積公式 $A = \\frac{1}{2}r^2\\theta$ 代入數值求角 $\\theta$",
+    "marks": 3,
+    "common_error": "忘記除以 $\\frac{1}{2}$ 或混淆半徑與直徑",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "計算兩條半徑長度 ($2 \\times 12$) 及弧長 ($r\\theta$)",
+    "marks": 1,
+    "common_error": "將周界誤算為僅是弧長，忽略兩條半徑",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "將半徑總和與弧長相加得出最終周界數值",
+    "marks": 1,
+    "common_error": "加法運算錯誤或單位換算失誤",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "考生常混淆扇形周界（兩半徑加弧長）與單純的圓周率或弧長，且易忽略在答案中標註單位 cm。",
+  "scaffolding_hints": [
+   "回憶扇形面積公式涉及半徑平方與角度。",
+   "區分「圓周」與「扇形周界」的組成差異。",
+   "先求角，再分別計算直線部分與曲線部分。"
+  ],
+  "quick_solution_strategy": "代入 $30\\pi = \\frac{1}{2}(12)^2\\theta$ 解出 $\\theta=\\frac{5\\pi}{4}$；周界 $= 24 + 12(\\frac{5\\pi}{4})$"
+ },
+ "skills": {
+  "topic_id": "T-MEN",
+  "knowledge_point_ids": [
+   "K-MEN-01",
+   "K-MEN-02"
+  ],
+  "formula_ids": [
+   "F-MEN-01",
+   "F-MEN-02",
+   "F-MEN-03",
+   "F-MEN-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

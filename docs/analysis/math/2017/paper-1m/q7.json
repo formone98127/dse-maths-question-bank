@@ -1,0 +1,130 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 1M",
+  "qno": "7",
+  "hash": "#2017P1MQ7"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "微分法",
+   "secondary_topics": [
+    "商則求導",
+    "根式化簡",
+    "直線斜率"
+   ],
+   "required_formulas": [
+    "\\frac{d}{dx}(uv) = u'v + uv'",
+    "\\frac{d}{dx}(\\sqrt{u}) = \\frac{u'}{2\\sqrt{u}}"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 7
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用商則或鏈式法則求 y 對 x 的導數 dy/dx",
+    "marks": 2,
+    "common_error": "忘記將分母開根號視為 (x-2)^{1/2} 導致指數錯誤",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 2,
+    "what": "化簡導數表達式，確保分母為最簡形式",
+    "marks": 1,
+    "common_error": "未合併項或保留複雜根號形式影響後續計算",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "設切點坐標為 (x_0, y_0) 並代入原函數",
+    "marks": 1,
+    "common_error": "混淆切點與已知點 (9,0) 的座標角色",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 4,
+    "what": "將 dy/dx 表達式中的 x 替換為 x_0 得斜率公式",
+    "marks": 1,
+    "common_error": "忘記將 x_0 代入導數式而非原函數",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "利用切線過 (9,0) 建立斜率等式：(y_0 - 0)/(x_0 - 9)",
+    "marks": 1,
+    "common_error": "錯誤使用原點或混淆直線斜率公式",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 6,
+    "what": "聯立解方程求 x_0 並計算最終斜率值",
+    "marks": 1,
+    "common_error": "解二次方程時遺漏負根或算術錯誤",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "此題測試微分技巧與幾何應用，考生常因化簡導數時指數運算錯誤而失分。",
+  "scaffolding_hints": [
+   "回顧商則求導公式及根式指數轉換",
+   "注意切點 (x_0, y_0) 必須同時滿足曲線與切線條件",
+   "將斜率表達為 x_0 的函數後再解方程"
+  ],
+  "quick_solution_strategy": "先求 dy/dx，設切點代入導數得斜率，再利用過 (9,0) 列等式解 x_0"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "6": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

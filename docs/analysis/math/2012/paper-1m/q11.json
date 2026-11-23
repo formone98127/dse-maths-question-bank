@@ -1,0 +1,128 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2012",
+  "paper": "Paper 1M",
+  "qno": "11",
+  "hash": "#2012P1MQ11"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "微分法",
+   "secondary_topics": [
+    "指數與對數函數",
+    "積分法"
+   ],
+   "required_formulas": [
+    "\\frac{d}{dt}[\\ln|u|] = \\frac{u'}{u}",
+    "\\int \\frac{1}{x^2+k} dx = \\frac{1}{\\sqrt{k}} \\arctan(\\frac{x}{\\sqrt{k}}) + C"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 300,
+   "marks": 14
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用 t=35 為極大值點，代入導數為 0 求 a",
+    "marks": 2,
+    "common_error": "忘記將 t=35 代入分母導致除零錯誤",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "利用 t=T 時 R 回到初始值，積分求 T",
+    "marks": 4,
+    "common_error": "積分常數 C 處理錯誤或忽略邊界條件",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "利用 t=40 至 41 的變化量求 b",
+    "marks": 2,
+    "common_error": "誤用 ln(61/50) 為線性變化而非對數微分",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "寫出完整 R(t) 表達式並加入積分常數",
+    "marks": 2,
+    "common_error": "忘記加上由邊界條件決定的 C",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "求 R'(t) 並令其為 0 找極大值點",
+    "marks": 2,
+    "common_error": "商法則求導錯誤或簡化分式失敗",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "驗證解在範圍內並確認為最大值",
+    "marks": 2,
+    "common_error": "未檢查二階導數或區間端點",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "此題結合微積分應用於物理模型，重點在於處理有理函數的積分與極值判斷，常見失分點在於積分技巧生疏及邊界條件忽略。",
+  "scaffolding_hints": [
+   "提示 1：極大值處導數必為零，注意分母不能為零。",
+   "提示 2：積分時記得處理常數 C，利用 R(0)=R(T) 消去 C。",
+   "提示 3：求最速變化率需對 R(t) 再次求導並分析符號變化。"
+  ],
+  "quick_solution_strategy": "先由極值點 t=35 定 a，再由積分結果與邊界條件定 b,T，最後求二階導數找最陡斜率。"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

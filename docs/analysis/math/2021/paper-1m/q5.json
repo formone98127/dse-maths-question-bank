@@ -1,0 +1,116 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 1M",
+  "qno": "5",
+  "hash": "#2021P1MQ5"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "指數與對數函數",
+   "secondary_topics": [
+    "鏈式法則",
+    "積分法",
+    "區域面積"
+   ],
+   "required_formulas": [
+    "\\frac{d}{dx}[g(u(x))] = \\frac{dg}{du} \\cdot \\frac{du}{dx}",
+    "\\int e^{kx} dx = \\frac{1}{k}e^{kx} + C"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 300,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "計算 \\frac{dg}{du} 並利用鏈式法則展開 \\frac{dg}{dx}",
+    "marks": 2,
+    "common_error": "忘記乘以 \\frac{du}{dx} = \\frac{1}{3}x^{-2/3}",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 2,
+    "what": "比較係數找出 \\beta，確認 \\frac{dg}{dx} = \\beta f(x)",
+    "marks": 1,
+    "common_error": "代數化簡錯誤導致 \\beta 值算錯",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "將面積問題轉化為定積分 \\int_0^8 f(x) dx",
+    "marks": 1,
+    "common_error": "上下限寫反或漏掉 y 軸 (x=0)",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 4,
+    "what": "利用 (a) 部分結果進行 u 代數換元積分",
+    "marks": 1,
+    "common_error": "忘記轉換 \\frac{du}{dx} 導致積分變數混亂",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 5,
+    "what": "計算新上下限 (u=0 到 u=2) 並求值",
+    "marks": 1,
+    "common_error": "代入極限時指數符號處理錯誤",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "此題結合微積分技巧與代數化簡，考評報告雖無直接數據，但類似題目常顯示學生在鏈式法則應用及 u 代換時易忽略變數轉換係數。",
+  "scaffolding_hints": [
+   "先將 g(u) 對 u 求導，再乘以 u' = \\frac{1}{3}x^{-2/3}",
+   "觀察 f(x) 結構，發現 e^{-u} 項可提取公因式",
+   "面積計算需嚴格設定 x=0 至 x=8 對應的 u 範圍"
+  ],
+  "quick_solution_strategy": "先求 \\frac{dg}{du}，乘上 \\frac{du}{dx} 得 \\beta；面積直接用 (a) 結論代換積分變數。"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "2": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "4": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "5": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

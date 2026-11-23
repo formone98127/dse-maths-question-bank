@@ -1,0 +1,130 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 1M",
+  "qno": "12",
+  "hash": "#2021P1MQ12"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "微分法",
+   "secondary_topics": [
+    "鏈式法則",
+    "極值問題",
+    "幾何體積公式"
+   ],
+   "required_formulas": [
+    "\\frac{d}{dt}f(g(t)) = f'(g(t)) \\cdot g'(t)",
+    "V = \\frac{1}{3}\\pi r^2 h"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 480,
+   "marks": 14
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "對 \\frac{dV}{dt} 求導數並令其為零以找極大值點 T",
+    "marks": 4,
+    "common_error": "忘記將 \\sqrt{t+1} 視為複合函數，直接微分錯誤。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 2,
+    "what": "解方程找出 T 的值並驗證為極大值",
+    "marks": 2,
+    "common_error": "算錯 \\sqrt{3-\\sqrt{T+1}} 的數值導致 T 錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "將 t=T 代入 \\frac{dV}{dt} 積分求 V(T)",
+    "marks": 5,
+    "common_error": "積分時漏掉常數 C，或誤以為 V(0)=0 故 C=0 但未驗證。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "利用相似三角形建立 r 與 h 的關係式",
+    "marks": 1,
+    "common_error": "比例列錯，例如寫成 \\frac{r}{h} = \\frac{6}{1} 而非 \\frac{r}{h} = \\frac{6}{1}。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 5,
+    "what": "將 V 用 h 表示並求 \\frac{dV}{dt} = Qh^2 \\frac{dh}{dt}",
+    "marks": 3,
+    "common_error": "微分時漏掉 \\pi 或係數計算錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "代入 t=T 時的 \\frac{dV}{dt} 與 h 值求 \\frac{dh}{dt}",
+    "marks": 3,
+    "common_error": "忘記將 T 代入 h 的表達式，直接代數值導致錯誤。",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "此題結合微積分與幾何應用，常見失分點在於複合函數求導及積分常數處理，考生需熟練鏈式法則與體積公式轉換。",
+  "scaffolding_hints": [
+   "提示 1：先將 \\frac{dV}{dt} 寫成 (t+1)^{1/2}(3-(t+1)^{1/2})^{1/2} 再求導。",
+   "提示 2：積分時注意 \\int \\sqrt{u} du = \\frac{2}{3}u^{3/2} + C，並利用 V(0)=0 定 C。",
+   "提示 3：倒圓錐中 r/h = 6/1，故 V = \\frac{1}{3}\\pi (6h)^2 h = 12\\pi h^3"
+  ],
+  "quick_solution_strategy": "先求 \\frac{dV}{dt} 的極大值點 T，再積分得 V(T)，最後用相似比換算 \\frac{dh}{dt}。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "5": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

@@ -1,0 +1,117 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2019",
+  "paper": "Paper 1",
+  "qno": "10",
+  "hash": "#2019P1Q10"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "變分",
+   "secondary_topics": [
+    "分段函數",
+    "二次方程求解"
+   ],
+   "required_formulas": [
+    "$h(x) = \\begin{cases} a & x < c \\\\ b(x-c) + d & x \\ge c \\end{cases}$",
+    "$x^2 - px - q = 0$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 5
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "設定分段函數形式，利用常數段與變數段性質列式。",
+    "marks": 1,
+    "common_error": "忘記變分點需滿足連續性條件或誤設為不連續。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 2,
+    "what": "代入已知點 $h(-2)=-96$ 與 $h(5)=72$ 解出參數。",
+    "marks": 1,
+    "common_error": "計算錯誤導致斜率或截距算錯，忽略變分點位置判斷。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "寫出完整 $h(x)$ 表達式並標明定義域範圍。",
+    "marks": 1,
+    "common_error": "漏寫不等號方向或變分點數值，格式不合規範扣分。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 4,
+    "what": "建立方程 $h(x) = 3x^2$ 並分別在兩段求解。",
+    "marks": 1,
+    "common_error": "未檢查解是否在對應定義域內，直接寫出所有根。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 5,
+    "what": "驗證解的有效性並排除不合範圍的增根。",
+    "marks": 1,
+    "common_error": "保留超出定義域的解，如誤將負根納入正變段。",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "考評報告指出大部分考生能正確求解，但少數人忽略定義域限制而寫出額外錯誤答案（如 -4），顯示對分段函數有效域的掌握仍需加強。",
+  "scaffolding_hints": [
+   "Hint1: 變分函數通常由一條水平線與一條斜線組成，注意連接點連續性。",
+   "Hint2: 利用 $h(-2)$ 判斷其位於常數段還是變數段，以此決定參數設定方式。",
+   "Hint3: 解出方程後務必檢查每個 $x$ 值是否落在對應的分段定義域內。"
+  ],
+  "quick_solution_strategy": "先畫草圖定變分點，代入兩點求參數；解方程時分段處理並嚴格檢查定義域。"
+ },
+ "skills": {
+  "topic_id": "T-VAR",
+  "knowledge_point_ids": [
+   "K-VAR-01"
+  ],
+  "formula_ids": [
+   "F-VAR-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "2": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "4": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "5": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

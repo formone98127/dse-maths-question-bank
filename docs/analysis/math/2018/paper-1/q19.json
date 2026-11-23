@@ -1,0 +1,133 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2018",
+  "paper": "Paper 1",
+  "qno": "19",
+  "hash": "#2018P1Q19"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓的方程與切線",
+   "secondary_topics": [
+    "點到直線距離公式",
+    "內切圓性質",
+    "三角形角度判斷"
+   ],
+   "required_formulas": [
+    "$r = \\frac{|Ax_0 + By_0 + C|}{\\sqrt{A^2+B^2}}$",
+    "$x^2+y^2+Dx+Ey+F=0$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 420,
+   "marks": 12
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用圓心到切線距離等於半徑，求 r 與 k 關係",
+    "marks": 3,
+    "common_error": "誤將圓心代入直線方程令其成立",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "寫出圓 C 的標準方程 (x-8)^2+(y-2)^2=r^2",
+    "marks": 1,
+    "common_error": "忘記括號或展開時符號錯誤",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "將 D(18,39) 代入直線方程求 k 值",
+    "marks": 2,
+    "common_error": "計算代數式時粗心導致 k 錯誤",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "將 k 代回 r 的表達式，計算出 r 的確切值",
+    "marks": 2,
+    "common_error": "忽略絕對值或平方根取錯號",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "求 E(0, -21/k) 並計算 DE, DF, EF 長度",
+    "marks": 3,
+    "common_error": "E 點坐標算錯或距離公式應用錯誤",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "比較三邊長平方，判斷最大角是否大於 90 度",
+    "marks": 1,
+    "common_error": "邏輯混淆，誤判鈍角條件",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "考評報告指出考生常誤認圓心在切線上，且難以解釋內切圓對應的三角形角度性質，顯示對幾何圖形關係理解不足。",
+  "scaffolding_hints": [
+   "提示 1：切線與圓心的距離公式是關鍵，記住分母是斜率係數平方和開根號。",
+   "提示 2：內切圓意味著圓心到三邊距離相等，但題目已給定圓心，重點在判斷三角形形狀。",
+   "提示 3：鈍角三角形判據是最長邊的平方大於另兩邊平方和（餘弦定理逆用）。"
+  ],
+  "quick_solution_strategy": "先求 r(k)，再代入 D 點得 k，算出 E 點後求三邊長，比較平方和大於和判斷鈍角。"
+ },
+ "skills": {
+  "topic_id": "T-CIR",
+  "knowledge_point_ids": [
+   "K-CIR-01",
+   "K-CIR-02"
+  ],
+  "formula_ids": [
+   "F-CIR-01",
+   "F-CIR-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

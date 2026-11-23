@@ -1,0 +1,136 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 1",
+  "qno": "14",
+  "hash": "#2024P1Q14"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "多項式",
+   "secondary_topics": [
+    "因數定理",
+    "餘數定理",
+    "無理根判定"
+   ],
+   "required_formulas": [
+    "$P(a) = R$ (餘數定理)",
+    "$x - c$ 為因式 $\\iff P(c) = 0$",
+    "$F(x) = (6x^2 + x + p)(qx^2 + rx - 10)$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 300,
+   "marks": 9
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用常數項定義，建立 $p$ 與已知係數的等式。",
+    "marks": 1,
+    "common_error": "忽略括號展開時的符號，誤將 -10 視為 +10。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "應用餘數定理：代入 $x=-1$ 得 $F(-1)=-12$。",
+    "marks": 2,
+    "common_error": "代入時計算錯誤，或忘記將 $p$ 的值代回式子。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "應用因數定理：代入 $x=2$ 得 $F(2)=0$。",
+    "marks": 2,
+    "common_error": "忘記將上一步求得的 $q, r$ 關係或 $p$ 值帶入驗證。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 4,
+    "what": "聯立 (2) 與 (3) 的方程組，解出 $q$ 及 $r$。",
+    "marks": 2,
+    "common_error": "解二元一次方程時算錯，或混淆 $q$ 與 $r$ 的位置。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "寫出 $F(x)$ 完整展開式，並令 $F(x)=0$ 分解因式。",
+    "marks": 1,
+    "common_error": "展開時漏項或符號錯誤，導致無法正確分解。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "解二次方程求根，判斷哪些根為無理數並解釋。",
+    "marks": 1,
+    "common_error": "忽略 $x=2$ 是有理根，或誤判 $\\sqrt{...}$ 的性質。",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "考生常因多項式展開時符號處理不當（特別是負數係數）導致後續方程組解錯，需加強恆等變形練習。",
+  "scaffolding_hints": [
+   "Hint1: 常數項是兩個括號內常數項的乘積，注意 $-10$ 的符號。",
+   "Hint2: 餘數定理 $F(-1)=-12$ 與因數定理 $F(2)=0$ 提供兩個關於 $q,r$ 的線性方程。",
+   "Hint3: 解出 $q,r$ 後，檢查二次因式的判別式 $\\Delta$ 以判斷根是否無理。"
+  ],
+  "quick_solution_strategy": "先由常數項定 $p=40$；再代入 $x=-1, 2$ 列方程組解 $q,r$；最後展開分解求根並分類有理/無理。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-01",
+   "K-POL-02"
+  ],
+  "formula_ids": [
+   "F-POL-01",
+   "F-POL-02",
+   "F-POL-03",
+   "F-POL-06"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "4": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

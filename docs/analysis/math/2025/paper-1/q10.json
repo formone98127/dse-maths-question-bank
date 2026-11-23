@@ -1,0 +1,133 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": 2025,
+  "paper": "Paper 1",
+  "qno": 10,
+  "hash": "#2025P1Q10"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "多項式",
+   "secondary_topics": [
+    "餘式定理",
+    "因式定理",
+    "有理數判定"
+   ],
+   "required_formulas": [
+    "$P(a) = R$ (當 $P(x)$ 除以 $x-a$ 時餘數為 $R$)",
+    "$f(x) = (2x-5)(ax+b)(cx+d)$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用餘式定理，將 $x=-2$ 代入 $f(x)$ 建立第一個方程式。",
+    "marks": 1,
+    "common_error": "誤以為除以 $x+2$ 時餘數應代入 $x=2$ 計算。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 2,
+    "what": "利用因式定理，將 $f(x)$ 除以 $2x-5$ 的根 $x=5/2$ 代入建立第二個方程式。",
+    "marks": 1,
+    "common_error": "忘記將 $x=5/2$ 代入後需計算 $(5/2)^3$ 等分數冪次，導致算錯。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "聯立兩個方程式解出常數 $h$ 與 $k$ 的值。",
+    "marks": 1,
+    "common_error": "解二元一次方程組時出現計算錯誤或移項符號錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "寫出 $f(x)=0$ 的因式分解形式，求出三個根。",
+    "marks": 1,
+    "common_error": "未能正確將二次部分因式分解，或忽略重根情況（此題無重根）。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 5,
+    "what": "檢查所得三個根是否均為分數或整數。",
+    "marks": 1,
+    "common_error": "誤將負號視為非有理數，或混淆無理數與負分數的定義。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 6,
+    "what": "根據根的性質下結論並解釋為何同意該說法。",
+    "marks": 1,
+    "common_error": "僅寫「同意」而未列出根的值作為證據，或解釋不清有理數定義。",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "考生常混淆餘式定理中除式的根與代入值（如除以 $x+2$ 應代入 $-2$），且在判定負分數是否為有理數時概念模糊，需加強有理數定義及餘式定理的細節理解。",
+  "scaffolding_hints": [
+   "提示 1：餘式定理關鍵在於「除式的根」，除以 $x+a$ 時代入 $-a$。",
+   "提示 2：若 $f(x)$ 可被 $2x-5$ 整除，則 $f(5/2)=0$，注意分數冪運算。",
+   "提示 3：有理數包含所有整數與分數（正負皆可），無理數才是開方後無法化簡的數。"
+  ],
+  "quick_solution_strategy": "先代入 $x=-2$ 得一式，再代入 $x=5/2$ 得二式，聯立解出 $h,k$；最後求根並確認皆為分數即為有理數。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-04",
+   "K-POL-05"
+  ],
+  "formula_ids": [
+   "F-POL-04",
+   "F-POL-05"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-POL-04",
+    "formula_id": "F-POL-04",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "2": {
+    "knowledge_point_id": "K-POL-04",
+    "formula_id": "F-POL-04",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-POL-04",
+    "formula_id": "F-POL-04",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-POL-04",
+    "formula_id": "F-POL-04",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "5": {
+    "knowledge_point_id": "K-POL-04",
+    "formula_id": "F-POL-04",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "6": {
+    "knowledge_point_id": "K-POL-04",
+    "formula_id": "F-POL-04",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

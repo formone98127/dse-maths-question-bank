@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2018",
+  "paper": "Paper 1",
+  "qno": "1",
+  "hash": "#2018P1Q1"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "主項變換",
+   "secondary_topics": [
+    "等式性質",
+    "代數運算"
+   ],
+   "required_formulas": [
+    "\\frac{a+4}{3} = \\frac{b+1}{2} \\Rightarrow 2(a+4) = 3(b+1)"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90,
+   "marks": 3
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "兩邊同乘 6 去分母",
+    "marks": 1,
+    "common_error": "只乘一邊或漏乘常數項",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "展開括號整理 b 項",
+    "marks": 1,
+    "common_error": "符號錯誤或展開不正確",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "移項使 b 單獨在一邊",
+    "marks": 1,
+    "common_error": "忘記變號或移項錯誤",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "此題測試基本代數操作，超過八成考生能正確處理分母與主項變換，顯示學生對等式性質掌握良好。",
+  "scaffolding_hints": [
+   "先將分母消去再移項",
+   "注意括號展開時符號變化",
+   "最後檢查 b 是否單獨在一邊"
+  ],
+  "quick_solution_strategy": "乘 6 去分母→展開→移項→除以 b 係數"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-POL-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-POL-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-POL-07",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

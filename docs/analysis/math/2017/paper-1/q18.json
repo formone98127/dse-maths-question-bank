@@ -1,0 +1,130 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 1",
+  "qno": "18",
+  "hash": "#2017P1Q18"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "二次函數",
+   "secondary_topics": [
+    "判別式",
+    "根與係數關係",
+    "幾何距離"
+   ],
+   "required_formulas": [
+    "$\\Delta = b^2 - 4ac$",
+    "$|x_1 - x_2|^2 = (x_1 + x_2)^2 - 4x_1x_2$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 240,
+   "marks": 3
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "整理方程為標準形式 $Ax^2+Bx+C=0$ 並計算判別式 $\\Delta$。",
+    "marks": 1,
+    "common_error": "合併一次項時出錯，或忘記將直線方程代入後移項。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "證明 $\\Delta > 0$ 以確保兩相異實根存在。",
+    "marks": 1,
+    "common_error": "計算 $\\Delta$ 時符號錯誤，導致無法得出正數結論。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "利用根與係數關係表達 $(a-b)^2$ 為關於 $k$ 的式子。",
+    "marks": 1,
+    "common_error": "忘記使用 $(x_1-x_2)^2 = (x_1+x_2)^2 - 4x_1x_2$ 公式直接平方相減。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 4,
+    "what": "代入 $k$ 的係數計算並化簡，證明等式成立。",
+    "marks": 1,
+    "common_error": "代數運算繁瑣時出現符號或系數錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "將 $(a-b)^2$ 的結果與 $k^2+4k+23$ 比較確認相等。",
+    "marks": 1,
+    "common_error": "化簡後未能正確配對題目給出的目標式子。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "分析 $(a-b)^2$ 的最小值以判斷距離是否可能少於 4。",
+    "marks": 1,
+    "common_error": "忽略二次式最小值性質，誤以為距離可任意小。",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "考生常能計算判別式卻無法嚴謹證明相交條件，且在處理根與係數關係時容易忽略公式變形技巧，導致在解釋距離問題時邏輯斷鏈。",
+  "scaffolding_hints": [
+   "先將 $y=19$ 代入抛物線方程並合併同類項。",
+   "記住 $(x_1-x_2)^2 = (x_1+x_2)^2 - 4x_1x_2$ 是處理距離平方的關鍵。",
+   "觀察 $k^2+4k+23$ 是否為完全平方數加上正數，以判斷其最小值。"
+  ],
+  "quick_solution_strategy": "合併一次項算判別式證明相交；用 $(a+b)^2-4ab$ 代換根與係數；觀察二次式最小值大於 16 故距離不小於 4。"
+ },
+ "skills": {
+  "topic_id": "T-FUN",
+  "knowledge_point_ids": [
+   "K-FUN-01",
+   "K-FUN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "4": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

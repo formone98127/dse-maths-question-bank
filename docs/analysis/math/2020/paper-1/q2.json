@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2020",
+  "paper": "Paper 1",
+  "qno": "2",
+  "hash": "#2020P1Q2"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "因式分解",
+   "secondary_topics": [
+    "十字相乘法",
+    "提公因式法"
+   ],
+   "required_formulas": [
+    "$x^2 + bx + c = (x+p)(x+q)$，其中 $p+q=b, pq=c$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90,
+   "marks": 3
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "觀察 (a) 式為二次三項式，嘗試十字相乘法。",
+    "marks": 1,
+    "common_error": "找不到兩個數相加得一次項係數、相乘得常數項。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "觀察 (b) 式前三項有公因式 $\\alpha^2$，先提公因式。",
+    "marks": 1,
+    "common_error": "忘記提取最高次公因式 $\\alpha^2$，直接處理四次式。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "對 (b) 式餘下部分進行十字相乘法完成分解。",
+    "marks": 1,
+    "common_error": "提完公因式後，剩餘二次式分解錯誤或漏寫括號。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "考評報告指出超過八成考生能正確作答，顯示此類基礎因式分解題目為學生必備技能，失分多源於粗心或概念混淆。",
+  "scaffolding_hints": [
+   "Hint1: 二次三項式 $x^2+bx+c$ 需找兩數和為 $b$、積為 $c$。",
+   "Hint2: 提公因式時務必檢查是否已提取最高次幂的 $\\alpha$。",
+   "Hint3: 分解後記得檢查括號內係數是否正確，避免漏寫變數。"
+  ],
+  "quick_solution_strategy": "(a) 找 -2,3; (b) 提 $\\alpha^2$ 剩 $\\alpha^2+\\alpha-6$ 再找 -2,3。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-03"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

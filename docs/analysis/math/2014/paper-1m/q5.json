@@ -1,0 +1,117 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 1M",
+  "qno": "5",
+  "hash": "#2014P1MQ5"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "微分法",
+   "secondary_topics": [
+    "不定積分",
+    "代換法 (u-substitution)",
+    "三角函數性質"
+   ],
+   "required_formulas": [
+    "\\int u^n du = \\frac{u^{n+1}}{n+1} + C",
+    "\\frac{d}{dt}(\\sqrt{9-t^2}) = \\frac{-t}{\\sqrt{9-t^2}}"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 300,
+   "marks": 5
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "識別被積函數結構，設定 $u = 9-t^2$ 進行代換。",
+    "marks": 1,
+    "common_error": "忘記計算 $du$ 與 $dt$ 的關係導致漏掉係數。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 2,
+    "what": "將積分轉換為關於 $u$ 的形式並求出不定積分結果。",
+    "marks": 1,
+    "common_error": "指數運算錯誤，如將 $\\frac{1}{2}$ 錯寫成其他數值。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "將變數 $u$ 代回為 $t$ 的表達式，整理根號項。",
+    "marks": 1,
+    "common_error": "代換時忘記加上積分常數 $C$。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 4,
+    "what": "利用初始條件 $t=0$ 時 $x=8$ 解出常數 $C$。",
+    "marks": 1,
+    "common_error": "代入數值時計算錯誤或忘記 $x$ 單位為百萬。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "寫出最終 $x$ 關於 $t$ 的完整表達式並檢查定義域。",
+    "marks": 1,
+    "common_error": "忘記括號或符號錯誤，如根號前負號位置不對。",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "此題測試學生處理非標準形式被積函數的能力，特別是結合代換法與三角函數導數性質，是卷一中微分法的高頻難點。",
+  "scaffolding_hints": [
+   "觀察分子中的 $t$ 與分母中的 $\\sqrt{9-t^2}$，思考哪個函數的導數會產生 $t$。",
+   "回憶 $(9-t^2)^{1/2}$ 的導數公式，確認是否匹配被積函數結構。",
+   "積分後不要忘記加上任意常數 $C$，並利用題目給出的初始人口數求值。"
+  ],
+  "quick_solution_strategy": "令 $u=9-t^2$，則 $du=-2t dt$，原式變為 $-\\frac{1}{6}\\int u^{1/2} du$，積分後代回並代入 $t=0, x=8$ 求 $C$"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

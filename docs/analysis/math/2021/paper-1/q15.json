@@ -1,0 +1,107 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 1",
+  "qno": "15",
+  "hash": "#2021P1Q15"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "排列與組合",
+   "secondary_topics": [
+    "插空法",
+    "條件概率",
+    "階乘運算"
+   ],
+   "required_formulas": [
+    "$P_n = n!$",
+    "$C_n^r = \\frac{n!}{r!(n-r)!}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "計算總排列數：10 人全排列。",
+    "marks": 1,
+    "common_error": "忘記將所有人員視為不同個體進行全排列。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "先排 7 名教師，計算其排列方式。",
+    "marks": 1,
+    "common_error": "未考慮教師之間的順序差異，直接視為相同元素。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "在教師形成的 8 個空隙中選 3 個插入學生。",
+    "marks": 1,
+    "common_error": "誤用 $C_8^3$ 而非 $P_8^3$，忽略學生之間的順序。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 4,
+    "what": "計算有利情況數並除以總情況數求概率。",
+    "marks": 1,
+    "common_error": "將分母誤寫為 $7!3!/10!$，混淆排列與組合概念。",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "此題主要測試考生對「不相鄰」問題的插空法掌握程度，常見錯誤在於忽略學生之間的順序差異或誤用分母公式。",
+  "scaffolding_hints": [
+   "先固定較多元素（教師），再處理限制條件（學生不相鄰）。",
+   "注意空隙數量為 $n+1$，選取空隙後需考慮插入元素的排列。",
+   "概率計算時，分子分母均應使用排列數而非單純組合數。"
+  ],
+  "quick_solution_strategy": "總情況 $10!$；有利情況：先排教師 $7!$，再從 8 空隙選 3 位學生排列 $P_8^3$，概率為 $\frac{7! \times P_8^3}{10!}$。"
+ },
+ "skills": {
+  "topic_id": "T-COM",
+  "knowledge_point_ids": [
+   "K-COM-02",
+   "K-COM-03"
+  ],
+  "formula_ids": [
+   "F-COM-01",
+   "F-COM-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-COM-02",
+    "formula_id": "F-COM-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-COM-02",
+    "formula_id": "F-COM-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-COM-02",
+    "formula_id": "F-COM-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "4": {
+    "knowledge_point_id": "K-COM-02",
+    "formula_id": "F-COM-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

@@ -1,0 +1,129 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2023",
+  "paper": "Paper 1M",
+  "qno": "5",
+  "hash": "#2023P1MQ5"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "指數級數與二項式定理",
+   "secondary_topics": [
+    "鏈式法則",
+    "代數運算"
+   ],
+   "required_formulas": [
+    "e^x = 1 + x + x^2/2! + x^3/3! + ...",
+    "(1+x)^n = 1 + nx + n(n-1)x^2/2! + n(n-1)(n-2)x^3/3! + ..."
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 480,
+   "marks": 7
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "展開 e^(2x) 至 x^3 項",
+    "marks": 1,
+    "common_error": "忘記將 x 替換為 2x，或階乘計算錯誤",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "展開 (1-ax)^4 至 x^3 項",
+    "marks": 1,
+    "common_error": "二項式係數記錯符號或指數運算出錯",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "合併兩部分並找出 x^3 係數表達式",
+    "marks": 2,
+    "common_error": "忘記乘以 3，或合併時符號弄錯",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 4,
+    "what": "令係數等於 -1368 解出 a",
+    "marks": 1,
+    "common_error": "代數移項錯誤導致 a 值算錯",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "計算 dy/du 於 u=0 時的表達式",
+    "marks": 1,
+    "common_error": "鏈式法則應用錯誤，忘記 dy/dx * dx/du",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 6,
+    "what": "代入 x=1 (u=0) 求最終數值",
+    "marks": 1,
+    "common_error": "未將 a 值代回導致結果錯誤",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "此題結合指數與二項式展開，考評報告雖無特別說明，但顯示學生常因符號處理及鏈式法則應用不當而失分，需加強多步驟運算的準確性。",
+  "scaffolding_hints": [
+   "先熟記 e^x 和二項式前四項公式",
+   "注意 (1-ax)^4 中 x 的係數為負數",
+   "dy/du = dy/dx * dx/du，其中 dx/du = 2^u ln2"
+  ],
+  "quick_solution_strategy": "直接展開至 x^3，合併係數列方程解 a，再用鏈式法則求導代入 u=0"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "6": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

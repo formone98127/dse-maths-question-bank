@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 1",
+  "qno": "3",
+  "hash": "#2013P1Q3"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "因式分解",
+   "secondary_topics": [
+    "平方差公式",
+    "提公因式法"
+   ],
+   "required_formulas": [
+    "$a^2 - b^2 = (a-b)(a+b)$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120,
+   "marks": 3
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "將 (a) 視為平方差形式並直接分解為兩個一次因式之積。",
+    "marks": 1,
+    "common_error": "誤寫成完全平方 $(2m-5n)^2$，混淆平方差與完全平方公式。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "將 (b) 前兩項用平方差分解，後兩項提公因式 $3$。",
+    "marks": 1,
+    "common_error": "未先分解前兩項而直接嘗試整體配對或錯誤提公因式。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "將 (b) 中兩個括號內的公因式 $(2m-5n)$ 提出來完成分解。",
+    "marks": 1,
+    "common_error": "忘記前後兩部分有共同因式，錯誤地保留為三個因式相乘。",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "考生常混淆平方差與完全平方公式，尤其在處理混合項時難以識別隱藏的公因式結構。",
+  "scaffolding_hints": [
+   "回憶 $a^2-b^2$ 的標準分解形式為何？",
+   "觀察後兩項 $6m-15n$ 是否有與前兩項相關的數字關係？",
+   "分解後兩個括號內是否出現相同的二項式？若有則可合併。"
+  ],
+  "quick_solution_strategy": "(a) 直接用平方差；(b) 先分組分解再提公因式，注意 $(2m-5n)$ 是關鍵橋樑。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-03"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

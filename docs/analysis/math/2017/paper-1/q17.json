@@ -1,0 +1,132 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 1",
+  "qno": "17",
+  "hash": "#2017P1Q17"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "排列與組合",
+   "secondary_topics": [
+    "概率",
+    "互斥事件"
+   ],
+   "required_formulas": [
+    "$\\binom{n}{r} = \\frac{n!}{r!(n-r)!}$",
+    "$P(E) = \\frac{N(E)}{N(S)}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "計算總筆數及從中選取 r 枝的組合數 $\\binom{19}{5}$。",
+    "marks": 1,
+    "common_error": "算錯總筆數或階乘計算錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "(a) 計算選取 4 枝綠筆及 1 枝非綠筆的有利情況數。",
+    "marks": 1,
+    "common_error": "忘記乘以非綠筆的組合數 $\\binom{11}{1}$。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "(b) 計算選取 3 枝綠筆及 2 枝非綠筆的有利情況數。",
+    "marks": 1,
+    "common_error": "將非綠筆數量誤算為 11 以外的數字。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "(c) 識別「不多於 2 枝」包含 0、1、2 枝綠筆三種情況。",
+    "marks": 1,
+    "common_error": "誤解為多於 2 枝或漏算其中一種情況。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 5,
+    "what": "分別計算 (c) 中三種情況的組合數並求和。",
+    "marks": 1,
+    "common_error": "漏算 $\\binom{4}{0}\\binom{11}{5}$ 或 $\\binom{4}{2}\\binom{11}{3}$。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 6,
+    "what": "將 (c) 的總有利情況除以總組合數得出最終概率。",
+    "marks": 1,
+    "common_error": "最後一步除法計算錯誤或約分錯誤。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "考生普遍能掌握基本組合計數，但在處理「不多於」這類包含多項互斥事件的條件時，容易因概念混淆而漏算情況，需加強對集合並集的理解。",
+  "scaffolding_hints": [
+   "Hint1: 總筆數為 $4+7+8=19$，非綠筆共 $7+8=15$ 枝？不，題目是 4 綠、7 藍、8 黑，非綠是 $7+8=15$ 枝。",
+   "Hint2: 記得使用超幾何分佈公式：選 k 枝綠筆需搭配選 $(5-k)$ 枝非綠筆。",
+   "Hint3: 「不多於 2」意味著 $0, 1, 2$，請務必將這三種互斥情況全部相加。"
+  ],
+  "quick_solution_strategy": "先算總組合 $\\binom{19}{5}$；(a)(b) 用 $\\binom{4}{k}\\binom{15}{5-k}$；(c) 加總 $k=0,1,2$ 的項。"
+ },
+ "skills": {
+  "topic_id": "T-PROB",
+  "knowledge_point_ids": [
+   "K-PROB-01",
+   "K-PROB-02"
+  ],
+  "formula_ids": [
+   "F-PROB-01",
+   "F-PROB-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "5": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "6": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

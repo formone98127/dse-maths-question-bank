@@ -1,0 +1,133 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 1",
+  "qno": "12",
+  "hash": "#2014P1Q12"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓的方程",
+   "secondary_topics": [
+    "垂直平分線性質",
+    "菱形判定與周界計算"
+   ],
+   "required_formulas": [
+    "(x-h)^2 + (y-k)^2 = r^2",
+    "中點公式",
+    "斜率乘積為 -1"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 300,
+   "marks": 7
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用圓心 G(0,3) 與點 A(6,11) 計算半徑平方 r^2",
+    "marks": 2,
+    "common_error": "誤將 A 當作圓心，或計算距離公式時算錯數值。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "寫出圓 C 的標準方程 (x-h)^2 + (y-k)^2 = r^2",
+    "marks": 1,
+    "common_error": "忘記括號或展開時符號錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "利用 AP=GP 定義 P 點軌跡為線段 AG 的垂直平分線",
+    "marks": 1,
+    "common_error": "誤以為是角平分線，或斜率計算錯誤。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "求 AG 中點座標及斜率，進而寫出 Γ 的方程",
+    "marks": 2,
+    "common_error": "中點坐標算錯，或垂直線斜率 k' = -1/k 搞錯。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "聯立圓 C 與直線 Γ 方程，解出交點 Q, R 座標",
+    "marks": 1,
+    "common_error": "代數運算複雜導致解不出正確交點。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "利用菱形性質（四邊相等）計算周界 = 4 * AQ",
+    "marks": 1,
+    "common_error": "未發現菱形特性，試圖用梯形公式或只算三邊。",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "考生常混淆圓心定義及垂直平分線與角平分線的區別，最後一步未能識別菱形結構導致無法簡化計算周界。",
+  "scaffolding_hints": [
+   "回憶圓的標準方程形式 (x-h)^2 + (y-k)^2 = r^2。",
+   "AP=GP 意味著 P 在 AG 的垂直平分線上，而非角平分線。",
+   "聯立方程後觀察圖形對稱性，判斷四邊形形狀以簡化計算。"
+  ],
+  "quick_solution_strategy": "先求半徑寫圓方程；再求 AG 中點與斜率得直線方程；解聯立方程得交點；利用菱形性質直接乘 4 倍邊長。"
+ },
+ "skills": {
+  "topic_id": "T-CIR",
+  "knowledge_point_ids": [
+   "K-CIR-01",
+   "K-CIR-02"
+  ],
+  "formula_ids": [
+   "F-CIR-01",
+   "F-CIR-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

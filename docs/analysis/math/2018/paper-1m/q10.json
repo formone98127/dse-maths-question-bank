@@ -1,0 +1,132 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2018",
+  "paper": "Paper 1M",
+  "qno": "10",
+  "hash": "#2018P1MQ10"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "Poisson Distribution",
+   "secondary_topics": [
+    "Conditional Probability",
+    "Sum of Independent Poisson Variables"
+   ],
+   "required_formulas": [
+    "$P(X=k) = \\frac{e^{-\\lambda} \\lambda^k}{k!}$",
+    "$X+Y \\sim Poisson(\\lambda_1 + \\lambda_2)$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 300,
+   "marks": 9
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "計算單月表現良好 (遲到<2 次) 的概率 P(X=0)+P(X=1)",
+    "marks": 2,
+    "common_error": "忘記加上 k=0 的情況，或誤算階乘",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "計算建議 I 的期望獎金 E[Bonus I]",
+    "marks": 1,
+    "common_error": "未將各情況概率乘以對應獎金",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "計算建議 II 的期望獎金 E[Bonus II]",
+    "marks": 1,
+    "common_error": "誤以為總遲到數少於 5 的概率為 0.5",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 4,
+    "what": "比較兩個期望值並解釋哪個較有利",
+    "marks": 2,
+    "common_error": "只計算數值未進行文字解釋或邏輯反轉",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 5,
+    "what": "表達 P(Late=2 AND No Early Leave) = P(Late=2)P(No Early)",
+    "marks": 1,
+    "common_error": "忽略獨立性假設導致概率相乘錯誤",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 6,
+    "what": "利用總和為 2 的條件概率方程求解 λ",
+    "marks": 2,
+    "common_error": "混淆條件概率公式 P(A|B)=P(AB)/P(B)",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "此題結合 Poisson 分佈與條件概率，考評報告常強調學生需熟練運用獨立事件性質及總和變量仍為 Poisson 分佈的特性來處理多階段問題。",
+  "scaffolding_hints": [
+   "Recall the formula for Poisson probability mass function.",
+   "Remember that sum of independent Poisson variables is also Poisson with summed means.",
+   "Use conditional probability definition P(A|B) = P(A and B) / P(B)."
+  ],
+  "quick_solution_strategy": "先算單月好表現概率，再分別求兩建議期望值比較；後半部利用獨立性寫出聯合概率，再用條件概率公式列方程解 λ。"
+ },
+ "skills": {
+  "topic_id": "T-PROB",
+  "knowledge_point_ids": [
+   "K-PROB-01",
+   "K-PROB-02"
+  ],
+  "formula_ids": [
+   "F-PROB-01",
+   "F-PROB-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "4": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "5": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "6": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

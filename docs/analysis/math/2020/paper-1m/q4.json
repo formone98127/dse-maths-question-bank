@@ -1,0 +1,130 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2020",
+  "paper": "Paper 1M",
+  "qno": "4",
+  "hash": "#2020P1MQ4"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "置信區間",
+   "secondary_topics": [
+    "大數定律與中心極限定理應用",
+    "正態分配標準化",
+    "區間寬度計算"
+   ],
+   "required_formulas": [
+    "$\\hat{p} \\pm z_{\\alpha/2}\\sqrt{\\frac{\\hat{p}(1-\\hat{p})}{n}}$",
+    "$z_{0.975} = 1.96$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 480,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "計算樣本比例 $\\hat{p}$ 及標準誤。",
+    "marks": 2,
+    "common_error": "忘記將 $441/841$ 化簡或計算錯誤導致後續數值偏差。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "代入 $z=1.96$ 計算 95% 置信區間上下限。",
+    "marks": 2,
+    "common_error": "混淆單側與雙側 $z$ 值，或誤用 $t$ 分佈代替 $z$ 分佈。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "確認區間寬度公式為 $2 \\times z \\times SE$。",
+    "marks": 1,
+    "common_error": "忘記乘以 2，直接將半寬當作物體總寬度。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 4,
+    "what": "建立方程 $0.088 = 2 \\times z_{\\beta/2} \\times SE$。",
+    "marks": 1,
+    "common_error": "未使用上一步算出的標準誤，重複計算導致精度不足。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "解出 $z_{\\beta/2}$ 並查表或反推對應百分位數。",
+    "marks": 0,
+    "common_error": "無（此步為純計算，錯誤通常來自查表不準）",
+    "error_category": null
+   },
+   {
+    "step": 6,
+    "what": "將 $z$ 值轉換為百分比並四捨五入至整數。",
+    "marks": 0,
+    "common_error": "無（此步為最終答案呈現）",
+    "error_category": null
+   }
+  ],
+  "exam_report_insight": "考生常忽略區間寬度定義為上下限之差而非半寬，導致在第二小題解出錯誤的 $z$ 值。",
+  "scaffolding_hints": [
+   "Recall that for large $n$, the sampling distribution of $\\hat{p}$ is approximately normal.",
+   "Remember the formula for margin of error: $E = z \\sqrt{\\frac{\\hat{p}(1-\\hat{p})}{n}}$.",
+   "The width of the interval is exactly twice the margin of error."
+  ],
+  "quick_solution_strategy": "先算 $\\hat{p}=0.524$, $SE \\approx 0.017$. Part (a) use $1.96$. Part (b) set width $= 2 \\times z \\times SE = 0.088$ to find $z$."
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": null
+   },
+   "6": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": null
+   }
+  }
+ }
+}

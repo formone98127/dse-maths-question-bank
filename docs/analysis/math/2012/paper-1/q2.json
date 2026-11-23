@@ -1,0 +1,86 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2012",
+  "paper": "Paper 1",
+  "qno": "2",
+  "hash": "#2012P1Q2"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "字串",
+   "secondary_topics": [
+    "主項變換",
+    "代數式操作"
+   ],
+   "required_formulas": [],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90,
+   "marks": 3
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "將 b 移至左邊，a 移至右邊。",
+    "marks": 1,
+    "common_error": "忘記移項時改變符號",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "展開括號並合併同類項。",
+    "marks": 1,
+    "common_error": "計算錯誤導致係數不對",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "將 a 的係數除到右邊，寫出最終式子。",
+    "marks": 1,
+    "common_error": "除法運算錯誤或漏掉分母",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "考生需熟練掌握主項變換技巧，避免混淆變量位置導致錯誤移項。",
+  "scaffolding_hints": [
+   "回憶主項變換的基本步驟：移項、合併、除係數。",
+   "注意公式中每個項的符號變化，特別是負號處理。",
+   "先將含 a 和 b 的項分別移到等號兩側再進行化簡。"
+  ],
+  "quick_solution_strategy": "移項合併後，將 a 的係數移至右邊即可得到結果。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-POL-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-POL-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-POL-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

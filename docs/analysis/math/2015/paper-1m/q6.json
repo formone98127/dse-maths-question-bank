@@ -1,0 +1,128 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2015",
+  "paper": "Paper 1M",
+  "qno": "6",
+  "hash": "#2015P1MQ6"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "指數與對數函數",
+   "secondary_topics": [
+    "積分法求面積",
+    "方程求解"
+   ],
+   "required_formulas": [
+    "\\int (f(x) - g(x)) dx = F(x) - G(x)",
+    "\\int e^{ax+b} dx = \\frac{1}{a}e^{ax+b}"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 300,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "聯立兩方程，化簡後解二次方程求交點 x 座標",
+    "marks": 2,
+    "common_error": "指數運算錯誤或忘記 e^4 項導致方程組無解。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "繪製草圖確認積分上下限及被積函數大小關係",
+    "marks": 1,
+    "common_error": "搞錯哪條曲線在上方，導致面積為負。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "設定定積分表達式：\\int_{x_1}^{x_2} (C_1 - C_2) dx",
+    "marks": 1,
+    "common_error": "忘記加上絕對值或上下限顛倒。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 4,
+    "what": "分別對 e^{2x} 與 e^{x+3} 等項進行積分計算",
+    "marks": 1,
+    "common_error": "漏掉係數 1/2 或 1/1 導致積分結果錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "代入上下限計算定積分值並化簡",
+    "marks": 1,
+    "common_error": "代入時符號錯誤或 e 的冪次計算出錯。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "檢查最終答案是否以 e 表示且為正數",
+    "marks": 1,
+    "common_error": "未化簡至最簡形式或保留不必要的項。",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "此題結合指數函數與積分，常見於中級程度學生對指數運算及定積分的綜合應用，需熟練處理 e 的冪次化簡。",
+  "scaffolding_hints": [
+   "Hint1: 聯立方程時注意將所有項移至一邊形成二次方程。",
+   "Hint2: 積分前務必確認哪條曲線在上方（通常 C_1 較大）。",
+   "Hint3: 利用 e^{ax+b} 的積分公式 \\frac{1}{a}e^{ax+b} 快速計算。"
+  ],
+  "quick_solution_strategy": "聯立解出 x，確認 C_1 > C_2，直接積分 (C_1-C_2) 並代入上下限化簡。"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "4": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

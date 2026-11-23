@@ -55,5 +55,37 @@
    "Hint 3 破題：對於 III，觀察首項 $a_1$ 為負、公差 $d$ 為正，需比較「負數項的總和」與「正數項的總和」哪個更大，或直接代入公式計算 $S_{27}$ 的正負。"
   ],
   "quick_solution_strategy": "先算 $d=3.5, a_1=-20$。I: $a_{14}=-20+13(3.5)<0$ (對)。II: $a_1-a_2=-d<0$ (對)。III: $S_{27}=\\frac{27}{2}(a_1+a_{27})=\\frac{27}{2}(-20+90)=315>0$ (對)？等等，重算 $a_{27}$：$-20+26(3.5)=71$。$S_{27}=\\frac{27}{2}(2a_1+26d)=\\frac{27}{2}(-40+91)=\\frac{27}{2}(51)>0$。咦？題目答案給 A 代表 III 錯？讓我重檢題目邏輯。若 $S_{27}>0$ 則 D 對。為何答案是 A？檢查 $a_1+a_{27}$：$-20 + (-20+26\\times3.5) = -40+91=51>0$。$S_{27}$ 確實大於 0。若標準答案 A 表示 III 錯誤，那題目或答案有誤？或是我算錯 $a_1$？$a_{18}=26 \\Rightarrow a_1+17d=26$。$a_{23}=61 \\Rightarrow a_1+22d=61$。相減得 $5d=35 \\Rightarrow d=7$。啊！之前算錯 $d$ 了！$5d=35 \\Rightarrow d=7$。重新計算：$a_1 = 26-17(7) = 26-119 = -93$。I: $a_{14}=-93+13(7)=-93+91=-2<0$ (對)。II: $a_1-a_2=-d=-7<0$ (對)。III: $S_{27}=\\frac{27}{2}(2(-93)+26(7))=\\frac{27}{2}(-186+182)=\\frac{27}{2}(-4)<0$ (錯)。所以 III 錯。答案 A 正確。"
+ },
+ "skills": {
+  "topic_id": "T-SEQ",
+  "knowledge_point_ids": [
+   "K-SEQ-02",
+   "K-SEQ-04"
+  ],
+  "formula_ids": [
+   "F-SEQ-01",
+   "F-SEQ-02"
+  ],
+  "ability_ids": [
+   "A-SUB",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-SEQ-02",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-SEQ-04",
+    "formula_id": "F-SEQ-02",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-SEQ-02",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-SUB"
+   }
+  }
  }
 }

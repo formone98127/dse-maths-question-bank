@@ -55,5 +55,35 @@
    "Hint 3 破題：確認你計算出的週期數值後，將其與選項中的 $k$ 值進行驗證。若週期約為 $360^\\circ$，則 $k$ 應為何？若週期約為 $720^\\circ$，則 $k$ 又應為何？"
   ],
   "quick_solution_strategy": "先由最高點 (y=5) 和最低點 (y=-3) 算出振幅 3、中心線 y=1? 不對，中心線是 (5-3)/2=1? 等等，圖形最高點 y=5, 最低點 y=-3。振幅=(5 - (-3))/2 = 4。中心線 = (5 + (-3))/2 = 1。所以是 y = 1 + 4cos...? 不，題目選項格式是 y=A+Bcos...。最高點=A+B=5, 最低點=A-B=-3 => 2A=2 => A=1, B=4? 讓我們重新檢查圖形數據。通常這類題型最高點 y=5, 最低點 y=-3 意味著振幅 4, 中心線 1。但選項 B 是 A=1, B=3。若選項 D 是 A=4, B=3，則最高點 7, 最低點 1。請務必從圖中讀取正確的極值。假設圖形最高點 y=5, 最低點 y=-3，則 A=1, B=4。但選項沒有 B=4。若圖形最高點 y=7, 最低點 y=1，則 A=4, B=3。請根據實際圖形極值判斷 A 與 B。再檢查週期：若一個週期是 360 度，則 k=1；若週期是 180 度，則 k=2。"
+ },
+ "skills": {
+  "topic_id": "T-TRI",
+  "knowledge_point_ids": [
+   "K-TRI-05"
+  ],
+  "formula_ids": [
+   "F-TRI-05"
+  ],
+  "ability_ids": [
+   "A-GRAPH",
+   "A-COND"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-TRI-05",
+    "formula_id": "F-TRI-05",
+    "ability_id": "A-GRAPH"
+   },
+   "B": {
+    "knowledge_point_id": "K-TRI-05",
+    "formula_id": "F-TRI-05",
+    "ability_id": "A-COND"
+   },
+   "C": {
+    "knowledge_point_id": "K-TRI-05",
+    "formula_id": "F-TRI-05",
+    "ability_id": "A-ALG"
+   }
+  }
  }
 }

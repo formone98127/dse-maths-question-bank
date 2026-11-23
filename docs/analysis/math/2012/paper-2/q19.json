@@ -56,5 +56,36 @@
    "Hint 3 破題：將特殊角代入後，你會得到兩個分數相加的形式，其中第二項的分母會變成 (1+\\sin\\theta)。試著通分並利用 \\sin^2\\theta + \\cos^2\\theta = 1 進行因式分解約分。"
   ],
   "quick_solution_strategy": "代入特殊角值化簡，利用誘導公式將變數項轉為 sin/cos，最後通分約分即可。"
+ },
+ "skills": {
+  "topic_id": "T-TRI",
+  "knowledge_point_ids": [
+   "K-TRI-03",
+   "K-TRI-02"
+  ],
+  "formula_ids": [
+   "F-TRI-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-COND"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-TRI-03",
+    "formula_id": "F-TRI-03",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-TRI-03",
+    "formula_id": "F-TRI-03",
+    "ability_id": "A-COND"
+   },
+   "D": {
+    "knowledge_point_id": "K-TRI-02",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
  }
 }

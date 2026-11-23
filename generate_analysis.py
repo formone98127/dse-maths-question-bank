@@ -62,16 +62,51 @@ PROVIDER_PRESETS = {
 
 ERROR_CATEGORIES = {"Conceptual", "Calculation", "Reading-Formatting", "Methodological"}
 BLOOM_LEVELS = {"記憶", "理解", "應用", "分析", "評鑑", "創造"}
+SKILL_BOOK_PATH = ROOT / "docs" / "skills" / "math_skill_book.json"
 
-SYSTEM_PROMPT = """你是一位擁有 20 年經驗的頂尖數學教育專家與測驗心理學家（Psychometrician）。你的任務是對輸入的「數學選擇題」進行深度的解構與預先分析：精準剖析這道題目的考點、預測學生的作答行為，並針對每一個錯誤選項進行「逆向工程」，找出對應的思考盲點。
+_SKILL_BOOK_CACHE = None
+
+
+def load_skill_book():
+    """Load fixed math skill book (ids only allowed in skills hooks)."""
+    global _SKILL_BOOK_CACHE
+    if _SKILL_BOOK_CACHE is not None:
+        return _SKILL_BOOK_CACHE
+    if not SKILL_BOOK_PATH.is_file():
+        raise SystemExit(f"缺技能冊: {SKILL_BOOK_PATH}（先跑 scripts/build_math_skill_foundation.py）")
+    book = json.loads(SKILL_BOOK_PATH.read_text(encoding="utf-8"))
+    topics = {t["id"]: t for t in book["topics"]}
+    kps, formulas = {}, {}
+    for t in book["topics"]:
+        for k in t["knowledge_points"]:
+            kps[k["id"]] = {**k, "topic_id": t["id"], "topic_name": t["name"]}
+        for f in t["formulas"]:
+            formulas[f["id"]] = {**f, "topic_id": t["id"]}
+    abilities = {a["id"]: a for a in book["abilities"]}
+    _SKILL_BOOK_CACHE = (book, topics, kps, formulas, abilities)
+    return _SKILL_BOOK_CACHE
+
+
+def skill_catalog_for_prompt():
+    book, topics, kps, formulas, abilities = load_skill_book()
+    lines = ["【技能冊（skills 欄位只准用下列 id，禁止自創）】"]
+    lines.append("abilities: " + ", ".join(f"{a['id']}={a['name']}" for a in book["abilities"]))
+    for t in book["topics"]:
+        kp_s = ", ".join(f"{k['id']}:{k['name']}" for k in t["knowledge_points"])
+        f_s = ", ".join(f"{f['id']}:{f['name']}" for f in t["formulas"])
+        lines.append(f"{t['id']} {t['name']} | KP: {kp_s} | F: {f_s}")
+    return "\n".join(lines)
+
+
+SYSTEM_PROMPT_BASE = """你是一位擁有 20 年經驗的頂尖數學教育專家與測驗心理學家（Psychometrician）。你的任務是對輸入的「數學選擇題」進行深度的解構與預先分析：精準剖析這道題目的考點、預測學生的作答行為，並針對每一個錯誤選項進行「逆向工程」，找出對應的思考盲點。
 
 你必須輸出一個有效的 JSON 物件（嚴禁輸出 markdown code fences 或任何 JSON 以外的文字），嚴格遵守以下 Schema：
 
 {
   "metadata": {
-    "primary_topic": "字串, 例如: 一元二次方程式",
+    "primary_topic": "字串, 例如: 一元二次方程式（可讀說明，可自由用詞）",
     "secondary_topics": ["陣列, 1-3 個次考點/先備知識"],
-    "required_formulas": ["陣列, 解題必須用到的核心公式或定理"],
+    "required_formulas": ["陣列, 解題必須用到的核心公式或定理（可讀 LaTeX）"],
     "bloom_taxonomy_level": "記憶|理解|應用|分析|評鑑|創造 之一",
     "estimated_time_seconds": 一般程度學生的合理作答秒數（30-300 整數）
   },
@@ -82,7 +117,19 @@ SYSTEM_PROMPT = """你是一位擁有 20 年經驗的頂尖數學教育專家與
     "D": { ... }
   },
   "scaffolding_hints": ["Hint 1 啟發: 點出思考方向或關鍵字, 不給公式", "Hint 2 知識: 提供本題需要的公式或第一步具體列式", "Hint 3 破題: 解題過程最關鍵的轉折點"],
-  "quick_solution_strategy": "字串, 30 字以內的速解法或最有效率的切入點"
+  "quick_solution_strategy": "字串, 30 字以內的速解法或最有效率的切入點",
+  "skills": {
+    "topic_id": "技能冊課題 id，例如 T-EXP",
+    "knowledge_point_ids": ["技能冊知識點 id 陣列"],
+    "formula_ids": ["技能冊公式 id 陣列，可空"],
+    "ability_ids": ["技能冊能力 id 陣列"],
+    "option_faults": {
+      "A": {"knowledge_point_id": "id 或 null", "formula_id": "id 或 null", "ability_id": "能力 id"},
+      "B": { ... },
+      "C": { ... },
+      "D": { ... }
+    }
+  }
 }
 
 要求：
@@ -91,7 +138,17 @@ SYSTEM_PROMPT = """你是一位擁有 20 年經驗的頂尖數學教育專家與
 - 正確選項的 error_category / error_tag / student_thought_process 必須是 null。
 - error_category 四類定義：Conceptual（概念與邏輯錯誤）、Calculation（計算與代數操作粗心）、Reading-Formatting（審題不清、未注意單位或條件）、Methodological（使用了無效或低效的解題策略）。
 - student_thought_process 必須寫出該選項對應的具體錯誤計算過程（例如把什麼看錯、哪一步展開錯），不要泛泛而談。
-- 三個提示須漸進：Hint 1 不洩漏公式與答案，Hint 3 不直接寫出最終答案。"""
+- 三個提示須漸進：Hint 1 不洩漏公式與答案，Hint 3 不直接寫出最終答案。
+- skills 為必填：所有 id 必須來自下方技能冊；禁止自創課題名／公式名作 id。
+- option_faults 只為錯誤選項填寫（正確選項不要出現）；每個錯選項恰好一個 ability_id，且 knowledge_point_id 或 formula_id 至少一個非 null。"""
+
+
+def build_system_prompt():
+    return SYSTEM_PROMPT_BASE + "\n\n" + skill_catalog_for_prompt()
+
+
+# 向後相容：多數呼叫處用 SYSTEM_PROMPT；真正送出前再用 build_system_prompt()
+SYSTEM_PROMPT = SYSTEM_PROMPT_BASE
 
 
 # ---------- data.js 載入 ----------
@@ -430,6 +487,57 @@ def validate_analysis(obj, answer):
         errs.append("scaffolding_hints 須為 3 個非空字串")
     if not obj.get("quick_solution_strategy"):
         errs.append("缺 quick_solution_strategy")
+
+    # skills：固定技能冊 id（必填）
+    skills = obj.get("skills")
+    if not isinstance(skills, dict):
+        errs.append("缺 skills 物件（必須使用 docs/skills/math_skill_book.json 的 id）")
+    else:
+        try:
+            _, topics, kps, formulas, abilities = load_skill_book()
+        except SystemExit as e:
+            errs.append(str(e))
+            return errs
+        if skills.get("topic_id") not in topics:
+            errs.append(f"skills.topic_id 不在技能冊：{skills.get('topic_id')!r}")
+        for kid in skills.get("knowledge_point_ids") or []:
+            if kid not in kps:
+                errs.append(f"skills 未知 knowledge_point_id {kid!r}")
+        for fid in skills.get("formula_ids") or []:
+            if fid not in formulas:
+                errs.append(f"skills 未知 formula_id {fid!r}")
+        for aid in skills.get("ability_ids") or []:
+            if aid not in abilities:
+                errs.append(f"skills 未知 ability_id {aid!r}")
+        wrong = {
+            k
+            for k, v in (oa.items() if isinstance(oa, dict) else [])
+            if isinstance(v, dict) and not v.get("is_correct")
+        }
+        faults = skills.get("option_faults")
+        if not isinstance(faults, dict):
+            errs.append("skills.option_faults 須為物件")
+        else:
+            for opt in faults:
+                if opt not in wrong:
+                    errs.append(f"skills.option_faults 含非錯選項 {opt}")
+            for opt in wrong:
+                if opt not in faults:
+                    errs.append(f"錯選項 {opt} 缺 skills.option_faults")
+                    continue
+                f = faults[opt]
+                if not isinstance(f, dict):
+                    errs.append(f"skills.option_faults.{opt} 不是物件")
+                    continue
+                kid, fid, aid = f.get("knowledge_point_id"), f.get("formula_id"), f.get("ability_id")
+                if aid not in abilities:
+                    errs.append(f"{opt} 未知 ability_id {aid!r}")
+                if kid is None and fid is None:
+                    errs.append(f"{opt} 須有 knowledge_point_id 或 formula_id")
+                if kid is not None and kid not in kps:
+                    errs.append(f"{opt} 未知 knowledge_point_id {kid!r}")
+                if fid is not None and fid not in formulas:
+                    errs.append(f"{opt} 未知 formula_id {fid!r}")
     return errs
 
 
@@ -479,7 +587,7 @@ def process(q, options, answer, cfg, dry_run=False, force=False):
         return False
     print(f"→ 分析 {q['subject']} {q['year']} {q['paper']} Q{q['qno']}（model={cfg['model']}，輸入 ~{est_tokens} tokens）")
     messages = [
-        {"role": "system", "content": SYSTEM_PROMPT},
+        {"role": "system", "content": build_system_prompt()},
         {"role": "user", "content": prompt},
     ]
     for attempt in range(1, 4):
@@ -496,6 +604,7 @@ def process(q, options, answer, cfg, dry_run=False, force=False):
         else:
             errs = validate_analysis(obj, answer)
             if not errs:
+                skills = obj.pop("skills", None)
                 payload = {
                     "question": {
                         "subject": q["subject"],
@@ -508,6 +617,8 @@ def process(q, options, answer, cfg, dry_run=False, force=False):
                     "generated": datetime.datetime.now().strftime("%Y-%m-%d"),
                     "analysis": obj,
                 }
+                if skills is not None:
+                    payload["skills"] = skills
                 path.parent.mkdir(parents=True, exist_ok=True)
                 path.write_text(json.dumps(payload, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
                 soft_answer_leak_warning(obj, answer, options)

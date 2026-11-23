@@ -55,5 +55,36 @@
    "Hint 3 破題：確認正十二邊形是否只有通過頂點的對稱軸？還是也有通過相對邊中點的對稱軸？總數應為多少？"
   ],
   "quick_solution_strategy": "外角 $=360/12=30^\\circ$，內角 $=180-30=150^\\circ$；正 $n$ 邊形對稱軸數 $=n=12$。故 I、II 真，III 假。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-04"
+  ],
+  "formula_ids": [
+   "F-GEO-03",
+   "F-GEO-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-COND"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-GEO-04",
+    "formula_id": "F-GEO-03",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-GEO-04",
+    "formula_id": "F-GEO-04",
+    "ability_id": "A-COND"
+   },
+   "D": {
+    "knowledge_point_id": "K-GEO-04",
+    "formula_id": "F-GEO-03",
+    "ability_id": "A-CALC"
+   }
+  }
  }
 }

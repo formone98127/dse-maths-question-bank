@@ -55,5 +55,37 @@
    "Hint 3 破題：將第一步求得的 $BD$ 代入第二步的式子，注意 $\\alpha$ 在 $\\triangle ABD$ 中的位置是鄰邊關係而非對邊。"
   ],
   "quick_solution_strategy": "先由 $\\triangle BCD$ 得 $BD=\\ell \\sin \\beta$，再於 $\\triangle ABD$ 用 $AB = BD/\\cos \\alpha$ 代換即得答案。"
+ },
+ "skills": {
+  "topic_id": "T-TRI",
+  "knowledge_point_ids": [
+   "K-TRI-01",
+   "K-TRI-02"
+  ],
+  "formula_ids": [
+   "F-TRI-01",
+   "F-TRI-02"
+  ],
+  "ability_ids": [
+   "A-SUB",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-02",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-TRI-02",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-SUB"
+   }
+  }
  }
 }

@@ -55,5 +55,37 @@
    "Hint 3 破題：求出常數後，將 x=-2 代入公式計算。特別注意當 x 為負數時，反比例項 k2/x 的符號會發生變化，這是此題的關鍵轉折點。"
   ],
   "quick_solution_strategy": "設 y = ax^2 + b/x，代入 (1,-4) 與 (2,5) 解得 a=3, b=-5。當 x=-2 時，y = 3(4) + (-5)/(-2) = 12 + 2.5 = 14.5? 等等，重新檢查題目邏輯：x=2, y=5 => 4a - 0.5b = 5; x=1, y=-4 => a + b = -4。解得 a=3, b=-7 (修正：4(3)-0.5(-7)=12+3.5!=5)。重算：x=1: k1+b=-4; x=2: 4k1+b/2=5 => 8k1+b=10。相減：7b=14 => b=2, k1=-2。驗算：-2(1)^2+2/1=0!= -4。題目數據可能有誤或我的快速心算有誤。讓我們嚴格重算：Eq1: k1 + k2 = -4. Eq2: 4k1 + k2/2 = 5 => 8k1 + k2 = 10. (8k1+k2) - (k1+k2) = 10 - (-4) => 7k1 = 14 => k1=2. 代回 Eq1: 2+k2=-4 => k2=-6。驗算：x=2 -> 2(4) + (-6)/2 = 8-3=5 (OK)。x=-2 -> 2(4) + (-6)/(-2) = 8+3=11。答案是 D。"
+ },
+ "skills": {
+  "topic_id": "T-VAR",
+  "knowledge_point_ids": [
+   "K-VAR-03",
+   "K-VAR-04"
+  ],
+  "formula_ids": [
+   "F-VAR-03"
+  ],
+  "ability_ids": [
+   "A-SUB",
+   "A-ALG",
+   "A-CHAIN"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-VAR-03",
+    "formula_id": "F-VAR-03",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-VAR-04",
+    "formula_id": "F-VAR-03",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-VAR-03",
+    "formula_id": "F-VAR-03",
+    "ability_id": "A-COND"
+   }
+  }
  }
 }

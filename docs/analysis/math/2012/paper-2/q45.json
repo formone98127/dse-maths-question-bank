@@ -56,5 +56,39 @@
    "Hint 3 破題：關鍵轉折點在於 $m_1$ 介於原分佈的極值之間（因為它是平均值，不可能小於最小值或大於最大值），因此它不會影響極差；但加入數據後，新的平均值會向上微調（除非所有數都相同），且方差的離差平方和絕對會因多一項 $0^2$ 及平均值的偏移而改變。"
   ],
   "quick_solution_strategy": "平均值必變（分母變大），極差不變（新數在極值內），方差必變（離差平方和性質）。故選 A。"
+ },
+ "skills": {
+  "topic_id": "T-STA",
+  "knowledge_point_ids": [
+   "K-STA-06",
+   "K-STA-04",
+   "K-STA-05"
+  ],
+  "formula_ids": [
+   "F-STA-05",
+   "F-STA-03",
+   "F-STA-04"
+  ],
+  "ability_ids": [
+   "A-ELIM",
+   "A-COND"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-STA-04",
+    "formula_id": "F-STA-03",
+    "ability_id": "A-COND"
+   },
+   "C": {
+    "knowledge_point_id": "K-STA-05",
+    "formula_id": "F-STA-04",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-STA-06",
+    "formula_id": "F-STA-05",
+    "ability_id": "A-ELIM"
+   }
+  }
  }
 }

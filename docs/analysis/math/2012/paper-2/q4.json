@@ -54,5 +54,37 @@
    "Hint 3 破題：計算完常數項後，你會得到一個關於 $k$ 的簡單一次方程，只需將 $k$ 的係數移項並除以該係數即可求得答案。"
   ],
   "quick_solution_strategy": "代入 $x=-3$ 使多項式為零，解得 $-27 + 36 - 3k - 12 = 0 \\Rightarrow -3 = 3k \\Rightarrow k=-1$"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-04",
+   "K-POL-05"
+  ],
+  "formula_ids": [
+   "F-POL-04",
+   "F-POL-05"
+  ],
+  "ability_ids": [
+   "A-SUB",
+   "A-ALG"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-POL-04",
+    "formula_id": "F-POL-04",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-POL-04",
+    "formula_id": "F-POL-04",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-POL-05",
+    "formula_id": "F-POL-05",
+    "ability_id": "A-ALG"
+   }
+  }
  }
 }

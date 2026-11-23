@@ -55,5 +55,36 @@
    "Hint 3 破題：算出 $OC$ 後，注意題目要求的是線段 $AC$ 的長度，而非半徑 $OC$ 或 $OA$。請根據圖形中 $A, O, C$ 三點共線的關係進行最後一步減法運算。"
   ],
   "quick_solution_strategy": "利用弧長比等於半徑比求出 $OC=20$，再由 $AC = OA - OC = 30 - 20 = 10$"
+ },
+ "skills": {
+  "topic_id": "T-MEN",
+  "knowledge_point_ids": [
+   "K-MEN-02",
+   "K-MEN-03"
+  ],
+  "formula_ids": [
+   "F-MEN-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CHAIN"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-MEN-02",
+    "formula_id": "F-MEN-02",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-MEN-03",
+    "formula_id": "F-MEN-02",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-MEN-02",
+    "formula_id": "F-MEN-02",
+    "ability_id": "A-CALC"
+   }
+  }
  }
 }

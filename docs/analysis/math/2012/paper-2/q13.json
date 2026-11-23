@@ -54,5 +54,33 @@
    "Hint 3 破題：原數為 $0.0322515...$，前導零不計入有效數字，故第 1 位有效數字是 3。若要選 D（6 位小數），請檢查小數點後第 6 位數字是否正確；若要驗證 C（5 位有效數字），請計算 $0.0322515$ 四捨五入至第 5 位有效數字應為何？"
   ],
   "quick_solution_strategy": "先確認選項描述（有效數字 vs 小數位數），再依規則對原數進行對應位置的捨入。"
+ },
+ "skills": {
+  "topic_id": "T-NUM",
+  "knowledge_point_ids": [
+   "K-NUM-04"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-COND",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-NUM-04",
+    "formula_id": null,
+    "ability_id": "A-COND"
+   },
+   "B": {
+    "knowledge_point_id": "K-NUM-04",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-NUM-04",
+    "formula_id": null,
+    "ability_id": "A-COND"
+   }
+  }
  }
 }

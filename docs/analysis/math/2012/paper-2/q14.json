@@ -54,5 +54,35 @@
    "Hint 3 破題: 將原繩子的最大可能長度除以每一小段的最小可能長度，計算結果後需確認是否滿足「正確至」的條件（即總和落在允許範圍內），但此處主要關注極值邊界。"
   ],
   "quick_solution_strategy": "取原長最大值 $25.5$ m ($2550$ cm) 除以單段最小值 $4.9$ cm，計算 $2550 \\div 4.9 \\approx 520.4$。注意：此處需重新校對邏輯。正確邏輯是：原長範圍 $[24.5, 25.5]$，單段範圍 $[4.9, 5.1]$。要 $n$ 最大，分子取大 ($2550$)，分母取小 ($4.9$)。$2550/4.9 = 520.4$。等等，題目答案給的是 B (566)。讓我重新檢查誤差定義。"
+ },
+ "skills": {
+  "topic_id": "T-NUM",
+  "knowledge_point_ids": [
+   "K-NUM-05"
+  ],
+  "formula_ids": [
+   "F-NUM-03"
+  ],
+  "ability_ids": [
+   "A-COND",
+   "A-CHAIN"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-NUM-05",
+    "formula_id": "F-NUM-03",
+    "ability_id": "A-COND"
+   },
+   "C": {
+    "knowledge_point_id": "K-NUM-05",
+    "formula_id": "F-NUM-03",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-NUM-05",
+    "formula_id": "F-NUM-03",
+    "ability_id": "A-CHAIN"
+   }
+  }
  }
 }

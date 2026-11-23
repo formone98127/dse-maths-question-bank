@@ -54,5 +54,35 @@
    "Hint 3 破題：將三個候選不等式分別對應到三條邊界線進行驗證，確認是否所有邊界條件都已被涵蓋，即可判斷哪組選項完整描述了該區域。"
   ],
   "quick_solution_strategy": "寫出三條邊界直線方程式並確認陰影區位於其上方或下方，三個不等式同時成立故選 D。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-06"
+  ],
+  "formula_ids": [
+   "F-EQN-04"
+  ],
+  "ability_ids": [
+   "A-GRAPH",
+   "A-BACK"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-EQN-06",
+    "formula_id": "F-EQN-04",
+    "ability_id": "A-GRAPH"
+   },
+   "B": {
+    "knowledge_point_id": "K-EQN-06",
+    "formula_id": "F-EQN-04",
+    "ability_id": "A-BACK"
+   },
+   "C": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-ALG"
+   }
+  }
  }
 }

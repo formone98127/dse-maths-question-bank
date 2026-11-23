@@ -53,5 +53,36 @@
    "Hint 3 破題：由圖可知圓與 x 軸相交，故 $r > -k \\Rightarrow r-k>0$ (III 正確)；但圓與 y 軸是否相交？觀察圓的左側最遠點是否超過 y 軸左邊。若圓完全在 y 軸右側，則 $h+r < 0$ 不成立，需仔細檢查 $r-h$ 的符號。"
   ],
   "quick_solution_strategy": "由圖知圓與 x 軸相交 $\\Rightarrow r > -k \\Rightarrow r-k>0$ (III 對)；但圓左側未達 y 軸負向無限遠，需確認 $r$ 與 $h$ 大小。若圓在 y 軸右側 ($h>0$)，則 $r-h$ 符號取決於是否跨越 y 軸。圖中圓明顯跨越 y 軸向左延伸，故 $r > h$ (II 對)。再檢查 I：$h+k$ 為正負不定。"
+ },
+ "skills": {
+  "topic_id": "T-CIR",
+  "knowledge_point_ids": [
+   "K-CIR-01",
+   "K-CIR-02"
+  ],
+  "formula_ids": [
+   "F-CIR-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-COND"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-CIR-02",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-CIR-02",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-COND"
+   },
+   "D": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-CALC"
+   }
+  }
  }
 }

@@ -54,5 +54,38 @@
    "Hint 3 破題：先計算係數部分 $2^3 \\div 2$，再計算指數部分 $4\\times3 - 5$，最後組合結果。"
   ],
   "quick_solution_strategy": "展開 $(2x^4)^3=8x^{12}$，除以 $2x^5$ 得係數 $8/2=4$，指數 $12-5=7$，故為 $4x^7$"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-01",
+   "K-EXP-02"
+  ],
+  "formula_ids": [
+   "F-EXP-02",
+   "F-EXP-03",
+   "F-EXP-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-EXP-02",
+    "formula_id": "F-EXP-03",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-EXP-01",
+    "formula_id": "F-EXP-04",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-EXP-01",
+    "formula_id": "F-EXP-02",
+    "ability_id": "A-ALG"
+   }
+  }
  }
 }

@@ -53,5 +53,35 @@
    "Hint 3: 思考「必為」的條件。若函數開口向下，最大值為 -4，那麼求 $f(x)=-5$ 會有幾個實根？這會推翻選項 D 的絕對性。"
   ],
   "quick_solution_strategy": "代入頂點式 $f(x)=a(x-3)^2-4$，C 選項化簡得 $a(x-3)^2=0$，無論 $a$ 為何值，必有一實根 $x=3$（重根），故 C 正確。"
+ },
+ "skills": {
+  "topic_id": "T-FUN",
+  "knowledge_point_ids": [
+   "K-FUN-03"
+  ],
+  "formula_ids": [
+   "F-FUN-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-GRAPH"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-FUN-03",
+    "formula_id": "F-FUN-01",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-FUN-03",
+    "formula_id": "F-FUN-01",
+    "ability_id": "A-GRAPH"
+   },
+   "D": {
+    "knowledge_point_id": "K-FUN-03",
+    "formula_id": "F-FUN-01",
+    "ability_id": "A-CALC"
+   }
+  }
  }
 }

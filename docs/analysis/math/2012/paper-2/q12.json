@@ -54,5 +54,36 @@
    "Hint 3 破題：關鍵轉折點在於確認第 n 個圖形的點數實際上等於前 (n-1) 個自然數的和加上初始值。請計算當 n=8 時，需要累加哪些數字，並小心處理起始項（是加到 7 還是 8）。"
   ],
   "quick_solution_strategy": "由 a_1=1, a_{n+1}=a_n+n 推導得 a_n = 1 + \\sum_{i=1}^{n-1} i = 1 + \\frac{(n-1)n}{2}，代入 n=8 計算即可。"
+ },
+ "skills": {
+  "topic_id": "T-SEQ",
+  "knowledge_point_ids": [
+   "K-SEQ-05",
+   "K-SEQ-01"
+  ],
+  "formula_ids": [
+   "F-SEQ-04"
+  ],
+  "ability_ids": [
+   "A-CHAIN",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-SEQ-05",
+    "formula_id": "F-SEQ-04",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-SEQ-01",
+    "formula_id": "F-SEQ-04",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-SEQ-05",
+    "formula_id": null,
+    "ability_id": "A-COND"
+   }
+  }
  }
 }

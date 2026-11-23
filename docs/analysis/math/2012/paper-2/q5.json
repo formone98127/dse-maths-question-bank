@@ -53,5 +53,34 @@
    "Hint 3 破題：從第二個等式 $2m - n = 7$ 中表達出 $n$ 或 $m$，代入第一個等式中消去一個變數即可解出另一變數。"
   ],
   "quick_solution_strategy": "由 $2m-n=7$ 得 $n=2m-7$，代入 $m+2n+6=7$ 化簡求解。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CHAIN"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-EQN-02",
+    "formula_id": null,
+    "ability_id": "A-CHAIN"
+   },
+   "C": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-COND"
+   }
+  }
  }
 }

@@ -1,0 +1,27 @@
+---
+description: 產出完成後自動 commit 並 push 收錄入 repo
+alwaysApply: true
+---
+
+# 產出自動入庫（通則）
+
+用戶通則：**以後嘅產出都自動 commit，並 push 到 remote，收錄在 repo。**
+
+## 何時做
+
+每次完成一批有意義嘅產出（新功能、技能冊／地圖、分析掛鉤、腳本、文檔、頁面改動等），喺同一輪對話完結前：
+
+1. 只 stage **今次相關** 嘅檔案（唔好把無關嘅本地改動一併 commit）
+2. 用清晰嘅 commit message（why 為主）
+3. `git push` 到而家追蹤嘅 remote branch
+4. 若 push 因 remote 領先被拒：先 `git pull --rebase`（或同等安全整合），再 push；**禁止** `push --force` 去 main／master，除非用戶當輪明確要求
+
+## 例外（仍然要問／跳過）
+
+- 檔案似含密鑰（`.env`、credentials、API key）→ 唔 commit，警告用戶
+- 用戶當輪明確講「唔好 commit／唔好 push」→ 遵從
+- 空 commit（冇改動）→ 唔造
+
+## 同既有安全規則一齊
+
+仍然遵守：唔改 git config、唔用 `-i`、唔 `--no-verify`、唔 force push main（除非明示）。

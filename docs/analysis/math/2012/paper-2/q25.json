@@ -55,5 +55,36 @@
    "Hint 3 破題：判斷 IV ($ad>bc$) 時，考慮將不等式變形為 $\\frac{a}{c} > \\frac{b}{d}$ (假設 $c,d>0$)，或直接代入斜率與截距的符號關係來驗證不等式方向。"
   ],
   "quick_solution_strategy": "將方程化為 $y=-ax+b$，由圖形知斜率為負故 $-a<0 \\Rightarrow a<0$ (I 對)；$L_1$ 較陡且向左傾，$L_2$ 較平，故 $|-a| > |-c|$ 且斜率皆負，推導出 $a<c$ (II 對)；$y$ 軸截距 $L_1$ 高於 $L_2$ 故 $b>d$ (III 對)；由 $a<0, c>0$ 或具體數值代入驗證 IV。"
+ },
+ "skills": {
+  "topic_id": "T-LIN",
+  "knowledge_point_ids": [
+   "K-LIN-02",
+   "K-LIN-03"
+  ],
+  "formula_ids": [
+   "F-LIN-03"
+  ],
+  "ability_ids": [
+   "A-GRAPH",
+   "A-COND"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-LIN-02",
+    "formula_id": "F-LIN-03",
+    "ability_id": "A-COND"
+   },
+   "B": {
+    "knowledge_point_id": "K-LIN-02",
+    "formula_id": "F-LIN-03",
+    "ability_id": "A-GRAPH"
+   },
+   "D": {
+    "knowledge_point_id": "K-LIN-03",
+    "formula_id": "F-LIN-03",
+    "ability_id": "A-ALG"
+   }
+  }
  }
 }

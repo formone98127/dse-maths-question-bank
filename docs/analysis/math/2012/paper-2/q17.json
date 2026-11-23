@@ -54,5 +54,37 @@
    "Hint 3: 先計算 \\triangle ADG 的面積，再利用相似性或比例關係，將 \\triangle ADG 的面積轉換為平行四邊形 \\triangle ABD 或整個平行四邊形的面積。"
   ],
   "quick_solution_strategy": "由 \\triangle DFG(3) 與 \\triangle ADG 同高底比 4:7 得 \\triangle ADG=6；再由 \\triangle ADG\\sim\\triangle EBG 或比例關係，發現平行四邊形面積是 \\triangle ADG 的 3 倍。"
+ },
+ "skills": {
+  "topic_id": "T-MEN",
+  "knowledge_point_ids": [
+   "K-MEN-01",
+   "K-MEN-03",
+   "K-GEO-05"
+  ],
+  "formula_ids": [
+   "F-MEN-01"
+  ],
+  "ability_ids": [
+   "A-CHAIN",
+   "A-ALG"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-MEN-03",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CHAIN"
+   }
+  }
  }
 }

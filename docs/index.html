@@ -355,7 +355,7 @@ footer { text-align:center; color:var(--mut); font-size:11.5px; padding:4px 0 12
 </details>
 
 <script src="hub/papers.js?v=202611221029"></script>
-<script src="data.js?v=202611221029"></script>
+<script src="data.js?v=202611231730"></script>
 <script src="answers.js?v=202611221029"></script>
 <script>
 const QS = window.QB.questions;
@@ -366,7 +366,7 @@ const pno = p => {
   return m ? m[1].toUpperCase() : '1';
 };
 const YEAR_LABEL = { PP: '練習卷', SP: '樣本試卷' };
-const PAPER_LABEL = { 'Paper 1M': 'M1' };
+const PAPER_LABEL = { 'Paper 1M': 'M1', 'Paper 2M': 'M2' };
 const plabel = p => PAPER_LABEL[p] || p;
 const yLabel = y => YEAR_LABEL[y] || y;
 const yNum = y => { const n = Number(y); return Number.isFinite(n) ? n : 0; };
@@ -1048,6 +1048,7 @@ function openFromHash() {
     : pToken === '1A' ? 'Paper 1A'
     : pToken === '1B' ? 'Paper 1B'
     : pToken === '1M' ? 'Paper 1M'
+    : pToken === '2M' ? 'Paper 2M'
     : 'Paper 1';
   const n = m[4] ? +m[4] : null;
   const ref = passageRef;

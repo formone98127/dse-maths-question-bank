@@ -340,7 +340,13 @@ function viewHrefFor(r) {
     return "/" + (r.hash || "");
   }
   if (LANDING_BY_HASH[r.hash]) return LANDING_BY_HASH[r.hash];
-  /* 只有 math（必修部分）有靜態落地板；M1 等未有板嘅科目唔好出死鏈（404） */
+  /* M1 未有靜態落地板 → 用 reader 深連結（hash 由 data.js 直接渲染，唔會 404） */
+  if (r.id === "m1") {
+    const y = String(r.year);
+    const prefix = y === "PP" ? "PP" : y;
+    return `/#${prefix}P1MQ1`;
+  }
+  /* 其他未有落地板嘅科目唔好出死鏈 */
   if (r.id !== "math") return null;
   const code = PAPER_CODE[r.paper] || "paper-1";
   const slug = r.lang === "英文" ? `${code}-en` : code;

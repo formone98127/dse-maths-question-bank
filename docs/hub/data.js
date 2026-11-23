@@ -8,6 +8,14 @@ const BANK_URL = "https://hkdse.exampaper.cloud/";
  * hash: 逐題深層連結
  */
 const CATALOG = [
+  { id: "m1", name: "數學（延伸部分 M1）", year: 2012, paper: "M1", lang: "英文", hash: "#2012P1MQ1" },
+  { id: "m1", name: "數學（延伸部分 M1）", year: 2013, paper: "M1", lang: "英文", hash: "#2013P1MQ1" },
+  { id: "m1", name: "數學（延伸部分 M1）", year: 2014, paper: "M1", lang: "英文", hash: "#2014P1MQ1" },
+  { id: "m1", name: "數學（延伸部分 M1）", year: 2015, paper: "M1", lang: "英文", hash: "#2015P1MQ1" },
+  { id: "m1", name: "數學（延伸部分 M1）", year: 2016, paper: "M1", lang: "英文", hash: "#2016P1MQ1" },
+  { id: "m1", name: "數學（延伸部分 M1）", year: 2017, paper: "M1", lang: "英文", hash: "#2017P1MQ1" },
+  { id: "m1", name: "數學（延伸部分 M1）", year: 2018, paper: "M1", lang: "英文", hash: "#2018P1MQ1" },
+  { id: "m1", name: "數學（延伸部分 M1）", year: 2021, paper: "M1", lang: "英文", hash: "#2021P1MQ1" },
   /* 數學（中文卷） */
   /* 經濟（英文卷） */
   /* 化學／生物／物理（第 2 層中文；先上線後校對） */

@@ -1,0 +1,11 @@
+| | Marks | Remarks |
+| :--- | :--- | :--- |
+| | 1M | |
+| $e^x \sin \pi x \, dx$ | 1M | |
+| $x - \pi e^x \cos \pi x + \text{constant}$ | 1M | |
+| $+ \text{constant}$ | | |
+| $(\pi + \text{constant})$ | 1A | |
+| by letting $u = 3 - x$ | 1M | |
+| by (a) | 1M | for using the result of (a) |
+| | 1A | |
+| | (7) | |

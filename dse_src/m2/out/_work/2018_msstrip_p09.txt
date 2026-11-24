@@ -1,0 +1,6 @@
+| | Marks | Remarks |
+| :--- | :--- | :--- |
+| | 1M | |
+| | 1M | |
+| | 1M | |
+| $\left. \frac{A}{t} \right|_{r=e} \leq \frac{32e^2 \sqrt{4e^2+1}}{8e(4e^2+1)}$. | |

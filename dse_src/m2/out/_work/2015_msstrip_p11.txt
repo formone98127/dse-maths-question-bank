@@ -1,0 +1,12 @@
+| | Marks | Remarks |
+| :--- | :--- | :--- |
+| $(-1)(\lambda - \mu + 1)$ | 1M | either one for both |
+| $(\mu + 1, 1)(\mu + 1, 1)$ | 1A | |
+| $(-1)(\lambda - \mu + 1)]$ | 1A | |
+| $1M$ | either one for both | |
+| $1$ | |
+| $(I - M)$ | |
+| $\frac{\lambda + \mu - 1}{\mu + 2} I - \frac{\mu - 1}{\lambda - \mu + 2} M$ | 1 | |
+| $(-1)BA + (\mu - 1)^2 B^2$ and (a)(ii) | 1M | for using (a)(i) and (a)(ii) |
+| $(B)$ | |
+| $(-1)^2 BA + (\mu - 1)^3 B^2$ and (a)(ii) | 1 | |

@@ -1,0 +1,5 @@
+<table border="1"><tr><td></td><td>Marks</td><td>Remarks</td></tr><tr><td>3) $-(-2)(5)(2\alpha+1)-(-2)(\alpha)(7)$
+$\begin{vmatrix}1&-2&-2\\5&\alpha&\alpha\\7&\alpha-3&2\alpha+1\end{vmatrix}\neq0.$
+or $\alpha>-4$.</td><td>1A</td><td></td></tr><tr><td>$-2\alpha+102\alpha+15\left|\begin{array}{c}\beta\\0\\\beta\end{array}\right)$
+$(\alpha+4)(\alpha+10)\neq0.$
+or $\alpha>-4$.</td><td>1M</td><td></td></tr><tr><td></td><td>1A</td><td></td></tr><tr><td></td><td>1A</td><td></td></tr><tr><td></td><td>1M</td><td>for Cramer&#x27;s Rule</td></tr><tr><td></td><td>1A</td><td></td></tr><tr><td></td><td>1A</td><td></td></tr><tr><td></td><td>(7)</td><td></td></tr></table>

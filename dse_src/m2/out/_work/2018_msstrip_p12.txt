@@ -1,0 +1,9 @@
+<table border="1"><tr><td></td><td>Marks</td><td>Remarks</td></tr><tr><td>-1)(a+1)+2(a-1)-2a(-12)
+e $ \begin{vmatrix} 1 & a & 4(a+1) \\ 2 & a-1 & 2(a-1) \\ 1 & -1 & -12 \end{vmatrix} \neq0 $
+a&gt;3</td><td>1A
+1M
+1A</td><td></td></tr><tr><td>$ \begin{vmatrix} 4(a+1) & 18 \\ -6a-10 & -16 \\ -4a-16 & b-18 \end{vmatrix} $
+e $ 2a-6\neq0 $
+a&gt;3</td><td>1M
+1A
+1A</td><td></td></tr><tr><td>ve</td><td>1M</td><td>for Cramer&#x27;s Rule</td></tr><tr><td></td><td>1A+1A</td><td>1A for any one+1A for all</td></tr></table>

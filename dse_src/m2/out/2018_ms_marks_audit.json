@@ -1,0 +1,114 @@
+[
+ {
+  "q": 1,
+  "pages": [
+   2
+  ],
+  "marks": 4,
+  "paper": 4,
+  "ok": true,
+  "how": "MS 小計"
+ },
+ {
+  "q": 2,
+  "pages": [
+   2
+  ],
+  "marks": 5,
+  "paper": 5,
+  "ok": true,
+  "how": "MS 小計"
+ },
+ {
+  "q": 3,
+  "pages": [
+   3
+  ],
+  "marks": 5,
+  "paper": 5,
+  "ok": true,
+  "how": "MS 小計"
+ },
+ {
+  "q": 4,
+  "pages": [
+   3
+  ],
+  "marks": 6,
+  "paper": 6,
+  "ok": true,
+  "how": "題目卷為準；MS 讀到 subtotals=無 cells=10"
+ },
+ {
+  "q": 5,
+  "pages": [
+   4
+  ],
+  "marks": 7,
+  "paper": 7,
+  "ok": true,
+  "how": "題目卷為準；MS 讀到 subtotals=無 cells=3"
+ },
+ {
+  "q": 6,
+  "pages": [
+   5
+  ],
+  "marks": 7,
+  "paper": 7,
+  "ok": true,
+  "how": "題目卷為準；MS 讀到 subtotals=無 cells=2"
+ },
+ {
+  "q": 7,
+  "pages": [
+   6
+  ],
+  "marks": 8,
+  "paper": 8,
+  "ok": true,
+  "how": "題目卷為準；MS 讀到 subtotals=無 cells=5"
+ },
+ {
+  "q": 8,
+  "pages": [
+   7
+  ],
+  "marks": 8,
+  "paper": 8,
+  "ok": true,
+  "how": "題目卷為準；MS 讀到 subtotals=無 cells=3"
+ },
+ {
+  "q": 9,
+  "pages": [
+   8,
+   9
+  ],
+  "marks": 12,
+  "paper": 12,
+  "ok": true,
+  "how": "題目卷為準；MS 讀到 subtotals=無 cells=9"
+ },
+ {
+  "q": 10,
+  "pages": [
+   10,
+   11
+  ],
+  "marks": 13,
+  "paper": 13,
+  "ok": true,
+  "how": "題目卷為準；MS 讀到 subtotals=[5, 3] cells=16"
+ },
+ {
+  "q": 11,
+  "pages": [
+   12
+  ],
+  "marks": 12,
+  "paper": 12,
+  "ok": true,
+  "how": "題目卷為準；MS 讀到 subtotals=無 cells=8"
+ }
+]

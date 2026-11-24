@@ -5,8 +5,63 @@
   "sum": 100
  },
  {
+  "year": 2013,
+  "match": false,
+  "sum": 100
+ },
+ {
+  "year": 2014,
+  "match": false,
+  "sum": 104
+ },
+ {
+  "year": 2015,
+  "match": false,
+  "sum": 49
+ },
+ {
+  "year": 2016,
+  "match": false,
+  "sum": 61
+ },
+ {
+  "year": 2017,
+  "match": false,
+  "sum": 76
+ },
+ {
+  "year": 2018,
+  "match": false,
+  "sum": 72
+ },
+ {
+  "year": 2019,
+  "match": false,
+  "sum": 45
+ },
+ {
+  "year": 2020,
+  "match": false,
+  "sum": 60
+ },
+ {
+  "year": 2021,
+  "match": false,
+  "sum": 53
+ },
+ {
+  "year": 2022,
+  "match": false,
+  "sum": 49
+ },
+ {
+  "year": 2023,
+  "match": false,
+  "sum": 93
+ },
+ {
   "year": 2024,
   "match": false,
-  "sum": 27
+  "sum": 93
  }
 ]

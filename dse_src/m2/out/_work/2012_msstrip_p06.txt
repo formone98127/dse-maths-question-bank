@@ -1,0 +1,13 @@
+Marks Remarks
+1M
+1A
+(2)
+1M
+1A
+Either one
+Either one
+1M For $a - bc = 1$
+1A
+1M
+OR $\begin{pmatrix} 1 & -1 \\ \frac{1}{3} & \frac{2}{3} \end{pmatrix} \begin{pmatrix} \frac{-2}{3} & 5 \\ \frac{1}{3} & 5 \end{pmatrix}$
+1A

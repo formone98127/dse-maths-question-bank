@@ -1,0 +1,13 @@
+| | Marks | Remarks |
+| :--- | :--- | :--- |
+| | 1M | |
+| | 1 | |
+| | 1M | |
+| | 1A | |
+| | (4) | |
+| | 1A | |
+| $\frac{\sin^2 \frac{2\pi}{5}}{\mathrm{d}x}$ | | |
+| | 1M | |
+| | 1A | |
+| ves $\theta = \frac{-\pi}{5}$ (by (a)(i)) | 1M | For using (a) |
+| $\theta = \frac{3\pi}{10}$ (by (a)(ii)) | | |

@@ -1,0 +1,21 @@
+Marks Remarks
+1M
+1M
+For $\begin{pmatrix} 1 & 0 \\ 0 & 5^{12} \end{pmatrix}$
+1M
+OR $\begin{pmatrix} \frac{2}{3} & 1 \\ \frac{-1}{3} & 1 \end{pmatrix} \begin{pmatrix} \frac{1}{5^{12}} & \frac{-1}{2 \cdot 5^{12}} \\ \frac{1}{3} & \frac{2 \cdot 5^{12}}{3} \end{pmatrix}$
+1A
+OR $\begin{pmatrix} 81380209 & 162760416 \\ 81380208 & 162760417 \end{pmatrix}$
+(11)
+$\frac{\overrightarrow{AC} + 2\overrightarrow{AD}}{2}$ for some $k$.
+1A
+1M
+For tip-to-tail method
+1A
+1M
+For tip-to-tail method
+1M
+1A
+For $\frac{a+b+c}{3}$
+1A
+(3)

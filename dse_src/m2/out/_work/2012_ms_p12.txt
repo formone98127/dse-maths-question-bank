@@ -1,0 +1,38 @@
+<table border="1"><tr><td>Solution</td><td>Marks</td><td>Remarks</td></tr><tr><td>Alternative Solution 2
+$t=k+\sqrt{3}$
+$= \frac{5\sqrt{3}}{3}$
+The shaded area
+$= \text{area of } \Delta OAP + \text{area of } \Delta OAF - \text{area of sector } PAS - \text{area under }\Gamma \text{ from } O \text{ to } A$
+$= \frac{1}{2}\left(\frac{5\sqrt{3}}{3}\right)(1)+\frac{1}{2}(1)\left(\frac{2\sqrt{3}}{3}\right)-\frac{1}{2}(2)^2\frac{\pi}{6}-\int_0^1 \frac{2\sqrt{3}}{3}x^{\frac{1}{2}}dx$
+$= \frac{5\sqrt{3}}{6}+\frac{\sqrt{3}}{3}-\frac{\pi}{3}-\frac{4\sqrt{3}}{9}\left[x^{\frac{3}{2}}\right]_0^1$</td><td>1M
+1M+1A
+1M</td><td>For $A=\int ydx$
+$P(0,t)$
+$S$
+$A(1,k)$
+$B(-1,0)$
+$O$
+$F$</td></tr><tr><td>Alternative Solution 3
+$t=k+\sqrt{3}$
+$= \frac{5\sqrt{3}}{3}$
+The equation of $C$ is $x^2+\left(y-\frac{5\sqrt{3}}{3}\right)^2=4$.
+Hence, the equation of $\widehat{AS}$ is $y=\frac{5\sqrt{3}}{3}-\sqrt{4-x^2}$.
+The shaded area $= \int_0^1\left(\frac{5\sqrt{3}}{3}-\sqrt{4-x^2}-\frac{2\sqrt{3}}{3}x^{\frac{1}{2}}\right)dx$
+For $\int_0^1\sqrt{4-x^2}dx$, let $x=2\sin\phi$.
+$\therefore dx=2\cos\phi d\phi$
+When $x=1$, $\phi=\frac{\pi}{6}$; when $x=0$, $\phi=0$.
+$\int_0^1\sqrt{4-x^2}dx=\int_0^{\frac{\pi}{6}}\sqrt{4-4\sin^2\phi}2\cos\phi d\phi$
+$= \int_0^{\frac{\pi}{6}}2(1+\cos 2\phi)d\phi$
+$= [2\phi+\sin 2\phi]_{\frac{\pi}{6}}^{\frac{\pi}{6}}$
+$= \frac{\pi}{3}+\frac{\sqrt{3}}{2}$
+Hence, the shaded area
+$= \left[\frac{5\sqrt{3}}{3}x-\frac{4\sqrt{3}}{9}x^{\frac{3}{2}}\right]_0^1-\left(\frac{\pi}{3}+\frac{\sqrt{3}}{2}\right)$
+$= \frac{13\sqrt{3}}{18}-\frac{\pi}{3}$</td><td>1M
+1M
+1M</td><td>For $A=\int ydx$
+$P(0,t)$
+$S$
+$A(1,k)$
+$B(-1,0)$
+$O$
+$F$</td></tr></table>

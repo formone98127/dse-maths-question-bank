@@ -1,0 +1,2 @@
+OR $\frac{x^2 + 2x}{(x + 1)^2}$
+Accept $\lim_{x \to \infty} \frac{1}{x + 1} = 0$

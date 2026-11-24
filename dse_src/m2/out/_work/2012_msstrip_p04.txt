@@ -1,0 +1,13 @@
+| Marks | Remarks |
+| :--- | :--- |
+| 1M | Diagram of parallelogram with height $= \frac{\text{volume}}{\text{base}}$ |
+| 1A | 1M for height $= \frac{\text{volume}}{\text{base}}$ |
+| 1M | 1M+1A |
+| (5) | |
+| | |
+| 1M | OR Solution Set = $\{(2-2t, t-2, t) : t \in \mathbf{R}\}$ |
+| 1A | |
+| 1M | |
+| 1A | |
+| 1A | |
+| (5) | |

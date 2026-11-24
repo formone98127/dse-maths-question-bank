@@ -190,5 +190,18 @@ Since $(E)$ has a unique solution, we have $2a-6 \neq 0$ and $-a-1 \neq 0$. Ther
 y = \frac{18a + 4(a+1)}{-2(a-3)(a+1)} = \frac{-3ab + 22a - 5b - 38}{(a-3)(a+1)}$
 z = \frac{18a + 4(a+1)}{-2(a-3)(a+1)} = \frac{b-2}{2(a-3)}$
 
+## 第 12 題  <!-- 頁 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]｜13/13（題目卷為準；MS 讀到 subtotals=無 cells=8） -->
 
-**合計 87 / 100**
+Marks: 1A 1M 1A 1M 1A 1M 1A+1A
+
+11. (a) (i) (1) Note that $$\begin{vmatrix} 1 & a & 4(a+1) \\ 2 & a-1 & 2(a-1) \\ 1 & -1 & -12 \end{vmatrix} = (a-1)(-12) + a(2)(a-1) + 4(a+1)(2)(-1) - 4(a-1)(a+1) + 2(a-1) - 2a(-12) = -2(a-3)(a+1)$$
+Since $(E)$ has a unique solution, we have $\begin{vmatrix} 1 & a & 4(a+1) \\ 2 & a-1 & 2(a-1) \\ 1 & -1 & -12 \end{vmatrix} \neq 0$.
+So, we have $-2(a-3)(a+1) \neq 0$. Therefore, we have $a \neq 3$ and $a \neq -1$. Thus, we have $a 3$.
+The augmented matrix of $(E)$ is $$\begin{pmatrix} 1 & a & 4(a+1) \\ 2 & a-1 & 2(a-1) \\ 1 & -1 & -12 \end{pmatrix} \sim \begin{pmatrix} 1 & a & 4(a+1) \\ 0 & -a-1 & -6a-10 \\ 0 & -a-1 & -4a-16 \end{pmatrix} \sim \begin{pmatrix} 1 & a & 4(a+1) \\ 0 & -a-1 & -6a-10 \\ 0 & 0 & 2a-6 \end{pmatrix}$$
+Since $(E)$ has a unique solution, we have $2a-6 \neq 0$ and $-a-1 \neq 0$. Therefore, we have $a \neq 3$ and $a \neq -1$. Thus, we have $a 3$.
+(2) Since $(E)$ has a unique solution, we have $$x = \frac{18a + 4(a+1)}{-2(a-3)(a+1)} = \frac{a^2b + ab + 10a - 2b - 50}{(a-3)(a+1)}$$
+y = \frac{18a + 4(a+1)}{-2(a-3)(a+1)} = \frac{-3ab + 22a - 5b - 38}{(a-3)(a+1)}$
+z = \frac{18a + 4(a+1)}{-2(a-3)(a+1)} = \frac{b-2}{2(a-3)}$
+
+
+**合計 100 / 100**

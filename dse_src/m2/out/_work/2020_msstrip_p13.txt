@@ -1,0 +1,20 @@
+<table border="1"><tr><td></td><td>Marks</td><td>Remarks</td></tr><tr><td>solution, the augmented matrix of (E)
+$\begin{bmatrix}1\\k-1\\-h+4k-1\end{bmatrix}$
+$\frac{7h+7k+14}{\frac{3}{2}}$
+$\frac{k+7}{\frac{3}{2}}$
+$\frac{-4k-1}{\frac{3}{2}}$
+$\frac{hk+7h+7k+14}{(h+3)^2}$, $y=\frac{3h-k+7}{(h+3)^2}$</td><td>1M</td><td></td></tr><tr><td></td><td>1A+1A</td><td>1A for any one + 1A for all</td></tr><tr><td>agented matrix of (E) is
+$-1-2 \mid 1$
+$-1-1 \mid k-1$
+$0 0 \mid k+2$
+have $k=-2$.
+the augmented matrix of (E)
+is $\{(t+4,-t+3,t): t \in \mathbf{R}\}$.
+is $\{(t+4,-t+3,t): t \in \mathbf{R}\}$.</td><td>1M
+1</td><td>either one</td></tr><tr><td></td><td>1A
+(9)</td><td></td></tr><tr><td>real solution $(x,y,z)$ satisfying
+$y=\frac{h}{h+3}$, $y=\frac{3}{h+3}$ and $z=\frac{-3}{h+3}$.</td><td>1A</td><td></td></tr><tr><td></td><td>1M</td><td></td></tr><tr><td>$\Rightarrow \frac{3(h-3)}{h+3}=1$.
+$\Leftrightarrow h=6$.
+at $(F)$ has a real solution
+1.</td><td>1A
+(4)</td><td>f.t.</td></tr></table>

@@ -1,0 +1,7 @@
+<table border="1"><tr><td></td><td>Marks</td><td>Remarks</td></tr><tr><td>$(-2)(4)-(h)(h)-(-1)(-7)$
+have $\begin{vmatrix}1&-1&-2\\1&-2&h\\4&h&-7\end{vmatrix}\neq0$.</td><td>1A
+1M
+1</td><td></td></tr><tr><td>$\begin{vmatrix}-2&1\\h+2&k-1\\1&3\end{vmatrix}$
+have $(h+3)^2\neq0$.</td><td>1M
+1A
+1</td><td></td></tr><tr><td>have</td><td>1M</td><td>for Cramer&#x27;s Rule</td></tr><tr><td></td><td>1A+1A</td><td>1A for any one + 1A for all</td></tr></table>

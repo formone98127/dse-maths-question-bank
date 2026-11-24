@@ -1,0 +1,5 @@
+<table border="1"><tr><td></td><td>Marks</td><td>Remarks</td></tr><tr><td>$x\in\mathbf{R}$ .
+and $h(-x)=h(x)$ .
+in(b))。
+$\theta$。
+$\left.\tan\theta\right]_{0}^{\frac{\pi}{4}}$(by(a)(ii))</td><td>1M</td><td>withhold1Mifthisstepisskipped</td></tr><tr><td></td><td>1M</td><td></td></tr><tr><td></td><td>1M</td><td></td></tr><tr><td></td><td>1M</td><td>forusingtheresultsof(a)(ii)</td></tr><tr><td></td><td>1A</td><td></td></tr><tr><td></td><td>(5)</td><td></td></tr></table>

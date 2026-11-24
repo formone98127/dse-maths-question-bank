@@ -1,0 +1,3 @@
+<table border="1"><tr><td></td><td>Marks</td><td>Remarks</td></tr><tr><td>7π
+$\cos \frac{6\pi}{7}$+...</td><td></td><td></td></tr><tr><td>$\cos 14\pi$</td><td>1M</td><td></td></tr><tr><td>$\frac{\pi}{7}$ and n=49 in(b)(i)</td><td>1M</td><td></td></tr><tr><td>27π=$\frac{49}{2}$</td><td>1A
+---------(6)</td><td></td></tr></table>

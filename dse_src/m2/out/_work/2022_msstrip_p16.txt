@@ -1,0 +1,16 @@
+| | Marks | Remarks |
+| :--- | :--- | :--- |
+| $n+1)\theta$ $sin(n+1)\theta$ $1-cos(n+1)\theta$ | 1M | |
+| $\frac{(n+1)\theta}{2}$ $\begin{pmatrix} \sin \frac{(n+1)\theta}{2} & \cos \frac{(n+1)\theta}{2} \\ -\cos \frac{(n+1)\theta}{2} & \sin \frac{(n+1)\theta}{2} \end{pmatrix}$ | 1M | |
+| $\cos \frac{\theta}{2} \cos \frac{(n+1)\theta}{2}$ $\sin \frac{\theta}{2} \cos \frac{(n+1)\theta}{2} - \cos \frac{\theta}{2} \sin \frac{(n+1)\theta}{2}$ | | |
+| $\sin \frac{\theta}{2} \cos \frac{(n+1)\theta}{2}$ $\cos \frac{\theta}{2} \cos \frac{(n+1)\theta}{2} + \sin \frac{\theta}{2} \sin \frac{(n+1)\theta}{2}$ | | |
+
+| | Marks | Remarks |
+| :--- | :--- | :--- |
+| 1 | | |
+| (7) | | |
+| $\sin \theta$ $s\theta$ $^2$ + ... | | |
+| $\sin 2\theta$ $\cos 2\theta$ $^2$ + ... | | |
+| $\theta - \sin 2\theta - \dots - \sin n\theta$ $\sin \theta + \cos 2\theta + \dots + \cos n\theta$ | 1M | |
+| $\frac{(n+1)\theta}{2} \cos \frac{n\theta}{2}$ $\sin \frac{\theta}{2}$ | 1M | |
+| 1A | | |

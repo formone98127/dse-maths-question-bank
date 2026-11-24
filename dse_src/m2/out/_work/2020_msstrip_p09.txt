@@ -1,0 +1,1 @@
+<table border="1"><tr><td>(4,20)</td><td>20</td><td>(20,∞)</td></tr><tr><td>-</td><td>0</td><td>+</td></tr><tr><td>&gt;</td><td>54</td><td>&gt;</td></tr></table>

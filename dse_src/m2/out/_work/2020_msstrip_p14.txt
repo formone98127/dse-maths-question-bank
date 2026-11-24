@@ -1,0 +1,5 @@
+<table border="1"><tr><td></td><td>Marks</td><td>Remarks</td></tr><tr><td rowspan="6">Program.</td><td>1M</td><td></td></tr><tr><td>1A
+---------(2)</td><td></td></tr><tr><td>1M</td><td></td></tr><tr><td>1A
+---------(2)</td><td></td></tr><tr><td>1M</td><td></td></tr><tr><td>(1+6λ)j+(2+3λ)k</td><td>1M</td><td></td></tr><tr><td>(6λ)-8(2+3λ)=0</td><td>1A</td><td>f.t.</td></tr><tr><td>(2)i-(6λ+7)j+(3λ-4)k</td><td></td><td></td></tr><tr><td>1i+μj-10k</td><td></td><td></td></tr><tr><td>$\frac{\lambda+7}{\mu}=\frac{3\lambda-4}{10}$</td><td>1M</td><td></td></tr><tr><td>-25</td><td>1A+1A</td><td></td></tr><tr><td>ion of $\Delta OPQ$ and
+dicular to $PQ$.</td><td></td><td></td></tr><tr><td>Q.</td><td>1M</td><td>for identifying $\theta$</td></tr><tr><td>RN=$\frac{\left|\overrightarrow{ON}\right|}{\left|\overrightarrow{OR}\right|}$.</td><td></td><td></td></tr><tr><td>$\frac{\overrightarrow{P}\times\overrightarrow{OR}}{\overrightarrow{OR}}$.</td><td>1M</td><td>for using the result of (c)(ii)(1)</td></tr><tr><td>$\frac{1}{+2^{2}}=\frac{2}{3}$.</td><td>1A
+---------(8)</td><td></td></tr></table>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-HK">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DSE 數學 2019 卷二 第 33 題深度分析｜DSE Hub</title>
+<meta name="description" content="DSE 數學 2019 卷二 第 33 題深度解析：考點「二進位數值轉換」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
+<meta name="keywords" content="DSE, 香港中學文憑, 歷屆試題, past paper, DSE 數學, DSE 經濟, DSE 化學, DSE 生物, DSE 物理, 免費題庫, 按課題">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="googlebot" content="index, follow">
+<meta name="author" content="DSE Hub">
+<link rel="canonical" href="https://hkdse.exampaper.cloud/math/2019/paper-2-en/q33/">
+<link rel="alternate" hreflang="zh-Hant-HK" href="https://hkdse.exampaper.cloud/math/2019/paper-2-en/q33/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DSE Hub">
+<meta property="og:locale" content="zh_HK">
+<meta property="og:title" content="DSE 數學 2019 卷二 第 33 題深度分析｜DSE Hub">
+<meta property="og:description" content="DSE 數學 2019 卷二 第 33 題深度解析：考點「二進位數值轉換」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
+<meta property="og:url" content="https://hkdse.exampaper.cloud/math/2019/paper-2-en/q33/">
+<meta property="og:image" content="https://hkdse.exampaper.cloud/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="DSE Hub 香港中學文憑歷屆試題資料庫">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="DSE 數學 2019 卷二 第 33 題深度分析｜DSE Hub">
+<meta name="twitter:description" content="DSE 數學 2019 卷二 第 33 題深度解析：考點「二進位數值轉換」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
+<meta name="twitter:image" content="https://hkdse.exampaper.cloud/og-image.png">
+<meta name="theme-color" content="#0b1220">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="DSE Hub">
+<meta name="application-name" content="DSE Hub">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/hub/style.css?v=202611252320">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LTB27V0RGW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-LTB27V0RGW');
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "DSE Hub",
+          "item": "https://hkdse.exampaper.cloud/hub/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "數學",
+          "item": "https://hkdse.exampaper.cloud/math/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "2019",
+          "item": "https://hkdse.exampaper.cloud/math/2019/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "卷二（英文）",
+          "item": "https://hkdse.exampaper.cloud/math/2019/paper-2-en/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "第 33 題",
+          "item": "https://hkdse.exampaper.cloud/math/2019/paper-2-en/q33/"
+        }
+      ]
+    },
+    {
+      "@type": "QAPage",
+      "mainEntity": {
+        "@type": "Question",
+        "name": "DSE 數學 2019 卷二 第 33 題",
+        "text": "$100110000010110_{2}=$ - A. $19\\times 2^{10}+22$ - B. $19\\times 2^{10}+44$ - C. $19\\times 2^{11}+22$ - D. $19\\times 2^{11}+44$",
+        "answerCount": 4,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A. $19\\times 2^{10}+22$。速解策略：將數字分為 $10011$, $00000$, $10110$；計算 $19 \\times 2^{10} + 22$"
+        },
+        "suggestedAnswer": [
+          {
+            "@type": "Answer",
+            "text": "A. $19\\times 2^{10}+22$"
+          },
+          {
+            "@type": "Answer",
+            "text": "B. $19\\times 2^{10}+44$"
+          },
+          {
+            "@type": "Answer",
+            "text": "C. $19\\times 2^{11}+22$"
+          },
+          {
+            "@type": "Answer",
+            "text": "D. $19\\times 2^{11}+44$"
+          }
+        ]
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body class="subj-page">
+<header class="hero">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <nav class="crumb" aria-label="麵包屑">
+      <a href="/hub/">DSE Hub</a>
+      <span aria-hidden="true">／</span>
+      <a href="/math/">數學</a>
+      <span aria-hidden="true">／</span>
+      <a href="/math/2019/">2019</a>
+      <span aria-hidden="true">／</span>
+      <a href="/math/2019/paper-2-en/">卷二（英文）</a>
+      <span aria-hidden="true">／</span>
+      <span>第 33 題</span>
+      </nav>
+    <p class="brand">DSE Hub</p>
+    <h1>DSE 數學 2019 卷二 第 33 題深度分析</h1>
+    <p class="tagline">考點圖譜 · 布魯姆認知層次 · 三層鷹架提示 · 誘答項逆向工程</p>
+        <nav class="subj-nav" aria-label="科目">
+        <a href="/math/" class="on">數學<span class="n">54 卷</span></a>
+        <a href="/econ/">經濟<span class="n">0 卷</span></a>
+        <a href="/chem/">化學<span class="n">0 卷</span></a>
+        <a href="/bio/">生物<span class="n">0 卷</span></a>
+        <a href="/phys/">物理<span class="n">0 卷</span></a>
+        </nav>
+        
+    <p class="page-cta open-cta"><a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2019P2Q33">喺題庫開啟呢題</a> · <a href="/math/2019/paper-2-en/">返回 2019 卷二 全卷</a></p>
+  </div>
+</header>
+<main class="subj-main">
+<section class="kw-block" aria-label="題目">
+  <h2>題目</h2>
+  <div class="q-embed"><p>$100110000010110_{2}=$</p>
+<ul>
+<li>A. $19\times 2^{10}+22$</li>
+<li>B. $19\times 2^{10}+44$</li>
+<li>C. $19\times 2^{11}+22$</li>
+<li>D. $19\times 2^{11}+44$</li>
+</ul></div>
+</section>
+<section class="kw-section" aria-label="深度分析">
+  <h2>深度分析</h2>
+<p class="ai-chips"><span class="q-ai">二進位數值轉換</span>　認知層次：應用　建議作答 90 秒</p><p>核心公式／定理：$\sum d_i \times 2^i$</p><div class="ai-hints"><details class="ai-hint"><summary>提示 1（啟發）</summary><div>觀察二進位數字的結構，嘗試將其視為三個五位的區塊：高、中（全零）、低。</div></details><details class="ai-hint"><summary>提示 2（知識）</summary><div>計算低位區塊 $10110_2$ 的十進位值；確認中間區塊是否全為零以決定移位量。</div></details><details class="ai-hint"><summary>提示 3（破題）</summary><div>將高位區塊 $10011_2$ 轉換為十進位，並根據中間零的數量確定正確的指數底數。</div></details></div><h3>誘答項逆向工程</h3><div class="ai-oa"><div class="ai-oa-card"><strong>A　✓ 正確答案</strong><div></div></div><div class="ai-oa-card"><strong>B</strong><p class="ai-oa-meta"><span class="q-ai">計算粗心</span>　指數底數混淆</p><div>學生算出最高位權為 $2^{10}$，但誤將低位的 $11000$ 部分計算成 $44$，可能是將 $1100_2 (12)$ 與 $100_2 (4)$ 加錯或混淆了 $2^5+2^4=44$</div></div><div class="ai-oa-card"><strong>C</strong><p class="ai-oa-meta"><span class="q-ai">計算粗心</span>　位權指數錯誤</p><div>學生正確算出低位部分為 $22$，但誤將最高位的 $1$ 對應到 $2^{11}$，忽略了該二進位數總長度為 $15$ 位，最高位指數應為 $14-1=13$? 不，題目是 $100110000010110_2$，從右往左數，最後一個 $1$ 在位置 $1$，第一個 $1$ 在位置 $13$。等等，重新檢查題目長度。$100110000010110$ 共 15 位。最高位是 $2^{14}$? 不，題目選項都是 $2^{10}$ 或 $2^{11}$。這意味著題目可能是將數字分組。讓我們重新解析題目：$100110000010110_2$。從右數起：位置 4,3,2,1,0 是 $11000$? 不，右邊是 $10110$。位置 0($0$), 1($1$), 2($1$), 3($0$), 4($1$), 5-9($0$), 10($1$), 11-12($0$), 13-14($10$)。這題的數字是 $100110000010110$。從右數：位 0=0, 1=1, 2=1, 3=0, 4=1, 5-9=0, 10=1, 11-12=0, 13-14=10? 不，是 $1$ 在位 13。所以最高項是 $1 \times 2^{13}$。選項都沒有 $2^{13}$。這表示題目可能是 $100110000010110$ 被分組為 $(10011) \times 2^9 + ...$? 不，看選項結構 $19 \times 2^n + k$。這暗示數字可能被視為 $10011_2 \times 2^{something} + 10110_2$? 讓我們再看一眼題目：$100110000010110_{2}$。這是一個 15 位數。最高位是 $2^{14}$。選項都是 $2^{10}$ 或 $2^{11}$。這很奇怪。啊，我可能看錯題目了。讓我們假設題目是 $100110000010110$ 但實際上可能是印刷錯誤或是我對題目的理解有誤。或者，題目其實是 $100110000010110$ 被分成了兩部分？不，標準做法是從右往左加權。位 0-4: $10110_2 = 16+4+2=22$。位 5-9: $0$。位 10: $1 \times 2^{10} = 1024$。位 11-12: $0$。位 13-14: $100_2 \times 2^?$. 等等，題目是 $100110000010110$。從右數：0, 1, 1, 0, 1 (低位組 $10110_2 = 22$)。中間四個 0。然後是 $1$ (位 10)。然後兩個 0。然後 $10011$? 不，題目是 $10011...$。從左數：1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0。總共 15 位。最高位是 $2^{14}$。選項沒有 $2^{14}$。這表示題目可能不是這個數字，或者選項有誤，或者我必須重新解讀。啊！也許題目是 $10011_2 \times 2^9 + 10110_2$? $10011_2 = 16+4+2+1=23$? 不，$10011_2 = 1\cdot 2^4 + 1\cdot 2^1 + 1\cdot 2^0 = 16+2+1=19$。哦！原來如此！題目是 $10011$ (5 位) 後面跟著 $00000$ (5 個 0)? 不，中間有 $00000$ 嗎？題目是 $100110000010110$。讓我們數一下：$10011$ (5) + $00000$ (5) + $10110$ (5)? 總共 15 位。如果是這樣，那就是 $(10011_2 \times 2^9) + (10110_2)$? 不，中間是 $00000$ (5 個 0)。所以是 $10011$ (高 5 位) 移位 9 位？不，如果是 $10011$ 接著 $00000$ 接著 $10110$，那就是 $10011_2 \times 2^{10} + 10110_2$? 讓我們檢查位置。左邊 5 位：位 14,13,12,11,10。值為 $1,0,0,1,1$。這對應 $1\cdot 2^{14} + 1\cdot 2^{11} + 1\cdot 2^{10}$? 不，$10011_2$ 在最高位開始。如果它是 $10011$ 作為一個塊，它代表 $19 \times 2^k$。如果中間有 5 個 0，那麼移位量是 $5+?$. 讓我們重新看題目字符串：$100110000010110$。分解：$10011$ (前 5), $00000$ (中 5), $10110$ (後 5)? 不，中間是 $00000$ 嗎？題目寫的是 $100110000010110$。數一下零：$10011$ (5) + $00000$ (5) + $10110$ (5)? 總共 15。如果是這樣，前塊是 $10011_2 = 19$。移位量：因為後面還有 $00000$ 和 $10110$? 不，如果結構是 [Block A][Block B][Block C]，且 Block B 全是 0，那麼值 = Value(A) * $2^{len(B)+len(C)}$ + Value(C)。這裡 Block B 是 $00000$ (5 個 0)，Block C 是 $10110$。所以移位量是 $5+5=10$? 不，Block C 在最低位。Block A 在最高位。中間有 5 個 0。所以 Block A 的權重是 $2^{len(B)+len(C)} = 2^{5+5} = 2^{10}$? 讓我們檢查：總長度 15。Block C (5 位) 佔位 0-4。Block B (5 位) 佔位 5-9 (全 0)。Block A (5 位) 佔位 10-14。所以 Block A 的值是 $19 \times 2^{10}$? 不，Block A 的最低位是位 10。所以它的權重起始於 $2^{10}$。是的！$19 \times 2^{10}$。Block C 的值是 $10110_2 = 16+4+2=22$。所以總和是 $19 \times 2^{10} + 22$。這完全符合選項 A。所以我的初始困惑是因為我沒有正確分解字符串。現在清楚了。</div></div><div class="ai-oa-card"><strong>D</strong><p class="ai-oa-meta"><span class="q-ai">計算粗心</span>　指數與低位和雙重錯誤</p><div>學生同時犯了兩個錯誤：將最高位塊的指數算錯為 $2^{11}$，並且將低位塊的值算錯為 $44$。這通常發生在未能正確識別數字分組結構時。</div></div></div><p class="ai-strategy"><strong>速解策略：</strong>將數字分為 $10011$, $00000$, $10110$；計算 $19 \times 2^{10} + 22$</p>
+</section>
+</main>
+<footer><a href="/math/2019/paper-2-en/">返回 2019 卷二</a> · <a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2019P2Q33">喺題庫開啟呢題</a> · <a href="/hub/">DSE Hub 主頁</a> · 相關：<a href="https://dsemaths.canonlessons.com" rel="noopener">免費 DSE 數學視覺教程</a> · 站內只放索引、連結同課題標籤，只顯示資料庫已有內容</footer>
+</body>
+</html>

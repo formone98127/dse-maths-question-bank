@@ -19,6 +19,10 @@ import json
 import re
 from pathlib import Path
 
+from build_meta import ver
+
+VER = ver()
+
 ROOT = Path(__file__).resolve().parent.parent
 MATH_DIR = ROOT / "docs" / "math"
 SITEMAP = ROOT / "docs" / "sitemap.xml"
@@ -216,7 +220,7 @@ def render_quiz_page(meta, questions):
 <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
-<link rel="stylesheet" href="/hub/style.css?v=20261118quiz">
+<link rel="stylesheet" href="/hub/style.css?v={VER}">
 <script>MathJax = {{tex: {{inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$']]}}}};</script>
 <script src="/mathjax/tex-chtml.js" async></script>
 <style>

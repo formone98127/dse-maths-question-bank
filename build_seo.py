@@ -7,7 +7,7 @@ import html
 import json
 import re
 from collections import defaultdict
-from datetime import date
+from datetime import date, datetime
 from pathlib import Path
 from urllib.parse import quote, urlencode
 
@@ -15,7 +15,8 @@ from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 ROOT = Path(__file__).resolve().parent / "docs"
 SITE = "https://hkdse.exampaper.cloud"
-VER = "20261116ai2"
+# Cache-busting 版本字串：build 時間自動 bump（行為有變都唔會派 7 日舊 asset）。
+VER = datetime.now().strftime("%Y%m%d%H%M")
 TODAY = date.today().isoformat()
 BANK = f"{SITE}/"
 HUB = f"{SITE}/hub/"
@@ -686,13 +687,20 @@ def parse_catalog():
         text,
     )
     catalog = []
+    skipped = 0
     for i, n, y, p, lg, h, path in rows:
+        if i not in SID_TO_SUBJECT:
+            # m1/m2 等科目頁由 scripts/gen_m1_pages.py / gen_m2_pages.py 專責生成，呢個 build 跳過
+            skipped += 1
+            continue
         row = {"id": i, "name": n, "year": int(y), "paper": p, "lang": lg, "hash": h}
         if path:
             row["path"] = path
         catalog.append(row)
     if len(catalog) < 10:
         raise SystemExit(f"catalog parse too small: {len(catalog)}")
+    if skipped:
+        print("catalog skipped (other-subject rows):", skipped)
     return catalog
 
 
@@ -701,16 +709,19 @@ def short_name(name):
 
 
 def year_span(rows):
-    years = sorted({r["year"] for r in rows})
+    years = sorted({str(r["year"]) for r in rows}, key=year_sort_key)
     if not years:
         return ""
-    if len(years) == 1:
-        return str(years[0])
-    if years == list(range(years[0], years[-1] + 1)):
-        return f"{years[0]}–{years[-1]}"
-    if len(years) <= 4:
-        return "、".join(str(y) for y in years)
-    return f"{years[0]}–{years[-1]}"
+    ints = [int(y) for y in years if y.isdigit()]
+    if len(ints) == len(years):
+        if len(years) == 1:
+            return years[0]
+        if ints == list(range(ints[0], ints[-1] + 1)):
+            return f"{ints[0]}–{ints[-1]}"
+        if len(years) <= 4:
+            return "、".join(years)
+        return f"{ints[0]}–{ints[-1]}"
+    return "、".join(years)
 
 
 GA4_ID = "G-LTB27V0RGW"
@@ -724,7 +735,22 @@ GA4_TAG = """<!-- Google tag (gtag.js) -->
 </script>"""
 
 
-def seo_head(title, description, canonical, og_type="website", extra=""):
+def seo_head(
+    title,
+    description,
+    canonical,
+    og_type="website",
+    extra="",
+    lang="zh-Hant-HK",
+    og_locale="zh_HK",
+    alternates=None,
+):
+    # alternates: [(hreflang, url), ...]；無 twin 時只出自身語言宣告，唔出同名 URL 嘅假 pair。
+    if alternates is None:
+        alternates = [(lang, canonical)]
+    alt_html = "\n".join(
+        f'<link rel="alternate" hreflang="{esc(hl)}" href="{esc(u)}">' for hl, u in alternates
+    )
     return f"""<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{esc(title)}</title>
@@ -734,11 +760,10 @@ def seo_head(title, description, canonical, og_type="website", extra=""):
 <meta name="googlebot" content="index, follow">
 <meta name="author" content="DSE Hub">
 <link rel="canonical" href="{esc(canonical)}">
-<link rel="alternate" hreflang="zh-Hant-HK" href="{esc(canonical)}">
-<link rel="alternate" hreflang="x-default" href="{esc(canonical)}">
+{alt_html}
 <meta property="og:type" content="{esc(og_type)}">
 <meta property="og:site_name" content="DSE Hub">
-<meta property="og:locale" content="zh_HK">
+<meta property="og:locale" content="{esc(og_locale)}">
 <meta property="og:title" content="{esc(title)}">
 <meta property="og:description" content="{esc(description)}">
 <meta property="og:url" content="{esc(canonical)}">
@@ -919,6 +944,9 @@ def make_og():
 
 
 def make_htaccess():
+    # 呢個函數係 .htaccess 嘅單一來源。同 disk 上手改版保持同步：
+    # - 短 cache（HTML 60s、css/js 5min）壓住 Hostinger CDN 預設
+    # - 唔再有 /math/<年>/<卷>/ → reader fragment 301（深度分析頁係正式 indexable 頁面）
     (ROOT / ".htaccess").write_text(
         """# DSE Hub — HTTPS, apex host, static defaults
 DirectoryIndex index.html
@@ -939,14 +967,30 @@ Options -Indexes
 
 <IfModule mod_expires.c>
   ExpiresActive On
-  ExpiresByType text/html "access plus 1 hour"
-  ExpiresByType text/css "access plus 7 days"
-  ExpiresByType application/javascript "access plus 7 days"
+  # 改完要即刻見到：頁面 60 秒、程式／樣式 5 分鐘
+  ExpiresByType text/html "access plus 1 minutes"
+  ExpiresByType text/css "access plus 5 minutes"
+  ExpiresByType application/javascript "access plus 5 minutes"
+  ExpiresByType application/manifest+json "access plus 5 minutes"
+  # 內容唔會原地改的資產：長快取
   ExpiresByType image/png "access plus 30 days"
   ExpiresByType image/jpeg "access plus 30 days"
+  ExpiresByType image/webp "access plus 30 days"
   ExpiresByType image/svg+xml "access plus 30 days"
   ExpiresByType application/pdf "access plus 30 days"
-  ExpiresByType application/manifest+json "access plus 7 days"
+</IfModule>
+
+<IfModule mod_headers.c>
+  # mod_expires 只出 Expires；Cache-Control 亦要短，先至壓得住 Hostinger CDN 的 1 小時預設
+  <FilesMatch "\\.(html|htm)$">
+    Header set Cache-Control "public, max-age=60, must-revalidate"
+  </FilesMatch>
+  <FilesMatch "\\.(css|js|json)$">
+    Header set Cache-Control "public, max-age=300, must-revalidate"
+  </FilesMatch>
+  <FilesMatch "sw\\.js$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
 </IfModule>
 
 <IfModule mod_deflate.c>
@@ -958,12 +1002,18 @@ Options -Indexes
 
 
 def make_robots():
+    # 列出 disk 上實際存在嘅 sitemap*.xml，同 sanity_check 嘅「robots ↔ 檔案一致」互相鎖住。
+    sm_lines = "\n".join(
+        f"Sitemap: {SITE}/{p.name}"
+        for p in sorted(ROOT.glob("sitemap*.xml"))
+    )
     (ROOT / "robots.txt").write_text(
         f"""User-agent: *
 Allow: /
 Disallow: /mathjax/
+Disallow: /papers/
 
-Sitemap: {SITE}/sitemap.xml
+{sm_lines}
 """,
         encoding="utf-8",
     )
@@ -987,6 +1037,12 @@ def make_sitemap():
             if loc not in seen:
                 seen.add(loc)
                 urls.append((loc, "0.6", "monthly"))
+    # topics/ 課題索引頁（gen_topics_index.py 生成）係 indexable 內容，自動收錄
+    for p in sorted((ROOT / "topics").glob("*/index.html")) if (ROOT / "topics").is_dir() else []:
+        loc = f"{SITE}/topics/{p.parent.name}/"
+        if loc not in seen:
+            seen.add(loc)
+            urls.append((loc, "0.6", "monthly"))
     # 保留呢個 build 唔會重新產生嘅舊條目（非數學科 notice 頁、bafs/chi 等手維護內容頁）：
     # 檔案仍存在先保留，死鏈自然淘汰。
     sm_path = ROOT / "sitemap.xml"
@@ -1003,8 +1059,11 @@ def make_sitemap():
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
     ]
     for loc, pri, freq in urls:
+        # lastmod 跟輸出檔實際 mtime（呢個 build 無重寫嘅舊頁保留真實日期，唔再派 stale 日期）
+        fp = sitemap_local_path(loc)
+        lastmod = date.fromtimestamp(fp.stat().st_mtime).isoformat() if fp.is_file() else TODAY
         parts.append(
-            f"  <url>\n    <loc>{esc(loc)}</loc>\n    <lastmod>{TODAY}</lastmod>\n    <changefreq>{freq}</changefreq>\n    <priority>{pri}</priority>\n  </url>"
+            f"  <url>\n    <loc>{esc(loc)}</loc>\n    <lastmod>{lastmod}</lastmod>\n    <changefreq>{freq}</changefreq>\n    <priority>{pri}</priority>\n  </url>"
         )
     parts.append("</urlset>\n")
     (ROOT / "sitemap.xml").write_text("\n".join(parts), encoding="utf-8")
@@ -1014,7 +1073,7 @@ def make_sitemap():
 def sort_rows(rows):
     return sorted(
         rows,
-        key=lambda r: (-r["year"], r["lang"], r["name"], r["paper"]),
+        key=lambda r: (-year_sort_key(r["year"]), str(r["lang"]), r["name"], r["paper"]),
     )
 
 
@@ -1181,7 +1240,7 @@ def make_subject_pages(catalog, papers):
         span = year_span(rows)
         groups = defaultdict(list)
         for r in rows:
-            groups[r["year"]].append(r)
+            groups[str(r["year"])].append(r)
         years = sorted(groups, reverse=True)
         year_pills = nav_pills(
             [(year_path(s["id"], y), str(y), y) for y in years],
@@ -1692,6 +1751,17 @@ def patch_root_index():
     path = ROOT / "index.html"
     text = path.read_text(encoding="utf-8")
     text = text.replace('<html lang="zh-Hant">', '<html lang="zh-Hant-HK">', 1)
+    # 根頁 canonical/og:url 統一指去域名根（唔好 og:url 指去 /hub/ 造成 canonical 訊號打架）
+    root_url = f"{SITE}/"
+    text = text.replace(f'<link rel="canonical" href="{HUB}"', f'<link rel="canonical" href="{root_url}"')
+    text = text.replace(f'<meta property="og:url" content="{HUB}">', f'<meta property="og:url" content="{root_url}">')
+    text = text.replace(f'<link rel="alternate" hreflang="zh-Hant-HK" href="{HUB}">', f'<link rel="alternate" hreflang="zh-Hant-HK" href="{root_url}">')
+    text = text.replace(f'<link rel="alternate" hreflang="x-default" href="{HUB}">', f'<link rel="alternate" hreflang="x-default" href="{root_url}">')
+    # 放開 pinch-zoom（a11y）
+    text = text.replace(
+        '<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">',
+        '<meta name="viewport" content="width=device-width, initial-scale=1">',
+    )
     if f'rel="canonical" href="{HUB}"' in text:
         text, added = ensure_root_ga4(text)
         if added:
@@ -1702,9 +1772,8 @@ def patch_root_index():
         return
     old_title = "<title>DSE 題庫 · 數學 · 經濟 · 理科</title>"
     new_title = f"<title>{esc(HUB_TITLE)}</title>"
-    if old_title not in text:
-        raise SystemExit("root title not found")
-    text = text.replace(old_title, new_title, 1)
+    if old_title in text:
+        text = text.replace(old_title, new_title, 1)
     old_desc = '<meta name="description" content="DSE 數學、經濟、化學、生物、物理歷屆試題，按課題集中溫習。">'
     inject = f'''<meta name="description" content="{esc(HUB_DESC)}">
 <link rel="canonical" href="{HUB}">
@@ -1725,7 +1794,11 @@ def patch_root_index():
 <meta name="twitter:description" content="{esc(HUB_DESC)}">
 <meta name="twitter:image" content="{OG}">'''
     if old_desc not in text:
-        raise SystemExit("root description not found")
+        # 已 patch 過嘅 root（canonical 已指根）會行呢度，唔使再 inject
+        text, added = ensure_root_ga4(text)
+        path.write_text(text, encoding="utf-8")
+        print("root index already patched (canonical=root)")
+        return
     text = text.replace(old_desc, inject, 1)
     noscript = '<noscript><p><a href="/hub/">開啟 DSE 歷屆試題資料庫（DSE Hub）</a>。本站亦有 <a href="/math/">數學</a>、<a href="/econ/">經濟</a>、<a href="/chem/">化學</a>、<a href="/bio/">生物</a>、<a href="/phys/">物理</a> 科目頁。</p></noscript>\n'
     if "<noscript>" not in text:
@@ -1785,7 +1858,7 @@ def load_analyses():
             continue
         qq = data.get("question") or {}
         try:
-            key = (qq["subject"], int(qq["year"]), paper_code_of(qq["paper"]), int(qq["qno"]))
+            key = (qq["subject"], str(qq["year"]), paper_code_of(qq["paper"]), int(qq["qno"]))
         except (KeyError, ValueError):
             print("analysis json bad question meta", fp)
             continue
@@ -1798,6 +1871,18 @@ def load_analyses():
 def paper_no(paper):
     m = re.search(r"(\d+[A-Za-z]?)", str(paper or ""))
     return m.group(1).upper() if m else "1"
+
+
+def q_year(q):
+    """data.js year 而家有 str／int 仲有 'PP'/'SP'（練習／樣本卷），統一 normalize 做 str。"""
+    y = q.get("year")
+    return "" if y is None else str(y)
+
+
+def year_sort_key(y):
+    """數字年份做 int（由新到舊排）；PP/SP 排最尾。"""
+    s = str(y)
+    return int(s) if s.isdigit() else 0
 
 
 def hash_for_question(q):
@@ -1822,7 +1907,7 @@ def hub_topic_path(sid, topic=None):
 def sort_questions(rows):
     return sorted(
         rows,
-        key=lambda q: (-int(q["year"]), paper_no(q.get("paper")), int(q.get("qno") or 0)),
+        key=lambda q: (-year_sort_key(q["year"]), paper_no(q.get("paper")), int(q.get("qno") or 0)),
     )
 
 
@@ -2019,7 +2104,7 @@ def q_list_html(rows, topic=None, analyses=None, paper_path=None):
         href = question_href(q, topic)
         akey = None
         if analyses is not None:
-            akey = (q.get("subject"), int(q.get("year", 0)), paper_code_of(q.get("paper")), int(q.get("qno", -1)))
+            akey = (q.get("subject"), q_year(q), paper_code_of(q.get("paper")), int(q.get("qno", -1)))
         if analyses and akey in analyses and paper_path and not topic:
             href = f"{paper_path}q{q['qno']}/"
             badge = '<span class="q-ai">AI 分析</span>'
@@ -2076,7 +2161,7 @@ def collect_papers(catalog, questions):
             continue
         code = paper_code_of(q.get("paper"))
         lang = infer_lang(q.get("file") or "")
-        key = (sid, int(q["year"]), code, lang)
+        key = (sid, str(q["year"]), code, lang)
         q_index.setdefault(key, []).append(q)
 
     papers = []
@@ -2085,13 +2170,13 @@ def collect_papers(catalog, questions):
         sid = r["id"]
         code = paper_code_of(r["paper"])
         lang = r["lang"]
-        key = (sid, r["year"], code, lang)
+        key = (sid, str(r["year"]), code, lang)
         qs = sort_questions(q_index.get(key, []))
         if not qs:
             alts = [
                 (lg, rows)
                 for (s, y, c, lg), rows in q_index.items()
-                if s == sid and y == r["year"] and c == code
+                if s == sid and y == str(r["year"]) and c == code
             ]
             # If the catalog language does not match the only bank language
             # (e.g. 2012/2013 卷二 marked 中文 but files are 英文卷), prefer the bank language
@@ -2104,7 +2189,7 @@ def collect_papers(catalog, questions):
             {
                 "id": sid,
                 "name": r["name"],
-                "year": r["year"],
+                "year": str(r["year"]),
                 "paper": r["paper"] if r["paper"] in PAPER_ZH.values() else paper_zh_label(r["paper"]),
                 "paper_code": code,
                 "lang": lang,
@@ -2115,7 +2200,7 @@ def collect_papers(catalog, questions):
                 "n_questions": len(qs),
             }
         )
-        seen.add((sid, r["year"], code, lang))
+        seen.add((sid, str(r["year"]), code, lang))
 
     # Bank-only papers (e.g. math 2014 Paper 2, chem 2025)
     default_name = {s["id"]: s["name"] for s in SUBJECTS}
@@ -2143,7 +2228,7 @@ def collect_papers(catalog, questions):
             }
         )
         seen.add((sid, year, code, lang))
-    papers.sort(key=lambda r: (r["id"], -r["year"], r["paper_code"], r["lang"]))
+    papers.sort(key=lambda r: (r["id"], -year_sort_key(r["year"]), r["paper_code"], r["lang"]))
     return papers
 
 
@@ -2253,7 +2338,7 @@ def make_strand_pages(catalog, questions, topics):
             f"{len(matched_qs)} 個課題標籤"
         )
         tagline += f"，另有 {unmatched} 個課題暫時未有對應題目。" if unmatched else "。"
-        strand_years = sorted({int(q["year"]) for q in union}, reverse=True)
+        strand_years = sorted({q_year(q) for q in union}, key=year_sort_key, reverse=True)
         year_nav = (
             nav_pills(
                 [(year_path(st["subject_id"], y), str(y), y) for y in strand_years],
@@ -2438,7 +2523,7 @@ def related_papers_for_years(papers, sid, years, limit=12):
         for p in papers
         if p["id"] == sid and p["year"] in year_set
     ]
-    rows = sorted(rows, key=lambda r: (-r["year"], r["paper_code"], r["lang"]))
+    rows = sorted(rows, key=lambda r: (-year_sort_key(r["year"]), r["paper_code"], r["lang"]))
     items = [
         (p["path"], f"{p['year']} {p['paper']}（{p['lang']}）", p["path"])
         for p in rows[:limit]
@@ -2453,12 +2538,23 @@ def related_papers_for_years(papers, sid, years, limit=12):
     )
 
 
-def write_landing(path, title, description, canonical, graph, body_inner, footer_extra=""):
+def write_landing(
+    path,
+    title,
+    description,
+    canonical,
+    graph,
+    body_inner,
+    footer_extra="",
+    lang="zh-Hant-HK",
+    og_locale="zh_HK",
+    alternates=None,
+):
     page = (
         "<!DOCTYPE html>\n"
-        '<html lang="zh-Hant-HK">\n'
+        f'<html lang="{esc(lang)}">\n'
         "<head>\n"
-        f"{seo_head(title, description, canonical)}\n"
+        f"{seo_head(title, description, canonical, lang=lang, og_locale=og_locale, alternates=alternates)}\n"
         f"{ld_json(graph)}\n"
         "</head>\n"
         '<body class="subj-page">\n'
@@ -2499,21 +2595,21 @@ def hero_html(crumbs, h1, tagline, catalog, sid, extra_nav="", cta=""):
 def make_year_pages(catalog, papers, questions):
     by = defaultdict(list)
     for p in papers:
-        by[(p["id"], p["year"])].append(p)
+        by[(p["id"], str(p["year"]))].append(p)
     # Also include years that only appear in the question bank
     for q in questions:
         sid = SUBJECT_TO_SID.get(q.get("subject"))
         if sid:
-            by.setdefault((sid, int(q["year"])), [])
+            by.setdefault((sid, str(q["year"])), [])
     count = 0
-    for (sid, year), rows in sorted(by.items(), key=lambda x: (x[0][0], -x[0][1])):
+    for (sid, year), rows in sorted(by.items(), key=lambda x: (x[0][0], -year_sort_key(x[0][1]))):
         rows = sort_rows(rows)
         s = subject_meta(sid)
         # questions that year
         yqs = [
             q
             for q in questions
-            if q.get("subject") == SID_TO_SUBJECT[sid] and int(q["year"]) == year
+            if q.get("subject") == SID_TO_SUBJECT[sid] and str(q["year"]) == str(year)
         ]
         if not rows and not yqs:
             continue
@@ -2825,12 +2921,12 @@ def make_question_pages(catalog, papers, questions, analyses):
         return 0
     by_paper = defaultdict(list)
     for r in papers:
-        by_paper[(r["id"], int(r["year"]), r["paper_code"])].append(r)
+        by_paper[(r["id"], str(r["year"]), r["paper_code"])].append(r)
     count = 0
     written = set()
     for q in sort_questions(questions):
         try:
-            akey = (q.get("subject"), int(q.get("year", 0)), paper_code_of(q.get("paper")), int(q.get("qno", -1)))
+            akey = (q.get("subject"), q_year(q), paper_code_of(q.get("paper")), int(q.get("qno", -1)))
         except ValueError:
             continue
         analysis = analyses.get(akey)
@@ -2840,7 +2936,7 @@ def make_question_pages(catalog, papers, questions, analyses):
         if not sid:
             continue
         code = paper_code_of(q.get("paper"))
-        rows = by_paper.get((sid, int(q["year"]), code)) or []
+        rows = by_paper.get((sid, q_year(q), code)) or []
         if not rows:
             print("question page skipped (no paper row)", akey)
             continue
@@ -2867,7 +2963,7 @@ def make_question_pages(catalog, papers, questions, analyses):
         crumbs = [
             ("/hub/", "DSE Hub"),
             (f"/{sid}/", s["short"]),
-            (year_path(sid, int(q["year"])), str(q["year"])),
+            (year_path(sid, q_year(q)), q_year(q)),
             (r["path"], f"{r['paper']}（{r['lang']}）"),
             (None, f"第 {q['qno']} 題"),
         ]
@@ -2905,7 +3001,7 @@ def make_question_pages(catalog, papers, questions, analyses):
                     [
                         ("/hub/", "DSE Hub"),
                         (f"/{sid}/", s["short"]),
-                        (year_path(sid, int(q["year"])), str(q["year"])),
+                        (year_path(sid, q_year(q)), q_year(q)),
                         (SITE + r["path"], f"{r['paper']}（{r['lang']}）"),
                         (url, f"第 {q['qno']} 題"),
                     ]
@@ -2968,7 +3064,7 @@ def make_topic_pages(catalog, questions, papers):
             continue
         path = topic_path(sid, tp["slug"])
         url = SITE + path
-        years = sorted({int(q["year"]) for q in rows})
+        years = sorted({q_year(q) for q in rows}, key=year_sort_key)
         span = f"{years[0]}" if len(years) == 1 else f"{years[0]}–{years[-1]}"
         title = tp["title"]
         desc = tp["description"]
@@ -2983,7 +3079,7 @@ def make_topic_pages(catalog, questions, papers):
             f' · <a href="/{sid}/">返回{esc(s["short"])}科目頁</a>'
             f' · <a href="/hub/?subject={sid}&amp;mode=year">按年份睇卷</a></p>'
         )
-        year_list = sorted({int(q["year"]) for q in rows}, reverse=True)
+        year_list = sorted({q_year(q) for q in rows}, key=year_sort_key, reverse=True)
         year_hits = nav_pills(
             [(year_path(sid, y), str(y), y) for y in year_list],
             label="年份",
@@ -3154,19 +3250,49 @@ def sanity_check():
         raise SystemExit("sitemap includes pdf")
     # Every local landing index.html (except site root) should be in the sitemap.
     # 非數學科已落線：notice 頁由人工維護、唔喺呢個 build 嘅 sitemap 入面，跳過。
+    # questions/（sitemap-questions.xml 管）、m1/、m2/、download/ 等（專責腳本管）唔要求入呢個 sitemap。
+    OWNED_PREFIXES = ("math/", "topics/", "hub/")
     OFFLINE_PREFIXES = ("chem/", "econ/", "bio/", "phys/")
     expected = set()
     for p in ROOT.rglob("index.html"):
-        if "mathjax" in p.as_posix():
-            continue
         rel = p.relative_to(ROOT).as_posix()
+        if "mathjax" in rel:
+            continue
         if rel == "index.html" or rel.startswith(OFFLINE_PREFIXES):
+            continue
+        if not rel.startswith(OWNED_PREFIXES):
             continue
         expected.add(f"{SITE}/{p.parent.relative_to(ROOT).as_posix()}/".replace("\\", "/"))
     locs = set(re.findall(r"<loc>(.*?)</loc>", sm))
     missing_pages = sorted(expected - locs)
     if missing_pages:
         raise SystemExit(f"sitemap missing pages: {missing_pages[:10]}")
+    # Canonical／og:url 唔准有 fragment（#）— fragment 會令成層頁面被當首頁重複
+    frag_bad = []
+    for prefix in ("math/", "questions/", "m1/", "m2/", "topics/"):
+        for p in (ROOT / prefix).rglob("index.html"):
+            t = p.read_text(encoding="utf-8", errors="replace")
+            for m in re.finditer(r'(?:rel="canonical" href|property="og:url" content)="([^"]+)"', t):
+                if "#" in m.group(1):
+                    frag_bad.append((p.as_posix(), m.group(1)))
+    if frag_bad:
+        raise SystemExit(f"canonical/og:url contains fragment: {frag_bad[:5]}")
+    # 深度分析頁 canonical 必須 = SITE + 自身路徑
+    for p in (ROOT / "math").rglob("index.html"):
+        rel = p.relative_to(ROOT).as_posix().replace("\\", "/")
+        if not re.search(r"/q[0-9]+/index\.html$", rel):
+            continue
+        t = p.read_text(encoding="utf-8", errors="replace")
+        want = f'{SITE}/{rel[: -len("index.html")]}'
+        if f'<link rel="canonical" href="{want}">' not in t:
+            m = re.search(r'rel="canonical" href="([^"]+)"', t)
+            raise SystemExit(f"q-page canonical wrong: {rel} -> {m.group(1) if m else None!r} (want {want})")
+    # robots.txt 列嘅 sitemap 同 disk 上實際檔案一致
+    robots_txt = (ROOT / "robots.txt").read_text(encoding="utf-8")
+    robots_sms = set(re.findall(r"^Sitemap:\s*\S+/(\S+)$", robots_txt, re.M))
+    disk_sms = {p.name for p in ROOT.glob("sitemap*.xml")}
+    if robots_sms != disk_sms:
+        raise SystemExit(f"robots sitemap list {sorted(robots_sms)} != disk {sorted(disk_sms)}")
     print("sanity check ok", "sitemap urls", len(locs), "local landings", len(expected))
 
 

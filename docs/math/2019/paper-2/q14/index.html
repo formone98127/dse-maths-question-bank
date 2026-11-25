@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-HK">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DSE 數學 2019 卷二 第 14 題深度分析｜DSE Hub</title>
+<meta name="description" content="DSE 數學 2019 卷二 第 14 題深度解析：考點「等差數列」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
+<meta name="keywords" content="DSE, 香港中學文憑, 歷屆試題, past paper, DSE 數學, DSE 經濟, DSE 化學, DSE 生物, DSE 物理, 免費題庫, 按課題">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="googlebot" content="index, follow">
+<meta name="author" content="DSE Hub">
+<link rel="canonical" href="https://hkdse.exampaper.cloud/math/2019/paper-2/q14/">
+<link rel="alternate" hreflang="zh-Hant-HK" href="https://hkdse.exampaper.cloud/math/2019/paper-2/q14/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DSE Hub">
+<meta property="og:locale" content="zh_HK">
+<meta property="og:title" content="DSE 數學 2019 卷二 第 14 題深度分析｜DSE Hub">
+<meta property="og:description" content="DSE 數學 2019 卷二 第 14 題深度解析：考點「等差數列」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
+<meta property="og:url" content="https://hkdse.exampaper.cloud/math/2019/paper-2/q14/">
+<meta property="og:image" content="https://hkdse.exampaper.cloud/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="DSE Hub 香港中學文憑歷屆試題資料庫">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="DSE 數學 2019 卷二 第 14 題深度分析｜DSE Hub">
+<meta name="twitter:description" content="DSE 數學 2019 卷二 第 14 題深度解析：考點「等差數列」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
+<meta name="twitter:image" content="https://hkdse.exampaper.cloud/og-image.png">
+<meta name="theme-color" content="#0b1220">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="DSE Hub">
+<meta name="application-name" content="DSE Hub">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/hub/style.css?v=202611252320">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LTB27V0RGW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-LTB27V0RGW');
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "DSE Hub",
+          "item": "https://hkdse.exampaper.cloud/hub/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "數學",
+          "item": "https://hkdse.exampaper.cloud/math/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "2019",
+          "item": "https://hkdse.exampaper.cloud/math/2019/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "卷二（中文）",
+          "item": "https://hkdse.exampaper.cloud/math/2019/paper-2/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "第 14 題",
+          "item": "https://hkdse.exampaper.cloud/math/2019/paper-2/q14/"
+        }
+      ]
+    },
+    {
+      "@type": "QAPage",
+      "mainEntity": {
+        "@type": "Question",
+        "name": "DSE 數學 2019 卷二 第 14 題",
+        "text": "圖中，第 1 個圖案包含 6 粒點子。對任意正整數 $n$ ，第 $(n+1)$ 個圖案是由第 $n$ 個圖案加上 4 粒點子所組成。求第 9 個圖案的點子數目。 ![Figure Q14 (as printed)](2019P2_zh_figs/Q14.png) - A. 30 - B. 34 - C. 38 - D. 42",
+        "answerCount": 4,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "C. 38。速解策略：利用等差數列公式，首項為 6，公差為 4，代入 n=9 計算即可。"
+        },
+        "suggestedAnswer": [
+          {
+            "@type": "Answer",
+            "text": "A. 30"
+          },
+          {
+            "@type": "Answer",
+            "text": "B. 34"
+          },
+          {
+            "@type": "Answer",
+            "text": "C. 38"
+          },
+          {
+            "@type": "Answer",
+            "text": "D. 42"
+          }
+        ]
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body class="subj-page">
+<header class="hero">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <nav class="crumb" aria-label="麵包屑">
+      <a href="/hub/">DSE Hub</a>
+      <span aria-hidden="true">／</span>
+      <a href="/math/">數學</a>
+      <span aria-hidden="true">／</span>
+      <a href="/math/2019/">2019</a>
+      <span aria-hidden="true">／</span>
+      <a href="/math/2019/paper-2/">卷二（中文）</a>
+      <span aria-hidden="true">／</span>
+      <span>第 14 題</span>
+      </nav>
+    <p class="brand">DSE Hub</p>
+    <h1>DSE 數學 2019 卷二 第 14 題深度分析</h1>
+    <p class="tagline">考點圖譜 · 布魯姆認知層次 · 三層鷹架提示 · 誘答項逆向工程</p>
+        <nav class="subj-nav" aria-label="科目">
+        <a href="/math/" class="on">數學<span class="n">54 卷</span></a>
+        <a href="/econ/">經濟<span class="n">0 卷</span></a>
+        <a href="/chem/">化學<span class="n">0 卷</span></a>
+        <a href="/bio/">生物<span class="n">0 卷</span></a>
+        <a href="/phys/">物理<span class="n">0 卷</span></a>
+        </nav>
+        
+    <p class="page-cta open-cta"><a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2019P2Q14">喺題庫開啟呢題</a> · <a href="/math/2019/paper-2/">返回 2019 卷二 全卷</a></p>
+  </div>
+</header>
+<main class="subj-main">
+<section class="kw-block" aria-label="題目">
+  <h2>題目</h2>
+  <div class="q-embed"><p>圖中，第 1 個圖案包含 6 粒點子。對任意正整數 $n$ ，第 $(n+1)$ 個圖案是由第 $n$ 個圖案加上 4 粒點子所組成。求第 9 個圖案的點子數目。</p>
+<p><img alt="Figure Q14 (as printed)" src="/2019P2_zh_figs/Q14.png" /></p>
+<ul>
+<li>A. 30</li>
+<li>B. 34</li>
+<li>C. 38</li>
+<li>D. 42</li>
+</ul></div>
+</section>
+<section class="kw-section" aria-label="深度分析">
+  <h2>深度分析</h2>
+<p class="ai-chips"><span class="q-ai">等差數列</span>　認知層次：應用　建議作答 45 秒</p><p>核心公式／定理：a_n = a_1 + (n-1)d</p><div class="ai-hints"><details class="ai-hint"><summary>提示 1（啟發）</summary><div>觀察題目描述：每個新圖案比前一個多 4 粒點子，這代表什麼數學結構？</div></details><details class="ai-hint"><summary>提示 2（知識）</summary><div>確認首項 a_1 = 6，公差 d = 4，並注意題目要求的是第 9 個圖案的數值。</div></details><details class="ai-hint"><summary>提示 3（破題）</summary><div>使用等差數列通項公式 a_n = a_1 + (n-1)d 代入 n=9 進行計算。</div></details></div><h3>誘答項逆向工程</h3><div class="ai-oa"><div class="ai-oa-card"><strong>A</strong><p class="ai-oa-meta"><span class="q-ai">計算粗心</span>　公差誤算</p><div>學生可能將首項 6 當作第 9 項，或計算 n=8 時得到 30，混淆了 n 的定義。</div></div><div class="ai-oa-card"><strong>B</strong><p class="ai-oa-meta"><span class="q-ai">策略錯誤</span>　公差取值錯誤</p><div>學生可能誤以為每次增加 3 粒點子，或計算時少加一次公差。</div></div><div class="ai-oa-card"><strong>C　✓ 正確答案</strong><div></div></div><div class="ai-oa-card"><strong>D</strong><p class="ai-oa-meta"><span class="q-ai">計算粗心</span>　項數偏移</p><div>學生可能計算到第 10 個圖案的點子數，或將 n=9 代入時多加了一次公差。</div></div></div><p class="ai-strategy"><strong>速解策略：</strong>利用等差數列公式，首項為 6，公差為 4，代入 n=9 計算即可。</p>
+</section>
+</main>
+<footer><a href="/math/2019/paper-2/">返回 2019 卷二</a> · <a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2019P2Q14">喺題庫開啟呢題</a> · <a href="/hub/">DSE Hub 主頁</a> · 相關：<a href="https://dsemaths.canonlessons.com" rel="noopener">免費 DSE 數學視覺教程</a> · 站內只放索引、連結同課題標籤，只顯示資料庫已有內容</footer>
+</body>
+</html>

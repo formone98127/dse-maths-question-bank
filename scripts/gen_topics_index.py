@@ -8,6 +8,10 @@
 from __future__ import annotations
 import re, glob, os, sys, json, html as H
 
+from build_meta import ver
+
+VER = ver()
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TDIR = os.path.join(ROOT, "docs", "topics")
 OUT = os.path.join(TDIR, "index.html")
@@ -50,7 +54,7 @@ def build(rows):
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="theme-color" content="#0b1220">
 <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
-<link rel="stylesheet" href="/hub/style.css?v=202611201600">
+<link rel="stylesheet" href="/hub/style.css?v={VER}">
 <script type="application/ld+json">{{"@context":"https://schema.org","@type":"CollectionPage","name":"{title}","url":"https://hkdse.exampaper.cloud/topics/","inLanguage":"zh-Hant-HK","mainEntity":{{"@type":"ItemList","numberOfItems":{n},"itemListElement":[{items}]}}}}</script>
 <style>
 .main{{max-width:760px;margin:0 auto;padding:18px 16px 40px;color:var(--ink,#fff)}}

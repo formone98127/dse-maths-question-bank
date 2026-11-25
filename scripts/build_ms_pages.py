@@ -15,6 +15,10 @@ import json
 import re
 from pathlib import Path
 
+from build_meta import ver
+
+VER = ver()
+
 ROOT = Path(__file__).resolve().parent.parent
 MS_DIR = ROOT / "docs" / "ms"
 SITEMAP = ROOT / "docs" / "sitemap.xml"
@@ -164,7 +168,7 @@ def render_page(p, all_pages):
 <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
-<link rel="stylesheet" href="/hub/style.css?v=20261118ms">
+<link rel="stylesheet" href="/hub/style.css?v={VER}">
 <style>
 .ms-grid {{ display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:14px; }}
 .ms-fig {{ background:var(--card); border:1px solid var(--hair); border-radius:var(--radius); overflow:hidden; }}
@@ -284,7 +288,7 @@ def render_hub(all_pages):
 <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
-<link rel="stylesheet" href="/hub/style.css?v=20261118ms">
+<link rel="stylesheet" href="/hub/style.css?v={VER}">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id={GTAG_ID}"></script>
 <script>

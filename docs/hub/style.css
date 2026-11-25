@@ -824,3 +824,30 @@ footer {
 .topic-guide p:last-child {
   margin-bottom: 0;
 }
+.share-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin: 14px 0 4px;
+}
+.share-row a,
+.share-row button {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 13.5px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+}
+.share-row a:hover,
+.share-row button:hover {
+  border-color: rgba(61, 139, 253, 0.55);
+  background: var(--acc-soft);
+}

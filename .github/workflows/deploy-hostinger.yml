@@ -101,6 +101,50 @@ jobs:
           done < /tmp/delete.txt
           if [ "$bad" -gt 0 ] && [ "$bad" -eq "$(grep -c . /tmp/upload.txt)" ]; then exit 1; fi
 
+      - name: IndexNow ping (Bing / Yandex / Seznam)
+        # 令新／改動頁即時俾 Bing 知（Bing 餵 Yahoo＋多個 AI 搜尋後端）。
+        # key 檔：docs/a350d59d58614ea05169244e63108890.txt（轉咗 key 要同步改）
+        env:
+          KEY: a350d59d58614ea05169244e63108890
+          SITE: https://hkdse.exampaper.cloud
+        run: |
+          python3 - <<'PY'
+          import json, os, urllib.request
+
+          key = os.environ["KEY"]; site = os.environ["SITE"]
+          urls = []
+          with open("/tmp/upload.txt", encoding="utf-8") as f:
+              for r in f:
+                  r = r.strip()
+                  if not r:
+                      continue
+                  # 淨係 ping HTML 頁（index.html → 目錄 URL）
+                  if r.endswith("index.html"):
+                      urls.append(site + "/" + r[: -len("index.html")])
+          urls = sorted(set(urls))[:10000]
+          if not urls:
+              print("no URLs to ping")
+              raise SystemExit(0)
+          body = json.dumps({
+              "host": "hkdse.exampaper.cloud",
+              "key": key,
+              "keyLocation": f"{site}/{key}.txt",
+              "urlList": urls,
+          }).encode("utf-8")
+          req = urllib.request.Request(
+              "https://api.indexnow.org/indexnow",
+              data=body,
+              headers={"Content-Type": "application/json; charset=utf-8"},
+              method="POST",
+          )
+          try:
+              with urllib.request.urlopen(req, timeout=30) as r:
+                  print("IndexNow", r.status, f"({len(urls)} urls)")
+          except Exception as e:
+              # IndexNow 失敗唔應該 fail deploy
+              print("IndexNow ping failed (non-fatal):", e)
+          PY
+
       - name: Verify the live site serves this commit
         env:
           SHA: ${{ github.sha }}

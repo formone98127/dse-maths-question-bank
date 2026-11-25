@@ -16,6 +16,12 @@
 /sw.js
   Cache-Control: no-cache
 
+/js/*
+  Cache-Control: public, max-age=300, must-revalidate
+
+/feed.xml
+  Cache-Control: public, max-age=60, must-revalidate
+
 /manifest.webmanifest
   Cache-Control: public, max-age=300
 

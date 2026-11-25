@@ -773,6 +773,7 @@ def seo_head(
     lang="zh-Hant-HK",
     og_locale="zh_HK",
     alternates=None,
+    og_image=None,
 ):
     # alternates: [(hreflang, url), ...]；無 twin 時只出自身語言宣告，唔出同名 URL 嘅假 pair。
     if alternates is None:
@@ -780,6 +781,7 @@ def seo_head(
     alt_html = "\n".join(
         f'<link rel="alternate" hreflang="{esc(hl)}" href="{esc(u)}">' for hl, u in alternates
     )
+    og_img = og_image or OG
     return f"""<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{esc(title)}</title>
@@ -796,14 +798,14 @@ def seo_head(
 <meta property="og:title" content="{esc(title)}">
 <meta property="og:description" content="{esc(description)}">
 <meta property="og:url" content="{esc(canonical)}">
-<meta property="og:image" content="{esc(OG)}">
+<meta property="og:image" content="{esc(og_img)}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="DSE Hub 香港中學文憑歷屆試題資料庫">
+<meta property="og:image:alt" content="{esc(title)}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{esc(title)}">
 <meta name="twitter:description" content="{esc(description)}">
-<meta name="twitter:image" content="{esc(OG)}">
+<meta name="twitter:image" content="{esc(og_img)}">
 <meta name="theme-color" content="#0b1220">
 <link rel="manifest" href="/manifest.webmanifest">
 <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
@@ -818,7 +820,9 @@ def seo_head(
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/hub/style.css?v={VER}">
+<link rel="alternate" type="application/rss+xml" title="DSE Hub 最新題目分析" href="{SITE}/feed.xml">
 {GA4_TAG}
+<script defer src="/js/track.js?v={VER}"></script>
 {extra}"""
 
 
@@ -896,11 +900,35 @@ def subject_nav(catalog, current=None):
     return "\n        ".join(bits)
 
 
-def make_og():
-    w, h = 1200, 630
+_OG_FONT_CANDIDATES = [
+    (
+        Path("/home/box/.fonts/NotoSansCJKtc-Black.otf"),
+        Path("/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc"),
+        Path("/home/box/.fonts/NotoSansCJKtc-Medium.otf"),
+    ),
+    (
+        Path(r"C:\Windows\Fonts\msjhbd.ttc"),
+        Path(r"C:\Windows\Fonts\msjhbd.ttc"),
+        Path(r"C:\Windows\Fonts\msjh.ttc"),
+    ),
+    (
+        Path(r"C:\Windows\Fonts\mingliu.ttc"),
+        Path(r"C:\Windows\Fonts\mingliu.ttc"),
+        Path(r"C:\Windows\Fonts\mingliu.ttc"),
+    ),
+]
+
+
+def _og_font_files():
+    for black_p, bold_p, med_p in _OG_FONT_CANDIDATES:
+        if black_p.exists() and bold_p.exists() and med_p.exists():
+            return black_p, bold_p, med_p
+    return None
+
+
+def _og_base(w=1200, h=630):
     img = Image.new("RGB", (w, h), "#0b1220")
-    overlay = Image.new("RGB", (w, h), "#0b1220")
-    d0 = ImageDraw.Draw(overlay)
+
     # soft orbs
     def orb(xy, r, color):
         layer = Image.new("RGBA", (w, h), (0, 0, 0, 0))
@@ -916,30 +944,18 @@ def make_og():
         orb((900, 560), 260, (52, 211, 153, 50)),
     ):
         base = Image.alpha_composite(base, layer)
-    img = base.convert("RGB")
+    return base.convert("RGB")
+
+
+def make_og():
+    w, h = 1200, 630
+    img = _og_base(w, h)
     draw = ImageDraw.Draw(img)
 
-    font_candidates = [
-        (
-            Path("/home/box/.fonts/NotoSansCJKtc-Black.otf"),
-            Path("/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc"),
-            Path("/home/box/.fonts/NotoSansCJKtc-Medium.otf"),
-        ),
-        (
-            Path(r"C:\Windows\Fonts\msjhbd.ttc"),
-            Path(r"C:\Windows\Fonts\msjhbd.ttc"),
-            Path(r"C:\Windows\Fonts\msjh.ttc"),
-        ),
-        (
-            Path(r"C:\Windows\Fonts\mingliu.ttc"),
-            Path(r"C:\Windows\Fonts\mingliu.ttc"),
-            Path(r"C:\Windows\Fonts\mingliu.ttc"),
-        ),
-    ]
+    ff = _og_font_files()
     fonts = None
-    for black_p, bold_p, med_p in font_candidates:
-        if not (black_p.exists() and bold_p.exists() and med_p.exists()):
-            continue
+    if ff is not None:
+        black_p, bold_p, med_p = ff
         try:
             fonts = (
                 ImageFont.truetype(str(black_p), 96),
@@ -947,9 +963,8 @@ def make_og():
                 ImageFont.truetype(str(med_p), 32, index=0),
                 ImageFont.truetype(str(med_p), 24, index=0),
             )
-            break
         except OSError:
-            continue
+            fonts = None
     if fonts is None:
         print("og-image skipped (no CJK font)")
         return
@@ -970,6 +985,53 @@ def make_og():
     out = ROOT / "og-image.png"
     img.save(out, "PNG", optimize=True)
     print("og-image", out, out.stat().st_size)
+
+
+_OG_Q_FONTS = None
+
+
+def _question_og_fonts():
+    global _OG_Q_FONTS
+    if _OG_Q_FONTS is None:
+        ff = _og_font_files()
+        if ff is None:
+            return None
+        black_p, bold_p, med_p = ff
+        _OG_Q_FONTS = (
+            ImageFont.truetype(str(black_p), 72),
+            ImageFont.truetype(str(bold_p), 46, index=0),
+            ImageFont.truetype(str(med_p), 34, index=0),
+            ImageFont.truetype(str(med_p), 26, index=0),
+        )
+    return _OG_Q_FONTS
+
+
+def make_question_og(sid, year, code, qno, subject_short, paper_label, topic="", marks=None):
+    """逐題 OG 卡：Telegram/WhatsApp 分享預覽帶題號＋課題，唔再全站一張 generic 圖。
+    檔案路徑必須同 question_og_url() 一致：/og/<sid>/<year>/<paper-code>/q<qno>.png。"""
+    fonts = _question_og_fonts()
+    if fonts is None:
+        return None
+    f_big, f_head, f_med, f_sm = fonts
+    img = _og_base()
+    draw = ImageDraw.Draw(img)
+
+    draw.text((80, 110), f"DSE {subject_short} {year} {paper_label} 第 {qno} 題", font=f_head, fill="#93c5fd")
+    big = str(topic) if topic else "深度分析＋答案"
+    if len(big) > 14:
+        big = big[:13] + "…"
+    draw.text((80, 180), big, font=f_big, fill="#ffffff")
+    draw.text((80, 330), "三層解題提示 · 誘答項逆向工程 · 速解策略", font=f_med, fill="#eef3fb")
+    meta_bits = ["免費答案＋逐項分析"]
+    if marks:
+        meta_bits.append(f"{marks} 分")
+    draw.text((80, 400), "　".join(meta_bits), font=f_sm, fill="#8b9bb3")
+    draw.text((80, 540), "hkdse.exampaper.cloud", font=f_sm, fill="#64748b")
+
+    out = ROOT / "og" / sid / str(year) / str(code).lower() / f"q{qno}.png"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    img.save(out, "PNG", optimize=True)
+    return out
 
 
 def make_htaccess():
@@ -1099,6 +1161,42 @@ def make_sitemap():
     parts.append("</urlset>\n")
     (ROOT / "sitemap.xml").write_text("\n".join(parts), encoding="utf-8")
     print("sitemap", len(urls), "urls")
+
+
+def upgrade_legacy_topic_pages():
+    # 舊 /topics/<slug>/ 頁（細粒度課題，144 頁、~1800 題列表）係長尾 SEO 資產，保留唔合併；
+    # 新 /{sid}/{slug}/（make_topic_pages）係粗粒度 strand hub，兩套粒度唔同、唔係重複內容。
+    # 呢度只做衛生修復（冪等）：
+    #   1) 退役嘅 /questions/math/... 連結（href＋JSON-LD）改指 301 後嘅新深度分析頁
+    #   2) 補 og:image／twitter:card（舊模板欠咗，Telegram/WhatsApp 預覽先有圖）
+    tdir = ROOT / "topics"
+    if not tdir.is_dir():
+        print("legacy topics: no dir, skip")
+        return
+    n_files = n_links = n_head = 0
+    for f in sorted(tdir.glob("*/index.html")):
+        h = f.read_text(encoding="utf-8")
+        orig = h
+        h, k = re.subn(r"/questions/math/([0-9]{4})/([a-z0-9-]+)/q([0-9]+)/", r"/math/\1/\2/q\3/", h)
+        n_links += k
+        if 'property="og:image"' not in h:
+            og = (
+                f'<meta property="og:image" content="{SITE}/og-image.png" />\n'
+                f'<meta property="og:image:width" content="1200" />\n'
+                f'<meta property="og:image:height" content="630" />\n'
+                f'<meta name="twitter:card" content="summary_large_image" />'
+            )
+            h, k2 = re.subn(
+                r'(<meta property="og:url" content="[^"]*" />)',
+                lambda m: m.group(1) + "\n" + og,
+                h,
+                count=1,
+            )
+            n_head += k2
+        if h != orig:
+            f.write_text(h, encoding="utf-8")
+            n_files += 1
+    print("legacy topics upgraded", "files", n_files, "links", n_links, "heads", n_head)
 
 
 def sort_rows(rows):
@@ -1653,6 +1751,33 @@ footer {
 .topic-guide p:last-child {
   margin-bottom: 0;
 }
+.share-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin: 14px 0 4px;
+}
+.share-row a,
+.share-row button {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 13.5px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+}
+.share-row a:hover,
+.share-row button:hover {
+  border-color: rgba(61, 139, 253, 0.55);
+  background: var(--acc-soft);
+}
 """
     if marker in text:
         text = text.split(marker)[0].rstrip() + "\n" + extra
@@ -1992,6 +2117,60 @@ def add_sitemap(loc, pri, freq):
     SITEMAP_URLS.append((loc, pri, freq))
 
 
+FEED_ITEMS = []  # (date_str, title, url) — make_question_pages 填，make_feed 寫出
+
+
+def _rfc822_date(date_str):
+    m = re.match(r"(\d{4})-(\d{2})-(\d{2})", str(date_str))
+    if not m:
+        return ""
+    y, mo, d = int(m.group(1)), int(m.group(2)), int(m.group(3))
+    months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+    days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+    try:
+        wd = days[date(y, mo, d).weekday()]
+    except ValueError:
+        return ""
+    return f"{wd}, {d:02d} {months[mo - 1]} {y} 00:00:00 +0800"
+
+
+def make_feed():
+    """RSS 2.0 feed：最新 blog 文＋最新深度分析題目（按 generated 日期，新到舊）。"""
+    items = []
+    blog_dir = ROOT / "blog"
+    if blog_dir.is_dir():
+        for f in sorted(blog_dir.glob("*/index.html")):
+            t = re.search(r"<title>([^<]*)</title>", f.read_text(encoding="utf-8"))
+            url = f"{SITE}/blog/{f.parent.name}/"
+            items.append((_rfc822_date(date.fromtimestamp(f.stat().st_mtime).isoformat()), t.group(1) if t else f.parent.name, url))
+    for d, title, url in FEED_ITEMS:
+        items.append((_rfc822_date(d), title, url))
+    seen = set()
+    uniq = []
+    for it in sorted(items, key=lambda x: x[0] or "", reverse=True):
+        if it[2] in seen:
+            continue
+        seen.add(it[2])
+        uniq.append(it)
+    uniq = uniq[:60]
+    parts = [
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        '<rss version="2.0"><channel>',
+        f"<title>DSE Hub 最新題目分析</title>",
+        f"<link>{SITE}/</link>",
+        "<description>DSE 數學逐題深度分析＋備試文章（hkdse.exampaper.cloud）</description>",
+        "<language>zh-Hant-HK</language>",
+    ]
+    for d, title, url in uniq:
+        parts.append(
+            f"<item><title>{esc(title)}</title><link>{esc(url)}</link>"
+            f"<guid>{esc(url)}</guid>{('<pubDate>' + d + '</pubDate>') if d else ''}</item>"
+        )
+    parts.append("</channel></rss>")
+    (ROOT / "feed.xml").write_text("\n".join(parts), encoding="utf-8")
+    print("feed", len(uniq), "items")
+
+
 def topic_path(sid, slug):
     return f"/{sid}/{slug}/"
 
@@ -1999,6 +2178,66 @@ def topic_path(sid, slug):
 def topic_url_for_name(sid, name):
     slug = TOPIC_SLUG_BY_NAME.get((sid, name))
     return topic_path(sid, slug) if slug else None
+
+
+def topic_page_for_name(sid, name):
+    for tp in TOPIC_PAGES:
+        if tp["subject_id"] == sid and tp["name"] == name:
+            return tp
+    return None
+
+
+def topic_question_count(questions, sid, tp):
+    subj = SID_TO_SUBJECT[sid]
+    want = set(tp["tags"])
+    seen = set()
+    for q in questions:
+        if q.get("subject") != subj:
+            continue
+        if set(q.get("tags") or []) & want:
+            seen.add((q.get("year"), q.get("paper"), q.get("qno")))
+    return len(seen)
+
+
+def question_og_url(sid, year, code, qno):
+    # 逐題 OG 圖（make_question_og 生成），檔案路徑同 URL 必須一致
+    return f"{SITE}/og/{sid}/{year}/{str(code).lower()}/q{qno}.png"
+
+
+def legacy_topic_map():
+    # docs/topics/_mapping.json：題目 tag → 舊細粒度課題頁 slug（/topics/<slug>/）
+    fp = ROOT / "topics" / "_mapping.json"
+    try:
+        data = json.loads(fp.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+    return {e["tag"]: e["slug"] for e in data.get("tags", []) if e.get("mapped") and e.get("slug")}
+
+
+def legacy_topic_counts(questions):
+    """回 (tag→slug map, slug→不重複題數)——問題頁「所屬課題」連結用。"""
+    tmap = legacy_topic_map()
+    counts = defaultdict(set)
+    for q in questions:
+        for t in q.get("tags") or []:
+            slug = tmap.get(t)
+            if slug:
+                counts[slug].add((q.get("year"), q.get("paper"), q.get("qno")))
+    return tmap, {k: len(v) for k, v in counts.items()}
+
+
+def question_topic_chips(q, tmap, tcounts, limit=2):
+    out = []
+    seen = set()
+    for t in q.get("tags") or []:
+        slug = tmap.get(t)
+        if not slug or slug in seen:
+            continue
+        seen.add(slug)
+        out.append((t, slug, tcounts.get(slug, 0)))
+        if len(out) >= limit:
+            break
+    return out
 
 
 def crumb_html(items):
@@ -2585,15 +2824,19 @@ def write_landing(
     lang="zh-Hant-HK",
     og_locale="zh_HK",
     alternates=None,
+    og_image=None,
+    body_attrs="",
+    extra_head="",
 ):
     page = (
         "<!DOCTYPE html>\n"
         f'<html lang="{esc(lang)}">\n'
         "<head>\n"
-        f"{seo_head(title, description, canonical, lang=lang, og_locale=og_locale, alternates=alternates)}\n"
+        f"{seo_head(title, description, canonical, lang=lang, og_locale=og_locale, alternates=alternates, og_image=og_image)}\n"
+        f"{extra_head}\n"
         f"{ld_json(graph)}\n"
         "</head>\n"
-        '<body class="subj-page">\n'
+        f'<body class="subj-page"{(" " + body_attrs) if body_attrs else ""}>\n'
         f"{body_inner}\n"
         f"{site_footer(footer_extra)}\n"
         "</body>\n"
@@ -2890,6 +3133,23 @@ def _embed_question_html(q):
     return re.sub(r'(src=")(?!/|https?://)', r"\1/", html)
 
 
+def share_row_html(url, text, lang="zh"):
+    # WhatsApp／Telegram 分享＋複製連結；click 事件由 /js/track.js 報 share_click／copy_link。
+    q_url = quote(url, safe="")
+    q_txt = quote(text, safe="")
+    if lang == "en":
+        aria, l_wa, l_tg, l_copy = "Share this question", "Share on WhatsApp", "Share on Telegram", "Copy link"
+    else:
+        aria, l_wa, l_tg, l_copy = "分享呢一題", "WhatsApp 分享", "Telegram 分享", "複製連結"
+    return (
+        f'<nav class="share-row" aria-label="{aria}">'
+        f'<a data-share="whatsapp" href="https://wa.me/?text={q_txt}%20{q_url}" rel="noopener" target="_blank">{l_wa}</a>'
+        f'<a data-share="telegram" href="https://t.me/share/url?url={q_url}&amp;text={q_txt}" rel="noopener" target="_blank">{l_tg}</a>'
+        f'<button type="button" data-copy-link="{esc(url)}">{l_copy}</button>'
+        "</nav>"
+    )
+
+
 def _analysis_section_html(analysis):
     a = analysis.get("analysis") or {}
     md = a.get("metadata") or {}
@@ -3027,6 +3287,7 @@ def make_question_pages(catalog, papers, questions, analyses):
         v.sort()
 
     en_short = {"math": "Maths", "econ": "Economics", "chem": "Chemistry", "bio": "Biology", "phys": "Physics"}
+    tmap, tcounts = legacy_topic_counts(questions)
 
     def paper_row_for(sid, year, code, lang):
         rows = by_paper.get((sid, year, code)) or []
@@ -3065,13 +3326,14 @@ def make_question_pages(catalog, papers, questions, analyses):
             zh_url = SITE + zh_path
             zh_url_by_key[akey] = zh_url
             qzh = paper_zh_label(code)
-            title = f"DSE {s['short']} {year} {qzh} 第 {qno} 題深度分析｜DSE Hub"
+            tt = f"【{topic}】" if topic else ""
+            title = f"DSE {s['short']} {year} {qzh} 第 {qno} 題{tt}深度分析＋答案｜DSE Hub"
             desc = (
                 f"DSE {s['short']} {year} {qzh} 第 {qno} 題深度解析：考點"
                 + (f"「{topic}」" if topic else "")
                 + "、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。"
             )
-            h1 = f"DSE {s['short']} {year} {qzh} 第 {qno} 題深度分析"
+            h1 = f"DSE {s['short']} {year} {qzh} 第 {qno} 題{tt}深度分析"
             tagline = "考點圖譜 · 布魯姆認知層次 · 三層鷹架提示 · 誘答項逆向工程"
             bank_href = question_href(qzh_q)
             crumbs = [
@@ -3081,6 +3343,15 @@ def make_question_pages(catalog, papers, questions, analyses):
                 (zh_row["path"], f"{zh_row['paper']}（{zh_row['lang']}）"),
                 (None, f"第 {qno} 題"),
             ]
+            topic_link = ""
+            tp = topic_page_for_name(sid, topic) if topic else None
+            if tp is not None:
+                n_tp = topic_question_count(questions, sid, tp)
+                tp_url = topic_path(sid, tp["slug"])
+                topic_link = f' · <a href="{esc(tp_url)}">所屬課題：{esc(topic)}（{n_tp} 題）</a>'
+            # 題目 tag → 舊細粒度課題頁（/topics/<slug>/，144 頁長尾資產）嘅 spoke→hub 內鏈
+            for t_label, t_slug, n_q in question_topic_chips(qzh_q, tmap, tcounts):
+                topic_link += f' · <a href="/topics/{esc(t_slug)}/">課題：{esc(t_label)}（{n_q} 題）</a>'
             en_twin_link = ""
             if g["en"] is not None and EMIT_EN_PAGES:
                 en_twin_link = f' · <a href="{esc(zh_row["path"].rstrip("/"))}-en/q{qno}/">English version</a>'
@@ -3088,11 +3359,13 @@ def make_question_pages(catalog, papers, questions, analyses):
                 f'<p class="page-cta open-cta"><a href="{esc(bank_href)}">喺題庫開啟呢題</a>'
                 f' · <a href="{esc(zh_row["path"])}">返回 {year} {esc(qzh)} 全卷</a>'
                 + en_twin_link
+                + topic_link
                 + "</p>"
             )
             sections = [
                 '<section class="kw-block" aria-label="題目">\n  <h2>題目</h2>\n'
                 f'  <div class="q-embed">{_embed_question_html(qzh_q)}</div>\n</section>',
+                share_row_html(zh_url, f"DSE {s['short']} {year} {qzh} 第 {qno} 題" + (f"【{topic}】" if topic else "")),
                 _analysis_section_html(analyses[akey]),
             ]
             pn = prevnext_html(zh_row["path"] + "q{}/")
@@ -3112,6 +3385,11 @@ def make_question_pages(catalog, papers, questions, analyses):
             body += '<main class="subj-main">\n' + "\n".join(sections) + "\n</main>"
             en_alt = f"{SITE}{zh_row['path'].rstrip('/')}-en/q{qno}/" if g["en"] is not None and EMIT_EN_PAGES else None
             alternates = ([("zh-Hant-HK", zh_url), ("en", en_alt), ("x-default", zh_url)] if en_alt else None)
+            og_url = question_og_url(sid, year, code, qno)
+            make_question_og(
+                sid, year, code, qno,
+                subject_short=s["short"], paper_label=qzh, topic=topic, marks=md.get("marks"),
+            )
             write_landing(
                 zh_path,
                 title,
@@ -3121,8 +3399,11 @@ def make_question_pages(catalog, papers, questions, analyses):
                 body,
                 footer_extra=f'<a href="{esc(zh_row["path"])}">返回 {year} {esc(qzh)}</a> · <a href="{esc(bank_href)}">喺題庫開啟呢題</a>',
                 alternates=alternates,
+                og_image=og_url,
+                body_attrs=f'data-qpage data-topic="{esc(topic)}" data-year="{esc(str(year))}" data-paper="{esc(str(code))}" data-qno="{esc(str(qno))}" data-lang="zh"',
             )
             add_sitemap(zh_url, "0.8", "monthly")
+            FEED_ITEMS.append((str(analyses[akey].get("generated") or ""), title, zh_url))
             count += 1
 
         # ---- 英文 twin（真英文內容：題目／選項用英文記錄；中文深度分析收摺）----
@@ -3141,7 +3422,11 @@ def make_question_pages(catalog, papers, questions, analyses):
             continue
         pl = paper_en_label(code)
         subj_en = en_short.get(sid, s["en"])
-        title = f"DSE {subj_en} {year} {pl} Question {qno} — Answer, Traps & Speed Solution | DSE Hub"
+        title = (
+            f"DSE {subj_en} {year} {pl} Question {qno}"
+            + (f" — {topic}" if topic else "")
+            + " — Answer, Traps & Speed Solution | DSE Hub"
+        )
         desc = (
             f"Free worked answer for DSE {subj_en} {year} {pl} Question {qno}: the correct answer,"
             " why each wrong option traps candidates, and a fast solving strategy."
@@ -3158,10 +3443,18 @@ def make_question_pages(catalog, papers, questions, analyses):
             (None, f"Question {qno}"),
         ]
         zh_link = zh_url_by_key.get(akey)
+        topic_link_en = ""
+        tp_en = topic_page_for_name(sid, topic) if topic else None
+        if tp_en is not None:
+            n_tp = topic_question_count(questions, sid, tp_en)
+            topic_link_en = f' · <a href="{esc(topic_path(sid, tp_en["slug"]))}">Topic: {esc(topic)}（{n_tp} questions）</a>'
+        for t_label, t_slug, n_q in question_topic_chips(qen_q, tmap, tcounts):
+            topic_link_en += f' · <a href="/topics/{esc(t_slug)}/">Topic: {esc(t_label)}（{n_q} questions）</a>'
         cta = (
             f'<p class="page-cta open-cta"><a href="{esc(bank_href)}">Open this question in the bank</a>'
             f' · <a href="{esc(en_row["path"])}">Back to {year} {esc(pl)}</a>'
             + (f' · <a href="{esc(zh_link)}">中文版</a>' if zh_link else "")
+            + topic_link_en
             + "</p>"
         )
         en_opts = dict(re.findall(r"^-\s*([A-D])[.．、]\s*(.+)$", str(qen_q.get("text") or ""), re.M))
@@ -3188,6 +3481,7 @@ def make_question_pages(catalog, papers, questions, analyses):
         sections_en = [
             '<section class="kw-block" aria-label="Question">\n  <h2>Question</h2>\n'
             f'  <div class="q-embed">{_embed_question_html(qen_q)}</div>\n</section>',
+            share_row_html(en_url, f"DSE {subj_en} {year} {pl} Question {qno}" + (f" ({topic})" if topic else ""), "en"),
         ]
         if answer_html:
             sections_en.append(answer_html)
@@ -3213,6 +3507,8 @@ def make_question_pages(catalog, papers, questions, analyses):
             lang="en",
             og_locale="en_HK",
             alternates=alternates,
+            og_image=question_og_url(sid, year, code, qno),
+            body_attrs=f'data-qpage data-topic="{esc(topic)}" data-year="{esc(str(year))}" data-paper="{esc(str(code))}" data-qno="{esc(str(qno))}" data-lang="en"',
         )
         add_sitemap(en_url, "0.8", "monthly")
         count += 1
@@ -3604,9 +3900,11 @@ def main():
     n_paper = make_paper_pages(catalog, papers, questions, analyses)
     n_question = make_question_pages(catalog, papers, questions, analyses)
     n_topic = make_topic_pages(catalog, questions, papers)
+    upgrade_legacy_topic_pages()
     n_stub = make_question_redirect_stubs()
     make_redirects()
     make_sitemap()
+    make_feed()
     patch_blog_schema()
     patch_css()
     patch_hub_data(papers)

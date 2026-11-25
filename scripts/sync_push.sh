@@ -6,7 +6,7 @@
 #   bash scripts/sync_push.sh "commit message"
 set -u
 MSG=${1:-"content: 上線卷一內容"}
-ROOT=/c/Users/Administrator/projects/dse-maths-question-bank
+ROOT=/c/Users/Administrator/dsehub
 cd "$ROOT" || exit 1
 export PYTHONPATH=
 PY=python

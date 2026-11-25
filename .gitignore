@@ -61,3 +61,6 @@ analysis_config.local.json
 _tmp_2012p2/
 _tmp_merge/
 .sync_push.log
+
+# 各種 enrich／retry runtime log（PowerShell UTF-16 redirect 輸出）
+*.log

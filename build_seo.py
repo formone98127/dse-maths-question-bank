@@ -1123,6 +1123,7 @@ def make_hub(catalog, papers):
                 "inLanguage": "zh-Hant-HK",
                 "description": HUB_DESC,
                 "publisher": {"@id": f"{SITE}/#org"},
+                # SearchAction 要等站內真係有 ?q= 搜尋結果頁先加（目標 URL 冇功能會誤導 Google）
             },
             {
                 "@type": "Organization",
@@ -3420,6 +3421,54 @@ def make_redirects():
     )
 
 
+def patch_blog_schema():
+    """docs/blog/*/index.html 注入 BlogPosting JSON-LD＋GA4（手維護頁，build 唔會重寫）。"""
+    bdir = ROOT / "blog"
+    if not bdir.is_dir():
+        return
+    n = 0
+    for p in sorted(bdir.glob("*/index.html")):
+        t = p.read_text(encoding="utf-8")
+        changed = False
+        if "BlogPosting" not in t:
+            m_title = re.search(r"<title>([^<]+)</title>", t)
+            m_canon = re.search(r'rel="canonical" href="([^"]+)"', t)
+            m_desc = re.search(r'name="description" content="([^"]*)"', t)
+            m_date = re.search(r'"datePublished":\s*"([0-9-]+)"', t)
+            headline = m_title.group(1) if m_title else p.parent.name
+            url = m_canon.group(1) if m_canon else f"{SITE}/blog/{p.parent.name}/"
+            desc = m_desc.group(1) if m_desc else ""
+            pub = m_date.group(1) if m_date else date.fromtimestamp(p.stat().st_mtime).isoformat()
+            posting = {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": headline,
+                "description": desc,
+                "url": url,
+                "datePublished": pub,
+                "dateModified": pub,
+                "inLanguage": "zh-Hant-HK",
+                "author": {"@type": "Organization", "name": "DSE Hub", "url": HUB},
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "DSE Hub",
+                    "logo": {"@type": "ImageObject", "url": f"{SITE}/icons/icon-512.png"},
+                },
+                "mainEntityOfPage": {"@type": "WebPage", "@id": url},
+            }
+            block = ld_json(posting) + "\n"
+            if "</head>" in t:
+                t = t.replace("</head>", block + "</head>", 1)
+                changed = True
+        if "G-LTB27V0RGW" not in t and "</head>" in t:
+            t = t.replace("</head>", GA4_TAG + "\n</head>", 1)
+            changed = True
+        if changed:
+            p.write_text(t, encoding="utf-8")
+            n += 1
+    print("blog schema patched", n, "pages")
+
+
 def sanity_check():
     missing = []
     for loc, pri, freq in SITEMAP_URLS:
@@ -3543,6 +3592,7 @@ def main():
     n_stub = make_question_redirect_stubs()
     make_redirects()
     make_sitemap()
+    patch_blog_schema()
     patch_css()
     patch_hub_data(papers)
     patch_app()

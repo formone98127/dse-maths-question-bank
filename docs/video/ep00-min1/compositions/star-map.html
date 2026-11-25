@@ -1,0 +1,377 @@
+<template>
+  <style>
+    @font-face {
+      font-family: "HKSans";
+      src: local("Microsoft JhengHei"), local("Microsoft JhengHei UI"), local("PingFang HK");
+      font-weight: 400 700;
+    }
+    #root {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      background: radial-gradient(ellipse at 50% 42%, #152238 0%, #0b1220 62%, #070b14 100%);
+      font-family: "HKSans", "Noto Sans JP", sans-serif;
+      color: #f5f7fa;
+    }
+    #vignette {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background: radial-gradient(ellipse at center, transparent 48%, rgba(0, 0, 0, 0.45) 100%);
+      z-index: 40;
+    }
+    #cam {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 1920px;
+      height: 1080px;
+      margin-left: -960px;
+      margin-top: -540px;
+      transform-origin: 50% 50%;
+      z-index: 1;
+    }
+    #links,
+    #nodes {
+      position: absolute;
+      inset: 0;
+    }
+    .link {
+      position: absolute;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, rgba(255, 209, 102, 0.55), transparent);
+      transform-origin: 0 50%;
+      opacity: 0.35;
+    }
+    .node {
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      margin: -7px 0 0 -7px;
+      border-radius: 50%;
+      background: #9fb4c8;
+      box-shadow: 0 0 12px rgba(159, 180, 200, 0.45);
+    }
+    .node.teal {
+      background: #2ec4b6;
+      box-shadow: 0 0 16px rgba(46, 196, 182, 0.55);
+    }
+    .node.amber {
+      background: #f4a261;
+      box-shadow: 0 0 16px rgba(244, 162, 97, 0.5);
+    }
+    .node.green {
+      background: #52b788;
+      box-shadow: 0 0 16px rgba(82, 183, 136, 0.5);
+    }
+    #title-wrap,
+    #subtitle-wrap,
+    #quote-wrap,
+    #pillars,
+    #strand-label,
+    #topic-tags {
+      position: absolute;
+      z-index: 20;
+      left: 0;
+      right: 0;
+      text-align: center;
+      pointer-events: none;
+    }
+    #title-wrap {
+      top: 38%;
+    }
+    #ep-title {
+      font-size: 92px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      line-height: 1.1;
+    }
+    #ep-title .num {
+      color: #ffd166;
+    }
+    #subtitle-wrap {
+      top: 52%;
+    }
+    #ep-sub {
+      font-size: 36px;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      color: rgba(245, 247, 250, 0.82);
+    }
+    #quote-wrap {
+      top: 62%;
+    }
+    #quote {
+      font-size: 48px;
+      font-weight: 700;
+      color: #ffd166;
+      letter-spacing: 0.08em;
+    }
+    #pillars {
+      top: 22%;
+      display: flex;
+      justify-content: center;
+      gap: 48px;
+    }
+    .pillar {
+      min-width: 280px;
+      padding: 18px 28px;
+      border: 1px solid rgba(255, 209, 102, 0.55);
+      background: rgba(11, 18, 32, 0.55);
+      border-radius: 8px;
+      font-size: 30px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+    .pillar span {
+      display: block;
+      font-size: 20px;
+      font-weight: 400;
+      color: rgba(255, 209, 102, 0.9);
+      margin-bottom: 6px;
+      letter-spacing: 0.14em;
+    }
+    #strand-label {
+      top: 18%;
+    }
+    #strand-name {
+      font-size: 72px;
+      font-weight: 700;
+      color: #2ec4b6;
+      letter-spacing: 0.06em;
+      text-shadow: 0 0 28px rgba(46, 196, 182, 0.35);
+    }
+    #strand-role {
+      margin-top: 12px;
+      font-size: 32px;
+      color: rgba(245, 247, 250, 0.88);
+      letter-spacing: 0.1em;
+    }
+    #topic-tags {
+      top: 72%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      padding: 0 180px;
+    }
+    .tag {
+      padding: 10px 22px;
+      border-radius: 999px;
+      background: rgba(46, 196, 182, 0.16);
+      border: 1px solid rgba(46, 196, 182, 0.55);
+      color: #b7f3ec;
+      font-size: 28px;
+      letter-spacing: 0.06em;
+    }
+    #galaxy-teal,
+    #galaxy-amber,
+    #galaxy-green {
+      position: absolute;
+      width: 420px;
+      height: 420px;
+      margin: -210px 0 0 -210px;
+      border-radius: 50%;
+      opacity: 0;
+      z-index: 5;
+      filter: blur(0px);
+    }
+    #galaxy-teal {
+      left: 28%;
+      top: 48%;
+      background: radial-gradient(circle, rgba(46, 196, 182, 0.55) 0%, rgba(46, 196, 182, 0.12) 42%, transparent 70%);
+    }
+    #galaxy-amber {
+      left: 72%;
+      top: 42%;
+      background: radial-gradient(circle, rgba(244, 162, 97, 0.5) 0%, rgba(244, 162, 97, 0.1) 42%, transparent 70%);
+    }
+    #galaxy-green {
+      left: 58%;
+      top: 72%;
+      background: radial-gradient(circle, rgba(82, 183, 136, 0.48) 0%, rgba(82, 183, 136, 0.1) 42%, transparent 70%);
+    }
+    #gate-line {
+      position: absolute;
+      left: 50%;
+      top: 48%;
+      width: 2px;
+      height: 180px;
+      margin-left: -1px;
+      margin-top: -90px;
+      background: linear-gradient(180deg, transparent, #ffd166, transparent);
+      opacity: 0;
+      z-index: 15;
+    }
+  </style>
+
+  <div id="root" data-composition-id="star-map" data-width="1920" data-height="1080" data-layout-allow-overflow data-layout-allow-overlap>
+    <div id="cam" class="clip" data-start="0" data-duration="60" data-track-index="0">
+      <div id="cam-inner">
+        <div id="links"></div>
+        <div id="nodes"></div>
+        <div id="galaxy-teal"></div>
+        <div id="galaxy-amber"></div>
+        <div id="galaxy-green"></div>
+        <div id="gate-line"></div>
+      </div>
+    </div>
+
+    <div id="title-wrap" class="clip" data-start="3" data-duration="14.5" data-track-index="2">
+      <div id="ep-title"><span class="num">EP.00</span>｜宏觀導論</div>
+    </div>
+    <div id="subtitle-wrap" class="clip" data-start="4.2" data-duration="13.3" data-track-index="2">
+      <div id="ep-sub">睇清地圖，先打仗</div>
+    </div>
+    <div id="quote-wrap" class="clip" data-start="10" data-duration="7.5" data-track-index="2">
+      <div id="quote">知識星圖</div>
+    </div>
+
+    <div id="pillars" class="clip" data-start="20" data-duration="16" data-track-index="3">
+      <div class="pillar" id="p1"><span>①</span>三大範疇</div>
+      <div class="pillar" id="p2"><span>②</span>縱向進化</div>
+      <div class="pillar" id="p3"><span>③</span>橫向連結</div>
+    </div>
+
+    <div id="strand-label" class="clip" data-start="46" data-duration="14" data-track-index="4">
+      <div id="strand-name">數與代數</div>
+      <div id="strand-role">語言系統</div>
+    </div>
+    <div id="topic-tags" class="clip" data-start="48.5" data-duration="11.5" data-track-index="4">
+      <div class="tag" id="t1">方程</div>
+      <div class="tag" id="t2">函數</div>
+      <div class="tag" id="t3">指數對數</div>
+      <div class="tag" id="t4">數列</div>
+    </div>
+
+    <div id="vignette"></div>
+  </div>
+
+  <script>
+    (function () {
+      const seed = 20261126;
+      function rnd(i) {
+        let x = (seed + i * 9973) >>> 0;
+        x = (x ^ (x << 13)) >>> 0;
+        x = (x ^ (x >> 17)) >>> 0;
+        x = (x ^ (x << 5)) >>> 0;
+        return (x % 10000) / 10000;
+      }
+
+      const nodesEl = document.getElementById("nodes");
+      const linksEl = document.getElementById("links");
+      const cx = 960;
+      const cy = 540;
+      const pts = [];
+      for (let i = 0; i < 36; i++) {
+        const a = rnd(i) * Math.PI * 2;
+        const r = 90 + rnd(i + 40) * 380;
+        const x = cx + Math.cos(a) * r * (0.55 + rnd(i + 80) * 0.9);
+        const y = cy + Math.sin(a) * r * (0.45 + rnd(i + 120) * 0.75);
+        pts.push({ x, y, i });
+        const n = document.createElement("div");
+        n.className = "node";
+        n.id = "n" + i;
+        if (i % 7 === 0) n.classList.add("teal");
+        else if (i % 7 === 2) n.classList.add("amber");
+        else if (i % 7 === 4) n.classList.add("green");
+        n.style.left = x + "px";
+        n.style.top = y + "px";
+        nodesEl.appendChild(n);
+      }
+
+      const pairs = [
+        [0, 5], [5, 12], [12, 18], [18, 3], [3, 9], [9, 21],
+        [2, 8], [8, 15], [15, 24], [1, 11], [11, 20], [4, 14],
+        [6, 16], [7, 19], [10, 22], [13, 25], [17, 28], [23, 30],
+      ];
+      pairs.forEach(([a, b], idx) => {
+        const p = pts[a];
+        const q = pts[b];
+        const dx = q.x - p.x;
+        const dy = q.y - p.y;
+        const len = Math.sqrt(dx * dx + dy * dy);
+        const ang = (Math.atan2(dy, dx) * 180) / Math.PI;
+        const el = document.createElement("div");
+        el.className = "link";
+        el.id = "l" + idx;
+        el.style.left = p.x + "px";
+        el.style.top = p.y + "px";
+        el.style.width = len + "px";
+        el.style.transform = "rotate(" + ang + "deg)";
+        linksEl.appendChild(el);
+      });
+
+      const tl = gsap.timeline({ paused: true });
+
+      gsap.set("#cam-inner", { scale: 0.72, rotation: -8, transformOrigin: "50% 50%" });
+      gsap.set(".node", { scale: 0, opacity: 0 });
+      gsap.set(".link", { opacity: 0, scaleX: 0 });
+      gsap.set("#ep-title", { opacity: 0, y: 28, filter: "blur(10px)" });
+      gsap.set("#ep-sub", { opacity: 0, y: 16 });
+      gsap.set("#quote", { opacity: 0, scale: 0.86 });
+      gsap.set(["#p1", "#p2", "#p3"], { opacity: 0, y: 24, scale: 0.92 });
+      gsap.set(["#galaxy-teal", "#galaxy-amber", "#galaxy-green"], { opacity: 0, scale: 0.4 });
+      gsap.set(["#strand-name", "#strand-role"], { opacity: 0, y: 20 });
+      gsap.set(["#t1", "#t2", "#t3", "#t4"], { opacity: 0, y: 14, scale: 0.9 });
+      gsap.set("#gate-line", { opacity: 0, scaleY: 0 });
+
+      // Gather
+      tl.to(".node", { opacity: 1, scale: 1, duration: 0.7, stagger: 0.035, ease: "power3.out" }, 0.15);
+      tl.to(".link", { opacity: 0.4, scaleX: 1, duration: 0.55, stagger: 0.03, ease: "power2.out" }, 0.55);
+      tl.to("#cam-inner", { scale: 1, rotation: 0, duration: 3.2, ease: "power2.out" }, 0.2);
+
+      // Title
+      tl.to("#ep-title", { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.7, ease: "power3.out" }, 3.0);
+      tl.to("#ep-sub", { opacity: 1, y: 0, duration: 0.55, ease: "power2.out" }, 4.2);
+      tl.to("#quote", { opacity: 1, scale: 1, duration: 0.55, ease: "back.out(1.6)" }, 10.0);
+      tl.to("#quote", { opacity: 0, duration: 0.4, ease: "power1.in" }, 16.8);
+      tl.to(["#ep-title", "#ep-sub"], { opacity: 0, duration: 0.45, ease: "power1.in" }, 17.2);
+
+      // Slow orbit during middle
+      tl.to("#cam-inner", { rotation: 10, duration: 18, ease: "none" }, 8.0);
+
+      // Dark-door beat
+      tl.to("#gate-line", { opacity: 0.9, scaleY: 1, duration: 0.55, ease: "power2.out" }, 19.2);
+      tl.to("#gate-line", { opacity: 0, duration: 0.45, ease: "power1.in" }, 23.5);
+
+      // Pillars
+      tl.to("#p1", { opacity: 1, y: 0, scale: 1, duration: 0.45, ease: "back.out(1.4)" }, 20.2);
+      tl.to("#p2", { opacity: 1, y: 0, scale: 1, duration: 0.45, ease: "back.out(1.4)" }, 20.7);
+      tl.to("#p3", { opacity: 1, y: 0, scale: 1, duration: 0.45, ease: "back.out(1.4)" }, 21.2);
+      tl.to(["#p1", "#p2", "#p3"], { opacity: 0, y: -12, duration: 0.5, ease: "power1.in" }, 35.5);
+
+      // Gold pulse on links
+      tl.to(".link", { opacity: 0.85, duration: 0.35, stagger: 0.04, yoyo: true, repeat: 1, ease: "power1.inOut" }, 20.0);
+
+      // Bridge motion before the split (kills dead stretch ~36–39)
+      tl.to("#cam-inner", { scale: 1.08, rotation: 14, duration: 3.4, ease: "power1.inOut" }, 35.6);
+      tl.to(".node", { scale: 1.18, duration: 0.55, stagger: 0.02, yoyo: true, repeat: 1, ease: "sine.inOut" }, 36.2);
+
+      // Explode to three galaxies
+      tl.to("#galaxy-teal", { opacity: 1, scale: 1.15, duration: 0.9, ease: "power3.out" }, 39.2);
+      tl.to("#galaxy-amber", { opacity: 1, scale: 1.05, duration: 0.9, ease: "power3.out" }, 39.45);
+      tl.to("#galaxy-green", { opacity: 1, scale: 1.0, duration: 0.9, ease: "power3.out" }, 39.7);
+      tl.to(".node.teal", { scale: 1.55, duration: 0.6, ease: "power2.out" }, 40.0);
+      tl.to("#galaxy-teal", { x: -36, y: 18, duration: 4.2, ease: "sine.inOut" }, 40.6);
+      tl.to("#galaxy-amber", { x: 28, y: -22, duration: 4.2, ease: "sine.inOut" }, 40.6);
+      tl.to("#galaxy-green", { x: 16, y: 30, duration: 4.2, ease: "sine.inOut" }, 40.6);
+      tl.to(".link", { opacity: 0.7, duration: 1.1, ease: "power1.inOut" }, 41.0);
+      tl.to(["#galaxy-amber", "#galaxy-green"], { opacity: 0.28, duration: 0.7, ease: "power1.out" }, 45.5);
+
+      // Dolly into algebra
+      tl.to("#cam-inner", { scale: 1.55, x: 220, y: -40, rotation: -2, duration: 3.2, ease: "power2.inOut" }, 45.0);
+      tl.to("#strand-name", { opacity: 1, y: 0, duration: 0.55, ease: "power3.out" }, 46.2);
+      tl.to("#strand-role", { opacity: 1, y: 0, duration: 0.45, ease: "power2.out" }, 46.7);
+      tl.to("#t1", { opacity: 1, y: 0, scale: 1, duration: 0.35, ease: "back.out(1.5)" }, 48.6);
+      tl.to("#t2", { opacity: 1, y: 0, scale: 1, duration: 0.35, ease: "back.out(1.5)" }, 49.2);
+      tl.to("#t3", { opacity: 1, y: 0, scale: 1, duration: 0.35, ease: "back.out(1.5)" }, 49.9);
+      tl.to("#t4", { opacity: 1, y: 0, scale: 1, duration: 0.35, ease: "back.out(1.5)" }, 50.6);
+
+      // Soft hold breathe
+      tl.to("#galaxy-teal", { scale: 1.22, duration: 4, ease: "sine.inOut" }, 52.0);
+
+      window.__timelines["star-map"] = tl;
+    })();
+  </script>
+</template>

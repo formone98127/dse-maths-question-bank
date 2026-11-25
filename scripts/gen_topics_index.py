@@ -32,6 +32,11 @@ def collect():
 
 
 def build(rows):
+    import sys as _sys
+
+    _sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    from build_seo import GA4_TAG  # noqa: E402
+
     lis = "\n".join(
         f'      <li><a href="/topics/{slug}/">{H.escape(name)}<span class="n">{cnt} 題</span></a></li>'
         for slug, name, cnt in rows
@@ -43,6 +48,7 @@ def build(rows):
     n = len(rows)
     title = f"DSE 數學課題總匯（{n} 個課題）｜歷屆試題＋答案｜DSE Hub"
     desc = f"按課題瀏覽 DSE 數學歷屆試題：{n} 個課題頁，收錄相關題目、答案、題解同考生答對率。"
+    ga4 = GA4_TAG
     return f"""<!DOCTYPE html>
 <html lang="zh-Hant-HK">
 <head>
@@ -55,6 +61,7 @@ def build(rows):
 <meta name="theme-color" content="#0b1220">
 <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
 <link rel="stylesheet" href="/hub/style.css?v={VER}">
+{ga4}
 <script type="application/ld+json">{{"@context":"https://schema.org","@type":"CollectionPage","name":"{title}","url":"https://hkdse.exampaper.cloud/topics/","inLanguage":"zh-Hant-HK","mainEntity":{{"@type":"ItemList","numberOfItems":{n},"itemListElement":[{items}]}}}}</script>
 <style>
 .main{{max-width:760px;margin:0 auto;padding:18px 16px 40px;color:var(--ink,#fff)}}

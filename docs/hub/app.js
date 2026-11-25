@@ -742,6 +742,12 @@ function commitReel() {
       state.year = ALL;
       state.paper = ALL;
       state.topic = PLACE;
+      /* Kin 定案：喺 Filter 揀「數學」→ 直接跳入數學分頁 */
+      if (v === "math") {
+        closeReel();
+        location.href = "/math/";
+        return;
+      }
     } else if (reelKey === "year") {
       state.paper = ALL;
     }

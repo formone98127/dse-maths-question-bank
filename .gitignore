@@ -64,3 +64,10 @@ _tmp_merge/
 
 # 各種 enrich／retry runtime log（PowerShell UTF-16 redirect 輸出）
 *.log
+
+# Manim render cache / outputs（只入庫原始碼同腳本）
+dse_math_visual/media/
+dse_math_visual/concat_list.txt
+dse_math_visual/*.mp4
+dse_math_visual/sfx_*.json
+!dse_math_visual/requirements.txt

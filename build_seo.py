@@ -699,8 +699,8 @@ for _tp in TOPIC_PAGES:
 TOPIC_SLUG_BY_NAME[("math", "多項式（續）")] = "polynomials-factorization"
 TOPIC_SLUG_BY_NAME[("math", "百分法")] = "percentages-interest"
 
-HUB_TITLE = "免費 DSE 歷屆試題｜數學經濟化學生物物理 Past Paper｜DSE Hub"
-HUB_DESC = "免費查閱香港中學文憑試（DSE）數學、經濟、化學、生物、物理歷屆試題，按年份或課題溫習，支援中英文卷。唔使報名，即時喺 DSE Hub 開卷。"
+HUB_TITLE = "免費 DSE 數學歷屆試題 Past Paper｜按年份、課題溫習｜DSE Hub"
+HUB_DESC = "免費查閱香港中學文憑試（DSE）數學（必修部分）歷屆試題，按年份或課題溫習，支援中英文卷、即時核對選擇題答案。唔使報名，即時喺 DSE Hub 開卷。"
 HUB_H1 = "香港中學文憑（DSE）歷屆試題資料庫"
 
 
@@ -1204,6 +1204,10 @@ def make_hub(catalog, papers):
     <div class="seg" id="modeSeg" role="tablist" aria-label="瀏覽方式">
       <button type="button" data-mode="year" class="on" role="tab" aria-selected="true">按年份</button>
       <button type="button" data-mode="topic" role="tab" aria-selected="false">按課題</button>
+    </div>
+    <div class="topic-search" id="topicSearchWrap" hidden>
+      <input type="search" id="topicSearch" placeholder="搜尋課題…" autocomplete="off" enterkeyhint="search" />
+      <div class="topic-search-list" id="topicSearchList" hidden></div>
     </div>
     <div class="bar" id="yearBar">
       <div class="field">
@@ -3511,6 +3515,17 @@ def sanity_check():
     bad_hub = re.findall(r'href="https://hkdse\.exampaper\.cloud#[^"]+"', hub)
     if bad_hub:
         raise SystemExit(f"hub still has bank hash links: {bad_hub[:5]}")
+    # hub/app.js 頂層 $() 引用嘅元素 ID 必須存在於 hub/index.html（手改頁面冇同步入模板就會令 app 成個死）
+    app_js = (ROOT / "hub/app.js").read_text(encoding="utf-8")
+    missing_ids = sorted(
+        {
+            m
+            for m in re.findall(r'\$\("([A-Za-z][A-Za-z0-9_-]*)"\)', app_js)
+            if f'id="{m}"' not in hub
+        }
+    )
+    if missing_ids:
+        raise SystemExit(f"hub/app.js references element ids missing from hub/index.html: {missing_ids}")
     sm = (ROOT / "sitemap.xml").read_text(encoding="utf-8")
     if f"<loc>{SITE}</loc>" in sm or f"<loc>{SITE}/</loc>" in sm:
         raise SystemExit("sitemap includes domain root")

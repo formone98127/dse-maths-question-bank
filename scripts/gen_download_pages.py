@@ -109,10 +109,18 @@ print('生成下載頁', len(pages))
 with open(f'{ROOT}/download/_manifest.json', 'w', encoding='utf-8') as f:
     json.dump(pages, f, ensure_ascii=False)
 
-# 生成 sitemap-download.xml
+# 生成 sitemap-download.xml（lastmod 跟輸出檔 mtime）
+from datetime import date
+
 lines = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
 for url, _ in pages:
-    lines.append(f'  <url><loc>{escape(BASE + url)}</loc></url>')
+    fp = f'{ROOT}{url}index.html' if url.endswith('/') else f'{ROOT}{url}'
+    try:
+        lm = date.fromtimestamp(os.path.getmtime(fp)).isoformat()
+    except OSError:
+        from datetime import date as _d
+        lm = _d.today().isoformat()
+    lines.append(f'  <url><loc>{escape(BASE + url)}</loc><lastmod>{lm}</lastmod></url>')
 lines.append('</urlset>')
 with open(f'{ROOT}/sitemap-download.xml', 'w', encoding='utf-8') as f:
     f.write('\n'.join(lines) + '\n')

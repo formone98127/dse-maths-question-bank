@@ -1,47 +1,12 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-Hant-HK">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>2013 DSE 數學 P1 Q19 答案＋詳解｜DSE Hub</title>
-<meta name="description" content="2013 Paper 1 第 19 題（數列）長題目：官方評卷參考、題解、考評報告。" />
-<link rel="canonical" href="https://hkdse.exampaper.cloud/questions/math/2013/paper-1/q19/" />
-<meta property="og:type" content="article" />
-<meta property="og:title" content="2013 DSE 數學 P1 Q19 答案＋詳解｜DSE Hub" />
-<meta property="og:description" content="2013 Paper 1 第 19 題（數列）長題目：官方評卷參考、題解、考評報告。" />
-<meta property="og:url" content="https://hkdse.exampaper.cloud/questions/math/2013/paper-1/q19/" />
-<style>
-:root{--fg:#111;--mut:#555;--line:#ddd;--bg:#fafafa;--acc:#0b5}
-*{box-sizing:border-box}
-body{margin:0;font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC",sans-serif;color:var(--fg);background:var(--bg)}
-header.site{background:#fff;border-bottom:1px solid var(--line)}
-.wrap{max-width:860px;margin:0 auto;padding:0 16px}
-.bc{font-size:14px;color:var(--mut);padding:12px 0}
-.bc a{color:var(--mut)}
-main{padding:8px 0 40px}
-h1{font-size:24px;line-height:1.35;margin:8px 0 16px}
-h2{font-size:17px;margin:0 0 10px;color:#111}
-.card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:16px;margin:0 0 14px}
-.qh p{margin:.4em 0}
-.qh li{margin:.2em 0}
-.ans .big{font-size:34px;font-weight:700;color:var(--acc);margin:4px 0}
-.pct{color:var(--mut);font-size:14px;margin:6px 0 0}
-.ms{overflow-x:auto}
-.ms table{border-collapse:collapse;width:100%;font-size:15px}
-.ms td,.ms th{border:1px solid var(--line);padding:6px 8px;vertical-align:top}
-.ms img{max-width:100%;height:auto}
-.qh img{max-width:100%;height:auto}
-.tag{display:inline-block;margin:0 8px 8px 0;padding:4px 10px;background:#eef7f1;border:1px solid #cfe8da;border-radius:999px;font-size:14px;text-decoration:none;color:#065f46}
-nav.pn{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 0}
-nav.pn a{padding:8px 12px;border:1px solid var(--line);border-radius:8px;background:#fff;text-decoration:none}
-details.card summary{cursor:pointer;font-weight:600}
-footer{border-top:1px solid var(--line);color:var(--mut);font-size:13px;padding:18px 0 40px;background:#fff}
-@media(max-width:600px){h1{font-size:20px}.ans .big{font-size:28px}}
-</style>
-<script>window.MathJax = {tex: {inlineMath: [["$","$"],["\(","\)"]], displayMath: [["$$","$$"],["\[","\]"]]}, options: {enableMenu: false}};</script>
-<script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "QAPage", "mainEntity": {"@type": "Question", "name": "2013 DSE 數學 P1 Q19 答案＋詳解", "text": "現對某城市公共房屋的發展進行研究。已知第 1 年年終時所有公屋單位的總樓面面積為 9 \\times 10^6 \\text{ m}^2，並且在隨後各年裏，每年所落成的公屋單位的總樓面面積均為前一年年終時全部公屋單位的總樓面面積之 r\\%，其中 r 爲一常數，而每年所拆卸的公屋單位的總樓面面積均為 3 \\times 10^5 \\text{ m}^2。現知第 3 年年終時所有公屋單位的總樓面面積為 1.026 \\times 10^7 \\text{ m}^2。\n\n(a) (i) 以 r 表第 2 年年終時所有公屋單位的總樓面面積。\n\n(ii) 求 r。\n\n(b) (i) 以 n 表第 n 年年終時所有公屋單位的總樓面面積。\n\n(ii) 哪一年年終時所有公屋單位的總樓面面積會首次超過 4 \\times 10^7 \\text{ m}^2？\n\n(c) 現假設第 n 年年終時所需公屋單位的總樓面面積為 (a(1.21)^n + b) \\text{ m}^2，其中 a 及 b 均為常數。某些研究結果顯示下列資料：\n\n| n | 第 n 年年終時所需公屋單位的總樓面面積（\\text{m}^2） |\n| --- | --- |\n| 1 | 1 \\times 10^7 |\n| 2 | 1.063 \\times 10^7 |\n\n一研究助理宣稱基於上述假設，某年年終時所有公屋單位的總樓面面積會大於所需公屋單位的總樓面面積。該宣稱是否正確？試解釋你的答案。\n\n*試卷完 —*", "answerCount": 1, "acceptedAnswer": {"@type": "Answer", "text": "官方題解：官方評卷參考表格見頁內（圖片）。　考評報告：甚差。大部分考生誤用r%而非1+r%求答案。甚差。大部分考生誤以為9 \\times 10^6(1 + r\\%)^2 - 2(3 \\times 10^5) = 1.026 \\times 10^7。甚差。大部分考生未能利用等比數列之和的公式得出正確答案。甚差。大部分考生未能利用對數得出正確答案。甚差。大部分考生即使能得出a及b的值,亦未能解不等式。", "upvoteCount": 1}}}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "首頁", "item": "https://hkdse.exampaper.cloud/"}, {"@type": "ListItem", "position": 2, "name": "數學", "item": "https://hkdse.exampaper.cloud/math/"}, {"@type": "ListItem", "position": 3, "name": "2013", "item": "https://hkdse.exampaper.cloud/math/2013/"}, {"@type": "ListItem", "position": 4, "name": "Paper 1", "item": "https://hkdse.exampaper.cloud/math/2013/paper-1/"}, {"@type": "ListItem", "position": 5, "name": "第 19 題", "item": "https://hkdse.exampaper.cloud/questions/math/2013/paper-1/q19/"}]}</script>
+<meta charset="UTF-8">
+<meta http-equiv="refresh" content="0; url=https://hkdse.exampaper.cloud/math/2013/paper-1/q19/">
+<link rel="canonical" href="https://hkdse.exampaper.cloud/math/2013/paper-1/q19/">
+<meta name="robots" content="noindex, follow">
+<title>呢頁已搬遷｜DSE Hub</title>
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LTB27V0RGW"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -51,83 +16,6 @@ footer{border-top:1px solid var(--line);color:var(--mut);font-size:13px;padding:
 </script>
 </head>
 <body>
-<header class="site"><div class="wrap"><nav class="bc" aria-label="麵包屑"><a href="../../../../../index.html">首頁</a> <span>›</span> <a href="../../../../../math/index.html">數學</a> <span>›</span> <a href="../../../../../math/2013/">2013</a> <span>›</span> <a href="../../../../../math/2013/paper-1">Paper 1</a> <span>›</span> <span aria-current="page">第 19 題</span></nav></div></header>
-<main class="wrap">
-<h1>2013 DSE 數學 P1 Q19 答案＋詳解</h1>
-
-<section class="card" id="q"><h2>題目（中文卷）</h2><div class="qh"><p>現對某城市公共房屋的發展進行研究。已知第 1 年年終時所有公屋單位的總樓面面積為 $9 \times 10^6 \text{ m}^2$，並且在隨後各年裏，每年所落成的公屋單位的總樓面面積均為前一年年終時全部公屋單位的總樓面面積之 $r\%$，其中 $r$ 爲一常數，而每年所拆卸的公屋單位的總樓面面積均為 $3 \times 10^5 \text{ m}^2$。現知第 3 年年終時所有公屋單位的總樓面面積為 $1.026 \times 10^7 \text{ m}^2$。</p>
-<p>(a) (i) 以 $r$ 表第 2 年年終時所有公屋單位的總樓面面積。</p>
-<p>(ii) 求 $r$。</p>
-<p>(b) (i) 以 $n$ 表第 $n$ 年年終時所有公屋單位的總樓面面積。</p>
-<p>(ii) 哪一年年終時所有公屋單位的總樓面面積會首次超過 $4 \times 10^7 \text{ m}^2$？</p>
-<p>(c) 現假設第 $n$ 年年終時所需公屋單位的總樓面面積為 $(a(1.21)^n + b) \text{ m}^2$，其中 $a$ 及 $b$ 均為常數。某些研究結果顯示下列資料：</p>
-<table>
-<thead>
-<tr>
-<th>$n$</th>
-<th>第 $n$ 年年終時所需公屋單位的總樓面面積（$\text{m}^2$）</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>$1 \times 10^7$</td>
-</tr>
-<tr>
-<td>2</td>
-<td>$1.063 \times 10^7$</td>
-</tr>
-</tbody>
-</table>
-<p>一研究助理宣稱基於上述假設，某年年終時所有公屋單位的總樓面面積會大於所需公屋單位的總樓面面積。該宣稱是否正確？試解釋你的答案。</p>
-<p><em>試卷完 —</em></p></div></section>
-<details class="card" id="en"><summary>English version（英文卷題目）</summary><div class="qh"><p>The development of public housing in a city is under study. It is given that the total floor area of all public housing flats at the end of the 1st year is $9 \times 10^6 \, \text{m}^2$ and in subsequent years, the total floor area of public housing flats built each year is $r\%$ of the total floor area of all public housing flats at the end of the previous year, where $r$ is a constant, and the total floor area of public housing flats pulled down each year is $3 \times 10^5 \, \text{m}^2$. It is found that the total floor area of all public housing flats at the end of the 3rd year is $1.026 \times 10^7 \, \text{m}^2$.</p>
-<p>(a) (i) Express, in terms of $r$, the total floor area of all public housing flats at the end of the 2nd year.</p>
-<p>(ii) Find $r$.</p>
-<p>(4 marks)</p>
-<p>(b) (i) Express, in terms of $n$, the total floor area of all public housing flats at the end of the $n$th year.</p>
-<p>(ii) At the end of which year will the total floor area of all public housing flats first exceed $4 \times 10^7 \, \text{m}^2$?</p>
-<p>(5 marks)</p>
-<p>(c) It is assumed that the total floor area of public housing flats needed at the end of the $n$th year is $(a(1.21)^n + b) \, \text{m}^2$, where $a$ and $b$ are constants. Some research results reveal the following information:</p>
-<table>
-<thead>
-<tr>
-<th>$n$</th>
-<th>The total floor area of public housing flats needed at the end of the $n$th year ($\text{m}^2$)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>$1 \times 10^7$</td>
-</tr>
-<tr>
-<td>2</td>
-<td>$1.063 \times 10^7$</td>
-</tr>
-</tbody>
-</table>
-<p>A research assistant claims that based on the above assumption, the total floor area of all public housing flats will be greater than the total floor area of public housing flats needed at the end of a certain year. Is the claim correct? Explain your answer.</p>
-<p>(4 marks)</p>
-<p><em>試卷完 —</em></p></div></details>
-<section class="card" id="solution"><h2>官方評卷參考（Marking Scheme）</h2><div class="ms"><p><img src="../../../../../ms/2013P1/Q19.png" alt="MS Q19" /></p></div></section>
-<section class="card" id="report"><h2>考評報告</h2><p>甚差。大部分考生誤用r%而非1+r%求答案。甚差。大部分考生誤以為$9 \times 10^6(1 + r\%)^2 - 2(3 \times 10^5) = 1.026 \times 10^7$。甚差。大部分考生未能利用等比數列之和的公式得出正確答案。甚差。大部分考生未能利用對數得出正確答案。甚差。大部分考生即使能得出a及b的值,亦未能解不等式。</p></section>
-<section class="card" id="topics"><h2>相關課題</h2><p><a class="tag" href="../../../../../topics/sequences/">數列</a></p></section>
-<nav class="pn" aria-label="題目導覽"><a rel="prev" href="../q18/">← 上一題（第 18 題）</a><a href="../../../../../math/2013/paper-1">返回該卷目錄</a><a href="../../../../../index.html#2013P1Q19">互動作答版</a><a href="../../../../../index.html#2013P1Q19A">互動版（展開題解）</a></nav>
-<!-- SKILL-CARD:START --><style>
-.skill-card{margin:18px 0;border:1px solid #d9e6df;background:#f6fbf8;border-radius:10px;padding:14px 16px}
-.skill-card h2{font-size:15px;margin:0 0 8px;color:#1d6b45}
-.skill-card dl{display:grid;grid-template-columns:auto 1fr;gap:4px 10px;margin:0;font-size:14px}
-.skill-card dt{color:#5b6b63;white-space:nowrap}
-.skill-card dd{margin:0}
-.skill-card .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
-.skill-card .tag{background:#e3f2ea;border:1px solid #c3e0d0;border-radius:999px;padding:3px 9px;font-size:13px;color:#1d6b45}
-.skill-card table{border-collapse:collapse;margin-top:10px;font-size:13px;width:100%}
-.skill-card td,.skill-card th{border:1px solid #d9e6df;padding:5px 8px;text-align:left}
-</style><section class="skill-card"><h2>技能分析（呢題考咩、陷阱喺邊）</h2><dl><dt>主課題</dt><dd>數列</dd></dl><div class="tags"><span class="tag">數列</span></div></section><!-- SKILL-CARD:END -->
-</main>
-<footer><div class="wrap">DSE Hub｜2013 數學 Paper 1 第 19 題　
-資料來源：香港考試及評核局歷屆試題及評卷參考（非官方整理，僅供學習）</div></footer>
-<noscript><div class="wrap"><p>本頁內容為靜態文字，毋須 JavaScript 亦可完整閱讀；數學式若未經 MathJax 排版，會以 LaTeX（如 $x^2$）原樣顯示。</p></div></noscript>
+<p>呢頁已搬到 <a href="https://hkdse.exampaper.cloud/math/2013/paper-1/q19/">https://hkdse.exampaper.cloud/math/2013/paper-1/q19/</a>。</p>
 </body>
 </html>

@@ -8,6 +8,8 @@ Options -Indexes
   RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
   RewriteCond %{HTTP_HOST} ^www\.hkdse\.exampaper\.cloud$ [NC]
   RewriteRule ^ https://hkdse.exampaper.cloud%{REQUEST_URI} [L,R=301]
+  # 舊 /questions/math/... 問題頁已併入新深度分析頁 /math/...（同 stub 嘅 canonical/meta-refresh 一致）
+  RewriteRule ^questions/math/([0-9]{4})/(paper-[0-9][a-z]?(-en)?)/q([0-9]+)/?$ https://hkdse.exampaper.cloud/math/$1/$2/q$4/ [R=301,L,NE]
 </IfModule>
 
 <IfModule mod_headers.c>

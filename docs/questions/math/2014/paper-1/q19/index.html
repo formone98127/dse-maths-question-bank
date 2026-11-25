@@ -1,47 +1,12 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-Hant-HK">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>2014 DSE 數學 P1 Q19 答案＋詳解｜DSE Hub</title>
-<meta name="description" content="2014 Paper 1 第 19 題（概率）長題目：官方評卷參考、題解、考評報告。" />
-<link rel="canonical" href="https://hkdse.exampaper.cloud/questions/math/2014/paper-1/q19/" />
-<meta property="og:type" content="article" />
-<meta property="og:title" content="2014 DSE 數學 P1 Q19 答案＋詳解｜DSE Hub" />
-<meta property="og:description" content="2014 Paper 1 第 19 題（概率）長題目：官方評卷參考、題解、考評報告。" />
-<meta property="og:url" content="https://hkdse.exampaper.cloud/questions/math/2014/paper-1/q19/" />
-<style>
-:root{--fg:#111;--mut:#555;--line:#ddd;--bg:#fafafa;--acc:#0b5}
-*{box-sizing:border-box}
-body{margin:0;font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC",sans-serif;color:var(--fg);background:var(--bg)}
-header.site{background:#fff;border-bottom:1px solid var(--line)}
-.wrap{max-width:860px;margin:0 auto;padding:0 16px}
-.bc{font-size:14px;color:var(--mut);padding:12px 0}
-.bc a{color:var(--mut)}
-main{padding:8px 0 40px}
-h1{font-size:24px;line-height:1.35;margin:8px 0 16px}
-h2{font-size:17px;margin:0 0 10px;color:#111}
-.card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:16px;margin:0 0 14px}
-.qh p{margin:.4em 0}
-.qh li{margin:.2em 0}
-.ans .big{font-size:34px;font-weight:700;color:var(--acc);margin:4px 0}
-.pct{color:var(--mut);font-size:14px;margin:6px 0 0}
-.ms{overflow-x:auto}
-.ms table{border-collapse:collapse;width:100%;font-size:15px}
-.ms td,.ms th{border:1px solid var(--line);padding:6px 8px;vertical-align:top}
-.ms img{max-width:100%;height:auto}
-.qh img{max-width:100%;height:auto}
-.tag{display:inline-block;margin:0 8px 8px 0;padding:4px 10px;background:#eef7f1;border:1px solid #cfe8da;border-radius:999px;font-size:14px;text-decoration:none;color:#065f46}
-nav.pn{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 0}
-nav.pn a{padding:8px 12px;border:1px solid var(--line);border-radius:8px;background:#fff;text-decoration:none}
-details.card summary{cursor:pointer;font-weight:600}
-footer{border-top:1px solid var(--line);color:var(--mut);font-size:13px;padding:18px 0 40px;background:#fff}
-@media(max-width:600px){h1{font-size:20px}.ans .big{font-size:28px}}
-</style>
-<script>window.MathJax = {tex: {inlineMath: [["$","$"],["\(","\)"]], displayMath: [["$$","$$"],["\[","\]"]]}, options: {enableMenu: false}};</script>
-<script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "QAPage", "mainEntity": {"@type": "Question", "name": "2014 DSE 數學 P1 Q19 答案＋詳解", "text": "佩玲及志偉參與一含兩回合的遊戲。在第一回合，佩玲及志偉輪流投擲一枚勻稱骰子。首位擲得點數「3」的參與者勝出第一回合。佩玲及志偉參與第一回合，直至其中一人勝出為止。佩玲首先投擲骰子。\n\n(a) 求佩玲勝出該遊戲第一回合的概率。 (3 分)\n\n(b) 在該遊戲的第二回合，球被逐一投入某部由八個管子並列所組成的裝置內（見圖 8）。當球被投入該裝置時，它會隨機跌進其中一管子內。每個管子最多可容納三個球。\n\n\n\n![Figure Q19](2014P1_zh_figs/Q19.png)\n\n\n這回合的參與者採納下列兩個選項中的一個。\n\n選項 1：將兩個球逐一投入該裝置內。若該兩個球跌進同一管子內，則該參與者獲 10 個代幣；若該兩個球跌進兩個相鄰的管子內，則該參與者獲 5 個代幣；否則，該參與者不獲代幣。\n\n選項 2：將三個球逐一投入該裝置內。若該三個球跌進同一管子內，則該參與者獲 50 個代幣；若該三個球跌進三個相鄰的管子內，則該參與者獲 10 個代幣；若該三個球跌進兩個相鄰的管子內，則該參與者獲 5 個代幣；否則，該參與者不獲代幣。\n\n(i) 若第二回合的參與者採納選項 1，求所獲代幣的數目的期望值。\n\n(ii) 第二回合的參與者應採納哪一選項才使所獲代幣的數目的期望值達至最大？試解釋你的答案。\n\n(iii) 只有第一回合的勝方參與第二回合。已知第二回合的參與者採納能使所獲代幣的數目的期望值達至最大的選項。志偉宣稱佩玲在該遊戲中不獲代幣的概率超過 0.9。該宣稱是否正確？試解釋你的答案。 (10 分)\n\n*試卷完 —*", "answerCount": 1, "acceptedAnswer": {"@type": "Answer", "text": "官方題解：官方評卷參考表格見頁內（圖片）。　考評報告：甚差。大部分考生誤以\\frac{1}{6}或\\frac{5}{36}作為答案。甚差。大部分考生未能得出於第二回合參與者採納選項1時獲5個代幣的概率。甚差。大部分考生未能得出於第二回合參與者採納選項2時獲5個代幣的概率。甚差。大部分考生未能得出佩玲在該遊戲中不獲代幣的概率。", "upvoteCount": 1}}}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "首頁", "item": "https://hkdse.exampaper.cloud/"}, {"@type": "ListItem", "position": 2, "name": "數學", "item": "https://hkdse.exampaper.cloud/math/"}, {"@type": "ListItem", "position": 3, "name": "2014", "item": "https://hkdse.exampaper.cloud/math/2014/"}, {"@type": "ListItem", "position": 4, "name": "Paper 1", "item": "https://hkdse.exampaper.cloud/math/2014/paper-1/"}, {"@type": "ListItem", "position": 5, "name": "第 19 題", "item": "https://hkdse.exampaper.cloud/questions/math/2014/paper-1/q19/"}]}</script>
+<meta charset="UTF-8">
+<meta http-equiv="refresh" content="0; url=https://hkdse.exampaper.cloud/math/2014/paper-1/q19/">
+<link rel="canonical" href="https://hkdse.exampaper.cloud/math/2014/paper-1/q19/">
+<meta name="robots" content="noindex, follow">
+<title>呢頁已搬遷｜DSE Hub</title>
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LTB27V0RGW"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -51,54 +16,6 @@ footer{border-top:1px solid var(--line);color:var(--mut);font-size:13px;padding:
 </script>
 </head>
 <body>
-<header class="site"><div class="wrap"><nav class="bc" aria-label="麵包屑"><a href="../../../../../index.html">首頁</a> <span>›</span> <a href="../../../../../math/index.html">數學</a> <span>›</span> <a href="../../../../../math/2014/">2014</a> <span>›</span> <a href="../../../../../math/2014/paper-1">Paper 1</a> <span>›</span> <span aria-current="page">第 19 題</span></nav></div></header>
-<main class="wrap">
-<h1>2014 DSE 數學 P1 Q19 答案＋詳解</h1>
-
-<section class="card" id="q"><h2>題目（中文卷）</h2><div class="qh"><p>佩玲及志偉參與一含兩回合的遊戲。在第一回合，佩玲及志偉輪流投擲一枚勻稱骰子。首位擲得點數「3」的參與者勝出第一回合。佩玲及志偉參與第一回合，直至其中一人勝出為止。佩玲首先投擲骰子。</p>
-<p>(a) 求佩玲勝出該遊戲第一回合的概率。 (3 分)</p>
-<p>(b) 在該遊戲的第二回合，球被逐一投入某部由八個管子並列所組成的裝置內（見圖 8）。當球被投入該裝置時，它會隨機跌進其中一管子內。每個管子最多可容納三個球。</p>
-<p><img alt="Figure Q19" src="2014P1_zh_figs/Q19.png" /></p>
-<p>這回合的參與者採納下列兩個選項中的一個。</p>
-<p>選項 1：將兩個球逐一投入該裝置內。若該兩個球跌進同一管子內，則該參與者獲 10 個代幣；若該兩個球跌進兩個相鄰的管子內，則該參與者獲 5 個代幣；否則，該參與者不獲代幣。</p>
-<p>選項 2：將三個球逐一投入該裝置內。若該三個球跌進同一管子內，則該參與者獲 50 個代幣；若該三個球跌進三個相鄰的管子內，則該參與者獲 10 個代幣；若該三個球跌進兩個相鄰的管子內，則該參與者獲 5 個代幣；否則，該參與者不獲代幣。</p>
-<p>(i) 若第二回合的參與者採納選項 1，求所獲代幣的數目的期望值。</p>
-<p>(ii) 第二回合的參與者應採納哪一選項才使所獲代幣的數目的期望值達至最大？試解釋你的答案。</p>
-<p>(iii) 只有第一回合的勝方參與第二回合。已知第二回合的參與者採納能使所獲代幣的數目的期望值達至最大的選項。志偉宣稱佩玲在該遊戲中不獲代幣的概率超過 0.9。該宣稱是否正確？試解釋你的答案。 (10 分)</p>
-<p><em>試卷完 —</em></p></div></section>
-<details class="card" id="en"><summary>English version（英文卷題目）</summary><div class="qh"><p>Ada and Billy play a game consisting of two rounds. In the first round, Ada and Billy take turns to throw a fair die. The player who first gets a number '3' wins the first round. Ada and Billy play the first round until one of them wins. Ada throws the die first.</p>
-<p>(a) Find the probability that Ada wins the first round of the game. (3 marks)</p>
-<p>(b) In the second round of the game, balls are dropped one by one into a device containing eight tubes arranged side by side (see Figure 8). When a ball is dropped into the device, it falls randomly into one of the tubes. Each tube can hold at most three balls.</p>
-<p><img alt="Figure Q19" src="2014P1_figs/Q19.png" /></p>
-<p>The player of this round adopts one of the following two options.</p>
-<p>Option 1: Two balls are dropped one by one into the device. If the two balls fall into the same tube, then the player gets 10 tokens. If the two balls fall into two adjacent tubes, then the player gets 5 tokens. Otherwise, the player gets no tokens.</p>
-<p>Option 2: Three balls are dropped one by one into the device. If the three balls fall into the same tube, then the player gets 50 tokens. If the three balls fall into three adjacent tubes, then the player gets 10 tokens. If the three balls fall into two adjacent tubes, then the player gets 5 tokens. Otherwise, the player gets no tokens.</p>
-<p>(i) If the player of the second round adopts Option 1, find the expected number of tokens got.</p>
-<p>(ii) Which option should the player of the second round adopt in order to maximise the expected number of tokens got? Explain your answer.</p>
-<p>(iii) Only the winner of the first round plays the second round. It is given that the player of the second round adopts the option which can maximise the expected number of tokens got. Billy claims that the probability of Ada getting no tokens in the game exceeds 0.9. Is the claim correct? Explain your answer. (10 marks)</p>
-<h1>END OF PAPER</h1>
-<p>Answers written in the margins will not be marked.
-There are 30 questions in Section A and 15 questions in Section B. The diagrams in this paper are not necessarily drawn to scale. Choose the best answer for each question.</p>
-<p>Section A</p>
-<p><em>試卷完 —</em></p></div></details>
-<section class="card" id="solution"><h2>官方評卷參考（Marking Scheme）</h2><div class="ms"><p><img src="../../../../../ms/2014P1/Q19.png" alt="MS Q19" /></p></div></section>
-<section class="card" id="report"><h2>考評報告</h2><p>甚差。大部分考生誤以$\frac{1}{6}$或$\frac{5}{36}$作為答案。甚差。大部分考生未能得出於第二回合參與者採納選項1時獲5個代幣的概率。甚差。大部分考生未能得出於第二回合參與者採納選項2時獲5個代幣的概率。甚差。大部分考生未能得出佩玲在該遊戲中不獲代幣的概率。</p></section>
-<section class="card" id="topics"><h2>相關課題</h2><p><a class="tag" href="../../../../../topics/probability/">概率</a></p></section>
-<nav class="pn" aria-label="題目導覽"><a rel="prev" href="../q18/">← 上一題（第 18 題）</a><a href="../../../../../math/2014/paper-1">返回該卷目錄</a><a href="../../../../../index.html#2014P1Q19">互動作答版</a><a href="../../../../../index.html#2014P1Q19A">互動版（展開題解）</a></nav>
-<!-- SKILL-CARD:START --><style>
-.skill-card{margin:18px 0;border:1px solid #d9e6df;background:#f6fbf8;border-radius:10px;padding:14px 16px}
-.skill-card h2{font-size:15px;margin:0 0 8px;color:#1d6b45}
-.skill-card dl{display:grid;grid-template-columns:auto 1fr;gap:4px 10px;margin:0;font-size:14px}
-.skill-card dt{color:#5b6b63;white-space:nowrap}
-.skill-card dd{margin:0}
-.skill-card .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
-.skill-card .tag{background:#e3f2ea;border:1px solid #c3e0d0;border-radius:999px;padding:3px 9px;font-size:13px;color:#1d6b45}
-.skill-card table{border-collapse:collapse;margin-top:10px;font-size:13px;width:100%}
-.skill-card td,.skill-card th{border:1px solid #d9e6df;padding:5px 8px;text-align:left}
-</style><section class="skill-card"><h2>技能分析（呢題考咩、陷阱喺邊）</h2><dl><dt>主課題</dt><dd>概率</dd></dl><div class="tags"><span class="tag">概率</span></div></section><!-- SKILL-CARD:END -->
-</main>
-<footer><div class="wrap">DSE Hub｜2014 數學 Paper 1 第 19 題　
-資料來源：香港考試及評核局歷屆試題及評卷參考（非官方整理，僅供學習）</div></footer>
-<noscript><div class="wrap"><p>本頁內容為靜態文字，毋須 JavaScript 亦可完整閱讀；數學式若未經 MathJax 排版，會以 LaTeX（如 $x^2$）原樣顯示。</p></div></noscript>
+<p>呢頁已搬到 <a href="https://hkdse.exampaper.cloud/math/2014/paper-1/q19/">https://hkdse.exampaper.cloud/math/2014/paper-1/q19/</a>。</p>
 </body>
 </html>

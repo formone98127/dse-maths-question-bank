@@ -987,6 +987,8 @@ Options -Indexes
   RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
   RewriteCond %{HTTP_HOST} ^www\\.hkdse\\.exampaper\\.cloud$ [NC]
   RewriteRule ^ https://hkdse.exampaper.cloud%{REQUEST_URI} [L,R=301]
+  # 舊 /questions/math/... 問題頁已併入新深度分析頁 /math/...（同 stub 嘅 canonical/meta-refresh 一致）
+  RewriteRule ^questions/math/([0-9]{4})/(paper-[0-9][a-z]?(-en)?)/q([0-9]+)/?$ https://hkdse.exampaper.cloud/math/$1/$2/q$4/ [R=301,L,NE]
 </IfModule>
 
 <IfModule mod_headers.c>
@@ -3377,6 +3379,47 @@ def sitemap_local_path(loc):
     return ROOT / path.lstrip("/")
 
 
+def make_question_redirect_stubs():
+    """舊 /questions/math/<年>/<卷>/qN/ 頁換成 redirect stub（canonical + meta refresh；Hostinger 由 .htaccess 301）。"""
+    qdir = ROOT / "questions" / "math"
+    if not qdir.is_dir():
+        print("question stubs 0 (no questions dir)")
+        return 0
+    made = skipped = 0
+    for p in sorted(qdir.glob("*/*/q*/index.html")):
+        rel = p.relative_to(ROOT).as_posix().replace("\\", "/")
+        target_rel = rel[len("questions/") : -len("index.html")]
+        if not (ROOT / target_rel / "index.html").is_file():
+            # 新深度分析頁未出（無 analysis JSON）— 舊頁保留原樣，唔好 301 去 404
+            skipped += 1
+            continue
+        url = f"{SITE}/{target_rel}"
+        stub = (
+            "<!DOCTYPE html>\n"
+            '<html lang="zh-Hant-HK">\n<head>\n<meta charset="UTF-8">\n'
+            f'<meta http-equiv="refresh" content="0; url={esc(url)}">\n'
+            f'<link rel="canonical" href="{esc(url)}">\n'
+            '<meta name="robots" content="noindex, follow">\n'
+            "<title>呢頁已搬遷｜DSE Hub</title>\n"
+            f"{GA4_TAG}\n</head>\n<body>\n"
+            f'<p>呢頁已搬到 <a href="{esc(url)}">{esc(url)}</a>。</p>\n'
+            "</body>\n</html>\n"
+        )
+        p.write_text(stub, encoding="utf-8")
+        made += 1
+    print("question stubs", made, "kept(old, no target)", skipped)
+    return made
+
+
+def make_redirects():
+    """Cloudflare Pages 用嘅 _redirects（Hostinger 301 由 make_htaccess 出）。"""
+    (ROOT / "_redirects").write_text(
+        "# 舊 /questions/math/ 問題頁併入新深度分析頁（Pages 301）\n"
+        "/questions/math/:year/:paper/q:qno/  /math/:year/:paper/q:qno/  301\n",
+        encoding="utf-8",
+    )
+
+
 def sanity_check():
     missing = []
     for loc, pri, freq in SITEMAP_URLS:
@@ -3481,6 +3524,12 @@ def main():
     papers = collect_papers(catalog, questions)
     analyses = load_analyses()
     print("catalog", len(catalog), "questions", len(questions), "papers", len(papers))
+    # 退役 sitemap：sitemap-questions.xml（舊問題頁已 301）、sitemap-topics.xml（URL 已併入 sitemap.xml）
+    for retired in ("sitemap-questions.xml", "sitemap-topics.xml"):
+        p = ROOT / retired
+        if p.is_file():
+            p.unlink()
+            print("retired sitemap removed:", retired)
     make_og()
     make_htaccess()
     make_robots()
@@ -3491,6 +3540,8 @@ def main():
     n_paper = make_paper_pages(catalog, papers, questions, analyses)
     n_question = make_question_pages(catalog, papers, questions, analyses)
     n_topic = make_topic_pages(catalog, questions, papers)
+    n_stub = make_question_redirect_stubs()
+    make_redirects()
     make_sitemap()
     patch_css()
     patch_hub_data(papers)

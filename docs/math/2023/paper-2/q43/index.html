@@ -11,6 +11,8 @@
 <meta name="author" content="DSE Hub">
 <link rel="canonical" href="https://hkdse.exampaper.cloud/math/2023/paper-2/q43/">
 <link rel="alternate" hreflang="zh-Hant-HK" href="https://hkdse.exampaper.cloud/math/2023/paper-2/q43/">
+<link rel="alternate" hreflang="en" href="https://hkdse.exampaper.cloud/math/2023/paper-2-en/q43/">
+<link rel="alternate" hreflang="x-default" href="https://hkdse.exampaper.cloud/math/2023/paper-2/q43/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="DSE Hub">
 <meta property="og:locale" content="zh_HK">
@@ -38,7 +40,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/hub/style.css?v=202611252320">
+<link rel="stylesheet" href="/hub/style.css?v=202611252329">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LTB27V0RGW"></script>
 <script>
@@ -92,31 +94,44 @@
       "mainEntity": {
         "@type": "Question",
         "name": "DSE 數學 2023 卷二 第 43 題",
-        "text": "當某男生擲一飛鏢時，他擲中目標的概率為 0.6。若這男生擲該飛鏢 4 次，求他擲中目標至少 2 次的概率。 - A. $0.5248$ - B. $0.7056$ - C. $0.8208$ - D. $0.8464$",
+        "text": "當某男生擲一飛鏢時，他擲中目標的概率為 0.6。若這男生擲該飛鏢 4 次，求他擲中目標至少 2 次的概率。 - A. 0.5248 - B. 0.7056 - C. 0.8208 - D. 0.8464",
         "answerCount": 4,
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "C. $0.8208$。速解策略：利用二項分佈公式分別計算擲中 2、3、4 次的概率，然後將三者相加即得答案。"
+          "text": "C. 0.8208。速解策略：利用二項分佈公式分別計算擲中 2、3、4 次的概率，然後將三者相加即得答案。"
         },
         "suggestedAnswer": [
           {
             "@type": "Answer",
-            "text": "A. $0.5248$"
+            "text": "A. 0.5248"
           },
           {
             "@type": "Answer",
-            "text": "B. $0.7056$"
+            "text": "B. 0.7056"
           },
           {
             "@type": "Answer",
-            "text": "C. $0.8208$"
+            "text": "C. 0.8208"
           },
           {
             "@type": "Answer",
-            "text": "D. $0.8464$"
+            "text": "D. 0.8464"
           }
         ]
       }
+    },
+    {
+      "@type": "LearningResource",
+      "name": "DSE 數學 2023 卷二 第 43 題",
+      "url": "https://hkdse.exampaper.cloud/math/2023/paper-2/q43/",
+      "inLanguage": "zh-Hant-HK",
+      "learningResourceType": "Exam question",
+      "educationalLevel": "HKDSE",
+      "isPartOf": {
+        "@id": "https://hkdse.exampaper.cloud/#website"
+      },
+      "about": "二項分佈",
+      "teaches": "二項分佈"
     }
   ]
 }
@@ -148,7 +163,7 @@
         <a href="/phys/">物理<span class="n">0 卷</span></a>
         </nav>
         
-    <p class="page-cta open-cta"><a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2023P2Q43">喺題庫開啟呢題</a> · <a href="/math/2023/paper-2/">返回 2023 卷二 全卷</a></p>
+    <p class="page-cta open-cta"><a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2023P2Q43">喺題庫開啟呢題</a> · <a href="/math/2023/paper-2/">返回 2023 卷二 全卷</a> · <a href="/math/2023/paper-2-en/q43/">English version</a></p>
   </div>
 </header>
 <main class="subj-main">
@@ -166,6 +181,7 @@
   <h2>深度分析</h2>
 <p class="ai-chips"><span class="q-ai">二項分佈</span>　認知層次：應用　建議作答 90 秒</p><p>核心公式／定理：P(X=k) = C(n,k)p^k q^{n-k}、P(A U B) = P(A) + P(B)</p><div class="ai-hints"><details class="ai-hint"><summary>提示 1（啟發）</summary><div>定義事件：設 X 為擲中次數，求 P(X&gt;=2)。</div></details><details class="ai-hint"><summary>提示 2（知識）</summary><div>分解事件：P(X&gt;=2) = P(X=2) + P(X=3) + P(X=4)，注意這些事件是互斥的。</div></details><details class="ai-hint"><summary>提示 3（破題）</summary><div>代入公式計算各項概率後相加，檢查是否遺漏了 X=4 的情況。</div></details></div><h3>誘答項逆向工程</h3><div class="ai-oa"><div class="ai-oa-card"><strong>A</strong><p class="ai-oa-meta"><span class="q-ai">計算粗心</span>　誤算互斥事件概率和</p><div>計算出 P(2 次) 與 P(3 次) 後，將兩者相乘而非相加，導致結果偏小且無意義。</div></div><div class="ai-oa-card"><strong>B</strong><p class="ai-oa-meta"><span class="q-ai">計算粗心</span>　誤算互斥事件概率和</p><div>計算出 P(2 次) 與 P(3 次) 後，將兩者相乘而非相加，導致結果偏小且無意義。</div></div><div class="ai-oa-card"><strong>C　✓ 正確答案</strong><div></div></div><div class="ai-oa-card"><strong>D</strong><p class="ai-oa-meta"><span class="q-ai">計算粗心</span>　忽略互斥事件性質</p><div>直接將 P(2 次) 與 P(3 次) 相加，卻忘記了「至少 2 次」包含 P(4 次)，導致漏算一項。</div></div></div><p class="ai-strategy"><strong>速解策略：</strong>利用二項分佈公式分別計算擲中 2、3、4 次的概率，然後將三者相加即得答案。</p>
 </section>
+<nav class="q-prevnext" aria-label="上一題／下一題"><a href="/math/2023/paper-2/q42/" rel="prev">← Q42</a>　<a href="/math/2023/paper-2/q44/" rel="next">Q44 →</a></nav>
 </main>
 <footer><a href="/math/2023/paper-2/">返回 2023 卷二</a> · <a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2023P2Q43">喺題庫開啟呢題</a> · <a href="/hub/">DSE Hub 主頁</a> · 相關：<a href="https://dsemaths.canonlessons.com" rel="noopener">免費 DSE 數學視覺教程</a> · 站內只放索引、連結同課題標籤，只顯示資料庫已有內容</footer>
 </body>

@@ -4,18 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>DSE 數學 2023 卷一 第 10 題深度分析｜DSE Hub</title>
-<meta name="description" content="DSE 數學 2023 卷一 第 10 題深度解析：考點「泊松分佈」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
+<meta name="description" content="DSE 數學 2023 卷一 第 10 題深度解析：考點「幾何：垂直平分線與圓」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
 <meta name="keywords" content="DSE, 香港中學文憑, 歷屆試題, past paper, DSE 數學, DSE 經濟, DSE 化學, DSE 生物, DSE 物理, 免費題庫, 按課題">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="googlebot" content="index, follow">
 <meta name="author" content="DSE Hub">
 <link rel="canonical" href="https://hkdse.exampaper.cloud/math/2023/paper-1/q10/">
 <link rel="alternate" hreflang="zh-Hant-HK" href="https://hkdse.exampaper.cloud/math/2023/paper-1/q10/">
+<link rel="alternate" hreflang="en" href="https://hkdse.exampaper.cloud/math/2023/paper-1-en/q10/">
+<link rel="alternate" hreflang="x-default" href="https://hkdse.exampaper.cloud/math/2023/paper-1/q10/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="DSE Hub">
 <meta property="og:locale" content="zh_HK">
 <meta property="og:title" content="DSE 數學 2023 卷一 第 10 題深度分析｜DSE Hub">
-<meta property="og:description" content="DSE 數學 2023 卷一 第 10 題深度解析：考點「泊松分佈」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
+<meta property="og:description" content="DSE 數學 2023 卷一 第 10 題深度解析：考點「幾何：垂直平分線與圓」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
 <meta property="og:url" content="https://hkdse.exampaper.cloud/math/2023/paper-1/q10/">
 <meta property="og:image" content="https://hkdse.exampaper.cloud/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -23,7 +25,7 @@
 <meta property="og:image:alt" content="DSE Hub 香港中學文憑歷屆試題資料庫">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="DSE 數學 2023 卷一 第 10 題深度分析｜DSE Hub">
-<meta name="twitter:description" content="DSE 數學 2023 卷一 第 10 題深度解析：考點「泊松分佈」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
+<meta name="twitter:description" content="DSE 數學 2023 卷一 第 10 題深度解析：考點「幾何：垂直平分線與圓」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
 <meta name="twitter:image" content="https://hkdse.exampaper.cloud/og-image.png">
 <meta name="theme-color" content="#0b1220">
 <link rel="manifest" href="/manifest.webmanifest">
@@ -38,7 +40,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/hub/style.css?v=202611252320">
+<link rel="stylesheet" href="/hub/style.css?v=202611252329">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LTB27V0RGW"></script>
 <script>
@@ -92,14 +94,26 @@
       "mainEntity": {
         "@type": "Question",
         "name": "DSE 數學 2023 卷一 第 10 題",
-        "text": "已知 $A$ 及 $B$ 為直角坐標平面上的兩相異點。設 $P$ 為該直角坐標平面上的一動點使得 $P$ 與 $A$ 及 $B$ 等距。將 $P$ 的軌跡記為 $\\Gamma$。 (a) 描述 $\\Gamma$ 與 $AB$ 之間的幾何關係。 (1 分) (b) 假定 $A$ 的坐標為 $(2, -4)$ 及 $\\Gamma$ 的方程為 $3x + y - 12 = 0$。求 (i) 通過 $A$ 及 $B$ 的直線的方程， (ii) 以 $AB$ 為一直徑的圓的方程。 (5 分)",
-        "answerCount": 4,
+        "text": "已知 A 及 B 為直角坐標平面上的兩相異點。設 P 為該直角坐標平面上的一動點使得 P 與 A 及 B 等距。將 P 的軌跡記為 \\Gamma。 (a) 描述 \\Gamma 與 AB 之間的幾何關係。 (1 分) (b) 假定 A 的坐標為 (2, -4) 及 \\Gamma 的方程為 3x + y - 12 = 0。求 (i) 通過 A 及 B 的直線的方程， (ii) 以 AB 為一直徑的圓的方程。 (5 分)",
+        "answerCount": 0,
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "先求 p=P(X>4)，再套二項公式。注意(c)需加總所有三人通話和為15的組合，(d)用 P(A)/P(Y≤3)。"
-        },
-        "suggestedAnswer": []
+          "text": "先答 (a) 得 1 分；由已知直線斜率取負倒數求 AB 斜率；用中點公式定圓心；算 A 到圓心距離為半徑；代入圓方程。"
+        }
       }
+    },
+    {
+      "@type": "LearningResource",
+      "name": "DSE 數學 2023 卷一 第 10 題",
+      "url": "https://hkdse.exampaper.cloud/math/2023/paper-1/q10/",
+      "inLanguage": "zh-Hant-HK",
+      "learningResourceType": "Exam question",
+      "educationalLevel": "HKDSE",
+      "isPartOf": {
+        "@id": "https://hkdse.exampaper.cloud/#website"
+      },
+      "about": "幾何：垂直平分線與圓",
+      "teaches": "幾何：垂直平分線與圓"
     }
   ]
 }
@@ -131,7 +145,7 @@
         <a href="/phys/">物理<span class="n">0 卷</span></a>
         </nav>
         
-    <p class="page-cta open-cta"><a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2023P1Q10">喺題庫開啟呢題</a> · <a href="/math/2023/paper-1/">返回 2023 卷一 全卷</a></p>
+    <p class="page-cta open-cta"><a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2023P1Q10">喺題庫開啟呢題</a> · <a href="/math/2023/paper-1/">返回 2023 卷一 全卷</a> · <a href="/math/2023/paper-1-en/q10/">English version</a></p>
   </div>
 </header>
 <main class="subj-main">
@@ -145,8 +159,9 @@
 </section>
 <section class="kw-section" aria-label="深度分析">
   <h2>深度分析</h2>
-<p class="ai-chips"><span class="q-ai">泊松分佈</span>　認知層次：應用　建議作答 240 秒</p><p>核心公式／定理：$P(X=k) = \frac{e^{-\lambda}\lambda^k}{k!}$、$P(Y=k) = \binom{n}{k}p^k(1-p)^{n-k}$</p><div class="ai-hints"><details class="ai-hint"><summary>提示 1（啟發）</summary><div>先算出單人忙碌機率 p = P(X&gt;4)。</div></details><details class="ai-hint"><summary>提示 2（知識）</summary><div>注意 (c) 題中三人總通話數 15 的可能分配方式（如 5,5,5; 3,6,6 等）。</div></details><details class="ai-hint"><summary>提示 3（破題）</summary><div>(d) 題分母是 (b) 題的結果，切勿混淆條件事件。</div></details></div><p class="ai-strategy"><strong>速解策略：</strong>先求 p=P(X&gt;4)，再套二項公式。注意(c)需加總所有三人通話和為15的組合，(d)用 P(A)/P(Y≤3)。</p>
+<p class="ai-chips"><span class="q-ai">幾何：垂直平分線與圓</span>　認知層次：應用　建議作答 300 秒</p><p>核心公式／定理：$\frac{x_1+x_2}{2}, \frac{y_1+y_2}{2}$ (中點)、$\sqrt{(x_1-x_2)^2 + (y_1-y_2)^2}$ (距離)、$(x-h)^2 + (y-k)^2 = r^2$ (圓方程)</p><div class="ai-hints"><details class="ai-hint"><summary>提示 1（啟發）</summary><div>提示：$P$ 到 $A,B$ 等距的點集定義何種幾何圖形？</div></details><details class="ai-hint"><summary>提示 2（知識）</summary><div>知識：垂直平分線的斜率是原直線斜率的負倒數。</div></details><details class="ai-hint"><summary>提示 3（破題）</summary><div>破題：先由 (a) 結論直接鎖定圓心位置與直線方向。</div></details></div><p class="ai-strategy"><strong>速解策略：</strong>先答 (a) 得 1 分；由已知直線斜率取負倒數求 $AB$ 斜率；用中點公式定圓心；算 $A$ 到圓心距離為半徑；代入圓方程。</p>
 </section>
+<nav class="q-prevnext" aria-label="上一題／下一題"><a href="/math/2023/paper-1/q9/" rel="prev">← Q9</a>　<a href="/math/2023/paper-1/q11/" rel="next">Q11 →</a></nav>
 </main>
 <footer><a href="/math/2023/paper-1/">返回 2023 卷一</a> · <a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2023P1Q10">喺題庫開啟呢題</a> · <a href="/hub/">DSE Hub 主頁</a> · 相關：<a href="https://dsemaths.canonlessons.com" rel="noopener">免費 DSE 數學視覺教程</a> · 站內只放索引、連結同課題標籤，只顯示資料庫已有內容</footer>
 </body>

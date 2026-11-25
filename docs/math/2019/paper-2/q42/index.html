@@ -11,6 +11,8 @@
 <meta name="author" content="DSE Hub">
 <link rel="canonical" href="https://hkdse.exampaper.cloud/math/2019/paper-2/q42/">
 <link rel="alternate" hreflang="zh-Hant-HK" href="https://hkdse.exampaper.cloud/math/2019/paper-2/q42/">
+<link rel="alternate" hreflang="en" href="https://hkdse.exampaper.cloud/math/2019/paper-2-en/q42/">
+<link rel="alternate" hreflang="x-default" href="https://hkdse.exampaper.cloud/math/2019/paper-2/q42/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="DSE Hub">
 <meta property="og:locale" content="zh_HK">
@@ -38,7 +40,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/hub/style.css?v=202611252320">
+<link rel="stylesheet" href="/hub/style.css?v=202611252329">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LTB27V0RGW"></script>
 <script>
@@ -92,31 +94,44 @@
       "mainEntity": {
         "@type": "Question",
         "name": "DSE 數學 2019 卷二 第 42 題",
-        "text": "某袋子內有 2 個綠色杯、8 個藍色杯及 9 個紅色杯。若從該袋子內隨機同時抽出 6 個杯，求抽出至少 1 個藍色杯的概率。 - A. $\\frac{31}{57}$ - B. $\\frac{44}{323}$ - C. $\\frac{635}{646}$ - D. $\\frac{968}{969}$",
+        "text": "某袋子內有 2 個綠色杯、8 個藍色杯及 9 個紅色杯。若從該袋子內隨機同時抽出 6 個杯，求抽出至少 1 個藍色杯的概率。 - A. \\frac{31}{57} - B. \\frac{44}{323} - C. \\frac{635}{646} - D. \\frac{968}{969}",
         "answerCount": 4,
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "C. $\\frac{635}{646}$。速解策略：計算 $1 - \\frac{\\binom{11}{6}}{\\binom{19}{6}}$"
+          "text": "C. \\frac{635}{646}。速解策略：計算 1 - \\frac{\\binom{11}{6}}{\\binom{19}{6}}。"
         },
         "suggestedAnswer": [
           {
             "@type": "Answer",
-            "text": "A. $\\frac{31}{57}$"
+            "text": "A. \\frac{31}{57}"
           },
           {
             "@type": "Answer",
-            "text": "B. $\\frac{44}{323}$"
+            "text": "B. \\frac{44}{323}"
           },
           {
             "@type": "Answer",
-            "text": "C. $\\frac{635}{646}$"
+            "text": "C. \\frac{635}{646}"
           },
           {
             "@type": "Answer",
-            "text": "D. $\\frac{968}{969}$"
+            "text": "D. \\frac{968}{969}"
           }
         ]
       }
+    },
+    {
+      "@type": "LearningResource",
+      "name": "DSE 數學 2019 卷二 第 42 題",
+      "url": "https://hkdse.exampaper.cloud/math/2019/paper-2/q42/",
+      "inLanguage": "zh-Hant-HK",
+      "learningResourceType": "Exam question",
+      "educationalLevel": "HKDSE",
+      "isPartOf": {
+        "@id": "https://hkdse.exampaper.cloud/#website"
+      },
+      "about": "組合概率與補集法則",
+      "teaches": "組合概率與補集法則"
     }
   ]
 }
@@ -148,7 +163,7 @@
         <a href="/phys/">物理<span class="n">0 卷</span></a>
         </nav>
         
-    <p class="page-cta open-cta"><a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2019P2Q42">喺題庫開啟呢題</a> · <a href="/math/2019/paper-2/">返回 2019 卷二 全卷</a></p>
+    <p class="page-cta open-cta"><a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2019P2Q42">喺題庫開啟呢題</a> · <a href="/math/2019/paper-2/">返回 2019 卷二 全卷</a> · <a href="/math/2019/paper-2-en/q42/">English version</a></p>
   </div>
 </header>
 <main class="subj-main">
@@ -166,6 +181,7 @@
   <h2>深度分析</h2>
 <p class="ai-chips"><span class="q-ai">組合概率與補集法則</span>　認知層次：應用　建議作答 90 秒</p><p>核心公式／定理：$P(A) = 1 - P(A^c)$、$\binom{n}{r} = \frac{n!}{r!(n-r)!}$</p><div class="ai-hints"><details class="ai-hint"><summary>提示 1（啟發）</summary><div>直接計算「至少一個藍色杯」的情況需要分六種情況加總，非常繁瑣；試著思考其反面情況是什麼？</div></details><details class="ai-hint"><summary>提示 2（知識）</summary><div>袋子中總共有多少個杯子？其中有多少個不是藍色的？請先寫下非藍色杯的總數。</div></details><details class="ai-hint"><summary>提示 3（破題）</summary><div>利用補集法則：$P(\text{至少 1 藍}) = 1 - P(\text{全選非藍})$，請計算從 $11$ 個非藍杯中選 $6$ 個的組合數與總組合數之比。</div></details></div><h3>誘答項逆向工程</h3><div class="ai-oa"><div class="ai-oa-card"><strong>A</strong><p class="ai-oa-meta"><span class="q-ai">計算粗心</span>　分母計算錯誤</p><div>學生可能算出總組合數為 $\binom{19}{6}=27132$，但分母誤算成 $57$ 或漏掉階乘運算，導致數值極小。</div></div><div class="ai-oa-card"><strong>B</strong><p class="ai-oa-meta"><span class="q-ai">計算粗心</span>　分子計算錯誤</p><div>學生正確使用補集法則，但計算「全選非藍杯」的組合數時出錯，例如誤算 $\binom{11}{6}$ 或加法運算錯誤。</div></div><div class="ai-oa-card"><strong>C　✓ 正確答案</strong><div></div></div><div class="ai-oa-card"><strong>D</strong><p class="ai-oa-meta"><span class="q-ai">概念錯誤</span>　忽略補集法則</p><div>學生可能嘗試直接計算「至少 1 藍杯」的複雜情況（1 藍、2 藍...），忘記用 $1-P(無藍)$，或誤以為答案是 $\frac{\binom{8}{1}\binom{11}{5}}{\binom{19}{6}}$ 等未歸一化形式。</div></div></div><p class="ai-strategy"><strong>速解策略：</strong>計算 $1 - \frac{\binom{11}{6}}{\binom{19}{6}}$</p>
 </section>
+<nav class="q-prevnext" aria-label="上一題／下一題"><a href="/math/2019/paper-2/q41/" rel="prev">← Q41</a>　<a href="/math/2019/paper-2/q43/" rel="next">Q43 →</a></nav>
 </main>
 <footer><a href="/math/2019/paper-2/">返回 2019 卷二</a> · <a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2019P2Q42">喺題庫開啟呢題</a> · <a href="/hub/">DSE Hub 主頁</a> · 相關：<a href="https://dsemaths.canonlessons.com" rel="noopener">免費 DSE 數學視覺教程</a> · 站內只放索引、連結同課題標籤，只顯示資料庫已有內容</footer>
 </body>

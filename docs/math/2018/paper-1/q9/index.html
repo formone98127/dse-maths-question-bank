@@ -4,18 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>DSE 數學 2018 卷一 第 9 題深度分析｜DSE Hub</title>
-<meta name="description" content="DSE 數學 2018 卷一 第 9 題深度解析：考點「概率與統計」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
+<meta name="description" content="DSE 數學 2018 卷一 第 9 題深度解析：考點「速率、距離與時間」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
 <meta name="keywords" content="DSE, 香港中學文憑, 歷屆試題, past paper, DSE 數學, DSE 經濟, DSE 化學, DSE 生物, DSE 物理, 免費題庫, 按課題">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="googlebot" content="index, follow">
 <meta name="author" content="DSE Hub">
 <link rel="canonical" href="https://hkdse.exampaper.cloud/math/2018/paper-1/q9/">
 <link rel="alternate" hreflang="zh-Hant-HK" href="https://hkdse.exampaper.cloud/math/2018/paper-1/q9/">
+<link rel="alternate" hreflang="en" href="https://hkdse.exampaper.cloud/math/2018/paper-1-en/q9/">
+<link rel="alternate" hreflang="x-default" href="https://hkdse.exampaper.cloud/math/2018/paper-1/q9/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="DSE Hub">
 <meta property="og:locale" content="zh_HK">
 <meta property="og:title" content="DSE 數學 2018 卷一 第 9 題深度分析｜DSE Hub">
-<meta property="og:description" content="DSE 數學 2018 卷一 第 9 題深度解析：考點「概率與統計」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
+<meta property="og:description" content="DSE 數學 2018 卷一 第 9 題深度解析：考點「速率、距離與時間」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
 <meta property="og:url" content="https://hkdse.exampaper.cloud/math/2018/paper-1/q9/">
 <meta property="og:image" content="https://hkdse.exampaper.cloud/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -23,7 +25,7 @@
 <meta property="og:image:alt" content="DSE Hub 香港中學文憑歷屆試題資料庫">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="DSE 數學 2018 卷一 第 9 題深度分析｜DSE Hub">
-<meta name="twitter:description" content="DSE 數學 2018 卷一 第 9 題深度解析：考點「概率與統計」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
+<meta name="twitter:description" content="DSE 數學 2018 卷一 第 9 題深度解析：考點「速率、距離與時間」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
 <meta name="twitter:image" content="https://hkdse.exampaper.cloud/og-image.png">
 <meta name="theme-color" content="#0b1220">
 <link rel="manifest" href="/manifest.webmanifest">
@@ -38,7 +40,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/hub/style.css?v=202611252320">
+<link rel="stylesheet" href="/hub/style.css?v=202611252329">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LTB27V0RGW"></script>
 <script>
@@ -92,14 +94,26 @@
       "mainEntity": {
         "@type": "Question",
         "name": "DSE 數學 2018 卷一 第 9 題",
-        "text": "某汽車以平均速率 $72\\text{ km/h}$ 由 $P$ 城駛至 $Q$ 城，該汽車然後以平均速率 $90\\text{ km/h}$ 由 $Q$ 城駛至 $R$ 城。已知該汽車在整段行程中以 $161$ 分鐘行駛 $210\\text{ km}$。該汽車由 $P$ 城駛至 $Q$ 城需時多久？（5 分） 甲部(2) (35 分)",
-        "answerCount": 4,
+        "text": "某汽車以平均速率 72\\text{ km/h} 由 P 城駛至 Q 城，該汽車然後以平均速率 90\\text{ km/h} 由 Q 城駛至 R 城。已知該汽車在整段行程中以 161 分鐘行駛 210\\text{ km}。該汽車由 P 城駛至 Q 城需時多久？（5 分） 甲部(2) (35 分)",
+        "answerCount": 0,
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "先由正規分佈求 $\\mu, a$；再算單盒 Regular 機率 $p$；最後用二項式展開計算三盒組合之聯合與條件機率。"
-        },
-        "suggestedAnswer": []
+          "text": "轉單位後列式：\\frac{x}{72} + \\frac{210-x}{90} = \\frac{161}{60}，解出 x 再代回求時間。"
+        }
       }
+    },
+    {
+      "@type": "LearningResource",
+      "name": "DSE 數學 2018 卷一 第 9 題",
+      "url": "https://hkdse.exampaper.cloud/math/2018/paper-1/q9/",
+      "inLanguage": "zh-Hant-HK",
+      "learningResourceType": "Exam question",
+      "educationalLevel": "HKDSE",
+      "isPartOf": {
+        "@id": "https://hkdse.exampaper.cloud/#website"
+      },
+      "about": "速率、距離與時間",
+      "teaches": "速率、距離與時間"
     }
   ]
 }
@@ -131,7 +145,7 @@
         <a href="/phys/">物理<span class="n">0 卷</span></a>
         </nav>
         
-    <p class="page-cta open-cta"><a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2018P1Q9">喺題庫開啟呢題</a> · <a href="/math/2018/paper-1/">返回 2018 卷一 全卷</a></p>
+    <p class="page-cta open-cta"><a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2018P1Q9">喺題庫開啟呢題</a> · <a href="/math/2018/paper-1/">返回 2018 卷一 全卷</a> · <a href="/math/2018/paper-1-en/q9/">English version</a></p>
   </div>
 </header>
 <main class="subj-main">
@@ -142,8 +156,9 @@
 </section>
 <section class="kw-section" aria-label="深度分析">
   <h2>深度分析</h2>
-<p class="ai-chips"><span class="q-ai">概率與統計</span>　認知層次：應用　建議作答 480 秒</p><p>核心公式／定理：$Z = \frac{X - \mu}{\sigma}$、$P(X \leq x) = \Phi(\frac{x - \mu}{\sigma})$、$P(A|B) = \frac{P(A \cap B)}{P(B)}$</p><div class="ai-hints"><details class="ai-hint"><summary>提示 1（啟發）</summary><div>Hint1: 畫出正規曲線，標記 $P(W &gt; 260) = 0.1056$ 與 $P(a &lt; W \leq 260) = 0.7357$。</div></details><details class="ai-hint"><summary>提示 2（知識）</summary><div>Hint2: 單盒有 8 個蘋果，Regular 定義為 Medium $\geq 6$，故可能組合為 (6,2), (7,1), (8,0)。</div></details><details class="ai-hint"><summary>提示 3（破題）</summary><div>Hint3: 第 (c) 問需區分「聯合事件」與「條件事件」，畫樹狀圖或維恩圖輔助理解。</div></details></div><p class="ai-strategy"><strong>速解策略：</strong>先由正規分佈求 $\mu, a$；再算單盒 Regular 機率 $p$；最後用二項式展開計算三盒組合之聯合與條件機率。</p>
+<p class="ai-chips"><span class="q-ai">速率、距離與時間</span>　認知層次：應用　建議作答 240 秒</p><p>核心公式／定理：$\text{距離} = \text{速率} \times \text{時間}$、$1\text{ km/h} = \frac{1}{3.6}\text{ m/s}$</p><div class="ai-hints"><details class="ai-hint"><summary>提示 1（啟發）</summary><div>先畫行程圖標出 P, Q, R 三點及兩段速率。</div></details><details class="ai-hint"><summary>提示 2（知識）</summary><div>注意題目給的是分鐘，公式計算通常用小時。</div></details><details class="ai-hint"><summary>提示 3（破題）</summary><div>設未知數 $x$ 代表 PQ 距離，QR 距離即為總距離減 $x$。</div></details></div><p class="ai-strategy"><strong>速解策略：</strong>轉單位後列式：$\frac{x}{72} + \frac{210-x}{90} = \frac{161}{60}$，解出 $x$ 再代回求時間。</p>
 </section>
+<nav class="q-prevnext" aria-label="上一題／下一題"><a href="/math/2018/paper-1/q8/" rel="prev">← Q8</a>　<a href="/math/2018/paper-1/q10/" rel="next">Q10 →</a></nav>
 </main>
 <footer><a href="/math/2018/paper-1/">返回 2018 卷一</a> · <a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2018P1Q9">喺題庫開啟呢題</a> · <a href="/hub/">DSE Hub 主頁</a> · 相關：<a href="https://dsemaths.canonlessons.com" rel="noopener">免費 DSE 數學視覺教程</a> · 站內只放索引、連結同課題標籤，只顯示資料庫已有內容</footer>
 </body>

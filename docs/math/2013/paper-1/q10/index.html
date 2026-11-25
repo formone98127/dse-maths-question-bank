@@ -4,18 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>DSE 數學 2013 卷一 第 10 題深度分析｜DSE Hub</title>
-<meta name="description" content="DSE 數學 2013 卷一 第 10 題深度解析：考點「指數與對數函數」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
+<meta name="description" content="DSE 數學 2013 卷一 第 10 題深度解析：考點「統計」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
 <meta name="keywords" content="DSE, 香港中學文憑, 歷屆試題, past paper, DSE 數學, DSE 經濟, DSE 化學, DSE 生物, DSE 物理, 免費題庫, 按課題">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="googlebot" content="index, follow">
 <meta name="author" content="DSE Hub">
 <link rel="canonical" href="https://hkdse.exampaper.cloud/math/2013/paper-1/q10/">
 <link rel="alternate" hreflang="zh-Hant-HK" href="https://hkdse.exampaper.cloud/math/2013/paper-1/q10/">
+<link rel="alternate" hreflang="en" href="https://hkdse.exampaper.cloud/math/2013/paper-1-en/q10/">
+<link rel="alternate" hreflang="x-default" href="https://hkdse.exampaper.cloud/math/2013/paper-1/q10/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="DSE Hub">
 <meta property="og:locale" content="zh_HK">
 <meta property="og:title" content="DSE 數學 2013 卷一 第 10 題深度分析｜DSE Hub">
-<meta property="og:description" content="DSE 數學 2013 卷一 第 10 題深度解析：考點「指數與對數函數」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
+<meta property="og:description" content="DSE 數學 2013 卷一 第 10 題深度解析：考點「統計」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
 <meta property="og:url" content="https://hkdse.exampaper.cloud/math/2013/paper-1/q10/">
 <meta property="og:image" content="https://hkdse.exampaper.cloud/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -23,7 +25,7 @@
 <meta property="og:image:alt" content="DSE Hub 香港中學文憑歷屆試題資料庫">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="DSE 數學 2013 卷一 第 10 題深度分析｜DSE Hub">
-<meta name="twitter:description" content="DSE 數學 2013 卷一 第 10 題深度解析：考點「指數與對數函數」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
+<meta name="twitter:description" content="DSE 數學 2013 卷一 第 10 題深度解析：考點「統計」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
 <meta name="twitter:image" content="https://hkdse.exampaper.cloud/og-image.png">
 <meta name="theme-color" content="#0b1220">
 <link rel="manifest" href="/manifest.webmanifest">
@@ -38,7 +40,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/hub/style.css?v=202611252320">
+<link rel="stylesheet" href="/hub/style.css?v=202611252329">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LTB27V0RGW"></script>
 <script>
@@ -93,13 +95,25 @@
         "@type": "Question",
         "name": "DSE 數學 2013 卷一 第 10 題",
         "text": "A 委員會的委員年歲如下： | 17 | 18 | 21 | 21 | 22 | 22 | 23 | 23 | 23 | 31 | | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | | 31 | 34 | 35 | 36 | 47 | 47 | 58 | 68 | 69 | 69 | (a) 寫出 A 委員會的委員年歲的中位數及眾數。 (2 分) (b) 下面的幹葉圖顯示 B 委員會的委員年歲的分佈。已知這分佈的分佈域為 47。 | 幹（十位） | 葉（個位） | | --- | --- | | 2 | a 5 6 7 | | 3 | 3 3 8 | | 4 | 3 | | 5 | 1 2 9 | | 6 | 7 b | (i) 求 a 及 b。 (4 分) (ii) 現從每個委員會中，各隨機選出一名委員作該委員會的代表。當該兩名代表的年歲之差超過 40 時，他們便可參加某比賽。求這兩名代表可參加該比賽的概率。",
-        "answerCount": 4,
+        "answerCount": 0,
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "先化簡對數不等式得定義域交集；梯形則代數計算；求 N'(t) 後積分得 N(t)，代入 t=4 判斷正負。"
-        },
-        "suggestedAnswer": []
+          "text": "先解 a=0, b=7，再列 A 委員會年歲列表，計算差>40 的組合數除以總組合數。"
+        }
       }
+    },
+    {
+      "@type": "LearningResource",
+      "name": "DSE 數學 2013 卷一 第 10 題",
+      "url": "https://hkdse.exampaper.cloud/math/2013/paper-1/q10/",
+      "inLanguage": "zh-Hant-HK",
+      "learningResourceType": "Exam question",
+      "educationalLevel": "HKDSE",
+      "isPartOf": {
+        "@id": "https://hkdse.exampaper.cloud/#website"
+      },
+      "about": "統計",
+      "teaches": "統計"
     }
   ]
 }
@@ -131,7 +145,7 @@
         <a href="/phys/">物理<span class="n">0 卷</span></a>
         </nav>
         
-    <p class="page-cta open-cta"><a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2013P1Q10">喺題庫開啟呢題</a> · <a href="/math/2013/paper-1/">返回 2013 卷一 全卷</a></p>
+    <p class="page-cta open-cta"><a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2013P1Q10">喺題庫開啟呢題</a> · <a href="/math/2013/paper-1/">返回 2013 卷一 全卷</a> · <a href="/math/2013/paper-1-en/q10/">English version</a></p>
   </div>
 </header>
 <main class="subj-main">
@@ -205,8 +219,9 @@
 </section>
 <section class="kw-section" aria-label="深度分析">
   <h2>深度分析</h2>
-<p class="ai-chips"><span class="q-ai">指數與對數函數</span>　認知層次：分析　建議作答 480 秒</p><p>核心公式／定理：$\ln a - \ln b = \ln(\frac{a}{b})$、$\int_a^b f(x) dx \approx \frac{h}{2}[y_0 + 2(y_1+y_2+y_3) + y_4]$、$N&#x27;(t) = \text{出生率} - \text{死亡率}$</p><div class="ai-hints"><details class="ai-hint"><summary>提示 1（啟發）</summary><div>利用對數商法則合併 f(x) 為單一對數項。</div></details><details class="ai-hint"><summary>提示 2（知識）</summary><div>梯形則公式中首尾項係數為 1，中間項係數為 2。</div></details><details class="ai-hint"><summary>提示 3（破題）</summary><div>若二階導數大於 0 (凹上)，梯形則會低估面積；反之亦然。</div></details></div><p class="ai-strategy"><strong>速解策略：</strong>先化簡對數不等式得定義域交集；梯形則代數計算；求 N&#x27;(t) 後積分得 N(t)，代入 t=4 判斷正負。</p>
+<p class="ai-chips"><span class="q-ai">統計</span>　認知層次：應用　建議作答 180 秒</p><p>核心公式／定理：中位數：排序後取中間值、眾數：出現次數最多的數、概率：有利情況/總情況</p><div class="ai-hints"><details class="ai-hint"><summary>提示 1（啟發）</summary><div>先將 A 委員會數據排序以找中位數與眾數</div></details><details class="ai-hint"><summary>提示 2（知識）</summary><div>分佈域為最大值減最小值，利用此性質解 a,b</div></details><details class="ai-hint"><summary>提示 3（破題）</summary><div>概率問題需先列出所有可能組合再計數</div></details></div><p class="ai-strategy"><strong>速解策略：</strong>先解 a=0, b=7，再列 A 委員會年歲列表，計算差&gt;40 的組合數除以總組合數</p>
 </section>
+<nav class="q-prevnext" aria-label="上一題／下一題"><a href="/math/2013/paper-1/q9/" rel="prev">← Q9</a>　<a href="/math/2013/paper-1/q11/" rel="next">Q11 →</a></nav>
 </main>
 <footer><a href="/math/2013/paper-1/">返回 2013 卷一</a> · <a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2013P1Q10">喺題庫開啟呢題</a> · <a href="/hub/">DSE Hub 主頁</a> · 相關：<a href="https://dsemaths.canonlessons.com" rel="noopener">免費 DSE 數學視覺教程</a> · 站內只放索引、連結同課題標籤，只顯示資料庫已有內容</footer>
 </body>

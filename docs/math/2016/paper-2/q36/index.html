@@ -11,6 +11,8 @@
 <meta name="author" content="DSE Hub">
 <link rel="canonical" href="https://hkdse.exampaper.cloud/math/2016/paper-2/q36/">
 <link rel="alternate" hreflang="zh-Hant-HK" href="https://hkdse.exampaper.cloud/math/2016/paper-2/q36/">
+<link rel="alternate" hreflang="en" href="https://hkdse.exampaper.cloud/math/2016/paper-2-en/q36/">
+<link rel="alternate" hreflang="x-default" href="https://hkdse.exampaper.cloud/math/2016/paper-2/q36/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="DSE Hub">
 <meta property="og:locale" content="zh_HK">
@@ -38,7 +40,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/hub/style.css?v=202611252320">
+<link rel="stylesheet" href="/hub/style.css?v=202611252329">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LTB27V0RGW"></script>
 <script>
@@ -92,11 +94,11 @@
       "mainEntity": {
         "@type": "Question",
         "name": "DSE 數學 2016 卷二 第 36 題",
-        "text": "設 $a_n$ 為一等比數列的第 $n$ 項。若 $a_3=21$ 及 $a_7=189$ ，則下列何者必為正確？ I. 該數列的公比小於 1 。 II. 該數列的某些項為無理數。 III. 該數列的首 99 項之和大於 $3 \\times 10^{24}$ 。 - A. 只有 I - B. 只有 II - C. 只有 I 及 III - D. 只有 II 及 III",
+        "text": "設 a_n 為一等比數列的第 n 項。若 a_3=21 及 a_7=189 ，則下列何者必為正確？ I. 該數列的公比小於 1 。 II. 該數列的某些項為無理數。 III. 該數列的首 99 項之和大於 3 \\times 10^{24} 。 - A. 只有 I - B. 只有 II - C. 只有 I 及 III - D. 只有 II 及 III",
         "answerCount": 4,
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "B. 只有 II。速解策略：先由 $a_7/a_3=3^4$ 求出 $r=3$；再判斷 $S_{99} \\approx a_1 \\cdot 3^{98}$ 的數量級遠大於目標值。"
+          "text": "B. 只有 II。速解策略：先由 a_7/a_3=3^4 求出 r=3；再判斷 S_{99} \\approx a_1 \\cdot 3^{98} 的數量級遠大於目標值。"
         },
         "suggestedAnswer": [
           {
@@ -117,6 +119,19 @@
           }
         ]
       }
+    },
+    {
+      "@type": "LearningResource",
+      "name": "DSE 數學 2016 卷二 第 36 題",
+      "url": "https://hkdse.exampaper.cloud/math/2016/paper-2/q36/",
+      "inLanguage": "zh-Hant-HK",
+      "learningResourceType": "Exam question",
+      "educationalLevel": "HKDSE",
+      "isPartOf": {
+        "@id": "https://hkdse.exampaper.cloud/#website"
+      },
+      "about": "等比數列",
+      "teaches": "等比數列"
     }
   ]
 }
@@ -148,7 +163,7 @@
         <a href="/phys/">物理<span class="n">0 卷</span></a>
         </nav>
         
-    <p class="page-cta open-cta"><a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2016P2Q36">喺題庫開啟呢題</a> · <a href="/math/2016/paper-2/">返回 2016 卷二 全卷</a></p>
+    <p class="page-cta open-cta"><a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2016P2Q36">喺題庫開啟呢題</a> · <a href="/math/2016/paper-2/">返回 2016 卷二 全卷</a> · <a href="/math/2016/paper-2-en/q36/">English version</a></p>
   </div>
 </header>
 <main class="subj-main">
@@ -169,6 +184,7 @@ III. 該數列的首 99 項之和大於 $3 \times 10^{24}$ 。</p>
   <h2>深度分析</h2>
 <p class="ai-chips"><span class="q-ai">等比數列</span>　認知層次：分析　建議作答 90 秒</p><p>核心公式／定理：$a_n = a_1 r^{n-1}$、$\log_b(x) = y \iff b^y = x$、$S_n = \frac{a_1(r^n - 1)}{r - 1}$ (當 $r \neq 1$)</p><div class="ai-hints"><details class="ai-hint"><summary>提示 1（啟發）</summary><div>利用等比數列通項公式 $a_7 = a_3 \cdot r^{7-3}$，代入已知數值求解公比 $r$。</div></details><details class="ai-hint"><summary>提示 2（知識）</summary><div>計算出 $r$ 後，檢視選項 I 與 II：比較 $r$ 與 1 的大小關係；確認 $3^k$ (整數 $k\ge2$) 是否為無理數。</div></details><details class="ai-hint"><summary>提示 3（破題）</summary><div>針對選項 III，將 $S_{99}$ 的公式展開並代入 $a_1$ 與 $r$ 的值，估算其數量級是否超過 $3 \times 10^{24}$。</div></details></div><h3>誘答項逆向工程</h3><div class="ai-oa"><div class="ai-oa-card"><strong>A</strong><p class="ai-oa-meta"><span class="q-ai">概念錯誤</span>　誤判公比大小</p><div>學生計算出 $r=3$，卻錯誤地認為因為 $a_7 &gt; a_3$ 所以 $r$ 必須小於 1，混淆了數值增減與公比定義的邏輯關係。</div></div><div class="ai-oa-card"><strong>B　✓ 正確答案</strong><div></div></div><div class="ai-oa-card"><strong>C</strong><p class="ai-oa-meta"><span class="q-ai">概念錯誤</span>　誤判公比大小與和的估算</p><div>學生算出 $r=3$ 後，錯誤地將「公比大於 1」解讀為「小於 1」(I 錯)，但同時忽略了 $S_{99}$ 的巨大數量級，導致誤判 III。</div></div><div class="ai-oa-card"><strong>D</strong><p class="ai-oa-meta"><span class="q-ai">計算粗心</span>　指數運算估算失誤</p><div>學生正確算出 $r=3$ 且判斷 II 為真，但在評估 III 時，錯誤地認為 $3^{98}$ 遠小於 $10^{24}$，低估了指數增長的速度。</div></div></div><p class="ai-strategy"><strong>速解策略：</strong>先由 $a_7/a_3=3^4$ 求出 $r=3$；再判斷 $S_{99} \approx a_1 \cdot 3^{98}$ 的數量級遠大於目標值。</p>
 </section>
+<nav class="q-prevnext" aria-label="上一題／下一題"><a href="/math/2016/paper-2/q35/" rel="prev">← Q35</a>　<a href="/math/2016/paper-2/q37/" rel="next">Q37 →</a></nav>
 </main>
 <footer><a href="/math/2016/paper-2/">返回 2016 卷二</a> · <a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2016P2Q36">喺題庫開啟呢題</a> · <a href="/hub/">DSE Hub 主頁</a> · 相關：<a href="https://dsemaths.canonlessons.com" rel="noopener">免費 DSE 數學視覺教程</a> · 站內只放索引、連結同課題標籤，只顯示資料庫已有內容</footer>
 </body>

@@ -11,6 +11,8 @@
 <meta name="author" content="DSE Hub">
 <link rel="canonical" href="https://hkdse.exampaper.cloud/math/2021/paper-2/q5/">
 <link rel="alternate" hreflang="zh-Hant-HK" href="https://hkdse.exampaper.cloud/math/2021/paper-2/q5/">
+<link rel="alternate" hreflang="en" href="https://hkdse.exampaper.cloud/math/2021/paper-2-en/q5/">
+<link rel="alternate" hreflang="x-default" href="https://hkdse.exampaper.cloud/math/2021/paper-2/q5/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="DSE Hub">
 <meta property="og:locale" content="zh_HK">
@@ -38,7 +40,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/hub/style.css?v=202611252320">
+<link rel="stylesheet" href="/hub/style.css?v=202611252329">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LTB27V0RGW"></script>
 <script>
@@ -92,31 +94,44 @@
       "mainEntity": {
         "@type": "Question",
         "name": "DSE 數學 2021 卷二 第 5 題",
-        "text": "若 $x=6.24$（準確至二位小數），求 $x$ 值的範圍。 - A. $6.23 < x \\leq 6.25$ - B. $6.23 \\leq x < 6.25$ - C. $6.235 < x \\leq 6.245$ - D. $6.235 \\leq x < 6.245$",
+        "text": "若 x=6.24（準確至二位小數），求 x 值的範圍。 - A. 6.23 < x \\leq 6.25 - B. 6.23 \\leq x < 6.25 - C. 6.235 < x \\leq 6.245 - D. 6.235 \\leq x < 6.245",
         "answerCount": 4,
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "D. $6.235 \\leq x < 6.245$。速解策略：計算誤差半徑 $0.5 \\times 10^{-2}=0.005$，得邊界 $6.235, 6.245$；驗證邊界值四捨五入後是否等於 $6.24$ 以決定不等號方向。"
+          "text": "D. 6.235 \\leq x < 6.245。速解策略：計算誤差半徑 0.5 \\times 10^{-2}=0.005，得邊界 6.235, 6.245；驗證邊界值四捨五入後是否等於 6.24 以決定不等號方向。"
         },
         "suggestedAnswer": [
           {
             "@type": "Answer",
-            "text": "A. $6.23 < x \\leq 6.25$"
+            "text": "A. 6.23 < x \\leq 6.25"
           },
           {
             "@type": "Answer",
-            "text": "B. $6.23 \\leq x < 6.25$"
+            "text": "B. 6.23 \\leq x < 6.25"
           },
           {
             "@type": "Answer",
-            "text": "C. $6.235 < x \\leq 6.245$"
+            "text": "C. 6.235 < x \\leq 6.245"
           },
           {
             "@type": "Answer",
-            "text": "D. $6.235 \\leq x < 6.245$"
+            "text": "D. 6.235 \\leq x < 6.245"
           }
         ]
       }
+    },
+    {
+      "@type": "LearningResource",
+      "name": "DSE 數學 2021 卷二 第 5 題",
+      "url": "https://hkdse.exampaper.cloud/math/2021/paper-2/q5/",
+      "inLanguage": "zh-Hant-HK",
+      "learningResourceType": "Exam question",
+      "educationalLevel": "HKDSE",
+      "isPartOf": {
+        "@id": "https://hkdse.exampaper.cloud/#website"
+      },
+      "about": "近似值與誤差範圍",
+      "teaches": "近似值與誤差範圍"
     }
   ]
 }
@@ -148,7 +163,7 @@
         <a href="/phys/">物理<span class="n">0 卷</span></a>
         </nav>
         
-    <p class="page-cta open-cta"><a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2021P2Q5">喺題庫開啟呢題</a> · <a href="/math/2021/paper-2/">返回 2021 卷二 全卷</a></p>
+    <p class="page-cta open-cta"><a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2021P2Q5">喺題庫開啟呢題</a> · <a href="/math/2021/paper-2/">返回 2021 卷二 全卷</a> · <a href="/math/2021/paper-2-en/q5/">English version</a></p>
   </div>
 </header>
 <main class="subj-main">
@@ -166,6 +181,7 @@
   <h2>深度分析</h2>
 <p class="ai-chips"><span class="q-ai">近似值與誤差範圍</span>　認知層次：理解　建議作答 45 秒</p><p>核心公式／定理：若 $x$ 準確至第 $n$ 位小數為 $d_n.d_{n-1}...d_1$，則實際範圍為 $[d_n.d_{n-1}...d_1 - 0.5\times10^{-n}, d_n.d_{n-1}...d_1 + 0.5\times10^{-n})$</p><div class="ai-hints"><details class="ai-hint"><summary>提示 1（啟發）</summary><div>回想「四捨五入」的定義：當末位後一位小數大於等於 5 時，末位進 1。</div></details><details class="ai-hint"><summary>提示 2（知識）</summary><div>思考：若 $x$ 四捨五入後為 $6.24$，則 $x$ 必須落在哪個區間內？請考慮邊界值 $6.235$ 和 $6.245$ 分別會變成什麼數。</div></details><details class="ai-hint"><summary>提示 3（破題）</summary><div>確認邊界值的包含性：若邊界值本身四捨五入後等於目標值，該邊界是否應被包含在範圍內（使用 $\leq$ 或 $&lt;$）？</div></details></div><h3>誘答項逆向工程</h3><div class="ai-oa"><div class="ai-oa-card"><strong>A</strong><p class="ai-oa-meta"><span class="q-ai">概念錯誤</span>　誤差邊界計算錯誤</p><div>學生只考慮了整數部分變化，將誤差範圍擴大到下一個小數位（0.01），忽略了四捨五入時僅影響末位小數的性質，導致上下限變成 6.23 和 6.25。</div></div><div class="ai-oa-card"><strong>B</strong><p class="ai-oa-meta"><span class="q-ai">概念錯誤</span>　誤差邊界計算錯誤與不等號方向混淆</p><div>學生同樣將誤差範圍擴大到 0.01，且在不確定四捨五入規則下，隨機選擇了包含下限但不含上限的不等式形式，未能正確識別 $6.245$ 會進位成 $6.25$。</div></div><div class="ai-oa-card"><strong>C</strong><p class="ai-oa-meta"><span class="q-ai">策略錯誤</span>　不等號方向判斷錯誤</p><div>學生正確計算出誤差半徑為 $0.005$，得到邊界 $6.235$ 和 $6.245$，但錯誤地認為較小的數值（$6.235$）對應大於符號，混淆了「四捨五入後等於目標值」時，原數需滿足的大小關係。</div></div><div class="ai-oa-card"><strong>D　✓ 正確答案</strong><div></div></div></div><p class="ai-strategy"><strong>速解策略：</strong>計算誤差半徑 $0.5 \times 10^{-2}=0.005$，得邊界 $6.235, 6.245$；驗證邊界值四捨五入後是否等於 $6.24$ 以決定不等號方向。</p>
 </section>
+<nav class="q-prevnext" aria-label="上一題／下一題"><a href="/math/2021/paper-2/q4/" rel="prev">← Q4</a>　<a href="/math/2021/paper-2/q6/" rel="next">Q6 →</a></nav>
 </main>
 <footer><a href="/math/2021/paper-2/">返回 2021 卷二</a> · <a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2021P2Q5">喺題庫開啟呢題</a> · <a href="/hub/">DSE Hub 主頁</a> · 相關：<a href="https://dsemaths.canonlessons.com" rel="noopener">免費 DSE 數學視覺教程</a> · 站內只放索引、連結同課題標籤，只顯示資料庫已有內容</footer>
 </body>

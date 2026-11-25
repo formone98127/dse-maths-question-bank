@@ -11,6 +11,8 @@
 <meta name="author" content="DSE Hub">
 <link rel="canonical" href="https://hkdse.exampaper.cloud/math/2014/paper-2/q14/">
 <link rel="alternate" hreflang="zh-Hant-HK" href="https://hkdse.exampaper.cloud/math/2014/paper-2/q14/">
+<link rel="alternate" hreflang="en" href="https://hkdse.exampaper.cloud/math/2014/paper-2-en/q14/">
+<link rel="alternate" hreflang="x-default" href="https://hkdse.exampaper.cloud/math/2014/paper-2/q14/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="DSE Hub">
 <meta property="og:locale" content="zh_HK">
@@ -38,7 +40,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/hub/style.css?v=202611252320">
+<link rel="stylesheet" href="/hub/style.css?v=202611252329">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LTB27V0RGW"></script>
 <script>
@@ -92,31 +94,44 @@
       "mainEntity": {
         "@type": "Question",
         "name": "DSE 數學 2014 卷二 第 14 題",
-        "text": "設 $a_n$ 為某數列的第 $n$ 項。若 $a_2=7$、$a_4=63$ 及對任意正整數 $n$，$a_{n+2}=a_{n+1}+a_n$，則 $a_5=$ - A. $56$。 - B. $70$。 - C. $91$。 - D. $119$。",
+        "text": "設 a_n 為某數列的第 n 項。若 a_2=7、a_4=63 及對任意正整數 n，a_{n+2}=a_{n+1}+a_n，則 a_5= - A. 56。 - B. 70。 - C. 91。 - D. 119。",
         "answerCount": 4,
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "D. $119$。。速解策略：先由 $a_4=a_3+a_2$ 解出 $a_3=56$，再算 $a_5=a_4+a_3=119$"
+          "text": "D. 119。速解策略：先由 a_4=a_3+a_2 解出 a_3=56，再算 a_5=a_4+a_3=119。"
         },
         "suggestedAnswer": [
           {
             "@type": "Answer",
-            "text": "A. $56$。"
+            "text": "A. 56"
           },
           {
             "@type": "Answer",
-            "text": "B. $70$。"
+            "text": "B. 70"
           },
           {
             "@type": "Answer",
-            "text": "C. $91$。"
+            "text": "C. 91"
           },
           {
             "@type": "Answer",
-            "text": "D. $119$。"
+            "text": "D. 119"
           }
         ]
       }
+    },
+    {
+      "@type": "LearningResource",
+      "name": "DSE 數學 2014 卷二 第 14 題",
+      "url": "https://hkdse.exampaper.cloud/math/2014/paper-2/q14/",
+      "inLanguage": "zh-Hant-HK",
+      "learningResourceType": "Exam question",
+      "educationalLevel": "HKDSE",
+      "isPartOf": {
+        "@id": "https://hkdse.exampaper.cloud/#website"
+      },
+      "about": "線性遞迴關係 (Fibonacci 類)",
+      "teaches": "線性遞迴關係 (Fibonacci 類)"
     }
   ]
 }
@@ -148,7 +163,7 @@
         <a href="/phys/">物理<span class="n">0 卷</span></a>
         </nav>
         
-    <p class="page-cta open-cta"><a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2014P2Q14">喺題庫開啟呢題</a> · <a href="/math/2014/paper-2/">返回 2014 卷二 全卷</a></p>
+    <p class="page-cta open-cta"><a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2014P2Q14">喺題庫開啟呢題</a> · <a href="/math/2014/paper-2/">返回 2014 卷二 全卷</a> · <a href="/math/2014/paper-2-en/q14/">English version</a></p>
   </div>
 </header>
 <main class="subj-main">
@@ -166,6 +181,7 @@
   <h2>深度分析</h2>
 <p class="ai-chips"><span class="q-ai">線性遞迴關係 (Fibonacci 類)</span>　認知層次：應用　建議作答 45 秒</p><p>核心公式／定理：$a_{n+2} = a_{n+1} + a_n$</p><div class="ai-hints"><details class="ai-hint"><summary>提示 1（啟發）</summary><div>根據題目給出的遞迴公式 $a_{n+2}=a_{n+1}+a_n$，我們需要找出缺少的中間項 $a_3$。</div></details><details class="ai-hint"><summary>提示 2（知識）</summary><div>利用已知條件 $a_4=63$ 和剛求出的 $a_3$，代入公式計算 $a_5 = a_4 + a_3$。</div></details><details class="ai-hint"><summary>提示 3（破題）</summary><div>將計算結果與選項比對，確認哪一個數值符合邏輯推導。</div></details></div><h3>誘答項逆向工程</h3><div class="ai-oa"><div class="ai-oa-card"><strong>A</strong><p class="ai-oa-meta"><span class="q-ai">計算粗心</span>　錯用 a3=a2+a1 或計算錯誤</p><div>學生可能誤以為 a3=7+63=70，然後直接選 B；或是算出 a3 後，求 a5 時跳過步驟直接加錯數值。</div></div><div class="ai-oa-card"><strong>B</strong><p class="ai-oa-meta"><span class="q-ai">計算粗心</span>　計算 a3 錯誤或混淆 a4 與 a5</p><div>學生算出 a3=70 後，誤以為題目問的就是 a3 的值，或是將 a4 的條件看錯當作答案。</div></div><div class="ai-oa-card"><strong>C</strong><p class="ai-oa-meta"><span class="q-ai">概念錯誤</span>　忽略遞迴關係的連續性</p><div>學生正確算出 a3=70，但在求 a5 時跳過 a4，錯誤地將 a3 與 a4 相加 (70+63=133) 或其他組合導致 91。</div></div><div class="ai-oa-card"><strong>D　✓ 正確答案</strong><div></div></div></div><p class="ai-strategy"><strong>速解策略：</strong>先由 $a_4=a_3+a_2$ 解出 $a_3=56$，再算 $a_5=a_4+a_3=119$</p>
 </section>
+<nav class="q-prevnext" aria-label="上一題／下一題"><a href="/math/2014/paper-2/q13/" rel="prev">← Q13</a>　<a href="/math/2014/paper-2/q15/" rel="next">Q15 →</a></nav>
 </main>
 <footer><a href="/math/2014/paper-2/">返回 2014 卷二</a> · <a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2014P2Q14">喺題庫開啟呢題</a> · <a href="/hub/">DSE Hub 主頁</a> · 相關：<a href="https://dsemaths.canonlessons.com" rel="noopener">免費 DSE 數學視覺教程</a> · 站內只放索引、連結同課題標籤，只顯示資料庫已有內容</footer>
 </body>

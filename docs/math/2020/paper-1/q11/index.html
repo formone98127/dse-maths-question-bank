@@ -4,18 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>DSE 數學 2020 卷一 第 11 題深度分析｜DSE Hub</title>
-<meta name="description" content="DSE 數學 2020 卷一 第 11 題深度解析：考點「積分法」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
+<meta name="description" content="DSE 數學 2020 卷一 第 11 題深度解析：考點「統計」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
 <meta name="keywords" content="DSE, 香港中學文憑, 歷屆試題, past paper, DSE 數學, DSE 經濟, DSE 化學, DSE 生物, DSE 物理, 免費題庫, 按課題">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="googlebot" content="index, follow">
 <meta name="author" content="DSE Hub">
 <link rel="canonical" href="https://hkdse.exampaper.cloud/math/2020/paper-1/q11/">
 <link rel="alternate" hreflang="zh-Hant-HK" href="https://hkdse.exampaper.cloud/math/2020/paper-1/q11/">
+<link rel="alternate" hreflang="en" href="https://hkdse.exampaper.cloud/math/2020/paper-1-en/q11/">
+<link rel="alternate" hreflang="x-default" href="https://hkdse.exampaper.cloud/math/2020/paper-1/q11/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="DSE Hub">
 <meta property="og:locale" content="zh_HK">
 <meta property="og:title" content="DSE 數學 2020 卷一 第 11 題深度分析｜DSE Hub">
-<meta property="og:description" content="DSE 數學 2020 卷一 第 11 題深度解析：考點「積分法」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
+<meta property="og:description" content="DSE 數學 2020 卷一 第 11 題深度解析：考點「統計」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
 <meta property="og:url" content="https://hkdse.exampaper.cloud/math/2020/paper-1/q11/">
 <meta property="og:image" content="https://hkdse.exampaper.cloud/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -23,7 +25,7 @@
 <meta property="og:image:alt" content="DSE Hub 香港中學文憑歷屆試題資料庫">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="DSE 數學 2020 卷一 第 11 題深度分析｜DSE Hub">
-<meta name="twitter:description" content="DSE 數學 2020 卷一 第 11 題深度解析：考點「積分法」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
+<meta name="twitter:description" content="DSE 數學 2020 卷一 第 11 題深度解析：考點「統計」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
 <meta name="twitter:image" content="https://hkdse.exampaper.cloud/og-image.png">
 <meta name="theme-color" content="#0b1220">
 <link rel="manifest" href="/manifest.webmanifest">
@@ -38,7 +40,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/hub/style.css?v=202611252320">
+<link rel="stylesheet" href="/hub/style.css?v=202611252329">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LTB27V0RGW"></script>
 <script>
@@ -92,14 +94,26 @@
       "mainEntity": {
         "@type": "Question",
         "name": "DSE 數學 2020 卷一 第 11 題",
-        "text": "下面的幹葉圖顯示某袋子內的信件的重量（以克為單位）的分佈。 | 幹（十位） | 葉（個位） | | --- | --- | | 1 | 1 2 3 3 | | 2 | 3 3 4 5 6 9 9 | | 3 | 1 6 7 8 8 | | 4 | 2 | | 5 | 0 w | 已知上述分佈的分佈域為其四分位數間距的三倍。 (a) 求 $w$。 (b) 若從該袋子中隨機抽取一信件，求所抽取的信件的重量不少於該分佈的眾數的概率。",
-        "answerCount": 4,
+        "text": "下面的幹葉圖顯示某袋子內的信件的重量（以克為單位）的分佈。 | 幹（十位） | 葉（個位） | | --- | --- | | 1 | 1 2 3 3 | | 2 | 3 3 4 5 6 9 9 | | 3 | 1 6 7 8 8 | | 4 | 2 | | 5 | 0 w | 已知上述分佈的分佈域為其四分位數間距的三倍。 (a) 求 w。 (b) 若從該袋子中隨機抽取一信件，求所抽取的信件的重量不少於該分佈的眾數的概率。",
+        "answerCount": 0,
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "先算梯形法數值，再求二階導數定誤差方向；對 $B(t)$ 代換後積分，最後比較百分比。"
-        },
-        "suggestedAnswer": []
+          "text": "先算出 Q1, Q3, Min, Max (含 w)，代入 Range=3*IQR 解 w；再數總數與符合條件數求概率。"
+        }
       }
+    },
+    {
+      "@type": "LearningResource",
+      "name": "DSE 數學 2020 卷一 第 11 題",
+      "url": "https://hkdse.exampaper.cloud/math/2020/paper-1/q11/",
+      "inLanguage": "zh-Hant-HK",
+      "learningResourceType": "Exam question",
+      "educationalLevel": "HKDSE",
+      "isPartOf": {
+        "@id": "https://hkdse.exampaper.cloud/#website"
+      },
+      "about": "統計",
+      "teaches": "統計"
     }
   ]
 }
@@ -131,7 +145,7 @@
         <a href="/phys/">物理<span class="n">0 卷</span></a>
         </nav>
         
-    <p class="page-cta open-cta"><a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2020P1Q11">喺題庫開啟呢題</a> · <a href="/math/2020/paper-1/">返回 2020 卷一 全卷</a></p>
+    <p class="page-cta open-cta"><a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2020P1Q11">喺題庫開啟呢題</a> · <a href="/math/2020/paper-1/">返回 2020 卷一 全卷</a> · <a href="/math/2020/paper-1-en/q11/">English version</a></p>
   </div>
 </header>
 <main class="subj-main">
@@ -174,8 +188,9 @@
 </section>
 <section class="kw-section" aria-label="深度分析">
   <h2>深度分析</h2>
-<p class="ai-chips"><span class="q-ai">積分法</span>　認知層次：應用　建議作答 300 秒</p><p>核心公式／定理：$\int_a^b f(x) dx = F(b) - F(a)$、$\text{Trapezoidal Rule: } \frac{h}{2}[y_0 + 2y_1 + ... + 2y_{n-1} + y_n]$</p><div class="ai-hints"><details class="ai-hint"><summary>提示 1（啟發）</summary><div>Recall that the Trapezoidal Rule over-estimates when the curve is concave down ($f&#x27;&#x27; &lt; 0$) and under-estimates when concave up ($f&#x27;&#x27; &gt; 0$).</div></details><details class="ai-hint"><summary>提示 2（知識）</summary><div>For $B(t)$, try substitution $u = 3^{2t}$ to simplify the integral.</div></details><details class="ai-hint"><summary>提示 3（破題）</summary><div>Remember to calculate the percentage based on the total number of adults as the denominator.</div></details></div><p class="ai-strategy"><strong>速解策略：</strong>先算梯形法數值，再求二階導數定誤差方向；對 $B(t)$ 代換後積分，最後比較百分比。</p>
+<p class="ai-chips"><span class="q-ai">統計</span>　認知層次：應用　建議作答 240 秒</p><p>核心公式／定理：$\text{IQR} = Q_3 - Q_1$、$\text{Range} = \text{Max} - \text{Min}$、$P(E) = \frac{n_E}{n_{total}}$</p><div class="ai-hints"><details class="ai-hint"><summary>提示 1（啟發）</summary><div>Hint1: 先將數據按順序排列，找出 Min, Max, Q1, Q3 的位置。</div></details><details class="ai-hint"><summary>提示 2（知識）</summary><div>Hint2: 利用 Range = 3 * IQR 的關係式建立關於 w 的方程。</div></details><details class="ai-hint"><summary>提示 3（破題）</summary><div>Hint3: 眾數是出現次數最多的數值，注意題目要求的是「不少於」。</div></details></div><p class="ai-strategy"><strong>速解策略：</strong>先算出 Q1, Q3, Min, Max (含 w)，代入 Range=3*IQR 解 w；再數總數與符合條件數求概率。</p>
 </section>
+<nav class="q-prevnext" aria-label="上一題／下一題"><a href="/math/2020/paper-1/q10/" rel="prev">← Q10</a>　<a href="/math/2020/paper-1/q12/" rel="next">Q12 →</a></nav>
 </main>
 <footer><a href="/math/2020/paper-1/">返回 2020 卷一</a> · <a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2020P1Q11">喺題庫開啟呢題</a> · <a href="/hub/">DSE Hub 主頁</a> · 相關：<a href="https://dsemaths.canonlessons.com" rel="noopener">免費 DSE 數學視覺教程</a> · 站內只放索引、連結同課題標籤，只顯示資料庫已有內容</footer>
 </body>

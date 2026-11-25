@@ -11,6 +11,8 @@
 <meta name="author" content="DSE Hub">
 <link rel="canonical" href="https://hkdse.exampaper.cloud/math/2023/paper-2/q36/">
 <link rel="alternate" hreflang="zh-Hant-HK" href="https://hkdse.exampaper.cloud/math/2023/paper-2/q36/">
+<link rel="alternate" hreflang="en" href="https://hkdse.exampaper.cloud/math/2023/paper-2-en/q36/">
+<link rel="alternate" hreflang="x-default" href="https://hkdse.exampaper.cloud/math/2023/paper-2/q36/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="DSE Hub">
 <meta property="og:locale" content="zh_HK">
@@ -38,7 +40,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/hub/style.css?v=202611252320">
+<link rel="stylesheet" href="/hub/style.css?v=202611252329">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LTB27V0RGW"></script>
 <script>
@@ -92,11 +94,11 @@
       "mainEntity": {
         "@type": "Question",
         "name": "DSE 數學 2023 卷二 第 36 題",
-        "text": "設 $ T(n) $ 為一等差數列的第 $ n $ 項。若 $ T(11) = 83 $ 及 $ T(25) + T(30) = 463 $，求 $ k $ 的最小值使得 $ T(1) + T(2) + T(3) + \\cdots + T(k) > 4 \\times 10^5 $ 。 - A. 299 - B. 300 - C. 944 - D. 945",
+        "text": "設 T(n) 為一等差數列的第 n 項。若 T(11) = 83 及 T(25) + T(30) = 463 ，求 k 的最小值使得 T(1) + T(2) + T(3) + \\cdots + T(k) > 4 \\times 10^5 。 - A. 299 - B. 300 - C. 944 - D. 945",
         "answerCount": 4,
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "B. 300。速解策略：先求 $a,d$，代回 $S_k$ 公式，解 $S_k > 400000$ 得 $k$ 的最小整數。"
+          "text": "B. 300。速解策略：先求 a,d，代回 S_k 公式，解 S_k > 400000 得 k 的最小整數。"
         },
         "suggestedAnswer": [
           {
@@ -117,6 +119,19 @@
           }
         ]
       }
+    },
+    {
+      "@type": "LearningResource",
+      "name": "DSE 數學 2023 卷二 第 36 題",
+      "url": "https://hkdse.exampaper.cloud/math/2023/paper-2/q36/",
+      "inLanguage": "zh-Hant-HK",
+      "learningResourceType": "Exam question",
+      "educationalLevel": "HKDSE",
+      "isPartOf": {
+        "@id": "https://hkdse.exampaper.cloud/#website"
+      },
+      "about": "等差數列求和",
+      "teaches": "等差數列求和"
     }
   ]
 }
@@ -148,7 +163,7 @@
         <a href="/phys/">物理<span class="n">0 卷</span></a>
         </nav>
         
-    <p class="page-cta open-cta"><a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2023P2Q36">喺題庫開啟呢題</a> · <a href="/math/2023/paper-2/">返回 2023 卷二 全卷</a></p>
+    <p class="page-cta open-cta"><a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2023P2Q36">喺題庫開啟呢題</a> · <a href="/math/2023/paper-2/">返回 2023 卷二 全卷</a> · <a href="/math/2023/paper-2-en/q36/">English version</a></p>
   </div>
 </header>
 <main class="subj-main">
@@ -166,6 +181,7 @@
   <h2>深度分析</h2>
 <p class="ai-chips"><span class="q-ai">等差數列求和</span>　認知層次：應用　建議作答 90 秒</p><p>核心公式／定理：$T_n = a + (n-1)d$、$S_k = \frac{k}{2}[2a + (k-1)d]$</p><div class="ai-hints"><details class="ai-hint"><summary>提示 1（啟發）</summary><div>先利用 $T(11)$ 與 $T(25)+T(30)=463$ 這兩個條件，建立關於首項 $a$ 與公差 $d$ 的聯立方程式組。</div></details><details class="ai-hint"><summary>提示 2（知識）</summary><div>解出 $a$ 與 $d$ 後，代入等差數列前 $k$ 項和公式 $S_k = \frac{k}{2}[2a + (k-1)d]$。</div></details><details class="ai-hint"><summary>提示 3（破題）</summary><div>將不等式整理成關於 $k$ 的一元二次不等式，解出正根後，注意題目要求的是「最小整數」而非實數解。</div></details></div><h3>誘答項逆向工程</h3><div class="ai-oa"><div class="ai-oa-card"><strong>A</strong><p class="ai-oa-meta"><span class="q-ai">計算粗心</span>　不等式邊界誤判</p><div>算出 k 約為 299.3，誤以為大於 400000 的最小整數是 299，忽略小數點後部分導致總和仍不足。</div></div><div class="ai-oa-card"><strong>B　✓ 正確答案</strong><div></div></div><div class="ai-oa-card"><strong>C</strong><p class="ai-oa-meta"><span class="q-ai">計算粗心</span>　平方根計算錯誤</p><div>解不等式時，將 $k^2$ 開方算錯，或混淆了 $S_k$ 公式中係數的倍率，導致 k 值放大了約 3 倍。</div></div><div class="ai-oa-card"><strong>D</strong><p class="ai-oa-meta"><span class="q-ai">計算粗心</span>　平方根計算錯誤</p><div>同樣在解一元二次不等式時，對常數項處理不當，導致開方結果偏大，可能是計算機輸入錯誤。</div></div></div><p class="ai-strategy"><strong>速解策略：</strong>先求 $a,d$，代回 $S_k$ 公式，解 $S_k &gt; 400000$ 得 $k$ 的最小整數。</p>
 </section>
+<nav class="q-prevnext" aria-label="上一題／下一題"><a href="/math/2023/paper-2/q35/" rel="prev">← Q35</a>　<a href="/math/2023/paper-2/q37/" rel="next">Q37 →</a></nav>
 </main>
 <footer><a href="/math/2023/paper-2/">返回 2023 卷二</a> · <a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2023P2Q36">喺題庫開啟呢題</a> · <a href="/hub/">DSE Hub 主頁</a> · 相關：<a href="https://dsemaths.canonlessons.com" rel="noopener">免費 DSE 數學視覺教程</a> · 站內只放索引、連結同課題標籤，只顯示資料庫已有內容</footer>
 </body>

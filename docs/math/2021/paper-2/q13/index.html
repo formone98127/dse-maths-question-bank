@@ -11,6 +11,8 @@
 <meta name="author" content="DSE Hub">
 <link rel="canonical" href="https://hkdse.exampaper.cloud/math/2021/paper-2/q13/">
 <link rel="alternate" hreflang="zh-Hant-HK" href="https://hkdse.exampaper.cloud/math/2021/paper-2/q13/">
+<link rel="alternate" hreflang="en" href="https://hkdse.exampaper.cloud/math/2021/paper-2-en/q13/">
+<link rel="alternate" hreflang="x-default" href="https://hkdse.exampaper.cloud/math/2021/paper-2/q13/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="DSE Hub">
 <meta property="og:locale" content="zh_HK">
@@ -38,7 +40,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/hub/style.css?v=202611252320">
+<link rel="stylesheet" href="/hub/style.css?v=202611252329">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LTB27V0RGW"></script>
 <script>
@@ -92,7 +94,7 @@
       "mainEntity": {
         "@type": "Question",
         "name": "DSE 數學 2021 卷二 第 13 題",
-        "text": "圖中，第 1 個圖案包含 3 粒點子。對任意正整數 $ n $，第 $ (n+1) $ 個圖案是由第 $ n $ 個圖案加上 $ (2n+3) $ 粒點子所組成。求第 8 個圖案的點子數目。 ![Figure Q13 (as printed)](2021P2_zh_figs/Q13.png) - A. 63 - B. 75 - C. 80 - D. 99",
+        "text": "圖中，第 1 個圖案包含 3 粒點子。對任意正整數 n ，第 (n+1) 個圖案是由第 n 個圖案加上 (2n+3) 粒點子所組成。求第 8 個圖案的點子數目。 ![Figure Q13 (as printed)](2021P2_zh_figs/Q13.png) - A. 63 - B. 75 - C. 80 - D. 99",
         "answerCount": 4,
         "acceptedAnswer": {
           "@type": "Answer",
@@ -117,6 +119,19 @@
           }
         ]
       }
+    },
+    {
+      "@type": "LearningResource",
+      "name": "DSE 數學 2021 卷二 第 13 題",
+      "url": "https://hkdse.exampaper.cloud/math/2021/paper-2/q13/",
+      "inLanguage": "zh-Hant-HK",
+      "learningResourceType": "Exam question",
+      "educationalLevel": "HKDSE",
+      "isPartOf": {
+        "@id": "https://hkdse.exampaper.cloud/#website"
+      },
+      "about": "數列遞迴, 等差級數",
+      "teaches": "數列遞迴, 等差級數"
     }
   ]
 }
@@ -148,7 +163,7 @@
         <a href="/phys/">物理<span class="n">0 卷</span></a>
         </nav>
         
-    <p class="page-cta open-cta"><a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2021P2Q13">喺題庫開啟呢題</a> · <a href="/math/2021/paper-2/">返回 2021 卷二 全卷</a></p>
+    <p class="page-cta open-cta"><a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2021P2Q13">喺題庫開啟呢題</a> · <a href="/math/2021/paper-2/">返回 2021 卷二 全卷</a> · <a href="/math/2021/paper-2-en/q13/">English version</a></p>
   </div>
 </header>
 <main class="subj-main">
@@ -167,6 +182,7 @@
   <h2>深度分析</h2>
 <p class="ai-chips"><span class="q-ai">數列遞迴, 等差級數</span>　認知層次：分析　建議作答 90 秒</p><p>核心公式／定理：a_{n+1} = a_n + (2n+3)、S_n = \sum_{k=1}^{n-1} (2k+3) + a_1</p><div class="ai-hints"><details class="ai-hint"><summary>提示 1（啟發）</summary><div>根據題目描述，列出前兩個圖案的點子數目，觀察數列規律。</div></details><details class="ai-hint"><summary>提示 2（知識）</summary><div>將遞迴關係式寫成 a_{n+1} - a_n = 2n + 3，思考如何從首項推到第 8 項。</div></details><details class="ai-hint"><summary>提示 3（破題）</summary><div>利用累加法，計算 \sum_{k=1}^{7} (2k+3) 並加上首項 3，即可得出答案。</div></details></div><h3>誘答項逆向工程</h3><div class="ai-oa"><div class="ai-oa-card"><strong>A</strong><p class="ai-oa-meta"><span class="q-ai">計算粗心</span>　首項計算錯誤</p><div>學生可能將 n=1 時的增量 (2*1+3)=5 當作總數，或誤算 a_2=3+5=8, a_3=8+7=15... 累加時漏掉首項 3 或計算錯誤導致結果偏小。</div></div><div class="ai-oa-card"><strong>B</strong><p class="ai-oa-meta"><span class="q-ai">策略錯誤</span>　遞迴步數遺漏</p><div>學生正確列出公式但未算到第 8 項，可能只算到 a_7 就停止，或誤以為題目問的是增量而非總和。</div></div><div class="ai-oa-card"><strong>C　✓ 正確答案</strong><div></div></div><div class="ai-oa-card"><strong>D</strong><p class="ai-oa-meta"><span class="q-ai">概念錯誤</span>　理解遞迴關係錯誤</p><div>學生可能誤解題目，將第 n 個圖案的增量公式應用於錯誤的起始點，或完全忽略首項 3 直接對 (2n+3) 求和。</div></div></div><p class="ai-strategy"><strong>速解策略：</strong>由 a_1=3 開始，依序遞迴計算至 a_8，或利用等差級數求和公式直接計算總增量再加首項。</p>
 </section>
+<nav class="q-prevnext" aria-label="上一題／下一題"><a href="/math/2021/paper-2/q12/" rel="prev">← Q12</a>　<a href="/math/2021/paper-2/q14/" rel="next">Q14 →</a></nav>
 </main>
 <footer><a href="/math/2021/paper-2/">返回 2021 卷二</a> · <a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2021P2Q13">喺題庫開啟呢題</a> · <a href="/hub/">DSE Hub 主頁</a> · 相關：<a href="https://dsemaths.canonlessons.com" rel="noopener">免費 DSE 數學視覺教程</a> · 站內只放索引、連結同課題標籤，只顯示資料庫已有內容</footer>
 </body>

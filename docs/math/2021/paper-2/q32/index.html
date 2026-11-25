@@ -11,6 +11,8 @@
 <meta name="author" content="DSE Hub">
 <link rel="canonical" href="https://hkdse.exampaper.cloud/math/2021/paper-2/q32/">
 <link rel="alternate" hreflang="zh-Hant-HK" href="https://hkdse.exampaper.cloud/math/2021/paper-2/q32/">
+<link rel="alternate" hreflang="en" href="https://hkdse.exampaper.cloud/math/2021/paper-2-en/q32/">
+<link rel="alternate" hreflang="x-default" href="https://hkdse.exampaper.cloud/math/2021/paper-2/q32/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="DSE Hub">
 <meta property="og:locale" content="zh_HK">
@@ -38,7 +40,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/hub/style.css?v=202611252320">
+<link rel="stylesheet" href="/hub/style.css?v=202611252329">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LTB27V0RGW"></script>
 <script>
@@ -92,11 +94,11 @@
       "mainEntity": {
         "@type": "Question",
         "name": "DSE 數學 2021 卷二 第 32 題",
-        "text": "$14 \\times 16^{15} + 17 \\times 16^{14} + 16^2 + 17 =$ - A. E10100000000021_{16} - B. F10000000000111_{16} - C. E110000000000021_{16} - D. F100000000000111_{16}",
+        "text": "14 \\times 16^{15} + 17 \\times 16^{14} + 16^2 + 17 = - A. E10100000000021_{16} - B. F10000000000111_{16} - C. E110000000000021_{16} - D. F100000000000111_{16}",
         "answerCount": 4,
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "D. F100000000000111_{16}。速解策略：將前兩項合併為 $(14+1)\\times 16^{15} = 15 \\times 16^{15}$ (即 $F0...$)，再處理尾數 $100_{16}+11_{16}=111_{16}$。"
+          "text": "D. F100000000000111_{16}。速解策略：將前兩項合併為 (14+1)\\times 16^{15} = 15 \\times 16^{15} (即 F0...)，再處理尾數 100_{16}+11_{16}=111_{16}。"
         },
         "suggestedAnswer": [
           {
@@ -117,6 +119,19 @@
           }
         ]
       }
+    },
+    {
+      "@type": "LearningResource",
+      "name": "DSE 數學 2021 卷二 第 32 題",
+      "url": "https://hkdse.exampaper.cloud/math/2021/paper-2/q32/",
+      "inLanguage": "zh-Hant-HK",
+      "learningResourceType": "Exam question",
+      "educationalLevel": "HKDSE",
+      "isPartOf": {
+        "@id": "https://hkdse.exampaper.cloud/#website"
+      },
+      "about": "十六進位數制與指數運算",
+      "teaches": "十六進位數制與指數運算"
     }
   ]
 }
@@ -148,7 +163,7 @@
         <a href="/phys/">物理<span class="n">0 卷</span></a>
         </nav>
         
-    <p class="page-cta open-cta"><a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2021P2Q32">喺題庫開啟呢題</a> · <a href="/math/2021/paper-2/">返回 2021 卷二 全卷</a></p>
+    <p class="page-cta open-cta"><a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2021P2Q32">喺題庫開啟呢題</a> · <a href="/math/2021/paper-2/">返回 2021 卷二 全卷</a> · <a href="/math/2021/paper-2-en/q32/">English version</a></p>
   </div>
 </header>
 <main class="subj-main">
@@ -166,6 +181,7 @@
   <h2>深度分析</h2>
 <p class="ai-chips"><span class="q-ai">十六進位數制與指數運算</span>　認知層次：分析　建議作答 90 秒</p><p>核心公式／定理：$a^n \times b = a^{n-1} \times (ab)$、$x^2 + y^2 + 2xy = (x+y)^2$</p><div class="ai-hints"><details class="ai-hint"><summary>提示 1（啟發）</summary><div>提示 1：觀察前兩項 $14 \times 16^{15}$ 與 $17 \times 16^{14}$，嘗試將它們合併為同一指數的項。</div></details><details class="ai-hint"><summary>提示 2（知識）</summary><div>提示 2：利用公式 $a \cdot x^n + b \cdot x^{n-1} = (a + \frac{b}{x}) \cdot x^n$，這裡 $x=16$，計算括號內的數值。</div></details><details class="ai-hint"><summary>提示 3（破題）</summary><div>提示 3：處理剩餘項 $16^2+17$，將其轉換為十六進位後，與前一步結果拼接。</div></details></div><h3>誘答項逆向工程</h3><div class="ai-oa"><div class="ai-oa-card"><strong>A</strong><p class="ai-oa-meta"><span class="q-ai">計算粗心</span>　高次項係數計算錯誤</p><div>學生算出 $15 \times 16^{14} + 17 \times 16^{14}$ 後，誤以為 $15+17=32$ 對應十六進位為 20 而非 20(即 32)，且高階項係數算成 E (14) 而非 F (15)。</div></div><div class="ai-oa-card"><strong>B</strong><p class="ai-oa-meta"><span class="q-ai">審題不清</span>　低次項合併錯誤</p><div>學生正確算出高階項為 $F00...$，但在處理 $16^2+17$ 時，誤將 $16^2=256$ (即 $100_{16}$) 與 $17(11_{16})$ 相加時進位或位置搞錯，算成 $111$ 但位置偏移。</div></div><div class="ai-oa-card"><strong>C</strong><p class="ai-oa-meta"><span class="q-ai">計算粗心</span>　高次項係數計算錯誤</p><div>學生在合併 $14 \times 16^{15} + 17 \times 16^{14}$ 時，錯誤地將 $14+17=31$ (即 $1F_{16}$) 處理成 $E(14)$，忽略了 $17 \times 16^{14} = 1.0625 \times 16^{15}$ 的權重影響。</div></div><div class="ai-oa-card"><strong>D　✓ 正確答案</strong><div></div></div></div><p class="ai-strategy"><strong>速解策略：</strong>將前兩項合併為 $(14+1)\times 16^{15} = 15 \times 16^{15}$ (即 $F0...$)，再處理尾數 $100_{16}+11_{16}=111_{16}$。</p>
 </section>
+<nav class="q-prevnext" aria-label="上一題／下一題"><a href="/math/2021/paper-2/q31/" rel="prev">← Q31</a>　<a href="/math/2021/paper-2/q33/" rel="next">Q33 →</a></nav>
 </main>
 <footer><a href="/math/2021/paper-2/">返回 2021 卷二</a> · <a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2021P2Q32">喺題庫開啟呢題</a> · <a href="/hub/">DSE Hub 主頁</a> · 相關：<a href="https://dsemaths.canonlessons.com" rel="noopener">免費 DSE 數學視覺教程</a> · 站內只放索引、連結同課題標籤，只顯示資料庫已有內容</footer>
 </body>

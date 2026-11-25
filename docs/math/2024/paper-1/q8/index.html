@@ -4,18 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>DSE 數學 2024 卷一 第 8 題深度分析｜DSE Hub</title>
-<meta name="description" content="DSE 數學 2024 卷一 第 8 題深度解析：考點「正態分佈」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
+<meta name="description" content="DSE 數學 2024 卷一 第 8 題深度解析：考點「平面幾何」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
 <meta name="keywords" content="DSE, 香港中學文憑, 歷屆試題, past paper, DSE 數學, DSE 經濟, DSE 化學, DSE 生物, DSE 物理, 免費題庫, 按課題">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="googlebot" content="index, follow">
 <meta name="author" content="DSE Hub">
 <link rel="canonical" href="https://hkdse.exampaper.cloud/math/2024/paper-1/q8/">
 <link rel="alternate" hreflang="zh-Hant-HK" href="https://hkdse.exampaper.cloud/math/2024/paper-1/q8/">
+<link rel="alternate" hreflang="en" href="https://hkdse.exampaper.cloud/math/2024/paper-1-en/q8/">
+<link rel="alternate" hreflang="x-default" href="https://hkdse.exampaper.cloud/math/2024/paper-1/q8/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="DSE Hub">
 <meta property="og:locale" content="zh_HK">
 <meta property="og:title" content="DSE 數學 2024 卷一 第 8 題深度分析｜DSE Hub">
-<meta property="og:description" content="DSE 數學 2024 卷一 第 8 題深度解析：考點「正態分佈」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
+<meta property="og:description" content="DSE 數學 2024 卷一 第 8 題深度解析：考點「平面幾何」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
 <meta property="og:url" content="https://hkdse.exampaper.cloud/math/2024/paper-1/q8/">
 <meta property="og:image" content="https://hkdse.exampaper.cloud/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -23,7 +25,7 @@
 <meta property="og:image:alt" content="DSE Hub 香港中學文憑歷屆試題資料庫">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="DSE 數學 2024 卷一 第 8 題深度分析｜DSE Hub">
-<meta name="twitter:description" content="DSE 數學 2024 卷一 第 8 題深度解析：考點「正態分佈」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
+<meta name="twitter:description" content="DSE 數學 2024 卷一 第 8 題深度解析：考點「平面幾何」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
 <meta name="twitter:image" content="https://hkdse.exampaper.cloud/og-image.png">
 <meta name="theme-color" content="#0b1220">
 <link rel="manifest" href="/manifest.webmanifest">
@@ -38,7 +40,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/hub/style.css?v=202611252320">
+<link rel="stylesheet" href="/hub/style.css?v=202611252329">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LTB27V0RGW"></script>
 <script>
@@ -92,14 +94,26 @@
       "mainEntity": {
         "@type": "Question",
         "name": "DSE 數學 2024 卷一 第 8 題",
-        "text": "圖 1 中，$E$ 為 $AC$ 與 $BD$ 的交點。已知 $\\angle ACB = \\angle ADB = 90^\\circ$ 及 $AD = BC$。 ![Figure Q8](2024P1_zh_figs/Q08.png) (a) 證明 $\\triangle ABC \\cong \\triangle BAD$。 (b) 若 $AD = 12\\, \\text{cm}$ 及 $DE = 9\\, \\text{cm}$，求五邊形 $ABCDE$ 的面積。（5 分）",
-        "answerCount": 4,
+        "text": "圖 1 中，E 為 AC 與 BD 的交點。已知 \\angle ACB = \\angle ADB = 90^\\circ 及 AD = BC。 ![Figure Q8](2024P1_zh_figs/Q08.png) (a) 證明 \\triangle ABC \\cong \\triangle BAD。 (b) 若 AD = 12\\, \\text{cm} 及 DE = 9\\, \\text{cm}，求五邊形 ABCDE 的面積。（5 分）",
+        "answerCount": 0,
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "先算(a)得數值，再將(b)被積函數拆成兩項，一項用(a)結果，另一項直接積分。"
-        },
-        "suggestedAnswer": []
+          "text": "先證 \\triangle ABC \\cong \\triangle BAD 得 AB 公共邊，再用勾股定理求 AE，繼而證另一組全等拆分面積。"
+        }
       }
+    },
+    {
+      "@type": "LearningResource",
+      "name": "DSE 數學 2024 卷一 第 8 題",
+      "url": "https://hkdse.exampaper.cloud/math/2024/paper-1/q8/",
+      "inLanguage": "zh-Hant-HK",
+      "learningResourceType": "Exam question",
+      "educationalLevel": "HKDSE",
+      "isPartOf": {
+        "@id": "https://hkdse.exampaper.cloud/#website"
+      },
+      "about": "平面幾何",
+      "teaches": "平面幾何"
     }
   ]
 }
@@ -131,7 +145,7 @@
         <a href="/phys/">物理<span class="n">0 卷</span></a>
         </nav>
         
-    <p class="page-cta open-cta"><a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2024P1Q8">喺題庫開啟呢題</a> · <a href="/math/2024/paper-1/">返回 2024 卷一 全卷</a></p>
+    <p class="page-cta open-cta"><a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2024P1Q8">喺題庫開啟呢題</a> · <a href="/math/2024/paper-1/">返回 2024 卷一 全卷</a> · <a href="/math/2024/paper-1-en/q8/">English version</a></p>
   </div>
 </header>
 <main class="subj-main">
@@ -144,8 +158,9 @@
 </section>
 <section class="kw-section" aria-label="深度分析">
   <h2>深度分析</h2>
-<p class="ai-chips"><span class="q-ai">正態分佈</span>　認知層次：應用　建議作答 180 秒</p><p>核心公式／定理：\int_{0}^{z} e^{-t^2/2} dt = \sqrt{2\pi} P(0 &lt; Z \le z)、\int (uv)&#x27; dx = uv</p><div class="ai-hints"><details class="ai-hint"><summary>提示 1（啟發）</summary><div>Recall that \phi(z) = e^{-z^2/2} and the CDF relates to the integral.</div></details><details class="ai-hint"><summary>提示 2（知識）</summary><div>Split the integrand (2x-1)e^{-x^2/2} into 2e^{-x^2/2} - e^{-x^2/2}.</div></details><details class="ai-hint"><summary>提示 3（破題）</summary><div>Use part (a) result directly for the second term with proper scaling.</div></details></div><p class="ai-strategy"><strong>速解策略：</strong>先算(a)得數值，再將(b)被積函數拆成兩項，一項用(a)結果，另一項直接積分。</p>
+<p class="ai-chips"><span class="q-ai">平面幾何</span>　認知層次：應用　建議作答 180 秒</p><p>核心公式／定理：勾股定理：$a^2 + b^2 = c^2$、三角形面積公式：$\frac{1}{2} \times \text{底} \times \text{高}$</p><div class="ai-hints"><details class="ai-hint"><summary>提示 1（啟發）</summary><div>利用直角符號 $\angle ACB = \angle ADB = 90^\circ$ 建立 RHS 全等</div></details><details class="ai-hint"><summary>提示 2（知識）</summary><div>由 $AD=BC$ 推導 $AE=BE$ 後再求 $CE$</div></details><details class="ai-hint"><summary>提示 3（破題）</summary><div>將五邊形面積拆為兩個三角形或梯形加三角形</div></details></div><p class="ai-strategy"><strong>速解策略：</strong>先證 $\triangle ABC \cong \triangle BAD$ 得 $AB$ 公共邊，再用勾股定理求 $AE$，繼而證另一組全等拆分面積。</p>
 </section>
+<nav class="q-prevnext" aria-label="上一題／下一題"><a href="/math/2024/paper-1/q7/" rel="prev">← Q7</a>　<a href="/math/2024/paper-1/q9/" rel="next">Q9 →</a></nav>
 </main>
 <footer><a href="/math/2024/paper-1/">返回 2024 卷一</a> · <a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2024P1Q8">喺題庫開啟呢題</a> · <a href="/hub/">DSE Hub 主頁</a> · 相關：<a href="https://dsemaths.canonlessons.com" rel="noopener">免費 DSE 數學視覺教程</a> · 站內只放索引、連結同課題標籤，只顯示資料庫已有內容</footer>
 </body>

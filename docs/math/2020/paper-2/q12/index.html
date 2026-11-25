@@ -11,6 +11,8 @@
 <meta name="author" content="DSE Hub">
 <link rel="canonical" href="https://hkdse.exampaper.cloud/math/2020/paper-2/q12/">
 <link rel="alternate" hreflang="zh-Hant-HK" href="https://hkdse.exampaper.cloud/math/2020/paper-2/q12/">
+<link rel="alternate" hreflang="en" href="https://hkdse.exampaper.cloud/math/2020/paper-2-en/q12/">
+<link rel="alternate" hreflang="x-default" href="https://hkdse.exampaper.cloud/math/2020/paper-2/q12/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="DSE Hub">
 <meta property="og:locale" content="zh_HK">
@@ -38,7 +40,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/hub/style.css?v=202611252320">
+<link rel="stylesheet" href="/hub/style.css?v=202611252329">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LTB27V0RGW"></script>
 <script>
@@ -92,7 +94,7 @@
       "mainEntity": {
         "@type": "Question",
         "name": "DSE 數學 2020 卷二 第 12 題",
-        "text": "圖中, 第 1 個圖案包含 3 粒點子。對任意正整數 $ n $, 第 $ (n+1) $ 個圖案是由第 $ n $ 個圖案加上 $ (2n+1) $ 粒點子所組成。求第 7 個圖案的點子數目。 ![Figure Q12 (as printed)](2020P2_zh_figs/Q12.png) - A. 15 - B. 27 - C. 38 - D. 51",
+        "text": "圖中, 第 1 個圖案包含 3 粒點子。對任意正整數 n , 第 (n+1) 個圖案是由第 n 個圖案加上 (2n+1) 粒點子所組成。求第 7 個圖案的點子數目。 ![Figure Q12 (as printed)](2020P2_zh_figs/Q12.png) - A. 15 - B. 27 - C. 38 - D. 51",
         "answerCount": 4,
         "acceptedAnswer": {
           "@type": "Answer",
@@ -117,6 +119,19 @@
           }
         ]
       }
+    },
+    {
+      "@type": "LearningResource",
+      "name": "DSE 數學 2020 卷二 第 12 題",
+      "url": "https://hkdse.exampaper.cloud/math/2020/paper-2/q12/",
+      "inLanguage": "zh-Hant-HK",
+      "learningResourceType": "Exam question",
+      "educationalLevel": "HKDSE",
+      "isPartOf": {
+        "@id": "https://hkdse.exampaper.cloud/#website"
+      },
+      "about": "數列遞迴與求和",
+      "teaches": "數列遞迴與求和"
     }
   ]
 }
@@ -148,7 +163,7 @@
         <a href="/phys/">物理<span class="n">0 卷</span></a>
         </nav>
         
-    <p class="page-cta open-cta"><a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2020P2Q12">喺題庫開啟呢題</a> · <a href="/math/2020/paper-2/">返回 2020 卷二 全卷</a></p>
+    <p class="page-cta open-cta"><a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2020P2Q12">喺題庫開啟呢題</a> · <a href="/math/2020/paper-2/">返回 2020 卷二 全卷</a> · <a href="/math/2020/paper-2-en/q12/">English version</a></p>
   </div>
 </header>
 <main class="subj-main">
@@ -167,6 +182,7 @@
   <h2>深度分析</h2>
 <p class="ai-chips"><span class="q-ai">數列遞迴與求和</span>　認知層次：分析　建議作答 90 秒</p><p>核心公式／定理：a_{n+1} = a_n + (2n+1)、\sum_{k=1}^{n}(2k+1) = n^2 + 2n</p><div class="ai-hints"><details class="ai-hint"><summary>提示 1（啟發）</summary><div>觀察題目給出的遞迴關係：第 (n+1) 個圖案比第 n 個多 (2n+1) 粒點子。</div></details><details class="ai-hint"><summary>提示 2（知識）</summary><div>列出前幾個圖案的點子數目，尋找規律或直接建立通項公式 a_n。</div></details><details class="ai-hint"><summary>提示 3（破題）</summary><div>利用平方數性質：連續奇數之和等於項數的平方，推導 a_n 與 n 的關係後代入 n=7 計算。</div></details></div><h3>誘答項逆向工程</h3><div class="ai-oa"><div class="ai-oa-card"><strong>A</strong><p class="ai-oa-meta"><span class="q-ai">計算粗心</span>　誤算第 1 項或求和起始點</p><div>學生可能直接將 n=7 代入公式 a_n = n^2 + 2n 得到 63，但題目定義 a_1=3。若誤以為 a_0=0 則算出 a_7=51 是 D。若選 A(15) 可能是只加了前幾項或混淆了 n 的意義，例如計算 1+2+3+4+5+6=21 再加錯數。更可能的是計算 1^2+2^2... 時算錯。</div></div><div class="ai-oa-card"><strong>B</strong><p class="ai-oa-meta"><span class="q-ai">計算粗心</span>　誤用通項公式導致偏移</p><div>學生可能計算出 a_n = n^2 + 3n + 1 或其他錯誤遞迴關係，或者在計算 a_6 時出錯。若選 B(27)，可能是算到第 5 個圖案的結果 (a_5=27) 而誤以為題目問的是這個。</div></div><div class="ai-oa-card"><strong>C</strong><p class="ai-oa-meta"><span class="q-ai">計算粗心</span>　求和時漏掉初始條件或項數</p><div>學生可能正確建立 a_{n+1} = a_n + 2n + 1，但在手算累加時出錯。例如從 a_1=3 開始，加上 5,7,9,11,13,15 時加法錯誤得到 38。</div></div><div class="ai-oa-card"><strong>D　✓ 正確答案</strong><div></div></div></div><p class="ai-strategy"><strong>速解策略：</strong>由 a_1=3, a_{n+1}=a_n+(2n+1) 推得 a_n=n^2+2n+1=(n+1)^2，故第 7 個為 (7+1)^2=64? 等等，重新檢查：a_1=3=(1+1)^2? 不對。應為 a_n = n^2+2n+1? 不，a_1=3, a_2=3+5=8=2^2+4? 讓我們重算：a_1=3; a_2=3+(2*1+1)=8; a_3=8+(2*2+1)=13; ... 發現 a_n = n^2 + 2n + 1? 不，a_1=3, (1)^2+2(1)+1=4≠3。正確通項：a_n = n^2 + 2n + 1 - 1? 不。實際上是 a_n = n^2 + 2n + 1 從 n=0 開始？題目 a_1=3。令 b_n = a_n - 1，則 b_{n+1} = b_n + (2n+1)，b_1=2。此路不通。直接累加：a_7 = 3 + sum_{k=1}^{6}(2k+1) = 3 + [2*(1..6)+6] = 3 + (2*21+6)=3+48=51。</p>
 </section>
+<nav class="q-prevnext" aria-label="上一題／下一題"><a href="/math/2020/paper-2/q11/" rel="prev">← Q11</a>　<a href="/math/2020/paper-2/q13/" rel="next">Q13 →</a></nav>
 </main>
 <footer><a href="/math/2020/paper-2/">返回 2020 卷二</a> · <a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2020P2Q12">喺題庫開啟呢題</a> · <a href="/hub/">DSE Hub 主頁</a> · 相關：<a href="https://dsemaths.canonlessons.com" rel="noopener">免費 DSE 數學視覺教程</a> · 站內只放索引、連結同課題標籤，只顯示資料庫已有內容</footer>
 </body>

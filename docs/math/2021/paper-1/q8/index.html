@@ -4,18 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>DSE 數學 2021 卷一 第 8 題深度分析｜DSE Hub</title>
-<meta name="description" content="DSE 數學 2021 卷一 第 8 題深度解析：考點「微分法」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
+<meta name="description" content="DSE 數學 2021 卷一 第 8 題深度解析：考點「平面幾何」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
 <meta name="keywords" content="DSE, 香港中學文憑, 歷屆試題, past paper, DSE 數學, DSE 經濟, DSE 化學, DSE 生物, DSE 物理, 免費題庫, 按課題">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="googlebot" content="index, follow">
 <meta name="author" content="DSE Hub">
 <link rel="canonical" href="https://hkdse.exampaper.cloud/math/2021/paper-1/q8/">
 <link rel="alternate" hreflang="zh-Hant-HK" href="https://hkdse.exampaper.cloud/math/2021/paper-1/q8/">
+<link rel="alternate" hreflang="en" href="https://hkdse.exampaper.cloud/math/2021/paper-1-en/q8/">
+<link rel="alternate" hreflang="x-default" href="https://hkdse.exampaper.cloud/math/2021/paper-1/q8/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="DSE Hub">
 <meta property="og:locale" content="zh_HK">
 <meta property="og:title" content="DSE 數學 2021 卷一 第 8 題深度分析｜DSE Hub">
-<meta property="og:description" content="DSE 數學 2021 卷一 第 8 題深度解析：考點「微分法」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
+<meta property="og:description" content="DSE 數學 2021 卷一 第 8 題深度解析：考點「平面幾何」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
 <meta property="og:url" content="https://hkdse.exampaper.cloud/math/2021/paper-1/q8/">
 <meta property="og:image" content="https://hkdse.exampaper.cloud/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -23,7 +25,7 @@
 <meta property="og:image:alt" content="DSE Hub 香港中學文憑歷屆試題資料庫">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="DSE 數學 2021 卷一 第 8 題深度分析｜DSE Hub">
-<meta name="twitter:description" content="DSE 數學 2021 卷一 第 8 題深度解析：考點「微分法」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
+<meta name="twitter:description" content="DSE 數學 2021 卷一 第 8 題深度解析：考點「平面幾何」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
 <meta name="twitter:image" content="https://hkdse.exampaper.cloud/og-image.png">
 <meta name="theme-color" content="#0b1220">
 <link rel="manifest" href="/manifest.webmanifest">
@@ -38,7 +40,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/hub/style.css?v=202611252320">
+<link rel="stylesheet" href="/hub/style.css?v=202611252329">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LTB27V0RGW"></script>
 <script>
@@ -92,14 +94,26 @@
       "mainEntity": {
         "@type": "Question",
         "name": "DSE 數學 2021 卷一 第 8 題",
-        "text": "圖 1 中，$AB$ 的延線與 $CD$ 的延線相交於點 $E$。已知 $\\angle CAE = \\angle BDE$。 ![Figure Q8](2021P1_zh_figs/Q08.png) (a) 證明 $\\triangle ACE \\sim \\triangle DBE$。 (b) 已知 $AC = 25\\, \\text{cm}$、$AE = 60\\, \\text{cm}$、$CE = 65\\, \\text{cm}$ 及 $BD = 15\\, \\text{cm}$。 (i) $\\triangle ACE$ 是否一直角三角形？試解釋你的答案。 (ii) 求 $\\triangle BDE$ 的面積。",
-        "answerCount": 4,
+        "text": "圖 1 中，AB 的延線與 CD 的延線相交於點 E。已知 \\angle CAE = \\angle BDE。 ![Figure Q8](2021P1_zh_figs/Q08.png) (a) 證明 \\triangle ACE \\sim \\triangle DBE。 (b) 已知 AC = 25\\, \\text{cm}、AE = 60\\, \\text{cm}、CE = 65\\, \\text{cm} 及 BD = 15\\, \\text{cm}。 (i) \\triangle ACE 是否一直角三角形？試解釋你的答案。 (ii) 求 \\triangle BDE 的面積。",
+        "answerCount": 0,
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "先由直線斜率得 f'(1)，代入公式解 k；再積分 f'(x) 得 f(x)+C，代 x=1 求 y 值解 C。"
-        },
-        "suggestedAnswer": []
+          "text": "先證對頂角加已知角得相似；再驗畢氏定理定直角；最後用相似比求未知邊算面積。"
+        }
       }
+    },
+    {
+      "@type": "LearningResource",
+      "name": "DSE 數學 2021 卷一 第 8 題",
+      "url": "https://hkdse.exampaper.cloud/math/2021/paper-1/q8/",
+      "inLanguage": "zh-Hant-HK",
+      "learningResourceType": "Exam question",
+      "educationalLevel": "HKDSE",
+      "isPartOf": {
+        "@id": "https://hkdse.exampaper.cloud/#website"
+      },
+      "about": "平面幾何",
+      "teaches": "平面幾何"
     }
   ]
 }
@@ -131,7 +145,7 @@
         <a href="/phys/">物理<span class="n">0 卷</span></a>
         </nav>
         
-    <p class="page-cta open-cta"><a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2021P1Q8">喺題庫開啟呢題</a> · <a href="/math/2021/paper-1/">返回 2021 卷一 全卷</a></p>
+    <p class="page-cta open-cta"><a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2021P1Q8">喺題庫開啟呢題</a> · <a href="/math/2021/paper-1/">返回 2021 卷一 全卷</a> · <a href="/math/2021/paper-1-en/q8/">English version</a></p>
   </div>
 </header>
 <main class="subj-main">
@@ -146,8 +160,9 @@
 </section>
 <section class="kw-section" aria-label="深度分析">
   <h2>深度分析</h2>
-<p class="ai-chips"><span class="q-ai">微分法</span>　認知層次：應用　建議作答 240 秒</p><p>核心公式／定理：\frac{d}{dx}(a^{g(x)}) = a^{g(x)} \ln a \cdot g&#x27;(x)、\int \frac{e^u}{1+e^u} du = \ln(1+e^u) + C、y - y_0 = m(x - x_0)</p><div class="ai-hints"><details class="ai-hint"><summary>提示 1（啟發）</summary><div>提示 1：直線斜率 m = -A/B，切點處 f&#x27;(x) 等於該斜率。</div></details><details class="ai-hint"><summary>提示 2（知識）</summary><div>提示 2：令 u = 1 + 2^{kx}，則 du = k 2^{kx} ln 2 dx，注意換元時的係數調整。</div></details><details class="ai-hint"><summary>提示 3（破題）</summary><div>提示 3：先求 k，再積分時將 k 視為常數處理，最後用切點坐標定 C。</div></details></div><p class="ai-strategy"><strong>速解策略：</strong>先由直線斜率得 f&#x27;(1)，代入公式解 k；再積分 f&#x27;(x) 得 f(x)+C，代 x=1 求 y 值解 C。</p>
+<p class="ai-chips"><span class="q-ai">平面幾何</span>　認知層次：分析　建議作答 180 秒</p><p>核心公式／定理：\frac{AC}{DB} = \frac{AE}{DE} = \frac{CE}{BE}、a^2 + b^2 = c^2</p><div class="ai-hints"><details class="ai-hint"><summary>提示 1（啟發）</summary><div>提示 1：觀察圖形中相交直線形成的對頂角關係。</div></details><details class="ai-hint"><summary>提示 2（知識）</summary><div>提示 2：回憶相似三角形的 AA 判定法則（兩角相等）。</div></details><details class="ai-hint"><summary>提示 3（破題）</summary><div>提示 3：計算三邊平方和時，留意 $25^2 + 65^2$ 是否等於 $60^2$</div></details></div><p class="ai-strategy"><strong>速解策略：</strong>先證對頂角加已知角得相似；再驗畢氏定理定直角；最後用相似比求未知邊算面積。</p>
 </section>
+<nav class="q-prevnext" aria-label="上一題／下一題"><a href="/math/2021/paper-1/q7/" rel="prev">← Q7</a>　<a href="/math/2021/paper-1/q9/" rel="next">Q9 →</a></nav>
 </main>
 <footer><a href="/math/2021/paper-1/">返回 2021 卷一</a> · <a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2021P1Q8">喺題庫開啟呢題</a> · <a href="/hub/">DSE Hub 主頁</a> · 相關：<a href="https://dsemaths.canonlessons.com" rel="noopener">免費 DSE 數學視覺教程</a> · 站內只放索引、連結同課題標籤，只顯示資料庫已有內容</footer>
 </body>

@@ -11,6 +11,8 @@
 <meta name="author" content="DSE Hub">
 <link rel="canonical" href="https://hkdse.exampaper.cloud/math/2013/paper-2/q33/">
 <link rel="alternate" hreflang="zh-Hant-HK" href="https://hkdse.exampaper.cloud/math/2013/paper-2/q33/">
+<link rel="alternate" hreflang="en" href="https://hkdse.exampaper.cloud/math/2013/paper-2-en/q33/">
+<link rel="alternate" hreflang="x-default" href="https://hkdse.exampaper.cloud/math/2013/paper-2/q33/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="DSE Hub">
 <meta property="og:locale" content="zh_HK">
@@ -38,7 +40,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/hub/style.css?v=202611252320">
+<link rel="stylesheet" href="/hub/style.css?v=202611252329">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LTB27V0RGW"></script>
 <script>
@@ -92,31 +94,44 @@
       "mainEntity": {
         "@type": "Question",
         "name": "DSE 數學 2013 卷二 第 33 題",
-        "text": "$\\mathrm{A00000E00011}_{16} =$ - A. $10\\times16^{11}+14\\times16^5+17$。 - B. $11\\times16^{11}+15\\times16^5+17$。 - C. $10\\times16^{12}+14\\times16^6+272$。 - D. $11\\times16^{12}+15\\times16^6+272$。",
+        "text": "\\mathrm{A00000E00011}_{16} = - A. 10\\times16^{11}+14\\times16^5+17。 - B. 11\\times16^{11}+15\\times16^5+17。 - C. 10\\times16^{12}+14\\times16^6+272。 - D. 11\\times16^{12}+15\\times16^6+272。",
         "answerCount": 4,
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "A. $10\\times16^{11}+14\\times16^5+17$。。速解策略：確認 E=14，最高位在第 12 位故指數為 11，尾數 11 即十進制 17。"
+          "text": "A. 10\\times16^{11}+14\\times16^5+17。速解策略：確認 E=14，最高位在第 12 位故指數為 11，尾數 11 即十進制 17。"
         },
         "suggestedAnswer": [
           {
             "@type": "Answer",
-            "text": "A. $10\\times16^{11}+14\\times16^5+17$。"
+            "text": "A. 10\\times16^{11}+14\\times16^5+17"
           },
           {
             "@type": "Answer",
-            "text": "B. $11\\times16^{11}+15\\times16^5+17$。"
+            "text": "B. 11\\times16^{11}+15\\times16^5+17"
           },
           {
             "@type": "Answer",
-            "text": "C. $10\\times16^{12}+14\\times16^6+272$。"
+            "text": "C. 10\\times16^{12}+14\\times16^6+272"
           },
           {
             "@type": "Answer",
-            "text": "D. $11\\times16^{12}+15\\times16^6+272$。"
+            "text": "D. 11\\times16^{12}+15\\times16^6+272"
           }
         ]
       }
+    },
+    {
+      "@type": "LearningResource",
+      "name": "DSE 數學 2013 卷二 第 33 題",
+      "url": "https://hkdse.exampaper.cloud/math/2013/paper-2/q33/",
+      "inLanguage": "zh-Hant-HK",
+      "learningResourceType": "Exam question",
+      "educationalLevel": "HKDSE",
+      "isPartOf": {
+        "@id": "https://hkdse.exampaper.cloud/#website"
+      },
+      "about": "十六進制數值展開",
+      "teaches": "十六進制數值展開"
     }
   ]
 }
@@ -148,7 +163,7 @@
         <a href="/phys/">物理<span class="n">0 卷</span></a>
         </nav>
         
-    <p class="page-cta open-cta"><a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2013P2Q33">喺題庫開啟呢題</a> · <a href="/math/2013/paper-2/">返回 2013 卷二 全卷</a></p>
+    <p class="page-cta open-cta"><a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2013P2Q33">喺題庫開啟呢題</a> · <a href="/math/2013/paper-2/">返回 2013 卷二 全卷</a> · <a href="/math/2013/paper-2-en/q33/">English version</a></p>
   </div>
 </header>
 <main class="subj-main">
@@ -166,6 +181,7 @@
   <h2>深度分析</h2>
 <p class="ai-chips"><span class="q-ai">十六進制數值展開</span>　認知層次：理解　建議作答 45 秒</p><p>核心公式／定理：\sum d_i \times b^i、16^{n-1} 為最高位權重</p><div class="ai-hints"><details class="ai-hint"><summary>提示 1（啟發）</summary><div>十六進制中，字母 A-F 分別代表十進制的 10-15，請先確認 &#x27;E&#x27; 的數值。</div></details><details class="ai-hint"><summary>提示 2（知識）</summary><div>位值原理公式為 $d_n \times b^{n-1} + \dots + d_1 \times b^0$，注意指數與位數的關係。</div></details><details class="ai-hint"><summary>提示 3（破題）</summary><div>將十六進制數字從右至左編號（個位為第 1 位），計算各位置對應的 $16$ 次方權重。</div></details></div><h3>誘答項逆向工程</h3><div class="ai-oa"><div class="ai-oa-card"><strong>A　✓ 正確答案</strong><div></div></div><div class="ai-oa-card"><strong>B</strong><p class="ai-oa-meta"><span class="q-ai">概念錯誤</span>　十六進制符號誤讀</p><div>將 &#x27;E&#x27; 誤認為十進制的 11，而非十六進制的 14。</div></div><div class="ai-oa-card"><strong>C</strong><p class="ai-oa-meta"><span class="q-ai">計算粗心</span>　位權指數計算錯誤</p><div>將最高位 &#x27;E&#x27; 的權重誤算為 $16^{12}$，導致整體指數偏移。</div></div><div class="ai-oa-card"><strong>D</strong><p class="ai-oa-meta"><span class="q-ai">概念錯誤</span>　多重概念混淆</p><div>同時犯下 &#x27;E&#x27;=11 與位權指數錯誤，且將尾數 &#x27;11&#x27; 誤讀為 272。</div></div></div><p class="ai-strategy"><strong>速解策略：</strong>確認 E=14，最高位在第 12 位故指數為 11，尾數 11 即十進制 17。</p>
 </section>
+<nav class="q-prevnext" aria-label="上一題／下一題"><a href="/math/2013/paper-2/q32/" rel="prev">← Q32</a>　<a href="/math/2013/paper-2/q34/" rel="next">Q34 →</a></nav>
 </main>
 <footer><a href="/math/2013/paper-2/">返回 2013 卷二</a> · <a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2013P2Q33">喺題庫開啟呢題</a> · <a href="/hub/">DSE Hub 主頁</a> · 相關：<a href="https://dsemaths.canonlessons.com" rel="noopener">免費 DSE 數學視覺教程</a> · 站內只放索引、連結同課題標籤，只顯示資料庫已有內容</footer>
 </body>

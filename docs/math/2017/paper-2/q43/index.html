@@ -11,6 +11,8 @@
 <meta name="author" content="DSE Hub">
 <link rel="canonical" href="https://hkdse.exampaper.cloud/math/2017/paper-2/q43/">
 <link rel="alternate" hreflang="zh-Hant-HK" href="https://hkdse.exampaper.cloud/math/2017/paper-2/q43/">
+<link rel="alternate" hreflang="en" href="https://hkdse.exampaper.cloud/math/2017/paper-2-en/q43/">
+<link rel="alternate" hreflang="x-default" href="https://hkdse.exampaper.cloud/math/2017/paper-2/q43/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="DSE Hub">
 <meta property="og:locale" content="zh_HK">
@@ -38,7 +40,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/hub/style.css?v=202611252320">
+<link rel="stylesheet" href="/hub/style.css?v=202611252329">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LTB27V0RGW"></script>
 <script>
@@ -92,31 +94,44 @@
       "mainEntity": {
         "@type": "Question",
         "name": "DSE 數學 2017 卷二 第 43 題",
-        "text": "當佩怡擲一飛鏢時，她擲中目標的概率為 0.7。若佩怡擲該飛鏢 4 次，求她擲中目標至多 3 次的概率。 - A. $0.0081$ - B. $0.2401$ - C. $0.7599$ - D. $0.9919$",
+        "text": "當佩怡擲一飛鏢時，她擲中目標的概率為 0.7。若佩怡擲該飛鏢 4 次，求她擲中目標至多 3 次的概率。 - A. 0.0081 - B. 0.2401 - C. 0.7599 - D. 0.9919",
         "answerCount": 4,
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "C. $0.7599$。速解策略：計算擲中 4 次的機率，再用 1 減去該值即可。"
+          "text": "C. 0.7599。速解策略：計算擲中 4 次的機率，再用 1 減去該值即可。"
         },
         "suggestedAnswer": [
           {
             "@type": "Answer",
-            "text": "A. $0.0081$"
+            "text": "A. 0.0081"
           },
           {
             "@type": "Answer",
-            "text": "B. $0.2401$"
+            "text": "B. 0.2401"
           },
           {
             "@type": "Answer",
-            "text": "C. $0.7599$"
+            "text": "C. 0.7599"
           },
           {
             "@type": "Answer",
-            "text": "D. $0.9919$"
+            "text": "D. 0.9919"
           }
         ]
       }
+    },
+    {
+      "@type": "LearningResource",
+      "name": "DSE 數學 2017 卷二 第 43 題",
+      "url": "https://hkdse.exampaper.cloud/math/2017/paper-2/q43/",
+      "inLanguage": "zh-Hant-HK",
+      "learningResourceType": "Exam question",
+      "educationalLevel": "HKDSE",
+      "isPartOf": {
+        "@id": "https://hkdse.exampaper.cloud/#website"
+      },
+      "about": "二項分佈",
+      "teaches": "二項分佈"
     }
   ]
 }
@@ -148,7 +163,7 @@
         <a href="/phys/">物理<span class="n">0 卷</span></a>
         </nav>
         
-    <p class="page-cta open-cta"><a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2017P2Q43">喺題庫開啟呢題</a> · <a href="/math/2017/paper-2/">返回 2017 卷二 全卷</a></p>
+    <p class="page-cta open-cta"><a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2017P2Q43">喺題庫開啟呢題</a> · <a href="/math/2017/paper-2/">返回 2017 卷二 全卷</a> · <a href="/math/2017/paper-2-en/q43/">English version</a></p>
   </div>
 </header>
 <main class="subj-main">
@@ -166,6 +181,7 @@
   <h2>深度分析</h2>
 <p class="ai-chips"><span class="q-ai">二項分佈</span>　認知層次：應用　建議作答 90 秒</p><p>核心公式／定理：$P(X=k) = \binom{n}{k} p^k (1-p)^{n-k}$、$P(A^c) = 1 - P(A)$</p><div class="ai-hints"><details class="ai-hint"><summary>提示 1（啟發）</summary><div>思考「擲中至多 3 次」包含了哪些具體的情況？是否包含擲中 4 次的情况？</div></details><details class="ai-hint"><summary>提示 2（知識）</summary><div>直接計算 $P(X=0)+P(X=1)+P(X=2)+P(X=3)$ 非常繁瑣，有沒有更簡單的邏輯可以利用？</div></details><details class="ai-hint"><summary>提示 3（破題）</summary><div>考慮到所有可能性的總和為 1，「至多 3 次」的補集是什麼情況？請利用補集法則求解。</div></details></div><h3>誘答項逆向工程</h3><div class="ai-oa"><div class="ai-oa-card"><strong>A</strong><p class="ai-oa-meta"><span class="q-ai">計算粗心</span>　誤算擲中 4 次的機率</p><div>學生直接計算擲中 4 次的機率 $0.7^4 = 0.2401$，忘記題目要求是「至多 3 次」，將此值當作答案。</div></div><div class="ai-oa-card"><strong>B</strong><p class="ai-oa-meta"><span class="q-ai">審題不清</span>　誤解「至多」的含義</p><div>學生正確計算出擲中 4 次的機率 $0.2401$，但誤以為題目問的就是這個特定情況，或是混淆了「恰好」與「至多」的概念。</div></div><div class="ai-oa-card"><strong>C　✓ 正確答案</strong><div></div></div><div class="ai-oa-card"><strong>D</strong><p class="ai-oa-meta"><span class="q-ai">策略錯誤</span>　未考慮互斥事件加總</p><div>學生嘗試將擲中 1、2、3、4 次的機率全部算出並相加，但計算過程出錯，或是誤將 $1 - 0.7^4$ 算成其他數字。</div></div></div><p class="ai-strategy"><strong>速解策略：</strong>計算擲中 4 次的機率，再用 1 減去該值即可。</p>
 </section>
+<nav class="q-prevnext" aria-label="上一題／下一題"><a href="/math/2017/paper-2/q42/" rel="prev">← Q42</a>　<a href="/math/2017/paper-2/q44/" rel="next">Q44 →</a></nav>
 </main>
 <footer><a href="/math/2017/paper-2/">返回 2017 卷二</a> · <a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2017P2Q43">喺題庫開啟呢題</a> · <a href="/hub/">DSE Hub 主頁</a> · 相關：<a href="https://dsemaths.canonlessons.com" rel="noopener">免費 DSE 數學視覺教程</a> · 站內只放索引、連結同課題標籤，只顯示資料庫已有內容</footer>
 </body>

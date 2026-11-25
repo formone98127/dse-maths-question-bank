@@ -17,6 +17,8 @@ ROOT = Path(__file__).resolve().parent / "docs"
 SITE = "https://hkdse.exampaper.cloud"
 # Cache-busting 版本字串：build 時間自動 bump（行為有變都唔會派 7 日舊 asset）。
 VER = datetime.now().strftime("%Y%m%d%H%M")
+# 英文卷問題頁（paper-N-en/qN/）開關：False 可以只出中文頁分段上線
+EMIT_EN_PAGES = True
 TODAY = date.today().isoformat()
 BANK = f"{SITE}/"
 HUB = f"{SITE}/hub/"
@@ -284,17 +286,44 @@ PAPER_CODE = {
     "卷二": "paper-2",
     "卷一甲": "paper-1a",
     "卷一乙": "paper-1b",
+    "卷一（M1）": "paper-1m",
+    "卷二（M2）": "paper-2m",
     "Paper 1": "paper-1",
     "Paper 2": "paper-2",
     "Paper 1A": "paper-1a",
     "Paper 1B": "paper-1b",
+    "Paper 1M": "paper-1m",
+    "Paper 2M": "paper-2m",
 }
 PAPER_ZH = {
     "paper-1": "卷一",
     "paper-2": "卷二",
     "paper-1a": "卷一甲",
     "paper-1b": "卷一乙",
+    "paper-1m": "卷一（M1）",
+    "paper-2m": "卷二（M2）",
 }
+
+# 英文卷頁 chrome 用嘅固定字串（唔好喺模板入面 hardcode 兩次）
+PAPER_EN = {
+    "paper-1": "Paper 1",
+    "paper-2": "Paper 2",
+    "paper-1a": "Paper 1A",
+    "paper-1b": "Paper 1B",
+    "paper-1m": "Paper 1 (M1)",
+    "paper-2m": "Paper 2 (M2)",
+}
+
+
+def strip_latex_delims(s):
+    """去掉 $ / \\( \\) / \\[ \\] 分隔符，保留內文（供 JSON-LD 純文字）。"""
+    for d in ("$", "\\(", "\\)", "\\[", "\\]"):
+        s = str(s or "").replace(d, "")
+    return s
+
+
+def paper_en_label(paper):
+    return PAPER_EN.get(paper_code_of(paper), str(paper or "Paper 1"))
 
 # Curriculum labels → actual tags in data.js (do not invent tags).
 KW_TAG_MAP = {
@@ -2117,7 +2146,7 @@ def q_list_html(rows, topic=None, analyses=None, paper_path=None):
 def paper_code_of(paper):
     if paper in PAPER_CODE:
         return PAPER_CODE[paper]
-    m = re.search(r"(\d+)\s*([A-Da-d])?", str(paper or ""))
+    m = re.search(r"(\d+)\s*([A-Za-z])?", str(paper or ""))
     if not m:
         return "paper-1"
     code = "paper-" + m.group(1)
@@ -2914,128 +2943,275 @@ def _analysis_section_html(analysis):
     )
 
 
+def _qpage_graph(sid, s, akey, url, paper_row, qno, name, qtext, answers, accepted, lang_code, topic):
+    """QAPage + LearningResource + Breadcrumb（zh/en 兩版共用）。"""
+    crumbs = [
+        ("/hub/", "DSE Hub"),
+        (f"/{sid}/", s["short"] if lang_code == "zh-Hant-HK" else s["en"]),
+        (year_path(sid, akey[1]), akey[1]),
+        (SITE + paper_row["path"], f"{paper_row['paper']}（{paper_row['lang']}）"),
+        (url, f"第 {qno} 題" if lang_code == "zh-Hant-HK" else f"Question {qno}"),
+    ]
+    main_entity = {
+        "@type": "Question",
+        "name": name,
+        "text": qtext,
+        "answerCount": len(answers),
+        "acceptedAnswer": {"@type": "Answer", "text": accepted},
+    }
+    if answers:
+        main_entity["suggestedAnswer"] = answers
+    graph_items = [ld_breadcrumb(crumbs), {"@type": "QAPage", "mainEntity": main_entity}]
+    lr = {
+        "@type": "LearningResource",
+        "name": name,
+        "url": url,
+        "inLanguage": lang_code,
+        "learningResourceType": "Exam question",
+        "educationalLevel": "HKDSE",
+        "isPartOf": {"@id": f"{SITE}/#website"},
+    }
+    if topic:
+        lr["about"] = topic
+        lr["teaches"] = topic
+    graph_items.append(lr)
+    return {"@context": "https://schema.org", "@graph": graph_items}
+
+
+def _term(text):
+    """選項文字收一個句尾（避免「。。」）。"""
+    return re.sub(r"[。．.]+$", "", str(text or "")).strip()
+
+
+def _clean_text(t):
+    return re.sub(r"\s+", " ", strip_latex_delims(t)).strip()
+
+
 def make_question_pages(catalog, papers, questions, analyses):
-    """每題有分析 JSON 就出一頁 /<sid>/<year>/<paper-code>/q<qno>/。"""
+    """每題有分析 JSON 就出一頁 /<sid>/<year>/<paper-code>/q<qno>/；有英文題目記錄另出 -en twin（真英文內容）。"""
     if not analyses:
         print("question pages 0")
         return 0
     by_paper = defaultdict(list)
     for r in papers:
         by_paper[(r["id"], str(r["year"]), r["paper_code"])].append(r)
-    count = 0
-    written = set()
+    # 同一題嘅中英文記錄收埋一組（analysis JSON 冇英文欄位，分析一律中文版）
+    grouped = {}
     for q in sort_questions(questions):
         try:
             akey = (q.get("subject"), q_year(q), paper_code_of(q.get("paper")), int(q.get("qno", -1)))
         except ValueError:
             continue
-        analysis = analyses.get(akey)
-        if not analysis:
+        if akey not in analyses:
             continue
-        sid = SUBJECT_TO_SID.get(q.get("subject"))
-        if not sid:
+        if not SUBJECT_TO_SID.get(q.get("subject")):
             continue
-        code = paper_code_of(q.get("paper"))
-        rows = by_paper.get((sid, q_year(q), code)) or []
-        if not rows:
-            print("question page skipped (no paper row)", akey)
-            continue
-        lang = infer_lang(q.get("file") or "")
-        r = next((x for x in rows if x["lang"] == lang), rows[0])
+        g = grouped.setdefault(akey, {"zh": None, "en": None})
+        if infer_lang(q.get("file") or "") == "英文":
+            if g["en"] is None:
+                g["en"] = q
+        elif g["zh"] is None:
+            g["zh"] = q
+    # prev/next 用：同一卷入面有頁嘅題號
+    qnos_by_paper = defaultdict(list)
+    for akey in grouped:
+        qnos_by_paper[akey[:3]].append(akey[3])
+    for v in qnos_by_paper.values():
+        v.sort()
+
+    en_short = {"math": "Maths", "econ": "Economics", "chem": "Chemistry", "bio": "Biology", "phys": "Physics"}
+
+    def paper_row_for(sid, year, code, lang):
+        rows = by_paper.get((sid, year, code)) or []
+        hit = next((x for x in rows if x["lang"] == lang), None)
+        return hit or (rows[0] if rows else None)
+
+    count = 0
+    zh_url_by_key = {}
+    for akey in sorted(grouped, key=lambda k: (k[0], -year_sort_key(k[1]), k[2], k[3])):
+        subj_name, year, code, qno = akey
+        sid = SUBJECT_TO_SID[subj_name]
+        g = grouped[akey]
         s = subject_meta(sid)
-        path = f"{r['path']}q{q['qno']}/"
-        if path in written:
-            # 中英文同 key 並存（如 2012 卷二 Q1-3）：中文卷先出場，頁面寫一次就夠
+        a = analyses[akey].get("analysis") or {}
+        md = a.get("metadata") or {}
+        topic = md.get("primary_topic") or ""
+        oa = a.get("options_analysis") or {}
+        correct_letter = next((L for L in "ABCD" if isinstance(oa.get(L), dict) and oa[L].get("is_correct")), None)
+        strategy_txt = str(a.get("quick_solution_strategy") or "")
+        prev_q = next((n for n in reversed(qnos_by_paper[akey[:3]]) if n < qno), None)
+        next_q = next((n for n in qnos_by_paper[akey[:3]] if n > qno), None)
+
+        def prevnext_html(path_fmt):
+            bits = []
+            if prev_q is not None:
+                bits.append(f'<a href="{esc(path_fmt.format(prev_q))}" rel="prev">← Q{prev_q}</a>')
+            if next_q is not None:
+                bits.append(f'<a href="{esc(path_fmt.format(next_q))}" rel="next">Q{next_q} →</a>')
+            return '<nav class="q-prevnext" aria-label="上一題／下一題">' + "　".join(bits) + "</nav>" if bits else ""
+
+        # ---- 中文頁（主體）----
+        qzh_q = g["zh"]
+        zh_row = paper_row_for(sid, year, code, "中文") or paper_row_for(sid, year, code, "英文")
+        if qzh_q is not None and zh_row is not None:
+            zh_path = f"{zh_row['path']}q{qno}/"
+            zh_url = SITE + zh_path
+            zh_url_by_key[akey] = zh_url
+            qzh = paper_zh_label(code)
+            title = f"DSE {s['short']} {year} {qzh} 第 {qno} 題深度分析｜DSE Hub"
+            desc = (
+                f"DSE {s['short']} {year} {qzh} 第 {qno} 題深度解析：考點"
+                + (f"「{topic}」" if topic else "")
+                + "、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。"
+            )
+            h1 = f"DSE {s['short']} {year} {qzh} 第 {qno} 題深度分析"
+            tagline = "考點圖譜 · 布魯姆認知層次 · 三層鷹架提示 · 誘答項逆向工程"
+            bank_href = question_href(qzh_q)
+            crumbs = [
+                ("/hub/", "DSE Hub"),
+                (f"/{sid}/", s["short"]),
+                (year_path(sid, year), year),
+                (zh_row["path"], f"{zh_row['paper']}（{zh_row['lang']}）"),
+                (None, f"第 {qno} 題"),
+            ]
+            en_twin_link = ""
+            if g["en"] is not None and EMIT_EN_PAGES:
+                en_twin_link = f' · <a href="{esc(zh_row["path"].rstrip("/"))}-en/q{qno}/">English version</a>'
+            cta = (
+                f'<p class="page-cta open-cta"><a href="{esc(bank_href)}">喺題庫開啟呢題</a>'
+                f' · <a href="{esc(zh_row["path"])}">返回 {year} {esc(qzh)} 全卷</a>'
+                + en_twin_link
+                + "</p>"
+            )
+            sections = [
+                '<section class="kw-block" aria-label="題目">\n  <h2>題目</h2>\n'
+                f'  <div class="q-embed">{_embed_question_html(qzh_q)}</div>\n</section>',
+                _analysis_section_html(analyses[akey]),
+            ]
+            pn = prevnext_html(zh_row["path"] + "q{}/")
+            if pn:
+                sections.append(pn)
+            opts = dict(re.findall(r"^-\s*([A-D])[.．、]\s*(.+)$", str(qzh_q.get("text") or ""), re.M))
+            opts = {k: _clean_text(v) for k, v in opts.items()}
+            answers = [{"@type": "Answer", "text": f"{L}. {_term(opts[L])}"} for L in "ABCD" if L in opts]
+            qtext = _clean_text(qzh_q.get("text"))[:500]
+            if correct_letter and correct_letter in opts:
+                accepted = f"{correct_letter}. {_term(opts[correct_letter])}。速解策略：{_term(_clean_text(strategy_txt))}。"
+            else:
+                accepted = (_term(_clean_text(strategy_txt)) + "。") if strategy_txt else ""
+            name = f"DSE {s['short']} {year} {qzh} 第 {qno} 題"
+            graph = _qpage_graph(sid, s, akey, zh_url, zh_row, qno, name, qtext, answers, accepted, "zh-Hant-HK", topic)
+            body = hero_html(crumbs, h1, tagline, catalog, sid, cta=cta)
+            body += '<main class="subj-main">\n' + "\n".join(sections) + "\n</main>"
+            en_alt = f"{SITE}{zh_row['path'].rstrip('/')}-en/q{qno}/" if g["en"] is not None and EMIT_EN_PAGES else None
+            alternates = ([("zh-Hant-HK", zh_url), ("en", en_alt), ("x-default", zh_url)] if en_alt else None)
+            write_landing(
+                zh_path,
+                title,
+                desc,
+                zh_url,
+                graph,
+                body,
+                footer_extra=f'<a href="{esc(zh_row["path"])}">返回 {year} {esc(qzh)}</a> · <a href="{esc(bank_href)}">喺題庫開啟呢題</a>',
+                alternates=alternates,
+            )
+            add_sitemap(zh_url, "0.8", "monthly")
+            count += 1
+
+        # ---- 英文 twin（真英文內容：題目／選項用英文記錄；中文深度分析收摺）----
+        qen_q = g["en"]
+        if qen_q is None or not EMIT_EN_PAGES:
             continue
-        url = SITE + path
-        qzh = paper_zh_label(code)
-        title = f"DSE {s['short']} {q['year']} {qzh} 第 {q['qno']} 題深度分析｜DSE Hub"
-        a = (analysis.get("analysis") or {}).get("metadata") or {}
-        topic = a.get("primary_topic") or ""
+        en_row = paper_row_for(sid, year, code, "英文")
+        if en_row is None:
+            print("en twin skipped (no en paper row)", akey)
+            continue
+        en_path = f"{en_row['path']}q{qno}/"
+        en_url = SITE + en_path
+        if zh_url_by_key.get(akey) == en_url:
+            # zh 頁已寫喺同一路徑（中英文卷無分路徑），唔好覆寫
+            print("en twin skipped (same path as zh page)", akey)
+            continue
+        pl = paper_en_label(code)
+        subj_en = en_short.get(sid, s["en"])
+        title = f"DSE {subj_en} {year} {pl} Question {qno} — Answer, Traps & Speed Solution | DSE Hub"
         desc = (
-            f"DSE {s['short']} {q['year']} {qzh} 第 {q['qno']} 題深度解析：考點"
-            + (f"「{topic}」" if topic else "")
-            + "、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。"
+            f"Free worked answer for DSE {subj_en} {year} {pl} Question {qno}: the correct answer,"
+            " why each wrong option traps candidates, and a fast solving strategy."
+            + (f" Topic: {topic}." if topic else "")
         )
-        h1 = f"DSE {s['short']} {q['year']} {qzh} 第 {q['qno']} 題深度分析"
-        tagline = "考點圖譜 · 布魯姆認知層次 · 三層鷹架提示 · 誘答項逆向工程"
-        bank_href = question_href(q)
+        h1 = f"DSE {subj_en} {year} {pl} Question {qno}"
+        tagline = "Correct answer · Option traps · Speed strategy · Detailed analysis in Chinese"
+        bank_href = question_href(qen_q)
         crumbs = [
             ("/hub/", "DSE Hub"),
-            (f"/{sid}/", s["short"]),
-            (year_path(sid, q_year(q)), q_year(q)),
-            (r["path"], f"{r['paper']}（{r['lang']}）"),
-            (None, f"第 {q['qno']} 題"),
+            (f"/{sid}/", subj_en),
+            (year_path(sid, year), year),
+            (en_row["path"], f"{pl} (English)"),
+            (None, f"Question {qno}"),
         ]
+        zh_link = zh_url_by_key.get(akey)
         cta = (
-            f'<p class="page-cta open-cta"><a href="{esc(bank_href)}">喺題庫開啟呢題</a>'
-            f' · <a href="{esc(r["path"])}">返回 {q["year"]} {esc(qzh)} 全卷</a></p>'
+            f'<p class="page-cta open-cta"><a href="{esc(bank_href)}">Open this question in the bank</a>'
+            f' · <a href="{esc(en_row["path"])}">Back to {year} {esc(pl)}</a>'
+            + (f' · <a href="{esc(zh_link)}">中文版</a>' if zh_link else "")
+            + "</p>"
         )
-        sections = [
-            '<section class="kw-block" aria-label="題目">\n  <h2>題目</h2>\n'
-            f'  <div class="q-embed">{_embed_question_html(q)}</div>\n</section>',
-            _analysis_section_html(analysis),
+        en_opts = dict(re.findall(r"^-\s*([A-D])[.．、]\s*(.+)$", str(qen_q.get("text") or ""), re.M))
+        en_opts = {k: _clean_text(v) for k, v in en_opts.items()}
+        en_answers = [{"@type": "Answer", "text": f"{L}. {_term(en_opts[L])}"} for L in "ABCD" if L in en_opts]
+        qtext = _clean_text(qen_q.get("text"))[:500]
+        accepted = ""
+        if correct_letter and correct_letter in en_opts:
+            accepted = f"{correct_letter}. {_term(en_opts[correct_letter])}."
+        name = f"DSE {subj_en} {year} {pl} Question {qno}"
+        graph = _qpage_graph(sid, s, akey, en_url, en_row, qno, name, qtext, en_answers, accepted, "en", topic)
+        answer_html = ""
+        if correct_letter and correct_letter in en_opts:
+            answer_html = (
+                '<section class="kw-block" aria-label="Answer">\n  <h2>Answer</h2>\n'
+                f'  <p class="ai-strategy"><strong>Correct answer: {correct_letter}.</strong> {esc(_term(en_opts[correct_letter]))}</p>\n</section>'
+            )
+        zh_analysis = _analysis_section_html(analyses[akey])
+        zh_inner = f'<a href="{esc(zh_link)}">中文版深度分析</a>' if zh_link else ""
+        analysis_note = (
+            "The full step-by-step analysis (scaffolding hints, wrong-option traps, speed strategy) is written in Chinese. "
+            + zh_inner
+        )
+        sections_en = [
+            '<section class="kw-block" aria-label="Question">\n  <h2>Question</h2>\n'
+            f'  <div class="q-embed">{_embed_question_html(qen_q)}</div>\n</section>',
         ]
-        # JSON-LD：QAPage，acceptedAnswer 用正確選項＋速解策略
-        oa = ((analysis.get("analysis") or {}).get("options_analysis")) or {}
-        opts = dict(re.findall(r"^-\s*([A-D])[.．、]\s*(.+)$", str(q.get("text") or ""), re.M))
-        clean = lambda s: re.sub(r"\s+", " ", str(s or "")).strip()
-        correct_letter = next((L for L in "ABCD" if isinstance(oa.get(L), dict) and oa[L].get("is_correct")), None)
-        answers = []
-        for L in "ABCD":
-            if L not in opts:
-                continue
-            answers.append({"@type": "Answer", "text": f"{L}. {clean(opts[L])}"})
-        qtext = clean(q.get("text"))
-        strategy_txt = str((analysis.get("analysis") or {}).get("quick_solution_strategy") or "")
-        accepted = (
-            f"{correct_letter}. {clean(opts.get(correct_letter))}。速解策略：{strategy_txt}"
-            if correct_letter and correct_letter in opts
-            else strategy_txt
+        if answer_html:
+            sections_en.append(answer_html)
+        sections_en.append(
+            '<section class="kw-section" aria-label="Deep analysis">\n  <h2>Deep analysis (Chinese)</h2>\n'
+            f"  <p>{analysis_note}</p>\n"
+            f"  <details><summary>展開中文深度分析（Open detailed analysis）</summary>\n{zh_analysis}\n  </details>\n</section>"
         )
-        qtext = qtext[:500]
-        graph = {
-            "@context": "https://schema.org",
-            "@graph": [
-                ld_breadcrumb(
-                    [
-                        ("/hub/", "DSE Hub"),
-                        (f"/{sid}/", s["short"]),
-                        (year_path(sid, q_year(q)), q_year(q)),
-                        (SITE + r["path"], f"{r['paper']}（{r['lang']}）"),
-                        (url, f"第 {q['qno']} 題"),
-                    ]
-                ),
-                {
-                    "@type": "QAPage",
-                    "mainEntity": {
-                        "@type": "Question",
-                        "name": f"DSE {s['short']} {q['year']} {qzh} 第 {q['qno']} 題",
-                        "text": qtext[:500],
-                        "answerCount": 4,
-                        "acceptedAnswer": {"@type": "Answer", "text": accepted},
-                        "suggestedAnswer": [x for x in answers if x.get("@type") == "Answer"],
-                    },
-                },
-            ],
-        }
+        pn = prevnext_html(en_row["path"] + "q{}/")
+        if pn:
+            sections_en.append(pn)
         body = hero_html(crumbs, h1, tagline, catalog, sid, cta=cta)
-        body += '<main class="subj-main">\n' + "\n".join(sections) + "\n</main>"
+        body += '<main class="subj-main">\n' + "\n".join(sections_en) + "\n</main>"
+        alternates = [("en", en_url)] + ([("zh-Hant-HK", zh_link)] if zh_link else [])
         write_landing(
-            path,
+            en_path,
             title,
             desc,
-            url,
+            en_url,
             graph,
             body,
-            footer_extra=f'<a href="{esc(r["path"])}">返回 {q["year"]} {esc(qzh)}</a> · <a href="{esc(bank_href)}">喺題庫開啟呢題</a>',
+            footer_extra=f'<a href="{esc(en_row["path"])}">Back to {year} {esc(pl)}</a> · <a href="{esc(bank_href)}">Open in the bank</a>',
+            lang="en",
+            og_locale="en_HK",
+            alternates=alternates,
         )
-        add_sitemap(url, "0.8", "monthly")
-        written.add(path)
+        add_sitemap(en_url, "0.8", "monthly")
         count += 1
-        print("question", path)
     print("question pages", count)
     return count
+
 
 
 def make_topic_pages(catalog, questions, papers):

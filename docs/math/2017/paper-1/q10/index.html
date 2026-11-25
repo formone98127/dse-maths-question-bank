@@ -4,18 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>DSE 數學 2017 卷一 第 10 題深度分析｜DSE Hub</title>
-<meta name="description" content="DSE 數學 2017 卷一 第 10 題深度解析：考點「泊松分佈與條件機率」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
+<meta name="description" content="DSE 數學 2017 卷一 第 10 題深度解析：考點「平面幾何」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
 <meta name="keywords" content="DSE, 香港中學文憑, 歷屆試題, past paper, DSE 數學, DSE 經濟, DSE 化學, DSE 生物, DSE 物理, 免費題庫, 按課題">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="googlebot" content="index, follow">
 <meta name="author" content="DSE Hub">
 <link rel="canonical" href="https://hkdse.exampaper.cloud/math/2017/paper-1/q10/">
 <link rel="alternate" hreflang="zh-Hant-HK" href="https://hkdse.exampaper.cloud/math/2017/paper-1/q10/">
+<link rel="alternate" hreflang="en" href="https://hkdse.exampaper.cloud/math/2017/paper-1-en/q10/">
+<link rel="alternate" hreflang="x-default" href="https://hkdse.exampaper.cloud/math/2017/paper-1/q10/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="DSE Hub">
 <meta property="og:locale" content="zh_HK">
 <meta property="og:title" content="DSE 數學 2017 卷一 第 10 題深度分析｜DSE Hub">
-<meta property="og:description" content="DSE 數學 2017 卷一 第 10 題深度解析：考點「泊松分佈與條件機率」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
+<meta property="og:description" content="DSE 數學 2017 卷一 第 10 題深度解析：考點「平面幾何」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
 <meta property="og:url" content="https://hkdse.exampaper.cloud/math/2017/paper-1/q10/">
 <meta property="og:image" content="https://hkdse.exampaper.cloud/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -23,7 +25,7 @@
 <meta property="og:image:alt" content="DSE Hub 香港中學文憑歷屆試題資料庫">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="DSE 數學 2017 卷一 第 10 題深度分析｜DSE Hub">
-<meta name="twitter:description" content="DSE 數學 2017 卷一 第 10 題深度解析：考點「泊松分佈與條件機率」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
+<meta name="twitter:description" content="DSE 數學 2017 卷一 第 10 題深度解析：考點「平面幾何」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
 <meta name="twitter:image" content="https://hkdse.exampaper.cloud/og-image.png">
 <meta name="theme-color" content="#0b1220">
 <link rel="manifest" href="/manifest.webmanifest">
@@ -38,7 +40,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/hub/style.css?v=202611252320">
+<link rel="stylesheet" href="/hub/style.css?v=202611252329">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LTB27V0RGW"></script>
 <script>
@@ -92,14 +94,26 @@
       "mainEntity": {
         "@type": "Question",
         "name": "DSE 數學 2017 卷一 第 10 題",
-        "text": "圖 1 中，$OPQR$ 為四邊形使得 $OP=OQ=OR$。$OQ$ 與 $PR$ 相交於點 $S$。$S$ 為 $PR$ 的中點。 ![Figure Q10](2017P1_zh_figs/Q10.png) (a) 證明 $\\triangle OPS \\cong \\triangle ORS$。 (2 分) (b) 已知 $O$ 為通過 $P$、$Q$ 及 $R$ 的圓的圓心。若 $OQ=6\\, \\text{cm}$ 及 $\\angle PRQ=10^\\circ$，求扇形 $OPQR$ 的面積，答案以 $\\pi$ 表示。 (4 分)",
-        "answerCount": 4,
+        "text": "圖 1 中，OPQR 為四邊形使得 OP=OQ=OR。OQ 與 PR 相交於點 S。S 為 PR 的中點。 ![Figure Q10](2017P1_zh_figs/Q10.png) (a) 證明 \\triangle OPS \\cong \\triangle ORS。 (2 分) (b) 已知 O 為通過 P、Q 及 R 的圓的圓心。若 OQ=6\\, \\text{cm} 及 \\angle PRQ=10^\\circ，求扇形 OPQR 的面積，答案以 \\pi 表示。 (4 分)",
+        "answerCount": 0,
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "先算 P(T=k)，再針對各題條件列出互斥事件加總，最後用條件機率公式化簡。"
-        },
-        "suggestedAnswer": []
+          "text": "先證全等 (SSS)，再利用等腰三角形性質得圓心角為 20^\\circ，轉弧度後代入扇形公式。"
+        }
       }
+    },
+    {
+      "@type": "LearningResource",
+      "name": "DSE 數學 2017 卷一 第 10 題",
+      "url": "https://hkdse.exampaper.cloud/math/2017/paper-1/q10/",
+      "inLanguage": "zh-Hant-HK",
+      "learningResourceType": "Exam question",
+      "educationalLevel": "HKDSE",
+      "isPartOf": {
+        "@id": "https://hkdse.exampaper.cloud/#website"
+      },
+      "about": "平面幾何",
+      "teaches": "平面幾何"
     }
   ]
 }
@@ -131,7 +145,7 @@
         <a href="/phys/">物理<span class="n">0 卷</span></a>
         </nav>
         
-    <p class="page-cta open-cta"><a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2017P1Q10">喺題庫開啟呢題</a> · <a href="/math/2017/paper-1/">返回 2017 卷一 全卷</a></p>
+    <p class="page-cta open-cta"><a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2017P1Q10">喺題庫開啟呢題</a> · <a href="/math/2017/paper-1/">返回 2017 卷一 全卷</a> · <a href="/math/2017/paper-1-en/q10/">English version</a></p>
   </div>
 </header>
 <main class="subj-main">
@@ -146,8 +160,9 @@
 </section>
 <section class="kw-section" aria-label="深度分析">
   <h2>深度分析</h2>
-<p class="ai-chips"><span class="q-ai">泊松分佈與條件機率</span>　認知層次：分析　建議作答 300 秒</p><p>核心公式／定理：$P(X=k) = \frac{e^{-\lambda}\lambda^k}{k!}$、$P(A|B) = \frac{P(B|A)P(A)}{P(B)}$</p><div class="ai-hints"><details class="ai-hint"><summary>提示 1（啟發）</summary><div>先列出所有可能導致總值$200券的交易組合（僅需一筆$200）。</div></details><details class="ai-hint"><summary>提示 2（知識）</summary><div>熟練泊松分佈公式計算 P(T=k)，並注意 e^{-\lambda} 的數值。</div></details><details class="ai-hint"><summary>提示 3（破題）</summary><div>區分 (c) 與 (d) 的分母不同：(c) 是 T=4，(d) 是 T≤4。</div></details></div><p class="ai-strategy"><strong>速解策略：</strong>先算 P(T=k)，再針對各題條件列出互斥事件加總，最後用條件機率公式化簡。</p>
+<p class="ai-chips"><span class="q-ai">平面幾何</span>　認知層次：應用　建議作答 180 秒</p><p>核心公式／定理：$\triangle ABC \cong \triangle DEF$ (SAS, SSS, ASA)、$A = \frac{1}{2} r^2 \theta$</p><div class="ai-hints"><details class="ai-hint"><summary>提示 1（啟發）</summary><div>提示 1：題目已給出 $S$ 是 $PR$ 中點，這意味著 $PS=RS$，這是證明全等關鍵。</div></details><details class="ai-hint"><summary>提示 2（知識）</summary><div>提示 2：因為 $O$ 是圓心，所以 $OP=OQ=OR$ 都是半徑，長度均為 $6\text{cm}$。</div></details><details class="ai-hint"><summary>提示 3（破題）</summary><div>提示 3：在等腰 $\triangle OPR$ 中，$OS$ 是底邊中線，同時也是頂角平分線。</div></details></div><p class="ai-strategy"><strong>速解策略：</strong>先證全等 (SSS)，再利用等腰三角形性質得圓心角為 $20^\circ$，轉弧度後代入扇形公式。</p>
 </section>
+<nav class="q-prevnext" aria-label="上一題／下一題"><a href="/math/2017/paper-1/q9/" rel="prev">← Q9</a>　<a href="/math/2017/paper-1/q11/" rel="next">Q11 →</a></nav>
 </main>
 <footer><a href="/math/2017/paper-1/">返回 2017 卷一</a> · <a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2017P1Q10">喺題庫開啟呢題</a> · <a href="/hub/">DSE Hub 主頁</a> · 相關：<a href="https://dsemaths.canonlessons.com" rel="noopener">免費 DSE 數學視覺教程</a> · 站內只放索引、連結同課題標籤，只顯示資料庫已有內容</footer>
 </body>

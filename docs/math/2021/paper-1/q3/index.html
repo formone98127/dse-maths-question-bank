@@ -4,18 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>DSE 數學 2021 卷一 第 3 題深度分析｜DSE Hub</title>
-<meta name="description" content="DSE 數學 2021 卷一 第 3 題深度解析：考點「概率」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
+<meta name="description" content="DSE 數學 2021 卷一 第 3 題深度解析：考點「因式分解」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
 <meta name="keywords" content="DSE, 香港中學文憑, 歷屆試題, past paper, DSE 數學, DSE 經濟, DSE 化學, DSE 生物, DSE 物理, 免費題庫, 按課題">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="googlebot" content="index, follow">
 <meta name="author" content="DSE Hub">
 <link rel="canonical" href="https://hkdse.exampaper.cloud/math/2021/paper-1/q3/">
 <link rel="alternate" hreflang="zh-Hant-HK" href="https://hkdse.exampaper.cloud/math/2021/paper-1/q3/">
+<link rel="alternate" hreflang="en" href="https://hkdse.exampaper.cloud/math/2021/paper-1-en/q3/">
+<link rel="alternate" hreflang="x-default" href="https://hkdse.exampaper.cloud/math/2021/paper-1/q3/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="DSE Hub">
 <meta property="og:locale" content="zh_HK">
 <meta property="og:title" content="DSE 數學 2021 卷一 第 3 題深度分析｜DSE Hub">
-<meta property="og:description" content="DSE 數學 2021 卷一 第 3 題深度解析：考點「概率」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
+<meta property="og:description" content="DSE 數學 2021 卷一 第 3 題深度解析：考點「因式分解」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
 <meta property="og:url" content="https://hkdse.exampaper.cloud/math/2021/paper-1/q3/">
 <meta property="og:image" content="https://hkdse.exampaper.cloud/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -23,7 +25,7 @@
 <meta property="og:image:alt" content="DSE Hub 香港中學文憑歷屆試題資料庫">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="DSE 數學 2021 卷一 第 3 題深度分析｜DSE Hub">
-<meta name="twitter:description" content="DSE 數學 2021 卷一 第 3 題深度解析：考點「概率」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
+<meta name="twitter:description" content="DSE 數學 2021 卷一 第 3 題深度解析：考點「因式分解」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
 <meta name="twitter:image" content="https://hkdse.exampaper.cloud/og-image.png">
 <meta name="theme-color" content="#0b1220">
 <link rel="manifest" href="/manifest.webmanifest">
@@ -38,7 +40,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/hub/style.css?v=202611252320">
+<link rel="stylesheet" href="/hub/style.css?v=202611252329">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LTB27V0RGW"></script>
 <script>
@@ -92,14 +94,26 @@
       "mainEntity": {
         "@type": "Question",
         "name": "DSE 數學 2021 卷一 第 3 題",
-        "text": "因式分解 (a) $6x^2 + xy - 2y^2$， (b) $8x - 4y - 6x^2 - xy + 2y^2$。 (3 分)",
-        "answerCount": 4,
+        "text": "因式分解 (a) 6x^2 + xy - 2y^2， (b) 8x - 4y - 6x^2 - xy + 2y^2。 (3 分)",
+        "answerCount": 0,
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "先算單題有效答對率 0.72，再用二項分佈求和 P(X≥8)，最後用貝氏定理結合全會做的條件概率求解。"
-        },
-        "suggestedAnswer": []
+          "text": "先解 (a)，再將 (b) 重排為 -6x^2 - xy + 8x + 2y^2 - 4y，提取 -(6x^2+xy-2y^2) 後利用 (a) 結果快速完成。"
+        }
       }
+    },
+    {
+      "@type": "LearningResource",
+      "name": "DSE 數學 2021 卷一 第 3 題",
+      "url": "https://hkdse.exampaper.cloud/math/2021/paper-1/q3/",
+      "inLanguage": "zh-Hant-HK",
+      "learningResourceType": "Exam question",
+      "educationalLevel": "HKDSE",
+      "isPartOf": {
+        "@id": "https://hkdse.exampaper.cloud/#website"
+      },
+      "about": "因式分解",
+      "teaches": "因式分解"
     }
   ]
 }
@@ -131,7 +145,7 @@
         <a href="/phys/">物理<span class="n">0 卷</span></a>
         </nav>
         
-    <p class="page-cta open-cta"><a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2021P1Q3">喺題庫開啟呢題</a> · <a href="/math/2021/paper-1/">返回 2021 卷一 全卷</a></p>
+    <p class="page-cta open-cta"><a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2021P1Q3">喺題庫開啟呢題</a> · <a href="/math/2021/paper-1/">返回 2021 卷一 全卷</a> · <a href="/math/2021/paper-1-en/q3/">English version</a></p>
   </div>
 </header>
 <main class="subj-main">
@@ -144,8 +158,9 @@
 </section>
 <section class="kw-section" aria-label="深度分析">
   <h2>深度分析</h2>
-<p class="ai-chips"><span class="q-ai">概率</span>　認知層次：應用　建議作答 300 秒</p><p>核心公式／定理：$P(X=k) = \binom{n}{k} p^k (1-p)^{n-k}$、$P(A|B) = \frac{P(B|A)P(A)}{P(B)}$</p><div class="ai-hints"><details class="ai-hint"><summary>提示 1（啟發）</summary><div>Hint1: 單題答對機率 p = P(會)×P(不粗心) + P(不會)×0 = 0.8×0.9 + 0.2×0。</div></details><details class="ai-hint"><summary>提示 2（知識）</summary><div>Hint2: 事件 A 包含三種情況：全對、錯 1 題、錯 2 題，需用二項分佈求和。</div></details><details class="ai-hint"><summary>提示 3（破題）</summary><div>Hint3: 貝氏定理中，分子是「會做且答對」的機率，分母是「總體答對」的機率。</div></details></div><p class="ai-strategy"><strong>速解策略：</strong>先算單題有效答對率 0.72，再用二項分佈求和 P(X≥8)，最後用貝氏定理結合全會做的條件概率求解。</p>
+<p class="ai-chips"><span class="q-ai">因式分解</span>　認知層次：應用　建議作答 90 秒</p><p>核心公式／定理：$ax^2 + bx + c = a(x-x_1)(x-x_2)$ 其中 $x_{1,2}$ 為方程根</p><div class="ai-hints"><details class="ai-hint"><summary>提示 1（啟發）</summary><div>Hint1: 將多項式按某個變數（如 x）的降冪排列有助於觀察結構。</div></details><details class="ai-hint"><summary>提示 2（知識）</summary><div>Hint2: 十字相乘法關鍵在於找到兩數乘積等於首尾係數之積且和等於中間係數。</div></details><details class="ai-hint"><summary>提示 3（破題）</summary><div>Hint3: (b) 式可視為 (a) 式的變形，嘗試提取公因式後對比 (a) 的結果。</div></details></div><p class="ai-strategy"><strong>速解策略：</strong>先解 (a)，再將 (b) 重排為 $-6x^2 - xy + 8x + 2y^2 - 4y$，提取 $-(6x^2+xy-2y^2)$ 後利用 (a) 結果快速完成。</p>
 </section>
+<nav class="q-prevnext" aria-label="上一題／下一題"><a href="/math/2021/paper-1/q2/" rel="prev">← Q2</a>　<a href="/math/2021/paper-1/q4/" rel="next">Q4 →</a></nav>
 </main>
 <footer><a href="/math/2021/paper-1/">返回 2021 卷一</a> · <a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2021P1Q3">喺題庫開啟呢題</a> · <a href="/hub/">DSE Hub 主頁</a> · 相關：<a href="https://dsemaths.canonlessons.com" rel="noopener">免費 DSE 數學視覺教程</a> · 站內只放索引、連結同課題標籤，只顯示資料庫已有內容</footer>
 </body>

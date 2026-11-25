@@ -88,6 +88,7 @@ CJK_FONT = _resolve_cjk_font()
 LABEL_SIZE = 36
 TITLE_SIZE = 56
 MICRO_SIZE = 28
+GUIDE_SIZE = 30  # silent-narration rail (short phrases, not paragraphs)
 FORMULA_SCALE = 1.0
 
 # Breathing / pacing (tuned for ~10 min film across 6 scenes)

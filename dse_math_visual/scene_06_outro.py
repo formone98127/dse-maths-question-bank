@@ -16,6 +16,7 @@ from config import (
     SFX,
 )
 from utils import (
+    GuideRail,
     MarkedMovingCameraScene,
     aha,
     cjk,
@@ -23,7 +24,6 @@ from utils import (
     hold,
     marked_play,
     marked_wait,
-    micro,
     pillar_node,
     title_label,
 )
@@ -34,10 +34,9 @@ class OutroFinale(MarkedMovingCameraScene):
 
     def construct(self):
         self.camera.frame.set_height(11).move_to(ORIGIN)
+        guide = GuideRail(self, color=HIGHLIGHT)
 
-        # ================================================================
-        # A. Reconstruct final knowledge map (~15s)
-        # ================================================================
+        guide.show("完整知識地圖", color=GOLD)
         left = pillar_node("數與代數", ALGEBRA_BLUE).move_to(LEFT * 4.4 + UP * 0.6)
         mid = pillar_node("圖形空間", GEOMETRY_GREEN).move_to(UP * 0.6)
         right = pillar_node("數據處理", DATA_ORANGE).move_to(RIGHT * 4.4 + UP * 0.6)
@@ -69,7 +68,7 @@ class OutroFinale(MarkedMovingCameraScene):
         )
         aha(self, 2.0, note="map_freeze")
 
-        # Soft pulse cascade
+        guide.show("每一塊都相連", color=HIGHLIGHT)
         for node, key in ((left, "a"), (mid, "g"), (right, "d")):
             marked_play(
                 self,
@@ -78,9 +77,7 @@ class OutroFinale(MarkedMovingCameraScene):
                 event=f"final_pulse_{key}",
             )
 
-        # ================================================================
-        # B. Brand lockup (~15s)
-        # ================================================================
+        guide.show("看見結構", color=GOLD)
         brand = title_label("DSE 數學", color=HIGHLIGHT)
         brand.move_to(UP * 3.2)
         tag = cjk("看見結構", font_size=34, color=GOLD)
@@ -97,10 +94,7 @@ class OutroFinale(MarkedMovingCameraScene):
         marked_play(self, FadeIn(tag), run_time=0.9, event="tagline")
         hold(self, 2.5, note="brand_hold")
 
-        # ================================================================
-        # C. End card (~10s)
-        # ================================================================
-        # Morph tagline → subscribe cue (micro only)
+        guide.show("下集見", color=HIGHLIGHT)
         end = cjk("下集見", font_size=40, color=HIGHLIGHT)
         end.move_to(tag.get_center())
         marked_play(
@@ -110,7 +104,6 @@ class OutroFinale(MarkedMovingCameraScene):
             event="end_card",
             intensity="high",
         )
-        # Fade map softly, leave brand
         marked_play(
             self,
             FadeOut(map_group),
@@ -121,7 +114,7 @@ class OutroFinale(MarkedMovingCameraScene):
         )
         hold(self, 2.8, note="outro_hold")
 
-        # Final fade to void
+        guide.clear(run_time=0.8)
         marked_play(
             self,
             FadeOut(brand),
@@ -132,5 +125,4 @@ class OutroFinale(MarkedMovingCameraScene):
         )
         marked_wait(self, 0.8, event="black")
 
-        # Ensure cue sheet written (tear_down also dumps)
         SFX.dump()

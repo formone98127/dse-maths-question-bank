@@ -42,6 +42,7 @@ from config import (
     DATA_ORANGE,
     GEOMETRY_GREEN,
     GOLD,
+    GUIDE_SIZE,
     HIGHLIGHT,
     HOLD_WAIT,
     LABEL_SIZE,
@@ -85,6 +86,93 @@ def formula(tex: str, color=HIGHLIGHT, scale: float = 1.0) -> MathTex:
     m = MathTex(tex, color=color)
     m.scale(scale)
     return m
+
+
+def guide_text(text: str, color=HIGHLIGHT) -> Text:
+    """Silent-narration line: short guiding phrase (ideally ≤10 chars)."""
+    return cjk(text, font_size=GUIDE_SIZE, color=color, weight="MEDIUM")
+
+
+class GuideRail:
+    """
+    Persistent bottom caption that morphs beat-by-beat.
+    Sticks to the camera frame so zoom/pan keeps it readable.
+    """
+
+    def __init__(self, scene: MovingCameraScene, *, color=HIGHLIGHT):
+        self.scene = scene
+        self.color = color
+        self.current: Text | None = None
+        self._base_height: float | None = None
+
+    def _attach(self, mob: Text) -> None:
+        frame = self.scene.camera.frame
+        if self._base_height is None:
+            self._base_height = float(frame.height)
+
+        def _stick(m, _dt=0):
+            # Keep roughly constant on-screen size & pin near bottom centre
+            scale = frame.height / self._base_height
+            target_h = 0.42 * scale
+            if m.height > 1e-6:
+                m.set_height(target_h)
+            m.move_to(frame.get_bottom() + UP * (0.55 * scale))
+
+        mob.add_updater(_stick)
+        _stick(mob)
+
+    def show(
+        self,
+        text: str,
+        *,
+        color=None,
+        run_time: float = 0.9,
+        event: str | None = "guide",
+    ) -> Text:
+        col = color if color is not None else self.color
+        nxt = guide_text(text, color=col)
+        frame = self.scene.camera.frame
+        if self._base_height is None:
+            self._base_height = float(frame.height)
+        # Park at bottom centre before animating (no updater yet)
+        scale = frame.height / self._base_height
+        nxt.move_to(frame.get_bottom() + UP * (0.55 * scale))
+
+        if self.current is None:
+            marked_play(
+                self.scene,
+                FadeIn(nxt, shift=UP * 0.15),
+                run_time=run_time,
+                event=event,
+                note=text,
+                intensity="soft",
+            )
+        else:
+            self.current.clear_updaters()
+            nxt.move_to(self.current.get_center())
+            marked_play(
+                self.scene,
+                ReplacementTransform(self.current, nxt),
+                run_time=run_time,
+                event=event,
+                note=text,
+                intensity="soft",
+            )
+        self._attach(nxt)
+        self.current = nxt
+        return nxt
+
+    def clear(self, *, run_time: float = 0.6) -> None:
+        if self.current is None:
+            return
+        self.current.clear_updaters()
+        marked_play(
+            self.scene,
+            FadeOut(self.current),
+            run_time=run_time,
+            event="guide_clear",
+        )
+        self.current = None
 
 
 # ---------------------------------------------------------------------------

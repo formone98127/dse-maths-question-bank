@@ -10,10 +10,10 @@ import numpy as np
 
 from config import GEOMETRY_GREEN, GOLD, HIGHLIGHT, ALGEBRA_BLUE, DATA_ORANGE
 from utils import (
+    GuideRail,
     MarkedMovingCameraScene,
     aha,
     cjk,
-    flash_intersection,
     formula,
     glow_dot,
     hold,
@@ -28,21 +28,25 @@ class GeometryArc(MarkedMovingCameraScene):
 
     def construct(self):
         self.camera.frame.set_height(8).move_to(ORIGIN)
+        guide = GuideRail(self, color=GEOMETRY_GREEN)
+
         chapter = cjk("圖形空間", font_size=40, color=GEOMETRY_GREEN)
         chapter.to_edge(UL, buff=0.45)
+        guide.show("第二章・圖形空間", color=GEOMETRY_GREEN)
         marked_play(self, FadeIn(chapter), run_time=0.9, event="chapter_label")
 
-        # ================================================================
-        # A. Point → Line → Triangle (~30s)
-        # ================================================================
+        # A. Point → Line → Triangle
+        guide.show("由一點開始", color=HIGHLIGHT)
         p1 = glow_dot(LEFT * 2.8 + DOWN * 1.2, color=GEOMETRY_GREEN)
         marked_play(self, GrowFromCenter(p1), run_time=0.7, event="point")
         p2 = glow_dot(RIGHT * 2.8 + DOWN * 1.2, color=GEOMETRY_GREEN)
         marked_play(self, GrowFromCenter(p2), run_time=0.5, event="point2")
+        guide.show("兩點成線", color=GEOMETRY_GREEN)
         seg = Line(p1[1].get_center(), p2[1].get_center(), color=GEOMETRY_GREEN, stroke_width=4)
         marked_play(self, Create(seg), run_time=1.0, event="segment")
         marked_wait(self, 0.6)
 
+        guide.show("三點成面", color=GOLD)
         p3 = glow_dot(UP * 2.0, color=GOLD)
         marked_play(self, GrowFromCenter(p3), run_time=0.6, event="apex")
         tri = Polygon(
@@ -68,9 +72,8 @@ class GeometryArc(MarkedMovingCameraScene):
         marked_play(self, FadeIn(tri_lab), run_time=0.6)
         aha(self, 1.8, note="triangle")
 
-        # ================================================================
-        # B. Angle chase / interior sum (~20s)
-        # ================================================================
+        # B. Angle sum
+        guide.show("三角之內角和", color=GOLD)
         verts = tri.get_vertices()
         line_ab = Line(verts[0], verts[1], color=GEOMETRY_GREEN)
         line_bc = Line(verts[1], verts[2], color=GEOMETRY_GREEN)
@@ -91,9 +94,8 @@ class GeometryArc(MarkedMovingCameraScene):
         marked_play(self, Write(sum_tex), run_time=1.4, event="angle_sum", intensity="high")
         aha(self, 2.0, note="angle_sum")
 
-        # ================================================================
-        # C. Similarity morph (~25s)
-        # ================================================================
+        # C. Similarity
+        guide.show("放大縮小・仍相似", color=GOLD)
         marked_play(
             self,
             FadeOut(a0),
@@ -115,14 +117,14 @@ class GeometryArc(MarkedMovingCameraScene):
         )
         sim_lab = micro("相似", color=GOLD).move_to(UP * 2.8)
         marked_play(self, FadeIn(sim_lab), run_time=0.6)
+        guide.show("對應邊成比例", color=HIGHLIGHT)
         ratio = formula(r"\dfrac{a}{a'}=\dfrac{b}{b'}", color=HIGHLIGHT).scale(0.9)
         ratio.next_to(sim_lab, DOWN, buff=0.3)
         marked_play(self, Write(ratio), run_time=1.5, event="sim_ratio", intensity="high")
         aha(self, 2.0, note="similarity")
 
-        # ================================================================
-        # D. Circle theorems vibe (~25s)
-        # ================================================================
+        # D. Circle
+        guide.show("進入圓的世界", color=GEOMETRY_GREEN)
         marked_play(
             self,
             FadeOut(tri),
@@ -143,7 +145,7 @@ class GeometryArc(MarkedMovingCameraScene):
         circ_lab = micro("圓", color=GEOMETRY_GREEN).next_to(circle, DOWN, buff=0.45)
         marked_play(self, FadeIn(circ_lab), run_time=0.5)
 
-        # Diameter + inscribed angle
+        guide.show("直徑對直角", color=GOLD)
         A = circle.point_at_angle(PI)
         B = circle.point_at_angle(0)
         C = circle.point_at_angle(PI / 2.4)
@@ -159,9 +161,8 @@ class GeometryArc(MarkedMovingCameraScene):
         marked_play(self, FadeIn(thm), run_time=0.6)
         aha(self, 2.2, note="semicircle_theorem")
 
-        # ================================================================
-        # E. Coordinate plane bridge (~25s)
-        # ================================================================
+        # E. Coordinates
+        guide.show("圖形遇上代數", color=ALGEBRA_BLUE)
         marked_play(
             self,
             FadeOut(circle),
@@ -192,7 +193,7 @@ class GeometryArc(MarkedMovingCameraScene):
             intensity="high",
         )
 
-        # Plot a triangle on the plane — algebra meets geometry
+        guide.show("用座標量距離", color=HIGHLIGHT)
         pts = [axes.c2p(-2, -1), axes.c2p(3, -1), axes.c2p(1, 2)]
         dots = VGroup(*[glow_dot(p, color=GEOMETRY_GREEN, radius=0.07, glow_radius=0.28) for p in pts])
         poly = Polygon(*pts, color=GEOMETRY_GREEN, stroke_width=3).set_fill(GEOMETRY_GREEN, opacity=0.1)
@@ -208,9 +209,8 @@ class GeometryArc(MarkedMovingCameraScene):
         marked_play(self, Write(dist), run_time=1.8, event="distance_formula", intensity="high")
         aha(self, 2.0, note="analytic_geometry")
 
-        # ================================================================
-        # F. Trigonometry (~25s)
-        # ================================================================
+        # F. Trig
+        guide.show("三角函數登場", color=GEOMETRY_GREEN)
         marked_play(
             self,
             FadeOut(axes),
@@ -220,7 +220,6 @@ class GeometryArc(MarkedMovingCameraScene):
             FadeOut(coord_lab),
             run_time=0.9,
         )
-        # Unit circle + right triangle
         uc = Circle(radius=2.0, color=GEOMETRY_GREEN, stroke_width=3)
         theta = 40 * DEGREES
         tip = np.array([2 * np.cos(theta), 2 * np.sin(theta), 0.0])
@@ -242,7 +241,7 @@ class GeometryArc(MarkedMovingCameraScene):
         marked_play(self, Write(trig), FadeIn(trig_lab), run_time=1.6, event="trig_labels", intensity="high")
         aha(self, 2.2, note="trigonometry")
 
-        # SOH CAH TOA micro
+        guide.show("邊長比就是角", color=GOLD)
         soh = VGroup(
             formula(r"\sin=\dfrac{opp}{hyp}", color=HIGHLIGHT).scale(0.65),
             formula(r"\cos=\dfrac{adj}{hyp}", color=HIGHLIGHT).scale(0.65),
@@ -257,7 +256,7 @@ class GeometryArc(MarkedMovingCameraScene):
         )
         hold(self, 2.0, note="geometry_close")
 
-        # Handoff toward data (orange)
+        guide.show("下一站・數據處理", color=DATA_ORANGE)
         portal = glow_dot(RIGHT * 5.8 + DOWN * 0.5, color=DATA_ORANGE, radius=0.2, glow_radius=0.85)
         marked_play(
             self,
@@ -275,3 +274,4 @@ class GeometryArc(MarkedMovingCameraScene):
             intensity="high",
         )
         marked_wait(self, 0.5)
+        guide.clear()

@@ -15,9 +15,9 @@ from config import (
     HIGHLIGHT,
 )
 from utils import (
+    GuideRail,
     MarkedMovingCameraScene,
     aha,
-    cjk,
     formula,
     glow_dot,
     hold,
@@ -34,10 +34,9 @@ class UnificationArc(MarkedMovingCameraScene):
 
     def construct(self):
         self.camera.frame.set_height(9).move_to(ORIGIN)
+        guide = GuideRail(self, color=GOLD)
 
-        # ================================================================
-        # A. Three pillars reappear (~15s)
-        # ================================================================
+        guide.show("三線重新相遇", color=GOLD)
         left = pillar_node("數與代數", ALGEBRA_BLUE).move_to(LEFT * 4.4 + UP * 0.4)
         mid = pillar_node("圖形空間", GEOMETRY_GREEN).move_to(UP * 0.4)
         right = pillar_node("數據處理", DATA_ORANGE).move_to(RIGHT * 4.4 + UP * 0.4)
@@ -56,9 +55,8 @@ class UnificationArc(MarkedMovingCameraScene):
         )
         aha(self, 1.6, note="pillars_back")
 
-        # ================================================================
-        # B. Bridge: Algebra ↔ Geometry (coordinates) (~20s)
-        # ================================================================
+        # Algebra ↔ Geometry
+        guide.show("代數 × 圖形", color=ALGEBRA_BLUE)
         bridge_ag = Line(
             left[3].get_center(),
             mid[3].get_center(),
@@ -73,7 +71,7 @@ class UnificationArc(MarkedMovingCameraScene):
         ).arrange(DOWN, buff=0.12)
         tag_ag.next_to(bridge_ag, UP, buff=0.25)
         marked_play(self, FadeIn(tag_ag, shift=UP * 0.1), run_time=0.9, event="tag_coord")
-        # Mini axes pulse near midpoint
+        guide.show("橋樑就係座標", color=GOLD)
         mini = Axes(
             x_range=[-1, 1, 1],
             y_range=[-1, 1, 1],
@@ -85,9 +83,8 @@ class UnificationArc(MarkedMovingCameraScene):
         marked_play(self, FadeIn(mini, scale=0.5), run_time=0.9, event="mini_axes")
         aha(self, 1.8, note="alg_geo_link")
 
-        # ================================================================
-        # C. Bridge: Geometry ↔ Data (area / measure) (~15s)
-        # ================================================================
+        # Geometry ↔ Data
+        guide.show("圖形 × 數據", color=GEOMETRY_GREEN)
         bridge_gd = Line(
             mid[3].get_center(),
             right[3].get_center(),
@@ -102,11 +99,11 @@ class UnificationArc(MarkedMovingCameraScene):
         ).arrange(DOWN, buff=0.1)
         tag_gd.next_to(bridge_gd, UP, buff=0.25)
         marked_play(self, FadeIn(tag_gd), run_time=0.8, event="tag_area")
+        guide.show("量度連住兩邊", color=GOLD)
         aha(self, 1.6, note="geo_data_link")
 
-        # ================================================================
-        # D. Bridge: Algebra ↔ Data (regression / model) (~15s)
-        # ================================================================
+        # Algebra ↔ Data
+        guide.show("代數 × 數據", color=DATA_ORANGE)
         bridge_ad = ArcBetweenPoints(
             left[3].get_center() + DOWN * 0.15,
             right[3].get_center() + DOWN * 0.15,
@@ -121,14 +118,13 @@ class UnificationArc(MarkedMovingCameraScene):
         ).arrange(DOWN, buff=0.1)
         tag_ad.next_to(bridge_ad, DOWN, buff=0.35)
         marked_play(self, FadeIn(tag_ad), run_time=0.9, event="tag_model")
+        guide.show("模型解釋數據", color=GOLD)
         aha(self, 1.8, note="alg_data_link")
 
-        # ================================================================
-        # E. Centre nexus — one map (~15s)
-        # ================================================================
+        # Nexus
+        guide.show("原來本是一體", color=HIGHLIGHT)
         marked_play(self, FadeOut(mini), run_time=0.5)
         nexus = glow_dot(DOWN * 0.2, color=GOLD, radius=0.16, glow_radius=0.75, glow_opacity=0.4)
-        # Place nexus at centroid of three cores
         centre = (left[3].get_center() + mid[3].get_center() + right[3].get_center()) / 3
         nexus.move_to(centre)
         spokes = VGroup(
@@ -149,7 +145,7 @@ class UnificationArc(MarkedMovingCameraScene):
         marked_play(self, FadeIn(one, shift=UP * 0.15), run_time=1.0, event="unity_word")
         hold(self, 2.4, note="unity_hold")
 
-        # Camera slow pull-back — infinite canvas reveal
+        guide.show("拉開看全圖", color=GOLD)
         marked_play(
             self,
             self.camera.frame.animate.set_height(12).move_to(ORIGIN),
@@ -158,3 +154,4 @@ class UnificationArc(MarkedMovingCameraScene):
             intensity="high",
         )
         marked_wait(self, 1.2, event="map_settle")
+        guide.clear()

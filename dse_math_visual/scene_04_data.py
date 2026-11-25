@@ -10,6 +10,7 @@ import numpy as np
 
 from config import DATA_ORANGE, DATA_DIM, GOLD, HIGHLIGHT, ALGEBRA_BLUE
 from utils import (
+    GuideRail,
     MarkedMovingCameraScene,
     aha,
     cjk,
@@ -27,13 +28,15 @@ class DataArc(MarkedMovingCameraScene):
 
     def construct(self):
         self.camera.frame.set_height(8).move_to(ORIGIN)
+        guide = GuideRail(self, color=DATA_ORANGE)
+
         chapter = cjk("數據處理", font_size=40, color=DATA_ORANGE)
         chapter.to_edge(UL, buff=0.45)
+        guide.show("第三章・數據處理", color=DATA_ORANGE)
         marked_play(self, FadeIn(chapter), run_time=0.9, event="chapter_label")
 
-        # ================================================================
-        # A. Scatter cloud (~20s)
-        # ================================================================
+        # A. Scatter cloud
+        guide.show("先看散點分布", color=HIGHLIGHT)
         rng = np.random.default_rng(21)
         pts = []
         for _ in range(40):
@@ -57,14 +60,13 @@ class DataArc(MarkedMovingCameraScene):
         marked_play(self, FadeIn(scat_lab), run_time=0.5)
         aha(self, 1.6, note="scatter")
 
-        # Trend line
+        guide.show("看出整體趨勢", color=GOLD)
         trend = Line(LEFT * 3.5 + DOWN * 1.9, RIGHT * 3.5 + UP * 1.9, color=GOLD, stroke_width=3)
         marked_play(self, Create(trend), run_time=1.4, event="trend_line", intensity="high")
         aha(self, 1.5, note="correlation")
 
-        # ================================================================
-        # B. Morph scatter → histogram (~25s)
-        # ================================================================
+        # B. Histogram
+        guide.show("化成直方圖", color=DATA_ORANGE)
         axes = Axes(
             x_range=[0, 6, 1],
             y_range=[0, 10, 2],
@@ -100,10 +102,8 @@ class DataArc(MarkedMovingCameraScene):
         marked_play(self, FadeIn(hist_lab), run_time=0.5)
         aha(self, 1.8, note="histogram")
 
-        # ================================================================
-        # C. Mean / median (~25s)
-        # ================================================================
-        # Mean line through histogram
+        # C. Mean / median
+        guide.show("找平均位置", color=GOLD)
         mean_x = 2.6
         mean_line = DashedLine(
             axes.c2p(mean_x, 0),
@@ -125,7 +125,7 @@ class DataArc(MarkedMovingCameraScene):
         marked_play(self, FadeIn(mean_lab), run_time=0.5)
         aha(self, 1.6, note="mean")
 
-        # Median marker slightly offset
+        guide.show("再看中位數", color=HIGHLIGHT)
         med_x = 2.3
         med_dot = glow_dot(axes.c2p(med_x, 0.3), color=HIGHLIGHT, radius=0.08, glow_radius=0.3)
         med_lab = micro("中位", color=HIGHLIGHT).next_to(med_dot, DOWN, buff=0.25)
@@ -138,9 +138,7 @@ class DataArc(MarkedMovingCameraScene):
         )
         aha(self, 1.6, note="median")
 
-        # ================================================================
-        # D. Probability (~25s)
-        # ================================================================
+        # D. Probability
         marked_play(
             self,
             FadeOut(axes),
@@ -155,10 +153,10 @@ class DataArc(MarkedMovingCameraScene):
             run_time=1.0,
         )
 
+        guide.show("機率・分支可能", color=DATA_ORANGE)
         prob_lab = micro("機率", color=DATA_ORANGE).to_edge(UP, buff=0.55)
         marked_play(self, FadeIn(prob_lab), run_time=0.5)
 
-        # Two-branch tree
         root = glow_dot(UP * 2.0, color=GOLD, radius=0.1, glow_radius=0.35)
         left_n = glow_dot(LEFT * 2.8 + DOWN * 0.3, color=DATA_ORANGE)
         right_n = glow_dot(RIGHT * 2.8 + DOWN * 0.3, color=DATA_ORANGE)
@@ -187,15 +185,13 @@ class DataArc(MarkedMovingCameraScene):
         marked_play(self, FadeIn(leafL), FadeIn(leafR), run_time=0.8)
         aha(self, 1.8, note="probability_tree")
 
-        # Formula unify
+        guide.show("機率介乎零與一", color=GOLD)
         axiom = formula(r"0\le P\le 1", color=GOLD).scale(1.1)
         axiom.move_to(DOWN * 2.4)
         marked_play(self, Write(axiom), run_time=1.2, event="prob_axiom", intensity="high")
         aha(self, 1.8, note="prob_bound")
 
-        # ================================================================
-        # E. Distribution curve (~25s)
-        # ================================================================
+        # E. Distribution
         marked_play(
             self,
             FadeOut(root),
@@ -226,16 +222,18 @@ class DataArc(MarkedMovingCameraScene):
         curve = axes2.plot(pdf, color=DATA_ORANGE, stroke_width=4)
         area = axes2.get_area(curve, x_range=[-1, 1], color=DATA_ORANGE, opacity=0.35)
 
+        guide.show("分布曲線出現", color=DATA_ORANGE)
         dist_lab = micro("分布", color=DATA_ORANGE).to_edge(UP, buff=0.5)
         marked_play(self, Create(axes2), FadeIn(dist_lab), run_time=1.2, event="dist_axes")
         marked_play(self, Create(curve), run_time=1.8, event="bell_curve", intensity="high")
+        guide.show("中央最常出現", color=GOLD)
         marked_play(self, FadeIn(area), run_time=1.0, event="area_shade")
         sigma = formula(r"P(|X-\mu|<\sigma)", color=GOLD).scale(0.85)
         sigma.next_to(dist_lab, DOWN, buff=0.25)
         marked_play(self, Write(sigma), run_time=1.3, event="one_sigma")
         hold(self, 2.2, note="data_close")
 
-        # Soft dissolve toward unification space
+        guide.show("三大範疇匯合", color=GOLD)
         marked_play(
             self,
             FadeOut(axes2),
@@ -249,3 +247,4 @@ class DataArc(MarkedMovingCameraScene):
             intensity="high",
         )
         marked_wait(self, 0.4)
+        guide.clear()

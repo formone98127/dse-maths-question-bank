@@ -66,6 +66,7 @@ _tmp_merge/
 *.log
 
 # Manim render cache / outputs（只入庫原始碼同腳本）
+media/
 dse_math_visual/media/
 dse_math_visual/concat_list.txt
 dse_math_visual/*.mp4

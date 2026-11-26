@@ -2,7 +2,7 @@
 "use strict";
 
 
-const CACHE = "dsehub-v202611260400";
+const CACHE = "dsehub-v202611260430";
 const SHELL = [
   "./",
   "./hub/",

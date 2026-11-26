@@ -345,13 +345,9 @@ function viewHrefFor(r) {
   if (String(r.id).toLowerCase() === "m1" || String(r.id).toLowerCase() === "m2") {
     return "/" + (r.hash || "");
   }
-  if (LANDING_BY_HASH[r.hash]) return LANDING_BY_HASH[r.hash];
-  /* 其他未有落地板嘅科目唔好出死鏈 */
-  if (r.id !== "math") return null;
-  const code = PAPER_CODE[r.paper] || "paper-1";
-  const slug = r.lang === "英文" ? `${code}-en` : code;
-  /* 數學分支統一喺 /hub/math/ 之下 */
-  return `/hub/math/${r.year}/${slug}/`;
+  /* Kin 定案：卡片一律直接入題目（唔經中間卷頁），數學同 M1／M2 一致 */
+  if (r.id === "math") return "/" + (r.hash || "");
+  return null;
 }
 
 const SUBJECT_EN = { "數學": "Maths", "經濟": "Econ", "化學": "Chem",

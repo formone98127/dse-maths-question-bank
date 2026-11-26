@@ -50,5 +50,6 @@ Options -Indexes
 </IfModule>
 
 # 數學分支搬到 /hub/math/ 之下（2026-11-26）
-RewriteRule ^math/?$ /hub/math/ [R=301,L,NE]
+# 但 /math/、/math/core/、/math/m1/、/math/m2/ 係真頁（三個單元入口），唔可以 301 走。
+RewriteCond %{REQUEST_URI} !^/math/(core|m1|m2)(/|$)
 RewriteRule ^math/(.+)$ /hub/math/$1 [R=301,L,NE]

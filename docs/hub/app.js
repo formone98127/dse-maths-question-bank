@@ -6,9 +6,11 @@ const ALL = "__ALL__";  // 所有
 
 const ICON_SEARCH = `<svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.8-3.8"/></svg>`;
 
+const PRESET_SUBJECT = (document.body && document.body.dataset.presetSubject) ? document.body.dataset.presetSubject.trim() : "";
+
 const state = {
   mode: "year",
-  subject: ALL, // 預設「所有」
+  subject: PRESET_SUBJECT || ALL, // /hub/math/ 會預設「數學」
   year: ALL,
   paper: ALL,
   topic: PLACE,
@@ -743,6 +745,12 @@ function commitReel() {
       state.year = ALL;
       state.paper = ALL;
       state.topic = PLACE;
+      /* /hub/math/ 分支揀「所有」→ 返全科 hub */
+      if (PRESET_SUBJECT && v === ALL) {
+        closeReel();
+        location.href = "/hub/";
+        return;
+      }
       /* Kin 定案（2026-11-26）：喺 Hub 篩選揀「數學（必修部分）」→ 進入數學分支 /hub/math/ */
       if (v === "math") {
         closeReel();

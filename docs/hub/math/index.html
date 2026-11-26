@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub</title>
-<meta name="description" content="用 2012–2025 真題數據研究 DSE 數學：課題考頻、官方答對率、最難題目排行，逐題可開來做。">
+<title>DSE 數學研究站｜歷屆試題・課題・答對率｜DSE Hub</title>
+<meta name="description" content="DSE 數學必修歷屆試題、M1／M2 延伸部分，按年份或課題篩選，逐題可開來做。">
 <meta name="keywords" content="DSE, 香港中學文憑, 歷屆試題, past paper, DSE 數學, DSE 經濟, DSE 化學, DSE 生物, DSE 物理, 免費題庫, 按課題">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="googlebot" content="index, follow">
@@ -14,16 +14,16 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="DSE Hub">
 <meta property="og:locale" content="zh_HK">
-<meta property="og:title" content="DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub">
-<meta property="og:description" content="用 2012–2025 真題數據研究 DSE 數學：課題考頻、官方答對率、最難題目排行，逐題可開來做。">
+<meta property="og:title" content="DSE 數學研究站｜DSE Hub">
+<meta property="og:description" content="DSE 數學必修歷屆試題、M1／M2 延伸部分，按年份或課題篩選，逐題可開來做。">
 <meta property="og:url" content="https://hkdse.exampaper.cloud/hub/math/">
 <meta property="og:image" content="https://hkdse.exampaper.cloud/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub">
+<meta property="og:image:alt" content="免費 DSE 數學歷屆試題 Past Paper｜按年份、課題溫習｜DSE Hub">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub">
-<meta name="twitter:description" content="用 2012–2025 真題數據研究 DSE 數學：課題考頻、官方答對率、最難題目排行，逐題可開來做。">
+<meta name="twitter:title" content="DSE 數學研究站｜DSE Hub">
+<meta name="twitter:description" content="DSE 數學必修歷屆試題、M1／M2 延伸部分，按年份或課題篩選，逐題可開來做。">
 <meta name="twitter:image" content="https://hkdse.exampaper.cloud/og-image.png">
 <meta name="theme-color" content="#0b1220">
 <link rel="manifest" href="/manifest.webmanifest">
@@ -38,7 +38,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/hub/style.css?v=202611260122">
+<link rel="stylesheet" href="/hub/style.css?v=202611260400">
 <link rel="alternate" type="application/rss+xml" title="DSE Hub 最新題目分析" href="https://hkdse.exampaper.cloud/feed.xml">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LTB27V0RGW"></script>
@@ -55,528 +55,100 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "DSE Hub",
-          "item": "https://hkdse.exampaper.cloud/hub/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "數學",
-          "item": "https://hkdse.exampaper.cloud/hub/math/"
-        }
-      ]
+      "@type": "WebSite",
+      "@id": "https://hkdse.exampaper.cloud/#website",
+      "name": "DSE Hub",
+      "alternateName": [
+        "DSE 歷屆試題資料庫",
+        "香港中學文憑歷屆試題"
+      ],
+      "url": "https://hkdse.exampaper.cloud/hub/math/",
+      "inLanguage": "zh-Hant-HK",
+      "description": "免費查閱香港中學文憑試（DSE）數學（必修部分）歷屆試題，按年份或課題溫習，支援中英文卷、即時核對選擇題答案。唔使報名，即時喺 DSE Hub 開卷。",
+      "publisher": {
+        "@id": "https://hkdse.exampaper.cloud/#org"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://hkdse.exampaper.cloud/#org",
+      "name": "DSE Hub",
+      "url": "https://hkdse.exampaper.cloud/hub/math/",
+      "logo": "https://hkdse.exampaper.cloud/icons/icon-512.png"
     },
     {
       "@type": "CollectionPage",
-      "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-      "description": "用 2012–2025 真題數據研究 DSE 數學：課題考頻、官方答對率、最難題目排行，逐題可開來做。",
+      "@id": "https://hkdse.exampaper.cloud/hub/#page",
+      "name": "免費 DSE 數學歷屆試題 Past Paper｜按年份、課題溫習｜DSE Hub",
+      "description": "免費查閱香港中學文憑試（DSE）數學（必修部分）歷屆試題，按年份或課題溫習，支援中英文卷、即時核對選擇題答案。唔使報名，即時喺 DSE Hub 開卷。",
       "url": "https://hkdse.exampaper.cloud/hub/math/",
       "inLanguage": "zh-Hant-HK",
       "isPartOf": {
         "@id": "https://hkdse.exampaper.cloud/#website"
       },
-      "about": {
-        "@type": "Thing",
-        "name": "香港中學文憑 數學（必修部分）"
-      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "數學（必修部分）"
+        },
+        {
+          "@type": "Thing",
+          "name": "經濟"
+        },
+        {
+          "@type": "Thing",
+          "name": "化學"
+        },
+        {
+          "@type": "Thing",
+          "name": "生物"
+        },
+        {
+          "@type": "Thing",
+          "name": "物理"
+        }
+      ],
       "mainEntity": {
-        "@type": "ItemList",
-        "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-        "numberOfItems": 81,
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2025/paper-2/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2025/paper-1-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2025/paper-1m-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 4,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2025/paper-2-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 5,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2025/paper-2m-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 6,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2024/paper-1/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 7,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2024/paper-2/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 8,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2024/paper-1-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 9,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2024/paper-1m-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 10,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2024/paper-2-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 11,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2024/paper-2m-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 12,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2023/paper-1/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 13,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2023/paper-2/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 14,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2023/paper-1-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 15,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2023/paper-1m-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 16,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2023/paper-2-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 17,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2023/paper-2m-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 18,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2022/paper-1/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 19,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2022/paper-1-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 20,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2022/paper-1m-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 21,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2022/paper-2-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 22,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2022/paper-2m-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 23,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2021/paper-1/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 24,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2021/paper-2/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 25,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2021/paper-1-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 26,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2021/paper-1m-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 27,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2021/paper-2-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 28,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2021/paper-2m-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 29,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2020/paper-1/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 30,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2020/paper-2/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 31,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2020/paper-1-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 32,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2020/paper-1m-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 33,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2020/paper-2-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 34,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2020/paper-2m-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 35,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2019/paper-1/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 36,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2019/paper-2/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 37,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2019/paper-1-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 38,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2019/paper-1m-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 39,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2019/paper-2-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 40,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2019/paper-2m-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 41,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2018/paper-1/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 42,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2018/paper-2/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 43,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2018/paper-1-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 44,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2018/paper-1m-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 45,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2018/paper-2-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 46,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2018/paper-2m-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 47,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2017/paper-1/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 48,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2017/paper-2/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 49,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2017/paper-1-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 50,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2017/paper-1m-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 51,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2017/paper-2-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 52,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2016/paper-1/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 53,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2016/paper-2/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 54,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2016/paper-1-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 55,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2016/paper-1m-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 56,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2016/paper-2-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 57,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2015/paper-1/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 58,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2015/paper-2/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 59,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2015/paper-1-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 60,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2015/paper-1m-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 61,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2015/paper-2-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 62,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2015/paper-2m-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 63,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2014/paper-1/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 64,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2014/paper-2/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 65,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2014/paper-1-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 66,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2014/paper-1m-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 67,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2014/paper-2-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 68,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2013/paper-1/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 69,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2013/paper-2/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 70,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2013/paper-1-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 71,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2013/paper-1m-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 72,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2013/paper-2-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 73,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2012/paper-1/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 74,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2012/paper-2/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 75,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2012/paper-1-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 76,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2012/paper-1m-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 77,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/2012/paper-2-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 78,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/PP/paper-1/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 79,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/SP/paper-1/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 80,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/PP/paper-1-en/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 81,
-            "name": "DSE 數學研究站｜14 年真題＋課題難度分析｜DSE Hub",
-            "url": "https://hkdse.exampaper.cloud/hub/math/PP/paper-1m-en/"
-          }
-        ]
+        "@id": "https://hkdse.exampaper.cloud/hub/#papers"
       }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://hkdse.exampaper.cloud/hub/#papers",
+      "name": "DSE 歷屆試題科目",
+      "numberOfItems": 5,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "數學（必修部分）",
+          "url": "https://hkdse.exampaper.cloud/hub/math/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "經濟",
+          "url": "https://hkdse.exampaper.cloud/econ/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "化學",
+          "url": "https://hkdse.exampaper.cloud/chem/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "生物",
+          "url": "https://hkdse.exampaper.cloud/bio/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "物理",
+          "url": "https://hkdse.exampaper.cloud/phys/"
+        }
+      ]
     },
     {
       "@type": "FAQPage",
@@ -587,6 +159,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "係，真正完全免費查閱香港中學文憑試歷屆試題索引同題目，唔使報名，亦唔使信用卡。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "而家有邊啲科目？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "而家有數學（必修部分）、經濟、化學、生物同物理。每科已上線嘅年份同卷別，以資料庫實際內容為準，科目頁會列出全部已有卷。"
           }
         },
         {
@@ -612,6 +192,30 @@
             "@type": "Answer",
             "text": "有。數學同經濟部分年份提供英文卷；化學、生物、物理而家主要係中文卷。每卷頁會標明語言。"
           }
+        },
+        {
+          "@type": "Question",
+          "name": "可唔可以下載 PDF 原卷？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "站內主要提供題目索引同逐題睇題，方便溫習；部分卷另有 PDF 連結。內容以資料庫已有項目為準，並唔取代考評局官方刊物。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "手機可唔可以睇題？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "可以。網站已為手機優化，亦支援加到主畫面，方便隨身搵 DSE past paper 同操卷。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "呢度係咪官方原卷檔案庫？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "站內主要提供索引、題目同課題標籤，方便溫習；部分卷另有 PDF 連結。內容以資料庫已有項目為準，並唔取代考試及評核局官方刊物。"
+          }
         }
       ]
     }
@@ -619,164 +223,58 @@
 }
 </script>
 </head>
-<body class="subj-page">
-<header class="hero">
-  <div class="hero-glow" aria-hidden="true"></div>
-  <div class="hero-inner">
-    <nav class="crumb" aria-label="麵包屑">
-      <a href="/hub/">DSE Hub</a>
-      <span aria-hidden="true">／</span>
-      <span>數學</span>
-      </nav>
-    <p class="brand">DSE Hub</p>
-    <h1>DSE 數學研究站</h1>
-    <p class="tagline">免費 DSE 數學 past paper 集中喺呢度：按年份開卷，或者按課題（例如函數與圖像、三角、圓形幾何）集中操。涵蓋數學必修卷一、卷二，部分年份有中文或英文卷，適合考前操卷同對題。 而家資料庫有 81 卷（SP、PP、2012、2013、2014、2015、2016、2017、2018、2019、2020、2021、2022、2023、2024、2025）。</p>
-        <nav class="subj-nav" aria-label="科目">
-        <a href="/hub/math/" class="on">數學<span class="n">54 卷</span></a>
-        <a href="/econ/">經濟<span class="n">0 卷</span></a>
-        <a href="/chem/">化學<span class="n">0 卷</span></a>
-        <a href="/bio/">生物<span class="n">0 卷</span></a>
-        <a href="/phys/">物理<span class="n">0 卷</span></a>
-        </nav>
-    <nav class="strand-nav" aria-label="年份">
-        <a href="/hub/math/SP/">SP</a>
-        <a href="/hub/math/PP/">PP</a>
-        <a href="/hub/math/2025/">2025</a>
-        <a href="/hub/math/2024/">2024</a>
-        <a href="/hub/math/2023/">2023</a>
-        <a href="/hub/math/2022/">2022</a>
-        <a href="/hub/math/2021/">2021</a>
-        <a href="/hub/math/2020/">2020</a>
-        <a href="/hub/math/2019/">2019</a>
-        <a href="/hub/math/2018/">2018</a>
-        <a href="/hub/math/2017/">2017</a>
-        <a href="/hub/math/2016/">2016</a>
-        <a href="/hub/math/2015/">2015</a>
-        <a href="/hub/math/2014/">2014</a>
-        <a href="/hub/math/2013/">2013</a>
-        <a href="/hub/math/2012/">2012</a>
-        </nav>
-    <p class="page-cta"><a href="/hub/?subject=math&amp;mode=topic">按課題篩選數學題目</a> · <a href="/hub/?subject=math&amp;mode=year">按年份睇卷</a> · <a href="/hub/">返回 DSE Hub 主頁</a></p>
+<body data-preset-subject="math">
+<header class="top">
+  <div class="top-row">
+    <p class="brand-lockup" aria-label="DSE Hub">
+      <span class="brand-dse">DSE</span>
+      <span class="brand">hub</span>
+    </p>
+    <button type="button" class="install-btn" data-install-app title="安裝 DSE Hub 至主畫面">
+      <span>安裝</span>
+    </button>
+  </div>
+  <h1>DSE 數學研究站</h1>
+  <p class="tagline">即時睇題目／題解，自選按課題操卷——完全免費，真正方便用家既 Past Paper 收集平台。</p>
+  <div class="install-tip" id="installTip" hidden>
+    <div class="install-tip-body">
+      <strong>一鍵加入主畫面</strong>
+      <span>iPhone／iPad：使用 Safari「分享」→「加入主畫面」。Android／電腦：瀏覽器選單 →「安裝應用程式」。</span>
+    </div>
+    <button type="button" class="install-tip-x" data-install-close aria-label="關閉"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
   </div>
 </header>
 
-<main class="subj-main">
-<section class="strand-index" aria-label="課題範疇">
-  <h2>按課題範疇溫習</h2>
-  <nav class="strand-nav">
-    <a href="/hub/math/number-and-algebra/">數與代數</a>
-    <a href="/hub/math/measures-shape-space/">度量、圖形與空間</a>
-    <a href="/hub/math/data-handling/">數據處理</a>
-  </nav>
-</section>
-<section class="strand-index" aria-label="課題">
-  <h2>按課題溫習</h2>
-  <nav class="strand-nav" aria-label="課題">
-        <a href="/hub/math/exponents-logarithms/">指數與對數</a>
-        <a href="/hub/math/ratio-rate-proportion/">比、率與比例</a>
-        <a href="/hub/math/polynomials-factorization/">多項式與因式分解</a>
-        <a href="/hub/math/number-systems/">數系</a>
-        <a href="/hub/math/equations-inequalities/">方程與不等式</a>
-        <a href="/hub/math/percentages-interest/">百分法與利息</a>
-        <a href="/hub/math/functions-graphs/">函數與圖像</a>
-        <a href="/hub/math/sequences/">數列</a>
-        <a href="/hub/math/variations/">變分</a>
-        <a href="/hub/math/trigonometry/">三角學與解三角形</a>
-        <a href="/hub/math/coordinate-geometry-line/">坐標幾何：直線</a>
-        <a href="/hub/math/coordinate-geometry-circle/">坐標幾何：圓</a>
-        <a href="/hub/math/circle-geometry/">圓形幾何</a>
-        <a href="/hub/math/geometric-transformations/">幾何變換</a>
-        <a href="/hub/math/mensuration/">求積法</a>
-        <a href="/hub/math/plane-geometry-similar-triangles/">平面幾何與相似三角形</a>
-        <a href="/hub/math/statistical-graphs/">統計圖表</a>
-        <a href="/hub/math/central-tendency-dispersion/">集中趨勢與離差</a>
-        <a href="/hub/math/probability/">概率</a>
-        <a href="/hub/math/permutations-combinations/">排列與組合</a>
-        </nav>
-</section>
-<section class="year-group" id="ySP">
-  <h2><a href="/hub/math/SP/">SP 年</a></h2>
-  <div class="paper-list">
-    <article class="paper-row">
-      <a class="paper-main" href="/hub/math/SP/paper-1/" title="開啟卷頁">
-        <div class="paper-year">SP</div>
-        <div class="paper-body">
-          <div class="paper-tags">
-            <span class="tag subj">數學</span>
-            <span class="tag cat">卷一</span>
-            <span class="tag lang">中文</span>
-          </div>
-          <div class="paper-title">文憑試 DSE 數學 SP · 卷一（中文）</div>
-          <div class="paper-sub">19 題索引</div>
-        </div>
-      </a>
-    </article>
+<nav class="filters" aria-label="篩選">
+  <div class="filters-inner">
+    <div class="seg" id="modeSeg" role="tablist" aria-label="瀏覽方式">
+      <button type="button" data-mode="year" class="on" role="tab" aria-selected="true">按年份</button>
+      <button type="button" data-mode="topic" role="tab" aria-selected="false">按課題</button>
+    </div>
+    <div class="topic-search" id="topicSearchWrap" hidden>
+      <input type="search" id="topicSearch" placeholder="搜尋課題…" autocomplete="off" enterkeyhint="search" />
+      <div class="topic-search-list" id="topicSearchList" hidden></div>
+    </div>
+    <div class="bar" id="yearBar">
+      <div class="field">
+        <label for="bSubj">科目</label>
+        <button type="button" class="reel-btn" id="bSubj" data-key="subject">所有</button>
+      </div>
+      <div class="field">
+        <label for="bYear" id="l2">年份</label>
+        <button type="button" class="reel-btn" id="bYear" data-key="year">所有</button>
+      </div>
+      <div class="field" id="fPaper">
+        <label for="bPaper">卷別</label>
+        <button type="button" class="reel-btn" id="bPaper" data-key="paper">所有</button>
+      </div>
+    </div>
   </div>
-</section>
-<section class="year-group" id="yPP">
-  <h2><a href="/hub/math/PP/">PP 年</a></h2>
-  <div class="paper-list">
-    <article class="paper-row">
-      <a class="paper-main" href="/hub/math/PP/paper-1/" title="開啟卷頁">
-        <div class="paper-year">PP</div>
-        <div class="paper-body">
-          <div class="paper-tags">
-            <span class="tag subj">數學</span>
-            <span class="tag cat">卷一</span>
-            <span class="tag lang">中文</span>
-          </div>
-          <div class="paper-title">文憑試 DSE 數學 PP · 卷一（中文）</div>
-          <div class="paper-sub">19 題索引</div>
-        </div>
-      </a>
-    </article>
-    <article class="paper-row">
-      <a class="paper-main" href="/hub/math/PP/paper-1-en/" title="開啟卷頁">
-        <div class="paper-year">PP</div>
-        <div class="paper-body">
-          <div class="paper-tags">
-            <span class="tag subj">數學</span>
-            <span class="tag cat">卷一</span>
-            <span class="tag lang">英文</span>
-          </div>
-          <div class="paper-title">文憑試 DSE 數學 PP · 卷一（英文）</div>
-          <div class="paper-sub">19 題索引</div>
-        </div>
-      </a>
-    </article>
-    <article class="paper-row">
-      <a class="paper-main" href="/hub/math/PP/paper-1m-en/" title="開啟卷頁">
-        <div class="paper-year">PP</div>
-        <div class="paper-body">
-          <div class="paper-tags">
-            <span class="tag subj">數學</span>
-            <span class="tag cat">卷一（M1）</span>
-            <span class="tag lang">英文</span>
-          </div>
-          <div class="paper-title">文憑試 DSE 數學 PP · 卷一（M1）（英文）</div>
-          <div class="paper-sub">13 題索引</div>
-        </div>
-      </a>
-    </article>
-  </div>
-</section>
-<section class="year-group" id="y2025">
-  <h2><a href="/hub/math/2025/">2025 年</a></h2>
-  <div class="paper-list">
-    <article class="paper-row">
-      <a class="paper-main" href="/hub/math/2025/paper-2/" title="開啟卷頁">
-        <div class="paper-year">2025</div>
-        <div class="paper-body">
-          <div class="paper-tags">
-            <span class="tag subj">數學</span>
-            <span class="tag cat">卷二</span>
-            <span class="tag lang">中文</span>
-          </div>
-          <div class="paper-title">文憑試 DSE 數學 2025 · 卷二（中文）</div>
-          <div class="paper-sub">45 題索引</div>
-        </div>
-      </a>
-    </article>
+</nav>
+
+<main>
+  <section id="result" class="paper-list" aria-live="polite">
+    <p class="list-count">共 54 卷</p>
     <article class="paper-row">
       <a class="paper-main" href="/hub/math/2025/paper-1-en/" title="開啟卷頁">
         <div class="paper-year">2025</div>
@@ -788,20 +286,6 @@
           </div>
           <div class="paper-title">文憑試 DSE 數學 2025 · 卷一（英文）</div>
           <div class="paper-sub">19 題索引</div>
-        </div>
-      </a>
-    </article>
-    <article class="paper-row">
-      <a class="paper-main" href="/hub/math/2025/paper-1m-en/" title="開啟卷頁">
-        <div class="paper-year">2025</div>
-        <div class="paper-body">
-          <div class="paper-tags">
-            <span class="tag subj">數學</span>
-            <span class="tag cat">卷一（M1）</span>
-            <span class="tag lang">英文</span>
-          </div>
-          <div class="paper-title">文憑試 DSE 數學 2025 · 卷一（M1）（英文）</div>
-          <div class="paper-sub">12 題索引</div>
         </div>
       </a>
     </article>
@@ -820,48 +304,15 @@
       </a>
     </article>
     <article class="paper-row">
-      <a class="paper-main" href="/hub/math/2025/paper-2m-en/" title="開啟卷頁">
+      <a class="paper-main" href="/hub/math/2025/paper-2-en/" title="開啟卷頁">
         <div class="paper-year">2025</div>
         <div class="paper-body">
           <div class="paper-tags">
             <span class="tag subj">數學</span>
-            <span class="tag cat">卷二（M2）</span>
+            <span class="tag cat">卷二</span>
             <span class="tag lang">英文</span>
           </div>
-          <div class="paper-title">文憑試 DSE 數學 2025 · 卷二（M2）（英文）</div>
-          <div class="paper-sub">13 題索引</div>
-        </div>
-      </a>
-    </article>
-  </div>
-</section>
-<section class="year-group" id="y2024">
-  <h2><a href="/hub/math/2024/">2024 年</a></h2>
-  <div class="paper-list">
-    <article class="paper-row">
-      <a class="paper-main" href="/hub/math/2024/paper-1/" title="開啟卷頁">
-        <div class="paper-year">2024</div>
-        <div class="paper-body">
-          <div class="paper-tags">
-            <span class="tag subj">數學</span>
-            <span class="tag cat">卷一</span>
-            <span class="tag lang">中文</span>
-          </div>
-          <div class="paper-title">文憑試 DSE 數學 2024 · 卷一（中文）</div>
-          <div class="paper-sub">19 題索引</div>
-        </div>
-      </a>
-    </article>
-    <article class="paper-row">
-      <a class="paper-main" href="/hub/math/2024/paper-2/" title="開啟卷頁">
-        <div class="paper-year">2024</div>
-        <div class="paper-body">
-          <div class="paper-tags">
-            <span class="tag subj">數學</span>
-            <span class="tag cat">卷二</span>
-            <span class="tag lang">中文</span>
-          </div>
-          <div class="paper-title">文憑試 DSE 數學 2024 · 卷二（中文）</div>
+          <div class="paper-title">文憑試 DSE 數學 2025 · 卷二（英文）</div>
           <div class="paper-sub">45 題索引</div>
         </div>
       </a>
@@ -881,16 +332,16 @@
       </a>
     </article>
     <article class="paper-row">
-      <a class="paper-main" href="/hub/math/2024/paper-1m-en/" title="開啟卷頁">
+      <a class="paper-main" href="/hub/math/2024/paper-1-en/" title="開啟卷頁">
         <div class="paper-year">2024</div>
         <div class="paper-body">
           <div class="paper-tags">
             <span class="tag subj">數學</span>
-            <span class="tag cat">卷一（M1）</span>
+            <span class="tag cat">卷一</span>
             <span class="tag lang">英文</span>
           </div>
-          <div class="paper-title">文憑試 DSE 數學 2024 · 卷一（M1）（英文）</div>
-          <div class="paper-sub">12 題索引</div>
+          <div class="paper-title">文憑試 DSE 數學 2024 · 卷一（英文）</div>
+          <div class="paper-sub">19 題索引</div>
         </div>
       </a>
     </article>
@@ -909,48 +360,15 @@
       </a>
     </article>
     <article class="paper-row">
-      <a class="paper-main" href="/hub/math/2024/paper-2m-en/" title="開啟卷頁">
+      <a class="paper-main" href="/hub/math/2024/paper-2-en/" title="開啟卷頁">
         <div class="paper-year">2024</div>
         <div class="paper-body">
           <div class="paper-tags">
             <span class="tag subj">數學</span>
-            <span class="tag cat">卷二（M2）</span>
+            <span class="tag cat">卷二</span>
             <span class="tag lang">英文</span>
           </div>
-          <div class="paper-title">文憑試 DSE 數學 2024 · 卷二（M2）（英文）</div>
-          <div class="paper-sub">13 題索引</div>
-        </div>
-      </a>
-    </article>
-  </div>
-</section>
-<section class="year-group" id="y2023">
-  <h2><a href="/hub/math/2023/">2023 年</a></h2>
-  <div class="paper-list">
-    <article class="paper-row">
-      <a class="paper-main" href="/hub/math/2023/paper-1/" title="開啟卷頁">
-        <div class="paper-year">2023</div>
-        <div class="paper-body">
-          <div class="paper-tags">
-            <span class="tag subj">數學</span>
-            <span class="tag cat">卷一</span>
-            <span class="tag lang">中文</span>
-          </div>
-          <div class="paper-title">文憑試 DSE 數學 2023 · 卷一（中文）</div>
-          <div class="paper-sub">19 題索引</div>
-        </div>
-      </a>
-    </article>
-    <article class="paper-row">
-      <a class="paper-main" href="/hub/math/2023/paper-2/" title="開啟卷頁">
-        <div class="paper-year">2023</div>
-        <div class="paper-body">
-          <div class="paper-tags">
-            <span class="tag subj">數學</span>
-            <span class="tag cat">卷二</span>
-            <span class="tag lang">中文</span>
-          </div>
-          <div class="paper-title">文憑試 DSE 數學 2023 · 卷二（中文）</div>
+          <div class="paper-title">文憑試 DSE 數學 2024 · 卷二（英文）</div>
           <div class="paper-sub">45 題索引</div>
         </div>
       </a>
@@ -970,16 +388,16 @@
       </a>
     </article>
     <article class="paper-row">
-      <a class="paper-main" href="/hub/math/2023/paper-1m-en/" title="開啟卷頁">
+      <a class="paper-main" href="/hub/math/2023/paper-1-en/" title="開啟卷頁">
         <div class="paper-year">2023</div>
         <div class="paper-body">
           <div class="paper-tags">
             <span class="tag subj">數學</span>
-            <span class="tag cat">卷一（M1）</span>
+            <span class="tag cat">卷一</span>
             <span class="tag lang">英文</span>
           </div>
-          <div class="paper-title">文憑試 DSE 數學 2023 · 卷一（M1）（英文）</div>
-          <div class="paper-sub">12 題索引</div>
+          <div class="paper-title">文憑試 DSE 數學 2023 · 卷一（英文）</div>
+          <div class="paper-sub">19 題索引</div>
         </div>
       </a>
     </article>
@@ -998,34 +416,29 @@
       </a>
     </article>
     <article class="paper-row">
-      <a class="paper-main" href="/hub/math/2023/paper-2m-en/" title="開啟卷頁">
+      <a class="paper-main" href="/hub/math/2023/paper-2-en/" title="開啟卷頁">
         <div class="paper-year">2023</div>
         <div class="paper-body">
           <div class="paper-tags">
             <span class="tag subj">數學</span>
-            <span class="tag cat">卷二（M2）</span>
+            <span class="tag cat">卷二</span>
             <span class="tag lang">英文</span>
           </div>
-          <div class="paper-title">文憑試 DSE 數學 2023 · 卷二（M2）（英文）</div>
-          <div class="paper-sub">12 題索引</div>
+          <div class="paper-title">文憑試 DSE 數學 2023 · 卷二（英文）</div>
+          <div class="paper-sub">45 題索引</div>
         </div>
       </a>
     </article>
-  </div>
-</section>
-<section class="year-group" id="y2022">
-  <h2><a href="/hub/math/2022/">2022 年</a></h2>
-  <div class="paper-list">
     <article class="paper-row">
-      <a class="paper-main" href="/hub/math/2022/paper-1/" title="開啟卷頁">
+      <a class="paper-main" href="/hub/math/2022/paper-1-en/" title="開啟卷頁">
         <div class="paper-year">2022</div>
         <div class="paper-body">
           <div class="paper-tags">
             <span class="tag subj">數學</span>
             <span class="tag cat">卷一</span>
-            <span class="tag lang">中文</span>
+            <span class="tag lang">英文</span>
           </div>
-          <div class="paper-title">文憑試 DSE 數學 2022 · 卷一（中文）</div>
+          <div class="paper-title">文憑試 DSE 數學 2022 · 卷一（英文）</div>
           <div class="paper-sub">19 題索引</div>
         </div>
       </a>
@@ -1045,20 +458,6 @@
       </a>
     </article>
     <article class="paper-row">
-      <a class="paper-main" href="/hub/math/2022/paper-1m-en/" title="開啟卷頁">
-        <div class="paper-year">2022</div>
-        <div class="paper-body">
-          <div class="paper-tags">
-            <span class="tag subj">數學</span>
-            <span class="tag cat">卷一（M1）</span>
-            <span class="tag lang">英文</span>
-          </div>
-          <div class="paper-title">文憑試 DSE 數學 2022 · 卷一（M1）（英文）</div>
-          <div class="paper-sub">12 題索引</div>
-        </div>
-      </a>
-    </article>
-    <article class="paper-row">
       <a class="paper-main" href="/hub/math/2022/paper-2-en/" title="開啟卷頁">
         <div class="paper-year">2022</div>
         <div class="paper-body">
@@ -1068,53 +467,6 @@
             <span class="tag lang">英文</span>
           </div>
           <div class="paper-title">文憑試 DSE 數學 2022 · 卷二（英文）</div>
-          <div class="paper-sub">45 題索引</div>
-        </div>
-      </a>
-    </article>
-    <article class="paper-row">
-      <a class="paper-main" href="/hub/math/2022/paper-2m-en/" title="開啟卷頁">
-        <div class="paper-year">2022</div>
-        <div class="paper-body">
-          <div class="paper-tags">
-            <span class="tag subj">數學</span>
-            <span class="tag cat">卷二（M2）</span>
-            <span class="tag lang">英文</span>
-          </div>
-          <div class="paper-title">文憑試 DSE 數學 2022 · 卷二（M2）（英文）</div>
-          <div class="paper-sub">12 題索引</div>
-        </div>
-      </a>
-    </article>
-  </div>
-</section>
-<section class="year-group" id="y2021">
-  <h2><a href="/hub/math/2021/">2021 年</a></h2>
-  <div class="paper-list">
-    <article class="paper-row">
-      <a class="paper-main" href="/hub/math/2021/paper-1/" title="開啟卷頁">
-        <div class="paper-year">2021</div>
-        <div class="paper-body">
-          <div class="paper-tags">
-            <span class="tag subj">數學</span>
-            <span class="tag cat">卷一</span>
-            <span class="tag lang">中文</span>
-          </div>
-          <div class="paper-title">文憑試 DSE 數學 2021 · 卷一（中文）</div>
-          <div class="paper-sub">19 題索引</div>
-        </div>
-      </a>
-    </article>
-    <article class="paper-row">
-      <a class="paper-main" href="/hub/math/2021/paper-2/" title="開啟卷頁">
-        <div class="paper-year">2021</div>
-        <div class="paper-body">
-          <div class="paper-tags">
-            <span class="tag subj">數學</span>
-            <span class="tag cat">卷二</span>
-            <span class="tag lang">中文</span>
-          </div>
-          <div class="paper-title">文憑試 DSE 數學 2021 · 卷二（中文）</div>
           <div class="paper-sub">45 題索引</div>
         </div>
       </a>
@@ -1134,16 +486,16 @@
       </a>
     </article>
     <article class="paper-row">
-      <a class="paper-main" href="/hub/math/2021/paper-1m-en/" title="開啟卷頁">
+      <a class="paper-main" href="/hub/math/2021/paper-1-en/" title="開啟卷頁">
         <div class="paper-year">2021</div>
         <div class="paper-body">
           <div class="paper-tags">
             <span class="tag subj">數學</span>
-            <span class="tag cat">卷一（M1）</span>
+            <span class="tag cat">卷一</span>
             <span class="tag lang">英文</span>
           </div>
-          <div class="paper-title">文憑試 DSE 數學 2021 · 卷一（M1）（英文）</div>
-          <div class="paper-sub">12 題索引</div>
+          <div class="paper-title">文憑試 DSE 數學 2021 · 卷一（英文）</div>
+          <div class="paper-sub">19 題索引</div>
         </div>
       </a>
     </article>
@@ -1162,48 +514,15 @@
       </a>
     </article>
     <article class="paper-row">
-      <a class="paper-main" href="/hub/math/2021/paper-2m-en/" title="開啟卷頁">
+      <a class="paper-main" href="/hub/math/2021/paper-2-en/" title="開啟卷頁">
         <div class="paper-year">2021</div>
         <div class="paper-body">
           <div class="paper-tags">
             <span class="tag subj">數學</span>
-            <span class="tag cat">卷二（M2）</span>
+            <span class="tag cat">卷二</span>
             <span class="tag lang">英文</span>
           </div>
-          <div class="paper-title">文憑試 DSE 數學 2021 · 卷二（M2）（英文）</div>
-          <div class="paper-sub">12 題索引</div>
-        </div>
-      </a>
-    </article>
-  </div>
-</section>
-<section class="year-group" id="y2020">
-  <h2><a href="/hub/math/2020/">2020 年</a></h2>
-  <div class="paper-list">
-    <article class="paper-row">
-      <a class="paper-main" href="/hub/math/2020/paper-1/" title="開啟卷頁">
-        <div class="paper-year">2020</div>
-        <div class="paper-body">
-          <div class="paper-tags">
-            <span class="tag subj">數學</span>
-            <span class="tag cat">卷一</span>
-            <span class="tag lang">中文</span>
-          </div>
-          <div class="paper-title">文憑試 DSE 數學 2020 · 卷一（中文）</div>
-          <div class="paper-sub">19 題索引</div>
-        </div>
-      </a>
-    </article>
-    <article class="paper-row">
-      <a class="paper-main" href="/hub/math/2020/paper-2/" title="開啟卷頁">
-        <div class="paper-year">2020</div>
-        <div class="paper-body">
-          <div class="paper-tags">
-            <span class="tag subj">數學</span>
-            <span class="tag cat">卷二</span>
-            <span class="tag lang">中文</span>
-          </div>
-          <div class="paper-title">文憑試 DSE 數學 2020 · 卷二（中文）</div>
+          <div class="paper-title">文憑試 DSE 數學 2021 · 卷二（英文）</div>
           <div class="paper-sub">45 題索引</div>
         </div>
       </a>
@@ -1223,16 +542,16 @@
       </a>
     </article>
     <article class="paper-row">
-      <a class="paper-main" href="/hub/math/2020/paper-1m-en/" title="開啟卷頁">
+      <a class="paper-main" href="/hub/math/2020/paper-1-en/" title="開啟卷頁">
         <div class="paper-year">2020</div>
         <div class="paper-body">
           <div class="paper-tags">
             <span class="tag subj">數學</span>
-            <span class="tag cat">卷一（M1）</span>
+            <span class="tag cat">卷一</span>
             <span class="tag lang">英文</span>
           </div>
-          <div class="paper-title">文憑試 DSE 數學 2020 · 卷一（M1）（英文）</div>
-          <div class="paper-sub">12 題索引</div>
+          <div class="paper-title">文憑試 DSE 數學 2020 · 卷一（英文）</div>
+          <div class="paper-sub">19 題索引</div>
         </div>
       </a>
     </article>
@@ -1251,48 +570,15 @@
       </a>
     </article>
     <article class="paper-row">
-      <a class="paper-main" href="/hub/math/2020/paper-2m-en/" title="開啟卷頁">
+      <a class="paper-main" href="/hub/math/2020/paper-2-en/" title="開啟卷頁">
         <div class="paper-year">2020</div>
         <div class="paper-body">
           <div class="paper-tags">
             <span class="tag subj">數學</span>
-            <span class="tag cat">卷二（M2）</span>
+            <span class="tag cat">卷二</span>
             <span class="tag lang">英文</span>
           </div>
-          <div class="paper-title">文憑試 DSE 數學 2020 · 卷二（M2）（英文）</div>
-          <div class="paper-sub">12 題索引</div>
-        </div>
-      </a>
-    </article>
-  </div>
-</section>
-<section class="year-group" id="y2019">
-  <h2><a href="/hub/math/2019/">2019 年</a></h2>
-  <div class="paper-list">
-    <article class="paper-row">
-      <a class="paper-main" href="/hub/math/2019/paper-1/" title="開啟卷頁">
-        <div class="paper-year">2019</div>
-        <div class="paper-body">
-          <div class="paper-tags">
-            <span class="tag subj">數學</span>
-            <span class="tag cat">卷一</span>
-            <span class="tag lang">中文</span>
-          </div>
-          <div class="paper-title">文憑試 DSE 數學 2019 · 卷一（中文）</div>
-          <div class="paper-sub">19 題索引</div>
-        </div>
-      </a>
-    </article>
-    <article class="paper-row">
-      <a class="paper-main" href="/hub/math/2019/paper-2/" title="開啟卷頁">
-        <div class="paper-year">2019</div>
-        <div class="paper-body">
-          <div class="paper-tags">
-            <span class="tag subj">數學</span>
-            <span class="tag cat">卷二</span>
-            <span class="tag lang">中文</span>
-          </div>
-          <div class="paper-title">文憑試 DSE 數學 2019 · 卷二（中文）</div>
+          <div class="paper-title">文憑試 DSE 數學 2020 · 卷二（英文）</div>
           <div class="paper-sub">45 題索引</div>
         </div>
       </a>
@@ -1312,16 +598,16 @@
       </a>
     </article>
     <article class="paper-row">
-      <a class="paper-main" href="/hub/math/2019/paper-1m-en/" title="開啟卷頁">
+      <a class="paper-main" href="/hub/math/2019/paper-1-en/" title="開啟卷頁">
         <div class="paper-year">2019</div>
         <div class="paper-body">
           <div class="paper-tags">
             <span class="tag subj">數學</span>
-            <span class="tag cat">卷一（M1）</span>
+            <span class="tag cat">卷一</span>
             <span class="tag lang">英文</span>
           </div>
-          <div class="paper-title">文憑試 DSE 數學 2019 · 卷一（M1）（英文）</div>
-          <div class="paper-sub">12 題索引</div>
+          <div class="paper-title">文憑試 DSE 數學 2019 · 卷一（英文）</div>
+          <div class="paper-sub">19 題索引</div>
         </div>
       </a>
     </article>
@@ -1340,48 +626,15 @@
       </a>
     </article>
     <article class="paper-row">
-      <a class="paper-main" href="/hub/math/2019/paper-2m-en/" title="開啟卷頁">
+      <a class="paper-main" href="/hub/math/2019/paper-2-en/" title="開啟卷頁">
         <div class="paper-year">2019</div>
         <div class="paper-body">
           <div class="paper-tags">
             <span class="tag subj">數學</span>
-            <span class="tag cat">卷二（M2）</span>
+            <span class="tag cat">卷二</span>
             <span class="tag lang">英文</span>
           </div>
-          <div class="paper-title">文憑試 DSE 數學 2019 · 卷二（M2）（英文）</div>
-          <div class="paper-sub">12 題索引</div>
-        </div>
-      </a>
-    </article>
-  </div>
-</section>
-<section class="year-group" id="y2018">
-  <h2><a href="/hub/math/2018/">2018 年</a></h2>
-  <div class="paper-list">
-    <article class="paper-row">
-      <a class="paper-main" href="/hub/math/2018/paper-1/" title="開啟卷頁">
-        <div class="paper-year">2018</div>
-        <div class="paper-body">
-          <div class="paper-tags">
-            <span class="tag subj">數學</span>
-            <span class="tag cat">卷一</span>
-            <span class="tag lang">中文</span>
-          </div>
-          <div class="paper-title">文憑試 DSE 數學 2018 · 卷一（中文）</div>
-          <div class="paper-sub">19 題索引</div>
-        </div>
-      </a>
-    </article>
-    <article class="paper-row">
-      <a class="paper-main" href="/hub/math/2018/paper-2/" title="開啟卷頁">
-        <div class="paper-year">2018</div>
-        <div class="paper-body">
-          <div class="paper-tags">
-            <span class="tag subj">數學</span>
-            <span class="tag cat">卷二</span>
-            <span class="tag lang">中文</span>
-          </div>
-          <div class="paper-title">文憑試 DSE 數學 2018 · 卷二（中文）</div>
+          <div class="paper-title">文憑試 DSE 數學 2019 · 卷二（英文）</div>
           <div class="paper-sub">45 題索引</div>
         </div>
       </a>
@@ -1401,16 +654,16 @@
       </a>
     </article>
     <article class="paper-row">
-      <a class="paper-main" href="/hub/math/2018/paper-1m-en/" title="開啟卷頁">
+      <a class="paper-main" href="/hub/math/2018/paper-1-en/" title="開啟卷頁">
         <div class="paper-year">2018</div>
         <div class="paper-body">
           <div class="paper-tags">
             <span class="tag subj">數學</span>
-            <span class="tag cat">卷一（M1）</span>
+            <span class="tag cat">卷一</span>
             <span class="tag lang">英文</span>
           </div>
-          <div class="paper-title">文憑試 DSE 數學 2018 · 卷一（M1）（英文）</div>
-          <div class="paper-sub">12 題索引</div>
+          <div class="paper-title">文憑試 DSE 數學 2018 · 卷一（英文）</div>
+          <div class="paper-sub">19 題索引</div>
         </div>
       </a>
     </article>
@@ -1429,48 +682,15 @@
       </a>
     </article>
     <article class="paper-row">
-      <a class="paper-main" href="/hub/math/2018/paper-2m-en/" title="開啟卷頁">
+      <a class="paper-main" href="/hub/math/2018/paper-2-en/" title="開啟卷頁">
         <div class="paper-year">2018</div>
         <div class="paper-body">
           <div class="paper-tags">
             <span class="tag subj">數學</span>
-            <span class="tag cat">卷二（M2）</span>
+            <span class="tag cat">卷二</span>
             <span class="tag lang">英文</span>
           </div>
-          <div class="paper-title">文憑試 DSE 數學 2018 · 卷二（M2）（英文）</div>
-          <div class="paper-sub">12 題索引</div>
-        </div>
-      </a>
-    </article>
-  </div>
-</section>
-<section class="year-group" id="y2017">
-  <h2><a href="/hub/math/2017/">2017 年</a></h2>
-  <div class="paper-list">
-    <article class="paper-row">
-      <a class="paper-main" href="/hub/math/2017/paper-1/" title="開啟卷頁">
-        <div class="paper-year">2017</div>
-        <div class="paper-body">
-          <div class="paper-tags">
-            <span class="tag subj">數學</span>
-            <span class="tag cat">卷一</span>
-            <span class="tag lang">中文</span>
-          </div>
-          <div class="paper-title">文憑試 DSE 數學 2017 · 卷一（中文）</div>
-          <div class="paper-sub">19 題索引</div>
-        </div>
-      </a>
-    </article>
-    <article class="paper-row">
-      <a class="paper-main" href="/hub/math/2017/paper-2/" title="開啟卷頁">
-        <div class="paper-year">2017</div>
-        <div class="paper-body">
-          <div class="paper-tags">
-            <span class="tag subj">數學</span>
-            <span class="tag cat">卷二</span>
-            <span class="tag lang">中文</span>
-          </div>
-          <div class="paper-title">文憑試 DSE 數學 2017 · 卷二（中文）</div>
+          <div class="paper-title">文憑試 DSE 數學 2018 · 卷二（英文）</div>
           <div class="paper-sub">45 題索引</div>
         </div>
       </a>
@@ -1490,16 +710,16 @@
       </a>
     </article>
     <article class="paper-row">
-      <a class="paper-main" href="/hub/math/2017/paper-1m-en/" title="開啟卷頁">
+      <a class="paper-main" href="/hub/math/2017/paper-1-en/" title="開啟卷頁">
         <div class="paper-year">2017</div>
         <div class="paper-body">
           <div class="paper-tags">
             <span class="tag subj">數學</span>
-            <span class="tag cat">卷一（M1）</span>
+            <span class="tag cat">卷一</span>
             <span class="tag lang">英文</span>
           </div>
-          <div class="paper-title">文憑試 DSE 數學 2017 · 卷一（M1）（英文）</div>
-          <div class="paper-sub">12 題索引</div>
+          <div class="paper-title">文憑試 DSE 數學 2017 · 卷一（英文）</div>
+          <div class="paper-sub">19 題索引</div>
         </div>
       </a>
     </article>
@@ -1517,35 +737,16 @@
         </div>
       </a>
     </article>
-  </div>
-</section>
-<section class="year-group" id="y2016">
-  <h2><a href="/hub/math/2016/">2016 年</a></h2>
-  <div class="paper-list">
     <article class="paper-row">
-      <a class="paper-main" href="/hub/math/2016/paper-1/" title="開啟卷頁">
-        <div class="paper-year">2016</div>
-        <div class="paper-body">
-          <div class="paper-tags">
-            <span class="tag subj">數學</span>
-            <span class="tag cat">卷一</span>
-            <span class="tag lang">中文</span>
-          </div>
-          <div class="paper-title">文憑試 DSE 數學 2016 · 卷一（中文）</div>
-          <div class="paper-sub">19 題索引</div>
-        </div>
-      </a>
-    </article>
-    <article class="paper-row">
-      <a class="paper-main" href="/hub/math/2016/paper-2/" title="開啟卷頁">
-        <div class="paper-year">2016</div>
+      <a class="paper-main" href="/hub/math/2017/paper-2-en/" title="開啟卷頁">
+        <div class="paper-year">2017</div>
         <div class="paper-body">
           <div class="paper-tags">
             <span class="tag subj">數學</span>
             <span class="tag cat">卷二</span>
-            <span class="tag lang">中文</span>
+            <span class="tag lang">英文</span>
           </div>
-          <div class="paper-title">文憑試 DSE 數學 2016 · 卷二（中文）</div>
+          <div class="paper-title">文憑試 DSE 數學 2017 · 卷二（英文）</div>
           <div class="paper-sub">45 題索引</div>
         </div>
       </a>
@@ -1565,16 +766,16 @@
       </a>
     </article>
     <article class="paper-row">
-      <a class="paper-main" href="/hub/math/2016/paper-1m-en/" title="開啟卷頁">
+      <a class="paper-main" href="/hub/math/2016/paper-1-en/" title="開啟卷頁">
         <div class="paper-year">2016</div>
         <div class="paper-body">
           <div class="paper-tags">
             <span class="tag subj">數學</span>
-            <span class="tag cat">卷一（M1）</span>
+            <span class="tag cat">卷一</span>
             <span class="tag lang">英文</span>
           </div>
-          <div class="paper-title">文憑試 DSE 數學 2016 · 卷一（M1）（英文）</div>
-          <div class="paper-sub">12 題索引</div>
+          <div class="paper-title">文憑試 DSE 數學 2016 · 卷一（英文）</div>
+          <div class="paper-sub">19 題索引</div>
         </div>
       </a>
     </article>
@@ -1592,35 +793,16 @@
         </div>
       </a>
     </article>
-  </div>
-</section>
-<section class="year-group" id="y2015">
-  <h2><a href="/hub/math/2015/">2015 年</a></h2>
-  <div class="paper-list">
     <article class="paper-row">
-      <a class="paper-main" href="/hub/math/2015/paper-1/" title="開啟卷頁">
-        <div class="paper-year">2015</div>
-        <div class="paper-body">
-          <div class="paper-tags">
-            <span class="tag subj">數學</span>
-            <span class="tag cat">卷一</span>
-            <span class="tag lang">中文</span>
-          </div>
-          <div class="paper-title">文憑試 DSE 數學 2015 · 卷一（中文）</div>
-          <div class="paper-sub">19 題索引</div>
-        </div>
-      </a>
-    </article>
-    <article class="paper-row">
-      <a class="paper-main" href="/hub/math/2015/paper-2/" title="開啟卷頁">
-        <div class="paper-year">2015</div>
+      <a class="paper-main" href="/hub/math/2016/paper-2-en/" title="開啟卷頁">
+        <div class="paper-year">2016</div>
         <div class="paper-body">
           <div class="paper-tags">
             <span class="tag subj">數學</span>
             <span class="tag cat">卷二</span>
-            <span class="tag lang">中文</span>
+            <span class="tag lang">英文</span>
           </div>
-          <div class="paper-title">文憑試 DSE 數學 2015 · 卷二（中文）</div>
+          <div class="paper-title">文憑試 DSE 數學 2016 · 卷二（英文）</div>
           <div class="paper-sub">45 題索引</div>
         </div>
       </a>
@@ -1640,16 +822,16 @@
       </a>
     </article>
     <article class="paper-row">
-      <a class="paper-main" href="/hub/math/2015/paper-1m-en/" title="開啟卷頁">
+      <a class="paper-main" href="/hub/math/2015/paper-1-en/" title="開啟卷頁">
         <div class="paper-year">2015</div>
         <div class="paper-body">
           <div class="paper-tags">
             <span class="tag subj">數學</span>
-            <span class="tag cat">卷一（M1）</span>
+            <span class="tag cat">卷一</span>
             <span class="tag lang">英文</span>
           </div>
-          <div class="paper-title">文憑試 DSE 數學 2015 · 卷一（M1）（英文）</div>
-          <div class="paper-sub">12 題索引</div>
+          <div class="paper-title">文憑試 DSE 數學 2015 · 卷一（英文）</div>
+          <div class="paper-sub">19 題索引</div>
         </div>
       </a>
     </article>
@@ -1668,48 +850,15 @@
       </a>
     </article>
     <article class="paper-row">
-      <a class="paper-main" href="/hub/math/2015/paper-2m-en/" title="開啟卷頁">
+      <a class="paper-main" href="/hub/math/2015/paper-2-en/" title="開啟卷頁">
         <div class="paper-year">2015</div>
         <div class="paper-body">
           <div class="paper-tags">
             <span class="tag subj">數學</span>
-            <span class="tag cat">卷二（M2）</span>
+            <span class="tag cat">卷二</span>
             <span class="tag lang">英文</span>
           </div>
-          <div class="paper-title">文憑試 DSE 數學 2015 · 卷二（M2）（英文）</div>
-          <div class="paper-sub">12 題索引</div>
-        </div>
-      </a>
-    </article>
-  </div>
-</section>
-<section class="year-group" id="y2014">
-  <h2><a href="/hub/math/2014/">2014 年</a></h2>
-  <div class="paper-list">
-    <article class="paper-row">
-      <a class="paper-main" href="/hub/math/2014/paper-1/" title="開啟卷頁">
-        <div class="paper-year">2014</div>
-        <div class="paper-body">
-          <div class="paper-tags">
-            <span class="tag subj">數學</span>
-            <span class="tag cat">卷一</span>
-            <span class="tag lang">中文</span>
-          </div>
-          <div class="paper-title">文憑試 DSE 數學 2014 · 卷一（中文）</div>
-          <div class="paper-sub">19 題索引</div>
-        </div>
-      </a>
-    </article>
-    <article class="paper-row">
-      <a class="paper-main" href="/hub/math/2014/paper-2/" title="開啟卷頁">
-        <div class="paper-year">2014</div>
-        <div class="paper-body">
-          <div class="paper-tags">
-            <span class="tag subj">數學</span>
-            <span class="tag cat">卷二</span>
-            <span class="tag lang">中文</span>
-          </div>
-          <div class="paper-title">文憑試 DSE 數學 2014 · 卷二（中文）</div>
+          <div class="paper-title">文憑試 DSE 數學 2015 · 卷二（英文）</div>
           <div class="paper-sub">45 題索引</div>
         </div>
       </a>
@@ -1729,16 +878,16 @@
       </a>
     </article>
     <article class="paper-row">
-      <a class="paper-main" href="/hub/math/2014/paper-1m-en/" title="開啟卷頁">
+      <a class="paper-main" href="/hub/math/2014/paper-1-en/" title="開啟卷頁">
         <div class="paper-year">2014</div>
         <div class="paper-body">
           <div class="paper-tags">
             <span class="tag subj">數學</span>
-            <span class="tag cat">卷一（M1）</span>
+            <span class="tag cat">卷一</span>
             <span class="tag lang">英文</span>
           </div>
-          <div class="paper-title">文憑試 DSE 數學 2014 · 卷一（M1）（英文）</div>
-          <div class="paper-sub">12 題索引</div>
+          <div class="paper-title">文憑試 DSE 數學 2014 · 卷一（英文）</div>
+          <div class="paper-sub">19 題索引</div>
         </div>
       </a>
     </article>
@@ -1756,35 +905,16 @@
         </div>
       </a>
     </article>
-  </div>
-</section>
-<section class="year-group" id="y2013">
-  <h2><a href="/hub/math/2013/">2013 年</a></h2>
-  <div class="paper-list">
     <article class="paper-row">
-      <a class="paper-main" href="/hub/math/2013/paper-1/" title="開啟卷頁">
-        <div class="paper-year">2013</div>
-        <div class="paper-body">
-          <div class="paper-tags">
-            <span class="tag subj">數學</span>
-            <span class="tag cat">卷一</span>
-            <span class="tag lang">中文</span>
-          </div>
-          <div class="paper-title">文憑試 DSE 數學 2013 · 卷一（中文）</div>
-          <div class="paper-sub">19 題索引</div>
-        </div>
-      </a>
-    </article>
-    <article class="paper-row">
-      <a class="paper-main" href="/hub/math/2013/paper-2/" title="開啟卷頁">
-        <div class="paper-year">2013</div>
+      <a class="paper-main" href="/hub/math/2014/paper-2-en/" title="開啟卷頁">
+        <div class="paper-year">2014</div>
         <div class="paper-body">
           <div class="paper-tags">
             <span class="tag subj">數學</span>
             <span class="tag cat">卷二</span>
-            <span class="tag lang">中文</span>
+            <span class="tag lang">英文</span>
           </div>
-          <div class="paper-title">文憑試 DSE 數學 2013 · 卷二（中文）</div>
+          <div class="paper-title">文憑試 DSE 數學 2014 · 卷二（英文）</div>
           <div class="paper-sub">45 題索引</div>
         </div>
       </a>
@@ -1804,16 +934,16 @@
       </a>
     </article>
     <article class="paper-row">
-      <a class="paper-main" href="/hub/math/2013/paper-1m-en/" title="開啟卷頁">
+      <a class="paper-main" href="/hub/math/2013/paper-1-en/" title="開啟卷頁">
         <div class="paper-year">2013</div>
         <div class="paper-body">
           <div class="paper-tags">
             <span class="tag subj">數學</span>
-            <span class="tag cat">卷一（M1）</span>
+            <span class="tag cat">卷一</span>
             <span class="tag lang">英文</span>
           </div>
-          <div class="paper-title">文憑試 DSE 數學 2013 · 卷一（M1）（英文）</div>
-          <div class="paper-sub">12 題索引</div>
+          <div class="paper-title">文憑試 DSE 數學 2013 · 卷一（英文）</div>
+          <div class="paper-sub">19 題索引</div>
         </div>
       </a>
     </article>
@@ -1831,35 +961,16 @@
         </div>
       </a>
     </article>
-  </div>
-</section>
-<section class="year-group" id="y2012">
-  <h2><a href="/hub/math/2012/">2012 年</a></h2>
-  <div class="paper-list">
     <article class="paper-row">
-      <a class="paper-main" href="/hub/math/2012/paper-1/" title="開啟卷頁">
-        <div class="paper-year">2012</div>
-        <div class="paper-body">
-          <div class="paper-tags">
-            <span class="tag subj">數學</span>
-            <span class="tag cat">卷一</span>
-            <span class="tag lang">中文</span>
-          </div>
-          <div class="paper-title">文憑試 DSE 數學 2012 · 卷一（中文）</div>
-          <div class="paper-sub">19 題索引</div>
-        </div>
-      </a>
-    </article>
-    <article class="paper-row">
-      <a class="paper-main" href="/hub/math/2012/paper-2/" title="開啟卷頁">
-        <div class="paper-year">2012</div>
+      <a class="paper-main" href="/hub/math/2013/paper-2-en/" title="開啟卷頁">
+        <div class="paper-year">2013</div>
         <div class="paper-body">
           <div class="paper-tags">
             <span class="tag subj">數學</span>
             <span class="tag cat">卷二</span>
-            <span class="tag lang">中文</span>
+            <span class="tag lang">英文</span>
           </div>
-          <div class="paper-title">文憑試 DSE 數學 2012 · 卷二（中文）</div>
+          <div class="paper-title">文憑試 DSE 數學 2013 · 卷二（英文）</div>
           <div class="paper-sub">45 題索引</div>
         </div>
       </a>
@@ -1879,16 +990,16 @@
       </a>
     </article>
     <article class="paper-row">
-      <a class="paper-main" href="/hub/math/2012/paper-1m-en/" title="開啟卷頁">
+      <a class="paper-main" href="/hub/math/2012/paper-1-en/" title="開啟卷頁">
         <div class="paper-year">2012</div>
         <div class="paper-body">
           <div class="paper-tags">
             <span class="tag subj">數學</span>
-            <span class="tag cat">卷一（M1）</span>
+            <span class="tag cat">卷一</span>
             <span class="tag lang">英文</span>
           </div>
-          <div class="paper-title">文憑試 DSE 數學 2012 · 卷一（M1）（英文）</div>
-          <div class="paper-sub">12 題索引</div>
+          <div class="paper-title">文憑試 DSE 數學 2012 · 卷一（英文）</div>
+          <div class="paper-sub">19 題索引</div>
         </div>
       </a>
     </article>
@@ -1906,13 +1017,31 @@
         </div>
       </a>
     </article>
-  </div>
-</section>
+    <article class="paper-row">
+      <a class="paper-main" href="/hub/math/2012/paper-2-en/" title="開啟卷頁">
+        <div class="paper-year">2012</div>
+        <div class="paper-body">
+          <div class="paper-tags">
+            <span class="tag subj">數學</span>
+            <span class="tag cat">卷二</span>
+            <span class="tag lang">英文</span>
+          </div>
+          <div class="paper-title">文憑試 DSE 數學 2012 · 卷二（英文）</div>
+          <div class="paper-sub">45 題索引</div>
+        </div>
+      </a>
+    </article>
+  </section>
+</main>
 <section class="seo-faq" aria-label="常見問題">
   <h2>常見問題</h2>
   <details open>
     <summary>DSE Hub 係咪免費？</summary>
     <p>係，真正完全免費查閱香港中學文憑試歷屆試題索引同題目，唔使報名，亦唔使信用卡。</p>
+  </details>
+  <details>
+    <summary>而家有邊啲科目？</summary>
+    <p>而家有數學（必修部分）、經濟、化學、生物同物理。每科已上線嘅年份同卷別，以資料庫實際內容為準，科目頁會列出全部已有卷。</p>
   </details>
   <details>
     <summary>可唔可以按課題操練？</summary>
@@ -1926,8 +1055,42 @@
     <summary>有冇英文卷可以操？</summary>
     <p>有。數學同經濟部分年份提供英文卷；化學、生物、物理而家主要係中文卷。每卷頁會標明語言。</p>
   </details>
+  <details>
+    <summary>可唔可以下載 PDF 原卷？</summary>
+    <p>站內主要提供題目索引同逐題睇題，方便溫習；部分卷另有 PDF 連結。內容以資料庫已有項目為準，並唔取代考評局官方刊物。</p>
+  </details>
+  <details>
+    <summary>手機可唔可以睇題？</summary>
+    <p>可以。網站已為手機優化，亦支援加到主畫面，方便隨身搵 DSE past paper 同操卷。</p>
+  </details>
+  <details>
+    <summary>呢度係咪官方原卷檔案庫？</summary>
+    <p>站內主要提供索引、題目同課題標籤，方便溫習；部分卷另有 PDF 連結。內容以資料庫已有項目為準，並唔取代考試及評核局官方刊物。</p>
+  </details>
 </section>
-</main>
-<footer><a href="/hub/">返回 DSE Hub 主頁</a> · <a href="/hub/">DSE Hub 主頁</a> · 相關：<a href="https://dsemaths.canonlessons.com" rel="noopener">免費 DSE 數學視覺教程</a> · 站內只放索引、連結同課題標籤，只顯示資料庫已有內容</footer>
+<footer>站內只放索引、連結同課題標籤，唔存放試卷原卷 · 只顯示資料庫已有內容<br>科目：<a href="/hub/math/">數學</a> · <a href="/econ/">經濟</a> · <a href="/chem/">化學</a> · <a href="/bio/">生物</a> · <a href="/phys/">物理</a><br>相關：<a href="https://dsemaths.canonlessons.com" rel="noopener">免費 DSE 數學視覺教程</a></footer>
+
+<!-- 滾輪選擇器 -->
+<div class="reel-overlay" id="reel" hidden>
+  <div class="reel-backdrop" id="reelBackdrop"></div>
+  <div class="reel-sheet" role="dialog" aria-modal="true" aria-labelledby="reelTitle">
+    <div class="reel-grabber" aria-hidden="true"></div>
+    <div class="reel-head">
+      <button type="button" class="reel-link" id="reelCancel">取消</button>
+      <span id="reelTitle">科目</span>
+      <button type="button" class="reel-link ok" id="reelDone">完成</button>
+    </div>
+    <div class="reel-window">
+      <div class="reel-highlight" aria-hidden="true"></div>
+      <div class="reel-wheel" id="reelWheel"></div>
+    </div>
+  </div>
+</div>
+
+<script src="/data.js?v=202611260400"></script>
+<script src="/hub/papers.js?v=202611251500"></script>
+<script src="/hub/data.js?v=202611260400"></script>
+<script src="/hub/app.js?v=202611260400"></script>
+<script src="/pwa.js?v=202611260122"></script>
 </body>
 </html>

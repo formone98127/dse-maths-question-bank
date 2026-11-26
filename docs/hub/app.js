@@ -537,7 +537,11 @@ function renderYear() {
     return;
   }
   const nBank = rows.filter((r) => !r.pdf).length;
-  const count = `<p class="list-count">共 ${rows.length} 項（電子題庫 ${nBank} 卷 · PDF 下載 ${rows.length - nBank} 份）</p>`;
+  /* 卷數以「年度＋卷」計（中英文版本算同一張卷）——CATALOG 每行 = 一個語言版本，
+     直接數行數會把同一張卷重複計（例：必修 57 個版本其實只有 30 張卷）。 */
+  const nVol = new Set(rows.filter((r) => !r.pdf).map((r) => `${r.year}|${r.paper}`)).size;
+  const volTxt = nVol === nBank ? `${nVol} 卷` : `${nVol} 卷（${nBank} 個語言版本）`;
+  const count = `<p class="list-count">共 ${rows.length} 項（電子題庫 ${volTxt} · PDF 下載 ${rows.length - nBank} 份）</p>`;
   resultEl.innerHTML = count + rows.map((r) => (r.pdf ? pdfRowHtml(r) : rowHtml(r))).join("");
 }
 

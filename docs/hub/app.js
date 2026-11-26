@@ -742,6 +742,12 @@ function commitReel() {
       state.year = ALL;
       state.paper = ALL;
       state.topic = PLACE;
+      /* Kin 定案（2026-11-26）：喺 Hub 篩選揀「數學（必修部分）」→ 進入數學分支 /hub/math/ */
+      if (v === "math") {
+        closeReel();
+        location.href = "/hub/math/";
+        return;
+      }
     } else if (reelKey === "year") {
       state.paper = ALL;
     }

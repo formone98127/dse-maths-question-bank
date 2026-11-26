@@ -26,7 +26,7 @@
   Cache-Control: public, max-age=300
 
 # 年／卷頁與科目頁：5 分鐘內必見新版
-/math/*
+/hub/math/*
   Cache-Control: public, max-age=300, must-revalidate
   X-Robots-Tag: index, follow
 

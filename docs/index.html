@@ -324,7 +324,7 @@ footer { text-align:center; color:var(--mut); font-size:11.5px; padding:4px 0 12
 </style>
 </head>
 <body>
-<noscript><p><a href="/hub/">開啟 DSE 歷屆試題資料庫（DSE Hub）</a>。本站亦有 <a href="/math/">數學</a> 科目頁。</p></noscript>
+<noscript><p><a href="/hub/">開啟 DSE 歷屆試題資料庫（DSE Hub）</a>。本站亦有 <a href="/hub/math/">數學</a> 科目頁。</p></noscript>
 
 <header>
   <div class="bar">
@@ -351,7 +351,7 @@ footer { text-align:center; color:var(--mut); font-size:11.5px; padding:4px 0 12
   <summary style="cursor:pointer;font-size:14px;color:#555;padding:6px 0;outline-offset:4px;">關於 DSE 數學題庫｜按年份導覽</summary>
   <h1 style="font-size:18px;margin:8px 0 6px;">DSE 數學歷屆試題題庫（2012–2025）</h1>
   <p style="margin:0 0 8px;font-size:14px;color:#444;">免費 DSE 數學 Past Paper 題目、官方評卷參考（Marking Scheme）、考生表現與詳解，按年份、卷別、課題搜尋，毋須報名。</p>
-  <p style="margin:0;font-size:13px;">按年份：<a href="/questions/math/2019/paper-1/q1/">2019</a> · <a href="/questions/math/2020/paper-1/q1/">2020</a> · <a href="/questions/math/2021/paper-1/q1/">2021</a> · <a href="/questions/math/2022/paper-1/q1/">2022</a> · <a href="/questions/math/2023/paper-1/q1/">2023</a> · <a href="/questions/math/2024/paper-1/q1/">2024</a> · <a href="/questions/math/2025/paper-1/q1/">2025</a></p>
+  <p style="margin:0;font-size:13px;">按年份：<a href="/questions/hub/math/2019/paper-1/q1/">2019</a> · <a href="/questions/hub/math/2020/paper-1/q1/">2020</a> · <a href="/questions/hub/math/2021/paper-1/q1/">2021</a> · <a href="/questions/hub/math/2022/paper-1/q1/">2022</a> · <a href="/questions/hub/math/2023/paper-1/q1/">2023</a> · <a href="/questions/hub/math/2024/paper-1/q1/">2024</a> · <a href="/questions/hub/math/2025/paper-1/q1/">2025</a></p>
 </details>
 
 <script src="hub/papers.js?v=202611221029"></script>
@@ -897,7 +897,7 @@ function staticLink(q) {
   const y = Number(q.year);
   if (!Number.isFinite(y) || y < 2019 || y > 2025) return '';   // 靜態頁現只 cover 2019–2025
   const pn = /Paper 2|卷二/i.test(q.paper || '') ? 2 : 1;
-  const href = `/questions/math/${y}/paper-${pn}/q${q.qno}/`;
+  const href = `/questions/hub/math/${y}/paper-${pn}/q${q.qno}/`;
   return `<a class="perm-link" href="${href}" title="此題獨立頁面（可分享）">🔗 永久連結</a>`;
 }
 

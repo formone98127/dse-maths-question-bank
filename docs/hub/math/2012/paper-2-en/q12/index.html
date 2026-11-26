@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DSE Maths 2012 Paper 2 Question 12 — 數列規律與遞迴關係 — Answer, Traps &amp; Speed Solution | DSE Hub</title>
+<meta name="description" content="Free worked answer for DSE Maths 2012 Paper 2 Question 12: the correct answer, why each wrong option traps candidates, and a fast solving strategy. Topic: 數列規律與遞迴關係.">
+<meta name="keywords" content="DSE, 香港中學文憑, 歷屆試題, past paper, DSE 數學, DSE 經濟, DSE 化學, DSE 生物, DSE 物理, 免費題庫, 按課題">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="googlebot" content="index, follow">
+<meta name="author" content="DSE Hub">
+<link rel="canonical" href="https://hkdse.exampaper.cloud/hub/math/2012/paper-2-en/q12/">
+<link rel="alternate" hreflang="en" href="https://hkdse.exampaper.cloud/hub/math/2012/paper-2-en/q12/">
+<link rel="alternate" hreflang="zh-Hant-HK" href="https://hkdse.exampaper.cloud/hub/math/2012/paper-2/q12/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DSE Hub">
+<meta property="og:locale" content="en_HK">
+<meta property="og:title" content="DSE Maths 2012 Paper 2 Question 12 — 數列規律與遞迴關係 — Answer, Traps &amp; Speed Solution | DSE Hub">
+<meta property="og:description" content="Free worked answer for DSE Maths 2012 Paper 2 Question 12: the correct answer, why each wrong option traps candidates, and a fast solving strategy. Topic: 數列規律與遞迴關係.">
+<meta property="og:url" content="https://hkdse.exampaper.cloud/hub/math/2012/paper-2-en/q12/">
+<meta property="og:image" content="https://hkdse.exampaper.cloud/og/hub/math/2012/paper-2/q12.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="DSE Maths 2012 Paper 2 Question 12 — 數列規律與遞迴關係 — Answer, Traps &amp; Speed Solution | DSE Hub">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="DSE Maths 2012 Paper 2 Question 12 — 數列規律與遞迴關係 — Answer, Traps &amp; Speed Solution | DSE Hub">
+<meta name="twitter:description" content="Free worked answer for DSE Maths 2012 Paper 2 Question 12: the correct answer, why each wrong option traps candidates, and a fast solving strategy. Topic: 數列規律與遞迴關係.">
+<meta name="twitter:image" content="https://hkdse.exampaper.cloud/og/hub/math/2012/paper-2/q12.png">
+<meta name="theme-color" content="#0b1220">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="DSE Hub">
+<meta name="application-name" content="DSE Hub">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/hub/style.css?v=202611260122">
+<link rel="alternate" type="application/rss+xml" title="DSE Hub 最新題目分析" href="https://hkdse.exampaper.cloud/feed.xml">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LTB27V0RGW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-LTB27V0RGW');
+</script>
+<script defer src="/js/track.js?v=202611260122"></script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "DSE Hub",
+          "item": "https://hkdse.exampaper.cloud/hub/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Mathematics (Compulsory Part)",
+          "item": "https://hkdse.exampaper.cloud/hub/math/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "2012",
+          "item": "https://hkdse.exampaper.cloud/hub/math/2012/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "卷二（英文）",
+          "item": "https://hkdse.exampaper.cloud/hub/math/2012/paper-2-en/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Question 12",
+          "item": "https://hkdse.exampaper.cloud/hub/math/2012/paper-2-en/q12/"
+        }
+      ]
+    },
+    {
+      "@type": "QAPage",
+      "mainEntity": {
+        "@type": "Question",
+        "name": "DSE Maths 2012 Paper 2 Question 12",
+        "text": "In the figure, the 1st pattern consists of 1 dot. For any positive integer n , the (n+1)th pattern is formed by adding n dots to the n th pattern. Find the number of dots in the 8th pattern. ![Figure Q12 (as printed)](2012P2_figs/Q12.png) - A. 22 - B. 29 - C. 36 - D. 37",
+        "answerCount": 4,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "B. 29."
+        },
+        "suggestedAnswer": [
+          {
+            "@type": "Answer",
+            "text": "A. 22"
+          },
+          {
+            "@type": "Answer",
+            "text": "B. 29"
+          },
+          {
+            "@type": "Answer",
+            "text": "C. 36"
+          },
+          {
+            "@type": "Answer",
+            "text": "D. 37"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "name": "DSE Maths 2012 Paper 2 Question 12",
+      "url": "https://hkdse.exampaper.cloud/hub/math/2012/paper-2-en/q12/",
+      "inLanguage": "en",
+      "learningResourceType": "Exam question",
+      "educationalLevel": "HKDSE",
+      "isPartOf": {
+        "@id": "https://hkdse.exampaper.cloud/#website"
+      },
+      "about": "數列規律與遞迴關係",
+      "teaches": "數列規律與遞迴關係"
+    }
+  ]
+}
+</script>
+</head>
+<body class="subj-page" data-qpage data-topic="數列規律與遞迴關係" data-year="2012" data-paper="paper-2" data-qno="12" data-lang="en">
+<header class="hero">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <nav class="crumb" aria-label="麵包屑">
+      <a href="/hub/">DSE Hub</a>
+      <span aria-hidden="true">／</span>
+      <a href="/hub/math/">Maths</a>
+      <span aria-hidden="true">／</span>
+      <a href="/hub/math/2012/">2012</a>
+      <span aria-hidden="true">／</span>
+      <a href="/hub/math/2012/paper-2-en/">Paper 2 (English)</a>
+      <span aria-hidden="true">／</span>
+      <span>Question 12</span>
+      </nav>
+    <p class="brand">DSE Hub</p>
+    <h1>DSE Maths 2012 Paper 2 Question 12</h1>
+    <p class="tagline">Correct answer · Option traps · Speed strategy · Detailed analysis in Chinese</p>
+        <nav class="subj-nav" aria-label="科目">
+        <a href="/hub/math/" class="on">數學<span class="n">54 卷</span></a>
+        <a href="/econ/">經濟<span class="n">0 卷</span></a>
+        <a href="/chem/">化學<span class="n">0 卷</span></a>
+        <a href="/bio/">生物<span class="n">0 卷</span></a>
+        <a href="/phys/">物理<span class="n">0 卷</span></a>
+        </nav>
+        
+    <p class="page-cta open-cta"><a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2012P2Q12">Open this question in the bank</a> · <a href="/hub/math/2012/paper-2-en/">Back to 2012 Paper 2</a> · <a href="https://hkdse.exampaper.cloud/hub/math/2012/paper-2/q12/">中文版</a> · <a href="/topics/sequences/">Topic: 數列（42 questions）</a></p>
+  </div>
+</header>
+<main class="subj-main">
+<section class="kw-block" aria-label="Question">
+  <h2>Question</h2>
+  <div class="q-embed"><p>In the figure, the 1st pattern consists of 1 dot. For any positive integer $ n $, the $(n+1)$th pattern is formed by adding $ n $ dots to the $ n $th pattern. Find the number of dots in the 8th pattern.</p>
+<p><img alt="Figure Q12 (as printed)" src="/2012P2_figs/Q12.png" /></p>
+<ul>
+<li>A. 22</li>
+<li>B. 29</li>
+<li>C. 36</li>
+<li>D. 37</li>
+</ul></div>
+</section>
+<nav class="share-row" aria-label="Share this question"><a data-share="whatsapp" href="https://wa.me/?text=DSE%20Maths%202012%20Paper%202%20Question%2012%20%28%E6%95%B8%E5%88%97%E8%A6%8F%E5%BE%8B%E8%88%87%E9%81%9E%E8%BF%B4%E9%97%9C%E4%BF%82%29%20https%3A%2F%2Fhkdse.exampaper.cloud%2Fmath%2F2012%2Fpaper-2-en%2Fq12%2F" rel="noopener" target="_blank">Share on WhatsApp</a><a data-share="telegram" href="https://t.me/share/url?url=https%3A%2F%2Fhkdse.exampaper.cloud%2Fmath%2F2012%2Fpaper-2-en%2Fq12%2F&amp;text=DSE%20Maths%202012%20Paper%202%20Question%2012%20%28%E6%95%B8%E5%88%97%E8%A6%8F%E5%BE%8B%E8%88%87%E9%81%9E%E8%BF%B4%E9%97%9C%E4%BF%82%29" rel="noopener" target="_blank">Share on Telegram</a><button type="button" data-copy-link="https://hkdse.exampaper.cloud/hub/math/2012/paper-2-en/q12/">Copy link</button></nav>
+<section class="kw-block" aria-label="Answer">
+  <h2>Answer</h2>
+  <p class="ai-strategy"><strong>Correct answer: B.</strong> 29</p>
+</section>
+<section class="kw-section" aria-label="Deep analysis">
+  <h2>Deep analysis (Chinese)</h2>
+  <p>The full step-by-step analysis (scaffolding hints, wrong-option traps, speed strategy) is written in Chinese. <a href="https://hkdse.exampaper.cloud/hub/math/2012/paper-2/q12/">中文版深度分析</a></p>
+  <details><summary>展開中文深度分析（Open detailed analysis）</summary>
+<section class="kw-section" aria-label="深度分析">
+  <h2>深度分析</h2>
+<p class="ai-chips"><span class="q-ai">數列規律與遞迴關係</span>　認知層次：分析　建議作答 45 秒</p><p>核心公式／定理：T_n = \frac{n(n+1)}{2}、\sum_{i=1}^{k} i = \frac{k(k+1)}{2}</p><div class="ai-hints"><details class="ai-hint"><summary>提示 1（啟發）</summary><div>Hint 1 啟發：觀察題目描述，第 (n+1) 個圖形是在第 n 個圖形的基礎上「加上 n 個點」，這意味著每個新圖形的點數等於前一個圖形的點數加上新增的 n 個點。</div></details><details class="ai-hint"><summary>提示 2（知識）</summary><div>Hint 2 知識：若令 a_n 代表第 n 個圖形的點數，則根據遞迴關係 a_{n+1} = a_n + n，且已知 a_1 = 1。請嘗試將此關係展開，看看 a_n 是否與自然數的前 (n-1) 項和有關，並寫出通項公式的表達式。</div></details><details class="ai-hint"><summary>提示 3（破題）</summary><div>Hint 3 破題：關鍵轉折點在於確認第 n 個圖形的點數實際上等於前 (n-1) 個自然數的和加上初始值。請計算當 n=8 時，需要累加哪些數字，並小心處理起始項（是加到 7 還是 8）。</div></details></div><h3>誘答項逆向工程</h3><div class="ai-oa"><div class="ai-oa-card"><strong>A</strong><p class="ai-oa-meta"><span class="q-ai">計算粗心</span>　計算錯誤：求和公式應用不當或加總算錯</p><div>學生可能正確識別出第 n 項為三角形數 T_n，但在計算 T_8 = \frac{8 \times 9}{2} = 36 時，卻誤算成 22（例如將 8+9=17 後除以 2 得到 8.5 再四捨五入錯誤，或是混淆了 n=8 與 n=7 的數值 T_7=28 然後減去某個數字導致 22，這通常是粗心計算所致）。</div></div><div class="ai-oa-card"><strong>B　✓ 正確答案</strong><div></div></div><div class="ai-oa-card"><strong>C</strong><p class="ai-oa-meta"><span class="q-ai">概念錯誤</span>　概念混淆：誤以為是平方數序列或加錯起始項</p><div>學生可能將題目中的遞迴規則「加上 n 個點」誤解為直接累加自然數但從錯誤的起點開始，或者將第 8 項誤認為是 1+2+3+...+7+8 的和（即 T_8），卻在過程中多加了 1 或減錯了數字。另一種可能是學生計算出 T_8=36 (選項 C)，但題目問的是第 8 個圖形，若學生誤以為第 1 個圖形有 0 點（不符合題意）或從 n=0 開始計數，會導致答案偏移。但在本題中，C 是 T_8 的值，若選 C 代表學生算對了公式但可能對題目「第幾項」的定義有誤解（例如認為第 1 個圖形對應 n=0），或者單純計算錯誤將 29 看成 36。更精確地說，若學生算出 T_8=36，他應該選 C，但正確答案是 B (29)？等等，讓我重新檢查題目邏輯。</div></div><div class="ai-oa-card"><strong>D</strong><p class="ai-oa-meta"><span class="q-ai">審題不清</span>　審題不清：未注意「第 1 個圖形」的定義或 n 的起始值</p><div>學生可能誤讀題目，認為第 1 個圖形對應 n=1 時有 1 點，而第 2 個圖形是加 1 點變成 2 點（T_2），以此類推。然而，若學生錯誤地將「第 8 個圖形」理解為累加到 n=7（即 T_7=28）再加上某個誤差，或者完全忽略了題目中的圖形序列邏輯，直接猜測或選取最接近的數字。在這種情況下，選 D (37) 可能代表學生計算出 T_8=36 後，又無故加了 1（例如誤以為要包含第 0 項），或是將 n=8 代入錯誤的公式如 \frac{(n+1)(n+2)}{2} - 1 等，導致結果偏大。</div></div></div><p class="ai-strategy"><strong>速解策略：</strong>由 a_1=1, a_{n+1}=a_n+n 推導得 a_n = 1 + \sum_{i=1}^{n-1} i = 1 + \frac{(n-1)n}{2}，代入 n=8 計算即可。</p>
+</section>
+  </details>
+</section>
+<nav class="q-prevnext" aria-label="上一題／下一題"><a href="/hub/math/2012/paper-2-en/q11/" rel="prev">← Q11</a>　<a href="/hub/math/2012/paper-2-en/q13/" rel="next">Q13 →</a></nav>
+</main>
+<footer><a href="/hub/math/2012/paper-2-en/">Back to 2012 Paper 2</a> · <a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2012P2Q12">Open in the bank</a> · <a href="/hub/">DSE Hub 主頁</a> · 相關：<a href="https://dsemaths.canonlessons.com" rel="noopener">免費 DSE 數學視覺教程</a> · 站內只放索引、連結同課題標籤，只顯示資料庫已有內容</footer>
+</body>
+</html>

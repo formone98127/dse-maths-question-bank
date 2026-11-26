@@ -333,8 +333,8 @@ const PAPER_CODE = {
 
 /* Catalog lang can disagree with the real landing folder (e.g. 2012/2013 卷二). */
 const LANDING_BY_HASH = {
-  "#2012P2Q1": "/math/2012/paper-2-en/",
-  "#2013P2Q1": "/math/2013/paper-2-en/",
+  "#2012P2Q1": "/hub/math/2012/paper-2-en/",
+  "#2013P2Q1": "/hub/math/2013/paper-2-en/",
 };
 
 function viewHrefFor(r) {
@@ -348,7 +348,8 @@ function viewHrefFor(r) {
   if (r.id !== "math") return null;
   const code = PAPER_CODE[r.paper] || "paper-1";
   const slug = r.lang === "英文" ? `${code}-en` : code;
-  return `/${r.id}/${r.year}/${slug}/`;
+  /* 數學分支統一喺 /hub/math/ 之下 */
+  return `/hub/math/${r.year}/${slug}/`;
 }
 
 const SUBJECT_EN = { "數學": "Maths", "經濟": "Econ", "化學": "Chem",

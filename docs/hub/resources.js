@@ -599,7 +599,7 @@ window.HUB_RESOURCES = [
     "groups": []
   },
   {
-    "href": "/math/",
+    "href": "/hub/math/",
     "title": "數學必修歷屆試題同課題頁",
     "desc": "按年份或課題查閱已上線嘅數學試題，並進入各課題筆記。",
     "kicker": "題庫",
@@ -609,7 +609,7 @@ window.HUB_RESOURCES = [
     "groups": []
   },
   {
-    "href": "/math/formulas/",
+    "href": "/hub/math/formulas/",
     "title": "數學必修：公式同應試技巧",
     "desc": "用自己嘅措辭整理常考關係，以及卷一、卷二答題習慣。請同時核對官方公式表。",
     "kicker": "公式表",
@@ -619,7 +619,7 @@ window.HUB_RESOURCES = [
     "groups": []
   },
   {
-    "href": "/math/calculator/",
+    "href": "/hub/math/calculator/",
     "title": "Casio 計算機程式",
     "desc": "聯立方程、二次方程、直線與圓相交、數列同解三角形程式，附網上核對器。",
     "kicker": "常用工具",
@@ -668,7 +668,7 @@ window.HUB_RESOURCES = [
     "groups": []
   },
   {
-    "href": "/math/exponents-logarithms/",
+    "href": "/hub/math/exponents-logarithms/",
     "title": "數學課題：指數與對數",
     "desc": "指數定律、對數同相關圖像題。",
     "kicker": "課題筆記",
@@ -686,7 +686,7 @@ window.HUB_RESOURCES = [
     ]
   },
   {
-    "href": "/math/ratio-rate-proportion/",
+    "href": "/hub/math/ratio-rate-proportion/",
     "title": "數學課題：比、率與比例",
     "desc": "比率、比例同相關應用。",
     "kicker": "課題筆記",
@@ -702,7 +702,7 @@ window.HUB_RESOURCES = [
     ]
   },
   {
-    "href": "/math/polynomials-factorization/",
+    "href": "/hub/math/polynomials-factorization/",
     "title": "數學課題：多項式與因式分解",
     "desc": "多項式運算、因式同餘式相關題型。",
     "kicker": "課題筆記",
@@ -720,7 +720,7 @@ window.HUB_RESOURCES = [
     ]
   },
   {
-    "href": "/math/number-systems/",
+    "href": "/hub/math/number-systems/",
     "title": "數學課題：數系",
     "desc": "數系、複數同進位等相關概念。",
     "kicker": "課題筆記",
@@ -736,7 +736,7 @@ window.HUB_RESOURCES = [
     ]
   },
   {
-    "href": "/math/equations-inequalities/",
+    "href": "/hub/math/equations-inequalities/",
     "title": "數學課題：方程與不等式",
     "desc": "一次、二次方程同不等式。",
     "kicker": "課題筆記",
@@ -758,7 +758,7 @@ window.HUB_RESOURCES = [
     ]
   },
   {
-    "href": "/math/percentages-interest/",
+    "href": "/hub/math/percentages-interest/",
     "title": "數學課題：百分法與利息",
     "desc": "百分數、利息同增長。",
     "kicker": "課題筆記",
@@ -777,7 +777,7 @@ window.HUB_RESOURCES = [
     ]
   },
   {
-    "href": "/math/functions-graphs/",
+    "href": "/hub/math/functions-graphs/",
     "title": "數學課題：函數與圖像",
     "desc": "函數、二次函數同圖像。",
     "kicker": "課題筆記",
@@ -794,7 +794,7 @@ window.HUB_RESOURCES = [
     ]
   },
   {
-    "href": "/math/sequences/",
+    "href": "/hub/math/sequences/",
     "title": "數學課題：數列",
     "desc": "等差、等比同一般數列。",
     "kicker": "課題筆記",
@@ -810,7 +810,7 @@ window.HUB_RESOURCES = [
     ]
   },
   {
-    "href": "/math/variations/",
+    "href": "/hub/math/variations/",
     "title": "數學課題：變分",
     "desc": "正變、反變同聯變。",
     "kicker": "課題筆記",
@@ -825,7 +825,7 @@ window.HUB_RESOURCES = [
     ]
   },
   {
-    "href": "/math/trigonometry/",
+    "href": "/hub/math/trigonometry/",
     "title": "數學課題：三角學與解三角形",
     "desc": "三角比、恆等式同解三角形。",
     "kicker": "課題筆記",
@@ -845,7 +845,7 @@ window.HUB_RESOURCES = [
     ]
   },
   {
-    "href": "/math/coordinate-geometry-line/",
+    "href": "/hub/math/coordinate-geometry-line/",
     "title": "數學課題：坐標幾何：直線",
     "desc": "直線方程、斜率同相交。",
     "kicker": "課題筆記",
@@ -862,7 +862,7 @@ window.HUB_RESOURCES = [
     ]
   },
   {
-    "href": "/math/coordinate-geometry-circle/",
+    "href": "/hub/math/coordinate-geometry-circle/",
     "title": "數學課題：坐標幾何：圓",
     "desc": "圓的方程、直線與圓相交。",
     "kicker": "課題筆記",
@@ -879,7 +879,7 @@ window.HUB_RESOURCES = [
     ]
   },
   {
-    "href": "/math/circle-geometry/",
+    "href": "/hub/math/circle-geometry/",
     "title": "數學課題：圓形幾何",
     "desc": "圓的性質同幾何推理。",
     "kicker": "課題筆記",
@@ -895,7 +895,7 @@ window.HUB_RESOURCES = [
     ]
   },
   {
-    "href": "/math/geometric-transformations/",
+    "href": "/hub/math/geometric-transformations/",
     "title": "數學課題：幾何變換",
     "desc": "變換與對稱。",
     "kicker": "課題筆記",
@@ -910,7 +910,7 @@ window.HUB_RESOURCES = [
     ]
   },
   {
-    "href": "/math/mensuration/",
+    "href": "/hub/math/mensuration/",
     "title": "數學課題：求積法",
     "desc": "平面同立體求積。",
     "kicker": "課題筆記",
@@ -928,7 +928,7 @@ window.HUB_RESOURCES = [
     ]
   },
   {
-    "href": "/math/plane-geometry-similar-triangles/",
+    "href": "/hub/math/plane-geometry-similar-triangles/",
     "title": "數學課題：平面幾何與相似三角形",
     "desc": "相似、全等同平面推理。",
     "kicker": "課題筆記",
@@ -943,7 +943,7 @@ window.HUB_RESOURCES = [
     ]
   },
   {
-    "href": "/math/statistical-graphs/",
+    "href": "/hub/math/statistical-graphs/",
     "title": "數學課題：統計圖表",
     "desc": "常用統計圖同讀圖。",
     "kicker": "課題筆記",
@@ -961,7 +961,7 @@ window.HUB_RESOURCES = [
     ]
   },
   {
-    "href": "/math/central-tendency-dispersion/",
+    "href": "/hub/math/central-tendency-dispersion/",
     "title": "數學課題：集中趨勢與離差",
     "desc": "平均數、中位數、標準差等。",
     "kicker": "課題筆記",
@@ -983,7 +983,7 @@ window.HUB_RESOURCES = [
     ]
   },
   {
-    "href": "/math/probability/",
+    "href": "/hub/math/probability/",
     "title": "數學課題：概率",
     "desc": "基本概率同應用。",
     "kicker": "課題筆記",
@@ -997,7 +997,7 @@ window.HUB_RESOURCES = [
     ]
   },
   {
-    "href": "/math/permutations-combinations/",
+    "href": "/hub/math/permutations-combinations/",
     "title": "數學課題：排列與組合",
     "desc": "計數原理。",
     "kicker": "課題筆記",
@@ -1011,7 +1011,7 @@ window.HUB_RESOURCES = [
     ]
   },
   {
-    "href": "/math/number-and-algebra/",
+    "href": "/hub/math/number-and-algebra/",
     "title": "數學課題：數與代數範疇",
     "desc": "代數範疇總覽，連去各課題頁。",
     "kicker": "課題筆記",
@@ -1023,7 +1023,7 @@ window.HUB_RESOURCES = [
     ]
   },
   {
-    "href": "/math/measures-shape-space/",
+    "href": "/hub/math/measures-shape-space/",
     "title": "數學課題：度量、圖形與空間範疇",
     "desc": "圖形與空間範疇總覽。",
     "kicker": "課題筆記",
@@ -1035,7 +1035,7 @@ window.HUB_RESOURCES = [
     ]
   },
   {
-    "href": "/math/data-handling/",
+    "href": "/hub/math/data-handling/",
     "title": "數學課題：數據處理範疇",
     "desc": "數據處理範疇總覽。",
     "kicker": "課題筆記",

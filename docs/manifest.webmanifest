@@ -1,8 +1,8 @@
 {
   "id": "./hub/",
-  "name": "DSE Hub · 香港中學文憑歷屆試題資料庫",
-  "short_name": "DSE Hub",
-  "description": "DSE 數學、經濟、化學、生物、物理歷屆試題，按課題集中溫習。",
+  "name": "DSE 數學題庫 · 香港中學文憑數學歷屆試題",
+  "short_name": "DSE 數學題庫",
+  "description": "DSE 數學歷屆試題題庫：必修 Core 卷一卷二＋延伸 M1／M2，按年份或課題集中溫習。",
   "lang": "zh-Hant-HK",
   "dir": "ltr",
   "start_url": "./hub/",

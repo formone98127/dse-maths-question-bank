@@ -277,8 +277,8 @@ SUBJECT_TO_SID = {v: k for k, v in SID_TO_SUBJECT.items()}
 SITEMAP_URLS = []
 # 手維護、唔經呢個 build 產生嘅 landing 頁：手動列入 sitemap（檔案存在先會加）
 EXTRA_SITEMAP_PATHS = [
-    "/math/2020/paper-1/",      # 2020 中文卷一（手製頁，data.js 仲未有卷一題目）
-    "/math/2024/paper-2-zh/",   # 舊中文卷路徑（同 paper-2 內容重複，保留過渡）
+    "/hub/math/2020/paper-1/",      # 2020 中文卷一（手製頁，data.js 仲未有卷一題目）
+    "/hub/math/2024/paper-2-zh/",   # 舊中文卷路徑（同 paper-2 內容重複，保留過渡）
 ]
 
 PAPER_CODE = {
@@ -1050,7 +1050,10 @@ Options -Indexes
   RewriteCond %{HTTP_HOST} ^www\\.hkdse\\.exampaper\\.cloud$ [NC]
   RewriteRule ^ https://hkdse.exampaper.cloud%{REQUEST_URI} [L,R=301]
   # 舊 /questions/math/... 問題頁已併入新深度分析頁 /math/...（同 stub 嘅 canonical/meta-refresh 一致）
-  RewriteRule ^questions/math/([0-9]{4})/(paper-[0-9][a-z]?(-en)?)/q([0-9]+)/?$ https://hkdse.exampaper.cloud/math/$1/$2/q$4/ [R=301,L,NE]
+  RewriteRule ^questions/math/([0-9]{4})/(paper-[0-9][a-z]?(-en)?)/q([0-9]+)/?$ https://hkdse.exampaper.cloud/hub/math/$1/$2/q$4/ [R=301,L,NE]
+  # 數學分支搬到 /hub/math/ 之下（2026-11-26）；/math/、/math/core|m1|m2 係真頁，唔可以 301 走
+  RewriteCond %{REQUEST_URI} !^/math/(core|m1|m2)(/|$)
+  RewriteRule ^math/(.+)$ /hub/math/$1 [R=301,L,NE]
 </IfModule>
 
 <IfModule mod_headers.c>
@@ -1177,7 +1180,7 @@ def upgrade_legacy_topic_pages():
     for f in sorted(tdir.glob("*/index.html")):
         h = f.read_text(encoding="utf-8")
         orig = h
-        h, k = re.subn(r"/questions/math/([0-9]{4})/([a-z0-9-]+)/q([0-9]+)/", r"/math/\1/\2/q\3/", h)
+        h, k = re.subn(r"/questions/math/([0-9]{4})/([a-z0-9-]+)/q([0-9]+)/", r"/hub/math/\1/\2/q\3/", h)
         n_links += k
         if 'property="og:image"' not in h:
             og = (
@@ -1844,8 +1847,8 @@ def patch_app():
 };
 
 const LANDING_BY_HASH = {
-  "#2012P2Q1": "/math/2012/paper-2-en/",
-  "#2013P2Q1": "/math/2013/paper-2-en/",
+  "#2012P2Q1": "/hub/math/2012/paper-2-en/",
+  "#2013P2Q1": "/hub/math/2013/paper-2-en/",
 };
 
 function viewHrefFor(r) {
@@ -2176,7 +2179,7 @@ def make_feed():
 
 
 def topic_path(sid, slug):
-    return f"/{sid}/{slug}/"
+    return f"/{sid_base(sid)}/{slug}/"
 
 
 def topic_url_for_name(sid, name):
@@ -2423,12 +2426,18 @@ def paper_slug(code, lang):
     return f"{code}-en" if lang == "英文" else code
 
 
+def sid_base(sid):
+    """數學分支 2026-11-26 起搬到 /hub/math/ 之下；/math/ 根、/math/core|m1|m2 仍係真頁。
+    .htaccess 負責把其餘 /math/* 301 過去，所以生成器一律直接寫 /hub/math/。"""
+    return "hub/math" if sid == "math" else sid
+
+
 def paper_landing_path(sid, year, code, lang):
-    return f"/{sid}/{year}/{paper_slug(code, lang)}/"
+    return f"/{sid_base(sid)}/{year}/{paper_slug(code, lang)}/"
 
 
 def year_path(sid, year):
-    return f"/{sid}/{year}/"
+    return f"/{sid_base(sid)}/{year}/"
 
 
 def collect_papers(catalog, questions):
@@ -2733,12 +2742,12 @@ def make_strand_pages(catalog, questions, topics):
                 "",
             ]
         )
-        dest = ROOT / st["subject_id"] / st["slug"]
+        dest = ROOT / sid_base(st["subject_id"]) / st["slug"]
         dest.mkdir(parents=True, exist_ok=True)
         (dest / "index.html").write_text(page, encoding="utf-8")
         print(
             "strand",
-            f"/{st['subject_id']}/{st['slug']}/",
+            f"/{sid_base(st['subject_id'])}/{st['slug']}/",
             "matched",
             len(matched_qs),
             "of",
@@ -3694,6 +3703,7 @@ def make_question_redirect_stubs():
     for p in sorted(qdir.glob("*/*/q*/index.html")):
         rel = p.relative_to(ROOT).as_posix().replace("\\", "/")
         target_rel = rel[len("questions/") : -len("index.html")]
+        target_rel = "hub/" + target_rel  # 2026-11-26 數學頁搬到 /hub/math/
         if not (ROOT / target_rel / "index.html").is_file():
             # 新深度分析頁未出（無 analysis JSON）— 舊頁保留原樣，唔好 301 去 404
             skipped += 1
@@ -3720,7 +3730,7 @@ def make_redirects():
     """Cloudflare Pages 用嘅 _redirects（Hostinger 301 由 make_htaccess 出）。"""
     (ROOT / "_redirects").write_text(
         "# 舊 /questions/math/ 問題頁併入新深度分析頁（Pages 301）\n"
-        "/questions/math/:year/:paper/q:qno/  /math/:year/:paper/q:qno/  301\n",
+        "/questions/math/:year/:paper/q:qno/  /hub/math/:year/:paper/q:qno/  301\n",
         encoding="utf-8",
     )
 

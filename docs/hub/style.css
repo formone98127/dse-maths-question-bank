@@ -856,19 +856,23 @@ footer {
   border-color: rgba(61, 139, 253, 0.55);
   background: var(--acc-soft);
 }
-
-/* 數學三掣（2026-11-27）：獨立一行，唔好同「按年份／按課題」擠埋 */
+/* ===== 數學三掣（2026-11-27 Kin）：必修 Core／M1／M2 ===== */
+.seg a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
 .unitseg {
   min-width: 0;
   margin: 8px 0 2px;
   gap: 2px;
 }
-.unitseg a,
-.unitseg button {
+.unitseg a {
   white-space: nowrap;
   padding: 7px 16px;
   font-size: 13.5px;
-  text-decoration: none;
+  border-radius: 7.5px;
+  color: var(--ink-2);
 }
 .unitseg a.on {
   background: var(--seg-on);

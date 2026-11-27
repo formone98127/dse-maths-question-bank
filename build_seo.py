@@ -699,8 +699,8 @@ for _tp in TOPIC_PAGES:
 TOPIC_SLUG_BY_NAME[("math", "多項式（續）")] = "polynomials-factorization"
 TOPIC_SLUG_BY_NAME[("math", "百分法")] = "percentages-interest"
 
-HUB_TITLE = "免費 DSE 數學歷屆試題 Past Paper｜按年份、課題溫習｜DSE Hub"
-HUB_DESC = "免費查閱香港中學文憑試（DSE）數學（必修部分）歷屆試題，按年份或課題溫習，支援中英文卷、即時核對選擇題答案。唔使報名，即時喺 DSE Hub 開卷。"
+HUB_TITLE = "DSE 歷屆試題資料庫｜逐題題庫＋PDF 免費下載｜DSE Hub"
+HUB_DESC = "香港中學文憑（DSE）歷屆試題資料庫：數學必修＋M1／M2 逐題電子題庫（答案、題解、答對率），經濟、化學、生物、物理、英語等科目 PDF 免費下載，按年份或課題搜尋。"
 HUB_H1 = "香港中學文憑（DSE）歷屆試題資料庫"
 
 
@@ -1781,6 +1781,29 @@ footer {
   border-color: rgba(61, 139, 253, 0.55);
   background: var(--acc-soft);
 }
+/* ===== 數學三掣（2026-11-27 Kin）：必修 Core／M1／M2 ===== */
+.seg a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+.unitseg {
+  min-width: 0;
+  margin: 8px 0 2px;
+  gap: 2px;
+}
+.unitseg a {
+  white-space: nowrap;
+  padding: 7px 16px;
+  font-size: 13.5px;
+  border-radius: 7.5px;
+  color: var(--ink-2);
+}
+.unitseg a.on {
+  background: var(--seg-on);
+  color: var(--ink);
+  font-weight: 600;
+}
 """
     if marker in text:
         text = text.split(marker)[0].rstrip() + "\n" + extra
@@ -2616,7 +2639,7 @@ def make_strand_pages(catalog, questions, topics):
                     continue
                 seen.add(key)
                 union.append(q)
-        url = f"{SITE}/{st['subject_id']}/{st['slug']}/"
+        url = f"{SITE}/{sid_base(st['subject_id'])}/{st['slug']}/"
         subj_url = f"{SITE}/{st['subject_id']}/"
         add_sitemap(url, "0.8", "weekly")
         unmatched = len(keywords) - len(matched_qs)
@@ -2945,7 +2968,7 @@ def make_year_pages(catalog, papers, questions):
                 + "\n</section>"
             )
         strand_links = [
-            (f"/{st['subject_id']}/{st['slug']}/", st["name"], st["slug"])
+            (f"/{sid_base(st['subject_id'])}/{st['slug']}/", st["name"], st["slug"])
             for st in STRANDS
             if st["subject_id"] == sid
         ]
@@ -3582,7 +3605,7 @@ def make_topic_pages(catalog, questions, papers):
                 "\n        "
                 + nav_pills(
                     [
-                        (f"/{st['subject_id']}/{st['slug']}/", st["name"], st["slug"])
+                        (f"/{sid_base(st['subject_id'])}/{st['slug']}/", st["name"], st["slug"])
                         for st in STRANDS
                         if st["subject_id"] == sid
                     ],
@@ -3801,8 +3824,8 @@ def sanity_check():
         raise SystemExit(f"GSC file changed: {gsc_text!r}")
     # spot checks
     samples = {
-        ROOT / "math/2023/index.html": ["免費 DSE 數學 2023", "G-LTB27V0RGW"],
-        ROOT / "math/exponents-logarithms/index.html": ["指數與對數", "G-LTB27V0RGW"],
+        ROOT / "hub/math/2023/index.html": ["免費 DSE 數學 2023", "G-LTB27V0RGW"],
+        ROOT / "hub/math/exponents-logarithms/index.html": ["指數與對數", "G-LTB27V0RGW"],
         ROOT / "sitemap.xml": ["https://hkdse.exampaper.cloud/hub/"],
         ROOT / "hub/index.html": [
             "G-LTB27V0RGW",
@@ -3925,8 +3948,108 @@ def main():
     patch_app()
     patch_root_index()
     patch_sw()
+    brand_math_pages()
+    inject_unit_seg()
     sanity_check()
     print("SEO build complete", "years", n_year, "papers", n_paper, "questions", n_question, "topics", n_topic)
+
+
+# =============================================================================
+# 數學區品牌 ＋ 必修 Core／M1／M2 三掣（2026-11-27 Kin：Hub 跨科，數學區叫「DSE 數學題庫」）
+# 生成器最後一步做，確保每次重建都保留品牌同三掣，唔會一 rebuild 就打回原形。
+# =============================================================================
+MATH_BRAND_DIRS = ["math", "hub/math", "topics", "questions/math", "m1", "m2"]
+MATH_BRAND_OLD = "DSE Hub"
+MATH_BRAND_NEW = "DSE 數學題庫"
+UNIT_LINKS = (("/hub/math/", "必修 Core"), ("/m1/", "M1"), ("/m2/", "M2"))
+
+
+def brand_math_pages():
+    """數學相關頁面 branding：DSE Hub → DSE 數學題庫；logo chip hub → 數學題庫。"""
+    n = 0
+    for d in MATH_BRAND_DIRS:
+        base = ROOT / d
+        if not base.is_dir():
+            continue
+        for f in base.rglob("*.html"):
+            text = f.read_text(encoding="utf-8")
+            new_text = text.replace(MATH_BRAND_OLD, MATH_BRAND_NEW).replace(
+                '<span class="brand">hub</span>', '<span class="brand">數學題庫</span>'
+            )
+            if new_text != text:
+                f.write_text(new_text, encoding="utf-8")
+                n += 1
+    print("math brand pages", n)
+
+
+def _unit_seg_html(active="core", hidden=False, indent="    "):
+    parts = []
+    for href, label in UNIT_LINKS:
+        on = ' class="on"' if href.endswith({"core": "/hub/math/", "m1": "/m1/", "m2": "/m2/"}[active]) else ""
+        parts.append(f'<a href="{href}"{on}>{label}</a>')
+    hide = " hidden" if hidden else ""
+    return (
+        f'{indent}<div class="seg unitseg" id="unitSeg" role="group" aria-label="數學單元"{hide}>\n'
+        f'{indent}  {"".join(parts)}\n'
+        f'{indent}</div>'
+    )
+
+
+def _unit_nav_static(active, indent=""):
+    cells = []
+    for href, label in UNIT_LINKS:
+        key = {"core": "/hub/math/", "m1": "/m1/", "m2": "/m2/"}[active]
+        on = href == key
+        cells.append(
+            f'<a href="{href}" style="flex:0 0 auto;white-space:nowrap;text-align:center;padding:9px 18px;'
+            f'border-radius:8px;text-decoration:none;font-size:14px;font-weight:{600 if on else 500};'
+            f'background:{"#1f6feb" if on else "#1b2333"};color:{"#fff" if on else "#9fb0c8"};">{label}</a>'
+        )
+    return (
+        f'<nav aria-label="數學單元" style="max-width:960px;margin:0 auto 18px;padding:0 16px;">'
+        f'<div style="display:flex;gap:8px;justify-content:center;">{"".join(cells)}</div></nav>\n'
+    )
+
+
+MODE_SEG_BLOCK = (
+    '    <div class="seg" id="modeSeg" role="tablist" aria-label="瀏覽方式">\n'
+    '      <button type="button" data-mode="year" class="on" role="tab" aria-selected="true">按年份</button>\n'
+    '      <button type="button" data-mode="topic" role="tab" aria-selected="false">按課題</button>\n'
+    '    </div>'
+)
+
+
+def inject_unit_seg():
+    """hub 兩頁用 JS 版（揀數學才出現）；math／m1／m2 入口頁用靜態版。"""
+    n = 0
+    for rel, hidden in (("hub/index.html", True), ("hub/math/index.html", False)):
+        f = ROOT / rel
+        if not f.is_file():
+            continue
+        text = f.read_text(encoding="utf-8")
+        if 'id="unitSeg"' in text:
+            continue
+        if MODE_SEG_BLOCK not in text:
+            print("unitseg skipped (modeSeg not found):", rel)
+            continue
+        text = text.replace(MODE_SEG_BLOCK, MODE_SEG_BLOCK + "\n" + _unit_seg_html("core", hidden=hidden))
+        f.write_text(text, encoding="utf-8")
+        n += 1
+    for rel, active in (("math/index.html", "core"), ("m1/index.html", "m1"), ("m2/index.html", "m2")):
+        f = ROOT / rel
+        if not f.is_file():
+            continue
+        text = f.read_text(encoding="utf-8")
+        if 'aria-label="數學單元"' in text:
+            continue
+        i = text.find("<main")
+        if i < 0:
+            print("unitseg skipped (no <main>):", rel)
+            continue
+        text = text[:i] + _unit_nav_static(active) + text[i:]
+        f.write_text(text, encoding="utf-8")
+        n += 1
+    print("unit seg pages", n)
 
 
 if __name__ == "__main__":

@@ -6,9 +6,11 @@ const ALL = "__ALL__";  // 所有
 
 const ICON_SEARCH = `<svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.8-3.8"/></svg>`;
 
+const PRESET_SUBJECT = (document.body && document.body.dataset.presetSubject) ? document.body.dataset.presetSubject.trim() : "";
+
 const state = {
   mode: "year",
-  subject: "math", // 卷組：math=Core／m1／m2（trackSeg 揀，預設 Core）
+  subject: PRESET_SUBJECT || ALL, // /hub/math/ 會預設「數學」
   year: ALL,
   paper: ALL,
   topic: PLACE,
@@ -17,11 +19,11 @@ const state = {
 const $ = (id) => document.getElementById(id);
 const resultEl = $("result");
 const modeSeg = $("modeSeg");
-const trackSeg = $("trackSeg");
 const fPaper = $("fPaper");
 const l2 = $("l2");
 
 const btns = {
+  subject: $("bSubj"),
   year: $("bYear"),
   paper: $("bPaper"),
 };
@@ -31,12 +33,9 @@ const LABEL = { subject: "科目", year: "年份", paper: "卷別", topic: "課�
 const PAPER_KIND = { paper: "試卷", ms: "評卷參考", report: "考評報告", mock: "模擬卷" };
 
 function pdfSubjects() {
-  /* 純數學站：就算將來翻開 PAPERS 目錄，都只准 Core／M1／M2 */
-  return Object.entries((window.PAPERS || {}).subjects || {})
-    .filter(([id]) => id === "math" || id === "m1" || id === "m2")
-    .map(([id, v]) => ({
-      id, name: v.name, items: v.items || [],
-    }));
+  return Object.entries((window.PAPERS || {}).subjects || {}).map(([id, v]) => ({
+    id, name: v.name, items: v.items || [],
+  }));
 }
 
 /* 該科該年已在電子題庫（data.js）的卷別，例如 {"Paper 1","Paper 2"} */
@@ -58,7 +57,7 @@ function bankPapers(sid, year) {
 }
 
 function subjectName(id) {
-  const hit = CATALOG.find((r) => r.id === id);
+  const hit = subjectsInDb().find((s) => s.id === id);
   return hit ? hit.name : id;
 }
 
@@ -129,6 +128,14 @@ function filteredCatalog() {
     matchDim(state.year, r.year) &&
     matchDim(state.paper, r.paper)
   );
+}
+
+function subjectsInDb() {
+  const map = new Map();
+  CATALOG.forEach((r) => map.set(r.id, r.name));
+  /* 未入電子題庫、但有官方 PDF 的科目（CASE 1） */
+  pdfSubjects().forEach((s) => { if (!map.has(s.id)) map.set(s.id, s.name); });
+  return [...map.entries()].map(([id, name]) => ({ id, name }));
 }
 
 const SID_SUBJECT = {
@@ -228,7 +235,7 @@ function questionsForTopic(sid, topic) {
 
 function optionsFor(key) {
   const rows = CATALOG.filter((r) => {
-    if (state.subject && r.id !== state.subject) return false;
+    if (key !== "subject" && state.subject !== PLACE && state.subject !== ALL && r.id !== state.subject) return false;
     if (key !== "year" && state.year !== PLACE && state.year !== ALL && String(r.year) !== String(state.year)) return false;
     if (key !== "paper" && state.paper !== PLACE && state.paper !== ALL && r.paper !== state.paper) return false;
     return true;
@@ -239,6 +246,9 @@ function optionsFor(key) {
     { value: ALL, label: "所有" },
   ];
 
+  if (key === "subject") {
+    return head.concat(subjectsInDb().map((s) => ({ value: s.id, label: s.name })));
+  }
   if (key === "year") {
     /* 年份清單：catalog + 該科 PDF 目錄（非數學科只有 PDF，靠 catalog 會冇年份可揀） */
     const yrs = new Set(rows.map((r) => r.year));
@@ -289,6 +299,10 @@ function optionsFor(key) {
 function displayLabel(key, value) {
   if (value === PLACE || value == null) return "請選擇";
   if (value === ALL) return "所有";
+  if (key === "subject") {
+    const s = subjectsInDb().find((x) => x.id === value);
+    return s ? s.name : value;
+  }
   if (key === "topic" && state.subject !== PLACE && state.subject !== ALL) {
     const hit = realTagsFor(state.subject).find((x) => x.tag === value);
     return hit ? `${hit.tag}（${hit.n}）` : String(value);
@@ -297,9 +311,10 @@ function displayLabel(key, value) {
 }
 
 function syncButtons() {
+  btns.subject.textContent = displayLabel("subject", state.subject);
   btns.year.textContent = displayLabel(state.mode === "topic" ? "topic" : "year", state.mode === "topic" ? state.topic : state.year);
   btns.paper.textContent = displayLabel("paper", state.paper);
-  ["year", "paper"].forEach((k) => {
+  ["subject", "year", "paper"].forEach((k) => {
     const b = btns[k];
     const v = k === "year" && state.mode === "topic" ? state.topic : state[k];
     b.classList.toggle("placeholder", v === PLACE || v == null);
@@ -320,8 +335,8 @@ const PAPER_CODE = {
 
 /* Catalog lang can disagree with the real landing folder (e.g. 2012/2013 卷二). */
 const LANDING_BY_HASH = {
-  "#2012P2Q1": "/math/2012/paper-2-en/",
-  "#2013P2Q1": "/math/2013/paper-2-en/",
+  "#2012P2Q1": "/hub/math/2012/paper-2-en/",
+  "#2013P2Q1": "/hub/math/2013/paper-2-en/",
 };
 
 function viewHrefFor(r) {
@@ -330,12 +345,9 @@ function viewHrefFor(r) {
   if (String(r.id).toLowerCase() === "m1" || String(r.id).toLowerCase() === "m2") {
     return "/" + (r.hash || "");
   }
-  if (LANDING_BY_HASH[r.hash]) return LANDING_BY_HASH[r.hash];
-  /* 其他未有落地板嘅科目唔好出死鏈 */
-  if (r.id !== "math") return null;
-  const code = PAPER_CODE[r.paper] || "paper-1";
-  const slug = r.lang === "英文" ? `${code}-en` : code;
-  return `/${r.id}/${r.year}/${slug}/`;
+  /* Kin 定案：卡片一律直接入題目（唔經中間卷頁），數學同 M1／M2 一致 */
+  if (r.id === "math") return "/" + (r.hash || "");
+  return null;
 }
 
 const SUBJECT_EN = { "數學": "Maths", "經濟": "Econ", "化學": "Chem",
@@ -494,13 +506,15 @@ function relatedResourcesHtml(sid, topic) {
 }
 
 function renderYear() {
+  fPaper.style.display = "";
   l2.textContent = "年份";
   btns.year.dataset.key = "year";
 
   const bankRows = sortRows(filteredCatalog());
   /* CASE 1：補上未入題庫但有官方 PDF 的卷（連評卷參考／考評報告下載） */
   const pdfRows = [];
-  const wantSubj = [state.subject];
+  const wantSubj = (state.subject !== PLACE && state.subject !== ALL)
+    ? [state.subject] : pdfSubjects().map((s) => s.id);
   for (const sid of wantSubj) {
     const nm = subjectName(sid);
     const subjItems = (((window.PAPERS || {}).subjects || {})[sid] || {}).items || [];
@@ -523,18 +537,23 @@ function renderYear() {
     return;
   }
   const nBank = rows.filter((r) => !r.pdf).length;
-  const count = `<p class="list-count">共 ${rows.length} 項（電子題庫 ${nBank} 卷 · PDF 下載 ${rows.length - nBank} 份）</p>`;
+  /* 卷數以「年度＋卷」計（中英文版本算同一張卷）——CATALOG 每行 = 一個語言版本，
+     直接數行數會把同一張卷重複計（例：必修 57 個版本其實只有 30 張卷）。 */
+  const nVol = new Set(rows.filter((r) => !r.pdf).map((r) => `${r.year}|${r.paper}`)).size;
+  const volTxt = nVol === nBank ? `${nVol} 卷` : `${nVol} 卷（${nBank} 個語言版本）`;
+  const count = `<p class="list-count">共 ${rows.length} 項（電子題庫 ${volTxt} · PDF 下載 ${rows.length - nBank} 份）</p>`;
   resultEl.innerHTML = count + rows.map((r) => (r.pdf ? pdfRowHtml(r) : rowHtml(r))).join("");
 }
 
 function renderTopic() {
+  fPaper.style.display = "none";
   l2.textContent = "課題";
   btns.year.dataset.key = "topic";
 
-  const sid = state.subject;
+  const sid = state.subject === PLACE || state.subject === ALL ? null : state.subject;
 
-  if (sid !== "math") {
-    resultEl.innerHTML = emptyHtml("按課題暫只支援必修（Core）。M1／M2 請用「按年份」揀卷。");
+  if (!sid) {
+    resultEl.innerHTML = emptyHtml("按課題：請先選擇一個資料庫已有的科目。");
     return;
   }
   if (!bankQuestions(sid).length) {
@@ -564,16 +583,9 @@ function render() {
     b.classList.toggle("on", on);
     b.setAttribute("aria-selected", String(on));
   });
-  trackSeg.querySelectorAll("button").forEach((b) => {
-    const on = b.dataset.track === state.subject;
-    b.classList.toggle("on", on);
-    b.setAttribute("aria-selected", String(on));
-  });
-  /* 卷別欄：Core 一年有卷一／卷二；M1／M2 一年一卷，唔使揀 */
-  fPaper.style.display = state.subject === "math" ? "" : "none";
   syncButtons();
   topicSearchWrap.hidden = state.mode !== "topic";
-  tsOptions = optionsFor("topic").slice(2);
+  tsOptions = subjectSelected() ? optionsFor("topic").slice(2) : allSubjectTagOptions();
   topicSearch.value = "";
   closeTopicList();
   state.mode === "year" ? renderYear() : renderTopic();
@@ -623,6 +635,34 @@ function openReel(key, invoker) {
 /* ---------- 常駐課題搜尋 bar（只喺「按課題」模式顯示） ---------- */
 let tsOptions = [];
 
+function subjectSelected() {
+  return state.subject !== PLACE && state.subject !== ALL ? state.subject : null;
+}
+
+// 未揀科目時：跨科彙總題庫所有課題（同名合併題數）
+function allSubjectTagOptions() {
+  const acc = new Map();
+  subjectsInDb().forEach((s) => {
+    realTagsFor(s.id).forEach(({ tag, n }) => {
+      const cur = acc.get(tag);
+      if (cur) {
+        cur.n += n;
+        if (!cur.sids.includes(s.id)) cur.sids.push(s.id);
+      } else {
+        acc.set(tag, { value: tag, n, sids: [s.id] });
+      }
+    });
+  });
+  return [...acc.values()]
+    .sort((a, b) => b.n - a.n || a.value.localeCompare(b.value, "zh-Hant"))
+    .map((o) => ({
+      value: o.value,
+      label: `${o.value}（${o.n}）`,
+      group: o.sids.length > 1 ? `${o.sids.length} 科` : "",
+      sid: o.sids[0],
+    }));
+}
+
 function closeTopicList() {
   topicSearchList.hidden = true;
   topicSearchList.innerHTML = "";
@@ -639,7 +679,8 @@ function renderTopicList(q) {
   }
   topicSearchList.innerHTML = hits.slice(0, 30).map((o) => {
     const g = o.group && o.group !== "其他" ? `<span class="ts-n">${o.group}</span>` : "";
-    return `<div class="ts-item" data-v="${o.value}"><span>${o.label}</span>${g}</div>`;
+    const s = o.sid && !subjectSelected() ? ` data-s="${o.sid}"` : "";
+    return `<div class="ts-item" data-v="${o.value}"${s}><span>${o.label}</span>${g}</div>`;
   }).join("");
   topicSearchList.hidden = false;
 }
@@ -658,6 +699,7 @@ topicSearch.addEventListener("keydown", (e) => {
 topicSearchList.addEventListener("click", (e) => {
   const item = e.target.closest(".ts-item");
   if (!item) return;
+  if (item.dataset.s && !subjectSelected()) state.subject = item.dataset.s;
   state.topic = item.dataset.v;
   closeTopicList();
   render();
@@ -699,7 +741,23 @@ function commitReel() {
     state.topic = v;
   } else {
     state[reelKey] = v;
-    if (reelKey === "year") {
+    if (reelKey === "subject") {
+      state.year = ALL;
+      state.paper = ALL;
+      state.topic = PLACE;
+      /* /hub/math/ 分支揀「所有」→ 返全科 hub */
+      if (PRESET_SUBJECT && v === ALL) {
+        closeReel();
+        location.href = "/hub/";
+        return;
+      }
+      /* Kin 定案（2026-11-26）：喺 Hub 篩選揀「數學（必修部分）」→ 進入數學分支 /hub/math/ */
+      if (v === "math") {
+        closeReel();
+        location.href = "/hub/math/";
+        return;
+      }
+    } else if (reelKey === "year") {
       state.paper = ALL;
     }
   }
@@ -750,24 +808,11 @@ modeSeg.addEventListener("click", (e) => {
   render();
 });
 
-/* Core／M1／M2 卷組切換：切換時清 year/paper/topic cascade */
-trackSeg.addEventListener("click", (e) => {
-  const b = e.target.closest("button[data-track]");
-  if (!b || b.dataset.track === state.subject) return;
-  state.subject = b.dataset.track;
-  state.year = ALL;
-  state.paper = ALL;
-  state.topic = PLACE;
-  render();
-});
-
 
 (function applyQuery() {
   const p = new URLSearchParams(location.search);
-  /* 卷組：?track=core|m1|m2（新）；?subject= 舊連結兼容 — econ/chem 等靜默 fallback Core */
-  const TRACKS = { core: "math", math: "math", m1: "m1", m2: "m2" };
-  const t = (p.get("track") || p.get("subject") || "").toLowerCase();
-  if (TRACKS[t]) state.subject = TRACKS[t];
+  const sid = p.get("subject");
+  if (sid && SID_SUBJECT[sid]) state.subject = sid;
   const mode = p.get("mode");
   if (mode === "topic" || mode === "year") state.mode = mode;
   const year = p.get("year");

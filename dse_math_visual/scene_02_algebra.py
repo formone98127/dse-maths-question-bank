@@ -172,7 +172,7 @@ class AlgebraArc(MarkedMovingCameraScene):
             run_time=0.6,
         )
         f_tex = formula(r"f(x)=x^{2}", color=HIGHLIGHT).scale(1.3)
-        f_tex.move_to(UP * 2.6)
+        f_tex.move_to(RIGHT * 3.6 + UP * 2.9)
         marked_play(self, Write(f_tex), run_time=1.2, event="function_notation")
         fn_lab = micro("函數", color=ALGEBRA_BLUE).next_to(f_tex, RIGHT, buff=0.35)
         marked_play(self, FadeIn(fn_lab), run_time=0.6)

@@ -77,8 +77,7 @@ class UnificationArc(MarkedMovingCameraScene):
             y_range=[-1, 1, 1],
             x_length=1.4,
             y_length=1.4,
-            tip_length=0.1,
-            axis_config={"color": ALGEBRA_BLUE, "stroke_width": 2},
+            axis_config={"color": ALGEBRA_BLUE, "stroke_width": 2, "tip_length": 0.1},
         ).move_to(bridge_ag.get_center() + DOWN * 1.1)
         marked_play(self, FadeIn(mini, scale=0.5), run_time=0.9, event="mini_axes")
         aha(self, 1.8, note="alg_geo_link")

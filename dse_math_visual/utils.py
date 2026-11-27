@@ -47,6 +47,7 @@ from config import (
     HOLD_WAIT,
     LABEL_SIZE,
     MICRO_SIZE,
+    ROOT,
     SFX,
     TITLE_SIZE,
 )
@@ -360,5 +361,7 @@ class MarkedMovingCameraScene(MovingCameraScene):
 
     def tear_down(self):
         SFX.end_scene(self.scene_key)
+        # Per-scene sidecar (must be written before render_all's merge step)
+        SFX.dump(ROOT / f"sfx_{self.scene_key}.json")
         SFX.dump()
         super().tear_down()

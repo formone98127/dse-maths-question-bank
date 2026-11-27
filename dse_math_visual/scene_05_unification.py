@@ -99,7 +99,7 @@ class UnificationArc(MarkedMovingCameraScene):
         ).arrange(DOWN, buff=0.1)
         tag_gd.next_to(bridge_gd, UP, buff=0.25)
         marked_play(self, FadeIn(tag_gd), run_time=0.8, event="tag_area")
-        guide.show("量度連住兩邊", color=GOLD)
+        guide.show("面積代表頻數", color=GOLD)
         aha(self, 1.6, note="geo_data_link")
 
         # Algebra ↔ Data

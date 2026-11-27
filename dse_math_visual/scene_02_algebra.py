@@ -94,7 +94,7 @@ class AlgebraArc(MarkedMovingCameraScene):
         )
         marked_wait(self, 0.8)
 
-        guide.show("解出來了", color=GOLD)
+        guide.show("求得方程的解", color=GOLD)
         eq3 = formula(r"x=3", color=GOLD).scale(1.5)
         marked_play(
             self,
@@ -125,7 +125,7 @@ class AlgebraArc(MarkedMovingCameraScene):
             event="axes_appear",
         )
 
-        guide.show("一次函數・直線", color=ALGEBRA_BLUE)
+        guide.show("線性函數・直線", color=ALGEBRA_BLUE)
         line = axes.plot(lambda x: 0.8 * x + 1.5, color=ALGEBRA_BLUE, stroke_width=4)
         line_lab = micro("直線", color=ALGEBRA_BLUE).next_to(axes, UP, buff=0.2)
         marked_play(self, Create(line), FadeIn(line_lab), run_time=1.8, event="linear_graph")
@@ -178,7 +178,12 @@ class AlgebraArc(MarkedMovingCameraScene):
         marked_play(self, FadeIn(fn_lab), run_time=0.6)
         aha(self, 1.6, note="function")
 
-        guide.show("改變式子・圖形變", color=GOLD)
+        guide.show("頂點決定極值", color=GOLD)
+        vertex = glow_dot(axes.c2p(0, -0.2), color=GOLD, radius=0.09, glow_radius=0.4)
+        marked_play(self, GrowFromCenter(vertex), run_time=0.7, event="vertex_flash", intensity="high")
+        aha(self, 1.8, note="vertex")
+
+        guide.show("改變式子・圖像變", color=GOLD)
         f2 = formula(r"f(x)=x^{2}-2x-3", color=HIGHLIGHT).scale(1.05)
         f2.move_to(f_tex)
         new_para = axes.plot(
@@ -193,10 +198,14 @@ class AlgebraArc(MarkedMovingCameraScene):
             event="function_shift",
             intensity="high",
         )
-        guide.show("頂點在最低處", color=GOLD)
-        vertex = glow_dot(axes.c2p(1, -4), color=GOLD, radius=0.09, glow_radius=0.4)
-        marked_play(self, GrowFromCenter(vertex), run_time=0.7, event="vertex_flash", intensity="high")
-        aha(self, 1.8, note="vertex")
+        marked_play(
+            self,
+            vertex.animate.move_to(axes.c2p(1, -4)),
+            run_time=1.0,
+            event="vertex_moved",
+            intensity="high",
+        )
+        aha(self, 1.8, note="vertex_min")
 
         # E. Sequences
         marked_play(
@@ -223,7 +232,7 @@ class AlgebraArc(MarkedMovingCameraScene):
             run_time=1.8,
             event="arith_seq",
         )
-        guide.show("等差・每次加固定", color=GOLD)
+        guide.show("等差・公差固定", color=GOLD)
         diffs = VGroup()
         for i in range(4):
             brace = MathTex("+3", color=GOLD).scale(0.55)
@@ -250,7 +259,7 @@ class AlgebraArc(MarkedMovingCameraScene):
         )
         aha(self, 2.0, note="AP_formula")
 
-        guide.show("等比・每次乘固定", color=GOLD)
+        guide.show("等比・公比固定", color=GOLD)
         geo_terms = VGroup(
             *[formula(str(t), color=ALGEBRA_BLUE) for t in (3, 6, 12, 24, 48)]
         ).arrange(RIGHT, buff=0.7)
@@ -277,7 +286,7 @@ class AlgebraArc(MarkedMovingCameraScene):
             run_time=0.8,
         )
 
-        guide.show("不等式・一條射線", color=ALGEBRA_BLUE)
+        guide.show("不等式・標出範圍", color=ALGEBRA_BLUE)
         ineq = formula(r"x>2", color=HIGHLIGHT).scale(1.4)
         marked_play(self, Write(ineq), run_time=1.0, event="ineq_tex")
         number_line = NumberLine(
@@ -316,7 +325,7 @@ class AlgebraArc(MarkedMovingCameraScene):
         marked_play(self, FadeIn(ray_lab), run_time=0.6)
         hold(self, 2.2, note="algebra_close")
 
-        guide.show("下一站・圖形空間", color=GEOMETRY_GREEN)
+        guide.show("下一站圖形與空間", color=GEOMETRY_GREEN)
         portal = glow_dot(RIGHT * 5.5, color=GEOMETRY_GREEN, radius=0.2, glow_radius=0.9)
         marked_play(
             self,

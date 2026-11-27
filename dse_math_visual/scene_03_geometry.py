@@ -32,7 +32,7 @@ class GeometryArc(MarkedMovingCameraScene):
 
         chapter = cjk("圖形空間", font_size=40, color=GEOMETRY_GREEN)
         chapter.to_edge(UL, buff=0.45)
-        guide.show("第二章・圖形空間", color=GEOMETRY_GREEN)
+        guide.show("第二章圖形與空間", color=GEOMETRY_GREEN)
         marked_play(self, FadeIn(chapter), run_time=0.9, event="chapter_label")
 
         # A. Point → Line → Triangle
@@ -41,12 +41,12 @@ class GeometryArc(MarkedMovingCameraScene):
         marked_play(self, GrowFromCenter(p1), run_time=0.7, event="point")
         p2 = glow_dot(RIGHT * 2.8 + DOWN * 1.2, color=GEOMETRY_GREEN)
         marked_play(self, GrowFromCenter(p2), run_time=0.5, event="point2")
-        guide.show("兩點成線", color=GEOMETRY_GREEN)
+        guide.show("相異兩點成直線", color=GEOMETRY_GREEN)
         seg = Line(p1[1].get_center(), p2[1].get_center(), color=GEOMETRY_GREEN, stroke_width=4)
         marked_play(self, Create(seg), run_time=1.0, event="segment")
         marked_wait(self, 0.6)
 
-        guide.show("三點成面", color=GOLD)
+        guide.show("不共線三點成面", color=GOLD)
         p3 = glow_dot(UP * 2.0, color=GOLD)
         marked_play(self, GrowFromCenter(p3), run_time=0.6, event="apex")
         tri = Polygon(
@@ -73,7 +73,7 @@ class GeometryArc(MarkedMovingCameraScene):
         aha(self, 1.8, note="triangle")
 
         # B. Angle sum
-        guide.show("三角之內角和", color=GOLD)
+        guide.show("三角形內角和", color=GOLD)
         verts = tri.get_vertices()
         line_ab = Line(verts[0], verts[1], color=GEOMETRY_GREEN)
         line_bc = Line(verts[1], verts[2], color=GEOMETRY_GREEN)
@@ -145,7 +145,7 @@ class GeometryArc(MarkedMovingCameraScene):
         circ_lab = micro("圓", color=GEOMETRY_GREEN).next_to(circle, DOWN, buff=0.45)
         marked_play(self, FadeIn(circ_lab), run_time=0.5)
 
-        guide.show("直徑對直角", color=GOLD)
+        guide.show("半圓上的圓周角", color=GOLD)
         A = circle.point_at_angle(PI)
         B = circle.point_at_angle(0)
         C = circle.point_at_angle(PI / 2.4)
@@ -193,7 +193,7 @@ class GeometryArc(MarkedMovingCameraScene):
             intensity="high",
         )
 
-        guide.show("用坐標量距離", color=HIGHLIGHT)
+        guide.show("用坐標求距離", color=HIGHLIGHT)
         pts = [axes.c2p(-2, -1), axes.c2p(3, -1), axes.c2p(1, 2)]
         dots = VGroup(*[glow_dot(p, color=GEOMETRY_GREEN, radius=0.07, glow_radius=0.28) for p in pts])
         poly = Polygon(*pts, color=GEOMETRY_GREEN, stroke_width=3).set_fill(GEOMETRY_GREEN, opacity=0.1)
@@ -210,7 +210,7 @@ class GeometryArc(MarkedMovingCameraScene):
         aha(self, 2.0, note="analytic_geometry")
 
         # F. Trig
-        guide.show("三角函數登場", color=GEOMETRY_GREEN)
+        guide.show("三角比登場", color=GEOMETRY_GREEN)
         marked_play(
             self,
             FadeOut(axes),
@@ -241,7 +241,7 @@ class GeometryArc(MarkedMovingCameraScene):
         marked_play(self, Write(trig), FadeIn(trig_lab), run_time=1.6, event="trig_labels", intensity="high")
         aha(self, 2.2, note="trigonometry")
 
-        guide.show("邊長比就是角", color=GOLD)
+        guide.show("邊長比定出角度", color=GOLD)
         soh = VGroup(
             formula(r"\sin=\dfrac{opp}{hyp}", color=HIGHLIGHT).scale(0.65),
             formula(r"\cos=\dfrac{adj}{hyp}", color=HIGHLIGHT).scale(0.65),

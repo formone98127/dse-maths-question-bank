@@ -103,7 +103,7 @@ class DataArc(MarkedMovingCameraScene):
         aha(self, 1.8, note="histogram")
 
         # C. Mean / median
-        guide.show("找平均位置", color=GOLD)
+        guide.show("找平均數位置", color=GOLD)
         mean_x = 2.6
         mean_line = DashedLine(
             axes.c2p(mean_x, 0),

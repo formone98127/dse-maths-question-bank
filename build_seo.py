@@ -1986,8 +1986,12 @@ def parse_topics():
         topics[sid] = {}
         for name, arr in re.findall(r'"([^"]+)":\s*\[(.*?)\]', body, re.S):
             topics[sid][name] = re.findall(r'"([^"]+)"', arr)
-    if set(topics) != {"math", "econ"}:
-        raise SystemExit(f"unexpected TOPICS subjects: {list(topics)}")
+    # 跨科 Hub：docs/hub/data.js 嘅 TOPICS 由人手維護，科目會隨網站擴張增加。
+    # 只准白名單，防止打錯字／殘留舊科目無聲通過（2026-11-27 Kin 選「跨科」）。
+    allowed_subjects = {"math", "econ"}
+    unexpected = set(topics) - allowed_subjects
+    if unexpected:
+        raise SystemExit(f"unexpected TOPICS subjects: {sorted(unexpected)}")
     for st in STRANDS:
         kws = topics.get(st["subject_id"], {}).get(st["name"])
         if not kws:

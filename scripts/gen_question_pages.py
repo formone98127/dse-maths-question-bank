@@ -126,7 +126,7 @@ def render_page(year: int, paper: int, qno: int, zh, en, topic_map: dict,
     slug = f"paper-{paper}"
     qurl = f"{SITE}/questions/math/{year}/{slug}/q{qno}/"
     _tail = f"｜答對率 {round(float(pct))}%" if pct is not None else ""
-    title = f"{year} DSE 數學 P{paper} Q{qno} 答案＋詳解{_tail}｜DSE 數學題庫"
+    title = f"{year} DSE 數學 P{paper} Q{qno} 答案＋詳解{_tail}｜DSE Hub"
     h1 = f"{year} DSE 數學 P{paper} Q{qno} 答案＋詳解{_tail}"
     desc = f"{year} Paper {paper} 第 {qno} 題（{first_tag}）長題目：官方評卷參考、題解、考評報告。"
 
@@ -236,7 +236,7 @@ def render_page(year: int, paper: int, qno: int, zh, en, topic_map: dict,
 {report_section}<section class="card" id="topics"><h2>相關課題</h2><p>{topic_links}</p></section>
 {nav}
 </main>
-<footer><div class="wrap">DSE 數學題庫｜{year} 數學 Paper {paper} 第 {qno} 題　
+<footer><div class="wrap">DSE Hub｜{year} 數學 Paper {paper} 第 {qno} 題　
 資料來源：香港考試及評核局歷屆試題及評卷參考（非官方整理，僅供學習）</div></footer>
 <noscript><div class="wrap"><p>本頁內容為靜態文字，毋須 JavaScript 亦可完整閱讀；數學式若未經 MathJax 排版，會以 LaTeX（如 $x^2$）原樣顯示。</p></div></noscript>
 </body>

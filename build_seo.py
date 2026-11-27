@@ -15,7 +15,6 @@ from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 ROOT = Path(__file__).resolve().parent / "docs"
 SITE = "https://hkdse.exampaper.cloud"
-BRAND = "DSE 數學題庫"
 # Cache-busting 版本字串：build 時間自動 bump（行為有變都唔會派 7 日舊 asset）。
 VER = datetime.now().strftime("%Y%m%d%H%M")
 # 英文卷問題頁（paper-N-en/qN/）開關：False 可以只出中文頁分段上線
@@ -33,8 +32,8 @@ SUBJECTS = [
         "short": "數學",
         "en": "Mathematics (Compulsory Part)",
         "blurb": "免費 DSE 數學 past paper 集中喺呢度：按年份開卷，或者按課題（例如函數與圖像、三角、圓形幾何）集中操。涵蓋數學必修卷一、卷二，部分年份有中文或英文卷，適合考前操卷同對題。",
-        "title": "DSE 數學必修歷屆試題免費 Past Paper（2012–2023）｜DSE 數學題庫",
-        "description": "免費查閱 DSE 數學必修部分 2012 至 2023 年歷屆試題，按年份或課題溫習卷一、卷二。DSE 數學題庫 提供題目索引同課題標籤，方便操卷。",
+        "title": "DSE 數學必修歷屆試題免費 Past Paper（2012–2023）｜DSE Hub",
+        "description": "免費查閱 DSE 數學必修部分 2012 至 2023 年歷屆試題，按年份或課題溫習卷一、卷二。DSE Hub 提供題目索引同課題標籤，方便操卷。",
         "h1": "DSE 數學必修歷屆試題",
     },
     {
@@ -44,7 +43,7 @@ SUBJECTS = [
         "short": "經濟",
         "en": "Economics",
         "blurb": "免費 DSE 經濟 past paper：而家有 2015、2017、2020 年卷一（英文卷）。可按課題溫習供求、市場結構、GDP、貨幣銀行同國際貿易，適合想集中操某一類題嘅同學。",
-        "title": "DSE 經濟歷屆試題免費 Past Paper（2015、2017、2020）｜DSE 數學題庫",
+        "title": "DSE 經濟歷屆試題免費 Past Paper（2015、2017、2020）｜DSE Hub",
         "description": "免費查閱 DSE 經濟科歷屆試題，現有 2015、2017、2020 年卷一。可按課題溫習供求、市場、GDP、貨幣同國際貿易等。",
         "h1": "DSE 經濟歷屆試題",
     },
@@ -55,8 +54,8 @@ SUBJECTS = [
         "short": "化學",
         "en": "Chemistry",
         "blurb": "免費 DSE 化學 past paper：2012 至 2025 年卷一甲、卷一乙同卷二（中文卷）都有索引。可按年份開卷，亦可按課題例如酸鹼、有機化學、氧化還原集中溫習。",
-        "title": "DSE 化學歷屆試題免費 Past Paper（2012–2025）｜DSE 數學題庫",
-        "description": "免費查閱 DSE 化學 2012 至 2025 年歷屆試題，包括卷一甲、卷一乙同卷二。DSE 數學題庫 提供題目索引，方便按年份操卷。",
+        "title": "DSE 化學歷屆試題免費 Past Paper（2012–2025）｜DSE Hub",
+        "description": "免費查閱 DSE 化學 2012 至 2025 年歷屆試題，包括卷一甲、卷一乙同卷二。DSE Hub 提供題目索引，方便按年份操卷。",
         "h1": "DSE 化學歷屆試題",
     },
     {
@@ -66,8 +65,8 @@ SUBJECTS = [
         "short": "生物",
         "en": "Biology",
         "blurb": "免費 DSE 生物 past paper：而家已有 2023 年卷一同卷二（中文卷），可喺手機或電腦直接開題溫習；之後會繼續加其他年份。",
-        "title": "DSE 生物歷屆試題免費 Past Paper（2023）｜DSE 數學題庫",
-        "description": "免費查閱 DSE 生物歷屆試題。現已提供 2023 年卷一同卷二，可喺 DSE 數學題庫 直接檢視題目。",
+        "title": "DSE 生物歷屆試題免費 Past Paper（2023）｜DSE Hub",
+        "description": "免費查閱 DSE 生物歷屆試題。現已提供 2023 年卷一同卷二，可喺 DSE Hub 直接檢視題目。",
         "h1": "DSE 生物歷屆試題",
     },
     {
@@ -77,8 +76,8 @@ SUBJECTS = [
         "short": "物理",
         "en": "Physics",
         "blurb": "免費 DSE 物理 past paper：而家已有 2024 年卷一同卷二（中文卷），方便按卷操練同對答案；之後會繼續加其他年份。",
-        "title": "DSE 物理歷屆試題免費 Past Paper（2024）｜DSE 數學題庫",
-        "description": "免費查閱 DSE 物理歷屆試題。現已提供 2024 年卷一同卷二，可喺 DSE 數學題庫 直接檢視題目。",
+        "title": "DSE 物理歷屆試題免費 Past Paper（2024）｜DSE Hub",
+        "description": "免費查閱 DSE 物理歷屆試題。現已提供 2024 年卷一同卷二，可喺 DSE Hub 直接檢視題目。",
         "h1": "DSE 物理歷屆試題",
     },
 ]
@@ -89,8 +88,8 @@ STRANDS = [
         "subject_id": "math",
         "name": "數與代數",
         "slug": "number-and-algebra",
-        "title": "免費 DSE 數學 數與代數 歷屆試題｜DSE 數學題庫",
-        "description": "免費查閱 DSE 數學「數與代數」歷屆試題，按百分法、函數與圖像、數列、變分等課題溫習。DSE 數學題庫 提供題目索引，方便操卷。",
+        "title": "免費 DSE 數學 數與代數 歷屆試題｜DSE Hub",
+        "description": "免費查閱 DSE 數學「數與代數」歷屆試題，按百分法、函數與圖像、數列、變分等課題溫習。DSE Hub 提供題目索引，方便操卷。",
         "h1": "DSE 數學：數與代數",
         "blurb": "集中溫習 DSE 數學必修「數與代數」，包括百分法、指數與對數、方程、函數與圖像、數列同變分等課題。",
         "guide": [
@@ -103,8 +102,8 @@ STRANDS = [
         "subject_id": "math",
         "name": "度量、圖形與空間",
         "slug": "measures-shape-space",
-        "title": "免費 DSE 數學 度量、圖形與空間 歷屆試題｜DSE 數學題庫",
-        "description": "免費查閱 DSE 數學「度量、圖形與空間」歷屆試題，按求積法、軌跡等課題溫習三角、坐標同圖形題。DSE 數學題庫 提供題目索引，方便操卷。",
+        "title": "免費 DSE 數學 度量、圖形與空間 歷屆試題｜DSE Hub",
+        "description": "免費查閱 DSE 數學「度量、圖形與空間」歷屆試題，按求積法、軌跡等課題溫習三角、坐標同圖形題。DSE Hub 提供題目索引，方便操卷。",
         "h1": "DSE 數學：度量、圖形與空間",
         "blurb": "集中溫習 DSE 數學必修「度量、圖形與空間」，包括三角、求積法、坐標幾何、圓形幾何、軌跡同幾何變換。",
         "guide": [
@@ -117,8 +116,8 @@ STRANDS = [
         "subject_id": "math",
         "name": "數據處理",
         "slug": "data-handling",
-        "title": "免費 DSE 數學 數據處理 歷屆試題｜DSE 數學題庫",
-        "description": "免費查閱 DSE 數學「數據處理」歷屆試題，按概率、排列與組合等課題集中溫習統計題。DSE 數學題庫 提供題目索引，方便操卷。",
+        "title": "免費 DSE 數學 數據處理 歷屆試題｜DSE Hub",
+        "description": "免費查閱 DSE 數學「數據處理」歷屆試題，按概率、排列與組合等課題集中溫習統計題。DSE Hub 提供題目索引，方便操卷。",
         "h1": "DSE 數學：數據處理",
         "blurb": "集中溫習 DSE 數學必修「數據處理」，包括統計圖表、集中趨勢與離差、概率同排列與組合。",
         "guide": [
@@ -131,8 +130,8 @@ STRANDS = [
         "subject_id": "econ",
         "name": "基本經濟概念",
         "slug": "basic-concepts",
-        "title": "免費 DSE 經濟 基本經濟概念 歷屆試題｜DSE 數學題庫",
-        "description": "免費查閱 DSE 經濟「基本經濟概念」歷屆試題，按機會成本、稀少性、經濟制度等課題溫習。DSE 數學題庫 提供題目索引，方便操卷。",
+        "title": "免費 DSE 經濟 基本經濟概念 歷屆試題｜DSE Hub",
+        "description": "免費查閱 DSE 經濟「基本經濟概念」歷屆試題，按機會成本、稀少性、經濟制度等課題溫習。DSE Hub 提供題目索引，方便操卷。",
         "h1": "DSE 經濟：基本經濟概念",
         "blurb": "集中溫習 DSE 經濟「基本經濟概念」，包括機會成本、稀少性、基本經濟問題、經濟制度同價格機制。",
         "guide": [
@@ -145,8 +144,8 @@ STRANDS = [
         "subject_id": "econ",
         "name": "生產與企業",
         "slug": "production-firms",
-        "title": "免費 DSE 經濟 生產與企業 歷屆試題｜DSE 數學題庫",
-        "description": "免費查閱 DSE 經濟「生產與企業」歷屆試題，按成本、規模經濟、公司種類、勞動生產力等課題溫習。DSE 數學題庫 方便按課題操卷。",
+        "title": "免費 DSE 經濟 生產與企業 歷屆試題｜DSE Hub",
+        "description": "免費查閱 DSE 經濟「生產與企業」歷屆試題，按成本、規模經濟、公司種類、勞動生產力等課題溫習。DSE Hub 方便按課題操卷。",
         "h1": "DSE 經濟：生產與企業",
         "blurb": "集中溫習 DSE 經濟「生產與企業」，包括公司種類、成本、規模經濟、利潤同勞動生產力。",
         "guide": [
@@ -159,8 +158,8 @@ STRANDS = [
         "subject_id": "econ",
         "name": "市場與價格",
         "slug": "market-and-price",
-        "title": "免費 DSE 經濟 市場與價格 歷屆試題｜DSE 數學題庫",
-        "description": "免費查閱 DSE 經濟「市場與價格」歷屆試題，按供求、彈性、價格上限、補貼同稅負等課題溫習。DSE 數學題庫 方便按課題操卷。",
+        "title": "免費 DSE 經濟 市場與價格 歷屆試題｜DSE Hub",
+        "description": "免費查閱 DSE 經濟「市場與價格」歷屆試題，按供求、彈性、價格上限、補貼同稅負等課題溫習。DSE Hub 方便按課題操卷。",
         "h1": "DSE 經濟：市場與價格",
         "blurb": "集中溫習 DSE 經濟「市場與價格」，包括供求、彈性、價格管制、稅同補貼。",
         "guide": [
@@ -173,7 +172,7 @@ STRANDS = [
         "subject_id": "econ",
         "name": "市場結構與競爭",
         "slug": "market-structure",
-        "title": "免費 DSE 經濟 市場結構與競爭 歷屆試題｜DSE 數學題庫",
+        "title": "免費 DSE 經濟 市場結構與競爭 歷屆試題｜DSE Hub",
         "description": "免費查閱 DSE 經濟「市場結構與競爭」歷屆試題，按完全競爭、壟斷性競爭、寡頭壟斷同價格歧視等課題溫習。",
         "h1": "DSE 經濟：市場結構與競爭",
         "blurb": "集中溫習 DSE 經濟「市場結構與競爭」，包括完全競爭、壟斷性競爭、寡頭壟斷同價格歧視。",
@@ -187,7 +186,7 @@ STRANDS = [
         "subject_id": "econ",
         "name": "效率、公平與政府角色",
         "slug": "efficiency-equity-government",
-        "title": "免費 DSE 經濟 效率、公平與政府角色 歷屆試題｜DSE 數學題庫",
+        "title": "免費 DSE 經濟 效率、公平與政府角色 歷屆試題｜DSE Hub",
         "description": "免費查閱 DSE 經濟「效率、公平與政府角色」歷屆試題，按外部性、堅尼系數、稅制同收入不均等課題溫習。",
         "h1": "DSE 經濟：效率、公平與政府角色",
         "blurb": "集中溫習 DSE 經濟「效率、公平與政府角色」，包括外部性、公營物品、收入不均、堅尼系數同稅制。",
@@ -201,7 +200,7 @@ STRANDS = [
         "subject_id": "econ",
         "name": "經濟表現量度",
         "slug": "measuring-performance",
-        "title": "免費 DSE 經濟 經濟表現量度 歷屆試題｜DSE 數學題庫",
+        "title": "免費 DSE 經濟 經濟表現量度 歷屆試題｜DSE Hub",
         "description": "免費查閱 DSE 經濟「經濟表現量度」歷屆試題，按 GDP、名義同實質 GDP、人均 GDP、國民收入等課題溫習。",
         "h1": "DSE 經濟：經濟表現量度",
         "blurb": "集中溫習 DSE 經濟「經濟表現量度」，包括 GDP、名義同實質 GDP、人均 GDP、國民收入同產業結構。",
@@ -215,7 +214,7 @@ STRANDS = [
         "subject_id": "econ",
         "name": "國民收入與價格水平",
         "slug": "national-income-price-level",
-        "title": "免費 DSE 經濟 國民收入與價格水平 歷屆試題｜DSE 數學題庫",
+        "title": "免費 DSE 經濟 國民收入與價格水平 歷屆試題｜DSE Hub",
         "description": "免費查閱 DSE 經濟「國民收入與價格水平」歷屆試題，按總需求、總供給、AD-AS、產出缺口等課題溫習。",
         "h1": "DSE 經濟：國民收入與價格水平",
         "blurb": "集中溫習 DSE 經濟「國民收入與價格水平」，包括總需求、總供給、AD-AS、潛在產出同產出缺口。",
@@ -229,7 +228,7 @@ STRANDS = [
         "subject_id": "econ",
         "name": "貨幣與銀行",
         "slug": "money-and-banking",
-        "title": "免費 DSE 經濟 貨幣與銀行 歷屆試題｜DSE 數學題庫",
+        "title": "免費 DSE 經濟 貨幣與銀行 歷屆試題｜DSE Hub",
         "description": "免費查閱 DSE 經濟「貨幣與銀行」歷屆試題，按貨幣供應、銀行乘數、聯繫匯率同利率等課題溫習。",
         "h1": "DSE 經濟：貨幣與銀行",
         "blurb": "集中溫習 DSE 經濟「貨幣與銀行」，包括貨幣供應、存款創造、銀行乘數、聯繫匯率同利率。",
@@ -243,7 +242,7 @@ STRANDS = [
         "subject_id": "econ",
         "name": "宏觀經濟問題與政策",
         "slug": "macro-problems-policy",
-        "title": "免費 DSE 經濟 宏觀經濟問題與政策 歷屆試題｜DSE 數學題庫",
+        "title": "免費 DSE 經濟 宏觀經濟問題與政策 歷屆試題｜DSE Hub",
         "description": "免費查閱 DSE 經濟「宏觀經濟問題與政策」歷屆試題，按通脹、失業、財政政策、貨幣政策等課題溫習。",
         "h1": "DSE 經濟：宏觀經濟問題與政策",
         "blurb": "集中溫習 DSE 經濟「宏觀經濟問題與政策」，包括通脹、失業、財政政策、貨幣政策同貨幣數量理論。",
@@ -257,7 +256,7 @@ STRANDS = [
         "subject_id": "econ",
         "name": "國際貿易與金融",
         "slug": "international-trade-finance",
-        "title": "免費 DSE 經濟 國際貿易與金融 歷屆試題｜DSE 數學題庫",
+        "title": "免費 DSE 經濟 國際貿易與金融 歷屆試題｜DSE Hub",
         "description": "免費查閱 DSE 經濟「國際貿易與金融」歷屆試題，按比較優勢、貿易得益、匯率、經常帳同國際收支等課題溫習。",
         "h1": "DSE 經濟：國際貿易與金融",
         "blurb": "集中溫習 DSE 經濟「國際貿易與金融」，包括比較優勢、貿易得益、匯率、經常帳同國際收支。",
@@ -270,9 +269,6 @@ STRANDS = [
 ]
 
 SID_TO_SUBJECT = {"math": "數學", "econ": "經濟", "chem": "化學", "bio": "生物", "phys": "物理"}
-# 純數學站：生成層面只處理 math（econ/chem/bio/phys 檔案留 disk 但 noindex）
-SUBJECTS = [s for s in SUBJECTS if s["id"] == "math"]
-STRANDS = [s for s in STRANDS if s["subject_id"] == "math"]
 SUBJECT_PREFIX = {"數學": "", "經濟": "econ", "化學": "chem", "生物": "bio", "物理": "phys"}
 SAMPLE_Q = 3
 VISUAL_TUTOR = "https://dsemaths.canonlessons.com"
@@ -362,8 +358,8 @@ TOPIC_PAGES = [
     # math — 數與代數
     {"subject_id": "math", "name": "指數與對數", "slug": "exponents-logarithms", "strand": "number-and-algebra",
      "tags": KW_TAG_MAP["指數與對數"],
-     "title": "免費 DSE 數學 指數與對數 歷屆試題｜DSE 數學題庫",
-     "description": "免費查閱 DSE 數學「指數與對數」歷屆試題，按指數定律、對數同指數函數等課題操練。DSE 數學題庫 真正完全免費。",
+     "title": "免費 DSE 數學 指數與對數 歷屆試題｜DSE Hub",
+     "description": "免費查閱 DSE 數學「指數與對數」歷屆試題，按指數定律、對數同指數函數等課題操練。DSE Hub 真正完全免費。",
      "h1": "DSE 數學：指數與對數",
      "blurb": "集中溫習指數定律、對數、指數函數同相關方程題。",
      "guide": [
@@ -373,8 +369,8 @@ TOPIC_PAGES = [
      ]},
     {"subject_id": "math", "name": "比、率與比例", "slug": "ratio-rate-proportion", "strand": "number-and-algebra",
      "tags": KW_TAG_MAP["比、率與比例"],
-     "title": "免費 DSE 數學 比、率與比例 歷屆試題｜DSE 數學題庫",
-     "description": "免費查閱 DSE 數學「比、率與比例」歷屆試題，按比率與比例等課題操練。DSE 數學題庫 真正完全免費。",
+     "title": "免費 DSE 數學 比、率與比例 歷屆試題｜DSE Hub",
+     "description": "免費查閱 DSE 數學「比、率與比例」歷屆試題，按比率與比例等課題操練。DSE Hub 真正完全免費。",
      "h1": "DSE 數學：比、率與比例",
      "blurb": "集中溫習比率、比例同相關應用題。",
      "guide": [
@@ -384,8 +380,8 @@ TOPIC_PAGES = [
      ]},
     {"subject_id": "math", "name": "多項式與因式分解", "slug": "polynomials-factorization", "strand": "number-and-algebra",
      "tags": KW_TAG_MAP["多項式（續）"],
-     "title": "免費 DSE 數學 多項式與因式分解 歷屆試題｜DSE 數學題庫",
-     "description": "免費查閱 DSE 數學「多項式與因式分解」歷屆試題，涵蓋多項式、因式分解同因式定理。DSE 數學題庫 真正完全免費。",
+     "title": "免費 DSE 數學 多項式與因式分解 歷屆試題｜DSE Hub",
+     "description": "免費查閱 DSE 數學「多項式與因式分解」歷屆試題，涵蓋多項式、因式分解同因式定理。DSE Hub 真正完全免費。",
      "h1": "DSE 數學：多項式與因式分解",
      "blurb": "集中溫習多項式、因式分解、因式定理等課題，對應課程「多項式（續）」。",
      "guide": [
@@ -395,8 +391,8 @@ TOPIC_PAGES = [
      ]},
     {"subject_id": "math", "name": "數系", "slug": "number-systems", "strand": "number-and-algebra",
      "tags": KW_TAG_MAP["數系"],
-     "title": "免費 DSE 數學 數系 歷屆試題｜DSE 數學題庫",
-     "description": "免費查閱 DSE 數學「數系」歷屆試題，按複數、數制同進制轉換等課題操練。DSE 數學題庫 真正完全免費。",
+     "title": "免費 DSE 數學 數系 歷屆試題｜DSE Hub",
+     "description": "免費查閱 DSE 數學「數系」歷屆試題，按複數、數制同進制轉換等課題操練。DSE Hub 真正完全免費。",
      "h1": "DSE 數學：數系",
      "blurb": "集中溫習複數、數制、進制轉換等數系課題。",
      "guide": [
@@ -406,8 +402,8 @@ TOPIC_PAGES = [
      ]},
     {"subject_id": "math", "name": "方程與不等式", "slug": "equations-inequalities", "strand": "number-and-algebra",
      "tags": KW_TAG_MAP["方程與不等式"],
-     "title": "免費 DSE 數學 方程與不等式 歷屆試題｜DSE 數學題庫",
-     "description": "免費查閱 DSE 數學「方程與不等式」歷屆試題，按一元二次方程、不等式同線性規劃等課題操練。DSE 數學題庫 真正完全免費。",
+     "title": "免費 DSE 數學 方程與不等式 歷屆試題｜DSE Hub",
+     "description": "免費查閱 DSE 數學「方程與不等式」歷屆試題，按一元二次方程、不等式同線性規劃等課題操練。DSE Hub 真正完全免費。",
      "h1": "DSE 數學：方程與不等式",
      "blurb": "集中溫習方程、不等式、聯立方程同線性規劃。",
      "guide": [
@@ -417,8 +413,8 @@ TOPIC_PAGES = [
      ]},
     {"subject_id": "math", "name": "百分法與利息", "slug": "percentages-interest", "strand": "number-and-algebra",
      "tags": KW_TAG_MAP["百分法"],
-     "title": "免費 DSE 數學 百分法與利息 歷屆試題｜DSE 數學題庫",
-     "description": "免費查閱 DSE 數學「百分法與利息」歷屆試題，按百分數、百分比同利息增長等課題操練。DSE 數學題庫 真正完全免費。",
+     "title": "免費 DSE 數學 百分法與利息 歷屆試題｜DSE Hub",
+     "description": "免費查閱 DSE 數學「百分法與利息」歷屆試題，按百分數、百分比同利息增長等課題操練。DSE Hub 真正完全免費。",
      "h1": "DSE 數學：百分法與利息",
      "blurb": "集中溫習百分法、百分比、利息同增長題。",
      "guide": [
@@ -428,8 +424,8 @@ TOPIC_PAGES = [
      ]},
     {"subject_id": "math", "name": "函數與圖像", "slug": "functions-graphs", "strand": "number-and-algebra",
      "tags": ["二次函數", "函數與圖像", "函數", "二次函數圖像", "圖像"],
-     "title": "免費 DSE 數學 函數與圖像 歷屆試題｜DSE 數學題庫",
-     "description": "免費查閱 DSE 數學「函數與圖像」歷屆試題，按二次函數同函數圖像等課題操練。DSE 數學題庫 真正完全免費。",
+     "title": "免費 DSE 數學 函數與圖像 歷屆試題｜DSE Hub",
+     "description": "免費查閱 DSE 數學「函數與圖像」歷屆試題，按二次函數同函數圖像等課題操練。DSE Hub 真正完全免費。",
      "h1": "DSE 數學：函數與圖像",
      "blurb": "集中溫習函數、二次函數同圖像題。",
      "guide": [
@@ -439,8 +435,8 @@ TOPIC_PAGES = [
      ]},
     {"subject_id": "math", "name": "數列", "slug": "sequences", "strand": "number-and-algebra",
      "tags": ["數列", "等比數列", "等差數列", "公比"],
-     "title": "免費 DSE 數學 數列 歷屆試題｜DSE 數學題庫",
-     "description": "免費查閱 DSE 數學「數列」歷屆試題，按等比數列、等差數列等課題操練。DSE 數學題庫 真正完全免費。",
+     "title": "免費 DSE 數學 數列 歷屆試題｜DSE Hub",
+     "description": "免費查閱 DSE 數學「數列」歷屆試題，按等比數列、等差數列等課題操練。DSE Hub 真正完全免費。",
      "h1": "DSE 數學：數列",
      "blurb": "集中溫習數列、等比數列同等差數列。",
      "guide": [
@@ -450,8 +446,8 @@ TOPIC_PAGES = [
      ]},
     {"subject_id": "math", "name": "變分", "slug": "variations", "strand": "number-and-algebra",
      "tags": ["變分", "正變", "部分正變"],
-     "title": "免費 DSE 數學 變分 歷屆試題｜DSE 數學題庫",
-     "description": "免費查閱 DSE 數學「變分」歷屆試題，按正變等課題操練。DSE 數學題庫 真正完全免費。",
+     "title": "免費 DSE 數學 變分 歷屆試題｜DSE Hub",
+     "description": "免費查閱 DSE 數學「變分」歷屆試題，按正變等課題操練。DSE Hub 真正完全免費。",
      "h1": "DSE 數學：變分",
      "blurb": "集中溫習變分同正變題。",
      "guide": [
@@ -462,8 +458,8 @@ TOPIC_PAGES = [
     # math — 度量、圖形與空間
     {"subject_id": "math", "name": "三角學與解三角形", "slug": "trigonometry", "strand": "measures-shape-space",
      "tags": KW_TAG_MAP["三角學與解三角形"],
-     "title": "免費 DSE 數學 三角學與解三角形 歷屆試題｜DSE 數學題庫",
-     "description": "免費查閱 DSE 數學「三角學與解三角形」歷屆試題，按三角比、三角恆等式同正弦／餘弦定理等課題操練。DSE 數學題庫 真正完全免費。",
+     "title": "免費 DSE 數學 三角學與解三角形 歷屆試題｜DSE Hub",
+     "description": "免費查閱 DSE 數學「三角學與解三角形」歷屆試題，按三角比、三角恆等式同正弦／餘弦定理等課題操練。DSE Hub 真正完全免費。",
      "h1": "DSE 數學：三角學與解三角形",
      "blurb": "集中溫習三角比、解三角形、三角恆等式同相關定理。",
      "guide": [
@@ -473,8 +469,8 @@ TOPIC_PAGES = [
      ]},
     {"subject_id": "math", "name": "坐標幾何：直線", "slug": "coordinate-geometry-line", "strand": "measures-shape-space",
      "tags": KW_TAG_MAP["坐標幾何：直線"],
-     "title": "免費 DSE 數學 坐標幾何（直線）歷屆試題｜DSE 數學題庫",
-     "description": "免費查閱 DSE 數學「坐標幾何：直線」歷屆試題，按直線方程、斜率同點到直線距離等課題操練。DSE 數學題庫 真正完全免費。",
+     "title": "免費 DSE 數學 坐標幾何（直線）歷屆試題｜DSE Hub",
+     "description": "免費查閱 DSE 數學「坐標幾何：直線」歷屆試題，按直線方程、斜率同點到直線距離等課題操練。DSE Hub 真正完全免費。",
      "h1": "DSE 數學：坐標幾何（直線）",
      "blurb": "集中溫習直線方程同坐標平面上嘅直線問題。",
      "guide": [
@@ -484,8 +480,8 @@ TOPIC_PAGES = [
      ]},
     {"subject_id": "math", "name": "坐標幾何：圓", "slug": "coordinate-geometry-circle", "strand": "measures-shape-space",
      "tags": KW_TAG_MAP["坐標幾何：圓"],
-     "title": "免費 DSE 數學 坐標幾何（圓）歷屆試題｜DSE 數學題庫",
-     "description": "免費查閱 DSE 數學「坐標幾何：圓」歷屆試題，按圓的方程、直線與圓相交等課題操練。DSE 數學題庫 真正完全免費。",
+     "title": "免費 DSE 數學 坐標幾何（圓）歷屆試題｜DSE Hub",
+     "description": "免費查閱 DSE 數學「坐標幾何：圓」歷屆試題，按圓的方程、直線與圓相交等課題操練。DSE Hub 真正完全免費。",
      "h1": "DSE 數學：坐標幾何（圓）",
      "blurb": "集中溫習圓的方程同直線與圓嘅關係。",
      "guide": [
@@ -495,8 +491,8 @@ TOPIC_PAGES = [
      ]},
     {"subject_id": "math", "name": "圓形幾何", "slug": "circle-geometry", "strand": "measures-shape-space",
      "tags": KW_TAG_MAP["圓形幾何"],
-     "title": "免費 DSE 數學 圓形幾何 歷屆試題｜DSE 數學題庫",
-     "description": "免費查閱 DSE 數學「圓形幾何」歷屆試題，按圓的性質、圓的幾何同圓周角等課題操練。DSE 數學題庫 真正完全免費。",
+     "title": "免費 DSE 數學 圓形幾何 歷屆試題｜DSE Hub",
+     "description": "免費查閱 DSE 數學「圓形幾何」歷屆試題，按圓的性質、圓的幾何同圓周角等課題操練。DSE Hub 真正完全免費。",
      "h1": "DSE 數學：圓形幾何",
      "blurb": "集中溫習圓的性質、圓周角同相關幾何題。",
      "guide": [
@@ -506,8 +502,8 @@ TOPIC_PAGES = [
      ]},
     {"subject_id": "math", "name": "幾何變換", "slug": "geometric-transformations", "strand": "measures-shape-space",
      "tags": KW_TAG_MAP["幾何變換"],
-     "title": "免費 DSE 數學 幾何變換 歷屆試題｜DSE 數學題庫",
-     "description": "免費查閱 DSE 數學「幾何變換」歷屆試題，按變換與對稱、平移、旋轉同反射等課題操練。DSE 數學題庫 真正完全免費。",
+     "title": "免費 DSE 數學 幾何變換 歷屆試題｜DSE Hub",
+     "description": "免費查閱 DSE 數學「幾何變換」歷屆試題，按變換與對稱、平移、旋轉同反射等課題操練。DSE Hub 真正完全免費。",
      "h1": "DSE 數學：幾何變換",
      "blurb": "集中溫習變換、對稱、平移、旋轉同反射。",
      "guide": [
@@ -517,8 +513,8 @@ TOPIC_PAGES = [
      ]},
     {"subject_id": "math", "name": "求積法", "slug": "mensuration", "strand": "measures-shape-space",
      "tags": ["求積法", "立體圖形", "立體幾何", "梯形面積", "體積", "曲面面積", "總表面積", "圓錐", "圓錐體", "圓柱體", "直立角柱體", "直立角錐體"],
-     "title": "免費 DSE 數學 求積法 歷屆試題｜DSE 數學題庫",
-     "description": "免費查閱 DSE 數學「求積法」歷屆試題，按面積、體積同立體圖形等課題操練。DSE 數學題庫 真正完全免費。",
+     "title": "免費 DSE 數學 求積法 歷屆試題｜DSE Hub",
+     "description": "免費查閱 DSE 數學「求積法」歷屆試題，按面積、體積同立體圖形等課題操練。DSE Hub 真正完全免費。",
      "h1": "DSE 數學：求積法",
      "blurb": "集中溫習求積法、立體圖形同面積體積題。",
      "guide": [
@@ -528,8 +524,8 @@ TOPIC_PAGES = [
      ]},
     {"subject_id": "math", "name": "平面幾何與相似三角形", "slug": "plane-geometry-similar-triangles", "strand": "measures-shape-space",
      "tags": ["平面幾何", "相似三角形", "相似圖形", "全等三角形", "等腰三角形", "畢氏定理", "直角三角形"],
-     "title": "免費 DSE 數學 平面幾何與相似三角形 歷屆試題｜DSE 數學題庫",
-     "description": "免費查閱 DSE 數學「平面幾何與相似三角形」歷屆試題，按相似、全等等課題操練。DSE 數學題庫 真正完全免費。",
+     "title": "免費 DSE 數學 平面幾何與相似三角形 歷屆試題｜DSE Hub",
+     "description": "免費查閱 DSE 數學「平面幾何與相似三角形」歷屆試題，按相似、全等等課題操練。DSE Hub 真正完全免費。",
      "h1": "DSE 數學：平面幾何與相似三角形",
      "blurb": "集中溫習平面幾何、相似三角形同相關證明題。",
      "guide": [
@@ -540,8 +536,8 @@ TOPIC_PAGES = [
     # math — 數據處理
     {"subject_id": "math", "name": "統計圖表", "slug": "statistical-graphs", "strand": "data-handling",
      "tags": KW_TAG_MAP["統計圖表"],
-     "title": "免費 DSE 數學 統計圖表 歷屆試題｜DSE 數學題庫",
-     "description": "免費查閱 DSE 數學「統計圖表」歷屆試題，按統計、框線圖、幹葉圖同棒形圖等課題操練。DSE 數學題庫 真正完全免費。",
+     "title": "免費 DSE 數學 統計圖表 歷屆試題｜DSE Hub",
+     "description": "免費查閱 DSE 數學「統計圖表」歷屆試題，按統計、框線圖、幹葉圖同棒形圖等課題操練。DSE Hub 真正完全免費。",
      "h1": "DSE 數學：統計圖表",
      "blurb": "集中溫習統計圖表，包括框線圖、幹葉圖同棒形圖。",
      "guide": [
@@ -551,8 +547,8 @@ TOPIC_PAGES = [
      ]},
     {"subject_id": "math", "name": "集中趨勢與離差", "slug": "central-tendency-dispersion", "strand": "data-handling",
      "tags": KW_TAG_MAP["集中趨勢與離差"],
-     "title": "免費 DSE 數學 集中趨勢與離差 歷屆試題｜DSE 數學題庫",
-     "description": "免費查閱 DSE 數學「集中趨勢與離差」歷屆試題，按平均、中位數、標準差同標準分等課題操練。DSE 數學題庫 真正完全免費。",
+     "title": "免費 DSE 數學 集中趨勢與離差 歷屆試題｜DSE Hub",
+     "description": "免費查閱 DSE 數學「集中趨勢與離差」歷屆試題，按平均、中位數、標準差同標準分等課題操練。DSE Hub 真正完全免費。",
      "h1": "DSE 數學：集中趨勢與離差",
      "blurb": "集中溫習平均值、中位數、眾數、標準差、標準分同離差。",
      "guide": [
@@ -562,8 +558,8 @@ TOPIC_PAGES = [
      ]},
     {"subject_id": "math", "name": "概率", "slug": "probability", "strand": "data-handling",
      "tags": ["概率", "期望值", "幾何概率"],
-     "title": "免費 DSE 數學 概率 歷屆試題｜DSE 數學題庫",
-     "description": "免費查閱 DSE 數學「概率」歷屆試題，按概率同期望值等課題操練。DSE 數學題庫 真正完全免費。",
+     "title": "免費 DSE 數學 概率 歷屆試題｜DSE Hub",
+     "description": "免費查閱 DSE 數學「概率」歷屆試題，按概率同期望值等課題操練。DSE Hub 真正完全免費。",
      "h1": "DSE 數學：概率",
      "blurb": "集中溫習概率同期望值題。",
      "guide": [
@@ -573,8 +569,8 @@ TOPIC_PAGES = [
      ]},
     {"subject_id": "math", "name": "排列與組合", "slug": "permutations-combinations", "strand": "data-handling",
      "tags": ["排列與組合", "計數原理"],
-     "title": "免費 DSE 數學 排列與組合 歷屆試題｜DSE 數學題庫",
-     "description": "免費查閱 DSE 數學「排列與組合」歷屆試題，按排列、組合同計數原理操練。DSE 數學題庫 真正完全免費。",
+     "title": "免費 DSE 數學 排列與組合 歷屆試題｜DSE Hub",
+     "description": "免費查閱 DSE 數學「排列與組合」歷屆試題，按排列、組合同計數原理操練。DSE Hub 真正完全免費。",
      "h1": "DSE 數學：排列與組合",
      "blurb": "集中溫習排列與組合同計數原理。",
      "guide": [
@@ -585,8 +581,8 @@ TOPIC_PAGES = [
     # chem — clustered curriculum topics
     {"subject_id": "chem", "name": "化學計量", "slug": "stoichiometry", "strand": None,
      "tags": ["摩爾計算", "實驗式", "濃度", "滴定"],
-     "title": "免費 DSE 化學 化學計量 歷屆試題｜DSE 數學題庫",
-     "description": "免費查閱 DSE 化學「化學計量」歷屆試題，按摩爾計算、實驗式、濃度同滴定等課題操練。DSE 數學題庫 真正完全免費。",
+     "title": "免費 DSE 化學 化學計量 歷屆試題｜DSE Hub",
+     "description": "免費查閱 DSE 化學「化學計量」歷屆試題，按摩爾計算、實驗式、濃度同滴定等課題操練。DSE Hub 真正完全免費。",
      "h1": "DSE 化學：化學計量",
      "blurb": "集中溫習摩爾計算、實驗式、濃度同滴定。",
      "guide": [
@@ -596,8 +592,8 @@ TOPIC_PAGES = [
      ]},
     {"subject_id": "chem", "name": "酸鹼", "slug": "acids-bases", "strand": None,
      "tags": ["酸鹼", "pH", "中和", "酸"],
-     "title": "免費 DSE 化學 酸鹼 歷屆試題｜DSE 數學題庫",
-     "description": "免費查閱 DSE 化學「酸鹼」歷屆試題，按 pH、中和同酸等課題操練。DSE 數學題庫 真正完全免費。",
+     "title": "免費 DSE 化學 酸鹼 歷屆試題｜DSE Hub",
+     "description": "免費查閱 DSE 化學「酸鹼」歷屆試題，按 pH、中和同酸等課題操練。DSE Hub 真正完全免費。",
      "h1": "DSE 化學：酸鹼",
      "blurb": "集中溫習酸鹼、pH 同中和題。",
      "guide": [
@@ -607,8 +603,8 @@ TOPIC_PAGES = [
      ]},
     {"subject_id": "chem", "name": "有機化學", "slug": "organic-chemistry", "strand": None,
      "tags": ["有機化合物", "醇", "官能基", "聚合物", "有機轉化", "烯", "烯烴", "加成聚合", "酯", "裂解", "單體", "系統命名", "對映異構", "旋光性", "水解", "分餾"],
-     "title": "免費 DSE 化學 有機化學 歷屆試題｜DSE 數學題庫",
-     "description": "免費查閱 DSE 化學「有機化學」歷屆試題，按官能基、醇、烯、聚合物同有機轉化等課題操練。DSE 數學題庫 真正完全免費。",
+     "title": "免費 DSE 化學 有機化學 歷屆試題｜DSE Hub",
+     "description": "免費查閱 DSE 化學「有機化學」歷屆試題，按官能基、醇、烯、聚合物同有機轉化等課題操練。DSE Hub 真正完全免費。",
      "h1": "DSE 化學：有機化學",
      "blurb": "集中溫習有機化合物、官能基、聚合物同有機轉化。",
      "guide": [
@@ -618,8 +614,8 @@ TOPIC_PAGES = [
      ]},
     {"subject_id": "chem", "name": "氧化還原", "slug": "redox", "strand": None,
      "tags": ["氧化還原", "氧化數", "還原", "氧化"],
-     "title": "免費 DSE 化學 氧化還原 歷屆試題｜DSE 數學題庫",
-     "description": "免費查閱 DSE 化學「氧化還原」歷屆試題，按氧化數、氧化同還原等課題操練。DSE 數學題庫 真正完全免費。",
+     "title": "免費 DSE 化學 氧化還原 歷屆試題｜DSE Hub",
+     "description": "免費查閱 DSE 化學「氧化還原」歷屆試題，按氧化數、氧化同還原等課題操練。DSE Hub 真正完全免費。",
      "h1": "DSE 化學：氧化還原",
      "blurb": "集中溫習氧化還原、氧化數同相關反應。",
      "guide": [
@@ -629,8 +625,8 @@ TOPIC_PAGES = [
      ]},
     {"subject_id": "chem", "name": "化學鍵與分子結構", "slug": "bonding-structure", "strand": None,
      "tags": ["分子間引力", "氫鍵", "分子形狀", "電子排佈", "離子化合物", "極性", "分子結構", "電子圖", "結構"],
-     "title": "免費 DSE 化學 化學鍵與分子結構 歷屆試題｜DSE 數學題庫",
-     "description": "免費查閱 DSE 化學「化學鍵與分子結構」歷屆試題，按分子形狀、氫鍵、電子排佈同極性等課題操練。DSE 數學題庫 真正完全免費。",
+     "title": "免費 DSE 化學 化學鍵與分子結構 歷屆試題｜DSE Hub",
+     "description": "免費查閱 DSE 化學「化學鍵與分子結構」歷屆試題，按分子形狀、氫鍵、電子排佈同極性等課題操練。DSE Hub 真正完全免費。",
      "h1": "DSE 化學：化學鍵與分子結構",
      "blurb": "集中溫習化學鍵、分子結構、分子間引力同電子排佈。",
      "guide": [
@@ -640,8 +636,8 @@ TOPIC_PAGES = [
      ]},
     {"subject_id": "chem", "name": "反應速率", "slug": "reaction-rate", "strand": None,
      "tags": ["反應速率", "催化劑"],
-     "title": "免費 DSE 化學 反應速率 歷屆試題｜DSE 數學題庫",
-     "description": "免費查閱 DSE 化學「反應速率」歷屆試題，按反應速率同催化劑等課題操練。DSE 數學題庫 真正完全免費。",
+     "title": "免費 DSE 化學 反應速率 歷屆試題｜DSE Hub",
+     "description": "免費查閱 DSE 化學「反應速率」歷屆試題，按反應速率同催化劑等課題操練。DSE Hub 真正完全免費。",
      "h1": "DSE 化學：反應速率",
      "blurb": "集中溫習反應速率同催化劑題。",
      "guide": [
@@ -651,8 +647,8 @@ TOPIC_PAGES = [
      ]},
     {"subject_id": "chem", "name": "化學平衡", "slug": "chemical-equilibrium", "strand": None,
      "tags": ["平衡常數", "平衡", "化學平衡", "勒沙特列原理", "勒沙特列"],
-     "title": "免費 DSE 化學 化學平衡 歷屆試題｜DSE 數學題庫",
-     "description": "免費查閱 DSE 化學「化學平衡」歷屆試題，按平衡常數同勒沙特列原理等課題操練。DSE 數學題庫 真正完全免費。",
+     "title": "免費 DSE 化學 化學平衡 歷屆試題｜DSE Hub",
+     "description": "免費查閱 DSE 化學「化學平衡」歷屆試題，按平衡常數同勒沙特列原理等課題操練。DSE Hub 真正完全免費。",
      "h1": "DSE 化學：化學平衡",
      "blurb": "集中溫習化學平衡、平衡常數同勒沙特列原理。",
      "guide": [
@@ -662,8 +658,8 @@ TOPIC_PAGES = [
      ]},
     {"subject_id": "chem", "name": "電解與電化學", "slug": "electrolysis-electrochemistry", "strand": None,
      "tags": ["電解", "化學電池", "燃料電池", "電鍍", "導電性", "鏽蝕"],
-     "title": "免費 DSE 化學 電解與電化學 歷屆試題｜DSE 數學題庫",
-     "description": "免費查閱 DSE 化學「電解與電化學」歷屆試題，按電解、化學電池、燃料電池同電鍍等課題操練。DSE 數學題庫 真正完全免費。",
+     "title": "免費 DSE 化學 電解與電化學 歷屆試題｜DSE Hub",
+     "description": "免費查閱 DSE 化學「電解與電化學」歷屆試題，按電解、化學電池、燃料電池同電鍍等課題操練。DSE Hub 真正完全免費。",
      "h1": "DSE 化學：電解與電化學",
      "blurb": "集中溫習電解、化學電池、燃料電池同電鍍。",
      "guide": [
@@ -673,8 +669,8 @@ TOPIC_PAGES = [
      ]},
     {"subject_id": "chem", "name": "熱化學", "slug": "thermochemistry", "strand": None,
      "tags": ["焓變", "赫斯定律", "生成焓", "燃燒焓", "量熱法", "燃燒"],
-     "title": "免費 DSE 化學 熱化學 歷屆試題｜DSE 數學題庫",
-     "description": "免費查閱 DSE 化學「熱化學」歷屆試題，按焓變、赫斯定律、生成焓同量熱法等課題操練。DSE 數學題庫 真正完全免費。",
+     "title": "免費 DSE 化學 熱化學 歷屆試題｜DSE Hub",
+     "description": "免費查閱 DSE 化學「熱化學」歷屆試題，按焓變、赫斯定律、生成焓同量熱法等課題操練。DSE Hub 真正完全免費。",
      "h1": "DSE 化學：熱化學",
      "blurb": "集中溫習焓變、赫斯定律、燃燒焓同量熱法。",
      "guide": [
@@ -684,8 +680,8 @@ TOPIC_PAGES = [
      ]},
     {"subject_id": "chem", "name": "金屬與周期表", "slug": "metals-periodic-table", "strand": None,
      "tags": ["周期表", "過渡金屬", "金屬活性序", "同位素", "鋁", "鐵", "金屬", "銅"],
-     "title": "免費 DSE 化學 金屬與周期表 歷屆試題｜DSE 數學題庫",
-     "description": "免費查閱 DSE 化學「金屬與周期表」歷屆試題，按金屬活性序、過渡金屬、同位素同周期表等課題操練。DSE 數學題庫 真正完全免費。",
+     "title": "免費 DSE 化學 金屬與周期表 歷屆試題｜DSE Hub",
+     "description": "免費查閱 DSE 化學「金屬與周期表」歷屆試題，按金屬活性序、過渡金屬、同位素同周期表等課題操練。DSE Hub 真正完全免費。",
      "h1": "DSE 化學：金屬與周期表",
      "blurb": "集中溫習周期表、金屬活性序、過渡金屬同同位素。",
      "guide": [
@@ -695,9 +691,6 @@ TOPIC_PAGES = [
      ]},
 ]
 
-# 純數學站：TOPIC_PAGES 只保留 math（econ/chem 條目留喺 literal 會令 rebuild 復活舊頁）
-TOPIC_PAGES = [tp for tp in TOPIC_PAGES if tp["subject_id"] == "math"]
-
 # Map a curriculum / topic name to its landing slug (same subject).
 TOPIC_SLUG_BY_NAME = {}
 for _tp in TOPIC_PAGES:
@@ -706,9 +699,9 @@ for _tp in TOPIC_PAGES:
 TOPIC_SLUG_BY_NAME[("math", "多項式（續）")] = "polynomials-factorization"
 TOPIC_SLUG_BY_NAME[("math", "百分法")] = "percentages-interest"
 
-HUB_TITLE = "免費 DSE 數學歷屆試題 Past Paper（Core／M1／M2）｜DSE 數學題庫"
-HUB_DESC = "免費查閱香港中學文憑試（DSE）數學歷屆試題：必修 Core 卷一卷二，仲有延伸 M1、M2。按年份或課題溫習，中英文卷、即時核對選擇題答案。唔使報名，即時喺 DSE 數學題庫開卷。"
-HUB_H1 = "香港中學文憑（DSE）數學歷屆試題庫（必修＋延伸）"
+HUB_TITLE = "免費 DSE 數學歷屆試題 Past Paper｜按年份、課題溫習｜DSE Hub"
+HUB_DESC = "免費查閱香港中學文憑試（DSE）數學（必修部分）歷屆試題，按年份或課題溫習，支援中英文卷、即時核對選擇題答案。唔使報名，即時喺 DSE Hub 開卷。"
+HUB_H1 = "香港中學文憑（DSE）歷屆試題資料庫"
 
 
 def esc(s):
@@ -793,14 +786,14 @@ def seo_head(
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{esc(title)}</title>
 <meta name="description" content="{esc(description)}">
-<meta name="keywords" content="DSE, 香港中學文憑, 歷屆試題, past paper, DSE 數學, DSE 數學題庫, DSE M1, DSE M2, 數學延伸單元, 免費題庫, 按課題">
+<meta name="keywords" content="DSE, 香港中學文憑, 歷屆試題, past paper, DSE 數學, DSE 經濟, DSE 化學, DSE 生物, DSE 物理, 免費題庫, 按課題">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="googlebot" content="index, follow">
-<meta name="author" content="{BRAND}">
+<meta name="author" content="DSE Hub">
 <link rel="canonical" href="{esc(canonical)}">
 {alt_html}
 <meta property="og:type" content="{esc(og_type)}">
-<meta property="og:site_name" content="{BRAND}">
+<meta property="og:site_name" content="DSE Hub">
 <meta property="og:locale" content="{esc(og_locale)}">
 <meta property="og:title" content="{esc(title)}">
 <meta property="og:description" content="{esc(description)}">
@@ -821,13 +814,13 @@ def seo_head(
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="apple-mobile-web-app-title" content="{BRAND}">
-<meta name="application-name" content="{BRAND}">
+<meta name="apple-mobile-web-app-title" content="DSE Hub">
+<meta name="application-name" content="DSE Hub">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/hub/style.css?v={VER}">
-<link rel="alternate" type="application/rss+xml" title="DSE 數學題庫 最新題目分析" href="{SITE}/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="DSE Hub 最新題目分析" href="{SITE}/feed.xml">
 {GA4_TAG}
 <script defer src="/js/track.js?v={VER}"></script>
 {extra}"""
@@ -984,9 +977,9 @@ def make_og():
         img.paste(icon, (80, 200), icon)
 
     left = 280 if icon_path.exists() else 80
-    draw.text((left, 168), "DSE 數學題庫", font=font_black, fill="#ffffff")
-    draw.text((left, 290), "香港中學文憑數學歷屆試題庫", font=font_bold, fill="#eef3fb")
-    draw.text((left, 360), "必修 Core · 延伸 M1 · 延伸 M2", font=font_med, fill="#93c5fd")
+    draw.text((left, 168), "DSE Hub", font=font_black, fill="#ffffff")
+    draw.text((left, 290), "香港中學文憑歷屆試題資料庫", font=font_bold, fill="#eef3fb")
+    draw.text((left, 360), "數學 · 經濟 · 化學 · 生物 · 物理", font=font_med, fill="#93c5fd")
     draw.text((left, 430), "免費　按年份或課題　Past Paper", font=font_sm, fill="#8b9bb3")
     draw.text((80, 560), "hkdse.exampaper.cloud", font=font_sm, fill="#64748b")
     out = ROOT / "og-image.png"
@@ -1046,7 +1039,7 @@ def make_htaccess():
     # - 短 cache（HTML 60s、css/js 5min）壓住 Hostinger CDN 預設
     # - 唔再有 /math/<年>/<卷>/ → reader fragment 301（深度分析頁係正式 indexable 頁面）
     (ROOT / ".htaccess").write_text(
-        """# DSE 數學題庫 — HTTPS, apex host, static defaults
+        """# DSE Hub — HTTPS, apex host, static defaults
 DirectoryIndex index.html
 Options -Indexes
 
@@ -1150,11 +1143,6 @@ def make_sitemap():
         for loc in re.findall(r"<loc>(.*?)</loc>", sm_path.read_text(encoding="utf-8")):
             if loc in seen or loc.rstrip("/") == SITE or loc.endswith(".pdf"):
                 continue
-            # 純數學站：preserve 只保留數學／課題／hub／blog／M1／M2 路徑（bafs/geog 等舊 resource 頁唔再收）
-            if not loc.startswith(
-                (f"{SITE}/math/", f"{SITE}/topics/", f"{SITE}/hub/", f"{SITE}/blog/", f"{SITE}/m1/", f"{SITE}/m2/")
-            ):
-                continue
             if sitemap_local_path(loc).is_file():
                 seen.add(loc)
                 urls.append((loc, "0.5", "monthly"))
@@ -1227,8 +1215,8 @@ def make_hub(catalog, papers):
             {
                 "@type": "WebSite",
                 "@id": f"{SITE}/#website",
-                "name": BRAND,
-                "alternateName": ["DSE 數學題庫", "DSE Maths Past Paper 題庫", "香港中學文憑數學歷屆試題"],
+                "name": "DSE Hub",
+                "alternateName": ["DSE 歷屆試題資料庫", "香港中學文憑歷屆試題"],
                 "url": HUB,
                 "inLanguage": "zh-Hant-HK",
                 "description": HUB_DESC,
@@ -1238,7 +1226,7 @@ def make_hub(catalog, papers):
             {
                 "@type": "Organization",
                 "@id": f"{SITE}/#org",
-                "name": BRAND,
+                "name": "DSE Hub",
                 "url": HUB,
                 "logo": f"{SITE}/icons/icon-512.png",
             },
@@ -1251,21 +1239,23 @@ def make_hub(catalog, papers):
                 "inLanguage": "zh-Hant-HK",
                 "isPartOf": {"@id": f"{SITE}/#website"},
                 "about": [
-                    {"@type": "Thing", "name": "數學（必修 Core）"},
-                    {"@type": "Thing", "name": "數學延伸 M1"},
-                    {"@type": "Thing", "name": "數學延伸 M2"},
+                    {"@type": "Thing", "name": s["name"]} for s in SUBJECTS
                 ],
                 "mainEntity": {"@id": f"{HUB}#papers"},
             },
             {
                 "@type": "ItemList",
                 "@id": f"{HUB}#papers",
-                "name": "DSE 數學歷屆試題卷組",
-                "numberOfItems": 3,
+                "name": "DSE 歷屆試題科目",
+                "numberOfItems": 5,
                 "itemListElement": [
-                    {"@type": "ListItem", "position": 1, "name": "數學必修 Core（卷一／卷二）", "url": f"{SITE}/math/"},
-                    {"@type": "ListItem", "position": 2, "name": "數學延伸 M1", "url": f"{HUB}?track=m1"},
-                    {"@type": "ListItem", "position": 3, "name": "數學延伸 M2", "url": f"{HUB}?track=m2"},
+                    {
+                        "@type": "ListItem",
+                        "position": i,
+                        "name": s["name"],
+                        "url": f"{SITE}/{s['slug']}/",
+                    }
+                    for i, s in enumerate(SUBJECTS, 1)
                 ],
             },
             {
@@ -1275,10 +1265,8 @@ def make_hub(catalog, papers):
         ],
     }
     faq_html = faq_block(HUB_FAQS)
-    footer_links = (
-        f'<a href="/math/">Core 必修</a> · '
-        f'<a href="{HUB}?track=m1">M1</a> · '
-        f'<a href="{HUB}?track=m2">M2</a>'
+    footer_links = " · ".join(
+        f'<a href="/{s["slug"]}/">{esc(s["short"])}</a>' for s in SUBJECTS
     )
     add_sitemap(HUB, "1.0", "daily")
     page = f"""<!DOCTYPE html>
@@ -1290,16 +1278,16 @@ def make_hub(catalog, papers):
 <body>
 <header class="top">
   <div class="top-row">
-    <p class="brand-lockup" aria-label="DSE 數學題庫">
+    <p class="brand-lockup" aria-label="DSE Hub">
       <span class="brand-dse">DSE</span>
-      <span class="brand">數學題庫</span>
+      <span class="brand">hub</span>
     </p>
-    <button type="button" class="install-btn" data-install-app title="安裝 DSE 數學題庫至主畫面">
+    <button type="button" class="install-btn" data-install-app title="安裝 DSE Hub 至主畫面">
       <span>安裝</span>
     </button>
   </div>
   <h1>{esc(HUB_H1)}</h1>
-  <p class="tagline">Core・M1・M2 歷屆試題、逐題深度分析——完全免費嘅 DSE 數學 Past Paper 題庫。</p>
+  <p class="tagline">即時睇題目／題解，自選按課題操卷——完全免費，真正方便用家既 Past Paper 收集平台。</p>
   <div class="install-tip" id="installTip" hidden>
     <div class="install-tip-body">
       <strong>一鍵加入主畫面</strong>
@@ -1311,11 +1299,6 @@ def make_hub(catalog, papers):
 
 <nav class="filters" aria-label="篩選">
   <div class="filters-inner">
-    <div class="seg" id="trackSeg" role="tablist" aria-label="數學卷組">
-      <button type="button" data-track="math" class="on" role="tab" aria-selected="true">Core</button>
-      <button type="button" data-track="m1" role="tab" aria-selected="false">M1</button>
-      <button type="button" data-track="m2" role="tab" aria-selected="false">M2</button>
-    </div>
     <div class="seg" id="modeSeg" role="tablist" aria-label="瀏覽方式">
       <button type="button" data-mode="year" class="on" role="tab" aria-selected="true">按年份</button>
       <button type="button" data-mode="topic" role="tab" aria-selected="false">按課題</button>
@@ -1325,6 +1308,10 @@ def make_hub(catalog, papers):
       <div class="topic-search-list" id="topicSearchList" hidden></div>
     </div>
     <div class="bar" id="yearBar">
+      <div class="field">
+        <label for="bSubj">科目</label>
+        <button type="button" class="reel-btn" id="bSubj" data-key="subject">所有</button>
+      </div>
       <div class="field">
         <label for="bYear" id="l2">年份</label>
         <button type="button" class="reel-btn" id="bYear" data-key="year">所有</button>
@@ -1344,7 +1331,7 @@ def make_hub(catalog, papers):
   </section>
 </main>
 {faq_html}
-<footer>站內只放索引、連結同課題標籤，唔存放試卷原卷 · 只顯示資料庫已有內容<br>卷組：{footer_links}<br>相關：<a href="{esc(VISUAL_TUTOR)}" rel="noopener">{esc(VISUAL_TUTOR_LABEL)}</a></footer>
+<footer>站內只放索引、連結同課題標籤，唔存放試卷原卷 · 只顯示資料庫已有內容<br>科目：{footer_links}<br>相關：<a href="{esc(VISUAL_TUTOR)}" rel="noopener">{esc(VISUAL_TUTOR_LABEL)}</a></footer>
 
 <!-- 滾輪選擇器 -->
 <div class="reel-overlay" id="reel" hidden>
@@ -1353,7 +1340,7 @@ def make_hub(catalog, papers):
     <div class="reel-grabber" aria-hidden="true"></div>
     <div class="reel-head">
       <button type="button" class="reel-link" id="reelCancel">取消</button>
-      <span id="reelTitle">年份／卷別</span>
+      <span id="reelTitle">科目</span>
       <button type="button" class="reel-link ok" id="reelDone">完成</button>
     </div>
     <div class="reel-window">
@@ -1404,7 +1391,7 @@ def make_subject_pages(catalog, papers):
         graph = {
             "@context": "https://schema.org",
             "@graph": [
-                ld_breadcrumb([("/hub/", "DSE 數學題庫"), (url, s["short"])]),
+                ld_breadcrumb([("/hub/", "DSE Hub"), (url, s["short"])]),
                 {
                     "@type": "CollectionPage",
                     "name": s["title"],
@@ -1437,7 +1424,7 @@ def make_subject_pages(catalog, papers):
         topic_cta = (
             f'<p class="page-cta"><a href="/hub/?subject={s["id"]}&amp;mode=topic">按課題篩選{esc(s["short"])}題目</a>'
             f' · <a href="/hub/?subject={s["id"]}&amp;mode=year">按年份睇卷</a>'
-            f' · <a href="/hub/">返回 DSE 數學題庫主頁</a></p>'
+            f' · <a href="/hub/">返回 DSE Hub 主頁</a></p>'
         )
         strand_links = "\n    ".join(
             f'<a href="/{st["subject_id"]}/{st["slug"]}/">{esc(st["name"])}</a>'
@@ -1477,8 +1464,8 @@ def make_subject_pages(catalog, papers):
 <header class="hero">
   <div class="hero-glow" aria-hidden="true"></div>
   <div class="hero-inner">
-    {crumb_html([("/hub/", "DSE 數學題庫"), (None, s["short"])])}
-    <p class="brand">DSE 數學題庫</p>
+    {crumb_html([("/hub/", "DSE Hub"), (None, s["short"])])}
+    <p class="brand">DSE Hub</p>
     <h1>{esc(s['h1'])}</h1>
     <p class="tagline">{esc(s['blurb'])} 而家資料庫有 {len(rows)} 卷{('（' + span + '）') if span else ''}。</p>
         {subject_nav(catalog, current=s['id'])}
@@ -1490,7 +1477,7 @@ def make_subject_pages(catalog, papers):
 {strand_block}{topic_block}{chr(10).join(sections)}
 {faq}
 </main>
-{site_footer(f'<a href="/hub/">返回 DSE 數學題庫主頁</a>')}
+{site_footer(f'<a href="/hub/">返回 DSE Hub 主頁</a>')}
 </body>
 </html>
 """
@@ -1814,15 +1801,6 @@ def patch_hub_data(papers):
     def add_path(m):
         full = m.group(0)
         hash_ = m.group(1)
-        # M1／M2 rows：直接入 /m1|/m2/<year>/paper-1-en/ 卷頁（gen_m1/gen_m2 生成）；
-        # 冇 landing 嘅年份（如 PP row）留空 → viewHrefFor fallback reader 深連結
-        idm = re.search(r'id:\s*"(\w+)"', full)
-        ym = re.search(r'year:\s*(\d{4})', full)
-        if idm and ym and idm.group(1) in ("m1", "m2"):
-            land = ROOT / idm.group(1) / ym.group(1) / "paper-1-en" / "index.html"
-            if land.is_file():
-                return full[:-1] + f', path: "/{idm.group(1)}/{ym.group(1)}/paper-1-en/"' + "}"
-            return full
         lg = re.search(r'lang:\s*"([^"]+)"', full)
         landing = by_key.get((hash_, lg.group(1))) if lg else None
         if not landing:
@@ -1884,10 +1862,8 @@ function viewHrefFor(r) {
             text = path.read_text(encoding="utf-8")
     hook = """(function applyQuery() {
   const p = new URLSearchParams(location.search);
-  /* 卷組：?track=core|m1|m2（新）；?subject= 舊連結兼容 — econ/chem 等靜默 fallback Core */
-  const TRACKS = { core: "math", math: "math", m1: "m1", m2: "m2" };
-  const t = (p.get("track") || p.get("subject") || "").toLowerCase();
-  if (TRACKS[t]) state.subject = TRACKS[t];
+  const sid = p.get("subject");
+  if (sid && SID_SUBJECT[sid]) state.subject = sid;
   const mode = p.get("mode");
   if (mode === "topic" || mode === "year") state.mode = mode;
   const year = p.get("year");
@@ -1966,7 +1942,7 @@ def patch_root_index():
 <link rel="alternate" hreflang="x-default" href="{HUB}">
 <meta name="robots" content="index, follow">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="{BRAND}">
+<meta property="og:site_name" content="DSE Hub">
 <meta property="og:locale" content="zh_HK">
 <meta property="og:title" content="{esc(HUB_TITLE)}">
 <meta property="og:description" content="{esc(HUB_DESC)}">
@@ -1985,7 +1961,7 @@ def patch_root_index():
         print("root index already patched (canonical=root)")
         return
     text = text.replace(old_desc, inject, 1)
-    noscript = '<noscript><p><a href="/hub/">開啟 DSE 歷屆試題資料庫（DSE 數學題庫）</a>。本站亦有 <a href="/math/">數學</a>、<a href="/econ/">經濟</a>、<a href="/chem/">化學</a>、<a href="/bio/">生物</a>、<a href="/phys/">物理</a> 科目頁。</p></noscript>\n'
+    noscript = '<noscript><p><a href="/hub/">開啟 DSE 歷屆試題資料庫（DSE Hub）</a>。本站亦有 <a href="/math/">數學</a>、<a href="/econ/">經濟</a>、<a href="/chem/">化學</a>、<a href="/bio/">生物</a>、<a href="/phys/">物理</a> 科目頁。</p></noscript>\n'
     if "<noscript>" not in text:
         text = text.replace("<body>", "<body>\n" + noscript, 1)
     path.write_text(text, encoding="utf-8")
@@ -2010,7 +1986,7 @@ def parse_topics():
         topics[sid] = {}
         for name, arr in re.findall(r'"([^"]+)":\s*\[(.*?)\]', body, re.S):
             topics[sid][name] = re.findall(r'"([^"]+)"', arr)
-    if set(topics) != {"math"}:
+    if set(topics) != {"math", "econ"}:
         raise SystemExit(f"unexpected TOPICS subjects: {list(topics)}")
     for st in STRANDS:
         kws = topics.get(st["subject_id"], {}).get(st["name"])
@@ -2180,7 +2156,7 @@ def make_feed():
     parts = [
         '<?xml version="1.0" encoding="UTF-8"?>',
         '<rss version="2.0"><channel>',
-        f"<title>DSE 數學題庫 最新題目分析</title>",
+        f"<title>DSE Hub 最新題目分析</title>",
         f"<link>{SITE}/</link>",
         "<description>DSE 數學逐題深度分析＋備試文章（hkdse.exampaper.cloud）</description>",
         "<language>zh-Hant-HK</language>",
@@ -2295,7 +2271,7 @@ def ld_breadcrumb(items):
 def site_footer(extra=""):
     vt = f'<a href="{esc(VISUAL_TUTOR)}" rel="noopener">{esc(VISUAL_TUTOR_LABEL)}</a>'
     parts = [extra] if extra else []
-    parts.append(f'<a href="/hub/">DSE 數學題庫 主頁</a>')
+    parts.append(f'<a href="/hub/">DSE Hub 主頁</a>')
     parts.append(f"相關：{vt}")
     parts.append("站內只放索引、連結同課題標籤，只顯示資料庫已有內容")
     return "<footer>" + " · ".join(parts) + "</footer>"
@@ -2338,20 +2314,20 @@ def faq_block(pairs):
 
 
 FAQ_FREE = (
-    "DSE 數學題庫係咪免費？",
-    "係，真正完全免費查閱 DSE 數學歷屆試題索引同題目，唔使報名，亦唔使信用卡。",
+    "DSE Hub 係咪免費？",
+    "係，真正完全免費查閱香港中學文憑試歷屆試題索引同題目，唔使報名，亦唔使信用卡。",
 )
 FAQ_TOPIC = (
     "可唔可以按課題操練？",
-    "可以。喺 DSE 數學題庫揀「按課題」，或者開啟各課題頁，就會列出相關題目，方便集中操同一類型。",
+    "可以。喺 DSE Hub 揀「按課題」，或者開啟各課題頁，就會列出相關題目，方便集中操同一類型。",
 )
 FAQ_FIND_YEAR = (
     "點樣搵某一年嘅 DSE past paper？",
-    "喺 DSE 數學題庫主頁先揀 Core／M1／M2，再揀年份（Core 仲可以揀卷一或卷二），即刻開卷。",
+    "喺 DSE Hub 主頁揀「按年份」，再揀科目同年份；或者開啟科目頁，撳對應年份就可以睇嗰年各卷。",
 )
 FAQ_ENGLISH = (
     "有冇英文卷可以操？",
-    "有。必修 Core 卷一卷二同延伸 M1／M2 都有英文卷，部分年份另有中文卷。每卷頁會標明語言。",
+    "有。數學同經濟部分年份提供英文卷；化學、生物、物理而家主要係中文卷。每卷頁會標明語言。",
 )
 FAQ_PDF = (
     "可唔可以下載 PDF 原卷？",
@@ -2362,8 +2338,8 @@ FAQ_MOBILE = (
     "可以。網站已為手機優化，亦支援加到主畫面，方便隨身搵 DSE past paper 同操卷。",
 )
 FAQ_SUBJECTS = (
-    "呢個站係咪淨係數學？",
-    "係，DSE 數學題庫專注數學一科：必修 Core（卷一／卷二）加延伸 M1、M2，非數學科目唔喺收錄範圍。",
+    "而家有邊啲科目？",
+    "而家有數學（必修部分）、經濟、化學、生物同物理。每科已上線嘅年份同卷別，以資料庫實際內容為準，科目頁會列出全部已有卷。",
 )
 FAQ_OFFICIAL = (
     "呢度係咪官方原卷檔案庫？",
@@ -2572,9 +2548,9 @@ def _kw_match_html(kw, rows, sid, tag_counts=None):
         )
         links.append("對應題目標籤：" + tag_bits)
     elif not topic_href:
-        links.append(f'<a href="{esc(hub)}">喺 DSE 數學題庫 按課題查看全部 {len(rows)} 題</a>')
+        links.append(f'<a href="{esc(hub)}">喺 DSE Hub 按課題查看全部 {len(rows)} 題</a>')
     else:
-        links.append(f'<a href="{esc(hub_topic_path(sid, kw if not tag_counts else tag_counts[0][0]))}">喺 DSE 數學題庫 按課題篩選</a>')
+        links.append(f'<a href="{esc(hub_topic_path(sid, kw if not tag_counts else tag_counts[0][0]))}">喺 DSE Hub 按課題篩選</a>')
     return (
         '<section class="kw-block">\n'
         f'  <h3>{esc(kw)} <span class="kw-count">{len(rows)} 題</span></h3>\n'
@@ -2658,7 +2634,7 @@ def make_strand_pages(catalog, questions, topics):
                 {
                     "@type": "BreadcrumbList",
                     "itemListElement": [
-                        {"@type": "ListItem", "position": 1, "name": "DSE 數學題庫", "item": HUB},
+                        {"@type": "ListItem", "position": 1, "name": "DSE Hub", "item": HUB},
                         {"@type": "ListItem", "position": 2, "name": s["short"], "item": subj_url},
                         {"@type": "ListItem", "position": 3, "name": st["name"], "item": url},
                     ],
@@ -2714,13 +2690,13 @@ def make_strand_pages(catalog, questions, topics):
                 '  <div class="hero-glow" aria-hidden="true"></div>',
                 '  <div class="hero-inner">',
                 '    <nav class="crumb" aria-label="麵包屑">',
-                '      <a href="/hub/">DSE 數學題庫</a>',
+                '      <a href="/hub/">DSE Hub</a>',
                 '      <span aria-hidden="true">／</span>',
                 f'      <a href="/{st["subject_id"]}/">{esc(s["short"])}</a>',
                 '      <span aria-hidden="true">／</span>',
                 f"      <span>{esc(st['name'])}</span>",
                 "    </nav>",
-                '    <p class="brand">DSE 數學題庫</p>',
+                '    <p class="brand">DSE Hub</p>',
                 f"    <h1>{esc(st['h1'])}</h1>",
                 f'    <p class="tagline">{esc(tagline)}</p>',
                 f"        {subject_nav(catalog, current=st['subject_id'])}",
@@ -2884,7 +2860,7 @@ def hero_html(crumbs, h1, tagline, catalog, sid, extra_nav="", cta=""):
         '  <div class="hero-glow" aria-hidden="true"></div>\n'
         '  <div class="hero-inner">\n'
         f"    {crumb_html(crumbs)}\n"
-        '    <p class="brand">DSE 數學題庫</p>\n'
+        '    <p class="brand">DSE Hub</p>\n'
         f"    <h1>{esc(h1)}</h1>\n"
         f'    <p class="tagline">{tagline}</p>\n'
         f"        {subject_nav(catalog, current=sid)}\n"
@@ -2920,7 +2896,7 @@ def make_year_pages(catalog, papers, questions):
         url = SITE + path
         n_papers = len(rows)
         n_qs = len(yqs)
-        title = f"免費 DSE {s['short']} {year} 歷屆試題｜DSE 數學題庫"
+        title = f"免費 DSE {s['short']} {year} 歷屆試題｜DSE Hub"
         desc = (
             f"免費查閱 DSE {s['short']} {year} 年歷屆試題"
             + (f"，資料庫有 {n_papers} 卷" if n_papers else "")
@@ -2936,7 +2912,7 @@ def make_year_pages(catalog, papers, questions):
         )
         hub_link = f"/hub/?subject={sid}&amp;mode=year&amp;year={year}"
         cta = (
-            f'<p class="page-cta"><a href="{hub_link}">喺 DSE 數學題庫 按年份睇 {year} 年卷</a>'
+            f'<p class="page-cta"><a href="{hub_link}">喺 DSE Hub 按年份睇 {year} 年卷</a>'
             f' · <a href="/{sid}/">返回{esc(s["short"])}科目頁</a>'
             f' · <a href="/hub/?subject={sid}&amp;mode=topic">按課題溫習</a></p>'
         )
@@ -2966,11 +2942,11 @@ def make_year_pages(catalog, papers, questions):
         if topic_hits:
             # Keep a compact topic strip in the hero so year ↔ topic is obvious.
             extra_nav += "\n        " + nav_pills(topic_hits[:10], label="本年課題")
-        crumbs = [("/hub/", "DSE 數學題庫"), (f"/{sid}/", s["short"]), (None, str(year))]
+        crumbs = [("/hub/", "DSE Hub"), (f"/{sid}/", s["short"]), (None, str(year))]
         graph = {
             "@context": "https://schema.org",
             "@graph": [
-                ld_breadcrumb([("/hub/", "DSE 數學題庫"), (f"/{sid}/", s["short"]), (url, str(year))]),
+                ld_breadcrumb([("/hub/", "DSE Hub"), (f"/{sid}/", s["short"]), (url, str(year))]),
                 {
                     "@type": "CollectionPage",
                     "name": title,
@@ -3029,10 +3005,10 @@ def make_paper_pages(catalog, papers, questions, analyses=None):
         url = SITE + path
         qs = r["questions"]
         nq = len(qs)
-        title = f"免費 DSE {s['short']} {r['year']} {r['paper']}（{r['lang']}）歷屆試題｜DSE 數學題庫"
+        title = f"免費 DSE {s['short']} {r['year']} {r['paper']}（{r['lang']}）歷屆試題｜DSE Hub"
         desc = (
             f"免費查閱 DSE {s['short']} {r['year']} 年{r['paper']}（{r['lang']}）歷屆試題"
-            + (f"，資料庫有 {nq} 題索引，可逐題開啟。" if nq else "。可喺 DSE 數學題庫 開啟呢份卷。")
+            + (f"，資料庫有 {nq} 題索引，可逐題開啟。" if nq else "。可喺 DSE Hub 開啟呢份卷。")
             + "真正完全免費。"
         )
         h1 = f"DSE {s['short']} {r['year']} {r['paper']}（{r['lang']}）"
@@ -3047,7 +3023,7 @@ def make_paper_pages(catalog, papers, questions, analyses=None):
             f'<p class="page-cta open-cta"><a href="{esc(open_href)}">喺題庫開啟呢份卷</a>'
             f' · <a href="{esc(year_href)}">返回 {r["year"]} 年頁</a>'
             f' · <a href="/{r["id"]}/">返回{esc(s["short"])}科目頁</a>'
-            f' · <a href="{hub_qs}">喺 DSE 數學題庫 篩選呢一年</a></p>'
+            f' · <a href="{hub_qs}">喺 DSE Hub 篩選呢一年</a></p>'
         )
         siblings = [
             (p["path"], f"{p['paper']}（{p['lang']}）", p["path"])
@@ -3060,7 +3036,7 @@ def make_paper_pages(catalog, papers, questions, analyses=None):
         if paper_topics:
             extra_nav += "\n        " + nav_pills(paper_topics[:8], label="相關課題")
         crumbs = [
-            ("/hub/", "DSE 數學題庫"),
+            ("/hub/", "DSE Hub"),
             (f"/{r['id']}/", s["short"]),
             (year_path(r["id"], r["year"]), str(r["year"])),
             (None, f"{r['paper']}（{r['lang']}）"),
@@ -3091,7 +3067,7 @@ def make_paper_pages(catalog, papers, questions, analyses=None):
             "@graph": [
                 ld_breadcrumb(
                     [
-                        ("/hub/", "DSE 數學題庫"),
+                        ("/hub/", "DSE Hub"),
                         (f"/{r['id']}/", s["short"]),
                         (year_path(r["id"], r["year"]), str(r["year"])),
                         (url, f"{r['paper']}（{r['lang']}）"),
@@ -3237,7 +3213,7 @@ def _analysis_section_html(analysis):
 def _qpage_graph(sid, s, akey, url, paper_row, qno, name, qtext, answers, accepted, lang_code, topic):
     """QAPage + LearningResource + Breadcrumb（zh/en 兩版共用）。"""
     crumbs = [
-        ("/hub/", "DSE 數學題庫"),
+        ("/hub/", "DSE Hub"),
         (f"/{sid}/", s["short"] if lang_code == "zh-Hant-HK" else s["en"]),
         (year_path(sid, akey[1]), akey[1]),
         (SITE + paper_row["path"], f"{paper_row['paper']}（{paper_row['lang']}）"),
@@ -3351,7 +3327,7 @@ def make_question_pages(catalog, papers, questions, analyses):
             zh_url_by_key[akey] = zh_url
             qzh = paper_zh_label(code)
             tt = f"【{topic}】" if topic else ""
-            title = f"DSE {s['short']} {year} {qzh} 第 {qno} 題{tt}深度分析＋答案｜DSE 數學題庫"
+            title = f"DSE {s['short']} {year} {qzh} 第 {qno} 題{tt}深度分析＋答案｜DSE Hub"
             desc = (
                 f"DSE {s['short']} {year} {qzh} 第 {qno} 題深度解析：考點"
                 + (f"「{topic}」" if topic else "")
@@ -3361,7 +3337,7 @@ def make_question_pages(catalog, papers, questions, analyses):
             tagline = "考點圖譜 · 布魯姆認知層次 · 三層鷹架提示 · 誘答項逆向工程"
             bank_href = question_href(qzh_q)
             crumbs = [
-                ("/hub/", "DSE 數學題庫"),
+                ("/hub/", "DSE Hub"),
                 (f"/{sid}/", s["short"]),
                 (year_path(sid, year), year),
                 (zh_row["path"], f"{zh_row['paper']}（{zh_row['lang']}）"),
@@ -3449,7 +3425,7 @@ def make_question_pages(catalog, papers, questions, analyses):
         title = (
             f"DSE {subj_en} {year} {pl} Question {qno}"
             + (f" — {topic}" if topic else "")
-            + " — Answer, Traps & Speed Solution | DSE 數學題庫"
+            + " — Answer, Traps & Speed Solution | DSE Hub"
         )
         desc = (
             f"Free worked answer for DSE {subj_en} {year} {pl} Question {qno}: the correct answer,"
@@ -3460,7 +3436,7 @@ def make_question_pages(catalog, papers, questions, analyses):
         tagline = "Correct answer · Option traps · Speed strategy · Detailed analysis in Chinese"
         bank_href = question_href(qen_q)
         crumbs = [
-            ("/hub/", "DSE 數學題庫"),
+            ("/hub/", "DSE Hub"),
             (f"/{sid}/", subj_en),
             (year_path(sid, year), year),
             (en_row["path"], f"{pl} (English)"),
@@ -3578,7 +3554,7 @@ def make_topic_pages(catalog, questions, papers):
         )
         hub = hub_topic_path(sid)
         cta = (
-            f'<p class="page-cta"><a href="{esc(hub)}">喺 DSE 數學題庫 按課題篩選{esc(s["short"])}題目</a>'
+            f'<p class="page-cta"><a href="{esc(hub)}">喺 DSE Hub 按課題篩選{esc(s["short"])}題目</a>'
             f' · <a href="/{sid}/">返回{esc(s["short"])}科目頁</a>'
             f' · <a href="/hub/?subject={sid}&amp;mode=year">按年份睇卷</a></p>'
         )
@@ -3634,8 +3610,8 @@ def make_topic_pages(catalog, questions, papers):
             + q_list_html(rows, topic=tp["name"])
             + "\n</section>"
         )
-        crumbs = [("/hub/", "DSE 數學題庫"), (f"/{sid}/", s["short"])]
-        crumb_ld = [("/hub/", "DSE 數學題庫"), (f"/{sid}/", s["short"])]
+        crumbs = [("/hub/", "DSE Hub"), (f"/{sid}/", s["short"])]
+        crumb_ld = [("/hub/", "DSE Hub"), (f"/{sid}/", s["short"])]
         if tp.get("strand"):
             st = next((x for x in STRANDS if x["slug"] == tp["strand"] and x["subject_id"] == sid), None)
             if st:
@@ -3725,7 +3701,7 @@ def make_question_redirect_stubs():
             f'<meta http-equiv="refresh" content="0; url={esc(url)}">\n'
             f'<link rel="canonical" href="{esc(url)}">\n'
             '<meta name="robots" content="noindex, follow">\n'
-            "<title>呢頁已搬遷｜DSE 數學題庫</title>\n"
+            "<title>呢頁已搬遷｜DSE Hub</title>\n"
             f"{GA4_TAG}\n</head>\n<body>\n"
             f'<p>呢頁已搬到 <a href="{esc(url)}">{esc(url)}</a>。</p>\n'
             "</body>\n</html>\n"
@@ -3743,30 +3719,6 @@ def make_redirects():
         "/questions/math/:year/:paper/q:qno/  /math/:year/:paper/q:qno/  301\n",
         encoding="utf-8",
     )
-
-
-def patch_offline_subjects():
-    """純數學站：econ/chem/bio/phys 頁面全部 noindex（檔案留 disk，舊連結唔會 404）。Idempotent。"""
-    n = 0
-    for sid in ("econ", "chem", "bio", "phys"):
-        d = ROOT / sid
-        if not d.is_dir():
-            continue
-        for p in d.rglob("index.html"):
-            t = p.read_text(encoding="utf-8", errors="replace")
-            m = re.search(r'<meta name="robots" content="([^"]*)"', t)
-            if m and "noindex" in m.group(1):
-                continue
-            new_meta = '<meta name="robots" content="noindex, follow">'
-            if m:
-                t = t.replace(m.group(0), new_meta, 1)
-            elif "</head>" in t:
-                t = t.replace("</head>", new_meta + "\n</head>", 1)
-            else:
-                continue
-            p.write_text(t, encoding="utf-8")
-            n += 1
-    print("offline subjects noindex:", n, "pages patched")
 
 
 def patch_blog_schema():
@@ -3796,10 +3748,10 @@ def patch_blog_schema():
                 "datePublished": pub,
                 "dateModified": pub,
                 "inLanguage": "zh-Hant-HK",
-                "author": {"@type": "Organization", "name": BRAND, "url": HUB},
+                "author": {"@type": "Organization", "name": "DSE Hub", "url": HUB},
                 "publisher": {
                     "@type": "Organization",
-                    "name": BRAND,
+                    "name": "DSE Hub",
                     "logo": {"@type": "ImageObject", "url": f"{SITE}/icons/icon-512.png"},
                 },
                 "mainEntityOfPage": {"@type": "WebPage", "@id": url},
@@ -3953,7 +3905,6 @@ def main():
     make_redirects()
     make_sitemap()
     make_feed()
-    patch_offline_subjects()
     patch_blog_schema()
     patch_css()
     patch_hub_data(papers)

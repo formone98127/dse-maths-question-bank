@@ -53,7 +53,7 @@ def main():
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>DSE 數學題目總目錄（{len(data)} 題逐題頁）｜DSE 數學題庫</title>
+<title>DSE 數學題目總目錄（{len(data)} 題逐題頁）｜DSE Hub</title>
 <meta name="description" content="DSE 數學 2019–2025 共 {len(data)} 條題目逐題頁目錄：官方評卷參考、答對率、課題標籤，一頁直達。">
 <link rel="canonical" href="https://hkdse.exampaper.cloud/questions/">
 <style>{CSS}</style>
@@ -67,7 +67,7 @@ def main():
 <main>
 {''.join(parts)}
 </main>
-<footer>© DSE 數學題庫　｜　hkdse.exampaper.cloud</footer>
+<footer>© DSE Hub　｜　hkdse.exampaper.cloud</footer>
 </body>
 </html>
 """

@@ -83,7 +83,7 @@ def main():
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>DSE 數學答對率統計（2012–2025）｜最難題目排行｜DSE 數學題庫</title>
+<title>DSE 數學答對率統計（2012–2025）｜最難題目排行｜DSE Hub</title>
 <meta name="description" content="DSE 數學歷屆 MC 答對率完整統計：{len(mc)} 題官方數據、每年平均答對率、最難 20 題逐題連結、各課題難度排行。">
 <link rel="canonical" href="{SITE}/stats/">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LTB27V0RGW"></script>
@@ -91,7 +91,7 @@ def main():
 <style>{CSS}</style>
 </head>
 <body>
-<header class="site"><div class="wrap"><a href="/hub/">← DSE 數學題庫</a> ｜ <a href="/questions/">全部題目目錄</a> ｜ <a href="/topics/">課題索引</a></div></header>
+<header class="site"><div class="wrap"><a href="/hub/">← DSE Hub</a> ｜ <a href="/questions/">全部題目目錄</a> ｜ <a href="/topics/">課題索引</a></div></header>
 <main class="wrap">
 <h1>DSE 數學答對率統計（2012–2025）</h1>
 <p class="lead">數據來自香港考試及評核局歷屆考生表現報告。答對率＝該題全體考生答對百分比。</p>
@@ -121,7 +121,7 @@ def main():
 
 <footer>
 <p>資料來源：香港考試及評核局《考生表現》報告（2012–2025）。題目版權屬香港考試及評核局所有，本站只提供索引同統計分析。</p>
-<p><a href="/hub/">返回 DSE 數學題庫</a> ｜ <a href="/questions/">逐題目錄</a> ｜ <a href="/topics/">按課題</a></p>
+<p><a href="/hub/">返回 DSE Hub</a> ｜ <a href="/questions/">逐題目錄</a> ｜ <a href="/topics/">按課題</a></p>
 </footer>
 </main>
 </body>

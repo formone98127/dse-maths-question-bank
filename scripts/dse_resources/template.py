@@ -204,7 +204,7 @@ def render_page(
     keywords: str | None = None,
     nav_html: str = "",
     cta_html: str = "",
-    footer_back: tuple[str, str] = ("/hub/", "返回 DSE 數學題庫 主頁"),
+    footer_back: tuple[str, str] = ("/hub/", "返回 DSE Hub 主頁"),
 ) -> str:
     """path like /chi/prescribed-texts/ (leading and trailing slash)."""
     assert path.startswith("/") and path.endswith("/"), path
@@ -238,7 +238,7 @@ def render_page(
         "url": canon,
         "inLanguage": "zh-Hant-HK",
         "isPartOf": {"@id": f"{BANK}/#website"},
-        "author": {"@type": "Organization", "name": "DSE 數學題庫"},
+        "author": {"@type": "Organization", "name": "DSE Hub"},
     }
     if schema_type == "CollectionPage":
         page_obj["about"] = {"@type": "Thing", "name": h1}
@@ -268,7 +268,7 @@ def render_page(
     )
     cta_block = cta_html or (
         '<p class="page-cta"><a href="/resources/">全科溫習資源</a> · '
-        '<a href="/hub/">返回 DSE 數學題庫 主頁</a></p>'
+        '<a href="/hub/">返回 DSE Hub 主頁</a></p>'
     )
     back_href, back_label = footer_back
 
@@ -282,12 +282,12 @@ def render_page(
 <meta name="keywords" content="{ekw}">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="googlebot" content="index, follow">
-<meta name="author" content="DSE 數學題庫">
+<meta name="author" content="DSE Hub">
 <link rel="canonical" href="{canon}">
 <link rel="alternate" hreflang="zh-Hant-HK" href="{canon}">
 <link rel="alternate" hreflang="x-default" href="{canon}">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="DSE 數學題庫">
+<meta property="og:site_name" content="DSE Hub">
 <meta property="og:locale" content="zh_HK">
 <meta property="og:title" content="{etitle}">
 <meta property="og:description" content="{edesc}">
@@ -295,7 +295,7 @@ def render_page(
 <meta property="og:image" content="{BANK}/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="DSE 數學題庫 香港中學文憑歷屆試題資料庫">
+<meta property="og:image:alt" content="DSE Hub 香港中學文憑歷屆試題資料庫">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{etitle}">
 <meta name="twitter:description" content="{edesc}">
@@ -308,8 +308,8 @@ def render_page(
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="apple-mobile-web-app-title" content="DSE 數學題庫">
-<meta name="application-name" content="DSE 數學題庫">
+<meta name="apple-mobile-web-app-title" content="DSE Hub">
+<meta name="application-name" content="DSE Hub">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -336,7 +336,7 @@ def render_page(
     <nav class="crumb" aria-label="麵包屑">
       {crumb_html}
       </nav>
-    <p class="brand">DSE 數學題庫</p>
+    <p class="brand">DSE Hub</p>
     <h1>{eh1}</h1>
     <p class="tagline">{etag}</p>
         {nav_block}
@@ -346,7 +346,7 @@ def render_page(
 <main class="subj-main">
 {body}
 </main>
-<footer><a href="{html.escape(back_href, quote=True)}">{html.escape(back_label)}</a> · <a href="/hub/">DSE 數學題庫 主頁</a> · 相關：<a href="{TUTOR}" rel="noopener">免費 DSE 數學視覺教程</a></footer>
+<footer><a href="{html.escape(back_href, quote=True)}">{html.escape(back_label)}</a> · <a href="/hub/">DSE Hub 主頁</a> · 相關：<a href="{TUTOR}" rel="noopener">免費 DSE 數學視覺教程</a></footer>
 </body>
 </html>
 """

@@ -40,7 +40,7 @@ PAPERS = [
         "folder": "paper-2",
         "lang": "zh-Hant-HK",
         "label": "卷二（中文）",
-        "title": "2012 DSE 數學卷二全卷操練｜45 題 MC 連答案｜DSE 數學題庫",
+        "title": "2012 DSE 數學卷二全卷操練｜45 題 MC 連答案｜DSE Hub",
         "desc": ("一頁操晒 2012 DSE 數學卷二全部 45 題 MC：題目、選項同答案逐題列出，"
                  "附逐題深度分析連結，適合計時操卷同考後對卷。"),
         "nav": "全卷操練（45 題連答案）",
@@ -50,7 +50,7 @@ PAPERS = [
         "folder": "paper-2-en",
         "lang": "zh-Hant-HK",
         "label": "卷二（英文）",
-        "title": "2012 DSE Maths Paper 2 操練｜45 MC 連答案｜DSE 數學題庫",
+        "title": "2012 DSE Maths Paper 2 操練｜45 MC 連答案｜DSE Hub",
         "desc": ("2012 DSE Maths Paper 2 full practice: all 45 MC questions with answers "
                  "on one page, linked to per-question deep analysis. Timed mock ready."),
         "nav": "全卷操練（45 題連答案）",
@@ -141,7 +141,7 @@ def render_quiz_page(meta, questions):
         {
             "@type": "BreadcrumbList",
             "itemListElement": [
-                {"@type": "ListItem", "position": 1, "name": "DSE 數學題庫", "item": SITE + "/hub/"},
+                {"@type": "ListItem", "position": 1, "name": "DSE Hub", "item": SITE + "/hub/"},
                 {"@type": "ListItem", "position": 2, "name": "數學", "item": SITE + "/math/"},
                 {"@type": "ListItem", "position": 3, "name": year, "item": f"{SITE}/math/{year}/"},
                 {"@type": "ListItem", "position": 4, "name": meta["label"], "item": paper_url},
@@ -197,12 +197,12 @@ def render_quiz_page(meta, questions):
 <meta name="keywords" content="{KEYWORDS}">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="googlebot" content="index, follow">
-<meta name="author" content="DSE 數學題庫">
+<meta name="author" content="DSE Hub">
 <link rel="canonical" href="{url}">
 <link rel="alternate" hreflang="zh-Hant-HK" href="{url}">
 <link rel="alternate" hreflang="x-default" href="{url}">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="DSE 數學題庫">
+<meta property="og:site_name" content="DSE Hub">
 <meta property="og:locale" content="zh_HK">
 <meta property="og:title" content="{meta['title']}">
 <meta property="og:description" content="{meta['desc']}">
@@ -210,7 +210,7 @@ def render_quiz_page(meta, questions):
 <meta property="og:image" content="{SITE}/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="DSE 數學題庫 香港中學文憑歷屆試題資料庫">
+<meta property="og:image:alt" content="DSE Hub 香港中學文憑歷屆試題資料庫">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{meta['title']}">
 <meta name="twitter:description" content="{meta['desc']}">
@@ -248,9 +248,9 @@ def render_quiz_page(meta, questions):
   <div class="hero-glow" aria-hidden="true"></div>
   <div class="hero-inner">
     <nav class="crumb" aria-label="麵包屑">
-      <a href="/hub/">DSE 數學題庫</a><span aria-hidden="true">／</span><a href="/math/">數學</a><span aria-hidden="true">／</span><a href="/math/{year}/">{year}</a><span aria-hidden="true">／</span><a href="/math/{year}/{folder}/">{meta['label']}</a><span aria-hidden="true">／</span><span>全卷操練</span>
+      <a href="/hub/">DSE Hub</a><span aria-hidden="true">／</span><a href="/math/">數學</a><span aria-hidden="true">／</span><a href="/math/{year}/">{year}</a><span aria-hidden="true">／</span><a href="/math/{year}/{folder}/">{meta['label']}</a><span aria-hidden="true">／</span><span>全卷操練</span>
     </nav>
-    <p class="brand">DSE 數學題庫</p>
+    <p class="brand">DSE Hub</p>
     <h1>{meta['title']}</h1>
     <p class="tagline">一頁操晒 {year} DSE 數學{meta['label']}全部 {len(questions)} 題 MC，題目、選項同答案逐題列出，每題附「逐題深度分析」連結。適合計時模擬操卷同考後對卷。</p>
     <nav class="strand-nav" aria-label="同年試卷">
@@ -264,7 +264,7 @@ def render_quiz_page(meta, questions):
 <main class="subj-main">
 {blocks_html}
 </main>
-<footer><a href="/math/{year}/{folder}/">返回 {year} {meta['label']}</a> · <a href="/math/">DSE 數學 Past Paper</a> · <a href="/hub/">DSE 數學題庫 主頁</a> · 站內只放索引、連結同課題標籤，只顯示資料庫已有內容</footer>
+<footer><a href="/math/{year}/{folder}/">返回 {year} {meta['label']}</a> · <a href="/math/">DSE 數學 Past Paper</a> · <a href="/hub/">DSE Hub 主頁</a> · 站內只放索引、連結同課題標籤，只顯示資料庫已有內容</footer>
 </body>
 </html>
 """

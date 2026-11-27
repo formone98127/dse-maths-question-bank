@@ -46,7 +46,7 @@ def build(rows):
         for i, (slug, name, cnt) in enumerate(rows[:20])
     )
     n = len(rows)
-    title = f"DSE 數學課題總匯（{n} 個課題）｜歷屆試題＋答案｜DSE 數學題庫"
+    title = f"DSE 數學課題總匯（{n} 個課題）｜歷屆試題＋答案｜DSE Hub"
     desc = f"按課題瀏覽 DSE 數學歷屆試題：{n} 個課題頁，收錄相關題目、答案、題解同考生答對率。"
     ga4 = GA4_TAG
     return f"""<!DOCTYPE html>
@@ -78,7 +78,7 @@ def build(rows):
 </head>
 <body>
 <header class="top" style="max-width:760px;margin:0 auto;padding:14px 16px 4px">
-  <p class="bc"><a href="/hub/">DSE 數學題庫</a> › <a href="/math/">數學</a> › 課題</p>
+  <p class="bc"><a href="/hub/">DSE Hub</a> › <a href="/math/">數學</a> › 課題</p>
 </header>
 <main class="main">
   <h1>DSE 數學課題總匯（{n} 個課題）</h1>
@@ -88,7 +88,7 @@ def build(rows):
   </ul>
 </main>
 <footer style="max-width:760px;margin:0 auto;padding:16px;color:rgba(235,235,245,.5);font-size:12.5px">
-  站內只放索引、連結同課題標籤 · <a href="/hub/" style="color:#409cff">返回 DSE 數學題庫</a> · <a href="/privacy/" style="color:#409cff">私隱政策</a>
+  站內只放索引、連結同課題標籤 · <a href="/hub/" style="color:#409cff">返回 DSE Hub</a> · <a href="/privacy/" style="color:#409cff">私隱政策</a>
 </footer>
 </body>
 </html>

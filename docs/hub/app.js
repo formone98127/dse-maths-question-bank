@@ -584,6 +584,7 @@ function render() {
     b.setAttribute("aria-selected", String(on));
   });
   syncButtons();
+  syncUnitSeg();
   topicSearchWrap.hidden = state.mode !== "topic";
   tsOptions = subjectSelected() ? optionsFor("topic").slice(2) : allSubjectTagOptions();
   topicSearch.value = "";
@@ -807,6 +808,15 @@ modeSeg.addEventListener("click", (e) => {
   state.topic = PLACE;
   render();
 });
+
+/* ===== 數學三掣：必修 Core／M1／M2（2026-11-27 Kin 指定）=====
+   掣本身係真連結（/hub/math/、/m1/、/m2/），冇 JS 都跳得；JS 只負責未揀數學時收埋。 */
+const unitSeg = $("unitSeg");
+
+function syncUnitSeg() {
+  if (!unitSeg) return;
+  unitSeg.hidden = state.subject !== "math";
+}
 
 
 (function applyQuery() {

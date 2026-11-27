@@ -86,11 +86,11 @@ def main():
 
     html = f"""<!DOCTYPE html><html lang="zh-Hant-HK"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>DSE 數學技能地圖｜20 大課題·知識點·常見陷阱｜DSE Hub</title>
+<title>DSE 數學技能地圖｜20 大課題·知識點·常見陷阱｜DSE 數學題庫</title>
 <meta name="description" content="DSE 數學技能地圖：20 大課題、知識點、公式、能力與錯選項陷阱分析，逐題對應，幫你知邊個概念最易失分。">
 <link rel="canonical" href="{SITE}/skills/">
 <style>{CSS}</style></head><body>
-<header class="site"><div class="wrap"><a href="/hub/">← DSE Hub</a> ｜ <a href="/questions/">題目目錄</a> ｜ <a href="/stats/">答對率統計</a></div></header>
+<header class="site"><div class="wrap"><a href="/hub/">← DSE 數學題庫</a> ｜ <a href="/questions/">題目目錄</a> ｜ <a href="/stats/">答對率統計</a></div></header>
 <main class="wrap">
 <h1>DSE 數學技能地圖</h1>
 <p class="lead">把每條題目拆成「課題 → 知識點 → 公式 → 能力 → 陷阱」。總共 {len(cards)} 張題卡，覆蓋必修同 M1。</p>
@@ -104,7 +104,7 @@ def main():
 <h2>點用呢個地圖</h2>
 <p>每條題目頁底部都有「技能分析」：主課題、相關課題、知識點、用到嘅能力，以及每個錯選項對應嘅陷阱。溫習時唔止知答案，仲知自己係「概念錯」定「計算錯」。</p>
 <footer>題目版權屬香港考試及評核局。技能分類為本站整理，非官方。<br>
-<a href="/hub/">DSE Hub</a> ｜ <a href="/questions/">全部題目</a> ｜ <a href="/topics/">按課題</a></footer>
+<a href="/hub/">DSE 數學題庫</a> ｜ <a href="/questions/">全部題目</a> ｜ <a href="/topics/">按課題</a></footer>
 </main></body></html>
 """
     out = SK / "index.html"
@@ -117,11 +117,11 @@ def main():
         body = md_to_html(m.read_text(encoding="utf-8"))
         page = f"""<!DOCTYPE html><html lang="zh-Hant-HK"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{year} DSE 數學卷二 技能地圖｜陷阱與知識點分析｜DSE Hub</title>
+<title>{year} DSE 數學卷二 技能地圖｜陷阱與知識點分析｜DSE 數學題庫</title>
 <meta name="description" content="{year} DSE 數學 Paper {paper} 技能地圖：逐題課題、知識點、能力、錯選項陷阱分佈。">
 <link rel="canonical" href="{SITE}/skills/{year}/paper-{paper}/">
 <style>{CSS}</style></head><body>
-<header class="site"><div class="wrap"><a href="/hub/">← DSE Hub</a> ｜ <a href="/skills/">技能地圖</a></div></header>
+<header class="site"><div class="wrap"><a href="/hub/">← DSE 數學題庫</a> ｜ <a href="/skills/">技能地圖</a></div></header>
 <main class="wrap">{body}
 <footer>題目版權屬香港考試及評核局；技能分類為本站整理。<br><a href="/skills/">返回技能地圖</a></footer>
 </main></body></html>

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """統一 448（＋2012）題目頁嘅 title / og:title / h1 / meta description 格式。
 
-新格式：`{year} DSE 數學 P{paper} Q{qno} 答案＋詳解｜答對率 {pct}%｜DSE Hub`
+新格式：`{year} DSE 數學 P{paper} Q{qno} 答案＋詳解｜答對率 {pct}%｜DSE 數學題庫`
 （P1 冇官方答對率就省略該段）
 
 用法：python3 scripts/normalize_q_titles.py [--dry]
@@ -35,7 +35,7 @@ def build(year, paper, qno, pct):
     head = f"{year} DSE 數學 P{paper} Q{qno} 答案＋詳解"
     if pct is not None:
         head += f"｜答對率 {pct}%"
-    return head + "｜DSE Hub"
+    return head + "｜DSE 數學題庫"
 
 
 def main():
@@ -61,7 +61,7 @@ def main():
         html = re.sub(r"<title>.*?</title>", f"<title>{new_title}</title>", html, count=1)
         html = re.sub(r'(<meta property="og:title" content=")[^"]*(")', lambda m: m.group(1) + new_title + m.group(2), html, count=1)
         html = re.sub(r'(<meta name="twitter:title" content=")[^"]*(")', lambda m: m.group(1) + new_title + m.group(2), html, count=1)
-        html = re.sub(r"<h1>.*?</h1>", f"<h1>{new_title.replace('｜DSE Hub', '')}</h1>", html, count=1)
+        html = re.sub(r"<h1>.*?</h1>", f"<h1>{new_title.replace('｜DSE 數學題庫', '')}</h1>", html, count=1)
 
         # meta description：確保有「年份＋卷＋題號」前綴
         m = re.search(r'<meta name="description" content="([^"]*)"', html)

@@ -286,13 +286,13 @@ a.hub-related-card:hover {
         t = t.replace("</style>", css_add + "</style>", 1)
 
     # meta description — mention all-subject resources, keep past-paper identity
-    old_desc = "免費查閱香港中學文憑試（DSE）數學、經濟、化學、生物、物理歷屆試題，按年份或課題溫習，支援中英文卷。唔使報名，即時喺 DSE Hub 開卷。"
-    new_desc = "免費查閱香港中學文憑試（DSE）數學、經濟、化學、生物、物理歷屆試題，按年份或課題溫習；亦為甲類各科提供原創筆記同答題框架。唔使報名，即時喺 DSE Hub 開卷。"
+    old_desc = "免費查閱香港中學文憑試（DSE）數學、經濟、化學、生物、物理歷屆試題，按年份或課題溫習，支援中英文卷。唔使報名，即時喺 DSE 數學題庫 開卷。"
+    new_desc = "免費查閱香港中學文憑試（DSE）數學、經濟、化學、生物、物理歷屆試題，按年份或課題溫習；亦為甲類各科提供原創筆記同答題框架。唔使報名，即時喺 DSE 數學題庫 開卷。"
     if old_desc in t:
         t = t.replace(old_desc, new_desc)
 
-    old_title = "免費 DSE 歷屆試題｜數學經濟化學生物物理 Past Paper｜DSE Hub"
-    new_title = "免費 DSE 歷屆試題同全科溫習資源｜數學經濟化學生物物理 Past Paper｜DSE Hub"
+    old_title = "免費 DSE 歷屆試題｜數學經濟化學生物物理 Past Paper｜DSE 數學題庫"
+    new_title = "免費 DSE 歷屆試題同全科溫習資源｜數學經濟化學生物物理 Past Paper｜DSE 數學題庫"
     if old_title in t:
         t = t.replace(old_title, new_title)
 

@@ -43,7 +43,7 @@ footer{{color:var(--mut);font-size:12px;padding:26px 0 0}}
 </style>
 </head>
 <body>
-<header><a href="/hub/">DSE Hub</a><span class="tag">數學延伸部分 M1</span></header>
+<header><a href="/hub/">DSE 數學題庫</a><span class="tag">數學延伸部分 M1</span></header>
 <main>
   <h1>M1 {year} · Paper 1（英文卷）</h1>
   <div class="sub">{n} 題 · 按題意改寫示範，非重現試題</div>
@@ -87,7 +87,7 @@ def main(write: bool) -> int:
             )
         items = "".join(rows)
         canonical = f"{SITE_URL}/m1/{y}/paper-1-en/"
-        title = f"DSE 數學延伸部分 M1 {y} Paper 1（英文）｜{len(qs)} 題｜DSE Hub"
+        title = f"DSE 數學延伸部分 M1 {y} Paper 1（英文）｜{len(qs)} 題｜DSE 數學題庫"
         desc = f"HKDSE 數學延伸部分（單元一 M1）{y} 年 Paper 1 英文卷，共 {len(qs)} 題，逐題可開來做，附課題標籤同深度分析。"
         head = seo_head(title, desc, canonical)
         ld = ld_json(
@@ -97,7 +97,7 @@ def main(write: bool) -> int:
                     {
                         "@type": "BreadcrumbList",
                         "itemListElement": [
-                            {"@type": "ListItem", "position": 1, "name": "DSE Hub", "item": f"{SITE_URL}/hub/"},
+                            {"@type": "ListItem", "position": 1, "name": "DSE 數學題庫", "item": f"{SITE_URL}/hub/"},
                             {"@type": "ListItem", "position": 2, "name": "數學延伸 M1", "item": canonical},
                         ],
                     },

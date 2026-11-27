@@ -36,7 +36,7 @@ for sid, subj in P['subjects'].items():
         paperlbl = f' Paper {paper}' if paper else ''
         langlbl = LANG.get(lang, '')
 
-        title = f"{name} {y} {kindzh}{paperlbl}{' '+langlbl if langlbl else ''} PDF 免費下載｜DSE Hub"
+        title = f"{name} {y} {kindzh}{paperlbl}{' '+langlbl if langlbl else ''} PDF 免費下載｜DSE 數學題庫"
         desc = f"{name} {y} 年{kindzh}{paperlbl}（{langlbl or '中英文'}）官方歷屆試題 PDF 免費下載，含答案與評卷參考，即按即下載。"
 
         # 相關連結：hub 該科
@@ -80,7 +80,7 @@ h1{{font-size:24px;line-height:1.4;margin:0 0 8px}}
 </head>
 <body>
 <main>
-<nav class="breadcrumb"><a href="/">首頁</a> › <a href="/hub/">DSE Hub</a> › <a href="{hub_href}">{escape(name)} {y}</a></nav>
+<nav class="breadcrumb"><a href="/">首頁</a> › <a href="/hub/">DSE 數學題庫</a> › <a href="{hub_href}">{escape(name)} {y}</a></nav>
 <h1>{escape(title)}</h1>
 <p class="desc">{escape(desc)}</p>
 <div class="meta">

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Generate DSE Hub Marking Scheme landing pages.
+"""Generate DSE 數學題庫 Marking Scheme landing pages.
 
 Builds:
   - docs/ms/index.html          (MS hub page)
@@ -52,7 +52,7 @@ def labels(p):
         return {
             "lang": "zh-Hant-HK", "hl": "zh-Hant-HK",
             "h1": f"{p['year']} DSE 數學卷一 Marking Scheme（中文版）",
-            "title": f"{p['year']} DSE 數學卷一 Marking Scheme（中文版）｜評卷參考下載｜DSE Hub",
+            "title": f"{p['year']} DSE 數學卷一 Marking Scheme（中文版）｜評卷參考下載｜DSE 數學題庫",
             "desc": (f"免費查閱 {p['year']} DSE 數學卷一 Marking Scheme（中文版）評卷參考，"
                      f"共 {n} 題逐題列出評分準則，適合考後對卷、學寫步驟攞分位。"),
             "crumb": f"{p['year']} 卷一（中文版）",
@@ -61,7 +61,7 @@ def labels(p):
     return {
         "lang": "en-HK", "hl": "en-HK",
         "h1": f"{p['year']} DSE Maths Paper 1 Marking Scheme",
-        "title": f"{p['year']} DSE Maths Paper 1 Marking Scheme｜評卷參考下載｜DSE Hub",
+        "title": f"{p['year']} DSE Maths Paper 1 Marking Scheme｜評卷參考下載｜DSE 數學題庫",
         "desc": (f"免費查閱 {p['year']} DSE Maths Paper 1 Marking Scheme 評卷參考，"
                  f"共 {n} 題逐題列出評分準則，適合考後對卷、學寫步驟攞分位。"),
         "crumb": f"{p['year']} Paper 1 (EN)",
@@ -110,7 +110,7 @@ def page_jsonld(p, lab, url):
         {
             "@type": "BreadcrumbList",
             "itemListElement": [
-                {"@type": "ListItem", "position": 1, "name": "DSE Hub", "item": SITE + "/hub/"},
+                {"@type": "ListItem", "position": 1, "name": "DSE 數學題庫", "item": SITE + "/hub/"},
                 {"@type": "ListItem", "position": 2, "name": "數學", "item": SITE + "/math/"},
                 {"@type": "ListItem", "position": 3, "name": "Marking Scheme", "item": SITE + "/ms/"},
                 {"@type": "ListItem", "position": 4, "name": lab["crumb"], "item": url},
@@ -146,11 +146,11 @@ def render_page(p, all_pages):
 <meta name="keywords" content="{KEYWORDS}">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="googlebot" content="index, follow">
-<meta name="author" content="DSE Hub">
+<meta name="author" content="DSE 數學題庫">
 <link rel="canonical" href="{url}">
 {hreflang_block(p, all_pages)}
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="DSE Hub">
+<meta property="og:site_name" content="DSE 數學題庫">
 <meta property="og:locale" content="zh_HK">
 <meta property="og:title" content="{lab['title']}">
 <meta property="og:description" content="{lab['desc']}">
@@ -158,7 +158,7 @@ def render_page(p, all_pages):
 <meta property="og:image" content="{SITE}/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="DSE Hub 香港中學文憑歷屆試題資料庫">
+<meta property="og:image:alt" content="DSE 數學題庫 香港中學文憑歷屆試題資料庫">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{lab['title']}">
 <meta name="twitter:description" content="{lab['desc']}">
@@ -193,9 +193,9 @@ def render_page(p, all_pages):
   <div class="hero-glow" aria-hidden="true"></div>
   <div class="hero-inner">
     <nav class="crumb" aria-label="麵包屑">
-      <a href="/hub/">DSE Hub</a><span aria-hidden="true">／</span><a href="/math/">數學</a><span aria-hidden="true">／</span><a href="/ms/">Marking Scheme</a><span aria-hidden="true">／</span><span>{lab['crumb']}</span>
+      <a href="/hub/">DSE 數學題庫</a><span aria-hidden="true">／</span><a href="/math/">數學</a><span aria-hidden="true">／</span><a href="/ms/">Marking Scheme</a><span aria-hidden="true">／</span><span>{lab['crumb']}</span>
     </nav>
-    <p class="brand">DSE Hub</p>
+    <p class="brand">DSE 數學題庫</p>
     <h1>{lab['h1']}</h1>
     <p class="tagline">{tagline}</p>
     <nav class="strand-nav" aria-label="年份">{year_nav(p, all_pages)}</nav>
@@ -208,14 +208,14 @@ def render_page(p, all_pages):
     </div>
   </section>
 </main>
-<footer><a href="/hub/">DSE Hub 主頁</a> · <a href="/math/">DSE 數學 Past Paper</a> · <a href="/ms/">Marking Scheme 總覽</a> · 內容僅供學習用途，版權屬香港考試及評核局（HKEAA）</footer>
+<footer><a href="/hub/">DSE 數學題庫 主頁</a> · <a href="/math/">DSE 數學 Past Paper</a> · <a href="/ms/">Marking Scheme 總覽</a> · 內容僅供學習用途，版權屬香港考試及評核局（HKEAA）</footer>
 </body>
 </html>
 """
 
 
 def render_hub(all_pages):
-    title = "DSE Maths Marking Scheme 下載｜數學評卷參考（2012–2024）｜DSE Hub"
+    title = "DSE Maths Marking Scheme 下載｜數學評卷參考（2012–2024）｜DSE 數學題庫"
     desc = ("免費查閱 2012–2024 DSE 數學卷一 Marking Scheme 評卷參考，中英文版齊全，"
             "逐題列出評分準則，適合考後對卷、學評分標準同操卷。")
     url = SITE + "/ms/"
@@ -231,7 +231,7 @@ def render_hub(all_pages):
         {
             "@type": "BreadcrumbList",
             "itemListElement": [
-                {"@type": "ListItem", "position": 1, "name": "DSE Hub", "item": SITE + "/hub/"},
+                {"@type": "ListItem", "position": 1, "name": "DSE 數學題庫", "item": SITE + "/hub/"},
                 {"@type": "ListItem", "position": 2, "name": "數學", "item": SITE + "/math/"},
                 {"@type": "ListItem", "position": 3, "name": "Marking Scheme", "item": url},
             ],
@@ -265,12 +265,12 @@ def render_hub(all_pages):
 <meta name="keywords" content="{KEYWORDS}">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="googlebot" content="index, follow">
-<meta name="author" content="DSE Hub">
+<meta name="author" content="DSE 數學題庫">
 <link rel="canonical" href="{url}">
 <link rel="alternate" hreflang="zh-Hant-HK" href="{url}">
 <link rel="alternate" hreflang="x-default" href="{url}">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="DSE Hub">
+<meta property="og:site_name" content="DSE 數學題庫">
 <meta property="og:locale" content="zh_HK">
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{desc}">
@@ -278,7 +278,7 @@ def render_hub(all_pages):
 <meta property="og:image" content="{SITE}/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="DSE Hub 香港中學文憑歷屆試題資料庫">
+<meta property="og:image:alt" content="DSE 數學題庫 香港中學文憑歷屆試題資料庫">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{title}">
 <meta name="twitter:description" content="{desc}">
@@ -306,9 +306,9 @@ def render_hub(all_pages):
   <div class="hero-glow" aria-hidden="true"></div>
   <div class="hero-inner">
     <nav class="crumb" aria-label="麵包屑">
-      <a href="/hub/">DSE Hub</a><span aria-hidden="true">／</span><a href="/math/">數學</a><span aria-hidden="true">／</span><span>Marking Scheme</span>
+      <a href="/hub/">DSE 數學題庫</a><span aria-hidden="true">／</span><a href="/math/">數學</a><span aria-hidden="true">／</span><span>Marking Scheme</span>
     </nav>
-    <p class="brand">DSE Hub</p>
+    <p class="brand">DSE 數學題庫</p>
     <h1>DSE 數學 Marking Scheme 評卷參考</h1>
     <p class="tagline">考後對卷必備：2012–2024 數學卷一 Marking Scheme，逐題列出評分準則。中英文版齊全（部分年份只有英文版），配合 <a href="/math/">DSE 數學試題</a> 一齊用，對卷效率最高。</p>
     <nav class="subj-nav" aria-label="科目">
@@ -325,7 +325,7 @@ def render_hub(all_pages):
     </nav>
   </section>
 </main>
-<footer><a href="/hub/">DSE Hub 主頁</a> · <a href="/math/">DSE 數學 Past Paper</a> · 內容僅供學習用途，版權屬香港考試及評核局（HKEAA）</footer>
+<footer><a href="/hub/">DSE 數學題庫 主頁</a> · <a href="/math/">DSE 數學 Past Paper</a> · 內容僅供學習用途，版權屬香港考試及評核局（HKEAA）</footer>
 </body>
 </html>
 """

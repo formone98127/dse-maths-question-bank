@@ -44,14 +44,14 @@ footer{{color:var(--mut);font-size:13px;border-top:1px solid var(--line);padding
 </style>
 </head>
 <body>
-<header><a href="/hub/">← DSE Hub</a> <span style="color:var(--mut)">｜ 數學延伸部分 M2</span></header>
+<header><a href="/hub/">← DSE 數學題庫</a> <span style="color:var(--mut)">｜ 數學延伸部分 M2</span></header>
 <main>
 <h1>M2 {year} · Paper 1（英文卷）</h1>
 <p class="sub">共 {n} 題 · 官方評卷參考逐題對應</p>
 <ul class="qs">{items}</ul>
 </main>
 <footer>題目版權屬香港考試及評核局。本站提供索引、課題標籤與解答整理。<br>
-<a href="/hub/" style="color:var(--gold)">返回 DSE Hub</a> ｜ <a href="/questions/" style="color:var(--gold)">題目目錄</a></footer>
+<a href="/hub/" style="color:var(--gold)">返回 DSE 數學題庫</a> ｜ <a href="/questions/" style="color:var(--gold)">題目目錄</a></footer>
 </body>
 </html>
 """
@@ -87,7 +87,7 @@ def main():
             )
         items = "".join(rows)
         canonical = f"{SITE_URL}/m2/{year}/paper-1-en/"
-        title = f"DSE 數學延伸部分 M2 {year} Paper 1（英文）｜{len(qs)} 題｜DSE Hub"
+        title = f"DSE 數學延伸部分 M2 {year} Paper 1（英文）｜{len(qs)} 題｜DSE 數學題庫"
         desc = f"HKDSE 數學延伸單元二（M2，代數與微積分）{year} 年 Paper 1 英文卷，共 {len(qs)} 題，逐題可開來做，附課題標籤同深度分析。"
         head = seo_head(title, desc, canonical)
         ld = ld_json(
@@ -97,7 +97,7 @@ def main():
                     {
                         "@type": "BreadcrumbList",
                         "itemListElement": [
-                            {"@type": "ListItem", "position": 1, "name": "DSE Hub", "item": f"{SITE_URL}/hub/"},
+                            {"@type": "ListItem", "position": 1, "name": "DSE 數學題庫", "item": f"{SITE_URL}/hub/"},
                             {"@type": "ListItem", "position": 2, "name": "數學延伸 M2", "item": canonical},
                         ],
                     },

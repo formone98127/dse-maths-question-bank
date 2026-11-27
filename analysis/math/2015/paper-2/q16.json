@@ -1,0 +1,92 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2015",
+  "paper": "Paper 2",
+  "qno": "16",
+  "hash": "#2015P2Q16"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓錐體與平截頭體的體積",
+   "secondary_topics": [
+    "相似三角形性質",
+    "圓錐體體積公式"
+   ],
+   "required_formulas": [
+    "$V = \\frac{1}{3}\\pi r^2 h$",
+    "$\\frac{r_{top}}{r_{bottom}} = \\frac{h_{top}}{H}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "錯誤計算小圓錐體積",
+    "student_thought_process": "學生算出大圓錐體積 $432\\pi$ 後，減去頂部小圓錐時，可能誤將小圓錐高算為 $12-8=4$ 但半徑比例算錯，或計算 $V_{small}$ 時數值錯誤導致結果偏小。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆相似比與高度差",
+    "student_thought_process": "學生可能誤以為平截頭體下底半徑 $9$ 與上底半徑的比值等於高度 $8$ 與總高 $12$ 的比例，直接套用錯誤比例關係而未考慮頂部被切去部分的高度。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "忽略相似比求上底半徑",
+    "student_thought_process": "學生直接計算大圓錐體積 $432\\pi$ 減去一個假設的高為 $8$、底半徑為 $9$ 的圓錐（即未切頂部），或者完全忽略相似三角形求上底半徑的步驟，導致結果過大。"
+   }
+  },
+  "scaffolding_hints": [
+   "平截頭體是由大圓錐切去頂部小圓錐而成，兩者為相似圖形。",
+   "利用相似三角形性質：小圓錐高度與大圓錐高度之比等於對應半徑之比，先求出被切去的小圓錐底面半徑。",
+   "平截頭體體積 $=$ 大圓錐體積 $-$ 頂部小圓錐體積。"
+  ],
+  "quick_solution_strategy": "先求頂部小圓錐高與半徑，再算大圓錐減小圓錐之差。"
+ },
+ "skills": {
+  "topic_id": "T-MEN",
+  "knowledge_point_ids": [
+   "K-MEN-01",
+   "K-MEN-02"
+  ],
+  "formula_ids": [
+   "F-MEN-01",
+   "F-MEN-02",
+   "F-MEN-03",
+   "F-MEN-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

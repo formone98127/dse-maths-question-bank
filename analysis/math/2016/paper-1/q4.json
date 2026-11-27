@@ -1,0 +1,103 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2016",
+  "paper": "Paper 1",
+  "qno": "4",
+  "hash": "#2016P1Q4"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "因式分解",
+   "secondary_topics": [
+    "提公因式法",
+    "十字相乘法",
+    "分組分解"
+   ],
+   "required_formulas": [
+    "$ab + ac = a(b+c)$",
+    "$x^2 + (p+q)x + pq = (x+p)(x+q)$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "觀察 (a) 式，提取最大公因數 $5$。",
+    "marks": 1,
+    "common_error": "忘記提取數字係數或只提變數部分。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "對 (b) 式使用十字相乘法分解二次型。",
+    "marks": 1,
+    "common_error": "混淆 $mn$ 項符號，誤拆為 $(m-3n)(m+2n)$。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "將 (c) 式前兩項與後兩項分組處理。",
+    "marks": 1,
+    "common_error": "直接嘗試全式分解而忽略分組策略。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 4,
+    "what": "從 (c) 式前兩項得出公因式 $(m-3n)$。",
+    "marks": 1,
+    "common_error": "分解錯誤導致後續無法提取公因式。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "考生普遍掌握基本技巧，主要失誤源於十字相乘時的符號處理及分組後公因式的正確識別。",
+  "scaffolding_hints": [
+   "先檢查是否有數字或變數的公因數可提。",
+   "分解 $m^2+mn-6n^2$ 時，注意 $-6$ 拆成 $-3 \\times 2$ 且和為 $1$。",
+   "遇到四次式先嘗試分組，看能否提取共同項。"
+  ],
+  "quick_solution_strategy": "(a)提5；(b)十字相乘得$(m+3n)(m-2n)$；(c)前兩項提$(m-3n)$，後兩項提$-5$再合併。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-03"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "4": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

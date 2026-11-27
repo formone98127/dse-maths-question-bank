@@ -1,0 +1,130 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2023",
+  "paper": "Paper 1M",
+  "qno": "9",
+  "hash": "#2023P1MQ9"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "正態分佈",
+   "secondary_topics": [
+    "置信區間",
+    "標準誤差",
+    "累積機率"
+   ],
+   "required_formulas": [
+    "$\\bar{x} \\pm z_{\\alpha/2} \\frac{s}{\\sqrt{n}}$",
+    "$P(X > x) = P(Z > \\frac{x - \\mu}{\\sigma})$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 450,
+   "marks": 13
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "計算樣本 (a) 的總數 n=30 及樣本平均 \\bar{x}_a",
+    "marks": 1,
+    "common_error": "忽略分組數據需加權平均，直接取中點錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "計算合併樣本 (a)+(b) 的總數 n=64 及新平均 \\bar{x}_{total}",
+    "marks": 1,
+    "common_error": "未將兩個樣本的平均值按人數加權，直接取簡單平均。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "利用上界公式解出 z 分數，再查表求 \\alpha%",
+    "marks": 2,
+    "common_error": "混淆單尾與雙尾機率，或 z 值查表錯誤。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "計算 (c)(i) 的 Z 分數並查表求 P(X>60)",
+    "marks": 2,
+    "common_error": "Z 分數符號錯誤或忘記轉換標準正態分佈。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "若 (c)(ii) 存在，計算樣本平均的 Z 分數機率",
+    "marks": 2,
+    "common_error": "混淆總體標準差 \\sigma 與標準誤差 \\frac{\\sigma}{\\sqrt{n}}。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 6,
+    "what": "檢查所有計算步驟及單位是否一致",
+    "marks": 3,
+    "common_error": "四捨五入過早導致最終答案偏差。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "此題結合了正態分佈的理論應用與統計推論，考評報告雖無具體數據，但類似題目常測試學生對標準誤差與置信區間邊界關係的理解深度。",
+  "scaffolding_hints": [
+   "Hint1: 樣本平均數需使用加權平均公式 \\frac{n_1\\bar{x}_1 + n_2\\bar{x}_2}{n_1+n_2}。",
+   "Hint2: 置信區間上界公式為 \\bar{x} + z \\frac{\\sigma}{\\sqrt{n}}，注意 \\sigma=20。",
+   "Hint3: (c) 部分只需計算單個公民的機率，直接使用 \\mu=76, \\sigma=20。"
+  ],
+  "quick_solution_strategy": "先算合併樣本平均，代入置信區間上界公式反求 z，再查表得 \\alpha；(c) 直接標準化計算右尾機率。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "6": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

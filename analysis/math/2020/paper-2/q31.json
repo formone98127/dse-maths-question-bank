@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2020",
+  "paper": "Paper 2",
+  "qno": "31",
+  "hash": "#2020P2Q31"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "進位制轉換與指數運算",
+   "secondary_topics": [
+    "十六進制基礎",
+    "二進制與十進制的關係",
+    "指數法則"
+   ],
+   "required_formulas": [
+    "16^n = (2^4)^n = 2^{4n}",
+    "十六進制數值轉十進制公式：\\sum d_i \\times 16^i"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "底數轉換錯誤",
+    "student_thought_process": "學生知道十六進制轉十進制，但計算時將 16^{60} 誤算為 2^{60}，忽略了 16=2^4 的關係，導致指數未乘 4。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "指數與係數混淆",
+    "student_thought_process": "學生正確將 16^{60} 轉為 2^{240}，但可能誤以為題目是 16^64 或計算 10_{16} 時出錯，導致出現 2^{64} 且係數為 10。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "底數轉換與係數雙重錯誤",
+    "student_thought_process": "學生同樣誤將 16^{60} 視為 2^{64}（或混淆指數），且正確計算了 B0_{16} 的十進制值為 11\\times 16^{60}，但後續轉換步驟出錯。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：十六進制的每一位代表該位數乘以 16 的次方，請先將 B0_{16} 展開為 \\sum d_i \\times 16^i。",
+   "提示 2：關鍵在於將底數 16 轉換為 2 的冪次，利用公式 16 = 2^4，因此 16^{60} 應等於多少？",
+   "提示 3：請分別計算 B_{16} 與 0_{16} 對應的十進制數值，再結合上述指數轉換結果進行加總。"
+  ],
+  "quick_solution_strategy": "將 B0_{16} 展開為 B\\times 16^{60} + 0，並將 16^{60} 換算成 2^{240}，最後計算 B 的十進制值。"
+ },
+ "skills": {
+  "topic_id": "T-NUM",
+  "knowledge_point_ids": [
+   "K-NUM-01",
+   "K-NUM-02"
+  ],
+  "formula_ids": [
+   "F-NUM-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

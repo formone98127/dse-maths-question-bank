@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1005.84pt" height="591.84pt" viewBox="0 0 1005.84 591.84" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-05T02:30:25.974580</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.9, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 591.84 
+L 1005.84 591.84 
+L 1005.84 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="line2d_1">
+    <path d="M 164.089561 59.04 
+L 160.665514 553.730712 
+" clip-path="url(#pd86fa1e356)" style="fill: none; stroke: #000000; stroke-width: 3.312"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 160.665514 553.730712 
+L 740.16 553.423766 
+" clip-path="url(#pd86fa1e356)" style="fill: none; stroke: #000000; stroke-width: 3.312"/>
+   </g>
+   <g id="patch_2">
+    <path d="M 164.16 43.2 
+L 155.52 59.04 
+L 173.52 59.04 
+z
+" clip-path="url(#pd86fa1e356)"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 756 553.423766 
+L 740.16 544.32 
+L 740.16 562.32 
+z
+" clip-path="url(#pd86fa1e356)"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 367.2 273.6 
+L 384.48 264.96 
+L 384.48 282.96 
+z
+" clip-path="url(#pd86fa1e356)"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 296.465299 109.265299 
+L 313.650468 125.111271 
+L 327.076383 138.607096 
+L 340.502297 152.10292 
+L 353.928211 165.598745 
+L 367.354126 179.09457 
+L 380.78004 192.590395 
+L 394.205954 206.08622 
+L 407.631869 219.582044 
+L 421.057783 233.077869 
+L 434.483697 246.573694 
+L 447.909612 260.069519 
+L 461.335526 273.565344 
+L 474.76144 287.061168 
+L 488.187355 300.556993 
+L 501.613269 314.052818 
+L 515.039183 327.548643 
+L 528.465098 341.044468 
+L 541.891012 354.540292 
+L 555.316926 368.036117 
+L 568.742841 381.531942 
+L 582.168755 395.027767 
+L 595.594669 408.523592 
+L 611.226811 424.790487 
+" clip-path="url(#pd86fa1e356)" style="fill: none; stroke: #000000; stroke-width: 3.312"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 231.156182 151.956182 
+L 248.345942 168.815797 
+L 261.798695 182.284783 
+L 275.251448 195.75377 
+L 288.7042 209.222756 
+L 302.156953 222.691743 
+L 315.609705 236.16073 
+L 329.062458 249.629716 
+L 342.51521 263.098703 
+L 355.967963 276.567689 
+L 369.420715 290.036676 
+L 382.873468 303.505662 
+L 396.326221 316.974649 
+L 409.778973 330.443636 
+L 423.231726 343.912622 
+L 436.684478 357.381609 
+L 450.137231 370.850595 
+L 463.589983 384.319582 
+L 477.042736 397.788568 
+L 490.495489 411.257555 
+L 503.948241 424.726542 
+L 517.400994 438.195528 
+L 530.853746 451.664515 
+L 547.07735 468.358182 
+" clip-path="url(#pd86fa1e356)" style="fill: none; stroke: #000000; stroke-width: 3.312"/>
+   </g>
+   <g id="line2d_5">
+    <path d="M 384.48 273.610227 
+L 443.52 273.610227 
+" clip-path="url(#pd86fa1e356)" style="fill: none; stroke: #000000; stroke-width: 3.312"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 32.608696px; font-family: 'Times New Roman'; text-anchor: start" x="29.16" y="33.12" transform="rotate(-0 29.16 33.12)">N</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 32.608696px; font-family: 'Times New Roman'; text-anchor: start" x="50.683223" y="33.12" transform="rotate(-0 50.683223 33.12)">o</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 32.608696px; font-family: 'Times New Roman'; text-anchor: start" x="65.609289" y="33.12" transform="rotate(-0 65.609289 33.12)">m</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 32.608696px; font-family: 'Times New Roman'; text-anchor: start" x="88.781801" y="33.12" transform="rotate(-0 88.781801 33.12)">i</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 32.608696px; font-family: 'Times New Roman'; text-anchor: start" x="97.028246" y="33.12" transform="rotate(-0 97.028246 33.12)">n</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 32.608696px; font-family: 'Times New Roman'; text-anchor: start" x="111.954313" y="33.12" transform="rotate(-0 111.954313 33.12)">a</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 32.608696px; font-family: 'Times New Roman'; text-anchor: start" x="125.23109" y="33.12" transform="rotate(-0 125.23109 33.12)">l</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 31.521739px; font-family: 'Times New Roman'; text-anchor: start" x="141.84" y="32.76" transform="rotate(-0 141.84 32.76)">i</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 31.521739px; font-family: 'Times New Roman'; text-anchor: start" x="150.26428" y="32.76" transform="rotate(-0 150.26428 32.76)">n</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 31.521739px; font-family: 'Times New Roman'; text-anchor: start" x="165.375875" y="32.76" transform="rotate(-0 165.375875 32.76)">t</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 31.521739px; font-family: 'Times New Roman'; text-anchor: start" x="173.800156" y="32.76" transform="rotate(-0 173.800156 32.76)">e</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 31.521739px; font-family: 'Times New Roman'; text-anchor: start" x="187.261634" y="32.76" transform="rotate(-0 187.261634 32.76)">r</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 31.521739px; font-family: 'Times New Roman'; text-anchor: start" x="197.422879" y="32.76" transform="rotate(-0 197.422879 32.76)">e</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 31.521739px; font-family: 'Times New Roman'; text-anchor: start" x="210.884358" y="32.76" transform="rotate(-0 210.884358 32.76)">s</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 31.521739px; font-family: 'Times New Roman'; text-anchor: start" x="222.69572" y="32.76" transform="rotate(-0 222.69572 32.76)">t</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 26.086957px; font-family: 'Times New Roman'; text-anchor: start" x="238.68" y="32.04" transform="rotate(-0 238.68 32.04)">r</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 26.086957px; font-family: 'Times New Roman'; text-anchor: start" x="248.95531" y="32.04" transform="rotate(-0 248.95531 32.04)">a</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 26.086957px; font-family: 'Times New Roman'; text-anchor: start" x="262.620414" y="32.04" transform="rotate(-0 262.620414 32.04)">t</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 26.086957px; font-family: 'Times New Roman'; text-anchor: start" x="271.094897" y="32.04" transform="rotate(-0 271.094897 32.04)">e</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 32.608696px; font-family: 'Times New Roman'; text-anchor: start" x="292.32" y="33.12" transform="rotate(-0 292.32 33.12)">(</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 32.608696px; font-family: 'Times New Roman'; text-anchor: start" x="302.088971" y="33.12" transform="rotate(-0 302.088971 33.12)">%</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 32.608696px; font-family: 'Times New Roman'; text-anchor: start" x="326.471029" y="33.12" transform="rotate(-0 326.471029 33.12)">)</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 31.521739px; font-family: 'Times New Roman'; text-anchor: start" x="595.44" y="452.16" transform="rotate(-0 595.44 452.16)">M</text>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 20.652174px; font-family: 'Times New Roman'; text-anchor: start" x="622.08" y="454.32" transform="rotate(-0 622.08 454.32)">A</text>
+   </g>
+   <g id="text_25">
+    <text style="font-size: 20.652174px; font-family: 'Times New Roman'; text-anchor: start" x="636.84" y="455.4" transform="rotate(-0 636.84 455.4)">0</text>
+   </g>
+   <g id="text_26">
+    <text style="font-size: 30.434783px; font-family: 'Times New Roman'; text-anchor: start" x="519.12" y="495.72" transform="rotate(-0 519.12 495.72)">M</text>
+   </g>
+   <g id="text_27">
+    <text style="font-size: 20.652174px; font-family: 'Times New Roman'; text-anchor: start" x="545.76" y="498.6" transform="rotate(-0 545.76 498.6)">A</text>
+   </g>
+   <g id="text_28">
+    <text style="font-size: 20.652174px; font-family: 'Times New Roman'; text-anchor: start" x="560.88" y="498.24" transform="rotate(-0 560.88 498.24)">1</text>
+   </g>
+   <g id="text_29">
+    <text style="font-size: 31.521739px; font-family: 'Times New Roman'; text-anchor: start" x="141.12" y="574.56" transform="rotate(-0 141.12 574.56)">0</text>
+   </g>
+   <g id="text_30">
+    <text style="font-size: 31.521739px; font-family: 'Times New Roman'; text-anchor: start" x="761.76" y="560.16" transform="rotate(-0 761.76 560.16)">Q</text>
+   </g>
+   <g id="text_31">
+    <text style="font-size: 31.521739px; font-family: 'Times New Roman'; text-anchor: start" x="783.883208" y="560.16" transform="rotate(-0 783.883208 560.16)">u</text>
+   </g>
+   <g id="text_32">
+    <text style="font-size: 31.521739px; font-family: 'Times New Roman'; text-anchor: start" x="799.246547" y="560.16" transform="rotate(-0 799.246547 560.16)">a</text>
+   </g>
+   <g id="text_33">
+    <text style="font-size: 31.521739px; font-family: 'Times New Roman'; text-anchor: start" x="812.854075" y="560.16" transform="rotate(-0 812.854075 560.16)">n</text>
+   </g>
+   <g id="text_34">
+    <text style="font-size: 31.521739px; font-family: 'Times New Roman'; text-anchor: start" x="828.129624" y="560.16" transform="rotate(-0 828.129624 560.16)">t</text>
+   </g>
+   <g id="text_35">
+    <text style="font-size: 31.521739px; font-family: 'Times New Roman'; text-anchor: start" x="836.645303" y="560.16" transform="rotate(-0 836.645303 560.16)">i</text>
+   </g>
+   <g id="text_36">
+    <text style="font-size: 31.521739px; font-family: 'Times New Roman'; text-anchor: start" x="845.160982" y="560.16" transform="rotate(-0 845.160982 560.16)">t</text>
+   </g>
+   <g id="text_37">
+    <text style="font-size: 31.521739px; font-family: 'Times New Roman'; text-anchor: start" x="853.676661" y="560.16" transform="rotate(-0 853.676661 560.16)">y</text>
+   </g>
+   <g id="text_38">
+    <text style="font-size: 32.608696px; font-family: 'Times New Roman'; text-anchor: start" x="875.52" y="560.52" transform="rotate(-0 875.52 560.52)">o</text>
+   </g>
+   <g id="text_39">
+    <text style="font-size: 32.608696px; font-family: 'Times New Roman'; text-anchor: start" x="891.917881" y="560.52" transform="rotate(-0 891.917881 560.52)">f</text>
+   </g>
+   <g id="text_40">
+    <text style="font-size: 32.258065px; font-family: 'Times New Roman'; text-anchor: start" x="908.64" y="560.16" transform="rotate(-0 908.64 560.16)">m</text>
+   </g>
+   <g id="text_41">
+    <text style="font-size: 32.258065px; font-family: 'Times New Roman'; text-anchor: start" x="932.055842" y="560.16" transform="rotate(-0 932.055842 560.16)">o</text>
+   </g>
+   <g id="text_42">
+    <text style="font-size: 32.258065px; font-family: 'Times New Roman'; text-anchor: start" x="947.002124" y="560.16" transform="rotate(-0 947.002124 560.16)">n</text>
+   </g>
+   <g id="text_43">
+    <text style="font-size: 32.258065px; font-family: 'Times New Roman'; text-anchor: start" x="962.197511" y="560.16" transform="rotate(-0 962.197511 560.16)">e</text>
+   </g>
+   <g id="text_44">
+    <text style="font-size: 32.258065px; font-family: 'Times New Roman'; text-anchor: start" x="975.649165" y="560.16" transform="rotate(-0 975.649165 560.16)">y</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pd86fa1e356">
+   <rect x="4.32" y="4.32" width="997.2" height="583.2"/>
+  </clipPath>
+ </defs>
+</svg>

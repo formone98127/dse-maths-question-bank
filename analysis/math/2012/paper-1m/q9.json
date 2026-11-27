@@ -1,0 +1,132 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2012",
+  "paper": "Paper 1M",
+  "qno": "9",
+  "hash": "#2012P1MQ9"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "概率",
+   "secondary_topics": [
+    "正態分佈應用",
+    "條件概率",
+    "二項分佈"
+   ],
+   "required_formulas": [
+    "$P(X \\geq 43) = 1 - P(Z < \\frac{43-\\mu}{\\sigma})$",
+    "$P(A|B) = \\frac{P(B|A)P(A)}{P(B)}$",
+    "$X \\sim B(n, p)$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 300,
+   "marks": 7
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "計算已溫習者通過考試的機率 P(Pass|Revise)",
+    "marks": 2,
+    "common_error": "標準化時分母搞錯或 Z 表查值錯誤",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "計算未溫習者通過考試的機率 P(Pass|NoRevise)",
+    "marks": 1,
+    "common_error": "混淆兩個正態分佈的參數",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 3,
+    "what": "利用全概率公式計算總通過機率 P(Pass)",
+    "marks": 1,
+    "common_error": "忘記乘以各群體的先驗機率 (73% vs 27%)",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 4,
+    "what": "利用貝氏定理計算已知通過且未溫習的條件機率",
+    "marks": 1,
+    "common_error": "分子分母位置顛倒或漏乘 P(NoRevise)",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 5,
+    "what": "確認未溫習者在所有通過者中的比例 p",
+    "marks": 1,
+    "common_error": "直接用第 (b) 問結果當作二項分佈的 p",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 6,
+    "what": "使用二項分佈公式計算 10 人中恰有 4 人未溫習的機率",
+    "marks": 1,
+    "common_error": "n 或 k 代入錯誤，忘記組合數 C(n,k)",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "此題結合正態分佈與條件概率，是 DSE 卷一經典的綜合應用題，考生需熟練處理多變量機率模型及貝氏定理的邏輯轉換。",
+  "scaffolding_hints": [
+   "先畫樹狀圖理清 Revise/NoRevise 與 Pass/Fail 的關係。",
+   "正態分佈計算時務必標記清楚兩個不同的 (μ, σ)。",
+   "第 (c) 問的 p 值必須來自第 (b) 問的結果，而非直覺猜測。"
+  ],
+  "quick_solution_strategy": "先算兩組通過率 -> 全概率求總通過率 -> 貝氏定理求條件機率 -> 二項分佈代入計算。"
+ },
+ "skills": {
+  "topic_id": "T-PROB",
+  "knowledge_point_ids": [
+   "K-PROB-04"
+  ],
+  "formula_ids": [
+   "F-PROB-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "3": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "4": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "5": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "6": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

@@ -1,0 +1,130 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2012",
+  "paper": "Paper 1",
+  "qno": "11",
+  "hash": "#2012P1Q11"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "變分",
+   "secondary_topics": [
+    "相似形比例關係",
+    "函數建模"
+   ],
+   "required_formulas": [
+    "$C = k + mA$",
+    "$V \\propto L^3$, $A \\propto L^2$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "設 $C=k+mA$，代入 $A=2,C=62$ 及 $A=6,C=74$ 解出 $k,m$。",
+    "marks": 2,
+    "common_error": "計算錯誤或聯立方程解錯導致 $k,m$ 值不正確。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "將求得的 $k,m$ 代入公式，計算 $A=13$ 時的 $C$ 值。",
+    "marks": 2,
+    "common_error": "代數運算錯誤或忘記加上常數項 $k$。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "利用體積比 8:1 推導出較長罐與原罐的邊長比例為 $\\sqrt[3]{8}=2$。",
+    "marks": 0,
+    "common_error": "誤以為體積比等於面積比，或忘記開立方根。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "根據邊長比例 2:1，推導出較長罐的表面面積是原罐的 $2^2=4$ 倍。",
+    "marks": 0,
+    "common_error": "未能連結體積比與表面面積比的幾何關係。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 5,
+    "what": "計算較長罐的具體表面面積 $A_{new} = 4 \\times A_{part(a)}$。",
+    "marks": 0,
+    "common_error": "忘記將 (a) 中求得的 $A=13$ 乘以 4。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 6,
+    "what": "利用已求得的公式，代入新的 $A_{new}$ 計算最終髹漆成本。",
+    "marks": 0,
+    "common_error": "重複使用 (a) 的 $A$ 值而非新面積，導致答案錯誤。",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "考生常忽略相似形體積與表面面積的非線性比例關係（體積比 8 對應面積比 4），這是考評報告指出的主要失分點。",
+  "scaffolding_hints": [
+   "提示 1：成本 $C$ 由固定成本和隨面積變化的部分組成，設為線性函數。",
+   "提示 2：相似立體中，體積比等於邊長比的三次方，表面面積比等於邊長比的平方。",
+   "提示 3：先解出 (a) 的具體數值，再將此結果作為 (b) 的基礎數據進行比例推導。"
+  ],
+  "quick_solution_strategy": "先設 $C=k+mA$ 解出參數；再由體積比 8 推得邊長比 2，進而得面積比 4，最後代入公式計算新成本。"
+ },
+ "skills": {
+  "topic_id": "T-VAR",
+  "knowledge_point_ids": [
+   "K-VAR-01"
+  ],
+  "formula_ids": [
+   "F-VAR-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "5": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "6": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

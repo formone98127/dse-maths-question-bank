@@ -1,0 +1,130 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "PP",
+  "paper": "Paper 1M",
+  "qno": "10",
+  "hash": "#PPP1MQ10"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "積分法",
+   "secondary_topics": [
+    "代數代換",
+    "梯形法則",
+    "對數函數"
+   ],
+   "required_formulas": [
+    "\\int \\frac{6t}{(t+1)^{5/2}} dt",
+    "\\text{Trapezoidal Rule: } \\frac{h}{2}[y_0 + 2y_1 + ... + 2y_{n-1} + y_n]"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 360,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "計算 A 機生產量：代換 u=t+1 並積分。",
+    "marks": 2,
+    "common_error": "忘記加上積分常數 C，或上下限代換錯誤。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 2,
+    "what": "計算 A 機生產量：代入 t=0 與 t=10 求值。",
+    "marks": 2,
+    "common_error": "計算數值錯誤，或忽略題目單位 million kg。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "計算 B 機生產量：列出梯形法則公式與 h 值。",
+    "marks": 1,
+    "common_error": "h 值算錯（應為 2），或漏掉首尾項係數。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "計算 B 機生產量：代入 t=0,2,...,10 求和。",
+    "marks": 1,
+    "common_error": "對數計算錯誤，或漏算中間項。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "比較兩機總量並回答是否同意工程師說法。",
+    "marks": 1,
+    "common_error": "未比較數值直接回答，或邏輯反轉。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 6,
+    "what": "總結結論：B 機是否真的較多產量。",
+    "marks": 1,
+    "common_error": "忽略 (a)(b) 結果直接猜測，或解釋不清。",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "此題結合微積分應用與數值方法，考評報告常強調學生需具備將理論轉化為實際工程問題解決的能力，特別是對數函數的計算準確性。",
+  "scaffolding_hints": [
+   "Hint1: 代換法關鍵在於調整 dt 為 du。",
+   "Hint2: 梯形法則 h = (b-a)/n，此處 n=5。",
+   "Hint3: 比較時務必使用計算出的數值而非直覺。"
+  ],
+  "quick_solution_strategy": "先代換積分 A，再列梯形公式算 B，最後比較數值下結論。注意對數計算與單位。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "6": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

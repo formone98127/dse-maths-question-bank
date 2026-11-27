@@ -1,0 +1,92 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 2",
+  "qno": "10",
+  "hash": "#2014P2Q10"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "扇形面積與百分比變化",
+   "secondary_topics": [
+    "代數方程式解法",
+    "百分數應用"
+   ],
+   "required_formulas": [
+    "扇形面積公式 $A = \\frac{1}{2}r^2\\theta$",
+    "新舊量關係式 $(1-x/100)(1-50/100) = 1-90/100$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "忽略半徑係數影響",
+    "student_thought_process": "學生可能誤以為面積減少比例等於角度與半徑變化比例之簡單平均或錯算 $(1-x)(1-0.5)=0.1$ 時解出 $x=20$"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆平方關係",
+    "student_thought_process": "學生忘記面積與半徑是二次關係，錯誤地將半徑減少 $50\\%$ 視為面積減少 $25\\%$，導致計算偏差"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "誤讀題目條件",
+    "student_thought_process": "學生可能將「減少 $50\\%$」解讀為剩餘一半，但在設定方程式時搞混了減少量與剩餘量的定義"
+   }
+  },
+  "scaffolding_hints": [
+   "回憶扇形面積公式中半徑與角度係數的權重關係。",
+   "思考當兩個變數同時按比例變化時，總體效果如何疊加。",
+   "建立方程式 $(1-x/100)(1-0.5) = 0.1$ 並求解 $x$"
+  ],
+  "quick_solution_strategy": "利用面積公式比例關係：$(1-x/100) \\times 0.5 = 0.1$"
+ },
+ "skills": {
+  "topic_id": "T-MEN",
+  "knowledge_point_ids": [
+   "K-MEN-01",
+   "K-MEN-02"
+  ],
+  "formula_ids": [
+   "F-MEN-01",
+   "F-MEN-02",
+   "F-MEN-03",
+   "F-MEN-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

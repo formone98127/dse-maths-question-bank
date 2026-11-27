@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 2",
+  "qno": "28",
+  "hash": "#2017P2Q28"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "機率，讀取棒形圖",
+   "secondary_topics": [
+    "分數運算",
+    "條件概率基礎"
+   ],
+   "required_formulas": [
+    "P(事件) = (有利情況數) / (總情況數)"
+   ],
+   "bloom_taxonomy_level": "理解",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "總人數計算錯誤",
+    "student_thought_process": "學生可能將所有柱子高度相加時算錯，例如把 2+3+4+5+6 算成 20 而非 18，導致分母變大或分子比例失衡。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "誤讀題目條件",
+    "student_thought_process": "學生忽略了「少於 5 個」的條件，直接計算所有代幣數量的總機率（即 1），或是誤以為是求介於某個區間的機率。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "邏輯推導偏差",
+    "student_thought_process": "學生可能先計算出總人數 18，但錯誤地將有利事件數算成 7（例如把等於 5 的情況也加進去，或是讀圖時看錯刻度）。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察棒形圖的 X 軸與 Y 軸，確認每個代幣數目對應的小童人數。",
+   "將「少於 5 個代幣」的情況轉換為具體的代幣數值（即 0, 1, 2, 3, 4），並從圖中找出對應的人數總和。",
+   "計算所有小童的總人數作為分母，再用有利情況數除以總人數得出最終機率。"
+  ],
+  "quick_solution_strategy": "加總代幣數<5 的人數為分子，加總所有人數為分母，化簡分數即可。"
+ },
+ "skills": {
+  "topic_id": "T-PROB",
+  "knowledge_point_ids": [
+   "K-PROB-04"
+  ],
+  "formula_ids": [
+   "F-PROB-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-COND"
+   },
+   "D": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

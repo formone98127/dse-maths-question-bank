@@ -1,0 +1,133 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2019",
+  "paper": "Paper 1",
+  "qno": "17",
+  "hash": "#2019P1Q17"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "坐標幾何",
+   "secondary_topics": [
+    "軌跡",
+    "三角形面積與周界關係",
+    "角平分線性質"
+   ],
+   "required_formulas": [
+    "$a = s \\times r$ (其中 $s$ 為半周界)",
+    "$\\frac{1}{2} \\cdot \\text{底} \\cdot \\text{高}$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 480,
+   "marks": 7
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "證明 $pr=2a$：將三角形分割為三個小三角形，利用面積相加原理。",
+    "marks": 3,
+    "common_error": "直接寫出公式而未展示分割過程或混淆半周界定義。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 2,
+    "what": "計算直線 $OH$ 與 $HK$ 的斜率，判斷其垂直關係以確定角平分線方向。",
+    "marks": 1,
+    "common_error": "忽略 $O(0,0)$ 導致斜率計算錯誤或誤判垂直條件。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "描述軌跡 $\\Gamma$：指出其為內角平分線（非垂直平分線）。",
+    "marks": 1,
+    "common_error": "誤認為是 $OH$ 與 $HK$ 的垂直平分線，混淆等距條件。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "利用 (a) 結論：將 $\\Gamma$ 視為 $\\Delta OHK$ 內切圓半徑 $r$ 與周界關係的應用。",
+    "marks": 1,
+    "common_error": "未能連結幾何意義至代數方程，直接跳過面積公式。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 5,
+    "what": "建立方程：利用點 $P(x,y)$ 到兩直線距離相等及面積關係列式。",
+    "marks": 1,
+    "common_error": "距離公式應用錯誤或忘記絕對值符號導致解不完整。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "化簡方程並驗證：確保結果符合角平分線幾何特性。",
+    "marks": 0,
+    "common_error": "化簡過程出錯或遺漏常數項導致最終答案偏差。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "考生普遍混淆「到兩邊距離相等」的幾何意義，誤將角平分線當作垂直平分線，反映對基本定理理解不足。",
+  "scaffolding_hints": [
+   "Hint1: 內切圓半徑 $r$ 與面積 $a$、半周界 $s$ 的關係為何？",
+   "Hint2: 點到直線距離相等代表什麼幾何圖形？",
+   "Hint3: 垂直平分線是到兩端點距離相等，而非到兩邊距離相等。"
+  ],
+  "quick_solution_strategy": "先證 $a=sr$；再認出 $\\Gamma$ 為角平分線；最後用距離公式列式化簡得方程。"
+ },
+ "skills": {
+  "topic_id": "T-LOC",
+  "knowledge_point_ids": [
+   "K-LOC-01",
+   "K-LOC-02"
+  ],
+  "formula_ids": [
+   "F-LOC-01",
+   "F-LOC-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-LOC-01",
+    "formula_id": "F-LOC-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "2": {
+    "knowledge_point_id": "K-LOC-01",
+    "formula_id": "F-LOC-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-LOC-01",
+    "formula_id": "F-LOC-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-LOC-01",
+    "formula_id": "F-LOC-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "5": {
+    "knowledge_point_id": "K-LOC-01",
+    "formula_id": "F-LOC-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-LOC-01",
+    "formula_id": "F-LOC-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-HK">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>數學 RPG 技能樹｜20 課題 · 知識點解鎖｜DSE Hub</title>
+<meta name="description" content="DSE 數學必修 RPG 技能樹：點撃解鎖知識點、睇先備關係同公式。">
+<link rel="canonical" href="https://hkdse.exampaper.cloud/skills/book/">
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
+};
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script src="vendor/cytoscape.min.js"></script>
+<script src="vendor/elk.bundled.js"></script>
+<script src="vendor/cytoscape-elk.js"></script>
+<script src="vendor/pixi.min.js"></script>
+<style>
+:root {
+  --ink: #f4e8c8;
+  --mut: #b7a789;
+  --line: rgba(244, 232, 200, 0.14);
+  --panel: rgba(18, 14, 10, 0.88);
+  --panel-solid: #16110d;
+  --gold: #e2c36b;
+  --gold-2: #9a7420;
+  --alg: #6fd6b0;
+  --geo: #7db4e8;
+  --data: #e0b06a;
+  --locked: #6a6f78;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background: #070605 url("assets/bg-map.svg") center / cover fixed;
+  font: 15px/1.55 "PingFang HK", "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+}
+a { color: var(--gold); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.app {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100%;
+  height: 100dvh;
+}
+.top {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 10px 16px;
+  background: linear-gradient(180deg, rgba(10,8,6,0.95), rgba(10,8,6,0.72));
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(8px);
+  z-index: 5;
+}
+.brand { font-weight: 800; letter-spacing: 0.04em; color: var(--gold); }
+.top-nav { display: flex; gap: 14px; flex-wrap: wrap; font-size: 13px; color: var(--mut); }
+.main {
+  display: grid;
+  grid-template-columns: 280px 1fr 320px;
+  min-height: 0;
+}
+@media (max-width: 980px) {
+  body { overflow: auto; }
+  .app { height: auto; min-height: 100dvh; }
+  .main { grid-template-columns: 1fr; grid-template-rows: auto 55vh auto; }
+}
+.side, .info {
+  background: var(--panel);
+  border-right: 1px solid var(--line);
+  overflow: auto;
+  padding: 14px;
+}
+.info { border-right: 0; border-left: 1px solid var(--line); }
+.side h2, .info h2 {
+  margin: 0 0 10px;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--mut);
+}
+.stats {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 8px;
+  margin-bottom: 14px;
+}
+.stat {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 10px;
+  background: rgba(255,255,255,0.03);
+}
+.stat b { display: block; font-size: 20px; color: var(--gold); font-variant-numeric: tabular-nums; }
+.stat span { font-size: 12px; color: var(--mut); }
+.group-label {
+  margin: 14px 0 8px;
+  font-size: 13px; font-weight: 700;
+}
+.group-label.alg { color: var(--alg); }
+.group-label.geo { color: var(--geo); }
+.group-label.data { color: var(--data); }
+.topic-list { display: grid; gap: 8px; }
+.topic-btn {
+  appearance: none; width: 100%;
+  text-align: left;
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,0.03);
+  color: var(--ink);
+  border-radius: 12px;
+  padding: 10px 12px;
+  cursor: pointer;
+  transition: transform 0.2s var(--ease), border-color 0.2s, background 0.2s;
+}
+.topic-btn:hover { transform: translateY(-1px); border-color: rgba(226,195,107,0.45); }
+.topic-btn.active {
+  border-color: var(--gold);
+  background: linear-gradient(135deg, rgba(226,195,107,0.18), rgba(255,255,255,0.03));
+  box-shadow: 0 0 0 1px rgba(226,195,107,0.25) inset;
+}
+.topic-btn .name { font-weight: 700; display: block; margin-bottom: 4px; }
+.topic-btn .meta { font-size: 12px; color: var(--mut); }
+.stage-wrap {
+  position: relative;
+  min-height: 0;
+  background: rgba(0,0,0,0.25);
+}
+#cy {
+  position: absolute; inset: 0;
+}
+#fx {
+  position: absolute; inset: 0; pointer-events: none; z-index: 2;
+}
+.hint-bar {
+  position: absolute; left: 12px; right: 12px; bottom: 12px; z-index: 3;
+  display: flex; gap: 8px; flex-wrap: wrap; align-items: center;
+  pointer-events: none;
+}
+.hint-bar > * { pointer-events: auto; }
+.pill {
+  background: rgba(12,10,8,0.85);
+  border: 1px solid var(--line);
+  color: var(--mut);
+  border-radius: 999px;
+  padding: 8px 12px;
+  font-size: 12px;
+}
+.btn {
+  appearance: none;
+  border: 1px solid var(--gold-2);
+  background: linear-gradient(180deg, #e2c36b, #9a7420);
+  color: #1a1208;
+  font-weight: 800;
+  border-radius: 999px;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-size: 13px;
+}
+.btn.ghost {
+  background: rgba(12,10,8,0.85);
+  color: var(--ink);
+  border-color: var(--line);
+  font-weight: 600;
+}
+.empty {
+  color: var(--mut);
+  padding: 24px 8px;
+  text-align: center;
+}
+.ability-row { display: grid; gap: 6px; margin-bottom: 16px; }
+.ability {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 8px 10px;
+  font-size: 12px;
+  background: rgba(255,255,255,0.03);
+}
+.ability strong { display: block; color: var(--gold); margin-bottom: 2px; }
+.kp-card, .formula {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 10px;
+  background: rgba(255,255,255,0.03);
+}
+.kp-card.locked { opacity: 0.55; }
+.kp-card .id, .formula .id {
+  font-size: 11px; color: var(--mut);
+  font-family: ui-monospace, Consolas, monospace;
+}
+.kp-card h3, .formula h3 {
+  margin: 4px 0 8px; font-size: 16px;
+}
+.badge {
+  display: inline-block;
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  margin-right: 6px;
+}
+.badge.on { color: #9dffd0; border-color: rgba(157,255,208,0.35); }
+.badge.off { color: var(--locked); }
+.prereq { font-size: 12px; color: var(--mut); margin-top: 6px; }
+.latex { overflow-x: auto; margin-top: 6px; color: #fff; }
+.legend {
+  display: flex; gap: 10px; flex-wrap: wrap;
+  font-size: 12px; color: var(--mut); margin-bottom: 12px;
+}
+.legend i {
+  display: inline-block; width: 10px; height: 10px; border-radius: 50%;
+  margin-right: 4px; vertical-align: middle;
+}
+.legend .l-on { background: #2f9b78; }
+.legend .l-off { background: #5a6270; }
+.legend .l-sel { background: #e2c36b; }
+</style>
+</head>
+<body>
+<div class="app">
+  <header class="top">
+    <div class="brand">數學 RPG 技能樹</div>
+    <nav class="top-nav">
+      <a href="/dse-maths-question-bank/hub/">DSE Hub</a>
+      <a href="/dse-maths-question-bank/skills/">技能地圖</a>
+      <a href="cards/">風格6 卡片收集</a>
+      <span id="progressLabel">進度 0%</span>
+    </nav>
+  </header>
+  <div class="main">
+    <aside class="side">
+      <h2>冒險進度</h2>
+      <div class="stats" id="stats"></div>
+      <div class="legend">
+        <span><i class="l-on"></i>已解鎖 ✓</span>
+        <span><i class="l-off"></i>未解鎖 鎖</span>
+        <span><i class="l-sel"></i>可解鎖／選中</span>
+      </div>
+      <h2>選擇技能分支</h2>
+      <div id="topicList"></div>
+    </aside>
+    <section class="stage-wrap">
+      <div id="cy"></div>
+      <canvas id="fx"></canvas>
+      <div class="hint-bar">
+        <div class="pill" id="branchHint">揀左邊一個課題開始</div>
+        <button type="button" class="btn" id="btnUnlock">解鎖選中技能</button>
+        <button type="button" class="btn ghost" id="btnReset">重置本分支進度</button>
+        <button type="button" class="btn ghost" id="btnFit">置中地圖</button>
+      </div>
+    </section>
+    <aside class="info">
+      <h2>全科能力</h2>
+      <div class="ability-row" id="abilities"></div>
+      <h2>技能詳情</h2>
+      <div id="detail"><div class="empty">點地圖上嘅技能格，睇知識點同公式</div></div>
+    </aside>
+  </div>
+</div>
+<script id="BOOK_DATA" type="application/json">{"version": 1, "subject": "math", "subject_name": "數學（必修部分）", "abilities": [{"id": "A-SUB", "name": "代入數值", "desc": "把已知數值代入式子或公式"}, {"id": "A-ALG", "name": "代數變形", "desc": "搬項、展開、因式、合併同類項"}, {"id": "A-COND", "name": "睇條件", "desc": "注意單位、範圍、正負、非零、定義域"}, {"id": "A-GRAPH", "name": "讀圖", "desc": "從圖像讀出斜率、截距、頂點、週期等"}, {"id": "A-BACK", "name": "由答案倒推", "desc": "用選項反推或驗證"}, {"id": "A-CHAIN", "name": "多步串連", "desc": "多步解題，中間一步錯會帶歪後續"}, {"id": "A-ELIM", "name": "排除錯選項", "desc": "用性質或邊界情況剔除不合理選項"}, {"id": "A-CALC", "name": "計算仔細度", "desc": "符號、係數、口算與代數操作準確"}], "topics": [{"id": "T-PCT", "name": "百分法", "group": "數與代數", "knowledge_points": [{"id": "K-PCT-01", "name": "百分率換算", "prereqs": []}, {"id": "K-PCT-02", "name": "百分增減與新值", "prereqs": ["K-PCT-01"]}, {"id": "K-PCT-03", "name": "利息與增長", "prereqs": ["K-PCT-02"]}, {"id": "K-PCT-04", "name": "盈虧與折扣", "prereqs": ["K-PCT-02"]}, {"id": "K-PCT-05", "name": "人口／群體比例混合", "prereqs": ["K-PCT-01"]}], "formulas": [{"id": "F-PCT-01", "name": "百分率", "latex": "p\\% = \\frac{p}{100}", "knowledge_point_id": "K-PCT-01"}, {"id": "F-PCT-02", "name": "新值", "latex": "新值 = 原值 \\times (1 \\pm r)", "knowledge_point_id": "K-PCT-02"}, {"id": "F-PCT-03", "name": "單利", "latex": "利息 = 本金 \\times 利率 \\times 期數", "knowledge_point_id": "K-PCT-03"}]}, {"id": "T-EXP", "name": "指數與對數", "group": "數與代數", "knowledge_points": [{"id": "K-EXP-01", "name": "同底乘除：指數加減", "prereqs": []}, {"id": "K-EXP-02", "name": "冪的冪：指數相乘", "prereqs": ["K-EXP-01"]}, {"id": "K-EXP-03", "name": "零指數與負指數", "prereqs": ["K-EXP-01"]}, {"id": "K-EXP-04", "name": "分數指數與根式", "prereqs": ["K-EXP-02", "K-EXP-03"]}, {"id": "K-EXP-05", "name": "對數定義與換底", "prereqs": ["K-EXP-03"]}, {"id": "K-EXP-06", "name": "對數運算法則", "prereqs": ["K-EXP-05"]}, {"id": "K-EXP-07", "name": "指數／對數方程與圖像", "prereqs": ["K-EXP-06"]}], "formulas": [{"id": "F-EXP-01", "name": "乘法則", "latex": "a^m \\cdot a^n = a^{m+n}", "knowledge_point_id": "K-EXP-01"}, {"id": "F-EXP-02", "name": "除法則", "latex": "\\frac{a^m}{a^n} = a^{m-n}", "knowledge_point_id": "K-EXP-01"}, {"id": "F-EXP-03", "name": "冪的冪", "latex": "(a^m)^n = a^{mn}", "knowledge_point_id": "K-EXP-02"}, {"id": "F-EXP-04", "name": "積的冪", "latex": "(ab)^n = a^n b^n", "knowledge_point_id": "K-EXP-02"}, {"id": "F-EXP-05", "name": "零指數", "latex": "a^0 = 1\\ (a\\neq 0)", "knowledge_point_id": "K-EXP-03"}, {"id": "F-EXP-06", "name": "負指數", "latex": "a^{-n} = \\frac{1}{a^n}", "knowledge_point_id": "K-EXP-03"}, {"id": "F-EXP-07", "name": "對數定義", "latex": "\\log_b a = c \\iff b^c = a", "knowledge_point_id": "K-EXP-05"}, {"id": "F-EXP-08", "name": "對數積", "latex": "\\log_b(xy)=\\log_b x+\\log_b y", "knowledge_point_id": "K-EXP-06"}, {"id": "F-EXP-09", "name": "對數冪", "latex": "\\log_b(a^k)=k\\log_b a", "knowledge_point_id": "K-EXP-06"}]}, {"id": "T-RAT", "name": "比、率與比例", "group": "數與代數", "knowledge_points": [{"id": "K-RAT-01", "name": "比的化簡", "prereqs": []}, {"id": "K-RAT-02", "name": "率與單位", "prereqs": ["K-RAT-01"]}, {"id": "K-RAT-03", "name": "正比與反比", "prereqs": ["K-RAT-01"]}, {"id": "K-RAT-04", "name": "比例式交叉相乘", "prereqs": ["K-RAT-03"]}, {"id": "K-RAT-05", "name": "比例分配", "prereqs": ["K-RAT-04"]}], "formulas": [{"id": "F-RAT-01", "name": "比", "latex": "a:b = \\frac{a}{b}", "knowledge_point_id": "K-RAT-01"}, {"id": "F-RAT-02", "name": "正比", "latex": "y = kx", "knowledge_point_id": "K-RAT-03"}, {"id": "F-RAT-03", "name": "反比", "latex": "y = \\frac{k}{x}", "knowledge_point_id": "K-RAT-03"}, {"id": "F-RAT-04", "name": "交叉相乘", "latex": "\\frac{a}{b}=\\frac{c}{d}\\Rightarrow ad=bc", "knowledge_point_id": "K-RAT-04"}]}, {"id": "T-POL", "name": "多項式（續）", "group": "數與代數", "knowledge_points": [{"id": "K-POL-01", "name": "展開與合併同類項", "prereqs": []}, {"id": "K-POL-02", "name": "完全平方與平方差", "prereqs": ["K-POL-01"]}, {"id": "K-POL-03", "name": "因式分解", "prereqs": ["K-POL-02"]}, {"id": "K-POL-04", "name": "餘式定理", "prereqs": ["K-POL-01"]}, {"id": "K-POL-05", "name": "因式定理", "prereqs": ["K-POL-04"]}, {"id": "K-POL-06", "name": "恆等式與比較係數", "prereqs": ["K-POL-01"]}, {"id": "K-POL-07", "name": "主項變換", "prereqs": ["K-POL-01"]}], "formulas": [{"id": "F-POL-01", "name": "完全平方", "latex": "(a\\pm b)^2=a^2\\pm 2ab+b^2", "knowledge_point_id": "K-POL-02"}, {"id": "F-POL-02", "name": "平方差", "latex": "a^2-b^2=(a-b)(a+b)", "knowledge_point_id": "K-POL-02"}, {"id": "F-POL-03", "name": "兩平方差展開差", "latex": "(a+b)^2-(a-b)^2=4ab", "knowledge_point_id": "K-POL-02"}, {"id": "F-POL-04", "name": "餘式定理", "latex": "P(x)\\div(x-a)\\Rightarrow 餘數=P(a)", "knowledge_point_id": "K-POL-04"}, {"id": "F-POL-05", "name": "因式定理", "latex": "x-a\\ 為因式 \\iff P(a)=0", "knowledge_point_id": "K-POL-05"}, {"id": "F-POL-06", "name": "二次展開", "latex": "(x+a)(x+b)=x^2+(a+b)x+ab", "knowledge_point_id": "K-POL-01"}]}, {"id": "T-NUM", "name": "數系", "group": "數與代數", "knowledge_points": [{"id": "K-NUM-01", "name": "整數／有理／無理／實數", "prereqs": []}, {"id": "K-NUM-02", "name": "H.C.F. 與 L.C.M.", "prereqs": []}, {"id": "K-NUM-03", "name": "進位制換算", "prereqs": []}, {"id": "K-NUM-04", "name": "有效數字與小數位", "prereqs": []}, {"id": "K-NUM-05", "name": "近似與絕對誤差", "prereqs": ["K-NUM-04"]}, {"id": "K-NUM-06", "name": "複數基本運算", "prereqs": ["K-NUM-01"]}], "formulas": [{"id": "F-NUM-01", "name": "HCF×LCM", "latex": "\\mathrm{HCF}(a,b)\\times\\mathrm{LCM}(a,b)=|ab|", "knowledge_point_id": "K-NUM-02"}, {"id": "F-NUM-02", "name": "進位展開", "latex": "\\sum d_i b^i", "knowledge_point_id": "K-NUM-03"}, {"id": "F-NUM-03", "name": "誤差半單位", "latex": "x\\pm\\frac{1}{2}u", "knowledge_point_id": "K-NUM-05"}, {"id": "F-NUM-04", "name": "虛數單位", "latex": "i^2=-1", "knowledge_point_id": "K-NUM-06"}]}, {"id": "T-EQN", "name": "方程與不等式", "group": "數與代數", "knowledge_points": [{"id": "K-EQN-01", "name": "一次方程與移項", "prereqs": []}, {"id": "K-EQN-02", "name": "聯立一次方程", "prereqs": ["K-EQN-01"]}, {"id": "K-EQN-03", "name": "二次方程解法", "prereqs": ["K-EQN-01"]}, {"id": "K-EQN-04", "name": "判別式與根的性質", "prereqs": ["K-EQN-03"]}, {"id": "K-EQN-05", "name": "一元一次不等式", "prereqs": ["K-EQN-01"]}, {"id": "K-EQN-06", "name": "線性不等式區域", "prereqs": ["K-EQN-05"]}, {"id": "K-EQN-07", "name": "線性規劃初步", "prereqs": ["K-EQN-06"]}], "formulas": [{"id": "F-EQN-01", "name": "求根公式", "latex": "x=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}", "knowledge_point_id": "K-EQN-03"}, {"id": "F-EQN-02", "name": "判別式", "latex": "\\Delta=b^2-4ac", "knowledge_point_id": "K-EQN-04"}, {"id": "F-EQN-03", "name": "不等式同號", "latex": "a>0\\Rightarrow ax>c-b\\ \\text{同向}", "knowledge_point_id": "K-EQN-05"}, {"id": "F-EQN-04", "name": "斜截式", "latex": "y=mx+c", "knowledge_point_id": "K-EQN-06"}]}, {"id": "T-FUN", "name": "函數與圖像", "group": "數與代數", "knowledge_points": [{"id": "K-FUN-01", "name": "函數值與定義域", "prereqs": []}, {"id": "K-FUN-02", "name": "一次函數圖像", "prereqs": ["K-FUN-01"]}, {"id": "K-FUN-03", "name": "二次函數頂點與開口", "prereqs": ["K-FUN-01"]}, {"id": "K-FUN-04", "name": "圖像平移與反射", "prereqs": ["K-FUN-02", "K-FUN-03"]}, {"id": "K-FUN-05", "name": "圖像讀取與參數意義", "prereqs": ["K-FUN-03"]}], "formulas": [{"id": "F-FUN-01", "name": "頂點式", "latex": "y=a(x-h)^2+k", "knowledge_point_id": "K-FUN-03"}, {"id": "F-FUN-02", "name": "水平平移", "latex": "y=f(x-h)\\Rightarrow 右移 h", "knowledge_point_id": "K-FUN-04"}, {"id": "F-FUN-03", "name": "垂直平移", "latex": "y=f(x)+k\\Rightarrow 上移 k", "knowledge_point_id": "K-FUN-04"}, {"id": "F-FUN-04", "name": "二次通式", "latex": "y=ax^2+bx+c", "knowledge_point_id": "K-FUN-03"}]}, {"id": "T-SEQ", "name": "數列", "group": "數與代數", "knowledge_points": [{"id": "K-SEQ-01", "name": "數列通項與規律", "prereqs": []}, {"id": "K-SEQ-02", "name": "等差數列", "prereqs": ["K-SEQ-01"]}, {"id": "K-SEQ-03", "name": "等比數列", "prereqs": ["K-SEQ-01"]}, {"id": "K-SEQ-04", "name": "求和公式", "prereqs": ["K-SEQ-02", "K-SEQ-03"]}, {"id": "K-SEQ-05", "name": "圖形／圖案遞迴", "prereqs": ["K-SEQ-01"]}], "formulas": [{"id": "F-SEQ-01", "name": "等差通項", "latex": "a_n=a_1+(n-1)d", "knowledge_point_id": "K-SEQ-02"}, {"id": "F-SEQ-02", "name": "等差求和", "latex": "S_n=\\frac{n}{2}[2a_1+(n-1)d]", "knowledge_point_id": "K-SEQ-04"}, {"id": "F-SEQ-03", "name": "等比通項", "latex": "a_n=a_1 r^{n-1}", "knowledge_point_id": "K-SEQ-03"}, {"id": "F-SEQ-04", "name": "三角數", "latex": "T_n=\\frac{n(n+1)}{2}", "knowledge_point_id": "K-SEQ-05"}]}, {"id": "T-VAR", "name": "變分", "group": "數與代數", "knowledge_points": [{"id": "K-VAR-01", "name": "正變", "prereqs": []}, {"id": "K-VAR-02", "name": "反變", "prereqs": []}, {"id": "K-VAR-03", "name": "聯變／混合變", "prereqs": ["K-VAR-01", "K-VAR-02"]}, {"id": "K-VAR-04", "name": "由已知點求常數", "prereqs": ["K-VAR-03"]}], "formulas": [{"id": "F-VAR-01", "name": "正變", "latex": "y=kx", "knowledge_point_id": "K-VAR-01"}, {"id": "F-VAR-02", "name": "反變", "latex": "y=\\frac{k}{x}", "knowledge_point_id": "K-VAR-02"}, {"id": "F-VAR-03", "name": "混合變例", "latex": "y=k_1 x^2+\\frac{k_2}{x}", "knowledge_point_id": "K-VAR-03"}]}, {"id": "T-TRI", "name": "三角學與解三角形", "group": "度量、圖形與空間", "knowledge_points": [{"id": "K-TRI-01", "name": "銳角三角比定義", "prereqs": []}, {"id": "K-TRI-02", "name": "特殊角值", "prereqs": ["K-TRI-01"]}, {"id": "K-TRI-03", "name": "餘角／誘導公式", "prereqs": ["K-TRI-01"]}, {"id": "K-TRI-04", "name": "正弦／餘弦定理", "prereqs": ["K-TRI-01"]}, {"id": "K-TRI-05", "name": "三角方程與圖像", "prereqs": ["K-TRI-03"]}, {"id": "K-TRI-06", "name": "方位角與應用", "prereqs": ["K-TRI-01"]}], "formulas": [{"id": "F-TRI-01", "name": "sin", "latex": "\\sin\\theta=\\frac{\\text{對}}{\\text{斜}}", "knowledge_point_id": "K-TRI-01"}, {"id": "F-TRI-02", "name": "cos", "latex": "\\cos\\theta=\\frac{\\text{鄰}}{\\text{斜}}", "knowledge_point_id": "K-TRI-01"}, {"id": "F-TRI-03", "name": "餘角", "latex": "\\cos(90^\\circ-\\theta)=\\sin\\theta", "knowledge_point_id": "K-TRI-03"}, {"id": "F-TRI-04", "name": "餘弦定理", "latex": "c^2=a^2+b^2-2ab\\cos C", "knowledge_point_id": "K-TRI-04"}, {"id": "F-TRI-05", "name": "餘弦週期", "latex": "y=A+B\\cos(kx),\\ T=\\frac{360^\\circ}{k}", "knowledge_point_id": "K-TRI-05"}]}, {"id": "T-MEN", "name": "求積法", "group": "度量、圖形與空間", "knowledge_points": [{"id": "K-MEN-01", "name": "平面圖形面積", "prereqs": []}, {"id": "K-MEN-02", "name": "弧長與扇形", "prereqs": ["K-MEN-01"]}, {"id": "K-MEN-03", "name": "相似面積比", "prereqs": ["K-MEN-01"]}, {"id": "K-MEN-04", "name": "立體表面積與體積", "prereqs": ["K-MEN-01"]}, {"id": "K-MEN-05", "name": "立體角與二面角", "prereqs": ["K-MEN-04"]}], "formulas": [{"id": "F-MEN-01", "name": "三角形面積", "latex": "\\frac12 bh", "knowledge_point_id": "K-MEN-01"}, {"id": "F-MEN-02", "name": "弧長", "latex": "L=r\\theta", "knowledge_point_id": "K-MEN-02"}, {"id": "F-MEN-03", "name": "扇形面積", "latex": "\\frac{n}{360}\\pi r^2", "knowledge_point_id": "K-MEN-02"}, {"id": "F-MEN-04", "name": "三角面積公式", "latex": "\\frac12 ab\\sin C", "knowledge_point_id": "K-MEN-01"}, {"id": "F-MEN-05", "name": "二面角餘弦", "latex": "\\cos\\theta=\\frac{\\vec n_1\\cdot\\vec n_2}{|\\vec n_1||\\vec n_2|}", "knowledge_point_id": "K-MEN-05"}]}, {"id": "T-LIN", "name": "坐標幾何：直線", "group": "度量、圖形與空間", "knowledge_points": [{"id": "K-LIN-01", "name": "距離與中點", "prereqs": []}, {"id": "K-LIN-02", "name": "斜率與截距", "prereqs": []}, {"id": "K-LIN-03", "name": "直線方程形式", "prereqs": ["K-LIN-02"]}, {"id": "K-LIN-04", "name": "平行與垂直", "prereqs": ["K-LIN-02"]}, {"id": "K-LIN-05", "name": "點到直線距離", "prereqs": ["K-LIN-03"]}], "formulas": [{"id": "F-LIN-01", "name": "距離", "latex": "d=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}", "knowledge_point_id": "K-LIN-01"}, {"id": "F-LIN-02", "name": "斜率", "latex": "m=\\frac{y_2-y_1}{x_2-x_1}", "knowledge_point_id": "K-LIN-02"}, {"id": "F-LIN-03", "name": "斜截式", "latex": "y=mx+c", "knowledge_point_id": "K-LIN-03"}, {"id": "F-LIN-04", "name": "點到線", "latex": "d=\\frac{|Ax_0+By_0+C|}{\\sqrt{A^2+B^2}}", "knowledge_point_id": "K-LIN-05"}]}, {"id": "T-CIR", "name": "坐標幾何：圓", "group": "度量、圖形與空間", "knowledge_points": [{"id": "K-CIR-01", "name": "圓的標準方程", "prereqs": []}, {"id": "K-CIR-02", "name": "圓心半徑判讀", "prereqs": ["K-CIR-01"]}, {"id": "K-CIR-03", "name": "圓與直線相交", "prereqs": ["K-CIR-01", "K-LIN-05"]}, {"id": "K-CIR-04", "name": "圓與點的位置", "prereqs": ["K-CIR-02"]}], "formulas": [{"id": "F-CIR-01", "name": "標準方程", "latex": "(x-h)^2+(y-k)^2=r^2", "knowledge_point_id": "K-CIR-01"}, {"id": "F-CIR-02", "name": "一般式半徑", "latex": "r=\\sqrt{g^2+f^2-c}", "knowledge_point_id": "K-CIR-02"}]}, {"id": "T-GEO", "name": "圓形幾何", "group": "度量、圖形與空間", "knowledge_points": [{"id": "K-GEO-01", "name": "圓心角與圓周角", "prereqs": []}, {"id": "K-GEO-02", "name": "切線與半徑垂直", "prereqs": ["K-GEO-01"]}, {"id": "K-GEO-03", "name": "弦、弧與對稱", "prereqs": ["K-GEO-01"]}, {"id": "K-GEO-04", "name": "多邊形內外角", "prereqs": []}, {"id": "K-GEO-05", "name": "相似／全等三角形", "prereqs": []}], "formulas": [{"id": "F-GEO-01", "name": "圓周角", "latex": "圓周角=\\frac12 同弧圓心角", "knowledge_point_id": "K-GEO-01"}, {"id": "F-GEO-02", "name": "切線垂直", "latex": "切線 \\perp 半徑", "knowledge_point_id": "K-GEO-02"}, {"id": "F-GEO-03", "name": "外角和", "latex": "正 n 邊形外角=\\frac{360^\\circ}{n}", "knowledge_point_id": "K-GEO-04"}, {"id": "F-GEO-04", "name": "內角和", "latex": "(n-2)\\times 180^\\circ", "knowledge_point_id": "K-GEO-04"}]}, {"id": "T-LOC", "name": "軌跡", "group": "度量、圖形與空間", "knowledge_points": [{"id": "K-LOC-01", "name": "到定點等距（圓）", "prereqs": []}, {"id": "K-LOC-02", "name": "到兩點等距（垂直平分線）", "prereqs": []}, {"id": "K-LOC-03", "name": "到定直線等距", "prereqs": []}, {"id": "K-LOC-04", "name": "軌跡方程描述", "prereqs": ["K-LOC-01", "K-LOC-02"]}], "formulas": [{"id": "F-LOC-01", "name": "圓軌跡", "latex": "\\{P: |PA|=r\\}", "knowledge_point_id": "K-LOC-01"}, {"id": "F-LOC-02", "name": "垂直平分線", "latex": "\\{P: |PA|=|PB|\\}", "knowledge_point_id": "K-LOC-02"}]}, {"id": "T-TRF", "name": "幾何變換", "group": "度量、圖形與空間", "knowledge_points": [{"id": "K-TRF-01", "name": "平移", "prereqs": []}, {"id": "K-TRF-02", "name": "反射", "prereqs": []}, {"id": "K-TRF-03", "name": "旋轉", "prereqs": []}, {"id": "K-TRF-04", "name": "極坐標與直角坐標", "prereqs": []}, {"id": "K-TRF-05", "name": "圖像變換綜合", "prereqs": ["K-TRF-01", "K-TRF-02", "K-TRF-03"]}], "formulas": [{"id": "F-TRF-01", "name": "逆時針 90°", "latex": "(x,y)\\mapsto(-y,x)", "knowledge_point_id": "K-TRF-03"}, {"id": "F-TRF-02", "name": "極徑", "latex": "r=\\sqrt{x^2+y^2}", "knowledge_point_id": "K-TRF-04"}]}, {"id": "T-CHR", "name": "統計圖表", "group": "數據處理", "knowledge_points": [{"id": "K-CHR-01", "name": "棒形／圓形圖讀取", "prereqs": []}, {"id": "K-CHR-02", "name": "幹葉圖", "prereqs": []}, {"id": "K-CHR-03", "name": "框線圖與四分位", "prereqs": []}, {"id": "K-CHR-04", "name": "散點圖與趨勢", "prereqs": []}, {"id": "K-CHR-05", "name": "頻數分佈表", "prereqs": []}], "formulas": [{"id": "F-CHR-01", "name": "圓形圖角", "latex": "扇形角 = 比例 \\times 360^\\circ", "knowledge_point_id": "K-CHR-01"}, {"id": "F-CHR-02", "name": "四分位距", "latex": "IQR=Q_3-Q_1", "knowledge_point_id": "K-CHR-03"}]}, {"id": "T-STA", "name": "集中趨勢與離差", "group": "數據處理", "knowledge_points": [{"id": "K-STA-01", "name": "平均數", "prereqs": []}, {"id": "K-STA-02", "name": "中位數與眾數", "prereqs": []}, {"id": "K-STA-03", "name": "加權平均", "prereqs": ["K-STA-01"]}, {"id": "K-STA-04", "name": "分佈域（極差）", "prereqs": []}, {"id": "K-STA-05", "name": "方差與標準差", "prereqs": ["K-STA-01"]}, {"id": "K-STA-06", "name": "數據增刪對統計量影響", "prereqs": ["K-STA-01", "K-STA-04", "K-STA-05"]}], "formulas": [{"id": "F-STA-01", "name": "平均數", "latex": "\\bar x=\\frac{\\sum x}{n}", "knowledge_point_id": "K-STA-01"}, {"id": "F-STA-02", "name": "加權平均", "latex": "\\bar x=\\frac{\\sum f_i x_i}{\\sum f_i}", "knowledge_point_id": "K-STA-03"}, {"id": "F-STA-03", "name": "極差", "latex": "R=\\max-\\min", "knowledge_point_id": "K-STA-04"}, {"id": "F-STA-04", "name": "標準差", "latex": "\\sigma=\\sqrt{\\frac{\\sum(x_i-\\bar x)^2}{n}}", "knowledge_point_id": "K-STA-05"}, {"id": "F-STA-05", "name": "加入新數據平均", "latex": "\\bar x_{new}=\\frac{n\\bar x+x_{new}}{n+1}", "knowledge_point_id": "K-STA-06"}]}, {"id": "T-PROB", "name": "概率", "group": "數據處理", "knowledge_points": [{"id": "K-PROB-01", "name": "古典概率", "prereqs": []}, {"id": "K-PROB-02", "name": "互斥與加法", "prereqs": ["K-PROB-01"]}, {"id": "K-PROB-03", "name": "獨立事件乘法", "prereqs": ["K-PROB-01"]}, {"id": "K-PROB-04", "name": "條件概率", "prereqs": ["K-PROB-03"]}, {"id": "K-PROB-05", "name": "與計數結合", "prereqs": ["K-PROB-01"]}], "formulas": [{"id": "F-PROB-01", "name": "古典", "latex": "P(E)=\\frac{n(E)}{n(S)}", "knowledge_point_id": "K-PROB-01"}, {"id": "F-PROB-02", "name": "互斥加", "latex": "P(A\\cup B)=P(A)+P(B)", "knowledge_point_id": "K-PROB-02"}, {"id": "F-PROB-03", "name": "條件", "latex": "P(A\\cap B)=P(A)P(B|A)", "knowledge_point_id": "K-PROB-04"}]}, {"id": "T-COM", "name": "排列與組合", "group": "數據處理", "knowledge_points": [{"id": "K-COM-01", "name": "計數基本原理", "prereqs": []}, {"id": "K-COM-02", "name": "排列", "prereqs": ["K-COM-01"]}, {"id": "K-COM-03", "name": "組合", "prereqs": ["K-COM-01"]}, {"id": "K-COM-04", "name": "組合恒等式", "prereqs": ["K-COM-03"]}], "formulas": [{"id": "F-COM-01", "name": "排列", "latex": "P(n,r)=\\frac{n!}{(n-r)!}", "knowledge_point_id": "K-COM-02"}, {"id": "F-COM-02", "name": "組合", "latex": "\\binom{n}{k}=\\frac{n!}{k!(n-k)!}", "knowledge_point_id": "K-COM-03"}, {"id": "F-COM-03", "name": "二項式和", "latex": "\\sum_{k=0}^n\\binom{n}{k}=2^n", "knowledge_point_id": "K-COM-04"}]}], "notes": ["所有分析 skills 欄位只准使用本冊 id。", "課題名與 docs/hub/data.js TOPICS.math 的 20 個葉節點一致。", "學生報告／自動出題稍後再做；本冊是計分基礎。"]}</script>
+<script>
+(function () {
+  const book = JSON.parse(document.getElementById('BOOK_DATA').textContent);
+  const groupOrder = ["數與代數", "度量、圖形與空間", "數據處理"];
+  const toneMap = {"數與代數": "alg", "度量、圖形與空間": "geo", "數據處理": "data"};
+  const STORE_KEY = 'dsehub-rpg-skill-unlocks-v1';
+
+  if (window.cytoscapeElk && window.cytoscape && window.ELK) {
+    cytoscape.use(cytoscapeElk);
+  }
+
+  const kpName = {};
+  const formulaByKp = {};
+  book.topics.forEach(t => {
+    (t.knowledge_points || []).forEach(k => { kpName[k.id] = k.name; });
+    (t.formulas || []).forEach(f => {
+      (formulaByKp[f.knowledge_point_id] = formulaByKp[f.knowledge_point_id] || []).push(f);
+    });
+  });
+
+  const nKp = book.topics.reduce((s, t) => s + (t.knowledge_points || []).length, 0);
+  const nF = book.topics.reduce((s, t) => s + (t.formulas || []).length, 0);
+  document.getElementById('stats').innerHTML = [
+    ['課題', book.topics.length],
+    ['知識點', nKp],
+    ['公式', nF],
+    ['能力', book.abilities.length],
+  ].map(([k, v]) => `<div class="stat"><b>${v}</b><span>${k}</span></div>`).join('');
+
+  document.getElementById('abilities').innerHTML = book.abilities.map(a =>
+    `<div class="ability"><strong>${a.name}</strong>${a.desc || ''}</div>`
+  ).join('');
+
+  function loadUnlocks() {
+    try { return JSON.parse(localStorage.getItem(STORE_KEY) || '{}') || {}; }
+    catch { return {}; }
+  }
+  function saveUnlocks(map) {
+    localStorage.setItem(STORE_KEY, JSON.stringify(map));
+  }
+  let unlocks = loadUnlocks(); // { [kpId]: true }
+
+  // seed roots unlocked for first-time users
+  book.topics.forEach(t => {
+    (t.knowledge_points || []).forEach(k => {
+      if (!(k.prereqs || []).length && unlocks[k.id] === undefined) unlocks[k.id] = true;
+    });
+  });
+  saveUnlocks(unlocks);
+
+  function progressPct() {
+    const ids = [];
+    book.topics.forEach(t => (t.knowledge_points || []).forEach(k => ids.push(k.id)));
+    const on = ids.filter(id => unlocks[id]).length;
+    return ids.length ? Math.round(100 * on / ids.length) : 0;
+  }
+  function refreshProgress() {
+    document.getElementById('progressLabel').textContent = '進度 ' + progressPct() + '%';
+  }
+  refreshProgress();
+
+  const byGroup = {};
+  book.topics.forEach(t => {
+    const g = t.group || '其他';
+    (byGroup[g] = byGroup[g] || []).push(t);
+  });
+  const list = document.getElementById('topicList');
+  list.innerHTML = groupOrder.filter(g => byGroup[g]).map(g => {
+    const tone = toneMap[g] || 'alg';
+    const buttons = byGroup[g].map(t => `
+      <button type="button" class="topic-btn" data-id="${t.id}">
+        <span class="name">${t.name}</span>
+        <span class="meta">${(t.knowledge_points || []).length} 技能格 · ${(t.formulas || []).length} 公式</span>
+      </button>`).join('');
+    return `<div class="group-label ${tone}">${g}</div><div class="topic-list">${buttons}</div>`;
+  }).join('');
+
+  let currentTopicId = null;
+  let selectedKp = null;
+  let cy = null;
+
+  function canUnlock(kp) {
+    const pre = kp.prereqs || [];
+    return pre.every(id => unlocks[id]);
+  }
+
+  function typeset(node) {
+    if (window.MathJax && MathJax.typesetPromise) {
+      MathJax.typesetPromise([node]).catch(() => {});
+    }
+  }
+
+  function showDetail(topic, kpId) {
+    const box = document.getElementById('detail');
+    if (!kpId) {
+      box.innerHTML = `<div class="empty">點地圖上嘅技能格，睇知識點同公式</div>`;
+      return;
+    }
+    const kp = (topic.knowledge_points || []).find(k => k.id === kpId);
+    if (!kp) return;
+    const unlocked = !!unlocks[kp.id];
+    const ready = canUnlock(kp);
+    const pre = (kp.prereqs || []).map(id => kpName[id] || id).join('、') || '無（起點技能）';
+    const formulas = (formulaByKp[kp.id] || []).map(f => `
+      <div class="formula">
+        <div class="id">${f.id}</div>
+        <h3>${f.name}</h3>
+        <div class="latex">$$${f.latex}$$</div>
+      </div>`).join('') || `<div class="empty">呢格未掛公式</div>`;
+    box.innerHTML = `
+      <div class="kp-card ${unlocked ? '' : 'locked'}">
+        <div class="id">${kp.id}</div>
+        <h3>${kp.name}</h3>
+        <span class="badge ${unlocked ? 'on' : 'off'}">${unlocked ? '已解鎖' : (ready ? '可解鎖' : '未解鎖')}</span>
+        <div class="prereq">先要識：${pre}</div>
+      </div>
+      <h2>相關公式</h2>
+      ${formulas}`;
+    typeset(box);
+  }
+
+  // Pixi sparkle layer
+  let sparkApp = null;
+  async function ensureFx() {
+    try {
+      const canvas = document.getElementById('fx');
+      const wrap = document.querySelector('.stage-wrap');
+      const w = wrap.clientWidth || 800;
+      const h = wrap.clientHeight || 600;
+      canvas.width = w; canvas.height = h;
+      if (!window.PIXI) return null;
+      if (sparkApp) {
+        sparkApp.renderer.resize(w, h);
+        return sparkApp;
+      }
+      sparkApp = new PIXI.Application();
+      await sparkApp.init({
+        canvas,
+        width: w,
+        height: h,
+        backgroundAlpha: 0,
+        antialias: true,
+      });
+      return sparkApp;
+    } catch (err) {
+      console.warn('Pixi FX unavailable', err);
+      return null;
+    }
+  }
+  async function sparkleAt(x, y) {
+    const app = await ensureFx();
+    if (!app) return;
+    for (let i = 0; i < 18; i++) {
+      const g = new PIXI.Graphics();
+      g.circle(0, 0, 2 + Math.random() * 3);
+      g.fill(0xffe9a8);
+      g.x = x; g.y = y;
+      app.stage.addChild(g);
+      const ang = Math.random() * Math.PI * 2;
+      const dist = 30 + Math.random() * 70;
+      const life = 400 + Math.random() * 400;
+      const t0 = performance.now();
+      const tick = () => {
+        const t = (performance.now() - t0) / life;
+        if (t >= 1) { app.stage.removeChild(g); g.destroy(); return; }
+        g.x = x + Math.cos(ang) * dist * t;
+        g.y = y + Math.sin(ang) * dist * t;
+        g.alpha = 1 - t;
+        requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+    }
+  }
+
+  // Simple icons: unlocked=✓, ready/locked=lock. Selected only enlarges.
+  function nodeIconDataUri(state) {
+    let bgOuter, stroke, ring, inner, mark;
+    if (state === 'unlocked' || state === 'active') {
+      const selected = state === 'active';
+      bgOuter = selected ? '#071410' : '#1a1208';
+      stroke = selected ? '#9dffd0' : '#f0d278';
+      ring = selected ? '#2f9b78' : '#d4a017';
+      inner = selected ? '#0b221b' : '#24180c';
+      const ink = selected ? '#e9fff5' : '#ffe9a8';
+      mark = `<path d="M46 66 L58 78 L86 48" fill="none" stroke="${ink}"
+        stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>`;
+    } else {
+      bgOuter = '#0e1014';
+      stroke = state === 'ready' ? '#e2c36b' : '#5a6270';
+      ring = '#3a404a';
+      inner = '#151820';
+      mark = `
+        <rect x="48" y="58" width="32" height="24" rx="4" fill="#c9d0dc"/>
+        <path d="M52 58 V50 a12 12 0 0 1 24 0 v8" fill="none" stroke="#c9d0dc" stroke-width="6" stroke-linecap="round"/>
+        <circle cx="64" cy="70" r="3.5" fill="#2a2e36"/>`;
+    }
+    const glow = state === 'active'
+      ? `<circle cx="64" cy="64" r="62" fill="#7dffb2" opacity="0.22"/>`
+      : '';
+    const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+      ${glow}
+      <circle cx="64" cy="64" r="58" fill="${bgOuter}" stroke="${stroke}" stroke-width="4"/>
+      <circle cx="64" cy="64" r="48" fill="${ring}" stroke="${stroke}" stroke-width="2" opacity="0.95"/>
+      <circle cx="64" cy="64" r="36" fill="${inner}"/>
+      ${mark}
+    </svg>`;
+    return 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
+  }
+
+  function buildElements(topic) {
+    const nodes = [];
+    const edges = [];
+    (topic.knowledge_points || []).forEach(k => {
+      const unlocked = !!unlocks[k.id];
+      const ready = canUnlock(k);
+      const state = unlocked ? 'unlocked' : (ready ? 'ready' : 'locked');
+      nodes.push({
+        data: {
+          id: k.id,
+          label: k.name,
+          unlocked,
+          ready,
+          icon: nodeIconDataUri(state),
+        },
+        classes: state,
+      });
+      (k.prereqs || []).forEach(p => {
+        edges.push({ data: { id: p + '->' + k.id, source: p, target: k.id } });
+      });
+    });
+    return nodes.concat(edges);
+  }
+
+  function styleFor() {
+    return [
+      {
+        selector: 'node',
+        style: {
+          'background-image': 'data(icon)',
+          'background-fit': 'cover',
+          'background-clip': 'none',
+          'background-opacity': 1,
+          'background-color': 'transparent',
+          'border-width': 0,
+          'width': 72,
+          'height': 72,
+          'label': 'data(label)',
+          'color': '#f4e8c8',
+          'text-valign': 'bottom',
+          'text-halign': 'center',
+          'text-margin-y': 8,
+          'font-size': 12,
+          'font-weight': 700,
+          'text-wrap': 'wrap',
+          'text-max-width': 110,
+          'text-outline-width': 2,
+          'text-outline-color': '#0a0806',
+          'overlay-padding': 8,
+        }
+      },
+      {
+        selector: 'node.locked',
+        style: { 'opacity': 0.78 }
+      },
+      {
+        selector: 'node:selected',
+        style: {
+          'width': 84,
+          'height': 84,
+          'color': '#ffe9a8',
+          'opacity': 1,
+        }
+      },
+      {
+        selector: 'edge',
+        style: {
+          'curve-style': 'bezier',
+          'target-arrow-shape': 'triangle',
+          'arrow-scale': 1.1,
+          'line-color': '#7a6540',
+          'target-arrow-color': '#c9a227',
+          'width': 2,
+          'opacity': 0.85,
+        }
+      }
+    ];
+  }
+
+  function renderTopic(topicId) {
+    const topic = book.topics.find(t => t.id === topicId);
+    if (!topic) return;
+    currentTopicId = topicId;
+    selectedKp = null;
+    document.querySelectorAll('.topic-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.id === topicId);
+    });
+    document.getElementById('branchHint').textContent =
+      topic.name + ' · 由上到下解鎖 · 起點已點亮';
+
+    const elements = buildElements(topic);
+    if (cy) { cy.destroy(); cy = null; }
+    cy = cytoscape({
+      container: document.getElementById('cy'),
+      elements,
+      style: styleFor(),
+      minZoom: 0.4,
+      maxZoom: 2.2,
+      wheelSensitivity: 0.25,
+      layout: {
+        name: (window.cytoscapeElk && window.ELK) ? 'elk' : 'breadthfirst',
+        elk: {
+          algorithm: 'layered',
+          'elk.direction': 'DOWN',
+          'elk.spacing.nodeNode': 48,
+          'elk.layered.spacing.nodeNodeBetweenLayers': 70,
+        },
+        directed: true,
+        padding: 40,
+        spacingFactor: 1.35,
+        animate: true,
+        animationDuration: 350,
+      },
+    });
+
+    function refreshNodeIcon(ele) {
+      if (!ele || !ele.isNode || !ele.isNode()) return;
+      const id = ele.id();
+      const kp = (topic.knowledge_points || []).find(k => k.id === id);
+      if (!kp) return;
+      const unlocked = !!unlocks[id];
+      const ready = canUnlock(kp);
+      let state = unlocked ? 'unlocked' : (ready ? 'ready' : 'locked');
+      // Selected unlocked nodes glow green but keep the ✓ mark.
+      if (selectedKp === id && unlocked) state = 'active';
+      ele.data('icon', nodeIconDataUri(state));
+    }
+
+    cy.on('tap', 'node', (evt) => {
+      const prev = selectedKp;
+      selectedKp = evt.target.id();
+      if (prev) refreshNodeIcon(cy.getElementById(prev));
+      refreshNodeIcon(evt.target);
+      showDetail(topic, selectedKp);
+    });
+    cy.on('tap', (evt) => {
+      if (evt.target === cy) {
+        const prev = selectedKp;
+        selectedKp = null;
+        if (prev) refreshNodeIcon(cy.getElementById(prev));
+        showDetail(topic, null);
+      }
+    });
+    showDetail(topic, null);
+    ensureFx();
+  }
+
+  list.addEventListener('click', (e) => {
+    const btn = e.target.closest('.topic-btn');
+    if (!btn) return;
+    renderTopic(btn.dataset.id);
+  });
+
+  document.getElementById('btnFit').addEventListener('click', () => {
+    if (cy) cy.fit(undefined, 48);
+  });
+
+  document.getElementById('btnReset').addEventListener('click', () => {
+    if (!currentTopicId) return;
+    const topic = book.topics.find(t => t.id === currentTopicId);
+    (topic.knowledge_points || []).forEach(k => {
+      unlocks[k.id] = !(k.prereqs || []).length;
+    });
+    saveUnlocks(unlocks);
+    refreshProgress();
+    renderTopic(currentTopicId);
+  });
+
+  document.getElementById('btnUnlock').addEventListener('click', async () => {
+    if (!currentTopicId || !selectedKp || !cy) return;
+    const topic = book.topics.find(t => t.id === currentTopicId);
+    const kp = (topic.knowledge_points || []).find(k => k.id === selectedKp);
+    if (!kp) return;
+    if (unlocks[kp.id]) {
+      document.getElementById('branchHint').textContent = '呢格已經解鎖咗';
+      return;
+    }
+    if (!canUnlock(kp)) {
+      document.getElementById('branchHint').textContent = '仲未滿足先備技能，唔可以解鎖';
+      return;
+    }
+    unlocks[kp.id] = true;
+    saveUnlocks(unlocks);
+    refreshProgress();
+    const node = cy.getElementById(kp.id);
+    const p = node.renderedPosition();
+    await sparkleAt(p.x, p.y);
+    renderTopic(currentTopicId);
+    // reselect
+    selectedKp = kp.id;
+    if (cy) {
+      const n2 = cy.getElementById(kp.id);
+      n2.select();
+      showDetail(topic, kp.id);
+    }
+    document.getElementById('branchHint').textContent = '解鎖成功：' + kp.name;
+  });
+
+  window.addEventListener('resize', () => { ensureFx(); if (cy) cy.resize(); });
+
+  // default open first topic
+  if (book.topics[0]) renderTopic(book.topics[0].id);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2012",
+  "paper": "Paper 2",
+  "qno": "33",
+  "hash": "#2012P2Q33"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-16",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "十六進位數值展開",
+   "secondary_topics": [
+    "指數運算",
+    "多項式係數對應"
+   ],
+   "required_formulas": [
+    "$\\sum_{i=0}^{n-1} d_i \\cdot b^{n-1-i}$ 其中 $b$ 為底數, $d_i$ 為第 $i$ 位數字"
+   ],
+   "bloom_taxonomy_level": "理解",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "指數位數錯配",
+    "student_thought_process": "學生可能正確辨識出最高位是 $10$ ($A$)，但在計算次高位 $D$ ($13$) 的指數時，誤以為其對應 $16^{12}$（即總位數加 1），或是混淆了 $16^{11}$ 與 $16^{12}$ 的權重關係，導致將第二項寫成 $(13)16^{11}$ 且常數項錯誤。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "數字識別錯誤",
+    "student_thought_process": "學生將十六進位中的 $D$ ($13_{10}$) 誤讀為 $14$，並將 $A$ ($10_{10}$) 誤讀為 $11$。這顯示學生未能正確將字母轉換為十進位數值，或是記憶錯誤的字母序數（認為 D=14, A=11）。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "多重識別與指數錯配",
+    "student_thought_process": "學生同時犯了識別錯誤（將 $A$ 視為 $11$, $D$ 視為 $14$）以及指數位數錯配的錯誤，將最高位 $A$ 的權重設定為 $16^{12}$，這意味著學生認為該數有 13 位數字，但實際上 $AD0000002012_{16}$ 只有 12 位數字（從左至右第 1 位到第 12 位）。"
+   }
+  },
+  "scaffolding_hints": [
+   "Hint 1 啟發: 十六進位數 $d_n d_{n-1} \\dots d_0$ 的展開式，最高位 $d_n$ 對應的底數指數是 $n$（若總共有 $n+1$ 位），請先確認該數共有多少位。",
+   "Hint 2 知識: 十六進位字母對應關係為 $A=10, B=11, C=12, D=13, E=14, F=15$。展開式通項為 $d_i \\cdot 16^k$，其中 $k$ 是從右往左數的第幾位（從 0 開始）。",
+   "Hint 3 破題: 該數字串長度為 12 位，因此最高位（最左邊）的指數應為 $11$，次高位為 $10$。請將字母轉換後代入正確的指數位置。"
+  ],
+  "quick_solution_strategy": "確認總位數為 12，故最高位指數為 11；將 A=10, D=13 代入前兩項，排除其他選項。"
+ },
+ "skills": {
+  "topic_id": "T-NUM",
+  "knowledge_point_ids": [
+   "K-NUM-03"
+  ],
+  "formula_ids": [
+   "F-NUM-02"
+  ],
+  "ability_ids": [
+   "A-CALC",
+   "A-SUB"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-NUM-03",
+    "formula_id": "F-NUM-02",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-NUM-03",
+    "formula_id": "F-NUM-02",
+    "ability_id": "A-SUB"
+   },
+   "D": {
+    "knowledge_point_id": "K-NUM-03",
+    "formula_id": "F-NUM-02",
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

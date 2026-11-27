@@ -1,0 +1,103 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2015",
+  "paper": "Paper 1",
+  "qno": "4",
+  "hash": "#2015P1Q4"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "因式分解",
+   "secondary_topics": [
+    "提公因式法",
+    "十字相乘法",
+    "平方差公式"
+   ],
+   "required_formulas": [
+    "$x^2 - y^2 = (x-y)(x+y)$",
+    "$ax^2 + bx + c = a(x-x_1)(x-x_2)$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "將 (a) 式提公因式 $x^2$，得 $x^2(x+y-7)$。",
+    "marks": 1,
+    "common_error": "忘記提公因式 $x^2$，或錯誤合併項。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 2,
+    "what": "將 (b) 前三項與後三項分別分組。",
+    "marks": 1,
+    "common_error": "分組錯誤，無法提取公因式。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "從第一組提 $x^2$，第二組提 $-1$。",
+    "marks": 1,
+    "common_error": "符號處理錯誤，漏掉負號。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "對括號內 $x^2-1$ 使用平方差公式分解。",
+    "marks": 1,
+    "common_error": "忽略 $x^2-1$ 可繼續分解，停在此步。",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "考生常能處理前三項分組，但易忽視最後一步對 $x^2-1$ 的平方差分解，導致失分。",
+  "scaffolding_hints": [
+   "先觀察 (a) 式是否有公因式可提。",
+   "回憶平方差公式 $a^2-b^2=(a-b)(a+b)$。",
+   "將 (b) 式視為兩組，每組先提公因式再合併。"
+  ],
+  "quick_solution_strategy": "分組處理：前三項提 $x^2$，後三項提 $-1$，最後用平方差公式完成分解。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-03"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "2": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

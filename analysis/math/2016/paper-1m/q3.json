@@ -1,0 +1,133 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2016",
+  "paper": "Paper 1M",
+  "qno": "3",
+  "hash": "#2016P1MQ3"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "泊松分佈",
+   "secondary_topics": [
+    "變異數性質",
+    "獨立事件機率計算",
+    "條件機率與序列事件"
+   ],
+   "required_formulas": [
+    "$\\text{Var}(X) = \\lambda$",
+    "$P(X=k) = \\frac{e^{-\\lambda}\\lambda^k}{k!}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 420,
+   "marks": 7
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "寫下泊松分佈變異數公式並代入 $\\lambda=1.8$。",
+    "marks": 2,
+    "common_error": "誤以為變異數等於平均值平方或忘記泊松分佈變異數即參數本身。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "計算前兩分鐘內總人數為 3 人的機率（$\\lambda=3.6$）。",
+    "marks": 1,
+    "common_error": "忘記將兩分鐘的 $\\lambda$ 相加，仍用單分鐘的 $1.8$。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "定義事件：第 1-2 分鐘總人數=3；第 3 分鐘人數<4。",
+    "marks": 1,
+    "common_error": "未明確界定「第二門剛開」所需的前置條件與當前條件。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 4,
+    "what": "計算第 3 分鐘人數少於 4 人的機率（$1-P(X\\ge4)$）。",
+    "marks": 1,
+    "common_error": "直接算 $P(X<4)$ 卻忘記補上 $X=0,1,2,3$ 的完整加總。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 5,
+    "what": "將步驟 2 與步驟 4 的結果相乘（獨立事件）。",
+    "marks": 1,
+    "common_error": "誤以為兩事件互斥而相加，或忽略時間獨立的假設。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 6,
+    "what": "整理數值計算並寫下最終答案（保留三位小數）。",
+    "marks": 1,
+    "common_error": "四捨五入錯誤或計算機輸入數字時位數搞錯。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "此題測試學生對泊松分佈基本性質的掌握，以及將時間區間合併與分解處理機率的能力，屬典型應用題型。",
+  "scaffolding_hints": [
+   "Hint1: 泊松分佈中，變異數 $\\text{Var}(X)$ 等於平均值 $\\lambda$。",
+   "Hint2: 若將多個連續分鐘合併計算，新的平均率為各分鐘之和。",
+   "Hint3: 「第二門剛開」代表前兩分鐘條件已滿足，且第三分鐘尚未觸發新條件。"
+  ],
+  "quick_solution_strategy": "先寫變異數；再算前兩分鐘總人數=3 的機率；最後乘上第三分鐘<4 人的機率。"
+ },
+ "skills": {
+  "topic_id": "T-PROB",
+  "knowledge_point_ids": [
+   "K-PROB-01",
+   "K-PROB-02"
+  ],
+  "formula_ids": [
+   "F-PROB-01",
+   "F-PROB-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "4": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "5": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "6": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

@@ -1,0 +1,127 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2012",
+  "paper": "Paper 1",
+  "qno": "3",
+  "hash": "#2012P1Q3"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "因式分解",
+   "secondary_topics": [
+    "完全平方公式",
+    "提公因式法"
+   ],
+   "required_formulas": [
+    "$a^2 - 2ab + b^2 = (a-b)^2$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120,
+   "marks": 3
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "識別 (a) 為完全平方公式，寫出 $(x-3y)^2$。",
+    "marks": 1,
+    "common_error": "符號錯誤寫成 $(x+3y)^2$ 或忽略 $y$ 變數。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "觀察 (b) 前三項與 (a) 相同，先提公因式 $(x-3y)^2$。",
+    "marks": 1,
+    "common_error": "直接展開或無法看出與 (a) 的關聯性。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "處理後兩項 $+7x-21y$，提公因式 $7$ 得 $7(x-3y)$。",
+    "marks": 1,
+    "common_error": "忘記提 $7$ 或錯誤分解 $7x-21y$。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "合併前兩部分，寫出最終形式 $(x-3y)(x-3y+7)$。",
+    "marks": 0,
+    "common_error": "未將 $(x-3y)^2$ 與 $7(x-3y)$ 合併為乘積形式。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 5,
+    "what": "檢查答案是否展開回原式，確保因式分解完成。",
+    "marks": 0,
+    "common_error": "答案仍為展開式或未完全分解至最簡。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 6,
+    "what": "確認括號內項數正確，避免遺漏變數或係數。",
+    "marks": 0,
+    "common_error": "寫成 $(x-3y)^2 + 7(x-3y)$ 而未相乘。",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "考生常忽略題目間的遞進關係，將 (b) 視為獨立題目而錯用完全平方公式，或未能完成最後的提公因式步驟導致答案形式錯誤。",
+  "scaffolding_hints": [
+   "回顧 $a^2-2ab+b^2$ 的結構特徵。",
+   "注意 (b) 題中 $x, y$ 係數與 (a) 的一致性。",
+   "因式分解最終必須是乘積形式，不可含加號。"
+  ],
+  "quick_solution_strategy": "先解 (a) 得 $(x-3y)^2$；(b) 提前兩項公因式與後兩項公因式 $7(x-3y)$，再合併為 $(x-3y)(x-3y+7)$。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-03"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "5": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "6": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

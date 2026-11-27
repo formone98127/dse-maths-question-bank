@@ -1,0 +1,91 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2025",
+  "paper": "Paper 2",
+  "qno": "8",
+  "hash": "#2025P2Q8"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "二次函數, 代數運算",
+   "secondary_topics": [
+    "函數求值",
+    "對稱性性質"
+   ],
+   "required_formulas": [
+    "f(x) = x^2 + 7x + k"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "符號錯誤",
+    "student_thought_process": "算出 k=3 後，忘記題目是求 f(4)+f(-4) 的結果而非 k，或混淆了移項後的符號，誤選 -6。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "計算失誤",
+    "student_thought_process": "正確算出 k=3 後，在移項時錯誤地將 +k 變成 -k/2 或類似錯誤，導致結果為 -3。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略一次項",
+    "student_thought_process": "誤以為 f(x) 是偶函數，直接將 f(4)+f(-4)=2(16+k)，忽略了 7x 項在相加時會抵消的性質。"
+   }
+  },
+  "scaffolding_hints": [
+   "先分別寫出 f(4) 與 f(-4) 的表達式，觀察 x^2 與 7x 項在相加時的變化。",
+   "利用 f(x) 中一次項係數為 7 這一事實，推斷 f(4)+f(-4) 中一次項會相互抵消。",
+   "將 f(4)+f(-4) 的簡化結果等於 38，解出 k 的值。"
+  ],
+  "quick_solution_strategy": "計算 f(4)+f(-4)=2(16+k)，令其等於 38 解得 k=3。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-01",
+   "K-POL-02"
+  ],
+  "formula_ids": [
+   "F-POL-01",
+   "F-POL-02",
+   "F-POL-03",
+   "F-POL-06"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

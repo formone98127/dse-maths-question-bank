@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2015",
+  "paper": "Paper 2",
+  "qno": "31",
+  "hash": "#2015P2Q31"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "分式運算與因式分解",
+   "secondary_topics": [
+    "完全平方公式",
+    "十字相乘法",
+    "公分母概念"
+   ],
+   "required_formulas": [
+    "$x^2-2x+1=(x-1)^2$",
+    "$x^2+x-2=(x-1)(x+2)$",
+    "$\\dfrac{a}{b}-\\dfrac{c}{d}=\\dfrac{ad-bc}{bd}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "漏掉平方項與分子合併",
+    "student_thought_process": "學生正確分解分母，但計算分子時將 $1-1=0$ 算錯或忽略公分母乘法，直接將分母相乘結果寫成答案，未進行通分。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "分子合併錯誤為 1",
+    "student_thought_process": "學生正確分解分母並計算公分母，但在通分後分子運算時，誤以為 $1-1$ 或其他步驟結果為 $1$，而非實際的 $2x+1$ 相關項。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "分子運算結果正確但形式誤導",
+    "student_thought_process": "學生成功計算出分子為 $2x+1$，但在化簡過程中可能混淆了選項 D 與 C 的係數關係，或是在檢查時將 $3$ 看錯。"
+   }
+  },
+  "scaffolding_hints": [
+   "先觀察兩個分母，嘗試使用因式分解的方法將其拆解成一次式的乘積形式。",
+   "回憶分式減法的規則：通分後，分子等於「前分子乘後分母」減去「後分子乘前分母」。",
+   "計算通分後的分子時，請仔細展開 $(x+2)$ 與 $(x-1)^2$ 的係數，並合併同類項。"
+  ],
+  "quick_solution_strategy": "分解分母為 $(x-1)^2(x+2)$，通分後分子為 $1\\cdot(x+2)-1\\cdot(x-1)^2$，展開合併得 $2x+1$，再檢查選項係數。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-03"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

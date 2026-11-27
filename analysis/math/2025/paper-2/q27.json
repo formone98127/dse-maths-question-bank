@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2025",
+  "paper": "Paper 2",
+  "qno": "27",
+  "hash": "#2025P2Q27"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓的方程",
+   "secondary_topics": [
+    "弦長公式",
+    "點到直線距離"
+   ],
+   "required_formulas": [
+    "(x-h)^2 + (y-k)^2 = r^2",
+    "r^2 = d^2 + (L/2)^2"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "符號錯誤",
+    "student_thought_process": "圓心 (7,-5) 代入一般式時，x 係數應為 -2h=-14，y 係數應為 +2k=-10。選項 B x 係數為 +14 且 y 係數為 -10，符號全錯。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "常數項計算錯誤",
+    "student_thought_process": "圓心坐標導致 x,y 一次項係數正確，但半徑平方 r^2=145 時，常數項應為 -95。選項 C 常數項寫成 -119，可能是算錯 d 或 L/2。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "圓心坐標混淆",
+    "student_thought_process": "此選項同時犯了 B 的符號錯誤與 C 的常數項錯誤，代表學生未正確處理 (x-h)^2+(y-k)^2 展開時的符號規則。"
+   }
+  },
+  "scaffolding_hints": [
+   "圓心為 (h,k)，代入標準式 $(x-h)^2 + (y-k)^2 = r^2$，先確定一次項係數與常數項的初步關係。",
+   "圓與 x 軸相交，弦 PQ 位於 y=0 直線上。利用直角三角形關係：半徑 $r$、弦長一半 $12$、及圓心到 x 軸距離 $|-5|$ 構成勾股定理。",
+   "計算出 $r^2$ 後，將所有項移至左邊整理成一般式 $x^2+y^2+Dx+Ey+F=0$，並檢查常數項是否與選項吻合。"
+  ],
+  "quick_solution_strategy": "利用圓心坐標定一次項係數，用勾股定理求半徑平方，展開即得答案。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-01",
+   "K-GEO-02"
+  ],
+  "formula_ids": [
+   "F-GEO-01",
+   "F-GEO-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

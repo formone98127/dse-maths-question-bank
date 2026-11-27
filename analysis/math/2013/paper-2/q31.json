@@ -1,0 +1,91 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 2",
+  "qno": "31",
+  "hash": "#2013P2Q31"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "因式分解與最小公倍數",
+   "secondary_topics": [
+    "立方和公式",
+    "平方差公式",
+    "完全平方公式"
+   ],
+   "required_formulas": [
+    "$a^2+b^2+2ab=(a+b)^2$",
+    "$a^2-b^2=(a-b)(a+b)$",
+    "$a^3+b^3=(a+b)(a^2-ab+b^2)$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆最大公因數與最小公倍數",
+    "student_thought_process": "學生將 L.C.M. 誤解為 G.C.D.，只提取了所有式子共有的因子 $(a+2)$，忽略了其他獨有因子。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "立方和公式符號錯誤",
+    "student_thought_process": "學生正確分解前三項，但在處理 $a^3+8$ 時，記錯公式為 $(a+b)(a^2-ab-b^2)$ 或混淆了中間項符號。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "指數運算錯誤",
+    "student_thought_process": "學生在計算 $(a+2)$ 的次數時，誤將 $a^2-4$ 中的單次方與 $a^3+8$ 中的單次方相加或混淆，寫成四次方。"
+   }
+  },
+  "scaffolding_hints": [
+   "請先分別對三個多項式進行因式分解，注意平方差與立方和公式的應用。",
+   "最小公倍數 (L.C.M.) 需包含每個質因子的最高次幂，請比較各因子出現的最高次數。",
+   "檢查 $a^3+8$ 分解後的第二個括號內項，確認中間項係數與符號是否正確。"
+  ],
+  "quick_solution_strategy": "分解為 $(a+2)(a-2)$、$(a+2)^2$、$(a+2)(a^2-2a+4)$，取最高次幂相乘得 B。"
+ },
+ "skills": {
+  "topic_id": "T-NUM",
+  "knowledge_point_ids": [
+   "K-NUM-01",
+   "K-NUM-02"
+  ],
+  "formula_ids": [
+   "F-NUM-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

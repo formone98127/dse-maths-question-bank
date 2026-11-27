@@ -1,0 +1,107 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "PP",
+  "paper": "Paper 1",
+  "qno": "7",
+  "hash": "#PPP1Q7"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓形性質",
+   "secondary_topics": [
+    "等腰三角形",
+    "同弧所對圆周角"
+   ],
+   "required_formulas": [
+    "直徑所對圆周角為直角 ($90^\\circ$)",
+    "等腰三角形底角相等",
+    "同弧所對圆周角相等"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用直徑性質，得出 $\\angle BAD = 90^\\circ$。",
+    "marks": 1,
+    "common_error": "忘記直徑所對圆周角為直角，直接假設其他角度。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "利用同弧性質，得出 $\\angle ABD = \\angle ACD$ 或計算 $\\angle BAC$。",
+    "marks": 1,
+    "common_error": "混淆不同弧所對的角，錯誤連結 $\\angle BDC$ 與 $\\angle BAD$。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "利用等腰三角形性質 ($AB=AC$)，得出 $\\angle ABC = \\angle ACB$。",
+    "marks": 1,
+    "common_error": "誤以為 $AB=AC$ 代表 $\\angle B = \\angle A$，搞錯底角位置。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "計算三角形內角和，解出 $\\angle ABD$ 的數值。",
+    "marks": 1,
+    "common_error": "三角內角和計算錯誤，或代入角度時符號弄錯。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "此題結合圓與三角形性質，常見失誤在於未能正確識別同弧所對的圆周角相等，導致無法建立 $\\angle ABD$ 與已知 $36^\\circ$ 角的關係。",
+  "scaffolding_hints": [
+   "提示：直徑 $BD$ 將圓分成兩個半圓，直徑所對的圆周角一定是直角。",
+   "知識：在同圓中，同一段弧（如弧 $BC$）所對的所有圆周角大小相等。",
+   "破題：先找出與已知 $36^\\circ$ 角相等的角，再結合等腰三角形性質求解未知角。"
+  ],
+  "quick_solution_strategy": "1. $\\angle BAD=90^\\circ$；2. $\\angle BAC = 2 \\times 36^\\circ = 72^\\circ$（同弧）；3. $\\triangle ABC$ 等腰，底角 $(180-72)/2 = 54^\\circ$；4. $\\angle ABD = 90 - 54 = 36^\\circ$"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-01",
+   "K-GEO-02"
+  ],
+  "formula_ids": [
+   "F-GEO-01",
+   "F-GEO-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

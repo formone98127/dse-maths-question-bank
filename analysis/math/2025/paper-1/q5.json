@@ -1,0 +1,102 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": 2025,
+  "paper": "Paper 1",
+  "qno": 5,
+  "hash": "#2025P1Q5"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "因式分解",
+   "secondary_topics": [
+    "提取公因式",
+    "平方差公式"
+   ],
+   "required_formulas": [
+    "$ab+ac=a(b+c)$",
+    "$a^2-b^2=(a-b)(a+b)$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "觀察 (a) 與 (c)，先提取公因式 $2r$。",
+    "marks": 1,
+    "common_error": "忽略公因式直接分解，或錯將 $-6qr$ 視為正數。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 2,
+    "what": "對 (b) 應用平方差公式 $A^2-B^2=(A-B)(A+B)$。",
+    "marks": 1,
+    "common_error": "寫成 $(5p-3q)^2$，混淆完全平方與平方差。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "將 (c) 重組為 $[25p^2-9q^2] - [10pr-6qr]$。",
+    "marks": 1,
+    "common_error": "不重組直接硬算，或漏掉括號變號。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 4,
+    "what": "對 (c) 先提 $2r$，再分解剩餘平方差式子。",
+    "marks": 1,
+    "common_error": "最後一步未完全分解至最簡因式形式。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "考生多數能正確分解，但需警惕將平方差誤記為完全平方公式的常見概念錯誤。",
+  "scaffolding_hints": [
+   "先找所有項的公因式再處理剩餘部分。",
+   "記住 $a^2-b^2$ 是兩個一次式相乘，非平方。",
+   "重組時注意括號內符號是否改變。"
+  ],
+  "quick_solution_strategy": "先看 (b) 用平方差，再看 (c) 提公因式後剩 (b) 的結構。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-03"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "2": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "4": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2016",
+  "paper": "Paper 2",
+  "qno": "39",
+  "hash": "#2016P2Q39"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "空間向量與餘弦定理",
+   "secondary_topics": [
+    "長方體坐標化",
+    "向量點積公式",
+    "三邊關係 (餘弦定理)"
+   ],
+   "required_formulas": [
+    "$\\vec{u} \\cdot \\vec{v} = |\\vec{u}| |\\vec{v}| \\cos \\theta$",
+    "$c^2 = a^2 + b^2 - 2ab \\cos C$",
+    "$\\sin \\theta = \\sqrt{1 - \\cos^2 \\theta}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "餘弦值計算錯誤",
+    "student_thought_process": "算出 $\\cos \\theta = 33/65$ 後，未取平方根或誤以為餘弦即正弦，直接選 B。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "向量起點混淆",
+    "student_thought_process": "錯誤地將 $P$ 視為原點或搞混 $F$ 與 $H$ 的相對位置，導致向量大小計算完全錯誤。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "未建立座標系",
+    "student_thought_process": "嘗試用純幾何法則求解，忽略空間向量坐標化的優勢，導致運算過於複雜而出錯。"
+   }
+  },
+  "scaffolding_hints": [
+   "設 $C$ 為原點 $(0,0,0)$，建立長方體座標系，寫出 $A, B, C, D, F, H, Q$ 的座標。",
+   "利用中點公式求 $P$ 的座標，並計算向量 $\\vec{PF}$ 與 $\\vec{QF}$ 的分量。",
+   "先求兩向量的夾角餘弦值 $\\cos \\angle PFQ$，再利用三角恆等式轉換為正弦值。"
+  ],
+  "quick_solution_strategy": "建立座標系 -> 求向量 -> 用點積求餘弦 -> 轉餘弦為正弦。"
+ },
+ "skills": {
+  "topic_id": "T-TRI",
+  "knowledge_point_ids": [
+   "K-TRI-04"
+  ],
+  "formula_ids": [
+   "F-TRI-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-TRI-04",
+    "formula_id": "F-TRI-04",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-TRI-04",
+    "formula_id": "F-TRI-04",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-TRI-04",
+    "formula_id": "F-TRI-04",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

@@ -1,0 +1,106 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 1M",
+  "qno": "4",
+  "hash": "#2024P1MQ4"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "置信區間",
+   "secondary_topics": [
+    "樣本統計量計算",
+    "總變異數分解"
+   ],
+   "required_formulas": [
+    "CI Width = 2 z_{\\beta/2} \\frac{s}{\\sqrt{n}}",
+    "s^2 = \\frac{1}{n-1}(\\sum x_i^2 - n\\bar{x}^2)",
+    "\\sum x_i^2 = (n-1)s^2 + n\\bar{x}^2"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 480,
+   "marks": 7
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用 CI 寬度公式求 z 分數，再查表得 \\beta",
+    "marks": 3,
+    "common_error": "忘記乘以 2 或混淆 n 與 n-1",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 2,
+    "what": "計算男生樣本的 \\sum x^2 總和",
+    "marks": 2,
+    "common_error": "直接用 s 平方而非 (n-1)s^2",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "計算女生樣本數 n_g 與 \\sum x^2_g",
+    "marks": 1,
+    "common_error": "忘記總體 n=81 減去男生數",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 4,
+    "what": "利用總體 \\sum x^2 求女生 \\sum x^2_g",
+    "marks": 1,
+    "common_error": "誤以為男女變異數可直接相加",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "考生常混淆母體參數與樣本統計量，且在處理分層樣本時忽略總和守恒原則導致計算錯誤。",
+  "scaffolding_hints": [
+   "CI 寬度公式中 z 值對應雙尾機率",
+   "變異數分解需先求 \\sum x^2",
+   "女生數據 = 總體 - 男生"
+  ],
+  "quick_solution_strategy": "由 CI 寬度反推 z，再算男女 \\sum x^2 差值得到女生 s_g"
+ },
+ "skills": {
+  "topic_id": "T-STA",
+  "knowledge_point_ids": [
+   "K-STA-01",
+   "K-STA-02"
+  ],
+  "formula_ids": [
+   "F-STA-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "2": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "4": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

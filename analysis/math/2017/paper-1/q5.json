@@ -1,0 +1,105 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 1",
+  "qno": "5",
+  "hash": "#2017P1Q5"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "一元一次不等式",
+   "secondary_topics": [
+    "複合不等式求解",
+    "整數個數計算",
+    "區間表示法"
+   ],
+   "required_formulas": [
+    "$7(x-2)\\leq\\frac{11x+8}{3}$",
+    "$6-x<5$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "解不等式 $7(x-2)\\leq\\frac{11x+8}{3}$，化簡得 $9x \\leq 26$。",
+    "marks": 1,
+    "common_error": "去分母時漏乘右邊常數項或符號弄錯。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "解不等式 $6-x<5$，移項得 $x>1$。",
+    "marks": 1,
+    "common_error": "移項時忘記改變符號。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "聯立兩解集，寫出 $x$ 的範圍：$1<x\\leq\\frac{26}{9}$。",
+    "marks": 1,
+    "common_error": "混淆「及」與「或」，寫成並集而非交集。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "找出範圍內所有整數：$x=2,3$，共 2 個。",
+    "marks": 1,
+    "common_error": "誤以為 $\\frac{26}{9}\\approx 5$ 或忽略小數部分。",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "考生常將不等式解集誤認為連續整數區間，或未正確計算邊界值導致多算或少算整數個數。",
+  "scaffolding_hints": [
+   "先分別解兩個簡單不等式，再取交集。",
+   "注意分母為 3 時需將兩邊同乘 3。",
+   "最後畫數軸確認整數點是否包含在內。"
+  ],
+  "quick_solution_strategy": "分開解兩式得 $1<x\\leq2.88$，整數僅有 2,3，共 2 個。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-05"
+  ],
+  "formula_ids": [
+   "F-EQN-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

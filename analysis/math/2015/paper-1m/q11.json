@@ -1,0 +1,131 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2015",
+  "paper": "Paper 1M",
+  "qno": "11",
+  "hash": "#2015P1MQ11"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "積分法",
+   "secondary_topics": [
+    "梯形法則",
+    "函數圖形性質 (凹凸性)",
+    "對數與指數運算"
+   ],
+   "required_formulas": [
+    "\\int_a^b f(t) dt \\approx \\frac{h}{2}[f(t_0) + 2f(t_1) + ... + 2f(t_n) + f(t_n)]",
+    "\\ln(e^t - t)",
+    "\\int \\frac{u}{u+c} du"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 300,
+   "marks": 12
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "計算梯形法則所需的 t 值及對應 f(t) 數值。",
+    "marks": 1,
+    "common_error": "步長 h 計算錯誤 (應為 2)，或漏算端點值。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "代入梯形法則公式並進行加總計算。",
+    "marks": 1,
+    "common_error": "忘記將中間項乘以 2，或端點值只乘一次。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "繪製 f(t) 圖形並判斷其凹凸性 (concavity)。",
+    "marks": 1,
+    "common_error": "未求二階導數或誤判圖形形狀。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "根據凹凸性解釋為何估計值為高估或低估。",
+    "marks": 2,
+    "common_error": "僅說結論未連結圖形與梯形面積關係。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 5,
+    "what": "利用代數變形計算不定積分 \\int \\frac{t}{1+t} dt。",
+    "marks": 2,
+    "common_error": "無法將分子拆分為 (t+1-1) 導致積分失敗。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 6,
+    "what": "計算 Y 公司總產量並與 X 公司梯形估計值比較。",
+    "marks": 4,
+    "common_error": "定積分上下限搞錯，或忽略題目單位 (百桶)。",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "此題結合離散近似與連續積分概念，考生常因計算繁瑣而出錯，關鍵在於正確判斷函數凹凸性以解釋誤差方向。",
+  "scaffolding_hints": [
+   "提示 1：梯形法則步長 h = (b-a)/n，務必確認端點是否包含。",
+   "提示 2：若 f''(t) > 0 (凹向上)，梯形面積會大於實際曲線面積 (Over-estimate)。",
+   "提示 3：積分 \\frac{t}{1+t} 可視為 \\frac{(t+1)-1}{1+t} = 1 - \\frac{1}{1+t}。"
+  ],
+  "quick_solution_strategy": "先算梯形數值，再求 f''(t) 判斷凹凸性解釋誤差，最後積分比較兩者總量。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "5": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "6": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

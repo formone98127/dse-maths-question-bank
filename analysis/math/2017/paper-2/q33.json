@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 2",
+  "qno": "33",
+  "hash": "#2017P2Q33"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "函數圖形與二次方程式",
+   "secondary_topics": [
+    "線性關係的定義",
+    "變量代換法",
+    "配方法或頂點式轉換"
+   ],
+   "required_formulas": [
+    "若 $ u = \\sqrt{y} $ 與 $ x $ 成線性，則 $ u = mx + c $"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 120
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "符號錯誤",
+    "student_thought_process": "學生算出斜率為 -4，但截距計算錯誤。將 $x=0$ 代入圖形得 $\\sqrt{y}=2$，卻誤算成其他數值，導致常數項不對。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "斜率符號混淆",
+    "student_thought_process": "學生正確讀取截距為 2，但看錯圖形趨勢，將負斜率誤認為正斜率，因此選出 $+4x$ 的選項。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "截距計算錯誤",
+    "student_thought_process": "學生算出斜率正確為 -4，但將圖形中 $x=0$ 時的 $\\sqrt{y}$ 值誤讀或誤算為 8，導致常數項變成 64。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察題目敘述：$ x $ 與 $ \\sqrt{y} $ 成線性關係，這意味著它們滿足一次函數的形式 $ \\sqrt{y} = mx + c $。",
+   "從圖形中找出兩個清晰的點（例如截距點和另一個整數點），計算出斜率 $ m $ 與 $ y $ 軸截距 $ c $ 的數值。",
+   "將求得的 $ m $ 與 $ c $ 代入 $ \\sqrt{y} = mx + c $，接著對等式兩邊平方並展開，即可得到 $ y $ 關於 $ x $ 的二次方程式。"
+  ],
+  "quick_solution_strategy": "由圖得 $\\sqrt{y}=-4x+8$，兩邊平方即得答案。"
+ },
+ "skills": {
+  "topic_id": "T-LIN",
+  "knowledge_point_ids": [
+   "K-LIN-01",
+   "K-LIN-02"
+  ],
+  "formula_ids": [
+   "F-LIN-01",
+   "F-LIN-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

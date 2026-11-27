@@ -1,0 +1,92 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": 2025,
+  "paper": "Paper 1",
+  "qno": 3,
+  "hash": "#2025P1Q3"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "比率與比例",
+   "secondary_topics": [
+    "聯立方程",
+    "代數表達"
+   ],
+   "required_formulas": [
+    "\\frac{m}{n} = \\frac{8}{7}",
+    "2m + 3n = 999"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120,
+   "marks": 3
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用比例設 m=8k, n=7k 或直接代入 m=(8/7)n",
+    "marks": 1,
+    "common_error": "誤將比率寫成 m/n = 7/8 或混淆分子分母",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "將 m 的表達式代入聯立方程中，整理成一元一次方程",
+    "marks": 1,
+    "common_error": "代入時計算錯誤或忘記乘以係數 2 和 3",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "解一元一次方程求出 n 的數值並檢查答案合理性",
+    "marks": 1,
+    "common_error": "計算結果錯誤或忽略題目要求只找 n",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "此題為基礎應用題，80% 考生能正確作答顯示對比率與代數代入的掌握度良好，主要失分點在於計算細節。",
+  "scaffolding_hints": [
+   "提示：當已知兩數比例時，可引入參數 k 簡化計算。",
+   "知識：聯立方程的核心是消元法或代入法。",
+   "破題：先將文字條件轉化為兩個數學方程式。"
+  ],
+  "quick_solution_strategy": "設 m=8k, n=7k，代入 2(8k)+3(7k)=999，解得 k，再求 n。"
+ },
+ "skills": {
+  "topic_id": "T-RAT",
+  "knowledge_point_ids": [
+   "K-RAT-01",
+   "K-RAT-02"
+  ],
+  "formula_ids": [
+   "F-RAT-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-RAT-01",
+    "formula_id": "F-RAT-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-RAT-01",
+    "formula_id": "F-RAT-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-RAT-01",
+    "formula_id": "F-RAT-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

@@ -1,0 +1,106 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 1M",
+  "qno": "7",
+  "hash": "#2013P1MQ7"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "概率",
+   "secondary_topics": [
+    "期望值計算",
+    "獨立事件判斷"
+   ],
+   "required_formulas": [
+    "$E(Y) = \\sum y P(Y=y)$",
+    "$P(A \\cap B) = P(A)P(B)$ (若獨立)"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 5
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用 $E(Y)=2.4$ 建立方程解出 $m$",
+    "marks": 2,
+    "common_error": "忘記將所有 $y$ 值乘以對應機率再相加",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "列出事件 $A$ ($X+Y \\leq 2$) 的所有可能組合",
+    "marks": 1,
+    "common_error": "漏掉 $(0,2)$ 或 $(1,1)$ 等邊界情況",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 3,
+    "what": "計算 $P(A)$ 為上述組合機率之和",
+    "marks": 1,
+    "common_error": "未考慮 $X,Y$ 獨立性直接相加而非相乘",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "計算 $P(B)$ 即 $P(X=0)$",
+    "marks": 1,
+    "common_error": "誤讀表格將 $X=0$ 機率搞錯",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "此題測試學生對離散隨機變數期望值的定義掌握程度，以及能否正確運用獨立事件定義判斷兩事件關係，屬卷一經典綜合題型。",
+  "scaffolding_hints": [
+   "提示 1: 期望值是每個結果乘以其機率後的總和。",
+   "提示 2: 獨立變數 $X,Y$ 的聯合機率為各自機率的乘積。",
+   "提示 3: 判斷獨立需比較 $P(A \\cap B)$ 與 $P(A)P(B)$ 是否相等。"
+  ],
+  "quick_solution_strategy": "先由期望公式解 $m$；再枚舉滿足 $X+Y\\le2$ 的 $(x,y)$ 對算 $P(A)$；最後比較 $P(A \\cap B)$ 與 $P(A)P(B)$。"
+ },
+ "skills": {
+  "topic_id": "T-PROB",
+  "knowledge_point_ids": [
+   "K-PROB-01",
+   "K-PROB-02"
+  ],
+  "formula_ids": [
+   "F-PROB-01",
+   "F-PROB-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "3": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

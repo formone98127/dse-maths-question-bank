@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2012",
+  "paper": "Paper 2",
+  "qno": "9",
+  "hash": "#2012P2Q9"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-16",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "一元一次方程式與比例",
+   "secondary_topics": [
+    "分數運算",
+    "代入消元法"
+   ],
+   "required_formulas": [
+    "若 \\(\\frac{a}{b} = c\\)，則 \\(a = bc\\)"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "交叉相乘後移項錯誤",
+    "student_thought_process": "學生在將 \\(6x+5y = 7(3y-2x)\\) 展開後，正確得到 \\(6x+5y=21y-14x\\)，但在移項合併同类項時，將 \\(-14x\\) 移到左邊變成 \\(+14x\\)（正確），卻誤將 \\(21y\\) 移到左邊變成 \\(-21y\\) 時算錯符號或數值，導致 \\(20x = -16y\\) 被錯誤計算為 \\(20x = 52y\\) 或類似混淆，進而得出 \\(x:y=4:13\\)。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "比例倒置",
+    "student_thought_process": "學生正確解出 \\(20x = 16y\\)，但在最後寫成比例時，錯誤地將 \\(y:x\\) 視為答案，或者在化簡 \\(5:4\\) 時沒有注意題目問的是 \\(x:y\\)，直接選了 \\(y:x\\) 的比值。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "展開式符號錯誤",
+    "student_thought_process": "學生在展開右邊 \\(7(3y-2x)\\) 時，將 \\(-2x\\) 乘以 \\(7\\) 算成了 \\(+14x\\)，導致方程式變成 \\(6x+5y = 21y + 14x\\)。移項後得到 \\(-8x = 16y\\)，若再忽略負號或處理錯誤，可能導出 \\(x:y = -2:1\\) 或其他錯誤值；但若學生將 \\(6x-14x\\) 算成 \\(20x\\)（符號搞混），則會得到 \\(20x=16y\\)，若再粗心將 \\(16\\) 看錯或移項方向弄反，可能誤選此選項。更可能的錯誤是：展開時 \\(-2x \\times 7 = -14x\\)，學生誤算為 \\(+14x\\)，導致 \\(6x-14x=-8x\\)，若再將 \\(5y-21y=-16y\\) 移項方向弄反成 \\(20x=16y\\) 的逆運算錯誤，最終得出 \\(13:4\\)。"
+   }
+  },
+  "scaffolding_hints": [
+   "Hint 1 啟發：觀察等式 \\(\\frac{6x+5y}{3y-2x}=7\\)，思考如何將分母移到分子旁邊？",
+   "Hint 2 知識：利用 \\(a=b \\cdot c\\) 的關係，將方程式展開為 \\(6x+5y = 7(3y-2x)\\)，請小心分配律的符號。",
+   "Hint 3 破題：合併 \\(x\\) 與 \\(y\\) 的係數後，你會得到形如 \\(Ax = By\\) 的關係式，請確認題目要求的是 \\(x:y\\) 還是 \\(y:x\\)。"
+  ],
+  "quick_solution_strategy": "展開右邊得 \\(6x+5y=21y-14x\\)，移項合併得 \\(20x=16y\\)，化簡即得 \\(x:y=4:5\\)。"
+ },
+ "skills": {
+  "topic_id": "T-RAT",
+  "knowledge_point_ids": [
+   "K-RAT-04",
+   "K-EQN-01"
+  ],
+  "formula_ids": [
+   "F-RAT-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-RAT-04",
+    "formula_id": "F-RAT-04",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-RAT-04",
+    "formula_id": "F-RAT-04",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-RAT-03",
+    "formula_id": "F-RAT-04",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

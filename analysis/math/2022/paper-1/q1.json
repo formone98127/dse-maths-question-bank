@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 1",
+  "qno": "1",
+  "hash": "#2022P1Q1"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "指數定律",
+   "secondary_topics": [
+    "負指數轉換",
+    "冪的乘方"
+   ],
+   "required_formulas": [
+    "$ (x^m)^n = x^{mn} $",
+    "$ \\frac{x^m}{x^n} = x^{m-n} $",
+    "$ x^{-n} = \\frac{1}{x^n} $"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90,
+   "marks": 3
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "運用冪的乘方法則處理分子中的括號。",
+    "marks": 1,
+    "common_error": "忘記將指數相乘，或錯誤計算 $3 \\times 4$。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "處理分母中的負指數，轉換為正指數形式。",
+    "marks": 1,
+    "common_error": "未能正確將 $b^{-2}$ 移至分母或符號搞錯。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "分別合併 $a$ 與 $b$ 的同底數冪，計算指數差值。",
+    "marks": 1,
+    "common_error": "同底數除法時指數減法算錯（如 $12-6 \\neq 6$）。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "此題為基礎指數運算，考評報告顯示約九成考生能正確作答，反映學生對指數定律的掌握度良好。",
+  "scaffolding_hints": [
+   "先處理分子內部的冪的乘方：$(a^3)^4 = a^{12}$。",
+   "將分母的負指數 $b^{-2}$ 移到分子變正，或直接在分母計算時注意符號。",
+   "最後分別合併 $a$ 和 $b$ 的指數，確保結果全為正指數。"
+  ],
+  "quick_solution_strategy": "先算 $(a^3)^4=a^{12}$，再將 $b^{-2}$ 移至分子變 $b^2$，最後合併指數得 $a^{17}b^{-4}$ 轉為 $\\frac{a^{17}}{b^4}$。"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

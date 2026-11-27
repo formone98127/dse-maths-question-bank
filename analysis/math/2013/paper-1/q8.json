@@ -1,0 +1,107 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 1",
+  "qno": "8",
+  "hash": "#2013P1Q8"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "百分數",
+   "secondary_topics": [
+    "誤差範圍 (上界/下界)",
+    "單位換算",
+    "不等式估算"
+   ],
+   "required_formulas": [
+    "$\\text{最小值} = \\text{讀數} - 0.5\\times\\text{精度}$",
+    "$\\text{總重量範圍} = [3100-0.5, 3200+0.5]$ g"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 5
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "計算單包海鹽的最小重量 (100-0.5)",
+    "marks": 2,
+    "common_error": "誤算為 95 g 或忽略精度半單位",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "計算 32 包海鹽的理論最小總重量",
+    "marks": 1,
+    "common_error": "未將單包最小值乘以 32",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "將目標重量 3.1 kg 換算為克 (g)",
+    "marks": 1,
+    "common_error": "單位未統一導致比較錯誤",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 4,
+    "what": "計算 32 包海鹽的最大可能總重量 (用於驗證)",
+    "marks": 1,
+    "common_error": "僅比較最小值而忽略最大範圍",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "考生需熟練掌握誤差範圍計算，並能將(a)部結果靈活應用於(b)部的多項式估算，避免單位混淆。",
+  "scaffolding_hints": [
+   "提示 1：讀數準確至最接近的單位時，真實值範圍為 $[\\text{讀數}-0.5, \\text{讀數}+0.5]$。",
+   "提示 2：(b)部需考慮 32 包海鹽總重量的極端情況（最小與最大）。",
+   "提示 3：比較時務必將 kg 統一換算為 g，確保量綱一致。"
+  ],
+  "quick_solution_strategy": "先求單包下限 (99.5g)，再乘 32 得總下限 (3184g)。目標 3.1kg=3100g。因 3184>3100，故不可能。"
+ },
+ "skills": {
+  "topic_id": "T-PCT",
+  "knowledge_point_ids": [
+   "K-PCT-01",
+   "K-PCT-02"
+  ],
+  "formula_ids": [
+   "F-PCT-01",
+   "F-PCT-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "4": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

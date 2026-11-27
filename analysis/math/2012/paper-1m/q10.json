@@ -1,0 +1,131 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2012",
+  "paper": "Paper 1M",
+  "qno": "10",
+  "hash": "#2012P1MQ10"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "積分法",
+   "secondary_topics": [
+    "梯形法則",
+    "變數代換",
+    "標準正態分佈"
+   ],
+   "required_formulas": [
+    "\\int_{a}^{b} f(x) dx \\approx \\frac{h}{2}[f(x_0) + 2f(x_1) + \\dots + 2f(x_n) + f(x_n)]",
+    "\\text{若 } f'(x) < 0, \\text{則曲線為凹向上 (convex), 梯形法則高估}",
+    "\\Phi(z) = P(Z \\le z)"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 420,
+   "marks": 7
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "計算梯形法則：h=3/6=0.5，列出 t=1,1.5,...,4 的 f(t) 值並代入公式。",
+    "marks": 2,
+    "common_error": "步長 h 計算錯誤或遺漏端點函數值。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "判斷高估/低估：求 f(t) 的二階導數，確認曲線凹凸性。",
+    "marks": 1,
+    "common_error": "混淆一階與二階導數的意義，誤判凹凸性。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "代換變數：令 x = \\sqrt{t/2} 或 t=2x^2，計算 dt 並轉換積分上下限。",
+    "marks": 1,
+    "common_error": "代換後忘記將 dt 替換為 4x dx，導致係數錯誤。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 4,
+    "what": "整理積分式：確認係數與上下限，得出 I = 2\\int_{1}^{2} e^{-x^2/2} dx。",
+    "marks": 1,
+    "common_error": "上下限計算錯誤（如未將 t=4 對應到 x=2）。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "查表求值：利用標準正態分佈表計算 \\int_{1}^{2} e^{-x^2/2} dx 的數值。",
+    "marks": 1,
+    "common_error": "誤讀表格或混淆 \\Phi(z) 與半平面面積的關係。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 6,
+    "what": "比較數值：計算左邊 I 的近似值與右邊表達式，證明 \\pi < 3.25。",
+    "marks": 1,
+    "common_error": "四捨五入過早導致不等號方向錯誤。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "此題結合梯形法則誤差分析與高斯積分變換，是 DSE 數學卷一經典的綜合應用題，旨在測試學生對函數圖形性質及微積分基本定理的靈活運用能力。",
+  "scaffolding_hints": [
+   "提示 1：梯形法則公式中，中間點的係數是 2，端點是 1。",
+   "提示 2：判斷高估/低估時，觀察 f(t) 是否為減函數且曲線凹向上（convex）。",
+   "提示 3：代換後注意 \\sqrt{t} 與 e^{-t/2} 的係數變化，通常會出現 \\pi 相關項。"
+  ],
+  "quick_solution_strategy": "先算梯形法則數值；再求二階導數判斷凹凸性；最後用 t=2x^2 代換並查表比較大小。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "6": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

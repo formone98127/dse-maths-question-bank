@@ -1,0 +1,91 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2012",
+  "paper": "Paper 2",
+  "qno": "19",
+  "hash": "#2012P2Q19"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-16",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "三角函數化簡與餘角關係",
+   "secondary_topics": [
+    "特殊角三角函數值",
+    "誘導公式"
+   ],
+   "required_formulas": [
+    "\\cos(90^\\circ - \\theta) = \\sin\\theta",
+    "\\cos(270^\\circ - \\theta) = -\\sin\\theta",
+    "\\cos 60^\\circ = \\frac{1}{2}",
+    "\\cos 240^\\circ = -\\frac{1}{2}"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆餘切與正切的關係",
+    "student_thought_process": "學生在化簡第二項時，可能將 \\cos(270^\\circ-\\theta) 誤算為 \\sin\\theta（忽略第三象限負號），導致分母變為 (1+\\sin\\theta)，進而無法約分得到 \\tan\\theta/\\cos\\theta。或者學生將最終結果錯誤地認為是 \\sec^2\\theta，混淆了 \\frac{1}{\\cos^2\\theta} 與 \\frac{\\sin\\theta}{\\cos^2\\theta} 的差異。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "分數運算錯誤或約分失敗",
+    "student_thought_process": "學生正確化簡出 \\frac{\\sin\\theta}{\\cos^2\\theta} 的形式，但在最後一步將 \\frac{\\sin\\theta}{\\cos^2\\theta} 錯誤地轉換為 \\frac{\\cos\\theta}{\\tan\\theta}（即 \\cos^2\\theta/\\sin\\theta），這顯示學生對 \\tan\\theta = \\sin\\theta/\\cos\\theta 的倒數關係或分數乘除運算順序產生了混亂，將分子分母顛倒。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "錯誤應用餘角公式導致符號或函數名稱錯誤",
+    "student_thought_process": "學生在處理 \\cos(270^\\circ-\\theta) 時，正確判斷出是 -\\sin\\theta，但在化簡整個分式時，可能錯誤地將 \\frac{\\sin\\theta}{\\cos^2\\theta} 與 \\sec\\theta\\tan\\theta 混淆，或者在最後一步試圖構造 \\tan\\theta 時，錯誤地保留了 \\cos\\theta 在分子而非分母，導致結果變成 \\frac{1}{\\cos\\theta\\tan\\theta}（即 \\frac{\\sin\\theta}{\\cos^2\\theta} 的誤寫）。"
+   }
+  },
+  "scaffolding_hints": [
+   "Hint 1 啟發：觀察題目中的角度與變數 \\theta，思考如何利用「餘角」或「誘導公式」將含 \\theta 的三角函數轉換為 \\sin\\theta 或 \\cos\\theta。",
+   "Hint 2 知識：請回憶特殊角（60°, 240°）的三角函數值，並寫下 \\cos(90^\\circ-\\theta) = \\sin\\theta 與 \\cos(270^\\circ-\\theta) = -\\sin\\theta 這兩個關鍵轉換式。",
+   "Hint 3 破題：將特殊角代入後，你會得到兩個分數相加的形式，其中第二項的分母會變成 (1+\\sin\\theta)。試著通分並利用 \\sin^2\\theta + \\cos^2\\theta = 1 進行因式分解約分。"
+  ],
+  "quick_solution_strategy": "代入特殊角值化簡，利用誘導公式將變數項轉為 sin/cos，最後通分約分即可。"
+ },
+ "skills": {
+  "topic_id": "T-TRI",
+  "knowledge_point_ids": [
+   "K-TRI-03",
+   "K-TRI-02"
+  ],
+  "formula_ids": [
+   "F-TRI-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-COND"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-TRI-03",
+    "formula_id": "F-TRI-03",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-TRI-03",
+    "formula_id": "F-TRI-03",
+    "ability_id": "A-COND"
+   },
+   "D": {
+    "knowledge_point_id": "K-TRI-02",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "./hub/",
+  "name": "DSE Hub · 香港中學文憑歷屆試題資料庫",
+  "short_name": "DSE Hub",
+  "description": "DSE 數學、經濟、化學、生物、物理歷屆試題，按課題集中溫習。",
+  "lang": "zh-Hant-HK",
+  "dir": "ltr",
+  "start_url": "./hub/",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "any",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "categories": ["education", "reference"],
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

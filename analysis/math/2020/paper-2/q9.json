@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2020",
+  "paper": "Paper 2",
+  "qno": "9",
+  "hash": "#2020P2Q9"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "百分比與利潤計算",
+   "secondary_topics": [
+    "成本價與售價關係",
+    "盈虧百分率定義"
+   ],
+   "required_formulas": [
+    "$\\text{售價} = \\text{成本} \\times (1 + \\frac{25}{100})$",
+    "$\\text{成本} = \\text{售價} - \\text{售價} \\times \\frac{x}{100}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆盈虧定義",
+    "student_thought_process": "學生誤以為成本較售價低 25%，直接選 B，未考慮盈利率是基於成本的計算。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "比例換算錯誤",
+    "student_thought_process": "學生可能將 25% 與 75% (100-25) 混淆，或計算 $\\frac{25}{33.3}$ 時四捨五入錯誤導致選 C。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "設定變數方向錯誤",
+    "student_thought_process": "學生可能將成本設為 100，售價設為 $100+x$，導致方程式建立錯誤。"
+   }
+  },
+  "scaffolding_hints": [
+   "回想盈利率的定義：盈利是相對於誰的百分比？",
+   "若成本為 C，售價為 S，已知 S = 1.25C，請找出 S 與 C 的比例關係。",
+   "題目說成本較售價低 x%，即 $C = S - \\frac{x}{100}S$，代入 S=1.25C 求解 x。"
+  ],
+  "quick_solution_strategy": "設成本為 100，則售價為 125。成本比售價少 25，故 x=25？不，題目問成本較售價低多少。$125-100=25$，但這是金額差。需計算百分比：$\\frac{25}{125} \\times 100 = 20\\%$。"
+ },
+ "skills": {
+  "topic_id": "T-PCT",
+  "knowledge_point_ids": [
+   "K-PCT-01",
+   "K-PCT-02"
+  ],
+  "formula_ids": [
+   "F-PCT-01",
+   "F-PCT-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

@@ -1,0 +1,137 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2018",
+  "paper": "Paper 1",
+  "qno": "14",
+  "hash": "#2018P1Q14"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "立體圖形",
+   "secondary_topics": [
+    "圓柱體容積",
+    "圓錐體容積",
+    "相似三角形性質",
+    "球體體積"
+   ],
+   "required_formulas": [
+    "$V_{cylinder} = \\pi r^2 h$",
+    "$V_{cone} = \\frac{1}{3}\\pi r^2 h$",
+    "$V_{sphere} = \\frac{4}{3}\\pi r^3$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 300,
+   "marks": 9
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "計算圓柱體總容積，即倒入圓錐的水的總體積",
+    "marks": 2,
+    "common_error": "忘記乘以 $\\pi$ 或混淆半徑與直徑",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "利用相似三角形原理，建立水深與水面半徑關係式",
+    "marks": 1,
+    "common_error": "誤以為水面半徑固定為圓錐底面半徑 20cm",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "將水的體積代入圓錐容積公式，解方程求水深 h",
+    "marks": 1,
+    "common_error": "解一元二次方程時出現計算錯誤",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "計算半徑為 14cm 球體的體積",
+    "marks": 1,
+    "common_error": "球體體積公式記錯或代入數值錯誤",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "計算圓錐內空氣空間容積（總容積減去水的體積）",
+    "marks": 1,
+    "common_error": "直接用圓錐總容積比較，忽略已裝滿的水",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 6,
+    "what": "比較球體體積與空氣空間容積並下結論解釋",
+    "marks": 2,
+    "common_error": "只寫出數值比較，缺少文字解釋原因",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "考生常誤解圓錐內水面半徑隨高度變化，導致計算水深時建立錯誤關係式；此外部分考生忽略球體放入後佔據的是空氣空間而非總容積。",
+  "scaffolding_hints": [
+   "提示：圓錐倒置時，越往上（靠近頂點）截面越小，需利用相似比 $\\frac{r}{h} = \\text{常數}$。",
+   "知識：圓錐體積公式為 $\\frac{1}{3}\\pi r^2 h$，注意係數 $\\frac{1}{3}$。",
+   "破題：先算出水的總量，再反推水深，最後比較球體與剩餘空間大小。"
+  ],
+  "quick_solution_strategy": "先算圓柱水體積，再用相似比設水面半徑 $r$ 與水深 $h$ 關係，代入圓錐公式解 $h$；球體體積與剩餘空間比較即可。"
+ },
+ "skills": {
+  "topic_id": "T-MEN",
+  "knowledge_point_ids": [
+   "K-MEN-01",
+   "K-MEN-02"
+  ],
+  "formula_ids": [
+   "F-MEN-01",
+   "F-MEN-02",
+   "F-MEN-03",
+   "F-MEN-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "6": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

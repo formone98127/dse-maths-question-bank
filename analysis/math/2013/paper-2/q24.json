@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 2",
+  "qno": "24",
+  "hash": "#2013P2Q24"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "幾何軌跡與垂直平分線",
+   "secondary_topics": [
+    "距離公式",
+    "直線方程的一般式"
+   ],
+   "required_formulas": [
+    "AP^2 = BP^2 \\Rightarrow (x-x_A)^2+(y-y_A)^2=(x-x_B)^2+(y-y_B)^2",
+    "直線方程化簡為 Ax+By+C=0"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "移項符號錯誤",
+    "student_thought_process": "展開平方後，將 $x^2$ 與 $y^2$ 消去時，常犯錯在移項後的符號處理，導致常數項計算錯誤。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "展開平方算術錯誤",
+    "student_thought_process": "在計算 $(y-5)^2$ 或 $(y+1)^2$ 時，忘記了交叉項 $2ab$ 的符號，導致 $y$ 係數計算偏差。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "垂直平分線斜率搞反",
+    "student_thought_process": "誤以為軌跡是過 $AB$ 中點且平行於某軸的直線，或混淆了 $AB$ 連線斜率與垂直平分線斜率的關係。"
+   }
+  },
+  "scaffolding_hints": [
+   "思考：到兩固定點距離相等的點集代表什麼幾何圖形？",
+   "提示：利用距離公式 $AP^2=BP^2$，展開後注意 $x^2$ 與 $y^2$ 會互相抵消。",
+   "引導：將 $(y-5)^2$ 與 $(y+1)^2$ 展開時，仔細檢查 $y$ 的係數是否為 $-6$ 與 $+2$ 之差。"
+  ],
+  "quick_solution_strategy": "利用垂直平分線性質或距離公式平方後消去二次項，整理一次式即可。"
+ },
+ "skills": {
+  "topic_id": "T-LOC",
+  "knowledge_point_ids": [
+   "K-LOC-01",
+   "K-LOC-02"
+  ],
+  "formula_ids": [
+   "F-LOC-01",
+   "F-LOC-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-LOC-01",
+    "formula_id": "F-LOC-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-LOC-01",
+    "formula_id": "F-LOC-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-LOC-01",
+    "formula_id": "F-LOC-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

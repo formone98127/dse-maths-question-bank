@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2018",
+  "paper": "Paper 2",
+  "qno": "21",
+  "hash": "#2018P2Q21"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "梯形幾何性質與三角函數",
+   "secondary_topics": [
+    "直角三角形定義",
+    "相似比與三等分點"
+   ],
+   "required_formulas": [
+    "$\\sin \\theta = \\frac{對邊}{斜邊}$",
+    "$\\cos \\theta = \\frac{鄰邊}{斜邊}$",
+    "$\\tan \\theta = \\frac{對邊}{鄰邊}$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 120
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "過度簡化",
+    "student_thought_process": "學生只驗證了 I 和 II，忽略了 III。可能認為前兩個式子成立就足夠，未檢查第三個關係是否恆成立，導致漏選正確的 III 而錯選 A。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "三角比值混淆",
+    "student_thought_process": "學生在驗證 III 時，可能錯誤地將 $\\tan \\alpha$ 視為 $\\frac{AD}{AB}$ 而非 $\\frac{AD}{AE}$，導致計算出 III 不成立。或者誤以為 $\\sin, \\cos$ 關係與正切無關。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤解幾何關係",
+    "student_thought_process": "學生可能錯誤地認為所有三角恆等式在梯形中皆成立，未區分 $\\alpha$ 與 $\\beta$ 所在的直角三角形不同（斜邊與鄰邊長度不等），導致過度推論 III 也成立。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察圖形，將 $\\alpha$ 和 $\\beta$ 分別置於兩個不同的直角三角形中分析。",
+   "利用 $E, F$ 三等分 $AB$ 的條件，表示出 $AE, EF, FB$ 與 $AB$ 的關係。",
+   "分別代入三角函數定義式，檢查 I, II, III 三式在一般梯形下的恆等性。"
+  ],
+  "quick_solution_strategy": "利用直角三角形定義展開三式，發現 I、II 因斜邊不同而不成立，僅 III 成立。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-05"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CHAIN"
+   },
+   "B": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

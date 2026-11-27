@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 2",
+  "qno": "43",
+  "hash": "#2013P2Q43"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓的幾何性質與垂直平分線",
+   "secondary_topics": [
+    "坐標平面上的三角形",
+    "外心定義"
+   ],
+   "required_formulas": [
+    "垂直平分線方程式：$x = \\frac{x_1+x_2}{2}$ (水平/垂直線段)",
+    "圓心在弦的垂直平分線上"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "垂直平分線中點計算錯誤",
+    "student_thought_process": "誤將 $AB$ 中點的 $y$ 坐標 $12$ 當作外心，或算出 $AB$ 中點 $(15,12)$ 後，未意識到外心需在垂直平分線 $x=15$ 上，錯誤地認為 $y$ 軸截距與 $O$ 有關聯而選錯數值。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤解外心位置特性",
+    "student_thought_process": "認為外心必然位於三角形頂點之一（如 $A$），或混淆外心與垂心概念，直接選取 $B$ 點的 $y$ 坐標。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "過度複雜化解題步驟",
+    "student_thought_process": "試圖使用距離公式建立圓方程式，但未利用 $AB$ 為水平線段這一簡化條件，導致計算冗長而出錯。"
+   }
+  },
+  "scaffolding_hints": [
+   "外心是三角形三邊垂直平分線的交點，它到三個頂點的距離相等。",
+   "觀察 $A(0,12)$ 與 $B(30,12)$ 的坐標特徵，判斷線段 $AB$ 的性質及其垂直平分線方程式。",
+   "利用外心位於 $AB$ 的垂直平分線上這一性質，結合原點 $O$ 的條件，推導出外心的 $y$ 坐標與 $OA$ 的關係。"
+  ],
+  "quick_solution_strategy": "因 $A, B$ $y$ 坐標相同，$AB$ 垂直平分線為 $x=15$；外心在該線上且滿足到 $O, A$ 距離相等，解得 $y$ 值。"
+ },
+ "skills": {
+  "topic_id": "T-LIN",
+  "knowledge_point_ids": [
+   "K-LIN-01",
+   "K-LIN-02"
+  ],
+  "formula_ids": [
+   "F-LIN-01",
+   "F-LIN-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

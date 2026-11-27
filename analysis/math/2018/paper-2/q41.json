@@ -1,0 +1,92 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2018",
+  "paper": "Paper 2",
+  "qno": "41",
+  "hash": "#2018P2Q41"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "長方體幾何與線面夾角",
+   "secondary_topics": [
+    "三維座標系建立",
+    "向量投影與餘弦定理"
+   ],
+   "required_formulas": [
+    "$\\cos\\theta = \\frac{\\vec{u}\\cdot\\vec{n}}{|\\vec{u}| |\\vec{n}|}$ (線面夾角正弦定義，或直角三角形邊長關係)",
+    "$|\\vec{v}| = \\sqrt{x^2+y^2+z^2}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "邊長計算錯誤",
+    "student_thought_process": "可能將 $BX$ 長度算錯，例如誤用勾股定理時忽略高度差，或混淆了 $DE$ 分段比例導致斜邊計算出錯。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "夾角定義混淆",
+    "student_thought_process": "學生可能誤以為線面夾角是線與平面內某條線的夾角，而非線與其投影的夾角，導致計算餘弦時分母錯誤。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "勾股數應用不當",
+    "student_thought_process": "在計算 $BX$ 長度時，可能將長方體寬度或深度代入錯誤，導致斜邊平方和計算出現偏差。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "線面夾角的定義是直線與其在该平面上的投影所形成的銳角。",
+   "找出 $X$ 在平面 $ABGF$ 上的投影點，並連接該點與 $B$ 構成直角三角形。",
+   "利用勾股定理計算斜邊長度後，代入餘弦定義求解。"
+  ],
+  "quick_solution_strategy": "找 $X$ 在面 $ABGF$ 投影，構成直角三角形求鄰邊比斜邊。"
+ },
+ "skills": {
+  "topic_id": "T-MEN",
+  "knowledge_point_ids": [
+   "K-MEN-01",
+   "K-MEN-02"
+  ],
+  "formula_ids": [
+   "F-MEN-01",
+   "F-MEN-02",
+   "F-MEN-03",
+   "F-MEN-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

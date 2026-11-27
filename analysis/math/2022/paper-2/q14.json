@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 2",
+  "qno": "14",
+  "hash": "#2022P2Q14"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "等差數列與遞迴關係",
+   "secondary_topics": [
+    "代數式展開",
+    "累加求和"
+   ],
+   "required_formulas": [
+    "a_{n+1} = a_n + (2n+6)",
+    "S_k = sum_{i=0}^{k-1} (2i+6)"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "首項誤算",
+    "student_thought_process": "將 n=1 代入 (2n+6) 當作遞增量，卻忘記題目給的是第 1 個圖形有 8 點，直接從 n=0 開始累加或計算錯誤導致結果偏小。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "索引偏移",
+    "student_thought_process": "題目定義 a_1=8，遞增項為 2n+6。學生可能誤以為第 7 圖對應 n=7 直接代入公式計算增量，而未累積前序總和，或混淆 n 與圖案編號的對應關係。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "題目閱讀疏失",
+    "student_thought_process": "未仔細閱讀「第 1 個圖案有 8 點」的初始條件，錯誤地假設 a_0=0 或從其他基準開始計算，導致最終數值過大。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察題目給出的遞迴規則：後一項比前一項多 $2n+6$ 個點，其中 $n$ 代表當前圖案的編號減一。",
+   "列出前幾項的變化規律，確認從第 1 圖案到第 7 圖案需要累加幾次增量。",
+   "利用等差級數求和公式計算總增量，再加上初始的 8 個點即可得到答案。"
+  ],
+  "quick_solution_strategy": "由 a_1=8 開始，依序加上 n=1 至 n=6 時的 (2n+6) 並求和。"
+ },
+ "skills": {
+  "topic_id": "T-SEQ",
+  "knowledge_point_ids": [
+   "K-SEQ-02"
+  ],
+  "formula_ids": [
+   "F-SEQ-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-SEQ-02",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-SEQ-02",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-CHAIN"
+   },
+   "D": {
+    "knowledge_point_id": "K-SEQ-02",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

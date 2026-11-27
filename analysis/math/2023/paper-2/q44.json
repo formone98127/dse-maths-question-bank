@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2023",
+  "paper": "Paper 2",
+  "qno": "44",
+  "hash": "#2023P2Q44"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "標準分與正態分布",
+   "secondary_topics": [
+    "平均數",
+    "標準差",
+    "Z-score 公式"
+   ],
+   "required_formulas": [
+    "$z = \\frac{x - \\mu}{\\sigma}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "忽略標準差係數",
+    "student_thought_process": "學生可能直接用 (86-46)/2=20 作為分佈寬度，然後 46+20=66 或類似誤算，未正確利用兩個已知點解聯立方程組求參數。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "平均數計算錯誤",
+    "student_thought_process": "學生可能設錯方程，例如將 86 視為平均值附近點，或解聯立方程時算術錯誤，導致得出 66 這個接近但錯誤的數值。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤解標準分定義",
+    "student_thought_process": "學生可能認為標準分是絕對分數，或錯誤地將標準差視為固定值 10 而忽略題目需從數據推導，隨意選取中間值。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "標準分 $z$ 的定義公式為 $z = \\frac{x - \\mu}{\\sigma}$，其中 $\\mu$ 是平均數，$\\sigma$ 是標準差。",
+   "利用題目給出的三組 $(x, z)$ 數據，建立關於 $\\mu$ 和 $\\sigma$ 的兩個線性方程：$-3 = \\frac{46 - \\mu}{\\sigma}$ 與 $2 = \\frac{86 - \\mu}{\\sigma}$。",
+   "解上述聯立方程求出 $\\mu$ 與 $\\sigma$，再代入 $z=1$ 的條件計算對應的 $x$ 值。"
+  ],
+  "quick_solution_strategy": "利用兩組已知 $(得分, 標準分)$ 建立方程組求平均數與標準差，再代回求未知分數。"
+ },
+ "skills": {
+  "topic_id": "T-STA",
+  "knowledge_point_ids": [
+   "K-STA-01"
+  ],
+  "formula_ids": [
+   "F-STA-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

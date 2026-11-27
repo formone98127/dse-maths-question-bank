@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 2",
+  "qno": "21",
+  "hash": "#2022P2Q21"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓的性質與等腰三角形",
+   "secondary_topics": [
+    "圓周角定理 (Central Angle Theorem)",
+    "等腰三角形的底角相等"
+   ],
+   "required_formulas": [
+    "$\\triangle OAB$ 為等腰三角形 ($OA=OB=R) \\implies \\angle OAB = \\angle OBA$",
+    "$\\angle BOC = 2 \\times \\angle BAC$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "角度加減錯誤",
+    "student_thought_process": "算出 $\\angle OAB=36^\\circ$ 後，誤以為 $\\angle ACO = \\angle BOC - \\angle OBA - \\angle OAB = 164-36-36=92$ 再除以 2 得 46，但中間步驟算錯成 $164-72=92$ 後直接減去某個誤導數值或混淆了三角形內角和計算導致得出 41。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆圓周角與圓心角關係",
+    "student_thought_process": "誤以為 $\\angle BOC$ 直接等於 $\\angle ACO$ 加上某個固定值，或者錯誤地將 $\\angle BOC$ 當作 $\\triangle ABC$ 的外角來使用，忽略了 $O$ 點與 $A,C$ 構成的等腰三角形關係。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "忽略題目條件或看錯角度",
+    "student_thought_process": "可能誤讀 $\\angle ABO$ 為頂角，或者在計算 $180 - (36+36)$ 時算出 $108$，然後錯誤地將 $164$ 與 $108$ 做簡單平均或直接相加，導致得出較大數值如 64。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：觀察圖形，連接 $OA$。由於 $O$ 是圓心，$OA$、$OB$、$OC$ 均為半徑，請問 $\\triangle OAB$ 是什麼類型的三角形？",
+   "提示 2：在等腰 $\\triangle OAB$ 中，利用內角和定理算出 $\\angle AOB$ 的度數。接著思考 $\\angle AOC$ 與已知角 $\\angle BOC$ 及剛算出的 $\\angle AOB$ 有何關係？",
+   "提示 3：在等腰 $\\triangle OAC$ 中，你已經知道頂角 $\\angle AOC$ 的度數，請利用內角和公式計算底角 $\\angle ACO$"
+  ],
+  "quick_solution_strategy": "1. 連 OA。2. 算出 $\\angle AOB = 180-36-36=108^\\circ$。3. 求 $\\angle AOC = 360-108-164=128^\\circ$。4. $\\angle ACO=(180-128)/2=26^\\circ$ (注意：此處需重新校對題目邏輯，若題目為求 $\\angle OAC$ 則不同，依標準解法：$\\angle AOC = 360 - 108 - 164 = 128$, $\\angle ACO = (180-128)/2 = 26^\\circ$。但若選項無 26，需檢查是否為劣弧/優弧問題或題目圖形直觀誤解。重新審視：若 $A,B,C$ 順時針，$\\angle AOC = 360 - (108+164) = 128$。若 $B$ 在 $AC$ 之間，則 $\\angle AOC = |164-108|=56$? 不，通常 $A,B,C$ 順次排列。讓我們重算：$\\angle OAB=36 \\to \\angle AOB=108$。若 $B,C$ 在 $O$ 同側，$\\angle AOC = 164-108=56 \\to \\angle ACO=(180-56)/2=62$ (無此選項)。若 $A,B,C$ 順次，$\\angle AOC = 360-108-164=128 \\to 26$。若題目意指 $\\angle BOC$ 為劣弧對應圓心角，且 $A$ 在另一側，則 $\\angle AOC = 360 - 108 - 164 = 128$。這裡似乎有矛盾，除非 $\\angle ABO$ 指的是外角或其他。讓我們假設標準解法：$\\angle OAB=36, \\angle AOB=108$。若 $A,C$ 在 $B$ 兩側，$\\angle AOC = 360-108-164=128$。若答案 B(46) 正確，則 $2*46+x=180 \\to x=88$。$360-108-164=128 \\neq 88$。可能是 $\\angle AOC = 164 - (180-72) = 56$? 不。讓我們反向推導 B=46: $\\angle AOC = 180-92=88$。$360-108-x=88 \\to x=164$。這表示 $\\angle BOC$ 與 $\\angle AOB$ 是相鄰且構成 $360$ 的一部分？不，$108+164+88=360$。這意味著 $A, B, C$ 順次排列，且 $O$ 在圓心。那麼 $\\angle AOC = 360 - (108+164) = 88$? 不，$108+164=272$, $360-272=88$。對！所以 $\\angle AOC=88^\\circ$。然後 $\\angle ACO = (180-88)/2 = 46^\\circ$。解法成立。) 5. 計算 $(180-88)/2$"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-01",
+   "K-GEO-02"
+  ],
+  "formula_ids": [
+   "F-GEO-01",
+   "F-GEO-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

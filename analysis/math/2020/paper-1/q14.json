@@ -1,0 +1,121 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2020",
+  "paper": "Paper 1",
+  "qno": "14",
+  "hash": "#2020P1Q14"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓與直線的幾何關係",
+   "secondary_topics": [
+    "平行線與角平分線性質",
+    "圓心坐標與半徑計算",
+    "三角函數比較"
+   ],
+   "required_formulas": [
+    "(x-h)^2 + (y-k)^2 = r^2",
+    "\\frac{y_2-y_1}{x_2-x_1}",
+    "\\tan^{-1}(\\frac{opp}{adj})"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 300,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用弦 $AB$ 的垂直平分線與 $y=-15$ 聯立求圓心 $G$。",
+    "marks": 2,
+    "common_error": "忽略弦中垂線性質，直接假設圓心在 $x$ 軸上或選錯 $y$ 值。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "計算半徑 $GA$ 並寫出圓 $C$ 的標準方程。",
+    "marks": 1,
+    "common_error": "距離公式計算錯誤或忘記括號平方。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "描述 $\\Gamma$ 為角平分線（非垂直平分線）的幾何意義。",
+    "marks": 1,
+    "common_error": "誤認為 $\\Gamma$ 是 $AB$ 的垂直平分線或平行於 $L$。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "利用角平分線斜率公式或幾何關係求 $\\Gamma$ 方程。",
+    "marks": 1,
+    "common_error": "混淆內角與外角平分線，導致斜率符號錯誤。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 5,
+    "what": "計算 $\\angle GAH$ 的實際大小並與 $70^\\circ$ 比較。",
+    "marks": 1,
+    "common_error": "未正確識別 $\\triangle ABG$ 為等腰三角形，導致角度計算錯誤。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "考生常混淆角平分線與垂直平分線的定義，且難以將幾何性質轉化為代數方程；在最後一步比較角度時，因忽略等腰三角形底角相等之性質而導致結論錯誤。",
+  "scaffolding_hints": [
+   "弦 $AB$ 的中垂線是 $x = -3.5$，圓心必在此直線上。",
+   "$\\Gamma$ 上的點到兩直線距離相等，代表 $\\Gamma$ 是夾角平分線。",
+   "利用 $\\tan^{-1}$ 計算角度時，注意三角形形狀是否為等腰。"
+  ],
+  "quick_solution_strategy": "先求 $G(-3.5, -15)$ 定圓方程；再認出 $\\Gamma$ 為角平分線，用斜率公式求方程；最後算出 $\\angle GAH \\approx 63.4^\\circ < 70^\\circ$。"
+ },
+ "skills": {
+  "topic_id": "T-CIR",
+  "knowledge_point_ids": [
+   "K-CIR-01",
+   "K-CIR-02"
+  ],
+  "formula_ids": [
+   "F-CIR-01",
+   "F-CIR-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "5": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

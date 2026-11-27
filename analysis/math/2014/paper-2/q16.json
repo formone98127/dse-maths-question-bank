@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 2",
+  "qno": "16",
+  "hash": "#2014P2Q16"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "幾何圖形性質與全等三角形",
+   "secondary_topics": [
+    "正方形的邊角特性",
+    "餘弦定理或三角函數關係"
+   ],
+   "required_formulas": [
+    "正方形內角為 $90^\\circ$",
+    "全等三角形判定 (SAS)",
+    "$\\triangle ADE \\cong \\triangle CDG$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略全等條件導致角度誤算",
+    "student_thought_process": "學生可能錯誤認為 $\\angle DFE$ 直接等於某個已知角，或誤將 $25^\\circ+20^\\circ=45^\\circ$ 後隨意加減得到 $60^\\circ$，未建立全等關係。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "角度運算錯誤",
+    "student_thought_process": "學生正確推導出 $\\angle ADE = 25^\\circ$ 與 $\\angle CDF=20^\\circ$，但在計算 $\\angle EDF$ 時誤算為 $90-45=45$ 後再加錯，或混淆了互餘關係導致結果偏小。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "未利用全等直接求解而使用複雜三角函數",
+    "student_thought_process": "學生嘗試用餘弦定理計算 $DE$ 與 $DF$ 長度，再求夾角，但因捨入誤差或計算繁瑣導致結果接近但非精確值 $70^\\circ$。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察題目條件 $AE=CG$ 與正方形性質，思考能否構造一對全等三角形來轉移角度。",
+   "證明 $\\triangle ADE \\cong \\triangle CDG$ 後，可得對應角相等，進而找出 $\\angle EDF$ 的組成部分。",
+   "利用 $\\angle ADC=90^\\circ$ 將未知角分解為已知角之和，最後在 $\\triangle DEF$ 中計算目標角。"
+  ],
+  "quick_solution_strategy": "證 $\\triangle ADE \\cong \\triangle CDG$ 得 $\\angle ADE=25^\\circ$，故 $\\angle EDF=90^\\circ-25^\\circ-20^\\circ=45^\\circ$；再證 $DE=DF$ 得等腰三角形算頂角。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-05"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

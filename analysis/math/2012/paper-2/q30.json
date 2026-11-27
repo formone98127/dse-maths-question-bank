@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2012",
+  "paper": "Paper 2",
+  "qno": "30",
+  "hash": "#2012P2Q30"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-16",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "統計量 (平均值與中位數)",
+   "secondary_topics": [
+    "數據排序",
+    "不等式推導"
+   ],
+   "required_formulas": [
+    "\\bar{x} = \\frac{\\sum x}{N}",
+    "中位數定義：當 N 為偶數時，取第 \\frac{N}{2} 與第 \\frac{N}{2}+1 項的平均值"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略 III 的正確性",
+    "student_thought_process": "學生正確算出 m+n=30，但誤以為 m>=14 或 n<=16 不一定成立。例如學生可能認為只要平均是 14，m 和 n 可以很小，忽略了中位數限制後 m 必須大於等於 14 的邏輯鏈條，導致錯誤排除 III 或同時否定 II。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略 II 的正確性",
+    "student_thought_process": "學生算出 m+n=30，但認為 n<=16 是錯誤的。這通常發生在學生未將 m>=14 代入 m+n=30 推導出 n<=16，或者學生誤以為中位數條件只限制 m 而與 n 無關，從而拒絕了 II。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略 I 的正確性",
+    "student_thought_process": "學生算出 m+n=30，但認為 m>=14 是錯誤的。這通常發生在學生計算平均值時忽略了中位數對數據分佈的限制，或者誤解了「若中位數為 14，則第 6 個數必須小於等於 14 且第 7 個數必須大於等於 14」的含義，導致錯誤地認為 m 可以小於 14。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "Hint 1 啟發：先將已知數據由小到大排列，觀察第 6 與第 7 個數（中位數位置）分別是什麼。",
+   "Hint 2 知識：利用平均值公式 \\frac{19+10+12+12+13+13+14+15+16+m+n}{12} = 14 建立 m 與 n 的線性關係。",
+   "Hint 3 破題：結合中位數定義（第 6、7 項平均為 14）推導出 m 的下界，再代入平均值公式驗證 n 的上界。"
+  ],
+  "quick_solution_strategy": "先由平均值算出 m+n=30，再由中位數條件得 m≥14，進而推導 n≤16。"
+ },
+ "skills": {
+  "topic_id": "T-STA",
+  "knowledge_point_ids": [
+   "K-STA-01",
+   "K-STA-02"
+  ],
+  "formula_ids": [
+   "F-STA-01"
+  ],
+  "ability_ids": [
+   "A-CALC",
+   "A-COND"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-STA-02",
+    "formula_id": null,
+    "ability_id": "A-COND"
+   },
+   "C": {
+    "knowledge_point_id": "K-STA-02",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

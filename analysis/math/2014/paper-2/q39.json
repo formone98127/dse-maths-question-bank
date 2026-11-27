@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 2",
+  "qno": "39",
+  "hash": "#2014P2Q39"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "三角函數方程",
+   "secondary_topics": [
+    "因式分解",
+    "單位圓解三角值"
+   ],
+   "required_formulas": [
+    "$\\sin^2 x = \\sin x$",
+    "$7u^2 - u = 0$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "漏解零根",
+    "student_thought_process": "移項得 $\\sin x(7\\sin x - 1) = 0$。只考慮 $7\\sin x = 1$ 的兩解，忘記 $\\sin x = 0$ 在 $0^\\circ$ 與 $360^\\circ$ 各有一解，共計四解而非二解。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "漏解零根",
+    "student_thought_process": "同樣只算出 $\\sin x = 1/7$ 的兩個銳角與鈍角解。忽略 $\\sin x=0$ 時的 $x=0^\\circ, 360^\\circ$，誤以為只有三解（可能將端點重複計算或漏算一個）。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "多算重根",
+    "student_thought_process": "正確找出 $\\sin x=0$ 的兩解與 $\\sin x=1/7$ 的兩解。但可能誤以為週期內有更多解，或將邊界條件理解錯誤而多加一解，導致選四。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "將方程視為關於 $\\sin x$ 的二次式，嘗試移項並因式分解。",
+   "記得當一個因子為零時，整個乘積才为零，需分別求解兩個情況。",
+   "在 $0^\\circ$ 到 $360^\\circ$ 範圍內，檢查 $\\sin x=0$ 與 $\\sin x=1/7$ 各有多少個有效解。"
+  ],
+  "quick_solution_strategy": "移項因式分解得 $\\sin x(7\\sin x-1)=0$，分別解 $\\sin x=0$ 與 $\\sin x=1/7$"
+ },
+ "skills": {
+  "topic_id": "T-TRI",
+  "knowledge_point_ids": [
+   "K-TRI-01",
+   "K-TRI-02"
+  ],
+  "formula_ids": [
+   "F-TRI-01",
+   "F-TRI-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": 2012,
+  "paper": "Paper 2",
+  "qno": 3,
+  "hash": "#2012P2Q3"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-15",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "多項式恆等式",
+   "secondary_topics": [
+    "展開二項式乘積",
+    "比較係數法"
+   ],
+   "required_formulas": [
+    "(x+a)(x+b) = x^2 + (a+b)x + ab"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "展開時符號處理錯誤",
+    "student_thought_process": "學生在展開右邊 (x+2)(x+q) 時，可能錯誤地將 +2 與 +q 相乘得到 +2q，然後試圖讓常數項 -2q+10 = p。若學生誤算 q=-4（例如解 x^2+(2-4)x...），則 -2(-4)+10=18≠p。更可能的錯誤是：展開後得 x^2 + (2+q)x + 2q，比較常數項得 2q+10=p。若學生誤以為 q=-6（由一次項係數為 0 解出 q=-2），代入計算 2(-2)+10=6 卻算錯成 -4，或是混淆了 p 與 q 的角色，直接將 q 的值 -2 當成答案選 B 或 A。此處特指選 A 的錯誤過程：學生可能正確解出 q=-2，但在計算 p=2q+10 時，錯誤地算成 2*(-2)+10 = -4（忽略正負號運算規則）。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "解出 q 後代入 p 時計算錯誤",
+    "student_thought_process": "學生正確由一次項係數得出 2+q=0 => q=-2。接著比較常數項：p = 2q + 10。在計算 2*(-2) + 10 時，學生可能誤算為 -4（將加 10 視為減去絕對值，或單純心算錯誤），導致選出 B (-2) 則是直接將 q 的值當作 p 的答案，忽略了 p 與 q 是不同的常數。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略左邊常數項 10",
+    "student_thought_process": "學生完全忽略了題目左邊的 +10，直接將 (x+2)(x+q) 展開後與 x^2+p 比較，得出 p = 2q。由一次項係數得 q=-2，則 p = -4（選 A）。若學生誤以為左邊是 x^2+p-10，可能會得到不同結果。選 D 的學生可能試圖平衡等式兩邊的常數項時，錯誤地將 10 移到左邊變成減去，或誤解恆等式的意義，認為 p 必須等於 10 才能讓等式成立（忽略了 2q 的存在）。"
+   }
+  },
+  "scaffolding_hints": [
+   "Hint 1 啟發：觀察等式兩邊 $x^2$ 的係數已相等，接下來應比較 $x$ 的一次項係數與常數項。",
+   "Hint 2 知識：將右側展開為 $x^2 + (2+q)x + 2q$，原等式變為 $x^2+p \\equiv x^2 + (2+q)x + 2q + 10$。請比較兩邊 $x$ 的係數以找出 $q$ 的值。",
+   "Hint 3 破題：找到 $q=-2$ 後，將其代入常數項關係式 $p = 2q + 10$ 即可求得正確答案，注意正負號運算。"
+  ],
+  "quick_solution_strategy": "比較一次項係數得 $q=-2$，再代入常數項關係 $p=2(-2)+10=6$"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-01",
+   "K-POL-06"
+  ],
+  "formula_ids": [
+   "F-POL-06"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-06",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-POL-06",
+    "formula_id": "F-POL-06",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-06",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

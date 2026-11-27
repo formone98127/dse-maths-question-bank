@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2018",
+  "paper": "Paper 2",
+  "qno": "10",
+  "hash": "#2018P2Q10"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "比例與代數式化簡",
+   "secondary_topics": [
+    "連比",
+    "代入法"
+   ],
+   "required_formulas": [
+    "$a:b = k \\Rightarrow a=kb, b=kc$",
+    "$\\frac{x}{y}$ 的運算規則"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "忽略 c 的係數影響",
+    "student_thought_process": "學生算出 a=4k, b=3k。代入時，分母誤將 3c 視為 0 或忽略比例關係，直接計算 (4k+9k)/(3k) = 13/3，未考慮 c=5/2 k 的轉換，導致數值錯誤。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "混淆連比順序",
+    "student_thought_process": "學生正確算出 a=4k, b=3k。但在處理 a:c=2:5 時，誤將 c 視為與 b 相同比例或讀錯題目，導致分母計算成 (3k+15k) 或其他錯誤組合，最終得到 18/18 等簡化錯誤。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "比例轉換錯誤",
+    "student_thought_process": "學生試圖用連比 a:b:c，但誤解 3a=4b 與 a:c=2:5 的關係。可能將 a:c=2:5 誤讀為 c:a=2:5，導致 c 的係數變為 1/2.5 而非 2.5，計算結果完全偏差。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：觀察題目給出的兩個條件 $3a=4b$ 和 $a:c=2:5$，思考如何將所有變數用同一個參數（如 $k$）表示。",
+   "提示 2：由 $3a=4b$ 可得 $a = \\frac{4}{3}b$；由 $a:c=2:5$ 可得 $c = \\frac{5}{2}a$。試著將目標式子中的 $a, b, c$ 全部換成只含 $b$ 的表達式。",
+   "提示 3：代入化簡後，你會得到形如 $\\frac{\\text{數字}}{\\text{數字}}$ 的結果，請仔細檢查分子分母的約分步驟，避免計算錯誤。"
+  ],
+  "quick_solution_strategy": "將 a, c 皆用 b 表示，代入原式化簡即可。令 a=4k, b=3k, c=10k。"
+ },
+ "skills": {
+  "topic_id": "T-RAT",
+  "knowledge_point_ids": [
+   "K-RAT-01",
+   "K-RAT-02"
+  ],
+  "formula_ids": [
+   "F-RAT-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-RAT-01",
+    "formula_id": "F-RAT-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-RAT-01",
+    "formula_id": "F-RAT-01",
+    "ability_id": "A-COND"
+   },
+   "D": {
+    "knowledge_point_id": "K-RAT-01",
+    "formula_id": "F-RAT-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

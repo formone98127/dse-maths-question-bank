@@ -1,0 +1,106 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2018",
+  "paper": "Paper 1M",
+  "qno": "3",
+  "hash": "#2018P1MQ3"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "概率",
+   "secondary_topics": [
+    "正態分佈",
+    "幾何分佈"
+   ],
+   "required_formulas": [
+    "$P(Z > z) = 1 - \\Phi(z)$",
+    "$X \\sim Ge(p), E(X) = \\frac{1}{p}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 240,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "標準化變數計算 $P(X > 9.16)$ 並查表得 $p$。",
+    "marks": 2,
+    "common_error": "標準化時記錯標準差或 Z 分數計算錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "確立 $X$ 為幾何分佈，識別成功機率 $p$。",
+    "marks": 1,
+    "common_error": "混淆二項分佈與幾何分佈的定義。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "計算 $P(X \\leq 3) = P(X=1)+P(X=2)+P(X=3)$。",
+    "marks": 1,
+    "common_error": "忘記加上 $X=1$ 的情況或公式應用錯誤。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 4,
+    "what": "利用期望公式 $E(X) = \\frac{1}{p}$ 計算結果。",
+    "marks": 2,
+    "common_error": "誤用二項分佈期望公式 $np$ 或代入錯誤 $p$。",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "此題結合正態分佈與幾何分佈，測試學生將連續變數轉化為離散試驗的成功機率，並應用幾何分佈性質的能力，屬典型綜合應用題。",
+  "scaffolding_hints": [
+   "先畫出正態曲線標註 $\\mu=9, \\sigma=0.125$ 與目標值 $9.16$。",
+   "回憶幾何分佈定義：首次成功所需試驗次數，期望為 $1/p$。",
+   "將複雜問題拆解：先求單次成功機率，再套入離散分佈公式。"
+  ],
+  "quick_solution_strategy": "標準化求 $p \\approx 0.9772$；幾何分佈 $E(X)=1/p$；累加前三項機率。"
+ },
+ "skills": {
+  "topic_id": "T-PROB",
+  "knowledge_point_ids": [
+   "K-PROB-01",
+   "K-PROB-02"
+  ],
+  "formula_ids": [
+   "F-PROB-01",
+   "F-PROB-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "4": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

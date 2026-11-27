@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2025",
+  "paper": "Paper 2",
+  "qno": "7",
+  "hash": "#2025P2Q7"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "複合不等式",
+   "secondary_topics": [
+    "一元一次不等式",
+    "集合交集"
+   ],
+   "required_formulas": [
+    "$a < b \\leq c \\iff a < b \\text{ 且 } b \\leq c$",
+    "$y > -4$ 且 $y \\geq -2$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "忽略右側限制條件",
+    "student_thought_process": "只解了 $4y+1<5y-3$ 得到 $y>-4$，忘記檢查 $5y-3\\leq8y-9$ 的限制。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "移項變號錯誤",
+    "student_thought_process": "解 $5y-3\\leq8y-9$ 時，將 $-3$ 移到右邊變成 $+3$，但 $-9$ 移到左邊忘了變號或計算出錯。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆不等號方向",
+    "student_thought_process": "解出 $y\\geq2$ 後，誤以為這是唯一解，或是將兩個不等式解集取並集而非交集。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "複合不等式 $A < B \\leq C$ 代表同時滿足 $A < B$ 與 $B \\leq C$ 兩個條件。",
+   "請分別解這兩個一元一次不等式，並畫數線圖觀察重疊區域。",
+   "注意不等號方向：小於號 ($<$) 對應開圓圈，小於等於號 ($\\leq$) 對應實心點。"
+  ],
+  "quick_solution_strategy": "拆成 $4y+1<5y-3$ 與 $5y-3\\leq8y-9$，解出交集即為答案。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-05"
+  ],
+  "formula_ids": [
+   "F-EQN-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-COND"
+   },
+   "B": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

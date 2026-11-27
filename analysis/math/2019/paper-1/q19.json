@@ -1,0 +1,130 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2019",
+  "paper": "Paper 1",
+  "qno": "19",
+  "hash": "#2019P1Q19"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "二次函數",
+   "secondary_topics": [
+    "圖像變換（反射與平移）",
+    "配方法求頂點",
+    "圓的直徑性質"
+   ],
+   "required_formulas": [
+    "$y = a(x-h)^2 + k$ (配方法)",
+    "$r^2 = d_1^2 + d_2^2$ (圓半徑與弦長關係)"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 420,
+   "marks": 13
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "代入 x=4 驗證 f(4)=33，確認圖像過 F。",
+    "marks": 2,
+    "common_error": "計算錯誤導致不等於 33，或忽略 k 為常數條件。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "對 y=f(x) 作 y 軸反射再上移 4 單位得 g(x)。",
+    "marks": 3,
+    "common_error": "誤以為 g(x)=-f(x)+4，未正確處理 x 變號與 +4。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "用配方法將 g(x) 化為標準式，以 k 表頂點 U。",
+    "marks": 2,
+    "common_error": "配方法步驟錯誤或化簡時漏掉係數。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "觀察 F、O 固定，當 FO 為圓直徑時面積最小。",
+    "marks": 2,
+    "common_error": "未意識到直徑條件，嘗試用半徑公式導出複雜式子。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 5,
+    "what": "令 U 在 FO 垂直平分線上，解 k 值使圓面積最小。",
+    "marks": 2,
+    "common_error": "誤解「通過 F,O,U」的圓唯一性，忽略直徑條件。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 6,
+    "what": "求 G（g(x) 過之固定點），判斷 F,G,O,V 是否共圓。",
+    "marks": 2,
+    "common_error": "未能正確找出 G，或誤判四點共圓條件。",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "根據考評報告，考生常忽略 FO 為直徑時圓面積最小的關鍵概念，導致無法正確求 k；同時多數人未能找出 g(x) 的固定點 G，影響最後共圓判斷。",
+  "scaffolding_hints": [
+   "Hint1: 反射 y 軸時 x→-x，平移則 +4，勿混淆符號。",
+   "Hint2: 配方法重點在將二次項與一次項合併為完全平方。",
+   "Hint3: 若圓過兩固定點 F,O，面積最小即 FO 為直徑。"
+  ],
+  "quick_solution_strategy": "先驗證 (a)，再正確寫出 g(x) 並配方得 U；利用 FO 為直徑時圓最小之性質直接求 k；最後找 G 並比較四點位置判斷共圓性。"
+ },
+ "skills": {
+  "topic_id": "T-FUN",
+  "knowledge_point_ids": [
+   "K-FUN-01",
+   "K-FUN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "5": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "6": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

@@ -1,0 +1,130 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2023",
+  "paper": "Paper 1",
+  "qno": "13",
+  "hash": "#2023P1Q13"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "多項式除法與餘式定理",
+   "secondary_topics": [
+    "有理根定理",
+    "因數分解"
+   ],
+   "required_formulas": [
+    "$h(x) = g(x) \\cdot q(x) + r(x)$",
+    "$\\text{商式} = \\frac{h(x)-r(x)}{g(x)}$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 180,
+   "marks": 7
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用餘式定理設 $h(x) = g(x)q(x) + r(x)$，並由題意知商式等於餘式。",
+    "marks": 3,
+    "common_error": "誤以為商式是常數或多項式次數高於一次。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "代入 $g(x)$ 與未知商式 $q(x)=Ax+B$，比較最高次項係數求 $A$。",
+    "marks": 1,
+    "common_error": "忽略 $h(x)$ 最高次項係數 3 與 $g(x)$ 的係數 1 的關係。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "比較 $x^2$ 項係數，建立方程求 $B$ 的值。",
+    "marks": 1,
+    "common_error": "在展開 $(Ax+B)(x^3+\\dots)$ 時漏掉交叉項。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "寫出完整的商式 $q(x)$，並驗證餘式是否一致（若題目未要求求 a,b,c）。",
+    "marks": 1,
+    "common_error": "未明確寫出最終答案格式。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 5,
+    "what": "對 $h(x)=0$ 應用有理根定理，列出所有可能的有理根候選數。",
+    "marks": 1,
+    "common_error": "忘記考慮分母係數（此處為 3），僅列分子因數。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 6,
+    "what": "將候選根代入 $h(x)$ 驗證，統計實際成立的有理根數量並解釋。",
+    "marks": 2,
+    "common_error": "未實際測試所有候選值，直接猜測答案。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "根據考評報告，考生常忽略商式為一次多項式的特性，導致在設定未知數時出錯；此題強調透過比較係數來確定商式結構。",
+  "scaffolding_hints": [
+   "提示 1：若 $h(x)$ 除以 $g(x)$ 餘式等於商式，且 $\\deg(h)=4, \\deg(g)=3$，則商式必為一次多項式。",
+   "提示 2：有理根定理指出若有理數 $p/q$ 為根，則 $p$ 整除常數項，$q$ 整除最高次項係數。",
+   "提示 3：將求得的商式代回除法公式，可幫助理解 $a,b,c$ 的約束條件（雖此題 (b) 部分可能不需具體求出 a,b,c）。"
+  ],
+  "quick_solution_strategy": "先設商式為 $Ax+B$，比較 $x^4$ 與 $x^3$ 係數定 $A,B$；再用有理根定理列候選並代入驗證。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-04"
+  ],
+  "formula_ids": [
+   "F-POL-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-POL-04",
+    "formula_id": "F-POL-04",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-POL-04",
+    "formula_id": "F-POL-04",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-POL-04",
+    "formula_id": "F-POL-04",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-POL-04",
+    "formula_id": "F-POL-04",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "5": {
+    "knowledge_point_id": "K-POL-04",
+    "formula_id": "F-POL-04",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "6": {
+    "knowledge_point_id": "K-POL-04",
+    "formula_id": "F-POL-04",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

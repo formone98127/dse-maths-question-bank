@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2016",
+  "paper": "Paper 1",
+  "qno": "1",
+  "hash": "#2016P1Q1"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "指數定律",
+   "secondary_topics": [
+    "負指數處理",
+    "冪的乘方"
+   ],
+   "required_formulas": [
+    "$\\frac{a^m}{a^n} = a^{m-n}$",
+    "$(a^m)^n = a^{mn}$",
+    "$a^{-n} = \\frac{1}{a^n}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90,
+   "marks": 3
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "處理分子冪的乘方：$(x^8y^7)^2 = x^{16}y^{14}$",
+    "marks": 1,
+    "common_error": "忘記將 $y$ 也平方，或只平方了 $x$。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "合併同底數冪：分子減分母指數 ($16-5=11$, $14-(-6)=20$)",
+    "marks": 1,
+    "common_error": "忘記負號，算成 $14-6=8$ 導致答案錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "確認所有指數均為正數並寫出最終答案",
+    "marks": 1,
+    "common_error": "若步驟 2 算錯，此步無法修正；需檢查是否漏掉 $y$。",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "考評報告指出約 90% 考生能正確作答，主要失分點在於處理負指數時未能正確執行減法（特別是 $14 - (-6)$），導致誤以為答案是 $x^{11}y^8$。",
+  "scaffolding_hints": [
+   "先專注分子：$(ab)^n = a^n b^n$，記得 $y^7$ 也要平方。",
+   "分母有負指數時，直接保留負號進行指數相減，不要預先轉成正數再減。",
+   "最後檢查：題目要求「正指數」，確認沒有 $\\frac{1}{x}$ 形式。"
+  ],
+  "quick_solution_strategy": "先平方分子得 $x^{16}y^{14}$，再與分母 $x^5y^{-6}$ 相除，注意 $14-(-6)=20$。"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

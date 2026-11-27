@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2020",
+  "paper": "Paper 2",
+  "qno": "4",
+  "hash": "#2020P2Q4"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "代數展開與因式分解",
+   "secondary_topics": [
+    "多項式乘法",
+    "分配律",
+    "合併同類項"
+   ],
+   "required_formulas": [
+    "$(x+y)(z+w) = xz+xw+yz+yw$",
+    "$ax^2+bx+c$ 的配方法或求根公式（若需驗證）"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "符號處理錯誤",
+    "student_thought_process": "學生在展開 $-a(6a+4b)$ 時，可能忽略負號對 $6a$ 的影響，誤算為 $-6a^2-4ab$，導致最終結果與選項 B 不符。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "展開順序錯誤",
+    "student_thought_process": "學生可能先將 $(3a+2b)$ 與 $-a$ 合併，卻忘記了 $(4a-5b)$ 這部分，導致因式結構完全改變。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "符號處理錯誤",
+    "student_thought_process": "學生在處理 $-a(6a+4b)$ 時，將 $-a \\times 6a$ 算成 $-6a^2$，但將 $-a \\times 4b$ 算成 $+4ab$，符號混亂。"
+   }
+  },
+  "scaffolding_hints": [
+   "先專注於展開第二項 $-a(6a+4b)$，注意負號對各項的影響。",
+   "將第一項 $(3a+2b)(4a-5b)$ 完整展開，再與第二項合併同類項。",
+   "觀察選項中係數的絕對值是否與展開後的結果相符，特別是 $a^2$ 與 $ab$ 的係數。"
+  ],
+  "quick_solution_strategy": "先展開 $(3a+2b)(4a-5b)$，再展開 $-a(6a+4b)$，合併同類項後與選項比對係數。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-03"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

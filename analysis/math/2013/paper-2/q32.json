@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 2",
+  "qno": "32",
+  "hash": "#2013P2Q32"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "指數函數與對數關係",
+   "secondary_topics": [
+    "對數定義",
+    "線性方程式斜率",
+    "圖形截距"
+   ],
+   "required_formulas": [
+    "$y = ab^x$",
+    "$\\log_b y = \\log_b a + x \\cdot \\log_b b$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤以為對數轉化會改變曲線形狀",
+    "student_thought_process": "學生可能認為 $\\log_7 y$ 只是單純的壓縮，忘記了 $x$ 係數為 1 且截距不為零，或混淆了底數轉換公式。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "斜率計算錯誤或截距符號搞錯",
+    "student_thought_process": "學生在化簡 $\\log_7(ab^x)$ 時，可能誤算 $\\log_7 a$ 的符號（例如忽略 $a<0$ 不可能但假設 $a>1$ 導致截距正負判斷錯誤）或斜率計算出錯。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "忽略底數變化對斜率的影響",
+    "student_thought_process": "學生可能直接將原圖斜率 $b$ 當作新圖斜率，忽略了從 $\\log_7$ 轉換時需乘以 $\\log_7 b$ 的係數修正。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：回憶對數法則，將 $y=ab^x$ 兩邊取 $\\log_7$，觀察變量 $x$ 與常數項的結構。",
+   "提示 2：新方程式應為 $Y = mX + c$ 形式，其中斜率 $m = \\log_7 b$，截距 $c = \\log_7 a$。",
+   "提示 3：根據原圖判斷 $a$ 與 $b$ 的大小關係（如 $a>1, 0<b<1$），推導斜率正負與截距大小。"
+  ],
+  "quick_solution_strategy": "取對數轉化為線性式，依 $a,b$ 值定斜率與截距。"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

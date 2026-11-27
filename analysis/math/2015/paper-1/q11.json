@@ -1,0 +1,135 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2015",
+  "paper": "Paper 1",
+  "qno": "11",
+  "hash": "#2015P1Q11"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "多項式",
+   "secondary_topics": [
+    "餘數定理",
+    "因數定理",
+    "二次方程式求根"
+   ],
+   "required_formulas": [
+    "$P(a)$ 為 $P(x)$ 除以 $(x-a)$ 的餘數",
+    "$f(x) = (x-2)^2(x+h) + k$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 180,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用餘數定理，代入 $x=2$ 求 $k$。",
+    "marks": 1,
+    "common_error": "忘記餘數為 -5，直接令 f(2)=0。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 2,
+    "what": "利用因數定理，代入 $x=3$ 求 $h$。",
+    "marks": 1,
+    "common_error": "計算錯誤或代數變形錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "寫出 $f(x)$ 的完整展開式或保留因式形式。",
+    "marks": 1,
+    "common_error": "未寫出最終 $h,k$ 數值。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 4,
+    "what": "將 $f(x)=0$ 化為 $(x-2)^2(x+h) = -k$。",
+    "marks": 1,
+    "common_error": "錯誤展開多項式導致求根困難。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "解出兩個 $x=2$ 的根，並解二次部分求第三根。",
+    "marks": 1,
+    "common_error": "忽略重根 $x=2$ 或解錯一元二次方程。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "檢查所有根是否為整數並解釋結論。",
+    "marks": 1,
+    "common_error": "未比較根與整數，或缺乏文字解釋。",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "考生需警惕餘數定理與因數定理的應用條件，避免混淆 $f(2)$ 與餘數的關係，同時在判斷根是否為整數時應仔細檢查所有解。",
+  "scaffolding_hints": [
+   "提示 1：當 $x-2$ 是因子的一部分時，代入 $x=2$ 會消去多項式部分，只剩餘數 $k$。",
+   "提示 2：因數定理指出若 $(x-a)$ 整除 $f(x)$，則 $f(a)=0$。",
+   "提示 3：求出 $h,k$ 後，觀察方程結構，判斷非重根是否為整數。"
+  ],
+  "quick_solution_strategy": "先由 $f(2)=-5$ 得 $k=-5$；再由 $f(3)=0$ 解出 $h=1$；最後檢查 $(x-2)^2(x+1)+5=0$ 的根。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-01",
+   "K-POL-02"
+  ],
+  "formula_ids": [
+   "F-POL-01",
+   "F-POL-02",
+   "F-POL-03",
+   "F-POL-06"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "2": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "4": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

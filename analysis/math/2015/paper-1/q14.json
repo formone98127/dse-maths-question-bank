@@ -1,0 +1,135 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2015",
+  "paper": "Paper 1",
+  "qno": "14",
+  "hash": "#2015P1Q14"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "直線與圓",
+   "secondary_topics": [
+    "垂直平分線",
+    "圓的一般方程",
+    "軌跡概念"
+   ],
+   "required_formulas": [
+    "$\\text{中點} = \\left(\\frac{x_1+x_2}{2}, \\frac{y_1+y_2}{2}\\right)$",
+    "$\\text{斜率} = \\frac{y_2-y_1}{x_2-x_1}$",
+    "$\\text{垂直線斜率關係}: m_1 m_2 = -1$",
+    "$\\text{圓方程}: (x-h)^2 + (y-k)^2 = r^2$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 480,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "計算 P(4,-1) 與 Q(-14,23) 的中點 M 及 PQ 斜率。",
+    "marks": 1,
+    "common_error": "計算中點坐標時分母弄錯或加減錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "利用垂直關係求 L 的斜率，並寫出 L 方程。",
+    "marks": 1,
+    "common_error": "誤以為 L 平行於 PQ，或垂直斜率取反號錯誤。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "將 G(h, k) 代入圓心，利用 GP=GQ=r 求半徑平方 r^2。",
+    "marks": 1,
+    "common_error": "未展開 (x-h)^2+(y-k)^2 或計算距離平方時出錯。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "整理圓方程，將 k 用 h 表示（因 G 在 L 上）。",
+    "marks": 1,
+    "common_error": "未能消去 k，保留兩個未知數導致無法證明。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 5,
+    "what": "將 R(26,43) 代入圓方程求 h 值。",
+    "marks": 1,
+    "common_error": "代入時坐標抄錯，或解關於 h 的二次方程失敗。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "計算半徑 r，利用直徑 = 2r 得出答案。",
+    "marks": 1,
+    "common_error": "忘記乘以 2，或將半徑誤認為直徑。",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "考生常混淆垂直平分線與平行線概念，且在處理含參數圓方程展開及化簡時計算錯誤頻繁，導致無法完成證明步驟。",
+  "scaffolding_hints": [
+   "提示 1: 垂直平分線必過 PQ 中點且斜率為 PQ 斜率的負倒數。",
+   "提示 2: G 在 L 上意味著 G 的 y 坐標可透過 L 的方程用 h 表示。",
+   "提示 3: 圓通過 P,Q 代表半徑 r = GP = GQ，利用距離公式建立等式。"
+  ],
+  "quick_solution_strategy": "先求中點與垂直斜率寫出 L；再利用 G(h, k) 在 L 上代換 k；最後由 GP^2=r^2 展開整理即得證。"
+ },
+ "skills": {
+  "topic_id": "T-LOC",
+  "knowledge_point_ids": [
+   "K-LOC-01",
+   "K-LOC-02"
+  ],
+  "formula_ids": [
+   "F-LOC-01",
+   "F-LOC-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-LOC-01",
+    "formula_id": "F-LOC-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-LOC-01",
+    "formula_id": "F-LOC-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-LOC-01",
+    "formula_id": "F-LOC-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-LOC-01",
+    "formula_id": "F-LOC-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "5": {
+    "knowledge_point_id": "K-LOC-01",
+    "formula_id": "F-LOC-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-LOC-01",
+    "formula_id": "F-LOC-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

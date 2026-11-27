@@ -1,0 +1,135 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2016",
+  "paper": "Paper 1",
+  "qno": "14",
+  "hash": "#2016P1Q14"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "多項式",
+   "secondary_topics": [
+    "餘數定理",
+    "因數定理",
+    "二次方程根的分析"
+   ],
+   "required_formulas": [
+    "$p(x) \\equiv (lx^2 + 5x + 8)(2x^2 + mx + n)$",
+    "$R = p(-2) = p(2)$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 300,
+   "marks": 10
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "比較 $x^4$ 與 $x^3$ 係數求 $l, m$。",
+    "marks": 2,
+    "common_error": "忘記展開 $(lx^2)(2x^2)$ 或混淆 $x^3$ 來源。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "利用餘數相等條件建立關於 $n$ 的方程。",
+    "marks": 1,
+    "common_error": "未代入 $x=\\pm 2$ 或誤以為餘數為零。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "解方程求出 $n$ 的正確值。",
+    "marks": 1,
+    "common_error": "計算錯誤導致 $n$ 值不符原式。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "寫出完整的 $p(x)$ 表達式並展開。",
+    "marks": 1,
+    "common_error": "漏掉交叉項或符號錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "比較 $x^2$ 係數驗證或求 $a$（若需要）。",
+    "marks": 1,
+    "common_error": "跳過此步直接寫答案。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 6,
+    "what": "分析二次因式根並解釋總實根數目。",
+    "marks": 4,
+    "common_error": "只寫「2 個」未說明其中一個是重根或虛根。",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "考生常能求出係數卻忽略題目關鍵條件（餘數相等）來確定唯一參數，且在解釋實根時缺乏對二次方程判別式及重根的深入分析。",
+  "scaffolding_hints": [
+   "Hint1: 比較最高次項係數是求 $l, m$ 的最快方法。",
+   "Hint2: 餘數定理指出 $p(-2) = p(2)$，代入計算即可解出 $n$。",
+   "Hint3: 解釋實根時需檢查二次因式的判別式 $\\Delta$ 及是否為完全平方數。"
+  ],
+  "quick_solution_strategy": "先比係數得 $l,m$；再代 $x=\\pm2$ 令餘數相等解 $n$；最後分析 $(2x^2+mx+n)$ 的 $\\Delta$ 判斷實根數目並解釋。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-01",
+   "K-POL-02"
+  ],
+  "formula_ids": [
+   "F-POL-01",
+   "F-POL-02",
+   "F-POL-03",
+   "F-POL-06"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "6": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

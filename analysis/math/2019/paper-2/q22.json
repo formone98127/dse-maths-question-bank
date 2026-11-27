@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2019",
+  "paper": "Paper 2",
+  "qno": "22",
+  "hash": "#2019P2Q22"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "三角函數與幾何相似",
+   "secondary_topics": [
+    "長方形性質",
+    "直角三角形定義"
+   ],
+   "required_formulas": [
+    "$\\cos \\theta = \\frac{\\text{鄰邊}}{\\text{斜邊}}$",
+    "$\\sin \\theta = \\frac{\\text{對邊}}{\\text{斜邊}}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆正弦與餘弦定義",
+    "student_thought_process": "學生可能誤以為 $\\frac{CE}{AC}$ 是對邊比斜邊，直接套用 $\\sin$。但 $E$ 在 $AD$ 上，$\\triangle ACE$ 中 $AE$ 是 $\\angle C$ 的對邊而非 $\\alpha, \\beta$ 的直接對應關係，導致選錯分母或分子組合。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "錯誤相乘而非比對",
+    "student_thought_process": "學生可能將兩個三角函數值直接相乘，誤認為長度比例等於正弦或餘弦的積。這通常發生在沒有先建立 $CE$ 與 $AC$ 各自表達式的情況下。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "誤讀圖形角度標註",
+    "student_thought_process": "學生可能看錯 $\\alpha$ 與 $\\beta$ 的位置，將它們視為互餘角或同一角的補角，導致在構造相似比時選錯了三角函數類型（如把餘弦當成正弦）。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：觀察長方形 $ABCD$ 的性質，找出與 $\\alpha$、$\\beta$ 相關的直角三角形。",
+   "提示 2：分別用 $AC$ 和 $CE$ 表示出它們在各自直角三角形中的餘弦值（鄰邊比斜邊）。",
+   "提示 3：將 $\\frac{CE}{AC}$ 寫成兩個分數的比值，並利用長方形對邊相等的性質消去公共邊長。"
+  ],
+  "quick_solution_strategy": "在 $\\triangle ACE$ 中，$AE = AC \\cos \\alpha$；在 $\\triangle CDE$ 中，$DE = CD \\sin \\beta = AB \\sin \\beta$。利用 $AD=BC$ 及相似比構造關係。"
+ },
+ "skills": {
+  "topic_id": "T-TRI",
+  "knowledge_point_ids": [
+   "K-TRI-01",
+   "K-TRI-02"
+  ],
+  "formula_ids": [
+   "F-TRI-01",
+   "F-TRI-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

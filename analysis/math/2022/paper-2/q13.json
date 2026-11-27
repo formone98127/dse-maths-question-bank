@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 2",
+  "qno": "13",
+  "hash": "#2022P2Q13"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "變數關係與比例",
+   "secondary_topics": [
+    "平方根性質",
+    "代數式變形"
+   ],
+   "required_formulas": [
+    "$u = k \\frac{\\sqrt{v}}{w}$ (其中 $k$ 為常數)",
+    "$u^2 = k^2 \\frac{v}{w^2}$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略 III 的錯誤",
+    "student_thought_process": "學生確認 I 正確後，誤以為 II 也成立（將 $v$ 視為獨立變數），但未驗證 III。III 中 $w$ 與 $\\sqrt{v}$ 的關係被顛倒，學生未發現此比例係數錯誤。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略 I 的正確性",
+    "student_thought_process": "學生專注於 II 和 III，可能因計算複雜而跳過簡單的 I。未將 $u$ 平方後檢查 $v$ 與 $w^2$ 的直接/反比關係，導致誤判 I 為假。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "過度推論 III",
+    "student_thought_process": "學生認為所有敘述皆可能成立，未嚴格檢查 III 中 $w$ 與 $\\sqrt{v}$ 的比例係數。誤將 $u \\propto \\sqrt{v}/w$ 變形為 $w \\propto \\sqrt{v}/u$ 時忽略了常數 $k$ 的位置。"
+   }
+  },
+  "scaffolding_hints": [
+   "先寫出 $u$ 與 $v, w$ 的原始關係式，並引入常數 $k$。",
+   "將原始式兩邊平方，觀察 $u^2$ 與 $v, w$ 的新關係以驗證 I。",
+   "嘗試從原始式解出 $w$ 和 $v$，檢查 II 與 III 的比例係數是否正確。"
+  ],
+  "quick_solution_strategy": "由 $u = k\\frac{\\sqrt{v}}{w}$ 平方得 $u^2 = \\frac{k^2 v}{w^2}$，故 I 對；解出 $v$ 與 $w$ 檢驗 II、III。"
+ },
+ "skills": {
+  "topic_id": "T-VAR",
+  "knowledge_point_ids": [
+   "K-VAR-01",
+   "K-VAR-02"
+  ],
+  "formula_ids": [
+   "F-VAR-01",
+   "F-VAR-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

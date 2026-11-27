@@ -1,0 +1,131 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2012",
+  "paper": "Paper 1",
+  "qno": "19",
+  "hash": "#2012P1Q19"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "等比數列",
+   "secondary_topics": [
+    "對數運算",
+    "幾何級數求和",
+    "不等式求解"
+   ],
+   "required_formulas": [
+    "$S_n = \\frac{a(r^n - 1)}{r - 1}$ (首 $n$ 項和)",
+    "$\\log_b(x^k) = k \\log_b x$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 420,
+   "marks": 9
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "代入 n=1,2 建立方程組，利用對數求 a,b",
+    "marks": 3,
+    "common_error": "計算錯誤或無法正確使用對數性質解出常數。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "代入 n=4 計算 X 第 4 年貨物重量",
+    "marks": 1,
+    "common_error": "忘記將求得的 a,b 代回原式。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "利用等比數列求和公式表示 X 首 n 年總重",
+    "marks": 2,
+    "common_error": "混淆「第 n 年」與「前 n 年」，寫成單項式而非和式。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "比較 X 第 m 年與 Y 第 m-3 年（時間對應）",
+    "marks": 1,
+    "common_error": "僅比較 A(5) 與 B(1)，忽略隨時間推移的變化趨勢。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 5,
+    "what": "建立總重量不等式並化簡為關於 m 的不等式",
+    "marks": 2,
+    "common_error": "列出不等式後無法正確化簡或移項。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "解不等式找出最小整數 m，換算回 X 運作年份",
+    "marks": 1,
+    "common_error": "忘記將 Y 的年份轉換為 X 的總運作時間。",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "考生常混淆單項與和式，且在比較兩站貨量時僅看初始值而忽略指數增長特性，導致不等式求解失敗。",
+  "scaffolding_hints": [
+   "提示：注意題目定義的年份基準不同，Y 開始時 X 已運作 4 年。",
+   "提示：幾何級數求和公式 $S_n = \\frac{a(r^n - 1)}{r - 1}$ 中 $r=b^2$。",
+   "提示：經理的宣稱需考慮所有年份，不僅是起始年份。"
+  ],
+  "quick_solution_strategy": "先解 a,b；再算 n=4；求和公式注意區分單項與總和；比較時寫出通項不等式；最後解不等式轉回 X 的年份。"
+ },
+ "skills": {
+  "topic_id": "T-SEQ",
+  "knowledge_point_ids": [
+   "K-SEQ-03"
+  ],
+  "formula_ids": [
+   "F-SEQ-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-SEQ-03",
+    "formula_id": "F-SEQ-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-SEQ-03",
+    "formula_id": "F-SEQ-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-SEQ-03",
+    "formula_id": "F-SEQ-03",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-SEQ-03",
+    "formula_id": "F-SEQ-03",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "5": {
+    "knowledge_point_id": "K-SEQ-03",
+    "formula_id": "F-SEQ-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-SEQ-03",
+    "formula_id": "F-SEQ-03",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

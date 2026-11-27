@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2023",
+  "paper": "Paper 2",
+  "qno": "23",
+  "hash": "#2023P2Q23"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "幾何, 梯形性質, 三角函數",
+   "secondary_topics": [
+    "圓周角定理",
+    "相似三角形",
+    "直角三角形邊角關係"
+   ],
+   "required_formulas": [
+    "\\tan \\alpha = \\frac{對邊}{鄰邊}",
+    "\\sin \\alpha = \\frac{對邊}{斜邊}",
+    "\\cos \\alpha = \\frac{鄰邊}{斜邊}"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤判中點與直角關係",
+    "student_thought_process": "學生可能錯誤認為 E 為 AD 中點直接導致 CE=DE/2，忽略了角度條件對邊長比例的影響。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆特殊直角三角形",
+    "student_thought_process": "學生可能假設這是等腰直角三角形或誤以為 CE=DE，未考慮一般角度 \\alpha 的影響。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "混淆三角函數定義",
+    "student_thought_process": "學生可能將直角邊與斜邊的比值混淆，錯誤地選用了 \\tan\\alpha 而非 \\sin\\alpha\\cos\\alpha。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "觀察 \\triangle ABE 與 \\triangle BCE，利用直角條件思考點 E 的幾何特性。",
+   "連結 AC 或考慮以 BC 為直徑的圓，分析 \\angle BEC 的角度關係。",
+   "將 CE 與 DE 表達為含 \\alpha 的三角函數式，並比較兩者比例。"
+  ],
+  "quick_solution_strategy": "利用 E 為 AD 中點及直角條件，推導出 CE=DE\\sin\\alpha\\cos\\alpha 的關係。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-05"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

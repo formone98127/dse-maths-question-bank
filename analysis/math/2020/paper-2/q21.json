@@ -1,0 +1,86 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2020",
+  "paper": "Paper 2",
+  "qno": "21",
+  "hash": "#2020P2Q21"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "畢氏定理與幾何面積",
+   "secondary_topics": [
+    "長方形性質",
+    "直角三角形判定"
+   ],
+   "required_formulas": [
+    "$ a^2 + b^2 = c^2 $ (畢氏定理)",
+    "$ \\text{Area} = \\text{length} \\times \\text{width} $"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "誤用勾股數或計算錯誤",
+    "student_thought_process": "學生可能將 $BE$ 與 $CE$ 直接相加 ($8+15=23$) 當作寬，再乘以長 $17$ 得到錯誤結果；或是算出高為 $6$ 後，誤以為面積是 $6 \\times 10 = 60$"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "計算過程失誤",
+    "student_thought_process": "學生正確算出高為 $6$，但在計算面積時將長寬搞混，例如用 $6 \\times (17-?)$ 或單純計算錯誤得到 $68$"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "忽略單位或看錯題目條件",
+    "student_thought_process": "學生可能忽略了 $BC$ 是長而非寬，直接將 $17 \\times 8 = 136$，誤以為 $BE$ 就是另一邊長，未考慮 $E$ 點位置"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察圖形中 $\\triangle BCE$ 的三邊長度，判斷其形狀。",
+   "利用畢氏定理求出 $\\triangle BCE$ 的高（即長方形的寬）。",
+   "將求得的寬與已知的長相乘，即可得出面積。"
+  ],
+  "quick_solution_strategy": "先證 $\\triangle BCE$ 為直角三角形，求高 $h=6$，再算 $17 \\times 6$"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-05"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

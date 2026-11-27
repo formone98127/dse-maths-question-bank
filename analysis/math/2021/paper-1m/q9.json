@@ -1,0 +1,119 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 1M",
+  "qno": "9",
+  "hash": "#2021P1MQ9"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "概率與統計",
+   "secondary_topics": [
+    "正規分佈標準化",
+    "二項分佈應用",
+    "條件概率"
+   ],
+   "required_formulas": [
+    "$P(Z < z) = \\Phi(z)$",
+    "$\\binom{n}{r} p^r (1-p)^{n-r}$",
+    "$P(A|B) = \\frac{P(A \\cap B)}{P(B)}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 240,
+   "marks": 11
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用小土豆比例求標準差\\sigma，再計算中土豆區間概率",
+    "marks": 3,
+    "common_error": "忘記將Z分數轉換為標準正態分佈表值，或誤算大土豆比例。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "確立每次抽檢獨立事件，定義抽到Big potato的概率p",
+    "marks": 1,
+    "common_error": "混淆組合數與排列數，未識別為二項分佈模型。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "計算第4次抽到第2個Big potato的特定順序概率（負二項概念）",
+    "marks": 2,
+    "common_error": "直接算$C(3,1)p^2(1-p)$而忽略最後一次必須是Big。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 4,
+    "what": "計算5個中選1 Big且2 Small的組合數與對應概率",
+    "marks": 3,
+    "common_error": "選錯類別（如選成3 Small），或忽略剩餘2個為Medium。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 5,
+    "what": "計算已知1 Big下，至少有2 Small的條件概率分子與分母",
+    "marks": 2,
+    "common_error": "忘記除以總樣本空間（已知1 Big的所有情況）。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "DSE卷一常考正規分佈與二項分佈的結合，考生需熟練標準化轉換及條件概率的定義，避免在複雜組合計算中遺漏特定限制條件。",
+  "scaffolding_hints": [
+   "Hint1: 先由$P(W<180)=0.2119$反推\\sigma，再求$P(180 \\le W < 230)$。",
+   "Hint2: (b)題關鍵在於第4次抽檢必須是Big，前3次恰有1個Big。",
+   "Hint3: (c)(ii)條件概率公式為$\\frac{P(\\text{1 Big} \\cap \\text{\\ge 2 Small})}{P(\\text{1 Big})}$"
+  ],
+  "quick_solution_strategy": "先求\\sigma定p，(b)用排列組合固定最後一位，(c)(ii)直接套條件概率公式計算交集除以已知事件。"
+ },
+ "skills": {
+  "topic_id": "T-PROB",
+  "knowledge_point_ids": [
+   "K-PROB-04"
+  ],
+  "formula_ids": [
+   "F-PROB-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "4": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "5": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

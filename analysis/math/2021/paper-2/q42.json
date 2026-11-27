@@ -1,0 +1,91 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 2",
+  "qno": "42",
+  "hash": "#2021P2Q42"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "組合數學",
+   "secondary_topics": [
+    "條件機率",
+    "分情形討論",
+    "加法原理"
+   ],
+   "required_formulas": [
+    "$\\binom{n}{r} = \\frac{n!}{r!(n-r)!}$",
+    "$\\text{總數} = \\sum (\\text{學生選法}) \\times (\\text{教師選法})$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "漏算情形",
+    "student_thought_process": "只計算了學生選 4 人的情況，忘記加上學生選 5、6、7 人的其他可能性。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "算術錯誤",
+    "student_thought_process": "正確列出三種情形，但在計算 $\\binom{20}{5}\\times\\binom{10}{2}$ 或加法時出現計算失誤。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "邏輯混淆",
+    "student_thought_process": "錯誤地將「至少 4 人」理解為「恰好 4 人」，且可能誤用排列公式而非組合公式。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "題目要求選出 7 人，其中學生人數必須滿足什麼條件才能符合「至少 4 名」？請列出所有可能的學生人數。",
+   "對於每一種固定的學生人數，剩下的位置由教師填補，這是一種典型的組合問題，請回想 $\\binom{n}{r}$ 的意義。",
+   "將上述所有可能情形的結果相加，即可得到總數。請檢查你的計算是否涵蓋了所有情況。"
+  ],
+  "quick_solution_strategy": "分三種情形（學生 4、5、6、7 人）分別計算組合數並相加。"
+ },
+ "skills": {
+  "topic_id": "T-COM",
+  "knowledge_point_ids": [
+   "K-COM-02",
+   "K-COM-03"
+  ],
+  "formula_ids": [
+   "F-COM-01",
+   "F-COM-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-COM-02",
+    "formula_id": "F-COM-01",
+    "ability_id": "A-COND"
+   },
+   "B": {
+    "knowledge_point_id": "K-COM-02",
+    "formula_id": "F-COM-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-COM-02",
+    "formula_id": "F-COM-01",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

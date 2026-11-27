@@ -1,0 +1,942 @@
+{
+  "version": 1,
+  "note": "題庫 tags 對照到技能冊 20 課題；不改網站既有 tag 字串。",
+  "map": {
+    "百分法": {
+      "topic_id": "T-PCT",
+      "topic_name": "百分法"
+    },
+    "指數與對數": {
+      "topic_id": "T-EXP",
+      "topic_name": "指數與對數"
+    },
+    "比、率與比例": {
+      "topic_id": "T-RAT",
+      "topic_name": "比、率與比例"
+    },
+    "多項式（續）": {
+      "topic_id": "T-POL",
+      "topic_name": "多項式（續）"
+    },
+    "數系": {
+      "topic_id": "T-NUM",
+      "topic_name": "數系"
+    },
+    "方程與不等式": {
+      "topic_id": "T-EQN",
+      "topic_name": "方程與不等式"
+    },
+    "函數與圖像": {
+      "topic_id": "T-FUN",
+      "topic_name": "函數與圖像"
+    },
+    "數列": {
+      "topic_id": "T-SEQ",
+      "topic_name": "數列"
+    },
+    "變分": {
+      "topic_id": "T-VAR",
+      "topic_name": "變分"
+    },
+    "三角學與解三角形": {
+      "topic_id": "T-TRI",
+      "topic_name": "三角學與解三角形"
+    },
+    "求積法": {
+      "topic_id": "T-MEN",
+      "topic_name": "求積法"
+    },
+    "坐標幾何：直線": {
+      "topic_id": "T-LIN",
+      "topic_name": "坐標幾何：直線"
+    },
+    "坐標幾何：圓": {
+      "topic_id": "T-CIR",
+      "topic_name": "坐標幾何：圓"
+    },
+    "圓形幾何": {
+      "topic_id": "T-GEO",
+      "topic_name": "圓形幾何"
+    },
+    "軌跡": {
+      "topic_id": "T-LOC",
+      "topic_name": "軌跡"
+    },
+    "幾何變換": {
+      "topic_id": "T-TRF",
+      "topic_name": "幾何變換"
+    },
+    "統計圖表": {
+      "topic_id": "T-CHR",
+      "topic_name": "統計圖表"
+    },
+    "集中趨勢與離差": {
+      "topic_id": "T-STA",
+      "topic_name": "集中趨勢與離差"
+    },
+    "概率": {
+      "topic_id": "T-PROB",
+      "topic_name": "概率"
+    },
+    "排列與組合": {
+      "topic_id": "T-COM",
+      "topic_name": "排列與組合"
+    },
+    "百分比": {
+      "topic_id": "T-PCT",
+      "topic_name": "百分法"
+    },
+    "百分數": {
+      "topic_id": "T-PCT",
+      "topic_name": "百分法"
+    },
+    "百分數／利息": {
+      "topic_id": "T-PCT",
+      "topic_name": "百分法"
+    },
+    "百分變化": {
+      "topic_id": "T-PCT",
+      "topic_name": "百分法"
+    },
+    "利息與增長": {
+      "topic_id": "T-PCT",
+      "topic_name": "百分法"
+    },
+    "複利息": {
+      "topic_id": "T-PCT",
+      "topic_name": "百分法"
+    },
+    "Percentages": {
+      "topic_id": "T-PCT",
+      "topic_name": "百分法"
+    },
+    "Discount": {
+      "topic_id": "T-PCT",
+      "topic_name": "百分法"
+    },
+    "Profit": {
+      "topic_id": "T-PCT",
+      "topic_name": "百分法"
+    },
+    "Profit and Loss": {
+      "topic_id": "T-PCT",
+      "topic_name": "百分法"
+    },
+    "Investment": {
+      "topic_id": "T-PCT",
+      "topic_name": "百分法"
+    },
+    "指數定律": {
+      "topic_id": "T-EXP",
+      "topic_name": "指數與對數"
+    },
+    "指數比較": {
+      "topic_id": "T-EXP",
+      "topic_name": "指數與對數"
+    },
+    "指數函數": {
+      "topic_id": "T-EXP",
+      "topic_name": "指數與對數"
+    },
+    "對數": {
+      "topic_id": "T-EXP",
+      "topic_name": "指數與對數"
+    },
+    "對數方程": {
+      "topic_id": "T-EXP",
+      "topic_name": "指數與對數"
+    },
+    "Laws of Indices": {
+      "topic_id": "T-EXP",
+      "topic_name": "指數與對數"
+    },
+    "Positive Indices": {
+      "topic_id": "T-EXP",
+      "topic_name": "指數與對數"
+    },
+    "比率與比例": {
+      "topic_id": "T-RAT",
+      "topic_name": "比、率與比例"
+    },
+    "比與比例": {
+      "topic_id": "T-RAT",
+      "topic_name": "比、率與比例"
+    },
+    "比例": {
+      "topic_id": "T-RAT",
+      "topic_name": "比、率與比例"
+    },
+    "比例與相似": {
+      "topic_id": "T-RAT",
+      "topic_name": "比、率與比例"
+    },
+    "Rate and Ratio": {
+      "topic_id": "T-RAT",
+      "topic_name": "比、率與比例"
+    },
+    "Ratio": {
+      "topic_id": "T-RAT",
+      "topic_name": "比、率與比例"
+    },
+    "平均速率": {
+      "topic_id": "T-RAT",
+      "topic_name": "比、率與比例"
+    },
+    "Average Speed": {
+      "topic_id": "T-RAT",
+      "topic_name": "比、率與比例"
+    },
+    "多項式": {
+      "topic_id": "T-POL",
+      "topic_name": "多項式（續）"
+    },
+    "因式分解": {
+      "topic_id": "T-POL",
+      "topic_name": "多項式（續）"
+    },
+    "因式定理": {
+      "topic_id": "T-POL",
+      "topic_name": "多項式（續）"
+    },
+    "餘式定理": {
+      "topic_id": "T-POL",
+      "topic_name": "多項式（續）"
+    },
+    "代數化簡": {
+      "topic_id": "T-POL",
+      "topic_name": "多項式（續）"
+    },
+    "恆等式": {
+      "topic_id": "T-POL",
+      "topic_name": "多項式（續）"
+    },
+    "比較係數": {
+      "topic_id": "T-POL",
+      "topic_name": "多項式（續）"
+    },
+    "主項變換": {
+      "topic_id": "T-POL",
+      "topic_name": "多項式（續）"
+    },
+    "配方法": {
+      "topic_id": "T-POL",
+      "topic_name": "多項式（續）"
+    },
+    "Polynomials": {
+      "topic_id": "T-POL",
+      "topic_name": "多項式（續）"
+    },
+    "Factorisation": {
+      "topic_id": "T-POL",
+      "topic_name": "多項式（續）"
+    },
+    "Factor Theorem": {
+      "topic_id": "T-POL",
+      "topic_name": "多項式（續）"
+    },
+    "Algebraic Expressions": {
+      "topic_id": "T-POL",
+      "topic_name": "多項式（續）"
+    },
+    "Quadratic Expressions": {
+      "topic_id": "T-POL",
+      "topic_name": "多項式（續）"
+    },
+    "Algebra": {
+      "topic_id": "T-POL",
+      "topic_name": "多項式（續）"
+    },
+    "Change of Subject": {
+      "topic_id": "T-POL",
+      "topic_name": "多項式（續）"
+    },
+    "H.C.F.": {
+      "topic_id": "T-NUM",
+      "topic_name": "數系"
+    },
+    "L.C.M.": {
+      "topic_id": "T-NUM",
+      "topic_name": "數系"
+    },
+    "數制": {
+      "topic_id": "T-NUM",
+      "topic_name": "數系"
+    },
+    "二進位": {
+      "topic_id": "T-NUM",
+      "topic_name": "數系"
+    },
+    "十六進位": {
+      "topic_id": "T-NUM",
+      "topic_name": "數系"
+    },
+    "十六進制": {
+      "topic_id": "T-NUM",
+      "topic_name": "數系"
+    },
+    "複數": {
+      "topic_id": "T-NUM",
+      "topic_name": "數系"
+    },
+    "Complex Numbers": {
+      "topic_id": "T-NUM",
+      "topic_name": "數系"
+    },
+    "近似與誤差": {
+      "topic_id": "T-NUM",
+      "topic_name": "數系"
+    },
+    "誤差上限": {
+      "topic_id": "T-NUM",
+      "topic_name": "數系"
+    },
+    "Errors": {
+      "topic_id": "T-NUM",
+      "topic_name": "數系"
+    },
+    "Significant Figures": {
+      "topic_id": "T-NUM",
+      "topic_name": "數系"
+    },
+    "一元方程": {
+      "topic_id": "T-EQN",
+      "topic_name": "方程與不等式"
+    },
+    "一元一次方程": {
+      "topic_id": "T-EQN",
+      "topic_name": "方程與不等式"
+    },
+    "一元二次方程": {
+      "topic_id": "T-EQN",
+      "topic_name": "方程與不等式"
+    },
+    "一元一次不等式": {
+      "topic_id": "T-EQN",
+      "topic_name": "方程與不等式"
+    },
+    "不等式": {
+      "topic_id": "T-EQN",
+      "topic_name": "方程與不等式"
+    },
+    "複合不等式": {
+      "topic_id": "T-EQN",
+      "topic_name": "方程與不等式"
+    },
+    "聯立方程": {
+      "topic_id": "T-EQN",
+      "topic_name": "方程與不等式"
+    },
+    "二元一次方程組": {
+      "topic_id": "T-EQN",
+      "topic_name": "方程與不等式"
+    },
+    "二次方程": {
+      "topic_id": "T-EQN",
+      "topic_name": "方程與不等式"
+    },
+    "判別式": {
+      "topic_id": "T-EQN",
+      "topic_name": "方程與不等式"
+    },
+    "根與係數": {
+      "topic_id": "T-EQN",
+      "topic_name": "方程與不等式"
+    },
+    "線性規劃": {
+      "topic_id": "T-EQN",
+      "topic_name": "方程與不等式"
+    },
+    "Equations": {
+      "topic_id": "T-EQN",
+      "topic_name": "方程與不等式"
+    },
+    "Quadratic Equations": {
+      "topic_id": "T-EQN",
+      "topic_name": "方程與不等式"
+    },
+    "Linear Inequalities": {
+      "topic_id": "T-EQN",
+      "topic_name": "方程與不等式"
+    },
+    "Simultaneous Equations": {
+      "topic_id": "T-EQN",
+      "topic_name": "方程與不等式"
+    },
+    "Real Roots": {
+      "topic_id": "T-EQN",
+      "topic_name": "方程與不等式"
+    },
+    "二次函數": {
+      "topic_id": "T-FUN",
+      "topic_name": "函數與圖像"
+    },
+    "函數": {
+      "topic_id": "T-FUN",
+      "topic_name": "函數與圖像"
+    },
+    "圖像": {
+      "topic_id": "T-FUN",
+      "topic_name": "函數與圖像"
+    },
+    "拋物線": {
+      "topic_id": "T-FUN",
+      "topic_name": "函數與圖像"
+    },
+    "頂點": {
+      "topic_id": "T-FUN",
+      "topic_name": "函數與圖像"
+    },
+    "線性關係": {
+      "topic_id": "T-FUN",
+      "topic_name": "函數與圖像"
+    },
+    "圖像變換": {
+      "topic_id": "T-FUN",
+      "topic_name": "函數與圖像"
+    },
+    "Functions and Graphs": {
+      "topic_id": "T-FUN",
+      "topic_name": "函數與圖像"
+    },
+    "Quadratic Functions": {
+      "topic_id": "T-FUN",
+      "topic_name": "函數與圖像"
+    },
+    "Graph Reading": {
+      "topic_id": "T-FUN",
+      "topic_name": "函數與圖像"
+    },
+    "Variables": {
+      "topic_id": "T-FUN",
+      "topic_name": "函數與圖像"
+    },
+    "等差數列": {
+      "topic_id": "T-SEQ",
+      "topic_name": "數列"
+    },
+    "等比數列": {
+      "topic_id": "T-SEQ",
+      "topic_name": "數列"
+    },
+    "圖案規律": {
+      "topic_id": "T-SEQ",
+      "topic_name": "數列"
+    },
+    "Sequences": {
+      "topic_id": "T-SEQ",
+      "topic_name": "數列"
+    },
+    "Geometric Sequence": {
+      "topic_id": "T-SEQ",
+      "topic_name": "數列"
+    },
+    "Variation": {
+      "topic_id": "T-VAR",
+      "topic_name": "變分"
+    },
+    "三角學": {
+      "topic_id": "T-TRI",
+      "topic_name": "三角學與解三角形"
+    },
+    "三角比": {
+      "topic_id": "T-TRI",
+      "topic_name": "三角學與解三角形"
+    },
+    "三角比／角": {
+      "topic_id": "T-TRI",
+      "topic_name": "三角學與解三角形"
+    },
+    "三角函數": {
+      "topic_id": "T-TRI",
+      "topic_name": "三角學與解三角形"
+    },
+    "三角恆等式": {
+      "topic_id": "T-TRI",
+      "topic_name": "三角學與解三角形"
+    },
+    "三角方程": {
+      "topic_id": "T-TRI",
+      "topic_name": "三角學與解三角形"
+    },
+    "餘弦定理": {
+      "topic_id": "T-TRI",
+      "topic_name": "三角學與解三角形"
+    },
+    "畢氏定理": {
+      "topic_id": "T-TRI",
+      "topic_name": "三角學與解三角形"
+    },
+    "方位角": {
+      "topic_id": "T-TRI",
+      "topic_name": "三角學與解三角形"
+    },
+    "弧度": {
+      "topic_id": "T-TRI",
+      "topic_name": "三角學與解三角形"
+    },
+    "Trigonometry": {
+      "topic_id": "T-TRI",
+      "topic_name": "三角學與解三角形"
+    },
+    "面積": {
+      "topic_id": "T-MEN",
+      "topic_name": "求積法"
+    },
+    "面積比": {
+      "topic_id": "T-MEN",
+      "topic_name": "求積法"
+    },
+    "多邊形面積": {
+      "topic_id": "T-MEN",
+      "topic_name": "求積法"
+    },
+    "梯形面積": {
+      "topic_id": "T-MEN",
+      "topic_name": "求積法"
+    },
+    "扇形": {
+      "topic_id": "T-MEN",
+      "topic_name": "求積法"
+    },
+    "扇形面積": {
+      "topic_id": "T-MEN",
+      "topic_name": "求積法"
+    },
+    "弧長": {
+      "topic_id": "T-MEN",
+      "topic_name": "求積法"
+    },
+    "體積": {
+      "topic_id": "T-MEN",
+      "topic_name": "求積法"
+    },
+    "表面積": {
+      "topic_id": "T-MEN",
+      "topic_name": "求積法"
+    },
+    "容量": {
+      "topic_id": "T-MEN",
+      "topic_name": "求積法"
+    },
+    "立體圖形": {
+      "topic_id": "T-MEN",
+      "topic_name": "求積法"
+    },
+    "立體幾何": {
+      "topic_id": "T-MEN",
+      "topic_name": "求積法"
+    },
+    "圓柱": {
+      "topic_id": "T-MEN",
+      "topic_name": "求積法"
+    },
+    "圓錐": {
+      "topic_id": "T-MEN",
+      "topic_name": "求積法"
+    },
+    "半球": {
+      "topic_id": "T-MEN",
+      "topic_name": "求積法"
+    },
+    "角柱體": {
+      "topic_id": "T-MEN",
+      "topic_name": "求積法"
+    },
+    "角錐": {
+      "topic_id": "T-MEN",
+      "topic_name": "求積法"
+    },
+    "四面體": {
+      "topic_id": "T-MEN",
+      "topic_name": "求積法"
+    },
+    "兩面角": {
+      "topic_id": "T-MEN",
+      "topic_name": "求積法"
+    },
+    "Mensuration": {
+      "topic_id": "T-MEN",
+      "topic_name": "求積法"
+    },
+    "Solids": {
+      "topic_id": "T-MEN",
+      "topic_name": "求積法"
+    },
+    "3-D Geometry": {
+      "topic_id": "T-MEN",
+      "topic_name": "求積法"
+    },
+    "Capacity": {
+      "topic_id": "T-MEN",
+      "topic_name": "求積法"
+    },
+    "Cube": {
+      "topic_id": "T-MEN",
+      "topic_name": "求積法"
+    },
+    "Tetrahedron": {
+      "topic_id": "T-MEN",
+      "topic_name": "求積法"
+    },
+    "Angle between Planes": {
+      "topic_id": "T-MEN",
+      "topic_name": "求積法"
+    },
+    "直線方程": {
+      "topic_id": "T-LIN",
+      "topic_name": "坐標幾何：直線"
+    },
+    "坐標幾何": {
+      "topic_id": "T-LIN",
+      "topic_name": "坐標幾何：直線"
+    },
+    "Equations of Straight Lines": {
+      "topic_id": "T-LIN",
+      "topic_name": "坐標幾何：直線"
+    },
+    "圓的方程": {
+      "topic_id": "T-CIR",
+      "topic_name": "坐標幾何：圓"
+    },
+    "圓與直線": {
+      "topic_id": "T-CIR",
+      "topic_name": "坐標幾何：圓"
+    },
+    "直線與圓": {
+      "topic_id": "T-CIR",
+      "topic_name": "坐標幾何：圓"
+    },
+    "Equations of Circles": {
+      "topic_id": "T-CIR",
+      "topic_name": "坐標幾何：圓"
+    },
+    "圓的性質": {
+      "topic_id": "T-GEO",
+      "topic_name": "圓形幾何"
+    },
+    "圓的幾何": {
+      "topic_id": "T-GEO",
+      "topic_name": "圓形幾何"
+    },
+    "圓形性質": {
+      "topic_id": "T-GEO",
+      "topic_name": "圓形幾何"
+    },
+    "圓形": {
+      "topic_id": "T-GEO",
+      "topic_name": "圓形幾何"
+    },
+    "圓周角": {
+      "topic_id": "T-GEO",
+      "topic_name": "圓形幾何"
+    },
+    "切線": {
+      "topic_id": "T-GEO",
+      "topic_name": "圓形幾何"
+    },
+    "交弦定理": {
+      "topic_id": "T-GEO",
+      "topic_name": "圓形幾何"
+    },
+    "平面幾何": {
+      "topic_id": "T-GEO",
+      "topic_name": "圓形幾何"
+    },
+    "三角形": {
+      "topic_id": "T-GEO",
+      "topic_name": "圓形幾何"
+    },
+    "相似三角形": {
+      "topic_id": "T-GEO",
+      "topic_name": "圓形幾何"
+    },
+    "全等三角形": {
+      "topic_id": "T-GEO",
+      "topic_name": "圓形幾何"
+    },
+    "直角三角形": {
+      "topic_id": "T-GEO",
+      "topic_name": "圓形幾何"
+    },
+    "四邊形": {
+      "topic_id": "T-GEO",
+      "topic_name": "圓形幾何"
+    },
+    "平行線": {
+      "topic_id": "T-GEO",
+      "topic_name": "圓形幾何"
+    },
+    "多邊形": {
+      "topic_id": "T-GEO",
+      "topic_name": "圓形幾何"
+    },
+    "菱形": {
+      "topic_id": "T-GEO",
+      "topic_name": "圓形幾何"
+    },
+    "正方形": {
+      "topic_id": "T-GEO",
+      "topic_name": "圓形幾何"
+    },
+    "角": {
+      "topic_id": "T-GEO",
+      "topic_name": "圓形幾何"
+    },
+    "內心": {
+      "topic_id": "T-GEO",
+      "topic_name": "圓形幾何"
+    },
+    "外心": {
+      "topic_id": "T-GEO",
+      "topic_name": "圓形幾何"
+    },
+    "幾何中心": {
+      "topic_id": "T-GEO",
+      "topic_name": "圓形幾何"
+    },
+    "垂直平分線": {
+      "topic_id": "T-GEO",
+      "topic_name": "圓形幾何"
+    },
+    "Circle Properties": {
+      "topic_id": "T-GEO",
+      "topic_name": "圓形幾何"
+    },
+    "Similar Triangles": {
+      "topic_id": "T-GEO",
+      "topic_name": "圓形幾何"
+    },
+    "Tangents": {
+      "topic_id": "T-GEO",
+      "topic_name": "圓形幾何"
+    },
+    "Geometry": {
+      "topic_id": "T-GEO",
+      "topic_name": "圓形幾何"
+    },
+    "Angles": {
+      "topic_id": "T-GEO",
+      "topic_name": "圓形幾何"
+    },
+    "Isosceles Triangle": {
+      "topic_id": "T-GEO",
+      "topic_name": "圓形幾何"
+    },
+    "Locus": {
+      "topic_id": "T-LOC",
+      "topic_name": "軌跡"
+    },
+    "變換": {
+      "topic_id": "T-TRF",
+      "topic_name": "幾何變換"
+    },
+    "變換與對稱": {
+      "topic_id": "T-TRF",
+      "topic_name": "幾何變換"
+    },
+    "變換／對稱": {
+      "topic_id": "T-TRF",
+      "topic_name": "幾何變換"
+    },
+    "對稱": {
+      "topic_id": "T-TRF",
+      "topic_name": "幾何變換"
+    },
+    "對稱軸": {
+      "topic_id": "T-TRF",
+      "topic_name": "幾何變換"
+    },
+    "反射": {
+      "topic_id": "T-TRF",
+      "topic_name": "幾何變換"
+    },
+    "極坐標": {
+      "topic_id": "T-TRF",
+      "topic_name": "幾何變換"
+    },
+    "Reflection": {
+      "topic_id": "T-TRF",
+      "topic_name": "幾何變換"
+    },
+    "Rotation": {
+      "topic_id": "T-TRF",
+      "topic_name": "幾何變換"
+    },
+    "Polar Coordinates": {
+      "topic_id": "T-TRF",
+      "topic_name": "幾何變換"
+    },
+    "幹葉圖": {
+      "topic_id": "T-CHR",
+      "topic_name": "統計圖表"
+    },
+    "框線圖": {
+      "topic_id": "T-CHR",
+      "topic_name": "統計圖表"
+    },
+    "散點圖": {
+      "topic_id": "T-CHR",
+      "topic_name": "統計圖表"
+    },
+    "圓形圖": {
+      "topic_id": "T-CHR",
+      "topic_name": "統計圖表"
+    },
+    "棒形圖": {
+      "topic_id": "T-CHR",
+      "topic_name": "統計圖表"
+    },
+    "頻數分佈表": {
+      "topic_id": "T-CHR",
+      "topic_name": "統計圖表"
+    },
+    "Bar Chart": {
+      "topic_id": "T-CHR",
+      "topic_name": "統計圖表"
+    },
+    "Pie Chart": {
+      "topic_id": "T-CHR",
+      "topic_name": "統計圖表"
+    },
+    "Box-and-whisker Diagram": {
+      "topic_id": "T-CHR",
+      "topic_name": "統計圖表"
+    },
+    "統計": {
+      "topic_id": "T-STA",
+      "topic_name": "集中趨勢與離差"
+    },
+    "集中趨勢": {
+      "topic_id": "T-STA",
+      "topic_name": "集中趨勢與離差"
+    },
+    "離差": {
+      "topic_id": "T-STA",
+      "topic_name": "集中趨勢與離差"
+    },
+    "平均數": {
+      "topic_id": "T-STA",
+      "topic_name": "集中趨勢與離差"
+    },
+    "平均值": {
+      "topic_id": "T-STA",
+      "topic_name": "集中趨勢與離差"
+    },
+    "中位數": {
+      "topic_id": "T-STA",
+      "topic_name": "集中趨勢與離差"
+    },
+    "眾數": {
+      "topic_id": "T-STA",
+      "topic_name": "集中趨勢與離差"
+    },
+    "四分位數": {
+      "topic_id": "T-STA",
+      "topic_name": "集中趨勢與離差"
+    },
+    "分佈域": {
+      "topic_id": "T-STA",
+      "topic_name": "集中趨勢與離差"
+    },
+    "方差": {
+      "topic_id": "T-STA",
+      "topic_name": "集中趨勢與離差"
+    },
+    "標準差": {
+      "topic_id": "T-STA",
+      "topic_name": "集中趨勢與離差"
+    },
+    "標準分": {
+      "topic_id": "T-STA",
+      "topic_name": "集中趨勢與離差"
+    },
+    "Statistics": {
+      "topic_id": "T-STA",
+      "topic_name": "集中趨勢與離差"
+    },
+    "Mean": {
+      "topic_id": "T-STA",
+      "topic_name": "集中趨勢與離差"
+    },
+    "Median": {
+      "topic_id": "T-STA",
+      "topic_name": "集中趨勢與離差"
+    },
+    "Standard Score": {
+      "topic_id": "T-STA",
+      "topic_name": "集中趨勢與離差"
+    },
+    "Interquartile Range": {
+      "topic_id": "T-STA",
+      "topic_name": "集中趨勢與離差"
+    },
+    "Data Distribution": {
+      "topic_id": "T-STA",
+      "topic_name": "集中趨勢與離差"
+    },
+    "Change in Data": {
+      "topic_id": "T-STA",
+      "topic_name": "集中趨勢與離差"
+    },
+    "條件概率": {
+      "topic_id": "T-PROB",
+      "topic_name": "概率"
+    },
+    "獨立事件": {
+      "topic_id": "T-PROB",
+      "topic_name": "概率"
+    },
+    "Probability": {
+      "topic_id": "T-PROB",
+      "topic_name": "概率"
+    },
+    "Conditional Probability": {
+      "topic_id": "T-PROB",
+      "topic_name": "概率"
+    },
+    "組合": {
+      "topic_id": "T-COM",
+      "topic_name": "排列與組合"
+    },
+    "Permutations and Combinations": {
+      "topic_id": "T-COM",
+      "topic_name": "排列與組合"
+    },
+    "Combinations": {
+      "topic_id": "T-COM",
+      "topic_name": "排列與組合"
+    },
+    "應用題": {
+      "topic_id": "T-EQN",
+      "topic_name": "方程與不等式"
+    },
+    "Cost Function": {
+      "topic_id": "T-FUN",
+      "topic_name": "函數與圖像"
+    },
+    "三角形的心": {
+      "topic_id": "T-GEO",
+      "topic_name": "圓形幾何"
+    },
+    "Division": {
+      "topic_id": "T-POL",
+      "topic_name": "多項式（續）"
+    },
+    "幾何": {
+      "topic_id": "T-GEO",
+      "topic_name": "圓形幾何"
+    },
+    "三角形內心": {
+      "topic_id": "T-GEO",
+      "topic_name": "圓形幾何"
+    },
+    "Area of Triangle": {
+      "topic_id": "T-TRI",
+      "topic_name": "三角學與解三角形"
+    },
+    "Revenue": {
+      "topic_id": "T-FUN",
+      "topic_name": "函數與圖像"
+    }
+  }
+}

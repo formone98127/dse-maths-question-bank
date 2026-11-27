@@ -1,0 +1,131 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 1M",
+  "qno": "5",
+  "hash": "#2022P1MQ5"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "指數與對數",
+   "secondary_topics": [
+    "二項式展開",
+    "泰勒級數",
+    "線性函數斜率"
+   ],
+   "required_formulas": [
+    "$e^x = 1 + x + \\frac{x^2}{2!} + \\dots$",
+    "$\\ln(ab) = \\ln a + \\ln b$",
+    "$\\ln(e^u) = u$",
+    "$\\sqrt{y} = y^{1/2}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 300,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "展開 $e^{-kx/2}$ 至 $x^2$ 項",
+    "marks": 1,
+    "common_error": "忘記階乘或符號錯誤",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "將 $y=64e^{-kx}$ 取自然對數",
+    "marks": 1,
+    "common_error": "忽略常數項係數處理",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 3,
+    "what": "化簡得 $\\ln y$ 關於 $x$ 的線性式",
+    "marks": 1,
+    "common_error": "對數運算錯誤",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "展開 $\\sqrt{y}(1-2x)^5$ 至 $x^2$ 項",
+    "marks": 1,
+    "common_error": "二項式展開漏項或錯位",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 5,
+    "what": "合併同類項並提取 $x^2$ 係數",
+    "marks": 1,
+    "common_error": "代數化簡出錯",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "由係數=449 解 $k$ 再求斜率",
+    "marks": 1,
+    "common_error": "解方程錯誤或忽略正負",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "此題結合指數展開與對數運算，測試學生處理多步驟代數化簡及二項式係數提取的能力，屬卷一常見綜合應用題型。",
+  "scaffolding_hints": [
+   "回憶 $e^x$ 的馬克勞林級數展開式",
+   "利用對數性質將指數式轉為線性式",
+   "注意 $\\sqrt{y}$ 會引入額外的指數係數"
+  ],
+  "quick_solution_strategy": "先展開指數與二項式，合併 $x^2$ 係數後列方程解 $k$，斜率即為 $\\ln y$ 式中 $x$ 的係數。"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "3": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "5": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

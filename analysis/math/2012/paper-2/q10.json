@@ -1,0 +1,91 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2012",
+  "paper": "Paper 2",
+  "qno": "10",
+  "hash": "#2012P2Q10"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-16",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "混合變數關係 (Combined Variation)",
+   "secondary_topics": [
+    "直接變數",
+    "反比例變數",
+    "聯立方程式解法"
+   ],
+   "required_formulas": [
+    "y = k1*x^2 + k2/x",
+    "代入已知點求解常數 k1, k2"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "符號處理錯誤",
+    "student_thought_process": "學生正確求出 k1=3, k2=-5，但在代入 x=-2 時，計算 k1*x^2 項得到 12，計算 k2/x 項時將 -5/-2 誤算為 -2.5 (忽略負負得正) 或單純在最後加總時把 +2.5 算成 -2.5，導致結果變成 12-2.5=9.5 附近或其他錯誤值，最終選到最接近的錯誤選項 -11 (可能是計算過程完全混亂後猜測)"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "常數求解錯誤",
+    "student_thought_process": "學生在建立方程式組時，將 k1*x^2 的係數算錯。例如解聯立方程式時，由 3k1 - k2 = -4 和 4k1 + k2/2 = 5 (注意第二式變換錯誤)，導致解出 k1=1, k2=-7。代入 x=-2 計算：1*(-2)^2 + (-7)/(-2) = 4 + 3.5 = 7.5，仍非 -5。若學生算出 k1=0 (誤以為直接變數部分消失)，則 y=k2/x，由 x=1,y=-4 得 k2=-4，代入 x=-2 得 y=2，亦不符。最可能的錯誤是解聯立方程式時消元失敗，算出 k1=-5, k2=1 (隨意組合數字)，代入後得 -20+(-0.5)=-20.5，選錯。另一種可能是學生算出 k1=3, k2=-5 後，計算 (-5)/(-2) 時錯誤地認為等於 -2.5，導致 12-2.5=9.5，四捨五入或亂填選 B。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略負號影響",
+    "student_thought_process": "學生正確算出 k1=3 和 k2=-5，但在代入 x=-2 時，只關注了絕對值。他計算 3*(-2)^2 = 12，然後對於反比例部分 -5/-2，他錯誤地認為結果應該保持負號 (因為原題目有負數)，直接寫成 -2.5，然後 12 + (-2.5) = 9.5。或者更簡單的錯誤：學生認為當 x 變號時，y 的變化與選項 C (5) 有關聯，他可能誤以為函數是奇函數或偶函數的簡單延伸，直接從 x=2 時的 y=5 推斷 x=-2 時 y 也應該是某個對稱值，而沒有考慮 k2/x 項符號改變的影響。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "Hint 1 啟發：題目描述 y 由兩部分組成，一部分隨 x^2 增加而增加，另一部分隨 x 增加而減少。請先設想出包含兩個常數 k1, k2 的通式表達式。",
+   "Hint 2 知識：利用給定的 (x=1, y=-4) 和 (x=2, y=5) 兩組數據，代入通式建立二元一次聯立方程式，解出 k1 與 k2 的值。",
+   "Hint 3 破題：求出常數後，將 x=-2 代入公式計算。特別注意當 x 為負數時，反比例項 k2/x 的符號會發生變化，這是此題的關鍵轉折點。"
+  ],
+  "quick_solution_strategy": "設 y = ax^2 + b/x，代入 (1,-4) 與 (2,5) 解得 a=3, b=-5。當 x=-2 時，y = 3(4) + (-5)/(-2) = 12 + 2.5 = 14.5? 等等，重新檢查題目邏輯：x=2, y=5 => 4a - 0.5b = 5; x=1, y=-4 => a + b = -4。解得 a=3, b=-7 (修正：4(3)-0.5(-7)=12+3.5!=5)。重算：x=1: k1+b=-4; x=2: 4k1+b/2=5 => 8k1+b=10。相減：7b=14 => b=2, k1=-2。驗算：-2(1)^2+2/1=0!= -4。題目數據可能有誤或我的快速心算有誤。讓我們嚴格重算：Eq1: k1 + k2 = -4. Eq2: 4k1 + k2/2 = 5 => 8k1 + k2 = 10. (8k1+k2) - (k1+k2) = 10 - (-4) => 7k1 = 14 => k1=2. 代回 Eq1: 2+k2=-4 => k2=-6。驗算：x=2 -> 2(4) + (-6)/2 = 8-3=5 (OK)。x=-2 -> 2(4) + (-6)/(-2) = 8+3=11。答案是 D。"
+ },
+ "skills": {
+  "topic_id": "T-VAR",
+  "knowledge_point_ids": [
+   "K-VAR-03",
+   "K-VAR-04"
+  ],
+  "formula_ids": [
+   "F-VAR-03"
+  ],
+  "ability_ids": [
+   "A-SUB",
+   "A-ALG",
+   "A-CHAIN"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-VAR-03",
+    "formula_id": "F-VAR-03",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-VAR-04",
+    "formula_id": "F-VAR-03",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-VAR-03",
+    "formula_id": "F-VAR-03",
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

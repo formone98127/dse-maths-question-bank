@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2023",
+  "paper": "Paper 2",
+  "qno": "20",
+  "hash": "#2023P2Q20"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "多邊形內角與角度計算",
+   "secondary_topics": [
+    "正多邊形內角公式",
+    "幾何圖形拼接"
+   ],
+   "required_formulas": [
+    "$\\text{正 } n \\text{ 邊形內角} = \\frac{(n-2) \\times 180^\\circ}{n}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "內角和誤算",
+    "student_thought_process": "學生可能將正五邊形內角算成 $108^\\circ$，但正六邊形內角誤算為 $120^\\circ$ 而非正確值，導致總和偏差。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "角度關係混淆",
+    "student_thought_process": "學生可能誤以為 $\\angle ABK$ 等於正方形內角減去其他角，忽略了多邊形頂點共線的幾何結構。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "題目條件誤讀",
+    "student_thought_process": "學生可能將正六邊形視為正五邊形處理，導致計算出的角度與實際圖形不符。"
+   }
+  },
+  "scaffolding_hints": [
+   "先回顧正多邊形內角公式，並分別計算正方形、正五邊形及正六邊形的每個內角大小。",
+   "觀察圖中頂點 $A$ 處的角度組成：正方形的一角與兩個正多邊形的部分內角如何拼接成平角或特定角度關係。",
+   "利用 $\\angle DAB = 90^\\circ$、正五邊形在 $A$ 點的內角及正六邊形在 $A$ 點的內角，推導出 $\\angle ABK$ 的具體數值。"
+  ],
+  "quick_solution_strategy": "計算各正多邊形在頂點 A 的內角，利用平角關係求出剩餘角度即為答案。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-01",
+   "K-GEO-02"
+  ],
+  "formula_ids": [
+   "F-GEO-01",
+   "F-GEO-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

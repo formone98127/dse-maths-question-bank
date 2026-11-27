@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2019",
+  "paper": "Paper 2",
+  "qno": "25",
+  "hash": "#2019P2Q25"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "坐標平面的平移與旋轉",
+   "secondary_topics": [
+    "座標變換規則",
+    "逆時針旋轉 $90^\\circ$ 的性質"
+   ],
+   "required_formulas": [
+    "(x, y) \\rightarrow (x+dx, y+dy)",
+    "(x, y) \\xrightarrow{\\text{逆時針 }90^\\circ} (-y, x)"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "旋轉公式符號錯誤",
+    "student_thought_process": "正確算出 B(4,-2) 後，套用 (-y, x) 得到 (2, 4)，但寫成 (-(-2), -4) = (2, -4) 或混淆了座標順序，選錯 y 坐標。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "忽略平移步驟",
+    "student_thought_process": "直接對原點 A(-5,-2) 進行旋轉，得到 (2, -5)，未注意到題目要求先向右平移 9 單位至 B。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "旋轉公式應用錯誤",
+    "student_thought_process": "算出 B(4,-2) 後，錯誤認為逆時針旋轉 $90^\\circ$ 是 $(y, -x)$ 或直接記錯公式為 $(-y, -x)$ 導致結果偏差。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "首先，請計算點 $A$ 向右平移 9 單位後得到的點 $B$ 的座標。",
+   "回憶起在笛卡兒坐標系中，點 $(x, y)$ 繞原點逆時針旋轉 $90^\\circ$ 後的座標變換規則為何？",
+   "將點 $B$ 的座標代入上述旋轉規則，即可求得點 $C$ 的座標，請特別注意題目要求的是 $y$ 坐標。"
+  ],
+  "quick_solution_strategy": "先平移得 B(4,-2)，再套用公式 (-y, x) 得 C(2,4)，故 y 坐標為 4。"
+ },
+ "skills": {
+  "topic_id": "T-LIN",
+  "knowledge_point_ids": [
+   "K-LIN-01",
+   "K-LIN-02"
+  ],
+  "formula_ids": [
+   "F-LIN-01",
+   "F-LIN-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-COND"
+   },
+   "C": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

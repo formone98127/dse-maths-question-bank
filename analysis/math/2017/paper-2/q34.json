@@ -1,0 +1,92 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 2",
+  "qno": "34",
+  "hash": "#2017P2Q34"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "對數方程式與變數代換",
+   "secondary_topics": [
+    "二次方程式解法",
+    "對數定義域限制"
+   ],
+   "required_formulas": [
+    "$\\log_a b^n = n \\log_a b$",
+    "$a^{\\log_a x} = x$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略對數真數必須大於零",
+    "student_thought_process": "解出 $y$ 後直接寫答案，忘記檢查 $\\log_9 y$ 中 $y>0$ 的限制，導致接受負值解 $-1$。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "二次方程式求根錯誤",
+    "student_thought_process": "代換後得 $2u^2+u-4=0$，計算時誤算成 $(2u-1)(u+4)=0$ 或其他錯誤因式分解。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "變數代換失敗或混淆底數",
+    "student_thought_process": "嘗試直接消去 $x$ 時，錯誤地將 $\\log_9 y$ 視為線性項或誤用對數性質導致方程變形錯誤。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "觀察兩個方程式，發現 $\\log_9 y$ 同時出現，考慮設 $u = \\log_9 y$ 進行變數代換。",
+   "將原方程組轉化為關於 $u$ 和 $x$ 的二次方程式系統，並利用第一個式子表達 $x$。",
+   "解出 $u$ 後，需記得對數函數定義域要求真數 $y > 0$，請檢查所有解是否符合此條件。"
+  ],
+  "quick_solution_strategy": "設 $u=\\log_9 y$，代入得 $x=u+3$，再代回第二式解二次方程求 $u$，最後還原 $y$ 並篩選正數解。"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-01",
+   "K-EXP-02"
+  ],
+  "formula_ids": [
+   "F-EXP-01",
+   "F-EXP-02",
+   "F-EXP-03",
+   "F-EXP-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-EXP-01",
+    "formula_id": "F-EXP-01",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-EXP-01",
+    "formula_id": "F-EXP-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-EXP-01",
+    "formula_id": "F-EXP-01",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

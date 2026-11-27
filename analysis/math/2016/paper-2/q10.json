@@ -1,0 +1,91 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2016",
+  "paper": "Paper 2",
+  "qno": "10",
+  "hash": "#2016P2Q10"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "百分比應用與逆運算",
+   "secondary_topics": [
+    "連比問題",
+    "單位「1」的轉換"
+   ],
+   "required_formulas": [
+    "$\\text{原數} = \\frac{\\text{現數}}{1 \\pm \\text{百分率}}$",
+    "$\\text{漢林} = \\text{文俊} \\times 1.25$",
+    "$\\text{文俊} = \\text{佩怡} \\times (1 - 0.25)$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "逆運算順序錯誤",
+    "student_thought_process": "學生誤以為漢林比佩怡高 25%，直接用 $33360 \\div 1.25$ 計算，忽略了中間變量文俊的干擾。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤解百分比基準",
+    "student_thought_process": "學生認為漲跌 25% 會互相抵消，因此金額不變。這是常見的直覺錯誤，忽略了兩次計算的基準不同。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆漲跌方向",
+    "student_thought_process": "學生將「文俊較佩怡低」誤解為漢林較佩怡高，或者在逆推時搞反了乘除法的應用順序。"
+   }
+  },
+  "scaffolding_hints": [
+   "注意題目中有兩個不同的百分比變化，且每次變化的基準（單位「1」）都不相同。",
+   "先根據漢林的月薪與他比文俊高的比例，求出文俊的月薪。",
+   "再利用文俊的月薪與他比佩怡低的關係，反推佩怡的月薪。"
+  ],
+  "quick_solution_strategy": "由後往前倒推：先求文俊，再求佩怡。注意分母分別是 $1.25$ 與 $0.75$"
+ },
+ "skills": {
+  "topic_id": "T-PCT",
+  "knowledge_point_ids": [
+   "K-PCT-01",
+   "K-PCT-02"
+  ],
+  "formula_ids": [
+   "F-PCT-01",
+   "F-PCT-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

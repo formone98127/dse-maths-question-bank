@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2019",
+  "paper": "Paper 2",
+  "qno": "10",
+  "hash": "#2019P2Q10"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "一元二次函數圖像性質",
+   "secondary_topics": [
+    "展開式與係數關係",
+    "截距定義",
+    "點坐標驗證"
+   ],
+   "required_formulas": [
+    "$y = ax^2 + bx + c$",
+    "$x$ 截距為 $y=0$ 時的解",
+    "點 $(x,y)$ 滿足方程式"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略 I 之正確性",
+    "student_thought_process": "驗證 II 正確後，未檢查 I，誤以為 III 錯誤故選 B，或單純漏看 I 的開口方向。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤解截距定義",
+    "student_thought_process": "將 $(3-x)(x+2)$ 視為有根 $3,-2$，忘記了 $+6$ 會平移圖像，導致誤判 III。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "多重概念混淆",
+    "student_thought_process": "同時犯下 C 的錯誤且忽略 I，認為 II、III 皆對，完全未考慮常數項 $+6$ 的影響。"
+   }
+  },
+  "scaffolding_hints": [
+   "將方程式展開為 $y = ax^2 + bx + c$ 形式，觀察 $a$ 的符號以判斷開口方向。",
+   "注意 $x$ 截距是令 $y=0$ 求解，而非直接從因式 $(3-x)(x+2)$ 中讀取根。",
+   "將 $x=1$ 代入原式計算 $y$ 值，驗證是否通過該點。"
+  ],
+  "quick_solution_strategy": "展開得 $y=-x^2+x+12$，知 $a<0$ 開口向下 (I 對)；令 $y=0$ 解非 $-2,3$ (III 錯)；代入 $(1,10)$ 成立 (II 對)。"
+ },
+ "skills": {
+  "topic_id": "T-FUN",
+  "knowledge_point_ids": [
+   "K-FUN-01",
+   "K-FUN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

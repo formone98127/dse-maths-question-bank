@@ -1,0 +1,121 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "PP",
+  "paper": "Paper 1",
+  "qno": "8",
+  "hash": "#PPP1Q8"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "坐標幾何",
+   "secondary_topics": [
+    "反射與旋轉",
+    "垂直平分線",
+    "距離公式"
+   ],
+   "required_formulas": [
+    "$A'(x, y)$ 關於 $y$-軸反射為 $(-x, y)$",
+    "$B(x, y)$ 關於原點逆時針旋轉 $90^\\circ$ 為 $(-y, x)$",
+    "垂直平分線方程：$2x_1x + 2y_1y = x_1^2 + y_1^2$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 5
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "計算 $A'$ 與 $B'$ 的正確坐標。",
+    "marks": 2,
+    "common_error": "旋轉方向搞錯（順時針）或反射軸混淆，導致坐標符號錯誤。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 2,
+    "what": "由 $PA' = PB'$ 列出距離等式並平方。",
+    "marks": 1,
+    "common_error": "忘記對兩邊同時平方，或只寫出距離公式未化簡。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "展開 $(x-x_{A'})^2 + (y-y_{A'})^2$ 等項。",
+    "marks": 1,
+    "common_error": "二項式展開錯誤，特別是 $-2xy$ 類項漏掉或符號弄反。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "移項合併後方項，消去常數與平方項。",
+    "marks": 1,
+    "common_error": "未能正確將 $x^2$ 與 $y^2$ 抵消，導致出現圓方程而非直線。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "整理成一般式 $ax+by+c=0$ 並檢查。",
+    "marks": 0,
+    "common_error": "未化簡至最簡單形式或遺漏負號。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "此題結合變換與軌跡概念，考生常因旋轉方向或反射軸記憶模糊而失分，需強調圖形直覺輔助代數運算。",
+  "scaffolding_hints": [
+   "先畫出 $A'$ 和 $B'$ 的位置，確認垂直平分線在哪一側。",
+   "回憶：到兩點距離相等的點軌跡是這兩點連線的垂直平分線。",
+   "利用公式 $2xx_1 + 2yy_1 = x_1^2 + y_1^2$ 直接寫出方程，節省時間。"
+  ],
+  "quick_solution_strategy": "先求 $A'(-3,4), B'(5,-2)$；再用垂直平分線公式 $2x(5)+2y(-2)=5^2+(-2)^2 \\Rightarrow 10x-4y=29$"
+ },
+ "skills": {
+  "topic_id": "T-LOC",
+  "knowledge_point_ids": [
+   "K-LOC-01",
+   "K-LOC-02"
+  ],
+  "formula_ids": [
+   "F-LOC-01",
+   "F-LOC-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-LOC-01",
+    "formula_id": "F-LOC-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "2": {
+    "knowledge_point_id": "K-LOC-01",
+    "formula_id": "F-LOC-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-LOC-01",
+    "formula_id": "F-LOC-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-LOC-01",
+    "formula_id": "F-LOC-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-LOC-01",
+    "formula_id": "F-LOC-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

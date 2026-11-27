@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2016",
+  "paper": "Paper 2",
+  "qno": "43",
+  "hash": "#2016P2Q43"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "組合數學：受限條件選拔",
+   "secondary_topics": [
+    "排列與組合基本公式 (nCr)",
+    "加法原理與乘法原理"
+   ],
+   "required_formulas": [
+    "$\\binom{n}{r} = \\frac{n!}{r!(n-r)!}$",
+    "$\\text{總數} = \\sum (\\text{情況 A}) + \\sum (\\text{情況 B})$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "遺漏情況",
+    "student_thought_process": "只考慮了「0 女 6 男」或「1 女 5 男」其中一種情況，忘記加上另一種情況的組合數。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "計算錯誤",
+    "student_thought_process": "正確列出三種情況 (0 女，1 女，2 女) 的算式，但在計算 $\\binom{20}{6} + \\binom{20}{5}\\binom{15}{1} + \\binom{20}{4}\\binom{15}{2}$ 時發生加法或乘法運算錯誤。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "條件誤解",
+    "student_thought_process": "誤以為「至多 2 名女生」包含 3 名女生的情況，因此錯誤地將 $\\binom{15}{3}\\binom{20}{3}$ 也加入計算。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "「至多有 2 名女生」代表什麼意思？這意味著我們需要考慮哪幾種特定的性別分配情況？",
+   "請先列出所有符合條件的情況（例如：0 女、1 女、2 女），並寫出每一種情況對應的組合公式。",
+   "根據乘法原理計算每一種情況的數值，最後利用加法原理將它們加總起來。"
+  ],
+  "quick_solution_strategy": "分類討論 (0 女, 1 女, 2 女) 後分別計算組合數再加總。"
+ },
+ "skills": {
+  "topic_id": "T-COM",
+  "knowledge_point_ids": [
+   "K-COM-02",
+   "K-COM-03"
+  ],
+  "formula_ids": [
+   "F-COM-01",
+   "F-COM-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-COM-02",
+    "formula_id": "F-COM-01",
+    "ability_id": "A-CHAIN"
+   },
+   "B": {
+    "knowledge_point_id": "K-COM-02",
+    "formula_id": "F-COM-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-COM-02",
+    "formula_id": "F-COM-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 2",
+  "qno": "11",
+  "hash": "#2014P2Q11"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "測量誤差與極值",
+   "secondary_topics": [
+    "不等式處理",
+    "四捨五入原理"
+   ],
+   "required_formulas": [
+    "最小面積 = (長度 - 0.5) × (闊度 - 0.5)",
+    "最大面積 = (長度 + 0.5) × (闊度 + 0.5)"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "不等式符號方向錯誤",
+    "student_thought_process": "學生計算出正確的最小值 71.25 與最大值 89.25，但混淆了包含邊界的符號。通常「最接近」意味著誤差範圍為 ±0.5，故極限值應被包含在內，即使用 ≤ 和 < 的組合需視題目定義，此處考的是標準誤差區間定義。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤解測量誤差範圍",
+    "student_thought_process": "學生錯誤地認為誤差僅為 ±0.5 cm 直接加減，而未考慮面積是長與闊的乘積。他們計算了 (10±0.5)×(8±0.5) 但只取了中心值附近的極小誤差邏輯，或是完全搞錯了測量誤差的定義（以為只是簡單加减）。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "計算結果與符號皆錯",
+    "student_thought_process": "學生可能正確理解了誤差範圍是乘積，但計算 (10-0.5)*(8-0.5) 時算錯了數值，或者在選擇符號時完全隨機。此選項的數值 79.5 顯示學生可能只加減了一個維度的誤差 (如 10*8 ± 4)，或是計算過程出錯。"
+   }
+  },
+  "scaffolding_hints": [
+   "當長度 $L$ 與闊度 $W$ 準確至最接近的單位時，其真實值範圍分別為 $[L-0.5, L+0.5)$ 或 $(L-0.5, L+0.5]$。請思考：測量值 $10$ 代表實際長度在哪個區間？",
+   "面積 $x = \\text{長} \\times \\text{闊}$。要找出 $x$ 的範圍，需分別計算「最小可能面積」與「最大可能面積」。請問最小面積發生在什麼情況下？",
+   "將計算出的最小值與最大值代入不等式。注意：測量誤差通常定義為包含下界但不包含上界（或反之），請根據題目選項的符號邏輯判斷哪一個區間符合「最接近」的定義。"
+  ],
+  "quick_solution_strategy": "先定長闊範圍 (8.5-9.5, 10-10.5)，再算最小積與最大積，最後確認邊界符號。"
+ },
+ "skills": {
+  "topic_id": "T-NUM",
+  "knowledge_point_ids": [
+   "K-NUM-01",
+   "K-NUM-02"
+  ],
+  "formula_ids": [
+   "F-NUM-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-COND"
+   },
+   "C": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

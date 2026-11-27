@@ -1,0 +1,102 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 1M",
+  "qno": "6",
+  "hash": "#2021P1MQ6"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "指數與對數函數",
+   "secondary_topics": [
+    "二項式展開",
+    "係數比較"
+   ],
+   "required_formulas": [
+    "$e^x = 1 + x + \\frac{x^2}{2!} + \\frac{x^3}{3!} + \\frac{x^4}{4!} + \\cdots$",
+    "$(a+b)^n = \\sum_{r=0}^{n} \\binom{n}{r} a^{n-r} b^r$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 5
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "展開 $e^{-6x}$ 至 $x^4$ 項，代入 $-6x$ 計算係數。",
+    "marks": 2,
+    "common_error": "忘記階乘或代錯 $-6x$ 導致符號錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "展開 $(1-kx^2)^5$，只保留含 $x^0$ 及 $x^2$ 的項（因需乘 $x^4$）。",
+    "marks": 1,
+    "common_error": "多展開高次項或忽略二項式係數計算。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "將兩部分相乘，找出所有能產生 $x^4$ 的組合。",
+    "marks": 1,
+    "common_error": "漏掉 $e^{-6x}$ 的 $x^2$ 項與 $(1-kx^2)^5$ 的常數項相乘的情況。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "寫出 $x^4$ 總係數的表達式並令其等於 $-26$。",
+    "marks": 1,
+    "common_error": "代數運算錯誤導致方程式列錯。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "此題結合指數展開與二項式，考評報告常強調學生需熟練基本展開公式並具備處理多項式乘積時篩選特定次數項的能力。",
+  "scaffolding_hints": [
+   "先背誦 $e^x$ 的泰勒展開式前幾項。",
+   "注意 $(1-kx^2)^5$ 中只有偶次方項，與 $e^{-6x}$ 的奇次方項相乘才能得 $x^4$。",
+   "列出所有產生 $x^4$ 的路徑：$(x^0 \\cdot x^4) + (x^2 \\cdot x^2)$。"
+  ],
+  "quick_solution_strategy": "直接寫出 $e^{-6x} = 1 - 6x + 18x^2 - 36x^3 + 54x^4...$，再展開 $(1-kx^2)^5 \\approx 1-5kx^2$，相乘後取 $x^4$ 係數：$54 + (-6)(0) + (18)(-5k) = -26$。"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

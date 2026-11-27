@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 2",
+  "qno": "6",
+  "hash": "#2017P2Q6"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "一元二次函數的代數運算",
+   "secondary_topics": [
+    "偶函數與奇函數的性質",
+    "代入法求值"
+   ],
+   "required_formulas": [
+    "$f(a) - f(b)$ 的直接代入計算",
+    "$x^2$ 項為偶函數部分，$-5x$ 項為奇函數部分"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤認偶函數差值為零",
+    "student_thought_process": "學生認為 $f(x)$ 是二次函數，故 $f(2)-f(-2)$ 應像奇函數那樣抵消為 0，忽略了 $x^2$ 項在相減時會變成 $4a - 4a = 0$ 但常數與一次項未完全抵消的誤判，或是混淆了 $f(x)-f(-x)=0$ 的條件。正確應為 $(2(4)-10+k)-(2(4)+10+k) = 8-10+8+10 = -20$。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "符號處理錯誤",
+    "student_thought_process": "計算 $f(2)$ 時得 $8-10+k=-2+k$，計算 $f(-2)$ 時得 $8+10+k=18+k$。相減時應為 $(-2+k)-(18+k)=-20$。學生可能算成 $(8-10)-(8+10)= -2-18 = -20$ 但誤記符號，或將 $-5(-2)$ 算錯導致結果偏差至 16。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤解常數項影響",
+    "student_thought_process": "學生認為 $f(2)-f(-2)$ 的結果會包含 $k$，忘記了相減時 $+k$ 與 $-k$ 會互相抵消。這是對線性組合中常數項性質的誤解。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：請先分別寫出 $f(2)$ 和 $f(-2)$ 的表達式，注意代入 $-2$ 時 $x^2$ 與 $x$ 的變化。",
+   "提示 2：觀察函數結構，將 $f(x)$ 拆分為 $2x^2$（偶部）與 $-5x+k$（奇部 + 常數），思考相減時哪些項會保留。",
+   "提示 3：執行具體數字代入，計算 $(8-10+k) - (8+10+k)$，化簡後即可得到答案。"
+  ],
+  "quick_solution_strategy": "直接代入 $x=2$ 與 $x=-2$，展開後消去 $k$ 並合併同類項。"
+ },
+ "skills": {
+  "topic_id": "T-FUN",
+  "knowledge_point_ids": [
+   "K-FUN-01",
+   "K-FUN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

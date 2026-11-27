@@ -1,0 +1,92 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 1M",
+  "qno": "2",
+  "hash": "#2022P1MQ2"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "期望與方差",
+   "secondary_topics": [
+    "Poisson 分佈性質",
+    "Binomial 分佈性質"
+   ],
+   "required_formulas": [
+    "$\\operatorname{E}(aX+b) = a\\operatorname{E}(X)+b$",
+    "$\\operatorname{Var}(aX+b) = a^2\\operatorname{Var}(X)$",
+    "$\\operatorname{Var}(Y)=\\lambda$, $\\operatorname{E}(Y)=\\lambda$",
+    "$\\operatorname{Var}(X)=np(1-p)$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 5
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用方差性質求 Var(X)，再利用期望線性性質求 E(Y)。",
+    "marks": 2,
+    "common_error": "忘記 $\\operatorname{Var}(aX+b)=a^2\\operatorname{Var}(X)$ 中的平方，或算錯 $E(Y)$。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "判斷 Y 是否為 Poisson：比較 E(Y) 與 Var(Y) 是否相等。",
+    "marks": 1,
+    "common_error": "誤以為只要數值接近即可，忽略 Poisson 必須嚴格相等。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "判斷 X 是否為 Binomial：檢查 Var(X) 與 E(X) 關係是否符合 $np(1-p)$。",
+    "marks": 2,
+    "common_error": "未將 $Var(X)=E(X)(1-p)$ 代入驗證，直接猜測可能。",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "此題測試學生對隨機變數線性轉換下期望與方差的掌握，並結合分佈特性（Poisson 的均方差相等、Binomial 的方差小於期望）進行邏輯推斷，是卷一常考的綜合應用題型。",
+  "scaffolding_hints": [
+   "Hint1: 回憶 $\\operatorname{Var}(aX+b)=a^2\\operatorname{Var}(X)$ 公式中係數需平方。",
+   "Hint2: Poisson 分佈的核心特徵是 $\\operatorname{E}(Y) = \\operatorname{Var}(Y)$。",
+   "Hint3: Binomial 分佈要求 $\\operatorname{Var}(X) < \\operatorname{E}(X)$，計算兩者比值判斷是否存在合理的 $p$。"
+  ],
+  "quick_solution_strategy": "先算出 Var(X)=9, E(Y)=200-4*8.8=164.8；因 Var≠E，Y 非 Poisson；因 Var(X)=9 < E(X)=8.8 不成立（Binomial 需 Var<E），故 X 非 Binomial。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

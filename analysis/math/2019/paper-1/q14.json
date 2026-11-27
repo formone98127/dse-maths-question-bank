@@ -1,0 +1,131 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2019",
+  "paper": "Paper 1",
+  "qno": "14",
+  "hash": "#2019P1Q14"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "平面幾何",
+   "secondary_topics": [
+    "全等三角形證明",
+    "相似三角形判定與性質",
+    "畢氏定理",
+    "不等式比較"
+   ],
+   "required_formulas": [
+    "$\\triangle ABC \\cong \\triangle DEF$ (SAS, ASA, AAS)",
+    "$\\triangle ABC \\sim \\triangle DEF$ (AA)",
+    "$a^2 + b^2 = c^2$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 480,
+   "marks": 35
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用正方形性質及平行線，證明 $\\triangle BCG \\cong \\triangle CBF$ (SAS)。",
+    "marks": 8,
+    "common_error": "未能正確找出對應邊相等或夾角相等。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "證明 $\\angle BCF = \\angle DEF$ (內錯角) 及共用角，得出相似。",
+    "marks": 7,
+    "common_error": "未能識別正確的對應角導致相似關係錯誤。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "利用相似比 $\\frac{DF}{BC} = \\frac{DE}{DC}$，代入正方形邊長表示 $DF$。",
+    "marks": 8,
+    "common_error": "計算錯誤或未能正確將 $DE$ 用 $\\ell$ 和 $AE$ 表示。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "利用畢氏定理於 $\\triangle CDE$，以 $\\ell$ 及 $AE$ 表出 $DF$ 的最終形式。",
+    "marks": 7,
+    "common_error": "忘記將 $CD=\\ell$ 代入或展開平方時出錯。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "比較 $AE$ 與 $DF$ 的表達式，利用不等式性質判斷大小關係。",
+    "marks": 5,
+    "common_error": "未能正確化簡分式或忽略正數條件導致結論錯誤。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 6,
+    "what": "清晰解釋為何 $AE > DF$，並檢查所有步驟的邏輯完整性。",
+    "marks": 5,
+    "common_error": "僅寫出結論而未提供充分解釋或邏輯跳躍。",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "根據考評報告，考生普遍能處理證明部分，但在利用畢氏定理進行代數運算及比較不等式時失分嚴重，顯示在幾何與代數結合的應用能力上仍有提升空間。",
+  "scaffolding_hints": [
+   "提示 1：正方形對角線平分直角，且平行線會產生相等的內錯角。",
+   "提示 2：全等證明需找兩邊夾一角 (SAS)，注意 $BG=CF$ 及 $BC=BF$ 的關係。",
+   "提示 3：將 $DF$ 表示為含 $AE$ 的式子後，觀察分母與分子的大小關係即可判斷不等式。"
+  ],
+  "quick_solution_strategy": "先證全等得邊角關係，再用相似比建立 $DF$ 與 $BC, DE$ 比例，最後畢氏定理代換並比較大小。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-05"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "6": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

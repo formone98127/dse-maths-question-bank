@@ -1,0 +1,121 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2019",
+  "paper": "Paper 1",
+  "qno": "13",
+  "hash": "#2019P1Q13"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓的性質",
+   "secondary_topics": [
+    "同弧所對之弦切角/內接角關係",
+    "平行線性質",
+    "扇形周界計算"
+   ],
+   "required_formulas": [
+    "$\\text{圓周長} = 2\\pi r$",
+    "$\\text{扇形弧長} = \\frac{\\theta}{360} \\times 2\\pi r$",
+    "$\\text{扇形周界} = \\text{弧長} + 2r$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 5
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用圓周角定理求 $\\angle ABC$ 及 $\\angle BOC$。",
+    "marks": 2,
+    "common_error": "忘記 $AC$ 為直徑導致誤算直角，或混淆同弧角度關係。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "利用平行線性質 ($BC \\parallel OD$) 求 $\\angle CBF$。",
+    "marks": 1,
+    "common_error": "錯用內錯角或同位角關係，導致角度計算錯誤。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "確認 $\\angle BOC$ 為扇形圓心角並計算弧長。",
+    "marks": 1,
+    "common_error": "直接使用半圓周長公式而忽略圓心角大小。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "加上兩條半徑計算扇形完整周界。",
+    "marks": 1,
+    "common_error": "只計算弧長而忘記加上 $2 \\times OB$。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 5,
+    "what": "比較周界數值與 $60$ 並解釋原因。",
+    "marks": 1,
+    "common_error": "計算結果正確但未進行大小比較或省略解釋步驟。",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "考評報告指出考生常混淆扇形周界與面積，解題時務必明確列出「弧長 + 兩半徑」的計算過程以區分概念。",
+  "scaffolding_hints": [
+   "Hint1: $AC$ 是直徑，所以 $\\angle ABC = 90^\\circ$。",
+   "Hint2: $\\angle AED$ 與 $\\angle ABC$ 是同弧所對的圓周角嗎？不，它們關係需透過互補角或同弧分析。",
+   "Hint3: 扇形周界 = 弧長 + 2 條半徑，不要只算弧長！"
+  ],
+  "quick_solution_strategy": "先求 $\\angle ABC=90^\\circ$，再得 $\\angle BOC$。利用平行線得 $\\angle CBF$。最後計算 $L = \\text{弧} + 2r$ 並比較。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-01",
+   "K-GEO-02"
+  ],
+  "formula_ids": [
+   "F-GEO-01",
+   "F-GEO-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "5": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

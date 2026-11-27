@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2018",
+  "paper": "Paper 1",
+  "qno": "3",
+  "hash": "#2018P1Q3"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "數系",
+   "secondary_topics": [
+    "近似值",
+    "有效數字"
+   ],
+   "required_formulas": [
+    "上捨入：若小數部分 $\\ge 0.5$ 則進位，否則捨去。",
+    "下捨入：直接捨去小數部分。",
+    "有效數字：從左起第一個非零數字開始計數。"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 60,
+   "marks": 3
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "將 $265.473$ 上捨入至最接近的整數。",
+    "marks": 1,
+    "common_error": "誤以為 $0.473 < 0.5$ 而向下取整，或忽略小數部分大小直接四捨五入。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "將 $265.473$ 下捨入至一位小數。",
+    "marks": 1,
+    "common_error": "未執行「直接捨去」動作，反而進行了四捨五入或上捨入操作。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "將 $265.473$ 捨入至二位有效數字。",
+    "marks": 1,
+    "common_error": "計數錯誤，例如從零開始或跳過非零數字，導致結果如 $270$ 而非 $270$（視情況）。",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "考評報告指出考生常混淆「上捨入」與「下捨入」，此題旨在釐清兩者定義：上捨入取最接近值（四捨五入），下捨入則強制捨去小數部分。",
+  "scaffolding_hints": [
+   "Hint1: 上捨入是找最近鄰居，下捨入是單向丟棄。",
+   "Hint2: 有效數字從第一個非零位開始算起，與小數位數無關。",
+   "Hint3: 檢查題目關鍵字「最接近」、「一位小數」、「二位有效數字」。"
+  ],
+  "quick_solution_strategy": "上捨入看 $0.473<0.5$ 取 $265$；下捨入直接留 $265.4$；有效數字前兩位為 $2,6$，第三位 $5\\ge5$ 進位得 $270$"
+ },
+ "skills": {
+  "topic_id": "T-NUM",
+  "knowledge_point_ids": [
+   "K-NUM-01"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

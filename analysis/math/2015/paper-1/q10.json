@@ -1,0 +1,126 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2015",
+  "paper": "Paper 1",
+  "qno": "10",
+  "hash": "#2015P1Q10"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "變數與關係",
+   "secondary_topics": [
+    "正比例",
+    "常數項",
+    "代入求值",
+    "不等式判斷"
+   ],
+   "required_formulas": [
+    "$S = a + bn$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "設 $S = a + bn$，代入 $n=10, S=10600$ 及 $n=6, S=9000$ 列聯立方程。",
+    "marks": 2,
+    "common_error": "混淆正變係數與常數項位置，或計算解方程時出錯。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "解聯立方程求出 $a$ 與 $b$ 的值，寫出完整的收入公式。",
+    "marks": 1,
+    "common_error": "只寫出 $a,b$ 值而未寫出最終公式 $S = ...$"
+   },
+   {
+    "step": 3,
+    "what": "將 $n=20$ 代入公式計算，得出 (a) 問答案。",
+    "marks": 1,
+    "common_error": "代入時抄錯數值或計算錯誤。"
+   },
+   {
+    "step": 4,
+    "what": "令 $S=18000$，解出對應的 $n$ 值並檢查合理性。",
+    "marks": 2,
+    "common_error": "忽略 $n$ 必須為正整數的限制條件。"
+   },
+   {
+    "step": 5,
+    "what": "比較求得的 $n$ 是否為合理數值，並解釋為何不可能。",
+    "marks": 1,
+    "common_error": "未明確說明「因為 $n$ 不是正整數」導致扣分。"
+   },
+   {
+    "step": 6,
+    "what": "整理答案，確保單位、步驟清晰且符合題意要求。",
+    "marks": 1,
+    "common_error": "遺漏解釋部分或格式混亂影響閱讀。"
+   }
+  ],
+  "exam_report_insight": "考生需清楚區分常數項與變數項，並在判斷可能性時強調實際情境中 $n$ 必須為正整數的邏輯限制。",
+  "scaffolding_hints": [
+   "提示：正變意味著 $S$ 隨 $n$ 增加而增加，但並非純比例。",
+   "知識：聯立方程法是解決此類線性關係問題的核心工具。",
+   "破題：先寫出一般式 $S = a + bn$，再代入已知條件求解參數。"
+  ],
+  "quick_solution_strategy": "設 $S=a+bn$，代兩組數據解得 $a,b$；(b) 令 $S=18000$ 解 $n$，若 $n$ 非正整數則不可能。"
+ },
+ "skills": {
+  "topic_id": "T-VAR",
+  "knowledge_point_ids": [
+   "K-VAR-01"
+  ],
+  "formula_ids": [
+   "F-VAR-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-ALG",
+    "error_category": null
+   },
+   "3": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-ALG",
+    "error_category": null
+   },
+   "4": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-ALG",
+    "error_category": null
+   },
+   "5": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-ALG",
+    "error_category": null
+   },
+   "6": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-ALG",
+    "error_category": null
+   }
+  }
+ }
+}

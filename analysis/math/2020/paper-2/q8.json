@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2020",
+  "paper": "Paper 2",
+  "qno": "8",
+  "hash": "#2020P2Q8"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "直線方程式與不等式",
+   "secondary_topics": [
+    "斜率概念",
+    "截距符號判斷"
+   ],
+   "required_formulas": [
+    "直線一般式 $Ax + By + C = 0$ 的斜率為 $-A/B$",
+    "y 軸截距公式 $C/B$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略III",
+    "student_thought_process": "學生正確判斷I與II，但誤以為 $ac < b$ 成立。可能未將 $b=-c-ac$ 代入比較大小，或錯誤認為截距關係直接導出此不等式。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略I",
+    "student_thought_process": "學生正確判斷II與III，但忽略了 $c < 0$。可能誤判 $L_2$ 的 y 軸截距符號，或未能從圖形看出直線與 y 軸交點在負半軸。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略I與II",
+    "student_thought_process": "學生認為三個陳述皆成立，可能未仔細檢查 $L_1$ 斜率絕對值大於 1 的條件，導致錯誤推導出 $ab < 1$。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察圖形中直線與 x 軸、y 軸的交點位置，判斷截距 $b, c$ 的正負號。",
+   "將兩直線方程化為斜截式 $y=mx+k$，比較斜率大小以驗證 $ab < 1$ 是否成立。",
+   "利用 $L_2$ 的截距關係 $b = -c - ac$，結合已知符號判斷 $ac < b$ 的真偽。"
+  ],
+  "quick_solution_strategy": "由圖得 $b<0, c<0$ (I對)；斜率比較得 $ab<1$ (II對)；代入關係式檢驗 III 錯。"
+ },
+ "skills": {
+  "topic_id": "T-LIN",
+  "knowledge_point_ids": [
+   "K-LIN-01",
+   "K-LIN-02"
+  ],
+  "formula_ids": [
+   "F-LIN-01",
+   "F-LIN-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

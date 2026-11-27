@@ -1,0 +1,94 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 2",
+  "qno": "1",
+  "hash": "#2013P2Q1"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "指數法則與冪數運算",
+   "secondary_topics": [
+    "底數轉換 (將 27 與 9 轉為 3 的冪)",
+    "冪的冪法則 ($(a^m)^n = a^{mn}$)",
+    "同底數冪相乘法則 ($a^m \\cdot a^n = a^{m+n}$)"
+   ],
+   "required_formulas": [
+    "$27 = 3^3$",
+    "$9 = 3^2$",
+    "$(ab)^n = a^n b^n$",
+    "$(a^m)^n = a^{mn}$",
+    "$a^m \\cdot a^n = a^{m+n}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "冪的冪指數乘法錯誤",
+    "student_thought_process": "將 $(27\\cdot9^{n+1})^3$ 展開時，對 $27^3$ 算成 $3^9$ (正確)，但對 $9^{3(n+1)}$ 的指數計算出錯。可能誤以為 $9^n$ 的冪次運算後係數變化不對，或將 $3\\cdot(n+1)$ 算錯為 $6n+12$ 而非 $6n+15$"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆底數與指數關係",
+    "student_thought_process": "未將 27 和 9 統一轉換為底數 3，直接對原式進行錯誤的冪次運算。可能誤認為 $27\\cdot9$ 的底數是 9 或 27，導致指數係數變成 9 而非 6。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "冪的冪指數加法錯誤",
+    "student_thought_process": "在處理 $27^3$ 時，正確算出 $3^9$。但在合併 $3^{3(n+1)}$ 與 $3^9$ 時，將指數相加：$3n+3 + 9 = 3n+12$ 再乘以 3? 不，這裡是誤將 $3^{3n+3}$ 的係數 3 與常數項 9 相加變成 18，或是將 $3\\times(n+1)$ 算成 $3n+9$ 再加 $9$ 得到 $3n+18$ 再乘錯。更可能是將 $(n+1)$ 展開後指數係數搞混，算出 $9n+18$"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：觀察題目中的數字 27 與 9，它們都可以表示為底數 3 的冪。試著將它們轉換成以 3 為底的指數形式。",
+   "提示 2：利用冪的運算法則 $(ab)^n = a^n b^n$ 和 $(a^m)^n = a^{mn}$，先處理括號內的乘法，再處理外層的立方。",
+   "提示 3：將 $27$ 寫成 $3^3$，將 $9$ 寫成 $3^2$，代入原式後，注意指數的分配與加法運算步驟。"
+  ],
+  "quick_solution_strategy": "將 27 換為 $3^3$，9 換為 $3^2$；利用 $(ab)^n=a^n b^n$ 展開；合併同底數冪之指數。"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-02",
+   "K-EXP-07"
+  ],
+  "formula_ids": [
+   "F-EXP-03",
+   "F-EXP-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-EXP-02",
+    "formula_id": "F-EXP-03",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-EXP-02",
+    "formula_id": "F-EXP-03",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-EXP-02",
+    "formula_id": "F-EXP-03",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 2",
+  "qno": "7",
+  "hash": "#2013P2Q7"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "一元二次函數圖形與對稱軸",
+   "secondary_topics": [
+    "拋物線頂點公式",
+    "圖像讀取能力"
+   ],
+   "required_formulas": [
+    "x = -b / (2a)",
+    "對稱軸定義：通過頂點的垂直直線"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "讀圖誤判頂點位置",
+    "student_thought_process": "學生將圖像與 x 軸的右側交點（約 x=4）誤認為是頂點，或將左側交點（x=0）與另一交點的平均值算錯，導致選出 x=2。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "頂點公式符號錯誤",
+    "student_thought_process": "學生使用公式 x = b / (2a) 而忘記負號，或計算時將分母中的係數搞混，導致結果偏大至 x=5。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆對稱軸與頂點座標",
+    "student_thought_process": "學生誤以為對稱軸是水平直線，寫成 y=... 的形式，顯示未理解拋物線對稱軸為垂直於 x 軸的直線。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察圖像中拋物線的開口方向與頂點的大致位置（最高點）。",
+   "回憶一元二次函數 y=ax^2+bx+c 的對稱軸公式為何，注意係數 a 與 b 的位置。",
+   "利用圖形上兩個明顯的 x 軸截距（根），計算它們的中點來驗證對稱軸的位置。"
+  ],
+  "quick_solution_strategy": "從圖像讀取頂點橫坐標或兩根中點，代入公式 x = -b/(2a) 即可。"
+ },
+ "skills": {
+  "topic_id": "T-FUN",
+  "knowledge_point_ids": [
+   "K-FUN-01",
+   "K-FUN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-COND"
+   },
+   "C": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

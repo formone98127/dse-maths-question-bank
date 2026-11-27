@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2016",
+  "paper": "Paper 2",
+  "qno": "35",
+  "hash": "#2016P2Q35"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "線性規劃與直線方程式",
+   "secondary_topics": [
+    "平行線性質",
+    "一次函數圖形特徵"
+   ],
+   "required_formulas": [
+    "斜率公式 m = (y2-y1)/(x2-x1)",
+    "直線方程式 y - y1 = m(x - x1)"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤判斜率正負",
+    "student_thought_process": "學生可能認為 x 越小 y 越大，直接選最高點 P。但忽略了目標函數係數：x 的係數為 -5（負），y 的係數為 7（正）。需同時考慮兩變量變化方向。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆極值位置",
+    "student_thought_process": "學生知道要找最大值，但錯誤地認為目標函數圖形斜率較陡時，最大值仍在 y 最大的點。未將目標直線與可行域邊界比較斜率大小。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略 x 係數影響",
+    "student_thought_process": "學生只關注 y 值最大點，完全忽略了 -5x 項。若 x 增大能大幅降低總值，則最大值不會在 x 最大的 R 或 Q，也不會單純由 y 決定。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：將目標式 $7y-5x+3=K$ 視為一族斜率固定的直線，思考當 K 增大時，直線如何移動。",
+   "提示 2：計算可行域四個頂點的坐標關係，特別是 $PQ$ 與 $SR$ 平行於 x 軸的意義，以及左右邊界的斜率。",
+   "提示 3：比較目標直線斜率 $m=7/5$ 與可行域右側邊界（連接 Q 與 R）的斜率大小，判斷哪個頂點最先接觸到最上方的平行線族。"
+  ],
+  "quick_solution_strategy": "將目標式視為斜率為 7/5 的直線，沿著 y 軸正方向平移，觀察最後離開可行域的頂點為何。"
+ },
+ "skills": {
+  "topic_id": "T-FUN",
+  "knowledge_point_ids": [
+   "K-FUN-01",
+   "K-FUN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2019",
+  "paper": "Paper 2",
+  "qno": "6",
+  "hash": "#2019P2Q6"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "有效數字與四捨五入",
+   "secondary_topics": [
+    "小數位數概念",
+    "科學記號與前導零"
+   ],
+   "required_formulas": [
+    "有效數字定義：從第一個非零數字開始計數"
+   ],
+   "bloom_taxonomy_level": "理解",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "混淆小數位數與有效數字",
+    "student_thought_process": "學生認為只要看最後一位小數，0.06557 四捨五入到二位小數是 0.066，但題目選項寫 0.065，學生可能誤以為直接截斷或計算錯誤。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤解有效數字起始點",
+    "student_thought_process": "學生忘記前導零不算有效數字，將 0.065 視為兩位有效數字（實際是三位：6,5,7...），或認為只有 6 和 5 算。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "四捨五入方向錯誤",
+    "student_thought_process": "學生計算 0.06557 四捨五入到三位小數時，看到第四位是 7，應進位成 0.0656，但選項 C 寫的是正確數值卻標註為「三位小數」，學生可能誤以為這是唯一正確表達。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "回憶有效數字的定義：從第一個非零數字開始計算。",
+   "觀察範圍上下限，確定 x 的可能值落在哪個區間。",
+   "比較各選項的表述是否與 x 的實際取值範圍一致。"
+  ],
+  "quick_solution_strategy": "確認 0.0656 為三位有效數字且涵蓋整個區間。"
+ },
+ "skills": {
+  "topic_id": "T-PCT",
+  "knowledge_point_ids": [
+   "K-PCT-01",
+   "K-PCT-02"
+  ],
+  "formula_ids": [
+   "F-PCT-01",
+   "F-PCT-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-COND"
+   },
+   "B": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

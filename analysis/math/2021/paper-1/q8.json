@@ -1,0 +1,129 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 1",
+  "qno": "8",
+  "hash": "#2021P1Q8"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "平面幾何",
+   "secondary_topics": [
+    "相似三角形判定",
+    "畢氏定理",
+    "面積計算"
+   ],
+   "required_formulas": [
+    "\\frac{AC}{DB} = \\frac{AE}{DE} = \\frac{CE}{BE}",
+    "a^2 + b^2 = c^2"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 180,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用對頂角相等及已知條件，證明兩三角形相似。",
+    "marks": 2,
+    "common_error": "忘記提及對頂角相等（\\angle AEC = \\angle DEB）導致證明不完整。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 2,
+    "what": "計算 $AC^2 + CE^2$ 與 $AE^2$ 的數值關係。",
+    "marks": 1,
+    "common_error": "計算錯誤或混淆邊長，未能發現滿足畢氏定理。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "根據畢氏定理逆定理，論證 $\\triangle ACE$ 為直角三角形。",
+    "marks": 1,
+    "common_error": "只寫出數值相等卻未明確指出這是直角三角形的判定依據。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 4,
+    "what": "利用相似比計算 $DE$ 與 $BE$ 的長度。",
+    "marks": 1,
+    "common_error": "比例設定錯誤（如將對應邊搞混）或算術運算出錯。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "計算 $\\triangle BDE$ 的底 $BE$ 與高 $BD$，求面積。",
+    "marks": 1,
+    "common_error": "忘記將相似比應用於所有邊長，導致 $BE$ 長度錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "檢查單位及最終答案格式是否正確。",
+    "marks": 0,
+    "common_error": "未標註面積單位 $\\text{cm}^2$ 或計算過程跳步導致扣分。",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "考評報告顯示大部分考生能掌握相似三角形判定及畢氏定理應用，但需注意在證明步驟中必須完整列出對頂角條件，以及在計算相似比時避免對應邊混淆。",
+  "scaffolding_hints": [
+   "提示 1：觀察圖形中相交直線形成的對頂角關係。",
+   "提示 2：回憶相似三角形的 AA 判定法則（兩角相等）。",
+   "提示 3：計算三邊平方和時，留意 $25^2 + 65^2$ 是否等於 $60^2$"
+  ],
+  "quick_solution_strategy": "先證對頂角加已知角得相似；再驗畢氏定理定直角；最後用相似比求未知邊算面積。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-05"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "2": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "4": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

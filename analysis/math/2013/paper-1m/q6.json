@@ -1,0 +1,131 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 1M",
+  "qno": "6",
+  "hash": "#2013P1MQ6"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "統計：置信區間",
+   "secondary_topics": [
+    "大數定律近似正態分佈",
+    "Z 值查表",
+    "標準誤計算"
+   ],
+   "required_formulas": [
+    "\\hat{p} \\pm Z_{\\alpha/2} \\sqrt{\\frac{\\hat{p}(1-\\hat{p})}{n}}"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "計算樣本比例 \\hat{p} = 75/120 = 0.625",
+    "marks": 1,
+    "common_error": "未簡化分數或計算錯誤導致 \\hat{p} 不準確",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "確認樣本量足夠大，可使用正態近似",
+    "marks": 0,
+    "common_error": "無",
+    "error_category": null
+   },
+   {
+    "step": 3,
+    "what": "查表得 90% 置信水準對應之 Z 值為 1.645",
+    "marks": 1,
+    "common_error": "誤用 95% 或 99% 的 Z 值（如 1.96 或 2.576）",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "計算標準誤 \\sqrt{\\frac{0.625 \\times 0.375}{120}}",
+    "marks": 1,
+    "common_error": "忘記開根號或分子分母顛倒",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "計算邊界誤差 \\text{ME} = 1.645 \\times \\text{標準誤}",
+    "marks": 0,
+    "common_error": "無",
+    "error_category": null
+   },
+   {
+    "step": 6,
+    "what": "寫出最終區間 (\\hat{p} - \\text{ME}, \\hat{p} + \\text{ME})",
+    "marks": 1,
+    "common_error": "未保留小數至合理位數或格式錯誤",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "此題測試學生對大樣本比例置信區間公式的熟練度，常見失分點在於 Z 值選錯或小數運算不精確。",
+  "scaffolding_hints": [
+   "先計算 \\hat{p} = x/n",
+   "記得標準誤公式需開根號",
+   "90% 置信水準對應雙側尾機率各 5%，Z=1.645"
+  ],
+  "quick_solution_strategy": "算出 \\hat{p}=0.625，查 Z=1.645，套公式計算區間上下限。"
+ },
+ "skills": {
+  "topic_id": "T-STA",
+  "knowledge_point_ids": [
+   "K-STA-01",
+   "K-STA-02"
+  ],
+  "formula_ids": [
+   "F-STA-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-ALG",
+    "error_category": null
+   },
+   "3": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-ALG",
+    "error_category": null
+   },
+   "6": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

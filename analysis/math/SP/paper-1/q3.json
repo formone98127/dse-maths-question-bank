@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "SP",
+  "paper": "Paper 1",
+  "qno": "3",
+  "hash": "#SPP1Q3"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "因式分解",
+   "secondary_topics": [
+    "十字相乘法",
+    "提公因式法",
+    "組項法"
+   ],
+   "required_formulas": [
+    "$ax^2 + bx + c = (x + p)(x + q)$ 類型的二次型展開與逆運算"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 3
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "處理 (a)：將 $3m^2 - mn - 2n^2$ 視為關於 m 的二次式，利用十字相乘法分解。",
+    "marks": 1,
+    "common_error": "忘記將 n 視為常數，直接嘗試對 m,n 同時因式分解導致錯誤配對。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "處理 (b)：觀察前三項與後兩項的公因式，先將前三項結果代入並提 $-(m-n)$。",
+    "marks": 1,
+    "common_error": "忽略前部分已分解結果，直接對四項盲目使用十字相乘或組項失敗。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "完成 (b)：將提公因式後的剩餘部分再次因式分解，得出最終答案。",
+    "marks": 1,
+    "common_error": "提完公因式後，剩餘的二次式無法繼續分解或計算錯誤。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "此題測試學生處理多變數二次式的靈活性，特別是將其中一變數視為常數的技巧，以及組項法的應用能力。",
+  "scaffolding_hints": [
+   "Hint1: 在 (a) 中，試著把 n 當作數字（如 1），只對 m 的係數進行十字相乘。",
+   "Hint2: 在 (b) 中，先計算 $3m^2 - mn - 2n^2$ 的結果會是什麼形式？",
+   "Hint3: 觀察 $-m+n$ 可以寫成 $-(m-n)$，這與前面的結果有關係嗎？"
+  ],
+  "quick_solution_strategy": "(a) 十字相乘得 $(3m+2n)(m-n)$；(b) 代入後提 $-(m-n)$ 再分解剩餘項。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-03"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

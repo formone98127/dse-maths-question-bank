@@ -1,0 +1,86 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2020",
+  "paper": "Paper 1",
+  "qno": "5",
+  "hash": "#2020P1Q5"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "百分數",
+   "secondary_topics": [
+    "一元一次方程",
+    "百分比應用"
+   ],
+   "required_formulas": [
+    "$\\text{男} = \\text{女} + 28\\% \\times \\text{女}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "設女申請者人數為 $x$，表示男申請者人數為 $1.28x$",
+    "marks": 1,
+    "common_error": "直接將差值 91 當作百分比計算，未設未知數",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 2,
+    "what": "列出方程：$1.28x - x = 91$"
+   },
+   {
+    "step": 3,
+    "what": "化簡方程得 $0.28x = 91$"
+   },
+   {
+    "step": 4,
+    "what": "解出 $x$ 的值，即女申請者人數"
+   },
+   {
+    "step": 5,
+    "what": "計算男申請者人數：$1.28 \\times x$"
+   },
+   {
+    "step": 6,
+    "what": "檢查答案是否符合題意（男比女多 91 人）"
+   }
+  ],
+  "exam_report_insight": "考生需清楚區分「比較基準」與「被比較對象」，避免將差值誤認為百分比數值。",
+  "scaffolding_hints": [
+   "提示：題目說「男比女多 28%」，這 28% 是相對於誰的？",
+   "知識：百分數問題通常設基準量為 $x$，比較量為 $(1 \\pm \\text{百分比})x$",
+   "破題：利用「差值 = 男 - 女」建立等式求解"
+  ],
+  "quick_solution_strategy": "設女為 $x$，則男為 $1.28x$，差值 $0.28x=91$，解出 $x$ 後求 $1.28x$"
+ },
+ "skills": {
+  "topic_id": "T-PCT",
+  "knowledge_point_ids": [
+   "K-PCT-01",
+   "K-PCT-02"
+  ],
+  "formula_ids": [
+   "F-PCT-01",
+   "F-PCT-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

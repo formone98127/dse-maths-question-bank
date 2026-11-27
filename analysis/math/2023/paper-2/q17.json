@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2023",
+  "paper": "Paper 2",
+  "qno": "17",
+  "hash": "#2023P2Q17"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "平行四邊形面積性質與相似三角形",
+   "secondary_topics": [
+    "比例線段",
+    "共高三角形面積比等於底之比"
+   ],
+   "required_formulas": [
+    "Area = base \\times height",
+    "\\frac{Area_1}{Area_2} = \\frac{base_1}{base_2} (same height)",
+    "\\triangle PXY \\sim \\triangle RYQ"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤將四邊形面積直接視為答案",
+    "student_thought_process": "學生可能認為題目給的 $58$ 就是所求，或是將 $32+58=90$ 後隨意減去某個數字得到 $40$，未理解圖形分割關係。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "比例計算錯誤或混淆面積加減",
+    "student_thought_process": "學生算出 $\\triangle PQR$ 總面積後，可能錯誤地將 $58$ 當作 $\\triangle RSY$ 的一部分，或在求 $\\triangle QYR$ 時計算出錯。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "未利用平行線性質建立相似",
+    "student_thought_process": "學生嘗試用全等或錯誤的幾何定理，忽略了 $PX \\parallel RQ$ 導致的 $\\triangle PXY \\sim \\triangle RYQ$。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察平行四邊形中 $PQ \\parallel RS$，這意味著 $\\triangle PXY$ 與 $\\triangle RYQ$ 具有什麼幾何關係？",
+   "利用相似三角形對應邊成比例，找出 $PY:YR$ 的比值。注意：面積比等於底邊比的平方嗎？不，這裡是共高三角形，面積比等於底之比。",
+   "既然知道 $\\triangle PXY$ 與 $\\triangle RYQ$ 的面積關係及相似比，能否求出 $\\triangle QYR$ 的面積？再觀察 $\\triangle QYR$ 與 $\\triangle RSY$ 的關係。"
+  ],
+  "quick_solution_strategy": "由 $S_{\\triangle PXY}=32, S_{QRYX}=58 \\Rightarrow S_{\\triangle PQY}=90$。利用相似比求 $PY:YR=4:5$，進而得 $S_{\\triangle QYR}=61.25$？不，應先求 $S_{\\triangle PQR}$ 總面積。正確路徑：$S_{\\triangle PQY} = 32+58=90$。因 $\\triangle PXY \\sim \\triangle RYQ$，且 $S_{\\triangle PXY}=32, S_{\\triangle QYR}$ 未知。其實應先求 $S_{\\triangle PQR}$。由 $S_{\\triangle PQY}=90$，$S_{\\triangle PYR}$ 未知。重新思考：$S_{\\triangle PQR} = S_{\\triangle PQY} + S_{\\triangle QYR}$。利用相似比 $k=PY/YR$。$S_{\\triangle PXY}/S_{\\triangle RYQ} = k^2$？不，是 $S_{\\triangle PXY}/S_{\\triangle RYQ} = (PX/RQ)^2$ 若相似。正確解法：$S_{\\triangle PQY}=90$。設 $PY:YR=k$。則 $S_{\\triangle PQY}:S_{\\triangle QYR} = k:1$？不，是共高。$S_{\\triangle PQY}/S_{\\triangle QYR} = PY/YR$。需先求相似比。由 $S_{\\triangle PXY}=32$ 和 $S_{QRYX}=58$，得 $S_{\\triangle PQY}=90$。因 $PX \\parallel RQ$，故 $\\triangle PXY \\sim \\triangle RYQ$。設相似比為 $k$，則 $S_{\\triangle RYQ} = 32/k^2$。又 $S_{\\triangle PQY}/S_{\\triangle QYR} = PY/YR = k$？不，是 $PY/YR = \\sqrt{32/S_{\\triangle RYQ}}$。此題關鍵在於 $S_{\\triangle PQR} = S_{\\triangle PQY} + S_{\\triangle QYR}$ 且 $S_{\\triangle PQY}/S_{\\triangle QYR} = PY/YR$。同時 $PY/YR = \\sqrt{32/S_{\\triangle RYQ}}$。解得 $S_{\\triangle RYQ}=50$。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-05"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

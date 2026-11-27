@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 2",
+  "qno": "11",
+  "hash": "#2024P2Q11"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "集合與百分比",
+   "secondary_topics": [
+    "代數式建立",
+    "邏輯推理"
+   ],
+   "required_formulas": [
+    "總人數 = 女生人數 + 男生人數",
+    "部分數 = 總數 × 百分比"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "混淆男女比例計算",
+    "student_thought_process": "學生誤以為女生中外地生佔比直接等於男生外地生佔比，或錯誤將 40% 視為總體比例而非女生比例，導致算出 20%。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤解「相等」條件",
+    "student_thought_process": "學生未能正確理解「外地生總數=女生總數」這一關鍵等式，可能將男生外地生比例直接加到某個數字上得到 45。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "未考慮男生非外地生",
+    "student_thought_process": "學生在計算男生部分時，可能忽略了「30% 男生為外地生」意味著還有 70% 不是，導致過度估算或邏輯斷層得出 80。"
+   }
+  },
+  "scaffolding_hints": [
+   "設全校總人數為 $1$，請先分別表示出女生總數、男生總數。",
+   "根據題目條件「外地生人數與女生人數相等」，建立一個關於 $\beta$ 的方程式。",
+   "解此一元一次方程式即可求得 $\beta$ 的值。"
+  ],
+  "quick_solution_strategy": "設總人數 $1$，女生 $0.4$，男生 $0.6$；外地生總數 $=0.4$，故男生外地生 $=0.4-0.3\\times0.6=0.22$，則 $\\beta=22/0.6\\approx 55$"
+ },
+ "skills": {
+  "topic_id": "T-PCT",
+  "knowledge_point_ids": [
+   "K-PCT-01",
+   "K-PCT-02"
+  ],
+  "formula_ids": [
+   "F-PCT-01",
+   "F-PCT-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

@@ -1,0 +1,91 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 2",
+  "qno": "38",
+  "hash": "#2017P2Q38"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "幾何：長方形與直角三角形",
+   "secondary_topics": [
+    "畢氏定理",
+    "相似三角形性質",
+    "坐標幾何概念"
+   ],
+   "required_formulas": [
+    "$a^2 + b^2 = c^2$",
+    "$\\frac{Area}{Base} = Height$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "坐標設定錯誤導致距離計算偏差",
+    "student_thought_process": "學生可能將 $E$ 點誤設為 $(30,0)$ 而非在斜邊上，或計算 $AC$ 長度時出錯，導致最終結果變成 $5\\sqrt{29}$。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤解直角三角形面積公式應用",
+    "student_thought_process": "學生嘗試用勾股定理但忽略了 $E$ 點在斜邊上的限制，直接假設 $DE$ 為高或誤算斜邊投影關係。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "單位或數值讀取錯誤",
+    "student_thought_process": "學生可能看錯圖中 $AB$ 或 $BC$ 的長度，將 $30\\text{ cm}$ 誤讀為其他數值，導致計算結果偏離正確答案。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：觀察長方形 $ABCD$ 與對角線 $AC$，確認 $E$ 點位於哪條直線上。",
+   "提示 2：利用直角三角形面積公式 $Area = \\frac{1}{2} \\times Base \\times Height$，思考如何將 $DE$ 視為高來建立關係式。",
+   "提示 3：先計算對角線 $AC$ 的全長，再根據 $AE=30$ 求出 $EC$，最後在 $\\triangle DEC$ 中應用畢氏定理求解 $DE$"
+  ],
+  "quick_solution_strategy": "利用面積法求高 $DE$：先算 $AC$ 長，得 $EC$，再用勾股定理於 $\\triangle DEC$。"
+ },
+ "skills": {
+  "topic_id": "T-LIN",
+  "knowledge_point_ids": [
+   "K-LIN-01",
+   "K-LIN-02"
+  ],
+  "formula_ids": [
+   "F-LIN-01",
+   "F-LIN-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

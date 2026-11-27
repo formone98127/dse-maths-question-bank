@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2015",
+  "paper": "Paper 2",
+  "qno": "32",
+  "hash": "#2015P2Q32"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "對數函數與線性關係",
+   "secondary_topics": [
+    "指數法則",
+    "坐標軸截距的意義"
+   ],
+   "required_formulas": [
+    "$\\log_a(xy) = \\log_a x + \\log_a y$",
+    "$\\log_a(x^n) = n\\log_a x$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "指數係數混淆",
+    "student_thought_process": "將 $x$ 與 $y$ 的斜率係數搞反，認為 $x$ 對應較大的指數，忽略了截距對應的常數項。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤用加法法則",
+    "student_thought_process": "忘記對數乘法變加法，卻錯誤地將指數與底數直接相加，混淆了 $\\log(xy)$ 與 $(\\log x)(\\log y)$。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "截距計算錯誤",
+    "student_thought_process": "正確識別係數關係，但在將截距值 $3$ 代入時，誤算為 $3^2+3^3$ 或其他錯誤組合。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察圖形：當 $\\log_3 x = 0$ 與 $\\log_3 y = 0$ 時，對應的點分別在哪裡？",
+   "利用對數性質將 $\\log_3 x + \\log_3 y$ 合併為單一的對數式，再轉化為指數形式。",
+   "代入圖形上的兩個明顯坐標點（如截距點），驗證哪個選項成立。"
+  ],
+  "quick_solution_strategy": "由圖得 $\\log_3 x + \\log_3 y = k$，合併後取指數得 $xy^k=3^k$，再對齊係數與常數項。"
+ },
+ "skills": {
+  "topic_id": "T-FUN",
+  "knowledge_point_ids": [
+   "K-FUN-01",
+   "K-FUN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

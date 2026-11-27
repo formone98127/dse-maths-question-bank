@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2012",
+  "paper": "Paper 2",
+  "qno": "25",
+  "hash": "#2012P2Q25"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-16",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "直線斜率與截距的符號判斷",
+   "secondary_topics": [
+    "一次函數圖形性質",
+    "係數與圖像關係"
+   ],
+   "required_formulas": [
+    "$y = mx + c$ (斜截式)",
+    "$ax+y=b \\Rightarrow y = -ax+b$",
+    "斜率 $m = -\\frac{a}{1} = -a$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "IV 判斷錯誤",
+    "student_thought_process": "學生正確判斷了 I ($a<0$), II ($a<c$), III ($b>d$)，但在判斷 IV ($ad>bc$) 時，誤以為兩直線交點在第一象限意味著 $ad$ 必然大於 $bc$，忽略了斜率與截距的乘積關係取決於具體數值大小而非僅看圖形位置。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "IV 判斷錯誤",
+    "student_thought_process": "學生正確判斷了 I ($a<0$), II ($a<c$), IV ($ad>bc$)，但在比較 $y$ 軸截距時，將兩直線與 $y$ 軸交點的高低看反，錯誤地認為下方直線的截距較大（即誤判 III），導致遺漏了 III。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "I 與 II 判斷錯誤",
+    "student_thought_process": "學生在分析斜率時出錯，認為直線向右上方傾斜意味著斜率為正（對應 $-a>0 \\Rightarrow a<0$），但在此題中 $L_1, L_2$ 均向左上傾斜，斜率為負。學生可能混淆了 $ax+y=b$ 的係數符號與直線走向的關係，錯誤地認為 $a$ 必須大於 $c$（即 II 錯誤），或者完全誤判了斜率的正負導致 I 也判斷錯誤。"
+   }
+  },
+  "scaffolding_hints": [
+   "Hint 1 啟發：觀察直線圖形走向，若直線向左上方傾斜，其斜率 $m$ 為負數；將方程轉換為 $y=mx+k$ 形式來辨識係數符號。",
+   "Hint 2 知識：對於 $ax+y=b$，斜率 $m=-a$，$y$ 軸截距為 $b$。請分別找出兩直線的斜率與 $y$ 軸截距，並比較它們的大小關係。",
+   "Hint 3 破題：判斷 IV ($ad>bc$) 時，考慮將不等式變形為 $\\frac{a}{c} > \\frac{b}{d}$ (假設 $c,d>0$)，或直接代入斜率與截距的符號關係來驗證不等式方向。"
+  ],
+  "quick_solution_strategy": "將方程化為 $y=-ax+b$，由圖形知斜率為負故 $-a<0 \\Rightarrow a<0$ (I 對)；$L_1$ 較陡且向左傾，$L_2$ 較平，故 $|-a| > |-c|$ 且斜率皆負，推導出 $a<c$ (II 對)；$y$ 軸截距 $L_1$ 高於 $L_2$ 故 $b>d$ (III 對)；由 $a<0, c>0$ 或具體數值代入驗證 IV。"
+ },
+ "skills": {
+  "topic_id": "T-LIN",
+  "knowledge_point_ids": [
+   "K-LIN-02",
+   "K-LIN-03"
+  ],
+  "formula_ids": [
+   "F-LIN-03"
+  ],
+  "ability_ids": [
+   "A-GRAPH",
+   "A-COND"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-LIN-02",
+    "formula_id": "F-LIN-03",
+    "ability_id": "A-COND"
+   },
+   "B": {
+    "knowledge_point_id": "K-LIN-02",
+    "formula_id": "F-LIN-03",
+    "ability_id": "A-GRAPH"
+   },
+   "D": {
+    "knowledge_point_id": "K-LIN-03",
+    "formula_id": "F-LIN-03",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

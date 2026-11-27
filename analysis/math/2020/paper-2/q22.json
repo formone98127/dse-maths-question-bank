@@ -1,0 +1,91 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2020",
+  "paper": "Paper 2",
+  "qno": "22",
+  "hash": "#2020P2Q22"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓周角定理與弦長關係",
+   "secondary_topics": [
+    "直角三角形性質",
+    "正弦定律"
+   ],
+   "required_formulas": [
+    "$\\sin(\\theta) = \\frac{對邊}{斜邊}$",
+    "$\\angle AOB = 2 \\times \\angle ACB$ (圓周角與圓心角關係)",
+    "$a^2 + b^2 = c^2$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤以為弦長與角度成正比",
+    "student_thought_process": "學生可能直接假設 $AB=10$ 對應 $90^\\circ$，則 $CD$ 對應 $40^\\circ$ 時，錯誤地按比例計算 $40/90 * 10 \\approx 4.4$，四捨五入選 A，忽略了半徑非固定值或錯用比例關係。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "計算圓心角時出錯",
+    "student_thought_process": "學生正確算出 $\\angle AOB = 180^\\circ$，但在求半徑時使用錯誤公式或計算 $\\sin(45^\\circ)$ 時數值輸入錯誤，導致最終 $CD$ 長度算出約為 6。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆圓內接正方形性質",
+    "student_thought_process": "學生可能誤以為 $AB$ 是直徑，將圖形視為半圓的一部分，或者錯誤地認為 $CD$ 長度應大於 $BC$ 很多，隨意估算選 D。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：觀察 $\\triangle ABC$，已知兩邊與夾角為直角，你能否求出圓的半徑？",
+   "提示 2：回憶圓周角定理，圓心角是對應弧所對圓周角的幾倍？這如何幫助你將角度轉化為弦長計算？",
+   "提示 3：在 $\\triangle COD$ 中，利用正弦定律或餘弦定律，結合剛求得的半徑與圓心角，即可解出 $CD$"
+  ],
+  "quick_solution_strategy": "先由直角三角形 $ABC$ 求半徑 $R$；再將圓周角 $40^\\circ$ 轉為圓心角 $80^\\circ$；最後用正弦定律求弦長。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-01",
+   "K-GEO-02"
+  ],
+  "formula_ids": [
+   "F-GEO-01",
+   "F-GEO-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

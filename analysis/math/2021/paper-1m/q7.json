@@ -1,0 +1,130 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 1M",
+  "qno": "7",
+  "hash": "#2021P1MQ7"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "微分法",
+   "secondary_topics": [
+    "商法則",
+    "極值問題",
+    "指數函數求導"
+   ],
+   "required_formulas": [
+    "\\frac{d}{dx}(\\frac{u}{v}) = \\frac{v u' - u v'}{v^2}",
+    "\\frac{d}{dx}(e^{kx}) = k e^{kx}"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 7
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "設 u=e^x, v=x^3-x+2，計算 u' 與 v'。",
+    "marks": 1,
+    "common_error": "忘記 e^x 的導數是它本身，或 v' 展開錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "代入商法則公式寫出 dy/dx 的完整表達式。",
+    "marks": 1,
+    "common_error": "分母平方漏掉，或分子符號搞反（應為 v u' - u v'）。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "令 dy/dx = 0，解出臨界點 x 的值。",
+    "marks": 1,
+    "common_error": "無法解超越方程 e^x(x^2-x+1) - (x^3-x+2)e^x=0，應化簡為 e^x(2-x)=0。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "檢查端點 x=0 與 x=5 的 y 值。",
+    "marks": 1,
+    "common_error": "忽略題目範圍 0≤x≤5，只算臨界點而漏掉端點。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 5,
+    "what": "比較所有關鍵點的 y 值，找出最大與最小值。",
+    "marks": 1,
+    "common_error": "計算代入錯誤，或誤以為臨界點必為極大/小值而忽略端點比較。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "清晰寫出最大與最小值的數對 (x,y) 或僅 y 值。",
+    "marks": 2,
+    "common_error": "未標明哪一個是最大、哪一個是最小，或單位/範圍寫錯。",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "此題測試微分與極值結合，常見失分在於解方程時化簡不當及忽略端點比較，反映學生對定義域邊界意識薄弱。",
+  "scaffolding_hints": [
+   "提示 1：先將 dy/dx 寫成 e^x 乘上多項式形式，再約分。",
+   "提示 2：e^x 永大於 0，故只需解括號內多項式等於 0。",
+   "提示 3：極值必發生在 dy/dx=0 或區間端點，務必兩者都算。"
+  ],
+  "quick_solution_strategy": "化簡 dy/dx 後得 e^x(2-x)/(v^2)，臨界點 x=2；比較 x=0,2,5 三點的 y 值即得答案。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "5": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

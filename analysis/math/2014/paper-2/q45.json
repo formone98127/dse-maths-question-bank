@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 2",
+  "qno": "45",
+  "hash": "#2014P2Q45"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "統計量之性質 (變異數)",
+   "secondary_topics": [
+    "平均數",
+    "離差平方和"
+   ],
+   "required_formulas": [
+    "Var(X) = \\frac{1}{n}\\sum_{i=1}^{n}(x_i - \\bar{x})^2",
+    "Var(aX+b) = a^2 Var(X)"
+   ],
+   "bloom_taxonomy_level": "理解",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤以為減法會改變離散程度",
+    "student_thought_process": "學生認為將每個數減去 14 會使數據集中，因此變異數變小。忽略了平移不影響離散度。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "誤將常數項平方加到變異數上",
+    "student_thought_process": "學生計算 (14-0)^2 = 196，然後可能錯誤地加上原變異數或誤解公式，得出 23 等無邏輯結果。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆標準差與變異數的平移性質",
+    "student_thought_process": "學生將常數 14 直接平方 (196) 並誤以為這是新變異數，或是將 14 視為縮放係數 a=14。"
+   }
+  },
+  "scaffolding_hints": [
+   "回想方差的定義：它是數據與平均數離差平方的平均值。",
+   "考慮平移性質：若每個數據加上或減去同一常數 $k$，新數據的平均數也會改變 $k$，但相對離差不變。",
+   "根據公式 Var$(X+k) =$ Var$(X)$ 進行判斷。"
+  ],
+  "quick_solution_strategy": "利用方差平移不變性：Var$(a+b)=$ Var$(b)$，故答案為 9。"
+ },
+ "skills": {
+  "topic_id": "T-STA",
+  "knowledge_point_ids": [
+   "K-STA-01"
+  ],
+  "formula_ids": [
+   "F-STA-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

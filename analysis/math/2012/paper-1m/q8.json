@@ -1,0 +1,133 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2012",
+  "paper": "Paper 1M",
+  "qno": "8",
+  "hash": "#2012P1MQ8"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "概率",
+   "secondary_topics": [
+    "期望值計算",
+    "獨立事件判定"
+   ],
+   "required_formulas": [
+    "$\\sum P(X=x) = 1$",
+    "$E(X) = \\sum x \\cdot P(X=x)$",
+    "$P(A \\cap B) = P(A) \\cdot P(B)$ (若獨立)"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 300,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用機率總和為 1 建立 a+b=0.5 的方程。",
+    "marks": 1,
+    "common_error": "忘記將已知數值相加導致方程錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "利用期望公式建立 5.5 的方程並聯立求解 a,b。",
+    "marks": 2,
+    "common_error": "計算加權和時漏乘某個 x 值或算錯小數。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "計算 P(F) 即 X 大於等於 4 的機率總和。",
+    "marks": 1,
+    "common_error": "不等號方向搞錯，把小於 4 的加進去。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 4,
+    "what": "計算 P(G) 即 X 小於 8 的機率總和。",
+    "marks": 1,
+    "common_error": "範圍界定錯誤，例如把 9 也算進去了。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 5,
+    "what": "找出 F 與 G 的交集事件並計算其機率。",
+    "marks": 1,
+    "common_error": "交集範圍判斷錯誤，未同時滿足兩個條件。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 6,
+    "what": "比較 P(F∩G) 與 P(F)P(G) 判斷是否獨立並說明。",
+    "marks": 1,
+    "common_error": "只寫結論未寫出比較過程或計算結果不等於。",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "此題測試學生對離散隨機變數基本性質的掌握，特別是期望值的定義與獨立事件的判定邏輯，常見失分點在於解方程組時的計算錯誤及事件範圍界定不清。",
+  "scaffolding_hints": [
+   "Recall that the sum of all probabilities must equal 1.",
+   "Use the definition of Expected Value: E(X) = Σ(x * P(x)).",
+   "Check the ranges carefully for events F and G."
+  ],
+  "quick_solution_strategy": "先由總和為 1 得 a+b=0.5，再代入期望公式解方程組；接著分別計算 F、G 及交集機率，最後比較乘積與交集值。"
+ },
+ "skills": {
+  "topic_id": "T-PROB",
+  "knowledge_point_ids": [
+   "K-PROB-01",
+   "K-PROB-02"
+  ],
+  "formula_ids": [
+   "F-PROB-01",
+   "F-PROB-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "4": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "5": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "6": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

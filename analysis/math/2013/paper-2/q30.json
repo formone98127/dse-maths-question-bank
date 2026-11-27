@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 2",
+  "qno": "30",
+  "hash": "#2013P2Q30"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓形圖解讀與比例推理",
+   "secondary_topics": [
+    "百分比計算",
+    "角度與扇形面積關係"
+   ],
+   "required_formulas": [
+    "扇形角度 = 360^\\circ \\times 百分比",
+    "總盈利 = 單項盈利 / 該項百分比"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "混淆絕對值與相對比例",
+    "student_thought_process": "誤以為兩店鉛筆扇形角度相同代表銷售金額相同，忽略了兩店總銷售額（圓面積）可能不同。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "誤算未知數 k 的百分比",
+    "student_thought_process": "錯誤假設 Y 店總和為 100% 直接減去已知項，未考慮 X 店的數據或誤讀圖表標註。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "角度與百分比轉換錯誤",
+    "student_thought_process": "將 Y 店鉛筆的百分比誤用為 X 店的角度計算，或忘記 360^\\circ 的總和係數。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：圓形圖中的扇形大小代表該店「總盈利」的一定比例，而非絕對金額。",
+   "提示 2：比較兩店同一項商品時，需考慮兩店總銷售額是否相等。",
+   "提示 3：利用 X 店已知數據（原子筆、筆記簿、間尺）的百分比和，推導出鉛筆的百分比以驗證選項 B。"
+  ],
+  "quick_solution_strategy": "計算 X 店各項目百分比總和，若原子筆 + 筆記簿 < 間尺 + 鉛筆則選 B；檢查 Y 店數據排除 C、D。"
+ },
+ "skills": {
+  "topic_id": "T-STA",
+  "knowledge_point_ids": [
+   "K-STA-01",
+   "K-STA-02"
+  ],
+  "formula_ids": [
+   "F-STA-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-COND"
+   },
+   "C": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

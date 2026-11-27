@@ -1,0 +1,130 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2015",
+  "paper": "Paper 1M",
+  "qno": "4",
+  "hash": "#2015P1MQ4"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "概率",
+   "secondary_topics": [
+    "條件概率",
+    "獨立事件"
+   ],
+   "required_formulas": [
+    "$P(A|B) = \\frac{P(A \\cap B)}{P(B)}$",
+    "$P(\\text{all } n \\text{ independent}) = p_1 \\times p_2 \\times \\dots \\times p_n$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 300,
+   "marks": 7
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "定義事件：第4包為7點且前3包均為3點。",
+    "marks": 2,
+    "common_error": "忘記前3包必須全是3點，僅計算第4包概率。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "計算步驟1：求前3包全為3點且第4包為7點的聯合概率。",
+    "marks": 1,
+    "common_error": "將獨立事件概率相加而非相乘。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "定義事件：總分>=20點（可換獎券）。",
+    "marks": 1,
+    "common_error": "忽略不同組合方式，如3+7+3+7與7+3+3+7。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "計算步驟2：列出所有符合總分>=20的開包組合及其概率。",
+    "marks": 1,
+    "common_error": "遺漏組合或重複計算相同組合。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 5,
+    "what": "計算步驟3：將符合條件的組合概率相加得總概率。",
+    "marks": 1,
+    "common_error": "計算錯誤導致最終答案偏差。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "計算步驟4：利用條件概率公式求第(c)問答案。",
+    "marks": 1,
+    "common_error": "分母使用錯誤，未使用步驟2的總概率。",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "此題測試學生處理多階段獨立事件及條件概率的能力，常見失誤在於未能系統性地列出所有滿足總分條件的組合。",
+  "scaffolding_hints": [
+   "先確定每包出現3點或7點的固定概率。",
+   "思考哪些數字組合相加會大於等於20。",
+   "注意(c)問是條件概率，需回顧(b)問的結果作為分母。"
+  ],
+  "quick_solution_strategy": "先算(a)的特定序列概率；(b)枚舉所有總分>=20的排列並加總；(c)直接用(a)的分子除以(b)的分母。"
+ },
+ "skills": {
+  "topic_id": "T-PROB",
+  "knowledge_point_ids": [
+   "K-PROB-04"
+  ],
+  "formula_ids": [
+   "F-PROB-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "5": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

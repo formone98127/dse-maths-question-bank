@@ -1,0 +1,103 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "SP",
+  "paper": "Paper 1",
+  "qno": "5",
+  "hash": "#SPP1Q5"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "一元一次方程",
+   "secondary_topics": [
+    "代數表達式",
+    "邏輯推理"
+   ],
+   "required_formulas": [
+    "$3W + D = 84$",
+    "$W + D = 36$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "設贏場數為 W，和場數為 D，列出總分與總場數方程。",
+    "marks": 1,
+    "common_error": "未設未知數直接列式或忘記輸球得 0 分條件。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 2,
+    "what": "利用「無輸」條件得出 $W + D = 36$，代入消去 D。",
+    "marks": 1,
+    "common_error": "錯誤解出 $D = 36 - W$ 時計算失誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "將 $D = 36 - W$ 代入 $3W + D = 84$ 得 $3W + (36 - W) = 84$。",
+    "marks": 1,
+    "common_error": "括號忘記分配符號，如寫成 $3W + 36 - W = 84$ 卻算錯。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "合併同類項解得 $2W = 48$，故 $W = 24$，作答完整。",
+    "marks": 1,
+    "common_error": "解出 $W=24$ 後忘記寫「贏取 24 場」或單位錯誤。",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "考評局常強調學生需將文字資訊轉化為數學模型，此題考驗設變量與聯立方程能力，屬基礎但易因粗心扣分之類型。",
+  "scaffolding_hints": [
+   "Hint1: 題目說「無輸」，表示所有比賽非贏即和。",
+   "Hint2: 用 W 代表贏場數，D 代表和場數，總分公式為 $3W+D$。",
+   "Hint3: 由 $W+D=36$ 可表達 $D=36-W$，代入總分式即可解出 W。"
+  ],
+  "quick_solution_strategy": "設贏 W 場，和 D 場；由無輸得 $W+D=36\\Rightarrow D=36-W$；代入 $3W+D=84$ 得 $2W+36=84\\Rightarrow W=24$"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

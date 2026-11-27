@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2015",
+  "paper": "Paper 2",
+  "qno": "39",
+  "hash": "#2015P2Q39"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "三角函數圖像分析",
+   "secondary_topics": [
+    "週期與頻率關係",
+    "正弦函數平移"
+   ],
+   "required_formulas": [
+    "$ T = \\frac{360}{k} $ (其中 $T$ 為週期，$k$ 為角頻率係數)",
+    "$ y = \\sin(kx + \\theta) $"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "週期判斷錯誤導致 k 值選錯且符號搞混",
+    "student_thought_process": "學生可能誤判圖形寬度為一個完整週期，算出 k=2。接著看相位，將左移誤認為負角度或混淆平移方向，選出 -30°。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "週期判斷錯誤導致 k 值選錯且符號搞混",
+    "student_thought_process": "學生誤判圖形寬度為一個完整週期，算出 k=2。接著看相位，將左移誤認為正角度，或混淆標準正弦函數起點與圖像起點的關係。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "週期判斷正確但相位符號計算錯誤",
+    "student_thought_process": "學生正確算出圖形寬度為 360°，推得 k=2。但在處理相位時，將圖像向左平移（負方向）誤算成正角度，或忘記標準正弦起點在 y 軸上的位置。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "觀察圖形中一個完整波形的水平跨度，計算其長度即為週期 $T$。",
+   "利用公式 $T = \\frac{360}{k}$ 將求得的週期 $T$ 代入，解出常數 $k$ 的值。",
+   "比較圖形與標準 $y=\\sin(x)$ 的起點位置：圖形在 $x=-30$ 時開始上升，代表向左平移了 $30^\\circ$，請將此轉換為相位的正負號。"
+  ],
+  "quick_solution_strategy": "先由圖形寬度定週期求 k，再比較起點位置定相位符號。"
+ },
+ "skills": {
+  "topic_id": "T-TRI",
+  "knowledge_point_ids": [
+   "K-TRI-04"
+  ],
+  "formula_ids": [
+   "F-TRI-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-TRI-04",
+    "formula_id": "F-TRI-04",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-TRI-04",
+    "formula_id": "F-TRI-04",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-TRI-04",
+    "formula_id": "F-TRI-04",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

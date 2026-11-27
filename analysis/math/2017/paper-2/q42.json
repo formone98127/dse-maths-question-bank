@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 2",
+  "qno": "42",
+  "hash": "#2017P2Q42"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "組合數學",
+   "secondary_topics": [
+    "排列與組合的基本定義",
+    "乘法原理"
+   ],
+   "required_formulas": [
+    "$\\binom{n}{r} = \\frac{n!}{r!(n-r)!}$",
+    "$\\binom{n}{k} = \\binom{n}{n-k}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "計算錯誤導致結果過小",
+    "student_thought_process": "正確算出學生組合$\\binom{13}{5}$，但教師部分誤算為$\\binom{6}{4}=6$而非$15$，或忘記乘以兩者的積。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤用排列公式$P(n,r)$",
+    "student_thought_process": "混淆組合與排列，對學生或教師使用$P(13,5)$或$P(6,4)$，導致結果暴增。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "誤讀題目為全排列",
+    "student_thought_process": "將選出隊伍視為有順序的排列，直接計算$13\\times12\\times\\dots\\times8 \\times 6\\times5\\times4\\times3$。"
+   }
+  },
+  "scaffolding_hints": [
+   "此題涉及從不同群體中分別選取成員，應考慮將兩個獨立的選擇過程相乘。",
+   "回想組合公式$\\binom{n}{k}$代表從$n$個元素中選出$k$個且不計順序的方法數。",
+   "先計算選出 5 名學生的方法數，再計算選出 4 名教師的方法數，最後相乘得到總隊數。"
+  ],
+  "quick_solution_strategy": "分別計算$\\binom{13}{5}$與$\\binom{6}{4}$，然後將兩結果相乘。"
+ },
+ "skills": {
+  "topic_id": "T-COM",
+  "knowledge_point_ids": [
+   "K-COM-02",
+   "K-COM-03"
+  ],
+  "formula_ids": [
+   "F-COM-01",
+   "F-COM-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-COM-02",
+    "formula_id": "F-COM-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-COM-02",
+    "formula_id": "F-COM-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-COM-02",
+    "formula_id": "F-COM-01",
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

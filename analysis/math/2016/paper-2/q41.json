@@ -1,0 +1,91 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2016",
+  "paper": "Paper 2",
+  "qno": "41",
+  "hash": "#2016P2Q41"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓與直線之交點及中點",
+   "secondary_topics": [
+    "圓的標準式方程式",
+    "直線的斜率與垂直關係",
+    "弦的中點性質"
+   ],
+   "required_formulas": [
+    "$x^2+y^2+Dx+Ey+F=0$ 化為 $(x-h)^2+(y-k)^2=r^2$",
+    "若直線 $L$ 與圓交於 $P,Q$，則 $PQ$ 中點 $M$ 滿足 $OM \\perp PQ$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "符號處理錯誤",
+    "student_thought_process": "求出圓心 $(0,4)$ 後，代入直線 $2x-y-6=0$ 解得 $y=-2$。但在計算斜率乘積或向量時，將圓心坐標 $y=4$ 誤算成 $-4$，導致最終結果符號錯誤。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "方程式配方失誤",
+    "student_thought_process": "將圓方程式 $x^2+y^2-8y-14=0$ 配方時，把 $-8y$ 變成 $(y-4)^2$ 後忘記減去常數項 $16$，直接令 $r^2=-14+16=2$。此步驟正確，但後續求中點時，可能誤讀題目或計算圓心座標出錯，將 $y$ 坐標算成 $-2$。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略垂直關係",
+    "student_thought_process": "直接將直線 $y=2x-6$ 與圓聯立解二元一次方程組，求出兩個交點座標後取平均數。由於計算量大且容易出錯，學生可能因不耐煩而隨意猜測或算錯符號，得到 $4$"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：將圓的一般式方程式配方，找出圓心 $(h,k)$ 與半徑。",
+   "提示 2：回憶幾何性質，圓心與弦中點的連線必垂直於該弦（直線）。",
+   "提示 3：利用圓心坐標與直線斜率關係，建立新直線方程式求交點，或直接代入計算 $y$ 值。"
+  ],
+  "quick_solution_strategy": "配方得圓心 $(0,4)$，過圓心作直線之垂線 $y-4=-\\frac{1}{2}x$，與原直線聯立求解即可。"
+ },
+ "skills": {
+  "topic_id": "T-LIN",
+  "knowledge_point_ids": [
+   "K-LIN-01",
+   "K-LIN-02"
+  ],
+  "formula_ids": [
+   "F-LIN-01",
+   "F-LIN-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-COND"
+   },
+   "D": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

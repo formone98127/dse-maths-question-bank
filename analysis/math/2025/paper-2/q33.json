@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2025",
+  "paper": "Paper 2",
+  "qno": "33",
+  "hash": "#2025P2Q33"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "對數函數與指數關係",
+   "secondary_topics": [
+    "線性方程式截距",
+    "變量代換"
+   ],
+   "required_formulas": [
+    "$\\log_{a^b} c = \\frac{1}{b}\\log_a c$",
+    "$y - y_0 = m(x - x_0)$",
+    "$y = mx^n \\Rightarrow \\log_y = n \\log_x + C$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆截距與係數關係",
+    "student_thought_process": "學生誤將垂直截距 12 當作指數 n，或錯誤認為水平截距直接影響 n 的符號而未考慮底數轉換。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "底數換算錯誤",
+    "student_thought_process": "學生在處理 $\\log_{25}x$ 時，未正確將底數 25 轉換為 $5^2$，導致係數計算偏差。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "忽略截距定義",
+    "student_thought_process": "學生誤解水平軸截距為 $x=2$ 時對應的 $y$ 值非零，或混淆了 $x$ 與 $\\log x$ 的變量關係。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：將題目中的對數式子轉換成同一底數（例如以 5 為底），觀察 $y$ 與 $\\log x$ 之間的線性關係。",
+   "提示 2：利用線性方程式的截距形式 $y = mx + c$，其中垂直截距為 $c$，水平截距需代入 $y=0$ 求解對應自變量。",
+   "提示 3：將得到的線性關係式與 $\\log y = n \\log x + k$ 對照，找出指數 $n$ 的係數對應關係。"
+  ],
+  "quick_solution_strategy": "換底後得 $\\log_5 y = \\frac{1}{2}\\log_5 x + c$，利用截距求 $c$ 與斜率，對照 $y=mx^n$ 取對數後的係數。"
+ },
+ "skills": {
+  "topic_id": "T-FUN",
+  "knowledge_point_ids": [
+   "K-FUN-01",
+   "K-FUN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

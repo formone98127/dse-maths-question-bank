@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 2",
+  "qno": "27",
+  "hash": "#2017P2Q27"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓的方程式與幾何性質",
+   "secondary_topics": [
+    "中垂線方程式",
+    "直線方程式係數比較"
+   ],
+   "required_formulas": [
+    "(x-h)^2 + (y-k)^2 = r^2",
+    "AP=BP 表示 P 在 AB 的中垂線上"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "符號混淆",
+    "student_thought_process": "算出中垂線係數後，直接將圓心坐標代入時搞錯正負號，或誤以為 k 是半徑相關數值而選錯符號。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "圓心坐標計算錯誤",
+    "student_thought_process": "將 $x^2-6x$ 配方時，忘記除以 2 的係數關係，導致圓心 x 坐標算成 3 而非正確值，進而影響 k 的正負。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "忽略相異點條件",
+    "student_thought_process": "未理解 A,B 為圓上任意兩點，P 軌跡僅取決於 AB 中垂線與圓心關係，卻嘗試用特定弦長計算導致方向錯誤。"
+   }
+  },
+  "scaffolding_hints": [
+   "AP=BP 表示 P 點位於連接 A、B 兩點的線段之垂直平分線上。",
+   "垂直平分線的方程式恆過圓心，且其法向量與弦 AB 平行（或透過圓心與弦中點關係思考）。",
+   "將題目給出的直線 $x+2y+k=0$ 與由圓心導出的垂直平分線方程式比較係數即可求 k。"
+  ],
+  "quick_solution_strategy": "先配方得圓心 (3,2)，因 P 軌跡過圓心，代入 x=3,y=2 至直線式解 k。"
+ },
+ "skills": {
+  "topic_id": "T-LOC",
+  "knowledge_point_ids": [
+   "K-LOC-01",
+   "K-LOC-02"
+  ],
+  "formula_ids": [
+   "F-LOC-01",
+   "F-LOC-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-LOC-01",
+    "formula_id": "F-LOC-01",
+    "ability_id": "A-COND"
+   },
+   "C": {
+    "knowledge_point_id": "K-LOC-01",
+    "formula_id": "F-LOC-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-LOC-01",
+    "formula_id": "F-LOC-01",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

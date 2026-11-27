@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2015",
+  "paper": "Paper 2",
+  "qno": "14",
+  "hash": "#2015P2Q14"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "誤差分析與不等式",
+   "secondary_topics": [
+    "測量準確度",
+    "極值問題"
+   ],
+   "required_formulas": [
+    "$w_{min} = w_{true} - \\frac{1}{2}\\delta$",
+    "$n_{max} = \\lfloor \\frac{w_{total\\_min}}{w_{unit\\_max}} \\rfloor$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "低估總重量",
+    "student_thought_process": "學生計算出總重量下限為 4.5kg，但將每包最大重量誤算為 10g (而非 10.5g)，導致 $n=450$。若再考慮四捨五入邏輯混亂，可能得出更小的數值如 429。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略誤差範圍",
+    "student_thought_process": "學生認為「準確至最接近的 kg」意味著重量就是 5kg，直接計算 $5000 \\div 10 = 500$。忽略了測量誤差對極值取決的關鍵影響。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "高估總重量或單位換算錯誤",
+    "student_thought_process": "學生正確找出總重量下限 4.5kg，但在計算每包最大容量時，可能誤用 $10.5g$ 卻算錯除法，或者將 $4.5kg$ 轉換為 $4500g$ 後除以 $10g$ 得到 $450$ 但為了湊整數選了接近的錯誤值；另一可能是將上限 $5.5kg$ 當作基礎卻算成 $579$ (即 $5500/10=550$ 附近的誤差判斷錯誤)。最常見的是用總重下限除以單包最小重量 ($4500/9.5 \\approx 473$) 或混淆上下限。若選 D，通常是計算 $5.5kg / 10g = 550$ 附近但方向搞錯，或是將 $4.5kg$ 誤算為 $4.59kg$ 等。在此情境下，D 常源於未考慮「最接近」的定義範圍導致計算偏差。"
+   }
+  },
+  "scaffolding_hints": [
+   "思考：當我們說一個數值準確至最接近的單位時，其真實值的範圍是多少？例如 $5$ kg 代表什麼區間？",
+   "提示：為了讓分成的包數 $n$ 最大，總重量應該取最小值，而每包的重量應該取最大值。請分別找出這兩個極限值。",
+   "引導：將找到的總重量最小值（單位換算成克）除以每包的最大可能重量，並向下取整 (floor) 得到答案。"
+  ],
+  "quick_solution_strategy": "總重範圍 $[4.5, 5.5]$ kg，單包範圍 $[9.5, 10.5]$ g。求 $n_{max}$ 需用總重下限除以單包上限並向下取整：$\\lfloor 4500/10.5 \\rfloor$。"
+ },
+ "skills": {
+  "topic_id": "T-PCT",
+  "knowledge_point_ids": [
+   "K-PCT-01",
+   "K-PCT-02"
+  ],
+  "formula_ids": [
+   "F-PCT-01",
+   "F-PCT-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

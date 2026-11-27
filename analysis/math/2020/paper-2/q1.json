@@ -1,0 +1,92 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2020",
+  "paper": "Paper 2",
+  "qno": "1",
+  "hash": "#2020P2Q1"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "指數法則與分數化簡",
+   "secondary_topics": [
+    "負指數的定義",
+    "冪的冪 (Power of a Power)",
+    "係數的乘法"
+   ],
+   "required_formulas": [
+    "$a^m \\cdot a^n = a^{m+n}$",
+    "$(a^m)^n = a^{mn}$",
+    "$a^{-n} = \\frac{1}{a^n}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "冪的冪指數運算錯誤",
+    "student_thought_process": "學生將 $((3x^{-5})^{-2})$ 誤算為 $3^{-2} \\cdot x^{10}$ 但忘記處理係數，或錯誤認為 $(\\dots)^{-2}$ 會變成加號。更可能的是在計算 $6 \\div 3^2$ 時出錯，直接得出 $54$ 而忽略了分母，或是將指數相加而非相乘導致結果膨脹。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "係數運算錯誤",
+    "student_thought_process": "學生正確算出分母指數部分為 $x^{10}$，但在處理係數時，錯誤地將 $6 \\div 3^2$ 計算為 $\\frac{2}{3}$ 卻忘記了分子原本的 $x$ 項或混淆了運算順序，導致多餘的 $x^8$ 出現在分子。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "分數化簡與係數處理錯誤",
+    "student_thought_process": "學生正確算出指數部分為 $x^{10}$ 並移至分子變為 $x^{-10}$ (即分母 $x^{10}$)，但在處理係數 $6 \\div 9$ 時，錯誤地簡化為 $\\frac{2}{3}$ 卻忘記了分母的 $x^9$ 來源（應為 $x^{10}$ 除以某項？不，正確是 $x^{10}$ 在分母。此處學生可能算出 $x^{-10}$ 但指數寫錯成 $-9$，或是將 $6/3=2$ 後忘記平方。最可能是算出係數為 $2/3$ 且指數為 $-9$，顯示在處理 $(x^{-5})^{-2}=x^{10}$ 時誤算為 $x^9$。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：觀察分母中的複合冪 $(3x^{-5})^{-2}$，請先運用「冪的冪」法則處理指數，將負指數轉為正指數。",
+   "提示 2：處理完指數後，你將得到一個形如 $\\frac{6}{3^2} \\cdot x^{\\dots}$ 的式子，請專注於數值係數的除法運算。",
+   "提示 3：確認最終結果中 $x$ 的指數是否為 $-9$（即分母上的 $x^9$），並檢查係數是否約分為最簡分數。"
+  ],
+  "quick_solution_strategy": "先將分母冪次展開得 $9x^{10}$，再與分子 $6x$ 相除，注意負指數移至分母。"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-02",
+   "K-EXP-07"
+  ],
+  "formula_ids": [
+   "F-EXP-03",
+   "F-EXP-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-EXP-02",
+    "formula_id": "F-EXP-03",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-EXP-02",
+    "formula_id": "F-EXP-03",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-EXP-02",
+    "formula_id": "F-EXP-03",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

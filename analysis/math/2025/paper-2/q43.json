@@ -1,0 +1,91 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2025",
+  "paper": "Paper 2",
+  "qno": "43",
+  "hash": "#2025P2Q43"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "組合計數與條件機率",
+   "secondary_topics": [
+    "超幾何分佈 (Hypergeometric Distribution)",
+    "互斥事件加法原理",
+    "總排列數計算"
+   ],
+   "required_formulas": [
+    "$\\binom{n}{k}$ 組合公式",
+    "$P(E) = \\frac{N(E)}{N_{total}}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤以為是獨立事件",
+    "student_thought_process": "學生可能將此視為有放回抽樣或誤用 $\\frac{4}{13}$ 等簡單分數，忽略了不放回且同時取出的特性。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "漏算全提子汁情況",
+    "student_thought_process": "學生計算了「0,1,2 罐提子」的情況，但忘記減去「3 罐提子」的互斥部分，或是計算 $\\binom{4}{3}\\binom{9}{3}$ 時出錯。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "混淆取樣大小",
+    "student_thought_process": "學生可能錯誤地將總罐數當作 13 但取樣數算錯，或是用 $\\binom{13}{6}$ 計算時分母分子搞混。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：此問題屬於「不放回抽樣」且「同時取出」，應使用組合公式 $\\binom{n}{k}$ 來計算有利情況與總情況的數目。",
+   "提示 2：題目要求「至多 3 罐提子汁」，這包含「0, 1, 2, 3 罐」四種互斥情況，請分別計算每種情況的組合數並相加。",
+   "提示 3：也可以考慮其補集事件（即取出 4 罐提子汁的情況），用 $1 - P(\\text{4 罐提子})$ 來求解，這樣計算量會更小。"
+  ],
+  "quick_solution_strategy": "計算總組合數 $\\binom{13}{6}$，再計算取出 0,1,2,3 罐提子的有利組合數之和，或直接計算補集 $1 - \\frac{\\binom{4}{4}\\binom{9}{2}}{\\binom{13}{6}}$"
+ },
+ "skills": {
+  "topic_id": "T-PROB",
+  "knowledge_point_ids": [
+   "K-PROB-01",
+   "K-PROB-02"
+  ],
+  "formula_ids": [
+   "F-PROB-01",
+   "F-PROB-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

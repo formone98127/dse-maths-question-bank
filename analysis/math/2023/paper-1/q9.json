@@ -1,0 +1,119 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2023",
+  "paper": "Paper 1",
+  "qno": "9",
+  "hash": "#2023P1Q9"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "統計 - 幹葉圖",
+   "secondary_topics": [
+    "平均值計算",
+    "眾數識別",
+    "概率計算"
+   ],
+   "required_formulas": [
+    "$\\bar{x} = \\frac{\\sum x}{n}$",
+    "$P(E) = \\frac{n(E)}{N}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 5
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "根據分佈域 (27) 與最小值 (25)，推斷未知數 a=2，列出所有數據。",
+    "marks": 1,
+    "common_error": "忽略分佈域定義或誤算最小值導致 a 值錯誤。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 2,
+    "what": "計算數據總和 (Sum) 及數據個數 (n)，代入公式求平均值。",
+    "marks": 1,
+    "common_error": "漏算某個葉片或加總錯誤導致平均值偏差。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "觀察幹葉圖中出現次數最多的數值，確定眾數。",
+    "marks": 1,
+    "common_error": "混淆眾數與中位數，或誤讀重複數字。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "統計工作時數嚴格大於眾數的數據個數 (n(E))。",
+    "marks": 1,
+    "common_error": "包含等於眾數的情況，或漏數超過眾數的項目。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "將有利情況除以總人數，得出最終概率並化簡。",
+    "marks": 1,
+    "common_error": "未化簡分數或計算除法時出現小數誤差。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "此題為基礎統計應用，考評報告顯示超過 75% 考生能正確處理，反映學生對幹葉圖讀取及基本統計量計算掌握良好，主要失分點通常在解讀「分佈域」以推斷未知數及嚴格區分「超過」與「大於等於」。",
+  "scaffolding_hints": [
+   "提示：分佈域 = 最大值 - 最小值，利用此關係找出 a。",
+   "提示：眾數是出現頻率最高的數，直接在圖中找最長的一行或重複最多的葉。",
+   "提示：概率問題務必注意題目要求是「超過」(>) 還是「大於等於」(≥)。"
+  ],
+  "quick_solution_strategy": "先由分佈域定 a=2，再列全數據算平均；找眾數後數比它大的個數除以總人數即可。"
+ },
+ "skills": {
+  "topic_id": "T-STA",
+  "knowledge_point_ids": [
+   "K-STA-01",
+   "K-STA-02"
+  ],
+  "formula_ids": [
+   "F-STA-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "2": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

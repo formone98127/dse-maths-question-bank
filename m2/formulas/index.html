@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-HK">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DSE 數學 M2 公式溫習表（代數與微積分）｜DSE 數學題庫</title>
+<meta name="description" content="原創整理數學延伸單元二矩陣、向量、歸納法同微積分常用關係。請同時核對官方公式表。">
+<meta name="keywords" content="DSE, 香港中學文憑, 溫習資源, 課題筆記, 答題框架, 免費">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="googlebot" content="index, follow">
+<meta name="author" content="DSE 數學題庫">
+<link rel="canonical" href="https://hkdse.exampaper.cloud/m2/formulas/">
+<link rel="alternate" hreflang="zh-Hant-HK" href="https://hkdse.exampaper.cloud/m2/formulas/">
+<link rel="alternate" hreflang="x-default" href="https://hkdse.exampaper.cloud/m2/formulas/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DSE 數學題庫">
+<meta property="og:locale" content="zh_HK">
+<meta property="og:title" content="DSE 數學 M2 公式溫習表（代數與微積分）｜DSE 數學題庫">
+<meta property="og:description" content="原創整理數學延伸單元二矩陣、向量、歸納法同微積分常用關係。請同時核對官方公式表。">
+<meta property="og:url" content="https://hkdse.exampaper.cloud/m2/formulas/">
+<meta property="og:image" content="https://hkdse.exampaper.cloud/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="DSE 數學題庫 香港中學文憑歷屆試題資料庫">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="DSE 數學 M2 公式溫習表（代數與微積分）｜DSE 數學題庫">
+<meta name="twitter:description" content="原創整理數學延伸單元二矩陣、向量、歸納法同微積分常用關係。請同時核對官方公式表。">
+<meta name="twitter:image" content="https://hkdse.exampaper.cloud/og-image.png">
+<meta name="theme-color" content="#0b1220">
+<link rel="manifest" href="/dse-maths-question-bank/manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="32x32" href="/dse-maths-question-bank/icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/dse-maths-question-bank/icons/icon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/dse-maths-question-bank/icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="DSE 數學題庫">
+<meta name="application-name" content="DSE 數學題庫">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/dse-maths-question-bank/hub/style.css?v=202611191400">
+<style>
+
+/* Page-scoped resource layout — do not add to the shared stylesheet. */
+.res-sec { margin: 8px 0 24px; }
+.res-sec > h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 10px;
+  color: var(--ink);
+}
+.res-sec > h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 16px 0 8px;
+  color: var(--ink);
+}
+.res-sec p, .res-sec li {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--ink-2);
+}
+.res-sec p { margin: 0 0 10px; }
+.res-sec ul, .res-sec ol { margin: 0 0 10px; padding-left: 1.25em; }
+.res-sec li { margin: 0 0 6px; }
+.res-sec a { color: var(--acc-ink); }
+.res-card {
+  margin: 0 0 12px;
+  border: 1px solid var(--hair);
+  border-radius: var(--radius);
+  background: var(--card);
+  padding: 14px 16px 16px;
+}
+.res-card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 8px;
+  color: var(--ink);
+}
+.res-card p:last-child, .res-card ul:last-child, .res-card ol:last-child { margin-bottom: 0; }
+.res-toc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 8px 0 0;
+}
+.res-toc a {
+  display: inline-block;
+  border: 1px solid var(--hair);
+  border-radius: var(--radius);
+  background: var(--card);
+  color: var(--acc-ink);
+  text-decoration: none;
+  font-size: 14px;
+  padding: 7px 10px;
+}
+.res-toc a:hover { background: var(--card-hi); }
+.res-note {
+  border: 1px solid var(--hair);
+  border-radius: var(--radius);
+  background: var(--card);
+  padding: 12px 14px;
+  margin: 0 0 16px;
+  color: var(--ink-2);
+  font-size: 14px;
+  line-height: 1.65;
+}
+.res-note strong { color: var(--ink); }
+.res-grid {
+  display: grid;
+  gap: 8px;
+}
+.res-grid a.res-item {
+  display: block;
+  border: 1px solid var(--hair);
+  border-radius: var(--radius);
+  background: var(--card);
+  padding: 14px 16px;
+  text-decoration: none;
+  color: inherit;
+}
+.res-grid a.res-item:hover { background: var(--card-hi); }
+.res-grid a.res-item .kicker {
+  margin: 0 0 4px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--acc-ink);
+}
+.res-grid a.res-item h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--ink);
+}
+.res-grid a.res-item p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--ink-2);
+}
+.res-table-wrap { overflow-x: auto; margin: 0 0 12px; }
+.res-sec table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+.res-sec th, .res-sec td {
+  border-bottom: 1px solid var(--hair);
+  text-align: left;
+  vertical-align: top;
+  padding: 8px 8px 8px 0;
+  color: var(--ink-2);
+}
+.res-sec th { color: var(--ink); font-weight: 700; }
+.res-kicker { margin: 0 0 6px; font-size: 13px; font-weight: 600; color: var(--acc-ink); }
+
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LTB27V0RGW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-LTB27V0RGW');
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "/hub/",
+          "item": "DSE 數學題庫"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "/m2/",
+          "item": "單元二"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "/m2/formulas/",
+          "item": "https://hkdse.exampaper.cloud/m2/formulas/"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "name": "DSE 數學 M2 公式溫習表（代數與微積分）｜DSE 數學題庫",
+      "description": "原創整理數學延伸單元二矩陣、向量、歸納法同微積分常用關係。請同時核對官方公式表。",
+      "url": "https://hkdse.exampaper.cloud/m2/formulas/",
+      "inLanguage": "zh-Hant-HK",
+      "isPartOf": {
+        "@id": "https://hkdse.exampaper.cloud/#website"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "DSE 數學題庫"
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body class="subj-page">
+<header class="hero">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <nav class="crumb" aria-label="麵包屑">
+      <a href="/dse-maths-question-bank/hub/">DSE 數學題庫</a>
+      <span aria-hidden="true">／</span>
+      <a href="單元二">/m2/</a>
+      <span aria-hidden="true">／</span>
+      <span>/m2/formulas/</span>
+      </nav>
+    <a class="brand" href="/dse-maths-question-bank/hub/" title="返 DSE 數學題庫 主頁">DSE 數學題庫</a>
+    <h1>單元二公式溫習表</h1>
+    <p class="tagline">用自己嘅措辭整理代數同微積分關係。考試請同時核對官方公式表。</p>
+        <nav class="strand-nav" aria-label="科目資源">
+        <a href="/dse-maths-question-bank/m2/">單元二</a>
+        <a href="/dse-maths-question-bank/m2/formulas/">公式表</a>
+        <a href="/dse-maths-question-bank/m2/notes/">課題筆記</a>
+        </nav>
+    <p class="page-cta"><a href="/dse-maths-question-bank/resources/">全科溫習資源</a> · <a href="/dse-maths-question-bank/hub/">返回 DSE 數學題庫 主頁</a></p>
+  </div>
+</header>
+<main class="subj-main">
+
+<p class="res-note"><strong>版權同使用說明：</strong>呢啲筆記用自己嘅措辭整理公開課程常見概念同應試方法，方便溫習。正式考試請同時核對考評局當年評核大綱，以及試卷提供嘅公式或資料。本站唔會轉載官方試題、評卷參考、考試報告、課程指引原文，亦唔會刊登指定文言篇章全文。需要原文或官方樣本時，請行下面官方連結。</p>
+<p class="res-note"><strong>公式表聲明：</strong>呢份係原創溫習清單，用自己嘅措辭整理常見關係同應試注意。正式考試請同時核對試卷或考評局提供嘅官方公式表，符號同適用條件以當年卷面為準。記得：有公式都要寫出代入過程，唔好只抄最後答案。</p>
+<section class="res-sec">
+  <h2>代數</h2>
+  <ul>
+    <li>數學歸納法：先寫要證命題 P(n) 同起始值；再假設 P(k)，推出 P(k+1)；最後用一句話收束「由起始值同歸納步驟，對所有指定正整數成立」。假設要用得明顯，唔好跳步。</li>
+    <li>矩陣：加法同標量乘法按元素進行；乘法要檢查前一個嘅列數等如後一個嘅行數。乘法無交換律，唔好隨便調位。單位矩陣扮演 1 嘅角色；逆矩陣存在先可以解某類方程組。</li>
+    <li>行列式（二階或課程範圍內嘅階數）：可用嚟判斷可逆同計算面積或體積相關量，但要跟課程允許嘅方法。</li>
+    <li>向量：用分量加減、標量乘法同位置向量去描述點同線。點積可以判斷垂直同求夾角；要分清向量平行同垂直嘅條件。三維範圍以大綱為準。</li>
+  </ul>
+</section>
+<section class="res-sec">
+  <h2>微積分</h2>
+  <ul>
+    <li>標準導數：多項式、指數、對數、三角同反三角（若在範圍內）要熟，並且會用鏈法則。</li>
+    <li>積分：除基本形式外，常見技巧包括代換、分部積分同三角恆等變形。定積分仍然要寫上下限轉換。</li>
+    <li>應用：切線法線、率變、最值、面積、弧長或體積等，以課程列明者為準。先寫關係式，再先運算。</li>
+  </ul>
+</section>
+<section class="res-sec">
+  <h2>應試提醒</h2>
+  <p>代數題要有推論句；微積分題要有函數同定義域意識。更完整說明見<a href="/dse-maths-question-bank/m2/notes/">單元二筆記</a>。</p>
+</section>
+<section class="res-sec" aria-label="官方資料">
+  <h2>官方資料（請以考評局／教育局為準）</h2>
+  <p>以下係官方評核同刊物頁面。本站只提供原創溫習筆記同答題框架，唔會轉載官方試題、評卷參考、考試報告或指定篇章全文。</p>
+  <ul>
+    <li><a href="https://www.hkeaa.edu.hk/DocLibrary/HKDSE/Subject_Information/hub/math/2027hkdse-c-math.pdf" rel="noopener">2027 年評核大綱（PDF）</a></li>
+<li><a href="https://www.hkeaa.edu.hk/tc/hkdse/assessment/assessment_framework/" rel="noopener">考評局評核大綱一覽（2026–2029）</a></li>
+<li><a href="https://www.hkeaa.edu.hk/tc/hkdse/assessment/subject_information/category_a_subjects/" rel="noopener">甲類高中科目資訊</a></li>
+<li><a href="https://www.hkeaa.edu.hk/tc/resources/publications/list_of_publications/hkdse_erqp_pub/" rel="noopener">考評局刊物（考試報告及試題專輯）</a></li>
+  </ul>
+</section>
+
+</main>
+<footer><a href="/dse-maths-question-bank/m2/">返回單元二</a> · <a href="/dse-maths-question-bank/hub/">DSE 數學題庫 主頁</a> · 相關：<a href="https://dsemaths.canonlessons.com/" rel="noopener">免費 DSE 數學視覺教程</a></footer>
+</body>
+</html>

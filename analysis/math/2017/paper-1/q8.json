@@ -1,0 +1,104 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 1",
+  "qno": "8",
+  "hash": "#2017P1Q8"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "變分",
+   "secondary_topics": [
+    "反比例關係",
+    "平方根運算",
+    "數值變化計算"
+   ],
+   "required_formulas": [
+    "$y \\propto \\frac{1}{\\sqrt{x}}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "設 $y = \\frac{k}{\\sqrt{x}}$，代入已知數值求常數 $k$。",
+    "marks": 1,
+    "common_error": "忘記寫出含 k 的方程式直接代數；算錯平方根或倒數。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "將 $k$ 值代回，整理成以 $x$ 表 $y$ 的最終公式。",
+    "marks": 1,
+    "common_error": "未化簡係數；保留不必要的根號形式導致扣分。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "計算 $x=324$ 時對應的 $y$ 值。",
+    "marks": 1,
+    "common_error": "算錯 $\\sqrt{324}$；代入公式時抄錯數字。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "計算 $y$ 的改變量（新值減舊值或絕對差）。",
+    "marks": 1,
+    "common_error": "只算出其中一個 $y$ 值；忘記題目要求「改變」。",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "考生需熟練處理反變關係式，特別是在代入數值求常數及計算具體變化量時，避免基本運算錯誤。",
+  "scaffolding_hints": [
+   "Step 1: 識別「$y$ 隨 $\\sqrt{x}$ 反變」意味著 $y = \\frac{k}{\\sqrt{x}}$。",
+   "Step 2: 利用 $x=144, y=81$ 代入公式，計算 $k = 81 \\times \\sqrt{144} = 81 \\times 12 = 972$。",
+   "Step 3: 將 $k=972$ 代回並計算 $x=324$ 時的 $y$，最後求差值 $\\Delta y$"
+  ],
+  "quick_solution_strategy": "設 $y=k/\\sqrt{x}$。代入 $(144,81)$ 得 $k=972$。公式為 $y=972/\\sqrt{x}$。當 $x=324$，$y=54$。改變量為 $81-54=27$"
+ },
+ "skills": {
+  "topic_id": "T-VAR",
+  "knowledge_point_ids": [
+   "K-VAR-02"
+  ],
+  "formula_ids": [
+   "F-VAR-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-VAR-02",
+    "formula_id": "F-VAR-02",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-VAR-02",
+    "formula_id": "F-VAR-02",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-VAR-02",
+    "formula_id": "F-VAR-02",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-VAR-02",
+    "formula_id": "F-VAR-02",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

@@ -1,0 +1,609 @@
+{
+  "version": 1,
+  "papers": [
+    {
+      "year": "2012",
+      "paper": "Paper 1",
+      "n": 19,
+      "rich": 19,
+      "file": "math-2012-paper-1.md"
+    },
+    {
+      "year": "2012",
+      "paper": "Paper 1M",
+      "n": 12,
+      "rich": 12,
+      "file": "math-2012-paper-1m.md"
+    },
+    {
+      "year": "2012",
+      "paper": "Paper 2",
+      "n": 45,
+      "rich": 45,
+      "file": "math-2012-paper-2.md"
+    },
+    {
+      "year": "2013",
+      "paper": "Paper 1",
+      "n": 19,
+      "rich": 19,
+      "file": "math-2013-paper-1.md"
+    },
+    {
+      "year": "2013",
+      "paper": "Paper 1M",
+      "n": 12,
+      "rich": 12,
+      "file": "math-2013-paper-1m.md"
+    },
+    {
+      "year": "2013",
+      "paper": "Paper 2",
+      "n": 45,
+      "rich": 45,
+      "file": "math-2013-paper-2.md"
+    },
+    {
+      "year": "2014",
+      "paper": "Paper 1",
+      "n": 19,
+      "rich": 19,
+      "file": "math-2014-paper-1.md"
+    },
+    {
+      "year": "2014",
+      "paper": "Paper 1M",
+      "n": 12,
+      "rich": 12,
+      "file": "math-2014-paper-1m.md"
+    },
+    {
+      "year": "2014",
+      "paper": "Paper 2",
+      "n": 45,
+      "rich": 45,
+      "file": "math-2014-paper-2.md"
+    },
+    {
+      "year": "2015",
+      "paper": "Paper 1",
+      "n": 19,
+      "rich": 19,
+      "file": "math-2015-paper-1.md"
+    },
+    {
+      "year": "2015",
+      "paper": "Paper 1M",
+      "n": 12,
+      "rich": 12,
+      "file": "math-2015-paper-1m.md"
+    },
+    {
+      "year": "2015",
+      "paper": "Paper 2",
+      "n": 45,
+      "rich": 45,
+      "file": "math-2015-paper-2.md"
+    },
+    {
+      "year": "2016",
+      "paper": "Paper 1",
+      "n": 19,
+      "rich": 19,
+      "file": "math-2016-paper-1.md"
+    },
+    {
+      "year": "2016",
+      "paper": "Paper 1M",
+      "n": 12,
+      "rich": 12,
+      "file": "math-2016-paper-1m.md"
+    },
+    {
+      "year": "2016",
+      "paper": "Paper 2",
+      "n": 45,
+      "rich": 45,
+      "file": "math-2016-paper-2.md"
+    },
+    {
+      "year": "2017",
+      "paper": "Paper 1",
+      "n": 19,
+      "rich": 19,
+      "file": "math-2017-paper-1.md"
+    },
+    {
+      "year": "2017",
+      "paper": "Paper 1M",
+      "n": 12,
+      "rich": 12,
+      "file": "math-2017-paper-1m.md"
+    },
+    {
+      "year": "2017",
+      "paper": "Paper 2",
+      "n": 45,
+      "rich": 45,
+      "file": "math-2017-paper-2.md"
+    },
+    {
+      "year": "2018",
+      "paper": "Paper 1",
+      "n": 19,
+      "rich": 19,
+      "file": "math-2018-paper-1.md"
+    },
+    {
+      "year": "2018",
+      "paper": "Paper 1M",
+      "n": 12,
+      "rich": 12,
+      "file": "math-2018-paper-1m.md"
+    },
+    {
+      "year": "2018",
+      "paper": "Paper 2",
+      "n": 45,
+      "rich": 45,
+      "file": "math-2018-paper-2.md"
+    },
+    {
+      "year": "2019",
+      "paper": "Paper 1",
+      "n": 19,
+      "rich": 19,
+      "file": "math-2019-paper-1.md"
+    },
+    {
+      "year": "2019",
+      "paper": "Paper 1M",
+      "n": 12,
+      "rich": 12,
+      "file": "math-2019-paper-1m.md"
+    },
+    {
+      "year": "2019",
+      "paper": "Paper 2",
+      "n": 45,
+      "rich": 45,
+      "file": "math-2019-paper-2.md"
+    },
+    {
+      "year": "2020",
+      "paper": "Paper 1",
+      "n": 19,
+      "rich": 19,
+      "file": "math-2020-paper-1.md"
+    },
+    {
+      "year": "2020",
+      "paper": "Paper 1M",
+      "n": 12,
+      "rich": 12,
+      "file": "math-2020-paper-1m.md"
+    },
+    {
+      "year": "2020",
+      "paper": "Paper 2",
+      "n": 45,
+      "rich": 45,
+      "file": "math-2020-paper-2.md"
+    },
+    {
+      "year": "2021",
+      "paper": "Paper 1",
+      "n": 19,
+      "rich": 19,
+      "file": "math-2021-paper-1.md"
+    },
+    {
+      "year": "2021",
+      "paper": "Paper 1M",
+      "n": 12,
+      "rich": 12,
+      "file": "math-2021-paper-1m.md"
+    },
+    {
+      "year": "2021",
+      "paper": "Paper 2",
+      "n": 45,
+      "rich": 45,
+      "file": "math-2021-paper-2.md"
+    },
+    {
+      "year": "2022",
+      "paper": "Paper 1",
+      "n": 19,
+      "rich": 19,
+      "file": "math-2022-paper-1.md"
+    },
+    {
+      "year": "2022",
+      "paper": "Paper 1M",
+      "n": 12,
+      "rich": 12,
+      "file": "math-2022-paper-1m.md"
+    },
+    {
+      "year": "2022",
+      "paper": "Paper 2",
+      "n": 45,
+      "rich": 45,
+      "file": "math-2022-paper-2.md"
+    },
+    {
+      "year": "2023",
+      "paper": "Paper 1",
+      "n": 19,
+      "rich": 19,
+      "file": "math-2023-paper-1.md"
+    },
+    {
+      "year": "2023",
+      "paper": "Paper 1M",
+      "n": 12,
+      "rich": 12,
+      "file": "math-2023-paper-1m.md"
+    },
+    {
+      "year": "2023",
+      "paper": "Paper 2",
+      "n": 45,
+      "rich": 45,
+      "file": "math-2023-paper-2.md"
+    },
+    {
+      "year": "2024",
+      "paper": "Paper 1",
+      "n": 19,
+      "rich": 19,
+      "file": "math-2024-paper-1.md"
+    },
+    {
+      "year": "2024",
+      "paper": "Paper 1M",
+      "n": 12,
+      "rich": 12,
+      "file": "math-2024-paper-1m.md"
+    },
+    {
+      "year": "2024",
+      "paper": "Paper 2",
+      "n": 45,
+      "rich": 45,
+      "file": "math-2024-paper-2.md"
+    },
+    {
+      "year": "2025",
+      "paper": "Paper 1",
+      "n": 19,
+      "rich": 19,
+      "file": "math-2025-paper-1.md"
+    },
+    {
+      "year": "2025",
+      "paper": "Paper 1M",
+      "n": 12,
+      "rich": 12,
+      "file": "math-2025-paper-1m.md"
+    },
+    {
+      "year": "2025",
+      "paper": "Paper 2",
+      "n": 45,
+      "rich": 45,
+      "file": "math-2025-paper-2.md"
+    },
+    {
+      "year": "PP",
+      "paper": "Paper 1",
+      "n": 19,
+      "rich": 19,
+      "file": "math-PP-paper-1.md"
+    },
+    {
+      "year": "PP",
+      "paper": "Paper 1M",
+      "n": 13,
+      "rich": 13,
+      "file": "math-PP-paper-1m.md"
+    },
+    {
+      "year": "SP",
+      "paper": "Paper 1",
+      "n": 19,
+      "rich": 19,
+      "file": "math-SP-paper-1.md"
+    }
+  ],
+  "totals": {
+    "questions": 1115,
+    "rich_analysis": 1115,
+    "tag_inferred": 0
+  },
+  "topics": [
+    [
+      "方程與不等式",
+      137
+    ],
+    [
+      "圓形幾何",
+      121
+    ],
+    [
+      "概率",
+      109
+    ],
+    [
+      "多項式（續）",
+      104
+    ],
+    [
+      "集中趨勢與離差",
+      89
+    ],
+    [
+      "指數與對數",
+      79
+    ],
+    [
+      "求積法",
+      74
+    ],
+    [
+      "坐標幾何：直線",
+      60
+    ],
+    [
+      "函數與圖像",
+      56
+    ],
+    [
+      "數列",
+      42
+    ],
+    [
+      "百分法",
+      40
+    ],
+    [
+      "數系",
+      39
+    ],
+    [
+      "三角學與解三角形",
+      35
+    ],
+    [
+      "變分",
+      29
+    ],
+    [
+      "坐標幾何：圓",
+      28
+    ],
+    [
+      "比、率與比例",
+      22
+    ],
+    [
+      "排列與組合",
+      21
+    ],
+    [
+      "軌跡",
+      13
+    ],
+    [
+      "幾何變換",
+      10
+    ],
+    [
+      "統計圖表",
+      7
+    ]
+  ],
+  "knowledge_points": [
+    [
+      "一次方程與移項",
+      110
+    ],
+    [
+      "聯立一次方程",
+      109
+    ],
+    [
+      "平均數",
+      87
+    ],
+    [
+      "指數／對數方程與圖像",
+      73
+    ],
+    [
+      "平面圖形面積",
+      72
+    ],
+    [
+      "弧長與扇形",
+      72
+    ],
+    [
+      "古典概率",
+      69
+    ],
+    [
+      "中位數與眾數",
+      67
+    ],
+    [
+      "互斥與加法",
+      67
+    ],
+    [
+      "圓心角與圓周角",
+      61
+    ],
+    [
+      "相似／全等三角形",
+      60
+    ],
+    [
+      "切線與半徑垂直",
+      59
+    ],
+    [
+      "斜率與截距",
+      58
+    ],
+    [
+      "距離與中點",
+      57
+    ],
+    [
+      "函數值與定義域",
+      53
+    ],
+    [
+      "一次函數圖像",
+      53
+    ],
+    [
+      "因式分解",
+      44
+    ],
+    [
+      "條件概率",
+      40
+    ],
+    [
+      "百分率換算",
+      39
+    ],
+    [
+      "百分增減與新值",
+      38
+    ],
+    [
+      "整數／有理／無理／實數",
+      34
+    ],
+    [
+      "等差數列",
+      28
+    ],
+    [
+      "一元一次不等式",
+      27
+    ],
+    [
+      "正變",
+      27
+    ],
+    [
+      "展開與合併同類項",
+      27
+    ],
+    [
+      "圓的標準方程",
+      25
+    ],
+    [
+      "完全平方與平方差",
+      25
+    ],
+    [
+      "組合",
+      22
+    ],
+    [
+      "圓心半徑判讀",
+      21
+    ],
+    [
+      "特殊角值",
+      20
+    ],
+    [
+      "H.C.F. 與 L.C.M.",
+      20
+    ],
+    [
+      "排列",
+      20
+    ],
+    [
+      "比的化簡",
+      20
+    ],
+    [
+      "率與單位",
+      20
+    ],
+    [
+      "銳角三角比定義",
+      19
+    ],
+    [
+      "主項變換",
+      18
+    ],
+    [
+      "因式定理",
+      18
+    ],
+    [
+      "等比數列",
+      18
+    ],
+    [
+      "餘式定理",
+      15
+    ],
+    [
+      "到定點等距（圓）",
+      13
+    ],
+    [
+      "到兩點等距（垂直平分線）",
+      13
+    ],
+    [
+      "正弦／餘弦定理",
+      12
+    ],
+    [
+      "反變",
+      11
+    ],
+    [
+      "冪的冪：指數相乘",
+      9
+    ],
+    [
+      "反射",
+      9
+    ],
+    [
+      "數列通項與規律",
+      8
+    ],
+    [
+      "幹葉圖",
+      8
+    ],
+    [
+      "同底乘除：指數加減",
+      6
+    ],
+    [
+      "旋轉",
+      6
+    ],
+    [
+      "加權平均",
+      5
+    ]
+  ]
+}

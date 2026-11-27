@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-HK">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>風格 6｜卡片收集風技能冊｜DSE Hub</title>
+<meta name="description" content="數學技能冊卡片收集風格預覽：每格知識點似遊戲卡，適合手機瀏覽。">
+<link rel="canonical" href="https://hkdse.exampaper.cloud/skills/book/cards/">
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$']] }
+};
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<style>
+:root {
+  --ink: #1c2430;
+  --mut: #5d6b7c;
+  --line: rgba(28,36,48,0.12);
+  --desk: #e8eef5;
+  --card: #fffdf8;
+  --foil: #c9a44a;
+  --rare: #3d7ea6;
+  --epic: #6b4ea2;
+  --locked: #8a93a0;
+  --ok: #1f7a5c;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--ink);
+  background:
+    radial-gradient(900px 420px at 0% 0%, #d7e6f6 0%, transparent 55%),
+    radial-gradient(800px 380px at 100% 10%, #f3e7cf 0%, transparent 50%),
+    linear-gradient(180deg, #f4f7fb, var(--desk));
+  font: 15px/1.55 "PingFang HK", "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+}
+a { color: #1f5f8f; text-decoration: none; }
+.wrap { max-width: 1100px; margin: 0 auto; padding: 0 16px 48px; }
+header.top {
+  position: sticky; top: 0; z-index: 10;
+  backdrop-filter: blur(10px);
+  background: rgba(244,247,251,0.9);
+  border-bottom: 1px solid var(--line);
+  padding: 12px 0;
+}
+.top-inner {
+  max-width: 1100px; margin: 0 auto; padding: 0 16px;
+  display: flex; justify-content: space-between; gap: 12px; align-items: center;
+}
+.brand { font-weight: 800; letter-spacing: 0.02em; }
+.badge-style {
+  font-size: 12px; font-weight: 700;
+  background: #1c2430; color: #fff;
+  border-radius: 999px; padding: 4px 10px;
+}
+.hero { padding: 22px 0 8px; }
+.hero h1 { margin: 0 0 8px; font-size: clamp(24px, 4vw, 34px); letter-spacing: -0.02em; }
+.hero p { margin: 0; color: var(--mut); max-width: 40rem; }
+.tabs {
+  display: flex; gap: 8px; overflow-x: auto; padding: 14px 0 8px;
+  -webkit-overflow-scrolling: touch;
+}
+.tab {
+  flex: 0 0 auto;
+  appearance: none; border: 1px solid var(--line);
+  background: #fff; color: var(--ink);
+  border-radius: 999px; padding: 8px 14px;
+  font-weight: 700; cursor: pointer;
+}
+.tab.active {
+  background: #1c2430; color: #fff; border-color: #1c2430;
+}
+.toolbar {
+  display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+  margin: 8px 0 16px; color: var(--mut); font-size: 13px;
+}
+.btn {
+  appearance: none; border: 1px solid var(--line);
+  background: #fff; border-radius: 999px;
+  padding: 8px 12px; font-weight: 700; cursor: pointer;
+}
+.btn.primary {
+  background: linear-gradient(180deg, #f0d78a, #c9a44a);
+  border-color: #b8923a; color: #2a1f08;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(168px, 1fr));
+  gap: 14px;
+}
+.card {
+  position: relative;
+  aspect-ratio: 3 / 4.2;
+  border-radius: 18px;
+  border: 1px solid var(--line);
+  background: var(--card);
+  box-shadow: 0 10px 24px rgba(28,36,48,0.08);
+  padding: 12px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease);
+  text-align: left;
+  color: inherit;
+  font: inherit;
+}
+.card:hover { transform: translateY(-4px) rotate(-0.4deg); box-shadow: 0 16px 30px rgba(28,36,48,0.14); }
+.card:focus-visible { outline: 2px solid #1f5f8f; outline-offset: 2px; }
+.card.selected {
+  box-shadow: 0 0 0 3px rgba(61,126,166,0.35), 0 16px 30px rgba(28,36,48,0.14);
+  transform: translateY(-4px);
+}
+.card.locked {
+  filter: grayscale(0.35);
+  background: linear-gradient(160deg, #eef1f5, #dfe5ec);
+}
+.card .rarity {
+  position: absolute; top: 10px; right: 10px;
+  font-size: 10px; font-weight: 800; letter-spacing: 0.06em;
+  padding: 3px 7px; border-radius: 999px; color: #fff;
+}
+.card.r-common .rarity { background: #7a8694; }
+.card.r-rare .rarity { background: var(--rare); }
+.card.r-epic .rarity { background: var(--epic); }
+.card.r-legend .rarity { background: linear-gradient(90deg, #c9a44a, #8a5a1e); }
+.art {
+  height: 42%;
+  border-radius: 12px;
+  margin-top: 18px;
+  display: grid; place-items: center;
+  background:
+    radial-gradient(circle at 30% 30%, rgba(255,255,255,0.7), transparent 45%),
+    linear-gradient(145deg, #d9e8f6, #f7ecd7);
+  border: 1px solid rgba(28,36,48,0.08);
+  font-size: 34px;
+}
+.card.locked .art {
+  background: linear-gradient(145deg, #cfd6df, #b8c0cb);
+  color: #5a6572;
+}
+.card .cid {
+  margin-top: 10px;
+  font-size: 10px; color: var(--mut);
+  font-family: ui-monospace, Consolas, monospace;
+}
+.card .cname {
+  margin: 4px 0 0;
+  font-size: 14px; font-weight: 800;
+  line-height: 1.25;
+  display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+}
+.status {
+  position: absolute; left: 10px; bottom: 10px;
+  font-size: 11px; font-weight: 800;
+  padding: 3px 8px; border-radius: 999px;
+  border: 1px solid var(--line); background: #fff;
+}
+.status.on { color: var(--ok); }
+.status.off { color: var(--locked); }
+.panel {
+  margin-top: 18px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 16px;
+  box-shadow: 0 10px 24px rgba(28,36,48,0.06);
+  min-height: 140px;
+}
+.panel h2 { margin: 0 0 8px; font-size: 18px; }
+.panel .meta { color: var(--mut); font-size: 13px; margin-bottom: 10px; }
+.formula {
+  border: 1px dashed var(--line);
+  border-radius: 12px;
+  padding: 10px 12px;
+  margin-top: 8px;
+  background: #fbfcfe;
+}
+.formula .fid { font-size: 11px; color: var(--mut); font-family: ui-monospace, Consolas, monospace; }
+.empty { color: var(--mut); text-align: center; padding: 18px; }
+footer { margin-top: 22px; color: var(--mut); font-size: 13px; }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="top-inner">
+    <div>
+      <a href="../">← RPG 技能樹</a>
+      · <a href="/dse-maths-question-bank/skills/">技能地圖</a>
+    </div>
+    <div><span class="badge-style">風格 6 · 卡片收集</span></div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="hero">
+    <h1>卡片收集風預覽</h1>
+    <p>每粒知識點係一張卡。已解鎖可以收進卡冊；未解鎖會變灰。適合手機左右掃、逐張睇。</p>
+  </section>
+  <div class="tabs" id="tabs"></div>
+  <div class="toolbar">
+    <span id="branchMeta"></span>
+    <button type="button" class="btn primary" id="btnUnlock">解鎖選中卡</button>
+    <button type="button" class="btn" id="btnReset">重置本課題</button>
+    <span id="progress">進度 0%</span>
+  </div>
+  <div class="grid" id="grid"></div>
+  <section class="panel" id="panel"><div class="empty">點一張卡睇詳情同公式</div></section>
+  <footer>呢頁係風格預覽。解鎖進度同 RPG 樹分開儲存，唔會互相覆蓋。</footer>
+</main>
+<script id="BOOK" type="application/json">{"version": 1, "subject": "math", "subject_name": "數學（必修部分）", "abilities": [{"id": "A-SUB", "name": "代入數值", "desc": "把已知數值代入式子或公式"}, {"id": "A-ALG", "name": "代數變形", "desc": "搬項、展開、因式、合併同類項"}, {"id": "A-COND", "name": "睇條件", "desc": "注意單位、範圍、正負、非零、定義域"}, {"id": "A-GRAPH", "name": "讀圖", "desc": "從圖像讀出斜率、截距、頂點、週期等"}, {"id": "A-BACK", "name": "由答案倒推", "desc": "用選項反推或驗證"}, {"id": "A-CHAIN", "name": "多步串連", "desc": "多步解題，中間一步錯會帶歪後續"}, {"id": "A-ELIM", "name": "排除錯選項", "desc": "用性質或邊界情況剔除不合理選項"}, {"id": "A-CALC", "name": "計算仔細度", "desc": "符號、係數、口算與代數操作準確"}], "topics": [{"id": "T-PCT", "name": "百分法", "group": "數與代數", "knowledge_points": [{"id": "K-PCT-01", "name": "百分率換算", "prereqs": []}, {"id": "K-PCT-02", "name": "百分增減與新值", "prereqs": ["K-PCT-01"]}, {"id": "K-PCT-03", "name": "利息與增長", "prereqs": ["K-PCT-02"]}, {"id": "K-PCT-04", "name": "盈虧與折扣", "prereqs": ["K-PCT-02"]}, {"id": "K-PCT-05", "name": "人口／群體比例混合", "prereqs": ["K-PCT-01"]}], "formulas": [{"id": "F-PCT-01", "name": "百分率", "latex": "p\\% = \\frac{p}{100}", "knowledge_point_id": "K-PCT-01"}, {"id": "F-PCT-02", "name": "新值", "latex": "新值 = 原值 \\times (1 \\pm r)", "knowledge_point_id": "K-PCT-02"}, {"id": "F-PCT-03", "name": "單利", "latex": "利息 = 本金 \\times 利率 \\times 期數", "knowledge_point_id": "K-PCT-03"}]}, {"id": "T-EXP", "name": "指數與對數", "group": "數與代數", "knowledge_points": [{"id": "K-EXP-01", "name": "同底乘除：指數加減", "prereqs": []}, {"id": "K-EXP-02", "name": "冪的冪：指數相乘", "prereqs": ["K-EXP-01"]}, {"id": "K-EXP-03", "name": "零指數與負指數", "prereqs": ["K-EXP-01"]}, {"id": "K-EXP-04", "name": "分數指數與根式", "prereqs": ["K-EXP-02", "K-EXP-03"]}, {"id": "K-EXP-05", "name": "對數定義與換底", "prereqs": ["K-EXP-03"]}, {"id": "K-EXP-06", "name": "對數運算法則", "prereqs": ["K-EXP-05"]}, {"id": "K-EXP-07", "name": "指數／對數方程與圖像", "prereqs": ["K-EXP-06"]}], "formulas": [{"id": "F-EXP-01", "name": "乘法則", "latex": "a^m \\cdot a^n = a^{m+n}", "knowledge_point_id": "K-EXP-01"}, {"id": "F-EXP-02", "name": "除法則", "latex": "\\frac{a^m}{a^n} = a^{m-n}", "knowledge_point_id": "K-EXP-01"}, {"id": "F-EXP-03", "name": "冪的冪", "latex": "(a^m)^n = a^{mn}", "knowledge_point_id": "K-EXP-02"}, {"id": "F-EXP-04", "name": "積的冪", "latex": "(ab)^n = a^n b^n", "knowledge_point_id": "K-EXP-02"}, {"id": "F-EXP-05", "name": "零指數", "latex": "a^0 = 1\\ (a\\neq 0)", "knowledge_point_id": "K-EXP-03"}, {"id": "F-EXP-06", "name": "負指數", "latex": "a^{-n} = \\frac{1}{a^n}", "knowledge_point_id": "K-EXP-03"}, {"id": "F-EXP-07", "name": "對數定義", "latex": "\\log_b a = c \\iff b^c = a", "knowledge_point_id": "K-EXP-05"}, {"id": "F-EXP-08", "name": "對數積", "latex": "\\log_b(xy)=\\log_b x+\\log_b y", "knowledge_point_id": "K-EXP-06"}, {"id": "F-EXP-09", "name": "對數冪", "latex": "\\log_b(a^k)=k\\log_b a", "knowledge_point_id": "K-EXP-06"}]}, {"id": "T-RAT", "name": "比、率與比例", "group": "數與代數", "knowledge_points": [{"id": "K-RAT-01", "name": "比的化簡", "prereqs": []}, {"id": "K-RAT-02", "name": "率與單位", "prereqs": ["K-RAT-01"]}, {"id": "K-RAT-03", "name": "正比與反比", "prereqs": ["K-RAT-01"]}, {"id": "K-RAT-04", "name": "比例式交叉相乘", "prereqs": ["K-RAT-03"]}, {"id": "K-RAT-05", "name": "比例分配", "prereqs": ["K-RAT-04"]}], "formulas": [{"id": "F-RAT-01", "name": "比", "latex": "a:b = \\frac{a}{b}", "knowledge_point_id": "K-RAT-01"}, {"id": "F-RAT-02", "name": "正比", "latex": "y = kx", "knowledge_point_id": "K-RAT-03"}, {"id": "F-RAT-03", "name": "反比", "latex": "y = \\frac{k}{x}", "knowledge_point_id": "K-RAT-03"}, {"id": "F-RAT-04", "name": "交叉相乘", "latex": "\\frac{a}{b}=\\frac{c}{d}\\Rightarrow ad=bc", "knowledge_point_id": "K-RAT-04"}]}, {"id": "T-POL", "name": "多項式（續）", "group": "數與代數", "knowledge_points": [{"id": "K-POL-01", "name": "展開與合併同類項", "prereqs": []}, {"id": "K-POL-02", "name": "完全平方與平方差", "prereqs": ["K-POL-01"]}, {"id": "K-POL-03", "name": "因式分解", "prereqs": ["K-POL-02"]}, {"id": "K-POL-04", "name": "餘式定理", "prereqs": ["K-POL-01"]}, {"id": "K-POL-05", "name": "因式定理", "prereqs": ["K-POL-04"]}, {"id": "K-POL-06", "name": "恆等式與比較係數", "prereqs": ["K-POL-01"]}, {"id": "K-POL-07", "name": "主項變換", "prereqs": ["K-POL-01"]}], "formulas": [{"id": "F-POL-01", "name": "完全平方", "latex": "(a\\pm b)^2=a^2\\pm 2ab+b^2", "knowledge_point_id": "K-POL-02"}, {"id": "F-POL-02", "name": "平方差", "latex": "a^2-b^2=(a-b)(a+b)", "knowledge_point_id": "K-POL-02"}, {"id": "F-POL-03", "name": "兩平方差展開差", "latex": "(a+b)^2-(a-b)^2=4ab", "knowledge_point_id": "K-POL-02"}, {"id": "F-POL-04", "name": "餘式定理", "latex": "P(x)\\div(x-a)\\Rightarrow 餘數=P(a)", "knowledge_point_id": "K-POL-04"}, {"id": "F-POL-05", "name": "因式定理", "latex": "x-a\\ 為因式 \\iff P(a)=0", "knowledge_point_id": "K-POL-05"}, {"id": "F-POL-06", "name": "二次展開", "latex": "(x+a)(x+b)=x^2+(a+b)x+ab", "knowledge_point_id": "K-POL-01"}]}, {"id": "T-NUM", "name": "數系", "group": "數與代數", "knowledge_points": [{"id": "K-NUM-01", "name": "整數／有理／無理／實數", "prereqs": []}, {"id": "K-NUM-02", "name": "H.C.F. 與 L.C.M.", "prereqs": []}, {"id": "K-NUM-03", "name": "進位制換算", "prereqs": []}, {"id": "K-NUM-04", "name": "有效數字與小數位", "prereqs": []}, {"id": "K-NUM-05", "name": "近似與絕對誤差", "prereqs": ["K-NUM-04"]}, {"id": "K-NUM-06", "name": "複數基本運算", "prereqs": ["K-NUM-01"]}], "formulas": [{"id": "F-NUM-01", "name": "HCF×LCM", "latex": "\\mathrm{HCF}(a,b)\\times\\mathrm{LCM}(a,b)=|ab|", "knowledge_point_id": "K-NUM-02"}, {"id": "F-NUM-02", "name": "進位展開", "latex": "\\sum d_i b^i", "knowledge_point_id": "K-NUM-03"}, {"id": "F-NUM-03", "name": "誤差半單位", "latex": "x\\pm\\frac{1}{2}u", "knowledge_point_id": "K-NUM-05"}, {"id": "F-NUM-04", "name": "虛數單位", "latex": "i^2=-1", "knowledge_point_id": "K-NUM-06"}]}, {"id": "T-EQN", "name": "方程與不等式", "group": "數與代數", "knowledge_points": [{"id": "K-EQN-01", "name": "一次方程與移項", "prereqs": []}, {"id": "K-EQN-02", "name": "聯立一次方程", "prereqs": ["K-EQN-01"]}, {"id": "K-EQN-03", "name": "二次方程解法", "prereqs": ["K-EQN-01"]}, {"id": "K-EQN-04", "name": "判別式與根的性質", "prereqs": ["K-EQN-03"]}, {"id": "K-EQN-05", "name": "一元一次不等式", "prereqs": ["K-EQN-01"]}, {"id": "K-EQN-06", "name": "線性不等式區域", "prereqs": ["K-EQN-05"]}, {"id": "K-EQN-07", "name": "線性規劃初步", "prereqs": ["K-EQN-06"]}], "formulas": [{"id": "F-EQN-01", "name": "求根公式", "latex": "x=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}", "knowledge_point_id": "K-EQN-03"}, {"id": "F-EQN-02", "name": "判別式", "latex": "\\Delta=b^2-4ac", "knowledge_point_id": "K-EQN-04"}, {"id": "F-EQN-03", "name": "不等式同號", "latex": "a>0\\Rightarrow ax>c-b\\ \\text{同向}", "knowledge_point_id": "K-EQN-05"}, {"id": "F-EQN-04", "name": "斜截式", "latex": "y=mx+c", "knowledge_point_id": "K-EQN-06"}]}, {"id": "T-FUN", "name": "函數與圖像", "group": "數與代數", "knowledge_points": [{"id": "K-FUN-01", "name": "函數值與定義域", "prereqs": []}, {"id": "K-FUN-02", "name": "一次函數圖像", "prereqs": ["K-FUN-01"]}, {"id": "K-FUN-03", "name": "二次函數頂點與開口", "prereqs": ["K-FUN-01"]}, {"id": "K-FUN-04", "name": "圖像平移與反射", "prereqs": ["K-FUN-02", "K-FUN-03"]}, {"id": "K-FUN-05", "name": "圖像讀取與參數意義", "prereqs": ["K-FUN-03"]}], "formulas": [{"id": "F-FUN-01", "name": "頂點式", "latex": "y=a(x-h)^2+k", "knowledge_point_id": "K-FUN-03"}, {"id": "F-FUN-02", "name": "水平平移", "latex": "y=f(x-h)\\Rightarrow 右移 h", "knowledge_point_id": "K-FUN-04"}, {"id": "F-FUN-03", "name": "垂直平移", "latex": "y=f(x)+k\\Rightarrow 上移 k", "knowledge_point_id": "K-FUN-04"}, {"id": "F-FUN-04", "name": "二次通式", "latex": "y=ax^2+bx+c", "knowledge_point_id": "K-FUN-03"}]}, {"id": "T-SEQ", "name": "數列", "group": "數與代數", "knowledge_points": [{"id": "K-SEQ-01", "name": "數列通項與規律", "prereqs": []}, {"id": "K-SEQ-02", "name": "等差數列", "prereqs": ["K-SEQ-01"]}, {"id": "K-SEQ-03", "name": "等比數列", "prereqs": ["K-SEQ-01"]}, {"id": "K-SEQ-04", "name": "求和公式", "prereqs": ["K-SEQ-02", "K-SEQ-03"]}, {"id": "K-SEQ-05", "name": "圖形／圖案遞迴", "prereqs": ["K-SEQ-01"]}], "formulas": [{"id": "F-SEQ-01", "name": "等差通項", "latex": "a_n=a_1+(n-1)d", "knowledge_point_id": "K-SEQ-02"}, {"id": "F-SEQ-02", "name": "等差求和", "latex": "S_n=\\frac{n}{2}[2a_1+(n-1)d]", "knowledge_point_id": "K-SEQ-04"}, {"id": "F-SEQ-03", "name": "等比通項", "latex": "a_n=a_1 r^{n-1}", "knowledge_point_id": "K-SEQ-03"}, {"id": "F-SEQ-04", "name": "三角數", "latex": "T_n=\\frac{n(n+1)}{2}", "knowledge_point_id": "K-SEQ-05"}]}, {"id": "T-VAR", "name": "變分", "group": "數與代數", "knowledge_points": [{"id": "K-VAR-01", "name": "正變", "prereqs": []}, {"id": "K-VAR-02", "name": "反變", "prereqs": []}, {"id": "K-VAR-03", "name": "聯變／混合變", "prereqs": ["K-VAR-01", "K-VAR-02"]}, {"id": "K-VAR-04", "name": "由已知點求常數", "prereqs": ["K-VAR-03"]}], "formulas": [{"id": "F-VAR-01", "name": "正變", "latex": "y=kx", "knowledge_point_id": "K-VAR-01"}, {"id": "F-VAR-02", "name": "反變", "latex": "y=\\frac{k}{x}", "knowledge_point_id": "K-VAR-02"}, {"id": "F-VAR-03", "name": "混合變例", "latex": "y=k_1 x^2+\\frac{k_2}{x}", "knowledge_point_id": "K-VAR-03"}]}, {"id": "T-TRI", "name": "三角學與解三角形", "group": "度量、圖形與空間", "knowledge_points": [{"id": "K-TRI-01", "name": "銳角三角比定義", "prereqs": []}, {"id": "K-TRI-02", "name": "特殊角值", "prereqs": ["K-TRI-01"]}, {"id": "K-TRI-03", "name": "餘角／誘導公式", "prereqs": ["K-TRI-01"]}, {"id": "K-TRI-04", "name": "正弦／餘弦定理", "prereqs": ["K-TRI-01"]}, {"id": "K-TRI-05", "name": "三角方程與圖像", "prereqs": ["K-TRI-03"]}, {"id": "K-TRI-06", "name": "方位角與應用", "prereqs": ["K-TRI-01"]}], "formulas": [{"id": "F-TRI-01", "name": "sin", "latex": "\\sin\\theta=\\frac{\\text{對}}{\\text{斜}}", "knowledge_point_id": "K-TRI-01"}, {"id": "F-TRI-02", "name": "cos", "latex": "\\cos\\theta=\\frac{\\text{鄰}}{\\text{斜}}", "knowledge_point_id": "K-TRI-01"}, {"id": "F-TRI-03", "name": "餘角", "latex": "\\cos(90^\\circ-\\theta)=\\sin\\theta", "knowledge_point_id": "K-TRI-03"}, {"id": "F-TRI-04", "name": "餘弦定理", "latex": "c^2=a^2+b^2-2ab\\cos C", "knowledge_point_id": "K-TRI-04"}, {"id": "F-TRI-05", "name": "餘弦週期", "latex": "y=A+B\\cos(kx),\\ T=\\frac{360^\\circ}{k}", "knowledge_point_id": "K-TRI-05"}]}, {"id": "T-MEN", "name": "求積法", "group": "度量、圖形與空間", "knowledge_points": [{"id": "K-MEN-01", "name": "平面圖形面積", "prereqs": []}, {"id": "K-MEN-02", "name": "弧長與扇形", "prereqs": ["K-MEN-01"]}, {"id": "K-MEN-03", "name": "相似面積比", "prereqs": ["K-MEN-01"]}, {"id": "K-MEN-04", "name": "立體表面積與體積", "prereqs": ["K-MEN-01"]}, {"id": "K-MEN-05", "name": "立體角與二面角", "prereqs": ["K-MEN-04"]}], "formulas": [{"id": "F-MEN-01", "name": "三角形面積", "latex": "\\frac12 bh", "knowledge_point_id": "K-MEN-01"}, {"id": "F-MEN-02", "name": "弧長", "latex": "L=r\\theta", "knowledge_point_id": "K-MEN-02"}, {"id": "F-MEN-03", "name": "扇形面積", "latex": "\\frac{n}{360}\\pi r^2", "knowledge_point_id": "K-MEN-02"}, {"id": "F-MEN-04", "name": "三角面積公式", "latex": "\\frac12 ab\\sin C", "knowledge_point_id": "K-MEN-01"}, {"id": "F-MEN-05", "name": "二面角餘弦", "latex": "\\cos\\theta=\\frac{\\vec n_1\\cdot\\vec n_2}{|\\vec n_1||\\vec n_2|}", "knowledge_point_id": "K-MEN-05"}]}, {"id": "T-LIN", "name": "坐標幾何：直線", "group": "度量、圖形與空間", "knowledge_points": [{"id": "K-LIN-01", "name": "距離與中點", "prereqs": []}, {"id": "K-LIN-02", "name": "斜率與截距", "prereqs": []}, {"id": "K-LIN-03", "name": "直線方程形式", "prereqs": ["K-LIN-02"]}, {"id": "K-LIN-04", "name": "平行與垂直", "prereqs": ["K-LIN-02"]}, {"id": "K-LIN-05", "name": "點到直線距離", "prereqs": ["K-LIN-03"]}], "formulas": [{"id": "F-LIN-01", "name": "距離", "latex": "d=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}", "knowledge_point_id": "K-LIN-01"}, {"id": "F-LIN-02", "name": "斜率", "latex": "m=\\frac{y_2-y_1}{x_2-x_1}", "knowledge_point_id": "K-LIN-02"}, {"id": "F-LIN-03", "name": "斜截式", "latex": "y=mx+c", "knowledge_point_id": "K-LIN-03"}, {"id": "F-LIN-04", "name": "點到線", "latex": "d=\\frac{|Ax_0+By_0+C|}{\\sqrt{A^2+B^2}}", "knowledge_point_id": "K-LIN-05"}]}, {"id": "T-CIR", "name": "坐標幾何：圓", "group": "度量、圖形與空間", "knowledge_points": [{"id": "K-CIR-01", "name": "圓的標準方程", "prereqs": []}, {"id": "K-CIR-02", "name": "圓心半徑判讀", "prereqs": ["K-CIR-01"]}, {"id": "K-CIR-03", "name": "圓與直線相交", "prereqs": ["K-CIR-01", "K-LIN-05"]}, {"id": "K-CIR-04", "name": "圓與點的位置", "prereqs": ["K-CIR-02"]}], "formulas": [{"id": "F-CIR-01", "name": "標準方程", "latex": "(x-h)^2+(y-k)^2=r^2", "knowledge_point_id": "K-CIR-01"}, {"id": "F-CIR-02", "name": "一般式半徑", "latex": "r=\\sqrt{g^2+f^2-c}", "knowledge_point_id": "K-CIR-02"}]}, {"id": "T-GEO", "name": "圓形幾何", "group": "度量、圖形與空間", "knowledge_points": [{"id": "K-GEO-01", "name": "圓心角與圓周角", "prereqs": []}, {"id": "K-GEO-02", "name": "切線與半徑垂直", "prereqs": ["K-GEO-01"]}, {"id": "K-GEO-03", "name": "弦、弧與對稱", "prereqs": ["K-GEO-01"]}, {"id": "K-GEO-04", "name": "多邊形內外角", "prereqs": []}, {"id": "K-GEO-05", "name": "相似／全等三角形", "prereqs": []}], "formulas": [{"id": "F-GEO-01", "name": "圓周角", "latex": "圓周角=\\frac12 同弧圓心角", "knowledge_point_id": "K-GEO-01"}, {"id": "F-GEO-02", "name": "切線垂直", "latex": "切線 \\perp 半徑", "knowledge_point_id": "K-GEO-02"}, {"id": "F-GEO-03", "name": "外角和", "latex": "正 n 邊形外角=\\frac{360^\\circ}{n}", "knowledge_point_id": "K-GEO-04"}, {"id": "F-GEO-04", "name": "內角和", "latex": "(n-2)\\times 180^\\circ", "knowledge_point_id": "K-GEO-04"}]}, {"id": "T-LOC", "name": "軌跡", "group": "度量、圖形與空間", "knowledge_points": [{"id": "K-LOC-01", "name": "到定點等距（圓）", "prereqs": []}, {"id": "K-LOC-02", "name": "到兩點等距（垂直平分線）", "prereqs": []}, {"id": "K-LOC-03", "name": "到定直線等距", "prereqs": []}, {"id": "K-LOC-04", "name": "軌跡方程描述", "prereqs": ["K-LOC-01", "K-LOC-02"]}], "formulas": [{"id": "F-LOC-01", "name": "圓軌跡", "latex": "\\{P: |PA|=r\\}", "knowledge_point_id": "K-LOC-01"}, {"id": "F-LOC-02", "name": "垂直平分線", "latex": "\\{P: |PA|=|PB|\\}", "knowledge_point_id": "K-LOC-02"}]}, {"id": "T-TRF", "name": "幾何變換", "group": "度量、圖形與空間", "knowledge_points": [{"id": "K-TRF-01", "name": "平移", "prereqs": []}, {"id": "K-TRF-02", "name": "反射", "prereqs": []}, {"id": "K-TRF-03", "name": "旋轉", "prereqs": []}, {"id": "K-TRF-04", "name": "極坐標與直角坐標", "prereqs": []}, {"id": "K-TRF-05", "name": "圖像變換綜合", "prereqs": ["K-TRF-01", "K-TRF-02", "K-TRF-03"]}], "formulas": [{"id": "F-TRF-01", "name": "逆時針 90°", "latex": "(x,y)\\mapsto(-y,x)", "knowledge_point_id": "K-TRF-03"}, {"id": "F-TRF-02", "name": "極徑", "latex": "r=\\sqrt{x^2+y^2}", "knowledge_point_id": "K-TRF-04"}]}, {"id": "T-CHR", "name": "統計圖表", "group": "數據處理", "knowledge_points": [{"id": "K-CHR-01", "name": "棒形／圓形圖讀取", "prereqs": []}, {"id": "K-CHR-02", "name": "幹葉圖", "prereqs": []}, {"id": "K-CHR-03", "name": "框線圖與四分位", "prereqs": []}, {"id": "K-CHR-04", "name": "散點圖與趨勢", "prereqs": []}, {"id": "K-CHR-05", "name": "頻數分佈表", "prereqs": []}], "formulas": [{"id": "F-CHR-01", "name": "圓形圖角", "latex": "扇形角 = 比例 \\times 360^\\circ", "knowledge_point_id": "K-CHR-01"}, {"id": "F-CHR-02", "name": "四分位距", "latex": "IQR=Q_3-Q_1", "knowledge_point_id": "K-CHR-03"}]}, {"id": "T-STA", "name": "集中趨勢與離差", "group": "數據處理", "knowledge_points": [{"id": "K-STA-01", "name": "平均數", "prereqs": []}, {"id": "K-STA-02", "name": "中位數與眾數", "prereqs": []}, {"id": "K-STA-03", "name": "加權平均", "prereqs": ["K-STA-01"]}, {"id": "K-STA-04", "name": "分佈域（極差）", "prereqs": []}, {"id": "K-STA-05", "name": "方差與標準差", "prereqs": ["K-STA-01"]}, {"id": "K-STA-06", "name": "數據增刪對統計量影響", "prereqs": ["K-STA-01", "K-STA-04", "K-STA-05"]}], "formulas": [{"id": "F-STA-01", "name": "平均數", "latex": "\\bar x=\\frac{\\sum x}{n}", "knowledge_point_id": "K-STA-01"}, {"id": "F-STA-02", "name": "加權平均", "latex": "\\bar x=\\frac{\\sum f_i x_i}{\\sum f_i}", "knowledge_point_id": "K-STA-03"}, {"id": "F-STA-03", "name": "極差", "latex": "R=\\max-\\min", "knowledge_point_id": "K-STA-04"}, {"id": "F-STA-04", "name": "標準差", "latex": "\\sigma=\\sqrt{\\frac{\\sum(x_i-\\bar x)^2}{n}}", "knowledge_point_id": "K-STA-05"}, {"id": "F-STA-05", "name": "加入新數據平均", "latex": "\\bar x_{new}=\\frac{n\\bar x+x_{new}}{n+1}", "knowledge_point_id": "K-STA-06"}]}, {"id": "T-PROB", "name": "概率", "group": "數據處理", "knowledge_points": [{"id": "K-PROB-01", "name": "古典概率", "prereqs": []}, {"id": "K-PROB-02", "name": "互斥與加法", "prereqs": ["K-PROB-01"]}, {"id": "K-PROB-03", "name": "獨立事件乘法", "prereqs": ["K-PROB-01"]}, {"id": "K-PROB-04", "name": "條件概率", "prereqs": ["K-PROB-03"]}, {"id": "K-PROB-05", "name": "與計數結合", "prereqs": ["K-PROB-01"]}], "formulas": [{"id": "F-PROB-01", "name": "古典", "latex": "P(E)=\\frac{n(E)}{n(S)}", "knowledge_point_id": "K-PROB-01"}, {"id": "F-PROB-02", "name": "互斥加", "latex": "P(A\\cup B)=P(A)+P(B)", "knowledge_point_id": "K-PROB-02"}, {"id": "F-PROB-03", "name": "條件", "latex": "P(A\\cap B)=P(A)P(B|A)", "knowledge_point_id": "K-PROB-04"}]}, {"id": "T-COM", "name": "排列與組合", "group": "數據處理", "knowledge_points": [{"id": "K-COM-01", "name": "計數基本原理", "prereqs": []}, {"id": "K-COM-02", "name": "排列", "prereqs": ["K-COM-01"]}, {"id": "K-COM-03", "name": "組合", "prereqs": ["K-COM-01"]}, {"id": "K-COM-04", "name": "組合恒等式", "prereqs": ["K-COM-03"]}], "formulas": [{"id": "F-COM-01", "name": "排列", "latex": "P(n,r)=\\frac{n!}{(n-r)!}", "knowledge_point_id": "K-COM-02"}, {"id": "F-COM-02", "name": "組合", "latex": "\\binom{n}{k}=\\frac{n!}{k!(n-k)!}", "knowledge_point_id": "K-COM-03"}, {"id": "F-COM-03", "name": "二項式和", "latex": "\\sum_{k=0}^n\\binom{n}{k}=2^n", "knowledge_point_id": "K-COM-04"}]}], "notes": ["所有分析 skills 欄位只准使用本冊 id。", "課題名與 docs/hub/data.js TOPICS.math 的 20 個葉節點一致。", "學生報告／自動出題稍後再做；本冊是計分基礎。"]}</script>
+<script>
+(function(){
+  const book = JSON.parse(document.getElementById('BOOK').textContent);
+  const groupOrder = ["數與代數", "度量、圖形與空間", "數據處理"];
+  const STORE = 'dsehub-card-theme-unlocks-v1';
+  const icons = ['📐','🔢','📈','🔷','✳️','📘','🎯','🧩'];
+  const kpName = {};
+  const formulaByKp = {};
+  book.topics.forEach(t => {
+    (t.knowledge_points||[]).forEach(k => kpName[k.id]=k.name);
+    (t.formulas||[]).forEach(f => {
+      (formulaByKp[f.knowledge_point_id]=formulaByKp[f.knowledge_point_id]||[]).push(f);
+    });
+  });
+
+  function load() { try { return JSON.parse(localStorage.getItem(STORE)||'{}')||{}; } catch { return {}; } }
+  function save(m) { localStorage.setItem(STORE, JSON.stringify(m)); }
+  let unlocks = load();
+  book.topics.forEach(t => (t.knowledge_points||[]).forEach(k => {
+    if (!(k.prereqs||[]).length && unlocks[k.id] === undefined) unlocks[k.id] = true;
+  }));
+  save(unlocks);
+
+  function depth(kp, memo={}) {
+    if (memo[kp.id] != null) return memo[kp.id];
+    const pre = kp.prereqs || [];
+    if (!pre.length) return memo[kp.id]=0;
+    const map = Object.fromEntries((current.knowledge_points||[]).map(x=>[x.id,x]));
+    return memo[kp.id] = 1 + Math.max(...pre.map(id => map[id] ? depth(map[id], memo) : 0));
+  }
+  function rarity(d) {
+    if (d >= 3) return ['legend','傳說'];
+    if (d === 2) return ['epic','史詩'];
+    if (d === 1) return ['rare','稀有'];
+    return ['common','普通'];
+  }
+  function canUnlock(kp) { return (kp.prereqs||[]).every(id => unlocks[id]); }
+  function allProgress() {
+    const ids=[]; book.topics.forEach(t=>(t.knowledge_points||[]).forEach(k=>ids.push(k.id)));
+    const on=ids.filter(id=>unlocks[id]).length;
+    return ids.length ? Math.round(100*on/ids.length) : 0;
+  }
+
+  let current = book.topics[0];
+  let selected = null;
+
+  const tabs = document.getElementById('tabs');
+  tabs.innerHTML = book.topics.map(t =>
+    `<button type="button" class="tab" data-id="${t.id}">${t.name}</button>`
+  ).join('');
+
+  function typeset(el) {
+    if (window.MathJax && MathJax.typesetPromise) MathJax.typesetPromise([el]).catch(()=>{});
+  }
+
+  function renderPanel() {
+    const panel = document.getElementById('panel');
+    if (!selected) { panel.innerHTML = `<div class="empty">點一張卡睇詳情同公式</div>`; return; }
+    const kp = (current.knowledge_points||[]).find(k=>k.id===selected);
+    if (!kp) return;
+    const on = !!unlocks[kp.id];
+    const ready = canUnlock(kp);
+    const pre = (kp.prereqs||[]).map(id=>kpName[id]||id).join('、') || '無（起始卡）';
+    const forms = (formulaByKp[kp.id]||[]).map(f=>`
+      <div class="formula"><div class="fid">${f.id}</div><strong>${f.name}</strong>
+      <div>$$${f.latex}$$</div></div>`).join('') || `<div class="empty">呢張卡未掛公式</div>`;
+    panel.innerHTML = `
+      <h2>${kp.name}</h2>
+      <div class="meta">${kp.id} · ${on?'已收集':(ready?'可以解鎖':'未解鎖')} · 先要識：${pre}</div>
+      ${forms}`;
+    typeset(panel);
+  }
+
+  function render() {
+    document.querySelectorAll('.tab').forEach(b => b.classList.toggle('active', b.dataset.id===current.id));
+    document.getElementById('branchMeta').textContent =
+      current.group + ' · ' + current.name + ' · ' + (current.knowledge_points||[]).length + ' 張卡';
+    document.getElementById('progress').textContent = '總進度 ' + allProgress() + '%';
+    const grid = document.getElementById('grid');
+    const memo = {};
+    grid.innerHTML = (current.knowledge_points||[]).map((k,i) => {
+      const d = depth(k, memo);
+      const [rk, rn] = rarity(d);
+      const on = !!unlocks[k.id];
+      const icon = on ? icons[i % icons.length] : '🔒';
+      return `<button type="button" class="card r-${rk} ${on?'':'locked'} ${selected===k.id?'selected':''}" data-id="${k.id}">
+        <span class="rarity">${rn}</span>
+        <div class="art">${icon}</div>
+        <div class="cid">${k.id}</div>
+        <div class="cname">${k.name}</div>
+        <span class="status ${on?'on':'off'}">${on?'已收集':'未收集'}</span>
+      </button>`;
+    }).join('');
+    renderPanel();
+  }
+
+  tabs.addEventListener('click', e => {
+    const b = e.target.closest('.tab'); if (!b) return;
+    current = book.topics.find(t=>t.id===b.dataset.id);
+    selected = null; render();
+  });
+  document.getElementById('grid').addEventListener('click', e => {
+    const c = e.target.closest('.card'); if (!c) return;
+    selected = c.dataset.id; render();
+  });
+  document.getElementById('btnUnlock').addEventListener('click', () => {
+    if (!selected) return;
+    const kp = (current.knowledge_points||[]).find(k=>k.id===selected);
+    if (!kp) return;
+    if (unlocks[kp.id]) return;
+    if (!canUnlock(kp)) { alert('仲未滿足先備卡，唔可以解鎖'); return; }
+    unlocks[kp.id]=true; save(unlocks); render();
+  });
+  document.getElementById('btnReset').addEventListener('click', () => {
+    (current.knowledge_points||[]).forEach(k => { unlocks[k.id] = !(k.prereqs||[]).length; });
+    save(unlocks); selected=null; render();
+  });
+
+  render();
+})();
+</script>
+</body>
+</html>

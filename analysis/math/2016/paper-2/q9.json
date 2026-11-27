@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2016",
+  "paper": "Paper 2",
+  "qno": "9",
+  "hash": "#2016P2Q9"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "二次函數圖像性質",
+   "secondary_topics": [
+    "係數與開口方向關係",
+    "頂點坐標計算",
+    "y 軸截距分析"
+   ],
+   "required_formulas": [
+    "y = a(x-h)^2 + k (頂點式)",
+    "對稱軸 x = -b/(2a)"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "開口方向判斷錯誤",
+    "student_thought_process": "學生忽略 a<0，誤以為係數絕對值大小決定開口，或忘記二次項係數為負時應向下開口。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "頂點位置計算錯誤",
+    "student_thought_process": "學生算出頂點 x 座標正確，但將 y 座標代入時忽略 a 的負號影響，導致頂點偏高。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "截距符號判斷錯誤",
+    "student_thought_process": "學生正確算出頂點，但將 x=0 代入時忘記 +a 項的負值，誤判 y 軸截距應為正。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "觀察二次函數 y = Ax^2+Bx+C 中，A 的符號決定圖像開口方向。",
+   "計算頂點坐標時，需將 x=-1/(2a) 代入原式，注意 a 為負數時的運算結果。",
+   "檢查 x=0 時的 y 值（y 軸截距），判斷其正負與題目條件 -1<a<0 的符號關係。"
+  ],
+  "quick_solution_strategy": "由 a<0 知開口向下；頂點 x=-1/(2a) 為正；x=0 時 y=1+a 小於 1。符合者唯 D。"
+ },
+ "skills": {
+  "topic_id": "T-FUN",
+  "knowledge_point_ids": [
+   "K-FUN-01",
+   "K-FUN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

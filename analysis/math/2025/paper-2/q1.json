@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2025",
+  "paper": "Paper 2",
+  "qno": "1",
+  "hash": "#2025P2Q1"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "指數法則 (Exponents)",
+   "secondary_topics": [
+    "冪的乘法",
+    "冪的除法",
+    "冪的乘方"
+   ],
+   "required_formulas": [
+    "(a^m)^n = a^{mn}",
+    "\\frac{a^m}{a^n} = a^{m-n}",
+    "(ab)^n = a^n b^n"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "冪的乘方指數計算錯誤",
+    "student_thought_process": "將 (27x)^5 算成 27^5 x^5，然後除以 (3x^-2)^4。在處理 27 時，可能誤以為 27/3=9 再平方得 81(3^4)，但忽略了分母指數運算後的係數變化，或者在計算 27^5 / 3^4 時完全搞錯，直接猜測小數字。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "冪的乘方與除法混淆",
+    "student_thought_process": "正確將 27 分解為 3^3，但在計算 (3^3)^5 / (3^-2)^4 時，錯誤地認為指數相減應為 15-(-8)=23 或類似錯誤，最終算出 3^4。可能是將分子分母的指數直接相加後再除以某個數，或是誤以為 (a/b)^n = a^n/b。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "冪的乘方指數計算錯誤",
+    "student_thought_process": "正確分解 27=3^3，但在計算 (3^3)^5 / (3^-2)^4 時，將分母的負指數 -8 誤認為正數 8，導致 15-8=7，再 somehow 變成 14。或者是在處理 (3x^-2)^4 時，錯誤地將 x 的指數運算成 x^8 而非 x^{-8}，導致分母變大，結果偏小或偏大。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：觀察題目結構，這是一個「冪除以冪」的形式，且底數都含有 $x$ 和數字係數。請先分別處理係數部分與變數 $x$ 的部分。",
+   "提示 2：運用冪的乘方法則 $(a^m)^n = a^{mn}$ 展開分子與分母。特別注意分母中 $x^{-2}$ 的指數運算會產生負數指數，處理時需小心符號。",
+   "提示 3：將所有底數為 3 的項合併計算指數（分子減去分母），將所有底數為 $x$ 的項合併計算指數。最後檢查係數與變數指數是否匹配選項。"
+  ],
+  "quick_solution_strategy": "先展開冪，再分別合併 $3$ 與 $x$ 的指數：分子 $3^{15}x^5$，分母 $3^{-8}x^{-8}$，相除得 $3^{23}x^{13}$。等等，重新計算：$(27x)^5 = (3^3 x)^5 = 3^{15}x^5$；$(3x^{-2})^4 = 3^4 x^{-8}$。除法：$3^{15-4} x^{5-(-8)} = 3^{11}x^{13}$。"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

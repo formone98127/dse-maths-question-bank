@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2025",
+  "paper": "Paper 2",
+  "qno": "41",
+  "hash": "#2025P2Q41"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "幾何，三角形內心坐標公式",
+   "secondary_topics": [
+    "座標平面",
+    "三角形面積計算"
+   ],
+   "required_formulas": [
+    "(x_a, y_a), (x_b, y_b), (x_c, y_c) 為頂點，a, b, c 為對邊長，則內心 I 之 x 坐標為 \\frac{ax_a + bx_b + cx_c}{a+b+c}"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "內心公式分母處理錯誤",
+    "student_thought_process": "學生可能將內心坐標公式記錯，誤以為是 \\frac{x_a+x_b+x_c}{3} 或混淆邊權重，導致計算出錯誤數值如 70。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "邊長表達式代入錯誤",
+    "student_thought_process": "學生在設定 \\Delta OUV 邊長時，可能將斜邊 \\sqrt{20^2+y^2} 簡化錯誤，或計算過程中出現代數運算失誤。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略直角三角形特性",
+    "student_thought_process": "學生可能未利用 \\Delta OUV 為直角三角形的性質，隨意假設邊長關係或誤用一般三角形公式導致過大結果。"
+   }
+  },
+  "scaffolding_hints": [
+   "回憶三角形內心坐標的加權平均公式，其權重為何？",
+   "在 \\Delta OUV 中，\\angle UOV = 90^\\circ，這意味著哪些邊長可以用 y 表示？",
+   "將內心 x 坐標公式代入已知條件，解出 y 後計算面積。"
+  ],
+  "quick_solution_strategy": "利用內心 x 坐標公式 \\frac{a x_O + b x_U + c x_V}{a+b+c} = 6，其中 a, b, c 為對應邊長，解出 y 即可。"
+ },
+ "skills": {
+  "topic_id": "T-LIN",
+  "knowledge_point_ids": [
+   "K-LIN-01",
+   "K-LIN-02"
+  ],
+  "formula_ids": [
+   "F-LIN-01",
+   "F-LIN-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

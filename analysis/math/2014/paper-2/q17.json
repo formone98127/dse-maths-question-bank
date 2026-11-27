@@ -1,0 +1,86 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 2",
+  "qno": "17",
+  "hash": "#2014P2Q17"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "幾何面積比與相似形",
+   "secondary_topics": [
+    "平行線性質",
+    "同高三角形面積比等於底邊比"
+   ],
+   "required_formulas": [
+    "\\frac{Area_1}{Area_2} = \\frac{Base_1}{Base_2} (同高三角形)",
+    "\\text{梯形面積} = \\text{上底} + \\text{下底} + \\text{中間平行四邊形或相關區域}"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "忽略比例係數平方或誤算總和",
+    "student_thought_process": "算出\\triangle ADE=12 後，直接將已知面積 4+8+12=24 或 4+8+9=21 等計算錯誤，未正確加總梯形各部分。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤用比例關係導致面積低估",
+    "student_thought_process": "由\\triangle BCD=4 推導\\triangle ABD 時，可能誤以為底邊比 3:2 直接對應面積比 3:2，算出\\triangle ABD=6，再加其他部分得 19 或類似錯誤。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "誤將平行四邊形面積加錯",
+    "student_thought_process": "正確算出\\triangle ADE=12，但計算梯形時將\\triangle ABD 與\\triangle BCD 重複計算或遺漏\\triangle CDE，導致數值偏大。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "觀察圖中\\triangle BCD 與\\triangle CDE，它們有共同的頂點 D，底邊在同一直線上，可利用平行線性質判斷\\triangle ADE 與\\triangle BCD 的關係。",
+   "利用同高三角形面積比等於底邊比的性質：因為\\triangle BCD 面積為 4，底邊比\\frac{BC}{AC}=\\frac{2}{5}，推導\\triangle ABD 面積；再利用平行線\\ AE\\parallel BD 判斷\\triangle ADE 與\\triangle BCD 的關係。",
+   "梯形\\ ABDE 的面積可由\\triangle ABD 加上\\triangle ADE 組成，或者由\\triangle ABC 加上\\triangle ADE 再減去多餘部分，請先求出\\triangle ADE 的面積。"
+  ],
+  "quick_solution_strategy": "利用同高三角形面積比等於底邊比，先求\\triangle ABD=6；再由平行線得\\triangle ADE 與\\triangle BCD 關係或直接用\\triangle ADE 面積公式推導，最後加總。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-05"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

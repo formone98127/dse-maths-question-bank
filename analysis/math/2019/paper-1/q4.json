@@ -1,0 +1,97 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2019",
+  "paper": "Paper 1",
+  "qno": "4",
+  "hash": "#2019P1Q4"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "因式分解",
+   "secondary_topics": [
+    "平方差公式",
+    "提公因式法",
+    "十字相乘法"
+   ],
+   "required_formulas": [
+    "$a^2 - b^2 = (a-b)(a+b)$",
+    "$ax^2 + bx + c = a(x-x_1)(x-x_2)$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "觀察 (a) 式為平方差形式，直接套用公式分解。",
+    "marks": 1,
+    "common_error": "",
+    "error_category": null
+   },
+   {
+    "step": 2,
+    "what": "觀察 (b) 式先提公因式 $n$，再對剩餘二次項十字相乘。",
+    "marks": 1,
+    "common_error": "忘記提公因式 $n$ 直接分解導致答案錯誤。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "觀察 (c) 式可將前兩項與後三項分別組合成 (a) 與 (b)。",
+    "marks": 1,
+    "common_error": "看不出題目設計為 (a)+(b) 的組合結構。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "將 (a) 與 (b) 的結果相加，提取公因式 $(2m-3)n$。",
+    "marks": 1,
+    "common_error": "最後一步提公因式時符號出錯或漏項。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "考生常忽略 (b) 題需先提公因式，且在 (c) 題未能靈活運用前兩小題結果進行整體因式分解。",
+  "scaffolding_hints": [
+   "Hint1: (a) 是典型的 $A^2-B^2$ 形式。",
+   "Hint2: (b) 必須先提取 $n$ 才能用十字相乘。",
+   "Hint3: (c) 式其實是 (a)+(b)，試著把題目拆開看。"
+  ],
+  "quick_solution_strategy": "先解 (a)(b) 建立模式，(c) 直接將 (a) 與 (b) 的結果合併並提公因式即可。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-03"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "2": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

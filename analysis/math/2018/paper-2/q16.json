@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2018",
+  "paper": "Paper 2",
+  "qno": "16",
+  "hash": "#2018P2Q16"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "相似三角形與面積比",
+   "secondary_topics": [
+    "平行四邊形性質",
+    "共高三角形面積比等於底邊比"
+   ],
+   "required_formulas": [
+    "\\frac{Area_1}{Area_2} = \\left(\\frac{side_1}{side_2}\\right)^2 (相似圖形)",
+    "\\frac{Area_{\\triangle ABF}}{Area_{\\triangle EDF}} = \\left(\\frac{AB}{ED}\\right)^2",
+    "\\frac{AF}{FE} = \\frac{BF}{FD} = \\frac{AB}{DE}"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "比例計算錯誤",
+    "student_thought_process": "算出 \\triangle ABE 面積為 200，但忘記加上 \\triangle DEF 的面積 (67.5)，直接加錯或漏加。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆相似比與線段比",
+    "student_thought_process": "誤以為 \\triangle ABF 與 \\triangle EDF 的相似比是 5:3，導致面積比算成 25:9，後續計算全錯。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "漏掉關鍵區域",
+    "student_thought_process": "只算了 \\triangle ABF + \\triangle ABE 的部分，或者錯誤地將 \\triangle BFE 的面積重複計算。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察圖形，\\triangle ABF 與 \\triangle EDF 是相似三角形，請找出它們的相似比。",
+   "利用平行四邊形對邊相等的性質，確定 DE 與 AB 的長度關係。",
+   "將四邊形 CDFE 的面積拆解為 \\triangle DEF 與 \\triangle CEF 兩部分分別計算。"
+  ],
+  "quick_solution_strategy": "先求相似比得面積比算出 \\triangle DEF，再利用底邊比求 \\triangle CEF，最後相加。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-05"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

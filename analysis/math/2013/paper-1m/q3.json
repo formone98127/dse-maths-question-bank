@@ -1,0 +1,130 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 1M",
+  "qno": "3",
+  "hash": "#2013P1MQ3"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "微積分",
+   "secondary_topics": [
+    "微分法",
+    "定積分應用",
+    "直線方程"
+   ],
+   "required_formulas": [
+    "$\\frac{dy}{dx} = (x-2)^{\\frac{1}{3}} + \\frac{x}{3}(x-2)^{-\\frac{2}{3}}$",
+    "$\\int_{a}^{b} f(x) dx$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 480,
+   "marks": 8
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "求 $x=3$ 處切線斜率並寫出直線 $L$ 方程",
+    "marks": 2,
+    "common_error": "微分時忽略冪數法則或計算 $(3-2)$ 的冪次錯誤",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "聯立 $C$ 與 $L$ 方程解出兩個交點的 $x$ 座標",
+    "marks": 2,
+    "common_error": "忘記檢查原點是否為交點，或解三次方程時漏根",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 3,
+    "what": "繪製草圖確定積分上下限與被積函數關係",
+    "marks": 1,
+    "common_error": "搞錯哪條曲線在上方，導致被積函數符號錯誤",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "設定定積分表達式（注意兩交點間區域）",
+    "marks": 1,
+    "common_error": "上下限顛倒或忘記取絕對值/分段積分",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 5,
+    "what": "計算定積分（使用冪函數積分法則）",
+    "marks": 1,
+    "common_error": "積分後常數項處理不當或指數運算錯誤",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "代入上下限計算最終面積值並檢查單位",
+    "marks": 1,
+    "common_error": "計算結果為負數未取絕對值或四捨五入錯誤",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "此題測試學生將微分與積分結合解決幾何面積問題的能力，常見失分點在於解交點時漏掉原點及積分上下限設定錯誤。",
+  "scaffolding_hints": [
+   "先求導數 $\\frac{dy}{dx}$ 並代入 $x=3$ 得斜率 $m$。",
+   "直線過原點，故方程為 $y = mx$。",
+   "令 $x(x-2)^{1/3} = mx$，注意 $x=0$ 是一個解。"
+  ],
+  "quick_solution_strategy": "先微分得斜率寫出直線方程；聯立方程找交點（含 $x=0$）；畫圖定積分上下限；計算面積。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "5": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

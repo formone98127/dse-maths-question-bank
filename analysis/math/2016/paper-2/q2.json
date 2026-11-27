@@ -1,0 +1,86 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2016",
+  "paper": "Paper 2",
+  "qno": "2",
+  "hash": "#2016P2Q2"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "分式方程變形",
+   "secondary_topics": [
+    "基本代數運算",
+    "移項合併同類項"
+   ],
+   "required_formulas": [
+    "$\\frac{a}{x} = k \\Rightarrow x = \\frac{a}{k}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "分母符號錯誤",
+    "student_thought_process": "移項後得 $3y-b$，卻寫成 $b-3y$，忽略了合併後的符號方向。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "分子抄錯",
+    "student_thought_process": "混淆了題目中的 $a$ 與 $b$，將原式中的 $\\frac{a}{x}$ 解出時錯誤地使用了 $by$。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "分子抄錯且分母符號錯誤",
+    "student_thought_process": "同時犯下將 $a$ 寫成 $b$，以及將分母 $3y-b$ 寫成 $a-3y$ 的多重概念混淆。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察等式左邊含有 $\\frac{a}{x}$ 的項，思考如何將其隔離。",
+   "將常數項移至右邊後，注意合併同類項時符號的變化。",
+   "利用倒數關係 $x = \\frac{a}{\\text{係數}}$ 完成最後一步變形。"
+  ],
+  "quick_solution_strategy": "移項得 $\\frac{a}{x} = 3 - \\frac{b}{y}$，通分右邊再取倒數求 $x$"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

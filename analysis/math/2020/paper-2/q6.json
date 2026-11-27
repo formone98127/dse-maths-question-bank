@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2020",
+  "paper": "Paper 2",
+  "qno": "6",
+  "hash": "#2020P2Q6"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "多項式除法與因式定理",
+   "secondary_topics": [
+    "餘數定理",
+    "一元一次方程式求解",
+    "函數值計算"
+   ],
+   "required_formulas": [
+    "因式定理：若 $x-c$ 為 $f(x)$ 之因式，則 $f(c)=0$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "符號錯誤導致負值",
+    "student_thought_process": "算出 $a=4$ 後，代入 $x=2$ 時將 $-96$ 誤認為是 $g(2)$ 的正確結果，或是計算 $4\\cdot8+32-24$ 時出現符號混淆。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆因式定理與題目所求",
+    "student_thought_process": "誤以為題目問的是 $g(-2)$ 或因式定理的結果，直接選 $0$，未注意到題目要求計算 $g(2)$。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "分數運算錯誤",
+    "student_thought_process": "在解 $a(-8)+16a-24=0$ 時，錯誤地將 $8a=24$ 算成 $a=3$，導致後續代入計算全錯。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "回想因式定理：若 $x+2$ 是 $g(x)$ 的因式，代表當 $x$ 為何值時，$g(x)=0$？",
+   "將上述求得的 $x$ 值代入函數表達式，建立關於常數 $a$ 的一元一次方程式並求解。",
+   "求得 $a$ 後，請小心地將 $x=2$ 代入原式 $g(x)$ 進行計算，注意各項符號與運算順序。"
+  ],
+  "quick_solution_strategy": "利用因式定理求 $a=4$，再代 $x=2$ 入 $g(x)$ 算出 $g(2)=48$"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-05"
+  ],
+  "formula_ids": [
+   "F-POL-05"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-POL-05",
+    "formula_id": "F-POL-05",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-POL-05",
+    "formula_id": "F-POL-05",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-POL-05",
+    "formula_id": "F-POL-05",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

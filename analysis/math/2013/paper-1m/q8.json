@@ -1,0 +1,117 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 1M",
+  "qno": "8",
+  "hash": "#2013P1MQ8"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "條件概率與全概率公式",
+   "secondary_topics": [
+    "獨立事件",
+    "互斥事件"
+   ],
+   "required_formulas": [
+    "$P(A|B) = \\frac{P(A \\cap B)}{P(B)}$",
+    "$P(A) = P(A|B)P(B) + P(A|\\neg B)P(\\neg B)$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "定義事件：M=選Mabel, O=選Owen, H=中靶，P=得獎（至少中一次）",
+    "marks": 1,
+    "common_error": "未定義事件符號導致邏輯混亂",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 2,
+    "what": "(a) 計算 Mabel 被選中時，至少中一次的機率（1 - 全不中）",
+    "marks": 1,
+    "common_error": "直接將 0.6 乘以 3 或誤用加法",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "(b) 利用全概率公式計算 Team A 總體得獎機率",
+    "marks": 2,
+    "common_error": "忘記乘以被選中的機率 (0.7/0.3)",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "(c) 先計算 Team A 不得獎的總機率",
+    "marks": 1,
+    "common_error": "計算補集時算錯（如 1-0.6*0.5）",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "(c) 應用貝氏定理求在不得獎條件下 Owen 被選中的機率",
+    "marks": 1,
+    "common_error": "分子分母顛倒或漏掉 O 被選的機率",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "此題測試學生對條件概率及全概率公式的綜合運用，常見失誤在於混淆「至少一次」的計算方式（應用補集法）及忽略選擇人的機率權重。",
+  "scaffolding_hints": [
+   "Hint1: 「至少中一次」通常較易計算其反面「全部不中」。",
+   "Hint2: 全概率公式結構為 $P(E) = P(E|M)P(M) + P(E|O)P(O)$。",
+   "Hint3: 貝氏定理分子是「特定情況且發生結果」的機率，分母是該結果總機率。"
+  ],
+  "quick_solution_strategy": "先算單人不得獎機率，再用補集求得獎；全概率公式合併兩人情況；最後用貝氏定理反推條件機率。"
+ },
+ "skills": {
+  "topic_id": "T-PROB",
+  "knowledge_point_ids": [
+   "K-PROB-04"
+  ],
+  "formula_ids": [
+   "F-PROB-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "2": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

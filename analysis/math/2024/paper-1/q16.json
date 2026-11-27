@@ -1,0 +1,106 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 1",
+  "qno": "16",
+  "hash": "#2024P1Q16"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "組合與概率",
+   "secondary_topics": [
+    "超幾何分佈",
+    "互斥事件"
+   ],
+   "required_formulas": [
+    "$\\binom{n}{r}$",
+    "$P(A) = \\frac{N_A}{N_{total}}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "計算總組合數及(a)部有利情況數",
+    "marks": 1,
+    "common_error": "使用排列公式而非組合，或忽略同時抽取的條件。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 2,
+    "what": "計算(a)部概率並化簡答案",
+    "marks": 1,
+    "common_error": "未將分數約至最簡單形式，或計算錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "分析(b)部條件：至多 3 紅杯即至少 2 白杯",
+    "marks": 1,
+    "common_error": "誤解「至多 3 紅」為剛好 3 紅，或漏算情況。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "計算(b)部有利情況：2 白 3 紅 + 3 白 2 紅",
+    "marks": 1,
+    "common_error": "漏算其中一種分佈，或重複計算。",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "此題測試學生對超幾何分佈的理解及處理互斥事件之和的能力，常見失誤在於未能正確將「至多」條件轉化為具體的組合情況加總。",
+  "scaffolding_hints": [
+   "回想 $\\binom{n}{r}$ 代表從 $n$ 個中選 $r$ 個的方法數。",
+   "注意題目是同時抽取，故使用組合而非排列。",
+   "(b)部需將「2 白 3 紅」與「3 白 2 紅」兩種互斥情況分別計算後相加。"
+  ],
+  "quick_solution_strategy": "先算總組合 $\\binom{20}{5}$，(a)用 $\\binom{4}{1}\\binom{16}{4}$；(b)轉化為求白杯數 $\\ge 2$，即 $\\binom{4}{2}\\binom{16}{3} + \\binom{4}{3}\\binom{16}{2}$。"
+ },
+ "skills": {
+  "topic_id": "T-PROB",
+  "knowledge_point_ids": [
+   "K-PROB-01",
+   "K-PROB-02"
+  ],
+  "formula_ids": [
+   "F-PROB-01",
+   "F-PROB-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "2": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

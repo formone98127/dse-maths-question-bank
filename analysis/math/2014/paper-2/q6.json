@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 2",
+  "qno": "6",
+  "hash": "#2014P2Q6"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "不等式性質",
+   "secondary_topics": [
+    "實數大小關係",
+    "平方運算對正負號的影響"
+   ],
+   "required_formulas": [
+    "若 $a>b$ 且 $c>0$, 則 $ac>bc$",
+    "若 $a>b$ 且 $c<0$, 則 $ac<bc$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略 II 與 III 的正確性",
+    "student_thought_process": "學生可能認為平方後大小關係不變，或誤以為 $k^2$ 會改變不等號方向。未發現 II 是加減法性質必成立，III 因 $k^2>0$ 也必成立。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略 I 與 III 的正確性",
+    "student_thought_process": "學生知道 II 正確，但錯誤地認為 $a^2>b^2$ 不成立（例如取負數），且誤以為除以 $k^2$ 會改變方向。未注意到 $k^2$ 恆為正。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略 II 的正確性",
+    "student_thought_process": "學生正確分析出 I 與 III，但忽略了不等式兩邊同時加上一個數（II）時，大小關係絕對不變。這是對不等式基本性質的遺漏。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "回想不等式的基本性質：兩邊同時加上或減去同一個數，不等號方向會改變嗎？",
+   "思考 $k<0$ 時，$k^2$ 的符號是什麼？除以一個正數對不等式有何影響？",
+   "嘗試舉例驗證：令 $a=1, b=-5, k=-2$，分別計算 I、II、III 是否成立。"
+  ],
+  "quick_solution_strategy": "利用不等式性質：加減法不變號；除以正數（$k^2>0$）不變號；平方需視符號而定。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

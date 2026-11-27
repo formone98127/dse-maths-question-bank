@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 2",
+  "qno": "33",
+  "hash": "#2013P2Q33"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "十六進制數值展開",
+   "secondary_topics": [
+    "位值原理",
+    "指數運算規則"
+   ],
+   "required_formulas": [
+    "\\sum d_i \\times b^i",
+    "16^{n-1} 為最高位權重"
+   ],
+   "bloom_taxonomy_level": "理解",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "十六進制符號誤讀",
+    "student_thought_process": "將 'E' 誤認為十進制的 11，而非十六進制的 14。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "位權指數計算錯誤",
+    "student_thought_process": "將最高位 'E' 的權重誤算為 $16^{12}$，導致整體指數偏移。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "多重概念混淆",
+    "student_thought_process": "同時犯下 'E'=11 與位權指數錯誤，且將尾數 '11' 誤讀為 272。"
+   }
+  },
+  "scaffolding_hints": [
+   "十六進制中，字母 A-F 分別代表十進制的 10-15，請先確認 'E' 的數值。",
+   "位值原理公式為 $d_n \\times b^{n-1} + \\dots + d_1 \\times b^0$，注意指數與位數的關係。",
+   "將十六進制數字從右至左編號（個位為第 1 位），計算各位置對應的 $16$ 次方權重。"
+  ],
+  "quick_solution_strategy": "確認 E=14，最高位在第 12 位故指數為 11，尾數 11 即十進制 17。"
+ },
+ "skills": {
+  "topic_id": "T-NUM",
+  "knowledge_point_ids": [
+   "K-NUM-01",
+   "K-NUM-02"
+  ],
+  "formula_ids": [
+   "F-NUM-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

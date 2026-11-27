@@ -1,0 +1,102 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 1",
+  "qno": "5",
+  "hash": "#2021P1Q5"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "一元一次方程",
+   "secondary_topics": [
+    "代數表達式",
+    "應用題建模"
+   ],
+   "required_formulas": [
+    "$x + y = \\text{總數}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "設男生有 $x$ 張，女生有 $y$ 張，列出初始關係式。",
+    "marks": 1,
+    "common_error": "未正確設定未知數或忽略「3倍」的條件。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 2,
+    "what": "根據送貼紙後的情況，列出新的關係式：$(y+20) = 2(x-20)$。",
+    "marks": 1,
+    "common_error": "混淆送貼紙後的數量關係，誤寫為 $x-20=2(y+20)$。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "利用初始條件 $x = 3y$ 代入新方程求解 $y$。",
+    "marks": 1,
+    "common_error": "代入錯誤或計算出錯導致 $y$ 值不正確。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "求出 $x$ 與 $y$ 後，計算總數 $x+y$。",
+    "marks": 1,
+    "common_error": "只算出個別數量而忘記題目要求的是「總數」。",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "考評報告指出考生常誤解送貼紙後的倍數關係，將「女生變為男生的2倍」錯解為「男生剩餘變為女生的2倍」，導致方程建立錯誤。",
+  "scaffolding_hints": [
+   "先畫圖或列表表示送貼紙前後的數量變化。",
+   "注意題目是求「總數」而非個別數量。",
+   "檢查代入步驟時是否保持等式平衡。"
+  ],
+  "quick_solution_strategy": "設男生 $x$、女生 $y$，由 $x=3y$ 及 $y+20=2(x-20)$ 聯立解出 $x,y$，再求和。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

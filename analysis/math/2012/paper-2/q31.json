@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2012",
+  "paper": "Paper 2",
+  "qno": "31",
+  "hash": "#2012P2Q31"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-16",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "最大公因數與最小公倍數 (H.C.F. & L.C.M.)",
+   "secondary_topics": [
+    "指數法則",
+    "質因數分解"
+   ],
+   "required_formulas": [
+    "L.C.M. × H.C.F. = 數式 1 × 數式 2 × 數式 3",
+    "H.C.F. = 各底數的最低次方",
+    "L.C.M. = 各底數的最高次方"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "忽略係數與 c 的次方",
+    "student_thought_process": "學生可能正確算出 b 的次數為 2，但忽略了 L.C.M. 中的係數 4 和變數 c。他們可能錯誤地認為第三個數式不需要包含 c，或者在計算係數時將 4 遺漏，直接選了最簡單的 ab^2。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "b 的次數計算錯誤",
+    "student_thought_process": "學生在計算 b 的指數時出錯，可能將 H.C.F. (b^2) 與 L.C.M. (b^5) 的平均值或其他錯誤邏輯應用，導致選出 b^2。此外，他們可能正確處理了係數 2 和 c，但完全搞錯了 b 的最高次方與最低次方的關係。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "b 的次數計算錯誤",
+    "student_thought_process": "學生同樣在 b 的指數上出錯，選出了 b^5。這通常意味著他們誤以為第三個數式必須包含 L.C.M. 中的最高次方，或者混淆了 H.C.F. 和 L.C.M. 對於第三個數式的貢獻（即認為第三數式需補足 L.C.M. 缺少的部分，而非僅取交集與並集的剩餘部分）。"
+   }
+  },
+  "scaffolding_hints": [
+   "Hint 1 啟發：回想兩個數式的 H.C.F. 和 L.C.M. 與這兩個數式本身之間的乘積關係是什麼？",
+   "Hint 2 知識：利用公式 $L.C.M. \\times H.C.F. = (\\text{數式}_1) \\times (\\text{數式}_2) \\times (\\text{數式}_3)$，將已知數值代入。注意檢查係數、a、b、c 各自的指數。",
+   "Hint 3 破題：計算出 $4a^4b^5c^6 \\times ab^2$ 後，再除以 $(2a^2b^4c) \\times (4a^4b^2c^6)$，觀察各變數指數的變化即可得出答案。"
+  ],
+  "quick_solution_strategy": "利用公式 $LCM \\times HCF = P_1 \\times P_2 \\times P_3$，代入數值化簡求 $P_3$"
+ },
+ "skills": {
+  "topic_id": "T-NUM",
+  "knowledge_point_ids": [
+   "K-NUM-02"
+  ],
+  "formula_ids": [
+   "F-NUM-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-NUM-02",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-NUM-02",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-NUM-02",
+    "formula_id": null,
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

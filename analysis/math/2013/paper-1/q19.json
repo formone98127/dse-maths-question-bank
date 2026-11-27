@@ -1,0 +1,133 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 1",
+  "qno": "19",
+  "hash": "#2013P1Q19"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "數列",
+   "secondary_topics": [
+    "等比數列",
+    "指數函數",
+    "對數運算",
+    "不等式"
+   ],
+   "required_formulas": [
+    "$S_n = a + ar + \\dots + ar^{n-1}$",
+    "$\\log_b(x^y) = y \\log_b x$",
+    "$a^x > a^y \\iff x > y$ (當 $a>1$)"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 300,
+   "marks": 9
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "建立第 n 年年終樓面面積遞迴關係式，區分落成與拆卸量。",
+    "marks": 2,
+    "common_error": "忘記將 r% 轉換為小數或誤以為是加減關係而非乘除增長。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "利用第 1 年與第 3 年數據建立方程，解出常數 r 之值。",
+    "marks": 2,
+    "common_error": "錯誤地將拆卸量簡單相加而非考慮複利增長效應。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "寫出第 n 年年終總面積 $A_n$ 的通項公式（等比級數和）。",
+    "marks": 2,
+    "common_error": "忘記減去拆卸量的累積影響，或誤用等差數列公式。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "設定不等式 $A_n > 4 \\times 10^7$ 並取對數求解最小整數 n。",
+    "marks": 2,
+    "common_error": "對數運算錯誤或解不等式時方向弄反。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "利用表格數據求 a 與 b，建立所需面積模型 $R_n$。",
+    "marks": 1,
+    "common_error": "代入錯誤年份或計算常數時四捨五入過早導致誤差。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "比較 $A_n$ 與 $R_n$ 大小，判斷研究助理宣稱是否正確並解釋。",
+    "marks": 0,
+    "common_error": "未能正確解不等式或邏輯推論不清導致結論錯誤。",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "考生普遍混淆複利增長模型，誤將固定拆卸量直接從指數增長項中簡單減去，且對數運算與不等式解法基礎薄弱。",
+  "scaffolding_hints": [
+   "提示 1：每年新增面積是前一年總面積的 r%，注意這是複利增長。",
+   "提示 2：拆卸量是每年固定數值，需累積計算對總面積的影響。",
+   "提示 3：解指數不等式時，務必使用對數將指數變為係數。"
+  ],
+  "quick_solution_strategy": "先寫出遞迴式 $A_n = A_{n-1}(1+r\\%) - 3\\times 10^5$，再求通項，最後解不等式比較大小。"
+ },
+ "skills": {
+  "topic_id": "T-SEQ",
+  "knowledge_point_ids": [
+   "K-SEQ-03"
+  ],
+  "formula_ids": [
+   "F-SEQ-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-SEQ-03",
+    "formula_id": "F-SEQ-03",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-SEQ-03",
+    "formula_id": "F-SEQ-03",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-SEQ-03",
+    "formula_id": "F-SEQ-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-SEQ-03",
+    "formula_id": "F-SEQ-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-SEQ-03",
+    "formula_id": "F-SEQ-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-SEQ-03",
+    "formula_id": "F-SEQ-03",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

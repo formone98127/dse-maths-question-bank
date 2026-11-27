@@ -1,0 +1,129 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 1M",
+  "qno": "3",
+  "hash": "#2024P1MQ3"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "二項分佈",
+   "secondary_topics": [
+    "組合數計算",
+    "對數不等式求解"
+   ],
+   "required_formulas": [
+    "$\\binom{n}{r}p^r(1-p)^{n-r}$",
+    "$P(X \\ge 1) = 1 - P(X=0)$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 300,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "列出 n=20 時，得 1 次反面與 3 次反面的機率公式。",
+    "marks": 1,
+    "common_error": "忘記組合數符號或指數寫錯，如將 p^1 寫成 p。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 2,
+    "what": "根據比率 49:57 建立方程並化簡求 p 的值。",
+    "marks": 2,
+    "common_error": "約分錯誤或解一元一次方程時算術出錯。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "將 p 值代入 n=k 的模型，計算得 0 次反面的機率。",
+    "marks": 1,
+    "common_error": "忘記用 1-P(反面=0) 來表示至少一次反面。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "建立不等式 $1 - (1-p)^k > 0.85$ 並移項整理。",
+    "marks": 1,
+    "common_error": "不等號方向搞錯或指數運算錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "取對數將指數 k 移到左邊，處理絕對值與底數。",
+    "marks": 1,
+    "common_error": "忘記對數定義域導致出現無意義解或錯用 log 性質。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 6,
+    "what": "計算 k 的數值並確認為最小整數，寫出最終答案。",
+    "marks": 0,
+    "common_error": "未檢查 k 是否為整數或遺漏「最少」條件。",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "DSE 數學卷一常考二項分佈應用，考生需熟練組合數與對數運算，並能靈活運用補集法處理「至少」類問題。",
+  "scaffolding_hints": [
+   "Hint1: 先寫出 $P(X=r) = \\binom{n}{r}p^r(1-p)^{n-r}$ 的通用公式。",
+   "Hint2: 利用比率關係消去組合數，直接解出 p。",
+   "Hint3: 記住 $P(\\text{至少 1}) = 1 - P(0)$ 可大幅簡化不等式。"
+  ],
+  "quick_solution_strategy": "先由比率求 p=0.7；再用補集法列不等式 $1-(0.3)^k > 0.85$，取對數解 k 即可。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "6": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

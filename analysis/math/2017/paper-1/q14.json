@@ -1,0 +1,131 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 1",
+  "qno": "14",
+  "hash": "#2017P1Q14"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "多項式除法與餘式定理",
+   "secondary_topics": [
+    "代數運算",
+    "方程根的性質",
+    "二次多項式的構造"
+   ],
+   "required_formulas": [
+    "$f(x) = (2x^2 + ax + 4)(3x + 7) + (bx + c)$",
+    "$f(x) - g(x) = k(2x^2 + ax + 4)$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 180,
+   "marks": 35
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用除法公式展開 $f(x)$，比較 $x$ 項係數求 $a$。",
+    "marks": 6,
+    "common_error": "忘記餘式中的 $bx+c$ 導致 $a$ 值錯誤。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 2,
+    "what": "由 (a) 結果寫出 $g(x)$ 的具體表達式（二次）。",
+    "marks": 4,
+    "common_error": "未將 $b,c$ 代入或誤以為 $g(x)=f(x)$。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 3,
+    "what": "證明 $f(x)-g(x)$ 是 $(2x^2+ax+4)$ 的倍數。",
+    "marks": 5,
+    "common_error": "僅寫出等式而未說明係數關係或整除性。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "將 $f(x)-g(x)$ 寫成 $k(2x^2+ax+4)$ 形式求根。",
+    "marks": 6,
+    "common_error": "計算錯誤導致非整數根被誤判為整數。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "驗證所得根是否全為整數並解釋原因。",
+    "marks": 8,
+    "common_error": "忽略虛根或非整數根，或解釋不完整。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 6,
+    "what": "總結結論並檢查所有計算步驟與格式。",
+    "marks": 6,
+    "common_error": "遺漏單位、錯別字或未答完 (ii) 小問。",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "考評報告指出考生常忽略 $g(x)$ 為二次多項式及未能完整解釋根的非整數性，導致證明與分析部分失分嚴重。",
+  "scaffolding_hints": [
+   "提示 1：回憶多項式除法基本公式 $被除式 = 除式 \\times 商式 + 餘式$。",
+   "提示 2：注意題目強調 $g(x)$ 是二次，這意味著 $f(x)-g(x)$ 必為 $(2x^2+ax+4)$ 的倍數。",
+   "提示 3：求出根後務必代入原方程驗證是否為整數，避免假設所有根皆為整數。"
+  ],
+  "quick_solution_strategy": "先由除法公式展開比較係數求 $a$；再構建 $f(x)-g(x)=k(2x^2+ax+4)$ 解方程驗證根之整數性。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-04"
+  ],
+  "formula_ids": [
+   "F-POL-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-POL-04",
+    "formula_id": "F-POL-04",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "2": {
+    "knowledge_point_id": "K-POL-04",
+    "formula_id": "F-POL-04",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "3": {
+    "knowledge_point_id": "K-POL-04",
+    "formula_id": "F-POL-04",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-POL-04",
+    "formula_id": "F-POL-04",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-POL-04",
+    "formula_id": "F-POL-04",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "6": {
+    "knowledge_point_id": "K-POL-04",
+    "formula_id": "F-POL-04",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

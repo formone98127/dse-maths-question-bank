@@ -1,0 +1,131 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 1M",
+  "qno": "2",
+  "hash": "#2021P1MQ2"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "條件概率與貝氏定理",
+   "secondary_topics": [
+    "事件獨立性",
+    "全概率公式"
+   ],
+   "required_formulas": [
+    "$P(A \\cap B) = P(A|B)P(B)$",
+    "$P(A|B) = \\frac{P(A \\cap B)}{P(B)}$",
+    "$P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 180,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "定義事件：D=患病，T+=測試陽性，T-=測試陰性。列出已知機率。",
+    "marks": 1,
+    "common_error": "混淆 P(T+|D) 與 P(D|T+)，或忘記將百分比轉為小數。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 2,
+    "what": "計算正確結果機率：P(正確)=P(T+|D)P(D)+P(T-|非 D)P(非 D)。",
+    "marks": 1,
+    "common_error": "遺漏 P(非 D) 的計算，或加減錯誤導致小於 0.5。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "計算測試陽性總機率 P(T+)：使用全概率公式展開兩項。",
+    "marks": 1,
+    "common_error": "忘記乘以先驗機率 P(D) 或 P(非 D)，直接相加條件機率。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 4,
+    "what": "應用貝氏定理計算 P(D|T+)，即已知陽性下實際患病的機率。",
+    "marks": 1,
+    "common_error": "分母寫錯為 P(T+|D)，而非總機率 P(T+)。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 5,
+    "what": "比較計算結果與 0.6，並根據大小關係解釋答案（是/否）。",
+    "marks": 1,
+    "common_error": "算出數值後未進行比較，或邏輯反轉導致結論錯誤。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 6,
+    "what": "檢查所有計算步驟、小數點位置及單位是否一致正確。",
+    "marks": 1,
+    "common_error": "四捨五入過早導致最終答案偏差，或抄寫數字錯誤。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "此題測試學生對條件概率與貝氏定理的理解，常見失分點在於混淆先驗機率與後驗機率，以及無法正確應用全概率公式計算總機率。",
+  "scaffolding_hints": [
+   "先畫樹狀圖或文氏圖釐清事件關係。",
+   "記住 P(正確) = 真陽性率×患病率 + 真陰性率×非患病率。",
+   "貝氏定理的關鍵在於分母是總機率 P(T+)，而非單一條件機率。"
+  ],
+  "quick_solution_strategy": "先算 P(正確)=0.97×0.12+0.89×0.88；再算 P(T+)=P(T+|D)P(D)+P(T+|非 D)P(非 D)；最後用貝氏定理求 P(D|T+) 並與 0.6 比較。"
+ },
+ "skills": {
+  "topic_id": "T-PROB",
+  "knowledge_point_ids": [
+   "K-PROB-04"
+  ],
+  "formula_ids": [
+   "F-PROB-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "2": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "4": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "5": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "6": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

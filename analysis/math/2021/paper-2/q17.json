@@ -1,0 +1,93 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 2",
+  "qno": "17",
+  "hash": "#2021P2Q17"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓與扇形",
+   "secondary_topics": [
+    "弧度制轉換",
+    "三角形面積公式"
+   ],
+   "required_formulas": [
+    "扇形面積 = (1/2) * r^2 * θ (θ為弧度)",
+    "圓周長 = 2πr",
+    "圓面積 = πr^2"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略周界定義",
+    "student_thought_process": "學生算出半徑 r=2 正確，但誤以為周界僅指弧長或計算錯誤，將兩條半徑與弧長相加時遺漏了直線邊長 4cm，導致認為周界為 π。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆圓的定義",
+    "student_thought_process": "學生誤以為通過 O、A、B 三點的圓就是原扇形所在的圓，忽略了 O 是圓心而非圓周上一點，導致計算出錯誤面積。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "過度推論",
+    "student_thought_process": "學生正確算出 I 和 III，但因為選項 A 或 C 的誘導，錯誤地認為 II 也成立，或者在計算周界時將直徑誤算為弧長。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：扇形面積公式中角度需轉換為弧度制進行計算，請先求出半徑 r 的值。",
+   "提示 2：周界包含兩條半徑與一段弧長，請確認題目給定的條件是否足以計算完整周界。",
+   "提示 3：通過圓心 O 和圓周上兩點 A、B 的圓，其直徑應為 AB 連線長度，而非原扇形半徑。"
+  ],
+  "quick_solution_strategy": "先由面積公式求 r=2；再算周界=2r+弧長=4+π≠π；最後確認外接圓直徑為 AB=2√2，面積為 2π。"
+ },
+ "skills": {
+  "topic_id": "T-MEN",
+  "knowledge_point_ids": [
+   "K-MEN-01",
+   "K-MEN-02"
+  ],
+  "formula_ids": [
+   "F-MEN-01",
+   "F-MEN-02",
+   "F-MEN-03",
+   "F-MEN-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

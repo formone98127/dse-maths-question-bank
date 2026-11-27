@@ -1,0 +1,94 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 2",
+  "qno": "17",
+  "hash": "#2022P2Q17"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "平面幾何面積比",
+   "secondary_topics": [
+    "相似形性質",
+    "比例分配",
+    "直角三角形"
+   ],
+   "required_formulas": [
+    "Area = \\frac{1}{2} \\times base \\times height",
+    "\\frac{Area_1}{Area_2} = \\left(\\frac{base_1}{base_2}\\right) \\times \\left(\\frac{height_1}{height_2}\\right)",
+    "Area_{total} - Area_{subregions}"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "比例計算錯誤導致面積過小",
+    "student_thought_process": "學生可能將 PM:MQ=5:6 誤解為 PM 佔總長 5/11，但計算時未正確對應 QR 邊的比例，或錯誤減去三角形面積。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "比例分配錯誤導致面積過大",
+    "student_thought_process": "學生可能將 QN:NR=3:4 誤算為 QN 佔總長 4/7，或混淆了底邊與高的比例關係，導致最終面積偏大。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "未考慮整體面積減去部分區域",
+    "student_thought_process": "學生可能直接假設 MNQ 的面積與已知面積成簡單比例，忽略了四邊形 MNRP 是總三角形減去兩個小三角形的結果。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：觀察直角三角形 PQR，M、N 分別在兩直角邊上，將大三角形分割為四個小區域（\\Delta PMN, \\Delta MNQ, \\Delta MNR, \\Delta PNR）中的相關部分。",
+   "提示 2：利用面積比等於底乘高的比例關係，設 PQ=a, QR=b，表達各小三角形的面積與 a,b 的關係。",
+   "提示 3：已知四邊形 MNRP 的面積為 59，它等於 \\Delta PQR 減去 \\Delta PMN 和 \\Delta MNR，請建立方程解出 \\Delta MNQ 的面積。"
+  ],
+  "quick_solution_strategy": "設\\Delta PQR面積為S，利用比例求出\\Delta PMN與\\Delta MNR面積係數，由S-兩小三角形=59解出S，再求\\Delta MNQ。"
+ },
+ "skills": {
+  "topic_id": "T-MEN",
+  "knowledge_point_ids": [
+   "K-MEN-01",
+   "K-MEN-02"
+  ],
+  "formula_ids": [
+   "F-MEN-01",
+   "F-MEN-02",
+   "F-MEN-03",
+   "F-MEN-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

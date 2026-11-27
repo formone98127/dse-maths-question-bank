@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 2",
+  "qno": "34",
+  "hash": "#2014P2Q34"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "指數運算與二進位轉換",
+   "secondary_topics": [
+    "冪的性質",
+    "位值原理"
+   ],
+   "required_formulas": [
+    "$a^m \\times a^n = a^{m+n}$",
+    "$\\sum d_i 2^i$ (二進位展開式)"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "位權計算錯誤",
+    "student_thought_process": "將 $5\\times2^3$ 誤算為 $100_2$ (即 $4$) 而非 $1010_2$ (即 $10$), 導致第 3 位與第 1 位多餘的 $1$ 未正確合併或移位."
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "項數遺漏",
+    "student_thought_process": "忽略 $5\\times2^3 - 2^3$ 這部分，直接將前三項相加，或誤以為減去 $2^3$ 後該位為 $0$ 但高階位權計算出錯."
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "位權混淆",
+    "student_thought_process": "將 $5\\times2^3$ 誤算成影響到第 $4$ 位 ($2^4=16$) 而非第 $3$ 位，或是計算 $10-8$ 時進位處理錯誤."
+   }
+  },
+  "scaffolding_hints": [
+   "將所有項都轉換為以 $2$ 為底的冪次形式，例如 $7=4+2+1$, $5=4+1$.",
+   "利用分配律合併同底數冪：$a\\times2^n - b\\times2^n = (a-b)\\times2^n$.",
+   "將合併後的係數轉換為二進位，並依序填入對應的 $2^k$ 位置."
+  ],
+  "quick_solution_strategy": "展開所有項為 $2$ 的冪次，合併係數後轉為二進位串列."
+ },
+ "skills": {
+  "topic_id": "T-NUM",
+  "knowledge_point_ids": [
+   "K-NUM-01",
+   "K-NUM-02"
+  ],
+  "formula_ids": [
+   "F-NUM-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

@@ -1,0 +1,115 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2020",
+  "paper": "Paper 1M",
+  "qno": "5",
+  "hash": "#2020P1MQ5"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "二項式定理",
+   "secondary_topics": [
+    "指數函數展開",
+    "係數比較"
+   ],
+   "required_formulas": [
+    "$\\binom{n}{r} a^{n-r} b^r$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用二項式定理寫出 $(1+ke^x)^3$ 的通項公式。",
+    "marks": 2,
+    "common_error": "忘記 $e^x$ 的泰勒展開式，直接當常數處理。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "將 $e^x$ 展開為 $1+x+\\frac{x^2}{2}+\\dots$ 並代入通項。",
+    "marks": 1,
+    "common_error": "計算 $(1+k(1+x+\\frac{x^2}{2}))^3$ 時漏掉交叉項。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "整理 $x^0$ 與 $x^2$ 的係數，用 $k$ 表示。",
+    "marks": 1,
+    "common_error": "展開 $(A+B)^3$ 時算錯二項式係數或符號。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "由 (a) 部結果，令常數項等於 27 解出 $k$。",
+    "marks": 1,
+    "common_error": "解方程時遺忘負根或計算錯誤導致 $k$ 值不對。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "將求得的 $k$ 值代回 $x^2$ 的係數表達式。",
+    "marks": 1,
+    "common_error": "代入時計算繁瑣而出錯，或選錯 $k$ 值。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "此題結合指數級數與二項式定理，考驗學生處理複合函數展開的能力，常見失分點在於忽略 $e^x$ 的高階項對低次係數的影響。",
+  "scaffolding_hints": [
+   "提示 1：先回憶 $e^x = 1 + x + \\frac{x^2}{2} + O(x^3)$。",
+   "提示 2：將 $e^x$ 代入後，只保留到 $x^2$ 項即可。",
+   "提示 3：利用 $(a+b+c)^3$ 的展開技巧或逐步平方法計算係數。"
+  ],
+  "quick_solution_strategy": "先展開 $e^x$ 至二階，再代入二項式通項，分別收集 $x^0$ 與 $x^2$ 係數；由常數項求 $k$ 後代回即可。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

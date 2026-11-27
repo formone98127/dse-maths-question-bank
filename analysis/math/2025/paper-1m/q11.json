@@ -1,0 +1,130 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2025",
+  "paper": "Paper 1M",
+  "qno": "11",
+  "hash": "#2025P1MQ11"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "積分法",
+   "secondary_topics": [
+    "梯形法",
+    "代數變換",
+    "指數函數"
+   ],
+   "required_formulas": [
+    "\\frac{1}{u(u-1)} = \\frac{1}{u-1} - \\frac{1}{u}",
+    "\\int f(g(t))g'(t)dt = F(g(t)) + C"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 240,
+   "marks": 14
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用梯形法計算 (a) 部分，h=1，代入 t=2,3,4,5,6。",
+    "marks": 2,
+    "common_error": "步長 h 算錯或漏掉端點值；未將 ln(5^t+1) 代入計算。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "利用代數變換求 P'(t)，注意題目給的是 P' 的表達式形式。",
+    "marks": 1,
+    "common_error": "混淆 P(t) 與 P'(t)；未正確使用部分分式分解。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "將 (a) 的估計值代入，計算 2027 至 2030 的人口變化量。",
+    "marks": 2,
+    "common_error": "時間區間搞錯（如算成 2025-2028）；忽略單位 million。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 4,
+    "what": "比較計算結果與 1.7，並根據梯形法誤差方向解釋。",
+    "marks": 2,
+    "common_error": "僅比較數值未說明誤差；誤以為梯形法總是高估或低估。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 5,
+    "what": "確認積分上限下限對應年份：2027 起點 t=2，2030 終點 t=6。",
+    "marks": 1,
+    "common_error": "將「start of 2027」誤認為 t=3；混淆 elapsed years 定義。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 6,
+    "what": "總結結論：是否超過 1.7，並指出梯形法近似性質影響判斷。",
+    "marks": 2,
+    "common_error": "忽略誤差範圍直接下結論；未提及直線逼近曲線的偏差。",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "近年 DSE 數學卷一常結合數值積分與微分方程應用，強調學生對誤差方向（梯形法對凹函數的估計特性）的理解，而非僅計算結果。",
+  "scaffolding_hints": [
+   "提示 1：梯形法公式為 $\\frac{h}{2}[y_0 + 2y_1 + \\dots + y_n]$，注意步長 h=1。",
+   "提示 2：題目給出分解式 $\\frac{1}{u(u-1)} = \\frac{1}{u-1} - \\frac{1}{u}$ 用於處理 P'(t) 的積分準備。",
+   "提示 3：梯形法對凹向上曲線會低估，對凹向下則高估；ln(5^t+1) 的二階導數符號決定誤差方向。"
+  ],
+  "quick_solution_strategy": "先算 (a) 梯形和（h=1, t=2..6），再確認時間區間對應 t 值，比較數值與誤差方向即可答 (iii)。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "5": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "6": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

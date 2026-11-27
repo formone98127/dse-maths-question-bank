@@ -1,0 +1,103 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 1",
+  "qno": "4",
+  "hash": "#2024P1Q4"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "一元一次不等式",
+   "secondary_topics": [
+    "不等式的解集表示",
+    "最小整數的求法"
+   ],
+   "required_formulas": [
+    "$\\frac{ax+b}{c} < d \\Rightarrow ax+b < cd$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120,
+   "marks": 8
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "解不等式 (i) $\\frac{5x+7}{4} - 1 < 2x$，化簡得 $x < -3$",
+    "marks": 2,
+    "common_error": "移項時符號變錯或去分母漏乘",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "解不等式 (ii) $3x + 9 \\geq 0$，化簡得 $x \\geq -3$",
+    "marks": 2,
+    "common_error": "移項時忘記改變符號",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "找出兩個解集的交集，寫出 $x$ 的範圍",
+    "marks": 2,
+    "common_error": "混淆並集與交集概念",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "在數軸上標示解集，確認邊界點是否包含",
+    "marks": 2,
+    "common_error": "畫錯空心或實心圓圈",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "近年卷一不等式題型常結合數軸表示與整數問題，考生需熟練處理分母及邊界條件以避免失分。",
+  "scaffolding_hints": [
+   "先單獨解兩個不等式，再求交集",
+   "注意 $x \\geq -3$ 包含 $-3$，而 $x < -3$ 不包含",
+   "同時滿足即為兩範圍的重疊部分"
+  ],
+  "quick_solution_strategy": "分別解出 $x<-3$ 與 $x\\ge -3$，交集為空集？重算：(i) $5x+7-4<8x \\Rightarrow 3<3x \\Rightarrow x>1$; (ii) $x\\ge -3$. 交集 $x>1$. 最小整數 2."
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-05"
+  ],
+  "formula_ids": [
+   "F-EQN-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

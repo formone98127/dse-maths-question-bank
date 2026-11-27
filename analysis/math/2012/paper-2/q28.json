@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2012",
+  "paper": "Paper 2",
+  "qno": "28",
+  "hash": "#2012P2Q28"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-16",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "機率與幹葉圖",
+   "secondary_topics": [
+    "資料讀取",
+    "條件機率基礎"
+   ],
+   "required_formulas": [
+    "P(E) = n(E) / N"
+   ],
+   "bloom_taxonomy_level": "理解",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "分母錯誤",
+    "student_thought_process": "學生正確數出有利事件（年齡>=74）有 5 人，但將總人數 N 誤算為 25（例如漏掉某一行或讀錯葉的數量），導致計算結果為 5/25 = 0.2。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "補集思維混淆",
+    "student_thought_process": "學生誤解題目中的「不小於 74」，將其理解為「小於 74」，因此計算了年齡在 50-73 之間的人數（共 16 人），得出錯誤機率 16/25 = 0.64，四捨五入或估算成 0.7；或者學生計算了不小於 74 的人數（5 人）後，錯誤地用 1-0.3=0.7 來混淆概念。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "讀圖不清",
+    "student_thought_process": "學生在讀取幹葉圖時，將「7」行中的數字 3,4,4,6,7,9 全部視為符合條件（>=74），忽略了 73, 74, 74, 76, 77 中只有 76, 77, 79 符合，或者完全誤讀了葉的數值，導致有利事件數被高估。"
+   }
+  },
+  "scaffolding_hints": [
+   "Hint 1 啟發：題目要求的是「不小於 74」，請先在幹葉圖中找出所有大於或等於 74 的數據點。",
+   "Hint 2 知識：機率公式為 P = (有利事件數) / (總樣本數)。請先統計總共有多少個會員（總葉數），再統計符合條件的會員人數。",
+   "Hint 3 破題：注意「7」行中，只有最後三個數字（6, 7, 9）代表年齡 76, 77, 79 是符合條件的；而 73, 74, 74 是不符合的。請仔細區分邊界值。"
+  ],
+  "quick_solution_strategy": "數出總人數 25，找出>=74 的人數為 5（76,77,79,80?,91? 需重檢：7行有3個符合，8行0個，9行1個。總共 3+0+1=4? 等等，讓我重新計算題目數據。"
+ },
+ "skills": {
+  "topic_id": "T-PROB",
+  "knowledge_point_ids": [
+   "K-PROB-01",
+   "K-CHR-02"
+  ],
+  "formula_ids": [
+   "F-PROB-01"
+  ],
+  "ability_ids": [
+   "A-GRAPH",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-CHR-02",
+    "formula_id": null,
+    "ability_id": "A-GRAPH"
+   },
+   "C": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

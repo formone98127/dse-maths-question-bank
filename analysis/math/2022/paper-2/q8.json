@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 2",
+  "qno": "8",
+  "hash": "#2022P2Q8"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "函數的對稱性與代數運算",
+   "secondary_topics": [
+    "二次函數圖形性質",
+    "代入法驗證"
+   ],
+   "required_formulas": [
+    "f(x) = x^2 - x + 1",
+    "f(a+b) = (a+b)^2 - (a+b) + 1"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤判對稱軸位置",
+    "student_thought_process": "學生認為所有二次函數都關於 y 軸對稱 (偶函數)，忽略此題 f(x) 的一次項係數為 -1，對稱軸在 x=0.5。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "展開合併同類項錯誤",
+    "student_thought_process": "學生嘗試代入 k+1，但在展開 (k+1)^2 時忘記了 -2k 或 +1 的符號處理，導致等式不成立。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "錯誤的線性假設",
+    "student_thought_process": "學生將二次函數誤認為是線性函數，直接套用 f(a-b)=f(a)-f(b) 的錯誤邏輯進行推導。"
+   }
+  },
+  "scaffolding_hints": [
+   "思考：一般二次函數 y=ax^2+bx+c 的圖形對稱軸在哪裡？",
+   "提示：計算 f(0.5+k) 與 f(0.5-k) 的關係，觀察哪兩個點關於 x=0.5 對稱。",
+   "引導：將選項 B 中的 (1-k) 代入原式計算，看看是否等於 f(k)。"
+  ],
+  "quick_solution_strategy": "找出對稱軸 x=1/2，驗證兩選項輸入值是否關於 1/2 對稱。"
+ },
+ "skills": {
+  "topic_id": "T-FUN",
+  "knowledge_point_ids": [
+   "K-FUN-01",
+   "K-FUN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

@@ -1,0 +1,93 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2025",
+  "paper": "Paper 2",
+  "qno": "3",
+  "hash": "#2025P2Q3"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "多項式恆等式與係數比較",
+   "secondary_topics": [
+    "展開多項式",
+    "一次方程式解法",
+    "代入驗證"
+   ],
+   "required_formulas": [
+    "$$(x+p)(x+q)=x^2+(p+q)x+pq$$",
+    "兩側對應係數相等：$Ax^2+Bx+C \\equiv Ax^2+B'x+C'$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "展開符號錯誤導致常數項算錯",
+    "student_thought_process": "展開 $(x+8)(x+a)$ 時，將 $-8a$ 與 $b$ 相加後，誤算成 $-14$（例如把 $a=2$ 代入時算成 $-16+2=-14$ 而非 $-16+b=0$）"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "一次項係數計算錯誤",
+    "student_thought_process": "比較 $x$ 係數時，將右邊 $5a(x+3)$ 展開成 $5ax + 15a$，卻誤算成 $5ax - 15a$，導致解出 $a=-2$"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆恆等式與特定值相等",
+    "student_thought_process": "只代入 $x=0$ 或 $x=-8$ 解出 $b$，忽略該等式必須對所有 $x$ 成立，因此未聯立一次項係數求 $a$"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "將等式左邊與右邊分別展開成 $x^2 + \\text{一次項}x + \\text{常數項}$ 的形式。",
+   "利用多項式恆等式的性質：對應次数的係數必須完全相等，建立關於 $a$ 與 $b$ 的聯立方程組。",
+   "先由一次項係數求出 $a$ 的值，再代入常數項關係式中計算 $b$"
+  ],
+  "quick_solution_strategy": "展開兩邊，比較 $x$ 係數得 $a=2$，再比較常數項得 $b=14$"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-01",
+   "K-POL-02"
+  ],
+  "formula_ids": [
+   "F-POL-01",
+   "F-POL-02",
+   "F-POL-03",
+   "F-POL-06"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

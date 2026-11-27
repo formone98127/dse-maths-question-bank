@@ -1,0 +1,122 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 1",
+  "qno": "18",
+  "hash": "#2021P1Q18"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "立體幾何",
+   "secondary_topics": [
+    "正弦公式",
+    "二面角定義",
+    "空間想像"
+   ],
+   "required_formulas": [
+    "$\\frac{a}{\\sin A} = \\frac{b}{\\sin B}$",
+    "$\\cos \\theta = \\frac{\\vec{n}_1 \\cdot \\vec{n}_2}{|\\vec{n}_1||\\vec{n}_2|}$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 300,
+   "marks": 7
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用正弦公式求 CD 長度 (2 分)",
+    "marks": 2,
+    "common_error": "誤以為梯形為等腰或直角，未用正弦公式",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "確認摺疊後 AE 垂直平面 BCDE (1 分)",
+    "marks": 1,
+    "common_error": "忽略摺疊條件，仍視為平面梯形計算",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 3,
+    "what": "在直角三角形 ACD 中求角 CAD (2 分)",
+    "marks": 2,
+    "common_error": "混淆空間距離與平面投影長度",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "識別二面角為角 ADE (1 分)",
+    "marks": 1,
+    "common_error": "錯誤選擇其他平面角作為交角",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 5,
+    "what": "比較角大小並解釋原因 (1 分)",
+    "marks": 1,
+    "common_error": "僅計算數值未說明交角定義",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "考評報告指出超過 90% 考生未能正確解釋二面角，主要因混淆平面與空間角度定義，導致無法判斷是否超過 30°。",
+  "scaffolding_hints": [
+   "提示 1：摺疊後 AE 垂直底面，故三角形 ACD 為直角三角形。",
+   "提示 2：二面角即為平面 ACD 與底面 BCDE 的夾角，需找交線 AD 上的垂線。",
+   "提示 3：利用已求得的 CD 和已知邊長計算角度並與 30° 比較。"
+  ],
+  "quick_solution_strategy": "先算 CD，再認出二面角即為角 ADE，因 AE⊥底面且 ED⊥AD，故角 ADE 即所求交角，直接比較大小即可。"
+ },
+ "skills": {
+  "topic_id": "T-MEN",
+  "knowledge_point_ids": [
+   "K-MEN-01",
+   "K-MEN-02"
+  ],
+  "formula_ids": [
+   "F-MEN-01",
+   "F-MEN-02",
+   "F-MEN-03",
+   "F-MEN-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "3": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "5": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

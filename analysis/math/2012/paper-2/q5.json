@@ -1,0 +1,86 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2012",
+  "paper": "Paper 2",
+  "qno": "5",
+  "hash": "#2012P2Q5"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-16",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "一元一次方程式組",
+   "secondary_topics": [
+    "代數式化簡",
+    "等式性質"
+   ],
+   "required_formulas": [
+    "若 $a = b$，則 $a = c \\iff b = c$（等式的傳遞性）"
+   ],
+   "bloom_taxonomy_level": "理解",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "忽略中間變數",
+    "student_thought_process": "學生試圖直接將 $m+2n+6$ 與 $7$ 聯立求解，卻完全忽略了題目中的關鍵連結 $2m-n=7$。他們可能錯誤地假設 $m+2n+6 = 2m-n$ 是獨立的條件，或者在解出 $m$ 後忘記代入回原式檢查一致性，導致隨意選取一個負數選項。更可能的錯誤過程是：由 $2m-n=7$ 得 $n=2m-7$，代入第一個式子 $m+2(2m-7)+6=7 \\Rightarrow 5m-8=7 \\Rightarrow m=3$，然後算出 $n=-1$。若選 A (-4)，可能是計算時把 $+6$ 看成 $-6$ 或移項時符號搞錯（如 $5m = -2$）。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "移項符號錯誤",
+    "student_thought_process": "學生正確聯立 $m+2n+6 = 2m-n$，得到 $m - 3n = 6$。接著他們將 $2m-n=7$ 中的 $n$ 移到左邊變成 $+n$（錯誤），或者在解二元一次方程組時，將 $-n$ 移項後忘記變號，導致計算出錯誤的正數結果。具體來說，若由 $m = 3n + 6$ 代入 $2(3n+6)-n=7 \\Rightarrow 6n+12-n=7 \\Rightarrow 5n=-5 \\Rightarrow n=-1$。選 C (3) 可能是將 $-5$ 算成 $5$，或是把 $12-7$ 算成 $5$ 後除以 $5$ 得到 $1$ 再搞錯符號。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "誤讀題目結構",
+    "student_thought_process": "學生沒有將題目視為連等式（$A=B=C$），而是將其解讀為兩個獨立的條件，或者完全忽略了 $m+2n+6=7$ 這一部分，只專注於 $2m-n=7$。他們可能試著猜測答案，或者錯誤地認為 $m$ 和 $n$ 的關係是線性的但斜率搞反了。選 D (11) 可能是將 $2m-n=7$ 中的 $n$ 設為負數時計算錯誤，例如 $2m - (-11) = 7 \\Rightarrow 2m = -4 \\Rightarrow m=-2$，然後隨意代入第一個式子驗算失敗卻仍堅持此答案。"
+   }
+  },
+  "scaffolding_hints": [
+   "Hint 1 啟發：題目給出了三個部分相等的關係，請先將它們分成兩組等式來處理。",
+   "Hint 2 知識：利用連等式的性質，令 $m + 2n + 6 = 7$ 且 $2m - n = 7$，由此建立二元一次方程組。",
+   "Hint 3 破題：從第二個等式 $2m - n = 7$ 中表達出 $n$ 或 $m$，代入第一個等式中消去一個變數即可解出另一變數。"
+  ],
+  "quick_solution_strategy": "由 $2m-n=7$ 得 $n=2m-7$，代入 $m+2n+6=7$ 化簡求解。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CHAIN"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-EQN-02",
+    "formula_id": null,
+    "ability_id": "A-CHAIN"
+   },
+   "C": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

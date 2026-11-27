@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2018",
+  "paper": "Paper 2",
+  "qno": "37",
+  "hash": "#2018P2Q37"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "複數運算",
+   "secondary_topics": [
+    "虛數單位 i 的週期性",
+    "複數除法有理化",
+    "複數實部與虛部的定義"
+   ],
+   "required_formulas": [
+    "$i^1=i, i^2=-1, i^3=-i, i^4=1$",
+    "$\\frac{a+bi}{c+di} = \\frac{(a+bi)(c-di)}{c^2+d^2}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "符號處理錯誤",
+    "student_thought_process": "算出分子為 $-2+3i$，分母有理化時將 $1-i$ 乘以 $1+i$ 得到分母 $0$ 或記錯 $(1-i)(1+i)=2$。若分母算成 $2$，則 $(-2+3i)/2 = -1 + 1.5i$，實部為 $-1$ (選 B)。若分子計算錯誤導致實部為負且絕對值偏大。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "分母處理失誤",
+    "student_thought_process": "正確算出分子 $-2+3i$，但在有理化時忘記 $i^2=-1$ 導致分母變成 $0$ 或算成 $1$。若分母錯算為 $1$，則實部為 $-2$ (無選項)。常見錯誤是將 $(1-i)(1+i)$ 算成 $1+1=2$ 但分子符號弄反，如 $(-2-3i)/2 = -1-1.5i$。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "虛部混淆",
+    "student_thought_process": "成功算出分子 $-2+3i$ 並正確有理化分母得 $2$，得到結果 $-1 + \\frac{3}{2}i$。學生誤將虛部的係數 $\\frac{3}{2}$ 或計算過程中的某項誤認為實部，或直接看錯題目問的是實部卻選了正負號相反的選項。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：先觀察 $i$ 的指數規律，將 $i^{12}, i^{13}, \\dots, i^{16}$ 分別化簡為 $1, -i, -1, i$。",
+   "提示 2：計算分子總和後，利用 $(1-i)(1+i)=2$ 進行分母有理化，將複數除法轉化為乘法。",
+   "提示 3：將化簡後的結果寫成 $a+bi$ 的形式，注意題目僅要求找出實部 $a$ 的數值。"
+  ],
+  "quick_solution_strategy": "先化簡分子各項 $i$ 次方，求和得 $-2+3i$；再除以 $1-i$ 並有理化，取實部即可。"
+ },
+ "skills": {
+  "topic_id": "T-NUM",
+  "knowledge_point_ids": [
+   "K-NUM-01"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

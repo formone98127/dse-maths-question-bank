@@ -1,0 +1,104 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 1",
+  "qno": "6",
+  "hash": "#2022P1Q6"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "不等式",
+   "secondary_topics": [
+    "複合不等式",
+    "解集表示",
+    "整數問題"
+   ],
+   "required_formulas": [
+    "$-2(3x+2) > x+10$",
+    "$2x \\leq -8$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "展開左邊括號並移項，解不等式 $-2(3x+2) > x+10$。",
+    "marks": 1,
+    "common_error": "忘記分配符號或移項時變號錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "解不等式 $2x \\leq -8$，得出 $x \\leq -4$。",
+    "marks": 1,
+    "common_error": "除以負數時忘記改變不等號方向（此題無此情況）。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "將兩個解集合併，使用「或」連接寫出最終解集。",
+    "marks": 1,
+    "common_error": "誤以為是「且」而取交集，導致答案錯誤。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "從解集中找出滿足條件的最大整數並寫出答案。",
+    "marks": 1,
+    "common_error": "未檢查邊界值或誤選非最大整數。",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "考評報告指出大部分考生能正確處理複合不等式，顯示此類題目為基礎必考項目，但需注意解集合併邏輯。",
+  "scaffolding_hints": [
+   "先分別解兩個簡單不等式，再考慮「或」的關係。",
+   "複合不等式中「或」代表取並集，「且」才取交集。",
+   "最後務必檢查邊界值以確定最大整數。"
+  ],
+  "quick_solution_strategy": "分開解兩邊，合併為 $x < -\\frac{10}{3}$ 或 $x \\leq -4$，最大整數為 $-4$"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

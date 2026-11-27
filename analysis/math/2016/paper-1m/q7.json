@@ -1,0 +1,104 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2016",
+  "paper": "Paper 1M",
+  "qno": "7",
+  "hash": "#2016P1MQ7"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "微分法",
+   "secondary_topics": [
+    "鏈式法則",
+    "直線斜率",
+    "平行線判定"
+   ],
+   "required_formulas": [
+    "\\frac{d}{dx}(u^n) = n u^{n-1} \\cdot u'",
+    "\\text{若 } ax+by+c=0, \\text{ 斜率 } m = -\\frac{a}{b}"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 7
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "對 y 關於 x 求導，運用鏈式法則計算 dy/dx",
+    "marks": 3,
+    "common_error": "忘記乘以外層指數或內層 (2x+8) 的導數 2",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "計算直線 6x+y+4=0 的斜率 m = -6",
+    "marks": 1,
+    "common_error": "斜率記錯符號或算成 1/6",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 3,
+    "what": "令 dy/dx = -6，建立方程解 x",
+    "marks": 2,
+    "common_error": "解一元二次方程時遺漏一個根或計算錯誤",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "驗證求得的 x 值是否滿足定義域 x > -4",
+    "marks": 1,
+    "common_error": "忽略題目條件 x > -4，接受無效解",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "此題測試微分技巧與代數驗證能力，考生常因鏈式法則應用不當或忽略定義域而失分。",
+  "scaffolding_hints": [
+   "先將 dy/dx 化簡為最簡單形式再代入斜率。",
+   "直線斜率公式 m = -a/b 務必記牢。",
+   "解出 x 後，回頭檢查是否大於 -4。"
+  ],
+  "quick_solution_strategy": "求導得 dy/dx=3(2x+8)+6x，令其等於 -6，解方程並檢查定義域。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

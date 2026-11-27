@@ -1,0 +1,91 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2023",
+  "paper": "Paper 2",
+  "qno": "22",
+  "hash": "#2023P2Q22"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓內接四邊形與三角形幾何",
+   "secondary_topics": [
+    "等腰三角形性質",
+    "圓周角定理",
+    "外角定理"
+   ],
+   "required_formulas": [
+    "圓內接四邊形對角互補：$\\angle R + \\angle T = 180^\\circ$",
+    "三角形內角和：$\\angle A + \\angle B + \\angle C = 180^\\circ$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 120
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "角度運算錯誤",
+    "student_thought_process": "學生可能正確列出 $\\angle R = 180-48=132$，但在解等腰三角形時，誤將底角視為 $(180-132)/2=24$，然後直接加錯或算出 $65^\\circ$。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆圓內接性質",
+    "student_thought_process": "學生可能誤以為 $\\angle RWS$ 與 $\\angle RVU$ 互補，直接計算 $180-(32+48)=100$ 再除以 2 得 $50$ 附近數值，或混淆了圓周角關係導致選錯。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "題目條件忽略",
+    "student_thought_process": "學生忽略了 $ST=TU$ 這個關鍵等腰條件，僅利用圓內接四邊形性質隨意設定角度關係，導致計算結果偏離正確值。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：觀察圖形中的兩個交點 $V$ 和 $W$，它們分別構成了哪兩個三角形？請先找出與已知角度相關的三角形內角。",
+   "提示 2：利用圓內接四邊形的性質，將圓上的未知角轉化為與已知角度相關的補角或餘角；同時注意題目給出的等腰條件 $ST=TU$ 對角度有何影響。",
+   "提示 3：在 $\\triangle RVU$ 中求出 $\\angle R$，再結合圓內接四邊形性質求 $\\angle T$，最後在等腰 $\\triangle STU$ 中計算目標角 $\\angle RSU$"
+  ],
+  "quick_solution_strategy": "先解 $\\triangle RVU$ 得 $\\angle R=132^\\circ$，由圓內接性質得 $\\angle T=48^\\circ$，再於等腰 $\\triangle STU$ 中算出頂角與底角。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-01",
+   "K-GEO-02"
+  ],
+  "formula_ids": [
+   "F-GEO-01",
+   "F-GEO-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

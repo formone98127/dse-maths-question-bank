@@ -1,0 +1,119 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2020",
+  "paper": "Paper 1M",
+  "qno": "3",
+  "hash": "#2020P1MQ3"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "條件概率",
+   "secondary_topics": [
+    "獨立事件",
+    "互斥事件",
+    "集合運算"
+   ],
+   "required_formulas": [
+    "$\\mathrm{P}(B \\mid A) = \\frac{\\mathrm{P}(A \\cap B)}{\\mathrm{P}(A)}$",
+    "$\\mathrm{P}(A' \\cap B) = \\mathrm{P}(B) - \\mathrm{P}(A \\cap B)$",
+    "$\\mathrm{P}(A \\cup B) = \\mathrm{P}(A) + \\mathrm{P}(B) - \\mathrm{P}(A \\cap B)$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 180,
+   "marks": 7
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用條件概率公式表達 P(A ∩ B) 並代入已知數值。",
+    "marks": 2,
+    "common_error": "忘記乘以 P(A)，直接將 P(B|A) 當作交集概率。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 2,
+    "what": "利用全概率公式或集合互斥性，將 P(A' ∩ B) 用 k 表示。",
+    "marks": 1,
+    "common_error": "混淆 P(A' ∩ B) 與 P(B') 的計算關係。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "建立關於 k 的方程，證明 k 不等於 1/2 並整理 P(B)。",
+    "marks": 2,
+    "common_error": "在代換過程中出現符號錯誤或分數運算失誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "檢查 P(A ∩ B) + P(A' ∩ B) 是否等於 P(B)。",
+    "marks": 1,
+    "common_error": "未能正確理解互斥事件的定義導致錯誤判斷。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 5,
+    "what": "假設獨立事件，令 P(A ∩ B) = P(A)P(B) 求解 k。",
+    "marks": 1,
+    "common_error": "忘記獨立事件的定義條件直接代入計算。",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "DSE 數學卷一常考概率基礎，考生需熟練掌握條件概率與獨立事件定義，並能靈活運用集合運算處理互斥部分，避免在分數運算上失誤。",
+  "scaffolding_hints": [
+   "Hint1: 回憶 P(B|A) 的定義公式，這是解題起點。",
+   "Hint2: 注意 B 可以拆分為 A∩B 與 A'∩B 兩部分互斥集合。",
+   "Hint3: 獨立事件意味著交集概率等於兩個邊緣概率之積。"
+  ],
+  "quick_solution_strategy": "先寫出 P(A ∩ B) = 1/2 P(A)，再將 P(B) 拆解為兩部分，代入題目給出的關係式即可快速求解 k。"
+ },
+ "skills": {
+  "topic_id": "T-PROB",
+  "knowledge_point_ids": [
+   "K-PROB-04"
+  ],
+  "formula_ids": [
+   "F-PROB-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "2": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "5": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

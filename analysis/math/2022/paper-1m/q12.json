@@ -1,0 +1,117 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 1M",
+  "qno": "12",
+  "hash": "#2022P1MQ12"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "微分方程",
+   "secondary_topics": [
+    "鏈式法則",
+    "極值問題",
+    "指數函數"
+   ],
+   "required_formulas": [
+    "\\frac{d}{dt}(e^{kt}) = ke^{kt}",
+    "\\frac{dN}{dt} = \\frac{dN}{du} \\cdot \\frac{du}{dt}"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 240,
+   "marks": 7
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "計算 du/dt 並利用鏈式法則表示 dN/dt 關於 u 的式子",
+    "marks": 2,
+    "common_error": "忘記將 du/dt 代入鏈式法則，或微分 e^u 時漏掉係數",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "計算 d²N/dt² 並整理成 Np(u) 的形式找出多項式 p(u)",
+    "marks": 2,
+    "common_error": "二次微分時符號錯誤，或未能將結果歸類為 N 乘以 u 的多項式",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "令 dN/dt = 0 解出 t₀ 的值",
+    "marks": 1,
+    "common_error": "解指數方程時忽略對數性質或計算錯誤",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "判斷極值是最大還是最小並解釋原因",
+    "marks": 1,
+    "common_error": "僅寫出結論卻未說明理由（如一階導數符號變化或二階導數測試）",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 5,
+    "what": "計算 t 趨近於無限大時 N 的極限",
+    "marks": 1,
+    "common_error": "誤以為 e^(-u) 當 u 很大時會發散，或忽略 A 為常數",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "此題結合微分方程與極值分析，常見失分點在於鏈式法則的應用及對指數函數極限行為的理解不足。",
+  "scaffolding_hints": [
+   "先將 N 視為 u 的函數，再將 u 視為 t 的函數進行兩次微分。",
+   "注意 e^{6-2t} 中指數部分的導數會產生一個係數 -2e^{6-2t}。",
+   "極值判斷可透過觀察 dN/dt 在 t₀ 兩側的符號變化來決定。"
+  ],
+  "quick_solution_strategy": "先求 du/dt，代入鏈式法則得 dN/dt；再對 t 微分一次整理出 p(u)；令一階導數為零解 t₀，最後取極限。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "5": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

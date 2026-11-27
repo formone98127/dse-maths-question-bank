@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 2",
+  "qno": "3",
+  "hash": "#2022P2Q3"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "多項式恆等式與係數比較",
+   "secondary_topics": [
+    "展開二項式 (x+a)^2",
+    "分配律應用",
+    "一次方程式求解"
+   ],
+   "required_formulas": [
+    "(a+b)^2 = a^2 + 2ab + b^2",
+    "多項式加法與合併同类項"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "展開時符號錯誤",
+    "student_thought_process": "左邊展開得 $x^2+6x+9+mx$，右邊展開 $(x-n)(x+1)+2n = x^2+(1-n)x -n + 2n = x^2+(1-n)x+n$。比較一次項係數：$6+m = 1-n$。若誤算右邊常數項或 $n$ 的符號，會導致 $m$ 計算錯誤。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆恆等式與方程",
+    "student_thought_process": "學生可能只代入 $x=0$ 或 $x=1$ 求解，忽略了多項式恆等需所有係數對應相等。或者在比較常數項時，忘記右邊有 $+2n$ 這項，直接令 $9=n$ 而忽略符號變化。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "展開順序錯誤",
+    "student_thought_process": "學生可能先將右邊 $(x-n)(x+1)$ 算成 $x^2+x-nx-n$，然後忘記加上 $+2n$，導致常數項變成 $-n$。接著比較係數時解出錯誤的 $m$ 值，或是完全忽略左邊的 $mx$ 項影響。"
+   }
+  },
+  "scaffolding_hints": [
+   "將等式兩邊的多項式分別展開，注意 $(x+3)^2$ 的展開結果與右邊 $(x-n)(x+1)$ 的展開過程。",
+   "多項式恆等意味著對應次數的係數必須完全相等，請比較 $x^2$、$x$ 及常數項的係數。",
+   "利用一次項係數的關係建立關於 $m$ 和 $n$ 的聯立方程式，並結合常數項關係解出 $m$。"
+  ],
+  "quick_solution_strategy": "展開兩邊多項式，比較 $x$ 的係數與常數項，解聯立方程式求 $m$。"
+ },
+ "skills": {
+  "topic_id": "T-FUN",
+  "knowledge_point_ids": [
+   "K-FUN-01",
+   "K-FUN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

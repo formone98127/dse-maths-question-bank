@@ -1,0 +1,91 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2015",
+  "paper": "Paper 1",
+  "qno": "1",
+  "hash": "#2015P1Q1"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "指數定律",
+   "secondary_topics": [
+    "負指數處理",
+    "冪的乘方",
+    "同底數相除"
+   ],
+   "required_formulas": [
+    "$ (a^m)^n = a^{mn} $",
+    "$ \\frac{a^m}{a^n} = a^{m-n} $",
+    "$ a^{-n} = \\frac{1}{a^n} $"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90,
+   "marks": 3
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "處理分母冪的乘方，展開為 m^15 n^-35",
+    "marks": 1,
+    "common_error": "忘記將指數相乘，或誤算負指數符號",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "應用同底數相除定律合併 m 的指數",
+    "marks": 1,
+    "common_error": "錯誤地將指數相加而非相減",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "處理 n 的負指數，轉換為正指數形式",
+    "marks": 1,
+    "common_error": "忘記將 n 移到分母或保留負號",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "考生常忽略冪的乘方需將指數相乘，導致後續同底數除法計算錯誤，顯示對指數運算規則的應用不夠熟練。",
+  "scaffolding_hints": [
+   "先處理分母中的冪的乘方：$(m^3 n^{-7})^5$ 等於 $m^{3\\times5} n^{-7\\times5}$。",
+   "負指數表示倒數，最後一步需將 $n^{-35}$ 移至分母以符合題目要求。",
+   "同底數相除時，指數應相減：$9 - 15 = -6$，故 $m^{-6}$ 寫為 $\\frac{1}{m^6}$。"
+  ],
+  "quick_solution_strategy": "先展開分母冪的乘方得 m^15 n^-35，再與分子約分得 m^-6 n^-35，最後轉正指數寫成 \\frac{n^{35}}{m^6}。"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

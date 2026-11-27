@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2018",
+  "paper": "Paper 2",
+  "qno": "23",
+  "hash": "#2018P2Q23"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "旋轉對稱性",
+   "secondary_topics": [
+    "正多邊形內角",
+    "360 度等分"
+   ],
+   "required_formulas": [
+    "$\\frac{360^\\circ}{n}$"
+   ],
+   "bloom_taxonomy_level": "理解",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤判最小旋轉角為 20 度",
+    "student_thought_process": "學生可能將圖形視為由兩個獨立部分組成，認為每部分轉 20 度重合，故總共 180 度或混淆角度單位。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "計算 360/60 時出錯",
+    "student_thought_process": "學生正確找出最小角度為 60 度，但在計算 $360 \\div 60$ 時算成 6。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "誤讀題目為次數而非角度",
+    "student_thought_process": "學生將選項中的 $8^\\circ$ 誤解為圖形有 8 個旋轉對稱位置，而忽略了單位是度數。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察圖形整體形狀，判斷其是否具備正多邊形的特徵，並嘗試找出重複出現的最小角度。",
+   "回憶旋轉對稱的定義：將圖形繞中心旋轉多少度後能與原圖重合，這個最小角度是多少？",
+   "利用公式 $\\frac{360^\\circ}{n}$ 計算旋轉次數，其中 $n$ 為最小旋轉角度（以度為單位）。"
+  ],
+  "quick_solution_strategy": "找出最小旋轉角 $60^\\circ$，再計算 $360 \\div 60 = 6$"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-01",
+   "K-GEO-02"
+  ],
+  "formula_ids": [
+   "F-GEO-01",
+   "F-GEO-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

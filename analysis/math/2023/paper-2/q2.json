@@ -1,0 +1,92 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2023",
+  "paper": "Paper 2",
+  "qno": "2",
+  "hash": "#2023P2Q2"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "分數加法與乘法",
+   "secondary_topics": [
+    "平方差公式",
+    "分配律"
+   ],
+   "required_formulas": [
+    "$\\frac{a}{b} \\pm \\frac{c}{d} = \\frac{ad \\pm bc}{bd}$",
+    "$(A-B)(A+B) = A^2 - B^2$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "分子加錯",
+    "student_thought_process": "公分母算對，但分子計算時將 $2(5+4x)$ 誤算為 $5+4x$，忽略了分子的係數 2。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "符號與係數皆錯",
+    "student_thought_process": "分子計算時將 $-1(5-4x)$ 誤算為 $5-4x$，且未處理減號，導致符號與係數全錯。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "分子減號位置錯",
+    "student_thought_process": "公分母算對，但分子計算時將 $-1(5-4x)$ 的符號處理成減去 $12x$ 而非加 $4x$"
+   }
+  },
+  "scaffolding_hints": [
+   "提示：先觀察兩個分母的結構，它們相乘會得到一個特殊的公式形式。",
+   "提示：通分時，分子需分別乘以另一個分母，請仔細計算 $2(5+4x)$ 與 $-1(5-4x)$。",
+   "提示：將算出的分子合併後，檢查係數是否為 $5$ 與 $12x$"
+  ],
+  "quick_solution_strategy": "通分公分母為 $(5-4x)(5+4x)$，分子計算 $2(5+4x) - (5-4x)$。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-01",
+   "K-POL-02"
+  ],
+  "formula_ids": [
+   "F-POL-01",
+   "F-POL-02",
+   "F-POL-03",
+   "F-POL-06"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

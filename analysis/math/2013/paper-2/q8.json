@@ -1,0 +1,92 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 2",
+  "qno": "8",
+  "hash": "#2013P2Q8"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "多項式恆等式",
+   "secondary_topics": [
+    "係數比較法",
+    "一元二次方程式展開"
+   ],
+   "required_formulas": [
+    "$x(x+3a)+a = x^2+3ax+a$",
+    "$x^2+2bx+2c$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "2c=4 解錯",
+    "student_thought_process": "展開後得 $3ax+a=x^2+2bx+2c$。比較係數：$3a=2b$, $a=2c$。若算出 $a=2, b=3, c=1$，則比為 $2:3:1$。選項 B 將 $c$ 誤算為 $4$，可能是混淆了 $a=2c$ 與 $a=c/2$ 或單純計算錯誤。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "係數配對錯亂",
+    "student_thought_process": "學生可能將 $x^2$ 係數（左邊無）與右邊 $1$ 搞混，或錯誤地將 $a$ 的係數 $3a$ 對應到 $c$。正確應為 $3a=2b$ 且 $a=2c$。選項 C 的比例 $3:2:6$ 暗示學生可能誤以為 $b/a=1/2$ 且 $c/a=2$，完全顛倒了關係。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略常數項",
+    "student_thought_process": "學生展開左邊時可能遺漏了 $+a$ 這一項，誤以為恆等式為 $x(x+3a) \\equiv x^2+2bx+2c$，導致比較常數項時出現錯誤。若忽略 $a$，則會得出錯誤的比例關係。"
+   }
+  },
+  "scaffolding_hints": [
+   "將左邊多項式 $x(x+3a)+a$ 完整展開成標準形式 $Ax^2+Bx+C$。",
+   "將右邊多項式 $x^2+2(bx+c)$ 整理成標準形式 $x^2+2bx+2c$。",
+   "利用多項式恆等式的定義：對所有 $x$ 成立時，對應次數的係數必須完全相等，列出方程組求解比例。"
+  ],
+  "quick_solution_strategy": "展開兩邊後比較 $x$ 與常數項係數，得 $3a=2b, a=2c$，代換即得比例。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-01",
+   "K-POL-02"
+  ],
+  "formula_ids": [
+   "F-POL-01",
+   "F-POL-02",
+   "F-POL-03",
+   "F-POL-06"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

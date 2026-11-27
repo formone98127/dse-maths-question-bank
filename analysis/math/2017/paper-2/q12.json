@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 2",
+  "qno": "12",
+  "hash": "#2017P2Q12"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "一次函數與變數關係",
+   "secondary_topics": [
+    "正比例",
+    "常數項",
+    "代入法"
+   ],
+   "required_formulas": [
+    "y = ax^2 + b"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "忽略常數項影響",
+    "student_thought_process": "學生算出 a=2 後，直接計算 2*3^2=18，忘記加上 b=7 的修正或誤以為 b=0，導致答案偏小。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "平方計算錯誤",
+    "student_thought_process": "學生正確求得 a=2, b=-1 (若題目理解為 y=ax^2+b 且 x=1,y=7; x=2,y=13 解得 b=-1? 不，此題應為 y=ax^2+b。x=1->a+b=7; x=2->4a+b=13。相減得 3a=6->a=2, b=5。故 y=2x^2+5。x=3->18+5=23。選項 B 可能是計算 2*9+2 或類似錯誤。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤解正變含義",
+    "student_thought_process": "學生認為隨 x^2 正變即 y=kx^2，忽略「一部分為常數」的 b 項，直接將兩點斜率或比例搞混，得出過大數字。"
+   }
+  },
+  "scaffolding_hints": [
+   "題目描述 y 由「常數」與「隨 x^2 正變」兩部分組成，請先寫出符合此描述的通用方程式形式。",
+   "將已知條件 (x=1, y=7) 與 (x=2, y=13) 分別代入上述方程式，建立一個包含兩個未知數的聯立方程組。",
+   "解出係數後，將 x=3 代入完整的方程式進行計算，注意不要遺漏常數項。"
+  ],
+  "quick_solution_strategy": "設 y=ax^2+b，代入兩點解得 a=2,b=5，再算 x=3 時 y=2(9)+5=23。"
+ },
+ "skills": {
+  "topic_id": "T-FUN",
+  "knowledge_point_ids": [
+   "K-FUN-01",
+   "K-FUN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

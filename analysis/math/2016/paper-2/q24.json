@@ -1,0 +1,94 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2016",
+  "paper": "Paper 2",
+  "qno": "24",
+  "hash": "#2016P2Q24"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "正多邊形性質",
+   "secondary_topics": [
+    "內角和公式",
+    "外角和定理",
+    "對角線數目公式"
+   ],
+   "required_formulas": [
+    "(n-2)\\times 180^\\circ",
+    "\\sum \\text{外角}=360^\\circ",
+    "\\frac{n(n-3)}{2}"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "解出 n=15 誤植為 16",
+    "student_thought_process": "由 (n-2)×180=3240 得 n-2=18，計算錯誤認為 n=16，或直接忽略 -2 項誤算。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "代入 n=15 算錯為 20",
+    "student_thought_process": "將 n=15 代入 \\frac{n(n-3)}{2}，計算 15×12÷2=90，卻誤記或筆誤寫成 20。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆內角與外角數值",
+    "student_thought_process": "算出外角為 18^\\circ，卻誤以為題目問的是內角，直接將 18^\\circ 當作內角或誤加。"
+   }
+  },
+  "scaffolding_hints": [
+   "回想正 n 邊形內角和公式 (n-2)\\times 180^\\circ，先求出 n 的值。",
+   "利用外角和恆為 360^\\circ 的性質，由 n 計算單一外角大小。",
+   "確認選項 B 的外角數值與計算結果是否吻合。"
+  ],
+  "quick_solution_strategy": "先求 n=15，再算外角=360/15=18^\\circ。"
+ },
+ "skills": {
+  "topic_id": "T-MEN",
+  "knowledge_point_ids": [
+   "K-MEN-01",
+   "K-MEN-02"
+  ],
+  "formula_ids": [
+   "F-MEN-01",
+   "F-MEN-02",
+   "F-MEN-03",
+   "F-MEN-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 2",
+  "qno": "38",
+  "hash": "#2014P2Q38"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "函數圖像變換",
+   "secondary_topics": [
+    "關於 x 軸對稱",
+    "垂直平移",
+    "極值點關係"
+   ],
+   "required_formulas": [
+    ""
+   ],
+   "bloom_taxonomy_level": "理解",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "錯認平移方向",
+    "student_thought_process": "學生誤以為 $y=1-f(x)$ 是將原圖向上平移 1 單位，忽略了係數 -1 帶來的翻轉效果。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆對稱軸",
+    "student_thought_process": "學生將 $y=1-f(x)$ 誤解為關於 x 軸對稱（即 $y=-f(x)$），忽略了 +1 的垂直位移。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "錯認翻轉方向",
+    "student_thought_process": "學生誤以為 $y=1-f(x)$ 是先向上平移再關於 x 軸對稱，順序或組合邏輯錯誤。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察兩個函數表達式的差異：$y=f(x)$ 與 $y=1-f(x)$，其中 $-f(x)$ 代表什麼幾何變換？",
+   "若將 $y=f(x)$ 關於 x 軸對稱得到 $y=-f(x)$，接著整個圖像向上平移 1 單位會變成什麼式子？",
+   "檢查選項中兩條曲線的極值點（最高/最低點）是否滿足：若原圖有最大值 $M$，新圖應有最小值 $-M+1$"
+  ],
+  "quick_solution_strategy": "先關於 x 軸翻轉，再向上平移 1 單位；檢查極值點是否符合 $y_{new} = -y_{old} + 1$"
+ },
+ "skills": {
+  "topic_id": "T-FUN",
+  "knowledge_point_ids": [
+   "K-FUN-01",
+   "K-FUN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

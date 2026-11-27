@@ -1,0 +1,134 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2012",
+  "paper": "Paper 1",
+  "qno": "17",
+  "hash": "#2012P1Q17"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓的方程",
+   "secondary_topics": [
+    "切線性質",
+    "直線方程",
+    "弦中點坐標"
+   ],
+   "required_formulas": [
+    "(x-h)^2 + (y-k)^2 = r^2",
+    "y = mx + c",
+    "中點公式：(x_1+x_2)/2, (y_1+y_2)/2"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90,
+   "marks": 7
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用切線性質求半徑，寫出圓 C 方程。",
+    "marks": 2,
+    "common_error": "誤以為半徑為圓心 x 坐標 6，忽略 y 軸距離。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 2,
+    "what": "寫出直線 L 與圓 C 聯立的二次方程。",
+    "marks": 1,
+    "common_error": "代入時計算錯誤或漏掉 x^2 項。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "利用韋達定理表達兩根之和 (x_A+x_B)。",
+    "marks": 1,
+    "common_error": "記錯係數關係，混淆 a,b,c 位置。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "利用斜率 -1 求 y_A+y_B 與 x_A+x_B 關係。",
+    "marks": 1,
+    "common_error": "未考慮直線斜率導致 y 和表達錯誤。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 5,
+    "what": "結合兩根之和求中點坐標含 k 式子。",
+    "marks": 1,
+    "common_error": "忘記除以 2 或混淆中點與頂點。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "整理答案並檢查 k 的範圍（若需）。",
+    "marks": 1,
+    "common_error": "未化簡分式或遺漏題目要求。",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "考評報告指出考生常混淆半徑定義及誤用判別式，建議強調幾何意義與韋達定理的直接應用。",
+  "scaffolding_hints": [
+   "提示：切線在 x 軸，圓心 y 坐標即為半徑。",
+   "提示：聯立方程後，x^2 係數為 1+k^2。",
+   "提示：中點 x 座標 = (x_A+x_B)/2，利用韋達定理直接求和。"
+  ],
+  "quick_solution_strategy": "先定圓方程，再聯立直線得二次式，用韋達定理求和中點，代入斜率關係即得。"
+ },
+ "skills": {
+  "topic_id": "T-CIR",
+  "knowledge_point_ids": [
+   "K-CIR-01",
+   "K-CIR-02"
+  ],
+  "formula_ids": [
+   "F-CIR-01",
+   "F-CIR-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "2": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "5": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

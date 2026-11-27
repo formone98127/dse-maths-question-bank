@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2016",
+  "paper": "Paper 2",
+  "qno": "33",
+  "hash": "#2016P2Q33"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "十六進位數值轉換",
+   "secondary_topics": [
+    "指數法則",
+    "多項式展開"
+   ],
+   "required_formulas": [
+    "$N = d_n \\times b^n + d_{n-1} \\times b^{n-1} + \\dots + d_0 \\times b^0$"
+   ],
+   "bloom_taxonomy_level": "理解",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "十六進位 D 值誤算",
+    "student_thought_process": "將 B(10) 誤認為 D(13)，導致係數變成 205 而非 188。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "指數位權混淆",
+    "student_thought_process": "誤以為最高位數應配對 $16^{12}$，忽略該位置實際係數為 0。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "綜合計算錯誤",
+    "student_thought_process": "同時犯下 D=13 誤算與指數位權配對錯誤，導致係數變大且指數偏高。"
+   }
+  },
+  "scaffolding_hints": [
+   "回憶十六進位符號對應的十進位數值（A=10, B=11... E=14）。",
+   "確認該數字中哪些位置的係數為 0，避免多餘項。",
+   "將非零數字與其對應的 $16$ 的次方指數正確配對。"
+  ],
+  "quick_solution_strategy": "E(14) 在 $16^{11}$ 位，D(13) 在 $16^6$ 位，其餘為 0。"
+ },
+ "skills": {
+  "topic_id": "T-NUM",
+  "knowledge_point_ids": [
+   "K-NUM-01",
+   "K-NUM-02"
+  ],
+  "formula_ids": [
+   "F-NUM-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-CHAIN"
+   },
+   "D": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

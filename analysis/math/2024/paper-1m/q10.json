@@ -1,0 +1,130 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 1M",
+  "qno": "10",
+  "hash": "#2024P1MQ10"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "泊松分佈",
+   "secondary_topics": [
+    "條件概率",
+    "獨立事件"
+   ],
+   "required_formulas": [
+    "$P(X=k) = \\frac{e^{-\\lambda} \\lambda^k}{k!}$",
+    "$P(A|B) = \\frac{P(B|A)P(A)}{P(B)}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "計算單日順暢 (少於3次延誤) 之概率 P(S)。",
+    "marks": 2,
+    "common_error": "忘記將 k=0,1,2 三項相加，或算錯階乘與冪數。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "利用獨立性計算七日皆順暢之概率 P(All Smooth)。",
+    "marks": 1,
+    "common_error": "誤以為需考慮延誤總數分佈而非每日獨立事件。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "計算七日總延誤恰為 10 次之概率 P(Total=10)。",
+    "marks": 1,
+    "common_error": "混淆泊松分佈參數，未使用原平均數 1.6。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "應用貝氏定理求 (c)：七日皆順暢下總延誤為 10 之條件概率。",
+    "marks": 1,
+    "common_error": "分子分母顛倒，或忘記乘以 P(All Smooth)。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 5,
+    "what": "計算「至少 2 日無延誤」之概率作為 (d) 的分母。",
+    "marks": 1,
+    "common_error": "誤解「至少 2 日」為恰 2 日，或計算組合數錯誤。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 6,
+    "what": "計算 (d)：七日皆順暢且滿足條件之分子概率並求比值。",
+    "marks": 1,
+    "common_error": "忽略「無延誤」是順暢的子集，導致邏輯重複或遺漏。",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "此題結合泊松分佈與條件概率，考驗學生對獨立事件及貝氏定理的靈活運用，屬卷一較難之綜合應用題。",
+  "scaffolding_hints": [
+   "Recall the Poisson formula for k=0,1,2 to find P(Smooth).",
+   "Remember that daily delays are independent events.",
+   "Use Bayes' Theorem carefully: P(A|B) = P(B|A)P(A)/P(B)."
+  ],
+  "quick_solution_strategy": "先算單日順暢概率，再乘方得全週順暢；用貝氏定理處理條件概率，注意事件包含關係。"
+ },
+ "skills": {
+  "topic_id": "T-PROB",
+  "knowledge_point_ids": [
+   "K-PROB-04"
+  ],
+  "formula_ids": [
+   "F-PROB-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "5": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "6": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

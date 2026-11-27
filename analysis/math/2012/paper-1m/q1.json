@@ -1,0 +1,102 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2012",
+  "paper": "Paper 1M",
+  "qno": "1",
+  "hash": "#2012P1MQ1"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "二項式展開",
+   "secondary_topics": [
+    "指數與對數函數展開",
+    "係數比較"
+   ],
+   "required_formulas": [
+    "$\\binom{n}{r}a^rb^{n-r}$",
+    "$e^x = 1 + x + \\frac{x^2}{2!} + \\cdots$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "展開 $(1+3x)^n$ 至 $x^2$ 項",
+    "marks": 1,
+    "common_error": "忘記寫出二項式係數符號或計算錯誤",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "展開 $e^{-2x}$ 至 $x^2$ 項",
+    "marks": 1,
+    "common_error": "忘記階乘分母或符號錯誤",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "將兩式相乘並合併 $x^2$ 項係數",
+    "marks": 1,
+    "common_error": "乘法分配律應用錯誤或漏項",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "建立方程 $62 = \\text{計算結果}$ 並解 $n$",
+    "marks": 1,
+    "common_error": "忽略 $n$ 必須為正整數的條件",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "此題結合二項式與指數展開，測試學生處理多項式乘積及係數提取的能力，常見失分點在於繁複的代數運算細節。",
+  "scaffolding_hints": [
+   "先分別寫出兩個函數的前三項展開式。",
+   "注意 $e^{-2x}$ 中 $x$ 的係數是 $-2$。",
+   "相乘時只保留 $x^2$ 及以下的項。"
+  ],
+  "quick_solution_strategy": "分別展開至 $x^2$，利用分配律合併 $x^2$ 係數，列方程求解正整數解。"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

@@ -1,0 +1,103 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 1",
+  "qno": "4",
+  "hash": "#2022P1Q4"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "因式分解",
+   "secondary_topics": [
+    "完全平方公式",
+    "平方差公式",
+    "代換法"
+   ],
+   "required_formulas": [
+    "$a^2 - 2ab + b^2 = (a-b)^2$",
+    "$x^2 - y^2 = (x-y)(x+y)$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "因式分解 (a) 為 $(3c-1)^2$",
+    "marks": 1,
+    "common_error": "忘記完全平方公式或符號錯誤",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "觀察 (b) 式，將 $(3c-1)^2$ 視為一個整體 $A$",
+    "marks": 1,
+    "common_error": "未能識別 (a) 的結果與 (b) 的關聯",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "將 (b) 式重組為 $A^2 - (3c)^2$ 形式",
+    "marks": 1,
+    "common_error": "忽略 $-9c^2+6c-1$ 可寫成 $-(3c-1)^2$",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 4,
+    "what": "利用平方差公式展開為 $( (3c-1) - 3c )( (3c-1) + 3c )$",
+    "marks": 1,
+    "common_error": "忘記括號內符號變化導致結果錯誤",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "考生常忽略題目設計邏輯，未能將 (a) 的結論直接應用於 (b) 的結構重組，顯示對代數式整體觀的不足。",
+  "scaffolding_hints": [
+   "先独立完成 (a) 的計算，建立信心。",
+   "檢查 (b) 中 $-9c^2+6c-1$ 是否等於 $-(3c-1)^2$。",
+   "將複雜式子視為單個變數進行平方差分解。"
+  ],
+  "quick_solution_strategy": "先算出 (a) 得 $(3c-1)^2$，再發現 (b) 即為 $[(3c-1)^2 - (3c)^2]$，直接套用平方差公式即可。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-03"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "4": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

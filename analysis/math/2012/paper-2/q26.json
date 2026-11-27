@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2012",
+  "paper": "Paper 2",
+  "qno": "26",
+  "hash": "#2012P2Q26"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-16",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓的標準方程式與座標平面的象限特性",
+   "secondary_topics": [
+    "半徑的定義 (距離必須為正數)",
+    "圓心坐標的正負判斷 (第四象限的特性)"
+   ],
+   "required_formulas": [
+    "圓的標準方程式：$(x-h)^2 + (y-k)^2 = r^2$"
+   ],
+   "bloom_taxonomy_level": "理解",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略半徑與圓心縱坐標的大小關係",
+    "student_thought_process": "學生誤認為圓在 x 軸上方，因此 $r > k$ (即 $r-k>0$) 必然成立；或者學生未能從圖形中看出圓的最低點已低於 x 軸，導致錯誤判斷 $k+r$ 與 $k-r$ 的關係。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略半徑與圓心橫坐標的大小關係",
+    "student_thought_process": "學生誤認為圓在 y 軸右方，因此 $r > h$ (即 $r-h>0$) 必然成立；或者學生未能從圖形中看出圓的左側已延伸至 y 軸左邊，導致錯誤判斷 $h+r$ 與 $h-r$ 的關係。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "過度推論所有不等式皆成立",
+    "student_thought_process": "學生看到圓在第四象限，正確判斷出 $h>0, k<0$ (故 $h+k$ 符號不確定)，但錯誤地假設半徑必然大於圓心坐標的絕對值，導致認為 III ($r-k>0$) 也成立。"
+   }
+  },
+  "scaffolding_hints": [
+   "Hint 1 啟發：觀察圖形中圓與座標軸的交點位置，思考圓是否跨越了 x 軸或 y 軸？",
+   "Hint 2 知識：若圓跨越 x 軸，則半徑 $r$ 必然大於圓心縱坐標 $k$ 的絕對值（注意 $k$ 為負數）；若圓跨越 y 軸，則 $r > |h|$。",
+   "Hint 3 破題：由圖可知圓與 x 軸相交，故 $r > -k \\Rightarrow r-k>0$ (III 正確)；但圓與 y 軸是否相交？觀察圓的左側最遠點是否超過 y 軸左邊。若圓完全在 y 軸右側，則 $h+r < 0$ 不成立，需仔細檢查 $r-h$ 的符號。"
+  ],
+  "quick_solution_strategy": "由圖知圓與 x 軸相交 $\\Rightarrow r > -k \\Rightarrow r-k>0$ (III 對)；但圓左側未達 y 軸負向無限遠，需確認 $r$ 與 $h$ 大小。若圓在 y 軸右側 ($h>0$)，則 $r-h$ 符號取決於是否跨越 y 軸。圖中圓明顯跨越 y 軸向左延伸，故 $r > h$ (II 對)。再檢查 I：$h+k$ 為正負不定。"
+ },
+ "skills": {
+  "topic_id": "T-CIR",
+  "knowledge_point_ids": [
+   "K-CIR-01",
+   "K-CIR-02"
+  ],
+  "formula_ids": [
+   "F-CIR-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-COND"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-CIR-02",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-CIR-02",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-COND"
+   },
+   "D": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

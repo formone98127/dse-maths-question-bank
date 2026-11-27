@@ -1,0 +1,131 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2015",
+  "paper": "Paper 1M",
+  "qno": "10",
+  "hash": "#2015P1MQ10"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "概率與統計",
+   "secondary_topics": [
+    "泊松分佈",
+    "負二項分佈",
+    "條件概率"
+   ],
+   "required_formulas": [
+    "$P(X=k) = \\frac{e^{-\\lambda} \\lambda^k}{k!}$",
+    "$P(Y=y) = \\binom{n+y-1}{y} p^y (1-p)^n$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 240,
+   "marks": 3
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "計算泊松分佈中少於 4 位顧客的總概率 (P(X<4))",
+    "marks": 1,
+    "common_error": "忘記加上 k=0,1,2,3 的所有情況或計算 e^{-3.2} 出錯",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "從表格讀取買 2 張票的概率 p，並確認其他概率 q",
+    "marks": 0,
+    "common_error": "誤讀表格數據或混淆單人買票與總人數概念",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 3,
+    "what": "計算第 8 位顧客是第 3 位買 2 張票的負二項概率 (n=3, y=5)",
+    "marks": 1,
+    "common_error": "公式中 n 與 y 位置搞反，或忘記組合數部分",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "計算恰有 3 人且每人買 2 張票的概率 (P(X=3) * p^3)",
+    "marks": 0,
+    "common_error": "忽略 P(X=3) 只算 p^3，或誤以為是獨立事件直接乘",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 5,
+    "what": "計算恰有 3 人且總票數為 6 的所有組合概率並求和",
+    "marks": 1,
+    "common_error": "漏掉 (2,2,2) 以外的組合如 (4,1,1), (3,2,1) 等情況",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 6,
+    "what": "利用條件概率公式 P(總=6 | X<4) = P(總=6 AND X<4)/P(X<4)",
+    "marks": 0,
+    "common_error": "分母用錯成 P(X=3) 而非 P(X<4)，或分子事件定義不清",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "此題綜合考查泊松分佈與負二項分佈的結合應用，考生需熟練處理多階段隨機事件的條件概率計算，特別是組合情況的完整枚舉。",
+  "scaffolding_hints": [
+   "先列出泊松分佈公式並代入 lambda=3.2 計算前四項累加。",
+   "負二項分佈公式中 n 為成功次數 (買 2 張票者)，y 為失敗次數 (非買 2 張票者)。",
+   "處理總票數為 6 時，需系統性地列出三人買票數量所有可能組合。"
+  ],
+  "quick_solution_strategy": "先算 P(X<4) 做分母；負二項公式注意 n=3, y=5；枚舉三人買票和為 6 的三種情況：(2,2,2), (4,1,1), (3,2,1)。"
+ },
+ "skills": {
+  "topic_id": "T-PROB",
+  "knowledge_point_ids": [
+   "K-PROB-04"
+  ],
+  "formula_ids": [
+   "F-PROB-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "3": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "5": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "6": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

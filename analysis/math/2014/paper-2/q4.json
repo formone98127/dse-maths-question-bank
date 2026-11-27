@@ -1,0 +1,86 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 2",
+  "qno": "4",
+  "hash": "#2014P2Q4"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "一元二次方程式",
+   "secondary_topics": [
+    "判別式",
+    "等根定義"
+   ],
+   "required_formulas": [
+    "$b^2 - 4ac = 0$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "移項錯誤",
+    "student_thought_process": "將等式寫成 $x^2+ax+a-1=0$ 時，誤算係數為 $a-1$。代入判別式時計算出錯，解得 $a=-1$"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略常數項",
+    "student_thought_process": "誤以為 $a$ 是 $x^2+ax=0$ 的係數，或混淆了 $a-1$ 與 $a$ 的關係，導致解出 $0$ 或負值"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "符號錯誤",
+    "student_thought_process": "正確移項得 $x^2+ax+(a-1)=0$，但在解 $(a)^2-4(a-1)=0$ 時，展開 $-4a+4$ 後移項變號出錯"
+   }
+  },
+  "scaffolding_hints": [
+   "首先將方程式整理成標準的一元二次方程式形式 $Ax^2+Bx+C=0$。",
+   "回憶「有等根」的條件是判別式 $\\Delta$ 等於多少？請寫出公式。",
+   "代入係數後，解關於 $a$ 的一元一次方程式即可得出答案。"
+  ],
+  "quick_solution_strategy": "整理為 $x^2+ax+(a-1)=0$，令 $\\Delta=a^2-4(a-1)=0$ 求解。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

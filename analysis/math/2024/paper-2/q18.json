@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 2",
+  "qno": "18",
+  "hash": "#2024P2Q18"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "幾何圖形周界計算",
+   "secondary_topics": [
+    "畢氏定理",
+    "直線段長度加法"
+   ],
+   "required_formulas": [
+    "$a^2 + b^2 = c^2$",
+    "$P = AD + DC + CE + EA$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "漏算斜邊 EA",
+    "student_thought_process": "學生只計算了已知邊 $AD+DC+CE = 37+13+9=59$，誤以為這是答案或混淆選項。若選 A(76)，可能是將 $EA$ 算錯為 $17$ ($59+17=76$) 或單純加錯數字。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "斜邊計算錯誤",
+    "student_thought_process": "學生算出 $AC=15$ 後，正確算出 $EA=20$。但在總和時將 $37+13+9+20$ 算錯為 $89$ 或四捨五入誤導，導致選 B(90)。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤解周界定義",
+    "student_thought_process": "學生將 $AB$ 的長度 ($37+5=42$) 或其他非邊界線段加入計算，或錯誤地認為周界包含整個直線 $ABC$ 的部分。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察圖形，四邊形 $ADCE$ 由哪些線段組成？請列出它們的長度表達式。",
+   "已知 $\triangle ACE$ 是直角三角形，如何利用畢氏定理求出未知邊 $AC$ 和 $AE$？",
+   "確認所有邊長後，將它們相加即可得到周界，注意不要重複計算或遺漏任何一邊。"
+  ],
+  "quick_solution_strategy": "先求 $AC=\\sqrt{13^2+9^2}=15$，再求 $AE=\\sqrt{37^2-15^2}=20$，最後加總四邊。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-01",
+   "K-GEO-02"
+  ],
+  "formula_ids": [
+   "F-GEO-01",
+   "F-GEO-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

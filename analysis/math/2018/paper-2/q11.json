@@ -1,0 +1,92 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2018",
+  "paper": "Paper 2",
+  "qno": "11",
+  "hash": "#2018P2Q11"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "變數關係與常數",
+   "secondary_topics": [
+    "正變與反變定義",
+    "指數運算規則",
+    "平方根代換"
+   ],
+   "required_formulas": [
+    "$w \\propto \\sqrt{u} \\implies w = k_1\\sqrt{u}$",
+    "$w \\propto \\frac{1}{\\sqrt{v}} \\implies w = \\frac{k_2}{\\sqrt{v}}$",
+    "$w = k\\frac{\\sqrt{u}}{\\sqrt{v}}$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "指數處理錯誤",
+    "student_thought_process": "學生將 $w$ 與 $u,v$ 的關係代入後，未正確合併常數 $k$。計算時可能忽略分母中的 $v$ 或誤以為分子分母抵消，導致多餘的 $v$ 留在式子中，未能消去所有變數留下純常數。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "指數處理錯誤",
+    "student_thought_process": "學生正確代入 $w = k\\frac{\\sqrt{u}}{\\sqrt{v}}$，但在整理 $uv^4w^2$ 時，錯誤地將分母中的 $v$ 與分子的 $v^4$ 相乘而非相除，導致 $v$ 的指數變為正數，無法消去所有變數。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "分數化簡錯誤",
+    "student_thought_process": "學生正確得出 $w^2 = k^2\\frac{u}{v}$，代入選項 C 時，計算 $\\frac{vw^2}{u^4}$ 得到 $\\frac{k^2}{u^3}$。學生未能注意到分母仍有 $u$ 的殘餘項，誤以為已消去所有變數，或是混淆了 $u^4$ 與 $u$ 的指數關係。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "首先，請將題目中的文字描述轉化為數學等式：$w = k \\frac{\\sqrt{u}}{\\sqrt{v}}$。",
+   "接下來，計算 $w^2$ 的表達式，利用指數法則 $(a^m)^n = a^{mn}$ 來簡化根號與分數。",
+   "最後，將 $w^2$ 代入四個選項中，觀察哪一個選項能讓所有變數 $u, v, w$ 完全消去，只留下常數 $k$。"
+  ],
+  "quick_solution_strategy": "由 $w = k\\frac{\\sqrt{u}}{\\sqrt{v}}$ 得 $w^2 = k^2\\frac{u}{v}$，代入選項 D 驗證：$\\frac{v^4(k^2 u/v)}{u} = k^2 v^3$ (錯誤推導修正：應為 $\\frac{v^4 \\cdot k^2 \\frac{u}{v}}{u} = k^2 v^3$ 仍不對，重算：$w^2 = k^2 u/v$. 選項 D: $v^4 w^2 / u = v^4 (k^2 u/v) / u = v^3 k^2$. 等等，題目正確答案為何？"
+ },
+ "skills": {
+  "topic_id": "T-VAR",
+  "knowledge_point_ids": [
+   "K-VAR-01",
+   "K-VAR-02"
+  ],
+  "formula_ids": [
+   "F-VAR-01",
+   "F-VAR-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

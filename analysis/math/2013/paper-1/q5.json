@@ -1,0 +1,104 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 1",
+  "qno": "5",
+  "hash": "#2013P1Q5"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "一元一次不等式",
+   "secondary_topics": [
+    "整數解",
+    "聯立不等式"
+   ],
+   "required_formulas": [
+    "$\\frac{a}{b} > c \\Rightarrow a > bc$ (當 $b>0$)",
+    "$ax + b > 0 \\Rightarrow x > -\\frac{b}{a}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "去分母並移項，化簡不等式為 $x > \\frac{50}{8}$。",
+    "marks": 2,
+    "common_error": "去分母時漏乘右邊整數項，或移項變號錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "化簡第二個不等式 $18-2x \\geq 0$ 得 $x \\leq 9$。",
+    "marks": 1,
+    "common_error": "解出 $x \\geq 9$ (變號錯誤) 或計算 $18/2$ 錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "聯立範圍：$\\frac{50}{8} < x \\leq 9$，即 $6.25 < x \\leq 9$。",
+    "marks": 1,
+    "common_error": "寫成 $x > 6.25$ 但忘記小數點後比較邏輯。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 4,
+    "what": "列出範圍內整數：7, 8, 9，確認是否滿足條件。",
+    "marks": 0,
+    "common_error": "誤以為 $x$ 必須嚴格大於 6.25 故排除 6 (正確)，但常漏掉邊界 9。",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "考生常因去分母時未將右側整數項乘以 3，導致解出 $x > 50/8$ 後誤判為 $x > 6.25$ 卻在第二問混淆邊界值，特別是在處理 $18-2x \\geq 0$ 的等號時易忽略整數 9。",
+  "scaffolding_hints": [
+   "提示：去分母時，不等式右邊的 $23-5x$ 也要乘以 3。",
+   "提示：解出 $x \\leq 9$ 後，注意題目要求「整數」，包含邊界值 9。",
+   "提示：將 $\\frac{50}{8}$ 化為小數 $6.25$ 比較直觀，找出大於它的小於等於 9 的整數。"
+  ],
+  "quick_solution_strategy": "先解出 $x > 6.25$ 與 $x \\leq 9$，取交集得 $6.25 < x \\leq 9$，整數解為 7, 8, 9。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-05"
+  ],
+  "formula_ids": [
+   "F-EQN-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-05",
+    "formula_id": "F-EQN-03",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

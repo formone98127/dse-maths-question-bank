@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 2",
+  "qno": "6",
+  "hash": "#2022P2Q6"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "有效數字與四捨五入",
+   "secondary_topics": [
+    "不等式範圍",
+    "數軸區間表示"
+   ],
+   "required_formulas": [
+    "向下取整 (Floor) 定義: $\\lfloor x \\times 10^k \\rfloor / 10^k$",
+    "有效數字判斷規則"
+   ],
+   "bloom_taxonomy_level": "理解",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆向下取整與四捨五入",
+    "student_thought_process": "學生誤以為「向下取整」就是簡單的「小於等於」，忽略了有效數字的精確度邊界，直接將 345 視為上限。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "誤解有效數字位數",
+    "student_thought_process": "學生錯誤地認為第三個有效數字後的小數點位置應在 345.5，混淆了整數與小數的有效數字計數方式。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤解向下取整的閾值",
+    "student_thought_process": "學生將「向下取整」誤解為標準的四捨五入邏輯，認為下限應是 344.5 而非 345。"
+   }
+  },
+  "scaffolding_hints": [
+   "思考：當我們將一個數 $x$ 乘以 $10^k$ 後取整數部分再除以 $10^k$，這個過程對應什麼數學運算符號？",
+   "提示：對於三位有效數字 $345$，其真實值 $x$ 必須滿足 $\\lfloor x \\times 100 \\rfloor = 34500$。請畫出數軸思考上下界。",
+   "引導：若 $x=344.9$，保留三位有效數字是多少？若 $x=345.499...$，結果又是多少？這能幫助你確定邊界是開還是閉。"
+  ],
+  "quick_solution_strategy": "利用向下取整定義：$\\lfloor x \\times 100 \\rfloor = 34500 \\Rightarrow 34500 \\le x \\times 100 < 34600$"
+ },
+ "skills": {
+  "topic_id": "T-PCT",
+  "knowledge_point_ids": [
+   "K-PCT-01",
+   "K-PCT-02"
+  ],
+  "formula_ids": [
+   "F-PCT-01",
+   "F-PCT-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

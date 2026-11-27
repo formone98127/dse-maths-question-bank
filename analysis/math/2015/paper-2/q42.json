@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2015",
+  "paper": "Paper 2",
+  "qno": "42",
+  "hash": "#2015P2Q42"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "幾何 - 三角形垂心",
+   "secondary_topics": [
+    "直線斜率與垂直關係",
+    "點斜式直線方程式"
+   ],
+   "required_formulas": [
+    "兩直線垂直條件：$m_1 \\cdot m_2 = -1$",
+    "直線方程式 $y-y_1=m(x-x_1)$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "斜率計算錯誤",
+    "student_thought_process": "求 $PQ$ 斜率時算錯為 $3/4$，導致垂線斜率誤判為 $-4/3$，後續交點計算出錯。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆垂心與外心",
+    "student_thought_process": "誤以為垂心坐標與外心相同，直接取 $PQ$ 中點 $x=48$ 或錯誤應用圓心公式。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "讀題疏失",
+    "student_thought_process": "忽略 $O(0,0)$ 與 $P(0,60)$ 在 $y$ 軸上，誤以為 $OP$ 邊的高線需額外計算，或混淆題目所求為 $x$ 坐標。"
+   }
+  },
+  "scaffolding_hints": [
+   "回憶垂心的定義：三角形三條高線的交點。",
+   "先求出 $OP$ 邊與 $PQ$ 邊所在直線的斜率，再利用垂直關係寫出對應高線方程式。",
+   "聯立兩條高線方程式求解交點，並確認該交點的 $x$ 坐標是否符合選項。"
+  ],
+  "quick_solution_strategy": "求 $OP, PQ$ 斜率\\rightarrow 得高線斜率\\rightarrow 寫高線方程式\\rightarrow 求交點 $x$"
+ },
+ "skills": {
+  "topic_id": "T-LIN",
+  "knowledge_point_ids": [
+   "K-LIN-01",
+   "K-LIN-02"
+  ],
+  "formula_ids": [
+   "F-LIN-01",
+   "F-LIN-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

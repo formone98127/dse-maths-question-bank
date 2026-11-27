@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2019",
+  "paper": "Paper 2",
+  "qno": "17",
+  "hash": "#2019P2Q17"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "等腰三角形性質、垂直平分線",
+   "secondary_topics": [
+    "三角形內角和定理",
+    "直線角度關係"
+   ],
+   "required_formulas": [
+    "$\\triangle ABD$ 為等腰三角形 ($AB=BD \\Rightarrow \\angle BAD = \\angle BDA$)",
+    "$\\triangle CBD$ 為等腰三角形 ($CB=CD \\Rightarrow \\angle CBD = \\angle CDB$)",
+    "$\\angle ADC = \\angle ADB + \\angle CDB$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略垂直平分線性質",
+    "student_thought_process": "學生誤以為 $AC$ 與 $AD$ 有直接關聯，或錯誤將 $\\angle CDE$ 視為 $\\triangle ACD$ 的外角直接減去頂角，未利用 $AB=BD, BC=CD$ 導出的等腰性質。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "角度運算錯誤",
+    "student_thought_process": "學生正確設定 $\\angle ADB = x$ 及 $\\angle CDB = y$，得到 $x+y=66$，但在計算 $\\angle BCD = 180 - 2y$ 或 $\\angle BAD = 180 - 2x$ 時發生算術錯誤。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "未建立方程組",
+    "student_thought_process": "學生嘗試直接從 $\\angle CDE$ 推導，但未意識到需引入兩個變數 ($x, y$) 來表示 $\\angle ADB$ 與 $\\angle CDB$，導致無法解出唯一角度。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察圖形中 $AB=BD$ 和 $BC=CD$ 的條件，思考這對點 $B$ 與 $D$ 的關係有何暗示？",
+   "利用等腰三角形底角相等的性質，將未知角度設為變數 $x$ 和 $y$。",
+   "結合直線 $ADE$ 的角度關係 ($\\angle ADC + \\angle CDE = 180^\\circ$) 與三角形內角和，建立關於 $x, y$ 的方程組求解。"
+  ],
+  "quick_solution_strategy": "設 $\\angle ADB=x, \\angle CDB=y$，由等腰性質得 $\\angle BAD=x, \\angle BCD=180-2y$；利用 $x+y+66=180$ 解出 $x,y$ 關係再求 $\\angle ACD$"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-05"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

@@ -1,0 +1,107 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2015",
+  "paper": "Paper 1",
+  "qno": "17",
+  "hash": "#2015P1Q17"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "數列",
+   "secondary_topics": [
+    "指數定律",
+    "等差數列求和",
+    "對數運算",
+    "一元二次不等式"
+   ],
+   "required_formulas": [
+    "$\\sum_{r=1}^{n} (an+b) = \\frac{n}{2}[2a+(n-1)d]$",
+    "$\\log(xy) = \\log x + \\log y$",
+    "$\\log(a^b) = b \\log a$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 300,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用等差數列求和公式將 $A(1)$ 至 $A(n)$ 表示為關於 $n$ 的式子。",
+    "marks": 3,
+    "common_error": "忘記除以 2 或首項末項相加錯誤，導致係數不對。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "利用對數性質將 $B(1)$ 至 $B(n)$ 的乘積展開為對數和的形式。",
+    "marks": 1,
+    "common_error": "忘記將指數 $4n-5$ 提下來，直接計算底數乘積。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "代入步驟 1 的結果，化簡不等式左邊為關於 $n$ 的一元二次不等式。",
+    "marks": 1,
+    "common_error": "計算錯誤導致二次項係數或常數項出錯。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "解一元二次不等式，找出滿足條件的 $n$ 的最大整數值。",
+    "marks": 1,
+    "common_error": "忽略 $n$ 必須為正整數的限制，或求根公式用錯。",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "考生常混淆對數運算律與等差數列求和結構，導致無法將複雜乘積轉化為簡單的二次不等式求解。",
+  "scaffolding_hints": [
+   "提示 1：回憶 $A(n)$ 是線性函數，其累加和必為二次式。",
+   "提示 2：對數乘法變加法，指數會跑到前面來。",
+   "提示 3：解不等式後記得檢查 $n$ 是否為正整數。"
+  ],
+  "quick_solution_strategy": "先求 $A(n)$ 和得 $\\frac{n(4n-9)}{2}$；再化簡對數不等式得 $10^{\\frac{n(4n-9)}{2}} \\leq 8000$，解出 $n$ 範圍。"
+ },
+ "skills": {
+  "topic_id": "T-SEQ",
+  "knowledge_point_ids": [
+   "K-SEQ-02"
+  ],
+  "formula_ids": [
+   "F-SEQ-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-SEQ-02",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-SEQ-02",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-SEQ-02",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-SEQ-02",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

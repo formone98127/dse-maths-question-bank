@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 2",
+  "qno": "33",
+  "hash": "#2021P2Q33"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "對數函數與圖像交點",
+   "secondary_topics": [
+    "指數與對數互換關係",
+    "坐標軸截距計算",
+    "比例縮放"
+   ],
+   "required_formulas": [
+    "$\\log_b x = -y \\implies b^{-y} = x$",
+    "$\\log_c x = -y \\implies c^{-y} = x$"
+   ],
+   "bloom_taxonomy_level": "理解",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆底數與常數項的權重",
+    "student_thought_process": "學生可能誤以為 $a$ 只是平移量，不影響比例係數，而將 $b$ 視為唯一變數，錯誤地將 $b^a$ 放在分母。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆底數與常數項的權重",
+    "student_thought_process": "學生將 $a$ 視為指數，但錯誤地將 $c$（第二個函數的底數）當作比例係數，忽略了 $b$ 才是第一個函數的底數。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "指數運算符號錯誤",
+    "student_thought_process": "學生正確識別出 $c^a$ 的形式，但在計算 $OT:OS$ 時，忘記了 $OS$ 對應的是 $b^a$，導致分母分子顛倒或漏掉 $b$。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：回憶對數函數 $y = \\log_b x + k$ 與 $x$ 軸交點的定義，即 $y=0$ 時 $x$ 的值為何？",
+   "提示 2：將 $y=0$ 代入兩個方程式，分別用指數形式表達 $S$ 點與 $T$ 點的 $x$ 坐標（截距）。",
+   "提示 3：計算兩截距長度之比 $OT:OS$，注意 $O$ 為原點，$T$ 與 $S$ 均在 $x$ 軸正半軸。"
+  ],
+  "quick_solution_strategy": "令 $y=0$ 解出兩個 $x$ 截距，再取比值 $OT/OS$"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

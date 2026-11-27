@@ -1,0 +1,121 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2020",
+  "paper": "Paper 1M",
+  "qno": "1",
+  "hash": "#2020P1MQ1"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "概率分佈",
+   "secondary_topics": [
+    "期望值與變異數計算",
+    "聯立方程求解",
+    "隨機變數函數性質"
+   ],
+   "required_formulas": [
+    "\\sum P(X=x) = 1",
+    "\\operatorname{Var}(cX+d) = c^2\\operatorname{Var}(X)",
+    "\\operatorname{E}(cX+d) = c\\operatorname{E}(X)+d"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 300,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用概率總和為 1，建立關於 a 與 p 的方程。",
+    "marks": 2,
+    "common_error": "忘記 p>0 條件或計算錯誤導致無解。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "計算 E(X) 與 Var(X) 的表達式（用 a,p 表示）。",
+    "marks": 1,
+    "common_error": "混淆 Var(2X+a^2) 與 Var(X) 的關係。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "計算 E(aX-1) 的表達式（用 a,p 表示）。",
+    "marks": 1,
+    "common_error": "忘記常數項 -1 在期望中的處理。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "將 Var(2X+a^2)=8E(aX-1) 代入並化簡方程。",
+    "marks": 1,
+    "common_error": "展開平方時符號錯誤或漏掉係數平方。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "聯立步驟 1 與步驟 4 的方程求解 p。",
+    "marks": 1,
+    "common_error": "解二元一次方程組時算錯根。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "此題測試學生對離散隨機變數基本性質（總和為 1、期望線性性質、變異數縮放性質）的綜合應用能力，屬中階難度計算題。",
+  "scaffolding_hints": [
+   "回憶概率分佈的基本定義：所有機率之和必須等於 1。",
+   "熟記 Var(cX+d)=c^2Var(X) 與 E(cX+d)=cE(X)+d 的公式差異。",
+   "先將題目給出的等式用 a,p 表示出來，再結合第一步結果求解。"
+  ],
+  "quick_solution_strategy": "先由總機率=1 得 a+4p=1；再算 Var(2X+a^2)=4Var(X)，E(aX-1)=aE(X)-1，代入數值解方程組。"
+ },
+ "skills": {
+  "topic_id": "T-PROB",
+  "knowledge_point_ids": [
+   "K-PROB-01",
+   "K-PROB-02"
+  ],
+  "formula_ids": [
+   "F-PROB-01",
+   "F-PROB-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

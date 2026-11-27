@@ -1,0 +1,130 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 1M",
+  "qno": "10",
+  "hash": "#2022P1MQ10"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "正態分佈",
+   "secondary_topics": [
+    "二項分佈",
+    "排列組合"
+   ],
+   "required_formulas": [
+    "$Z = \\frac{X - \\mu}{\\sigma}$",
+    "$P(X > x) = 1 - \\Phi(Z)$",
+    "$B(n, p) = \\binom{n}{r}p^r(1-p)^{n-r}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 420,
+   "marks": 11
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "標準化變數並查表求單名選手超過 12.1 秒之機率 p",
+    "marks": 2,
+    "common_error": "Z 分數計算錯誤或查表時混淆左尾右尾機率",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "設定二項分佈參數 n=8, p(步驟 1), 計算至少 6 人之機率",
+    "marks": 3,
+    "common_error": "忘記加上 r=6 與 r=7,r=8 三種情況之總和",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "利用排列組合計算 Peter 為第 1 名時其餘 7 人排序",
+    "marks": 2,
+    "common_error": "未考慮其他 7 人時間互異之全排列 $7!$",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "計算 Peter 為第 3 名時，前 2 人快於他且後 5 人任意",
+    "marks": 2,
+    "common_error": "忽略前 2 人必須小於 12.1 秒之條件機率限制",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 5,
+    "what": "計算第 3 名總數 (6 組) 並求 Peter 為特定第 3 名機率",
+    "marks": 2,
+    "common_error": "分母應為所有可能成為第 3 名之選手總數而非 48",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 6,
+    "what": "整合 (d) 部分邏輯，確認進級與淘汰條件之機率計算",
+    "marks": 2,
+    "common_error": "題目截斷導致無法完整計算 (d)(ii)，僅能處理前幾小問",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "此題結合正態分佈與二項分佈應用，考驗學生將連續變數轉化為離散事件機率之能力，屬中四至中五階段常考綜合題型。",
+  "scaffolding_hints": [
+   "先畫出正態分佈曲線標記 12.1 位置，確認需算右尾面積。",
+   "二項分佈公式中 n=8, p 為步驟 1 求得之機率，注意 r 可取 6,7,8。",
+   "第 k 名問題關鍵在於比較大小關係，非單純時間排序，需考慮條件機率。"
+  ],
+  "quick_solution_strategy": "先算單人機率 p，再用二項公式求 (b)；(c) 用排列數除以總可能排列數；注意題目截斷影響 (d)。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "5": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "6": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

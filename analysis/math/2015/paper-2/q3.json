@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2015",
+  "paper": "Paper 2",
+  "qno": "3",
+  "hash": "#2015P2Q3"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "二元一次聯立方程式",
+   "secondary_topics": [
+    "代入消元法",
+    "加减消元法",
+    "線性方程組的解"
+   ],
+   "required_formulas": [
+    "$p = \\frac{b_2c_1 - b_1c_2}{a_1b_2 - a_2b_1}$ (克拉默法則或代入消元)",
+    "$5(p+3q) = 4(5)$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "消元符號錯誤",
+    "student_thought_process": "將第一式乘以 5 得 $5p+15q=20$，減去第二式時，$15q-9q=6q$ 應等於 $20-2=18$，解得 $q=3$。代回求 $p$ 時算錯符號或數值導致選 B。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略負號影響",
+    "student_thought_process": "解出 $q=3$ 後，代入 $p+9=4$ 得 $p=-5$。學生可能誤以為 $p=4-3=1$ 或混淆正負號，隨意選取正值選項 C。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "移項計算失誤",
+    "student_thought_process": "由 $p+3q=4$ 得 $p=4-3q$，代入第二式解出 $q=3$。接著算 $p=4-3(3)=-5$，卻錯誤計算成 $4+9=13$ 或類似邏輯導致選 D。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：觀察兩個方程式中 $p$ 的係數，思考如何透過「消元法」消除其中一個變數（例如 $q$）以解出 $p$。",
+   "提示 2：將第一個方程式兩邊同時乘以 5，使其 $p$ 的係數與第二個方程式相同，準備進行減法消去 $p$。",
+   "提示 3：執行消元步驟後，先解出 $q$ 的值，再將其代回任一原式計算 $p$ 的最終結果。"
+  ],
+  "quick_solution_strategy": "將第一式乘以 5 減去第二式消去 p，先求 q，再代回求 p。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

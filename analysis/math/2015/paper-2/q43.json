@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2015",
+  "paper": "Paper 2",
+  "qno": "43",
+  "hash": "#2015P2Q43"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "排列組合 (不相鄰問題)",
+   "secondary_topics": [
+    "插空法",
+    "全排列公式 n!"
+   ],
+   "required_formulas": [
+    "$P(n, r) = \\frac{n!}{(n-r)!}$",
+    "$n!$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "錯誤插空數值",
+    "student_thought_process": "學生可能誤以為只有 5 個空隙，計算為 $5! \\times 2! = 1440$。忽略了 6 名男生排成一列後，兩端也包含空隙，總共應有 7 個空隙供女生插入。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "計算錯誤或選錯階乘值",
+    "student_thought_process": "學生正確算出 $7 \\times 6! = 5040$，但隨後在乘以女生排列 $2!$ 時發生計算錯誤，或是誤將 $6!$ 算成其他數值（如 $10080/2=5040$ 但邏輯混亂），導致選出此非整除結果。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "未考慮女生互換",
+    "student_thought_process": "學生正確計算出 $7 \\times 6! = 5040$，但完全忘記了 2 名女生之間可以交換位置（$\\times 2!$），導致答案少乘了 2。"
+   }
+  },
+  "scaffolding_hints": [
+   "當要求特定元素不相鄰時，通常先將其他元素排好，利用它們產生的間隙來放置受限元素。",
+   "請思考：6 名男生站成一排後，除了男生之間的空隙外，隊伍的最左邊和最右邊是否也能站女生？",
+   "計算步驟為：(男生的排列數) $\\times$ (可用的空隙數) $\\times$ (女生的排列數)。"
+  ],
+  "quick_solution_strategy": "先排 6 男生 ($6!$)，產生 7 個空隙，選 2 個放女生 ($P(7,2)$)，相乘即可。"
+ },
+ "skills": {
+  "topic_id": "T-COM",
+  "knowledge_point_ids": [
+   "K-COM-02",
+   "K-COM-03"
+  ],
+  "formula_ids": [
+   "F-COM-01",
+   "F-COM-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-COM-02",
+    "formula_id": "F-COM-01",
+    "ability_id": "A-CHAIN"
+   },
+   "B": {
+    "knowledge_point_id": "K-COM-02",
+    "formula_id": "F-COM-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-COM-02",
+    "formula_id": "F-COM-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

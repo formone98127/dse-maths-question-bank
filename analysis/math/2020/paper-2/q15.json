@@ -1,0 +1,91 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2020",
+  "paper": "Paper 2",
+  "qno": "15",
+  "hash": "#2020P2Q15"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓與扇形",
+   "secondary_topics": [
+    "百分比變化",
+    "反比例關係"
+   ],
+   "required_formulas": [
+    "$L = \\theta r$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤用角度制與弧度制關係",
+    "student_thought_process": "學生可能將角度減少 60% 理解為剩餘 40%，但在代入公式時未轉換為弧度，或錯誤地認為弧長與半徑成直線比例而忽略角度變化對弧長的影響。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "百分比計算錯誤",
+    "student_thought_process": "學生正確設立 $L = \\theta r$，但在處理 $60\\%$ 減少後，將剩餘角度誤算為原角度的 $4/5$ 而非正確的 $0.4\\theta$，導致解出 $k=150$ 時計算偏差。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆弧長與周長概念",
+    "student_thought_process": "學生可能誤以為弧長不變意味著圓周率 $\\pi$ 或直徑有特定關係，錯誤地將問題簡化為半徑增加比例等於角度減少比例，得出中間值。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "回憶扇形弧長的定義公式，它與半徑及中心角有何關係？",
+   "若弧長固定，當角度減少時，為了維持等式平衡，半徑必須如何變化？請用變量表示。",
+   "將角度減少 60% 轉換為剩餘比例，並建立方程求解 $k$ 的百分比值。"
+  ],
+  "quick_solution_strategy": "利用 $L=\\theta r$，設原角 $\\theta_1$、新角 $\\theta_2=0.4\\theta_1$，由 $\\theta_1 r_1 = \\theta_2 r_2$ 推導 $r_2 = 2.5r_1$"
+ },
+ "skills": {
+  "topic_id": "T-MEN",
+  "knowledge_point_ids": [
+   "K-MEN-01",
+   "K-MEN-02"
+  ],
+  "formula_ids": [
+   "F-MEN-01",
+   "F-MEN-02",
+   "F-MEN-03",
+   "F-MEN-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

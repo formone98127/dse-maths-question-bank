@@ -1,0 +1,115 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 1M",
+  "qno": "5",
+  "hash": "#2017P1MQ5"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "二項式展開",
+   "secondary_topics": [
+    "指數與對數函數",
+    "係數提取"
+   ],
+   "required_formulas": [
+    "$$(a+b)^n = \\sum_{r=0}^n \\binom{n}{r} a^{n-r} b^r$$",
+    "$$e^{kx} = 1 + kx + \\frac{(kx)^2}{2!} + \\cdots$$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 300,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "展開 $(1+e^{3x})^2$ 至 $x^2$ 項",
+    "marks": 2,
+    "common_error": "忘記將 $e^{3x}$ 展開為冪級數直接平方，或算錯係數",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "展開 $(5-x)^4$ 至 $x^2$ 項",
+    "marks": 1,
+    "common_error": "二項式係數計算錯誤或符號弄錯",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "將兩部分展開式相乘",
+    "marks": 1,
+    "common_error": "乘法分配律應用時遺漏交叉項",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 4,
+    "what": "收集所有含 $x^2$ 的項",
+    "marks": 1,
+    "common_error": "混淆 $x$ 與 $x^2$ 係數，或漏算常數項乘積",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 5,
+    "what": "合併同類項並計算最終係數",
+    "marks": 1,
+    "common_error": "分數運算錯誤或正負號處理不當",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "此題結合指數展開與二項式，常考學生是否熟練 $e^{kx}$ 的泰勒展開及多項式乘法中的係數匹配技巧。",
+  "scaffolding_hints": [
+   "先將 $(1+e^{3x})^2$ 視為 $(1 + (1+3x+\\frac{9}{2}x^2))^2$ 的近似展開。",
+   "記得 $e^{3x}$ 展開時 $x^2$ 係數是 $\\frac{(3x)^2}{2!}$。",
+   "相乘時只需關注能產生 $x^2$ 的組合：常數×$x^2$、$x$×$x$、$x^2$×常數。"
+  ],
+  "quick_solution_strategy": "分別展開兩部分至 $x^2$，相乘時只保留能湊出 $x^2$ 的項（如 $1\\cdot Ax^2$, $Bx\\cdot Cx$, $Dx^2\\cdot 1$），最後加總係數。"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "4": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "5": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

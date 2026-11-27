@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2020",
+  "paper": "Paper 2",
+  "qno": "27",
+  "hash": "#2020P2Q27"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓的標準方程式與幾何性質",
+   "secondary_topics": [
+    "圓心半徑計算",
+    "兩圓位置關係判斷"
+   ],
+   "required_formulas": [
+    "(x-h)^2 + (y-k)^2 = r^2",
+    "d < r_1 + r_2 且 d > |r_1 - r_2|"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略 III 正確性",
+    "student_thought_process": "算出圓心在另一圓上後，誤判兩圓不相交或僅相切，因此排除相交選項 III，只選 I。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "半徑計算錯誤",
+    "student_thought_process": "將 2x^2 的係數忽略或處理不當，導致算出兩圓半徑相等，進而誤選只有 II。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略 I 正確性",
+    "student_thought_process": "正確算出半徑不等，但誤判圓心位置不在另一圓上，導致錯誤排除 I。"
+   }
+  },
+  "scaffolding_hints": [
+   "將兩圓方程式化為標準式 (x-h)^2+(y-k)^2=r^2，找出各自的圓心與半徑。",
+   "將 C_1 的圓心座標代入 C_2 的方程式中驗證是否成立。",
+   "比較兩圓圓心距離 d 與半徑和 r_1+r_2、半徑差 |r_1-r_2| 的大小關係以判斷相交情況。"
+  ],
+  "quick_solution_strategy": "先化標準式求圓心半徑，再代數驗證 I，幾何比較判斷 III。"
+ },
+ "skills": {
+  "topic_id": "T-CIR",
+  "knowledge_point_ids": [
+   "K-CIR-01"
+  ],
+  "formula_ids": [
+   "F-CIR-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

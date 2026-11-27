@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 2",
+  "qno": "41",
+  "hash": "#2021P2Q41"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "三角形幾何性質 (垂心)",
+   "secondary_topics": [
+    "直線斜率與垂直關係",
+    "點斜式直線方程式"
+   ],
+   "required_formulas": [
+    "兩直線垂直時斜率乘積為 -1: m_1 * m_2 = -1",
+    "直線方程式 y - y_1 = m(x - x_1)"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "符號處理錯誤",
+    "student_thought_process": "算出 Q 的 y 坐標為 -30，但忘記取反或混淆了垂足與頂點關係，導致符號錯誤。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "計算錯誤",
+    "student_thought_process": "正確求出 Q 的 y 坐標為 -30，但最後一步除以 -1 時算錯，變成 -10。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略垂直關係",
+    "student_thought_process": "誤以為垂心與頂點連線斜率等於底邊斜率，未應用垂直條件 m_OP * m_AQ = -1。"
+   }
+  },
+  "scaffolding_hints": [
+   "回想三角形垂心的定義：從一個頂點到對邊的垂線必經過垂心。",
+   "利用 O(0,0) 與 H(21,-3)，求出直線 OH 的斜率，並思考此直線與邊 PQ 的關係。",
+   "利用「OH ⊥ PQ」這一性質，由 OH 斜率推導出 PQ 斜率，再結合點 P 寫出 PQ 方程式求解 Q。"
+  ],
+  "quick_solution_strategy": "先求直線 OH 斜率 m_OH，因 OH ⊥ PQ，故 m_PQ = -1/m_OH。再利用點 P(26,-18) 寫出 PQ 方程式，代入 H(21,-3) 驗證或直接利用 PH⊥OQ 性質求 Q。"
+ },
+ "skills": {
+  "topic_id": "T-LIN",
+  "knowledge_point_ids": [
+   "K-LIN-01",
+   "K-LIN-02"
+  ],
+  "formula_ids": [
+   "F-LIN-01",
+   "F-LIN-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

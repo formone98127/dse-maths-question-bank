@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 2",
+  "qno": "23",
+  "hash": "#2024P2Q23"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "三角比與相似三角形",
+   "secondary_topics": [
+    "直角三角形的定義",
+    "平行線截割定理 (Thales's Theorem)",
+    "互餘角的三角函數關係"
+   ],
+   "required_formulas": [
+    "$\\sin \\theta = \\frac{對邊}{斜邊}$",
+    "$\\tan \\phi = \\frac{對邊}{鄰邊}$",
+    "$\\cos \\theta = \\sin (90^\\circ - \\theta)$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "倒置比例關係",
+    "student_thought_process": "學生可能混淆了 $\\frac{BC}{AD}$ 與 $\\frac{AD}{BC}$ 的順序，或者在建立相似比時將分子分母顛倒。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤用餘弦定義",
+    "student_thought_process": "學生試圖用 $\\cos \\theta$ 表達，但錯誤地將鄰邊與斜邊的比率直接套用到不同三角形的對應邊上。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "三角函數轉換錯誤",
+    "student_thought_process": "學生正確識別出需要 $\\tan \\phi$ 與 $\\cos \\theta$，但在進行三角恆等式變形時計算出錯。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察圖形中 $AD$ 與 $BC$ 的位置關係，它們分別位於哪兩個直角三角形中？",
+   "利用平行線截割定理或相似三角形的性質，找出這兩個三角形對應邊的比率關係。",
+   "將 $AD$ 和 $BC$ 分別用 $\\theta$ 和 $\\phi$ 的三角函數表示出來，並化簡分式。"
+  ],
+  "quick_solution_strategy": "設 $AB=x$，利用相似三角形性質建立 $BC$ 與 $AD$ 的比率關係。"
+ },
+ "skills": {
+  "topic_id": "T-TRI",
+  "knowledge_point_ids": [
+   "K-TRI-03"
+  ],
+  "formula_ids": [
+   "F-TRI-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-TRI-03",
+    "formula_id": "F-TRI-03",
+    "ability_id": "A-CHAIN"
+   },
+   "C": {
+    "knowledge_point_id": "K-TRI-03",
+    "formula_id": "F-TRI-03",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-TRI-03",
+    "formula_id": "F-TRI-03",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

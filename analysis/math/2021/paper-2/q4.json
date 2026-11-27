@@ -1,0 +1,85 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 2",
+  "qno": "4",
+  "hash": "#2021P2Q4"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "分數運算與因式分解",
+   "secondary_topics": [
+    "通分",
+    "符號變換"
+   ],
+   "required_formulas": [
+    "\\frac{a}{b} - \\frac{c}{d} = \\frac{ad-bc}{bd}"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "分子計算錯誤",
+    "student_thought_process": "通分後分子算成 n，忘記了減號帶來的符號變化或完全忽略常數項 42+42=84。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "分母符號錯誤",
+    "student_thought_process": "分子算對了 n+84，但分母中 (n-7) 沒有變換成 (7-n)，導致符號方向不一致。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "分子計算錯誤",
+    "student_thought_process": "同時犯了兩個錯誤：分子算成 n+84 但分母符號處理錯，或是單純抄寫錯誤。"
+   }
+  },
+  "scaffolding_hints": [
+   "先將兩個分數通分，公分母為 $(n-6)(n-7)$。",
+   "計算分子時，注意 $6(n-7)$ 與 $7(n-6)$ 的展開結果及其差值。",
+   "觀察選項 B 與 C 的分母差異，思考如何將 $(n-7)$ 變換為 $(7-n)$ 以匹配選項形式。"
+  ],
+  "quick_solution_strategy": "通分得 $\\frac{6(n-7)-7(n-6)}{(n-6)(n-7)} = \\frac{-84+n+42}{(n-6)(n-7)}$，整理分子並調整分母符號。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-03"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

@@ -1,0 +1,91 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 1",
+  "qno": "1",
+  "hash": "#2021P1Q1"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "指數定律",
+   "secondary_topics": [
+    "負指數轉正指數",
+    "冪的乘方律",
+    "同底數相乘"
+   ],
+   "required_formulas": [
+    "$a^m \\cdot a^n = a^{m+n}$",
+    "$(a^m)^n = a^{mn}$",
+    "$a^{-n} = \\frac{1}{a^n}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90,
+   "marks": 3
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "展開冪的乘方，將指數相乘。",
+    "marks": 1,
+    "common_error": "忘記將 $\\beta^4$ 的指數乘以 $5$。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "合併相同底數的項，指數相加。",
+    "marks": 1,
+    "common_error": "同底數相乘時指數未正確相加。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "將負指數轉換為正指數形式。",
+    "marks": 1,
+    "common_error": "答案仍保留負指數或寫成分數。",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "此題屬基礎化簡，考評報告指出大部分考生能處理，顯示學生對指數定律掌握良好，但需留意最後步驟的正負指數轉換細節。",
+  "scaffolding_hints": [
+   "先處理括號內的冪的乘方：$(\\beta^4)^5 = \\beta^{20}$。",
+   "回憶同底數相乘法則：$a^m \\cdot a^n = a^{m+n}$。",
+   "最後檢查是否所有指數均為正數。"
+  ],
+  "quick_solution_strategy": "先展開冪，合併 $\\alpha$ 與 $\\beta$ 的指數，最後將負指數轉成正指數寫於分母。"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

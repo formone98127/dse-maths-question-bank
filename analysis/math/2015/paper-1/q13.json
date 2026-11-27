@@ -1,0 +1,130 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2015",
+  "paper": "Paper 1",
+  "qno": "13",
+  "hash": "#2015P1Q13"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "平面幾何",
+   "secondary_topics": [
+    "全等三角形 (SAS)",
+    "直線與角關係",
+    "畢氏定理"
+   ],
+   "required_formulas": [
+    "\\triangle ABE \\cong \\triangle BCF \\text{ (SAS)}",
+    "\\angle AGE = 90^\\circ \\implies \\triangle BGE \\text{ 為直角三角形}",
+    "BG^2 + EG^2 = BE^2"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 180,
+   "marks": 9
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "列出正方形性質及已知條件，證明\\triangle ABE \\cong \\triangle BCF。",
+    "marks": 3,
+    "common_error": "寫出全等但缺少 SAS 三條件（如漏掉直角或邊長相等）。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 2,
+    "what": "由全等得出對應角相等，推導\\angle AEB + \\angle BGE = 90^\\circ。",
+    "marks": 3,
+    "common_error": "無法將\\angle CBF 轉換至\\triangle ABE 內，導致角度關係斷鏈。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "證明\\angle BGE = 90^\\circ，確認\\triangle BGE 為直角三角形。",
+    "marks": 1,
+    "common_error": "只寫結論未解釋角度和為 90 度的過程。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 4,
+    "what": "利用全等性質求\\triangle ABE 的斜邊\\ BE 長度。",
+    "marks": 1,
+    "common_error": "誤用勾股定理於錯誤三角形，或算錯\\ BE。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "在直角\\triangle BGE 中，利用畢氏定理列式求\\ BG。",
+    "marks": 1,
+    "common_error": "混淆斜邊與直角邊位置，導致公式應用錯誤。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 6,
+    "what": "計算數值並檢查單位是否一致（cm）。",
+    "marks": 1,
+    "common_error": "忽略題目給定長度單位，或計算時四捨五入錯誤。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "考評報告指出考生常混淆全等判定法（SAS vs RHS），此題強調利用正方形直角與邊長相等建立 SAS 條件，並透過角度互餘關係證明垂直，屬經典幾何推理模型。",
+  "scaffolding_hints": [
+   "Hint1: 正方形四邊相等、四角皆為直角是關鍵起點。",
+   "Hint2: 全等三角形對應角相等，可將\\angle CBF 移至\\triangle ABE 內分析。",
+   "Hint3: 觀察\\angle BAE + \\angle AEB = 90^\\circ，結合角度轉移即可證直角。"
+  ],
+  "quick_solution_strategy": "先證全等得角相等，再證兩角互餘推出垂直，最後用畢氏定理求未知邊長。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-05"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "2": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "4": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "6": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

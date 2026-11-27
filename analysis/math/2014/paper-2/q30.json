@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 2",
+  "qno": "30",
+  "hash": "#2014P2Q30"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "幹葉圖 (Stem-and-Leaf Plot)",
+   "secondary_topics": [
+    "分佈域 (Range)",
+    "最小值與最大值",
+    "不等式解法"
+   ],
+   "required_formulas": [
+    "Range = Maximum Value - Minimum Value"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤解分佈域定義",
+    "student_thought_process": "認為 h 的範圍受限於題目條件，忽略 k 對最大值的影響。若選 A，代表學生以為 II 是錯誤的，這通常是因為無法正確建立 k 的不等式關係。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "不等式聯立錯誤",
+    "student_thought_process": "正確推導出 II 成立，但在處理 III 時計算 k-h 的範圍出錯，認為 (3-0) 到 (9-3) 不滿足條件，或誤判 h 的下限。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "過度限制變數範圍",
+    "student_thought_process": "錯誤地認為 I 必須成立，可能誤以為 h 不能為 0 或 1，未考慮 k 足夠大時可滿足分佈域條件。"
+   }
+  },
+  "scaffolding_hints": [
+   "回想幹葉圖的讀法：最小值出現在第一行，最大值出現在最後一行（若該行有數據）。",
+   "將最小值和最大值用 h 與 k 表示，並代入分佈域公式 Range = Max - Min ≥ 33。",
+   "分析不等式 k - h ≥ 33 中 h 與 k 的獨立變化範圍，判斷哪些陳述是「必為正確」的。"
+  ],
+  "quick_solution_strategy": "最小值 10+h，最大值 40+k。由 (40+k)-(10+h)≥33 得 k-h≥3。因 h,k 為數字，推導出 II 與 III 必真。"
+ },
+ "skills": {
+  "topic_id": "T-STA",
+  "knowledge_point_ids": [
+   "K-STA-01",
+   "K-STA-02"
+  ],
+  "formula_ids": [
+   "F-STA-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2016",
+  "paper": "Paper 2",
+  "qno": "16",
+  "hash": "#2016P2Q16"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "線段長度計算",
+   "secondary_topics": [
+    "點線關係",
+    "加法原理"
+   ],
+   "required_formulas": [
+    "$BC = BD + CD$",
+    "$AC = AB + BC$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "忽略點 D 位置",
+    "student_thought_process": "學生可能誤以為 B 在 A、D 之間，直接計算 $AD - AB = 40 - 24 = 16$ 或混淆順序導致錯誤加減。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "加法錯誤",
+    "student_thought_process": "學生正確識別 $BC = BD + CD$，但計算 $32+68=100$ 時算錯成 $54$，或誤用其他數字組合。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤解直線順序",
+    "student_thought_process": "學生錯誤假設 $D$ 在 $A$、$B$ 之間，計算 $AB + BD = 24+32=56$ 接近但非此選項，或亂加數字。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "觀察圖形中點 $A$、$B$、$C$、$D$ 在直線上的排列順序。",
+   "確認 $BD$ 與 $CD$ 是否相鄰且共同構成 $BC$。",
+   "將已知長度相加：$32 + 68$ 即可得到答案。"
+  ],
+  "quick_solution_strategy": "$BC = BD + CD = 32 + 68 = 100$，但題目選項無 100，需重新審視圖形與數據一致性，依標準答案 D=60 推測題意可能為 $AC - AB$ 或其他組合，實際考題應為 $BC = BD + DC$ 且數據有誤或圖示順序不同。"
+ },
+ "skills": {
+  "topic_id": "T-LIN",
+  "knowledge_point_ids": [
+   "K-LIN-01",
+   "K-LIN-02"
+  ],
+  "formula_ids": [
+   "F-LIN-01",
+   "F-LIN-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-COND"
+   },
+   "B": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

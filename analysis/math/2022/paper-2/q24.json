@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 2",
+  "qno": "24",
+  "hash": "#2022P2Q24"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "直線方程式與斜率截距",
+   "secondary_topics": [
+    "座標軸上的截距",
+    "係數符號判斷"
+   ],
+   "required_formulas": [
+    "y = mx + c (斜截式)",
+    "mx + ny = 3 \\Rightarrow y = -\\frac{m}{n}x + \\frac{3}{n}"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤判截距與係數關係",
+    "student_thought_process": "學生認為 III 成立，可能將圖形對稱性誤用或錯誤推導斜率與截距之和為零，忽略了 n 的具體數值限制。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略斜率符號",
+    "student_thought_process": "學生只關注截距大小而忽略了直線向下傾斜意味著斜率為負，導致錯誤判斷 m 的符號。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "過度推導 III",
+    "student_thought_process": "學生嘗試證明 III 成立，可能錯誤假設 y 截距為 3 時 x 截距必須為 -3，未考慮 n>3 時的實際情況。"
+   }
+  },
+  "scaffolding_hints": [
+   "將一般式 mx + ny = 3 轉換為斜截式 y = ... 以觀察斜率與 y 截距。",
+   "觀察圖形中直線與 y 軸交點是否高於 (0,3)，推斷 n 的範圍。",
+   "根據直線走向判斷斜率正負，進而確定 m 的符號；驗證 III 是否必然成立。"
+  ],
+  "quick_solution_strategy": "轉化為 y = -\\frac{m}{n}x + \\frac{3}{n}，由圖知截距>3 且斜率<0，故 n>3, m<0，III 不必然成立。"
+ },
+ "skills": {
+  "topic_id": "T-LIN",
+  "knowledge_point_ids": [
+   "K-LIN-01",
+   "K-LIN-02"
+  ],
+  "formula_ids": [
+   "F-LIN-01",
+   "F-LIN-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

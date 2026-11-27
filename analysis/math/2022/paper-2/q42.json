@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 2",
+  "qno": "42",
+  "hash": "#2022P2Q42"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "排列組合",
+   "secondary_topics": [
+    "全排列公式",
+    "乘法原理"
+   ],
+   "required_formulas": [
+    "P(n, r) = n! / (n-r)",
+    "n! = 1 × 2 × ... × n"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "忽略部分排列",
+    "student_thought_process": "學生只計算了最後兩位數字 (2!) 的排列，完全忽略了前五位數字 (5!) 的排列可能性。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "計算錯誤或混淆公式",
+    "student_thought_process": "學生可能算出 5! = 120 後，錯誤地將 120 與 2! 相加 (122) 或進行其他無意義運算導致接近但非正確答案。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤解題目條件",
+    "student_thought_process": "學生錯誤地認為所有 7 個數字 (1,2,3,5,7,8,9) 都要一起排列，忽略了題目指定前五位與後兩位是獨立組成的條件。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：題目將密碼分為「前五位」和「最後兩位」兩個獨立的區塊來討論，這意味著我們需要分別計算這兩個區塊的排列數。",
+   "提示 2：對於由 n 個不同元素組成的集合，其全排列（Permutation）的數量公式是什麼？請回憶階乘符號 (!) 的定義。",
+   "提示 3：根據乘法原理，總密碼數等於「前五位可能的排列數」乘以「最後兩位可能的排列數」。試著將這兩個數字相乘看看結果。"
+  ],
+  "quick_solution_strategy": "分別計算 5 個數字的全排列與 2 個數字的全排列，再將兩者相乘即可。"
+ },
+ "skills": {
+  "topic_id": "T-COM",
+  "knowledge_point_ids": [
+   "K-COM-02",
+   "K-COM-03"
+  ],
+  "formula_ids": [
+   "F-COM-01",
+   "F-COM-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-COM-02",
+    "formula_id": "F-COM-01",
+    "ability_id": "A-CHAIN"
+   },
+   "C": {
+    "knowledge_point_id": "K-COM-02",
+    "formula_id": "F-COM-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-COM-02",
+    "formula_id": "F-COM-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

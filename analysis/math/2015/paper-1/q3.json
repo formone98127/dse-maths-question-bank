@@ -1,0 +1,132 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2015",
+  "paper": "Paper 1",
+  "qno": "3",
+  "hash": "#2015P1Q3"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "概率",
+   "secondary_topics": [
+    "樹狀圖/列表法",
+    "基本事件數計算",
+    "有利事件數識別"
+   ],
+   "required_formulas": [
+    "$P(E) = \\frac{n(E)}{n(S)}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120,
+   "marks": 3
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "列出 A 袋所有可能抽到的數字。",
+    "marks": 1,
+    "common_error": "漏列數字或寫錯集合元素。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 2,
+    "what": "列出 B 袋所有可能抽到的數字。",
+    "marks": 1,
+    "common_error": "漏列數字或混淆 A、B 袋內容。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 3,
+    "what": "計算總事件數（A 袋張數乘以 B 袋張數）。",
+    "marks": 1,
+    "common_error": "直接相加兩袋張數而非相乘。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 4,
+    "what": "找出兩數之和小於 9 的所有組合。",
+    "marks": 0,
+    "common_error": "計算加法錯誤或漏算組合。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "計算有利事件數（滿足條件的組合數量）。",
+    "marks": 0,
+    "common_error": "將「小於等於」誤作「小於」。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 6,
+    "what": "代入概率公式計算並化簡分數。",
+    "marks": 0,
+    "common_error": "未約分或寫成小數而非最簡分數。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "考生常混淆「小於」與「小於等於」的條件，導致將和為 9 的情況錯誤納入計算，這是概念理解上的典型失誤。",
+  "scaffolding_hints": [
+   "先畫樹狀圖或列表列出所有 (A, B) 組合。",
+   "確認 A 袋數字為奇數，B 袋為偶數，和必為奇數。",
+   "檢查題目要求是「小於」而非「小於等於」。"
+  ],
+  "quick_solution_strategy": "總事件 4x5=20；和<9 的組合有 (1,2),(1,4),(3,2),(3,4),(5,2) 共 5 種，概率 5/20=1/4。"
+ },
+ "skills": {
+  "topic_id": "T-PROB",
+  "knowledge_point_ids": [
+   "K-PROB-01",
+   "K-PROB-02"
+  ],
+  "formula_ids": [
+   "F-PROB-01",
+   "F-PROB-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "2": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "3": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "4": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "6": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

@@ -1,0 +1,104 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 1",
+  "qno": "11",
+  "hash": "#2013P1Q11"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "變分",
+   "secondary_topics": [
+    "正比例與平方比例",
+    "聯立方程求解",
+    "二次方程求根"
+   ],
+   "required_formulas": [
+    "$W = kl + ml^2$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "建立模型：設 $W = kl + ml^2$，代入 $l=1, W=181$ 及 $l=2, W=402$。",
+    "marks": 1,
+    "common_error": "忘記設定兩個常數 $k$ 和 $m$，或寫成錯誤的比例關係式。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "解聯立方程求出常數 $k=160$ 與 $m=-10$。",
+    "marks": 1,
+    "common_error": "計算錯誤導致 $k$ 或 $m$ 值不正確，例如算出 $k=181-m$ 後代入錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "寫出最終公式 $W = 160l - 10l^2$，並代入 $l=1.2$ 計算 (a) 問。",
+    "marks": 1,
+    "common_error": "忘記將 $l=1.2$ 代入正確位置，或算錯小數乘法。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "針對 (b) 問，將 $W=594$ 代入公式得 $-10l^2 + 160l - 594 = 0$。",
+    "marks": 1,
+    "common_error": "移項時符號錯誤，或未能正確化簡二次方程。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "此題主要測試考生建立數學模型及解聯立方程的能力，考評報告顯示大部分考生能掌握正變與平方變的組合概念，但在計算細節上仍需加強。",
+  "scaffolding_hints": [
+   "提示 1：題目說「一部分隨 $l$ 正變」代表項為 $kl$，「另一部分隨 $l^2$ 正變」代表項為 $ml^2$。",
+   "提示 2：利用兩個已知條件建立兩個方程，解出兩個未知常數 $k$ 和 $m$。",
+   "提示 3：(b) 問是已知 $W$ 求 $l$，會產生二次方程，記得檢查是否有多個合理解（周界必須為正數）。"
+  ],
+  "quick_solution_strategy": "先設 $W=kl+ml^2$，代入兩組數據解出 $k,m$；(a) 直接代數計算，(b) 解二次方程取正值。"
+ },
+ "skills": {
+  "topic_id": "T-VAR",
+  "knowledge_point_ids": [
+   "K-VAR-01"
+  ],
+  "formula_ids": [
+   "F-VAR-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

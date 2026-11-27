@@ -1,0 +1,129 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2018",
+  "paper": "Paper 1M",
+  "qno": "5",
+  "hash": "#2018P1MQ5"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "微分法",
+   "secondary_topics": [
+    "極限",
+    "函數最值"
+   ],
+   "required_formulas": [
+    "\\frac{d}{dx}[u(x)^{-1}] = -u(x)^{-2} \\cdot u'(x)",
+    "\\lim_{x \\to \\infty} \\frac{ax^n + \\dots}{bx^m + \\dots} = 0 \\text{ if } n < m"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 300,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用分母配方將導數寫成完全平方形式，觀察分子與分母關係。",
+    "marks": 2,
+    "common_error": "未能配出 (3x-8)^2 導致無法簡化導數式子。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "將導數化簡為 $f'(x) = \\frac{4(3x-8)}{(3x-8)^2} = \\frac{4}{3x-8}$，並找出極值點。",
+    "marks": 1,
+    "common_error": "忽略分母不能為零的條件或計算錯誤導致極值點錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "判斷 $x=\\alpha$ 為極小值點，由題意得 $f(\\alpha)=5$。",
+    "marks": 1,
+    "common_error": "混淆極大與極小值條件或誤判單調性。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "對化簡後的導數積分求回 $f(x)$，加入常數 $C$。",
+    "marks": 1,
+    "common_error": "積分計算錯誤或忘記加積分常數 $C$。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "代入極值條件解出 $C$，寫出完整 $f(x)$ 表達式。",
+    "marks": 1,
+    "common_error": "代入數值時計算錯誤或誤用極值點座標。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "利用極限性質求 $x \\to \\infty$ 時的函數值。",
+    "marks": 0,
+    "common_error": "誤以為分母趨近無窮大導致整體趨近無窮大（忽略分子常數）。",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "此題測試學生對導數結構的觀察力及積分技巧，常見失誤在於未能配方法簡化分母導致積分困難。",
+  "scaffolding_hints": [
+   "提示 1：觀察分母 $3x^2 - 24x + 49$ 是否可寫成 $(ax+b)^2$ 形式。",
+   "提示 2：回憶 $(u(x))^n$ 的求導公式，特別是負指數的情況。",
+   "提示 3：極值點出現在 $f'(x)=0$ 或不存在處，注意分母定義域限制。"
+  ],
+  "quick_solution_strategy": "先配方分母發現 $f'(x) = \\frac{4}{3x-8}$，積分得 $\\frac{4}{3}\\ln|3x-8|$，再代入極值條件定常數。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

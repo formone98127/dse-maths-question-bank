@@ -1,0 +1,86 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 2",
+  "qno": "32",
+  "hash": "#2014P2Q32"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "指數函數與對數關係",
+   "secondary_topics": [
+    "指數函數圖像性質",
+    "對數換底公式"
+   ],
+   "required_formulas": [
+    "$y = b^x$",
+    "$\\log_b c = \\frac{\\ln c}{\\ln b}$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 120
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤判指數大小與圖像位置關係",
+    "student_thought_process": "學生看到 $b^x$ 在左側（增長較快），直覺認為底數較大。忽略當 $x<0$ 時，底數越小圖像越靠左的性質，錯誤推導出 $b<c$"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤判指數大小與圖像位置關係",
+    "student_thought_process": "學生同樣認為 $b>c$，因此排除 II。對於 III，可能嘗試計算座標差但混淆了對數底數的定義，未能正確連結線段比例與對數比值"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "同時犯下指數大小誤判與對數關係錯誤",
+    "student_thought_process": "學生完全誤解圖像特徵，認為 $b>c$ 且接受 III。這顯示學生未掌握水平線截距與底數的逆關係，並錯誤相信所有陳述皆成立"
+   }
+  },
+  "scaffolding_hints": [
+   "思考：當 $x$ 為負數時（圖像左側），底數較小的指數函數圖像會位於底數較大者的哪一側？",
+   "知識：若兩點在同一水平線上，設高度為 $y$，則 $x_b = \\log_b y$ 且 $x_c = \\log_c y$。觀察 $B$ 與 $C$ 的相對位置可推斷底數大小。",
+   "提示：計算 $AB$ 與 $AC$ 的長度比時，利用對數換底公式將比率轉換為 $\\frac{\\ln c}{\\ln b}$ 的形式進行驗證。"
+  ],
+  "quick_solution_strategy": "取水平線 $y=k$ ($0<k<1$)，比較 $x$ 座標大小；利用 $AB/AC = |x_B-x_A|/|x_C-x_A|$ 並代入對數定義驗證 III。"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

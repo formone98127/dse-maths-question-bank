@@ -1,0 +1,86 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2025",
+  "paper": "Paper 2",
+  "qno": "6",
+  "hash": "#2025P2Q6"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "近似值與範圍",
+   "secondary_topics": [
+    "四捨五入規則",
+    "不等式表示法"
+   ],
+   "required_formulas": [
+    "四捨五入至 $n$ 位小數的誤差範圍公式：$(V - 0.5\\times 10^{-n}) \\le x < (V + 0.5\\times 10^{-n})$"
+   ],
+   "bloom_taxonomy_level": "理解",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "誤解四捨五入邊界包含性",
+    "student_thought_process": "學生認為 $5.67$ 是由 $5.665$ 和 $5.675$ 四捨五入而來，但錯誤地將範圍寫成 $5.66$ 到 $5.68$，混淆了精確度與誤差邊界。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤解四捨五入邊界包含性",
+    "student_thought_process": "學生知道範圍應在 $5.665$ 與 $5.675$ 之間，但錯誤地認為下界包含（$\\leq$）而上界不包含（$<$），搞反了四捨五入的規則。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤解四捨五入邊界包含性",
+    "student_thought_process": "學生知道範圍應在 $5.665$ 與 $5.675$ 之間，但錯誤地認為下界不包含（$<$）而上界包含（$\\leq$），搞反了四捨五入的規則。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "當一個數字被四捨五入到某一位時，其真實值必須落在該數字上下各 $0.5$ 個單位距離內。",
+   "計算 $5.67$ 的誤差邊界：下界為 $5.67 - 0.005$，上界為 $5.67 + 0.005$。",
+   "考慮四捨五入規則：若真實值恰好等於下界（如 $5.665$），會向上進位成 $5.67$；但若等於上界（如 $5.675$），則會變成 $5.68$，故上界不包含。"
+  ],
+  "quick_solution_strategy": "計算 $5.67 \\pm 0.005$ 並注意四捨五入規則導致上界為開放式不等號。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-COND"
+   },
+   "B": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

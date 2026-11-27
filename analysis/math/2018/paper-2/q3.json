@@ -1,0 +1,86 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2018",
+  "paper": "Paper 2",
+  "qno": "3",
+  "hash": "#2018P2Q3"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "因式分解",
+   "secondary_topics": [
+    "配方法",
+    "完全平方公式"
+   ],
+   "required_formulas": [
+    "$a^2 - b^2 = (a-b)(a+b)$",
+    "$x^2 + 2bx + b^2 = (x+b)^2$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "展開驗證失敗",
+    "student_thought_process": "學生可能嘗試將 $(h-2k)$ 視為公因式，但錯誤地計算了剩餘項的符號或係數，導致展開後常數項與一次項不符。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "符號處理錯誤",
+    "student_thought_process": "學生在配方法時，將 $-6h$ 與 $+12k$ 的符號搞混，導致展開後一次項係數錯誤。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "完全平方項誤判",
+    "student_thought_process": "學生可能忽略了 $-4k^2$ 與 $+12k$ 配對時需要變號，直接套用錯誤的完全平方模式。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察式子中有 $h^2$ 和 $-4k^2$，試著將它們視為兩個平方項的差或和。",
+   "考慮將含 $k$ 的項與常數項配對，看看是否構成完全平方公式 $(x+y)^2 = x^2+2xy+y^2$。",
+   "將選項 C 展開驗證：$(h+2k)(h-2k-6) = h(h-2k-6) + 2k(h-2k-6)$，檢查結果是否等於原式。"
+  ],
+  "quick_solution_strategy": "將 $-4k^2$ 與 $-12k$ 配對為 $-(2k+3)^2$ 或調整符號後利用平方差公式分解。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-03"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

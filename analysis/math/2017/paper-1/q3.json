@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 1",
+  "qno": "3",
+  "hash": "#2017P1Q3"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "因式分解",
+   "secondary_topics": [
+    "十字相乘法",
+    "提公因式法",
+    "整體代換"
+   ],
+   "required_formulas": [
+    "x^2 + (p+q)x + pq = (x+p)(x+q)"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "將二次項視為整體，利用十字相乘法分解前兩部分",
+    "marks": 2,
+    "common_error": "錯誤配對係數導致無法重組後面的線性項",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "將分解結果與剩餘項合併，嘗試提取公因式",
+    "marks": 1,
+    "common_error": "忽略括號內符號變化導致提不出正確公因式",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "確認最終形式是否為完全因式分解，檢查展開是否還原",
+    "marks": 1,
+    "common_error": "忘記括號導致答案不完整或錯誤",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "考評報告指出考生常誤將 $(x-3y)(x-y)+11(x-3y)$ 簡化為 $(x-y)(x-3y+11)$，顯示學生對公因式提取的規則理解不深，易混淆分配律應用。",
+  "scaffolding_hints": [
+   "先將 $x^2 - 4xy + 3y^2$ 視為關於 $x$ 的二次式進行分解。",
+   "記得十字相乘時，$p+q=-4y$ 且 $pq=3y^2$。",
+   "提公因式時，括號內的每一項都要加上或減去對應係數。"
+  ],
+  "quick_solution_strategy": "先分解前三項得 $(x-3y)(x-y)$，再觀察後兩項 $11x-33y=11(x-3y)$，合併提公因式 $(x-3y)$ 即可。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-03"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

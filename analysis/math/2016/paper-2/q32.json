@@ -1,0 +1,86 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2016",
+  "paper": "Paper 2",
+  "qno": "32",
+  "hash": "#2016P2Q32"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "指數函數與對數的轉換",
+   "secondary_topics": [
+    "線性方程式的斜率意義",
+    "底數變換公式 (Change of Base)"
+   ],
+   "required_formulas": [
+    "$\\log_{a^k} b = \\frac{1}{k}\\log_a b$",
+    "$y = ab^x$ 與 $\\log_c y = mx + c$ 的關係"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "斜率符號誤解",
+    "student_thought_process": "學生可能誤以為圖形下降代表底數 $b$ 為負數，或混淆了指數衰減與底數大小關係。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "對數換底計算錯誤",
+    "student_thought_process": "學生在將 $\\log_9 y$ 轉換為 $\\log_3 y$ 時，忘記除以係數 2，直接將斜率當作最終答案。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "指數與對數關係混淆",
+    "student_thought_process": "學生可能誤認為線性圖形的斜率直接等於 $b$，而忽略了對數底數轉換帶來的係數影響。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "觀察圖形，$x$ 與 $\\log_9 y$ 呈線性關係，這意味著它們符合直線方程式 $L = mx + c$ 的形式。",
+   "考慮指數函數 $y=ab^x$ 取對數後的結構：$\\log_9(ab^x) = \\log_9 a + x\\log_9 b$。",
+   "比較上述兩式，找出斜率與 $b$ 之間的數值關係，並代入圖中讀出的斜率進行計算。"
+  ],
+  "quick_solution_strategy": "將 $y=ab^x$ 取 $\\log_9$ 得線性式，斜率即為 $\\log_9 b$，由圖知斜率為 $1/2$，解出 $b$"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

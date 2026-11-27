@@ -1,0 +1,130 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2020",
+  "paper": "Paper 1",
+  "qno": "17",
+  "hash": "#2020P1Q17"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "二次函數",
+   "secondary_topics": [
+    "配方法求頂點",
+    "圖像平移",
+    "三角形外心性質"
+   ],
+   "required_formulas": [
+    "$y = a(x-h)^2 + k$ 的頂點為 $(h, k)$",
+    "$\\Delta ABC$ 的外心到三頂點距離相等：$d_A = d_B = d_C$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 180,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "對 $g(x)$ 配方，求出頂點 $D$ 坐標（用 $k$ 表示）。",
+    "marks": 2,
+    "common_error": "配方時漏掉 $x^2$ 係數或算錯常數項。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "由 $g(x)$ 推導 $g(x+2)$ 與 $-g(x-2)$ 的頂點 $E$、$F$（注意符號變化）。",
+    "marks": 1,
+    "common_error": "平移方向搞錯或漏掉負號導致頂點坐標錯誤。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "設 $F(p,q)$，利用外心到三頂點距離相等列方程：$ED^2 = EF^2 = FD^2$。",
+    "marks": 1,
+    "common_error": "只列兩式卻忽略第三條件或平方展開錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "將 $D$、$E$ 坐標代入距離公式，化簡得關於 $p,q,k$ 的方程組。",
+    "marks": 1,
+    "common_error": "化簡時漏掉 $k$ 項或錯消元導致矛盾。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "觀察方程組是否對任意 $k$ 有解，特別檢查 $(0,3)$ 是否滿足距離相等。",
+    "marks": 1,
+    "common_error": "直接假設無解而未驗證 $(0,3)$ 到 $D,E$ 距離是否相等。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 6,
+    "what": "結論：若 $(0,3)$ 為外心，則必與 $D,E$ 等距；計算發現不等距，故無此點。",
+    "marks": 1,
+    "common_error": "未明確指出「距離不等」即否定存在性。",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "考評報告指出考生常忽略外心定義（到三頂點等距），直接斷言無解而未驗證 $(0,3)$ 與 $D,E$ 距離關係，導致失分。",
+  "scaffolding_hints": [
+   "配方法核心：將 $x^2 - 2kx$ 補成 $(x-k)^2 - k^2$。",
+   "圖像平移規則：$g(x+h)$ 左移 $h$，$-g(x)$ 翻轉且頂點 $y$ 變號。",
+   "外心關鍵：若 $(0,3)$ 為外心，則它到 $D,E,F$ 距離必相等，先驗算 $(0,3)$ 到 $D,E$ 是否等距。"
+  ],
+  "quick_solution_strategy": "先求 $D,E$ 坐標；再驗 $(0,3)$ 到 $D,E$ 距離是否相等；若不等則直接結論無此點，無需解 $F$"
+ },
+ "skills": {
+  "topic_id": "T-FUN",
+  "knowledge_point_ids": [
+   "K-FUN-01",
+   "K-FUN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "6": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

@@ -1,0 +1,94 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2023",
+  "paper": "Paper 1",
+  "qno": "3",
+  "hash": "#2023P1Q3"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "百分數",
+   "secondary_topics": [
+    "誤差範圍",
+    "邊界值分析",
+    "單位換算"
+   ],
+   "required_formulas": [
+    "$\\text{下界} = \\text{讀數} - 0.5 \\times \\text{精度}$",
+    "$\\text{上界} = \\text{讀數} + 0.5 \\times \\text{精度}$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 120,
+   "marks": 3
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "計算單包芝士重量的誤差範圍（下界與上界）",
+    "marks": 1,
+    "common_error": "忘記除以 2，直接減去精度值",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 2,
+    "what": "計算 250 包總重量的理論最小與最大可能值",
+    "marks": 1,
+    "common_error": "未將單包範圍乘以 250",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "比較計算結果與宣稱值 53.6 kg 的誤差範圍",
+    "marks": 1,
+    "common_error": "忽略宣稱值的 ±0.05 kg 範圍，只比對中心值",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "考生需清楚理解「準確至最接近」含義，並能將單個測量誤差累積至總體誤差進行比較。",
+  "scaffolding_hints": [
+   "先找出 220g 的上下界是多少？",
+   "記得誤差範圍是 ±(精度/2)。",
+   "最後要檢查計算出的總重範圍是否包含 53.6kg。"
+  ],
+  "quick_solution_strategy": "算出單包範圍後乘 250，再與 53.6±0.05 比較即可判斷。"
+ },
+ "skills": {
+  "topic_id": "T-PCT",
+  "knowledge_point_ids": [
+   "K-PCT-01",
+   "K-PCT-02"
+  ],
+  "formula_ids": [
+   "F-PCT-01",
+   "F-PCT-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "2": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

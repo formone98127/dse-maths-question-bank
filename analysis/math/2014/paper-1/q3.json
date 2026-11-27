@@ -1,0 +1,129 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 1",
+  "qno": "3",
+  "hash": "#2014P1Q3"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "數系",
+   "secondary_topics": [
+    "有效數字",
+    "近似值",
+    "捨入規則"
+   ],
+   "required_formulas": [
+    "上捨入：若下一位數字 $\\geq 5$，則進位；否則不變。",
+    "下捨入：直接截斷多餘數位，不考慮後續數字大小。"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90,
+   "marks": 3
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "辨識題目要求的捨入類型（有效數字/整數/小數位）。",
+    "marks": 1,
+    "common_error": "混淆「一位有效數字」與「一位小數」的定義。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 2,
+    "what": "應用上捨入規則處理 (a) 題，保留首位非零後進位。",
+    "marks": 1,
+    "common_error": "誤將 $100$ 視為有效數字結果而非近似值表達。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "應用最接近整數規則處理 (b) 題，看小數點後第一位。",
+    "marks": 1,
+    "common_error": "錯誤寫成 $123.00$，誤以為需保留小數位。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 4,
+    "what": "應用下捨入規則處理 (c) 題，直接截斷至一位小數。",
+    "marks": 1,
+    "common_error": "誤將 $123.5$ 當作答案，未執行截斷操作。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 5,
+    "what": "檢查所有答案是否符合題目指定的格式與精度要求。",
+    "marks": 0,
+    "common_error": "忽略有效數字計數規則導致多寫或少寫零。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "確認無計算錯誤後，整齊寫出最終三項答案。",
+    "marks": 0,
+    "common_error": "因格式錯誤被扣分卻未自我修正。",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "考生常混淆「有效數字」與「小數位數」概念，導致將 $100$ 或 $123.00$ 等格式錯誤答案標記為正確。",
+  "scaffolding_hints": [
+   "Hint1: 有效數字從第一個非零數字開始計算。",
+   "Hint2: 下捨入是「不管後面是多少，直接切掉」。",
+   "Hint3: 最接近整數只看小數點後第一位是否 $\\geq5$"
+  ],
+  "quick_solution_strategy": "先標記要保留的位數，再看下一位數字決定進位、不變或截斷。"
+ },
+ "skills": {
+  "topic_id": "T-NUM",
+  "knowledge_point_ids": [
+   "K-NUM-01"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "2": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "4": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "5": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

@@ -1,0 +1,85 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2025",
+  "paper": "Paper 2",
+  "qno": "5",
+  "hash": "#2025P2Q5"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "一元二次方程式",
+   "secondary_topics": [
+    "配方法",
+    "完全平方公式"
+   ],
+   "required_formulas": [
+    "(x+a)^2 = x^2+2ax+a^2"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "符號錯誤",
+    "student_thought_process": "配方後得 (x+2)^2 = k^2-2k+1，開方時誤將右側 -2k 處理成 +k 或開方時符號搞混，導致 -k+1"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "配方法錯誤",
+    "student_thought_process": "配方時忽略左側加 4，直接將右側 k^2-2k-3 當作 (x+?)^2 展開，導致常數項符號與係數全錯"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "開方符號錯誤",
+    "student_thought_process": "配方正確但開方時，將 ±(k-1) 誤寫成 -k+1 與 -k-1 混合，未注意正負號對應關係"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察方程左側 x^2+4x，思考如何配成完全平方 (x+a)^2 的形式。",
+   "將方程兩邊同時加上常數完成配方，並利用 (k-1)^2 = k^2-2k+1 簡化右側。",
+   "對兩邊開平方時，記得考慮正負兩個根，並檢查選項中符號的對應關係。"
+  ],
+  "quick_solution_strategy": "配方得 (x+2)^2=(k-1)^2，開方即 x+2=±(k-1)，移項整理即可。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-03"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

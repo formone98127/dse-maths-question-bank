@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 2",
+  "qno": "23",
+  "hash": "#2017P2Q23"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "直線方程與斜率",
+   "secondary_topics": [
+    "截距",
+    "不等式比較"
+   ],
+   "required_formulas": [
+    "$y = mx + c$ (斜截式)",
+    "$x+my=n \\Rightarrow y = -\\frac{1}{m}x + \\frac{n}{m}$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤判 III",
+    "student_thought_process": "學生正確判斷 I 與 II，但錯誤認為 $n+m < p+q$ 成立，忽略了截距與斜率係數間的複雜關係。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤判 I",
+    "student_thought_process": "學生未能正確從圖形斜率推導出 $m$ 與 $p$ 的大小關係，導致排除 I。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤判 I 與 III",
+    "student_thought_process": "學生同時錯誤判斷斜率係數關係及截距線性組合，完全誤解圖形幾何意義。"
+   }
+  },
+  "scaffolding_hints": [
+   "將直線方程 $x+my=n$ 轉換為斜截式 $y = -\\frac{1}{m}x + \\frac{n}{m}$，觀察斜率與 y 軸截距的表達式。",
+   "比較兩直線的斜率（負值）大小：圖中較陡峭者其斜率絕對值較大，但需注意負號影響；同時比較 y 軸截距的高低。",
+   "針對選項 III，嘗試代入假設數值或分析 $n+m$ 與 $p+q$ 的代數關係，而非僅憑直覺判斷大小。"
+  ],
+  "quick_solution_strategy": "轉化為斜截式比較斜率與截距；III 項需反例驗證或代數分析，不可直接推導。"
+ },
+ "skills": {
+  "topic_id": "T-LIN",
+  "knowledge_point_ids": [
+   "K-LIN-01",
+   "K-LIN-02"
+  ],
+  "formula_ids": [
+   "F-LIN-01",
+   "F-LIN-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

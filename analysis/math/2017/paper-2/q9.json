@@ -1,0 +1,86 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 2",
+  "qno": "9",
+  "hash": "#2017P2Q9"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "二次函數圖形性質",
+   "secondary_topics": [
+    "配方法",
+    "頂點式方程式"
+   ],
+   "required_formulas": [
+    "y = a(x-h)^2 + k (其中 h, k 為頂點座標，a 決定開口方向)"
+   ],
+   "bloom_taxonomy_level": "理解",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤判 q 的符號",
+    "student_thought_process": "學生認為頂點在 x 軸下方故 q<0 正確，但誤以為 p 與 x 軸交點位置直接決定 p 符號而忽略平移關係。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤判 q 的符號",
+    "student_thought_process": "學生正確判斷圖形向下延伸故 p>0，但錯誤地將頂點 y 座標視為負數，忽略頂點其實在 x 軸上方。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤判 q 的符號",
+    "student_thought_process": "學生正確判斷 p>0，但完全誤解頂點 y 座標為負值，未觀察到頂點位於 x 軸上方。"
+   }
+  },
+  "scaffolding_hints": [
+   "二次函數 $y=(px+5)^2+q$ 的圖形頂點坐標為何？",
+   "比較圖中頂點的 y 座標與 x 軸的位置關係，判斷 q 的正負。",
+   "將方程式展開或代入特殊點驗證 p 的符號是否合理。"
+  ],
+  "quick_solution_strategy": "由頂點 $( -5/p, q )$ 知 $q>0$；圖形向下延伸故 $p>0$"
+ },
+ "skills": {
+  "topic_id": "T-FUN",
+  "knowledge_point_ids": [
+   "K-FUN-01",
+   "K-FUN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

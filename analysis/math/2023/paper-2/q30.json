@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2023",
+  "paper": "Paper 2",
+  "qno": "30",
+  "hash": "#2023P2Q30"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "加權平均數",
+   "secondary_topics": [
+    "總薪資計算",
+    "基本平均數定義"
+   ],
+   "required_formulas": [
+    "\\bar{x} = \\frac{n_1\\bar{x}_1 + n_2\\bar{x}_2}{n_1+n_2}",
+    " \\text{總薪資} = \\text{人數} \\times \\text{平均薪金}"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "加法進位錯誤",
+    "student_thought_process": "計算總薪資時，$14 \\times 31530 = 441420$ 與 $56 \\times 21525 = 1205400$ 加總後除以總人數 $70$，若加法進位算錯會導致結果偏離。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略權重差異",
+    "student_thought_process": "學生可能誤以為平均數是兩個平均數的簡單算術平均 $\\frac{31530+21525}{2}$，忽略了兼職人數是全職的四倍，導致結果偏高。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "讀題誤解",
+    "student_thought_process": "學生可能將題目中的「乙部」標籤誤認為是答案的一部分，或是完全未計算總薪資直接選取最大數值，屬於讀題不清。"
+   }
+  },
+  "scaffolding_hints": [
+   "平均薪金等於所有僱員的總薪資除以總人數。",
+   "先分別計算全職與兼職兩組的總薪資金額。",
+   "將兩組總薪資相加後，除以該公司的總僱員人數即可得出答案。"
+  ],
+  "quick_solution_strategy": "計算加權平均：$\\frac{14 \\times 31530 + 56 \\times 21525}{14+56}$"
+ },
+ "skills": {
+  "topic_id": "T-STA",
+  "knowledge_point_ids": [
+   "K-STA-01",
+   "K-STA-03"
+  ],
+  "formula_ids": [
+   "F-STA-01",
+   "F-STA-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2019",
+  "paper": "Paper 2",
+  "qno": "28",
+  "hash": "#2019P2Q28"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "組合機率與連續整數",
+   "secondary_topics": [
+    "樣本空間計算",
+    "有利事件計數"
+   ],
+   "required_formulas": [
+    "$\\binom{n}{k} = \\frac{n!}{k!(n-k)!}$",
+    "$P(E) = \\frac{\\text{有利事件數}}{\\text{總事件數}}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆排列與組合或誤算連續數對",
+    "student_thought_process": "學生可能將總事件數算成 $9 \\times 8$ (排列) 而有利事件算成 $8$，得到 $\\frac{1}{9}$ 後約簡錯誤；或直接猜測一半機率。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "分母計算錯誤或漏掉特定連續數對",
+    "student_thought_process": "學生正確找出 8 對連續數字，但總事件數算錯為 $32$ ($4 \\times 8$) 或其他錯誤值，導致結果為 $\\frac{1}{4}$。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤以為所有數字都與 9 連續或邏輯混亂",
+    "student_thought_process": "學生可能誤認為有利事件是 $7$ (如只算 $1-2$ 到 $7-8$) 而總事件數為 $9$，完全搞混了組合定義。"
+   }
+  },
+  "scaffolding_hints": [
+   "首先確定從 9 個球中同時抽出 2 個的「總樣本空間」大小是多少？請使用組合公式計算。",
+   "接著列出所有可能的「連續整數」配對（例如 1 與 2, 2 與 3...），並計算共有多少對。",
+   "最後將「有利事件數」除以「總事件數」，並檢查是否可以約分得到正確答案。"
+  ],
+  "quick_solution_strategy": "總組合 $\\binom{9}{2}=36$；連續對有 $(1,2)$ 至 $(8,9)$ 共 8 對；機率 $=8/36=2/9$"
+ },
+ "skills": {
+  "topic_id": "T-COM",
+  "knowledge_point_ids": [
+   "K-COM-02",
+   "K-COM-03"
+  ],
+  "formula_ids": [
+   "F-COM-01",
+   "F-COM-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-COM-02",
+    "formula_id": "F-COM-01",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-COM-02",
+    "formula_id": "F-COM-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-COM-02",
+    "formula_id": "F-COM-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2018",
+  "paper": "Paper 2",
+  "qno": "9",
+  "hash": "#2018P2Q9"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "複利計算",
+   "secondary_topics": [
+    "指數律應用",
+    "單位換算（年轉月）"
+   ],
+   "required_formulas": [
+    "$A = P(1 + \\frac{r}{n})^{nt}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "簡化誤算",
+    "student_thought_process": "學生忽略複利效應，直接用單利公式 $I=P \\times r \\times t$ 計算：$100000 \\times 0.02 \\times 3 = 6000$。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "週期設定錯誤",
+    "student_thought_process": "學生可能誤將年利率除以 12，但指數次數仍按年計算（$n=1, t=3$），或計算過程四捨五入過早導致偏差。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "計算精度不足",
+    "student_thought_process": "學生正確列出公式，但在計算 $(1 + \\frac{0.02}{12})^{36}$ 時，中間步驟保留位數過少（如僅用 4 位小數），導致最終結果偏離。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "複利計算中，利息是按月結算並加入本金生息，因此需將年利率轉換為月利率。",
+   "確認公式中的 $n$（每年計息次數）與 $t$（年數）的乘積代表總計息期數。",
+   "使用計算機時，請確保括號運算順序正確，並保留足夠的小數位數至最後一步才四捨五入。"
+  ],
+  "quick_solution_strategy": "套用複利公式 $A = P(1 + \\frac{r}{n})^{nt}$，代入 $P=100000, r=0.02, n=12, t=3$ 計算總額再減本金。"
+ },
+ "skills": {
+  "topic_id": "T-PCT",
+  "knowledge_point_ids": [
+   "K-PCT-01",
+   "K-PCT-02"
+  ],
+  "formula_ids": [
+   "F-PCT-01",
+   "F-PCT-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-PCT-01",
+    "formula_id": "F-PCT-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

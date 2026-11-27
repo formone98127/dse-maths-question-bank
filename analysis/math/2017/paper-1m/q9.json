@@ -1,0 +1,135 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 1M",
+  "qno": "9",
+  "hash": "#2017P1MQ9"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "統計",
+   "secondary_topics": [
+    "正態分佈",
+    "置信區間",
+    "樣本大小計算",
+    "條件概率",
+    "負二項分佈"
+   ],
+   "required_formulas": [
+    "$\\bar{x} \\pm z_{\\alpha/2} \\frac{s}{\\sqrt{n}}$",
+    "$n = \\left( \\frac{z_{\\alpha/2} \\sigma}{E} \\right)^2$",
+    "$P(X > x) = 1 - \\Phi\\left(\\frac{x-\\mu}{\\sigma}\\right)$",
+    "$\\frac{{}_nC_r p^r q^{n-r}}{{}_{N-1}C_{r-1}}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 300,
+   "marks": 7
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "計算樣本均數及標準誤，查表得 z 值。",
+    "marks": 2,
+    "common_error": "使用 t 分佈而非 z 分佈；z 值查錯百分位。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 2,
+    "what": "代入公式計算 90% 置信區間上下限。",
+    "marks": 1,
+    "common_error": "忘記除以根號 n；四捨五入過早導致誤差。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "設定區間寬度方程，解出所需樣本數 n。",
+    "marks": 2,
+    "common_error": "誤將寬度定義為半寬；忘記平方運算。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "計算單人需輔導之概率 p，畫出正態曲線。",
+    "marks": 1,
+    "common_error": "z 分數計算錯誤；忘記查表求右尾面積。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "理解條件「第 10 人是第 2 個」，列出組合。",
+    "marks": 1,
+    "common_error": "忽略前 9 人中恰有 1 人的限制；誤用二項分佈直接算。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 6,
+    "what": "計算條件概率：(有利情況)/(總可能情況)。",
+    "marks": 0,
+    "common_error": "忘記除以「多於 1 人」之條件總和。",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "此題綜合測試正態分佈應用與概率論基礎，近年考評局強調學生需熟練處理樣本大小估算及複雜條件概率情境。",
+  "scaffolding_hints": [
+   "Hint1: 置信區間公式中，已知 s=0.4, n=40, 需查 z 表對應 90% 與 97% 之臨界值。",
+   "Hint2: 樣本大小計算時，寬度 (Width) = 2 * Margin of Error, 注意係數 2。",
+   "Hint3: 條件概率問題可拆解為「前 9 人恰有 1 人」與「第 10 人是第 2 人」之交集除以條件總和。"
+  ],
+  "quick_solution_strategy": "先算樣本均數，套 z 分佈公式得區間；第二部分轉為負二項情境，注意條件概率之分母需計算所有「多於 1 人」之情況。"
+ },
+ "skills": {
+  "topic_id": "T-PROB",
+  "knowledge_point_ids": [
+   "K-PROB-04"
+  ],
+  "formula_ids": [
+   "F-PROB-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "2": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "6": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

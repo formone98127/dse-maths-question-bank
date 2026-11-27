@@ -1,0 +1,120 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "SP",
+  "paper": "Paper 1",
+  "qno": "13",
+  "hash": "#SPP1Q13"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "直線方程與圓",
+   "secondary_topics": [
+    "斜率關係",
+    "垂直平分線性質"
+   ],
+   "required_formulas": [
+    "$m_1 m_2 = -1$",
+    "$y - y_1 = m(x - x_1)$",
+    "$x^2 + y^2 + 2gx + 2fy + c = 0$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 300,
+   "marks": 7
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "求 $L_1$ 斜率及 $y$ 軸截距點 $B$ 座標",
+    "marks": 2,
+    "common_error": "計算斜率時符號錯誤，或混淆 $y$ 軸截距定義。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "利用垂直條件求 $L_2$ 斜率並代入已知點寫方程",
+    "marks": 2,
+    "common_error": "斜率乘積忘變號，或代入點時計算錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "聯立 $L_1$ 與 $L_2$ 方程解出交點 $A$ 座標",
+    "marks": 1,
+    "common_error": "代入消元法計算錯誤，或解錯二元一次方程組。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "描述 $\\Gamma$ 為 $AB$ 垂直平分線並解釋幾何意義",
+    "marks": 1,
+    "common_error": "只寫出垂直平分線名稱，未說明「到兩端點距離相等」的定義。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 5,
+    "what": "利用 $A$、$B$ 中點座標及 $AB$ 斜率寫出 $\\Gamma$ 方程",
+    "marks": 1,
+    "common_error": "中點公式計算錯誤，或垂直平分線斜率取反失敗。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "考評局近年強調對坐標幾何中「垂直平分線」概念的應用，學生常忽略題目中的幾何定義而直接套公式導致失分。",
+  "scaffolding_hints": [
+   "提示 1：回顧兩直線垂直時斜率乘積為 $-1$ 的條件。",
+   "提示 2：記住到兩點距離相等的點的軌跡是這兩點連線的垂直平分線。",
+   "提示 3：垂直平分線的方程可由「中點」與「負倒數斜率」快速寫出。"
+  ],
+  "quick_solution_strategy": "先求 $B$ 和 $L_2$ 斜率得 (a)；再解聯立方程得 $A$；最後用垂直平分線公式寫 (b)。"
+ },
+ "skills": {
+  "topic_id": "T-LIN",
+  "knowledge_point_ids": [
+   "K-LIN-01",
+   "K-LIN-02"
+  ],
+  "formula_ids": [
+   "F-LIN-01",
+   "F-LIN-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "5": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

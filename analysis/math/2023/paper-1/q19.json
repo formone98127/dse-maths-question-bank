@@ -1,0 +1,138 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2023",
+  "paper": "Paper 1",
+  "qno": "19",
+  "hash": "#2023P1Q19"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "坐標幾何",
+   "secondary_topics": [
+    "直線方程",
+    "三角形中心 (外心/垂心/內心)",
+    "共線性證明",
+    "面積比"
+   ],
+   "required_formulas": [
+    "$\\text{中點公式}$",
+    "$\\text{垂直平分線方程}$",
+    "$\\text{高線方程}$",
+    "$\\tan \\theta = \\frac{m_2-m_1}{1+m_1 m_2}$",
+    "$\\text{外心} = \\text{垂直平分線交點}$",
+    "$\\text{垂心} = \\text{高線交點}$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 420,
+   "marks": 12
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "求 PR 中點與垂直平分線方程，解出外心 G(t/2, t/2)。",
+    "marks": 2,
+    "common_error": "忘記 OQ 中垂線需過 (0,0) 且斜率為 -t/32。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 2,
+    "what": "求 OP 高線方程，結合 OQ 高線解出垂心 H(0, t)。",
+    "marks": 2,
+    "common_error": "誤以為 H 是 PR 中點或混淆外心垂心定義。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "利用 tan∠PQS=tan∠POQ 建立斜率關係式證明 t=24。",
+    "marks": 3,
+    "common_error": "無法將角度轉化為斜率差公式，或計算錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "比較 OG 與 OQ 斜率（均為 t/32），證明共線。",
+    "marks": 1,
+    "common_error": "未計算斜率直接斷言，或忽略 G 的坐標代入。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 5,
+    "what": "發現 O,G,H,Q,I 共線於 y=x/2，簡化面積比計算。",
+    "marks": 2,
+    "common_error": "未察覺共線性導致無法處理三角形面積關係。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 6,
+    "what": "利用底高比或相似性質求 ΔGHR:ΔIPQ 面積比。",
+    "marks": 2,
+    "common_error": "誤算座標導致面積公式代入錯誤，忽略共線縮放。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "考評報告指出大部分考生未能識別 G 在 PR 垂直平分線上及 O,G,H,Q,I 共線的關鍵幾何性質，導致無法簡化複雜的面積比計算。",
+  "scaffolding_hints": [
+   "Hint1: 外心 G 是 OP 與 PR 垂直平分線交點，垂心 H 是高線交點。",
+   "Hint2: 觀察 O(0,0), P(50,0), Q(32,t) 的對稱性，猜測 G,H 坐標形式。",
+   "Hint3: 角度相等暗示斜率關係，tanθ 公式是連接幾何與代數的橋樑。"
+  ],
+  "quick_solution_strategy": "先求 G,H 坐標；用 tan 公式證 t=24；算 OG,OQ 斜率證共線；發現 O,G,H,Q,I 共線後，面積比轉化為線段長比例平方或底高比。"
+ },
+ "skills": {
+  "topic_id": "T-LIN",
+  "knowledge_point_ids": [
+   "K-LIN-01",
+   "K-LIN-02"
+  ],
+  "formula_ids": [
+   "F-LIN-01",
+   "F-LIN-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "2": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "5": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "6": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

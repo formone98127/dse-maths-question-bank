@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2025",
+  "paper": "Paper 2",
+  "qno": "17",
+  "hash": "#2025P2Q17"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "幾何面積比與相似三角形",
+   "secondary_topics": [
+    "平行四邊形性質",
+    "線段比例分配",
+    "共高圖形面積計算"
+   ],
+   "required_formulas": [
+    "\\frac{Area_1}{Area_2} = \\left(\\frac{base_1}{base_2}\\right) \\times \\left(\\frac{height_1}{height_2}\\right)",
+    "\\text{相似比}^2 = \\text{面積比}"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 180
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "相似比平方計算錯誤",
+    "student_thought_process": "學生算出相似比為 1.5，卻直接將邊長比 1.5 當作面積比，得出 \\triangle AHE\\text{的面積} = 16 \\times 1.5 = 24$，後續累加時未正確扣除多餘部分或比例混淆。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤認全等或錯用比例",
+    "student_thought_process": "學生認為 \\triangle CGH\\text{與}\\triangle DFE\\text{有某種直接對應關係，錯誤地假設它們面積相等或僅相差一個固定係數，忽略了 \\triangle AHE\\text{的介入。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "漏算中間區域",
+    "student_thought_process": "學生正確算出 \\triangle AHE\\text{的面積} = 60$，但在計算四邊形時，忘記減去 \\triangle DFE\\text{與}\\triangle CGH\\text{之間的空隙或重複計算了 \\triangle CDE\\text{。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察 \\triangle CGH\\text{與}\\triangle AHE\\text{是否相似？找出它們的對應邊比例關係。",
+   "利用平行線性質，確認 \\triangle AHE\\text{與}\\triangle CGH\\text{的高之比等於底邊比。",
+   "將四邊形 \\text{DFEG}\\text{拆解為 \\triangle DFE、}\\triangle FGE\\text{或通過大三角形減去小三角形來計算。"
+  ],
+  "quick_solution_strategy": "先證 \\triangle AHE \\sim \\triangle CGH，求 \\triangle AHE\\text{面積，再算 \\triangle CDE\\text{總面積，最後減去多餘部分。"
+ },
+ "skills": {
+  "topic_id": "T-RAT",
+  "knowledge_point_ids": [
+   "K-RAT-05"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-RAT-05",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-RAT-05",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-RAT-05",
+    "formula_id": null,
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

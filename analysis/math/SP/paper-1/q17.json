@@ -1,0 +1,115 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "SP",
+  "paper": "Paper 1",
+  "qno": "17",
+  "hash": "#SPP1Q17"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "對數",
+   "secondary_topics": [
+    "換底公式",
+    "指數法則"
+   ],
+   "required_formulas": [
+    "\\log_a b = \\frac{\\ln b}{\\ln a}",
+    "\\log_{a^n} b^m = \\frac{m}{n} \\log_a b"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 120,
+   "marks": 5
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "由 B 制強度 N=6.4 寫出 E 與 N 的指數關係式",
+    "marks": 1,
+    "common_error": "忘記將對數轉為指數形式，直接代入錯誤",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 2,
+    "what": "利用換底公式或指數法則處理 A 制公式中的 log_4 E",
+    "marks": 1,
+    "common_error": "混淆底數 4 與 8 的關係，未統一底數計算",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "將 E 的表達式代入 A 制公式並化簡對數係數",
+    "marks": 1,
+    "common_error": "計算 \\frac{\\ln E}{\\ln 4} 時忽略 \\ln E = N \\ln 8",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "將 \\ln 8 展開為 3\\ln 2 以統一底數計算",
+    "marks": 1,
+    "common_error": "未能將不同底數的對數轉換為相同底數比較",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 5,
+    "what": "代入 N=6.4 計算最終 A 制強度並檢查單位",
+    "marks": 1,
+    "common_error": "遺忘將 \\ln E 替換為 \\ln(8^{6.4}) 導致數值錯誤",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "此題測試學生對不同底數對數之間轉換的理解，特別是利用指數法則將未知量表達為已知量的函數。",
+  "scaffolding_hints": [
+   "Hint1: 從 N=6.4 開始，先寫出 E = 8^{6.4}",
+   "Hint2: 觀察 A 制公式 M=log_4 E，嘗試將底數 4 與 8 關聯",
+   "Hint3: 利用 \\log_{a^n} b = \\frac{1}{n}\\log_a b 簡化計算"
+  ],
+  "quick_solution_strategy": "由 N=6.4 得 E=8^{6.4}，代入 M=log_4(8^{6.4})，利用 \\log_{a^n}b^m=\\frac{m}{n}\\log_a b 化簡為 \\frac{6.4 \\ln 8}{\\ln 4}=9.6"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "2": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "5": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

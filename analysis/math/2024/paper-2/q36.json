@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 2",
+  "qno": "36",
+  "hash": "#2024P2Q36"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "等差數列與部分和",
+   "secondary_topics": [
+    "第 n 項公式",
+    "一等差數列定義"
+   ],
+   "required_formulas": [
+    "$a_n = S_n - S_{n-1}$ (其中 $S_0=0$)",
+    "$a_n = a + (n-1)d$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤判 III",
+    "student_thought_process": "學生算出 $a_n=4n+1$，發現是等差數列，但錯誤認為公差不是常數或混淆定義。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "算錯 I",
+    "student_thought_process": "學生在驗證 $n=4$ 時，計算錯誤導致認為 14 不是數列中一項。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤判 I 與 III",
+    "student_thought_process": "學生完全錯誤地認為 $4n+1$ 不是等差數列，或計算出 $a_4 \neq 14$"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：已知前 n 項和 $S_n$，如何求第 n 項 $a_n$？請回憶 $a_n = S_n - S_{n-1}$。",
+   "提示 2：求出 $a_n$ 後，觀察其形式是否符合一等差數列的通項公式 $a+ (n-1)d$。",
+   "提示 3：將 $n=4$ 代入求得的 $a_n$ 表達式，驗證是否等於 14。"
+  ],
+  "quick_solution_strategy": "先由 $S_n$ 導出 $a_n=4n+1$，確認為等差數列且 $a_4=17\\neq 14$"
+ },
+ "skills": {
+  "topic_id": "T-SEQ",
+  "knowledge_point_ids": [
+   "K-SEQ-02"
+  ],
+  "formula_ids": [
+   "F-SEQ-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-SEQ-02",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-SEQ-02",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-SEQ-02",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

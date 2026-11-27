@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 2",
+  "qno": "35",
+  "hash": "#2014P2Q35"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "一元二次函數頂點坐標",
+   "secondary_topics": [
+    "配方法求頂點",
+    "二次函數圖形性質",
+    "頂點公式 y = c - b²/4a"
+   ],
+   "required_formulas": [
+    "$y = ax^2 + bx + c$",
+    "$y_{vertex} = c - \\frac{b^2}{4a}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "頂點 y 坐標計算錯誤",
+    "student_thought_process": "學生可能算出 a=3, b=-6, c=k。代入公式時，誤將 -b²/4a 算成 -(36)/12 = -3，然後 k-3=7 解得 k=10，卻不小心漏掉負號或計算錯誤變成 k+3=7 -> k=4 (選 C)；若直接代入頂點 x=1 到原式 f(1)=3-6+k=k-3，令其等於 7 時算錯成 k=1。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "頂點 y 坐標計算錯誤",
+    "student_thought_process": "學生正確找到頂點 x=1，代入得 f(1)=k-3。若誤認為頂點 y 值為 k+3，則 k+3=7 -> k=4 (選 C)。或是在計算 -b²/4a 時，將分母 4a=12 與分子 b²=36 相除得 3，忘記負號，導致方程變成 k+3=7，解出 k=4。若學生算錯成 k-9=7 -> k=16 無選項。另一可能：學生將頂點 y 坐標公式記錯為 c+b²/4a，則 k+3=7->k=4 (選 C)。若學生誤以為頂點 y 是 -b/2a = 1，然後代入 f(1)=7 算錯。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "頂點 y 坐標計算錯誤",
+    "student_thought_process": "學生正確找到頂點 x=1，代入得 f(1)=k-3。若誤將公式記為 $y = c + \\frac{b^2}{4a}$，則 $k + \\frac{36}{12} = k+3 = 7$，解得 $k=4$。這是常見的符號記憶錯誤。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "二次函數 $y=ax^2+bx+c$ 的頂點橫坐標公式為 $x = -\\frac{b}{2a}$，請先求出頂點的 $x$ 值。",
+   "將求得的頂點 $x$ 值代入原方程式 $f(x)$，即可得到該頂點的 $y$ 座標表達式（含常數 $k$）。",
+   "題目已知頂點的 $y$ 坐標為 $7$，請建立等式求解未知數 $k$。"
+  ],
+  "quick_solution_strategy": "先求頂點 x=-b/2a=1，代入 f(1)=3-6+k=k-3，令 k-3=7，解得 k=10。"
+ },
+ "skills": {
+  "topic_id": "T-FUN",
+  "knowledge_point_ids": [
+   "K-FUN-01",
+   "K-FUN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

@@ -1,0 +1,130 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "SP",
+  "paper": "Paper 1",
+  "qno": "12",
+  "hash": "#SPP1Q12"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "函數與圖像",
+   "secondary_topics": [
+    "距離 - 時間圖解讀",
+    "平均速率計算",
+    "單位換算"
+   ],
+   "required_formulas": [
+    "$\\text{平均速率} = \\frac{\\Delta y}{\\Delta x}$",
+    "$1 \\text{ km/h} = \\frac{1000}{3600} \\text{ m/s} = \\frac{5}{18} \\text{ m/s}$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 120,
+   "marks": 7
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "觀察圖形斜率，斜率最小者速率最低並指出區間。",
+    "marks": 2,
+    "common_error": "誤以為水平線段（靜止）速率為零即最低，忽略題目問「旅程」中移動部分或誤讀時間軸刻度。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 2,
+    "what": "利用第 II 部分速率與圖形斜率關係，計算對應時間長度。",
+    "marks": 1,
+    "common_error": "未將 km/h 轉為 m/s 或混淆橫軸單位（分鐘/小時）導致時間計算錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "由起點時間加上第 II 部分時長，得出抵達 C 的時間。",
+    "marks": 1,
+    "common_error": "忘記加上 B 點的起始時間，僅計算了行程持續時間而非絕對時刻。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 4,
+    "what": "讀取 A 至 D 的總距離（縱軸差值）與總時間（橫軸差值）。",
+    "marks": 1,
+    "common_error": "誤將各段距離相加而非直接取終點減起點，或讀錯時間刻度。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 5,
+    "what": "計算全程平均速率（km/h），並轉換為 m/s。",
+    "marks": 1,
+    "common_error": "忘記乘以 $\\frac{5}{18}$ 或除以 $3.6$，單位換算出錯。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "檢查答案數值合理性與單位是否為 m/s。",
+    "marks": 0,
+    "common_error": "無（此步為自我核查，不扣分但影響最終分數完整性）。",
+    "error_category": null
+   }
+  ],
+  "exam_report_insight": "距離 - 時間圖中斜率代表速率，學生常誤解水平線段意義或忽略單位換算細節，導致在最後一問失分。",
+  "scaffolding_hints": [
+   "提示 1：圖像中直線的陡峭程度（斜率）直接反映速度大小，越平緩速度越慢。",
+   "提示 2：平均速率 = 總路程 / 總時間，不需考慮中間停頓或加速過程。",
+   "提示 3：計算完 km/h 後務必乘以 $5/18$ 轉換為 m/s，這是常見扣分點。"
+  ],
+  "quick_solution_strategy": "先看斜率找最平段；用速率×時間得距離；總距÷總時再換單位即可。"
+ },
+ "skills": {
+  "topic_id": "T-FUN",
+  "knowledge_point_ids": [
+   "K-FUN-01",
+   "K-FUN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "2": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "4": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "5": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": null
+   }
+  }
+ }
+}

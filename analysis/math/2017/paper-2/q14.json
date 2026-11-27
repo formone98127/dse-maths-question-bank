@@ -1,0 +1,92 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 2",
+  "qno": "14",
+  "hash": "#2017P2Q14"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "幾何三角形面積與周界",
+   "secondary_topics": [
+    "直角三角形勾股定理",
+    "三角形面積公式"
+   ],
+   "required_formulas": [
+    "Area = \\frac{1}{2} \\times base \\times height",
+    "a^2 + b^2 = c^2"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "面積差計算錯誤",
+    "student_thought_process": "學生可能算出 AD=18, CD=6 後，直接將 AB+BC+AC 誤算為 18+12+14=44 或混淆了邊長關係，導致選出接近但錯誤的數值。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "勾股定理應用錯誤",
+    "student_thought_process": "學生在求 AB 或 BC 時，可能忘記了 BD 是公共高，或者將直角邊與斜邊關係搞混，導致算出較大的周界。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "忽略面積差條件",
+    "student_thought_process": "學生可能完全忽略了「面積差 24」這個條件，直接假設 D 是 AC 中點或其他情況，導致算出過大的周界。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：三角形面積公式為 \\frac{1}{2} \\times 底 \\times 高，且 \\triangle ABD 與 \\triangle BCD 共用高 BD。",
+   "提示 2：利用面積差條件列出方程式求 AD 與 CD 的長度關係，再結合 AC=14 解出各段長度。",
+   "提示 3：求出 AD 與 CD 後，分別在兩個直角三角形中使用勾股定理計算 AB 與 BC 的長度。"
+  ],
+  "quick_solution_strategy": "設 AD=x, CD=14-x，由面積差列式解出 x，再用勾股定理求兩斜邊相加 AC。"
+ },
+ "skills": {
+  "topic_id": "T-MEN",
+  "knowledge_point_ids": [
+   "K-MEN-01",
+   "K-MEN-02"
+  ],
+  "formula_ids": [
+   "F-MEN-01",
+   "F-MEN-02",
+   "F-MEN-03",
+   "F-MEN-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

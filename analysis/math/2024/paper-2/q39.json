@@ -1,0 +1,91 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 2",
+  "qno": "39",
+  "hash": "#2024P2Q39"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "三角函數方程",
+   "secondary_topics": [
+    "因式分解",
+    "餘弦函數週期性"
+   ],
+   "required_formulas": [
+    "$4x^2 - 3x - 1 = (4x+1)(x-1)$",
+    "$\\cos \\theta = 1 \\Rightarrow \\theta = 0^\\circ, 360^\\circ$",
+    "$\\cos \\theta = -\\frac{1}{4}$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "漏解週期解",
+    "student_thought_process": "算出 $\\cos \\theta = 1$ 時，只寫下 $0^\\circ$ 而忘記 $360^\\circ$；或誤以為 $-\\frac{1}{4}$ 無解。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "二次方程式求根錯誤",
+    "student_thought_process": "將 $4 \\cos^2 \\theta - 3 \\cos \\theta - 1 = 0$ 解錯，得到 $\\cos \\theta = 1, -1/4$ 但計數時遺漏 $360^\\circ$"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "範圍理解錯誤",
+    "student_thought_process": "誤解題目範圍為 $(0, 360]$，卻將 $0^\\circ$ 計入或完全忽略週期性導致多算或少算。"
+   }
+  },
+  "scaffolding_hints": [
+   "這是一個關於 $x$ 的二次方程式形式，其中 $x = \\cos \\theta$。",
+   "請先對二次式進行因式分解，求出 $\\cos \\theta$ 的兩個可能值。",
+   "在範圍 $0^\\circ < \\theta \\leq 360^\\circ$ 內，分別找出每個餘弦值對應的角度個數。"
+  ],
+  "quick_solution_strategy": "因式分解得 $(4\\cos\\theta+1)(\\cos\\theta-1)=0$，解出 $\\cos\\theta=1, -1/4$。在範圍內 $\\cos\\theta=1$ 有 $360^\\circ$ (1 個)，$\\cos\\theta=-1/4$ 有兩個解，共 3 個。"
+ },
+ "skills": {
+  "topic_id": "T-TRI",
+  "knowledge_point_ids": [
+   "K-TRI-01",
+   "K-TRI-02"
+  ],
+  "formula_ids": [
+   "F-TRI-01",
+   "F-TRI-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

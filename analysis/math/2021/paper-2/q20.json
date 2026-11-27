@@ -1,0 +1,86 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 2",
+  "qno": "20",
+  "hash": "#2021P2Q20"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "幾何相似與三角比",
+   "secondary_topics": [
+    "正方形性質",
+    "三角形面積公式"
+   ],
+   "required_formulas": [
+    "\\triangle ADE \\sim \\triangle BEF",
+    "\\text{Area} = \\frac{1}{2} \\times \\text{base} \\times \\text{height}"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "邊長比例計算錯誤",
+    "student_thought_process": "算出 DE=5x 後，誤以為 DF=48，未考慮相似比 k=1.2 對面積的影響，直接將 DE 長度當作面積數值或混淆了線段與面積單位。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "忽略相似比平方關係",
+    "student_thought_process": "正確算出 DE=5x 與 BEF 面積，但求 CDF 時，未利用相似比 k^2 轉換邊長，而是直接假設 DF 長度為某個整數值導致結果偏差。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "相似比應用錯誤",
+    "student_thought_process": "誤認為 \\triangle DEF 與 \\triangle CDF 面積比等於邊長比而非平方比，或錯誤地將 \\triangle ADE 的面積直接加總而未扣除重疊部分。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察 \\angle A = \\angle B = \\angle DEF = 90^\\circ，推斷 \\triangle ADE 與 \\triangle BEF 是否相似？",
+   "利用相似三角形對應邊成比例，設 AD=x，表示出 DE 與 EF 的長度關係。",
+   "由 \\triangle DEF 面積求出 x 後，再計算 \\triangle CDF 的底 CF 與高 CD 來求面積。"
+  ],
+  "quick_solution_strategy": "證相似得比例 k=1.2，算出 DE，進而得 DF，最後用底乘高除以二求積。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-05"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CHAIN"
+   },
+   "D": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

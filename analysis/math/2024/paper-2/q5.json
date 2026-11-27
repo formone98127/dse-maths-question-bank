@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 2",
+  "qno": "5",
+  "hash": "#2024P2Q5"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "二元一次聯立方程式",
+   "secondary_topics": [
+    "代數式化簡",
+    "線性組合"
+   ],
+   "required_formulas": [
+    "$2a + 3b = 38$",
+    "$3a + 2b = 47$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "加法誤算",
+    "student_thought_process": "解得 a=13, b=2 後，計算 4*13+7*2=52+14=66，卻算成 78。或是將兩個原方程相加 (5a+5b=85) 再乘以某個錯誤係數得到此結果。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "目標表達錯誤",
+    "student_thought_process": "解出 a=13, b=2 後，直接將原方程相加 (5a+5b) 並誤以為等於目標，或計算 4a+7b 時把 b 的係數搞錯成 6(4*13+6*2=80) 再調整數值錯誤。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略變量關係",
+    "student_thought_process": "試圖用平均法或比例，誤以為 4 蘋果 7 檸檬是 2 蘋果 3 檸檬的簡單倍數，直接將 $38 與 $47 相加得 $85 後隨意調整至 $84。"
+   }
+  },
+  "scaffolding_hints": [
+   "設蘋果價格為 a, 檸檬價格為 b，列出兩個線性方程：$2a + 3b = 38$ 與 $3a + 2b = 47$。",
+   "觀察目標式 $4a + 7b$ 與已知方程係數的關係，嘗試將兩個方程進行線性組合（如相加、相減或乘以常數）來構造目標式。",
+   "若直接解出 a, b 的數值代入計算，請仔細檢查最後一步的乘法與加法運算是否正確。"
+  ],
+  "quick_solution_strategy": "將兩方程相加得 $5a+5b=85$，再結合其中一方程消元求單價，或直接解出 a, b 後代數計算 $4a+7b$。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN"
+   },
+   "D": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

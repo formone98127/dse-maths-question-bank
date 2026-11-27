@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2012",
+  "paper": "Paper 2",
+  "qno": "6",
+  "hash": "#2012P2Q6"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-16",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "二次函數圖形與參數意義",
+   "secondary_topics": [
+    "拋物線開口方向判定",
+    "頂點式方程式的幾何意義"
+   ],
+   "required_formulas": [
+    "y = a(x + b)^2",
+    "頂點座標為 (-b, 0)"
+   ],
+   "bloom_taxonomy_level": "理解",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "頂點 x 座標符號誤判",
+    "student_thought_process": "學生看到拋物線開口向上，正確判斷 a > 0；但在觀察圖形與 y 軸交點位於負值區域時，錯誤地認為頂點必須在 y 軸右側（即 -b > 0），導致推導出 b > 0。這忽略了頂點 x 座標是 -b，若圖形顯示頂點在第二象限（x<0）或類似情況，學生未能正確將圖形上的負數 x 值對應到公式中的 -b"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "頂點位置讀取錯誤",
+    "student_thought_process": "學生正確判斷開口向上 (a > 0)，但將圖形中頂點的 x 座標看成正數（第一或第四象限），或者完全忽略了圖形中頂點實際上位於 y 軸左側（負值區間）的事實，從而錯誤地認為 b < 0"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "開口方向與參數關係混淆",
+    "student_thought_process": "學生在判斷頂點 x 座標時可能正確看出 b > 0（即 -b < 0），但在判斷 a 的符號時，誤以為拋物線經過某些特定點或整體趨勢導致 a < 0，或者單純記錯了「開口向上對應 a 正負」的規則"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "Hint 1 啟發：回想二次函數頂點式 y = a(x - h)^2 + k 的結構，本題中 (x+b) 相當於 (x - (-b))，這意味著頂點的 x 座標與 b 有直接的符號相反關係。",
+   "Hint 2 知識：觀察圖形，拋物線開口向上代表 a 為何種符號？再找出圖形的最高點（頂點），其 x 座標落在 y 軸的哪一側（正或負）？請將此座標代入 -b 來判斷 b 的符號。",
+   "Hint 3 破題：若圖形顯示頂點位於第二象限（x 為負，y 為正），則 -b 必須小於 0，這意味著 b 必須為何種符號？結合開口方向即可得出結論。"
+  ],
+  "quick_solution_strategy": "觀察圖形：拋物線開口向上故 a>0；頂點位於 y 軸左側（x<0），即 -b < 0，解得 b > 0。因此正確選項應為 A。若題目答案標示為 D，則題目圖片可能顯示開口向下且頂點在右側，請務必重新確認圖片內容與符號定義。"
+ },
+ "skills": {
+  "topic_id": "T-FUN",
+  "knowledge_point_ids": [
+   "K-FUN-03",
+   "K-FUN-05"
+  ],
+  "formula_ids": [
+   "F-FUN-01"
+  ],
+  "ability_ids": [
+   "A-GRAPH",
+   "A-COND"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-FUN-03",
+    "formula_id": "F-FUN-01",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-FUN-05",
+    "formula_id": "F-FUN-01",
+    "ability_id": "A-GRAPH"
+   },
+   "C": {
+    "knowledge_point_id": "K-FUN-03",
+    "formula_id": "F-FUN-01",
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

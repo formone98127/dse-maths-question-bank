@@ -1,0 +1,132 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 1",
+  "qno": "10",
+  "hash": "#2014P1Q10"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "距離 - 時間圖解讀",
+   "secondary_topics": [
+    "平均速率計算",
+    "恆速運動公式"
+   ],
+   "required_formulas": [
+    "\\text{距離} = \\text{速率} \\times \\text{時間}",
+    "\\bar{v} = \\frac{\\Delta s}{\\Delta t}"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "從圖表讀取汽車 A 在 7:30 的速率及位置，計算 8:15 時與 X 城距離。",
+    "marks": 2,
+    "common_error": "混淆 X 城與 Y 城距離 (80km)，誤將剩餘距離當作答案。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 2,
+    "what": "計算汽車 B 在 8:15 時的總位移，並確認其停止位置。",
+    "marks": 1,
+    "common_error": "未正確讀取圖表縱軸刻度導致位移計算錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "設定方程：汽車 A 位置 = 汽車 B 位置，求解相遇時間 t。",
+    "marks": 1,
+    "common_error": "忽略汽車 B 已停止的條件，繼續用斜率計算其後位移。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 4,
+    "what": "將解得的時間 t 加回起始時間 7:30，得出具體時刻。",
+    "marks": 1,
+    "common_error": "時間轉換錯誤 (如分鐘未轉為小時) 或忘記加上起始時間。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "計算汽車 A 在 8:15 至 9:30 的位移，求出其平均速率。",
+    "marks": 1,
+    "common_error": "時間間隔計算錯誤 (如誤算為 1.5 小時而非 1 小時)。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "比較兩車平均速率，並根據圖表解釋汽車 B 在該區間位移為零。",
+    "marks": 1,
+    "common_error": "誤以為停下的車也有速度，或忽略「平均速率」定義 (總位移/總時間)。",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "考生常混淆圖表中的距離標記（X 城與 Y 城），導致在計算汽車 A 位置時選錯基準點，需特別注意題目定義的起點。",
+  "scaffolding_hints": [
+   "提示 1：恆速運動中，圖表直線的斜率代表速率，截距代表初始位置。",
+   "提示 2：汽車 B 在 8:15 後水平線表示位移不變，平均速率為零。",
+   "提示 3：相遇時兩車位於同一縱座標 (距離 X 城相同距離)。"
+  ],
+  "quick_solution_strategy": "先讀 A 的斜率求速度，用 $s=vt+s_0$ 列式；B 在 8:15 後位移固定。令兩者位置相等解時間。比較 B 在該區間位移為零即可判斷速率較低。"
+ },
+ "skills": {
+  "topic_id": "T-TRI",
+  "knowledge_point_ids": [
+   "K-TRI-01",
+   "K-TRI-02"
+  ],
+  "formula_ids": [
+   "F-TRI-01",
+   "F-TRI-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "2": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "4": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-TRI-01",
+    "formula_id": "F-TRI-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2023",
+  "paper": "Paper 2",
+  "qno": "26",
+  "hash": "#2023P2Q26"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "直線方程式與幾何性質",
+   "secondary_topics": [
+    "點到直線距離公式",
+    "兩直線平行判定",
+    "中點公式"
+   ],
+   "required_formulas": [
+    "$d = \\frac{|Ax_0 + By_0 + C|}{\\sqrt{A^2 + B^2}}$",
+    "$m = -\\frac{A}{B}$ (斜率公式)",
+    "$M = \\left(\\frac{x_1+x_2}{2}, \\frac{y_1+y_2}{2}\\right)$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略平行線中點性質",
+    "student_thought_process": "學生算出軌跡平行於 L，但誤以為兩平行直線夾角平分線必過 AB 中點。實際上，若 P 到兩平行線距離相等，軌跡是中間的平行線，確實過 AB 中點，但選項 A 排除 III 意味著學生認為不過中點或 I、II 有誤。此處主要錯誤在於判斷 III 是否正確。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤解垂直條件",
+    "student_thought_process": "學生認為軌跡必須垂直於 AB。實際上，當兩直線平行時，等距軌跡是平行線，與 AB 斜率無關，除非 AB 本身有特殊關係。此選項錯誤在於堅持 II 正確但 III 不正確，或反之。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "過度推論",
+    "student_thought_process": "學生同時接受所有三個陳述。錯誤在於未檢查 III 的必要性。雖然在此題中 III 確實正確，但選項 D 暗示學生可能未仔細驗證每一項，或誤以為這是普遍定理而非特定情況。"
+   }
+  },
+  "scaffolding_hints": [
+   "首先計算兩直線 $\\ell$ 與 $L$ 的斜率，判斷它們是否平行。",
+   "若兩直線平行，滿足「到兩直線距離相等」之點 $P$ 的軌跡 $\\Gamma$ 有何幾何特徵？它會經過哪兩個交點的連線中點嗎？",
+   "分別計算 $A$、$B$ 座標與 $AB$ 中點，驗證 $\\Gamma$ 是否通過該中點。"
+  ],
+  "quick_solution_strategy": "先判兩直線平行，則軌跡為中間平行線；再算 AB 中點代入軌跡方程驗證 III。"
+ },
+ "skills": {
+  "topic_id": "T-LIN",
+  "knowledge_point_ids": [
+   "K-LIN-05"
+  ],
+  "formula_ids": [
+   "F-LIN-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-LIN-05",
+    "formula_id": "F-LIN-04",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-LIN-05",
+    "formula_id": "F-LIN-04",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-LIN-05",
+    "formula_id": "F-LIN-04",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

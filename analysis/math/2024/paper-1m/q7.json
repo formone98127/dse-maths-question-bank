@@ -1,0 +1,103 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 1M",
+  "qno": "7",
+  "hash": "#2024P1MQ7"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "微分法",
+   "secondary_topics": [
+    "相關變化率",
+    "幾何關係"
+   ],
+   "required_formulas": [
+    "$\\frac{dA}{dt} = \\frac{dA}{dx} \\cdot \\frac{dx}{dt}$",
+    "$a^2 + b^2 = c^2$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "建立長、闊與對角線關係，求定長常數 k",
+    "marks": 1,
+    "common_error": "忽略對角線固定條件或計算平方根錯誤",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 2,
+    "what": "對時間 t 微分，代入 dx/dt = -0.5",
+    "marks": 1,
+    "common_error": "漏掉負號或微分長方時忘記鏈式法則",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "計算 x=7 時的長度 l 與 dl/dt",
+    "marks": 1,
+    "common_error": "代入數值前未先化簡表達式導致算錯",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "利用 dA/dx = l 求面積變化率",
+    "marks": 1,
+    "common_error": "混淆 dA/dt 與 dA/dx 的意義",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "此題結合幾何約束與相關變化率，考生需熟練鏈式法則及隱函數微分技巧，避免在代入數值時出現計算失誤。",
+  "scaffolding_hints": [
+   "回憶直角三角形勾股定理應用於長方對角線",
+   "注意 breadth 減少意味著 dx/dt 為負值",
+   "面積 A = l x，需將 l 視為 x 的函數"
+  ],
+  "quick_solution_strategy": "先由對角線固定求出 k，再微分得 l dl/dt + x dx/dt = 0，代入 x=7 求 l 與 dl/dt，最後乘 l 得 dA/dt。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

@@ -1,0 +1,91 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2018",
+  "paper": "Paper 2",
+  "qno": "39",
+  "hash": "#2018P2Q39"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓的性質與切線",
+   "secondary_topics": [
+    "弦切角定理",
+    "等腰三角形性質",
+    "圓內接四邊形外角"
+   ],
+   "required_formulas": [
+    "$\\angle(切線, 弦) = \\frac{1}{2}\\text{弧所對圓周角}$",
+    "$\\triangle$ 內角和 $= 180^\\circ$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "角度計算錯誤",
+    "student_thought_process": "算出 $\\angle BAE=66^\\circ$ 後，誤以為 $\\angle ABC = 180-66=114$ 或直接與 $72$ 混淆，未正確連結圓內接性質。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略弦切角與圓周角關係",
+    "student_thought_process": "誤將 $\\angle AED$ 當作 $\\angle ABC$，忽略了 $E, D, C$ 共線且需透過圓內接四邊形外角性質轉換。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "錯用弦切角對應弧",
+    "student_thought_process": "將 $\\angle BAT$ 對應的弧誤認為是 $BC$ 而非 $AC$，導致計算出的角度與實際圓周角不符。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察 $TA$ 為切線，$AB$ 為弦，思考弦切角 $\\angle BAT$ 與哪個圓周角相等？",
+   "利用 $AB=CD$ 推導弧 $AB$ 與弧 $CD$ 的關係，進而連結 $\\angle AED$ 與圓內接四邊形的外角性質。",
+   "在 $\\triangle ABE$ 中，已知兩角求第三角，再結合圓內接四邊形 $ABCD$ 的對角互補關係求解。"
+  ],
+  "quick_solution_strategy": "先由弦切角得 $\\angle ACB=24^\\circ$，再由 $AB=CD$ 推導弧相等，最後用三角形內角和與圓內接性質解出。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-01",
+   "K-GEO-02"
+  ],
+  "formula_ids": [
+   "F-GEO-01",
+   "F-GEO-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-GEO-01",
+    "formula_id": "F-GEO-01",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

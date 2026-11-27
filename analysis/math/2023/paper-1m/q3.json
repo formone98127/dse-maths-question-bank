@@ -1,0 +1,131 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2023",
+  "paper": "Paper 1M",
+  "qno": "3",
+  "hash": "#2023P1MQ3"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "條件概率",
+   "secondary_topics": [
+    "獨立事件",
+    "全概率公式"
+   ],
+   "required_formulas": [
+    "$P(A \\cap B) = P(B|A)P(A)$",
+    "$P(A|B) = \\frac{P(A \\cap B)}{P(B)}$",
+    "$P(A^c) = 1 - P(A)$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 420,
+   "marks": 7
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "定義事件：X=選隧道X, Y=選隧道Y, C=現金, E=電子支付",
+    "marks": 2,
+    "common_error": "未正確定義互斥且 exhaustive 的事件，混淆 X 與 Y 關係。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "列出已知機率：P(X)=9/20, P(C|X)=4/7, P(Y|E)=14/41",
+    "marks": 1,
+    "common_error": "抄錯題目數字或條件概率的分子分母位置。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 3,
+    "what": "計算 P(X ∩ E) = P(E|X)P(X)，需先求 P(E|X)",
+    "marks": 1,
+    "common_error": "直接用 P(C|X) 當作 P(E|X)，忽略互補關係。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "利用全概率公式求總機率 P(E) = P(E∩X) + P(E∩Y)",
+    "marks": 1,
+    "common_error": "忘記加上 P(E∩Y) 項，或計算 P(Y) 時出錯。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "求 P(Y) = 1 - P(X)，並計算 P(E ∩ Y) = P(Y|E)P(E)",
+    "marks": 1,
+    "common_error": "算錯 1-9/20，或乘法運算錯誤導致分數簡化失敗。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "應用條件概率公式求 (b) P(E|Y) 與 (c) P(Y|C)",
+    "marks": 1,
+    "common_error": "混淆分子分母，或忘記用總機率 P(C) 而非部分交集。",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "此題測試學生對條件概率與全概率公式的綜合運用能力，常見失誤在於未能正確建立事件間的邏輯關係及計算複雜分數時出錯。",
+  "scaffolding_hints": [
+   "先畫樹狀圖或文氏圖釐清 X, Y, C, E 四種情況。",
+   "注意 P(E|X) = 1 - P(C|X)，這是關鍵轉換步驟。",
+   "全概率公式中，P(E) 包含來自隧道 X 與 Y 的兩部分貢獻。"
+  ],
+  "quick_solution_strategy": "先求 P(X∩E)=P(E|X)P(X)，再求 P(Y)，接著用全概率得 P(E)，最後分別求條件機率。"
+ },
+ "skills": {
+  "topic_id": "T-PROB",
+  "knowledge_point_ids": [
+   "K-PROB-04"
+  ],
+  "formula_ids": [
+   "F-PROB-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "3": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-PROB-04",
+    "formula_id": "F-PROB-03",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

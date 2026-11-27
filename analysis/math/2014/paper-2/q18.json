@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 2",
+  "qno": "18",
+  "hash": "#2014P2Q18"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "三角函數與幾何圖形",
+   "secondary_topics": [
+    "直角三角形性質",
+    "正弦定義",
+    "角度關係"
+   ],
+   "required_formulas": [
+    "$\\sin A = \\frac{對邊}{斜邊}$",
+    "$\\cos A = \\frac{鄰邊}{斜邊}$",
+    "$\\tan A = \\frac{對邊}{鄰邊}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆正弦與餘弦定義",
+    "student_thought_process": "學生誤以為 $CD$ 是 $\\theta$ 的鄰邊，直接套用 $\\cos\\theta = \\frac{CD}{AB}$ 而忽略圖中角度位置。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "無意義的三角函數乘法",
+    "student_thought_process": "學生可能試圖將 $\\sin$ 與 $\\tan$ 相乘來「補足」角度關係，但未理解單位長度與角度的直接比例。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "過度複雜化表達式",
+    "student_thought_process": "學生先求 $\\tan\\theta$ 再除以 $\\cos\\theta$，這是將簡單關係誤解為需要多重轉換的錯誤策略。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察圖形中 $\\triangle ABD$ 與 $\\triangle BCD$ 的角度標記，找出哪兩個三角形共享角度 $\\theta$。",
+   "回憶在直角三角形中，正弦函數定義為「對邊比斜邊」，並確認 $\\theta$ 在哪個三角形內。",
+   "將 $AB=\\ell$ 視為已知斜邊或鄰邊，直接建立 $CD$ 與 $\\ell$ 及 $\\theta$ 的簡潔等式。"
+  ],
+  "quick_solution_strategy": "在 $\\triangle ABD$ 中利用 $\\sin\\theta = \\frac{BD}{AB}$ 得 $BD=\\ell\\sin\\theta$，再於 $\\triangle BCD$ 中發現 $CD=BD\\cos(90^\\circ-\\theta)=BD\\sin\\theta$ 或直接觀察角度關係得出結果。"
+ },
+ "skills": {
+  "topic_id": "T-TRI",
+  "knowledge_point_ids": [
+   "K-TRI-04"
+  ],
+  "formula_ids": [
+   "F-TRI-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-TRI-04",
+    "formula_id": "F-TRI-04",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-TRI-04",
+    "formula_id": "F-TRI-04",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-TRI-04",
+    "formula_id": "F-TRI-04",
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

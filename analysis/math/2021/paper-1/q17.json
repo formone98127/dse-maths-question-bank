@@ -1,0 +1,132 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 1",
+  "qno": "17",
+  "hash": "#2021P1Q17"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "數列",
+   "secondary_topics": [
+    "等差數列通項公式",
+    "對數運算性質",
+    "不等式求解"
+   ],
+   "required_formulas": [
+    "$A(n) = A(1) + (n-1)d$",
+    "$\\log_a(x^y) = y\\log_a x$",
+    "$\\log_b x = \\frac{\\ln x}{\\ln b}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 300,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用 A(5) 與 A(12) 列方程組求公差 d 及首項 A(1)。",
+    "marks": 3,
+    "common_error": "混淆等差與等比公式，或解聯立方程時計算錯誤。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "將對數底數轉換為 2，化簡 G(1)G(2)...G(k) 的對數式。",
+    "marks": 1,
+    "common_error": "忽略底數轉換導致無法合併項，或忘記指數運算規則。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "代入等差數列通項公式，將對數內之乘積轉為冪次形式。",
+    "marks": 1,
+    "common_error": "未能正確處理 A(n) 的線性表達式與指數關係。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "利用等差數列求和公式計算冪次之指數部分總和。",
+    "marks": 1,
+    "common_error": "誤用等比數列求和公式，或高斯求和公式應用錯誤。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 5,
+    "what": "建立關於 k 的不等式並解出 k 的範圍。",
+    "marks": 1,
+    "common_error": "不等號方向搞錯，或忽略 k 必須為正整數的限制。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 6,
+    "what": "確認 k 的最大整數值並作答。",
+    "marks": 1,
+    "common_error": "未檢查邊界條件或四捨五入錯誤。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "考評報告指出考生常誤用等比數列求和公式處理對數乘積，此題重點在於將底數統一後利用等差數列性質轉化為線性不等式求解。",
+  "scaffolding_hints": [
+   "提示 1：先將所有對數轉換為相同底數（建議用底數 2）。",
+   "提示 2：回憶等差數列通項公式 $A(n) = A(1) + (n-1)d$。",
+   "提示 3：注意題目要求的是 G 的乘積對數，可利用對數性質轉為冪次形式。"
+  ],
+  "quick_solution_strategy": "先求 d 與 A(1)，將 log8 換底為 2，化簡後得關於 k 的不等式 $\\frac{3}{4}k^2 + \\dots < 999$，解二次不等式取最大整數。"
+ },
+ "skills": {
+  "topic_id": "T-SEQ",
+  "knowledge_point_ids": [
+   "K-SEQ-02"
+  ],
+  "formula_ids": [
+   "F-SEQ-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-SEQ-02",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-SEQ-02",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-SEQ-02",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-SEQ-02",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "5": {
+    "knowledge_point_id": "K-SEQ-02",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "6": {
+    "knowledge_point_id": "K-SEQ-02",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

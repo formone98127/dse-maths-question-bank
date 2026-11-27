@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 2",
+  "qno": "32",
+  "hash": "#2024P2Q32"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "進位制轉換",
+   "secondary_topics": [
+    "十六進位符號對應十進位數值",
+    "指數運算與冪次定義"
+   ],
+   "required_formulas": [
+    "AF000000000BC_16 = AF \\times 16^{12} + BC \\times 16^0",
+    "A_{16}=10, B_{16}=11, C_{16}=12"
+   ],
+   "bloom_taxonomy_level": "理解",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "指數次方錯誤",
+    "student_thought_process": "學生算出 AF 對應十進位為 175，但誤以為 BC 在低位應乘以 16^1 或直接加錯數值，導致指數與常數項不匹配。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "冪次位置混淆",
+    "student_thought_process": "學生正確將 AF 轉換為 175，但錯誤地認為最高位應乘以 16^12，忽略了題目數值總共只有 13 位（從左至右索引 0-12），實際上 AF 位於 16^12 位置，BC 位於 16^0。此選項混淆了指數與位權關係。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "符號轉換錯誤",
+    "student_thought_process": "學生將十六進位的 B 和 C 轉為十進位時出錯，或誤算 AF 的數值，同時指數也選錯了高位，導致完全錯誤。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：回憶十六進位中 A, B, C 分別代表哪些十進位數字？",
+   "提示 2：觀察數列長度，確定最高位 AF 對應的冪次是 16 的幾次方？",
+   "提示 3：將非零部分拆解為「高位部分 × 冪次」加上「低位部分」的形式來配對選項。"
+  ],
+  "quick_solution_strategy": "先轉換 A,F,B,C 為十進位，再依位權（16 的次方）展開並比對選項。"
+ },
+ "skills": {
+  "topic_id": "T-NUM",
+  "knowledge_point_ids": [
+   "K-NUM-01",
+   "K-NUM-02"
+  ],
+  "formula_ids": [
+   "F-NUM-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": "F-NUM-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

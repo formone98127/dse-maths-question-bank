@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 2",
+  "qno": "43",
+  "hash": "#2024P2Q43"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "獨立事件與機率計算",
+   "secondary_topics": [
+    "互補事件",
+    "乘法法則"
+   ],
+   "required_formulas": [
+    "$P(A \\cap B \\cap C) = P(A) \\times P(B) \\times P(C)$",
+    "$P(\\text{至少一個}) = 1 - P(\\text{全部失敗})$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "誤將機率相乘當作答案",
+    "student_thought_process": "學生直接計算 $0.6 \\times 0.7 \\times 0.8 = 0.336$ (非選項) 或混淆概念，可能誤算 $1 - 0.6 - 0.7 - 0.8$ 等錯誤邏輯導致選 A。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "計算互補事件時出錯",
+    "student_thought_process": "學生算出全對機率 $0.336$，再誤以為要減去某個數，或錯誤計算 $(1-0.6)(1-0.7)(1-0.8)$ 得到 $0.024$ (選項 A) 後混淆。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "計算互補事件時出錯",
+    "student_thought_process": "學生正確算出全對機率 $0.336$，但錯誤地用 $1 - 0.336 = 0.664$ (非選項)，或誤將題目理解為「恰好答對一題」的複雜計算導致偏差。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "思考：要計算「至少答對一題」的機率，直接相加所有情況非常繁瑣，有沒有更簡單的方法？",
+   "提示：考慮其反面情況，即「一道題目都沒有答對」。請先算出每題答錯的機率。",
+   "引導：既然各題獨立，三道題全錯的機率如何計算？最後用 1 減去這個結果即可得到答案。"
+  ],
+  "quick_solution_strategy": "計算三題全錯機率 $(0.4 \\times 0.3 \\times 0.2)$，再用 $1$ 減去該值。"
+ },
+ "skills": {
+  "topic_id": "T-PROB",
+  "knowledge_point_ids": [
+   "K-PROB-01",
+   "K-PROB-02"
+  ],
+  "formula_ids": [
+   "F-PROB-01",
+   "F-PROB-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

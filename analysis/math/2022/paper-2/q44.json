@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 2",
+  "qno": "44",
+  "hash": "#2022P2Q44"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "中位數與標準分 (Z-score)",
+   "secondary_topics": [
+    "線性變換",
+    "百分等級"
+   ],
+   "required_formulas": [
+    "\\text{新分數} = \\text{舊分數} \\times 1.5 + 8",
+    "\\text{中位數的線性性質}",
+    "\\text{Z-score} = \\frac{\\text{個體值} - \\text{平均數}}{\\text{標準差}}"
+   ],
+   "bloom_taxonomy_level": "理解",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤解 Z-score 不變性",
+    "student_thought_process": "學生知道中位數變了，但錯誤地認為標準分 (Z-score) 在這種線性變換下會保持不變 (-2)，忽略了平均數與標準差同時改變導致 Z 值變化。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "計算中位數錯誤",
+    "student_thought_process": "學生正確理解 Z-score 會變，但在計算新中位數時出錯。可能只加了 8 (53-8=45) 或忘了乘以 1.5，導致算成 45。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "計算中位數與 Z 值雙重錯誤",
+    "student_thought_process": "學生在計算新中位數時出錯 (算成 45)，同時錯誤地認為 Z-score 會變成 -1，可能是隨意猜測或混淆了變換規則。"
+   }
+  },
+  "scaffolding_hints": [
+   "思考：當所有數據同時進行線性變換 $y = ax + b$ 時，數據的相對位置（如中位數、平均數）會如何變化？",
+   "提示：標準分 (Z-score) 定義為 $(X - \\mu)/\\sigma$。若 $X$ 變成 $aX+b$，則新的平均數與標準差也會變，請推導新的 Z-score 表達式。",
+   "引導：先計算原中位數 30 經過「增加 50%」再「加 8」後的結果，再分析該特定學生的 Z-score 變化規律。"
+  ],
+  "quick_solution_strategy": "新中位數 = $30 \\times 1.5 + 8$；新 Z-score = 原 Z-score (因線性變換比例係數與標準差同比例變化)。"
+ },
+ "skills": {
+  "topic_id": "T-STA",
+  "knowledge_point_ids": [
+   "K-STA-01",
+   "K-STA-02"
+  ],
+  "formula_ids": [
+   "F-STA-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

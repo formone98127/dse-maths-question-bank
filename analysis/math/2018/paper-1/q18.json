@@ -1,0 +1,118 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2018",
+  "paper": "Paper 1",
+  "qno": "18",
+  "hash": "#2018P1Q18"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "變分",
+   "secondary_topics": [
+    "二次函數性質",
+    "圖形對稱性",
+    "外心定義"
+   ],
+   "required_formulas": [
+    "$f(x) = a(x-h)^2 + k$",
+    "$\\text{外心} = \\triangle \\text{外接圓圓心}$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 180,
+   "marks": 5
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "設 f(x)=ax^2+bx+c，代入已知點解出係數",
+    "marks": 2,
+    "common_error": "忽略正變含義導致符號錯誤或漏掉一次項",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "利用配方法將 f(x) 轉為頂點式求 Q 座標",
+    "marks": 1,
+    "common_error": "配方計算錯誤或忘記除以 a",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "由 f(x) 構造 g(x)=27-f(x) 並求頂點 R",
+    "marks": 1,
+    "common_error": "忽略負號影響頂點位置或 y 座標計算錯",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "確認 Q、R 均為拋物線頂點且軸對稱",
+    "marks": 0,
+    "common_error": "誤以為 Q,R 是任意點",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 5,
+    "what": "指出 S 在 QR 中垂線上且 P 為外心",
+    "marks": 1,
+    "common_error": "未說明 S 與 QR 垂直平分線關係",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "考生常能求出 f(x)，但在配方求頂點及解釋外心幾何意義時失分嚴重，顯示對二次函數圖形性質與圓心定義理解不足。",
+  "scaffolding_hints": [
+   "提示 1：正變意味著係數為正，設 f(x)=ax^2+bx+c (a>0)。",
+   "提示 2：配方時記得將 a 提出來再處理括號內項。",
+   "提示 3：外心是三角形三邊垂直平分線交點，觀察 QR 與 S 的相對位置。"
+  ],
+  "quick_solution_strategy": "先設一般式代入解係數，配方得 Q，利用對稱性得 R，再觀察 S 是否在 QR 中垂線上判斷 P 的位置。"
+ },
+ "skills": {
+  "topic_id": "T-VAR",
+  "knowledge_point_ids": [
+   "K-VAR-01"
+  ],
+  "formula_ids": [
+   "F-VAR-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "5": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

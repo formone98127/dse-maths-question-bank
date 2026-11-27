@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 2",
+  "qno": "30",
+  "hash": "#2021P2Q30"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "平均值與總和關係",
+   "secondary_topics": [
+    "整數性質",
+    "代數式化簡"
+   ],
+   "required_formulas": [
+    "平均值 = 總和 / 數量",
+    "部分總和 + 其餘總和 = 整體總和"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "除法誤算",
+    "student_thought_process": "將 30 個數的總和 720 除以 40，得到錯誤的平均值 18，再加錯或混淆數字。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "加法誤算",
+    "student_thought_process": "計算出總差值後，錯誤地將 32 與某個數相加，而非用總和減去已知部分。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略數量權重",
+    "student_thought_process": "直接將 32 與 24 的平均，或錯誤認為餘下數值應為兩者平均，未考慮數量比例。"
+   }
+  },
+  "scaffolding_hints": [
+   "回想平均值的定義：平均值乘以數量等於總和。",
+   "先計算全部 70 個整數的總和，再計算前 30 個整數的總和。",
+   "用整體總和減去已知部分的總和，即可得到餘下 40 個整數的總和。"
+  ],
+  "quick_solution_strategy": "先算總和，再減去已知部分總和，最後除以餘下數量。"
+ },
+ "skills": {
+  "topic_id": "T-STA",
+  "knowledge_point_ids": [
+   "K-STA-01",
+   "K-STA-02"
+  ],
+  "formula_ids": [
+   "F-STA-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-STA-01",
+    "formula_id": "F-STA-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

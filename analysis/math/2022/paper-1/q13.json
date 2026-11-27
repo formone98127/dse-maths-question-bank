@@ -1,0 +1,136 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2022",
+  "paper": "Paper 1",
+  "qno": "13",
+  "hash": "#2022P1Q13"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "立體幾何",
+   "secondary_topics": [
+    "相似圖形性質",
+    "球體與圓錐體體積公式",
+    "比例關係"
+   ],
+   "required_formulas": [
+    "$V = \\frac{4}{3}\\pi r^3$",
+    "$A = 4\\pi r^2$",
+    "$V = \\frac{1}{3}\\pi R^2 h$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 7
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用面積比求小球半徑，再計算其體積。",
+    "marks": 3,
+    "common_error": "誤將面積比 4:9 當作半徑比 4:9，導致半徑算錯。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "計算大球體積，確認總體積守恆（熔化重鑄）。",
+    "marks": 1,
+    "common_error": "忽略熔化後體積不變的條件，直接假設 B 的體積為原大球。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "利用圓錐體 A 的尺寸計算其體積。",
+    "marks": 1,
+    "common_error": "忘記除以 3，誤用圓柱體體積公式 $\\pi R^2 h$。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "由總體積減去 A 的體積，求出圓錐體 B 的體積。",
+    "marks": 1,
+    "common_error": "計算錯誤或未能正確設定方程求解 B 的高。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "利用 B 的體積與底半徑，求出圓錐體 B 的高。",
+    "marks": 1,
+    "common_error": "代入數值時混淆半徑與直徑，或計算開根號錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "比較 A 與 B 的高與底半徑比例是否相等以判斷相似性。",
+    "marks": 1,
+    "common_error": "僅比較高度或僅比較半徑，未同時檢查兩組對應邊比例。",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "考評局指出考生常混淆圓錐與圓柱體公式，此題在 (b) 部分特別測試學生是否能正確運用體積守恆及相似圖形定義來反證宣稱。",
+  "scaffolding_hints": [
+   "Hint1: 面積比是半徑比的平方，請先開根號求半徑比。",
+   "Hint2: 熔化重鑄意味著總體積 $V_{total} = V_A + V_B$ 不變。",
+   "Hint3: 相似圖形要求所有對應線段比例相同，不僅是高度或半徑單一條件。"
+  ],
+  "quick_solution_strategy": "先由面積比求小球半徑得體積；算出大球體積後總和為熔化體積；算出 A 體積得 B 體積；再求 B 高；最後比較 $h_A/r_A$ 與 $h_B/r_B$ 是否相等。"
+ },
+ "skills": {
+  "topic_id": "T-MEN",
+  "knowledge_point_ids": [
+   "K-MEN-01",
+   "K-MEN-02"
+  ],
+  "formula_ids": [
+   "F-MEN-01",
+   "F-MEN-02",
+   "F-MEN-03",
+   "F-MEN-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

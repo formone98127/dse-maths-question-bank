@@ -1,0 +1,91 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2016",
+  "paper": "Paper 2",
+  "qno": "13",
+  "hash": "#2016P2Q13"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "加權平均數",
+   "secondary_topics": [
+    "一元一次方程式",
+    "混合問題"
+   ],
+   "required_formulas": [
+    "$\\frac{m_1c_1 + m_2c_2}{m_1+m_2} = c_{mix}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "差額分配錯誤",
+    "student_thought_process": "計算 $3kg$ 與平均價的差額為 $18$，誤以為總差額僅需補 $18$ 給 $2kg$，算出 $(18/2)=9$ 加到 $30$ 上得 $39$ (D)，或簡單將差額 $18$ 平分錯。若選 B ($30$)，可能是誤解混合後價格應介於兩者之間但計算 $36-42=-6$，再除以比例時出錯。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略質量比",
+    "student_thought_process": "誤以為混合後價格是兩者簡單平均，或計算差額時未考慮 $3:2$ 的重量比例，直接將 $6$ 的差額平分。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "差額分配方向錯誤",
+    "student_thought_process": "正確算出 $3kg$ 虧損 $18$，但誤認為這筆損失應由 $Y$ 完全承擔且未按比例分配，或計算 $(42-36) \\times (3/5)$ 時數值處理錯誤。"
+   }
+  },
+  "scaffolding_hints": [
+   "混合後的單價介於兩種原料單價之間，思考 $Y$ 牌價格應低於還是高於 $X$ 牌？",
+   "$3kg$ 的 $X$ 牌與平均價的差額總值是多少？這筆多付的成本需要由多少 $Y$ 牌來平衡？",
+   "利用「虧損總值 = 獲利總值」的概念，建立方程式求解 $Y$ 牌的單價。"
+  ],
+  "quick_solution_strategy": "計算 $3kg$ X 的總差額 ($18$)，除以 $Y$ 的比例 ($2/5$) 或直接用十字交叉法求比例分配。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-01",
+   "K-POL-02"
+  ],
+  "formula_ids": [
+   "F-POL-01",
+   "F-POL-02",
+   "F-POL-03",
+   "F-POL-06"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-POL-01",
+    "formula_id": "F-POL-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

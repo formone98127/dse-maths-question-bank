@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2012",
+  "paper": "Paper 2",
+  "qno": "27",
+  "hash": "#2012P2Q27"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-16",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "機率與整除性",
+   "secondary_topics": [
+    "三位數的構成規則",
+    "個位數特性"
+   ],
+   "required_formulas": [
+    "整除性判定：一個數能被 5 整除當且僅當其個位數為 0 或 5"
+   ],
+   "bloom_taxonomy_level": "理解",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "分母錯誤計算",
+    "student_thought_process": "學生可能誤以為三位數的總組合數僅由百位和十位決定（忽略個位的變化對分母的影響），或者錯誤地假設 $\\star$ 與 $\blacklozenge$ 必須互不相同且非零，導致計算出錯誤的分母（如 $9 \\times 10 - ?$ 或類似邏輯）。具體而言，若學生認為總樣本空間是 $9 \\times 10 = 90$（僅考慮前兩位），並錯誤地將有利事件計為某個數值，從而得出 $7/33$。這反映了對「樣本空間」定義的不清晰。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "分母簡化錯誤",
+    "student_thought_process": "學生正確識別出總樣本空間為 $9 \\times 10 \\times 10 = 900$，有利事件為 $9 \\times 10 \\times 2 = 180$（百位 1-9, 十位 0-9, 個位 0 或 5），得到機率 $180/900 = 1/5$。然而，學生在化簡分數時出現錯誤，或者誤將有利事件計算為 $20 \\times ?$。選項 C 的分子 20 暗示學生可能只考慮了個位有 2 種選擇，但將百位和十位的組合數算錯（例如認為百位 9, 十位 10, 總共 90，有利 $2 \\times ?$）。更可能的錯誤是：學生計算出有利事件為 $20$（例如只考慮了某種特定情況），而分母為 $99$（誤以為總數是 $9 \\times 11$？）。這屬於計算過程中的粗心或對題目條件的誤讀。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "忽略百位限制",
+    "student_thought_process": "學生完全忽略了「三位數」中百位不能為 0 的限制，錯誤地將總樣本空間計算為 $10 \\times 10 \\times 10 = 1000$。有利事件仍正確計算為 $2 \\times 10 \\times 10 = 200$（個位 2 種，其他任意），得到機率 $200/1000 = 1/5$。但若學生在計算總數時，錯誤地認為百位有 9 種、十位有 10 種、個位有 10 種，卻在化簡時出錯？不，D 是 $19/100$。這暗示學生可能正確算出有利事件為 $180$（若考慮百位限制），但總樣本空間算成 $950$？不。最可能的錯誤是：學生計算有利事件時，只考慮了個位為 0 或 5 的情況，但錯誤地將百位的選擇數算少了一個（例如認為百位只有 8 種？）。或者，學生在計算總樣本空間時，正確得到 $900$，但在計算有利事件時，錯誤地認為個位有 2 種，但百位和十位的組合數算錯。讓我們重新思考 D：$19/100 = 180/950$？不。最合理的解釋是學生在計算有利事件時，錯誤地將百位限制考慮進去，但在總樣本空間中又忘記了百位限制，導致分母為 $1000$，分子為 $190$（例如認為個位 2 種，但百位和十位有某種限制）。或者，學生計算有利事件為 $19 \\times ?$。這屬於審題不清或計算粗心。"
+   }
+  },
+  "scaffolding_hints": [
+   "Hint 1 啟發：回想一下，一個三位數要能被 5 整除，它的個位數字必須滿足什麼條件？",
+   "Hint 2 知識：三位數的百位不能為 0（有 9 種選擇），十位和個位各有 10 種選擇。請先計算所有可能的三位數總數，再計算其中個位是 0 或 5 的情況有多少種。",
+   "Hint 3 破題：將「有利情況數」除以「總情況數」即可得到機率。注意化簡分數時不要粗心！"
+  ],
+  "quick_solution_strategy": "百位 9 選、十位 10 選、個位 2 選（0 或 5）；總數 $9\\times10\\times10=900$，有利 $9\\times10\\times2=180$，機率 $180/900=1/5$"
+ },
+ "skills": {
+  "topic_id": "T-PROB",
+  "knowledge_point_ids": [
+   "K-PROB-01",
+   "K-PROB-05"
+  ],
+  "formula_ids": [
+   "F-PROB-01"
+  ],
+  "ability_ids": [
+   "A-COND",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-COND"
+   },
+   "C": {
+    "knowledge_point_id": "K-PROB-05",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-PROB-01",
+    "formula_id": "F-PROB-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2018",
+  "paper": "Paper 2",
+  "qno": "35",
+  "hash": "#2018P2Q35"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "等差數列與級數",
+   "secondary_topics": [
+    "通項公式",
+    "前 n 項和公式"
+   ],
+   "required_formulas": [
+    "$a_n = S_n - S_{n-1}$ (對於 $n \\ge 2$)",
+    "$a_1 = S_1$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略第二個條件",
+    "student_thought_process": "學生算出 a1=5 正確，但誤判 a2 不是 22。可能錯誤計算 S2-S1 或對選項 I 的驗證失敗，導致只選 II 卻錯選 A（若題目設定 A 為只有 I）。在此題中，A 代表「只有 I」，學生可能算錯 a1 或非等比，但漏掉 II。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤認數列類型",
+    "student_thought_process": "學生算出 a1=5 且 a2=22，但錯誤推論因為公比不固定所以不是等差，進而誤以為是等比（III），導致選擇 C。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "同時犯下兩類錯誤",
+    "student_thought_process": "學生既誤判 a1 的計算（或忽略 S1），又誤認該數列為等比。通常發生在混淆 $S_n$ 與 $a_n$ 關係，且對等差定義理解不清。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：回憶如何從前 n 項和 $S_n$ 求第 n 項通式 $a_n$ 的方法。",
+   "提示 2：計算出前三項 $a_1, a_2, a_3$ 後，觀察它們是否滿足等差數列的定義（公差固定）。",
+   "提示 3：檢查公比是否存在，若前三項不成比例則非等比；確認 II 與 I 的真偽後再組合選項。"
+  ],
+  "quick_solution_strategy": "計算 $a_1=S_1$ 及 $a_n=S_n-S_{n-1}$，驗證 I、II、III 真偽。"
+ },
+ "skills": {
+  "topic_id": "T-SEQ",
+  "knowledge_point_ids": [
+   "K-SEQ-02",
+   "K-SEQ-03"
+  ],
+  "formula_ids": [
+   "F-SEQ-01",
+   "F-SEQ-03"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-SEQ-02",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-SEQ-02",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-SEQ-02",
+    "formula_id": "F-SEQ-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

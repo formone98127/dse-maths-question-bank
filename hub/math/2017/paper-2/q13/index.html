@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-HK">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DSE 數學 2017 卷二 第 13 題【等差級數與遞迴關係】深度分析＋答案｜DSE 數學題庫</title>
+<meta name="description" content="DSE 數學 2017 卷二 第 13 題深度解析：考點「等差級數與遞迴關係」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
+<meta name="keywords" content="DSE, 香港中學文憑, 歷屆試題, past paper, DSE 數學, DSE 經濟, DSE 化學, DSE 生物, DSE 物理, 免費題庫, 按課題">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="googlebot" content="index, follow">
+<meta name="author" content="DSE 數學題庫">
+<link rel="canonical" href="https://hkdse.exampaper.cloud/hub/math/2017/paper-2/q13/">
+<link rel="alternate" hreflang="zh-Hant-HK" href="https://hkdse.exampaper.cloud/hub/math/2017/paper-2/q13/">
+<link rel="alternate" hreflang="en" href="https://hkdse.exampaper.cloud/hub/math/2017/paper-2-en/q13/">
+<link rel="alternate" hreflang="x-default" href="https://hkdse.exampaper.cloud/hub/math/2017/paper-2/q13/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DSE 數學題庫">
+<meta property="og:locale" content="zh_HK">
+<meta property="og:title" content="DSE 數學 2017 卷二 第 13 題【等差級數與遞迴關係】深度分析＋答案｜DSE 數學題庫">
+<meta property="og:description" content="DSE 數學 2017 卷二 第 13 題深度解析：考點「等差級數與遞迴關係」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
+<meta property="og:url" content="https://hkdse.exampaper.cloud/hub/math/2017/paper-2/q13/">
+<meta property="og:image" content="https://hkdse.exampaper.cloud/og/math/2017/paper-2/q13.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="DSE 數學 2017 卷二 第 13 題【等差級數與遞迴關係】深度分析＋答案｜DSE 數學題庫">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="DSE 數學 2017 卷二 第 13 題【等差級數與遞迴關係】深度分析＋答案｜DSE 數學題庫">
+<meta name="twitter:description" content="DSE 數學 2017 卷二 第 13 題深度解析：考點「等差級數與遞迴關係」、三層解題提示、每個錯誤選項嘅思考盲點逆向工程同速解策略，附正確答案。">
+<meta name="twitter:image" content="https://hkdse.exampaper.cloud/og/math/2017/paper-2/q13.png">
+<meta name="theme-color" content="#0b1220">
+<link rel="manifest" href="/dse-maths-question-bank/manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="32x32" href="/dse-maths-question-bank/icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/dse-maths-question-bank/icons/icon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/dse-maths-question-bank/icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="DSE 數學題庫">
+<meta name="application-name" content="DSE 數學題庫">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/dse-maths-question-bank/hub/style.css?v=202611271943">
+<link rel="alternate" type="application/rss+xml" title="DSE 數學題庫 最新題目分析" href="https://hkdse.exampaper.cloud/feed.xml">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LTB27V0RGW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-LTB27V0RGW');
+</script>
+<script defer src="/dse-maths-question-bank/js/track.js?v=202611271943"></script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "DSE 數學題庫",
+          "item": "https://hkdse.exampaper.cloud/hub/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "數學",
+          "item": "https://hkdse.exampaper.cloud/math/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "2017",
+          "item": "https://hkdse.exampaper.cloud/hub/math/2017/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "卷二（中文）",
+          "item": "https://hkdse.exampaper.cloud/hub/math/2017/paper-2/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "第 13 題",
+          "item": "https://hkdse.exampaper.cloud/hub/math/2017/paper-2/q13/"
+        }
+      ]
+    },
+    {
+      "@type": "QAPage",
+      "mainEntity": {
+        "@type": "Question",
+        "name": "DSE 數學 2017 卷二 第 13 題",
+        "text": "圖中，第 1 個圖案包含 1 粒點子。對任意正整數 n，第 (n+1) 個圖案是由第 n 個圖案加上 (2n+2) 粒點子所組成。求第 7 個圖案的點子數目。 ![Figure Q13 (as printed)](2017P2_zh_figs/Q13.png) - A. 41 - B. 55 - C. 71 - D. 161",
+        "answerCount": 4,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "B. 55。速解策略：由 a_1=1 開始，依序加 (2n+2) 直到 n=6 得到第 7 項。"
+        },
+        "suggestedAnswer": [
+          {
+            "@type": "Answer",
+            "text": "A. 41"
+          },
+          {
+            "@type": "Answer",
+            "text": "B. 55"
+          },
+          {
+            "@type": "Answer",
+            "text": "C. 71"
+          },
+          {
+            "@type": "Answer",
+            "text": "D. 161"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "name": "DSE 數學 2017 卷二 第 13 題",
+      "url": "https://hkdse.exampaper.cloud/hub/math/2017/paper-2/q13/",
+      "inLanguage": "zh-Hant-HK",
+      "learningResourceType": "Exam question",
+      "educationalLevel": "HKDSE",
+      "isPartOf": {
+        "@id": "https://hkdse.exampaper.cloud/#website"
+      },
+      "about": "等差級數與遞迴關係",
+      "teaches": "等差級數與遞迴關係"
+    }
+  ]
+}
+</script>
+</head>
+<body class="subj-page" data-qpage data-topic="等差級數與遞迴關係" data-year="2017" data-paper="paper-2" data-qno="13" data-lang="zh">
+<header class="hero">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <nav class="crumb" aria-label="麵包屑">
+      <a href="/dse-maths-question-bank/hub/">DSE 數學題庫</a>
+      <span aria-hidden="true">／</span>
+      <a href="/dse-maths-question-bank/math/">數學</a>
+      <span aria-hidden="true">／</span>
+      <a href="/dse-maths-question-bank/hub/math/2017/">2017</a>
+      <span aria-hidden="true">／</span>
+      <a href="/dse-maths-question-bank/hub/math/2017/paper-2/">卷二（中文）</a>
+      <span aria-hidden="true">／</span>
+      <span>第 13 題</span>
+      </nav>
+    <p class="brand">DSE 數學題庫</p>
+    <h1>DSE 數學 2017 卷二 第 13 題【等差級數與遞迴關係】深度分析</h1>
+    <p class="tagline">考點圖譜 · 布魯姆認知層次 · 三層鷹架提示 · 誘答項逆向工程</p>
+        <nav class="subj-nav" aria-label="科目">
+        <a href="/dse-maths-question-bank/math/" class="on">數學<span class="n">54 卷</span></a>
+        <a href="/dse-maths-question-bank/econ/">經濟<span class="n">0 卷</span></a>
+        <a href="/dse-maths-question-bank/chem/">化學<span class="n">0 卷</span></a>
+        <a href="/dse-maths-question-bank/bio/">生物<span class="n">0 卷</span></a>
+        <a href="/dse-maths-question-bank/phys/">物理<span class="n">0 卷</span></a>
+        </nav>
+        
+    <p class="page-cta open-cta"><a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2017P2Q13">喺題庫開啟呢題</a> · <a href="/dse-maths-question-bank/hub/math/2017/paper-2/">返回 2017 卷二 全卷</a> · <a href="/dse-maths-question-bank/hub/math/2017/paper-2-en/q13/">English version</a> · <a href="/dse-maths-question-bank/topics/sequences/">課題：數列（42 題）</a></p>
+  </div>
+</header>
+<main class="subj-main">
+<section class="kw-block" aria-label="題目">
+  <h2>題目</h2>
+  <div class="q-embed"><p>圖中，第 1 個圖案包含 1 粒點子。對任意正整數 $n$，第 $(n+1)$ 個圖案是由第 $n$ 個圖案加上 $(2n+2)$ 粒點子所組成。求第 7 個圖案的點子數目。</p>
+<p><img alt="Figure Q13 (as printed)" src="/dse-maths-question-bank/2017P2_zh_figs/Q13.png" /></p>
+<ul>
+<li>A. $41$</li>
+<li>B. $55$</li>
+<li>C. $71$</li>
+<li>D. $161$</li>
+</ul></div>
+</section>
+<nav class="share-row" aria-label="分享呢一題"><a data-share="whatsapp" href="https://wa.me/?text=DSE%20%E6%95%B8%E5%AD%B8%202017%20%E5%8D%B7%E4%BA%8C%20%E7%AC%AC%2013%20%E9%A1%8C%E3%80%90%E7%AD%89%E5%B7%AE%E7%B4%9A%E6%95%B8%E8%88%87%E9%81%9E%E8%BF%B4%E9%97%9C%E4%BF%82%E3%80%91%20https%3A%2F%2Fhkdse.exampaper.cloud%2Fhub%2Fmath%2F2017%2Fpaper-2%2Fq13%2F" rel="noopener" target="_blank">WhatsApp 分享</a><a data-share="telegram" href="https://t.me/share/url?url=https%3A%2F%2Fhkdse.exampaper.cloud%2Fhub%2Fmath%2F2017%2Fpaper-2%2Fq13%2F&amp;text=DSE%20%E6%95%B8%E5%AD%B8%202017%20%E5%8D%B7%E4%BA%8C%20%E7%AC%AC%2013%20%E9%A1%8C%E3%80%90%E7%AD%89%E5%B7%AE%E7%B4%9A%E6%95%B8%E8%88%87%E9%81%9E%E8%BF%B4%E9%97%9C%E4%BF%82%E3%80%91" rel="noopener" target="_blank">Telegram 分享</a><button type="button" data-copy-link="https://hkdse.exampaper.cloud/hub/math/2017/paper-2/q13/">複製連結</button></nav>
+<section class="kw-section" aria-label="深度分析">
+  <h2>深度分析</h2>
+<p class="ai-chips"><span class="q-ai">等差級數與遞迴關係</span>　認知層次：應用　建議作答 90 秒</p><p>核心公式／定理：$a_{n+1} = a_n + (2n+2)$、$S_k = \sum_{i=1}^{k-1} (2i+2) + a_1$</p><div class="ai-hints"><details class="ai-hint"><summary>提示 1（啟發）</summary><div>先列出前兩項圖形的點子數，觀察從第 $n$ 個到第 $n+1$ 個增加了多少點。</div></details><details class="ai-hint"><summary>提示 2（知識）</summary><div>記下遞迴公式：$a_{n+1} = a_n + (2n+2)$，其中 $a_1=1$。</div></details><details class="ai-hint"><summary>提示 3（破題）</summary><div>逐步計算至第 7 項，注意每次增加的數值隨 $n$ 變化而不同。</div></details></div><h3>誘答項逆向工程</h3><div class="ai-oa"><div class="ai-oa-card"><strong>A</strong><p class="ai-oa-meta"><span class="q-ai">計算粗心</span>　首項計算錯誤</p><div>學生算出第 2 個圖形為 5，但誤以為首項是 1 且公差固定為 4，直接套用等差公式 $1+6\times4=25$ 後又算錯或混淆題目定義，導致得到 41。</div></div><div class="ai-oa-card"><strong>B　✓ 正確答案</strong><div></div></div><div class="ai-oa-card"><strong>C</strong><p class="ai-oa-meta"><span class="q-ai">概念錯誤</span>　誤解遞迴規則</p><div>學生將第 $n$ 個圖形到第 $n+1$ 個的增量 $(2n+2)$ 誤認為是固定加數，或錯誤地從 $n=1$ 開始累加時漏掉了初始條件，導致結果偏大。</div></div><div class="ai-oa-card"><strong>D</strong><p class="ai-oa-meta"><span class="q-ai">策略錯誤</span>　過度推演或計算失誤</p><div>學生正確列出遞迴式但計算到第 7 項時，將 $2n+2$ 中的 $n$ 取值錯誤（如用 $n=7$ 代入增量），導致數字膨脹至 161。</div></div></div><p class="ai-strategy"><strong>速解策略：</strong>由 $a_1=1$ 開始，依序加 $(2n+2)$ 直到 $n=6$ 得到第 7 項。</p>
+</section>
+<nav class="q-prevnext" aria-label="上一題／下一題"><a href="/dse-maths-question-bank/hub/math/2017/paper-2/q12/" rel="prev">← Q12</a>　<a href="/dse-maths-question-bank/hub/math/2017/paper-2/q14/" rel="next">Q14 →</a></nav>
+</main>
+<footer><a href="/dse-maths-question-bank/hub/math/2017/paper-2/">返回 2017 卷二</a> · <a href="https://hkdse.exampaper.cloud/?subject=%E6%95%B8%E5%AD%B8#2017P2Q13">喺題庫開啟呢題</a> · <a href="/dse-maths-question-bank/hub/">DSE 數學題庫 主頁</a> · 相關：<a href="https://dsemaths.canonlessons.com" rel="noopener">免費 DSE 數學視覺教程</a> · 站內只放索引、連結同課題標籤，只顯示資料庫已有內容</footer>
+</body>
+</html>

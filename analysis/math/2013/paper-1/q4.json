@@ -1,0 +1,103 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 1",
+  "qno": "4",
+  "hash": "#2013P1Q4"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "一元一次方程",
+   "secondary_topics": [
+    "二元一次聯立方程",
+    "代數式化簡"
+   ],
+   "required_formulas": [
+    "$7L + 3O = 47$",
+    "$5L + 6O = 49$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 4
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "設梨價為 L，橙價為 O，列出兩個線性方程。",
+    "marks": 1,
+    "common_error": "未設變數直接列式或寫錯係數。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 2,
+    "what": "將其中一個方程乘以常數，使某變數係數相同。",
+    "marks": 1,
+    "common_error": "乘法計算錯誤或選錯變數消去。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "兩方程相減，消去一個變數（如 O）。",
+    "marks": 1,
+    "common_error": "符號錯誤導致相減結果不正確。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "解出梨的單價 L，並寫出最終答案。",
+    "marks": 1,
+    "common_error": "算術錯誤或忘記答題要求（求梨價）。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "考生常能正確列出方程組，但在執行消元法時的代數運算（如乘法分配律、移項變號）容易出錯，導致無法得出最終答案。",
+  "scaffolding_hints": [
+   "先設未知數 L 和 O 代表梨與橙的價錢。",
+   "觀察係數：將第一式乘 2 可得 $14L + 6O = 94$，此時 O 的係數與第二式相同。",
+   "用新方程減去原第二式 $(5L+6O=49)$ 即可消去 O，只留 L。"
+  ],
+  "quick_solution_strategy": "列式 $7L+3O=47$ 與 $5L+6O=49$；第一式乘 2 得 $14L+6O=94$；減第二式得 $9L=45$，故 $L=5$"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

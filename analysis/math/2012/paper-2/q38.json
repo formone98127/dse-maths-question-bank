@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2012",
+  "paper": "Paper 2",
+  "qno": "38",
+  "hash": "#2012P2Q38"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-16",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "函數圖形的平移",
+   "secondary_topics": [
+    "坐標系中的幾何變換",
+    "圖像的相對位置關係"
+   ],
+   "required_formulas": [
+    "水平平移規則：$y=f(x-h)$ 表示向右平移 $h$ 單位",
+    "垂直平移規則：$y=f(x)+k$ 表示向上平移 $k$ 單位"
+   ],
+   "bloom_taxonomy_level": "理解",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "方向搞反且垂直移動錯誤",
+    "student_thought_process": "學生可能誤以為 $x-2$ 代表向左移（混淆符號意義），同時將 $+1$ 誤解為向下移，導致選擇了左下方向的圖形。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "水平移動方向錯誤",
+    "student_thought_process": "學生正確識別出垂直向上移（$+1$），但將 $x-2$ 誤解為向左平移，選擇了左上方向的圖形。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "垂直移動方向錯誤",
+    "student_thought_process": "學生正確識別出水平向右移（$x-2$），但將 $+1$ 誤解為向下平移，選擇了右下方向的圖形。"
+   }
+  },
+  "scaffolding_hints": [
+   "Hint 1 啟發：觀察函數表達式中的變量變化，思考 $x$ 減去常數與加上常數分別對應圖形在哪個方向移動。",
+   "Hint 2 知識：回憶平移公式，$y=f(x-2)$ 代表原圖形沿 $x$ 軸正方向（右）移動 2 單位，$+1$ 代表沿 $y$ 軸正方向（上）移動 1 單位。",
+   "Hint 3 破題：在四個選項中尋找那個「相對於另一條曲線」同時位於「右側且上方」的圖形組合。"
+  ],
+  "quick_solution_strategy": "找出一對圖形，其中一條比另一條明顯偏右且偏上。"
+ },
+ "skills": {
+  "topic_id": "T-FUN",
+  "knowledge_point_ids": [
+   "K-FUN-04"
+  ],
+  "formula_ids": [
+   "F-FUN-02",
+   "F-FUN-03"
+  ],
+  "ability_ids": [
+   "A-GRAPH",
+   "A-COND"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-FUN-04",
+    "formula_id": "F-FUN-02",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-FUN-04",
+    "formula_id": "F-FUN-03",
+    "ability_id": "A-GRAPH"
+   },
+   "D": {
+    "knowledge_point_id": "K-FUN-04",
+    "formula_id": "F-FUN-02",
+    "ability_id": "A-COND"
+   }
+  }
+ }
+}

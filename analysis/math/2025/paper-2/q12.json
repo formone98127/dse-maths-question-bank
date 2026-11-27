@@ -1,0 +1,89 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2025",
+  "paper": "Paper 2",
+  "qno": "12",
+  "hash": "#2025P2Q12"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "變數關係與比例",
+   "secondary_topics": [
+    "立方函數",
+    "平方函數"
+   ],
+   "required_formulas": [
+    "$z = k \\frac{x^3}{y^2}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "未正確代入常數 k",
+    "student_thought_process": "學生算出 k=1/36 後，直接將新 x,y 值代入時，可能錯誤計算為 $5^3/2^2 = 125/4$，再忘記乘以 k 或簡化錯誤，誤選 A。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "分母處理錯誤",
+    "student_thought_process": "學生正確算出 $k=1/36$，但在計算 $5^3/(2^2)$ 時，可能誤將分母 $4$ 視為 $1$，導致結果變成 $125$，再除以 $36$ 時出現嚴重簡化錯誤。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略反變關係",
+    "student_thought_process": "學生完全忽略了 $y$ 的反變關係，直接假設 $z$ 隨 $x$ 立方正變，計算 $5^3/3^3 \\times 3 = 125/9 \\times 3 \\approx 41$，或誤以為 $y$ 不變。"
+   }
+  },
+  "scaffolding_hints": [
+   "首先，根據題目描述寫出包含常數 $k$ 的通用公式 $z = k \\frac{x^3}{y^2}$。",
+   "將已知條件 $x=3, y=6, z=3$ 代入公式，解出比例常數 $k$ 的值。",
+   "最後，將 $x=5, y=2$ 及求得的 $k$ 值代回公式，計算最終的 $z$ 值。"
+  ],
+  "quick_solution_strategy": "先由第一組數據求出 k，再代入第二組數據計算。"
+ },
+ "skills": {
+  "topic_id": "T-VAR",
+  "knowledge_point_ids": [
+   "K-VAR-01",
+   "K-VAR-02"
+  ],
+  "formula_ids": [
+   "F-VAR-01",
+   "F-VAR-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

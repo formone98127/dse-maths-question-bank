@@ -1,0 +1,85 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2018",
+  "paper": "Paper 2",
+  "qno": "2",
+  "hash": "#2018P2Q2"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "比例式與分數運算",
+   "secondary_topics": [
+    "交叉相乘法",
+    "一元一次方程式"
+   ],
+   "required_formulas": [
+    "\\frac{a}{b} = \\frac{c}{d} \\implies ad = bc"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "符號處理錯誤",
+    "student_thought_process": "交叉相乘得 \\alpha x = \\beta(1-x)。移項時將 \\beta x 移到左邊變成減號，但分母 \\alpha - \\beta 未正確對應分子位置，混淆了 \\alpha 與 \\beta 的係數關係。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "移項符號錯誤",
+    "student_thought_process": "交叉相乘正確，但在合併 \\beta x 與 \\alpha x 時，誤將 \\beta(1-x) 展開後的負號忽略，導致分母變成 \\alpha + \\beta，這是常見的符號遺漏。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "分子分母顛倒",
+    "student_thought_process": "學生正確解出 x = \\frac{\\beta}{\\alpha-\\beta}，但題目要求解的是 x 而非 \\frac{1-x}{x}，或是將原式中的 \\alpha, \\beta 位置搞混，導致選錯分子。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "觀察等式兩側，嘗試使用交叉相乘法將分母消除。",
+   "展開右側括號後，注意 \\beta x 項前面的符號變化。",
+   "將所有含 x 的項移到一側，常數項移到另一側後整理係數。"
+  ],
+  "quick_solution_strategy": "交叉相乘得 \\alpha x = \\beta - \\beta x，移項合併得 x(\\alpha + \\beta) = \\beta，故 x = \\frac{\\beta}{\\alpha + \\beta}。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-POL-07",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-POL-07",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-POL-07",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

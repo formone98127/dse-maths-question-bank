@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 2",
+  "qno": "21",
+  "hash": "#2017P2Q21"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓的幾何性質",
+   "secondary_topics": [
+    "等腰三角形",
+    "圓周角定理",
+    "半圓直徑性質"
+   ],
+   "required_formulas": [
+    "$\\angle ABC + \\angle ADC = 180^\\circ$ (圓內接四邊形)",
+    "$\\angle BED = \\frac{1}{2} \\angle BCD$ (同弧所對圓周角與圓心角關係或等腰三角形性質)",
+    "半圓上的圓周角為 $90^\\circ$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "誤算圓內接四邊形角度",
+    "student_thought_process": "學生可能錯誤認為 $\\angle ADC = \\angle ABC = 110^\\circ$，隨後計算 $\\angle BCD$ 時出錯，導致最終結果偏差。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "混淆圓周角與弦切角關係",
+    "student_thought_process": "學生可能直接將 $180-110=70$ 除以 2 得到 $35^\\circ$，忽略了 $BC=CD$ 意味著 $\\angle CBD = \\angle CDB$ 的等腰三角形性質應用順序。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤解半圓直徑性質",
+    "student_thought_process": "學生可能錯誤地認為 $\\angle BED$ 直接等於 $180-110=70^\\circ$ 的一半，卻未正確利用等腰三角形底角相等來拆分 $\\angle BCD$。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：觀察圓內接四邊形 $ABCD$，直徑 $AD$ 將圓分為兩個半圓，利用圓內接四邊形對角互補性質找出 $\\angle ADC$。",
+   "提示 2：已知 $BC=CD$，這意味著 $\\triangle BCD$ 是等腰三角形，請思考如何將 $\\angle BCD$ 與頂角 $\\angle ADC$ 關聯起來。",
+   "提示 3：利用圓周角定理，$\\angle BED$ 所對的弧是 $BD$，請找出與弧 $BD$ 相關的已知角度關係進行計算。"
+  ],
+  "quick_solution_strategy": "先求 $\\angle ADC=70^\\circ$，再解等腰 $\\triangle BCD$ 得底角 $35^\\circ$，最後利用圓周角定理或三角形內角和求 $\\angle BED$"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-05"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CHAIN"
+   },
+   "D": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

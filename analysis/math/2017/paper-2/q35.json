@@ -1,0 +1,86 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 2",
+  "qno": "35",
+  "hash": "#2017P2Q35"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "複數運算與實數條件",
+   "secondary_topics": [
+    "分母有理化",
+    "共軛複數"
+   ],
+   "required_formulas": [
+    "$\\frac{a+bi}{c+di} = \\frac{(a+bi)(c-di)}{c^2+d^2}$",
+    "$z=x+yi$ 為實數當且僅當 $y=0$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 60
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "分母有理化時符號錯誤",
+    "student_thought_process": "學生在將 $\\frac{5}{2-i}$ 化為 $\\frac{5(2+i)}{5}=2+i$ 後，加上 $ki$ 得到 $2+(1+k)i$。令虛部 $1+k=0$ 時算錯成 $k=-2$"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "混淆實數與純虛數定義",
+    "student_thought_process": "學生誤以為 $k$ 需使整體為純虛數，故令實部 $2=0$（不可能），或錯誤認為 $k$ 應抵消分母中的 $-i$ 而選正數"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "忽略負號導致符號反轉",
+    "student_thought_process": "正確算出虛部係數為 $1+k$，但解方程 $1+k=0$ 時誤算成 $k=2$"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：複數除法需將分母變為實數，請乘以分母的共軛複數 $(2+i)$。",
+   "提示 2：整理結果後，利用「虛部係數必須為零」的條件建立方程式。",
+   "提示 3：解一元一次方程式 $1+k=0$ 即可求得 $k$ 值。"
+  ],
+  "quick_solution_strategy": "將複數分式有理化得 $2+i+ki$，令虛部 $1+k=0$ 解得 $k=-1$"
+ },
+ "skills": {
+  "topic_id": "T-NUM",
+  "knowledge_point_ids": [
+   "K-NUM-01"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-NUM-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

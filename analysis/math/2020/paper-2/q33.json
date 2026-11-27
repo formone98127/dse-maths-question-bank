@@ -1,0 +1,88 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2020",
+  "paper": "Paper 2",
+  "qno": "33",
+  "hash": "#2020P2Q33"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "指數函數與對稱性質",
+   "secondary_topics": [
+    "函數圖像的反射",
+    "指數增長與衰減的特性"
+   ],
+   "required_formulas": [
+    "$$y = a^x$$",
+    "$$y = b^x$$",
+    "$$a^x \\leftrightarrow b^x$$ 關於 y 軸對稱關係"
+   ],
+   "bloom_taxonomy_level": "理解",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略 ab=1 關係",
+    "student_thought_process": "學生誤以為只要一個衰減一個增長即可，忘記了對稱條件要求底數互為倒數，因此 ab=1 必須成立。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤判 b 的範圍",
+    "student_thought_process": "學生知道 a<1，但錯誤推導出 b 必須小於 1。實際上若 a<1 且圖像對稱，b 必大於 1 才能呈現增長趨勢以配合衰減曲線。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "誤判 a 的範圍",
+    "student_thought_process": "學生觀察圖像後認為兩條線都像是增長或衰減方向混淆，未能正確識別 y 軸對稱意味著一個底數小於 1，另一個必大於 1。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "思考：當一個函數圖像關於 y 軸反射時，其自變量 x 的符號會發生什麼變化？",
+   "知識：若 $$y=a^x$$ 與 $$y=b^x$$ 關於 y 軸對稱，則滿足 $$a^x = b^{-x}$$，這暗示了 a 與 b 之間的數值關係是什麼？",
+   "提示：觀察圖像中一條曲線隨 x 增大而下降（衰減），另一條隨 x 增大而上升（增長），這對應於底數大於或小於 1 的什麼特性？"
+  ],
+  "quick_solution_strategy": "利用對稱性得 b=1/a，故 ab=1；結合圖像一增一減知 a<1, b>1。"
+ },
+ "skills": {
+  "topic_id": "T-FUN",
+  "knowledge_point_ids": [
+   "K-FUN-01",
+   "K-FUN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

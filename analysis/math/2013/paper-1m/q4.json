@@ -1,0 +1,130 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 1M",
+  "qno": "4",
+  "hash": "#2013P1MQ4"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "指數與對數函數",
+   "secondary_topics": [
+    "線性化處理",
+    "最小二乘法估算",
+    "數據異常值偵測"
+   ],
+   "required_formulas": [
+    "$\\ln(u) = \\ln(ae^{-bx})$",
+    "$y = \\frac{8(1-u)}{1+u} \\Rightarrow u = \\frac{8-y}{8+y}$",
+    "$\\ln u = \\ln a - bx$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 300,
+   "marks": 7
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用 $u=ae^{-bx}$ 取對數，表達 $\\ln u$ 為 $x$ 的線性函數。",
+    "marks": 2,
+    "common_error": "忘記展開 $\\ln(ae^{-bx})$ 成 $\\ln a - bx$，或誤將 $a,b$ 當常數不處理。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 2,
+    "what": "由原式解出 $u$ 與 $y$ 的關係式 $u = \\frac{8-y}{8+y}$。",
+    "marks": 1,
+    "common_error": "移項錯誤導致分母符號搞錯，或忘記 $y$ 單位為千而忽略（此題不需換算）。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "計算各 $x$ 對應的 $\\ln u$，繪圖或觀察殘差找出異常點。",
+    "marks": 2,
+    "common_error": "未正確代入 $y$ 值算 $u$，或誤判哪一點離直線最遠（應選 $x=10$）。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 4,
+    "what": "剔除異常點後，用剩餘五點以最小二乘法或目測擬合直線。",
+    "marks": 1,
+    "common_error": "未剔除錯誤數據仍用六點回歸，導致 $a,b$ 估計偏差。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 5,
+    "what": "由直線斜率得 $-b$，截距得 $\\ln a$，再求 $a,e^{-b}$。",
+    "marks": 1,
+    "common_error": "混淆斜率正負號，或忘記 $\\ln a$ 需取指數還原成 $a$。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 6,
+    "what": "將 $a,b$ 修約至小數點後兩位，並確認單位與合理性。",
+    "marks": 1,
+    "common_error": "未修約或修約錯誤（如四捨五入規則用錯），或遺忘 $b>0$ 的條件。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "考評局指出題目中 'integers' 應為 'constants'，但考生普遍理解無誤，顯示對指數模型線性化概念掌握良好；異常值偵測與剔除是關鍵評分點。",
+  "scaffolding_hints": [
+   "Hint1: 先將 $u=ae^{-bx}$ 取自然對數，利用對數性質展開成 $mx+c$ 形式。",
+   "Hint2: 從原式解出 $u$ 時，注意分母有理化與移項技巧，避免代數錯誤。",
+   "Hint3: 繪圖時觀察哪一點明顯偏離直線，通常末端點（$x=10$）易受誤差影響。"
+  ],
+  "quick_solution_strategy": "先線性化 $\\ln u = \\ln a - bx$，再解出 $u(y)$，繪圖找異常點後回歸求參數。"
+ },
+ "skills": {
+  "topic_id": "T-EXP",
+  "knowledge_point_ids": [
+   "K-EXP-07"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "2": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "4": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "5": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "6": {
+    "knowledge_point_id": "K-EXP-07",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

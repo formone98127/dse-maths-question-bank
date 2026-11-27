@@ -1,0 +1,116 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2025",
+  "paper": "Paper 1M",
+  "qno": "8",
+  "hash": "#2025P1MQ8"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "微分法",
+   "secondary_topics": [
+    "極值點",
+    "函數圖形性質",
+    "二次方程式根"
+   ],
+   "required_formulas": [
+    "\\frac{dy}{dx} = 3a(x-1)^2 + 2b(x-1) + c"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 450,
+   "marks": 8
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "對 y 求導，利用 x=1 為極大值點代入 dy/dx=0 求 c",
+    "marks": 2,
+    "common_error": "忘記將 x=1 代入導數式，或混淆極大值與拐點條件。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 2,
+    "what": "利用 y 截距求 a+b+c+2=1，結合 ab=6 建立 a,b 關係",
+    "marks": 2,
+    "common_error": "算錯 y 截距坐標 (0,1)，或解聯立方程時計算錯誤。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "分析二次方程式根的情況，判斷 a 的數值是否唯一",
+    "marks": 2,
+    "common_error": "忽略判别式 D 的符號意義，錯誤認為有兩個解。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "確定 a,b 正確值後，重新計算 dy/dx 並令其為 0",
+    "marks": 1,
+    "common_error": "代入數值時符號錯誤，或解錯二次方程式。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "解出另一個極值點的 x 座標，並代回原式求 y",
+    "marks": 1,
+    "common_error": "只寫出 x 座標而忘記計算對應的 y 座標。",
+    "error_category": "Methodological"
+   }
+  ],
+  "exam_report_insight": "此題測試學生對極值點定義的深刻理解，特別是當導數在特定点為零時，需進一步檢查二階導數或圖形形狀以確認是極大值而非拐點。",
+  "scaffolding_hints": [
+   "提示 1：極值點的必要條件是 dy/dx = 0。",
+   "提示 2：y 截距即 x=0 時的 y 值，代入原式即可。",
+   "提示 3：若二次項係數為正，圖形開口向上，則存在兩個極值點（一峰一谷）。"
+  ],
+  "quick_solution_strategy": "先求導找 c；再用截距和 ab=6 解 a,b；檢查判别式判斷 a 的數量；最後代回求另一點。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   }
+  }
+ }
+}

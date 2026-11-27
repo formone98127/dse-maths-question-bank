@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2017",
+  "paper": "Paper 2",
+  "qno": "31",
+  "hash": "#2017P2Q31"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "函數圖像變換",
+   "secondary_topics": [
+    "水平伸縮",
+    "點對應關係",
+    "坐標軸讀取"
+   ],
+   "required_formulas": [
+    "若 $g(x) = f(cx)$，則圖像在 $x$ 軸方向伸縮為原來的 $1/c$ 倍"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "誤認為垂直伸縮",
+    "student_thought_process": "學生混淆 $f(x/2)$ 與 $f(x)/2$，以為是縱向壓縮或對稱，未理解自變數係數影響橫向尺度。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "方向判斷錯誤",
+    "student_thought_process": "學生知道要伸縮，但誤以為 $1/2$ 係數代表向右拉伸而非向左壓縮（實際是橫向壓縮）。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "點坐標計算失誤",
+    "student_thought_process": "學生嘗試代入原圖特定点，但錯誤地將 $x$ 值除以 2 而非乘以 2 來尋找新圖像對應點。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "思考：當 $x$ 變成 $\\frac{x}{2}$ 時，要得到相同的函數值 $y$，新的 $x$ 需要是原來的幾倍？",
+   "知識：若 $g(x)=f(cx)$，圖像會沿著 $y$ 軸進行水平伸縮。當 $0<c<1$ 時，圖像會被壓縮（變窄）。",
+   "破題：在原圖中選取一個清晰的頂點或交點，計算其在新圖像中的橫坐標位置，並與選項比對。"
+  ],
+  "quick_solution_strategy": "將原圖特徵點的 $x$ 坐標乘以 2，即可得到新圖像對應點的 $x$ 坐標，觀察哪張圖符合此規律。"
+ },
+ "skills": {
+  "topic_id": "T-FUN",
+  "knowledge_point_ids": [
+   "K-FUN-01",
+   "K-FUN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN"
+   },
+   "B": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

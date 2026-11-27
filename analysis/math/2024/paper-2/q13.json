@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 2",
+  "qno": "13",
+  "hash": "#2024P2Q13"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "比例關係 (正變/反變)",
+   "secondary_topics": [
+    "百分比變化",
+    "代數式建立"
+   ],
+   "required_formulas": [
+    "$z = k \\frac{x^2}{y}$",
+    "$\\text{新值} = (1 + r)\\times\\text{原值}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略平方效應",
+    "student_thought_process": "學生只注意到 y 減少導致 z 增加，但誤以為 x 增加 20% 與 y 減少 20% 會相互抵消或僅簡單相加，忽略了 $x^2$ 的放大作用。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "方向判斷錯誤",
+    "student_thought_process": "學生正確建立公式但計算出錯，或誤以為分子變大分母變小應導致減少，完全搞反了正變與反變的邏輯。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "數值計算錯誤",
+    "student_thought_process": "學生正確建立公式 $z_{new} = k \\frac{(1.2x)^2}{0.8y}$，但在化簡時算出 $\\frac{1.44}{0.8} = 0.8$ (應為 1.8)，導致錯誤認為減少。"
+   }
+  },
+  "scaffolding_hints": [
+   "首先，請將「正變」與「反變」的關係寫成一個包含常數 $k$ 的數學公式。",
+   "試著用具體數字代入：假設 $x=10, y=10$，算出初始 $z$ 值；再計算 $x$ 增加 $20\\%$、$y$ 減少 $20\\%$ 後的 $x$ 與 $y$。",
+   "比較新的 $z$ 值與原來的 $z$ 值，觀察它們的倍數關係，即可得出百分比變化。"
+  ],
+  "quick_solution_strategy": "建立公式 $z=kx^2/y$，代入 $(1.2)^2/0.8 = 1.44/0.8 = 1.8$，即增加 $80\\%$。"
+ },
+ "skills": {
+  "topic_id": "T-VAR",
+  "knowledge_point_ids": [
+   "K-VAR-01",
+   "K-VAR-02"
+  ],
+  "formula_ids": [
+   "F-VAR-01",
+   "F-VAR-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

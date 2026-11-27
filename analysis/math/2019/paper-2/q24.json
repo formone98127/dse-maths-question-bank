@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2019",
+  "paper": "Paper 2",
+  "qno": "24",
+  "hash": "#2019P2Q24"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "直線垂直條件與斜率",
+   "secondary_topics": [
+    "一次方程式一般式",
+    "兩直線垂直的斜率關係"
+   ],
+   "required_formulas": [
+    "若 $ax+by+c=0$，則斜率 $m=-\\frac{a}{b}$",
+    "兩直線垂直時 $m_1 \\times m_2 = -1$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "斜率計算錯誤",
+    "student_thought_process": "算出 $m_1=-\\frac{3}{2}$ 與 $m_2=-\\frac{k}{12}$，但將乘積設為 $1$ 而非 $-1$，解得 $k=4$"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "符號處理失誤",
+    "student_thought_process": "正確列出 $(-\\frac{3}{2}) \\times (-\\frac{k}{12}) = -1$，但在化簡時錯誤約分或移項，導致得出 $k=4$"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "垂直條件混淆",
+    "student_thought_process": "誤以為兩直線平行時才用斜率乘積為 $-1$，或是將第二條直線斜率算成 $\\frac{k}{12}$"
+   }
+  },
+  "scaffolding_hints": [
+   "回憶一次方程式 $ax+by+c=0$ 的斜率公式為何？",
+   "兩條直線互相垂直時，它們的斜率 $m_1$ 與 $m_2$ 必須滿足什麼數值關係？",
+   "將求得的斜率代入垂直條件，解出常數 $k$ 的值。"
+  ],
+  "quick_solution_strategy": "先求兩直線斜率，再利用 $m_1 m_2 = -1$ 建立方程式求解 $k$"
+ },
+ "skills": {
+  "topic_id": "T-LIN",
+  "knowledge_point_ids": [
+   "K-LIN-01",
+   "K-LIN-02"
+  ],
+  "formula_ids": [
+   "F-LIN-01",
+   "F-LIN-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

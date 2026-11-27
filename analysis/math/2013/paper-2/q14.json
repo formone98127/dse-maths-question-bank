@@ -1,0 +1,90 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 2",
+  "qno": "14",
+  "hash": "#2013P2Q14"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "直線方程式與斜率截距",
+   "secondary_topics": [
+    "一次函數圖形特徵",
+    "係數幾何意義"
+   ],
+   "required_formulas": [
+    "$y = mx + c$ (其中 $m$ 為斜率，$c$ 為 $y$ 軸截距)",
+    "$x+ay+b=0 \\Rightarrow y = (-\\frac{1}{a})x - \\frac{b}{a}$"
+   ],
+   "bloom_taxonomy_level": "分析",
+   "estimated_time_seconds": 45
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略第三個條件",
+    "student_thought_process": "學生正確判斷 $a<0$ 且 $b<0$，但誤以為 III ($a<b$) 不一定成立或無法比較，因此排除包含 III 的選項。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略第二個條件",
+    "student_thought_process": "學生正確判斷 $a<0$ 且 $a<b$，但誤判 $y$ 軸截距符號，認為 $b>0$，因此排除包含 II 的選項。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略第一個條件",
+    "student_thought_process": "學生正確判斷 $b<0$ 且 $a<b$，但誤判斜率符號，認為 $a>0$（因為直線下降應對應正係數的誤解），因此排除包含 I 的選項。"
+   },
+   "D": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   }
+  },
+  "scaffolding_hints": [
+   "將一般式 $x+ay+b=0$ 轉換為斜截式 $y = (-\\frac{1}{a})x - \\frac{b}{a}$，觀察 $a$ 與 $b$ 分別對應斜率與截距的係數關係。",
+   "從圖形中直線的走向判斷斜率正負（決定 $a$ 的符號），並從與 $y$ 軸交點位置判斷截距正負（決定 $b$ 的符號）。",
+   "將圖形中觀察到的斜率絕對值大小與截距數值進行比較，確認 $a$ 與 $b$ 的大小關係。"
+  ],
+  "quick_solution_strategy": "轉化為 $y=(-\\frac{1}{a})x-(\\frac{b}{a})$，由圖形上升知 $-\\frac{1}{a}>0\\Rightarrow a<0$，截距負知 $-\\frac{b}{a}<0\\Rightarrow b<0$，再比較兩數值大小。"
+ },
+ "skills": {
+  "topic_id": "T-LIN",
+  "knowledge_point_ids": [
+   "K-LIN-01",
+   "K-LIN-02"
+  ],
+  "formula_ids": [
+   "F-LIN-01",
+   "F-LIN-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG"
+   },
+   "B": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG"
+   },
+   "C": {
+    "knowledge_point_id": "K-LIN-01",
+    "formula_id": "F-LIN-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

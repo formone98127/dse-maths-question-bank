@@ -1,0 +1,92 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 2",
+  "qno": "27",
+  "hash": "#2021P2Q27"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "圓的幾何性質與直線方程式",
+   "secondary_topics": [
+    "弦中點性質",
+    "垂直斜率關係",
+    "圓心坐標計算"
+   ],
+   "required_formulas": [
+    "圓的一般式 $x^2+y^2+Dx+Ey+F=0$ 轉標準式求圓心 $(-D/2, -E/2)$",
+    "弦中點與圓心連線斜率與弦斜率乘積為 $-1$",
+    "直線點斜式方程式"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "符號錯誤",
+    "student_thought_process": "算出圓心後，正確得知中點連線斜率為 $-1/4$。但在寫直線方程式時，將截距項或常數項計算錯誤，導致符號變號或數值偏差。"
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "垂直關係混淆",
+    "student_thought_process": "知道弦中點與圓心連線斜率應為 $-1/4$，但錯誤地認為該直線斜率應與弦本身斜率相同（$4$），或是誤以為中點坐標滿足原圓方程式。"
+   },
+   "C": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "截距計算錯誤",
+    "student_thought_process": "正確建立點斜式 $y-t = -1/4(x-s)$，但在整理成一般式 $Ax+By+C=0$ 時，將常數項 $C$ 的符號弄反，導致最後結果為 $+31$。"
+   }
+  },
+  "scaffolding_hints": [
+   "提示 1：請先將圓的一般方程式配方，找出該圓的圓心坐標 $(h,k)$。",
+   "提示 2：弦的中點與圓心的連線必垂直於該弦（直線 $L$）。已知直線 $L$ 斜率為 $4$，請問中點連線的斜率是多少？",
+   "提示 3：利用「點斜式」寫出經過圓心且斜率為上述數值的直線方程式，並將其整理成題目要求的選項形式。"
+  ],
+  "quick_solution_strategy": "求圓心 -> 取垂直斜率 (-1/4) -> 用點斜式寫過圓心的直線 -> 整理成一般式"
+ },
+ "skills": {
+  "topic_id": "T-CIR",
+  "knowledge_point_ids": [
+   "K-CIR-01",
+   "K-CIR-02"
+  ],
+  "formula_ids": [
+   "F-CIR-01",
+   "F-CIR-02"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-CALC"
+   },
+   "B": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-CIR-01",
+    "formula_id": "F-CIR-01",
+    "ability_id": "A-CALC"
+   }
+  }
+ }
+}

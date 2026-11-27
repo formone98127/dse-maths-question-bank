@@ -1,0 +1,94 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2013",
+  "paper": "Paper 2",
+  "qno": "17",
+  "hash": "#2013P2Q17"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "立體幾何：圓錐與半球之表面積",
+   "secondary_topics": [
+    "畢氏定理（求斜高）",
+    "圓錐側面積公式",
+    "球體表面積公式"
+   ],
+   "required_formulas": [
+    "$A_{\\text{cone}} = \\pi r l$",
+    "$A_{\\text{sphere}} = 2\\pi r^2$",
+    "$l = \\sqrt{r^2 + h^2}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": false,
+    "error_category": "Reading-Formatting",
+    "error_tag": "漏算半球曲面",
+    "student_thought_process": "只計算了圓錐側面積 ($\\pi \\times 3 \\times 5 = 15\\pi$) 與底面 ($9\\pi$)，誤以為半球表面積為 $0$ 或忘記乘以 $2\\pi r^2$，導致結果偏小。"
+   },
+   "B": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "斜高計算錯誤",
+    "student_thought_process": "在計算圓錐斜高 $l$ 時，可能將 $3^2+4^2=9+16=25$ 算錯，或根號開方失敗，導致側面積數值偏差。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "重複計算底面",
+    "student_thought_process": "誤以為固體包含圓錐底面與半球頂面，將兩者都加上 ($9\\pi + 24\\pi + 9\\pi$)，導致多算一次底面積。"
+   }
+  },
+  "scaffolding_hints": [
+   "注意題目描述「兩部分的底相同」，這意味著圓錐的底面與半球結合處是內部接觸面，不屬於表面積的一部分。",
+   "回憶圓錐側面積公式 $\\pi r l$ 中，$l$ 代表斜高（母線），需利用畢氏定理由半徑與高度求出；半球表面積為完整球體的一半 ($2\\pi r^2$)。",
+   "先計算圓錐斜高 $l=5$，再分別列出圓錐側面積 ($15\\pi$) 與半球曲面面積 ($24\\pi$)，兩數相加即為答案。"
+  ],
+  "quick_solution_strategy": "求斜高 $l=5$；總面積 = 圓錐側面 ($15\\pi$) + 半球曲面 ($24\\pi$)。"
+ },
+ "skills": {
+  "topic_id": "T-MEN",
+  "knowledge_point_ids": [
+   "K-MEN-01",
+   "K-MEN-02"
+  ],
+  "formula_ids": [
+   "F-MEN-01",
+   "F-MEN-02",
+   "F-MEN-03",
+   "F-MEN-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "A": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-COND"
+   },
+   "C": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-CALC"
+   },
+   "D": {
+    "knowledge_point_id": "K-MEN-01",
+    "formula_id": "F-MEN-01",
+    "ability_id": "A-ALG"
+   }
+  }
+ }
+}

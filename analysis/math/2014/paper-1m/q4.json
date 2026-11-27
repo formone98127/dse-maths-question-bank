@@ -1,0 +1,130 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 1M",
+  "qno": "4",
+  "hash": "#2014P1MQ4"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "積分法",
+   "secondary_topics": [
+    "部分分式分解",
+    "代數變換",
+    "對數與反正切函數"
+   ],
+   "required_formulas": [
+    "\\int \\frac{1}{u} du = \\ln|u| + C",
+    "\\int \\frac{1}{u^2+a^2} du = \\frac{1}{a}\\arctan\\left(\\frac{u}{a}\\right) + C"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 420,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "觀察被積函數分母，完成平方並設代數變數 u。",
+    "marks": 1,
+    "common_error": "未完成平方直接分解或因式分解失敗。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 2,
+    "what": "將分子 t+2 改寫為 u 的線性組合以拆分積分。",
+    "marks": 1,
+    "common_error": "無法配對係數導致無法拆分成兩部分。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 3,
+    "what": "計算 (a) 部分的定積分，得出含 ln 與 arctan 結果。",
+    "marks": 1,
+    "common_error": "代入上下限時忘記變數轉換或記錯反正切係數。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 4,
+    "what": "將 (b) 部分分子改寫為分母的倍數加常數項。",
+    "marks": 1,
+    "common_error": "未能看出 t^2+3t+9 = k(t^2+4t+11) + C 結構。",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 5,
+    "what": "計算 (b) 部分定積分，利用常數倍數性質簡化。",
+    "marks": 1,
+    "common_error": "重複計算 (a) 的複雜部分而未利用線性關係。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 6,
+    "what": "合併兩部分答案，檢查數值代入與符號正確性。",
+    "marks": 1,
+    "common_error": "計算錯誤導致最終數值不符或漏掉絕對值。",
+    "error_category": "Calculation"
+   }
+  ],
+  "exam_report_insight": "此題測試學生處理非標準有理函數積分的技巧，特別是透過代數變換將複雜分母轉化為基本積分形式的能力，是卷一常見的綜合應用題型。",
+  "scaffolding_hints": [
+   "提示 1：觀察分母 t^2+4t+11，嘗試配方為 (t+2)^2 + 7。",
+   "提示 2：回憶 \\int \\frac{1}{u^2+a^2} du = \\frac{1}{a}\\arctan(u/a) 的公式結構。",
+   "提示 3：(b) 題可先嘗試將分子表示為分母的線性組合，避免重複計算。"
+  ],
+  "quick_solution_strategy": "先配方分母，再調整分子係數拆分積分；(b) 題利用 (a) 的結果簡化計算步驟以節省時間。"
+ },
+ "skills": {
+  "topic_id": "T-EQN",
+  "knowledge_point_ids": [
+   "K-EQN-01",
+   "K-EQN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "2": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "3": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "4": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "5": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "6": {
+    "knowledge_point_id": "K-EQN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   }
+  }
+ }
+}

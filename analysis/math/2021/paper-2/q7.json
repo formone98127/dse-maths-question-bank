@@ -1,0 +1,87 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2021",
+  "paper": "Paper 2",
+  "qno": "7",
+  "hash": "#2021P2Q7"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "二次函數對稱性與頂點式",
+   "secondary_topics": [
+    "代入法求參數",
+    "一元一次方程式組"
+   ],
+   "required_formulas": [
+    "$f(x) = a(x-p)(x-q)$ 的對稱軸性質",
+    "$f(p+d) = f(p-d)$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 90
+  },
+  "options_analysis": {
+   "A": {
+    "is_correct": true,
+    "error_category": null,
+    "error_tag": null,
+    "student_thought_process": null
+   },
+   "B": {
+    "is_correct": false,
+    "error_category": "Calculation",
+    "error_tag": "展開式計算錯誤",
+    "student_thought_process": "將 $f(0)=1$ 代入得 $h(-3)+k=1$。解出 $k=1+3h$。再代入 $f(8)=1$ 時，算錯 $(8+h)(5)+k=1$ 的展開或代換，導致數值偏差。"
+   },
+   "C": {
+    "is_correct": false,
+    "error_category": "Conceptual",
+    "error_tag": "忽略對稱軸概念",
+    "student_thought_process": "試圖直接解出 $h$ 與 $k$，但可能誤以為 $f(0)=f(8)$ 意味著 $x=4$ 是頂點時 $y$ 值為特定數，卻未利用此性質建立方程組，或計算過程混亂。"
+   },
+   "D": {
+    "is_correct": false,
+    "error_category": "Methodological",
+    "error_tag": "設定錯誤的對稱軸",
+    "student_thought_process": "誤認為對稱軸為 $x=0$ 或 $x=8$，導致建立錯誤方程式，例如直接令 $(x+h)$ 與 $(x-3)$ 的根為 $0,8$，忽略 $k$ 的影響。"
+   }
+  },
+  "scaffolding_hints": [
+   "觀察 $f(0)=f(8)$ 這對二次函數意味著什麼關於其圖形的性質？",
+   "利用二次函數對稱軸位於兩個等值點中間的性質，找出該題中的對稱軸位置。",
+   "將函數寫成頂點式或代入對稱軸上的 $x$ 值，建立含單個未知數的方程式求解 $k$"
+  ],
+  "quick_solution_strategy": "由 $f(0)=f(8)$ 知對稱軸為 $x=4$。將 $x=4$ 代入原式得頂點縱座標與 $k$ 關係，再結合任一已知點求 $k$"
+ },
+ "skills": {
+  "topic_id": "T-FUN",
+  "knowledge_point_ids": [
+   "K-FUN-01",
+   "K-FUN-02"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {
+   "B": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CALC"
+   },
+   "C": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-ALG"
+   },
+   "D": {
+    "knowledge_point_id": "K-FUN-01",
+    "formula_id": null,
+    "ability_id": "A-CHAIN"
+   }
+  }
+ }
+}

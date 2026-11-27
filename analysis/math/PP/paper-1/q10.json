@@ -1,0 +1,132 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "PP",
+  "paper": "Paper 1",
+  "qno": "10",
+  "hash": "#PPP1Q10"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "多項式",
+   "secondary_topics": [
+    "餘式定理",
+    "長除法",
+    "因式分解"
+   ],
+   "required_formulas": [
+    "$f(x) = (x-a)Q(x) + R$",
+    "$f(a) = R$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 6
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "利用餘式定理寫出 f(x) 完整表達式並代入 x=-3",
+    "marks": 3,
+    "common_error": "忘記加上餘數 R=4 直接計算商式值",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 2,
+    "what": "計算 f(-3) 時正確代入數值求和",
+    "marks": 3,
+    "common_error": "符號錯誤或運算出錯導致結果偏差",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "將 f(x) 寫成 (x-1)(6x^2+17x-2)+4 形式",
+    "marks": 1,
+    "common_error": "忘記加上餘數項導致因式分解失敗",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "對二次商式進行十字相乘法或求根公式",
+    "marks": 1,
+    "common_error": "解錯二次方程的根導致因子錯誤",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 5,
+    "what": "將所得兩個一次因式與 (x-1) 合併",
+    "marks": 1,
+    "common_error": "漏寫常數項或係數約分錯誤",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 6,
+    "what": "整理最終答案並檢查括號與符號",
+    "marks": 0,
+    "common_error": "格式混亂導致扣分",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "多項式餘式定理常考於 DSE 卷一，學生易忽略餘數直接對商式運算，需強調 f(x) 完整結構。",
+  "scaffolding_hints": [
+   "回憶餘式定理：除得盡時 R=0，否則 f(a)=R",
+   "f(x) = (x-1)(6x^2+17x-2) + 4",
+   "先算 (a) 再處理 (b)，避免重複計算"
+  ],
+  "quick_solution_strategy": "直接代入 x=-3 到完整表達式；因式分解時別忘加餘數項。"
+ },
+ "skills": {
+  "topic_id": "T-POL",
+  "knowledge_point_ids": [
+   "K-POL-03",
+   "K-POL-04"
+  ],
+  "formula_ids": [
+   "F-POL-04"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": "F-POL-04",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "2": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": "F-POL-04",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": "F-POL-04",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": "F-POL-04",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "5": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": "F-POL-04",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "6": {
+    "knowledge_point_id": "K-POL-03",
+    "formula_id": "F-POL-04",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

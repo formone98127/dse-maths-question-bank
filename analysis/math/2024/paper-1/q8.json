@@ -1,0 +1,103 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2024",
+  "paper": "Paper 1",
+  "qno": "8",
+  "hash": "#2024P1Q8"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "平面幾何",
+   "secondary_topics": [
+    "全等三角形證明",
+    "直角三角形性質",
+    "多邊形面積計算"
+   ],
+   "required_formulas": [
+    "勾股定理：$a^2 + b^2 = c^2$",
+    "三角形面積公式：$\\frac{1}{2} \\times \\text{底} \\times \\text{高}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 5
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "證明 $\\triangle ABC \\cong \\triangle BAD$ (RHS)",
+    "marks": 2,
+    "common_error": "忘記寫出直角符號或混淆對應邊",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 2,
+    "what": "計算 $AE$ 長度 ($15\\text{cm}$)",
+    "marks": 1,
+    "common_error": "勾股定理運算錯誤",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 3,
+    "what": "證明 $\\triangle ADE \\cong \\triangle BCE$",
+    "marks": 1,
+    "common_error": "未能找出全等條件 (ASA)",
+    "error_category": "Conceptual"
+   },
+   {
+    "step": 4,
+    "what": "計算 $CE$ 長度 ($6\\text{cm}$)",
+    "marks": 1,
+    "common_error": "混淆對應邊導致算錯",
+    "error_category": "Reading-Formatting"
+   }
+  ],
+  "exam_report_insight": "此題結合全等三角形與勾股定理，測試學生在幾何圖形中識別隱含條件及分塊計算面積的能力。",
+  "scaffolding_hints": [
+   "利用直角符號 $\\angle ACB = \\angle ADB = 90^\\circ$ 建立 RHS 全等",
+   "由 $AD=BC$ 推導 $AE=BE$ 後再求 $CE$",
+   "將五邊形面積拆為兩個三角形或梯形加三角形"
+  ],
+  "quick_solution_strategy": "先證 $\\triangle ABC \\cong \\triangle BAD$ 得 $AB$ 公共邊，再用勾股定理求 $AE$，繼而證另一組全等拆分面積。"
+ },
+ "skills": {
+  "topic_id": "T-GEO",
+  "knowledge_point_ids": [
+   "K-GEO-05"
+  ],
+  "formula_ids": [],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "2": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "3": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   },
+   "4": {
+    "knowledge_point_id": "K-GEO-05",
+    "formula_id": null,
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   }
+  }
+ }
+}

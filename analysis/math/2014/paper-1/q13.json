@@ -1,0 +1,104 @@
+{
+ "question": {
+  "subject": "數學",
+  "year": "2014",
+  "paper": "Paper 1",
+  "qno": "13",
+  "hash": "#2014P1Q13"
+ },
+ "model": "qwen3.5:9b",
+ "generated": "2026-11-23",
+ "analysis": {
+  "metadata": {
+   "primary_topic": "函數建模",
+   "secondary_topics": [
+    "二次函數性質",
+    "三角形面積公式"
+   ],
+   "required_formulas": [
+    "$f(x) = ax^2 + c$",
+    "$\\text{Area} = \\frac{1}{2} \\times \\text{base} \\times \\text{height}$"
+   ],
+   "bloom_taxonomy_level": "應用",
+   "estimated_time_seconds": 180,
+   "marks": 5
+  },
+  "mark_steps": [
+   {
+    "step": 1,
+    "what": "設定 $f(x)=ax^2+c$ 並代入已知點求參數",
+    "marks": 2,
+    "common_error": "解聯立方程時計算錯誤或忘記其中一個條件。",
+    "error_category": "Calculation"
+   },
+   {
+    "step": 2,
+    "what": "寫出完整的 $f(x)$ 表達式並計算 $f(6)$",
+    "marks": 1,
+    "common_error": "求出 $a,c$ 後忘記代入 $x=6$ 進行最終計算。",
+    "error_category": "Methodological"
+   },
+   {
+    "step": 3,
+    "what": "確定點 A(6,a) 與 B(-6,b) 的座標",
+    "marks": 1,
+    "common_error": "混淆函數值 $f(x)$ 與點座標中的 $y$ 值。",
+    "error_category": "Reading-Formatting"
+   },
+   {
+    "step": 4,
+    "what": "分析 C 點位置：C 為 x 軸任意點，非固定交點",
+    "marks": 1,
+    "common_error": "誤以為 C 是 $y=f(x)$ 與 x 軸的唯一切點。",
+    "error_category": "Conceptual"
+   }
+  ],
+  "exam_report_insight": "考生常忽略題目條件中 C 點的任意性，錯誤地將 C 點固定為函數與 x 軸交點，導致面積計算邏輯錯誤。",
+  "scaffolding_hints": [
+   "先利用 $f(x)$ 隨 $x^2$ 正變及常數特性設出通式。",
+   "注意 (b) 問中 C 點僅在 x 軸上，並非固定點。",
+   "思考：若 C 點移動，三角形面積是否改變？（提示：底邊 AB 水平時高為定值）"
+  ],
+  "quick_solution_strategy": "設 $f(x)=ax^2+c$ 解出係數後，發現 A、B 兩點 y 座標相同，故 AB 為水平線段，C 在 x 軸上，高即為 $|y_A|$。"
+ },
+ "skills": {
+  "topic_id": "T-VAR",
+  "knowledge_point_ids": [
+   "K-VAR-01"
+  ],
+  "formula_ids": [
+   "F-VAR-01"
+  ],
+  "ability_ids": [
+   "A-ALG",
+   "A-CALC"
+  ],
+  "option_faults": {},
+  "step_faults": {
+   "1": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CALC",
+    "error_category": "Calculation"
+   },
+   "2": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-CHAIN",
+    "error_category": "Methodological"
+   },
+   "3": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-COND",
+    "error_category": "Reading-Formatting"
+   },
+   "4": {
+    "knowledge_point_id": "K-VAR-01",
+    "formula_id": "F-VAR-01",
+    "ability_id": "A-ALG",
+    "error_category": "Conceptual"
+   }
+  }
+ }
+}

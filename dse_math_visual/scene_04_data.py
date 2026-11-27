@@ -36,7 +36,7 @@ class DataArc(MarkedMovingCameraScene):
         marked_play(self, FadeIn(chapter), run_time=0.9, event="chapter_label")
 
         # A. Scatter cloud
-        guide.show("先看散點分布", color=HIGHLIGHT)
+        guide.show("先看散點分佈", color=HIGHLIGHT)
         rng = np.random.default_rng(21)
         pts = []
         for _ in range(40):
@@ -153,8 +153,8 @@ class DataArc(MarkedMovingCameraScene):
             run_time=1.0,
         )
 
-        guide.show("機率・分支可能", color=DATA_ORANGE)
-        prob_lab = micro("機率", color=DATA_ORANGE).to_edge(UP, buff=0.55)
+        guide.show("概率・分支可能", color=DATA_ORANGE)
+        prob_lab = micro("概率", color=DATA_ORANGE).to_edge(UP, buff=0.55)
         marked_play(self, FadeIn(prob_lab), run_time=0.5)
 
         root = glow_dot(UP * 2.0, color=GOLD, radius=0.1, glow_radius=0.35)
@@ -185,7 +185,7 @@ class DataArc(MarkedMovingCameraScene):
         marked_play(self, FadeIn(leafL), FadeIn(leafR), run_time=0.8)
         aha(self, 1.8, note="probability_tree")
 
-        guide.show("機率介乎零與一", color=GOLD)
+        guide.show("概率介乎零與一", color=GOLD)
         axiom = formula(r"0\le P\le 1", color=GOLD).scale(1.1)
         axiom.move_to(DOWN * 2.4)
         marked_play(self, Write(axiom), run_time=1.2, event="prob_axiom", intensity="high")
@@ -222,8 +222,8 @@ class DataArc(MarkedMovingCameraScene):
         curve = axes2.plot(pdf, color=DATA_ORANGE, stroke_width=4)
         area = axes2.get_area(curve, x_range=[-1, 1], color=DATA_ORANGE, opacity=0.35)
 
-        guide.show("分布曲線出現", color=DATA_ORANGE)
-        dist_lab = micro("分布", color=DATA_ORANGE).to_edge(UP, buff=0.5)
+        guide.show("分佈曲線出現", color=DATA_ORANGE)
+        dist_lab = micro("分佈", color=DATA_ORANGE).to_edge(UP, buff=0.5)
         marked_play(self, Create(axes2), FadeIn(dist_lab), run_time=1.2, event="dist_axes")
         marked_play(self, Create(curve), run_time=1.8, event="bell_curve", intensity="high")
         guide.show("中央最常出現", color=GOLD)

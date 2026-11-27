@@ -109,7 +109,7 @@ class AlgebraArc(MarkedMovingCameraScene):
         aha(self, 1.8, note="solved")
 
         # C. Graphs
-        guide.show("放到座標上看", color=ALGEBRA_BLUE)
+        guide.show("放到坐標上看", color=ALGEBRA_BLUE)
         axes = Axes(
             x_range=[-4, 4, 1],
             y_range=[-5, 8, 1],

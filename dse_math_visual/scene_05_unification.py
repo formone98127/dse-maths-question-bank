@@ -66,12 +66,12 @@ class UnificationArc(MarkedMovingCameraScene):
         )
         marked_play(self, Create(bridge_ag), run_time=1.2, event="bridge_ag")
         tag_ag = VGroup(
-            micro("座標", color=GOLD),
+            micro("坐標", color=GOLD),
             formula(r"(x,y)", color=HIGHLIGHT).scale(0.7),
         ).arrange(DOWN, buff=0.12)
         tag_ag.next_to(bridge_ag, UP, buff=0.25)
         marked_play(self, FadeIn(tag_ag, shift=UP * 0.1), run_time=0.9, event="tag_coord")
-        guide.show("橋樑就係座標", color=GOLD)
+        guide.show("橋樑就是坐標", color=GOLD)
         mini = Axes(
             x_range=[-1, 1, 1],
             y_range=[-1, 1, 1],

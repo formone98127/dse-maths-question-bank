@@ -183,7 +183,7 @@ class GeometryArc(MarkedMovingCameraScene):
             y_length=6,
             axis_config={"color": HIGHLIGHT, "stroke_opacity": 0.4, "tip_length": 0.15},
         )
-        coord_lab = micro("座標", color=ALGEBRA_BLUE).to_edge(UP, buff=0.5)
+        coord_lab = micro("坐標", color=ALGEBRA_BLUE).to_edge(UP, buff=0.5)
         marked_play(
             self,
             Create(axes),
@@ -193,7 +193,7 @@ class GeometryArc(MarkedMovingCameraScene):
             intensity="high",
         )
 
-        guide.show("用座標量距離", color=HIGHLIGHT)
+        guide.show("用坐標量距離", color=HIGHLIGHT)
         pts = [axes.c2p(-2, -1), axes.c2p(3, -1), axes.c2p(1, 2)]
         dots = VGroup(*[glow_dot(p, color=GEOMETRY_GREEN, radius=0.07, glow_radius=0.28) for p in pts])
         poly = Polygon(*pts, color=GEOMETRY_GREEN, stroke_width=3).set_fill(GEOMETRY_GREEN, opacity=0.1)
